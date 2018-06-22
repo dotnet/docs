@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XElement" />
   <TypeSignature Language="VB.NET" Value="Public Class XElement&#xA;Inherits XContainer&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XElement : System::Xml::Linq::XContainer, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type XElement = class&#xA;    inherit XContainer&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -260,6 +261,7 @@ Console.WriteLine(xmlTree2)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XElement(System::Xml::Linq::XElement ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XElement : System.Xml.Linq.XElement -&gt; System.Xml.Linq.XElement" Usage="new System.Xml.Linq.XElement other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -347,6 +349,7 @@ xmlTree = treeClone: False
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XElement(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XElement : System.Xml.Linq.XName -&gt; System.Xml.Linq.XElement" Usage="new System.Xml.Linq.XElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -435,6 +438,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XStreamingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XStreamingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XElement(System::Xml::Linq::XStreamingElement ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XElement : System.Xml.Linq.XStreamingElement -&gt; System.Xml.Linq.XElement" Usage="new System.Xml.Linq.XElement other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -529,6 +533,7 @@ Console.WriteLine(xse)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName, content As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XElement(System::Xml::Linq::XName ^ name, System::Object ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XElement : System.Xml.Linq.XName * obj -&gt; System.Xml.Linq.XElement" Usage="new System.Xml.Linq.XElement (name, content)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -836,6 +841,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName, ParamArray content As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XElement(System::Xml::Linq::XName ^ name, ... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XElement : System.Xml.Linq.XName * obj[] -&gt; System.Xml.Linq.XElement" Usage="new System.Xml.Linq.XElement (name, content)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1167,6 +1173,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.AncestorsAndSelf" />
       <MemberSignature Language="VB.NET" Value="Public Function AncestorsAndSelf () As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf();" />
+      <MemberSignature Language="F#" Value="member this.AncestorsAndSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xElement.AncestorsAndSelf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1256,6 +1263,7 @@ Root
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.AncestorsAndSelf(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function AncestorsAndSelf (name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.AncestorsAndSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xElement.AncestorsAndSelf name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1340,6 +1348,7 @@ Child
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Attribute(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Attribute (name As XName) As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Linq::XAttribute ^ Attribute(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Attribute : System.Xml.Linq.XName -&gt; System.Xml.Linq.XAttribute" Usage="xElement.Attribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1460,6 +1469,7 @@ aw:Att="attribute content"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Function Attributes () As IEnumerable(Of XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes();" />
+      <MemberSignature Language="F#" Value="member this.Attributes : unit -&gt; seq&lt;System.Xml.Linq.XAttribute&gt;" Usage="xElement.Attributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1581,6 +1591,7 @@ xmlns:aw="http://www.adventure-works.com"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Attributes(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Attributes (name As XName) As IEnumerable(Of XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XAttribute&gt;" Usage="xElement.Attributes name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1693,6 +1704,7 @@ aw:Att1="content1"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.DescendantNodesAndSelf" />
       <MemberSignature Language="VB.NET" Value="Public Function DescendantNodesAndSelf () As IEnumerable(Of XNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ DescendantNodesAndSelf();" />
+      <MemberSignature Language="F#" Value="member this.DescendantNodesAndSelf : unit -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="xElement.DescendantNodesAndSelf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1807,6 +1819,7 @@ element content
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
       <MemberSignature Language="VB.NET" Value="Public Function DescendantsAndSelf () As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf();" />
+      <MemberSignature Language="F#" Value="member this.DescendantsAndSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xElement.DescendantsAndSelf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1892,6 +1905,7 @@ GrandChild
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.DescendantsAndSelf(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function DescendantsAndSelf (name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="member this.DescendantsAndSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xElement.DescendantsAndSelf name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1974,6 +1988,7 @@ Child
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.EmptySequence" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EmptySequence As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ EmptySequence { System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmptySequence : seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.XElement.EmptySequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2013,6 +2028,7 @@ Child
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.FirstAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstAttribute As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XAttribute ^ FirstAttribute { System::Xml::Linq::XAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstAttribute : System.Xml.Linq.XAttribute" Usage="System.Xml.Linq.XElement.FirstAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2077,6 +2093,7 @@ Att1="1"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.GetDefaultNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefaultNamespace () As XNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Linq::XNamespace ^ GetDefaultNamespace();" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultNamespace : unit -&gt; System.Xml.Linq.XNamespace" Usage="xElement.GetDefaultNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2151,6 +2168,7 @@ Default namespace: http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.GetNamespaceOfPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaceOfPrefix (prefix As String) As XNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Linq::XNamespace ^ GetNamespaceOfPrefix(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="member this.GetNamespaceOfPrefix : string -&gt; System.Xml.Linq.XNamespace" Usage="xElement.GetNamespaceOfPrefix prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2225,6 +2243,7 @@ Namespace: http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.GetPrefixOfNamespace(System.Xml.Linq.XNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrefixOfNamespace (ns As XNamespace) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPrefixOfNamespace(System::Xml::Linq::XNamespace ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.GetPrefixOfNamespace : System.Xml.Linq.XNamespace -&gt; string" Usage="xElement.GetPrefixOfNamespace ns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2299,6 +2318,7 @@ Prefix: aw
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.HasAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAttributes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAttributes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAttributes : bool" Usage="System.Xml.Linq.XElement.HasAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2363,6 +2383,7 @@ False
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.HasElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasElements As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasElements { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasElements : bool" Usage="System.Xml.Linq.XElement.HasElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2430,6 +2451,7 @@ False
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Xml.Linq.XElement.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2527,6 +2549,7 @@ True
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.LastAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastAttribute As XAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XAttribute ^ LastAttribute { System::Xml::Linq::XAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastAttribute : System.Xml.Linq.XAttribute" Usage="System.Xml.Linq.XElement.LastAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2612,6 +2635,7 @@ Att3="3"
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2662,6 +2686,7 @@ Att3="3"
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2734,6 +2759,7 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="static member Load : string -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2813,6 +2839,7 @@ Root
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2910,6 +2937,7 @@ End Using
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement Load(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load (stream, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2960,6 +2988,7 @@ End Using
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement Load(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load (textReader, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3146,6 +3175,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.String,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String, options As LoadOptions) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::String ^ uri, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load (uri, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3348,6 +3378,7 @@ PurchaseOrder       2    2
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader, options As LoadOptions) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Load(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Load (reader, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3486,6 +3517,7 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XElement&gt; LoadAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.LoadAsync(System.IO.Stream,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XElement ^&gt; ^ LoadAsync(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.Stream * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.XElement.LoadAsync (stream, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3514,6 +3546,7 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XElement&gt; LoadAsync(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.LoadAsync(System.IO.TextReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XElement ^&gt; ^ LoadAsync(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.TextReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.XElement.LoadAsync (textReader, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3542,6 +3575,7 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XElement&gt; LoadAsync(class System.Xml.XmlReader reader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.LoadAsync(System.Xml.XmlReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XElement ^&gt; ^ LoadAsync(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.Xml.XmlReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.XElement.LoadAsync (reader, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3571,6 +3605,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Xml.Linq.XName with get, set" Usage="System.Xml.Linq.XElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3657,6 +3692,7 @@ Root
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XElement.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3719,6 +3755,7 @@ Element
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator bool(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; bool" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3802,6 +3839,7 @@ Console.WriteLine("(bool)BoolValue2={0}", bool2)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTime(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; DateTime" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3905,6 +3943,7 @@ orderDate=10/6/2006
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.DateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTimeOffset(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; DateTimeOffset" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3988,6 +4027,7 @@ dt=10/6/2006 12:30:00 PM -07:00
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; decimal" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4057,6 +4097,7 @@ value=79228162514264337593543950335
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Double" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator double(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; double" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4124,6 +4165,7 @@ value=1.79769313486231E+308
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Guid(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Guid" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4192,6 +4234,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; int" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4260,6 +4303,7 @@ value=2147483647
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; int64" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4328,6 +4372,7 @@ value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Boolean}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;bool&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;bool&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4410,6 +4455,7 @@ Nullable Boolean: value2=False
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.DateTime}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;DateTime&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;DateTime&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4489,6 +4535,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.DateTimeOffset}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;DateTimeOffset&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;DateTimeOffset&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4571,6 +4618,7 @@ dt=10/6/2006 12:30:00 PM -07:00
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Decimal}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::Decimal&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;decimal&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4643,6 +4691,7 @@ Nullable decimal: value=79228162514264337593543950335
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Double}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;double&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;double&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4716,6 +4765,7 @@ Nullable double: value=1.79769313486231E+308
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Guid}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;Guid&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;Guid&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4788,6 +4838,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Int32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;int&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;int&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4861,6 +4912,7 @@ Nullable integer: value=2147483647
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Int64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;long&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;int64&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -4933,6 +4985,7 @@ Nullable ulong: value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.Single}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;float&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;single&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5005,6 +5058,7 @@ Nullable Single: value=3.402823E+38
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.TimeSpan}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;TimeSpan&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;TimeSpan&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5082,6 +5136,7 @@ Nullable TimeSpan: value=01:05:30
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.UInt32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::UInt32&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;uint32&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5154,6 +5209,7 @@ Nullable uint: value=4294967295
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Nullable{System.UInt64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Nullable(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Nullable&lt;System::UInt64&gt;(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; Nullable&lt;uint64&gt;" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5227,6 +5283,7 @@ Nullable ulong: value=9223372036854775807
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.Single" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator float(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; single" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5295,6 +5352,7 @@ value=3.402823E+38
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; string" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5362,6 +5420,7 @@ Console.WriteLine("(string)root={0}", root.Value)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.TimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator TimeSpan(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; TimeSpan" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5435,6 +5494,7 @@ value=01:05:30
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt32(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; uint32" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5503,6 +5563,7 @@ value=4294967295
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.op_Explicit(System.Xml.Linq.XElement)~System.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (element As XElement) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt64(System::Xml::Linq::XElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Xml.Linq.XElement -&gt; uint64" Usage="System.Xml.Linq.XElement.op_Explicit element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5582,6 +5643,7 @@ value=18446744073709551615
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Parse(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Parse text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5650,6 +5712,7 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Parse(System.String,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String, options As LoadOptions) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XElement ^ Parse(System::String ^ text, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XElement" Usage="System.Xml.Linq.XElement.Parse (text, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5828,6 +5891,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; unit" Usage="xElement.RemoveAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -5905,6 +5969,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.RemoveAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAttributes ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAttributes();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAttributes : unit -&gt; unit" Usage="xElement.RemoveAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6074,6 +6139,7 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAll(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceAll (content As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceAll(System::Object ^ content);" />
+      <MemberSignature Language="F#" Value="member this.ReplaceAll : obj -&gt; unit" Usage="xElement.ReplaceAll content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6261,6 +6327,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAll(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceAll (ParamArray content As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceAll(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="member this.ReplaceAll : obj[] -&gt; unit" Usage="xElement.ReplaceAll content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6425,6 +6492,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAttributes(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceAttributes (content As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceAttributes(System::Object ^ content);" />
+      <MemberSignature Language="F#" Value="member this.ReplaceAttributes : obj -&gt; unit" Usage="xElement.ReplaceAttributes content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6500,6 +6568,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceAttributes (ParamArray content As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceAttributes(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="member this.ReplaceAttributes : obj[] -&gt; unit" Usage="xElement.ReplaceAttributes content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6596,6 +6665,7 @@ Console.WriteLine(root)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="xElement.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6641,6 +6711,7 @@ Console.WriteLine(root)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.IO.TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter -&gt; unit" Usage="xElement.Save textWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6715,6 +6786,7 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="xElement.Save fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -6790,6 +6862,7 @@ Console.WriteLine(Str)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Xml.XmlWriter -&gt; unit" Usage="xElement.Save writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6863,6 +6936,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xElement.Save (stream, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -6910,6 +6984,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xElement.Save (textWriter, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7008,6 +7083,7 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.Save(System.String,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String, options As SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xElement.Save (fileName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -7099,6 +7175,7 @@ Console.WriteLine(str)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SaveAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xElement.SaveAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7125,6 +7202,7 @@ Console.WriteLine(str)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SaveAsync(System.IO.Stream,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.Stream * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xElement.SaveAsync (stream, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7153,6 +7231,7 @@ Console.WriteLine(str)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SaveAsync(System.IO.TextWriter,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.TextWriter * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xElement.SaveAsync (textWriter, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7182,6 +7261,7 @@ Console.WriteLine(str)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttributeValue (name As XName, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttributeValue(System::Xml::Linq::XName ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetAttributeValue : System.Xml.Linq.XName * obj -&gt; unit" Usage="xElement.SetAttributeValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7287,6 +7367,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetElementValue (name As XName, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetElementValue(System::Xml::Linq::XName ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetElementValue : System.Xml.Linq.XName * obj -&gt; unit" Usage="xElement.SetElementValue (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7405,6 +7486,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : obj -&gt; unit" Usage="xElement.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7617,6 +7699,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XElement.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Xml.Linq.XElement.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7681,6 +7764,7 @@ This is mixed content
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xElement.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -7784,6 +7868,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xElement.WriteToAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

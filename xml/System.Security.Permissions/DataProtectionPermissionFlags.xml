@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.DataProtectionPermissionFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataProtectionPermissionFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataProtectionPermissionFlags" />
+  <TypeSignature Language="F#" Value="type DataProtectionPermissionFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.AllFlags" />
       <MemberSignature Language="VB.NET" Value="AllFlags" />
       <MemberSignature Language="C++ CLI" Value="AllFlags" />
+      <MemberSignature Language="F#" Value="AllFlags = 15" Usage="System.Security.Permissions.DataProtectionPermissionFlags.AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="C++ CLI" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.DataProtectionPermissionFlags.NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectData" />
       <MemberSignature Language="VB.NET" Value="ProtectData" />
       <MemberSignature Language="C++ CLI" Value="ProtectData" />
+      <MemberSignature Language="F#" Value="ProtectData = 1" Usage="System.Security.Permissions.DataProtectionPermissionFlags.ProtectData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectMemory" />
       <MemberSignature Language="VB.NET" Value="ProtectMemory" />
       <MemberSignature Language="C++ CLI" Value="ProtectMemory" />
+      <MemberSignature Language="F#" Value="ProtectMemory = 4" Usage="System.Security.Permissions.DataProtectionPermissionFlags.ProtectMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectData" />
       <MemberSignature Language="VB.NET" Value="UnprotectData" />
       <MemberSignature Language="C++ CLI" Value="UnprotectData" />
+      <MemberSignature Language="F#" Value="UnprotectData = 2" Usage="System.Security.Permissions.DataProtectionPermissionFlags.UnprotectData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectMemory" />
       <MemberSignature Language="VB.NET" Value="UnprotectMemory" />
       <MemberSignature Language="C++ CLI" Value="UnprotectMemory" />
+      <MemberSignature Language="F#" Value="UnprotectMemory = 8" Usage="System.Security.Permissions.DataProtectionPermissionFlags.UnprotectMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

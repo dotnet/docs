@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.BroadcastBlock`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BroadcastBlock(Of T)&#xA;Implements IPropagatorBlock(Of T, T), IReceivableSourceBlock(Of T), ISourceBlock(Of T), ITargetBlock(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class BroadcastBlock sealed : System::Threading::Tasks::Dataflow::IPropagatorBlock&lt;T, T&gt;, System::Threading::Tasks::Dataflow::IReceivableSourceBlock&lt;T&gt;, System::Threading::Tasks::Dataflow::ISourceBlock&lt;T&gt;, System::Threading::Tasks::Dataflow::ITargetBlock&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type BroadcastBlock&lt;'T&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface IPropagatorBlock&lt;'T, 'T&gt;&#xA;    interface ISourceBlock&lt;'T&gt;&#xA;    interface ITargetBlock&lt;'T&gt;&#xA;    interface IReceivableSourceBlock&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.#ctor(System.Func{`0,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cloningFunction As Func(Of T, T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BroadcastBlock(Func&lt;T, T&gt; ^ cloningFunction);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt; : Func&lt;'T, 'T&gt; -&gt; System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt;" Usage="new System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt; cloningFunction" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;!T, !T&gt; cloningFunction, class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.#ctor(System.Func{`0,`0},System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BroadcastBlock(Func&lt;T, T&gt; ^ cloningFunction, System::Threading::Tasks::Dataflow::DataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt; : Func&lt;'T, 'T&gt; * System.Threading.Tasks.Dataflow.DataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt;" Usage="new System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt; (cloningFunction, dataflowBlockOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete();" />
+      <MemberSignature Language="F#" Value="abstract member Complete : unit -&gt; unit&#xA;override this.Complete : unit -&gt; unit" Usage="broadcastBlock.Complete " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete</InterfaceMember>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BroadcastBlock`1.Completion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completion As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Completion { System::Threading::Tasks::Task ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Completion : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.Dataflow.BroadcastBlock&lt;'T&gt;.Completion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion</InterfaceMember>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function LinkTo (target As ITargetBlock(Of T), linkOptions As DataflowLinkOptions) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ITargetBlock&lt;T&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions);" />
+      <MemberSignature Language="F#" Value="abstract member LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'T&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable&#xA;override this.LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'T&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable" Usage="broadcastBlock.LinkTo (target, linkOptions)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)</InterfaceMember>
@@ -452,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="broadcastBlock.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -483,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BroadcastBlock`1.TryReceive(System.Predicate{`0},`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceive (filter As Predicate(Of T), ByRef item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceive(Predicate&lt;T&gt; ^ filter, [Runtime::InteropServices::Out] T % item);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;'T&gt; *  -&gt; bool&#xA;override this.TryReceive : Predicate&lt;'T&gt; *  -&gt; bool" Usage="broadcastBlock.TryReceive (filter, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

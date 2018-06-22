@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.ShouldSerializeResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShouldSerializeResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShouldSerializeResult" />
+  <TypeSignature Language="F#" Value="type ShouldSerializeResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Xaml.Schema.ShouldSerializeResult.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 2" Usage="System.Xaml.Schema.ShouldSerializeResult.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Xaml.Schema.ShouldSerializeResult.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

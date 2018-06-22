@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ListSourceHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class ListSourceHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListSourceHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type ListSourceHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ListSourceHelper.ContainsListCollection(System.Web.UI.IDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsListCollection (dataSource As IDataSource) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsListCollection(System::Web::UI::IDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member ContainsListCollection : System.Web.UI.IDataSource -&gt; bool" Usage="System.Web.UI.ListSourceHelper.ContainsListCollection dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ListSourceHelper.GetList(System.Web.UI.IDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetList (dataSource As IDataSource) As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ GetList(System::Web::UI::IDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member GetList : System.Web.UI.IDataSource -&gt; System.Collections.IList" Usage="System.Web.UI.ListSourceHelper.GetList dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

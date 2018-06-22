@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollAmount" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollAmount" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollAmount" />
+  <TypeSignature Language="F#" Value="type ScrollAmount = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.LargeDecrement" />
       <MemberSignature Language="VB.NET" Value="LargeDecrement" />
       <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 0" Usage="System.Windows.Automation.ScrollAmount.LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.LargeIncrement" />
       <MemberSignature Language="VB.NET" Value="LargeIncrement" />
       <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Automation.ScrollAmount.LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.NoAmount" />
       <MemberSignature Language="VB.NET" Value="NoAmount" />
       <MemberSignature Language="C++ CLI" Value="NoAmount" />
+      <MemberSignature Language="F#" Value="NoAmount = 2" Usage="System.Windows.Automation.ScrollAmount.NoAmount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.SmallDecrement" />
       <MemberSignature Language="VB.NET" Value="SmallDecrement" />
       <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 1" Usage="System.Windows.Automation.ScrollAmount.SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.SmallIncrement" />
       <MemberSignature Language="VB.NET" Value="SmallIncrement" />
       <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 4" Usage="System.Windows.Automation.ScrollAmount.SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

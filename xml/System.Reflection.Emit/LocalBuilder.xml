@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.LocalBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalBuilder&#xA;Inherits LocalVariableInfo&#xA;Implements _LocalBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalBuilder sealed : System::Reflection::LocalVariableInfo, System::Runtime::InteropServices::_LocalBuilder" />
+  <TypeSignature Language="F#" Value="type LocalBuilder = class&#xA;    inherit LocalVariableInfo&#xA;    interface _LocalBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.IsPinned" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPinned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPinned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPinned : bool" Usage="System.Reflection.Emit.LocalBuilder.IsPinned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.LocalIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LocalIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalIndex : int" Usage="System.Reflection.Emit.LocalBuilder.LocalIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.LocalType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocalType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalType : Type" Usage="System.Reflection.Emit.LocalBuilder.LocalType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSymInfo (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSymInfo(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalSymInfo : string -&gt; unit" Usage="localBuilder.SetLocalSymInfo name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSymInfo (name As String, startOffset As Integer, endOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSymInfo(System::String ^ name, int startOffset, int endOffset);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalSymInfo : string * int * int -&gt; unit" Usage="localBuilder.SetLocalSymInfo (name, startOffset, endOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

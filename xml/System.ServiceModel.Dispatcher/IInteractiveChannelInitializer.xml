@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInteractiveChannelInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInteractiveChannelInitializer" />
+  <TypeSignature Language="F#" Value="type IInteractiveChannelInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI(System.ServiceModel.IClientChannel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginDisplayInitializationUI (channel As IClientChannel, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginDisplayInitializationUI(System::ServiceModel::IClientChannel ^ channel, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginDisplayInitializationUI : System.ServiceModel.IClientChannel * AsyncCallback * obj -&gt; IAsyncResult" Usage="iInteractiveChannelInitializer.BeginDisplayInitializationUI (channel, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.EndDisplayInitializationUI(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndDisplayInitializationUI (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndDisplayInitializationUI(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndDisplayInitializationUI : IAsyncResult -&gt; unit" Usage="iInteractiveChannelInitializer.EndDisplayInitializationUI result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

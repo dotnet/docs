@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsImpersonationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsImpersonationContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsImpersonationContext : IDisposable" />
+  <TypeSignature Language="F#" Value="type WindowsImpersonationContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsImpersonationContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="windowsImpersonationContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsImpersonationContext.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="windowsImpersonationContext.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsImpersonationContext.Undo" />
       <MemberSignature Language="VB.NET" Value="Public Sub Undo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Undo();" />
+      <MemberSignature Language="F#" Value="member this.Undo : unit -&gt; unit" Usage="windowsImpersonationContext.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

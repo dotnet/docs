@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.SpecularMaterial" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpecularMaterial&#xA;Inherits Material" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpecularMaterial sealed : System::Windows::Media::Media3D::Material" />
+  <TypeSignature Language="F#" Value="type SpecularMaterial = class&#xA;    inherit Material" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush brush, float64 specularPower) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpecularMaterial.#ctor(System.Windows.Media.Brush,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpecularMaterial(System::Windows::Media::Brush ^ brush, double specularPower);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.SpecularMaterial : System.Windows.Media.Brush * double -&gt; System.Windows.Media.Media3D.SpecularMaterial" Usage="new System.Windows.Media.Media3D.SpecularMaterial (brush, specularPower)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpecularMaterial.Brush" />
       <MemberSignature Language="VB.NET" Value="Public Property Brush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Brush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Brush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.Media3D.SpecularMaterial.Brush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpecularMaterial.BrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.SpecularMaterial.BrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpecularMaterial.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As SpecularMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::SpecularMaterial ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.SpecularMaterial" Usage="specularMaterial.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpecularMaterial.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As SpecularMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::SpecularMaterial ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.SpecularMaterial" Usage="specularMaterial.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpecularMaterial.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="System.Windows.Media.Media3D.SpecularMaterial.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpecularMaterial.ColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.SpecularMaterial.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpecularMaterial.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="specularMaterial.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpecularMaterial.SpecularPower" />
       <MemberSignature Language="VB.NET" Value="Public Property SpecularPower As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpecularPower { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SpecularPower : double with get, set" Usage="System.Windows.Media.Media3D.SpecularMaterial.SpecularPower" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpecularMaterial.SpecularPowerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpecularPowerProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpecularPowerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SpecularPowerProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.SpecularMaterial.SpecularPowerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

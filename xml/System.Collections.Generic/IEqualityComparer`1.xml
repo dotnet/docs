@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IEqualityComparer`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEqualityComparer(Of In T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IEqualityComparer" />
+  <TypeSignature Language="F#" Value="type IEqualityComparer&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(!T x, !T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Equals : 'T * 'T -&gt; bool" Usage="iEqualityComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : 'T -&gt; int" Usage="iEqualityComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceMetadataExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceMetadataExtension&#xA;Implements IExtension(Of ServiceHostBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceMetadataExtension : System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceMetadataExtension = class&#xA;    interface IExtension&lt;ServiceHostBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataExtension.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As MetadataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MetadataSet ^ Metadata { System::ServiceModel::Description::MetadataSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.ServiceModel.Description.MetadataSet" Usage="System.ServiceModel.Description.ServiceMetadataExtension.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataExtension.SingleWsdl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleWsdl As ServiceDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescription ^ SingleWsdl { System::Web::Services::Description::ServiceDescription ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleWsdl : System.Web.Services.Description.ServiceDescription" Usage="System.ServiceModel.Description.ServiceMetadataExtension.SingleWsdl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

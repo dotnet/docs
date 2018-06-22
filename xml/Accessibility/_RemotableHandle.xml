@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Accessibility._RemotableHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure _RemotableHandle" />
   <TypeSignature Language="C++ CLI" Value="public value class _RemotableHandle" />
+  <TypeSignature Language="F#" Value="type _RemotableHandle = struct" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.fContext" />
       <MemberSignature Language="VB.NET" Value="Public fContext As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int fContext;" />
+      <MemberSignature Language="F#" Value="val mutable fContext : int" Usage="Accessibility._RemotableHandle.fContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.u" />
       <MemberSignature Language="VB.NET" Value="Public u As __MIDL_IWinTypes_0009 " />
       <MemberSignature Language="C++ CLI" Value="public: Accessibility::__MIDL_IWinTypes_0009 u;" />
+      <MemberSignature Language="F#" Value="val mutable u : Accessibility.__MIDL_IWinTypes_0009" Usage="Accessibility._RemotableHandle.u" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

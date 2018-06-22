@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderFragmentRoot&#xA;Implements IRawElementProviderFragment" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderFragmentRoot : System::Windows::Automation::Provider::IRawElementProviderFragment" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderFragmentRoot = interface&#xA;    interface IRawElementProviderFragment&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.ElementProviderFromPoint(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementProviderFromPoint (x As Double, y As Double) As IRawElementProviderFragment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ ElementProviderFromPoint(double x, double y);" />
+      <MemberSignature Language="F#" Value="abstract member ElementProviderFromPoint : double * double -&gt; System.Windows.Automation.Provider.IRawElementProviderFragment" Usage="iRawElementProviderFragmentRoot.ElementProviderFromPoint (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.GetFocus" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFocus () As IRawElementProviderFragment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ GetFocus();" />
+      <MemberSignature Language="F#" Value="abstract member GetFocus : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderFragment" Usage="iRawElementProviderFragmentRoot.GetFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

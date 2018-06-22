@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectPastingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectPastingEventArgs&#xA;Inherits DataObjectEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObjectPastingEventArgs sealed : System::Windows::DataObjectEventArgs" />
+  <TypeSignature Language="F#" Value="type DataObjectPastingEventArgs = class&#xA;    inherit DataObjectEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectPastingEventArgs.#ctor(System.Windows.IDataObject,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataObject As IDataObject, isDragDrop As Boolean, formatToApply As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectPastingEventArgs(System::Windows::IDataObject ^ dataObject, bool isDragDrop, System::String ^ formatToApply);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataObjectPastingEventArgs : System.Windows.IDataObject * bool * string -&gt; System.Windows.DataObjectPastingEventArgs" Usage="new System.Windows.DataObjectPastingEventArgs (dataObject, isDragDrop, formatToApply)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.DataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property DataObject As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ DataObject { System::Windows::IDataObject ^ get(); void set(System::Windows::IDataObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataObject : System.Windows.IDataObject with get, set" Usage="System.Windows.DataObjectPastingEventArgs.DataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.FormatToApply" />
       <MemberSignature Language="VB.NET" Value="Public Property FormatToApply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatToApply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormatToApply : string with get, set" Usage="System.Windows.DataObjectPastingEventArgs.FormatToApply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectPastingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataObjectPastingEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.SourceDataObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDataObject As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ SourceDataObject { System::Windows::IDataObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceDataObject : System.Windows.IDataObject" Usage="System.Windows.DataObjectPastingEventArgs.SourceDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

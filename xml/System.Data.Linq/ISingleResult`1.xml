@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ISingleResult`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISingleResult(Of T)&#xA;Implements IDisposable, IEnumerable(Of T), IFunctionResult" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class ISingleResult : IDisposable, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Data::Linq::IFunctionResult" />
+  <TypeSignature Language="F#" Value="type ISingleResult&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IFunctionResult&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

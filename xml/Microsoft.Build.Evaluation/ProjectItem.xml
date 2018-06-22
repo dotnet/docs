@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectItem" />
+  <TypeSignature Language="F#" Value="type ProjectItem = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.DirectMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectMetadata As IEnumerable(Of ProjectMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Evaluation::ProjectMetadata ^&gt; ^ DirectMetadata { System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Evaluation::ProjectMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectMetadata : seq&lt;Microsoft.Build.Evaluation.ProjectMetadata&gt;" Usage="Microsoft.Build.Evaluation.ProjectItem.DirectMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.DirectMetadataCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectMetadataCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DirectMetadataCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectMetadataCount : int" Usage="Microsoft.Build.Evaluation.ProjectItem.DirectMetadataCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.EvaluatedInclude" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedInclude As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedInclude { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedInclude : string" Usage="Microsoft.Build.Evaluation.ProjectItem.EvaluatedInclude" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IItem.EvaluatedInclude</InterfaceMember>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.GetMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (name As String) As ProjectMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Evaluation::ProjectMetadata ^ GetMetadata(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetMetadata : string -&gt; Microsoft.Build.Evaluation.ProjectMetadata" Usage="projectItem.GetMetadata name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IItem`1.GetMetadata(System.String)</InterfaceMember>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.GetMetadataValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadataValue (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetMetadataValue(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataValue : string -&gt; string&#xA;override this.GetMetadataValue : string -&gt; string" Usage="projectItem.GetMetadataValue name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IItem.GetMetadataValue(System.String)</InterfaceMember>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.HasMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasMetadata (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasMetadata(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.HasMetadata : string -&gt; bool" Usage="projectItem.HasMetadata name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.Evaluation.ProjectItem.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="Microsoft.Build.Evaluation.ProjectItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As ICollection(Of ProjectMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Evaluation::ProjectMetadata ^&gt; ^ Metadata { System::Collections::Generic::ICollection&lt;Microsoft::Build::Evaluation::ProjectMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.ICollection&lt;Microsoft.Build.Evaluation.ProjectMetadata&gt;" Usage="Microsoft.Build.Evaluation.ProjectItem.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.MetadataCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetadataCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataCount : int" Usage="Microsoft.Build.Evaluation.ProjectItem.MetadataCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.Project" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Project As Project" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Evaluation::Project ^ Project { Microsoft::Build::Evaluation::Project ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Project : Microsoft.Build.Evaluation.Project" Usage="Microsoft.Build.Evaluation.ProjectItem.Project" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IProjectMetadataParent.Project</InterfaceMember>
@@ -365,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.RemoveMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveMetadata (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveMetadata(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.RemoveMetadata : string -&gt; bool" Usage="projectItem.RemoveMetadata name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -398,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.Rename(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rename (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rename(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Rename : string -&gt; unit" Usage="projectItem.Rename name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -428,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectItem.SetMetadataValue(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMetadataValue (name As String, unevaluatedValue As String) As ProjectMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Evaluation::ProjectMetadata ^ SetMetadataValue(System::String ^ name, System::String ^ unevaluatedValue);" />
+      <MemberSignature Language="F#" Value="member this.SetMetadataValue : string * string -&gt; Microsoft.Build.Evaluation.ProjectMetadata" Usage="projectItem.SetMetadataValue (name, unevaluatedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -465,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.UnevaluatedInclude" />
       <MemberSignature Language="VB.NET" Value="Public Property UnevaluatedInclude As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UnevaluatedInclude { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UnevaluatedInclude : string with get, set" Usage="Microsoft.Build.Evaluation.ProjectItem.UnevaluatedInclude" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectItem.Xml" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Xml As ProjectItemElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectItemElement ^ Xml { Microsoft::Build::Construction::ProjectItemElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Xml : Microsoft.Build.Construction.ProjectItemElement" Usage="Microsoft.Build.Evaluation.ProjectItem.Xml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

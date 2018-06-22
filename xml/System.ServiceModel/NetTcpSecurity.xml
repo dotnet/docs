@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetTcpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetTcpSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetTcpSecurity sealed" />
+  <TypeSignature Language="F#" Value="type NetTcpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As MessageSecurityOverTcp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageSecurityOverTcp ^ Message { System::ServiceModel::MessageSecurityOverTcp ^ get(); void set(System::ServiceModel::MessageSecurityOverTcp ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.MessageSecurityOverTcp with get, set" Usage="System.ServiceModel.NetTcpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As SecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SecurityMode Mode { System::ServiceModel::SecurityMode get(); void set(System::ServiceModel::SecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.SecurityMode with get, set" Usage="System.ServiceModel.NetTcpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As TcpTransportSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TcpTransportSecurity ^ Transport { System::ServiceModel::TcpTransportSecurity ^ get(); void set(System::ServiceModel::TcpTransportSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.TcpTransportSecurity with get, set" Usage="System.ServiceModel.NetTcpSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

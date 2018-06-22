@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphicsContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BufferedGraphicsContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BufferedGraphicsContext sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type BufferedGraphicsContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetGraphics As Graphics, targetRectangle As Rectangle) As BufferedGraphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(System::Drawing::Graphics ^ targetGraphics, System::Drawing::Rectangle targetRectangle);" />
+      <MemberSignature Language="F#" Value="member this.Allocate : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; System.Drawing.BufferedGraphics" Usage="bufferedGraphicsContext.Allocate (targetGraphics, targetRectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.IntPtr,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetDC As IntPtr, targetRectangle As Rectangle) As BufferedGraphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(IntPtr targetDC, System::Drawing::Rectangle targetRectangle);" />
+      <MemberSignature Language="F#" Value="member this.Allocate : nativeint * System.Drawing.Rectangle -&gt; System.Drawing.BufferedGraphics" Usage="bufferedGraphicsContext.Allocate (targetDC, targetRectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="bufferedGraphicsContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!BufferedGraphicsContext ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="bufferedGraphicsContext.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="bufferedGraphicsContext.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.BufferedGraphicsContext.MaximumBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumBuffer As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size MaximumBuffer { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumBuffer : System.Drawing.Size with get, set" Usage="System.Drawing.BufferedGraphicsContext.MaximumBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

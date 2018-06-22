@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Collection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Collection&#xA;Implements IDeserializationCallback, IList, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Collection sealed : System::Collections::IList, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Collection = class&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -125,6 +126,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="ILAsm" Value=".method public instance void Add(object Item, string Key, object Before, object After) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Add(System.Object,System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (Item As Object, Optional Key As String = null, Optional Before As Object = null, Optional After As Object = null)" />
+      <MemberSignature Language="F#" Value="member this.Add : obj * string * obj * obj -&gt; unit" Usage="collection.Add (Item, Key, Before, After)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -172,6 +174,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="collection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -207,6 +210,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (Key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ Key);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="collection.Contains Key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -247,6 +251,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.VisualBasic.Collection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -287,6 +292,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="collection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -341,6 +347,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -389,6 +396,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -442,6 +450,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ Key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -499,6 +508,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Remove(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (Index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(int Index);" />
+      <MemberSignature Language="F#" Value="member this.Remove : int -&gt; unit" Usage="collection.Remove Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -545,6 +555,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (Key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ Key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="collection.Remove Key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -639,6 +650,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionCount As Integer Implements ICollection.ICollectionCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.ICollectionCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -659,6 +671,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionIsSynchronized As Boolean Implements ICollection.ICollectionIsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.ICollectionIsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -679,6 +692,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionSyncRoot As Object Implements ICollection.ICollectionSyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.ICollectionSyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -850,6 +864,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsFixedSize As Boolean Implements IList.IListIsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -870,6 +885,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsReadOnly As Boolean Implements IList.IListIsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -890,6 +906,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property IListItem(index As Integer) As Object Implements IList.IListItem" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

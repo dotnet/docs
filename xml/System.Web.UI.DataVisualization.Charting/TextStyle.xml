@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TextStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextStyle" />
+  <TypeSignature Language="F#" Value="type TextStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextStyle.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.UI.DataVisualization.Charting.TextStyle.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextStyle.Embed" />
       <MemberSignature Language="VB.NET" Value="Embed" />
       <MemberSignature Language="C++ CLI" Value="Embed" />
+      <MemberSignature Language="F#" Value="Embed = 3" Usage="System.Web.UI.DataVisualization.Charting.TextStyle.Embed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextStyle.Emboss" />
       <MemberSignature Language="VB.NET" Value="Emboss" />
       <MemberSignature Language="C++ CLI" Value="Emboss" />
+      <MemberSignature Language="F#" Value="Emboss = 2" Usage="System.Web.UI.DataVisualization.Charting.TextStyle.Emboss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextStyle.Frame" />
       <MemberSignature Language="VB.NET" Value="Frame" />
       <MemberSignature Language="C++ CLI" Value="Frame" />
+      <MemberSignature Language="F#" Value="Frame = 4" Usage="System.Web.UI.DataVisualization.Charting.TextStyle.Frame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextStyle.Shadow" />
       <MemberSignature Language="VB.NET" Value="Shadow" />
       <MemberSignature Language="C++ CLI" Value="Shadow" />
+      <MemberSignature Language="F#" Value="Shadow = 1" Usage="System.Web.UI.DataVisualization.Charting.TextStyle.Shadow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

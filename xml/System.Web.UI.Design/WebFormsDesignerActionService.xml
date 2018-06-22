@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebFormsDesignerActionService" />
   <TypeSignature Language="VB.NET" Value="Public Class WebFormsDesignerActionService&#xA;Inherits DesignerActionService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebFormsDesignerActionService : System::ComponentModel::Design::DesignerActionService" />
+  <TypeSignature Language="F#" Value="type WebFormsDesignerActionService = class&#xA;    inherit DesignerActionService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsDesignerActionService.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebFormsDesignerActionService(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebFormsDesignerActionService : IServiceProvider -&gt; System.Web.UI.Design.WebFormsDesignerActionService" Usage="new System.Web.UI.Design.WebFormsDesignerActionService serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsDesignerActionService.GetComponentDesignerActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetComponentDesignerActions (component As IComponent, actionLists As DesignerActionListCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetComponentDesignerActions(System::ComponentModel::IComponent ^ component, System::ComponentModel::Design::DesignerActionListCollection ^ actionLists);" />
+      <MemberSignature Language="F#" Value="override this.GetComponentDesignerActions : System.ComponentModel.IComponent * System.ComponentModel.Design.DesignerActionListCollection -&gt; unit" Usage="webFormsDesignerActionService.GetComponentDesignerActions (component, actionLists)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

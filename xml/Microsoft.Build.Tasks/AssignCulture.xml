@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.AssignCulture" />
   <TypeSignature Language="VB.NET" Value="Public Class AssignCulture&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssignCulture : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type AssignCulture = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ AssignedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssignedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.AssignCulture.AssignedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithCulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedFilesWithCulture As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ AssignedFilesWithCulture { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssignedFilesWithCulture : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithNoCulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedFilesWithNoCulture As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ AssignedFilesWithNoCulture { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssignedFilesWithNoCulture : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.AssignCulture.AssignedFilesWithNoCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.CultureNeutralAssignedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureNeutralAssignedFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CultureNeutralAssignedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureNeutralAssignedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.AssignCulture.CultureNeutralAssignedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AssignCulture.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="assignCulture.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignCulture.Files" />
       <MemberSignature Language="VB.NET" Value="Public Property Files As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Files { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.AssignCulture.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.SerializationState" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerializationState" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerializationState" />
+  <TypeSignature Language="F#" Value="type SerializationState = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.SerializationState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Xps.Serialization.SerializationState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.SerializationState.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 1" Usage="System.Windows.Xps.Serialization.SerializationState.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

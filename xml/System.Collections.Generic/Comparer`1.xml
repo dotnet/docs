@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Comparer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Comparer(Of T)&#xA;Implements IComparer, IComparer(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Comparer abstract : System::Collections::Generic::IComparer&lt;T&gt;, System::Collections::IComparer" />
+  <TypeSignature Language="F#" Value="type Comparer&lt;'T&gt; = class&#xA;    interface IComparer&#xA;    interface IComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Compare (x As T, y As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int Compare(T x, T y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : 'T * 'T -&gt; int" Usage="comparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -195,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Create(System.Comparison{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (comparison As Comparison(Of T)) As Comparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::Comparer&lt;T&gt; ^ Create(Comparison&lt;T&gt; ^ comparison);" />
+      <MemberSignature Language="F#" Value="static member Create : Comparison&lt;'T&gt; -&gt; System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Create comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -231,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Comparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Comparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::Comparer&lt;T&gt; ^ Default { System::Collections::Generic::Comparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

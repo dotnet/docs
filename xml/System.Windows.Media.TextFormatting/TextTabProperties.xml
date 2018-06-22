@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextTabProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class TextTabProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextTabProperties" />
+  <TypeSignature Language="F#" Value="type TextTabProperties = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextTabProperties.#ctor(System.Windows.Media.TextFormatting.TextTabAlignment,System.Double,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (alignment As TextTabAlignment, location As Double, tabLeader As Integer, aligningChar As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextTabProperties(System::Windows::Media::TextFormatting::TextTabAlignment alignment, double location, int tabLeader, int aligningChar);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextTabProperties : System.Windows.Media.TextFormatting.TextTabAlignment * double * int * int -&gt; System.Windows.Media.TextFormatting.TextTabProperties" Usage="new System.Windows.Media.TextFormatting.TextTabProperties (alignment, location, tabLeader, aligningChar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTabProperties.AligningCharacter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AligningCharacter As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AligningCharacter { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AligningCharacter : int" Usage="System.Windows.Media.TextFormatting.TextTabProperties.AligningCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTabProperties.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alignment As TextTabAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextTabAlignment Alignment { System::Windows::Media::TextFormatting::TextTabAlignment get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Media.TextFormatting.TextTabAlignment" Usage="System.Windows.Media.TextFormatting.TextTabProperties.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTabProperties.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Location { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : double" Usage="System.Windows.Media.TextFormatting.TextTabProperties.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTabProperties.TabLeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabLeader As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabLeader { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabLeader : int" Usage="System.Windows.Media.TextFormatting.TextTabProperties.TabLeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

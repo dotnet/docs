@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PingOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class PingOptions" />
+  <TypeSignature Language="F#" Value="type PingOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.PingOptions.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ttl As Integer, dontFragment As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PingOptions(int ttl, bool dontFragment);" />
+      <MemberSignature Language="F#" Value="new System.Net.NetworkInformation.PingOptions : int * bool -&gt; System.Net.NetworkInformation.PingOptions" Usage="new System.Net.NetworkInformation.PingOptions (ttl, dontFragment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -168,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.DontFragment" />
       <MemberSignature Language="VB.NET" Value="Public Property DontFragment As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DontFragment { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DontFragment : bool with get, set" Usage="System.Net.NetworkInformation.PingOptions.DontFragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -215,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingOptions.Ttl" />
       <MemberSignature Language="VB.NET" Value="Public Property Ttl As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ttl { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Ttl : int with get, set" Usage="System.Net.NetworkInformation.PingOptions.Ttl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>

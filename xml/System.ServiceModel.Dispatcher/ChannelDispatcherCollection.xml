@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ChannelDispatcherCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelDispatcherCollection&#xA;Inherits SynchronizedCollection(Of ChannelDispatcherBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelDispatcherCollection : System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::ChannelDispatcherBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type ChannelDispatcherCollection = class&#xA;    inherit SynchronizedCollection&lt;ChannelDispatcherBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="channelDispatcherCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherCollection.InsertItem(System.Int32,System.ServiceModel.Dispatcher.ChannelDispatcherBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As ChannelDispatcherBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Dispatcher::ChannelDispatcherBase ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Dispatcher.ChannelDispatcherBase -&gt; unit" Usage="channelDispatcherCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="channelDispatcherCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherCollection.SetItem(System.Int32,System.ServiceModel.Dispatcher.ChannelDispatcherBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As ChannelDispatcherBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Dispatcher::ChannelDispatcherBase ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Dispatcher.ChannelDispatcherBase -&gt; unit" Usage="channelDispatcherCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.StatementContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatementContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class StatementContext sealed" />
+  <TypeSignature Language="F#" Value="type StatementContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.StatementContext.StatementCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatementCollection As ObjectStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ StatementCollection { System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatementCollection : System.ComponentModel.Design.Serialization.ObjectStatementCollection" Usage="System.ComponentModel.Design.Serialization.StatementContext.StatementCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

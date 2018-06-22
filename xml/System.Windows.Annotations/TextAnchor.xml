@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.TextAnchor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextAnchor" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextAnchor sealed" />
+  <TypeSignature Language="F#" Value="type TextAnchor = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.TextAnchor.BoundingEnd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundingEnd As ContentPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ContentPosition ^ BoundingEnd { System::Windows::Documents::ContentPosition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundingEnd : System.Windows.Documents.ContentPosition" Usage="System.Windows.Annotations.TextAnchor.BoundingEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.TextAnchor.BoundingStart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundingStart As ContentPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ContentPosition ^ BoundingStart { System::Windows::Documents::ContentPosition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundingStart : System.Windows.Documents.ContentPosition" Usage="System.Windows.Annotations.TextAnchor.BoundingStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.TextAnchor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="textAnchor.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.TextAnchor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="textAnchor.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

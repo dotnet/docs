@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ObfuscateAssemblyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObfuscateAssemblyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObfuscateAssemblyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ObfuscateAssemblyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ObfuscateAssemblyAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyIsPrivate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObfuscateAssemblyAttribute(bool assemblyIsPrivate);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.ObfuscateAssemblyAttribute : bool -&gt; System.Reflection.ObfuscateAssemblyAttribute" Usage="new System.Reflection.ObfuscateAssemblyAttribute assemblyIsPrivate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscateAssemblyAttribute.AssemblyIsPrivate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyIsPrivate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssemblyIsPrivate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyIsPrivate : bool" Usage="System.Reflection.ObfuscateAssemblyAttribute.AssemblyIsPrivate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscateAssemblyAttribute.StripAfterObfuscation" />
       <MemberSignature Language="VB.NET" Value="Public Property StripAfterObfuscation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StripAfterObfuscation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StripAfterObfuscation : bool with get, set" Usage="System.Reflection.ObfuscateAssemblyAttribute.StripAfterObfuscation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

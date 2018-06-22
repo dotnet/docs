@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelService abstract" />
+  <TypeSignature Language="F#" Value="type ModelService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateItem (item As Object) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ CreateItem(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : obj -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelService.CreateItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateItem(System.Type,System.Activities.Presentation.Model.CreateOptions,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateItem (itemType As Type, options As CreateOptions, ParamArray arguments As Object()) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ CreateItem(Type ^ itemType, System::Activities::Presentation::Model::CreateOptions options, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : Type * System.Activities.Presentation.Model.CreateOptions * obj[] -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelService.CreateItem (itemType, options, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem(class System.Type type, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateStaticMemberItem(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ CreateStaticMemberItem(Type ^ type, System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateStaticMemberItem : Type * string -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelService.CreateStaticMemberItem (type, memberName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.Find(System.Activities.Presentation.Model.ModelItem,System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Find (startingItem As ModelItem, match As Predicate(Of Type)) As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ Find(System::Activities::Presentation::Model::ModelItem ^ startingItem, Predicate&lt;Type ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="abstract member Find : System.Activities.Presentation.Model.ModelItem * Predicate&lt;Type&gt; -&gt; seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="modelService.Find (startingItem, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; Find(class System.Activities.Presentation.Model.ModelItem startingItem, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.Find(System.Activities.Presentation.Model.ModelItem,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ Find(System::Activities::Presentation::Model::ModelItem ^ startingItem, Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member Find : System.Activities.Presentation.Model.ModelItem * Type -&gt; seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="modelService.Find (startingItem, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.FromName(System.Activities.Presentation.Model.ModelItem,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromName (scope As ModelItem, name As String) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::Model::ModelItem ^ FromName(System::Activities::Presentation::Model::ModelItem ^ scope, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FromName : System.Activities.Presentation.Model.ModelItem * string -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelService.FromName (scope, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.FromName(System.Activities.Presentation.Model.ModelItem,System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FromName (scope As ModelItem, name As String, comparison As StringComparison) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ FromName(System::Activities::Presentation::Model::ModelItem ^ scope, System::String ^ name, StringComparison comparison);" />
+      <MemberSignature Language="F#" Value="abstract member FromName : System.Activities.Presentation.Model.ModelItem * string * StringComparison -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelService.FromName (scope, name, comparison)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Services.ModelService.ModelChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Event ModelChanged As EventHandler(Of ModelChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event EventHandler&lt;System::Activities::Presentation::Services::ModelChangedEventArgs ^&gt; ^ ModelChanged;" />
+      <MemberSignature Language="F#" Value="member this.ModelChanged : EventHandler&lt;System.Activities.Presentation.Services.ModelChangedEventArgs&gt; " Usage="member this.ModelChanged : System.EventHandler&lt;System.Activities.Presentation.Services.ModelChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelService.Root" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Root As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Root { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Services.ModelService.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

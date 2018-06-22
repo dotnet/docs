@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectPropertyInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectPropertyInstance&#xA;Implements IEquatable(Of ProjectPropertyInstance)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectPropertyInstance : IEquatable&lt;Microsoft::Build::Execution::ProjectPropertyInstance ^&gt;" />
+  <TypeSignature Language="F#" Value="type ProjectPropertyInstance = class&#xA;    interface IEquatable&lt;ProjectPropertyInstance&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectPropertyInstance.EvaluatedValue" />
       <MemberSignature Language="VB.NET" Value="Public Property EvaluatedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedValue : string with get, set" Usage="Microsoft.Build.Execution.ProjectPropertyInstance.EvaluatedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectPropertyInstance.IsImmutable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsImmutable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsImmutable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImmutable : bool" Usage="Microsoft.Build.Execution.ProjectPropertyInstance.IsImmutable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectPropertyInstance.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Execution.ProjectPropertyInstance.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IProperty.Name</InterfaceMember>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectPropertyInstance.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="projectPropertyInstance.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

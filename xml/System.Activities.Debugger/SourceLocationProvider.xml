@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocationProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SourceLocationProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SourceLocationProvider abstract sealed" />
+  <TypeSignature Language="F#" Value="type SourceLocationProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.CollectMapping(System.Activities.Activity,System.Activities.Activity,System.Collections.Generic.Dictionary{System.Object,System.Activities.Debugger.SourceLocation},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CollectMapping (rootActivity1 As Activity, rootActivity2 As Activity, mapping As Dictionary(Of Object, SourceLocation), path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CollectMapping(System::Activities::Activity ^ rootActivity1, System::Activities::Activity ^ rootActivity2, System::Collections::Generic::Dictionary&lt;System::Object ^, System::Activities::Debugger::SourceLocation ^&gt; ^ mapping, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member CollectMapping : System.Activities.Activity * System.Activities.Activity * System.Collections.Generic.Dictionary&lt;obj, System.Activities.Debugger.SourceLocation&gt; * string -&gt; unit" Usage="System.Activities.Debugger.SourceLocationProvider.CollectMapping (rootActivity1, rootActivity2, mapping, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.GetSourceLocations(System.Activities.Activity,System.Activities.Debugger.Symbol.WorkflowSymbol)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSourceLocations (rootActivity As Activity, symbol As WorkflowSymbol) As Dictionary(Of Object, SourceLocation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::Dictionary&lt;System::Object ^, System::Activities::Debugger::SourceLocation ^&gt; ^ GetSourceLocations(System::Activities::Activity ^ rootActivity, System::Activities::Debugger::Symbol::WorkflowSymbol ^ symbol);" />
+      <MemberSignature Language="F#" Value="static member GetSourceLocations : System.Activities.Activity * System.Activities.Debugger.Symbol.WorkflowSymbol -&gt; System.Collections.Generic.Dictionary&lt;obj, System.Activities.Debugger.SourceLocation&gt;" Usage="System.Activities.Debugger.SourceLocationProvider.GetSourceLocations (rootActivity, symbol)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.GetSymbols(System.Activities.Activity,System.Collections.Generic.Dictionary{System.Object,System.Activities.Debugger.SourceLocation})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSymbols (rootActivity As Activity, sourceLocations As Dictionary(Of Object, SourceLocation)) As ICollection(Of ActivitySymbol)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ GetSymbols(System::Activities::Activity ^ rootActivity, System::Collections::Generic::Dictionary&lt;System::Object ^, System::Activities::Debugger::SourceLocation ^&gt; ^ sourceLocations);" />
+      <MemberSignature Language="F#" Value="static member GetSymbols : System.Activities.Activity * System.Collections.Generic.Dictionary&lt;obj, System.Activities.Debugger.SourceLocation&gt; -&gt; System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt;" Usage="System.Activities.Debugger.SourceLocationProvider.GetSymbols (rootActivity, sourceLocations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

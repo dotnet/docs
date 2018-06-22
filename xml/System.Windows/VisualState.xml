@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualState" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualState&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualState : System::Windows::DependencyObject" />
+  <TypeSignature Language="F#" Value="type VisualState = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualState.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.VisualState.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualState.Storyboard" />
       <MemberSignature Language="VB.NET" Value="Public Property Storyboard As Storyboard" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Storyboard ^ Storyboard { System::Windows::Media::Animation::Storyboard ^ get(); void set(System::Windows::Media::Animation::Storyboard ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Storyboard : System.Windows.Media.Animation.Storyboard with get, set" Usage="System.Windows.VisualState.Storyboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

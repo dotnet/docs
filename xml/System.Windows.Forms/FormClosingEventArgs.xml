@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FormClosingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormClosingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type FormClosingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.CloseReason closeReason, bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FormClosingEventArgs.#ctor(System.Windows.Forms.CloseReason,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormClosingEventArgs(System::Windows::Forms::CloseReason closeReason, bool cancel);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FormClosingEventArgs : System.Windows.Forms.CloseReason * bool -&gt; System.Windows.Forms.FormClosingEventArgs" Usage="new System.Windows.Forms.FormClosingEventArgs (closeReason, cancel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormClosingEventArgs.CloseReason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseReason As CloseReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CloseReason CloseReason { System::Windows::Forms::CloseReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseReason : System.Windows.Forms.CloseReason" Usage="System.Windows.Forms.FormClosingEventArgs.CloseReason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

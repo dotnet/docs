@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageSecurityOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageSecurityOptions" />
+  <TypeSignature Language="F#" Value="type IsolatedStorageSecurityOptions = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForApplication" />
       <MemberSignature Language="VB.NET" Value="IncreaseQuotaForApplication" />
       <MemberSignature Language="C++ CLI" Value="IncreaseQuotaForApplication" />
+      <MemberSignature Language="F#" Value="IncreaseQuotaForApplication = 4" Usage="System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.BookmarkResumptionQuery" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BookmarkResumptionQuery&#xA;Inherits TrackingQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class BookmarkResumptionQuery sealed : System::Activities::Tracking::TrackingQuery" />
+  <TypeSignature Language="F#" Value="type BookmarkResumptionQuery = class&#xA;    inherit TrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.BookmarkResumptionQuery.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Tracking.BookmarkResumptionQuery.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

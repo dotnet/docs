@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.ChannelManagerService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelManagerService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelManagerService sealed : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type ChannelManagerService = class&#xA;    inherit WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpoints As IList(Of ServiceEndpoint))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelManagerService(System::Collections::Generic::IList&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ChannelManagerService : System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt; -&gt; System.Workflow.Runtime.Hosting.ChannelManagerService" Usage="new System.Workflow.Runtime.Hosting.ChannelManagerService endpoints" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelManagerService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ChannelManagerService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Runtime.Hosting.ChannelManagerService" Usage="new System.Workflow.Runtime.Hosting.ChannelManagerService parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settings As ChannelPoolSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelManagerService(System::ServiceModel::Channels::ChannelPoolSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ChannelManagerService : System.ServiceModel.Channels.ChannelPoolSettings -&gt; System.Workflow.Runtime.Hosting.ChannelManagerService" Usage="new System.Workflow.Runtime.Hosting.ChannelManagerService settings" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings,System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settings As ChannelPoolSettings, endpoints As IList(Of ServiceEndpoint))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelManagerService(System::ServiceModel::Channels::ChannelPoolSettings ^ settings, System::Collections::Generic::IList&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ChannelManagerService : System.ServiceModel.Channels.ChannelPoolSettings * System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt; -&gt; System.Workflow.Runtime.Hosting.ChannelManagerService" Usage="new System.Workflow.Runtime.Hosting.ChannelManagerService (settings, endpoints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Start();" />
+      <MemberSignature Language="F#" Value="override this.Start : unit -&gt; unit" Usage="channelManagerService.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.Stop" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Stop();" />
+      <MemberSignature Language="F#" Value="override this.Stop : unit -&gt; unit" Usage="channelManagerService.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

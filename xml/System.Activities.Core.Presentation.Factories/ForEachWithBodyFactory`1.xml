@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.Factories.ForEachWithBodyFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ForEachWithBodyFactory(Of T)&#xA;Implements IActivityTemplateFactory" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ForEachWithBodyFactory sealed : System::Activities::Presentation::IActivityTemplateFactory" />
+  <TypeSignature Language="F#" Value="type ForEachWithBodyFactory&lt;'T&gt; = class&#xA;    interface IActivityTemplateFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.Factories.ForEachWithBodyFactory`1.Create(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Activities::Activity ^ Create(System::Windows::DependencyObject ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Windows.DependencyObject -&gt; System.Activities.Activity&#xA;override this.Create : System.Windows.DependencyObject -&gt; System.Activities.Activity" Usage="forEachWithBodyFactory.Create target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.IActivityTemplateFactory.Create(System.Windows.DependencyObject)</InterfaceMember>

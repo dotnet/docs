@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialPort" />
   <TypeSignature Language="VB.NET" Value="Public Class SerialPort&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerialPort : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type SerialPort = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : System.ComponentModel.IContainer -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::String ^ portName);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort portName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String, baudRate As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::String ^ portName, int baudRate);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::String ^ portName, int baudRate, System::IO::Ports::Parity parity);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::String ^ portName, int baudRate, System::IO::Ports::Parity parity, int dataBits);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity * int -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity, dataBits)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits, valuetype System.IO.Ports.StopBits stopBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.#ctor(System.String,System.Int32,System.IO.Ports.Parity,System.Int32,System.IO.Ports.StopBits)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerialPort(System::String ^ portName, int baudRate, System::IO::Ports::Parity parity, int dataBits, System::IO::Ports::StopBits stopBits);" />
+      <MemberSignature Language="F#" Value="new System.IO.Ports.SerialPort : string * int * System.IO.Ports.Parity * int * System.IO.Ports.StopBits -&gt; System.IO.Ports.SerialPort" Usage="new System.IO.Ports.SerialPort (portName, baudRate, parity, dataBits, stopBits)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.Ports.SerialPort.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -359,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BaudRate" />
       <MemberSignature Language="VB.NET" Value="Public Property BaudRate As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BaudRate { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BaudRate : int with get, set" Usage="System.IO.Ports.SerialPort.BaudRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -422,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BreakState" />
       <MemberSignature Language="VB.NET" Value="Public Property BreakState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BreakState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BreakState : bool with get, set" Usage="System.IO.Ports.SerialPort.BreakState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -468,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BytesToRead" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesToRead As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BytesToRead { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesToRead : int" Usage="System.IO.Ports.SerialPort.BytesToRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -510,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.BytesToWrite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytesToWrite As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BytesToWrite { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytesToWrite : int" Usage="System.IO.Ports.SerialPort.BytesToWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -551,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.CDHolding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CDHolding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CDHolding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CDHolding : bool" Usage="System.IO.Ports.SerialPort.CDHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -597,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="serialPort.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -644,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.CtsHolding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtsHolding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtsHolding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CtsHolding : bool" Usage="System.IO.Ports.SerialPort.CtsHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -690,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DataBits" />
       <MemberSignature Language="VB.NET" Value="Public Property DataBits As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataBits { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DataBits : int with get, set" Usage="System.IO.Ports.SerialPort.DataBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -747,6 +763,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.DataReceived" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataReceived As SerialDataReceivedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::Ports::SerialDataReceivedEventHandler ^ DataReceived;" />
+      <MemberSignature Language="F#" Value="member this.DataReceived : System.IO.Ports.SerialDataReceivedEventHandler " Usage="member this.DataReceived : System.IO.Ports.SerialDataReceivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -801,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.DiscardInBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Sub DiscardInBuffer ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardInBuffer();" />
+      <MemberSignature Language="F#" Value="member this.DiscardInBuffer : unit -&gt; unit" Usage="serialPort.DiscardInBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -838,6 +856,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DiscardNull" />
       <MemberSignature Language="VB.NET" Value="Public Property DiscardNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DiscardNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DiscardNull : bool with get, set" Usage="System.IO.Ports.SerialPort.DiscardNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -890,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.DiscardOutBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Sub DiscardOutBuffer ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardOutBuffer();" />
+      <MemberSignature Language="F#" Value="member this.DiscardOutBuffer : unit -&gt; unit" Usage="serialPort.DiscardOutBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -927,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="serialPort.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -977,6 +998,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DsrHolding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DsrHolding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DsrHolding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DsrHolding : bool" Usage="System.IO.Ports.SerialPort.DsrHolding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1023,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.DtrEnable" />
       <MemberSignature Language="VB.NET" Value="Public Property DtrEnable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DtrEnable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DtrEnable : bool with get, set" Usage="System.IO.Ports.SerialPort.DtrEnable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1071,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding with get, set" Usage="System.IO.Ports.SerialPort.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1108,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.ErrorReceived" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ErrorReceived As SerialErrorReceivedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::Ports::SerialErrorReceivedEventHandler ^ ErrorReceived;" />
+      <MemberSignature Language="F#" Value="member this.ErrorReceived : System.IO.Ports.SerialErrorReceivedEventHandler " Usage="member this.ErrorReceived : System.IO.Ports.SerialErrorReceivedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1151,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.GetPortNames" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPortNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetPortNames();" />
+      <MemberSignature Language="F#" Value="static member GetPortNames : unit -&gt; string[]" Usage="System.IO.Ports.SerialPort.GetPortNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1197,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Handshake" />
       <MemberSignature Language="VB.NET" Value="Public Property Handshake As Handshake" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Ports::Handshake Handshake { System::IO::Ports::Handshake get(); void set(System::IO::Ports::Handshake value); };" />
+      <MemberSignature Language="F#" Value="member this.Handshake : System.IO.Ports.Handshake with get, set" Usage="System.IO.Ports.SerialPort.Handshake" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1256,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPort.InfiniteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Const InfiniteTimeout As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InfiniteTimeout = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InfiniteTimeout : int" Usage="System.IO.Ports.SerialPort.InfiniteTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1287,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.IsOpen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool" Usage="System.IO.Ports.SerialPort.IsOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1326,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.NewLine" />
       <MemberSignature Language="VB.NET" Value="Public Property NewLine As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewLine : string with get, set" Usage="System.IO.Ports.SerialPort.NewLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1370,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; unit" Usage="serialPort.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1430,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.Parity" />
       <MemberSignature Language="VB.NET" Value="Public Property Parity As Parity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Ports::Parity Parity { System::IO::Ports::Parity get(); void set(System::IO::Ports::Parity value); };" />
+      <MemberSignature Language="F#" Value="member this.Parity : System.IO.Ports.Parity with get, set" Usage="System.IO.Ports.SerialPort.Parity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1489,6 +1521,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ParityReplace" />
       <MemberSignature Language="VB.NET" Value="Public Property ParityReplace As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte ParityReplace { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.ParityReplace : byte with get, set" Usage="System.IO.Ports.SerialPort.ParityReplace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1539,6 +1572,7 @@
       <MemberSignature Language="DocId" Value="E:System.IO.Ports.SerialPort.PinChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PinChanged As SerialPinChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::IO::Ports::SerialPinChangedEventHandler ^ PinChanged;" />
+      <MemberSignature Language="F#" Value="member this.PinChanged : System.IO.Ports.SerialPinChangedEventHandler " Usage="member this.PinChanged : System.IO.Ports.SerialPinChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1582,6 +1616,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.PortName" />
       <MemberSignature Language="VB.NET" Value="Public Property PortName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PortName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PortName : string with get, set" Usage="System.IO.Ports.SerialPort.PortName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1653,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.Read : byte[] * int * int -&gt; int" Usage="serialPort.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1702,6 +1738,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read (buffer As Char(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Read(cli::array &lt;char&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.Read : char[] * int * int -&gt; int" Usage="serialPort.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1757,6 +1794,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReadBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadBufferSize : int with get, set" Usage="System.IO.Ports.SerialPort.ReadBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1804,6 +1842,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadByte () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadByte();" />
+      <MemberSignature Language="F#" Value="member this.ReadByte : unit -&gt; int" Usage="serialPort.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1847,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadChar" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadChar () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadChar();" />
+      <MemberSignature Language="F#" Value="member this.ReadChar : unit -&gt; int" Usage="serialPort.ReadChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1890,6 +1930,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadExisting" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadExisting () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadExisting();" />
+      <MemberSignature Language="F#" Value="member this.ReadExisting : unit -&gt; string" Usage="serialPort.ReadExisting " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1928,6 +1969,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadLine" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadLine () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadLine();" />
+      <MemberSignature Language="F#" Value="member this.ReadLine : unit -&gt; string" Usage="serialPort.ReadLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1982,6 +2024,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReadTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.IO.Ports.SerialPort.ReadTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2044,6 +2087,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.ReadTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadTo (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ReadTo(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ReadTo : string -&gt; string" Usage="serialPort.ReadTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2088,6 +2132,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.ReceivedBytesThreshold" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceivedBytesThreshold As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceivedBytesThreshold { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceivedBytesThreshold : int with get, set" Usage="System.IO.Ports.SerialPort.ReceivedBytesThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2134,6 +2179,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.RtsEnable" />
       <MemberSignature Language="VB.NET" Value="Public Property RtsEnable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RtsEnable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RtsEnable : bool with get, set" Usage="System.IO.Ports.SerialPort.RtsEnable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2183,6 +2229,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.StopBits" />
       <MemberSignature Language="VB.NET" Value="Public Property StopBits As StopBits" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Ports::StopBits StopBits { System::IO::Ports::StopBits get(); void set(System::IO::Ports::StopBits value); };" />
+      <MemberSignature Language="F#" Value="member this.StopBits : System.IO.Ports.StopBits with get, set" Usage="System.IO.Ports.SerialPort.StopBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2261,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (str As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ str);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="serialPort.Write str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2305,6 +2353,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.Write : byte[] * int * int -&gt; unit" Usage="serialPort.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2353,6 +2402,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Char(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;char&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.Write : char[] * int * int -&gt; unit" Usage="serialPort.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2401,6 +2451,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.WriteBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WriteBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteBufferSize : int with get, set" Usage="System.IO.Ports.SerialPort.WriteBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2450,6 +2501,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Ports.SerialPort.WriteLine(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteLine (str As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLine(System::String ^ str);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.WriteLine : string -&gt; unit" Usage="serialPort.WriteLine str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2500,6 +2552,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialPort.WriteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WriteTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="System.IO.Ports.SerialPort.WriteTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

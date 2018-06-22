@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextTrailingWordEllipsis" />
   <TypeSignature Language="VB.NET" Value="Public Class TextTrailingWordEllipsis&#xA;Inherits TextCollapsingProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextTrailingWordEllipsis : System::Windows::Media::TextFormatting::TextCollapsingProperties" />
+  <TypeSignature Language="F#" Value="type TextTrailingWordEllipsis = class&#xA;    inherit TextCollapsingProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.#ctor(System.Double,System.Windows.Media.TextFormatting.TextRunProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextTrailingWordEllipsis(double width, System::Windows::Media::TextFormatting::TextRunProperties ^ textRunProperties);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextTrailingWordEllipsis : double * System.Windows.Media.TextFormatting.TextRunProperties -&gt; System.Windows.Media.TextFormatting.TextTrailingWordEllipsis" Usage="new System.Windows.Media.TextFormatting.TextTrailingWordEllipsis (width, textRunProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Style" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Style As TextCollapsingStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextCollapsingStyle Style { System::Windows::Media::TextFormatting::TextCollapsingStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.Media.TextFormatting.TextCollapsingStyle" Usage="System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Symbol" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Symbol As TextRun" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRun ^ Symbol { System::Windows::Media::TextFormatting::TextRun ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Symbol : System.Windows.Media.TextFormatting.TextRun" Usage="System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Symbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.TextFormatting.TextTrailingWordEllipsis.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

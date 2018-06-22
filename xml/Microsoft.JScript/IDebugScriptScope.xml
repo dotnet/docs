@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugScriptScope" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDebugScriptScope" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDebugScriptScope" />
+  <TypeSignature Language="F#" Value="type IDebugScriptScope = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugScriptScope.SetThisValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetThisValue (thisValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetThisValue(System::Object ^ thisValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetThisValue : obj -&gt; unit" Usage="iDebugScriptScope.SetThisValue thisValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

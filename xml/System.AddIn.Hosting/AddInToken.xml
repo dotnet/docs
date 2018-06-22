@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInToken" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInToken&#xA;Implements IEnumerable(Of QualificationDataItem)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddInToken sealed : System::Collections::Generic::IEnumerable&lt;System::AddIn::Hosting::QualificationDataItem&gt;" />
+  <TypeSignature Language="F#" Value="type AddInToken = class&#xA;    interface seq&lt;QualificationDataItem&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInEnvironment)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (environment As AddInEnvironment) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInEnvironment ^ environment);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.AddIn.Hosting.AddInEnvironment -&gt; 'T" Usage="addInToken.Activate environment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInSecurityLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (trustLevel As AddInSecurityLevel) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInSecurityLevel trustLevel);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.AddIn.Hosting.AddInSecurityLevel -&gt; 'T" Usage="addInToken.Activate trustLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AppDomain)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (target As AppDomain) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(AppDomain ^ target);" />
+      <MemberSignature Language="F#" Value="member this.Activate : AppDomain -&gt; 'T" Usage="addInToken.Activate target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (permissions As PermissionSet) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::Security::PermissionSet ^ permissions);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.Security.PermissionSet -&gt; 'T" Usage="addInToken.Activate permissions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInProcess,System.AddIn.Hosting.AddInSecurityLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (process As AddInProcess, level As AddInSecurityLevel) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInProcess ^ process, System::AddIn::Hosting::AddInSecurityLevel level);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.AddIn.Hosting.AddInProcess * System.AddIn.Hosting.AddInSecurityLevel -&gt; 'T" Usage="addInToken.Activate (process, level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.AddIn.Hosting.AddInProcess process, class System.Security.PermissionSet permissionSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInProcess,System.Security.PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInProcess ^ process, System::Security::PermissionSet ^ permissionSet);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.AddIn.Hosting.AddInProcess * System.Security.PermissionSet -&gt; 'T" Usage="addInToken.Activate (process, permissionSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -332,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInSecurityLevel,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (trustLevel As AddInSecurityLevel, appDomainName As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInSecurityLevel trustLevel, System::String ^ appDomainName);" />
+      <MemberSignature Language="F#" Value="member this.Activate : System.AddIn.Hosting.AddInSecurityLevel * string -&gt; 'T" Usage="addInToken.Activate (trustLevel, appDomainName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -371,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.AddInFullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddInFullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddInFullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddInFullName : string" Usage="System.AddIn.Hosting.AddInToken.AddInFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -406,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ AssemblyName { System::Reflection::AssemblyName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : System.Reflection.AssemblyName" Usage="System.AddIn.Hosting.AddInToken.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -441,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.AddIn.Hosting.AddInToken.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -476,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.EnableDirectConnect" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property EnableDirectConnect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableDirectConnect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDirectConnect : bool with get, set" Usage="System.AddIn.Hosting.AddInToken.EnableDirectConnect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -514,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="addInToken.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -539,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of QualificationDataItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::AddIn::Hosting::QualificationDataItem&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.AddIn.Hosting.QualificationDataItem&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.AddIn.Hosting.QualificationDataItem&gt;" Usage="addInToken.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -585,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="addInToken.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -606,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.AddIn.Hosting.AddInToken.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -641,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Publisher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Publisher As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Publisher { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Publisher : string" Usage="System.AddIn.Hosting.AddInToken.Publisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -676,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.QualificationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualificationData As IDictionary(Of AddInSegmentType, IDictionary(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::AddIn::Hosting::AddInSegmentType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ QualificationData { System::Collections::Generic::IDictionary&lt;System::AddIn::Hosting::AddInSegmentType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QualificationData : System.Collections.Generic.IDictionary&lt;System.AddIn.Hosting.AddInSegmentType, System.Collections.Generic.IDictionary&lt;string, string&gt;&gt;" Usage="System.AddIn.Hosting.AddInToken.QualificationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -758,6 +776,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="addInToken.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -779,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.AddIn.Hosting.AddInToken.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

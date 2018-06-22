@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MissingMappingAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum MissingMappingAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class MissingMappingAction" />
+  <TypeSignature Language="F#" Value="type MissingMappingAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 3" Usage="System.Data.MissingMappingAction.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 2" Usage="System.Data.MissingMappingAction.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingMappingAction.Passthrough" />
       <MemberSignature Language="VB.NET" Value="Passthrough" />
       <MemberSignature Language="C++ CLI" Value="Passthrough" />
+      <MemberSignature Language="F#" Value="Passthrough = 1" Usage="System.Data.MissingMappingAction.Passthrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

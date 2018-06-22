@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInfo&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyInfo : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type KeyInfo = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.AddClause(System.Security.Cryptography.Xml.KeyInfoClause)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddClause (clause As KeyInfoClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClause(System::Security::Cryptography::Xml::KeyInfoClause ^ clause);" />
+      <MemberSignature Language="F#" Value="member this.AddClause : System.Security.Cryptography.Xml.KeyInfoClause -&gt; unit" Usage="keyInfo.AddClause clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -175,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfo.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.Xml.KeyInfo.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -208,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="keyInfo.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetEnumerator(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator (requestedObjectType As Type) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator(Type ^ requestedObjectType);" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : Type -&gt; System.Collections.IEnumerator" Usage="keyInfo.GetEnumerator requestedObjectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -282,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfo.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -307,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfo.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Security.Cryptography.Xml.KeyInfo.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfo.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfo.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

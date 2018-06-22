@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern.DockPatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure DockPattern.DockPatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class DockPattern::DockPatternInformation" />
+  <TypeSignature Language="F#" Value="type DockPattern.DockPatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPosition As DockPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::DockPosition DockPosition { System::Windows::Automation::DockPosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.DockPosition : System.Windows.Automation.DockPosition" Usage="System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

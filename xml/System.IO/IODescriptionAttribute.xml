@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IODescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class IODescriptionAttribute&#xA;Inherits DescriptionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IODescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type IODescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IODescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IODescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.IO.IODescriptionAttribute : string -&gt; System.IO.IODescriptionAttribute" Usage="new System.IO.IODescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IODescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.IO.IODescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

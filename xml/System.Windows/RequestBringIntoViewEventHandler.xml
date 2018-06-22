@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RequestBringIntoViewEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RequestBringIntoViewEventHandler(sender As Object, e As RequestBringIntoViewEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RequestBringIntoViewEventHandler(System::Object ^ sender, RequestBringIntoViewEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RequestBringIntoViewEventHandler = delegate of obj * RequestBringIntoViewEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

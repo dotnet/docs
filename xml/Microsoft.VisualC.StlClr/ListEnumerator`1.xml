@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.ListEnumerator`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ListEnumerator(Of TValue)&#xA;Inherits ListEnumeratorBase(Of TValue)&#xA;Implements IEnumerator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class ListEnumerator : Microsoft::VisualC::StlClr::ListEnumeratorBase&lt;TValue&gt;, System::Collections::Generic::IEnumerator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type ListEnumerator&lt;'Value&gt; = class&#xA;    inherit ListEnumeratorBase&lt;'Value&gt;&#xA;    interface IEnumerator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.ListEnumerator`1.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_First As INode(Of TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListEnumerator(Microsoft::VisualC::StlClr::Generic::INode&lt;TValue&gt; ^ _First);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.ListEnumerator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.INode&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.ListEnumerator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.ListEnumerator&lt;'Value&gt; _First" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.ListEnumerator`1.Current" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TValue Current { TValue get(); void set(TValue value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.ListEnumerator&lt;'Value&gt;.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="listEnumerator.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="listEnumerator.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.ListEnumerator`1.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveNext();" />
+      <MemberSignature Language="F#" Value="override this.MoveNext : unit -&gt; bool" Usage="listEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.ListEnumerator`1.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="listEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

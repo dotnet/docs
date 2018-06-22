@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IRepeatInfoUser" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRepeatInfoUser" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRepeatInfoUser" />
+  <TypeSignature Language="F#" Value="type IRepeatInfoUser = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemStyle (itemType As ListItemType, repeatIndex As Integer) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::Style ^ GetItemStyle(System::Web::UI::WebControls::ListItemType itemType, int repeatIndex);" />
+      <MemberSignature Language="F#" Value="abstract member GetItemStyle : System.Web.UI.WebControls.ListItemType * int -&gt; System.Web.UI.WebControls.Style" Usage="iRepeatInfoUser.GetItemStyle (itemType, repeatIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFooter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFooter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFooter : bool" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHeader { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasHeader : bool" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSeparators As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSeparators { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasSeparators : bool" Usage="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderItem(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex, class System.Web.UI.WebControls.RepeatInfo repeatInfo, class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IRepeatInfoUser.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderItem(System::Web::UI::WebControls::ListItemType itemType, int repeatIndex, System::Web::UI::WebControls::RepeatInfo ^ repeatInfo, System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderItem : System.Web.UI.WebControls.ListItemType * int * System.Web.UI.WebControls.RepeatInfo * System.Web.UI.HtmlTextWriter -&gt; unit" Usage="iRepeatInfoUser.RenderItem (itemType, repeatIndex, repeatInfo, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepeatedItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RepeatedItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatedItemCount : int" Usage="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

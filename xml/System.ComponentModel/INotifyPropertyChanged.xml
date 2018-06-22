@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type INotifyPropertyChanged = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -356,6 +357,7 @@ End Class
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

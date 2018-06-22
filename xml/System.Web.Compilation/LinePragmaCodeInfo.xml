@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.LinePragmaCodeInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinePragmaCodeInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinePragmaCodeInfo sealed" />
+  <TypeSignature Language="F#" Value="type LinePragmaCodeInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.LinePragmaCodeInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startLine As Integer, startColumn As Integer, startGeneratedColumn As Integer, codeLength As Integer, isCodeNugget As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinePragmaCodeInfo(int startLine, int startColumn, int startGeneratedColumn, int codeLength, bool isCodeNugget);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.LinePragmaCodeInfo : int * int * int * int * bool -&gt; System.Web.Compilation.LinePragmaCodeInfo" Usage="new System.Web.Compilation.LinePragmaCodeInfo (startLine, startColumn, startGeneratedColumn, codeLength, isCodeNugget)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.LinePragmaCodeInfo.CodeLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodeLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeLength : int" Usage="System.Web.Compilation.LinePragmaCodeInfo.CodeLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.LinePragmaCodeInfo.IsCodeNugget" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCodeNugget As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCodeNugget { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCodeNugget : bool" Usage="System.Web.Compilation.LinePragmaCodeInfo.IsCodeNugget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.LinePragmaCodeInfo.StartColumn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int" Usage="System.Web.Compilation.LinePragmaCodeInfo.StartColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.LinePragmaCodeInfo.StartGeneratedColumn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartGeneratedColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartGeneratedColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartGeneratedColumn : int" Usage="System.Web.Compilation.LinePragmaCodeInfo.StartGeneratedColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.LinePragmaCodeInfo.StartLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartLine : int" Usage="System.Web.Compilation.LinePragmaCodeInfo.StartLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

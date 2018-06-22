@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BulletedListDisplayMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class BulletedListDisplayMode" />
+  <TypeSignature Language="F#" Value="type BulletedListDisplayMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink" />
       <MemberSignature Language="VB.NET" Value="HyperLink" />
       <MemberSignature Language="C++ CLI" Value="HyperLink" />
+      <MemberSignature Language="F#" Value="HyperLink = 1" Usage="System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton" />
       <MemberSignature Language="VB.NET" Value="LinkButton" />
       <MemberSignature Language="C++ CLI" Value="LinkButton" />
+      <MemberSignature Language="F#" Value="LinkButton = 2" Usage="System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletedListDisplayMode.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Web.UI.WebControls.BulletedListDisplayMode.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

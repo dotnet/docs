@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.BooleanAnimationBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BooleanAnimationBase&#xA;Inherits AnimationTimeline" />
   <TypeSignature Language="C++ CLI" Value="public ref class BooleanAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type BooleanAnimationBase = class&#xA;    inherit AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BooleanAnimationBase.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BooleanAnimationBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::BooleanAnimationBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.BooleanAnimationBase" Usage="booleanAnimationBase.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetCurrentValue(bool defaultOriginValue, bool defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BooleanAnimationBase.GetCurrentValue(System.Boolean,System.Boolean,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetCurrentValue(bool defaultOriginValue, bool defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : bool * bool * System.Windows.Media.Animation.AnimationClock -&gt; bool" Usage="booleanAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BooleanAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="booleanAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GetCurrentValueCore(bool defaultOriginValue, bool defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BooleanAnimationBase.GetCurrentValueCore(System.Boolean,System.Boolean,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool GetCurrentValueCore(bool defaultOriginValue, bool defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : bool * bool * System.Windows.Media.Animation.AnimationClock -&gt; bool" Usage="booleanAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.BooleanAnimationBase.TargetPropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.BooleanAnimationBase.TargetPropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

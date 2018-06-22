@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.InvalidDataContractException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidDataContractException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidDataContractException : Exception" />
+  <TypeSignature Language="F#" Value="type InvalidDataContractException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.InvalidDataContractException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidDataContractException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.InvalidDataContractException : string -&gt; System.Runtime.Serialization.InvalidDataContractException" Usage="new System.Runtime.Serialization.InvalidDataContractException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.InvalidDataContractException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidDataContractException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.InvalidDataContractException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.InvalidDataContractException" Usage="new System.Runtime.Serialization.InvalidDataContractException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.InvalidDataContractException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidDataContractException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.InvalidDataContractException : string * Exception -&gt; System.Runtime.Serialization.InvalidDataContractException" Usage="new System.Runtime.Serialization.InvalidDataContractException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

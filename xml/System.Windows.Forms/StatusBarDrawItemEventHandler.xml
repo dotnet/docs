@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarDrawItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatusBarDrawItemEventHandler(sender As Object, sbdevent As StatusBarDrawItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StatusBarDrawItemEventHandler(System::Object ^ sender, StatusBarDrawItemEventArgs ^ sbdevent);" />
+  <TypeSignature Language="F#" Value="type StatusBarDrawItemEventHandler = delegate of obj * StatusBarDrawItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

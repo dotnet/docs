@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlConfiguration.XsltConfigSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltConfigSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsltConfigSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type XsltConfigSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlConfiguration.XsltConfigSection.ProhibitDefaultResolverString" />
       <MemberSignature Language="VB.NET" Value="Public Property ProhibitDefaultResolverString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProhibitDefaultResolverString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProhibitDefaultResolverString : string with get, set" Usage="System.Xml.XmlConfiguration.XsltConfigSection.ProhibitDefaultResolverString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

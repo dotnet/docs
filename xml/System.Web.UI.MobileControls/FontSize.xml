@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FontSize" />
   <TypeSignature Language="VB.NET" Value="Public Enum FontSize" />
   <TypeSignature Language="C++ CLI" Value="public enum class FontSize" />
+  <TypeSignature Language="F#" Value="type FontSize = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FontSize.Large" />
       <MemberSignature Language="VB.NET" Value="Large" />
       <MemberSignature Language="C++ CLI" Value="Large" />
+      <MemberSignature Language="F#" Value="Large = 3" Usage="System.Web.UI.MobileControls.FontSize.Large" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FontSize.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.Web.UI.MobileControls.FontSize.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FontSize.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.MobileControls.FontSize.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FontSize.Small" />
       <MemberSignature Language="VB.NET" Value="Small" />
       <MemberSignature Language="C++ CLI" Value="Small" />
+      <MemberSignature Language="F#" Value="Small = 2" Usage="System.Web.UI.MobileControls.FontSize.Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

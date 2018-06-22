@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasic" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualBasic" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualBasic abstract sealed" />
+  <TypeSignature Language="F#" Value="type VisualBasic = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.GetSettings(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSettings (target As Object) As VisualBasicSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::Activities::VisualBasicSettings ^ GetSettings(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetSettings : obj -&gt; Microsoft.VisualBasic.Activities.VisualBasicSettings" Usage="Microsoft.VisualBasic.Activities.VisualBasic.GetSettings target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.SetSettings(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSettings (target As Object, value As VisualBasicSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSettings(System::Object ^ target, Microsoft::VisualBasic::Activities::VisualBasicSettings ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetSettings : obj * Microsoft.VisualBasic.Activities.VisualBasicSettings -&gt; unit" Usage="Microsoft.VisualBasic.Activities.VisualBasic.SetSettings (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSettingsForImplementation (target As Object, value As VisualBasicSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSettingsForImplementation(System::Object ^ target, Microsoft::VisualBasic::Activities::VisualBasicSettings ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetSettingsForImplementation : obj * Microsoft.VisualBasic.Activities.VisualBasicSettings -&gt; unit" Usage="Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.ShouldSerializeSettings(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSerializeSettings (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSerializeSettings(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="static member ShouldSerializeSettings : obj -&gt; bool" Usage="Microsoft.VisualBasic.Activities.VisualBasic.ShouldSerializeSettings target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

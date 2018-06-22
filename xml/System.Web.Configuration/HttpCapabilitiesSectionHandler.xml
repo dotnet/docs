@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesSectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpCapabilitiesSectionHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCapabilitiesSectionHandler : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type HttpCapabilitiesSectionHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, configurationContext As Object, section As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configurationContext, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="httpCapabilitiesSectionHandler.Create (parent, configurationContext, section)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

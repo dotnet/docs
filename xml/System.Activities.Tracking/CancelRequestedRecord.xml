@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.CancelRequestedRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CancelRequestedRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class CancelRequestedRecord sealed : System::Activities::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type CancelRequestedRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CancelRequestedRecord.#ctor(System.Guid,System.Int64,System.Activities.Tracking.ActivityInfo,System.Activities.Tracking.ActivityInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activity As ActivityInfo, child As ActivityInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CancelRequestedRecord(Guid instanceId, long recordNumber, System::Activities::Tracking::ActivityInfo ^ activity, System::Activities::Tracking::ActivityInfo ^ child);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.CancelRequestedRecord : Guid * int64 * System.Activities.Tracking.ActivityInfo * System.Activities.Tracking.ActivityInfo -&gt; System.Activities.Tracking.CancelRequestedRecord" Usage="new System.Activities.Tracking.CancelRequestedRecord (instanceId, recordNumber, activity, child)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CancelRequestedRecord.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ Activity { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.CancelRequestedRecord.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CancelRequestedRecord.Child" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ Child { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.CancelRequestedRecord.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CancelRequestedRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="cancelRequestedRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CancelRequestedRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cancelRequestedRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

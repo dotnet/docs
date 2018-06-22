@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.FinancialFormula" />
   <TypeSignature Language="VB.NET" Value="Public Enum FinancialFormula" />
   <TypeSignature Language="C++ CLI" Value="public enum class FinancialFormula" />
+  <TypeSignature Language="F#" Value="type FinancialFormula = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AccumulationDistribution" />
       <MemberSignature Language="VB.NET" Value="AccumulationDistribution" />
       <MemberSignature Language="C++ CLI" Value="AccumulationDistribution" />
+      <MemberSignature Language="F#" Value="AccumulationDistribution = 0" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AccumulationDistribution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AverageTrueRange" />
       <MemberSignature Language="VB.NET" Value="AverageTrueRange" />
       <MemberSignature Language="C++ CLI" Value="AverageTrueRange" />
+      <MemberSignature Language="F#" Value="AverageTrueRange = 1" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AverageTrueRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.BollingerBands" />
       <MemberSignature Language="VB.NET" Value="BollingerBands" />
       <MemberSignature Language="C++ CLI" Value="BollingerBands" />
+      <MemberSignature Language="F#" Value="BollingerBands = 2" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.BollingerBands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ChaikinOscillator" />
       <MemberSignature Language="VB.NET" Value="ChaikinOscillator" />
       <MemberSignature Language="C++ CLI" Value="ChaikinOscillator" />
+      <MemberSignature Language="F#" Value="ChaikinOscillator = 3" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ChaikinOscillator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.CommodityChannelIndex" />
       <MemberSignature Language="VB.NET" Value="CommodityChannelIndex" />
       <MemberSignature Language="C++ CLI" Value="CommodityChannelIndex" />
+      <MemberSignature Language="F#" Value="CommodityChannelIndex = 4" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.CommodityChannelIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.DetrendedPriceOscillator" />
       <MemberSignature Language="VB.NET" Value="DetrendedPriceOscillator" />
       <MemberSignature Language="C++ CLI" Value="DetrendedPriceOscillator" />
+      <MemberSignature Language="F#" Value="DetrendedPriceOscillator = 5" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.DetrendedPriceOscillator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.EaseOfMovement" />
       <MemberSignature Language="VB.NET" Value="EaseOfMovement" />
       <MemberSignature Language="C++ CLI" Value="EaseOfMovement" />
+      <MemberSignature Language="F#" Value="EaseOfMovement = 6" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.EaseOfMovement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Envelopes" />
       <MemberSignature Language="VB.NET" Value="Envelopes" />
       <MemberSignature Language="C++ CLI" Value="Envelopes" />
+      <MemberSignature Language="F#" Value="Envelopes = 7" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Envelopes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ExponentialMovingAverage" />
       <MemberSignature Language="VB.NET" Value="ExponentialMovingAverage" />
       <MemberSignature Language="C++ CLI" Value="ExponentialMovingAverage" />
+      <MemberSignature Language="F#" Value="ExponentialMovingAverage = 8" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ExponentialMovingAverage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Forecasting" />
       <MemberSignature Language="VB.NET" Value="Forecasting" />
       <MemberSignature Language="C++ CLI" Value="Forecasting" />
+      <MemberSignature Language="F#" Value="Forecasting = 9" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Forecasting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MassIndex" />
       <MemberSignature Language="VB.NET" Value="MassIndex" />
       <MemberSignature Language="C++ CLI" Value="MassIndex" />
+      <MemberSignature Language="F#" Value="MassIndex = 11" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MassIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MedianPrice" />
       <MemberSignature Language="VB.NET" Value="MedianPrice" />
       <MemberSignature Language="C++ CLI" Value="MedianPrice" />
+      <MemberSignature Language="F#" Value="MedianPrice = 12" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MedianPrice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MoneyFlow" />
       <MemberSignature Language="VB.NET" Value="MoneyFlow" />
       <MemberSignature Language="C++ CLI" Value="MoneyFlow" />
+      <MemberSignature Language="F#" Value="MoneyFlow = 13" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MoneyFlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverage" />
       <MemberSignature Language="VB.NET" Value="MovingAverage" />
       <MemberSignature Language="C++ CLI" Value="MovingAverage" />
+      <MemberSignature Language="F#" Value="MovingAverage = 21" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverageConvergenceDivergence" />
       <MemberSignature Language="VB.NET" Value="MovingAverageConvergenceDivergence" />
       <MemberSignature Language="C++ CLI" Value="MovingAverageConvergenceDivergence" />
+      <MemberSignature Language="F#" Value="MovingAverageConvergenceDivergence = 10" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverageConvergenceDivergence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.NegativeVolumeIndex" />
       <MemberSignature Language="VB.NET" Value="NegativeVolumeIndex" />
       <MemberSignature Language="C++ CLI" Value="NegativeVolumeIndex" />
+      <MemberSignature Language="F#" Value="NegativeVolumeIndex = 14" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.NegativeVolumeIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.OnBalanceVolume" />
       <MemberSignature Language="VB.NET" Value="OnBalanceVolume" />
       <MemberSignature Language="C++ CLI" Value="OnBalanceVolume" />
+      <MemberSignature Language="F#" Value="OnBalanceVolume = 15" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.OnBalanceVolume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Performance" />
       <MemberSignature Language="VB.NET" Value="Performance" />
       <MemberSignature Language="C++ CLI" Value="Performance" />
+      <MemberSignature Language="F#" Value="Performance = 16" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Performance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PositiveVolumeIndex" />
       <MemberSignature Language="VB.NET" Value="PositiveVolumeIndex" />
       <MemberSignature Language="C++ CLI" Value="PositiveVolumeIndex" />
+      <MemberSignature Language="F#" Value="PositiveVolumeIndex = 17" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PositiveVolumeIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -390,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PriceVolumeTrend" />
       <MemberSignature Language="VB.NET" Value="PriceVolumeTrend" />
       <MemberSignature Language="C++ CLI" Value="PriceVolumeTrend" />
+      <MemberSignature Language="F#" Value="PriceVolumeTrend = 18" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PriceVolumeTrend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -409,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RateOfChange" />
       <MemberSignature Language="VB.NET" Value="RateOfChange" />
       <MemberSignature Language="C++ CLI" Value="RateOfChange" />
+      <MemberSignature Language="F#" Value="RateOfChange = 19" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RateOfChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -428,6 +450,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RelativeStrengthIndex" />
       <MemberSignature Language="VB.NET" Value="RelativeStrengthIndex" />
       <MemberSignature Language="C++ CLI" Value="RelativeStrengthIndex" />
+      <MemberSignature Language="F#" Value="RelativeStrengthIndex = 20" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RelativeStrengthIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -447,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StandardDeviation" />
       <MemberSignature Language="VB.NET" Value="StandardDeviation" />
       <MemberSignature Language="C++ CLI" Value="StandardDeviation" />
+      <MemberSignature Language="F#" Value="StandardDeviation = 22" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StandardDeviation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -466,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StochasticIndicator" />
       <MemberSignature Language="VB.NET" Value="StochasticIndicator" />
       <MemberSignature Language="C++ CLI" Value="StochasticIndicator" />
+      <MemberSignature Language="F#" Value="StochasticIndicator = 23" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StochasticIndicator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -485,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TriangularMovingAverage" />
       <MemberSignature Language="VB.NET" Value="TriangularMovingAverage" />
       <MemberSignature Language="C++ CLI" Value="TriangularMovingAverage" />
+      <MemberSignature Language="F#" Value="TriangularMovingAverage = 24" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TriangularMovingAverage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -504,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TripleExponentialMovingAverage" />
       <MemberSignature Language="VB.NET" Value="TripleExponentialMovingAverage" />
       <MemberSignature Language="C++ CLI" Value="TripleExponentialMovingAverage" />
+      <MemberSignature Language="F#" Value="TripleExponentialMovingAverage = 25" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TripleExponentialMovingAverage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -523,6 +550,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TypicalPrice" />
       <MemberSignature Language="VB.NET" Value="TypicalPrice" />
       <MemberSignature Language="C++ CLI" Value="TypicalPrice" />
+      <MemberSignature Language="F#" Value="TypicalPrice = 26" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TypicalPrice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -542,6 +570,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolatilityChaikins" />
       <MemberSignature Language="VB.NET" Value="VolatilityChaikins" />
       <MemberSignature Language="C++ CLI" Value="VolatilityChaikins" />
+      <MemberSignature Language="F#" Value="VolatilityChaikins = 27" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolatilityChaikins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -561,6 +590,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolumeOscillator" />
       <MemberSignature Language="VB.NET" Value="VolumeOscillator" />
       <MemberSignature Language="C++ CLI" Value="VolumeOscillator" />
+      <MemberSignature Language="F#" Value="VolumeOscillator = 28" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolumeOscillator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -580,6 +610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedClose" />
       <MemberSignature Language="VB.NET" Value="WeightedClose" />
       <MemberSignature Language="C++ CLI" Value="WeightedClose" />
+      <MemberSignature Language="F#" Value="WeightedClose = 29" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -599,6 +630,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedMovingAverage" />
       <MemberSignature Language="VB.NET" Value="WeightedMovingAverage" />
       <MemberSignature Language="C++ CLI" Value="WeightedMovingAverage" />
+      <MemberSignature Language="F#" Value="WeightedMovingAverage = 30" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedMovingAverage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -618,6 +650,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WilliamsR" />
       <MemberSignature Language="VB.NET" Value="WilliamsR" />
       <MemberSignature Language="C++ CLI" Value="WilliamsR" />
+      <MemberSignature Language="F#" Value="WilliamsR = 31" Usage="System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WilliamsR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

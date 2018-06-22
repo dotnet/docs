@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TitleStyle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TitleStyle&#xA;Inherits TableItemStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class TitleStyle sealed : System::Web::UI::WebControls::TableItemStyle" />
+  <TypeSignature Language="F#" Value="type TitleStyle = class&#xA;    inherit TableItemStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.TitleStyle.Wrap" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Wrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Wrap { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Wrap : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.TitleStyle.Wrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

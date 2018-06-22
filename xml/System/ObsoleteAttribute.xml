@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ObsoleteAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObsoleteAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObsoleteAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ObsoleteAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ObsoleteAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObsoleteAttribute(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ObsoleteAttribute : string -&gt; ObsoleteAttribute" Usage="new System.ObsoleteAttribute message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -183,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.ObsoleteAttribute.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, error As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObsoleteAttribute(System::String ^ message, bool error);" />
+      <MemberSignature Language="F#" Value="new ObsoleteAttribute : string * bool -&gt; ObsoleteAttribute" Usage="new System.ObsoleteAttribute (message, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -232,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.ObsoleteAttribute.IsError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsError { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsError : bool" Usage="System.ObsoleteAttribute.IsError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.ObsoleteAttribute.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ObsoleteAttribute.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

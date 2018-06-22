@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollableControl.DockPaddingEdges&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ScrollableControl::DockPaddingEdges : ICloneable" />
+  <TypeSignature Language="F#" Value="type ScrollableControl.DockPaddingEdges = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
       <MemberSignature Language="VB.NET" Value="Public Property All As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int All { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.All : int with get, set" Usage="System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dockPaddingEdges.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dockPaddingEdges.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dockPaddingEdges.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceModelSecurityTokenRequirement&#xA;Inherits SecurityTokenRequirement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceModelSecurityTokenRequirement abstract : System::IdentityModel::Selectors::SecurityTokenRequirement" />
+  <TypeSignature Language="F#" Value="type ServiceModelSecurityTokenRequirement = class&#xA;    inherit SecurityTokenRequirement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.AuditLogLocationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AuditLogLocationProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AuditLogLocationProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuditLogLocationProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.AuditLogLocationProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ChannelParametersCollectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ChannelParametersCollectionProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ChannelParametersCollectionProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelParametersCollectionProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ChannelParametersCollectionProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.DuplexClientLocalAddressProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DuplexClientLocalAddressProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DuplexClientLocalAddressProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DuplexClientLocalAddressProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.DuplexClientLocalAddressProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.EndpointFilterTableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EndpointFilterTableProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ EndpointFilterTableProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointFilterTableProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.EndpointFilterTableProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtendedProtectionPolicy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ExtendedProtectionPolicy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ExtendedProtectionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.HttpAuthenticationSchemeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HttpAuthenticationSchemeProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ HttpAuthenticationSchemeProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HttpAuthenticationSchemeProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.HttpAuthenticationSchemeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitiator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitiator { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitiator : bool" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsInitiatorProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IsInitiatorProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitiatorProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsOutOfBandTokenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsOutOfBandTokenProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IsOutOfBandTokenProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOutOfBandTokenProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsOutOfBandTokenProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -287,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuedSecurityTokenParametersProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IssuedSecurityTokenParametersProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IssuedSecurityTokenParametersProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuedSecurityTokenParametersProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuedSecurityTokenParametersProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerAddress As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ IssuerAddress { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddressProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IssuerAddressProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IssuerAddressProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerAddressProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddressProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -362,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerBinding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ IssuerBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -389,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingContextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IssuerBindingContextProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IssuerBindingContextProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerBindingContextProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingContextProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -416,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IssuerBindingProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ IssuerBindingProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerBindingProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -444,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ListenUriProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ListenUriProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ListenUriProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUriProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ListenUriProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -465,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageAuthenticationAuditLevelProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MessageAuthenticationAuditLevelProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageAuthenticationAuditLevelProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevelProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -501,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageDirectionProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MessageDirectionProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageDirectionProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageDirectionProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -528,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageSecurityVersion As SecurityTokenVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenVersion ^ MessageSecurityVersion { System::IdentityModel::Selectors::SecurityTokenVersion ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageSecurityVersion : System.IdentityModel.Selectors.SecurityTokenVersion with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -555,6 +575,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageSecurityVersionProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MessageSecurityVersionProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageSecurityVersionProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersionProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -583,6 +604,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.Namespace" />
       <MemberSignature Language="VB.NET" Value="Protected Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="protected: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -602,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PreferSslCertificateAuthenticatorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PreferSslCertificateAuthenticatorProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PreferSslCertificateAuthenticatorProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreferSslCertificateAuthenticatorProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PreferSslCertificateAuthenticatorProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -622,6 +645,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeUriProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrivacyNoticeUriProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PrivacyNoticeUriProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrivacyNoticeUriProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeUriProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -649,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeVersionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrivacyNoticeVersionProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PrivacyNoticeVersionProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrivacyNoticeVersionProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeVersionProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -676,6 +701,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElement" />
       <MemberSignature Language="VB.NET" Value="Public Property SecureConversationSecurityBindingElement As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::SecurityBindingElement ^ SecureConversationSecurityBindingElement { System::ServiceModel::Channels::SecurityBindingElement ^ get(); void set(System::ServiceModel::Channels::SecurityBindingElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecureConversationSecurityBindingElement : System.ServiceModel.Channels.SecurityBindingElement with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -703,6 +729,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SecureConversationSecurityBindingElementProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SecureConversationSecurityBindingElementProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecureConversationSecurityBindingElementProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -731,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuite" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityAlgorithmSuite As SecurityAlgorithmSuite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ SecurityAlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityAlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -758,6 +786,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuiteProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SecurityAlgorithmSuiteProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SecurityAlgorithmSuiteProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityAlgorithmSuiteProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuiteProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -779,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElement" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityBindingElement As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::SecurityBindingElement ^ SecurityBindingElement { System::ServiceModel::Channels::SecurityBindingElement ^ get(); void set(System::ServiceModel::Channels::SecurityBindingElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityBindingElement : System.ServiceModel.Channels.SecurityBindingElement with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -806,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SecurityBindingElementProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SecurityBindingElementProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityBindingElementProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -827,6 +858,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportingTokenAttachmentModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportingTokenAttachmentModeProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SupportingTokenAttachmentModeProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportingTokenAttachmentModeProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportingTokenAttachmentModeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -854,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupportSecurityContextCancellationProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SupportSecurityContextCancellationProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportSecurityContextCancellationProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -881,6 +914,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SuppressAuditFailureProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SuppressAuditFailureProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SuppressAuditFailureProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressAuditFailureProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SuppressAuditFailureProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -902,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TargetAddressProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetAddressProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TargetAddressProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetAddressProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TargetAddressProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -923,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportScheme" />
       <MemberSignature Language="VB.NET" Value="Public Property TransportScheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransportScheme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransportScheme : string with get, set" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportScheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -950,6 +986,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportSchemeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TransportSchemeProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TransportSchemeProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransportSchemeProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportSchemeProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -971,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ViaProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ViaProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ViaProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViaProperty : string" Usage="System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ViaProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

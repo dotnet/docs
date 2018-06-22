@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionStatusChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GeoPositionStatusChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeoPositionStatusChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type GeoPositionStatusChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPositionStatusChangedEventArgs.#ctor(System.Device.Location.GeoPositionStatus)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (status As GeoPositionStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoPositionStatusChangedEventArgs(System::Device::Location::GeoPositionStatus status);" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.GeoPositionStatusChangedEventArgs : System.Device.Location.GeoPositionStatus -&gt; System.Device.Location.GeoPositionStatusChangedEventArgs" Usage="new System.Device.Location.GeoPositionStatusChangedEventArgs status" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPositionStatusChangedEventArgs.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GeoPositionStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::GeoPositionStatus Status { System::Device::Location::GeoPositionStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Device.Location.GeoPositionStatus" Usage="System.Device.Location.GeoPositionStatusChangedEventArgs.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

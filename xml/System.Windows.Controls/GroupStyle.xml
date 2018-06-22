@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class GroupStyle&#xA;Implements INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupStyle : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type GroupStyle = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.AlternationCount" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternationCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlternationCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternationCount : int with get, set" Usage="System.Windows.Controls.GroupStyle.AlternationCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.ContainerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainerStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ContainerStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.GroupStyle.ContainerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainerStyleSelector As StyleSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StyleSelector ^ ContainerStyleSelector { System::Windows::Controls::StyleSelector ^ get(); void set(System::Windows::Controls::StyleSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContainerStyleSelector : System.Windows.Controls.StyleSelector with get, set" Usage="System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As GroupStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::GroupStyle ^ Default { System::Windows::Controls::GroupStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Windows.Controls.GroupStyle" Usage="System.Windows.Controls.GroupStyle.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GroupStyle.DefaultGroupPanel" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultGroupPanel As ItemsPanelTemplate " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Controls::ItemsPanelTemplate ^ DefaultGroupPanel;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultGroupPanel : System.Windows.Controls.ItemsPanelTemplate" Usage="System.Windows.Controls.GroupStyle.DefaultGroupPanel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderStringFormat : string with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ HeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -383,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.HidesIfEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Property HidesIfEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HidesIfEmpty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HidesIfEmpty : bool with get, set" Usage="System.Windows.Controls.GroupStyle.HidesIfEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -409,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupStyle.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="groupStyle.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -432,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupStyle.Panel" />
       <MemberSignature Language="VB.NET" Value="Public Property Panel As ItemsPanelTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemsPanelTemplate ^ Panel { System::Windows::Controls::ItemsPanelTemplate ^ get(); void set(System::Windows::Controls::ItemsPanelTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Panel : System.Windows.Controls.ItemsPanelTemplate with get, set" Usage="System.Windows.Controls.GroupStyle.Panel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -452,6 +464,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.GroupStyle.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

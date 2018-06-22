@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IProcessInitControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessInitControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessInitControl" />
+  <TypeSignature Language="F#" Value="type IProcessInitControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IProcessInitControl.ResetInitializerTimeout(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetInitializerTimeout (dwSecondsRemaining As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetInitializerTimeout(int dwSecondsRemaining);" />
+      <MemberSignature Language="F#" Value="abstract member ResetInitializerTimeout : int -&gt; unit" Usage="iProcessInitControl.ResetInitializerTimeout dwSecondsRemaining" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

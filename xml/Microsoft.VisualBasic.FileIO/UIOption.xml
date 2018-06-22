@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.UIOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum UIOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class UIOption" />
+  <TypeSignature Language="F#" Value="type UIOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.UIOption.AllDialogs" />
       <MemberSignature Language="VB.NET" Value="AllDialogs" />
       <MemberSignature Language="C++ CLI" Value="AllDialogs" />
+      <MemberSignature Language="F#" Value="AllDialogs = 3" Usage="Microsoft.VisualBasic.FileIO.UIOption.AllDialogs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.UIOption.OnlyErrorDialogs" />
       <MemberSignature Language="VB.NET" Value="OnlyErrorDialogs" />
       <MemberSignature Language="C++ CLI" Value="OnlyErrorDialogs" />
+      <MemberSignature Language="F#" Value="OnlyErrorDialogs = 2" Usage="Microsoft.VisualBasic.FileIO.UIOption.OnlyErrorDialogs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class ColumnStyle&#xA;Inherits TableLayoutStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColumnStyle : System::Windows::Forms::TableLayoutStyle" />
+  <TypeSignature Language="F#" Value="type ColumnStyle = class&#xA;    inherit TableLayoutStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnStyle(System::Windows::Forms::SizeType sizeType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnStyle : System.Windows.Forms.SizeType -&gt; System.Windows.Forms.ColumnStyle" Usage="new System.Windows.Forms.ColumnStyle sizeType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType, float32 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType,System.Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnStyle(System::Windows::Forms::SizeType sizeType, float width);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnStyle : System.Windows.Forms.SizeType * single -&gt; System.Windows.Forms.ColumnStyle" Usage="new System.Windows.Forms.ColumnStyle (sizeType, width)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnStyle.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="System.Windows.Forms.ColumnStyle.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.CollectionKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum CollectionKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class CollectionKind" />
+  <TypeSignature Language="F#" Value="type CollectionKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.CollectionKind.Bag" />
       <MemberSignature Language="VB.NET" Value="Bag" />
       <MemberSignature Language="C++ CLI" Value="Bag" />
+      <MemberSignature Language="F#" Value="Bag = 1" Usage="System.Data.Metadata.Edm.CollectionKind.Bag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.CollectionKind.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="C++ CLI" Value="List" />
+      <MemberSignature Language="F#" Value="List = 2" Usage="System.Data.Metadata.Edm.CollectionKind.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.CollectionKind.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Metadata.Edm.CollectionKind.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GetPageRootCompletedEventHandler(sender As Object, e As GetPageRootCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GetPageRootCompletedEventHandler(System::Object ^ sender, GetPageRootCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GetPageRootCompletedEventHandler = delegate of obj * GetPageRootCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

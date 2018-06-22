@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.TextImage" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextImage" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextImage sealed" />
+  <TypeSignature Language="F#" Value="type TextImage = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.TextImage.Lines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lines As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Lines { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lines : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Activities.Presentation.Model.TextImage.Lines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.TextImage.StartLineIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property StartLineIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLineIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartLineIndex : int with get, set" Usage="System.Activities.Presentation.Model.TextImage.StartLineIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

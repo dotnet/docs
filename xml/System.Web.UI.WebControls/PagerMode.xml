@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PagerMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PagerMode" />
+  <TypeSignature Language="F#" Value="type PagerMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerMode.NextPrev" />
       <MemberSignature Language="VB.NET" Value="NextPrev" />
       <MemberSignature Language="C++ CLI" Value="NextPrev" />
+      <MemberSignature Language="F#" Value="NextPrev = 0" Usage="System.Web.UI.WebControls.PagerMode.NextPrev" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerMode.NumericPages" />
       <MemberSignature Language="VB.NET" Value="NumericPages" />
       <MemberSignature Language="C++ CLI" Value="NumericPages" />
+      <MemberSignature Language="F#" Value="NumericPages = 1" Usage="System.Web.UI.WebControls.PagerMode.NumericPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

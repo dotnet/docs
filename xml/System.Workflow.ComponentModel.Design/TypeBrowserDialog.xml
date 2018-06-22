@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.TypeBrowserDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeBrowserDialog&#xA;Inherits Form&#xA;Implements IServiceProvider, ISite" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeBrowserDialog sealed : System::Windows::Forms::Form, IServiceProvider, System::ComponentModel::ISite" />
+  <TypeSignature Language="F#" Value="type TypeBrowserDialog = class&#xA;    inherit Form&#xA;    interface ISite&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.#ctor(System.IServiceProvider,System.Workflow.ComponentModel.Design.ITypeFilterProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider, filterProvider As ITypeFilterProvider, selectedTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeBrowserDialog(IServiceProvider ^ serviceProvider, System::Workflow::ComponentModel::Design::ITypeFilterProvider ^ filterProvider, System::String ^ selectedTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.TypeBrowserDialog : IServiceProvider * System.Workflow.ComponentModel.Design.ITypeFilterProvider * string -&gt; System.Workflow.ComponentModel.Design.TypeBrowserDialog" Usage="new System.Workflow.ComponentModel.Design.TypeBrowserDialog (serviceProvider, filterProvider, selectedTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider, class System.Workflow.ComponentModel.Design.ITypeFilterProvider filterProvider, string selectedTypeName, class System.Workflow.ComponentModel.Compiler.TypeProvider typeProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.#ctor(System.IServiceProvider,System.Workflow.ComponentModel.Design.ITypeFilterProvider,System.String,System.Workflow.ComponentModel.Compiler.TypeProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeBrowserDialog(IServiceProvider ^ serviceProvider, System::Workflow::ComponentModel::Design::ITypeFilterProvider ^ filterProvider, System::String ^ selectedTypeName, System::Workflow::ComponentModel::Compiler::TypeProvider ^ typeProvider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.TypeBrowserDialog : IServiceProvider * System.Workflow.ComponentModel.Design.ITypeFilterProvider * string * System.Workflow.ComponentModel.Compiler.TypeProvider -&gt; System.Workflow.ComponentModel.Design.TypeBrowserDialog" Usage="new System.Workflow.ComponentModel.Design.TypeBrowserDialog (serviceProvider, filterProvider, selectedTypeName, typeProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="typeBrowserDialog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.OnClosing(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosing (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosing(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="typeBrowserDialog.OnClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHelpRequested (e As HelpEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHelpRequested(System::Windows::Forms::HelpEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHelpRequested : System.Windows.Forms.HelpEventArgs -&gt; unit" Usage="typeBrowserDialog.OnHelpRequested e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="typeBrowserDialog.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (paintArgs As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ paintArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="typeBrowserDialog.OnPaint paintArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="typeBrowserDialog.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.SelectedType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SelectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedType : Type" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.SelectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -265,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Component As IComponent Implements ISite.Component" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System.ComponentModel.ISite.Component { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Container As IContainer Implements ISite.Container" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IContainer ^ System.ComponentModel.ISite.Container { System::ComponentModel::IContainer ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Container" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#DesignMode" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DesignMode As Boolean Implements ISite.DesignMode" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.ISite.DesignMode { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.DesignMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -351,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Name" />
       <MemberSignature Language="VB.NET" Value=" Property Name As String Implements ISite.Name" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.ISite.Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

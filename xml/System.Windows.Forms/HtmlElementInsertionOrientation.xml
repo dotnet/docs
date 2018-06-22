@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementInsertionOrientation" />
   <TypeSignature Language="VB.NET" Value="Public Enum HtmlElementInsertionOrientation" />
   <TypeSignature Language="C++ CLI" Value="public enum class HtmlElementInsertionOrientation" />
+  <TypeSignature Language="F#" Value="type HtmlElementInsertionOrientation = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.AfterBegin" />
       <MemberSignature Language="VB.NET" Value="AfterBegin" />
       <MemberSignature Language="C++ CLI" Value="AfterBegin" />
+      <MemberSignature Language="F#" Value="AfterBegin = 1" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.AfterBegin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.AfterEnd" />
       <MemberSignature Language="VB.NET" Value="AfterEnd" />
       <MemberSignature Language="C++ CLI" Value="AfterEnd" />
+      <MemberSignature Language="F#" Value="AfterEnd = 3" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.AfterEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.BeforeBegin" />
       <MemberSignature Language="VB.NET" Value="BeforeBegin" />
       <MemberSignature Language="C++ CLI" Value="BeforeBegin" />
+      <MemberSignature Language="F#" Value="BeforeBegin = 0" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.BeforeBegin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.BeforeEnd" />
       <MemberSignature Language="VB.NET" Value="BeforeEnd" />
       <MemberSignature Language="C++ CLI" Value="BeforeEnd" />
+      <MemberSignature Language="F#" Value="BeforeEnd = 2" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.BeforeEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

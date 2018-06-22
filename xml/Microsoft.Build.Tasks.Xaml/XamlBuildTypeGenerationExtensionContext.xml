@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlBuildTypeGenerationExtensionContext&#xA;Inherits BuildExtensionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlBuildTypeGenerationExtensionContext sealed : Microsoft::Build::Tasks::Xaml::BuildExtensionContext" />
+  <TypeSignature Language="F#" Value="type XamlBuildTypeGenerationExtensionContext = class&#xA;    inherit BuildExtensionContext" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.InputTaskItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputTaskItem As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ InputTaskItem { Microsoft::Build::Framework::ITaskItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputTaskItem : Microsoft.Build.Framework.ITaskItem" Usage="Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.InputTaskItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

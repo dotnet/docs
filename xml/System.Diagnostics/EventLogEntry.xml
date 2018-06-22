@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogEntry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogEntry&#xA;Inherits Component&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogEntry sealed : System::ComponentModel::Component, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type EventLogEntry = class&#xA;    inherit Component&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.Diagnostics.EventLogEntry.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.CategoryNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryNumber As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short CategoryNumber { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryNumber : int16" Usage="System.Diagnostics.EventLogEntry.CategoryNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : byte[]" Usage="System.Diagnostics.EventLogEntry.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.EntryType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntryType As EventLogEntryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogEntryType EntryType { System::Diagnostics::EventLogEntryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntryType : System.Diagnostics.EventLogEntryType" Usage="System.Diagnostics.EventLogEntry.EntryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogEntry.Equals(System.Diagnostics.EventLogEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (otherEntry As EventLogEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Diagnostics::EventLogEntry ^ otherEntry);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Diagnostics.EventLogEntry -&gt; bool" Usage="eventLogEntry.Equals otherEntry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.EventID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventID : int" Usage="System.Diagnostics.EventLogEntry.EventID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Diagnostics.EventLogEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long InstanceId { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : int64" Usage="System.Diagnostics.EventLogEntry.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -354,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.EventLogEntry.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -379,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Diagnostics.EventLogEntry.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -417,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.ReplacementStrings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplacementStrings As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ReplacementStrings { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplacementStrings : string[]" Usage="System.Diagnostics.EventLogEntry.ReplacementStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -462,6 +474,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.Source" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : string" Usage="System.Diagnostics.EventLogEntry.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +550,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.TimeGenerated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeGenerated As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeGenerated { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeGenerated : DateTime" Usage="System.Diagnostics.EventLogEntry.TimeGenerated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -572,6 +586,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.TimeWritten" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeWritten As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeWritten { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeWritten : DateTime" Usage="System.Diagnostics.EventLogEntry.TimeWritten" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -605,6 +620,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogEntry.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Diagnostics.EventLogEntry.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

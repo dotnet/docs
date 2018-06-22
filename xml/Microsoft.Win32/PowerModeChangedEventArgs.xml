@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.PowerModeChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PowerModeChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PowerModeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PowerModeChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.PowerModeChangedEventArgs.#ctor(Microsoft.Win32.PowerModes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As PowerModes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PowerModeChangedEventArgs(Microsoft::Win32::PowerModes mode);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.PowerModeChangedEventArgs : Microsoft.Win32.PowerModes -&gt; Microsoft.Win32.PowerModeChangedEventArgs" Usage="new Microsoft.Win32.PowerModeChangedEventArgs mode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.PowerModeChangedEventArgs.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As PowerModes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::PowerModes Mode { Microsoft::Win32::PowerModes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : Microsoft.Win32.PowerModes" Usage="Microsoft.Win32.PowerModeChangedEventArgs.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.AutomationProxyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AutomationProxyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationProxyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AutomationProxyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.AutomationProxyAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationProxyAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.AutomationProxyAttribute : bool -&gt; System.Runtime.InteropServices.AutomationProxyAttribute" Usage="new System.Runtime.InteropServices.AutomationProxyAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.AutomationProxyAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.Runtime.InteropServices.AutomationProxyAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

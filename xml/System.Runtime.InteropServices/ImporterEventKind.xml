@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ImporterEventKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImporterEventKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImporterEventKind" />
+  <TypeSignature Language="F#" Value="type ImporterEventKind = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.ERROR_REFTOINVALIDTYPELIB" />
       <MemberSignature Language="VB.NET" Value="ERROR_REFTOINVALIDTYPELIB" />
       <MemberSignature Language="C++ CLI" Value="ERROR_REFTOINVALIDTYPELIB" />
+      <MemberSignature Language="F#" Value="ERROR_REFTOINVALIDTYPELIB = 2" Usage="System.Runtime.InteropServices.ImporterEventKind.ERROR_REFTOINVALIDTYPELIB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.NOTIF_CONVERTWARNING" />
       <MemberSignature Language="VB.NET" Value="NOTIF_CONVERTWARNING" />
       <MemberSignature Language="C++ CLI" Value="NOTIF_CONVERTWARNING" />
+      <MemberSignature Language="F#" Value="NOTIF_CONVERTWARNING = 1" Usage="System.Runtime.InteropServices.ImporterEventKind.NOTIF_CONVERTWARNING" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.NOTIF_TYPECONVERTED" />
       <MemberSignature Language="VB.NET" Value="NOTIF_TYPECONVERTED" />
       <MemberSignature Language="C++ CLI" Value="NOTIF_TYPECONVERTED" />
+      <MemberSignature Language="F#" Value="NOTIF_TYPECONVERTED = 0" Usage="System.Runtime.InteropServices.ImporterEventKind.NOTIF_TYPECONVERTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

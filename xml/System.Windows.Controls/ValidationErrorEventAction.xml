@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationErrorEventAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationErrorEventAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationErrorEventAction" />
+  <TypeSignature Language="F#" Value="type ValidationErrorEventAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationErrorEventAction.Added" />
       <MemberSignature Language="VB.NET" Value="Added" />
       <MemberSignature Language="C++ CLI" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 0" Usage="System.Windows.Controls.ValidationErrorEventAction.Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationErrorEventAction.Removed" />
       <MemberSignature Language="VB.NET" Value="Removed" />
       <MemberSignature Language="C++ CLI" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 1" Usage="System.Windows.Controls.ValidationErrorEventAction.Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

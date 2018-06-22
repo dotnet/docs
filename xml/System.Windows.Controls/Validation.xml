@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Class Validation" />
   <TypeSignature Language="C++ CLI" Value="public ref class Validation abstract sealed" />
+  <TypeSignature Language="F#" Value="type Validation = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.AddErrorHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Controls.ValidationErrorEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddErrorHandler (element As DependencyObject, handler As EventHandler(Of ValidationErrorEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddErrorHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Controls::ValidationErrorEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddErrorHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Controls.ValidationErrorEventArgs&gt; -&gt; unit" Usage="System.Windows.Controls.Validation.AddErrorHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.ClearInvalid(System.Windows.Data.BindingExpressionBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearInvalid (bindingExpression As BindingExpressionBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearInvalid(System::Windows::Data::BindingExpressionBase ^ bindingExpression);" />
+      <MemberSignature Language="F#" Value="static member ClearInvalid : System.Windows.Data.BindingExpressionBase -&gt; unit" Usage="System.Windows.Controls.Validation.ClearInvalid bindingExpression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value="see AddErrorHandler, and RemoveErrorHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Validation.Error" />
       <MemberSignature Language="VB.NET" Value="see AddErrorHandler, and RemoveErrorHandler" />
+      <MemberSignature Language="F#" Value="see AddErrorHandler, and RemoveErrorHandler" Usage="see AddErrorHandler, and RemoveErrorHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.ErrorEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ErrorEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ErrorEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Validation.ErrorEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.ErrorsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ErrorsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ErrorsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Validation.ErrorsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value="see GetErrorTemplate, and SetErrorTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Validation.ErrorTemplate" />
       <MemberSignature Language="VB.NET" Value="see GetErrorTemplate, and SetErrorTemplate" />
+      <MemberSignature Language="F#" Value="see GetErrorTemplate, and SetErrorTemplate" Usage="see GetErrorTemplate, and SetErrorTemplate" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.ErrorTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ErrorTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ErrorTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Validation.ErrorTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.GetErrors(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetErrors (element As DependencyObject) As ReadOnlyObservableCollection(Of ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Windows::Controls::ValidationError ^&gt; ^ GetErrors(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetErrors : System.Windows.DependencyObject -&gt; System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;System.Windows.Controls.ValidationError&gt;" Usage="System.Windows.Controls.Validation.GetErrors element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.GetErrorTemplate(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetErrorTemplate (element As DependencyObject) As ControlTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ControlTemplate ^ GetErrorTemplate(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetErrorTemplate : System.Windows.DependencyObject -&gt; System.Windows.Controls.ControlTemplate" Usage="System.Windows.Controls.Validation.GetErrorTemplate element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -230,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.GetHasError(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHasError (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetHasError(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetHasError : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Validation.GetHasError element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.GetValidationAdornerSite(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidationAdornerSite (element As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetValidationAdornerSite(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetValidationAdornerSite : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Controls.Validation.GetValidationAdornerSite element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -284,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.GetValidationAdornerSiteFor(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidationAdornerSiteFor (element As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetValidationAdornerSiteFor(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetValidationAdornerSiteFor : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Controls.Validation.GetValidationAdornerSiteFor element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -313,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.HasErrorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasErrorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasErrorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasErrorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Validation.HasErrorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +345,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MarkInvalid(class System.Windows.Data.BindingExpressionBase bindingExpression, class System.Windows.Controls.ValidationError validationError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.MarkInvalid(System.Windows.Data.BindingExpressionBase,System.Windows.Controls.ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MarkInvalid(System::Windows::Data::BindingExpressionBase ^ bindingExpression, System::Windows::Controls::ValidationError ^ validationError);" />
+      <MemberSignature Language="F#" Value="static member MarkInvalid : System.Windows.Data.BindingExpressionBase * System.Windows.Controls.ValidationError -&gt; unit" Usage="System.Windows.Controls.Validation.MarkInvalid (bindingExpression, validationError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.RemoveErrorHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Controls.ValidationErrorEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveErrorHandler (element As DependencyObject, handler As EventHandler(Of ValidationErrorEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveErrorHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Controls::ValidationErrorEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveErrorHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Controls.ValidationErrorEventArgs&gt; -&gt; unit" Usage="System.Windows.Controls.Validation.RemoveErrorHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -389,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.SetErrorTemplate(System.Windows.DependencyObject,System.Windows.Controls.ControlTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetErrorTemplate (element As DependencyObject, value As ControlTemplate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetErrorTemplate(System::Windows::DependencyObject ^ element, System::Windows::Controls::ControlTemplate ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetErrorTemplate : System.Windows.DependencyObject * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="System.Windows.Controls.Validation.SetErrorTemplate (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -415,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.SetValidationAdornerSite(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValidationAdornerSite (element As DependencyObject, value As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetValidationAdornerSite(System::Windows::DependencyObject ^ element, System::Windows::DependencyObject ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetValidationAdornerSite : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="System.Windows.Controls.Validation.SetValidationAdornerSite (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -440,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Validation.SetValidationAdornerSiteFor(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValidationAdornerSiteFor (element As DependencyObject, value As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetValidationAdornerSiteFor(System::Windows::DependencyObject ^ element, System::Windows::DependencyObject ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetValidationAdornerSiteFor : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="System.Windows.Controls.Validation.SetValidationAdornerSiteFor (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -464,6 +483,7 @@
       <MemberSignature Language="ILAsm" Value="see GetValidationAdornerSite, and SetValidationAdornerSite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Validation.ValidationAdornerSite" />
       <MemberSignature Language="VB.NET" Value="see GetValidationAdornerSite, and SetValidationAdornerSite" />
+      <MemberSignature Language="F#" Value="see GetValidationAdornerSite, and SetValidationAdornerSite" Usage="see GetValidationAdornerSite, and SetValidationAdornerSite" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -479,6 +499,7 @@
       <MemberSignature Language="ILAsm" Value="see GetValidationAdornerSiteFor, and SetValidationAdornerSiteFor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />
       <MemberSignature Language="VB.NET" Value="see GetValidationAdornerSiteFor, and SetValidationAdornerSiteFor" />
+      <MemberSignature Language="F#" Value="see GetValidationAdornerSiteFor, and SetValidationAdornerSiteFor" Usage="see GetValidationAdornerSiteFor, and SetValidationAdornerSiteFor" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -495,6 +516,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.ValidationAdornerSiteForProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidationAdornerSiteForProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValidationAdornerSiteForProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValidationAdornerSiteForProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Validation.ValidationAdornerSiteForProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -514,6 +536,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Validation.ValidationAdornerSiteProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidationAdornerSiteProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValidationAdornerSiteProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValidationAdornerSiteProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Validation.ValidationAdornerSiteProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

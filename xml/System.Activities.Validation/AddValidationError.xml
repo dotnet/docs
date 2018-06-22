@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.AddValidationError" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddValidationError&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddValidationError sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type AddValidationError = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AddValidationError.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="addValidationError.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AddValidationError.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="addValidationError.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AddValidationError.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property IsWarning As InArgument(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ IsWarning { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Validation.AddValidationError.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AddValidationError.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Message { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AddValidationError.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AddValidationError.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ PropertyName { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AddValidationError.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

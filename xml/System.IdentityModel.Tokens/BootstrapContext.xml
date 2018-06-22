@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.BootstrapContext" />
   <TypeSignature Language="VB.NET" Value="Public Class BootstrapContext&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BootstrapContext : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type BootstrapContext = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(cli::array &lt;System::Byte&gt; ^ token);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : byte[] -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext token" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(System::String ^ token);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : string -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext token" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BootstrapContext(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityTokenHandler)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, handler As SecurityTokenHandler)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(System::IdentityModel::Tokens::SecurityToken ^ token, System::IdentityModel::Tokens::SecurityTokenHandler ^ handler);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : System.IdentityModel.Tokens.SecurityToken * System.IdentityModel.Tokens.SecurityTokenHandler -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext (token, handler)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="bootstrapContext.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.BootstrapContext.SecurityToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityToken As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ SecurityToken { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityToken : System.IdentityModel.Tokens.SecurityToken" Usage="System.IdentityModel.Tokens.BootstrapContext.SecurityToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.BootstrapContext.SecurityTokenHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenHandler As SecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandler ^ SecurityTokenHandler { System::IdentityModel::Tokens::SecurityTokenHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" Usage="System.IdentityModel.Tokens.BootstrapContext.SecurityTokenHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.BootstrapContext.Token" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Token { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : string" Usage="System.IdentityModel.Tokens.BootstrapContext.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.BootstrapContext.TokenBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenBytes As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ TokenBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenBytes : byte[]" Usage="System.IdentityModel.Tokens.BootstrapContext.TokenBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

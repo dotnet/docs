@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowApplicationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplicationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WorkflowApplicationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationEventArgs.GetInstanceExtensions``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstanceExtensions(Of T As Class) () As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetInstanceExtensions();" />
+      <MemberSignature Language="F#" Value="member this.GetInstanceExtensions : unit -&gt; seq&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="workflowApplicationEventArgs.GetInstanceExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationEventArgs.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Activities.WorkflowApplicationEventArgs.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

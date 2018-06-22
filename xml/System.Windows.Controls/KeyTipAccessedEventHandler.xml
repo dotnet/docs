@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipAccessedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyTipAccessedEventHandler(sender As Object, e As KeyTipAccessedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void KeyTipAccessedEventHandler(System::Object ^ sender, KeyTipAccessedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type KeyTipAccessedEventHandler = delegate of obj * KeyTipAccessedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectionsZone&#xA;Inherits ToolZone" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionsZone : System::Web::UI::WebControls::WebParts::ToolZone" />
+  <TypeSignature Language="F#" Value="type ConnectionsZone = class&#xA;    inherit ToolZone" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CancelVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CancelVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancelVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.Close" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="connectionsZone.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CloseVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConfigureConnectionTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConfigureConnectionTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigureConnectionTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConfigureVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ConfigureVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigureVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToConsumerInstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToConsumerInstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToConsumerInstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -479,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToConsumerText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToConsumerText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToConsumerText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToConsumerTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToConsumerTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToConsumerTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToProviderInstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToProviderInstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToProviderInstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -634,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToProviderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToProviderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToProviderText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -685,6 +696,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectToProviderTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectToProviderTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectToProviderTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -736,6 +748,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ConnectVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -805,6 +818,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConsumersInstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConsumersInstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConsumersInstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -855,6 +869,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConsumersTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConsumersTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConsumersTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -905,6 +920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="connectionsZone.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -933,6 +949,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisconnectVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ DisconnectVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisconnectVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -999,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.Display" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Display As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Display { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Display : bool" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1021,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.EmptyZoneText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EmptyZoneText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyZoneText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyZoneText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.EmptyZoneText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1060,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ExistingConnectionErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ExistingConnectionErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ExistingConnectionErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExistingConnectionErrorMessage : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ExistingConnectionErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1080,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GetFromText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GetFromText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GetFromText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1131,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GetText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GetText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GetText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1182,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property HeaderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1234,6 +1257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property InstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1286,6 +1310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InstructionTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1339,6 +1364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="connectionsZone.LoadControlState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1371,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="connectionsZone.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1405,6 +1432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NewConnectionErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property NewConnectionErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewConnectionErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewConnectionErrorMessage : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.NewConnectionErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1425,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property NoExistingConnectionInstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NoExistingConnectionInstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoExistingConnectionInstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1475,6 +1504,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property NoExistingConnectionTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NoExistingConnectionTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoExistingConnectionTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1525,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisplayModeChanged (sender As Object, e As WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDisplayModeChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartDisplayModeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDisplayModeChanged : obj * System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit" Usage="connectionsZone.OnDisplayModeChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1561,6 +1592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="connectionsZone.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1593,6 +1625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedWebPartChanged (sender As Object, e As WebPartEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedWebPartChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedWebPartChanged : obj * System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="connectionsZone.OnSelectedWebPartChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1626,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.PartChromeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property PartChromeType As PartChromeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PartChromeType PartChromeType { System::Web::UI::WebControls::WebParts::PartChromeType get(); void set(System::Web::UI::WebControls::WebParts::PartChromeType value); };" />
+      <MemberSignature Language="F#" Value="member this.PartChromeType : System.Web.UI.WebControls.WebParts.PartChromeType with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.PartChromeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1666,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ProvidersInstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProvidersInstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProvidersInstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1716,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ProvidersTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProvidersTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProvidersTitle : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1766,6 +1802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="override this.RaisePostBackEvent : string -&gt; unit" Usage="connectionsZone.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1797,6 +1834,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="connectionsZone.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1828,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBody (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderBody(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderBody : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="connectionsZone.RenderBody writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1861,6 +1900,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderVerbs (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderVerbs(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="connectionsZone.RenderVerbs writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1893,6 +1933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="connectionsZone.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1922,6 +1963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="connectionsZone.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1953,6 +1995,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SendText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SendText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SendText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1984,6 +2027,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SendToText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SendToText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SendToText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2015,6 +2059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="connectionsZone.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2043,6 +2088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartToConnect As WebPart" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ WebPartToConnect { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartToConnect : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

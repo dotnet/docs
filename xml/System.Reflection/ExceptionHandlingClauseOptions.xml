@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ExceptionHandlingClauseOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExceptionHandlingClauseOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExceptionHandlingClauseOptions" />
+  <TypeSignature Language="F#" Value="type ExceptionHandlingClauseOptions = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Clause" />
       <MemberSignature Language="VB.NET" Value="Clause" />
       <MemberSignature Language="C++ CLI" Value="Clause" />
+      <MemberSignature Language="F#" Value="Clause = 0" Usage="System.Reflection.ExceptionHandlingClauseOptions.Clause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Fault" />
       <MemberSignature Language="VB.NET" Value="Fault" />
       <MemberSignature Language="C++ CLI" Value="Fault" />
+      <MemberSignature Language="F#" Value="Fault = 4" Usage="System.Reflection.ExceptionHandlingClauseOptions.Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Filter" />
       <MemberSignature Language="VB.NET" Value="Filter" />
       <MemberSignature Language="C++ CLI" Value="Filter" />
+      <MemberSignature Language="F#" Value="Filter = 1" Usage="System.Reflection.ExceptionHandlingClauseOptions.Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Finally" />
       <MemberSignature Language="VB.NET" Value="Finally" />
       <MemberSignature Language="C++ CLI" Value="Finally" />
+      <MemberSignature Language="F#" Value="Finally = 2" Usage="System.Reflection.ExceptionHandlingClauseOptions.Finally" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

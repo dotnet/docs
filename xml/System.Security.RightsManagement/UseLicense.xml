@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UseLicense" />
   <TypeSignature Language="VB.NET" Value="Public Class UseLicense" />
   <TypeSignature Language="C++ CLI" Value="public ref class UseLicense" />
+  <TypeSignature Language="F#" Value="type UseLicense = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useLicense As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UseLicense(System::String ^ useLicense);" />
+      <MemberSignature Language="F#" Value="new System.Security.RightsManagement.UseLicense : string -&gt; System.Security.RightsManagement.UseLicense" Usage="new System.Security.RightsManagement.UseLicense useLicense" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.ApplicationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationData As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ ApplicationData { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationData : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Security.RightsManagement.UseLicense.ApplicationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.CryptoProvider Bind(class System.Security.RightsManagement.SecureEnvironment secureEnvironment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.Bind(System.Security.RightsManagement.SecureEnvironment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::CryptoProvider ^ Bind(System::Security::RightsManagement::SecureEnvironment ^ secureEnvironment);" />
+      <MemberSignature Language="F#" Value="member this.Bind : System.Security.RightsManagement.SecureEnvironment -&gt; System.Security.RightsManagement.CryptoProvider" Usage="useLicense.Bind secureEnvironment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.ContentId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContentId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentId : Guid" Usage="System.Security.RightsManagement.UseLicense.ContentId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (x As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ x);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="useLicense.Equals x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="useLicense.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As ContentUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentUser ^ Owner { System::Security::RightsManagement::ContentUser ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Security.RightsManagement.ContentUser" Usage="System.Security.RightsManagement.UseLicense.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="useLicense.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextCollapsedRange" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextCollapsedRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextCollapsedRange sealed" />
+  <TypeSignature Language="F#" Value="type TextCollapsedRange = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextCollapsedRange.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextCollapsedRange.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextCollapsedRange.TextSourceCharacterIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextSourceCharacterIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextSourceCharacterIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextSourceCharacterIndex : int" Usage="System.Windows.Media.TextFormatting.TextCollapsedRange.TextSourceCharacterIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextCollapsedRange.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.TextFormatting.TextCollapsedRange.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

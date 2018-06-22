@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.PropertyValueMorphHelper" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function PropertyValueMorphHelper(originalValue As ModelItem, newModelProperty As ModelProperty) As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ PropertyValueMorphHelper(ModelItem ^ originalValue, ModelProperty ^ newModelProperty);" />
+  <TypeSignature Language="F#" Value="type PropertyValueMorphHelper = delegate of ModelItem * ModelProperty -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

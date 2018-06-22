@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryVirtualListViewContext" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryVirtualListViewContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryVirtualListViewContext" />
+  <TypeSignature Language="F#" Value="type DirectoryVirtualListViewContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryVirtualListViewContext.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As DirectoryVirtualListViewContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryVirtualListViewContext ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.DirectoryServices.DirectoryVirtualListViewContext" Usage="directoryVirtualListViewContext.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

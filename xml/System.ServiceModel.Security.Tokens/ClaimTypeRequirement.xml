@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ClaimTypeRequirement" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimTypeRequirement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimTypeRequirement" />
+  <TypeSignature Language="F#" Value="type ClaimTypeRequirement = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimTypeRequirement(System::String ^ claimType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.ClaimTypeRequirement : string -&gt; System.ServiceModel.Security.Tokens.ClaimTypeRequirement" Usage="new System.ServiceModel.Security.Tokens.ClaimTypeRequirement claimType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimTypeRequirement(System::String ^ claimType, bool isOptional);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.ClaimTypeRequirement : string * bool -&gt; System.ServiceModel.Security.Tokens.ClaimTypeRequirement" Usage="new System.ServiceModel.Security.Tokens.ClaimTypeRequirement (claimType, isOptional)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.ClaimType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string" Usage="System.ServiceModel.Security.Tokens.ClaimTypeRequirement.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool" Usage="System.ServiceModel.Security.Tokens.ClaimTypeRequirement.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

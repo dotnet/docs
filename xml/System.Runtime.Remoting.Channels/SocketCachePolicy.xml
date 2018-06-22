@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SocketCachePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketCachePolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class SocketCachePolicy" />
+  <TypeSignature Language="F#" Value="type SocketCachePolicy = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.SocketCachePolicy.AbsoluteTimeout" />
       <MemberSignature Language="VB.NET" Value="AbsoluteTimeout" />
       <MemberSignature Language="C++ CLI" Value="AbsoluteTimeout" />
+      <MemberSignature Language="F#" Value="AbsoluteTimeout = 1" Usage="System.Runtime.Remoting.Channels.SocketCachePolicy.AbsoluteTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.SocketCachePolicy.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Runtime.Remoting.Channels.SocketCachePolicy.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragStartedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DragStartedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DragStartedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DragStartedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragStartedEventArgs.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (horizontalOffset As Double, verticalOffset As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DragStartedEventArgs(double horizontalOffset, double verticalOffset);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Primitives.DragStartedEventArgs : double * double -&gt; System.Windows.Controls.Primitives.DragStartedEventArgs" Usage="new System.Windows.Controls.Primitives.DragStartedEventArgs (horizontalOffset, verticalOffset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragStartedEventArgs.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.Primitives.DragStartedEventArgs.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragStartedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dragStartedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragStartedEventArgs.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.Primitives.DragStartedEventArgs.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

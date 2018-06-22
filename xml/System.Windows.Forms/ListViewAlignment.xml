@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum ListViewAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class ListViewAlignment" />
+  <TypeSignature Language="F#" Value="type ListViewAlignment = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Forms.ListViewAlignment.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1" Usage="System.Windows.Forms.ListViewAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.SnapToGrid" />
       <MemberSignature Language="VB.NET" Value="SnapToGrid" />
       <MemberSignature Language="C++ CLI" Value="SnapToGrid" />
+      <MemberSignature Language="F#" Value="SnapToGrid = 5" Usage="System.Windows.Forms.ListViewAlignment.SnapToGrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 2" Usage="System.Windows.Forms.ListViewAlignment.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

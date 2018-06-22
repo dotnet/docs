@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.CompatibleFrameworks" />
   <TypeSignature Language="VB.NET" Value="Public Class CompatibleFrameworks" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFrameworks" />
+  <TypeSignature Language="F#" Value="type CompatibleFrameworks = class" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworks.Frameworks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frameworks As IList(Of CompatibleFramework)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Deployment::Application::CompatibleFramework ^&gt; ^ Frameworks { System::Collections::Generic::IList&lt;System::Deployment::Application::CompatibleFramework ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frameworks : System.Collections.Generic.IList&lt;System.Deployment.Application.CompatibleFramework&gt;" Usage="System.Deployment.Application.CompatibleFrameworks.Frameworks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworks.SupportUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SupportUrl { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : Uri" Usage="System.Deployment.Application.CompatibleFrameworks.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

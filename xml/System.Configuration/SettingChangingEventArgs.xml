@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingChangingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingChangingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SettingChangingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingChangingEventArgs.#ctor(System.String,System.String,System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settingName As String, settingClass As String, settingKey As String, newValue As Object, cancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingChangingEventArgs(System::String ^ settingName, System::String ^ settingClass, System::String ^ settingKey, System::Object ^ newValue, bool cancel);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingChangingEventArgs : string * string * string * obj * bool -&gt; System.Configuration.SettingChangingEventArgs" Usage="new System.Configuration.SettingChangingEventArgs (settingName, settingClass, settingKey, newValue, cancel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.Configuration.SettingChangingEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingClass" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingClass { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SettingClass : string" Usage="System.Configuration.SettingChangingEventArgs.SettingClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SettingKey : string" Usage="System.Configuration.SettingChangingEventArgs.SettingKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SettingName : string" Usage="System.Configuration.SettingChangingEventArgs.SettingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

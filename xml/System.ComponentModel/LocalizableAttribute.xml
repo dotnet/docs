@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LocalizableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalizableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LocalizableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isLocalizable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizableAttribute(bool isLocalizable);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LocalizableAttribute : bool -&gt; System.ComponentModel.LocalizableAttribute" Usage="new System.ComponentModel.LocalizableAttribute isLocalizable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As LocalizableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::LocalizableAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.LocalizableAttribute" Usage="System.ComponentModel.LocalizableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="localizableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="localizableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LocalizableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="localizableAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LocalizableAttribute.IsLocalizable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocalizable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocalizable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLocalizable : bool" Usage="System.ComponentModel.LocalizableAttribute.IsLocalizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As LocalizableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::LocalizableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.LocalizableAttribute" Usage="System.ComponentModel.LocalizableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -349,6 +357,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LocalizableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As LocalizableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::LocalizableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.LocalizableAttribute" Usage="System.ComponentModel.LocalizableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

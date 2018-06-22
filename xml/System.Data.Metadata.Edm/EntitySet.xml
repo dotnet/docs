@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EntitySet" />
   <TypeSignature Language="VB.NET" Value="Public Class EntitySet&#xA;Inherits EntitySetBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntitySet : System::Data::Metadata::Edm::EntitySetBase" />
+  <TypeSignature Language="F#" Value="type EntitySet = class&#xA;    inherit EntitySetBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntitySet.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.EntitySet.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntitySet.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As EntityType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntityType ^ ElementType { System::Data::Metadata::Edm::EntityType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : System.Data.Metadata.Edm.EntityType" Usage="System.Data.Metadata.Edm.EntitySet.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

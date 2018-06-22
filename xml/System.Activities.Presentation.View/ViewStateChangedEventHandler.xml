@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewStateChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ViewStateChangedEventHandler(sender As Object, e As ViewStateChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ViewStateChangedEventHandler(System::Object ^ sender, ViewStateChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ViewStateChangedEventHandler = delegate of obj * ViewStateChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

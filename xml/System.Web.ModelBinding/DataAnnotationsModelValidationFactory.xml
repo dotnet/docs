@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function DataAnnotationsModelValidationFactory(metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As ValidationAttribute) As ModelValidator " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Web::ModelBinding::ModelValidator ^ DataAnnotationsModelValidationFactory(ModelMetadata ^ metadata, ModelBindingExecutionContext ^ context, ValidationAttribute ^ attribute);" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelValidationFactory = delegate of ModelMetadata * ModelBindingExecutionContext * ValidationAttribute -&gt; ModelValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

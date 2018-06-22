@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellFormattingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellFormattingEventHandler(sender As Object, e As DataGridViewCellFormattingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellFormattingEventHandler(System::Object ^ sender, DataGridViewCellFormattingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellFormattingEventHandler = delegate of obj * DataGridViewCellFormattingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindingExpression&#xA;Inherits BindingExpressionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingExpression sealed : System::Windows::Data::BindingExpressionBase" />
+  <TypeSignature Language="F#" Value="type BindingExpression = class&#xA;    inherit BindingExpressionBase&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Windows.Data.BindingExpression.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ParentBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentBinding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::Binding ^ ParentBinding { System::Windows::Data::Binding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentBinding : System.Windows.Data.Binding" Usage="System.Windows.Data.BindingExpression.ParentBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ResolvedSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResolvedSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedSource : obj" Usage="System.Windows.Data.BindingExpression.ResolvedSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ResolvedSourcePropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedSourcePropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResolvedSourcePropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedSourcePropertyName : string" Usage="System.Windows.Data.BindingExpression.ResolvedSourcePropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpression.UpdateSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateSource ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateSource();" />
+      <MemberSignature Language="F#" Value="override this.UpdateSource : unit -&gt; unit" Usage="bindingExpression.UpdateSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpression.UpdateTarget" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateTarget ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateTarget();" />
+      <MemberSignature Language="F#" Value="override this.UpdateTarget : unit -&gt; unit" Usage="bindingExpression.UpdateTarget " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

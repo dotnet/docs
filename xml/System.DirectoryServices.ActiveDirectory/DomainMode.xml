@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DomainMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DomainMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DomainMode" />
+  <TypeSignature Language="F#" Value="type DomainMode = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000MixedDomain" />
       <MemberSignature Language="VB.NET" Value="Windows2000MixedDomain" />
       <MemberSignature Language="C++ CLI" Value="Windows2000MixedDomain" />
+      <MemberSignature Language="F#" Value="Windows2000MixedDomain = 0" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000MixedDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000NativeDomain" />
       <MemberSignature Language="VB.NET" Value="Windows2000NativeDomain" />
       <MemberSignature Language="C++ CLI" Value="Windows2000NativeDomain" />
+      <MemberSignature Language="F#" Value="Windows2000NativeDomain = 1" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2000NativeDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain" />
       <MemberSignature Language="VB.NET" Value="Windows2003Domain" />
       <MemberSignature Language="C++ CLI" Value="Windows2003Domain" />
+      <MemberSignature Language="F#" Value="Windows2003Domain = 3" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003InterimDomain" />
       <MemberSignature Language="VB.NET" Value="Windows2003InterimDomain" />
       <MemberSignature Language="C++ CLI" Value="Windows2003InterimDomain" />
+      <MemberSignature Language="F#" Value="Windows2003InterimDomain = 2" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2003InterimDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2008Domain" />
       <MemberSignature Language="VB.NET" Value="Windows2008Domain" />
       <MemberSignature Language="C++ CLI" Value="Windows2008Domain" />
+      <MemberSignature Language="F#" Value="Windows2008Domain = 4" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2008Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2008R2Domain" />
       <MemberSignature Language="VB.NET" Value="Windows2008R2Domain" />
       <MemberSignature Language="C++ CLI" Value="Windows2008R2Domain" />
+      <MemberSignature Language="F#" Value="Windows2008R2Domain = 5" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2008R2Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows2012R2Domain" />
       <MemberSignature Language="VB.NET" Value="Windows2012R2Domain" />
       <MemberSignature Language="C++ CLI" Value="Windows2012R2Domain" />
+      <MemberSignature Language="F#" Value="Windows2012R2Domain = 7" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows2012R2Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -184,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainMode.Windows8Domain" />
       <MemberSignature Language="VB.NET" Value="Windows8Domain" />
       <MemberSignature Language="C++ CLI" Value="Windows8Domain" />
+      <MemberSignature Language="F#" Value="Windows8Domain = 6" Usage="System.DirectoryServices.ActiveDirectory.DomainMode.Windows8Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

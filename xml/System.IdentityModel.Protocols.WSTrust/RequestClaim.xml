@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestClaim" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestClaim" />
+  <TypeSignature Language="F#" Value="type RequestClaim = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestClaim(System::String ^ claimType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim claimType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestClaim(System::String ^ claimType, bool isOptional);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string * bool -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim (claimType, isOptional)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestClaim.#ctor(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, isOptional As Boolean, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestClaim(System::String ^ claimType, bool isOptional, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestClaim : string * bool * string -&gt; System.IdentityModel.Protocols.WSTrust.RequestClaim" Usage="new System.IdentityModel.Protocols.WSTrust.RequestClaim (claimType, isOptional, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOptional { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOptional : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaim.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

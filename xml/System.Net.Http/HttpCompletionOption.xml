@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpCompletionOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpCompletionOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpCompletionOption" />
+  <TypeSignature Language="F#" Value="type HttpCompletionOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.HttpCompletionOption.ResponseContentRead" />
       <MemberSignature Language="VB.NET" Value="ResponseContentRead" />
       <MemberSignature Language="C++ CLI" Value="ResponseContentRead" />
+      <MemberSignature Language="F#" Value="ResponseContentRead = 0" Usage="System.Net.Http.HttpCompletionOption.ResponseContentRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.HttpCompletionOption.ResponseHeadersRead" />
       <MemberSignature Language="VB.NET" Value="ResponseHeadersRead" />
       <MemberSignature Language="C++ CLI" Value="ResponseHeadersRead" />
+      <MemberSignature Language="F#" Value="ResponseHeadersRead = 1" Usage="System.Net.Http.HttpCompletionOption.ResponseHeadersRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

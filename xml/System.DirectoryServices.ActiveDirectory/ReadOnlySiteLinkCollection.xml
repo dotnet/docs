@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlySiteLinkCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlySiteLinkCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReadOnlySiteLinkCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (link As ActiveDirectorySiteLink) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLink ^ link);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink -&gt; bool" Usage="readOnlySiteLinkCollection.Contains link" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (links As ActiveDirectorySiteLink(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLink ^&gt; ^ links, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink[] * int -&gt; unit" Usage="readOnlySiteLinkCollection.CopyTo (links, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (link As ActiveDirectorySiteLink) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLink ^ link);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink -&gt; int" Usage="readOnlySiteLinkCollection.IndexOf link" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ActiveDirectorySiteLink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLink ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteLink ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" Usage="System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

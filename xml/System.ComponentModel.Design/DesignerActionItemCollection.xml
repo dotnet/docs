@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerActionItemCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionItemCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type DesignerActionItemCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Add(System.ComponentModel.Design.DesignerActionItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As DesignerActionItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::Design::DesignerActionItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ComponentModel.Design.DesignerActionItem -&gt; int" Usage="designerActionItemCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Contains(System.ComponentModel.Design.DesignerActionItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DesignerActionItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::Design::DesignerActionItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.ComponentModel.Design.DesignerActionItem -&gt; bool" Usage="designerActionItemCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.CopyTo(System.ComponentModel.Design.DesignerActionItem[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DesignerActionItem(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::Design::DesignerActionItem ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.ComponentModel.Design.DesignerActionItem[] * int -&gt; unit" Usage="designerActionItemCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.IndexOf(System.ComponentModel.Design.DesignerActionItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DesignerActionItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::Design::DesignerActionItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.ComponentModel.Design.DesignerActionItem -&gt; int" Usage="designerActionItemCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DesignerActionItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::Design::DesignerActionItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.ComponentModel.Design.DesignerActionItem -&gt; unit" Usage="designerActionItemCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DesignerActionItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionItem ^ default[int] { System::ComponentModel::Design::DesignerActionItem ^ get(int index); void set(int index, System::ComponentModel::Design::DesignerActionItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ComponentModel.Design.DesignerActionItem with get, set" Usage="System.ComponentModel.Design.DesignerActionItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Remove(System.ComponentModel.Design.DesignerActionItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DesignerActionItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::Design::DesignerActionItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ComponentModel.Design.DesignerActionItem -&gt; unit" Usage="designerActionItemCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

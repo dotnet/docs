@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.IImmutableDictionary`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IImmutableDictionary(Of TKey, TValue)&#xA;Implements IEnumerable(Of KeyValuePair(Of TKey, TValue)), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IReadOnlyDictionary(Of TKey, TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public interface class IImmutableDictionary : System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyDictionary&lt;TKey, TValue&gt;" />
+  <TypeSignature Language="F#" Value="type IImmutableDictionary&lt;'Key, 'Value&gt; = interface&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (key As TKey, value As TValue) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ Add(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddRange (pairs As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ AddRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ pairs);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.AddRange pairs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (pair As KeyValuePair(Of TKey, TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; pair);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool" Usage="iImmutableDictionary.Contains pair" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As TKey) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ Remove(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'Key -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.RemoveRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (keys As IEnumerable(Of TKey)) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ keys);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRange : seq&lt;'Key&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.RemoveRange keys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.SetItem(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetItem (key As TKey, value As TValue) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ SetItem(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.SetItem (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.SetItems(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetItems (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As IImmutableDictionary(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ SetItems(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member SetItems : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="iImmutableDictionary.SetItems items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableDictionary`2.TryGetKey(`0,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetKey (equalKey As TKey, ByRef actualKey As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetKey(TKey equalKey, [Runtime::InteropServices::Out] TKey % actualKey);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetKey : 'Key *  -&gt; bool" Usage="iImmutableDictionary.TryGetKey (equalKey, actualKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

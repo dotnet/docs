@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeArgument" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeAttributeArgument" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeAttributeArgument" />
+  <TypeSignature Language="F#" Value="type CodeAttributeArgument = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgument(System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgument : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttributeArgument" Usage="new System.CodeDom.CodeAttributeArgument value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgument(System::String ^ name, System::CodeDom::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgument : string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttributeArgument" Usage="new System.CodeDom.CodeAttributeArgument (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeAttributeArgument.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Value { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAttributeArgument.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

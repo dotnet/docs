@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ChangeInterceptorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChangeInterceptorAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChangeInterceptorAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ChangeInterceptorAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ChangeInterceptorAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entitySetName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChangeInterceptorAttribute(System::String ^ entitySetName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.ChangeInterceptorAttribute : string -&gt; System.Data.Services.ChangeInterceptorAttribute" Usage="new System.Data.Services.ChangeInterceptorAttribute entitySetName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ChangeInterceptorAttribute.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string" Usage="System.Data.Services.ChangeInterceptorAttribute.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

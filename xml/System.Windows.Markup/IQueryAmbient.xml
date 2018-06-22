@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="VB.NET" Value="Public Interface IQueryAmbient" />
   <TypeSignature Language="C++ CLI" Value="public interface class IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type IQueryAmbient = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsAmbientPropertyAvailable (propertyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAmbientPropertyAvailable(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member IsAmbientPropertyAvailable : string -&gt; bool" Usage="iQueryAmbient.IsAmbientPropertyAvailable propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

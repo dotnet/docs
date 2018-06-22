@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientBooleanPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientBooleanPrototype&#xA;Inherits BooleanPrototype" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientBooleanPrototype sealed : Microsoft::JScript::BooleanPrototype" />
+  <TypeSignature Language="F#" Value="type LenientBooleanPrototype = class&#xA;    inherit BooleanPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientBooleanPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.toString" />
       <MemberSignature Language="VB.NET" Value="Public toString As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
+      <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientBooleanPrototype.toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientBooleanPrototype.valueOf" />
       <MemberSignature Language="VB.NET" Value="Public valueOf As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ valueOf;" />
+      <MemberSignature Language="F#" Value="val mutable valueOf : obj" Usage="Microsoft.JScript.LenientBooleanPrototype.valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

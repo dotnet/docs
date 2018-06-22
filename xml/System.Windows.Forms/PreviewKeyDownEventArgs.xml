@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreviewKeyDownEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PreviewKeyDownEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PreviewKeyDownEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PreviewKeyDownEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PreviewKeyDownEventArgs.#ctor(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyData As Keys)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PreviewKeyDownEventArgs(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PreviewKeyDownEventArgs : System.Windows.Forms.Keys -&gt; System.Windows.Forms.PreviewKeyDownEventArgs" Usage="new System.Windows.Forms.PreviewKeyDownEventArgs keyData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Alt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Alt { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alt : bool" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.Alt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Control { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : bool" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInputKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInputKey { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInputKey : bool with get, set" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCode As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyCode { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyCode : System.Windows.Forms.Keys" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.KeyCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyData As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyData { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyData : System.Windows.Forms.Keys" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.KeyData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyValue { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyValue : int" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.KeyValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys Modifiers { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Forms.Keys" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Shift" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shift As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shift { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shift : bool" Usage="System.Windows.Forms.PreviewKeyDownEventArgs.Shift" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

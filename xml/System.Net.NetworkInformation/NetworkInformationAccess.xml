@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInformationAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetworkInformationAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetworkInformationAccess" />
+  <TypeSignature Language="F#" Value="type NetworkInformationAccess = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.NetworkInformation.NetworkInformationAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />
       <MemberSignature Language="VB.NET" Value="Ping" />
       <MemberSignature Language="C++ CLI" Value="Ping" />
+      <MemberSignature Language="F#" Value="Ping = 4" Usage="System.Net.NetworkInformation.NetworkInformationAccess.Ping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInformationAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Net.NetworkInformation.NetworkInformationAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

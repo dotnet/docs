@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceCreatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventSourceCreatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventSourceCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EventSourceCreatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceCreatedEventArgs.EventSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventSource As EventSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventSource ^ EventSource { System::Diagnostics::Tracing::EventSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventSource : System.Diagnostics.Tracing.EventSource" Usage="System.Diagnostics.Tracing.EventSourceCreatedEventArgs.EventSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

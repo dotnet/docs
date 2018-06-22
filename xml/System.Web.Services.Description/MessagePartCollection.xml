@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessagePartCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePartCollection&#xA;Inherits ServiceDescriptionBaseCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartCollection sealed : System::Web::Services::Description::ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="F#" Value="type MessagePartCollection = class&#xA;    inherit ServiceDescriptionBaseCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Add(System.Web.Services.Description.MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::MessagePart ^ messagePart);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Description.MessagePart -&gt; int" Usage="messagePartCollection.Add messagePart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Contains(System.Web.Services.Description.MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::MessagePart ^ messagePart);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Description.MessagePart -&gt; bool" Usage="messagePartCollection.Contains messagePart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.CopyTo(System.Web.Services.Description.MessagePart[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MessagePart(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::MessagePart ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Description.MessagePart[] * int -&gt; unit" Usage="messagePartCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.GetKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKey (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKey(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.GetKey : obj -&gt; string" Usage="messagePartCollection.GetKey value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.IndexOf(System.Web.Services.Description.MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::MessagePart ^ messagePart);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Description.MessagePart -&gt; int" Usage="messagePartCollection.IndexOf messagePart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.MessagePart messagePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Insert(System.Int32,System.Web.Services.Description.MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::MessagePart ^ messagePart);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Description.MessagePart -&gt; unit" Usage="messagePartCollection.Insert (index, messagePart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePartCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MessagePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MessagePart ^ default[int] { System::Web::Services::Description::MessagePart ^ get(int index); void set(int index, System::Web::Services::Description::MessagePart ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Description.MessagePart with get, set" Usage="System.Web.Services.Description.MessagePartCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePartCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As MessagePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MessagePart ^ default[System::String ^] { System::Web::Services::Description::MessagePart ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Services.Description.MessagePart" Usage="System.Web.Services.Description.MessagePartCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Remove(System.Web.Services.Description.MessagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::MessagePart ^ messagePart);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Description.MessagePart -&gt; unit" Usage="messagePartCollection.Remove messagePart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.SetParent(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParent (value As Object, parent As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParent(System::Object ^ value, System::Object ^ parent);" />
+      <MemberSignature Language="F#" Value="override this.SetParent : obj * obj -&gt; unit" Usage="messagePartCollection.SetParent (value, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

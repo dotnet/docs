@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.PropertyInformationCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyInformationCollection&#xA;Inherits NameObjectCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyInformationCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type PropertyInformationCollection = class&#xA;    inherit NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.PropertyInformationCollection.CopyTo(System.Configuration.PropertyInformation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As PropertyInformation(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::PropertyInformation ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Configuration.PropertyInformation[] * int -&gt; unit" Usage="propertyInformationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.PropertyInformationCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="propertyInformationCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.PropertyInformationCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="propertyInformationCollection.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.PropertyInformationCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(propertyName As String) As PropertyInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::PropertyInformation ^ default[System::String ^] { System::Configuration::PropertyInformation ^ get(System::String ^ propertyName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.PropertyInformation" Usage="System.Configuration.PropertyInformationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

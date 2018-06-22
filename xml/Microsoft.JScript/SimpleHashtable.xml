@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.SimpleHashtable" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SimpleHashtable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleHashtable sealed" />
+  <TypeSignature Language="F#" Value="type SimpleHashtable = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.SimpleHashtable.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (threshold As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleHashtable(System::UInt32 threshold);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.SimpleHashtable : uint32 -&gt; Microsoft.JScript.SimpleHashtable" Usage="new Microsoft.JScript.SimpleHashtable threshold" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.SimpleHashtable.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="simpleHashtable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.SimpleHashtable.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="Microsoft.JScript.SimpleHashtable.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.SimpleHashtable.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : obj -&gt; unit" Usage="simpleHashtable.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

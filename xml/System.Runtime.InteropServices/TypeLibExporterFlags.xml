@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibExporterFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum TypeLibExporterFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class TypeLibExporterFlags" />
+  <TypeSignature Language="F#" Value="type TypeLibExporterFlags = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.CallerResolvedReferences" />
       <MemberSignature Language="VB.NET" Value="CallerResolvedReferences" />
       <MemberSignature Language="C++ CLI" Value="CallerResolvedReferences" />
+      <MemberSignature Language="F#" Value="CallerResolvedReferences = 2" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.CallerResolvedReferences" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs32Bit" />
       <MemberSignature Language="VB.NET" Value="ExportAs32Bit" />
       <MemberSignature Language="C++ CLI" Value="ExportAs32Bit" />
+      <MemberSignature Language="F#" Value="ExportAs32Bit = 16" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs64Bit" />
       <MemberSignature Language="VB.NET" Value="ExportAs64Bit" />
       <MemberSignature Language="C++ CLI" Value="ExportAs64Bit" />
+      <MemberSignature Language="F#" Value="ExportAs64Bit = 32" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs64Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.OldNames" />
       <MemberSignature Language="VB.NET" Value="OldNames" />
       <MemberSignature Language="C++ CLI" Value="OldNames" />
+      <MemberSignature Language="F#" Value="OldNames = 4" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.OldNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.OnlyReferenceRegistered" />
       <MemberSignature Language="VB.NET" Value="OnlyReferenceRegistered" />
       <MemberSignature Language="C++ CLI" Value="OnlyReferenceRegistered" />
+      <MemberSignature Language="F#" Value="OnlyReferenceRegistered = 1" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.OnlyReferenceRegistered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

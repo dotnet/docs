@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowRuntimeServiceState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WorkflowRuntimeServiceState" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeServiceState = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Started" />
       <MemberSignature Language="VB.NET" Value="Started" />
       <MemberSignature Language="C++ CLI" Value="Started" />
+      <MemberSignature Language="F#" Value="Started = 2" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Started" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Starting" />
       <MemberSignature Language="VB.NET" Value="Starting" />
       <MemberSignature Language="C++ CLI" Value="Starting" />
+      <MemberSignature Language="F#" Value="Starting = 1" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Starting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopped" />
       <MemberSignature Language="VB.NET" Value="Stopped" />
       <MemberSignature Language="C++ CLI" Value="Stopped" />
+      <MemberSignature Language="F#" Value="Stopped = 0" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopping" />
       <MemberSignature Language="VB.NET" Value="Stopping" />
       <MemberSignature Language="C++ CLI" Value="Stopping" />
+      <MemberSignature Language="F#" Value="Stopping = 3" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

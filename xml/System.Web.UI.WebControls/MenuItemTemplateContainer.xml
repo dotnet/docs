@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemTemplateContainer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItemTemplateContainer&#xA;Inherits Control&#xA;Implements IDataItemContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItemTemplateContainer sealed : System::Web::UI::Control, System::Web::UI::IDataItemContainer" />
+  <TypeSignature Language="F#" Value="type MenuItemTemplateContainer = class&#xA;    inherit Control&#xA;    interface IDataItemContainer&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemTemplateContainer.#ctor(System.Int32,System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer, dataItem As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemTemplateContainer(int itemIndex, System::Web::UI::WebControls::MenuItem ^ dataItem);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItemTemplateContainer : int * System.Web.UI.WebControls.MenuItem -&gt; System.Web.UI.WebControls.MenuItemTemplateContainer" Usage="new System.Web.UI.WebControls.MenuItemTemplateContainer (itemIndex, dataItem)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemTemplateContainer.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.MenuItemTemplateContainer.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemTemplateContainer.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.WebControls.MenuItemTemplateContainer.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemTemplateContainer.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="menuItemTemplateContainer.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemTemplateContainer.System#Web#UI#IDataItemContainer#DataItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItem As Object Implements IDataItemContainer.DataItem" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.IDataItemContainer.DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.MenuItemTemplateContainer.System.Web.UI.IDataItemContainer.DataItem" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItem</InterfaceMember>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemTemplateContainer.System#Web#UI#IDataItemContainer#DataItemIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItemIndex As Integer Implements IDataItemContainer.DataItemIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.MenuItemTemplateContainer.System.Web.UI.IDataItemContainer.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemTemplateContainer.System#Web#UI#IDataItemContainer#DisplayIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DisplayIndex As Integer Implements IDataItemContainer.DisplayIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.MenuItemTemplateContainer.System.Web.UI.IDataItemContainer.DisplayIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>

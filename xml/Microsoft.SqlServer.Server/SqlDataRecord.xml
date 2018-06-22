@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlDataRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataRecord&#xA;Implements IDataRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataRecord : System::Data::IDataRecord" />
+  <TypeSignature Language="F#" Value="type SqlDataRecord = class&#xA;    interface IDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.#ctor(Microsoft.SqlServer.Server.SqlMetaData[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray metaData As SqlMetaData())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataRecord(... cli::array &lt;Microsoft::SqlServer::Server::SqlMetaData ^&gt; ^ metaData);" />
+      <MemberSignature Language="F#" Value="new Microsoft.SqlServer.Server.SqlDataRecord : Microsoft.SqlServer.Server.SqlMetaData[] -&gt; Microsoft.SqlServer.Server.SqlDataRecord" Usage="new Microsoft.SqlServer.Server.SqlDataRecord metaData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBoolean (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetBoolean(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetBoolean : int -&gt; bool&#xA;override this.GetBoolean : int -&gt; bool" Usage="sqlDataRecord.GetBoolean ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByte (ordinal As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Byte GetByte(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetByte : int -&gt; byte&#xA;override this.GetByte : int -&gt; byte" Usage="sqlDataRecord.GetByte ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (ordinal As Integer, fieldOffset As Long, buffer As Byte(), bufferOffset As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetBytes(int ordinal, long fieldOffset, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : int * int64 * byte[] * int * int -&gt; int64&#xA;override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="sqlDataRecord.GetBytes (ordinal, fieldOffset, buffer, bufferOffset, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
@@ -271,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChar (ordinal As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual char GetChar(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetChar : int -&gt; char&#xA;override this.GetChar : int -&gt; char" Usage="sqlDataRecord.GetChar ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
@@ -311,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChars (ordinal As Integer, fieldOffset As Long, buffer As Char(), bufferOffset As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetChars(int ordinal, long fieldOffset, cli::array &lt;char&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member GetChars : int * int64 * char[] * int * int -&gt; int64&#xA;override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="sqlDataRecord.GetChars (ordinal, fieldOffset, buffer, bufferOffset, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
@@ -368,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetData(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetData (ordinal As Integer) As IDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::IDataReader ^ GetData(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : int -&gt; System.Data.IDataReader&#xA;override this.GetData : int -&gt; System.Data.IDataReader" Usage="sqlDataRecord.GetData ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
@@ -396,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataTypeName (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDataTypeName(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataTypeName : int -&gt; string&#xA;override this.GetDataTypeName : int -&gt; string" Usage="sqlDataRecord.GetDataTypeName ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
@@ -442,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDateTime (ordinal As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime GetDateTime(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDateTime : int -&gt; DateTime&#xA;override this.GetDateTime : int -&gt; DateTime" Usage="sqlDataRecord.GetDateTime ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
@@ -482,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDateTimeOffset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDateTimeOffset (ordinal As Integer) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTimeOffset GetDateTimeOffset(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDateTimeOffset : int -&gt; DateTimeOffset&#xA;override this.GetDateTimeOffset : int -&gt; DateTimeOffset" Usage="sqlDataRecord.GetDateTimeOffset ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -516,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDecimal (ordinal As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal GetDecimal(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDecimal : int -&gt; decimal&#xA;override this.GetDecimal : int -&gt; decimal" Usage="sqlDataRecord.GetDecimal ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
@@ -556,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDouble (ordinal As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double GetDouble(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetDouble : int -&gt; double&#xA;override this.GetDouble : int -&gt; double" Usage="sqlDataRecord.GetDouble ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
@@ -596,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFieldType (ordinal As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetFieldType(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetFieldType : int -&gt; Type&#xA;override this.GetFieldType : int -&gt; Type" Usage="sqlDataRecord.GetFieldType ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
@@ -637,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFloat (ordinal As Integer) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float GetFloat(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetFloat : int -&gt; single&#xA;override this.GetFloat : int -&gt; single" Usage="sqlDataRecord.GetFloat ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
@@ -677,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGuid (ordinal As Integer) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Guid GetGuid(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetGuid : int -&gt; Guid&#xA;override this.GetGuid : int -&gt; Guid" Usage="sqlDataRecord.GetGuid ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
@@ -717,6 +734,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInt16 (ordinal As Integer) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual short GetInt16(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetInt16 : int -&gt; int16&#xA;override this.GetInt16 : int -&gt; int16" Usage="sqlDataRecord.GetInt16 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
@@ -757,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInt32 (ordinal As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetInt32(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetInt32 : int -&gt; int&#xA;override this.GetInt32 : int -&gt; int" Usage="sqlDataRecord.GetInt32 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
@@ -797,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInt64 (ordinal As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetInt64(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetInt64 : int -&gt; int64&#xA;override this.GetInt64 : int -&gt; int64" Usage="sqlDataRecord.GetInt64 ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
@@ -837,6 +857,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetName (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetName(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetName : int -&gt; string&#xA;override this.GetName : int -&gt; string" Usage="sqlDataRecord.GetName ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
@@ -876,6 +897,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetOrdinal(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetOrdinal : string -&gt; int&#xA;override this.GetOrdinal : string -&gt; int" Usage="sqlDataRecord.GetOrdinal name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
@@ -917,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBinary(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBinary (ordinal As Integer) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBinary GetSqlBinary(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBinary : int -&gt; System.Data.SqlTypes.SqlBinary&#xA;override this.GetSqlBinary : int -&gt; System.Data.SqlTypes.SqlBinary" Usage="sqlDataRecord.GetSqlBinary ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -953,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBoolean (ordinal As Integer) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBoolean GetSqlBoolean(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBoolean : int -&gt; System.Data.SqlTypes.SqlBoolean&#xA;override this.GetSqlBoolean : int -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlDataRecord.GetSqlBoolean ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -989,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlByte (ordinal As Integer) As SqlByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlByte GetSqlByte(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlByte : int -&gt; System.Data.SqlTypes.SqlByte&#xA;override this.GetSqlByte : int -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlDataRecord.GetSqlByte ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1025,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBytes (ordinal As Integer) As SqlBytes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBytes ^ GetSqlBytes(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBytes : int -&gt; System.Data.SqlTypes.SqlBytes&#xA;override this.GetSqlBytes : int -&gt; System.Data.SqlTypes.SqlBytes" Usage="sqlDataRecord.GetSqlBytes ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1061,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlChars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlChars (ordinal As Integer) As SqlChars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlChars ^ GetSqlChars(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlChars : int -&gt; System.Data.SqlTypes.SqlChars&#xA;override this.GetSqlChars : int -&gt; System.Data.SqlTypes.SqlChars" Usage="sqlDataRecord.GetSqlChars ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1097,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDateTime (ordinal As Integer) As SqlDateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDateTime GetSqlDateTime(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDateTime : int -&gt; System.Data.SqlTypes.SqlDateTime&#xA;override this.GetSqlDateTime : int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="sqlDataRecord.GetSqlDateTime ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1133,6 +1161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDecimal (ordinal As Integer) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDecimal GetSqlDecimal(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDecimal : int -&gt; System.Data.SqlTypes.SqlDecimal&#xA;override this.GetSqlDecimal : int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlDataRecord.GetSqlDecimal ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1169,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDouble (ordinal As Integer) As SqlDouble" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDouble GetSqlDouble(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDouble : int -&gt; System.Data.SqlTypes.SqlDouble&#xA;override this.GetSqlDouble : int -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlDataRecord.GetSqlDouble ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1205,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlFieldType (ordinal As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetSqlFieldType(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlFieldType : int -&gt; Type&#xA;override this.GetSqlFieldType : int -&gt; Type" Usage="sqlDataRecord.GetSqlFieldType ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1243,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlGuid (ordinal As Integer) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlGuid GetSqlGuid(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlGuid : int -&gt; System.Data.SqlTypes.SqlGuid&#xA;override this.GetSqlGuid : int -&gt; System.Data.SqlTypes.SqlGuid" Usage="sqlDataRecord.GetSqlGuid ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1279,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt16 (ordinal As Integer) As SqlInt16" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt16 GetSqlInt16(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt16 : int -&gt; System.Data.SqlTypes.SqlInt16&#xA;override this.GetSqlInt16 : int -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlDataRecord.GetSqlInt16 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1315,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt32 (ordinal As Integer) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt32 GetSqlInt32(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt32 : int -&gt; System.Data.SqlTypes.SqlInt32&#xA;override this.GetSqlInt32 : int -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlDataRecord.GetSqlInt32 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1351,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt64 (ordinal As Integer) As SqlInt64" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt64 GetSqlInt64(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt64 : int -&gt; System.Data.SqlTypes.SqlInt64&#xA;override this.GetSqlInt64 : int -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlDataRecord.GetSqlInt64 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1387,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMetaData(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlMetaData (ordinal As Integer) As SqlMetaData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::SqlServer::Server::SqlMetaData ^ GetSqlMetaData(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlMetaData : int -&gt; Microsoft.SqlServer.Server.SqlMetaData&#xA;override this.GetSqlMetaData : int -&gt; Microsoft.SqlServer.Server.SqlMetaData" Usage="sqlDataRecord.GetSqlMetaData ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1423,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMoney(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlMoney (ordinal As Integer) As SqlMoney" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlMoney GetSqlMoney(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlMoney : int -&gt; System.Data.SqlTypes.SqlMoney&#xA;override this.GetSqlMoney : int -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlDataRecord.GetSqlMoney ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1459,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlSingle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlSingle (ordinal As Integer) As SqlSingle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlSingle GetSqlSingle(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlSingle : int -&gt; System.Data.SqlTypes.SqlSingle&#xA;override this.GetSqlSingle : int -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlDataRecord.GetSqlSingle ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1495,6 +1533,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlString (ordinal As Integer) As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlString GetSqlString(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlString : int -&gt; System.Data.SqlTypes.SqlString&#xA;override this.GetSqlString : int -&gt; System.Data.SqlTypes.SqlString" Usage="sqlDataRecord.GetSqlString ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1531,6 +1570,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlValue (ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetSqlValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlValue : int -&gt; obj&#xA;override this.GetSqlValue : int -&gt; obj" Usage="sqlDataRecord.GetSqlValue ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1575,6 +1615,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetSqlValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlValues : obj[] -&gt; int&#xA;override this.GetSqlValues : obj[] -&gt; int" Usage="sqlDataRecord.GetSqlValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1622,6 +1663,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetSqlXml(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlXml (ordinal As Integer) As SqlXml" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlXml ^ GetSqlXml(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlXml : int -&gt; System.Data.SqlTypes.SqlXml&#xA;override this.GetSqlXml : int -&gt; System.Data.SqlTypes.SqlXml" Usage="sqlDataRecord.GetSqlXml ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1658,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetString : int -&gt; string&#xA;override this.GetString : int -&gt; string" Usage="sqlDataRecord.GetString ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
@@ -1697,6 +1740,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetTimeSpan(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTimeSpan (ordinal As Integer) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TimeSpan GetTimeSpan(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetTimeSpan : int -&gt; TimeSpan&#xA;override this.GetTimeSpan : int -&gt; TimeSpan" Usage="sqlDataRecord.GetTimeSpan ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1731,6 +1775,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : int -&gt; obj&#xA;override this.GetValue : int -&gt; obj" Usage="sqlDataRecord.GetValue ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
@@ -1777,6 +1822,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetValues : obj[] -&gt; int&#xA;override this.GetValues : obj[] -&gt; int" Usage="sqlDataRecord.GetValues values" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
@@ -1826,6 +1872,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDBNull (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member IsDBNull : int -&gt; bool&#xA;override this.IsDBNull : int -&gt; bool" Usage="sqlDataRecord.IsDBNull ordinal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
@@ -1875,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlDataRecord.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="Microsoft.SqlServer.Server.SqlDataRecord.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
@@ -1920,6 +1968,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlDataRecord.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="Microsoft.SqlServer.Server.SqlDataRecord.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
@@ -1964,6 +2013,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetBoolean(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetBoolean (ordinal As Integer, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetBoolean(int ordinal, bool value);" />
+      <MemberSignature Language="F#" Value="abstract member SetBoolean : int * bool -&gt; unit&#xA;override this.SetBoolean : int * bool -&gt; unit" Usage="sqlDataRecord.SetBoolean (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1999,6 +2049,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetByte(System.Int32,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetByte (ordinal As Integer, value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetByte(int ordinal, System::Byte value);" />
+      <MemberSignature Language="F#" Value="abstract member SetByte : int * byte -&gt; unit&#xA;override this.SetByte : int * byte -&gt; unit" Usage="sqlDataRecord.SetByte (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2035,6 +2086,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetBytes (ordinal As Integer, fieldOffset As Long, buffer As Byte(), bufferOffset As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetBytes(int ordinal, long fieldOffset, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member SetBytes : int * int64 * byte[] * int * int -&gt; unit&#xA;override this.SetBytes : int * int64 * byte[] * int * int -&gt; unit" Usage="sqlDataRecord.SetBytes (ordinal, fieldOffset, buffer, bufferOffset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2077,6 +2129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetChar(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetChar (ordinal As Integer, value As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetChar(int ordinal, char value);" />
+      <MemberSignature Language="F#" Value="abstract member SetChar : int * char -&gt; unit&#xA;override this.SetChar : int * char -&gt; unit" Usage="sqlDataRecord.SetChar (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2113,6 +2166,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetChars (ordinal As Integer, fieldOffset As Long, buffer As Char(), bufferOffset As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetChars(int ordinal, long fieldOffset, cli::array &lt;char&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member SetChars : int * int64 * char[] * int * int -&gt; unit&#xA;override this.SetChars : int * int64 * char[] * int * int -&gt; unit" Usage="sqlDataRecord.SetChars (ordinal, fieldOffset, buffer, bufferOffset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2155,6 +2209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDateTime(System.Int32,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDateTime (ordinal As Integer, value As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDateTime(int ordinal, DateTime value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDateTime : int * DateTime -&gt; unit&#xA;override this.SetDateTime : int * DateTime -&gt; unit" Usage="sqlDataRecord.SetDateTime (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2191,6 +2246,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDateTimeOffset(System.Int32,System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDateTimeOffset (ordinal As Integer, value As DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDateTimeOffset(int ordinal, DateTimeOffset value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDateTimeOffset : int * DateTimeOffset -&gt; unit&#xA;override this.SetDateTimeOffset : int * DateTimeOffset -&gt; unit" Usage="sqlDataRecord.SetDateTimeOffset (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2226,6 +2282,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDBNull (ordinal As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="abstract member SetDBNull : int -&gt; unit&#xA;override this.SetDBNull : int -&gt; unit" Usage="sqlDataRecord.SetDBNull ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2259,6 +2316,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDecimal(System.Int32,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDecimal (ordinal As Integer, value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDecimal(int ordinal, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDecimal : int * decimal -&gt; unit&#xA;override this.SetDecimal : int * decimal -&gt; unit" Usage="sqlDataRecord.SetDecimal (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2295,6 +2353,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetDouble(System.Int32,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDouble (ordinal As Integer, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDouble(int ordinal, double value);" />
+      <MemberSignature Language="F#" Value="abstract member SetDouble : int * double -&gt; unit&#xA;override this.SetDouble : int * double -&gt; unit" Usage="sqlDataRecord.SetDouble (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2331,6 +2390,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetFloat(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetFloat (ordinal As Integer, value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetFloat(int ordinal, float value);" />
+      <MemberSignature Language="F#" Value="abstract member SetFloat : int * single -&gt; unit&#xA;override this.SetFloat : int * single -&gt; unit" Usage="sqlDataRecord.SetFloat (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2367,6 +2427,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetGuid(System.Int32,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetGuid (ordinal As Integer, value As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetGuid(int ordinal, Guid value);" />
+      <MemberSignature Language="F#" Value="abstract member SetGuid : int * Guid -&gt; unit&#xA;override this.SetGuid : int * Guid -&gt; unit" Usage="sqlDataRecord.SetGuid (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2403,6 +2464,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt16(System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInt16 (ordinal As Integer, value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInt16(int ordinal, short value);" />
+      <MemberSignature Language="F#" Value="abstract member SetInt16 : int * int16 -&gt; unit&#xA;override this.SetInt16 : int * int16 -&gt; unit" Usage="sqlDataRecord.SetInt16 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2439,6 +2501,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt32(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInt32 (ordinal As Integer, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInt32(int ordinal, int value);" />
+      <MemberSignature Language="F#" Value="abstract member SetInt32 : int * int -&gt; unit&#xA;override this.SetInt32 : int * int -&gt; unit" Usage="sqlDataRecord.SetInt32 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2475,6 +2538,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetInt64(System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInt64 (ordinal As Integer, value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInt64(int ordinal, long value);" />
+      <MemberSignature Language="F#" Value="abstract member SetInt64 : int * int64 -&gt; unit&#xA;override this.SetInt64 : int * int64 -&gt; unit" Usage="sqlDataRecord.SetInt64 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2511,6 +2575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBinary(System.Int32,System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlBinary (ordinal As Integer, value As SqlBinary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlBinary(int ordinal, System::Data::SqlTypes::SqlBinary value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlBinary : int * System.Data.SqlTypes.SqlBinary -&gt; unit&#xA;override this.SetSqlBinary : int * System.Data.SqlTypes.SqlBinary -&gt; unit" Usage="sqlDataRecord.SetSqlBinary (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2547,6 +2612,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBoolean(System.Int32,System.Data.SqlTypes.SqlBoolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlBoolean (ordinal As Integer, value As SqlBoolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlBoolean(int ordinal, System::Data::SqlTypes::SqlBoolean value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlBoolean : int * System.Data.SqlTypes.SqlBoolean -&gt; unit&#xA;override this.SetSqlBoolean : int * System.Data.SqlTypes.SqlBoolean -&gt; unit" Usage="sqlDataRecord.SetSqlBoolean (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2583,6 +2649,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlByte(System.Int32,System.Data.SqlTypes.SqlByte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlByte (ordinal As Integer, value As SqlByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlByte(int ordinal, System::Data::SqlTypes::SqlByte value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlByte : int * System.Data.SqlTypes.SqlByte -&gt; unit&#xA;override this.SetSqlByte : int * System.Data.SqlTypes.SqlByte -&gt; unit" Usage="sqlDataRecord.SetSqlByte (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2619,6 +2686,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBytes(System.Int32,System.Data.SqlTypes.SqlBytes)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlBytes (ordinal As Integer, value As SqlBytes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlBytes(int ordinal, System::Data::SqlTypes::SqlBytes ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlBytes : int * System.Data.SqlTypes.SqlBytes -&gt; unit&#xA;override this.SetSqlBytes : int * System.Data.SqlTypes.SqlBytes -&gt; unit" Usage="sqlDataRecord.SetSqlBytes (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2655,6 +2723,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlChars(System.Int32,System.Data.SqlTypes.SqlChars)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlChars (ordinal As Integer, value As SqlChars)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlChars(int ordinal, System::Data::SqlTypes::SqlChars ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlChars : int * System.Data.SqlTypes.SqlChars -&gt; unit&#xA;override this.SetSqlChars : int * System.Data.SqlTypes.SqlChars -&gt; unit" Usage="sqlDataRecord.SetSqlChars (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2691,6 +2760,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDateTime(System.Int32,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlDateTime (ordinal As Integer, value As SqlDateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlDateTime(int ordinal, System::Data::SqlTypes::SqlDateTime value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlDateTime : int * System.Data.SqlTypes.SqlDateTime -&gt; unit&#xA;override this.SetSqlDateTime : int * System.Data.SqlTypes.SqlDateTime -&gt; unit" Usage="sqlDataRecord.SetSqlDateTime (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2727,6 +2797,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDecimal(System.Int32,System.Data.SqlTypes.SqlDecimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlDecimal (ordinal As Integer, value As SqlDecimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlDecimal(int ordinal, System::Data::SqlTypes::SqlDecimal value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlDecimal : int * System.Data.SqlTypes.SqlDecimal -&gt; unit&#xA;override this.SetSqlDecimal : int * System.Data.SqlTypes.SqlDecimal -&gt; unit" Usage="sqlDataRecord.SetSqlDecimal (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2763,6 +2834,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDouble(System.Int32,System.Data.SqlTypes.SqlDouble)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlDouble (ordinal As Integer, value As SqlDouble)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlDouble(int ordinal, System::Data::SqlTypes::SqlDouble value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlDouble : int * System.Data.SqlTypes.SqlDouble -&gt; unit&#xA;override this.SetSqlDouble : int * System.Data.SqlTypes.SqlDouble -&gt; unit" Usage="sqlDataRecord.SetSqlDouble (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2799,6 +2871,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlGuid(System.Int32,System.Data.SqlTypes.SqlGuid)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlGuid (ordinal As Integer, value As SqlGuid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlGuid(int ordinal, System::Data::SqlTypes::SqlGuid value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlGuid : int * System.Data.SqlTypes.SqlGuid -&gt; unit&#xA;override this.SetSqlGuid : int * System.Data.SqlTypes.SqlGuid -&gt; unit" Usage="sqlDataRecord.SetSqlGuid (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2835,6 +2908,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt16(System.Int32,System.Data.SqlTypes.SqlInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlInt16 (ordinal As Integer, value As SqlInt16)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlInt16(int ordinal, System::Data::SqlTypes::SqlInt16 value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlInt16 : int * System.Data.SqlTypes.SqlInt16 -&gt; unit&#xA;override this.SetSqlInt16 : int * System.Data.SqlTypes.SqlInt16 -&gt; unit" Usage="sqlDataRecord.SetSqlInt16 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2871,6 +2945,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt32(System.Int32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlInt32 (ordinal As Integer, value As SqlInt32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlInt32(int ordinal, System::Data::SqlTypes::SqlInt32 value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlInt32 : int * System.Data.SqlTypes.SqlInt32 -&gt; unit&#xA;override this.SetSqlInt32 : int * System.Data.SqlTypes.SqlInt32 -&gt; unit" Usage="sqlDataRecord.SetSqlInt32 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2907,6 +2982,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt64(System.Int32,System.Data.SqlTypes.SqlInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlInt64 (ordinal As Integer, value As SqlInt64)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlInt64(int ordinal, System::Data::SqlTypes::SqlInt64 value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlInt64 : int * System.Data.SqlTypes.SqlInt64 -&gt; unit&#xA;override this.SetSqlInt64 : int * System.Data.SqlTypes.SqlInt64 -&gt; unit" Usage="sqlDataRecord.SetSqlInt64 (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2943,6 +3019,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlMoney(System.Int32,System.Data.SqlTypes.SqlMoney)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlMoney (ordinal As Integer, value As SqlMoney)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlMoney(int ordinal, System::Data::SqlTypes::SqlMoney value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlMoney : int * System.Data.SqlTypes.SqlMoney -&gt; unit&#xA;override this.SetSqlMoney : int * System.Data.SqlTypes.SqlMoney -&gt; unit" Usage="sqlDataRecord.SetSqlMoney (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2979,6 +3056,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlSingle(System.Int32,System.Data.SqlTypes.SqlSingle)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlSingle (ordinal As Integer, value As SqlSingle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlSingle(int ordinal, System::Data::SqlTypes::SqlSingle value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlSingle : int * System.Data.SqlTypes.SqlSingle -&gt; unit&#xA;override this.SetSqlSingle : int * System.Data.SqlTypes.SqlSingle -&gt; unit" Usage="sqlDataRecord.SetSqlSingle (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3015,6 +3093,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlString(System.Int32,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlString (ordinal As Integer, value As SqlString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlString(int ordinal, System::Data::SqlTypes::SqlString value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlString : int * System.Data.SqlTypes.SqlString -&gt; unit&#xA;override this.SetSqlString : int * System.Data.SqlTypes.SqlString -&gt; unit" Usage="sqlDataRecord.SetSqlString (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3051,6 +3130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetSqlXml(System.Int32,System.Data.SqlTypes.SqlXml)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSqlXml (ordinal As Integer, value As SqlXml)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSqlXml(int ordinal, System::Data::SqlTypes::SqlXml ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetSqlXml : int * System.Data.SqlTypes.SqlXml -&gt; unit&#xA;override this.SetSqlXml : int * System.Data.SqlTypes.SqlXml -&gt; unit" Usage="sqlDataRecord.SetSqlXml (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3087,6 +3167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetString(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetString (ordinal As Integer, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetString(int ordinal, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetString : int * string -&gt; unit&#xA;override this.SetString : int * string -&gt; unit" Usage="sqlDataRecord.SetString (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3123,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetTimeSpan(System.Int32,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetTimeSpan (ordinal As Integer, value As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetTimeSpan(int ordinal, TimeSpan value);" />
+      <MemberSignature Language="F#" Value="abstract member SetTimeSpan : int * TimeSpan -&gt; unit&#xA;override this.SetTimeSpan : int * TimeSpan -&gt; unit" Usage="sqlDataRecord.SetTimeSpan (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3160,6 +3242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValue(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetValue (ordinal As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValue(int ordinal, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : int * obj -&gt; unit&#xA;override this.SetValue : int * obj -&gt; unit" Usage="sqlDataRecord.SetValue (ordinal, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3203,6 +3286,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SetValues (ParamArray values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int SetValues(... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member SetValues : obj[] -&gt; int&#xA;override this.SetValues : obj[] -&gt; int" Usage="sqlDataRecord.SetValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

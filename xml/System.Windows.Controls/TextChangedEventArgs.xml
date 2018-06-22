@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TextChangedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextChangedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type TextChangedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextChangedEventArgs.#ctor(System.Windows.RoutedEvent,System.Windows.Controls.UndoAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As RoutedEvent, action As UndoAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextChangedEventArgs(System::Windows::RoutedEvent ^ id, System::Windows::Controls::UndoAction action);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.TextChangedEventArgs : System.Windows.RoutedEvent * System.Windows.Controls.UndoAction -&gt; System.Windows.Controls.TextChangedEventArgs" Usage="new System.Windows.Controls.TextChangedEventArgs (id, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextChangedEventArgs.#ctor(System.Windows.RoutedEvent,System.Windows.Controls.UndoAction,System.Collections.Generic.ICollection{System.Windows.Controls.TextChange})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As RoutedEvent, action As UndoAction, changes As ICollection(Of TextChange))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextChangedEventArgs(System::Windows::RoutedEvent ^ id, System::Windows::Controls::UndoAction action, System::Collections::Generic::ICollection&lt;System::Windows::Controls::TextChange ^&gt; ^ changes);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.TextChangedEventArgs : System.Windows.RoutedEvent * System.Windows.Controls.UndoAction * System.Collections.Generic.ICollection&lt;System.Windows.Controls.TextChange&gt; -&gt; System.Windows.Controls.TextChangedEventArgs" Usage="new System.Windows.Controls.TextChangedEventArgs (id, action, changes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextChangedEventArgs.Changes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changes As ICollection(Of TextChange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Windows::Controls::TextChange ^&gt; ^ Changes { System::Collections::Generic::ICollection&lt;System::Windows::Controls::TextChange ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Changes : System.Collections.Generic.ICollection&lt;System.Windows.Controls.TextChange&gt;" Usage="System.Windows.Controls.TextChangedEventArgs.Changes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextChangedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="textChangedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextChangedEventArgs.UndoAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UndoAction As UndoAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::UndoAction UndoAction { System::Windows::Controls::UndoAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.UndoAction : System.Windows.Controls.UndoAction" Usage="System.Windows.Controls.TextChangedEventArgs.UndoAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

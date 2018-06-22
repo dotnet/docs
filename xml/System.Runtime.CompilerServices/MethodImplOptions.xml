@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.MethodImplOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodImplOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class MethodImplOptions" />
+  <TypeSignature Language="F#" Value="type MethodImplOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining" />
       <MemberSignature Language="VB.NET" Value="AggressiveInlining" />
       <MemberSignature Language="C++ CLI" Value="AggressiveInlining" />
+      <MemberSignature Language="F#" Value="AggressiveInlining = 256" Usage="System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.ForwardRef" />
       <MemberSignature Language="VB.NET" Value="ForwardRef" />
       <MemberSignature Language="C++ CLI" Value="ForwardRef" />
+      <MemberSignature Language="F#" Value="ForwardRef = 16" Usage="System.Runtime.CompilerServices.MethodImplOptions.ForwardRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.InternalCall" />
       <MemberSignature Language="VB.NET" Value="InternalCall" />
       <MemberSignature Language="C++ CLI" Value="InternalCall" />
+      <MemberSignature Language="F#" Value="InternalCall = 4096" Usage="System.Runtime.CompilerServices.MethodImplOptions.InternalCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.NoInlining" />
       <MemberSignature Language="VB.NET" Value="NoInlining" />
       <MemberSignature Language="C++ CLI" Value="NoInlining" />
+      <MemberSignature Language="F#" Value="NoInlining = 8" Usage="System.Runtime.CompilerServices.MethodImplOptions.NoInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.NoOptimization" />
       <MemberSignature Language="VB.NET" Value="NoOptimization" />
       <MemberSignature Language="C++ CLI" Value="NoOptimization" />
+      <MemberSignature Language="F#" Value="NoOptimization = 64" Usage="System.Runtime.CompilerServices.MethodImplOptions.NoOptimization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.PreserveSig" />
       <MemberSignature Language="VB.NET" Value="PreserveSig" />
       <MemberSignature Language="C++ CLI" Value="PreserveSig" />
+      <MemberSignature Language="F#" Value="PreserveSig = 128" Usage="System.Runtime.CompilerServices.MethodImplOptions.PreserveSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.Synchronized" />
       <MemberSignature Language="VB.NET" Value="Synchronized" />
       <MemberSignature Language="C++ CLI" Value="Synchronized" />
+      <MemberSignature Language="F#" Value="Synchronized = 32" Usage="System.Runtime.CompilerServices.MethodImplOptions.Synchronized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.Unmanaged" />
       <MemberSignature Language="VB.NET" Value="Unmanaged" />
       <MemberSignature Language="C++ CLI" Value="Unmanaged" />
+      <MemberSignature Language="F#" Value="Unmanaged = 4" Usage="System.Runtime.CompilerServices.MethodImplOptions.Unmanaged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.CroppedBitmap" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CroppedBitmap&#xA;Inherits BitmapSource&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class CroppedBitmap sealed : System::Windows::Media::Imaging::BitmapSource, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type CroppedBitmap = class&#xA;    inherit BitmapSource&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.#ctor(System.Windows.Media.Imaging.BitmapSource,System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As BitmapSource, sourceRect As Int32Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CroppedBitmap(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Int32Rect sourceRect);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.CroppedBitmap : System.Windows.Media.Imaging.BitmapSource * System.Windows.Int32Rect -&gt; System.Windows.Media.Imaging.CroppedBitmap" Usage="new System.Windows.Media.Imaging.CroppedBitmap (source, sourceRect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="croppedBitmap.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As CroppedBitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::CroppedBitmap ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Imaging.CroppedBitmap" Usage="croppedBitmap.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="croppedBitmap.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As CroppedBitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::CroppedBitmap ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Imaging.CroppedBitmap" Usage="croppedBitmap.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="croppedBitmap.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="croppedBitmap.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="croppedBitmap.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="croppedBitmap.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.CroppedBitmap.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="croppedBitmap.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -376,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.CroppedBitmap.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As BitmapSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapSource ^ Source { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Windows.Media.Imaging.BitmapSource with get, set" Usage="System.Windows.Media.Imaging.CroppedBitmap.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.CroppedBitmap.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Imaging.CroppedBitmap.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.CroppedBitmap.SourceRect" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceRect As Int32Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Int32Rect SourceRect { System::Windows::Int32Rect get(); void set(System::Windows::Int32Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceRect : System.Windows.Int32Rect with get, set" Usage="System.Windows.Media.Imaging.CroppedBitmap.SourceRect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -467,6 +481,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.CroppedBitmap.SourceRectProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceRectProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceRectProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceRectProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Imaging.CroppedBitmap.SourceRectProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceView abstract" />
+  <TypeSignature Language="F#" Value="type DataSourceView = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.#ctor(System.Web.UI.IDataSource,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As IDataSource, viewName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataSourceView(System::Web::UI::IDataSource ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataSourceView : System.Web.UI.IDataSource * string -&gt; System.Web.UI.DataSourceView" Usage="new System.Web.UI.DataSourceView (owner, viewName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanDelete" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDelete : bool" Usage="System.Web.UI.DataSourceView.CanDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.CanExecute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanExecute (commandName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExecute(System::String ^ commandName);" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : string -&gt; bool&#xA;override this.CanExecute : string -&gt; bool" Usage="dataSourceView.CanExecute commandName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanInsert" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInsert : bool" Usage="System.Web.UI.DataSourceView.CanInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanPage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanPage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPage : bool" Usage="System.Web.UI.DataSourceView.CanPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRetrieveTotalRowCount : bool" Usage="System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Web.UI.DataSourceView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.CanUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanUpdate : bool" Usage="System.Web.UI.DataSourceView.CanUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +320,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.DataSourceView.DataSourceViewChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataSourceViewChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceViewChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceViewChanged : EventHandler " Usage="member this.DataSourceViewChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Delete (keys As IDictionary, oldValues As IDictionary, callback As DataSourceViewOperationCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Delete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member Delete : System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit&#xA;override this.Delete : System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit" Usage="dataSourceView.Delete (keys, oldValues, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.Events" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Events As EventHandlerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::EventHandlerList ^ Events { System::ComponentModel::EventHandlerList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : System.ComponentModel.EventHandlerList" Usage="System.Web.UI.DataSourceView.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteCommand(System.String,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteCommand (commandName As String, keys As IDictionary, values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteCommand(System::String ^ commandName, System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteCommand : string * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteCommand : string * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="dataSourceView.ExecuteCommand (commandName, keys, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteCommand(System.String,System.Collections.IDictionary,System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExecuteCommand (commandName As String, keys As IDictionary, values As IDictionary, callback As DataSourceViewOperationCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExecuteCommand(System::String ^ commandName, System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteCommand : string * System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit&#xA;override this.ExecuteCommand : string * System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit" Usage="dataSourceView.ExecuteCommand (commandName, keys, values, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="dataSourceView.ExecuteDelete (keys, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -524,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteInsert (values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteInsert(System::Collections::IDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteInsert : System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteInsert : System.Collections.IDictionary -&gt; int" Usage="dataSourceView.ExecuteInsert values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -570,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function ExecuteSelect (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Collections::IEnumerable ^ ExecuteSelect(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="dataSourceView.ExecuteSelect arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -610,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="dataSourceView.ExecuteUpdate (keys, values, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -660,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.Insert(System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (values As IDictionary, callback As DataSourceViewOperationCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(System::Collections::IDictionary ^ values, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit&#xA;override this.Insert : System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit" Usage="dataSourceView.Insert (values, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -695,6 +714,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceView.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.DataSourceView.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -717,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.OnDataSourceViewChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceViewChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceViewChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDataSourceViewChanged : EventArgs -&gt; unit&#xA;override this.OnDataSourceViewChanged : EventArgs -&gt; unit" Usage="dataSourceView.OnDataSourceViewChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -754,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(System.Web.UI.DataSourceCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RaiseUnsupportedCapabilityError (capability As DataSourceCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void RaiseUnsupportedCapabilityError(System::Web::UI::DataSourceCapabilities capability);" />
+      <MemberSignature Language="F#" Value="abstract member RaiseUnsupportedCapabilityError : System.Web.UI.DataSourceCapabilities -&gt; unit&#xA;override this.RaiseUnsupportedCapabilityError : System.Web.UI.DataSourceCapabilities -&gt; unit" Usage="dataSourceView.RaiseUnsupportedCapabilityError capability" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -785,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.Select(System.Web.UI.DataSourceSelectArguments,System.Web.UI.DataSourceViewSelectCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Select (arguments As DataSourceSelectArguments, callback As DataSourceViewSelectCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Select(System::Web::UI::DataSourceSelectArguments ^ arguments, System::Web::UI::DataSourceViewSelectCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member Select : System.Web.UI.DataSourceSelectArguments * System.Web.UI.DataSourceViewSelectCallback -&gt; unit&#xA;override this.Select : System.Web.UI.DataSourceSelectArguments * System.Web.UI.DataSourceViewSelectCallback -&gt; unit" Usage="dataSourceView.Select (arguments, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -820,6 +843,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Update (keys As IDictionary, values As IDictionary, oldValues As IDictionary, callback As DataSourceViewOperationCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Update(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member Update : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit&#xA;override this.Update : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary * System.Web.UI.DataSourceViewOperationCallback -&gt; unit" Usage="dataSourceView.Update (keys, values, oldValues, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

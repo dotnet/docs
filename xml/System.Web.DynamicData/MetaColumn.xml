@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class MetaColumn&#xA;Implements IFieldFormattingOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetaColumn : System::Web::DynamicData::IFieldFormattingOptions" />
+  <TypeSignature Language="F#" Value="type MetaColumn = class&#xA;    interface IFieldFormattingOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaTable table, class System.Web.DynamicData.ModelProviders.ColumnProvider columnProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaColumn.#ctor(System.Web.DynamicData.MetaTable,System.Web.DynamicData.ModelProviders.ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetaColumn(System::Web::DynamicData::MetaTable ^ table, System::Web::DynamicData::ModelProviders::ColumnProvider ^ columnProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.MetaColumn : System.Web.DynamicData.MetaTable * System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaColumn" Usage="new System.Web.DynamicData.MetaColumn (table, columnProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.AllowInitialValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowInitialValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInitialValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInitialValue : bool" Usage="System.Web.DynamicData.MetaColumn.AllowInitialValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.AllowInitialValue</InterfaceMember>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplyFormatInEditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyFormatInEditMode : bool" Usage="System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldFormattingOptions.ApplyFormatInEditMode</InterfaceMember>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Web.DynamicData.MetaColumn.Attributes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.Attributes</InterfaceMember>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaColumn.BuildAttributeCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BuildAttributeCollection () As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::AttributeCollection ^ BuildAttributeCollection();" />
+      <MemberSignature Language="F#" Value="abstract member BuildAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection&#xA;override this.BuildAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection" Usage="metaColumn.BuildAttributeCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.ColumnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ColumnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnType : Type" Usage="System.Web.DynamicData.MetaColumn.ColumnType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.ColumnType</InterfaceMember>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool" Usage="System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldFormattingOptions.ConvertEmptyStringToNull</InterfaceMember>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.DataFormatString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormatString : string" Usage="System.Web.DynamicData.MetaColumn.DataFormatString" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldFormattingOptions.DataFormatString</InterfaceMember>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.DataTypeAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTypeAttribute As DataTypeAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DataAnnotations::DataTypeAttribute ^ DataTypeAttribute { System::ComponentModel::DataAnnotations::DataTypeAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTypeAttribute : System.ComponentModel.DataAnnotations.DataTypeAttribute" Usage="System.Web.DynamicData.MetaColumn.DataTypeAttribute" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.DataTypeAttribute</InterfaceMember>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.Web.DynamicData.MetaColumn.DefaultValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.DefaultValue</InterfaceMember>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Web.DynamicData.MetaColumn.Description" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.Description</InterfaceMember>
@@ -365,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Web.DynamicData.MetaColumn.DisplayName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.DisplayName</InterfaceMember>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.EntityTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityTypeProperty As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PropertyInfo ^ EntityTypeProperty { System::Reflection::PropertyInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityTypeProperty : System.Reflection.PropertyInfo" Usage="System.Web.DynamicData.MetaColumn.EntityTypeProperty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.EntityTypeProperty</InterfaceMember>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.FilterUIHint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterUIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterUIHint { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterUIHint : string" Usage="System.Web.DynamicData.MetaColumn.FilterUIHint" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.FilterUIHint</InterfaceMember>
@@ -442,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.HtmlEncode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HtmlEncode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HtmlEncode : bool" Usage="System.Web.DynamicData.MetaColumn.HtmlEncode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldFormattingOptions.HtmlEncode</InterfaceMember>
@@ -467,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaColumn.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="metaColumn.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsBinaryData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBinaryData As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBinaryData { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBinaryData : bool" Usage="System.Web.DynamicData.MetaColumn.IsBinaryData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsBinaryData</InterfaceMember>
@@ -521,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsCustomProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCustomProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCustomProperty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCustomProperty : bool" Usage="System.Web.DynamicData.MetaColumn.IsCustomProperty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsCustomProperty</InterfaceMember>
@@ -552,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsFloatingPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFloatingPoint As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFloatingPoint { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFloatingPoint : bool" Usage="System.Web.DynamicData.MetaColumn.IsFloatingPoint" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsFloatingPoint</InterfaceMember>
@@ -586,6 +606,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsForeignKeyComponent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsForeignKeyComponent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsForeignKeyComponent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsForeignKeyComponent : bool" Usage="System.Web.DynamicData.MetaColumn.IsForeignKeyComponent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsForeignKeyComponent</InterfaceMember>
@@ -611,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsGenerated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGenerated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGenerated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGenerated : bool" Usage="System.Web.DynamicData.MetaColumn.IsGenerated" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsGenerated</InterfaceMember>
@@ -635,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsInteger" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInteger As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInteger { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInteger : bool" Usage="System.Web.DynamicData.MetaColumn.IsInteger" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsInteger</InterfaceMember>
@@ -669,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsLongString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLongString As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLongString { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLongString : bool" Usage="System.Web.DynamicData.MetaColumn.IsLongString" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsLongString</InterfaceMember>
@@ -701,6 +725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsPrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrimaryKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimaryKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrimaryKey : bool" Usage="System.Web.DynamicData.MetaColumn.IsPrimaryKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsPrimaryKey</InterfaceMember>
@@ -726,6 +751,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.DynamicData.MetaColumn.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsReadOnly</InterfaceMember>
@@ -750,6 +776,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool" Usage="System.Web.DynamicData.MetaColumn.IsRequired" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsRequired</InterfaceMember>
@@ -784,6 +811,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.IsString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsString As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsString { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsString : bool" Usage="System.Web.DynamicData.MetaColumn.IsString" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.IsString</InterfaceMember>
@@ -812,6 +840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int" Usage="System.Web.DynamicData.MetaColumn.MaxLength" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.MaxLength</InterfaceMember>
@@ -844,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Model" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Model As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaModel ^ Model { System::Web::DynamicData::MetaModel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Model : System.Web.DynamicData.MetaModel" Usage="System.Web.DynamicData.MetaColumn.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -866,6 +896,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.DynamicData.MetaColumn.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.Name</InterfaceMember>
@@ -889,6 +920,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.NullDisplayText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NullDisplayText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NullDisplayText : string" Usage="System.Web.DynamicData.MetaColumn.NullDisplayText" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldFormattingOptions.NullDisplayText</InterfaceMember>
@@ -923,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Prompt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Prompt As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Prompt { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prompt : string" Usage="System.Web.DynamicData.MetaColumn.Prompt" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.Prompt</InterfaceMember>
@@ -958,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As ColumnProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::ModelProviders::ColumnProvider ^ Provider { System::Web::DynamicData::ModelProviders::ColumnProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.DynamicData.ModelProviders.ColumnProvider" Usage="System.Web.DynamicData.MetaColumn.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -979,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.RequiredErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequiredErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiredErrorMessage : string" Usage="System.Web.DynamicData.MetaColumn.RequiredErrorMessage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.RequiredErrorMessage</InterfaceMember>
@@ -1004,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaColumn.ResetMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetMetadata ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetMetadata();" />
+      <MemberSignature Language="F#" Value="abstract member ResetMetadata : unit -&gt; unit&#xA;override this.ResetMetadata : unit -&gt; unit" Usage="metaColumn.ResetMetadata " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaColumn.ResetMetadata</InterfaceMember>
@@ -1034,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Scaffold" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Scaffold As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Scaffold { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Scaffold : bool with get, set" Usage="System.Web.DynamicData.MetaColumn.Scaffold" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.Scaffold</InterfaceMember>
@@ -1079,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.ShortDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ShortDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ShortDisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShortDisplayName : string" Usage="System.Web.DynamicData.MetaColumn.ShortDisplayName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.ShortDisplayName</InterfaceMember>
@@ -1109,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortExpression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortExpression : string" Usage="System.Web.DynamicData.MetaColumn.SortExpression" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.SortExpression</InterfaceMember>
@@ -1132,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaTable ^ Table { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.MetaColumn.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1154,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="metaColumn.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1175,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeCode As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TypeCode TypeCode { TypeCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCode : TypeCode" Usage="System.Web.DynamicData.MetaColumn.TypeCode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.TypeCode</InterfaceMember>
@@ -1206,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaColumn.UIHint" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UIHint { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UIHint : string" Usage="System.Web.DynamicData.MetaColumn.UIHint" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaColumn.UIHint</InterfaceMember>

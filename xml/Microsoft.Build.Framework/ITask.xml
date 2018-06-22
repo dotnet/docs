@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITask" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITask" />
+  <TypeSignature Language="F#" Value="type ITask = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.BuildEngine" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildEngine As IBuildEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IBuildEngine ^ BuildEngine { Microsoft::Build::Framework::IBuildEngine ^ get(); void set(Microsoft::Build::Framework::IBuildEngine ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildEngine : Microsoft.Build.Framework.IBuildEngine with get, set" Usage="Microsoft.Build.Framework.ITask.BuildEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Execute();" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; bool" Usage="iTask.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.HostObject" />
       <MemberSignature Language="VB.NET" Value="Public Property HostObject As ITaskHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskHost ^ HostObject { Microsoft::Build::Framework::ITaskHost ^ get(); void set(Microsoft::Build::Framework::ITaskHost ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostObject : Microsoft.Build.Framework.ITaskHost with get, set" Usage="Microsoft.Build.Framework.ITask.HostObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

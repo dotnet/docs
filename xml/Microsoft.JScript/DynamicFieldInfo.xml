@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DynamicFieldInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicFieldInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicFieldInfo sealed" />
+  <TypeSignature Language="F#" Value="type DynamicFieldInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicFieldInfo(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.DynamicFieldInfo : string * obj -&gt; Microsoft.JScript.DynamicFieldInfo" Usage="new Microsoft.JScript.DynamicFieldInfo (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object, fieldTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicFieldInfo(System::String ^ name, System::Object ^ value, System::String ^ fieldTypeName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.DynamicFieldInfo : string * obj * string -&gt; Microsoft.JScript.DynamicFieldInfo" Usage="new Microsoft.JScript.DynamicFieldInfo (name, value, fieldTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.fieldTypeName" />
       <MemberSignature Language="VB.NET" Value="Public fieldTypeName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ fieldTypeName;" />
+      <MemberSignature Language="F#" Value="val mutable fieldTypeName : string" Usage="Microsoft.JScript.DynamicFieldInfo.fieldTypeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.name" />
       <MemberSignature Language="VB.NET" Value="Public name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ name;" />
+      <MemberSignature Language="F#" Value="val mutable name : string" Usage="Microsoft.JScript.DynamicFieldInfo.name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.value" />
       <MemberSignature Language="VB.NET" Value="Public value As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ value;" />
+      <MemberSignature Language="F#" Value="val mutable value : obj" Usage="Microsoft.JScript.DynamicFieldInfo.value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

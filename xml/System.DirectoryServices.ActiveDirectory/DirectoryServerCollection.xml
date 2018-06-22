@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryServerCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServerCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type DirectoryServerCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Add(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (server As DirectoryServer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ server);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; int" Usage="directoryServerCollection.Add server" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.AddRange(System.DirectoryServices.ActiveDirectory.DirectoryServer[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (servers As DirectoryServer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::DirectoryServices::ActiveDirectory::DirectoryServer ^&gt; ^ servers);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.DirectoryServer[] -&gt; unit" Usage="directoryServerCollection.AddRange servers" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Contains(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (server As DirectoryServer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ server);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; bool" Usage="directoryServerCollection.Contains server" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.CopyTo(System.DirectoryServices.ActiveDirectory.DirectoryServer[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DirectoryServer(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::DirectoryServer ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.DirectoryServer[] * int -&gt; unit" Usage="directoryServerCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.IndexOf(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (server As DirectoryServer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ server);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; int" Usage="directoryServerCollection.IndexOf server" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Insert(System.Int32,System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, server As DirectoryServer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ server);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; unit" Usage="directoryServerCollection.Insert (index, server)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryServer ^ default[int] { System::DirectoryServices::ActiveDirectory::DirectoryServer ^ get(int index); void set(int index, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.DirectoryServer with get, set" Usage="System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="directoryServerCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="directoryServerCollection.OnClearComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="directoryServerCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -311,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="directoryServerCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnSetComplete(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSetComplete : int * obj * obj -&gt; unit&#xA;override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="directoryServerCollection.OnSetComplete (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="directoryServerCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -392,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection.Remove(System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (server As DirectoryServer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::ActiveDirectory::DirectoryServer ^ server);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.DirectoryServices.ActiveDirectory.DirectoryServer -&gt; unit" Usage="directoryServerCollection.Remove server" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

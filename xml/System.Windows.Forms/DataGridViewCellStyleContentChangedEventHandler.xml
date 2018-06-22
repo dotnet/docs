@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellStyleContentChangedEventHandler(sender As Object, e As DataGridViewCellStyleContentChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellStyleContentChangedEventHandler(System::Object ^ sender, DataGridViewCellStyleContentChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellStyleContentChangedEventHandler = delegate of obj * DataGridViewCellStyleContentChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

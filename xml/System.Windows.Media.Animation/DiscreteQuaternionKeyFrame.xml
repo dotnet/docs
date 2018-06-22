@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteQuaternionKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscreteQuaternionKeyFrame&#xA;Inherits QuaternionKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscreteQuaternionKeyFrame : System::Windows::Media::Animation::QuaternionKeyFrame" />
+  <TypeSignature Language="F#" Value="type DiscreteQuaternionKeyFrame = class&#xA;    inherit QuaternionKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion -&gt; System.Windows.Media.Animation.DiscreteQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteQuaternionKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.DiscreteQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteQuaternionKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="discreteQuaternionKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Quaternion, keyFrameProgress As Double) As Quaternion" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Quaternion InterpolateValueCore(System::Windows::Media::Media3D::Quaternion baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Media3D.Quaternion * double -&gt; System.Windows.Media.Media3D.Quaternion" Usage="discreteQuaternionKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

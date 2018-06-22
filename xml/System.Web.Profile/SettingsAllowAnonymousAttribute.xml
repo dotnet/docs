@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.SettingsAllowAnonymousAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsAllowAnonymousAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsAllowAnonymousAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsAllowAnonymousAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SettingsAllowAnonymousAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (allow As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsAllowAnonymousAttribute(bool allow);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.SettingsAllowAnonymousAttribute : bool -&gt; System.Web.Profile.SettingsAllowAnonymousAttribute" Usage="new System.Web.Profile.SettingsAllowAnonymousAttribute allow" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Allow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Allow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Allow : bool" Usage="System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SettingsAllowAnonymousAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="settingsAllowAnonymousAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

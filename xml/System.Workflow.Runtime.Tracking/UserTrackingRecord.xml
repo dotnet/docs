@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class UserTrackingRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserTrackingRecord : System::Workflow::Runtime::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type UserTrackingRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackingRecord.#ctor(System.Type,System.String,System.Guid,System.Guid,System.DateTime,System.Int32,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityType As Type, qualifiedName As String, contextGuid As Guid, parentContextGuid As Guid, eventDateTime As DateTime, eventOrder As Integer, userDataKey As String, userData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackingRecord(Type ^ activityType, System::String ^ qualifiedName, Guid contextGuid, Guid parentContextGuid, DateTime eventDateTime, int eventOrder, System::String ^ userDataKey, System::Object ^ userData);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.UserTrackingRecord : Type * string * Guid * Guid * DateTime * int * string * obj -&gt; System.Workflow.Runtime.Tracking.UserTrackingRecord" Usage="new System.Workflow.Runtime.Tracking.UserTrackingRecord (activityType, qualifiedName, contextGuid, parentContextGuid, eventDateTime, eventOrder, userDataKey, userData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.ActivityType" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ActivityType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityType : Type with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.ActivityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Annotations As TrackingAnnotationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ Annotations { System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As IList(Of TrackingDataItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingDataItem ^&gt; ^ Body { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingDataItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingDataItem&gt;" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.ContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContextGuid { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextGuid : Guid with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.ContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventArgs" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EventArgs As EventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property EventArgs ^ EventArgs { EventArgs ^ get(); void set(EventArgs ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EventArgs : EventArgs with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.EventArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EventDateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime EventDateTime { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.EventDateTime : DateTime with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.EventDateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EventOrder As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EventOrder { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EventOrder : int with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.ParentContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public Property ParentContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ParentContextGuid { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContextGuid : Guid with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.ParentContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.QualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public Property QualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QualifiedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : string with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -360,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData" />
       <MemberSignature Language="VB.NET" Value="Public Property UserData As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserData { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserData : obj with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -389,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Property UserDataKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserDataKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserDataKey : string with get, set" Usage="System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

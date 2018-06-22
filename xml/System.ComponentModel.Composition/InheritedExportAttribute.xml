@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.InheritedExportAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class InheritedExportAttribute&#xA;Inherits ExportAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InheritedExportAttribute : System::ComponentModel::Composition::ExportAttribute" />
+  <TypeSignature Language="F#" Value="type InheritedExportAttribute = class&#xA;    inherit ExportAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName, Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string * Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute (contractName, contractType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

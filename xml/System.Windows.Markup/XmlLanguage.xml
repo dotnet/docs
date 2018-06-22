@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlLanguage" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlLanguage" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlLanguage" />
+  <TypeSignature Language="F#" Value="type XmlLanguage = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlLanguage.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As XmlLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Markup::XmlLanguage ^ Empty { System::Windows::Markup::XmlLanguage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Markup.XmlLanguage" Usage="System.Windows.Markup.XmlLanguage.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetEquivalentCulture" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEquivalentCulture () As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetEquivalentCulture();" />
+      <MemberSignature Language="F#" Value="member this.GetEquivalentCulture : unit -&gt; System.Globalization.CultureInfo" Usage="xmlLanguage.GetEquivalentCulture " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetLanguage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLanguage (ietfLanguageTag As String) As XmlLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::XmlLanguage ^ GetLanguage(System::String ^ ietfLanguageTag);" />
+      <MemberSignature Language="F#" Value="static member GetLanguage : string -&gt; System.Windows.Markup.XmlLanguage" Usage="System.Windows.Markup.XmlLanguage.GetLanguage ietfLanguageTag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetSpecificCulture" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSpecificCulture () As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetSpecificCulture();" />
+      <MemberSignature Language="F#" Value="member this.GetSpecificCulture : unit -&gt; System.Globalization.CultureInfo" Usage="xmlLanguage.GetSpecificCulture " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IetfLanguageTag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IetfLanguageTag { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IetfLanguageTag : string" Usage="System.Windows.Markup.XmlLanguage.IetfLanguageTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xmlLanguage.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

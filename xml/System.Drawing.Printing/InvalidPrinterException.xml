@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.InvalidPrinterException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidPrinterException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidPrinterException : SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidPrinterException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.#ctor(System.Drawing.Printing.PrinterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settings As PrinterSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidPrinterException(System::Drawing::Printing::PrinterSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.InvalidPrinterException : System.Drawing.Printing.PrinterSettings -&gt; System.Drawing.Printing.InvalidPrinterException" Usage="new System.Drawing.Printing.InvalidPrinterException settings" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidPrinterException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.InvalidPrinterException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Drawing.Printing.InvalidPrinterException" Usage="new System.Drawing.Printing.InvalidPrinterException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="invalidPrinterException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

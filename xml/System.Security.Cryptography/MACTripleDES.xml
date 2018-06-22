@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MACTripleDES" />
   <TypeSignature Language="VB.NET" Value="Public Class MACTripleDES&#xA;Inherits KeyedHashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class MACTripleDES : System::Security::Cryptography::KeyedHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type MACTripleDES = class&#xA;    inherit KeyedHashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rgbKey As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MACTripleDES(cli::array &lt;System::Byte&gt; ^ rgbKey);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.MACTripleDES : byte[] -&gt; System.Security.Cryptography.MACTripleDES" Usage="new System.Security.Cryptography.MACTripleDES rgbKey" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.#ctor(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (strTripleDES As String, rgbKey As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MACTripleDES(System::String ^ strTripleDES, cli::array &lt;System::Byte&gt; ^ rgbKey);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.MACTripleDES : string * byte[] -&gt; System.Security.Cryptography.MACTripleDES" Usage="new System.Security.Cryptography.MACTripleDES (strTripleDES, rgbKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="mACTripleDES.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgbData As Byte(), ibStart As Integer, cbSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgbData, int ibStart, int cbSize);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="mACTripleDES.HashCore (rgbData, ibStart, cbSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="mACTripleDES.HashFinal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MACTripleDES.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="mACTripleDES.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.MACTripleDES.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As PaddingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::PaddingMode Padding { System::Security::Cryptography::PaddingMode get(); void set(System::Security::Cryptography::PaddingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Security.Cryptography.PaddingMode with get, set" Usage="System.Security.Cryptography.MACTripleDES.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

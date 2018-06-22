@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.PropertyValueCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyValueCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyValueCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type PropertyValueCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : obj -&gt; int" Usage="propertyValueCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.AddRange(System.DirectoryServices.PropertyValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As PropertyValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::PropertyValueCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.PropertyValueCollection -&gt; unit" Usage="propertyValueCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.AddRange(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Object ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : obj[] -&gt; unit" Usage="propertyValueCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="propertyValueCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.CopyTo(System.Object[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Object(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="propertyValueCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : obj -&gt; int" Usage="propertyValueCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * obj -&gt; unit" Usage="propertyValueCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.PropertyValueCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.DirectoryServices.PropertyValueCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="propertyValueCollection.OnClearComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="propertyValueCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="propertyValueCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -335,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.OnSetComplete(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSetComplete : int * obj * obj -&gt; unit&#xA;override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="propertyValueCollection.OnSetComplete (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -365,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.PropertyValueCollection.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.DirectoryServices.PropertyValueCollection.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -391,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertyValueCollection.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : obj -&gt; unit" Usage="propertyValueCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -454,6 +469,7 @@ myUser.CommitChanges();
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.PropertyValueCollection.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.DirectoryServices.PropertyValueCollection.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaPersistSite" />
   <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaPersistSite" />
   <TypeSignature Language="C++ CLI" Value="public interface class IJSVsaPersistSite" />
+  <TypeSignature Language="F#" Value="type IJSVsaPersistSite = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.LoadElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadElement (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LoadElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member LoadElement : string -&gt; string" Usage="iJSVsaPersistSite.LoadElement name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveElement (name As String, source As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveElement(System::String ^ name, System::String ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member SaveElement : string * string -&gt; unit" Usage="iJSVsaPersistSite.SaveElement (name, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

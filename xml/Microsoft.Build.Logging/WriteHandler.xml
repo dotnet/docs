@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.WriteHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WriteHandler(message As String)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WriteHandler(System::String ^ message);" />
+  <TypeSignature Language="F#" Value="type WriteHandler = delegate of string -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

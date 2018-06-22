@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.StandardFormat" />
   <TypeSignature Language="VB.NET" Value="Public Structure StandardFormat&#xA;Implements IEquatable(Of StandardFormat)" />
   <TypeSignature Language="C++ CLI" Value="public value class StandardFormat : IEquatable&lt;System::Buffers::StandardFormat&gt;" />
+  <TypeSignature Language="F#" Value="type StandardFormat = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char symbol, unsigned int8 precision) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.#ctor(System.Char,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (symbol As Char, Optional precision As Byte = 255)" />
+      <MemberSignature Language="F#" Value="new System.Buffers.StandardFormat : char * byte -&gt; System.Buffers.StandardFormat" Usage="new System.Buffers.StandardFormat (symbol, precision)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.Equals(System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As StandardFormat) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Buffers::StandardFormat other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Buffers.StandardFormat -&gt; bool" Usage="standardFormat.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="standardFormat.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="standardFormat.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.StandardFormat.HasPrecision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPrecision As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPrecision { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPrecision : bool" Usage="System.Buffers.StandardFormat.HasPrecision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.StandardFormat.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Buffers.StandardFormat.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.StandardFormat.MaxPrecision" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxPrecision As Byte  = 99" />
       <MemberSignature Language="C++ CLI" Value="public: System::Byte MaxPrecision = 99;" />
+      <MemberSignature Language="F#" Value="val mutable MaxPrecision : byte" Usage="System.Buffers.StandardFormat.MaxPrecision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.StandardFormat.NoPrecision" />
       <MemberSignature Language="VB.NET" Value="Public Const NoPrecision As Byte  = 255" />
       <MemberSignature Language="C++ CLI" Value="public: System::Byte NoPrecision = 255;" />
+      <MemberSignature Language="F#" Value="val mutable NoPrecision : byte" Usage="System.Buffers.StandardFormat.NoPrecision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.op_Equality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As StandardFormat, right As StandardFormat) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Buffers::StandardFormat left, System::Buffers::StandardFormat right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Buffers.StandardFormat * System.Buffers.StandardFormat -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -241,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.op_Implicit(System.Char)~System.Buffers.StandardFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (symbol As Char) As StandardFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Buffers::StandardFormat(char symbol);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : char -&gt; System.Buffers.StandardFormat" Usage="System.Buffers.StandardFormat.op_Implicit symbol" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -266,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.op_Inequality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As StandardFormat, right As StandardFormat) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Buffers::StandardFormat left, System::Buffers::StandardFormat right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Buffers.StandardFormat * System.Buffers.StandardFormat -&gt; bool" Usage="System.Buffers.StandardFormat.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -293,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.Parse(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (format As ReadOnlySpan(Of Char)) As StandardFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::StandardFormat Parse(ReadOnlySpan&lt;char&gt; format);" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; -&gt; System.Buffers.StandardFormat" Usage="System.Buffers.StandardFormat.Parse format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -318,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (format As String) As StandardFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::StandardFormat Parse(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Buffers.StandardFormat" Usage="System.Buffers.StandardFormat.Parse format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.StandardFormat.Precision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte" Usage="System.Buffers.StandardFormat.Precision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -364,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.StandardFormat.Symbol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Symbol As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char Symbol { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.Symbol : char" Usage="System.Buffers.StandardFormat.Symbol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -385,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.StandardFormat.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="standardFormat.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

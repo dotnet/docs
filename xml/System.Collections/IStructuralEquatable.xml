@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IStructuralEquatable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStructuralEquatable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type IStructuralEquatable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object, comparer As IEqualityComparer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj * System.Collections.IEqualityComparer -&gt; bool" Usage="iStructuralEquatable.Equals (other, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (comparer As IEqualityComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(System::Collections::IEqualityComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : System.Collections.IEqualityComparer -&gt; int" Usage="iStructuralEquatable.GetHashCode comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

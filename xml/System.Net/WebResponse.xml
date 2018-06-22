@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebResponse" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebResponse&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebResponse abstract : MarshalByRefObject, IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type WebResponse = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebResponse(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebResponse : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebResponse" Usage="new System.Net.WebResponse (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="webResponse.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.Net.WebResponse.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -255,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Net.WebResponse.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -317,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="webResponse.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -351,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="webResponse.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -397,6 +404,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webResponse.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -442,6 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebResponse.GetResponseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponseStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetResponseStream();" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseStream : unit -&gt; System.IO.Stream&#xA;override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="webResponse.GetResponseStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -494,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.Net.WebResponse.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -547,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.IsFromCache" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFromCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFromCache { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFromCache : bool" Usage="System.Net.WebResponse.IsFromCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -587,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.IsMutuallyAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMutuallyAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMutuallyAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMutuallyAuthenticated : bool" Usage="System.Net.WebResponse.IsMutuallyAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -635,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.ResponseUri" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ResponseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ ResponseUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseUri : Uri" Usage="System.Net.WebResponse.ResponseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -686,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebResponse.SupportsHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsHeaders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsHeaders { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsHeaders : bool" Usage="System.Net.WebResponse.SupportsHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>

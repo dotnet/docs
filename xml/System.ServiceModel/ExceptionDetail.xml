@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ExceptionDetail" />
   <TypeSignature Language="VB.NET" Value="Public Class ExceptionDetail" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionDetail" />
+  <TypeSignature Language="F#" Value="type ExceptionDetail = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionDetail.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionDetail(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ExceptionDetail : Exception -&gt; System.ServiceModel.ExceptionDetail" Usage="new System.ServiceModel.ExceptionDetail exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.HelpLink" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpLink As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpLink { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpLink : string with get, set" Usage="System.ServiceModel.ExceptionDetail.HelpLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.InnerException" />
       <MemberSignature Language="VB.NET" Value="Public Property InnerException As ExceptionDetail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ExceptionDetail ^ InnerException { System::ServiceModel::ExceptionDetail ^ get(); void set(System::ServiceModel::ExceptionDetail ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InnerException : System.ServiceModel.ExceptionDetail with get, set" Usage="System.ServiceModel.ExceptionDetail.InnerException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="System.ServiceModel.ExceptionDetail.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public Property StackTrace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string with get, set" Usage="System.ServiceModel.ExceptionDetail.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionDetail.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exceptionDetail.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.ServiceModel.ExceptionDetail.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollBarRenderer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScrollBarRenderer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollBarRenderer sealed" />
+  <TypeSignature Language="F#" Value="type ScrollBarRenderer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawArrowButton (g As Graphics, bounds As Rectangle, state As ScrollBarArrowButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawArrowButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarArrowButtonState state);" />
+      <MemberSignature Language="F#" Value="static member DrawArrowButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawArrowButton (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalThumb (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawHorizontalThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalThumbGrip (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalThumbGrip(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawHorizontalThumbGrip : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawLeftHorizontalTrack (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawLeftHorizontalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawLeftHorizontalTrack : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -253,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawLowerVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawLowerVerticalTrack (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawLowerVerticalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawLowerVerticalTrack : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawLowerVerticalTrack (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -296,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawRightHorizontalTrack (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRightHorizontalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawRightHorizontalTrack : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -348,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawSizeBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawSizeBox (g As Graphics, bounds As Rectangle, state As ScrollBarSizeBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawSizeBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarSizeBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawSizeBox : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawSizeBox (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawUpperVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawUpperVerticalTrack (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawUpperVerticalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawUpperVerticalTrack : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawUpperVerticalTrack (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalThumb (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawVerticalThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumb (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -477,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumbGrip(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalThumbGrip (g As Graphics, bounds As Rectangle, state As ScrollBarState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalThumbGrip(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member DrawVerticalThumbGrip : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; unit" Usage="System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumbGrip (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -520,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.GetSizeBoxSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSizeBoxSize (g As Graphics, state As ScrollBarState) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetSizeBoxSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member GetSizeBoxSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.ScrollBarRenderer.GetSizeBoxSize (g, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -564,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.GetThumbGripSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.ScrollBarState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetThumbGripSize (g As Graphics, state As ScrollBarState) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetThumbGripSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::ScrollBarState state);" />
+      <MemberSignature Language="F#" Value="static member GetThumbGripSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.ScrollBarState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.ScrollBarRenderer.GetThumbGripSize (g, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -608,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollBarRenderer.IsSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Windows.Forms.ScrollBarRenderer.IsSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

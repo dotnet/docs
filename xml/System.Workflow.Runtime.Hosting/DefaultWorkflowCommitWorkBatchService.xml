@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultWorkflowCommitWorkBatchService&#xA;Inherits WorkflowCommitWorkBatchService" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultWorkflowCommitWorkBatchService : System::Workflow::Runtime::Hosting::WorkflowCommitWorkBatchService" />
+  <TypeSignature Language="F#" Value="type DefaultWorkflowCommitWorkBatchService = class&#xA;    inherit WorkflowCommitWorkBatchService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultWorkflowCommitWorkBatchService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService" Usage="new System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CommitWorkBatch(class System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService/CommitWorkBatchCallback commitWorkBatchCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.CommitWorkBatch(System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CommitWorkBatch(System::Workflow::Runtime::Hosting::WorkflowCommitWorkBatchService::CommitWorkBatchCallback ^ commitWorkBatchCallback);" />
+      <MemberSignature Language="F#" Value="override this.CommitWorkBatch : System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback -&gt; unit" Usage="defaultWorkflowCommitWorkBatchService.CommitWorkBatch commitWorkBatchCallback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.EnableRetries" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableRetries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRetries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableRetries : bool with get, set" Usage="System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.EnableRetries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.OnStopped" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStopped ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStopped();" />
+      <MemberSignature Language="F#" Value="override this.OnStopped : unit -&gt; unit" Usage="defaultWorkflowCommitWorkBatchService.OnStopped " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Start();" />
+      <MemberSignature Language="F#" Value="override this.Start : unit -&gt; unit" Usage="defaultWorkflowCommitWorkBatchService.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

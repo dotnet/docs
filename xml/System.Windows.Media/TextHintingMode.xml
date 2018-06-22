@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextHintingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextHintingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextHintingMode" />
+  <TypeSignature Language="F#" Value="type TextHintingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextHintingMode.Animated" />
       <MemberSignature Language="VB.NET" Value="Animated" />
       <MemberSignature Language="C++ CLI" Value="Animated" />
+      <MemberSignature Language="F#" Value="Animated = 2" Usage="System.Windows.Media.TextHintingMode.Animated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextHintingMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Media.TextHintingMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextHintingMode.Fixed" />
       <MemberSignature Language="VB.NET" Value="Fixed" />
       <MemberSignature Language="C++ CLI" Value="Fixed" />
+      <MemberSignature Language="F#" Value="Fixed = 1" Usage="System.Windows.Media.TextHintingMode.Fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

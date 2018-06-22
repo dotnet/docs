@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadInterruptedException" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadInterruptedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThreadInterruptedException : SystemException" />
+  <TypeSignature Language="F#" Value="type ThreadInterruptedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadInterruptedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : string -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ThreadInterruptedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadInterruptedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : string * Exception -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

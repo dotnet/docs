@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CatalogExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module CatalogExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class CatalogExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type CatalogExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Hosting.CompositionService CreateCompositionService(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog composablePartCatalog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExtensions.CreateCompositionService(System.ComponentModel.Composition.Primitives.ComposablePartCatalog)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Hosting::CompositionService ^ CreateCompositionService(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ composablePartCatalog);" />
+      <MemberSignature Language="F#" Value="static member CreateCompositionService : System.ComponentModel.Composition.Primitives.ComposablePartCatalog -&gt; System.ComponentModel.Composition.Hosting.CompositionService" Usage="System.ComponentModel.Composition.Hosting.CatalogExtensions.CreateCompositionService composablePartCatalog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

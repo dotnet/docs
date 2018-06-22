@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.TrackingServices" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingServices" />
+  <TypeSignature Language="F#" Value="type TrackingServices = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Services.TrackingServices.RegisteredHandlers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RegisteredHandlers As ITrackingHandler()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property cli::array &lt;System::Runtime::Remoting::Services::ITrackingHandler ^&gt; ^ RegisteredHandlers { cli::array &lt;System::Runtime::Remoting::Services::ITrackingHandler ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegisteredHandlers : System.Runtime.Remoting.Services.ITrackingHandler[]" Usage="System.Runtime.Remoting.Services.TrackingServices.RegisteredHandlers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.TrackingServices.RegisterTrackingHandler(System.Runtime.Remoting.Services.ITrackingHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterTrackingHandler (handler As ITrackingHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterTrackingHandler(System::Runtime::Remoting::Services::ITrackingHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RegisterTrackingHandler : System.Runtime.Remoting.Services.ITrackingHandler -&gt; unit" Usage="System.Runtime.Remoting.Services.TrackingServices.RegisterTrackingHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.TrackingServices.UnregisterTrackingHandler(System.Runtime.Remoting.Services.ITrackingHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterTrackingHandler (handler As ITrackingHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterTrackingHandler(System::Runtime::Remoting::Services::ITrackingHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member UnregisterTrackingHandler : System.Runtime.Remoting.Services.ITrackingHandler -&gt; unit" Usage="System.Runtime.Remoting.Services.TrackingServices.UnregisterTrackingHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Underline" />
   <TypeSignature Language="VB.NET" Value="Public Class Underline&#xA;Inherits Span" />
   <TypeSignature Language="C++ CLI" Value="public ref class Underline : System::Windows::Documents::Span" />
+  <TypeSignature Language="F#" Value="type Underline = class&#xA;    inherit Span" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Underline.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Underline(System::Windows::Documents::Inline ^ childInline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Underline : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Underline" Usage="new System.Windows.Documents.Underline childInline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Underline.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Underline(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Underline : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Underline" Usage="new System.Windows.Documents.Underline (childInline, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Underline.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Underline(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Underline : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Underline" Usage="new System.Windows.Documents.Underline (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

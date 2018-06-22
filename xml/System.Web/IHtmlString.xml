@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IHtmlString" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHtmlString" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHtmlString" />
+  <TypeSignature Language="F#" Value="type IHtmlString = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHtmlString.ToHtmlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToHtmlString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToHtmlString();" />
+      <MemberSignature Language="F#" Value="abstract member ToHtmlString : unit -&gt; string" Usage="iHtmlString.ToHtmlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

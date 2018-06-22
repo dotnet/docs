@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.ErrorDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.ErrorDelegate(errorNumber As Integer, ByRef description As String, scode As Integer, source As String, helpFile As String, helpContext As Integer, ByRef cancelDisplay As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::ErrorDelegate(int errorNumber, System::String ^ % description, int scode, System::String ^ source, System::String ^ helpFile, int helpContext, bool % cancelDisplay);" />
+  <TypeSignature Language="F#" Value="type ADODC.ErrorDelegate = delegate of int *  * int * string * string * int *  -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

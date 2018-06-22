@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Resolvers.XmlKnownDtds" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlKnownDtds" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlKnownDtds" />
+  <TypeSignature Language="F#" Value="type XmlKnownDtds = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Resolvers.XmlKnownDtds.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 65535" Usage="System.Xml.Resolvers.XmlKnownDtds.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Resolvers.XmlKnownDtds.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Resolvers.XmlKnownDtds.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Resolvers.XmlKnownDtds.Rss091" />
       <MemberSignature Language="VB.NET" Value="Rss091" />
       <MemberSignature Language="C++ CLI" Value="Rss091" />
+      <MemberSignature Language="F#" Value="Rss091 = 2" Usage="System.Xml.Resolvers.XmlKnownDtds.Rss091" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Resolvers.XmlKnownDtds.Xhtml10" />
       <MemberSignature Language="VB.NET" Value="Xhtml10" />
       <MemberSignature Language="C++ CLI" Value="Xhtml10" />
+      <MemberSignature Language="F#" Value="Xhtml10 = 1" Usage="System.Xml.Resolvers.XmlKnownDtds.Xhtml10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

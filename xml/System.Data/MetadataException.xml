@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MetadataException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataException&#xA;Inherits EntityException" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataException sealed : System::Data::EntityException" />
+  <TypeSignature Language="F#" Value="type MetadataException = class&#xA;    inherit EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MetadataException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.MetadataException : string -&gt; System.Data.MetadataException" Usage="new System.Data.MetadataException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MetadataException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.MetadataException : string * Exception -&gt; System.Data.MetadataException" Usage="new System.Data.MetadataException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

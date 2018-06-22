@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.ServiceBusyException" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceBusyException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceBusyException : Exception" />
+  <TypeSignature Language="F#" Value="type ServiceBusyException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceBusyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.ServiceBusyException : string -&gt; System.IdentityModel.Selectors.ServiceBusyException" Usage="new System.IdentityModel.Selectors.ServiceBusyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceBusyException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.ServiceBusyException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Selectors.ServiceBusyException" Usage="new System.IdentityModel.Selectors.ServiceBusyException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceBusyException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.ServiceBusyException : string * Exception -&gt; System.IdentityModel.Selectors.ServiceBusyException" Usage="new System.IdentityModel.Selectors.ServiceBusyException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>

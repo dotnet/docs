@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpFailedRecipientException" />
   <TypeSignature Language="VB.NET" Value="Public Class SmtpFailedRecipientException&#xA;Inherits SmtpException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmtpFailedRecipientException : System::Net::Mail::SmtpException" />
+  <TypeSignature Language="F#" Value="type SmtpFailedRecipientException = class&#xA;    inherit SmtpException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : string -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Net.Mail.SmtpStatusCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As SmtpStatusCode, failedRecipient As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientException(System::Net::Mail::SmtpStatusCode statusCode, System::String ^ failedRecipient);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : System.Net.Mail.SmtpStatusCode * string -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException (statusCode, failedRecipient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : string * Exception -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Net.Mail.SmtpStatusCode,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As SmtpStatusCode, failedRecipient As String, serverResponse As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientException(System::Net::Mail::SmtpStatusCode statusCode, System::String ^ failedRecipient, System::String ^ serverResponse);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : System.Net.Mail.SmtpStatusCode * string * string -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException (statusCode, failedRecipient, serverResponse)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, failedRecipient As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientException(System::String ^ message, System::String ^ failedRecipient, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : string * string * Exception -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException (message, failedRecipient, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,13 +256,14 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SmtpFailedRecipientException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SmtpFailedRecipientException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="C#" Value="protected SmtpFailedRecipientException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SmtpFailedRecipientException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.Mail.SmtpFailedRecipientException" Usage="new System.Net.Mail.SmtpFailedRecipientException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpFailedRecipientException.FailedRecipient" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FailedRecipient As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FailedRecipient { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FailedRecipient : string" Usage="System.Net.Mail.SmtpFailedRecipientException.FailedRecipient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -322,6 +330,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="smtpFailedRecipientException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

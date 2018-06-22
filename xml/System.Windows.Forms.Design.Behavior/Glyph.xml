@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.Glyph" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Glyph" />
   <TypeSignature Language="C++ CLI" Value="public ref class Glyph abstract" />
+  <TypeSignature Language="F#" Value="type Glyph = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Glyph.#ctor(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Glyph(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.Glyph : System.Windows.Forms.Design.Behavior.Behavior -&gt; System.Windows.Forms.Design.Behavior.Glyph" Usage="new System.Windows.Forms.Design.Behavior.Glyph behavior" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Glyph.Behavior" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Behavior As Behavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Design::Behavior::Behavior ^ Behavior { System::Windows::Forms::Design::Behavior::Behavior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Behavior : System.Windows.Forms.Design.Behavior.Behavior" Usage="System.Windows.Forms.Design.Behavior.Glyph.Behavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Glyph.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.Design.Behavior.Glyph.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Glyph.GetHitTest(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHitTest (p As Point) As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Forms::Cursor ^ GetHitTest(System::Drawing::Point p);" />
+      <MemberSignature Language="F#" Value="abstract member GetHitTest : System.Drawing.Point -&gt; System.Windows.Forms.Cursor" Usage="glyph.GetHitTest p" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Glyph.Paint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Paint (pe As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Paint(System::Windows::Forms::PaintEventArgs ^ pe);" />
+      <MemberSignature Language="F#" Value="abstract member Paint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="glyph.Paint pe" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Glyph.SetBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="member this.SetBehavior : System.Windows.Forms.Design.Behavior.Behavior -&gt; unit" Usage="glyph.SetBehavior behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

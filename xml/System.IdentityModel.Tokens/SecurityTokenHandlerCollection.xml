@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenHandlerCollection&#xA;Inherits Collection(Of SecurityTokenHandler)" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenHandlerCollection : System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::SecurityTokenHandler ^&gt;" />
+  <TypeSignature Language="F#" Value="type SecurityTokenHandlerCollection = class&#xA;    inherit Collection&lt;SecurityTokenHandler&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SecurityTokenHandler})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handlers As IEnumerable(Of SecurityTokenHandler))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerCollection(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SecurityTokenHandler ^&gt; ^ handlers);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection : seq&lt;System.IdentityModel.Tokens.SecurityTokenHandler&gt; -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection handlers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As SecurityTokenHandlerConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerCollection(System::IdentityModel::Tokens::SecurityTokenHandlerConfiguration ^ configuration);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection : System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection configuration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SecurityTokenHandler},System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handlers As IEnumerable(Of SecurityTokenHandler), configuration As SecurityTokenHandlerConfiguration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerCollection(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SecurityTokenHandler ^&gt; ^ handlers, System::IdentityModel::Tokens::SecurityTokenHandlerConfiguration ^ configuration);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection : seq&lt;System.IdentityModel.Tokens.SecurityTokenHandler&gt; * System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="new System.IdentityModel.Tokens.SecurityTokenHandlerCollection (handlers, configuration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.AddOrReplace(System.IdentityModel.Tokens.SecurityTokenHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOrReplace (handler As SecurityTokenHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOrReplace(System::IdentityModel::Tokens::SecurityTokenHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="member this.AddOrReplace : System.IdentityModel.Tokens.SecurityTokenHandler -&gt; unit" Usage="securityTokenHandlerCollection.AddOrReplace handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadKeyIdentifierClause (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.CanReadKeyIdentifierClause : System.Xml.XmlReader -&gt; bool" Usage="securityTokenHandlerCollection.CanReadKeyIdentifierClause reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CanReadKeyIdentifierClauseCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CanReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member CanReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; bool&#xA;override this.CanReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; bool" Usage="securityTokenHandlerCollection.CanReadKeyIdentifierClauseCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadToken (tokenString As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadToken(System::String ^ tokenString);" />
+      <MemberSignature Language="F#" Value="member this.CanReadToken : string -&gt; bool" Usage="securityTokenHandlerCollection.CanReadToken tokenString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadToken (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadToken(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.CanReadToken : System.Xml.XmlReader -&gt; bool" Usage="securityTokenHandlerCollection.CanReadToken reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanWriteToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanWriteToken (token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanWriteToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="member this.CanWriteToken : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityTokenHandlerCollection.CanWriteToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="securityTokenHandlerCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -328,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Configuration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As SecurityTokenHandlerConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandlerConfiguration ^ Configuration { System::IdentityModel::Tokens::SecurityTokenHandlerConfiguration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Configuration : System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Configuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultSecurityTokenHandlerCollection () As SecurityTokenHandlerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ CreateDefaultSecurityTokenHandlerCollection();" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultSecurityTokenHandlerCollection : unit -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -378,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection(System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultSecurityTokenHandlerCollection (configuration As SecurityTokenHandlerConfiguration) As SecurityTokenHandlerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ CreateDefaultSecurityTokenHandlerCollection(System::IdentityModel::Tokens::SecurityTokenHandlerConfiguration ^ configuration);" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultSecurityTokenHandlerCollection : System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection configuration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -402,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateToken(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateToken (tokenDescriptor As SecurityTokenDescriptor) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ CreateToken(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
+      <MemberSignature Language="F#" Value="member this.CreateToken : System.IdentityModel.Tokens.SecurityTokenDescriptor -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenHandlerCollection.CreateToken tokenDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -426,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.InsertItem(System.Int32,System.IdentityModel.Tokens.SecurityTokenHandler)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As SecurityTokenHandler)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::IdentityModel::Tokens::SecurityTokenHandler ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.IdentityModel.Tokens.SecurityTokenHandler -&gt; unit" Usage="securityTokenHandlerCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -460,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(token As SecurityToken) As SecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandler ^ default[System::IdentityModel::Tokens::SecurityToken ^] { System::IdentityModel::Tokens::SecurityTokenHandler ^ get(System::IdentityModel::Tokens::SecurityToken ^ token); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.IdentityModel.Tokens.SecurityToken) : System.IdentityModel.Tokens.SecurityTokenHandler" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -484,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(tokenTypeIdentifier As String) As SecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandler ^ default[System::String ^] { System::IdentityModel::Tokens::SecurityTokenHandler ^ get(System::String ^ tokenTypeIdentifier); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.IdentityModel.Tokens.SecurityTokenHandler" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -508,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(tokenType As Type) As SecurityTokenHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandler ^ default[Type ^] { System::IdentityModel::Tokens::SecurityTokenHandler ^ get(Type ^ tokenType); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : System.IdentityModel.Tokens.SecurityTokenHandler" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -532,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadKeyIdentifierClause (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadKeyIdentifierClause : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="securityTokenHandlerCollection.ReadKeyIdentifierClause reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -556,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadKeyIdentifierClauseCore (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause&#xA;override this.ReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="securityTokenHandlerCollection.ReadKeyIdentifierClauseCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -589,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ReadToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadToken (tokenString As String) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::String ^ tokenString);" />
+      <MemberSignature Language="F#" Value="member this.ReadToken : string -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenHandlerCollection.ReadToken tokenString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -613,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadToken (reader As XmlReader) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.ReadToken : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenHandlerCollection.ReadToken reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -637,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="securityTokenHandlerCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -660,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.SetItem(System.Int32,System.IdentityModel.Tokens.SecurityTokenHandler)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As SecurityTokenHandler)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::IdentityModel::Tokens::SecurityTokenHandler ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.IdentityModel.Tokens.SecurityTokenHandler -&gt; unit" Usage="securityTokenHandlerCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -685,6 +710,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.TokenTypeIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenTypeIdentifiers As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ TokenTypeIdentifiers { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenTypeIdentifiers : seq&lt;string&gt;" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.TokenTypeIdentifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -705,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.TokenTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ TokenTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenTypes : seq&lt;Type&gt;" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollection.TokenTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -725,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="member this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="securityTokenHandlerCollection.ValidateToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -749,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.WriteKeyIdentifierClause(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteKeyIdentifierClause (writer As XmlWriter, keyIdentifierClause As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteKeyIdentifierClause(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="member this.WriteKeyIdentifierClause : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="securityTokenHandlerCollection.WriteKeyIdentifierClause (writer, keyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -774,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.WriteKeyIdentifierClauseCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteKeyIdentifierClauseCore (writer As XmlWriter, keyIdentifierClause As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteKeyIdentifierClauseCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="abstract member WriteKeyIdentifierClauseCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit&#xA;override this.WriteKeyIdentifierClauseCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="securityTokenHandlerCollection.WriteKeyIdentifierClauseCore (writer, keyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -808,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.WriteToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteToken (token As SecurityToken) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ WriteToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="member this.WriteToken : System.IdentityModel.Tokens.SecurityToken -&gt; string" Usage="securityTokenHandlerCollection.WriteToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -835,6 +866,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="member this.WriteToken : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="securityTokenHandlerCollection.WriteToken (writer, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexHttpBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexHttpBindingElement&#xA;Inherits MexBindingElement(Of WSHttpBinding)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MexHttpBindingElement : System::ServiceModel::Configuration::MexBindingElement&lt;System::ServiceModel::WSHttpBinding ^&gt;" />
+  <TypeSignature Language="F#" Value="type MexHttpBindingElement = class&#xA;    inherit MexBindingElement&lt;WSHttpBinding&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexHttpBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MexHttpBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.MexHttpBindingElement : string -&gt; System.ServiceModel.Configuration.MexHttpBindingElement" Usage="new System.ServiceModel.Configuration.MexHttpBindingElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

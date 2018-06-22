@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox.ObjectCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckedListBox.ObjectCollection&#xA;Inherits ListBox.ObjectCollection" />
   <TypeSignature Language="C++ CLI" Value="public: ref class CheckedListBox::ObjectCollection : System::Windows::Forms::ListBox::ObjectCollection" />
+  <TypeSignature Language="F#" Value="type CheckedListBox.ObjectCollection = class&#xA;    inherit ListBox.ObjectCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.ObjectCollection.#ctor(System.Windows.Forms.CheckedListBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As CheckedListBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectCollection(System::Windows::Forms::CheckedListBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.CheckedListBox.ObjectCollection : System.Windows.Forms.CheckedListBox -&gt; System.Windows.Forms.CheckedListBox.ObjectCollection" Usage="new System.Windows.Forms.CheckedListBox.ObjectCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.ObjectCollection.Add(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As Object, isChecked As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Object ^ item, bool isChecked);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj * bool -&gt; int" Usage="objectCollection.Add (item, isChecked)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.ObjectCollection.Add(System.Object,System.Windows.Forms.CheckState)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As Object, check As CheckState) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Object ^ item, System::Windows::Forms::CheckState check);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj * System.Windows.Forms.CheckState -&gt; int" Usage="objectCollection.Add (item, check)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

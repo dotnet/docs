@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListDecoration" />
   <TypeSignature Language="VB.NET" Value="Public Enum ListDecoration" />
   <TypeSignature Language="C++ CLI" Value="public enum class ListDecoration" />
+  <TypeSignature Language="F#" Value="type ListDecoration = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListDecoration.Bulleted" />
       <MemberSignature Language="VB.NET" Value="Bulleted" />
       <MemberSignature Language="C++ CLI" Value="Bulleted" />
+      <MemberSignature Language="F#" Value="Bulleted = 1" Usage="System.Web.UI.MobileControls.ListDecoration.Bulleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListDecoration.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.MobileControls.ListDecoration.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListDecoration.Numbered" />
       <MemberSignature Language="VB.NET" Value="Numbered" />
       <MemberSignature Language="C++ CLI" Value="Numbered" />
+      <MemberSignature Language="F#" Value="Numbered = 2" Usage="System.Web.UI.MobileControls.ListDecoration.Numbered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

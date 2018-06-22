@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.IQueryable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IQueryable(Of Out T)&#xA;Implements IEnumerable(Of Out T), IQueryable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IQueryable : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Linq::IQueryable" />
+  <TypeSignature Language="F#" Value="type IQueryable&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IQueryable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

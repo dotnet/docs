@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.Documentation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Documentation&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class Documentation sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type Documentation = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Documentation.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.Documentation.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Documentation.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Data.Metadata.Edm.Documentation.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Documentation.LongDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LongDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LongDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LongDescription : string" Usage="System.Data.Metadata.Edm.Documentation.LongDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.Documentation.Summary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Summary As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Summary { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Summary : string" Usage="System.Data.Metadata.Edm.Documentation.Summary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.Documentation.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="documentation.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

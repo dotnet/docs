@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PolicyConversionContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PolicyConversionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolicyConversionContext abstract" />
+  <TypeSignature Language="F#" Value="type PolicyConversionContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PolicyConversionContext(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.PolicyConversionContext : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Description.PolicyConversionContext" Usage="new System.ServiceModel.Description.PolicyConversionContext endpoint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.PolicyConversionContext.BindingElements" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BindingElements As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::BindingElementCollection ^ BindingElements { System::ServiceModel::Channels::BindingElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElements : System.ServiceModel.Channels.BindingElementCollection" Usage="System.ServiceModel.Description.PolicyConversionContext.BindingElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.PolicyConversionContext.Contract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As ContractDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ContractDescription ^ Contract { System::ServiceModel::Description::ContractDescription ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.PolicyConversionContext.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBindingAssertions () As PolicyAssertionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::PolicyAssertionCollection ^ GetBindingAssertions();" />
+      <MemberSignature Language="F#" Value="abstract member GetBindingAssertions : unit -&gt; System.ServiceModel.Description.PolicyAssertionCollection" Usage="policyConversionContext.GetBindingAssertions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions(System.ServiceModel.Description.FaultDescription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFaultBindingAssertions (fault As FaultDescription) As PolicyAssertionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::PolicyAssertionCollection ^ GetFaultBindingAssertions(System::ServiceModel::Description::FaultDescription ^ fault);" />
+      <MemberSignature Language="F#" Value="abstract member GetFaultBindingAssertions : System.ServiceModel.Description.FaultDescription -&gt; System.ServiceModel.Description.PolicyAssertionCollection" Usage="policyConversionContext.GetFaultBindingAssertions fault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions(System.ServiceModel.Description.MessageDescription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMessageBindingAssertions (message As MessageDescription) As PolicyAssertionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::PolicyAssertionCollection ^ GetMessageBindingAssertions(System::ServiceModel::Description::MessageDescription ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member GetMessageBindingAssertions : System.ServiceModel.Description.MessageDescription -&gt; System.ServiceModel.Description.PolicyAssertionCollection" Usage="policyConversionContext.GetMessageBindingAssertions message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOperationBindingAssertions (operation As OperationDescription) As PolicyAssertionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::PolicyAssertionCollection ^ GetOperationBindingAssertions(System::ServiceModel::Description::OperationDescription ^ operation);" />
+      <MemberSignature Language="F#" Value="abstract member GetOperationBindingAssertions : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Description.PolicyAssertionCollection" Usage="policyConversionContext.GetOperationBindingAssertions operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

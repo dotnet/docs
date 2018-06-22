@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValidationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationAttribute abstract : Attribute" />
+  <TypeSignature Language="F#" Value="type ValidationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.#ctor(System.Func{System.String})" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (errorMessageAccessor As Func(Of String))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValidationAttribute(Func&lt;System::String ^&gt; ^ errorMessageAccessor);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationAttribute : Func&lt;string&gt; -&gt; System.ComponentModel.DataAnnotations.ValidationAttribute" Usage="new System.ComponentModel.DataAnnotations.ValidationAttribute errorMessageAccessor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (errorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValidationAttribute(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationAttribute : string -&gt; System.ComponentModel.DataAnnotations.ValidationAttribute" Usage="new System.ComponentModel.DataAnnotations.ValidationAttribute errorMessage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string with get, set" Usage="System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorMessageResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessageResourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessageResourceName : string with get, set" Usage="System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorMessageResourceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ErrorMessageResourceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessageResourceType : Type with get, set" Usage="System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ErrorMessageString As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ErrorMessageString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessageString : string" Usage="System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FormatErrorMessage (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ FormatErrorMessage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member FormatErrorMessage : string -&gt; string&#xA;override this.FormatErrorMessage : string -&gt; string" Usage="validationAttribute.FormatErrorMessage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.DataAnnotations.ValidationResult GetValidationResult(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::DataAnnotations::ValidationResult ^ GetValidationResult(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
+      <MemberSignature Language="F#" Value="member this.GetValidationResult : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; System.ComponentModel.DataAnnotations.ValidationResult" Usage="validationAttribute.GetValidationResult (value, validationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IsValid : obj -&gt; bool&#xA;override this.IsValid : obj -&gt; bool" Usage="validationAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -386,6 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.DataAnnotations.ValidationResult IsValid(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::DataAnnotations::ValidationResult ^ IsValid(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
+      <MemberSignature Language="F#" Value="abstract member IsValid : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; System.ComponentModel.DataAnnotations.ValidationResult&#xA;override this.IsValid : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; System.ComponentModel.DataAnnotations.ValidationResult" Usage="validationAttribute.IsValid (value, validationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -419,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationAttribute.RequiresValidationContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresValidationContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresValidationContext { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresValidationContext : bool" Usage="System.ComponentModel.DataAnnotations.ValidationAttribute.RequiresValidationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -455,6 +467,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
+      <MemberSignature Language="F#" Value="member this.Validate : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; unit" Usage="validationAttribute.Validate (value, validationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -494,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate (value As Object, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Object ^ value, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Validate : obj * string -&gt; unit" Usage="validationAttribute.Validate (value, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

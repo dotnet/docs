@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.WriteLine" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WriteLine&#xA;Inherits CodeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class WriteLine sealed : System::Activities::CodeActivity" />
+  <TypeSignature Language="F#" Value="type WriteLine = class&#xA;    inherit CodeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.WriteLine.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="writeLine.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.WriteLine.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As CodeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; unit" Usage="writeLine.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.WriteLine.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Text { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Statements.WriteLine.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.WriteLine.TextWriter" />
       <MemberSignature Language="VB.NET" Value="Public Property TextWriter As InArgument(Of TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ TextWriter { System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextWriter : System.Activities.InArgument&lt;System.IO.TextWriter&gt; with get, set" Usage="System.Activities.Statements.WriteLine.TextWriter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

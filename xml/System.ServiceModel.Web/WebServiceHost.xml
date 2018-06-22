@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class WebServiceHost&#xA;Inherits ServiceHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceHost : System::ServiceModel::ServiceHost" />
+  <TypeSignature Language="F#" Value="type WebServiceHost = class&#xA;    inherit ServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.#ctor(System.Object,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (singletonInstance As Object, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceHost(System::Object ^ singletonInstance, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebServiceHost : obj * Uri[] -&gt; System.ServiceModel.Web.WebServiceHost" Usage="new System.ServiceModel.Web.WebServiceHost (singletonInstance, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceHost(Type ^ serviceType, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebServiceHost : Type * Uri[] -&gt; System.ServiceModel.Web.WebServiceHost" Usage="new System.ServiceModel.Web.WebServiceHost (serviceType, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.OnOpening" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpening ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpening();" />
+      <MemberSignature Language="F#" Value="override this.OnOpening : unit -&gt; unit" Usage="webServiceHost.OnOpening " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

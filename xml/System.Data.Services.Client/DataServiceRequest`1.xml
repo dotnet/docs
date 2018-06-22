@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceRequest(Of TElement)&#xA;Inherits DataServiceRequest" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA;public ref class DataServiceRequest sealed : System::Data::Services::Client::DataServiceRequest" />
+  <TypeSignature Language="F#" Value="type DataServiceRequest&lt;'Element&gt; = class&#xA;    inherit DataServiceRequest" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -131,6 +132,7 @@ catch (DataServiceRequestException e)
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceRequest`1.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requestUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceRequest(Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceRequest&lt;'Element&gt; : Uri -&gt; System.Data.Services.Client.DataServiceRequest&lt;'Element&gt;" Usage="new System.Data.Services.Client.DataServiceRequest&lt;'Element&gt; requestUri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -152,6 +154,7 @@ catch (DataServiceRequestException e)
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest`1.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Services.Client.DataServiceRequest&lt;'Element&gt;.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -173,6 +176,7 @@ catch (DataServiceRequestException e)
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest`1.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Data.Services.Client.DataServiceRequest&lt;'Element&gt;.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum DragAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class DragAction" />
+  <TypeSignature Language="F#" Value="type DragAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 2" Usage="System.Windows.Forms.DragAction.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 0" Usage="System.Windows.Forms.DragAction.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Drop" />
       <MemberSignature Language="VB.NET" Value="Drop" />
       <MemberSignature Language="C++ CLI" Value="Drop" />
+      <MemberSignature Language="F#" Value="Drop = 1" Usage="System.Windows.Forms.DragAction.Drop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

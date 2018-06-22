@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ToolZone&#xA;Inherits WebZone&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolZone abstract : System::Web::UI::WebControls::WebParts::WebZone, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type ToolZone = class&#xA;    inherit WebZone&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (associatedDisplayModes As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolZone(System::Collections::ICollection ^ associatedDisplayModes);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ToolZone : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.ToolZone" Usage="new System.Web.UI.WebControls.WebParts.ToolZone associatedDisplayModes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (associatedDisplayMode As WebPartDisplayMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolZone(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ associatedDisplayMode);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ToolZone : System.Web.UI.WebControls.WebParts.WebPartDisplayMode -&gt; System.Web.UI.WebControls.WebParts.ToolZone" Usage="new System.Web.UI.WebControls.WebParts.ToolZone associatedDisplayMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedDisplayModes As WebPartDisplayModeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ AssociatedDisplayModes { System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedDisplayModes : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" Usage="System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.Close" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="toolZone.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Display As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Display { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Display : bool" Usage="System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditUIStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ EditUIStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditUIStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderCloseVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ HeaderCloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderCloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderVerbStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ HeaderVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstructionTextStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ InstructionTextStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionTextStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -506,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabelStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ LabelStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LabelStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -540,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="toolZone.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -564,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayModeChanged (sender As Object, e As WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayModeChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartDisplayModeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDisplayModeChanged : obj * System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit&#xA;override this.OnDisplayModeChanged : obj * System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit" Usage="toolZone.OnDisplayModeChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -589,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="toolZone.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -612,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedWebPartChanged (sender As Object, e As WebPartEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedWebPartChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedWebPartChanged : obj * System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnSelectedWebPartChanged : obj * System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="toolZone.OnSelectedWebPartChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -637,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="toolZone.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -670,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderFooter(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderFooter (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderFooter(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderFooter : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderFooter writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -693,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHeader (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderHeader(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderHeader : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderVerb (writer As HtmlTextWriter, verb As WebPartVerb)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderVerb(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::WebPartVerb ^ verb);" />
+      <MemberSignature Language="F#" Value="abstract member RenderVerb : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; unit&#xA;override this.RenderVerb : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; unit" Usage="toolZone.RenderVerb (writer, verb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -757,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderVerbs (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderVerbs(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderVerbs writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -781,6 +802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="toolZone.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -829,6 +851,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="toolZone.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -850,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

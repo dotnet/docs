@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainStatus" />
   <TypeSignature Language="VB.NET" Value="Public Structure X509ChainStatus" />
   <TypeSignature Language="C++ CLI" Value="public value class X509ChainStatus" />
+  <TypeSignature Language="F#" Value="type X509ChainStatus = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As X509ChainStatusFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509ChainStatusFlags Status { System::Security::Cryptography::X509Certificates::X509ChainStatusFlags get(); void set(System::Security::Cryptography::X509Certificates::X509ChainStatusFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Security.Cryptography.X509Certificates.X509ChainStatusFlags with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainStatus.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.StatusInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusInformation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusInformation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusInformation : string with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainStatus.StatusInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

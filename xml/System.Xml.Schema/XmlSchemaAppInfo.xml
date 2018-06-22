@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAppInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAppInfo&#xA;Inherits XmlSchemaObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAppInfo : System::Xml::Schema::XmlSchemaObject" />
+  <TypeSignature Language="F#" Value="type XmlSchemaAppInfo = class&#xA;    inherit XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAppInfo.Markup" />
       <MemberSignature Language="VB.NET" Value="Public Property Markup As XmlNode()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlNode ^&gt; ^ Markup { cli::array &lt;System::Xml::XmlNode ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlNode ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Markup : System.Xml.XmlNode[] with get, set" Usage="System.Xml.Schema.XmlSchemaAppInfo.Markup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAppInfo.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Xml.Schema.XmlSchemaAppInfo.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

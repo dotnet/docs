@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ProgressBarAutomationPeer&#xA;Inherits RangeBaseAutomationPeer&#xA;Implements IRangeValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProgressBarAutomationPeer : System::Windows::Automation::Peers::RangeBaseAutomationPeer, System::Windows::Automation::Provider::IRangeValueProvider" />
+  <TypeSignature Language="F#" Value="type ProgressBarAutomationPeer = class&#xA;    inherit RangeBaseAutomationPeer&#xA;    interface IRangeValueProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ProgressBarAutomationPeer.#ctor(System.Windows.Controls.ProgressBar)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ProgressBar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProgressBarAutomationPeer(System::Windows::Controls::ProgressBar ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ProgressBarAutomationPeer : System.Windows.Controls.ProgressBar -&gt; System.Windows.Automation.Peers.ProgressBarAutomationPeer" Usage="new System.Windows.Automation.Peers.ProgressBarAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ProgressBarAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="progressBarAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ProgressBarAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="progressBarAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ProgressBarAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="progressBarAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IRangeValueProvider.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly</InterfaceMember>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#LargeChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LargeChange As Double Implements IRangeValueProvider.LargeChange" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.LargeChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange</InterfaceMember>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ProgressBarAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SmallChange" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SmallChange As Double Implements IRangeValueProvider.SmallChange" />
       <MemberSignature Language="C++ CLI" Value="property double System.Windows.Automation.Provider.IRangeValueProvider.SmallChange { double get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ProgressBarAutomationPeer.System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange</InterfaceMember>

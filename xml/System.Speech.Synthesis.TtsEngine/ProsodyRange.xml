@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyRange" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProsodyRange" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProsodyRange" />
+  <TypeSignature Language="F#" Value="type ProsodyRange = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.ExtraHigh" />
       <MemberSignature Language="VB.NET" Value="ExtraHigh" />
       <MemberSignature Language="C++ CLI" Value="ExtraHigh" />
+      <MemberSignature Language="F#" Value="ExtraHigh = 5" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.ExtraHigh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.ExtraLow" />
       <MemberSignature Language="VB.NET" Value="ExtraLow" />
       <MemberSignature Language="C++ CLI" Value="ExtraLow" />
+      <MemberSignature Language="F#" Value="ExtraLow = 1" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.ExtraLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 4" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 2" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRange.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 3" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRange.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

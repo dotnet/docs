@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.DirectoryNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryNotFoundException&#xA;Inherits IOException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryNotFoundException : System::IO::IOException" />
+  <TypeSignature Language="F#" Value="type DirectoryNotFoundException = class&#xA;    inherit IOException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.DirectoryNotFoundException : string -&gt; System.IO.DirectoryNotFoundException" Usage="new System.IO.DirectoryNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -156,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IO.DirectoryNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.DirectoryNotFoundException" Usage="new System.IO.DirectoryNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DirectoryNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.DirectoryNotFoundException : string * Exception -&gt; System.IO.DirectoryNotFoundException" Usage="new System.IO.DirectoryNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionStatus" />
+  <TypeSignature Language="F#" Value="type TransactionStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 2" Usage="System.Transactions.TransactionStatus.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Active" />
       <MemberSignature Language="VB.NET" Value="Active" />
       <MemberSignature Language="C++ CLI" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 0" Usage="System.Transactions.TransactionStatus.Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Committed" />
       <MemberSignature Language="VB.NET" Value="Committed" />
       <MemberSignature Language="C++ CLI" Value="Committed" />
+      <MemberSignature Language="F#" Value="Committed = 1" Usage="System.Transactions.TransactionStatus.Committed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.InDoubt" />
       <MemberSignature Language="VB.NET" Value="InDoubt" />
       <MemberSignature Language="C++ CLI" Value="InDoubt" />
+      <MemberSignature Language="F#" Value="InDoubt = 3" Usage="System.Transactions.TransactionStatus.InDoubt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

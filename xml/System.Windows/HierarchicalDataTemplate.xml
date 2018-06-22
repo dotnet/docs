@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.HierarchicalDataTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataTemplate&#xA;Inherits DataTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataTemplate : System::Windows::DataTemplate" />
+  <TypeSignature Language="F#" Value="type HierarchicalDataTemplate = class&#xA;    inherit DataTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.HierarchicalDataTemplate.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataType As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalDataTemplate(System::Object ^ dataType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.HierarchicalDataTemplate : obj -&gt; System.Windows.HierarchicalDataTemplate" Usage="new System.Windows.HierarchicalDataTemplate dataType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.AlternationCount" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternationCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlternationCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternationCount : int with get, set" Usage="System.Windows.HierarchicalDataTemplate.AlternationCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemBindingGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemBindingGroup As BindingGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingGroup ^ ItemBindingGroup { System::Windows::Data::BindingGroup ^ get(); void set(System::Windows::Data::BindingGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemBindingGroup : System.Windows.Data.BindingGroup with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemBindingGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ItemContainerStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemContainerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyleSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerStyleSelector As StyleSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StyleSelector ^ ItemContainerStyleSelector { System::Windows::Controls::StyleSelector ^ get(); void set(System::Windows::Controls::StyleSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerStyleSelector : System.Windows.Controls.StyleSelector with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemContainerStyleSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemsSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As BindingBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingBase ^ ItemsSource { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemsSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemStringFormat : string with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ItemTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ItemTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.HierarchicalDataTemplate.ItemTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

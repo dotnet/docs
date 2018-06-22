@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Dictionary`2.ValueCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Dictionary(Of TKey, TValue).ValueCollection&#xA;Implements ICollection, ICollection(Of TValue), IEnumerable(Of TValue), IReadOnlyCollection(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="public: ref class Dictionary&lt;TKey, TValue&gt;::ValueCollection sealed : System::Collections::Generic::ICollection&lt;TValue&gt;, System::Collections::Generic::IEnumerable&lt;TValue&gt;, System::Collections::Generic::IReadOnlyCollection&lt;TValue&gt;, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Dictionary&lt;'Key, 'Value&gt;.ValueCollection = class&#xA;    interface ICollection&lt;'Value&gt;&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'Value&gt;&#xA;    interface seq&lt;'Value&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.ValueCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As Dictionary(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueCollection(System::Collections::Generic::Dictionary&lt;TKey, TValue&gt; ^ dictionary);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection : System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt; -&gt; System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection" Usage="new System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection dictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.ValueCollection.CopyTo(`1[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TValue(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TValue&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'Value[] * int -&gt; unit&#xA;override this.CopyTo : 'Value[] * int -&gt; unit" Usage="valueCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.ValueCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.ValueCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Dictionary(Of TKey, TValue).ValueCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Dictionary&lt;TKey, TValue&gt;::ValueCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection.Enumerator" Usage="valueCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -402,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#Generic#ICollection&lt;TValue&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TValue).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;TValue&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection.System.Collections.Generic.ICollection&lt;TValue&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -626,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -676,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.ValueCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.ErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ErrorEventHandler(sender As Object, e As ErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ErrorEventHandler(System::Object ^ sender, ErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ErrorEventHandler = delegate of obj * ErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

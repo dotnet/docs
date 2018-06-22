@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeDomLocalizationProvider&#xA;Implements IDesignerSerializationProvider, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDomLocalizationProvider sealed : IDisposable, System::ComponentModel::Design::Serialization::IDesignerSerializationProvider" />
+  <TypeSignature Language="F#" Value="type CodeDomLocalizationProvider = class&#xA;    interface IDisposable&#xA;    interface IDesignerSerializationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider, model As CodeDomLocalizationModel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomLocalizationProvider(IServiceProvider ^ provider, System::ComponentModel::Design::Serialization::CodeDomLocalizationModel model);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider : IServiceProvider * System.ComponentModel.Design.Serialization.CodeDomLocalizationModel -&gt; System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" Usage="new System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider (provider, model)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel,System.Globalization.CultureInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider, model As CodeDomLocalizationModel, supportedCultures As CultureInfo())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomLocalizationProvider(IServiceProvider ^ provider, System::ComponentModel::Design::Serialization::CodeDomLocalizationModel model, cli::array &lt;System::Globalization::CultureInfo ^&gt; ^ supportedCultures);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider : IServiceProvider * System.ComponentModel.Design.Serialization.CodeDomLocalizationModel * System.Globalization.CultureInfo[] -&gt; System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" Usage="new System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider (provider, model, supportedCultures)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="codeDomLocalizationProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

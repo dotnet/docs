@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ChtmlTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlTextWriter&#xA;Inherits Html32TextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlTextWriter : System::Web::UI::Html32TextWriter" />
+  <TypeSignature Language="F#" Value="type ChtmlTextWriter = class&#xA;    inherit Html32TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlTextWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ChtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.ChtmlTextWriter" Usage="new System.Web.UI.ChtmlTextWriter writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ChtmlTextWriter : System.IO.TextWriter * string -&gt; System.Web.UI.ChtmlTextWriter" Usage="new System.Web.UI.ChtmlTextWriter (writer, tabString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.AddRecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRecognizedAttribute (elementName As String, attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRecognizedAttribute(System::String ^ elementName, System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="abstract member AddRecognizedAttribute : string * string -&gt; unit&#xA;override this.AddRecognizedAttribute : string * string -&gt; unit" Usage="chtmlTextWriter.AddRecognizedAttribute (elementName, attributeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ChtmlTextWriter.GlobalSuppressedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property GlobalSuppressedAttributes As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ GlobalSuppressedAttributes { System::Collections::Hashtable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalSuppressedAttributes : System.Collections.Hashtable" Usage="System.Web.UI.ChtmlTextWriter.GlobalSuppressedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnAttributeRender (name As String, value As String, key As HtmlTextWriterAttribute) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterAttribute key);" />
+      <MemberSignature Language="F#" Value="override this.OnAttributeRender : string * string * System.Web.UI.HtmlTextWriterAttribute -&gt; bool" Usage="chtmlTextWriter.OnAttributeRender (name, value, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnStyleAttributeRender (name As String, value As String, key As HtmlTextWriterStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnStyleAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterStyle key);" />
+      <MemberSignature Language="F#" Value="override this.OnStyleAttributeRender : string * string * System.Web.UI.HtmlTextWriterStyle -&gt; bool" Usage="chtmlTextWriter.OnStyleAttributeRender (name, value, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnTagRender (name As String, key As HtmlTextWriterTag) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnTagRender(System::String ^ name, System::Web::UI::HtmlTextWriterTag key);" />
+      <MemberSignature Language="F#" Value="override this.OnTagRender : string * System.Web.UI.HtmlTextWriterTag -&gt; bool" Usage="chtmlTextWriter.OnTagRender (name, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ChtmlTextWriter.RecognizedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property RecognizedAttributes As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ RecognizedAttributes { System::Collections::Hashtable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecognizedAttributes : System.Collections.Hashtable" Usage="System.Web.UI.ChtmlTextWriter.RecognizedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.RemoveRecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveRecognizedAttribute (elementName As String, attributeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveRecognizedAttribute(System::String ^ elementName, System::String ^ attributeName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRecognizedAttribute : string * string -&gt; unit&#xA;override this.RemoveRecognizedAttribute : string * string -&gt; unit" Usage="chtmlTextWriter.RemoveRecognizedAttribute (elementName, attributeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ChtmlTextWriter.SuppressedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SuppressedAttributes As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ SuppressedAttributes { System::Collections::Hashtable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressedAttributes : System.Collections.Hashtable" Usage="System.Web.UI.ChtmlTextWriter.SuppressedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBreak();" />
+      <MemberSignature Language="F#" Value="override this.WriteBreak : unit -&gt; unit" Usage="chtmlTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ChtmlTextWriter.WriteEncodedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedText : string -&gt; unit" Usage="chtmlTextWriter.WriteEncodedText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -86,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" Usage="new System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="dataGridViewCellAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewCellAccessibleObject.GetChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="dataGridViewCellAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetFocused" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFocused () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetFocused();" />
+      <MemberSignature Language="F#" Value="override this.GetFocused : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewCellAccessibleObject.GetFocused " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetSelected" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSelected () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetSelected();" />
+      <MemberSignature Language="F#" Value="override this.GetSelected : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewCellAccessibleObject.GetSelected " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Help" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Help As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Help { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Help : string" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Help" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Navigate (navigationDirection As AccessibleNavigation) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navigationDirection);" />
+      <MemberSignature Language="F#" Value="override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewCellAccessibleObject.Navigate navigationDirection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -422,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" />
       <MemberSignature Language="VB.NET" Value="Public Property Owner As DataGridViewCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCell ^ Owner { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -445,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -501,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Select (flags As AccessibleSelection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Select(System::Windows::Forms::AccessibleSelection flags);" />
+      <MemberSignature Language="F#" Value="override this.Select : System.Windows.Forms.AccessibleSelection -&gt; unit" Usage="dataGridViewCellAccessibleObject.Select flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -576,6 +592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

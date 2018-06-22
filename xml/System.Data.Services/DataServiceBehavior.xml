@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceBehavior sealed" />
+  <TypeSignature Language="F#" Value="type DataServiceBehavior = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptCountRequests" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptCountRequests As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptCountRequests { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptCountRequests : bool with get, set" Usage="System.Data.Services.DataServiceBehavior.AcceptCountRequests" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptProjectionRequests" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptProjectionRequests As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptProjectionRequests { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptProjectionRequests : bool with get, set" Usage="System.Data.Services.DataServiceBehavior.AcceptProjectionRequests" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptReplaceFunctionInQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptReplaceFunctionInQuery As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptReplaceFunctionInQuery { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptReplaceFunctionInQuery : bool with get, set" Usage="System.Data.Services.DataServiceBehavior.AcceptReplaceFunctionInQuery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.InvokeInterceptorsOnLinkDelete" />
       <MemberSignature Language="VB.NET" Value="Public Property InvokeInterceptorsOnLinkDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvokeInterceptorsOnLinkDelete { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeInterceptorsOnLinkDelete : bool with get, set" Usage="System.Data.Services.DataServiceBehavior.InvokeInterceptorsOnLinkDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.MaxProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxProtocolVersion As DataServiceProtocolVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Common::DataServiceProtocolVersion MaxProtocolVersion { System::Data::Services::Common::DataServiceProtocolVersion get(); void set(System::Data::Services::Common::DataServiceProtocolVersion value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxProtocolVersion : System.Data.Services.Common.DataServiceProtocolVersion with get, set" Usage="System.Data.Services.DataServiceBehavior.MaxProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

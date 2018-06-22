@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileUpdatedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileUpdatedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProfileUpdatedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.#ctor(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowType As Type, profile As TrackingProfile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileUpdatedEventArgs(Type ^ workflowType, System::Workflow::Runtime::Tracking::TrackingProfile ^ profile);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs : Type * System.Workflow.Runtime.Tracking.TrackingProfile -&gt; System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" Usage="new System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs (workflowType, profile)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property TrackingProfile As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::TrackingProfile ^ TrackingProfile { System::Workflow::Runtime::Tracking::TrackingProfile ^ get(); void set(System::Workflow::Runtime::Tracking::TrackingProfile ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TrackingProfile : System.Workflow.Runtime.Tracking.TrackingProfile with get, set" Usage="System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.WorkflowType" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ WorkflowType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowType : Type with get, set" Usage="System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.WorkflowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

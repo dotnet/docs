@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.MultiPartWriter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MultiPartWriter&#xA;Inherits HtmlTextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultiPartWriter abstract : System::Web::UI::HtmlTextWriter" />
+  <TypeSignature Language="F#" Value="type MultiPartWriter = class&#xA;    inherit HtmlTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultiPartWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.MultiPartWriter : System.IO.TextWriter -&gt; System.Web.UI.MobileControls.Adapters.MultiPartWriter" Usage="new System.Web.UI.MobileControls.Adapters.MultiPartWriter writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.AddResource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResource (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.AddResource : string -&gt; unit" Usage="multiPartWriter.AddResource url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.AddResource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddResource (url As String, contentType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddResource(System::String ^ url, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : string * string -&gt; unit" Usage="multiPartWriter.AddResource (url, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.BeginFile(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginFile (url As String, contentType As String, charset As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginFile(System::String ^ url, System::String ^ contentType, System::String ^ charset);" />
+      <MemberSignature Language="F#" Value="abstract member BeginFile : string * string * string -&gt; unit" Usage="multiPartWriter.BeginFile (url, contentType, charset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.BeginResponse" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginResponse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginResponse();" />
+      <MemberSignature Language="F#" Value="abstract member BeginResponse : unit -&gt; unit" Usage="multiPartWriter.BeginResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.EndFile" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndFile ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndFile();" />
+      <MemberSignature Language="F#" Value="abstract member EndFile : unit -&gt; unit" Usage="multiPartWriter.EndFile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.EndResponse" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndResponse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndResponse();" />
+      <MemberSignature Language="F#" Value="abstract member EndResponse : unit -&gt; unit" Usage="multiPartWriter.EndResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.NewUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewUrl (filetype As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ NewUrl(System::String ^ filetype);" />
+      <MemberSignature Language="F#" Value="abstract member NewUrl : string -&gt; string&#xA;override this.NewUrl : string -&gt; string" Usage="multiPartWriter.NewUrl filetype" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.MultiPartWriter.SupportsMultiPart" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsMultiPart As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMultiPart { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsMultiPart : bool" Usage="System.Web.UI.MobileControls.Adapters.MultiPartWriter.SupportsMultiPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

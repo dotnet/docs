@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadExceptionEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ThreadExceptionEventHandler(sender As Object, e As ThreadExceptionEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ThreadExceptionEventHandler(System::Object ^ sender, ThreadExceptionEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ThreadExceptionEventHandler = delegate of obj * ThreadExceptionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

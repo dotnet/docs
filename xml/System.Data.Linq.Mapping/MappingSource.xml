@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MappingSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MappingSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class MappingSource abstract" />
+  <TypeSignature Language="F#" Value="type MappingSource = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.CreateModel(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateModel (dataContextType As Type) As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Linq::Mapping::MetaModel ^ CreateModel(Type ^ dataContextType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="mappingSource.CreateModel dataContextType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.GetModel(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModel (dataContextType As Type) As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Linq::Mapping::MetaModel ^ GetModel(Type ^ dataContextType);" />
+      <MemberSignature Language="F#" Value="member this.GetModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="mappingSource.GetModel dataContextType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

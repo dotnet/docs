@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingManagerDataErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BindingManagerDataErrorEventHandler(sender As Object, e As BindingManagerDataErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BindingManagerDataErrorEventHandler(System::Object ^ sender, BindingManagerDataErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BindingManagerDataErrorEventHandler = delegate of obj * BindingManagerDataErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

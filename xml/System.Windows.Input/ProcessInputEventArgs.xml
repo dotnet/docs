@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ProcessInputEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessInputEventArgs&#xA;Inherits NotifyInputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessInputEventArgs : System::Windows::Input::NotifyInputEventArgs" />
+  <TypeSignature Language="F#" Value="type ProcessInputEventArgs = class&#xA;    inherit NotifyInputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
       <MemberSignature Language="VB.NET" Value="Public Function PeekInput () As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PeekInput();" />
+      <MemberSignature Language="F#" Value="member this.PeekInput : unit -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PeekInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
       <MemberSignature Language="VB.NET" Value="Public Function PopInput () As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PopInput();" />
+      <MemberSignature Language="F#" Value="member this.PopInput : unit -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PopInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.StagingAreaInputItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function PushInput (input As StagingAreaInputItem) As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PushInput(System::Windows::Input::StagingAreaInputItem ^ input);" />
+      <MemberSignature Language="F#" Value="member this.PushInput : System.Windows.Input.StagingAreaInputItem -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PushInput input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.InputEventArgs,System.Windows.Input.StagingAreaInputItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function PushInput (input As InputEventArgs, promote As StagingAreaInputItem) As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PushInput(System::Windows::Input::InputEventArgs ^ input, System::Windows::Input::StagingAreaInputItem ^ promote);" />
+      <MemberSignature Language="F#" Value="member this.PushInput : System.Windows.Input.InputEventArgs * System.Windows.Input.StagingAreaInputItem -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PushInput (input, promote)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

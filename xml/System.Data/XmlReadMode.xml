@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.XmlReadMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlReadMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlReadMode" />
+  <TypeSignature Language="F#" Value="type XmlReadMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Data.XmlReadMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.DiffGram" />
       <MemberSignature Language="VB.NET" Value="DiffGram" />
       <MemberSignature Language="C++ CLI" Value="DiffGram" />
+      <MemberSignature Language="F#" Value="DiffGram = 4" Usage="System.Data.XmlReadMode.DiffGram" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.Fragment" />
       <MemberSignature Language="VB.NET" Value="Fragment" />
       <MemberSignature Language="C++ CLI" Value="Fragment" />
+      <MemberSignature Language="F#" Value="Fragment = 5" Usage="System.Data.XmlReadMode.Fragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.IgnoreSchema" />
       <MemberSignature Language="VB.NET" Value="IgnoreSchema" />
       <MemberSignature Language="C++ CLI" Value="IgnoreSchema" />
+      <MemberSignature Language="F#" Value="IgnoreSchema = 2" Usage="System.Data.XmlReadMode.IgnoreSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.InferSchema" />
       <MemberSignature Language="VB.NET" Value="InferSchema" />
       <MemberSignature Language="C++ CLI" Value="InferSchema" />
+      <MemberSignature Language="F#" Value="InferSchema = 3" Usage="System.Data.XmlReadMode.InferSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.InferTypedSchema" />
       <MemberSignature Language="VB.NET" Value="InferTypedSchema" />
       <MemberSignature Language="C++ CLI" Value="InferTypedSchema" />
+      <MemberSignature Language="F#" Value="InferTypedSchema = 6" Usage="System.Data.XmlReadMode.InferTypedSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.ReadSchema" />
       <MemberSignature Language="VB.NET" Value="ReadSchema" />
       <MemberSignature Language="C++ CLI" Value="ReadSchema" />
+      <MemberSignature Language="F#" Value="ReadSchema = 1" Usage="System.Data.XmlReadMode.ReadSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

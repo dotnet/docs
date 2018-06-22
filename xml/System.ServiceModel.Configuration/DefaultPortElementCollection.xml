@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.DefaultPortElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultPortElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of DefaultPortElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultPortElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::DefaultPortElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type DefaultPortElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;DefaultPortElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.DefaultPortElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="defaultPortElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeLinePragma" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeLinePragma" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeLinePragma" />
+  <TypeSignature Language="F#" Value="type CodeLinePragma = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLinePragma.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, lineNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLinePragma(System::String ^ fileName, int lineNumber);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeLinePragma : string * int -&gt; System.CodeDom.CodeLinePragma" Usage="new System.CodeDom.CodeLinePragma (fileName, lineNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLinePragma.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.CodeDom.CodeLinePragma.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLinePragma.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int with get, set" Usage="System.CodeDom.CodeLinePragma.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

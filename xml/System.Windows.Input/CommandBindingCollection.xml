@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandBindingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommandBindingCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandBindingCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type CommandBindingCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.#ctor(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandBindings As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandBindingCollection(System::Collections::IList ^ commandBindings);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.CommandBindingCollection : System.Collections.IList -&gt; System.Windows.Input.CommandBindingCollection" Usage="new System.Windows.Input.CommandBindingCollection commandBindings" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Input.CommandBinding commandBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.Add(System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Input::CommandBinding ^ commandBinding);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Input.CommandBinding -&gt; int" Usage="commandBindingCollection.Add commandBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.AddRange(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (collection As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::ICollection ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Collections.ICollection -&gt; unit" Usage="commandBindingCollection.AddRange collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="commandBindingCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -199,6 +204,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Input.CommandBinding commandBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.Contains(System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Input::CommandBinding ^ commandBinding);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Input.CommandBinding -&gt; bool" Usage="commandBindingCollection.Contains commandBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.CopyTo(System.Windows.Input.CommandBinding[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (commandBindings As CommandBinding(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Input::CommandBinding ^&gt; ^ commandBindings, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Input.CommandBinding[] * int -&gt; unit" Usage="commandBindingCollection.CopyTo (commandBindings, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Input.CommandBindingCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="commandBindingCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.IndexOf(System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CommandBinding) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Input::CommandBinding ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Input.CommandBinding -&gt; int" Usage="commandBindingCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Input.CommandBinding commandBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.Insert(System.Int32,System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Input::CommandBinding ^ commandBinding);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Input.CommandBinding -&gt; unit" Usage="commandBindingCollection.Insert (index, commandBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Input.CommandBindingCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Input.CommandBindingCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Input.CommandBindingCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -445,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CommandBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::CommandBinding ^ default[int] { System::Windows::Input::CommandBinding ^ get(int index); void set(int index, System::Windows::Input::CommandBinding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Input.CommandBinding with get, set" Usage="System.Windows.Input.CommandBindingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Input.CommandBinding commandBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.Remove(System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Input::CommandBinding ^ commandBinding);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Input.CommandBinding -&gt; unit" Usage="commandBindingCollection.Remove commandBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -493,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBindingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="commandBindingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -519,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Input.CommandBindingCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -722,6 +740,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBindingCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Input.CommandBindingCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

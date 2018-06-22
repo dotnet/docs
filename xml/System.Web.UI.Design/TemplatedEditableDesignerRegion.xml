@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplatedEditableDesignerRegion&#xA;Inherits EditableDesignerRegion" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplatedEditableDesignerRegion : System::Web::UI::Design::EditableDesignerRegion" />
+  <TypeSignature Language="F#" Value="type TemplatedEditableDesignerRegion = class&#xA;    inherit EditableDesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.TemplateDefinition templateDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedEditableDesignerRegion.#ctor(System.Web.UI.Design.TemplateDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplatedEditableDesignerRegion(System::Web::UI::Design::TemplateDefinition ^ templateDefinition);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplatedEditableDesignerRegion : System.Web.UI.Design.TemplateDefinition -&gt; System.Web.UI.Design.TemplatedEditableDesignerRegion" Usage="new System.Web.UI.Design.TemplatedEditableDesignerRegion templateDefinition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.IsSingleInstanceTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsSingleInstanceTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSingleInstanceTemplate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSingleInstanceTemplate : bool with get, set" Usage="System.Web.UI.Design.TemplatedEditableDesignerRegion.IsSingleInstanceTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.SupportsDataBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SupportsDataBinding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDataBinding { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsDataBinding : bool with get, set" Usage="System.Web.UI.Design.TemplatedEditableDesignerRegion.SupportsDataBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateDefinition As TemplateDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::TemplateDefinition ^ TemplateDefinition { System::Web::UI::Design::TemplateDefinition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateDefinition : System.Web.UI.Design.TemplateDefinition" Usage="System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerSerializationVisibilityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerSerializationVisibilityAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignerSerializationVisibilityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerSerializationVisibilityAttribute.#ctor(System.ComponentModel.DesignerSerializationVisibility)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visibility As DesignerSerializationVisibility)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerSerializationVisibilityAttribute(System::ComponentModel::DesignerSerializationVisibility visibility);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerSerializationVisibilityAttribute : System.ComponentModel.DesignerSerializationVisibility -&gt; System.ComponentModel.DesignerSerializationVisibilityAttribute" Usage="new System.ComponentModel.DesignerSerializationVisibilityAttribute visibility" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Content As DesignerSerializationVisibilityAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerSerializationVisibilityAttribute ^ Content;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Content : System.ComponentModel.DesignerSerializationVisibilityAttribute" Usage="System.ComponentModel.DesignerSerializationVisibilityAttribute.Content" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DesignerSerializationVisibilityAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerSerializationVisibilityAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DesignerSerializationVisibilityAttribute" Usage="System.ComponentModel.DesignerSerializationVisibilityAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerSerializationVisibilityAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designerSerializationVisibilityAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerSerializationVisibilityAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designerSerializationVisibilityAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Hidden" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Hidden As DesignerSerializationVisibilityAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerSerializationVisibilityAttribute ^ Hidden;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Hidden : System.ComponentModel.DesignerSerializationVisibilityAttribute" Usage="System.ComponentModel.DesignerSerializationVisibilityAttribute.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -299,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerSerializationVisibilityAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="designerSerializationVisibilityAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visibility As DesignerSerializationVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DesignerSerializationVisibility Visibility { System::ComponentModel::DesignerSerializationVisibility get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visibility : System.ComponentModel.DesignerSerializationVisibility" Usage="System.ComponentModel.DesignerSerializationVisibilityAttribute.Visibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Visible As DesignerSerializationVisibilityAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerSerializationVisibilityAttribute ^ Visible;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Visible : System.ComponentModel.DesignerSerializationVisibilityAttribute" Usage="System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

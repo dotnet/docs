@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPosition`1" />
   <TypeSignature Language="VB.NET" Value="Public Class GeoPosition(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class GeoPosition" />
+  <TypeSignature Language="F#" Value="type GeoPosition&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPosition`1.#ctor(System.DateTimeOffset,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timestamp As DateTimeOffset, position As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoPosition(DateTimeOffset timestamp, T position);" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.GeoPosition&lt;'T&gt; : DateTimeOffset * 'T -&gt; System.Device.Location.GeoPosition&lt;'T&gt;" Usage="new System.Device.Location.GeoPosition&lt;'T&gt; (timestamp, position)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Location { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : 'T with get, set" Usage="System.Device.Location.GeoPosition&lt;'T&gt;.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property Timestamp As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset Timestamp { DateTimeOffset get(); void set(DateTimeOffset value); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTimeOffset with get, set" Usage="System.Device.Location.GeoPosition&lt;'T&gt;.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

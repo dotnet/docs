@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataSourceEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbDataSourceEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbDataSourceEnumerator abstract" />
+  <TypeSignature Language="F#" Value="type DbDataSourceEnumerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataSourceEnumerator.GetDataSources" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDataSources () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::DataTable ^ GetDataSources();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataSources : unit -&gt; System.Data.DataTable" Usage="dbDataSourceEnumerator.GetDataSources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.HotkeyPrefix" />
   <TypeSignature Language="VB.NET" Value="Public Enum HotkeyPrefix" />
   <TypeSignature Language="C++ CLI" Value="public enum class HotkeyPrefix" />
+  <TypeSignature Language="F#" Value="type HotkeyPrefix = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.HotkeyPrefix.Hide" />
       <MemberSignature Language="VB.NET" Value="Hide" />
       <MemberSignature Language="C++ CLI" Value="Hide" />
+      <MemberSignature Language="F#" Value="Hide = 2" Usage="System.Drawing.Text.HotkeyPrefix.Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.HotkeyPrefix.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Drawing.Text.HotkeyPrefix.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.HotkeyPrefix.Show" />
       <MemberSignature Language="VB.NET" Value="Show" />
       <MemberSignature Language="C++ CLI" Value="Show" />
+      <MemberSignature Language="F#" Value="Show = 1" Usage="System.Drawing.Text.HotkeyPrefix.Show" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

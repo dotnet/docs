@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerEventArgs.#ctor(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerEventArgs(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerEventArgs : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.Design.DesignerEventArgs" Usage="new System.ComponentModel.Design.DesignerEventArgs host" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerEventArgs.Designer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Designer As IDesignerHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IDesignerHost ^ Designer { System::ComponentModel::Design::IDesignerHost ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Designer : System.ComponentModel.Design.IDesignerHost" Usage="System.ComponentModel.Design.DesignerEventArgs.Designer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ComputerInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComputerInfo" />
+  <TypeSignature Language="F#" Value="type ComputerInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.AvailablePhysicalMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailablePhysicalMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 AvailablePhysicalMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailablePhysicalMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.AvailablePhysicalMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.AvailableVirtualMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableVirtualMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 AvailableVirtualMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailableVirtualMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.AvailableVirtualMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstalledUICulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ InstalledUICulture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledUICulture : System.Globalization.CultureInfo" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSFullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSFullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSFullName : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSPlatform As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSPlatform { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSPlatform : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSVersion : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.TotalPhysicalMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalPhysicalMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 TotalPhysicalMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalPhysicalMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.TotalPhysicalMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalVirtualMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 TotalVirtualMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalVirtualMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ICommand" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICommand" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICommand" />
+  <TypeSignature Language="F#" Value="type ICommand = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecute(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool" Usage="iCommand.CanExecute parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.ICommand.CanExecuteChanged" />
       <MemberSignature Language="VB.NET" Value="Event CanExecuteChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CanExecuteChanged;" />
+      <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.Execute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit" Usage="iCommand.Execute parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

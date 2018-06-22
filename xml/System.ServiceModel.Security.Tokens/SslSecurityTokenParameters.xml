@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class SslSecurityTokenParameters&#xA;Inherits SecurityTokenParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class SslSecurityTokenParameters : System::ServiceModel::Security::Tokens::SecurityTokenParameters" />
+  <TypeSignature Language="F#" Value="type SslSecurityTokenParameters = class&#xA;    inherit SecurityTokenParameters" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requireClientCertificate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SslSecurityTokenParameters(bool requireClientCertificate);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters : bool -&gt; System.ServiceModel.Security.Tokens.SslSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters requireClientCertificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SslSecurityTokenParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (other As SslSecurityTokenParameters)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SslSecurityTokenParameters(System::ServiceModel::Security::Tokens::SslSecurityTokenParameters ^ other);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters : System.ServiceModel.Security.Tokens.SslSecurityTokenParameters -&gt; System.ServiceModel.Security.Tokens.SslSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requireClientCertificate As Boolean, requireCancellation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SslSecurityTokenParameters(bool requireClientCertificate, bool requireCancellation);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters : bool * bool -&gt; System.ServiceModel.Security.Tokens.SslSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.SslSecurityTokenParameters (requireClientCertificate, requireCancellation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.CloneCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CloneCore () As SecurityTokenParameters" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Security::Tokens::SecurityTokenParameters ^ CloneCore();" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : unit -&gt; System.ServiceModel.Security.Tokens.SecurityTokenParameters" Usage="sslSecurityTokenParameters.CloneCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateKeyIdentifierClause (token As SecurityToken, referenceStyle As SecurityTokenReferenceStyle) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ CreateKeyIdentifierClause(System::IdentityModel::Tokens::SecurityToken ^ token, System::ServiceModel::Security::Tokens::SecurityTokenReferenceStyle referenceStyle);" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyIdentifierClause : System.IdentityModel.Tokens.SecurityToken * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="sslSecurityTokenParameters.CreateKeyIdentifierClause (token, referenceStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.HasAsymmetricKey" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HasAsymmetricKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HasAsymmetricKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAsymmetricKey : bool" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.HasAsymmetricKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.InitializeSecurityTokenRequirement(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub InitializeSecurityTokenRequirement (requirement As SecurityTokenRequirement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeSecurityTokenRequirement(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeSecurityTokenRequirement : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; unit" Usage="sslSecurityTokenParameters.InitializeSecurityTokenRequirement requirement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.RequireCancellation" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireCancellation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireCancellation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireCancellation : bool with get, set" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.RequireCancellation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.RequireClientCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireClientCertificate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireClientCertificate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireClientCertificate : bool with get, set" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.RequireClientCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsClientAuthentication" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SupportsClientAuthentication As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool SupportsClientAuthentication { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsClientAuthentication : bool" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsClientAuthentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsClientWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SupportsClientWindowsIdentity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool SupportsClientWindowsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsClientWindowsIdentity : bool" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsClientWindowsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -405,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsServerAuthentication" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SupportsServerAuthentication As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool SupportsServerAuthentication { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsServerAuthentication : bool" Usage="System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.SupportsServerAuthentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -433,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sslSecurityTokenParameters.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

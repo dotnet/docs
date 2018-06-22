@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.SyndicationTextContentKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum SyndicationTextContentKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class SyndicationTextContentKind" />
+  <TypeSignature Language="F#" Value="type SyndicationTextContentKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationTextContentKind.Html" />
       <MemberSignature Language="VB.NET" Value="Html" />
       <MemberSignature Language="C++ CLI" Value="Html" />
+      <MemberSignature Language="F#" Value="Html = 1" Usage="System.Data.Services.Common.SyndicationTextContentKind.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationTextContentKind.Plaintext" />
       <MemberSignature Language="VB.NET" Value="Plaintext" />
       <MemberSignature Language="C++ CLI" Value="Plaintext" />
+      <MemberSignature Language="F#" Value="Plaintext = 0" Usage="System.Data.Services.Common.SyndicationTextContentKind.Plaintext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationTextContentKind.Xhtml" />
       <MemberSignature Language="VB.NET" Value="Xhtml" />
       <MemberSignature Language="C++ CLI" Value="Xhtml" />
+      <MemberSignature Language="F#" Value="Xhtml = 2" Usage="System.Data.Services.Common.SyndicationTextContentKind.Xhtml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Point3D" />
   <TypeSignature Language="VB.NET" Value="Public Class Point3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class Point3D" />
+  <TypeSignature Language="F#" Value="type Point3D = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Point3D.#ctor(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single, z As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Point3D(float x, float y, float z);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.Point3D : single * single * single -&gt; System.Web.UI.DataVisualization.Charting.Point3D" Usage="new System.Web.UI.DataVisualization.Charting.Point3D (x, y, z)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.PointF" />
       <MemberSignature Language="VB.NET" Value="Public Property PointF As PointF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::PointF PointF { System::Drawing::PointF get(); void set(System::Drawing::PointF value); };" />
+      <MemberSignature Language="F#" Value="member this.PointF : System.Drawing.PointF with get, set" Usage="System.Web.UI.DataVisualization.Charting.Point3D.PointF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.X : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.Point3D.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.Point3D.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Z" />
       <MemberSignature Language="VB.NET" Value="Public Property Z As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Z { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Z : single with get, set" Usage="System.Web.UI.DataVisualization.Charting.Point3D.Z" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

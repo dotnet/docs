@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type ControlCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.#ctor(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlCollection(System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ControlCollection : System.Web.UI.Control -&gt; System.Web.UI.ControlCollection" Usage="new System.Web.UI.ControlCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Add(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Web.UI.Control -&gt; unit&#xA;override this.Add : System.Web.UI.Control -&gt; unit" Usage="controlCollection.Add child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAt (index As Integer, child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAt(int index, System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="abstract member AddAt : int * System.Web.UI.Control -&gt; unit&#xA;override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="controlCollection.AddAt (index, child)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="controlCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Contains(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (c As Control) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Web::UI::Control ^ c);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Web.UI.Control -&gt; bool&#xA;override this.Contains : System.Web.UI.Control -&gt; bool" Usage="controlCollection.Contains c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="controlCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.ControlCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="controlCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.IndexOf(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Control) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Web::UI::Control ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Web.UI.Control -&gt; int&#xA;override this.IndexOf : System.Web.UI.Control -&gt; int" Usage="controlCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.ControlCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.ControlCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -446,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ default[int] { System::Web::UI::Control ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.Control" Usage="System.Web.UI.ControlCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -482,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.Owner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Owner As Control" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Control ^ Owner { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Web.UI.Control" Usage="System.Web.UI.ControlCollection.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -513,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.Remove(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Web::UI::Control ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Web.UI.Control -&gt; unit&#xA;override this.Remove : System.Web.UI.Control -&gt; unit" Usage="controlCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -553,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="controlCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -594,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.ControlCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

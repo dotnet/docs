@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionImage" />
   <TypeSignature Language="VB.NET" Value="Public Enum MediaPermissionImage" />
   <TypeSignature Language="C++ CLI" Value="public enum class MediaPermissionImage" />
+  <TypeSignature Language="F#" Value="type MediaPermissionImage = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionImage.AllImage" />
       <MemberSignature Language="VB.NET" Value="AllImage" />
       <MemberSignature Language="C++ CLI" Value="AllImage" />
+      <MemberSignature Language="F#" Value="AllImage = 3" Usage="System.Security.Permissions.MediaPermissionImage.AllImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionImage.NoImage" />
       <MemberSignature Language="VB.NET" Value="NoImage" />
       <MemberSignature Language="C++ CLI" Value="NoImage" />
+      <MemberSignature Language="F#" Value="NoImage = 0" Usage="System.Security.Permissions.MediaPermissionImage.NoImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />
       <MemberSignature Language="VB.NET" Value="SafeImage" />
       <MemberSignature Language="C++ CLI" Value="SafeImage" />
+      <MemberSignature Language="F#" Value="SafeImage = 2" Usage="System.Security.Permissions.MediaPermissionImage.SafeImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionImage.SiteOfOriginImage" />
       <MemberSignature Language="VB.NET" Value="SiteOfOriginImage" />
       <MemberSignature Language="C++ CLI" Value="SiteOfOriginImage" />
+      <MemberSignature Language="F#" Value="SiteOfOriginImage = 1" Usage="System.Security.Permissions.MediaPermissionImage.SiteOfOriginImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

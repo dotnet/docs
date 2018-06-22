@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationshipSelectorType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PackageRelationshipSelectorType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PackageRelationshipSelectorType" />
+  <TypeSignature Language="F#" Value="type PackageRelationshipSelectorType = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" />
       <MemberSignature Language="VB.NET" Value="Id" />
       <MemberSignature Language="C++ CLI" Value="Id" />
+      <MemberSignature Language="F#" Value="Id = 0" Usage="System.IO.Packaging.PackageRelationshipSelectorType.Id" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />
       <MemberSignature Language="VB.NET" Value="Type" />
       <MemberSignature Language="C++ CLI" Value="Type" />
+      <MemberSignature Language="F#" Value="Type = 1" Usage="System.IO.Packaging.PackageRelationshipSelectorType.Type" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

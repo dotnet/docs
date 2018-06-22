@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceLockLostException" />
   <TypeSignature Language="VB.NET" Value="Public Class InstanceLockLostException&#xA;Inherits InstancePersistenceCommandException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceLockLostException : System::Runtime::DurableInstancing::InstancePersistenceCommandException" />
+  <TypeSignature Language="F#" Value="type InstanceLockLostException = class&#xA;    inherit InstancePersistenceCommandException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockLostException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : string -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceLockLostException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockLostException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : string * Exception -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.Xml.Linq.XName,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockLostException(System::Xml::Linq::XName ^ commandName, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : System.Xml.Linq.XName * Guid -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException (commandName, instanceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockLostException(System::Xml::Linq::XName ^ commandName, Guid instanceId, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : System.Xml.Linq.XName * Guid * Exception -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException (commandName, instanceId, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceLockLostException.#ctor(System.Xml.Linq.XName,System.Guid,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceLockLostException(System::Xml::Linq::XName ^ commandName, Guid instanceId, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceLockLostException : System.Xml.Linq.XName * Guid * string * Exception -&gt; System.Runtime.DurableInstancing.InstanceLockLostException" Usage="new System.Runtime.DurableInstancing.InstanceLockLostException (commandName, instanceId, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

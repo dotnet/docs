@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveTypeKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrimitiveTypeKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrimitiveTypeKind" />
+  <TypeSignature Language="F#" Value="type PrimitiveTypeKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 0" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 1" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 2" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="C++ CLI" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 3" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTimeOffset" />
       <MemberSignature Language="VB.NET" Value="DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="DateTimeOffset" />
+      <MemberSignature Language="F#" Value="DateTimeOffset = 14" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.DateTimeOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 4" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 5" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geography" />
       <MemberSignature Language="VB.NET" Value="Geography" />
       <MemberSignature Language="C++ CLI" Value="Geography" />
+      <MemberSignature Language="F#" Value="Geography = 16" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Geography" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyCollection" />
       <MemberSignature Language="VB.NET" Value="GeographyCollection" />
       <MemberSignature Language="C++ CLI" Value="GeographyCollection" />
+      <MemberSignature Language="F#" Value="GeographyCollection = 30" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyLineString" />
       <MemberSignature Language="VB.NET" Value="GeographyLineString" />
       <MemberSignature Language="C++ CLI" Value="GeographyLineString" />
+      <MemberSignature Language="F#" Value="GeographyLineString = 25" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiLineString" />
       <MemberSignature Language="VB.NET" Value="GeographyMultiLineString" />
       <MemberSignature Language="C++ CLI" Value="GeographyMultiLineString" />
+      <MemberSignature Language="F#" Value="GeographyMultiLineString = 28" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPoint" />
       <MemberSignature Language="VB.NET" Value="GeographyMultiPoint" />
       <MemberSignature Language="C++ CLI" Value="GeographyMultiPoint" />
+      <MemberSignature Language="F#" Value="GeographyMultiPoint = 27" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPolygon" />
       <MemberSignature Language="VB.NET" Value="GeographyMultiPolygon" />
       <MemberSignature Language="C++ CLI" Value="GeographyMultiPolygon" />
+      <MemberSignature Language="F#" Value="GeographyMultiPolygon = 29" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPoint" />
       <MemberSignature Language="VB.NET" Value="GeographyPoint" />
       <MemberSignature Language="C++ CLI" Value="GeographyPoint" />
+      <MemberSignature Language="F#" Value="GeographyPoint = 24" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPolygon" />
       <MemberSignature Language="VB.NET" Value="GeographyPolygon" />
       <MemberSignature Language="C++ CLI" Value="GeographyPolygon" />
+      <MemberSignature Language="F#" Value="GeographyPolygon = 26" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geometry" />
       <MemberSignature Language="VB.NET" Value="Geometry" />
       <MemberSignature Language="C++ CLI" Value="Geometry" />
+      <MemberSignature Language="F#" Value="Geometry = 15" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Geometry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryCollection" />
       <MemberSignature Language="VB.NET" Value="GeometryCollection" />
       <MemberSignature Language="C++ CLI" Value="GeometryCollection" />
+      <MemberSignature Language="F#" Value="GeometryCollection = 23" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryLineString" />
       <MemberSignature Language="VB.NET" Value="GeometryLineString" />
       <MemberSignature Language="C++ CLI" Value="GeometryLineString" />
+      <MemberSignature Language="F#" Value="GeometryLineString = 18" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiLineString" />
       <MemberSignature Language="VB.NET" Value="GeometryMultiLineString" />
       <MemberSignature Language="C++ CLI" Value="GeometryMultiLineString" />
+      <MemberSignature Language="F#" Value="GeometryMultiLineString = 21" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -390,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPoint" />
       <MemberSignature Language="VB.NET" Value="GeometryMultiPoint" />
       <MemberSignature Language="C++ CLI" Value="GeometryMultiPoint" />
+      <MemberSignature Language="F#" Value="GeometryMultiPoint = 20" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -409,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPolygon" />
       <MemberSignature Language="VB.NET" Value="GeometryMultiPolygon" />
       <MemberSignature Language="C++ CLI" Value="GeometryMultiPolygon" />
+      <MemberSignature Language="F#" Value="GeometryMultiPolygon = 22" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -428,6 +450,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPoint" />
       <MemberSignature Language="VB.NET" Value="GeometryPoint" />
       <MemberSignature Language="C++ CLI" Value="GeometryPoint" />
+      <MemberSignature Language="F#" Value="GeometryPoint = 17" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -447,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPolygon" />
       <MemberSignature Language="VB.NET" Value="GeometryPolygon" />
       <MemberSignature Language="C++ CLI" Value="GeometryPolygon" />
+      <MemberSignature Language="F#" Value="GeometryPolygon = 19" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -466,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Guid" />
       <MemberSignature Language="VB.NET" Value="Guid" />
       <MemberSignature Language="C++ CLI" Value="Guid" />
+      <MemberSignature Language="F#" Value="Guid = 6" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -485,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int16" />
       <MemberSignature Language="VB.NET" Value="Int16" />
       <MemberSignature Language="C++ CLI" Value="Int16" />
+      <MemberSignature Language="F#" Value="Int16 = 9" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -504,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int32" />
       <MemberSignature Language="VB.NET" Value="Int32" />
       <MemberSignature Language="C++ CLI" Value="Int32" />
+      <MemberSignature Language="F#" Value="Int32 = 10" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -523,6 +550,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
       <MemberSignature Language="C++ CLI" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 11" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -542,6 +570,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.SByte" />
       <MemberSignature Language="VB.NET" Value="SByte" />
       <MemberSignature Language="C++ CLI" Value="SByte" />
+      <MemberSignature Language="F#" Value="SByte = 8" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -561,6 +590,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 7" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -580,6 +610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 12" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -599,6 +630,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 13" Usage="System.Data.Metadata.Edm.PrimitiveTypeKind.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

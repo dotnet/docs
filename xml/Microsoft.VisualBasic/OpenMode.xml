@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum OpenMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class OpenMode" />
+  <TypeSignature Language="F#" Value="type OpenMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Append" />
       <MemberSignature Language="VB.NET" Value="Append" />
       <MemberSignature Language="C++ CLI" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 8" Usage="Microsoft.VisualBasic.OpenMode.Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 32" Usage="Microsoft.VisualBasic.OpenMode.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Input" />
       <MemberSignature Language="VB.NET" Value="Input" />
       <MemberSignature Language="C++ CLI" Value="Input" />
+      <MemberSignature Language="F#" Value="Input = 1" Usage="Microsoft.VisualBasic.OpenMode.Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Output" />
       <MemberSignature Language="VB.NET" Value="Output" />
       <MemberSignature Language="C++ CLI" Value="Output" />
+      <MemberSignature Language="F#" Value="Output = 2" Usage="Microsoft.VisualBasic.OpenMode.Output" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Random" />
       <MemberSignature Language="VB.NET" Value="Random" />
       <MemberSignature Language="C++ CLI" Value="Random" />
+      <MemberSignature Language="F#" Value="Random = 4" Usage="Microsoft.VisualBasic.OpenMode.Random" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

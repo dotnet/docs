@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.WindowMessage" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WindowMessage(msgId As Integer, parameter1 As IntPtr, parameter2 As IntPtr)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WindowMessage(int msgId, IntPtr parameter1, IntPtr parameter2);" />
+  <TypeSignature Language="F#" Value="type WindowMessage = delegate of int * nativeint * nativeint -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

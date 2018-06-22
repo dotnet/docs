@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIStream" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIStream" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIStream" />
+  <TypeSignature Language="F#" Value="type UCOMIStream = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Clone(System.Runtime.InteropServices.UCOMIStream@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppstm As UCOMIStream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIStream ^ % ppstm);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="uCOMIStream.Clone ppstm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Commit(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit (grfCommitFlags As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int grfCommitFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Commit : int -&gt; unit" Usage="uCOMIStream.Commit grfCommitFlags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.CopyTo(System.Runtime.InteropServices.UCOMIStream,System.Int64,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (pstm As UCOMIStream, cb As Long, pcbRead As IntPtr, pcbWritten As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Runtime::InteropServices::UCOMIStream ^ pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Runtime.InteropServices.UCOMIStream * int64 * nativeint * nativeint -&gt; unit" Usage="uCOMIStream.CopyTo (pstm, cb, pcbRead, pcbWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.LockRegion(System.Int64,System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LockRegion(long libOffset, long cb, int dwLockType);" />
+      <MemberSignature Language="F#" Value="abstract member LockRegion : int64 * int64 * int -&gt; unit" Usage="uCOMIStream.LockRegion (libOffset, cb, dwLockType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Read(System.Byte[],System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Read (pv As Byte(), cb As Integer, pcbRead As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Read(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbRead);" />
+      <MemberSignature Language="F#" Value="abstract member Read : byte[] * int * nativeint -&gt; unit" Usage="uCOMIStream.Read (pv, cb, pcbRead)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Revert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Revert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revert();" />
+      <MemberSignature Language="F#" Value="abstract member Revert : unit -&gt; unit" Usage="uCOMIStream.Revert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Seek(System.Int64,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (dlibMove As Long, dwOrigin As Integer, plibNewPosition As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(long dlibMove, int dwOrigin, IntPtr plibNewPosition);" />
+      <MemberSignature Language="F#" Value="abstract member Seek : int64 * int * nativeint -&gt; unit" Usage="uCOMIStream.Seek (dlibMove, dwOrigin, plibNewPosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.SetSize(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSize (libNewSize As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSize(long libNewSize);" />
+      <MemberSignature Language="F#" Value="abstract member SetSize : int64 -&gt; unit" Usage="uCOMIStream.SetSize libNewSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Stat(System.Runtime.InteropServices.STATSTG@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stat (ByRef pstatstg As STATSTG, grfStatFlag As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stat([Runtime::InteropServices::Out] System::Runtime::InteropServices::STATSTG % pstatstg, int grfStatFlag);" />
+      <MemberSignature Language="F#" Value="abstract member Stat :  * int -&gt; unit" Usage="uCOMIStream.Stat (pstatstg, grfStatFlag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.UnlockRegion(System.Int64,System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnlockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnlockRegion(long libOffset, long cb, int dwLockType);" />
+      <MemberSignature Language="F#" Value="abstract member UnlockRegion : int64 * int64 * int -&gt; unit" Usage="uCOMIStream.UnlockRegion (libOffset, cb, dwLockType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIStream.Write(System.Byte[],System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (pv As Byte(), cb As Integer, pcbWritten As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbWritten);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * nativeint -&gt; unit" Usage="uCOMIStream.Write (pv, cb, pcbWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

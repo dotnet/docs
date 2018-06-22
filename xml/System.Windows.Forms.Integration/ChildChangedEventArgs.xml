@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.ChildChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ChildChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChildChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ChildChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ChildChangedEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (previousChild As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChildChangedEventArgs(System::Object ^ previousChild);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.ChildChangedEventArgs : obj -&gt; System.Windows.Forms.Integration.ChildChangedEventArgs" Usage="new System.Windows.Forms.Integration.ChildChangedEventArgs previousChild" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ChildChangedEventArgs.PreviousChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousChild As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PreviousChild { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousChild : obj" Usage="System.Windows.Forms.Integration.ChildChangedEventArgs.PreviousChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

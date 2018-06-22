@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HandledMouseEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class HandledMouseEventArgs&#xA;Inherits MouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class HandledMouseEventArgs : System::Windows::Forms::MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type HandledMouseEventArgs = class&#xA;    inherit MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HandledMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, clicks As Integer, x As Integer, y As Integer, delta As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HandledMouseEventArgs(System::Windows::Forms::MouseButtons button, int clicks, int x, int y, int delta);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.HandledMouseEventArgs : System.Windows.Forms.MouseButtons * int * int * int * int -&gt; System.Windows.Forms.HandledMouseEventArgs" Usage="new System.Windows.Forms.HandledMouseEventArgs (button, clicks, x, y, delta)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HandledMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, clicks As Integer, x As Integer, y As Integer, delta As Integer, defaultHandledValue As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HandledMouseEventArgs(System::Windows::Forms::MouseButtons button, int clicks, int x, int y, int delta, bool defaultHandledValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.HandledMouseEventArgs : System.Windows.Forms.MouseButtons * int * int * int * int * bool -&gt; System.Windows.Forms.HandledMouseEventArgs" Usage="new System.Windows.Forms.HandledMouseEventArgs (button, clicks, x, y, delta, defaultHandledValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HandledMouseEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.HandledMouseEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

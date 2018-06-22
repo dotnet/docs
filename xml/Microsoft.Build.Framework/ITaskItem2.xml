@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITaskItem2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITaskItem2&#xA;Implements ITaskItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITaskItem2 : Microsoft::Build::Framework::ITaskItem" />
+  <TypeSignature Language="F#" Value="type ITaskItem2 = interface&#xA;    interface ITaskItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.CloneCustomMetadataEscaped" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCustomMetadataEscaped () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ CloneCustomMetadataEscaped();" />
+      <MemberSignature Language="F#" Value="abstract member CloneCustomMetadataEscaped : unit -&gt; System.Collections.IDictionary" Usage="iTaskItem2.CloneCustomMetadataEscaped " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
       <MemberSignature Language="VB.NET" Value="Public Property EvaluatedIncludeEscaped As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedIncludeEscaped { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedIncludeEscaped : string with get, set" Usage="Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.GetMetadataValueEscaped(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadataValueEscaped (metadataName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMetadataValueEscaped(System::String ^ metadataName);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataValueEscaped : string -&gt; string" Usage="iTaskItem2.GetMetadataValueEscaped metadataName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.SetMetadataValueLiteral(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMetadataValueLiteral (metadataName As String, metadataValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMetadataValueLiteral(System::String ^ metadataName, System::String ^ metadataValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetMetadataValueLiteral : string * string -&gt; unit" Usage="iTaskItem2.SetMetadataValueLiteral (metadataName, metadataValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

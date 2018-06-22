@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CorrelationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationManager" />
+  <TypeSignature Language="F#" Value="type CorrelationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CorrelationManager.ActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ActivityId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityId : Guid with get, set" Usage="System.Diagnostics.CorrelationManager.ActivityId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CorrelationManager.LogicalOperationStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalOperationStack As Stack" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Stack ^ LogicalOperationStack { System::Collections::Stack ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalOperationStack : System.Collections.Stack" Usage="System.Diagnostics.CorrelationManager.LogicalOperationStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CorrelationManager.StartLogicalOperation" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartLogicalOperation ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartLogicalOperation();" />
+      <MemberSignature Language="F#" Value="member this.StartLogicalOperation : unit -&gt; unit" Usage="correlationManager.StartLogicalOperation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CorrelationManager.StartLogicalOperation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartLogicalOperation (operationId As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartLogicalOperation(System::Object ^ operationId);" />
+      <MemberSignature Language="F#" Value="member this.StartLogicalOperation : obj -&gt; unit" Usage="correlationManager.StartLogicalOperation operationId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CorrelationManager.StopLogicalOperation" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopLogicalOperation ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopLogicalOperation();" />
+      <MemberSignature Language="F#" Value="member this.StopLogicalOperation : unit -&gt; unit" Usage="correlationManager.StopLogicalOperation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

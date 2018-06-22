@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolBinder" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolBinder" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISymbolBinder" />
+  <TypeSignature Language="F#" Value="type ISymbolBinder = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolBinder.GetReader(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReader (importer As Integer, filename As String, searchPath As String) As ISymbolReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(int importer, System::String ^ filename, System::String ^ searchPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetReader : int * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader" Usage="iSymbolBinder.GetReader (importer, filename, searchPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

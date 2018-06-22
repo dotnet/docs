@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArgumentReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeArgumentReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeArgumentReferenceExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeArgumentReferenceExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArgumentReferenceExpression.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArgumentReferenceExpression(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArgumentReferenceExpression : string -&gt; System.CodeDom.CodeArgumentReferenceExpression" Usage="new System.CodeDom.CodeArgumentReferenceExpression parameterName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArgumentReferenceExpression.ParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.CodeDom.CodeArgumentReferenceExpression.ParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

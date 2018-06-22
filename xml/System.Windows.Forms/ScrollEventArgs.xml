@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ScrollEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollEventArgs.#ctor(System.Windows.Forms.ScrollEventType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As ScrollEventType, newValue As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollEventArgs(System::Windows::Forms::ScrollEventType type, int newValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollEventArgs : System.Windows.Forms.ScrollEventType * int -&gt; System.Windows.Forms.ScrollEventArgs" Usage="new System.Windows.Forms.ScrollEventArgs (type, newValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollEventArgs.#ctor(System.Windows.Forms.ScrollEventType,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As ScrollEventType, oldValue As Integer, newValue As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollEventArgs(System::Windows::Forms::ScrollEventType type, int oldValue, int newValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollEventArgs : System.Windows.Forms.ScrollEventType * int * int -&gt; System.Windows.Forms.ScrollEventArgs" Usage="new System.Windows.Forms.ScrollEventArgs (type, oldValue, newValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollEventArgs.#ctor(System.Windows.Forms.ScrollEventType,System.Int32,System.Windows.Forms.ScrollOrientation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As ScrollEventType, newValue As Integer, scroll As ScrollOrientation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollEventArgs(System::Windows::Forms::ScrollEventType type, int newValue, System::Windows::Forms::ScrollOrientation scroll);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollEventArgs : System.Windows.Forms.ScrollEventType * int * System.Windows.Forms.ScrollOrientation -&gt; System.Windows.Forms.ScrollEventArgs" Usage="new System.Windows.Forms.ScrollEventArgs (type, newValue, scroll)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollEventArgs.#ctor(System.Windows.Forms.ScrollEventType,System.Int32,System.Int32,System.Windows.Forms.ScrollOrientation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As ScrollEventType, oldValue As Integer, newValue As Integer, scroll As ScrollOrientation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollEventArgs(System::Windows::Forms::ScrollEventType type, int oldValue, int newValue, System::Windows::Forms::ScrollOrientation scroll);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollEventArgs : System.Windows.Forms.ScrollEventType * int * int * System.Windows.Forms.ScrollOrientation -&gt; System.Windows.Forms.ScrollEventArgs" Usage="new System.Windows.Forms.ScrollEventArgs (type, oldValue, newValue, scroll)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public Property NewValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewValue { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : int with get, set" Usage="System.Windows.Forms.ScrollEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollEventArgs.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OldValue { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : int" Usage="System.Windows.Forms.ScrollEventArgs.OldValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollEventArgs.ScrollOrientation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollOrientation As ScrollOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ScrollOrientation ScrollOrientation { System::Windows::Forms::ScrollOrientation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollOrientation : System.Windows.Forms.ScrollOrientation" Usage="System.Windows.Forms.ScrollEventArgs.ScrollOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollEventArgs.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As ScrollEventType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ScrollEventType Type { System::Windows::Forms::ScrollEventType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Windows.Forms.ScrollEventType" Usage="System.Windows.Forms.ScrollEventArgs.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

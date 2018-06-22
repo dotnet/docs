@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripPanelRow" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripPanelRow&#xA;Inherits Component&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripPanelRow : System::ComponentModel::Component, IDisposable" />
+  <TypeSignature Language="F#" Value="type ToolStripPanelRow = class&#xA;    inherit Component&#xA;    interface IComponent&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.#ctor(System.Windows.Forms.ToolStripPanel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ToolStripPanel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripPanelRow(System::Windows::Forms::ToolStripPanel ^ parent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripPanelRow : System.Windows.Forms.ToolStripPanel -&gt; System.Windows.Forms.ToolStripPanelRow" Usage="new System.Windows.Forms.ToolStripPanelRow parent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStripPanelRow.Bounds" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.Layout.IArrangedElement.Bounds</InterfaceMember>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.CanMove(System.Windows.Forms.ToolStrip)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanMove (toolStripToDrag As ToolStrip) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanMove(System::Windows::Forms::ToolStrip ^ toolStripToDrag);" />
+      <MemberSignature Language="F#" Value="member this.CanMove : System.Windows.Forms.ToolStrip -&gt; bool" Usage="toolStripPanelRow.CanMove toolStripToDrag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As Control()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Windows::Forms::Control ^&gt; ^ Controls { cli::array &lt;System::Windows::Forms::Control ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.Control[]" Usage="System.Windows.Forms.ToolStripPanelRow.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.DefaultMargin" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultMargin As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultMargin { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripPanelRow.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.DefaultPadding" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultPadding As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultPadding { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPadding : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripPanelRow.DefaultPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.DisplayRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle DisplayRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStripPanelRow.DisplayRectangle" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.Layout.IArrangedElement.DisplayRectangle</InterfaceMember>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="toolStripPanelRow.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.LayoutEngine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LayoutEngine As LayoutEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.ToolStripPanelRow.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.Margin" />
       <MemberSignature Language="VB.NET" Value="Public Property Margin As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Margin { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Margin : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ToolStripPanelRow.Margin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.OnBoundsChanged(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnBoundsChanged (oldBounds As Rectangle, newBounds As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnBoundsChanged(System::Drawing::Rectangle oldBounds, System::Drawing::Rectangle newBounds);" />
+      <MemberSignature Language="F#" Value="member this.OnBoundsChanged : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; unit" Usage="toolStripPanelRow.OnBoundsChanged (oldBounds, newBounds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +332,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnControlAdded(class System.Windows.Forms.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.OnControlAdded(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnControlAdded(System::Windows::Forms::Control ^ control, int index);" />
+      <MemberSignature Language="F#" Value="abstract member OnControlAdded : System.Windows.Forms.Control * int -&gt; unit&#xA;override this.OnControlAdded : System.Windows.Forms.Control * int -&gt; unit" Usage="toolStripPanelRow.OnControlAdded (control, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +369,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnControlRemoved(class System.Windows.Forms.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.OnControlRemoved(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnControlRemoved(System::Windows::Forms::Control ^ control, int index);" />
+      <MemberSignature Language="F#" Value="abstract member OnControlRemoved : System.Windows.Forms.Control * int -&gt; unit&#xA;override this.OnControlRemoved : System.Windows.Forms.Control * int -&gt; unit" Usage="toolStripPanelRow.OnControlRemoved (control, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -393,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLayout (e As LayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit&#xA;override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="toolStripPanelRow.OnLayout e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRow.OnOrientationChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnOrientationChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnOrientationChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnOrientationChanged : unit -&gt; unit&#xA;override this.OnOrientationChanged : unit -&gt; unit" Usage="toolStripPanelRow.OnOrientationChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -460,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Orientation As Orientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Orientation Orientation { System::Windows::Forms::Orientation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Forms.Orientation" Usage="System.Windows.Forms.ToolStripPanelRow.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ToolStripPanelRow.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -500,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRow.ToolStripPanel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolStripPanel As ToolStripPanel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripPanel ^ ToolStripPanel { System::Windows::Forms::ToolStripPanel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripPanel : System.Windows.Forms.ToolStripPanel" Usage="System.Windows.Forms.ToolStripPanelRow.ToolStripPanel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

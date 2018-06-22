@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RightToLeft" />
   <TypeSignature Language="VB.NET" Value="Public Enum RightToLeft" />
   <TypeSignature Language="C++ CLI" Value="public enum class RightToLeft" />
+  <TypeSignature Language="F#" Value="type RightToLeft = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 2" Usage="System.Windows.Forms.RightToLeft.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.No" />
       <MemberSignature Language="VB.NET" Value="No" />
       <MemberSignature Language="C++ CLI" Value="No" />
+      <MemberSignature Language="F#" Value="No = 0" Usage="System.Windows.Forms.RightToLeft.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Yes" />
       <MemberSignature Language="VB.NET" Value="Yes" />
       <MemberSignature Language="C++ CLI" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 1" Usage="System.Windows.Forms.RightToLeft.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

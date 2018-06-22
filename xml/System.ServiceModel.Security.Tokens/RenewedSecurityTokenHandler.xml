@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.RenewedSecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RenewedSecurityTokenHandler(newSecurityToken As SecurityToken, oldSecurityToken As SecurityToken)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RenewedSecurityTokenHandler(SecurityToken ^ newSecurityToken, SecurityToken ^ oldSecurityToken);" />
+  <TypeSignature Language="F#" Value="type RenewedSecurityTokenHandler = delegate of SecurityToken * SecurityToken -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

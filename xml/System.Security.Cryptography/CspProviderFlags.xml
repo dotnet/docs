@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspProviderFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum CspProviderFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class CspProviderFlags" />
+  <TypeSignature Language="F#" Value="type CspProviderFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.CreateEphemeralKey" />
       <MemberSignature Language="VB.NET" Value="CreateEphemeralKey" />
       <MemberSignature Language="C++ CLI" Value="CreateEphemeralKey" />
+      <MemberSignature Language="F#" Value="CreateEphemeralKey = 128" Usage="System.Security.Cryptography.CspProviderFlags.CreateEphemeralKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="C++ CLI" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Cryptography.CspProviderFlags.NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" />
       <MemberSignature Language="VB.NET" Value="NoPrompt" />
       <MemberSignature Language="C++ CLI" Value="NoPrompt" />
+      <MemberSignature Language="F#" Value="NoPrompt = 64" Usage="System.Security.Cryptography.CspProviderFlags.NoPrompt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseArchivableKey" />
       <MemberSignature Language="VB.NET" Value="UseArchivableKey" />
       <MemberSignature Language="C++ CLI" Value="UseArchivableKey" />
+      <MemberSignature Language="F#" Value="UseArchivableKey = 16" Usage="System.Security.Cryptography.CspProviderFlags.UseArchivableKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer" />
       <MemberSignature Language="VB.NET" Value="UseDefaultKeyContainer" />
       <MemberSignature Language="C++ CLI" Value="UseDefaultKeyContainer" />
+      <MemberSignature Language="F#" Value="UseDefaultKeyContainer = 2" Usage="System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseExistingKey" />
       <MemberSignature Language="VB.NET" Value="UseExistingKey" />
       <MemberSignature Language="C++ CLI" Value="UseExistingKey" />
+      <MemberSignature Language="F#" Value="UseExistingKey = 8" Usage="System.Security.Cryptography.CspProviderFlags.UseExistingKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseMachineKeyStore" />
       <MemberSignature Language="VB.NET" Value="UseMachineKeyStore" />
       <MemberSignature Language="C++ CLI" Value="UseMachineKeyStore" />
+      <MemberSignature Language="F#" Value="UseMachineKeyStore = 1" Usage="System.Security.Cryptography.CspProviderFlags.UseMachineKeyStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseNonExportableKey" />
       <MemberSignature Language="VB.NET" Value="UseNonExportableKey" />
       <MemberSignature Language="C++ CLI" Value="UseNonExportableKey" />
+      <MemberSignature Language="F#" Value="UseNonExportableKey = 4" Usage="System.Security.Cryptography.CspProviderFlags.UseNonExportableKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspProviderFlags.UseUserProtectedKey" />
       <MemberSignature Language="VB.NET" Value="UseUserProtectedKey" />
       <MemberSignature Language="C++ CLI" Value="UseUserProtectedKey" />
+      <MemberSignature Language="F#" Value="UseUserProtectedKey = 32" Usage="System.Security.Cryptography.CspProviderFlags.UseUserProtectedKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>

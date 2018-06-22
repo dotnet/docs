@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpResponseMessageExtensionMethods" />
   <TypeSignature Language="VB.NET" Value="Public Module HttpResponseMessageExtensionMethods" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseMessageExtensionMethods abstract sealed" />
+  <TypeSignature Language="F#" Value="type HttpResponseMessageExtensionMethods = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message ToMessage(class System.Net.Http.HttpResponseMessage httpResponseMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageExtensionMethods.ToMessage(System.Net.Http.HttpResponseMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ServiceModel::Channels::Message ^ ToMessage(System::Net::Http::HttpResponseMessage ^ httpResponseMessage);" />
+      <MemberSignature Language="F#" Value="static member ToMessage : System.Net.Http.HttpResponseMessage -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.HttpResponseMessageExtensionMethods.ToMessage httpResponseMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

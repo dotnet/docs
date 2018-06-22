@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ISecureConversationSession" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISecureConversationSession&#xA;Implements ISecuritySession" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISecureConversationSession : System::ServiceModel::Security::ISecuritySession" />
+  <TypeSignature Language="F#" Value="type ISecureConversationSession = interface&#xA;    interface ISecuritySession&#xA;    interface ISession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.TryReadSessionTokenIdentifier(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReadSessionTokenIdentifier (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadSessionTokenIdentifier(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member TryReadSessionTokenIdentifier : System.Xml.XmlReader -&gt; bool" Usage="iSecureConversationSession.TryReadSessionTokenIdentifier reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.WriteSessionTokenIdentifier(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteSessionTokenIdentifier (writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSessionTokenIdentifier(System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSessionTokenIdentifier : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="iSecureConversationSession.WriteSessionTokenIdentifier writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

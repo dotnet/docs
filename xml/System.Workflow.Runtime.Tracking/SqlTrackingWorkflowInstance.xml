@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlTrackingWorkflowInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTrackingWorkflowInstance" />
+  <TypeSignature Language="F#" Value="type SqlTrackingWorkflowInstance = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityEvents As IList(Of ActivityTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::ActivityTrackingRecord ^&gt; ^ ActivityEvents { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::ActivityTrackingRecord ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityEvents : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.ActivityTrackingRecord&gt;" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoRefresh As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoRefresh { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoRefresh : bool with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized" />
       <MemberSignature Language="VB.NET" Value="Public Property Initialized As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Initialized { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Initialized : DateTime with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokedWorkflows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvokedWorkflows As IList(Of SqlTrackingWorkflowInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::SqlTrackingWorkflowInstance ^&gt; ^ InvokedWorkflows { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::SqlTrackingWorkflowInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvokedWorkflows : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt;" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokedWorkflows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokingWorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Property InvokingWorkflowInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InvokingWorkflowInstanceId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.InvokingWorkflowInstanceId : Guid with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokingWorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="sqlTrackingWorkflowInstance.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As WorkflowStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowStatus Status { System::Workflow::Runtime::WorkflowStatus get(); void set(System::Workflow::Runtime::WorkflowStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Workflow.Runtime.WorkflowStatus with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserEvents As IList(Of UserTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::UserTrackingRecord ^&gt; ^ UserEvents { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::UserTrackingRecord ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserEvents : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.UserTrackingRecord&gt;" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinition As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ WorkflowDefinition { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinition : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinitionUpdated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinitionUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkflowDefinitionUpdated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinitionUpdated : bool" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinitionUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -342,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowEvents As IList(Of WorkflowTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::WorkflowTrackingRecord ^&gt; ^ WorkflowEvents { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::WorkflowTrackingRecord ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowEvents : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.WorkflowTrackingRecord&gt;" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid WorkflowInstanceId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -403,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowInstanceInternalId As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long WorkflowInstanceInternalId { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceInternalId : int64 with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -440,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ WorkflowType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowType : Type with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

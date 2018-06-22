@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.AuthenticationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationLevel" />
+  <TypeSignature Language="F#" Value="type AuthenticationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />
       <MemberSignature Language="VB.NET" Value="MutualAuthRequested" />
       <MemberSignature Language="C++ CLI" Value="MutualAuthRequested" />
+      <MemberSignature Language="F#" Value="MutualAuthRequested = 1" Usage="System.Net.Security.AuthenticationLevel.MutualAuthRequested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.AuthenticationLevel.MutualAuthRequired" />
       <MemberSignature Language="VB.NET" Value="MutualAuthRequired" />
       <MemberSignature Language="C++ CLI" Value="MutualAuthRequired" />
+      <MemberSignature Language="F#" Value="MutualAuthRequired = 2" Usage="System.Net.Security.AuthenticationLevel.MutualAuthRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.AuthenticationLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Security.AuthenticationLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

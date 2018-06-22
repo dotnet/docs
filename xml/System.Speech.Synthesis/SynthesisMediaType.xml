@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisMediaType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SynthesisMediaType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SynthesisMediaType" />
+  <TypeSignature Language="F#" Value="type SynthesisMediaType = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.Ssml" />
       <MemberSignature Language="VB.NET" Value="Ssml" />
       <MemberSignature Language="C++ CLI" Value="Ssml" />
+      <MemberSignature Language="F#" Value="Ssml = 1" Usage="System.Speech.Synthesis.SynthesisMediaType.Ssml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Speech.Synthesis.SynthesisMediaType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.WaveAudio" />
       <MemberSignature Language="VB.NET" Value="WaveAudio" />
       <MemberSignature Language="C++ CLI" Value="WaveAudio" />
+      <MemberSignature Language="F#" Value="WaveAudio = 2" Usage="System.Speech.Synthesis.SynthesisMediaType.WaveAudio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

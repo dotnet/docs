@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EditCommandColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class EditCommandColumn&#xA;Inherits DataGridColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditCommandColumn : System::Web::UI::WebControls::DataGridColumn" />
+  <TypeSignature Language="F#" Value="type EditCommandColumn = class&#xA;    inherit DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.ButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ButtonType As ButtonColumnType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonColumnType ButtonType { System::Web::UI::WebControls::ButtonColumnType get(); void set(System::Web::UI::WebControls::ButtonColumnType value); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Web.UI.WebControls.ButtonColumnType with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.ButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelText : string with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.CancelText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EditText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditText : string with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.EditText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EditCommandColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="editCommandColumn.InitializeCell (cell, columnIndex, itemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateText : string with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.EditCommandColumn.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

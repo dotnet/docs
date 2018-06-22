@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.HostElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HostElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostElement.BaseAddresses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseAddresses As BaseAddressElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BaseAddressElementCollection ^ BaseAddresses { System::ServiceModel::Configuration::BaseAddressElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseAddresses : System.ServiceModel.Configuration.BaseAddressElementCollection" Usage="System.ServiceModel.Configuration.HostElement.BaseAddresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.HostElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostElement.Timeouts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeouts As HostTimeoutsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::HostTimeoutsElement ^ Timeouts { System::ServiceModel::Configuration::HostTimeoutsElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timeouts : System.ServiceModel.Configuration.HostTimeoutsElement" Usage="System.ServiceModel.Configuration.HostElement.Timeouts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

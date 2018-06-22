@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.EntitiesDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class EntitiesDescriptor&#xA;Inherits MetadataBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntitiesDescriptor : System::IdentityModel::Metadata::MetadataBase" />
+  <TypeSignature Language="F#" Value="type EntitiesDescriptor = class&#xA;    inherit MetadataBase" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntitiesDescriptor})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityGroupList As Collection(Of EntitiesDescriptor))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitiesDescriptor(System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::EntitiesDescriptor ^&gt; ^ entityGroupList);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntitiesDescriptor : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt; -&gt; System.IdentityModel.Metadata.EntitiesDescriptor" Usage="new System.IdentityModel.Metadata.EntitiesDescriptor entityGroupList" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntityDescriptor})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityList As Collection(Of EntityDescriptor))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitiesDescriptor(System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::EntityDescriptor ^&gt; ^ entityList);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntitiesDescriptor : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntityDescriptor&gt; -&gt; System.IdentityModel.Metadata.EntitiesDescriptor" Usage="new System.IdentityModel.Metadata.EntitiesDescriptor entityList" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntityDescriptor},System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntitiesDescriptor})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityList As Collection(Of EntityDescriptor), entityGroupList As Collection(Of EntitiesDescriptor))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitiesDescriptor(System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::EntityDescriptor ^&gt; ^ entityList, System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::EntitiesDescriptor ^&gt; ^ entityGroupList);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntitiesDescriptor : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntityDescriptor&gt; * System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt; -&gt; System.IdentityModel.Metadata.EntitiesDescriptor" Usage="new System.IdentityModel.Metadata.EntitiesDescriptor (entityList, entityGroupList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildEntities As ICollection(Of EntityDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EntityDescriptor ^&gt; ^ ChildEntities { System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EntityDescriptor ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildEntities : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.EntityDescriptor&gt;" Usage="System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildEntityGroups As ICollection(Of EntitiesDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EntitiesDescriptor ^&gt; ^ ChildEntityGroups { System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EntitiesDescriptor ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildEntityGroups : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt;" Usage="System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntitiesDescriptor.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Metadata.EntitiesDescriptor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.Expressions.ExpressionsBuildExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpressionsBuildExtension&#xA;Implements IXamlBuildTypeInspectionExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionsBuildExtension : Microsoft::Build::Tasks::Xaml::IXamlBuildTypeInspectionExtension" />
+  <TypeSignature Language="F#" Value="type ExpressionsBuildExtension = class&#xA;    interface IXamlBuildTypeInspectionExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Activities.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Expressions.ExpressionsBuildExtension.Execute(Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute (buildContext As XamlBuildTypeInspectionExtensionContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Execute(Microsoft::Build::Tasks::Xaml::XamlBuildTypeInspectionExtensionContext ^ buildContext);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext -&gt; bool&#xA;override this.Execute : Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext -&gt; bool" Usage="expressionsBuildExtension.Execute buildContext" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeInspectionExtension.Execute(Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext)</InterfaceMember>

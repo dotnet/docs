@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PictureBoxSizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PictureBoxSizeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PictureBoxSizeMode" />
+  <TypeSignature Language="F#" Value="type PictureBoxSizeMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.AutoSize" />
       <MemberSignature Language="VB.NET" Value="AutoSize" />
       <MemberSignature Language="C++ CLI" Value="AutoSize" />
+      <MemberSignature Language="F#" Value="AutoSize = 2" Usage="System.Windows.Forms.PictureBoxSizeMode.AutoSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.CenterImage" />
       <MemberSignature Language="VB.NET" Value="CenterImage" />
       <MemberSignature Language="C++ CLI" Value="CenterImage" />
+      <MemberSignature Language="F#" Value="CenterImage = 3" Usage="System.Windows.Forms.PictureBoxSizeMode.CenterImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.PictureBoxSizeMode.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.StretchImage" />
       <MemberSignature Language="VB.NET" Value="StretchImage" />
       <MemberSignature Language="C++ CLI" Value="StretchImage" />
+      <MemberSignature Language="F#" Value="StretchImage = 1" Usage="System.Windows.Forms.PictureBoxSizeMode.StretchImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.Zoom" />
       <MemberSignature Language="VB.NET" Value="Zoom" />
       <MemberSignature Language="C++ CLI" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 4" Usage="System.Windows.Forms.PictureBoxSizeMode.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

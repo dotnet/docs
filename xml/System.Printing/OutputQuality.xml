@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.OutputQuality" />
   <TypeSignature Language="VB.NET" Value="Public Enum OutputQuality" />
   <TypeSignature Language="C++ CLI" Value="public enum class OutputQuality" />
+  <TypeSignature Language="F#" Value="type OutputQuality = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Printing.OutputQuality.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Draft" />
       <MemberSignature Language="VB.NET" Value="Draft" />
       <MemberSignature Language="C++ CLI" Value="Draft" />
+      <MemberSignature Language="F#" Value="Draft = 2" Usage="System.Printing.OutputQuality.Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Fax" />
       <MemberSignature Language="VB.NET" Value="Fax" />
       <MemberSignature Language="C++ CLI" Value="Fax" />
+      <MemberSignature Language="F#" Value="Fax = 3" Usage="System.Printing.OutputQuality.Fax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 4" Usage="System.Printing.OutputQuality.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 5" Usage="System.Printing.OutputQuality.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Photographic" />
       <MemberSignature Language="VB.NET" Value="Photographic" />
       <MemberSignature Language="C++ CLI" Value="Photographic" />
+      <MemberSignature Language="F#" Value="Photographic = 6" Usage="System.Printing.OutputQuality.Photographic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 7" Usage="System.Printing.OutputQuality.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.OutputQuality.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

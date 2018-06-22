@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollEventType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollEventType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollEventType" />
+  <TypeSignature Language="F#" Value="type ScrollEventType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.EndScroll" />
       <MemberSignature Language="VB.NET" Value="EndScroll" />
       <MemberSignature Language="C++ CLI" Value="EndScroll" />
+      <MemberSignature Language="F#" Value="EndScroll = 8" Usage="System.Windows.Forms.ScrollEventType.EndScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.First" />
       <MemberSignature Language="VB.NET" Value="First" />
       <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberSignature Language="F#" Value="First = 6" Usage="System.Windows.Forms.ScrollEventType.First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.LargeDecrement" />
       <MemberSignature Language="VB.NET" Value="LargeDecrement" />
       <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 2" Usage="System.Windows.Forms.ScrollEventType.LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.LargeIncrement" />
       <MemberSignature Language="VB.NET" Value="LargeIncrement" />
       <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Forms.ScrollEventType.LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.Last" />
       <MemberSignature Language="VB.NET" Value="Last" />
       <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 7" Usage="System.Windows.Forms.ScrollEventType.Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.SmallDecrement" />
       <MemberSignature Language="VB.NET" Value="SmallDecrement" />
       <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 0" Usage="System.Windows.Forms.ScrollEventType.SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.SmallIncrement" />
       <MemberSignature Language="VB.NET" Value="SmallIncrement" />
       <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 1" Usage="System.Windows.Forms.ScrollEventType.SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.ThumbPosition" />
       <MemberSignature Language="VB.NET" Value="ThumbPosition" />
       <MemberSignature Language="C++ CLI" Value="ThumbPosition" />
+      <MemberSignature Language="F#" Value="ThumbPosition = 4" Usage="System.Windows.Forms.ScrollEventType.ThumbPosition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.ThumbTrack" />
       <MemberSignature Language="VB.NET" Value="ThumbTrack" />
       <MemberSignature Language="C++ CLI" Value="ThumbTrack" />
+      <MemberSignature Language="F#" Value="ThumbTrack = 5" Usage="System.Windows.Forms.ScrollEventType.ThumbTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

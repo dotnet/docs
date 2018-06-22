@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.AutoResizedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutoResizedEventHandler(sender As Object, e As AutoResizedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AutoResizedEventHandler(System::Object ^ sender, AutoResizedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AutoResizedEventHandler = delegate of obj * AutoResizedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

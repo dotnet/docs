@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.RequestValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestValidator" />
+  <TypeSignature Language="F#" Value="type RequestValidator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Util.RequestValidator.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Current As RequestValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Util::RequestValidator ^ Current { System::Web::Util::RequestValidator ^ get(); void set(System::Web::Util::RequestValidator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Web.Util.RequestValidator with get, set" Usage="System.Web.Util.RequestValidator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.InvokeIsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InvokeIsValidRequestString(System::Web::HttpContext ^ context, System::String ^ value, System::Web::Util::RequestValidationSource requestValidationSource, System::String ^ collectionKey, [Runtime::InteropServices::Out] int % validationFailureIndex);" />
+      <MemberSignature Language="F#" Value="member this.InvokeIsValidRequestString : System.Web.HttpContext * string * System.Web.Util.RequestValidationSource * string *  -&gt; bool" Usage="requestValidator.InvokeIsValidRequestString (context, value, requestValidationSource, collectionKey, validationFailureIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool IsValidRequestString(System::Web::HttpContext ^ context, System::String ^ value, System::Web::Util::RequestValidationSource requestValidationSource, System::String ^ collectionKey, [Runtime::InteropServices::Out] int % validationFailureIndex);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidRequestString : System.Web.HttpContext * string * System.Web.Util.RequestValidationSource * string *  -&gt; bool&#xA;override this.IsValidRequestString : System.Web.HttpContext * string * System.Web.Util.RequestValidationSource * string *  -&gt; bool" Usage="requestValidator.IsValidRequestString (context, value, requestValidationSource, collectionKey, validationFailureIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IApplicationIdentifier" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationIdentifier" />
+  <TypeSignature Language="F#" Value="type IApplicationIdentifier = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetApplicationId () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetApplicationId();" />
+      <MemberSignature Language="F#" Value="abstract member GetApplicationId : unit -&gt; string" Usage="iApplicationIdentifier.GetApplicationId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

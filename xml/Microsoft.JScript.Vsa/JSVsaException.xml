@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSVsaException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSVsaException sealed : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type JSVsaException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException error" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : string -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError * string -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (error, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : string * Exception -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError * string * Exception -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (error, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.JSVsaException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As JSVsaError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::Vsa::JSVsaError ErrorCode { Microsoft::JScript::Vsa::JSVsaError get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : Microsoft.JScript.Vsa.JSVsaError" Usage="Microsoft.JScript.Vsa.JSVsaException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="jSVsaException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jSVsaException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

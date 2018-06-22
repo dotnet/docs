@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ThreadExceptionDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadExceptionDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThreadExceptionDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type ThreadExceptionDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ThreadExceptionDialog.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (t As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadExceptionDialog(Exception ^ t);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ThreadExceptionDialog : Exception -&gt; System.Windows.Forms.ThreadExceptionDialog" Usage="new System.Windows.Forms.ThreadExceptionDialog t" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ThreadExceptionDialog.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.ThreadExceptionDialog.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ThreadExceptionDialog.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComponentsLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class ComponentsLocation" />
+  <TypeSignature Language="F#" Value="type ComponentsLocation = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 2" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.HomeSite" />
       <MemberSignature Language="VB.NET" Value="HomeSite" />
       <MemberSignature Language="C++ CLI" Value="HomeSite" />
+      <MemberSignature Language="F#" Value="HomeSite = 0" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.HomeSite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Relative" />
       <MemberSignature Language="VB.NET" Value="Relative" />
       <MemberSignature Language="C++ CLI" Value="Relative" />
+      <MemberSignature Language="F#" Value="Relative = 1" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Relative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

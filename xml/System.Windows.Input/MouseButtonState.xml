@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseButtonState" />
   <TypeSignature Language="VB.NET" Value="Public Enum MouseButtonState" />
   <TypeSignature Language="C++ CLI" Value="public enum class MouseButtonState" />
+  <TypeSignature Language="F#" Value="type MouseButtonState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButtonState.Pressed" />
       <MemberSignature Language="VB.NET" Value="Pressed" />
       <MemberSignature Language="C++ CLI" Value="Pressed" />
+      <MemberSignature Language="F#" Value="Pressed = 1" Usage="System.Windows.Input.MouseButtonState.Pressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseButtonState.Released" />
       <MemberSignature Language="VB.NET" Value="Released" />
       <MemberSignature Language="C++ CLI" Value="Released" />
+      <MemberSignature Language="F#" Value="Released = 0" Usage="System.Windows.Input.MouseButtonState.Released" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

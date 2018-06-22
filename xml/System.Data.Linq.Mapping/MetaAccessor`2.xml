@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaAccessor`2" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaAccessor(Of TEntity, TMember)&#xA;Inherits MetaAccessor" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity, typename TMember&gt;&#xA;public ref class MetaAccessor abstract : System::Data::Linq::Mapping::MetaAccessor" />
+  <TypeSignature Language="F#" Value="type MetaAccessor&lt;'Entity, 'Member&gt; = class&#xA;    inherit MetaAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetBoxedValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoxedValue (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetBoxedValue(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="override this.GetBoxedValue : obj -&gt; obj" Usage="metaAccessor.GetBoxedValue instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (instance As TEntity) As TMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract TMember GetValue(TEntity instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : 'Entity -&gt; 'Member" Usage="metaAccessor.GetValue instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetBoxedValue(System.Object@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetBoxedValue (ByRef instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetBoxedValue(System::Object ^ % instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetBoxedValue :  * obj -&gt; unit" Usage="metaAccessor.SetBoxedValue (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetValue(`0@,`1)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (ByRef instance As TEntity, value As TMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(TEntity % instance, TMember value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue :  * 'Member -&gt; unit" Usage="metaAccessor.SetValue (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaAccessor`2.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Data.Linq.Mapping.MetaAccessor&lt;'Entity, 'Member&gt;.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

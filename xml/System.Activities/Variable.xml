@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Variable" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Variable&#xA;Inherits LocationReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class Variable abstract : System::Activities::LocationReference" />
+  <TypeSignature Language="F#" Value="type Variable = class&#xA;    inherit LocationReference" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Variable Create(string name, class System.Type type, valuetype System.Activities.VariableModifiers modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable.Create(System.String,System.Type,System.Activities.VariableModifiers)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Variable ^ Create(System::String ^ name, Type ^ type, System::Activities::VariableModifiers modifiers);" />
+      <MemberSignature Language="F#" Value="static member Create : string * Type * System.Activities.VariableModifiers -&gt; System.Activities.Variable" Usage="System.Activities.Variable.Create (name, type, modifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As ActivityWithResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityWithResult ^ Default { System::Activities::ActivityWithResult ^ get(); void set(System::Activities::ActivityWithResult ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Activities.ActivityWithResult with get, set" Usage="System.Activities.Variable.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable.Get(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Get : System.Activities.ActivityContext -&gt; obj" Usage="variable.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable.GetLocation(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocation (context As ActivityContext) As Location" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Activities::Location ^ GetLocation(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location" Usage="variable.GetLocation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property Modifiers As VariableModifiers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::VariableModifiers Modifiers { System::Activities::VariableModifiers get(); void set(System::Activities::VariableModifiers value); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Activities.VariableModifiers with get, set" Usage="System.Activities.Variable.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Variable.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable.NameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property NameCore As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ NameCore { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameCore : string" Usage="System.Activities.Variable.NameCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable.Set(System.Activities.ActivityContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Activities.ActivityContext * obj -&gt; unit" Usage="variable.Set (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintQueueStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintQueueStatus" />
+  <TypeSignature Language="F#" Value="type PrintQueueStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Busy" />
       <MemberSignature Language="VB.NET" Value="Busy" />
       <MemberSignature Language="C++ CLI" Value="Busy" />
+      <MemberSignature Language="F#" Value="Busy = 512" Usage="System.Printing.PrintQueueStatus.Busy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.DoorOpen" />
       <MemberSignature Language="VB.NET" Value="DoorOpen" />
       <MemberSignature Language="C++ CLI" Value="DoorOpen" />
+      <MemberSignature Language="F#" Value="DoorOpen = 4194304" Usage="System.Printing.PrintQueueStatus.DoorOpen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="System.Printing.PrintQueueStatus.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Initializing" />
       <MemberSignature Language="VB.NET" Value="Initializing" />
       <MemberSignature Language="C++ CLI" Value="Initializing" />
+      <MemberSignature Language="F#" Value="Initializing = 32768" Usage="System.Printing.PrintQueueStatus.Initializing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.IOActive" />
       <MemberSignature Language="VB.NET" Value="IOActive" />
       <MemberSignature Language="C++ CLI" Value="IOActive" />
+      <MemberSignature Language="F#" Value="IOActive = 256" Usage="System.Printing.PrintQueueStatus.IOActive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.ManualFeed" />
       <MemberSignature Language="VB.NET" Value="ManualFeed" />
       <MemberSignature Language="C++ CLI" Value="ManualFeed" />
+      <MemberSignature Language="F#" Value="ManualFeed = 32" Usage="System.Printing.PrintQueueStatus.ManualFeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintQueueStatus.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.NotAvailable" />
       <MemberSignature Language="VB.NET" Value="NotAvailable" />
       <MemberSignature Language="C++ CLI" Value="NotAvailable" />
+      <MemberSignature Language="F#" Value="NotAvailable = 4096" Usage="System.Printing.PrintQueueStatus.NotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -198,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.NoToner" />
       <MemberSignature Language="VB.NET" Value="NoToner" />
       <MemberSignature Language="C++ CLI" Value="NoToner" />
+      <MemberSignature Language="F#" Value="NoToner = 262144" Usage="System.Printing.PrintQueueStatus.NoToner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -217,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Offline" />
       <MemberSignature Language="VB.NET" Value="Offline" />
       <MemberSignature Language="C++ CLI" Value="Offline" />
+      <MemberSignature Language="F#" Value="Offline = 128" Usage="System.Printing.PrintQueueStatus.Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -236,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.OutOfMemory" />
       <MemberSignature Language="VB.NET" Value="OutOfMemory" />
       <MemberSignature Language="C++ CLI" Value="OutOfMemory" />
+      <MemberSignature Language="F#" Value="OutOfMemory = 2097152" Usage="System.Printing.PrintQueueStatus.OutOfMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -255,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.OutputBinFull" />
       <MemberSignature Language="VB.NET" Value="OutputBinFull" />
       <MemberSignature Language="C++ CLI" Value="OutputBinFull" />
+      <MemberSignature Language="F#" Value="OutputBinFull = 2048" Usage="System.Printing.PrintQueueStatus.OutputBinFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -274,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PagePunt" />
       <MemberSignature Language="VB.NET" Value="PagePunt" />
       <MemberSignature Language="C++ CLI" Value="PagePunt" />
+      <MemberSignature Language="F#" Value="PagePunt = 524288" Usage="System.Printing.PrintQueueStatus.PagePunt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -293,6 +307,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperJam" />
       <MemberSignature Language="VB.NET" Value="PaperJam" />
       <MemberSignature Language="C++ CLI" Value="PaperJam" />
+      <MemberSignature Language="F#" Value="PaperJam = 8" Usage="System.Printing.PrintQueueStatus.PaperJam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperOut" />
       <MemberSignature Language="VB.NET" Value="PaperOut" />
       <MemberSignature Language="C++ CLI" Value="PaperOut" />
+      <MemberSignature Language="F#" Value="PaperOut = 16" Usage="System.Printing.PrintQueueStatus.PaperOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -331,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperProblem" />
       <MemberSignature Language="VB.NET" Value="PaperProblem" />
       <MemberSignature Language="C++ CLI" Value="PaperProblem" />
+      <MemberSignature Language="F#" Value="PaperProblem = 64" Usage="System.Printing.PrintQueueStatus.PaperProblem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -350,6 +367,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Paused" />
       <MemberSignature Language="VB.NET" Value="Paused" />
       <MemberSignature Language="C++ CLI" Value="Paused" />
+      <MemberSignature Language="F#" Value="Paused = 1" Usage="System.Printing.PrintQueueStatus.Paused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -369,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PendingDeletion" />
       <MemberSignature Language="VB.NET" Value="PendingDeletion" />
       <MemberSignature Language="C++ CLI" Value="PendingDeletion" />
+      <MemberSignature Language="F#" Value="PendingDeletion = 4" Usage="System.Printing.PrintQueueStatus.PendingDeletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -388,6 +407,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PowerSave" />
       <MemberSignature Language="VB.NET" Value="PowerSave" />
       <MemberSignature Language="C++ CLI" Value="PowerSave" />
+      <MemberSignature Language="F#" Value="PowerSave = 16777216" Usage="System.Printing.PrintQueueStatus.PowerSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -407,6 +427,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Printing" />
       <MemberSignature Language="VB.NET" Value="Printing" />
       <MemberSignature Language="C++ CLI" Value="Printing" />
+      <MemberSignature Language="F#" Value="Printing = 1024" Usage="System.Printing.PrintQueueStatus.Printing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -426,6 +447,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Processing" />
       <MemberSignature Language="VB.NET" Value="Processing" />
       <MemberSignature Language="C++ CLI" Value="Processing" />
+      <MemberSignature Language="F#" Value="Processing = 16384" Usage="System.Printing.PrintQueueStatus.Processing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -445,6 +467,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.ServerUnknown" />
       <MemberSignature Language="VB.NET" Value="ServerUnknown" />
       <MemberSignature Language="C++ CLI" Value="ServerUnknown" />
+      <MemberSignature Language="F#" Value="ServerUnknown = 8388608" Usage="System.Printing.PrintQueueStatus.ServerUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -464,6 +487,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.TonerLow" />
       <MemberSignature Language="VB.NET" Value="TonerLow" />
       <MemberSignature Language="C++ CLI" Value="TonerLow" />
+      <MemberSignature Language="F#" Value="TonerLow = 131072" Usage="System.Printing.PrintQueueStatus.TonerLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -483,6 +507,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.UserIntervention" />
       <MemberSignature Language="VB.NET" Value="UserIntervention" />
       <MemberSignature Language="C++ CLI" Value="UserIntervention" />
+      <MemberSignature Language="F#" Value="UserIntervention = 1048576" Usage="System.Printing.PrintQueueStatus.UserIntervention" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -502,6 +527,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Waiting" />
       <MemberSignature Language="VB.NET" Value="Waiting" />
       <MemberSignature Language="C++ CLI" Value="Waiting" />
+      <MemberSignature Language="F#" Value="Waiting = 8192" Usage="System.Printing.PrintQueueStatus.Waiting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -521,6 +547,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.WarmingUp" />
       <MemberSignature Language="VB.NET" Value="WarmingUp" />
       <MemberSignature Language="C++ CLI" Value="WarmingUp" />
+      <MemberSignature Language="F#" Value="WarmingUp = 65536" Usage="System.Printing.PrintQueueStatus.WarmingUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

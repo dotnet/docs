@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataParameter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataParameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataParameter sealed" />
+  <TypeSignature Language="F#" Value="type DesignerDataParameter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataParameter.#ctor(System.String,System.Data.DbType,System.Data.ParameterDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, direction As ParameterDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataParameter(System::String ^ name, System::Data::DbType dataType, System::Data::ParameterDirection direction);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataParameter : string * System.Data.DbType * System.Data.ParameterDirection -&gt; System.ComponentModel.Design.Data.DesignerDataParameter" Usage="new System.ComponentModel.Design.Data.DesignerDataParameter (name, dataType, direction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.DataType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DataType { System::Data::DbType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : System.Data.DbType" Usage="System.ComponentModel.Design.Data.DesignerDataParameter.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As ParameterDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection" Usage="System.ComponentModel.Design.Data.DesignerDataParameter.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataParameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteType" />
   <TypeSignature Language="VB.NET" Value="Public Enum StickyNoteType" />
   <TypeSignature Language="C++ CLI" Value="public enum class StickyNoteType" />
+  <TypeSignature Language="F#" Value="type StickyNoteType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Ink" />
       <MemberSignature Language="VB.NET" Value="Ink" />
       <MemberSignature Language="C++ CLI" Value="Ink" />
+      <MemberSignature Language="F#" Value="Ink = 1" Usage="System.Windows.Controls.StickyNoteType.Ink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Windows.Controls.StickyNoteType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

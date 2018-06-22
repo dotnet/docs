@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentDiscoveryService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentDiscoveryService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentDiscoveryService" />
+  <TypeSignature Language="F#" Value="type IComponentDiscoveryService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes(System.ComponentModel.Design.IDesignerHost,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetComponentTypes (designerHost As IDesignerHost, baseType As Type) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetComponentTypes(System::ComponentModel::Design::IDesignerHost ^ designerHost, Type ^ baseType);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentTypes : System.ComponentModel.Design.IDesignerHost * Type -&gt; System.Collections.ICollection" Usage="iComponentDiscoveryService.GetComponentTypes (designerHost, baseType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

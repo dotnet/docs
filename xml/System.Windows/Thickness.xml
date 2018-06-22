@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Thickness" />
   <TypeSignature Language="VB.NET" Value="Public Structure Thickness&#xA;Implements IEquatable(Of Thickness)" />
   <TypeSignature Language="C++ CLI" Value="public value class Thickness : IEquatable&lt;System::Windows::Thickness&gt;" />
+  <TypeSignature Language="F#" Value="type Thickness = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uniformLength As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thickness(double uniformLength);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Thickness : double -&gt; System.Windows.Thickness" Usage="new System.Windows.Thickness uniformLength" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (left As Double, top As Double, right As Double, bottom As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thickness(double left, double top, double right, double bottom);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Thickness : double * double * double * double -&gt; System.Windows.Thickness" Usage="new System.Windows.Thickness (left, top, right, bottom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Property Bottom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Bottom { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : double with get, set" Usage="System.Windows.Thickness.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="thickness.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Thickness thickness) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.Equals(System.Windows.Thickness)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Thickness thickness);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Thickness -&gt; bool" Usage="thickness.Equals thickness" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="thickness.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double with get, set" Usage="System.Windows.Thickness.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Equality(System.Windows.Thickness,System.Windows.Thickness)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (t1 As Thickness, t2 As Thickness) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Thickness t1, System::Windows::Thickness t2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Thickness * System.Windows.Thickness -&gt; bool" Usage="t1 = t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Inequality(System.Windows.Thickness,System.Windows.Thickness)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (t1 As Thickness, t2 As Thickness) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Thickness t1, System::Windows::Thickness t2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Thickness * System.Windows.Thickness -&gt; bool" Usage="System.Windows.Thickness.op_Inequality (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -385,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Right { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : double with get, set" Usage="System.Windows.Thickness.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -416,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Thickness.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double with get, set" Usage="System.Windows.Thickness.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -447,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="thickness.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

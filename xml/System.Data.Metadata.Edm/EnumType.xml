@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EnumType" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumType&#xA;Inherits SimpleType" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumType : System::Data::Metadata::Edm::SimpleType" />
+  <TypeSignature Language="F#" Value="type EnumType = class&#xA;    inherit SimpleType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.EnumType.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.IsFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFlags As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFlags { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFlags : bool" Usage="System.Data.Metadata.Edm.EnumType.IsFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.Members" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As ReadOnlyMetadataCollection(Of EnumMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EnumMember ^&gt; ^ Members { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EnumMember ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Members : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EnumMember&gt;" Usage="System.Data.Metadata.Edm.EnumType.Members" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.UnderlyingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingType As PrimitiveType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::PrimitiveType ^ UnderlyingType { System::Data::Metadata::Edm::PrimitiveType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingType : System.Data.Metadata.Edm.PrimitiveType" Usage="System.Data.Metadata.Edm.EnumType.UnderlyingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

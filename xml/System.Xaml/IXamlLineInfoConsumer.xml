@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlLineInfoConsumer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlLineInfoConsumer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlLineInfoConsumer" />
+  <TypeSignature Language="F#" Value="type IXamlLineInfoConsumer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlLineInfoConsumer.SetLineInfo(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLineInfo (lineNumber As Integer, linePosition As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLineInfo(int lineNumber, int linePosition);" />
+      <MemberSignature Language="F#" Value="abstract member SetLineInfo : int * int -&gt; unit" Usage="iXamlLineInfoConsumer.SetLineInfo (lineNumber, linePosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlLineInfoConsumer.ShouldProvideLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShouldProvideLineInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShouldProvideLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldProvideLineInfo : bool" Usage="System.Xaml.IXamlLineInfoConsumer.ShouldProvideLineInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

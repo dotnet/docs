@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader" />
   <TypeSignature Language="VB.NET" Value="Public Class ManifestReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManifestReader abstract sealed" />
+  <TypeSignature Language="F#" Value="type ManifestReader = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadManifest (input As Stream, preserveStream As Boolean) As Manifest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ ReadManifest(System::IO::Stream ^ input, bool preserveStream);" />
+      <MemberSignature Language="F#" Value="static member ReadManifest : System.IO.Stream * bool -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest (input, preserveStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadManifest (path As String, preserveStream As Boolean) As Manifest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ ReadManifest(System::String ^ path, bool preserveStream);" />
+      <MemberSignature Language="F#" Value="static member ReadManifest : string * bool -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest (path, preserveStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadManifest (manifestType As String, input As Stream, preserveStream As Boolean) As Manifest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ ReadManifest(System::String ^ manifestType, System::IO::Stream ^ input, bool preserveStream);" />
+      <MemberSignature Language="F#" Value="static member ReadManifest : string * System.IO.Stream * bool -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest (manifestType, input, preserveStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadManifest (manifestType As String, path As String, preserveStream As Boolean) As Manifest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ ReadManifest(System::String ^ manifestType, System::String ^ path, bool preserveStream);" />
+      <MemberSignature Language="F#" Value="static member ReadManifest : string * string * bool -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest (manifestType, path, preserveStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

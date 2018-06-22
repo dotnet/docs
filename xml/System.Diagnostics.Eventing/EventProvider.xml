@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class EventProvider&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventProvider : IDisposable" />
+  <TypeSignature Language="F#" Value="type EventProvider = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerGuid As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProvider(Guid providerGuid);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.EventProvider : Guid -&gt; System.Diagnostics.Eventing.EventProvider" Usage="new System.Diagnostics.Eventing.EventProvider providerGuid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="eventProvider.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.CreateActivityId" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateActivityId () As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid CreateActivityId();" />
+      <MemberSignature Language="F#" Value="static member CreateActivityId : unit -&gt; Guid" Usage="System.Diagnostics.Eventing.EventProvider.CreateActivityId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventProvider.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!EventProvider ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="eventProvider.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastWriteEventError () As EventProvider.WriteEventErrorCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Eventing::EventProvider::WriteEventErrorCode GetLastWriteEventError();" />
+      <MemberSignature Language="F#" Value="static member GetLastWriteEventError : unit -&gt; System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode" Usage="System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEnabled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled();" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : unit -&gt; bool" Usage="eventProvider.IsEnabled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.IsEnabled(System.Byte,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEnabled (level As Byte, keywords As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled(System::Byte level, long keywords);" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : byte * int64 -&gt; bool" Usage="eventProvider.IsEnabled (level, keywords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetActivityId (ByRef id As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetActivityId(Guid % id);" />
+      <MemberSignature Language="F#" Value="static member SetActivityId :  -&gt; unit" Usage="System.Diagnostics.Eventing.EventProvider.SetActivityId id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -394,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteEvent (ByRef eventDescriptor As EventDescriptor, ParamArray eventPayload As Object()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WriteEvent(System::Diagnostics::Eventing::EventDescriptor % eventDescriptor, ... cli::array &lt;System::Object ^&gt; ^ eventPayload);" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent :  * obj[] -&gt; bool" Usage="eventProvider.WriteEvent (eventDescriptor, eventPayload)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -481,6 +493,7 @@ enum Level
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteEvent (ByRef eventDescriptor As EventDescriptor, data As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WriteEvent(System::Diagnostics::Eventing::EventDescriptor % eventDescriptor, System::String ^ data);" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent :  * string -&gt; bool" Usage="eventProvider.WriteEvent (eventDescriptor, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -546,6 +559,7 @@ provider.Close();
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Function WriteEvent (ByRef eventDescriptor As EventDescriptor, dataCount As Integer, data As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool WriteEvent(System::Diagnostics::Eventing::EventDescriptor % eventDescriptor, int dataCount, IntPtr data);" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent :  * int * nativeint -&gt; bool" Usage="eventProvider.WriteEvent (eventDescriptor, dataCount, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -603,6 +617,7 @@ provider.Close();
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteMessageEvent (eventMessage As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WriteMessageEvent(System::String ^ eventMessage);" />
+      <MemberSignature Language="F#" Value="member this.WriteMessageEvent : string -&gt; bool" Usage="eventProvider.WriteMessageEvent eventMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -644,6 +659,7 @@ if (!provider.WriteMessageEvent("Event string."))
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(System.String,System.Byte,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteMessageEvent (eventMessage As String, eventLevel As Byte, eventKeywords As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WriteMessageEvent(System::String ^ eventMessage, System::Byte eventLevel, long eventKeywords);" />
+      <MemberSignature Language="F#" Value="member this.WriteMessageEvent : string * byte * int64 -&gt; bool" Usage="eventProvider.WriteMessageEvent (eventMessage, eventLevel, eventKeywords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -710,6 +726,7 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteTransferEvent (ByRef eventDescriptor As EventDescriptor, relatedActivityId As Guid, ParamArray eventPayload As Object()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WriteTransferEvent(System::Diagnostics::Eventing::EventDescriptor % eventDescriptor, Guid relatedActivityId, ... cli::array &lt;System::Object ^&gt; ^ eventPayload);" />
+      <MemberSignature Language="F#" Value="member this.WriteTransferEvent :  * Guid * obj[] -&gt; bool" Usage="eventProvider.WriteTransferEvent (eventDescriptor, relatedActivityId, eventPayload)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -759,6 +776,7 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Function WriteTransferEvent (ByRef eventDescriptor As EventDescriptor, relatedActivityId As Guid, dataCount As Integer, data As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool WriteTransferEvent(System::Diagnostics::Eventing::EventDescriptor % eventDescriptor, Guid relatedActivityId, int dataCount, IntPtr data);" />
+      <MemberSignature Language="F#" Value="member this.WriteTransferEvent :  * Guid * int * nativeint -&gt; bool" Usage="eventProvider.WriteTransferEvent (eventDescriptor, relatedActivityId, dataCount, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

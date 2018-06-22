@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessageOrigination" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerMessageOrigination" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerMessageOrigination" />
+  <TypeSignature Language="F#" Value="type PeerMessageOrigination = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 0" Usage="System.ServiceModel.PeerMessageOrigination.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Remote" />
       <MemberSignature Language="VB.NET" Value="Remote" />
       <MemberSignature Language="C++ CLI" Value="Remote" />
+      <MemberSignature Language="F#" Value="Remote = 1" Usage="System.ServiceModel.PeerMessageOrigination.Remote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

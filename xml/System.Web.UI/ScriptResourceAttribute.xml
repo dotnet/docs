@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptResourceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptResourceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute scriptName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scriptName As String, stringResourceName As String, stringResourceClientTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceAttribute(System::String ^ scriptName, System::String ^ stringResourceName, System::String ^ stringResourceClientTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptResourceAttribute : string * string * string -&gt; System.Web.UI.ScriptResourceAttribute" Usage="new System.Web.UI.ScriptResourceAttribute (scriptName, stringResourceName, stringResourceClientTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.ScriptName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScriptName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptName : string" Usage="System.Web.UI.ScriptResourceAttribute.ScriptName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.ScriptResourceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScriptResourceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptResourceName : string" Usage="System.Web.UI.ScriptResourceAttribute.ScriptResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.StringResourceClientTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StringResourceClientTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StringResourceClientTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StringResourceClientTypeName : string" Usage="System.Web.UI.ScriptResourceAttribute.StringResourceClientTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.StringResourceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StringResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StringResourceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StringResourceName : string" Usage="System.Web.UI.ScriptResourceAttribute.StringResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Web.UI.ScriptResourceAttribute.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

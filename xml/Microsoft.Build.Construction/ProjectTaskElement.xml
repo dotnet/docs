@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectTaskElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectTaskElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectTaskElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectTaskElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.AddOutputItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOutputItem (taskParameter As String, itemType As String) As ProjectOutputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectOutputElement ^ AddOutputItem(System::String ^ taskParameter, System::String ^ itemType);" />
+      <MemberSignature Language="F#" Value="member this.AddOutputItem : string * string -&gt; Microsoft.Build.Construction.ProjectOutputElement" Usage="projectTaskElement.AddOutputItem (taskParameter, itemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.AddOutputItem(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOutputItem (taskParameter As String, itemType As String, condition As String) As ProjectOutputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectOutputElement ^ AddOutputItem(System::String ^ taskParameter, System::String ^ itemType, System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.AddOutputItem : string * string * string -&gt; Microsoft.Build.Construction.ProjectOutputElement" Usage="projectTaskElement.AddOutputItem (taskParameter, itemType, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.AddOutputProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOutputProperty (taskParameter As String, propertyName As String) As ProjectOutputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectOutputElement ^ AddOutputProperty(System::String ^ taskParameter, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.AddOutputProperty : string * string -&gt; Microsoft.Build.Construction.ProjectOutputElement" Usage="projectTaskElement.AddOutputProperty (taskParameter, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.AddOutputProperty(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOutputProperty (taskParameter As String, propertyName As String, condition As String) As ProjectOutputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectOutputElement ^ AddOutputProperty(System::String ^ taskParameter, System::String ^ propertyName, System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.AddOutputProperty : string * string * string -&gt; Microsoft.Build.Construction.ProjectOutputElement" Usage="projectTaskElement.AddOutputProperty (taskParameter, propertyName, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.ContinueOnError" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinueOnError As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContinueOnError { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : string with get, set" Usage="Microsoft.Build.Construction.ProjectTaskElement.ContinueOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.ContinueOnErrorLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinueOnErrorLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ContinueOnErrorLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnErrorLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTaskElement.ContinueOnErrorLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.GetParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameter (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetParameter(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetParameter : string -&gt; string" Usage="projectTaskElement.GetParameter name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.MSBuildArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property MSBuildArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MSBuildArchitecture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MSBuildArchitecture : string with get, set" Usage="Microsoft.Build.Construction.ProjectTaskElement.MSBuildArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.MSBuildArchitectureLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MSBuildArchitectureLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ MSBuildArchitectureLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MSBuildArchitectureLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTaskElement.MSBuildArchitectureLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.MSBuildRuntime" />
       <MemberSignature Language="VB.NET" Value="Public Property MSBuildRuntime As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MSBuildRuntime { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MSBuildRuntime : string with get, set" Usage="Microsoft.Build.Construction.ProjectTaskElement.MSBuildRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -321,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.MSBuildRuntimeLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MSBuildRuntimeLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ MSBuildRuntimeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MSBuildRuntimeLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTaskElement.MSBuildRuntimeLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -343,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Construction.ProjectTaskElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -363,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.Outputs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Outputs As ICollection(Of ProjectOutputElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectOutputElement ^&gt; ^ Outputs { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectOutputElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Outputs : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOutputElement&gt;" Usage="Microsoft.Build.Construction.ProjectTaskElement.Outputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.ParameterLocations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterLocations As IEnumerable(Of KeyValuePair(Of String, ElementLocation))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Microsoft::Build::Construction::ElementLocation ^&gt;&gt; ^ ParameterLocations { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Microsoft::Build::Construction::ElementLocation ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterLocations : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, Microsoft.Build.Construction.ElementLocation&gt;&gt;" Usage="Microsoft.Build.Construction.ProjectTaskElement.ParameterLocations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -409,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTaskElement.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Parameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Construction.ProjectTaskElement.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -436,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.RemoveAllParameters" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllParameters ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllParameters();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllParameters : unit -&gt; unit" Usage="projectTaskElement.RemoveAllParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -456,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.RemoveParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveParameter (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveParameter(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.RemoveParameter : string -&gt; unit" Usage="projectTaskElement.RemoveParameter name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -479,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTaskElement.SetParameter(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetParameter (name As String, unevaluatedValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParameter(System::String ^ name, System::String ^ unevaluatedValue);" />
+      <MemberSignature Language="F#" Value="member this.SetParameter : string * string -&gt; unit" Usage="projectTaskElement.SetParameter (name, unevaluatedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

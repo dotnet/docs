@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryCacheSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryCacheSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type MemoryCacheSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Add(System.Runtime.Caching.Configuration.MemoryCacheElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (cache As MemoryCacheElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Runtime::Caching::Configuration::MemoryCacheElement ^ cache);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Runtime.Caching.Configuration.MemoryCacheElement -&gt; unit" Usage="memoryCacheSettingsCollection.Add cache" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="memoryCacheSettingsCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.CollectionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="memoryCacheSettingsCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.CreateNewElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement (elementName As String) As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement(System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : string -&gt; System.Configuration.ConfigurationElement" Usage="memoryCacheSettingsCollection.CreateNewElement elementName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="memoryCacheSettingsCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.IndexOf(System.Runtime.Caching.Configuration.MemoryCacheElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (cache As MemoryCacheElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Runtime::Caching::Configuration::MemoryCacheElement ^ cache);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Runtime.Caching.Configuration.MemoryCacheElement -&gt; int" Usage="memoryCacheSettingsCollection.IndexOf cache" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MemoryCacheElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Caching::Configuration::MemoryCacheElement ^ default[int] { System::Runtime::Caching::Configuration::MemoryCacheElement ^ get(int index); void set(int index, System::Runtime::Caching::Configuration::MemoryCacheElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Runtime.Caching.Configuration.MemoryCacheElement with get, set" Usage="System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As MemoryCacheElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Caching::Configuration::MemoryCacheElement ^ default[System::String ^] { System::Runtime::Caching::Configuration::MemoryCacheElement ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Runtime.Caching.Configuration.MemoryCacheElement" Usage="System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.Remove(System.Runtime.Caching.Configuration.MemoryCacheElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (cache As MemoryCacheElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Runtime::Caching::Configuration::MemoryCacheElement ^ cache);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Runtime.Caching.Configuration.MemoryCacheElement -&gt; unit" Usage="memoryCacheSettingsCollection.Remove cache" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -310,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="memoryCacheSettingsCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

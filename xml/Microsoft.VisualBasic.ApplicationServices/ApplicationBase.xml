@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationBase" />
+  <TypeSignature Language="F#" Value="type ApplicationBase = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.ChangeCulture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChangeCulture (cultureName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeCulture(System::String ^ cultureName);" />
+      <MemberSignature Language="F#" Value="member this.ChangeCulture : string -&gt; unit" Usage="applicationBase.ChangeCulture cultureName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.ChangeUICulture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChangeUICulture (cultureName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeUICulture(System::String ^ cultureName);" />
+      <MemberSignature Language="F#" Value="member this.ChangeUICulture : string -&gt; unit" Usage="applicationBase.ChangeUICulture cultureName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.GetEnvironmentVariable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnvironmentVariable (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetEnvironmentVariable(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetEnvironmentVariable : string -&gt; string" Usage="applicationBase.GetEnvironmentVariable name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -300,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As AssemblyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::ApplicationServices::AssemblyInfo ^ Info { Microsoft::VisualBasic::ApplicationServices::AssemblyInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Info : Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" Usage="Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -330,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Log As Log" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Logging::Log ^ Log { Microsoft::VisualBasic::Logging::Log ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Log : Microsoft.VisualBasic.Logging.Log" Usage="Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UICulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ UICulture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UICulture : System.Globalization.CultureInfo" Usage="Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

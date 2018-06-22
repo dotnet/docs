@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AssemblyReferenceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AssemblyReferenceType" />
+  <TypeSignature Language="F#" Value="type AssemblyReferenceType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ClickOnceManifest" />
       <MemberSignature Language="VB.NET" Value="ClickOnceManifest" />
       <MemberSignature Language="C++ CLI" Value="ClickOnceManifest" />
+      <MemberSignature Language="F#" Value="ClickOnceManifest = 1" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ClickOnceManifest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ManagedAssembly" />
       <MemberSignature Language="VB.NET" Value="ManagedAssembly" />
       <MemberSignature Language="C++ CLI" Value="ManagedAssembly" />
+      <MemberSignature Language="F#" Value="ManagedAssembly = 2" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ManagedAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.NativeAssembly" />
       <MemberSignature Language="VB.NET" Value="NativeAssembly" />
       <MemberSignature Language="C++ CLI" Value="NativeAssembly" />
+      <MemberSignature Language="F#" Value="NativeAssembly = 3" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.NativeAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

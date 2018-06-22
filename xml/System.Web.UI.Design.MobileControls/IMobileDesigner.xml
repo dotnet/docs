@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.IMobileDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMobileDesigner" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMobileDesigner" />
+  <TypeSignature Language="F#" Value="type IMobileDesigner = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateRendering ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateRendering();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateRendering : unit -&gt; unit" Usage="iMobileDesigner.UpdateRendering " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ParameterXPathQueryGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class ParameterXPathQueryGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterXPathQueryGenerator abstract sealed" />
+  <TypeSignature Language="F#" Value="type ParameterXPathQueryGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, class System.Type type, class System.Reflection.MemberInfo[] pathToMember, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ParameterXPathQueryGenerator.CreateFromDataContractSerializer(System.Xml.Linq.XName,System.String,System.String,System.Boolean,System.Type,System.Reflection.MemberInfo[],System.Xml.XmlNamespaceManager@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateFromDataContractSerializer(System::Xml::Linq::XName ^ serviceContractName, System::String ^ operationName, System::String ^ parameterName, bool isReply, Type ^ type, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ pathToMember, [Runtime::InteropServices::Out] System::Xml::XmlNamespaceManager ^ % namespaces);" />
+      <MemberSignature Language="F#" Value="static member CreateFromDataContractSerializer : System.Xml.Linq.XName * string * string * bool * Type * System.Reflection.MemberInfo[] *  -&gt; string" Usage="System.ServiceModel.Description.ParameterXPathQueryGenerator.CreateFromDataContractSerializer (serviceContractName, operationName, parameterName, isReply, type, pathToMember, namespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

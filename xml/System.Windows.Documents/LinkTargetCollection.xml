@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.LinkTargetCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinkTargetCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinkTargetCollection sealed : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type LinkTargetCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.Add(System.Windows.Documents.LinkTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As LinkTarget) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Documents::LinkTarget ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.LinkTarget -&gt; int" Usage="linkTargetCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.Contains(System.Windows.Documents.LinkTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As LinkTarget) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Documents::LinkTarget ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Documents.LinkTarget -&gt; bool" Usage="linkTargetCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.CopyTo(System.Windows.Documents.LinkTarget[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As LinkTarget(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Documents::LinkTarget ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Documents.LinkTarget[] * int -&gt; unit" Usage="linkTargetCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.IndexOf(System.Windows.Documents.LinkTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As LinkTarget) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Documents::LinkTarget ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Documents.LinkTarget -&gt; int" Usage="linkTargetCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.Insert(System.Int32,System.Windows.Documents.LinkTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As LinkTarget)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Documents::LinkTarget ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Documents.LinkTarget -&gt; unit" Usage="linkTargetCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.LinkTargetCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As LinkTarget" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::LinkTarget ^ default[int] { System::Windows::Documents::LinkTarget ^ get(int index); void set(int index, System::Windows::Documents::LinkTarget ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Documents.LinkTarget with get, set" Usage="System.Windows.Documents.LinkTargetCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LinkTargetCollection.Remove(System.Windows.Documents.LinkTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As LinkTarget)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Documents::LinkTarget ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Documents.LinkTarget -&gt; unit" Usage="linkTargetCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

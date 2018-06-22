@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FreezableCollection`1.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure FreezableCollection(Of T).Enumerator&#xA;Implements IEnumerator(Of T)" />
   <TypeSignature Language="C++ CLI" Value="public:  where T : DependencyObjectvalue class FreezableCollection&lt;T&gt;::Enumerator : System::Collections::Generic::IEnumerator&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type FreezableCollection&lt;'T (requires 'T :&gt; DependencyObject)&gt;.Enumerator = struct&#xA;    interface IEnumerator&#xA;    interface IEnumerator&lt;'T (requires 'T :&gt; DependencyObject)&gt;&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FreezableCollection`1.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Windows.FreezableCollection&lt;'T (requires 'T :&gt; System.Windows.DependencyObject)&gt;.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FreezableCollection`1.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FreezableCollection`1.Enumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="enumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FreezableCollection`1.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.FreezableCollection&lt;'T (requires 'T :&gt; System.Windows.DependencyObject)&gt;.Enumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

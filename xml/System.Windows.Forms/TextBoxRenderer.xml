@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextBoxRenderer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextBoxRenderer" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextBoxRenderer sealed" />
+  <TypeSignature Language="F#" Value="type TextBoxRenderer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxRenderer.DrawTextBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TextBoxState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawTextBox (g As Graphics, bounds As Rectangle, state As TextBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTextBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TextBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawTextBox : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TextBoxState -&gt; unit" Usage="System.Windows.Forms.TextBoxRenderer.DrawTextBox (g, bounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxRenderer.DrawTextBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.VisualStyles.TextBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTextBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ textBoxText, System::Drawing::Font ^ font, System::Windows::Forms::VisualStyles::TextBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawTextBox : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.VisualStyles.TextBoxState -&gt; unit" Usage="System.Windows.Forms.TextBoxRenderer.DrawTextBox (g, bounds, textBoxText, font, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Drawing.Rectangle textBounds, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxRenderer.DrawTextBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TextBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTextBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ textBoxText, System::Drawing::Font ^ font, System::Drawing::Rectangle textBounds, System::Windows::Forms::VisualStyles::TextBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawTextBox : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TextBoxState -&gt; unit" Usage="System.Windows.Forms.TextBoxRenderer.DrawTextBox (g, bounds, textBoxText, font, textBounds, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxRenderer.DrawTextBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Windows.Forms.VisualStyles.TextBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTextBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ textBoxText, System::Drawing::Font ^ font, System::Windows::Forms::TextFormatFlags flags, System::Windows::Forms::VisualStyles::TextBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawTextBox : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.TextFormatFlags * System.Windows.Forms.VisualStyles.TextBoxState -&gt; unit" Usage="System.Windows.Forms.TextBoxRenderer.DrawTextBox (g, bounds, textBoxText, font, flags, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +243,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Drawing.Rectangle textBounds, valuetype System.Windows.Forms.TextFormatFlags flags, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxRenderer.DrawTextBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Windows.Forms.TextFormatFlags,System.Windows.Forms.VisualStyles.TextBoxState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTextBox(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ textBoxText, System::Drawing::Font ^ font, System::Drawing::Rectangle textBounds, System::Windows::Forms::TextFormatFlags flags, System::Windows::Forms::VisualStyles::TextBoxState state);" />
+      <MemberSignature Language="F#" Value="static member DrawTextBox : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Drawing.Rectangle * System.Windows.Forms.TextFormatFlags * System.Windows.Forms.VisualStyles.TextBoxState -&gt; unit" Usage="System.Windows.Forms.TextBoxRenderer.DrawTextBox (g, bounds, textBoxText, font, textBounds, flags, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -298,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBoxRenderer.IsSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Windows.Forms.TextBoxRenderer.IsSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

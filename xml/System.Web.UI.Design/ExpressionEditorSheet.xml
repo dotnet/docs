@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ExpressionEditorSheet" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionEditorSheet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionEditorSheet abstract" />
+  <TypeSignature Language="F#" Value="type ExpressionEditorSheet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExpressionEditorSheet(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ExpressionEditorSheet : IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet" Usage="new System.Web.UI.Design.ExpressionEditorSheet serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetExpression () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetExpression();" />
+      <MemberSignature Language="F#" Value="abstract member GetExpression : unit -&gt; string" Usage="expressionEditorSheet.GetExpression " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExpressionEditorSheet.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Web.UI.Design.ExpressionEditorSheet.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceProvider As IServiceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IServiceProvider ^ ServiceProvider { IServiceProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceProvider : IServiceProvider" Usage="System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DataMisalignedException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataMisalignedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataMisalignedException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type DataMisalignedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.DataMisalignedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataMisalignedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new DataMisalignedException : string -&gt; DataMisalignedException" Usage="new System.DataMisalignedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.DataMisalignedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataMisalignedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new DataMisalignedException : string * Exception -&gt; DataMisalignedException" Usage="new System.DataMisalignedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

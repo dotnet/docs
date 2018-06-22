@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.ISerializerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISerializerFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISerializerFactory" />
+  <TypeSignature Language="F#" Value="type ISerializerFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.ISerializerFactory.CreateSerializerWriter(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::Serialization::SerializerWriter ^ CreateSerializerWriter(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSerializerWriter : System.IO.Stream -&gt; System.Windows.Documents.Serialization.SerializerWriter" Usage="iSerializerFactory.CreateSerializerWriter stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DefaultFileExtension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFileExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFileExtension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFileExtension : string" Usage="System.Windows.Documents.Serialization.ISerializerFactory.DefaultFileExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Windows.Documents.Serialization.ISerializerFactory.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManufacturerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManufacturerName : string" Usage="System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerWebsite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerWebsite As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ManufacturerWebsite { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManufacturerWebsite : Uri" Usage="System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerWebsite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

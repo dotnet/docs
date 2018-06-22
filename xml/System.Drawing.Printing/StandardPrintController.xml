@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.StandardPrintController" />
   <TypeSignature Language="VB.NET" Value="Public Class StandardPrintController&#xA;Inherits PrintController" />
   <TypeSignature Language="C++ CLI" Value="public ref class StandardPrintController : System::Drawing::Printing::PrintController" />
+  <TypeSignature Language="F#" Value="type StandardPrintController = class&#xA;    inherit PrintController" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.StandardPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPage (document As PrintDocument, e As PrintPageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="standardPrintController.OnEndPage (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.StandardPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="standardPrintController.OnEndPrint (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.StandardPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function OnStartPage (document As PrintDocument, e As PrintPageEventArgs) As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Graphics ^ OnStartPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics" Usage="standardPrintController.OnStartPage (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.StandardPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnStartPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnStartPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="standardPrintController.OnStartPrint (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.SyndicationItemProperty" />
   <TypeSignature Language="VB.NET" Value="Public Enum SyndicationItemProperty" />
   <TypeSignature Language="C++ CLI" Value="public enum class SyndicationItemProperty" />
+  <TypeSignature Language="F#" Value="type SyndicationItemProperty = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorEmail" />
       <MemberSignature Language="VB.NET" Value="AuthorEmail" />
       <MemberSignature Language="C++ CLI" Value="AuthorEmail" />
+      <MemberSignature Language="F#" Value="AuthorEmail = 1" Usage="System.Data.Services.Common.SyndicationItemProperty.AuthorEmail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorName" />
       <MemberSignature Language="VB.NET" Value="AuthorName" />
       <MemberSignature Language="C++ CLI" Value="AuthorName" />
+      <MemberSignature Language="F#" Value="AuthorName = 2" Usage="System.Data.Services.Common.SyndicationItemProperty.AuthorName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorUri" />
       <MemberSignature Language="VB.NET" Value="AuthorUri" />
       <MemberSignature Language="C++ CLI" Value="AuthorUri" />
+      <MemberSignature Language="F#" Value="AuthorUri = 3" Usage="System.Data.Services.Common.SyndicationItemProperty.AuthorUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorEmail" />
       <MemberSignature Language="VB.NET" Value="ContributorEmail" />
       <MemberSignature Language="C++ CLI" Value="ContributorEmail" />
+      <MemberSignature Language="F#" Value="ContributorEmail = 4" Usage="System.Data.Services.Common.SyndicationItemProperty.ContributorEmail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorName" />
       <MemberSignature Language="VB.NET" Value="ContributorName" />
       <MemberSignature Language="C++ CLI" Value="ContributorName" />
+      <MemberSignature Language="F#" Value="ContributorName = 5" Usage="System.Data.Services.Common.SyndicationItemProperty.ContributorName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorUri" />
       <MemberSignature Language="VB.NET" Value="ContributorUri" />
       <MemberSignature Language="C++ CLI" Value="ContributorUri" />
+      <MemberSignature Language="F#" Value="ContributorUri = 6" Usage="System.Data.Services.Common.SyndicationItemProperty.ContributorUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.CustomProperty" />
       <MemberSignature Language="VB.NET" Value="CustomProperty" />
       <MemberSignature Language="C++ CLI" Value="CustomProperty" />
+      <MemberSignature Language="F#" Value="CustomProperty = 0" Usage="System.Data.Services.Common.SyndicationItemProperty.CustomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Published" />
       <MemberSignature Language="VB.NET" Value="Published" />
       <MemberSignature Language="C++ CLI" Value="Published" />
+      <MemberSignature Language="F#" Value="Published = 8" Usage="System.Data.Services.Common.SyndicationItemProperty.Published" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Rights" />
       <MemberSignature Language="VB.NET" Value="Rights" />
       <MemberSignature Language="C++ CLI" Value="Rights" />
+      <MemberSignature Language="F#" Value="Rights = 9" Usage="System.Data.Services.Common.SyndicationItemProperty.Rights" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Summary" />
       <MemberSignature Language="VB.NET" Value="Summary" />
       <MemberSignature Language="C++ CLI" Value="Summary" />
+      <MemberSignature Language="F#" Value="Summary = 10" Usage="System.Data.Services.Common.SyndicationItemProperty.Summary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Title" />
       <MemberSignature Language="VB.NET" Value="Title" />
       <MemberSignature Language="C++ CLI" Value="Title" />
+      <MemberSignature Language="F#" Value="Title = 11" Usage="System.Data.Services.Common.SyndicationItemProperty.Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -250,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Updated" />
       <MemberSignature Language="VB.NET" Value="Updated" />
       <MemberSignature Language="C++ CLI" Value="Updated" />
+      <MemberSignature Language="F#" Value="Updated = 7" Usage="System.Data.Services.Common.SyndicationItemProperty.Updated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

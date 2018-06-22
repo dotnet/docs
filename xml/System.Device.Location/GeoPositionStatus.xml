@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum GeoPositionStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class GeoPositionStatus" />
+  <TypeSignature Language="F#" Value="type GeoPositionStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 3" Usage="System.Device.Location.GeoPositionStatus.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Initializing" />
       <MemberSignature Language="VB.NET" Value="Initializing" />
       <MemberSignature Language="C++ CLI" Value="Initializing" />
+      <MemberSignature Language="F#" Value="Initializing = 1" Usage="System.Device.Location.GeoPositionStatus.Initializing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.NoData" />
       <MemberSignature Language="VB.NET" Value="NoData" />
       <MemberSignature Language="C++ CLI" Value="NoData" />
+      <MemberSignature Language="F#" Value="NoData = 2" Usage="System.Device.Location.GeoPositionStatus.NoData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Ready" />
       <MemberSignature Language="VB.NET" Value="Ready" />
       <MemberSignature Language="C++ CLI" Value="Ready" />
+      <MemberSignature Language="F#" Value="Ready = 0" Usage="System.Device.Location.GeoPositionStatus.Ready" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IButtonControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IButtonControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IButtonControl" />
+  <TypeSignature Language="F#" Value="type IButtonControl = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IButtonControl.DialogResult" />
       <MemberSignature Language="VB.NET" Value="Public Property DialogResult As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DialogResult DialogResult { System::Windows::Forms::DialogResult get(); void set(System::Windows::Forms::DialogResult value); };" />
+      <MemberSignature Language="F#" Value="member this.DialogResult : System.Windows.Forms.DialogResult with get, set" Usage="System.Windows.Forms.IButtonControl.DialogResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IButtonControl.NotifyDefault(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NotifyDefault (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyDefault(bool value);" />
+      <MemberSignature Language="F#" Value="abstract member NotifyDefault : bool -&gt; unit" Usage="iButtonControl.NotifyDefault value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IButtonControl.PerformClick" />
       <MemberSignature Language="VB.NET" Value="Public Sub PerformClick ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PerformClick();" />
+      <MemberSignature Language="F#" Value="abstract member PerformClick : unit -&gt; unit" Usage="iButtonControl.PerformClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

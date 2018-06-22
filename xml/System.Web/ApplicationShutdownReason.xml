@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationShutdownReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApplicationShutdownReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class ApplicationShutdownReason" />
+  <TypeSignature Language="F#" Value="type ApplicationShutdownReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.BinDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="BinDirChangeOrDirectoryRename" />
       <MemberSignature Language="C++ CLI" Value="BinDirChangeOrDirectoryRename" />
+      <MemberSignature Language="F#" Value="BinDirChangeOrDirectoryRename = 6" Usage="System.Web.ApplicationShutdownReason.BinDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.BrowsersDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="BrowsersDirChangeOrDirectoryRename" />
       <MemberSignature Language="C++ CLI" Value="BrowsersDirChangeOrDirectoryRename" />
+      <MemberSignature Language="F#" Value="BrowsersDirChangeOrDirectoryRename = 7" Usage="System.Web.ApplicationShutdownReason.BrowsersDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.BuildManagerChange" />
       <MemberSignature Language="VB.NET" Value="BuildManagerChange" />
       <MemberSignature Language="C++ CLI" Value="BuildManagerChange" />
+      <MemberSignature Language="F#" Value="BuildManagerChange = 15" Usage="System.Web.ApplicationShutdownReason.BuildManagerChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.ChangeInGlobalAsax" />
       <MemberSignature Language="VB.NET" Value="ChangeInGlobalAsax" />
       <MemberSignature Language="C++ CLI" Value="ChangeInGlobalAsax" />
+      <MemberSignature Language="F#" Value="ChangeInGlobalAsax = 2" Usage="System.Web.ApplicationShutdownReason.ChangeInGlobalAsax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.ChangeInSecurityPolicyFile" />
       <MemberSignature Language="VB.NET" Value="ChangeInSecurityPolicyFile" />
       <MemberSignature Language="C++ CLI" Value="ChangeInSecurityPolicyFile" />
+      <MemberSignature Language="F#" Value="ChangeInSecurityPolicyFile = 5" Usage="System.Web.ApplicationShutdownReason.ChangeInSecurityPolicyFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.CodeDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="CodeDirChangeOrDirectoryRename" />
       <MemberSignature Language="C++ CLI" Value="CodeDirChangeOrDirectoryRename" />
+      <MemberSignature Language="F#" Value="CodeDirChangeOrDirectoryRename = 8" Usage="System.Web.ApplicationShutdownReason.CodeDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.ConfigurationChange" />
       <MemberSignature Language="VB.NET" Value="ConfigurationChange" />
       <MemberSignature Language="C++ CLI" Value="ConfigurationChange" />
+      <MemberSignature Language="F#" Value="ConfigurationChange = 3" Usage="System.Web.ApplicationShutdownReason.ConfigurationChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.HostingEnvironment" />
       <MemberSignature Language="VB.NET" Value="HostingEnvironment" />
       <MemberSignature Language="C++ CLI" Value="HostingEnvironment" />
+      <MemberSignature Language="F#" Value="HostingEnvironment = 1" Usage="System.Web.ApplicationShutdownReason.HostingEnvironment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.HttpRuntimeClose" />
       <MemberSignature Language="VB.NET" Value="HttpRuntimeClose" />
       <MemberSignature Language="C++ CLI" Value="HttpRuntimeClose" />
+      <MemberSignature Language="F#" Value="HttpRuntimeClose = 12" Usage="System.Web.ApplicationShutdownReason.HttpRuntimeClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="IdleTimeout" />
       <MemberSignature Language="C++ CLI" Value="IdleTimeout" />
+      <MemberSignature Language="F#" Value="IdleTimeout = 10" Usage="System.Web.ApplicationShutdownReason.IdleTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.InitializationError" />
       <MemberSignature Language="VB.NET" Value="InitializationError" />
       <MemberSignature Language="C++ CLI" Value="InitializationError" />
+      <MemberSignature Language="F#" Value="InitializationError = 13" Usage="System.Web.ApplicationShutdownReason.InitializationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.MaxRecompilationsReached" />
       <MemberSignature Language="VB.NET" Value="MaxRecompilationsReached" />
       <MemberSignature Language="C++ CLI" Value="MaxRecompilationsReached" />
+      <MemberSignature Language="F#" Value="MaxRecompilationsReached = 14" Usage="System.Web.ApplicationShutdownReason.MaxRecompilationsReached" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.ApplicationShutdownReason.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,6 +296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.PhysicalApplicationPathChanged" />
       <MemberSignature Language="VB.NET" Value="PhysicalApplicationPathChanged" />
       <MemberSignature Language="C++ CLI" Value="PhysicalApplicationPathChanged" />
+      <MemberSignature Language="F#" Value="PhysicalApplicationPathChanged = 11" Usage="System.Web.ApplicationShutdownReason.PhysicalApplicationPathChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +316,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.ResourcesDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="ResourcesDirChangeOrDirectoryRename" />
       <MemberSignature Language="C++ CLI" Value="ResourcesDirChangeOrDirectoryRename" />
+      <MemberSignature Language="F#" Value="ResourcesDirChangeOrDirectoryRename = 9" Usage="System.Web.ApplicationShutdownReason.ResourcesDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -320,6 +336,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ApplicationShutdownReason.UnloadAppDomainCalled" />
       <MemberSignature Language="VB.NET" Value="UnloadAppDomainCalled" />
       <MemberSignature Language="C++ CLI" Value="UnloadAppDomainCalled" />
+      <MemberSignature Language="F#" Value="UnloadAppDomainCalled = 4" Usage="System.Web.ApplicationShutdownReason.UnloadAppDomainCalled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

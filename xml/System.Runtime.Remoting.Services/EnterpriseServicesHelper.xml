@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.EnterpriseServicesHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnterpriseServicesHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnterpriseServicesHelper sealed" />
+  <TypeSignature Language="F#" Value="type EnterpriseServicesHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.EnterpriseServicesHelper.CreateConstructionReturnMessage(System.Runtime.Remoting.Activation.IConstructionCallMessage,System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateConstructionReturnMessage (ctorMsg As IConstructionCallMessage, retObj As MarshalByRefObject) As IConstructionReturnMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Activation::IConstructionReturnMessage ^ CreateConstructionReturnMessage(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg, MarshalByRefObject ^ retObj);" />
+      <MemberSignature Language="F#" Value="static member CreateConstructionReturnMessage : System.Runtime.Remoting.Activation.IConstructionCallMessage * MarshalByRefObject -&gt; System.Runtime.Remoting.Activation.IConstructionReturnMessage" Usage="System.Runtime.Remoting.Services.EnterpriseServicesHelper.CreateConstructionReturnMessage (ctorMsg, retObj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.EnterpriseServicesHelper.SwitchWrappers(System.Runtime.Remoting.Proxies.RealProxy,System.Runtime.Remoting.Proxies.RealProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SwitchWrappers (oldcp As RealProxy, newcp As RealProxy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SwitchWrappers(System::Runtime::Remoting::Proxies::RealProxy ^ oldcp, System::Runtime::Remoting::Proxies::RealProxy ^ newcp);" />
+      <MemberSignature Language="F#" Value="static member SwitchWrappers : System.Runtime.Remoting.Proxies.RealProxy * System.Runtime.Remoting.Proxies.RealProxy -&gt; unit" Usage="System.Runtime.Remoting.Services.EnterpriseServicesHelper.SwitchWrappers (oldcp, newcp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WrapIUnknownWithComObject (punk As IntPtr) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ WrapIUnknownWithComObject(IntPtr punk);" />
+      <MemberSignature Language="F#" Value="static member WrapIUnknownWithComObject : nativeint -&gt; obj" Usage="System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject punk" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

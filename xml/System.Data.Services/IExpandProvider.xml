@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IExpandProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExpandProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExpandProvider" />
+  <TypeSignature Language="F#" Value="type IExpandProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IExpandProvider.ApplyExpansions(System.Linq.IQueryable,System.Collections.Generic.ICollection{System.Data.Services.ExpandSegmentCollection})" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyExpansions (queryable As IQueryable, expandPaths As ICollection(Of ExpandSegmentCollection)) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ ApplyExpansions(System::Linq::IQueryable ^ queryable, System::Collections::Generic::ICollection&lt;System::Data::Services::ExpandSegmentCollection ^&gt; ^ expandPaths);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyExpansions : System.Linq.IQueryable * System.Collections.Generic.ICollection&lt;System.Data.Services.ExpandSegmentCollection&gt; -&gt; System.Collections.IEnumerable" Usage="iExpandProvider.ApplyExpansions (queryable, expandPaths)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

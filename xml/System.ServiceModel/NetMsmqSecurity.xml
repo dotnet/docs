@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetMsmqSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetMsmqSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetMsmqSecurity sealed" />
+  <TypeSignature Language="F#" Value="type NetMsmqSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetMsmqSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As MessageSecurityOverMsmq" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageSecurityOverMsmq ^ Message { System::ServiceModel::MessageSecurityOverMsmq ^ get(); void set(System::ServiceModel::MessageSecurityOverMsmq ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.MessageSecurityOverMsmq with get, set" Usage="System.ServiceModel.NetMsmqSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetMsmqSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As NetMsmqSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetMsmqSecurityMode Mode { System::ServiceModel::NetMsmqSecurityMode get(); void set(System::ServiceModel::NetMsmqSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.NetMsmqSecurityMode with get, set" Usage="System.ServiceModel.NetMsmqSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetMsmqSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As MsmqTransportSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqTransportSecurity ^ Transport { System::ServiceModel::MsmqTransportSecurity ^ get(); void set(System::ServiceModel::MsmqTransportSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.MsmqTransportSecurity with get, set" Usage="System.ServiceModel.NetMsmqSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

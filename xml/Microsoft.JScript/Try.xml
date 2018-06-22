@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Try" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Try&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class Try sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type Try = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.JScriptExceptionValue(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptExceptionValue (e As Object, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptExceptionValue(System::Object ^ e, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member JScriptExceptionValue : obj * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="Microsoft.JScript.Try.JScriptExceptionValue (e, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.PushHandlerScope(Microsoft.JScript.Vsa.VsaEngine,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PushHandlerScope (engine As VsaEngine, id As String, scopeId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PushHandlerScope(Microsoft::JScript::Vsa::VsaEngine ^ engine, System::String ^ id, int scopeId);" />
+      <MemberSignature Language="F#" Value="static member PushHandlerScope : Microsoft.JScript.Vsa.VsaEngine * string * int -&gt; unit" Usage="Microsoft.JScript.Try.PushHandlerScope (engine, id, scopeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RouteBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteBase abstract" />
+  <TypeSignature Language="F#" Value="type RouteBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteBase.GetRouteData(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="routeBase.GetRouteData httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteBase.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="routeBase.GetVirtualPath (requestContext, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteBase.RouteExistingFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteExistingFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteExistingFiles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteExistingFiles : bool with get, set" Usage="System.Web.Routing.RouteBase.RouteExistingFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

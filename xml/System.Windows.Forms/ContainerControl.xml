@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContainerControl" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerControl&#xA;Inherits ScrollableControl&#xA;Implements IContainerControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerControl : System::Windows::Forms::ScrollableControl, System::Windows::Forms::IContainerControl" />
+  <TypeSignature Language="F#" Value="type ContainerControl = class&#xA;    inherit ScrollableControl&#xA;    interface IContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.ActiveControl" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ ActiveControl { System::Windows::Forms::Control ^ get(); void set(System::Windows::Forms::Control ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveControl : System.Windows.Forms.Control with get, set" Usage="System.Windows.Forms.ContainerControl.ActiveControl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IContainerControl.ActiveControl</InterfaceMember>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.AdjustFormScrollbars(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AdjustFormScrollbars (displayScrollbars As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AdjustFormScrollbars(bool displayScrollbars);" />
+      <MemberSignature Language="F#" Value="override this.AdjustFormScrollbars : bool -&gt; unit" Usage="containerControl.AdjustFormScrollbars displayScrollbars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.AutoScaleDimensions" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleDimensions As SizeF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::SizeF AutoScaleDimensions { System::Drawing::SizeF get(); void set(System::Drawing::SizeF value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleDimensions : System.Drawing.SizeF with get, set" Usage="System.Windows.Forms.ContainerControl.AutoScaleDimensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.AutoScaleFactor" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property AutoScaleFactor As SizeF" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Drawing::SizeF AutoScaleFactor { System::Drawing::SizeF get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFactor : System.Drawing.SizeF" Usage="System.Windows.Forms.ContainerControl.AutoScaleFactor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.AutoScaleMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleMode As AutoScaleMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoScaleMode AutoScaleMode { System::Windows::Forms::AutoScaleMode get(); void set(System::Windows::Forms::AutoScaleMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleMode : System.Windows.Forms.AutoScaleMode with get, set" Usage="System.Windows.Forms.ContainerControl.AutoScaleMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.AutoValidate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoValidate As AutoValidate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoValidate AutoValidate { System::Windows::Forms::AutoValidate get(); void set(System::Windows::Forms::AutoValidate value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoValidate : System.Windows.Forms.AutoValidate with get, set" Usage="System.Windows.Forms.ContainerControl.AutoValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -342,6 +349,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoValidateChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoValidateChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoValidateChanged : EventHandler " Usage="member this.AutoValidateChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -383,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.BindingContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BindingContext As BindingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::BindingContext ^ BindingContext { System::Windows::Forms::BindingContext ^ get(); void set(System::Windows::Forms::BindingContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingContext : System.Windows.Forms.BindingContext with get, set" Usage="System.Windows.Forms.ContainerControl.BindingContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -409,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.CanEnableIme" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanEnableIme As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanEnableIme { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanEnableIme : bool" Usage="System.Windows.Forms.ContainerControl.CanEnableIme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -439,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ContainerControl.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -459,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentAutoScaleDimensions As SizeF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::SizeF CurrentAutoScaleDimensions { System::Drawing::SizeF get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentAutoScaleDimensions : System.Drawing.SizeF" Usage="System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -509,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="containerControl.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -534,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.OnAutoValidateChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAutoValidateChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAutoValidateChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAutoValidateChanged : EventArgs -&gt; unit&#xA;override this.OnAutoValidateChanged : EventArgs -&gt; unit" Usage="containerControl.OnAutoValidateChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -573,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.OnCreateControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateControl ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateControl();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateControl : unit -&gt; unit" Usage="containerControl.OnCreateControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -594,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="containerControl.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -639,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="containerControl.OnLayout e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.OnParentChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnParentChanged : EventArgs -&gt; unit" Usage="containerControl.OnParentChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -686,6 +704,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContainerControl.ParentForm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentForm As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ ParentForm { System::Windows::Forms::Form ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentForm : System.Windows.Forms.Form" Usage="System.Windows.Forms.ContainerControl.ParentForm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -731,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.PerformAutoScale" />
       <MemberSignature Language="VB.NET" Value="Public Sub PerformAutoScale ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PerformAutoScale();" />
+      <MemberSignature Language="F#" Value="member this.PerformAutoScale : unit -&gt; unit" Usage="containerControl.PerformAutoScale " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -766,6 +786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="containerControl.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -794,6 +815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ProcessDialogChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogChar (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogChar(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogChar : char -&gt; bool" Usage="containerControl.ProcessDialogChar charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -825,6 +847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="containerControl.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -851,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
+      <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="containerControl.ProcessMnemonic charCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -877,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ProcessTabKey(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ProcessTabKey (forward As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ProcessTabKey(bool forward);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTabKey : bool -&gt; bool&#xA;override this.ProcessTabKey : bool -&gt; bool" Usage="containerControl.ProcessTabKey forward" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -911,6 +936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.Select(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
+      <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="containerControl.Select (directed, forward)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -983,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.UpdateDefaultButton" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UpdateDefaultButton ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateDefaultButton();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateDefaultButton : unit -&gt; unit&#xA;override this.UpdateDefaultButton : unit -&gt; unit" Usage="containerControl.UpdateDefaultButton " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1019,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Validate();" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; bool" Usage="containerControl.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1051,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.Validate(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate (checkAutoValidate As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Validate(bool checkAutoValidate);" />
+      <MemberSignature Language="F#" Value="member this.Validate : bool -&gt; bool" Usage="containerControl.Validate checkAutoValidate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1100,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ValidateChildren () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ValidateChildren();" />
+      <MemberSignature Language="F#" Value="abstract member ValidateChildren : unit -&gt; bool&#xA;override this.ValidateChildren : unit -&gt; bool" Usage="containerControl.ValidateChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1148,6 +1178,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateChildren(valuetype System.Windows.Forms.ValidationConstraints validationConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ValidateChildren(System::Windows::Forms::ValidationConstraints validationConstraints);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateChildren : System.Windows.Forms.ValidationConstraints -&gt; bool&#xA;override this.ValidateChildren : System.Windows.Forms.ValidationConstraints -&gt; bool" Usage="containerControl.ValidateChildren validationConstraints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1204,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="containerControl.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CompositingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompositingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompositingMode" />
+  <TypeSignature Language="F#" Value="type CompositingMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingMode.SourceCopy" />
       <MemberSignature Language="VB.NET" Value="SourceCopy" />
       <MemberSignature Language="C++ CLI" Value="SourceCopy" />
+      <MemberSignature Language="F#" Value="SourceCopy = 1" Usage="System.Drawing.Drawing2D.CompositingMode.SourceCopy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingMode.SourceOver" />
       <MemberSignature Language="VB.NET" Value="SourceOver" />
       <MemberSignature Language="C++ CLI" Value="SourceOver" />
+      <MemberSignature Language="F#" Value="SourceOver = 0" Usage="System.Drawing.Drawing2D.CompositingMode.SourceOver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

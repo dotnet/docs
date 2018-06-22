@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartVerbCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartVerbCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type WebPartVerbCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (verbs As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbCollection(System::Collections::ICollection ^ verbs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartVerbCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.WebPartVerbCollection" Usage="new System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor(System.Web.UI.WebControls.WebParts.WebPartVerbCollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (existingVerbs As WebPartVerbCollection, verbs As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbCollection(System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ existingVerbs, System::Collections::ICollection ^ verbs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartVerbCollection : System.Web.UI.WebControls.WebParts.WebPartVerbCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.WebPartVerbCollection" Usage="new System.Web.UI.WebControls.WebParts.WebPartVerbCollection (existingVerbs, verbs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Contains(System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As WebPartVerb) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::WebPartVerb ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; bool" Usage="webPartVerbCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartVerb[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As WebPartVerb(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::WebPartVerb ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.WebPartVerb[] * int -&gt; unit" Usage="webPartVerbCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As WebPartVerbCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.WebPartVerbCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As WebPartVerb) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::WebPartVerb ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; int" Usage="webPartVerbCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartVerb ^ default[int] { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

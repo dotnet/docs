@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.SqlChangeMonitor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlChangeMonitor&#xA;Inherits ChangeMonitor" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlChangeMonitor sealed : System::Runtime::Caching::ChangeMonitor" />
+  <TypeSignature Language="F#" Value="type SqlChangeMonitor = class&#xA;    inherit ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.SqlChangeMonitor.#ctor(System.Data.SqlClient.SqlDependency)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dependency As SqlDependency)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlChangeMonitor(System::Data::SqlClient::SqlDependency ^ dependency);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.SqlChangeMonitor : System.Data.SqlClient.SqlDependency -&gt; System.Runtime.Caching.SqlChangeMonitor" Usage="new System.Runtime.Caching.SqlChangeMonitor dependency" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.SqlChangeMonitor.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlChangeMonitor.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.SqlChangeMonitor.UniqueId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string" Usage="System.Runtime.Caching.SqlChangeMonitor.UniqueId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ApplicationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApplicationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ApplicationType" />
+  <TypeSignature Language="F#" Value="type ApplicationType = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ApplicationType.AspNetWebApplication" />
       <MemberSignature Language="VB.NET" Value="AspNetWebApplication" />
       <MemberSignature Language="C++ CLI" Value="AspNetWebApplication" />
+      <MemberSignature Language="F#" Value="AspNetWebApplication = 0" Usage="System.IdentityModel.Services.ApplicationType.AspNetWebApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ApplicationType.WcfServiceApplication" />
       <MemberSignature Language="VB.NET" Value="WcfServiceApplication" />
       <MemberSignature Language="C++ CLI" Value="WcfServiceApplication" />
+      <MemberSignature Language="F#" Value="WcfServiceApplication = 1" Usage="System.IdentityModel.Services.ApplicationType.WcfServiceApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

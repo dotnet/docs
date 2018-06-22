@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontStyles" />
   <TypeSignature Language="VB.NET" Value="Public Class FontStyles" />
   <TypeSignature Language="C++ CLI" Value="public ref class FontStyles abstract sealed" />
+  <TypeSignature Language="F#" Value="type FontStyles = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@ Example of font styles
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Italic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Italic As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle Italic { System::Windows::FontStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Italic : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +89,7 @@ Example of font styles
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Normal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle Normal { System::Windows::FontStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +125,7 @@ Example of font styles
       <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Oblique" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Oblique As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle Oblique { System::Windows::FontStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Oblique : System.Windows.FontStyle" Usage="System.Windows.FontStyles.Oblique" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

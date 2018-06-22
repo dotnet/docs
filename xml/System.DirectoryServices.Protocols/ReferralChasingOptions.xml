@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ReferralChasingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReferralChasingOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReferralChasingOptions" />
+  <TypeSignature Language="F#" Value="type ReferralChasingOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ReferralChasingOptions.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 96" Usage="System.DirectoryServices.Protocols.ReferralChasingOptions.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ReferralChasingOptions.External" />
       <MemberSignature Language="VB.NET" Value="External" />
       <MemberSignature Language="C++ CLI" Value="External" />
+      <MemberSignature Language="F#" Value="External = 64" Usage="System.DirectoryServices.Protocols.ReferralChasingOptions.External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ReferralChasingOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.Protocols.ReferralChasingOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ReferralChasingOptions.Subordinate" />
       <MemberSignature Language="VB.NET" Value="Subordinate" />
       <MemberSignature Language="C++ CLI" Value="Subordinate" />
+      <MemberSignature Language="F#" Value="Subordinate = 32" Usage="System.DirectoryServices.Protocols.ReferralChasingOptions.Subordinate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

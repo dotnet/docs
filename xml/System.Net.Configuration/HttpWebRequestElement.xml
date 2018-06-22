@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpWebRequestElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpWebRequestElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpWebRequestElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HttpWebRequestElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumErrorResponseLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumErrorResponseLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumErrorResponseLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumResponseHeadersLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumResponseHeadersLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumResponseHeadersLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumUnauthorizedUploadLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumUnauthorizedUploadLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumUnauthorizedUploadLength : int with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpWebRequestElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="httpWebRequestElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.HttpWebRequestElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing" />
       <MemberSignature Language="VB.NET" Value="Public Property UseUnsafeHeaderParsing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseUnsafeHeaderParsing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseUnsafeHeaderParsing : bool with get, set" Usage="System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

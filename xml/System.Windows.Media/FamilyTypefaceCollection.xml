@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FamilyTypefaceCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FamilyTypefaceCollection&#xA;Implements ICollection(Of FamilyTypeface), IEnumerable(Of FamilyTypeface), IList, IList(Of FamilyTypeface)" />
   <TypeSignature Language="C++ CLI" Value="public ref class FamilyTypefaceCollection sealed : System::Collections::Generic::ICollection&lt;System::Windows::Media::FamilyTypeface ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::FamilyTypeface ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::FamilyTypeface ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type FamilyTypefaceCollection = class&#xA;    interface IList&lt;FamilyTypeface&gt;&#xA;    interface ICollection&lt;FamilyTypeface&gt;&#xA;    interface seq&lt;FamilyTypeface&gt;&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.Add(System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As FamilyTypeface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::FamilyTypeface ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Media.FamilyTypeface -&gt; unit&#xA;override this.Add : System.Windows.Media.FamilyTypeface -&gt; unit" Usage="familyTypefaceCollection.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="familyTypefaceCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.Contains(System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As FamilyTypeface) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::FamilyTypeface ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Media.FamilyTypeface -&gt; bool&#xA;override this.Contains : System.Windows.Media.FamilyTypeface -&gt; bool" Usage="familyTypefaceCollection.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.CopyTo(System.Windows.Media.FamilyTypeface[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As FamilyTypeface(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::FamilyTypeface ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Media.FamilyTypeface[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Media.FamilyTypeface[] * int -&gt; unit" Usage="familyTypefaceCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.FamilyTypefaceCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of FamilyTypeface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Media::FamilyTypeface ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Windows.Media.FamilyTypeface&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Windows.Media.FamilyTypeface&gt;" Usage="familyTypefaceCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.IndexOf(System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As FamilyTypeface) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::FamilyTypeface ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.Media.FamilyTypeface -&gt; int&#xA;override this.IndexOf : System.Windows.Media.FamilyTypeface -&gt; int" Usage="familyTypefaceCollection.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.Insert(System.Int32,System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As FamilyTypeface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::FamilyTypeface ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Media.FamilyTypeface -&gt; unit&#xA;override this.Insert : int * System.Windows.Media.FamilyTypeface -&gt; unit" Usage="familyTypefaceCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Media.FamilyTypefaceCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As FamilyTypeface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FamilyTypeface ^ default[int] { System::Windows::Media::FamilyTypeface ^ get(int index); void set(int index, System::Windows::Media::FamilyTypeface ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.FamilyTypeface with get, set" Usage="System.Windows.Media.FamilyTypefaceCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -293,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.Remove(System.Windows.Media.FamilyTypeface)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As FamilyTypeface) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::FamilyTypeface ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Media.FamilyTypeface -&gt; bool&#xA;override this.Remove : System.Windows.Media.FamilyTypeface -&gt; bool" Usage="familyTypefaceCollection.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -321,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypefaceCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="familyTypefaceCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.FamilyTypefaceCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -414,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.FamilyTypefaceCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -618,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.FamilyTypefaceCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -649,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypefaceCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.FamilyTypefaceCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

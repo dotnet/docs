@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.IIdentityPermissionFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IIdentityPermissionFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IIdentityPermissionFactory" />
+  <TypeSignature Language="F#" Value="type IIdentityPermissionFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ CreateIdentityPermission(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission" Usage="iIdentityPermissionFactory.CreateIdentityPermission evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

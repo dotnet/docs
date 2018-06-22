@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ColorProperty" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorProperty" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorProperty" />
+  <TypeSignature Language="F#" Value="type ColorProperty = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.AccentColorHint" />
       <MemberSignature Language="VB.NET" Value="AccentColorHint" />
       <MemberSignature Language="C++ CLI" Value="AccentColorHint" />
+      <MemberSignature Language="F#" Value="AccentColorHint = 3823" Usage="System.Windows.Forms.VisualStyles.ColorProperty.AccentColorHint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.BorderColor" />
       <MemberSignature Language="VB.NET" Value="BorderColor" />
       <MemberSignature Language="C++ CLI" Value="BorderColor" />
+      <MemberSignature Language="F#" Value="BorderColor = 3801" Usage="System.Windows.Forms.VisualStyles.ColorProperty.BorderColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.BorderColorHint" />
       <MemberSignature Language="VB.NET" Value="BorderColorHint" />
       <MemberSignature Language="C++ CLI" Value="BorderColorHint" />
+      <MemberSignature Language="F#" Value="BorderColorHint = 3822" Usage="System.Windows.Forms.VisualStyles.ColorProperty.BorderColorHint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.EdgeDarkShadowColor" />
       <MemberSignature Language="VB.NET" Value="EdgeDarkShadowColor" />
       <MemberSignature Language="C++ CLI" Value="EdgeDarkShadowColor" />
+      <MemberSignature Language="F#" Value="EdgeDarkShadowColor = 3807" Usage="System.Windows.Forms.VisualStyles.ColorProperty.EdgeDarkShadowColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.EdgeFillColor" />
       <MemberSignature Language="VB.NET" Value="EdgeFillColor" />
       <MemberSignature Language="C++ CLI" Value="EdgeFillColor" />
+      <MemberSignature Language="F#" Value="EdgeFillColor = 3808" Usage="System.Windows.Forms.VisualStyles.ColorProperty.EdgeFillColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.EdgeHighlightColor" />
       <MemberSignature Language="VB.NET" Value="EdgeHighlightColor" />
       <MemberSignature Language="C++ CLI" Value="EdgeHighlightColor" />
+      <MemberSignature Language="F#" Value="EdgeHighlightColor = 3805" Usage="System.Windows.Forms.VisualStyles.ColorProperty.EdgeHighlightColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.EdgeLightColor" />
       <MemberSignature Language="VB.NET" Value="EdgeLightColor" />
       <MemberSignature Language="C++ CLI" Value="EdgeLightColor" />
+      <MemberSignature Language="F#" Value="EdgeLightColor = 3804" Usage="System.Windows.Forms.VisualStyles.ColorProperty.EdgeLightColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.EdgeShadowColor" />
       <MemberSignature Language="VB.NET" Value="EdgeShadowColor" />
       <MemberSignature Language="C++ CLI" Value="EdgeShadowColor" />
+      <MemberSignature Language="F#" Value="EdgeShadowColor = 3806" Usage="System.Windows.Forms.VisualStyles.ColorProperty.EdgeShadowColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.FillColor" />
       <MemberSignature Language="VB.NET" Value="FillColor" />
       <MemberSignature Language="C++ CLI" Value="FillColor" />
+      <MemberSignature Language="F#" Value="FillColor = 3802" Usage="System.Windows.Forms.VisualStyles.ColorProperty.FillColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.FillColorHint" />
       <MemberSignature Language="VB.NET" Value="FillColorHint" />
       <MemberSignature Language="C++ CLI" Value="FillColorHint" />
+      <MemberSignature Language="F#" Value="FillColorHint = 3821" Usage="System.Windows.Forms.VisualStyles.ColorProperty.FillColorHint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GlowColor" />
       <MemberSignature Language="VB.NET" Value="GlowColor" />
       <MemberSignature Language="C++ CLI" Value="GlowColor" />
+      <MemberSignature Language="F#" Value="GlowColor = 3816" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GlowColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GlyphTextColor" />
       <MemberSignature Language="VB.NET" Value="GlyphTextColor" />
       <MemberSignature Language="C++ CLI" Value="GlyphTextColor" />
+      <MemberSignature Language="F#" Value="GlyphTextColor = 3819" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GlyphTextColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GlyphTransparentColor" />
       <MemberSignature Language="VB.NET" Value="GlyphTransparentColor" />
       <MemberSignature Language="C++ CLI" Value="GlyphTransparentColor" />
+      <MemberSignature Language="F#" Value="GlyphTransparentColor = 3820" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GlyphTransparentColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor1" />
       <MemberSignature Language="VB.NET" Value="GradientColor1" />
       <MemberSignature Language="C++ CLI" Value="GradientColor1" />
+      <MemberSignature Language="F#" Value="GradientColor1 = 3810" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor2" />
       <MemberSignature Language="VB.NET" Value="GradientColor2" />
       <MemberSignature Language="C++ CLI" Value="GradientColor2" />
+      <MemberSignature Language="F#" Value="GradientColor2 = 3811" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor3" />
       <MemberSignature Language="VB.NET" Value="GradientColor3" />
       <MemberSignature Language="C++ CLI" Value="GradientColor3" />
+      <MemberSignature Language="F#" Value="GradientColor3 = 3812" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor4" />
       <MemberSignature Language="VB.NET" Value="GradientColor4" />
       <MemberSignature Language="C++ CLI" Value="GradientColor4" />
+      <MemberSignature Language="F#" Value="GradientColor4 = 3813" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.GradientColor5" />
       <MemberSignature Language="VB.NET" Value="GradientColor5" />
       <MemberSignature Language="C++ CLI" Value="GradientColor5" />
+      <MemberSignature Language="F#" Value="GradientColor5 = 3814" Usage="System.Windows.Forms.VisualStyles.ColorProperty.GradientColor5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.ShadowColor" />
       <MemberSignature Language="VB.NET" Value="ShadowColor" />
       <MemberSignature Language="C++ CLI" Value="ShadowColor" />
+      <MemberSignature Language="F#" Value="ShadowColor = 3815" Usage="System.Windows.Forms.VisualStyles.ColorProperty.ShadowColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.TextBorderColor" />
       <MemberSignature Language="VB.NET" Value="TextBorderColor" />
       <MemberSignature Language="C++ CLI" Value="TextBorderColor" />
+      <MemberSignature Language="F#" Value="TextBorderColor = 3817" Usage="System.Windows.Forms.VisualStyles.ColorProperty.TextBorderColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -409,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.TextColor" />
       <MemberSignature Language="VB.NET" Value="TextColor" />
       <MemberSignature Language="C++ CLI" Value="TextColor" />
+      <MemberSignature Language="F#" Value="TextColor = 3803" Usage="System.Windows.Forms.VisualStyles.ColorProperty.TextColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +450,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.TextShadowColor" />
       <MemberSignature Language="VB.NET" Value="TextShadowColor" />
       <MemberSignature Language="C++ CLI" Value="TextShadowColor" />
+      <MemberSignature Language="F#" Value="TextShadowColor = 3818" Usage="System.Windows.Forms.VisualStyles.ColorProperty.TextShadowColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -447,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ColorProperty.TransparentColor" />
       <MemberSignature Language="VB.NET" Value="TransparentColor" />
       <MemberSignature Language="C++ CLI" Value="TransparentColor" />
+      <MemberSignature Language="F#" Value="TransparentColor = 3809" Usage="System.Windows.Forms.VisualStyles.ColorProperty.TransparentColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

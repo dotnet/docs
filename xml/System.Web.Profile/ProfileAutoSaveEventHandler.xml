@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileAutoSaveEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProfileAutoSaveEventHandler(sender As Object, e As ProfileAutoSaveEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ProfileAutoSaveEventHandler(System::Object ^ sender, ProfileAutoSaveEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ProfileAutoSaveEventHandler = delegate of obj * ProfileAutoSaveEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

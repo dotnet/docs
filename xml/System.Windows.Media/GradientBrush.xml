@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GradientBrush" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GradientBrush&#xA;Inherits Brush" />
   <TypeSignature Language="C++ CLI" Value="public ref class GradientBrush abstract : System::Windows::Media::Brush" />
+  <TypeSignature Language="F#" Value="type GradientBrush = class&#xA;    inherit Brush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientBrush.#ctor(System.Windows.Media.GradientStopCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; GradientBrush(System::Windows::Media::GradientStopCollection ^ gradientStopCollection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GradientBrush : System.Windows.Media.GradientStopCollection -&gt; System.Windows.Media.GradientBrush" Usage="new System.Windows.Media.GradientBrush gradientStopCollection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientBrush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As GradientBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GradientBrush ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.GradientBrush" Usage="gradientBrush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientBrush.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GradientBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GradientBrush ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.GradientBrush" Usage="gradientBrush.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientBrush.ColorInterpolationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorInterpolationMode As ColorInterpolationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ColorInterpolationMode ColorInterpolationMode { System::Windows::Media::ColorInterpolationMode get(); void set(System::Windows::Media::ColorInterpolationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorInterpolationMode : System.Windows.Media.ColorInterpolationMode with get, set" Usage="System.Windows.Media.GradientBrush.ColorInterpolationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientBrush.ColorInterpolationModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorInterpolationModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorInterpolationModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorInterpolationModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GradientBrush.ColorInterpolationModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientBrush.GradientStops" />
       <MemberSignature Language="VB.NET" Value="Public Property GradientStops As GradientStopCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GradientStopCollection ^ GradientStops { System::Windows::Media::GradientStopCollection ^ get(); void set(System::Windows::Media::GradientStopCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GradientStops : System.Windows.Media.GradientStopCollection with get, set" Usage="System.Windows.Media.GradientBrush.GradientStops" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientBrush.GradientStopsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GradientStopsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GradientStopsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GradientStopsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GradientBrush.GradientStopsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientBrush.MappingMode" />
       <MemberSignature Language="VB.NET" Value="Public Property MappingMode As BrushMappingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::BrushMappingMode MappingMode { System::Windows::Media::BrushMappingMode get(); void set(System::Windows::Media::BrushMappingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.MappingMode : System.Windows.Media.BrushMappingMode with get, set" Usage="System.Windows.Media.GradientBrush.MappingMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientBrush.MappingModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MappingModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MappingModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MappingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GradientBrush.MappingModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientBrush.SpreadMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SpreadMethod As GradientSpreadMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GradientSpreadMethod SpreadMethod { System::Windows::Media::GradientSpreadMethod get(); void set(System::Windows::Media::GradientSpreadMethod value); };" />
+      <MemberSignature Language="F#" Value="member this.SpreadMethod : System.Windows.Media.GradientSpreadMethod with get, set" Usage="System.Windows.Media.GradientBrush.SpreadMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -372,6 +383,7 @@ Gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientBrush.SpreadMethodProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpreadMethodProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpreadMethodProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SpreadMethodProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GradientBrush.SpreadMethodProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

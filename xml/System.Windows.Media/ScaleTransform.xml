@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ScaleTransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScaleTransform&#xA;Inherits Transform" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScaleTransform sealed : System::Windows::Media::Transform" />
+  <TypeSignature Language="F#" Value="type ScaleTransform = class&#xA;    inherit Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ScaleTransform.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scaleX As Double, scaleY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScaleTransform(double scaleX, double scaleY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.ScaleTransform : double * double -&gt; System.Windows.Media.ScaleTransform" Usage="new System.Windows.Media.ScaleTransform (scaleX, scaleY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ScaleTransform.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scaleX As Double, scaleY As Double, centerX As Double, centerY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScaleTransform(double scaleX, double scaleY, double centerX, double centerY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.ScaleTransform : double * double * double * double -&gt; System.Windows.Media.ScaleTransform" Usage="new System.Windows.Media.ScaleTransform (scaleX, scaleY, centerX, centerY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ScaleTransform.CenterX" />
       <MemberSignature Language="VB.NET" Value="Public Property CenterX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CenterX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.CenterX : double with get, set" Usage="System.Windows.Media.ScaleTransform.CenterX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ScaleTransform.CenterXProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterXProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterXProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ScaleTransform.CenterXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ScaleTransform.CenterY" />
       <MemberSignature Language="VB.NET" Value="Public Property CenterY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CenterY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.CenterY : double with get, set" Usage="System.Windows.Media.ScaleTransform.CenterY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ScaleTransform.CenterYProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterYProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterYProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ScaleTransform.CenterYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ScaleTransform.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ScaleTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ScaleTransform ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.ScaleTransform" Usage="scaleTransform.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ScaleTransform.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ScaleTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ScaleTransform ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.ScaleTransform" Usage="scaleTransform.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ScaleTransform.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="scaleTransform.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ScaleTransform.ScaleX" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScaleX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleX : double with get, set" Usage="System.Windows.Media.ScaleTransform.ScaleX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ScaleTransform.ScaleXProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleXProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScaleXProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ScaleTransform.ScaleXProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ScaleTransform.ScaleY" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScaleY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleY : double with get, set" Usage="System.Windows.Media.ScaleTransform.ScaleY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ScaleTransform.ScaleYProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleYProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScaleYProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ScaleTransform.ScaleYProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ScaleTransform.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.ScaleTransform.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

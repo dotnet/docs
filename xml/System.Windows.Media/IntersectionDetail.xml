@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.IntersectionDetail" />
   <TypeSignature Language="VB.NET" Value="Public Enum IntersectionDetail" />
   <TypeSignature Language="C++ CLI" Value="public enum class IntersectionDetail" />
+  <TypeSignature Language="F#" Value="type IntersectionDetail = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="C++ CLI" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 1" Usage="System.Windows.Media.IntersectionDetail.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyContains" />
       <MemberSignature Language="VB.NET" Value="FullyContains" />
       <MemberSignature Language="C++ CLI" Value="FullyContains" />
+      <MemberSignature Language="F#" Value="FullyContains = 3" Usage="System.Windows.Media.IntersectionDetail.FullyContains" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyInside" />
       <MemberSignature Language="VB.NET" Value="FullyInside" />
       <MemberSignature Language="C++ CLI" Value="FullyInside" />
+      <MemberSignature Language="F#" Value="FullyInside = 2" Usage="System.Windows.Media.IntersectionDetail.FullyInside" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +101,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Intersects" />
       <MemberSignature Language="VB.NET" Value="Intersects" />
       <MemberSignature Language="C++ CLI" Value="Intersects" />
+      <MemberSignature Language="F#" Value="Intersects = 4" Usage="System.Windows.Media.IntersectionDetail.Intersects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +121,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.NotCalculated" />
       <MemberSignature Language="VB.NET" Value="NotCalculated" />
       <MemberSignature Language="C++ CLI" Value="NotCalculated" />
+      <MemberSignature Language="F#" Value="NotCalculated = 0" Usage="System.Windows.Media.IntersectionDetail.NotCalculated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

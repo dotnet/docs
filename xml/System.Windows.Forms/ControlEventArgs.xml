@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ControlEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlEventArgs.#ctor(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlEventArgs(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ControlEventArgs : System.Windows.Forms.Control -&gt; System.Windows.Forms.ControlEventArgs" Usage="new System.Windows.Forms.ControlEventArgs control" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlEventArgs.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ Control { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Windows.Forms.Control" Usage="System.Windows.Forms.ControlEventArgs.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

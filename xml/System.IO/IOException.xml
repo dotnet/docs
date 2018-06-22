@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IOException" />
   <TypeSignature Language="VB.NET" Value="Public Class IOException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class IOException : SystemException" />
+  <TypeSignature Language="F#" Value="type IOException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IOException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IOException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.IOException : string -&gt; System.IO.IOException" Usage="new System.IO.IOException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -172,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IOException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; IOException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IO.IOException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.IOException" Usage="new System.IO.IOException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IOException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IOException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.IOException : string * Exception -&gt; System.IO.IOException" Usage="new System.IO.IOException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -259,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IOException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, hresult As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IOException(System::String ^ message, int hresult);" />
+      <MemberSignature Language="F#" Value="new System.IO.IOException : string * int -&gt; System.IO.IOException" Usage="new System.IO.IOException (message, hresult)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IAddChild" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAddChild" />
+  <TypeSignature Language="F#" Value="type IAddChild = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit" Usage="iAddChild.AddChild value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IAddChild.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit" Usage="iAddChild.AddText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

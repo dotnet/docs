@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNodeDocumentOrderComparer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XNodeDocumentOrderComparer&#xA;Implements IComparer, IComparer(Of XNode)" />
   <TypeSignature Language="C++ CLI" Value="public ref class XNodeDocumentOrderComparer sealed : System::Collections::Generic::IComparer&lt;System::Xml::Linq::XNode ^&gt;, System::Collections::IComparer" />
+  <TypeSignature Language="F#" Value="type XNodeDocumentOrderComparer = class&#xA;    interface IComparer&#xA;    interface IComparer&lt;XNode&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@ Child3 is before Child5
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeDocumentOrderComparer.Compare(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As XNode, y As XNode) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Xml::Linq::XNode ^ x, System::Xml::Linq::XNode ^ y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; int&#xA;override this.Compare : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; int" Usage="xNodeDocumentOrderComparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IToolboxItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IToolboxItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IToolboxItemProvider" />
+  <TypeSignature Language="F#" Value="type IToolboxItemProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.IToolboxItemProvider.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ToolboxItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Design::ToolboxItemCollection ^ Items { System::Drawing::Design::ToolboxItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Drawing.Design.ToolboxItemCollection" Usage="System.Drawing.Design.IToolboxItemProvider.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

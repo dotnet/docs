@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.EntitySet`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntitySet(Of TEntity)&#xA;Implements ICollection(Of TEntity), IEnumerable(Of TEntity), IList, IList(Of TEntity), IListSource" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class EntitySet sealed : System::Collections::Generic::ICollection&lt;TEntity&gt;, System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::Collections::Generic::IList&lt;TEntity&gt;, System::Collections::IList, System::ComponentModel::IListSource" />
+  <TypeSignature Language="F#" Value="type EntitySet&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    interface ICollection&#xA;    interface ICollection&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IList&#xA;    interface IList&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.#ctor(System.Action{`0},System.Action{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (onAdd As Action(Of TEntity), onRemove As Action(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySet(Action&lt;TEntity&gt; ^ onAdd, Action&lt;TEntity&gt; ^ onRemove);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt; : Action&lt;'Entity (requires 'Entity : null)&gt; * Action&lt;'Entity (requires 'Entity : null)&gt; -&gt; System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;" Usage="new System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt; (onAdd, onRemove)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'Entity -&gt; unit&#xA;override this.Add : 'Entity -&gt; unit" Usage="entitySet.Add entity" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (collection As IEnumerable(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;'Entity (requires 'Entity : null)&gt; -&gt; unit" Usage="entitySet.AddRange collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Assign(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Assign (entitySource As IEnumerable(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Assign(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ entitySource);" />
+      <MemberSignature Language="F#" Value="member this.Assign : seq&lt;'Entity (requires 'Entity : null)&gt; -&gt; unit" Usage="entitySet.Assign entitySource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="entitySet.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (entity As TEntity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'Entity -&gt; bool&#xA;override this.Contains : 'Entity -&gt; bool" Usage="entitySet.Contains entity" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TEntity(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TEntity&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'Entity[] * int -&gt; unit&#xA;override this.CopyTo : 'Entity[] * int -&gt; unit" Usage="entitySet.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -277,6 +285,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -301,6 +310,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TEntity&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Entity (requires 'Entity : null)&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Entity (requires 'Entity : null)&gt;" Usage="entitySet.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -325,6 +335,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.GetNewBindingList" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNewBindingList () As IBindingList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IBindingList ^ GetNewBindingList();" />
+      <MemberSignature Language="F#" Value="member this.GetNewBindingList : unit -&gt; System.ComponentModel.IBindingList" Usage="entitySet.GetNewBindingList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -346,6 +357,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.HasAssignedValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAssignedValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAssignedValues { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAssignedValues : bool" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.HasAssignedValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -366,6 +378,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.HasLoadedOrAssignedValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLoadedOrAssignedValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLoadedOrAssignedValues { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLoadedOrAssignedValues : bool" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.HasLoadedOrAssignedValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -393,6 +406,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.HasLoadedValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLoadedValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLoadedValues { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLoadedValues : bool" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.HasLoadedValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -413,6 +427,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (entity As TEntity) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'Entity -&gt; int&#xA;override this.IndexOf : 'Entity -&gt; int" Usage="entitySet.IndexOf entity" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -440,6 +455,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * 'Entity -&gt; unit&#xA;override this.Insert : int * 'Entity -&gt; unit" Usage="entitySet.Insert (index, entity)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -468,6 +484,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.IsDeferred" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeferred As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeferred { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeferred : bool" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.IsDeferred" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -489,6 +506,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TEntity default[int] { TEntity get(int index); void set(int index, TEntity value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'Entity with get, set" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -516,6 +534,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="E:System.Data.Linq.EntitySet`1.ListChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ListChanged As ListChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
+      <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -535,6 +554,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Load" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
+      <MemberSignature Language="F#" Value="member this.Load : unit -&gt; unit" Usage="entitySet.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -555,6 +575,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (entity As TEntity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'Entity -&gt; bool&#xA;override this.Remove : 'Entity -&gt; bool" Usage="entitySet.Remove entity" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -583,6 +604,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="entitySet.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -610,6 +632,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntitySet`1.SetSource(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSource (entitySource As IEnumerable(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSource(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ entitySource);" />
+      <MemberSignature Language="F#" Value="member this.SetSource : seq&lt;'Entity (requires 'Entity : null)&gt; -&gt; unit" Usage="entitySet.SetSource entitySource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -633,6 +656,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#Generic#ICollection&lt;TEntity&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TEntity).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;TEntity&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.Generic.ICollection&lt;TEntity&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -698,6 +722,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -721,6 +746,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -752,6 +778,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -974,6 +1001,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1005,6 +1033,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1036,6 +1065,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1129,6 +1159,7 @@ customer.Orders.CopyTo(orderArray, 0)
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntitySet`1.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Linq.EntitySet&lt;'Entity (requires 'Entity : null)&gt;.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

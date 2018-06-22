@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlObjectWriterFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlObjectWriterFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlObjectWriterFactory" />
+  <TypeSignature Language="F#" Value="type IXamlObjectWriterFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlObjectWriterFactory.GetParentSettings" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentSettings () As XamlObjectWriterSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlObjectWriterSettings ^ GetParentSettings();" />
+      <MemberSignature Language="F#" Value="abstract member GetParentSettings : unit -&gt; System.Xaml.XamlObjectWriterSettings" Usage="iXamlObjectWriterFactory.GetParentSettings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter(System.Xaml.XamlObjectWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXamlObjectWriter (settings As XamlObjectWriterSettings) As XamlObjectWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlObjectWriter ^ GetXamlObjectWriter(System::Xaml::XamlObjectWriterSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="abstract member GetXamlObjectWriter : System.Xaml.XamlObjectWriterSettings -&gt; System.Xaml.XamlObjectWriter" Usage="iXamlObjectWriterFactory.GetXamlObjectWriter settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

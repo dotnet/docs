@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceDictionaryInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceDictionaryInfo" />
+  <TypeSignature Language="F#" Value="type ResourceDictionaryInfo = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryInfo.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Windows.Diagnostics.ResourceDictionaryInfo.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceDictionary As ResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ ResourceDictionary { System::Windows::ResourceDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceDictionary : System.Windows.ResourceDictionary" Usage="System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionaryAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceDictionaryAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ ResourceDictionaryAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceDictionaryAssembly : System.Reflection.Assembly" Usage="System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionaryAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryInfo.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.Windows.Diagnostics.ResourceDictionaryInfo.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

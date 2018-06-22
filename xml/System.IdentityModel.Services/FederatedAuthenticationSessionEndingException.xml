@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederatedAuthenticationSessionEndingException" />
   <TypeSignature Language="VB.NET" Value="Public Class FederatedAuthenticationSessionEndingException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederatedAuthenticationSessionEndingException : Exception" />
+  <TypeSignature Language="F#" Value="type FederatedAuthenticationSessionEndingException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedAuthenticationSessionEndingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedAuthenticationSessionEndingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException : string -&gt; System.IdentityModel.Services.FederatedAuthenticationSessionEndingException" Usage="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedAuthenticationSessionEndingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FederatedAuthenticationSessionEndingException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Services.FederatedAuthenticationSessionEndingException" Usage="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedAuthenticationSessionEndingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedAuthenticationSessionEndingException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException : string * Exception -&gt; System.IdentityModel.Services.FederatedAuthenticationSessionEndingException" Usage="new System.IdentityModel.Services.FederatedAuthenticationSessionEndingException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

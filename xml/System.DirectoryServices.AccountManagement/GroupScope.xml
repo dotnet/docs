@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum GroupScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class GroupScope" />
+  <TypeSignature Language="F#" Value="type GroupScope = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Global" />
       <MemberSignature Language="VB.NET" Value="Global" />
       <MemberSignature Language="C++ CLI" Value="Global" />
+      <MemberSignature Language="F#" Value="Global = 1" Usage="System.DirectoryServices.AccountManagement.GroupScope.Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 0" Usage="System.DirectoryServices.AccountManagement.GroupScope.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Universal" />
       <MemberSignature Language="VB.NET" Value="Universal" />
       <MemberSignature Language="C++ CLI" Value="Universal" />
+      <MemberSignature Language="F#" Value="Universal = 2" Usage="System.DirectoryServices.AccountManagement.GroupScope.Universal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

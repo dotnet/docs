@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleString" />
   <TypeSignature Language="VB.NET" Value="Public Structure OracleString&#xA;Implements IComparable, INullable" />
   <TypeSignature Language="C++ CLI" Value="public value class OracleString : IComparable, System::Data::SqlTypes::INullable" />
+  <TypeSignature Language="F#" Value="type OracleString = struct&#xA;    interface INullable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleString(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleString : string -&gt; System.Data.OracleClient.OracleString" Usage="new System.Data.OracleClient.OracleString s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -104,6 +106,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="oracleString.CompareTo obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -153,6 +156,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.Concat(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (x As OracleString, y As OracleString) As OracleString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleString Concat(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member Concat : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleString" Usage="System.Data.OracleClient.OracleString.Concat (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -179,6 +183,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleString.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As OracleString " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleString Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Data.OracleClient.OracleString" Usage="System.Data.OracleClient.OracleString.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -207,6 +212,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="oracleString.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -231,6 +237,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.Equals(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean Equals(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -257,6 +264,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="oracleString.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -278,6 +286,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.GreaterThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThan(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -304,6 +313,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.GreaterThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThanOrEqual(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -330,6 +340,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleString.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.OracleClient.OracleString.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -354,6 +365,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleString.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : char" Usage="System.Data.OracleClient.OracleString.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -389,6 +401,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleString.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Data.OracleClient.OracleString.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -409,6 +422,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.LessThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThan(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -435,6 +449,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.LessThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThanOrEqual(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -461,6 +476,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.NotEquals(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean NotEquals(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -487,6 +503,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleString.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleString " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleString Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.OracleClient.OracleString" Usage="System.Data.OracleClient.OracleString.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -513,6 +530,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Addition(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As OracleString, y As OracleString) As OracleString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleString operator +(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleString" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -541,6 +559,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Equality(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator ==(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -569,6 +588,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Explicit(System.Data.OracleClient.OracleString)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As OracleString) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Data::OracleClient::OracleString x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.OracleClient.OracleString -&gt; string" Usage="System.Data.OracleClient.OracleString.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -595,6 +615,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_GreaterThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -623,6 +644,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_GreaterThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;=(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -651,6 +673,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Implicit(System.String)~System.Data.OracleClient.OracleString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (s As String) As OracleString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::OracleClient::OracleString(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Data.OracleClient.OracleString" Usage="System.Data.OracleClient.OracleString.op_Implicit s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -675,6 +698,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Inequality(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator !=(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleString.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -703,6 +727,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_LessThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -731,6 +756,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_LessThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As OracleString, y As OracleString) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;=(System::Data::OracleClient::OracleString x, System::Data::OracleClient::OracleString y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.OracleClient.OracleString * System.Data.OracleClient.OracleString -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -759,6 +785,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oracleString.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -780,6 +807,7 @@ public class Class1 {
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleString.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Data.OracleClient.OracleString.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

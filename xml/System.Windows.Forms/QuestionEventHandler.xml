@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QuestionEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub QuestionEventHandler(sender As Object, e As QuestionEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void QuestionEventHandler(System::Object ^ sender, QuestionEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type QuestionEventHandler = delegate of obj * QuestionEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

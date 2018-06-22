@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.AttributedModelProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AttributedModelProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributedModelProvider abstract" />
+  <TypeSignature Language="F#" Value="type AttributedModelProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.AttributedModelProvider.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCustomAttributes (reflectedType As Type, member As MemberInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(Type ^ reflectedType, System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * System.Reflection.MemberInfo -&gt; seq&lt;Attribute&gt;" Usage="attributedModelProvider.GetCustomAttributes (reflectedType, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.AttributedModelProvider.GetCustomAttributes(System.Type,System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCustomAttributes (reflectedType As Type, parameter As ParameterInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(Type ^ reflectedType, System::Reflection::ParameterInfo ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * System.Reflection.ParameterInfo -&gt; seq&lt;Attribute&gt;" Usage="attributedModelProvider.GetCustomAttributes (reflectedType, parameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

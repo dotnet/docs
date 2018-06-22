@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ComponentEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentEventArgs.#ctor(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentEventArgs(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ComponentEventArgs : System.ComponentModel.IComponent -&gt; System.ComponentModel.Design.ComponentEventArgs" Usage="new System.ComponentModel.Design.ComponentEventArgs component" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentEventArgs.Component" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Component As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.ComponentEventArgs.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

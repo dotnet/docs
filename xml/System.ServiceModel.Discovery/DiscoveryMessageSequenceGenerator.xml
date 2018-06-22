@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryMessageSequenceGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryMessageSequenceGenerator" />
+  <TypeSignature Language="F#" Value="type DiscoveryMessageSequenceGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator.#ctor(System.Int64,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Long, sequenceId As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryMessageSequenceGenerator(long instanceId, Uri ^ sequenceId);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator : int64 * Uri -&gt; System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" Usage="new System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator (instanceId, sequenceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator.Next" />
       <MemberSignature Language="VB.NET" Value="Public Function Next () As DiscoveryMessageSequence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::DiscoveryMessageSequence ^ Next();" />
+      <MemberSignature Language="F#" Value="member this.Next : unit -&gt; System.ServiceModel.Discovery.DiscoveryMessageSequence" Usage="discoveryMessageSequenceGenerator.Next " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

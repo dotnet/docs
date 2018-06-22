@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SearchResultReferenceCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SearchResultReferenceCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type SearchResultReferenceCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Contains(System.DirectoryServices.Protocols.SearchResultReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As SearchResultReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::Protocols::SearchResultReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.Protocols.SearchResultReference -&gt; bool" Usage="searchResultReferenceCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.CopyTo(System.DirectoryServices.Protocols.SearchResultReference[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (values As SearchResultReference(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::Protocols::SearchResultReference ^&gt; ^ values, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.Protocols.SearchResultReference[] * int -&gt; unit" Usage="searchResultReferenceCollection.CopyTo (values, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.IndexOf(System.DirectoryServices.Protocols.SearchResultReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As SearchResultReference) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::Protocols::SearchResultReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.Protocols.SearchResultReference -&gt; int" Usage="searchResultReferenceCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As SearchResultReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::SearchResultReference ^ default[int] { System::DirectoryServices::Protocols::SearchResultReference ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.Protocols.SearchResultReference" Usage="System.DirectoryServices.Protocols.SearchResultReferenceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.TrackedDependencies" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackedDependencies" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackedDependencies abstract sealed" />
+  <TypeSignature Language="F#" Value="type TrackedDependencies = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TrackedDependencies.ExpandWildcards(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandWildcards (expand As ITaskItem()) As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ExpandWildcards(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ expand);" />
+      <MemberSignature Language="F#" Value="static member ExpandWildcards : Microsoft.Build.Framework.ITaskItem[] -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Utilities.TrackedDependencies.ExpandWildcards expand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

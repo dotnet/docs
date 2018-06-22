@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.TextRenderingHint" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextRenderingHint" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextRenderingHint" />
+  <TypeSignature Language="F#" Value="type TextRenderingHint = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.AntiAlias" />
       <MemberSignature Language="VB.NET" Value="AntiAlias" />
       <MemberSignature Language="C++ CLI" Value="AntiAlias" />
+      <MemberSignature Language="F#" Value="AntiAlias = 4" Usage="System.Drawing.Text.TextRenderingHint.AntiAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.AntiAliasGridFit" />
       <MemberSignature Language="VB.NET" Value="AntiAliasGridFit" />
       <MemberSignature Language="C++ CLI" Value="AntiAliasGridFit" />
+      <MemberSignature Language="F#" Value="AntiAliasGridFit = 3" Usage="System.Drawing.Text.TextRenderingHint.AntiAliasGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.ClearTypeGridFit" />
       <MemberSignature Language="VB.NET" Value="ClearTypeGridFit" />
       <MemberSignature Language="C++ CLI" Value="ClearTypeGridFit" />
+      <MemberSignature Language="F#" Value="ClearTypeGridFit = 5" Usage="System.Drawing.Text.TextRenderingHint.ClearTypeGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SingleBitPerPixel" />
       <MemberSignature Language="VB.NET" Value="SingleBitPerPixel" />
       <MemberSignature Language="C++ CLI" Value="SingleBitPerPixel" />
+      <MemberSignature Language="F#" Value="SingleBitPerPixel = 2" Usage="System.Drawing.Text.TextRenderingHint.SingleBitPerPixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit" />
       <MemberSignature Language="VB.NET" Value="SingleBitPerPixelGridFit" />
       <MemberSignature Language="C++ CLI" Value="SingleBitPerPixelGridFit" />
+      <MemberSignature Language="F#" Value="SingleBitPerPixelGridFit = 1" Usage="System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SystemDefault" />
       <MemberSignature Language="VB.NET" Value="SystemDefault" />
       <MemberSignature Language="C++ CLI" Value="SystemDefault" />
+      <MemberSignature Language="F#" Value="SystemDefault = 0" Usage="System.Drawing.Text.TextRenderingHint.SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

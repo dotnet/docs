@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NavigationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class NavigationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type NavigationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.Content" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : obj" Usage="System.Windows.Navigation.NavigationEventArgs.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.ExtraData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraData As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExtraData { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraData : obj" Usage="System.Windows.Navigation.NavigationEventArgs.ExtraData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.IsNavigationInitiator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNavigationInitiator As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNavigationInitiator { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNavigationInitiator : bool" Usage="System.Windows.Navigation.NavigationEventArgs.IsNavigationInitiator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.Navigator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Navigator As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navigator : obj" Usage="System.Windows.Navigation.NavigationEventArgs.Navigator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Navigation.NavigationEventArgs.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationEventArgs.WebResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebResponse As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebResponse ^ WebResponse { System::Net::WebResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebResponse : System.Net.WebResponse" Usage="System.Windows.Navigation.NavigationEventArgs.WebResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScriptMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScriptMode" />
+  <TypeSignature Language="F#" Value="type ScriptMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.ScriptMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Debug" />
       <MemberSignature Language="VB.NET" Value="Debug" />
       <MemberSignature Language="C++ CLI" Value="Debug" />
+      <MemberSignature Language="F#" Value="Debug = 2" Usage="System.Web.UI.ScriptMode.Debug" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="System.Web.UI.ScriptMode.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Release" />
       <MemberSignature Language="VB.NET" Value="Release" />
       <MemberSignature Language="C++ CLI" Value="Release" />
+      <MemberSignature Language="F#" Value="Release = 3" Usage="System.Web.UI.ScriptMode.Release" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

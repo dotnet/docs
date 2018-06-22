@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellMouseEventArgs&#xA;Inherits MouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellMouseEventArgs : System::Windows::Forms::MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellMouseEventArgs = class&#xA;    inherit MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellMouseEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, rowIndex As Integer, localX As Integer, localY As Integer, e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellMouseEventArgs(int columnIndex, int rowIndex, int localX, int localY, System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCellMouseEventArgs : int * int * int * int * System.Windows.Forms.MouseEventArgs -&gt; System.Windows.Forms.DataGridViewCellMouseEventArgs" Usage="new System.Windows.Forms.DataGridViewCellMouseEventArgs (columnIndex, rowIndex, localX, localY, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellMouseEventArgs.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DataGridViewCellMouseEventArgs.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellMouseEventArgs.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridViewCellMouseEventArgs.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

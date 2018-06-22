@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSet" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleSet" />
+  <TypeSignature Language="F#" Value="type RuleSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSet(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSet : string -&gt; System.Workflow.Activities.Rules.RuleSet" Usage="new System.Workflow.Activities.Rules.RuleSet name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSet(System::String ^ name, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSet : string * string -&gt; System.Workflow.Activities.Rules.RuleSet" Usage="new System.Workflow.Activities.Rules.RuleSet (name, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSet.ChainingBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property ChainingBehavior As RuleChainingBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleChainingBehavior ChainingBehavior { System::Workflow::Activities::Rules::RuleChainingBehavior get(); void set(System::Workflow::Activities::Rules::RuleChainingBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.ChainingBehavior : System.Workflow.Activities.Rules.RuleChainingBehavior with get, set" Usage="System.Workflow.Activities.Rules.RuleSet.ChainingBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As RuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::Rules::RuleSet ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Workflow.Activities.Rules.RuleSet" Usage="ruleSet.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSet.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Workflow.Activities.Rules.RuleSet.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="ruleSet.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Execute(class System.Workflow.Activities.Rules.RuleExecution ruleExecution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.Execute(System.Workflow.Activities.Rules.RuleExecution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Workflow::Activities::Rules::RuleExecution ^ ruleExecution);" />
+      <MemberSignature Language="F#" Value="member this.Execute : System.Workflow.Activities.Rules.RuleExecution -&gt; unit" Usage="ruleSet.Execute ruleExecution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="ruleSet.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSet.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.Rules.RuleSet.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -243,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSet.Rules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rules As ICollection(Of Rule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Workflow::Activities::Rules::Rule ^&gt; ^ Rules { System::Collections::Generic::ICollection&lt;System::Workflow::Activities::Rules::Rule ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rules : System.Collections.Generic.ICollection&lt;System.Workflow.Activities.Rules.Rule&gt;" Usage="System.Workflow.Activities.Rules.RuleSet.Rules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSet.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate (validation As RuleValidation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Validate(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Workflow.Activities.Rules.RuleValidation -&gt; bool" Usage="ruleSet.Validate validation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

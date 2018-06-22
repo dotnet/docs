@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoSslPolicyErrors" />
   <TypeSignature Language="VB.NET" Value="Public Enum MonoSslPolicyErrors" />
   <TypeSignature Language="C++ CLI" Value="public enum class MonoSslPolicyErrors" />
+  <TypeSignature Language="F#" Value="type MonoSslPolicyErrors = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Mono.Security.Interface.MonoSslPolicyErrors.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateChainErrors" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateChainErrors" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateChainErrors" />
+      <MemberSignature Language="F#" Value="RemoteCertificateChainErrors = 4" Usage="Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateChainErrors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNameMismatch" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateNameMismatch" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateNameMismatch" />
+      <MemberSignature Language="F#" Value="RemoteCertificateNameMismatch = 2" Usage="Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNameMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNotAvailable" />
       <MemberSignature Language="VB.NET" Value="RemoteCertificateNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="RemoteCertificateNotAvailable" />
+      <MemberSignature Language="F#" Value="RemoteCertificateNotAvailable = 1" Usage="Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

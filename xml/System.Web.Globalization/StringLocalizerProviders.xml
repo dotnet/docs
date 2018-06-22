@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Globalization.StringLocalizerProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class StringLocalizerProviders" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringLocalizerProviders abstract sealed" />
+  <TypeSignature Language="F#" Value="type StringLocalizerProviders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DataAnnotationStringLocalizerProvider As IStringLocalizerProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Globalization::IStringLocalizerProvider ^ DataAnnotationStringLocalizerProvider { System::Web::Globalization::IStringLocalizerProvider ^ get(); void set(System::Web::Globalization::IStringLocalizerProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataAnnotationStringLocalizerProvider : System.Web.Globalization.IStringLocalizerProvider with get, set" Usage="System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

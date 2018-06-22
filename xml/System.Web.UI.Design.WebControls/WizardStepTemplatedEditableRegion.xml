@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion" />
   <TypeSignature Language="VB.NET" Value="Public Class WizardStepTemplatedEditableRegion&#xA;Inherits TemplatedEditableDesignerRegion" />
   <TypeSignature Language="C++ CLI" Value="public ref class WizardStepTemplatedEditableRegion : System::Web::UI::Design::TemplatedEditableDesignerRegion" />
+  <TypeSignature Language="F#" Value="type WizardStepTemplatedEditableRegion = class&#xA;    inherit TemplatedEditableDesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.TemplateDefinition templateDefinition, class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion.#ctor(System.Web.UI.Design.TemplateDefinition,System.Web.UI.WebControls.WizardStepBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WizardStepTemplatedEditableRegion(System::Web::UI::Design::TemplateDefinition ^ templateDefinition, System::Web::UI::WebControls::WizardStepBase ^ wizardStep);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion : System.Web.UI.Design.TemplateDefinition * System.Web.UI.WebControls.WizardStepBase -&gt; System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion" Usage="new System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion (templateDefinition, wizardStep)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion.Step" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Step As WizardStepBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WizardStepBase ^ Step { System::Web::UI::WebControls::WizardStepBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Step : System.Web.UI.WebControls.WizardStepBase" Usage="System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion.Step" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.WebControls.IWizardStepEditableRegion.Step</InterfaceMember>

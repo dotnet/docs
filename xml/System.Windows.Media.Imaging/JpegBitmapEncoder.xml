@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.JpegBitmapEncoder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JpegBitmapEncoder&#xA;Inherits BitmapEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class JpegBitmapEncoder sealed : System::Windows::Media::Imaging::BitmapEncoder" />
+  <TypeSignature Language="F#" Value="type JpegBitmapEncoder = class&#xA;    inherit BitmapEncoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.JpegBitmapEncoder.FlipHorizontal" />
       <MemberSignature Language="VB.NET" Value="Public Property FlipHorizontal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlipHorizontal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FlipHorizontal : bool with get, set" Usage="System.Windows.Media.Imaging.JpegBitmapEncoder.FlipHorizontal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.JpegBitmapEncoder.FlipVertical" />
       <MemberSignature Language="VB.NET" Value="Public Property FlipVertical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlipVertical { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FlipVertical : bool with get, set" Usage="System.Windows.Media.Imaging.JpegBitmapEncoder.FlipVertical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.JpegBitmapEncoder.QualityLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property QualityLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int QualityLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.QualityLevel : int with get, set" Usage="System.Windows.Media.Imaging.JpegBitmapEncoder.QualityLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.JpegBitmapEncoder.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Rotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::Rotation Rotation { System::Windows::Media::Imaging::Rotation get(); void set(System::Windows::Media::Imaging::Rotation value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : System.Windows.Media.Imaging.Rotation with get, set" Usage="System.Windows.Media.Imaging.JpegBitmapEncoder.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

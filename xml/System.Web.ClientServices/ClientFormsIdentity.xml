@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ClientFormsIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientFormsIdentity&#xA;Implements IDisposable, IIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientFormsIdentity : IDisposable, System::Security::Principal::IIdentity" />
+  <TypeSignature Language="F#" Value="type ClientFormsIdentity = class&#xA;    interface IIdentity&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientFormsIdentity.#ctor(System.String,System.String,System.Web.Security.MembershipProvider,System.String,System.Boolean,System.Net.CookieContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, password As String, provider As MembershipProvider, authenticationType As String, isAuthenticated As Boolean, authenticationCookies As CookieContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientFormsIdentity(System::String ^ name, System::String ^ password, System::Web::Security::MembershipProvider ^ provider, System::String ^ authenticationType, bool isAuthenticated, System::Net::CookieContainer ^ authenticationCookies);" />
+      <MemberSignature Language="F#" Value="new System.Web.ClientServices.ClientFormsIdentity : string * string * System.Web.Security.MembershipProvider * string * bool * System.Net.CookieContainer -&gt; System.Web.ClientServices.ClientFormsIdentity" Usage="new System.Web.ClientServices.ClientFormsIdentity (name, password, provider, authenticationType, isAuthenticated, authenticationCookies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationCookies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationCookies As CookieContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ AuthenticationCookies { System::Net::CookieContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationCookies : System.Net.CookieContainer" Usage="System.Web.ClientServices.ClientFormsIdentity.AuthenticationCookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientFormsIdentity.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="clientFormsIdentity.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientFormsIdentity.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="clientFormsIdentity.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientFormsIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.ClientServices.ClientFormsIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ClientFormsIdentity.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As MembershipProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipProvider ^ Provider { System::Web::Security::MembershipProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.Security.MembershipProvider" Usage="System.Web.ClientServices.ClientFormsIdentity.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevalidateUser ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevalidateUser();" />
+      <MemberSignature Language="F#" Value="member this.RevalidateUser : unit -&gt; unit" Usage="clientFormsIdentity.RevalidateUser " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewSortCompareEventArgs&#xA;Inherits HandledEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewSortCompareEventArgs : System::ComponentModel::HandledEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewSortCompareEventArgs = class&#xA;    inherit HandledEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn, object cellValue1, object cellValue2, int32 rowIndex1, int32 rowIndex2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewSortCompareEventArgs.#ctor(System.Windows.Forms.DataGridViewColumn,System.Object,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewSortCompareEventArgs(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn, System::Object ^ cellValue1, System::Object ^ cellValue2, int rowIndex1, int rowIndex2);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewSortCompareEventArgs : System.Windows.Forms.DataGridViewColumn * obj * obj * int * int -&gt; System.Windows.Forms.DataGridViewSortCompareEventArgs" Usage="new System.Windows.Forms.DataGridViewSortCompareEventArgs (dataGridViewColumn, cellValue1, cellValue2, rowIndex1, rowIndex2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellValue1 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CellValue1 { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellValue1 : obj" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellValue2 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CellValue2 { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellValue2 : obj" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumn ^ Column { System::Windows::Forms::DataGridViewColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Forms.DataGridViewColumn" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex1 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex1 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex1 : int" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex2 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex2 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex2 : int" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSortCompareEventArgs.SortResult" />
       <MemberSignature Language="VB.NET" Value="Public Property SortResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SortResult { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SortResult : int with get, set" Usage="System.Windows.Forms.DataGridViewSortCompareEventArgs.SortResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

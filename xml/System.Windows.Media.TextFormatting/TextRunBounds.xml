@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunBounds" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextRunBounds" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextRunBounds sealed" />
+  <TypeSignature Language="F#" Value="type TextRunBounds = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextRunBounds.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rectangle { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rectangle : System.Windows.Rect" Usage="System.Windows.Media.TextFormatting.TextRunBounds.Rectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.TextRun" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRun As TextRun" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRun ^ TextRun { System::Windows::Media::TextFormatting::TextRun ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextRun : System.Windows.Media.TextFormatting.TextRun" Usage="System.Windows.Media.TextFormatting.TextRunBounds.TextRun" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunBounds.TextSourceCharacterIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextSourceCharacterIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextSourceCharacterIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextSourceCharacterIndex : int" Usage="System.Windows.Media.TextFormatting.TextRunBounds.TextSourceCharacterIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

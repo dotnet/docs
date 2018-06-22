@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.OidCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OidCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class OidCollection sealed : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type OidCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.Add(System.Security.Cryptography.Oid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Security::Cryptography::Oid ^ oid);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Security.Cryptography.Oid -&gt; int" Usage="oidCollection.Add oid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.CopyTo(System.Security.Cryptography.Oid[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Oid(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Security::Cryptography::Oid ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Security.Cryptography.Oid[] * int -&gt; unit" Usage="oidCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.OidCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As OidEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::OidEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Security.Cryptography.OidEnumerator" Usage="oidCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -293,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Cryptography.OidCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -353,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ default[int] { System::Security::Cryptography::Oid ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.OidCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -404,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(oid As String) As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ default[System::String ^] { System::Security::Cryptography::Oid ^ get(System::String ^ oid); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.OidCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -455,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Cryptography.OidCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -549,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.OidCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -572,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.OidCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

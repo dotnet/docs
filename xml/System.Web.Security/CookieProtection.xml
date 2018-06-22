@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.CookieProtection" />
   <TypeSignature Language="VB.NET" Value="Public Enum CookieProtection" />
   <TypeSignature Language="C++ CLI" Value="public enum class CookieProtection" />
+  <TypeSignature Language="F#" Value="type CookieProtection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.CookieProtection.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Web.Security.CookieProtection.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.CookieProtection.Encryption" />
       <MemberSignature Language="VB.NET" Value="Encryption" />
       <MemberSignature Language="C++ CLI" Value="Encryption" />
+      <MemberSignature Language="F#" Value="Encryption = 2" Usage="System.Web.Security.CookieProtection.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.CookieProtection.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Security.CookieProtection.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.CookieProtection.Validation" />
       <MemberSignature Language="VB.NET" Value="Validation" />
       <MemberSignature Language="C++ CLI" Value="Validation" />
+      <MemberSignature Language="F#" Value="Validation = 1" Usage="System.Web.Security.CookieProtection.Validation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

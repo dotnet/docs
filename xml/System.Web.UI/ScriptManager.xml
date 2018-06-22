@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptManager&#xA;Inherits Control&#xA;Implements IPostBackDataHandler, IPostBackEventHandler, IScriptManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptManager : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler, System::Web::UI::IPostBackEventHandler, System::Web::UI::IScriptManager" />
+  <TypeSignature Language="F#" Value="type ScriptManager = class&#xA;    inherit Control&#xA;    interface IPostBackDataHandler&#xA;    interface IPostBackEventHandler&#xA;    interface IScriptManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -324,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.AddHistoryPoint(System.Collections.Specialized.NameValueCollection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHistoryPoint (state As NameValueCollection, title As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHistoryPoint(System::Collections::Specialized::NameValueCollection ^ state, System::String ^ title);" />
+      <MemberSignature Language="F#" Value="member this.AddHistoryPoint : System.Collections.Specialized.NameValueCollection * string -&gt; unit" Usage="scriptManager.AddHistoryPoint (state, title)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -358,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.AddHistoryPoint(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHistoryPoint (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHistoryPoint(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddHistoryPoint : string * string -&gt; unit" Usage="scriptManager.AddHistoryPoint (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -392,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.AddHistoryPoint(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHistoryPoint (key As String, value As String, title As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHistoryPoint(System::String ^ key, System::String ^ value, System::String ^ title);" />
+      <MemberSignature Language="F#" Value="member this.AddHistoryPoint : string * string * string -&gt; unit" Usage="scriptManager.AddHistoryPoint (key, value, title)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -428,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AjaxFrameworkAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AjaxFrameworkAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ AjaxFrameworkAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AjaxFrameworkAssembly : System.Reflection.Assembly" Usage="System.Web.UI.ScriptManager.AjaxFrameworkAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -453,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AjaxFrameworkMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AjaxFrameworkMode As AjaxFrameworkMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AjaxFrameworkMode AjaxFrameworkMode { System::Web::UI::AjaxFrameworkMode get(); void set(System::Web::UI::AjaxFrameworkMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AjaxFrameworkMode : System.Web.UI.AjaxFrameworkMode with get, set" Usage="System.Web.UI.ScriptManager.AjaxFrameworkMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -505,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowCustomErrorsRedirect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCustomErrorsRedirect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCustomErrorsRedirect : bool with get, set" Usage="System.Web.UI.ScriptManager.AllowCustomErrorsRedirect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -542,6 +549,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManager.AsyncPostBackError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AsyncPostBackError As EventHandler(Of AsyncPostBackErrorEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::AsyncPostBackErrorEventArgs ^&gt; ^ AsyncPostBackError;" />
+      <MemberSignature Language="F#" Value="member this.AsyncPostBackError : EventHandler&lt;System.Web.UI.AsyncPostBackErrorEventArgs&gt; " Usage="member this.AsyncPostBackError : System.EventHandler&lt;System.Web.UI.AsyncPostBackErrorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -583,6 +591,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property AsyncPostBackErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AsyncPostBackErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncPostBackErrorMessage : string with get, set" Usage="System.Web.UI.ScriptManager.AsyncPostBackErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -627,6 +636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AsyncPostBackSourceElementID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncPostBackSourceElementID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AsyncPostBackSourceElementID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncPostBackSourceElementID : string" Usage="System.Web.UI.ScriptManager.AsyncPostBackSourceElementID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IScriptManagerInternal.AsyncPostBackSourceElementID</InterfaceMember>
@@ -669,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AsyncPostBackTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property AsyncPostBackTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AsyncPostBackTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncPostBackTimeout : int with get, set" Usage="System.Web.UI.ScriptManager.AsyncPostBackTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -697,6 +708,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.AuthenticationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationService As AuthenticationServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AuthenticationServiceManager ^ AuthenticationService { System::Web::UI::AuthenticationServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationService : System.Web.UI.AuthenticationServiceManager" Usage="System.Web.UI.ScriptManager.AuthenticationService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -751,6 +763,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.ClientNavigateHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientNavigateHandler As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientNavigateHandler { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientNavigateHandler : string with get, set" Usage="System.Web.UI.ScriptManager.ClientNavigateHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -779,6 +792,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.CompositeScript" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositeScript As CompositeScriptReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CompositeScriptReference ^ CompositeScript { System::Web::UI::CompositeScriptReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompositeScript : System.Web.UI.CompositeScriptReference" Usage="System.Web.UI.ScriptManager.CompositeScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -823,6 +837,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EmptyPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyPageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyPageUrl : string with get, set" Usage="System.Web.UI.ScriptManager.EmptyPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -864,6 +879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableCdn" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCdn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCdn { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCdn : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableCdn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -900,6 +916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableCdnFallback" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCdnFallback As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCdnFallback { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCdnFallback : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableCdnFallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -929,6 +946,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableHistory" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableHistory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableHistory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableHistory : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableHistory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -965,6 +983,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnablePageMethods" />
       <MemberSignature Language="VB.NET" Value="Public Property EnablePageMethods As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePageMethods { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePageMethods : bool with get, set" Usage="System.Web.UI.ScriptManager.EnablePageMethods" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1003,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
       <MemberSignature Language="VB.NET" Value="Public Property EnablePartialRendering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePartialRendering { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePartialRendering : bool with get, set" Usage="System.Web.UI.ScriptManager.EnablePartialRendering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1044,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableScriptGlobalization" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableScriptGlobalization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScriptGlobalization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableScriptGlobalization : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableScriptGlobalization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1080,6 +1101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableScriptLocalization" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableScriptLocalization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScriptLocalization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableScriptLocalization : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableScriptLocalization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1119,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.EnableSecureHistoryState" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableSecureHistoryState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableSecureHistoryState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableSecureHistoryState : bool with get, set" Usage="System.Web.UI.ScriptManager.EnableSecureHistoryState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1156,6 +1179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ScriptManager GetCurrent(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetCurrent(System.Web.UI.Page)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ScriptManager ^ GetCurrent(System::Web::UI::Page ^ page);" />
+      <MemberSignature Language="F#" Value="static member GetCurrent : System.Web.UI.Page -&gt; System.Web.UI.ScriptManager" Usage="System.Web.UI.ScriptManager.GetCurrent page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1189,6 +1213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredArrayDeclarations" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredArrayDeclarations () As ReadOnlyCollection(Of RegisteredArrayDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredArrayDeclaration ^&gt; ^ GetRegisteredArrayDeclarations();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredArrayDeclarations : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredArrayDeclaration&gt;" Usage="scriptManager.GetRegisteredArrayDeclarations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1212,6 +1237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredClientScriptBlocks" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredClientScriptBlocks () As ReadOnlyCollection(Of RegisteredScript)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredScript ^&gt; ^ GetRegisteredClientScriptBlocks();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredClientScriptBlocks : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredScript&gt;" Usage="scriptManager.GetRegisteredClientScriptBlocks " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1241,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredDisposeScripts" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredDisposeScripts () As ReadOnlyCollection(Of RegisteredDisposeScript)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredDisposeScript ^&gt; ^ GetRegisteredDisposeScripts();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredDisposeScripts : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredDisposeScript&gt;" Usage="scriptManager.GetRegisteredDisposeScripts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1270,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredExpandoAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredExpandoAttributes () As ReadOnlyCollection(Of RegisteredExpandoAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredExpandoAttribute ^&gt; ^ GetRegisteredExpandoAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredExpandoAttributes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredExpandoAttribute&gt;" Usage="scriptManager.GetRegisteredExpandoAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1307,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredHiddenFields" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredHiddenFields () As ReadOnlyCollection(Of RegisteredHiddenField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredHiddenField ^&gt; ^ GetRegisteredHiddenFields();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredHiddenFields : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredHiddenField&gt;" Usage="scriptManager.GetRegisteredHiddenFields " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1331,6 +1360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredOnSubmitStatements" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredOnSubmitStatements () As ReadOnlyCollection(Of RegisteredScript)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredScript ^&gt; ^ GetRegisteredOnSubmitStatements();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredOnSubmitStatements : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredScript&gt;" Usage="scriptManager.GetRegisteredOnSubmitStatements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1366,6 +1396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetRegisteredStartupScripts" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredStartupScripts () As ReadOnlyCollection(Of RegisteredScript)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::UI::RegisteredScript ^&gt; ^ GetRegisteredStartupScripts();" />
+      <MemberSignature Language="F#" Value="member this.GetRegisteredStartupScripts : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.UI.RegisteredScript&gt;" Usage="scriptManager.GetRegisteredStartupScripts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1403,6 +1434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetStateString" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStateString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStateString();" />
+      <MemberSignature Language="F#" Value="member this.GetStateString : unit -&gt; string" Usage="scriptManager.GetStateString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1424,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.IsDebuggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDebuggingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebuggingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDebuggingEnabled : bool" Usage="System.Web.UI.ScriptManager.IsDebuggingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1469,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.IsInAsyncPostBack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInAsyncPostBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInAsyncPostBack { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInAsyncPostBack : bool" Usage="System.Web.UI.ScriptManager.IsInAsyncPostBack" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IScriptManagerInternal.IsInAsyncPostBack</InterfaceMember>
@@ -1506,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.IsNavigating" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNavigating As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNavigating { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNavigating : bool" Usage="System.Web.UI.ScriptManager.IsNavigating" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1539,6 +1574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="scriptManager.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1574,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.LoadScriptsBeforeUI" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadScriptsBeforeUI As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoadScriptsBeforeUI { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadScriptsBeforeUI : bool with get, set" Usage="System.Web.UI.ScriptManager.LoadScriptsBeforeUI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1618,6 +1655,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManager.Navigate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Navigate As EventHandler(Of HistoryEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::HistoryEventArgs ^&gt; ^ Navigate;" />
+      <MemberSignature Language="F#" Value="member this.Navigate : EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " Usage="member this.Navigate : System.EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1649,6 +1687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnAsyncPostBackError(System.Web.UI.AsyncPostBackErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnAsyncPostBackError (e As AsyncPostBackErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnAsyncPostBackError(System::Web::UI::AsyncPostBackErrorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAsyncPostBackError : System.Web.UI.AsyncPostBackErrorEventArgs -&gt; unit&#xA;override this.OnAsyncPostBackError : System.Web.UI.AsyncPostBackErrorEventArgs -&gt; unit" Usage="scriptManager.OnAsyncPostBackError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1689,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="scriptManager.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1716,6 +1756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="scriptManager.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1750,6 +1791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnResolveCompositeScriptReference(System.Web.UI.CompositeScriptReferenceEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResolveCompositeScriptReference (e As CompositeScriptReferenceEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResolveCompositeScriptReference(System::Web::UI::CompositeScriptReferenceEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnResolveCompositeScriptReference : System.Web.UI.CompositeScriptReferenceEventArgs -&gt; unit&#xA;override this.OnResolveCompositeScriptReference : System.Web.UI.CompositeScriptReferenceEventArgs -&gt; unit" Usage="scriptManager.OnResolveCompositeScriptReference e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1773,6 +1815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnResolveScriptReference(System.Web.UI.ScriptReferenceEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResolveScriptReference (e As ScriptReferenceEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResolveScriptReference(System::Web::UI::ScriptReferenceEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnResolveScriptReference : System.Web.UI.ScriptReferenceEventArgs -&gt; unit&#xA;override this.OnResolveScriptReference : System.Web.UI.ScriptReferenceEventArgs -&gt; unit" Usage="scriptManager.OnResolveScriptReference e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1807,6 +1850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.ProfileService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProfileService As ProfileServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ProfileServiceManager ^ ProfileService { System::Web::UI::ProfileServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileService : System.Web.UI.ProfileServiceManager" Usage="System.Web.UI.ScriptManager.ProfileService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1862,6 +1906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="scriptManager.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1885,6 +1930,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="scriptManager.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1921,6 +1967,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterArrayDeclaration(class System.Web.UI.Control control, string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue);" />
+      <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (control, arrayName, arrayValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1965,6 +2012,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterArrayDeclaration(class System.Web.UI.Page page, string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Page,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Page ^ page, System::String ^ arrayName, System::String ^ arrayValue);" />
+      <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Page * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (page, arrayName, arrayValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2003,6 +2051,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsyncPostBackControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterAsyncPostBackControl(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterAsyncPostBackControl : System.Web.UI.Control -&gt; unit&#xA;override this.RegisterAsyncPostBackControl : System.Web.UI.Control -&gt; unit" Usage="scriptManager.RegisterAsyncPostBackControl control" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterAsyncPostBackControl(System.Web.UI.Control)</InterfaceMember>
@@ -2068,6 +2117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptBlock(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2127,6 +2177,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptBlock(class System.Web.UI.Page page, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Page * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (page, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2182,6 +2233,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptInclude(class System.Web.UI.Control control, class System.Type type, string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (control, type, key, url)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2245,6 +2297,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptInclude(class System.Web.UI.Page page, class System.Type type, string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptInclude(System.Web.UI.Page,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Page * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (page, type, key, url)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2303,6 +2356,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptResource(class System.Web.UI.Control control, class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Control * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (control, type, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2350,6 +2404,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptResource(class System.Web.UI.Page page, class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Page,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Page ^ page, Type ^ type, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Page * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (page, type, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2401,6 +2456,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDataItem(class System.Web.UI.Control control, string dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDataItem(System::Web::UI::Control ^ control, System::String ^ dataItem);" />
+      <MemberSignature Language="F#" Value="member this.RegisterDataItem : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDataItem (control, dataItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2453,6 +2509,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDataItem(class System.Web.UI.Control control, string dataItem, bool isJsonSerialized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDataItem(System::Web::UI::Control ^ control, System::String ^ dataItem, bool isJsonSerialized);" />
+      <MemberSignature Language="F#" Value="member this.RegisterDataItem : System.Web.UI.Control * string * bool -&gt; unit" Usage="scriptManager.RegisterDataItem (control, dataItem, isJsonSerialized)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2510,6 +2567,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDispose(class System.Web.UI.Control control, string disposeScript) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDispose(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript);" />
+      <MemberSignature Language="F#" Value="member this.RegisterDispose : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDispose (control, disposeScript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2560,6 +2618,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterExpandoAttribute(class System.Web.UI.Control control, string controlId, string attributeName, string attributeValue, bool encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode);" />
+      <MemberSignature Language="F#" Value="static member RegisterExpandoAttribute : System.Web.UI.Control * string * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterExpandoAttribute (control, controlId, attributeName, attributeValue, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2628,6 +2687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterExtenderControl``1(``0,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterExtenderControl(Of TExtenderControl As {Control, IExtenderControl}) (extenderControl As TExtenderControl, targetControl As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExtenderControl&gt;&#xA; where TExtenderControl : System::Web::UI::Control, System::Web::UI::IExtenderControl virtual void RegisterExtenderControl(TExtenderControl extenderControl, System::Web::UI::Control ^ targetControl);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterExtenderControl : 'ExtenderControl * System.Web.UI.Control -&gt; unit (requires 'ExtenderControl :&gt; System.Web.UI.Control and 'ExtenderControl :&gt; System.Web.UI.IExtenderControl)&#xA;override this.RegisterExtenderControl : 'ExtenderControl * System.Web.UI.Control -&gt; unit (requires 'ExtenderControl :&gt; System.Web.UI.Control and 'ExtenderControl :&gt; System.Web.UI.IExtenderControl)" Usage="scriptManager.RegisterExtenderControl (extenderControl, targetControl)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterExtenderControl``1(``0,System.Web.UI.Control)</InterfaceMember>
@@ -2688,6 +2748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterHiddenField(class System.Web.UI.Control control, string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
+      <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (control, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2734,6 +2795,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterHiddenField(class System.Web.UI.Page page, string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Page,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Page ^ page, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
+      <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Page * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (page, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2785,6 +2847,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterNamedClientScriptResource(class System.Web.UI.Control control, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterNamedClientScriptResource(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterNamedClientScriptResource(System::Web::UI::Control ^ control, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="static member RegisterNamedClientScriptResource : System.Web.UI.Control * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterNamedClientScriptResource (control, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2809,6 +2872,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterNamedClientScriptResource(class System.Web.UI.Page page, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterNamedClientScriptResource(System.Web.UI.Page,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterNamedClientScriptResource(System::Web::UI::Page ^ page, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="static member RegisterNamedClientScriptResource : System.Web.UI.Page * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterNamedClientScriptResource (page, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2842,6 +2906,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterOnSubmitStatement(class System.Web.UI.Control control, class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script);" />
+      <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (control, type, key, script)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2894,6 +2959,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterOnSubmitStatement(class System.Web.UI.Page page, class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Page,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script);" />
+      <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Page * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (page, type, key, script)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2943,6 +3009,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterPostBackControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterPostBackControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterPostBackControl(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterPostBackControl : System.Web.UI.Control -&gt; unit&#xA;override this.RegisterPostBackControl : System.Web.UI.Control -&gt; unit" Usage="scriptManager.RegisterPostBackControl control" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
@@ -2979,6 +3046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterScriptControl``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterScriptControl(Of TScriptControl As {Control, IScriptControl}) (scriptControl As TScriptControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TScriptControl&gt;&#xA; where TScriptControl : System::Web::UI::Control, System::Web::UI::IScriptControl virtual void RegisterScriptControl(TScriptControl scriptControl);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterScriptControl : 'ScriptControl -&gt; unit (requires 'ScriptControl :&gt; System.Web.UI.Control and 'ScriptControl :&gt; System.Web.UI.IScriptControl)&#xA;override this.RegisterScriptControl : 'ScriptControl -&gt; unit (requires 'ScriptControl :&gt; System.Web.UI.Control and 'ScriptControl :&gt; System.Web.UI.IScriptControl)" Usage="scriptManager.RegisterScriptControl scriptControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterScriptControl``1(``0)</InterfaceMember>
@@ -3034,6 +3102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterScriptDescriptors(System.Web.UI.IExtenderControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterScriptDescriptors (extenderControl As IExtenderControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterScriptDescriptors(System::Web::UI::IExtenderControl ^ extenderControl);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterScriptDescriptors : System.Web.UI.IExtenderControl -&gt; unit&#xA;override this.RegisterScriptDescriptors : System.Web.UI.IExtenderControl -&gt; unit" Usage="scriptManager.RegisterScriptDescriptors extenderControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterScriptDescriptors(System.Web.UI.IExtenderControl)</InterfaceMember>
@@ -3072,6 +3141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterScriptDescriptors(System.Web.UI.IScriptControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterScriptDescriptors (scriptControl As IScriptControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterScriptDescriptors(System::Web::UI::IScriptControl ^ scriptControl);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterScriptDescriptors : System.Web.UI.IScriptControl -&gt; unit&#xA;override this.RegisterScriptDescriptors : System.Web.UI.IScriptControl -&gt; unit" Usage="scriptManager.RegisterScriptDescriptors scriptControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterScriptDescriptors(System.Web.UI.IScriptControl)</InterfaceMember>
@@ -3118,6 +3188,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStartupScript(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
+      <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3171,6 +3242,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStartupScript(class System.Web.UI.Page page, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
+      <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Page * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (page, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3213,6 +3285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="scriptManager.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3247,6 +3320,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManager.ResolveCompositeScriptReference" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveCompositeScriptReference As EventHandler(Of CompositeScriptReferenceEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::CompositeScriptReferenceEventArgs ^&gt; ^ ResolveCompositeScriptReference;" />
+      <MemberSignature Language="F#" Value="member this.ResolveCompositeScriptReference : EventHandler&lt;System.Web.UI.CompositeScriptReferenceEventArgs&gt; " Usage="member this.ResolveCompositeScriptReference : System.EventHandler&lt;System.Web.UI.CompositeScriptReferenceEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3271,6 +3345,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManager.ResolveScriptReference" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveScriptReference As EventHandler(Of ScriptReferenceEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::ScriptReferenceEventArgs ^&gt; ^ ResolveScriptReference;" />
+      <MemberSignature Language="F#" Value="member this.ResolveScriptReference : EventHandler&lt;System.Web.UI.ScriptReferenceEventArgs&gt; " Usage="member this.ResolveScriptReference : System.EventHandler&lt;System.Web.UI.ScriptReferenceEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3302,6 +3377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.RoleService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleService As RoleServiceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::RoleServiceManager ^ RoleService { System::Web::UI::RoleServiceManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoleService : System.Web.UI.RoleServiceManager" Usage="System.Web.UI.ScriptManager.RoleService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3354,6 +3430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.ScriptMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptMode As ScriptMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptMode ScriptMode { System::Web::UI::ScriptMode get(); void set(System::Web::UI::ScriptMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptMode : System.Web.UI.ScriptMode with get, set" Usage="System.Web.UI.ScriptManager.ScriptMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3405,6 +3482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.ScriptPath" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScriptPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptPath : string with get, set" Usage="System.Web.UI.ScriptManager.ScriptPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3447,6 +3525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.ScriptResourceMapping" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScriptResourceMapping As ScriptResourceMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::ScriptResourceMapping ^ ScriptResourceMapping { System::Web::UI::ScriptResourceMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptResourceMapping : System.Web.UI.ScriptResourceMapping" Usage="System.Web.UI.ScriptManager.ScriptResourceMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3507,6 +3586,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.Scripts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scripts As ScriptReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptReferenceCollection ^ Scripts { System::Web::UI::ScriptReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scripts : System.Web.UI.ScriptReferenceCollection" Usage="System.Web.UI.ScriptManager.Scripts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3567,6 +3647,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ServiceReferenceCollection ^ Services { System::Web::UI::ServiceReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Web.UI.ServiceReferenceCollection" Usage="System.Web.UI.ScriptManager.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3634,6 +3715,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.SetFocus(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFocus (clientID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus(System::String ^ clientID);" />
+      <MemberSignature Language="F#" Value="member this.SetFocus : string -&gt; unit" Usage="scriptManager.SetFocus clientID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3667,6 +3749,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFocus(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.SetFocus(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.SetFocus : System.Web.UI.Control -&gt; unit" Usage="scriptManager.SetFocus control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3701,6 +3784,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.SupportsPartialRendering" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportsPartialRendering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsPartialRendering { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsPartialRendering : bool with get, set" Usage="System.Web.UI.ScriptManager.SupportsPartialRendering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3844,6 +3928,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#IsSecureConnection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSecureConnection As Boolean Implements IScriptManager.IsSecureConnection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IScriptManager.IsSecureConnection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.ScriptManager.System.Web.UI.IScriptManager.IsSecureConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4160,6 +4245,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.ScriptManager.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

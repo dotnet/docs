@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryActivatableWorkflowsCommand&#xA;Inherits InstancePersistenceCommand" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryActivatableWorkflowsCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type QueryActivatableWorkflowsCommand = class&#xA;    inherit InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.IsTransactionEnlistmentOptional" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="queryActivatableWorkflowsCommand.Validate view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

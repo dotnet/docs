@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbPermission&#xA;Inherits DBDataPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbPermission sealed : System::Data::Common::DBDataPermission" />
+  <TypeSignature Language="F#" Value="type OleDbPermission = class&#xA;    inherit DBDataPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbPermission : System.Security.Permissions.PermissionState -&gt; System.Data.OleDb.OleDbPermission" Usage="new System.Data.OleDb.OleDbPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.OleDb.OleDbPermission" Usage="new System.Data.OleDb.OleDbPermission (state, allowBlankPassword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="oleDbPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbPermission.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Property Provider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : string with get, set" Usage="System.Data.OleDb.OleDbPermission.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

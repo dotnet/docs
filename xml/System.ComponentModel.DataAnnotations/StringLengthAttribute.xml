@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.StringLengthAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class StringLengthAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringLengthAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type StringLengthAttribute = class&#xA;    inherit ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (maximumLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringLengthAttribute(int maximumLength);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.StringLengthAttribute : int -&gt; System.ComponentModel.DataAnnotations.StringLengthAttribute" Usage="new System.ComponentModel.DataAnnotations.StringLengthAttribute maximumLength" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -104,6 +106,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.StringLengthAttribute.FormatErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.FormatErrorMessage : string -&gt; string" Usage="stringLengthAttribute.FormatErrorMessage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -140,6 +143,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="stringLengthAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -184,6 +188,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumLength : int" Usage="System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -210,6 +215,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumLength : int with get, set" Usage="System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

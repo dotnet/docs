@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectListShowCommandsEventHandler(sender As Object, e As ObjectListShowCommandsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectListShowCommandsEventHandler(System::Object ^ sender, ObjectListShowCommandsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectListShowCommandsEventHandler = delegate of obj * ObjectListShowCommandsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

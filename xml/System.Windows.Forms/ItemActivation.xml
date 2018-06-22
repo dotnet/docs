@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemActivation" />
   <TypeSignature Language="VB.NET" Value="Public Enum ItemActivation" />
   <TypeSignature Language="C++ CLI" Value="public enum class ItemActivation" />
+  <TypeSignature Language="F#" Value="type ItemActivation = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.OneClick" />
       <MemberSignature Language="VB.NET" Value="OneClick" />
       <MemberSignature Language="C++ CLI" Value="OneClick" />
+      <MemberSignature Language="F#" Value="OneClick = 1" Usage="System.Windows.Forms.ItemActivation.OneClick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 0" Usage="System.Windows.Forms.ItemActivation.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.TwoClick" />
       <MemberSignature Language="VB.NET" Value="TwoClick" />
       <MemberSignature Language="C++ CLI" Value="TwoClick" />
+      <MemberSignature Language="F#" Value="TwoClick = 2" Usage="System.Windows.Forms.ItemActivation.TwoClick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

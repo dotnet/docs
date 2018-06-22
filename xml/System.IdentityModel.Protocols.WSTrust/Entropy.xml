@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Entropy" />
   <TypeSignature Language="VB.NET" Value="Public Class Entropy&#xA;Inherits ProtectedKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class Entropy : System::IdentityModel::Protocols::WSTrust::ProtectedKey" />
+  <TypeSignature Language="F#" Value="type Entropy = class&#xA;    inherit ProtectedKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (secret As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Entropy(cli::array &lt;System::Byte&gt; ^ secret);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Entropy : byte[] -&gt; System.IdentityModel.Protocols.WSTrust.Entropy" Usage="new System.IdentityModel.Protocols.WSTrust.Entropy secret" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.ProtectedKey protectedKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.IdentityModel.Protocols.WSTrust.ProtectedKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Entropy(System::IdentityModel::Protocols::WSTrust::ProtectedKey ^ protectedKey);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Entropy : System.IdentityModel.Protocols.WSTrust.ProtectedKey -&gt; System.IdentityModel.Protocols.WSTrust.Entropy" Usage="new System.IdentityModel.Protocols.WSTrust.Entropy protectedKey" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entropySizeInBits As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Entropy(int entropySizeInBits);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Entropy : int -&gt; System.IdentityModel.Protocols.WSTrust.Entropy" Usage="new System.IdentityModel.Protocols.WSTrust.Entropy entropySizeInBits" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Byte[],System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (secret As Byte(), wrappingCredentials As EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Entropy(cli::array &lt;System::Byte&gt; ^ secret, System::IdentityModel::Tokens::EncryptingCredentials ^ wrappingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Entropy : byte[] * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Protocols.WSTrust.Entropy" Usage="new System.IdentityModel.Protocols.WSTrust.Entropy (secret, wrappingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

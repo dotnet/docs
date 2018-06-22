@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsUserNameSecurityTokenAuthenticator&#xA;Inherits UserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsUserNameSecurityTokenAuthenticator : System::IdentityModel::Selectors::UserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type WindowsUserNameSecurityTokenAuthenticator = class&#xA;    inherit UserNameSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (includeWindowsGroups As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsUserNameSecurityTokenAuthenticator(bool includeWindowsGroups);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator : bool -&gt; System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator includeWindowsGroups" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateUserNamePasswordCore (userName As String, password As String) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateUserNamePasswordCore(System::String ^ userName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="override this.ValidateUserNamePasswordCore : string * string -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="windowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore (userName, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

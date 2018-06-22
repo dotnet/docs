@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.UserCancellationException" />
   <TypeSignature Language="VB.NET" Value="Public Class UserCancellationException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserCancellationException : Exception" />
+  <TypeSignature Language="F#" Value="type UserCancellationException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserCancellationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserCancellationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.UserCancellationException : string -&gt; System.IdentityModel.Selectors.UserCancellationException" Usage="new System.IdentityModel.Selectors.UserCancellationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserCancellationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UserCancellationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.UserCancellationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Selectors.UserCancellationException" Usage="new System.IdentityModel.Selectors.UserCancellationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserCancellationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserCancellationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.UserCancellationException : string * Exception -&gt; System.IdentityModel.Selectors.UserCancellationException" Usage="new System.IdentityModel.Selectors.UserCancellationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>

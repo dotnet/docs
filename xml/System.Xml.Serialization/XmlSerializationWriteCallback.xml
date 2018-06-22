@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationWriteCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlSerializationWriteCallback(o As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XmlSerializationWriteCallback(System::Object ^ o);" />
+  <TypeSignature Language="F#" Value="type XmlSerializationWriteCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

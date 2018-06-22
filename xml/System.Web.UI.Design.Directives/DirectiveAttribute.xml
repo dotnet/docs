@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.Directives.DirectiveAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectiveAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectiveAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DirectiveAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.AllowedOnMobilePages" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedOnMobilePages As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowedOnMobilePages { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedOnMobilePages : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.AllowedOnMobilePages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.BuilderType" />
       <MemberSignature Language="VB.NET" Value="Public Property BuilderType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuilderType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuilderType : string with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.BuilderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Culture { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.RenameType" />
       <MemberSignature Language="VB.NET" Value="Public Property RenameType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RenameType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RenameType : string with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.RenameType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerLanguageExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerLanguageExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerLanguageExtensions : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerLanguageNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerLanguageNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerLanguageNames : bool with get, set" Usage="System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

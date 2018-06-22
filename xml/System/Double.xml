@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Double" />
   <TypeSignature Language="VB.NET" Value="Public Structure Double&#xA;Implements IComparable, IComparable(Of Double), IConvertible, IEquatable(Of Double), IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Double : IComparable, IComparable&lt;double&gt;, IConvertible, IEquatable&lt;double&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type double = struct&#xA;    interface IFormattable&#xA;    interface IConvertible" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -289,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.CompareTo(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Double) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(double value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : double -&gt; int&#xA;override this.CompareTo : double -&gt; int" Usage="double.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -394,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="double.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -492,6 +495,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.Epsilon" />
       <MemberSignature Language="VB.NET" Value="Public Const Epsilon As Double  = 4.94065645841247E-324" />
       <MemberSignature Language="C++ CLI" Value="public: double Epsilon = 4.94065645841247E-324;" />
+      <MemberSignature Language="F#" Value="val mutable Epsilon : double" Usage="System.double.Epsilon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -566,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Equals(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(double obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : double -&gt; bool" Usage="double.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -653,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="double.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -718,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="double.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -758,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="double.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -793,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsFinite(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsFinite (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFinite(double d);" />
+      <MemberSignature Language="F#" Value="static member IsFinite : double -&gt; bool" Usage="System.double.IsFinite d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -817,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsInfinity(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsInfinity (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsInfinity(double d);" />
+      <MemberSignature Language="F#" Value="static member IsInfinity : double -&gt; bool" Usage="System.double.IsInfinity d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -881,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsNaN(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNaN (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNaN(double d);" />
+      <MemberSignature Language="F#" Value="static member IsNaN : double -&gt; bool" Usage="System.double.IsNaN d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -948,6 +959,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsNegative(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNegative (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNegative(double d);" />
+      <MemberSignature Language="F#" Value="static member IsNegative : double -&gt; bool" Usage="System.double.IsNegative d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -972,6 +984,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsNegativeInfinity(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNegativeInfinity (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNegativeInfinity(double d);" />
+      <MemberSignature Language="F#" Value="static member IsNegativeInfinity : double -&gt; bool" Usage="System.double.IsNegativeInfinity d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1037,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsNormal(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNormal (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNormal(double d);" />
+      <MemberSignature Language="F#" Value="static member IsNormal : double -&gt; bool" Usage="System.double.IsNormal d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1061,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsPositiveInfinity(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPositiveInfinity (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPositiveInfinity(double d);" />
+      <MemberSignature Language="F#" Value="static member IsPositiveInfinity : double -&gt; bool" Usage="System.double.IsPositiveInfinity d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1120,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.IsSubnormal(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSubnormal (d As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSubnormal(double d);" />
+      <MemberSignature Language="F#" Value="static member IsSubnormal : double -&gt; bool" Usage="System.double.IsSubnormal d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1144,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxValue As Double  = 1.79769313486232E+308" />
       <MemberSignature Language="C++ CLI" Value="public: double MaxValue = 1.79769313486232E+308;" />
+      <MemberSignature Language="F#" Value="val mutable MaxValue : double" Usage="System.double.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1199,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MinValue As Double  = -1.79769313486232E+308" />
       <MemberSignature Language="C++ CLI" Value="public: double MinValue = -1.79769313486232E+308;" />
+      <MemberSignature Language="F#" Value="val mutable MinValue : double" Usage="System.double.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1254,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.NaN" />
       <MemberSignature Language="VB.NET" Value="Public Const NaN As Double  = NaN" />
       <MemberSignature Language="C++ CLI" Value="public: double NaN = NaN;" />
+      <MemberSignature Language="F#" Value="val mutable NaN : double" Usage="System.double.NaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1318,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.NegativeInfinity" />
       <MemberSignature Language="VB.NET" Value="Public Const NegativeInfinity As Double  = -Infinity" />
       <MemberSignature Language="C++ CLI" Value="public: double NegativeInfinity = -Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable NegativeInfinity : double" Usage="System.double.NegativeInfinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1375,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_Equality(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : double * double -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1425,6 +1446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_GreaterThan(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : double * double -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1473,6 +1495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_GreaterThanOrEqual(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : double * double -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1521,6 +1544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_Inequality(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : double * double -&gt; bool" Usage="System.double.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1569,6 +1593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_LessThan(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : double * double -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1617,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.op_LessThanOrEqual(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As Double, right As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(double left, double right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : double * double -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1679,6 +1705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; double" Usage="System.double.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1767,6 +1794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Parse(System.String,System.Globalization.NumberStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ s, System::Globalization::NumberStyles style);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles -&gt; double" Usage="System.double.Parse (s, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1886,6 +1914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Parse(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ s, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * IFormatProvider -&gt; double" Usage="System.double.Parse (s, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1975,6 +2004,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char), Optional style As NumberStyles = System.Globalization.NumberStyles.AllowDecimalPoint | System.Globalization.NumberStyles.AllowExponent | System.Globalization.NumberStyles.AllowLeadingSign | System.Globalization.NumberStyles.AllowLeadingWhite | System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.AllowTrailingWhite | System.Globalization.NumberStyles.Float | System.Globalization.NumberStyles.Integer, Optional provider As IFormatProvider = null) As Double" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider -&gt; double" Usage="System.double.Parse (s, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2003,6 +2033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles, provider As IFormatProvider) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Parse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles * IFormatProvider -&gt; double" Usage="System.double.Parse (s, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2123,6 +2154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Double.PositiveInfinity" />
       <MemberSignature Language="VB.NET" Value="Public Const PositiveInfinity As Double  = Infinity" />
       <MemberSignature Language="C++ CLI" Value="public: double PositiveInfinity = Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable PositiveInfinity : double" Usage="System.double.PositiveInfinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2928,6 +2960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="double.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3020,6 +3053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="double.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -3122,6 +3156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="double.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3213,6 +3248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="double.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -3309,6 +3345,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFormat(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten, valuetype System.ReadOnlySpan`1&lt;char&gt; format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer, Optional format As ReadOnlySpan(Of Char) = null, Optional provider As IFormatProvider = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  * ReadOnlySpan&lt;char&gt; * IFormatProvider -&gt; bool" Usage="double.TryFormat (destination, charsWritten, format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3353,6 +3390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.ReadOnlySpan{System.Char},System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), ByRef result As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, [Runtime::InteropServices::Out] double % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.double.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3379,6 +3417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.String,System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] double % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.double.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3467,6 +3506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), style As NumberStyles, provider As IFormatProvider, ByRef result As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] double % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.double.TryParse (s, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3497,6 +3537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, style As NumberStyles, provider As IFormatProvider, ByRef result As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] double % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.double.TryParse (s, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

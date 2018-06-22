@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySequence`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlySequence(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ReadOnlySequence" />
+  <TypeSignature Language="F#" Value="type ReadOnlySequence&lt;'T&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memory As ReadOnlyMemory(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : ReadOnlyMemory&lt;'T&gt; -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; memory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : 'T[] -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; array" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : 'T[] * int * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; (array, start, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startSegment As ReadOnlySequenceSegment(Of T), startIndex As Integer, endSegment As ReadOnlySequenceSegment(Of T), endIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ startSegment, int startIndex, System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ endSegment, int endIndex);" />
+      <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : System.Buffers.ReadOnlySequenceSegment&lt;'T&gt; * int * System.Buffers.ReadOnlySequenceSegment&lt;'T&gt; * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; (startSegment, startIndex, endSegment, endIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Buffers.ReadOnlySequence`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ReadOnlySequence(Of T) " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Buffers::ReadOnlySequence&lt;T&gt; Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.End" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As SequencePosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition End { SequencePosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.End : SequencePosition" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;T&gt; First { ReadOnlyMemory&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : ReadOnlyMemory&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlySequence(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;.Enumerator" Usage="readOnlySequence.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -211,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long) As SequencePosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset);" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : int64 -&gt; SequencePosition" Usage="readOnlySequence.GetPosition offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -236,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long, origin As SequencePosition) As SequencePosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset, SequencePosition origin);" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : int64 * SequencePosition -&gt; SequencePosition" Usage="readOnlySequence.GetPosition (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -263,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -284,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsSingleSegment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSingleSegment As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleSegment { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSingleSegment : bool" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.IsSingleSegment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -305,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -326,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice start" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -351,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start);" />
+      <MemberSignature Language="F#" Value="member this.Slice : SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice start" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -376,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, length As Integer) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, int length);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -403,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, end As SequencePosition) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, SequencePosition end);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -430,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, length As Long) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, long length);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int64 * int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -457,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, end As SequencePosition) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, SequencePosition end);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int64 * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -484,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Integer) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, int length);" />
+      <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -511,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Long) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, long length);" />
+      <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -538,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, end As SequencePosition) As ReadOnlySequence(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, SequencePosition end);" />
+      <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -565,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Start" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As SequencePosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Start { SequencePosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.Start : SequencePosition" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -586,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="readOnlySequence.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -607,6 +632,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGet(valuetype System.SequencePosition&amp; position, [out] valuetype System.ReadOnlyMemory`1&lt;!T&gt;&amp; memory, bool advance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGet (ByRef position As SequencePosition, ByRef memory As ReadOnlyMemory(Of T), Optional advance As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGet :  *  * bool -&gt; bool" Usage="readOnlySequence.TryGet (position, memory, advance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFiltersSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceFiltersSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeviceFiltersSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DeviceFiltersSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFiltersSection.Filters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filters As DeviceFilterElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mobile::DeviceFilterElementCollection ^ Filters { System::Web::Mobile::DeviceFilterElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filters : System.Web.Mobile.DeviceFilterElementCollection" Usage="System.Web.Mobile.DeviceFiltersSection.Filters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFiltersSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Mobile.DeviceFiltersSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

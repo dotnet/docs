@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMapResolveEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapResolveEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapResolveEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SiteMapResolveEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SiteMapResolveEventArgs.#ctor(System.Web.HttpContext,System.Web.SiteMapProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext, provider As SiteMapProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapResolveEventArgs(System::Web::HttpContext ^ context, System::Web::SiteMapProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Web.SiteMapResolveEventArgs : System.Web.HttpContext * System.Web.SiteMapProvider -&gt; System.Web.SiteMapResolveEventArgs" Usage="new System.Web.SiteMapResolveEventArgs (context, provider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapResolveEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.SiteMapResolveEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMapResolveEventArgs.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As SiteMapProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SiteMapProvider ^ Provider { System::Web::SiteMapProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.SiteMapProvider" Usage="System.Web.SiteMapResolveEventArgs.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ListItemControlBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListItemControlBuilder : System::Web::UI::ControlBuilder" />
+  <TypeSignature Language="F#" Value="type ListItemControlBuilder = class&#xA;    inherit ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItemControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="listItemControlBuilder.AllowWhitespaceLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HtmlDecodeLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HtmlDecodeLiterals();" />
+      <MemberSignature Language="F#" Value="override this.HtmlDecodeLiterals : unit -&gt; bool" Usage="listItemControlBuilder.HtmlDecodeLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

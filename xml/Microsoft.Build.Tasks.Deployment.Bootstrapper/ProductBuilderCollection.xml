@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ProductBuilderCollection&#xA;Implements IEnumerable, IProductBuilderCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProductBuilderCollection : Microsoft::Build::Tasks::Deployment::Bootstrapper::IProductBuilderCollection, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ProductBuilderCollection = class&#xA;    interface IProductBuilderCollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (builder As ProductBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit&#xA;override this.Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit" Usage="productBuilderCollection.Add builder" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="productBuilderCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

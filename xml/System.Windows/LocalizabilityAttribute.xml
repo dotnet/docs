@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizabilityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalizabilityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizabilityAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LocalizabilityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalizabilityAttribute.#ctor(System.Windows.LocalizationCategory)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As LocalizationCategory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizabilityAttribute(System::Windows::LocalizationCategory category);" />
+      <MemberSignature Language="F#" Value="new System.Windows.LocalizabilityAttribute : System.Windows.LocalizationCategory -&gt; System.Windows.LocalizabilityAttribute" Usage="new System.Windows.LocalizabilityAttribute category" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As LocalizationCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LocalizationCategory Category { System::Windows::LocalizationCategory get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : System.Windows.LocalizationCategory" Usage="System.Windows.LocalizabilityAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Modifiability" />
       <MemberSignature Language="VB.NET" Value="Public Property Modifiability As Modifiability" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Modifiability Modifiability { System::Windows::Modifiability get(); void set(System::Windows::Modifiability value); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiability : System.Windows.Modifiability with get, set" Usage="System.Windows.LocalizabilityAttribute.Modifiability" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalizabilityAttribute.Readability" />
       <MemberSignature Language="VB.NET" Value="Public Property Readability As Readability" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Readability Readability { System::Windows::Readability get(); void set(System::Windows::Readability value); };" />
+      <MemberSignature Language="F#" Value="member this.Readability : System.Windows.Readability with get, set" Usage="System.Windows.LocalizabilityAttribute.Readability" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

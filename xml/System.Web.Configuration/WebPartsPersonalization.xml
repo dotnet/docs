@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebPartsPersonalization" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartsPersonalization&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartsPersonalization sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebPartsPersonalization = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Authorization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authorization As WebPartsPersonalizationAuthorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::WebPartsPersonalizationAuthorization ^ Authorization { System::Web::Configuration::WebPartsPersonalizationAuthorization ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authorization : System.Web.Configuration.WebPartsPersonalizationAuthorization" Usage="System.Web.Configuration.WebPartsPersonalization.Authorization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +135,7 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.WebPartsPersonalization.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +180,7 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.WebPartsPersonalization.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.WebPartsPersonalization.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

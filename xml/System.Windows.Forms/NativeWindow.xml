@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NativeWindow" />
   <TypeSignature Language="VB.NET" Value="Public Class NativeWindow&#xA;Inherits MarshalByRefObject&#xA;Implements IWin32Window" />
   <TypeSignature Language="C++ CLI" Value="public ref class NativeWindow : MarshalByRefObject, System::Windows::Forms::IWin32Window" />
+  <TypeSignature Language="F#" Value="type NativeWindow = class&#xA;    inherit MarshalByRefObject&#xA;    interface IWin32Window" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AssignHandle (handle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssignHandle(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="member this.AssignHandle : nativeint -&gt; unit" Usage="nativeWindow.AssignHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CreateHandle (cp As CreateParams)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateHandle(System::Windows::Forms::CreateParams ^ cp);" />
+      <MemberSignature Language="F#" Value="abstract member CreateHandle : System.Windows.Forms.CreateParams -&gt; unit&#xA;override this.CreateHandle : System.Windows.Forms.CreateParams -&gt; unit" Usage="nativeWindow.CreateHandle cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -205,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefWndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefWndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="member this.DefWndProc :  -&gt; unit" Usage="nativeWindow.DefWndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DestroyHandle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DestroyHandle();" />
+      <MemberSignature Language="F#" Value="abstract member DestroyHandle : unit -&gt; unit&#xA;override this.DestroyHandle : unit -&gt; unit" Usage="nativeWindow.DestroyHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!NativeWindow ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="nativeWindow.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -311,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.FromHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (handle As IntPtr) As NativeWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::NativeWindow ^ FromHandle(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : nativeint -&gt; System.Windows.Forms.NativeWindow" Usage="System.Windows.Forms.NativeWindow.FromHandle handle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -347,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NativeWindow.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.NativeWindow.Handle" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IWin32Window.Handle</InterfaceMember>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHandleChange ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHandleChange();" />
+      <MemberSignature Language="F#" Value="abstract member OnHandleChange : unit -&gt; unit&#xA;override this.OnHandleChange : unit -&gt; unit" Usage="nativeWindow.OnHandleChange " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -448,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.OnThreadException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThreadException (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnThreadException(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnThreadException : Exception -&gt; unit&#xA;override this.OnThreadException : Exception -&gt; unit" Usage="nativeWindow.OnThreadException e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -485,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReleaseHandle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandle();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandle : unit -&gt; unit&#xA;override this.ReleaseHandle : unit -&gt; unit" Usage="nativeWindow.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -534,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="abstract member WndProc :  -&gt; unit&#xA;override this.WndProc :  -&gt; unit" Usage="nativeWindow.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

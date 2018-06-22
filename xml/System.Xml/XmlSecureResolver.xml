@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlSecureResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSecureResolver&#xA;Inherits XmlResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSecureResolver : System::Xml::XmlResolver" />
+  <TypeSignature Language="F#" Value="type XmlSecureResolver = class&#xA;    inherit XmlResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -156,6 +157,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlResolver resolver, class System.Security.PermissionSet permissionSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.#ctor(System.Xml.XmlResolver,System.Security.PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSecureResolver(System::Xml::XmlResolver ^ resolver, System::Security::PermissionSet ^ permissionSet);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlSecureResolver : System.Xml.XmlResolver * System.Security.PermissionSet -&gt; System.Xml.XmlSecureResolver" Usage="new System.Xml.XmlSecureResolver (resolver, permissionSet)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -193,6 +195,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlResolver resolver, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.#ctor(System.Xml.XmlResolver,System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSecureResolver(System::Xml::XmlResolver ^ resolver, System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlSecureResolver : System.Xml.XmlResolver * System.Security.Policy.Evidence -&gt; System.Xml.XmlSecureResolver" Usage="new System.Xml.XmlSecureResolver (resolver, evidence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -241,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.#ctor(System.Xml.XmlResolver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resolver As XmlResolver, securityUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSecureResolver(System::Xml::XmlResolver ^ resolver, System::String ^ securityUrl);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlSecureResolver : System.Xml.XmlResolver * string -&gt; System.Xml.XmlSecureResolver" Usage="new System.Xml.XmlSecureResolver (resolver, securityUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -290,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEvidenceForUrl (securityUrl As String) As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Evidence ^ CreateEvidenceForUrl(System::String ^ securityUrl);" />
+      <MemberSignature Language="F#" Value="static member CreateEvidenceForUrl : string -&gt; System.Security.Policy.Evidence" Usage="System.Xml.XmlSecureResolver.CreateEvidenceForUrl securityUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -324,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSecureResolver.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials {  void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials" Usage="System.Xml.XmlSecureResolver.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -368,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="override this.GetEntity : Uri * string * Type -&gt; obj" Usage="xmlSecureResolver.GetEntity (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -421,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.GetEntityAsync(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntityAsync (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ GetEntityAsync(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="override this.GetEntityAsync : Uri * string * Type -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlSecureResolver.GetEntityAsync (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -459,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSecureResolver.ResolveUri(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveUri (baseUri As Uri, relativeUri As String) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Uri ^ ResolveUri(Uri ^ baseUri, System::String ^ relativeUri);" />
+      <MemberSignature Language="F#" Value="override this.ResolveUri : Uri * string -&gt; Uri" Usage="xmlSecureResolver.ResolveUri (baseUri, relativeUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

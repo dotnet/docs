@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.MaskDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MaskDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class MaskDescriptor abstract" />
+  <TypeSignature Language="F#" Value="type MaskDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.MaskDescriptor.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="System.Windows.Forms.Design.MaskDescriptor.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (maskDescriptor As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ maskDescriptor);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="maskDescriptor.Equals maskDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="maskDescriptor.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidMaskDescriptor(class System.Windows.Forms.Design.MaskDescriptor maskDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor(System.Windows.Forms.Design.MaskDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidMaskDescriptor(System::Windows::Forms::Design::MaskDescriptor ^ maskDescriptor);" />
+      <MemberSignature Language="F#" Value="static member IsValidMaskDescriptor : System.Windows.Forms.Design.MaskDescriptor -&gt; bool" Usage="System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor maskDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidMaskDescriptor(class System.Windows.Forms.Design.MaskDescriptor maskDescriptor, [out] string&amp; validationErrorDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor(System.Windows.Forms.Design.MaskDescriptor,System.String@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidMaskDescriptor(System::Windows::Forms::Design::MaskDescriptor ^ maskDescriptor, [Runtime::InteropServices::Out] System::String ^ % validationErrorDescription);" />
+      <MemberSignature Language="F#" Value="static member IsValidMaskDescriptor : System.Windows.Forms.Design.MaskDescriptor *  -&gt; bool" Usage="System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor (maskDescriptor, validationErrorDescription)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.MaskDescriptor.Mask" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Mask As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Mask { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mask : string" Usage="System.Windows.Forms.Design.MaskDescriptor.Mask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.MaskDescriptor.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.Design.MaskDescriptor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.MaskDescriptor.Sample" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Sample As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Sample { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sample : string" Usage="System.Windows.Forms.Design.MaskDescriptor.Sample" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="maskDescriptor.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.MaskDescriptor.ValidatingType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValidatingType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ValidatingType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatingType : Type" Usage="System.Windows.Forms.Design.MaskDescriptor.ValidatingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

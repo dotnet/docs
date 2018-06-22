@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowHostingEndpoint&#xA;Inherits ServiceEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowHostingEndpoint abstract : System::ServiceModel::Description::ServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type WorkflowHostingEndpoint = class&#xA;    inherit ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowHostingEndpoint(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowHostingEndpoint : Type -&gt; System.ServiceModel.Activities.WorkflowHostingEndpoint" Usage="new System.ServiceModel.Activities.WorkflowHostingEndpoint contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type contractType, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowHostingEndpoint(Type ^ contractType, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowHostingEndpoint : Type * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Activities.WorkflowHostingEndpoint" Usage="new System.ServiceModel.Activities.WorkflowHostingEndpoint (contractType, binding, address)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowHostingEndpoint.CorrelationQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationQueries As Collection(Of CorrelationQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::CorrelationQuery ^&gt; ^ CorrelationQueries { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::CorrelationQuery ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationQueries : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.CorrelationQuery&gt;" Usage="System.ServiceModel.Activities.WorkflowHostingEndpoint.CorrelationQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Activities.WorkflowCreationContext OnGetCreationContext(object[] inputs, class System.ServiceModel.OperationContext operationContext, valuetype System.Guid instanceId, class System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext(System.Object[],System.ServiceModel.OperationContext,System.Guid,System.ServiceModel.Activities.WorkflowHostingResponseContext)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Activities::WorkflowCreationContext ^ OnGetCreationContext(cli::array &lt;System::Object ^&gt; ^ inputs, System::ServiceModel::OperationContext ^ operationContext, Guid instanceId, System::ServiceModel::Activities::WorkflowHostingResponseContext ^ responseContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnGetCreationContext : obj[] * System.ServiceModel.OperationContext * Guid * System.ServiceModel.Activities.WorkflowHostingResponseContext -&gt; System.ServiceModel.Activities.WorkflowCreationContext&#xA;override this.OnGetCreationContext : obj[] * System.ServiceModel.OperationContext * Guid * System.ServiceModel.Activities.WorkflowHostingResponseContext -&gt; System.ServiceModel.Activities.WorkflowCreationContext" Usage="workflowHostingEndpoint.OnGetCreationContext (inputs, operationContext, instanceId, responseContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Guid OnGetInstanceId(object[] inputs, class System.ServiceModel.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId(System.Object[],System.ServiceModel.OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual Guid OnGetInstanceId(cli::array &lt;System::Object ^&gt; ^ inputs, System::ServiceModel::OperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnGetInstanceId : obj[] * System.ServiceModel.OperationContext -&gt; Guid&#xA;override this.OnGetInstanceId : obj[] * System.ServiceModel.OperationContext -&gt; Guid" Usage="workflowHostingEndpoint.OnGetInstanceId (inputs, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Activities.Bookmark OnResolveBookmark(object[] inputs, class System.ServiceModel.OperationContext operationContext, class System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark(System.Object[],System.ServiceModel.OperationContext,System.ServiceModel.Activities.WorkflowHostingResponseContext,System.Object@)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Activities::Bookmark ^ OnResolveBookmark(cli::array &lt;System::Object ^&gt; ^ inputs, System::ServiceModel::OperationContext ^ operationContext, System::ServiceModel::Activities::WorkflowHostingResponseContext ^ responseContext, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="abstract member OnResolveBookmark : obj[] * System.ServiceModel.OperationContext * System.ServiceModel.Activities.WorkflowHostingResponseContext *  -&gt; System.Activities.Bookmark&#xA;override this.OnResolveBookmark : obj[] * System.ServiceModel.OperationContext * System.ServiceModel.Activities.WorkflowHostingResponseContext *  -&gt; System.Activities.Bookmark" Usage="workflowHostingEndpoint.OnResolveBookmark (inputs, operationContext, responseContext, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

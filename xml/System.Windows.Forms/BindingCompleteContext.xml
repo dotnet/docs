@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteContext" />
   <TypeSignature Language="VB.NET" Value="Public Enum BindingCompleteContext" />
   <TypeSignature Language="C++ CLI" Value="public enum class BindingCompleteContext" />
+  <TypeSignature Language="F#" Value="type BindingCompleteContext = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingCompleteContext.ControlUpdate" />
       <MemberSignature Language="VB.NET" Value="ControlUpdate" />
       <MemberSignature Language="C++ CLI" Value="ControlUpdate" />
+      <MemberSignature Language="F#" Value="ControlUpdate = 0" Usage="System.Windows.Forms.BindingCompleteContext.ControlUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingCompleteContext.DataSourceUpdate" />
       <MemberSignature Language="VB.NET" Value="DataSourceUpdate" />
       <MemberSignature Language="C++ CLI" Value="DataSourceUpdate" />
+      <MemberSignature Language="F#" Value="DataSourceUpdate = 1" Usage="System.Windows.Forms.BindingCompleteContext.DataSourceUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

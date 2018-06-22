@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ProcessorArchitecture" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessorArchitecture" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessorArchitecture abstract sealed" />
+  <TypeSignature Language="F#" Value="type ProcessorArchitecture = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.AMD64" />
       <MemberSignature Language="VB.NET" Value="Public Const AMD64 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ AMD64;" />
+      <MemberSignature Language="F#" Value="val mutable AMD64 : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.AMD64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.ARM" />
       <MemberSignature Language="VB.NET" Value="Public Const ARM As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ARM;" />
+      <MemberSignature Language="F#" Value="val mutable ARM : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.ARM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ProcessorArchitecture.CurrentProcessArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentProcessArchitecture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CurrentProcessArchitecture { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentProcessArchitecture : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.CurrentProcessArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.IA64" />
       <MemberSignature Language="VB.NET" Value="Public Const IA64 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ IA64;" />
+      <MemberSignature Language="F#" Value="val mutable IA64 : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.IA64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.MSIL" />
       <MemberSignature Language="VB.NET" Value="Public Const MSIL As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ MSIL;" />
+      <MemberSignature Language="F#" Value="val mutable MSIL : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.MSIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.X86" />
       <MemberSignature Language="VB.NET" Value="Public Const X86 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ X86;" />
+      <MemberSignature Language="F#" Value="val mutable X86 : string" Usage="Microsoft.Build.Utilities.ProcessorArchitecture.X86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

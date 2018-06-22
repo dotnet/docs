@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WindowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum WindowStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class WindowStyle" />
+  <TypeSignature Language="F#" Value="type WindowStyle = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.WindowStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.SingleBorderWindow" />
       <MemberSignature Language="VB.NET" Value="SingleBorderWindow" />
       <MemberSignature Language="C++ CLI" Value="SingleBorderWindow" />
+      <MemberSignature Language="F#" Value="SingleBorderWindow = 1" Usage="System.Windows.WindowStyle.SingleBorderWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.ThreeDBorderWindow" />
       <MemberSignature Language="VB.NET" Value="ThreeDBorderWindow" />
       <MemberSignature Language="C++ CLI" Value="ThreeDBorderWindow" />
+      <MemberSignature Language="F#" Value="ThreeDBorderWindow = 2" Usage="System.Windows.WindowStyle.ThreeDBorderWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.ToolWindow" />
       <MemberSignature Language="VB.NET" Value="ToolWindow" />
       <MemberSignature Language="C++ CLI" Value="ToolWindow" />
+      <MemberSignature Language="F#" Value="ToolWindow = 3" Usage="System.Windows.WindowStyle.ToolWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

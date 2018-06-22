@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlParser" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlParser sealed" />
+  <TypeSignature Language="F#" Value="type ControlParser = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlParser.ParseControl(System.ComponentModel.Design.IDesignerHost,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControl (designerHost As IDesignerHost, controlText As String) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Control ^ ParseControl(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::String ^ controlText);" />
+      <MemberSignature Language="F#" Value="static member ParseControl : System.ComponentModel.Design.IDesignerHost * string -&gt; System.Web.UI.Control" Usage="System.Web.UI.Design.ControlParser.ParseControl (designerHost, controlText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlParser.ParseControl(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControl (designerHost As IDesignerHost, controlText As String, directives As String) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Control ^ ParseControl(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::String ^ controlText, System::String ^ directives);" />
+      <MemberSignature Language="F#" Value="static member ParseControl : System.ComponentModel.Design.IDesignerHost * string * string -&gt; System.Web.UI.Control" Usage="System.Web.UI.Design.ControlParser.ParseControl (designerHost, controlText, directives)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlParser.ParseControls(System.ComponentModel.Design.IDesignerHost,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControls (designerHost As IDesignerHost, controlText As String) As Control()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::UI::Control ^&gt; ^ ParseControls(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::String ^ controlText);" />
+      <MemberSignature Language="F#" Value="static member ParseControls : System.ComponentModel.Design.IDesignerHost * string -&gt; System.Web.UI.Control[]" Usage="System.Web.UI.Design.ControlParser.ParseControls (designerHost, controlText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlParser.ParseTemplate(System.ComponentModel.Design.IDesignerHost,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTemplate (designerHost As IDesignerHost, templateText As String) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ITemplate ^ ParseTemplate(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::String ^ templateText);" />
+      <MemberSignature Language="F#" Value="static member ParseTemplate : System.ComponentModel.Design.IDesignerHost * string -&gt; System.Web.UI.ITemplate" Usage="System.Web.UI.Design.ControlParser.ParseTemplate (designerHost, templateText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlParser.ParseTemplate(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTemplate (designerHost As IDesignerHost, templateText As String, directives As String) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ITemplate ^ ParseTemplate(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::String ^ templateText, System::String ^ directives);" />
+      <MemberSignature Language="F#" Value="static member ParseTemplate : System.ComponentModel.Design.IDesignerHost * string * string -&gt; System.Web.UI.ITemplate" Usage="System.Web.UI.Design.ControlParser.ParseTemplate (designerHost, templateText, directives)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DockingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum DockingBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class DockingBehavior" />
+  <TypeSignature Language="F#" Value="type DockingBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Ask" />
       <MemberSignature Language="VB.NET" Value="Ask" />
       <MemberSignature Language="C++ CLI" Value="Ask" />
+      <MemberSignature Language="F#" Value="Ask = 1" Usage="System.Windows.Forms.DockingBehavior.Ask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.AutoDock" />
       <MemberSignature Language="VB.NET" Value="AutoDock" />
       <MemberSignature Language="C++ CLI" Value="AutoDock" />
+      <MemberSignature Language="F#" Value="AutoDock = 2" Usage="System.Windows.Forms.DockingBehavior.AutoDock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.Windows.Forms.DockingBehavior.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

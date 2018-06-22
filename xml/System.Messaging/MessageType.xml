@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageType" />
+  <TypeSignature Language="F#" Value="type MessageType = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageType.Acknowledgment" />
       <MemberSignature Language="VB.NET" Value="Acknowledgment" />
       <MemberSignature Language="C++ CLI" Value="Acknowledgment" />
+      <MemberSignature Language="F#" Value="Acknowledgment = 1" Usage="System.Messaging.MessageType.Acknowledgment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageType.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 2" Usage="System.Messaging.MessageType.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageType.Report" />
       <MemberSignature Language="VB.NET" Value="Report" />
       <MemberSignature Language="C++ CLI" Value="Report" />
+      <MemberSignature Language="F#" Value="Report = 3" Usage="System.Messaging.MessageType.Report" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

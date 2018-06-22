@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.IConstructedTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConstructedTypeProvider(Of TType)&#xA;Implements ISZArrayTypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class IConstructedTypeProvider : System::Reflection::Metadata::ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="F#" Value="type IConstructedTypeProvider&lt;'ype&gt; = interface&#xA;    interface ISZArrayTypeProvider&lt;'ype&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetArrayType(`0,System.Reflection.Metadata.ArrayShape)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArrayType (elementType As TType, shape As ArrayShape) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetArrayType(TType elementType, System::Reflection::Metadata::ArrayShape shape);" />
+      <MemberSignature Language="F#" Value="abstract member GetArrayType : 'ype * System.Reflection.Metadata.ArrayShape -&gt; 'ype" Usage="iConstructedTypeProvider.GetArrayType (elementType, shape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetByReferenceType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByReferenceType (elementType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetByReferenceType(TType elementType);" />
+      <MemberSignature Language="F#" Value="abstract member GetByReferenceType : 'ype -&gt; 'ype" Usage="iConstructedTypeProvider.GetByReferenceType elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetGenericInstance(`0,System.Collections.Immutable.ImmutableArray{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericInstance (genericType As TType, typeArguments As ImmutableArray(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericInstance(TType genericType, System::Collections::Immutable::ImmutableArray&lt;TType&gt; typeArguments);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericInstance : 'ype * System.Collections.Immutable.ImmutableArray&lt;'ype&gt; -&gt; 'ype" Usage="iConstructedTypeProvider.GetGenericInstance (genericType, typeArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetGenericInstantiation(`0,System.Collections.Immutable.ImmutableArray{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericInstantiation (genericType As TType, typeArguments As ImmutableArray(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericInstantiation(TType genericType, System::Collections::Immutable::ImmutableArray&lt;TType&gt; typeArguments);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericInstantiation : 'ype * System.Collections.Immutable.ImmutableArray&lt;'ype&gt; -&gt; 'ype" Usage="iConstructedTypeProvider.GetGenericInstantiation (genericType, typeArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IConstructedTypeProvider`1.GetPointerType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPointerType (elementType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetPointerType(TType elementType);" />
+      <MemberSignature Language="F#" Value="abstract member GetPointerType : 'ype -&gt; 'ype" Usage="iConstructedTypeProvider.GetPointerType elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

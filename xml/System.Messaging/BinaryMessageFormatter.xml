@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.BinaryMessageFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryMessageFormatter&#xA;Implements ICloneable, IMessageFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryMessageFormatter : ICloneable, System::Messaging::IMessageFormatter" />
+  <TypeSignature Language="F#" Value="type BinaryMessageFormatter = class&#xA;    interface IMessageFormatter&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.BinaryMessageFormatter.#ctor(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,System.Runtime.Serialization.Formatters.FormatterTypeStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (topObjectFormat As FormatterAssemblyStyle, typeFormat As FormatterTypeStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryMessageFormatter(System::Runtime::Serialization::Formatters::FormatterAssemblyStyle topObjectFormat, System::Runtime::Serialization::Formatters::FormatterTypeStyle typeFormat);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.BinaryMessageFormatter : System.Runtime.Serialization.Formatters.FormatterAssemblyStyle * System.Runtime.Serialization.Formatters.FormatterTypeStyle -&gt; System.Messaging.BinaryMessageFormatter" Usage="new System.Messaging.BinaryMessageFormatter (topObjectFormat, typeFormat)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRead(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.BinaryMessageFormatter.CanRead(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanRead(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Messaging.Message -&gt; bool&#xA;override this.CanRead : System.Messaging.Message -&gt; bool" Usage="binaryMessageFormatter.CanRead message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.CanRead(System.Messaging.Message)</InterfaceMember>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.BinaryMessageFormatter.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="binaryMessageFormatter.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -175,6 +179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Read(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.BinaryMessageFormatter.Read(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Read(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Messaging.Message -&gt; obj&#xA;override this.Read : System.Messaging.Message -&gt; obj" Usage="binaryMessageFormatter.Read message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.Read(System.Messaging.Message)</InterfaceMember>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.BinaryMessageFormatter.TopObjectFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TopObjectFormat As FormatterAssemblyStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterAssemblyStyle TopObjectFormat { System::Runtime::Serialization::Formatters::FormatterAssemblyStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterAssemblyStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.TopObjectFormat : System.Runtime.Serialization.Formatters.FormatterAssemblyStyle with get, set" Usage="System.Messaging.BinaryMessageFormatter.TopObjectFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.BinaryMessageFormatter.TypeFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeFormat As FormatterTypeStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterTypeStyle TypeFormat { System::Runtime::Serialization::Formatters::FormatterTypeStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterTypeStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeFormat : System.Runtime.Serialization.Formatters.FormatterTypeStyle with get, set" Usage="System.Messaging.BinaryMessageFormatter.TypeFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -289,6 +296,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Messaging.Message message, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.BinaryMessageFormatter.Write(System.Messaging.Message,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Messaging::Message ^ message, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Messaging.Message * obj -&gt; unit&#xA;override this.Write : System.Messaging.Message * obj -&gt; unit" Usage="binaryMessageFormatter.Write (message, obj)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.Write(System.Messaging.Message,System.Object)</InterfaceMember>

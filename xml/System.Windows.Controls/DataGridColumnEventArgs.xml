@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridColumnEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridColumnEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridColumnEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumnEventArgs.#ctor(System.Windows.Controls.DataGridColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataGridColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnEventArgs(System::Windows::Controls::DataGridColumn ^ column);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridColumnEventArgs : System.Windows.Controls.DataGridColumn -&gt; System.Windows.Controls.DataGridColumnEventArgs" Usage="new System.Windows.Controls.DataGridColumnEventArgs column" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumnEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridColumnEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

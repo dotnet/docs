@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DpiChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DpiChangedEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DpiChangedEventArgs sealed : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DpiChangedEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DpiChangedEventArgs.DeviceDpiNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceDpiNew As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DeviceDpiNew { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceDpiNew : int" Usage="System.Windows.Forms.DpiChangedEventArgs.DeviceDpiNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DpiChangedEventArgs.DeviceDpiOld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceDpiOld As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DeviceDpiOld { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceDpiOld : int" Usage="System.Windows.Forms.DpiChangedEventArgs.DeviceDpiOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DpiChangedEventArgs.SuggestedRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuggestedRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle SuggestedRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.DpiChangedEventArgs.SuggestedRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DpiChangedEventArgs.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="dpiChangedEventArgs.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

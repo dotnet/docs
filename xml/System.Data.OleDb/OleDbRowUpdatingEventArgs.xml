@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbRowUpdatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbRowUpdatingEventArgs&#xA;Inherits RowUpdatingEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbRowUpdatingEventArgs sealed : System::Data::Common::RowUpdatingEventArgs" />
+  <TypeSignature Language="F#" Value="type OleDbRowUpdatingEventArgs = class&#xA;    inherit RowUpdatingEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbRowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbRowUpdatingEventArgs(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbRowUpdatingEventArgs : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.OleDb.OleDbRowUpdatingEventArgs" Usage="new System.Data.OleDb.OleDbRowUpdatingEventArgs (dataRow, command, statementType, tableMapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbRowUpdatingEventArgs.BaseCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property BaseCommand As IDbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::IDbCommand ^ BaseCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseCommand : System.Data.IDbCommand with get, set" Usage="System.Data.OleDb.OleDbRowUpdatingEventArgs.BaseCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbRowUpdatingEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As OleDbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbCommand ^ Command { System::Data::OleDb::OleDbCommand ^ get(); void set(System::Data::OleDb::OleDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.OleDb.OleDbCommand with get, set" Usage="System.Data.OleDb.OleDbRowUpdatingEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

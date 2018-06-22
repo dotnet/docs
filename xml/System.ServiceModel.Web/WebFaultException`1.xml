@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebFaultException`1" />
   <TypeSignature Language="VB.NET" Value="Public Class WebFaultException(Of T)&#xA;Inherits FaultException(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class WebFaultException : System::ServiceModel::FaultException&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type WebFaultException&lt;'T&gt; = class&#xA;    inherit FaultException&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebFaultException`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebFaultException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Web.WebFaultException&lt;'T&gt;" Usage="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebFaultException`1.#ctor(`0,System.Net.HttpStatusCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As T, statusCode As HttpStatusCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebFaultException(T detail, System::Net::HttpStatusCode statusCode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; : 'T * System.Net.HttpStatusCode -&gt; System.ServiceModel.Web.WebFaultException&lt;'T&gt;" Usage="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; (detail, statusCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebFaultException`1.#ctor(`0,System.Net.HttpStatusCode,System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As T, statusCode As HttpStatusCode, knownTypes As IEnumerable(Of Type))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebFaultException(T detail, System::Net::HttpStatusCode statusCode, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; : 'T * System.Net.HttpStatusCode * seq&lt;Type&gt; -&gt; System.ServiceModel.Web.WebFaultException&lt;'T&gt;" Usage="new System.ServiceModel.Web.WebFaultException&lt;'T&gt; (detail, statusCode, knownTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebFaultException`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webFaultException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebFaultException`1.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As HttpStatusCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.HttpStatusCode" Usage="System.ServiceModel.Web.WebFaultException&lt;'T&gt;.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

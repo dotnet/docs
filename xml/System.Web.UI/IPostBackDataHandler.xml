@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type IPostBackDataHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="iPostBackDataHandler.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit" Usage="iPostBackDataHandler.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

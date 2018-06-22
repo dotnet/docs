@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlErrorResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class DsmlErrorResponse&#xA;Inherits DirectoryResponse" />
   <TypeSignature Language="C++ CLI" Value="public ref class DsmlErrorResponse : System::DirectoryServices::Protocols::DirectoryResponse" />
+  <TypeSignature Language="F#" Value="type DsmlErrorResponse = class&#xA;    inherit DirectoryResponse" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As DirectoryControl()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::DirectoryServices::Protocols::DirectoryControl ^&gt; ^ Controls { cli::array &lt;System::DirectoryServices::Protocols::DirectoryControl ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.DirectoryServices.Protocols.DirectoryControl[]" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.Detail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detail As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Detail { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Detail : string" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.Detail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.ErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.ErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.MatchedDN" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MatchedDN As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MatchedDN { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchedDN : string" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.MatchedDN" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.Referral" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Referral As Uri()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Uri ^&gt; ^ Referral { cli::array &lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Referral : Uri[]" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.Referral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.ResultCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ResultCode As ResultCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::Protocols::ResultCode ResultCode { System::DirectoryServices::Protocols::ResultCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultCode : System.DirectoryServices.Protocols.ResultCode" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.ResultCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlErrorResponse.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As ErrorResponseCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::ErrorResponseCategory Type { System::DirectoryServices::Protocols::ErrorResponseCategory get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.DirectoryServices.Protocols.ErrorResponseCategory" Usage="System.DirectoryServices.Protocols.DsmlErrorResponse.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

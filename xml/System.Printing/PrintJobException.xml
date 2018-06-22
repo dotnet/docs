@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobException" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintJobException&#xA;Inherits PrintSystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintJobException : System::Printing::PrintSystemException" />
+  <TypeSignature Language="F#" Value="type PrintJobException = class&#xA;    inherit PrintSystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : string -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(int errorCode, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : int * string -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (errorCode, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintJobException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : string * Exception -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.Int32,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(int errorCode, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : int * string * Exception -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (errorCode, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.Int32,System.String,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printQueueName As String, jobName As String, jobId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(int errorCode, System::String ^ message, System::String ^ printQueueName, System::String ^ jobName, int jobId);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : int * string * string * string * int -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (errorCode, message, printQueueName, jobName, jobId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printQueueName As String, jobName As String, jobId As Integer, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintJobException(int errorCode, System::String ^ message, System::String ^ printQueueName, System::String ^ jobName, int jobId, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintJobException : int * string * string * string * int * Exception -&gt; System.Printing.PrintJobException" Usage="new System.Printing.PrintJobException (errorCode, message, printQueueName, jobName, jobId, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintJobException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="printJobException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintJobException.JobId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int JobId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.JobId : int" Usage="System.Printing.PrintJobException.JobId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -278,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintJobException.JobName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JobName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.JobName : string" Usage="System.Printing.PrintJobException.JobName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -298,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintJobException.PrintQueueName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintQueueName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrintQueueName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrintQueueName : string" Usage="System.Printing.PrintJobException.PrintQueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

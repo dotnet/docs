@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.SharingBoundaryAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SharingBoundaryAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SharingBoundaryAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SharingBoundaryAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.SharingBoundaryAttribute.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray sharingBoundaryNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SharingBoundaryAttribute(... cli::array &lt;System::String ^&gt; ^ sharingBoundaryNames);" />
+      <MemberSignature Language="F#" Value="new System.Composition.SharingBoundaryAttribute : string[] -&gt; System.Composition.SharingBoundaryAttribute" Usage="new System.Composition.SharingBoundaryAttribute sharingBoundaryNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.SharingBoundaryAttribute.SharingBoundaryNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharingBoundaryNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ SharingBoundaryNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharingBoundaryNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Composition.SharingBoundaryAttribute.SharingBoundaryNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

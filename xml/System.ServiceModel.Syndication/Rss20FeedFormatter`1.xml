@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20FeedFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Rss20FeedFormatter(Of TSyndicationFeed)&#xA;Inherits Rss20FeedFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationFeed&gt;&#xA; where TSyndicationFeed : SyndicationFeedgcnew()public ref class Rss20FeedFormatter : System::ServiceModel::Syndication::Rss20FeedFormatter" />
+  <TypeSignature Language="F#" Value="type Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; = class&#xA;    inherit Rss20FeedFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedToWrite As TSyndicationFeed)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20FeedFormatter(TSyndicationFeed feedToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; : 'SyndicationFeed -&gt; System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt;" Usage="new System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; feedToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.#ctor(`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedToWrite As TSyndicationFeed, serializeExtensionsAsAtom As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20FeedFormatter(TSyndicationFeed feedToWrite, bool serializeExtensionsAsAtom);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; : 'SyndicationFeed * bool -&gt; System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt;" Usage="new System.ServiceModel.Syndication.Rss20FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; (feedToWrite, serializeExtensionsAsAtom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter`1.CreateFeedInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateFeedInstance () As SyndicationFeed" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationFeed ^ CreateFeedInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateFeedInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationFeed" Usage="rss20FeedFormatter.CreateFeedInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

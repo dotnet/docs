@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripManagerRenderMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripManagerRenderMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripManagerRenderMode" />
+  <TypeSignature Language="F#" Value="type ToolStripManagerRenderMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Windows.Forms.ToolStripManagerRenderMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.Professional" />
       <MemberSignature Language="VB.NET" Value="Professional" />
       <MemberSignature Language="C++ CLI" Value="Professional" />
+      <MemberSignature Language="F#" Value="Professional = 2" Usage="System.Windows.Forms.ToolStripManagerRenderMode.Professional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 1" Usage="System.Windows.Forms.ToolStripManagerRenderMode.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredTaskAwaitable(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public value class ConfiguredTaskAwaitable" />
+  <TypeSignature Language="F#" Value="type ConfiguredTaskAwaitable&lt;'Result&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ConfiguredTaskAwaitable(Of TResult).ConfiguredTaskAwaiter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredTaskAwaitable&lt;TResult&gt;::ConfiguredTaskAwaiter GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;'Result&gt;.ConfiguredTaskAwaiter" Usage="configuredTaskAwaitable.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

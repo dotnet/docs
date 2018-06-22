@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebMessageFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebMessageFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebMessageFormat" />
+  <TypeSignature Language="F#" Value="type WebMessageFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageFormat.Json" />
       <MemberSignature Language="VB.NET" Value="Json" />
       <MemberSignature Language="C++ CLI" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 1" Usage="System.ServiceModel.Web.WebMessageFormat.Json" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 0" Usage="System.ServiceModel.Web.WebMessageFormat.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

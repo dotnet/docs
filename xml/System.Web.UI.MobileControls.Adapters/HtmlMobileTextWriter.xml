@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlMobileTextWriter&#xA;Inherits MobileTextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlMobileTextWriter : System::Web::UI::MobileControls::Adapters::MobileTextWriter" />
+  <TypeSignature Language="F#" Value="type HtmlMobileTextWriter = class&#xA;    inherit MobileTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlMobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter : System.IO.TextWriter * System.Web.Mobile.MobileCapabilities -&gt; System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter" Usage="new System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter (writer, device)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.BeginStyleContext" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginStyleContext ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginStyleContext();" />
+      <MemberSignature Language="F#" Value="member this.BeginStyleContext : unit -&gt; unit" Usage="htmlMobileTextWriter.BeginStyleContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EndStyleContext" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndStyleContext ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndStyleContext();" />
+      <MemberSignature Language="F#" Value="member this.EndStyleContext : unit -&gt; unit" Usage="htmlMobileTextWriter.EndStyleContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.EnterFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.EnterLayout style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterStyle(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.EnterStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.ExitFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.ExitFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitFormat(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="override this.ExitFormat : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="htmlMobileTextWriter.ExitFormat (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.ExitLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.ExitLayout style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitLayout(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="override this.ExitLayout : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="htmlMobileTextWriter.ExitLayout (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitStyle(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="htmlMobileTextWriter.ExitStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -326,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitStyle(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitStyle(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitStyle(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="override this.ExitStyle : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="htmlMobileTextWriter.ExitStyle (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -351,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.MarkStyleContext" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub MarkStyleContext ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void MarkStyleContext();" />
+      <MemberSignature Language="F#" Value="member this.MarkStyleContext : unit -&gt; unit" Usage="htmlMobileTextWriter.MarkStyleContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -371,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderBodyColor" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderBodyColor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderBodyColor { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderBodyColor : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderBodyColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -392,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderBold" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderBold As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderBold { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderBold : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -413,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderDivAlign" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderDivAlign As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderDivAlign { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderDivAlign : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderDivAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -434,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderDivNoWrap" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderDivNoWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderDivNoWrap { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderDivNoWrap : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderDivNoWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -455,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontColor" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderFontColor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderFontColor { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderFontColor : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -476,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderFontName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderFontName { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderFontName : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -497,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontSize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderFontSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderFontSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderFontSize : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -518,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderItalic" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RenderItalic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RenderItalic { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderItalic : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RenderItalic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -539,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RequiresNoBreakInFormatting" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property RequiresNoBreakInFormatting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool RequiresNoBreakInFormatting { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresNoBreakInFormatting : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.RequiresNoBreakInFormatting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -560,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.UnMarkStyleContext" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub UnMarkStyleContext ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void UnMarkStyleContext();" />
+      <MemberSignature Language="F#" Value="member this.UnMarkStyleContext : unit -&gt; unit" Usage="htmlMobileTextWriter.UnMarkStyleContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -589,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (c As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char c);" />
+      <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="htmlMobileTextWriter.Write c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -612,6 +637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="htmlMobileTextWriter.Write text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -635,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBeginTag(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member WriteBeginTag : string -&gt; unit&#xA;override this.WriteBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -658,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBreak();" />
+      <MemberSignature Language="F#" Value="member this.WriteBreak : unit -&gt; unit" Usage="htmlMobileTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -678,6 +706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteEncodedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEncodedText : string -&gt; unit&#xA;override this.WriteEncodedText : string -&gt; unit" Usage="htmlMobileTextWriter.WriteEncodedText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -701,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteFullBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullBeginTag(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member WriteFullBeginTag : string -&gt; unit&#xA;override this.WriteFullBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteFullBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -724,6 +754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteHiddenField(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteHiddenField (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteHiddenField(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WriteHiddenField : string * string -&gt; unit" Usage="htmlMobileTextWriter.WriteHiddenField (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -756,6 +787,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member WriteLine : string -&gt; unit&#xA;override this.WriteLine : string -&gt; unit" Usage="htmlMobileTextWriter.WriteLine text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -779,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteText(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteText (text As String, encodeText As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteText(System::String ^ text, bool encodeText);" />
+      <MemberSignature Language="F#" Value="member this.WriteText : string * bool -&gt; unit" Usage="htmlMobileTextWriter.WriteText (text, encodeText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -811,6 +844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteUrlParameter(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteUrlParameter (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteUrlParameter(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WriteUrlParameter : string * string -&gt; unit" Usage="htmlMobileTextWriter.WriteUrlParameter (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

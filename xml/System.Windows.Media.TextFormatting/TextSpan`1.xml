@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSpan`1" />
   <TypeSignature Language="VB.NET" Value="Public Class TextSpan(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class TextSpan" />
+  <TypeSignature Language="F#" Value="type TextSpan&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSpan`1.#ctor(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextSpan(int length, T value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextSpan&lt;'T&gt; : int * 'T -&gt; System.Windows.Media.TextFormatting.TextSpan&lt;'T&gt;" Usage="new System.Windows.Media.TextFormatting.TextSpan&lt;'T&gt; (length, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSpan`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextSpan&lt;'T&gt;.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSpan`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Windows.Media.TextFormatting.TextSpan&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

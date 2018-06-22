@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PointAnimationBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PointAnimationBase&#xA;Inherits AnimationTimeline" />
   <TypeSignature Language="C++ CLI" Value="public ref class PointAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type PointAnimationBase = class&#xA;    inherit AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationBase.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PointAnimationBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::PointAnimationBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.PointAnimationBase" Usage="pointAnimationBase.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="pointAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point GetCurrentValue(valuetype System.Windows.Point defaultOriginValue, valuetype System.Windows.Point defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationBase.GetCurrentValue(System.Windows.Point,System.Windows.Point,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetCurrentValue(System::Windows::Point defaultOriginValue, System::Windows::Point defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : System.Windows.Point * System.Windows.Point * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Point" Usage="pointAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Point GetCurrentValueCore(valuetype System.Windows.Point defaultOriginValue, valuetype System.Windows.Point defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationBase.GetCurrentValueCore(System.Windows.Point,System.Windows.Point,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Point GetCurrentValueCore(System::Windows::Point defaultOriginValue, System::Windows::Point defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : System.Windows.Point * System.Windows.Point * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Point" Usage="pointAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointAnimationBase.TargetPropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.PointAnimationBase.TargetPropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

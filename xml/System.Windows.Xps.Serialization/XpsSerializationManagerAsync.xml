@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XpsSerializationManagerAsync&#xA;Inherits XpsSerializationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationManagerAsync sealed : System::Windows::Xps::Serialization::XpsSerializationManager" />
+  <TypeSignature Language="F#" Value="type XpsSerializationManagerAsync = class&#xA;    inherit XpsSerializationManager" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (packagingPolicy As BasePackagingPolicy, batchMode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationManagerAsync(System::Windows::Xps::Serialization::BasePackagingPolicy ^ packagingPolicy, bool batchMode);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsSerializationManagerAsync : System.Windows.Xps.Serialization.BasePackagingPolicy * bool -&gt; System.Windows.Xps.Serialization.XpsSerializationManagerAsync" Usage="new System.Windows.Xps.Serialization.XpsSerializationManagerAsync (packagingPolicy, batchMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.CancelAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="xpsSerializationManagerAsync.CancelAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="xpsSerializationManagerAsync.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.SaveAsXaml(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SaveAsXaml (serializedObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SaveAsXaml(System::Object ^ serializedObject);" />
+      <MemberSignature Language="F#" Value="override this.SaveAsXaml : obj -&gt; unit" Usage="xpsSerializationManagerAsync.SaveAsXaml serializedObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event XpsSerializationCompleted As XpsSerializationCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Xps::Serialization::XpsSerializationCompletedEventHandler ^ XpsSerializationCompleted;" />
+      <MemberSignature Language="F#" Value="member this.XpsSerializationCompleted : System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler " Usage="member this.XpsSerializationCompleted : System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ELEMDESC.DESCUNION" />
   <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC.DESCUNION" />
   <TypeSignature Language="C++ CLI" Value="public: value class ELEMDESC::DESCUNION" />
+  <TypeSignature Language="F#" Value="type ELEMDESC.DESCUNION = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.DESCUNION.idldesc" />
       <MemberSignature Language="VB.NET" Value="Public idldesc As IDLDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::IDLDESC idldesc;" />
+      <MemberSignature Language="F#" Value="val mutable idldesc : System.Runtime.InteropServices.IDLDESC" Usage="System.Runtime.InteropServices.ELEMDESC.DESCUNION.idldesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.DESCUNION.paramdesc" />
       <MemberSignature Language="VB.NET" Value="Public paramdesc As PARAMDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::PARAMDESC paramdesc;" />
+      <MemberSignature Language="F#" Value="val mutable paramdesc : System.Runtime.InteropServices.PARAMDESC" Usage="System.Runtime.InteropServices.ELEMDESC.DESCUNION.paramdesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

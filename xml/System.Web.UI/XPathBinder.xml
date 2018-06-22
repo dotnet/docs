@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.XPathBinder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XPathBinder" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathBinder sealed" />
+  <TypeSignature Language="F#" Value="type XPathBinder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Eval(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, xPath As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Eval(System::Object ^ container, System::String ^ xPath);" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string -&gt; obj" Usage="System.Web.UI.XPathBinder.Eval (container, xPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Eval(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, xPath As String, format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Eval(System::Object ^ container, System::String ^ xPath, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string * string -&gt; string" Usage="System.Web.UI.XPathBinder.Eval (container, xPath, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Eval(System.Object,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, xPath As String, resolver As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Eval(System::Object ^ container, System::String ^ xPath, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="System.Web.UI.XPathBinder.Eval (container, xPath, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Eval(System.Object,System.String,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, xPath As String, format As String, resolver As IXmlNamespaceResolver) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Eval(System::Object ^ container, System::String ^ xPath, System::String ^ format, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string * string * System.Xml.IXmlNamespaceResolver -&gt; string" Usage="System.Web.UI.XPathBinder.Eval (container, xPath, format, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Select(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Select (container As Object, xPath As String) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ Select(System::Object ^ container, System::String ^ xPath);" />
+      <MemberSignature Language="F#" Value="static member Select : obj * string -&gt; System.Collections.IEnumerable" Usage="System.Web.UI.XPathBinder.Select (container, xPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -388,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XPathBinder.Select(System.Object,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Select (container As Object, xPath As String, resolver As IXmlNamespaceResolver) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ Select(System::Object ^ container, System::String ^ xPath, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member Select : obj * string * System.Xml.IXmlNamespaceResolver -&gt; System.Collections.IEnumerable" Usage="System.Web.UI.XPathBinder.Select (container, xPath, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

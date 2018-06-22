@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetMsmqSecurityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetMsmqSecurityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetMsmqSecurityMode" />
+  <TypeSignature Language="F#" Value="type NetMsmqSecurityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetMsmqSecurityMode.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.ServiceModel.NetMsmqSecurityMode.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetMsmqSecurityMode.Message" />
       <MemberSignature Language="VB.NET" Value="Message" />
       <MemberSignature Language="C++ CLI" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 2" Usage="System.ServiceModel.NetMsmqSecurityMode.Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetMsmqSecurityMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.NetMsmqSecurityMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetMsmqSecurityMode.Transport" />
       <MemberSignature Language="VB.NET" Value="Transport" />
       <MemberSignature Language="C++ CLI" Value="Transport" />
+      <MemberSignature Language="F#" Value="Transport = 1" Usage="System.ServiceModel.NetMsmqSecurityMode.Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

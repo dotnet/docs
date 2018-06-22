@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.INVOKEKIND" />
   <TypeSignature Language="VB.NET" Value="Public Enum INVOKEKIND" />
   <TypeSignature Language="C++ CLI" Value="public enum class INVOKEKIND" />
+  <TypeSignature Language="F#" Value="type INVOKEKIND = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_FUNC" />
       <MemberSignature Language="VB.NET" Value="INVOKE_FUNC" />
       <MemberSignature Language="C++ CLI" Value="INVOKE_FUNC" />
+      <MemberSignature Language="F#" Value="INVOKE_FUNC = 1" Usage="System.Runtime.InteropServices.INVOKEKIND.INVOKE_FUNC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYGET" />
       <MemberSignature Language="VB.NET" Value="INVOKE_PROPERTYGET" />
       <MemberSignature Language="C++ CLI" Value="INVOKE_PROPERTYGET" />
+      <MemberSignature Language="F#" Value="INVOKE_PROPERTYGET = 2" Usage="System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYGET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUT" />
       <MemberSignature Language="VB.NET" Value="INVOKE_PROPERTYPUT" />
       <MemberSignature Language="C++ CLI" Value="INVOKE_PROPERTYPUT" />
+      <MemberSignature Language="F#" Value="INVOKE_PROPERTYPUT = 4" Usage="System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUTREF" />
       <MemberSignature Language="VB.NET" Value="INVOKE_PROPERTYPUTREF" />
       <MemberSignature Language="C++ CLI" Value="INVOKE_PROPERTYPUTREF" />
+      <MemberSignature Language="F#" Value="INVOKE_PROPERTYPUTREF = 8" Usage="System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUTREF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

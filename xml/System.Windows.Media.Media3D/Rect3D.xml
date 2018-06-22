@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Rect3D" />
   <TypeSignature Language="VB.NET" Value="Public Structure Rect3D&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Rect3D : IFormattable" />
+  <TypeSignature Language="F#" Value="type Rect3D = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Size3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (location As Point3D, size As Size3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect3D(System::Windows::Media::Media3D::Point3D location, System::Windows::Media::Media3D::Size3D size);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Rect3D : System.Windows.Media.Media3D.Point3D * System.Windows.Media.Media3D.Size3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="new System.Windows.Media.Media3D.Rect3D (location, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double, z As Double, sizeX As Double, sizeY As Double, sizeZ As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect3D(double x, double y, double z, double sizeX, double sizeY, double sizeZ);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Rect3D : double * double * double * double * double * double -&gt; System.Windows.Media.Media3D.Rect3D" Usage="new System.Windows.Media.Media3D.Rect3D (x, y, z, sizeX, sizeY, sizeZ)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Contains(System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (point As Point3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Media.Media3D.Point3D -&gt; bool" Usage="rect3D.Contains point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Contains(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (rect As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Media::Media3D::Rect3D rect);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="rect3D.Contains rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Contains(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (x As Double, y As Double, z As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(double x, double y, double z);" />
+      <MemberSignature Language="F#" Value="member this.Contains : double * double * double -&gt; bool" Usage="rect3D.Contains (x, y, z)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Media3D::Rect3D Empty { System::Windows::Media::Media3D::Rect3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rect3D.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Equals(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Media3D::Rect3D value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="rect3D.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Equals(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (rect1 As Rect3D, rect2 As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Media3D::Rect3D rect1, System::Windows::Media::Media3D::Rect3D rect2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="System.Windows.Media.Media3D.Rect3D.Equals (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -372,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rect3D.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Intersect(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As Rect3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Windows::Media::Media3D::Rect3D rect);" />
+      <MemberSignature Language="F#" Value="member this.Intersect : System.Windows.Media.Media3D.Rect3D -&gt; unit" Usage="rect3D.Intersect rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -441,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Intersect(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Intersect (rect1 As Rect3D, rect2 As Rect3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Intersect(System::Windows::Media::Media3D::Rect3D rect1, System::Windows::Media::Media3D::Rect3D rect2);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Rect3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Intersect (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -476,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.IntersectsWith(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function IntersectsWith (rect As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Windows::Media::Media3D::Rect3D rect);" />
+      <MemberSignature Language="F#" Value="member this.IntersectsWith : System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="rect3D.IntersectsWith rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Media.Media3D.Rect3D.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3D Location { System::Windows::Media::Media3D::Point3D get(); void set(System::Windows::Media::Media3D::Point3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Windows.Media.Media3D.Point3D with get, set" Usage="System.Windows.Media.Media3D.Rect3D.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -581,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Offset(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetVector As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Windows::Media::Media3D::Vector3D offsetVector);" />
+      <MemberSignature Language="F#" Value="member this.Offset : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="rect3D.Offset offsetVector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -614,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Offset(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Offset (rect As Rect3D, offsetVector As Vector3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Offset(System::Windows::Media::Media3D::Rect3D rect, System::Windows::Media::Media3D::Vector3D offsetVector);" />
+      <MemberSignature Language="F#" Value="static member Offset : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Offset (rect, offsetVector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -649,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Offset(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetX As Double, offsetY As Double, offsetZ As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(double offsetX, double offsetY, double offsetZ);" />
+      <MemberSignature Language="F#" Value="member this.Offset : double * double * double -&gt; unit" Usage="rect3D.Offset (offsetX, offsetY, offsetZ)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -685,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Offset(System.Windows.Media.Media3D.Rect3D,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Offset (rect As Rect3D, offsetX As Double, offsetY As Double, offsetZ As Double) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Offset(System::Windows::Media::Media3D::Rect3D rect, double offsetX, double offsetY, double offsetZ);" />
+      <MemberSignature Language="F#" Value="static member Offset : System.Windows.Media.Media3D.Rect3D * double * double * double -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Offset (rect, offsetX, offsetY, offsetZ)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -722,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.op_Equality(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (rect1 As Rect3D, rect2 As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Media3D::Rect3D rect1, System::Windows::Media::Media3D::Rect3D rect2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="rect1 = rect2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -756,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.op_Inequality(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (rect1 As Rect3D, rect2 As Rect3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Media3D::Rect3D rect1, System::Windows::Media::Media3D::Rect3D rect2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Rect3D -&gt; bool" Usage="System.Windows.Media.Media3D.Rect3D.op_Inequality (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -791,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -822,6 +845,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Size3D Size { System::Windows::Media::Media3D::Size3D get(); void set(System::Windows::Media::Media3D::Size3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Windows.Media.Media3D.Size3D with get, set" Usage="System.Windows.Media.Media3D.Rect3D.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -852,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.SizeX" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SizeX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeX : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.SizeX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -881,6 +906,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.SizeY" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SizeY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeY : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.SizeY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -910,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.SizeZ" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeZ As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SizeZ { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeZ : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.SizeZ" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -985,6 +1012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rect3D.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1006,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="rect3D.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1039,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Union(System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Union (point As Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Windows.Media.Media3D.Point3D -&gt; unit" Usage="rect3D.Union point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1069,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Union(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Union (rect As Rect3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Windows::Media::Media3D::Rect3D rect);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Windows.Media.Media3D.Rect3D -&gt; unit" Usage="rect3D.Union rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1099,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Union(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (rect As Rect3D, point As Point3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Union(System::Windows::Media::Media3D::Rect3D rect, System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Union (rect, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1132,6 +1164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rect3D.Union(System.Windows.Media.Media3D.Rect3D,System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (rect1 As Rect3D, rect2 As Rect3D) As Rect3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Rect3D Union(System::Windows::Media::Media3D::Rect3D rect1, System::Windows::Media::Media3D::Rect3D rect2);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Windows.Media.Media3D.Rect3D * System.Windows.Media.Media3D.Rect3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="System.Windows.Media.Media3D.Rect3D.Union (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1165,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1194,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1223,6 +1258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Rect3D.Z" />
       <MemberSignature Language="VB.NET" Value="Public Property Z As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Z { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Z : double with get, set" Usage="System.Windows.Media.Media3D.Rect3D.Z" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

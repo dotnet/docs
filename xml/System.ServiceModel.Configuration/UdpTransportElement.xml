@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UdpTransportElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UdpTransportElement&#xA;Inherits TransportElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpTransportElement sealed : System::ServiceModel::Configuration::TransportElement" />
+  <TypeSignature Language="F#" Value="type UdpTransportElement = class&#xA;    inherit TransportElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.UdpTransportElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.CreateDefaultBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultBindingElement () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ CreateDefaultBindingElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultBindingElement : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="udpTransportElement.CreateDefaultBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.DuplicateMessageHistoryLength" />
       <MemberSignature Language="VB.NET" Value="Public Property DuplicateMessageHistoryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DuplicateMessageHistoryLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DuplicateMessageHistoryLength : int with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.DuplicateMessageHistoryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.MaxPendingMessagesTotalSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingMessagesTotalSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxPendingMessagesTotalSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingMessagesTotalSize : int64 with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.MaxPendingMessagesTotalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.MulticastInterfaceId" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastInterfaceId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastInterfaceId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastInterfaceId : string with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.MulticastInterfaceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.UdpTransportElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.RetransmissionSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property RetransmissionSettings As UdpRetransmissionSettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::UdpRetransmissionSettingsElement ^ RetransmissionSettings { System::ServiceModel::Configuration::UdpRetransmissionSettingsElement ^ get(); void set(System::ServiceModel::Configuration::UdpRetransmissionSettingsElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RetransmissionSettings : System.ServiceModel.Configuration.UdpRetransmissionSettingsElement with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.RetransmissionSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.SocketReceiveBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SocketReceiveBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SocketReceiveBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SocketReceiveBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.SocketReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -282,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpTransportElement.TimeToLive" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeToLive As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeToLive { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeToLive : int with get, set" Usage="System.ServiceModel.Configuration.UdpTransportElement.TimeToLive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

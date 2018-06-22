@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.TemplatedMailWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplatedMailWebEventProvider&#xA;Inherits MailWebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplatedMailWebEventProvider sealed : System::Web::Management::MailWebEventProvider" />
+  <TypeSignature Language="F#" Value="type TemplatedMailWebEventProvider = class&#xA;    inherit MailWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.TemplatedMailWebEventProvider.CurrentNotification" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentNotification As MailEventNotificationInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Management::MailEventNotificationInfo ^ CurrentNotification { System::Web::Management::MailEventNotificationInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentNotification : System.Web.Management.MailEventNotificationInfo" Usage="System.Web.Management.TemplatedMailWebEventProvider.CurrentNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.TemplatedMailWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="templatedMailWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

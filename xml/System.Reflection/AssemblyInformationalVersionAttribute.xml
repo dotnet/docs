@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyInformationalVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyInformationalVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInformationalVersionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyInformationalVersionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyInformationalVersionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (informationalVersion As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInformationalVersionAttribute(System::String ^ informationalVersion);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyInformationalVersionAttribute : string -&gt; System.Reflection.AssemblyInformationalVersionAttribute" Usage="new System.Reflection.AssemblyInformationalVersionAttribute informationalVersion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyInformationalVersionAttribute.InformationalVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InformationalVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InformationalVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InformationalVersion : string" Usage="System.Reflection.AssemblyInformationalVersionAttribute.InformationalVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

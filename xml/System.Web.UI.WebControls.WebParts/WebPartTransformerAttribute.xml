@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartTransformerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartTransformerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WebPartTransformerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (consumerType As Type, providerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartTransformerAttribute(Type ^ consumerType, Type ^ providerType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute : Type * Type -&gt; System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" Usage="new System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute (consumerType, providerType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ConsumerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConsumerType : Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConsumerType (transformerType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetConsumerType(Type ^ transformerType);" />
+      <MemberSignature Language="F#" Value="static member GetConsumerType : Type -&gt; Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType transformerType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderType (transformerType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetProviderType(Type ^ transformerType);" />
+      <MemberSignature Language="F#" Value="static member GetProviderType : Type -&gt; Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType transformerType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ProviderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderType : Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

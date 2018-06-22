@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IAdviseSink" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAdviseSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAdviseSink" />
+  <TypeSignature Language="F#" Value="type IAdviseSink = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnClose" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnClose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnClose();" />
+      <MemberSignature Language="F#" Value="abstract member OnClose : unit -&gt; unit" Usage="iAdviseSink.OnClose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnDataChange(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDataChange (ByRef format As FORMATETC, ByRef stgmedium As STGMEDIUM)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDataChange(System::Runtime::InteropServices::ComTypes::FORMATETC % format, System::Runtime::InteropServices::ComTypes::STGMEDIUM % stgmedium);" />
+      <MemberSignature Language="F#" Value="abstract member OnDataChange :  *  -&gt; unit" Usage="iAdviseSink.OnDataChange (format, stgmedium)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnRename(System.Runtime.InteropServices.ComTypes.IMoniker)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnRename (moniker As IMoniker)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnRename(System::Runtime::InteropServices::ComTypes::IMoniker ^ moniker);" />
+      <MemberSignature Language="F#" Value="abstract member OnRename : System.Runtime.InteropServices.ComTypes.IMoniker -&gt; unit" Usage="iAdviseSink.OnRename moniker" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnSave" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSave ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSave();" />
+      <MemberSignature Language="F#" Value="abstract member OnSave : unit -&gt; unit" Usage="iAdviseSink.OnSave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnViewChange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnViewChange (aspect As Integer, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnViewChange(int aspect, int index);" />
+      <MemberSignature Language="F#" Value="abstract member OnViewChange : int * int -&gt; unit" Usage="iAdviseSink.OnViewChange (aspect, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

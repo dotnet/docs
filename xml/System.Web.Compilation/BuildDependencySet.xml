@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildDependencySet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildDependencySet" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildDependencySet sealed" />
+  <TypeSignature Language="F#" Value="type BuildDependencySet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildDependencySet.HashCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashCode : string" Usage="System.Web.Compilation.BuildDependencySet.HashCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildDependencySet.VirtualPaths" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualPaths As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ VirtualPaths { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPaths : System.Collections.IEnumerable" Usage="System.Web.Compilation.BuildDependencySet.VirtualPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionChangeAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleConditionChangeAction&#xA;Inherits WorkflowChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleConditionChangeAction abstract : System::Workflow::ComponentModel::WorkflowChangeAction" />
+  <TypeSignature Language="F#" Value="type RuleConditionChangeAction = class&#xA;    inherit WorkflowChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleConditionChangeAction.ConditionName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConditionName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ConditionName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionName : string" Usage="System.Workflow.Activities.Rules.RuleConditionChangeAction.ConditionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="override this.ValidateChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="ruleConditionChangeAction.ValidateChanges activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

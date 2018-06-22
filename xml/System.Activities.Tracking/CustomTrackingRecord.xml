@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.CustomTrackingRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomTrackingRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomTrackingRecord : System::Activities::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type CustomTrackingRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.#ctor(System.Activities.Tracking.CustomTrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (record As CustomTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomTrackingRecord(System::Activities::Tracking::CustomTrackingRecord ^ record);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.CustomTrackingRecord : System.Activities.Tracking.CustomTrackingRecord -&gt; System.Activities.Tracking.CustomTrackingRecord" Usage="new System.Activities.Tracking.CustomTrackingRecord record" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomTrackingRecord(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.CustomTrackingRecord : string -&gt; System.Activities.Tracking.CustomTrackingRecord" Usage="new System.Activities.Tracking.CustomTrackingRecord name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.#ctor(System.String,System.Diagnostics.TraceLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, level As TraceLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomTrackingRecord(System::String ^ name, System::Diagnostics::TraceLevel level);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.CustomTrackingRecord : string * System.Diagnostics.TraceLevel -&gt; System.Activities.Tracking.CustomTrackingRecord" Usage="new System.Activities.Tracking.CustomTrackingRecord (name, level)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.#ctor(System.Guid,System.String,System.Diagnostics.TraceLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, name As String, level As TraceLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomTrackingRecord(Guid instanceId, System::String ^ name, System::Diagnostics::TraceLevel level);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.CustomTrackingRecord : Guid * string * System.Diagnostics.TraceLevel -&gt; System.Activities.Tracking.CustomTrackingRecord" Usage="new System.Activities.Tracking.CustomTrackingRecord (instanceId, name, level)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CustomTrackingRecord.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ Activity { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.CustomTrackingRecord.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="customTrackingRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CustomTrackingRecord.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Data { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.Tracking.CustomTrackingRecord.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.CustomTrackingRecord.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.Tracking.CustomTrackingRecord.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.CustomTrackingRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="customTrackingRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

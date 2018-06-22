@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.IDbColumnSchemaGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbColumnSchemaGenerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDbColumnSchemaGenerator" />
+  <TypeSignature Language="F#" Value="type IDbColumnSchemaGenerator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.IDbColumnSchemaGenerator.GetColumnSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnSchema () As ReadOnlyCollection(Of DbColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::DbColumn ^&gt; ^ GetColumnSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnSchema : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.DbColumn&gt;" Usage="iDbColumnSchemaGenerator.GetColumnSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

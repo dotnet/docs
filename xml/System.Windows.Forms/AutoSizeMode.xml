@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoSizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutoSizeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AutoSizeMode" />
+  <TypeSignature Language="F#" Value="type AutoSizeMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowAndShrink" />
       <MemberSignature Language="VB.NET" Value="GrowAndShrink" />
       <MemberSignature Language="C++ CLI" Value="GrowAndShrink" />
+      <MemberSignature Language="F#" Value="GrowAndShrink = 0" Usage="System.Windows.Forms.AutoSizeMode.GrowAndShrink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />
       <MemberSignature Language="VB.NET" Value="GrowOnly" />
       <MemberSignature Language="C++ CLI" Value="GrowOnly" />
+      <MemberSignature Language="F#" Value="GrowOnly = 1" Usage="System.Windows.Forms.AutoSizeMode.GrowOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

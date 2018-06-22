@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlAuthenticationParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationParameters" />
+  <TypeSignature Language="F#" Value="type SqlAuthenticationParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationParameters.#ctor(System.Data.SqlClient.SqlAuthenticationMethod,System.String,System.String,System.String,System.String,System.String,System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (authenticationMethod As SqlAuthenticationMethod, serverName As String, databaseName As String, resource As String, authority As String, userId As String, password As String, connectionId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SqlAuthenticationParameters(System::Data::SqlClient::SqlAuthenticationMethod authenticationMethod, System::String ^ serverName, System::String ^ databaseName, System::String ^ resource, System::String ^ authority, System::String ^ userId, System::String ^ password, Guid connectionId);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlAuthenticationParameters : System.Data.SqlClient.SqlAuthenticationMethod * string * string * string * string * string * string * Guid -&gt; System.Data.SqlClient.SqlAuthenticationParameters" Usage="new System.Data.SqlClient.SqlAuthenticationParameters (authenticationMethod, serverName, databaseName, resource, authority, userId, password, connectionId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.AuthenticationMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationMethod As SqlAuthenticationMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlAuthenticationMethod AuthenticationMethod { System::Data::SqlClient::SqlAuthenticationMethod get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationMethod : System.Data.SqlClient.SqlAuthenticationMethod" Usage="System.Data.SqlClient.SqlAuthenticationParameters.AuthenticationMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.Authority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authority As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Authority { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authority : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.Authority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.ConnectionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ConnectionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionId : Guid" Usage="System.Data.SqlClient.SqlAuthenticationParameters.ConnectionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.DatabaseName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DatabaseName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DatabaseName : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.DatabaseName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.Password" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.Resource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Resource { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Resource : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -177,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.ServerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerName : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.ServerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlAuthenticationParameters.UserId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserId : string" Usage="System.Data.SqlClient.SqlAuthenticationParameters.UserId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

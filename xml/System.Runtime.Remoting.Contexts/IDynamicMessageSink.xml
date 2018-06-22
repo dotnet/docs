@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IDynamicMessageSink" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDynamicMessageSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDynamicMessageSink" />
+  <TypeSignature Language="F#" Value="type IDynamicMessageSink = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageFinish(System.Runtime.Remoting.Messaging.IMessage,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessMessageFinish (replyMsg As IMessage, bCliSide As Boolean, bAsync As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProcessMessageFinish(System::Runtime::Remoting::Messaging::IMessage ^ replyMsg, bool bCliSide, bool bAsync);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessMessageFinish : System.Runtime.Remoting.Messaging.IMessage * bool * bool -&gt; unit" Usage="iDynamicMessageSink.ProcessMessageFinish (replyMsg, bCliSide, bAsync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageStart(System.Runtime.Remoting.Messaging.IMessage,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessMessageStart (reqMsg As IMessage, bCliSide As Boolean, bAsync As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProcessMessageStart(System::Runtime::Remoting::Messaging::IMessage ^ reqMsg, bool bCliSide, bool bAsync);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessMessageStart : System.Runtime.Remoting.Messaging.IMessage * bool * bool -&gt; unit" Usage="iDynamicMessageSink.ProcessMessageStart (reqMsg, bCliSide, bAsync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

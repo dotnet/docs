@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsCompatibleWithAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlnsCompatibleWithAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlnsCompatibleWithAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlnsCompatibleWithAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsCompatibleWithAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oldNamespace As String, newNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsCompatibleWithAttribute(System::String ^ oldNamespace, System::String ^ newNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XmlnsCompatibleWithAttribute : string * string -&gt; System.Windows.Markup.XmlnsCompatibleWithAttribute" Usage="new System.Windows.Markup.XmlnsCompatibleWithAttribute (oldNamespace, newNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsCompatibleWithAttribute.NewNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewNamespace : string" Usage="System.Windows.Markup.XmlnsCompatibleWithAttribute.NewNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsCompatibleWithAttribute.OldNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldNamespace : string" Usage="System.Windows.Markup.XmlnsCompatibleWithAttribute.OldNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

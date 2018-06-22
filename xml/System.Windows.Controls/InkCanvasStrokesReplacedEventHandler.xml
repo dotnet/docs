@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokesReplacedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InkCanvasStrokesReplacedEventHandler(sender As Object, e As InkCanvasStrokesReplacedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InkCanvasStrokesReplacedEventHandler(System::Object ^ sender, InkCanvasStrokesReplacedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokesReplacedEventHandler = delegate of obj * InkCanvasStrokesReplacedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

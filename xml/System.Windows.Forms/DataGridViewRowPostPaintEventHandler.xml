@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowPostPaintEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowPostPaintEventHandler(sender As Object, e As DataGridViewRowPostPaintEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowPostPaintEventHandler(System::Object ^ sender, DataGridViewRowPostPaintEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowPostPaintEventHandler = delegate of obj * DataGridViewRowPostPaintEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsPackagingPolicy&#xA;Inherits BasePackagingPolicy" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsPackagingPolicy : System::Windows::Xps::Serialization::BasePackagingPolicy" />
+  <TypeSignature Language="F#" Value="type XpsPackagingPolicy = class&#xA;    inherit BasePackagingPolicy" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.#ctor(System.Windows.Xps.Packaging.XpsDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xpsPackage As XpsDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsPackagingPolicy(System::Windows::Xps::Packaging::XpsDocument ^ xpsPackage);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsPackagingPolicy : System.Windows.Xps.Packaging.XpsDocument -&gt; System.Windows.Xps.Serialization.XpsPackagingPolicy" Usage="new System.Windows.Xps.Serialization.XpsPackagingPolicy xpsPackage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.#ctor(System.Windows.Xps.Packaging.XpsDocument,System.Windows.Xps.Packaging.PackageInterleavingOrder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xpsPackage As XpsDocument, interleavingType As PackageInterleavingOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsPackagingPolicy(System::Windows::Xps::Packaging::XpsDocument ^ xpsPackage, System::Windows::Xps::Packaging::PackageInterleavingOrder interleavingType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsPackagingPolicy : System.Windows.Xps.Packaging.XpsDocument * System.Windows.Xps.Packaging.PackageInterleavingOrder -&gt; System.Windows.Xps.Serialization.XpsPackagingPolicy" Usage="new System.Windows.Xps.Serialization.XpsPackagingPolicy (xpsPackage, interleavingType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireResourceStreamForXpsColorContext (resourceId As String) As XpsResourceStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Xps::Serialization::XpsResourceStream ^ AcquireResourceStreamForXpsColorContext(System::String ^ resourceId);" />
+      <MemberSignature Language="F#" Value="override this.AcquireResourceStreamForXpsColorContext : string -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="xpsPackagingPolicy.AcquireResourceStreamForXpsColorContext resourceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireResourceStreamForXpsFont () As XpsResourceStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Xps::Serialization::XpsResourceStream ^ AcquireResourceStreamForXpsFont();" />
+      <MemberSignature Language="F#" Value="override this.AcquireResourceStreamForXpsFont : unit -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="xpsPackagingPolicy.AcquireResourceStreamForXpsFont " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireResourceStreamForXpsFont (resourceId As String) As XpsResourceStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Xps::Serialization::XpsResourceStream ^ AcquireResourceStreamForXpsFont(System::String ^ resourceId);" />
+      <MemberSignature Language="F#" Value="override this.AcquireResourceStreamForXpsFont : string -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="xpsPackagingPolicy.AcquireResourceStreamForXpsFont resourceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireResourceStreamForXpsImage (resourceId As String) As XpsResourceStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Xps::Serialization::XpsResourceStream ^ AcquireResourceStreamForXpsImage(System::String ^ resourceId);" />
+      <MemberSignature Language="F#" Value="override this.AcquireResourceStreamForXpsImage : string -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="xpsPackagingPolicy.AcquireResourceStreamForXpsImage resourceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireResourceStreamForXpsResourceDictionary (resourceId As String) As XpsResourceStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Xps::Serialization::XpsResourceStream ^ AcquireResourceStreamForXpsResourceDictionary(System::String ^ resourceId);" />
+      <MemberSignature Language="F#" Value="override this.AcquireResourceStreamForXpsResourceDictionary : string -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="xpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary resourceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireStreamForLinkTargets" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireStreamForLinkTargets () As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::String ^&gt; ^ AcquireStreamForLinkTargets();" />
+      <MemberSignature Language="F#" Value="override this.AcquireStreamForLinkTargets : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="xpsPackagingPolicy.AcquireStreamForLinkTargets " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireXmlWriterForFixedDocument () As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWriter ^ AcquireXmlWriterForFixedDocument();" />
+      <MemberSignature Language="F#" Value="override this.AcquireXmlWriterForFixedDocument : unit -&gt; System.Xml.XmlWriter" Usage="xpsPackagingPolicy.AcquireXmlWriterForFixedDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireXmlWriterForFixedDocumentSequence () As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWriter ^ AcquireXmlWriterForFixedDocumentSequence();" />
+      <MemberSignature Language="F#" Value="override this.AcquireXmlWriterForFixedDocumentSequence : unit -&gt; System.Xml.XmlWriter" Usage="xpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -297,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireXmlWriterForFixedPage () As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWriter ^ AcquireXmlWriterForFixedPage();" />
+      <MemberSignature Language="F#" Value="override this.AcquireXmlWriterForFixedPage : unit -&gt; System.Xml.XmlWriter" Usage="xpsPackagingPolicy.AcquireXmlWriterForFixedPage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireXmlWriterForPage () As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWriter ^ AcquireXmlWriterForPage();" />
+      <MemberSignature Language="F#" Value="override this.AcquireXmlWriterForPage : unit -&gt; System.Xml.XmlWriter" Usage="xpsPackagingPolicy.AcquireXmlWriterForPage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -349,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AcquireXmlWriterForResourceDictionary () As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlWriter ^ AcquireXmlWriterForResourceDictionary();" />
+      <MemberSignature Language="F#" Value="override this.AcquireXmlWriterForResourceDictionary : unit -&gt; System.Xml.XmlWriter" Usage="xpsPackagingPolicy.AcquireXmlWriterForResourceDictionary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -374,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedDocumentUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentFixedDocumentUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ CurrentFixedDocumentUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentFixedDocumentUri : Uri" Usage="System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedDocumentUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -395,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedPageUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentFixedPageUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ CurrentFixedPageUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentFixedPageUri : Uri" Usage="System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedPageUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -416,6 +432,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PackagingProgressEvent As PackagingProgressEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Xps::Packaging::PackagingProgressEventHandler ^ PackagingProgressEvent;" />
+      <MemberSignature Language="F#" Value="member this.PackagingProgressEvent : System.Windows.Xps.Packaging.PackagingProgressEventHandler " Usage="member this.PackagingProgressEvent : System.Windows.Xps.Packaging.PackagingProgressEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -434,6 +451,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PersistPrintTicket(class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.PersistPrintTicket(System.Printing.PrintTicket)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PersistPrintTicket(System::Printing::PrintTicket ^ printTicket);" />
+      <MemberSignature Language="F#" Value="override this.PersistPrintTicket : System.Printing.PrintTicket -&gt; unit" Usage="xpsPackagingPolicy.PersistPrintTicket printTicket" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -464,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.PreCommitCurrentPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PreCommitCurrentPage ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PreCommitCurrentPage();" />
+      <MemberSignature Language="F#" Value="override this.PreCommitCurrentPage : unit -&gt; unit" Usage="xpsPackagingPolicy.PreCommitCurrentPage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -484,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.RelateResourceToCurrentPage(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RelateResourceToCurrentPage (targetUri As Uri, relationshipName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RelateResourceToCurrentPage(Uri ^ targetUri, System::String ^ relationshipName);" />
+      <MemberSignature Language="F#" Value="override this.RelateResourceToCurrentPage : Uri * string -&gt; unit" Usage="xpsPackagingPolicy.RelateResourceToCurrentPage (targetUri, relationshipName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -510,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.RelateRestrictedFontToCurrentDocument(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RelateRestrictedFontToCurrentDocument (targetUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RelateRestrictedFontToCurrentDocument(Uri ^ targetUri);" />
+      <MemberSignature Language="F#" Value="override this.RelateRestrictedFontToCurrentDocument : Uri -&gt; unit" Usage="xpsPackagingPolicy.RelateRestrictedFontToCurrentDocument targetUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -534,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseResourceStreamForXpsColorContext ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseResourceStreamForXpsColorContext();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseResourceStreamForXpsColorContext : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -571,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseResourceStreamForXpsFont ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseResourceStreamForXpsFont();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseResourceStreamForXpsFont : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseResourceStreamForXpsFont " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -596,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseResourceStreamForXpsFont (resourceId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseResourceStreamForXpsFont(System::String ^ resourceId);" />
+      <MemberSignature Language="F#" Value="override this.ReleaseResourceStreamForXpsFont : string -&gt; unit" Usage="xpsPackagingPolicy.ReleaseResourceStreamForXpsFont resourceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -624,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseResourceStreamForXpsImage ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseResourceStreamForXpsImage();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseResourceStreamForXpsImage : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseResourceStreamForXpsImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -648,6 +673,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseResourceStreamForXpsResourceDictionary ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseResourceStreamForXpsResourceDictionary();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseResourceStreamForXpsResourceDictionary : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -672,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseXmlWriterForFixedDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseXmlWriterForFixedDocument();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseXmlWriterForFixedDocument : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseXmlWriterForFixedDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -695,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseXmlWriterForFixedDocumentSequence ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseXmlWriterForFixedDocumentSequence();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseXmlWriterForFixedDocumentSequence : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -718,6 +746,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReleaseXmlWriterForFixedPage ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReleaseXmlWriterForFixedPage();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseXmlWriterForFixedPage : unit -&gt; unit" Usage="xpsPackagingPolicy.ReleaseXmlWriterForFixedPage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

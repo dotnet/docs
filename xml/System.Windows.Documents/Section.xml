@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Section" />
   <TypeSignature Language="VB.NET" Value="Public Class Section&#xA;Inherits Block" />
   <TypeSignature Language="C++ CLI" Value="public ref class Section : System::Windows::Documents::Block" />
+  <TypeSignature Language="F#" Value="type Section = class&#xA;    inherit Block" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.Block block) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Section.#ctor(System.Windows.Documents.Block)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Section(System::Windows::Documents::Block ^ block);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Section : System.Windows.Documents.Block -&gt; System.Windows.Documents.Section" Usage="new System.Windows.Documents.Section block" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Section.Blocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Blocks As BlockCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::BlockCollection ^ Blocks { System::Windows::Documents::BlockCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Blocks : System.Windows.Documents.BlockCollection" Usage="System.Windows.Documents.Section.Blocks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Section.HasTrailingParagraphBreakOnPaste" />
       <MemberSignature Language="VB.NET" Value="Public Property HasTrailingParagraphBreakOnPaste As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTrailingParagraphBreakOnPaste { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasTrailingParagraphBreakOnPaste : bool with get, set" Usage="System.Windows.Documents.Section.HasTrailingParagraphBreakOnPaste" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Section.ShouldSerializeBlocks(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeBlocks (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeBlocks(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeBlocks : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="section.ShouldSerializeBlocks manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

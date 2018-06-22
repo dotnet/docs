@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageBuffer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageBuffer&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageBuffer abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type MessageBuffer = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageBuffer.BufferSize" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int BufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BufferSize : int" Usage="System.ServiceModel.Channels.MessageBuffer.BufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.Close" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="messageBuffer.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +182,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.CreateMessage" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateMessage () As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::Message ^ CreateMessage();" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessage : unit -&gt; System.ServiceModel.Channels.Message" Usage="messageBuffer.CreateMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,6 +235,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.CreateNavigator" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNavigator () As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XPath::XPathNavigator ^ CreateNavigator();" />
+      <MemberSignature Language="F#" Value="abstract member CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator&#xA;override this.CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator" Usage="messageBuffer.CreateNavigator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.XPath.IXPathNavigable.CreateNavigator</InterfaceMember>
@@ -262,6 +267,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.CreateNavigator(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNavigator (nodeQuota As Integer) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNavigator ^ CreateNavigator(int nodeQuota);" />
+      <MemberSignature Language="F#" Value="member this.CreateNavigator : int -&gt; System.Xml.XPath.XPathNavigator" Usage="messageBuffer.CreateNavigator nodeQuota" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -293,6 +299,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.CreateNavigator(System.Xml.XmlSpace)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNavigator (space As XmlSpace) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlSpace space);" />
+      <MemberSignature Language="F#" Value="member this.CreateNavigator : System.Xml.XmlSpace -&gt; System.Xml.XPath.XPathNavigator" Usage="messageBuffer.CreateNavigator space" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +331,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.CreateNavigator(System.Int32,System.Xml.XmlSpace)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNavigator (nodeQuota As Integer, space As XmlSpace) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNavigator ^ CreateNavigator(int nodeQuota, System::Xml::XmlSpace space);" />
+      <MemberSignature Language="F#" Value="member this.CreateNavigator : int * System.Xml.XmlSpace -&gt; System.Xml.XPath.XPathNavigator" Usage="messageBuffer.CreateNavigator (nodeQuota, space)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -357,6 +365,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageBuffer.MessageContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MessageContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MessageContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageContentType : string" Usage="System.ServiceModel.Channels.MessageBuffer.MessageContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -423,6 +432,7 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteMessage(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageBuffer.WriteMessage(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteMessage(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member WriteMessage : System.IO.Stream -&gt; unit&#xA;override this.WriteMessage : System.IO.Stream -&gt; unit" Usage="messageBuffer.WriteMessage stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

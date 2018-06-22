@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMemberProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMemberProperty&#xA;Inherits CodeTypeMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMemberProperty : System::CodeDom::CodeTypeMember" />
+  <TypeSignature Language="F#" Value="type CodeMemberProperty = class&#xA;    inherit CodeTypeMember" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.GetStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GetStatements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ GetStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GetStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeMemberProperty.GetStatements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.HasGet" />
       <MemberSignature Language="VB.NET" Value="Public Property HasGet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasGet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasGet : bool with get, set" Usage="System.CodeDom.CodeMemberProperty.HasGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.HasSet" />
       <MemberSignature Language="VB.NET" Value="Public Property HasSet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasSet : bool with get, set" Usage="System.CodeDom.CodeMemberProperty.HasSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.ImplementationTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationTypes As CodeTypeReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ ImplementationTypes { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationTypes : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeMemberProperty.ImplementationTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeParameterDeclarationExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeParameterDeclarationExpressionCollection ^ Parameters { System::CodeDom::CodeParameterDeclarationExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.CodeDom.CodeParameterDeclarationExpressionCollection" Usage="System.CodeDom.CodeMemberProperty.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.PrivateImplementationType" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivateImplementationType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ PrivateImplementationType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivateImplementationType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberProperty.PrivateImplementationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.SetStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetStatements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ SetStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SetStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeMemberProperty.SetStatements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberProperty.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ Type { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberProperty.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

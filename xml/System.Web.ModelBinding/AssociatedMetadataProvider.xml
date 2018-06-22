@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.AssociatedMetadataProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AssociatedMetadataProvider&#xA;Inherits ModelMetadataProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssociatedMetadataProvider abstract : System::Web::ModelBinding::ModelMetadataProvider" />
+  <TypeSignature Language="F#" Value="type AssociatedMetadataProvider = class&#xA;    inherit ModelMetadataProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.CreateMetadata(System.Collections.Generic.IEnumerable{System.Attribute},System.Type,System.Func{System.Object},System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateMetadata (attributes As IEnumerable(Of Attribute), containerType As Type, modelAccessor As Func(Of Object), modelType As Type, propertyName As String) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::ModelBinding::ModelMetadata ^ CreateMetadata(System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ attributes, Type ^ containerType, Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateMetadata : seq&lt;Attribute&gt; * Type * Func&lt;obj&gt; * Type * string -&gt; System.Web.ModelBinding.ModelMetadata" Usage="associatedMetadataProvider.CreateMetadata (attributes, containerType, modelAccessor, modelType, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; FilterAttributes(class System.Type containerType, class System.ComponentModel.PropertyDescriptor propertyDescriptor, class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.FilterAttributes(System.Type,System.ComponentModel.PropertyDescriptor,System.Collections.Generic.IEnumerable{System.Attribute})" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ FilterAttributes(Type ^ containerType, System::ComponentModel::PropertyDescriptor ^ propertyDescriptor, System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member FilterAttributes : Type * System.ComponentModel.PropertyDescriptor * seq&lt;Attribute&gt; -&gt; seq&lt;Attribute&gt;&#xA;override this.FilterAttributes : Type * System.ComponentModel.PropertyDescriptor * seq&lt;Attribute&gt; -&gt; seq&lt;Attribute&gt;" Usage="associatedMetadataProvider.FilterAttributes (containerType, propertyDescriptor, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperties(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMetadataForProperties (container As Object, containerType As Type) As IEnumerable(Of ModelMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ GetMetadataForProperties(System::Object ^ container, Type ^ containerType);" />
+      <MemberSignature Language="F#" Value="override this.GetMetadataForProperties : obj * Type -&gt; seq&lt;System.Web.ModelBinding.ModelMetadata&gt;" Usage="associatedMetadataProvider.GetMetadataForProperties (container, containerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.ModelBinding.ModelMetadata GetMetadataForProperty(class System.Func`1&lt;object&gt; modelAccessor, class System.Type containerType, class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::ModelBinding::ModelMetadata ^ GetMetadataForProperty(Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ containerType, System::ComponentModel::PropertyDescriptor ^ propertyDescriptor);" />
+      <MemberSignature Language="F#" Value="override this.GetMetadataForProperty : Func&lt;obj&gt; * Type * System.ComponentModel.PropertyDescriptor -&gt; System.Web.ModelBinding.ModelMetadata" Usage="associatedMetadataProvider.GetMetadataForProperty (modelAccessor, containerType, propertyDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMetadataForProperty (modelAccessor As Func(Of Object), containerType As Type, propertyName As String) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::ModelMetadata ^ GetMetadataForProperty(Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ containerType, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="override this.GetMetadataForProperty : Func&lt;obj&gt; * Type * string -&gt; System.Web.ModelBinding.ModelMetadata" Usage="associatedMetadataProvider.GetMetadataForProperty (modelAccessor, containerType, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMetadataForType (modelAccessor As Func(Of Object), modelType As Type) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::ModelMetadata ^ GetMetadataForType(Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType);" />
+      <MemberSignature Language="F#" Value="override this.GetMetadataForType : Func&lt;obj&gt; * Type -&gt; System.Web.ModelBinding.ModelMetadata" Usage="associatedMetadataProvider.GetMetadataForType (modelAccessor, modelType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetTypeDescriptor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDescriptor : Type -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetTypeDescriptor : Type -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="associatedMetadataProvider.GetTypeDescriptor type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.LowPhysicalMemoryObserver" />
   <TypeSignature Language="VB.NET" Value="Public Class LowPhysicalMemoryObserver&#xA;Implements IObserver(Of LowPhysicalMemoryInfo)" />
   <TypeSignature Language="C++ CLI" Value="public ref class LowPhysicalMemoryObserver : IObserver&lt;System::Web::Hosting::LowPhysicalMemoryInfo ^&gt;" />
+  <TypeSignature Language="F#" Value="type LowPhysicalMemoryObserver = class&#xA;    interface IObserver&lt;LowPhysicalMemoryInfo&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : unit -&gt; unit&#xA;override this.OnCompleted : unit -&gt; unit" Usage="lowPhysicalMemoryObserver.OnCompleted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObserver`1.OnCompleted</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnError (error As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnError(Exception ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member OnError : Exception -&gt; unit&#xA;override this.OnError : Exception -&gt; unit" Usage="lowPhysicalMemoryObserver.OnError error" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObserver`1.OnError(System.Exception)</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnNext(System.Web.Hosting.LowPhysicalMemoryInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnNext (lowMemoryInfo As LowPhysicalMemoryInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnNext(System::Web::Hosting::LowPhysicalMemoryInfo ^ lowMemoryInfo);" />
+      <MemberSignature Language="F#" Value="abstract member OnNext : System.Web.Hosting.LowPhysicalMemoryInfo -&gt; unit&#xA;override this.OnNext : System.Web.Hosting.LowPhysicalMemoryInfo -&gt; unit" Usage="lowPhysicalMemoryObserver.OnNext lowMemoryInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IObserver`1.OnNext(`0)</InterfaceMember>

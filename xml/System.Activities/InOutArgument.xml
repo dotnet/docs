@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.InOutArgument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InOutArgument&#xA;Inherits Argument" />
   <TypeSignature Language="C++ CLI" Value="public ref class InOutArgument abstract : System::Activities::Argument" />
+  <TypeSignature Language="F#" Value="type InOutArgument = class&#xA;    inherit Argument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument.CreateReference(System.Activities.InOutArgument,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As InOutArgument, referencedArgumentName As String) As InOutArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InOutArgument ^ CreateReference(System::Activities::InOutArgument ^ argumentToReference, System::String ^ referencedArgumentName);" />
+      <MemberSignature Language="F#" Value="static member CreateReference : System.Activities.InOutArgument * string -&gt; System.Activities.InOutArgument" Usage="System.Activities.InOutArgument.CreateReference (argumentToReference, referencedArgumentName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

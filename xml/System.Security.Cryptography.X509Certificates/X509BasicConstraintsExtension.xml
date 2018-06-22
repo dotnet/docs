@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509BasicConstraintsExtension&#xA;Inherits X509Extension" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509BasicConstraintsExtension sealed : System::Security::Cryptography::X509Certificates::X509Extension" />
+  <TypeSignature Language="F#" Value="type X509BasicConstraintsExtension = class&#xA;    inherit X509Extension" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedBasicConstraints As AsnEncodedData, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509BasicConstraintsExtension(System::Security::Cryptography::AsnEncodedData ^ encodedBasicConstraints, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension : System.Security.Cryptography.AsnEncodedData * bool -&gt; System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" Usage="new System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension (encodedBasicConstraints, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Boolean,System.Boolean,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificateAuthority As Boolean, hasPathLengthConstraint As Boolean, pathLengthConstraint As Integer, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509BasicConstraintsExtension(bool certificateAuthority, bool hasPathLengthConstraint, int pathLengthConstraint, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension : bool * bool * int * bool -&gt; System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension" Usage="new System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension (certificateAuthority, hasPathLengthConstraint, pathLengthConstraint, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateAuthority As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CertificateAuthority { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateAuthority : bool" Usage="System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="x509BasicConstraintsExtension.CopyFrom asnEncodedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPathLengthConstraint As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPathLengthConstraint { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPathLengthConstraint : bool" Usage="System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -325,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathLengthConstraint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PathLengthConstraint { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PathLengthConstraint : int" Usage="System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

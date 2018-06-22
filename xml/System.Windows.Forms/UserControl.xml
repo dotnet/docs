@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UserControl" />
   <TypeSignature Language="VB.NET" Value="Public Class UserControl&#xA;Inherits ContainerControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserControl : System::Windows::Forms::ContainerControl" />
+  <TypeSignature Language="F#" Value="type UserControl = class&#xA;    inherit ContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.UserControl.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoSizeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMode As AutoSizeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Windows.Forms.UserControl.AutoSizeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoValidate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoValidate As AutoValidate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoValidate AutoValidate { System::Windows::Forms::AutoValidate get(); void set(System::Windows::Forms::AutoValidate value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoValidate : System.Windows.Forms.AutoValidate with get, set" Usage="System.Windows.Forms.UserControl.AutoValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.AutoValidateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoValidateChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoValidateChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoValidateChanged : EventHandler " Usage="member this.AutoValidateChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.UserControl.BorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.UserControl.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.UserControl.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
+      <MemberSignature Language="F#" Value="member this.Load : EventHandler " Usage="member this.Load : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -406,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnCreateControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateControl ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateControl();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateControl : unit -&gt; unit" Usage="userControl.OnCreateControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -443,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="userControl.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -487,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="userControl.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -516,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnResize(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="userControl.OnResize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -540,6 +554,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.UserControl.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -575,6 +590,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -602,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.ValidateChildren" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateChildren () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateChildren();" />
+      <MemberSignature Language="F#" Value="override this.ValidateChildren : unit -&gt; bool" Usage="userControl.ValidateChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -632,6 +649,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateChildren(valuetype System.Windows.Forms.ValidationConstraints validationConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateChildren(System::Windows::Forms::ValidationConstraints validationConstraints);" />
+      <MemberSignature Language="F#" Value="override this.ValidateChildren : System.Windows.Forms.ValidationConstraints -&gt; bool" Usage="userControl.ValidateChildren validationConstraints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="userControl.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

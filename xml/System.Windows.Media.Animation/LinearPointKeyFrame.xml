@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearPointKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class LinearPointKeyFrame&#xA;Inherits PointKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinearPointKeyFrame : System::Windows::Media::Animation::PointKeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearPointKeyFrame = class&#xA;    inherit PointKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearPointKeyFrame(System::Windows::Point value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearPointKeyFrame : System.Windows.Point -&gt; System.Windows.Media.Animation.LinearPointKeyFrame" Usage="new System.Windows.Media.Animation.LinearPointKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearPointKeyFrame(System::Windows::Point value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearPointKeyFrame : System.Windows.Point * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearPointKeyFrame" Usage="new System.Windows.Media.Animation.LinearPointKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearPointKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearPointKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearPointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Point, keyFrameProgress As Double) As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point InterpolateValueCore(System::Windows::Point baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Point * double -&gt; System.Windows.Point" Usage="linearPointKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

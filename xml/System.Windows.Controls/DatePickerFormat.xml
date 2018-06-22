@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DatePickerFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum DatePickerFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class DatePickerFormat" />
+  <TypeSignature Language="F#" Value="type DatePickerFormat = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePickerFormat.Long" />
       <MemberSignature Language="VB.NET" Value="Long" />
       <MemberSignature Language="C++ CLI" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 0" Usage="System.Windows.Controls.DatePickerFormat.Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePickerFormat.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="C++ CLI" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 1" Usage="System.Windows.Controls.DatePickerFormat.Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

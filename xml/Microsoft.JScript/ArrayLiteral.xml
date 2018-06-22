@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayLiteral" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayLiteral&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayLiteral sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type ArrayLiteral = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.Context context, class Microsoft.JScript.ASTList elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayLiteral.#ctor(Microsoft.JScript.Context,Microsoft.JScript.ASTList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayLiteral(Microsoft::JScript::Context ^ context, Microsoft::JScript::ASTList ^ elements);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.ArrayLiteral : Microsoft.JScript.Context * Microsoft.JScript.ASTList -&gt; Microsoft.JScript.ArrayLiteral" Usage="new Microsoft.JScript.ArrayLiteral (context, elements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

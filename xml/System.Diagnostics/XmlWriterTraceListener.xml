@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.XmlWriterTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlWriterTraceListener&#xA;Inherits TextWriterTraceListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlWriterTraceListener : System::Diagnostics::TextWriterTraceListener" />
+  <TypeSignature Language="F#" Value="type XmlWriterTraceListener = class&#xA;    inherit TextWriterTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : System.IO.Stream -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : System.IO.TextWriter -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : string -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener filename" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::IO::Stream ^ stream, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : System.IO.Stream * string -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener (stream, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::IO::TextWriter ^ writer, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : System.IO.TextWriter * string -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener (writer, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlWriterTraceListener(System::String ^ filename, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.XmlWriterTraceListener : string * string -&gt; System.Diagnostics.XmlWriterTraceListener" Usage="new System.Diagnostics.XmlWriterTraceListener (filename, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="xmlWriterTraceListener.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -343,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Fail(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Fail (message As String, detailMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Fail(System::String ^ message, System::String ^ detailMessage);" />
+      <MemberSignature Language="F#" Value="override this.Fail : string * string -&gt; unit" Usage="xmlWriterTraceListener.Fail (message, detailMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="xmlWriterTraceListener.TraceData (eventCache, source, eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -427,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="xmlWriterTraceListener.TraceData (eventCache, source, eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -484,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="xmlWriterTraceListener.TraceEvent (eventCache, source, eventType, id, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -526,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="xmlWriterTraceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -576,6 +589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceTransfer (eventCache As TraceEventCache, source As String, id As Integer, message As String, relatedActivityId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceTransfer(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, int id, System::String ^ message, Guid relatedActivityId);" />
+      <MemberSignature Language="F#" Value="override this.TraceTransfer : System.Diagnostics.TraceEventCache * string * int * string * Guid -&gt; unit" Usage="xmlWriterTraceListener.TraceTransfer (eventCache, source, id, message, relatedActivityId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -618,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="xmlWriterTraceListener.Write message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -649,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="xmlWriterTraceListener.WriteLine message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

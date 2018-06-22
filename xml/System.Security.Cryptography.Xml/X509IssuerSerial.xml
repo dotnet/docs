@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.X509IssuerSerial" />
   <TypeSignature Language="VB.NET" Value="Public Structure X509IssuerSerial" />
   <TypeSignature Language="C++ CLI" Value="public value class X509IssuerSerial" />
+  <TypeSignature Language="F#" Value="type X509IssuerSerial = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerName : string with get, set" Usage="System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property SerialNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SerialNumber : string with get, set" Usage="System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

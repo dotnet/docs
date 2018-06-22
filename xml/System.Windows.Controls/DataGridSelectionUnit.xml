@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSelectionUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridSelectionUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridSelectionUnit" />
+  <TypeSignature Language="F#" Value="type DataGridSelectionUnit = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.Cell" />
       <MemberSignature Language="VB.NET" Value="Cell" />
       <MemberSignature Language="C++ CLI" Value="Cell" />
+      <MemberSignature Language="F#" Value="Cell = 0" Usage="System.Windows.Controls.DataGridSelectionUnit.Cell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.CellOrRowHeader" />
       <MemberSignature Language="VB.NET" Value="CellOrRowHeader" />
       <MemberSignature Language="C++ CLI" Value="CellOrRowHeader" />
+      <MemberSignature Language="F#" Value="CellOrRowHeader = 2" Usage="System.Windows.Controls.DataGridSelectionUnit.CellOrRowHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.FullRow" />
       <MemberSignature Language="VB.NET" Value="FullRow" />
       <MemberSignature Language="C++ CLI" Value="FullRow" />
+      <MemberSignature Language="F#" Value="FullRow = 1" Usage="System.Windows.Controls.DataGridSelectionUnit.FullRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

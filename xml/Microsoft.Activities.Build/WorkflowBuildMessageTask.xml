@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.WorkflowBuildMessageTask" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowBuildMessageTask&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowBuildMessageTask sealed : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type WorkflowBuildMessageTask = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Activities.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.WorkflowBuildMessageTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="workflowBuildMessageTask.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.WorkflowBuildMessageTask.MessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageType : string with get, set" Usage="Microsoft.Activities.Build.WorkflowBuildMessageTask.MessageType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.WorkflowBuildMessageTask.ResourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceName : string with get, set" Usage="Microsoft.Activities.Build.WorkflowBuildMessageTask.ResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>

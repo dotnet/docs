@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ViewStateException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewStateException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewStateException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type ViewStateException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ViewStateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="viewStateException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.IsConnected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConnected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool" Usage="System.Web.UI.ViewStateException.IsConnected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Web.UI.ViewStateException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.UI.ViewStateException.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.PersistedState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistedState As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PersistedState { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PersistedState : string" Usage="System.Web.UI.ViewStateException.PersistedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.Referer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Referer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Referer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Referer : string" Usage="System.Web.UI.ViewStateException.Referer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.RemoteAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoteAddress { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteAddress : string" Usage="System.Web.UI.ViewStateException.RemoteAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.RemotePort" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemotePort As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemotePort { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemotePort : string" Usage="System.Web.UI.ViewStateException.RemotePort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ViewStateException.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAgent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserAgent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : string" Usage="System.Web.UI.ViewStateException.UserAgent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

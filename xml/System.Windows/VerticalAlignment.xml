@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.VerticalAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerticalAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerticalAlignment" />
+  <TypeSignature Language="F#" Value="type VerticalAlignment = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Windows.VerticalAlignment.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 1" Usage="System.Windows.VerticalAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Stretch" />
       <MemberSignature Language="VB.NET" Value="Stretch" />
       <MemberSignature Language="C++ CLI" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 3" Usage="System.Windows.VerticalAlignment.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.VerticalAlignment.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

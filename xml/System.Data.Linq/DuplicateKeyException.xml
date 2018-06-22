@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.DuplicateKeyException" />
   <TypeSignature Language="VB.NET" Value="Public Class DuplicateKeyException&#xA;Inherits InvalidOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DuplicateKeyException : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type DuplicateKeyException = class&#xA;    inherit InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException duplicate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj * string -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException (duplicate, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj * string * Exception -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException (duplicate, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.DuplicateKeyException.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="System.Data.Linq.DuplicateKeyException.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.OverflowException" />
   <TypeSignature Language="VB.NET" Value="Public Class OverflowException&#xA;Inherits ArithmeticException" />
   <TypeSignature Language="C++ CLI" Value="public ref class OverflowException : ArithmeticException" />
+  <TypeSignature Language="F#" Value="type OverflowException = class&#xA;    inherit ArithmeticException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.OverflowException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OverflowException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new OverflowException : string -&gt; OverflowException" Usage="new System.OverflowException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -188,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.OverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; OverflowException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new OverflowException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; OverflowException" Usage="new System.OverflowException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.OverflowException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OverflowException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new OverflowException : string * Exception -&gt; OverflowException" Usage="new System.OverflowException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

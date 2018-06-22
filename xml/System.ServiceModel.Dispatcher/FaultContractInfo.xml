@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.FaultContractInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultContractInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultContractInfo" />
+  <TypeSignature Language="F#" Value="type FaultContractInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.FaultContractInfo.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As String, detail As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultContractInfo(System::String ^ action, Type ^ detail);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.FaultContractInfo : string * Type -&gt; System.ServiceModel.Dispatcher.FaultContractInfo" Usage="new System.ServiceModel.Dispatcher.FaultContractInfo (action, detail)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.FaultContractInfo.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.ServiceModel.Dispatcher.FaultContractInfo.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.FaultContractInfo.Detail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detail As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Detail { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Detail : Type" Usage="System.ServiceModel.Dispatcher.FaultContractInfo.Detail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

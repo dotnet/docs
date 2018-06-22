@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ContentTextAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentTextAutomationPeer&#xA;Inherits FrameworkContentElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentTextAutomationPeer abstract : System::Windows::Automation::Peers::FrameworkContentElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ContentTextAutomationPeer = class&#xA;    inherit FrameworkContentElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentTextAutomationPeer.#ctor(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContentTextAutomationPeer(System::Windows::FrameworkContentElement ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ContentTextAutomationPeer : System.Windows.FrameworkContentElement -&gt; System.Windows.Automation.Peers.ContentTextAutomationPeer" Usage="new System.Windows.Automation.Peers.ContentTextAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

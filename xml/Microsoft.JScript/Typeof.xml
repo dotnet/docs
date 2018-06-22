@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Typeof" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Typeof&#xA;Inherits UnaryOp" />
   <TypeSignature Language="C++ CLI" Value="public ref class Typeof sealed : Microsoft::JScript::UnaryOp" />
+  <TypeSignature Language="F#" Value="type Typeof = class&#xA;    inherit UnaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Typeof.JScriptTypeof(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptTypeof (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ JScriptTypeof(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member JScriptTypeof : obj -&gt; string" Usage="Microsoft.JScript.Typeof.JScriptTypeof value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

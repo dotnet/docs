@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.BasicDesignerLoader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BasicDesignerLoader&#xA;Inherits DesignerLoader&#xA;Implements IDesignerLoaderService" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicDesignerLoader abstract : System::ComponentModel::Design::Serialization::DesignerLoader, System::ComponentModel::Design::Serialization::IDesignerLoaderService" />
+  <TypeSignature Language="F#" Value="type BasicDesignerLoader = class&#xA;    inherit DesignerLoader&#xA;    interface IDesignerLoaderService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.BeginLoad(System.ComponentModel.Design.Serialization.IDesignerLoaderHost)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginLoad (host As IDesignerLoaderHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginLoad(System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit&#xA;override this.BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit" Usage="basicDesignerLoader.BeginLoad host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="basicDesignerLoader.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.EnableComponentNotification(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EnableComponentNotification (enable As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool EnableComponentNotification(bool enable);" />
+      <MemberSignature Language="F#" Value="abstract member EnableComponentNotification : bool -&gt; bool&#xA;override this.EnableComponentNotification : bool -&gt; bool" Usage="basicDesignerLoader.EnableComponentNotification enable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="basicDesignerLoader.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="basicDesignerLoader.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="basicDesignerLoader.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.IsReloadNeeded" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsReloadNeeded () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsReloadNeeded();" />
+      <MemberSignature Language="F#" Value="abstract member IsReloadNeeded : unit -&gt; bool&#xA;override this.IsReloadNeeded : unit -&gt; bool" Usage="basicDesignerLoader.IsReloadNeeded " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -294,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property LoaderHost As IDesignerLoaderHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ LoaderHost { System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoaderHost : System.ComponentModel.Design.Serialization.IDesignerLoaderHost" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -324,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Loading" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Loading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Loading { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Loading : bool" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.Loading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -352,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property Modified As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Modified { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Modified : bool with get, set" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -380,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginLoad" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginLoad ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginLoad();" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginLoad : unit -&gt; unit&#xA;override this.OnBeginLoad : unit -&gt; unit" Usage="basicDesignerLoader.OnBeginLoad " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnBeginUnload" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginUnload ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginUnload();" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginUnload : unit -&gt; unit&#xA;override this.OnBeginUnload : unit -&gt; unit" Usage="basicDesignerLoader.OnBeginUnload " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnEndLoad(System.Boolean,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndLoad (successful As Boolean, errors As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndLoad(bool successful, System::Collections::ICollection ^ errors);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndLoad : bool * System.Collections.ICollection -&gt; unit&#xA;override this.OnEndLoad : bool * System.Collections.ICollection -&gt; unit" Usage="basicDesignerLoader.OnEndLoad (successful, errors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -479,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.OnModifying" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModifying ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModifying();" />
+      <MemberSignature Language="F#" Value="abstract member OnModifying : unit -&gt; unit&#xA;override this.OnModifying : unit -&gt; unit" Usage="basicDesignerLoader.OnModifying " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -506,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PerformFlush (serializationManager As IDesignerSerializationManager)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PerformFlush(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
+      <MemberSignature Language="F#" Value="abstract member PerformFlush : System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; unit" Usage="basicDesignerLoader.PerformFlush serializationManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -537,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PerformLoad (serializationManager As IDesignerSerializationManager)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PerformLoad(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
+      <MemberSignature Language="F#" Value="abstract member PerformLoad : System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; unit" Usage="basicDesignerLoader.PerformLoad serializationManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -568,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PropertyProvider" />
       <MemberSignature Language="VB.NET" Value="Protected Property PropertyProvider As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ PropertyProvider { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyProvider : obj with get, set" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.PropertyProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -596,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Reload(System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Reload (flags As BasicDesignerLoader.ReloadOptions)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Reload(System::ComponentModel::Design::Serialization::BasicDesignerLoader::ReloadOptions flags);" />
+      <MemberSignature Language="F#" Value="member this.Reload : System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions -&gt; unit" Usage="basicDesignerLoader.Reload flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -627,6 +646,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadPending" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ReloadPending As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ReloadPending { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReloadPending : bool" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadPending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -649,6 +669,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReportFlushErrors(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportFlushErrors (errors As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportFlushErrors(System::Collections::ICollection ^ errors);" />
+      <MemberSignature Language="F#" Value="abstract member ReportFlushErrors : System.Collections.ICollection -&gt; unit&#xA;override this.ReportFlushErrors : System.Collections.ICollection -&gt; unit" Usage="basicDesignerLoader.ReportFlushErrors errors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -680,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.SetBaseComponentClassName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetBaseComponentClassName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetBaseComponentClassName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SetBaseComponentClassName : string -&gt; unit" Usage="basicDesignerLoader.SetBaseComponentClassName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

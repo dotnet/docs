@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryEndpoint&#xA;Inherits ServiceEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryEndpoint : System::ServiceModel::Description::ServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type DiscoveryEndpoint = class&#xA;    inherit ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryEndpoint(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryEndpoint : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Discovery.DiscoveryEndpoint" Usage="new System.ServiceModel.Discovery.DiscoveryEndpoint (binding, endpointAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryVersion discoveryVersion, valuetype System.ServiceModel.Discovery.ServiceDiscoveryMode discoveryMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryEndpoint(System::ServiceModel::Discovery::DiscoveryVersion ^ discoveryVersion, System::ServiceModel::Discovery::ServiceDiscoveryMode discoveryMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryEndpoint : System.ServiceModel.Discovery.DiscoveryVersion * System.ServiceModel.Discovery.ServiceDiscoveryMode -&gt; System.ServiceModel.Discovery.DiscoveryEndpoint" Usage="new System.ServiceModel.Discovery.DiscoveryEndpoint (discoveryVersion, discoveryMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryVersion discoveryVersion, valuetype System.ServiceModel.Discovery.ServiceDiscoveryMode discoveryMode, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryEndpoint(System::ServiceModel::Discovery::DiscoveryVersion ^ discoveryVersion, System::ServiceModel::Discovery::ServiceDiscoveryMode discoveryMode, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryEndpoint : System.ServiceModel.Discovery.DiscoveryVersion * System.ServiceModel.Discovery.ServiceDiscoveryMode * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Discovery.DiscoveryEndpoint" Usage="new System.ServiceModel.Discovery.DiscoveryEndpoint (discoveryVersion, discoveryMode, binding, endpointAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryMode As ServiceDiscoveryMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::ServiceDiscoveryMode DiscoveryMode { System::ServiceModel::Discovery::ServiceDiscoveryMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryMode : System.ServiceModel.Discovery.ServiceDiscoveryMode" Usage="System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryVersion As DiscoveryVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryVersion ^ DiscoveryVersion { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryVersion : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryEndpoint.DiscoveryVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResponseDelay As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxResponseDelay { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseDelay : TimeSpan with get, set" Usage="System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridBeginningEditEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridBeginningEditEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridBeginningEditEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridBeginningEditEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBeginningEditEventArgs.#ctor(System.Windows.Controls.DataGridColumn,System.Windows.Controls.DataGridRow,System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataGridColumn, row As DataGridRow, editingEventArgs As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridBeginningEditEventArgs(System::Windows::Controls::DataGridColumn ^ column, System::Windows::Controls::DataGridRow ^ row, System::Windows::RoutedEventArgs ^ editingEventArgs);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridBeginningEditEventArgs : System.Windows.Controls.DataGridColumn * System.Windows.Controls.DataGridRow * System.Windows.RoutedEventArgs -&gt; System.Windows.Controls.DataGridBeginningEditEventArgs" Usage="new System.Windows.Controls.DataGridBeginningEditEventArgs (column, row, editingEventArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBeginningEditEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Windows.Controls.DataGridBeginningEditEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBeginningEditEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridBeginningEditEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBeginningEditEventArgs.EditingEventArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingEventArgs As RoutedEventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::RoutedEventArgs ^ EditingEventArgs { System::Windows::RoutedEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditingEventArgs : System.Windows.RoutedEventArgs" Usage="System.Windows.Controls.DataGridBeginningEditEventArgs.EditingEventArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBeginningEditEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridRow ^ Row { System::Windows::Controls::DataGridRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Controls.DataGridRow" Usage="System.Windows.Controls.DataGridBeginningEditEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

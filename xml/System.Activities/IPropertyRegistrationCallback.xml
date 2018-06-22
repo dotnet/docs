@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.IPropertyRegistrationCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPropertyRegistrationCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPropertyRegistrationCallback" />
+  <TypeSignature Language="F#" Value="type IPropertyRegistrationCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.IPropertyRegistrationCallback.Register(System.Activities.RegistrationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register (context As RegistrationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register(System::Activities::RegistrationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Register : System.Activities.RegistrationContext -&gt; unit" Usage="iPropertyRegistrationCallback.Register context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.IPropertyRegistrationCallback.Unregister(System.Activities.RegistrationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unregister (context As RegistrationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister(System::Activities::RegistrationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : System.Activities.RegistrationContext -&gt; unit" Usage="iPropertyRegistrationCallback.Unregister context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

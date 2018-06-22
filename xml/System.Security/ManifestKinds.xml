@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.ManifestKinds" />
   <TypeSignature Language="VB.NET" Value="Public Enum ManifestKinds" />
   <TypeSignature Language="C++ CLI" Value="public enum class ManifestKinds" />
+  <TypeSignature Language="F#" Value="type ManifestKinds = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Application" />
       <MemberSignature Language="VB.NET" Value="Application" />
       <MemberSignature Language="C++ CLI" Value="Application" />
+      <MemberSignature Language="F#" Value="Application = 2" Usage="System.Security.ManifestKinds.Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.ApplicationAndDeployment" />
       <MemberSignature Language="VB.NET" Value="ApplicationAndDeployment" />
       <MemberSignature Language="C++ CLI" Value="ApplicationAndDeployment" />
+      <MemberSignature Language="F#" Value="ApplicationAndDeployment = 3" Usage="System.Security.ManifestKinds.ApplicationAndDeployment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Deployment" />
       <MemberSignature Language="VB.NET" Value="Deployment" />
       <MemberSignature Language="C++ CLI" Value="Deployment" />
+      <MemberSignature Language="F#" Value="Deployment = 1" Usage="System.Security.ManifestKinds.Deployment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.ManifestKinds.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

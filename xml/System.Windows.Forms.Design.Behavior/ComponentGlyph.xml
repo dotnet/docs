@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentGlyph&#xA;Inherits Glyph" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentGlyph : System::Windows::Forms::Design::Behavior::Glyph" />
+  <TypeSignature Language="F#" Value="type ComponentGlyph = class&#xA;    inherit Glyph" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ComponentGlyph.#ctor(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relatedComponent As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentGlyph(System::ComponentModel::IComponent ^ relatedComponent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.ComponentGlyph : System.ComponentModel.IComponent -&gt; System.Windows.Forms.Design.Behavior.ComponentGlyph" Usage="new System.Windows.Forms.Design.Behavior.ComponentGlyph relatedComponent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent relatedComponent, class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ComponentGlyph.#ctor(System.ComponentModel.IComponent,System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentGlyph(System::ComponentModel::IComponent ^ relatedComponent, System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.ComponentGlyph : System.ComponentModel.IComponent * System.Windows.Forms.Design.Behavior.Behavior -&gt; System.Windows.Forms.Design.Behavior.ComponentGlyph" Usage="new System.Windows.Forms.Design.Behavior.ComponentGlyph (relatedComponent, behavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ComponentGlyph.GetHitTest(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHitTest (p As Point) As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::Cursor ^ GetHitTest(System::Drawing::Point p);" />
+      <MemberSignature Language="F#" Value="override this.GetHitTest : System.Drawing.Point -&gt; System.Windows.Forms.Cursor" Usage="componentGlyph.GetHitTest p" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ComponentGlyph.Paint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Paint (pe As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Paint(System::Windows::Forms::PaintEventArgs ^ pe);" />
+      <MemberSignature Language="F#" Value="override this.Paint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="componentGlyph.Paint pe" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.ComponentGlyph.RelatedComponent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedComponent As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ RelatedComponent { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedComponent : System.ComponentModel.IComponent" Usage="System.Windows.Forms.Design.Behavior.ComponentGlyph.RelatedComponent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SEHException" />
   <TypeSignature Language="VB.NET" Value="Public Class SEHException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SEHException : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type SEHException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,6 +151,7 @@ catch(…)
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SEHException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SEHException : string -&gt; System.Runtime.InteropServices.SEHException" Usage="new System.Runtime.InteropServices.SEHException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -197,6 +199,7 @@ catch(…)
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SEHException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SEHException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.InteropServices.SEHException" Usage="new System.Runtime.InteropServices.SEHException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,6 +243,7 @@ catch(…)
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SEHException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SEHException : string * Exception -&gt; System.Runtime.InteropServices.SEHException" Usage="new System.Runtime.InteropServices.SEHException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -292,6 +296,7 @@ catch(…)
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.CanResume" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanResume () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanResume();" />
+      <MemberSignature Language="F#" Value="abstract member CanResume : unit -&gt; bool&#xA;override this.CanResume : unit -&gt; bool" Usage="sEHException.CanResume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionFlowBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionFlowBindingElement sealed : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Description::IPolicyExportExtension" />
+  <TypeSignature Language="F#" Value="type TransactionFlowBindingElement = class&#xA;    inherit BindingElement&#xA;    interface IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.TransactionProtocol transactionProtocol) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.#ctor(System.ServiceModel.TransactionProtocol)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionFlowBindingElement(System::ServiceModel::TransactionProtocol ^ transactionProtocol);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.TransactionFlowBindingElement : System.ServiceModel.TransactionProtocol -&gt; System.ServiceModel.Channels.TransactionFlowBindingElement" Usage="new System.ServiceModel.Channels.TransactionFlowBindingElement transactionProtocol" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransactionFlowBindingElement.AllowWildcardAction" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowWildcardAction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowWildcardAction { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowWildcardAction : bool with get, set" Usage="System.ServiceModel.Channels.TransactionFlowBindingElement.AllowWildcardAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="transactionFlowBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="transactionFlowBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="transactionFlowBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="transactionFlowBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="transactionFlowBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="transactionFlowBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionFlowBindingElement.ShouldSerializeTransactionProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransactionProtocol () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransactionProtocol();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransactionProtocol : unit -&gt; bool" Usage="transactionFlowBindingElement.ShouldSerializeTransactionProtocol " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -407,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransactionFlowBindingElement.TransactionProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionProtocol As TransactionProtocol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransactionProtocol ^ TransactionProtocol { System::ServiceModel::TransactionProtocol ^ get(); void set(System::ServiceModel::TransactionProtocol ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionProtocol : System.ServiceModel.TransactionProtocol with get, set" Usage="System.ServiceModel.Channels.TransactionFlowBindingElement.TransactionProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

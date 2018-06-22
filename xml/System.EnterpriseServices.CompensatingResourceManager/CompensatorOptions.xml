@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompensatorOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompensatorOptions" />
+  <TypeSignature Language="F#" Value="type CompensatorOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AbortPhase" />
       <MemberSignature Language="VB.NET" Value="AbortPhase" />
       <MemberSignature Language="C++ CLI" Value="AbortPhase" />
+      <MemberSignature Language="F#" Value="AbortPhase = 4" Usage="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AbortPhase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AllPhases" />
       <MemberSignature Language="VB.NET" Value="AllPhases" />
       <MemberSignature Language="C++ CLI" Value="AllPhases" />
+      <MemberSignature Language="F#" Value="AllPhases = 7" Usage="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AllPhases" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.CommitPhase" />
       <MemberSignature Language="VB.NET" Value="CommitPhase" />
       <MemberSignature Language="C++ CLI" Value="CommitPhase" />
+      <MemberSignature Language="F#" Value="CommitPhase = 2" Usage="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.CommitPhase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.FailIfInDoubtsRemain" />
       <MemberSignature Language="VB.NET" Value="FailIfInDoubtsRemain" />
       <MemberSignature Language="C++ CLI" Value="FailIfInDoubtsRemain" />
+      <MemberSignature Language="F#" Value="FailIfInDoubtsRemain = 16" Usage="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.FailIfInDoubtsRemain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.PreparePhase" />
       <MemberSignature Language="VB.NET" Value="PreparePhase" />
       <MemberSignature Language="C++ CLI" Value="PreparePhase" />
+      <MemberSignature Language="F#" Value="PreparePhase = 1" Usage="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.PreparePhase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

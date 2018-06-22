@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.LocationReferenceEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LocationReferenceEnvironment" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocationReferenceEnvironment abstract" />
+  <TypeSignature Language="F#" Value="type LocationReferenceEnvironment = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.GetLocationReferences" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocationReferences () As IEnumerable(Of LocationReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Activities::LocationReference ^&gt; ^ GetLocationReferences();" />
+      <MemberSignature Language="F#" Value="abstract member GetLocationReferences : unit -&gt; seq&lt;System.Activities.LocationReference&gt;" Usage="locationReferenceEnvironment.GetLocationReferences " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsVisible(class System.Activities.LocationReference locationReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.IsVisible(System.Activities.LocationReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsVisible(System::Activities::LocationReference ^ locationReference);" />
+      <MemberSignature Language="F#" Value="abstract member IsVisible : System.Activities.LocationReference -&gt; bool" Usage="locationReferenceEnvironment.IsVisible locationReference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReferenceEnvironment.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Property Parent As LocationReferenceEnvironment" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::Activities::LocationReferenceEnvironment ^ Parent {  public:&#xA;System::Activities::LocationReferenceEnvironment ^ get(); protected:&#xA; void set(System::Activities::LocationReferenceEnvironment ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.LocationReferenceEnvironment.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReferenceEnvironment.Root" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Root As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Activity ^ Root { System::Activities::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Activities.Activity" Usage="System.Activities.LocationReferenceEnvironment.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.TryGetLocationReference(System.String,System.Activities.LocationReference@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetLocationReference (name As String, ByRef result As LocationReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetLocationReference(System::String ^ name, [Runtime::InteropServices::Out] System::Activities::LocationReference ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetLocationReference : string *  -&gt; bool" Usage="locationReferenceEnvironment.TryGetLocationReference (name, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

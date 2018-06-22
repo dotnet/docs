@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeFieldDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.WillChangeFieldDelegate(cFields As Integer, ByRef fields As Object, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::WillChangeFieldDelegate(int cFields, System::Object ^ % fields, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.WillChangeFieldDelegate = delegate of int *  *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

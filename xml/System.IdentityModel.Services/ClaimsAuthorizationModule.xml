@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ClaimsAuthorizationModule" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsAuthorizationModule&#xA;Inherits HttpModuleBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthorizationModule : System::IdentityModel::Services::HttpModuleBase" />
+  <TypeSignature Language="F#" Value="type ClaimsAuthorizationModule = class&#xA;    inherit HttpModuleBase" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsAuthorizationModule.Authorize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Authorize () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool Authorize();" />
+      <MemberSignature Language="F#" Value="abstract member Authorize : unit -&gt; bool&#xA;override this.Authorize : unit -&gt; bool" Usage="claimsAuthorizationModule.Authorize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimsAuthorizationManager As ClaimsAuthorizationManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsAuthorizationManager ^ ClaimsAuthorizationManager { System::Security::Claims::ClaimsAuthorizationManager ^ get(); void set(System::Security::Claims::ClaimsAuthorizationManager ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimsAuthorizationManager : System.Security.Claims.ClaimsAuthorizationManager with get, set" Usage="System.IdentityModel.Services.ClaimsAuthorizationModule.ClaimsAuthorizationManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsAuthorizationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="claimsAuthorizationModule.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsAuthorizationModule.InitializeModule(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeModule (context As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeModule(System::Web::HttpApplication ^ context);" />
+      <MemberSignature Language="F#" Value="override this.InitializeModule : System.Web.HttpApplication -&gt; unit" Usage="claimsAuthorizationModule.InitializeModule context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsAuthorizationModule.InitializePropertiesFromConfiguration" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializePropertiesFromConfiguration ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializePropertiesFromConfiguration();" />
+      <MemberSignature Language="F#" Value="override this.InitializePropertiesFromConfiguration : unit -&gt; unit" Usage="claimsAuthorizationModule.InitializePropertiesFromConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsAuthorizationModule.OnAuthorizeRequest(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthorizeRequest (sender As Object, args As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthorizeRequest(System::Object ^ sender, EventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnAuthorizeRequest : obj * EventArgs -&gt; unit&#xA;override this.OnAuthorizeRequest : obj * EventArgs -&gt; unit" Usage="claimsAuthorizationModule.OnAuthorizeRequest (sender, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

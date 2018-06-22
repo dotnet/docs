@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodDebugInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure MethodDebugInformation" />
   <TypeSignature Language="C++ CLI" Value="public value class MethodDebugInformation" />
+  <TypeSignature Language="F#" Value="type MethodDebugInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDebugInformation.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As DocumentHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DocumentHandle Document { System::Reflection::Metadata::DocumentHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Reflection.Metadata.DocumentHandle" Usage="System.Reflection.Metadata.MethodDebugInformation.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDebugInformation.GetSequencePoints" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSequencePoints () As SequencePointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::SequencePointCollection GetSequencePoints();" />
+      <MemberSignature Language="F#" Value="member this.GetSequencePoints : unit -&gt; System.Reflection.Metadata.SequencePointCollection" Usage="methodDebugInformation.GetSequencePoints " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDebugInformation.GetStateMachineKickoffMethod" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStateMachineKickoffMethod () As MethodDefinitionHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodDefinitionHandle GetStateMachineKickoffMethod();" />
+      <MemberSignature Language="F#" Value="member this.GetStateMachineKickoffMethod : unit -&gt; System.Reflection.Metadata.MethodDefinitionHandle" Usage="methodDebugInformation.GetStateMachineKickoffMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDebugInformation.LocalSignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalSignature As StandaloneSignatureHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StandaloneSignatureHandle LocalSignature { System::Reflection::Metadata::StandaloneSignatureHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalSignature : System.Reflection.Metadata.StandaloneSignatureHandle" Usage="System.Reflection.Metadata.MethodDebugInformation.LocalSignature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDebugInformation.SequencePointsBlob" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SequencePointsBlob As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle SequencePointsBlob { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.SequencePointsBlob : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.MethodDebugInformation.SequencePointsBlob" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

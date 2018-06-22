@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IServerChannelSinkStack" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServerChannelSinkStack&#xA;Implements IServerResponseChannelSinkStack" />
   <TypeSignature Language="C++ CLI" Value="public interface class IServerChannelSinkStack : System::Runtime::Remoting::Channels::IServerResponseChannelSinkStack" />
+  <TypeSignature Language="F#" Value="type IServerChannelSinkStack = interface&#xA;    interface IServerResponseChannelSinkStack" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IServerChannelSink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Pop (sink As IServerChannelSink) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Pop(System::Runtime::Remoting::Channels::IServerChannelSink ^ sink);" />
+      <MemberSignature Language="F#" Value="abstract member Pop : System.Runtime.Remoting.Channels.IServerChannelSink -&gt; obj" Usage="iServerChannelSinkStack.Pop sink" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSinkStack.Push(System.Runtime.Remoting.Channels.IServerChannelSink,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push (sink As IServerChannelSink, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push(System::Runtime::Remoting::Channels::IServerChannelSink ^ sink, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Push : System.Runtime.Remoting.Channels.IServerChannelSink * obj -&gt; unit" Usage="iServerChannelSinkStack.Push (sink, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSinkStack.ServerCallback(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ServerCallback (ar As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ServerCallback(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="abstract member ServerCallback : IAsyncResult -&gt; unit" Usage="iServerChannelSinkStack.ServerCallback ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSinkStack.Store(System.Runtime.Remoting.Channels.IServerChannelSink,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Store (sink As IServerChannelSink, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Store(System::Runtime::Remoting::Channels::IServerChannelSink ^ sink, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Store : System.Runtime.Remoting.Channels.IServerChannelSink * obj -&gt; unit" Usage="iServerChannelSinkStack.Store (sink, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSinkStack.StoreAndDispatch(System.Runtime.Remoting.Channels.IServerChannelSink,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StoreAndDispatch (sink As IServerChannelSink, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StoreAndDispatch(System::Runtime::Remoting::Channels::IServerChannelSink ^ sink, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member StoreAndDispatch : System.Runtime.Remoting.Channels.IServerChannelSink * obj -&gt; unit" Usage="iServerChannelSinkStack.StoreAndDispatch (sink, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

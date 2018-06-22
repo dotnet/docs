@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.TerminateActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TerminateActivity&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class TerminateActivity sealed : System::Workflow::ComponentModel::Activity" />
+  <TypeSignature Language="F#" Value="type TerminateActivity = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.TerminateActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TerminateActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.TerminateActivity : string -&gt; System.Workflow.ComponentModel.TerminateActivity" Usage="new System.Workflow.ComponentModel.TerminateActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.TerminateActivity.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Error { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Error : string with get, set" Usage="System.Workflow.ComponentModel.TerminateActivity.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.TerminateActivity.ErrorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ErrorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ErrorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.TerminateActivity.ErrorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.TerminateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="terminateActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.TerminateActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="terminateActivity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

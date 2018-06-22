@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Func`2" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Func(Of In T, Out TResult)(arg As T) As TResult " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TResult&gt;&#xA;public delegate TResult Func(T arg);" />
+  <TypeSignature Language="F#" Value="type Func&lt;'T, 'Result&gt; = delegate of 'T -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

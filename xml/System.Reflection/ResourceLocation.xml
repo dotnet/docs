@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ResourceLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class ResourceLocation" />
+  <TypeSignature Language="F#" Value="type ResourceLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.ContainedInAnotherAssembly" />
       <MemberSignature Language="VB.NET" Value="ContainedInAnotherAssembly" />
       <MemberSignature Language="C++ CLI" Value="ContainedInAnotherAssembly" />
+      <MemberSignature Language="F#" Value="ContainedInAnotherAssembly = 2" Usage="System.Reflection.ResourceLocation.ContainedInAnotherAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.ContainedInManifestFile" />
       <MemberSignature Language="VB.NET" Value="ContainedInManifestFile" />
       <MemberSignature Language="C++ CLI" Value="ContainedInManifestFile" />
+      <MemberSignature Language="F#" Value="ContainedInManifestFile = 4" Usage="System.Reflection.ResourceLocation.ContainedInManifestFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceLocation.Embedded" />
       <MemberSignature Language="VB.NET" Value="Embedded" />
       <MemberSignature Language="C++ CLI" Value="Embedded" />
+      <MemberSignature Language="F#" Value="Embedded = 1" Usage="System.Reflection.ResourceLocation.Embedded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

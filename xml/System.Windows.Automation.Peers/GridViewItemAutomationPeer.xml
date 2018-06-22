@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GridViewItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewItemAutomationPeer&#xA;Inherits ListBoxItemAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewItemAutomationPeer : System::Windows::Automation::Peers::ListBoxItemAutomationPeer" />
+  <TypeSignature Language="F#" Value="type GridViewItemAutomationPeer = class&#xA;    inherit ListBoxItemAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.ListViewAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Object, listviewAP As ListViewAutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewItemAutomationPeer(System::Object ^ owner, System::Windows::Automation::Peers::ListViewAutomationPeer ^ listviewAP);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.GridViewItemAutomationPeer : obj * System.Windows.Automation.Peers.ListViewAutomationPeer -&gt; System.Windows.Automation.Peers.GridViewItemAutomationPeer" Usage="new System.Windows.Automation.Peers.GridViewItemAutomationPeer (owner, listviewAP)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="gridViewItemAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewItemAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="gridViewItemAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="gridViewItemAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

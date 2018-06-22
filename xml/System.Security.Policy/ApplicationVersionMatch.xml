@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationVersionMatch" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApplicationVersionMatch" />
   <TypeSignature Language="C++ CLI" Value="public enum class ApplicationVersionMatch" />
+  <TypeSignature Language="F#" Value="type ApplicationVersionMatch = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.ApplicationVersionMatch.MatchAllVersions" />
       <MemberSignature Language="VB.NET" Value="MatchAllVersions" />
       <MemberSignature Language="C++ CLI" Value="MatchAllVersions" />
+      <MemberSignature Language="F#" Value="MatchAllVersions = 1" Usage="System.Security.Policy.ApplicationVersionMatch.MatchAllVersions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.ApplicationVersionMatch.MatchExactVersion" />
       <MemberSignature Language="VB.NET" Value="MatchExactVersion" />
       <MemberSignature Language="C++ CLI" Value="MatchExactVersion" />
+      <MemberSignature Language="F#" Value="MatchExactVersion = 0" Usage="System.Security.Policy.ApplicationVersionMatch.MatchExactVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

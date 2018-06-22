@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowDividerDoubleClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowDividerDoubleClickEventHandler(sender As Object, e As DataGridViewRowDividerDoubleClickEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowDividerDoubleClickEventHandler(System::Object ^ sender, DataGridViewRowDividerDoubleClickEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowDividerDoubleClickEventHandler = delegate of obj * DataGridViewRowDividerDoubleClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

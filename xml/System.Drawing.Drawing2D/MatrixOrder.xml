@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.MatrixOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum MatrixOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class MatrixOrder" />
+  <TypeSignature Language="F#" Value="type MatrixOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.MatrixOrder.Append" />
       <MemberSignature Language="VB.NET" Value="Append" />
       <MemberSignature Language="C++ CLI" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 1" Usage="System.Drawing.Drawing2D.MatrixOrder.Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.MatrixOrder.Prepend" />
       <MemberSignature Language="VB.NET" Value="Prepend" />
       <MemberSignature Language="C++ CLI" Value="Prepend" />
+      <MemberSignature Language="F#" Value="Prepend = 0" Usage="System.Drawing.Drawing2D.MatrixOrder.Prepend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

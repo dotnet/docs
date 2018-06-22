@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeDesignerTheme" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeDesignerTheme&#xA;Inherits ActivityDesignerTheme" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeDesignerTheme : System::Workflow::ComponentModel::Design::ActivityDesignerTheme" />
+  <TypeSignature Language="F#" Value="type CompositeDesignerTheme = class&#xA;    inherit ActivityDesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (theme As WorkflowTheme)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeDesignerTheme(System::Workflow::ComponentModel::Design::WorkflowTheme ^ theme);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.CompositeDesignerTheme : System.Workflow.ComponentModel.Design.WorkflowTheme -&gt; System.Workflow.ComponentModel.Design.CompositeDesignerTheme" Usage="new System.Workflow.ComponentModel.Design.CompositeDesignerTheme theme" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorEndCap" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectorEndCap As LineAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::LineAnchor ConnectorEndCap { System::Workflow::ComponentModel::Design::LineAnchor get(); void set(System::Workflow::ComponentModel::Design::LineAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorEndCap : System.Workflow.ComponentModel.Design.LineAnchor with get, set" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorEndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectorSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size ConnectorSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorStartCap" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectorStartCap As LineAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::LineAnchor ConnectorStartCap { System::Workflow::ComponentModel::Design::LineAnchor get(); void set(System::Workflow::ComponentModel::Design::LineAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectorStartCap : System.Workflow.ComponentModel.Design.LineAnchor with get, set" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ConnectorStartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="compositeDesignerTheme.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ExpandButtonSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExpandButtonSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size ExpandButtonSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandButtonSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ExpandButtonSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Brush GetExpandButtonBackgroundBrush(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.GetExpandButtonBackgroundBrush(System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Brush ^ GetExpandButtonBackgroundBrush(System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="member this.GetExpandButtonBackgroundBrush : System.Drawing.Rectangle -&gt; System.Drawing.Brush" Usage="compositeDesignerTheme.GetExpandButtonBackgroundBrush rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="compositeDesignerTheme.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAmbientPropertyChanged(System::Workflow::ComponentModel::Design::AmbientProperty ambientProperty);" />
+      <MemberSignature Language="F#" Value="override this.OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit" Usage="compositeDesignerTheme.OnAmbientPropertyChanged ambientProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -341,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ShowDropShadow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowDropShadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowDropShadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowDropShadow : bool with get, set" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ShowDropShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -385,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property WatermarkAlignment As DesignerContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::DesignerContentAlignment WatermarkAlignment { System::Workflow::ComponentModel::Design::DesignerContentAlignment get(); void set(System::Workflow::ComponentModel::Design::DesignerContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.WatermarkAlignment : System.Workflow.ComponentModel.Design.DesignerContentAlignment with get, set" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WatermarkImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ WatermarkImage { System::Drawing::Image ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WatermarkImage : System.Drawing.Image" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -463,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property WatermarkImagePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WatermarkImagePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WatermarkImagePath : string with get, set" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerTheme.WatermarkImagePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

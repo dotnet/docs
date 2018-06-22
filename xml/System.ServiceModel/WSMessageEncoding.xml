@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSMessageEncoding" />
   <TypeSignature Language="VB.NET" Value="Public Enum WSMessageEncoding" />
   <TypeSignature Language="C++ CLI" Value="public enum class WSMessageEncoding" />
+  <TypeSignature Language="F#" Value="type WSMessageEncoding = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSMessageEncoding.Mtom" />
       <MemberSignature Language="VB.NET" Value="Mtom" />
       <MemberSignature Language="C++ CLI" Value="Mtom" />
+      <MemberSignature Language="F#" Value="Mtom = 1" Usage="System.ServiceModel.WSMessageEncoding.Mtom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WSMessageEncoding.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.ServiceModel.WSMessageEncoding.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

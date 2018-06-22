@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IConnectionPoint" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConnectionPoint" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConnectionPoint" />
+  <TypeSignature Language="F#" Value="type IConnectionPoint = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Advise (pUnkSink As Object, ByRef pdwCookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Advise(System::Object ^ pUnkSink, [Runtime::InteropServices::Out] int % pdwCookie);" />
+      <MemberSignature Language="F#" Value="abstract member Advise : obj *  -&gt; unit" Usage="iConnectionPoint.Advise (pUnkSink, pdwCookie)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumConnections (ByRef ppEnum As IEnumConnections)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnections([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnections ^ % ppEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnections :  -&gt; unit" Usage="iConnectionPoint.EnumConnections ppEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionInterface (ByRef pIID As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionInterface([Runtime::InteropServices::Out] Guid % pIID);" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionInterface :  -&gt; unit" Usage="iConnectionPoint.GetConnectionInterface pIID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionPointContainer (ByRef ppCPC As IConnectionPointContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionPointContainer([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IConnectionPointContainer ^ % ppCPC);" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionPointContainer :  -&gt; unit" Usage="iConnectionPoint.GetConnectionPointContainer ppCPC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unadvise (dwCookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unadvise(int dwCookie);" />
+      <MemberSignature Language="F#" Value="abstract member Unadvise : int -&gt; unit" Usage="iConnectionPoint.Unadvise dwCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

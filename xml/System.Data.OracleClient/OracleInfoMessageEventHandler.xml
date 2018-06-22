@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleInfoMessageEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OracleInfoMessageEventHandler(sender As Object, e As OracleInfoMessageEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OracleInfoMessageEventHandler(System::Object ^ sender, OracleInfoMessageEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OracleInfoMessageEventHandler = delegate of obj * OracleInfoMessageEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

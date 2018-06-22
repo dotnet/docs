@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextDecorationUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextDecorationUnit" />
+  <TypeSignature Language="F#" Value="type TextDecorationUnit = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.FontRecommended" />
       <MemberSignature Language="VB.NET" Value="FontRecommended" />
       <MemberSignature Language="C++ CLI" Value="FontRecommended" />
+      <MemberSignature Language="F#" Value="FontRecommended = 0" Usage="System.Windows.TextDecorationUnit.FontRecommended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.FontRenderingEmSize" />
       <MemberSignature Language="VB.NET" Value="FontRenderingEmSize" />
       <MemberSignature Language="C++ CLI" Value="FontRenderingEmSize" />
+      <MemberSignature Language="F#" Value="FontRenderingEmSize = 1" Usage="System.Windows.TextDecorationUnit.FontRenderingEmSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 2" Usage="System.Windows.TextDecorationUnit.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

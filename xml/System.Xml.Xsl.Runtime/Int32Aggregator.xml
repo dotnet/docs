@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.Int32Aggregator" />
   <TypeSignature Language="VB.NET" Value="Public Structure Int32Aggregator" />
   <TypeSignature Language="C++ CLI" Value="public value class Int32Aggregator" />
+  <TypeSignature Language="F#" Value="type Int32Aggregator = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int32Aggregator.Average(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Average (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Average(int value);" />
+      <MemberSignature Language="F#" Value="member this.Average : int -&gt; unit" Usage="int32Aggregator.Average value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int32Aggregator.AverageResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AverageResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AverageResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AverageResult : int" Usage="System.Xml.Xsl.Runtime.Int32Aggregator.AverageResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int32Aggregator.Create" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create();" />
+      <MemberSignature Language="F#" Value="member this.Create : unit -&gt; unit" Usage="int32Aggregator.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int32Aggregator.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Xml.Xsl.Runtime.Int32Aggregator.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int32Aggregator.Maximum(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Maximum (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Maximum(int value);" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int -&gt; unit" Usage="int32Aggregator.Maximum value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int32Aggregator.MaximumResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumResult : int" Usage="System.Xml.Xsl.Runtime.Int32Aggregator.MaximumResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int32Aggregator.Minimum(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Minimum (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Minimum(int value);" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int -&gt; unit" Usage="int32Aggregator.Minimum value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int32Aggregator.MinimumResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumResult : int" Usage="System.Xml.Xsl.Runtime.Int32Aggregator.MinimumResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int32Aggregator.Sum(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sum (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sum(int value);" />
+      <MemberSignature Language="F#" Value="member this.Sum : int -&gt; unit" Usage="int32Aggregator.Sum value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int32Aggregator.SumResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SumResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SumResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SumResult : int" Usage="System.Xml.Xsl.Runtime.Int32Aggregator.SumResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

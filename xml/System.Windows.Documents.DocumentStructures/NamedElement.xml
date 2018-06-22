@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.NamedElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NamedElement&#xA;Inherits BlockElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedElement : System::Windows::Documents::DocumentStructures::BlockElement" />
+  <TypeSignature Language="F#" Value="type NamedElement = class&#xA;    inherit BlockElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentStructures.NamedElement.NameReference" />
       <MemberSignature Language="VB.NET" Value="Public Property NameReference As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameReference { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameReference : string with get, set" Usage="System.Windows.Documents.DocumentStructures.NamedElement.NameReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

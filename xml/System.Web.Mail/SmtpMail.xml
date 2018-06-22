@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.SmtpMail" />
   <TypeSignature Language="VB.NET" Value="Public Class SmtpMail" />
   <TypeSignature Language="C++ CLI" Value="public ref class SmtpMail" />
+  <TypeSignature Language="F#" Value="type SmtpMail = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@ MailMessage to@contoso.com from@contoso.com test hello
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.SmtpMail.Send(System.Web.Mail.MailMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Send (message As MailMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Send(System::Web::Mail::MailMessage ^ message);" />
+      <MemberSignature Language="F#" Value="static member Send : System.Web.Mail.MailMessage -&gt; unit" Usage="System.Web.Mail.SmtpMail.Send message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@ MailMessage to@contoso.com from@contoso.com test hello
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.SmtpMail.Send(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Send (from As String, to As String, subject As String, messageText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Send(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ messageText);" />
+      <MemberSignature Language="F#" Value="static member Send : string * string * string * string -&gt; unit" Usage="System.Web.Mail.SmtpMail.Send (from, to, subject, messageText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +136,7 @@ MailMessage to@contoso.com from@contoso.com test hello
       <MemberSignature Language="DocId" Value="P:System.Web.Mail.SmtpMail.SmtpServer" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property SmtpServer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SmtpServer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SmtpServer : string with get, set" Usage="System.Web.Mail.SmtpMail.SmtpServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

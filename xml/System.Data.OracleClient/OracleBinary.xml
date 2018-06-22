@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleBinary" />
   <TypeSignature Language="VB.NET" Value="Public Structure OracleBinary&#xA;Implements IComparable, INullable" />
   <TypeSignature Language="C++ CLI" Value="public value class OracleBinary : IComparable, System::Data::SqlTypes::INullable" />
+  <TypeSignature Language="F#" Value="type OracleBinary = struct&#xA;    interface INullable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (b As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleBinary(cli::array &lt;System::Byte&gt; ^ b);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleBinary : byte[] -&gt; System.Data.OracleClient.OracleBinary" Usage="new System.Data.OracleClient.OracleBinary b" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="oracleBinary.CompareTo obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.Concat(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (x As OracleBinary, y As OracleBinary) As OracleBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBinary Concat(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member Concat : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBinary" Usage="System.Data.OracleClient.OracleBinary.Concat (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="oracleBinary.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.Equals(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean Equals(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="oracleBinary.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.GreaterThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThan(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.GreaterThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThanOrEqual(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBinary.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.OracleClient.OracleBinary.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBinary.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte default[int] { System::Byte get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : byte" Usage="System.Data.OracleClient.OracleBinary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBinary.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Data.OracleClient.OracleBinary.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -347,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.LessThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThan(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -373,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.LessThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThanOrEqual(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -399,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.NotEquals(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean NotEquals(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -425,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleBinary.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleBinary " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleBinary Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.OracleClient.OracleBinary" Usage="System.Data.OracleClient.OracleBinary.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -452,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Addition(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As OracleBinary, y As OracleBinary) As OracleBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBinary operator +(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBinary" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -489,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Equality(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator ==(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -517,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Explicit(System.Data.OracleClient.OracleBinary)~System.Byte[]" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As OracleBinary) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator cli::array &lt;System::Byte&gt; ^(System::Data::OracleClient::OracleBinary x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.OracleClient.OracleBinary -&gt; byte[]" Usage="System.Data.OracleClient.OracleBinary.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -550,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_GreaterThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -578,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_GreaterThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;=(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -606,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Implicit(System.Byte[])~System.Data.OracleClient.OracleBinary" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (b As Byte()) As OracleBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::OracleClient::OracleBinary(cli::array &lt;System::Byte&gt; ^ b);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : byte[] -&gt; System.Data.OracleClient.OracleBinary" Usage="System.Data.OracleClient.OracleBinary.op_Implicit b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -630,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Inequality(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator !=(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleBinary.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -658,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_LessThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -686,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_LessThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As OracleBinary, y As OracleBinary) As OracleBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;=(System::Data::OracleClient::OracleBinary x, System::Data::OracleClient::OracleBinary y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.OracleClient.OracleBinary * System.Data.OracleClient.OracleBinary -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -714,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBinary.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Value { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte[]" Usage="System.Data.OracleClient.OracleBinary.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

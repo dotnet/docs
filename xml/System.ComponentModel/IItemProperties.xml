@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IItemProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface IItemProperties" />
   <TypeSignature Language="C++ CLI" Value="public interface class IItemProperties" />
+  <TypeSignature Language="F#" Value="type IItemProperties = interface" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IItemProperties.ItemProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemProperties As ReadOnlyCollection(Of ItemPropertyInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemProperties : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.ItemPropertyInfo&gt;" Usage="System.ComponentModel.IItemProperties.ItemProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

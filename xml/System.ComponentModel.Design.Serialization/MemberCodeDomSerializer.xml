@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberCodeDomSerializer&#xA;Inherits CodeDomSerializerBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberCodeDomSerializer abstract : System::ComponentModel::Design::Serialization::CodeDomSerializerBase" />
+  <TypeSignature Language="F#" Value="type MemberCodeDomSerializer = class&#xA;    inherit CodeDomSerializerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.ComponentModel.MemberDescriptor,System.CodeDom.CodeStatementCollection)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Serialize (manager As IDesignerSerializationManager, value As Object, descriptor As MemberDescriptor, statements As CodeStatementCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, System::ComponentModel::MemberDescriptor ^ descriptor, System::CodeDom::CodeStatementCollection ^ statements);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor * System.CodeDom.CodeStatementCollection -&gt; unit" Usage="memberCodeDomSerializer.Serialize (manager, value, descriptor, statements)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer.ShouldSerialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ShouldSerialize (manager As IDesignerSerializationManager, value As Object, descriptor As MemberDescriptor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ShouldSerialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, System::ComponentModel::MemberDescriptor ^ descriptor);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.ComponentModel.MemberDescriptor -&gt; bool" Usage="memberCodeDomSerializer.ShouldSerialize (manager, value, descriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

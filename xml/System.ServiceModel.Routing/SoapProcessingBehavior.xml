@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.SoapProcessingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapProcessingBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapProcessingBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type SoapProcessingBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.SoapProcessingBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBindingParameters (endpoint As ServiceEndpoint, bindingParameters As BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="soapProcessingBehavior.AddBindingParameters (endpoint, bindingParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -82,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.SoapProcessingBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyClientBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyClientBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit&#xA;override this.ApplyClientBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="soapProcessingBehavior.ApplyClientBehavior (endpoint, clientRuntime)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)</InterfaceMember>
@@ -109,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.SoapProcessingBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::EndpointDispatcher ^ endpointDispatcher);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit" Usage="soapProcessingBehavior.ApplyDispatchBehavior (endpoint, endpointDispatcher)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)</InterfaceMember>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.SoapProcessingBehavior.ProcessMessages" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessMessages As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProcessMessages { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessMessages : bool with get, set" Usage="System.ServiceModel.Routing.SoapProcessingBehavior.ProcessMessages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.SoapProcessingBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="soapProcessingBehavior.Validate endpoint" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)</InterfaceMember>

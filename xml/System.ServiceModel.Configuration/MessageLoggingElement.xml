@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MessageLoggingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageLoggingElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageLoggingElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type MessageLoggingElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.Filters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filters As XPathMessageFilterElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XPathMessageFilterElementCollection ^ Filters { System::ServiceModel::Configuration::XPathMessageFilterElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filters : System.ServiceModel.Configuration.XPathMessageFilterElementCollection" Usage="System.ServiceModel.Configuration.MessageLoggingElement.Filters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.LogEntireMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property LogEntireMessage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogEntireMessage { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogEntireMessage : bool with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.LogEntireMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.LogKnownPii" />
       <MemberSignature Language="VB.NET" Value="Public Property LogKnownPii As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogKnownPii { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogKnownPii : bool with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.LogKnownPii" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.LogMalformedMessages" />
       <MemberSignature Language="VB.NET" Value="Public Property LogMalformedMessages As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogMalformedMessages { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogMalformedMessages : bool with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.LogMalformedMessages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.LogMessagesAtServiceLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property LogMessagesAtServiceLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogMessagesAtServiceLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogMessagesAtServiceLevel : bool with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.LogMessagesAtServiceLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.LogMessagesAtTransportLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property LogMessagesAtTransportLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogMessagesAtTransportLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogMessagesAtTransportLevel : bool with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.LogMessagesAtTransportLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.MaxMessagesToLog" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxMessagesToLog As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxMessagesToLog { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxMessagesToLog : int with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.MaxMessagesToLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.MaxSizeOfMessageToLog" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSizeOfMessageToLog As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSizeOfMessageToLog { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSizeOfMessageToLog : int with get, set" Usage="System.ServiceModel.Configuration.MessageLoggingElement.MaxSizeOfMessageToLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageLoggingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.MessageLoggingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

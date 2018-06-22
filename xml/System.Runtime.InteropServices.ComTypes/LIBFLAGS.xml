@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.LIBFLAGS" />
   <TypeSignature Language="VB.NET" Value="Public Enum LIBFLAGS" />
   <TypeSignature Language="C++ CLI" Value="public enum class LIBFLAGS" />
+  <TypeSignature Language="F#" Value="type LIBFLAGS = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FCONTROL" />
       <MemberSignature Language="VB.NET" Value="LIBFLAG_FCONTROL" />
       <MemberSignature Language="C++ CLI" Value="LIBFLAG_FCONTROL" />
+      <MemberSignature Language="F#" Value="LIBFLAG_FCONTROL = 2" Usage="System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FCONTROL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FHASDISKIMAGE" />
       <MemberSignature Language="VB.NET" Value="LIBFLAG_FHASDISKIMAGE" />
       <MemberSignature Language="C++ CLI" Value="LIBFLAG_FHASDISKIMAGE" />
+      <MemberSignature Language="F#" Value="LIBFLAG_FHASDISKIMAGE = 8" Usage="System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FHASDISKIMAGE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FHIDDEN" />
       <MemberSignature Language="VB.NET" Value="LIBFLAG_FHIDDEN" />
       <MemberSignature Language="C++ CLI" Value="LIBFLAG_FHIDDEN" />
+      <MemberSignature Language="F#" Value="LIBFLAG_FHIDDEN = 4" Usage="System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FHIDDEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FRESTRICTED" />
       <MemberSignature Language="VB.NET" Value="LIBFLAG_FRESTRICTED" />
       <MemberSignature Language="C++ CLI" Value="LIBFLAG_FRESTRICTED" />
+      <MemberSignature Language="F#" Value="LIBFLAG_FRESTRICTED = 1" Usage="System.Runtime.InteropServices.ComTypes.LIBFLAGS.LIBFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsRuntimeDesignerContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeDesignerContext sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeDesignerContext = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.#ctor(System.Collections.Generic.IEnumerable{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (paths As IEnumerable(Of String), name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsRuntimeDesignerContext(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ paths, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DesignerServices.WindowsRuntimeDesignerContext : seq&lt;string&gt; * string -&gt; System.Runtime.DesignerServices.WindowsRuntimeDesignerContext" Usage="new System.Runtime.DesignerServices.WindowsRuntimeDesignerContext (paths, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.GetAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssembly (assemblyName As String) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetAssembly(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="member this.GetAssembly : string -&gt; System.Reflection.Assembly" Usage="windowsRuntimeDesignerContext.GetAssembly assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (typeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="windowsRuntimeDesignerContext.GetType typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.InitializeSharedContext(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InitializeSharedContext (paths As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitializeSharedContext(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ paths);" />
+      <MemberSignature Language="F#" Value="static member InitializeSharedContext : seq&lt;string&gt; -&gt; unit" Usage="System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.InitializeSharedContext paths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.SetIterationContext(System.Runtime.DesignerServices.WindowsRuntimeDesignerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIterationContext (context As WindowsRuntimeDesignerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIterationContext(System::Runtime::DesignerServices::WindowsRuntimeDesignerContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member SetIterationContext : System.Runtime.DesignerServices.WindowsRuntimeDesignerContext -&gt; unit" Usage="System.Runtime.DesignerServices.WindowsRuntimeDesignerContext.SetIterationContext context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

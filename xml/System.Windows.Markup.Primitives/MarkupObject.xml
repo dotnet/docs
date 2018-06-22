@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Primitives.MarkupObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarkupObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarkupObject abstract" />
+  <TypeSignature Language="F#" Value="type MarkupObject = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Primitives.MarkupObject.AssignRootContext(System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AssignRootContext (context As IValueSerializerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AssignRootContext(System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member AssignRootContext : System.Windows.Markup.IValueSerializerContext -&gt; unit" Usage="markupObject.AssignRootContext context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupObject.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Windows.Markup.Primitives.MarkupObject.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupObject.Instance" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Instance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Instance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Instance : obj" Usage="System.Windows.Markup.Primitives.MarkupObject.Instance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupObject.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ObjectType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ObjectType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Windows.Markup.Primitives.MarkupObject.ObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupObject.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As IEnumerable(Of MarkupProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Windows::Markup::Primitives::MarkupProperty ^&gt; ^ Properties { System::Collections::Generic::IEnumerable&lt;System::Windows::Markup::Primitives::MarkupProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : seq&lt;System.Windows.Markup.Primitives.MarkupProperty&gt;" Usage="System.Windows.Markup.Primitives.MarkupObject.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

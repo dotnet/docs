@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanValidatorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeSpanValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimeSpanValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
+  <TypeSignature Language="F#" Value="type TimeSpanValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ExcludeRange" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeRange As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeRange { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludeRange : bool with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.ExcludeRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxValue As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxValue { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : TimeSpan" Usage="System.Configuration.TimeSpanValidatorAttribute.MaxValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValueString" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValueString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaxValueString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxValueString : string with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.MaxValueString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinValue As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinValue { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinValue : TimeSpan" Usage="System.Configuration.TimeSpanValidatorAttribute.MinValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValueString" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValueString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinValueString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MinValueString : string with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.MinValueString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -282,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Const TimeSpanMaxValue As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMaxValue;" />
+      <MemberSignature Language="F#" Value="val mutable TimeSpanMaxValue : string" Usage="System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue" />
       <MemberSignature Language="VB.NET" Value="Public Const TimeSpanMinValue As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMinValue;" />
+      <MemberSignature Language="F#" Value="val mutable TimeSpanMinValue : string" Usage="System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

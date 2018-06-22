@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexTcpBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexTcpBindingElement&#xA;Inherits MexBindingElement(Of CustomBinding)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MexTcpBindingElement : System::ServiceModel::Configuration::MexBindingElement&lt;System::ServiceModel::Channels::CustomBinding ^&gt;" />
+  <TypeSignature Language="F#" Value="type MexTcpBindingElement = class&#xA;    inherit MexBindingElement&lt;CustomBinding&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexTcpBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MexTcpBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.MexTcpBindingElement : string -&gt; System.ServiceModel.Configuration.MexTcpBindingElement" Usage="new System.ServiceModel.Configuration.MexTcpBindingElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlAssertionKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class SamlAssertionKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type SamlAssertionKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assertionId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAssertionKeyIdentifierClause(System::String ^ assertionId);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause : string -&gt; System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause assertionId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assertionId As String, derivationNonce As Byte(), derivationLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAssertionKeyIdentifierClause(System::String ^ assertionId, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause : string * byte[] * int -&gt; System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause (assertionId, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.AssertionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssertionId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssertionId : string" Usage="System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.AssertionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.Matches(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (assertionId As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::String ^ assertionId);" />
+      <MemberSignature Language="F#" Value="override this.Matches : string -&gt; bool" Usage="samlAssertionKeyIdentifierClause.Matches assertionId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="samlAssertionKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAssertionKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="samlAssertionKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

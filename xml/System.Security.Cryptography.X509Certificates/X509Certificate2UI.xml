@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Certificate2UI" />
   <TypeSignature Language="VB.NET" Value="Public Class X509Certificate2UI" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509Certificate2UI abstract sealed" />
+  <TypeSignature Language="F#" Value="type X509Certificate2UI = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisplayCertificate (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisplayCertificate(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member DisplayCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisplayCertificate (certificate As X509Certificate2, hwndParent As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisplayCertificate(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, IntPtr hwndParent);" />
+      <MemberSignature Language="F#" Value="static member DisplayCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 * nativeint -&gt; unit" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate (certificate, hwndParent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509SelectionFlag)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SelectFromCollection (certificates As X509Certificate2Collection, title As String, message As String, selectionFlag As X509SelectionFlag) As X509Certificate2Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ SelectFromCollection(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates, System::String ^ title, System::String ^ message, System::Security::Cryptography::X509Certificates::X509SelectionFlag selectionFlag);" />
+      <MemberSignature Language="F#" Value="static member SelectFromCollection : System.Security.Cryptography.X509Certificates.X509Certificate2Collection * string * string * System.Security.Cryptography.X509Certificates.X509SelectionFlag -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection (certificates, title, message, selectionFlag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.String,System.String,System.Security.Cryptography.X509Certificates.X509SelectionFlag,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SelectFromCollection (certificates As X509Certificate2Collection, title As String, message As String, selectionFlag As X509SelectionFlag, hwndParent As IntPtr) As X509Certificate2Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ SelectFromCollection(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates, System::String ^ title, System::String ^ message, System::Security::Cryptography::X509Certificates::X509SelectionFlag selectionFlag, IntPtr hwndParent);" />
+      <MemberSignature Language="F#" Value="static member SelectFromCollection : System.Security.Cryptography.X509Certificates.X509Certificate2Collection * string * string * System.Security.Cryptography.X509Certificates.X509SelectionFlag * nativeint -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection (certificates, title, message, selectionFlag, hwndParent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

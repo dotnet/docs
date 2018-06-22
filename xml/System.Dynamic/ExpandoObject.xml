@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.ExpandoObject" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpandoObject&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IDynamicMetaObjectProvider, IEnumerable(Of KeyValuePair(Of String, Object)), INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpandoObject sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::ComponentModel::INotifyPropertyChanged, System::Dynamic::IDynamicMetaObjectProvider" />
+  <TypeSignature Language="F#" Value="type ExpandoObject = class&#xA;    interface IDynamicMetaObjectProvider&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface INotifyPropertyChanged&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -363,6 +364,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection(Of KeyValuePair(Of String, Object)).Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -400,6 +402,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -561,6 +564,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Item(System.String)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As String) As Object Implements IDictionary(Of String, Object).Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Item[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -602,6 +606,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, Object).Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -720,6 +725,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of Object) Implements IDictionary(Of String, Object).Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>

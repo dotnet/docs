@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSFunctionAttributeEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum JSFunctionAttributeEnum" />
   <TypeSignature Language="C++ CLI" Value="public enum class JSFunctionAttributeEnum" />
+  <TypeSignature Language="F#" Value="type JSFunctionAttributeEnum = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.ClassicFunction" />
       <MemberSignature Language="VB.NET" Value="ClassicFunction" />
       <MemberSignature Language="C++ CLI" Value="ClassicFunction" />
+      <MemberSignature Language="F#" Value="ClassicFunction = 35" Usage="Microsoft.JScript.JSFunctionAttributeEnum.ClassicFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.ClassicNestedFunction" />
       <MemberSignature Language="VB.NET" Value="ClassicNestedFunction" />
       <MemberSignature Language="C++ CLI" Value="ClassicNestedFunction" />
+      <MemberSignature Language="F#" Value="ClassicNestedFunction = 47" Usage="Microsoft.JScript.JSFunctionAttributeEnum.ClassicNestedFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.HasArguments" />
       <MemberSignature Language="VB.NET" Value="HasArguments" />
       <MemberSignature Language="C++ CLI" Value="HasArguments" />
+      <MemberSignature Language="F#" Value="HasArguments = 1" Usage="Microsoft.JScript.JSFunctionAttributeEnum.HasArguments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.HasEngine" />
       <MemberSignature Language="VB.NET" Value="HasEngine" />
       <MemberSignature Language="C++ CLI" Value="HasEngine" />
+      <MemberSignature Language="F#" Value="HasEngine = 32" Usage="Microsoft.JScript.JSFunctionAttributeEnum.HasEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.HasStackFrame" />
       <MemberSignature Language="VB.NET" Value="HasStackFrame" />
       <MemberSignature Language="C++ CLI" Value="HasStackFrame" />
+      <MemberSignature Language="F#" Value="HasStackFrame = 8" Usage="Microsoft.JScript.JSFunctionAttributeEnum.HasStackFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject" />
       <MemberSignature Language="VB.NET" Value="HasThisObject" />
       <MemberSignature Language="C++ CLI" Value="HasThisObject" />
+      <MemberSignature Language="F#" Value="HasThisObject = 2" Usage="Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs" />
       <MemberSignature Language="VB.NET" Value="HasVarArgs" />
       <MemberSignature Language="C++ CLI" Value="HasVarArgs" />
+      <MemberSignature Language="F#" Value="HasVarArgs = 16" Usage="Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.IsExpandoMethod" />
       <MemberSignature Language="VB.NET" Value="IsExpandoMethod" />
       <MemberSignature Language="C++ CLI" Value="IsExpandoMethod" />
+      <MemberSignature Language="F#" Value="IsExpandoMethod = 64" Usage="Microsoft.JScript.JSFunctionAttributeEnum.IsExpandoMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.IsInstanceNestedClassConstructor" />
       <MemberSignature Language="VB.NET" Value="IsInstanceNestedClassConstructor" />
       <MemberSignature Language="C++ CLI" Value="IsInstanceNestedClassConstructor" />
+      <MemberSignature Language="F#" Value="IsInstanceNestedClassConstructor = 128" Usage="Microsoft.JScript.JSFunctionAttributeEnum.IsInstanceNestedClassConstructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -221,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.IsNested" />
       <MemberSignature Language="VB.NET" Value="IsNested" />
       <MemberSignature Language="C++ CLI" Value="IsNested" />
+      <MemberSignature Language="F#" Value="IsNested = 4" Usage="Microsoft.JScript.JSFunctionAttributeEnum.IsNested" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -241,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.NestedFunction" />
       <MemberSignature Language="VB.NET" Value="NestedFunction" />
       <MemberSignature Language="C++ CLI" Value="NestedFunction" />
+      <MemberSignature Language="F#" Value="NestedFunction = 44" Usage="Microsoft.JScript.JSFunctionAttributeEnum.NestedFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -261,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSFunctionAttributeEnum.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.JScript.JSFunctionAttributeEnum.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

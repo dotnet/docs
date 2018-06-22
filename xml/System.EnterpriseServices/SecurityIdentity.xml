@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityIdentity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityIdentity sealed" />
+  <TypeSignature Language="F#" Value="type SecurityIdentity = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityIdentity.AccountName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccountName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccountName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccountName : string" Usage="System.EnterpriseServices.SecurityIdentity.AccountName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityIdentity.AuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationLevel As AuthenticationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::AuthenticationOption AuthenticationLevel { System::EnterpriseServices::AuthenticationOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationLevel : System.EnterpriseServices.AuthenticationOption" Usage="System.EnterpriseServices.SecurityIdentity.AuthenticationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityIdentity.AuthenticationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationService As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AuthenticationService { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationService : int" Usage="System.EnterpriseServices.SecurityIdentity.AuthenticationService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityIdentity.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImpersonationLevel As ImpersonationLevelOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::ImpersonationLevelOption ImpersonationLevel { System::EnterpriseServices::ImpersonationLevelOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.EnterpriseServices.ImpersonationLevelOption" Usage="System.EnterpriseServices.SecurityIdentity.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

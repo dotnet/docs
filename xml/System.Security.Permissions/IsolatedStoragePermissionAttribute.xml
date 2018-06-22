@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IsolatedStoragePermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IsolatedStoragePermissionAttribute abstract : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type IsolatedStoragePermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; IsolatedStoragePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.IsolatedStoragePermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.IsolatedStoragePermissionAttribute" Usage="new System.Security.Permissions.IsolatedStoragePermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermissionAttribute.UsageAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Property UsageAllowed As IsolatedStorageContainment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::IsolatedStorageContainment UsageAllowed { System::Security::Permissions::IsolatedStorageContainment get(); void set(System::Security::Permissions::IsolatedStorageContainment value); };" />
+      <MemberSignature Language="F#" Value="member this.UsageAllowed : System.Security.Permissions.IsolatedStorageContainment with get, set" Usage="System.Security.Permissions.IsolatedStoragePermissionAttribute.UsageAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermissionAttribute.UserQuota" />
       <MemberSignature Language="VB.NET" Value="Public Property UserQuota As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long UserQuota { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.UserQuota : int64 with get, set" Usage="System.Security.Permissions.IsolatedStoragePermissionAttribute.UserQuota" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

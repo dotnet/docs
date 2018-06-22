@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectionPatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectionPatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type SelectionPatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPatternIdentifiers.CanSelectMultipleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanSelectMultipleProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanSelectMultipleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanSelectMultipleProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.SelectionPatternIdentifiers.CanSelectMultipleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvalidatedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InvalidatedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvalidatedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPatternIdentifiers.IsSelectionRequiredProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionRequiredProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSelectionRequiredProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionRequiredProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.SelectionPatternIdentifiers.IsSelectionRequiredProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.SelectionPatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPatternIdentifiers.SelectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SelectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.SelectionPatternIdentifiers.SelectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

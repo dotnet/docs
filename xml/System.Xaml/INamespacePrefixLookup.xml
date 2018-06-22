@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.INamespacePrefixLookup" />
   <TypeSignature Language="VB.NET" Value="Public Interface INamespacePrefixLookup" />
   <TypeSignature Language="C++ CLI" Value="public interface class INamespacePrefixLookup" />
+  <TypeSignature Language="F#" Value="type INamespacePrefixLookup = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.INamespacePrefixLookup.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (ns As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string" Usage="iNamespacePrefixLookup.LookupPrefix ns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

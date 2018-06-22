@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISponsor" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISponsor" />
+  <TypeSignature Language="F#" Value="type ISponsor = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)" />
       <MemberSignature Language="VB.NET" Value="Public Function Renewal (lease As ILease) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan Renewal(System::Runtime::Remoting::Lifetime::ILease ^ lease);" />
+      <MemberSignature Language="F#" Value="abstract member Renewal : System.Runtime.Remoting.Lifetime.ILease -&gt; TimeSpan" Usage="iSponsor.Renewal lease" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

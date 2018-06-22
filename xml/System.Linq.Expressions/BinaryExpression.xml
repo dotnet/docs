@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.BinaryExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryExpression : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type BinaryExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.BinaryExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="binaryExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -161,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.CanReduce" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanReduce As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReduce { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanReduce : bool" Usage="System.Linq.Expressions.BinaryExpression.CanReduce" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -194,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.Conversion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conversion As LambdaExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::LambdaExpression ^ Conversion { System::Linq::Expressions::LambdaExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conversion : System.Linq.Expressions.LambdaExpression" Usage="System.Linq.Expressions.BinaryExpression.Conversion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.IsLifted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLifted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLifted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLifted : bool" Usage="System.Linq.Expressions.BinaryExpression.IsLifted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.IsLiftedToNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiftedToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiftedToNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiftedToNull : bool" Usage="System.Linq.Expressions.BinaryExpression.IsLiftedToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Left { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.BinaryExpression.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -349,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ Method { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Reflection.MethodInfo" Usage="System.Linq.Expressions.BinaryExpression.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -389,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.BinaryExpression.Reduce" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Reduce () As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::Expressions::Expression ^ Reduce();" />
+      <MemberSignature Language="F#" Value="override this.Reduce : unit -&gt; System.Linq.Expressions.Expression" Usage="binaryExpression.Reduce " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -432,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BinaryExpression.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Right { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.BinaryExpression.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -465,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.BinaryExpression.Update(System.Linq.Expressions.Expression,System.Linq.Expressions.LambdaExpression,System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (left As Expression, conversion As LambdaExpression, right As Expression) As BinaryExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::BinaryExpression ^ Update(System::Linq::Expressions::Expression ^ left, System::Linq::Expressions::LambdaExpression ^ conversion, System::Linq::Expressions::Expression ^ right);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression * System.Linq.Expressions.LambdaExpression * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.BinaryExpression" Usage="binaryExpression.Update (left, conversion, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

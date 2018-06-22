@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ConstraintCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConstraintCollection&#xA;Inherits InternalDataCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstraintCollection sealed : System::Data::InternalDataCollectionBase" />
+  <TypeSignature Language="F#" Value="type ConstraintCollection = class&#xA;    inherit InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Data.Constraint constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Add(System.Data.Constraint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::Constraint ^ constraint);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Data.Constraint -&gt; unit" Usage="constraintCollection.Add constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Add(System.String,System.Data.DataColumn,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, column As DataColumn, primaryKey As Boolean) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Constraint ^ Add(System::String ^ name, System::Data::DataColumn ^ column, bool primaryKey);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Data.DataColumn * bool -&gt; System.Data.Constraint" Usage="constraintCollection.Add (name, column, primaryKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Add(System.String,System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, primaryKeyColumn As DataColumn, foreignKeyColumn As DataColumn) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Constraint ^ Add(System::String ^ name, System::Data::DataColumn ^ primaryKeyColumn, System::Data::DataColumn ^ foreignKeyColumn);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.Constraint" Usage="constraintCollection.Add (name, primaryKeyColumn, foreignKeyColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -246,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Add(System.String,System.Data.DataColumn[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, columns As DataColumn(), primaryKey As Boolean) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Constraint ^ Add(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ columns, bool primaryKey);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Data.DataColumn[] * bool -&gt; System.Data.Constraint" Usage="constraintCollection.Add (name, columns, primaryKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -306,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Add(System.String,System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, primaryKeyColumns As DataColumn(), foreignKeyColumns As DataColumn()) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Constraint ^ Add(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ primaryKeyColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ foreignKeyColumns);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.Constraint" Usage="constraintCollection.Add (name, primaryKeyColumns, foreignKeyColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -359,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.AddRange(System.Data.Constraint[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (constraints As Constraint())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::Constraint ^&gt; ^ constraints);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Data.Constraint[] -&gt; unit" Usage="constraintCollection.AddRange constraints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -406,6 +413,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanRemove(class System.Data.Constraint constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.CanRemove(System.Data.Constraint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanRemove(System::Data::Constraint ^ constraint);" />
+      <MemberSignature Language="F#" Value="member this.CanRemove : System.Data.Constraint -&gt; bool" Usage="constraintCollection.CanRemove constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -456,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="constraintCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -501,6 +510,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.ConstraintCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -545,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="constraintCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -596,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.CopyTo(System.Data.Constraint[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Constraint(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::Constraint ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.Constraint[] * int -&gt; unit" Usage="constraintCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -640,6 +652,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Data.Constraint constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.IndexOf(System.Data.Constraint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::Constraint ^ constraint);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Data.Constraint -&gt; int" Usage="constraintCollection.IndexOf constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -692,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (constraintName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ constraintName);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="constraintCollection.IndexOf constraintName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -754,6 +768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ConstraintCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Constraint ^ default[int] { System::Data::Constraint ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.Constraint" Usage="System.Data.ConstraintCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -805,6 +820,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ConstraintCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Constraint ^ default[System::String ^] { System::Data::Constraint ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.Constraint" Usage="System.Data.ConstraintCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -854,6 +870,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ConstraintCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Data.ConstraintCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -893,6 +910,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Data.Constraint constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Remove(System.Data.Constraint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::Constraint ^ constraint);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.Constraint -&gt; unit" Usage="constraintCollection.Remove constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -946,6 +964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="constraintCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -999,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="constraintCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ParsingCulture" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParsingCulture" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParsingCulture" />
+  <TypeSignature Language="F#" Value="type ParsingCulture = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Current" />
       <MemberSignature Language="VB.NET" Value="Current" />
       <MemberSignature Language="C++ CLI" Value="Current" />
+      <MemberSignature Language="F#" Value="Current = 1" Usage="System.Web.UI.WebControls.ParsingCulture.Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Invariant" />
       <MemberSignature Language="VB.NET" Value="Invariant" />
       <MemberSignature Language="C++ CLI" Value="Invariant" />
+      <MemberSignature Language="F#" Value="Invariant = 0" Usage="System.Web.UI.WebControls.ParsingCulture.Invariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

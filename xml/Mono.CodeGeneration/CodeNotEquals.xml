@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeNotEquals" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeNotEquals&#xA;Inherits CodeConditionExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeNotEquals : Mono::CodeGeneration::CodeConditionExpression" />
+  <TypeSignature Language="F#" Value="type CodeNotEquals = class&#xA;    inherit CodeConditionExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNotEquals.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exp1 As CodeExpression, exp2 As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNotEquals(Mono::CodeGeneration::CodeExpression ^ exp1, Mono::CodeGeneration::CodeExpression ^ exp2);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeNotEquals : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeNotEquals" Usage="new Mono.CodeGeneration.CodeNotEquals (exp1, exp2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNotEquals.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeNotEquals.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateForBranch(class System.Reflection.Emit.ILGenerator gen, valuetype System.Reflection.Emit.Label label, bool branchCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNotEquals.GenerateForBranch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateForBranch(System::Reflection::Emit::ILGenerator ^ gen, System::Reflection::Emit::Label label, bool branchCase);" />
+      <MemberSignature Language="F#" Value="override this.GenerateForBranch : System.Reflection.Emit.ILGenerator * System.Reflection.Emit.Label * bool -&gt; unit" Usage="codeNotEquals.GenerateForBranch (gen, label, branchCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNotEquals.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeNotEquals.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNotEquals.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeNotEquals.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SynchronizedInputType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SynchronizedInputType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SynchronizedInputType" />
+  <TypeSignature Language="F#" Value="type SynchronizedInputType = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.KeyDown" />
       <MemberSignature Language="VB.NET" Value="KeyDown" />
       <MemberSignature Language="C++ CLI" Value="KeyDown" />
+      <MemberSignature Language="F#" Value="KeyDown = 2" Usage="System.Windows.Automation.SynchronizedInputType.KeyDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.KeyUp" />
       <MemberSignature Language="VB.NET" Value="KeyUp" />
       <MemberSignature Language="C++ CLI" Value="KeyUp" />
+      <MemberSignature Language="F#" Value="KeyUp = 1" Usage="System.Windows.Automation.SynchronizedInputType.KeyUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseLeftButtonDown" />
       <MemberSignature Language="VB.NET" Value="MouseLeftButtonDown" />
       <MemberSignature Language="C++ CLI" Value="MouseLeftButtonDown" />
+      <MemberSignature Language="F#" Value="MouseLeftButtonDown = 8" Usage="System.Windows.Automation.SynchronizedInputType.MouseLeftButtonDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseLeftButtonUp" />
       <MemberSignature Language="VB.NET" Value="MouseLeftButtonUp" />
       <MemberSignature Language="C++ CLI" Value="MouseLeftButtonUp" />
+      <MemberSignature Language="F#" Value="MouseLeftButtonUp = 4" Usage="System.Windows.Automation.SynchronizedInputType.MouseLeftButtonUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseRightButtonDown" />
       <MemberSignature Language="VB.NET" Value="MouseRightButtonDown" />
       <MemberSignature Language="C++ CLI" Value="MouseRightButtonDown" />
+      <MemberSignature Language="F#" Value="MouseRightButtonDown = 32" Usage="System.Windows.Automation.SynchronizedInputType.MouseRightButtonDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseRightButtonUp" />
       <MemberSignature Language="VB.NET" Value="MouseRightButtonUp" />
       <MemberSignature Language="C++ CLI" Value="MouseRightButtonUp" />
+      <MemberSignature Language="F#" Value="MouseRightButtonUp = 16" Usage="System.Windows.Automation.SynchronizedInputType.MouseRightButtonUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

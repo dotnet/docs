@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.ServerCertificateSelectionCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ServerCertificateSelectionCallback(sender As Object, hostName As String) As X509Certificate " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Security::Cryptography::X509Certificates::X509Certificate ^ ServerCertificateSelectionCallback(System::Object ^ sender, System::String ^ hostName);" />
+  <TypeSignature Language="F#" Value="type ServerCertificateSelectionCallback = delegate of obj * string -&gt; X509Certificate" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.XmlDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDataProvider&#xA;Inherits DataSourceProvider&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDataProvider : System::Windows::Data::DataSourceProvider, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type XmlDataProvider = class&#xA;    inherit DataSourceProvider&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Data.XmlDataProvider.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.BeginQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BeginQuery ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BeginQuery();" />
+      <MemberSignature Language="F#" Value="abstract member BeginQuery : unit -&gt; unit&#xA;override this.BeginQuery : unit -&gt; unit" Usage="xmlDataProvider.BeginQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.Document" />
       <MemberSignature Language="VB.NET" Value="Public Property Document As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDocument ^ Document { System::Xml::XmlDocument ^ get(); void set(System::Xml::XmlDocument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Xml.XmlDocument with get, set" Usage="System.Windows.Data.XmlDataProvider.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.EndInit" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="xmlDataProvider.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAsynchronous As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsynchronous { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAsynchronous : bool with get, set" Usage="System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeSource" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSource();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSource : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeXmlSerializer" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeXmlSerializer () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeXmlSerializer();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeXmlSerializer : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeXmlSerializer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeXPath" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeXPath () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeXPath();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeXPath : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeXPath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Data.XmlDataProvider.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Data.XmlDataProvider.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -393,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XmlNamespaceManager" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlNamespaceManager As XmlNamespaceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamespaceManager ^ XmlNamespaceManager { System::Xml::XmlNamespaceManager ^ get(); void set(System::Xml::XmlNamespaceManager ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespaceManager : System.Xml.XmlNamespaceManager with get, set" Usage="System.Windows.Data.XmlDataProvider.XmlNamespaceManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -446,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XmlSerializer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlSerializer As IXmlSerializable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::IXmlSerializable ^ XmlSerializer { System::Xml::Serialization::IXmlSerializable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializer : System.Xml.Serialization.IXmlSerializable" Usage="System.Windows.Data.XmlDataProvider.XmlSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Windows.Data.XmlDataProvider.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

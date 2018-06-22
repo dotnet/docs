@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISignatureTypeProvider`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISignatureTypeProvider(Of TType)&#xA;Implements IConstructedTypeProvider(Of TType), IPrimitiveTypeProvider(Of TType), ISZArrayTypeProvider(Of TType), ITypeProvider(Of TType)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public interface class ISignatureTypeProvider : System::Reflection::Metadata::IConstructedTypeProvider&lt;TType&gt;, System::Reflection::Metadata::IPrimitiveTypeProvider&lt;TType&gt;, System::Reflection::Metadata::ISZArrayTypeProvider&lt;TType&gt;, System::Reflection::Metadata::ITypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="F#" Value="type ISignatureTypeProvider&lt;'ype&gt; = interface&#xA;    interface IPrimitiveTypeProvider&lt;'ype&gt;&#xA;    interface ITypeProvider&lt;'ype&gt;&#xA;    interface IConstructedTypeProvider&lt;'ype&gt;&#xA;    interface ISZArrayTypeProvider&lt;'ype&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`1.GetFunctionPointerType(System.Reflection.Metadata.MethodSignature{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFunctionPointerType (signature As MethodSignature(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetFunctionPointerType(System::Reflection::Metadata::MethodSignature&lt;TType&gt; signature);" />
+      <MemberSignature Language="F#" Value="abstract member GetFunctionPointerType : System.Reflection.Metadata.MethodSignature&lt;'ype&gt; -&gt; 'ype" Usage="iSignatureTypeProvider.GetFunctionPointerType signature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`1.GetGenericMethodParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericMethodParameter (index As Integer) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericMethodParameter(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericMethodParameter : int -&gt; 'ype" Usage="iSignatureTypeProvider.GetGenericMethodParameter index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`1.GetGenericTypeParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGenericTypeParameter (index As Integer) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetGenericTypeParameter(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericTypeParameter : int -&gt; 'ype" Usage="iSignatureTypeProvider.GetGenericTypeParameter index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`1.GetModifiedType(System.Reflection.Metadata.MetadataReader,System.Boolean,`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModifiedType (reader As MetadataReader, isRequired As Boolean, modifier As TType, unmodifiedType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetModifiedType(System::Reflection::Metadata::MetadataReader ^ reader, bool isRequired, TType modifier, TType unmodifiedType);" />
+      <MemberSignature Language="F#" Value="abstract member GetModifiedType : System.Reflection.Metadata.MetadataReader * bool * 'ype * 'ype -&gt; 'ype" Usage="iSignatureTypeProvider.GetModifiedType (reader, isRequired, modifier, unmodifiedType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`1.GetPinnedType(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPinnedType (elementType As TType) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TType GetPinnedType(TType elementType);" />
+      <MemberSignature Language="F#" Value="abstract member GetPinnedType : 'ype -&gt; 'ype" Usage="iSignatureTypeProvider.GetPinnedType elementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

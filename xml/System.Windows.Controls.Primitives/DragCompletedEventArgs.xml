@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DragCompletedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DragCompletedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DragCompletedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragCompletedEventArgs.#ctor(System.Double,System.Double,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (horizontalChange As Double, verticalChange As Double, canceled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DragCompletedEventArgs(double horizontalChange, double verticalChange, bool canceled);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Primitives.DragCompletedEventArgs : double * double * bool -&gt; System.Windows.Controls.Primitives.DragCompletedEventArgs" Usage="new System.Windows.Controls.Primitives.DragCompletedEventArgs (horizontalChange, verticalChange, canceled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragCompletedEventArgs.Canceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Canceled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Canceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Canceled : bool" Usage="System.Windows.Controls.Primitives.DragCompletedEventArgs.Canceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragCompletedEventArgs.HorizontalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalChange : double" Usage="System.Windows.Controls.Primitives.DragCompletedEventArgs.HorizontalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragCompletedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dragCompletedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragCompletedEventArgs.VerticalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalChange : double" Usage="System.Windows.Controls.Primitives.DragCompletedEventArgs.VerticalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class HelpProvider&#xA;Inherits Component&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class HelpProvider : System::ComponentModel::Component, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type HelpProvider = class&#xA;    inherit Component&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="helpProvider.CanExtend target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpKeyword(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpKeyword (ctl As Control) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetHelpKeyword(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="abstract member GetHelpKeyword : System.Windows.Forms.Control -&gt; string&#xA;override this.GetHelpKeyword : System.Windows.Forms.Control -&gt; string" Usage="helpProvider.GetHelpKeyword ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpNavigator(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpNavigator (ctl As Control) As HelpNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::HelpNavigator GetHelpNavigator(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="abstract member GetHelpNavigator : System.Windows.Forms.Control -&gt; System.Windows.Forms.HelpNavigator&#xA;override this.GetHelpNavigator : System.Windows.Forms.Control -&gt; System.Windows.Forms.HelpNavigator" Usage="helpProvider.GetHelpNavigator ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetHelpString(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHelpString (ctl As Control) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetHelpString(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="abstract member GetHelpString : System.Windows.Forms.Control -&gt; string&#xA;override this.GetHelpString : System.Windows.Forms.Control -&gt; string" Usage="helpProvider.GetHelpString ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.GetShowHelp(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetShowHelp (ctl As Control) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetShowHelp(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="abstract member GetShowHelp : System.Windows.Forms.Control -&gt; bool&#xA;override this.GetShowHelp : System.Windows.Forms.Control -&gt; bool" Usage="helpProvider.GetShowHelp ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -296,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpProvider.HelpNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpNamespace : string with get, set" Usage="System.Windows.Forms.HelpProvider.HelpNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -343,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.ResetShowHelp(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetShowHelp (ctl As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetShowHelp(System::Windows::Forms::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="abstract member ResetShowHelp : System.Windows.Forms.Control -&gt; unit&#xA;override this.ResetShowHelp : System.Windows.Forms.Control -&gt; unit" Usage="helpProvider.ResetShowHelp ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpKeyword(System.Windows.Forms.Control,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpKeyword (ctl As Control, keyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpKeyword(System::Windows::Forms::Control ^ ctl, System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="abstract member SetHelpKeyword : System.Windows.Forms.Control * string -&gt; unit&#xA;override this.SetHelpKeyword : System.Windows.Forms.Control * string -&gt; unit" Usage="helpProvider.SetHelpKeyword (ctl, keyword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpNavigator(System.Windows.Forms.Control,System.Windows.Forms.HelpNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpNavigator (ctl As Control, navigator As HelpNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpNavigator(System::Windows::Forms::Control ^ ctl, System::Windows::Forms::HelpNavigator navigator);" />
+      <MemberSignature Language="F#" Value="abstract member SetHelpNavigator : System.Windows.Forms.Control * System.Windows.Forms.HelpNavigator -&gt; unit&#xA;override this.SetHelpNavigator : System.Windows.Forms.Control * System.Windows.Forms.HelpNavigator -&gt; unit" Usage="helpProvider.SetHelpNavigator (ctl, navigator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -454,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetHelpString(System.Windows.Forms.Control,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHelpString (ctl As Control, helpString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHelpString(System::Windows::Forms::Control ^ ctl, System::String ^ helpString);" />
+      <MemberSignature Language="F#" Value="abstract member SetHelpString : System.Windows.Forms.Control * string -&gt; unit&#xA;override this.SetHelpString : System.Windows.Forms.Control * string -&gt; unit" Usage="helpProvider.SetHelpString (ctl, helpString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -500,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.SetShowHelp(System.Windows.Forms.Control,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetShowHelp (ctl As Control, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetShowHelp(System::Windows::Forms::Control ^ ctl, bool value);" />
+      <MemberSignature Language="F#" Value="abstract member SetShowHelp : System.Windows.Forms.Control * bool -&gt; unit&#xA;override this.SetShowHelp : System.Windows.Forms.Control * bool -&gt; unit" Usage="helpProvider.SetShowHelp (ctl, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -547,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpProvider.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.HelpProvider.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -581,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpProvider.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="helpProvider.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

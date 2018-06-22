@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.HttpEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpEncoder" />
+  <TypeSignature Language="F#" Value="type HttpEncoder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Current As HttpEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Util::HttpEncoder ^ Current { System::Web::Util::HttpEncoder ^ get(); void set(System::Web::Util::HttpEncoder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Web.Util.HttpEncoder with get, set" Usage="System.Web.Util.HttpEncoder.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As HttpEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Util::HttpEncoder ^ Default { System::Web::Util::HttpEncoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Web.Util.HttpEncoder" Usage="System.Web.Util.HttpEncoder.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HeaderNameValueEncode(System.String,System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HeaderNameValueEncode (headerName As String, headerValue As String, ByRef encodedHeaderName As String, ByRef encodedHeaderValue As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HeaderNameValueEncode(System::String ^ headerName, System::String ^ headerValue, [Runtime::InteropServices::Out] System::String ^ % encodedHeaderName, [Runtime::InteropServices::Out] System::String ^ % encodedHeaderValue);" />
+      <MemberSignature Language="F#" Value="abstract member HeaderNameValueEncode : string * string *  *  -&gt; unit&#xA;override this.HeaderNameValueEncode : string * string *  *  -&gt; unit" Usage="httpEncoder.HeaderNameValueEncode (headerName, headerValue, encodedHeaderName, encodedHeaderValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlAttributeEncode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlAttributeEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="abstract member HtmlAttributeEncode : string * System.IO.TextWriter -&gt; unit&#xA;override this.HtmlAttributeEncode : string * System.IO.TextWriter -&gt; unit" Usage="httpEncoder.HtmlAttributeEncode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlDecode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlDecode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlDecode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="abstract member HtmlDecode : string * System.IO.TextWriter -&gt; unit&#xA;override this.HtmlDecode : string * System.IO.TextWriter -&gt; unit" Usage="httpEncoder.HtmlDecode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub HtmlEncode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void HtmlEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="abstract member HtmlEncode : string * System.IO.TextWriter -&gt; unit&#xA;override this.HtmlEncode : string * System.IO.TextWriter -&gt; unit" Usage="httpEncoder.HtmlEncode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.JavaScriptStringEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function JavaScriptStringEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ JavaScriptStringEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member JavaScriptStringEncode : string -&gt; string&#xA;override this.JavaScriptStringEncode : string -&gt; string" Usage="httpEncoder.JavaScriptStringEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function UrlEncode (bytes As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ UrlEncode(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
+      <MemberSignature Language="F#" Value="abstract member UrlEncode : byte[] * int * int -&gt; byte[]&#xA;override this.UrlEncode : byte[] * int * int -&gt; byte[]" Usage="httpEncoder.UrlEncode (bytes, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -442,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlPathEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function UrlPathEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ UrlPathEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member UrlPathEncode : string -&gt; string&#xA;override this.UrlPathEncode : string -&gt; string" Usage="httpEncoder.UrlPathEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

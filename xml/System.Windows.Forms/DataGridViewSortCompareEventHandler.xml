@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSortCompareEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewSortCompareEventHandler(sender As Object, e As DataGridViewSortCompareEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewSortCompareEventHandler(System::Object ^ sender, DataGridViewSortCompareEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewSortCompareEventHandler = delegate of obj * DataGridViewSortCompareEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

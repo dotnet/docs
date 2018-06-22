@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeReader" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlNodeReader&#xA;Inherits XmlReader&#xA;Implements IXmlNamespaceResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlNodeReader : System::Xml::XmlReader, System::Xml::IXmlNamespaceResolver" />
+  <TypeSignature Language="F#" Value="type XmlNodeReader = class&#xA;    inherit XmlReader&#xA;    interface IXmlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.#ctor(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As XmlNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNodeReader(System::Xml::XmlNode ^ node);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlNodeReader : System.Xml.XmlNode -&gt; System.Xml.XmlNodeReader" Usage="new System.Xml.XmlNodeReader node" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.AttributeCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AttributeCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int AttributeCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeCount : int" Usage="System.Xml.XmlNodeReader.AttributeCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.BaseURI" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BaseURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlNodeReader.BaseURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.CanReadBinaryContent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanReadBinaryContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReadBinaryContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanReadBinaryContent : bool" Usage="System.Xml.XmlNodeReader.CanReadBinaryContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -257,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.CanResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanResolveEntity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanResolveEntity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanResolveEntity : bool" Usage="System.Xml.XmlNodeReader.CanResolveEntity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="xmlNodeReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -351,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Xml.XmlNodeReader.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -390,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.EOF" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EOF As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EOF { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EOF : bool" Usage="System.Xml.XmlNodeReader.EOF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -440,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.GetAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (attributeIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(int attributeIndex);" />
+      <MemberSignature Language="F#" Value="override this.GetAttribute : int -&gt; string" Usage="xmlNodeReader.GetAttribute attributeIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -486,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetAttribute : string -&gt; string" Usage="xmlNodeReader.GetAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -542,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.GetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (name As String, namespaceURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(System::String ^ name, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="override this.GetAttribute : string * string -&gt; string" Usage="xmlNodeReader.GetAttribute (name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -609,6 +621,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.HasAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasAttributes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasAttributes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAttributes : bool" Usage="System.Xml.XmlNodeReader.HasAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -658,6 +671,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="System.Xml.XmlNodeReader.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -721,6 +735,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Xml.XmlNodeReader.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -763,6 +778,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.IsEmptyElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEmptyElement As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmptyElement { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmptyElement : bool" Usage="System.Xml.XmlNodeReader.IsEmptyElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -820,6 +836,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlNodeReader.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -870,6 +887,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ LookupNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="override this.LookupNamespace : string -&gt; string" Usage="xmlNodeReader.LookupNamespace prefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)</InterfaceMember>
@@ -936,6 +954,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MoveToAttribute (attributeIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MoveToAttribute(int attributeIndex);" />
+      <MemberSignature Language="F#" Value="override this.MoveToAttribute : int -&gt; unit" Usage="xmlNodeReader.MoveToAttribute attributeIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -988,6 +1007,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToAttribute (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.MoveToAttribute : string -&gt; bool" Usage="xmlNodeReader.MoveToAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1034,6 +1054,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToAttribute (name As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToAttribute(System::String ^ name, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="override this.MoveToAttribute : string * string -&gt; bool" Usage="xmlNodeReader.MoveToAttribute (name, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1082,6 +1103,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToElement () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToElement();" />
+      <MemberSignature Language="F#" Value="override this.MoveToElement : unit -&gt; bool" Usage="xmlNodeReader.MoveToElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1134,6 +1156,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToFirstAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToFirstAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToFirstAttribute();" />
+      <MemberSignature Language="F#" Value="override this.MoveToFirstAttribute : unit -&gt; bool" Usage="xmlNodeReader.MoveToFirstAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1184,6 +1207,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.MoveToNextAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToNextAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToNextAttribute();" />
+      <MemberSignature Language="F#" Value="override this.MoveToNextAttribute : unit -&gt; bool" Usage="xmlNodeReader.MoveToNextAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1236,6 +1260,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlNodeReader.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1308,6 +1333,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.NamespaceURI" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NamespaceURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceURI : string" Usage="System.Xml.XmlNodeReader.NamespaceURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1358,6 +1384,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlNodeReader.NameTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1400,6 +1427,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlNodeReader.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1452,6 +1480,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Prefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.Xml.XmlNodeReader.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1500,6 +1529,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="xmlNodeReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1556,6 +1586,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadAttributeValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAttributeValue () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ReadAttributeValue();" />
+      <MemberSignature Language="F#" Value="override this.ReadAttributeValue : unit -&gt; bool" Usage="xmlNodeReader.ReadAttributeValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1612,6 +1643,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlNodeReader.ReadContentAsBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1678,6 +1710,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlNodeReader.ReadContentAsBinHex (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1744,6 +1777,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadElementContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadElementContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadElementContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlNodeReader.ReadElementContentAsBase64 (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1813,6 +1847,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadElementContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadElementContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadElementContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlNodeReader.ReadElementContentAsBinHex (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1882,6 +1917,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.ReadState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReadState As ReadState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::ReadState ReadState { System::Xml::ReadState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadState : System.Xml.ReadState" Usage="System.Xml.XmlNodeReader.ReadState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1921,6 +1957,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ReadString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadString();" />
+      <MemberSignature Language="F#" Value="override this.ReadString : unit -&gt; string" Usage="xmlNodeReader.ReadString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1976,6 +2013,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.ResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResolveEntity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResolveEntity();" />
+      <MemberSignature Language="F#" Value="override this.ResolveEntity : unit -&gt; unit" Usage="xmlNodeReader.ResolveEntity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2030,6 +2068,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.SchemaInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaInfo As IXmlSchemaInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::IXmlSchemaInfo ^ SchemaInfo { System::Xml::Schema::IXmlSchemaInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaInfo : System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.XmlNodeReader.SchemaInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2073,6 +2112,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeReader.Skip" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Skip ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Skip();" />
+      <MemberSignature Language="F#" Value="override this.Skip : unit -&gt; unit" Usage="xmlNodeReader.Skip " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2276,6 +2316,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XmlNodeReader.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2352,6 +2393,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlLang As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.XmlNodeReader.XmlLang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2403,6 +2445,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeReader.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlSpace As XmlSpace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.XmlNodeReader.XmlSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

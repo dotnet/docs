@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Line" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Line&#xA;Inherits Shape" />
   <TypeSignature Language="C++ CLI" Value="public ref class Line sealed : System::Windows::Shapes::Shape" />
+  <TypeSignature Language="F#" Value="type Line = class&#xA;    inherit Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.DefiningGeometry" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefiningGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Line.DefiningGeometry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.X1" />
       <MemberSignature Language="VB.NET" Value="Public Property X1 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X1 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X1 : double with get, set" Usage="System.Windows.Shapes.Line.X1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.X1Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly X1Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ X1Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable X1Property : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Line.X1Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.X2" />
       <MemberSignature Language="VB.NET" Value="Public Property X2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X2 : double with get, set" Usage="System.Windows.Shapes.Line.X2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.X2Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly X2Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ X2Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable X2Property : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Line.X2Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.Y1" />
       <MemberSignature Language="VB.NET" Value="Public Property Y1 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y1 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y1 : double with get, set" Usage="System.Windows.Shapes.Line.Y1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.Y1Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Y1Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Y1Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Y1Property : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Line.Y1Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.Y2" />
       <MemberSignature Language="VB.NET" Value="Public Property Y2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y2 : double with get, set" Usage="System.Windows.Shapes.Line.Y2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.Y2Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Y2Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Y2Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Y2Property : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Line.Y2Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

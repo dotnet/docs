@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityTemplateFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivityTemplateFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IActivityTemplateFactory" />
+  <TypeSignature Language="F#" Value="type IActivityTemplateFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@ public sealed class MyDelayActivity : IActivityTemplateFactory
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityTemplateFactory.Create(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Activity ^ Create(System::Windows::DependencyObject ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Create : System.Windows.DependencyObject -&gt; System.Activities.Activity" Usage="iActivityTemplateFactory.Create target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

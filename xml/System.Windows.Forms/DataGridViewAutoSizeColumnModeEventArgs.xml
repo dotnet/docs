@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewAutoSizeColumnModeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewAutoSizeColumnModeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeColumnModeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn, valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode previousMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.#ctor(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewAutoSizeColumnMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewAutoSizeColumnModeEventArgs(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn, System::Windows::Forms::DataGridViewAutoSizeColumnMode previousMode);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs : System.Windows.Forms.DataGridViewColumn * System.Windows.Forms.DataGridViewAutoSizeColumnMode -&gt; System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs" Usage="new System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs (dataGridViewColumn, previousMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumn ^ Column { System::Windows::Forms::DataGridViewColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Forms.DataGridViewColumn" Usage="System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.PreviousMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousMode As DataGridViewAutoSizeColumnMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAutoSizeColumnMode PreviousMode { System::Windows::Forms::DataGridViewAutoSizeColumnMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousMode : System.Windows.Forms.DataGridViewAutoSizeColumnMode" Usage="System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs.PreviousMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

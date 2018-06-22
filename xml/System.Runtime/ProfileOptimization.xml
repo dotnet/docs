@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.ProfileOptimization" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfileOptimization" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileOptimization abstract sealed" />
+  <TypeSignature Language="F#" Value="type ProfileOptimization = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.ProfileOptimization.SetProfileRoot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetProfileRoot (directoryPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetProfileRoot(System::String ^ directoryPath);" />
+      <MemberSignature Language="F#" Value="static member SetProfileRoot : string -&gt; unit" Usage="System.Runtime.ProfileOptimization.SetProfileRoot directoryPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.ProfileOptimization.StartProfile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub StartProfile (profile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartProfile(System::String ^ profile);" />
+      <MemberSignature Language="F#" Value="static member StartProfile : string -&gt; unit" Usage="System.Runtime.ProfileOptimization.StartProfile profile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

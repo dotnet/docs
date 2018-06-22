@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509SubjectKeyIdentifierExtension&#xA;Inherits X509Extension" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509SubjectKeyIdentifierExtension sealed : System::Security::Cryptography::X509Certificates::X509Extension" />
+  <TypeSignature Language="F#" Value="type X509SubjectKeyIdentifierExtension = class&#xA;    inherit X509Extension" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectKeyIdentifier As Byte(), critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierExtension(cli::array &lt;System::Byte&gt; ^ subjectKeyIdentifier, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension : byte[] * bool -&gt; System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" Usage="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension (subjectKeyIdentifier, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedSubjectKeyIdentifier As AsnEncodedData, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierExtension(System::Security::Cryptography::AsnEncodedData ^ encodedSubjectKeyIdentifier, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension : System.Security.Cryptography.AsnEncodedData * bool -&gt; System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" Usage="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension (encodedSubjectKeyIdentifier, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As PublicKey, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierExtension(System::Security::Cryptography::X509Certificates::PublicKey ^ key, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension : System.Security.Cryptography.X509Certificates.PublicKey * bool -&gt; System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" Usage="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension (key, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subjectKeyIdentifier As String, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierExtension(System::String ^ subjectKeyIdentifier, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension : string * bool -&gt; System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" Usage="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension (subjectKeyIdentifier, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As PublicKey, algorithm As X509SubjectKeyIdentifierHashAlgorithm, critical As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SubjectKeyIdentifierExtension(System::Security::Cryptography::X509Certificates::PublicKey ^ key, System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm algorithm, bool critical);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension : System.Security.Cryptography.X509Certificates.PublicKey * System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm * bool -&gt; System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" Usage="new System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension (key, algorithm, critical)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -292,6 +298,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="x509SubjectKeyIdentifierExtension.CopyFrom asnEncodedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -327,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.SubjectKeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectKeyIdentifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubjectKeyIdentifier { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectKeyIdentifier : string" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.SubjectKeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

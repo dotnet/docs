@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawTreeNodeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawTreeNodeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawTreeNodeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DrawTreeNodeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Windows.Forms.TreeNode node, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.TreeNodeStates state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawTreeNodeEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawTreeNodeEventArgs(System::Drawing::Graphics ^ graphics, System::Windows::Forms::TreeNode ^ node, System::Drawing::Rectangle bounds, System::Windows::Forms::TreeNodeStates state);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DrawTreeNodeEventArgs : System.Drawing.Graphics * System.Windows.Forms.TreeNode * System.Drawing.Rectangle * System.Windows.Forms.TreeNodeStates -&gt; System.Windows.Forms.DrawTreeNodeEventArgs" Usage="new System.Windows.Forms.DrawTreeNodeEventArgs (graphics, node, bounds, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DrawTreeNodeEventArgs.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property DrawDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DrawDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DrawDefault : bool with get, set" Usage="System.Windows.Forms.DrawTreeNodeEventArgs.DrawDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.DrawTreeNodeEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ Node { System::Windows::Forms::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.DrawTreeNodeEventArgs.Node" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawTreeNodeEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As TreeNodeStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNodeStates State { System::Windows::Forms::TreeNodeStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.TreeNodeStates" Usage="System.Windows.Forms.DrawTreeNodeEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

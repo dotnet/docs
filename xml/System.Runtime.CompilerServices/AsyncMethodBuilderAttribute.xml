@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncMethodBuilderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncMethodBuilderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AsyncMethodBuilderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builderType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncMethodBuilderAttribute(Type ^ builderType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.AsyncMethodBuilderAttribute : Type -&gt; System.Runtime.CompilerServices.AsyncMethodBuilderAttribute" Usage="new System.Runtime.CompilerServices.AsyncMethodBuilderAttribute builderType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute.BuilderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuilderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ BuilderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuilderType : Type" Usage="System.Runtime.CompilerServices.AsyncMethodBuilderAttribute.BuilderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>

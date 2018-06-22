@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IReplySessionChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReplySessionChannel&#xA;Implements IReplyChannel, ISessionChannel(Of IInputSession)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IReplySessionChannel : System::ServiceModel::Channels::IReplyChannel, System::ServiceModel::Channels::ISessionChannel&lt;System::ServiceModel::Channels::IInputSession ^&gt;" />
+  <TypeSignature Language="F#" Value="type IReplySessionChannel = interface&#xA;    interface ISessionChannel&lt;IInputSession&gt;&#xA;    interface IReplyChannel&#xA;    interface IChannel&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

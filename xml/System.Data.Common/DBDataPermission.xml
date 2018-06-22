@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DBDataPermission" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DBDataPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class DBDataPermission abstract : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type DBDataPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermission)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (permission As DBDataPermission)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermission ^ permission);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermission -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permission" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermissionAttribute)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (permissionAttribute As DBDataPermissionAttribute)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermissionAttribute ^ permissionAttribute);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermissionAttribute -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permissionAttribute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Security.Permissions.PermissionState -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission (state, allowBlankPassword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (connectionString As String, restrictions As String, behavior As KeyRestrictionBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ connectionString, System::String ^ restrictions, System::Data::KeyRestrictionBehavior behavior);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * System.Data.KeyRestrictionBehavior -&gt; unit&#xA;override this.Add : string * string * System.Data.KeyRestrictionBehavior -&gt; unit" Usage="dBDataPermission.Add (connectionString, restrictions, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermission.AllowBlankPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBlankPassword { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBlankPassword : bool with get, set" Usage="System.Data.Common.DBDataPermission.AllowBlankPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Clear" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dBDataPermission.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="dBDataPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInstance () As DBDataPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DBDataPermission ^ CreateInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : unit -&gt; System.Data.Common.DBDataPermission&#xA;override this.CreateInstance : unit -&gt; System.Data.Common.DBDataPermission" Usage="dBDataPermission.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -346,6 +356,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dBDataPermission.FromXml securityElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -381,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -418,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="dBDataPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -456,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="dBDataPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -483,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="dBDataPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -516,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

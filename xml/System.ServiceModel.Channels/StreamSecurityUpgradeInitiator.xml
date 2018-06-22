@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamSecurityUpgradeInitiator&#xA;Inherits StreamUpgradeInitiator" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamSecurityUpgradeInitiator abstract : System::ServiceModel::Channels::StreamUpgradeInitiator" />
+  <TypeSignature Language="F#" Value="type StreamSecurityUpgradeInitiator = class&#xA;    inherit StreamUpgradeInitiator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.GetRemoteSecurity" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemoteSecurity () As SecurityMessageProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Security::SecurityMessageProperty ^ GetRemoteSecurity();" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteSecurity : unit -&gt; System.ServiceModel.Security.SecurityMessageProperty" Usage="streamSecurityUpgradeInitiator.GetRemoteSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

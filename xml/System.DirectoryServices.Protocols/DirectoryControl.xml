@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryControl" />
+  <TypeSignature Language="F#" Value="type DirectoryControl = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryControl.#ctor(System.String,System.Byte[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, value As Byte(), isCritical As Boolean, serverSide As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryControl(System::String ^ type, cli::array &lt;System::Byte&gt; ^ value, bool isCritical, bool serverSide);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryControl : string * byte[] * bool * bool -&gt; System.DirectoryServices.Protocols.DirectoryControl" Usage="new System.DirectoryServices.Protocols.DirectoryControl (type, value, isCritical, serverSide)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryControl.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : unit -&gt; byte[]&#xA;override this.GetValue : unit -&gt; byte[]" Usage="directoryControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.IsCritical" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCritical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCritical { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCritical : bool with get, set" Usage="System.DirectoryServices.Protocols.DirectoryControl.IsCritical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.ServerSide" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerSide As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerSide { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerSide : bool with get, set" Usage="System.DirectoryServices.Protocols.DirectoryControl.ServerSide" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.DirectoryServices.Protocols.DirectoryControl.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

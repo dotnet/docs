@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeXmlBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeXmlBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeXmlBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type MimeXmlBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeXmlBinding.Part" />
       <MemberSignature Language="VB.NET" Value="Public Property Part As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Part { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Part : string with get, set" Usage="System.Web.Services.Description.MimeXmlBinding.Part" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

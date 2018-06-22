@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityCodeGeneratorAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityCodeGeneratorAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ActivityCodeGeneratorAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (codeGeneratorTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCodeGeneratorAttribute(System::String ^ codeGeneratorTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute : string -&gt; System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" Usage="new System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute codeGeneratorTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (codeGeneratorType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCodeGeneratorAttribute(Type ^ codeGeneratorType);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute : Type -&gt; System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" Usage="new System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute codeGeneratorType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeGeneratorTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeGeneratorTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeGeneratorTypeName : string" Usage="System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

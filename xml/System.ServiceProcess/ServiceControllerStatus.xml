@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum ServiceControllerStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class ServiceControllerStatus" />
+  <TypeSignature Language="F#" Value="type ServiceControllerStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.ContinuePending" />
       <MemberSignature Language="VB.NET" Value="ContinuePending" />
       <MemberSignature Language="C++ CLI" Value="ContinuePending" />
+      <MemberSignature Language="F#" Value="ContinuePending = 5" Usage="System.ServiceProcess.ServiceControllerStatus.ContinuePending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Paused" />
       <MemberSignature Language="VB.NET" Value="Paused" />
       <MemberSignature Language="C++ CLI" Value="Paused" />
+      <MemberSignature Language="F#" Value="Paused = 7" Usage="System.ServiceProcess.ServiceControllerStatus.Paused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.PausePending" />
       <MemberSignature Language="VB.NET" Value="PausePending" />
       <MemberSignature Language="C++ CLI" Value="PausePending" />
+      <MemberSignature Language="F#" Value="PausePending = 6" Usage="System.ServiceProcess.ServiceControllerStatus.PausePending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Running" />
       <MemberSignature Language="VB.NET" Value="Running" />
       <MemberSignature Language="C++ CLI" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 4" Usage="System.ServiceProcess.ServiceControllerStatus.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.StartPending" />
       <MemberSignature Language="VB.NET" Value="StartPending" />
       <MemberSignature Language="C++ CLI" Value="StartPending" />
+      <MemberSignature Language="F#" Value="StartPending = 2" Usage="System.ServiceProcess.ServiceControllerStatus.StartPending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Stopped" />
       <MemberSignature Language="VB.NET" Value="Stopped" />
       <MemberSignature Language="C++ CLI" Value="Stopped" />
+      <MemberSignature Language="F#" Value="Stopped = 1" Usage="System.ServiceProcess.ServiceControllerStatus.Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.StopPending" />
       <MemberSignature Language="VB.NET" Value="StopPending" />
       <MemberSignature Language="C++ CLI" Value="StopPending" />
+      <MemberSignature Language="F#" Value="StopPending = 3" Usage="System.ServiceProcess.ServiceControllerStatus.StopPending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>

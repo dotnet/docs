@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StringObject" />
   <TypeSignature Language="VB.NET" Value="Public Class StringObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type StringObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.#ctor(Microsoft.JScript.ScriptObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (prototype As ScriptObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StringObject(Microsoft::JScript::ScriptObject ^ prototype, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.StringObject : Microsoft.JScript.ScriptObject * string -&gt; Microsoft.JScript.StringObject" Usage="new Microsoft.JScript.StringObject (prototype, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (ob As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ ob);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="stringObject.Equals ob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="stringObject.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="stringObject.GetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.StringObject.length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.length : int" Usage="Microsoft.JScript.StringObject.length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

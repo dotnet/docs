@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyAssociatedContentFileAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyAssociatedContentFileAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyAssociatedContentFileAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Resources.AssemblyAssociatedContentFileAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relativeContentFilePath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyAssociatedContentFileAttribute(System::String ^ relativeContentFilePath);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Resources.AssemblyAssociatedContentFileAttribute : string -&gt; System.Windows.Resources.AssemblyAssociatedContentFileAttribute" Usage="new System.Windows.Resources.AssemblyAssociatedContentFileAttribute relativeContentFilePath" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Resources.AssemblyAssociatedContentFileAttribute.RelativeContentFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeContentFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeContentFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeContentFilePath : string" Usage="System.Windows.Resources.AssemblyAssociatedContentFileAttribute.RelativeContentFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

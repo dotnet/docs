@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContextDataSourceContextData" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextDataSourceContextData" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextDataSourceContextData" />
+  <TypeSignature Language="F#" Value="type ContextDataSourceContextData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ContextDataSourceContextData.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextDataSourceContextData(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ContextDataSourceContextData : obj -&gt; System.Web.UI.WebControls.ContextDataSourceContextData" Usage="new System.Web.UI.WebControls.ContextDataSourceContextData context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceContextData.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : obj with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceContextData.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSourceContextData.EntitySet" />
       <MemberSignature Language="VB.NET" Value="Public Property EntitySet As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ EntitySet { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySet : obj with get, set" Usage="System.Web.UI.WebControls.ContextDataSourceContextData.EntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

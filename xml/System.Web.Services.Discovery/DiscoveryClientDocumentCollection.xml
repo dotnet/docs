@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientDocumentCollection&#xA;Inherits DictionaryBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientDocumentCollection sealed : System::Collections::DictionaryBase" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientDocumentCollection = class&#xA;    inherit DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (url As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ url, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * obj -&gt; unit" Usage="discoveryClientDocumentCollection.Add (url, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (url As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="discoveryClientDocumentCollection.Contains url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(url As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ url); void set(System::String ^ url, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="discoveryClientDocumentCollection.Remove url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

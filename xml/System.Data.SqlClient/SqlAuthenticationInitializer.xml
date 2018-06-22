@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlAuthenticationInitializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SqlAuthenticationInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlAuthenticationInitializer abstract" />
+  <TypeSignature Language="F#" Value="type SqlAuthenticationInitializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlAuthenticationInitializer.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit" Usage="sqlAuthenticationInitializer.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

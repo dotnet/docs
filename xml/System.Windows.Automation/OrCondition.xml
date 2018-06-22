@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.OrCondition" />
   <TypeSignature Language="VB.NET" Value="Public Class OrCondition&#xA;Inherits Condition" />
   <TypeSignature Language="C++ CLI" Value="public ref class OrCondition : System::Windows::Automation::Condition" />
+  <TypeSignature Language="F#" Value="type OrCondition = class&#xA;    inherit Condition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.OrCondition.#ctor(System.Windows.Automation.Condition[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray conditions As Condition())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OrCondition(... cli::array &lt;System::Windows::Automation::Condition ^&gt; ^ conditions);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.OrCondition : System.Windows.Automation.Condition[] -&gt; System.Windows.Automation.OrCondition" Usage="new System.Windows.Automation.OrCondition conditions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.OrCondition.GetConditions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConditions () As Condition()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Condition ^&gt; ^ GetConditions();" />
+      <MemberSignature Language="F#" Value="member this.GetConditions : unit -&gt; System.Windows.Automation.Condition[]" Usage="orCondition.GetConditions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

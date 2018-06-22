@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextView" />
   <TypeSignature Language="VB.NET" Value="Public Class TextView&#xA;Inherits PagedControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextView : System::Web::UI::MobileControls::PagedControl" />
+  <TypeSignature Language="F#" Value="type TextView = class&#xA;    inherit PagedControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.FirstVisibleElementIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstVisibleElementIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstVisibleElementIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstVisibleElementIndex : int" Usage="System.Web.UI.MobileControls.TextView.FirstVisibleElementIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -126,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.FirstVisibleElementOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstVisibleElementOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstVisibleElementOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstVisibleElementOffset : int" Usage="System.Web.UI.MobileControls.TextView.FirstVisibleElementOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.TextView.GetElement(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetElement (index As Integer) As TextViewElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::MobileControls::TextViewElement ^ GetElement(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetElement : int -&gt; System.Web.UI.MobileControls.TextViewElement" Usage="textView.GetElement index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.InternalItemCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property InternalItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int InternalItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalItemCount : int" Usage="System.Web.UI.MobileControls.TextView.InternalItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.ItemCount" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int with get, set" Usage="System.Web.UI.MobileControls.TextView.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.ItemsPerPage" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsPerPage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemsPerPage { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsPerPage : int with get, set" Usage="System.Web.UI.MobileControls.TextView.ItemsPerPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.ItemWeight" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ItemWeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int ItemWeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemWeight : int" Usage="System.Web.UI.MobileControls.TextView.ItemWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -316,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.LastVisibleElementIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastVisibleElementIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastVisibleElementIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastVisibleElementIndex : int" Usage="System.Web.UI.MobileControls.TextView.LastVisibleElementIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.LastVisibleElementOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastVisibleElementOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastVisibleElementOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastVisibleElementOffset : int" Usage="System.Web.UI.MobileControls.TextView.LastVisibleElementOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -386,6 +396,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.TextView.LoadItems" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoadItems As LoadItemsEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::MobileControls::LoadItemsEventHandler ^ LoadItems;" />
+      <MemberSignature Language="F#" Value="member this.LoadItems : System.Web.UI.MobileControls.LoadItemsEventHandler " Usage="member this.LoadItems : System.Web.UI.MobileControls.LoadItemsEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -428,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.TextView.OnRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="textView.OnRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -452,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.TextView.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaginateRecursive (pager As ControlPager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaginateRecursive(System::Web::UI::MobileControls::ControlPager ^ pager);" />
+      <MemberSignature Language="F#" Value="override this.PaginateRecursive : System.Web.UI.MobileControls.ControlPager -&gt; unit" Usage="textView.PaginateRecursive pager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -476,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextView.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.MobileControls.TextView.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

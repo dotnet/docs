@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelBinderProviders" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderProviders abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModelBinderProviders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderProviders.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As ModelBinderProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ModelBinding::ModelBinderProviderCollection ^ Providers { System::Web::ModelBinding::ModelBinderProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.ModelBinding.ModelBinderProviderCollection" Usage="System.Web.ModelBinding.ModelBinderProviders.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceSettingsResponseInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceSettingsResponseInfo" />
+  <TypeSignature Language="F#" Value="type ServiceSettingsResponseInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (control As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceSettingsResponseInfo(bool control);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo : bool -&gt; System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo" Usage="new System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo control" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.ControlMeshShape" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlMeshShape As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlMeshShape { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlMeshShape : bool with get, set" Usage="System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.ControlMeshShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
+      <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="serviceSettingsResponseInfo.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

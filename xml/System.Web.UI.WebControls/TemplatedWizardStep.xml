@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplatedWizardStep" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplatedWizardStep&#xA;Inherits WizardStepBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplatedWizardStep : System::Web::UI::WebControls::WizardStepBase" />
+  <TypeSignature Language="F#" Value="type TemplatedWizardStep = class&#xA;    inherit WizardStepBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ContentTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplateContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentTemplateContainer As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ContentTemplateContainer { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplateContainer : System.Web.UI.Control" Usage="System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplateContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CustomNavigationTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ CustomNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomNavigationTemplateContainer As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ CustomNavigationTemplateContainer { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomNavigationTemplateContainer : System.Web.UI.Control" Usage="System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.SkinID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SkinID : string with get, set" Usage="System.Web.UI.WebControls.TemplatedWizardStep.SkinID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

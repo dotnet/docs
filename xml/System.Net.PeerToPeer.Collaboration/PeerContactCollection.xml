@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerContactCollection&#xA;Inherits Collection(Of PeerContact)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerContactCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::Collaboration::PeerContact ^&gt;" />
+  <TypeSignature Language="F#" Value="type PeerContactCollection = class&#xA;    inherit Collection&lt;PeerContact&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerContact)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerContact)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::Collaboration::PeerContact ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.Collaboration.PeerContact -&gt; unit" Usage="peerContactCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerContact)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerContact)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::Collaboration::PeerContact ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.Collaboration.PeerContact -&gt; unit" Usage="peerContactCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerContactCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsAuthorizationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsAuthorizationManager&#xA;Implements ICustomIdentityConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthorizationManager : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type ClaimsAuthorizationManager = class&#xA;    interface ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -182,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess(System.Security.Claims.AuthorizationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckAccess (context As AuthorizationContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CheckAccess(System::Security::Claims::AuthorizationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool&#xA;override this.CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool" Usage="claimsAuthorizationManager.CheckAccess context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -260,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="claimsAuthorizationManager.LoadCustomConfiguration nodelist" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>

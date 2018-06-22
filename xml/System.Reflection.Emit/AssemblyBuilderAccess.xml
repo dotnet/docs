@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.AssemblyBuilderAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum AssemblyBuilderAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class AssemblyBuilderAccess" />
+  <TypeSignature Language="F#" Value="type AssemblyBuilderAccess = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.ReflectionOnly" />
       <MemberSignature Language="VB.NET" Value="ReflectionOnly" />
       <MemberSignature Language="C++ CLI" Value="ReflectionOnly" />
+      <MemberSignature Language="F#" Value="ReflectionOnly = 6" Usage="System.Reflection.Emit.AssemblyBuilderAccess.ReflectionOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.Run" />
       <MemberSignature Language="VB.NET" Value="Run" />
       <MemberSignature Language="C++ CLI" Value="Run" />
+      <MemberSignature Language="F#" Value="Run = 1" Usage="System.Reflection.Emit.AssemblyBuilderAccess.Run" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.RunAndCollect" />
       <MemberSignature Language="VB.NET" Value="RunAndCollect" />
       <MemberSignature Language="C++ CLI" Value="RunAndCollect" />
+      <MemberSignature Language="F#" Value="RunAndCollect = 9" Usage="System.Reflection.Emit.AssemblyBuilderAccess.RunAndCollect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave" />
       <MemberSignature Language="VB.NET" Value="RunAndSave" />
       <MemberSignature Language="C++ CLI" Value="RunAndSave" />
+      <MemberSignature Language="F#" Value="RunAndSave = 3" Usage="System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />
       <MemberSignature Language="VB.NET" Value="Save" />
       <MemberSignature Language="C++ CLI" Value="Save" />
+      <MemberSignature Language="F#" Value="Save = 2" Usage="System.Reflection.Emit.AssemblyBuilderAccess.Save" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

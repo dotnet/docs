@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.HitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public Class HitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class HitTestResult" />
+  <TypeSignature Language="F#" Value="type HitTestResult = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Axis" />
       <MemberSignature Language="VB.NET" Value="Public Property Axis As Axis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Axis ^ Axis { System::Windows::Forms::DataVisualization::Charting::Axis ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Axis ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Axis : System.Windows.Forms.DataVisualization.Charting.Axis with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.Axis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartArea As ChartArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartArea ^ ChartArea { System::Windows::Forms::DataVisualization::Charting::ChartArea ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartArea ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : System.Windows.Forms.DataVisualization.Charting.ChartArea with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.ChartElementType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartElementType As ChartElementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartElementType ChartElementType { System::Windows::Forms::DataVisualization::Charting::ChartElementType get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartElementType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartElementType : System.Windows.Forms.DataVisualization.Charting.ChartElementType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.ChartElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Object" />
       <MemberSignature Language="VB.NET" Value="Public Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.PointIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property PointIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PointIndex : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.PointIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.Series" />
       <MemberSignature Language="VB.NET" Value="Public Property Series As Series" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Series ^ Series { System::Windows::Forms::DataVisualization::Charting::Series ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Series ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Series : System.Windows.Forms.DataVisualization.Charting.Series with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.Series" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.HitTestResult.SubObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SubObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SubObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubObject : obj with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.HitTestResult.SubObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

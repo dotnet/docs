@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AudienceRestriction" />
   <TypeSignature Language="VB.NET" Value="Public Class AudienceRestriction" />
   <TypeSignature Language="C++ CLI" Value="public ref class AudienceRestriction" />
+  <TypeSignature Language="F#" Value="type AudienceRestriction = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (audienceMode As AudienceUriMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceRestriction(System::IdentityModel::Selectors::AudienceUriMode audienceMode);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AudienceRestriction : System.IdentityModel.Selectors.AudienceUriMode -&gt; System.IdentityModel.Tokens.AudienceRestriction" Usage="new System.IdentityModel.Tokens.AudienceRestriction audienceMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AudienceRestriction.AllowedAudienceUris" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedAudienceUris As Collection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ AllowedAudienceUris { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedAudienceUris : System.Collections.ObjectModel.Collection&lt;Uri&gt;" Usage="System.IdentityModel.Tokens.AudienceRestriction.AllowedAudienceUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AudienceRestriction.AudienceMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AudienceMode As AudienceUriMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::AudienceUriMode AudienceMode { System::IdentityModel::Selectors::AudienceUriMode get(); void set(System::IdentityModel::Selectors::AudienceUriMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AudienceMode : System.IdentityModel.Selectors.AudienceUriMode with get, set" Usage="System.IdentityModel.Tokens.AudienceRestriction.AudienceMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ExportProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExportProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExportProvider abstract" />
+  <TypeSignature Language="F#" Value="type ExportProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.ExportProvider.ExportsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ExportsChanged As EventHandler(Of ExportsChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::Composition::Hosting::ExportsChangeEventArgs ^&gt; ^ ExportsChanged;" />
+      <MemberSignature Language="F#" Value="member this.ExportsChanged : EventHandler&lt;System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs&gt; " Usage="member this.ExportsChanged : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Composition.Hosting.ExportProvider.ExportsChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ExportsChanging As EventHandler(Of ExportsChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::Composition::Hosting::ExportsChangeEventArgs ^&gt; ^ ExportsChanging;" />
+      <MemberSignature Language="F#" Value="member this.ExportsChanging : EventHandler&lt;System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs&gt; " Usage="member this.ExportsChanging : System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExport``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of T) () As Lazy(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; Lazy&lt;T&gt; ^ GetExport();" />
+      <MemberSignature Language="F#" Value="member this.GetExport : unit -&gt; Lazy&lt;'T&gt;" Usage="exportProvider.GetExport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExport``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of T) (contractName As String) As Lazy(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; Lazy&lt;T&gt; ^ GetExport(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : string -&gt; Lazy&lt;'T&gt;" Usage="exportProvider.GetExport contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExport``2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of T, TMetadataView) () As Lazy(Of T, TMetadataView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TMetadataView&gt;&#xA; Lazy&lt;T, TMetadataView&gt; ^ GetExport();" />
+      <MemberSignature Language="F#" Value="member this.GetExport : unit -&gt; Lazy&lt;'T, 'MetadataView&gt;" Usage="exportProvider.GetExport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExport``2(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of T, TMetadataView) (contractName As String) As Lazy(Of T, TMetadataView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TMetadataView&gt;&#xA; Lazy&lt;T, TMetadataView&gt; ^ GetExport(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : string -&gt; Lazy&lt;'T, 'MetadataView&gt;" Usage="exportProvider.GetExport contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValue``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValue(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetExportedValue();" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValue : unit -&gt; 'T" Usage="exportProvider.GetExportedValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValue``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValue(Of T) (contractName As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetExportedValue(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValue : string -&gt; 'T" Usage="exportProvider.GetExportedValue contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValueOrDefault``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValueOrDefault(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetExportedValueOrDefault();" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValueOrDefault : unit -&gt; 'T" Usage="exportProvider.GetExportedValueOrDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -420,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValueOrDefault``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValueOrDefault(Of T) (contractName As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetExportedValueOrDefault(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValueOrDefault : string -&gt; 'T" Usage="exportProvider.GetExportedValueOrDefault contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -474,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValues``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValues(Of T) () As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetExportedValues();" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValues : unit -&gt; seq&lt;'T&gt;" Usage="exportProvider.GetExportedValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -512,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValues``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExportedValues(Of T) (contractName As String) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetExportedValues(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExportedValues : string -&gt; seq&lt;'T&gt;" Usage="exportProvider.GetExportedValues contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -563,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports (definition As ImportDefinition) As IEnumerable(Of Export)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ GetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : System.ComponentModel.Composition.Primitives.ImportDefinition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.Export&gt;" Usage="exportProvider.GetExports definition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -595,6 +609,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt; GetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ GetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : System.ComponentModel.Composition.Primitives.ImportDefinition * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.Export&gt;" Usage="exportProvider.GetExports (definition, atomicComposition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -633,6 +648,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Lazy`2&lt;object, object&gt;&gt; GetExports(class System.Type type, class System.Type metadataViewType, string contractName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports(System.Type,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;Lazy&lt;System::Object ^, System::Object ^&gt; ^&gt; ^ GetExports(Type ^ type, Type ^ metadataViewType, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : Type * Type * string -&gt; seq&lt;Lazy&lt;obj, obj&gt;&gt;" Usage="exportProvider.GetExports (type, metadataViewType, contractName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -676,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of T) () As IEnumerable(Of Lazy(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::Generic::IEnumerable&lt;Lazy&lt;T&gt; ^&gt; ^ GetExports();" />
+      <MemberSignature Language="F#" Value="member this.GetExports : unit -&gt; seq&lt;Lazy&lt;'T&gt;&gt;" Usage="exportProvider.GetExports " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -712,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of T) (contractName As String) As IEnumerable(Of Lazy(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::Generic::IEnumerable&lt;Lazy&lt;T&gt; ^&gt; ^ GetExports(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : string -&gt; seq&lt;Lazy&lt;'T&gt;&gt;" Usage="exportProvider.GetExports contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -751,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports``2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of T, TMetadataView) () As IEnumerable(Of Lazy(Of T, TMetadataView))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TMetadataView&gt;&#xA; System::Collections::Generic::IEnumerable&lt;Lazy&lt;T, TMetadataView&gt; ^&gt; ^ GetExports();" />
+      <MemberSignature Language="F#" Value="member this.GetExports : unit -&gt; seq&lt;Lazy&lt;'T, 'MetadataView&gt;&gt;" Usage="exportProvider.GetExports " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -791,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports``2(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of T, TMetadataView) (contractName As String) As IEnumerable(Of Lazy(Of T, TMetadataView))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TMetadataView&gt;&#xA; System::Collections::Generic::IEnumerable&lt;Lazy&lt;T, TMetadataView&gt; ^&gt; ^ GetExports(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : string -&gt; seq&lt;Lazy&lt;'T, 'MetadataView&gt;&gt;" Usage="exportProvider.GetExports contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -833,6 +853,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt; GetExportsCore(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ GetExportsCore(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
+      <MemberSignature Language="F#" Value="abstract member GetExportsCore : System.ComponentModel.Composition.Primitives.ImportDefinition * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.Export&gt;" Usage="exportProvider.GetExportsCore (definition, atomicComposition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -867,6 +888,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.OnExportsChanged(System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExportsChanged (e As ExportsChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExportsChanged(System::ComponentModel::Composition::Hosting::ExportsChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnExportsChanged : System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs -&gt; unit&#xA;override this.OnExportsChanged : System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs -&gt; unit" Usage="exportProvider.OnExportsChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -891,6 +913,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.OnExportsChanging(System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExportsChanging (e As ExportsChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExportsChanging(System::ComponentModel::Composition::Hosting::ExportsChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnExportsChanging : System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs -&gt; unit&#xA;override this.OnExportsChanging : System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs -&gt; unit" Usage="exportProvider.OnExportsChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -914,6 +937,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition, [out] class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt;&amp; exports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExports(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition,System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.Export}@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetExports(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition, [Runtime::InteropServices::Out] System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ % exports);" />
+      <MemberSignature Language="F#" Value="member this.TryGetExports : System.ComponentModel.Composition.Primitives.ImportDefinition * System.ComponentModel.Composition.Hosting.AtomicComposition *  -&gt; bool" Usage="exportProvider.TryGetExports (definition, atomicComposition, exports)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

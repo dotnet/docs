@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.LinkDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinkDescriptor&#xA;Inherits Descriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinkDescriptor sealed : System::Data::Services::Client::Descriptor" />
+  <TypeSignature Language="F#" Value="type LinkDescriptor = class&#xA;    inherit Descriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.Source" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Source { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : obj" Usage="System.Data.Services.Client.LinkDescriptor.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceProperty : string" Usage="System.Data.Services.Client.LinkDescriptor.SourceProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Target { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : obj" Usage="System.Data.Services.Client.LinkDescriptor.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

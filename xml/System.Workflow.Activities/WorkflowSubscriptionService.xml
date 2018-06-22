@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowSubscriptionService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowSubscriptionService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSubscriptionService abstract" />
+  <TypeSignature Language="F#" Value="type WorkflowSubscriptionService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowSubscriptionService.CreateSubscription(System.Workflow.Activities.MessageEventSubscription)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateSubscription (subscription As MessageEventSubscription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateSubscription(System::Workflow::Activities::MessageEventSubscription ^ subscription);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSubscription : System.Workflow.Activities.MessageEventSubscription -&gt; unit" Usage="workflowSubscriptionService.CreateSubscription subscription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowSubscriptionService.DeleteSubscription(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DeleteSubscription (subscriptionId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DeleteSubscription(Guid subscriptionId);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteSubscription : Guid -&gt; unit" Usage="workflowSubscriptionService.DeleteSubscription subscriptionId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

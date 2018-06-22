@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextWrapping" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextWrapping" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextWrapping" />
+  <TypeSignature Language="F#" Value="type TextWrapping = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.NoWrap" />
       <MemberSignature Language="VB.NET" Value="NoWrap" />
       <MemberSignature Language="C++ CLI" Value="NoWrap" />
+      <MemberSignature Language="F#" Value="NoWrap = 1" Usage="System.Windows.TextWrapping.NoWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.Wrap" />
       <MemberSignature Language="VB.NET" Value="Wrap" />
       <MemberSignature Language="C++ CLI" Value="Wrap" />
+      <MemberSignature Language="F#" Value="Wrap = 2" Usage="System.Windows.TextWrapping.Wrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.WrapWithOverflow" />
       <MemberSignature Language="VB.NET" Value="WrapWithOverflow" />
       <MemberSignature Language="C++ CLI" Value="WrapWithOverflow" />
+      <MemberSignature Language="F#" Value="WrapWithOverflow = 0" Usage="System.Windows.TextWrapping.WrapWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

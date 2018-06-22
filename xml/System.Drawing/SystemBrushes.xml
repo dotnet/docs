@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.SystemBrushes" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemBrushes" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemBrushes sealed" />
+  <TypeSignature Language="F#" Value="type SystemBrushes = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ActiveBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveBorder As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ActiveBorder { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveBorder : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ActiveBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ActiveCaption" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveCaption As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ActiveCaption { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveCaption : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ActiveCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ActiveCaptionText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ActiveCaptionText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ActiveCaptionText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveCaptionText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ActiveCaptionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.AppWorkspace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppWorkspace As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ AppWorkspace { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppWorkspace : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.AppWorkspace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ButtonFace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonFace As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ButtonFace { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonFace : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ButtonFace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ButtonHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonHighlight As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ButtonHighlight { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonHighlight : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ButtonHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ButtonShadow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonShadow As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ButtonShadow { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonShadow : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ButtonShadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Control" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Control As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Control { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ControlDark" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlDark As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ControlDark { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlDark : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ControlDark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -242,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ControlDarkDark" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlDarkDark As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ControlDarkDark { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlDarkDark : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ControlDarkDark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -269,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ControlLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlLight As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ControlLight { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlLight : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ControlLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -296,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ControlLightLight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlLightLight As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ControlLightLight { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlLightLight : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ControlLightLight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -323,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ControlText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ControlText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ControlText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Desktop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Desktop As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Desktop { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Desktop : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Desktop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -363,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SystemBrushes.FromSystemColor(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromSystemColor (c As Color) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Brush ^ FromSystemColor(System::Drawing::Color c);" />
+      <MemberSignature Language="F#" Value="static member FromSystemColor : System.Drawing.Color -&gt; System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.FromSystemColor c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -387,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.GradientActiveCaption" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GradientActiveCaption As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ GradientActiveCaption { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientActiveCaption : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.GradientActiveCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -407,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.GradientInactiveCaption" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GradientInactiveCaption As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ GradientInactiveCaption { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientInactiveCaption : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.GradientInactiveCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -427,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.GrayText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GrayText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ GrayText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GrayText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.GrayText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -454,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Highlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Highlight As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Highlight { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Highlight : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Highlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -481,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.HighlightText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HighlightText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ HighlightText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HighlightText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.HighlightText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -508,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.HotTrack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotTrack As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ HotTrack { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotTrack : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.HotTrack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -535,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.InactiveBorder" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InactiveBorder As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ InactiveBorder { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InactiveBorder : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.InactiveBorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -555,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.InactiveCaption" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InactiveCaption As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ InactiveCaption { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InactiveCaption : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.InactiveCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -575,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.InactiveCaptionText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InactiveCaptionText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ InactiveCaptionText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InactiveCaptionText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.InactiveCaptionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -595,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Info" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Info As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Info { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Info : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Info" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -615,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.InfoText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InfoText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ InfoText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InfoText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.InfoText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -635,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Menu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Menu As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Menu { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Menu : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Menu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -655,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.MenuBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuBar As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ MenuBar { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuBar : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.MenuBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -675,6 +704,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.MenuHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuHighlight As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ MenuHighlight { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuHighlight : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.MenuHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -695,6 +725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.MenuText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ MenuText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.MenuText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -715,6 +746,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.ScrollBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollBar As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ ScrollBar { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollBar : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.ScrollBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -735,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.Window" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Window As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ Window { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -755,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.WindowFrame" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowFrame As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ WindowFrame { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowFrame : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.WindowFrame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -775,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemBrushes.WindowText" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowText As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Brush ^ WindowText { System::Drawing::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowText : System.Drawing.Brush" Usage="System.Drawing.SystemBrushes.WindowText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

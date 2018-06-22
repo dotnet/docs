@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Keys" />
   <TypeSignature Language="VB.NET" Value="Public Enum Keys" />
   <TypeSignature Language="C++ CLI" Value="public enum class Keys" />
+  <TypeSignature Language="F#" Value="type Keys = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.A" />
       <MemberSignature Language="VB.NET" Value="A" />
       <MemberSignature Language="C++ CLI" Value="A" />
+      <MemberSignature Language="F#" Value="A = 65" Usage="System.Windows.Forms.Keys.A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 107" Usage="System.Windows.Forms.Keys.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Alt" />
       <MemberSignature Language="VB.NET" Value="Alt" />
       <MemberSignature Language="C++ CLI" Value="Alt" />
+      <MemberSignature Language="F#" Value="Alt = 262144" Usage="System.Windows.Forms.Keys.Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Apps" />
       <MemberSignature Language="VB.NET" Value="Apps" />
       <MemberSignature Language="C++ CLI" Value="Apps" />
+      <MemberSignature Language="F#" Value="Apps = 93" Usage="System.Windows.Forms.Keys.Apps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Attn" />
       <MemberSignature Language="VB.NET" Value="Attn" />
       <MemberSignature Language="C++ CLI" Value="Attn" />
+      <MemberSignature Language="F#" Value="Attn = 246" Usage="System.Windows.Forms.Keys.Attn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.B" />
       <MemberSignature Language="VB.NET" Value="B" />
       <MemberSignature Language="C++ CLI" Value="B" />
+      <MemberSignature Language="F#" Value="B = 66" Usage="System.Windows.Forms.Keys.B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Back" />
       <MemberSignature Language="VB.NET" Value="Back" />
       <MemberSignature Language="C++ CLI" Value="Back" />
+      <MemberSignature Language="F#" Value="Back = 8" Usage="System.Windows.Forms.Keys.Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserBack" />
       <MemberSignature Language="VB.NET" Value="BrowserBack" />
       <MemberSignature Language="C++ CLI" Value="BrowserBack" />
+      <MemberSignature Language="F#" Value="BrowserBack = 166" Usage="System.Windows.Forms.Keys.BrowserBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserFavorites" />
       <MemberSignature Language="VB.NET" Value="BrowserFavorites" />
       <MemberSignature Language="C++ CLI" Value="BrowserFavorites" />
+      <MemberSignature Language="F#" Value="BrowserFavorites = 171" Usage="System.Windows.Forms.Keys.BrowserFavorites" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserForward" />
       <MemberSignature Language="VB.NET" Value="BrowserForward" />
       <MemberSignature Language="C++ CLI" Value="BrowserForward" />
+      <MemberSignature Language="F#" Value="BrowserForward = 167" Usage="System.Windows.Forms.Keys.BrowserForward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -275,6 +286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserHome" />
       <MemberSignature Language="VB.NET" Value="BrowserHome" />
       <MemberSignature Language="C++ CLI" Value="BrowserHome" />
+      <MemberSignature Language="F#" Value="BrowserHome = 172" Usage="System.Windows.Forms.Keys.BrowserHome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserRefresh" />
       <MemberSignature Language="VB.NET" Value="BrowserRefresh" />
       <MemberSignature Language="C++ CLI" Value="BrowserRefresh" />
+      <MemberSignature Language="F#" Value="BrowserRefresh = 168" Usage="System.Windows.Forms.Keys.BrowserRefresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserSearch" />
       <MemberSignature Language="VB.NET" Value="BrowserSearch" />
       <MemberSignature Language="C++ CLI" Value="BrowserSearch" />
+      <MemberSignature Language="F#" Value="BrowserSearch = 170" Usage="System.Windows.Forms.Keys.BrowserSearch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -332,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserStop" />
       <MemberSignature Language="VB.NET" Value="BrowserStop" />
       <MemberSignature Language="C++ CLI" Value="BrowserStop" />
+      <MemberSignature Language="F#" Value="BrowserStop = 169" Usage="System.Windows.Forms.Keys.BrowserStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -351,6 +366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.C" />
       <MemberSignature Language="VB.NET" Value="C" />
       <MemberSignature Language="C++ CLI" Value="C" />
+      <MemberSignature Language="F#" Value="C = 67" Usage="System.Windows.Forms.Keys.C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,6 +386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 3" Usage="System.Windows.Forms.Keys.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -389,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Capital" />
       <MemberSignature Language="VB.NET" Value="Capital" />
       <MemberSignature Language="C++ CLI" Value="Capital" />
+      <MemberSignature Language="F#" Value="Capital = 20" Usage="System.Windows.Forms.Keys.Capital" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -408,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.CapsLock" />
       <MemberSignature Language="VB.NET" Value="CapsLock" />
       <MemberSignature Language="C++ CLI" Value="CapsLock" />
+      <MemberSignature Language="F#" Value="CapsLock = 20" Usage="System.Windows.Forms.Keys.CapsLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,6 +446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Clear" />
       <MemberSignature Language="VB.NET" Value="Clear" />
       <MemberSignature Language="C++ CLI" Value="Clear" />
+      <MemberSignature Language="F#" Value="Clear = 12" Usage="System.Windows.Forms.Keys.Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -446,6 +466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Control" />
       <MemberSignature Language="VB.NET" Value="Control" />
       <MemberSignature Language="C++ CLI" Value="Control" />
+      <MemberSignature Language="F#" Value="Control = 131072" Usage="System.Windows.Forms.Keys.Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -465,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ControlKey" />
       <MemberSignature Language="VB.NET" Value="ControlKey" />
       <MemberSignature Language="C++ CLI" Value="ControlKey" />
+      <MemberSignature Language="F#" Value="ControlKey = 17" Usage="System.Windows.Forms.Keys.ControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -484,6 +506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Crsel" />
       <MemberSignature Language="VB.NET" Value="Crsel" />
       <MemberSignature Language="C++ CLI" Value="Crsel" />
+      <MemberSignature Language="F#" Value="Crsel = 247" Usage="System.Windows.Forms.Keys.Crsel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -503,6 +526,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D" />
       <MemberSignature Language="VB.NET" Value="D" />
       <MemberSignature Language="C++ CLI" Value="D" />
+      <MemberSignature Language="F#" Value="D = 68" Usage="System.Windows.Forms.Keys.D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -522,6 +546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D0" />
       <MemberSignature Language="VB.NET" Value="D0" />
       <MemberSignature Language="C++ CLI" Value="D0" />
+      <MemberSignature Language="F#" Value="D0 = 48" Usage="System.Windows.Forms.Keys.D0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -541,6 +566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D1" />
       <MemberSignature Language="VB.NET" Value="D1" />
       <MemberSignature Language="C++ CLI" Value="D1" />
+      <MemberSignature Language="F#" Value="D1 = 49" Usage="System.Windows.Forms.Keys.D1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,6 +586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D2" />
       <MemberSignature Language="VB.NET" Value="D2" />
       <MemberSignature Language="C++ CLI" Value="D2" />
+      <MemberSignature Language="F#" Value="D2 = 50" Usage="System.Windows.Forms.Keys.D2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -579,6 +606,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D3" />
       <MemberSignature Language="VB.NET" Value="D3" />
       <MemberSignature Language="C++ CLI" Value="D3" />
+      <MemberSignature Language="F#" Value="D3 = 51" Usage="System.Windows.Forms.Keys.D3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -598,6 +626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D4" />
       <MemberSignature Language="VB.NET" Value="D4" />
       <MemberSignature Language="C++ CLI" Value="D4" />
+      <MemberSignature Language="F#" Value="D4 = 52" Usage="System.Windows.Forms.Keys.D4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -617,6 +646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D5" />
       <MemberSignature Language="VB.NET" Value="D5" />
       <MemberSignature Language="C++ CLI" Value="D5" />
+      <MemberSignature Language="F#" Value="D5 = 53" Usage="System.Windows.Forms.Keys.D5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -636,6 +666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D6" />
       <MemberSignature Language="VB.NET" Value="D6" />
       <MemberSignature Language="C++ CLI" Value="D6" />
+      <MemberSignature Language="F#" Value="D6 = 54" Usage="System.Windows.Forms.Keys.D6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -655,6 +686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D7" />
       <MemberSignature Language="VB.NET" Value="D7" />
       <MemberSignature Language="C++ CLI" Value="D7" />
+      <MemberSignature Language="F#" Value="D7 = 55" Usage="System.Windows.Forms.Keys.D7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -674,6 +706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D8" />
       <MemberSignature Language="VB.NET" Value="D8" />
       <MemberSignature Language="C++ CLI" Value="D8" />
+      <MemberSignature Language="F#" Value="D8 = 56" Usage="System.Windows.Forms.Keys.D8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -693,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D9" />
       <MemberSignature Language="VB.NET" Value="D9" />
       <MemberSignature Language="C++ CLI" Value="D9" />
+      <MemberSignature Language="F#" Value="D9 = 57" Usage="System.Windows.Forms.Keys.D9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -712,6 +746,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 110" Usage="System.Windows.Forms.Keys.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -731,6 +766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 46" Usage="System.Windows.Forms.Keys.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -750,6 +786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="C++ CLI" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 111" Usage="System.Windows.Forms.Keys.Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -769,6 +806,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 40" Usage="System.Windows.Forms.Keys.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -788,6 +826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.E" />
       <MemberSignature Language="VB.NET" Value="E" />
       <MemberSignature Language="C++ CLI" Value="E" />
+      <MemberSignature Language="F#" Value="E = 69" Usage="System.Windows.Forms.Keys.E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -807,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.End" />
       <MemberSignature Language="VB.NET" Value="End" />
       <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberSignature Language="F#" Value="End = 35" Usage="System.Windows.Forms.Keys.End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -826,6 +866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Enter" />
       <MemberSignature Language="VB.NET" Value="Enter" />
       <MemberSignature Language="C++ CLI" Value="Enter" />
+      <MemberSignature Language="F#" Value="Enter = 13" Usage="System.Windows.Forms.Keys.Enter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -845,6 +886,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.EraseEof" />
       <MemberSignature Language="VB.NET" Value="EraseEof" />
       <MemberSignature Language="C++ CLI" Value="EraseEof" />
+      <MemberSignature Language="F#" Value="EraseEof = 249" Usage="System.Windows.Forms.Keys.EraseEof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -864,6 +906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Escape" />
       <MemberSignature Language="VB.NET" Value="Escape" />
       <MemberSignature Language="C++ CLI" Value="Escape" />
+      <MemberSignature Language="F#" Value="Escape = 27" Usage="System.Windows.Forms.Keys.Escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -883,6 +926,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Execute" />
       <MemberSignature Language="VB.NET" Value="Execute" />
       <MemberSignature Language="C++ CLI" Value="Execute" />
+      <MemberSignature Language="F#" Value="Execute = 43" Usage="System.Windows.Forms.Keys.Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -902,6 +946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Exsel" />
       <MemberSignature Language="VB.NET" Value="Exsel" />
       <MemberSignature Language="C++ CLI" Value="Exsel" />
+      <MemberSignature Language="F#" Value="Exsel = 248" Usage="System.Windows.Forms.Keys.Exsel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -921,6 +966,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F" />
       <MemberSignature Language="VB.NET" Value="F" />
       <MemberSignature Language="C++ CLI" Value="F" />
+      <MemberSignature Language="F#" Value="F = 70" Usage="System.Windows.Forms.Keys.F" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -940,6 +986,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F1" />
       <MemberSignature Language="VB.NET" Value="F1" />
       <MemberSignature Language="C++ CLI" Value="F1" />
+      <MemberSignature Language="F#" Value="F1 = 112" Usage="System.Windows.Forms.Keys.F1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -959,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F10" />
       <MemberSignature Language="VB.NET" Value="F10" />
       <MemberSignature Language="C++ CLI" Value="F10" />
+      <MemberSignature Language="F#" Value="F10 = 121" Usage="System.Windows.Forms.Keys.F10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -978,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F11" />
       <MemberSignature Language="VB.NET" Value="F11" />
       <MemberSignature Language="C++ CLI" Value="F11" />
+      <MemberSignature Language="F#" Value="F11 = 122" Usage="System.Windows.Forms.Keys.F11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -997,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F12" />
       <MemberSignature Language="VB.NET" Value="F12" />
       <MemberSignature Language="C++ CLI" Value="F12" />
+      <MemberSignature Language="F#" Value="F12 = 123" Usage="System.Windows.Forms.Keys.F12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1016,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F13" />
       <MemberSignature Language="VB.NET" Value="F13" />
       <MemberSignature Language="C++ CLI" Value="F13" />
+      <MemberSignature Language="F#" Value="F13 = 124" Usage="System.Windows.Forms.Keys.F13" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1035,6 +1086,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F14" />
       <MemberSignature Language="VB.NET" Value="F14" />
       <MemberSignature Language="C++ CLI" Value="F14" />
+      <MemberSignature Language="F#" Value="F14 = 125" Usage="System.Windows.Forms.Keys.F14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1054,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F15" />
       <MemberSignature Language="VB.NET" Value="F15" />
       <MemberSignature Language="C++ CLI" Value="F15" />
+      <MemberSignature Language="F#" Value="F15 = 126" Usage="System.Windows.Forms.Keys.F15" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1073,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F16" />
       <MemberSignature Language="VB.NET" Value="F16" />
       <MemberSignature Language="C++ CLI" Value="F16" />
+      <MemberSignature Language="F#" Value="F16 = 127" Usage="System.Windows.Forms.Keys.F16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1092,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F17" />
       <MemberSignature Language="VB.NET" Value="F17" />
       <MemberSignature Language="C++ CLI" Value="F17" />
+      <MemberSignature Language="F#" Value="F17 = 128" Usage="System.Windows.Forms.Keys.F17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1111,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F18" />
       <MemberSignature Language="VB.NET" Value="F18" />
       <MemberSignature Language="C++ CLI" Value="F18" />
+      <MemberSignature Language="F#" Value="F18 = 129" Usage="System.Windows.Forms.Keys.F18" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1130,6 +1186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F19" />
       <MemberSignature Language="VB.NET" Value="F19" />
       <MemberSignature Language="C++ CLI" Value="F19" />
+      <MemberSignature Language="F#" Value="F19 = 130" Usage="System.Windows.Forms.Keys.F19" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1149,6 +1206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F2" />
       <MemberSignature Language="VB.NET" Value="F2" />
       <MemberSignature Language="C++ CLI" Value="F2" />
+      <MemberSignature Language="F#" Value="F2 = 113" Usage="System.Windows.Forms.Keys.F2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1168,6 +1226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F20" />
       <MemberSignature Language="VB.NET" Value="F20" />
       <MemberSignature Language="C++ CLI" Value="F20" />
+      <MemberSignature Language="F#" Value="F20 = 131" Usage="System.Windows.Forms.Keys.F20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1187,6 +1246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F21" />
       <MemberSignature Language="VB.NET" Value="F21" />
       <MemberSignature Language="C++ CLI" Value="F21" />
+      <MemberSignature Language="F#" Value="F21 = 132" Usage="System.Windows.Forms.Keys.F21" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1206,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F22" />
       <MemberSignature Language="VB.NET" Value="F22" />
       <MemberSignature Language="C++ CLI" Value="F22" />
+      <MemberSignature Language="F#" Value="F22 = 133" Usage="System.Windows.Forms.Keys.F22" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1225,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F23" />
       <MemberSignature Language="VB.NET" Value="F23" />
       <MemberSignature Language="C++ CLI" Value="F23" />
+      <MemberSignature Language="F#" Value="F23 = 134" Usage="System.Windows.Forms.Keys.F23" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1244,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F24" />
       <MemberSignature Language="VB.NET" Value="F24" />
       <MemberSignature Language="C++ CLI" Value="F24" />
+      <MemberSignature Language="F#" Value="F24 = 135" Usage="System.Windows.Forms.Keys.F24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1263,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F3" />
       <MemberSignature Language="VB.NET" Value="F3" />
       <MemberSignature Language="C++ CLI" Value="F3" />
+      <MemberSignature Language="F#" Value="F3 = 114" Usage="System.Windows.Forms.Keys.F3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1282,6 +1346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F4" />
       <MemberSignature Language="VB.NET" Value="F4" />
       <MemberSignature Language="C++ CLI" Value="F4" />
+      <MemberSignature Language="F#" Value="F4 = 115" Usage="System.Windows.Forms.Keys.F4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1301,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F5" />
       <MemberSignature Language="VB.NET" Value="F5" />
       <MemberSignature Language="C++ CLI" Value="F5" />
+      <MemberSignature Language="F#" Value="F5 = 116" Usage="System.Windows.Forms.Keys.F5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1320,6 +1386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F6" />
       <MemberSignature Language="VB.NET" Value="F6" />
       <MemberSignature Language="C++ CLI" Value="F6" />
+      <MemberSignature Language="F#" Value="F6 = 117" Usage="System.Windows.Forms.Keys.F6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1339,6 +1406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F7" />
       <MemberSignature Language="VB.NET" Value="F7" />
       <MemberSignature Language="C++ CLI" Value="F7" />
+      <MemberSignature Language="F#" Value="F7 = 118" Usage="System.Windows.Forms.Keys.F7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1358,6 +1426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F8" />
       <MemberSignature Language="VB.NET" Value="F8" />
       <MemberSignature Language="C++ CLI" Value="F8" />
+      <MemberSignature Language="F#" Value="F8 = 119" Usage="System.Windows.Forms.Keys.F8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1377,6 +1446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F9" />
       <MemberSignature Language="VB.NET" Value="F9" />
       <MemberSignature Language="C++ CLI" Value="F9" />
+      <MemberSignature Language="F#" Value="F9 = 120" Usage="System.Windows.Forms.Keys.F9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1396,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.FinalMode" />
       <MemberSignature Language="VB.NET" Value="FinalMode" />
       <MemberSignature Language="C++ CLI" Value="FinalMode" />
+      <MemberSignature Language="F#" Value="FinalMode = 24" Usage="System.Windows.Forms.Keys.FinalMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1415,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.G" />
       <MemberSignature Language="VB.NET" Value="G" />
       <MemberSignature Language="C++ CLI" Value="G" />
+      <MemberSignature Language="F#" Value="G = 71" Usage="System.Windows.Forms.Keys.G" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1434,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.H" />
       <MemberSignature Language="VB.NET" Value="H" />
       <MemberSignature Language="C++ CLI" Value="H" />
+      <MemberSignature Language="F#" Value="H = 72" Usage="System.Windows.Forms.Keys.H" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1453,6 +1526,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanguelMode" />
       <MemberSignature Language="VB.NET" Value="HanguelMode" />
       <MemberSignature Language="C++ CLI" Value="HanguelMode" />
+      <MemberSignature Language="F#" Value="HanguelMode = 21" Usage="System.Windows.Forms.Keys.HanguelMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1472,6 +1546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HangulMode" />
       <MemberSignature Language="VB.NET" Value="HangulMode" />
       <MemberSignature Language="C++ CLI" Value="HangulMode" />
+      <MemberSignature Language="F#" Value="HangulMode = 21" Usage="System.Windows.Forms.Keys.HangulMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1491,6 +1566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanjaMode" />
       <MemberSignature Language="VB.NET" Value="HanjaMode" />
       <MemberSignature Language="C++ CLI" Value="HanjaMode" />
+      <MemberSignature Language="F#" Value="HanjaMode = 25" Usage="System.Windows.Forms.Keys.HanjaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1510,6 +1586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Help" />
       <MemberSignature Language="VB.NET" Value="Help" />
       <MemberSignature Language="C++ CLI" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 47" Usage="System.Windows.Forms.Keys.Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1529,6 +1606,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Home" />
       <MemberSignature Language="VB.NET" Value="Home" />
       <MemberSignature Language="C++ CLI" Value="Home" />
+      <MemberSignature Language="F#" Value="Home = 36" Usage="System.Windows.Forms.Keys.Home" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1548,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.I" />
       <MemberSignature Language="VB.NET" Value="I" />
       <MemberSignature Language="C++ CLI" Value="I" />
+      <MemberSignature Language="F#" Value="I = 73" Usage="System.Windows.Forms.Keys.I" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1567,6 +1646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAccept" />
       <MemberSignature Language="VB.NET" Value="IMEAccept" />
       <MemberSignature Language="C++ CLI" Value="IMEAccept" />
+      <MemberSignature Language="F#" Value="IMEAccept = 30" Usage="System.Windows.Forms.Keys.IMEAccept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1586,6 +1666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAceept" />
       <MemberSignature Language="VB.NET" Value="IMEAceept" />
       <MemberSignature Language="C++ CLI" Value="IMEAceept" />
+      <MemberSignature Language="F#" Value="IMEAceept = 30" Usage="System.Windows.Forms.Keys.IMEAceept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1605,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEConvert" />
       <MemberSignature Language="VB.NET" Value="IMEConvert" />
       <MemberSignature Language="C++ CLI" Value="IMEConvert" />
+      <MemberSignature Language="F#" Value="IMEConvert = 28" Usage="System.Windows.Forms.Keys.IMEConvert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1624,6 +1706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEModeChange" />
       <MemberSignature Language="VB.NET" Value="IMEModeChange" />
       <MemberSignature Language="C++ CLI" Value="IMEModeChange" />
+      <MemberSignature Language="F#" Value="IMEModeChange = 31" Usage="System.Windows.Forms.Keys.IMEModeChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1643,6 +1726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMENonconvert" />
       <MemberSignature Language="VB.NET" Value="IMENonconvert" />
       <MemberSignature Language="C++ CLI" Value="IMENonconvert" />
+      <MemberSignature Language="F#" Value="IMENonconvert = 29" Usage="System.Windows.Forms.Keys.IMENonconvert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1662,6 +1746,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 45" Usage="System.Windows.Forms.Keys.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1681,6 +1766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.J" />
       <MemberSignature Language="VB.NET" Value="J" />
       <MemberSignature Language="C++ CLI" Value="J" />
+      <MemberSignature Language="F#" Value="J = 74" Usage="System.Windows.Forms.Keys.J" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1700,6 +1786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.JunjaMode" />
       <MemberSignature Language="VB.NET" Value="JunjaMode" />
       <MemberSignature Language="C++ CLI" Value="JunjaMode" />
+      <MemberSignature Language="F#" Value="JunjaMode = 23" Usage="System.Windows.Forms.Keys.JunjaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1719,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.K" />
       <MemberSignature Language="VB.NET" Value="K" />
       <MemberSignature Language="C++ CLI" Value="K" />
+      <MemberSignature Language="F#" Value="K = 75" Usage="System.Windows.Forms.Keys.K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1738,6 +1826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanaMode" />
       <MemberSignature Language="VB.NET" Value="KanaMode" />
       <MemberSignature Language="C++ CLI" Value="KanaMode" />
+      <MemberSignature Language="F#" Value="KanaMode = 21" Usage="System.Windows.Forms.Keys.KanaMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1757,6 +1846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanjiMode" />
       <MemberSignature Language="VB.NET" Value="KanjiMode" />
       <MemberSignature Language="C++ CLI" Value="KanjiMode" />
+      <MemberSignature Language="F#" Value="KanjiMode = 25" Usage="System.Windows.Forms.Keys.KanjiMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1776,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KeyCode" />
       <MemberSignature Language="VB.NET" Value="KeyCode" />
       <MemberSignature Language="C++ CLI" Value="KeyCode" />
+      <MemberSignature Language="F#" Value="KeyCode = 65535" Usage="System.Windows.Forms.Keys.KeyCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1795,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.L" />
       <MemberSignature Language="VB.NET" Value="L" />
       <MemberSignature Language="C++ CLI" Value="L" />
+      <MemberSignature Language="F#" Value="L = 76" Usage="System.Windows.Forms.Keys.L" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1814,6 +1906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication1" />
       <MemberSignature Language="VB.NET" Value="LaunchApplication1" />
       <MemberSignature Language="C++ CLI" Value="LaunchApplication1" />
+      <MemberSignature Language="F#" Value="LaunchApplication1 = 182" Usage="System.Windows.Forms.Keys.LaunchApplication1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1833,6 +1926,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication2" />
       <MemberSignature Language="VB.NET" Value="LaunchApplication2" />
       <MemberSignature Language="C++ CLI" Value="LaunchApplication2" />
+      <MemberSignature Language="F#" Value="LaunchApplication2 = 183" Usage="System.Windows.Forms.Keys.LaunchApplication2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1852,6 +1946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchMail" />
       <MemberSignature Language="VB.NET" Value="LaunchMail" />
       <MemberSignature Language="C++ CLI" Value="LaunchMail" />
+      <MemberSignature Language="F#" Value="LaunchMail = 180" Usage="System.Windows.Forms.Keys.LaunchMail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1871,6 +1966,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LButton" />
       <MemberSignature Language="VB.NET" Value="LButton" />
       <MemberSignature Language="C++ CLI" Value="LButton" />
+      <MemberSignature Language="F#" Value="LButton = 1" Usage="System.Windows.Forms.Keys.LButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1890,6 +1986,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LControlKey" />
       <MemberSignature Language="VB.NET" Value="LControlKey" />
       <MemberSignature Language="C++ CLI" Value="LControlKey" />
+      <MemberSignature Language="F#" Value="LControlKey = 162" Usage="System.Windows.Forms.Keys.LControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1909,6 +2006,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 37" Usage="System.Windows.Forms.Keys.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1928,6 +2026,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LineFeed" />
       <MemberSignature Language="VB.NET" Value="LineFeed" />
       <MemberSignature Language="C++ CLI" Value="LineFeed" />
+      <MemberSignature Language="F#" Value="LineFeed = 10" Usage="System.Windows.Forms.Keys.LineFeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1947,6 +2046,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LMenu" />
       <MemberSignature Language="VB.NET" Value="LMenu" />
       <MemberSignature Language="C++ CLI" Value="LMenu" />
+      <MemberSignature Language="F#" Value="LMenu = 164" Usage="System.Windows.Forms.Keys.LMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1966,6 +2066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LShiftKey" />
       <MemberSignature Language="VB.NET" Value="LShiftKey" />
       <MemberSignature Language="C++ CLI" Value="LShiftKey" />
+      <MemberSignature Language="F#" Value="LShiftKey = 160" Usage="System.Windows.Forms.Keys.LShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1985,6 +2086,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LWin" />
       <MemberSignature Language="VB.NET" Value="LWin" />
       <MemberSignature Language="C++ CLI" Value="LWin" />
+      <MemberSignature Language="F#" Value="LWin = 91" Usage="System.Windows.Forms.Keys.LWin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2004,6 +2106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.M" />
       <MemberSignature Language="VB.NET" Value="M" />
       <MemberSignature Language="C++ CLI" Value="M" />
+      <MemberSignature Language="F#" Value="M = 77" Usage="System.Windows.Forms.Keys.M" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2023,6 +2126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MButton" />
       <MemberSignature Language="VB.NET" Value="MButton" />
       <MemberSignature Language="C++ CLI" Value="MButton" />
+      <MemberSignature Language="F#" Value="MButton = 4" Usage="System.Windows.Forms.Keys.MButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2042,6 +2146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaNextTrack" />
       <MemberSignature Language="VB.NET" Value="MediaNextTrack" />
       <MemberSignature Language="C++ CLI" Value="MediaNextTrack" />
+      <MemberSignature Language="F#" Value="MediaNextTrack = 176" Usage="System.Windows.Forms.Keys.MediaNextTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2061,6 +2166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPlayPause" />
       <MemberSignature Language="VB.NET" Value="MediaPlayPause" />
       <MemberSignature Language="C++ CLI" Value="MediaPlayPause" />
+      <MemberSignature Language="F#" Value="MediaPlayPause = 179" Usage="System.Windows.Forms.Keys.MediaPlayPause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2080,6 +2186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPreviousTrack" />
       <MemberSignature Language="VB.NET" Value="MediaPreviousTrack" />
       <MemberSignature Language="C++ CLI" Value="MediaPreviousTrack" />
+      <MemberSignature Language="F#" Value="MediaPreviousTrack = 177" Usage="System.Windows.Forms.Keys.MediaPreviousTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2099,6 +2206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaStop" />
       <MemberSignature Language="VB.NET" Value="MediaStop" />
       <MemberSignature Language="C++ CLI" Value="MediaStop" />
+      <MemberSignature Language="F#" Value="MediaStop = 178" Usage="System.Windows.Forms.Keys.MediaStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2118,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Menu" />
       <MemberSignature Language="VB.NET" Value="Menu" />
       <MemberSignature Language="C++ CLI" Value="Menu" />
+      <MemberSignature Language="F#" Value="Menu = 18" Usage="System.Windows.Forms.Keys.Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2137,6 +2246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Modifiers" />
       <MemberSignature Language="C++ CLI" Value="Modifiers" />
+      <MemberSignature Language="F#" Value="Modifiers = -65536" Usage="System.Windows.Forms.Keys.Modifiers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2156,6 +2266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="C++ CLI" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 106" Usage="System.Windows.Forms.Keys.Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2175,6 +2286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.N" />
       <MemberSignature Language="VB.NET" Value="N" />
       <MemberSignature Language="C++ CLI" Value="N" />
+      <MemberSignature Language="F#" Value="N = 78" Usage="System.Windows.Forms.Keys.N" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2194,6 +2306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
       <MemberSignature Language="C++ CLI" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 34" Usage="System.Windows.Forms.Keys.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2213,6 +2326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NoName" />
       <MemberSignature Language="VB.NET" Value="NoName" />
       <MemberSignature Language="C++ CLI" Value="NoName" />
+      <MemberSignature Language="F#" Value="NoName = 252" Usage="System.Windows.Forms.Keys.NoName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2232,6 +2346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.Keys.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2251,6 +2366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumLock" />
       <MemberSignature Language="VB.NET" Value="NumLock" />
       <MemberSignature Language="C++ CLI" Value="NumLock" />
+      <MemberSignature Language="F#" Value="NumLock = 144" Usage="System.Windows.Forms.Keys.NumLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2270,6 +2386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad0" />
       <MemberSignature Language="VB.NET" Value="NumPad0" />
       <MemberSignature Language="C++ CLI" Value="NumPad0" />
+      <MemberSignature Language="F#" Value="NumPad0 = 96" Usage="System.Windows.Forms.Keys.NumPad0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2289,6 +2406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad1" />
       <MemberSignature Language="VB.NET" Value="NumPad1" />
       <MemberSignature Language="C++ CLI" Value="NumPad1" />
+      <MemberSignature Language="F#" Value="NumPad1 = 97" Usage="System.Windows.Forms.Keys.NumPad1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2308,6 +2426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad2" />
       <MemberSignature Language="VB.NET" Value="NumPad2" />
       <MemberSignature Language="C++ CLI" Value="NumPad2" />
+      <MemberSignature Language="F#" Value="NumPad2 = 98" Usage="System.Windows.Forms.Keys.NumPad2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2327,6 +2446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad3" />
       <MemberSignature Language="VB.NET" Value="NumPad3" />
       <MemberSignature Language="C++ CLI" Value="NumPad3" />
+      <MemberSignature Language="F#" Value="NumPad3 = 99" Usage="System.Windows.Forms.Keys.NumPad3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2346,6 +2466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad4" />
       <MemberSignature Language="VB.NET" Value="NumPad4" />
       <MemberSignature Language="C++ CLI" Value="NumPad4" />
+      <MemberSignature Language="F#" Value="NumPad4 = 100" Usage="System.Windows.Forms.Keys.NumPad4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2365,6 +2486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad5" />
       <MemberSignature Language="VB.NET" Value="NumPad5" />
       <MemberSignature Language="C++ CLI" Value="NumPad5" />
+      <MemberSignature Language="F#" Value="NumPad5 = 101" Usage="System.Windows.Forms.Keys.NumPad5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2384,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad6" />
       <MemberSignature Language="VB.NET" Value="NumPad6" />
       <MemberSignature Language="C++ CLI" Value="NumPad6" />
+      <MemberSignature Language="F#" Value="NumPad6 = 102" Usage="System.Windows.Forms.Keys.NumPad6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2403,6 +2526,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad7" />
       <MemberSignature Language="VB.NET" Value="NumPad7" />
       <MemberSignature Language="C++ CLI" Value="NumPad7" />
+      <MemberSignature Language="F#" Value="NumPad7 = 103" Usage="System.Windows.Forms.Keys.NumPad7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2422,6 +2546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad8" />
       <MemberSignature Language="VB.NET" Value="NumPad8" />
       <MemberSignature Language="C++ CLI" Value="NumPad8" />
+      <MemberSignature Language="F#" Value="NumPad8 = 104" Usage="System.Windows.Forms.Keys.NumPad8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2441,6 +2566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad9" />
       <MemberSignature Language="VB.NET" Value="NumPad9" />
       <MemberSignature Language="C++ CLI" Value="NumPad9" />
+      <MemberSignature Language="F#" Value="NumPad9 = 105" Usage="System.Windows.Forms.Keys.NumPad9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2460,6 +2586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.O" />
       <MemberSignature Language="VB.NET" Value="O" />
       <MemberSignature Language="C++ CLI" Value="O" />
+      <MemberSignature Language="F#" Value="O = 79" Usage="System.Windows.Forms.Keys.O" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2479,6 +2606,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem1" />
       <MemberSignature Language="VB.NET" Value="Oem1" />
       <MemberSignature Language="C++ CLI" Value="Oem1" />
+      <MemberSignature Language="F#" Value="Oem1 = 186" Usage="System.Windows.Forms.Keys.Oem1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2498,6 +2626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem102" />
       <MemberSignature Language="VB.NET" Value="Oem102" />
       <MemberSignature Language="C++ CLI" Value="Oem102" />
+      <MemberSignature Language="F#" Value="Oem102 = 226" Usage="System.Windows.Forms.Keys.Oem102" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2517,6 +2646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem2" />
       <MemberSignature Language="VB.NET" Value="Oem2" />
       <MemberSignature Language="C++ CLI" Value="Oem2" />
+      <MemberSignature Language="F#" Value="Oem2 = 191" Usage="System.Windows.Forms.Keys.Oem2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2536,6 +2666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem3" />
       <MemberSignature Language="VB.NET" Value="Oem3" />
       <MemberSignature Language="C++ CLI" Value="Oem3" />
+      <MemberSignature Language="F#" Value="Oem3 = 192" Usage="System.Windows.Forms.Keys.Oem3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2555,6 +2686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem4" />
       <MemberSignature Language="VB.NET" Value="Oem4" />
       <MemberSignature Language="C++ CLI" Value="Oem4" />
+      <MemberSignature Language="F#" Value="Oem4 = 219" Usage="System.Windows.Forms.Keys.Oem4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2574,6 +2706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem5" />
       <MemberSignature Language="VB.NET" Value="Oem5" />
       <MemberSignature Language="C++ CLI" Value="Oem5" />
+      <MemberSignature Language="F#" Value="Oem5 = 220" Usage="System.Windows.Forms.Keys.Oem5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2593,6 +2726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem6" />
       <MemberSignature Language="VB.NET" Value="Oem6" />
       <MemberSignature Language="C++ CLI" Value="Oem6" />
+      <MemberSignature Language="F#" Value="Oem6 = 221" Usage="System.Windows.Forms.Keys.Oem6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2612,6 +2746,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem7" />
       <MemberSignature Language="VB.NET" Value="Oem7" />
       <MemberSignature Language="C++ CLI" Value="Oem7" />
+      <MemberSignature Language="F#" Value="Oem7 = 222" Usage="System.Windows.Forms.Keys.Oem7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2631,6 +2766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem8" />
       <MemberSignature Language="VB.NET" Value="Oem8" />
       <MemberSignature Language="C++ CLI" Value="Oem8" />
+      <MemberSignature Language="F#" Value="Oem8 = 223" Usage="System.Windows.Forms.Keys.Oem8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2650,6 +2786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemBackslash" />
       <MemberSignature Language="VB.NET" Value="OemBackslash" />
       <MemberSignature Language="C++ CLI" Value="OemBackslash" />
+      <MemberSignature Language="F#" Value="OemBackslash = 226" Usage="System.Windows.Forms.Keys.OemBackslash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2669,6 +2806,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemClear" />
       <MemberSignature Language="VB.NET" Value="OemClear" />
       <MemberSignature Language="C++ CLI" Value="OemClear" />
+      <MemberSignature Language="F#" Value="OemClear = 254" Usage="System.Windows.Forms.Keys.OemClear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2688,6 +2826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemCloseBrackets" />
       <MemberSignature Language="VB.NET" Value="OemCloseBrackets" />
       <MemberSignature Language="C++ CLI" Value="OemCloseBrackets" />
+      <MemberSignature Language="F#" Value="OemCloseBrackets = 221" Usage="System.Windows.Forms.Keys.OemCloseBrackets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2707,6 +2846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemcomma" />
       <MemberSignature Language="VB.NET" Value="Oemcomma" />
       <MemberSignature Language="C++ CLI" Value="Oemcomma" />
+      <MemberSignature Language="F#" Value="Oemcomma = 188" Usage="System.Windows.Forms.Keys.Oemcomma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2726,6 +2866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemMinus" />
       <MemberSignature Language="VB.NET" Value="OemMinus" />
       <MemberSignature Language="C++ CLI" Value="OemMinus" />
+      <MemberSignature Language="F#" Value="OemMinus = 189" Usage="System.Windows.Forms.Keys.OemMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2745,6 +2886,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemOpenBrackets" />
       <MemberSignature Language="VB.NET" Value="OemOpenBrackets" />
       <MemberSignature Language="C++ CLI" Value="OemOpenBrackets" />
+      <MemberSignature Language="F#" Value="OemOpenBrackets = 219" Usage="System.Windows.Forms.Keys.OemOpenBrackets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2764,6 +2906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPeriod" />
       <MemberSignature Language="VB.NET" Value="OemPeriod" />
       <MemberSignature Language="C++ CLI" Value="OemPeriod" />
+      <MemberSignature Language="F#" Value="OemPeriod = 190" Usage="System.Windows.Forms.Keys.OemPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2783,6 +2926,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPipe" />
       <MemberSignature Language="VB.NET" Value="OemPipe" />
       <MemberSignature Language="C++ CLI" Value="OemPipe" />
+      <MemberSignature Language="F#" Value="OemPipe = 220" Usage="System.Windows.Forms.Keys.OemPipe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2802,6 +2946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemplus" />
       <MemberSignature Language="VB.NET" Value="Oemplus" />
       <MemberSignature Language="C++ CLI" Value="Oemplus" />
+      <MemberSignature Language="F#" Value="Oemplus = 187" Usage="System.Windows.Forms.Keys.Oemplus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2821,6 +2966,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuestion" />
       <MemberSignature Language="VB.NET" Value="OemQuestion" />
       <MemberSignature Language="C++ CLI" Value="OemQuestion" />
+      <MemberSignature Language="F#" Value="OemQuestion = 191" Usage="System.Windows.Forms.Keys.OemQuestion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2840,6 +2986,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuotes" />
       <MemberSignature Language="VB.NET" Value="OemQuotes" />
       <MemberSignature Language="C++ CLI" Value="OemQuotes" />
+      <MemberSignature Language="F#" Value="OemQuotes = 222" Usage="System.Windows.Forms.Keys.OemQuotes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2859,6 +3006,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemSemicolon" />
       <MemberSignature Language="VB.NET" Value="OemSemicolon" />
       <MemberSignature Language="C++ CLI" Value="OemSemicolon" />
+      <MemberSignature Language="F#" Value="OemSemicolon = 186" Usage="System.Windows.Forms.Keys.OemSemicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2878,6 +3026,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemtilde" />
       <MemberSignature Language="VB.NET" Value="Oemtilde" />
       <MemberSignature Language="C++ CLI" Value="Oemtilde" />
+      <MemberSignature Language="F#" Value="Oemtilde = 192" Usage="System.Windows.Forms.Keys.Oemtilde" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2897,6 +3046,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.P" />
       <MemberSignature Language="VB.NET" Value="P" />
       <MemberSignature Language="C++ CLI" Value="P" />
+      <MemberSignature Language="F#" Value="P = 80" Usage="System.Windows.Forms.Keys.P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2916,6 +3066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pa1" />
       <MemberSignature Language="VB.NET" Value="Pa1" />
       <MemberSignature Language="C++ CLI" Value="Pa1" />
+      <MemberSignature Language="F#" Value="Pa1 = 253" Usage="System.Windows.Forms.Keys.Pa1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2935,6 +3086,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Packet" />
       <MemberSignature Language="VB.NET" Value="Packet" />
       <MemberSignature Language="C++ CLI" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 231" Usage="System.Windows.Forms.Keys.Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2954,6 +3106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageDown" />
       <MemberSignature Language="VB.NET" Value="PageDown" />
       <MemberSignature Language="C++ CLI" Value="PageDown" />
+      <MemberSignature Language="F#" Value="PageDown = 34" Usage="System.Windows.Forms.Keys.PageDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2973,6 +3126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageUp" />
       <MemberSignature Language="VB.NET" Value="PageUp" />
       <MemberSignature Language="C++ CLI" Value="PageUp" />
+      <MemberSignature Language="F#" Value="PageUp = 33" Usage="System.Windows.Forms.Keys.PageUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2992,6 +3146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pause" />
       <MemberSignature Language="VB.NET" Value="Pause" />
       <MemberSignature Language="C++ CLI" Value="Pause" />
+      <MemberSignature Language="F#" Value="Pause = 19" Usage="System.Windows.Forms.Keys.Pause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3011,6 +3166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Play" />
       <MemberSignature Language="VB.NET" Value="Play" />
       <MemberSignature Language="C++ CLI" Value="Play" />
+      <MemberSignature Language="F#" Value="Play = 250" Usage="System.Windows.Forms.Keys.Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3030,6 +3186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Print" />
       <MemberSignature Language="VB.NET" Value="Print" />
       <MemberSignature Language="C++ CLI" Value="Print" />
+      <MemberSignature Language="F#" Value="Print = 42" Usage="System.Windows.Forms.Keys.Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3049,6 +3206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PrintScreen" />
       <MemberSignature Language="VB.NET" Value="PrintScreen" />
       <MemberSignature Language="C++ CLI" Value="PrintScreen" />
+      <MemberSignature Language="F#" Value="PrintScreen = 44" Usage="System.Windows.Forms.Keys.PrintScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3068,6 +3226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Prior" />
       <MemberSignature Language="VB.NET" Value="Prior" />
       <MemberSignature Language="C++ CLI" Value="Prior" />
+      <MemberSignature Language="F#" Value="Prior = 33" Usage="System.Windows.Forms.Keys.Prior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3087,6 +3246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ProcessKey" />
       <MemberSignature Language="VB.NET" Value="ProcessKey" />
       <MemberSignature Language="C++ CLI" Value="ProcessKey" />
+      <MemberSignature Language="F#" Value="ProcessKey = 229" Usage="System.Windows.Forms.Keys.ProcessKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3106,6 +3266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Q" />
       <MemberSignature Language="VB.NET" Value="Q" />
       <MemberSignature Language="C++ CLI" Value="Q" />
+      <MemberSignature Language="F#" Value="Q = 81" Usage="System.Windows.Forms.Keys.Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3125,6 +3286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.R" />
       <MemberSignature Language="VB.NET" Value="R" />
       <MemberSignature Language="C++ CLI" Value="R" />
+      <MemberSignature Language="F#" Value="R = 82" Usage="System.Windows.Forms.Keys.R" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3144,6 +3306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RButton" />
       <MemberSignature Language="VB.NET" Value="RButton" />
       <MemberSignature Language="C++ CLI" Value="RButton" />
+      <MemberSignature Language="F#" Value="RButton = 2" Usage="System.Windows.Forms.Keys.RButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3163,6 +3326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RControlKey" />
       <MemberSignature Language="VB.NET" Value="RControlKey" />
       <MemberSignature Language="C++ CLI" Value="RControlKey" />
+      <MemberSignature Language="F#" Value="RControlKey = 163" Usage="System.Windows.Forms.Keys.RControlKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3182,6 +3346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Return" />
       <MemberSignature Language="VB.NET" Value="Return" />
       <MemberSignature Language="C++ CLI" Value="Return" />
+      <MemberSignature Language="F#" Value="Return = 13" Usage="System.Windows.Forms.Keys.Return" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3201,6 +3366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 39" Usage="System.Windows.Forms.Keys.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3220,6 +3386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RMenu" />
       <MemberSignature Language="VB.NET" Value="RMenu" />
       <MemberSignature Language="C++ CLI" Value="RMenu" />
+      <MemberSignature Language="F#" Value="RMenu = 165" Usage="System.Windows.Forms.Keys.RMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3239,6 +3406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RShiftKey" />
       <MemberSignature Language="VB.NET" Value="RShiftKey" />
       <MemberSignature Language="C++ CLI" Value="RShiftKey" />
+      <MemberSignature Language="F#" Value="RShiftKey = 161" Usage="System.Windows.Forms.Keys.RShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3258,6 +3426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RWin" />
       <MemberSignature Language="VB.NET" Value="RWin" />
       <MemberSignature Language="C++ CLI" Value="RWin" />
+      <MemberSignature Language="F#" Value="RWin = 92" Usage="System.Windows.Forms.Keys.RWin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3277,6 +3446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.S" />
       <MemberSignature Language="VB.NET" Value="S" />
       <MemberSignature Language="C++ CLI" Value="S" />
+      <MemberSignature Language="F#" Value="S = 83" Usage="System.Windows.Forms.Keys.S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3296,6 +3466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Scroll" />
       <MemberSignature Language="VB.NET" Value="Scroll" />
       <MemberSignature Language="C++ CLI" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = 145" Usage="System.Windows.Forms.Keys.Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3315,6 +3486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 41" Usage="System.Windows.Forms.Keys.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3334,6 +3506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.SelectMedia" />
       <MemberSignature Language="VB.NET" Value="SelectMedia" />
       <MemberSignature Language="C++ CLI" Value="SelectMedia" />
+      <MemberSignature Language="F#" Value="SelectMedia = 181" Usage="System.Windows.Forms.Keys.SelectMedia" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3353,6 +3526,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Separator" />
       <MemberSignature Language="VB.NET" Value="Separator" />
       <MemberSignature Language="C++ CLI" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 108" Usage="System.Windows.Forms.Keys.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3372,6 +3546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Shift" />
       <MemberSignature Language="VB.NET" Value="Shift" />
       <MemberSignature Language="C++ CLI" Value="Shift" />
+      <MemberSignature Language="F#" Value="Shift = 65536" Usage="System.Windows.Forms.Keys.Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3391,6 +3566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ShiftKey" />
       <MemberSignature Language="VB.NET" Value="ShiftKey" />
       <MemberSignature Language="C++ CLI" Value="ShiftKey" />
+      <MemberSignature Language="F#" Value="ShiftKey = 16" Usage="System.Windows.Forms.Keys.ShiftKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3410,6 +3586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Sleep" />
       <MemberSignature Language="VB.NET" Value="Sleep" />
       <MemberSignature Language="C++ CLI" Value="Sleep" />
+      <MemberSignature Language="F#" Value="Sleep = 95" Usage="System.Windows.Forms.Keys.Sleep" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3429,6 +3606,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Snapshot" />
       <MemberSignature Language="VB.NET" Value="Snapshot" />
       <MemberSignature Language="C++ CLI" Value="Snapshot" />
+      <MemberSignature Language="F#" Value="Snapshot = 44" Usage="System.Windows.Forms.Keys.Snapshot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3448,6 +3626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Space" />
       <MemberSignature Language="VB.NET" Value="Space" />
       <MemberSignature Language="C++ CLI" Value="Space" />
+      <MemberSignature Language="F#" Value="Space = 32" Usage="System.Windows.Forms.Keys.Space" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3467,6 +3646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Subtract" />
       <MemberSignature Language="VB.NET" Value="Subtract" />
       <MemberSignature Language="C++ CLI" Value="Subtract" />
+      <MemberSignature Language="F#" Value="Subtract = 109" Usage="System.Windows.Forms.Keys.Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3486,6 +3666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.T" />
       <MemberSignature Language="VB.NET" Value="T" />
       <MemberSignature Language="C++ CLI" Value="T" />
+      <MemberSignature Language="F#" Value="T = 84" Usage="System.Windows.Forms.Keys.T" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3505,6 +3686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Tab" />
       <MemberSignature Language="VB.NET" Value="Tab" />
       <MemberSignature Language="C++ CLI" Value="Tab" />
+      <MemberSignature Language="F#" Value="Tab = 9" Usage="System.Windows.Forms.Keys.Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3524,6 +3706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.U" />
       <MemberSignature Language="VB.NET" Value="U" />
       <MemberSignature Language="C++ CLI" Value="U" />
+      <MemberSignature Language="F#" Value="U = 85" Usage="System.Windows.Forms.Keys.U" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3543,6 +3726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 38" Usage="System.Windows.Forms.Keys.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3562,6 +3746,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.V" />
       <MemberSignature Language="VB.NET" Value="V" />
       <MemberSignature Language="C++ CLI" Value="V" />
+      <MemberSignature Language="F#" Value="V = 86" Usage="System.Windows.Forms.Keys.V" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3581,6 +3766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeDown" />
       <MemberSignature Language="VB.NET" Value="VolumeDown" />
       <MemberSignature Language="C++ CLI" Value="VolumeDown" />
+      <MemberSignature Language="F#" Value="VolumeDown = 174" Usage="System.Windows.Forms.Keys.VolumeDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3600,6 +3786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeMute" />
       <MemberSignature Language="VB.NET" Value="VolumeMute" />
       <MemberSignature Language="C++ CLI" Value="VolumeMute" />
+      <MemberSignature Language="F#" Value="VolumeMute = 173" Usage="System.Windows.Forms.Keys.VolumeMute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3619,6 +3806,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeUp" />
       <MemberSignature Language="VB.NET" Value="VolumeUp" />
       <MemberSignature Language="C++ CLI" Value="VolumeUp" />
+      <MemberSignature Language="F#" Value="VolumeUp = 175" Usage="System.Windows.Forms.Keys.VolumeUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3638,6 +3826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.W" />
       <MemberSignature Language="VB.NET" Value="W" />
       <MemberSignature Language="C++ CLI" Value="W" />
+      <MemberSignature Language="F#" Value="W = 87" Usage="System.Windows.Forms.Keys.W" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3657,6 +3846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.X" />
       <MemberSignature Language="VB.NET" Value="X" />
       <MemberSignature Language="C++ CLI" Value="X" />
+      <MemberSignature Language="F#" Value="X = 88" Usage="System.Windows.Forms.Keys.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3676,6 +3866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton1" />
       <MemberSignature Language="VB.NET" Value="XButton1" />
       <MemberSignature Language="C++ CLI" Value="XButton1" />
+      <MemberSignature Language="F#" Value="XButton1 = 5" Usage="System.Windows.Forms.Keys.XButton1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3695,6 +3886,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton2" />
       <MemberSignature Language="VB.NET" Value="XButton2" />
       <MemberSignature Language="C++ CLI" Value="XButton2" />
+      <MemberSignature Language="F#" Value="XButton2 = 6" Usage="System.Windows.Forms.Keys.XButton2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3714,6 +3906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Y" />
       <MemberSignature Language="VB.NET" Value="Y" />
       <MemberSignature Language="C++ CLI" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 89" Usage="System.Windows.Forms.Keys.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3733,6 +3926,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Z" />
       <MemberSignature Language="VB.NET" Value="Z" />
       <MemberSignature Language="C++ CLI" Value="Z" />
+      <MemberSignature Language="F#" Value="Z = 90" Usage="System.Windows.Forms.Keys.Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3752,6 +3946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Zoom" />
       <MemberSignature Language="VB.NET" Value="Zoom" />
       <MemberSignature Language="C++ CLI" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 251" Usage="System.Windows.Forms.Keys.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

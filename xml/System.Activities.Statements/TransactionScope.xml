@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.TransactionScope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionScope&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionScope sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type TransactionScope = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property AbortInstanceOnTransactionFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbortInstanceOnTransactionFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AbortInstanceOnTransactionFailure : bool with get, set" Usage="System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TransactionScope.Body" />
       <MemberSignature Language="VB.NET" Value="Public Property Body As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Body { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Activities.Activity with get, set" Usage="System.Activities.Statements.TransactionScope.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TransactionScope.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="transactionScope.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TransactionScope.CanInduceIdle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInduceIdle : bool" Usage="System.Activities.Statements.TransactionScope.CanInduceIdle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TransactionScope.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="transactionScope.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TransactionScope.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::IsolationLevel IsolationLevel { System::Transactions::IsolationLevel get(); void set(System::Transactions::IsolationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.Activities.Statements.TransactionScope.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TransactionScope.ShouldSerializeIsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIsolationLevel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIsolationLevel();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIsolationLevel : unit -&gt; bool" Usage="transactionScope.ShouldSerializeIsolationLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TransactionScope.ShouldSerializeTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTimeout () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTimeout();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTimeout : unit -&gt; bool" Usage="transactionScope.ShouldSerializeTimeout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TransactionScope.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As InArgument(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TimeSpan&gt; ^ Timeout { System::Activities::InArgument&lt;TimeSpan&gt; ^ get(); void set(System::Activities::InArgument&lt;TimeSpan&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : System.Activities.InArgument&lt;TimeSpan&gt; with get, set" Usage="System.Activities.Statements.TransactionScope.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

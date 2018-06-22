@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebAuditEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebAuditEvent&#xA;Inherits WebManagementEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebAuditEvent : System::Web::Management::WebManagementEvent" />
+  <TypeSignature Language="F#" Value="type WebAuditEvent = class&#xA;    inherit WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuditEvent.#ctor(System.String,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuditEvent : string * obj * int -&gt; System.Web.Management.WebAuditEvent" Usage="new System.Web.Management.WebAuditEvent (message, eventSource, eventCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuditEvent : string * obj * int * int -&gt; System.Web.Management.WebAuditEvent" Usage="new System.Web.Management.WebAuditEvent (message, eventSource, eventCode, eventDetailCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebAuditEvent.RequestInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestInformation As WebRequestInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebRequestInformation ^ RequestInformation { System::Web::Management::WebRequestInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestInformation : System.Web.Management.WebRequestInformation" Usage="System.Web.Management.WebAuditEvent.RequestInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

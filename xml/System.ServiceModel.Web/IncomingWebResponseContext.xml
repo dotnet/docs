@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.IncomingWebResponseContext" />
   <TypeSignature Language="VB.NET" Value="Public Class IncomingWebResponseContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class IncomingWebResponseContext" />
+  <TypeSignature Language="F#" Value="type IncomingWebResponseContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ContentLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64" Usage="System.ServiceModel.Web.IncomingWebResponseContext.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.ServiceModel.Web.IncomingWebResponseContext.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.ETag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ETag { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ETag : string" Usage="System.ServiceModel.Web.IncomingWebResponseContext.ETag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.ServiceModel.Web.IncomingWebResponseContext.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : string" Usage="System.ServiceModel.Web.IncomingWebResponseContext.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As HttpStatusCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.HttpStatusCode" Usage="System.ServiceModel.Web.IncomingWebResponseContext.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebResponseContext.StatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string" Usage="System.ServiceModel.Web.IncomingWebResponseContext.StatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

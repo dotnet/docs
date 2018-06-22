@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterUnitConvert" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrinterUnitConvert" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrinterUnitConvert sealed" />
+  <TypeSignature Language="F#" Value="type PrinterUnitConvert = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Double,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Double, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Convert(double value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : double * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; double" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Point,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Point, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Point Convert(System::Drawing::Point value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Drawing.Point * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; System.Drawing.Point" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Printing.Margins,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Margins, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Margins" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Printing::Margins ^ Convert(System::Drawing::Printing::Margins ^ value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Drawing.Printing.Margins * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; System.Drawing.Printing.Margins" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Rectangle,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Rectangle, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Convert(System::Drawing::Rectangle value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Drawing.Rectangle * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Size,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Size, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Convert(System::Drawing::Size value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Drawing.Size * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; System.Drawing.Size" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Int32,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Integer, fromUnit As PrinterUnit, toUnit As PrinterUnit) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Convert(int value, System::Drawing::Printing::PrinterUnit fromUnit, System::Drawing::Printing::PrinterUnit toUnit);" />
+      <MemberSignature Language="F#" Value="static member Convert : int * System.Drawing.Printing.PrinterUnit * System.Drawing.Printing.PrinterUnit -&gt; int" Usage="System.Drawing.Printing.PrinterUnitConvert.Convert (value, fromUnit, toUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

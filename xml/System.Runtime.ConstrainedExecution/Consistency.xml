@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Consistency" />
   <TypeSignature Language="VB.NET" Value="Public Enum Consistency" />
   <TypeSignature Language="C++ CLI" Value="public enum class Consistency" />
+  <TypeSignature Language="F#" Value="type Consistency = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
       <MemberSignature Language="VB.NET" Value="MayCorruptAppDomain" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptAppDomain" />
+      <MemberSignature Language="F#" Value="MayCorruptAppDomain = 1" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
       <MemberSignature Language="VB.NET" Value="MayCorruptInstance" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptInstance" />
+      <MemberSignature Language="F#" Value="MayCorruptInstance = 2" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
       <MemberSignature Language="VB.NET" Value="MayCorruptProcess" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptProcess" />
+      <MemberSignature Language="F#" Value="MayCorruptProcess = 0" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
       <MemberSignature Language="VB.NET" Value="WillNotCorruptState" />
       <MemberSignature Language="C++ CLI" Value="WillNotCorruptState" />
+      <MemberSignature Language="F#" Value="WillNotCorruptState = 3" Usage="System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

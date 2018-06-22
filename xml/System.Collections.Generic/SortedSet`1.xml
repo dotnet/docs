@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedSet`1" />
   <TypeSignature Language="VB.NET" Value="Public Class SortedSet(Of T)&#xA;Implements ICollection, ICollection(Of T), IDeserializationCallback, IEnumerable(Of T), IReadOnlyCollection(Of T), ISerializable, ISet(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class SortedSet : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::ISet&lt;T&gt;, System::Collections::ICollection, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type SortedSet&lt;'T&gt; = class&#xA;    interface ISet&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedSet&lt;'T&gt; : System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;" Usage="new System.Collections.Generic.SortedSet&lt;'T&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -187,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedSet&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;" Usage="new System.Collections.Generic.SortedSet&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -228,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T), comparer As IComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedSet&lt;'T&gt; : seq&lt;'T&gt; * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;" Usage="new System.Collections.Generic.SortedSet&lt;'T&gt; (collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -264,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SortedSet(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedSet&lt;'T&gt; : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;" Usage="new System.Collections.Generic.SortedSet&lt;'T&gt; (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; bool&#xA;override this.Add : 'T -&gt; bool" Usage="sortedSet.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Add(`0)</InterfaceMember>
@@ -360,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="sortedSet.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -402,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Comparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparer As IComparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IComparer&lt;T&gt; ^ Comparer { System::Collections::Generic::IComparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comparer : System.Collections.Generic.IComparer&lt;'T&gt;" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Comparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -443,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="sortedSet.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -508,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="sortedSet.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -553,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="sortedSet.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -605,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] * int * int -&gt; unit" Usage="sortedSet.CopyTo (array, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -660,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -714,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CreateSetComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSetComparer () As IEqualityComparer(Of SortedSet(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEqualityComparer&lt;System::Collections::Generic::SortedSet&lt;T&gt; ^&gt; ^ CreateSetComparer();" />
+      <MemberSignature Language="F#" Value="static member CreateSetComparer : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.SortedSet&lt;'T&gt;&gt;" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.CreateSetComparer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -754,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CreateSetComparer(System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSetComparer (memberEqualityComparer As IEqualityComparer(Of T)) As IEqualityComparer(Of SortedSet(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEqualityComparer&lt;System::Collections::Generic::SortedSet&lt;T&gt; ^&gt; ^ CreateSetComparer(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ memberEqualityComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateSetComparer : System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.SortedSet&lt;'T&gt;&gt;" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.CreateSetComparer memberEqualityComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -805,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member ExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.ExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="sortedSet.ExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -862,6 +878,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As SortedSet(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::SortedSet&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;.Enumerator" Usage="sortedSet.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -904,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="sortedSet.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -952,6 +970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetViewBetween(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetViewBetween (lowerValue As T, upperValue As T) As SortedSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::SortedSet&lt;T&gt; ^ GetViewBetween(T lowerValue, T upperValue);" />
+      <MemberSignature Language="F#" Value="abstract member GetViewBetween : 'T * 'T -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;&#xA;override this.GetViewBetween : 'T * 'T -&gt; System.Collections.Generic.SortedSet&lt;'T&gt;" Usage="sortedSet.GetViewBetween (lowerValue, upperValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1008,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub IntersectWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IntersectWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.IntersectWith : seq&lt;'T&gt; -&gt; unit" Usage="sortedSet.IntersectWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1057,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.IsProperSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1115,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.IsProperSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1173,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.IsSubsetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1231,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.IsSupersetOf other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1284,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Max" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Max As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Max { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Max : 'T" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Max" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1316,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Min" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Min As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Min { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Min : 'T" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Min" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1348,6 +1374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="sortedSet.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -1392,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Overlaps : seq&lt;'T&gt; -&gt; bool&#xA;override this.Overlaps : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.Overlaps other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1443,6 +1471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="sortedSet.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -1494,6 +1523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.RemoveWhere(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveWhere (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int RemoveWhere(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.RemoveWhere : Predicate&lt;'T&gt; -&gt; int" Usage="sortedSet.RemoveWhere match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1551,6 +1581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Function Reverse () As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;T&gt; ^ Reverse();" />
+      <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; seq&lt;'T&gt;" Usage="sortedSet.Reverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1584,6 +1615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SetEquals : seq&lt;'T&gt; -&gt; bool&#xA;override this.SetEquals : seq&lt;'T&gt; -&gt; bool" Usage="sortedSet.SetEquals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1640,6 +1672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SymmetricExceptWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="sortedSet.SymmetricExceptWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
@@ -1737,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1882,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1925,6 +1960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -2106,6 +2142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.TryGetValue(`0,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : 'T *  -&gt; bool" Usage="sortedSet.TryGetValue (equalValue, actualValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2144,6 +2181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnionWith (other As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member UnionWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.UnionWith : seq&lt;'T&gt; -&gt; unit" Usage="sortedSet.UnionWith other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiscoveryReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryReference abstract" />
+  <TypeSignature Language="F#" Value="type DiscoveryReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientProtocol As DiscoveryClientProtocol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryClientProtocol ^ ClientProtocol { System::Web::Services::Discovery::DiscoveryClientProtocol ^ get(); void set(System::Web::Services::Discovery::DiscoveryClientProtocol ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientProtocol : System.Web.Services.Discovery.DiscoveryClientProtocol with get, set" Usage="System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryReference.DefaultFilename" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultFilename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultFilename { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFilename : string" Usage="System.Web.Services.Discovery.DiscoveryReference.DefaultFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReference.FilenameFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FilenameFromUrl (url As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FilenameFromUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member FilenameFromUrl : string -&gt; string" Usage="System.Web.Services.Discovery.DiscoveryReference.FilenameFromUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReference.ReadDocument(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ReadDocument(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member ReadDocument : System.IO.Stream -&gt; obj" Usage="discoveryReference.ReadDocument stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReference.Resolve" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resolve ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve();" />
+      <MemberSignature Language="F#" Value="member this.Resolve : unit -&gt; unit" Usage="discoveryReference.Resolve " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReference.Resolve(System.String,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Resolve(System::String ^ contentType, System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : string * System.IO.Stream -&gt; unit" Usage="discoveryReference.Resolve (contentType, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryReference.Url" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Url As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.Services.Discovery.DiscoveryReference.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryReference.WriteDocument(System.Object,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteDocument(System::Object ^ document, System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member WriteDocument : obj * System.IO.Stream -&gt; unit" Usage="discoveryReference.WriteDocument (document, stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

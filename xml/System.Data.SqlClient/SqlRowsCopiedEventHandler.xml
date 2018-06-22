@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlRowsCopiedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SqlRowsCopiedEventHandler(sender As Object, e As SqlRowsCopiedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SqlRowsCopiedEventHandler(System::Object ^ sender, SqlRowsCopiedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SqlRowsCopiedEventHandler = delegate of obj * SqlRowsCopiedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

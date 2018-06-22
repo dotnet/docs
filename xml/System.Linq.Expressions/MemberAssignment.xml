@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberAssignment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemberAssignment&#xA;Inherits MemberBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberAssignment sealed : System::Linq::Expressions::MemberBinding" />
+  <TypeSignature Language="F#" Value="type MemberAssignment = class&#xA;    inherit MemberBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberAssignment.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.MemberAssignment.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.MemberAssignment Update(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberAssignment.Update(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::MemberAssignment ^ Update(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.MemberAssignment" Usage="memberAssignment.Update expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

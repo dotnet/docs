@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.ISessionStateModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISessionStateModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISessionStateModule : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type ISessionStateModule = interface&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseSessionState (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseSessionState(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseSessionState : System.Web.HttpContext -&gt; unit" Usage="iSessionStateModule.ReleaseSessionState context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.ISessionStateModule.ReleaseSessionStateAsync(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReleaseSessionStateAsync (context As HttpContext) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ReleaseSessionStateAsync(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseSessionStateAsync : System.Web.HttpContext -&gt; System.Threading.Tasks.Task" Usage="iSessionStateModule.ReleaseSessionStateAsync context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

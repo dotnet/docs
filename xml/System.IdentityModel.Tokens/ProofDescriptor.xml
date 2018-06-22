@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ProofDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProofDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProofDescriptor abstract" />
+  <TypeSignature Language="F#" Value="type ProofDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ApplyTo (response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ApplyTo(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit" Usage="proofDescriptor.ApplyTo response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.ProofDescriptor.KeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KeyIdentifier As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ KeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.ProofDescriptor.KeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetHostingPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspNetHostingPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type AspNetHostingPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetHostingPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Web.AspNetHostingPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Web.AspNetHostingPermissionAttribute" Usage="new System.Web.AspNetHostingPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="aspNetHostingPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.AspNetHostingPermissionAttribute.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As AspNetHostingPermissionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::AspNetHostingPermissionLevel Level { System::Web::AspNetHostingPermissionLevel get(); void set(System::Web::AspNetHostingPermissionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Web.AspNetHostingPermissionLevel with get, set" Usage="System.Web.AspNetHostingPermissionAttribute.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

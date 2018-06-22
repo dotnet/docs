@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowWebService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowWebService&#xA;Inherits WebService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowWebService abstract : System::Web::Services::WebService" />
+  <TypeSignature Language="F#" Value="type WorkflowWebService = class&#xA;    inherit WebService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowWebService.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (workflowType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowWebService(Type ^ workflowType);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.WorkflowWebService : Type -&gt; System.Workflow.Activities.WorkflowWebService" Usage="new System.Workflow.Activities.WorkflowWebService workflowType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowWebService.Invoke(System.Type,System.String,System.Boolean,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Function Invoke (interfaceType As Type, methodName As String, isActivation As Boolean, parameters As Object()) As Object()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(Type ^ interfaceType, System::String ^ methodName, bool isActivation, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : Type * string * bool * obj[] -&gt; obj[]" Usage="workflowWebService.Invoke (interfaceType, methodName, isActivation, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowWebService.WorkflowRuntime" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WorkflowRuntime As WorkflowRuntime" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::Runtime::WorkflowRuntime ^ WorkflowRuntime { System::Workflow::Runtime::WorkflowRuntime ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowRuntime : System.Workflow.Runtime.WorkflowRuntime" Usage="System.Workflow.Activities.WorkflowWebService.WorkflowRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

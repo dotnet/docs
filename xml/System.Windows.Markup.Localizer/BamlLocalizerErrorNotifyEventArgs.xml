@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class BamlLocalizerErrorNotifyEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BamlLocalizerErrorNotifyEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type BamlLocalizerErrorNotifyEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Error" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As BamlLocalizerError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::Localizer::BamlLocalizerError Error { System::Windows::Markup::Localizer::BamlLocalizerError get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : System.Windows.Markup.Localizer.BamlLocalizerError" Usage="System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As BamlLocalizableResourceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::Localizer::BamlLocalizableResourceKey ^ Key { System::Windows::Markup::Localizer::BamlLocalizableResourceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Windows.Markup.Localizer.BamlLocalizableResourceKey" Usage="System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

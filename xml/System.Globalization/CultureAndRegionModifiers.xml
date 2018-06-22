@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureAndRegionModifiers" />
   <TypeSignature Language="VB.NET" Value="Public Enum CultureAndRegionModifiers" />
   <TypeSignature Language="C++ CLI" Value="public enum class CultureAndRegionModifiers" />
+  <TypeSignature Language="F#" Value="type CultureAndRegionModifiers = " />
   <AssemblyInfo>
     <AssemblyName>sysglobl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureAndRegionModifiers.Neutral" />
       <MemberSignature Language="VB.NET" Value="Neutral" />
       <MemberSignature Language="C++ CLI" Value="Neutral" />
+      <MemberSignature Language="F#" Value="Neutral = 1" Usage="System.Globalization.CultureAndRegionModifiers.Neutral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureAndRegionModifiers.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Globalization.CultureAndRegionModifiers.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureAndRegionModifiers.Replacement" />
       <MemberSignature Language="VB.NET" Value="Replacement" />
       <MemberSignature Language="C++ CLI" Value="Replacement" />
+      <MemberSignature Language="F#" Value="Replacement = 2" Usage="System.Globalization.CultureAndRegionModifiers.Replacement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>

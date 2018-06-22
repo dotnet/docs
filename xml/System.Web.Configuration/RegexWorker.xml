@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RegexWorker" />
   <TypeSignature Language="VB.NET" Value="Public Class RegexWorker" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegexWorker" />
+  <TypeSignature Language="F#" Value="type RegexWorker = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.#ctor(System.Web.HttpBrowserCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (browserCaps As HttpBrowserCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexWorker(System::Web::HttpBrowserCapabilities ^ browserCaps);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.RegexWorker : System.Web.HttpBrowserCapabilities -&gt; System.Web.Configuration.RegexWorker" Usage="new System.Web.Configuration.RegexWorker browserCaps" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RegexWorker.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.Configuration.RegexWorker.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.ProcessRegex(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessRegex (target As String, regexExpression As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ProcessRegex(System::String ^ target, System::String ^ regexExpression);" />
+      <MemberSignature Language="F#" Value="member this.ProcessRegex : string * string -&gt; bool" Usage="regexWorker.ProcessRegex (target, regexExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

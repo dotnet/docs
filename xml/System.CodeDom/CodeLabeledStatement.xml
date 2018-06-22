@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeLabeledStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeLabeledStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeLabeledStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeLabeledStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLabeledStatement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (label As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLabeledStatement(System::String ^ label);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeLabeledStatement : string -&gt; System.CodeDom.CodeLabeledStatement" Usage="new System.CodeDom.CodeLabeledStatement label" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLabeledStatement.#ctor(System.String,System.CodeDom.CodeStatement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (label As String, statement As CodeStatement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLabeledStatement(System::String ^ label, System::CodeDom::CodeStatement ^ statement);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeLabeledStatement : string * System.CodeDom.CodeStatement -&gt; System.CodeDom.CodeLabeledStatement" Usage="new System.CodeDom.CodeLabeledStatement (label, statement)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLabeledStatement.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.CodeDom.CodeLabeledStatement.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLabeledStatement.Statement" />
       <MemberSignature Language="VB.NET" Value="Public Property Statement As CodeStatement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatement ^ Statement { System::CodeDom::CodeStatement ^ get(); void set(System::CodeDom::CodeStatement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Statement : System.CodeDom.CodeStatement with get, set" Usage="System.CodeDom.CodeLabeledStatement.Statement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

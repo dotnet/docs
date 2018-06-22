@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BamlLocalizerErrorNotifyEventHandler(sender As Object, e As BamlLocalizerErrorNotifyEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BamlLocalizerErrorNotifyEventHandler(System::Object ^ sender, BamlLocalizerErrorNotifyEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BamlLocalizerErrorNotifyEventHandler = delegate of obj * BamlLocalizerErrorNotifyEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

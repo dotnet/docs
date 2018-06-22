@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.InOutArgumentConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InOutArgumentConverter&#xA;Inherits TypeConverterBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class InOutArgumentConverter sealed : System::Activities::XamlIntegration::TypeConverterBase" />
+  <TypeSignature Language="F#" Value="type InOutArgumentConverter = class&#xA;    inherit TypeConverterBase" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.InOutArgumentConverter.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InOutArgumentConverter(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Activities.XamlIntegration.InOutArgumentConverter : Type -&gt; System.Activities.XamlIntegration.InOutArgumentConverter" Usage="new System.Activities.XamlIntegration.InOutArgumentConverter type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationError" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationError" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationError" />
+  <TypeSignature Language="F#" Value="type ValidationError = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationError.#ctor(System.Windows.Controls.ValidationRule,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ruleInError As ValidationRule, bindingInError As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationError(System::Windows::Controls::ValidationRule ^ ruleInError, System::Object ^ bindingInError);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationError : System.Windows.Controls.ValidationRule * obj -&gt; System.Windows.Controls.ValidationError" Usage="new System.Windows.Controls.ValidationError (ruleInError, bindingInError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ValidationRule ruleInError, object bindingInError, object errorContent, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationError.#ctor(System.Windows.Controls.ValidationRule,System.Object,System.Object,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationError(System::Windows::Controls::ValidationRule ^ ruleInError, System::Object ^ bindingInError, System::Object ^ errorContent, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ValidationError : System.Windows.Controls.ValidationRule * obj * obj * Exception -&gt; System.Windows.Controls.ValidationError" Usage="new System.Windows.Controls.ValidationError (ruleInError, bindingInError, errorContent, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.BindingInError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingInError As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BindingInError { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingInError : obj" Usage="System.Windows.Controls.ValidationError.BindingInError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.ErrorContent" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorContent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ErrorContent { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorContent : obj with get, set" Usage="System.Windows.Controls.ValidationError.ErrorContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception with get, set" Usage="System.Windows.Controls.ValidationError.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationError.RuleInError" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleInError As ValidationRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ValidationRule ^ RuleInError { System::Windows::Controls::ValidationRule ^ get(); void set(System::Windows::Controls::ValidationRule ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RuleInError : System.Windows.Controls.ValidationRule with get, set" Usage="System.Windows.Controls.ValidationError.RuleInError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

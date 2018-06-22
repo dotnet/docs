@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Computer" />
   <TypeSignature Language="VB.NET" Value="Public Class Computer&#xA;Inherits ServerComputer" />
   <TypeSignature Language="C++ CLI" Value="public ref class Computer : Microsoft::VisualBasic::Devices::ServerComputer" />
+  <TypeSignature Language="F#" Value="type Computer = class&#xA;    inherit ServerComputer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Audio" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Audio As Audio" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Audio ^ Audio { Microsoft::VisualBasic::Devices::Audio ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Audio : Microsoft.VisualBasic.Devices.Audio" Usage="Microsoft.VisualBasic.Devices.Computer.Audio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Clipboard" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clipboard As ClipboardProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::MyServices::ClipboardProxy ^ Clipboard { Microsoft::VisualBasic::MyServices::ClipboardProxy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Clipboard : Microsoft.VisualBasic.MyServices.ClipboardProxy" Usage="Microsoft.VisualBasic.Devices.Computer.Clipboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Keyboard" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keyboard As Keyboard" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Keyboard ^ Keyboard { Microsoft::VisualBasic::Devices::Keyboard ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keyboard : Microsoft.VisualBasic.Devices.Keyboard" Usage="Microsoft.VisualBasic.Devices.Computer.Keyboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -235,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Mouse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mouse As Mouse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Mouse ^ Mouse { Microsoft::VisualBasic::Devices::Mouse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mouse : Microsoft.VisualBasic.Devices.Mouse" Usage="Microsoft.VisualBasic.Devices.Computer.Mouse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -284,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Ports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ports As Ports" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Ports ^ Ports { Microsoft::VisualBasic::Devices::Ports ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ports : Microsoft.VisualBasic.Devices.Ports" Usage="Microsoft.VisualBasic.Devices.Computer.Ports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -337,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Computer.Screen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Screen As Screen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Screen ^ Screen { System::Windows::Forms::Screen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Screen : System.Windows.Forms.Screen" Usage="Microsoft.VisualBasic.Devices.Computer.Screen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

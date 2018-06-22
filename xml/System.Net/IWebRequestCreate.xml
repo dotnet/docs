@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IWebRequestCreate" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebRequestCreate" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebRequestCreate" />
+  <TypeSignature Language="F#" Value="type IWebRequestCreate = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebRequest Create(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IWebRequestCreate.Create(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::WebRequest ^ Create(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member Create : Uri -&gt; System.Net.WebRequest" Usage="iWebRequestCreate.Create uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>

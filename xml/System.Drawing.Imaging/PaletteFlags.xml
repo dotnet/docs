@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PaletteFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum PaletteFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class PaletteFlags" />
+  <TypeSignature Language="F#" Value="type PaletteFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.PaletteFlags.GrayScale" />
       <MemberSignature Language="VB.NET" Value="GrayScale" />
       <MemberSignature Language="C++ CLI" Value="GrayScale" />
+      <MemberSignature Language="F#" Value="GrayScale = 2" Usage="System.Drawing.Imaging.PaletteFlags.GrayScale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.PaletteFlags.Halftone" />
       <MemberSignature Language="VB.NET" Value="Halftone" />
       <MemberSignature Language="C++ CLI" Value="Halftone" />
+      <MemberSignature Language="F#" Value="Halftone = 4" Usage="System.Drawing.Imaging.PaletteFlags.Halftone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.PaletteFlags.HasAlpha" />
       <MemberSignature Language="VB.NET" Value="HasAlpha" />
       <MemberSignature Language="C++ CLI" Value="HasAlpha" />
+      <MemberSignature Language="F#" Value="HasAlpha = 1" Usage="System.Drawing.Imaging.PaletteFlags.HasAlpha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

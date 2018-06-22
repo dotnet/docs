@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppDomainInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppDomainInitializer(args As String())" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AppDomainInitializer(cli::array &lt;System::String ^&gt; ^ args);" />
+  <TypeSignature Language="F#" Value="type AppDomainInitializer = delegate of string[] -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

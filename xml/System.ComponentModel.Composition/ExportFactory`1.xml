@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ExportFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ExportFactory(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ExportFactory" />
+  <TypeSignature Language="F#" Value="type ExportFactory&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@ Public Property theData As ExportFactory(Of String)
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportFactory`1.#ctor(System.Func{System.Tuple{`0,System.Action}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exportLifetimeContextCreator As Func(Of Tuple(Of T, Action)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportFactory(Func&lt;Tuple&lt;T, Action ^&gt; ^&gt; ^ exportLifetimeContextCreator);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ExportFactory&lt;'T&gt; : Func&lt;'T * Action&gt; -&gt; System.ComponentModel.Composition.ExportFactory&lt;'T&gt;" Usage="new System.ComponentModel.Composition.ExportFactory&lt;'T&gt; exportLifetimeContextCreator" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -76,6 +78,7 @@ Public Property theData As ExportFactory(Of String)
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportFactory`1.CreateExport" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExport () As ExportLifetimeContext(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::ExportLifetimeContext&lt;T&gt; ^ CreateExport();" />
+      <MemberSignature Language="F#" Value="member this.CreateExport : unit -&gt; System.ComponentModel.Composition.ExportLifetimeContext&lt;'T&gt;" Usage="exportFactory.CreateExport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -97,6 +100,7 @@ Public Property theData As ExportFactory(Of String)
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnFilterScopedCatalog(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition composablePartDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportFactory`1.OnFilterScopedCatalog(System.ComponentModel.Composition.Primitives.ComposablePartDefinition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnFilterScopedCatalog(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ composablePartDefinition);" />
+      <MemberSignature Language="F#" Value="abstract member OnFilterScopedCatalog : System.ComponentModel.Composition.Primitives.ComposablePartDefinition -&gt; bool&#xA;override this.OnFilterScopedCatalog : System.ComponentModel.Composition.Primitives.ComposablePartDefinition -&gt; bool" Usage="exportFactory.OnFilterScopedCatalog composablePartDefinition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

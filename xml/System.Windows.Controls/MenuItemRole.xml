@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuItemRole" />
   <TypeSignature Language="VB.NET" Value="Public Enum MenuItemRole" />
   <TypeSignature Language="C++ CLI" Value="public enum class MenuItemRole" />
+  <TypeSignature Language="F#" Value="type MenuItemRole = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuHeader" />
       <MemberSignature Language="VB.NET" Value="SubmenuHeader" />
       <MemberSignature Language="C++ CLI" Value="SubmenuHeader" />
+      <MemberSignature Language="F#" Value="SubmenuHeader = 3" Usage="System.Windows.Controls.MenuItemRole.SubmenuHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuItem" />
       <MemberSignature Language="VB.NET" Value="SubmenuItem" />
       <MemberSignature Language="C++ CLI" Value="SubmenuItem" />
+      <MemberSignature Language="F#" Value="SubmenuItem = 2" Usage="System.Windows.Controls.MenuItemRole.SubmenuItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelHeader" />
       <MemberSignature Language="VB.NET" Value="TopLevelHeader" />
       <MemberSignature Language="C++ CLI" Value="TopLevelHeader" />
+      <MemberSignature Language="F#" Value="TopLevelHeader = 1" Usage="System.Windows.Controls.MenuItemRole.TopLevelHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelItem" />
       <MemberSignature Language="VB.NET" Value="TopLevelItem" />
       <MemberSignature Language="C++ CLI" Value="TopLevelItem" />
+      <MemberSignature Language="F#" Value="TopLevelItem = 0" Usage="System.Windows.Controls.MenuItemRole.TopLevelItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteDelegateContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteDelegateContract&#xA;Implements IRemoteObjectContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteDelegateContract : System::AddIn::Contract::Automation::IRemoteObjectContract" />
+  <TypeSignature Language="F#" Value="type IRemoteDelegateContract = interface&#xA;    interface IRemoteObjectContract&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteDelegateContract.InvokeDelegate(System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeDelegate (args As IRemoteArgumentArrayContract) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument InvokeDelegate(System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeDelegate : System.AddIn.Contract.Collections.IRemoteArgumentArrayContract -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteDelegateContract.InvokeDelegate args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

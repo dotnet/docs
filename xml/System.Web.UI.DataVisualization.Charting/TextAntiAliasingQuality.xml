@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextAntiAliasingQuality" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextAntiAliasingQuality" />
+  <TypeSignature Language="F#" Value="type TextAntiAliasingQuality = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 1" Usage="System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.SystemDefault" />
       <MemberSignature Language="VB.NET" Value="SystemDefault" />
       <MemberSignature Language="C++ CLI" Value="SystemDefault" />
+      <MemberSignature Language="F#" Value="SystemDefault = 2" Usage="System.Web.UI.DataVisualization.Charting.TextAntiAliasingQuality.SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

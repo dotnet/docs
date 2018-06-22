@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.Rule" />
   <TypeSignature Language="VB.NET" Value="Public Class Rule" />
   <TypeSignature Language="C++ CLI" Value="public ref class Rule" />
+  <TypeSignature Language="F#" Value="type Rule = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rule(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.Rule : string -&gt; System.Workflow.Activities.Rules.Rule" Usage="new System.Workflow.Activities.Rules.Rule name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -85,6 +87,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.#ctor(System.String,System.Workflow.Activities.Rules.RuleCondition,System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, condition As RuleCondition, thenActions As IList(Of RuleAction))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rule(System::String ^ name, System::Workflow::Activities::Rules::RuleCondition ^ condition, System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ thenActions);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.Rule : string * System.Workflow.Activities.Rules.RuleCondition * System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt; -&gt; System.Workflow.Activities.Rules.Rule" Usage="new System.Workflow.Activities.Rules.Rule (name, condition, thenActions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -109,6 +112,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.#ctor(System.String,System.Workflow.Activities.Rules.RuleCondition,System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction},System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, condition As RuleCondition, thenActions As IList(Of RuleAction), elseActions As IList(Of RuleAction))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rule(System::String ^ name, System::Workflow::Activities::Rules::RuleCondition ^ condition, System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ thenActions, System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ elseActions);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.Rule : string * System.Workflow.Activities.Rules.RuleCondition * System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt; * System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt; -&gt; System.Workflow.Activities.Rules.Rule" Usage="new System.Workflow.Activities.Rules.Rule (name, condition, thenActions, elseActions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -135,6 +139,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.Active" />
       <MemberSignature Language="VB.NET" Value="Public Property Active As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Active { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Workflow.Activities.Rules.Rule.Active" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -163,6 +168,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Rule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::Rules::Rule ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Workflow.Activities.Rules.Rule" Usage="rule.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -184,6 +190,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As RuleCondition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleCondition ^ Condition { System::Workflow::Activities::Rules::RuleCondition ^ get(); void set(System::Workflow::Activities::Rules::RuleCondition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Workflow.Activities.Rules.RuleCondition with get, set" Usage="System.Workflow.Activities.Rules.Rule.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -204,6 +211,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Workflow.Activities.Rules.Rule.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -224,6 +232,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.ElseActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElseActions As IList(Of RuleAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ ElseActions { System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElseActions : System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;" Usage="System.Workflow.Activities.Rules.Rule.ElseActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -258,6 +267,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rule.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -283,6 +293,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.Rule.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rule.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -304,6 +315,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.Rules.Rule.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -324,6 +336,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.Workflow.Activities.Rules.Rule.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -353,6 +366,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.ReevaluationBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property ReevaluationBehavior As RuleReevaluationBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleReevaluationBehavior ReevaluationBehavior { System::Workflow::Activities::Rules::RuleReevaluationBehavior get(); void set(System::Workflow::Activities::Rules::RuleReevaluationBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.ReevaluationBehavior : System.Workflow.Activities.Rules.RuleReevaluationBehavior with get, set" Usage="System.Workflow.Activities.Rules.Rule.ReevaluationBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -373,6 +387,7 @@ private Rule firstRule = new Rule("firstRule");
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.Rule.ThenActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThenActions As IList(Of RuleAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ ThenActions { System::Collections::Generic::IList&lt;System::Workflow::Activities::Rules::RuleAction ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThenActions : System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;" Usage="System.Workflow.Activities.Rules.Rule.ThenActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

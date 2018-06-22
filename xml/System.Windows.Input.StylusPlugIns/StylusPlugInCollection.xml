@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.StylusPlugInCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StylusPlugInCollection&#xA;Inherits Collection(Of StylusPlugIn)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusPlugInCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Windows::Input::StylusPlugIns::StylusPlugIn ^&gt;" />
+  <TypeSignature Language="F#" Value="type StylusPlugInCollection = class&#xA;    inherit Collection&lt;StylusPlugIn&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.StylusPlugInCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="stylusPlugInCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.StylusPlugInCollection.InsertItem(System.Int32,System.Windows.Input.StylusPlugIns.StylusPlugIn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, plugIn As StylusPlugIn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Input::StylusPlugIns::StylusPlugIn ^ plugIn);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Windows.Input.StylusPlugIns.StylusPlugIn -&gt; unit" Usage="stylusPlugInCollection.InsertItem (index, plugIn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.StylusPlugInCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="stylusPlugInCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.StylusPlugInCollection.SetItem(System.Int32,System.Windows.Input.StylusPlugIns.StylusPlugIn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, plugIn As StylusPlugIn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Input::StylusPlugIns::StylusPlugIn ^ plugIn);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Windows.Input.StylusPlugIns.StylusPlugIn -&gt; unit" Usage="stylusPlugInCollection.SetItem (index, plugIn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

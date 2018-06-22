@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.KeyType" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyType" />
   <TypeSignature Language="C++ CLI" Value="public enum class KeyType" />
+  <TypeSignature Language="F#" Value="type KeyType = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Encryption" />
       <MemberSignature Language="VB.NET" Value="Encryption" />
       <MemberSignature Language="C++ CLI" Value="Encryption" />
+      <MemberSignature Language="F#" Value="Encryption = 2" Usage="System.IdentityModel.Metadata.KeyType.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Signing" />
       <MemberSignature Language="VB.NET" Value="Signing" />
       <MemberSignature Language="C++ CLI" Value="Signing" />
+      <MemberSignature Language="F#" Value="Signing = 1" Usage="System.IdentityModel.Metadata.KeyType.Signing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.IdentityModel.Metadata.KeyType.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

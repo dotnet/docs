@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlServices" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type SqlServices = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.GenerateApplicationServicesScripts(System.Boolean,System.Web.Management.SqlFeatures,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateApplicationServicesScripts (install As Boolean, features As SqlFeatures, database As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateApplicationServicesScripts(bool install, System::Web::Management::SqlFeatures features, System::String ^ database);" />
+      <MemberSignature Language="F#" Value="static member GenerateApplicationServicesScripts : bool * System.Web.Management.SqlFeatures * string -&gt; string" Usage="System.Web.Management.SqlServices.GenerateApplicationServicesScripts (install, features, database)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.GenerateSessionStateScripts(System.Boolean,System.Web.Management.SessionStateType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateSessionStateScripts (install As Boolean, type As SessionStateType, customDatabase As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateSessionStateScripts(bool install, System::Web::Management::SessionStateType type, System::String ^ customDatabase);" />
+      <MemberSignature Language="F#" Value="static member GenerateSessionStateScripts : bool * System.Web.Management.SessionStateType * string -&gt; string" Usage="System.Web.Management.SqlServices.GenerateSessionStateScripts (install, type, customDatabase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.String,System.Web.Management.SqlFeatures)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (server As String, database As String, features As SqlFeatures)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ server, System::String ^ database, System::Web::Management::SqlFeatures features);" />
+      <MemberSignature Language="F#" Value="static member Install : string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Install (server, database, features)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.Web.Management.SqlFeatures,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (database As String, features As SqlFeatures, connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ database, System::Web::Management::SqlFeatures features, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member Install : string * System.Web.Management.SqlFeatures * string -&gt; unit" Usage="System.Web.Management.SqlServices.Install (database, features, connectionString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.String,System.String,System.String,System.Web.Management.SqlFeatures)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (server As String, user As String, password As String, database As String, features As SqlFeatures)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ database, System::Web::Management::SqlFeatures features);" />
+      <MemberSignature Language="F#" Value="static member Install : string * string * string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Install (server, user, password, database, features)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.String,System.Web.Management.SessionStateType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (server As String, customDatabase As String, type As SessionStateType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ server, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (server, customDatabase, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.Web.Management.SessionStateType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (customDatabase As String, type As SessionStateType, connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ customDatabase, System::Web::Management::SessionStateType type, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * System.Web.Management.SessionStateType * string -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (customDatabase, type, connectionString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.String,System.String,System.String,System.Web.Management.SessionStateType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (server As String, user As String, password As String, customDatabase As String, type As SessionStateType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * string * string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (server, user, password, customDatabase, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.String,System.Web.Management.SqlFeatures)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (server As String, database As String, features As SqlFeatures)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ server, System::String ^ database, System::Web::Management::SqlFeatures features);" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (server, database, features)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -464,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.Web.Management.SqlFeatures,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (database As String, features As SqlFeatures, connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ database, System::Web::Management::SqlFeatures features, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * System.Web.Management.SqlFeatures * string -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (database, features, connectionString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -513,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.String,System.String,System.String,System.Web.Management.SqlFeatures)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (server As String, user As String, password As String, database As String, features As SqlFeatures)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ database, System::Web::Management::SqlFeatures features);" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * string * string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (server, user, password, database, features)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -568,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.String,System.Web.Management.SessionStateType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (server As String, customDatabase As String, type As SessionStateType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ server, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (server, customDatabase, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.Web.Management.SessionStateType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (customDatabase As String, type As SessionStateType, connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ customDatabase, System::Web::Management::SessionStateType type, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * System.Web.Management.SessionStateType * string -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (customDatabase, type, connectionString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -657,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.String,System.String,System.String,System.Web.Management.SessionStateType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (server As String, user As String, password As String, customDatabase As String, type As SessionStateType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * string * string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (server, user, password, customDatabase, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

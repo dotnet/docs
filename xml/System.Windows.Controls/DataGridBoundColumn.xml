@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridBoundColumn" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridBoundColumn&#xA;Inherits DataGridColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridBoundColumn abstract : System::Windows::Controls::DataGridColumn" />
+  <TypeSignature Language="F#" Value="type DataGridBoundColumn = class&#xA;    inherit DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Binding As BindingBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ Binding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.Controls.DataGridBoundColumn.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.ClipboardContentBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ClipboardContentBinding As BindingBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ ClipboardContentBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClipboardContentBinding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.Controls.DataGridBoundColumn.ClipboardContentBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property EditingElementStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ EditingElementStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditingElementStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridBoundColumn.EditingElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridBoundColumn.EditingElementStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingElementStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EditingElementStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EditingElementStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridBoundColumn.EditingElementStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.ElementStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ElementStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ElementStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ElementStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridBoundColumn.ElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridBoundColumn.ElementStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ElementStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ElementStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ElementStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridBoundColumn.ElementStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBindingChanged (oldBinding As BindingBase, newBinding As BindingBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBindingChanged(System::Windows::Data::BindingBase ^ oldBinding, System::Windows::Data::BindingBase ^ newBinding);" />
+      <MemberSignature Language="F#" Value="abstract member OnBindingChanged : System.Windows.Data.BindingBase * System.Windows.Data.BindingBase -&gt; unit&#xA;override this.OnBindingChanged : System.Windows.Data.BindingBase * System.Windows.Data.BindingBase -&gt; unit" Usage="dataGridBoundColumn.OnBindingChanged (oldBinding, newBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.OnCoerceIsReadOnly(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCoerceIsReadOnly (baseValue As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnCoerceIsReadOnly(bool baseValue);" />
+      <MemberSignature Language="F#" Value="override this.OnCoerceIsReadOnly : bool -&gt; bool" Usage="dataGridBoundColumn.OnCoerceIsReadOnly baseValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshCellContent (element As FrameworkElement, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RefreshCellContent(System::Windows::FrameworkElement ^ element, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="override this.RefreshCellContent : System.Windows.FrameworkElement * string -&gt; unit" Usage="dataGridBoundColumn.RefreshCellContent (element, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcRowUpdatedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OdbcRowUpdatedEventHandler(sender As Object, e As OdbcRowUpdatedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OdbcRowUpdatedEventHandler(System::Object ^ sender, OdbcRowUpdatedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OdbcRowUpdatedEventHandler = delegate of obj * OdbcRowUpdatedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

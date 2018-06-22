@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.RoutingExtensionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingExtensionElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoutingExtensionElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type RoutingExtensionElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Routing.Configuration.RoutingExtensionElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="routingExtensionElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.EnsureOrderedDispatch" />
       <MemberSignature Language="VB.NET" Value="Public Property EnsureOrderedDispatch As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureOrderedDispatch { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnsureOrderedDispatch : bool with get, set" Usage="System.ServiceModel.Routing.Configuration.RoutingExtensionElement.EnsureOrderedDispatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.FilterTableName" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterTableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterTableName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterTableName : string with get, set" Usage="System.ServiceModel.Routing.Configuration.RoutingExtensionElement.FilterTableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.RouteOnHeadersOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteOnHeadersOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteOnHeadersOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteOnHeadersOnly : bool with get, set" Usage="System.ServiceModel.Routing.Configuration.RoutingExtensionElement.RouteOnHeadersOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.SoapProcessingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapProcessingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SoapProcessingEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapProcessingEnabled : bool with get, set" Usage="System.ServiceModel.Routing.Configuration.RoutingExtensionElement.SoapProcessingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

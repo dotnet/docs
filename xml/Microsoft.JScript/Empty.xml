@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Empty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Empty" />
   <TypeSignature Language="C++ CLI" Value="public ref class Empty sealed" />
+  <TypeSignature Language="F#" Value="type Empty = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Empty.Value" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As Empty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::JScript::Empty ^ Value;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Value : Microsoft.JScript.Empty" Usage="Microsoft.JScript.Empty.Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

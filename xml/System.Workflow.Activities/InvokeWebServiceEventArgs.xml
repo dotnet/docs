@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.InvokeWebServiceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeWebServiceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeWebServiceEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type InvokeWebServiceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWebServiceEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (proxyInstance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeWebServiceEventArgs(System::Object ^ proxyInstance);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.InvokeWebServiceEventArgs : obj -&gt; System.Workflow.Activities.InvokeWebServiceEventArgs" Usage="new System.Workflow.Activities.InvokeWebServiceEventArgs proxyInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWebServiceEventArgs.WebServiceProxy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebServiceProxy As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WebServiceProxy { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebServiceProxy : obj" Usage="System.Workflow.Activities.InvokeWebServiceEventArgs.WebServiceProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

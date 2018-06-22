@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectChooseElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectChooseElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectChooseElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectChooseElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectChooseElement.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.Construction.ProjectChooseElement.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectChooseElement.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectChooseElement.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectChooseElement.OtherwiseElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherwiseElement As ProjectOtherwiseElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectOtherwiseElement ^ OtherwiseElement { Microsoft::Build::Construction::ProjectOtherwiseElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OtherwiseElement : Microsoft.Build.Construction.ProjectOtherwiseElement" Usage="Microsoft.Build.Construction.ProjectChooseElement.OtherwiseElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectChooseElement.WhenElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhenElements As ICollection(Of ProjectWhenElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectWhenElement ^&gt; ^ WhenElements { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectWhenElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhenElements : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectWhenElement&gt;" Usage="Microsoft.Build.Construction.ProjectChooseElement.WhenElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

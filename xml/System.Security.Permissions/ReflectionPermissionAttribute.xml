@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.ReflectionPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReflectionPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReflectionPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type ReflectionPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ReflectionPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReflectionPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.ReflectionPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.ReflectionPermissionAttribute" Usage="new System.Security.Permissions.ReflectionPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.ReflectionPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="reflectionPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ReflectionPermissionAttribute.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As ReflectionPermissionFlag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::ReflectionPermissionFlag Flags { System::Security::Permissions::ReflectionPermissionFlag get(); void set(System::Security::Permissions::ReflectionPermissionFlag value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.ReflectionPermissionFlag with get, set" Usage="System.Security.Permissions.ReflectionPermissionAttribute.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ReflectionPermissionAttribute.MemberAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberAccess As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MemberAccess { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberAccess : bool with get, set" Usage="System.Security.Permissions.ReflectionPermissionAttribute.MemberAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ReflectionPermissionAttribute.ReflectionEmit" />
       <MemberSignature Language="VB.NET" Value="Public Property ReflectionEmit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReflectionEmit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectionEmit : bool with get, set" Usage="System.Security.Permissions.ReflectionPermissionAttribute.ReflectionEmit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ReflectionPermissionAttribute.RestrictedMemberAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property RestrictedMemberAccess As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestrictedMemberAccess { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestrictedMemberAccess : bool with get, set" Usage="System.Security.Permissions.ReflectionPermissionAttribute.RestrictedMemberAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.ReflectionPermissionAttribute.TypeInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeInformation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TypeInformation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeInformation : bool with get, set" Usage="System.Security.Permissions.ReflectionPermissionAttribute.TypeInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

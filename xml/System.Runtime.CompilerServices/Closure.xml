@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.Closure" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Closure" />
   <TypeSignature Language="C++ CLI" Value="public ref class Closure sealed" />
+  <TypeSignature Language="F#" Value="type Closure = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Closure.#ctor(System.Object[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (constants As Object(), locals As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Closure(cli::array &lt;System::Object ^&gt; ^ constants, cli::array &lt;System::Object ^&gt; ^ locals);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.Closure : obj[] * obj[] -&gt; System.Runtime.CompilerServices.Closure" Usage="new System.Runtime.CompilerServices.Closure (constants, locals)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.Closure.Constants" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Constants As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: initonly cli::array &lt;System::Object ^&gt; ^ Constants;" />
+      <MemberSignature Language="F#" Value="val mutable Constants : obj[]" Usage="System.Runtime.CompilerServices.Closure.Constants" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.Closure.Locals" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Locals As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: initonly cli::array &lt;System::Object ^&gt; ^ Locals;" />
+      <MemberSignature Language="F#" Value="val mutable Locals : obj[]" Usage="System.Runtime.CompilerServices.Closure.Locals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

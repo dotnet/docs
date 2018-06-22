@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatcherUnhandledExceptionEventArgs&#xA;Inherits DispatcherEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherUnhandledExceptionEventArgs sealed : System::Windows::Threading::DispatcherEventArgs" />
+  <TypeSignature Language="F#" Value="type DispatcherUnhandledExceptionEventArgs = class&#xA;    inherit DispatcherEventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

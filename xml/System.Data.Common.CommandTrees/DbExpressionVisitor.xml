@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbExpressionVisitor" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbExpressionVisitor abstract" />
+  <TypeSignature Language="F#" Value="type DbExpressionVisitor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbAndExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbAndExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbAndExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbAndExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbApplyExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbApplyExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbApplyExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbApplyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbArithmeticExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbArithmeticExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbArithmeticExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbArithmeticExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCaseExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCaseExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbCaseExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCaseExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCastExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCastExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbCastExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCastExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbComparisonExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbComparisonExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbComparisonExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbComparisonExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbConstantExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbConstantExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbConstantExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbConstantExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCrossJoinExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbCrossJoinExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbCrossJoinExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbCrossJoinExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDerefExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbDerefExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbDerefExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbDerefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDistinctExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbDistinctExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbDistinctExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbDistinctExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbElementExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbElementExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbElementExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbElementExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -302,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbEntityRefExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbEntityRefExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbEntityRefExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbEntityRefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -325,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExceptExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbExceptExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbExceptExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbExceptExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -348,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -378,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFilterExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbFilterExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbFilterExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbFilterExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -401,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFunctionExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbFunctionExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbFunctionExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbFunctionExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -424,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbGroupByExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbGroupByExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbGroupByExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbGroupByExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -447,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIntersectExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIntersectExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbIntersectExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIntersectExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -470,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsEmptyExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsEmptyExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbIsEmptyExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsEmptyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -493,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsNullExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsNullExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbIsNullExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsNullExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -516,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsOfExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbIsOfExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbIsOfExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbIsOfExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -539,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbJoinExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbJoinExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbJoinExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbJoinExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -562,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLambdaExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Visit (expression As DbLambdaExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Visit(System::Data::Common::CommandTrees::DbLambdaExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLambdaExpression -&gt; unit&#xA;override this.Visit : System.Data.Common.CommandTrees.DbLambdaExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -585,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLikeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbLikeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbLikeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLikeExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -608,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLimitExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbLimitExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbLimitExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbLimitExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -631,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNewInstanceExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNewInstanceExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbNewInstanceExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNewInstanceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -654,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNotExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNotExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbNotExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNotExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -677,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNullExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbNullExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbNullExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbNullExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -700,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOfTypeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbOfTypeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbOfTypeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbOfTypeExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -723,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOrExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbOrExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbOrExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbOrExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -746,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbParameterReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbParameterReferenceExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbParameterReferenceExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbParameterReferenceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -769,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbProjectExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbProjectExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbProjectExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbProjectExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -792,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbPropertyExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbPropertyExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbPropertyExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbPropertyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -815,6 +849,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbQuantifierExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbQuantifierExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbQuantifierExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbQuantifierExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -838,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRefExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbRefExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRefExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -861,6 +897,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefKeyExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRefKeyExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbRefKeyExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRefKeyExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -884,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRelationshipNavigationExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbRelationshipNavigationExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbRelationshipNavigationExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbRelationshipNavigationExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -907,6 +945,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbScanExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbScanExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbScanExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbScanExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -930,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSkipExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbSkipExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbSkipExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbSkipExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -953,6 +993,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSortExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbSortExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbSortExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbSortExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -976,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbTreatExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbTreatExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbTreatExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbTreatExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -999,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbUnionAllExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbUnionAllExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbUnionAllExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbUnionAllExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1022,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbVariableReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Visit (expression As DbVariableReferenceExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Visit(System::Data::Common::CommandTrees::DbVariableReferenceExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Data.Common.CommandTrees.DbVariableReferenceExpression -&gt; unit" Usage="dbExpressionVisitor.Visit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

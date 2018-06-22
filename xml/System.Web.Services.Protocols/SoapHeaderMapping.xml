@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderMapping" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapHeaderMapping" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapHeaderMapping sealed" />
+  <TypeSignature Language="F#" Value="type SoapHeaderMapping = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderMapping.Custom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Custom As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Custom { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Custom : bool" Usage="System.Web.Services.Protocols.SoapHeaderMapping.Custom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderMapping.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As SoapHeaderDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHeaderDirection Direction { System::Web::Services::Protocols::SoapHeaderDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Web.Services.Protocols.SoapHeaderDirection" Usage="System.Web.Services.Protocols.SoapHeaderMapping.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderMapping.HeaderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ HeaderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderType : Type" Usage="System.Web.Services.Protocols.SoapHeaderMapping.HeaderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderMapping.MemberInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInfo As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ MemberInfo { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberInfo : System.Reflection.MemberInfo" Usage="System.Web.Services.Protocols.SoapHeaderMapping.MemberInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderMapping.Repeats" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Repeats As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Repeats { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Repeats : bool" Usage="System.Web.Services.Protocols.SoapHeaderMapping.Repeats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

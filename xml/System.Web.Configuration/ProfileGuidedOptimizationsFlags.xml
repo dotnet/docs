@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileGuidedOptimizationsFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProfileGuidedOptimizationsFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProfileGuidedOptimizationsFlags" />
+  <TypeSignature Language="F#" Value="type ProfileGuidedOptimizationsFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProfileGuidedOptimizationsFlags.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Web.Configuration.ProfileGuidedOptimizationsFlags.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProfileGuidedOptimizationsFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Configuration.ProfileGuidedOptimizationsFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

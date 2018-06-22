@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.XhtmlMobileDocType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XhtmlMobileDocType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XhtmlMobileDocType" />
+  <TypeSignature Language="F#" Value="type XhtmlMobileDocType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.XhtmlMobileDocType.Wml20" />
       <MemberSignature Language="VB.NET" Value="Wml20" />
       <MemberSignature Language="C++ CLI" Value="Wml20" />
+      <MemberSignature Language="F#" Value="Wml20 = 2" Usage="System.Web.UI.XhtmlMobileDocType.Wml20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.XhtmlMobileDocType.XhtmlBasic" />
       <MemberSignature Language="VB.NET" Value="XhtmlBasic" />
       <MemberSignature Language="C++ CLI" Value="XhtmlBasic" />
+      <MemberSignature Language="F#" Value="XhtmlBasic = 0" Usage="System.Web.UI.XhtmlMobileDocType.XhtmlBasic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.XhtmlMobileDocType.XhtmlMobileProfile" />
       <MemberSignature Language="VB.NET" Value="XhtmlMobileProfile" />
       <MemberSignature Language="C++ CLI" Value="XhtmlMobileProfile" />
+      <MemberSignature Language="F#" Value="XhtmlMobileProfile = 1" Usage="System.Web.UI.XhtmlMobileDocType.XhtmlMobileProfile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

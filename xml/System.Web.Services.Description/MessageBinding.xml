@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessageBinding" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageBinding&#xA;Inherits NamedItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageBinding abstract : System::Web::Services::Description::NamedItem" />
+  <TypeSignature Language="F#" Value="type MessageBinding = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessageBinding.OperationBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationBinding As OperationBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationBinding ^ OperationBinding { System::Web::Services::Description::OperationBinding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperationBinding : System.Web.Services.Description.OperationBinding" Usage="System.Web.Services.Description.MessageBinding.OperationBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

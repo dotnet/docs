@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ResourceExpressionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceExpressionEditor&#xA;Inherits ExpressionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceExpressionEditor : System::Web::UI::Design::ExpressionEditor" />
+  <TypeSignature Language="F#" Value="type ResourceExpressionEditor = class&#xA;    inherit ExpressionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ResourceExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (expression As String, parseTimeData As Object, propertyType As Type, serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::String ^ expression, System::Object ^ parseTimeData, Type ^ propertyType, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : string * obj * Type * IServiceProvider -&gt; obj" Usage="resourceExpressionEditor.EvaluateExpression (expression, parseTimeData, propertyType, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpressionEditorSheet (expression As String, serviceProvider As IServiceProvider) As ExpressionEditorSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::ExpressionEditorSheet ^ GetExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.GetExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet" Usage="resourceExpressionEditor.GetExpressionEditorSheet (expression, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

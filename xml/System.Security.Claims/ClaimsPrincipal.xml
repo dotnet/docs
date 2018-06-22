@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsPrincipal&#xA;Implements IPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimsPrincipal : System::Security::Principal::IPrincipal" />
+  <TypeSignature Language="F#" Value="type ClaimsPrincipal = class&#xA;    interface IPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -137,6 +138,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identities As IEnumerable(Of ClaimsIdentity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsPrincipal(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ identities);" />
+      <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsPrincipal : seq&lt;System.Security.Claims.ClaimsIdentity&gt; -&gt; System.Security.Claims.ClaimsPrincipal" Usage="new System.Security.Claims.ClaimsPrincipal identities" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -177,6 +179,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.#ctor(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As BinaryReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsPrincipal(System::IO::BinaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsPrincipal : System.IO.BinaryReader -&gt; System.Security.Claims.ClaimsPrincipal" Usage="new System.Security.Claims.ClaimsPrincipal reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -217,6 +220,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.#ctor(System.Security.Principal.IIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsPrincipal(System::Security::Principal::IIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsPrincipal : System.Security.Principal.IIdentity -&gt; System.Security.Claims.ClaimsPrincipal" Usage="new System.Security.Claims.ClaimsPrincipal identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -257,6 +261,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.#ctor(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (principal As IPrincipal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsPrincipal(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsPrincipal : System.Security.Principal.IPrincipal -&gt; System.Security.Claims.ClaimsPrincipal" Usage="new System.Security.Claims.ClaimsPrincipal principal" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -297,6 +302,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsPrincipal(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsPrincipal : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Claims.ClaimsPrincipal" Usage="new System.Security.Claims.ClaimsPrincipal (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -337,6 +343,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddIdentities (identities As IEnumerable(Of ClaimsIdentity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddIdentities(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ identities);" />
+      <MemberSignature Language="F#" Value="abstract member AddIdentities : seq&lt;System.Security.Claims.ClaimsIdentity&gt; -&gt; unit&#xA;override this.AddIdentities : seq&lt;System.Security.Claims.ClaimsIdentity&gt; -&gt; unit" Usage="claimsPrincipal.AddIdentities identities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -386,6 +393,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddIdentity (identity As ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddIdentity(System::Security::Claims::ClaimsIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="abstract member AddIdentity : System.Security.Claims.ClaimsIdentity -&gt; unit&#xA;override this.AddIdentity : System.Security.Claims.ClaimsIdentity -&gt; unit" Usage="claimsPrincipal.AddIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -435,6 +443,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.Claims" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Claims As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Claims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Claims.ClaimsPrincipal.Claims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -475,6 +484,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ClaimsPrincipalSelector As Func(Of ClaimsPrincipal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Func&lt;System::Security::Claims::ClaimsPrincipal ^&gt; ^ ClaimsPrincipalSelector { Func&lt;System::Security::Claims::ClaimsPrincipal ^&gt; ^ get(); void set(Func&lt;System::Security::Claims::ClaimsPrincipal ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimsPrincipalSelector : Func&lt;System.Security.Claims.ClaimsPrincipal&gt; with get, set" Usage="System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -520,6 +530,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As ClaimsPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::ClaimsPrincipal ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Claims.ClaimsPrincipal&#xA;override this.Clone : unit -&gt; System.Security.Claims.ClaimsPrincipal" Usage="claimsPrincipal.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -552,6 +563,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateClaimsIdentity (reader As BinaryReader) As ClaimsIdentity" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Claims::ClaimsIdentity ^ CreateClaimsIdentity(System::IO::BinaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member CreateClaimsIdentity : System.IO.BinaryReader -&gt; System.Security.Claims.ClaimsIdentity&#xA;override this.CreateClaimsIdentity : System.IO.BinaryReader -&gt; System.Security.Claims.ClaimsIdentity" Usage="claimsPrincipal.CreateClaimsIdentity reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -587,6 +599,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As ClaimsPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Claims::ClaimsPrincipal ^ Current { System::Security::Claims::ClaimsPrincipal ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Security.Claims.ClaimsPrincipal" Usage="System.Security.Claims.ClaimsPrincipal.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -626,6 +639,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.CustomSerializationData" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CustomSerializationData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ CustomSerializationData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomSerializationData : byte[]" Usage="System.Security.Claims.ClaimsPrincipal.CustomSerializationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -667,6 +681,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindAll (match As Predicate(Of Claim)) As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="abstract member FindAll : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; seq&lt;System.Security.Claims.Claim&gt;&#xA;override this.FindAll : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; seq&lt;System.Security.Claims.Claim&gt;" Usage="claimsPrincipal.FindAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -711,6 +726,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.FindAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindAll (type As String) As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(System::String ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member FindAll : string -&gt; seq&lt;System.Security.Claims.Claim&gt;&#xA;override this.FindAll : string -&gt; seq&lt;System.Security.Claims.Claim&gt;" Usage="claimsPrincipal.FindAll type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -765,6 +781,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindFirst (match As Predicate(Of Claim)) As Claim" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="abstract member FindFirst : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.Claim&#xA;override this.FindFirst : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.Claim" Usage="claimsPrincipal.FindFirst match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -802,6 +819,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindFirst (type As String) As Claim" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(System::String ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member FindFirst : string -&gt; System.Security.Claims.Claim&#xA;override this.FindFirst : string -&gt; System.Security.Claims.Claim" Usage="claimsPrincipal.FindFirst type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -839,6 +857,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="claimsPrincipal.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -892,6 +911,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasClaim (match As Predicate(Of Claim)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="abstract member HasClaim : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; bool&#xA;override this.HasClaim : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; bool" Usage="claimsPrincipal.HasClaim match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -930,6 +950,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.HasClaim(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasClaim (type As String, value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(System::String ^ type, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member HasClaim : string * string -&gt; bool&#xA;override this.HasClaim : string * string -&gt; bool" Usage="claimsPrincipal.HasClaim (type, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -981,6 +1002,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.Identities" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Identities As IEnumerable(Of ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ Identities { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identities : seq&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="System.Security.Claims.ClaimsPrincipal.Identities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1021,6 +1043,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Security.Claims.ClaimsPrincipal.Identity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Principal.IPrincipal.Identity</InterfaceMember>
@@ -1065,6 +1088,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="abstract member IsInRole : string -&gt; bool&#xA;override this.IsInRole : string -&gt; bool" Usage="claimsPrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Principal.IPrincipal.IsInRole(System.String)</InterfaceMember>
@@ -1114,6 +1138,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property PrimaryIdentitySelector As Func(Of IEnumerable(Of ClaimsIdentity), ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Func&lt;System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^, System::Security::Claims::ClaimsIdentity ^&gt; ^ PrimaryIdentitySelector { Func&lt;System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^, System::Security::Claims::ClaimsIdentity ^&gt; ^ get(); void set(Func&lt;System::Collections::Generic::IEnumerable&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^, System::Security::Claims::ClaimsIdentity ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryIdentitySelector : Func&lt;seq&lt;System.Security.Claims.ClaimsIdentity&gt;, System.Security.Claims.ClaimsIdentity&gt; with get, set" Usage="System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1159,6 +1184,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteTo (writer As BinaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteTo : System.IO.BinaryWriter -&gt; unit&#xA;override this.WriteTo : System.IO.BinaryWriter -&gt; unit" Usage="claimsPrincipal.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1195,6 +1221,7 @@ if (null != principal)
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteTo (writer As BinaryWriter, userData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer, cli::array &lt;System::Byte&gt; ^ userData);" />
+      <MemberSignature Language="F#" Value="abstract member WriteTo : System.IO.BinaryWriter * byte[] -&gt; unit&#xA;override this.WriteTo : System.IO.BinaryWriter * byte[] -&gt; unit" Usage="claimsPrincipal.WriteTo (writer, userData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>

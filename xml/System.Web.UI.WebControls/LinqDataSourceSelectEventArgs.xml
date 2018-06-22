@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceSelectEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceSelectEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceSelectEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.#ctor(System.Web.UI.DataSourceSelectArguments,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Specialized.IOrderedDictionary,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arguments As DataSourceSelectArguments, whereParameters As IDictionary(Of String, Object), orderByParameters As IOrderedDictionary, groupByParameters As IDictionary(Of String, Object), orderGroupsByParameters As IDictionary(Of String, Object), selectParameters As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceSelectEventArgs(System::Web::UI::DataSourceSelectArguments ^ arguments, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ whereParameters, System::Collections::Specialized::IOrderedDictionary ^ orderByParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ groupByParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ orderGroupsByParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ selectParameters);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceSelectEventArgs : System.Web.UI.DataSourceSelectArguments * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Specialized.IOrderedDictionary * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Web.UI.WebControls.LinqDataSourceSelectEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceSelectEventArgs (arguments, whereParameters, orderByParameters, groupByParameters, orderGroupsByParameters, selectParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As DataSourceSelectArguments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceSelectArguments ^ Arguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.GroupByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupByParameters As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GroupByParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupByParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.GroupByParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.OrderByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderByParameters As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OrderByParameters { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrderByParameters : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.OrderByParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.OrderGroupsByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderGroupsByParameters As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ OrderGroupsByParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrderGroupsByParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.OrderGroupsByParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : obj with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.SelectParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ SelectParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.SelectParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.WhereParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhereParameters As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ WhereParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhereParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.WhereParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

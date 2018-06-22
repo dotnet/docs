@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.IPartImportsSatisfiedNotification" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPartImportsSatisfiedNotification" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPartImportsSatisfiedNotification" />
+  <TypeSignature Language="F#" Value="type IPartImportsSatisfiedNotification = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.IPartImportsSatisfiedNotification.OnImportsSatisfied" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnImportsSatisfied ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnImportsSatisfied();" />
+      <MemberSignature Language="F#" Value="abstract member OnImportsSatisfied : unit -&gt; unit" Usage="iPartImportsSatisfiedNotification.OnImportsSatisfied " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

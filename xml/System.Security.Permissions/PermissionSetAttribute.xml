@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PermissionSetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PermissionSetAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PermissionSetAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type PermissionSetAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PermissionSetAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.PermissionSetAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.PermissionSetAttribute" Usage="new System.Security.Permissions.PermissionSetAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="permissionSetAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.CreatePermissionSet" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePermissionSet () As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::PermissionSet ^ CreatePermissionSet();" />
+      <MemberSignature Language="F#" Value="member this.CreatePermissionSet : unit -&gt; System.Security.PermissionSet" Usage="permissionSetAttribute.CreatePermissionSet " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.File" />
       <MemberSignature Language="VB.NET" Value="Public Property File As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.File : string with get, set" Usage="System.Security.Permissions.PermissionSetAttribute.File" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.Hex" />
       <MemberSignature Language="VB.NET" Value="Public Property Hex As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Hex { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Hex : string with get, set" Usage="System.Security.Permissions.PermissionSetAttribute.Hex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Security.Permissions.PermissionSetAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.UnicodeEncoded" />
       <MemberSignature Language="VB.NET" Value="Public Property UnicodeEncoded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnicodeEncoded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UnicodeEncoded : bool with get, set" Usage="System.Security.Permissions.PermissionSetAttribute.UnicodeEncoded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.XML" />
       <MemberSignature Language="VB.NET" Value="Public Property XML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XML : string with get, set" Usage="System.Security.Permissions.PermissionSetAttribute.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

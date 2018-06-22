@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IActivityEventListener`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IActivityEventListener(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : EventArgspublic interface class IActivityEventListener" />
+  <TypeSignature Language="F#" Value="type IActivityEventListener&lt;'T (requires 'T :&gt; EventArgs)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IActivityEventListener`1.OnEvent(System.Object,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnEvent (sender As Object, e As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnEvent(System::Object ^ sender, T e);" />
+      <MemberSignature Language="F#" Value="abstract member OnEvent : obj * 'T -&gt; unit" Usage="iActivityEventListener.OnEvent (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

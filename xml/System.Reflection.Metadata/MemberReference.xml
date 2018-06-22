@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MemberReference" />
   <TypeSignature Language="VB.NET" Value="Public Structure MemberReference" />
   <TypeSignature Language="C++ CLI" Value="public value class MemberReference" />
+  <TypeSignature Language="F#" Value="type MemberReference = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.DecodeFieldSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeFieldSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; TType DecodeFieldSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.DecodeFieldSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype&gt; -&gt; 'ype" Usage="memberReference.DecodeFieldSignature provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.DecodeFieldSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeFieldSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; TType DecodeFieldSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
+      <MemberSignature Language="F#" Value="member this.DecodeFieldSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype, 'GenericContext&gt; * 'GenericContext -&gt; 'ype" Usage="memberReference.DecodeFieldSignature (provider, genericContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.DecodeMethodSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As MethodSignature(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.DecodeMethodSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype&gt; -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="memberReference.DecodeMethodSignature provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.DecodeMethodSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeMethodSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As MethodSignature(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeMethodSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
+      <MemberSignature Language="F#" Value="member this.DecodeMethodSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype, 'GenericContext&gt; * 'GenericContext -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="memberReference.DecodeMethodSignature (provider, genericContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="memberReference.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MemberReference.GetKind" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKind () As MemberReferenceKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MemberReferenceKind GetKind();" />
+      <MemberSignature Language="F#" Value="member this.GetKind : unit -&gt; System.Reflection.Metadata.MemberReferenceKind" Usage="memberReference.GetKind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MemberReference.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.MemberReference.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MemberReference.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Parent { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.MemberReference.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -247,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MemberReference.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Signature { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signature : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.MemberReference.Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

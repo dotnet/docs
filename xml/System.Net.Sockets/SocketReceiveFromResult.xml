@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketReceiveFromResult" />
   <TypeSignature Language="VB.NET" Value="Public Structure SocketReceiveFromResult" />
   <TypeSignature Language="C++ CLI" Value="public value class SocketReceiveFromResult" />
+  <TypeSignature Language="F#" Value="type SocketReceiveFromResult = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveFromResult.ReceivedBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReceivedBytes As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int ReceivedBytes;" />
+      <MemberSignature Language="F#" Value="val mutable ReceivedBytes : int" Usage="System.Net.Sockets.SocketReceiveFromResult.ReceivedBytes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveFromResult.RemoteEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public RemoteEndPoint As EndPoint " />
       <MemberSignature Language="C++ CLI" Value="public: System::Net::EndPoint ^ RemoteEndPoint;" />
+      <MemberSignature Language="F#" Value="val mutable RemoteEndPoint : System.Net.EndPoint" Usage="System.Net.Sockets.SocketReceiveFromResult.RemoteEndPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

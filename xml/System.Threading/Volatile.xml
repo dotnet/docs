@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Volatile" />
   <TypeSignature Language="VB.NET" Value="Public Class Volatile" />
   <TypeSignature Language="C++ CLI" Value="public ref class Volatile abstract sealed" />
+  <TypeSignature Language="F#" Value="type Volatile = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Read(bool % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; bool" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Byte@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Read(System::Byte % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; byte" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Read(double % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; double" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Read(short % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; int16" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -259,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Read(int % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; int" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -307,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; int64" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Read(IntPtr % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; nativeint" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -403,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.SByte@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte Read(System::SByte % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; sbyte" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -454,6 +463,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Read(float % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; single" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -502,6 +512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.UInt16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 Read(System::UInt16 % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; uint16" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -554,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Read(System::UInt32 % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; uint32" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -606,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Read(System::UInt64 % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; uint64" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -658,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read(System.UIntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As UIntPtr) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr Read(UIntPtr % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; unativeint" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -710,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Read``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read(Of T As Class) (ByRef location As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Read(T % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; 'T (requires 'T : null)" Usage="System.Threading.Volatile.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -777,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Boolean@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Boolean, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(bool % location, bool value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * bool -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -826,6 +842,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Byte@,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Byte, value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Byte % location, System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * byte -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -875,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Double@,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Double, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(double % location, double value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * double -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -924,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Int16@,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Short, value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(short % location, short value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * int16 -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -973,6 +992,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Integer, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(int % location, int value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * int -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1022,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Long, value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(long % location, long value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * int64 -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1071,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.IntPtr@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As IntPtr, value As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(IntPtr % location, IntPtr value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * nativeint -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1120,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.SByte@,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As SByte, value As SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::SByte % location, System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * sbyte -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1172,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.Single@,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As Single, value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(float % location, float value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * single -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1221,6 +1245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.UInt16@,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As UShort, value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::UInt16 % location, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * uint16 -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1274,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.UInt32@,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As UInteger, value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::UInt32 % location, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * uint32 -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1327,6 +1353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.UInt64@,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As ULong, value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::UInt64 % location, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * uint64 -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1380,6 +1407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write(System.UIntPtr@,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (ByRef location As UIntPtr, value As UIntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(UIntPtr % location, UIntPtr value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * unativeint -&gt; unit" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1433,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Volatile.Write``1(``0@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write(Of T As Class) (ByRef location As T, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static void Write(T % location, T value);" />
+      <MemberSignature Language="F#" Value="static member Write :  * 'T -&gt; unit (requires 'T : null)" Usage="System.Threading.Volatile.Write (location, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

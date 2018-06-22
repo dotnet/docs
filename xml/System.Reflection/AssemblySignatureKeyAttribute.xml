@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblySignatureKeyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblySignatureKeyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblySignatureKeyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblySignatureKeyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblySignatureKeyAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (publicKey As String, countersignature As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblySignatureKeyAttribute(System::String ^ publicKey, System::String ^ countersignature);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblySignatureKeyAttribute : string * string -&gt; System.Reflection.AssemblySignatureKeyAttribute" Usage="new System.Reflection.AssemblySignatureKeyAttribute (publicKey, countersignature)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -102,6 +104,7 @@ sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblySignatureKeyAttribute.Countersignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Countersignature As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Countersignature { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Countersignature : string" Usage="System.Reflection.AssemblySignatureKeyAttribute.Countersignature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -143,6 +146,7 @@ sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblySignatureKeyAttribute.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublicKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : string" Usage="System.Reflection.AssemblySignatureKeyAttribute.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

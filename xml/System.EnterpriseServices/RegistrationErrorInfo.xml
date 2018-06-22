@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationErrorInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationErrorInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrationErrorInfo sealed" />
+  <TypeSignature Language="F#" Value="type RegistrationErrorInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationErrorInfo.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.EnterpriseServices.RegistrationErrorInfo.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationErrorInfo.ErrorString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorString : string" Usage="System.EnterpriseServices.RegistrationErrorInfo.ErrorString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationErrorInfo.MajorRef" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorRef As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MajorRef { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorRef : string" Usage="System.EnterpriseServices.RegistrationErrorInfo.MajorRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationErrorInfo.MinorRef" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorRef As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinorRef { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorRef : string" Usage="System.EnterpriseServices.RegistrationErrorInfo.MinorRef" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationErrorInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.EnterpriseServices.RegistrationErrorInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

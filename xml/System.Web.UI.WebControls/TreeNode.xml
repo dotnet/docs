@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNode" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeNode&#xA;Implements ICloneable, IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeNode : ICloneable, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type TreeNode = class&#xA;    interface IStateManager&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.Web.UI.WebControls.TreeView,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (owner As TreeView, isRoot As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; TreeNode(System::Web::UI::WebControls::TreeView ^ owner, bool isRoot);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : System.Web.UI.WebControls.TreeView * bool -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (owner, isRoot)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, System::String ^ value, System::String ^ imageUrl);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value, imageUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -323,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String, target As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, System::String ^ value, System::String ^ imageUrl, System::String ^ navigateUrl, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.TreeNode : string * string * string * string * string -&gt; System.Web.UI.WebControls.TreeNode" Usage="new System.Web.UI.WebControls.TreeNode (text, value, imageUrl, navigateUrl, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -384,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -442,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As TreeNodeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNodeCollection ^ ChildNodes { System::Web::UI::WebControls::TreeNodeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodes : System.Web.UI.WebControls.TreeNodeCollection" Usage="System.Web.UI.WebControls.TreeNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -499,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="treeNode.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -531,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Collapse" />
       <MemberSignature Language="VB.NET" Value="Public Sub Collapse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Collapse();" />
+      <MemberSignature Language="F#" Value="member this.Collapse : unit -&gt; unit" Usage="treeNode.Collapse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -596,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.CollapseAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollapseAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollapseAll();" />
+      <MemberSignature Language="F#" Value="member this.CollapseAll : unit -&gt; unit" Usage="treeNode.CollapseAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataBound" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBound As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataBound { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBound : bool" Usage="System.Web.UI.WebControls.TreeNode.DataBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -703,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Web.UI.WebControls.TreeNode.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -743,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.DataPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataPath : string" Usage="System.Web.UI.WebControls.TreeNode.DataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -786,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Depth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Web.UI.WebControls.TreeNode.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -840,6 +855,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Expand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Expand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Expand();" />
+      <MemberSignature Language="F#" Value="member this.Expand : unit -&gt; unit" Usage="treeNode.Expand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -907,6 +923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.ExpandAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandAll();" />
+      <MemberSignature Language="F#" Value="member this.ExpandAll : unit -&gt; unit" Usage="treeNode.ExpandAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -972,6 +989,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Property Expanded As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Expanded { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Expanded : Nullable&lt;bool&gt; with get, set" Usage="System.Web.UI.WebControls.TreeNode.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1066,6 +1084,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ImageToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageToolTip : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ImageToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1115,6 +1134,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1182,6 +1202,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.TreeNode.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -1207,6 +1228,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="treeNode.LoadViewState state" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -1241,6 +1263,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1299,6 +1322,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNode ^ Parent { System::Web::UI::WebControls::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Web.UI.WebControls.TreeNode" Usage="System.Web.UI.WebControls.TreeNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1349,6 +1373,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
       <MemberSignature Language="VB.NET" Value="Public Property PopulateOnDemand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PopulateOnDemand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PopulateOnDemand : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1397,6 +1422,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.RenderPostText(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPostText (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPostText(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPostText : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderPostText : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="treeNode.RenderPostText writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1428,6 +1454,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.RenderPreText(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderPreText (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPreText(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPreText : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderPreText : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="treeNode.RenderPreText writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1459,6 +1486,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="treeNode.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -1491,6 +1519,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; unit" Usage="treeNode.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1531,6 +1560,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectAction As TreeNodeSelectAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNodeSelectAction SelectAction { System::Web::UI::WebControls::TreeNodeSelectAction get(); void set(System::Web::UI::WebControls::TreeNodeSelectAction value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectAction : System.Web.UI.WebControls.TreeNodeSelectAction with get, set" Usage="System.Web.UI.WebControls.TreeNode.SelectAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1593,6 +1623,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Web.UI.WebControls.TreeNode.Selected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1648,6 +1679,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ShowCheckBox" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowCheckBox As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ShowCheckBox { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowCheckBox : Nullable&lt;bool&gt; with get, set" Usage="System.Web.UI.WebControls.TreeNode.ShowCheckBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1770,6 +1802,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.TreeNode.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -1887,6 +1920,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1966,6 +2000,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2018,6 +2053,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.ToggleExpandState" />
       <MemberSignature Language="VB.NET" Value="Public Sub ToggleExpandState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToggleExpandState();" />
+      <MemberSignature Language="F#" Value="member this.ToggleExpandState : unit -&gt; unit" Usage="treeNode.ToggleExpandState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2062,6 +2098,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2109,6 +2146,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNode.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackViewState();" />
+      <MemberSignature Language="F#" Value="member this.TrackViewState : unit -&gt; unit" Usage="treeNode.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -2133,6 +2171,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.WebControls.TreeNode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2188,6 +2227,7 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValuePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValuePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValuePath : string" Usage="System.Web.UI.WebControls.TreeNode.ValuePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

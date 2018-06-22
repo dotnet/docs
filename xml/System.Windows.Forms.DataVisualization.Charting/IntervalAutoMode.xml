@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum IntervalAutoMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class IntervalAutoMode" />
+  <TypeSignature Language="F#" Value="type IntervalAutoMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.FixedCount" />
       <MemberSignature Language="VB.NET" Value="FixedCount" />
       <MemberSignature Language="C++ CLI" Value="FixedCount" />
+      <MemberSignature Language="F#" Value="FixedCount = 0" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.FixedCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount" />
       <MemberSignature Language="VB.NET" Value="VariableCount" />
       <MemberSignature Language="C++ CLI" Value="VariableCount" />
+      <MemberSignature Language="F#" Value="VariableCount = 1" Usage="System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

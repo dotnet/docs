@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ThemeColor" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThemeColor" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThemeColor" />
+  <TypeSignature Language="F#" Value="type ThemeColor = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Luna</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Homestead" />
       <MemberSignature Language="VB.NET" Value="Homestead" />
       <MemberSignature Language="C++ CLI" Value="Homestead" />
+      <MemberSignature Language="F#" Value="Homestead = 1" Usage="Microsoft.Windows.Themes.ThemeColor.Homestead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Metallic" />
       <MemberSignature Language="VB.NET" Value="Metallic" />
       <MemberSignature Language="C++ CLI" Value="Metallic" />
+      <MemberSignature Language="F#" Value="Metallic = 2" Usage="Microsoft.Windows.Themes.ThemeColor.Metallic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.NormalColor" />
       <MemberSignature Language="VB.NET" Value="NormalColor" />
       <MemberSignature Language="C++ CLI" Value="NormalColor" />
+      <MemberSignature Language="F#" Value="NormalColor = 0" Usage="Microsoft.Windows.Themes.ThemeColor.NormalColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>

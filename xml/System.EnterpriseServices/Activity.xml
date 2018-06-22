@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Activity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Activity sealed" />
+  <TypeSignature Language="F#" Value="type Activity = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.#ctor(System.EnterpriseServices.ServiceConfig)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cfg As ServiceConfig)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Activity(System::EnterpriseServices::ServiceConfig ^ cfg);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.Activity : System.EnterpriseServices.ServiceConfig -&gt; System.EnterpriseServices.Activity" Usage="new System.EnterpriseServices.Activity cfg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.AsynchronousCall(System.EnterpriseServices.IServiceCall)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AsynchronousCall (serviceCall As IServiceCall)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AsynchronousCall(System::EnterpriseServices::IServiceCall ^ serviceCall);" />
+      <MemberSignature Language="F#" Value="member this.AsynchronousCall : System.EnterpriseServices.IServiceCall -&gt; unit" Usage="activity.AsynchronousCall serviceCall" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.BindToCurrentThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindToCurrentThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToCurrentThread();" />
+      <MemberSignature Language="F#" Value="member this.BindToCurrentThread : unit -&gt; unit" Usage="activity.BindToCurrentThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.SynchronousCall(System.EnterpriseServices.IServiceCall)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SynchronousCall (serviceCall As IServiceCall)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SynchronousCall(System::EnterpriseServices::IServiceCall ^ serviceCall);" />
+      <MemberSignature Language="F#" Value="member this.SynchronousCall : System.EnterpriseServices.IServiceCall -&gt; unit" Usage="activity.SynchronousCall serviceCall" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.UnbindFromThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnbindFromThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnbindFromThread();" />
+      <MemberSignature Language="F#" Value="member this.UnbindFromThread : unit -&gt; unit" Usage="activity.UnbindFromThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

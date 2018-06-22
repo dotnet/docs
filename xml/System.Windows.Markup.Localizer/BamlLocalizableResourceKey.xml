@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
   <TypeSignature Language="VB.NET" Value="Public Class BamlLocalizableResourceKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class BamlLocalizableResourceKey" />
+  <TypeSignature Language="F#" Value="type BamlLocalizableResourceKey = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uid As String, className As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BamlLocalizableResourceKey(System::String ^ uid, System::String ^ className, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.Localizer.BamlLocalizableResourceKey : string * string * string -&gt; System.Windows.Markup.Localizer.BamlLocalizableResourceKey" Usage="new System.Windows.Markup.Localizer.BamlLocalizableResourceKey (uid, className, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.ClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string" Usage="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.ClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bamlLocalizableResourceKey.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Equals(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BamlLocalizableResourceKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Markup::Localizer::BamlLocalizableResourceKey ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Markup.Localizer.BamlLocalizableResourceKey -&gt; bool" Usage="bamlLocalizableResourceKey.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bamlLocalizableResourceKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uid As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uid { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uid : string" Usage="System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

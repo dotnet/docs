@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.AudioBitsPerSample" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudioBitsPerSample" />
   <TypeSignature Language="C++ CLI" Value="public enum class AudioBitsPerSample" />
+  <TypeSignature Language="F#" Value="type AudioBitsPerSample = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioBitsPerSample.Eight" />
       <MemberSignature Language="VB.NET" Value="Eight" />
       <MemberSignature Language="C++ CLI" Value="Eight" />
+      <MemberSignature Language="F#" Value="Eight = 8" Usage="System.Speech.AudioFormat.AudioBitsPerSample.Eight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioBitsPerSample.Sixteen" />
       <MemberSignature Language="VB.NET" Value="Sixteen" />
       <MemberSignature Language="C++ CLI" Value="Sixteen" />
+      <MemberSignature Language="F#" Value="Sixteen = 16" Usage="System.Speech.AudioFormat.AudioBitsPerSample.Sixteen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

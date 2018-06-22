@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQueryContinuation`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceQueryContinuation(Of T)&#xA;Inherits DataServiceQueryContinuation" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DataServiceQueryContinuation sealed : System::Data::Services::Client::DataServiceQueryContinuation" />
+  <TypeSignature Language="F#" Value="type DataServiceQueryContinuation&lt;'T&gt; = class&#xA;    inherit DataServiceQueryContinuation" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderFragment" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderFragment&#xA;Implements IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderFragment : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderFragment = interface&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRawElementProviderFragment.BoundingRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundingRectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect BoundingRectangle { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundingRectangle : System.Windows.Rect" Usage="System.Windows.Automation.Provider.IRawElementProviderFragment.BoundingRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRawElementProviderFragment.FragmentRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FragmentRoot As IRawElementProviderFragmentRoot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Provider::IRawElementProviderFragmentRoot ^ FragmentRoot { System::Windows::Automation::Provider::IRawElementProviderFragmentRoot ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FragmentRoot : System.Windows.Automation.Provider.IRawElementProviderFragmentRoot" Usage="System.Windows.Automation.Provider.IRawElementProviderFragment.FragmentRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragment.GetEmbeddedFragmentRoots" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEmbeddedFragmentRoots () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetEmbeddedFragmentRoots();" />
+      <MemberSignature Language="F#" Value="abstract member GetEmbeddedFragmentRoots : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iRawElementProviderFragment.GetEmbeddedFragmentRoots " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeId () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRuntimeId();" />
+      <MemberSignature Language="F#" Value="abstract member GetRuntimeId : unit -&gt; int[]" Usage="iRawElementProviderFragment.GetRuntimeId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragment.Navigate(System.Windows.Automation.Provider.NavigateDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Function Navigate (direction As NavigateDirection) As IRawElementProviderFragment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ Navigate(System::Windows::Automation::Provider::NavigateDirection direction);" />
+      <MemberSignature Language="F#" Value="abstract member Navigate : System.Windows.Automation.Provider.NavigateDirection -&gt; System.Windows.Automation.Provider.IRawElementProviderFragment" Usage="iRawElementProviderFragment.Navigate direction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragment.SetFocus" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFocus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus();" />
+      <MemberSignature Language="F#" Value="abstract member SetFocus : unit -&gt; unit" Usage="iRawElementProviderFragment.SetFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

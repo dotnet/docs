@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureCallingConvention" />
   <TypeSignature Language="VB.NET" Value="Public Enum SignatureCallingConvention" />
   <TypeSignature Language="C++ CLI" Value="public enum class SignatureCallingConvention" />
+  <TypeSignature Language="F#" Value="type SignatureCallingConvention = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.CDecl" />
       <MemberSignature Language="VB.NET" Value="CDecl" />
       <MemberSignature Language="C++ CLI" Value="CDecl" />
+      <MemberSignature Language="F#" Value="CDecl = 1" Usage="System.Reflection.Metadata.SignatureCallingConvention.CDecl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.Metadata.SignatureCallingConvention.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.FastCall" />
       <MemberSignature Language="VB.NET" Value="FastCall" />
       <MemberSignature Language="C++ CLI" Value="FastCall" />
+      <MemberSignature Language="F#" Value="FastCall = 4" Usage="System.Reflection.Metadata.SignatureCallingConvention.FastCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.StdCall" />
       <MemberSignature Language="VB.NET" Value="StdCall" />
       <MemberSignature Language="C++ CLI" Value="StdCall" />
+      <MemberSignature Language="F#" Value="StdCall = 2" Usage="System.Reflection.Metadata.SignatureCallingConvention.StdCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.ThisCall" />
       <MemberSignature Language="VB.NET" Value="ThisCall" />
       <MemberSignature Language="C++ CLI" Value="ThisCall" />
+      <MemberSignature Language="F#" Value="ThisCall = 3" Usage="System.Reflection.Metadata.SignatureCallingConvention.ThisCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureCallingConvention.VarArgs" />
       <MemberSignature Language="VB.NET" Value="VarArgs" />
       <MemberSignature Language="C++ CLI" Value="VarArgs" />
+      <MemberSignature Language="F#" Value="VarArgs = 5" Usage="System.Reflection.Metadata.SignatureCallingConvention.VarArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

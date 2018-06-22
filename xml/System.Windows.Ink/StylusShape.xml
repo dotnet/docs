@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusShape" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StylusShape" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusShape abstract" />
+  <TypeSignature Language="F#" Value="type StylusShape = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StylusShape.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Ink.StylusShape.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StylusShape.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rotation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Rotation { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : double" Usage="System.Windows.Ink.StylusShape.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StylusShape.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Ink.StylusShape.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

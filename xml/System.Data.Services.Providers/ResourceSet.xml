@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceSet" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceSet" />
+  <TypeSignature Language="F#" Value="type ResourceSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceSet.#ctor(System.String,System.Data.Services.Providers.ResourceType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, elementType As ResourceType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::String ^ name, System::Data::Services::Providers::ResourceType ^ elementType);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Providers.ResourceSet : string * System.Data.Services.Providers.ResourceType -&gt; System.Data.Services.Providers.ResourceSet" Usage="new System.Data.Services.Providers.ResourceSet (name, elementType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceSet.CustomState" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomState { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomState : obj with get, set" Usage="System.Data.Services.Providers.ResourceSet.CustomState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceSet.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Services.Providers.ResourceSet.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceSet.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.Providers.ResourceSet.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceSet.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceType As ResourceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceType ^ ResourceType { System::Data::Services::Providers::ResourceType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceType : System.Data.Services.Providers.ResourceType" Usage="System.Data.Services.Providers.ResourceSet.ResourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceSet.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="resourceSet.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

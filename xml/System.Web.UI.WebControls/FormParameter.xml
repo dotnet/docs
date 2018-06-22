@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class FormParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormParameter : System::Web::UI::WebControls::Parameter" />
+  <TypeSignature Language="F#" Value="type FormParameter = class&#xA;    inherit Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.Web.UI.WebControls.FormParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As FormParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FormParameter(System::Web::UI::WebControls::FormParameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormParameter : System.Web.UI.WebControls.FormParameter -&gt; System.Web.UI.WebControls.FormParameter" Usage="new System.Web.UI.WebControls.FormParameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, formField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormParameter(System::String ^ name, System::String ^ formField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormParameter : string * string -&gt; System.Web.UI.WebControls.FormParameter" Usage="new System.Web.UI.WebControls.FormParameter (name, formField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string formField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ formField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormParameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.FormParameter" Usage="new System.Web.UI.WebControls.FormParameter (name, dbType, formField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, formField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormParameter(System::String ^ name, TypeCode type, System::String ^ formField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormParameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.FormParameter" Usage="new System.Web.UI.WebControls.FormParameter (name, type, formField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="formParameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="formParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormParameter.FormField" />
       <MemberSignature Language="VB.NET" Value="Public Property FormField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormField : string with get, set" Usage="System.Web.UI.WebControls.FormParameter.FormField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormParameter.ValidateInput" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateInput : bool with get, set" Usage="System.Web.UI.WebControls.FormParameter.ValidateInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

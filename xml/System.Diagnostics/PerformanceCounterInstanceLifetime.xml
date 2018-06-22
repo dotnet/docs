@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterInstanceLifetime" />
   <TypeSignature Language="VB.NET" Value="Public Enum PerformanceCounterInstanceLifetime" />
   <TypeSignature Language="C++ CLI" Value="public enum class PerformanceCounterInstanceLifetime" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterInstanceLifetime = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterInstanceLifetime.Global" />
       <MemberSignature Language="VB.NET" Value="Global" />
       <MemberSignature Language="C++ CLI" Value="Global" />
+      <MemberSignature Language="F#" Value="Global = 0" Usage="System.Diagnostics.PerformanceCounterInstanceLifetime.Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterInstanceLifetime.Process" />
       <MemberSignature Language="VB.NET" Value="Process" />
       <MemberSignature Language="C++ CLI" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 1" Usage="System.Diagnostics.PerformanceCounterInstanceLifetime.Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

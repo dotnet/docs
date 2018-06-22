@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.NotCondition" />
   <TypeSignature Language="VB.NET" Value="Public Class NotCondition&#xA;Inherits Condition" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotCondition : System::Windows::Automation::Condition" />
+  <TypeSignature Language="F#" Value="type NotCondition = class&#xA;    inherit Condition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.Condition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.NotCondition.#ctor(System.Windows.Automation.Condition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NotCondition(System::Windows::Automation::Condition ^ condition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.NotCondition : System.Windows.Automation.Condition -&gt; System.Windows.Automation.NotCondition" Usage="new System.Windows.Automation.NotCondition condition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.NotCondition.Condition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Condition As Condition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Condition ^ Condition { System::Windows::Automation::Condition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.NotCondition.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

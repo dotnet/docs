@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPersistedSelector" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPersistedSelector" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPersistedSelector" />
+  <TypeSignature Language="F#" Value="type IPersistedSelector = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPersistedSelector.DataKey" />
       <MemberSignature Language="VB.NET" Value="Public Property DataKey As DataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKey ^ DataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataKey : System.Web.UI.WebControls.DataKey with get, set" Usage="System.Web.UI.WebControls.IPersistedSelector.DataKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

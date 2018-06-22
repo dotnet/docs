@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObject4&#xA;Implements ITaskHost, IVbcHostObject3" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObject4 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::IVbcHostObject3" />
+  <TypeSignature Language="F#" Value="type IVbcHostObject4 = interface&#xA;    interface IVbcHostObject3&#xA;    interface IVbcHostObject2&#xA;    interface IVbcHostObject&#xA;    interface ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject4.SetVBRuntime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetVBRuntime (VBRuntime As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetVBRuntime(System::String ^ VBRuntime);" />
+      <MemberSignature Language="F#" Value="abstract member SetVBRuntime : string -&gt; bool" Usage="iVbcHostObject4.SetVBRuntime VBRuntime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

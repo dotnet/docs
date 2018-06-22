@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.ReceiveCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ReceiveCompletedEventHandler(sender As Object, e As ReceiveCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ReceiveCompletedEventHandler(System::Object ^ sender, ReceiveCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ReceiveCompletedEventHandler = delegate of obj * ReceiveCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

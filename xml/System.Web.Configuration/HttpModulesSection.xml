@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModulesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpModulesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpModulesSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type HttpModulesSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModulesSection.Modules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modules As HttpModuleActionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpModuleActionCollection ^ Modules { System::Web::Configuration::HttpModuleActionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modules : System.Web.Configuration.HttpModuleActionCollection" Usage="System.Web.Configuration.HttpModulesSection.Modules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModulesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpModulesSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

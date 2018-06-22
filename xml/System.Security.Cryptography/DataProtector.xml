@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DataProtector" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataProtector" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataProtector abstract" />
+  <TypeSignature Language="F#" Value="type DataProtector = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.#ctor(System.String,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (applicationName As String, primaryPurpose As String, specificPurposes As String())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataProtector(System::String ^ applicationName, System::String ^ primaryPurpose, cli::array &lt;System::String ^&gt; ^ specificPurposes);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DataProtector : string * string * string[] -&gt; System.Security.Cryptography.DataProtector" Usage="new System.Security.Cryptography.DataProtector (applicationName, primaryPurpose, specificPurposes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ApplicationName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string" Usage="System.Security.Cryptography.DataProtector.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Create(System.String,System.String,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (providerClass As String, applicationName As String, primaryPurpose As String, ParamArray specificPurposes As String()) As DataProtector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DataProtector ^ Create(System::String ^ providerClass, System::String ^ applicationName, System::String ^ primaryPurpose, ... cli::array &lt;System::String ^&gt; ^ specificPurposes);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * string * string[] -&gt; System.Security.Cryptography.DataProtector" Usage="System.Security.Cryptography.DataProtector.Create (providerClass, applicationName, primaryPurpose, specificPurposes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.GetHashedPurpose" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetHashedPurpose () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetHashedPurpose();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashedPurpose : unit -&gt; byte[]&#xA;override this.GetHashedPurpose : unit -&gt; byte[]" Usage="dataProtector.GetHashedPurpose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.IsReprotectRequired(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsReprotectRequired (encryptedData As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsReprotectRequired(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
+      <MemberSignature Language="F#" Value="abstract member IsReprotectRequired : byte[] -&gt; bool" Usage="dataProtector.IsReprotectRequired encryptedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.PrependHashedPurposeToPlaintext" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property PrependHashedPurposeToPlaintext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool PrependHashedPurposeToPlaintext { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrependHashedPurposeToPlaintext : bool" Usage="System.Security.Cryptography.DataProtector.PrependHashedPurposeToPlaintext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.PrimaryPurpose" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PrimaryPurpose As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ PrimaryPurpose { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryPurpose : string" Usage="System.Security.Cryptography.DataProtector.PrimaryPurpose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Protect(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Protect (userData As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Protect(cli::array &lt;System::Byte&gt; ^ userData);" />
+      <MemberSignature Language="F#" Value="member this.Protect : byte[] -&gt; byte[]" Usage="dataProtector.Protect userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.ProviderProtect(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ProviderProtect (userData As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ ProviderProtect(cli::array &lt;System::Byte&gt; ^ userData);" />
+      <MemberSignature Language="F#" Value="abstract member ProviderProtect : byte[] -&gt; byte[]" Usage="dataProtector.ProviderProtect userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.ProviderUnprotect(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ProviderUnprotect (encryptedData As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ ProviderUnprotect(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
+      <MemberSignature Language="F#" Value="abstract member ProviderUnprotect : byte[] -&gt; byte[]" Usage="dataProtector.ProviderUnprotect encryptedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -346,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.SpecificPurposes" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SpecificPurposes As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ SpecificPurposes { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpecificPurposes : seq&lt;string&gt;" Usage="System.Security.Cryptography.DataProtector.SpecificPurposes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Unprotect(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Unprotect (encryptedData As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Unprotect(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
+      <MemberSignature Language="F#" Value="member this.Unprotect : byte[] -&gt; byte[]" Usage="dataProtector.Unprotect encryptedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

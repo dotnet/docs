@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlReader" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlXmlReader&#xA;Inherits XamlReader&#xA;Implements IXamlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlXmlReader : System::Xaml::XamlReader, System::Xaml::IXamlLineInfo" />
+  <TypeSignature Language="F#" Value="type XamlXmlReader = class&#xA;    inherit XamlReader&#xA;    interface IXamlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.Stream -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.TextReader -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader textReader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : string -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::Xml::XmlReader ^ xmlReader);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.Xml.XmlReader -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader xmlReader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::Stream ^ stream, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.Stream * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (stream, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::Stream ^ stream, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.Stream * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (stream, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader textReader, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::TextReader ^ textReader, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.TextReader * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (textReader, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader textReader, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::TextReader ^ textReader, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.TextReader * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (textReader, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, schemaContext As XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::String ^ fileName, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : string * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (fileName, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -273,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, settings As XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::String ^ fileName, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : string * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (fileName, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader xmlReader, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::Xml::XmlReader ^ xmlReader, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.Xml.XmlReader * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (xmlReader, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -326,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader xmlReader, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::Xml::XmlReader ^ xmlReader, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.Xml.XmlReader * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (xmlReader, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -356,6 +369,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::Stream ^ stream, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.Stream * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (stream, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -388,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader textReader, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::IO::TextReader ^ textReader, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.IO.TextReader * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (textReader, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -425,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, schemaContext As XamlSchemaContext, settings As XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::String ^ fileName, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : string * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (fileName, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -461,6 +477,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader xmlReader, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlReader(System::Xml::XmlReader ^ xmlReader, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::XamlXmlReaderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlReader : System.Xml.XmlReader * System.Xaml.XamlSchemaContext * System.Xaml.XamlXmlReaderSettings -&gt; System.Xaml.XamlXmlReader" Usage="new System.Xaml.XamlXmlReader (xmlReader, schemaContext, settings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLineInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLineInfo : bool" Usage="System.Xaml.XamlXmlReader.HasLineInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
@@ -525,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.IsEof" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEof As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEof { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEof : bool" Usage="System.Xaml.XamlXmlReader.IsEof" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -553,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xaml.XamlXmlReader.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
@@ -583,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xaml.XamlXmlReader.LinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>
@@ -613,6 +634,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.Member" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Member As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Xaml.XamlMember" Usage="System.Xaml.XamlXmlReader.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -633,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As NamespaceDeclaration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : System.Xaml.NamespaceDeclaration" Usage="System.Xaml.XamlXmlReader.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -660,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XamlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xaml.XamlNodeType" Usage="System.Xaml.XamlXmlReader.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -680,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="xamlXmlReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -714,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlXmlReader.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -741,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Xaml.XamlXmlReader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -768,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Xaml.XamlXmlReader.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

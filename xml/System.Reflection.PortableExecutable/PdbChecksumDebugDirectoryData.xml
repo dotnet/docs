@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData" />
   <TypeSignature Language="VB.NET" Value="Public Structure PdbChecksumDebugDirectoryData" />
   <TypeSignature Language="C++ CLI" Value="public value class PdbChecksumDebugDirectoryData" />
+  <TypeSignature Language="F#" Value="type PdbChecksumDebugDirectoryData = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData.AlgorithmName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlgorithmName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmName : string" Usage="System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData.AlgorithmName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData.Checksum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Checksum As ImmutableArray(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; Checksum { System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Checksum : System.Collections.Immutable.ImmutableArray&lt;byte&gt;" Usage="System.Reflection.PortableExecutable.PdbChecksumDebugDirectoryData.Checksum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

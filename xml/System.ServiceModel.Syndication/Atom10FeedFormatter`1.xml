@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Atom10FeedFormatter(Of TSyndicationFeed)&#xA;Inherits Atom10FeedFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationFeed&gt;&#xA; where TSyndicationFeed : SyndicationFeedgcnew()public ref class Atom10FeedFormatter : System::ServiceModel::Syndication::Atom10FeedFormatter" />
+  <TypeSignature Language="F#" Value="type Atom10FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; = class&#xA;    inherit Atom10FeedFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedToWrite As TSyndicationFeed)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10FeedFormatter(TSyndicationFeed feedToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; : 'SyndicationFeed -&gt; System.ServiceModel.Syndication.Atom10FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt;" Usage="new System.ServiceModel.Syndication.Atom10FeedFormatter&lt;'SyndicationFeed (requires 'SyndicationFeed :&gt; System.ServiceModel.Syndication.SyndicationFeed and 'SyndicationFeed : (new : unit -&gt; 'SyndicationFeed))&gt; feedToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter`1.CreateFeedInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateFeedInstance () As SyndicationFeed" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationFeed ^ CreateFeedInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateFeedInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationFeed" Usage="atom10FeedFormatter.CreateFeedInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInternalConfigHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInternalConfigHost" />
+  <TypeSignature Language="F#" Value="type IInternalConfigHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.CreateConfigurationContext(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateConfigurationContext (configPath As String, locationSubPath As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateConfigurationContext(System::String ^ configPath, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="abstract member CreateConfigurationContext : string * string -&gt; obj" Usage="iInternalConfigHost.CreateConfigurationContext (configPath, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.CreateDeprecatedConfigContext(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDeprecatedConfigContext (configPath As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateDeprecatedConfigContext(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDeprecatedConfigContext : string -&gt; obj" Usage="iInternalConfigHost.CreateDeprecatedConfigContext configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function DecryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DecryptSection(System::String ^ encryptedXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedSection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DeleteStream(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteStream (streamName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteStream(System::String ^ streamName);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteStream : string -&gt; unit" Usage="iInternalConfigHost.DeleteStream streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function EncryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ EncryptSection(System::String ^ encryptedXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.EncryptSection (encryptedXml, protectionProvider, protectedSection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigPathFromLocationSubPath (configPath As String, locatinSubPath As String) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConfigPathFromLocationSubPath(System::String ^ configPath, System::String ^ locatinSubPath);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="iInternalConfigHost.GetConfigPathFromLocationSubPath (configPath, locatinSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigType (typeName As String, throwOnError As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetConfigType(System::String ^ typeName, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigType : string * bool -&gt; Type" Usage="iInternalConfigHost.GetConfigType (typeName, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigTypeName(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigTypeName (t As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConfigTypeName(Type ^ t);" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigTypeName : Type -&gt; string" Usage="iInternalConfigHost.GetConfigTypeName t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRestrictedPermissions (configRecord As IInternalConfigRecord, ByRef permissionSet As PermissionSet, ByRef isHostReady As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRestrictedPermissions(System::Configuration::Internal::IInternalConfigRecord ^ configRecord, [Runtime::InteropServices::Out] System::Security::PermissionSet ^ % permissionSet, [Runtime::InteropServices::Out] bool % isHostReady);" />
+      <MemberSignature Language="F#" Value="abstract member GetRestrictedPermissions : System.Configuration.Internal.IInternalConfigRecord *  *  -&gt; unit" Usage="iInternalConfigHost.GetRestrictedPermissions (configRecord, permissionSet, isHostReady)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -315,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamName (configPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStreamName(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamName : string -&gt; string" Usage="iInternalConfigHost.GetStreamName configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamNameForConfigSource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamNameForConfigSource (streamName As String, configSource As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStreamNameForConfigSource(System::String ^ streamName, System::String ^ configSource);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamNameForConfigSource : string * string -&gt; string" Usage="iInternalConfigHost.GetStreamNameForConfigSource (streamName, configSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetStreamVersion(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamVersion (streamName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetStreamVersion(System::String ^ streamName);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamVersion : string -&gt; obj" Usage="iInternalConfigHost.GetStreamVersion streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Public Function Impersonate () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ Impersonate();" />
+      <MemberSignature Language="F#" Value="abstract member Impersonate : unit -&gt; IDisposable" Usage="iInternalConfigHost.Impersonate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (root As IInternalConfigRoot, ParamArray hostInitParams As Object())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Configuration::Internal::IInternalConfigRoot ^ root, ... cli::array &lt;System::Object ^&gt; ^ hostInitParams);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.Init (root, hostInitParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -471,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitForConfiguration (ByRef locationSubPath As String, ByRef configPath As String, ByRef locationConfigPath As String, root As IInternalConfigRoot, ParamArray hostInitConfigurationParams As Object())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitForConfiguration(System::String ^ % locationSubPath, [Runtime::InteropServices::Out] System::String ^ % configPath, [Runtime::InteropServices::Out] System::String ^ % locationConfigPath, System::Configuration::Internal::IInternalConfigRoot ^ root, ... cli::array &lt;System::Object ^&gt; ^ hostInitConfigurationParams);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -514,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsAboveApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsAboveApplication (configPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAboveApplication(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member IsAboveApplication : string -&gt; bool" Usage="iInternalConfigHost.IsAboveApplication configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -543,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsConfigRecordRequired(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsConfigRecordRequired (configPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsConfigRecordRequired(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member IsConfigRecordRequired : string -&gt; bool" Usage="iInternalConfigHost.IsConfigRecordRequired configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -572,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDefinitionAllowed(System::String ^ configPath, System::Configuration::ConfigurationAllowDefinition allowDefinition, System::Configuration::ConfigurationAllowExeDefinition allowExeDefinition);" />
+      <MemberSignature Language="F#" Value="abstract member IsDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition -&gt; bool" Usage="iInternalConfigHost.IsDefinitionAllowed (configPath, allowDefinition, allowExeDefinition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -605,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsFile (streamName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsFile(System::String ^ streamName);" />
+      <MemberSignature Language="F#" Value="abstract member IsFile : string -&gt; bool" Usage="iInternalConfigHost.IsFile streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -634,6 +654,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsFullTrustSectionWithoutAptcaAllowed(System.Configuration.Internal.IInternalConfigRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsFullTrustSectionWithoutAptcaAllowed (configRecord As IInternalConfigRecord) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsFullTrustSectionWithoutAptcaAllowed(System::Configuration::Internal::IInternalConfigRecord ^ configRecord);" />
+      <MemberSignature Language="F#" Value="abstract member IsFullTrustSectionWithoutAptcaAllowed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="iInternalConfigHost.IsFullTrustSectionWithoutAptcaAllowed configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -663,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInitDelayed (configRecord As IInternalConfigRecord) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInitDelayed(System::Configuration::Internal::IInternalConfigRecord ^ configRecord);" />
+      <MemberSignature Language="F#" Value="abstract member IsInitDelayed : System.Configuration.Internal.IInternalConfigRecord -&gt; bool" Usage="iInternalConfigHost.IsInitDelayed configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -692,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsLocationApplicable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsLocationApplicable (configPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsLocationApplicable(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member IsLocationApplicable : string -&gt; bool" Usage="iInternalConfigHost.IsLocationApplicable configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -721,6 +744,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.IsRemote" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRemote As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRemote { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRemote : bool" Usage="System.Configuration.Internal.IInternalConfigHost.IsRemote" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -746,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsSecondaryRoot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSecondaryRoot (configPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSecondaryRoot(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member IsSecondaryRoot : string -&gt; bool" Usage="iInternalConfigHost.IsSecondaryRoot configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -775,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.IsTrustedConfigPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsTrustedConfigPath (configPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsTrustedConfigPath(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="abstract member IsTrustedConfigPath : string -&gt; bool" Usage="iInternalConfigHost.IsTrustedConfigPath configPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -813,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForRead (streamName As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenStreamForRead(System::String ^ streamName);" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForRead streamName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -841,6 +868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForRead(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForRead (streamName As String, assertPermissions As Boolean) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenStreamForRead(System::String ^ streamName, bool assertPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForRead : string * bool -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForRead (streamName, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -881,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenStreamForWrite(System::String ^ streamName, System::String ^ templateStreamName, System::Object ^ % writeContext);" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -913,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.OpenStreamForWrite(System.String,System.String,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenStreamForWrite (streamName As String, templateStreamName As String, ByRef writeContext As Object, assertPermissions As Boolean) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenStreamForWrite(System::String ^ streamName, System::String ^ templateStreamName, System::Object ^ % writeContext, bool assertPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member OpenStreamForWrite : string * string *  * bool -&gt; System.IO.Stream" Usage="iInternalConfigHost.OpenStreamForWrite (streamName, templateStreamName, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -948,6 +978,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.PrefetchAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function PrefetchAll (configPath As String, streamName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PrefetchAll(System::String ^ configPath, System::String ^ streamName);" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchAll : string * string -&gt; bool" Usage="iInternalConfigHost.PrefetchAll (configPath, streamName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -979,6 +1010,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.PrefetchSection(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function PrefetchSection (sectionGroupName As String, sectionName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PrefetchSection(System::String ^ sectionGroupName, System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="abstract member PrefetchSection : string * string -&gt; bool" Usage="iInternalConfigHost.PrefetchSection (sectionGroupName, sectionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1010,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequireCompleteInit (configRecord As IInternalConfigRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequireCompleteInit(System::Configuration::Internal::IInternalConfigRecord ^ configRecord);" />
+      <MemberSignature Language="F#" Value="abstract member RequireCompleteInit : System.Configuration.Internal.IInternalConfigRecord -&gt; unit" Usage="iInternalConfigHost.RequireCompleteInit configRecord" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1037,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ StartMonitoringStreamForChanges(System::String ^ streamName, System::Configuration::Internal::StreamChangeCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member StartMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; obj" Usage="iInternalConfigHost.StartMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1067,6 +1101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopMonitoringStreamForChanges (streamName As String, callback As StreamChangeCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopMonitoringStreamForChanges(System::String ^ streamName, System::Configuration::Internal::StreamChangeCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member StopMonitoringStreamForChanges : string * System.Configuration.Internal.StreamChangeCallback -&gt; unit" Usage="iInternalConfigHost.StopMonitoringStreamForChanges (streamName, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1096,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsChangeNotifications" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsChangeNotifications As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsChangeNotifications { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsChangeNotifications : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsChangeNotifications" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1121,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsLocation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsLocation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsLocation : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1146,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsPath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsPath { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsPath : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1171,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigHost.SupportsRefresh" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsRefresh As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsRefresh { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsRefresh : bool" Usage="System.Configuration.Internal.IInternalConfigHost.SupportsRefresh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1196,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyDefinitionAllowed (configPath As String, allowDefinition As ConfigurationAllowDefinition, allowExeDefinition As ConfigurationAllowExeDefinition, errorInfo As IConfigErrorInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyDefinitionAllowed(System::String ^ configPath, System::Configuration::ConfigurationAllowDefinition allowDefinition, System::Configuration::ConfigurationAllowExeDefinition allowExeDefinition, System::Configuration::Internal::IConfigErrorInfo ^ errorInfo);" />
+      <MemberSignature Language="F#" Value="abstract member VerifyDefinitionAllowed : string * System.Configuration.ConfigurationAllowDefinition * System.Configuration.ConfigurationAllowExeDefinition * System.Configuration.Internal.IConfigErrorInfo -&gt; unit" Usage="iInternalConfigHost.VerifyDefinitionAllowed (configPath, allowDefinition, allowExeDefinition, errorInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1238,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteCompleted(System::String ^ streamName, bool success, System::Object ^ writeContext);" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj -&gt; unit" Usage="iInternalConfigHost.WriteCompleted (streamName, success, writeContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1270,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteCompleted (streamName As String, success As Boolean, writeContext As Object, assertPermissions As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteCompleted(System::String ^ streamName, bool success, System::Object ^ writeContext, bool assertPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member WriteCompleted : string * bool * obj * bool -&gt; unit" Usage="iInternalConfigHost.WriteCompleted (streamName, success, writeContext, assertPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

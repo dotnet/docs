@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FileAuthorizationModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileAuthorizationModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileAuthorizationModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type FileAuthorizationModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser(System.String,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CheckFileAccessForUser (virtualPath As String, token As IntPtr, verb As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckFileAccessForUser(System::String ^ virtualPath, IntPtr token, System::String ^ verb);" />
+      <MemberSignature Language="F#" Value="static member CheckFileAccessForUser : string * nativeint * string -&gt; bool" Usage="System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser (virtualPath, token, verb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="fileAuthorizationModule.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="fileAuthorizationModule.Init app" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>

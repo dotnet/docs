@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceDictionaryLoadedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceDictionaryLoadedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ResourceDictionaryLoadedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs.ResourceDictionaryInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceDictionaryInfo As ResourceDictionaryInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Diagnostics::ResourceDictionaryInfo ^ ResourceDictionaryInfo { System::Windows::Diagnostics::ResourceDictionaryInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceDictionaryInfo : System.Windows.Diagnostics.ResourceDictionaryInfo" Usage="System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs.ResourceDictionaryInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

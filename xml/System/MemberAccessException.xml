@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MemberAccessException" />
   <TypeSignature Language="VB.NET" Value="Public Class MemberAccessException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberAccessException : SystemException" />
+  <TypeSignature Language="F#" Value="type MemberAccessException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.MemberAccessException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MemberAccessException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new MemberAccessException : string -&gt; MemberAccessException" Usage="new System.MemberAccessException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -167,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.MemberAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberAccessException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new MemberAccessException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; MemberAccessException" Usage="new System.MemberAccessException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.MemberAccessException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MemberAccessException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new MemberAccessException : string * Exception -&gt; MemberAccessException" Usage="new System.MemberAccessException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

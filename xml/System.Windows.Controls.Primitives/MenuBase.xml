@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.MenuBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MenuBase&#xA;Inherits ItemsControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuBase abstract : System::Windows::Controls::ItemsControl" />
+  <TypeSignature Language="F#" Value="type MenuBase = class&#xA;    inherit ItemsControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="menuBase.GetContainerForItemOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.HandleMouseButton(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub HandleMouseButton (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void HandleMouseButton(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member HandleMouseButton : System.Windows.Input.MouseButtonEventArgs -&gt; unit&#xA;override this.HandleMouseButton : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menuBase.HandleMouseButton e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="menuBase.IsItemItsOwnContainerOverride item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.MenuBase.ItemContainerTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerTemplateSelector As ItemContainerTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemContainerTemplateSelector ^ ItemContainerTemplateSelector { System::Windows::Controls::ItemContainerTemplateSelector ^ get(); void set(System::Windows::Controls::ItemContainerTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerTemplateSelector : System.Windows.Controls.ItemContainerTemplateSelector with get, set" Usage="System.Windows.Controls.Primitives.MenuBase.ItemContainerTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.MenuBase.ItemContainerTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemContainerTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemContainerTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemContainerTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.MenuBase.ItemContainerTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="menuBase.OnIsKeyboardFocusWithinChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="menuBase.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.MenuBase.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="menuBase.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property UsesItemContainerTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsesItemContainerTemplate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UsesItemContainerTemplate : bool with get, set" Usage="System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UsesItemContainerTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UsesItemContainerTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UsesItemContainerTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.MenuBase.UsesItemContainerTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

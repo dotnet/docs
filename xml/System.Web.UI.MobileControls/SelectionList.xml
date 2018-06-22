@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.SelectionList" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectionList&#xA;Inherits MobileControl&#xA;Implements IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectionList : System::Web::UI::MobileControls::MobileControl, System::Web::UI::IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type SelectionList = class&#xA;    inherit MobileControl&#xA;    interface IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="selectionList.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.CreateItems(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateItems (dataSource As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateItems(System::Collections::IEnumerable ^ dataSource);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItems : System.Collections.IEnumerable -&gt; unit&#xA;override this.CreateItems : System.Collections.IEnumerable -&gt; unit" Usage="selectionList.CreateItems dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.DataMember" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.MobileControls.SelectionList.DataMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Web.UI.MobileControls.SelectionList.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.DataTextField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataTextField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTextField : string with get, set" Usage="System.Web.UI.MobileControls.SelectionList.DataTextField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.DataValueField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataValueField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValueField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataValueField : string with get, set" Usage="System.Web.UI.MobileControls.SelectionList.DataValueField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.IsMultiSelect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMultiSelect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMultiSelect { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMultiSelect : bool" Usage="System.Web.UI.MobileControls.SelectionList.IsMultiSelect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.SelectionList.ItemDataBind" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBind As ListDataBindEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::MobileControls::ListDataBindEventHandler ^ ItemDataBind;" />
+      <MemberSignature Language="F#" Value="member this.ItemDataBind : System.Web.UI.MobileControls.ListDataBindEventHandler " Usage="member this.ItemDataBind : System.Web.UI.MobileControls.ListDataBindEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As MobileListItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileListItemCollection ^ Items { System::Web::UI::MobileControls::MobileListItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Web.UI.MobileControls.MobileListItemCollection" Usage="System.Web.UI.MobileControls.SelectionList.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -397,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="member this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="selectionList.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -432,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="selectionList.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -455,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.OnDataBinding(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDataBinding : EventArgs -&gt; unit" Usage="selectionList.OnDataBinding e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBind (e As ListDataBindEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBind(System::Web::UI::MobileControls::ListDataBindEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDataBind : System.Web.UI.MobileControls.ListDataBindEventArgs -&gt; unit&#xA;override this.OnItemDataBind : System.Web.UI.MobileControls.ListDataBindEventArgs -&gt; unit" Usage="selectionList.OnItemDataBind e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -508,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="selectionList.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -531,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="selectionList.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -561,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="member this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="selectionList.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -588,6 +605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.Rows" />
       <MemberSignature Language="VB.NET" Value="Public Property Rows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rows { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Rows : int with get, set" Usage="System.Web.UI.MobileControls.SelectionList.Rows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -638,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="selectionList.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -659,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.MobileControls.SelectionList.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -698,6 +718,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.SelectionList.SelectedIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -737,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.Selection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As MobileListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileListItem ^ Selection { System::Web::UI::MobileControls::MobileListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Selection : System.Web.UI.MobileControls.MobileListItem" Usage="System.Web.UI.MobileControls.SelectionList.Selection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -775,6 +797,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.SelectType" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectType As ListSelectType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ListSelectType SelectType { System::Web::UI::MobileControls::ListSelectType get(); void set(System::Web::UI::MobileControls::ListSelectType value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectType : System.Web.UI.MobileControls.ListSelectType with get, set" Usage="System.Web.UI.MobileControls.SelectionList.SelectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -890,6 +913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.SelectionList.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.MobileControls.SelectionList.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -918,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.SelectionList.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="selectionList.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

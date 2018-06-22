@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateBoldEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DateBoldEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateBoldEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DateBoldEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.DaysToBold" />
       <MemberSignature Language="VB.NET" Value="Public Property DaysToBold As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ DaysToBold { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DaysToBold : int[] with get, set" Usage="System.Windows.Forms.DateBoldEventArgs.DaysToBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Windows.Forms.DateBoldEventArgs.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.StartDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartDate : DateTime" Usage="System.Windows.Forms.DateBoldEventArgs.StartDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

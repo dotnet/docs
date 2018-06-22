@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine2&#xA;Implements IBuildEngine" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine2 : Microsoft::Build::Framework::IBuildEngine" />
+  <TypeSignature Language="F#" Value="type IBuildEngine2 = interface&#xA;    interface IBuildEngine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFile (projectFileName As String, targetNames As String(), globalProperties As IDictionary, targetOutputs As IDictionary, toolsVersion As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFile(System::String ^ projectFileName, cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ globalProperties, System::Collections::IDictionary ^ targetOutputs, System::String ^ toolsVersion);" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFile : string * string[] * System.Collections.IDictionary * System.Collections.IDictionary * string -&gt; bool" Usage="iBuildEngine2.BuildProjectFile (projectFileName, targetNames, globalProperties, targetOutputs, toolsVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.IDictionary[],System.String[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFilesInParallel (projectFileNames As String(), targetNames As String(), globalProperties As IDictionary(), targetOutputsPerProject As IDictionary(), toolsVersion As String(), useResultsCache As Boolean, unloadProjectsOnCompletion As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFilesInParallel(cli::array &lt;System::String ^&gt; ^ projectFileNames, cli::array &lt;System::String ^&gt; ^ targetNames, cli::array &lt;System::Collections::IDictionary ^&gt; ^ globalProperties, cli::array &lt;System::Collections::IDictionary ^&gt; ^ targetOutputsPerProject, cli::array &lt;System::String ^&gt; ^ toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion);" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFilesInParallel : string[] * string[] * System.Collections.IDictionary[] * System.Collections.IDictionary[] * string[] * bool * bool -&gt; bool" Usage="iBuildEngine2.BuildProjectFilesInParallel (projectFileNames, targetNames, globalProperties, targetOutputsPerProject, toolsVersion, useResultsCache, unloadProjectsOnCompletion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine2.IsRunningMultipleNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunningMultipleNodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunningMultipleNodes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRunningMultipleNodes : bool" Usage="Microsoft.Build.Framework.IBuildEngine2.IsRunningMultipleNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

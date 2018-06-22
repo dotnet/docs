@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LayoutEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LayoutEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LayoutEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type LayoutEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LayoutEventArgs.#ctor(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (affectedComponent As IComponent, affectedProperty As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LayoutEventArgs(System::ComponentModel::IComponent ^ affectedComponent, System::String ^ affectedProperty);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LayoutEventArgs : System.ComponentModel.IComponent * string -&gt; System.Windows.Forms.LayoutEventArgs" Usage="new System.Windows.Forms.LayoutEventArgs (affectedComponent, affectedProperty)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LayoutEventArgs.#ctor(System.Windows.Forms.Control,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (affectedControl As Control, affectedProperty As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LayoutEventArgs(System::Windows::Forms::Control ^ affectedControl, System::String ^ affectedProperty);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LayoutEventArgs : System.Windows.Forms.Control * string -&gt; System.Windows.Forms.LayoutEventArgs" Usage="new System.Windows.Forms.LayoutEventArgs (affectedControl, affectedProperty)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedComponent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedComponent As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ AffectedComponent { System::ComponentModel::IComponent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedComponent : System.ComponentModel.IComponent" Usage="System.Windows.Forms.LayoutEventArgs.AffectedComponent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ AffectedControl { System::Windows::Forms::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedControl : System.Windows.Forms.Control" Usage="System.Windows.Forms.LayoutEventArgs.AffectedControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedProperty As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AffectedProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedProperty : string" Usage="System.Windows.Forms.LayoutEventArgs.AffectedProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

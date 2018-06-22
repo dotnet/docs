@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogEntryType" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogEntryType" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogEntryType" />
+  <TypeSignature Language="F#" Value="type EventLogEntryType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 1" Usage="System.Diagnostics.EventLogEntryType.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.FailureAudit" />
       <MemberSignature Language="VB.NET" Value="FailureAudit" />
       <MemberSignature Language="C++ CLI" Value="FailureAudit" />
+      <MemberSignature Language="F#" Value="FailureAudit = 16" Usage="System.Diagnostics.EventLogEntryType.FailureAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Information" />
       <MemberSignature Language="VB.NET" Value="Information" />
       <MemberSignature Language="C++ CLI" Value="Information" />
+      <MemberSignature Language="F#" Value="Information = 4" Usage="System.Diagnostics.EventLogEntryType.Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.SuccessAudit" />
       <MemberSignature Language="VB.NET" Value="SuccessAudit" />
       <MemberSignature Language="C++ CLI" Value="SuccessAudit" />
+      <MemberSignature Language="F#" Value="SuccessAudit = 8" Usage="System.Diagnostics.EventLogEntryType.SuccessAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 2" Usage="System.Diagnostics.EventLogEntryType.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

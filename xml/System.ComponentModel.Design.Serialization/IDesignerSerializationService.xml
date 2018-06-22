@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerSerializationService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerSerializationService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerSerializationService" />
+  <TypeSignature Language="F#" Value="type IDesignerSerializationService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationData As Object) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ Deserialize(System::Object ^ serializationData);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : obj -&gt; System.Collections.ICollection" Usage="iDesignerSerializationService.Deserialize serializationData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function Serialize (objects As ICollection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Serialize(System::Collections::ICollection ^ objects);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.Collections.ICollection -&gt; obj" Usage="iDesignerSerializationService.Serialize objects" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

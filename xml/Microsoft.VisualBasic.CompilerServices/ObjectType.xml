@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.ObjectType" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectType" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectType sealed" />
+  <TypeSignature Language="F#" Value="type ObjectType = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.AddObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AddObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ AddObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member AddObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.AddObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.BitAndObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitAndObj (obj1 As Object, obj2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ BitAndObj(System::Object ^ obj1, System::Object ^ obj2);" />
+      <MemberSignature Language="F#" Value="static member BitAndObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.BitAndObj (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.BitOrObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitOrObj (obj1 As Object, obj2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ BitOrObj(System::Object ^ obj1, System::Object ^ obj2);" />
+      <MemberSignature Language="F#" Value="static member BitOrObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.BitOrObj (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.BitXorObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitXorObj (obj1 As Object, obj2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ BitXorObj(System::Object ^ obj1, System::Object ^ obj2);" />
+      <MemberSignature Language="F#" Value="static member BitXorObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.BitXorObj (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.DivObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DivObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ DivObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member DivObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.DivObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.GetObjectValuePrimitive(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectValuePrimitive (o As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObjectValuePrimitive(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="static member GetObjectValuePrimitive : obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.GetObjectValuePrimitive o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.IDivObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IDivObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IDivObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member IDivObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.IDivObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.LikeObj(System.Object,System.Object,Microsoft.VisualBasic.CompareMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LikeObj (vLeft As Object, vRight As Object, CompareOption As CompareMethod) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool LikeObj(System::Object ^ vLeft, System::Object ^ vRight, Microsoft::VisualBasic::CompareMethod CompareOption);" />
+      <MemberSignature Language="F#" Value="static member LikeObj : obj * obj * Microsoft.VisualBasic.CompareMethod -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.LikeObj (vLeft, vRight, CompareOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.ModObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ModObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ModObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member ModObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.ModObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.MulObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MulObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ MulObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member MulObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.MulObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.NegObj(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NegObj (obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ NegObj(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member NegObj : obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.NegObj obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -434,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.NotObj(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotObj (obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ NotObj(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member NotObj : obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.NotObj obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -466,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.ObjTst(System.Object,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ObjTst (o1 As Object, o2 As Object, TextCompare As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ObjTst(System::Object ^ o1, System::Object ^ o2, bool TextCompare);" />
+      <MemberSignature Language="F#" Value="static member ObjTst : obj * obj * bool -&gt; int" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.ObjTst (o1, o2, TextCompare)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -540,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.PlusObj(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PlusObj (obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PlusObj(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member PlusObj : obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.PlusObj obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -572,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.PowObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PowObj (obj1 As Object, obj2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PowObj(System::Object ^ obj1, System::Object ^ obj2);" />
+      <MemberSignature Language="F#" Value="static member PowObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.PowObj (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -606,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.ShiftLeftObj(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShiftLeftObj (o1 As Object, amount As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ShiftLeftObj(System::Object ^ o1, int amount);" />
+      <MemberSignature Language="F#" Value="static member ShiftLeftObj : obj * int -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.ShiftLeftObj (o1, amount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -640,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.ShiftRightObj(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShiftRightObj (o1 As Object, amount As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ShiftRightObj(System::Object ^ o1, int amount);" />
+      <MemberSignature Language="F#" Value="static member ShiftRightObj : obj * int -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.ShiftRightObj (o1, amount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -674,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.StrCatObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StrCatObj (vLeft As Object, vRight As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ StrCatObj(System::Object ^ vLeft, System::Object ^ vRight);" />
+      <MemberSignature Language="F#" Value="static member StrCatObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.StrCatObj (vLeft, vRight)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -708,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.SubObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SubObj (o1 As Object, o2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ SubObj(System::Object ^ o1, System::Object ^ o2);" />
+      <MemberSignature Language="F#" Value="static member SubObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.SubObj (o1, o2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -742,6 +762,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectType.XorObj(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function XorObj (obj1 As Object, obj2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ XorObj(System::Object ^ obj1, System::Object ^ obj2);" />
+      <MemberSignature Language="F#" Value="static member XorObj : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.ObjectType.XorObj (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

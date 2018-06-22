@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509SecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class X509SecurityTokenHandler&#xA;Inherits SecurityTokenHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509SecurityTokenHandler : System::IdentityModel::Tokens::SecurityTokenHandler" />
+  <TypeSignature Language="F#" Value="type X509SecurityTokenHandler = class&#xA;    inherit SecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mapToWindows As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenHandler(bool mapToWindows);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509SecurityTokenHandler : bool -&gt; System.IdentityModel.Tokens.X509SecurityTokenHandler" Usage="new System.IdentityModel.Tokens.X509SecurityTokenHandler mapToWindows" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.#ctor(System.IdentityModel.Selectors.X509CertificateValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificateValidator As X509CertificateValidator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenHandler(System::IdentityModel::Selectors::X509CertificateValidator ^ certificateValidator);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509SecurityTokenHandler : System.IdentityModel.Selectors.X509CertificateValidator -&gt; System.IdentityModel.Tokens.X509SecurityTokenHandler" Usage="new System.IdentityModel.Tokens.X509SecurityTokenHandler certificateValidator" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.#ctor(System.Boolean,System.IdentityModel.Selectors.X509CertificateValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mapToWindows As Boolean, certificateValidator As X509CertificateValidator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenHandler(bool mapToWindows, System::IdentityModel::Selectors::X509CertificateValidator ^ certificateValidator);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509SecurityTokenHandler : bool * System.IdentityModel.Selectors.X509CertificateValidator -&gt; System.IdentityModel.Tokens.X509SecurityTokenHandler" Usage="new System.IdentityModel.Tokens.X509SecurityTokenHandler (mapToWindows, certificateValidator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadKeyIdentifierClause (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanReadKeyIdentifierClause : System.Xml.XmlReader -&gt; bool" Usage="x509SecurityTokenHandler.CanReadKeyIdentifierClause reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadToken (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadToken(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanReadToken : System.Xml.XmlReader -&gt; bool" Usage="x509SecurityTokenHandler.CanReadToken reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.CanValidateToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanValidateToken : bool" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.CanValidateToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanWriteKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.CanWriteKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanWriteKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ securityKeyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.CanWriteKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="x509SecurityTokenHandler.CanWriteKeyIdentifierClause securityKeyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.CanWriteToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWriteToken As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteToken { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWriteToken : bool" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.CanWriteToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.CertificateValidator" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidator As X509CertificateValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator with get, set" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.CertificateValidator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.GetTokenTypeIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenTypeIdentifiers () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetTokenTypeIdentifiers();" />
+      <MemberSignature Language="F#" Value="override this.GetTokenTypeIdentifiers : unit -&gt; string[]" Usage="x509SecurityTokenHandler.GetTokenTypeIdentifiers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
+      <MemberSignature Language="F#" Value="override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="x509SecurityTokenHandler.LoadCustomConfiguration customConfigElements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -336,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows" />
       <MemberSignature Language="VB.NET" Value="Public Property MapToWindows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapToWindows { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MapToWindows : bool with get, set" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -357,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadKeyIdentifierClause (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadKeyIdentifierClause : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="x509SecurityTokenHandler.ReadKeyIdentifierClause reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadToken : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="x509SecurityTokenHandler.ReadToken reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -411,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.TokenType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TokenType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenType : Type" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.TokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -431,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="x509SecurityTokenHandler.ValidateToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -465,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteKeyIdentifierClause(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteKeyIdentifierClause(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteKeyIdentifierClause(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ securityKeyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.WriteKeyIdentifierClause : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="x509SecurityTokenHandler.WriteKeyIdentifierClause (writer, securityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -497,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.WriteToken : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="x509SecurityTokenHandler.WriteToken (writer, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -530,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteXmlDSigDefinedClauseTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteXmlDSigDefinedClauseTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WriteXmlDSigDefinedClauseTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteXmlDSigDefinedClauseTypes : bool with get, set" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteXmlDSigDefinedClauseTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -564,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.X509NTAuthChainTrustValidator" />
       <MemberSignature Language="VB.NET" Value="Public Property X509NTAuthChainTrustValidator As X509NTAuthChainTrustValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::X509NTAuthChainTrustValidator ^ X509NTAuthChainTrustValidator { System::IdentityModel::Tokens::X509NTAuthChainTrustValidator ^ get(); void set(System::IdentityModel::Tokens::X509NTAuthChainTrustValidator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.X509NTAuthChainTrustValidator : System.IdentityModel.Tokens.X509NTAuthChainTrustValidator with get, set" Usage="System.IdentityModel.Tokens.X509SecurityTokenHandler.X509NTAuthChainTrustValidator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

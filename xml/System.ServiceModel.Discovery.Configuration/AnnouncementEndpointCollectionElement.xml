@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnouncementEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of AnnouncementEndpoint, AnnouncementEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnouncementEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Discovery::AnnouncementEndpoint ^, System::ServiceModel::Discovery::Configuration::AnnouncementEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type AnnouncementEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;AnnouncementEndpoint, AnnouncementEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

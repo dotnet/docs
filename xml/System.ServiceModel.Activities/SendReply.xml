@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendReply" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendReply&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendReply sealed : System::Activities::Activity" />
+  <TypeSignature Language="F#" Value="type SendReply = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Activities.SendReply.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.CacheMetadata(System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As ActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="sendReply.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As SendContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::SendContent ^ Content { System::ServiceModel::Activities::SendContent ^ get(); void set(System::ServiceModel::Activities::SendContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.ServiceModel.Activities.SendContent with get, set" Usage="System.ServiceModel.Activities.SendReply.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.CorrelationInitializers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationInitializers As Collection(Of CorrelationInitializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Activities::CorrelationInitializer ^&gt; ^ CorrelationInitializers { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Activities::CorrelationInitializer ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationInitializers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt;" Usage="System.ServiceModel.Activities.SendReply.CorrelationInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.FromOperationDescription(System.ServiceModel.Description.OperationDescription,System.Collections.Generic.IEnumerable{System.ServiceModel.Activities.SendReply}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOperationDescription (operation As OperationDescription, ByRef faultReplies As IEnumerable(Of SendReply)) As SendReply" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::SendReply ^ FromOperationDescription(System::ServiceModel::Description::OperationDescription ^ operation, [Runtime::InteropServices::Out] System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Activities::SendReply ^&gt; ^ % faultReplies);" />
+      <MemberSignature Language="F#" Value="static member FromOperationDescription : System.ServiceModel.Description.OperationDescription *  -&gt; System.ServiceModel.Activities.SendReply" Usage="System.ServiceModel.Activities.SendReply.FromOperationDescription (operation, faultReplies)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.PersistBeforeSend" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistBeforeSend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistBeforeSend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistBeforeSend : bool with get, set" Usage="System.ServiceModel.Activities.SendReply.PersistBeforeSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Request" />
       <MemberSignature Language="VB.NET" Value="Public Property Request As Receive" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Receive ^ Request { System::ServiceModel::Activities::Receive ^ get(); void set(System::ServiceModel::Activities::Receive ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.ServiceModel.Activities.Receive with get, set" Usage="System.ServiceModel.Activities.SendReply.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

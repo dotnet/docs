@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.CreateOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CreateOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CreateOptions" />
+  <TypeSignature Language="F#" Value="type CreateOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.CreateOptions.InitializeDefaults" />
       <MemberSignature Language="VB.NET" Value="InitializeDefaults" />
       <MemberSignature Language="C++ CLI" Value="InitializeDefaults" />
+      <MemberSignature Language="F#" Value="InitializeDefaults = 1" Usage="System.Activities.Presentation.Model.CreateOptions.InitializeDefaults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.CreateOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.Presentation.Model.CreateOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

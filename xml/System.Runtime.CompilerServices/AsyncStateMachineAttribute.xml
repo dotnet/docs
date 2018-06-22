@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncStateMachineAttribute&#xA;Inherits StateMachineAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncStateMachineAttribute sealed : System::Runtime::CompilerServices::StateMachineAttribute" />
+  <TypeSignature Language="F#" Value="type AsyncStateMachineAttribute = class&#xA;    inherit StateMachineAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncStateMachineAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (stateMachineType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncStateMachineAttribute(Type ^ stateMachineType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.AsyncStateMachineAttribute : Type -&gt; System.Runtime.CompilerServices.AsyncStateMachineAttribute" Usage="new System.Runtime.CompilerServices.AsyncStateMachineAttribute stateMachineType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

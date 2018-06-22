@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerRegionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerRegionCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerRegionCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type DesignerRegionCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.#ctor(System.Web.UI.Design.ControlDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ControlDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerRegionCollection(System::Web::UI::Design::ControlDesigner ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DesignerRegionCollection : System.Web.UI.Design.ControlDesigner -&gt; System.Web.UI.Design.DesignerRegionCollection" Usage="new System.Web.UI.Design.DesignerRegionCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.Add(System.Web.UI.Design.DesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (region As DesignerRegion) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::Design::DesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.Design.DesignerRegion -&gt; int" Usage="designerRegionCollection.Add region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="designerRegionCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.Contains(System.Web.UI.Design.DesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (region As DesignerRegion) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::Design::DesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.Design.DesignerRegion -&gt; bool" Usage="designerRegionCollection.Contains region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Array * int -&gt; unit" Usage="designerRegionCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -253,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.Design.DesignerRegionCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="designerRegionCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.IndexOf(System.Web.UI.Design.DesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (region As DesignerRegion) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::Design::DesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.Design.DesignerRegion -&gt; int" Usage="designerRegionCollection.IndexOf region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -348,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.Insert(System.Int32,System.Web.UI.Design.DesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, region As DesignerRegion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::Design::DesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.Design.DesignerRegion -&gt; unit" Usage="designerRegionCollection.Insert (index, region)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -389,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Web.UI.Design.DesignerRegionCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.Design.DesignerRegionCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -437,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.Design.DesignerRegionCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -471,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DesignerRegion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerRegion ^ default[int] { System::Web::UI::Design::DesignerRegion ^ get(int index); void set(int index, System::Web::UI::Design::DesignerRegion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.Design.DesignerRegion with get, set" Usage="System.Web.UI.Design.DesignerRegionCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As ControlDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ControlDesigner ^ Owner { System::Web::UI::Design::ControlDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Web.UI.Design.ControlDesigner" Usage="System.Web.UI.Design.DesignerRegionCollection.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -538,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.Remove(System.Web.UI.Design.DesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (region As DesignerRegion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::Design::DesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.Design.DesignerRegion -&gt; unit" Usage="designerRegionCollection.Remove region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -577,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerRegionCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="designerRegionCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -619,6 +636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.Design.DesignerRegionCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -687,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -718,6 +737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -752,6 +772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -985,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1016,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1047,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerRegionCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerRegionCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.XmlMappingSource" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlMappingSource&#xA;Inherits MappingSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlMappingSource sealed : System::Data::Linq::Mapping::MappingSource" />
+  <TypeSignature Language="F#" Value="type XmlMappingSource = class&#xA;    inherit MappingSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.CreateModel(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateModel (dataContextType As Type) As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Linq::Mapping::MetaModel ^ CreateModel(Type ^ dataContextType);" />
+      <MemberSignature Language="F#" Value="override this.CreateModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="xmlMappingSource.CreateModel dataContextType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromReader(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromReader (reader As XmlReader) As XmlMappingSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Linq::Mapping::XmlMappingSource ^ FromReader(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member FromReader : System.Xml.XmlReader -&gt; System.Data.Linq.Mapping.XmlMappingSource" Usage="System.Data.Linq.Mapping.XmlMappingSource.FromReader reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Linq.Mapping.XmlMappingSource FromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromStream(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Linq::Mapping::XmlMappingSource ^ FromStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member FromStream : System.IO.Stream -&gt; System.Data.Linq.Mapping.XmlMappingSource" Usage="System.Data.Linq.Mapping.XmlMappingSource.FromStream stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromUrl (url As String) As XmlMappingSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Linq::Mapping::XmlMappingSource ^ FromUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member FromUrl : string -&gt; System.Data.Linq.Mapping.XmlMappingSource" Usage="System.Data.Linq.Mapping.XmlMappingSource.FromUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromXml (xml As String) As XmlMappingSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Linq::Mapping::XmlMappingSource ^ FromXml(System::String ^ xml);" />
+      <MemberSignature Language="F#" Value="static member FromXml : string -&gt; System.Data.Linq.Mapping.XmlMappingSource" Usage="System.Data.Linq.Mapping.XmlMappingSource.FromXml xml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

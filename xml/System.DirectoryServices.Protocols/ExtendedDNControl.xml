@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ExtendedDNControl" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtendedDNControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtendedDNControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type ExtendedDNControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor(System.DirectoryServices.Protocols.ExtendedDNFlag)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flag As ExtendedDNFlag)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedDNControl(System::DirectoryServices::Protocols::ExtendedDNFlag flag);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ExtendedDNControl : System.DirectoryServices.Protocols.ExtendedDNFlag -&gt; System.DirectoryServices.Protocols.ExtendedDNControl" Usage="new System.DirectoryServices.Protocols.ExtendedDNControl flag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ExtendedDNControl.Flag" />
       <MemberSignature Language="VB.NET" Value="Public Property Flag As ExtendedDNFlag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::ExtendedDNFlag Flag { System::DirectoryServices::Protocols::ExtendedDNFlag get(); void set(System::DirectoryServices::Protocols::ExtendedDNFlag value); };" />
+      <MemberSignature Language="F#" Value="member this.Flag : System.DirectoryServices.Protocols.ExtendedDNFlag with get, set" Usage="System.DirectoryServices.Protocols.ExtendedDNControl.Flag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedDNControl.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="extendedDNControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

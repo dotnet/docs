@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IStopListeningRegisteredObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStopListeningRegisteredObject&#xA;Implements IRegisteredObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStopListeningRegisteredObject : System::Web::Hosting::IRegisteredObject" />
+  <TypeSignature Language="F#" Value="type IStopListeningRegisteredObject = interface&#xA;    interface IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IStopListeningRegisteredObject.StopListening" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopListening ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopListening();" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : unit -&gt; unit" Usage="iStopListeningRegisteredObject.StopListening " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

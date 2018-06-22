@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HtmlElementErrorEventHandler(sender As Object, e As HtmlElementErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void HtmlElementErrorEventHandler(System::Object ^ sender, HtmlElementErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type HtmlElementErrorEventHandler = delegate of obj * HtmlElementErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

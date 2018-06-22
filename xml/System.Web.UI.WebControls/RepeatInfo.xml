@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeatInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RepeatInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RepeatInfo sealed" />
+  <TypeSignature Language="F#" Value="type RepeatInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.CaptionAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionAlign As TableCaptionAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableCaptionAlign CaptionAlign { System::Web::UI::WebControls::TableCaptionAlign get(); void set(System::Web::UI::WebControls::TableCaptionAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionAlign : System.Web.UI.WebControls.TableCaptionAlign with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.CaptionAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.OuterTableImplied" />
       <MemberSignature Language="VB.NET" Value="Public Property OuterTableImplied As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OuterTableImplied { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OuterTableImplied : bool with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.OuterTableImplied" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RepeatInfo.RenderRepeater(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.IRepeatInfoUser,System.Web.UI.WebControls.Style,System.Web.UI.WebControls.WebControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RenderRepeater (writer As HtmlTextWriter, user As IRepeatInfoUser, controlStyle As Style, baseControl As WebControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderRepeater(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::IRepeatInfoUser ^ user, System::Web::UI::WebControls::Style ^ controlStyle, System::Web::UI::WebControls::WebControl ^ baseControl);" />
+      <MemberSignature Language="F#" Value="member this.RenderRepeater : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.IRepeatInfoUser * System.Web.UI.WebControls.Style * System.Web.UI.WebControls.WebControl -&gt; unit" Usage="repeatInfo.RenderRepeater (writer, user, controlStyle, baseControl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.RepeatColumns" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatColumns As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RepeatColumns { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatColumns : int with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.RepeatColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.RepeatDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatDirection As RepeatDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::RepeatDirection RepeatDirection { System::Web::UI::WebControls::RepeatDirection get(); void set(System::Web::UI::WebControls::RepeatDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatDirection : System.Web.UI.WebControls.RepeatDirection with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.RepeatDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.RepeatLayout" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatLayout As RepeatLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::RepeatLayout RepeatLayout { System::Web::UI::WebControls::RepeatLayout get(); void set(System::Web::UI::WebControls::RepeatLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatLayout : System.Web.UI.WebControls.RepeatLayout with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.RepeatLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RepeatInfo.UseAccessibleHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAccessibleHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAccessibleHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAccessibleHeader : bool with get, set" Usage="System.Web.UI.WebControls.RepeatInfo.UseAccessibleHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

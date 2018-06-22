@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DocumentDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class DocumentDesigner&#xA;Inherits ScrollableControlDesigner&#xA;Implements IDisposable, IRootDesigner, IToolboxUser" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocumentDesigner : System::Windows::Forms::Design::ScrollableControlDesigner, IDisposable, System::ComponentModel::Design::IRootDesigner, System::Drawing::Design::IToolboxUser" />
+  <TypeSignature Language="F#" Value="type DocumentDesigner = class&#xA;    inherit ScrollableControlDesigner&#xA;    interface IRootDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IToolboxUser" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="documentDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.EnsureMenuEditorService(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureMenuEditorService (c As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureMenuEditorService(System::ComponentModel::IComponent ^ c);" />
+      <MemberSignature Language="F#" Value="abstract member EnsureMenuEditorService : System.ComponentModel.IComponent -&gt; unit&#xA;override this.EnsureMenuEditorService : System.ComponentModel.IComponent -&gt; unit" Usage="documentDesigner.EnsureMenuEditorService c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.GetGlyphs(System.Windows.Forms.Design.Behavior.GlyphSelectionType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGlyphs (selectionType As GlyphSelectionType) As GlyphCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::Design::Behavior::GlyphCollection ^ GetGlyphs(System::Windows::Forms::Design::Behavior::GlyphSelectionType selectionType);" />
+      <MemberSignature Language="F#" Value="override this.GetGlyphs : System.Windows.Forms.Design.Behavior.GlyphSelectionType -&gt; System.Windows.Forms.Design.Behavior.GlyphCollection" Usage="documentDesigner.GetGlyphs selectionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.GetToolSupported(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetToolSupported (tool As ToolboxItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetToolSupported(System::Drawing::Design::ToolboxItem ^ tool);" />
+      <MemberSignature Language="F#" Value="abstract member GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool&#xA;override this.GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool" Usage="documentDesigner.GetToolSupported tool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="documentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.DocumentDesigner.menuEditorService" />
       <MemberSignature Language="VB.NET" Value="Protected menuEditorService As IMenuEditorService " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Windows::Forms::Design::IMenuEditorService ^ menuEditorService;" />
+      <MemberSignature Language="F#" Value="val mutable menuEditorService : System.Windows.Forms.Design.IMenuEditorService" Usage="System.Windows.Forms.Design.DocumentDesigner.menuEditorService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.OnContextMenu(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContextMenu (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContextMenu(int x, int y);" />
+      <MemberSignature Language="F#" Value="override this.OnContextMenu : int * int -&gt; unit" Usage="documentDesigner.OnContextMenu (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.OnCreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateHandle : unit -&gt; unit" Usage="documentDesigner.OnCreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -289,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="documentDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DocumentDesigner.SelectionRules" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SelectionRules As SelectionRules" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Design::SelectionRules SelectionRules { System::Windows::Forms::Design::SelectionRules get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionRules : System.Windows.Forms.Design.SelectionRules" Usage="System.Windows.Forms.Design.DocumentDesigner.SelectionRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -379,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DocumentDesigner.System#ComponentModel#Design#IRootDesigner#SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedTechnologies As ViewTechnology() Implements IRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System.ComponentModel.Design.IRootDesigner.SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Design.DocumentDesigner.System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -468,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.ToolPicked(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ToolPicked (tool As ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ToolPicked(System::Drawing::Design::ToolboxItem ^ tool);" />
+      <MemberSignature Language="F#" Value="abstract member ToolPicked : System.Drawing.Design.ToolboxItem -&gt; unit&#xA;override this.ToolPicked : System.Drawing.Design.ToolboxItem -&gt; unit" Usage="documentDesigner.ToolPicked tool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -499,6 +512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="documentDesigner.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

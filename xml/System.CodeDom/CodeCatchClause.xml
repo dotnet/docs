@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCatchClause" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeCatchClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeCatchClause" />
+  <TypeSignature Language="F#" Value="type CodeCatchClause = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClause.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCatchClause(System::String ^ localName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCatchClause : string -&gt; System.CodeDom.CodeCatchClause" Usage="new System.CodeDom.CodeCatchClause localName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localName As String, catchExceptionType As CodeTypeReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCatchClause(System::String ^ localName, System::CodeDom::CodeTypeReference ^ catchExceptionType);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCatchClause : string * System.CodeDom.CodeTypeReference -&gt; System.CodeDom.CodeCatchClause" Usage="new System.CodeDom.CodeCatchClause (localName, catchExceptionType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference,System.CodeDom.CodeStatement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localName As String, catchExceptionType As CodeTypeReference, ParamArray statements As CodeStatement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCatchClause(System::String ^ localName, System::CodeDom::CodeTypeReference ^ catchExceptionType, ... cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ statements);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCatchClause : string * System.CodeDom.CodeTypeReference * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeCatchClause" Usage="new System.CodeDom.CodeCatchClause (localName, catchExceptionType, statements)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCatchClause.CatchExceptionType" />
       <MemberSignature Language="VB.NET" Value="Public Property CatchExceptionType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ CatchExceptionType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CatchExceptionType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeCatchClause.CatchExceptionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCatchClause.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string with get, set" Usage="System.CodeDom.CodeCatchClause.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCatchClause.Statements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statements As CodeStatementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ Statements { System::CodeDom::CodeStatementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Statements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeCatchClause.Statements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathSegment" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PathSegment&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PathSegment abstract : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type PathSegment = class&#xA;    inherit Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PathSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathSegment ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.PathSegment" Usage="pathSegment.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PathSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathSegment ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.PathSegment" Usage="pathSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathSegment.IsSmoothJoin" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSmoothJoin As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSmoothJoin { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSmoothJoin : bool with get, set" Usage="System.Windows.Media.PathSegment.IsSmoothJoin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathSegment.IsSmoothJoinProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSmoothJoinProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSmoothJoinProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSmoothJoinProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathSegment.IsSmoothJoinProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PathSegment.IsStroked" />
       <MemberSignature Language="VB.NET" Value="Public Property IsStroked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStroked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsStroked : bool with get, set" Usage="System.Windows.Media.PathSegment.IsStroked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PathSegment.IsStrokedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsStrokedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsStrokedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsStrokedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PathSegment.IsStrokedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

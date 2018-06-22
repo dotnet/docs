@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerNode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerNode&#xA;Implements IOnlineStatus" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNode sealed : System::ServiceModel::IOnlineStatus" />
+  <TypeSignature Language="F#" Value="type PeerNode = class&#xA;    interface IOnlineStatus" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerNode.IsOnline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOnline As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOnline { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOnline : bool" Usage="System.ServiceModel.PeerNode.IsOnline" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IOnlineStatus.IsOnline</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerNode.MessagePropagationFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property MessagePropagationFilter As PeerMessagePropagationFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerMessagePropagationFilter ^ MessagePropagationFilter { System::ServiceModel::PeerMessagePropagationFilter ^ get(); void set(System::ServiceModel::PeerMessagePropagationFilter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessagePropagationFilter : System.ServiceModel.PeerMessagePropagationFilter with get, set" Usage="System.ServiceModel.PeerNode.MessagePropagationFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.PeerNode.Offline" />
       <MemberSignature Language="VB.NET" Value="Public Event Offline As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Offline;" />
+      <MemberSignature Language="F#" Value="member this.Offline : EventHandler " Usage="member this.Offline : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.IOnlineStatus.Offline</InterfaceMember>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.PeerNode.Online" />
       <MemberSignature Language="VB.NET" Value="Public Event Online As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Online;" />
+      <MemberSignature Language="F#" Value="member this.Online : EventHandler " Usage="member this.Online : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.IOnlineStatus.Online</InterfaceMember>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerNode.Port" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int" Usage="System.ServiceModel.PeerNode.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerNode.RefreshConnection" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshConnection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshConnection();" />
+      <MemberSignature Language="F#" Value="member this.RefreshConnection : unit -&gt; unit" Usage="peerNode.RefreshConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerNode.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerNode.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

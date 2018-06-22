@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DSDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DSDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DSDescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type DSDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DSDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DSDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DSDescriptionAttribute : string -&gt; System.DirectoryServices.DSDescriptionAttribute" Usage="new System.DirectoryServices.DSDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DSDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.DirectoryServices.DSDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

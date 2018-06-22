@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyInterop" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInterop" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyInterop abstract sealed" />
+  <TypeSignature Language="F#" Value="type KeyInterop = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyInterop.KeyFromVirtualKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function KeyFromVirtualKey (virtualKey As Integer) As Key" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::Key KeyFromVirtualKey(int virtualKey);" />
+      <MemberSignature Language="F#" Value="static member KeyFromVirtualKey : int -&gt; System.Windows.Input.Key" Usage="System.Windows.Input.KeyInterop.KeyFromVirtualKey virtualKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 VirtualKeyFromKey(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyInterop.VirtualKeyFromKey(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int VirtualKeyFromKey(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="static member VirtualKeyFromKey : System.Windows.Input.Key -&gt; int" Usage="System.Windows.Input.KeyInterop.VirtualKeyFromKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationshipCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PackageRelationshipCollection&#xA;Implements IEnumerable(Of PackageRelationship)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageRelationshipCollection : System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackageRelationship ^&gt;" />
+  <TypeSignature Language="F#" Value="type PackageRelationshipCollection = class&#xA;    interface seq&lt;PackageRelationship&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageRelationshipCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of PackageRelationship)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::IO::Packaging::PackageRelationship ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IO.Packaging.PackageRelationship&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IO.Packaging.PackageRelationship&gt;" Usage="packageRelationshipCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>

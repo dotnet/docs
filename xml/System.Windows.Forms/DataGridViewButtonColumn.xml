@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewButtonColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewButtonColumn&#xA;Inherits DataGridViewColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewButtonColumn : System::Windows::Forms::DataGridViewColumn" />
+  <TypeSignature Language="F#" Value="type DataGridViewButtonColumn = class&#xA;    inherit DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewButtonColumn.CellTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewButtonColumn.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewButtonColumn.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FlatStyle As FlatStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlatStyle FlatStyle { System::Windows::Forms::FlatStyle get(); void set(System::Windows::Forms::FlatStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FlatStyle : System.Windows.Forms.FlatStyle with get, set" Usage="System.Windows.Forms.DataGridViewButtonColumn.FlatStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -279,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonColumn.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.DataGridViewButtonColumn.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewButtonColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewButtonColumn.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -350,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonColumn.UseColumnTextForButtonValue" />
       <MemberSignature Language="VB.NET" Value="Public Property UseColumnTextForButtonValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseColumnTextForButtonValue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseColumnTextForButtonValue : bool with get, set" Usage="System.Windows.Forms.DataGridViewButtonColumn.UseColumnTextForButtonValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

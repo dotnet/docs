@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SelectionMode" />
+  <TypeSignature Language="F#" Value="type SelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Extended" />
       <MemberSignature Language="VB.NET" Value="Extended" />
       <MemberSignature Language="C++ CLI" Value="Extended" />
+      <MemberSignature Language="F#" Value="Extended = 2" Usage="System.Windows.Controls.SelectionMode.Extended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Multiple" />
       <MemberSignature Language="VB.NET" Value="Multiple" />
       <MemberSignature Language="C++ CLI" Value="Multiple" />
+      <MemberSignature Language="F#" Value="Multiple = 1" Usage="System.Windows.Controls.SelectionMode.Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectionMode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 0" Usage="System.Windows.Controls.SelectionMode.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

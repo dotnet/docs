@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="F#" Value="type IHierarchicalVirtualizationAndScrollInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Property Constraints As HierarchicalVirtualizationConstraints" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::HierarchicalVirtualizationConstraints Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
+      <MemberSignature Language="F#" Value="member this.Constraints : System.Windows.Controls.HierarchicalVirtualizationConstraints with get, set" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderDesiredSizes As HierarchicalVirtualizationHeaderDesiredSizes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderDesiredSizes : System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberSignature Language="VB.NET" Value="Public Property InBackgroundLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InBackgroundLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InBackgroundLayout : bool with get, set" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemDesiredSizes As HierarchicalVirtualizationItemDesiredSizes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemDesiredSizes : System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes with get, set" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemsHost As Panel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Panel ^ ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsHost : System.Windows.Controls.Panel" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberSignature Language="VB.NET" Value="Public Property MustDisableVirtualization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustDisableVirtualization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MustDisableVirtualization : bool with get, set" Usage="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

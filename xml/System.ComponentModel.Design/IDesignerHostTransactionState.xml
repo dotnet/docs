@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerHostTransactionState" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerHostTransactionState" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDesignerHostTransactionState" />
+  <TypeSignature Language="F#" Value="type IDesignerHostTransactionState = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHostTransactionState.IsClosingTransaction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClosingTransaction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClosingTransaction { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosingTransaction : bool" Usage="System.ComponentModel.Design.IDesignerHostTransactionState.IsClosingTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

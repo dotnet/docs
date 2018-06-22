@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IEditableTextControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEditableTextControl&#xA;Implements ITextControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEditableTextControl : System::Web::UI::ITextControl" />
+  <TypeSignature Language="F#" Value="type IEditableTextControl = interface&#xA;    interface ITextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.IEditableTextControl.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IUnknownConstantAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IUnknownConstantAttribute&#xA;Inherits CustomConstantAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IUnknownConstantAttribute sealed : System::Runtime::CompilerServices::CustomConstantAttribute" />
+  <TypeSignature Language="F#" Value="type IUnknownConstantAttribute = class&#xA;    inherit CustomConstantAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.IUnknownConstantAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.CompilerServices.IUnknownConstantAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

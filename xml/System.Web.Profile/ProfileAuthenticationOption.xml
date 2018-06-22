@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileAuthenticationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProfileAuthenticationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProfileAuthenticationOption" />
+  <TypeSignature Language="F#" Value="type ProfileAuthenticationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Profile.ProfileAuthenticationOption.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 2" Usage="System.Web.Profile.ProfileAuthenticationOption.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Profile.ProfileAuthenticationOption.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 0" Usage="System.Web.Profile.ProfileAuthenticationOption.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Profile.ProfileAuthenticationOption.Authenticated" />
       <MemberSignature Language="VB.NET" Value="Authenticated" />
       <MemberSignature Language="C++ CLI" Value="Authenticated" />
+      <MemberSignature Language="F#" Value="Authenticated = 1" Usage="System.Web.Profile.ProfileAuthenticationOption.Authenticated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

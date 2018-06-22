@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartHttpHandler&#xA;Inherits Page&#xA;Implements IHttpHandler, IRequiresSessionState" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartHttpHandler : System::Web::UI::Page, System::Web::IHttpHandler, System::Web::SessionState::IRequiresSessionState" />
+  <TypeSignature Language="F#" Value="type ChartHttpHandler = class&#xA;    inherit Page&#xA;    interface IRequiresSessionState&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.Settings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Settings As ChartHttpHandlerSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::DataVisualization::Charting::ChartHttpHandlerSettings ^ Settings { System::Web::UI::DataVisualization::Charting::ChartHttpHandlerSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Web.UI.DataVisualization.Charting.ChartHttpHandlerSettings" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandler.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.OpenTypeMethods" />
   <TypeSignature Language="VB.NET" Value="Public Class OpenTypeMethods" />
   <TypeSignature Language="C++ CLI" Value="public ref class OpenTypeMethods abstract sealed" />
+  <TypeSignature Language="F#" Value="type OpenTypeMethods = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Add(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Add : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Add (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.AndAlso(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AndAlso (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ AndAlso(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member AndAlso : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.AndAlso (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Ceiling(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Ceiling(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Ceiling : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Ceiling value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Concat(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (first As Object, second As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Concat(System::Object ^ first, System::Object ^ second);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Concat (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Convert(System.Object,System.Data.Services.Providers.ResourceType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Object, type As ResourceType) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Convert(System::Object ^ value, System::Data::Services::Providers::ResourceType ^ type);" />
+      <MemberSignature Language="F#" Value="static member Convert : obj * System.Data.Services.Providers.ResourceType -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Convert (value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Day(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Day (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Day(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Day : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Day dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Divide(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Divide(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Divide : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Divide (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.EndsWith(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EndsWith (targetString As Object, substring As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ EndsWith(System::Object ^ targetString, System::Object ^ substring);" />
+      <MemberSignature Language="F#" Value="static member EndsWith : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.EndsWith (targetString, substring)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Equal(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equal (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Equal(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Equal : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Equal (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -281,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Floor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Floor (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Floor(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Floor : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Floor value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.GetValue(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValue (value As Object, propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetValue(System::Object ^ value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member GetValue : obj * string -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.GetValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.GreaterThan(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GreaterThan(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -357,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.GreaterThanOrEqual(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GreaterThanOrEqual(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Hour(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Hour (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Hour(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Hour : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Hour dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -407,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.IndexOf(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IndexOf (targetString As Object, substring As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IndexOf(System::Object ^ targetString, System::Object ^ substring);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.IndexOf (targetString, substring)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -440,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Length(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Length (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Length(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Length : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Length value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -471,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.LessThan(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LessThan(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -497,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.LessThanOrEqual(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LessThanOrEqual(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -523,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Minute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Minute (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Minute(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Minute : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Minute dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -547,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Modulo(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Modulo (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Modulo(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Modulo : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Modulo (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -573,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Month(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Month (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Month(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Month : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Month dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -597,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Multiply(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Multiply(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -630,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Negate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Negate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Negate : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Negate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -654,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Not(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Not (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Not(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Not : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Not value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -678,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.NotEqual(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEqual (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ NotEqual(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member NotEqual : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.NotEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -704,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.OrElse(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OrElse (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ OrElse(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member OrElse : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.OrElse (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -730,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Replace(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Replace (targetString As Object, substring As Object, newString As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Replace(System::Object ^ targetString, System::Object ^ substring, System::Object ^ newString);" />
+      <MemberSignature Language="F#" Value="static member Replace : obj * obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Replace (targetString, substring, newString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -758,6 +786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Round(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Round(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Round : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Round value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -782,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Second(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Second (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Second(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Second : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Second dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -806,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.StartsWith(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StartsWith (targetString As Object, substring As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ StartsWith(System::Object ^ targetString, System::Object ^ substring);" />
+      <MemberSignature Language="F#" Value="static member StartsWith : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.StartsWith (targetString, substring)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -841,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Substring(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Substring (targetString As Object, startIndex As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Substring(System::Object ^ targetString, System::Object ^ startIndex);" />
+      <MemberSignature Language="F#" Value="static member Substring : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Substring (targetString, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -874,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Substring(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Substring (targetString As Object, startIndex As Object, length As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Substring(System::Object ^ targetString, System::Object ^ startIndex, System::Object ^ length);" />
+      <MemberSignature Language="F#" Value="static member Substring : obj * obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Substring (targetString, startIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -909,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.SubstringOf(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SubstringOf (substring As Object, targetString As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ SubstringOf(System::Object ^ substring, System::Object ^ targetString);" />
+      <MemberSignature Language="F#" Value="static member SubstringOf : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.SubstringOf (substring, targetString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -936,6 +970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Subtract(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As Object, right As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Subtract(System::Object ^ left, System::Object ^ right);" />
+      <MemberSignature Language="F#" Value="static member Subtract : obj * obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Subtract (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -962,6 +997,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.ToLower(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLower (targetString As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToLower(System::Object ^ targetString);" />
+      <MemberSignature Language="F#" Value="static member ToLower : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.ToLower targetString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -986,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.ToUpper(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpper (targetString As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToUpper(System::Object ^ targetString);" />
+      <MemberSignature Language="F#" Value="static member ToUpper : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.ToUpper targetString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -1010,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Trim(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Trim (targetString As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Trim(System::Object ^ targetString);" />
+      <MemberSignature Language="F#" Value="static member Trim : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Trim targetString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -1034,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.TypeIs(System.Object,System.Data.Services.Providers.ResourceType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TypeIs (value As Object, type As ResourceType) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ TypeIs(System::Object ^ value, System::Data::Services::Providers::ResourceType ^ type);" />
+      <MemberSignature Language="F#" Value="static member TypeIs : obj * System.Data.Services.Providers.ResourceType -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.TypeIs (value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -1060,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.OpenTypeMethods.Year(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Year (dateTime As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Year(System::Object ^ dateTime);" />
+      <MemberSignature Language="F#" Value="static member Year : obj -&gt; obj" Usage="System.Data.Services.Providers.OpenTypeMethods.Year dateTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

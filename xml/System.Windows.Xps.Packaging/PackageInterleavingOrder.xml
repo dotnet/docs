@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackageInterleavingOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum PackageInterleavingOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class PackageInterleavingOrder" />
+  <TypeSignature Language="F#" Value="type PackageInterleavingOrder = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ImagesLast" />
       <MemberSignature Language="VB.NET" Value="ImagesLast" />
       <MemberSignature Language="C++ CLI" Value="ImagesLast" />
+      <MemberSignature Language="F#" Value="ImagesLast = 3" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ImagesLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceFirst" />
       <MemberSignature Language="VB.NET" Value="ResourceFirst" />
       <MemberSignature Language="C++ CLI" Value="ResourceFirst" />
+      <MemberSignature Language="F#" Value="ResourceFirst = 1" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceLast" />
       <MemberSignature Language="VB.NET" Value="ResourceLast" />
       <MemberSignature Language="C++ CLI" Value="ResourceLast" />
+      <MemberSignature Language="F#" Value="ResourceLast = 2" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

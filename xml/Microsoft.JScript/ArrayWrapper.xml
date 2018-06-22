@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayWrapper" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayWrapper&#xA;Inherits ArrayObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayWrapper : Microsoft::JScript::ArrayObject" />
+  <TypeSignature Language="F#" Value="type ArrayWrapper = class&#xA;    inherit ArrayObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayWrapper.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="arrayWrapper.GetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ArrayWrapper.length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property length As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ length { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.length : obj with get, set" Usage="Microsoft.JScript.ArrayWrapper.length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

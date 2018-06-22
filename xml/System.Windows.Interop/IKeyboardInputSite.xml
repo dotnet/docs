@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IKeyboardInputSite" />
   <TypeSignature Language="VB.NET" Value="Public Interface IKeyboardInputSite" />
   <TypeSignature Language="C++ CLI" Value="public interface class IKeyboardInputSite" />
+  <TypeSignature Language="F#" Value="type IKeyboardInputSite = interface" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops(System.Windows.Input.TraversalRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnNoMoreTabStops (request As TraversalRequest) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnNoMoreTabStops(System::Windows::Input::TraversalRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member OnNoMoreTabStops : System.Windows.Input.TraversalRequest -&gt; bool" Usage="iKeyboardInputSite.OnNoMoreTabStops request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IKeyboardInputSite.Sink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sink As IKeyboardInputSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Interop::IKeyboardInputSink ^ Sink { System::Windows::Interop::IKeyboardInputSink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sink : System.Windows.Interop.IKeyboardInputSink" Usage="System.Windows.Interop.IKeyboardInputSite.Sink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.Unregister" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unregister ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister();" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : unit -&gt; unit" Usage="iKeyboardInputSite.Unregister " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

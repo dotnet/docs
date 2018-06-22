@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.KnownTypesProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class KnownTypesProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class KnownTypesProvider abstract sealed" />
+  <TypeSignature Language="F#" Value="type KnownTypesProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.KnownTypesProvider.GetKnownTypes(System.Reflection.ICustomAttributeProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownTypes (knownTypeAttributeTarget As ICustomAttributeProvider) As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Type ^&gt; ^ GetKnownTypes(System::Reflection::ICustomAttributeProvider ^ knownTypeAttributeTarget);" />
+      <MemberSignature Language="F#" Value="static member GetKnownTypes : System.Reflection.ICustomAttributeProvider -&gt; Type[]" Usage="System.Web.ApplicationServices.KnownTypesProvider.GetKnownTypes knownTypeAttributeTarget" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

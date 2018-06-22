@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.UploadFileCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UploadFileCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UploadFileCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type UploadFileCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.UploadFileCompletedEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Result { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : byte[]" Usage="System.Net.UploadFileCompletedEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

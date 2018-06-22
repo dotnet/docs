@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.RSACertificateExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module RSACertificateExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSACertificateExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type RSACertificateExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSA)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CopyWithPrivateKey (certificate As X509Certificate2, privateKey As RSA) As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::X509Certificates::X509Certificate2 ^ CopyWithPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, System::Security::Cryptography::RSA ^ privateKey);" />
+      <MemberSignature Language="F#" Value="static member CopyWithPrivateKey : System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.RSA -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="System.Security.Cryptography.X509Certificates.RSACertificateExtensions.CopyWithPrivateKey (certificate, privateKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRSAPrivateKey (certificate As X509Certificate2) As RSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::RSA ^ GetRSAPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member GetRSAPrivateKey : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.RSA" Usage="System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRSAPublicKey (certificate As X509Certificate2) As RSA" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::RSA ^ GetRSAPublicKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member GetRSAPublicKey : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.RSA" Usage="System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

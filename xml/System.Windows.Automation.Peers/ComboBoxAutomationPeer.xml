@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ComboBoxAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ComboBoxAutomationPeer&#xA;Inherits SelectorAutomationPeer&#xA;Implements IExpandCollapseProvider, IValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComboBoxAutomationPeer : System::Windows::Automation::Peers::SelectorAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider, System::Windows::Automation::Provider::IValueProvider" />
+  <TypeSignature Language="F#" Value="type ComboBoxAutomationPeer = class&#xA;    inherit SelectorAutomationPeer&#xA;    interface IValueProvider&#xA;    interface IExpandCollapseProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.#ctor(System.Windows.Controls.ComboBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ComboBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComboBoxAutomationPeer(System::Windows::Controls::ComboBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ComboBoxAutomationPeer : System.Windows.Controls.ComboBox -&gt; System.Windows.Automation.Peers.ComboBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.ComboBoxAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="comboBoxAutomationPeer.CreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="comboBoxAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="comboBoxAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="comboBoxAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPattern (pattern As PatternInterface) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface pattern);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="comboBoxAutomationPeer.GetPattern pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ComboBoxAutomationPeer.SetFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="comboBoxAutomationPeer.SetFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ComboBoxAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IValueProvider.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IValueProvider.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ComboBoxAutomationPeer.System.Windows.Automation.Provider.IValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.IsReadOnly</InterfaceMember>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As String Implements IValueProvider.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Windows.Automation.Provider.IValueProvider.Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ComboBoxAutomationPeer.System.Windows.Automation.Provider.IValueProvider.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.Value</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheability" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpCacheability" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpCacheability" />
+  <TypeSignature Language="F#" Value="type HttpCacheability = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.NoCache" />
       <MemberSignature Language="VB.NET" Value="NoCache" />
       <MemberSignature Language="C++ CLI" Value="NoCache" />
+      <MemberSignature Language="F#" Value="NoCache = 1" Usage="System.Web.HttpCacheability.NoCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="C++ CLI" Value="Private" />
+      <MemberSignature Language="F#" Value="Private = 2" Usage="System.Web.HttpCacheability.Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="C++ CLI" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 4" Usage="System.Web.HttpCacheability.Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.Server" />
       <MemberSignature Language="VB.NET" Value="Server" />
       <MemberSignature Language="C++ CLI" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 3" Usage="System.Web.HttpCacheability.Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.ServerAndNoCache" />
       <MemberSignature Language="VB.NET" Value="ServerAndNoCache" />
       <MemberSignature Language="C++ CLI" Value="ServerAndNoCache" />
+      <MemberSignature Language="F#" Value="ServerAndNoCache = 3" Usage="System.Web.HttpCacheability.ServerAndNoCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheability.ServerAndPrivate" />
       <MemberSignature Language="VB.NET" Value="ServerAndPrivate" />
       <MemberSignature Language="C++ CLI" Value="ServerAndPrivate" />
+      <MemberSignature Language="F#" Value="ServerAndPrivate = 5" Usage="System.Web.HttpCacheability.ServerAndPrivate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.TextReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextReader&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextReader abstract : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type TextReader = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="textReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="textReader.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="textReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -275,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.TextReader.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As TextReader " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::TextReader ^ Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.TextReader" Usage="System.IO.TextReader.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -327,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Peek () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Peek();" />
+      <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; int&#xA;override this.Peek : unit -&gt; int" Usage="textReader.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -390,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read();" />
+      <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; int&#xA;override this.Read : unit -&gt; int" Usage="textReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -438,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Read(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Read : Span&lt;char&gt; -&gt; int&#xA;override this.Read : Span&lt;char&gt; -&gt; int" Usage="textReader.Read buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -462,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Read : char[] * int * int -&gt; int&#xA;override this.Read : char[] * int * int -&gt; int" Usage="textReader.Read (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -522,6 +531,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;&#xA;override this.ReadAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="textReader.ReadAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -548,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="textReader.ReadAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -615,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadBlock(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBlock (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadBlock(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member ReadBlock : Span&lt;char&gt; -&gt; int&#xA;override this.ReadBlock : Span&lt;char&gt; -&gt; int" Usage="textReader.ReadBlock buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -639,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBlock (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadBlock(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadBlock : char[] * int * int -&gt; int&#xA;override this.ReadBlock : char[] * int * int -&gt; int" Usage="textReader.ReadBlock (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -698,6 +711,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;int&gt; ReadBlockAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadBlockAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadBlockAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;&#xA;override this.ReadBlockAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="textReader.ReadBlockAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -724,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBlockAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadBlockAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member ReadBlockAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadBlockAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="textReader.ReadBlockAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -789,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadLine" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadLine () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadLine();" />
+      <MemberSignature Language="F#" Value="abstract member ReadLine : unit -&gt; string&#xA;override this.ReadLine : unit -&gt; string" Usage="textReader.ReadLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -845,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadLineAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadLineAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadLineAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadLineAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadLineAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="textReader.ReadLineAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToEnd () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadToEnd();" />
+      <MemberSignature Language="F#" Value="abstract member ReadToEnd : unit -&gt; string&#xA;override this.ReadToEnd : unit -&gt; string" Usage="textReader.ReadToEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -955,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.ReadToEndAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToEndAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadToEndAsync();" />
+      <MemberSignature Language="F#" Value="abstract member ReadToEndAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.ReadToEndAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="textReader.ReadToEndAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1015,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.TextReader.Synchronized(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (reader As TextReader) As TextReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::TextReader ^ Synchronized(System::IO::TextReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.IO.TextReader -&gt; System.IO.TextReader" Usage="System.IO.TextReader.Synchronized reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

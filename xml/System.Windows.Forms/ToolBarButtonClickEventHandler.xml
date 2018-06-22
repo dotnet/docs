@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolBarButtonClickEventHandler(sender As Object, e As ToolBarButtonClickEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolBarButtonClickEventHandler(System::Object ^ sender, ToolBarButtonClickEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolBarButtonClickEventHandler = delegate of obj * ToolBarButtonClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

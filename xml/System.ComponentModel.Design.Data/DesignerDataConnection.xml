@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataConnection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataConnection sealed" />
+  <TypeSignature Language="F#" Value="type DesignerDataConnection = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, providerName As String, connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataConnection(System::String ^ name, System::String ^ providerName, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataConnection : string * string * string -&gt; System.ComponentModel.Design.Data.DesignerDataConnection" Usage="new System.ComponentModel.Design.Data.DesignerDataConnection (name, providerName, connectionString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, providerName As String, connectionString As String, isConfigured As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataConnection(System::String ^ name, System::String ^ providerName, System::String ^ connectionString, bool isConfigured);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataConnection : string * string * string * bool -&gt; System.ComponentModel.Design.Data.DesignerDataConnection" Usage="new System.ComponentModel.Design.Data.DesignerDataConnection (name, providerName, connectionString, isConfigured)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConfigured { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.ComponentModel.Design.Data.DesignerDataConnection.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

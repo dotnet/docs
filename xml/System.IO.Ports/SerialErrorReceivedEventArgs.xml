@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialErrorReceivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SerialErrorReceivedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerialErrorReceivedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SerialErrorReceivedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialErrorReceivedEventArgs.EventType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As SerialError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Ports::SerialError EventType { System::IO::Ports::SerialError get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventType : System.IO.Ports.SerialError" Usage="System.IO.Ports.SerialErrorReceivedEventArgs.EventType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

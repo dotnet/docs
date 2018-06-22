@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpSimpleClientProtocol" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpSimpleClientProtocol&#xA;Inherits HttpWebClientProtocol" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpSimpleClientProtocol abstract : System::Web::Services::Protocols::HttpWebClientProtocol" />
+  <TypeSignature Language="F#" Value="type HttpSimpleClientProtocol = class&#xA;    inherit HttpWebClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.BeginInvoke(System.String,System.String,System.Object[],System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BeginInvoke (methodName As String, requestUrl As String, parameters As Object(), callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ BeginInvoke(System::String ^ methodName, System::String ^ requestUrl, cli::array &lt;System::Object ^&gt; ^ parameters, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : string * string * obj[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="httpSimpleClientProtocol.BeginInvoke (methodName, requestUrl, parameters, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.EndInvoke(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Function EndInvoke (asyncResult As IAsyncResult) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ EndInvoke(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndInvoke : IAsyncResult -&gt; obj" Usage="httpSimpleClientProtocol.EndInvoke asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.Invoke(System.String,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Function Invoke (methodName As String, requestUrl As String, parameters As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ Invoke(System::String ^ methodName, System::String ^ requestUrl, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.Invoke : string * string * obj[] -&gt; obj" Usage="httpSimpleClientProtocol.Invoke (methodName, requestUrl, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.InvokeAsync(System.String,System.String,System.Object[],System.Threading.SendOrPostCallback)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InvokeAsync (methodName As String, requestUrl As String, parameters As Object(), callback As SendOrPostCallback)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::String ^ methodName, System::String ^ requestUrl, cli::array &lt;System::Object ^&gt; ^ parameters, System::Threading::SendOrPostCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : string * string * obj[] * System.Threading.SendOrPostCallback -&gt; unit" Usage="httpSimpleClientProtocol.InvokeAsync (methodName, requestUrl, parameters, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.InvokeAsync(System.String,System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InvokeAsync (methodName As String, requestUrl As String, parameters As Object(), callback As SendOrPostCallback, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::String ^ methodName, System::String ^ requestUrl, cli::array &lt;System::Object ^&gt; ^ parameters, System::Threading::SendOrPostCallback ^ callback, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : string * string * obj[] * System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="httpSimpleClientProtocol.InvokeAsync (methodName, requestUrl, parameters, callback, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

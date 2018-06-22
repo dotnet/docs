@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ObjectPoolingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectPoolingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectPoolingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ObjectPoolingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectPoolingAttribute(bool enable);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ObjectPoolingAttribute : bool -&gt; System.EnterpriseServices.ObjectPoolingAttribute" Usage="new System.EnterpriseServices.ObjectPoolingAttribute enable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minPoolSize As Integer, maxPoolSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectPoolingAttribute(int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ObjectPoolingAttribute : int * int -&gt; System.EnterpriseServices.ObjectPoolingAttribute" Usage="new System.EnterpriseServices.ObjectPoolingAttribute (minPoolSize, maxPoolSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enable As Boolean, minPoolSize As Integer, maxPoolSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectPoolingAttribute(bool enable, int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ObjectPoolingAttribute : bool * int * int -&gt; System.EnterpriseServices.ObjectPoolingAttribute" Usage="new System.EnterpriseServices.ObjectPoolingAttribute (enable, minPoolSize, maxPoolSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.AfterSaveChanges(System.Collections.Hashtable)" />
       <MemberSignature Language="VB.NET" Value="Public Function AfterSaveChanges (info As Hashtable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AfterSaveChanges(System::Collections::Hashtable ^ info);" />
+      <MemberSignature Language="F#" Value="abstract member AfterSaveChanges : System.Collections.Hashtable -&gt; bool&#xA;override this.AfterSaveChanges : System.Collections.Hashtable -&gt; bool" Usage="objectPoolingAttribute.AfterSaveChanges info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.Apply(System.Collections.Hashtable)" />
       <MemberSignature Language="VB.NET" Value="Public Function Apply (info As Hashtable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Apply(System::Collections::Hashtable ^ info);" />
+      <MemberSignature Language="F#" Value="abstract member Apply : System.Collections.Hashtable -&gt; bool&#xA;override this.Apply : System.Collections.Hashtable -&gt; bool" Usage="objectPoolingAttribute.Apply info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.CreationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CreationTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CreationTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CreationTimeout : int with get, set" Usage="System.EnterpriseServices.ObjectPoolingAttribute.CreationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -333,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.IsValidTarget(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsValidTarget (s As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValidTarget(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidTarget : string -&gt; bool&#xA;override this.IsValidTarget : string -&gt; bool" Usage="objectPoolingAttribute.IsValidTarget s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -365,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPoolSize : int with get, set" Usage="System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinPoolSize : int with get, set" Usage="System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

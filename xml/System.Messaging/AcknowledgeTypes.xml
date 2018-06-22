@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.AcknowledgeTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum AcknowledgeTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class AcknowledgeTypes" />
+  <TypeSignature Language="F#" Value="type AcknowledgeTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReachQueue" />
       <MemberSignature Language="VB.NET" Value="FullReachQueue" />
       <MemberSignature Language="C++ CLI" Value="FullReachQueue" />
+      <MemberSignature Language="F#" Value="FullReachQueue = 5" Usage="System.Messaging.AcknowledgeTypes.FullReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReceive" />
       <MemberSignature Language="VB.NET" Value="FullReceive" />
       <MemberSignature Language="C++ CLI" Value="FullReceive" />
+      <MemberSignature Language="F#" Value="FullReceive = 14" Usage="System.Messaging.AcknowledgeTypes.FullReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NegativeReceive" />
       <MemberSignature Language="VB.NET" Value="NegativeReceive" />
       <MemberSignature Language="C++ CLI" Value="NegativeReceive" />
+      <MemberSignature Language="F#" Value="NegativeReceive = 8" Usage="System.Messaging.AcknowledgeTypes.NegativeReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.AcknowledgeTypes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReachQueue" />
       <MemberSignature Language="VB.NET" Value="NotAcknowledgeReachQueue" />
       <MemberSignature Language="C++ CLI" Value="NotAcknowledgeReachQueue" />
+      <MemberSignature Language="F#" Value="NotAcknowledgeReachQueue = 4" Usage="System.Messaging.AcknowledgeTypes.NotAcknowledgeReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReceive" />
       <MemberSignature Language="VB.NET" Value="NotAcknowledgeReceive" />
       <MemberSignature Language="C++ CLI" Value="NotAcknowledgeReceive" />
+      <MemberSignature Language="F#" Value="NotAcknowledgeReceive = 12" Usage="System.Messaging.AcknowledgeTypes.NotAcknowledgeReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveArrival" />
       <MemberSignature Language="VB.NET" Value="PositiveArrival" />
       <MemberSignature Language="C++ CLI" Value="PositiveArrival" />
+      <MemberSignature Language="F#" Value="PositiveArrival = 1" Usage="System.Messaging.AcknowledgeTypes.PositiveArrival" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveReceive" />
       <MemberSignature Language="VB.NET" Value="PositiveReceive" />
       <MemberSignature Language="C++ CLI" Value="PositiveReceive" />
+      <MemberSignature Language="F#" Value="PositiveReceive = 2" Usage="System.Messaging.AcknowledgeTypes.PositiveReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

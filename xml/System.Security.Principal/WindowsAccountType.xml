@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsAccountType" />
   <TypeSignature Language="VB.NET" Value="Public Enum WindowsAccountType" />
   <TypeSignature Language="C++ CLI" Value="public enum class WindowsAccountType" />
+  <TypeSignature Language="F#" Value="type WindowsAccountType = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 3" Usage="System.Security.Principal.WindowsAccountType.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Guest" />
       <MemberSignature Language="VB.NET" Value="Guest" />
       <MemberSignature Language="C++ CLI" Value="Guest" />
+      <MemberSignature Language="F#" Value="Guest = 1" Usage="System.Security.Principal.WindowsAccountType.Guest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Security.Principal.WindowsAccountType.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 2" Usage="System.Security.Principal.WindowsAccountType.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

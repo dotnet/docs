@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsPrefixAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlnsPrefixAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlnsPrefixAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlnsPrefixAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsPrefixAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, prefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsPrefixAttribute(System::String ^ xmlNamespace, System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XmlnsPrefixAttribute : string * string -&gt; System.Windows.Markup.XmlnsPrefixAttribute" Usage="new System.Windows.Markup.XmlnsPrefixAttribute (xmlNamespace, prefix)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsPrefixAttribute.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.Windows.Markup.XmlnsPrefixAttribute.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsPrefixAttribute.XmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespace : string" Usage="System.Windows.Markup.XmlnsPrefixAttribute.XmlNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ComManagedImportUtil" />
   <TypeSignature Language="VB.NET" Value="Public Class ComManagedImportUtil&#xA;Implements IComManagedImportUtil" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComManagedImportUtil : System::EnterpriseServices::Internal::IComManagedImportUtil" />
+  <TypeSignature Language="F#" Value="type ComManagedImportUtil = class&#xA;    interface IComManagedImportUtil" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetComponentInfo (assemblyPath As String, ByRef numComponents As String, ByRef componentInfo As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetComponentInfo(System::String ^ assemblyPath, [Runtime::InteropServices::Out] System::String ^ % numComponents, [Runtime::InteropServices::Out] System::String ^ % componentInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentInfo : string *  *  -&gt; unit&#xA;override this.GetComponentInfo : string *  *  -&gt; unit" Usage="comManagedImportUtil.GetComponentInfo (assemblyPath, numComponents, componentInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)</InterfaceMember>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (asmpath As String, parname As String, appname As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InstallAssembly(System::String ^ asmpath, System::String ^ parname, System::String ^ appname);" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string * string * string -&gt; unit&#xA;override this.InstallAssembly : string * string * string -&gt; unit" Usage="comManagedImportUtil.InstallAssembly (asmpath, parname, appname)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)</InterfaceMember>

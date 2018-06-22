@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.AnnouncementEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnouncementEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnouncementEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AnnouncementEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementEventArgs.EndpointDiscoveryMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointDiscoveryMetadata As EndpointDiscoveryMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ EndpointDiscoveryMetadata { System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointDiscoveryMetadata : System.ServiceModel.Discovery.EndpointDiscoveryMetadata" Usage="System.ServiceModel.Discovery.AnnouncementEventArgs.EndpointDiscoveryMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementEventArgs.MessageSequence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageSequence As DiscoveryMessageSequence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryMessageSequence ^ MessageSequence { System::ServiceModel::Discovery::DiscoveryMessageSequence ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageSequence : System.ServiceModel.Discovery.DiscoveryMessageSequence" Usage="System.ServiceModel.Discovery.AnnouncementEventArgs.MessageSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

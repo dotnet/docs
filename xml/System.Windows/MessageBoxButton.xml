@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxButton" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxButton" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxButton" />
+  <TypeSignature Language="F#" Value="type MessageBoxButton = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
       <MemberSignature Language="C++ CLI" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 0" Usage="System.Windows.MessageBoxButton.OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.OKCancel" />
       <MemberSignature Language="VB.NET" Value="OKCancel" />
       <MemberSignature Language="C++ CLI" Value="OKCancel" />
+      <MemberSignature Language="F#" Value="OKCancel = 1" Usage="System.Windows.MessageBoxButton.OKCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.YesNo" />
       <MemberSignature Language="VB.NET" Value="YesNo" />
       <MemberSignature Language="C++ CLI" Value="YesNo" />
+      <MemberSignature Language="F#" Value="YesNo = 4" Usage="System.Windows.MessageBoxButton.YesNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.YesNoCancel" />
       <MemberSignature Language="VB.NET" Value="YesNoCancel" />
       <MemberSignature Language="C++ CLI" Value="YesNoCancel" />
+      <MemberSignature Language="F#" Value="YesNoCancel = 3" Usage="System.Windows.MessageBoxButton.YesNoCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

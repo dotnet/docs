@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ReliableSessionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReliableSessionElement&#xA;Inherits BindingElementExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReliableSessionElement sealed : System::ServiceModel::Configuration::BindingElementExtensionElement" />
+  <TypeSignature Language="F#" Value="type ReliableSessionElement = class&#xA;    inherit BindingElementExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.AcknowledgementInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property AcknowledgementInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AcknowledgementInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.AcknowledgementInterval : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.AcknowledgementInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ReliableSessionElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="reliableSessionElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.ReliableSessionElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ReliableSessionElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="reliableSessionElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ReliableSessionElement.CreateBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="reliableSessionElement.CreateBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.FlowControlEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowControlEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlowControlEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowControlEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.FlowControlEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.InactivityTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.InactivityTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.InactivityTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ReliableSessionElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="reliableSessionElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.MaxPendingChannels" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingChannels As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingChannels { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingChannels : int with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.MaxPendingChannels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.MaxRetryCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRetryCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRetryCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxRetryCount : int with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.MaxRetryCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.MaxTransferWindowSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTransferWindowSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxTransferWindowSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxTransferWindowSize : int with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.MaxTransferWindowSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.Ordered" />
       <MemberSignature Language="VB.NET" Value="Public Property Ordered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ordered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Ordered : bool with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.Ordered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ReliableSessionElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -408,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ReliableSessionElement.ReliableMessagingVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ReliableMessagingVersion As ReliableMessagingVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ReliableMessagingVersion ^ ReliableMessagingVersion { System::ServiceModel::ReliableMessagingVersion ^ get(); void set(System::ServiceModel::ReliableMessagingVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReliableMessagingVersion : System.ServiceModel.ReliableMessagingVersion with get, set" Usage="System.ServiceModel.Configuration.ReliableSessionElement.ReliableMessagingVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

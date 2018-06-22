@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDictionaryService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDictionaryService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDictionaryService" />
+  <TypeSignature Language="F#" Value="type IDictionaryService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.GetKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetKey(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : obj -&gt; obj" Usage="iDictionaryService.GetKey value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="iDictionaryService.GetValue key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (key As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit" Usage="iDictionaryService.SetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

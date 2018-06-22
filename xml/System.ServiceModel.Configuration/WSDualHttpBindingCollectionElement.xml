@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSDualHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WSDualHttpBinding, WSDualHttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSDualHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WSDualHttpBinding ^, System::ServiceModel::Configuration::WSDualHttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WSDualHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WSDualHttpBinding, WSDualHttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

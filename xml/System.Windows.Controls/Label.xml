@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Label" />
   <TypeSignature Language="VB.NET" Value="Public Class Label&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Label : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type Label = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Label.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="label.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Label.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Target { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.UIElement with get, set" Usage="System.Windows.Controls.Label.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Label.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Label.TargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

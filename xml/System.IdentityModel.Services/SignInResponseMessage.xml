@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignInResponseMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class SignInResponseMessage&#xA;Inherits WSFederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignInResponseMessage : System::IdentityModel::Services::WSFederationMessage" />
+  <TypeSignature Language="F#" Value="type SignInResponseMessage = class&#xA;    inherit WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, result As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, System::String ^ result);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignInResponseMessage : Uri * string -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="new System.IdentityModel.Services.SignInResponseMessage (baseUrl, result)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, resultPtr As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, Uri ^ resultPtr);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignInResponseMessage : Uri * Uri -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="new System.IdentityModel.Services.SignInResponseMessage (baseUrl, resultPtr)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Services.WSFederationSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, response As RequestSecurityTokenResponse, federationSerializer As WSFederationSerializer, context As WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response, System::IdentityModel::Services::WSFederationSerializer ^ federationSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignInResponseMessage : Uri * System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.IdentityModel.Services.WSFederationSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="new System.IdentityModel.Services.SignInResponseMessage (baseUrl, response, federationSerializer, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="System.IdentityModel.Services.SignInResponseMessage.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.ResultPtr" />
       <MemberSignature Language="VB.NET" Value="Public Property ResultPtr As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResultPtr { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResultPtr : string with get, set" Usage="System.IdentityModel.Services.SignInResponseMessage.ResultPtr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Validate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="signInResponseMessage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Write(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Write : System.IO.TextWriter -&gt; unit" Usage="signInResponseMessage.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

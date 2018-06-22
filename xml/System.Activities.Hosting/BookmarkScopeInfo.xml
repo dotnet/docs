@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.BookmarkScopeInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BookmarkScopeInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class BookmarkScopeInfo sealed" />
+  <TypeSignature Language="F#" Value="type BookmarkScopeInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Activities.Hosting.BookmarkScopeInfo.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Activities.Hosting.BookmarkScopeInfo.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkScopeInfo.TemporaryId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemporaryId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TemporaryId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemporaryId : string" Usage="System.Activities.Hosting.BookmarkScopeInfo.TemporaryId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

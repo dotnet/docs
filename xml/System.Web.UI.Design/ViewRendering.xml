@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewRendering" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewRendering" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewRendering" />
+  <TypeSignature Language="F#" Value="type ViewRendering = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ViewRendering.#ctor(System.String,System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As String, regions As DesignerRegionCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewRendering(System::String ^ content, System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ViewRendering : string * System.Web.UI.Design.DesignerRegionCollection -&gt; System.Web.UI.Design.ViewRendering" Usage="new System.Web.UI.Design.ViewRendering (content, regions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ViewRendering.#ctor(System.String,System.Web.UI.Design.DesignerRegionCollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As String, regions As DesignerRegionCollection, visible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewRendering(System::String ^ content, System::Web::UI::Design::DesignerRegionCollection ^ regions, bool visible);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ViewRendering : string * System.Web.UI.Design.DesignerRegionCollection * bool -&gt; System.Web.UI.Design.ViewRendering" Usage="new System.Web.UI.Design.ViewRendering (content, regions, visible)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewRendering.Content" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Content { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : string" Usage="System.Web.UI.Design.ViewRendering.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewRendering.Regions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Regions As DesignerRegionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerRegionCollection ^ Regions { System::Web::UI::Design::DesignerRegionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Regions : System.Web.UI.Design.DesignerRegionCollection" Usage="System.Web.UI.Design.ViewRendering.Regions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ViewRendering.Visible" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool" Usage="System.Web.UI.Design.ViewRendering.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

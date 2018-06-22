@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.IconBitmapDecoder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IconBitmapDecoder&#xA;Inherits BitmapDecoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class IconBitmapDecoder sealed : System::Windows::Media::Imaging::BitmapDecoder" />
+  <TypeSignature Language="F#" Value="type IconBitmapDecoder = class&#xA;    inherit BitmapDecoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.IconBitmapDecoder.#ctor(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapStream As Stream, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IconBitmapDecoder(System::IO::Stream ^ bitmapStream, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.IconBitmapDecoder : System.IO.Stream * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.IconBitmapDecoder" Usage="new System.Windows.Media.Imaging.IconBitmapDecoder (bitmapStream, createOptions, cacheOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.IconBitmapDecoder.#ctor(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IconBitmapDecoder(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.IconBitmapDecoder : Uri * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.IconBitmapDecoder" Usage="new System.Windows.Media.Imaging.IconBitmapDecoder (bitmapUri, createOptions, cacheOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

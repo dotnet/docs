@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ModifierKeys" />
   <TypeSignature Language="VB.NET" Value="Public Enum ModifierKeys" />
   <TypeSignature Language="C++ CLI" Value="public enum class ModifierKeys" />
+  <TypeSignature Language="F#" Value="type ModifierKeys = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Alt" />
       <MemberSignature Language="VB.NET" Value="Alt" />
       <MemberSignature Language="C++ CLI" Value="Alt" />
+      <MemberSignature Language="F#" Value="Alt = 1" Usage="System.Windows.Input.ModifierKeys.Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Control" />
       <MemberSignature Language="VB.NET" Value="Control" />
       <MemberSignature Language="C++ CLI" Value="Control" />
+      <MemberSignature Language="F#" Value="Control = 2" Usage="System.Windows.Input.ModifierKeys.Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.ModifierKeys.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Shift" />
       <MemberSignature Language="VB.NET" Value="Shift" />
       <MemberSignature Language="C++ CLI" Value="Shift" />
+      <MemberSignature Language="F#" Value="Shift = 4" Usage="System.Windows.Input.ModifierKeys.Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ModifierKeys.Windows" />
       <MemberSignature Language="VB.NET" Value="Windows" />
       <MemberSignature Language="C++ CLI" Value="Windows" />
+      <MemberSignature Language="F#" Value="Windows = 8" Usage="System.Windows.Input.ModifierKeys.Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

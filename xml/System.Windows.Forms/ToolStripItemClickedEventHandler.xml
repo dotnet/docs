@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemClickedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripItemClickedEventHandler(sender As Object, e As ToolStripItemClickedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripItemClickedEventHandler(System::Object ^ sender, ToolStripItemClickedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolStripItemClickedEventHandler = delegate of obj * ToolStripItemClickedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

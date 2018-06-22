@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.HostFileChangeMonitor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostFileChangeMonitor&#xA;Inherits FileChangeMonitor" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostFileChangeMonitor sealed : System::Runtime::Caching::FileChangeMonitor" />
+  <TypeSignature Language="F#" Value="type HostFileChangeMonitor = class&#xA;    inherit FileChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.#ctor(System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filePaths As IList(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HostFileChangeMonitor(System::Collections::Generic::IList&lt;System::String ^&gt; ^ filePaths);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.HostFileChangeMonitor : System.Collections.Generic.IList&lt;string&gt; -&gt; System.Runtime.Caching.HostFileChangeMonitor" Usage="new System.Runtime.Caching.HostFileChangeMonitor filePaths" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="hostFileChangeMonitor.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.FilePaths" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FilePaths As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ FilePaths { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilePaths : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Runtime.Caching.HostFileChangeMonitor.FilePaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastModified As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTimeOffset LastModified { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="System.Runtime.Caching.HostFileChangeMonitor.LastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.UniqueId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string" Usage="System.Runtime.Caching.HostFileChangeMonitor.UniqueId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

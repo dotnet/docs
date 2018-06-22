@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.TimerElapsedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TimerElapsedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimerElapsedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TimerElapsedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.TimerElapsedEventArgs.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timerId As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimerElapsedEventArgs(IntPtr timerId);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.TimerElapsedEventArgs : nativeint -&gt; Microsoft.Win32.TimerElapsedEventArgs" Usage="new Microsoft.Win32.TimerElapsedEventArgs timerId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.TimerElapsedEventArgs.TimerId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimerId As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr TimerId { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimerId : nativeint" Usage="Microsoft.Win32.TimerElapsedEventArgs.TimerId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

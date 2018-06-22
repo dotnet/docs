@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripArrowRenderEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripArrowRenderEventHandler(sender As Object, e As ToolStripArrowRenderEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripArrowRenderEventHandler(System::Object ^ sender, ToolStripArrowRenderEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolStripArrowRenderEventHandler = delegate of obj * ToolStripArrowRenderEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

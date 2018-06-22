@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextItem" />
+  <TypeSignature Language="F#" Value="type ContextItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.ContextItem : Uri -&gt; System.IdentityModel.Protocols.WSTrust.ContextItem" Usage="new System.IdentityModel.Protocols.WSTrust.ContextItem name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.ContextItem : Uri * string -&gt; System.IdentityModel.Protocols.WSTrust.ContextItem" Usage="new System.IdentityModel.Protocols.WSTrust.ContextItem (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As Uri, value As String, scope As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextItem(Uri ^ name, System::String ^ value, Uri ^ scope);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.ContextItem : Uri * string * Uri -&gt; System.IdentityModel.Protocols.WSTrust.ContextItem" Usage="new System.IdentityModel.Protocols.WSTrust.ContextItem (name, value, scope)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Name { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : Uri with get, set" Usage="System.IdentityModel.Protocols.WSTrust.ContextItem.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Scope { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : Uri with get, set" Usage="System.IdentityModel.Protocols.WSTrust.ContextItem.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.ContextItem.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

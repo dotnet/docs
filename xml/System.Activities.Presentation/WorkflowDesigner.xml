@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesigner" />
+  <TypeSignature Language="F#" Value="type WorkflowDesigner = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As EditingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Activities.Presentation.EditingContext" Usage="System.Activities.Presentation.WorkflowDesigner.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.ContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextMenu As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ContextMenu ^ ContextMenu { System::Windows::Controls::ContextMenu ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Controls.ContextMenu" Usage="System.Activities.Presentation.WorkflowDesigner.ContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.DebugManagerView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugManagerView As IDesignerDebugView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Debug::IDesignerDebugView ^ DebugManagerView { System::Activities::Presentation::Debug::IDesignerDebugView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugManagerView : System.Activities.Presentation.Debug.IDesignerDebugView" Usage="System.Activities.Presentation.WorkflowDesigner.DebugManagerView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="workflowDesigner.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.IsInErrorState" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInErrorState () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInErrorState();" />
+      <MemberSignature Language="F#" Value="member this.IsInErrorState : unit -&gt; bool" Usage="workflowDesigner.IsInErrorState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
+      <MemberSignature Language="F#" Value="member this.Load : unit -&gt; unit" Usage="workflowDesigner.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="member this.Load : obj -&gt; unit" Usage="workflowDesigner.Load instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.Load : string -&gt; unit" Usage="workflowDesigner.Load fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.WorkflowDesigner.ModelChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ModelChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ModelChanged;" />
+      <MemberSignature Language="F#" Value="member this.ModelChanged : EventHandler " Usage="member this.ModelChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -247,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.OutlineView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutlineView As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ OutlineView { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineView : System.Windows.UIElement" Usage="System.Activities.Presentation.WorkflowDesigner.OutlineView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -267,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorFontAndColorData" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyInspectorFontAndColorData As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyInspectorFontAndColorData {  void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorFontAndColorData : string" Usage="System.Activities.Presentation.WorkflowDesigner.PropertyInspectorFontAndColorData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyInspectorView As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PropertyInspectorView { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorView : System.Windows.UIElement" Usage="System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -314,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="workflowDesigner.Save fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -337,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Activities.Presentation.WorkflowDesigner.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -364,6 +379,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.WorkflowDesigner.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TextChanged As TextChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::TextChangedEventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : System.Windows.Controls.TextChangedEventHandler " Usage="member this.TextChanged : System.Windows.Controls.TextChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -383,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As UIElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ View { System::Windows::UIElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : System.Windows.UIElement" Usage="System.Activities.Presentation.WorkflowDesigner.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectConverter sealed" />
+  <TypeSignature Language="F#" Value="type ObjectConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectConverter.ConvertValue(System.Object,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertValue (value As Object, toType As Type, formatString As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ConvertValue(System::Object ^ value, Type ^ toType, System::String ^ formatString);" />
+      <MemberSignature Language="F#" Value="static member ConvertValue : obj * Type * string -&gt; obj" Usage="System.Web.UI.ObjectConverter.ConvertValue (value, toType, formatString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

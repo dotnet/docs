@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataFormat" />
+  <TypeSignature Language="F#" Value="type IDataFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Clone(Microsoft.VisualBasic.Compatibility.VB6.IDataFormat@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef newObject As IDataFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::IDataFormat ^ % newObject);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iDataFormat.Clone newObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Convert(System.Int32,System.Object,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Convert (cookie As Integer, from As Object, ByRef varTo As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(int cookie, System::Object ^ from, [Runtime::InteropServices::Out] System::Object ^ % varTo);" />
+      <MemberSignature Language="F#" Value="abstract member Convert : int * obj *  -&gt; unit" Usage="iDataFormat.Convert (cookie, from, varTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Default(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Default (ByRef fDefault As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Default([Runtime::InteropServices::Out] bool % fDefault);" />
+      <MemberSignature Language="F#" Value="abstract member Default :  -&gt; unit" Usage="iDataFormat.Default fDefault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetBinding(System.Runtime.InteropServices.VarEnum,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IRowset,Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO@,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBinding (vtPropHint As VarEnum, rgfDataFormat As Integer, rowset As IRowset, ByRef columnInfo As DBCOLUMNINFO, ByRef binding As DBBINDING, ByRef size As Integer, ByRef cookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBinding(System::Runtime::InteropServices::VarEnum vtPropHint, int rgfDataFormat, Microsoft::VisualBasic::Compatibility::VB6::IRowset ^ rowset, Microsoft::VisualBasic::Compatibility::VB6::DBCOLUMNINFO % columnInfo, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::DBBINDING % binding, [Runtime::InteropServices::Out] int % size, [Runtime::InteropServices::Out] int % cookie);" />
+      <MemberSignature Language="F#" Value="abstract member GetBinding : System.Runtime.InteropServices.VarEnum * int * Microsoft.VisualBasic.Compatibility.VB6.IRowset *  *  *  *  -&gt; unit" Usage="iDataFormat.GetBinding (vtPropHint, rgfDataFormat, rowset, columnInfo, binding, size, cookie)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetData(System.Int32,System.IntPtr,System.Object@,System.Int32@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetData (cookie As Integer, from As IntPtr, ByRef varTo As Object, ByRef dbStatus As Integer, pObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetData(int cookie, IntPtr from, [Runtime::InteropServices::Out] System::Object ^ % varTo, [Runtime::InteropServices::Out] int % dbStatus, System::Object ^ pObject);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : int * nativeint *  *  * obj -&gt; unit" Usage="iDataFormat.GetData (cookie, from, varTo, dbStatus, pObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetLcid(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLcid (ByRef lcid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLcid([Runtime::InteropServices::Out] int % lcid);" />
+      <MemberSignature Language="F#" Value="abstract member GetLcid :  -&gt; unit" Usage="iDataFormat.GetLcid lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -263,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetRawData(System.Int32,System.IntPtr,System.Object@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRawData (cookie As Integer, from As IntPtr, ByRef varTo As Object, ByRef dbStatus As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRawData(int cookie, IntPtr from, [Runtime::InteropServices::Out] System::Object ^ % varTo, [Runtime::InteropServices::Out] int % dbStatus);" />
+      <MemberSignature Language="F#" Value="abstract member GetRawData : int * nativeint *  *  -&gt; unit" Usage="iDataFormat.GetRawData (cookie, from, varTo, dbStatus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetSubFormatType(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSubFormatType (ByRef subFormatType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubFormatType([Runtime::InteropServices::Out] int % subFormatType);" />
+      <MemberSignature Language="F#" Value="abstract member GetSubFormatType :  -&gt; unit" Usage="iDataFormat.GetSubFormatType subFormatType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -335,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseBinding(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseBinding (cookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseBinding(int cookie);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseBinding : int -&gt; unit" Usage="iDataFormat.ReleaseBinding cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseData(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseData (cookie As Integer, pv As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseData(int cookie, IntPtr pv);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseData : int * nativeint -&gt; unit" Usage="iDataFormat.ReleaseData (cookie, pv)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetData(System.Int32,System.Object@,System.IntPtr,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (cookie As Integer, ByRef from As Object, pVarTo As IntPtr, pObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(int cookie, [Runtime::InteropServices::Out] System::Object ^ % from, IntPtr pVarTo, System::Object ^ pObject);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : int *  * nativeint * obj -&gt; unit" Usage="iDataFormat.SetData (cookie, from, pVarTo, pObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -442,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetLcid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLcid (lcid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLcid(int lcid);" />
+      <MemberSignature Language="F#" Value="abstract member SetLcid : int -&gt; unit" Usage="iDataFormat.SetLcid lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -475,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetRawData(System.Int32,System.Object,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRawData (cookie As Integer, from As Object, pVarTo As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawData(int cookie, System::Object ^ from, IntPtr pVarTo);" />
+      <MemberSignature Language="F#" Value="abstract member SetRawData : int * obj * nativeint -&gt; unit" Usage="iDataFormat.SetRawData (cookie, from, pVarTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -512,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetSubFormatType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSubFormatType (subFormatType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSubFormatType(int subFormatType);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubFormatType : int -&gt; unit" Usage="iDataFormat.SetSubFormatType subFormatType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

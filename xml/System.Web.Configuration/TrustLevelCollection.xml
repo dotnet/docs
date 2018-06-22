@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TrustLevelCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TrustLevelCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrustLevelCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type TrustLevelCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.TrustLevel trustLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.Add(System.Web.Configuration.TrustLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::TrustLevel ^ trustLevel);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.TrustLevel -&gt; unit" Usage="trustLevelCollection.Add trustLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="trustLevelCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Configuration.TrustLevelCollection.CollectionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="trustLevelCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.Configuration.TrustLevelCollection.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As TrustLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::TrustLevel ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.TrustLevel" Usage="trustLevelCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="trustLevelCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.IsElementName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsElementName (elementname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsElementName(System::String ^ elementname);" />
+      <MemberSignature Language="F#" Value="override this.IsElementName : string -&gt; bool" Usage="trustLevelCollection.IsElementName elementname" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TrustLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TrustLevel ^ default[int] { System::Web::Configuration::TrustLevel ^ get(int index); void set(int index, System::Web::Configuration::TrustLevel ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.TrustLevel with get, set" Usage="System.Web.Configuration.TrustLevelCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As TrustLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TrustLevel ^ default[System::String ^] { System::Web::Configuration::TrustLevel ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.TrustLevel" Usage="System.Web.Configuration.TrustLevelCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.TrustLevelCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +365,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.TrustLevel trustLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.Remove(System.Web.Configuration.TrustLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::TrustLevel ^ trustLevel);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.TrustLevel -&gt; unit" Usage="trustLevelCollection.Remove trustLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="trustLevelCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +419,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(int32 index, class System.Web.Configuration.TrustLevel trustLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TrustLevelCollection.Set(System.Int32,System.Web.Configuration.TrustLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(int index, System::Web::Configuration::TrustLevel ^ trustLevel);" />
+      <MemberSignature Language="F#" Value="member this.Set : int * System.Web.Configuration.TrustLevel -&gt; unit" Usage="trustLevelCollection.Set (index, trustLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TrustLevelCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Web.Configuration.TrustLevelCollection.ThrowOnDuplicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

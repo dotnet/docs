@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.ViewStateManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewStateManager sealed" />
+  <TypeSignature Language="F#" Value="type ViewStateManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ViewState.ViewStateManager.ViewStateData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewStateData As Collection(Of ViewStateData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Presentation::ViewState::ViewStateData ^&gt; ^ ViewStateData { System::Collections::ObjectModel::Collection&lt;System::Activities::Presentation::ViewState::ViewStateData ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewStateData : System.Collections.ObjectModel.Collection&lt;System.Activities.Presentation.ViewState.ViewStateData&gt;" Usage="System.Activities.Presentation.ViewState.ViewStateManager.ViewStateData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

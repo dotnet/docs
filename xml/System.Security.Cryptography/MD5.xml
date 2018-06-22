@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MD5" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MD5&#xA;Inherits HashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class MD5 abstract : System::Security::Cryptography::HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type MD5 = class&#xA;    inherit HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As MD5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::MD5 ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.MD5" Usage="System.Security.Cryptography.MD5.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As MD5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::MD5 ^ Create(System::String ^ algName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.MD5" Usage="System.Security.Cryptography.MD5.Create algName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

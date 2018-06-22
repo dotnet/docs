@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusPointProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusPointProperties abstract sealed" />
+  <TypeSignature Language="F#" Value="type StylusPointProperties = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.AltitudeOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AltitudeOrientation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ AltitudeOrientation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AltitudeOrientation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.AltitudeOrientation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.AzimuthOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AzimuthOrientation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ AzimuthOrientation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AzimuthOrientation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.AzimuthOrientation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.BarrelButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BarrelButton As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ BarrelButton;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BarrelButton : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.BarrelButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.ButtonPressure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ButtonPressure As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ ButtonPressure;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ButtonPressure : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.ButtonPressure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.Height" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Height As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ Height;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Height : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.Height" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.NormalPressure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NormalPressure As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ NormalPressure;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NormalPressure : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.NormalPressure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.PacketStatus" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PacketStatus As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ PacketStatus;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PacketStatus : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.PacketStatus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.PitchRotation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PitchRotation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ PitchRotation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PitchRotation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.PitchRotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.RollRotation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RollRotation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ RollRotation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RollRotation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.RollRotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.SecondaryTipButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SecondaryTipButton As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ SecondaryTipButton;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SecondaryTipButton : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.SecondaryTipButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.SerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SerialNumber As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ SerialNumber;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SerialNumber : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.SerialNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.SystemTouch" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SystemTouch As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ SystemTouch;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SystemTouch : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.SystemTouch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -322,6 +335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.TangentPressure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TangentPressure As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ TangentPressure;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TangentPressure : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.TangentPressure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -348,6 +362,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.TipButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TipButton As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ TipButton;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TipButton : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.TipButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -367,6 +382,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.TwistOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TwistOrientation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ TwistOrientation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TwistOrientation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.TwistOrientation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -386,6 +402,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.Width" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Width As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ Width;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Width : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.Width" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +429,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.X" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly X As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ X;" />
+      <MemberSignature Language="F#" Value=" staticval mutable X : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -431,6 +449,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.XTiltOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XTiltOrientation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ XTiltOrientation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XTiltOrientation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.XTiltOrientation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -450,6 +469,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.Y" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Y As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ Y;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Y : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -469,6 +489,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.YawRotation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly YawRotation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ YawRotation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable YawRotation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.YawRotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -499,6 +520,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.YTiltOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly YTiltOrientation As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ YTiltOrientation;" />
+      <MemberSignature Language="F#" Value=" staticval mutable YTiltOrientation : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.YTiltOrientation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -527,6 +549,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointProperties.Z" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Z As StylusPointProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::StylusPointProperty ^ Z;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Z : System.Windows.Input.StylusPointProperty" Usage="System.Windows.Input.StylusPointProperties.Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

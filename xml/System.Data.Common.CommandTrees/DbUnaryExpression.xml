@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbUnaryExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbUnaryExpression&#xA;Inherits DbExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbUnaryExpression abstract : System::Data::Common::CommandTrees::DbExpression" />
+  <TypeSignature Language="F#" Value="type DbUnaryExpression = class&#xA;    inherit DbExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbUnaryExpression.Argument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Argument As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Argument { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Argument : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbUnaryExpression.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

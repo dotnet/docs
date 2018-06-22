@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VarEnum" />
   <TypeSignature Language="VB.NET" Value="Public Enum VarEnum" />
   <TypeSignature Language="C++ CLI" Value="public enum class VarEnum" />
+  <TypeSignature Language="F#" Value="type VarEnum = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_ARRAY" />
       <MemberSignature Language="VB.NET" Value="VT_ARRAY" />
       <MemberSignature Language="C++ CLI" Value="VT_ARRAY" />
+      <MemberSignature Language="F#" Value="VT_ARRAY = 8192" Usage="System.Runtime.InteropServices.VarEnum.VT_ARRAY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_BLOB" />
       <MemberSignature Language="VB.NET" Value="VT_BLOB" />
       <MemberSignature Language="C++ CLI" Value="VT_BLOB" />
+      <MemberSignature Language="F#" Value="VT_BLOB = 65" Usage="System.Runtime.InteropServices.VarEnum.VT_BLOB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_BLOB_OBJECT" />
       <MemberSignature Language="VB.NET" Value="VT_BLOB_OBJECT" />
       <MemberSignature Language="C++ CLI" Value="VT_BLOB_OBJECT" />
+      <MemberSignature Language="F#" Value="VT_BLOB_OBJECT = 70" Usage="System.Runtime.InteropServices.VarEnum.VT_BLOB_OBJECT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_BOOL" />
       <MemberSignature Language="VB.NET" Value="VT_BOOL" />
       <MemberSignature Language="C++ CLI" Value="VT_BOOL" />
+      <MemberSignature Language="F#" Value="VT_BOOL = 11" Usage="System.Runtime.InteropServices.VarEnum.VT_BOOL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_BSTR" />
       <MemberSignature Language="VB.NET" Value="VT_BSTR" />
       <MemberSignature Language="C++ CLI" Value="VT_BSTR" />
+      <MemberSignature Language="F#" Value="VT_BSTR = 8" Usage="System.Runtime.InteropServices.VarEnum.VT_BSTR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_BYREF" />
       <MemberSignature Language="VB.NET" Value="VT_BYREF" />
       <MemberSignature Language="C++ CLI" Value="VT_BYREF" />
+      <MemberSignature Language="F#" Value="VT_BYREF = 16384" Usage="System.Runtime.InteropServices.VarEnum.VT_BYREF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_CARRAY" />
       <MemberSignature Language="VB.NET" Value="VT_CARRAY" />
       <MemberSignature Language="C++ CLI" Value="VT_CARRAY" />
+      <MemberSignature Language="F#" Value="VT_CARRAY = 28" Usage="System.Runtime.InteropServices.VarEnum.VT_CARRAY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_CF" />
       <MemberSignature Language="VB.NET" Value="VT_CF" />
       <MemberSignature Language="C++ CLI" Value="VT_CF" />
+      <MemberSignature Language="F#" Value="VT_CF = 71" Usage="System.Runtime.InteropServices.VarEnum.VT_CF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_CLSID" />
       <MemberSignature Language="VB.NET" Value="VT_CLSID" />
       <MemberSignature Language="C++ CLI" Value="VT_CLSID" />
+      <MemberSignature Language="F#" Value="VT_CLSID = 72" Usage="System.Runtime.InteropServices.VarEnum.VT_CLSID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -364,6 +374,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_CY" />
       <MemberSignature Language="VB.NET" Value="VT_CY" />
       <MemberSignature Language="C++ CLI" Value="VT_CY" />
+      <MemberSignature Language="F#" Value="VT_CY = 6" Usage="System.Runtime.InteropServices.VarEnum.VT_CY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -398,6 +409,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_DATE" />
       <MemberSignature Language="VB.NET" Value="VT_DATE" />
       <MemberSignature Language="C++ CLI" Value="VT_DATE" />
+      <MemberSignature Language="F#" Value="VT_DATE = 7" Usage="System.Runtime.InteropServices.VarEnum.VT_DATE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -432,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_DECIMAL" />
       <MemberSignature Language="VB.NET" Value="VT_DECIMAL" />
       <MemberSignature Language="C++ CLI" Value="VT_DECIMAL" />
+      <MemberSignature Language="F#" Value="VT_DECIMAL = 14" Usage="System.Runtime.InteropServices.VarEnum.VT_DECIMAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -466,6 +479,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_DISPATCH" />
       <MemberSignature Language="VB.NET" Value="VT_DISPATCH" />
       <MemberSignature Language="C++ CLI" Value="VT_DISPATCH" />
+      <MemberSignature Language="F#" Value="VT_DISPATCH = 9" Usage="System.Runtime.InteropServices.VarEnum.VT_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -500,6 +514,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_EMPTY" />
       <MemberSignature Language="VB.NET" Value="VT_EMPTY" />
       <MemberSignature Language="C++ CLI" Value="VT_EMPTY" />
+      <MemberSignature Language="F#" Value="VT_EMPTY = 0" Usage="System.Runtime.InteropServices.VarEnum.VT_EMPTY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -534,6 +549,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_ERROR" />
       <MemberSignature Language="VB.NET" Value="VT_ERROR" />
       <MemberSignature Language="C++ CLI" Value="VT_ERROR" />
+      <MemberSignature Language="F#" Value="VT_ERROR = 10" Usage="System.Runtime.InteropServices.VarEnum.VT_ERROR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -568,6 +584,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_FILETIME" />
       <MemberSignature Language="VB.NET" Value="VT_FILETIME" />
       <MemberSignature Language="C++ CLI" Value="VT_FILETIME" />
+      <MemberSignature Language="F#" Value="VT_FILETIME = 64" Usage="System.Runtime.InteropServices.VarEnum.VT_FILETIME" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -602,6 +619,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_HRESULT" />
       <MemberSignature Language="VB.NET" Value="VT_HRESULT" />
       <MemberSignature Language="C++ CLI" Value="VT_HRESULT" />
+      <MemberSignature Language="F#" Value="VT_HRESULT = 25" Usage="System.Runtime.InteropServices.VarEnum.VT_HRESULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -636,6 +654,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_I1" />
       <MemberSignature Language="VB.NET" Value="VT_I1" />
       <MemberSignature Language="C++ CLI" Value="VT_I1" />
+      <MemberSignature Language="F#" Value="VT_I1 = 16" Usage="System.Runtime.InteropServices.VarEnum.VT_I1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -670,6 +689,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_I2" />
       <MemberSignature Language="VB.NET" Value="VT_I2" />
       <MemberSignature Language="C++ CLI" Value="VT_I2" />
+      <MemberSignature Language="F#" Value="VT_I2 = 2" Usage="System.Runtime.InteropServices.VarEnum.VT_I2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -704,6 +724,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_I4" />
       <MemberSignature Language="VB.NET" Value="VT_I4" />
       <MemberSignature Language="C++ CLI" Value="VT_I4" />
+      <MemberSignature Language="F#" Value="VT_I4 = 3" Usage="System.Runtime.InteropServices.VarEnum.VT_I4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -738,6 +759,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_I8" />
       <MemberSignature Language="VB.NET" Value="VT_I8" />
       <MemberSignature Language="C++ CLI" Value="VT_I8" />
+      <MemberSignature Language="F#" Value="VT_I8 = 20" Usage="System.Runtime.InteropServices.VarEnum.VT_I8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -772,6 +794,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_INT" />
       <MemberSignature Language="VB.NET" Value="VT_INT" />
       <MemberSignature Language="C++ CLI" Value="VT_INT" />
+      <MemberSignature Language="F#" Value="VT_INT = 22" Usage="System.Runtime.InteropServices.VarEnum.VT_INT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -806,6 +829,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_LPSTR" />
       <MemberSignature Language="VB.NET" Value="VT_LPSTR" />
       <MemberSignature Language="C++ CLI" Value="VT_LPSTR" />
+      <MemberSignature Language="F#" Value="VT_LPSTR = 30" Usage="System.Runtime.InteropServices.VarEnum.VT_LPSTR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -840,6 +864,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_LPWSTR" />
       <MemberSignature Language="VB.NET" Value="VT_LPWSTR" />
       <MemberSignature Language="C++ CLI" Value="VT_LPWSTR" />
+      <MemberSignature Language="F#" Value="VT_LPWSTR = 31" Usage="System.Runtime.InteropServices.VarEnum.VT_LPWSTR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -874,6 +899,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_NULL" />
       <MemberSignature Language="VB.NET" Value="VT_NULL" />
       <MemberSignature Language="C++ CLI" Value="VT_NULL" />
+      <MemberSignature Language="F#" Value="VT_NULL = 1" Usage="System.Runtime.InteropServices.VarEnum.VT_NULL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -908,6 +934,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_PTR" />
       <MemberSignature Language="VB.NET" Value="VT_PTR" />
       <MemberSignature Language="C++ CLI" Value="VT_PTR" />
+      <MemberSignature Language="F#" Value="VT_PTR = 26" Usage="System.Runtime.InteropServices.VarEnum.VT_PTR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -942,6 +969,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_R4" />
       <MemberSignature Language="VB.NET" Value="VT_R4" />
       <MemberSignature Language="C++ CLI" Value="VT_R4" />
+      <MemberSignature Language="F#" Value="VT_R4 = 4" Usage="System.Runtime.InteropServices.VarEnum.VT_R4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -976,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_R8" />
       <MemberSignature Language="VB.NET" Value="VT_R8" />
       <MemberSignature Language="C++ CLI" Value="VT_R8" />
+      <MemberSignature Language="F#" Value="VT_R8 = 5" Usage="System.Runtime.InteropServices.VarEnum.VT_R8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1010,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_RECORD" />
       <MemberSignature Language="VB.NET" Value="VT_RECORD" />
       <MemberSignature Language="C++ CLI" Value="VT_RECORD" />
+      <MemberSignature Language="F#" Value="VT_RECORD = 36" Usage="System.Runtime.InteropServices.VarEnum.VT_RECORD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1044,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_SAFEARRAY" />
       <MemberSignature Language="VB.NET" Value="VT_SAFEARRAY" />
       <MemberSignature Language="C++ CLI" Value="VT_SAFEARRAY" />
+      <MemberSignature Language="F#" Value="VT_SAFEARRAY = 27" Usage="System.Runtime.InteropServices.VarEnum.VT_SAFEARRAY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1078,6 +1109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_STORAGE" />
       <MemberSignature Language="VB.NET" Value="VT_STORAGE" />
       <MemberSignature Language="C++ CLI" Value="VT_STORAGE" />
+      <MemberSignature Language="F#" Value="VT_STORAGE = 67" Usage="System.Runtime.InteropServices.VarEnum.VT_STORAGE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1112,6 +1144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_STORED_OBJECT" />
       <MemberSignature Language="VB.NET" Value="VT_STORED_OBJECT" />
       <MemberSignature Language="C++ CLI" Value="VT_STORED_OBJECT" />
+      <MemberSignature Language="F#" Value="VT_STORED_OBJECT = 69" Usage="System.Runtime.InteropServices.VarEnum.VT_STORED_OBJECT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1146,6 +1179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_STREAM" />
       <MemberSignature Language="VB.NET" Value="VT_STREAM" />
       <MemberSignature Language="C++ CLI" Value="VT_STREAM" />
+      <MemberSignature Language="F#" Value="VT_STREAM = 66" Usage="System.Runtime.InteropServices.VarEnum.VT_STREAM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1180,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_STREAMED_OBJECT" />
       <MemberSignature Language="VB.NET" Value="VT_STREAMED_OBJECT" />
       <MemberSignature Language="C++ CLI" Value="VT_STREAMED_OBJECT" />
+      <MemberSignature Language="F#" Value="VT_STREAMED_OBJECT = 68" Usage="System.Runtime.InteropServices.VarEnum.VT_STREAMED_OBJECT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1214,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UI1" />
       <MemberSignature Language="VB.NET" Value="VT_UI1" />
       <MemberSignature Language="C++ CLI" Value="VT_UI1" />
+      <MemberSignature Language="F#" Value="VT_UI1 = 17" Usage="System.Runtime.InteropServices.VarEnum.VT_UI1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1248,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UI2" />
       <MemberSignature Language="VB.NET" Value="VT_UI2" />
       <MemberSignature Language="C++ CLI" Value="VT_UI2" />
+      <MemberSignature Language="F#" Value="VT_UI2 = 18" Usage="System.Runtime.InteropServices.VarEnum.VT_UI2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1282,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UI4" />
       <MemberSignature Language="VB.NET" Value="VT_UI4" />
       <MemberSignature Language="C++ CLI" Value="VT_UI4" />
+      <MemberSignature Language="F#" Value="VT_UI4 = 19" Usage="System.Runtime.InteropServices.VarEnum.VT_UI4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1316,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UI8" />
       <MemberSignature Language="VB.NET" Value="VT_UI8" />
       <MemberSignature Language="C++ CLI" Value="VT_UI8" />
+      <MemberSignature Language="F#" Value="VT_UI8 = 21" Usage="System.Runtime.InteropServices.VarEnum.VT_UI8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1350,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UINT" />
       <MemberSignature Language="VB.NET" Value="VT_UINT" />
       <MemberSignature Language="C++ CLI" Value="VT_UINT" />
+      <MemberSignature Language="F#" Value="VT_UINT = 23" Usage="System.Runtime.InteropServices.VarEnum.VT_UINT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1384,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_UNKNOWN" />
       <MemberSignature Language="VB.NET" Value="VT_UNKNOWN" />
       <MemberSignature Language="C++ CLI" Value="VT_UNKNOWN" />
+      <MemberSignature Language="F#" Value="VT_UNKNOWN = 13" Usage="System.Runtime.InteropServices.VarEnum.VT_UNKNOWN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1418,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_USERDEFINED" />
       <MemberSignature Language="VB.NET" Value="VT_USERDEFINED" />
       <MemberSignature Language="C++ CLI" Value="VT_USERDEFINED" />
+      <MemberSignature Language="F#" Value="VT_USERDEFINED = 29" Usage="System.Runtime.InteropServices.VarEnum.VT_USERDEFINED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1452,6 +1494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_VARIANT" />
       <MemberSignature Language="VB.NET" Value="VT_VARIANT" />
       <MemberSignature Language="C++ CLI" Value="VT_VARIANT" />
+      <MemberSignature Language="F#" Value="VT_VARIANT = 12" Usage="System.Runtime.InteropServices.VarEnum.VT_VARIANT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1486,6 +1529,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_VECTOR" />
       <MemberSignature Language="VB.NET" Value="VT_VECTOR" />
       <MemberSignature Language="C++ CLI" Value="VT_VECTOR" />
+      <MemberSignature Language="F#" Value="VT_VECTOR = 4096" Usage="System.Runtime.InteropServices.VarEnum.VT_VECTOR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1520,6 +1564,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VarEnum.VT_VOID" />
       <MemberSignature Language="VB.NET" Value="VT_VOID" />
       <MemberSignature Language="C++ CLI" Value="VT_VOID" />
+      <MemberSignature Language="F#" Value="VT_VOID = 24" Usage="System.Runtime.InteropServices.VarEnum.VT_VOID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorChannelFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorChannelFlag" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorChannelFlag" />
+  <TypeSignature Language="F#" Value="type ColorChannelFlag = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorChannelFlag.ColorChannelC" />
       <MemberSignature Language="VB.NET" Value="ColorChannelC" />
       <MemberSignature Language="C++ CLI" Value="ColorChannelC" />
+      <MemberSignature Language="F#" Value="ColorChannelC = 0" Usage="System.Drawing.Imaging.ColorChannelFlag.ColorChannelC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorChannelFlag.ColorChannelK" />
       <MemberSignature Language="VB.NET" Value="ColorChannelK" />
       <MemberSignature Language="C++ CLI" Value="ColorChannelK" />
+      <MemberSignature Language="F#" Value="ColorChannelK = 3" Usage="System.Drawing.Imaging.ColorChannelFlag.ColorChannelK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorChannelFlag.ColorChannelLast" />
       <MemberSignature Language="VB.NET" Value="ColorChannelLast" />
       <MemberSignature Language="C++ CLI" Value="ColorChannelLast" />
+      <MemberSignature Language="F#" Value="ColorChannelLast = 4" Usage="System.Drawing.Imaging.ColorChannelFlag.ColorChannelLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorChannelFlag.ColorChannelM" />
       <MemberSignature Language="VB.NET" Value="ColorChannelM" />
       <MemberSignature Language="C++ CLI" Value="ColorChannelM" />
+      <MemberSignature Language="F#" Value="ColorChannelM = 1" Usage="System.Drawing.Imaging.ColorChannelFlag.ColorChannelM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorChannelFlag.ColorChannelY" />
       <MemberSignature Language="VB.NET" Value="ColorChannelY" />
       <MemberSignature Language="C++ CLI" Value="ColorChannelY" />
+      <MemberSignature Language="F#" Value="ColorChannelY = 2" Usage="System.Drawing.Imaging.ColorChannelFlag.ColorChannelY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

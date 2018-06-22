@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.CompositionFailedException" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionFailedException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionFailedException : Exception" />
+  <TypeSignature Language="F#" Value="type CompositionFailedException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.CompositionFailedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionFailedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.CompositionFailedException : string -&gt; System.Composition.Hosting.CompositionFailedException" Usage="new System.Composition.Hosting.CompositionFailedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.CompositionFailedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionFailedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.CompositionFailedException : string * Exception -&gt; System.Composition.Hosting.CompositionFailedException" Usage="new System.Composition.Hosting.CompositionFailedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingConditionCollection&#xA;Inherits List(Of TrackingCondition)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingConditionCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::TrackingCondition ^&gt;" />
+  <TypeSignature Language="F#" Value="type TrackingConditionCollection = class&#xA;    inherit List&lt;TrackingCondition&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingCondition})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (conditions As IEnumerable(Of TrackingCondition))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingConditionCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::TrackingCondition ^&gt; ^ conditions);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingConditionCollection : seq&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt; -&gt; System.Workflow.Runtime.Tracking.TrackingConditionCollection" Usage="new System.Workflow.Runtime.Tracking.TrackingConditionCollection conditions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipeDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class PipeDirection" />
+  <TypeSignature Language="F#" Value="type PipeDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeDirection.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 1" Usage="System.IO.Pipes.PipeDirection.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeDirection.InOut" />
       <MemberSignature Language="VB.NET" Value="InOut" />
       <MemberSignature Language="C++ CLI" Value="InOut" />
+      <MemberSignature Language="F#" Value="InOut = 3" Usage="System.IO.Pipes.PipeDirection.InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeDirection.Out" />
       <MemberSignature Language="VB.NET" Value="Out" />
       <MemberSignature Language="C++ CLI" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 2" Usage="System.IO.Pipes.PipeDirection.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>

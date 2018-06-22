@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipSet" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RelationshipSet&#xA;Inherits EntitySetBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelationshipSet abstract : System::Data::Metadata::Edm::EntitySetBase" />
+  <TypeSignature Language="F#" Value="type RelationshipSet = class&#xA;    inherit EntitySetBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipSet.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.RelationshipSet.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipSet.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As RelationshipType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipType ^ ElementType { System::Data::Metadata::Edm::RelationshipType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementType : System.Data.Metadata.Edm.RelationshipType" Usage="System.Data.Metadata.Edm.RelationshipSet.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

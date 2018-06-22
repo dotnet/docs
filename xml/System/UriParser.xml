@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriParser" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UriParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriParser abstract" />
+  <TypeSignature Language="F#" Value="type UriParser = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetComponents(class System.Uri uri, valuetype System.UriComponents components, valuetype System.UriFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.GetComponents(System.Uri,System.UriComponents,System.UriFormat)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetComponents(Uri ^ uri, UriComponents components, UriFormat format);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponents : Uri * UriComponents * UriFormat -&gt; string&#xA;override this.GetComponents : Uri * UriComponents * UriFormat -&gt; string" Usage="uriParser.GetComponents (uri, components, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeAndValidate(class System.Uri uri, [out] class System.UriFormatException&amp; parsingError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.InitializeAndValidate(System.Uri,System.UriFormatException@)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeAndValidate(Uri ^ uri, [Runtime::InteropServices::Out] UriFormatException ^ % parsingError);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeAndValidate : Uri *  -&gt; unit&#xA;override this.InitializeAndValidate : Uri *  -&gt; unit" Usage="uriParser.InitializeAndValidate (uri, parsingError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriParser.IsBaseOf(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsBaseOf (baseUri As Uri, relativeUri As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsBaseOf(Uri ^ baseUri, Uri ^ relativeUri);" />
+      <MemberSignature Language="F#" Value="abstract member IsBaseOf : Uri * Uri -&gt; bool&#xA;override this.IsBaseOf : Uri * Uri -&gt; bool" Usage="uriParser.IsBaseOf (baseUri, relativeUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriParser.IsKnownScheme(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsKnownScheme (schemeName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKnownScheme(System::String ^ schemeName);" />
+      <MemberSignature Language="F#" Value="static member IsKnownScheme : string -&gt; bool" Usage="System.UriParser.IsKnownScheme schemeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsWellFormedOriginalString(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.IsWellFormedOriginalString(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsWellFormedOriginalString(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member IsWellFormedOriginalString : Uri -&gt; bool&#xA;override this.IsWellFormedOriginalString : Uri -&gt; bool" Usage="uriParser.IsWellFormedOriginalString uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriParser.OnNewUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnNewUri () As UriParser" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual UriParser ^ OnNewUri();" />
+      <MemberSignature Language="F#" Value="abstract member OnNewUri : unit -&gt; UriParser&#xA;override this.OnNewUri : unit -&gt; UriParser" Usage="uriParser.OnNewUri " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -335,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriParser.OnRegister(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRegister (schemeName As String, defaultPort As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRegister(System::String ^ schemeName, int defaultPort);" />
+      <MemberSignature Language="F#" Value="abstract member OnRegister : string * int -&gt; unit&#xA;override this.OnRegister : string * int -&gt; unit" Usage="uriParser.OnRegister (schemeName, defaultPort)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -369,6 +377,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(class System.UriParser uriParser, string schemeName, int32 defaultPort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.Register(System.UriParser,System.String,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Register(UriParser ^ uriParser, System::String ^ schemeName, int defaultPort);" />
+      <MemberSignature Language="F#" Value="static member Register : UriParser * string * int -&gt; unit" Usage="System.UriParser.Register (uriParser, schemeName, defaultPort)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -425,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriParser.Resolve(System.Uri,System.Uri,System.UriFormatException@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Resolve (baseUri As Uri, relativeUri As Uri, ByRef parsingError As UriFormatException) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ Resolve(Uri ^ baseUri, Uri ^ relativeUri, [Runtime::InteropServices::Out] UriFormatException ^ % parsingError);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : Uri * Uri *  -&gt; string&#xA;override this.Resolve : Uri * Uri *  -&gt; string" Usage="uriParser.Resolve (baseUri, relativeUri, parsingError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginStatus" />
   <TypeSignature Language="VB.NET" Value="Public Class LoginStatus&#xA;Inherits CompositeControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoginStatus : System::Web::UI::WebControls::CompositeControl" />
+  <TypeSignature Language="F#" Value="type LoginStatus = class&#xA;    inherit CompositeControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -128,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="loginStatus.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LoginStatus.LoggedOut" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoggedOut As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoggedOut;" />
+      <MemberSignature Language="F#" Value="member this.LoggedOut : EventHandler " Usage="member this.LoggedOut : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +199,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LoginStatus.LoggingOut" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoggingOut As LoginCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::LoginCancelEventHandler ^ LoggingOut;" />
+      <MemberSignature Language="F#" Value="member this.LoggingOut : System.Web.UI.WebControls.LoginCancelEventHandler " Usage="member this.LoggingOut : System.Web.UI.WebControls.LoginCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LoginImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LoginImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LoginImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoginImageUrl : string with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LoginImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LoginText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LoginText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LoginText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoginText : string with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LoginText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -328,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LogoutAction" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LogoutAction As LogoutAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::LogoutAction LogoutAction { System::Web::UI::WebControls::LogoutAction get(); void set(System::Web::UI::WebControls::LogoutAction value); };" />
+      <MemberSignature Language="F#" Value="member this.LogoutAction : System.Web.UI.WebControls.LogoutAction with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LogoutAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LogoutImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LogoutImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogoutImageUrl : string with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LogoutImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LogoutPageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LogoutPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogoutPageUrl : string with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LogoutPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.LogoutText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LogoutText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LogoutText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogoutText : string with get, set" Usage="System.Web.UI.WebControls.LoginStatus.LogoutText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.OnLoggedOut(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoggedOut (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoggedOut(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoggedOut : EventArgs -&gt; unit&#xA;override this.OnLoggedOut : EventArgs -&gt; unit" Usage="loginStatus.OnLoggedOut e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -575,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.OnLoggingOut(System.Web.UI.WebControls.LoginCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoggingOut (e As LoginCancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoggingOut(System::Web::UI::WebControls::LoginCancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoggingOut : System.Web.UI.WebControls.LoginCancelEventArgs -&gt; unit&#xA;override this.OnLoggingOut : System.Web.UI.WebControls.LoginCancelEventArgs -&gt; unit" Usage="loginStatus.OnLoggingOut e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -620,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="loginStatus.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -657,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="loginStatus.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -680,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="loginStatus.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -703,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginStatus.SetDesignModeState(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
+      <MemberSignature Language="F#" Value="override this.SetDesignModeState : System.Collections.IDictionary -&gt; unit" Usage="loginStatus.SetDesignModeState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -726,6 +742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginStatus.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.LoginStatus.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

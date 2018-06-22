@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.SystemFonts" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemFonts" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemFonts sealed" />
+  <TypeSignature Language="F#" Value="type SystemFonts = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.CaptionFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ CaptionFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.CaptionFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.DefaultFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ DefaultFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.DefaultFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.DialogFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DialogFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ DialogFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DialogFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.DialogFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SystemFonts.GetFontByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontByName (systemFontName As String) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ GetFontByName(System::String ^ systemFontName);" />
+      <MemberSignature Language="F#" Value="static member GetFontByName : string -&gt; System.Drawing.Font" Usage="System.Drawing.SystemFonts.GetFontByName systemFontName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.IconTitleFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconTitleFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ IconTitleFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconTitleFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.IconTitleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.MenuFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ MenuFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.MenuFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.MessageBoxFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageBoxFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ MessageBoxFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageBoxFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.MessageBoxFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.SmallCaptionFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ SmallCaptionFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.SmallCaptionFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemFonts.StatusFont" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFont As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Font ^ StatusFont { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusFont : System.Drawing.Font" Usage="System.Drawing.SystemFonts.StatusFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

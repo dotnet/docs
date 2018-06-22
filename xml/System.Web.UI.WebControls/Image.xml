@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Image" />
   <TypeSignature Language="VB.NET" Value="Public Class Image&#xA;Inherits WebControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Image : System::Web::UI::WebControls::WebControl" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit WebControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Image.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="image.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.AlternateText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternateText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AlternateText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateText : string with get, set" Usage="System.Web.UI.WebControls.Image.AlternateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.DescriptionUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DescriptionUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DescriptionUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DescriptionUrl : string with get, set" Usage="System.Web.UI.WebControls.Image.DescriptionUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.Image.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Font As FontInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FontInfo ^ Font { System::Web::UI::WebControls::FontInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Web.UI.WebControls.FontInfo" Usage="System.Web.UI.WebControls.Image.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.GenerateEmptyAlternateText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GenerateEmptyAlternateText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool GenerateEmptyAlternateText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateEmptyAlternateText : bool with get, set" Usage="System.Web.UI.WebControls.Image.GenerateEmptyAlternateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.ImageAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageAlign As ImageAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ImageAlign ImageAlign { System::Web::UI::WebControls::ImageAlign get(); void set(System::Web::UI::WebControls::ImageAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageAlign : System.Web.UI.WebControls.ImageAlign with get, set" Usage="System.Web.UI.WebControls.Image.ImageAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Image.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Image.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="image.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -531,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.SupportsDisabledAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsDisabledAttribute : bool" Usage="System.Web.UI.WebControls.Image.SupportsDisabledAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

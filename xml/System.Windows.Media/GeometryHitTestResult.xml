@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryHitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public Class GeometryHitTestResult&#xA;Inherits HitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeometryHitTestResult : System::Windows::Media::HitTestResult" />
+  <TypeSignature Language="F#" Value="type GeometryHitTestResult = class&#xA;    inherit HitTestResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visualHit, valuetype System.Windows.Media.IntersectionDetail intersectionDetail) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryHitTestResult.#ctor(System.Windows.Media.Visual,System.Windows.Media.IntersectionDetail)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GeometryHitTestResult(System::Windows::Media::Visual ^ visualHit, System::Windows::Media::IntersectionDetail intersectionDetail);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GeometryHitTestResult : System.Windows.Media.Visual * System.Windows.Media.IntersectionDetail -&gt; System.Windows.Media.GeometryHitTestResult" Usage="new System.Windows.Media.GeometryHitTestResult (visualHit, intersectionDetail)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryHitTestResult.IntersectionDetail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IntersectionDetail As IntersectionDetail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::IntersectionDetail IntersectionDetail { System::Windows::Media::IntersectionDetail get(); };" />
+      <MemberSignature Language="F#" Value="member this.IntersectionDetail : System.Windows.Media.IntersectionDetail" Usage="System.Windows.Media.GeometryHitTestResult.IntersectionDetail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +104,7 @@ The intersection between a hit test geometry and a target object
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryHitTestResult.VisualHit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualHit As Visual" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Visual ^ VisualHit { System::Windows::Media::Visual ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualHit : System.Windows.Media.Visual" Usage="System.Windows.Media.GeometryHitTestResult.VisualHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

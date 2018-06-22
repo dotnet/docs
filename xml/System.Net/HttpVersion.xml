@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpVersion" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpVersion" />
+  <TypeSignature Language="F#" Value="type HttpVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Unknown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unknown As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Unknown;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Unknown : Version" Usage="System.Net.HttpVersion.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Version10" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version10 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version10;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version10 : Version" Usage="System.Net.HttpVersion.Version10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Version11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version11 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version11;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version11 : Version" Usage="System.Net.HttpVersion.Version11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Version20" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version20 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version20;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version20 : Version" Usage="System.Net.HttpVersion.Version20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

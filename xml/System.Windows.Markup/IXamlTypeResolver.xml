@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlTypeResolver" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlTypeResolver" />
+  <TypeSignature Language="F#" Value="type IXamlTypeResolver = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Resolve (qualifiedTypeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ Resolve(System::String ^ qualifiedTypeName);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : string -&gt; Type" Usage="iXamlTypeResolver.Resolve qualifiedTypeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

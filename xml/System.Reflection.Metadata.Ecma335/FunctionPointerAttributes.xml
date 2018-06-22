@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum FunctionPointerAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class FunctionPointerAttributes" />
+  <TypeSignature Language="F#" Value="type FunctionPointerAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasExplicitThis" />
       <MemberSignature Language="VB.NET" Value="HasExplicitThis" />
       <MemberSignature Language="C++ CLI" Value="HasExplicitThis" />
+      <MemberSignature Language="F#" Value="HasExplicitThis = 96" Usage="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasExplicitThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasThis" />
       <MemberSignature Language="VB.NET" Value="HasThis" />
       <MemberSignature Language="C++ CLI" Value="HasThis" />
+      <MemberSignature Language="F#" Value="HasThis = 32" Usage="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

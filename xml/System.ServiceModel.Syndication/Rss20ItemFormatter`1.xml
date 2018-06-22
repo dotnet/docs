@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Rss20ItemFormatter(Of TSyndicationItem)&#xA;Inherits Rss20ItemFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : SyndicationItemgcnew()public ref class Rss20ItemFormatter : System::ServiceModel::Syndication::Rss20ItemFormatter" />
+  <TypeSignature Language="F#" Value="type Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; = class&#xA;    inherit Rss20ItemFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(TSyndicationItem itemToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; itemToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor(`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem, serializeExtensionsAsAtom As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(TSyndicationItem itemToWrite, bool serializeExtensionsAsAtom);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem * bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; (itemToWrite, serializeExtensionsAsAtom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.CreateItemInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="rss20ItemFormatter.CreateItemInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

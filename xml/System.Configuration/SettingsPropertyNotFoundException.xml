@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsPropertyNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsPropertyNotFoundException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsPropertyNotFoundException : Exception" />
+  <TypeSignature Language="F#" Value="type SettingsPropertyNotFoundException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsPropertyNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyNotFoundException : string -&gt; System.Configuration.SettingsPropertyNotFoundException" Usage="new System.Configuration.SettingsPropertyNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SettingsPropertyNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Configuration.SettingsPropertyNotFoundException" Usage="new System.Configuration.SettingsPropertyNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsPropertyNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsPropertyNotFoundException : string * Exception -&gt; System.Configuration.SettingsPropertyNotFoundException" Usage="new System.Configuration.SettingsPropertyNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

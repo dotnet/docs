@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Localization" />
   <TypeSignature Language="VB.NET" Value="Public Class Localization" />
   <TypeSignature Language="C++ CLI" Value="public ref class Localization abstract sealed" />
+  <TypeSignature Language="F#" Value="type Localization = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Localization.AttributesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AttributesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AttributesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AttributesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Localization.AttributesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Localization.CommentsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommentsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommentsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommentsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Localization.CommentsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Localization.GetAttributes(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttributes (element As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAttributes(System::Object ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetAttributes : obj -&gt; string" Usage="System.Windows.Localization.GetAttributes element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Localization.GetComments(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetComments (element As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetComments(System::Object ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetComments : obj -&gt; string" Usage="System.Windows.Localization.GetComments element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Localization.SetAttributes(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAttributes (element As Object, attributes As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAttributes(System::Object ^ element, System::String ^ attributes);" />
+      <MemberSignature Language="F#" Value="static member SetAttributes : obj * string -&gt; unit" Usage="System.Windows.Localization.SetAttributes (element, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Localization.SetComments(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetComments (element As Object, comments As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetComments(System::Object ^ element, System::String ^ comments);" />
+      <MemberSignature Language="F#" Value="static member SetComments : obj * string -&gt; unit" Usage="System.Windows.Localization.SetComments (element, comments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

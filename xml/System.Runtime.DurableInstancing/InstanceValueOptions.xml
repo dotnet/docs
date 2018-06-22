@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceValueOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceValueOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceValueOptions" />
+  <TypeSignature Language="F#" Value="type InstanceValueOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.Optional" />
       <MemberSignature Language="VB.NET" Value="Optional" />
       <MemberSignature Language="C++ CLI" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 1" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly" />
       <MemberSignature Language="VB.NET" Value="WriteOnly" />
       <MemberSignature Language="C++ CLI" Value="WriteOnly" />
+      <MemberSignature Language="F#" Value="WriteOnly = 2" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

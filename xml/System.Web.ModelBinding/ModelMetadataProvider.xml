@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelMetadataProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelMetadataProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelMetadataProvider abstract" />
+  <TypeSignature Language="F#" Value="type ModelMetadataProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperties(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMetadataForProperties (container As Object, containerType As Type) As IEnumerable(Of ModelMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ GetMetadataForProperties(System::Object ^ container, Type ^ containerType);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataForProperties : obj * Type -&gt; seq&lt;System.Web.ModelBinding.ModelMetadata&gt;" Usage="modelMetadataProvider.GetMetadataForProperties (container, containerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMetadataForProperty (modelAccessor As Func(Of Object), containerType As Type, propertyName As String) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::ModelBinding::ModelMetadata ^ GetMetadataForProperty(Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ containerType, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataForProperty : Func&lt;obj&gt; * Type * string -&gt; System.Web.ModelBinding.ModelMetadata" Usage="modelMetadataProvider.GetMetadataForProperty (modelAccessor, containerType, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMetadataForType (modelAccessor As Func(Of Object), modelType As Type) As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::ModelBinding::ModelMetadata ^ GetMetadataForType(Func&lt;System::Object ^&gt; ^ modelAccessor, Type ^ modelType);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataForType : Func&lt;obj&gt; * Type -&gt; System.Web.ModelBinding.ModelMetadata" Usage="modelMetadataProvider.GetMetadataForType (modelAccessor, modelType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

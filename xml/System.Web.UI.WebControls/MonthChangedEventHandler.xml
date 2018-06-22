@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MonthChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub MonthChangedEventHandler(sender As Object, e As MonthChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void MonthChangedEventHandler(System::Object ^ sender, MonthChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type MonthChangedEventHandler = delegate of obj * MonthChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

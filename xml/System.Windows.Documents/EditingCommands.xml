@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.EditingCommands" />
   <TypeSignature Language="VB.NET" Value="Public Class EditingCommands" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditingCommands abstract sealed" />
+  <TypeSignature Language="F#" Value="type EditingCommands = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignCenter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlignCenter As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ AlignCenter { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlignCenter : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.AlignCenter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -172,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignJustify" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlignJustify As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ AlignJustify { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlignJustify : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.AlignJustify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignLeft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlignLeft As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ AlignLeft { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlignLeft : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.AlignLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignRight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlignRight As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ AlignRight { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlignRight : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.AlignRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.Backspace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Backspace As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Backspace { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Backspace : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.Backspace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -411,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.CorrectSpellingError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CorrectSpellingError As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ CorrectSpellingError { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrectSpellingError : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.CorrectSpellingError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -446,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DecreaseFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseFontSize As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseFontSize { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DecreaseFontSize : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.DecreaseFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -499,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DecreaseIndentation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DecreaseIndentation As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DecreaseIndentation { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DecreaseIndentation : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.DecreaseIndentation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -553,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Delete As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ Delete { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Delete : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.Delete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DeleteNextWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeleteNextWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DeleteNextWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteNextWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.DeleteNextWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -662,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DeletePreviousWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeletePreviousWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ DeletePreviousWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeletePreviousWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.DeletePreviousWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -719,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.EnterLineBreak" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EnterLineBreak As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ EnterLineBreak { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnterLineBreak : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.EnterLineBreak" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +785,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.EnterParagraphBreak" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EnterParagraphBreak As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ EnterParagraphBreak { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnterParagraphBreak : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.EnterParagraphBreak" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -828,6 +842,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IgnoreSpellingError" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IgnoreSpellingError As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IgnoreSpellingError { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreSpellingError : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.IgnoreSpellingError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -863,6 +878,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IncreaseFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseFontSize As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseFontSize { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncreaseFontSize : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.IncreaseFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -916,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IncreaseIndentation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IncreaseIndentation As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ IncreaseIndentation { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncreaseIndentation : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.IncreaseIndentation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -970,6 +987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveDownByLine As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveDownByLine { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveDownByLine : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveDownByLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1024,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveDownByPage As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveDownByPage { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveDownByPage : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveDownByPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1078,6 +1097,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveDownByParagraph As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveDownByParagraph { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveDownByParagraph : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1136,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveLeftByCharacter As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveLeftByCharacter { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveLeftByCharacter : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1189,6 +1210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveLeftByWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveLeftByWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveLeftByWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveLeftByWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1244,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveRightByCharacter As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveRightByCharacter { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveRightByCharacter : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1297,6 +1320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveRightByWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveRightByWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveRightByWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveRightByWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1352,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToDocumentEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToDocumentEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToDocumentEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToDocumentEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveToDocumentEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1406,6 +1431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToDocumentStart" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToDocumentStart As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToDocumentStart { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToDocumentStart : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveToDocumentStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1460,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToLineEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToLineEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToLineEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToLineEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveToLineEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1512,6 +1539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToLineStart" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToLineStart As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToLineStart { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToLineStart : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveToLineStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1564,6 +1592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveUpByLine As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveUpByLine { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveUpByLine : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveUpByLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1618,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveUpByPage As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveUpByPage { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveUpByPage : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveUpByPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1672,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveUpByParagraph As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveUpByParagraph { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveUpByParagraph : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1730,6 +1761,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectDownByLine As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectDownByLine { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectDownByLine : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectDownByLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1784,6 +1816,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectDownByPage As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectDownByPage { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectDownByPage : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectDownByPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1838,6 +1871,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectDownByParagraph As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectDownByParagraph { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectDownByParagraph : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1894,6 +1928,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectLeftByCharacter As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectLeftByCharacter { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectLeftByCharacter : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1947,6 +1982,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectLeftByWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectLeftByWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectLeftByWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectLeftByWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2004,6 +2040,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectRightByCharacter As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectRightByCharacter { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectRightByCharacter : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2057,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectRightByWord As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectRightByWord { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectRightByWord : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectRightByWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2114,6 +2152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToDocumentEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToDocumentEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToDocumentEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToDocumentEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectToDocumentEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2168,6 +2207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToDocumentStart As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToDocumentStart { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToDocumentStart : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2222,6 +2262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToLineEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToLineEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToLineEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectToLineEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2274,6 +2315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToLineStart" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToLineStart As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToLineStart { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToLineStart : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectToLineStart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2326,6 +2368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectUpByLine As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectUpByLine { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectUpByLine : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectUpByLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2380,6 +2423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectUpByPage As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectUpByPage { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectUpByPage : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectUpByPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2434,6 +2478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectUpByParagraph As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectUpByParagraph { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectUpByParagraph : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2490,6 +2535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.TabBackward" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TabBackward As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ TabBackward { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabBackward : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.TabBackward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2553,6 +2599,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.TabForward" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TabForward As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ TabForward { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabForward : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.TabForward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2616,6 +2663,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleBold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleBold As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleBold { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleBold : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2672,6 +2720,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleBullets" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleBullets As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleBullets { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleBullets : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleBullets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2725,6 +2774,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleInsert" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleInsert As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleInsert { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleInsert : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2775,6 +2825,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleItalic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleItalic As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleItalic { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleItalic : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleItalic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2831,6 +2882,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleNumbering" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleNumbering As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleNumbering { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleNumbering : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleNumbering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2884,6 +2936,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleSubscript" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleSubscript As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleSubscript { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleSubscript : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleSubscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2933,6 +2986,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleSuperscript" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleSuperscript As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleSuperscript { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleSuperscript : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleSuperscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2982,6 +3036,7 @@ EditingCommands.ToggleInsert.Execute(null, rTB);
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleUnderline" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleUnderline As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ToggleUnderline { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleUnderline : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Documents.EditingCommands.ToggleUnderline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

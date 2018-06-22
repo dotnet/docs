@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ShellHeaderItemsVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShellHeaderItemsVisibility" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShellHeaderItemsVisibility" />
+  <TypeSignature Language="F#" Value="type ShellHeaderItemsVisibility = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellHeaderItemsVisibility.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = -1" Usage="System.Activities.Presentation.View.ShellHeaderItemsVisibility.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellHeaderItemsVisibility.Breadcrumb" />
       <MemberSignature Language="VB.NET" Value="Breadcrumb" />
       <MemberSignature Language="C++ CLI" Value="Breadcrumb" />
+      <MemberSignature Language="F#" Value="Breadcrumb = 1" Usage="System.Activities.Presentation.View.ShellHeaderItemsVisibility.Breadcrumb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellHeaderItemsVisibility.CollapseAll" />
       <MemberSignature Language="VB.NET" Value="CollapseAll" />
       <MemberSignature Language="C++ CLI" Value="CollapseAll" />
+      <MemberSignature Language="F#" Value="CollapseAll = 4" Usage="System.Activities.Presentation.View.ShellHeaderItemsVisibility.CollapseAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellHeaderItemsVisibility.ExpandAll" />
       <MemberSignature Language="VB.NET" Value="ExpandAll" />
       <MemberSignature Language="C++ CLI" Value="ExpandAll" />
+      <MemberSignature Language="F#" Value="ExpandAll = 2" Usage="System.Activities.Presentation.View.ShellHeaderItemsVisibility.ExpandAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellHeaderItemsVisibility.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.Presentation.View.ShellHeaderItemsVisibility.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

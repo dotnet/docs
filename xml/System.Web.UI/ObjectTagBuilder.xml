@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectTagBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectTagBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectTagBuilder sealed : System::Web::UI::ControlBuilder" />
+  <TypeSignature Language="F#" Value="type ObjectTagBuilder = class&#xA;    inherit ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.AppendLiteralString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="objectTagBuilder.AppendLiteralString s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
+      <MemberSignature Language="F#" Value="override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="objectTagBuilder.AppendSubBuilder subBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attribs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attribs);" />
+      <MemberSignature Language="F#" Value="override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="objectTagBuilder.Init (parser, parentBuilder, type, tagName, id, attribs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

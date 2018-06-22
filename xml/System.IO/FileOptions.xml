@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileOptions" />
+  <TypeSignature Language="F#" Value="type FileOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Asynchronous" />
       <MemberSignature Language="VB.NET" Value="Asynchronous" />
       <MemberSignature Language="C++ CLI" Value="Asynchronous" />
+      <MemberSignature Language="F#" Value="Asynchronous = 1073741824" Usage="System.IO.FileOptions.Asynchronous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.DeleteOnClose" />
       <MemberSignature Language="VB.NET" Value="DeleteOnClose" />
       <MemberSignature Language="C++ CLI" Value="DeleteOnClose" />
+      <MemberSignature Language="F#" Value="DeleteOnClose = 67108864" Usage="System.IO.FileOptions.DeleteOnClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Encrypted" />
       <MemberSignature Language="VB.NET" Value="Encrypted" />
       <MemberSignature Language="C++ CLI" Value="Encrypted" />
+      <MemberSignature Language="F#" Value="Encrypted = 16384" Usage="System.IO.FileOptions.Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.FileOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.RandomAccess" />
       <MemberSignature Language="VB.NET" Value="RandomAccess" />
       <MemberSignature Language="C++ CLI" Value="RandomAccess" />
+      <MemberSignature Language="F#" Value="RandomAccess = 268435456" Usage="System.IO.FileOptions.RandomAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.SequentialScan" />
       <MemberSignature Language="VB.NET" Value="SequentialScan" />
       <MemberSignature Language="C++ CLI" Value="SequentialScan" />
+      <MemberSignature Language="F#" Value="SequentialScan = 134217728" Usage="System.IO.FileOptions.SequentialScan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.WriteThrough" />
       <MemberSignature Language="VB.NET" Value="WriteThrough" />
       <MemberSignature Language="C++ CLI" Value="WriteThrough" />
+      <MemberSignature Language="F#" Value="WriteThrough = -2147483648" Usage="System.IO.FileOptions.WriteThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

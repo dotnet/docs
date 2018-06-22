@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ByteStreamMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class ByteStreamMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class ByteStreamMessage abstract sealed" />
+  <TypeSignature Language="F#" Value="type ByteStreamMessage = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.ArraySegment{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (buffer As ArraySegment(Of Byte)) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(ArraySegment&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : ArraySegment&lt;byte&gt; -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.ByteStreamMessage.CreateMessage buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.IO.Stream -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.ByteStreamMessage.CreateMessage stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, class System.ServiceModel.Channels.BufferManager bufferManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(ArraySegment&lt;System::Byte&gt; buffer, System::ServiceModel::Channels::BufferManager ^ bufferManager);" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : ArraySegment&lt;byte&gt; * System.ServiceModel.Channels.BufferManager -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.ByteStreamMessage.CreateMessage (buffer, bufferManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

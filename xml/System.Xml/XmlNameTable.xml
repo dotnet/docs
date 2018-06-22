@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNameTable" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlNameTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlNameTable abstract" />
+  <TypeSignature Language="F#" Value="type XmlNameTable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNameTable.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (array As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Add(System::String ^ array);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; string" Usage="xmlNameTable.Add array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNameTable.Add(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (array As Char(), offset As Integer, length As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Add(cli::array &lt;char&gt; ^ array, int offset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member Add : char[] * int * int -&gt; string" Usage="xmlNameTable.Add (array, offset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -231,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNameTable.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (array As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Get(System::String ^ array);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; string" Usage="xmlNameTable.Get array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNameTable.Get(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (array As Char(), offset As Integer, length As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Get(cli::array &lt;char&gt; ^ array, int offset, int length);" />
+      <MemberSignature Language="F#" Value="abstract member Get : char[] * int * int -&gt; string" Usage="xmlNameTable.Get (array, offset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

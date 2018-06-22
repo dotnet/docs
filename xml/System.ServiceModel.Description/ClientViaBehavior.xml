@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ClientViaBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientViaBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientViaBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type ClientViaBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ClientViaBehavior.#ctor(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientViaBehavior(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ClientViaBehavior : Uri -&gt; System.ServiceModel.Description.ClientViaBehavior" Usage="new System.ServiceModel.Description.ClientViaBehavior uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ClientViaBehavior.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.ServiceModel.Description.ClientViaBehavior.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

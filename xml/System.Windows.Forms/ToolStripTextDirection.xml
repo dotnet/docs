@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripTextDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripTextDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripTextDirection" />
+  <TypeSignature Language="F#" Value="type ToolStripTextDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Windows.Forms.ToolStripTextDirection.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 0" Usage="System.Windows.Forms.ToolStripTextDirection.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Vertical270" />
       <MemberSignature Language="VB.NET" Value="Vertical270" />
       <MemberSignature Language="C++ CLI" Value="Vertical270" />
+      <MemberSignature Language="F#" Value="Vertical270 = 3" Usage="System.Windows.Forms.ToolStripTextDirection.Vertical270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripTextDirection.Vertical90" />
       <MemberSignature Language="VB.NET" Value="Vertical90" />
       <MemberSignature Language="C++ CLI" Value="Vertical90" />
+      <MemberSignature Language="F#" Value="Vertical90 = 2" Usage="System.Windows.Forms.ToolStripTextDirection.Vertical90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

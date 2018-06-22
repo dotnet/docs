@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.CharacterRange" />
   <TypeSignature Language="VB.NET" Value="Public Structure CharacterRange" />
   <TypeSignature Language="C++ CLI" Value="public value class CharacterRange" />
+  <TypeSignature Language="F#" Value="type CharacterRange = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (First As Integer, Length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterRange(int First, int Length);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.CharacterRange : int * int -&gt; System.Drawing.CharacterRange" Usage="new System.Drawing.CharacterRange (First, Length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="characterRange.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.CharacterRange.First" />
       <MemberSignature Language="VB.NET" Value="Public Property First As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int First { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.First : int with get, set" Usage="System.Drawing.CharacterRange.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="characterRange.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.CharacterRange.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Drawing.CharacterRange.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.op_Equality(System.Drawing.CharacterRange,System.Drawing.CharacterRange)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (cr1 As CharacterRange, cr2 As CharacterRange) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::CharacterRange cr1, System::Drawing::CharacterRange cr2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.CharacterRange * System.Drawing.CharacterRange -&gt; bool" Usage="cr1 = cr2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.op_Inequality(System.Drawing.CharacterRange,System.Drawing.CharacterRange)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (cr1 As CharacterRange, cr2 As CharacterRange) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::CharacterRange cr1, System::Drawing::CharacterRange cr2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.CharacterRange * System.Drawing.CharacterRange -&gt; bool" Usage="System.Drawing.CharacterRange.op_Inequality (cr1, cr2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

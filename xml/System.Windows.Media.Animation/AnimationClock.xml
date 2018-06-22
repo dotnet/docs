@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.AnimationClock" />
   <TypeSignature Language="VB.NET" Value="Public Class AnimationClock&#xA;Inherits Clock" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnimationClock : System::Windows::Media::Animation::Clock" />
+  <TypeSignature Language="F#" Value="type AnimationClock = class&#xA;    inherit Clock" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.AnimationClock.#ctor(System.Windows.Media.Animation.AnimationTimeline)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (animation As AnimationTimeline)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; AnimationClock(System::Windows::Media::Animation::AnimationTimeline ^ animation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.AnimationClock : System.Windows.Media.Animation.AnimationTimeline -&gt; System.Windows.Media.Animation.AnimationClock" Usage="new System.Windows.Media.Animation.AnimationClock animation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.AnimationClock.GetCurrentValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentValue (defaultOriginValue As Object, defaultDestinationValue As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentValue : obj * obj -&gt; obj" Usage="animationClock.GetCurrentValue (defaultOriginValue, defaultDestinationValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.AnimationClock.Timeline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeline As AnimationTimeline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::AnimationTimeline ^ Timeline { System::Windows::Media::Animation::AnimationTimeline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timeline : System.Windows.Media.Animation.AnimationTimeline" Usage="System.Windows.Media.Animation.AnimationClock.Timeline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

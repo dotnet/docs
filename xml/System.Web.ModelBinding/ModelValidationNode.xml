@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidationNode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelValidationNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelValidationNode sealed" />
+  <TypeSignature Language="F#" Value="type ModelValidationNode = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.#ctor(System.Web.ModelBinding.ModelMetadata,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelValidationNode(System::Web::ModelBinding::ModelMetadata ^ modelMetadata, System::String ^ modelStateKey);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelValidationNode : System.Web.ModelBinding.ModelMetadata * string -&gt; System.Web.ModelBinding.ModelValidationNode" Usage="new System.Web.ModelBinding.ModelValidationNode (modelMetadata, modelStateKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidationNode&gt; childNodes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.#ctor(System.Web.ModelBinding.ModelMetadata,System.String,System.Collections.Generic.IEnumerable{System.Web.ModelBinding.ModelValidationNode})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelValidationNode(System::Web::ModelBinding::ModelMetadata ^ modelMetadata, System::String ^ modelStateKey, System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidationNode ^&gt; ^ childNodes);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelValidationNode : System.Web.ModelBinding.ModelMetadata * string * seq&lt;System.Web.ModelBinding.ModelValidationNode&gt; -&gt; System.Web.ModelBinding.ModelValidationNode" Usage="new System.Web.ModelBinding.ModelValidationNode (modelMetadata, modelStateKey, childNodes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As ICollection(Of ModelValidationNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Web::ModelBinding::ModelValidationNode ^&gt; ^ ChildNodes { System::Collections::Generic::ICollection&lt;System::Web::ModelBinding::ModelValidationNode ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodes : System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.ModelValidationNode&gt;" Usage="System.Web.ModelBinding.ModelValidationNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.CombineWith(System.Web.ModelBinding.ModelValidationNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CombineWith (otherNode As ModelValidationNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CombineWith(System::Web::ModelBinding::ModelValidationNode ^ otherNode);" />
+      <MemberSignature Language="F#" Value="member this.CombineWith : System.Web.ModelBinding.ModelValidationNode -&gt; unit" Usage="modelValidationNode.CombineWith otherNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ModelMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelMetadata As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelMetadata ^ ModelMetadata { System::Web::ModelBinding::ModelMetadata ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelMetadata : System.Web.ModelBinding.ModelMetadata" Usage="System.Web.ModelBinding.ModelValidationNode.ModelMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ModelStateKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelStateKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModelStateKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelStateKey : string" Usage="System.Web.ModelBinding.ModelValidationNode.ModelStateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.SuppressValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressValidation : bool with get, set" Usage="System.Web.ModelBinding.ModelValidationNode.SuppressValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.Validate(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; unit" Usage="modelValidationNode.Validate modelBindingExecutionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelValidationNode parentNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.Validate(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelValidationNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelValidationNode ^ parentNode);" />
+      <MemberSignature Language="F#" Value="member this.Validate : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelValidationNode -&gt; unit" Usage="modelValidationNode.Validate (modelBindingExecutionContext, parentNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ValidateAllProperties" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateAllProperties As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateAllProperties { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateAllProperties : bool with get, set" Usage="System.Web.ModelBinding.ModelValidationNode.ValidateAllProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +276,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.ModelBinding.ModelValidationNode.Validated" />
       <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler(Of ModelValidatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::ModelBinding::ModelValidatedEventArgs ^&gt; ^ Validated;" />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler&lt;System.Web.ModelBinding.ModelValidatedEventArgs&gt; " Usage="member this.Validated : System.EventHandler&lt;System.Web.ModelBinding.ModelValidatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -284,6 +296,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.ModelBinding.ModelValidationNode.Validating" />
       <MemberSignature Language="VB.NET" Value="Public Event Validating As EventHandler(Of ModelValidatingEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::ModelBinding::ModelValidatingEventArgs ^&gt; ^ Validating;" />
+      <MemberSignature Language="F#" Value="member this.Validating : EventHandler&lt;System.Web.ModelBinding.ModelValidatingEventArgs&gt; " Usage="member this.Validating : System.EventHandler&lt;System.Web.ModelBinding.ModelValidatingEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

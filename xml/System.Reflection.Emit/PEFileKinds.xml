@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.PEFileKinds" />
   <TypeSignature Language="VB.NET" Value="Public Enum PEFileKinds" />
   <TypeSignature Language="C++ CLI" Value="public enum class PEFileKinds" />
+  <TypeSignature Language="F#" Value="type PEFileKinds = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.ConsoleApplication" />
       <MemberSignature Language="VB.NET" Value="ConsoleApplication" />
       <MemberSignature Language="C++ CLI" Value="ConsoleApplication" />
+      <MemberSignature Language="F#" Value="ConsoleApplication = 2" Usage="System.Reflection.Emit.PEFileKinds.ConsoleApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.Dll" />
       <MemberSignature Language="VB.NET" Value="Dll" />
       <MemberSignature Language="C++ CLI" Value="Dll" />
+      <MemberSignature Language="F#" Value="Dll = 1" Usage="System.Reflection.Emit.PEFileKinds.Dll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.WindowApplication" />
       <MemberSignature Language="VB.NET" Value="WindowApplication" />
       <MemberSignature Language="C++ CLI" Value="WindowApplication" />
+      <MemberSignature Language="F#" Value="WindowApplication = 3" Usage="System.Reflection.Emit.PEFileKinds.WindowApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

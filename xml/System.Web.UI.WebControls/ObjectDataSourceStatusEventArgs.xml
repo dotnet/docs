@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataSourceStatusEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataSourceStatusEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceStatusEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.#ctor(System.Object,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (returnValue As Object, outputParameters As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSourceStatusEventArgs(System::Object ^ returnValue, System::Collections::IDictionary ^ outputParameters);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs : obj * System.Collections.IDictionary -&gt; System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs (returnValue, outputParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object returnValue, class System.Collections.IDictionary outputParameters, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.#ctor(System.Object,System.Collections.IDictionary,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataSourceStatusEventArgs(System::Object ^ returnValue, System::Collections::IDictionary ^ outputParameters, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs : obj * System.Collections.IDictionary * Exception -&gt; System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs (returnValue, outputParameters, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows" />
       <MemberSignature Language="VB.NET" Value="Public Property AffectedRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int with get, set" Usage="System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputParameters As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ OutputParameters { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputParameters : System.Collections.IDictionary" Usage="System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : obj" Usage="System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

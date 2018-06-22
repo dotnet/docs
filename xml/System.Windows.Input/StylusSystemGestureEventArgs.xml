@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusSystemGestureEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusSystemGestureEventArgs&#xA;Inherits StylusEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusSystemGestureEventArgs : System::Windows::Input::StylusEventArgs" />
+  <TypeSignature Language="F#" Value="type StylusSystemGestureEventArgs = class&#xA;    inherit StylusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusDevice stylusDevice, int32 timestamp, valuetype System.Windows.Input.SystemGesture systemGesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusSystemGestureEventArgs.#ctor(System.Windows.Input.StylusDevice,System.Int32,System.Windows.Input.SystemGesture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusSystemGestureEventArgs(System::Windows::Input::StylusDevice ^ stylusDevice, int timestamp, System::Windows::Input::SystemGesture systemGesture);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusSystemGestureEventArgs : System.Windows.Input.StylusDevice * int * System.Windows.Input.SystemGesture -&gt; System.Windows.Input.StylusSystemGestureEventArgs" Usage="new System.Windows.Input.StylusSystemGestureEventArgs (stylusDevice, timestamp, systemGesture)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusSystemGestureEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="stylusSystemGestureEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusSystemGestureEventArgs.SystemGesture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemGesture As SystemGesture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::SystemGesture SystemGesture { System::Windows::Input::SystemGesture get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemGesture : System.Windows.Input.SystemGesture" Usage="System.Windows.Input.StylusSystemGestureEventArgs.SystemGesture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

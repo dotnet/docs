@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StrongNameIdentityPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StrongNameIdentityPermission&#xA;Inherits CodeAccessPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrongNameIdentityPermission sealed : System::Security::CodeAccessPermission" />
+  <TypeSignature Language="F#" Value="type StrongNameIdentityPermission = class&#xA;    inherit CodeAccessPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameIdentityPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.StrongNameIdentityPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.StrongNameIdentityPermission" Usage="new System.Security.Permissions.StrongNameIdentityPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Permissions.StrongNamePublicKeyBlob blob, string name, class System.Version version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.#ctor(System.Security.Permissions.StrongNamePublicKeyBlob,System.String,System.Version)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameIdentityPermission(System::Security::Permissions::StrongNamePublicKeyBlob ^ blob, System::String ^ name, Version ^ version);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.StrongNameIdentityPermission : System.Security.Permissions.StrongNamePublicKeyBlob * string * Version -&gt; System.Security.Permissions.StrongNameIdentityPermission" Usage="new System.Security.Permissions.StrongNameIdentityPermission (blob, name, version)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="strongNameIdentityPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ e);" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="strongNameIdentityPermission.FromXml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="strongNameIdentityPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="strongNameIdentityPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -366,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StrongNameIdentityPermission.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Security.Permissions.StrongNameIdentityPermission.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -400,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StrongNameIdentityPermission.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PublicKey As StrongNamePublicKeyBlob" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::StrongNamePublicKeyBlob ^ PublicKey { System::Security::Permissions::StrongNamePublicKeyBlob ^ get(); void set(System::Security::Permissions::StrongNamePublicKeyBlob ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Permissions.StrongNamePublicKeyBlob with get, set" Usage="System.Security.Permissions.StrongNameIdentityPermission.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="strongNameIdentityPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StrongNameIdentityPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="strongNameIdentityPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -527,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StrongNameIdentityPermission.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Security.Permissions.StrongNameIdentityPermission.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

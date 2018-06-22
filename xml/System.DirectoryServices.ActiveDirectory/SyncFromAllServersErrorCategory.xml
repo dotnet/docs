@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory" />
   <TypeSignature Language="VB.NET" Value="Public Enum SyncFromAllServersErrorCategory" />
   <TypeSignature Language="C++ CLI" Value="public enum class SyncFromAllServersErrorCategory" />
+  <TypeSignature Language="F#" Value="type SyncFromAllServersErrorCategory = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ErrorContactingServer" />
       <MemberSignature Language="VB.NET" Value="ErrorContactingServer" />
       <MemberSignature Language="C++ CLI" Value="ErrorContactingServer" />
+      <MemberSignature Language="F#" Value="ErrorContactingServer = 0" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ErrorContactingServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ErrorReplicating" />
       <MemberSignature Language="VB.NET" Value="ErrorReplicating" />
       <MemberSignature Language="C++ CLI" Value="ErrorReplicating" />
+      <MemberSignature Language="F#" Value="ErrorReplicating = 1" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ErrorReplicating" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ServerUnreachable" />
       <MemberSignature Language="VB.NET" Value="ServerUnreachable" />
       <MemberSignature Language="C++ CLI" Value="ServerUnreachable" />
+      <MemberSignature Language="F#" Value="ServerUnreachable = 2" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory.ServerUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

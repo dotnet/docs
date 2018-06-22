@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IISIntrinsicsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IISIntrinsicsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IISIntrinsicsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type IISIntrinsicsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IISIntrinsicsAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IISIntrinsicsAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.IISIntrinsicsAttribute : bool -&gt; System.EnterpriseServices.IISIntrinsicsAttribute" Usage="new System.EnterpriseServices.IISIntrinsicsAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.IISIntrinsicsAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.IISIntrinsicsAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

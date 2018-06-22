@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterResolution" />
   <TypeSignature Language="VB.NET" Value="Public Class PrinterResolution" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrinterResolution" />
+  <TypeSignature Language="F#" Value="type PrinterResolution = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.Kind" />
       <MemberSignature Language="VB.NET" Value="Public Property Kind As PrinterResolutionKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterResolutionKind Kind { System::Drawing::Printing::PrinterResolutionKind get(); void set(System::Drawing::Printing::PrinterResolutionKind value); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Drawing.Printing.PrinterResolutionKind with get, set" Usage="System.Drawing.Printing.PrinterResolution.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterResolution.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="printerResolution.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Drawing.Printing.PrinterResolution.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterResolution.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Drawing.Printing.PrinterResolution.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

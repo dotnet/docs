@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ConstructorNeedsTagAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConstructorNeedsTagAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstructorNeedsTagAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConstructorNeedsTagAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ConstructorNeedsTagAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (needsTag As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructorNeedsTagAttribute(bool needsTag);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ConstructorNeedsTagAttribute : bool -&gt; System.Web.UI.ConstructorNeedsTagAttribute" Usage="new System.Web.UI.ConstructorNeedsTagAttribute needsTag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +142,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_myConstructorNeedsTagAtt.dll constructor
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ConstructorNeedsTagAttribute.NeedsTag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NeedsTag As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NeedsTag { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NeedsTag : bool" Usage="System.Web.UI.ConstructorNeedsTagAttribute.NeedsTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

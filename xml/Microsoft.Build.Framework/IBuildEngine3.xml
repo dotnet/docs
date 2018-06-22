@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine3" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine3&#xA;Implements IBuildEngine2" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine3 : Microsoft::Build::Framework::IBuildEngine2" />
+  <TypeSignature Language="F#" Value="type IBuildEngine3 = interface&#xA;    interface IBuildEngine2&#xA;    interface IBuildEngine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.Generic.IList{System.String}[],System.String[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFilesInParallel (projectFileNames As String(), targetNames As String(), globalProperties As IDictionary(), removeGlobalProperties As IList(Of String)(), toolsVersion As String(), returnTargetOutputs As Boolean) As BuildEngineResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Framework::BuildEngineResult BuildProjectFilesInParallel(cli::array &lt;System::String ^&gt; ^ projectFileNames, cli::array &lt;System::String ^&gt; ^ targetNames, cli::array &lt;System::Collections::IDictionary ^&gt; ^ globalProperties, cli::array &lt;System::Collections::Generic::IList&lt;System::String ^&gt; ^&gt; ^ removeGlobalProperties, cli::array &lt;System::String ^&gt; ^ toolsVersion, bool returnTargetOutputs);" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFilesInParallel : string[] * string[] * System.Collections.IDictionary[] * System.Collections.Generic.IList&lt;string&gt;[] * string[] * bool -&gt; Microsoft.Build.Framework.BuildEngineResult" Usage="iBuildEngine3.BuildProjectFilesInParallel (projectFileNames, targetNames, globalProperties, removeGlobalProperties, toolsVersion, returnTargetOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Reacquire" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reacquire ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reacquire();" />
+      <MemberSignature Language="F#" Value="abstract member Reacquire : unit -&gt; unit" Usage="iBuildEngine3.Reacquire " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Yield" />
       <MemberSignature Language="VB.NET" Value="Public Sub Yield ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Yield();" />
+      <MemberSignature Language="F#" Value="abstract member Yield : unit -&gt; unit" Usage="iBuildEngine3.Yield " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

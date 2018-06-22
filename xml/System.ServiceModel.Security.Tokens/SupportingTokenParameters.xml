@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SupportingTokenParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class SupportingTokenParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class SupportingTokenParameters" />
+  <TypeSignature Language="F#" Value="type SupportingTokenParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As SupportingTokenParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Security::Tokens::SupportingTokenParameters ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.ServiceModel.Security.Tokens.SupportingTokenParameters" Usage="supportingTokenParameters.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.CloneCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CloneCore () As SupportingTokenParameters" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Security::Tokens::SupportingTokenParameters ^ CloneCore();" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : unit -&gt; System.ServiceModel.Security.Tokens.SupportingTokenParameters&#xA;override this.CloneCore : unit -&gt; System.ServiceModel.Security.Tokens.SupportingTokenParameters" Usage="supportingTokenParameters.CloneCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endorsing As Collection(Of SecurityTokenParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ Endorsing { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endorsing : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.SecurityTokenParameters&gt;" Usage="System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SetKeyDerivation(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetKeyDerivation (requireDerivedKeys As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetKeyDerivation(bool requireDerivedKeys);" />
+      <MemberSignature Language="F#" Value="member this.SetKeyDerivation : bool -&gt; unit" Usage="supportingTokenParameters.SetKeyDerivation requireDerivedKeys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Signed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signed As Collection(Of SecurityTokenParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ Signed { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signed : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.SecurityTokenParameters&gt;" Usage="System.ServiceModel.Security.Tokens.SupportingTokenParameters.Signed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEncrypted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedEncrypted As Collection(Of SecurityTokenParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ SignedEncrypted { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedEncrypted : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.SecurityTokenParameters&gt;" Usage="System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEncrypted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedEndorsing As Collection(Of SecurityTokenParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ SignedEndorsing { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::Tokens::SecurityTokenParameters ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedEndorsing : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.Tokens.SecurityTokenParameters&gt;" Usage="System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="supportingTokenParameters.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

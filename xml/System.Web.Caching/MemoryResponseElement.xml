@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.MemoryResponseElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MemoryResponseElement&#xA;Inherits ResponseElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryResponseElement : System::Web::Caching::ResponseElement" />
+  <TypeSignature Language="F#" Value="type MemoryResponseElement = class&#xA;    inherit ResponseElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.MemoryResponseElement.#ctor(System.Byte[],System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As Byte(), length As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MemoryResponseElement(cli::array &lt;System::Byte&gt; ^ buffer, long length);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.MemoryResponseElement : byte[] * int64 -&gt; System.Web.Caching.MemoryResponseElement" Usage="new System.Web.Caching.MemoryResponseElement (buffer, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.MemoryResponseElement.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="System.Web.Caching.MemoryResponseElement.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.MemoryResponseElement.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Web.Caching.MemoryResponseElement.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipArchiveEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class ZipArchiveEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class ZipArchiveEntry" />
+  <TypeSignature Language="F#" Value="type ZipArchiveEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.Archive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Archive As ZipArchive" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Compression::ZipArchive ^ Archive { System::IO::Compression::ZipArchive ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Archive : System.IO.Compression.ZipArchive" Usage="System.IO.Compression.ZipArchiveEntry.Archive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.CompressedLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressedLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CompressedLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompressedLength : int64" Usage="System.IO.Compression.ZipArchiveEntry.CompressedLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.Crc32" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Crc32 As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 Crc32 { System::UInt32 get(); };" />
+      <MemberSignature Language="F#" Value="member this.Crc32 : uint32" Usage="System.IO.Compression.ZipArchiveEntry.Crc32" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchiveEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="zipArchiveEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.ExternalAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property ExternalAttributes As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExternalAttributes { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ExternalAttributes : int with get, set" Usage="System.IO.Compression.ZipArchiveEntry.ExternalAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.IO.Compression.ZipArchiveEntry.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.LastWriteTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LastWriteTime As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset LastWriteTime { DateTimeOffset get(); void set(DateTimeOffset value); };" />
+      <MemberSignature Language="F#" Value="member this.LastWriteTime : DateTimeOffset with get, set" Usage="System.IO.Compression.ZipArchiveEntry.LastWriteTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -318,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.Compression.ZipArchiveEntry.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchiveEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.Compression.ZipArchiveEntry.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchiveEntry.Open" />
       <MemberSignature Language="VB.NET" Value="Public Function Open () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Open();" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; System.IO.Stream" Usage="zipArchiveEntry.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -464,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchiveEntry.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="zipArchiveEntry.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>

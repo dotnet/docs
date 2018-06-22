@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebuggerObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDebuggerObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDebuggerObject" />
+  <TypeSignature Language="F#" Value="type IDebuggerObject = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebuggerObject.HasEnumerableMember(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasEnumerableMember (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasEnumerableMember(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member HasEnumerableMember : string -&gt; bool" Usage="iDebuggerObject.HasEnumerableMember name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebuggerObject.IsCOMObject" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCOMObject () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCOMObject();" />
+      <MemberSignature Language="F#" Value="abstract member IsCOMObject : unit -&gt; bool" Usage="iDebuggerObject.IsCOMObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebuggerObject.IsEqual(Microsoft.JScript.IDebuggerObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEqual (o As IDebuggerObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEqual(Microsoft::JScript::IDebuggerObject ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member IsEqual : Microsoft.JScript.IDebuggerObject -&gt; bool" Usage="iDebuggerObject.IsEqual o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebuggerObject.IsScriptFunction" />
       <MemberSignature Language="VB.NET" Value="Public Function IsScriptFunction () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsScriptFunction();" />
+      <MemberSignature Language="F#" Value="abstract member IsScriptFunction : unit -&gt; bool" Usage="iDebuggerObject.IsScriptFunction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebuggerObject.IsScriptObject" />
       <MemberSignature Language="VB.NET" Value="Public Function IsScriptObject () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsScriptObject();" />
+      <MemberSignature Language="F#" Value="abstract member IsScriptObject : unit -&gt; bool" Usage="iDebuggerObject.IsScriptObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

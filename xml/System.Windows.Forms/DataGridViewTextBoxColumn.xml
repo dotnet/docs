@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewTextBoxColumn&#xA;Inherits DataGridViewColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewTextBoxColumn : System::Windows::Forms::DataGridViewColumn" />
+  <TypeSignature Language="F#" Value="type DataGridViewTextBoxColumn = class&#xA;    inherit DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxColumn.MaxInputLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxInputLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxInputLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxInputLength : int with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxColumn.MaxInputLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SortMode As DataGridViewColumnSortMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumnSortMode SortMode { System::Windows::Forms::DataGridViewColumnSortMode get(); void set(System::Windows::Forms::DataGridViewColumnSortMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SortMode : System.Windows.Forms.DataGridViewColumnSortMode with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxColumn.SortMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewTextBoxColumn.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.GenericAcl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GenericAcl&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericAcl abstract : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type GenericAcl = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.GenericAcl.AclRevision" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AclRevision As Byte " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Byte AclRevision;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AclRevision : byte" Usage="System.Security.AccessControl.GenericAcl.AclRevision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.GenericAcl.AclRevisionDS" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AclRevisionDS As Byte " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Byte AclRevisionDS;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AclRevisionDS : byte" Usage="System.Security.AccessControl.GenericAcl.AclRevisionDS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.BinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BinaryLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int BinaryLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.GenericAcl.BinaryLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAcl.CopyTo(System.Security.AccessControl.GenericAce[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As GenericAce(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Security::AccessControl::GenericAce ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Security.AccessControl.GenericAce[] * int -&gt; unit" Usage="genericAcl.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.Count" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.AccessControl.GenericAcl.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAcl.GetBinaryForm(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="abstract member GetBinaryForm : byte[] * int -&gt; unit" Usage="genericAcl.GetBinaryForm (binaryForm, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAcl.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As AceEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AceEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Security.AccessControl.AceEnumerator" Usage="genericAcl.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.AccessControl.GenericAcl.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride Property Item(index As Integer) As GenericAce" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Security::AccessControl::GenericAce ^ default[int] { System::Security::AccessControl::GenericAce ^ get(int index); void set(int index, System::Security::AccessControl::GenericAce ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.AccessControl.GenericAce with get, set" Usage="System.Security.AccessControl.GenericAcl.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.GenericAcl.MaxBinaryLength" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxBinaryLength As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly int MaxBinaryLength;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxBinaryLength : int" Usage="System.Security.AccessControl.GenericAcl.MaxBinaryLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.Revision" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Revision As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Byte Revision { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Revision : byte" Usage="System.Security.AccessControl.GenericAcl.Revision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAcl.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.AccessControl.GenericAcl.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

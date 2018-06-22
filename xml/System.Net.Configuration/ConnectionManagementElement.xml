@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ConnectionManagementElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionManagementElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionManagementElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ConnectionManagementElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElement.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As String, maxConnection As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionManagementElement(System::String ^ address, int maxConnection);" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.ConnectionManagementElement : string * int -&gt; System.Net.Configuration.ConnectionManagementElement" Usage="new System.Net.Configuration.ConnectionManagementElement (address, maxConnection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="System.Net.Configuration.ConnectionManagementElement.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnection As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnection { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConnection : int with get, set" Usage="System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.ConnectionManagementElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

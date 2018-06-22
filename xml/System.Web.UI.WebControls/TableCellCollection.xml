@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableCellCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TableCellCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableCellCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type TableCellCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.Add(System.Web.UI.WebControls.TableCell)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (cell As TableCell) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::TableCell ^ cell);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.TableCell -&gt; int" Usage="tableCellCollection.Add cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.AddAt(System.Int32,System.Web.UI.WebControls.TableCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAt (index As Integer, cell As TableCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(int index, System::Web::UI::WebControls::TableCell ^ cell);" />
+      <MemberSignature Language="F#" Value="member this.AddAt : int * System.Web.UI.WebControls.TableCell -&gt; unit" Usage="tableCellCollection.AddAt (index, cell)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.AddRange(System.Web.UI.WebControls.TableCell[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (cells As TableCell())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Web::UI::WebControls::TableCell ^&gt; ^ cells);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Web.UI.WebControls.TableCell[] -&gt; unit" Usage="tableCellCollection.AddRange cells" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="tableCellCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -231,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="tableCellCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.WebControls.TableCellCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.GetCellIndex(System.Web.UI.WebControls.TableCell)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCellIndex (cell As TableCell) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCellIndex(System::Web::UI::WebControls::TableCell ^ cell);" />
+      <MemberSignature Language="F#" Value="member this.GetCellIndex : System.Web.UI.WebControls.TableCell -&gt; int" Usage="tableCellCollection.GetCellIndex cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -359,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tableCellCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -412,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.TableCellCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -443,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.WebControls.TableCellCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -478,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As TableCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableCell ^ default[int] { System::Web::UI::WebControls::TableCell ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.TableCell" Usage="System.Web.UI.WebControls.TableCellCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -520,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.Remove(System.Web.UI.WebControls.TableCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (cell As TableCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::TableCell ^ cell);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.TableCell -&gt; unit" Usage="tableCellCollection.Remove cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -561,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableCellCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="tableCellCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -605,6 +619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.WebControls.TableCellCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -791,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.TableCellCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -822,6 +838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableCellCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.TableCellCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

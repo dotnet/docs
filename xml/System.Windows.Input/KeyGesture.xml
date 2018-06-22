@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyGesture" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyGesture&#xA;Inherits InputGesture" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyGesture : System::Windows::Input::InputGesture" />
+  <TypeSignature Language="F#" Value="type KeyGesture = class&#xA;    inherit InputGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyGesture.#ctor(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyGesture(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyGesture : System.Windows.Input.Key -&gt; System.Windows.Input.KeyGesture" Usage="new System.Windows.Input.KeyGesture key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.Key key, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyGesture.#ctor(System.Windows.Input.Key,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyGesture(System::Windows::Input::Key key, System::Windows::Input::ModifierKeys modifiers);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyGesture : System.Windows.Input.Key * System.Windows.Input.ModifierKeys -&gt; System.Windows.Input.KeyGesture" Usage="new System.Windows.Input.KeyGesture (key, modifiers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.Key key, valuetype System.Windows.Input.ModifierKeys modifiers, string displayString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyGesture.#ctor(System.Windows.Input.Key,System.Windows.Input.ModifierKeys,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyGesture(System::Windows::Input::Key key, System::Windows::Input::ModifierKeys modifiers, System::String ^ displayString);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyGesture : System.Windows.Input.Key * System.Windows.Input.ModifierKeys * string -&gt; System.Windows.Input.KeyGesture" Usage="new System.Windows.Input.KeyGesture (key, modifiers, displayString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyGesture.DisplayString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayString : string" Usage="System.Windows.Input.KeyGesture.DisplayString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -257,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyGesture.GetDisplayStringForCulture(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDisplayStringForCulture (culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDisplayStringForCulture(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.GetDisplayStringForCulture : System.Globalization.CultureInfo -&gt; string" Usage="keyGesture.GetDisplayStringForCulture culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyGesture.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Key" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key Key { System::Windows::Input::Key get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Windows.Input.Key" Usage="System.Windows.Input.KeyGesture.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.Matches : obj * System.Windows.Input.InputEventArgs -&gt; bool" Usage="keyGesture.Matches (targetElement, inputEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyGesture.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As ModifierKeys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ModifierKeys Modifiers { System::Windows::Input::ModifierKeys get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys" Usage="System.Windows.Input.KeyGesture.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

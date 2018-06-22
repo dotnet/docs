@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUserCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MembershipUserCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipUserCollection sealed : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type MembershipUserCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Add(System.Web.Security.MembershipUser)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (user As MembershipUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Security::MembershipUser ^ user);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Security.MembershipUser -&gt; unit" Usage="membershipUserCollection.Add user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="membershipUserCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.CopyTo(System.Web.Security.MembershipUser[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MembershipUser(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Security::MembershipUser ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Security.MembershipUser[] * int -&gt; unit" Usage="membershipUserCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.Security.MembershipUserCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="membershipUserCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.Security.MembershipUserCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipUser ^ default[System::String ^] { System::Web::Security::MembershipUser ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Security.MembershipUser" Usage="System.Web.Security.MembershipUserCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="membershipUserCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="membershipUserCollection.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.Security.MembershipUserCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.ContentType" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentType" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentType" />
+  <TypeSignature Language="F#" Value="type ContentType = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contentType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentType(System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.Net.Mime.ContentType : string -&gt; System.Net.Mime.ContentType" Usage="new System.Net.Mime.ContentType contentType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Boundary" />
       <MemberSignature Language="VB.NET" Value="Public Property Boundary As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Boundary { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Boundary : string with get, set" Usage="System.Net.Mime.ContentType.Boundary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.CharSet" />
       <MemberSignature Language="VB.NET" Value="Public Property CharSet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CharSet { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CharSet : string with get, set" Usage="System.Net.Mime.ContentType.CharSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (rparam As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ rparam);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contentType.Equals rparam" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contentType.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.MediaType" />
       <MemberSignature Language="VB.NET" Value="Public Property MediaType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MediaType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MediaType : string with get, set" Usage="System.Net.Mime.ContentType.MediaType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -377,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Net.Mime.ContentType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -428,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Parameters { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Specialized.StringDictionary" Usage="System.Net.Mime.ContentType.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -477,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="contentType.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

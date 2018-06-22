@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ThemeSizeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThemeSizeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThemeSizeType" />
+  <TypeSignature Language="F#" Value="type ThemeSizeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.Draw" />
       <MemberSignature Language="VB.NET" Value="Draw" />
       <MemberSignature Language="C++ CLI" Value="Draw" />
+      <MemberSignature Language="F#" Value="Draw = 2" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.Draw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.Minimum" />
       <MemberSignature Language="VB.NET" Value="Minimum" />
       <MemberSignature Language="C++ CLI" Value="Minimum" />
+      <MemberSignature Language="F#" Value="Minimum = 0" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.Minimum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

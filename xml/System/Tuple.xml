@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Tuple" />
   <TypeSignature Language="VB.NET" Value="Public Class Tuple" />
   <TypeSignature Language="C++ CLI" Value="public ref class Tuple abstract sealed" />
+  <TypeSignature Language="F#" Value="type Tuple = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1) (item1 As T1) As Tuple(Of T1)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1&gt;&#xA; static Tuple&lt;T1&gt; ^ Create(T1 item1);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 -&gt; 'T1" Usage="System.Tuple.Create item1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``2(``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2) (item1 As T1, item2 As T2) As Tuple(Of T1, T2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2&gt;&#xA; static Tuple&lt;T1, T2&gt; ^ Create(T1 item1, T2 item2);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 -&gt; 'T1 * 'T2" Usage="System.Tuple.Create (item1, item2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``3(``0,``1,``2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3) (item1 As T1, item2 As T2, item3 As T3) As Tuple(Of T1, T2, T3)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3&gt;&#xA; static Tuple&lt;T1, T2, T3&gt; ^ Create(T1 item1, T2 item2, T3 item3);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 -&gt; 'T1 * 'T2 * 'T3" Usage="System.Tuple.Create (item1, item2, item3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -286,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``4(``0,``1,``2,``3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4) (item1 As T1, item2 As T2, item3 As T3, item4 As T4) As Tuple(Of T1, T2, T3, T4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4&gt;&#xA; static Tuple&lt;T1, T2, T3, T4&gt; ^ Create(T1 item1, T2 item2, T3 item3, T4 item4);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 -&gt; 'T1 * 'T2 * 'T3 * 'T4" Usage="System.Tuple.Create (item1, item2, item3, item4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -356,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``5(``0,``1,``2,``3,``4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5) As Tuple(Of T1, T2, T3, T4, T5)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5&gt;&#xA; static Tuple&lt;T1, T2, T3, T4, T5&gt; ^ Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 -&gt; 'T1 * 'T2 * 'T3 * 'T4 * 'T5" Usage="System.Tuple.Create (item1, item2, item3, item4, item5)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -430,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``6(``0,``1,``2,``3,``4,``5)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6) As Tuple(Of T1, T2, T3, T4, T5, T6)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6&gt;&#xA; static Tuple&lt;T1, T2, T3, T4, T5, T6&gt; ^ Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 -&gt; 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6" Usage="System.Tuple.Create (item1, item2, item3, item4, item5, item6)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -508,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``7(``0,``1,``2,``3,``4,``5,``6)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6, T7) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7) As Tuple(Of T1, T2, T3, T4, T5, T6, T7)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7&gt;&#xA; static Tuple&lt;T1, T2, T3, T4, T5, T6, T7&gt; ^ Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 -&gt; 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7" Usage="System.Tuple.Create (item1, item2, item3, item4, item5, item6, item7)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -590,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Tuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T1, T2, T3, T4, T5, T6, T7, T8) (item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7, item8 As T8) As Tuple(Of T1, T2, T3, T4, T5, T6, T7, Tuple(Of T8))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8&gt;&#xA; static Tuple&lt;T1, T2, T3, T4, T5, T6, T7, Tuple&lt;T8&gt; ^&gt; ^ Create(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7, T8 item8);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 * 'T8 -&gt; 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 * 'T8" Usage="System.Tuple.Create (item1, item2, item3, item4, item5, item6, item7, item8)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

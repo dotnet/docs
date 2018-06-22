@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlResolver abstract" />
+  <TypeSignature Language="F#" Value="type XmlResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlResolver.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials {  void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials" Usage="System.Xml.XmlResolver.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -184,6 +186,7 @@ resolver.Credentials = myCache;
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlResolver.GetEntity(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="abstract member GetEntity : Uri * string * Type -&gt; obj" Usage="xmlResolver.GetEntity (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -245,6 +248,7 @@ resolver.Credentials = myCache;
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlResolver.GetEntityAsync(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityAsync (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ GetEntityAsync(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
+      <MemberSignature Language="F#" Value="abstract member GetEntityAsync : Uri * string * Type -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.GetEntityAsync : Uri * string * Type -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="xmlResolver.GetEntityAsync (absoluteUri, role, ofObjectToReturn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -290,6 +294,7 @@ resolver.Credentials = myCache;
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlResolver.ResolveUri(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveUri (baseUri As Uri, relativeUri As String) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Uri ^ ResolveUri(Uri ^ baseUri, System::String ^ relativeUri);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveUri : Uri * string -&gt; Uri&#xA;override this.ResolveUri : Uri * string -&gt; Uri" Usage="xmlResolver.ResolveUri (baseUri, relativeUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -339,6 +344,7 @@ resolver.Credentials = myCache;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsType(class System.Uri absoluteUri, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlResolver.SupportsType(System.Uri,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SupportsType(Uri ^ absoluteUri, Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member SupportsType : Uri * Type -&gt; bool&#xA;override this.SupportsType : Uri * Type -&gt; bool" Usage="xmlResolver.SupportsType (absoluteUri, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

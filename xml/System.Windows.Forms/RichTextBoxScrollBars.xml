@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxScrollBars" />
   <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxScrollBars" />
   <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxScrollBars" />
+  <TypeSignature Language="F#" Value="type RichTextBoxScrollBars = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Windows.Forms.RichTextBoxScrollBars.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth" />
       <MemberSignature Language="VB.NET" Value="ForcedBoth" />
       <MemberSignature Language="C++ CLI" Value="ForcedBoth" />
+      <MemberSignature Language="F#" Value="ForcedBoth = 19" Usage="System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedHorizontal" />
       <MemberSignature Language="VB.NET" Value="ForcedHorizontal" />
       <MemberSignature Language="C++ CLI" Value="ForcedHorizontal" />
+      <MemberSignature Language="F#" Value="ForcedHorizontal = 17" Usage="System.Windows.Forms.RichTextBoxScrollBars.ForcedHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical" />
       <MemberSignature Language="VB.NET" Value="ForcedVertical" />
       <MemberSignature Language="C++ CLI" Value="ForcedVertical" />
+      <MemberSignature Language="F#" Value="ForcedVertical = 18" Usage="System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Windows.Forms.RichTextBoxScrollBars.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.RichTextBoxScrollBars.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Vertical" />
       <MemberSignature Language="VB.NET" Value="Vertical" />
       <MemberSignature Language="C++ CLI" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Windows.Forms.RichTextBoxScrollBars.Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

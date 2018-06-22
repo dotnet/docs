@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayHitTestParameters" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RayHitTestParameters&#xA;Inherits HitTestParameters3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class RayHitTestParameters sealed : System::Windows::Media::Media3D::HitTestParameters3D" />
+  <TypeSignature Language="F#" Value="type RayHitTestParameters = class&#xA;    inherit HitTestParameters3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.RayHitTestParameters.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (origin As Point3D, direction As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RayHitTestParameters(System::Windows::Media::Media3D::Point3D origin, System::Windows::Media::Media3D::Vector3D direction);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.RayHitTestParameters : System.Windows.Media.Media3D.Point3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.RayHitTestParameters" Usage="new System.Windows.Media.Media3D.RayHitTestParameters (origin, direction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D Direction { System::Windows::Media::Media3D::Vector3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.RayHitTestParameters.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Origin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3D Origin { System::Windows::Media::Media3D::Point3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Origin : System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.RayHitTestParameters.Origin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationManager&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationManager sealed : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type ApplicationManager = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="applicationManager.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(class System.Web.Hosting.IApplicationHost appHost, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.Web.Hosting.IApplicationHost,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IRegisteredObject ^ CreateObject(System::Web::Hosting::IApplicationHost ^ appHost, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.CreateObject : System.Web.Hosting.IApplicationHost * Type -&gt; System.Web.Hosting.IRegisteredObject" Usage="applicationManager.CreateObject (appHost, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(string appId, class System.Type type, string virtualPath, string physicalPath, bool failIfExists) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IRegisteredObject ^ CreateObject(System::String ^ appId, Type ^ type, System::String ^ virtualPath, System::String ^ physicalPath, bool failIfExists);" />
+      <MemberSignature Language="F#" Value="member this.CreateObject : string * Type * string * string * bool -&gt; System.Web.Hosting.IRegisteredObject" Usage="applicationManager.CreateObject (appId, type, virtualPath, physicalPath, failIfExists)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(string appId, class System.Type type, string virtualPath, string physicalPath, bool failIfExists, bool throwOnError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IRegisteredObject ^ CreateObject(System::String ^ appId, Type ^ type, System::String ^ virtualPath, System::String ^ physicalPath, bool failIfExists, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="member this.CreateObject : string * Type * string * string * bool * bool -&gt; System.Web.Hosting.IRegisteredObject" Usage="applicationManager.CreateObject (appId, type, virtualPath, physicalPath, failIfExists, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetAppDomain(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppDomain (appId As String) As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomain ^ GetAppDomain(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="member this.GetAppDomain : string -&gt; AppDomain" Usage="applicationManager.GetAppDomain appId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetAppDomain(System.Web.Hosting.IApplicationHost)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppDomain (appHost As IApplicationHost) As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomain ^ GetAppDomain(System::Web::Hosting::IApplicationHost ^ appHost);" />
+      <MemberSignature Language="F#" Value="member this.GetAppDomain : System.Web.Hosting.IApplicationHost -&gt; AppDomain" Usage="applicationManager.GetAppDomain appHost" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetApplicationManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationManager () As ApplicationManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Hosting::ApplicationManager ^ GetApplicationManager();" />
+      <MemberSignature Language="F#" Value="static member GetApplicationManager : unit -&gt; System.Web.Hosting.ApplicationManager" Usage="System.Web.Hosting.ApplicationManager.GetApplicationManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +346,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject GetObject(string appId, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetObject(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IRegisteredObject ^ GetObject(System::String ^ appId, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetObject : string * Type -&gt; System.Web.Hosting.IRegisteredObject" Usage="applicationManager.GetObject (appId, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -370,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetRunningApplications" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRunningApplications () As ApplicationInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::Hosting::ApplicationInfo ^&gt; ^ GetRunningApplications();" />
+      <MemberSignature Language="F#" Value="member this.GetRunningApplications : unit -&gt; System.Web.Hosting.ApplicationInfo[]" Usage="applicationManager.GetRunningApplications " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="applicationManager.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.IsIdle" />
       <MemberSignature Language="VB.NET" Value="Public Function IsIdle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsIdle();" />
+      <MemberSignature Language="F#" Value="member this.IsIdle : unit -&gt; bool" Usage="applicationManager.IsIdle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; unit" Usage="applicationManager.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.ShutdownAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShutdownAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShutdownAll();" />
+      <MemberSignature Language="F#" Value="member this.ShutdownAll : unit -&gt; unit" Usage="applicationManager.ShutdownAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.ShutdownApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShutdownApplication (appId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShutdownApplication(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="member this.ShutdownApplication : string -&gt; unit" Usage="applicationManager.ShutdownApplication appId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -536,6 +551,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopObject(string appId, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.StopObject(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopObject(System::String ^ appId, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.StopObject : string * Type -&gt; unit" Usage="applicationManager.StopObject (appId, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationBasedIssuerNameRegistry&#xA;Inherits IssuerNameRegistry" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationBasedIssuerNameRegistry : System::IdentityModel::Tokens::IssuerNameRegistry" />
+  <TypeSignature Language="F#" Value="type ConfigurationBasedIssuerNameRegistry = class&#xA;    inherit IssuerNameRegistry" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.AddTrustedIssuer(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddTrustedIssuer (certificateThumbprint As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddTrustedIssuer(System::String ^ certificateThumbprint, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.AddTrustedIssuer : string * string -&gt; unit" Usage="configurationBasedIssuerNameRegistry.AddTrustedIssuer (certificateThumbprint, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfiguredTrustedIssuers As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ ConfiguredTrustedIssuers { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfiguredTrustedIssuers : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetIssuerName(System::IdentityModel::Tokens::SecurityToken ^ securityToken);" />
+      <MemberSignature Language="F#" Value="override this.GetIssuerName : System.IdentityModel.Tokens.SecurityToken -&gt; string" Usage="configurationBasedIssuerNameRegistry.GetIssuerName securityToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfiguration As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfiguration);" />
+      <MemberSignature Language="F#" Value="override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="configurationBasedIssuerNameRegistry.LoadCustomConfiguration customConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

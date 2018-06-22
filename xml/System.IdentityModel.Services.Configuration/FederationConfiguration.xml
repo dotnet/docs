@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class FederationConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederationConfiguration" />
+  <TypeSignature Language="F#" Value="type FederationConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfiguration.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (loadConfig As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederationConfiguration(bool loadConfig);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Configuration.FederationConfiguration : bool -&gt; System.IdentityModel.Services.Configuration.FederationConfiguration" Usage="new System.IdentityModel.Services.Configuration.FederationConfiguration loadConfig" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfiguration.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (federationConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederationConfiguration(System::String ^ federationConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Configuration.FederationConfiguration : string -&gt; System.IdentityModel.Services.Configuration.FederationConfiguration" Usage="new System.IdentityModel.Services.Configuration.FederationConfiguration federationConfigurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieHandler As CookieHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::CookieHandler ^ CookieHandler { System::IdentityModel::Services::CookieHandler ^ get(); void set(System::IdentityModel::Services::CookieHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieHandler : System.IdentityModel.Services.CookieHandler with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.CustomElement" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomElement As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ CustomElement { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomElement : System.Xml.XmlElement with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.CustomElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.FederationConfiguration.DefaultFederationConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultFederationConfigurationName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DefaultFederationConfigurationName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultFederationConfigurationName : string" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.DefaultFederationConfigurationName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property IdentityConfiguration As IdentityConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::IdentityConfiguration ^ IdentityConfiguration { System::IdentityModel::Configuration::IdentityConfiguration ^ get(); void set(System::IdentityModel::Configuration::IdentityConfiguration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IdentityConfiguration : System.IdentityModel.Configuration.IdentityConfiguration with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="federationConfiguration.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property bool IsInitialized {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfiguration.LoadConfiguration(System.IdentityModel.Services.Configuration.FederationConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub LoadConfiguration (element As FederationConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadConfiguration(System::IdentityModel::Services::Configuration::FederationConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.LoadConfiguration : System.IdentityModel.Services.Configuration.FederationConfigurationElement -&gt; unit" Usage="federationConfiguration.LoadConfiguration element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -390,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.ServiceCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceCertificate As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ ServiceCertificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); void set(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.ServiceCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -417,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfiguration.WsFederationConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property WsFederationConfiguration As WsFederationConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::Configuration::WsFederationConfiguration ^ WsFederationConfiguration { System::IdentityModel::Services::Configuration::WsFederationConfiguration ^ get(); void set(System::IdentityModel::Services::Configuration::WsFederationConfiguration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WsFederationConfiguration : System.IdentityModel.Services.Configuration.WsFederationConfiguration with get, set" Usage="System.IdentityModel.Services.Configuration.FederationConfiguration.WsFederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

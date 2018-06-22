@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DebugConvert" />
   <TypeSignature Language="VB.NET" Value="Public Class DebugConvert&#xA;Implements IDebugConvert, IDebugConvert2" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebugConvert : Microsoft::JScript::IDebugConvert, Microsoft::JScript::IDebugConvert2" />
+  <TypeSignature Language="F#" Value="type DebugConvert = class&#xA;    interface IDebugConvert&#xA;    interface IDebugConvert2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.BooleanToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BooleanToString (value As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ BooleanToString(bool value);" />
+      <MemberSignature Language="F#" Value="abstract member BooleanToString : bool -&gt; string&#xA;override this.BooleanToString : bool -&gt; string" Usage="debugConvert.BooleanToString value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.BooleanToString(System.Boolean)</InterfaceMember>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.ByteToString(System.Byte,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ByteToString (value As Byte, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ByteToString(System::Byte value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member ByteToString : byte * int -&gt; string&#xA;override this.ByteToString : byte * int -&gt; string" Usage="debugConvert.ByteToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.ByteToString(System.Byte,System.Int32)</InterfaceMember>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.DecimalToString(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecimalToString (value As Decimal) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ DecimalToString(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="abstract member DecimalToString : decimal -&gt; string&#xA;override this.DecimalToString : decimal -&gt; string" Usage="debugConvert.DecimalToString value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert2.DecimalToString(System.Decimal)</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.DoubleToDateString(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function DoubleToDateString (value As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ DoubleToDateString(double value);" />
+      <MemberSignature Language="F#" Value="abstract member DoubleToDateString : double -&gt; string&#xA;override this.DoubleToDateString : double -&gt; string" Usage="debugConvert.DoubleToDateString value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.DoubleToDateString(System.Double)</InterfaceMember>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.DoubleToString(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function DoubleToString (value As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ DoubleToString(double value);" />
+      <MemberSignature Language="F#" Value="abstract member DoubleToString : double -&gt; string&#xA;override this.DoubleToString : double -&gt; string" Usage="debugConvert.DoubleToString value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.DoubleToString(System.Double)</InterfaceMember>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.GetErrorMessageForHR(System.Int32,Microsoft.JScript.Vsa.IJSVsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrorMessageForHR (hr As Integer, engine As IJSVsaEngine) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetErrorMessageForHR(int hr, Microsoft::JScript::Vsa::IJSVsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorMessageForHR : int * Microsoft.JScript.Vsa.IJSVsaEngine -&gt; string&#xA;override this.GetErrorMessageForHR : int * Microsoft.JScript.Vsa.IJSVsaEngine -&gt; string" Usage="debugConvert.GetErrorMessageForHR (hr, engine)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.GetErrorMessageForHR(System.Int32,Microsoft.JScript.Vsa.IJSVsaEngine)</InterfaceMember>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.GetManagedCharObject(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagedCharObject (i As UShort) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetManagedCharObject(System::UInt16 i);" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedCharObject : uint16 -&gt; obj&#xA;override this.GetManagedCharObject : uint16 -&gt; obj" Usage="debugConvert.GetManagedCharObject i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.GetManagedCharObject(System.UInt16)</InterfaceMember>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.GetManagedInt64Object(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagedInt64Object (i As Long) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetManagedInt64Object(long i);" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedInt64Object : int64 -&gt; obj&#xA;override this.GetManagedInt64Object : int64 -&gt; obj" Usage="debugConvert.GetManagedInt64Object i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.GetManagedInt64Object(System.Int64)</InterfaceMember>
@@ -308,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.GetManagedObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagedObject (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetManagedObject(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedObject : obj -&gt; obj&#xA;override this.GetManagedObject : obj -&gt; obj" Usage="debugConvert.GetManagedObject value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.GetManagedObject(System.Object)</InterfaceMember>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.GetManagedUInt64Object(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagedUInt64Object (i As ULong) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetManagedUInt64Object(System::UInt64 i);" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedUInt64Object : uint64 -&gt; obj&#xA;override this.GetManagedUInt64Object : uint64 -&gt; obj" Usage="debugConvert.GetManagedUInt64Object i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.GetManagedUInt64Object(System.UInt64)</InterfaceMember>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.Int16ToString(System.Int16,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Int16ToString (value As Short, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Int16ToString(short value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member Int16ToString : int16 * int -&gt; string&#xA;override this.Int16ToString : int16 * int -&gt; string" Usage="debugConvert.Int16ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.Int16ToString(System.Int16,System.Int32)</InterfaceMember>
@@ -402,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.Int32ToString(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Int32ToString (value As Integer, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Int32ToString(int value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member Int32ToString : int * int -&gt; string&#xA;override this.Int32ToString : int * int -&gt; string" Usage="debugConvert.Int32ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.Int32ToString(System.Int32,System.Int32)</InterfaceMember>
@@ -434,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.Int64ToString(System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Int64ToString (value As Long, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Int64ToString(long value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member Int64ToString : int64 * int -&gt; string&#xA;override this.Int64ToString : int64 * int -&gt; string" Usage="debugConvert.Int64ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.Int64ToString(System.Int64,System.Int32)</InterfaceMember>
@@ -466,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.RegexpToString(System.String,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegexpToString (source As String, ignoreCase As Boolean, global As Boolean, multiline As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ RegexpToString(System::String ^ source, bool ignoreCase, bool global, bool multiline);" />
+      <MemberSignature Language="F#" Value="abstract member RegexpToString : string * bool * bool * bool -&gt; string&#xA;override this.RegexpToString : string * bool * bool * bool -&gt; string" Usage="debugConvert.RegexpToString (source, ignoreCase, global, multiline)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.RegexpToString(System.String,System.Boolean,System.Boolean,System.Boolean)</InterfaceMember>
@@ -506,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.SByteToString(System.SByte,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SByteToString (value As SByte, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ SByteToString(System::SByte value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member SByteToString : sbyte * int -&gt; string&#xA;override this.SByteToString : sbyte * int -&gt; string" Usage="debugConvert.SByteToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.SByteToString(System.SByte,System.Int32)</InterfaceMember>
@@ -538,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.SingleToString(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function SingleToString (value As Single) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ SingleToString(float value);" />
+      <MemberSignature Language="F#" Value="abstract member SingleToString : single -&gt; string&#xA;override this.SingleToString : single -&gt; string" Usage="debugConvert.SingleToString value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.SingleToString(System.Single)</InterfaceMember>
@@ -568,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.StringToPrintable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function StringToPrintable (source As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ StringToPrintable(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StringToPrintable : string -&gt; string&#xA;override this.StringToPrintable : string -&gt; string" Usage="debugConvert.StringToPrintable source" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.StringToPrintable(System.String)</InterfaceMember>
@@ -597,6 +615,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ToPrimitive(object value, valuetype System.TypeCode typeCode, bool truncationPermitted) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.ToPrimitive(System.Object,System.TypeCode,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ToPrimitive(System::Object ^ value, TypeCode typeCode, bool truncationPermitted);" />
+      <MemberSignature Language="F#" Value="abstract member ToPrimitive : obj * TypeCode * bool -&gt; obj&#xA;override this.ToPrimitive : obj * TypeCode * bool -&gt; obj" Usage="debugConvert.ToPrimitive (value, typeCode, truncationPermitted)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.ToPrimitive(System.Object,System.TypeCode,System.Boolean)</InterfaceMember>
@@ -633,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.UInt16ToString(System.UInt16,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function UInt16ToString (value As UShort, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UInt16ToString(System::UInt16 value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member UInt16ToString : uint16 * int -&gt; string&#xA;override this.UInt16ToString : uint16 * int -&gt; string" Usage="debugConvert.UInt16ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.UInt16ToString(System.UInt16,System.Int32)</InterfaceMember>
@@ -665,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.UInt32ToString(System.UInt32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function UInt32ToString (value As UInteger, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UInt32ToString(System::UInt32 value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member UInt32ToString : uint32 * int -&gt; string&#xA;override this.UInt32ToString : uint32 * int -&gt; string" Usage="debugConvert.UInt32ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.UInt32ToString(System.UInt32,System.Int32)</InterfaceMember>
@@ -697,6 +718,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DebugConvert.UInt64ToString(System.UInt64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function UInt64ToString (value As ULong, radix As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UInt64ToString(System::UInt64 value, int radix);" />
+      <MemberSignature Language="F#" Value="abstract member UInt64ToString : uint64 * int -&gt; string&#xA;override this.UInt64ToString : uint64 * int -&gt; string" Usage="debugConvert.UInt64ToString (value, radix)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IDebugConvert.UInt64ToString(System.UInt64,System.Int32)</InterfaceMember>

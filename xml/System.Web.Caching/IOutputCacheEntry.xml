@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.IOutputCacheEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOutputCacheEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOutputCacheEntry" />
+  <TypeSignature Language="F#" Value="type IOutputCacheEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.IOutputCacheEntry.HeaderElements" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderElements As List(Of HeaderElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Web::Caching::HeaderElement ^&gt; ^ HeaderElements { System::Collections::Generic::List&lt;System::Web::Caching::HeaderElement ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Web::Caching::HeaderElement ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderElements : System.Collections.Generic.List&lt;System.Web.Caching.HeaderElement&gt; with get, set" Usage="System.Web.Caching.IOutputCacheEntry.HeaderElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.IOutputCacheEntry.ResponseElements" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseElements As List(Of ResponseElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Web::Caching::ResponseElement ^&gt; ^ ResponseElements { System::Collections::Generic::List&lt;System::Web::Caching::ResponseElement ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Web::Caching::ResponseElement ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseElements : System.Collections.Generic.List&lt;System.Web.Caching.ResponseElement&gt; with get, set" Usage="System.Web.Caching.IOutputCacheEntry.ResponseElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationIDAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationIDAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationIDAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ApplicationIDAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationIDAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (guid As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationIDAttribute(System::String ^ guid);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.ApplicationIDAttribute : string -&gt; System.EnterpriseServices.ApplicationIDAttribute" Usage="new System.EnterpriseServices.ApplicationIDAttribute guid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationIDAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Value { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : Guid" Usage="System.EnterpriseServices.ApplicationIDAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

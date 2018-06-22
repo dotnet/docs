@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DataContractSerializerMessageContractImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerMessageContractImporter&#xA;Implements IWsdlImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerMessageContractImporter : System::ServiceModel::Description::IWsdlImportExtension" />
+  <TypeSignature Language="F#" Value="type DataContractSerializerMessageContractImporter = class&#xA;    interface IWsdlImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ServiceModel.Description.DataContractSerializerMessageContractImporter.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

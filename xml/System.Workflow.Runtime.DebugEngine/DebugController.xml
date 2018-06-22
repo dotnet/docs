@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugController" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebugController&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebugController sealed : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type DebugController = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.AttachToConduit(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachToConduit (url As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachToConduit(Uri ^ url);" />
+      <MemberSignature Language="F#" Value="member this.AttachToConduit : Uri -&gt; unit" Usage="debugController.AttachToConduit url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="debugController.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

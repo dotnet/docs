@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessagePartDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MessagePartDescriptionCollection&#xA;Inherits KeyedCollection(Of XmlQualifiedName, MessagePartDescription)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessagePartDescriptionCollection : System::Collections::ObjectModel::KeyedCollection&lt;System::Xml::XmlQualifiedName ^, System::ServiceModel::Description::MessagePartDescription ^&gt;" />
+  <TypeSignature Language="F#" Value="type MessagePartDescriptionCollection = class&#xA;    inherit KeyedCollection&lt;XmlQualifiedName, MessagePartDescription&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessagePartDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePartDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As MessagePartDescription) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlQualifiedName ^ GetKeyForItem(System::ServiceModel::Description::MessagePartDescription ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.ServiceModel.Description.MessagePartDescription -&gt; System.Xml.XmlQualifiedName&#xA;override this.GetKeyForItem : System.ServiceModel.Description.MessagePartDescription -&gt; System.Xml.XmlQualifiedName" Usage="messagePartDescriptionCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityCallContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityCallContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityCallContext sealed" />
+  <TypeSignature Language="F#" Value="type SecurityCallContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.Callers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callers As SecurityCallers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SecurityCallers ^ Callers { System::EnterpriseServices::SecurityCallers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callers : System.EnterpriseServices.SecurityCallers" Usage="System.EnterpriseServices.SecurityCallContext.Callers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.CurrentCall" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentCall As SecurityCallContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::EnterpriseServices::SecurityCallContext ^ CurrentCall { System::EnterpriseServices::SecurityCallContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCall : System.EnterpriseServices.SecurityCallContext" Usage="System.EnterpriseServices.SecurityCallContext.CurrentCall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.DirectCaller" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectCaller As SecurityIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SecurityIdentity ^ DirectCaller { System::EnterpriseServices::SecurityIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectCaller : System.EnterpriseServices.SecurityIdentity" Usage="System.EnterpriseServices.SecurityCallContext.DirectCaller" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsCallerInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCallerInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCallerInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="member this.IsCallerInRole : string -&gt; bool" Usage="securityCallContext.IsCallerInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.IsSecurityEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSecurityEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecurityEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityEnabled : bool" Usage="System.EnterpriseServices.SecurityCallContext.IsSecurityEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUserInRole (user As String, role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUserInRole(System::String ^ user, System::String ^ role);" />
+      <MemberSignature Language="F#" Value="member this.IsUserInRole : string * string -&gt; bool" Usage="securityCallContext.IsUserInRole (user, role)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.MinAuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinAuthenticationLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinAuthenticationLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinAuthenticationLevel : int" Usage="System.EnterpriseServices.SecurityCallContext.MinAuthenticationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.NumCallers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumCallers As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumCallers { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumCallers : int" Usage="System.EnterpriseServices.SecurityCallContext.NumCallers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.OriginalCaller" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalCaller As SecurityIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SecurityIdentity ^ OriginalCaller { System::EnterpriseServices::SecurityIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalCaller : System.EnterpriseServices.SecurityIdentity" Usage="System.EnterpriseServices.SecurityCallContext.OriginalCaller" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

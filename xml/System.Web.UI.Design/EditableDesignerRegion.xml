@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.EditableDesignerRegion" />
   <TypeSignature Language="VB.NET" Value="Public Class EditableDesignerRegion&#xA;Inherits DesignerRegion" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditableDesignerRegion : System::Web::UI::Design::DesignerRegion" />
+  <TypeSignature Language="F#" Value="type EditableDesignerRegion = class&#xA;    inherit DesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ControlDesigner, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditableDesignerRegion(System::Web::UI::Design::ControlDesigner ^ owner, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.EditableDesignerRegion : System.Web.UI.Design.ControlDesigner * string -&gt; System.Web.UI.Design.EditableDesignerRegion" Usage="new System.Web.UI.Design.EditableDesignerRegion (owner, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ControlDesigner, name As String, serverControlsOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditableDesignerRegion(System::Web::UI::Design::ControlDesigner ^ owner, System::String ^ name, bool serverControlsOnly);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.EditableDesignerRegion : System.Web.UI.Design.ControlDesigner * string * bool -&gt; System.Web.UI.Design.EditableDesignerRegion" Usage="new System.Web.UI.Design.EditableDesignerRegion (owner, name, serverControlsOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.Content" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Content As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Content { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : string with get, set" Usage="System.Web.UI.Design.EditableDesignerRegion.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ViewRendering GetChildViewRendering(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.EditableDesignerRegion.GetChildViewRendering(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Design::ViewRendering ^ GetChildViewRendering(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildViewRendering : System.Web.UI.Control -&gt; System.Web.UI.Design.ViewRendering&#xA;override this.GetChildViewRendering : System.Web.UI.Control -&gt; System.Web.UI.Design.ViewRendering" Usage="editableDesignerRegion.GetChildViewRendering control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerControlsOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerControlsOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerControlsOnly : bool with get, set" Usage="System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SupportsDataBinding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDataBinding { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsDataBinding : bool with get, set" Usage="System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

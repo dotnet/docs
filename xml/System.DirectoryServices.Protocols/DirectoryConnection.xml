@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryConnection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DirectoryConnection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryConnection abstract" />
+  <TypeSignature Language="F#" Value="type DirectoryConnection = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection" Usage="System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryConnection.Credential" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Credential As NetworkCredential" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkCredential ^ Credential {  void set(System::Net::NetworkCredential ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credential : System.Net.NetworkCredential" Usage="System.DirectoryServices.Protocols.DirectoryConnection.Credential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryConnection.Directory" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Directory As DirectoryIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::Protocols::DirectoryIdentifier ^ Directory { System::DirectoryServices::Protocols::DirectoryIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Directory : System.DirectoryServices.Protocols.DirectoryIdentifier" Usage="System.DirectoryServices.Protocols.DirectoryConnection.Directory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SendRequest (request As DirectoryRequest) As DirectoryResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::DirectoryServices::Protocols::DirectoryResponse ^ SendRequest(System::DirectoryServices::Protocols::DirectoryRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member SendRequest : System.DirectoryServices.Protocols.DirectoryRequest -&gt; System.DirectoryServices.Protocols.DirectoryResponse" Usage="directoryConnection.SendRequest request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryConnection.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.DirectoryServices.Protocols.DirectoryConnection.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.GroupDescription" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GroupDescription&#xA;Implements INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupDescription abstract : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type GroupDescription = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.GroupDescription.CustomSort" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomSort As IComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IComparer ^ CustomSort { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomSort : System.Collections.IComparer with get, set" Usage="System.ComponentModel.GroupDescription.CustomSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.GroupDescription.GroupNameFromItem(System.Object,System.Int32,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GroupNameFromItem (item As Object, level As Integer, culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GroupNameFromItem(System::Object ^ item, int level, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member GroupNameFromItem : obj * int * System.Globalization.CultureInfo -&gt; obj" Usage="groupDescription.GroupNameFromItem (item, level, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.GroupDescription.GroupNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupNames As ObservableCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::Object ^&gt; ^ GroupNames { System::Collections::ObjectModel::ObservableCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupNames : System.Collections.ObjectModel.ObservableCollection&lt;obj&gt;" Usage="System.ComponentModel.GroupDescription.GroupNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.GroupDescription.NamesMatch(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NamesMatch (groupName As Object, itemName As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool NamesMatch(System::Object ^ groupName, System::Object ^ itemName);" />
+      <MemberSignature Language="F#" Value="abstract member NamesMatch : obj * obj -&gt; bool&#xA;override this.NamesMatch : obj * obj -&gt; bool" Usage="groupDescription.NamesMatch (groupName, itemName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.GroupDescription.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="groupDescription.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.GroupDescription.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.GroupDescription.ShouldSerializeGroupNames" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeGroupNames () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeGroupNames();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeGroupNames : unit -&gt; bool" Usage="groupDescription.ShouldSerializeGroupNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.GroupDescription.ShouldSerializeSortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSortDescriptions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSortDescriptions();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSortDescriptions : unit -&gt; bool" Usage="groupDescription.ShouldSerializeSortDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.GroupDescription.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDescriptions As SortDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.SortDescriptionCollection" Usage="System.ComponentModel.GroupDescription.SortDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

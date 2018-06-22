@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaKeyref" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaKeyref&#xA;Inherits XmlSchemaIdentityConstraint" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaKeyref : System::Xml::Schema::XmlSchemaIdentityConstraint" />
+  <TypeSignature Language="F#" Value="type XmlSchemaKeyref = class&#xA;    inherit XmlSchemaIdentityConstraint" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaKeyref.Refer" />
       <MemberSignature Language="VB.NET" Value="Public Property Refer As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Refer { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Refer : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaKeyref.Refer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

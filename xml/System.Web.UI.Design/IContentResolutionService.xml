@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IContentResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContentResolutionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContentResolutionService" />
+  <TypeSignature Language="F#" Value="type IContentResolutionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IContentResolutionService.ContentDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentDefinitions As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ ContentDefinitions { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentDefinitions : System.Collections.IDictionary" Usage="System.Web.UI.Design.IContentResolutionService.ContentDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IContentResolutionService.GetContentDesignerState(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContentDesignerState (identifier As String) As ContentDesignerState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::ContentDesignerState GetContentDesignerState(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="abstract member GetContentDesignerState : string -&gt; System.Web.UI.Design.ContentDesignerState" Usage="iContentResolutionService.GetContentDesignerState identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IContentResolutionService.SetContentDesignerState(System.String,System.Web.UI.Design.ContentDesignerState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetContentDesignerState (identifier As String, state As ContentDesignerState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContentDesignerState(System::String ^ identifier, System::Web::UI::Design::ContentDesignerState state);" />
+      <MemberSignature Language="F#" Value="abstract member SetContentDesignerState : string * System.Web.UI.Design.ContentDesignerState -&gt; unit" Usage="iContentResolutionService.SetContentDesignerState (identifier, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

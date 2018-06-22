@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Transform" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Transform&#xA;Inherits GeneralTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transform abstract : System::Windows::Media::GeneralTransform" />
+  <TypeSignature Language="F#" Value="type Transform = class&#xA;    inherit GeneralTransform&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Transform ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Transform" Usage="transform.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Transform ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Transform" Usage="transform.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Transform.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Transform ^ Identity { System::Windows::Media::Transform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Windows.Media.Transform" Usage="System.Windows.Media.Transform.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Transform.Inverse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Inverse As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::GeneralTransform ^ Inverse { System::Windows::Media::GeneralTransform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inverse : System.Windows.Media.GeneralTransform" Usage="System.Windows.Media.Transform.Inverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Transform ^ Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Transform" Usage="System.Windows.Media.Transform.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Windows.Rect TransformBounds(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.TransformBounds(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Rect TransformBounds(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="override this.TransformBounds : System.Windows.Rect -&gt; System.Windows.Rect" Usage="transform.TransformBounds rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point, ByRef result As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Point inPoint, [Runtime::InteropServices::Out] System::Windows::Point % result);" />
+      <MemberSignature Language="F#" Value="override this.TryTransform : System.Windows.Point *  -&gt; bool" Usage="transform.TryTransform (inPoint, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Transform.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.Transform.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

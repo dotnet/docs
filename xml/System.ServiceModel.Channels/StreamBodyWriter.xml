@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamBodyWriter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamBodyWriter&#xA;Inherits BodyWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamBodyWriter abstract : System::ServiceModel::Channels::BodyWriter" />
+  <TypeSignature Language="F#" Value="type StreamBodyWriter = class&#xA;    inherit BodyWriter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamBodyWriter.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (isBuffered As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamBodyWriter(bool isBuffered);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.StreamBodyWriter : bool -&gt; System.ServiceModel.Channels.StreamBodyWriter" Usage="new System.ServiceModel.Channels.StreamBodyWriter isBuffered" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamBodyWriter.OnCreateBufferedCopy(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateBufferedCopy (maxBufferSize As Integer) As BodyWriter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::BodyWriter ^ OnCreateBufferedCopy(int maxBufferSize);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateBufferedCopy : int -&gt; System.ServiceModel.Channels.BodyWriter" Usage="streamBodyWriter.OnCreateBufferedCopy maxBufferSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteBodyContents(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamBodyWriter.OnWriteBodyContents(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnWriteBodyContents(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="override this.OnWriteBodyContents : System.IO.Stream -&gt; unit" Usage="streamBodyWriter.OnWriteBodyContents stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamBodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWriteBodyContents (writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.OnWriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="streamBodyWriter.OnWriteBodyContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

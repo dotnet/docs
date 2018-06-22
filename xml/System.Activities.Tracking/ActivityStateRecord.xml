@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.ActivityStateRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityStateRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityStateRecord sealed : System::Activities::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type ActivityStateRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.ActivityStateRecord.#ctor(System.Guid,System.Int64,System.Activities.Tracking.ActivityInfo,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activity As ActivityInfo, state As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityStateRecord(Guid instanceId, long recordNumber, System::Activities::Tracking::ActivityInfo ^ activity, System::String ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.ActivityStateRecord : Guid * int64 * System.Activities.Tracking.ActivityInfo * string -&gt; System.Activities.Tracking.ActivityStateRecord" Usage="new System.Activities.Tracking.ActivityStateRecord (instanceId, recordNumber, activity, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.ActivityStateRecord.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As ActivityInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ActivityInfo ^ Activity { System::Activities::Tracking::ActivityInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Activities.Tracking.ActivityInfo" Usage="System.Activities.Tracking.ActivityStateRecord.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.ActivityStateRecord.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Arguments { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.Tracking.ActivityStateRecord.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.ActivityStateRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="activityStateRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.ActivityStateRecord.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : string" Usage="System.Activities.Tracking.ActivityStateRecord.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.ActivityStateRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activityStateRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.ActivityStateRecord.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Variables { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.Tracking.ActivityStateRecord.Variables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCommand" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventCommand" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventCommand" />
+  <TypeSignature Language="F#" Value="type EventCommand = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Disable" />
       <MemberSignature Language="VB.NET" Value="Disable" />
       <MemberSignature Language="C++ CLI" Value="Disable" />
+      <MemberSignature Language="F#" Value="Disable = -3" Usage="System.Diagnostics.Tracing.EventCommand.Disable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Enable" />
       <MemberSignature Language="VB.NET" Value="Enable" />
       <MemberSignature Language="C++ CLI" Value="Enable" />
+      <MemberSignature Language="F#" Value="Enable = -2" Usage="System.Diagnostics.Tracing.EventCommand.Enable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.SendManifest" />
       <MemberSignature Language="VB.NET" Value="SendManifest" />
       <MemberSignature Language="C++ CLI" Value="SendManifest" />
+      <MemberSignature Language="F#" Value="SendManifest = -1" Usage="System.Diagnostics.Tracing.EventCommand.SendManifest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 0" Usage="System.Diagnostics.Tracing.EventCommand.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

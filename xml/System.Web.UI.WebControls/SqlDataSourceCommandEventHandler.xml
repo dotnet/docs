@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SqlDataSourceCommandEventHandler(sender As Object, e As SqlDataSourceCommandEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SqlDataSourceCommandEventHandler(System::Object ^ sender, SqlDataSourceCommandEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceCommandEventHandler = delegate of obj * SqlDataSourceCommandEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

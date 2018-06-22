@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ButtonBase.ButtonBaseAccessibleObject&#xA;Inherits Control.ControlAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ButtonBase::ButtonBaseAccessibleObject : System::Windows::Forms::Control::ControlAccessibleObject" />
+  <TypeSignature Language="F#" Value="type ButtonBase.ButtonBaseAccessibleObject = class&#xA;    inherit Control.ControlAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.#ctor(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ButtonBaseAccessibleObject(System::Windows::Forms::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject : System.Windows.Forms.Control -&gt; System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject" Usage="new System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="buttonBaseAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.ButtonBase.ButtonBaseAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCacheOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum BitmapCacheOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class BitmapCacheOption" />
+  <TypeSignature Language="F#" Value="type BitmapCacheOption = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Media.Imaging.BitmapCacheOption.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Windows.Media.Imaging.BitmapCacheOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand" />
       <MemberSignature Language="VB.NET" Value="OnDemand" />
       <MemberSignature Language="C++ CLI" Value="OnDemand" />
+      <MemberSignature Language="F#" Value="OnDemand = 0" Usage="System.Windows.Media.Imaging.BitmapCacheOption.OnDemand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" />
       <MemberSignature Language="VB.NET" Value="OnLoad" />
       <MemberSignature Language="C++ CLI" Value="OnLoad" />
+      <MemberSignature Language="F#" Value="OnLoad = 1" Usage="System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

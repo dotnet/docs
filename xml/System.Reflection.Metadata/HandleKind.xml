@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.HandleKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum HandleKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class HandleKind" />
+  <TypeSignature Language="F#" Value="type HandleKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.AssemblyDefinition" />
       <MemberSignature Language="VB.NET" Value="AssemblyDefinition" />
       <MemberSignature Language="C++ CLI" Value="AssemblyDefinition" />
+      <MemberSignature Language="F#" Value="AssemblyDefinition = 32" Usage="System.Reflection.Metadata.HandleKind.AssemblyDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.AssemblyFile" />
       <MemberSignature Language="VB.NET" Value="AssemblyFile" />
       <MemberSignature Language="C++ CLI" Value="AssemblyFile" />
+      <MemberSignature Language="F#" Value="AssemblyFile = 38" Usage="System.Reflection.Metadata.HandleKind.AssemblyFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.AssemblyReference" />
       <MemberSignature Language="VB.NET" Value="AssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="AssemblyReference" />
+      <MemberSignature Language="F#" Value="AssemblyReference = 35" Usage="System.Reflection.Metadata.HandleKind.AssemblyReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.Blob" />
       <MemberSignature Language="VB.NET" Value="Blob" />
       <MemberSignature Language="C++ CLI" Value="Blob" />
+      <MemberSignature Language="F#" Value="Blob = 113" Usage="System.Reflection.Metadata.HandleKind.Blob" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.Constant" />
       <MemberSignature Language="VB.NET" Value="Constant" />
       <MemberSignature Language="C++ CLI" Value="Constant" />
+      <MemberSignature Language="F#" Value="Constant = 11" Usage="System.Reflection.Metadata.HandleKind.Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.CustomAttribute" />
       <MemberSignature Language="VB.NET" Value="CustomAttribute" />
       <MemberSignature Language="C++ CLI" Value="CustomAttribute" />
+      <MemberSignature Language="F#" Value="CustomAttribute = 12" Usage="System.Reflection.Metadata.HandleKind.CustomAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.CustomDebugInformation" />
       <MemberSignature Language="VB.NET" Value="CustomDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="CustomDebugInformation" />
+      <MemberSignature Language="F#" Value="CustomDebugInformation = 55" Usage="System.Reflection.Metadata.HandleKind.CustomDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.DeclarativeSecurityAttribute" />
       <MemberSignature Language="VB.NET" Value="DeclarativeSecurityAttribute" />
       <MemberSignature Language="C++ CLI" Value="DeclarativeSecurityAttribute" />
+      <MemberSignature Language="F#" Value="DeclarativeSecurityAttribute = 14" Usage="System.Reflection.Metadata.HandleKind.DeclarativeSecurityAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 48" Usage="System.Reflection.Metadata.HandleKind.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.EventDefinition" />
       <MemberSignature Language="VB.NET" Value="EventDefinition" />
       <MemberSignature Language="C++ CLI" Value="EventDefinition" />
+      <MemberSignature Language="F#" Value="EventDefinition = 20" Usage="System.Reflection.Metadata.HandleKind.EventDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -245,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.ExportedType" />
       <MemberSignature Language="VB.NET" Value="ExportedType" />
       <MemberSignature Language="C++ CLI" Value="ExportedType" />
+      <MemberSignature Language="F#" Value="ExportedType = 39" Usage="System.Reflection.Metadata.HandleKind.ExportedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -267,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.FieldDefinition" />
       <MemberSignature Language="VB.NET" Value="FieldDefinition" />
       <MemberSignature Language="C++ CLI" Value="FieldDefinition" />
+      <MemberSignature Language="F#" Value="FieldDefinition = 4" Usage="System.Reflection.Metadata.HandleKind.FieldDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -289,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.GenericParameter" />
       <MemberSignature Language="VB.NET" Value="GenericParameter" />
       <MemberSignature Language="C++ CLI" Value="GenericParameter" />
+      <MemberSignature Language="F#" Value="GenericParameter = 42" Usage="System.Reflection.Metadata.HandleKind.GenericParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.GenericParameterConstraint" />
       <MemberSignature Language="VB.NET" Value="GenericParameterConstraint" />
       <MemberSignature Language="C++ CLI" Value="GenericParameterConstraint" />
+      <MemberSignature Language="F#" Value="GenericParameterConstraint = 44" Usage="System.Reflection.Metadata.HandleKind.GenericParameterConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -333,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.Guid" />
       <MemberSignature Language="VB.NET" Value="Guid" />
       <MemberSignature Language="C++ CLI" Value="Guid" />
+      <MemberSignature Language="F#" Value="Guid = 114" Usage="System.Reflection.Metadata.HandleKind.Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -355,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.ImportScope" />
       <MemberSignature Language="VB.NET" Value="ImportScope" />
       <MemberSignature Language="C++ CLI" Value="ImportScope" />
+      <MemberSignature Language="F#" Value="ImportScope = 53" Usage="System.Reflection.Metadata.HandleKind.ImportScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -377,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.InterfaceImplementation" />
       <MemberSignature Language="VB.NET" Value="InterfaceImplementation" />
       <MemberSignature Language="C++ CLI" Value="InterfaceImplementation" />
+      <MemberSignature Language="F#" Value="InterfaceImplementation = 9" Usage="System.Reflection.Metadata.HandleKind.InterfaceImplementation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -399,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.LocalConstant" />
       <MemberSignature Language="VB.NET" Value="LocalConstant" />
       <MemberSignature Language="C++ CLI" Value="LocalConstant" />
+      <MemberSignature Language="F#" Value="LocalConstant = 52" Usage="System.Reflection.Metadata.HandleKind.LocalConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -421,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.LocalScope" />
       <MemberSignature Language="VB.NET" Value="LocalScope" />
       <MemberSignature Language="C++ CLI" Value="LocalScope" />
+      <MemberSignature Language="F#" Value="LocalScope = 50" Usage="System.Reflection.Metadata.HandleKind.LocalScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -443,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.LocalVariable" />
       <MemberSignature Language="VB.NET" Value="LocalVariable" />
       <MemberSignature Language="C++ CLI" Value="LocalVariable" />
+      <MemberSignature Language="F#" Value="LocalVariable = 51" Usage="System.Reflection.Metadata.HandleKind.LocalVariable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -465,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.ManifestResource" />
       <MemberSignature Language="VB.NET" Value="ManifestResource" />
       <MemberSignature Language="C++ CLI" Value="ManifestResource" />
+      <MemberSignature Language="F#" Value="ManifestResource = 40" Usage="System.Reflection.Metadata.HandleKind.ManifestResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -487,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.MemberReference" />
       <MemberSignature Language="VB.NET" Value="MemberReference" />
       <MemberSignature Language="C++ CLI" Value="MemberReference" />
+      <MemberSignature Language="F#" Value="MemberReference = 10" Usage="System.Reflection.Metadata.HandleKind.MemberReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -509,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.MethodDebugInformation" />
       <MemberSignature Language="VB.NET" Value="MethodDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="MethodDebugInformation" />
+      <MemberSignature Language="F#" Value="MethodDebugInformation = 49" Usage="System.Reflection.Metadata.HandleKind.MethodDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -531,6 +555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.MethodDefinition" />
       <MemberSignature Language="VB.NET" Value="MethodDefinition" />
       <MemberSignature Language="C++ CLI" Value="MethodDefinition" />
+      <MemberSignature Language="F#" Value="MethodDefinition = 6" Usage="System.Reflection.Metadata.HandleKind.MethodDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -553,6 +578,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.MethodImplementation" />
       <MemberSignature Language="VB.NET" Value="MethodImplementation" />
       <MemberSignature Language="C++ CLI" Value="MethodImplementation" />
+      <MemberSignature Language="F#" Value="MethodImplementation = 25" Usage="System.Reflection.Metadata.HandleKind.MethodImplementation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -575,6 +601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.MethodSpecification" />
       <MemberSignature Language="VB.NET" Value="MethodSpecification" />
       <MemberSignature Language="C++ CLI" Value="MethodSpecification" />
+      <MemberSignature Language="F#" Value="MethodSpecification = 43" Usage="System.Reflection.Metadata.HandleKind.MethodSpecification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -597,6 +624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.ModuleDefinition" />
       <MemberSignature Language="VB.NET" Value="ModuleDefinition" />
       <MemberSignature Language="C++ CLI" Value="ModuleDefinition" />
+      <MemberSignature Language="F#" Value="ModuleDefinition = 0" Usage="System.Reflection.Metadata.HandleKind.ModuleDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -619,6 +647,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.ModuleReference" />
       <MemberSignature Language="VB.NET" Value="ModuleReference" />
       <MemberSignature Language="C++ CLI" Value="ModuleReference" />
+      <MemberSignature Language="F#" Value="ModuleReference = 26" Usage="System.Reflection.Metadata.HandleKind.ModuleReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -641,6 +670,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.NamespaceDefinition" />
       <MemberSignature Language="VB.NET" Value="NamespaceDefinition" />
       <MemberSignature Language="C++ CLI" Value="NamespaceDefinition" />
+      <MemberSignature Language="F#" Value="NamespaceDefinition = 124" Usage="System.Reflection.Metadata.HandleKind.NamespaceDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -663,6 +693,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.Parameter" />
       <MemberSignature Language="VB.NET" Value="Parameter" />
       <MemberSignature Language="C++ CLI" Value="Parameter" />
+      <MemberSignature Language="F#" Value="Parameter = 8" Usage="System.Reflection.Metadata.HandleKind.Parameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -685,6 +716,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.PropertyDefinition" />
       <MemberSignature Language="VB.NET" Value="PropertyDefinition" />
       <MemberSignature Language="C++ CLI" Value="PropertyDefinition" />
+      <MemberSignature Language="F#" Value="PropertyDefinition = 23" Usage="System.Reflection.Metadata.HandleKind.PropertyDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -707,6 +739,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.StandaloneSignature" />
       <MemberSignature Language="VB.NET" Value="StandaloneSignature" />
       <MemberSignature Language="C++ CLI" Value="StandaloneSignature" />
+      <MemberSignature Language="F#" Value="StandaloneSignature = 17" Usage="System.Reflection.Metadata.HandleKind.StandaloneSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -729,6 +762,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 120" Usage="System.Reflection.Metadata.HandleKind.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -751,6 +785,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.TypeDefinition" />
       <MemberSignature Language="VB.NET" Value="TypeDefinition" />
       <MemberSignature Language="C++ CLI" Value="TypeDefinition" />
+      <MemberSignature Language="F#" Value="TypeDefinition = 2" Usage="System.Reflection.Metadata.HandleKind.TypeDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -773,6 +808,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.TypeReference" />
       <MemberSignature Language="VB.NET" Value="TypeReference" />
       <MemberSignature Language="C++ CLI" Value="TypeReference" />
+      <MemberSignature Language="F#" Value="TypeReference = 1" Usage="System.Reflection.Metadata.HandleKind.TypeReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -795,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.TypeSpecification" />
       <MemberSignature Language="VB.NET" Value="TypeSpecification" />
       <MemberSignature Language="C++ CLI" Value="TypeSpecification" />
+      <MemberSignature Language="F#" Value="TypeSpecification = 27" Usage="System.Reflection.Metadata.HandleKind.TypeSpecification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -817,6 +854,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.HandleKind.UserString" />
       <MemberSignature Language="VB.NET" Value="UserString" />
       <MemberSignature Language="C++ CLI" Value="UserString" />
+      <MemberSignature Language="F#" Value="UserString = 112" Usage="System.Reflection.Metadata.HandleKind.UserString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

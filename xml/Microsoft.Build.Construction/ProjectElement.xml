@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectElement abstract" />
+  <TypeSignature Language="F#" Value="type ProjectElement = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.AllParents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllParents As IEnumerable(Of ProjectElementContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Construction::ProjectElementContainer ^&gt; ^ AllParents { System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Construction::ProjectElementContainer ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllParents : seq&lt;Microsoft.Build.Construction.ProjectElementContainer&gt;" Usage="Microsoft.Build.Construction.ProjectElement.AllParents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.Construction.ProjectElement.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectElement.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.ContainingProject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingProject As ProjectRootElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectRootElement ^ ContainingProject { Microsoft::Build::Construction::ProjectRootElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingProject : Microsoft.Build.Construction.ProjectRootElement" Usage="Microsoft.Build.Construction.ProjectElement.ContainingProject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Microsoft.Build.Construction.ProjectElement.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.LabelLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabelLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ LabelLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LabelLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectElement.LabelLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectElement.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.NextSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As ProjectElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectElement ^ NextSibling { Microsoft::Build::Construction::ProjectElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : Microsoft.Build.Construction.ProjectElement" Usage="Microsoft.Build.Construction.ProjectElement.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ProjectElementContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectElementContainer ^ Parent { Microsoft::Build::Construction::ProjectElementContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Build.Construction.ProjectElementContainer" Usage="Microsoft.Build.Construction.ProjectElement.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectElement.PreviousSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSibling As ProjectElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectElement ^ PreviousSibling { Microsoft::Build::Construction::ProjectElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousSibling : Microsoft.Build.Construction.ProjectElement" Usage="Microsoft.Build.Construction.ProjectElement.PreviousSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

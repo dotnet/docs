@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.IReceiveMessageCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReceiveMessageCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IReceiveMessageCallback" />
+  <TypeSignature Language="F#" Value="type IReceiveMessageCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnReceiveMessage(class System.ServiceModel.OperationContext operationContext, class System.Activities.ExecutionProperties activityExecutionProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage(System.ServiceModel.OperationContext,System.Activities.ExecutionProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnReceiveMessage(System::ServiceModel::OperationContext ^ operationContext, System::Activities::ExecutionProperties ^ activityExecutionProperties);" />
+      <MemberSignature Language="F#" Value="abstract member OnReceiveMessage : System.ServiceModel.OperationContext * System.Activities.ExecutionProperties -&gt; unit" Usage="iReceiveMessageCallback.OnReceiveMessage (operationContext, activityExecutionProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

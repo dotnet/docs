@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuEventArgs&#xA;Inherits CommandEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuEventArgs sealed : System::Web::UI::WebControls::CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type MenuEventArgs = class&#xA;    inherit CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuEventArgs.#ctor(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuEventArgs(System::Web::UI::WebControls::MenuItem ^ item);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuEventArgs : System.Web.UI.WebControls.MenuItem -&gt; System.Web.UI.WebControls.MenuEventArgs" Usage="new System.Web.UI.WebControls.MenuEventArgs item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuEventArgs.#ctor(System.Web.UI.WebControls.MenuItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As MenuItem, commandSource As Object, originalArgs As CommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuEventArgs(System::Web::UI::WebControls::MenuItem ^ item, System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuEventArgs : System.Web.UI.WebControls.MenuItem * obj * System.Web.UI.WebControls.CommandEventArgs -&gt; System.Web.UI.WebControls.MenuEventArgs" Usage="new System.Web.UI.WebControls.MenuEventArgs (item, commandSource, originalArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItem ^ Item { System::Web::UI::WebControls::MenuItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.MenuItem" Usage="System.Web.UI.WebControls.MenuEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

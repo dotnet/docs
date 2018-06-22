@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintPageEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PrintPageEventHandler(sender As Object, e As PrintPageEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PrintPageEventHandler(System::Object ^ sender, PrintPageEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PrintPageEventHandler = delegate of obj * PrintPageEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

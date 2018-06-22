@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartElementOutline" />
   <TypeSignature Language="VB.NET" Value="Public Class ChartElementOutline&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartElementOutline : IDisposable" />
+  <TypeSignature Language="F#" Value="type ChartElementOutline = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="chartElementOutline.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="chartElementOutline.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Markers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Markers As ReadOnlyCollection(Of PointF)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::PointF&gt; ^ Markers { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::PointF&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Markers : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.PointF&gt;" Usage="System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Markers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.OutlinePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutlinePath As GraphicsPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::GraphicsPath ^ OutlinePath { System::Drawing::Drawing2D::GraphicsPath ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutlinePath : System.Drawing.Drawing2D.GraphicsPath" Usage="System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.OutlinePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

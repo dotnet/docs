@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelExecutionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParallelExecutionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParallelExecutionMode" />
+  <TypeSignature Language="F#" Value="type ParallelExecutionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Linq.ParallelExecutionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.ForceParallelism" />
       <MemberSignature Language="VB.NET" Value="ForceParallelism" />
       <MemberSignature Language="C++ CLI" Value="ForceParallelism" />
+      <MemberSignature Language="F#" Value="ForceParallelism = 1" Usage="System.Linq.ParallelExecutionMode.ForceParallelism" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>

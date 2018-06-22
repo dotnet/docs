@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IAnonymousUriPrefixMatcher" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAnonymousUriPrefixMatcher" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAnonymousUriPrefixMatcher" />
+  <TypeSignature Language="F#" Value="type IAnonymousUriPrefixMatcher = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IAnonymousUriPrefixMatcher.Register(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register (anonymousUriPrefix As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register(Uri ^ anonymousUriPrefix);" />
+      <MemberSignature Language="F#" Value="abstract member Register : Uri -&gt; unit" Usage="iAnonymousUriPrefixMatcher.Register anonymousUriPrefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

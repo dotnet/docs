@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RegisterResponseInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RegisterResponseInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegisterResponseInfo" />
+  <TypeSignature Language="F#" Value="type RegisterResponseInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RegisterResponseInfo.#ctor(System.Guid,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (registrationId As Guid, registrationLifetime As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegisterResponseInfo(Guid registrationId, TimeSpan registrationLifetime);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.RegisterResponseInfo : Guid * TimeSpan -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="new System.ServiceModel.PeerResolvers.RegisterResponseInfo (registrationId, registrationLifetime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RegisterResponseInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
+      <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="registerResponseInfo.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationId" />
       <MemberSignature Language="VB.NET" Value="Public Property RegistrationId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid RegistrationId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.RegistrationId : Guid with get, set" Usage="System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationLifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property RegistrationLifetime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RegistrationLifetime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RegistrationLifetime : TimeSpan with get, set" Usage="System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationLifetime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.SettingsSavedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsSavedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsSavedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SettingsSavedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.SettingsSavedEventArgs.#ctor(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (failedSettingsList As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsSavedEventArgs(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ failedSettingsList);" />
+      <MemberSignature Language="F#" Value="new System.Web.ClientServices.Providers.SettingsSavedEventArgs : seq&lt;string&gt; -&gt; System.Web.ClientServices.Providers.SettingsSavedEventArgs" Usage="new System.Web.ClientServices.Providers.SettingsSavedEventArgs failedSettingsList" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FailedSettingsList As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ FailedSettingsList { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FailedSettingsList : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerEndPointCollection&#xA;Inherits Collection(Of PeerEndPoint)&#xA;Implements IEquatable(Of PeerEndPointCollection)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerEndPointCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::Collaboration::PeerEndPoint ^&gt;, IEquatable&lt;System::Net::PeerToPeer::Collaboration::PeerEndPointCollection ^&gt;" />
+  <TypeSignature Language="F#" Value="type PeerEndPointCollection = class&#xA;    inherit Collection&lt;PeerEndPoint&gt;&#xA;    interface IEquatable&lt;PeerEndPointCollection&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.Equals(System.Net.PeerToPeer.Collaboration.PeerEndPointCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PeerEndPointCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::PeerToPeer::Collaboration::PeerEndPointCollection ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.PeerToPeer.Collaboration.PeerEndPointCollection -&gt; bool" Usage="peerEndPointCollection.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.Collaboration.PeerEndPoint -&gt; unit" Usage="peerEndPointCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.Collaboration.PeerEndPoint -&gt; unit" Usage="peerEndPointCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerEndPointCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

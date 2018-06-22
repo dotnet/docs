@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebAuthenticationSuccessAuditEvent&#xA;Inherits WebSuccessAuditEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebAuthenticationSuccessAuditEvent : System::Web::Management::WebSuccessAuditEvent" />
+  <TypeSignature Language="F#" Value="type WebAuthenticationSuccessAuditEvent = class&#xA;    inherit WebSuccessAuditEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuthenticationSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, nameToAuthenticate As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuthenticationSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, System::String ^ nameToAuthenticate);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuthenticationSuccessAuditEvent : string * obj * int * string -&gt; System.Web.Management.WebAuthenticationSuccessAuditEvent" Usage="new System.Web.Management.WebAuthenticationSuccessAuditEvent (message, eventSource, eventCode, nameToAuthenticate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuthenticationSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer, nameToAuthenticate As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuthenticationSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, System::String ^ nameToAuthenticate);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuthenticationSuccessAuditEvent : string * obj * int * int * string -&gt; System.Web.Management.WebAuthenticationSuccessAuditEvent" Usage="new System.Web.Management.WebAuthenticationSuccessAuditEvent (message, eventSource, eventCode, eventDetailCode, nameToAuthenticate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebAuthenticationSuccessAuditEvent.NameToAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameToAuthenticate As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameToAuthenticate { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameToAuthenticate : string" Usage="System.Web.Management.WebAuthenticationSuccessAuditEvent.NameToAuthenticate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

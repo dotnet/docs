@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IObservable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObservable(Of Out T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IObservable" />
+  <TypeSignature Language="F#" Value="type IObservable&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.IObservable`1.Subscribe(System.IObserver{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Subscribe (observer As IObserver(Of Out T)) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ Subscribe(IObserver&lt;T&gt; ^ observer);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;'T&gt; -&gt; IDisposable" Usage="iObservable.Subscribe observer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

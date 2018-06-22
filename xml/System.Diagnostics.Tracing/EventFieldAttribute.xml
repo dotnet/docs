@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventFieldAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class EventFieldAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventFieldAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type EventFieldAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventFieldAttribute.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As EventFieldFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventFieldFormat Format { System::Diagnostics::Tracing::EventFieldFormat get(); void set(System::Diagnostics::Tracing::EventFieldFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : System.Diagnostics.Tracing.EventFieldFormat with get, set" Usage="System.Diagnostics.Tracing.EventFieldAttribute.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventFieldAttribute.Tags" />
       <MemberSignature Language="VB.NET" Value="Public Property Tags As EventFieldTags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventFieldTags Tags { System::Diagnostics::Tracing::EventFieldTags get(); void set(System::Diagnostics::Tracing::EventFieldTags value); };" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Diagnostics.Tracing.EventFieldTags with get, set" Usage="System.Diagnostics.Tracing.EventFieldAttribute.Tags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

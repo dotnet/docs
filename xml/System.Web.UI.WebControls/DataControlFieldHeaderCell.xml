@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldHeaderCell" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlFieldHeaderCell&#xA;Inherits DataControlFieldCell" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlFieldHeaderCell : System::Web::UI::WebControls::DataControlFieldCell" />
+  <TypeSignature Language="F#" Value="type DataControlFieldHeaderCell = class&#xA;    inherit DataControlFieldCell" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldHeaderCell.#ctor(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (containingField As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlFieldHeaderCell(System::Web::UI::WebControls::DataControlField ^ containingField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataControlFieldHeaderCell : System.Web.UI.WebControls.DataControlField -&gt; System.Web.UI.WebControls.DataControlFieldHeaderCell" Usage="new System.Web.UI.WebControls.DataControlFieldHeaderCell containingField" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AbbreviatedText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AbbreviatedText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AbbreviatedText : string with get, set" Usage="System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldHeaderCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataControlFieldHeaderCell.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Scope As TableHeaderScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableHeaderScope Scope { System::Web::UI::WebControls::TableHeaderScope get(); void set(System::Web::UI::WebControls::TableHeaderScope value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Web.UI.WebControls.TableHeaderScope with get, set" Usage="System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

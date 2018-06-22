@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DesignerAdapterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerAdapterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerAdapterAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignerAdapterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DesignerAdapterAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (adapterTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAdapterAttribute(System::String ^ adapterTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.DesignerAdapterAttribute : string -&gt; System.Web.UI.MobileControls.DesignerAdapterAttribute" Usage="new System.Web.UI.MobileControls.DesignerAdapterAttribute adapterTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DesignerAdapterAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (adapterType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAdapterAttribute(Type ^ adapterType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.DesignerAdapterAttribute : Type -&gt; System.Web.UI.MobileControls.DesignerAdapterAttribute" Usage="new System.Web.UI.MobileControls.DesignerAdapterAttribute adapterType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DesignerAdapterAttribute.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Web.UI.MobileControls.DesignerAdapterAttribute.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

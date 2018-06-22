@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpRequestCachePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpRequestCachePolicy&#xA;Inherits RequestCachePolicy" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestCachePolicy : System::Net::Cache::RequestCachePolicy" />
+  <TypeSignature Language="F#" Value="type HttpRequestCachePolicy = class&#xA;    inherit RequestCachePolicy" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheSyncDate As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(DateTime cacheSyncDate);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : DateTime -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy cacheSyncDate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpRequestCacheLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As HttpRequestCacheLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpRequestCacheLevel level);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpRequestCacheLevel -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy level" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, ageOrFreshOrStale As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan ageOrFreshOrStale);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, ageOrFreshOrStale)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -248,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, maxAge As TimeSpan, freshOrStale As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan * TimeSpan -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, maxAge, freshOrStale)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -302,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan,System.TimeSpan,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, maxAge As TimeSpan, freshOrStale As TimeSpan, cacheSyncDate As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale, DateTime cacheSyncDate);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan * TimeSpan * DateTime -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, maxAge, freshOrStale, cacheSyncDate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheSyncDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CacheSyncDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheSyncDate : DateTime" Usage="System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As HttpRequestCacheLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::HttpRequestCacheLevel Level { System::Net::Cache::HttpRequestCacheLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Net.Cache.HttpRequestCacheLevel" Usage="System.Net.Cache.HttpRequestCachePolicy.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MaxAge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxAge As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxAge { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxAge : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MaxAge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -492,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MaxStale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxStale As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxStale { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxStale : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MaxStale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MinFresh" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinFresh As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinFresh { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinFresh : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MinFresh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -582,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="httpRequestCachePolicy.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

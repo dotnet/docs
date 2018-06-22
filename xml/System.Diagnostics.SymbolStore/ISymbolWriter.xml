@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolWriter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISymbolWriter" />
+  <TypeSignature Language="F#" Value="type ISymbolWriter = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iSymbolWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseMethod" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseMethod ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseMethod();" />
+      <MemberSignature Language="F#" Value="abstract member CloseMethod : unit -&gt; unit" Usage="iSymbolWriter.CloseMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseNamespace ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseNamespace();" />
+      <MemberSignature Language="F#" Value="abstract member CloseNamespace : unit -&gt; unit" Usage="iSymbolWriter.CloseNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseScope (endOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseScope(int endOffset);" />
+      <MemberSignature Language="F#" Value="abstract member CloseScope : int -&gt; unit" Usage="iSymbolWriter.CloseScope endOffset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDocument (url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocumentWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ DefineDocument(System::String ^ url, Guid language, Guid languageVendor, Guid documentType);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocumentWriter" Usage="iSymbolWriter.DefineDocument (url, language, languageVendor, documentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineField (parent As SymbolToken, name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineField(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
+      <MemberSignature Language="F#" Value="abstract member DefineField : System.Diagnostics.SymbolStore.SymbolToken * string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="iSymbolWriter.DefineField (parent, name, attributes, signature, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineGlobalVariable (name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineGlobalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
+      <MemberSignature Language="F#" Value="abstract member DefineGlobalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="iSymbolWriter.DefineGlobalVariable (name, attributes, signature, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -329,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineLocalVariable (name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer, startOffset As Integer, endOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineLocalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset);" />
+      <MemberSignature Language="F#" Value="abstract member DefineLocalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int * int * int -&gt; unit" Usage="iSymbolWriter.DefineLocalVariable (name, attributes, signature, addrKind, addr1, addr2, addr3, startOffset, endOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineParameter (name As String, attributes As ParameterAttributes, sequence As Integer, addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineParameter(System::String ^ name, System::Reflection::ParameterAttributes attributes, int sequence, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
+      <MemberSignature Language="F#" Value="abstract member DefineParameter : string * System.Reflection.ParameterAttributes * int * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="iSymbolWriter.DefineParameter (name, attributes, sequence, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -439,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub DefineSequencePoints (document As ISymbolDocumentWriter, offsets As Integer(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefineSequencePoints(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ document, cli::array &lt;int&gt; ^ offsets, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns, cli::array &lt;int&gt; ^ endLines, cli::array &lt;int&gt; ^ endColumns);" />
+      <MemberSignature Language="F#" Value="abstract member DefineSequencePoints : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int[] * int[] * int[] * int[] * int[] -&gt; unit" Usage="iSymbolWriter.DefineSequencePoints (document, offsets, lines, columns, endLines, endColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -489,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.Initialize(System.IntPtr,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (emitter As IntPtr, filename As String, fFullBuild As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(IntPtr emitter, System::String ^ filename, bool fFullBuild);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : nativeint * string * bool -&gt; unit" Usage="iSymbolWriter.Initialize (emitter, filename, fFullBuild)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -534,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenMethod (method As SymbolToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenMethod(System::Diagnostics::SymbolStore::SymbolToken method);" />
+      <MemberSignature Language="F#" Value="abstract member OpenMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit" Usage="iSymbolWriter.OpenMethod method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -574,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenNamespace (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenNamespace(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member OpenNamespace : string -&gt; unit" Usage="iSymbolWriter.OpenNamespace name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -614,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenScope(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenScope (startOffset As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int OpenScope(int startOffset);" />
+      <MemberSignature Language="F#" Value="abstract member OpenScope : int -&gt; int" Usage="iSymbolWriter.OpenScope startOffset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -657,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMethodSourceRange (startDoc As ISymbolDocumentWriter, startLine As Integer, startColumn As Integer, endDoc As ISymbolDocumentWriter, endLine As Integer, endColumn As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMethodSourceRange(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ startDoc, int startLine, int startColumn, System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ endDoc, int endLine, int endColumn);" />
+      <MemberSignature Language="F#" Value="abstract member SetMethodSourceRange : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int * System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int -&gt; unit" Usage="iSymbolWriter.SetMethodSourceRange (startDoc, startLine, startColumn, endDoc, endLine, endColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -700,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetScopeRange (scopeID As Integer, startOffset As Integer, endOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetScopeRange(int scopeID, int startOffset, int endOffset);" />
+      <MemberSignature Language="F#" Value="abstract member SetScopeRange : int * int * int -&gt; unit" Usage="iSymbolWriter.SetScopeRange (scopeID, startOffset, endOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -737,6 +754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSymAttribute (parent As SymbolToken, name As String, data As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSymAttribute(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, cli::array &lt;System::Byte&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string * byte[] -&gt; unit" Usage="iSymbolWriter.SetSymAttribute (parent, name, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -781,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.SetUnderlyingWriter(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUnderlyingWriter (underlyingWriter As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetUnderlyingWriter(IntPtr underlyingWriter);" />
+      <MemberSignature Language="F#" Value="abstract member SetUnderlyingWriter : nativeint -&gt; unit" Usage="iSymbolWriter.SetUnderlyingWriter underlyingWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -821,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUserEntryPoint (entryMethod As SymbolToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetUserEntryPoint(System::Diagnostics::SymbolStore::SymbolToken entryMethod);" />
+      <MemberSignature Language="F#" Value="abstract member SetUserEntryPoint : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit" Usage="iSymbolWriter.SetUserEntryPoint entryMethod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -861,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolWriter.UsingNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UsingNamespace (fullName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UsingNamespace(System::String ^ fullName);" />
+      <MemberSignature Language="F#" Value="abstract member UsingNamespace : string -&gt; unit" Usage="iSymbolWriter.UsingNamespace fullName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

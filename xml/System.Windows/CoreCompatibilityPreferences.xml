@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CoreCompatibilityPreferences" />
   <TypeSignature Language="VB.NET" Value="Public Class CoreCompatibilityPreferences" />
   <TypeSignature Language="C++ CLI" Value="public ref class CoreCompatibilityPreferences abstract sealed" />
+  <TypeSignature Language="F#" Value="type CoreCompatibilityPreferences = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property EnableMultiMonitorDisplayClipping As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Nullable&lt;bool&gt; EnableMultiMonitorDisplayClipping { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableMultiMonitorDisplayClipping : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.CoreCompatibilityPreferences.IsAltKeyRequiredInAccessKeyDefaultScope" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property IsAltKeyRequiredInAccessKeyDefaultScope As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsAltKeyRequiredInAccessKeyDefaultScope { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAltKeyRequiredInAccessKeyDefaultScope : bool with get, set" Usage="System.Windows.CoreCompatibilityPreferences.IsAltKeyRequiredInAccessKeyDefaultScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

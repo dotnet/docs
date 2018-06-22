@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceCollisionException" />
   <TypeSignature Language="VB.NET" Value="Public Class InstanceCollisionException&#xA;Inherits InstancePersistenceCommandException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceCollisionException : System::Runtime::DurableInstancing::InstancePersistenceCommandException" />
+  <TypeSignature Language="F#" Value="type InstanceCollisionException = class&#xA;    inherit InstancePersistenceCommandException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCollisionException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : string -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceCollisionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCollisionException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : string * Exception -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.Xml.Linq.XName,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCollisionException(System::Xml::Linq::XName ^ commandName, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : System.Xml.Linq.XName * Guid -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException (commandName, instanceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCollisionException(System::Xml::Linq::XName ^ commandName, Guid instanceId, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : System.Xml.Linq.XName * Guid * Exception -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException (commandName, instanceId, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.Xml.Linq.XName,System.Guid,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCollisionException(System::Xml::Linq::XName ^ commandName, Guid instanceId, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCollisionException : System.Xml.Linq.XName * Guid * string * Exception -&gt; System.Runtime.DurableInstancing.InstanceCollisionException" Usage="new System.Runtime.DurableInstancing.InstanceCollisionException (commandName, instanceId, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

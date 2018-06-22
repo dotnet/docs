@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLocation" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationLocation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationLocation" />
+  <TypeSignature Language="F#" Value="type ConfigurationLocation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationLocation.OpenConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenConfiguration () As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::Configuration ^ OpenConfiguration();" />
+      <MemberSignature Language="F#" Value="member this.OpenConfiguration : unit -&gt; System.Configuration.Configuration" Usage="configurationLocation.OpenConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationLocation.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Configuration.ConfigurationLocation.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

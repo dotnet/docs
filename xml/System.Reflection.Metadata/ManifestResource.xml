@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ManifestResource" />
   <TypeSignature Language="VB.NET" Value="Public Structure ManifestResource" />
   <TypeSignature Language="C++ CLI" Value="public value class ManifestResource" />
+  <TypeSignature Language="F#" Value="type ManifestResource = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ManifestResource.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As ManifestResourceAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ManifestResourceAttributes Attributes { System::Reflection::ManifestResourceAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.ManifestResourceAttributes" Usage="System.Reflection.Metadata.ManifestResource.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ManifestResource.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="manifestResource.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ManifestResource.Implementation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Implementation As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Implementation { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.ManifestResource.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ManifestResource.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.ManifestResource.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ManifestResource.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Offset { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int64" Usage="System.Reflection.Metadata.ManifestResource.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

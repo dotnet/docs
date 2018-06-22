@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlowDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlowDirection" />
+  <TypeSignature Language="F#" Value="type FlowDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.BottomUp" />
       <MemberSignature Language="VB.NET" Value="BottomUp" />
       <MemberSignature Language="C++ CLI" Value="BottomUp" />
+      <MemberSignature Language="F#" Value="BottomUp = 3" Usage="System.Windows.Forms.FlowDirection.BottomUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.LeftToRight" />
       <MemberSignature Language="VB.NET" Value="LeftToRight" />
       <MemberSignature Language="C++ CLI" Value="LeftToRight" />
+      <MemberSignature Language="F#" Value="LeftToRight = 0" Usage="System.Windows.Forms.FlowDirection.LeftToRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 2" Usage="System.Windows.Forms.FlowDirection.RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.TopDown" />
       <MemberSignature Language="VB.NET" Value="TopDown" />
       <MemberSignature Language="C++ CLI" Value="TopDown" />
+      <MemberSignature Language="F#" Value="TopDown = 1" Usage="System.Windows.Forms.FlowDirection.TopDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

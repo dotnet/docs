@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalEnumerable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalEnumerable&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalEnumerable : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type IHierarchicalEnumerable = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHierarchyData (enumeratedItem As Object) As IHierarchyData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::IHierarchyData ^ GetHierarchyData(System::Object ^ enumeratedItem);" />
+      <MemberSignature Language="F#" Value="abstract member GetHierarchyData : obj -&gt; System.Web.UI.IHierarchyData" Usage="iHierarchicalEnumerable.GetHierarchyData enumeratedItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

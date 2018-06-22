@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PEBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class PEBuilder abstract" />
+  <TypeSignature Language="F#" Value="type PEBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.#ctor(System.Reflection.PortableExecutable.PEHeaderBuilder,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Metadata.Blob},System.Reflection.Metadata.BlobContentId})" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (header As PEHeaderBuilder, deterministicIdProvider As Func(Of IEnumerable(Of Blob), BlobContentId))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PEBuilder(System::Reflection::PortableExecutable::PEHeaderBuilder ^ header, Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Blob&gt; ^, System::Reflection::Metadata::BlobContentId&gt; ^ deterministicIdProvider);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.PEBuilder : System.Reflection.PortableExecutable.PEHeaderBuilder * Func&lt;seq&lt;System.Reflection.Metadata.Blob&gt;, System.Reflection.Metadata.BlobContentId&gt; -&gt; System.Reflection.PortableExecutable.PEBuilder" Usage="new System.Reflection.PortableExecutable.PEBuilder (header, deterministicIdProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.CreateSections" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateSections () As ImmutableArray(Of PEBuilder.Section)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Immutable::ImmutableArray&lt;System::Reflection::PortableExecutable::PEBuilder::Section&gt; CreateSections();" />
+      <MemberSignature Language="F#" Value="abstract member CreateSections : unit -&gt; System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder.Section&gt;" Usage="pEBuilder.CreateSections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.GetDirectories" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetDirectories () As PEDirectoriesBuilder" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Reflection::PortableExecutable::PEDirectoriesBuilder ^ GetDirectories();" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectories : unit -&gt; System.Reflection.PortableExecutable.PEDirectoriesBuilder" Usage="pEBuilder.GetDirectories " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.GetSections" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetSections () As ImmutableArray(Of PEBuilder.Section)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Reflection::PortableExecutable::PEBuilder::Section&gt; GetSections();" />
+      <MemberSignature Language="F#" Value="member this.GetSections : unit -&gt; System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder.Section&gt;" Usage="pEBuilder.GetSections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.Header" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As PEHeaderBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::PEHeaderBuilder ^ Header { System::Reflection::PortableExecutable::PEHeaderBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Header : System.Reflection.PortableExecutable.PEHeaderBuilder" Usage="System.Reflection.PortableExecutable.PEBuilder.Header" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.IdProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdProvider As Func(Of IEnumerable(Of Blob), BlobContentId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Blob&gt; ^, System::Reflection::Metadata::BlobContentId&gt; ^ IdProvider { Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Blob&gt; ^, System::Reflection::Metadata::BlobContentId&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdProvider : Func&lt;seq&lt;System.Reflection.Metadata.Blob&gt;, System.Reflection.Metadata.BlobContentId&gt;" Usage="System.Reflection.PortableExecutable.PEBuilder.IdProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.IsDeterministic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeterministic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeterministic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeterministic : bool" Usage="System.Reflection.PortableExecutable.PEBuilder.IsDeterministic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.Serialize(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Function Serialize (builder As BlobBuilder) As BlobContentId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobContentId Serialize(System::Reflection::Metadata::BlobBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.BlobContentId" Usage="pEBuilder.Serialize builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.SerializeSection(System.String,System.Reflection.PortableExecutable.SectionLocation)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function SerializeSection (name As String, location As SectionLocation) As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Reflection::Metadata::BlobBuilder ^ SerializeSection(System::String ^ name, System::Reflection::PortableExecutable::SectionLocation location);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeSection : string * System.Reflection.PortableExecutable.SectionLocation -&gt; System.Reflection.Metadata.BlobBuilder" Usage="pEBuilder.SerializeSection (name, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

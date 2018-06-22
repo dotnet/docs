@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PeerResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerResolver abstract" />
+  <TypeSignature Language="F#" Value="type PeerResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolver.CanShareReferrals" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CanShareReferrals As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CanShareReferrals { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanShareReferrals : bool" Usage="System.ServiceModel.PeerResolver.CanShareReferrals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.ServiceModel.EndpointAddress address, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.Description.ClientCredentials credentials, valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy referralPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolver.Initialize(System.ServiceModel.EndpointAddress,System.ServiceModel.Channels.Binding,System.ServiceModel.Description.ClientCredentials,System.ServiceModel.PeerResolvers.PeerReferralPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::ServiceModel::EndpointAddress ^ address, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::Description::ClientCredentials ^ credentials, System::ServiceModel::PeerResolvers::PeerReferralPolicy referralPolicy);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.ServiceModel.EndpointAddress * System.ServiceModel.Channels.Binding * System.ServiceModel.Description.ClientCredentials * System.ServiceModel.PeerResolvers.PeerReferralPolicy -&gt; unit&#xA;override this.Initialize : System.ServiceModel.EndpointAddress * System.ServiceModel.Channels.Binding * System.ServiceModel.Description.ClientCredentials * System.ServiceModel.PeerResolvers.PeerReferralPolicy -&gt; unit" Usage="peerResolver.Initialize (address, binding, credentials, referralPolicy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolver.Register(System.String,System.ServiceModel.PeerNodeAddress,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Register (meshId As String, nodeAddress As PeerNodeAddress, timeout As TimeSpan) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Register(System::String ^ meshId, System::ServiceModel::PeerNodeAddress ^ nodeAddress, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Register : string * System.ServiceModel.PeerNodeAddress * TimeSpan -&gt; obj" Usage="peerResolver.Register (meshId, nodeAddress, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolver.Resolve(System.String,System.Int32,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Resolve (meshId As String, maxAddresses As Integer, timeout As TimeSpan) As ReadOnlyCollection(Of PeerNodeAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ Resolve(System::String ^ meshId, int maxAddresses, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : string * int * TimeSpan -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.PeerNodeAddress&gt;" Usage="peerResolver.Resolve (meshId, maxAddresses, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolver.Unregister(System.Object,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Unregister (registrationId As Object, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Unregister(System::Object ^ registrationId, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : obj * TimeSpan -&gt; unit" Usage="peerResolver.Unregister (registrationId, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolver.Update(System.Object,System.ServiceModel.PeerNodeAddress,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Update (registrationId As Object, updatedNodeAddress As PeerNodeAddress, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Update(System::Object ^ registrationId, System::ServiceModel::PeerNodeAddress ^ updatedNodeAddress, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Update : obj * System.ServiceModel.PeerNodeAddress * TimeSpan -&gt; unit" Usage="peerResolver.Update (registrationId, updatedNodeAddress, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

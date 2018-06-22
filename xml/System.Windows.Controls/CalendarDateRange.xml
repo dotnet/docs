@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarDateRange" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CalendarDateRange&#xA;Implements INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class CalendarDateRange sealed : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type CalendarDateRange = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarDateRange.#ctor(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (day As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarDateRange(DateTime day);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.CalendarDateRange : DateTime -&gt; System.Windows.Controls.CalendarDateRange" Usage="new System.Windows.Controls.CalendarDateRange day" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarDateRange.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As DateTime, end As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarDateRange(DateTime start, DateTime end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.CalendarDateRange : DateTime * DateTime -&gt; System.Windows.Controls.CalendarDateRange" Usage="new System.Windows.Controls.CalendarDateRange (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CalendarDateRange.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.End : DateTime with get, set" Usage="System.Windows.Controls.CalendarDateRange.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.CalendarDateRange.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CalendarDateRange.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Start : DateTime with get, set" Usage="System.Windows.Controls.CalendarDateRange.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlBackgroundReader" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlBackgroundReader&#xA;Inherits XamlReader&#xA;Implements IXamlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlBackgroundReader : System::Xaml::XamlReader, System::Xaml::IXamlLineInfo" />
+  <TypeSignature Language="F#" Value="type XamlBackgroundReader = class&#xA;    inherit XamlReader&#xA;    interface IXamlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.#ctor(System.Xaml.XamlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (wrappedReader As XamlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlBackgroundReader(System::Xaml::XamlReader ^ wrappedReader);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlBackgroundReader : System.Xaml.XamlReader -&gt; System.Xaml.XamlBackgroundReader" Usage="new System.Xaml.XamlBackgroundReader wrappedReader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="xamlBackgroundReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLineInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLineInfo : bool" Usage="System.Xaml.XamlBackgroundReader.HasLineInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.IsEof" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEof As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEof { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEof : bool" Usage="System.Xaml.XamlBackgroundReader.IsEof" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xaml.XamlBackgroundReader.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xaml.XamlBackgroundReader.LinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Member" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Member As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Xaml.XamlMember" Usage="System.Xaml.XamlBackgroundReader.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As NamespaceDeclaration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : System.Xaml.NamespaceDeclaration" Usage="System.Xaml.XamlBackgroundReader.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XamlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xaml.XamlNodeType" Usage="System.Xaml.XamlBackgroundReader.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -234,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="xamlBackgroundReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -256,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlBackgroundReader.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -286,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.StartThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartThread();" />
+      <MemberSignature Language="F#" Value="member this.StartThread : unit -&gt; unit" Usage="xamlBackgroundReader.StartThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -314,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.StartThread(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartThread (threadName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartThread(System::String ^ threadName);" />
+      <MemberSignature Language="F#" Value="member this.StartThread : string -&gt; unit" Usage="xamlBackgroundReader.StartThread threadName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -338,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Xaml.XamlBackgroundReader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -358,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Xaml.XamlBackgroundReader.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

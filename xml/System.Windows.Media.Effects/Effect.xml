@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.Effect" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Effect&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Effect abstract : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type Effect = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.Effect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Effect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::Effect ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.Effect" Usage="effect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.Effect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Effect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::Effect ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.Effect" Usage="effect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.Effect.EffectMapping" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property EffectMapping As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Media::GeneralTransform ^ EffectMapping { System::Windows::Media::GeneralTransform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EffectMapping : System.Windows.Media.GeneralTransform" Usage="System.Windows.Media.Effects.Effect.EffectMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.Effect.ImplicitInput" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImplicitInput As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ ImplicitInput { System::Windows::Media::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImplicitInput : System.Windows.Media.Brush" Usage="System.Windows.Media.Effects.Effect.ImplicitInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceInsertEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceInsertEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceInsertEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@ protected void LinqDataSource_Inserting(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceInsertEventArgs(System::Object ^ newObject);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceInsertEventArgs : obj -&gt; System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceInsertEventArgs newObject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -104,6 +106,7 @@ protected void LinqDataSource_Inserting(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exception As LinqDataSourceValidationException)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceInsertEventArgs(System::Web::UI::WebControls::LinqDataSourceValidationException ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceInsertEventArgs : System.Web.UI.WebControls.LinqDataSourceValidationException -&gt; System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceInsertEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -124,6 +127,7 @@ protected void LinqDataSource_Inserting(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As LinqDataSourceValidationException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::LinqDataSourceValidationException ^ Exception { System::Web::UI::WebControls::LinqDataSourceValidationException ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -187,6 +191,7 @@ protected void LinqDataSource_Inserting(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -251,6 +256,7 @@ protected void LinqDataSource_Inserting(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewObject : obj" Usage="System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IMultitargetHelperService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMultitargetHelperService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMultitargetHelperService" />
+  <TypeSignature Language="F#" Value="type IMultitargetHelperService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAssemblyQualifiedName(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMultitargetHelperService.GetAssemblyQualifiedName(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAssemblyQualifiedName(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetAssemblyQualifiedName : Type -&gt; string" Usage="iMultitargetHelperService.GetAssemblyQualifiedName type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

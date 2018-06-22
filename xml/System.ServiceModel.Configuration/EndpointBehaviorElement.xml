@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.EndpointBehaviorElement" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointBehaviorElement&#xA;Inherits NamedServiceModelExtensionCollectionElement(Of BehaviorExtensionElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointBehaviorElement : System::ServiceModel::Configuration::NamedServiceModelExtensionCollectionElement&lt;System::ServiceModel::Configuration::BehaviorExtensionElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type EndpointBehaviorElement = class&#xA;    inherit NamedServiceModelExtensionCollectionElement&lt;BehaviorExtensionElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointBehaviorElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointBehaviorElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.EndpointBehaviorElement : string -&gt; System.ServiceModel.Configuration.EndpointBehaviorElement" Usage="new System.ServiceModel.Configuration.EndpointBehaviorElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (element As BehaviorExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; unit" Usage="endpointBehaviorElement.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanAdd (element As BehaviorExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanAdd(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.CanAdd : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; bool" Usage="endpointBehaviorElement.CanAdd element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

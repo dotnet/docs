@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Proxies.ProxyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ProxyAttribute&#xA;Inherits Attribute&#xA;Implements IContextAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProxyAttribute : Attribute, System::Runtime::Remoting::Contexts::IContextAttribute" />
+  <TypeSignature Language="F#" Value="type ProxyAttribute = class&#xA;    inherit Attribute&#xA;    interface IContextAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstance (serverType As Type) As MarshalByRefObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual MarshalByRefObject ^ CreateInstance(Type ^ serverType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; MarshalByRefObject&#xA;override this.CreateInstance : Type -&gt; MarshalByRefObject" Usage="proxyAttribute.CreateInstance serverType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Proxies.RealProxy CreateProxy(class System.Runtime.Remoting.ObjRef objRef, class System.Type serverType, object serverObject, class System.Runtime.Remoting.Contexts.Context serverContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy(System.Runtime.Remoting.ObjRef,System.Type,System.Object,System.Runtime.Remoting.Contexts.Context)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Proxies::RealProxy ^ CreateProxy(System::Runtime::Remoting::ObjRef ^ objRef, Type ^ serverType, System::Object ^ serverObject, System::Runtime::Remoting::Contexts::Context ^ serverContext);" />
+      <MemberSignature Language="F#" Value="abstract member CreateProxy : System.Runtime.Remoting.ObjRef * Type * obj * System.Runtime.Remoting.Contexts.Context -&gt; System.Runtime.Remoting.Proxies.RealProxy&#xA;override this.CreateProxy : System.Runtime.Remoting.ObjRef * Type * obj * System.Runtime.Remoting.Contexts.Context -&gt; System.Runtime.Remoting.Proxies.RealProxy" Usage="proxyAttribute.CreateProxy (objRef, serverType, serverObject, serverContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.ProxyAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPropertiesForNewContext (msg As IConstructionCallMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPropertiesForNewContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit&#xA;override this.GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit" Usage="proxyAttribute.GetPropertiesForNewContext msg" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.ProxyAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsContextOK (ctx As Context, msg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsContextOK(System::Runtime::Remoting::Contexts::Context ^ ctx, System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool&#xA;override this.IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="proxyAttribute.IsContextOK (ctx, msg)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodImplAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodImplAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class MethodImplAttributes" />
+  <TypeSignature Language="F#" Value="type MethodImplAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.AggressiveInlining" />
       <MemberSignature Language="VB.NET" Value="AggressiveInlining" />
       <MemberSignature Language="C++ CLI" Value="AggressiveInlining" />
+      <MemberSignature Language="F#" Value="AggressiveInlining = 256" Usage="System.Reflection.MethodImplAttributes.AggressiveInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.CodeTypeMask" />
       <MemberSignature Language="VB.NET" Value="CodeTypeMask" />
       <MemberSignature Language="C++ CLI" Value="CodeTypeMask" />
+      <MemberSignature Language="F#" Value="CodeTypeMask = 3" Usage="System.Reflection.MethodImplAttributes.CodeTypeMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ForwardRef" />
       <MemberSignature Language="VB.NET" Value="ForwardRef" />
       <MemberSignature Language="C++ CLI" Value="ForwardRef" />
+      <MemberSignature Language="F#" Value="ForwardRef = 16" Usage="System.Reflection.MethodImplAttributes.ForwardRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.IL" />
       <MemberSignature Language="VB.NET" Value="IL" />
       <MemberSignature Language="C++ CLI" Value="IL" />
+      <MemberSignature Language="F#" Value="IL = 0" Usage="System.Reflection.MethodImplAttributes.IL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.InternalCall" />
       <MemberSignature Language="VB.NET" Value="InternalCall" />
       <MemberSignature Language="C++ CLI" Value="InternalCall" />
+      <MemberSignature Language="F#" Value="InternalCall = 4096" Usage="System.Reflection.MethodImplAttributes.InternalCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Managed" />
       <MemberSignature Language="VB.NET" Value="Managed" />
       <MemberSignature Language="C++ CLI" Value="Managed" />
+      <MemberSignature Language="F#" Value="Managed = 0" Usage="System.Reflection.MethodImplAttributes.Managed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ManagedMask" />
       <MemberSignature Language="VB.NET" Value="ManagedMask" />
       <MemberSignature Language="C++ CLI" Value="ManagedMask" />
+      <MemberSignature Language="F#" Value="ManagedMask = 4" Usage="System.Reflection.MethodImplAttributes.ManagedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.MaxMethodImplVal" />
       <MemberSignature Language="VB.NET" Value="MaxMethodImplVal" />
       <MemberSignature Language="C++ CLI" Value="MaxMethodImplVal" />
+      <MemberSignature Language="F#" Value="MaxMethodImplVal = 65535" Usage="System.Reflection.MethodImplAttributes.MaxMethodImplVal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Reflection.MethodImplAttributes.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoInlining" />
       <MemberSignature Language="VB.NET" Value="NoInlining" />
       <MemberSignature Language="C++ CLI" Value="NoInlining" />
+      <MemberSignature Language="F#" Value="NoInlining = 8" Usage="System.Reflection.MethodImplAttributes.NoInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -430,6 +441,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoOptimization" />
       <MemberSignature Language="VB.NET" Value="NoOptimization" />
       <MemberSignature Language="C++ CLI" Value="NoOptimization" />
+      <MemberSignature Language="F#" Value="NoOptimization = 64" Usage="System.Reflection.MethodImplAttributes.NoOptimization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -464,6 +476,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.OPTIL" />
       <MemberSignature Language="VB.NET" Value="OPTIL" />
       <MemberSignature Language="C++ CLI" Value="OPTIL" />
+      <MemberSignature Language="F#" Value="OPTIL = 2" Usage="System.Reflection.MethodImplAttributes.OPTIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -498,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.PreserveSig" />
       <MemberSignature Language="VB.NET" Value="PreserveSig" />
       <MemberSignature Language="C++ CLI" Value="PreserveSig" />
+      <MemberSignature Language="F#" Value="PreserveSig = 128" Usage="System.Reflection.MethodImplAttributes.PreserveSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -532,6 +546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Runtime" />
       <MemberSignature Language="VB.NET" Value="Runtime" />
       <MemberSignature Language="C++ CLI" Value="Runtime" />
+      <MemberSignature Language="F#" Value="Runtime = 3" Usage="System.Reflection.MethodImplAttributes.Runtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -566,6 +581,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Synchronized" />
       <MemberSignature Language="VB.NET" Value="Synchronized" />
       <MemberSignature Language="C++ CLI" Value="Synchronized" />
+      <MemberSignature Language="F#" Value="Synchronized = 32" Usage="System.Reflection.MethodImplAttributes.Synchronized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -600,6 +616,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Unmanaged" />
       <MemberSignature Language="VB.NET" Value="Unmanaged" />
       <MemberSignature Language="C++ CLI" Value="Unmanaged" />
+      <MemberSignature Language="F#" Value="Unmanaged = 4" Usage="System.Reflection.MethodImplAttributes.Unmanaged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

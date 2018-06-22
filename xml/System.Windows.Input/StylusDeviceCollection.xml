@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDeviceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusDeviceCollection&#xA;Inherits ReadOnlyCollection(Of StylusDevice)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StylusDeviceCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Input::StylusDevice ^&gt;" />
+  <TypeSignature Language="F#" Value="type StylusDeviceCollection = class&#xA;    inherit ReadOnlyCollection&lt;StylusDevice&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

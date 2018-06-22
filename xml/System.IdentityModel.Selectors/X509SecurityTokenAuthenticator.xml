@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Class X509SecurityTokenAuthenticator&#xA;Inherits SecurityTokenAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509SecurityTokenAuthenticator : System::IdentityModel::Selectors::SecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type X509SecurityTokenAuthenticator = class&#xA;    inherit SecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.#ctor(System.IdentityModel.Selectors.X509CertificateValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validator As X509CertificateValidator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenAuthenticator(System::IdentityModel::Selectors::X509CertificateValidator ^ validator);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator : System.IdentityModel.Selectors.X509CertificateValidator -&gt; System.IdentityModel.Selectors.X509SecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator validator" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.#ctor(System.IdentityModel.Selectors.X509CertificateValidator,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validator As X509CertificateValidator, mapToWindows As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenAuthenticator(System::IdentityModel::Selectors::X509CertificateValidator ^ validator, bool mapToWindows);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator : System.IdentityModel.Selectors.X509CertificateValidator * bool -&gt; System.IdentityModel.Selectors.X509SecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator (validator, mapToWindows)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.#ctor(System.IdentityModel.Selectors.X509CertificateValidator,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validator As X509CertificateValidator, mapToWindows As Boolean, includeWindowsGroups As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenAuthenticator(System::IdentityModel::Selectors::X509CertificateValidator ^ validator, bool mapToWindows, bool includeWindowsGroups);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator : System.IdentityModel.Selectors.X509CertificateValidator * bool * bool -&gt; System.IdentityModel.Selectors.X509SecurityTokenAuthenticator" Usage="new System.IdentityModel.Selectors.X509SecurityTokenAuthenticator (validator, mapToWindows, includeWindowsGroups)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanValidateTokenCore (token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.CanValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="x509SecurityTokenAuthenticator.CanValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.MapCertificateToWindowsAccount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MapCertificateToWindowsAccount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapCertificateToWindowsAccount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MapCertificateToWindowsAccount : bool" Usage="System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.MapCertificateToWindowsAccount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateTokenCore (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.ValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="x509SecurityTokenAuthenticator.ValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

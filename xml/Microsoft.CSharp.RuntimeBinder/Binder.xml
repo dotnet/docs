@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.Binder" />
   <TypeSignature Language="VB.NET" Value="Public Class Binder" />
   <TypeSignature Language="C++ CLI" Value="public ref class Binder abstract sealed" />
+  <TypeSignature Language="F#" Value="type Binder = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Linq.Expressions.ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BinaryOperation (flags As CSharpBinderFlags, operation As ExpressionType, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ BinaryOperation(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::Linq::Expressions::ExpressionType operation, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member BinaryOperation : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * System.Linq.Expressions.ExpressionType * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation (flags, operation, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.CallSiteBinder Convert(valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags flags, class System.Type type, class System.Type context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.Convert(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ Convert(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, Type ^ type, Type ^ context);" />
+      <MemberSignature Language="F#" Value="static member Convert : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * Type * Type -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.Convert (flags, type, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIndex (flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ GetIndex(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member GetIndex : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.GetIndex (flags, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMember (flags As CSharpBinderFlags, name As String, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ GetMember(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::String ^ name, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member GetMember : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * string * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.GetMember (flags, name, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke (flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ Invoke(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member Invoke : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.Invoke (flags, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeConstructor (flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ InvokeConstructor(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member InvokeConstructor : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor (flags, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeMember (flags As CSharpBinderFlags, name As String, typeArguments As IEnumerable(Of Type), context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ InvokeMember(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::String ^ name, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ typeArguments, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member InvokeMember : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * string * seq&lt;Type&gt; * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember (flags, name, typeArguments, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.IsEvent(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsEvent (flags As CSharpBinderFlags, name As String, context As Type) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ IsEvent(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::String ^ name, Type ^ context);" />
+      <MemberSignature Language="F#" Value="static member IsEvent : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * string * Type -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.IsEvent (flags, name, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetIndex (flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ SetIndex(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member SetIndex : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.SetIndex (flags, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetMember (flags As CSharpBinderFlags, name As String, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ SetMember(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::String ^ name, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member SetMember : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * string * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.SetMember (flags, name, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Linq.Expressions.ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnaryOperation (flags As CSharpBinderFlags, operation As ExpressionType, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSiteBinder ^ UnaryOperation(Microsoft::CSharp::RuntimeBinder::CSharpBinderFlags flags, System::Linq::Expressions::ExpressionType operation, Type ^ context, System::Collections::Generic::IEnumerable&lt;Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^&gt; ^ argumentInfo);" />
+      <MemberSignature Language="F#" Value="static member UnaryOperation : Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags * System.Linq.Expressions.ExpressionType * Type * seq&lt;Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo&gt; -&gt; System.Runtime.CompilerServices.CallSiteBinder" Usage="Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation (flags, operation, context, argumentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>

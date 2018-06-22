@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IAsyncResult" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAsyncResult" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAsyncResult" />
+  <TypeSignature Language="F#" Value="type IAsyncResult = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.IAsyncResult.AsyncState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AsyncState { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncState : obj" Usage="System.IAsyncResult.AsyncState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.IAsyncResult.AsyncWaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncWaitHandle As WaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ AsyncWaitHandle { System::Threading::WaitHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncWaitHandle : System.Threading.WaitHandle" Usage="System.IAsyncResult.AsyncWaitHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.IAsyncResult.CompletedSynchronously" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompletedSynchronously As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CompletedSynchronously { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompletedSynchronously : bool" Usage="System.IAsyncResult.CompletedSynchronously" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -251,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.IAsyncResult.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.IAsyncResult.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

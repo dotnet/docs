@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IBindingListView" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindingListView&#xA;Implements IBindingList, IList" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindingListView : System::Collections::IList, System::ComponentModel::IBindingList" />
+  <TypeSignature Language="F#" Value="type IBindingListView = interface&#xA;    interface IBindingList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplySort (sorts As ListSortDescriptionCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplySort(System::ComponentModel::ListSortDescriptionCollection ^ sorts);" />
+      <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit" Usage="iBindingListView.ApplySort sorts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingListView.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.ComponentModel.IBindingListView.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingListView.RemoveFilter" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFilter ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFilter();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveFilter : unit -&gt; unit" Usage="iBindingListView.RemoveFilter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingListView.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDescriptions As ListSortDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ListSortDescriptionCollection ^ SortDescriptions { System::ComponentModel::ListSortDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.ListSortDescriptionCollection" Usage="System.ComponentModel.IBindingListView.SortDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsAdvancedSorting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsAdvancedSorting { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsAdvancedSorting : bool" Usage="System.ComponentModel.IBindingListView.SupportsAdvancedSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingListView.SupportsFiltering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsFiltering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsFiltering { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsFiltering : bool" Usage="System.ComponentModel.IBindingListView.SupportsFiltering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

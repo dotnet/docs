@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PublishServiceCallback`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function PublishServiceCallback(Of TServiceType)() As TServiceType " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TServiceType&gt;&#xA;public delegate TServiceType PublishServiceCallback();" />
+  <TypeSignature Language="F#" Value="type PublishServiceCallback&lt;'ServiceType&gt; = delegate of unit -&gt; 'ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

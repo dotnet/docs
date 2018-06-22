@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.InternalConfigEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalConfigEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalConfigEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type InternalConfigEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.InternalConfigEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalConfigEventArgs(System::String ^ configPath);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Internal.InternalConfigEventArgs : string -&gt; System.Configuration.Internal.InternalConfigEventArgs" Usage="new System.Configuration.Internal.InternalConfigEventArgs configPath" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.InternalConfigEventArgs.ConfigPath" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigPath : string with get, set" Usage="System.Configuration.Internal.InternalConfigEventArgs.ConfigPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

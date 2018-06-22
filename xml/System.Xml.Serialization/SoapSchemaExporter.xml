@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapSchemaExporter" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapSchemaExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapSchemaExporter" />
+  <TypeSignature Language="F#" Value="type SoapSchemaExporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapSchemaExporter.#ctor(System.Xml.Serialization.XmlSchemas)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapSchemaExporter(System::Xml::Serialization::XmlSchemas ^ schemas);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapSchemaExporter : System.Xml.Serialization.XmlSchemas -&gt; System.Xml.Serialization.SoapSchemaExporter" Usage="new System.Xml.Serialization.SoapSchemaExporter schemas" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportMembersMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapSchemaExporter.ExportMembersMapping(System.Xml.Serialization.XmlMembersMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportMembersMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping);" />
+      <MemberSignature Language="F#" Value="member this.ExportMembersMapping : System.Xml.Serialization.XmlMembersMapping -&gt; unit" Usage="soapSchemaExporter.ExportMembersMapping xmlMembersMapping" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportMembersMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping, bool exportEnclosingType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapSchemaExporter.ExportMembersMapping(System.Xml.Serialization.XmlMembersMapping,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportMembersMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping, bool exportEnclosingType);" />
+      <MemberSignature Language="F#" Value="member this.ExportMembersMapping : System.Xml.Serialization.XmlMembersMapping * bool -&gt; unit" Usage="soapSchemaExporter.ExportMembersMapping (xmlMembersMapping, exportEnclosingType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportTypeMapping(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapSchemaExporter.ExportTypeMapping(System.Xml.Serialization.XmlTypeMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportTypeMapping(System::Xml::Serialization::XmlTypeMapping ^ xmlTypeMapping);" />
+      <MemberSignature Language="F#" Value="member this.ExportTypeMapping : System.Xml.Serialization.XmlTypeMapping -&gt; unit" Usage="soapSchemaExporter.ExportTypeMapping xmlTypeMapping" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

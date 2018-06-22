@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridHeadersVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridHeadersVisibility" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridHeadersVisibility" />
+  <TypeSignature Language="F#" Value="type DataGridHeadersVisibility = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Windows.Controls.DataGridHeadersVisibility.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 1" Usage="System.Windows.Controls.DataGridHeadersVisibility.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.DataGridHeadersVisibility.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.Row" />
       <MemberSignature Language="VB.NET" Value="Row" />
       <MemberSignature Language="C++ CLI" Value="Row" />
+      <MemberSignature Language="F#" Value="Row = 2" Usage="System.Windows.Controls.DataGridHeadersVisibility.Row" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

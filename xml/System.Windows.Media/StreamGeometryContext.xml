@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.StreamGeometryContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamGeometryContext&#xA;Inherits DispatcherObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamGeometryContext abstract : System::Windows::Threading::DispatcherObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type StreamGeometryContext = class&#xA;    inherit DispatcherObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ArcTo(valuetype System.Windows.Point point, valuetype System.Windows.Size size, float64 rotationAngle, bool isLargeArc, valuetype System.Windows.Media.SweepDirection sweepDirection, bool isStroked, bool isSmoothJoin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.ArcTo(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ArcTo(System::Windows::Point point, System::Windows::Size size, double rotationAngle, bool isLargeArc, System::Windows::Media::SweepDirection sweepDirection, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member ArcTo : System.Windows.Point * System.Windows.Size * double * bool * System.Windows.Media.SweepDirection * bool * bool -&gt; unit" Usage="streamGeometryContext.ArcTo (point, size, rotationAngle, isLargeArc, sweepDirection, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginFigure (startPoint As Point, isFilled As Boolean, isClosed As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginFigure(System::Windows::Point startPoint, bool isFilled, bool isClosed);" />
+      <MemberSignature Language="F#" Value="abstract member BeginFigure : System.Windows.Point * bool * bool -&gt; unit" Usage="streamGeometryContext.BeginFigure (startPoint, isFilled, isClosed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.BezierTo(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BezierTo (point1 As Point, point2 As Point, point3 As Point, isStroked As Boolean, isSmoothJoin As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BezierTo(System::Windows::Point point1, System::Windows::Point point2, System::Windows::Point point3, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member BezierTo : System.Windows.Point * System.Windows.Point * System.Windows.Point * bool * bool -&gt; unit" Usage="streamGeometryContext.BezierTo (point1, point2, point3, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="streamGeometryContext.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineTo(valuetype System.Windows.Point point, bool isStroked, bool isSmoothJoin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.LineTo(System.Windows.Point,System.Boolean,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void LineTo(System::Windows::Point point, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member LineTo : System.Windows.Point * bool * bool -&gt; unit" Usage="streamGeometryContext.LineTo (point, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.PolyBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub PolyBezierTo (points As IList(Of Point), isStroked As Boolean, isSmoothJoin As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void PolyBezierTo(System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member PolyBezierTo : System.Collections.Generic.IList&lt;System.Windows.Point&gt; * bool * bool -&gt; unit" Usage="streamGeometryContext.PolyBezierTo (points, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.PolyLineTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub PolyLineTo (points As IList(Of Point), isStroked As Boolean, isSmoothJoin As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void PolyLineTo(System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member PolyLineTo : System.Collections.Generic.IList&lt;System.Windows.Point&gt; * bool * bool -&gt; unit" Usage="streamGeometryContext.PolyLineTo (points, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo(System.Collections.Generic.IList{System.Windows.Point},System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub PolyQuadraticBezierTo (points As IList(Of Point), isStroked As Boolean, isSmoothJoin As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void PolyQuadraticBezierTo(System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member PolyQuadraticBezierTo : System.Collections.Generic.IList&lt;System.Windows.Point&gt; * bool * bool -&gt; unit" Usage="streamGeometryContext.PolyQuadraticBezierTo (points, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo(System.Windows.Point,System.Windows.Point,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub QuadraticBezierTo (point1 As Point, point2 As Point, isStroked As Boolean, isSmoothJoin As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void QuadraticBezierTo(System::Windows::Point point1, System::Windows::Point point2, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="F#" Value="abstract member QuadraticBezierTo : System.Windows.Point * System.Windows.Point * bool * bool -&gt; unit" Usage="streamGeometryContext.QuadraticBezierTo (point1, point2, isStroked, isSmoothJoin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

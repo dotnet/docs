@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of WebHttpEndpoint, WebHttpEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Description::WebHttpEndpoint ^, System::ServiceModel::Configuration::WebHttpEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WebHttpEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;WebHttpEndpoint, WebHttpEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

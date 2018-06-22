@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsSerializeAsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsSerializeAsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsSerializeAsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsSerializeAsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsSerializeAsAttribute.#ctor(System.Configuration.SettingsSerializeAs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serializeAs As SettingsSerializeAs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsSerializeAsAttribute(System::Configuration::SettingsSerializeAs serializeAs);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsSerializeAsAttribute : System.Configuration.SettingsSerializeAs -&gt; System.Configuration.SettingsSerializeAsAttribute" Usage="new System.Configuration.SettingsSerializeAsAttribute serializeAs" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsSerializeAsAttribute.SerializeAs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializeAs As SettingsSerializeAs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingsSerializeAs SerializeAs { System::Configuration::SettingsSerializeAs get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializeAs : System.Configuration.SettingsSerializeAs" Usage="System.Configuration.SettingsSerializeAsAttribute.SerializeAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

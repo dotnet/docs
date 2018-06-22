@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DisplayNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DisplayNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DisplayNameAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type DisplayNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayNameAttribute(System::String ^ displayName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DisplayNameAttribute : string -&gt; System.ComponentModel.DisplayNameAttribute" Usage="new System.ComponentModel.DisplayNameAttribute displayName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DisplayNameAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DisplayNameAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DisplayNameAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DisplayNameAttribute" Usage="System.ComponentModel.DisplayNameAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DisplayNameAttribute.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.DisplayNameAttribute.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DisplayNameAttribute.DisplayNameValue" />
       <MemberSignature Language="VB.NET" Value="Protected Property DisplayNameValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DisplayNameValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayNameValue : string with get, set" Usage="System.ComponentModel.DisplayNameAttribute.DisplayNameValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="displayNameAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="displayNameAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -284,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="displayNameAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

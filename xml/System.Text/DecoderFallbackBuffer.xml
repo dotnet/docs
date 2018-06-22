@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderFallbackBuffer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DecoderFallbackBuffer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoderFallbackBuffer abstract" />
+  <TypeSignature Language="F#" Value="type DecoderFallbackBuffer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderFallbackBuffer.Fallback(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Fallback (bytesUnknown As Byte(), index As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Fallback(cli::array &lt;System::Byte&gt; ^ bytesUnknown, int index);" />
+      <MemberSignature Language="F#" Value="abstract member Fallback : byte[] * int -&gt; bool" Usage="decoderFallbackBuffer.Fallback (bytesUnknown, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderFallbackBuffer.GetNextChar" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNextChar () As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract char GetNextChar();" />
+      <MemberSignature Language="F#" Value="abstract member GetNextChar : unit -&gt; char" Usage="decoderFallbackBuffer.GetNextChar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -192,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderFallbackBuffer.MovePrevious" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MovePrevious () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MovePrevious();" />
+      <MemberSignature Language="F#" Value="abstract member MovePrevious : unit -&gt; bool" Usage="decoderFallbackBuffer.MovePrevious " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -235,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderFallbackBuffer.Remaining" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Remaining As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Remaining { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Remaining : int" Usage="System.Text.DecoderFallbackBuffer.Remaining" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderFallbackBuffer.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="decoderFallbackBuffer.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

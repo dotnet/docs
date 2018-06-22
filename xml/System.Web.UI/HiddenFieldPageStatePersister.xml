@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HiddenFieldPageStatePersister" />
   <TypeSignature Language="VB.NET" Value="Public Class HiddenFieldPageStatePersister&#xA;Inherits PageStatePersister" />
   <TypeSignature Language="C++ CLI" Value="public ref class HiddenFieldPageStatePersister : System::Web::UI::PageStatePersister" />
+  <TypeSignature Language="F#" Value="type HiddenFieldPageStatePersister = class&#xA;    inherit PageStatePersister" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.#ctor(System.Web.UI.Page)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HiddenFieldPageStatePersister(System::Web::UI::Page ^ page);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.HiddenFieldPageStatePersister : System.Web.UI.Page -&gt; System.Web.UI.HiddenFieldPageStatePersister" Usage="new System.Web.UI.HiddenFieldPageStatePersister page" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.Load" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load();" />
+      <MemberSignature Language="F#" Value="override this.Load : unit -&gt; unit" Usage="hiddenFieldPageStatePersister.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.Save" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Save();" />
+      <MemberSignature Language="F#" Value="override this.Save : unit -&gt; unit" Usage="hiddenFieldPageStatePersister.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

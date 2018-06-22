@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicException" />
   <TypeSignature Language="VB.NET" Value="Public Class CryptographicException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CryptographicException : SystemException" />
+  <TypeSignature Language="F#" Value="type CryptographicException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(int hr);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicException : int -&gt; System.Security.Cryptography.CryptographicException" Usage="new System.Security.Cryptography.CryptographicException hr" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -185,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicException : string -&gt; System.Security.Cryptography.CryptographicException" Usage="new System.Security.Cryptography.CryptographicException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -240,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CryptographicException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Cryptography.CryptographicException" Usage="new System.Security.Cryptography.CryptographicException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -279,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicException : string * Exception -&gt; System.Security.Cryptography.CryptographicException" Usage="new System.Security.Cryptography.CryptographicException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -339,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (format As String, insert As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ format, System::String ^ insert);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicException : string * string -&gt; System.Security.Cryptography.CryptographicException" Usage="new System.Security.Cryptography.CryptographicException (format, insert)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>

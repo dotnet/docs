@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTextBoxAutomationPeer&#xA;Inherits TextBoxAutomationPeer&#xA;Implements IInvokeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonTextBoxAutomationPeer : System::Windows::Automation::Peers::TextBoxAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider" />
+  <TypeSignature Language="F#" Value="type RibbonTextBoxAutomationPeer = class&#xA;    inherit TextBoxAutomationPeer&#xA;    interface IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonTextBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonTextBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTextBoxAutomationPeer(System::Windows::Controls::Ribbon::RibbonTextBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer : System.Windows.Controls.Ribbon.RibbonTextBox -&gt; System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetAcceleratorKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAcceleratorKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAcceleratorKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAcceleratorKeyCore : unit -&gt; string" Usage="ribbonTextBoxAutomationPeer.GetAcceleratorKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetAccessKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonTextBoxAutomationPeer.GetAccessKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonTextBoxAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonTextBoxAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonTextBoxAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTextBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonTextBoxAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitNotificationFrequency" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecycleLimitNotificationFrequency" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecycleLimitNotificationFrequency" />
+  <TypeSignature Language="F#" Value="type RecycleLimitNotificationFrequency = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 0" Usage="System.Web.Hosting.RecycleLimitNotificationFrequency.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 2" Usage="System.Web.Hosting.RecycleLimitNotificationFrequency.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 1" Usage="System.Web.Hosting.RecycleLimitNotificationFrequency.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

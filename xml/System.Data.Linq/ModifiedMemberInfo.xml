@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ModifiedMemberInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure ModifiedMemberInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class ModifiedMemberInfo" />
+  <TypeSignature Language="F#" Value="type ModifiedMemberInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentValue : obj" Usage="System.Data.Linq.ModifiedMemberInfo.CurrentValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ Member { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Reflection.MemberInfo" Usage="System.Data.Linq.ModifiedMemberInfo.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.OriginalValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalValue : obj" Usage="System.Data.Linq.ModifiedMemberInfo.OriginalValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

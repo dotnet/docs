@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationPathPointCollection&#xA;Inherits ChartElementCollection(Of AnnotationPathPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationPathPointCollection : System::Windows::Forms::DataVisualization::Charting::ChartElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::AnnotationPathPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type AnnotationPathPointCollection = class&#xA;    inherit ChartElementCollection&lt;AnnotationPathPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.#ctor(System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotation As PolylineAnnotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationPathPointCollection(System::Windows::Forms::DataVisualization::Charting::PolylineAnnotation ^ annotation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection : System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation -&gt; System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection" Usage="new System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection annotation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="annotationPathPointCollection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Invalidate();" />
+      <MemberSignature Language="F#" Value="override this.Invalidate : unit -&gt; unit" Usage="annotationPathPointCollection.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

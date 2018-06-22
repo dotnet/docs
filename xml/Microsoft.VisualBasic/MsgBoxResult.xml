@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MsgBoxResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum MsgBoxResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class MsgBoxResult" />
+  <TypeSignature Language="F#" Value="type MsgBoxResult = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Abort" />
       <MemberSignature Language="VB.NET" Value="Abort" />
       <MemberSignature Language="C++ CLI" Value="Abort" />
+      <MemberSignature Language="F#" Value="Abort = 3" Usage="Microsoft.VisualBasic.MsgBoxResult.Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 2" Usage="Microsoft.VisualBasic.MsgBoxResult.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 5" Usage="Microsoft.VisualBasic.MsgBoxResult.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.No" />
       <MemberSignature Language="VB.NET" Value="No" />
       <MemberSignature Language="C++ CLI" Value="No" />
+      <MemberSignature Language="F#" Value="No = 7" Usage="Microsoft.VisualBasic.MsgBoxResult.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Ok" />
       <MemberSignature Language="VB.NET" Value="Ok" />
       <MemberSignature Language="C++ CLI" Value="Ok" />
+      <MemberSignature Language="F#" Value="Ok = 1" Usage="Microsoft.VisualBasic.MsgBoxResult.Ok" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Retry" />
       <MemberSignature Language="VB.NET" Value="Retry" />
       <MemberSignature Language="C++ CLI" Value="Retry" />
+      <MemberSignature Language="F#" Value="Retry = 4" Usage="Microsoft.VisualBasic.MsgBoxResult.Retry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Yes" />
       <MemberSignature Language="VB.NET" Value="Yes" />
       <MemberSignature Language="C++ CLI" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 6" Usage="Microsoft.VisualBasic.MsgBoxResult.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

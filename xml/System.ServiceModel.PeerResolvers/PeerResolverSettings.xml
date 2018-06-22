@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerResolverSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerResolverSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerResolverSettings" />
+  <TypeSignature Language="F#" Value="type PeerResolverSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.Custom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Custom As PeerCustomResolverSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ Custom { System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Custom : System.ServiceModel.PeerResolvers.PeerCustomResolverSettings" Usage="System.ServiceModel.PeerResolvers.PeerResolverSettings.Custom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As PeerResolverMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerResolverMode Mode { System::ServiceModel::PeerResolvers::PeerResolverMode get(); void set(System::ServiceModel::PeerResolvers::PeerResolverMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.PeerResolvers.PeerResolverMode with get, set" Usage="System.ServiceModel.PeerResolvers.PeerResolverSettings.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerResolverSettings.ReferralPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferralPolicy As PeerReferralPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::PeerReferralPolicy ReferralPolicy { System::ServiceModel::PeerResolvers::PeerReferralPolicy get(); void set(System::ServiceModel::PeerResolvers::PeerReferralPolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralPolicy : System.ServiceModel.PeerResolvers.PeerReferralPolicy with get, set" Usage="System.ServiceModel.PeerResolvers.PeerResolverSettings.ReferralPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridTextColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridTextColumn&#xA;Inherits DataGridBoundColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridTextColumn : System::Windows::Controls::DataGridBoundColumn" />
+  <TypeSignature Language="F#" Value="type DataGridTextColumn = class&#xA;    inherit DataGridBoundColumn" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.CancelCellEdit(System.Windows.FrameworkElement,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CancelCellEdit(System::Windows::FrameworkElement ^ editingElement, System::Object ^ uneditedValue);" />
+      <MemberSignature Language="F#" Value="override this.CancelCellEdit : System.Windows.FrameworkElement * obj -&gt; unit" Usage="dataGridTextColumn.CancelCellEdit (editingElement, uneditedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.CommitCellEdit(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CommitCellEdit (editingElement As FrameworkElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CommitCellEdit(System::Windows::FrameworkElement ^ editingElement);" />
+      <MemberSignature Language="F#" Value="override this.CommitCellEdit : System.Windows.FrameworkElement -&gt; bool" Usage="dataGridTextColumn.CommitCellEdit editingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.DefaultEditingElementStyle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultEditingElementStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Style ^ DefaultEditingElementStyle { System::Windows::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultEditingElementStyle : System.Windows.Style" Usage="System.Windows.Controls.DataGridTextColumn.DefaultEditingElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.DefaultElementStyle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultElementStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Style ^ DefaultElementStyle { System::Windows::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultElementStyle : System.Windows.Style" Usage="System.Windows.Controls.DataGridTextColumn.DefaultElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.FontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Controls.DataGridTextColumn.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridTextColumn.FontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontFamilyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridTextColumn.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.FontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Controls.DataGridTextColumn.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridTextColumn.FontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridTextColumn.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle FontStyle { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Controls.DataGridTextColumn.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridTextColumn.FontStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridTextColumn.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.FontWeight" />
       <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight FontWeight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Controls.DataGridTextColumn.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -335,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridTextColumn.FontWeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontWeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridTextColumn.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -354,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridTextColumn.Foreground" />
       <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.DataGridTextColumn.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -381,6 +395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridTextColumn.ForegroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridTextColumn.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -400,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.GenerateEditingElement(System.Windows.Controls.DataGridCell,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::FrameworkElement ^ GenerateEditingElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
+      <MemberSignature Language="F#" Value="override this.GenerateEditingElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridTextColumn.GenerateEditingElement (cell, dataItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.GenerateElement(System.Windows.Controls.DataGridCell,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::FrameworkElement ^ GenerateElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
+      <MemberSignature Language="F#" Value="override this.GenerateElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridTextColumn.GenerateElement (cell, dataItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -452,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.PrepareCellForEdit(System.Windows.FrameworkElement,System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ PrepareCellForEdit(System::Windows::FrameworkElement ^ editingElement, System::Windows::RoutedEventArgs ^ editingEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.PrepareCellForEdit : System.Windows.FrameworkElement * System.Windows.RoutedEventArgs -&gt; obj" Usage="dataGridTextColumn.PrepareCellForEdit (editingElement, editingEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridTextColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshCellContent (element As FrameworkElement, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RefreshCellContent(System::Windows::FrameworkElement ^ element, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="override this.RefreshCellContent : System.Windows.FrameworkElement * string -&gt; unit" Usage="dataGridTextColumn.RefreshCellContent (element, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

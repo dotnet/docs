@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IEnumerable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumerable" />
+  <TypeSignature Language="F#" Value="type IEnumerable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IEnumerable.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="iEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

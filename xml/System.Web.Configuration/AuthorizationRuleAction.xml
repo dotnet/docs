@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthorizationRuleAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthorizationRuleAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthorizationRuleAction" />
+  <TypeSignature Language="F#" Value="type AuthorizationRuleAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthorizationRuleAction.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 1" Usage="System.Web.Configuration.AuthorizationRuleAction.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthorizationRuleAction.Deny" />
       <MemberSignature Language="VB.NET" Value="Deny" />
       <MemberSignature Language="C++ CLI" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 0" Usage="System.Web.Configuration.AuthorizationRuleAction.Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

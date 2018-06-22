@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectSettingDataEventArgs&#xA;Inherits DataObjectEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObjectSettingDataEventArgs sealed : System::Windows::DataObjectEventArgs" />
+  <TypeSignature Language="F#" Value="type DataObjectSettingDataEventArgs = class&#xA;    inherit DataObjectEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.#ctor(System.Windows.IDataObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataObject As IDataObject, format As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectSettingDataEventArgs(System::Windows::IDataObject ^ dataObject, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataObjectSettingDataEventArgs : System.Windows.IDataObject * string -&gt; System.Windows.DataObjectSettingDataEventArgs" Usage="new System.Windows.DataObjectSettingDataEventArgs (dataObject, format)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.DataObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataObject As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ DataObject { System::Windows::IDataObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataObject : System.Windows.IDataObject" Usage="System.Windows.DataObjectSettingDataEventArgs.DataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Windows.DataObjectSettingDataEventArgs.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataObjectSettingDataEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

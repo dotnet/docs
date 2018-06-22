@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxWrapperGen" />
   <TypeSignature Language="VB.NET" Value="Public Class AxWrapperGen" />
   <TypeSignature Language="C++ CLI" Value="public ref class AxWrapperGen" />
+  <TypeSignature Language="F#" Value="type AxWrapperGen = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxWrapperGen.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (axType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AxWrapperGen(Type ^ axType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.AxWrapperGen : Type -&gt; System.Windows.Forms.Design.AxWrapperGen" Usage="new System.Windows.Forms.Design.AxWrapperGen axType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxWrapperGen.GeneratedSources" />
       <MemberSignature Language="VB.NET" Value="Public Shared GeneratedSources As ArrayList " />
       <MemberSignature Language="C++ CLI" Value="public: static System::Collections::ArrayList ^ GeneratedSources;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GeneratedSources : System.Collections.ArrayList" Usage="System.Windows.Forms.Design.AxWrapperGen.GeneratedSources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

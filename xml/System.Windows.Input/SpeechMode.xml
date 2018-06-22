@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.SpeechMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SpeechMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SpeechMode" />
+  <TypeSignature Language="F#" Value="type SpeechMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Command" />
       <MemberSignature Language="VB.NET" Value="Command" />
       <MemberSignature Language="C++ CLI" Value="Command" />
+      <MemberSignature Language="F#" Value="Command = 1" Usage="System.Windows.Input.SpeechMode.Command" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Dictation" />
       <MemberSignature Language="VB.NET" Value="Dictation" />
       <MemberSignature Language="C++ CLI" Value="Dictation" />
+      <MemberSignature Language="F#" Value="Dictation = 0" Usage="System.Windows.Input.SpeechMode.Dictation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Indeterminate" />
       <MemberSignature Language="VB.NET" Value="Indeterminate" />
       <MemberSignature Language="C++ CLI" Value="Indeterminate" />
+      <MemberSignature Language="F#" Value="Indeterminate = 2" Usage="System.Windows.Input.SpeechMode.Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

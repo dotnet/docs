@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpKeywordType" />
   <TypeSignature Language="VB.NET" Value="Public Enum HelpKeywordType" />
   <TypeSignature Language="C++ CLI" Value="public enum class HelpKeywordType" />
+  <TypeSignature Language="F#" Value="type HelpKeywordType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.F1Keyword" />
       <MemberSignature Language="VB.NET" Value="F1Keyword" />
       <MemberSignature Language="C++ CLI" Value="F1Keyword" />
+      <MemberSignature Language="F#" Value="F1Keyword = 0" Usage="System.ComponentModel.Design.HelpKeywordType.F1Keyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.FilterKeyword" />
       <MemberSignature Language="VB.NET" Value="FilterKeyword" />
       <MemberSignature Language="C++ CLI" Value="FilterKeyword" />
+      <MemberSignature Language="F#" Value="FilterKeyword = 2" Usage="System.ComponentModel.Design.HelpKeywordType.FilterKeyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.GeneralKeyword" />
       <MemberSignature Language="VB.NET" Value="GeneralKeyword" />
       <MemberSignature Language="C++ CLI" Value="GeneralKeyword" />
+      <MemberSignature Language="F#" Value="GeneralKeyword = 1" Usage="System.ComponentModel.Design.HelpKeywordType.GeneralKeyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

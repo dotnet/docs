@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogProviderDisabledException&#xA;Inherits EventLogException" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogProviderDisabledException : System::Diagnostics::Eventing::Reader::EventLogException" />
+  <TypeSignature Language="F#" Value="type EventLogProviderDisabledException = class&#xA;    inherit EventLogException" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogProviderDisabledException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException : string -&gt; System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException" Usage="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventLogProviderDisabledException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException" Usage="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogProviderDisabledException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException : string * Exception -&gt; System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException" Usage="new System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

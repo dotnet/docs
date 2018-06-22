@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBox.ChildAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ComboBox.ChildAccessibleObject&#xA;Inherits AccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ComboBox::ChildAccessibleObject : System::Windows::Forms::AccessibleObject" />
+  <TypeSignature Language="F#" Value="type ComboBox.ChildAccessibleObject = class&#xA;    inherit AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ChildAccessibleObject.#ctor(System.Windows.Forms.ComboBox,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ComboBox, handle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChildAccessibleObject(System::Windows::Forms::ComboBox ^ owner, IntPtr handle);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ComboBox.ChildAccessibleObject : System.Windows.Forms.ComboBox * nativeint -&gt; System.Windows.Forms.ComboBox.ChildAccessibleObject" Usage="new System.Windows.Forms.ComboBox.ChildAccessibleObject (owner, handle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.ChildAccessibleObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.ComboBox.ChildAccessibleObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

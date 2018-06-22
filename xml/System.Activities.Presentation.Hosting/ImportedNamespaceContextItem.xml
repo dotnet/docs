@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportedNamespaceContextItem&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportedNamespaceContextItem sealed : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type ImportedNamespaceContextItem = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem.EnsureInitialized(System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnsureInitialized (context As EditingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureInitialized(System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.EnsureInitialized : System.Activities.Presentation.EditingContext -&gt; unit" Usage="importedNamespaceContextItem.EnsureInitialized context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem.ImportedNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedNamespaces As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ ImportedNamespaces { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportedNamespaces : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Activities.Presentation.Hosting.ImportedNamespaceContextItem.ImportedNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ImportedNamespaceContextItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.ImportedNamespaceContextItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

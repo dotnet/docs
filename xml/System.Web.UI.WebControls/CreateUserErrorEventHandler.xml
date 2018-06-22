@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreateUserErrorEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CreateUserErrorEventHandler(sender As Object, e As CreateUserErrorEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CreateUserErrorEventHandler(System::Object ^ sender, CreateUserErrorEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CreateUserErrorEventHandler = delegate of obj * CreateUserErrorEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

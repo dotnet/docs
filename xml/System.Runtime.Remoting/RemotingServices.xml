@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingServices" />
   <TypeSignature Language="VB.NET" Value="Public Class RemotingServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemotingServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type RemotingServices = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Connect(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Connect (classToProxy As Type, url As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Connect(Type ^ classToProxy, System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member Connect : Type * string -&gt; obj" Usage="System.Runtime.Remoting.RemotingServices.Connect (classToProxy, url)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Connect(System.Type,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Connect (classToProxy As Type, url As String, data As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Connect(Type ^ classToProxy, System::String ^ url, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="static member Connect : Type * string * obj -&gt; obj" Usage="System.Runtime.Remoting.RemotingServices.Connect (classToProxy, url, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Disconnect(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Disconnect (obj As MarshalByRefObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Disconnect(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member Disconnect : MarshalByRefObject -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.Disconnect obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.ExecuteMessage(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMethodCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ExecuteMessage (target As MarshalByRefObject, reqMsg As IMethodCallMessage) As IMethodReturnMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Messaging::IMethodReturnMessage ^ ExecuteMessage(MarshalByRefObject ^ target, System::Runtime::Remoting::Messaging::IMethodCallMessage ^ reqMsg);" />
+      <MemberSignature Language="F#" Value="static member ExecuteMessage : MarshalByRefObject * System.Runtime.Remoting.Messaging.IMethodCallMessage -&gt; System.Runtime.Remoting.Messaging.IMethodReturnMessage" Usage="System.Runtime.Remoting.RemotingServices.ExecuteMessage (target, reqMsg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetEnvoyChainForProxy(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnvoyChainForProxy (obj As MarshalByRefObject) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Messaging::IMessageSink ^ GetEnvoyChainForProxy(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetEnvoyChainForProxy : MarshalByRefObject -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="System.Runtime.Remoting.RemotingServices.GetEnvoyChainForProxy obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetLifetimeService(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLifetimeService (obj As MarshalByRefObject) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetLifetimeService(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetLifetimeService : MarshalByRefObject -&gt; obj" Usage="System.Runtime.Remoting.RemotingServices.GetLifetimeService obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetMethodBaseFromMethodMessage(System.Runtime.Remoting.Messaging.IMethodMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodBaseFromMethodMessage (msg As IMethodMessage) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodBaseFromMethodMessage(System::Runtime::Remoting::Messaging::IMethodMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="static member GetMethodBaseFromMethodMessage : System.Runtime.Remoting.Messaging.IMethodMessage -&gt; System.Reflection.MethodBase" Usage="System.Runtime.Remoting.RemotingServices.GetMethodBaseFromMethodMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub GetObjectData (obj As Object, info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetObjectData(System::Object ^ obj, System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="static member GetObjectData : obj * System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="System.Runtime.Remoting.RemotingServices.GetObjectData (obj, info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetObjectUri(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectUri (obj As MarshalByRefObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetObjectUri(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetObjectUri : MarshalByRefObject -&gt; string" Usage="System.Runtime.Remoting.RemotingServices.GetObjectUri obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetObjRefForProxy(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjRefForProxy (obj As MarshalByRefObject) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjRef ^ GetObjRefForProxy(MarshalByRefObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetObjRefForProxy : MarshalByRefObject -&gt; System.Runtime.Remoting.ObjRef" Usage="System.Runtime.Remoting.RemotingServices.GetObjRefForProxy obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetRealProxy(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRealProxy (proxy As Object) As RealProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Proxies::RealProxy ^ GetRealProxy(System::Object ^ proxy);" />
+      <MemberSignature Language="F#" Value="static member GetRealProxy : obj -&gt; System.Runtime.Remoting.Proxies.RealProxy" Usage="System.Runtime.Remoting.RemotingServices.GetRealProxy proxy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -511,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetServerTypeForUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetServerTypeForUri (URI As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetServerTypeForUri(System::String ^ URI);" />
+      <MemberSignature Language="F#" Value="static member GetServerTypeForUri : string -&gt; Type" Usage="System.Runtime.Remoting.RemotingServices.GetServerTypeForUri URI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -553,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.GetSessionIdForMethodMessage(System.Runtime.Remoting.Messaging.IMethodMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSessionIdForMethodMessage (msg As IMethodMessage) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetSessionIdForMethodMessage(System::Runtime::Remoting::Messaging::IMethodMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="static member GetSessionIdForMethodMessage : System.Runtime.Remoting.Messaging.IMethodMessage -&gt; string" Usage="System.Runtime.Remoting.RemotingServices.GetSessionIdForMethodMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -598,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.IsMethodOverloaded(System.Runtime.Remoting.Messaging.IMethodMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsMethodOverloaded (msg As IMethodMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsMethodOverloaded(System::Runtime::Remoting::Messaging::IMethodMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="static member IsMethodOverloaded : System.Runtime.Remoting.Messaging.IMethodMessage -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.IsMethodOverloaded msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -626,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.IsObjectOutOfAppDomain(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsObjectOutOfAppDomain (tp As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsObjectOutOfAppDomain(System::Object ^ tp);" />
+      <MemberSignature Language="F#" Value="static member IsObjectOutOfAppDomain : obj -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.IsObjectOutOfAppDomain tp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -666,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.IsObjectOutOfContext(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsObjectOutOfContext (tp As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsObjectOutOfContext(System::Object ^ tp);" />
+      <MemberSignature Language="F#" Value="static member IsObjectOutOfContext : obj -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.IsObjectOutOfContext tp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -707,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.IsOneWay(System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsOneWay (method As MethodBase) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsOneWay(System::Reflection::MethodBase ^ method);" />
+      <MemberSignature Language="F#" Value="static member IsOneWay : System.Reflection.MethodBase -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.IsOneWay method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -751,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.IsTransparentProxy(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsTransparentProxy (proxy As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTransparentProxy(System::Object ^ proxy);" />
+      <MemberSignature Language="F#" Value="static member IsTransparentProxy : obj -&gt; bool" Usage="System.Runtime.Remoting.RemotingServices.IsTransparentProxy proxy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -803,6 +822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.LogRemotingStage(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub LogRemotingStage (stage As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LogRemotingStage(int stage);" />
+      <MemberSignature Language="F#" Value="static member LogRemotingStage : int -&gt; unit" Usage="System.Runtime.Remoting.RemotingServices.LogRemotingStage stage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -853,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Marshal(System.MarshalByRefObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Marshal (Obj As MarshalByRefObject) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjRef ^ Marshal(MarshalByRefObject ^ Obj);" />
+      <MemberSignature Language="F#" Value="static member Marshal : MarshalByRefObject -&gt; System.Runtime.Remoting.ObjRef" Usage="System.Runtime.Remoting.RemotingServices.Marshal Obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -897,6 +918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Marshal(System.MarshalByRefObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Marshal (Obj As MarshalByRefObject, URI As String) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjRef ^ Marshal(MarshalByRefObject ^ Obj, System::String ^ URI);" />
+      <MemberSignature Language="F#" Value="static member Marshal : MarshalByRefObject * string -&gt; System.Runtime.Remoting.ObjRef" Usage="System.Runtime.Remoting.RemotingServices.Marshal (Obj, URI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -953,6 +975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Marshal(System.MarshalByRefObject,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Marshal (Obj As MarshalByRefObject, ObjURI As String, RequestedType As Type) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjRef ^ Marshal(MarshalByRefObject ^ Obj, System::String ^ ObjURI, Type ^ RequestedType);" />
+      <MemberSignature Language="F#" Value="static member Marshal : MarshalByRefObject * string * Type -&gt; System.Runtime.Remoting.ObjRef" Usage="System.Runtime.Remoting.RemotingServices.Marshal (Obj, ObjURI, RequestedType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1004,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.SetObjectUriForMarshal(System.MarshalByRefObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetObjectUriForMarshal (obj As MarshalByRefObject, uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetObjectUriForMarshal(MarshalByRefObject ^ obj, System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="static member SetObjectUriForMarshal : MarshalByRefObject * string -&gt; unit" Usage="System.Runtime.Remoting.RemotingServices.SetObjectUriForMarshal (obj, uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1066,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Unmarshal(System.Runtime.Remoting.ObjRef)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Unmarshal (objectRef As ObjRef) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Unmarshal(System::Runtime::Remoting::ObjRef ^ objectRef);" />
+      <MemberSignature Language="F#" Value="static member Unmarshal : System.Runtime.Remoting.ObjRef -&gt; obj" Usage="System.Runtime.Remoting.RemotingServices.Unmarshal objectRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1114,6 +1139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingServices.Unmarshal(System.Runtime.Remoting.ObjRef,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Unmarshal (objectRef As ObjRef, fRefine As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Unmarshal(System::Runtime::Remoting::ObjRef ^ objectRef, bool fRefine);" />
+      <MemberSignature Language="F#" Value="static member Unmarshal : System.Runtime.Remoting.ObjRef * bool -&gt; obj" Usage="System.Runtime.Remoting.RemotingServices.Unmarshal (objectRef, fRefine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

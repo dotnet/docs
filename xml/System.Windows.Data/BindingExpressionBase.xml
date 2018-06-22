@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingExpressionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingExpressionBase&#xA;Inherits Expression&#xA;Implements IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingExpressionBase abstract : System::Windows::Expression, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type BindingExpressionBase = class&#xA;    inherit Expression&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.BindingGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingGroup As BindingGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingGroup ^ BindingGroup { System::Windows::Data::BindingGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingGroup : System.Windows.Data.BindingGroup" Usage="System.Windows.Data.BindingExpressionBase.BindingGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.HasError" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasError { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasError : bool" Usage="System.Windows.Data.BindingExpressionBase.HasError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.HasValidationError" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasValidationError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasValidationError { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasValidationError : bool" Usage="System.Windows.Data.BindingExpressionBase.HasValidationError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="System.Windows.Data.BindingExpressionBase.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.ParentBindingBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentBindingBase As BindingBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingBase ^ ParentBindingBase { System::Windows::Data::BindingBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentBindingBase : System.Windows.Data.BindingBase" Usage="System.Windows.Data.BindingExpressionBase.ParentBindingBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As BindingStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingStatus Status { System::Windows::Data::BindingStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Windows.Data.BindingStatus" Usage="System.Windows.Data.BindingExpressionBase.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Target { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.DependencyObject" Usage="System.Windows.Data.BindingExpressionBase.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProperty As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ TargetProperty { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.BindingExpressionBase.TargetProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpressionBase.UpdateSource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateSource ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateSource();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSource : unit -&gt; unit&#xA;override this.UpdateSource : unit -&gt; unit" Usage="bindingExpressionBase.UpdateSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpressionBase.UpdateTarget" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateTarget ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateTarget();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTarget : unit -&gt; unit&#xA;override this.UpdateTarget : unit -&gt; unit" Usage="bindingExpressionBase.UpdateTarget " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateWithoutUpdate () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateWithoutUpdate();" />
+      <MemberSignature Language="F#" Value="member this.ValidateWithoutUpdate : unit -&gt; bool" Usage="bindingExpressionBase.ValidateWithoutUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.ValidationError" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ValidationError As ValidationError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Controls::ValidationError ^ ValidationError { System::Windows::Controls::ValidationError ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationError : System.Windows.Controls.ValidationError" Usage="System.Windows.Data.BindingExpressionBase.ValidationError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpressionBase.ValidationErrors" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ValidationErrors As ReadOnlyCollection(Of ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::ValidationError ^&gt; ^ ValidationErrors { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::ValidationError ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationErrors : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.ValidationError&gt;" Usage="System.Windows.Data.BindingExpressionBase.ValidationErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

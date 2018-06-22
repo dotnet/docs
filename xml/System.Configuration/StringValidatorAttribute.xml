@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.StringValidatorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
+  <TypeSignature Language="F#" Value="type StringValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.InvalidCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Property InvalidCharacters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InvalidCharacters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidCharacters : string with get, set" Usage="System.Configuration.StringValidatorAttribute.InvalidCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Configuration.StringValidatorAttribute.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.MinLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MinLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinLength : int with get, set" Usage="System.Configuration.StringValidatorAttribute.MinLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.ValidatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.StringValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.IManipulator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IManipulator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IManipulator" />
+  <TypeSignature Language="F#" Value="type IManipulator = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.IManipulator.GetPosition(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (relativeTo As IInputElement) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="iManipulator.GetPosition relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.IManipulator.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.Input.IManipulator.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.IManipulator.ManipulationEnded(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ManipulationEnded (cancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ManipulationEnded(bool cancel);" />
+      <MemberSignature Language="F#" Value="abstract member ManipulationEnded : bool -&gt; unit" Usage="iManipulator.ManipulationEnded cancel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.IManipulator.Updated" />
       <MemberSignature Language="VB.NET" Value="Event Updated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Updated;" />
+      <MemberSignature Language="F#" Value="member this.Updated : EventHandler " Usage="member this.Updated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

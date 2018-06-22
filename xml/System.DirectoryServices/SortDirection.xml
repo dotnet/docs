@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SortDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum SortDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class SortDirection" />
+  <TypeSignature Language="F#" Value="type SortDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SortDirection.Ascending" />
       <MemberSignature Language="VB.NET" Value="Ascending" />
       <MemberSignature Language="C++ CLI" Value="Ascending" />
+      <MemberSignature Language="F#" Value="Ascending = 0" Usage="System.DirectoryServices.SortDirection.Ascending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SortDirection.Descending" />
       <MemberSignature Language="VB.NET" Value="Descending" />
       <MemberSignature Language="C++ CLI" Value="Descending" />
+      <MemberSignature Language="F#" Value="Descending = 1" Usage="System.DirectoryServices.SortDirection.Descending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTabHeader" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTabHeader&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabHeader : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type RibbonTabHeader = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBackground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBorderBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.CheckedBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.ContextualTabGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextualTabGroup As RibbonContextualTabGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonContextualTabGroup ^ ContextualTabGroup { System::Windows::Controls::Ribbon::RibbonContextualTabGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextualTabGroup : System.Windows.Controls.Ribbon.RibbonContextualTabGroup" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.ContextualTabGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.ContextualTabGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualTabGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualTabGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextualTabGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.ContextualTabGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusedBackground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FocusedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusedBorderBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FocusedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.FocusedBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.IsContextualTab" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContextualTab As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContextualTab { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsContextualTab : bool" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.IsContextualTab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.IsContextualTabProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsContextualTabProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsContextualTabProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsContextualTabProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.IsContextualTabProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -350,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.IsRibbonTabSelected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRibbonTabSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRibbonTabSelected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRibbonTabSelected : bool" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.IsRibbonTabSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -371,6 +385,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.IsRibbonTabSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRibbonTabSelectedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsRibbonTabSelectedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsRibbonTabSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.IsRibbonTabSelectedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -390,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -424,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -443,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBorderBrush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -477,6 +495,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.MouseOverBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -496,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit&#xA;override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonTabHeader.OnActivatingKeyTip e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -519,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonTabHeader.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -546,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonTabHeader.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -567,6 +589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonTabHeader.OnGotKeyboardFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -599,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonTabHeader.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -629,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit&#xA;override this.OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit" Usage="ribbonTabHeader.OnKeyTipAccessed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -652,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonTabHeader.OnMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -681,6 +707,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeader.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="ribbonTabHeader.OnRender drawingContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -711,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeader.Ribbon" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ribbon : System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.Ribbon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -746,6 +774,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTabHeader.RibbonProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonTabHeader.RibbonProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

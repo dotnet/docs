@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Keyboard" />
   <TypeSignature Language="VB.NET" Value="Public Class Keyboard" />
   <TypeSignature Language="C++ CLI" Value="public ref class Keyboard abstract sealed" />
+  <TypeSignature Language="F#" Value="type Keyboard = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddGotKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddGotKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddGotKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddGotKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddGotKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddKeyboardInputProviderAcquireFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddKeyboardInputProviderAcquireFocusHandler (element As DependencyObject, handler As KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddKeyboardInputProviderAcquireFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardInputProviderAcquireFocusEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddKeyboardInputProviderAcquireFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddKeyboardInputProviderAcquireFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddKeyDownHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddKeyDownHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddKeyDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddKeyDownHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddKeyDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddKeyUpHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddKeyUpHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddKeyUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddKeyUpHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddKeyUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddLostKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddLostKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddLostKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddLostKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddLostKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddPreviewGotKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewGotKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewGotKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewGotKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddPreviewGotKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddPreviewKeyboardInputProviderAcquireFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewKeyboardInputProviderAcquireFocusHandler (element As DependencyObject, handler As KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewKeyboardInputProviderAcquireFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardInputProviderAcquireFocusEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewKeyboardInputProviderAcquireFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddPreviewKeyboardInputProviderAcquireFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddPreviewKeyDownHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewKeyDownHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewKeyDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewKeyDownHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddPreviewKeyDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddPreviewKeyUpHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewKeyUpHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewKeyUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewKeyUpHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddPreviewKeyUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.AddPreviewLostKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewLostKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewLostKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewLostKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.AddPreviewLostKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.ClearFocus" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearFocus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearFocus();" />
+      <MemberSignature Language="F#" Value="static member ClearFocus : unit -&gt; unit" Usage="System.Windows.Input.Keyboard.ClearFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -399,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Keyboard.DefaultRestoreFocusMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultRestoreFocusMode As RestoreFocusMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RestoreFocusMode DefaultRestoreFocusMode { System::Windows::Input::RestoreFocusMode get(); void set(System::Windows::Input::RestoreFocusMode value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultRestoreFocusMode : System.Windows.Input.RestoreFocusMode with get, set" Usage="System.Windows.Input.Keyboard.DefaultRestoreFocusMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -419,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.Focus(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Focus (element As IInputElement) As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::IInputElement ^ Focus(System::Windows::IInputElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member Focus : System.Windows.IInputElement -&gt; System.Windows.IInputElement" Usage="System.Windows.Input.Keyboard.Focus element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -462,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Keyboard.FocusedElement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusedElement As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::IInputElement ^ FocusedElement { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusedElement : System.Windows.IInputElement" Usage="System.Windows.Input.Keyboard.FocusedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -498,6 +513,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.KeyStates GetKeyStates(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.GetKeyStates(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::KeyStates GetKeyStates(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="static member GetKeyStates : System.Windows.Input.Key -&gt; System.Windows.Input.KeyStates" Usage="System.Windows.Input.Keyboard.GetKeyStates key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -540,6 +556,7 @@
       <MemberSignature Language="ILAsm" Value="see AddGotKeyboardFocusHandler, and RemoveGotKeyboardFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.GotKeyboardFocus" />
       <MemberSignature Language="VB.NET" Value="see AddGotKeyboardFocusHandler, and RemoveGotKeyboardFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddGotKeyboardFocusHandler, and RemoveGotKeyboardFocusHandler" Usage="see AddGotKeyboardFocusHandler, and RemoveGotKeyboardFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -556,6 +573,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.GotKeyboardFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GotKeyboardFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ GotKeyboardFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GotKeyboardFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.GotKeyboardFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -581,6 +599,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyDown(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.IsKeyDown(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKeyDown(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="static member IsKeyDown : System.Windows.Input.Key -&gt; bool" Usage="System.Windows.Input.Keyboard.IsKeyDown key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -622,6 +641,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyToggled(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.IsKeyToggled(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKeyToggled(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="static member IsKeyToggled : System.Windows.Input.Key -&gt; bool" Usage="System.Windows.Input.Keyboard.IsKeyToggled key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -663,6 +683,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyUp(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.IsKeyUp(System.Windows.Input.Key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKeyUp(System::Windows::Input::Key key);" />
+      <MemberSignature Language="F#" Value="static member IsKeyUp : System.Windows.Input.Key -&gt; bool" Usage="System.Windows.Input.Keyboard.IsKeyUp key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -704,6 +725,7 @@
       <MemberSignature Language="ILAsm" Value="see AddKeyboardInputProviderAcquireFocusHandler, and RemoveKeyboardInputProviderAcquireFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocus" />
       <MemberSignature Language="VB.NET" Value="see AddKeyboardInputProviderAcquireFocusHandler, and RemoveKeyboardInputProviderAcquireFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddKeyboardInputProviderAcquireFocusHandler, and RemoveKeyboardInputProviderAcquireFocusHandler" Usage="see AddKeyboardInputProviderAcquireFocusHandler, and RemoveKeyboardInputProviderAcquireFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -720,6 +742,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyboardInputProviderAcquireFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ KeyboardInputProviderAcquireFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyboardInputProviderAcquireFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.KeyboardInputProviderAcquireFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -745,6 +768,7 @@
       <MemberSignature Language="ILAsm" Value="see AddKeyDownHandler, and RemoveKeyDownHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.KeyDown" />
       <MemberSignature Language="VB.NET" Value="see AddKeyDownHandler, and RemoveKeyDownHandler" />
+      <MemberSignature Language="F#" Value="see AddKeyDownHandler, and RemoveKeyDownHandler" Usage="see AddKeyDownHandler, and RemoveKeyDownHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -761,6 +785,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.KeyDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyDownEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ KeyDownEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.KeyDownEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -786,6 +811,7 @@
       <MemberSignature Language="ILAsm" Value="see AddKeyUpHandler, and RemoveKeyUpHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.KeyUp" />
       <MemberSignature Language="VB.NET" Value="see AddKeyUpHandler, and RemoveKeyUpHandler" />
+      <MemberSignature Language="F#" Value="see AddKeyUpHandler, and RemoveKeyUpHandler" Usage="see AddKeyUpHandler, and RemoveKeyUpHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -802,6 +828,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.KeyUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyUpEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ KeyUpEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.KeyUpEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -827,6 +854,7 @@
       <MemberSignature Language="ILAsm" Value="see AddLostKeyboardFocusHandler, and RemoveLostKeyboardFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.LostKeyboardFocus" />
       <MemberSignature Language="VB.NET" Value="see AddLostKeyboardFocusHandler, and RemoveLostKeyboardFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddLostKeyboardFocusHandler, and RemoveLostKeyboardFocusHandler" Usage="see AddLostKeyboardFocusHandler, and RemoveLostKeyboardFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -843,6 +871,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.LostKeyboardFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LostKeyboardFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ LostKeyboardFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LostKeyboardFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.LostKeyboardFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -869,6 +898,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Keyboard.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Modifiers As ModifierKeys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::ModifierKeys Modifiers { System::Windows::Input::ModifierKeys get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys" Usage="System.Windows.Input.Keyboard.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -903,6 +933,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewGotKeyboardFocusHandler, and RemovePreviewGotKeyboardFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewGotKeyboardFocusHandler, and RemovePreviewGotKeyboardFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewGotKeyboardFocusHandler, and RemovePreviewGotKeyboardFocusHandler" Usage="see AddPreviewGotKeyboardFocusHandler, and RemovePreviewGotKeyboardFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -919,6 +950,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.PreviewGotKeyboardFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewGotKeyboardFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewGotKeyboardFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewGotKeyboardFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.PreviewGotKeyboardFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -944,6 +976,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewKeyboardInputProviderAcquireFocusHandler, and RemovePreviewKeyboardInputProviderAcquireFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocus" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewKeyboardInputProviderAcquireFocusHandler, and RemovePreviewKeyboardInputProviderAcquireFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewKeyboardInputProviderAcquireFocusHandler, and RemovePreviewKeyboardInputProviderAcquireFocusHandler" Usage="see AddPreviewKeyboardInputProviderAcquireFocusHandler, and RemovePreviewKeyboardInputProviderAcquireFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -960,6 +993,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewKeyboardInputProviderAcquireFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewKeyboardInputProviderAcquireFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewKeyboardInputProviderAcquireFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.PreviewKeyboardInputProviderAcquireFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -985,6 +1019,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewKeyDownHandler, and RemovePreviewKeyDownHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.PreviewKeyDown" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewKeyDownHandler, and RemovePreviewKeyDownHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewKeyDownHandler, and RemovePreviewKeyDownHandler" Usage="see AddPreviewKeyDownHandler, and RemovePreviewKeyDownHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1001,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.PreviewKeyDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewKeyDownEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewKeyDownEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewKeyDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.PreviewKeyDownEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1026,6 +1062,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewKeyUpHandler, and RemovePreviewKeyUpHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.PreviewKeyUp" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewKeyUpHandler, and RemovePreviewKeyUpHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewKeyUpHandler, and RemovePreviewKeyUpHandler" Usage="see AddPreviewKeyUpHandler, and RemovePreviewKeyUpHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1042,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.PreviewKeyUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewKeyUpEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewKeyUpEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewKeyUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.PreviewKeyUpEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1067,6 +1105,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewLostKeyboardFocusHandler, and RemovePreviewLostKeyboardFocusHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewLostKeyboardFocusHandler, and RemovePreviewLostKeyboardFocusHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewLostKeyboardFocusHandler, and RemovePreviewLostKeyboardFocusHandler" Usage="see AddPreviewLostKeyboardFocusHandler, and RemovePreviewLostKeyboardFocusHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1083,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewLostKeyboardFocusEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewLostKeyboardFocusEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewLostKeyboardFocusEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1109,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Keyboard.PrimaryDevice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryDevice As KeyboardDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::KeyboardDevice ^ PrimaryDevice { System::Windows::Input::KeyboardDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryDevice : System.Windows.Input.KeyboardDevice" Usage="System.Windows.Input.Keyboard.PrimaryDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1142,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemoveGotKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveGotKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveGotKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveGotKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemoveGotKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1174,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemoveKeyboardInputProviderAcquireFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveKeyboardInputProviderAcquireFocusHandler (element As DependencyObject, handler As KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveKeyboardInputProviderAcquireFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardInputProviderAcquireFocusEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveKeyboardInputProviderAcquireFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemoveKeyboardInputProviderAcquireFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1206,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemoveKeyDownHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveKeyDownHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveKeyDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveKeyDownHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemoveKeyDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1238,6 +1282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemoveKeyUpHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveKeyUpHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveKeyUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveKeyUpHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemoveKeyUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1270,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemoveLostKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveLostKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveLostKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveLostKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemoveLostKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1302,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemovePreviewGotKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewGotKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewGotKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewGotKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemovePreviewGotKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1334,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemovePreviewKeyboardInputProviderAcquireFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewKeyboardInputProviderAcquireFocusHandler (element As DependencyObject, handler As KeyboardInputProviderAcquireFocusEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewKeyboardInputProviderAcquireFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardInputProviderAcquireFocusEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewKeyboardInputProviderAcquireFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemovePreviewKeyboardInputProviderAcquireFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1366,6 +1414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemovePreviewKeyDownHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewKeyDownHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewKeyDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewKeyDownHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemovePreviewKeyDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1398,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemovePreviewKeyUpHandler(System.Windows.DependencyObject,System.Windows.Input.KeyEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewKeyUpHandler (element As DependencyObject, handler As KeyEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewKeyUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewKeyUpHandler : System.Windows.DependencyObject * System.Windows.Input.KeyEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemovePreviewKeyUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1430,6 +1480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Keyboard.RemovePreviewLostKeyboardFocusHandler(System.Windows.DependencyObject,System.Windows.Input.KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewLostKeyboardFocusHandler (element As DependencyObject, handler As KeyboardFocusChangedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewLostKeyboardFocusHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardFocusChangedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewLostKeyboardFocusHandler : System.Windows.DependencyObject * System.Windows.Input.KeyboardFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Input.Keyboard.RemovePreviewLostKeyboardFocusHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

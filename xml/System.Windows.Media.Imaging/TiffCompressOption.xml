@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.TiffCompressOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum TiffCompressOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class TiffCompressOption" />
+  <TypeSignature Language="F#" Value="type TiffCompressOption = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Ccitt3" />
       <MemberSignature Language="VB.NET" Value="Ccitt3" />
       <MemberSignature Language="C++ CLI" Value="Ccitt3" />
+      <MemberSignature Language="F#" Value="Ccitt3 = 2" Usage="System.Windows.Media.Imaging.TiffCompressOption.Ccitt3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Ccitt4" />
       <MemberSignature Language="VB.NET" Value="Ccitt4" />
       <MemberSignature Language="C++ CLI" Value="Ccitt4" />
+      <MemberSignature Language="F#" Value="Ccitt4 = 3" Usage="System.Windows.Media.Imaging.TiffCompressOption.Ccitt4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Media.Imaging.TiffCompressOption.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Lzw" />
       <MemberSignature Language="VB.NET" Value="Lzw" />
       <MemberSignature Language="C++ CLI" Value="Lzw" />
+      <MemberSignature Language="F#" Value="Lzw = 4" Usage="System.Windows.Media.Imaging.TiffCompressOption.Lzw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Media.Imaging.TiffCompressOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Rle" />
       <MemberSignature Language="VB.NET" Value="Rle" />
       <MemberSignature Language="C++ CLI" Value="Rle" />
+      <MemberSignature Language="F#" Value="Rle = 5" Usage="System.Windows.Media.Imaging.TiffCompressOption.Rle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TiffCompressOption.Zip" />
       <MemberSignature Language="VB.NET" Value="Zip" />
       <MemberSignature Language="C++ CLI" Value="Zip" />
+      <MemberSignature Language="F#" Value="Zip = 6" Usage="System.Windows.Media.Imaging.TiffCompressOption.Zip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

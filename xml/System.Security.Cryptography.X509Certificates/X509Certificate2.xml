@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />
   <TypeSignature Language="VB.NET" Value="Public Class X509Certificate2&#xA;Inherits X509Certificate" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509Certificate2 : System::Security::Cryptography::X509Certificates::X509Certificate" />
+  <TypeSignature Language="F#" Value="type X509Certificate2 = class&#xA;    inherit X509Certificate" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : byte[] -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 rawData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(IntPtr handle);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : nativeint -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 handle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -215,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : string -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -308,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[],System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte(), password As SecureString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(cli::array &lt;System::Byte&gt; ^ rawData, System::Security::SecureString ^ password);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : byte[] * System.Security.SecureString -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (rawData, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -360,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte(), password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(cli::array &lt;System::Byte&gt; ^ rawData, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : byte[] * string -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (rawData, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -414,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; X509Certificate2(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, password As SecureString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::String ^ fileName, System::Security::SecureString ^ password);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : string * System.Security.SecureString -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (fileName, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -499,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::String ^ fileName, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : string * string -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (fileName, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -553,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte(), password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(cli::array &lt;System::Byte&gt; ^ rawData, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (rawData, password, keyStorageFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -607,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawData As Byte(), password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(cli::array &lt;System::Byte&gt; ^ rawData, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (rawData, password, keyStorageFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -663,6 +675,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::String ^ fileName, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (fileName, password, keyStorageFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -712,6 +725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2(System::String ^ fileName, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2 : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2 (fileName, password, keyStorageFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -768,6 +782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.Archived" />
       <MemberSignature Language="VB.NET" Value="Public Property Archived As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Archived { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Archived : bool with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.Archived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -820,6 +835,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Export (contentType As X509ContentType, password As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Export(System::Security::Cryptography::X509Certificates::X509ContentType contentType, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="abstract member Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]&#xA;override this.Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]" Usage="x509Certificate2.Export (contentType, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -852,6 +868,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As X509ExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509ExtensionCollection ^ Extensions { System::Security::Cryptography::X509Certificates::X509ExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Security.Cryptography.X509Certificates.X509ExtensionCollection" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -963,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCertContentType (rawData As Byte()) As X509ContentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509ContentType GetCertContentType(cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="static member GetCertContentType : byte[] -&gt; System.Security.Cryptography.X509Certificates.X509ContentType" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType rawData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1022,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCertContentType (fileName As String) As X509ContentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509ContentType GetCertContentType(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="static member GetCertContentType : string -&gt; System.Security.Cryptography.X509Certificates.X509ContentType" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1073,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetNameInfo(System.Security.Cryptography.X509Certificates.X509NameType,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNameInfo (nameType As X509NameType, forIssuer As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNameInfo(System::Security::Cryptography::X509Certificates::X509NameType nameType, bool forIssuer);" />
+      <MemberSignature Language="F#" Value="member this.GetNameInfo : System.Security.Cryptography.X509Certificates.X509NameType * bool -&gt; string" Usage="x509Certificate2.GetNameInfo (nameType, forIssuer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1133,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPrivateKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPrivateKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPrivateKey : bool" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1177,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="abstract member Import : byte[] -&gt; unit&#xA;override this.Import : byte[] -&gt; unit" Usage="x509Certificate2.Import rawData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1221,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member Import : string -&gt; unit&#xA;override this.Import : string -&gt; unit" Usage="x509Certificate2.Import fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1265,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte(), password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Import : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1319,6 +1344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte(), password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1384,6 +1410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String, password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Import : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1435,6 +1462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String, password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
+      <MemberSignature Language="F#" Value="abstract member Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1489,6 +1517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerName As X500DistinguishedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ IssuerName { System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerName : System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1540,6 +1569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotAfter As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NotAfter { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotAfter : DateTime" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1589,6 +1619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotBefore As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NotBefore { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotBefore : DateTime" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1638,6 +1669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivateKey As AsymmetricAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::AsymmetricAlgorithm ^ PrivateKey { System::Security::Cryptography::AsymmetricAlgorithm ^ get(); void set(System::Security::Cryptography::AsymmetricAlgorithm ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivateKey : System.Security.Cryptography.AsymmetricAlgorithm with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1694,6 +1726,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As PublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::PublicKey ^ PublicKey { System::Security::Cryptography::X509Certificates::PublicKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.X509Certificates.PublicKey" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1745,6 +1778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.RawData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawData As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ RawData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RawData : byte[]" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.RawData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1788,6 +1822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="x509Certificate2.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1827,6 +1862,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.SerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerialNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerialNumber : string" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.SerialNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1875,6 +1911,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureAlgorithm As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ SignatureAlgorithm { System::Security::Cryptography::Oid ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.SignatureAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1924,6 +1961,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.SubjectName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectName As X500DistinguishedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ SubjectName { System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectName : System.Security.Cryptography.X509Certificates.X500DistinguishedName" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.SubjectName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1973,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.Thumbprint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Thumbprint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Thumbprint { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thumbprint : string" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.Thumbprint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -2032,6 +2071,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="x509Certificate2.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -2083,6 +2123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString (verbose As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString(bool verbose);" />
+      <MemberSignature Language="F#" Value="abstract member ToString : bool -&gt; string&#xA;override this.ToString : bool -&gt; string" Usage="x509Certificate2.ToString verbose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -2138,6 +2179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Verify" />
       <MemberSignature Language="VB.NET" Value="Public Function Verify () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Verify();" />
+      <MemberSignature Language="F#" Value="member this.Verify : unit -&gt; bool" Usage="x509Certificate2.Verify " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2194,6 +2236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

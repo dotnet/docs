@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizabilityResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BamlLocalizabilityResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class BamlLocalizabilityResolver abstract" />
+  <TypeSignature Language="F#" Value="type BamlLocalizabilityResolver = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.GetElementLocalizability(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElementLocalizability (assembly As String, className As String) As ElementLocalizability" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Markup::Localizer::ElementLocalizability ^ GetElementLocalizability(System::String ^ assembly, System::String ^ className);" />
+      <MemberSignature Language="F#" Value="abstract member GetElementLocalizability : string * string -&gt; System.Windows.Markup.Localizer.ElementLocalizability" Usage="bamlLocalizabilityResolver.GetElementLocalizability (assembly, className)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.GetPropertyLocalizability(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPropertyLocalizability (assembly As String, className As String, property As String) As LocalizabilityAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::LocalizabilityAttribute ^ GetPropertyLocalizability(System::String ^ assembly, System::String ^ className, System::String ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyLocalizability : string * string * string -&gt; System.Windows.LocalizabilityAttribute" Usage="bamlLocalizabilityResolver.GetPropertyLocalizability (assembly, className, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.ResolveAssemblyFromClass(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveAssemblyFromClass (className As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResolveAssemblyFromClass(System::String ^ className);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAssemblyFromClass : string -&gt; string" Usage="bamlLocalizabilityResolver.ResolveAssemblyFromClass className" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizabilityResolver.ResolveFormattingTagToClass(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveFormattingTagToClass (formattingTag As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResolveFormattingTagToClass(System::String ^ formattingTag);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveFormattingTagToClass : string -&gt; string" Usage="bamlLocalizabilityResolver.ResolveFormattingTagToClass formattingTag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

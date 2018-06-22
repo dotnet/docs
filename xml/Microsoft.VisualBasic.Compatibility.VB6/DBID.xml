@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" />
   <TypeSignature Language="VB.NET" Value="Public Structure DBID" />
   <TypeSignature Language="C++ CLI" Value="public value class DBID" />
+  <TypeSignature Language="F#" Value="type DBID = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.dbkind" />
       <MemberSignature Language="VB.NET" Value="Public dbkind As DBKINDENUM " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::DBKINDENUM dbkind;" />
+      <MemberSignature Language="F#" Value="val mutable dbkind : Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBID.dbkind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uGuid" />
       <MemberSignature Language="VB.NET" Value="Public uGuid As UGUID " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::UGUID uGuid;" />
+      <MemberSignature Language="F#" Value="val mutable uGuid : Microsoft.VisualBasic.Compatibility.VB6.UGUID" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBID.uGuid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uName" />
       <MemberSignature Language="VB.NET" Value="Public uName As UNAME " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::UNAME uName;" />
+      <MemberSignature Language="F#" Value="val mutable uName : Microsoft.VisualBasic.Compatibility.VB6.UNAME" Usage="Microsoft.VisualBasic.Compatibility.VB6.DBID.uName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

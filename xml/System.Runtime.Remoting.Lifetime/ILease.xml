@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.ILease" />
   <TypeSignature Language="VB.NET" Value="Public Interface ILease" />
   <TypeSignature Language="C++ CLI" Value="public interface class ILease" />
+  <TypeSignature Language="F#" Value="type ILease = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ILease.CurrentLeaseTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentLeaseTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CurrentLeaseTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentLeaseTime : TimeSpan" Usage="System.Runtime.Remoting.Lifetime.ILease.CurrentLeaseTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ILease.CurrentState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As LeaseState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Lifetime::LeaseState CurrentState { System::Runtime::Remoting::Lifetime::LeaseState get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Runtime.Remoting.Lifetime.LeaseState" Usage="System.Runtime.Remoting.Lifetime.ILease.CurrentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ILease.InitialLeaseTime" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialLeaseTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InitialLeaseTime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialLeaseTime : TimeSpan with get, set" Usage="System.Runtime.Remoting.Lifetime.ILease.InitialLeaseTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ILease.Register(System.Runtime.Remoting.Lifetime.ISponsor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register (obj As ISponsor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register(System::Runtime::Remoting::Lifetime::ISponsor ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Register : System.Runtime.Remoting.Lifetime.ISponsor -&gt; unit" Usage="iLease.Register obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ILease.Register(System.Runtime.Remoting.Lifetime.ISponsor,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register (obj As ISponsor, renewalTime As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register(System::Runtime::Remoting::Lifetime::ISponsor ^ obj, TimeSpan renewalTime);" />
+      <MemberSignature Language="F#" Value="abstract member Register : System.Runtime.Remoting.Lifetime.ISponsor * TimeSpan -&gt; unit" Usage="iLease.Register (obj, renewalTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ILease.Renew(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Renew (renewalTime As TimeSpan) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan Renew(TimeSpan renewalTime);" />
+      <MemberSignature Language="F#" Value="abstract member Renew : TimeSpan -&gt; TimeSpan" Usage="iLease.Renew renewalTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ILease.RenewOnCallTime" />
       <MemberSignature Language="VB.NET" Value="Public Property RenewOnCallTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RenewOnCallTime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RenewOnCallTime : TimeSpan with get, set" Usage="System.Runtime.Remoting.Lifetime.ILease.RenewOnCallTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ILease.SponsorshipTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property SponsorshipTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SponsorshipTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SponsorshipTimeout : TimeSpan with get, set" Usage="System.Runtime.Remoting.Lifetime.ILease.SponsorshipTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ILease.Unregister(System.Runtime.Remoting.Lifetime.ISponsor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unregister (obj As ISponsor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister(System::Runtime::Remoting::Lifetime::ISponsor ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : System.Runtime.Remoting.Lifetime.ISponsor -&gt; unit" Usage="iLease.Unregister obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

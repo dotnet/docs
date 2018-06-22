@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.EventWaitHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class EventWaitHandle&#xA;Inherits WaitHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventWaitHandle : System::Threading::WaitHandle" />
+  <TypeSignature Language="F#" Value="type EventWaitHandle = class&#xA;    inherit WaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -206,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string *  -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name, createdNew)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -265,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean, eventSecurity As EventWaitHandleSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew, System::Security::AccessControl::EventWaitHandleSecurity ^ eventSecurity);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string *  * System.Security.AccessControl.EventWaitHandleSecurity -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name, createdNew, eventSecurity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -339,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As EventWaitHandleSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::EventWaitHandleSecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.EventWaitHandleSecurity" Usage="eventWaitHandle.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -408,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.OpenExisting(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String) As EventWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::EventWaitHandle ^ OpenExisting(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string -&gt; System.Threading.EventWaitHandle" Usage="System.Threading.EventWaitHandle.OpenExisting name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -489,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.OpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String, rights As EventWaitHandleRights) As EventWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::EventWaitHandle ^ OpenExisting(System::String ^ name, System::Security::AccessControl::EventWaitHandleRights rights);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.Security.AccessControl.EventWaitHandleRights -&gt; System.Threading.EventWaitHandle" Usage="System.Threading.EventWaitHandle.OpenExisting (name, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -559,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Function Reset () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; bool" Usage="eventWaitHandle.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -599,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.Set" />
       <MemberSignature Language="VB.NET" Value="Public Function Set () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set();" />
+      <MemberSignature Language="F#" Value="member this.Set : unit -&gt; bool" Usage="eventWaitHandle.Set " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -662,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.SetAccessControl(System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessControl (eventSecurity As EventWaitHandleSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::EventWaitHandleSecurity ^ eventSecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.EventWaitHandleSecurity -&gt; unit" Usage="eventWaitHandle.SetAccessControl eventSecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -732,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, ByRef result As EventWaitHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, [Runtime::InteropServices::Out] System::Threading::EventWaitHandle ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string *  -&gt; bool" Usage="System.Threading.EventWaitHandle.TryOpenExisting (name, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -800,6 +812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, rights As EventWaitHandleRights, ByRef result As EventWaitHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, System::Security::AccessControl::EventWaitHandleRights rights, [Runtime::InteropServices::Out] System::Threading::EventWaitHandle ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string * System.Security.AccessControl.EventWaitHandleRights *  -&gt; bool" Usage="System.Threading.EventWaitHandle.TryOpenExisting (name, rights, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

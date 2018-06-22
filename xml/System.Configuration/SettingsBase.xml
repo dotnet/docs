@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SettingsBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsBase abstract" />
+  <TypeSignature Language="F#" Value="type SettingsBase = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Context" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Context As SettingsContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsContext ^ Context { System::Configuration::SettingsContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Configuration.SettingsContext" Usage="System.Configuration.SettingsBase.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Initialize(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection,System.Configuration.SettingsProviderCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (context As SettingsContext, properties As SettingsPropertyCollection, providers As SettingsProviderCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties, System::Configuration::SettingsProviderCollection ^ providers);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection * System.Configuration.SettingsProviderCollection -&gt; unit" Usage="settingsBase.Initialize (context, properties, providers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Configuration.SettingsBase.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Configuration.SettingsBase.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As SettingsPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsPropertyCollection ^ Properties { System::Configuration::SettingsPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.SettingsPropertyCollection" Usage="System.Configuration.SettingsBase.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.PropertyValues" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyValues As SettingsPropertyValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsPropertyValueCollection ^ PropertyValues { System::Configuration::SettingsPropertyValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyValues : System.Configuration.SettingsPropertyValueCollection" Usage="System.Configuration.SettingsBase.PropertyValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Providers As SettingsProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsProviderCollection ^ Providers { System::Configuration::SettingsProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.SettingsProviderCollection" Usage="System.Configuration.SettingsBase.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Save" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit&#xA;override this.Save : unit -&gt; unit" Usage="settingsBase.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.SettingsBase Synchronized(class System.Configuration.SettingsBase settingsBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Synchronized(System.Configuration.SettingsBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::SettingsBase ^ Synchronized(System::Configuration::SettingsBase ^ settingsBase);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Configuration.SettingsBase -&gt; System.Configuration.SettingsBase" Usage="System.Configuration.SettingsBase.Synchronized settingsBase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

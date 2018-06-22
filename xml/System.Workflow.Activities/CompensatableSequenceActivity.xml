@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CompensatableSequenceActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompensatableSequenceActivity&#xA;Inherits SequenceActivity&#xA;Implements ICompensatableActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompensatableSequenceActivity sealed : System::Workflow::Activities::SequenceActivity, System::Workflow::ComponentModel::ICompensatableActivity" />
+  <TypeSignature Language="F#" Value="type CompensatableSequenceActivity = class&#xA;    inherit SequenceActivity&#xA;    interface ICompensatableActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CompensatableSequenceActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensatableSequenceActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.CompensatableSequenceActivity : string -&gt; System.Workflow.Activities.CompensatableSequenceActivity" Usage="new System.Workflow.Activities.CompensatableSequenceActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

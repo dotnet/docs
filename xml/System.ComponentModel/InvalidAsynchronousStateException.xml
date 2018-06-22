@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InvalidAsynchronousStateException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidAsynchronousStateException&#xA;Inherits ArgumentException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidAsynchronousStateException : ArgumentException" />
+  <TypeSignature Language="F#" Value="type InvalidAsynchronousStateException = class&#xA;    inherit ArgumentException" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidAsynchronousStateException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidAsynchronousStateException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidAsynchronousStateException : string -&gt; System.ComponentModel.InvalidAsynchronousStateException" Usage="new System.ComponentModel.InvalidAsynchronousStateException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidAsynchronousStateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidAsynchronousStateException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidAsynchronousStateException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.InvalidAsynchronousStateException" Usage="new System.ComponentModel.InvalidAsynchronousStateException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidAsynchronousStateException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidAsynchronousStateException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidAsynchronousStateException : string * Exception -&gt; System.ComponentModel.InvalidAsynchronousStateException" Usage="new System.ComponentModel.InvalidAsynchronousStateException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

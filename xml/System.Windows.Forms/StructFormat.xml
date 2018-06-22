@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StructFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum StructFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class StructFormat" />
+  <TypeSignature Language="F#" Value="type StructFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Ansi" />
       <MemberSignature Language="VB.NET" Value="Ansi" />
       <MemberSignature Language="C++ CLI" Value="Ansi" />
+      <MemberSignature Language="F#" Value="Ansi = 1" Usage="System.Windows.Forms.StructFormat.Ansi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 3" Usage="System.Windows.Forms.StructFormat.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Unicode" />
       <MemberSignature Language="VB.NET" Value="Unicode" />
       <MemberSignature Language="C++ CLI" Value="Unicode" />
+      <MemberSignature Language="F#" Value="Unicode = 2" Usage="System.Windows.Forms.StructFormat.Unicode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

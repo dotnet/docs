@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SuppressMessageAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SuppressMessageAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SuppressMessageAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tools</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As String, checkId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SuppressMessageAttribute(System::String ^ category, System::String ^ checkId);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.CodeAnalysis.SuppressMessageAttribute : string * string -&gt; System.Diagnostics.CodeAnalysis.SuppressMessageAttribute" Usage="new System.Diagnostics.CodeAnalysis.SuppressMessageAttribute (category, checkId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.CheckId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CheckId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckId : string" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.CheckId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Justification" />
       <MemberSignature Language="VB.NET" Value="Public Property Justification As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Justification { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Justification : string with get, set" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Justification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.MessageId" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageId : string with get, set" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.MessageId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -282,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tools</AssemblyName>

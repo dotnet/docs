@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollChangedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollChangedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ScrollChangedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ExtentHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ExtentHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ExtentHeightChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeightChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeightChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeightChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ExtentHeightChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ExtentWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ExtentWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ExtentWidthChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidthChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidthChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidthChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ExtentWidthChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.HorizontalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.HorizontalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollChangedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="scrollChangedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.VerticalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.VerticalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ViewportHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ViewportHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ViewportHeightChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeightChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeightChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeightChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ViewportHeightChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ViewportWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ViewportWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollChangedEventArgs.ViewportWidthChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidthChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidthChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidthChange : double" Usage="System.Windows.Controls.ScrollChangedEventArgs.ViewportWidthChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

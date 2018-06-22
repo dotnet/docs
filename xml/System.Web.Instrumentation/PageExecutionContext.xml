@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Instrumentation.PageExecutionContext" />
   <TypeSignature Language="VB.NET" Value="Public Class PageExecutionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageExecutionContext" />
+  <TypeSignature Language="F#" Value="type PageExecutionContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageExecutionContext.IsLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLiteral As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiteral { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLiteral : bool with get, set" Usage="System.Web.Instrumentation.PageExecutionContext.IsLiteral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageExecutionContext.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Web.Instrumentation.PageExecutionContext.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageExecutionContext.StartPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPosition { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartPosition : int with get, set" Usage="System.Web.Instrumentation.PageExecutionContext.StartPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageExecutionContext.TextWriter" />
       <MemberSignature Language="VB.NET" Value="Public Property TextWriter As TextWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ TextWriter { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextWriter : System.IO.TextWriter with get, set" Usage="System.Web.Instrumentation.PageExecutionContext.TextWriter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageExecutionContext.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string with get, set" Usage="System.Web.Instrumentation.PageExecutionContext.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

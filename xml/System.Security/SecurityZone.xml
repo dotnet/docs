@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityZone" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityZone" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityZone" />
+  <TypeSignature Language="F#" Value="type SecurityZone = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Internet" />
       <MemberSignature Language="VB.NET" Value="Internet" />
       <MemberSignature Language="C++ CLI" Value="Internet" />
+      <MemberSignature Language="F#" Value="Internet = 3" Usage="System.Security.SecurityZone.Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Intranet" />
       <MemberSignature Language="VB.NET" Value="Intranet" />
       <MemberSignature Language="C++ CLI" Value="Intranet" />
+      <MemberSignature Language="F#" Value="Intranet = 1" Usage="System.Security.SecurityZone.Intranet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.MyComputer" />
       <MemberSignature Language="VB.NET" Value="MyComputer" />
       <MemberSignature Language="C++ CLI" Value="MyComputer" />
+      <MemberSignature Language="F#" Value="MyComputer = 0" Usage="System.Security.SecurityZone.MyComputer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.NoZone" />
       <MemberSignature Language="VB.NET" Value="NoZone" />
       <MemberSignature Language="C++ CLI" Value="NoZone" />
+      <MemberSignature Language="F#" Value="NoZone = -1" Usage="System.Security.SecurityZone.NoZone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Trusted" />
       <MemberSignature Language="VB.NET" Value="Trusted" />
       <MemberSignature Language="C++ CLI" Value="Trusted" />
+      <MemberSignature Language="F#" Value="Trusted = 2" Usage="System.Security.SecurityZone.Trusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Untrusted" />
       <MemberSignature Language="VB.NET" Value="Untrusted" />
       <MemberSignature Language="C++ CLI" Value="Untrusted" />
+      <MemberSignature Language="F#" Value="Untrusted = 4" Usage="System.Security.SecurityZone.Untrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Eval" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Eval&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class Eval sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type Eval = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Eval.JScriptEvaluate(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptEvaluate (source As Object, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptEvaluate(System::Object ^ source, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member JScriptEvaluate : obj * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="Microsoft.JScript.Eval.JScriptEvaluate (source, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Eval.JScriptEvaluate(System.Object,System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptEvaluate (source As Object, unsafeOption As Object, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptEvaluate(System::Object ^ source, System::Object ^ unsafeOption, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member JScriptEvaluate : obj * obj * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="Microsoft.JScript.Eval.JScriptEvaluate (source, unsafeOption, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

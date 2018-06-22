@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationFileMap" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationFileMap&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationFileMap : ICloneable" />
+  <TypeSignature Language="F#" Value="type ConfigurationFileMap = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationFileMap.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (machineConfigFilename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationFileMap(System::String ^ machineConfigFilename);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationFileMap : string -&gt; System.Configuration.ConfigurationFileMap" Usage="new System.Configuration.ConfigurationFileMap machineConfigFilename" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationFileMap.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="configurationFileMap.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationFileMap.MachineConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineConfigFilename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineConfigFilename { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineConfigFilename : string with get, set" Usage="System.Configuration.ConfigurationFileMap.MachineConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

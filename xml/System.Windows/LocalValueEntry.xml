@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalValueEntry" />
   <TypeSignature Language="VB.NET" Value="Public Structure LocalValueEntry" />
   <TypeSignature Language="C++ CLI" Value="public value class LocalValueEntry" />
+  <TypeSignature Language="F#" Value="type LocalValueEntry = struct" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEntry.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="localValueEntry.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEntry.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="localValueEntry.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEntry.op_Equality(System.Windows.LocalValueEntry,System.Windows.LocalValueEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (obj1 As LocalValueEntry, obj2 As LocalValueEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::LocalValueEntry obj1, System::Windows::LocalValueEntry obj2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.LocalValueEntry * System.Windows.LocalValueEntry -&gt; bool" Usage="obj1 = obj2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEntry.op_Inequality(System.Windows.LocalValueEntry,System.Windows.LocalValueEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (obj1 As LocalValueEntry, obj2 As LocalValueEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::LocalValueEntry obj1, System::Windows::LocalValueEntry obj2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.LocalValueEntry * System.Windows.LocalValueEntry -&gt; bool" Usage="System.Windows.LocalValueEntry.op_Inequality (obj1, obj2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEntry.Property" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty" Usage="System.Windows.LocalValueEntry.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Windows.LocalValueEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAceFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum ObjectAceFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class ObjectAceFlags" />
+  <TypeSignature Language="F#" Value="type ObjectAceFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" />
       <MemberSignature Language="VB.NET" Value="InheritedObjectAceTypePresent" />
       <MemberSignature Language="C++ CLI" Value="InheritedObjectAceTypePresent" />
+      <MemberSignature Language="F#" Value="InheritedObjectAceTypePresent = 2" Usage="System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.ObjectAceFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" />
       <MemberSignature Language="VB.NET" Value="ObjectAceTypePresent" />
       <MemberSignature Language="C++ CLI" Value="ObjectAceTypePresent" />
+      <MemberSignature Language="F#" Value="ObjectAceTypePresent = 1" Usage="System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

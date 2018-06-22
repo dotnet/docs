@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Evidence" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Evidence" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Evidence" />
+  <TypeSignature Language="F#" Value="type Saml2Evidence = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.IdentityModel.Tokens.Saml2Assertion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assertion As Saml2Assertion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Evidence(System::IdentityModel::Tokens::Saml2Assertion ^ assertion);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Evidence : System.IdentityModel.Tokens.Saml2Assertion -&gt; System.IdentityModel.Tokens.Saml2Evidence" Usage="new System.IdentityModel.Tokens.Saml2Evidence assertion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.IdentityModel.Tokens.Saml2Id)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (idReference As Saml2Id)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Evidence(System::IdentityModel::Tokens::Saml2Id ^ idReference);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Evidence : System.IdentityModel.Tokens.Saml2Id -&gt; System.IdentityModel.Tokens.Saml2Evidence" Usage="new System.IdentityModel.Tokens.Saml2Evidence idReference" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uriReference As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Evidence(Uri ^ uriReference);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Evidence : Uri -&gt; System.IdentityModel.Tokens.Saml2Evidence" Usage="new System.IdentityModel.Tokens.Saml2Evidence uriReference" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionIdReferences As Collection(Of Saml2Id)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Id ^&gt; ^ AssertionIdReferences { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Id ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssertionIdReferences : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Id&gt;" Usage="System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Evidence.Assertions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assertions As Collection(Of Saml2Assertion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Assertion ^&gt; ^ Assertions { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Assertion ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assertions : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Assertion&gt;" Usage="System.IdentityModel.Tokens.Saml2Evidence.Assertions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionUriReferences As Collection(Of Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ AssertionUriReferences { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssertionUriReferences : System.Collections.ObjectModel.Collection&lt;Uri&gt;" Usage="System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

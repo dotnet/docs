@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceEndpointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceEndpointCollection&#xA;Inherits Collection(Of ServiceEndpoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceEndpointCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceEndpointCollection = class&#xA;    inherit Collection&lt;ServiceEndpoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.Find(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (contractType As Type) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ Find(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="member this.Find : Type -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceEndpointCollection.Find contractType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.Find(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (address As Uri) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ Find(Uri ^ address);" />
+      <MemberSignature Language="F#" Value="member this.Find : Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceEndpointCollection.Find address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.Find(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (contractName As XmlQualifiedName) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ Find(System::Xml::XmlQualifiedName ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.Find : System.Xml.XmlQualifiedName -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceEndpointCollection.Find contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.Find(System.Type,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (contractType As Type, bindingName As XmlQualifiedName) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ Find(Type ^ contractType, System::Xml::XmlQualifiedName ^ bindingName);" />
+      <MemberSignature Language="F#" Value="member this.Find : Type * System.Xml.XmlQualifiedName -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceEndpointCollection.Find (contractType, bindingName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.Find(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (contractName As XmlQualifiedName, bindingName As XmlQualifiedName) As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ Find(System::Xml::XmlQualifiedName ^ contractName, System::Xml::XmlQualifiedName ^ bindingName);" />
+      <MemberSignature Language="F#" Value="member this.Find : System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceEndpointCollection.Find (contractName, bindingName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.FindAll(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (contractType As Type) As Collection(Of ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ FindAll(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : Type -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" Usage="serviceEndpointCollection.FindAll contractType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.FindAll(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (contractName As XmlQualifiedName) As Collection(Of ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ FindAll(System::Xml::XmlQualifiedName ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : System.Xml.XmlQualifiedName -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" Usage="serviceEndpointCollection.FindAll contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.InsertItem(System.Int32,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Description::ServiceEndpoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="serviceEndpointCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpointCollection.SetItem(System.Int32,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Description::ServiceEndpoint ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="serviceEndpointCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

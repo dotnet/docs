@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.AxComponentEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class AxHost.AxComponentEditor&#xA;Inherits WindowsFormsComponentEditor" />
   <TypeSignature Language="C++ CLI" Value="public: ref class AxHost::AxComponentEditor : System::Windows::Forms::Design::WindowsFormsComponentEditor" />
+  <TypeSignature Language="F#" Value="type AxHost.AxComponentEditor = class&#xA;    inherit WindowsFormsComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.AxComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditComponent (context As ITypeDescriptorContext, obj As Object, parent As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ obj, System::Windows::Forms::IWin32Window ^ parent);" />
+      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="axComponentEditor.EditComponent (context, obj, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

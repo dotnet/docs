@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class StringUnit" />
+  <TypeSignature Language="F#" Value="type StringUnit = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Display" />
       <MemberSignature Language="VB.NET" Value="Display" />
       <MemberSignature Language="C++ CLI" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 1" Usage="System.Drawing.StringUnit.Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 5" Usage="System.Drawing.StringUnit.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Em" />
       <MemberSignature Language="VB.NET" Value="Em" />
       <MemberSignature Language="C++ CLI" Value="Em" />
+      <MemberSignature Language="F#" Value="Em = 32" Usage="System.Drawing.StringUnit.Em" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Inch" />
       <MemberSignature Language="VB.NET" Value="Inch" />
       <MemberSignature Language="C++ CLI" Value="Inch" />
+      <MemberSignature Language="F#" Value="Inch = 4" Usage="System.Drawing.StringUnit.Inch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Millimeter" />
       <MemberSignature Language="VB.NET" Value="Millimeter" />
       <MemberSignature Language="C++ CLI" Value="Millimeter" />
+      <MemberSignature Language="F#" Value="Millimeter = 6" Usage="System.Drawing.StringUnit.Millimeter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Pixel" />
       <MemberSignature Language="VB.NET" Value="Pixel" />
       <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 2" Usage="System.Drawing.StringUnit.Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Point" />
       <MemberSignature Language="VB.NET" Value="Point" />
       <MemberSignature Language="C++ CLI" Value="Point" />
+      <MemberSignature Language="F#" Value="Point = 3" Usage="System.Drawing.StringUnit.Point" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.World" />
       <MemberSignature Language="VB.NET" Value="World" />
       <MemberSignature Language="C++ CLI" Value="World" />
+      <MemberSignature Language="F#" Value="World = 0" Usage="System.Drawing.StringUnit.World" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

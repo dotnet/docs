@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ClientWebSocketFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClientWebSocketFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientWebSocketFactory abstract" />
+  <TypeSignature Language="F#" Value="type ClientWebSocketFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ClientWebSocketFactory.CreateWebSocket(System.IO.Stream,System.ServiceModel.Channels.WebSocketTransportSettings)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateWebSocket (connection As Stream, settings As WebSocketTransportSettings) As WebSocket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Net::WebSockets::WebSocket ^ CreateWebSocket(System::IO::Stream ^ connection, System::ServiceModel::Channels::WebSocketTransportSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebSocket : System.IO.Stream * System.ServiceModel.Channels.WebSocketTransportSettings -&gt; System.Net.WebSockets.WebSocket" Usage="clientWebSocketFactory.CreateWebSocket (connection, settings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ClientWebSocketFactory.WebSocketVersion" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property WebSocketVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ WebSocketVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketVersion : string" Usage="System.ServiceModel.Channels.ClientWebSocketFactory.WebSocketVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialPinChange" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerialPinChange" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerialPinChange" />
+  <TypeSignature Language="F#" Value="type SerialPinChange = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.Break" />
       <MemberSignature Language="VB.NET" Value="Break" />
       <MemberSignature Language="C++ CLI" Value="Break" />
+      <MemberSignature Language="F#" Value="Break = 64" Usage="System.IO.Ports.SerialPinChange.Break" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.CDChanged" />
       <MemberSignature Language="VB.NET" Value="CDChanged" />
       <MemberSignature Language="C++ CLI" Value="CDChanged" />
+      <MemberSignature Language="F#" Value="CDChanged = 32" Usage="System.IO.Ports.SerialPinChange.CDChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.CtsChanged" />
       <MemberSignature Language="VB.NET" Value="CtsChanged" />
       <MemberSignature Language="C++ CLI" Value="CtsChanged" />
+      <MemberSignature Language="F#" Value="CtsChanged = 8" Usage="System.IO.Ports.SerialPinChange.CtsChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.DsrChanged" />
       <MemberSignature Language="VB.NET" Value="DsrChanged" />
       <MemberSignature Language="C++ CLI" Value="DsrChanged" />
+      <MemberSignature Language="F#" Value="DsrChanged = 16" Usage="System.IO.Ports.SerialPinChange.DsrChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.Ring" />
       <MemberSignature Language="VB.NET" Value="Ring" />
       <MemberSignature Language="C++ CLI" Value="Ring" />
+      <MemberSignature Language="F#" Value="Ring = 256" Usage="System.IO.Ports.SerialPinChange.Ring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

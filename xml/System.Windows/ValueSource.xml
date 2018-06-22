@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ValueSource" />
   <TypeSignature Language="VB.NET" Value="Public Structure ValueSource" />
   <TypeSignature Language="C++ CLI" Value="public value class ValueSource" />
+  <TypeSignature Language="F#" Value="type ValueSource = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.BaseValueSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseValueSource As BaseValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::BaseValueSource BaseValueSource { System::Windows::BaseValueSource get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseValueSource : System.Windows.BaseValueSource" Usage="System.Windows.ValueSource.BaseValueSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="valueSource.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueSource.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsAnimated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnimated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnimated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAnimated : bool" Usage="System.Windows.ValueSource.IsAnimated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsCoerced" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCoerced As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCoerced { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCoerced : bool" Usage="System.Windows.ValueSource.IsCoerced" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsCurrent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCurrent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCurrent : bool" Usage="System.Windows.ValueSource.IsCurrent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ValueSource.IsExpression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExpression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpression { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsExpression : bool" Usage="System.Windows.ValueSource.IsExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.op_Equality(System.Windows.ValueSource,System.Windows.ValueSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (vs1 As ValueSource, vs2 As ValueSource) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::ValueSource vs1, System::Windows::ValueSource vs2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.ValueSource * System.Windows.ValueSource -&gt; bool" Usage="vs1 = vs2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ValueSource.op_Inequality(System.Windows.ValueSource,System.Windows.ValueSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (vs1 As ValueSource, vs2 As ValueSource) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::ValueSource vs1, System::Windows::ValueSource vs2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.ValueSource * System.Windows.ValueSource -&gt; bool" Usage="System.Windows.ValueSource.op_Inequality (vs1, vs2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsNameValueTag&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsNameValueTag : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsNameValueTag = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsNameValueTag(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag : obj -&gt; System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -254,6 +256,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsNameValueTag(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag : string * obj -&gt; System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -282,6 +285,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -304,6 +308,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.CodeExporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeExporter abstract" />
+  <TypeSignature Language="F#" Value="type CodeExporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.CodeExporter.IncludeMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludeMetadata As CodeAttributeDeclarationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclarationCollection ^ IncludeMetadata { System::CodeDom::CodeAttributeDeclarationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeMetadata : System.CodeDom.CodeAttributeDeclarationCollection" Usage="System.Xml.Serialization.CodeExporter.IncludeMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

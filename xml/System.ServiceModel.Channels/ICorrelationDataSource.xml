@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ICorrelationDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICorrelationDataSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICorrelationDataSource" />
+  <TypeSignature Language="F#" Value="type ICorrelationDataSource = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ICorrelationDataSource.DataSources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSources As ICollection(Of CorrelationDataDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Channels::CorrelationDataDescription ^&gt; ^ DataSources { System::Collections::Generic::ICollection&lt;System::ServiceModel::Channels::CorrelationDataDescription ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSources : System.Collections.Generic.ICollection&lt;System.ServiceModel.Channels.CorrelationDataDescription&gt;" Usage="System.ServiceModel.Channels.ICorrelationDataSource.DataSources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

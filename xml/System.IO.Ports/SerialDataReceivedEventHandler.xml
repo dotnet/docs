@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialDataReceivedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SerialDataReceivedEventHandler(sender As Object, e As SerialDataReceivedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SerialDataReceivedEventHandler(System::Object ^ sender, SerialDataReceivedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SerialDataReceivedEventHandler = delegate of obj * SerialDataReceivedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.NavigationWindowAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class NavigationWindowAutomationPeer&#xA;Inherits WindowAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class NavigationWindowAutomationPeer : System::Windows::Automation::Peers::WindowAutomationPeer" />
+  <TypeSignature Language="F#" Value="type NavigationWindowAutomationPeer = class&#xA;    inherit WindowAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.NavigationWindowAutomationPeer.#ctor(System.Windows.Navigation.NavigationWindow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As NavigationWindow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NavigationWindowAutomationPeer(System::Windows::Navigation::NavigationWindow ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.NavigationWindowAutomationPeer : System.Windows.Navigation.NavigationWindow -&gt; System.Windows.Automation.Peers.NavigationWindowAutomationPeer" Usage="new System.Windows.Automation.Peers.NavigationWindowAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.NavigationWindowAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="navigationWindowAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.IFunctionResult" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFunctionResult" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFunctionResult" />
+  <TypeSignature Language="F#" Value="type IFunctionResult = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.IFunctionResult.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : obj" Usage="System.Data.Linq.IFunctionResult.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

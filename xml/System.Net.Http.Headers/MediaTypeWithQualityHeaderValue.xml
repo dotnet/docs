@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MediaTypeWithQualityHeaderValue&#xA;Inherits MediaTypeHeaderValue" />
   <TypeSignature Language="C++ CLI" Value="public ref class MediaTypeWithQualityHeaderValue sealed : System::Net::Http::Headers::MediaTypeHeaderValue" />
+  <TypeSignature Language="F#" Value="type MediaTypeWithQualityHeaderValue = class&#xA;    inherit MediaTypeHeaderValue" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mediaType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTypeWithQualityHeaderValue(System::String ^ mediaType);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue : string -&gt; System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" Usage="new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue mediaType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.#ctor(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mediaType As String, quality As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTypeWithQualityHeaderValue(System::String ^ mediaType, double quality);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue : string * double -&gt; System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" Usage="new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue (mediaType, quality)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As MediaTypeWithQualityHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::MediaTypeWithQualityHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" Usage="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Quality" />
       <MemberSignature Language="VB.NET" Value="Public Property Quality As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Quality { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Quality : Nullable&lt;double&gt; with get, set" Usage="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Quality" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeWithQualityHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As MediaTypeWithQualityHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::MediaTypeWithQualityHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

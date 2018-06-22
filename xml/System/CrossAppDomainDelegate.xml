@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CrossAppDomainDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CrossAppDomainDelegate()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CrossAppDomainDelegate();" />
+  <TypeSignature Language="F#" Value="type CrossAppDomainDelegate = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

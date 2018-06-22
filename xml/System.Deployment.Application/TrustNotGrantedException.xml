@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.TrustNotGrantedException" />
   <TypeSignature Language="VB.NET" Value="Public Class TrustNotGrantedException&#xA;Inherits DeploymentException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrustNotGrantedException : System::Deployment::Application::DeploymentException" />
+  <TypeSignature Language="F#" Value="type TrustNotGrantedException = class&#xA;    inherit DeploymentException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustNotGrantedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.TrustNotGrantedException : string -&gt; System.Deployment.Application.TrustNotGrantedException" Usage="new System.Deployment.Application.TrustNotGrantedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrustNotGrantedException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.TrustNotGrantedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Deployment.Application.TrustNotGrantedException" Usage="new System.Deployment.Application.TrustNotGrantedException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustNotGrantedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.TrustNotGrantedException : string * Exception -&gt; System.Deployment.Application.TrustNotGrantedException" Usage="new System.Deployment.Application.TrustNotGrantedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

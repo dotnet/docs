@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LoadItemsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoadItemsEventHandler(sender As Object, e As LoadItemsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LoadItemsEventHandler(System::Object ^ sender, LoadItemsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LoadItemsEventHandler = delegate of obj * LoadItemsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

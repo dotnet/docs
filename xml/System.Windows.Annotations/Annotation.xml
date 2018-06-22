@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Annotation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Annotation&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Annotation sealed : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type Annotation = class&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotationType As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.Annotation : System.Xml.XmlQualifiedName -&gt; System.Windows.Annotations.Annotation" Usage="new System.Windows.Annotations.Annotation annotationType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName,System.Guid,System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotationType As XmlQualifiedName, id As Guid, creationTime As DateTime, lastModificationTime As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType, Guid id, DateTime creationTime, DateTime lastModificationTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.Annotation : System.Xml.XmlQualifiedName * Guid * DateTime * DateTime -&gt; System.Windows.Annotations.Annotation" Usage="new System.Windows.Annotations.Annotation (annotationType, id, creationTime, lastModificationTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.AnchorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event AnchorChanged As AnnotationResourceChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ AnchorChanged;" />
+      <MemberSignature Language="F#" Value="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Anchors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchors As Collection(Of AnnotationResource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Anchors { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Anchors : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;" Usage="System.Windows.Annotations.Annotation.Anchors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnnotationType As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ AnnotationType { System::Xml::XmlQualifiedName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : System.Xml.XmlQualifiedName" Usage="System.Windows.Annotations.Annotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.AuthorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event AuthorChanged As AnnotationAuthorChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationAuthorChangedEventHandler ^ AuthorChanged;" />
+      <MemberSignature Language="F#" Value="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " Usage="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Authors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authors As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authors : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Windows.Annotations.Annotation.Authors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.CargoChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CargoChanged As AnnotationResourceChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ CargoChanged;" />
+      <MemberSignature Language="F#" Value="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Cargos" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cargos As Collection(Of AnnotationResource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Cargos { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cargos : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;" Usage="System.Windows.Annotations.Annotation.Cargos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.CreationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTime" Usage="System.Windows.Annotations.Annotation.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="annotation.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -384,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Windows.Annotations.Annotation.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.LastModificationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModificationTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModificationTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastModificationTime : DateTime" Usage="System.Windows.Annotations.Annotation.LastModificationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -434,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="annotation.ReadXml reader" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -464,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="annotation.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>

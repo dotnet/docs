@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Button" />
   <TypeSignature Language="VB.NET" Value="Public Class Button&#xA;Inherits ButtonBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Button : System::Windows::Controls::Primitives::ButtonBase" />
+  <TypeSignature Language="F#" Value="type Button = class&#xA;    inherit ButtonBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Button.IsCancel" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCancel : bool with get, set" Usage="System.Windows.Controls.Button.IsCancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Button.IsCancelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCancelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCancelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCancelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Button.IsCancelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Button.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool with get, set" Usage="System.Windows.Controls.Button.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Button.IsDefaulted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefaulted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaulted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefaulted : bool" Usage="System.Windows.Controls.Button.IsDefaulted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Button.IsDefaultedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDefaultedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDefaultedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDefaultedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Button.IsDefaultedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Button.IsDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDefaultProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDefaultProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDefaultProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Button.IsDefaultProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Button.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
+      <MemberSignature Language="F#" Value="override this.OnClick : unit -&gt; unit" Usage="button.OnClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Button.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="button.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

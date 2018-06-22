@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetDataContractSerializerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetDataContractSerializerSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type NetDataContractSerializerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.EnableUnsafeTypeForwarding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableUnsafeTypeForwarding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUnsafeTypeForwarding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnableUnsafeTypeForwarding : bool" Usage="System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.EnableUnsafeTypeForwarding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

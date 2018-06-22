@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTransaction&#xA;Inherits DbTransaction&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTransaction sealed : System::Data::Common::DbTransaction, IDisposable" />
+  <TypeSignature Language="F#" Value="type SqlTransaction = class&#xA;    inherit DbTransaction&#xA;    interface IDbTransaction&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="sqlTransaction.Commit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbTransaction.Commit</InterfaceMember>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As SqlConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlConnection ^ Connection { System::Data::SqlClient::SqlConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.SqlClient.SqlConnection" Usage="System.Data.SqlClient.SqlTransaction.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection" Usage="System.Data.SqlClient.SqlTransaction.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlTransaction.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.SqlClient.SqlTransaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbTransaction.IsolationLevel</InterfaceMember>
@@ -268,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback();" />
+      <MemberSignature Language="F#" Value="override this.Rollback : unit -&gt; unit" Usage="sqlTransaction.Rollback " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbTransaction.Rollback</InterfaceMember>
@@ -329,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Rollback(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback (transactionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback(System::String ^ transactionName);" />
+      <MemberSignature Language="F#" Value="override this.Rollback : string -&gt; unit" Usage="sqlTransaction.Rollback transactionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -390,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (savePointName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ savePointName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="sqlTransaction.Save savePointName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

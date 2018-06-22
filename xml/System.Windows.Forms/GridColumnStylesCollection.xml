@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridColumnStylesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class GridColumnStylesCollection&#xA;Inherits BaseCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridColumnStylesCollection : System::Windows::Forms::BaseCollection, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type GridColumnStylesCollection = class&#xA;    inherit BaseCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Add(System.Windows.Forms.DataGridColumnStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (column As DataGridColumnStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::Forms::DataGridColumnStyle ^ column);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.DataGridColumnStyle -&gt; int&#xA;override this.Add : System.Windows.Forms.DataGridColumnStyle -&gt; int" Usage="gridColumnStylesCollection.Add column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.AddRange(System.Windows.Forms.DataGridColumnStyle[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (columns As DataGridColumnStyle())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::DataGridColumnStyle ^&gt; ^ columns);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.DataGridColumnStyle[] -&gt; unit" Usage="gridColumnStylesCollection.AddRange columns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="gridColumnStylesCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.GridColumnStylesCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Contains(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::PropertyDescriptor ^ propertyDescriptor);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.ComponentModel.PropertyDescriptor -&gt; bool" Usage="gridColumnStylesCollection.Contains propertyDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="gridColumnStylesCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Contains(System.Windows.Forms.DataGridColumnStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (column As DataGridColumnStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::DataGridColumnStyle ^ column);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.DataGridColumnStyle -&gt; bool" Usage="gridColumnStylesCollection.Contains column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.IndexOf(System.Windows.Forms.DataGridColumnStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As DataGridColumnStyle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::DataGridColumnStyle ^ element);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.DataGridColumnStyle -&gt; int" Usage="gridColumnStylesCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(propertyDesciptor As PropertyDescriptor) As DataGridColumnStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridColumnStyle ^ default[System::ComponentModel::PropertyDescriptor ^] { System::Windows::Forms::DataGridColumnStyle ^ get(System::ComponentModel::PropertyDescriptor ^ propertyDesciptor); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.ComponentModel.PropertyDescriptor) : System.Windows.Forms.DataGridColumnStyle" Usage="System.Windows.Forms.GridColumnStylesCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataGridColumnStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridColumnStyle ^ default[int] { System::Windows::Forms::DataGridColumnStyle ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.DataGridColumnStyle" Usage="System.Windows.Forms.GridColumnStylesCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -475,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnName As String) As DataGridColumnStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridColumnStyle ^ default[System::String ^] { System::Windows::Forms::DataGridColumnStyle ^ get(System::String ^ columnName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.DataGridColumnStyle" Usage="System.Windows.Forms.GridColumnStylesCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Windows.Forms.GridColumnStylesCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -535,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (e As CollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridColumnStylesCollection.OnCollectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -568,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.Remove(System.Windows.Forms.DataGridColumnStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (column As DataGridColumnStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::DataGridColumnStyle ^ column);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.DataGridColumnStyle -&gt; unit" Usage="gridColumnStylesCollection.Remove column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -611,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="gridColumnStylesCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -655,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridColumnStylesCollection.ResetPropertyDescriptors" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetPropertyDescriptors ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetPropertyDescriptors();" />
+      <MemberSignature Language="F#" Value="member this.ResetPropertyDescriptors : unit -&gt; unit" Usage="gridColumnStylesCollection.ResetPropertyDescriptors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -747,6 +765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -771,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -954,6 +974,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -978,6 +999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1002,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridColumnStylesCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.GridColumnStylesCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

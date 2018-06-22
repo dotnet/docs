@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2SubjectConfirmation" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2SubjectConfirmation" />
+  <TypeSignature Language="F#" Value="type Saml2SubjectConfirmation = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectConfirmation(Uri ^ method);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2SubjectConfirmation : Uri -&gt; System.IdentityModel.Tokens.Saml2SubjectConfirmation" Usage="new System.IdentityModel.Tokens.Saml2SubjectConfirmation method" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri,System.IdentityModel.Tokens.Saml2SubjectConfirmationData)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As Uri, data As Saml2SubjectConfirmationData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectConfirmation(Uri ^ method, System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ data);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2SubjectConfirmation : Uri * System.IdentityModel.Tokens.Saml2SubjectConfirmationData -&gt; System.IdentityModel.Tokens.Saml2SubjectConfirmation" Usage="new System.IdentityModel.Tokens.Saml2SubjectConfirmation (method, data)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Method { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : Uri with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmation.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.NameIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Property NameIdentifier As Saml2NameIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2NameIdentifier ^ NameIdentifier { System::IdentityModel::Tokens::Saml2NameIdentifier ^ get(); void set(System::IdentityModel::Tokens::Saml2NameIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameIdentifier : System.IdentityModel.Tokens.Saml2NameIdentifier with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmation.NameIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData" />
       <MemberSignature Language="VB.NET" Value="Public Property SubjectConfirmationData As Saml2SubjectConfirmationData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ SubjectConfirmationData { System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ get(); void set(System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectConfirmationData : System.IdentityModel.Tokens.Saml2SubjectConfirmationData with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

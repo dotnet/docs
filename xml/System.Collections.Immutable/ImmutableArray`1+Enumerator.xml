@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableArray`1.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure ImmutableArray(Of T).Enumerator" />
   <TypeSignature Language="C++ CLI" Value="public: value class ImmutableArray&lt;T&gt;::Enumerator" />
+  <TypeSignature Language="F#" Value="type ImmutableArray&lt;'T&gt;.Enumerator = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableArray`1.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Collections.Immutable.ImmutableArray&lt;'T&gt;.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

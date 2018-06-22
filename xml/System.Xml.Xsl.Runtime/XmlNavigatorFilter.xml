@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlNavigatorFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlNavigatorFilter abstract" />
+  <TypeSignature Language="F#" Value="type XmlNavigatorFilter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.IsFiltered(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsFiltered (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsFiltered(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="abstract member IsFiltered : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.IsFiltered navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToContent(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToContent (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToContent(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToContent : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.MoveToContent navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowing(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToFollowing (navigator As XPathNavigator, navigatorEnd As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToFollowing(System::Xml::XPath::XPathNavigator ^ navigator, System::Xml::XPath::XPathNavigator ^ navigatorEnd);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToFollowing : System.Xml.XPath.XPathNavigator * System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.MoveToFollowing (navigator, navigatorEnd)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowingSibling(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToFollowingSibling (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToFollowingSibling(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToFollowingSibling : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.MoveToFollowingSibling navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToNextContent(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToNextContent (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToNextContent(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToNextContent : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.MoveToNextContent navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToPreviousSibling(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveToPreviousSibling (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveToPreviousSibling(System::Xml::XPath::XPathNavigator ^ navigator);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToPreviousSibling : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlNavigatorFilter.MoveToPreviousSibling navigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

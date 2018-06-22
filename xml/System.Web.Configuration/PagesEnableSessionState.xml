@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesEnableSessionState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PagesEnableSessionState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PagesEnableSessionState" />
+  <TypeSignature Language="F#" Value="type PagesEnableSessionState = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 0" Usage="System.Web.Configuration.PagesEnableSessionState.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="C++ CLI" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.Web.Configuration.PagesEnableSessionState.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 2" Usage="System.Web.Configuration.PagesEnableSessionState.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

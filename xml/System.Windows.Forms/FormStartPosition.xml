@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormStartPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormStartPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class FormStartPosition" />
+  <TypeSignature Language="F#" Value="type FormStartPosition = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterParent" />
       <MemberSignature Language="VB.NET" Value="CenterParent" />
       <MemberSignature Language="C++ CLI" Value="CenterParent" />
+      <MemberSignature Language="F#" Value="CenterParent = 4" Usage="System.Windows.Forms.FormStartPosition.CenterParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterScreen" />
       <MemberSignature Language="VB.NET" Value="CenterScreen" />
       <MemberSignature Language="C++ CLI" Value="CenterScreen" />
+      <MemberSignature Language="F#" Value="CenterScreen = 1" Usage="System.Windows.Forms.FormStartPosition.CenterScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.Manual" />
       <MemberSignature Language="VB.NET" Value="Manual" />
       <MemberSignature Language="C++ CLI" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 0" Usage="System.Windows.Forms.FormStartPosition.Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultBounds" />
       <MemberSignature Language="VB.NET" Value="WindowsDefaultBounds" />
       <MemberSignature Language="C++ CLI" Value="WindowsDefaultBounds" />
+      <MemberSignature Language="F#" Value="WindowsDefaultBounds = 3" Usage="System.Windows.Forms.FormStartPosition.WindowsDefaultBounds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultLocation" />
       <MemberSignature Language="VB.NET" Value="WindowsDefaultLocation" />
       <MemberSignature Language="C++ CLI" Value="WindowsDefaultLocation" />
+      <MemberSignature Language="F#" Value="WindowsDefaultLocation = 2" Usage="System.Windows.Forms.FormStartPosition.WindowsDefaultLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

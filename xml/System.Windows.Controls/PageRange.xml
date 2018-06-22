@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRange" />
   <TypeSignature Language="VB.NET" Value="Public Structure PageRange" />
   <TypeSignature Language="C++ CLI" Value="public value class PageRange" />
+  <TypeSignature Language="F#" Value="type PageRange = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (page As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageRange(int page);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.PageRange : int -&gt; System.Windows.Controls.PageRange" Usage="new System.Windows.Controls.PageRange page" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pageFrom As Integer, pageTo As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageRange(int pageFrom, int pageTo);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.PageRange : int * int -&gt; System.Windows.Controls.PageRange" Usage="new System.Windows.Controls.PageRange (pageFrom, pageTo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="pageRange.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.PageRange pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.Equals(System.Windows.Controls.PageRange)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Controls::PageRange pageRange);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.PageRange -&gt; bool" Usage="pageRange.Equals pageRange" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="pageRange.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Equality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (pr1 As PageRange, pr2 As PageRange) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::PageRange pr1, System::Windows::Controls::PageRange pr2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.PageRange * System.Windows.Controls.PageRange -&gt; bool" Usage="pr1 = pr2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Inequality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (pr1 As PageRange, pr2 As PageRange) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::PageRange pr1, System::Windows::Controls::PageRange pr2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.PageRange * System.Windows.Controls.PageRange -&gt; bool" Usage="System.Windows.Controls.PageRange.op_Inequality (pr1, pr2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PageRange.PageFrom" />
       <MemberSignature Language="VB.NET" Value="Public Property PageFrom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageFrom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageFrom : int with get, set" Usage="System.Windows.Controls.PageRange.PageFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PageRange.PageTo" />
       <MemberSignature Language="VB.NET" Value="Public Property PageTo As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageTo { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageTo : int with get, set" Usage="System.Windows.Controls.PageRange.PageTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pageRange.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

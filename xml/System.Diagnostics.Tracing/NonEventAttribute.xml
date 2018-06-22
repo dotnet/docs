@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.NonEventAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonEventAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonEventAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type NonEventAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

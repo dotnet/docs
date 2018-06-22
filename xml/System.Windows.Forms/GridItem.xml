@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GridItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridItem abstract" />
+  <TypeSignature Language="F#" Value="type GridItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Expandable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Expandable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Expandable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expandable : bool" Usage="System.Windows.Forms.GridItem.Expandable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Expanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Expanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expanded : bool with get, set" Usage="System.Windows.Forms.GridItem.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.GridItems" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GridItems As GridItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Forms::GridItemCollection ^ GridItems { System::Windows::Forms::GridItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GridItems : System.Windows.Forms.GridItemCollection" Usage="System.Windows.Forms.GridItem.GridItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.GridItemType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GridItemType As GridItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Forms::GridItemType GridItemType { System::Windows::Forms::GridItemType get(); };" />
+      <MemberSignature Language="F#" Value="member this.GridItemType : System.Windows.Forms.GridItemType" Usage="System.Windows.Forms.GridItem.GridItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Label" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Label { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string" Usage="System.Windows.Forms.GridItem.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Parent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parent As GridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Forms::GridItem ^ Parent { System::Windows::Forms::GridItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.GridItem.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.PropertyDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyDescriptor As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::PropertyDescriptor ^ PropertyDescriptor { System::ComponentModel::PropertyDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyDescriptor : System.ComponentModel.PropertyDescriptor" Usage="System.Windows.Forms.GridItem.PropertyDescriptor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridItem.Select" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Select () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; bool" Usage="gridItem.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.GridItem.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.GridItem.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Windows.Forms.GridItem.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

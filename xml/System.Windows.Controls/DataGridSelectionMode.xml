@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridSelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridSelectionMode" />
+  <TypeSignature Language="F#" Value="type DataGridSelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionMode.Extended" />
       <MemberSignature Language="VB.NET" Value="Extended" />
       <MemberSignature Language="C++ CLI" Value="Extended" />
+      <MemberSignature Language="F#" Value="Extended = 1" Usage="System.Windows.Controls.DataGridSelectionMode.Extended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionMode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 0" Usage="System.Windows.Controls.DataGridSelectionMode.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

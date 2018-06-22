@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCookieMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpCookieMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpCookieMode" />
+  <TypeSignature Language="F#" Value="type HttpCookieMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCookieMode.AutoDetect" />
       <MemberSignature Language="VB.NET" Value="AutoDetect" />
       <MemberSignature Language="C++ CLI" Value="AutoDetect" />
+      <MemberSignature Language="F#" Value="AutoDetect = 2" Usage="System.Web.HttpCookieMode.AutoDetect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCookieMode.UseCookies" />
       <MemberSignature Language="VB.NET" Value="UseCookies" />
       <MemberSignature Language="C++ CLI" Value="UseCookies" />
+      <MemberSignature Language="F#" Value="UseCookies = 1" Usage="System.Web.HttpCookieMode.UseCookies" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCookieMode.UseDeviceProfile" />
       <MemberSignature Language="VB.NET" Value="UseDeviceProfile" />
       <MemberSignature Language="C++ CLI" Value="UseDeviceProfile" />
+      <MemberSignature Language="F#" Value="UseDeviceProfile = 3" Usage="System.Web.HttpCookieMode.UseDeviceProfile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCookieMode.UseUri" />
       <MemberSignature Language="VB.NET" Value="UseUri" />
       <MemberSignature Language="C++ CLI" Value="UseUri" />
+      <MemberSignature Language="F#" Value="UseUri = 0" Usage="System.Web.HttpCookieMode.UseUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

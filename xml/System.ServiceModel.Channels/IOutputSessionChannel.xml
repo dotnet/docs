@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IOutputSessionChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOutputSessionChannel&#xA;Implements IOutputChannel, ISessionChannel(Of IOutputSession)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOutputSessionChannel : System::ServiceModel::Channels::IOutputChannel, System::ServiceModel::Channels::ISessionChannel&lt;System::ServiceModel::Channels::IOutputSession ^&gt;" />
+  <TypeSignature Language="F#" Value="type IOutputSessionChannel = interface&#xA;    interface IOutputChannel&#xA;    interface IChannel&#xA;    interface ICommunicationObject&#xA;    interface ISessionChannel&lt;IOutputSession&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

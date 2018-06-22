@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.StyleSheetControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class StyleSheetControlBuilder&#xA;Inherits MobileControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class StyleSheetControlBuilder : System::Web::UI::MobileControls::MobileControlBuilder" />
+  <TypeSignature Language="F#" Value="type StyleSheetControlBuilder = class&#xA;    inherit MobileControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheetControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (name As String, attributes As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ name, System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="styleSheetControlBuilder.GetChildControlType (name, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

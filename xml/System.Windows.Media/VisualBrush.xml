@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualBrush" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VisualBrush&#xA;Inherits TileBrush" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualBrush sealed : System::Windows::Media::TileBrush" />
+  <TypeSignature Language="F#" Value="type VisualBrush = class&#xA;    inherit TileBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.#ctor(System.Windows.Media.Visual)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualBrush(System::Windows::Media::Visual ^ visual);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.VisualBrush : System.Windows.Media.Visual -&gt; System.Windows.Media.VisualBrush" Usage="new System.Windows.Media.VisualBrush visual" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.AutoLayoutContent" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoLayoutContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoLayoutContent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoLayoutContent : bool with get, set" Usage="System.Windows.Media.VisualBrush.AutoLayoutContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.AutoLayoutContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoLayoutContentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AutoLayoutContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoLayoutContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.VisualBrush.AutoLayoutContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As VisualBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::VisualBrush ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.VisualBrush" Usage="visualBrush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As VisualBrush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::VisualBrush ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.VisualBrush" Usage="visualBrush.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="visualBrush.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.GetContentBounds(System.Windows.Rect@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetContentBounds (ByRef contentBounds As Rect)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetContentBounds([Runtime::InteropServices::Out] System::Windows::Rect % contentBounds);" />
+      <MemberSignature Language="F#" Value="override this.GetContentBounds :  -&gt; unit" Usage="visualBrush.GetContentBounds contentBounds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="visualBrush.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.Visual" />
       <MemberSignature Language="VB.NET" Value="Public Property Visual As Visual" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Visual ^ Visual { System::Windows::Media::Visual ^ get(); void set(System::Windows::Media::Visual ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Visual : System.Windows.Media.Visual with get, set" Usage="System.Windows.Media.VisualBrush.Visual" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.VisualProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VisualProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VisualProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VisualProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.VisualBrush.VisualProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

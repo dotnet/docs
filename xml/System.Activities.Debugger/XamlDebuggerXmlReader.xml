@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.XamlDebuggerXmlReader" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlDebuggerXmlReader&#xA;Inherits XamlReader&#xA;Implements IXamlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlDebuggerXmlReader : System::Xaml::XamlReader, System::Xaml::IXamlLineInfo" />
+  <TypeSignature Language="F#" Value="type XamlDebuggerXmlReader = class&#xA;    inherit XamlReader&#xA;    interface IXamlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingTextReader As TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::IO::TextReader ^ underlyingTextReader);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.XamlDebuggerXmlReader : System.IO.TextReader -&gt; System.Activities.Debugger.XamlDebuggerXmlReader" Usage="new System.Activities.Debugger.XamlDebuggerXmlReader underlyingTextReader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingTextReader As TextReader, schemaContext As XamlSchemaContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::IO::TextReader ^ underlyingTextReader, System::Xaml::XamlSchemaContext ^ schemaContext);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.XamlDebuggerXmlReader : System.IO.TextReader * System.Xaml.XamlSchemaContext -&gt; System.Activities.Debugger.XamlDebuggerXmlReader" Usage="new System.Activities.Debugger.XamlDebuggerXmlReader (underlyingTextReader, schemaContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::Xaml::XamlReader ^ underlyingReader, System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.XamlDebuggerXmlReader : System.Xaml.XamlReader * System.IO.TextReader -&gt; System.Activities.Debugger.XamlDebuggerXmlReader" Usage="new System.Activities.Debugger.XamlDebuggerXmlReader (underlyingReader, textReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.Xaml.IXamlLineInfo xamlLineInfo, class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.Xaml.IXamlLineInfo,System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDebuggerXmlReader(System::Xaml::XamlReader ^ underlyingReader, System::Xaml::IXamlLineInfo ^ xamlLineInfo, System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.XamlDebuggerXmlReader : System.Xaml.XamlReader * System.Xaml.IXamlLineInfo * System.IO.TextReader -&gt; System.Activities.Debugger.XamlDebuggerXmlReader" Usage="new System.Activities.Debugger.XamlDebuggerXmlReader (underlyingReader, xamlLineInfo, textReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.CollectNonActivitySourceLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property CollectNonActivitySourceLocation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CollectNonActivitySourceLocation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CollectNonActivitySourceLocation : bool with get, set" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.CollectNonActivitySourceLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.CopyAttachedSourceLocation(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyAttachedSourceLocation (source As Object, destination As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyAttachedSourceLocation(System::Object ^ source, System::Object ^ destination);" />
+      <MemberSignature Language="F#" Value="static member CopyAttachedSourceLocation : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.CopyAttachedSourceLocation (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="xamlDebuggerXmlReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndColumnName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ EndColumnName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndColumnName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.EndColumnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndLineName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndLineName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ EndLineName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndLineName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.EndLineName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.FileNameName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FileNameName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ FileNameName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FileNameName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.FileNameName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndColumn(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEndColumn (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEndColumn(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetEndColumn : obj -&gt; obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.GetEndColumn instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -288,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEndLine (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEndLine(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetEndLine : obj -&gt; obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.GetEndLine instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -317,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetFileName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileName (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetFileName(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetFileName : obj -&gt; obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.GetFileName instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -341,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartColumn(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStartColumn (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetStartColumn(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetStartColumn : obj -&gt; obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.GetStartColumn instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -370,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStartLine (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetStartLine(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetStartLine : obj -&gt; obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.GetStartLine instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -399,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLineInfo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLineInfo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLineInfo : bool" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.HasLineInfo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.HasLineInfo</InterfaceMember>
@@ -423,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.IsEof" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEof As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEof { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEof : bool" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.IsEof" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -444,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.LineNumber" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LineNumber</InterfaceMember>
@@ -467,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.LinePosition" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xaml.IXamlLineInfo.LinePosition</InterfaceMember>
@@ -497,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Member" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Member As XamlMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Xaml.XamlMember" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -517,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As NamespaceDeclaration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : System.Xaml.NamespaceDeclaration" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -537,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XamlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xaml.XamlNodeType" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -557,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="xamlDebuggerXmlReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -579,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SchemaContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -599,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndColumn(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEndColumn (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEndColumn(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetEndColumn : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SetEndColumn (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -624,6 +650,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndLine(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEndLine (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEndLine(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetEndLine : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SetEndLine (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -649,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetFileName(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFileName (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFileName(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetFileName : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SetFileName (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -674,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartColumn(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStartColumn (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStartColumn(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetStartColumn : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SetStartColumn (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -699,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartLine(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStartLine (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStartLine(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetStartLine : obj * obj -&gt; unit" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.SetStartLine (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -724,6 +754,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Debugger.XamlDebuggerXmlReader.SourceLocationFound" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SourceLocationFound As EventHandler(Of SourceLocationFoundEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Debugger::SourceLocationFoundEventArgs ^&gt; ^ SourceLocationFound;" />
+      <MemberSignature Language="F#" Value="member this.SourceLocationFound : EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt; " Usage="member this.SourceLocationFound : System.EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -743,6 +774,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartColumnName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ StartColumnName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartColumnName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.StartColumnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -762,6 +794,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartLineName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartLineName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ StartLineName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartLineName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.StartLineName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -781,6 +814,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -801,6 +835,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Activities.Debugger.XamlDebuggerXmlReader.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

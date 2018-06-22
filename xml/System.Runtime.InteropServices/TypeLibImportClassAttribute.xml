@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibImportClassAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeLibImportClassAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeLibImportClassAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeLibImportClassAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeLibImportClassAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (importClass As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeLibImportClassAttribute(Type ^ importClass);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.TypeLibImportClassAttribute : Type -&gt; System.Runtime.InteropServices.TypeLibImportClassAttribute" Usage="new System.Runtime.InteropServices.TypeLibImportClassAttribute importClass" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeLibImportClassAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Runtime.InteropServices.TypeLibImportClassAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

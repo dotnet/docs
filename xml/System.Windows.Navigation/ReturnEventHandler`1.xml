@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventHandler`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ReturnEventHandler(Of T)(sender As Object, e As ReturnEventArgs(Of T))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public delegate void ReturnEventHandler(System::Object ^ sender, ReturnEventArgs&lt;T&gt; ^ e);" />
+  <TypeSignature Language="F#" Value="type ReturnEventHandler&lt;'T&gt; = delegate of obj * ReturnEventArgs&lt;'T&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

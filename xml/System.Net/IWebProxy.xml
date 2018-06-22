@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IWebProxy" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebProxy" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebProxy" />
+  <TypeSignature Language="F#" Value="type IWebProxy = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IWebProxy.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.IWebProxy.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxy.GetProxy(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProxy (destination As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ GetProxy(Uri ^ destination);" />
+      <MemberSignature Language="F#" Value="abstract member GetProxy : Uri -&gt; Uri" Usage="iWebProxy.GetProxy destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxy.IsBypassed(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsBypassed (host As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBypassed(Uri ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member IsBypassed : Uri -&gt; bool" Usage="iWebProxy.IsBypassed host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

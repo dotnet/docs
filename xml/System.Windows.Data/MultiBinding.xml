@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.MultiBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class MultiBinding&#xA;Inherits BindingBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultiBinding : System::Windows::Data::BindingBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type MultiBinding = class&#xA;    inherit BindingBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As Collection(Of BindingBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ Bindings { System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.Collections.ObjectModel.Collection&lt;System.Windows.Data.BindingBase&gt;" Usage="System.Windows.Data.MultiBinding.Bindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.Converter" />
       <MemberSignature Language="VB.NET" Value="Public Property Converter As IMultiValueConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IMultiValueConverter ^ Converter { System::Windows::Data::IMultiValueConverter ^ get(); void set(System::Windows::Data::IMultiValueConverter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.Windows.Data.IMultiValueConverter with get, set" Usage="System.Windows.Data.MultiBinding.Converter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ConverterCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property ConverterCulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ ConverterCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConverterCulture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Data.MultiBinding.ConverterCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ConverterParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property ConverterParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConverterParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConverterParameter : obj with get, set" Usage="System.Windows.Data.MultiBinding.ConverterParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As BindingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingMode Mode { System::Windows::Data::BindingMode get(); void set(System::Windows::Data::BindingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Windows.Data.BindingMode with get, set" Usage="System.Windows.Data.MultiBinding.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.NotifyOnSourceUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnSourceUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnSourceUpdated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnSourceUpdated : bool with get, set" Usage="System.Windows.Data.MultiBinding.NotifyOnSourceUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -316,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.NotifyOnTargetUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnTargetUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnTargetUpdated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnTargetUpdated : bool with get, set" Usage="System.Windows.Data.MultiBinding.NotifyOnTargetUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -343,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.NotifyOnValidationError" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnValidationError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnValidationError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnValidationError : bool with get, set" Usage="System.Windows.Data.MultiBinding.NotifyOnValidationError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBinding.ShouldSerializeBindings" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeBindings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeBindings();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeBindings : unit -&gt; bool" Usage="multiBinding.ShouldSerializeBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBinding.ShouldSerializeValidationRules" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeValidationRules () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeValidationRules();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeValidationRules : unit -&gt; bool" Usage="multiBinding.ShouldSerializeValidationRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -491,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.UpdateSourceExceptionFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceExceptionFilter As UpdateSourceExceptionFilterCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceExceptionFilterCallback ^ UpdateSourceExceptionFilter { System::Windows::Data::UpdateSourceExceptionFilterCallback ^ get(); void set(System::Windows::Data::UpdateSourceExceptionFilterCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateSourceExceptionFilter : System.Windows.Data.UpdateSourceExceptionFilterCallback with get, set" Usage="System.Windows.Data.MultiBinding.UpdateSourceExceptionFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -527,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.UpdateSourceTrigger" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceTrigger As UpdateSourceTrigger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceTrigger UpdateSourceTrigger { System::Windows::Data::UpdateSourceTrigger get(); void set(System::Windows::Data::UpdateSourceTrigger value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateSourceTrigger : System.Windows.Data.UpdateSourceTrigger with get, set" Usage="System.Windows.Data.MultiBinding.UpdateSourceTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -561,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ValidatesOnDataErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnDataErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnDataErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnDataErrors : bool with get, set" Usage="System.Windows.Data.MultiBinding.ValidatesOnDataErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -599,6 +613,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ValidatesOnExceptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnExceptions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnExceptions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnExceptions : bool with get, set" Usage="System.Windows.Data.MultiBinding.ValidatesOnExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -637,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ValidatesOnNotifyDataErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnNotifyDataErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnNotifyDataErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnNotifyDataErrors : bool with get, set" Usage="System.Windows.Data.MultiBinding.ValidatesOnNotifyDataErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -670,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBinding.ValidationRules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationRules As Collection(Of ValidationRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ ValidationRules { System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationRules : System.Collections.ObjectModel.Collection&lt;System.Windows.Controls.ValidationRule&gt;" Usage="System.Windows.Data.MultiBinding.ValidationRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

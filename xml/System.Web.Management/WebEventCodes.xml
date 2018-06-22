@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventCodes" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebEventCodes" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebEventCodes sealed" />
+  <TypeSignature Language="F#" Value="type WebEventCodes = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationCodeBase As Integer  = 1000" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationCodeBase = 1000;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationCodeBase : int" Usage="System.Web.Management.WebEventCodes.ApplicationCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationCompilationEnd" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationCompilationEnd As Integer  = 1004" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationCompilationEnd = 1004;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationCompilationEnd : int" Usage="System.Web.Management.WebEventCodes.ApplicationCompilationEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationCompilationStart" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationCompilationStart As Integer  = 1003" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationCompilationStart = 1003;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationCompilationStart : int" Usage="System.Web.Management.WebEventCodes.ApplicationCompilationStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationDetailCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationDetailCodeBase As Integer  = 50000" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationDetailCodeBase = 50000;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationDetailCodeBase : int" Usage="System.Web.Management.WebEventCodes.ApplicationDetailCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationHeartbeat" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationHeartbeat As Integer  = 1005" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationHeartbeat = 1005;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationHeartbeat : int" Usage="System.Web.Management.WebEventCodes.ApplicationHeartbeat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdown" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdown As Integer  = 1002" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdown = 1002;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdown : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownBinDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownBinDirChangeOrDirectoryRename As Integer  = 50007" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownBinDirChangeOrDirectoryRename = 50007;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownBinDirChangeOrDirectoryRename : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownBinDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownBrowsersDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownBrowsersDirChangeOrDirectoryRename As Integer  = 50008" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownBrowsersDirChangeOrDirectoryRename = 50008;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownBrowsersDirChangeOrDirectoryRename : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownBrowsersDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownBuildManagerChange" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownBuildManagerChange As Integer  = 50017" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownBuildManagerChange = 50017;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownBuildManagerChange : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownBuildManagerChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownChangeInGlobalAsax" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownChangeInGlobalAsax As Integer  = 50003" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownChangeInGlobalAsax = 50003;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownChangeInGlobalAsax : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownChangeInGlobalAsax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -368,6 +379,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownChangeInSecurityPolicyFile" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownChangeInSecurityPolicyFile As Integer  = 50006" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownChangeInSecurityPolicyFile = 50006;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownChangeInSecurityPolicyFile : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownChangeInSecurityPolicyFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownCodeDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownCodeDirChangeOrDirectoryRename As Integer  = 50009" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownCodeDirChangeOrDirectoryRename = 50009;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownCodeDirChangeOrDirectoryRename : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownCodeDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownConfigurationChange" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownConfigurationChange As Integer  = 50004" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownConfigurationChange = 50004;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownConfigurationChange : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownConfigurationChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -461,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownHostingEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownHostingEnvironment As Integer  = 50002" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownHostingEnvironment = 50002;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownHostingEnvironment : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownHostingEnvironment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +507,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownHttpRuntimeClose" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownHttpRuntimeClose As Integer  = 50013" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownHttpRuntimeClose = 50013;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownHttpRuntimeClose : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownHttpRuntimeClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -524,6 +540,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownIdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownIdleTimeout As Integer  = 50011" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownIdleTimeout = 50011;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownIdleTimeout : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownIdleTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +573,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownInitializationError" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownInitializationError As Integer  = 50014" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownInitializationError = 50014;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownInitializationError : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownInitializationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +606,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownMaxRecompilationsReached" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownMaxRecompilationsReached As Integer  = 50015" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownMaxRecompilationsReached = 50015;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownMaxRecompilationsReached : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownMaxRecompilationsReached" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -619,6 +638,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownPhysicalApplicationPathChanged" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownPhysicalApplicationPathChanged As Integer  = 50012" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownPhysicalApplicationPathChanged = 50012;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownPhysicalApplicationPathChanged : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownPhysicalApplicationPathChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -650,6 +670,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownResourcesDirChangeOrDirectoryRename" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownResourcesDirChangeOrDirectoryRename As Integer  = 50010" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownResourcesDirChangeOrDirectoryRename = 50010;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownResourcesDirChangeOrDirectoryRename : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownResourcesDirChangeOrDirectoryRename" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -681,6 +702,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownUnknown" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownUnknown As Integer  = 50001" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownUnknown = 50001;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownUnknown : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +734,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationShutdownUnloadAppDomainCalled" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationShutdownUnloadAppDomainCalled As Integer  = 50005" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationShutdownUnloadAppDomainCalled = 50005;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationShutdownUnloadAppDomainCalled : int" Usage="System.Web.Management.WebEventCodes.ApplicationShutdownUnloadAppDomainCalled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -743,6 +766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ApplicationStart" />
       <MemberSignature Language="VB.NET" Value="Public Const ApplicationStart As Integer  = 1001" />
       <MemberSignature Language="C++ CLI" Value="public: int ApplicationStart = 1001;" />
+      <MemberSignature Language="F#" Value="val mutable ApplicationStart : int" Usage="System.Web.Management.WebEventCodes.ApplicationStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -771,6 +795,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditCodeBase As Integer  = 4000" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditCodeBase = 4000;" />
+      <MemberSignature Language="F#" Value="val mutable AuditCodeBase : int" Usage="System.Web.Management.WebEventCodes.AuditCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -809,6 +834,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditDetailCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditDetailCodeBase As Integer  = 50200" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditDetailCodeBase = 50200;" />
+      <MemberSignature Language="F#" Value="val mutable AuditDetailCodeBase : int" Usage="System.Web.Management.WebEventCodes.AuditDetailCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +863,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditFileAuthorizationFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditFileAuthorizationFailure As Integer  = 4008" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditFileAuthorizationFailure = 4008;" />
+      <MemberSignature Language="F#" Value="val mutable AuditFileAuthorizationFailure : int" Usage="System.Web.Management.WebEventCodes.AuditFileAuthorizationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -865,6 +892,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditFileAuthorizationSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditFileAuthorizationSuccess As Integer  = 4004" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditFileAuthorizationSuccess = 4004;" />
+      <MemberSignature Language="F#" Value="val mutable AuditFileAuthorizationSuccess : int" Usage="System.Web.Management.WebEventCodes.AuditFileAuthorizationSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -893,6 +921,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditFormsAuthenticationFailure As Integer  = 4005" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditFormsAuthenticationFailure = 4005;" />
+      <MemberSignature Language="F#" Value="val mutable AuditFormsAuthenticationFailure : int" Usage="System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -921,6 +950,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditFormsAuthenticationSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditFormsAuthenticationSuccess As Integer  = 4001" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditFormsAuthenticationSuccess = 4001;" />
+      <MemberSignature Language="F#" Value="val mutable AuditFormsAuthenticationSuccess : int" Usage="System.Web.Management.WebEventCodes.AuditFormsAuthenticationSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -949,6 +979,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditInvalidViewStateFailure As Integer  = 4009" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditInvalidViewStateFailure = 4009;" />
+      <MemberSignature Language="F#" Value="val mutable AuditInvalidViewStateFailure : int" Usage="System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -977,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditMembershipAuthenticationFailure As Integer  = 4006" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditMembershipAuthenticationFailure = 4006;" />
+      <MemberSignature Language="F#" Value="val mutable AuditMembershipAuthenticationFailure : int" Usage="System.Web.Management.WebEventCodes.AuditMembershipAuthenticationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1005,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditMembershipAuthenticationSuccess As Integer  = 4002" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditMembershipAuthenticationSuccess = 4002;" />
+      <MemberSignature Language="F#" Value="val mutable AuditMembershipAuthenticationSuccess : int" Usage="System.Web.Management.WebEventCodes.AuditMembershipAuthenticationSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1033,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditUnhandledAccessException" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditUnhandledAccessException As Integer  = 4011" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditUnhandledAccessException = 4011;" />
+      <MemberSignature Language="F#" Value="val mutable AuditUnhandledAccessException : int" Usage="System.Web.Management.WebEventCodes.AuditUnhandledAccessException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1061,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditUnhandledSecurityException" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditUnhandledSecurityException As Integer  = 4010" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditUnhandledSecurityException = 4010;" />
+      <MemberSignature Language="F#" Value="val mutable AuditUnhandledSecurityException : int" Usage="System.Web.Management.WebEventCodes.AuditUnhandledSecurityException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1089,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditUrlAuthorizationFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditUrlAuthorizationFailure As Integer  = 4007" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditUrlAuthorizationFailure = 4007;" />
+      <MemberSignature Language="F#" Value="val mutable AuditUrlAuthorizationFailure : int" Usage="System.Web.Management.WebEventCodes.AuditUrlAuthorizationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1117,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.AuditUrlAuthorizationSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Const AuditUrlAuthorizationSuccess As Integer  = 4003" />
       <MemberSignature Language="C++ CLI" Value="public: int AuditUrlAuthorizationSuccess = 4003;" />
+      <MemberSignature Language="F#" Value="val mutable AuditUrlAuthorizationSuccess : int" Usage="System.Web.Management.WebEventCodes.AuditUrlAuthorizationSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1145,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ErrorCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const ErrorCodeBase As Integer  = 3000" />
       <MemberSignature Language="C++ CLI" Value="public: int ErrorCodeBase = 3000;" />
+      <MemberSignature Language="F#" Value="val mutable ErrorCodeBase : int" Usage="System.Web.Management.WebEventCodes.ErrorCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1183,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.ExpiredTicketFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const ExpiredTicketFailure As Integer  = 50202" />
       <MemberSignature Language="C++ CLI" Value="public: int ExpiredTicketFailure = 50202;" />
+      <MemberSignature Language="F#" Value="val mutable ExpiredTicketFailure : int" Usage="System.Web.Management.WebEventCodes.ExpiredTicketFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1214,6 +1253,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.InvalidEventCode" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidEventCode As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidEventCode = -1;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidEventCode : int" Usage="System.Web.Management.WebEventCodes.InvalidEventCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1241,6 +1281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.InvalidTicketFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidTicketFailure As Integer  = 50201" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidTicketFailure = 50201;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidTicketFailure : int" Usage="System.Web.Management.WebEventCodes.InvalidTicketFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1272,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.InvalidViewState" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidViewState As Integer  = 50204" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidViewState = 50204;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidViewState : int" Usage="System.Web.Management.WebEventCodes.InvalidViewState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1303,6 +1345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.InvalidViewStateMac" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidViewStateMac As Integer  = 50203" />
       <MemberSignature Language="C++ CLI" Value="public: int InvalidViewStateMac = 50203;" />
+      <MemberSignature Language="F#" Value="val mutable InvalidViewStateMac : int" Usage="System.Web.Management.WebEventCodes.InvalidViewStateMac" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1334,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.MiscCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const MiscCodeBase As Integer  = 6000" />
       <MemberSignature Language="C++ CLI" Value="public: int MiscCodeBase = 6000;" />
+      <MemberSignature Language="F#" Value="val mutable MiscCodeBase : int" Usage="System.Web.Management.WebEventCodes.MiscCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1361,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RequestCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestCodeBase As Integer  = 2000" />
       <MemberSignature Language="C++ CLI" Value="public: int RequestCodeBase = 2000;" />
+      <MemberSignature Language="F#" Value="val mutable RequestCodeBase : int" Usage="System.Web.Management.WebEventCodes.RequestCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1391,6 +1436,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RequestTransactionAbort" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestTransactionAbort As Integer  = 2002" />
       <MemberSignature Language="C++ CLI" Value="public: int RequestTransactionAbort = 2002;" />
+      <MemberSignature Language="F#" Value="val mutable RequestTransactionAbort : int" Usage="System.Web.Management.WebEventCodes.RequestTransactionAbort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1419,6 +1465,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RequestTransactionComplete" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestTransactionComplete As Integer  = 2001" />
       <MemberSignature Language="C++ CLI" Value="public: int RequestTransactionComplete = 2001;" />
+      <MemberSignature Language="F#" Value="val mutable RequestTransactionComplete : int" Usage="System.Web.Management.WebEventCodes.RequestTransactionComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1447,6 +1494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorPostTooLarge" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorPostTooLarge As Integer  = 3004" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorPostTooLarge = 3004;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorPostTooLarge : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorPostTooLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1475,6 +1523,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorRequestAbort" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorRequestAbort As Integer  = 3001" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorRequestAbort = 3001;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorRequestAbort : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorRequestAbort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1503,6 +1552,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorUnhandledException" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorUnhandledException As Integer  = 3005" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorUnhandledException = 3005;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorUnhandledException : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorUnhandledException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1531,6 +1581,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorValidationFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorValidationFailure As Integer  = 3003" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorValidationFailure = 3003;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorValidationFailure : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorValidationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1559,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorViewStateFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorViewStateFailure As Integer  = 3002" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorViewStateFailure = 3002;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorViewStateFailure : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorViewStateFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1587,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.RuntimeErrorWebResourceFailure" />
       <MemberSignature Language="VB.NET" Value="Public Const RuntimeErrorWebResourceFailure As Integer  = 3012" />
       <MemberSignature Language="C++ CLI" Value="public: int RuntimeErrorWebResourceFailure = 3012;" />
+      <MemberSignature Language="F#" Value="val mutable RuntimeErrorWebResourceFailure : int" Usage="System.Web.Management.WebEventCodes.RuntimeErrorWebResourceFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1607,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.SqlProviderEventsDropped" />
       <MemberSignature Language="VB.NET" Value="Public Const SqlProviderEventsDropped As Integer  = 50301" />
       <MemberSignature Language="C++ CLI" Value="public: int SqlProviderEventsDropped = 50301;" />
+      <MemberSignature Language="F#" Value="val mutable SqlProviderEventsDropped : int" Usage="System.Web.Management.WebEventCodes.SqlProviderEventsDropped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1635,6 +1689,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.StateServerConnectionError" />
       <MemberSignature Language="VB.NET" Value="Public Const StateServerConnectionError As Integer  = 50016" />
       <MemberSignature Language="C++ CLI" Value="public: int StateServerConnectionError = 50016;" />
+      <MemberSignature Language="F#" Value="val mutable StateServerConnectionError : int" Usage="System.Web.Management.WebEventCodes.StateServerConnectionError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1665,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.UndefinedEventCode" />
       <MemberSignature Language="VB.NET" Value="Public Const UndefinedEventCode As Integer  = 0" />
       <MemberSignature Language="C++ CLI" Value="public: int UndefinedEventCode = 0;" />
+      <MemberSignature Language="F#" Value="val mutable UndefinedEventCode : int" Usage="System.Web.Management.WebEventCodes.UndefinedEventCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1692,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.UndefinedEventDetailCode" />
       <MemberSignature Language="VB.NET" Value="Public Const UndefinedEventDetailCode As Integer  = 0" />
       <MemberSignature Language="C++ CLI" Value="public: int UndefinedEventDetailCode = 0;" />
+      <MemberSignature Language="F#" Value="val mutable UndefinedEventDetailCode : int" Usage="System.Web.Management.WebEventCodes.UndefinedEventDetailCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1719,6 +1776,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorCompilationError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorCompilationError As Integer  = 3007" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorCompilationError = 3007;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorCompilationError : int" Usage="System.Web.Management.WebEventCodes.WebErrorCompilationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1747,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorConfigurationError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorConfigurationError As Integer  = 3008" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorConfigurationError = 3008;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorConfigurationError : int" Usage="System.Web.Management.WebEventCodes.WebErrorConfigurationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1775,6 +1834,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorObjectStateFormatterDeserializationError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorObjectStateFormatterDeserializationError As Integer  = 3011" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorObjectStateFormatterDeserializationError = 3011;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorObjectStateFormatterDeserializationError : int" Usage="System.Web.Management.WebEventCodes.WebErrorObjectStateFormatterDeserializationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1796,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorOtherError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorOtherError As Integer  = 3009" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorOtherError = 3009;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorOtherError : int" Usage="System.Web.Management.WebEventCodes.WebErrorOtherError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1824,6 +1885,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorParserError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorParserError As Integer  = 3006" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorParserError = 3006;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorParserError : int" Usage="System.Web.Management.WebEventCodes.WebErrorParserError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1852,6 +1914,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebErrorPropertyDeserializationError" />
       <MemberSignature Language="VB.NET" Value="Public Const WebErrorPropertyDeserializationError As Integer  = 3010" />
       <MemberSignature Language="C++ CLI" Value="public: int WebErrorPropertyDeserializationError = 3010;" />
+      <MemberSignature Language="F#" Value="val mutable WebErrorPropertyDeserializationError : int" Usage="System.Web.Management.WebEventCodes.WebErrorPropertyDeserializationError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1873,6 +1936,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebEventDetailCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Const WebEventDetailCodeBase As Integer  = 50300" />
       <MemberSignature Language="C++ CLI" Value="public: int WebEventDetailCodeBase = 50300;" />
+      <MemberSignature Language="F#" Value="val mutable WebEventDetailCodeBase : int" Usage="System.Web.Management.WebEventCodes.WebEventDetailCodeBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1902,6 +1966,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebEventProviderInformation" />
       <MemberSignature Language="VB.NET" Value="Public Const WebEventProviderInformation As Integer  = 6001" />
       <MemberSignature Language="C++ CLI" Value="public: int WebEventProviderInformation = 6001;" />
+      <MemberSignature Language="F#" Value="val mutable WebEventProviderInformation : int" Usage="System.Web.Management.WebEventCodes.WebEventProviderInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1935,6 +2000,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Management.WebEventCodes.WebExtendedBase" />
       <MemberSignature Language="VB.NET" Value="Public Const WebExtendedBase As Integer  = 100000" />
       <MemberSignature Language="C++ CLI" Value="public: int WebExtendedBase = 100000;" />
+      <MemberSignature Language="F#" Value="val mutable WebExtendedBase : int" Usage="System.Web.Management.WebEventCodes.WebExtendedBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Import" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Import&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class Import sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type Import = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Import.JScriptImport(System.String,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub JScriptImport (name As String, engine As VsaEngine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void JScriptImport(System::String ^ name, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member JScriptImport : string * Microsoft.JScript.Vsa.VsaEngine -&gt; unit" Usage="Microsoft.JScript.Import.JScriptImport (name, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.SendOrPostCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SendOrPostCallback(state As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SendOrPostCallback(System::Object ^ state);" />
+  <TypeSignature Language="F#" Value="type SendOrPostCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

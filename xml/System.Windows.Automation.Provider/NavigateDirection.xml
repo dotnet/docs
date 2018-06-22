@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.NavigateDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum NavigateDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class NavigateDirection" />
+  <TypeSignature Language="F#" Value="type NavigateDirection = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.FirstChild" />
       <MemberSignature Language="VB.NET" Value="FirstChild" />
       <MemberSignature Language="C++ CLI" Value="FirstChild" />
+      <MemberSignature Language="F#" Value="FirstChild = 3" Usage="System.Windows.Automation.Provider.NavigateDirection.FirstChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.LastChild" />
       <MemberSignature Language="VB.NET" Value="LastChild" />
       <MemberSignature Language="C++ CLI" Value="LastChild" />
+      <MemberSignature Language="F#" Value="LastChild = 4" Usage="System.Windows.Automation.Provider.NavigateDirection.LastChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.NextSibling" />
       <MemberSignature Language="VB.NET" Value="NextSibling" />
       <MemberSignature Language="C++ CLI" Value="NextSibling" />
+      <MemberSignature Language="F#" Value="NextSibling = 1" Usage="System.Windows.Automation.Provider.NavigateDirection.NextSibling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.Parent" />
       <MemberSignature Language="VB.NET" Value="Parent" />
       <MemberSignature Language="C++ CLI" Value="Parent" />
+      <MemberSignature Language="F#" Value="Parent = 0" Usage="System.Windows.Automation.Provider.NavigateDirection.Parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.PreviousSibling" />
       <MemberSignature Language="VB.NET" Value="PreviousSibling" />
       <MemberSignature Language="C++ CLI" Value="PreviousSibling" />
+      <MemberSignature Language="F#" Value="PreviousSibling = 2" Usage="System.Windows.Automation.Provider.NavigateDirection.PreviousSibling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

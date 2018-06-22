@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventSourceCreationData" />
   <TypeSignature Language="VB.NET" Value="Public Class EventSourceCreationData" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventSourceCreationData" />
+  <TypeSignature Language="F#" Value="type EventSourceCreationData = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSourceCreationData.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As String, logName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSourceCreationData(System::String ^ source, System::String ^ logName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventSourceCreationData : string * string -&gt; System.Diagnostics.EventSourceCreationData" Usage="new System.Diagnostics.EventSourceCreationData (source, logName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +232,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.CategoryCount" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CategoryCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryCount : int with get, set" Usage="System.Diagnostics.EventSourceCreationData.CategoryCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -388,6 +391,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryResourceFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryResourceFile : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -544,6 +548,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.LogName" />
       <MemberSignature Language="VB.NET" Value="Public Property LogName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LogName : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.LogName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -590,6 +595,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -633,6 +639,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.MessageResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageResourceFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageResourceFile : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.MessageResourceFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -792,6 +799,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.ParameterResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterResourceFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterResourceFile : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.ParameterResourceFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -974,6 +982,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Diagnostics.EventSourceCreationData.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

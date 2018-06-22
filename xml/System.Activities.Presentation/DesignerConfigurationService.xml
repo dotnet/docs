@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DesignerConfigurationService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerConfigurationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerConfigurationService sealed" />
+  <TypeSignature Language="F#" Value="type DesignerConfigurationService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AnnotationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AnnotationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AnnotationEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AnnotationEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.AnnotationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoConnectEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoConnectEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoConnectEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoConnectEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.AutoConnectEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoSplitEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSplitEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSplitEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSplitEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.AutoSplitEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoSurroundWithSequenceEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSurroundWithSequenceEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSurroundWithSequenceEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSurroundWithSequenceEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.AutoSurroundWithSequenceEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.BackgroundValidationEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property BackgroundValidationEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackgroundValidationEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundValidationEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.BackgroundValidationEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.LoadingFromUntrustedSourceEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadingFromUntrustedSourceEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoadingFromUntrustedSourceEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadingFromUntrustedSourceEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.LoadingFromUntrustedSourceEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.MultipleItemsContextMenuEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property MultipleItemsContextMenuEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultipleItemsContextMenuEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultipleItemsContextMenuEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.MultipleItemsContextMenuEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.MultipleItemsDragDropEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property MultipleItemsDragDropEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultipleItemsDragDropEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultipleItemsDragDropEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.MultipleItemsDragDropEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -205,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.NamespaceConversionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property NamespaceConversionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NamespaceConversionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceConversionEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.NamespaceConversionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.PanModeEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property PanModeEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PanModeEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PanModeEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.PanModeEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -247,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.RubberBandSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property RubberBandSelectionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RubberBandSelectionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RubberBandSelectionEnabled : bool with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.RubberBandSelectionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -268,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkName As FrameworkName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Versioning::FrameworkName ^ TargetFrameworkName { System::Runtime::Versioning::FrameworkName ^ get(); void set(System::Runtime::Versioning::FrameworkName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkName : System.Runtime.Versioning.FrameworkName with get, set" Usage="System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

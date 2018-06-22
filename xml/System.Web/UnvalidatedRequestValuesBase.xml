@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UnvalidatedRequestValuesBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UnvalidatedRequestValuesBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnvalidatedRequestValuesBase abstract" />
+  <TypeSignature Language="F#" Value="type UnvalidatedRequestValuesBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Cookies" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cookies As HttpCookieCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Web.HttpCookieCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Files" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Files As HttpFileCollectionBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpFileCollectionBase ^ Files { System::Web::HttpFileCollectionBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Files : System.Web.HttpFileCollectionBase" Usage="System.Web.UnvalidatedRequestValuesBase.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Form" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Form As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Form { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Form : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(field As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ field); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.UnvalidatedRequestValuesBase.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.UnvalidatedRequestValuesBase.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.PathInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PathInfo As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PathInfo { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PathInfo : string" Usage="System.Web.UnvalidatedRequestValuesBase.PathInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.QueryString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryString As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ QueryString { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection" Usage="System.Web.UnvalidatedRequestValuesBase.QueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.RawUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RawUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RawUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RawUrl : string" Usage="System.Web.UnvalidatedRequestValuesBase.RawUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValuesBase.Url" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Web.UnvalidatedRequestValuesBase.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

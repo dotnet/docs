@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellToolTipTextNeededEventArgs&#xA;Inherits DataGridViewCellEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellToolTipTextNeededEventArgs : System::Windows::Forms::DataGridViewCellEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellToolTipTextNeededEventArgs = class&#xA;    inherit DataGridViewCellEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

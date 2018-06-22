@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Plus" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Plus&#xA;Inherits BinaryOp" />
   <TypeSignature Language="C++ CLI" Value="public ref class Plus sealed : Microsoft::JScript::BinaryOp" />
+  <TypeSignature Language="F#" Value="type Plus = class&#xA;    inherit BinaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Plus.DoOp(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DoOp (v1 As Object, v2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ DoOp(System::Object ^ v1, System::Object ^ v2);" />
+      <MemberSignature Language="F#" Value="static member DoOp : obj * obj -&gt; obj" Usage="Microsoft.JScript.Plus.DoOp (v1, v2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Plus.EvaluatePlus(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluatePlus (v1 As Object, v2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ EvaluatePlus(System::Object ^ v1, System::Object ^ v2);" />
+      <MemberSignature Language="F#" Value="member this.EvaluatePlus : obj * obj -&gt; obj" Usage="plus.EvaluatePlus (v1, v2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

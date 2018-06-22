@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor.Selector" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectSelectorEditor.Selector&#xA;Inherits TreeView" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ObjectSelectorEditor::Selector : System::Windows::Forms::TreeView" />
+  <TypeSignature Language="F#" Value="type ObjectSelectorEditor.Selector = class&#xA;    inherit TreeView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.#ctor(System.ComponentModel.Design.ObjectSelectorEditor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (editor As ObjectSelectorEditor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Selector(System::ComponentModel::Design::ObjectSelectorEditor ^ editor);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ObjectSelectorEditor.Selector : System.ComponentModel.Design.ObjectSelectorEditor -&gt; System.ComponentModel.Design.ObjectSelectorEditor.Selector" Usage="new System.ComponentModel.Design.ObjectSelectorEditor.Selector editor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.AddNode(System.String,System.Object,System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNode (label As String, value As Object, parent As ObjectSelectorEditor.SelectorNode) As ObjectSelectorEditor.SelectorNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::ObjectSelectorEditor::SelectorNode ^ AddNode(System::String ^ label, System::Object ^ value, System::ComponentModel::Design::ObjectSelectorEditor::SelectorNode ^ parent);" />
+      <MemberSignature Language="F#" Value="member this.AddNode : string * obj * System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode -&gt; System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" Usage="selector.AddNode (label, value, parent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="selector.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.Selector.clickSeen" />
       <MemberSignature Language="VB.NET" Value="Public clickSeen As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool clickSeen;" />
+      <MemberSignature Language="F#" Value="val mutable clickSeen : bool" Usage="System.ComponentModel.Design.ObjectSelectorEditor.Selector.clickSeen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.OnAfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnAfterSelect (sender As Object, e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnAfterSelect(System::Object ^ sender, System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnAfterSelect : obj * System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="selector.OnAfterSelect (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="selector.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyPress : System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="selector.OnKeyPress e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.OnNodeMouseClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnNodeMouseClick (e As TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnNodeMouseClick(System::Windows::Forms::TreeNodeMouseClickEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnNodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventArgs -&gt; unit" Usage="selector.OnNodeMouseClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -204,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.SetSelection(System.Object,System.Windows.Forms.TreeNodeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetSelection (value As Object, nodes As TreeNodeCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSelection(System::Object ^ value, System::Windows::Forms::TreeNodeCollection ^ nodes);" />
+      <MemberSignature Language="F#" Value="member this.SetSelection : obj * System.Windows.Forms.TreeNodeCollection -&gt; bool" Usage="selector.SetSelection (value, nodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -231,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.Start(System.Windows.Forms.Design.IWindowsFormsEditorService,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (edSvc As IWindowsFormsEditorService, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(System::Windows::Forms::Design::IWindowsFormsEditorService ^ edSvc, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Start : System.Windows.Forms.Design.IWindowsFormsEditorService * obj -&gt; unit" Usage="selector.Start (edSvc, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -256,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="selector.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -276,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.Selector.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="selector.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

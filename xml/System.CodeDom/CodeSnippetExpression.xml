@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeSnippetExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeSnippetExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeSnippetExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeSnippetExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeSnippetExpression.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeSnippetExpression(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeSnippetExpression : string -&gt; System.CodeDom.CodeSnippetExpression" Usage="new System.CodeDom.CodeSnippetExpression value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeSnippetExpression.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.CodeDom.CodeSnippetExpression.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

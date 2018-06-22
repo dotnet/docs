@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RoleManagerEventHandler(sender As Object, e As RoleManagerEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RoleManagerEventHandler(System::Object ^ sender, RoleManagerEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RoleManagerEventHandler = delegate of obj * RoleManagerEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

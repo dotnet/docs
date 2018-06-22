@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UpDownEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UpDownEventHandler(source As Object, e As UpDownEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UpDownEventHandler(System::Object ^ source, UpDownEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UpDownEventHandler = delegate of obj * UpDownEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

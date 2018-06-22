@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FileUpload" />
   <TypeSignature Language="VB.NET" Value="Public Class FileUpload&#xA;Inherits WebControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileUpload : System::Web::UI::WebControls::WebControl" />
+  <TypeSignature Language="F#" Value="type FileUpload = class&#xA;    inherit WebControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -205,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FileUpload.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="fileUpload.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.AllowMultiple" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowMultiple As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowMultiple { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowMultiple : bool with get, set" Usage="System.Web.UI.WebControls.FileUpload.AllowMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -266,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.FileBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileBytes As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ FileBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileBytes : byte[]" Usage="System.Web.UI.WebControls.FileUpload.FileBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.FileContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileContent As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ FileContent { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileContent : System.IO.Stream" Usage="System.Web.UI.WebControls.FileUpload.FileContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Web.UI.WebControls.FileUpload.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.HasFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFile { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFile : bool" Usage="System.Web.UI.WebControls.FileUpload.HasFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.HasFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFiles { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFiles : bool" Usage="System.Web.UI.WebControls.FileUpload.HasFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -486,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FileUpload.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="fileUpload.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -516,6 +525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.PostedFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PostedFile As HttpPostedFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpPostedFile ^ PostedFile { System::Web::HttpPostedFile ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PostedFile : System.Web.HttpPostedFile" Usage="System.Web.UI.WebControls.FileUpload.PostedFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -562,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FileUpload.PostedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PostedFiles As IList(Of HttpPostedFile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Web::HttpPostedFile ^&gt; ^ PostedFiles { System::Collections::Generic::IList&lt;System::Web::HttpPostedFile ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PostedFiles : System.Collections.Generic.IList&lt;System.Web.HttpPostedFile&gt;" Usage="System.Web.UI.WebControls.FileUpload.PostedFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -590,6 +601,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FileUpload.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="fileUpload.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -621,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FileUpload.SaveAs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="member this.SaveAs : string -&gt; unit" Usage="fileUpload.SaveAs filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

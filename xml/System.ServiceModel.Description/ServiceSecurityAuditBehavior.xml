@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceSecurityAuditBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceSecurityAuditBehavior sealed : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceSecurityAuditBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property AuditLogLocation As AuditLogLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLogLocation AuditLogLocation { System::ServiceModel::AuditLogLocation get(); void set(System::ServiceModel::AuditLogLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.AuditLogLocation : System.ServiceModel.AuditLogLocation with get, set" Usage="System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageAuthenticationAuditLevel As AuditLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLevel MessageAuthenticationAuditLevel { System::ServiceModel::AuditLevel get(); void set(System::ServiceModel::AuditLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageAuthenticationAuditLevel : System.ServiceModel.AuditLevel with get, set" Usage="System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthorizationAuditLevel As AuditLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLevel ServiceAuthorizationAuditLevel { System::ServiceModel::AuditLevel get(); void set(System::ServiceModel::AuditLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthorizationAuditLevel : System.ServiceModel.AuditLevel with get, set" Usage="System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressAuditFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressAuditFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressAuditFailure : bool with get, set" Usage="System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

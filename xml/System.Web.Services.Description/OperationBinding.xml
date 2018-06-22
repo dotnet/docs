@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationBinding&#xA;Inherits NamedItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class OperationBinding sealed : System::Web::Services::Description::NamedItem" />
+  <TypeSignature Language="F#" Value="type OperationBinding = class&#xA;    inherit NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationBinding.Binding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Binding ^ Binding { System::Web::Services::Description::Binding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.Web.Services.Description.Binding" Usage="System.Web.Services.Description.OperationBinding.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationBinding.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" Usage="System.Web.Services.Description.OperationBinding.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationBinding.Faults" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Faults As FaultBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::FaultBindingCollection ^ Faults { System::Web::Services::Description::FaultBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Faults : System.Web.Services.Description.FaultBindingCollection" Usage="System.Web.Services.Description.OperationBinding.Faults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationBinding.Input" />
       <MemberSignature Language="VB.NET" Value="Public Property Input As InputBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::InputBinding ^ Input { System::Web::Services::Description::InputBinding ^ get(); void set(System::Web::Services::Description::InputBinding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Input : System.Web.Services.Description.InputBinding with get, set" Usage="System.Web.Services.Description.OperationBinding.Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationBinding.Output" />
       <MemberSignature Language="VB.NET" Value="Public Property Output As OutputBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OutputBinding ^ Output { System::Web::Services::Description::OutputBinding ^ get(); void set(System::Web::Services::Description::OutputBinding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Output : System.Web.Services.Description.OutputBinding with get, set" Usage="System.Web.Services.Description.OperationBinding.Output" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

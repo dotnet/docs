@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationFocusChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutomationFocusChangedEventHandler(sender As Object, e As AutomationFocusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AutomationFocusChangedEventHandler(System::Object ^ sender, AutomationFocusChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AutomationFocusChangedEventHandler = delegate of obj * AutomationFocusChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

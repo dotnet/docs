@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum AnnotationAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class AnnotationAction" />
+  <TypeSignature Language="F#" Value="type AnnotationAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Added" />
       <MemberSignature Language="VB.NET" Value="Added" />
       <MemberSignature Language="C++ CLI" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 0" Usage="System.Windows.Annotations.AnnotationAction.Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Modified" />
       <MemberSignature Language="VB.NET" Value="Modified" />
       <MemberSignature Language="C++ CLI" Value="Modified" />
+      <MemberSignature Language="F#" Value="Modified = 2" Usage="System.Windows.Annotations.AnnotationAction.Modified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Removed" />
       <MemberSignature Language="VB.NET" Value="Removed" />
       <MemberSignature Language="C++ CLI" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 1" Usage="System.Windows.Annotations.AnnotationAction.Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

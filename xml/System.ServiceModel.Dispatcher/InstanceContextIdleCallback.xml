@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.InstanceContextIdleCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InstanceContextIdleCallback(instanceContext As InstanceContext)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InstanceContextIdleCallback(InstanceContext ^ instanceContext);" />
+  <TypeSignature Language="F#" Value="type InstanceContextIdleCallback = delegate of InstanceContext -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

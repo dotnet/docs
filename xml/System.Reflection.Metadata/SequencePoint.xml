@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SequencePoint" />
   <TypeSignature Language="VB.NET" Value="Public Structure SequencePoint&#xA;Implements IEquatable(Of SequencePoint)" />
   <TypeSignature Language="C++ CLI" Value="public value class SequencePoint : IEquatable&lt;System::Reflection::Metadata::SequencePoint&gt;" />
+  <TypeSignature Language="F#" Value="type SequencePoint = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As DocumentHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DocumentHandle Document { System::Reflection::Metadata::DocumentHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Reflection.Metadata.DocumentHandle" Usage="System.Reflection.Metadata.SequencePoint.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.EndColumn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndColumn : int" Usage="System.Reflection.Metadata.SequencePoint.EndColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.EndLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndLine : int" Usage="System.Reflection.Metadata.SequencePoint.EndLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SequencePoint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sequencePoint.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SequencePoint.Equals(System.Reflection.Metadata.SequencePoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SequencePoint) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::SequencePoint other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.SequencePoint -&gt; bool" Usage="sequencePoint.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SequencePoint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sequencePoint.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SequencePoint.HiddenLine" />
       <MemberSignature Language="VB.NET" Value="Public Const HiddenLine As Integer  = 16707566" />
       <MemberSignature Language="C++ CLI" Value="public: int HiddenLine = 16707566;" />
+      <MemberSignature Language="F#" Value="val mutable HiddenLine : int" Usage="System.Reflection.Metadata.SequencePoint.HiddenLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.IsHidden" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHidden { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHidden : bool" Usage="System.Reflection.Metadata.SequencePoint.IsHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.Reflection.Metadata.SequencePoint.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.StartColumn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int" Usage="System.Reflection.Metadata.SequencePoint.StartColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SequencePoint.StartLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartLine : int" Usage="System.Reflection.Metadata.SequencePoint.StartLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

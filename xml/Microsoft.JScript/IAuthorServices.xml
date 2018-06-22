@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IAuthorServices" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAuthorServices" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAuthorServices" />
+  <TypeSignature Language="F#" Value="type IAuthorServices = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetCodeSense" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCodeSense () As IParseText" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::IParseText ^ GetCodeSense();" />
+      <MemberSignature Language="F#" Value="abstract member GetCodeSense : unit -&gt; Microsoft.JScript.IParseText" Usage="iAuthorServices.GetCodeSense " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetColorizer" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColorizer () As IColorizeText" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::IColorizeText ^ GetColorizer();" />
+      <MemberSignature Language="F#" Value="abstract member GetColorizer : unit -&gt; Microsoft.JScript.IColorizeText" Usage="iAuthorServices.GetColorizer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

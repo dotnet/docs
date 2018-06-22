@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxFinds" />
   <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxFinds" />
   <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxFinds" />
+  <TypeSignature Language="F#" Value="type RichTextBoxFinds = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.MatchCase" />
       <MemberSignature Language="VB.NET" Value="MatchCase" />
       <MemberSignature Language="C++ CLI" Value="MatchCase" />
+      <MemberSignature Language="F#" Value="MatchCase = 4" Usage="System.Windows.Forms.RichTextBoxFinds.MatchCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.NoHighlight" />
       <MemberSignature Language="VB.NET" Value="NoHighlight" />
       <MemberSignature Language="C++ CLI" Value="NoHighlight" />
+      <MemberSignature Language="F#" Value="NoHighlight = 8" Usage="System.Windows.Forms.RichTextBoxFinds.NoHighlight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.RichTextBoxFinds.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.Reverse" />
       <MemberSignature Language="VB.NET" Value="Reverse" />
       <MemberSignature Language="C++ CLI" Value="Reverse" />
+      <MemberSignature Language="F#" Value="Reverse = 16" Usage="System.Windows.Forms.RichTextBoxFinds.Reverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.WholeWord" />
       <MemberSignature Language="VB.NET" Value="WholeWord" />
       <MemberSignature Language="C++ CLI" Value="WholeWord" />
+      <MemberSignature Language="F#" Value="WholeWord = 2" Usage="System.Windows.Forms.RichTextBoxFinds.WholeWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

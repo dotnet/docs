@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlDesigner&#xA;Inherits HtmlControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlDesigner : System::Web::UI::Design::HtmlControlDesigner" />
+  <TypeSignature Language="F#" Value="type ControlDesigner = class&#xA;    inherit HtmlControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.ControlDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -168,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.AllowResize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowResize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowResize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowResize : bool" Usage="System.Web.UI.Design.ControlDesigner.AllowResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -204,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.ControlDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateErrorDesignTimeHtml (errorMessage As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreateErrorDesignTimeHtml(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="member this.CreateErrorDesignTimeHtml : string -&gt; string" Usage="controlDesigner.CreateErrorDesignTimeHtml errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -296,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateErrorDesignTimeHtml (errorMessage As String, e As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreateErrorDesignTimeHtml(System::String ^ errorMessage, Exception ^ e);" />
+      <MemberSignature Language="F#" Value="member this.CreateErrorDesignTimeHtml : string * Exception -&gt; string" Usage="controlDesigner.CreateErrorDesignTimeHtml (errorMessage, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -353,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreatePlaceHolderDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreatePlaceHolderDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="member this.CreatePlaceHolderDesignTimeHtml : unit -&gt; string" Usage="controlDesigner.CreatePlaceHolderDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -377,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreatePlaceHolderDesignTimeHtml (instruction As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CreatePlaceHolderDesignTimeHtml(System::String ^ instruction);" />
+      <MemberSignature Language="F#" Value="member this.CreatePlaceHolderDesignTimeHtml : string -&gt; string" Usage="controlDesigner.CreatePlaceHolderDesignTimeHtml instruction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -416,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.CreateViewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateViewControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Control ^ CreateViewControl();" />
+      <MemberSignature Language="F#" Value="abstract member CreateViewControl : unit -&gt; System.Web.UI.Control&#xA;override this.CreateViewControl : unit -&gt; System.Web.UI.Control" Usage="controlDesigner.CreateViewControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -437,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DataBindingsEnabled" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DataBindingsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DataBindingsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBindingsEnabled : bool" Usage="System.Web.UI.Design.ControlDesigner.DataBindingsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -459,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignerState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignerState As ControlDesignerState" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::ControlDesignerState ^ DesignerState { System::Web::UI::Design::ControlDesignerState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerState : System.Web.UI.Design.ControlDesignerState" Usage="System.Web.UI.Design.ControlDesigner.DesignerState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -488,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignTimeElementView" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignTimeElementView As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ DesignTimeElementView { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeElementView : obj" Usage="System.Web.UI.Design.ControlDesigner.DesignTimeElementView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -523,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DesignTimeHtmlRequiresLoadComplete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeHtmlRequiresLoadComplete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeHtmlRequiresLoadComplete : bool" Usage="System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -561,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetBounds" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBounds () As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetBounds();" />
+      <MemberSignature Language="F#" Value="member this.GetBounds : unit -&gt; System.Drawing.Rectangle" Usage="controlDesigner.GetBounds " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -594,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeHtml : unit -&gt; string&#xA;override this.GetDesignTimeHtml : unit -&gt; string" Usage="controlDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -631,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string&#xA;override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="controlDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -673,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeResourceProviderFactory(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDesignTimeResourceProviderFactory (serviceProvider As IServiceProvider) As DesignTimeResourceProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::DesignTimeResourceProviderFactory ^ GetDesignTimeResourceProviderFactory(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="static member GetDesignTimeResourceProviderFactory : IServiceProvider -&gt; System.Web.UI.Design.DesignTimeResourceProviderFactory" Usage="System.Web.UI.Design.ControlDesigner.GetDesignTimeResourceProviderFactory serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -710,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="abstract member GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string&#xA;override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="controlDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -752,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEmptyDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetEmptyDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="abstract member GetEmptyDesignTimeHtml : unit -&gt; string&#xA;override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="controlDesigner.GetEmptyDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -790,6 +809,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetErrorDesignTimeHtml (e As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorDesignTimeHtml : Exception -&gt; string&#xA;override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="controlDesigner.GetErrorDesignTimeHtml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -834,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetPersistenceContent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPersistenceContent () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPersistenceContent();" />
+      <MemberSignature Language="F#" Value="abstract member GetPersistenceContent : unit -&gt; string&#xA;override this.GetPersistenceContent : unit -&gt; string" Usage="controlDesigner.GetPersistenceContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -859,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetPersistInnerHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPersistInnerHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPersistInnerHtml();" />
+      <MemberSignature Language="F#" Value="abstract member GetPersistInnerHtml : unit -&gt; string&#xA;override this.GetPersistInnerHtml : unit -&gt; string" Usage="controlDesigner.GetPersistInnerHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -905,6 +927,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViewRendering () As ViewRendering" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::ViewRendering ^ GetViewRendering();" />
+      <MemberSignature Language="F#" Value="member this.GetViewRendering : unit -&gt; System.Web.UI.Design.ViewRendering" Usage="controlDesigner.GetViewRendering " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -926,6 +949,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Design.ViewRendering GetViewRendering(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ViewRendering ^ GetViewRendering(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="static member GetViewRendering : System.Web.UI.Control -&gt; System.Web.UI.Design.ViewRendering" Usage="System.Web.UI.Design.ControlDesigner.GetViewRendering control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -951,6 +975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Design.ControlDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetViewRendering (designer As ControlDesigner) As ViewRendering" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ViewRendering ^ GetViewRendering(System::Web::UI::Design::ControlDesigner ^ designer);" />
+      <MemberSignature Language="F#" Value="static member GetViewRendering : System.Web.UI.Design.ControlDesigner -&gt; System.Web.UI.Design.ViewRendering" Usage="System.Web.UI.Design.ControlDesigner.GetViewRendering designer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -976,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.HidePropertiesInTemplateMode" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property HidePropertiesInTemplateMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HidePropertiesInTemplateMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HidePropertiesInTemplateMode : bool" Usage="System.Web.UI.Design.ControlDesigner.HidePropertiesInTemplateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1004,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="System.Web.UI.Design.ControlDesigner.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1032,6 +1059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="controlDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1077,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InTemplateMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool InTemplateMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InTemplateMode : bool" Usage="System.Web.UI.Design.ControlDesigner.InTemplateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1129,6 +1158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="controlDesigner.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1157,6 +1187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Invalidate(System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : System.Drawing.Rectangle -&gt; unit" Usage="controlDesigner.Invalidate rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1198,6 +1229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (component As IComponent, callback As TransactedChangeCallback, context As Object, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransactedChange : System.ComponentModel.IComponent * System.Web.UI.Design.TransactedChangeCallback * obj * string -&gt; unit" Usage="System.Web.UI.Design.ControlDesigner.InvokeTransactedChange (component, callback, context, description)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1252,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (component As IComponent, callback As TransactedChangeCallback, context As Object, description As String, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransactedChange : System.ComponentModel.IComponent * System.Web.UI.Design.TransactedChangeCallback * obj * string * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="System.Web.UI.Design.ControlDesigner.InvokeTransactedChange (component, callback, context, description, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1306,6 +1339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransactedChange (serviceProvider As IServiceProvider, component As IComponent, callback As TransactedChangeCallback, context As Object, description As String, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransactedChange(IServiceProvider ^ serviceProvider, System::ComponentModel::IComponent ^ component, System::Web::UI::Design::TransactedChangeCallback ^ callback, System::Object ^ context, System::String ^ description, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransactedChange : IServiceProvider * System.ComponentModel.IComponent * System.Web.UI.Design.TransactedChangeCallback * obj * string * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="System.Web.UI.Design.ControlDesigner.InvokeTransactedChange (serviceProvider, component, callback, context, description, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1367,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool with get, set" Usage="System.Web.UI.Design.ControlDesigner.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1405,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.IsPropertyBound(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsPropertyBound (propName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsPropertyBound(System::String ^ propName);" />
+      <MemberSignature Language="F#" Value="member this.IsPropertyBound : string -&gt; bool" Usage="controlDesigner.IsPropertyBound propName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1445,6 +1481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.Localize(System.Web.UI.Design.IDesignTimeResourceWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Localize (resourceWriter As IDesignTimeResourceWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Localize(System::Web::UI::Design::IDesignTimeResourceWriter ^ resourceWriter);" />
+      <MemberSignature Language="F#" Value="member this.Localize : System.Web.UI.Design.IDesignTimeResourceWriter -&gt; unit" Usage="controlDesigner.Localize resourceWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1475,6 +1512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnAutoFormatApplied(System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnAutoFormatApplied (appliedAutoFormat As DesignerAutoFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnAutoFormatApplied(System::Web::UI::Design::DesignerAutoFormat ^ appliedAutoFormat);" />
+      <MemberSignature Language="F#" Value="abstract member OnAutoFormatApplied : System.Web.UI.Design.DesignerAutoFormat -&gt; unit&#xA;override this.OnAutoFormatApplied : System.Web.UI.Design.DesignerAutoFormat -&gt; unit" Usage="controlDesigner.OnAutoFormatApplied appliedAutoFormat" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1510,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnBindingsCollectionChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBindingsCollectionChanged (propName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBindingsCollectionChanged(System::String ^ propName);" />
+      <MemberSignature Language="F#" Value="override this.OnBindingsCollectionChanged : string -&gt; unit" Usage="controlDesigner.OnBindingsCollectionChanged propName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1549,6 +1588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick (e As DesignerRegionMouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick(System::Web::UI::Design::DesignerRegionMouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : System.Web.UI.Design.DesignerRegionMouseEventArgs -&gt; unit&#xA;override this.OnClick : System.Web.UI.Design.DesignerRegionMouseEventArgs -&gt; unit" Usage="controlDesigner.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1607,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit&#xA;override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="controlDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1645,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnComponentChanging (sender As Object, ce As ComponentChangingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnComponentChanging(System::Object ^ sender, System::ComponentModel::Design::ComponentChangingEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentChanging : obj * System.ComponentModel.Design.ComponentChangingEventArgs -&gt; unit&#xA;override this.OnComponentChanging : obj * System.ComponentModel.Design.ComponentChangingEventArgs -&gt; unit" Usage="controlDesigner.OnComponentChanging (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1681,6 +1723,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnControlResize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnControlResize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnControlResize();" />
+      <MemberSignature Language="F#" Value="abstract member OnControlResize : unit -&gt; unit&#xA;override this.OnControlResize : unit -&gt; unit" Usage="controlDesigner.OnControlResize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1719,6 +1762,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit&#xA;override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="controlDesigner.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1768,6 +1812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="controlDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1803,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.RaiseResizeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseResizeEvent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseResizeEvent();" />
+      <MemberSignature Language="F#" Value="member this.RaiseResizeEvent : unit -&gt; unit" Usage="controlDesigner.RaiseResizeEvent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1837,6 +1883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Web.UI.Design.ControlDesigner.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1875,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.RegisterClone(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterClone (original As Object, clone As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClone(System::Object ^ original, System::Object ^ clone);" />
+      <MemberSignature Language="F#" Value="member this.RegisterClone : obj * obj -&gt; unit" Usage="controlDesigner.RegisterClone (original, clone)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1913,6 +1961,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.RootDesigner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property RootDesigner As WebFormsRootDesigner" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::WebFormsRootDesigner ^ RootDesigner { System::Web::UI::Design::WebFormsRootDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootDesigner : System.Web.UI.Design.WebFormsRootDesigner" Usage="System.Web.UI.Design.ControlDesigner.RootDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1941,6 +1990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="abstract member SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit&#xA;override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="controlDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1983,6 +2033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="member this.SetRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="controlDesigner.SetRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2018,6 +2069,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetViewFlags(valuetype System.Web.UI.Design.ViewFlags viewFlags, bool setFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetViewFlags(System::Web::UI::Design::ViewFlags viewFlags, bool setFlag);" />
+      <MemberSignature Language="F#" Value="member this.SetViewFlags : System.Web.UI.Design.ViewFlags * bool -&gt; unit" Usage="controlDesigner.SetViewFlags (viewFlags, setFlag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2061,6 +2113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.Tag" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Tag As IControlDesignerTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Design::IControlDesignerTag ^ Tag { System::Web::UI::Design::IControlDesignerTag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : System.Web.UI.Design.IControlDesignerTag" Usage="System.Web.UI.Design.ControlDesigner.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2089,6 +2142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TemplateGroups As TemplateGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2128,6 +2182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateDesignTimeHtml ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateDesignTimeHtml : unit -&gt; unit&#xA;override this.UpdateDesignTimeHtml : unit -&gt; unit" Usage="controlDesigner.UpdateDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2169,6 +2224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2208,6 +2264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ViewControl { System::Web::UI::Control ^ get(); void set(System::Web::UI::Control ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewControl : System.Web.UI.Control with get, set" Usage="System.Web.UI.Design.ControlDesigner.ViewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2253,6 +2310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.ViewControlCreated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ViewControlCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ViewControlCreated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewControlCreated : bool with get, set" Usage="System.Web.UI.Design.ControlDesigner.ViewControlCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -2275,6 +2333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ControlDesigner.Visible" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Visible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool" Usage="System.Web.UI.Design.ControlDesigner.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

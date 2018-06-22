@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceEventCache" />
   <TypeSignature Language="VB.NET" Value="Public Class TraceEventCache" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceEventCache" />
+  <TypeSignature Language="F#" Value="type TraceEventCache = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.Callstack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callstack As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Callstack { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Callstack : string" Usage="System.Diagnostics.TraceEventCache.Callstack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.DateTime : DateTime" Usage="System.Diagnostics.TraceEventCache.DateTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.LogicalOperationStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalOperationStack As Stack" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Stack ^ LogicalOperationStack { System::Collections::Stack ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalOperationStack : System.Collections.Stack" Usage="System.Diagnostics.TraceEventCache.LogicalOperationStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.ProcessId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessId : int" Usage="System.Diagnostics.TraceEventCache.ProcessId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.ThreadId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreadId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadId : string" Usage="System.Diagnostics.TraceEventCache.ThreadId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Timestamp { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : int64" Usage="System.Diagnostics.TraceEventCache.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.BIND_OPTS" />
   <TypeSignature Language="VB.NET" Value="Public Structure BIND_OPTS" />
   <TypeSignature Language="C++ CLI" Value="public value class BIND_OPTS" />
+  <TypeSignature Language="F#" Value="type BIND_OPTS = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BIND_OPTS.cbStruct" />
       <MemberSignature Language="VB.NET" Value="Public cbStruct As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int cbStruct;" />
+      <MemberSignature Language="F#" Value="val mutable cbStruct : int" Usage="System.Runtime.InteropServices.ComTypes.BIND_OPTS.cbStruct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BIND_OPTS.dwTickCountDeadline" />
       <MemberSignature Language="VB.NET" Value="Public dwTickCountDeadline As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int dwTickCountDeadline;" />
+      <MemberSignature Language="F#" Value="val mutable dwTickCountDeadline : int" Usage="System.Runtime.InteropServices.ComTypes.BIND_OPTS.dwTickCountDeadline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BIND_OPTS.grfFlags" />
       <MemberSignature Language="VB.NET" Value="Public grfFlags As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfFlags;" />
+      <MemberSignature Language="F#" Value="val mutable grfFlags : int" Usage="System.Runtime.InteropServices.ComTypes.BIND_OPTS.grfFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.BIND_OPTS.grfMode" />
       <MemberSignature Language="VB.NET" Value="Public grfMode As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfMode;" />
+      <MemberSignature Language="F#" Value="val mutable grfMode : int" Usage="System.Runtime.InteropServices.ComTypes.BIND_OPTS.grfMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

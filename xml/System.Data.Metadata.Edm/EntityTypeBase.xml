@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EntityTypeBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EntityTypeBase&#xA;Inherits StructuralType" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityTypeBase abstract : System::Data::Metadata::Edm::StructuralType" />
+  <TypeSignature Language="F#" Value="type EntityTypeBase = class&#xA;    inherit StructuralType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityTypeBase.KeyMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyMembers As ReadOnlyMetadataCollection(Of EdmMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmMember ^&gt; ^ KeyMembers { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmMember ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyMembers : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt;" Usage="System.Data.Metadata.Edm.EntityTypeBase.KeyMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

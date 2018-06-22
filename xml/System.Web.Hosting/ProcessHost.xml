@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessHost" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProcessHost&#xA;Inherits MarshalByRefObject&#xA;Implements IAdphManager, IApplicationPreloadManager, IPphManager, IProcessHost, IProcessHostIdleAndHealthCheck" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessHost sealed : MarshalByRefObject, System::Web::Hosting::IAdphManager, System::Web::Hosting::IApplicationPreloadManager, System::Web::Hosting::IPphManager, System::Web::Hosting::IProcessHost, System::Web::Hosting::IProcessHostIdleAndHealthCheck" />
+  <TypeSignature Language="F#" Value="type ProcessHost = class&#xA;    inherit MarshalByRefObject&#xA;    interface IProcessHost&#xA;    interface IAdphManager&#xA;    interface IPphManager&#xA;    interface IProcessHostIdleAndHealthCheck&#xA;    interface IApplicationPreloadManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumerateAppDomains (ByRef appDomainInfoEnum As IAppDomainInfoEnum)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnumerateAppDomains([Runtime::InteropServices::Out] System::Web::Hosting::IAppDomainInfoEnum ^ % appDomainInfoEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumerateAppDomains :  -&gt; unit&#xA;override this.EnumerateAppDomains :  -&gt; unit" Usage="processHost.EnumerateAppDomains appDomainInfoEnum" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)</InterfaceMember>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="processHost.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.IsIdle" />
       <MemberSignature Language="VB.NET" Value="Public Function IsIdle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsIdle();" />
+      <MemberSignature Language="F#" Value="abstract member IsIdle : unit -&gt; bool&#xA;override this.IsIdle : unit -&gt; bool" Usage="processHost.IsIdle " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHostIdleAndHealthCheck.IsIdle</InterfaceMember>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.Ping(System.Web.Hosting.IProcessPingCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ping (callback As IProcessPingCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Ping(System::Web::Hosting::IProcessPingCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member Ping : System.Web.Hosting.IProcessPingCallback -&gt; unit&#xA;override this.Ping : System.Web.Hosting.IProcessPingCallback -&gt; unit" Usage="processHost.Ping callback" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHostIdleAndHealthCheck.Ping(System.Web.Hosting.IProcessPingCallback)</InterfaceMember>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.SetApplicationPreloadState(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadState (context As String, appId As String, enabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetApplicationPreloadState(System::String ^ context, System::String ^ appId, bool enabled);" />
+      <MemberSignature Language="F#" Value="abstract member SetApplicationPreloadState : string * string * bool -&gt; unit&#xA;override this.SetApplicationPreloadState : string * string * bool -&gt; unit" Usage="processHost.SetApplicationPreloadState (context, appId, enabled)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState(System.String,System.String,System.Boolean)</InterfaceMember>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetApplicationPreloadUtil (applicationPreloadUtil As IApplicationPreloadUtil)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetApplicationPreloadUtil(System::Web::Hosting::IApplicationPreloadUtil ^ applicationPreloadUtil);" />
+      <MemberSignature Language="F#" Value="abstract member SetApplicationPreloadUtil : System.Web.Hosting.IApplicationPreloadUtil -&gt; unit&#xA;override this.SetApplicationPreloadUtil : System.Web.Hosting.IApplicationPreloadUtil -&gt; unit" Usage="processHost.SetApplicationPreloadUtil applicationPreloadUtil" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)</InterfaceMember>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="processHost.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHost.Shutdown</InterfaceMember>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.ShutdownApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShutdownApplication (appId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShutdownApplication(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="abstract member ShutdownApplication : string -&gt; unit&#xA;override this.ShutdownApplication : string -&gt; unit" Usage="processHost.ShutdownApplication appId" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHost.ShutdownApplication(System.String)</InterfaceMember>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StartAppDomainProtocolListenerChannel(System.String,System.String,System.Web.Hosting.IListenerChannelCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartAppDomainProtocolListenerChannel (appId As String, protocolId As String, listenerChannelCallback As IListenerChannelCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartAppDomainProtocolListenerChannel(System::String ^ appId, System::String ^ protocolId, System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback);" />
+      <MemberSignature Language="F#" Value="abstract member StartAppDomainProtocolListenerChannel : string * string * System.Web.Hosting.IListenerChannelCallback -&gt; unit&#xA;override this.StartAppDomainProtocolListenerChannel : string * string * System.Web.Hosting.IListenerChannelCallback -&gt; unit" Usage="processHost.StartAppDomainProtocolListenerChannel (appId, protocolId, listenerChannelCallback)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAdphManager.StartAppDomainProtocolListenerChannel(System.String,System.String,System.Web.Hosting.IListenerChannelCallback)</InterfaceMember>
@@ -341,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StartApplication(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartApplication (appId As String, appPath As String, ByRef runtimeInterface As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartApplication(System::String ^ appId, System::String ^ appPath, [Runtime::InteropServices::Out] System::Object ^ % runtimeInterface);" />
+      <MemberSignature Language="F#" Value="abstract member StartApplication : string * string *  -&gt; unit&#xA;override this.StartApplication : string * string *  -&gt; unit" Usage="processHost.StartApplication (appId, appPath, runtimeInterface)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)</InterfaceMember>
@@ -372,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StartProcessProtocolListenerChannel(System.String,System.Web.Hosting.IListenerChannelCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartProcessProtocolListenerChannel (protocolId As String, listenerChannelCallback As IListenerChannelCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartProcessProtocolListenerChannel(System::String ^ protocolId, System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback);" />
+      <MemberSignature Language="F#" Value="abstract member StartProcessProtocolListenerChannel : string * System.Web.Hosting.IListenerChannelCallback -&gt; unit&#xA;override this.StartProcessProtocolListenerChannel : string * System.Web.Hosting.IListenerChannelCallback -&gt; unit" Usage="processHost.StartProcessProtocolListenerChannel (protocolId, listenerChannelCallback)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IPphManager.StartProcessProtocolListenerChannel(System.String,System.Web.Hosting.IListenerChannelCallback)</InterfaceMember>
@@ -401,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StopAppDomainProtocol(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopAppDomainProtocol (appId As String, protocolId As String, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopAppDomainProtocol(System::String ^ appId, System::String ^ protocolId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopAppDomainProtocol : string * string * bool -&gt; unit&#xA;override this.StopAppDomainProtocol : string * string * bool -&gt; unit" Usage="processHost.StopAppDomainProtocol (appId, protocolId, immediate)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAdphManager.StopAppDomainProtocol(System.String,System.String,System.Boolean)</InterfaceMember>
@@ -439,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StopAppDomainProtocolListenerChannel(System.String,System.String,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopAppDomainProtocolListenerChannel (appId As String, protocolId As String, listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopAppDomainProtocolListenerChannel(System::String ^ appId, System::String ^ protocolId, int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopAppDomainProtocolListenerChannel : string * string * int * bool -&gt; unit&#xA;override this.StopAppDomainProtocolListenerChannel : string * string * int * bool -&gt; unit" Usage="processHost.StopAppDomainProtocolListenerChannel (appId, protocolId, listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAdphManager.StopAppDomainProtocolListenerChannel(System.String,System.String,System.Int32,System.Boolean)</InterfaceMember>
@@ -472,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StopProcessProtocol(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessProtocol (protocolId As String, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopProcessProtocol(System::String ^ protocolId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessProtocol : string * bool -&gt; unit&#xA;override this.StopProcessProtocol : string * bool -&gt; unit" Usage="processHost.StopProcessProtocol (protocolId, immediate)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IPphManager.StopProcessProtocol(System.String,System.Boolean)</InterfaceMember>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StopProcessProtocolListenerChannel(System.String,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessProtocolListenerChannel (protocolId As String, listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopProcessProtocolListenerChannel(System::String ^ protocolId, int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessProtocolListenerChannel : string * int * bool -&gt; unit&#xA;override this.StopProcessProtocolListenerChannel : string * int * bool -&gt; unit" Usage="processHost.StopProcessProtocolListenerChannel (protocolId, listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IPphManager.StopProcessProtocolListenerChannel(System.String,System.Int32,System.Boolean)</InterfaceMember>

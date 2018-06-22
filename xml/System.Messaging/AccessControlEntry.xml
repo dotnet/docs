@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.AccessControlEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessControlEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessControlEntry" />
+  <TypeSignature Language="F#" Value="type AccessControlEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Messaging.Trustee trustee) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessControlEntry(System::Messaging::Trustee ^ trustee);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.AccessControlEntry : System.Messaging.Trustee -&gt; System.Messaging.AccessControlEntry" Usage="new System.Messaging.AccessControlEntry trustee" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Messaging.Trustee trustee, valuetype System.Messaging.GenericAccessRights genericAccessRights, valuetype System.Messaging.StandardAccessRights standardAccessRights, valuetype System.Messaging.AccessControlEntryType entryType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.GenericAccessRights,System.Messaging.StandardAccessRights,System.Messaging.AccessControlEntryType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessControlEntry(System::Messaging::Trustee ^ trustee, System::Messaging::GenericAccessRights genericAccessRights, System::Messaging::StandardAccessRights standardAccessRights, System::Messaging::AccessControlEntryType entryType);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.AccessControlEntry : System.Messaging.Trustee * System.Messaging.GenericAccessRights * System.Messaging.StandardAccessRights * System.Messaging.AccessControlEntryType -&gt; System.Messaging.AccessControlEntry" Usage="new System.Messaging.AccessControlEntry (trustee, genericAccessRights, standardAccessRights, entryType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.AccessControlEntry.CustomAccessRights" />
       <MemberSignature Language="VB.NET" Value="Protected Property CustomAccessRights As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int CustomAccessRights { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CustomAccessRights : int with get, set" Usage="System.Messaging.AccessControlEntry.CustomAccessRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.AccessControlEntry.EntryType" />
       <MemberSignature Language="VB.NET" Value="Public Property EntryType As AccessControlEntryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::AccessControlEntryType EntryType { System::Messaging::AccessControlEntryType get(); void set(System::Messaging::AccessControlEntryType value); };" />
+      <MemberSignature Language="F#" Value="member this.EntryType : System.Messaging.AccessControlEntryType with get, set" Usage="System.Messaging.AccessControlEntry.EntryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.AccessControlEntry.GenericAccessRights" />
       <MemberSignature Language="VB.NET" Value="Public Property GenericAccessRights As GenericAccessRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::GenericAccessRights GenericAccessRights { System::Messaging::GenericAccessRights get(); void set(System::Messaging::GenericAccessRights value); };" />
+      <MemberSignature Language="F#" Value="member this.GenericAccessRights : System.Messaging.GenericAccessRights with get, set" Usage="System.Messaging.AccessControlEntry.GenericAccessRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.AccessControlEntry.StandardAccessRights" />
       <MemberSignature Language="VB.NET" Value="Public Property StandardAccessRights As StandardAccessRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::StandardAccessRights StandardAccessRights { System::Messaging::StandardAccessRights get(); void set(System::Messaging::StandardAccessRights value); };" />
+      <MemberSignature Language="F#" Value="member this.StandardAccessRights : System.Messaging.StandardAccessRights with get, set" Usage="System.Messaging.AccessControlEntry.StandardAccessRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.AccessControlEntry.Trustee" />
       <MemberSignature Language="VB.NET" Value="Public Property Trustee As Trustee" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::Trustee ^ Trustee { System::Messaging::Trustee ^ get(); void set(System::Messaging::Trustee ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Trustee : System.Messaging.Trustee with get, set" Usage="System.Messaging.AccessControlEntry.Trustee" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RegularExpressionAttributeAdapter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegularExpressionAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of RegularExpressionAttribute)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegularExpressionAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::RegularExpressionAttribute ^&gt;" />
+  <TypeSignature Language="F#" Value="type RegularExpressionAttributeAdapter = class&#xA;    inherit DataAnnotationsModelValidator&lt;RegularExpressionAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RegularExpressionAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.RegularExpressionAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As RegularExpressionAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegularExpressionAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::RegularExpressionAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.RegularExpressionAttributeAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.RegularExpressionAttribute -&gt; System.Web.ModelBinding.RegularExpressionAttributeAdapter" Usage="new System.Web.ModelBinding.RegularExpressionAttributeAdapter (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RegularExpressionAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedErrorMessage (errorMessage As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedErrorMessage : string -&gt; string" Usage="regularExpressionAttributeAdapter.GetLocalizedErrorMessage errorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

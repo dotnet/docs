@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.XamlLoadErrorInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlLoadErrorInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlLoadErrorInfo" />
+  <TypeSignature Language="F#" Value="type XamlLoadErrorInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.XamlLoadErrorInfo.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, lineNumber As Integer, linePosition As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlLoadErrorInfo(System::String ^ message, int lineNumber, int linePosition);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.XamlLoadErrorInfo : string * int * int -&gt; System.Activities.Presentation.XamlLoadErrorInfo" Usage="new System.Activities.Presentation.XamlLoadErrorInfo (message, lineNumber, linePosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.XamlLoadErrorInfo.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Activities.Presentation.XamlLoadErrorInfo.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.XamlLoadErrorInfo.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Activities.Presentation.XamlLoadErrorInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.XamlLoadErrorInfo.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Activities.Presentation.XamlLoadErrorInfo.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.XamlLoadErrorInfo.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Activities.Presentation.XamlLoadErrorInfo.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

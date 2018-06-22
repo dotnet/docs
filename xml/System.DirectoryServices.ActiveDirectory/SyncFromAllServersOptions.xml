@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SyncFromAllServersOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SyncFromAllServersOptions" />
+  <TypeSignature Language="F#" Value="type SyncFromAllServersOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.AbortIfServerUnavailable" />
       <MemberSignature Language="VB.NET" Value="AbortIfServerUnavailable" />
       <MemberSignature Language="C++ CLI" Value="AbortIfServerUnavailable" />
+      <MemberSignature Language="F#" Value="AbortIfServerUnavailable = 1" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.AbortIfServerUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CheckServerAlivenessOnly" />
       <MemberSignature Language="VB.NET" Value="CheckServerAlivenessOnly" />
       <MemberSignature Language="C++ CLI" Value="CheckServerAlivenessOnly" />
+      <MemberSignature Language="F#" Value="CheckServerAlivenessOnly = 8" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CheckServerAlivenessOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CrossSite" />
       <MemberSignature Language="VB.NET" Value="CrossSite" />
       <MemberSignature Language="C++ CLI" Value="CrossSite" />
+      <MemberSignature Language="F#" Value="CrossSite = 64" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CrossSite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.PushChangeOutward" />
       <MemberSignature Language="VB.NET" Value="PushChangeOutward" />
       <MemberSignature Language="C++ CLI" Value="PushChangeOutward" />
+      <MemberSignature Language="F#" Value="PushChangeOutward = 32" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.PushChangeOutward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SkipInitialCheck" />
       <MemberSignature Language="VB.NET" Value="SkipInitialCheck" />
       <MemberSignature Language="C++ CLI" Value="SkipInitialCheck" />
+      <MemberSignature Language="F#" Value="SkipInitialCheck = 16" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SkipInitialCheck" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SyncAdjacentServerOnly" />
       <MemberSignature Language="VB.NET" Value="SyncAdjacentServerOnly" />
       <MemberSignature Language="C++ CLI" Value="SyncAdjacentServerOnly" />
+      <MemberSignature Language="F#" Value="SyncAdjacentServerOnly = 2" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SyncAdjacentServerOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

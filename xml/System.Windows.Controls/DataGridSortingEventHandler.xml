@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSortingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridSortingEventHandler(sender As Object, e As DataGridSortingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridSortingEventHandler(System::Object ^ sender, DataGridSortingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridSortingEventHandler = delegate of obj * DataGridSortingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

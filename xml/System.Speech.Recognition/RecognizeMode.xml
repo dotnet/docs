@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecognizeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecognizeMode" />
+  <TypeSignature Language="F#" Value="type RecognizeMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizeMode.Multiple" />
       <MemberSignature Language="VB.NET" Value="Multiple" />
       <MemberSignature Language="C++ CLI" Value="Multiple" />
+      <MemberSignature Language="F#" Value="Multiple = 1" Usage="System.Speech.Recognition.RecognizeMode.Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -92,6 +94,7 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizeMode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 0" Usage="System.Speech.Recognition.RecognizeMode.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

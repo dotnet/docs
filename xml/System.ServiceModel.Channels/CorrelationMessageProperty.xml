@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationMessageProperty" />
+  <TypeSignature Language="F#" Value="type CorrelationMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.#ctor(System.Runtime.DurableInstancing.InstanceKey,System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (correlationKey As InstanceKey, additionalKeys As IEnumerable(Of InstanceKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationMessageProperty(System::Runtime::DurableInstancing::InstanceKey ^ correlationKey, System::Collections::Generic::IEnumerable&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ additionalKeys);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CorrelationMessageProperty : System.Runtime.DurableInstancing.InstanceKey * seq&lt;System.Runtime.DurableInstancing.InstanceKey&gt; -&gt; System.ServiceModel.Channels.CorrelationMessageProperty" Usage="new System.ServiceModel.Channels.CorrelationMessageProperty (correlationKey, additionalKeys)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.#ctor(System.Runtime.DurableInstancing.InstanceKey,System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey},System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (correlationKey As InstanceKey, additionalKeys As IEnumerable(Of InstanceKey), transientCorrelations As IEnumerable(Of InstanceKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationMessageProperty(System::Runtime::DurableInstancing::InstanceKey ^ correlationKey, System::Collections::Generic::IEnumerable&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ additionalKeys, System::Collections::Generic::IEnumerable&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ transientCorrelations);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CorrelationMessageProperty : System.Runtime.DurableInstancing.InstanceKey * seq&lt;System.Runtime.DurableInstancing.InstanceKey&gt; * seq&lt;System.Runtime.DurableInstancing.InstanceKey&gt; -&gt; System.ServiceModel.Channels.CorrelationMessageProperty" Usage="new System.ServiceModel.Channels.CorrelationMessageProperty (correlationKey, additionalKeys, transientCorrelations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.AdditionalKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalKeys As ReadOnlyCollection(Of InstanceKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ AdditionalKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.AdditionalKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.CorrelationKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationKey As InstanceKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceKey ^ CorrelationKey { System::Runtime::DurableInstancing::InstanceKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationKey : System.Runtime.DurableInstancing.InstanceKey" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.CorrelationKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.TransientCorrelations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransientCorrelations As ReadOnlyCollection(Of InstanceKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ TransientCorrelations { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransientCorrelations : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.TransientCorrelations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.CorrelationMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationMessageProperty@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.TryGet (message, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationMessageProperty@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As CorrelationMessageProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Channels.CorrelationMessageProperty.TryGet (properties, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

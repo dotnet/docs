@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageBorderless" />
   <TypeSignature Language="VB.NET" Value="Public Enum PageBorderless" />
   <TypeSignature Language="C++ CLI" Value="public enum class PageBorderless" />
+  <TypeSignature Language="F#" Value="type PageBorderless = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.Borderless" />
       <MemberSignature Language="VB.NET" Value="Borderless" />
       <MemberSignature Language="C++ CLI" Value="Borderless" />
+      <MemberSignature Language="F#" Value="Borderless = 1" Usage="System.Printing.PageBorderless.Borderless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Printing.PageBorderless.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PageBorderless.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

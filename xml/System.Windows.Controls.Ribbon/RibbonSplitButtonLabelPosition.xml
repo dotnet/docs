@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum RibbonSplitButtonLabelPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class RibbonSplitButtonLabelPosition" />
+  <TypeSignature Language="F#" Value="type RibbonSplitButtonLabelPosition = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.DropDown" />
       <MemberSignature Language="VB.NET" Value="DropDown" />
       <MemberSignature Language="C++ CLI" Value="DropDown" />
+      <MemberSignature Language="F#" Value="DropDown = 1" Usage="System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.Header" />
       <MemberSignature Language="VB.NET" Value="Header" />
       <MemberSignature Language="C++ CLI" Value="Header" />
+      <MemberSignature Language="F#" Value="Header = 0" Usage="System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

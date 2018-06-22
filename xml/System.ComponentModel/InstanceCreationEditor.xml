@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InstanceCreationEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstanceCreationEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceCreationEditor abstract" />
+  <TypeSignature Language="F#" Value="type InstanceCreationEditor = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InstanceCreationEditor.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateInstance (context As ITypeDescriptorContext, instanceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ CreateInstance(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ instanceType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.ComponentModel.ITypeDescriptorContext * Type -&gt; obj" Usage="instanceCreationEditor.CreateInstance (context, instanceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InstanceCreationEditor.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.ComponentModel.InstanceCreationEditor.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

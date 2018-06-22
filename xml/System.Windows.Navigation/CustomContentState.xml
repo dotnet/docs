@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.CustomContentState" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomContentState" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomContentState abstract" />
+  <TypeSignature Language="F#" Value="type CustomContentState = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.CustomContentState.JournalEntryName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JournalEntryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ JournalEntryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.JournalEntryName : string" Usage="System.Windows.Navigation.CustomContentState.JournalEntryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Replay(class System.Windows.Navigation.NavigationService navigationService, valuetype System.Windows.Navigation.NavigationMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.CustomContentState.Replay(System.Windows.Navigation.NavigationService,System.Windows.Navigation.NavigationMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Replay(System::Windows::Navigation::NavigationService ^ navigationService, System::Windows::Navigation::NavigationMode mode);" />
+      <MemberSignature Language="F#" Value="abstract member Replay : System.Windows.Navigation.NavigationService * System.Windows.Navigation.NavigationMode -&gt; unit" Usage="customContentState.Replay (navigationService, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

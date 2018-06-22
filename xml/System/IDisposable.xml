@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IDisposable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDisposable" />
+  <TypeSignature Language="F#" Value="type IDisposable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.IDisposable.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="iDisposable.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SendCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SendCompletedEventHandler(sender As Object, e As AsyncCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SendCompletedEventHandler(System::Object ^ sender, AsyncCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SendCompletedEventHandler = delegate of obj * AsyncCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

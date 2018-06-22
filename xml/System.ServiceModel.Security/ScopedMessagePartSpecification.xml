@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ScopedMessagePartSpecification" />
   <TypeSignature Language="VB.NET" Value="Public Class ScopedMessagePartSpecification" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScopedMessagePartSpecification" />
+  <TypeSignature Language="F#" Value="type ScopedMessagePartSpecification = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor(System.ServiceModel.Security.ScopedMessagePartSpecification)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As ScopedMessagePartSpecification)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScopedMessagePartSpecification(System::ServiceModel::Security::ScopedMessagePartSpecification ^ other);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ScopedMessagePartSpecification : System.ServiceModel.Security.ScopedMessagePartSpecification -&gt; System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="new System.ServiceModel.Security.ScopedMessagePartSpecification other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ScopedMessagePartSpecification.Actions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actions As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ Actions { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Actions : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.ServiceModel.Security.ScopedMessagePartSpecification.Actions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddParts (parts As MessagePartSpecification)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddParts(System::ServiceModel::Security::MessagePartSpecification ^ parts);" />
+      <MemberSignature Language="F#" Value="member this.AddParts : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="scopedMessagePartSpecification.AddParts parts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddParts (parts As MessagePartSpecification, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddParts(System::ServiceModel::Security::MessagePartSpecification ^ parts, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="member this.AddParts : System.ServiceModel.Security.MessagePartSpecification * string -&gt; unit" Usage="scopedMessagePartSpecification.AddParts (parts, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ScopedMessagePartSpecification.ChannelParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelParts As MessagePartSpecification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::MessagePartSpecification ^ ChannelParts { System::ServiceModel::Security::MessagePartSpecification ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelParts : System.ServiceModel.Security.MessagePartSpecification" Usage="System.ServiceModel.Security.ScopedMessagePartSpecification.ChannelParts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ScopedMessagePartSpecification.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Security.ScopedMessagePartSpecification.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="scopedMessagePartSpecification.MakeReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.ServiceModel.Security.MessagePartSpecification@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetParts (action As String, ByRef parts As MessagePartSpecification) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetParts(System::String ^ action, [Runtime::InteropServices::Out] System::ServiceModel::Security::MessagePartSpecification ^ % parts);" />
+      <MemberSignature Language="F#" Value="member this.TryGetParts : string *  -&gt; bool" Usage="scopedMessagePartSpecification.TryGetParts (action, parts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.Boolean,System.ServiceModel.Security.MessagePartSpecification@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetParts (action As String, excludeChannelScope As Boolean, ByRef parts As MessagePartSpecification) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetParts(System::String ^ action, bool excludeChannelScope, [Runtime::InteropServices::Out] System::ServiceModel::Security::MessagePartSpecification ^ % parts);" />
+      <MemberSignature Language="F#" Value="member this.TryGetParts : string * bool *  -&gt; bool" Usage="scopedMessagePartSpecification.TryGetParts (action, excludeChannelScope, parts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

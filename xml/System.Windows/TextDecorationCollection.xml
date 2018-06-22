@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextDecorationCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of TextDecoration), IEnumerable(Of TextDecoration), IList, IList(Of TextDecoration)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextDecorationCollection sealed : System::Windows::Media::Animation::Animatable, System::Collections::Generic::ICollection&lt;System::Windows::TextDecoration ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::TextDecoration ^&gt;, System::Collections::Generic::IList&lt;System::Windows::TextDecoration ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type TextDecorationCollection = class&#xA;    inherit Animatable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;TextDecoration&gt;&#xA;    interface ICollection&lt;TextDecoration&gt;&#xA;    interface seq&lt;TextDecoration&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.TextDecoration})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of TextDecoration))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextDecorationCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::TextDecoration ^&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.TextDecorationCollection : seq&lt;System.Windows.TextDecoration&gt; -&gt; System.Windows.TextDecorationCollection" Usage="new System.Windows.TextDecorationCollection collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextDecorationCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Windows.TextDecorationCollection : int -&gt; System.Windows.TextDecorationCollection" Usage="new System.Windows.TextDecorationCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Add(System.Collections.Generic.IEnumerable{System.Windows.TextDecoration})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (textDecorations As IEnumerable(Of TextDecoration))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Collections::Generic::IEnumerable&lt;System::Windows::TextDecoration ^&gt; ^ textDecorations);" />
+      <MemberSignature Language="F#" Value="member this.Add : seq&lt;System.Windows.TextDecoration&gt; -&gt; unit" Usage="textDecorationCollection.Add textDecorations" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Add(System.Windows.TextDecoration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As TextDecoration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::TextDecoration ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.TextDecoration -&gt; unit&#xA;override this.Add : System.Windows.TextDecoration -&gt; unit" Usage="textDecorationCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="textDecorationCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextDecorationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::TextDecorationCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.TextDecorationCollection" Usage="textDecorationCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="textDecorationCollection.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TextDecorationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::TextDecorationCollection ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.TextDecorationCollection" Usage="textDecorationCollection.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="textDecorationCollection.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Contains(System.Windows.TextDecoration)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As TextDecoration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::TextDecoration ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.TextDecoration -&gt; bool&#xA;override this.Contains : System.Windows.TextDecoration -&gt; bool" Usage="textDecorationCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.CopyTo(System.Windows.TextDecoration[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TextDecoration(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::TextDecoration ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.TextDecoration[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.TextDecoration[] * int -&gt; unit" Usage="textDecorationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.TextDecorationCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -380,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="textDecorationCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="textDecorationCollection.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -425,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="textDecorationCollection.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -448,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="textDecorationCollection.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -471,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As TextDecorationCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::TextDecorationCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.TextDecorationCollection.Enumerator" Usage="textDecorationCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -492,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.IndexOf(System.Windows.TextDecoration)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As TextDecoration) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::TextDecoration ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.TextDecoration -&gt; int&#xA;override this.IndexOf : System.Windows.TextDecoration -&gt; int" Usage="textDecorationCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -519,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Insert(System.Int32,System.Windows.TextDecoration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As TextDecoration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::TextDecoration ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.TextDecoration -&gt; unit&#xA;override this.Insert : int * System.Windows.TextDecoration -&gt; unit" Usage="textDecorationCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -547,6 +567,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TextDecoration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecoration ^ default[int] { System::Windows::TextDecoration ^ get(int index); void set(int index, System::Windows::TextDecoration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.TextDecoration with get, set" Usage="System.Windows.TextDecorationCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -574,6 +595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.Remove(System.Windows.TextDecoration)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As TextDecoration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::TextDecoration ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.TextDecoration -&gt; bool&#xA;override this.Remove : System.Windows.TextDecoration -&gt; bool" Usage="textDecorationCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -602,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="textDecorationCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -629,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#Generic#ICollection&lt;System#Windows#TextDecoration&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TextDecoration).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.TextDecoration&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.Generic.ICollection&lt;System.Windows.TextDecoration&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -727,6 +751,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -758,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -962,6 +988,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -993,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1024,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorationCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.TextDecorationCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1093,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.TryRemove(System.Collections.Generic.IEnumerable{System.Windows.TextDecoration},System.Windows.TextDecorationCollection@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryRemove (textDecorations As IEnumerable(Of TextDecoration), ByRef result As TextDecorationCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryRemove(System::Collections::Generic::IEnumerable&lt;System::Windows::TextDecoration ^&gt; ^ textDecorations, [Runtime::InteropServices::Out] System::Windows::TextDecorationCollection ^ % result);" />
+      <MemberSignature Language="F#" Value="member this.TryRemove : seq&lt;System.Windows.TextDecoration&gt; *  -&gt; bool" Usage="textDecorationCollection.TryRemove (textDecorations, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum PagerPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class PagerPosition" />
+  <TypeSignature Language="F#" Value="type PagerPosition = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 0" Usage="System.Web.UI.WebControls.PagerPosition.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 1" Usage="System.Web.UI.WebControls.PagerPosition.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.TopAndBottom" />
       <MemberSignature Language="VB.NET" Value="TopAndBottom" />
       <MemberSignature Language="C++ CLI" Value="TopAndBottom" />
+      <MemberSignature Language="F#" Value="TopAndBottom = 2" Usage="System.Web.UI.WebControls.PagerPosition.TopAndBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

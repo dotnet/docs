@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" />
   <TypeSignature Language="VB.NET" Value="Public Structure STGMEDIUM" />
   <TypeSignature Language="C++ CLI" Value="public value class STGMEDIUM" />
+  <TypeSignature Language="F#" Value="type STGMEDIUM = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease" />
       <MemberSignature Language="VB.NET" Value="Public pUnkForRelease As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ pUnkForRelease;" />
+      <MemberSignature Language="F#" Value="val mutable pUnkForRelease : obj" Usage="System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STGMEDIUM.tymed" />
       <MemberSignature Language="VB.NET" Value="Public tymed As TYMED " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYMED tymed;" />
+      <MemberSignature Language="F#" Value="val mutable tymed : System.Runtime.InteropServices.ComTypes.TYMED" Usage="System.Runtime.InteropServices.ComTypes.STGMEDIUM.tymed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STGMEDIUM.unionmember" />
       <MemberSignature Language="VB.NET" Value="Public unionmember As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr unionmember;" />
+      <MemberSignature Language="F#" Value="val mutable unionmember : nativeint" Usage="System.Runtime.InteropServices.ComTypes.STGMEDIUM.unionmember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

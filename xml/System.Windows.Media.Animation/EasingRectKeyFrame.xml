@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingRectKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class EasingRectKeyFrame&#xA;Inherits RectKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class EasingRectKeyFrame : System::Windows::Media::Animation::RectKeyFrame" />
+  <TypeSignature Language="F#" Value="type EasingRectKeyFrame = class&#xA;    inherit RectKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRectKeyFrame.#ctor(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRectKeyFrame(System::Windows::Rect value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingRectKeyFrame : System.Windows.Rect -&gt; System.Windows.Media.Animation.EasingRectKeyFrame" Usage="new System.Windows.Media.Animation.EasingRectKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRectKeyFrame(System::Windows::Rect value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingRectKeyFrame : System.Windows.Rect * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.EasingRectKeyFrame" Usage="new System.Windows.Media.Animation.EasingRectKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.IEasingFunction easingFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRectKeyFrame(System::Windows::Rect value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::IEasingFunction ^ easingFunction);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingRectKeyFrame : System.Windows.Rect * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.IEasingFunction -&gt; System.Windows.Media.Animation.EasingRectKeyFrame" Usage="new System.Windows.Media.Animation.EasingRectKeyFrame (value, keyTime, easingFunction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRectKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="easingRectKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingRectKeyFrame.EasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.EasingRectKeyFrame.EasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingRectKeyFrame.EasingFunctionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.EasingRectKeyFrame.EasingFunctionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRectKeyFrame.InterpolateValueCore(System.Windows.Rect,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Rect, keyFrameProgress As Double) As Rect" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect InterpolateValueCore(System::Windows::Rect baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Rect * double -&gt; System.Windows.Rect" Usage="easingRectKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

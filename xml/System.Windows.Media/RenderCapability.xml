@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderCapability" />
   <TypeSignature Language="VB.NET" Value="Public Class RenderCapability" />
   <TypeSignature Language="C++ CLI" Value="public ref class RenderCapability abstract sealed" />
+  <TypeSignature Language="F#" Value="type RenderCapability = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderCapability.IsPixelShaderVersionSupported(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPixelShaderVersionSupported (majorVersionRequested As Short, minorVersionRequested As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPixelShaderVersionSupported(short majorVersionRequested, short minorVersionRequested);" />
+      <MemberSignature Language="F#" Value="static member IsPixelShaderVersionSupported : int16 * int16 -&gt; bool" Usage="System.Windows.Media.RenderCapability.IsPixelShaderVersionSupported (majorVersionRequested, minorVersionRequested)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderCapability.IsPixelShaderVersionSupportedInSoftware(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPixelShaderVersionSupportedInSoftware (majorVersionRequested As Short, minorVersionRequested As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPixelShaderVersionSupportedInSoftware(short majorVersionRequested, short minorVersionRequested);" />
+      <MemberSignature Language="F#" Value="static member IsPixelShaderVersionSupportedInSoftware : int16 * int16 -&gt; bool" Usage="System.Windows.Media.RenderCapability.IsPixelShaderVersionSupportedInSoftware (majorVersionRequested, minorVersionRequested)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderCapability.IsShaderEffectSoftwareRenderingSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsShaderEffectSoftwareRenderingSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsShaderEffectSoftwareRenderingSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsShaderEffectSoftwareRenderingSupported : bool" Usage="System.Windows.Media.RenderCapability.IsShaderEffectSoftwareRenderingSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderCapability.MaxHardwareTextureSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaxHardwareTextureSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Size MaxHardwareTextureSize { System::Windows::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxHardwareTextureSize : System.Windows.Size" Usage="System.Windows.Media.RenderCapability.MaxHardwareTextureSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderCapability.MaxPixelShaderInstructionSlots(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MaxPixelShaderInstructionSlots (majorVersionRequested As Short, minorVersionRequested As Short) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MaxPixelShaderInstructionSlots(short majorVersionRequested, short minorVersionRequested);" />
+      <MemberSignature Language="F#" Value="static member MaxPixelShaderInstructionSlots : int16 * int16 -&gt; int" Usage="System.Windows.Media.RenderCapability.MaxPixelShaderInstructionSlots (majorVersionRequested, minorVersionRequested)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderCapability.Tier" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tier As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Tier { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tier : int" Usage="System.Windows.Media.RenderCapability.Tier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.RenderCapability.TierChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event TierChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ TierChanged;" />
+      <MemberSignature Language="F#" Value="member this.TierChanged : EventHandler " Usage="member this.TierChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IStructuralComparable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStructuralComparable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStructuralComparable" />
+  <TypeSignature Language="F#" Value="type IStructuralComparable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As Object, comparer As IComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Object ^ other, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj * System.Collections.IComparer -&gt; int" Usage="iStructuralComparable.CompareTo (other, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

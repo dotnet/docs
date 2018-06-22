@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewColumnEventHandler(sender As Object, e As DataGridViewColumnEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewColumnEventHandler(System::Object ^ sender, DataGridViewColumnEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnEventHandler = delegate of obj * DataGridViewColumnEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

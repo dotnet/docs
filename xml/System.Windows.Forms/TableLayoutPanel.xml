@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class TableLayoutPanel&#xA;Inherits Panel&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutPanel : System::Windows::Forms::Panel, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type TableLayoutPanel = class&#xA;    inherit Panel&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.TableLayoutPanel.BorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.CellBorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property CellBorderStyle As TableLayoutPanelCellBorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutPanelCellBorderStyle CellBorderStyle { System::Windows::Forms::TableLayoutPanelCellBorderStyle get(); void set(System::Windows::Forms::TableLayoutPanelCellBorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CellBorderStyle : System.Windows.Forms.TableLayoutPanelCellBorderStyle with get, set" Usage="System.Windows.Forms.TableLayoutPanel.CellBorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +221,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TableLayoutPanel.CellPaint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CellPaint As TableLayoutCellPaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TableLayoutCellPaintEventHandler ^ CellPaint;" />
+      <MemberSignature Language="F#" Value="member this.CellPaint : System.Windows.Forms.TableLayoutCellPaintEventHandler " Usage="member this.CellPaint : System.Windows.Forms.TableLayoutCellPaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.ColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnCount : int with get, set" Usage="System.Windows.Forms.TableLayoutPanel.ColumnCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnStyles As TableLayoutColumnStyleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutColumnStyleCollection ^ ColumnStyles { System::Windows::Forms::TableLayoutColumnStyleCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnStyles : System.Windows.Forms.TableLayoutColumnStyleCollection" Usage="System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As TableLayoutControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutControlCollection ^ Controls { System::Windows::Forms::TableLayoutControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.TableLayoutControlCollection" Usage="System.Windows.Forms.TableLayoutPanel.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -399,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.CreateControlsInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="tableLayoutPanel.CreateControlsInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.TableLayoutPanelCellPosition GetCellPosition(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetCellPosition(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TableLayoutPanelCellPosition GetCellPosition(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetCellPosition : System.Windows.Forms.Control -&gt; System.Windows.Forms.TableLayoutPanelCellPosition" Usage="tableLayoutPanel.GetCellPosition control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +467,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumn(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetColumn(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumn(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetColumn : System.Windows.Forms.Control -&gt; int" Usage="tableLayoutPanel.GetColumn control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -520,6 +530,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumnSpan(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetColumnSpan(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumnSpan(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetColumnSpan : System.Windows.Forms.Control -&gt; int" Usage="tableLayoutPanel.GetColumnSpan control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -573,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetColumnWidths" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnWidths () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetColumnWidths();" />
+      <MemberSignature Language="F#" Value="member this.GetColumnWidths : unit -&gt; int[]" Usage="tableLayoutPanel.GetColumnWidths " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -602,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetControlFromPosition(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetControlFromPosition (column As Integer, row As Integer) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Control ^ GetControlFromPosition(int column, int row);" />
+      <MemberSignature Language="F#" Value="member this.GetControlFromPosition : int * int -&gt; System.Windows.Forms.Control" Usage="tableLayoutPanel.GetControlFromPosition (column, row)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -645,6 +658,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.TableLayoutPanelCellPosition GetPositionFromControl(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TableLayoutPanelCellPosition GetPositionFromControl(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetPositionFromControl : System.Windows.Forms.Control -&gt; System.Windows.Forms.TableLayoutPanelCellPosition" Usage="tableLayoutPanel.GetPositionFromControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -675,6 +689,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetRow(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetRow(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRow(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetRow : System.Windows.Forms.Control -&gt; int" Usage="tableLayoutPanel.GetRow control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -738,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetRowHeights" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRowHeights () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRowHeights();" />
+      <MemberSignature Language="F#" Value="member this.GetRowHeights : unit -&gt; int[]" Usage="tableLayoutPanel.GetRowHeights " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -766,6 +782,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetRowSpan(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.GetRowSpan(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRowSpan(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetRowSpan : System.Windows.Forms.Control -&gt; int" Usage="tableLayoutPanel.GetRowSpan control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -819,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.GrowStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property GrowStyle As TableLayoutPanelGrowStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutPanelGrowStyle GrowStyle { System::Windows::Forms::TableLayoutPanelGrowStyle get(); void set(System::Windows::Forms::TableLayoutPanelGrowStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.GrowStyle : System.Windows.Forms.TableLayoutPanelGrowStyle with get, set" Usage="System.Windows.Forms.TableLayoutPanel.GrowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -865,6 +883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.LayoutEngine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.TableLayoutPanel.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -885,6 +904,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.LayoutSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property LayoutSettings As TableLayoutSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutSettings ^ LayoutSettings { System::Windows::Forms::TableLayoutSettings ^ get(); void set(System::Windows::Forms::TableLayoutSettings ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutSettings : System.Windows.Forms.TableLayoutSettings with get, set" Usage="System.Windows.Forms.TableLayoutPanel.LayoutSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -917,6 +937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.OnCellPaint(System.Windows.Forms.TableLayoutCellPaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCellPaint (e As TableLayoutCellPaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCellPaint(System::Windows::Forms::TableLayoutCellPaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCellPaint : System.Windows.Forms.TableLayoutCellPaintEventArgs -&gt; unit&#xA;override this.OnCellPaint : System.Windows.Forms.TableLayoutCellPaintEventArgs -&gt; unit" Usage="tableLayoutPanel.OnCellPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -950,6 +971,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="tableLayoutPanel.OnLayout levent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -985,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="tableLayoutPanel.OnPaintBackground e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1008,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int with get, set" Usage="System.Windows.Forms.TableLayoutPanel.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1049,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowStyles As TableLayoutRowStyleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutRowStyleCollection ^ RowStyles { System::Windows::Forms::TableLayoutRowStyleCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowStyles : System.Windows.Forms.TableLayoutRowStyleCollection" Usage="System.Windows.Forms.TableLayoutPanel.RowStyles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1108,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
+      <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="tableLayoutPanel.ScaleControl (factor, specified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.ScaleCore(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleCore (dx As Single, dy As Single)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleCore(float dx, float dy);" />
+      <MemberSignature Language="F#" Value="override this.ScaleCore : single * single -&gt; unit" Usage="tableLayoutPanel.ScaleCore (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1169,6 +1196,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCellPosition(class System.Windows.Forms.Control control, valuetype System.Windows.Forms.TableLayoutPanelCellPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.SetCellPosition(System.Windows.Forms.Control,System.Windows.Forms.TableLayoutPanelCellPosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCellPosition(System::Windows::Forms::Control ^ control, System::Windows::Forms::TableLayoutPanelCellPosition position);" />
+      <MemberSignature Language="F#" Value="member this.SetCellPosition : System.Windows.Forms.Control * System.Windows.Forms.TableLayoutPanelCellPosition -&gt; unit" Usage="tableLayoutPanel.SetCellPosition (control, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1193,6 +1221,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumn(class System.Windows.Forms.Control control, int32 column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.SetColumn(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumn(System::Windows::Forms::Control ^ control, int column);" />
+      <MemberSignature Language="F#" Value="member this.SetColumn : System.Windows.Forms.Control * int -&gt; unit" Usage="tableLayoutPanel.SetColumn (control, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1239,6 +1268,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnSpan(class System.Windows.Forms.Control control, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.SetColumnSpan(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnSpan(System::Windows::Forms::Control ^ control, int value);" />
+      <MemberSignature Language="F#" Value="member this.SetColumnSpan : System.Windows.Forms.Control * int -&gt; unit" Usage="tableLayoutPanel.SetColumnSpan (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1286,6 +1316,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRow(class System.Windows.Forms.Control control, int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.SetRow(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRow(System::Windows::Forms::Control ^ control, int row);" />
+      <MemberSignature Language="F#" Value="member this.SetRow : System.Windows.Forms.Control * int -&gt; unit" Usage="tableLayoutPanel.SetRow (control, row)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1332,6 +1363,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRowSpan(class System.Windows.Forms.Control control, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutPanel.SetRowSpan(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRowSpan(System::Windows::Forms::Control ^ control, int value);" />
+      <MemberSignature Language="F#" Value="member this.SetRowSpan : System.Windows.Forms.Control * int -&gt; unit" Usage="tableLayoutPanel.SetRowSpan (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Formatting" />
   <TypeSignature Language="VB.NET" Value="Public Enum Formatting" />
   <TypeSignature Language="C++ CLI" Value="public enum class Formatting" />
+  <TypeSignature Language="F#" Value="type Formatting = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.Indented" />
       <MemberSignature Language="VB.NET" Value="Indented" />
       <MemberSignature Language="C++ CLI" Value="Indented" />
+      <MemberSignature Language="F#" Value="Indented = 1" Usage="System.Xml.Formatting.Indented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Formatting.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

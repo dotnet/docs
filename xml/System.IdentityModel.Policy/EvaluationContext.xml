@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.EvaluationContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EvaluationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class EvaluationContext abstract" />
+  <TypeSignature Language="F#" Value="type EvaluationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddClaimSet(class System.IdentityModel.Policy.IAuthorizationPolicy authorizationPolicy, class System.IdentityModel.Claims.ClaimSet claimSet) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.EvaluationContext.AddClaimSet(System.IdentityModel.Policy.IAuthorizationPolicy,System.IdentityModel.Claims.ClaimSet)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddClaimSet(System::IdentityModel::Policy::IAuthorizationPolicy ^ authorizationPolicy, System::IdentityModel::Claims::ClaimSet ^ claimSet);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member AddClaimSet : System.IdentityModel.Policy.IAuthorizationPolicy * System.IdentityModel.Claims.ClaimSet -&gt; unit" Usage="evaluationContext.AddClaimSet (authorizationPolicy, claimSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.EvaluationContext.ClaimSets" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ClaimSets As ReadOnlyCollection(Of ClaimSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ ClaimSets { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimSets : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;" Usage="System.IdentityModel.Policy.EvaluationContext.ClaimSets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.EvaluationContext.Generation" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Generation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Generation { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Generation : int" Usage="System.IdentityModel.Policy.EvaluationContext.Generation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.EvaluationContext.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Policy.EvaluationContext.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.EvaluationContext.RecordExpirationTime(System.DateTime)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RecordExpirationTime (time As DateTime)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RecordExpirationTime(DateTime time);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member RecordExpirationTime : DateTime -&gt; unit" Usage="evaluationContext.RecordExpirationTime time" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

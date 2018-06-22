@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.SimpleType" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SimpleType&#xA;Inherits EdmType" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleType abstract : System::Data::Metadata::Edm::EdmType" />
+  <TypeSignature Language="F#" Value="type SimpleType = class&#xA;    inherit EdmType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

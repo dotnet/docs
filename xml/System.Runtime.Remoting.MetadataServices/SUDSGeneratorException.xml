@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.SUDSGeneratorException" />
   <TypeSignature Language="VB.NET" Value="Public Class SUDSGeneratorException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SUDSGeneratorException : Exception" />
+  <TypeSignature Language="F#" Value="type SUDSGeneratorException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.SUDSGeneratorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SUDSGeneratorException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.MetadataServices.SUDSGeneratorException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Remoting.MetadataServices.SUDSGeneratorException" Usage="new System.Runtime.Remoting.MetadataServices.SUDSGeneratorException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

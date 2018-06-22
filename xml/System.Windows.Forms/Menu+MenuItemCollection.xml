@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu.MenuItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class Menu.MenuItemCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class Menu::MenuItemCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type Menu.MenuItemCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.#ctor(System.Windows.Forms.Menu)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Menu)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemCollection(System::Windows::Forms::Menu ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Menu.MenuItemCollection : System.Windows.Forms.Menu -&gt; System.Windows.Forms.Menu.MenuItemCollection" Usage="new System.Windows.Forms.Menu.MenuItemCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; System.Windows.Forms.MenuItem&#xA;override this.Add : string -&gt; System.Windows.Forms.MenuItem" Usage="menuItemCollection.Add caption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (item As MenuItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::Forms::MenuItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Forms.MenuItem -&gt; int&#xA;override this.Add : System.Windows.Forms.MenuItem -&gt; int" Usage="menuItemCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.Int32,System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (index As Integer, item As MenuItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(int index, System::Windows::Forms::MenuItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : int * System.Windows.Forms.MenuItem -&gt; int&#xA;override this.Add : int * System.Windows.Forms.MenuItem -&gt; int" Usage="menuItemCollection.Add (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String,System.EventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String, onClick As EventHandler) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption, EventHandler ^ onClick);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * EventHandler -&gt; System.Windows.Forms.MenuItem&#xA;override this.Add : string * EventHandler -&gt; System.Windows.Forms.MenuItem" Usage="menuItemCollection.Add (caption, onClick)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String,System.Windows.Forms.MenuItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String, items As MenuItem()) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption, cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * System.Windows.Forms.MenuItem[] -&gt; System.Windows.Forms.MenuItem&#xA;override this.Add : string * System.Windows.Forms.MenuItem[] -&gt; System.Windows.Forms.MenuItem" Usage="menuItemCollection.Add (caption, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.AddRange(System.Windows.Forms.MenuItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (items As MenuItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Windows.Forms.MenuItem[] -&gt; unit&#xA;override this.AddRange : System.Windows.Forms.MenuItem[] -&gt; unit" Usage="menuItemCollection.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="menuItemCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Contains(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As MenuItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::MenuItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.MenuItem -&gt; bool" Usage="menuItemCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="menuItemCollection.ContainsKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ dest, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="menuItemCollection.CopyTo (dest, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -498,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.Menu.MenuItemCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -538,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (key As String, searchAllChildren As Boolean) As MenuItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ Find(System::String ^ key, bool searchAllChildren);" />
+      <MemberSignature Language="F#" Value="member this.Find : string * bool -&gt; System.Windows.Forms.MenuItem[]" Usage="menuItemCollection.Find (key, searchAllChildren)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -576,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="menuItemCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -600,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.IndexOf(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As MenuItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::MenuItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.MenuItem -&gt; int" Usage="menuItemCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -635,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.IndexOfKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="menuItemCollection.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -670,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.Menu.MenuItemCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -703,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::MenuItem ^ default[int] { System::Windows::Forms::MenuItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.MenuItem" Usage="System.Windows.Forms.Menu.MenuItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -744,6 +763,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::MenuItem ^ default[System::String ^] { System::Windows::Forms::MenuItem ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.MenuItem" Usage="System.Windows.Forms.Menu.MenuItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (item As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::MenuItem ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Forms.MenuItem -&gt; unit&#xA;override this.Remove : System.Windows.Forms.MenuItem -&gt; unit" Usage="menuItemCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -816,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="menuItemCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -858,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.RemoveByKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="menuItemCollection.RemoveByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -890,6 +913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Menu.MenuItemCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -921,6 +945,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Menu.MenuItemCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1089,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Menu.MenuItemCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1120,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.Menu.MenuItemCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

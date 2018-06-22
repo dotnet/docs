@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" />
   <TypeSignature Language="VB.NET" Value="Public Structure XmlSortKeyAccumulator" />
   <TypeSignature Language="C++ CLI" Value="public value class XmlSortKeyAccumulator" />
+  <TypeSignature Language="F#" Value="type XmlSortKeyAccumulator = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDateTimeSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDateTimeSortKey (collation As XmlCollation, value As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDateTimeSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.AddDateTimeSortKey : System.Xml.Xsl.Runtime.XmlCollation * DateTime -&gt; unit" Usage="xmlSortKeyAccumulator.AddDateTimeSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDecimalSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDecimalSortKey (collation As XmlCollation, value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDecimalSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.AddDecimalSortKey : System.Xml.Xsl.Runtime.XmlCollation * decimal -&gt; unit" Usage="xmlSortKeyAccumulator.AddDecimalSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDoubleSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDoubleSortKey (collation As XmlCollation, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDoubleSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, double value);" />
+      <MemberSignature Language="F#" Value="member this.AddDoubleSortKey : System.Xml.Xsl.Runtime.XmlCollation * double -&gt; unit" Usage="xmlSortKeyAccumulator.AddDoubleSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddEmptySortKey(System.Xml.Xsl.Runtime.XmlCollation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEmptySortKey (collation As XmlCollation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEmptySortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation);" />
+      <MemberSignature Language="F#" Value="member this.AddEmptySortKey : System.Xml.Xsl.Runtime.XmlCollation -&gt; unit" Usage="xmlSortKeyAccumulator.AddEmptySortKey collation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntegerSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddIntegerSortKey (collation As XmlCollation, value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIntegerSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, long value);" />
+      <MemberSignature Language="F#" Value="member this.AddIntegerSortKey : System.Xml.Xsl.Runtime.XmlCollation * int64 -&gt; unit" Usage="xmlSortKeyAccumulator.AddIntegerSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddIntSortKey (collation As XmlCollation, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIntSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, int value);" />
+      <MemberSignature Language="F#" Value="member this.AddIntSortKey : System.Xml.Xsl.Runtime.XmlCollation * int -&gt; unit" Usage="xmlSortKeyAccumulator.AddIntSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddStringSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddStringSortKey (collation As XmlCollation, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddStringSortKey(System::Xml::Xsl::Runtime::XmlCollation ^ collation, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddStringSortKey : System.Xml.Xsl.Runtime.XmlCollation * string -&gt; unit" Usage="xmlSortKeyAccumulator.AddStringSortKey (collation, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Create" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create();" />
+      <MemberSignature Language="F#" Value="member this.Create : unit -&gt; unit" Usage="xmlSortKeyAccumulator.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.FinishSortKeys" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinishSortKeys ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinishSortKeys();" />
+      <MemberSignature Language="F#" Value="member this.FinishSortKeys : unit -&gt; unit" Usage="xmlSortKeyAccumulator.FinishSortKeys " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Array" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Array ^ Keys { Array ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : Array" Usage="System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

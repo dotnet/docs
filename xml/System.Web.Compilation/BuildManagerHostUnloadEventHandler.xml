@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManagerHostUnloadEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildManagerHostUnloadEventHandler(sender As Object, e As BuildManagerHostUnloadEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildManagerHostUnloadEventHandler(System::Object ^ sender, BuildManagerHostUnloadEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BuildManagerHostUnloadEventHandler = delegate of obj * BuildManagerHostUnloadEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

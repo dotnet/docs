@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ArgumentAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Class ArgumentAccessor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArgumentAccessor" />
+  <TypeSignature Language="F#" Value="type ArgumentAccessor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ArgumentAccessor.Getter" />
       <MemberSignature Language="VB.NET" Value="Public Property Getter As Func(Of Activity, Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ Getter { Func&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Getter : Func&lt;System.Activities.Activity, System.Activities.Argument&gt; with get, set" Usage="System.Activities.Presentation.ArgumentAccessor.Getter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ArgumentAccessor.Setter" />
       <MemberSignature Language="VB.NET" Value="Public Property Setter As Action(Of Activity, Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ Setter { Action&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ get(); void set(Action&lt;System::Activities::Activity ^, System::Activities::Argument ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Setter : Action&lt;System.Activities.Activity, System.Activities.Argument&gt; with get, set" Usage="System.Activities.Presentation.ArgumentAccessor.Setter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

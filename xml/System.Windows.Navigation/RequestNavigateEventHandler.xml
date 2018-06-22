@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.RequestNavigateEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RequestNavigateEventHandler(sender As Object, e As RequestNavigateEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RequestNavigateEventHandler(System::Object ^ sender, RequestNavigateEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RequestNavigateEventHandler = delegate of obj * RequestNavigateEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

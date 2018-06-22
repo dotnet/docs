@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ArgumentValue`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArgumentValue(Of T)&#xA;Inherits EnvironmentLocationValue(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ArgumentValue sealed : System::Activities::Expressions::EnvironmentLocationValue&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ArgumentValue&lt;'T&gt; = class&#xA;    inherit EnvironmentLocationValue&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentValue`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argumentName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentValue(System::String ^ argumentName);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Expressions.ArgumentValue&lt;'T&gt; : string -&gt; System.Activities.Expressions.ArgumentValue&lt;'T&gt;" Usage="new System.Activities.Expressions.ArgumentValue&lt;'T&gt; argumentName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArgumentValue`1.ArgumentName" />
       <MemberSignature Language="VB.NET" Value="Public Property ArgumentName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ArgumentName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentName : string with get, set" Usage="System.Activities.Expressions.ArgumentValue&lt;'T&gt;.ArgumentName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="argumentValue.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArgumentValue`1.LocationReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocationReference As LocationReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::LocationReference ^ LocationReference { System::Activities::LocationReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationReference : System.Activities.LocationReference" Usage="System.Activities.Expressions.ArgumentValue&lt;'T&gt;.LocationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArgumentValue`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="argumentValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

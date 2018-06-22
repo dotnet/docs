@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityFrameworkVersions" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityFrameworkVersions" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityFrameworkVersions abstract sealed" />
+  <TypeSignature Language="F#" Value="type EntityFrameworkVersions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetSchemaXsd(class System.Version entityFrameworkVersion, valuetype System.Data.Metadata.Edm.DataSpace dataSpace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityFrameworkVersions.GetSchemaXsd(System.Version,System.Data.Metadata.Edm.DataSpace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ GetSchemaXsd(Version ^ entityFrameworkVersion, System::Data::Metadata::Edm::DataSpace dataSpace);" />
+      <MemberSignature Language="F#" Value="static member GetSchemaXsd : Version * System.Data.Metadata.Edm.DataSpace -&gt; System.IO.Stream" Usage="System.Data.Entity.Design.EntityFrameworkVersions.GetSchemaXsd (entityFrameworkVersion, dataSpace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version1 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version1;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version1 : Version" Usage="System.Data.Entity.Design.EntityFrameworkVersions.Version1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version2 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version2;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version2 : Version" Usage="System.Data.Entity.Design.EntityFrameworkVersions.Version2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version3 As Version " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Version ^ Version3;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Version3 : Version" Usage="System.Data.Entity.Design.EntityFrameworkVersions.Version3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

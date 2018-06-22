@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngKeyUsages" />
   <TypeSignature Language="VB.NET" Value="Public Enum CngKeyUsages" />
   <TypeSignature Language="C++ CLI" Value="public enum class CngKeyUsages" />
+  <TypeSignature Language="F#" Value="type CngKeyUsages = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyUsages.AllUsages" />
       <MemberSignature Language="VB.NET" Value="AllUsages" />
       <MemberSignature Language="C++ CLI" Value="AllUsages" />
+      <MemberSignature Language="F#" Value="AllUsages = 16777215" Usage="System.Security.Cryptography.CngKeyUsages.AllUsages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyUsages.Decryption" />
       <MemberSignature Language="VB.NET" Value="Decryption" />
       <MemberSignature Language="C++ CLI" Value="Decryption" />
+      <MemberSignature Language="F#" Value="Decryption = 1" Usage="System.Security.Cryptography.CngKeyUsages.Decryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyUsages.KeyAgreement" />
       <MemberSignature Language="VB.NET" Value="KeyAgreement" />
       <MemberSignature Language="C++ CLI" Value="KeyAgreement" />
+      <MemberSignature Language="F#" Value="KeyAgreement = 4" Usage="System.Security.Cryptography.CngKeyUsages.KeyAgreement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyUsages.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngKeyUsages.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyUsages.Signing" />
       <MemberSignature Language="VB.NET" Value="Signing" />
       <MemberSignature Language="C++ CLI" Value="Signing" />
+      <MemberSignature Language="F#" Value="Signing = 2" Usage="System.Security.Cryptography.CngKeyUsages.Signing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

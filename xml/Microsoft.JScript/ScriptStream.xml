@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptStream" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptStream" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptStream" />
+  <TypeSignature Language="F#" Value="type ScriptStream = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptStream.Error" />
       <MemberSignature Language="VB.NET" Value="Public Shared Error As TextWriter " />
       <MemberSignature Language="C++ CLI" Value="public: static System::IO::TextWriter ^ Error;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Error : System.IO.TextWriter" Usage="Microsoft.JScript.ScriptStream.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptStream.Out" />
       <MemberSignature Language="VB.NET" Value="Public Shared Out As TextWriter " />
       <MemberSignature Language="C++ CLI" Value="public: static System::IO::TextWriter ^ Out;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Out : System.IO.TextWriter" Usage="Microsoft.JScript.ScriptStream.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.PrintStackTrace" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrintStackTrace ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrintStackTrace();" />
+      <MemberSignature Language="F#" Value="static member PrintStackTrace : unit -&gt; unit" Usage="Microsoft.JScript.ScriptStream.PrintStackTrace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.PrintStackTrace(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrintStackTrace (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrintStackTrace(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="static member PrintStackTrace : Exception -&gt; unit" Usage="Microsoft.JScript.ScriptStream.PrintStackTrace e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (str As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member Write : string -&gt; unit" Usage="Microsoft.JScript.ScriptStream.Write str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (str As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string -&gt; unit" Usage="Microsoft.JScript.ScriptStream.WriteLine str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

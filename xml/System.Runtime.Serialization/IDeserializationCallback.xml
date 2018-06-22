@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDeserializationCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDeserializationCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDeserializationCallback" />
+  <TypeSignature Language="F#" Value="type IDeserializationCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserialization(System::Object ^ sender);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit" Usage="iDeserializationCallback.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherPriorityAwaitable" />
   <TypeSignature Language="VB.NET" Value="Public Structure DispatcherPriorityAwaitable" />
   <TypeSignature Language="C++ CLI" Value="public value class DispatcherPriorityAwaitable" />
+  <TypeSignature Language="F#" Value="type DispatcherPriorityAwaitable = struct" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherPriorityAwaitable.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As DispatcherPriorityAwaiter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Threading::DispatcherPriorityAwaiter GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Windows.Threading.DispatcherPriorityAwaiter" Usage="dispatcherPriorityAwaitable.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicketScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintTicketScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintTicketScope" />
+  <TypeSignature Language="F#" Value="type PrintTicketScope = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.DocumentScope" />
       <MemberSignature Language="VB.NET" Value="DocumentScope" />
       <MemberSignature Language="C++ CLI" Value="DocumentScope" />
+      <MemberSignature Language="F#" Value="DocumentScope = 1" Usage="System.Printing.PrintTicketScope.DocumentScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.JobScope" />
       <MemberSignature Language="VB.NET" Value="JobScope" />
       <MemberSignature Language="C++ CLI" Value="JobScope" />
+      <MemberSignature Language="F#" Value="JobScope = 2" Usage="System.Printing.PrintTicketScope.JobScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.PageScope" />
       <MemberSignature Language="VB.NET" Value="PageScope" />
       <MemberSignature Language="C++ CLI" Value="PageScope" />
+      <MemberSignature Language="F#" Value="PageScope = 0" Usage="System.Printing.PrintTicketScope.PageScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

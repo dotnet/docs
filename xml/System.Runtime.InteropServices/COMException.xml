@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.COMException" />
   <TypeSignature Language="VB.NET" Value="Public Class COMException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class COMException : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type COMException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.COMException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; COMException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.COMException : string -&gt; System.Runtime.InteropServices.COMException" Usage="new System.Runtime.InteropServices.COMException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -178,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.COMException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; COMException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.COMException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.InteropServices.COMException" Usage="new System.Runtime.InteropServices.COMException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.COMException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; COMException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.COMException : string * Exception -&gt; System.Runtime.InteropServices.COMException" Usage="new System.Runtime.InteropServices.COMException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -274,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.COMException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; COMException(System::String ^ message, int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.COMException : string * int -&gt; System.Runtime.InteropServices.COMException" Usage="new System.Runtime.InteropServices.COMException (message, errorCode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -325,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.COMException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cOMException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeBlock" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeBlock&#xA;Inherits CodeItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeBlock : Mono::CodeGeneration::CodeItem" />
+  <TypeSignature Language="F#" Value="type CodeBlock = class&#xA;    inherit CodeItem" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBlock.Add(Mono.CodeGeneration.CodeItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (code As CodeItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Mono::CodeGeneration::CodeItem ^ code);" />
+      <MemberSignature Language="F#" Value="member this.Add : Mono.CodeGeneration.CodeItem -&gt; unit" Usage="codeBlock.Add code" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBlock.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeBlock.Generate gen" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBlock.GetLastItem" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastItem () As CodeItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeItem ^ GetLastItem();" />
+      <MemberSignature Language="F#" Value="member this.GetLastItem : unit -&gt; Mono.CodeGeneration.CodeItem" Usage="codeBlock.GetLastItem " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeBlock.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Mono.CodeGeneration.CodeBlock.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBlock.op_Addition(Mono.CodeGeneration.CodeBlock,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (cb As CodeBlock, e As CodeExpression) As CodeBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeBlock ^ operator +(Mono::CodeGeneration::CodeBlock ^ cb, Mono::CodeGeneration::CodeExpression ^ e);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Mono.CodeGeneration.CodeBlock * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeBlock" Usage="cb + e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBlock.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeBlock.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

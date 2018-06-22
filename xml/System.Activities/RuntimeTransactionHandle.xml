@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RuntimeTransactionHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuntimeTransactionHandle&#xA;Inherits Handle&#xA;Implements IExecutionProperty, IPropertyRegistrationCallback" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuntimeTransactionHandle sealed : System::Activities::Handle, System::Activities::IExecutionProperty, System::Activities::IPropertyRegistrationCallback" />
+  <TypeSignature Language="F#" Value="type RuntimeTransactionHandle = class&#xA;    inherit Handle&#xA;    interface IExecutionProperty&#xA;    interface IPropertyRegistrationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.#ctor(System.Transactions.Transaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rootTransaction As Transaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeTransactionHandle(System::Transactions::Transaction ^ rootTransaction);" />
+      <MemberSignature Language="F#" Value="new System.Activities.RuntimeTransactionHandle : System.Transactions.Transaction -&gt; System.Activities.RuntimeTransactionHandle" Usage="new System.Activities.RuntimeTransactionHandle rootTransaction" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeTransactionHandle.AbortInstanceOnTransactionFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property AbortInstanceOnTransactionFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbortInstanceOnTransactionFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AbortInstanceOnTransactionFailure : bool with get, set" Usage="System.Activities.RuntimeTransactionHandle.AbortInstanceOnTransactionFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.CompleteTransaction(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompleteTransaction (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteTransaction(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.CompleteTransaction : System.Activities.NativeActivityContext -&gt; unit" Usage="runtimeTransactionHandle.CompleteTransaction context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.CompleteTransaction(System.Activities.NativeActivityContext,System.Activities.BookmarkCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompleteTransaction (context As NativeActivityContext, callback As BookmarkCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteTransaction(System::Activities::NativeActivityContext ^ context, System::Activities::BookmarkCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.CompleteTransaction : System.Activities.NativeActivityContext * System.Activities.BookmarkCallback -&gt; unit" Usage="runtimeTransactionHandle.CompleteTransaction (context, callback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.AsyncCodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTransaction (context As AsyncCodeActivityContext) As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Transaction ^ GetCurrentTransaction(System::Activities::AsyncCodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTransaction : System.Activities.AsyncCodeActivityContext -&gt; System.Transactions.Transaction" Usage="runtimeTransactionHandle.GetCurrentTransaction context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTransaction (context As CodeActivityContext) As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Transaction ^ GetCurrentTransaction(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTransaction : System.Activities.CodeActivityContext -&gt; System.Transactions.Transaction" Usage="runtimeTransactionHandle.GetCurrentTransaction context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTransaction (context As NativeActivityContext) As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Transaction ^ GetCurrentTransaction(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTransaction : System.Activities.NativeActivityContext -&gt; System.Transactions.Transaction" Usage="runtimeTransactionHandle.GetCurrentTransaction context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.OnInitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialize(System::Activities::HandleInitializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="runtimeTransactionHandle.OnInitialize context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.OnUninitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUninitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUninitialize(System::Activities::HandleInitializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.OnUninitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="runtimeTransactionHandle.OnUninitialize context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.RequestTransactionContext(System.Activities.NativeActivityContext,System.Action{System.Activities.NativeActivityTransactionContext,System.Object},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequestTransactionContext (context As NativeActivityContext, callback As Action(Of NativeActivityTransactionContext, Object), state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestTransactionContext(System::Activities::NativeActivityContext ^ context, Action&lt;System::Activities::NativeActivityTransactionContext ^, System::Object ^&gt; ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.RequestTransactionContext : System.Activities.NativeActivityContext * Action&lt;System.Activities.NativeActivityTransactionContext, obj&gt; * obj -&gt; unit" Usage="runtimeTransactionHandle.RequestTransactionContext (context, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeTransactionHandle.RequireTransactionContext(System.Activities.NativeActivityContext,System.Action{System.Activities.NativeActivityTransactionContext,System.Object},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequireTransactionContext (context As NativeActivityContext, callback As Action(Of NativeActivityTransactionContext, Object), state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequireTransactionContext(System::Activities::NativeActivityContext ^ context, Action&lt;System::Activities::NativeActivityTransactionContext ^, System::Object ^&gt; ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.RequireTransactionContext : System.Activities.NativeActivityContext * Action&lt;System.Activities.NativeActivityTransactionContext, obj&gt; * obj -&gt; unit" Usage="runtimeTransactionHandle.RequireTransactionContext (context, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -361,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeTransactionHandle.SuppressTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressTransaction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressTransaction { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressTransaction : bool with get, set" Usage="System.Activities.RuntimeTransactionHandle.SuppressTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

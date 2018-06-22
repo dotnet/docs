@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPEKIND" />
   <TypeSignature Language="VB.NET" Value="Public Enum TYPEKIND" />
   <TypeSignature Language="C++ CLI" Value="public enum class TYPEKIND" />
+  <TypeSignature Language="F#" Value="type TYPEKIND = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_ALIAS" />
       <MemberSignature Language="VB.NET" Value="TKIND_ALIAS" />
       <MemberSignature Language="C++ CLI" Value="TKIND_ALIAS" />
+      <MemberSignature Language="F#" Value="TKIND_ALIAS = 6" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_ALIAS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_COCLASS" />
       <MemberSignature Language="VB.NET" Value="TKIND_COCLASS" />
       <MemberSignature Language="C++ CLI" Value="TKIND_COCLASS" />
+      <MemberSignature Language="F#" Value="TKIND_COCLASS = 5" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_COCLASS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_DISPATCH" />
       <MemberSignature Language="VB.NET" Value="TKIND_DISPATCH" />
       <MemberSignature Language="C++ CLI" Value="TKIND_DISPATCH" />
+      <MemberSignature Language="F#" Value="TKIND_DISPATCH = 4" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_ENUM" />
       <MemberSignature Language="VB.NET" Value="TKIND_ENUM" />
       <MemberSignature Language="C++ CLI" Value="TKIND_ENUM" />
+      <MemberSignature Language="F#" Value="TKIND_ENUM = 0" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_ENUM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_INTERFACE" />
       <MemberSignature Language="VB.NET" Value="TKIND_INTERFACE" />
       <MemberSignature Language="C++ CLI" Value="TKIND_INTERFACE" />
+      <MemberSignature Language="F#" Value="TKIND_INTERFACE = 3" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_INTERFACE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_MAX" />
       <MemberSignature Language="VB.NET" Value="TKIND_MAX" />
       <MemberSignature Language="C++ CLI" Value="TKIND_MAX" />
+      <MemberSignature Language="F#" Value="TKIND_MAX = 8" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_MAX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_MODULE" />
       <MemberSignature Language="VB.NET" Value="TKIND_MODULE" />
       <MemberSignature Language="C++ CLI" Value="TKIND_MODULE" />
+      <MemberSignature Language="F#" Value="TKIND_MODULE = 2" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_MODULE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_RECORD" />
       <MemberSignature Language="VB.NET" Value="TKIND_RECORD" />
       <MemberSignature Language="C++ CLI" Value="TKIND_RECORD" />
+      <MemberSignature Language="F#" Value="TKIND_RECORD = 1" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_RECORD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEKIND.TKIND_UNION" />
       <MemberSignature Language="VB.NET" Value="TKIND_UNION" />
       <MemberSignature Language="C++ CLI" Value="TKIND_UNION" />
+      <MemberSignature Language="F#" Value="TKIND_UNION = 7" Usage="System.Runtime.InteropServices.TYPEKIND.TKIND_UNION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

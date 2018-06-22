@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine" />
+  <TypeSignature Language="F#" Value="type IBuildEngine = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFile (projectFileName As String, targetNames As String(), globalProperties As IDictionary, targetOutputs As IDictionary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFile(System::String ^ projectFileName, cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ globalProperties, System::Collections::IDictionary ^ targetOutputs);" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFile : string * string[] * System.Collections.IDictionary * System.Collections.IDictionary -&gt; bool" Usage="iBuildEngine.BuildProjectFile (projectFileName, targetNames, globalProperties, targetOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ColumnNumberOfTaskNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnNumberOfTaskNode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumberOfTaskNode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnNumberOfTaskNode : int" Usage="Microsoft.Build.Framework.IBuildEngine.ColumnNumberOfTaskNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ContinueOnError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinueOnError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueOnError { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueOnError : bool" Usage="Microsoft.Build.Framework.IBuildEngine.ContinueOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.LineNumberOfTaskNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumberOfTaskNode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumberOfTaskNode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumberOfTaskNode : int" Usage="Microsoft.Build.Framework.IBuildEngine.LineNumberOfTaskNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogCustomEvent(Microsoft.Build.Framework.CustomBuildEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogCustomEvent (e As CustomBuildEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogCustomEvent(Microsoft::Build::Framework::CustomBuildEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member LogCustomEvent : Microsoft.Build.Framework.CustomBuildEventArgs -&gt; unit" Usage="iBuildEngine.LogCustomEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogErrorEvent(Microsoft.Build.Framework.BuildErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogErrorEvent (e As BuildErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogErrorEvent(Microsoft::Build::Framework::BuildErrorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member LogErrorEvent : Microsoft.Build.Framework.BuildErrorEventArgs -&gt; unit" Usage="iBuildEngine.LogErrorEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogMessageEvent(Microsoft.Build.Framework.BuildMessageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogMessageEvent (e As BuildMessageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogMessageEvent(Microsoft::Build::Framework::BuildMessageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member LogMessageEvent : Microsoft.Build.Framework.BuildMessageEventArgs -&gt; unit" Usage="iBuildEngine.LogMessageEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogWarningEvent(Microsoft.Build.Framework.BuildWarningEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LogWarningEvent (e As BuildWarningEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogWarningEvent(Microsoft::Build::Framework::BuildWarningEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member LogWarningEvent : Microsoft.Build.Framework.BuildWarningEventArgs -&gt; unit" Usage="iBuildEngine.LogWarningEvent e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ProjectFileOfTaskNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFileOfTaskNode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFileOfTaskNode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFileOfTaskNode : string" Usage="Microsoft.Build.Framework.IBuildEngine.ProjectFileOfTaskNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

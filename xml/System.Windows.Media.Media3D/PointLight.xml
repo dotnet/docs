@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.PointLight" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PointLight&#xA;Inherits PointLightBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PointLight sealed : System::Windows::Media::Media3D::PointLightBase" />
+  <TypeSignature Language="F#" Value="type PointLight = class&#xA;    inherit PointLightBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLight.#ctor(System.Windows.Media.Color,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (diffuseColor As Color, position As Point3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PointLight(System::Windows::Media::Color diffuseColor, System::Windows::Media::Media3D::Point3D position);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.PointLight : System.Windows.Media.Color * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.PointLight" Usage="new System.Windows.Media.Media3D.PointLight (diffuseColor, position)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLight.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PointLight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PointLight ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.PointLight" Usage="pointLight.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLight.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PointLight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::PointLight ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.PointLight" Usage="pointLight.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.PointLight.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="pointLight.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

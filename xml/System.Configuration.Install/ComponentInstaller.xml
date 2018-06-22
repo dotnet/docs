@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.ComponentInstaller" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComponentInstaller&#xA;Inherits Installer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentInstaller abstract : System::Configuration::Install::Installer" />
+  <TypeSignature Language="F#" Value="type ComponentInstaller = class&#xA;    inherit Installer" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ComponentInstaller.CopyFromComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CopyFromComponent (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CopyFromComponent(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member CopyFromComponent : System.ComponentModel.IComponent -&gt; unit" Usage="componentInstaller.CopyFromComponent component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ComponentInstaller.IsEquivalentInstaller(System.Configuration.Install.ComponentInstaller)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEquivalentInstaller (otherInstaller As ComponentInstaller) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEquivalentInstaller(System::Configuration::Install::ComponentInstaller ^ otherInstaller);" />
+      <MemberSignature Language="F#" Value="abstract member IsEquivalentInstaller : System.Configuration.Install.ComponentInstaller -&gt; bool&#xA;override this.IsEquivalentInstaller : System.Configuration.Install.ComponentInstaller -&gt; bool" Usage="componentInstaller.IsEquivalentInstaller otherInstaller" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketAsyncOperation" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketAsyncOperation" />
   <TypeSignature Language="C++ CLI" Value="public enum class SocketAsyncOperation" />
+  <TypeSignature Language="F#" Value="type SocketAsyncOperation = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.Accept" />
       <MemberSignature Language="VB.NET" Value="Accept" />
       <MemberSignature Language="C++ CLI" Value="Accept" />
+      <MemberSignature Language="F#" Value="Accept = 1" Usage="System.Net.Sockets.SocketAsyncOperation.Accept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.Connect" />
       <MemberSignature Language="VB.NET" Value="Connect" />
       <MemberSignature Language="C++ CLI" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 2" Usage="System.Net.Sockets.SocketAsyncOperation.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.Disconnect" />
       <MemberSignature Language="VB.NET" Value="Disconnect" />
       <MemberSignature Language="C++ CLI" Value="Disconnect" />
+      <MemberSignature Language="F#" Value="Disconnect = 3" Usage="System.Net.Sockets.SocketAsyncOperation.Disconnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Sockets.SocketAsyncOperation.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
       <MemberSignature Language="C++ CLI" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 4" Usage="System.Net.Sockets.SocketAsyncOperation.Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.ReceiveFrom" />
       <MemberSignature Language="VB.NET" Value="ReceiveFrom" />
       <MemberSignature Language="C++ CLI" Value="ReceiveFrom" />
+      <MemberSignature Language="F#" Value="ReceiveFrom = 5" Usage="System.Net.Sockets.SocketAsyncOperation.ReceiveFrom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.ReceiveMessageFrom" />
       <MemberSignature Language="VB.NET" Value="ReceiveMessageFrom" />
       <MemberSignature Language="C++ CLI" Value="ReceiveMessageFrom" />
+      <MemberSignature Language="F#" Value="ReceiveMessageFrom = 6" Usage="System.Net.Sockets.SocketAsyncOperation.ReceiveMessageFrom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
       <MemberSignature Language="C++ CLI" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 7" Usage="System.Net.Sockets.SocketAsyncOperation.Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -293,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.SendPackets" />
       <MemberSignature Language="VB.NET" Value="SendPackets" />
       <MemberSignature Language="C++ CLI" Value="SendPackets" />
+      <MemberSignature Language="F#" Value="SendPackets = 8" Usage="System.Net.Sockets.SocketAsyncOperation.SendPackets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketAsyncOperation.SendTo" />
       <MemberSignature Language="VB.NET" Value="SendTo" />
       <MemberSignature Language="C++ CLI" Value="SendTo" />
+      <MemberSignature Language="F#" Value="SendTo = 9" Usage="System.Net.Sockets.SocketAsyncOperation.SendTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

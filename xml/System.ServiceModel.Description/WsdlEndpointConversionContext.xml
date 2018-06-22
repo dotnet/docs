@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WsdlEndpointConversionContext" />
   <TypeSignature Language="VB.NET" Value="Public Class WsdlEndpointConversionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlEndpointConversionContext" />
+  <TypeSignature Language="F#" Value="type WsdlEndpointConversionContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractConversionContext As WsdlContractConversionContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::WsdlContractConversionContext ^ ContractConversionContext { System::ServiceModel::Description::WsdlContractConversionContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractConversionContext : System.ServiceModel.Description.WsdlContractConversionContext" Usage="System.ServiceModel.Description.WsdlEndpointConversionContext.ContractConversionContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.Description.WsdlEndpointConversionContext.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultBinding(System.ServiceModel.Description.FaultDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFaultBinding (fault As FaultDescription) As FaultBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::FaultBinding ^ GetFaultBinding(System::ServiceModel::Description::FaultDescription ^ fault);" />
+      <MemberSignature Language="F#" Value="member this.GetFaultBinding : System.ServiceModel.Description.FaultDescription -&gt; System.Web.Services.Description.FaultBinding" Usage="wsdlEndpointConversionContext.GetFaultBinding fault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.FaultDescription GetFaultDescription(class System.Web.Services.Description.FaultBinding faultBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetFaultDescription(System.Web.Services.Description.FaultBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::FaultDescription ^ GetFaultDescription(System::Web::Services::Description::FaultBinding ^ faultBinding);" />
+      <MemberSignature Language="F#" Value="member this.GetFaultDescription : System.Web.Services.Description.FaultBinding -&gt; System.ServiceModel.Description.FaultDescription" Usage="wsdlEndpointConversionContext.GetFaultDescription faultBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageBinding(System.ServiceModel.Description.MessageDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMessageBinding (message As MessageDescription) As MessageBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::MessageBinding ^ GetMessageBinding(System::ServiceModel::Description::MessageDescription ^ message);" />
+      <MemberSignature Language="F#" Value="member this.GetMessageBinding : System.ServiceModel.Description.MessageDescription -&gt; System.Web.Services.Description.MessageBinding" Usage="wsdlEndpointConversionContext.GetMessageBinding message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.MessageDescription GetMessageDescription(class System.Web.Services.Description.MessageBinding messageBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetMessageDescription(System.Web.Services.Description.MessageBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::MessageDescription ^ GetMessageDescription(System::Web::Services::Description::MessageBinding ^ messageBinding);" />
+      <MemberSignature Language="F#" Value="member this.GetMessageDescription : System.Web.Services.Description.MessageBinding -&gt; System.ServiceModel.Description.MessageDescription" Usage="wsdlEndpointConversionContext.GetMessageDescription messageBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationBinding(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOperationBinding (operation As OperationDescription) As OperationBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::OperationBinding ^ GetOperationBinding(System::ServiceModel::Description::OperationDescription ^ operation);" />
+      <MemberSignature Language="F#" Value="member this.GetOperationBinding : System.ServiceModel.Description.OperationDescription -&gt; System.Web.Services.Description.OperationBinding" Usage="wsdlEndpointConversionContext.GetOperationBinding operation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.OperationDescription GetOperationDescription(class System.Web.Services.Description.OperationBinding operationBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlEndpointConversionContext.GetOperationDescription(System.Web.Services.Description.OperationBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::OperationDescription ^ GetOperationDescription(System::Web::Services::Description::OperationBinding ^ operationBinding);" />
+      <MemberSignature Language="F#" Value="member this.GetOperationDescription : System.Web.Services.Description.OperationBinding -&gt; System.ServiceModel.Description.OperationDescription" Usage="wsdlEndpointConversionContext.GetOperationDescription operationBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlBinding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Binding ^ WsdlBinding { System::Web::Services::Description::Binding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WsdlBinding : System.Web.Services.Description.Binding" Usage="System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlPort" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlPort As Port" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Port ^ WsdlPort { System::Web::Services::Description::Port ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WsdlPort : System.Web.Services.Description.Port" Usage="System.ServiceModel.Description.WsdlEndpointConversionContext.WsdlPort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

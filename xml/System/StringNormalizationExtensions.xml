@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.StringNormalizationExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module StringNormalizationExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringNormalizationExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type StringNormalizationExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Extensions</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -58,6 +59,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.IsNormalized(System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsNormalized (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNormalized(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member IsNormalized : string -&gt; bool" Usage="System.StringNormalizationExtensions.IsNormalized value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -99,6 +101,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNormalized(string value, valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.IsNormalized(System.String,System.Text.NormalizationForm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNormalized(System::String ^ value, System::Text::NormalizationForm normalizationForm);" />
+      <MemberSignature Language="F#" Value="static member IsNormalized : string * System.Text.NormalizationForm -&gt; bool" Usage="System.StringNormalizationExtensions.IsNormalized (value, normalizationForm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -152,6 +155,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.Normalize(System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Normalize (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Normalize(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Normalize : string -&gt; string" Usage="System.StringNormalizationExtensions.Normalize value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -192,6 +196,7 @@ The extension methods of the <xref:System.StringNormalizationExtensions> class a
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Normalize(string value, valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.StringNormalizationExtensions.Normalize(System.String,System.Text.NormalizationForm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Normalize(System::String ^ value, System::Text::NormalizationForm normalizationForm);" />
+      <MemberSignature Language="F#" Value="static member Normalize : string * System.Text.NormalizationForm -&gt; string" Usage="System.StringNormalizationExtensions.Normalize (value, normalizationForm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>

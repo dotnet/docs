@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.JavaScriptEncoder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class JavaScriptEncoder&#xA;Inherits TextEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class JavaScriptEncoder abstract : System::Text::Encodings::Web::TextEncoder" />
+  <TypeSignature Language="F#" Value="type JavaScriptEncoder = class&#xA;    inherit TextEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (settings As TextEncoderSettings) As JavaScriptEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::JavaScriptEncoder ^ Create(System::Text::Encodings::Web::TextEncoderSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Encodings.Web.TextEncoderSettings -&gt; System.Text.Encodings.Web.JavaScriptEncoder" Usage="System.Text.Encodings.Web.JavaScriptEncoder.Create settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (ParamArray allowedRanges As UnicodeRange()) As JavaScriptEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::JavaScriptEncoder ^ Create(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ allowedRanges);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Unicode.UnicodeRange[] -&gt; System.Text.Encodings.Web.JavaScriptEncoder" Usage="System.Text.Encodings.Web.JavaScriptEncoder.Create allowedRanges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encodings.Web.JavaScriptEncoder.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As JavaScriptEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encodings::Web::JavaScriptEncoder ^ Default { System::Text::Encodings::Web::JavaScriptEncoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Text.Encodings.Web.JavaScriptEncoder" Usage="System.Text.Encodings.Web.JavaScriptEncoder.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

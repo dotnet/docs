@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.SweepDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum SweepDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class SweepDirection" />
+  <TypeSignature Language="F#" Value="type SweepDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SweepDirection.Clockwise" />
       <MemberSignature Language="VB.NET" Value="Clockwise" />
       <MemberSignature Language="C++ CLI" Value="Clockwise" />
+      <MemberSignature Language="F#" Value="Clockwise = 1" Usage="System.Windows.Media.SweepDirection.Clockwise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SweepDirection.Counterclockwise" />
       <MemberSignature Language="VB.NET" Value="Counterclockwise" />
       <MemberSignature Language="C++ CLI" Value="Counterclockwise" />
+      <MemberSignature Language="F#" Value="Counterclockwise = 0" Usage="System.Windows.Media.SweepDirection.Counterclockwise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

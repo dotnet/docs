@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityPreviewDesignerTheme&#xA;Inherits CompositeDesignerTheme" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityPreviewDesignerTheme : System::Workflow::ComponentModel::Design::CompositeDesignerTheme" />
+  <TypeSignature Language="F#" Value="type ActivityPreviewDesignerTheme = class&#xA;    inherit CompositeDesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (theme As WorkflowTheme)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityPreviewDesignerTheme(System::Workflow::ComponentModel::Design::WorkflowTheme ^ theme);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme : System.Workflow.ComponentModel.Design.WorkflowTheme -&gt; System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" Usage="new System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme theme" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="activityPreviewDesignerTheme.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="activityPreviewDesignerTheme.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAmbientPropertyChanged(System::Workflow::ComponentModel::Design::AmbientProperty ambientProperty);" />
+      <MemberSignature Language="F#" Value="override this.OnAmbientPropertyChanged : System.Workflow.ComponentModel.Design.AmbientProperty -&gt; unit" Usage="activityPreviewDesignerTheme.OnAmbientPropertyChanged ambientProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviewBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviewBackColor : System.Drawing.Color with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviewBorderColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviewBorderColor : System.Drawing.Color with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviewForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviewForeColor : System.Drawing.Color with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

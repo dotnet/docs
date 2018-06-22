@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.Alert" />
   <TypeSignature Language="VB.NET" Value="Public Class Alert" />
   <TypeSignature Language="C++ CLI" Value="public ref class Alert" />
+  <TypeSignature Language="F#" Value="type Alert = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.#ctor(Mono.Security.Interface.AlertDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As AlertDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Alert(Mono::Security::Interface::AlertDescription description);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.Alert : Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.Alert" Usage="new Mono.Security.Interface.Alert description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.#ctor(Mono.Security.Interface.AlertLevel,Mono.Security.Interface.AlertDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As AlertLevel, description As AlertDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Alert(Mono::Security::Interface::AlertLevel level, Mono::Security::Interface::AlertDescription description);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.Alert : Mono.Security.Interface.AlertLevel * Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.Alert" Usage="new Mono.Security.Interface.Alert (level, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As AlertDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::AlertDescription Description { Mono::Security::Interface::AlertDescription get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : Mono.Security.Interface.AlertDescription" Usage="Mono.Security.Interface.Alert.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.GetAlertMessage(Mono.Security.Interface.AlertDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAlertMessage (description As AlertDescription) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAlertMessage(Mono::Security::Interface::AlertDescription description);" />
+      <MemberSignature Language="F#" Value="static member GetAlertMessage : Mono.Security.Interface.AlertDescription -&gt; string" Usage="Mono.Security.Interface.Alert.GetAlertMessage description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.IsCloseNotify" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCloseNotify As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCloseNotify { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCloseNotify : bool" Usage="Mono.Security.Interface.Alert.IsCloseNotify" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool" Usage="Mono.Security.Interface.Alert.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As AlertLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::AlertLevel Level { Mono::Security::Interface::AlertLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Mono.Security.Interface.AlertLevel" Usage="Mono.Security.Interface.Alert.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.Alert.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Mono.Security.Interface.Alert.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.Alert.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="alert.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

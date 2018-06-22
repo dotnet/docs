@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerCustomResolverSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerCustomResolverSettings" />
+  <TypeSignature Language="F#" Value="type PeerCustomResolverSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.IsBindingSpecified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBindingSpecified As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindingSpecified { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBindingSpecified : bool" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.IsBindingSpecified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver" />
       <MemberSignature Language="VB.NET" Value="Public Property Resolver As PeerResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolver ^ Resolver { System::ServiceModel::PeerResolver ^ get(); void set(System::ServiceModel::PeerResolver ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resolver : System.ServiceModel.PeerResolver with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

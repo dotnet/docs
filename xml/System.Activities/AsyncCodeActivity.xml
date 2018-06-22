@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.AsyncCodeActivity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsyncCodeActivity&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncCodeActivity abstract : System::Activities::Activity" />
+  <TypeSignature Language="F#" Value="type AsyncCodeActivity = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function BeginExecute (context As AsyncCodeActivityContext, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ BeginExecute(System::Activities::AsyncCodeActivityContext ^ context, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginExecute : System.Activities.AsyncCodeActivityContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="asyncCodeActivity.BeginExecute (context, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.CacheMetadata(System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub CacheMetadata (metadata As ActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="asyncCodeActivity.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="asyncCodeActivity.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.Cancel(System.Activities.AsyncCodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Cancel (context As AsyncCodeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Cancel(System::Activities::AsyncCodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : System.Activities.AsyncCodeActivityContext -&gt; unit&#xA;override this.Cancel : System.Activities.AsyncCodeActivityContext -&gt; unit" Usage="asyncCodeActivity.Cancel context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.EndExecute(System.Activities.AsyncCodeActivityContext,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub EndExecute (context As AsyncCodeActivityContext, result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void EndExecute(System::Activities::AsyncCodeActivityContext ^ context, IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndExecute : System.Activities.AsyncCodeActivityContext * IAsyncResult -&gt; unit" Usage="asyncCodeActivity.EndExecute (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.AsyncCodeActivity.Implementation" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Property Implementation As Func(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Func&lt;System::Activities::Activity ^&gt; ^ Implementation { Func&lt;System::Activities::Activity ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Implementation : Func&lt;System.Activities.Activity&gt; with get, set" Usage="System.Activities.AsyncCodeActivity.Implementation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.AsyncCodeActivity.ImplementationVersion" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Property ImplementationVersion As Version" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property Version ^ ImplementationVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationVersion : Version with get, set" Usage="System.Activities.AsyncCodeActivity.ImplementationVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.AsyncCodeActivity.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub OnCreateDynamicUpdateMap (metadata As UpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::UpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.UpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="asyncCodeActivity.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

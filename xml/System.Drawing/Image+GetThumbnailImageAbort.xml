@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Image.GetThumbnailImageAbort" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Image.GetThumbnailImageAbort() As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public: delegate bool Image::GetThumbnailImageAbort();" />
+  <TypeSignature Language="F#" Value="type Image.GetThumbnailImageAbort = delegate of unit -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

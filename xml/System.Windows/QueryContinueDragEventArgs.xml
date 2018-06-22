@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.QueryContinueDragEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryContinueDragEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryContinueDragEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type QueryContinueDragEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.QueryContinueDragEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As DragAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DragAction Action { System::Windows::DragAction get(); void set(System::Windows::DragAction value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.DragAction with get, set" Usage="System.Windows.QueryContinueDragEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.QueryContinueDragEventArgs.EscapePressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EscapePressed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EscapePressed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EscapePressed : bool" Usage="System.Windows.QueryContinueDragEventArgs.EscapePressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.QueryContinueDragEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="queryContinueDragEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.QueryContinueDragEventArgs.KeyStates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyStates As DragDropKeyStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DragDropKeyStates KeyStates { System::Windows::DragDropKeyStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyStates : System.Windows.DragDropKeyStates" Usage="System.Windows.QueryContinueDragEventArgs.KeyStates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

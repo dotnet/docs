@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoEncryptionPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum MonoEncryptionPolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class MonoEncryptionPolicy" />
+  <TypeSignature Language="F#" Value="type MonoEncryptionPolicy = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoEncryptionPolicy.AllowNoEncryption" />
       <MemberSignature Language="VB.NET" Value="AllowNoEncryption" />
       <MemberSignature Language="C++ CLI" Value="AllowNoEncryption" />
+      <MemberSignature Language="F#" Value="AllowNoEncryption = 1" Usage="Mono.Security.Interface.MonoEncryptionPolicy.AllowNoEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoEncryptionPolicy.NoEncryption" />
       <MemberSignature Language="VB.NET" Value="NoEncryption" />
       <MemberSignature Language="C++ CLI" Value="NoEncryption" />
+      <MemberSignature Language="F#" Value="NoEncryption = 2" Usage="Mono.Security.Interface.MonoEncryptionPolicy.NoEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoEncryptionPolicy.RequireEncryption" />
       <MemberSignature Language="VB.NET" Value="RequireEncryption" />
       <MemberSignature Language="C++ CLI" Value="RequireEncryption" />
+      <MemberSignature Language="F#" Value="RequireEncryption = 0" Usage="Mono.Security.Interface.MonoEncryptionPolicy.RequireEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

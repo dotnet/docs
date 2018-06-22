@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryClient" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClient&#xA;Implements ICommunicationObject, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClient sealed : IDisposable, System::ServiceModel::ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type DiscoveryClient = class&#xA;    interface ICommunicationObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryEndpoint discoveryEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.#ctor(System.ServiceModel.Discovery.DiscoveryEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClient(System::ServiceModel::Discovery::DiscoveryEndpoint ^ discoveryEndpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryClient : System.ServiceModel.Discovery.DiscoveryEndpoint -&gt; System.ServiceModel.Discovery.DiscoveryClient" Usage="new System.ServiceModel.Discovery.DiscoveryClient discoveryEndpoint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClient(System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryClient : string -&gt; System.ServiceModel.Discovery.DiscoveryClient" Usage="new System.ServiceModel.Discovery.DiscoveryClient endpointConfigurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.CancelAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync (userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync(System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : obj -&gt; unit" Usage="discoveryClient.CancelAsync userState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClient.ChannelFactory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelFactory As ChannelFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ChannelFactory ^ ChannelFactory { System::ServiceModel::ChannelFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelFactory : System.ServiceModel.ChannelFactory" Usage="System.ServiceModel.Discovery.DiscoveryClient.ChannelFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClient.ClientCredentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCredentials As ClientCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ClientCredentials ^ ClientCredentials { System::ServiceModel::Description::ClientCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentials : System.ServiceModel.Description.ClientCredentials" Usage="System.ServiceModel.Discovery.DiscoveryClient.ClientCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="discoveryClient.Close " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClient.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.Discovery.DiscoveryClient.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.Find(System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (criteria As FindCriteria) As FindResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::FindResponse ^ Find(System::ServiceModel::Discovery::FindCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.Find : System.ServiceModel.Discovery.FindCriteria -&gt; System.ServiceModel.Discovery.FindResponse" Usage="discoveryClient.Find criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.FindAsync(System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindAsync (criteria As FindCriteria)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindAsync(System::ServiceModel::Discovery::FindCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.FindAsync : System.ServiceModel.Discovery.FindCriteria -&gt; unit" Usage="discoveryClient.FindAsync criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.FindAsync(System.ServiceModel.Discovery.FindCriteria,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindAsync (criteria As FindCriteria, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindAsync(System::ServiceModel::Discovery::FindCriteria ^ criteria, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.FindAsync : System.ServiceModel.Discovery.FindCriteria * obj -&gt; unit" Usage="discoveryClient.FindAsync (criteria, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -303,6 +314,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.DiscoveryClient.FindCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event FindCompleted As EventHandler(Of FindCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::FindCompletedEventArgs ^&gt; ^ FindCompleted;" />
+      <MemberSignature Language="F#" Value="member this.FindCompleted : EventHandler&lt;System.ServiceModel.Discovery.FindCompletedEventArgs&gt; " Usage="member this.FindCompleted : System.EventHandler&lt;System.ServiceModel.Discovery.FindCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -329,6 +341,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FindProgressChanged As EventHandler(Of FindProgressChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::FindProgressChangedEventArgs ^&gt; ^ FindProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.FindProgressChanged : EventHandler&lt;System.ServiceModel.Discovery.FindProgressChangedEventArgs&gt; " Usage="member this.FindProgressChanged : System.EventHandler&lt;System.ServiceModel.Discovery.FindProgressChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -364,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.FindTaskAsync(System.ServiceModel.Discovery.FindCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindTaskAsync (criteria As FindCriteria) As Task(Of FindResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::ServiceModel::Discovery::FindResponse ^&gt; ^ FindTaskAsync(System::ServiceModel::Discovery::FindCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.FindTaskAsync : System.ServiceModel.Discovery.FindCriteria -&gt; System.Threading.Tasks.Task&lt;System.ServiceModel.Discovery.FindResponse&gt;" Usage="discoveryClient.FindTaskAsync criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -387,6 +401,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.ServiceModel.Discovery.FindResponse&gt; FindTaskAsync(class System.ServiceModel.Discovery.FindCriteria criteria, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.FindTaskAsync(System.ServiceModel.Discovery.FindCriteria,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::ServiceModel::Discovery::FindResponse ^&gt; ^ FindTaskAsync(System::ServiceModel::Discovery::FindCriteria ^ criteria, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.FindTaskAsync : System.ServiceModel.Discovery.FindCriteria * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ServiceModel.Discovery.FindResponse&gt;" Usage="discoveryClient.FindTaskAsync (criteria, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -413,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClient.InnerChannel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerChannel As IClientChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IClientChannel ^ InnerChannel { System::ServiceModel::IClientChannel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerChannel : System.ServiceModel.IClientChannel" Usage="System.ServiceModel.Discovery.DiscoveryClient.InnerChannel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -433,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; unit" Usage="discoveryClient.Open " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -463,6 +480,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.DiscoveryClient.ProxyAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Event ProxyAvailable As EventHandler(Of AnnouncementEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::AnnouncementEventArgs ^&gt; ^ ProxyAvailable;" />
+      <MemberSignature Language="F#" Value="member this.ProxyAvailable : EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " Usage="member this.ProxyAvailable : System.EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -482,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.Resolve(System.ServiceModel.Discovery.ResolveCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Function Resolve (criteria As ResolveCriteria) As ResolveResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Discovery::ResolveResponse ^ Resolve(System::ServiceModel::Discovery::ResolveCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.ServiceModel.Discovery.ResolveCriteria -&gt; System.ServiceModel.Discovery.ResolveResponse" Usage="discoveryClient.Resolve criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -515,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync(System.ServiceModel.Discovery.ResolveCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAsync (criteria As ResolveCriteria)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::ServiceModel::Discovery::ResolveCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.ServiceModel.Discovery.ResolveCriteria -&gt; unit" Usage="discoveryClient.ResolveAsync criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -545,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync(System.ServiceModel.Discovery.ResolveCriteria,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAsync (criteria As ResolveCriteria, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::ServiceModel::Discovery::ResolveCriteria ^ criteria, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.ServiceModel.Discovery.ResolveCriteria * obj -&gt; unit" Usage="discoveryClient.ResolveAsync (criteria, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -577,6 +598,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.DiscoveryClient.ResolveCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event ResolveCompleted As EventHandler(Of ResolveCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::Discovery::ResolveCompletedEventArgs ^&gt; ^ ResolveCompleted;" />
+      <MemberSignature Language="F#" Value="member this.ResolveCompleted : EventHandler&lt;System.ServiceModel.Discovery.ResolveCompletedEventArgs&gt; " Usage="member this.ResolveCompleted : System.EventHandler&lt;System.ServiceModel.Discovery.ResolveCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -605,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.ResolveTaskAsync(System.ServiceModel.Discovery.ResolveCriteria)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveTaskAsync (criteria As ResolveCriteria) As Task(Of ResolveResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::ServiceModel::Discovery::ResolveResponse ^&gt; ^ ResolveTaskAsync(System::ServiceModel::Discovery::ResolveCriteria ^ criteria);" />
+      <MemberSignature Language="F#" Value="member this.ResolveTaskAsync : System.ServiceModel.Discovery.ResolveCriteria -&gt; System.Threading.Tasks.Task&lt;System.ServiceModel.Discovery.ResolveResponse&gt;" Usage="discoveryClient.ResolveTaskAsync criteria" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -628,6 +651,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.ServiceModel.Discovery.ResolveResponse&gt; ResolveTaskAsync(class System.ServiceModel.Discovery.ResolveCriteria criteria, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryClient.ResolveTaskAsync(System.ServiceModel.Discovery.ResolveCriteria,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::ServiceModel::Discovery::ResolveResponse ^&gt; ^ ResolveTaskAsync(System::ServiceModel::Discovery::ResolveCriteria ^ criteria, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.ResolveTaskAsync : System.ServiceModel.Discovery.ResolveCriteria * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ServiceModel.Discovery.ResolveResponse&gt;" Usage="discoveryClient.ResolveTaskAsync (criteria, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -1111,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#State" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property State As CommunicationState Implements ICommunicationObject.State" />
       <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::CommunicationState System.ServiceModel.ICommunicationObject.State { System::ServiceModel::CommunicationState get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Discovery.DiscoveryClient.System.ServiceModel.ICommunicationObject.State" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>

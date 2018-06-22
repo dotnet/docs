@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageChangingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InputLanguageChangingEventHandler(sender As Object, e As InputLanguageChangingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InputLanguageChangingEventHandler(System::Object ^ sender, InputLanguageChangingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InputLanguageChangingEventHandler = delegate of obj * InputLanguageChangingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

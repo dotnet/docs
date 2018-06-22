@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationAbortedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowApplicationAbortedEventArgs&#xA;Inherits WorkflowApplicationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplicationAbortedEventArgs : System::Activities::WorkflowApplicationEventArgs" />
+  <TypeSignature Language="F#" Value="type WorkflowApplicationAbortedEventArgs = class&#xA;    inherit WorkflowApplicationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationAbortedEventArgs.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Reason { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : Exception" Usage="System.Activities.WorkflowApplicationAbortedEventArgs.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

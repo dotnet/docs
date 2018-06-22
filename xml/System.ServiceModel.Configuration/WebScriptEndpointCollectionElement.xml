@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebScriptEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WebScriptEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of WebScriptEndpoint, WebScriptEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebScriptEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Description::WebScriptEndpoint ^, System::ServiceModel::Configuration::WebScriptEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WebScriptEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;WebScriptEndpoint, WebScriptEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

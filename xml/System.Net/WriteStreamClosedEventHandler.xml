@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WriteStreamClosedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WriteStreamClosedEventHandler(sender As Object, e As WriteStreamClosedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WriteStreamClosedEventHandler(System::Object ^ sender, WriteStreamClosedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WriteStreamClosedEventHandler = delegate of obj * WriteStreamClosedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

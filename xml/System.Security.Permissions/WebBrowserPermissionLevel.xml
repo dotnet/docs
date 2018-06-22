@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.WebBrowserPermissionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebBrowserPermissionLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebBrowserPermissionLevel" />
+  <TypeSignature Language="F#" Value="type WebBrowserPermissionLevel = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.WebBrowserPermissionLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.Safe" />
       <MemberSignature Language="VB.NET" Value="Safe" />
       <MemberSignature Language="C++ CLI" Value="Safe" />
+      <MemberSignature Language="F#" Value="Safe = 1" Usage="System.Security.Permissions.WebBrowserPermissionLevel.Safe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Unrestricted" />
       <MemberSignature Language="C++ CLI" Value="Unrestricted" />
+      <MemberSignature Language="F#" Value="Unrestricted = 2" Usage="System.Security.Permissions.WebBrowserPermissionLevel.Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

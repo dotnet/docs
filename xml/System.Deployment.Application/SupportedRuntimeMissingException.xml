@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.SupportedRuntimeMissingException" />
   <TypeSignature Language="VB.NET" Value="Public Class SupportedRuntimeMissingException&#xA;Inherits DependentPlatformMissingException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SupportedRuntimeMissingException : System::Deployment::Application::DependentPlatformMissingException" />
+  <TypeSignature Language="F#" Value="type SupportedRuntimeMissingException = class&#xA;    inherit DependentPlatformMissingException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.SupportedRuntimeMissingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportedRuntimeMissingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.SupportedRuntimeMissingException : string -&gt; System.Deployment.Application.SupportedRuntimeMissingException" Usage="new System.Deployment.Application.SupportedRuntimeMissingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.SupportedRuntimeMissingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SupportedRuntimeMissingException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.SupportedRuntimeMissingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Deployment.Application.SupportedRuntimeMissingException" Usage="new System.Deployment.Application.SupportedRuntimeMissingException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.SupportedRuntimeMissingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportedRuntimeMissingException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.SupportedRuntimeMissingException : string * Exception -&gt; System.Deployment.Application.SupportedRuntimeMissingException" Usage="new System.Deployment.Application.SupportedRuntimeMissingException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.SupportedRuntimeMissingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="supportedRuntimeMissingException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.SupportedRuntimeMissingException.SupportedRuntimeVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedRuntimeVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportedRuntimeVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedRuntimeVersion : string" Usage="System.Deployment.Application.SupportedRuntimeMissingException.SupportedRuntimeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

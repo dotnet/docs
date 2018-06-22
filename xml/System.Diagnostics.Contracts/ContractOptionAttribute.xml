@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractOptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractOptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractOptionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ContractOptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,6 +106,7 @@ public override MyMethod(int x) {
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractOptionAttribute.#ctor(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As String, setting As String, enabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractOptionAttribute(System::String ^ category, System::String ^ setting, bool enabled);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractOptionAttribute : string * string * bool -&gt; System.Diagnostics.Contracts.ContractOptionAttribute" Usage="new System.Diagnostics.Contracts.ContractOptionAttribute (category, setting, enabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -140,6 +142,7 @@ public override MyMethod(int x) {
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractOptionAttribute.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As String, setting As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractOptionAttribute(System::String ^ category, System::String ^ setting, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractOptionAttribute : string * string * string -&gt; System.Diagnostics.Contracts.ContractOptionAttribute" Usage="new System.Diagnostics.Contracts.ContractOptionAttribute (category, setting, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -189,6 +192,7 @@ class MyConcurrentList<T> : IList<T> {
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractOptionAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.Diagnostics.Contracts.ContractOptionAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -219,6 +223,7 @@ class MyConcurrentList<T> : IList<T> {
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractOptionAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool" Usage="System.Diagnostics.Contracts.ContractOptionAttribute.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -250,6 +255,7 @@ class MyConcurrentList<T> : IList<T> {
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractOptionAttribute.Setting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Setting As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Setting { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Setting : string" Usage="System.Diagnostics.Contracts.ContractOptionAttribute.Setting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -280,6 +286,7 @@ class MyConcurrentList<T> : IList<T> {
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractOptionAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Diagnostics.Contracts.ContractOptionAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

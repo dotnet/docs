@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.RemoteCertificateValidationCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function RemoteCertificateValidationCallback(sender As Object, certificate As X509Certificate, chain As X509Chain, sslPolicyErrors As SslPolicyErrors) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool RemoteCertificateValidationCallback(System::Object ^ sender, X509Certificate ^ certificate, X509Chain ^ chain, SslPolicyErrors sslPolicyErrors);" />
+  <TypeSignature Language="F#" Value="type RemoteCertificateValidationCallback = delegate of obj * X509Certificate * X509Chain * SslPolicyErrors -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

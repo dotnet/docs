@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActiveDirectoryTransportType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActiveDirectoryTransportType" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryTransportType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Rpc" />
       <MemberSignature Language="VB.NET" Value="Rpc" />
       <MemberSignature Language="C++ CLI" Value="Rpc" />
+      <MemberSignature Language="F#" Value="Rpc = 0" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Rpc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />
       <MemberSignature Language="VB.NET" Value="Smtp" />
       <MemberSignature Language="C++ CLI" Value="Smtp" />
+      <MemberSignature Language="F#" Value="Smtp = 1" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

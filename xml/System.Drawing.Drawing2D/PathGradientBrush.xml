@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PathGradientBrush" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathGradientBrush&#xA;Inherits Brush" />
   <TypeSignature Language="C++ CLI" Value="public ref class PathGradientBrush sealed : System::Drawing::Brush" />
+  <TypeSignature Language="F#" Value="type PathGradientBrush = class&#xA;    inherit Brush" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.#ctor(System.Drawing.Drawing2D.GraphicsPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As GraphicsPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGradientBrush(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.PathGradientBrush : System.Drawing.Drawing2D.GraphicsPath -&gt; System.Drawing.Drawing2D.PathGradientBrush" Usage="new System.Drawing.Drawing2D.PathGradientBrush path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.#ctor(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (points As Point())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGradientBrush(cli::array &lt;System::Drawing::Point&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.PathGradientBrush : System.Drawing.Point[] -&gt; System.Drawing.Drawing2D.PathGradientBrush" Usage="new System.Drawing.Drawing2D.PathGradientBrush points" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.#ctor(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (points As PointF())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGradientBrush(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.PathGradientBrush : System.Drawing.PointF[] -&gt; System.Drawing.Drawing2D.PathGradientBrush" Usage="new System.Drawing.Drawing2D.PathGradientBrush points" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point[] points, valuetype System.Drawing.Drawing2D.WrapMode wrapMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.#ctor(System.Drawing.Point[],System.Drawing.Drawing2D.WrapMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGradientBrush(cli::array &lt;System::Drawing::Point&gt; ^ points, System::Drawing::Drawing2D::WrapMode wrapMode);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.PathGradientBrush : System.Drawing.Point[] * System.Drawing.Drawing2D.WrapMode -&gt; System.Drawing.Drawing2D.PathGradientBrush" Usage="new System.Drawing.Drawing2D.PathGradientBrush (points, wrapMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.PointF[] points, valuetype System.Drawing.Drawing2D.WrapMode wrapMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.#ctor(System.Drawing.PointF[],System.Drawing.Drawing2D.WrapMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PathGradientBrush(cli::array &lt;System::Drawing::PointF&gt; ^ points, System::Drawing::Drawing2D::WrapMode wrapMode);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.PathGradientBrush : System.Drawing.PointF[] * System.Drawing.Drawing2D.WrapMode -&gt; System.Drawing.Drawing2D.PathGradientBrush" Usage="new System.Drawing.Drawing2D.PathGradientBrush (points, wrapMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.Blend" />
       <MemberSignature Language="VB.NET" Value="Public Property Blend As Blend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::Blend ^ Blend { System::Drawing::Drawing2D::Blend ^ get(); void set(System::Drawing::Drawing2D::Blend ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Blend : System.Drawing.Drawing2D.Blend with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.Blend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.CenterColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CenterColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CenterColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CenterColor : System.Drawing.Color with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.CenterColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.CenterPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property CenterPoint As PointF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::PointF CenterPoint { System::Drawing::PointF get(); void set(System::Drawing::PointF value); };" />
+      <MemberSignature Language="F#" Value="member this.CenterPoint : System.Drawing.PointF with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.CenterPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -218,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="pathGradientBrush.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.FocusScales" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusScales As PointF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::PointF FocusScales { System::Drawing::PointF get(); void set(System::Drawing::PointF value); };" />
+      <MemberSignature Language="F#" Value="member this.FocusScales : System.Drawing.PointF with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.FocusScales" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.InterpolationColors" />
       <MemberSignature Language="VB.NET" Value="Public Property InterpolationColors As ColorBlend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::ColorBlend ^ InterpolationColors { System::Drawing::Drawing2D::ColorBlend ^ get(); void set(System::Drawing::Drawing2D::ColorBlend ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InterpolationColors : System.Drawing.Drawing2D.ColorBlend with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.InterpolationColors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.MultiplyTransform(System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MultiplyTransform(System::Drawing::Drawing2D::Matrix ^ matrix);" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="pathGradientBrush.MultiplyTransform matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -323,6 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.MultiplyTransform(System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.MatrixOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MultiplyTransform(System::Drawing::Drawing2D::Matrix ^ matrix, System::Drawing::Drawing2D::MatrixOrder order);" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pathGradientBrush.MultiplyTransform (matrix, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -373,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangle As RectangleF" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::RectangleF Rectangle { System::Drawing::RectangleF get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rectangle : System.Drawing.RectangleF" Usage="System.Drawing.Drawing2D.PathGradientBrush.Rectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -393,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.ResetTransform" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetTransform ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetTransform();" />
+      <MemberSignature Language="F#" Value="member this.ResetTransform : unit -&gt; unit" Usage="pathGradientBrush.ResetTransform " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -434,6 +450,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.RotateTransform(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateTransform(float angle);" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single -&gt; unit" Usage="pathGradientBrush.RotateTransform angle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -464,6 +481,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single, order As MatrixOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateTransform(float angle, System::Drawing::Drawing2D::MatrixOrder order);" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pathGradientBrush.RotateTransform (angle, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -523,6 +541,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.ScaleTransform(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleTransform(float sx, float sy);" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single -&gt; unit" Usage="pathGradientBrush.ScaleTransform (sx, sy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -555,6 +574,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single, order As MatrixOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleTransform(float sx, float sy, System::Drawing::Drawing2D::MatrixOrder order);" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pathGradientBrush.ScaleTransform (sx, sy, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -618,6 +638,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.SetBlendTriangularShape(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBlendTriangularShape (focus As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBlendTriangularShape(float focus);" />
+      <MemberSignature Language="F#" Value="member this.SetBlendTriangularShape : single -&gt; unit" Usage="pathGradientBrush.SetBlendTriangularShape focus" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -653,6 +674,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.SetBlendTriangularShape(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBlendTriangularShape (focus As Single, scale As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBlendTriangularShape(float focus, float scale);" />
+      <MemberSignature Language="F#" Value="member this.SetBlendTriangularShape : single * single -&gt; unit" Usage="pathGradientBrush.SetBlendTriangularShape (focus, scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -721,6 +743,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.SetSigmaBellShape(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSigmaBellShape (focus As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSigmaBellShape(float focus);" />
+      <MemberSignature Language="F#" Value="member this.SetSigmaBellShape : single -&gt; unit" Usage="pathGradientBrush.SetSigmaBellShape focus" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -758,6 +781,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.SetSigmaBellShape(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSigmaBellShape (focus As Single, scale As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSigmaBellShape(float focus, float scale);" />
+      <MemberSignature Language="F#" Value="member this.SetSigmaBellShape : single * single -&gt; unit" Usage="pathGradientBrush.SetSigmaBellShape (focus, scale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -817,6 +841,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.SurroundColors" />
       <MemberSignature Language="VB.NET" Value="Public Property SurroundColors As Color()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Color&gt; ^ SurroundColors { cli::array &lt;System::Drawing::Color&gt; ^ get(); void set(cli::array &lt;System::Drawing::Color&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SurroundColors : System.Drawing.Color[] with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.SurroundColors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -844,6 +869,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Property Transform As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::Matrix ^ Transform { System::Drawing::Drawing2D::Matrix ^ get(); void set(System::Drawing::Drawing2D::Matrix ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Drawing.Drawing2D.Matrix with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.Transform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -880,6 +906,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.TranslateTransform(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslateTransform(float dx, float dy);" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single -&gt; unit" Usage="pathGradientBrush.TranslateTransform (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -912,6 +939,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathGradientBrush.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single, order As MatrixOrder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslateTransform(float dx, float dy, System::Drawing::Drawing2D::MatrixOrder order);" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="pathGradientBrush.TranslateTransform (dx, dy, order)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -946,6 +974,7 @@ PathGradientBrush pgBrush = new PathGradientBrush(myPath);
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathGradientBrush.WrapMode" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapMode As WrapMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::WrapMode WrapMode { System::Drawing::Drawing2D::WrapMode get(); void set(System::Drawing::Drawing2D::WrapMode value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapMode : System.Drawing.Drawing2D.WrapMode with get, set" Usage="System.Drawing.Drawing2D.PathGradientBrush.WrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

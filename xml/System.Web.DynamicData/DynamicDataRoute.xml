@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataRoute" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicDataRoute&#xA;Inherits Route" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicDataRoute : System::Web::Routing::Route" />
+  <TypeSignature Language="F#" Value="type DynamicDataRoute = class&#xA;    inherit Route" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicDataRoute(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DynamicDataRoute : string -&gt; System.Web.DynamicData.DynamicDataRoute" Usage="new System.Web.DynamicData.DynamicDataRoute url" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataRoute.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.Web.DynamicData.DynamicDataRoute.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetActionFromRouteData(class System.Web.Routing.RouteData routeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetActionFromRouteData(System.Web.Routing.RouteData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetActionFromRouteData(System::Web::Routing::RouteData ^ routeData);" />
+      <MemberSignature Language="F#" Value="member this.GetActionFromRouteData : System.Web.Routing.RouteData -&gt; string" Usage="dynamicDataRoute.GetActionFromRouteData routeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetRouteData(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData&#xA;override this.GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="dynamicDataRoute.GetRouteData httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.DynamicData.MetaTable GetTableFromRouteData(class System.Web.Routing.RouteData routeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetTableFromRouteData(System.Web.Routing.RouteData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::DynamicData::MetaTable ^ GetTableFromRouteData(System::Web::Routing::RouteData ^ routeData);" />
+      <MemberSignature Language="F#" Value="member this.GetTableFromRouteData : System.Web.Routing.RouteData -&gt; System.Web.DynamicData.MetaTable" Usage="dynamicDataRoute.GetTableFromRouteData routeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData&#xA;override this.GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="dynamicDataRoute.GetVirtualPath (requestContext, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataRoute.Model" />
       <MemberSignature Language="VB.NET" Value="Public Property Model As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaModel ^ Model { System::Web::DynamicData::MetaModel ^ get(); void set(System::Web::DynamicData::MetaModel ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Model : System.Web.DynamicData.MetaModel with get, set" Usage="System.Web.DynamicData.DynamicDataRoute.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataRoute.RouteHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteHandler As DynamicDataRouteHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DynamicDataRouteHandler ^ RouteHandler { System::Web::DynamicData::DynamicDataRouteHandler ^ get(); void set(System::Web::DynamicData::DynamicDataRouteHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteHandler : System.Web.DynamicData.DynamicDataRouteHandler with get, set" Usage="System.Web.DynamicData.DynamicDataRoute.RouteHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -250,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataRoute.Table" />
       <MemberSignature Language="VB.NET" Value="Public Property Table As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Table { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Table : string with get, set" Usage="System.Web.DynamicData.DynamicDataRoute.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataRoute.ViewName" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ViewName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewName : string with get, set" Usage="System.Web.DynamicData.DynamicDataRoute.ViewName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

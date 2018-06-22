@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginTextLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoginTextLayout" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoginTextLayout" />
+  <TypeSignature Language="F#" Value="type LoginTextLayout = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginTextLayout.TextOnLeft" />
       <MemberSignature Language="VB.NET" Value="TextOnLeft" />
       <MemberSignature Language="C++ CLI" Value="TextOnLeft" />
+      <MemberSignature Language="F#" Value="TextOnLeft = 0" Usage="System.Web.UI.WebControls.LoginTextLayout.TextOnLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginTextLayout.TextOnTop" />
       <MemberSignature Language="VB.NET" Value="TextOnTop" />
       <MemberSignature Language="C++ CLI" Value="TextOnTop" />
+      <MemberSignature Language="F#" Value="TextOnTop = 1" Usage="System.Web.UI.WebControls.LoginTextLayout.TextOnTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

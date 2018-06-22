@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolBarButtonStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolBarButtonStyle" />
+  <TypeSignature Language="F#" Value="type ToolBarButtonStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.DropDownButton" />
       <MemberSignature Language="VB.NET" Value="DropDownButton" />
       <MemberSignature Language="C++ CLI" Value="DropDownButton" />
+      <MemberSignature Language="F#" Value="DropDownButton = 4" Usage="System.Windows.Forms.ToolBarButtonStyle.DropDownButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.PushButton" />
       <MemberSignature Language="VB.NET" Value="PushButton" />
       <MemberSignature Language="C++ CLI" Value="PushButton" />
+      <MemberSignature Language="F#" Value="PushButton = 1" Usage="System.Windows.Forms.ToolBarButtonStyle.PushButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.Separator" />
       <MemberSignature Language="VB.NET" Value="Separator" />
       <MemberSignature Language="C++ CLI" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 3" Usage="System.Windows.Forms.ToolBarButtonStyle.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.ToggleButton" />
       <MemberSignature Language="VB.NET" Value="ToggleButton" />
       <MemberSignature Language="C++ CLI" Value="ToggleButton" />
+      <MemberSignature Language="F#" Value="ToggleButton = 2" Usage="System.Windows.Forms.ToolBarButtonStyle.ToggleButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

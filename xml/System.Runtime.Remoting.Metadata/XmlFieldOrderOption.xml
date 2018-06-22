@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.XmlFieldOrderOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlFieldOrderOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlFieldOrderOption" />
+  <TypeSignature Language="F#" Value="type XmlFieldOrderOption = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.XmlFieldOrderOption.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Runtime.Remoting.Metadata.XmlFieldOrderOption.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.XmlFieldOrderOption.Choice" />
       <MemberSignature Language="VB.NET" Value="Choice" />
       <MemberSignature Language="C++ CLI" Value="Choice" />
+      <MemberSignature Language="F#" Value="Choice = 2" Usage="System.Runtime.Remoting.Metadata.XmlFieldOrderOption.Choice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Metadata.XmlFieldOrderOption.Sequence" />
       <MemberSignature Language="VB.NET" Value="Sequence" />
       <MemberSignature Language="C++ CLI" Value="Sequence" />
+      <MemberSignature Language="F#" Value="Sequence = 1" Usage="System.Runtime.Remoting.Metadata.XmlFieldOrderOption.Sequence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

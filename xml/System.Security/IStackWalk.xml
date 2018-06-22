@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.IStackWalk" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStackWalk" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStackWalk" />
+  <TypeSignature Language="F#" Value="type IStackWalk = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Assert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Assert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Assert();" />
+      <MemberSignature Language="F#" Value="abstract member Assert : unit -&gt; unit" Usage="iStackWalk.Assert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Demand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Demand();" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit" Usage="iStackWalk.Demand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Deny" />
       <MemberSignature Language="VB.NET" Value="Public Sub Deny ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deny();" />
+      <MemberSignature Language="F#" Value="abstract member Deny : unit -&gt; unit" Usage="iStackWalk.Deny " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.PermitOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub PermitOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PermitOnly();" />
+      <MemberSignature Language="F#" Value="abstract member PermitOnly : unit -&gt; unit" Usage="iStackWalk.PermitOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

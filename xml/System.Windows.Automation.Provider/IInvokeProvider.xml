@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IInvokeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInvokeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInvokeProvider" />
+  <TypeSignature Language="F#" Value="type IInvokeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IInvokeProvider.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : unit -&gt; unit" Usage="iInvokeProvider.Invoke " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

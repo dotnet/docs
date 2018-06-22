@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InstallEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstallEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type InstallEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallEventArgs.#ctor(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (savedState As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InstallEventArgs(System::Collections::IDictionary ^ savedState);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.Install.InstallEventArgs : System.Collections.IDictionary -&gt; System.Configuration.Install.InstallEventArgs" Usage="new System.Configuration.Install.InstallEventArgs savedState" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.InstallEventArgs.SavedState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SavedState As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ SavedState { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SavedState : System.Collections.IDictionary" Usage="System.Configuration.Install.InstallEventArgs.SavedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

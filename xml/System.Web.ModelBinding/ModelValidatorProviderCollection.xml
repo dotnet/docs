@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelValidatorProviderCollection&#xA;Inherits Collection(Of ModelValidatorProvider)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelValidatorProviderCollection : System::Collections::ObjectModel::Collection&lt;System::Web::ModelBinding::ModelValidatorProvider ^&gt;" />
+  <TypeSignature Language="F#" Value="type ModelValidatorProviderCollection = class&#xA;    inherit Collection&lt;ModelValidatorProvider&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.ModelBinding.ModelValidatorProvider})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As IList(Of ModelValidatorProvider))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelValidatorProviderCollection(System::Collections::Generic::IList&lt;System::Web::ModelBinding::ModelValidatorProvider ^&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelValidatorProviderCollection : System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelValidatorProvider&gt; -&gt; System.Web.ModelBinding.ModelValidatorProviderCollection" Usage="new System.Web.ModelBinding.ModelValidatorProviderCollection list" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.GetValidators(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValidators (metadata As ModelMetadata, context As ModelBindingExecutionContext) As IEnumerable(Of ModelValidator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidator ^&gt; ^ GetValidators(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetValidators : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext -&gt; seq&lt;System.Web.ModelBinding.ModelValidator&gt;" Usage="modelValidatorProviderCollection.GetValidators (metadata, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.ModelValidatorProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As ModelValidatorProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Web::ModelBinding::ModelValidatorProvider ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Web.ModelBinding.ModelValidatorProvider -&gt; unit" Usage="modelValidatorProviderCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.SetItem(System.Int32,System.Web.ModelBinding.ModelValidatorProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As ModelValidatorProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Web::ModelBinding::ModelValidatorProvider ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Web.ModelBinding.ModelValidatorProvider -&gt; unit" Usage="modelValidatorProviderCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

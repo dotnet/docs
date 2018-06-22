@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.FrameworkElementAdapters" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkElementAdapters" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkElementAdapters abstract sealed" />
+  <TypeSignature Language="F#" Value="type FrameworkElementAdapters = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@ Windows Presentation Foundation (WPF) extends the .NET Framework add-in model to
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter(System.AddIn.Contract.INativeHandleContract)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContractToViewAdapter (nativeHandleContract As INativeHandleContract) As FrameworkElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FrameworkElement ^ ContractToViewAdapter(System::AddIn::Contract::INativeHandleContract ^ nativeHandleContract);" />
+      <MemberSignature Language="F#" Value="static member ContractToViewAdapter : System.AddIn.Contract.INativeHandleContract -&gt; System.Windows.FrameworkElement" Usage="System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter nativeHandleContract" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -73,6 +75,7 @@ Windows Presentation Foundation (WPF) extends the .NET Framework add-in model to
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ViewToContractAdapter (root As FrameworkElement) As INativeHandleContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::INativeHandleContract ^ ViewToContractAdapter(System::Windows::FrameworkElement ^ root);" />
+      <MemberSignature Language="F#" Value="static member ViewToContractAdapter : System.Windows.FrameworkElement -&gt; System.AddIn.Contract.INativeHandleContract" Usage="System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter root" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>

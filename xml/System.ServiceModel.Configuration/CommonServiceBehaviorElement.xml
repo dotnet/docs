@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CommonServiceBehaviorElement" />
   <TypeSignature Language="VB.NET" Value="Public Class CommonServiceBehaviorElement&#xA;Inherits ServiceModelExtensionCollectionElement(Of BehaviorExtensionElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommonServiceBehaviorElement : System::ServiceModel::Configuration::ServiceModelExtensionCollectionElement&lt;System::ServiceModel::Configuration::BehaviorExtensionElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type CommonServiceBehaviorElement = class&#xA;    inherit ServiceModelExtensionCollectionElement&lt;BehaviorExtensionElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CommonServiceBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (element As BehaviorExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; unit" Usage="commonServiceBehaviorElement.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CommonServiceBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanAdd (element As BehaviorExtensionElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanAdd(System::ServiceModel::Configuration::BehaviorExtensionElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.CanAdd : System.ServiceModel.Configuration.BehaviorExtensionElement -&gt; bool" Usage="commonServiceBehaviorElement.CanAdd element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

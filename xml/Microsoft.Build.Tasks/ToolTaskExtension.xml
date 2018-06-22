@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ToolTaskExtension&#xA;Inherits ToolTask" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolTaskExtension abstract : Microsoft::Build::Utilities::ToolTask" />
+  <TypeSignature Language="F#" Value="type ToolTaskExtension = class&#xA;    inherit ToolTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub AddCommandLineCommands (commandLine As CommandLineBuilderExtension)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void AddCommandLineCommands(Microsoft::Build::Tasks::CommandLineBuilderExtension ^ commandLine);" />
+      <MemberSignature Language="F#" Value="abstract member AddCommandLineCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit&#xA;override this.AddCommandLineCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit" Usage="toolTaskExtension.AddCommandLineCommands commandLine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.AddResponseFileCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub AddResponseFileCommands (commandLine As CommandLineBuilderExtension)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void AddResponseFileCommands(Microsoft::Build::Tasks::CommandLineBuilderExtension ^ commandLine);" />
+      <MemberSignature Language="F#" Value="abstract member AddResponseFileCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit&#xA;override this.AddResponseFileCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit" Usage="toolTaskExtension.AddResponseFileCommands commandLine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Bag As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::Hashtable ^ Bag { System::Collections::Hashtable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bag : System.Collections.Hashtable" Usage="Microsoft.Build.Tasks.ToolTaskExtension.Bag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GenerateCommandLineCommands" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateCommandLineCommands () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateCommandLineCommands();" />
+      <MemberSignature Language="F#" Value="override this.GenerateCommandLineCommands : unit -&gt; string" Usage="toolTaskExtension.GenerateCommandLineCommands " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GenerateResponseFileCommands" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateResponseFileCommands () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateResponseFileCommands();" />
+      <MemberSignature Language="F#" Value="override this.GenerateResponseFileCommands : unit -&gt; string" Usage="toolTaskExtension.GenerateResponseFileCommands " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GetBoolParameterWithDefault(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function GetBoolParameterWithDefault (parameterName As String, defaultValue As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool GetBoolParameterWithDefault(System::String ^ parameterName, bool defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetBoolParameterWithDefault : string * bool -&gt; bool" Usage="toolTaskExtension.GetBoolParameterWithDefault (parameterName, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GetIntParameterWithDefault(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function GetIntParameterWithDefault (parameterName As String, defaultValue As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; int GetIntParameterWithDefault(System::String ^ parameterName, int defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetIntParameterWithDefault : string * int -&gt; int" Usage="toolTaskExtension.GetIntParameterWithDefault (parameterName, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.HasLoggedErrors" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasLoggedErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasLoggedErrors { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLoggedErrors : bool" Usage="Microsoft.Build.Tasks.ToolTaskExtension.HasLoggedErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.Log" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Log As TaskLoggingHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Utilities::TaskLoggingHelper ^ Log { Microsoft::Build::Utilities::TaskLoggingHelper ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Log : Microsoft.Build.Utilities.TaskLoggingHelper" Usage="Microsoft.Build.Tasks.ToolTaskExtension.Log" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

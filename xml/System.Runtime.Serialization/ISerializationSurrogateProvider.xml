@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISerializationSurrogateProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISerializationSurrogateProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISerializationSurrogateProvider" />
+  <TypeSignature Language="F#" Value="type ISerializationSurrogateProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializationSurrogateProvider.GetDeserializedObject(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeserializedObject (obj As Object, targetType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetDeserializedObject(System::Object ^ obj, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member GetDeserializedObject : obj * Type -&gt; obj" Usage="iSerializationSurrogateProvider.GetDeserializedObject (obj, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializationSurrogateProvider.GetObjectToSerialize(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetObjectToSerialize (obj As Object, targetType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObjectToSerialize(System::Object ^ obj, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectToSerialize : obj * Type -&gt; obj" Usage="iSerializationSurrogateProvider.GetObjectToSerialize (obj, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetSurrogateType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializationSurrogateProvider.GetSurrogateType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetSurrogateType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetSurrogateType : Type -&gt; Type" Usage="iSerializationSurrogateProvider.GetSurrogateType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

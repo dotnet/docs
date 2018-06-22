@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Encoder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Encoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class Encoder abstract" />
+  <TypeSignature Language="F#" Value="type Encoder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -133,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Convert (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte), flush As Boolean, ByRef charsUsed As Integer, ByRef bytesUsed As Integer, ByRef completed As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes, bool flush, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] bool % completed);" />
+      <MemberSignature Language="F#" Value="abstract member Convert : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; * bool *  *  *  -&gt; unit&#xA;override this.Convert : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; * bool *  *  *  -&gt; unit" Usage="encoder.Convert (chars, bytes, flush, charsUsed, bytesUsed, completed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush, [out] int32&amp; charsUsed, [out] int32&amp; bytesUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(char* chars, int charCount, System::Byte* bytes, int byteCount, bool flush, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] bool % completed);" />
+      <MemberSignature Language="F#" Value="abstract member Convert : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int * bool *  *  *  -&gt; unit&#xA;override this.Convert : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int * bool *  *  *  -&gt; unit" Usage="encoder.Convert (chars, charCount, bytes, byteCount, flush, charsUsed, bytesUsed, completed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Convert (chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer, byteCount As Integer, flush As Boolean, ByRef charsUsed As Integer, ByRef bytesUsed As Integer, ByRef completed As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, bool flush, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] bool % completed);" />
+      <MemberSignature Language="F#" Value="abstract member Convert : char[] * int * int * byte[] * int * int * bool *  *  *  -&gt; unit&#xA;override this.Convert : char[] * int * int * byte[] * int * int * bool *  *  *  -&gt; unit" Usage="encoder.Convert (chars, charIndex, charCount, bytes, byteIndex, byteCount, flush, charsUsed, bytesUsed, completed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -350,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoder.Fallback" />
       <MemberSignature Language="VB.NET" Value="Public Property Fallback As EncoderFallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::EncoderFallback ^ Fallback { System::Text::EncoderFallback ^ get(); void set(System::Text::EncoderFallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Fallback : System.Text.EncoderFallback with get, set" Usage="System.Text.Encoder.Fallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -405,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoder.FallbackBuffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FallbackBuffer As EncoderFallbackBuffer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::EncoderFallbackBuffer ^ FallbackBuffer { System::Text::EncoderFallbackBuffer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FallbackBuffer : System.Text.EncoderFallbackBuffer" Usage="System.Text.Encoder.FallbackBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -463,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetByteCount(System.ReadOnlySpan{System.Char},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByteCount (chars As ReadOnlySpan(Of Char), flush As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(ReadOnlySpan&lt;char&gt; chars, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetByteCount : ReadOnlySpan&lt;char&gt; * bool -&gt; int&#xA;override this.GetByteCount : ReadOnlySpan&lt;char&gt; * bool -&gt; int" Usage="encoder.GetByteCount (chars, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -488,6 +495,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetByteCount(char* chars, int32 count, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetByteCount(System.Char*,System.Int32,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(char* chars, int count, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetByteCount : nativeptr&lt;char&gt; * int * bool -&gt; int&#xA;override this.GetByteCount : nativeptr&lt;char&gt; * int * bool -&gt; int" Usage="encoder.GetByteCount (chars, count, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -561,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetByteCount (chars As Char(), index As Integer, count As Integer, flush As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetByteCount(cli::array &lt;char&gt; ^ chars, int index, int count, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetByteCount : char[] * int * int * bool -&gt; int" Usage="encoder.GetByteCount (chars, index, count, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -652,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte), flush As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetBytes(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; * bool -&gt; int&#xA;override this.GetBytes : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; * bool -&gt; int" Usage="encoder.GetBytes (chars, bytes, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -679,6 +689,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetBytes(char* chars, int charCount, System::Byte* bytes, int byteCount, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int * bool -&gt; int&#xA;override this.GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int * bool -&gt; int" Usage="encoder.GetBytes (chars, charCount, bytes, byteCount, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -764,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes (chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer, flush As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetBytes(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, bool flush);" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : char[] * int * int * byte[] * int * bool -&gt; int" Usage="encoder.GetBytes (chars, charIndex, charCount, bytes, byteIndex, flush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -861,6 +873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="encoder.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

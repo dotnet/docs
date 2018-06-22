@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IDynamicDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDynamicDataSource&#xA;Implements IDataSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDynamicDataSource : System::Web::UI::IDataSource" />
+  <TypeSignature Language="F#" Value="type IDynamicDataSource = interface&#xA;    interface IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.AutoGenerateWhereClause" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateWhereClause As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateWhereClause { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateWhereClause : bool with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.AutoGenerateWhereClause" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.ContextType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContextType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextType : Type with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.ContextType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.EnableDelete" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDelete { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDelete : bool with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.EnableDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.EnableInsert" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableInsert { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableInsert : bool with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.EnableInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.EnableUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableUpdate : bool with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.EnableUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -128,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.IDynamicDataSource.Exception" />
       <MemberSignature Language="VB.NET" Value="Event Exception As EventHandler(Of DynamicValidatorEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::DynamicData::DynamicValidatorEventArgs ^&gt; ^ Exception;" />
+      <MemberSignature Language="F#" Value="member this.Exception : EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt; " Usage="member this.Exception : System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -174,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.Where" />
       <MemberSignature Language="VB.NET" Value="Public Property Where As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Where { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Where : string with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.Where" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicDataSource.WhereParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhereParameters As ParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ WhereParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhereParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.DynamicData.IDynamicDataSource.WhereParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

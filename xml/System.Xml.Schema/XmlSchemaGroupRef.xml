@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaGroupRef" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaGroupRef&#xA;Inherits XmlSchemaParticle" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaGroupRef : System::Xml::Schema::XmlSchemaParticle" />
+  <TypeSignature Language="F#" Value="type XmlSchemaGroupRef = class&#xA;    inherit XmlSchemaParticle" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroupRef.Particle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Particle As XmlSchemaGroupBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaGroupBase ^ Particle { System::Xml::Schema::XmlSchemaGroupBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Particle : System.Xml.Schema.XmlSchemaGroupBase" Usage="System.Xml.Schema.XmlSchemaGroupRef.Particle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroupRef.RefName" />
       <MemberSignature Language="VB.NET" Value="Public Property RefName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ RefName { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RefName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaGroupRef.RefName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

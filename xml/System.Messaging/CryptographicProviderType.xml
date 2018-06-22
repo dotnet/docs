@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.CryptographicProviderType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CryptographicProviderType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CryptographicProviderType" />
+  <TypeSignature Language="F#" Value="type CryptographicProviderType = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Dss" />
       <MemberSignature Language="VB.NET" Value="Dss" />
       <MemberSignature Language="C++ CLI" Value="Dss" />
+      <MemberSignature Language="F#" Value="Dss = 3" Usage="System.Messaging.CryptographicProviderType.Dss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Fortezza" />
       <MemberSignature Language="VB.NET" Value="Fortezza" />
       <MemberSignature Language="C++ CLI" Value="Fortezza" />
+      <MemberSignature Language="F#" Value="Fortezza = 4" Usage="System.Messaging.CryptographicProviderType.Fortezza" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.MicrosoftExchange" />
       <MemberSignature Language="VB.NET" Value="MicrosoftExchange" />
       <MemberSignature Language="C++ CLI" Value="MicrosoftExchange" />
+      <MemberSignature Language="F#" Value="MicrosoftExchange = 5" Usage="System.Messaging.CryptographicProviderType.MicrosoftExchange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.CryptographicProviderType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.RsaFull" />
       <MemberSignature Language="VB.NET" Value="RsaFull" />
       <MemberSignature Language="C++ CLI" Value="RsaFull" />
+      <MemberSignature Language="F#" Value="RsaFull = 1" Usage="System.Messaging.CryptographicProviderType.RsaFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.RsqSig" />
       <MemberSignature Language="VB.NET" Value="RsqSig" />
       <MemberSignature Language="C++ CLI" Value="RsqSig" />
+      <MemberSignature Language="F#" Value="RsqSig = 2" Usage="System.Messaging.CryptographicProviderType.RsqSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Ssl" />
       <MemberSignature Language="VB.NET" Value="Ssl" />
       <MemberSignature Language="C++ CLI" Value="Ssl" />
+      <MemberSignature Language="F#" Value="Ssl = 6" Usage="System.Messaging.CryptographicProviderType.Ssl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -180,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttAcq" />
       <MemberSignature Language="VB.NET" Value="SttAcq" />
       <MemberSignature Language="C++ CLI" Value="SttAcq" />
+      <MemberSignature Language="F#" Value="SttAcq = 8" Usage="System.Messaging.CryptographicProviderType.SttAcq" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -199,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttBrnd" />
       <MemberSignature Language="VB.NET" Value="SttBrnd" />
       <MemberSignature Language="C++ CLI" Value="SttBrnd" />
+      <MemberSignature Language="F#" Value="SttBrnd = 9" Usage="System.Messaging.CryptographicProviderType.SttBrnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -218,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttIss" />
       <MemberSignature Language="VB.NET" Value="SttIss" />
       <MemberSignature Language="C++ CLI" Value="SttIss" />
+      <MemberSignature Language="F#" Value="SttIss = 11" Usage="System.Messaging.CryptographicProviderType.SttIss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -237,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttMer" />
       <MemberSignature Language="VB.NET" Value="SttMer" />
       <MemberSignature Language="C++ CLI" Value="SttMer" />
+      <MemberSignature Language="F#" Value="SttMer = 7" Usage="System.Messaging.CryptographicProviderType.SttMer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -256,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttRoot" />
       <MemberSignature Language="VB.NET" Value="SttRoot" />
       <MemberSignature Language="C++ CLI" Value="SttRoot" />
+      <MemberSignature Language="F#" Value="SttRoot = 10" Usage="System.Messaging.CryptographicProviderType.SttRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

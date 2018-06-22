@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGridInternal.PropertiesTab" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertiesTab&#xA;Inherits PropertyTab" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertiesTab : System::Windows::Forms::Design::PropertyTab" />
+  <TypeSignature Language="F#" Value="type PropertiesTab = class&#xA;    inherit PropertyTab" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetDefaultProperty(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultProperty (obj As Object) As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetDefaultProperty : obj -&gt; System.ComponentModel.PropertyDescriptor" Usage="propertiesTab.GetDefaultProperty obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetProperties(System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertiesTab.GetProperties (component, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertiesTab.GetProperties (context, component, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGridInternal.PropertiesTab.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpKeyword { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="System.Windows.Forms.PropertyGridInternal.PropertiesTab.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGridInternal.PropertiesTab.TabName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TabName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TabName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabName : string" Usage="System.Windows.Forms.PropertyGridInternal.PropertiesTab.TabName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

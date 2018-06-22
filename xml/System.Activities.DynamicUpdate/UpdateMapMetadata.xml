@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class UpdateMapMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdateMapMetadata" />
+  <TypeSignature Language="F#" Value="type UpdateMapMetadata = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Activity,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMatch (updatedChild As Activity, originalChild As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMatch(System::Activities::Activity ^ updatedChild, System::Activities::Activity ^ originalChild);" />
+      <MemberSignature Language="F#" Value="member this.AddMatch : System.Activities.Activity * System.Activities.Activity -&gt; unit" Usage="updateMapMetadata.AddMatch (updatedChild, originalChild)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Variable,System.Activities.Variable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMatch (updatedVariable As Variable, originalVariable As Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMatch(System::Activities::Variable ^ updatedVariable, System::Activities::Variable ^ originalVariable);" />
+      <MemberSignature Language="F#" Value="member this.AddMatch : System.Activities.Variable * System.Activities.Variable -&gt; unit" Usage="updateMapMetadata.AddMatch (updatedVariable, originalVariable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AllowUpdateInsideThisActivity" />
       <MemberSignature Language="VB.NET" Value="Public Sub AllowUpdateInsideThisActivity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllowUpdateInsideThisActivity();" />
+      <MemberSignature Language="F#" Value="member this.AllowUpdateInsideThisActivity : unit -&gt; unit" Usage="updateMapMetadata.AllowUpdateInsideThisActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.DisallowUpdateInsideThisActivity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisallowUpdateInsideThisActivity (reason As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisallowUpdateInsideThisActivity(System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="member this.DisallowUpdateInsideThisActivity : string -&gt; unit" Usage="updateMapMetadata.DisallowUpdateInsideThisActivity reason" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatch (updatedChild As Activity) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Activity ^ GetMatch(System::Activities::Activity ^ updatedChild);" />
+      <MemberSignature Language="F#" Value="member this.GetMatch : System.Activities.Activity -&gt; System.Activities.Activity" Usage="updateMapMetadata.GetMatch updatedChild" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Variable)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatch (updatedVariable As Variable) As Variable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Variable ^ GetMatch(System::Activities::Variable ^ updatedVariable);" />
+      <MemberSignature Language="F#" Value="member this.GetMatch : System.Activities.Variable -&gt; System.Activities.Variable" Usage="updateMapMetadata.GetMatch updatedVariable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.IsReferenceToImportedChild(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsReferenceToImportedChild (childActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsReferenceToImportedChild(System::Activities::Activity ^ childActivity);" />
+      <MemberSignature Language="F#" Value="member this.IsReferenceToImportedChild : System.Activities.Activity -&gt; bool" Usage="updateMapMetadata.IsReferenceToImportedChild childActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

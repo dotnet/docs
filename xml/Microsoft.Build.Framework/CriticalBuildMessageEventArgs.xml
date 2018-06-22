@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CriticalBuildMessageEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CriticalBuildMessageEventArgs&#xA;Inherits BuildMessageEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CriticalBuildMessageEventArgs : Microsoft::Build::Framework::BuildMessageEventArgs" />
+  <TypeSignature Language="F#" Value="type CriticalBuildMessageEventArgs = class&#xA;    inherit BuildMessageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CriticalBuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CriticalBuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string -&gt; Microsoft.Build.Framework.CriticalBuildMessageEventArgs" Usage="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CriticalBuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CriticalBuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string * DateTime -&gt; Microsoft.Build.Framework.CriticalBuildMessageEventArgs" Usage="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CriticalBuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.DateTime,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CriticalBuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.CriticalBuildMessageEventArgs" Usage="new Microsoft.Build.Framework.CriticalBuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName, eventTimestamp, messageArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

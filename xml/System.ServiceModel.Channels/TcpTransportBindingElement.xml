@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TcpTransportBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class TcpTransportBindingElement&#xA;Inherits ConnectionOrientedTransportBindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TcpTransportBindingElement : System::ServiceModel::Channels::ConnectionOrientedTransportBindingElement" />
+  <TypeSignature Language="F#" Value="type TcpTransportBindingElement = class&#xA;    inherit ConnectionOrientedTransportBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.#ctor(System.ServiceModel.Channels.TcpTransportBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As TcpTransportBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TcpTransportBindingElement(System::ServiceModel::Channels::TcpTransportBindingElement ^ elementToBeCloned);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.TcpTransportBindingElement : System.ServiceModel.Channels.TcpTransportBindingElement -&gt; System.ServiceModel.Channels.TcpTransportBindingElement" Usage="new System.ServiceModel.Channels.TcpTransportBindingElement elementToBeCloned" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="tcpTransportBindingElement.BuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="tcpTransportBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="tcpTransportBindingElement.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionPoolSettings As TcpConnectionPoolSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::TcpConnectionPoolSettings ^ ConnectionPoolSettings { System::ServiceModel::Channels::TcpConnectionPoolSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionPoolSettings : System.ServiceModel.Channels.TcpConnectionPoolSettings" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy with get, set" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.ExtendedProtectionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -335,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="tcpTransportBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -388,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.ListenBacklog" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenBacklog As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListenBacklog { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenBacklog : int with get, set" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.ListenBacklog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -424,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property PortSharingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PortSharingEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PortSharingEnabled : bool with get, set" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -462,6 +472,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeExtendedProtectionPolicy : unit -&gt; bool" Usage="tcpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TcpTransportBindingElement.ShouldSerializeListenBacklog" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeListenBacklog () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeListenBacklog();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeListenBacklog : unit -&gt; bool" Usage="tcpTransportBindingElement.ShouldSerializeListenBacklog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -563,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TcpTransportBindingElement.TeredoEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property TeredoEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TeredoEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TeredoEnabled : bool with get, set" Usage="System.ServiceModel.Channels.TcpTransportBindingElement.TeredoEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

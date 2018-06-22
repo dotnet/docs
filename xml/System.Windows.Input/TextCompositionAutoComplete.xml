@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextCompositionAutoComplete" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextCompositionAutoComplete" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextCompositionAutoComplete" />
+  <TypeSignature Language="F#" Value="type TextCompositionAutoComplete = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TextCompositionAutoComplete.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Windows.Input.TextCompositionAutoComplete.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TextCompositionAutoComplete.On" />
       <MemberSignature Language="VB.NET" Value="On" />
       <MemberSignature Language="C++ CLI" Value="On" />
+      <MemberSignature Language="F#" Value="On = 1" Usage="System.Windows.Input.TextCompositionAutoComplete.On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

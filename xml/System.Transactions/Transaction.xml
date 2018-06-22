@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.Transaction" />
   <TypeSignature Language="VB.NET" Value="Public Class Transaction&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transaction : IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Transaction = class&#xA;    interface IDisposable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.BeginCommitInternal(System.AsyncCallback)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BeginCommitInternal (callback As AsyncCallback) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ BeginCommitInternal(AsyncCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.BeginCommitInternal : AsyncCallback -&gt; IAsyncResult" Usage="transaction.BeginCommitInternal callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Transaction ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Transactions.Transaction" Usage="transaction.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Transaction.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Current As Transaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Transactions::Transaction ^ Current { System::Transactions::Transaction ^ get(); void set(System::Transactions::Transaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Transactions.Transaction with get, set" Usage="System.Transactions.Transaction.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -151,14 +155,15 @@
     <Member MemberName="DependentClone">
       <MemberSignature Language="C#" Value="public System.Transactions.DependentTransaction DependentClone (System.Transactions.DependentCloneOption cloneOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.DependentTransaction DependentClone(valuetype System.Transactions.DependentCloneOption cloneOption) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.DependentClone(System.Transactions.DependentCloneOption)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.DependentClone(System.Transactions.DependentCloneOption)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function DependentClone (cloneOption As DependentCloneOption) As DependentTransaction" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::DependentTransaction ^ DependentClone(System::Transactions::DependentCloneOption cloneOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public System.Transactions.DependentTransaction DependentClone (System.Transactions.DependentCloneOption option);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.DependentTransaction DependentClone(valuetype System.Transactions.DependentCloneOption option) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.DependentClone(System.Transactions.DependentCloneOption)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.DependentClone(System.Transactions.DependentCloneOption)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function DependentClone (option As DependentCloneOption) As DependentTransaction" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::DependentTransaction ^ DependentClone(System::Transactions::DependentCloneOption option);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.DependentClone : System.Transactions.DependentCloneOption -&gt; System.Transactions.DependentTransaction" Usage="transaction.DependentClone option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="transaction.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EndCommitInternal(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EndCommitInternal (ar As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndCommitInternal(IAsyncResult ^ ar);" />
+      <MemberSignature Language="F#" Value="member this.EndCommitInternal : IAsyncResult -&gt; unit" Usage="transaction.EndCommitInternal ar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -292,12 +299,13 @@
       <MemberSignature Language="VB.NET" Value="Public Function EnlistDurable (manager As Guid, notification As IEnlistmentNotification, options As EnlistmentOptions) As Enlistment" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0;xamarinandroid-7.1" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistDurable (Guid resourceManagerIdentifier, System.Transactions.IEnlistmentNotification enlistmentNotification, System.Transactions.EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistDurable(valuetype System.Guid resourceManagerIdentifier, class System.Transactions.IEnlistmentNotification enlistmentNotification, valuetype System.Transactions.EnlistmentOptions enlistmentOptions) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistDurable(Guid resourceManagerIdentifier, System::Transactions::IEnlistmentNotification ^ enlistmentNotification, System::Transactions::EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistDurable (Guid manager, System.Transactions.IEnlistmentNotification notification, System.Transactions.EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistDurable(valuetype System.Guid manager, class System.Transactions.IEnlistmentNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistDurable(Guid manager, System::Transactions::IEnlistmentNotification ^ notification, System::Transactions::EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EnlistDurable : Guid * System.Transactions.IEnlistmentNotification * System.Transactions.EnlistmentOptions -&gt; System.Transactions.Enlistment" Usage="transaction.EnlistDurable (manager, notification, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -340,12 +348,13 @@
       <MemberSignature Language="VB.NET" Value="Public Function EnlistDurable (manager As Guid, notification As ISinglePhaseNotification, options As EnlistmentOptions) As Enlistment" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0;xamarinandroid-7.1" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistDurable (Guid resourceManagerIdentifier, System.Transactions.ISinglePhaseNotification singlePhaseNotification, System.Transactions.EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistDurable(valuetype System.Guid resourceManagerIdentifier, class System.Transactions.ISinglePhaseNotification singlePhaseNotification, valuetype System.Transactions.EnlistmentOptions enlistmentOptions) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistDurable(Guid resourceManagerIdentifier, System::Transactions::ISinglePhaseNotification ^ singlePhaseNotification, System::Transactions::EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistDurable (Guid manager, System.Transactions.ISinglePhaseNotification notification, System.Transactions.EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistDurable(valuetype System.Guid manager, class System.Transactions.ISinglePhaseNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistDurable(Guid manager, System::Transactions::ISinglePhaseNotification ^ notification, System::Transactions::EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EnlistDurable : Guid * System.Transactions.ISinglePhaseNotification * System.Transactions.EnlistmentOptions -&gt; System.Transactions.Enlistment" Usage="transaction.EnlistDurable (manager, notification, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -400,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnlistPromotableSinglePhase (promotableSinglePhaseNotification As IPromotableSinglePhaseNotification, promoterType As Guid) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EnlistPromotableSinglePhase(System::Transactions::IPromotableSinglePhaseNotification ^ promotableSinglePhaseNotification, Guid promoterType);" />
+      <MemberSignature Language="F#" Value="member this.EnlistPromotableSinglePhase : System.Transactions.IPromotableSinglePhaseNotification * Guid -&gt; bool" Usage="transaction.EnlistPromotableSinglePhase (promotableSinglePhaseNotification, promoterType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -452,14 +462,15 @@
     <Member MemberName="EnlistPromotableSinglePhase">
       <MemberSignature Language="C#" Value="public bool EnlistPromotableSinglePhase (System.Transactions.IPromotableSinglePhaseNotification promotableSinglePhaseNotification);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EnlistPromotableSinglePhase(class System.Transactions.IPromotableSinglePhaseNotification promotableSinglePhaseNotification) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EnlistPromotableSinglePhase (promotableSinglePhaseNotification As IPromotableSinglePhaseNotification) As Boolean" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EnlistPromotableSinglePhase(System::Transactions::IPromotableSinglePhaseNotification ^ promotableSinglePhaseNotification);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public bool EnlistPromotableSinglePhase (System.Transactions.IPromotableSinglePhaseNotification notification);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EnlistPromotableSinglePhase(class System.Transactions.IPromotableSinglePhaseNotification notification) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EnlistPromotableSinglePhase (notification As IPromotableSinglePhaseNotification) As Boolean" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EnlistPromotableSinglePhase(System::Transactions::IPromotableSinglePhaseNotification ^ notification);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EnlistPromotableSinglePhase : System.Transactions.IPromotableSinglePhaseNotification -&gt; bool" Usage="transaction.EnlistPromotableSinglePhase notification" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -524,13 +535,14 @@
     <Member MemberName="EnlistVolatile">
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistVolatile (System.Transactions.IEnlistmentNotification enlistmentNotification, System.Transactions.EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistVolatile(class System.Transactions.IEnlistmentNotification enlistmentNotification, valuetype System.Transactions.EnlistmentOptions enlistmentOptions) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistVolatile(System::Transactions::IEnlistmentNotification ^ enlistmentNotification, System::Transactions::EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistVolatile (System.Transactions.IEnlistmentNotification notification, System.Transactions.EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistVolatile(class System.Transactions.IEnlistmentNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EnlistVolatile (notification As IEnlistmentNotification, options As EnlistmentOptions) As Enlistment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistVolatile(System::Transactions::IEnlistmentNotification ^ notification, System::Transactions::EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EnlistVolatile : System.Transactions.IEnlistmentNotification * System.Transactions.EnlistmentOptions -&gt; System.Transactions.Enlistment" Usage="transaction.EnlistVolatile (notification, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -585,13 +597,14 @@
     <Member MemberName="EnlistVolatile">
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistVolatile (System.Transactions.ISinglePhaseNotification singlePhaseNotification, System.Transactions.EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistVolatile(class System.Transactions.ISinglePhaseNotification singlePhaseNotification, valuetype System.Transactions.EnlistmentOptions enlistmentOptions) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistVolatile(System::Transactions::ISinglePhaseNotification ^ singlePhaseNotification, System::Transactions::EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistVolatile (System.Transactions.ISinglePhaseNotification notification, System.Transactions.EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistVolatile(class System.Transactions.ISinglePhaseNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.EnlistVolatile(System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Function EnlistVolatile (notification As ISinglePhaseNotification, options As EnlistmentOptions) As Enlistment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ EnlistVolatile(System::Transactions::ISinglePhaseNotification ^ notification, System::Transactions::EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.EnlistVolatile : System.Transactions.ISinglePhaseNotification * System.Transactions.EnlistmentOptions -&gt; System.Transactions.Enlistment" Usage="transaction.EnlistVolatile (notification, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -641,6 +654,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="transaction.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -676,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="transaction.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -707,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.GetPromotedToken" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPromotedToken () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetPromotedToken();" />
+      <MemberSignature Language="F#" Value="member this.GetPromotedToken : unit -&gt; byte[]" Usage="transaction.GetPromotedToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -747,6 +763,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Transaction.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::IsolationLevel IsolationLevel { System::Transactions::IsolationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Transactions.IsolationLevel" Usage="System.Transactions.Transaction.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -784,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.op_Equality(System.Transactions.Transaction,System.Transactions.Transaction)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As Transaction, y As Transaction) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Transactions::Transaction ^ x, System::Transactions::Transaction ^ y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Transactions.Transaction * System.Transactions.Transaction -&gt; bool" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -823,6 +841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.op_Inequality(System.Transactions.Transaction,System.Transactions.Transaction)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As Transaction, y As Transaction) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Transactions::Transaction ^ x, System::Transactions::Transaction ^ y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Transactions.Transaction * System.Transactions.Transaction -&gt; bool" Usage="System.Transactions.Transaction.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -860,12 +879,13 @@
       <MemberSignature Language="VB.NET" Value="Public Function PromoteAndEnlistDurable (manager As Guid, promotableNotification As IPromotableSinglePhaseNotification, notification As ISinglePhaseNotification, options As EnlistmentOptions) As Enlistment" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0;xamarinandroid-7.1" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment PromoteAndEnlistDurable (Guid resourceManagerIdentifier, System.Transactions.IPromotableSinglePhaseNotification promotableNotification, System.Transactions.ISinglePhaseNotification enlistmentNotification, System.Transactions.EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment PromoteAndEnlistDurable(valuetype System.Guid resourceManagerIdentifier, class System.Transactions.IPromotableSinglePhaseNotification promotableNotification, class System.Transactions.ISinglePhaseNotification enlistmentNotification, valuetype System.Transactions.EnlistmentOptions enlistmentOptions) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netcore-2.1;xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netcore-2.0;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ PromoteAndEnlistDurable(Guid resourceManagerIdentifier, System::Transactions::IPromotableSinglePhaseNotification ^ promotableNotification, System::Transactions::ISinglePhaseNotification ^ enlistmentNotification, System::Transactions::EnlistmentOptions enlistmentOptions);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0" />
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment PromoteAndEnlistDurable (Guid manager, System.Transactions.IPromotableSinglePhaseNotification promotableNotification, System.Transactions.ISinglePhaseNotification notification, System.Transactions.EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment PromoteAndEnlistDurable(valuetype System.Guid manager, class System.Transactions.IPromotableSinglePhaseNotification promotableNotification, class System.Transactions.ISinglePhaseNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)" FrameworkAlternate="netcore-2.1;xamarinandroid-7.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Transactions::Enlistment ^ PromoteAndEnlistDurable(Guid manager, System::Transactions::IPromotableSinglePhaseNotification ^ promotableNotification, System::Transactions::ISinglePhaseNotification ^ notification, System::Transactions::EnlistmentOptions options);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.PromoteAndEnlistDurable : Guid * System.Transactions.IPromotableSinglePhaseNotification * System.Transactions.ISinglePhaseNotification * System.Transactions.EnlistmentOptions -&gt; System.Transactions.Enlistment" Usage="transaction.PromoteAndEnlistDurable (manager, promotableNotification, notification, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -912,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Transaction.PromoterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PromoterType As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid PromoterType { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.PromoterType : Guid" Usage="System.Transactions.Transaction.PromoterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -959,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback();" />
+      <MemberSignature Language="F#" Value="member this.Rollback : unit -&gt; unit" Usage="transaction.Rollback " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -993,14 +1015,15 @@
     <Member MemberName="Rollback">
       <MemberSignature Language="C#" Value="public void Rollback (Exception e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rollback(class System.Exception e) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Rollback(System.Exception)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Rollback(System.Exception)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback (e As Exception)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback(Exception ^ e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public void Rollback (Exception ex);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rollback(class System.Exception ex) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Rollback(System.Exception)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.Rollback(System.Exception)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback (ex As Exception)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback(Exception ^ ex);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Rollback : Exception -&gt; unit" Usage="transaction.Rollback ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -1036,6 +1059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.SetDistributedTransactionIdentifier(System.Transactions.IPromotableSinglePhaseNotification,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDistributedTransactionIdentifier (promotableNotification As IPromotableSinglePhaseNotification, distributedTransactionIdentifier As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDistributedTransactionIdentifier(System::Transactions::IPromotableSinglePhaseNotification ^ promotableNotification, Guid distributedTransactionIdentifier);" />
+      <MemberSignature Language="F#" Value="member this.SetDistributedTransactionIdentifier : System.Transactions.IPromotableSinglePhaseNotification * Guid -&gt; unit" Usage="transaction.SetDistributedTransactionIdentifier (promotableNotification, distributedTransactionIdentifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -1077,11 +1101,11 @@
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
@@ -1124,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="E:System.Transactions.Transaction.TransactionCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TransactionCompleted As TransactionCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Transactions::TransactionCompletedEventHandler ^ TransactionCompleted;" />
+      <MemberSignature Language="F#" Value="member this.TransactionCompleted : System.Transactions.TransactionCompletedEventHandler " Usage="member this.TransactionCompleted : System.Transactions.TransactionCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -1171,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Transaction.TransactionInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransactionInformation As TransactionInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::TransactionInformation ^ TransactionInformation { System::Transactions::TransactionInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionInformation : System.Transactions.TransactionInformation" Usage="System.Transactions.Transaction.TransactionInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ChannelDispatcher" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelDispatcher&#xA;Inherits ChannelDispatcherBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelDispatcher : System::ServiceModel::Dispatcher::ChannelDispatcherBase" />
+  <TypeSignature Language="F#" Value="type ChannelDispatcher = class&#xA;    inherit ChannelDispatcherBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.#ctor(System.ServiceModel.Channels.IChannelListener)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (listener As IChannelListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelDispatcher(System::ServiceModel::Channels::IChannelListener ^ listener);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ChannelDispatcher : System.ServiceModel.Channels.IChannelListener -&gt; System.ServiceModel.Dispatcher.ChannelDispatcher" Usage="new System.ServiceModel.Dispatcher.ChannelDispatcher listener" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.#ctor(System.ServiceModel.Channels.IChannelListener,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (listener As IChannelListener, bindingName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelDispatcher(System::ServiceModel::Channels::IChannelListener ^ listener, System::String ^ bindingName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ChannelDispatcher : System.ServiceModel.Channels.IChannelListener * string -&gt; System.ServiceModel.Dispatcher.ChannelDispatcher" Usage="new System.ServiceModel.Dispatcher.ChannelDispatcher (listener, bindingName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.#ctor(System.ServiceModel.Channels.IChannelListener,System.String,System.ServiceModel.IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (listener As IChannelListener, bindingName As String, timeouts As IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelDispatcher(System::ServiceModel::Channels::IChannelListener ^ listener, System::String ^ bindingName, System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ChannelDispatcher : System.ServiceModel.Channels.IChannelListener * string * System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Dispatcher.ChannelDispatcher" Usage="new System.ServiceModel.Dispatcher.ChannelDispatcher (listener, bindingName, timeouts)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.AsynchronousTransactedAcceptEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AsynchronousTransactedAcceptEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AsynchronousTransactedAcceptEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AsynchronousTransactedAcceptEnabled : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.AsynchronousTransactedAcceptEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.Attach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Attach (host As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Attach(System::ServiceModel::ServiceHostBase ^ host);" />
+      <MemberSignature Language="F#" Value="override this.Attach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="channelDispatcher.Attach host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.BindingName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingName : string" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.BindingName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelInitializers As SynchronizedCollection(Of IChannelInitializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IChannelInitializer ^&gt; ^ ChannelInitializers { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IChannelInitializer ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelInitializers : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt;" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.CloseInput" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CloseInput ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CloseInput();" />
+      <MemberSignature Language="F#" Value="override this.CloseInput : unit -&gt; unit" Usage="channelDispatcher.CloseInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.DefaultCloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.DefaultCloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.DefaultOpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.DefaultOpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.Detach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Detach (host As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Detach(System::ServiceModel::ServiceHostBase ^ host);" />
+      <MemberSignature Language="F#" Value="override this.Detach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="channelDispatcher.Detach host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -404,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As SynchronizedCollection(Of EndpointDispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::EndpointDispatcher ^&gt; ^ Endpoints { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::EndpointDispatcher ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.EndpointDispatcher&gt;" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.Endpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -439,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorHandlers As Collection(Of IErrorHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::IErrorHandler ^&gt; ^ ErrorHandlers { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::IErrorHandler ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorHandlers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.IErrorHandler&gt;" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -467,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.Host" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Host As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::ServiceHostBase ^ Host { System::ServiceModel::ServiceHostBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Host : System.ServiceModel.ServiceHostBase" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -500,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -537,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedAccept" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTransactedAccept As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTransactedAccept { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactedAccept : bool" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedAccept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -566,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTransactedReceive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTransactedReceive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactedReceive : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -603,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.Listener" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Listener As IChannelListener" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::IChannelListener ^ Listener { System::ServiceModel::Channels::IChannelListener ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Listener : System.ServiceModel.Channels.IChannelListener" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.Listener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -636,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ManualAddressing" />
       <MemberSignature Language="VB.NET" Value="Public Property ManualAddressing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ManualAddressing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ManualAddressing : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ManualAddressing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -675,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxPendingReceives" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingReceives As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingReceives { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingReceives : int with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.MaxPendingReceives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -695,6 +716,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTransactedBatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxTransactedBatchSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxTransactedBatchSize : int with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -732,6 +754,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.MessageVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageVersion As MessageVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); void set(System::ServiceModel::Channels::MessageVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.MessageVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -770,6 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
+      <MemberSignature Language="F#" Value="override this.OnAbort : unit -&gt; unit" Usage="channelDispatcher.OnAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -790,6 +814,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.OnBeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="channelDispatcher.OnBeginClose (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -818,6 +843,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.OnBeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="channelDispatcher.OnBeginOpen (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -854,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnClose(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.OnClose : TimeSpan -&gt; unit" Usage="channelDispatcher.OnClose timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -877,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnClosed" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed();" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : unit -&gt; unit" Usage="channelDispatcher.OnClosed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -897,6 +925,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnEndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.OnEndClose : IAsyncResult -&gt; unit" Usage="channelDispatcher.OnEndClose result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -920,6 +949,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnEndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndOpen (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndOpen(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.OnEndOpen : IAsyncResult -&gt; unit" Usage="channelDispatcher.OnEndOpen result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -943,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpen (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpen(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.OnOpen : TimeSpan -&gt; unit" Usage="channelDispatcher.OnOpen timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -974,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpened" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpened ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpened();" />
+      <MemberSignature Language="F#" Value="override this.OnOpened : unit -&gt; unit" Usage="channelDispatcher.OnOpened " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1002,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpening" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpening ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpening();" />
+      <MemberSignature Language="F#" Value="override this.OnOpening : unit -&gt; unit" Usage="channelDispatcher.OnOpening " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1030,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveContextEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveContextEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReceiveContextEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveContextEnabled : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveContextEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1058,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveSynchronously" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveSynchronously As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReceiveSynchronously { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveSynchronously : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveSynchronously" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1097,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.SendAsynchronously" />
       <MemberSignature Language="VB.NET" Value="Public Property SendAsynchronously As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendAsynchronously { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SendAsynchronously : bool with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.SendAsynchronously" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1118,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ServiceThrottle" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceThrottle As ServiceThrottle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ServiceThrottle ^ ServiceThrottle { System::ServiceModel::Dispatcher::ServiceThrottle ^ get(); void set(System::ServiceModel::Dispatcher::ServiceThrottle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceThrottle : System.ServiceModel.Dispatcher.ServiceThrottle with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.ServiceThrottle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1156,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionIsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionIsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::IsolationLevel TransactionIsolationLevel { System::Transactions::IsolationLevel get(); void set(System::Transactions::IsolationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionIsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionIsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1195,6 +1233,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TransactionTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

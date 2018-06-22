@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.ResolveCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCompletedEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As ResolveResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::ResolveResponse ^ Result { System::ServiceModel::Discovery::ResolveResponse ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.ServiceModel.Discovery.ResolveResponse" Usage="System.ServiceModel.Discovery.ResolveCompletedEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

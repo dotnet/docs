@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripContentPanelRenderEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripContentPanelRenderEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripContentPanelRenderEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripContentPanel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (g As Graphics, contentPanel As ToolStripContentPanel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripContentPanelRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripContentPanel ^ contentPanel);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripContentPanelRenderEventArgs : System.Drawing.Graphics * System.Windows.Forms.ToolStripContentPanel -&gt; System.Windows.Forms.ToolStripContentPanelRenderEventArgs" Usage="new System.Windows.Forms.ToolStripContentPanelRenderEventArgs (g, contentPanel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.ToolStripContentPanel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolStripContentPanel As ToolStripContentPanel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripContentPanel ^ ToolStripContentPanel { System::Windows::Forms::ToolStripContentPanel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripContentPanel : System.Windows.Forms.ToolStripContentPanel" Usage="System.Windows.Forms.ToolStripContentPanelRenderEventArgs.ToolStripContentPanel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

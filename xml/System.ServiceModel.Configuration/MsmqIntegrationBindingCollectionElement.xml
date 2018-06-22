@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MsmqIntegrationBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MsmqIntegrationBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of MsmqIntegrationBinding, MsmqIntegrationBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqIntegrationBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::MsmqIntegration::MsmqIntegrationBinding ^, System::ServiceModel::Configuration::MsmqIntegrationBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type MsmqIntegrationBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;MsmqIntegrationBinding, MsmqIntegrationBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

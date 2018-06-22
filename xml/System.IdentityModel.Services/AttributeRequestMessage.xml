@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.AttributeRequestMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class AttributeRequestMessage&#xA;Inherits WSFederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeRequestMessage : System::IdentityModel::Services::WSFederationMessage" />
+  <TypeSignature Language="F#" Value="type AttributeRequestMessage = class&#xA;    inherit WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AttributeRequestMessage.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeRequestMessage(Uri ^ baseUrl);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.AttributeRequestMessage : Uri -&gt; System.IdentityModel.Services.AttributeRequestMessage" Usage="new System.IdentityModel.Services.AttributeRequestMessage baseUrl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AttributeRequestMessage.Attribute" />
       <MemberSignature Language="VB.NET" Value="Public Property Attribute As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Attribute { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Attribute : string with get, set" Usage="System.IdentityModel.Services.AttributeRequestMessage.Attribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AttributeRequestMessage.AttributePtr" />
       <MemberSignature Language="VB.NET" Value="Public Property AttributePtr As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributePtr { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributePtr : string with get, set" Usage="System.IdentityModel.Services.AttributeRequestMessage.AttributePtr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AttributeRequestMessage.Reply" />
       <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.AttributeRequestMessage.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AttributeRequestMessage.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="System.IdentityModel.Services.AttributeRequestMessage.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AttributeRequestMessage.ResultPtr" />
       <MemberSignature Language="VB.NET" Value="Public Property ResultPtr As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResultPtr { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResultPtr : string with get, set" Usage="System.IdentityModel.Services.AttributeRequestMessage.ResultPtr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AttributeRequestMessage.Validate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="attributeRequestMessage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AttributeRequestMessage.Write(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Write : System.IO.TextWriter -&gt; unit" Usage="attributeRequestMessage.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class HitTestResult abstract" />
+  <TypeSignature Language="F#" Value="type HitTestResult = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.HitTestResult.VisualHit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualHit As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ VisualHit { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualHit : System.Windows.DependencyObject" Usage="System.Windows.Media.HitTestResult.VisualHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

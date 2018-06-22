@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DynamicAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DynamicAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DynamicAttribute.#ctor(System.Boolean[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transformFlags As Boolean())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicAttribute(cli::array &lt;bool&gt; ^ transformFlags);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DynamicAttribute : bool[] -&gt; System.Runtime.CompilerServices.DynamicAttribute" Usage="new System.Runtime.CompilerServices.DynamicAttribute transformFlags" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DynamicAttribute.TransformFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransformFlags As IList(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;bool&gt; ^ TransformFlags { System::Collections::Generic::IList&lt;bool&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransformFlags : System.Collections.Generic.IList&lt;bool&gt;" Usage="System.Runtime.CompilerServices.DynamicAttribute.TransformFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

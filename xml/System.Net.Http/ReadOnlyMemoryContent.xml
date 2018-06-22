@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.ReadOnlyMemoryContent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyMemoryContent&#xA;Inherits HttpContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyMemoryContent sealed : System::Net::Http::HttpContent" />
+  <TypeSignature Language="F#" Value="type ReadOnlyMemoryContent = class&#xA;    inherit HttpContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.#ctor(System.ReadOnlyMemory{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ReadOnlyMemory(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemoryContent(ReadOnlyMemory&lt;System::Byte&gt; content);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.ReadOnlyMemoryContent : ReadOnlyMemory&lt;byte&gt; -&gt; System.Net.Http.ReadOnlyMemoryContent" Usage="new System.Net.Http.ReadOnlyMemoryContent content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="readOnlyMemoryContent.SerializeToStreamAsync (stream, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ReadOnlyMemoryContent.TryComputeLength(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
+      <MemberSignature Language="F#" Value="override this.TryComputeLength :  -&gt; bool" Usage="readOnlyMemoryContent.TryComputeLength length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

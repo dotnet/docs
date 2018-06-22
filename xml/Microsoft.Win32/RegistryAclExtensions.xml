@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryAclExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module RegistryAclExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryAclExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type RegistryAclExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.GetAccessControl(Microsoft.Win32.RegistryKey)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessControl (key As RegistryKey) As RegistrySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::AccessControl::RegistrySecurity ^ GetAccessControl(Microsoft::Win32::RegistryKey ^ key);" />
+      <MemberSignature Language="F#" Value="static member GetAccessControl : Microsoft.Win32.RegistryKey -&gt; System.Security.AccessControl.RegistrySecurity" Usage="Microsoft.Win32.RegistryAclExtensions.GetAccessControl key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.GetAccessControl(Microsoft.Win32.RegistryKey,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessControl (key As RegistryKey, includeSections As AccessControlSections) As RegistrySecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::AccessControl::RegistrySecurity ^ GetAccessControl(Microsoft::Win32::RegistryKey ^ key, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="static member GetAccessControl : Microsoft.Win32.RegistryKey * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.RegistrySecurity" Usage="Microsoft.Win32.RegistryAclExtensions.GetAccessControl (key, includeSections)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class Microsoft.Win32.RegistryKey key, class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.SetAccessControl(Microsoft.Win32.RegistryKey,System.Security.AccessControl.RegistrySecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetAccessControl(Microsoft::Win32::RegistryKey ^ key, System::Security::AccessControl::RegistrySecurity ^ registrySecurity);" />
+      <MemberSignature Language="F#" Value="static member SetAccessControl : Microsoft.Win32.RegistryKey * System.Security.AccessControl.RegistrySecurity -&gt; unit" Usage="Microsoft.Win32.RegistryAclExtensions.SetAccessControl (key, registrySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>

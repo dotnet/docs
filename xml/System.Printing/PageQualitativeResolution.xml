@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageQualitativeResolution" />
   <TypeSignature Language="VB.NET" Value="Public Enum PageQualitativeResolution" />
   <TypeSignature Language="C++ CLI" Value="public enum class PageQualitativeResolution" />
+  <TypeSignature Language="F#" Value="type PageQualitativeResolution = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Printing.PageQualitativeResolution.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Draft" />
       <MemberSignature Language="VB.NET" Value="Draft" />
       <MemberSignature Language="C++ CLI" Value="Draft" />
+      <MemberSignature Language="F#" Value="Draft = 2" Usage="System.Printing.PageQualitativeResolution.Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = 3" Usage="System.Printing.PageQualitativeResolution.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 4" Usage="System.Printing.PageQualitativeResolution.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 5" Usage="System.Printing.PageQualitativeResolution.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PageQualitativeResolution.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

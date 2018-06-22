@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type WebPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Net.WebPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Net.WebPermissionAttribute" Usage="new System.Net.WebPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Property Accept As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Accept { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Accept : string with get, set" Usage="System.Net.WebPermissionAttribute.Accept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.AcceptPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptPattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptPattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptPattern : string with get, set" Usage="System.Net.WebPermissionAttribute.AcceptPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.Connect" />
       <MemberSignature Language="VB.NET" Value="Public Property Connect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Connect { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connect : string with get, set" Usage="System.Net.WebPermissionAttribute.Connect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.ConnectPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectPattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectPattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectPattern : string with get, set" Usage="System.Net.WebPermissionAttribute.ConnectPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="webPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

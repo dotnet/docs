@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowWebHostingModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowWebHostingModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type WorkflowWebHostingModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

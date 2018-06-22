@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DialogResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum DialogResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class DialogResult" />
+  <TypeSignature Language="F#" Value="type DialogResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Abort" />
       <MemberSignature Language="VB.NET" Value="Abort" />
       <MemberSignature Language="C++ CLI" Value="Abort" />
+      <MemberSignature Language="F#" Value="Abort = 3" Usage="System.Windows.Forms.DialogResult.Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 2" Usage="System.Windows.Forms.DialogResult.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 5" Usage="System.Windows.Forms.DialogResult.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.No" />
       <MemberSignature Language="VB.NET" Value="No" />
       <MemberSignature Language="C++ CLI" Value="No" />
+      <MemberSignature Language="F#" Value="No = 7" Usage="System.Windows.Forms.DialogResult.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DialogResult.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
       <MemberSignature Language="C++ CLI" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 1" Usage="System.Windows.Forms.DialogResult.OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Retry" />
       <MemberSignature Language="VB.NET" Value="Retry" />
       <MemberSignature Language="C++ CLI" Value="Retry" />
+      <MemberSignature Language="F#" Value="Retry = 4" Usage="System.Windows.Forms.DialogResult.Retry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Yes" />
       <MemberSignature Language="VB.NET" Value="Yes" />
       <MemberSignature Language="C++ CLI" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 6" Usage="System.Windows.Forms.DialogResult.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

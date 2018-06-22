@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.TrackingProfile" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingProfile" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingProfile" />
+  <TypeSignature Language="F#" Value="type TrackingProfile = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.ActivityDefinitionId" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityDefinitionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityDefinitionId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityDefinitionId : string with get, set" Usage="System.Activities.Tracking.TrackingProfile.ActivityDefinitionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.ImplementationVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property ImplementationVisibility As ImplementationVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Tracking::ImplementationVisibility ImplementationVisibility { System::Activities::Tracking::ImplementationVisibility get(); void set(System::Activities::Tracking::ImplementationVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.ImplementationVisibility : System.Activities.Tracking.ImplementationVisibility with get, set" Usage="System.Activities.Tracking.TrackingProfile.ImplementationVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Tracking.TrackingProfile.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingProfile.Queries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Queries As Collection(Of TrackingQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Tracking::TrackingQuery ^&gt; ^ Queries { System::Collections::ObjectModel::Collection&lt;System::Activities::Tracking::TrackingQuery ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Queries : System.Collections.ObjectModel.Collection&lt;System.Activities.Tracking.TrackingQuery&gt;" Usage="System.Activities.Tracking.TrackingProfile.Queries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

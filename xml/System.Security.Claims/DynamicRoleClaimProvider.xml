@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.DynamicRoleClaimProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicRoleClaimProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicRoleClaimProvider abstract sealed" />
+  <TypeSignature Language="F#" Value="type DynamicRoleClaimProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddDynamicRoleClaims(class System.Security.Claims.ClaimsIdentity claimsIdentity, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.DynamicRoleClaimProvider.AddDynamicRoleClaims(System.Security.Claims.ClaimsIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddDynamicRoleClaims(System::Security::Claims::ClaimsIdentity ^ claimsIdentity, System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
+      <MemberSignature Language="F#" Value="static member AddDynamicRoleClaims : System.Security.Claims.ClaimsIdentity * seq&lt;System.Security.Claims.Claim&gt; -&gt; unit" Usage="System.Security.Claims.DynamicRoleClaimProvider.AddDynamicRoleClaims (claimsIdentity, claims)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

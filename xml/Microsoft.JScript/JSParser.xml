@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSParser" />
   <TypeSignature Language="VB.NET" Value="Public Class JSParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSParser" />
+  <TypeSignature Language="F#" Value="type JSParser = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.Context context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.#ctor(Microsoft.JScript.Context)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSParser(Microsoft::JScript::Context ^ context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JSParser : Microsoft.JScript.Context -&gt; Microsoft.JScript.JSParser" Usage="new Microsoft.JScript.JSParser context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.Parse" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse () As ScriptBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ScriptBlock ^ Parse();" />
+      <MemberSignature Language="F#" Value="member this.Parse : unit -&gt; Microsoft.JScript.ScriptBlock" Usage="jSParser.Parse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.ParseEvalBody" />
       <MemberSignature Language="VB.NET" Value="Public Function ParseEvalBody () As Block" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Block ^ ParseEvalBody();" />
+      <MemberSignature Language="F#" Value="member this.ParseEvalBody : unit -&gt; Microsoft.JScript.Block" Usage="jSParser.ParseEvalBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

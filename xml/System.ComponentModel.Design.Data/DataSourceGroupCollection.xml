@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceGroupCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSourceGroupCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceGroupCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type DataSourceGroupCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.Add(System.ComponentModel.Design.Data.DataSourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As DataSourceGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::Design::Data::DataSourceGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ComponentModel.Design.Data.DataSourceGroup -&gt; int" Usage="dataSourceGroupCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.Contains(System.ComponentModel.Design.Data.DataSourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DataSourceGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::Design::Data::DataSourceGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.ComponentModel.Design.Data.DataSourceGroup -&gt; bool" Usage="dataSourceGroupCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.CopyTo(System.ComponentModel.Design.Data.DataSourceGroup[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataSourceGroup(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::Design::Data::DataSourceGroup ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.ComponentModel.Design.Data.DataSourceGroup[] * int -&gt; unit" Usage="dataSourceGroupCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.IndexOf(System.ComponentModel.Design.Data.DataSourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DataSourceGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::Design::Data::DataSourceGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.ComponentModel.Design.Data.DataSourceGroup -&gt; int" Usage="dataSourceGroupCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.Insert(System.Int32,System.ComponentModel.Design.Data.DataSourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DataSourceGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::Design::Data::DataSourceGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.ComponentModel.Design.Data.DataSourceGroup -&gt; unit" Usage="dataSourceGroupCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroupCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DataSourceGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Data::DataSourceGroup ^ default[int] { System::ComponentModel::Design::Data::DataSourceGroup ^ get(int index); void set(int index, System::ComponentModel::Design::Data::DataSourceGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ComponentModel.Design.Data.DataSourceGroup with get, set" Usage="System.ComponentModel.Design.Data.DataSourceGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroupCollection.Remove(System.ComponentModel.Design.Data.DataSourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DataSourceGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::Design::Data::DataSourceGroup ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ComponentModel.Design.Data.DataSourceGroup -&gt; unit" Usage="dataSourceGroupCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

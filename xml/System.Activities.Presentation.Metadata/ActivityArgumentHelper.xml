@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.ActivityArgumentHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityArgumentHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityArgumentHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type ActivityArgumentHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.ActivityArgumentHelper.RegisterAccessorsGenerator(System.Type,System.Func{System.Activities.Activity,System.Collections.Generic.IEnumerable{System.Activities.Presentation.ArgumentAccessor}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAccessorsGenerator (activityType As Type, argumentAccessorsGenerator As Func(Of Activity, IEnumerable(Of ArgumentAccessor)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAccessorsGenerator(Type ^ activityType, Func&lt;System::Activities::Activity ^, System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::ArgumentAccessor ^&gt; ^&gt; ^ argumentAccessorsGenerator);" />
+      <MemberSignature Language="F#" Value="static member RegisterAccessorsGenerator : Type * Func&lt;System.Activities.Activity, seq&lt;System.Activities.Presentation.ArgumentAccessor&gt;&gt; -&gt; unit" Usage="System.Activities.Presentation.Metadata.ActivityArgumentHelper.RegisterAccessorsGenerator (activityType, argumentAccessorsGenerator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

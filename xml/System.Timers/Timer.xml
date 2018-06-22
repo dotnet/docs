@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Timers.Timer" />
   <TypeSignature Language="VB.NET" Value="Public Class Timer&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class Timer : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type Timer = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -167,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (interval As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(double interval);" />
+      <MemberSignature Language="F#" Value="new System.Timers.Timer : double -&gt; System.Timers.Timer" Usage="new System.Timers.Timer interval" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.AutoReset" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoReset As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoReset { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoReset : bool with get, set" Usage="System.Timers.Timer.AutoReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="timer.BeginInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -321,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="timer.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -358,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="timer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -392,6 +398,7 @@
       <MemberSignature Language="DocId" Value="E:System.Timers.Timer.Elapsed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Elapsed As ElapsedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Timers::ElapsedEventHandler ^ Elapsed;" />
+      <MemberSignature Language="F#" Value="member this.Elapsed : System.Timers.ElapsedEventHandler " Usage="member this.Elapsed : System.Timers.ElapsedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -462,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Timers.Timer.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="timer.EndInit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -580,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Interval : double with get, set" Usage="System.Timers.Timer.Interval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -665,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Timers.Timer.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -702,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="timer.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -752,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="timer.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -814,6 +827,7 @@
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Timers.Timer.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthenticationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationMode" />
+  <TypeSignature Language="F#" Value="type AuthenticationMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Forms" />
       <MemberSignature Language="VB.NET" Value="Forms" />
       <MemberSignature Language="C++ CLI" Value="Forms" />
+      <MemberSignature Language="F#" Value="Forms = 3" Usage="System.Web.Configuration.AuthenticationMode.Forms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Configuration.AuthenticationMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Passport" />
       <MemberSignature Language="VB.NET" Value="Passport" />
       <MemberSignature Language="C++ CLI" Value="Passport" />
+      <MemberSignature Language="F#" Value="Passport = 2" Usage="System.Web.Configuration.AuthenticationMode.Passport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Windows" />
       <MemberSignature Language="VB.NET" Value="Windows" />
       <MemberSignature Language="C++ CLI" Value="Windows" />
+      <MemberSignature Language="F#" Value="Windows = 1" Usage="System.Web.Configuration.AuthenticationMode.Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

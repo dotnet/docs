@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BinaryOp" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BinaryOp&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryOp abstract : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type BinaryOp = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BinaryOp.GetOperator(System.Reflection.IReflect,System.Reflection.IReflect)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetOperator (ir1 As IReflect, ir2 As IReflect) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Reflection::MethodInfo ^ GetOperator(System::Reflection::IReflect ^ ir1, System::Reflection::IReflect ^ ir2);" />
+      <MemberSignature Language="F#" Value="member this.GetOperator : System.Reflection.IReflect * System.Reflection.IReflect -&gt; System.Reflection.MethodInfo" Usage="binaryOp.GetOperator (ir1, ir2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand1" />
       <MemberSignature Language="VB.NET" Value="Protected operand1 As AST " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::AST ^ operand1;" />
+      <MemberSignature Language="F#" Value="val mutable operand1 : Microsoft.JScript.AST" Usage="Microsoft.JScript.BinaryOp.operand1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand2" />
       <MemberSignature Language="VB.NET" Value="Protected operand2 As AST " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::AST ^ operand2;" />
+      <MemberSignature Language="F#" Value="val mutable operand2 : Microsoft.JScript.AST" Usage="Microsoft.JScript.BinaryOp.operand2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorMeth" />
       <MemberSignature Language="VB.NET" Value="Protected operatorMeth As MethodInfo " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Reflection::MethodInfo ^ operatorMeth;" />
+      <MemberSignature Language="F#" Value="val mutable operatorMeth : System.Reflection.MethodInfo" Usage="Microsoft.JScript.BinaryOp.operatorMeth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorTok" />
       <MemberSignature Language="VB.NET" Value="Protected operatorTok As JSToken " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::JSToken operatorTok;" />
+      <MemberSignature Language="F#" Value="val mutable operatorTok : Microsoft.JScript.JSToken" Usage="Microsoft.JScript.BinaryOp.operatorTok" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type1" />
       <MemberSignature Language="VB.NET" Value="Protected type1 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ type1;" />
+      <MemberSignature Language="F#" Value="val mutable type1 : Type" Usage="Microsoft.JScript.BinaryOp.type1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type2" />
       <MemberSignature Language="VB.NET" Value="Protected type2 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ type2;" />
+      <MemberSignature Language="F#" Value="val mutable type2 : Type" Usage="Microsoft.JScript.BinaryOp.type2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IServiceCall" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServiceCall" />
   <TypeSignature Language="C++ CLI" Value="public interface class IServiceCall" />
+  <TypeSignature Language="F#" Value="type IServiceCall = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IServiceCall.OnCall" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCall ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCall();" />
+      <MemberSignature Language="F#" Value="abstract member OnCall : unit -&gt; unit" Usage="iServiceCall.OnCall " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

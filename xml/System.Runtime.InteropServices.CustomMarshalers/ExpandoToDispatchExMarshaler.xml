@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpandoToDispatchExMarshaler&#xA;Implements ICustomMarshaler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpandoToDispatchExMarshaler : System::Runtime::InteropServices::ICustomMarshaler" />
+  <TypeSignature Language="F#" Value="type ExpandoToDispatchExMarshaler = class&#xA;    interface ICustomMarshaler" />
   <AssemblyInfo>
     <AssemblyName>CustomMarshalers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.CleanUpManagedData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CleanUpManagedData (pManagedObj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpManagedData(System::Object ^ pManagedObj);" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpManagedData : obj -&gt; unit&#xA;override this.CleanUpManagedData : obj -&gt; unit" Usage="expandoToDispatchExMarshaler.CleanUpManagedData pManagedObj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -68,6 +70,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.CleanUpNativeData(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CleanUpNativeData (pNativeData As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpNativeData(IntPtr pNativeData);" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpNativeData : nativeint -&gt; unit&#xA;override this.CleanUpNativeData : nativeint -&gt; unit" Usage="expandoToDispatchExMarshaler.CleanUpNativeData pNativeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -98,6 +101,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.GetInstance(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstance (pstrCookie As String) As ICustomMarshaler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::ICustomMarshaler ^ GetInstance(System::String ^ pstrCookie);" />
+      <MemberSignature Language="F#" Value="static member GetInstance : string -&gt; System.Runtime.InteropServices.ICustomMarshaler" Usage="System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.GetInstance pstrCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -131,6 +135,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.GetNativeDataSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNativeDataSize () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetNativeDataSize();" />
+      <MemberSignature Language="F#" Value="abstract member GetNativeDataSize : unit -&gt; int&#xA;override this.GetNativeDataSize : unit -&gt; int" Usage="expandoToDispatchExMarshaler.GetNativeDataSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -159,6 +164,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MarshalManagedToNative (pManagedObj As Object) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr MarshalManagedToNative(System::Object ^ pManagedObj);" />
+      <MemberSignature Language="F#" Value="abstract member MarshalManagedToNative : obj -&gt; nativeint&#xA;override this.MarshalManagedToNative : obj -&gt; nativeint" Usage="expandoToDispatchExMarshaler.MarshalManagedToNative pManagedObj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -192,6 +198,7 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalNativeToManaged(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MarshalNativeToManaged (pNativeData As IntPtr) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ MarshalNativeToManaged(IntPtr pNativeData);" />
+      <MemberSignature Language="F#" Value="abstract member MarshalNativeToManaged : nativeint -&gt; obj&#xA;override this.MarshalNativeToManaged : nativeint -&gt; obj" Usage="expandoToDispatchExMarshaler.MarshalNativeToManaged pNativeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>

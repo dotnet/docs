@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationSummaryDisplayMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationSummaryDisplayMode" />
+  <TypeSignature Language="F#" Value="type ValidationSummaryDisplayMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.BulletList" />
       <MemberSignature Language="VB.NET" Value="BulletList" />
       <MemberSignature Language="C++ CLI" Value="BulletList" />
+      <MemberSignature Language="F#" Value="BulletList = 1" Usage="System.Web.UI.WebControls.ValidationSummaryDisplayMode.BulletList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="C++ CLI" Value="List" />
+      <MemberSignature Language="F#" Value="List = 0" Usage="System.Web.UI.WebControls.ValidationSummaryDisplayMode.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.SingleParagraph" />
       <MemberSignature Language="VB.NET" Value="SingleParagraph" />
       <MemberSignature Language="C++ CLI" Value="SingleParagraph" />
+      <MemberSignature Language="F#" Value="SingleParagraph = 2" Usage="System.Web.UI.WebControls.ValidationSummaryDisplayMode.SingleParagraph" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SizeGripStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum SizeGripStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class SizeGripStyle" />
+  <TypeSignature Language="F#" Value="type SizeGripStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeGripStyle.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Forms.SizeGripStyle.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeGripStyle.Hide" />
       <MemberSignature Language="VB.NET" Value="Hide" />
       <MemberSignature Language="C++ CLI" Value="Hide" />
+      <MemberSignature Language="F#" Value="Hide = 2" Usage="System.Windows.Forms.SizeGripStyle.Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeGripStyle.Show" />
       <MemberSignature Language="VB.NET" Value="Show" />
       <MemberSignature Language="C++ CLI" Value="Show" />
+      <MemberSignature Language="F#" Value="Show = 1" Usage="System.Windows.Forms.SizeGripStyle.Show" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

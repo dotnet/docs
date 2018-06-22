@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.WindowsFormsDesignerOptionService" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsFormsDesignerOptionService&#xA;Inherits DesignerOptionService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsDesignerOptionService : System::ComponentModel::Design::DesignerOptionService" />
+  <TypeSignature Language="F#" Value="type WindowsFormsDesignerOptionService = class&#xA;    inherit DesignerOptionService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.WindowsFormsDesignerOptionService.CompatibilityOptions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CompatibilityOptions As DesignerOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Design::DesignerOptions ^ CompatibilityOptions { System::Windows::Forms::Design::DesignerOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompatibilityOptions : System.Windows.Forms.Design.DesignerOptions" Usage="System.Windows.Forms.Design.WindowsFormsDesignerOptionService.CompatibilityOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsDesignerOptionService.PopulateOptionCollection(System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PopulateOptionCollection (options As DesignerOptionService.DesignerOptionCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PopulateOptionCollection(System::ComponentModel::Design::DesignerOptionService::DesignerOptionCollection ^ options);" />
+      <MemberSignature Language="F#" Value="abstract member PopulateOptionCollection : System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection -&gt; unit&#xA;override this.PopulateOptionCollection : System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection -&gt; unit" Usage="windowsFormsDesignerOptionService.PopulateOptionCollection options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintPreviewDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintPreviewDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintPreviewDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type PrintPreviewDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AcceptButton" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptButton As IButtonControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IButtonControl ^ AcceptButton { System::Windows::Forms::IButtonControl ^ get(); void set(System::Windows::Forms::IButtonControl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptButton : System.Windows.Forms.IButtonControl with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AcceptButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AccessibleDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessibleDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessibleDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibleDescription : string with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AccessibleDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AccessibleName" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessibleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccessibleName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibleName : string with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AccessibleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AccessibleRole" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessibleRole As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AccessibleRole AccessibleRole { System::Windows::Forms::AccessibleRole get(); void set(System::Windows::Forms::AccessibleRole value); };" />
+      <MemberSignature Language="F#" Value="member this.AccessibleRole : System.Windows.Forms.AccessibleRole with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AccessibleRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AllowDrop" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowDrop : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AllowDrop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Anchor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Anchor As AnchorStyles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AnchorStyles Anchor { System::Windows::Forms::AnchorStyles get(); void set(System::Windows::Forms::AnchorStyles value); };" />
+      <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Forms.AnchorStyles with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Anchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoScale" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScale As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoScale { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScale : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoScaleBaseSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScaleBaseSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size AutoScaleBaseSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleBaseSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoScaleBaseSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -431,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoScrollMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoScrollMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -468,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoScrollMinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoScrollMinSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -503,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -544,6 +557,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -578,6 +592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.AutoValidate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoValidate As AutoValidate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoValidate AutoValidate { System::Windows::Forms::AutoValidate get(); void set(System::Windows::Forms::AutoValidate value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoValidate : System.Windows.Forms.AutoValidate with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.AutoValidate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,6 +628,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.AutoValidateChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoValidateChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoValidateChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoValidateChanged : EventHandler " Usage="member this.AutoValidateChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -647,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -682,6 +699,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.BackColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -716,6 +734,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -751,6 +770,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -785,6 +805,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -820,6 +841,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -854,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.CancelButton" />
       <MemberSignature Language="VB.NET" Value="Public Property CancelButton As IButtonControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IButtonControl ^ CancelButton { System::Windows::Forms::IButtonControl ^ get(); void set(System::Windows::Forms::IButtonControl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButton : System.Windows.Forms.IButtonControl with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.CancelButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -889,6 +912,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -918,6 +942,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.CausesValidationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CausesValidationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -952,6 +977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenu As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenu ^ ContextMenu { System::Windows::Forms::ContextMenu ^ get(); void set(System::Windows::Forms::ContextMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Forms.ContextMenu with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -987,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.ContextMenuChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1021,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ContextMenuStrip" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenuStrip As ContextMenuStrip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ContextMenuStrip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1056,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.ContextMenuStripChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuStripChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1090,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ControlBox" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlBox : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ControlBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1129,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewDialog.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="printPreviewDialog.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1158,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1193,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1227,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.DataBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBindings As ControlBindingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ControlBindingsCollection ^ DataBindings { System::Windows::Forms::ControlBindingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBindings : System.Windows.Forms.ControlBindingsCollection" Usage="System.Windows.Forms.PrintPreviewDialog.DataBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1264,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.DefaultMinimumSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultMinimumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultMinimumSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMinimumSize : System.Drawing.Size" Usage="System.Windows.Forms.PrintPreviewDialog.DefaultMinimumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1291,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Dock" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Dock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1326,6 +1362,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.DockChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DockChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1360,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.DockPadding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPadding As ScrollableControl.DockPaddingEdges" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ DockPadding { System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DockPadding : System.Windows.Forms.ScrollableControl.DockPaddingEdges" Usage="System.Windows.Forms.PrintPreviewDialog.DockPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1395,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Document" />
       <MemberSignature Language="VB.NET" Value="Public Property Document As PrintDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ Document { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1428,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1464,6 +1504,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EnabledChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1500,6 +1541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1535,6 +1577,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1569,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1604,6 +1648,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1640,6 +1685,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.FormBorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FormBorderStyle As FormBorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormBorderStyle FormBorderStyle { System::Windows::Forms::FormBorderStyle get(); void set(System::Windows::Forms::FormBorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FormBorderStyle : System.Windows.Forms.FormBorderStyle with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.FormBorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1678,6 +1724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.HelpButton" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpButton : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.HelpButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1718,6 +1765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1755,6 +1803,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ImeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1791,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1827,6 +1877,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.IsMdiContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMdiContainer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMdiContainer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMdiContainer : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.IsMdiContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1865,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.KeyPreview" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyPreview As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeyPreview { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyPreview : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.KeyPreview" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1908,6 +1960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1946,6 +1999,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LocationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1980,6 +2034,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Margin" />
       <MemberSignature Language="VB.NET" Value="Public Property Margin As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Margin { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Margin : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Margin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2015,6 +2070,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.MarginChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MarginChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2049,6 +2105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.MaximizeBox" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximizeBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaximizeBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximizeBox : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.MaximizeBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2092,6 +2149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.MaximumSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.MaximumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2130,6 +2188,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.MaximumSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MaximumSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MaximumSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.MaximumSizeChanged : EventHandler " Usage="member this.MaximumSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2166,6 +2225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Menu" />
       <MemberSignature Language="VB.NET" Value="Public Property Menu As MainMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MainMenu ^ Menu { System::Windows::Forms::MainMenu ^ get(); void set(System::Windows::Forms::MainMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Menu : System.Windows.Forms.MainMenu with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Menu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2203,6 +2263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.MinimizeBox" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimizeBox As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MinimizeBox { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimizeBox : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.MinimizeBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2247,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.MinimumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2288,6 +2350,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.MinimumSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MinimumSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MinimumSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.MinimumSizeChanged : EventHandler " Usage="member this.MinimumSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2324,6 +2387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewDialog.OnClosing(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosing (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosing(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="printPreviewDialog.OnClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2363,6 +2427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Opacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2400,6 +2465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2435,6 +2501,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2469,6 +2536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.PrintPreviewControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintPreviewControl As PrintPreviewControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::PrintPreviewControl ^ PrintPreviewControl { System::Windows::Forms::PrintPreviewControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrintPreviewControl : System.Windows.Forms.PrintPreviewControl" Usage="System.Windows.Forms.PrintPreviewDialog.PrintPreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2495,6 +2563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewDialog.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="printPreviewDialog.ProcessDialogKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2528,6 +2597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewDialog.ProcessTabKey(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessTabKey (forward As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessTabKey(bool forward);" />
+      <MemberSignature Language="F#" Value="override this.ProcessTabKey : bool -&gt; bool" Usage="printPreviewDialog.ProcessTabKey forward" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2558,6 +2628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.RightToLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2593,6 +2664,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2629,6 +2701,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2667,6 +2740,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2703,6 +2777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.ShowInTaskbar" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowInTaskbar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInTaskbar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowInTaskbar : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.ShowInTaskbar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2746,6 +2821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2783,6 +2859,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.SizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2819,6 +2896,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.SizeGripStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeGripStyle As SizeGripStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SizeGripStyle SizeGripStyle { System::Windows::Forms::SizeGripStyle get(); void set(System::Windows::Forms::SizeGripStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeGripStyle : System.Windows.Forms.SizeGripStyle with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.SizeGripStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2857,6 +2935,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.StartPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPosition As FormStartPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormStartPosition StartPosition { System::Windows::Forms::FormStartPosition get(); void set(System::Windows::Forms::FormStartPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.StartPosition : System.Windows.Forms.FormStartPosition with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.StartPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2893,6 +2972,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.TabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2931,6 +3011,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2967,6 +3048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3004,6 +3086,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3039,6 +3122,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3075,6 +3159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.TopMost" />
       <MemberSignature Language="VB.NET" Value="Public Property TopMost As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TopMost { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TopMost : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.TopMost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3113,6 +3198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.TransparencyKey" />
       <MemberSignature Language="VB.NET" Value="Public Property TransparencyKey As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TransparencyKey { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.TransparencyKey : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.TransparencyKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3150,6 +3236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.UseAntiAlias" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAntiAlias As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAntiAlias { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseAntiAlias : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.UseAntiAlias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3189,6 +3276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.UseWaitCursor" />
       <MemberSignature Language="VB.NET" Value="Public Property UseWaitCursor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseWaitCursor { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseWaitCursor : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.UseWaitCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3225,6 +3313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3255,6 +3344,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewDialog.VisibleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event VisibleChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3291,6 +3381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewDialog.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As FormWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormWindowState WindowState { System::Windows::Forms::FormWindowState get(); void set(System::Windows::Forms::FormWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : System.Windows.Forms.FormWindowState with get, set" Usage="System.Windows.Forms.PrintPreviewDialog.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

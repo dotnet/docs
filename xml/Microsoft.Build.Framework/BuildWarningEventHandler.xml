@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildWarningEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildWarningEventHandler(sender As Object, e As BuildWarningEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildWarningEventHandler(System::Object ^ sender, BuildWarningEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type BuildWarningEventHandler = delegate of obj * BuildWarningEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

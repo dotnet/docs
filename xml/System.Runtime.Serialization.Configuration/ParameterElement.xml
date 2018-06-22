@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.ParameterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParameterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ParameterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElement.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterElement(int index);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Configuration.ParameterElement : int -&gt; System.Runtime.Serialization.Configuration.ParameterElement" Usage="new System.Runtime.Serialization.Configuration.ParameterElement index" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterElement(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Configuration.ParameterElement : string -&gt; System.Runtime.Serialization.Configuration.ParameterElement" Usage="new System.Runtime.Serialization.Configuration.ParameterElement typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElement.Index" />
       <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="System.Runtime.Serialization.Configuration.ParameterElement.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElement.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ParameterElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Configuration::ParameterElementCollection ^ Parameters { System::Runtime::Serialization::Configuration::ParameterElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Runtime.Serialization.Configuration.ParameterElementCollection" Usage="System.Runtime.Serialization.Configuration.ParameterElement.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="parameterElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElement.PreSerialize(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreSerialize (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreSerialize(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.PreSerialize : System.Xml.XmlWriter -&gt; unit" Usage="parameterElement.PreSerialize writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Runtime.Serialization.Configuration.ParameterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Runtime.Serialization.Configuration.ParameterElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Clipboard" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Clipboard" />
   <TypeSignature Language="C++ CLI" Value="public ref class Clipboard sealed" />
+  <TypeSignature Language="F#" Value="type Clipboard = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear();" />
+      <MemberSignature Language="F#" Value="static member Clear : unit -&gt; unit" Usage="System.Windows.Forms.Clipboard.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsAudio" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsAudio () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsAudio();" />
+      <MemberSignature Language="F#" Value="static member ContainsAudio : unit -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsAudio " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsData (format As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsData(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member ContainsData : string -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsFileDropList () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsFileDropList();" />
+      <MemberSignature Language="F#" Value="static member ContainsFileDropList : unit -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsFileDropList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsImage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsImage () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsImage();" />
+      <MemberSignature Language="F#" Value="static member ContainsImage : unit -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsText" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsText () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsText();" />
+      <MemberSignature Language="F#" Value="static member ContainsText : unit -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsText (format As TextDataFormat) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsText(System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="static member ContainsText : System.Windows.Forms.TextDataFormat -&gt; bool" Usage="System.Windows.Forms.Clipboard.ContainsText format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -411,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetAudioStream" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAudioStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ GetAudioStream();" />
+      <MemberSignature Language="F#" Value="static member GetAudioStream : unit -&gt; System.IO.Stream" Usage="System.Windows.Forms.Clipboard.GetAudioStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -459,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (format As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member GetData : string -&gt; obj" Usage="System.Windows.Forms.Clipboard.GetData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataObject () As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::IDataObject ^ GetDataObject();" />
+      <MemberSignature Language="F#" Value="static member GetDataObject : unit -&gt; System.Windows.Forms.IDataObject" Usage="System.Windows.Forms.Clipboard.GetDataObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -567,6 +578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileDropList () As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::StringCollection ^ GetFileDropList();" />
+      <MemberSignature Language="F#" Value="static member GetFileDropList : unit -&gt; System.Collections.Specialized.StringCollection" Usage="System.Windows.Forms.Clipboard.GetFileDropList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -619,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetImage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetImage () As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ GetImage();" />
+      <MemberSignature Language="F#" Value="static member GetImage : unit -&gt; System.Drawing.Image" Usage="System.Windows.Forms.Clipboard.GetImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -679,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetText" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetText () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetText();" />
+      <MemberSignature Language="F#" Value="static member GetText : unit -&gt; string" Usage="System.Windows.Forms.Clipboard.GetText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -728,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetText (format As TextDataFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetText(System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="static member GetText : System.Windows.Forms.TextDataFormat -&gt; string" Usage="System.Windows.Forms.Clipboard.GetText format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -792,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetAudio(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAudio (audioBytes As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAudio(cli::array &lt;System::Byte&gt; ^ audioBytes);" />
+      <MemberSignature Language="F#" Value="static member SetAudio : byte[] -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetAudio audioBytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -841,6 +857,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetAudio(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAudio (audioStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAudio(System::IO::Stream ^ audioStream);" />
+      <MemberSignature Language="F#" Value="static member SetAudio : System.IO.Stream -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetAudio audioStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -890,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetData (format As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetData(System::String ^ format, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="static member SetData : string * obj -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetData (format, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDataObject (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDataObject(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="static member SetDataObject : obj -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetDataObject data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1012,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDataObject (data As Object, copy As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDataObject(System::Object ^ data, bool copy);" />
+      <MemberSignature Language="F#" Value="static member SetDataObject : obj * bool -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetDataObject (data, copy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1075,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object,System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDataObject (data As Object, copy As Boolean, retryTimes As Integer, retryDelay As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDataObject(System::Object ^ data, bool copy, int retryTimes, int retryDelay);" />
+      <MemberSignature Language="F#" Value="static member SetDataObject : obj * bool * int * int -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetDataObject (data, copy, retryTimes, retryDelay)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1134,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFileDropList (filePaths As StringCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFileDropList(System::Collections::Specialized::StringCollection ^ filePaths);" />
+      <MemberSignature Language="F#" Value="static member SetFileDropList : System.Collections.Specialized.StringCollection -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetFileDropList filePaths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1195,6 +1217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImage(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetImage(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetImage(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="static member SetImage : System.Drawing.Image -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetImage image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1256,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member SetText : string -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1307,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetText (text As String, format As TextDataFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetText(System::String ^ text, System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="static member SetText : string * System.Windows.Forms.TextDataFormat -&gt; unit" Usage="System.Windows.Forms.Clipboard.SetText (text, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

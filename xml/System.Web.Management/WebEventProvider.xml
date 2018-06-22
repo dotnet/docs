@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebEventProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebEventProvider abstract : System::Configuration::Provider::ProviderBase" />
+  <TypeSignature Language="F#" Value="type WebEventProvider = class&#xA;    inherit ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Flush" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="webEventProvider.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessEvent (raisedEvent As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessEvent(System::Web::Management::WebBaseEvent ^ raisedEvent);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="webEventProvider.ProcessEvent raisedEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="webEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

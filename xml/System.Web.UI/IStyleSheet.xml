@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IStyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStyleSheet" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStyleSheet" />
+  <TypeSignature Language="F#" Value="type IStyleSheet = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateStyleRule(class System.Web.UI.WebControls.Style style, class System.Web.UI.IUrlResolutionService urlResolver, string selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStyleSheet.CreateStyleRule(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateStyleRule(System::Web::UI::WebControls::Style ^ style, System::Web::UI::IUrlResolutionService ^ urlResolver, System::String ^ selector);" />
+      <MemberSignature Language="F#" Value="abstract member CreateStyleRule : System.Web.UI.WebControls.Style * System.Web.UI.IUrlResolutionService * string -&gt; unit" Usage="iStyleSheet.CreateStyleRule (style, urlResolver, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterStyle(class System.Web.UI.WebControls.Style style, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStyleSheet.RegisterStyle(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterStyle(System::Web::UI::WebControls::Style ^ style, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterStyle : System.Web.UI.WebControls.Style * System.Web.UI.IUrlResolutionService -&gt; unit" Usage="iStyleSheet.RegisterStyle (style, urlResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

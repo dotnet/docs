@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildTemplateMethod" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildTemplateMethod(control As Control)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildTemplateMethod(Control ^ control);" />
+  <TypeSignature Language="F#" Value="type BuildTemplateMethod = delegate of Control -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

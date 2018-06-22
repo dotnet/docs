@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ScopingExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ScopingExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScopingExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ScopingExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadata``1(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ContainsPartMetadata(Of T) (part As ComposablePartDefinition, key As String, value As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool ContainsPartMetadata(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::String ^ key, T value);" />
+      <MemberSignature Language="F#" Value="static member ContainsPartMetadata : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * string * 'T -&gt; bool" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadata (part, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadataWithKey(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ContainsPartMetadataWithKey (part As ComposablePartDefinition, key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool ContainsPartMetadataWithKey(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="static member ContainsPartMetadataWithKey : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * string -&gt; bool" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadataWithKey (part, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Exports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Exports (part As ComposablePartDefinition, contractName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Exports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="static member Exports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * string -&gt; bool" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.Exports (part, contractName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Filter(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Func{System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Filter (catalog As ComposablePartCatalog, filter As Func(Of ComposablePartDefinition, Boolean)) As FilteredCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::ComponentModel::Composition::Hosting::FilteredCatalog ^ Filter(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ catalog, Func&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^, bool&gt; ^ filter);" />
+      <MemberSignature Language="F#" Value="static member Filter : System.ComponentModel.Composition.Primitives.ComposablePartCatalog * Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition, bool&gt; -&gt; System.ComponentModel.Composition.Hosting.FilteredCatalog" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.Filter (catalog, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Imports (part As ComposablePartDefinition, contractName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * string -&gt; bool" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports (part, contractName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Imports(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality importCardinality) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String,System.ComponentModel.Composition.Primitives.ImportCardinality)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Imports(System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^ part, System::String ^ contractName, System::ComponentModel::Composition::Primitives::ImportCardinality importCardinality);" />
+      <MemberSignature Language="F#" Value="static member Imports : System.ComponentModel.Composition.Primitives.ComposablePartDefinition * string * System.ComponentModel.Composition.Primitives.ImportCardinality -&gt; bool" Usage="System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports (part, contractName, importCardinality)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

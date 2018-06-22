@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeCompiler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeCompiler&#xA;Inherits CodeGenerator&#xA;Implements ICodeCompiler" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeCompiler abstract : System::CodeDom::Compiler::CodeGenerator, System::CodeDom::Compiler::ICodeCompiler" />
+  <TypeSignature Language="F#" Value="type CodeCompiler = class&#xA;    inherit CodeGenerator&#xA;    interface ICodeCompiler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.CmdArgsFromParameters(System.CodeDom.Compiler.CompilerParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CmdArgsFromParameters (options As CompilerParameters) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CmdArgsFromParameters(System::CodeDom::Compiler::CompilerParameters ^ options);" />
+      <MemberSignature Language="F#" Value="abstract member CmdArgsFromParameters : System.CodeDom.Compiler.CompilerParameters -&gt; string" Usage="codeCompiler.CmdArgsFromParameters options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeCompiler.CompilerName" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property CompilerName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ CompilerName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompilerName : string" Usage="System.CodeDom.Compiler.CodeCompiler.CompilerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeCompiler.FileExtension" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property FileExtension As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ FileExtension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileExtension : string" Usage="System.CodeDom.Compiler.CodeCompiler.FileExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromDom (options As CompilerParameters, e As CodeCompileUnit) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromDom(System::CodeDom::Compiler::CompilerParameters ^ options, System::CodeDom::CodeCompileUnit ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member FromDom : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromDom : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromDom (options, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromDomBatch(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromDomBatch (options As CompilerParameters, ea As CodeCompileUnit()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromDomBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::CodeDom::CodeCompileUnit ^&gt; ^ ea);" />
+      <MemberSignature Language="F#" Value="abstract member FromDomBatch : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit[] -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromDomBatch : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromDomBatch (options, ea)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromFile(System.CodeDom.Compiler.CompilerParameters,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromFile (options As CompilerParameters, fileName As String) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromFile(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member FromFile : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromFile : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromFile (options, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromFileBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromFileBatch (options As CompilerParameters, fileNames As String()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromFileBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ fileNames);" />
+      <MemberSignature Language="F#" Value="abstract member FromFileBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromFileBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromFileBatch (options, fileNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromSource(System.CodeDom.Compiler.CompilerParameters,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromSource (options As CompilerParameters, source As String) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromSource(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member FromSource : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromSource : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromSource (options, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -348,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.FromSourceBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FromSourceBatch (options As CompilerParameters, sources As String()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::Compiler::CompilerResults ^ FromSourceBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="abstract member FromSourceBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults&#xA;override this.FromSourceBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="codeCompiler.FromSourceBatch (options, sources)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.GetResponseFileCmdArgs(System.CodeDom.Compiler.CompilerParameters,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetResponseFileCmdArgs (options As CompilerParameters, cmdArgs As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetResponseFileCmdArgs(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ cmdArgs);" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseFileCmdArgs : System.CodeDom.Compiler.CompilerParameters * string -&gt; string&#xA;override this.GetResponseFileCmdArgs : System.CodeDom.Compiler.CompilerParameters * string -&gt; string" Usage="codeCompiler.GetResponseFileCmdArgs (options, cmdArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -422,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.JoinStringArray(System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function JoinStringArray (sa As String(), separator As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ JoinStringArray(cli::array &lt;System::String ^&gt; ^ sa, System::String ^ separator);" />
+      <MemberSignature Language="F#" Value="static member JoinStringArray : string[] * string -&gt; string" Usage="System.CodeDom.Compiler.CodeCompiler.JoinStringArray (sa, separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -453,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeCompiler.ProcessCompilerOutputLine(System.CodeDom.Compiler.CompilerResults,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub ProcessCompilerOutputLine (results As CompilerResults, line As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ProcessCompilerOutputLine(System::CodeDom::Compiler::CompilerResults ^ results, System::String ^ line);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCompilerOutputLine : System.CodeDom.Compiler.CompilerResults * string -&gt; unit" Usage="codeCompiler.ProcessCompilerOutputLine (results, line)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

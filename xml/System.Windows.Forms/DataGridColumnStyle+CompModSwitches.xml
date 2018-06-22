@@ -42,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.CompModSwitches.DGEditColumnEditing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DGEditColumnEditing As TraceSwitch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::TraceSwitch ^ DGEditColumnEditing { System::Diagnostics::TraceSwitch ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DGEditColumnEditing : System.Diagnostics.TraceSwitch" Usage="System.Windows.Forms.DataGridColumnStyle.CompModSwitches.DGEditColumnEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

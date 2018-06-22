@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BasicHttpsSecurityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BasicHttpsSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpsSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type BasicHttpsSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsSecurityElement.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As BasicHttpMessageSecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BasicHttpMessageSecurityElement ^ Message { System::ServiceModel::Configuration::BasicHttpMessageSecurityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Configuration.BasicHttpMessageSecurityElement" Usage="System.ServiceModel.Configuration.BasicHttpsSecurityElement.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsSecurityElement.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As BasicHttpsSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpsSecurityMode Mode { System::ServiceModel::BasicHttpsSecurityMode get(); void set(System::ServiceModel::BasicHttpsSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.BasicHttpsSecurityMode with get, set" Usage="System.ServiceModel.Configuration.BasicHttpsSecurityElement.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsSecurityElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BasicHttpsSecurityElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BasicHttpsSecurityElement.Transport" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As HttpTransportSecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::HttpTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::HttpTransportSecurityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.HttpTransportSecurityElement" Usage="System.ServiceModel.Configuration.BasicHttpsSecurityElement.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

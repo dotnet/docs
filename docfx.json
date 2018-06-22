@@ -61,8 +61,7 @@
         "api/**.yml": ".net"
       },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"],
-        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
+        "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"

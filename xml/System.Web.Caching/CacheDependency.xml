@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheDependency" />
   <TypeSignature Language="VB.NET" Value="Public Class CacheDependency&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CacheDependency : IDisposable" />
+  <TypeSignature Language="F#" Value="type CacheDependency = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency filename" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency filenames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, start As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(System::String ^ filename, DateTime start);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string * DateTime -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filename, start)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), start As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, DateTime start);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] * DateTime -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filenames, start)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] * string[] -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filenames, cachekeys)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), start As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, DateTime start);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] * string[] * DateTime -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filenames, cachekeys, start)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), dependency As CacheDependency)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, System::Web::Caching::CacheDependency ^ dependency);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] * string[] * System.Web.Caching.CacheDependency -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filenames, cachekeys, dependency)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), dependency As CacheDependency, start As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, System::Web::Caching::CacheDependency ^ dependency, DateTime start);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.CacheDependency : string[] * string[] * System.Web.Caching.CacheDependency * DateTime -&gt; System.Web.Caching.CacheDependency" Usage="new System.Web.Caching.CacheDependency (filenames, cachekeys, dependency, start)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.DependencyDispose" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DependencyDispose ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DependencyDispose();" />
+      <MemberSignature Language="F#" Value="abstract member DependencyDispose : unit -&gt; unit&#xA;override this.DependencyDispose : unit -&gt; unit" Usage="cacheDependency.DependencyDispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -480,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cacheDependency.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.FinishInit" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub FinishInit ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void FinishInit();" />
+      <MemberSignature Language="F#" Value="member this.FinishInit : unit -&gt; unit" Usage="cacheDependency.FinishInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.GetFileDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileDependencies () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetFileDependencies();" />
+      <MemberSignature Language="F#" Value="abstract member GetFileDependencies : unit -&gt; string[]&#xA;override this.GetFileDependencies : unit -&gt; string[]" Usage="cacheDependency.GetFileDependencies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.GetUniqueID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUniqueID () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetUniqueID();" />
+      <MemberSignature Language="F#" Value="abstract member GetUniqueID : unit -&gt; string&#xA;override this.GetUniqueID : unit -&gt; string" Usage="cacheDependency.GetUniqueID " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -594,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheDependency.HasChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChanged As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChanged { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChanged : bool" Usage="System.Web.Caching.CacheDependency.HasChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -632,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.ItemRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Sub ItemRemoved ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ItemRemoved();" />
+      <MemberSignature Language="F#" Value="member this.ItemRemoved : unit -&gt; unit" Usage="cacheDependency.ItemRemoved " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -652,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.KeepDependenciesAlive" />
       <MemberSignature Language="VB.NET" Value="Public Sub KeepDependenciesAlive ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void KeepDependenciesAlive();" />
+      <MemberSignature Language="F#" Value="member this.KeepDependenciesAlive : unit -&gt; unit" Usage="cacheDependency.KeepDependenciesAlive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -672,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.NotifyDependencyChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub NotifyDependencyChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void NotifyDependencyChanged(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.NotifyDependencyChanged : obj * EventArgs -&gt; unit" Usage="cacheDependency.NotifyDependencyChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -715,6 +733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.SetCacheDependencyChanged(System.Action{System.Object,System.EventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCacheDependencyChanged (dependencyChangedAction As Action(Of Object, EventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCacheDependencyChanged(Action&lt;System::Object ^, EventArgs ^&gt; ^ dependencyChangedAction);" />
+      <MemberSignature Language="F#" Value="member this.SetCacheDependencyChanged : Action&lt;obj, EventArgs&gt; -&gt; unit" Usage="cacheDependency.SetCacheDependencyChanged dependencyChangedAction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -738,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.SetUtcLastModified(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetUtcLastModified (utcLastModified As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetUtcLastModified(DateTime utcLastModified);" />
+      <MemberSignature Language="F#" Value="member this.SetUtcLastModified : DateTime -&gt; unit" Usage="cacheDependency.SetUtcLastModified utcLastModified" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -772,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.TakeOwnership" />
       <MemberSignature Language="VB.NET" Value="Public Function TakeOwnership () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TakeOwnership();" />
+      <MemberSignature Language="F#" Value="member this.TakeOwnership : unit -&gt; bool" Usage="cacheDependency.TakeOwnership " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -802,6 +823,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheDependency.UtcLastModified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UtcLastModified As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime UtcLastModified { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.UtcLastModified : DateTime" Usage="System.Web.Caching.CacheDependency.UtcLastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

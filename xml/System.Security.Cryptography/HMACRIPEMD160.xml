@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACRIPEMD160" />
   <TypeSignature Language="VB.NET" Value="Public Class HMACRIPEMD160&#xA;Inherits HMAC" />
   <TypeSignature Language="C++ CLI" Value="public ref class HMACRIPEMD160 : System::Security::Cryptography::HMAC" />
+  <TypeSignature Language="F#" Value="type HMACRIPEMD160 = class&#xA;    inherit HMAC" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACRIPEMD160.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACRIPEMD160(cli::array &lt;System::Byte&gt; ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACRIPEMD160 : byte[] -&gt; System.Security.Cryptography.HMACRIPEMD160" Usage="new System.Security.Cryptography.HMACRIPEMD160 key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

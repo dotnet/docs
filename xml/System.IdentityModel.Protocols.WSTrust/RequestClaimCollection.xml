@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestClaimCollection&#xA;Inherits Collection(Of RequestClaim)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestClaimCollection : System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Protocols::WSTrust::RequestClaim ^&gt;" />
+  <TypeSignature Language="F#" Value="type RequestClaimCollection = class&#xA;    inherit Collection&lt;RequestClaim&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.Dialect" />
       <MemberSignature Language="VB.NET" Value="Public Property Dialect As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dialect { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Dialect : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.Dialect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

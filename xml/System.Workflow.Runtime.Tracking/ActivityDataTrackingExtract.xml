@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDataTrackingExtract&#xA;Inherits TrackingExtract" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDataTrackingExtract : System::Workflow::Runtime::Tracking::TrackingExtract" />
+  <TypeSignature Language="F#" Value="type ActivityDataTrackingExtract = class&#xA;    inherit TrackingExtract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDataTrackingExtract(System::String ^ member);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract : string -&gt; System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract" Usage="new System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract member" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Annotations As TrackingAnnotationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ Annotations { System::Workflow::Runtime::Tracking::TrackingAnnotationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" Usage="System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

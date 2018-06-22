@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Activity" />
   <TypeSignature Language="VB.NET" Value="Public Class Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Activity" />
+  <TypeSignature Language="F#" Value="type Activity = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Activity(System::String ^ operationName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Activity : string -&gt; System.Diagnostics.Activity" Usage="new System.Diagnostics.Activity operationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.AddBaggage(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddBaggage (key As String, value As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ AddBaggage(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddBaggage : string * string -&gt; System.Diagnostics.Activity" Usage="activity.AddBaggage (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.AddTag(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddTag (key As String, value As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ AddTag(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddTag : string * string -&gt; System.Diagnostics.Activity" Usage="activity.AddTag (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Baggage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Baggage As IEnumerable(Of KeyValuePair(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ Baggage { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Baggage : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt;" Usage="System.Diagnostics.Activity.Baggage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::Activity ^ Current { System::Diagnostics::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Diagnostics.Activity" Usage="System.Diagnostics.Activity.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Duration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan" Usage="System.Diagnostics.Activity.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.GetBaggageItem(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBaggageItem (key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetBaggageItem(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.GetBaggageItem : string -&gt; string" Usage="activity.GetBaggageItem key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Diagnostics.Activity.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -217,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.OperationName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OperationName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperationName : string" Usage="System.Diagnostics.Activity.OperationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Activity ^ Parent { System::Diagnostics::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Diagnostics.Activity" Usage="System.Diagnostics.Activity.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -261,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.ParentId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParentId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentId : string" Usage="System.Diagnostics.Activity.ParentId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -283,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.RootId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootId : string" Usage="System.Diagnostics.Activity.RootId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -305,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEndTime (endTimeUtc As DateTime) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ SetEndTime(DateTime endTimeUtc);" />
+      <MemberSignature Language="F#" Value="member this.SetEndTime : DateTime -&gt; System.Diagnostics.Activity" Usage="activity.SetEndTime endTimeUtc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -331,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.SetParentId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetParentId (parentId As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ SetParentId(System::String ^ parentId);" />
+      <MemberSignature Language="F#" Value="member this.SetParentId : string -&gt; System.Diagnostics.Activity" Usage="activity.SetParentId parentId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -357,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.SetStartTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetStartTime (startTimeUtc As DateTime) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ SetStartTime(DateTime startTimeUtc);" />
+      <MemberSignature Language="F#" Value="member this.SetStartTime : DateTime -&gt; System.Diagnostics.Activity" Usage="activity.SetStartTime startTimeUtc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -383,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.Start" />
       <MemberSignature Language="VB.NET" Value="Public Function Start () As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Activity ^ Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; System.Diagnostics.Activity" Usage="activity.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -406,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.StartTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTimeUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTimeUtc { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartTimeUtc : DateTime" Usage="System.Diagnostics.Activity.StartTimeUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -428,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="activity.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -450,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Tags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tags As IEnumerable(Of KeyValuePair(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ Tags { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tags : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt;" Usage="System.Diagnostics.Activity.Tags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>

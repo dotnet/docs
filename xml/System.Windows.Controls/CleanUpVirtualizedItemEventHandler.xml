@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CleanUpVirtualizedItemEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CleanUpVirtualizedItemEventHandler(sender As Object, e As CleanUpVirtualizedItemEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CleanUpVirtualizedItemEventHandler(System::Object ^ sender, CleanUpVirtualizedItemEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CleanUpVirtualizedItemEventHandler = delegate of obj * CleanUpVirtualizedItemEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

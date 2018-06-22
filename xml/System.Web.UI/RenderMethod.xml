@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RenderMethod" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RenderMethod(output As HtmlTextWriter, container As Control)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RenderMethod(HtmlTextWriter ^ output, Control ^ container);" />
+  <TypeSignature Language="F#" Value="type RenderMethod = delegate of HtmlTextWriter * Control -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

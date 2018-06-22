@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.Type3Message" />
   <TypeSignature Language="VB.NET" Value="Public Class Type3Message&#xA;Inherits MessageBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Type3Message : Mono::Security::Protocol::Ntlm::MessageBase" />
+  <TypeSignature Language="F#" Value="type Type3Message = class&#xA;    inherit MessageBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type3Message.#ctor(Mono.Security.Protocol.Ntlm.Type2Message)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type2 As Type2Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type3Message(Mono::Security::Protocol::Ntlm::Type2Message ^ type2);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Protocol.Ntlm.Type3Message : Mono.Security.Protocol.Ntlm.Type2Message -&gt; Mono.Security.Protocol.Ntlm.Type3Message" Usage="new Mono.Security.Protocol.Ntlm.Type3Message type2" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type3Message.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type3Message(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Protocol.Ntlm.Type3Message : byte[] -&gt; Mono.Security.Protocol.Ntlm.Type3Message" Usage="new Mono.Security.Protocol.Ntlm.Type3Message message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Challenge" />
       <MemberSignature Language="VB.NET" Value="Public Property Challenge As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Challenge { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Challenge : byte[] with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Challenge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type3Message.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Decode (message As Byte())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Decode(cli::array &lt;System::Byte&gt; ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; unit" Usage="type3Message.Decode message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.DefaultAuthLevel" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultAuthLevel As NtlmAuthLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Mono::Security::Protocol::Ntlm::NtlmAuthLevel DefaultAuthLevel { Mono::Security::Protocol::Ntlm::NtlmAuthLevel get(); void set(Mono::Security::Protocol::Ntlm::NtlmAuthLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAuthLevel : Mono.Security.Protocol.Ntlm.NtlmAuthLevel with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.DefaultAuthLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type3Message.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Type3Message ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="type3Message.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.Type3Message.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetBytes();" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : unit -&gt; byte[]" Usage="type3Message.GetBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As NtlmAuthLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Protocol::Ntlm::NtlmAuthLevel Level { Mono::Security::Protocol::Ntlm::NtlmAuthLevel get(); void set(Mono::Security::Protocol::Ntlm::NtlmAuthLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Mono.Security.Protocol.Ntlm.NtlmAuthLevel with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.LM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LM As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ LM { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LM : byte[]" Usage="Mono.Security.Protocol.Ntlm.Type3Message.LM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.NT" />
       <MemberSignature Language="VB.NET" Value="Public Property NT As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ NT { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NT : byte[] with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.NT" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Protocol.Ntlm.Type3Message.Username" />
       <MemberSignature Language="VB.NET" Value="Public Property Username As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Username { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Username : string with get, set" Usage="Mono.Security.Protocol.Ntlm.Type3Message.Username" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

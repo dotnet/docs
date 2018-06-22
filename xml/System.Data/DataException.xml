@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataException" />
   <TypeSignature Language="VB.NET" Value="Public Class DataException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataException : SystemException" />
+  <TypeSignature Language="F#" Value="type DataException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataException(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : string -&gt; System.Data.DataException" Usage="new System.Data.DataException s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.DataException" Usage="new System.Data.DataException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataException(System::String ^ s, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : string * Exception -&gt; System.Data.DataException" Usage="new System.Data.DataException (s, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.XpsSerializationException" />
   <TypeSignature Language="VB.NET" Value="Public Class XpsSerializationException&#xA;Inherits XpsException" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationException : System::Windows::Xps::XpsException" />
+  <TypeSignature Language="F#" Value="type XpsSerializationException = class&#xA;    inherit XpsException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsSerializationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.XpsSerializationException : string -&gt; System.Windows.Xps.XpsSerializationException" Usage="new System.Windows.Xps.XpsSerializationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsSerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; XpsSerializationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.XpsSerializationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Windows.Xps.XpsSerializationException" Usage="new System.Windows.Xps.XpsSerializationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsSerializationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.XpsSerializationException : string * Exception -&gt; System.Windows.Xps.XpsSerializationException" Usage="new System.Windows.Xps.XpsSerializationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

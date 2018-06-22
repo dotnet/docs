@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemObjectLoadMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintSystemObjectLoadMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintSystemObjectLoadMode" />
+  <TypeSignature Language="F#" Value="type PrintSystemObjectLoadMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.LoadInitialized" />
       <MemberSignature Language="VB.NET" Value="LoadInitialized" />
       <MemberSignature Language="C++ CLI" Value="LoadInitialized" />
+      <MemberSignature Language="F#" Value="LoadInitialized = 2" Usage="System.Printing.PrintSystemObjectLoadMode.LoadInitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.LoadUninitialized" />
       <MemberSignature Language="VB.NET" Value="LoadUninitialized" />
       <MemberSignature Language="C++ CLI" Value="LoadUninitialized" />
+      <MemberSignature Language="F#" Value="LoadUninitialized = 1" Usage="System.Printing.PrintSystemObjectLoadMode.LoadUninitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintSystemObjectLoadMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

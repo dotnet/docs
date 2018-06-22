@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.AddedRuleSetAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddedRuleSetAction&#xA;Inherits RuleSetChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddedRuleSetAction sealed : System::Workflow::Activities::Rules::RuleSetChangeAction" />
+  <TypeSignature Language="F#" Value="type AddedRuleSetAction = class&#xA;    inherit RuleSetChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.AddedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addedRuleSetDefinition As RuleSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AddedRuleSetAction(System::Workflow::Activities::Rules::RuleSet ^ addedRuleSetDefinition);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.AddedRuleSetAction : System.Workflow.Activities.Rules.RuleSet -&gt; System.Workflow.Activities.Rules.AddedRuleSetAction" Usage="new System.Workflow.Activities.Rules.AddedRuleSetAction addedRuleSetDefinition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.AddedRuleSetAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="addedRuleSetAction.ApplyTo rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleSetDefinition As RuleSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ RuleSetDefinition { System::Workflow::Activities::Rules::RuleSet ^ get(); void set(System::Workflow::Activities::Rules::RuleSet ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RuleSetDefinition : System.Workflow.Activities.Rules.RuleSet with get, set" Usage="System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleSetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RuleSetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RuleSetName : string" Usage="System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

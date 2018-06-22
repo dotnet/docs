@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriPartial" />
   <TypeSignature Language="VB.NET" Value="Public Enum UriPartial" />
   <TypeSignature Language="C++ CLI" Value="public enum class UriPartial" />
+  <TypeSignature Language="F#" Value="type UriPartial = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriPartial.Authority" />
       <MemberSignature Language="VB.NET" Value="Authority" />
       <MemberSignature Language="C++ CLI" Value="Authority" />
+      <MemberSignature Language="F#" Value="Authority = 1" Usage="System.UriPartial.Authority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriPartial.Path" />
       <MemberSignature Language="VB.NET" Value="Path" />
       <MemberSignature Language="C++ CLI" Value="Path" />
+      <MemberSignature Language="F#" Value="Path = 2" Usage="System.UriPartial.Path" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriPartial.Query" />
       <MemberSignature Language="VB.NET" Value="Query" />
       <MemberSignature Language="C++ CLI" Value="Query" />
+      <MemberSignature Language="F#" Value="Query = 3" Usage="System.UriPartial.Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriPartial.Scheme" />
       <MemberSignature Language="VB.NET" Value="Scheme" />
       <MemberSignature Language="C++ CLI" Value="Scheme" />
+      <MemberSignature Language="F#" Value="Scheme = 0" Usage="System.UriPartial.Scheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

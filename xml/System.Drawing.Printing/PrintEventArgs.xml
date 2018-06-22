@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type PrintEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintEventArgs.PrintAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintAction As PrintAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintAction PrintAction { System::Drawing::Printing::PrintAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrintAction : System.Drawing.Printing.PrintAction" Usage="System.Drawing.Printing.PrintEventArgs.PrintAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyboardNavigation" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyboardNavigation sealed" />
+  <TypeSignature Language="F#" Value="type KeyboardNavigation = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value="see GetAcceptsReturn, and SetAcceptsReturn" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.AcceptsReturn" />
       <MemberSignature Language="VB.NET" Value="see GetAcceptsReturn, and SetAcceptsReturn" />
+      <MemberSignature Language="F#" Value="see GetAcceptsReturn, and SetAcceptsReturn" Usage="see GetAcceptsReturn, and SetAcceptsReturn" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceptsReturnProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AcceptsReturnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AcceptsReturnProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.AcceptsReturnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value="see GetControlTabNavigation, and SetControlTabNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.ControlTabNavigation" />
       <MemberSignature Language="VB.NET" Value="see GetControlTabNavigation, and SetControlTabNavigation" />
+      <MemberSignature Language="F#" Value="see GetControlTabNavigation, and SetControlTabNavigation" Usage="see GetControlTabNavigation, and SetControlTabNavigation" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlTabNavigationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlTabNavigationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlTabNavigationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.ControlTabNavigationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value="see GetDirectionalNavigation, and SetDirectionalNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.DirectionalNavigation" />
       <MemberSignature Language="VB.NET" Value="see GetDirectionalNavigation, and SetDirectionalNavigation" />
+      <MemberSignature Language="F#" Value="see GetDirectionalNavigation, and SetDirectionalNavigation" Usage="see GetDirectionalNavigation, and SetDirectionalNavigation" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectionalNavigationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DirectionalNavigationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DirectionalNavigationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.DirectionalNavigationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetAcceptsReturn(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAcceptsReturn (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetAcceptsReturn(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetAcceptsReturn : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.KeyboardNavigation.GetAcceptsReturn element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetControlTabNavigation(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetControlTabNavigation (element As DependencyObject) As KeyboardNavigationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::KeyboardNavigationMode GetControlTabNavigation(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetControlTabNavigation : System.Windows.DependencyObject -&gt; System.Windows.Input.KeyboardNavigationMode" Usage="System.Windows.Input.KeyboardNavigation.GetControlTabNavigation element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetDirectionalNavigation(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDirectionalNavigation (element As DependencyObject) As KeyboardNavigationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::KeyboardNavigationMode GetDirectionalNavigation(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetDirectionalNavigation : System.Windows.DependencyObject -&gt; System.Windows.Input.KeyboardNavigationMode" Usage="System.Windows.Input.KeyboardNavigation.GetDirectionalNavigation element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetIsTabStop(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsTabStop (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsTabStop(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsTabStop : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.KeyboardNavigation.GetIsTabStop element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetTabIndex(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTabIndex (element As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetTabIndex(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTabIndex : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Input.KeyboardNavigation.GetTabIndex element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.GetTabNavigation(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTabNavigation (element As DependencyObject) As KeyboardNavigationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::KeyboardNavigationMode GetTabNavigation(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTabNavigation : System.Windows.DependencyObject -&gt; System.Windows.Input.KeyboardNavigationMode" Usage="System.Windows.Input.KeyboardNavigation.GetTabNavigation element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value="see GetIsTabStop, and SetIsTabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.IsTabStop" />
       <MemberSignature Language="VB.NET" Value="see GetIsTabStop, and SetIsTabStop" />
+      <MemberSignature Language="F#" Value="see GetIsTabStop, and SetIsTabStop" Usage="see GetIsTabStop, and SetIsTabStop" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,6 +378,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.IsTabStopProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTabStopProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTabStopProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTabStopProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.IsTabStopProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -383,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetAcceptsReturn(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAcceptsReturn (element As DependencyObject, enabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAcceptsReturn(System::Windows::DependencyObject ^ element, bool enabled);" />
+      <MemberSignature Language="F#" Value="static member SetAcceptsReturn : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetAcceptsReturn (element, enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -411,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetControlTabNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetControlTabNavigation (element As DependencyObject, mode As KeyboardNavigationMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetControlTabNavigation(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardNavigationMode mode);" />
+      <MemberSignature Language="F#" Value="static member SetControlTabNavigation : System.Windows.DependencyObject * System.Windows.Input.KeyboardNavigationMode -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetControlTabNavigation (element, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -439,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetDirectionalNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDirectionalNavigation (element As DependencyObject, mode As KeyboardNavigationMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDirectionalNavigation(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardNavigationMode mode);" />
+      <MemberSignature Language="F#" Value="static member SetDirectionalNavigation : System.Windows.DependencyObject * System.Windows.Input.KeyboardNavigationMode -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetDirectionalNavigation (element, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -467,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetIsTabStop(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsTabStop (element As DependencyObject, isTabStop As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsTabStop(System::Windows::DependencyObject ^ element, bool isTabStop);" />
+      <MemberSignature Language="F#" Value="static member SetIsTabStop : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetIsTabStop (element, isTabStop)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -495,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetTabIndex(System.Windows.DependencyObject,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTabIndex (element As DependencyObject, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTabIndex(System::Windows::DependencyObject ^ element, int index);" />
+      <MemberSignature Language="F#" Value="static member SetTabIndex : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetTabIndex (element, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardNavigation.SetTabNavigation(System.Windows.DependencyObject,System.Windows.Input.KeyboardNavigationMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTabNavigation (element As DependencyObject, mode As KeyboardNavigationMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTabNavigation(System::Windows::DependencyObject ^ element, System::Windows::Input::KeyboardNavigationMode mode);" />
+      <MemberSignature Language="F#" Value="static member SetTabNavigation : System.Windows.DependencyObject * System.Windows.Input.KeyboardNavigationMode -&gt; unit" Usage="System.Windows.Input.KeyboardNavigation.SetTabNavigation (element, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -550,6 +571,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTabIndex, and SetTabIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.TabIndex" />
       <MemberSignature Language="VB.NET" Value="see GetTabIndex, and SetTabIndex" />
+      <MemberSignature Language="F#" Value="see GetTabIndex, and SetTabIndex" Usage="see GetTabIndex, and SetTabIndex" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -566,6 +588,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.TabIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabIndexProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabIndexProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.TabIndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -584,6 +607,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTabNavigation, and SetTabNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardNavigation.TabNavigation" />
       <MemberSignature Language="VB.NET" Value="see GetTabNavigation, and SetTabNavigation" />
+      <MemberSignature Language="F#" Value="see GetTabNavigation, and SetTabNavigation" Usage="see GetTabNavigation, and SetTabNavigation" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -600,6 +624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigation.TabNavigationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabNavigationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabNavigationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabNavigationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyboardNavigation.TabNavigationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

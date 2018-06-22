@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataManipulator" />
   <TypeSignature Language="VB.NET" Value="Public Class DataManipulator&#xA;Inherits DataFormula" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataManipulator : System::Web::UI::DataVisualization::Charting::DataFormula" />
+  <TypeSignature Language="F#" Value="type DataManipulator = class&#xA;    inherit DataFormula" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.ExportSeriesValues" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportSeriesValues () As DataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataSet ^ ExportSeriesValues();" />
+      <MemberSignature Language="F#" Value="member this.ExportSeriesValues : unit -&gt; System.Data.DataSet" Usage="dataManipulator.ExportSeriesValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.ExportSeriesValues(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportSeriesValues (seriesNames As String) As DataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataSet ^ ExportSeriesValues(System::String ^ seriesNames);" />
+      <MemberSignature Language="F#" Value="member this.ExportSeriesValues : string -&gt; System.Data.DataSet" Usage="dataManipulator.ExportSeriesValues seriesNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues(class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.ExportSeriesValues(System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataSet ^ ExportSeriesValues(System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.ExportSeriesValues : System.Web.UI.DataVisualization.Charting.Series -&gt; System.Data.DataSet" Usage="dataManipulator.ExportSeriesValues series" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.IDataPointFilter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (filterInterface As IDataPointFilter, inputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::IDataPointFilter ^ filterInterface, System::String ^ inputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.IDataPointFilter * string -&gt; unit" Usage="dataManipulator.Filter (filterInterface, inputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.IDataPointFilter,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (filterInterface As IDataPointFilter, inputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::IDataPointFilter ^ filterInterface, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.IDataPointFilter * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (filterInterface, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::String ^ inputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * string -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.DateRangeType,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (dateRange As DateRangeType, rangeElements As String, inputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::DateRangeType dateRange, System::String ^ rangeElements, System::String ^ inputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.DateRangeType * string * string -&gt; unit" Usage="dataManipulator.Filter (dateRange, rangeElements, inputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.DateRangeType,System.String,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (dateRange As DateRangeType, rangeElements As String, inputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::DateRangeType dateRange, System::String ^ rangeElements, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.DateRangeType * string * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (dateRange, rangeElements, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.IDataPointFilter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (filterInterface As IDataPointFilter, inputSeriesNames As String, outputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::IDataPointFilter ^ filterInterface, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.IDataPointFilter * string * string -&gt; unit" Usage="dataManipulator.Filter (filterInterface, inputSeriesNames, outputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.IDataPointFilter,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (filterInterface As IDataPointFilter, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::IDataPointFilter ^ filterInterface, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.IDataPointFilter * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (filterInterface, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -335,6 +347,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * string * string -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeriesNames, outputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -363,6 +376,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -392,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.DateRangeType,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (dateRange As DateRangeType, rangeElements As String, inputSeriesNames As String, outputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::DateRangeType dateRange, System::String ^ rangeElements, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.DateRangeType * string * string * string -&gt; unit" Usage="dataManipulator.Filter (dateRange, rangeElements, inputSeriesNames, outputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -421,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.DateRangeType,System.String,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Filter (dateRange As DateRangeType, rangeElements As String, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::DateRangeType dateRange, System::String ^ rangeElements, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.DateRangeType * string * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Filter (dateRange, rangeElements, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -449,6 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames, string usingValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.String,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames, System::String ^ usingValue);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * string * string * string -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeriesNames, outputSeriesNames, usingValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -479,6 +496,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Filter(System.Web.UI.DataVisualization.Charting.CompareMethod,System.Double,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Filter(System::Web::UI::DataVisualization::Charting::CompareMethod compareMethod, double compareValue, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries, System::String ^ usingValue);" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Web.UI.DataVisualization.Charting.CompareMethod * double * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series * string -&gt; unit" Usage="dataManipulator.Filter (compareMethod, compareValue, inputSeries, outputSeries, usingValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -510,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterMatchedPoints" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterMatchedPoints As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterMatchedPoints { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterMatchedPoints : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataManipulator.FilterMatchedPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -531,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterSetEmptyPoints" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterSetEmptyPoints As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterSetEmptyPoints { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FilterSetEmptyPoints : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataManipulator.FilterSetEmptyPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -561,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::String ^ inputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * string -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -586,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -611,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeriesNames As String, outputSeriesNames As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * string * string -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeriesNames, outputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -638,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -665,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeriesNames As String, outputSeriesNames As String, usingValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames, System::String ^ usingValue);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * string * string * string -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeriesNames, outputSeriesNames, usingValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -694,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeries As Series, outputSeries As Series, usingValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries, System::String ^ usingValue);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series * string -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeries, outputSeries, usingValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -723,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeriesNames As String, outputSeriesNames As String, usingValue As String, getTopValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::String ^ inputSeriesNames, System::String ^ outputSeriesNames, System::String ^ usingValue, bool getTopValues);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * string * string * string * bool -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeriesNames, outputSeriesNames, usingValue, getTopValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -755,6 +782,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilterTopN (pointCount As Integer, inputSeries As Series, outputSeries As Series, usingValue As String, getTopValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FilterTopN(int pointCount, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries, System::String ^ usingValue, bool getTopValues);" />
+      <MemberSignature Language="F#" Value="member this.FilterTopN : int * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series * string * bool -&gt; unit" Usage="dataManipulator.FilterTopN (pointCount, inputSeries, outputSeries, usingValue, getTopValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -795,6 +823,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::String ^ inputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * string -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, inputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -823,6 +852,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -851,6 +881,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName, string outputSeriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::String ^ inputSeriesName, System::String ^ outputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * string * string -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, inputSeriesName, outputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -881,6 +912,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -911,6 +943,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::String ^ inputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * string -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, intervalOffset, intervalOffsetType, inputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -943,6 +976,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, intervalOffset, intervalOffsetType, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -975,6 +1009,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName, string outputSeriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::String ^ inputSeriesName, System::String ^ outputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * string * string -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, intervalOffset, intervalOffsetType, inputSeriesName, outputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1009,6 +1044,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Group(System::String ^ formula, double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.Group : string * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Group (formula, interval, intervalType, intervalOffset, intervalOffsetType, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1053,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GroupByAxisLabel (formula As String, inputSeriesName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GroupByAxisLabel(System::String ^ formula, System::String ^ inputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.GroupByAxisLabel : string * string -&gt; unit" Usage="dataManipulator.GroupByAxisLabel (formula, inputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1078,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GroupByAxisLabel (formula As String, inputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GroupByAxisLabel(System::String ^ formula, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.GroupByAxisLabel : string * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.GroupByAxisLabel (formula, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1103,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GroupByAxisLabel (formula As String, inputSeriesName As String, outputSeriesName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GroupByAxisLabel(System::String ^ formula, System::String ^ inputSeriesName, System::String ^ outputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.GroupByAxisLabel : string * string * string -&gt; unit" Usage="dataManipulator.GroupByAxisLabel (formula, inputSeriesName, outputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1130,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GroupByAxisLabel (formula As String, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GroupByAxisLabel(System::String ^ formula, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.GroupByAxisLabel : string * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.GroupByAxisLabel (formula, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1165,6 +1205,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string seriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * string -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1191,6 +1232,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1217,6 +1259,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string seriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * string -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, intervalOffset, intervalOffsetType, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1247,6 +1290,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, intervalOffset, intervalOffsetType, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1277,6 +1321,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, string seriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Double,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, double fromXValue, double toXValue, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * double * string -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, intervalOffset, intervalOffsetType, fromXValue, toXValue, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1311,6 +1356,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Web.UI.DataVisualization.Charting.IntervalType,System.Double,System.Double,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertEmptyPoints(double interval, System::Web::UI::DataVisualization::Charting::IntervalType intervalType, double intervalOffset, System::Web::UI::DataVisualization::Charting::IntervalType intervalOffsetType, double fromXValue, double toXValue, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.InsertEmptyPoints : double * System.Web.UI.DataVisualization.Charting.IntervalType * double * System.Web.UI.DataVisualization.Charting.IntervalType * double * double * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.InsertEmptyPoints (interval, intervalType, intervalOffset, intervalOffsetType, fromXValue, toXValue, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1355,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Collections.Generic.IComparer{System.Web.UI.DataVisualization.Charting.DataPoint},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparer As IComparer(Of DataPoint), seriesName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Collections::Generic::IComparer&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ comparer, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; * string -&gt; unit" Usage="dataManipulator.Sort (comparer, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1393,6 +1440,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Collections.Generic.IComparer{System.Web.UI.DataVisualization.Charting.DataPoint},System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Collections::Generic::IComparer&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ comparer, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Sort (comparer, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1428,6 +1476,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string seriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder * string -&gt; unit" Usage="dataManipulator.Sort (pointSortOrder, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1452,6 +1501,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Sort (pointSortOrder, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1476,6 +1526,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, string seriesName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder, System::String ^ sortBy, System::String ^ seriesName);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder * string * string -&gt; unit" Usage="dataManipulator.Sort (pointSortOrder, sortBy, seriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1516,6 +1567,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataManipulator.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Web::UI::DataVisualization::Charting::PointSortOrder pointSortOrder, System::String ^ sortBy, System::Web::UI::DataVisualization::Charting::Series ^ series);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Web.UI.DataVisualization.Charting.PointSortOrder * string * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataManipulator.Sort (pointSortOrder, sortBy, series)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

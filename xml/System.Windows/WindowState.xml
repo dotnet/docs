@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WindowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WindowState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WindowState" />
+  <TypeSignature Language="F#" Value="type WindowState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Maximized" />
       <MemberSignature Language="VB.NET" Value="Maximized" />
       <MemberSignature Language="C++ CLI" Value="Maximized" />
+      <MemberSignature Language="F#" Value="Maximized = 2" Usage="System.Windows.WindowState.Maximized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Minimized" />
       <MemberSignature Language="VB.NET" Value="Minimized" />
       <MemberSignature Language="C++ CLI" Value="Minimized" />
+      <MemberSignature Language="F#" Value="Minimized = 1" Usage="System.Windows.WindowState.Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.WindowState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

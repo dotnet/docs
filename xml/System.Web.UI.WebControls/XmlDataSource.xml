@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.XmlDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDataSource&#xA;Inherits HierarchicalDataSourceControl&#xA;Implements IDataSource, IListSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDataSource : System::Web::UI::HierarchicalDataSourceControl, System::ComponentModel::IListSource, System::Web::UI::IDataSource" />
+  <TypeSignature Language="F#" Value="type XmlDataSource = class&#xA;    inherit HierarchicalDataSourceControl&#xA;    interface IDataSource&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -240,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheDuration As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CacheDuration { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheDuration : int with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheExpirationPolicy As DataSourceCacheExpiry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataSourceCacheExpiry CacheExpirationPolicy { System::Web::UI::DataSourceCacheExpiry get(); void set(System::Web::UI::DataSourceCacheExpiry value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheExpirationPolicy : System.Web.UI.DataSourceCacheExpiry with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheKeyContext As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyContext { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheKeyContext : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheKeyContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -401,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheKeyDependency As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyDependency { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheKeyDependency : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -438,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.Data" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -494,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.DataFile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFile : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.DataFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableCaching As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableCaching { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCaching : bool with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -617,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.GetHierarchicalView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHierarchicalView (viewPath As String) As HierarchicalDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
+      <MemberSignature Language="F#" Value="override this.GetHierarchicalView : string -&gt; System.Web.UI.HierarchicalDataSourceView" Usage="xmlDataSource.GetHierarchicalView viewPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -648,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXmlDocument () As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDocument ^ GetXmlDocument();" />
+      <MemberSignature Language="F#" Value="member this.GetXmlDocument : unit -&gt; System.Xml.XmlDocument" Usage="xmlDataSource.GetXmlDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -730,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.OnTransforming(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTransforming (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTransforming(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTransforming : EventArgs -&gt; unit&#xA;override this.OnTransforming : EventArgs -&gt; unit" Usage="xmlDataSource.OnTransforming e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -850,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="xmlDataSource.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -935,6 +947,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.XmlDataSource.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1074,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Transform As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Transform { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transform : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.Transform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1159,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.TransformArgumentList" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TransformArgumentList As XsltArgumentList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Xsl::XsltArgumentList ^ TransformArgumentList { System::Xml::Xsl::XsltArgumentList ^ get(); void set(System::Xml::Xsl::XsltArgumentList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransformArgumentList : System.Xml.Xsl.XsltArgumentList with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.TransformArgumentList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1278,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.TransformFile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TransformFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TransformFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransformFile : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.TransformFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1403,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.XmlDataSource.Transforming" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Transforming As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Transforming;" />
+      <MemberSignature Language="F#" Value="member this.Transforming : EventHandler " Usage="member this.Transforming : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1514,6 +1531,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

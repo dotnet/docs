@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Globals" />
   <TypeSignature Language="VB.NET" Value="Public Module Globals" />
   <TypeSignature Language="C++ CLI" Value="public ref class Globals sealed" />
+  <TypeSignature Language="F#" Value="type Globals = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@ End Function
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngine As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ScriptEngine { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngine : string" Usage="Microsoft.VisualBasic.Globals.ScriptEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -94,6 +96,7 @@ End Function
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineBuildVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineBuildVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineBuildVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -133,6 +136,7 @@ End Function
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineMajorVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineMajorVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineMajorVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -172,6 +176,7 @@ End Function
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineMinorVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineMinorVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineMinorVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

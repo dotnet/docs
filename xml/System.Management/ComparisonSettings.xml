@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ComparisonSettings" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComparisonSettings" />
   <TypeSignature Language="C++ CLI" Value="public enum class ComparisonSettings" />
+  <TypeSignature Language="F#" Value="type ComparisonSettings = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="IgnoreCase" />
       <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 16" Usage="System.Management.ComparisonSettings.IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreClass" />
       <MemberSignature Language="VB.NET" Value="IgnoreClass" />
       <MemberSignature Language="C++ CLI" Value="IgnoreClass" />
+      <MemberSignature Language="F#" Value="IgnoreClass = 8" Usage="System.Management.ComparisonSettings.IgnoreClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreDefaultValues" />
       <MemberSignature Language="VB.NET" Value="IgnoreDefaultValues" />
       <MemberSignature Language="C++ CLI" Value="IgnoreDefaultValues" />
+      <MemberSignature Language="F#" Value="IgnoreDefaultValues = 4" Usage="System.Management.ComparisonSettings.IgnoreDefaultValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreFlavor" />
       <MemberSignature Language="VB.NET" Value="IgnoreFlavor" />
       <MemberSignature Language="C++ CLI" Value="IgnoreFlavor" />
+      <MemberSignature Language="F#" Value="IgnoreFlavor = 32" Usage="System.Management.ComparisonSettings.IgnoreFlavor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreObjectSource" />
       <MemberSignature Language="VB.NET" Value="IgnoreObjectSource" />
       <MemberSignature Language="C++ CLI" Value="IgnoreObjectSource" />
+      <MemberSignature Language="F#" Value="IgnoreObjectSource = 2" Usage="System.Management.ComparisonSettings.IgnoreObjectSource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IgnoreQualifiers" />
       <MemberSignature Language="VB.NET" Value="IgnoreQualifiers" />
       <MemberSignature Language="C++ CLI" Value="IgnoreQualifiers" />
+      <MemberSignature Language="F#" Value="IgnoreQualifiers = 1" Usage="System.Management.ComparisonSettings.IgnoreQualifiers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.ComparisonSettings.IncludeAll" />
       <MemberSignature Language="VB.NET" Value="IncludeAll" />
       <MemberSignature Language="C++ CLI" Value="IncludeAll" />
+      <MemberSignature Language="F#" Value="IncludeAll = 0" Usage="System.Management.ComparisonSettings.IncludeAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

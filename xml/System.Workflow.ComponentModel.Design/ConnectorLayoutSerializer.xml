@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectorLayoutSerializer&#xA;Inherits WorkflowMarkupSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectorLayoutSerializer : System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializer" />
+  <TypeSignature Language="F#" Value="type ConnectorLayoutSerializer = class&#xA;    inherit WorkflowMarkupSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer.CreateInstance(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; obj" Usage="connectorLayoutSerializer.CreateInstance (serializationManager, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; GetConnectorConstructionArguments(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer.GetConnectorConstructionArguments(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ GetConnectorConstructionArguments(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetConnectorConstructionArguments : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="connectorLayoutSerializer.GetConnectorConstructionArguments (serializationManager, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer.GetProperties(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProperties (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As PropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.PropertyInfo[]" Usage="connectorLayoutSerializer.GetProperties (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer.OnAfterDeserialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAfterDeserialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAfterDeserialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.OnAfterDeserialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="connectorLayoutSerializer.OnAfterDeserialize (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IEnumerableContract`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumerableContract(Of C)&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename C&gt;&#xA; where C : IContractpublic interface class IEnumerableContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IEnumerableContract&lt;'C (requires 'C :&gt; IContract)&gt; = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IEnumerableContract`1.GetEnumeratorContract" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumeratorContract () As IEnumeratorContract(Of C)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IEnumeratorContract&lt;C&gt; ^ GetEnumeratorContract();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumeratorContract : unit -&gt; System.AddIn.Contract.Collections.IEnumeratorContract&lt;'C (requires 'C :&gt; System.AddIn.Contract.IContract)&gt;" Usage="iEnumerableContract.GetEnumeratorContract " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

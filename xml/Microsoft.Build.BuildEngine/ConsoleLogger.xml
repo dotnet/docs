@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ConsoleLogger" />
   <TypeSignature Language="VB.NET" Value="Public Class ConsoleLogger&#xA;Implements INodeLogger" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConsoleLogger : Microsoft::Build::Framework::INodeLogger" />
+  <TypeSignature Language="F#" Value="type ConsoleLogger = class&#xA;    interface INodeLogger&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.#ctor(Microsoft.Build.Framework.LoggerVerbosity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (verbosity As LoggerVerbosity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleLogger(Microsoft::Build::Framework::LoggerVerbosity verbosity);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.ConsoleLogger : Microsoft.Build.Framework.LoggerVerbosity -&gt; Microsoft.Build.BuildEngine.ConsoleLogger" Usage="new Microsoft.Build.BuildEngine.ConsoleLogger verbosity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.#ctor(Microsoft.Build.Framework.LoggerVerbosity,Microsoft.Build.BuildEngine.WriteHandler,Microsoft.Build.BuildEngine.ColorSetter,Microsoft.Build.BuildEngine.ColorResetter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (verbosity As LoggerVerbosity, write As WriteHandler, colorSet As ColorSetter, colorReset As ColorResetter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleLogger(Microsoft::Build::Framework::LoggerVerbosity verbosity, Microsoft::Build::BuildEngine::WriteHandler ^ write, Microsoft::Build::BuildEngine::ColorSetter ^ colorSet, Microsoft::Build::BuildEngine::ColorResetter ^ colorReset);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.ConsoleLogger : Microsoft.Build.Framework.LoggerVerbosity * Microsoft.Build.BuildEngine.WriteHandler * Microsoft.Build.BuildEngine.ColorSetter * Microsoft.Build.BuildEngine.ColorResetter -&gt; Microsoft.Build.BuildEngine.ConsoleLogger" Usage="new Microsoft.Build.BuildEngine.ConsoleLogger (verbosity, write, colorSet, colorReset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.ApplyParameter(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyParameter (parameterName As String, parameterValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyParameter(System::String ^ parameterName, System::String ^ parameterValue);" />
+      <MemberSignature Language="F#" Value="member this.ApplyParameter : string * string -&gt; unit" Usage="consoleLogger.ApplyParameter (parameterName, parameterValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.BuildFinishedHandler(System.Object,Microsoft.Build.Framework.BuildFinishedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BuildFinishedHandler (sender As Object, e As BuildFinishedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildFinishedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.BuildFinishedHandler : obj * Microsoft.Build.Framework.BuildFinishedEventArgs -&gt; unit" Usage="consoleLogger.BuildFinishedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.BuildStartedHandler(System.Object,Microsoft.Build.Framework.BuildStartedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BuildStartedHandler (sender As Object, e As BuildStartedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildStartedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.BuildStartedHandler : obj * Microsoft.Build.Framework.BuildStartedEventArgs -&gt; unit" Usage="consoleLogger.BuildStartedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.CustomEventHandler(System.Object,Microsoft.Build.Framework.CustomBuildEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CustomEventHandler (sender As Object, e As CustomBuildEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomEventHandler(System::Object ^ sender, Microsoft::Build::Framework::CustomBuildEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.CustomEventHandler : obj * Microsoft.Build.Framework.CustomBuildEventArgs -&gt; unit" Usage="consoleLogger.CustomEventHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.ErrorHandler(System.Object,Microsoft.Build.Framework.BuildErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ErrorHandler (sender As Object, e As BuildErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ErrorHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildErrorEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.ErrorHandler : obj * Microsoft.Build.Framework.BuildErrorEventArgs -&gt; unit" Usage="consoleLogger.ErrorHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (eventSource As IEventSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit" Usage="consoleLogger.Initialize eventSource" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit" Usage="consoleLogger.Initialize (eventSource, nodeCount)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
@@ -287,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.MessageHandler(System.Object,Microsoft.Build.Framework.BuildMessageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MessageHandler (sender As Object, e As BuildMessageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MessageHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildMessageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.MessageHandler : obj * Microsoft.Build.Framework.BuildMessageEventArgs -&gt; unit" Usage="consoleLogger.MessageHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ConsoleLogger.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.BuildEngine.ConsoleLogger.Parameters" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
@@ -345,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.ProjectFinishedHandler(System.Object,Microsoft.Build.Framework.ProjectFinishedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProjectFinishedHandler (sender As Object, e As ProjectFinishedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProjectFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::ProjectFinishedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.ProjectFinishedHandler : obj * Microsoft.Build.Framework.ProjectFinishedEventArgs -&gt; unit" Usage="consoleLogger.ProjectFinishedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -370,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.ProjectStartedHandler(System.Object,Microsoft.Build.Framework.ProjectStartedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProjectStartedHandler (sender As Object, e As ProjectStartedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProjectStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::ProjectStartedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.ProjectStartedHandler : obj * Microsoft.Build.Framework.ProjectStartedEventArgs -&gt; unit" Usage="consoleLogger.ProjectStartedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ConsoleLogger.ShowSummary" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowSummary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowSummary { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSummary : bool with get, set" Usage="Microsoft.Build.BuildEngine.ConsoleLogger.ShowSummary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -416,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="consoleLogger.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
@@ -446,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ConsoleLogger.SkipProjectStartedText" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipProjectStartedText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipProjectStartedText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipProjectStartedText : bool with get, set" Usage="Microsoft.Build.BuildEngine.ConsoleLogger.SkipProjectStartedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -467,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.TargetFinishedHandler(System.Object,Microsoft.Build.Framework.TargetFinishedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TargetFinishedHandler (sender As Object, e As TargetFinishedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TargetFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::TargetFinishedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.TargetFinishedHandler : obj * Microsoft.Build.Framework.TargetFinishedEventArgs -&gt; unit" Usage="consoleLogger.TargetFinishedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -492,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.TargetStartedHandler(System.Object,Microsoft.Build.Framework.TargetStartedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TargetStartedHandler (sender As Object, e As TargetStartedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TargetStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::TargetStartedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.TargetStartedHandler : obj * Microsoft.Build.Framework.TargetStartedEventArgs -&gt; unit" Usage="consoleLogger.TargetStartedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -517,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.TaskFinishedHandler(System.Object,Microsoft.Build.Framework.TaskFinishedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaskFinishedHandler (sender As Object, e As TaskFinishedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaskFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::TaskFinishedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.TaskFinishedHandler : obj * Microsoft.Build.Framework.TaskFinishedEventArgs -&gt; unit" Usage="consoleLogger.TaskFinishedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -542,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.TaskStartedHandler(System.Object,Microsoft.Build.Framework.TaskStartedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaskStartedHandler (sender As Object, e As TaskStartedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaskStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::TaskStartedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.TaskStartedHandler : obj * Microsoft.Build.Framework.TaskStartedEventArgs -&gt; unit" Usage="consoleLogger.TaskStartedHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -567,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ConsoleLogger.Verbosity" />
       <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity with get, set" Usage="Microsoft.Build.BuildEngine.ConsoleLogger.Verbosity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>
@@ -590,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ConsoleLogger.WarningHandler(System.Object,Microsoft.Build.Framework.BuildWarningEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WarningHandler (sender As Object, e As BuildWarningEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WarningHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildWarningEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.WarningHandler : obj * Microsoft.Build.Framework.BuildWarningEventArgs -&gt; unit" Usage="consoleLogger.WarningHandler (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -615,6 +638,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ConsoleLogger.WriteHandler" />
       <MemberSignature Language="VB.NET" Value="Protected Property WriteHandler As WriteHandler" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Microsoft::Build::BuildEngine::WriteHandler ^ WriteHandler { Microsoft::Build::BuildEngine::WriteHandler ^ get(); void set(Microsoft::Build::BuildEngine::WriteHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteHandler : Microsoft.Build.BuildEngine.WriteHandler with get, set" Usage="Microsoft.Build.BuildEngine.ConsoleLogger.WriteHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

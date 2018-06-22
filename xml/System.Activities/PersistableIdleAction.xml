@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.PersistableIdleAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersistableIdleAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersistableIdleAction" />
+  <TypeSignature Language="F#" Value="type PersistableIdleAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.PersistableIdleAction.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Persist" />
       <MemberSignature Language="VB.NET" Value="Persist" />
       <MemberSignature Language="C++ CLI" Value="Persist" />
+      <MemberSignature Language="F#" Value="Persist = 2" Usage="System.Activities.PersistableIdleAction.Persist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Unload" />
       <MemberSignature Language="VB.NET" Value="Unload" />
       <MemberSignature Language="C++ CLI" Value="Unload" />
+      <MemberSignature Language="F#" Value="Unload = 1" Usage="System.Activities.PersistableIdleAction.Unload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XsltMessageEncounteredEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsltMessageEncounteredEventArgs abstract : EventArgs" />
+  <TypeSignature Language="F#" Value="type XsltMessageEncounteredEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltMessageEncounteredEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Xml.Xsl.XsltMessageEncounteredEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

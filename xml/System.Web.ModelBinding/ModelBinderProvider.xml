@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelBinderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderProvider abstract" />
+  <TypeSignature Language="F#" Value="type ModelBinderProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProvider.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="modelBinderProvider.GetBinder (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

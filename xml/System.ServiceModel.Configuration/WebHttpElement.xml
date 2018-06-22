@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebHttpElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebHttpElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type WebHttpElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticFormatSelectionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.AutomaticFormatSelectionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -121,6 +123,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.WebHttpElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -166,6 +169,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="webHttpElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -187,6 +191,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.DefaultBodyStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultBodyStyle As WebMessageBodyStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageBodyStyle DefaultBodyStyle { System::ServiceModel::Web::WebMessageBodyStyle get(); void set(System::ServiceModel::Web::WebMessageBodyStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultBodyStyle : System.ServiceModel.Web.WebMessageBodyStyle with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.DefaultBodyStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -212,6 +217,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.DefaultOutgoingResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultOutgoingResponseFormat As WebMessageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.DefaultOutgoingResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -237,6 +243,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.FaultExceptionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultExceptionEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.FaultExceptionEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -262,6 +269,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.HelpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpElement.HelpEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -288,6 +296,7 @@ using System.ServiceModel.Configuration;
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WebHttpElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

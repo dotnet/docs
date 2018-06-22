@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CancelEventHandler(sender As Object, e As CancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CancelEventHandler(System::Object ^ sender, CancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CancelEventHandler = delegate of obj * CancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

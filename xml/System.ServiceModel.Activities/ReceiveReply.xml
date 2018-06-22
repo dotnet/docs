@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveReply" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveReply&#xA;Inherits Activity" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReceiveReply sealed : System::Activities::Activity" />
+  <TypeSignature Language="F#" Value="type ReceiveReply = class&#xA;    inherit Activity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@ static void CreateClientWorkflow()
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveReply.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Activities.ReceiveReply.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -140,6 +142,7 @@ static void CreateClientWorkflow()
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveReply.CacheMetadata(System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As ActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.ActivityMetadata -&gt; unit" Usage="receiveReply.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -163,6 +166,7 @@ static void CreateClientWorkflow()
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveReply.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As ReceiveContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::ReceiveContent ^ Content { System::ServiceModel::Activities::ReceiveContent ^ get(); void set(System::ServiceModel::Activities::ReceiveContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.ServiceModel.Activities.ReceiveContent with get, set" Usage="System.ServiceModel.Activities.ReceiveReply.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -195,6 +199,7 @@ static void CreateClientWorkflow()
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationInitializers As Collection(Of CorrelationInitializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Activities::CorrelationInitializer ^&gt; ^ CorrelationInitializers { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Activities::CorrelationInitializer ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationInitializers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt;" Usage="System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -222,6 +227,7 @@ static void CreateClientWorkflow()
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveReply.Request" />
       <MemberSignature Language="VB.NET" Value="Public Property Request As Send" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Send ^ Request { System::ServiceModel::Activities::Send ^ get(); void set(System::ServiceModel::Activities::Send ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.ServiceModel.Activities.Send with get, set" Usage="System.ServiceModel.Activities.ReceiveReply.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

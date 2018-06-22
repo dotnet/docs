@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.QueryInterceptorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryInterceptorAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryInterceptorAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type QueryInterceptorAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@ public Expression<Func<Customer, bool>> FilterCustomers()
       <MemberSignature Language="DocId" Value="M:System.Data.Services.QueryInterceptorAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entitySetName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryInterceptorAttribute(System::String ^ entitySetName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.QueryInterceptorAttribute : string -&gt; System.Data.Services.QueryInterceptorAttribute" Usage="new System.Data.Services.QueryInterceptorAttribute entitySetName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -91,6 +93,7 @@ public Expression<Func<Customer, bool>> FilterCustomers()
       <MemberSignature Language="DocId" Value="P:System.Data.Services.QueryInterceptorAttribute.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string" Usage="System.Data.Services.QueryInterceptorAttribute.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

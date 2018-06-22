@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ScrollChangedEventHandler(sender As Object, e As ScrollChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ScrollChangedEventHandler(System::Object ^ sender, ScrollChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ScrollChangedEventHandler = delegate of obj * ScrollChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

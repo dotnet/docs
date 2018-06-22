@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.GenericFontFamilies" />
   <TypeSignature Language="VB.NET" Value="Public Enum GenericFontFamilies" />
   <TypeSignature Language="C++ CLI" Value="public enum class GenericFontFamilies" />
+  <TypeSignature Language="F#" Value="type GenericFontFamilies = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.Monospace" />
       <MemberSignature Language="VB.NET" Value="Monospace" />
       <MemberSignature Language="C++ CLI" Value="Monospace" />
+      <MemberSignature Language="F#" Value="Monospace = 2" Usage="System.Drawing.Text.GenericFontFamilies.Monospace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.SansSerif" />
       <MemberSignature Language="VB.NET" Value="SansSerif" />
       <MemberSignature Language="C++ CLI" Value="SansSerif" />
+      <MemberSignature Language="F#" Value="SansSerif = 1" Usage="System.Drawing.Text.GenericFontFamilies.SansSerif" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.Serif" />
       <MemberSignature Language="VB.NET" Value="Serif" />
       <MemberSignature Language="C++ CLI" Value="Serif" />
+      <MemberSignature Language="F#" Value="Serif = 0" Usage="System.Drawing.Text.GenericFontFamilies.Serif" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

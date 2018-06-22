@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.InRowChangingEventException" />
   <TypeSignature Language="VB.NET" Value="Public Class InRowChangingEventException&#xA;Inherits DataException" />
   <TypeSignature Language="C++ CLI" Value="public ref class InRowChangingEventException : System::Data::DataException" />
+  <TypeSignature Language="F#" Value="type InRowChangingEventException = class&#xA;    inherit DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InRowChangingEventException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InRowChangingEventException(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.InRowChangingEventException : string -&gt; System.Data.InRowChangingEventException" Usage="new System.Data.InRowChangingEventException s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InRowChangingEventException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InRowChangingEventException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Data.InRowChangingEventException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.InRowChangingEventException" Usage="new System.Data.InRowChangingEventException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InRowChangingEventException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InRowChangingEventException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.InRowChangingEventException : string * Exception -&gt; System.Data.InRowChangingEventException" Usage="new System.Data.InRowChangingEventException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

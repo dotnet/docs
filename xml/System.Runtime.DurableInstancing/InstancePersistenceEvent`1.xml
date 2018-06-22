@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceEvent`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstancePersistenceEvent(Of T)&#xA;Inherits InstancePersistenceEvent" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : InstancePersistenceEvent&lt;T&gt;gcnew()public ref class InstancePersistenceEvent abstract : System::Runtime::DurableInstancing::InstancePersistenceEvent" />
+  <TypeSignature Language="F#" Value="type InstancePersistenceEvent&lt;'T (requires 'T :&gt; InstancePersistenceEvent&lt;'T&gt; and 'T : (new : unit -&gt; 'T))&gt; = class&#xA;    inherit InstancePersistenceEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceEvent`1.#ctor(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As XName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstancePersistenceEvent(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T (requires 'T :&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T&gt; and 'T : (new : unit -&gt; 'T))&gt; : System.Xml.Linq.XName -&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T (requires 'T :&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T&gt; and 'T : (new : unit -&gt; 'T))&gt;" Usage="new System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T (requires 'T :&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T&gt; and 'T : (new : unit -&gt; 'T))&gt; name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceEvent`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T (requires 'T :&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;'T&gt; and 'T : (new : unit -&gt; 'T))&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

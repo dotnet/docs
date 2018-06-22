@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlSkinDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ControlSkinDelegate(control As Control) As Control " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Web::UI::Control ^ ControlSkinDelegate(Control ^ control);" />
+  <TypeSignature Language="F#" Value="type ControlSkinDelegate = delegate of Control -&gt; Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

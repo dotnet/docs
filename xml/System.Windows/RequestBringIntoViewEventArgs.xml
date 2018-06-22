@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RequestBringIntoViewEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestBringIntoViewEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestBringIntoViewEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type RequestBringIntoViewEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.RequestBringIntoViewEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="requestBringIntoViewEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.RequestBringIntoViewEventArgs.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ TargetObject { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.Windows.DependencyObject" Usage="System.Windows.RequestBringIntoViewEventArgs.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.RequestBringIntoViewEventArgs.TargetRect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetRect As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect TargetRect { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetRect : System.Windows.Rect" Usage="System.Windows.RequestBringIntoViewEventArgs.TargetRect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

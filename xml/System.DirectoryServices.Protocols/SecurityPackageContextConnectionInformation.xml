@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityPackageContextConnectionInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityPackageContextConnectionInformation" />
+  <TypeSignature Language="F#" Value="type SecurityPackageContextConnectionInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.AlgorithmIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmIdentifier As CipherAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::CipherAlgorithmType AlgorithmIdentifier { System::Security::Authentication::CipherAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmIdentifier : System.Security.Authentication.CipherAlgorithmType" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.AlgorithmIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.CipherStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CipherStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CipherStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CipherStrength : int" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.CipherStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.ExchangeStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExchangeStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExchangeStrength : int" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.ExchangeStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.Hash" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hash As HashAlgorithmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::HashAlgorithmType Hash { System::Security::Authentication::HashAlgorithmType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hash : System.Security.Authentication.HashAlgorithmType" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.Hash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.HashStrength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashStrength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HashStrength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashStrength : int" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.HashStrength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyExchangeAlgorithm As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyExchangeAlgorithm { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : int" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.KeyExchangeAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.Protocol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocol As SecurityProtocol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::SecurityProtocol Protocol { System::DirectoryServices::Protocols::SecurityProtocol get(); };" />
+      <MemberSignature Language="F#" Value="member this.Protocol : System.DirectoryServices.Protocols.SecurityProtocol" Usage="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation.Protocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMethodReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeMethodReferenceExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeMethodReferenceExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodReferenceExpression : System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodeMethodReferenceExpression" Usage="new System.CodeDom.CodeMethodReferenceExpression (targetObject, methodName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeTypeReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, methodName As String, ParamArray typeParameters As CodeTypeReference())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ methodName, ... cli::array &lt;System::CodeDom::CodeTypeReference ^&gt; ^ typeParameters);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodReferenceExpression : System.CodeDom.CodeExpression * string * System.CodeDom.CodeTypeReference[] -&gt; System.CodeDom.CodeMethodReferenceExpression" Usage="new System.CodeDom.CodeMethodReferenceExpression (targetObject, methodName, typeParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.CodeDom.CodeMethodReferenceExpression.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeMethodReferenceExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.TypeArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeArguments As CodeTypeReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ TypeArguments { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeArguments : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeMethodReferenceExpression.TypeArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

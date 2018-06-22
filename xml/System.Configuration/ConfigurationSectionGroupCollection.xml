@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionGroupCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationSectionGroupCollection&#xA;Inherits NameObjectCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSectionGroupCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type ConfigurationSectionGroupCollection = class&#xA;    inherit NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Add(System.String,System.Configuration.ConfigurationSectionGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, sectionGroup As ConfigurationSectionGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Configuration::ConfigurationSectionGroup ^ sectionGroup);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Configuration.ConfigurationSectionGroup -&gt; unit" Usage="configurationSectionGroupCollection.Add (name, sectionGroup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="configurationSectionGroupCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.CopyTo(System.Configuration.ConfigurationSectionGroup[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ConfigurationSectionGroup(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::ConfigurationSectionGroup ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Configuration.ConfigurationSectionGroup[] * int -&gt; unit" Usage="configurationSectionGroupCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Configuration.ConfigurationSectionGroupCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As ConfigurationSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configurationSectionGroupCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As ConfigurationSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSectionGroup ^ Get(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Configuration.ConfigurationSectionGroup" Usage="configurationSectionGroupCollection.Get name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="configurationSectionGroupCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="configurationSectionGroupCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="configurationSectionGroupCollection.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -432,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ConfigurationSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroup ^ default[int] { System::Configuration::ConfigurationSectionGroup ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ConfigurationSectionGroup" Usage="System.Configuration.ConfigurationSectionGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -462,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ConfigurationSectionGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroup ^ default[System::String ^] { System::Configuration::ConfigurationSectionGroup ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ConfigurationSectionGroup" Usage="System.Configuration.ConfigurationSectionGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -505,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroupCollection.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Configuration.ConfigurationSectionGroupCollection.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -542,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="configurationSectionGroupCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -582,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroupCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="configurationSectionGroupCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

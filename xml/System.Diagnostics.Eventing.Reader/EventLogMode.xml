@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogMode" />
+  <TypeSignature Language="F#" Value="type EventLogMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.AutoBackup" />
       <MemberSignature Language="VB.NET" Value="AutoBackup" />
       <MemberSignature Language="C++ CLI" Value="AutoBackup" />
+      <MemberSignature Language="F#" Value="AutoBackup = 1" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.AutoBackup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Circular" />
       <MemberSignature Language="VB.NET" Value="Circular" />
       <MemberSignature Language="C++ CLI" Value="Circular" />
+      <MemberSignature Language="F#" Value="Circular = 0" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.Circular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Retain" />
       <MemberSignature Language="VB.NET" Value="Retain" />
       <MemberSignature Language="C++ CLI" Value="Retain" />
+      <MemberSignature Language="F#" Value="Retain = 2" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.Retain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DatePickerDateValidationErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DatePickerDateValidationErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DatePickerDateValidationErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DatePickerDateValidationErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.#ctor(System.Exception,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DatePickerDateValidationErrorEventArgs(Exception ^ exception, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DatePickerDateValidationErrorEventArgs : Exception * string -&gt; System.Windows.Controls.DatePickerDateValidationErrorEventArgs" Usage="new System.Windows.Controls.DatePickerDateValidationErrorEventArgs (exception, text)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException" />
       <MemberSignature Language="VB.NET" Value="Public Property ThrowException As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowException { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ThrowException : bool with get, set" Usage="System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationHelperTx" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationHelperTx&#xA;Inherits ServicedComponent" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrationHelperTx sealed : System::EnterpriseServices::ServicedComponent" />
+  <TypeSignature Language="F#" Value="type RegistrationHelperTx = class&#xA;    inherit ServicedComponent" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.Activate" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Activate();" />
+      <MemberSignature Language="F#" Value="override this.Activate : unit -&gt; unit" Usage="registrationHelperTx.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Deactivate ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Deactivate();" />
+      <MemberSignature Language="F#" Value="override this.Deactivate : unit -&gt; unit" Usage="registrationHelperTx.Deactivate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (assembly As String, ByRef application As String, ByRef tlb As String, installFlags As InstallationFlags, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ assembly, System::String ^ % application, System::String ^ % tlb, System::EnterpriseServices::InstallationFlags installFlags, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags * obj -&gt; unit" Usage="registrationHelperTx.InstallAssembly (assembly, application, tlb, installFlags, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (assembly As String, ByRef application As String, partition As String, ByRef tlb As String, installFlags As InstallationFlags, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ assembly, System::String ^ % application, System::String ^ partition, System::String ^ % tlb, System::EnterpriseServices::InstallationFlags installFlags, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.InstallAssembly : string *  * string *  * System.EnterpriseServices.InstallationFlags * obj -&gt; unit" Usage="registrationHelperTx.InstallAssembly (assembly, application, partition, tlb, installFlags, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssemblyFromConfig (ByRef regConfig As RegistrationConfig, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssemblyFromConfig(System::EnterpriseServices::RegistrationConfig ^ % regConfig, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.InstallAssemblyFromConfig :  * obj -&gt; unit" Usage="registrationHelperTx.InstallAssemblyFromConfig (regConfig, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.IsInTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInTransaction () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInTransaction();" />
+      <MemberSignature Language="F#" Value="member this.IsInTransaction : unit -&gt; bool" Usage="registrationHelperTx.IsInTransaction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssembly (assembly As String, application As String, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssembly(System::String ^ assembly, System::String ^ application, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.UninstallAssembly : string * string * obj -&gt; unit" Usage="registrationHelperTx.UninstallAssembly (assembly, application, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly(System.String,System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssembly (assembly As String, application As String, partition As String, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssembly(System::String ^ assembly, System::String ^ application, System::String ^ partition, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.UninstallAssembly : string * string * string * obj -&gt; unit" Usage="registrationHelperTx.UninstallAssembly (assembly, application, partition, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -345,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssemblyFromConfig (ByRef regConfig As RegistrationConfig, sync As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssemblyFromConfig(System::EnterpriseServices::RegistrationConfig ^ % regConfig, System::Object ^ sync);" />
+      <MemberSignature Language="F#" Value="member this.UninstallAssemblyFromConfig :  * obj -&gt; unit" Usage="registrationHelperTx.UninstallAssemblyFromConfig (regConfig, sync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

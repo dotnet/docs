@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReadAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleReadAttribute&#xA;Inherits RuleReadWriteAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleReadAttribute sealed : System::Workflow::Activities::Rules::RuleReadWriteAttribute" />
+  <TypeSignature Language="F#" Value="type RuleReadAttribute = class&#xA;    inherit RuleReadWriteAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleReadAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleReadAttribute(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleReadAttribute : string -&gt; System.Workflow.Activities.Rules.RuleReadAttribute" Usage="new System.Workflow.Activities.Rules.RuleReadAttribute path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleReadAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, target As RuleAttributeTarget)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleReadAttribute(System::String ^ path, System::Workflow::Activities::Rules::RuleAttributeTarget target);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleReadAttribute : string * System.Workflow.Activities.Rules.RuleAttributeTarget -&gt; System.Workflow.Activities.Rules.RuleReadAttribute" Usage="new System.Workflow.Activities.Rules.RuleReadAttribute (path, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

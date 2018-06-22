@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpPath" />
   <TypeSignature Language="VB.NET" Value="Public Class JumpPath&#xA;Inherits JumpItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class JumpPath : System::Windows::Shell::JumpItem" />
+  <TypeSignature Language="F#" Value="type JumpPath = class&#xA;    inherit JumpItem" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpPath.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Windows.Shell.JumpPath.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

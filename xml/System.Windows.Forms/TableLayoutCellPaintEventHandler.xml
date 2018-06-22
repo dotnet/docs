@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutCellPaintEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TableLayoutCellPaintEventHandler(sender As Object, e As TableLayoutCellPaintEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TableLayoutCellPaintEventHandler(System::Object ^ sender, TableLayoutCellPaintEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TableLayoutCellPaintEventHandler = delegate of obj * TableLayoutCellPaintEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

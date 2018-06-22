@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.HandledEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class HandledEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class HandledEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type HandledEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.HandledEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultHandledValue As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HandledEventArgs(bool defaultHandledValue);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.HandledEventArgs : bool -&gt; System.ComponentModel.HandledEventArgs" Usage="new System.ComponentModel.HandledEventArgs defaultHandledValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.HandledEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.ComponentModel.HandledEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

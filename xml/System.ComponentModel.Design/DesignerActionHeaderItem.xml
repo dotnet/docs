@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionHeaderItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerActionHeaderItem&#xA;Inherits DesignerActionTextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionHeaderItem sealed : System::ComponentModel::Design::DesignerActionTextItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionHeaderItem = class&#xA;    inherit DesignerActionTextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionHeaderItem(System::String ^ displayName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionHeaderItem : string -&gt; System.ComponentModel.Design.DesignerActionHeaderItem" Usage="new System.ComponentModel.Design.DesignerActionHeaderItem displayName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionHeaderItem(System::String ^ displayName, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionHeaderItem : string * string -&gt; System.ComponentModel.Design.DesignerActionHeaderItem" Usage="new System.ComponentModel.Design.DesignerActionHeaderItem (displayName, category)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

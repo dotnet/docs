@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.LoadBalancingSupportedAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LoadBalancingSupportedAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoadBalancingSupportedAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LoadBalancingSupportedAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.LoadBalancingSupportedAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LoadBalancingSupportedAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.LoadBalancingSupportedAttribute : bool -&gt; System.EnterpriseServices.LoadBalancingSupportedAttribute" Usage="new System.EnterpriseServices.LoadBalancingSupportedAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.LoadBalancingSupportedAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.LoadBalancingSupportedAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

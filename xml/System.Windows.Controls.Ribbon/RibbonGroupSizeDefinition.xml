@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGroupSizeDefinition&#xA;Inherits RibbonGroupSizeDefinitionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroupSizeDefinition : System::Windows::Controls::Ribbon::RibbonGroupSizeDefinitionBase" />
+  <TypeSignature Language="F#" Value="type RibbonGroupSizeDefinition = class&#xA;    inherit RibbonGroupSizeDefinitionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.ControlSizeDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinitions As RibbonControlSizeDefinitionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinitionCollection ^ ControlSizeDefinitions { System::Windows::Controls::Ribbon::RibbonControlSizeDefinitionCollection ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinitionCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlSizeDefinitions : System.Windows.Controls.Ribbon.RibbonControlSizeDefinitionCollection with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.ControlSizeDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.ControlSizeDefinitionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.ControlSizeDefinitionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="ribbonGroupSizeDefinition.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

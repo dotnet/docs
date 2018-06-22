@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectProperty" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectProperty&#xA;Implements IEquatable(Of ProjectProperty)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectProperty abstract : IEquatable&lt;Microsoft::Build::Evaluation::ProjectProperty ^&gt;" />
+  <TypeSignature Language="F#" Value="type ProjectProperty = class&#xA;    interface IEquatable&lt;ProjectProperty&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.EvaluatedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedValue : string" Usage="Microsoft.Build.Evaluation.ProjectProperty.EvaluatedValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IProperty.EvaluatedValue</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsEnvironmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEnvironmentProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEnvironmentProperty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnvironmentProperty : bool" Usage="Microsoft.Build.Evaluation.ProjectProperty.IsEnvironmentProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsGlobalProperty" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsGlobalProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsGlobalProperty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsGlobalProperty : bool" Usage="Microsoft.Build.Evaluation.ProjectProperty.IsGlobalProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.Evaluation.ProjectProperty.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.IsReservedProperty" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReservedProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReservedProperty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReservedProperty : bool" Usage="Microsoft.Build.Evaluation.ProjectProperty.IsReservedProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Evaluation.ProjectProperty.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Evaluation.IProperty.Name</InterfaceMember>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Predecessor" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Predecessor As ProjectProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Evaluation::ProjectProperty ^ Predecessor { Microsoft::Build::Evaluation::ProjectProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Predecessor : Microsoft.Build.Evaluation.ProjectProperty" Usage="Microsoft.Build.Evaluation.ProjectProperty.Predecessor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Project" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Project As Project" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Evaluation::Project ^ Project { Microsoft::Build::Evaluation::Project ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Project : Microsoft.Build.Evaluation.Project" Usage="Microsoft.Build.Evaluation.ProjectProperty.Project" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.UnevaluatedValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property UnevaluatedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ UnevaluatedValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UnevaluatedValue : string with get, set" Usage="Microsoft.Build.Evaluation.ProjectProperty.UnevaluatedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectProperty.Xml" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Xml As ProjectPropertyElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ProjectPropertyElement ^ Xml { Microsoft::Build::Construction::ProjectPropertyElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Xml : Microsoft.Build.Construction.ProjectPropertyElement" Usage="Microsoft.Build.Evaluation.ProjectProperty.Xml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

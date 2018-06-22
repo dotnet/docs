@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteTable" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteTable" />
+  <TypeSignature Language="F#" Value="type RouteTable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteTable.Routes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Routes As RouteCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Routing::RouteCollection ^ Routes { System::Web::Routing::RouteCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Routes : System.Web.Routing.RouteCollection" Usage="System.Web.Routing.RouteTable.Routes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

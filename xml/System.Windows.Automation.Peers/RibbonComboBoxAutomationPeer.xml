@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonComboBoxAutomationPeer&#xA;Inherits RibbonMenuButtonAutomationPeer&#xA;Implements IValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonComboBoxAutomationPeer : System::Windows::Automation::Peers::RibbonMenuButtonAutomationPeer, System::Windows::Automation::Provider::IValueProvider" />
+  <TypeSignature Language="F#" Value="type RibbonComboBoxAutomationPeer = class&#xA;    inherit RibbonMenuButtonAutomationPeer&#xA;    interface IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonComboBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonComboBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonComboBoxAutomationPeer(System::Windows::Controls::Ribbon::RibbonComboBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer : System.Windows.Controls.Ribbon.RibbonComboBox -&gt; System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="ribbonComboBoxAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonComboBoxAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.IsReadOnly</InterfaceMember>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.SetFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="ribbonComboBoxAutomationPeer.SetFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.SetValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValue(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : string -&gt; unit&#xA;override this.SetValue : string -&gt; unit" Usage="ribbonComboBoxAutomationPeer.SetValue value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IValueProvider.SetValue(System.String)</InterfaceMember>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.Value</InterfaceMember>

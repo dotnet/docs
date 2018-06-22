@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.SolutionWrapperProject" />
   <TypeSignature Language="VB.NET" Value="Public Class SolutionWrapperProject" />
   <TypeSignature Language="C++ CLI" Value="public ref class SolutionWrapperProject abstract sealed" />
+  <TypeSignature Language="F#" Value="type SolutionWrapperProject = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.SolutionWrapperProject.Generate(System.String,System.String,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Generate (solutionPath As String, toolsVersionOverride As String, projectBuildEventContext As BuildEventContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Generate(System::String ^ solutionPath, System::String ^ toolsVersionOverride, Microsoft::Build::Framework::BuildEventContext ^ projectBuildEventContext);" />
+      <MemberSignature Language="F#" Value="static member Generate : string * string * Microsoft.Build.Framework.BuildEventContext -&gt; string" Usage="Microsoft.Build.BuildEngine.SolutionWrapperProject.Generate (solutionPath, toolsVersionOverride, projectBuildEventContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

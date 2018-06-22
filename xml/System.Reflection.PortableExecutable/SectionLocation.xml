@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.SectionLocation" />
   <TypeSignature Language="VB.NET" Value="Public Structure SectionLocation" />
   <TypeSignature Language="C++ CLI" Value="public value class SectionLocation" />
+  <TypeSignature Language="F#" Value="type SectionLocation = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.SectionLocation.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relativeVirtualAddress As Integer, pointerToRawData As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SectionLocation(int relativeVirtualAddress, int pointerToRawData);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.PortableExecutable.SectionLocation : int * int -&gt; System.Reflection.PortableExecutable.SectionLocation" Usage="new System.Reflection.PortableExecutable.SectionLocation (relativeVirtualAddress, pointerToRawData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionLocation.PointerToRawData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerToRawData As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointerToRawData { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PointerToRawData : int" Usage="System.Reflection.PortableExecutable.SectionLocation.PointerToRawData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionLocation.RelativeVirtualAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeVirtualAddress As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RelativeVirtualAddress { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeVirtualAddress : int" Usage="System.Reflection.PortableExecutable.SectionLocation.RelativeVirtualAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

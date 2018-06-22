@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientOperation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientOperation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientOperation sealed" />
+  <TypeSignature Language="F#" Value="type ClientOperation = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ClientOperation.#ctor(System.ServiceModel.Dispatcher.ClientRuntime,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ClientRuntime, name As String, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientOperation(System::ServiceModel::Dispatcher::ClientRuntime ^ parent, System::String ^ name, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ClientOperation : System.ServiceModel.Dispatcher.ClientRuntime * string * string -&gt; System.ServiceModel.Dispatcher.ClientOperation" Usage="new System.ServiceModel.Dispatcher.ClientOperation (parent, name, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ClientOperation.#ctor(System.ServiceModel.Dispatcher.ClientRuntime,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ClientRuntime, name As String, action As String, replyAction As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientOperation(System::ServiceModel::Dispatcher::ClientRuntime ^ parent, System::String ^ name, System::String ^ action, System::String ^ replyAction);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ClientOperation : System.ServiceModel.Dispatcher.ClientRuntime * string * string * string -&gt; System.ServiceModel.Dispatcher.ClientOperation" Usage="new System.ServiceModel.Dispatcher.ClientOperation (parent, name, action, replyAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.ServiceModel.Dispatcher.ClientOperation.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property BeginMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ BeginMethod { System::Reflection::MethodInfo ^ get(); void set(System::Reflection::MethodInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BeginMethod : System.Reflection.MethodInfo with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.BeginMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.ClientParameterInspectors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientParameterInspectors As ICollection(Of IParameterInspector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ ClientParameterInspectors { System::Collections::Generic::ICollection&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientParameterInspectors : System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientOperation.ClientParameterInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply" />
       <MemberSignature Language="VB.NET" Value="Public Property DeserializeReply As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DeserializeReply { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DeserializeReply : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.EndMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property EndMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ EndMethod { System::Reflection::MethodInfo ^ get(); void set(System::Reflection::MethodInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndMethod : System.Reflection.MethodInfo with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.EndMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaultContractInfos As SynchronizedCollection(Of FaultContractInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::FaultContractInfo ^&gt; ^ FaultContractInfos { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::FaultContractInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FaultContractInfos : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.FaultContractInfo&gt;" Usage="System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -331,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Property Formatter As IClientMessageFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::IClientMessageFormatter ^ Formatter { System::ServiceModel::Dispatcher::IClientMessageFormatter ^ get(); void set(System::ServiceModel::Dispatcher::IClientMessageFormatter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Formatter : System.ServiceModel.Dispatcher.IClientMessageFormatter with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.Formatter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -367,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.IsInitiating" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInitiating As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitiating { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitiating : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.IsInitiating" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -396,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOneWay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOneWay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOneWay : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.IsOneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.IsTerminating" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTerminating As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTerminating { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTerminating : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.IsTerminating" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -460,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Dispatcher.ClientOperation.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -494,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterInspectors As SynchronizedCollection(Of IParameterInspector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ ParameterInspectors { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterInspectors : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -530,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ClientRuntime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ClientRuntime ^ Parent { System::ServiceModel::Dispatcher::ClientRuntime ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.ServiceModel.Dispatcher.ClientRuntime" Usage="System.ServiceModel.Dispatcher.ClientOperation.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -557,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.ReplyAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplyAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReplyAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyAction : string" Usage="System.ServiceModel.Dispatcher.ClientOperation.ReplyAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -591,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializeRequest As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeRequest { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SerializeRequest : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -629,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.SyncMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SyncMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ SyncMethod { System::Reflection::MethodInfo ^ get(); void set(System::Reflection::MethodInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SyncMethod : System.Reflection.MethodInfo with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.SyncMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -650,6 +669,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.TaskMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ TaskMethod { System::Reflection::MethodInfo ^ get(); void set(System::Reflection::MethodInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TaskMethod : System.Reflection.MethodInfo with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.TaskMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -677,6 +697,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperation.TaskTResult" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskTResult As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TaskTResult { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TaskTResult : Type with get, set" Usage="System.ServiceModel.Dispatcher.ClientOperation.TaskTResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

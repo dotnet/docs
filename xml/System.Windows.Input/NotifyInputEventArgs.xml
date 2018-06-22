@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.NotifyInputEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NotifyInputEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotifyInputEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type NotifyInputEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.InputManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputManager As InputManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputManager ^ InputManager { System::Windows::Input::InputManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputManager : System.Windows.Input.InputManager" Usage="System.Windows.Input.NotifyInputEventArgs.InputManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.StagingItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StagingItem As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StagingAreaInputItem ^ StagingItem { System::Windows::Input::StagingAreaInputItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StagingItem : System.Windows.Input.StagingAreaInputItem" Usage="System.Windows.Input.NotifyInputEventArgs.StagingItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

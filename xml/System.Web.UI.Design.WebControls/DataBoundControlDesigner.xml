@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class DataBoundControlDesigner&#xA;Inherits BaseDataBoundControlDesigner&#xA;Implements IDataBindingSchemaProvider, IDataSourceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBoundControlDesigner : System::Web::UI::Design::WebControls::BaseDataBoundControlDesigner, System::Web::UI::Design::IDataBindingSchemaProvider, System::Web::UI::Design::IDataSourceProvider" />
+  <TypeSignature Language="F#" Value="type DataBoundControlDesigner = class&#xA;    inherit BaseDataBoundControlDesigner&#xA;    interface IDataBindingSchemaProvider&#xA;    interface IDataSourceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ConnectToDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ConnectToDataSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ConnectToDataSource();" />
+      <MemberSignature Language="F#" Value="override this.ConnectToDataSource : unit -&gt; bool" Usage="dataBoundControlDesigner.ConnectToDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.CreateDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateDataSource();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataSource : unit -&gt; unit" Usage="dataBoundControlDesigner.CreateDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
+      <MemberSignature Language="F#" Value="override this.DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="dataBoundControlDesigner.DataBind dataBoundControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataSourceDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceDesigner As IDataSourceDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IDataSourceDesigner ^ DataSourceDesigner { System::Web::UI::Design::IDataSourceDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceDesigner : System.Web.UI.Design.IDataSourceDesigner" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataSourceDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DesignerView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerView As DesignerDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerDataSourceView ^ DesignerView { System::Web::UI::Design::DesignerDataSourceView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerView : System.Web.UI.Design.DesignerDataSourceView" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DesignerView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DisconnectFromDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DisconnectFromDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DisconnectFromDataSource();" />
+      <MemberSignature Language="F#" Value="override this.DisconnectFromDataSource : unit -&gt; unit" Usage="dataBoundControlDesigner.DisconnectFromDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dataBoundControlDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.GetDesignTimeDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDesignTimeDataSource () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ GetDesignTimeDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeDataSource : unit -&gt; System.Collections.IEnumerable&#xA;override this.GetDesignTimeDataSource : unit -&gt; System.Collections.IEnumerable" Usage="dataBoundControlDesigner.GetDesignTimeDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.GetSampleDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSampleDataSource () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ GetSampleDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetSampleDataSource : unit -&gt; System.Collections.IEnumerable&#xA;override this.GetSampleDataSource : unit -&gt; System.Collections.IEnumerable" Usage="dataBoundControlDesigner.GetSampleDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="dataBoundControlDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -340,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SampleRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int SampleRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SampleRowCount : int" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -364,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema</InterfaceMember>
@@ -428,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As IDataSourceViewSchema Implements IDataBindingSchemaProvider.Schema" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System.Web.UI.Design.IDataBindingSchemaProvider.Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema</InterfaceMember>
@@ -522,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.UseDataSourcePickerActionList" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UseDataSourcePickerActionList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UseDataSourcePickerActionList { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseDataSourcePickerActionList : bool" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.UseDataSourcePickerActionList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" />
   <TypeSignature Language="VB.NET" Value="Public Class NoStartupFormException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class NoStartupFormException : Exception" />
+  <TypeSignature Language="F#" Value="type NoStartupFormException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoStartupFormException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : string -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoStartupFormException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NoStartupFormException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException : string * Exception -&gt; Microsoft.VisualBasic.ApplicationServices.NoStartupFormException" Usage="new Microsoft.VisualBasic.ApplicationServices.NoStartupFormException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

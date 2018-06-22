@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesPermissionAttribute : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DirectoryServicesPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryServicesPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryServicesPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.DirectoryServices.DirectoryServicesPermissionAttribute" Usage="new System.DirectoryServices.DirectoryServicesPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="directoryServicesPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermissionAttribute.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.DirectoryServices.DirectoryServicesPermissionAttribute.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermissionAttribute.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As DirectoryServicesPermissionAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryServicesPermissionAccess PermissionAccess { System::DirectoryServices::DirectoryServicesPermissionAccess get(); void set(System::DirectoryServices::DirectoryServicesPermissionAccess value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.DirectoryServices.DirectoryServicesPermissionAccess with get, set" Usage="System.DirectoryServices.DirectoryServicesPermissionAttribute.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

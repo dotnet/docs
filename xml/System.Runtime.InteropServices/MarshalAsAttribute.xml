@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.MarshalAsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MarshalAsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarshalAsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MarshalAsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (unmanagedType As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MarshalAsAttribute(short unmanagedType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.MarshalAsAttribute : int16 -&gt; System.Runtime.InteropServices.MarshalAsAttribute" Usage="new System.Runtime.InteropServices.MarshalAsAttribute unmanagedType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -139,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.UnmanagedType unmanagedType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MarshalAsAttribute(System::Runtime::InteropServices::UnmanagedType unmanagedType);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.MarshalAsAttribute : System.Runtime.InteropServices.UnmanagedType -&gt; System.Runtime.InteropServices.MarshalAsAttribute" Usage="new System.Runtime.InteropServices.MarshalAsAttribute unmanagedType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType" />
       <MemberSignature Language="VB.NET" Value="Public ArraySubType As UnmanagedType " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::UnmanagedType ArraySubType;" />
+      <MemberSignature Language="F#" Value="val mutable ArraySubType : System.Runtime.InteropServices.UnmanagedType" Usage="System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.IidParameterIndex" />
       <MemberSignature Language="VB.NET" Value="Public IidParameterIndex As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int IidParameterIndex;" />
+      <MemberSignature Language="F#" Value="val mutable IidParameterIndex : int" Usage="System.Runtime.InteropServices.MarshalAsAttribute.IidParameterIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalCookie" />
       <MemberSignature Language="VB.NET" Value="Public MarshalCookie As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ MarshalCookie;" />
+      <MemberSignature Language="F#" Value="val mutable MarshalCookie : string" Usage="System.Runtime.InteropServices.MarshalAsAttribute.MarshalCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -301,6 +307,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType" />
       <MemberSignature Language="VB.NET" Value="Public MarshalType As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ MarshalType;" />
+      <MemberSignature Language="F#" Value="val mutable MarshalType : string" Usage="System.Runtime.InteropServices.MarshalAsAttribute.MarshalType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -348,6 +355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef" />
       <MemberSignature Language="VB.NET" Value="Public MarshalTypeRef As Type " />
       <MemberSignature Language="C++ CLI" Value="public: Type ^ MarshalTypeRef;" />
+      <MemberSignature Language="F#" Value="val mutable MarshalTypeRef : Type" Usage="System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -405,6 +413,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType" />
       <MemberSignature Language="VB.NET" Value="Public SafeArraySubType As VarEnum " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::VarEnum SafeArraySubType;" />
+      <MemberSignature Language="F#" Value="val mutable SafeArraySubType : System.Runtime.InteropServices.VarEnum" Usage="System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -448,6 +457,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType" />
       <MemberSignature Language="VB.NET" Value="Public SafeArrayUserDefinedSubType As Type " />
       <MemberSignature Language="C++ CLI" Value="public: Type ^ SafeArrayUserDefinedSubType;" />
+      <MemberSignature Language="F#" Value="val mutable SafeArrayUserDefinedSubType : Type" Usage="System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -491,6 +501,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" />
       <MemberSignature Language="VB.NET" Value="Public SizeConst As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int SizeConst;" />
+      <MemberSignature Language="F#" Value="val mutable SizeConst : int" Usage="System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -535,6 +546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex" />
       <MemberSignature Language="VB.NET" Value="Public SizeParamIndex As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short SizeParamIndex;" />
+      <MemberSignature Language="F#" Value="val mutable SizeParamIndex : int16" Usage="System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -599,6 +611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.MarshalAsAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As UnmanagedType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::UnmanagedType Value { System::Runtime::InteropServices::UnmanagedType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Runtime.InteropServices.UnmanagedType" Usage="System.Runtime.InteropServices.MarshalAsAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.FieldBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FieldBuilder&#xA;Inherits FieldInfo&#xA;Implements _FieldBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class FieldBuilder sealed : System::Reflection::FieldInfo, System::Runtime::InteropServices::_FieldBuilder" />
+  <TypeSignature Language="F#" Value="type FieldBuilder = class&#xA;    inherit FieldInfo&#xA;    interface _FieldBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As FieldAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::FieldAttributes Attributes { System::Reflection::FieldAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.FieldAttributes" Usage="System.Reflection.Emit.FieldBuilder.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Reflection.Emit.FieldBuilder.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.FieldHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldHandle As RuntimeFieldHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeFieldHandle FieldHandle { RuntimeFieldHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldHandle : RuntimeFieldHandle" Usage="System.Reflection.Emit.FieldBuilder.FieldHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.FieldType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FieldType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldType : Type" Usage="System.Reflection.Emit.FieldBuilder.FieldType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="fieldBuilder.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="fieldBuilder.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.GetToken" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToken () As FieldToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::FieldToken GetToken();" />
+      <MemberSignature Language="F#" Value="member this.GetToken : unit -&gt; System.Reflection.Emit.FieldToken" Usage="fieldBuilder.GetToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (obj As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj -&gt; obj" Usage="fieldBuilder.GetValue obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="fieldBuilder.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.Module" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.Emit.FieldBuilder.Module" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.FieldBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -433,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldBuilder.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Reflection.Emit.FieldBuilder.ReflectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetConstant(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetConstant (defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetConstant(System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.SetConstant : obj -&gt; unit" Usage="fieldBuilder.SetConstant defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -529,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="fieldBuilder.SetCustomAttribute customBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -573,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="fieldBuilder.SetCustomAttribute (con, binaryAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -628,6 +644,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMarshal(class System.Reflection.Emit.UnmanagedMarshal unmanagedMarshal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetMarshal(System.Reflection.Emit.UnmanagedMarshal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMarshal(System::Reflection::Emit::UnmanagedMarshal ^ unmanagedMarshal);" />
+      <MemberSignature Language="F#" Value="member this.SetMarshal : System.Reflection.Emit.UnmanagedMarshal -&gt; unit" Usage="fieldBuilder.SetMarshal unmanagedMarshal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -671,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetOffset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOffset (iOffset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOffset(int iOffset);" />
+      <MemberSignature Language="F#" Value="member this.SetOffset : int -&gt; unit" Usage="fieldBuilder.SetOffset iOffset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -714,6 +732,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object val, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldBuilder.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ val, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj * System.Reflection.BindingFlags * System.Reflection.Binder * System.Globalization.CultureInfo -&gt; unit" Usage="fieldBuilder.SetValue (obj, val, invokeAttr, binder, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelMethodContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelMethodContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelMethodContext" />
+  <TypeSignature Language="F#" Value="type ModelMethodContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelMethodContext.#ctor(System.Web.UI.Page)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelMethodContext(System::Web::UI::Page ^ page);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ModelMethodContext : System.Web.UI.Page -&gt; System.Web.UI.WebControls.ModelMethodContext" Usage="new System.Web.UI.WebControls.ModelMethodContext page" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelMethodContext.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As ModelMethodContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::WebControls::ModelMethodContext ^ Current { System::Web::UI::WebControls::ModelMethodContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Web.UI.WebControls.ModelMethodContext" Usage="System.Web.UI.WebControls.ModelMethodContext.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelMethodContext.ModelState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelState As ModelStateDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelStateDictionary ^ ModelState { System::Web::ModelBinding::ModelStateDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelState : System.Web.ModelBinding.ModelStateDictionary" Usage="System.Web.UI.WebControls.ModelMethodContext.ModelState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelMethodContext.TryUpdateModel``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model);" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)" Usage="modelMethodContext.TryUpdateModel model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelMethodContext.TryUpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)" Usage="modelMethodContext.TryUpdateModel (model, valueProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelMethodContext.UpdateModel``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model -&gt; unit (requires 'Model : null)" Usage="modelMethodContext.UpdateModel model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelMethodContext.UpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)" Usage="modelMethodContext.UpdateModel (model, valueProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

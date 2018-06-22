@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class X509SignatureGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509SignatureGenerator abstract" />
+  <TypeSignature Language="F#" Value="type X509SignatureGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.BuildPublicKey" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function BuildPublicKey () As PublicKey" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Security::Cryptography::X509Certificates::PublicKey ^ BuildPublicKey();" />
+      <MemberSignature Language="F#" Value="abstract member BuildPublicKey : unit -&gt; System.Security.Cryptography.X509Certificates.PublicKey" Usage="x509SignatureGenerator.BuildPublicKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.CreateForECDsa(System.Security.Cryptography.ECDsa)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateForECDsa (key As ECDsa) As X509SignatureGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509SignatureGenerator ^ CreateForECDsa(System::Security::Cryptography::ECDsa ^ key);" />
+      <MemberSignature Language="F#" Value="static member CreateForECDsa : System.Security.Cryptography.ECDsa -&gt; System.Security.Cryptography.X509Certificates.X509SignatureGenerator" Usage="System.Security.Cryptography.X509Certificates.X509SignatureGenerator.CreateForECDsa key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.CreateForRSA(System.Security.Cryptography.RSA,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateForRSA (key As RSA, signaturePadding As RSASignaturePadding) As X509SignatureGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::X509Certificates::X509SignatureGenerator ^ CreateForRSA(System::Security::Cryptography::RSA ^ key, System::Security::Cryptography::RSASignaturePadding ^ signaturePadding);" />
+      <MemberSignature Language="F#" Value="static member CreateForRSA : System.Security.Cryptography.RSA * System.Security.Cryptography.RSASignaturePadding -&gt; System.Security.Cryptography.X509Certificates.X509SignatureGenerator" Usage="System.Security.Cryptography.X509Certificates.X509SignatureGenerator.CreateForRSA (key, signaturePadding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.GetSignatureAlgorithmIdentifier(System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSignatureAlgorithmIdentifier (hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ GetSignatureAlgorithmIdentifier(System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="abstract member GetSignatureAlgorithmIdentifier : System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="x509SignatureGenerator.GetSignatureAlgorithmIdentifier hashAlgorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As PublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::PublicKey ^ PublicKey { System::Security::Cryptography::X509Certificates::PublicKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : System.Security.Cryptography.X509Certificates.PublicKey" Usage="System.Security.Cryptography.X509Certificates.X509SignatureGenerator.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509SignatureGenerator.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SignData (data As Byte(), hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="abstract member SignData : byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="x509SignatureGenerator.SignData (data, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

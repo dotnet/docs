@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkScope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BookmarkScope&#xA;Implements IEquatable(Of BookmarkScope)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BookmarkScope sealed : IEquatable&lt;System::Activities::BookmarkScope ^&gt;" />
+  <TypeSignature Language="F#" Value="type BookmarkScope = class&#xA;    interface IEquatable&lt;BookmarkScope&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScope.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BookmarkScope(Guid id);" />
+      <MemberSignature Language="F#" Value="new System.Activities.BookmarkScope : Guid -&gt; System.Activities.BookmarkScope" Usage="new System.Activities.BookmarkScope id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.BookmarkScope.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As BookmarkScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::BookmarkScope ^ Default { System::Activities::BookmarkScope ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Activities.BookmarkScope" Usage="System.Activities.BookmarkScope.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScope.Equals(System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BookmarkScope) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Activities::BookmarkScope ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Activities.BookmarkScope -&gt; bool" Usage="bookmarkScope.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScope.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bookmarkScope.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.BookmarkScope.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Activities.BookmarkScope.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScope.Initialize(System.Activities.NativeActivityContext,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (context As NativeActivityContext, id As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Activities::NativeActivityContext ^ context, Guid id);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.Activities.NativeActivityContext * Guid -&gt; unit" Usage="bookmarkScope.Initialize (context, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.BookmarkScope.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Activities.BookmarkScope.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

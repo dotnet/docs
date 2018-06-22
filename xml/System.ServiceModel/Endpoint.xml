@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Endpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class Endpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class Endpoint" />
+  <TypeSignature Language="F#" Value="type Endpoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.AddressUri" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ AddressUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AddressUri : Uri with get, set" Usage="System.ServiceModel.Endpoint.AddressUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.BehaviorConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfigurationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BehaviorConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorConfigurationName : string with get, set" Usage="System.ServiceModel.Endpoint.BehaviorConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As Binding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Endpoint.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Endpoint.GetAddress" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAddress () As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointAddress ^ GetAddress();" />
+      <MemberSignature Language="F#" Value="member this.GetAddress : unit -&gt; System.ServiceModel.EndpointAddress" Usage="endpoint.GetAddress " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Endpoint.GetAddress(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAddress (host As ServiceHostBase) As EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointAddress ^ GetAddress(System::ServiceModel::ServiceHostBase ^ host);" />
+      <MemberSignature Language="F#" Value="member this.GetAddress : System.ServiceModel.ServiceHostBase -&gt; System.ServiceModel.EndpointAddress" Usage="endpoint.GetAddress host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As Collection(Of AddressHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ Headers { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.AddressHeader&gt;" Usage="System.ServiceModel.Endpoint.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Property Identity As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointIdentity ^ Identity { System::ServiceModel::EndpointIdentity ^ get(); void set(System::ServiceModel::EndpointIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.EndpointIdentity with get, set" Usage="System.ServiceModel.Endpoint.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.ListenUri" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUri : Uri with get, set" Usage="System.ServiceModel.Endpoint.ListenUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Endpoint.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Endpoint.ServiceContractName" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceContractName As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ ServiceContractName { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceContractName : System.Xml.Linq.XName with get, set" Usage="System.ServiceModel.Endpoint.ServiceContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

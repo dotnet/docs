@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Configuration.DataServicesReplaceFunctionFeature" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServicesReplaceFunctionFeature&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServicesReplaceFunctionFeature : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type DataServicesReplaceFunctionFeature = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Configuration.DataServicesReplaceFunctionFeature.Enable" />
       <MemberSignature Language="VB.NET" Value="Public Property Enable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enable : bool with get, set" Usage="System.Data.Services.Configuration.DataServicesReplaceFunctionFeature.Enable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterCategoryType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PerformanceCounterCategoryType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PerformanceCounterCategoryType" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterCategoryType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.MultiInstance" />
       <MemberSignature Language="VB.NET" Value="MultiInstance" />
       <MemberSignature Language="C++ CLI" Value="MultiInstance" />
+      <MemberSignature Language="F#" Value="MultiInstance = 1" Usage="System.Diagnostics.PerformanceCounterCategoryType.MultiInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance" />
       <MemberSignature Language="VB.NET" Value="SingleInstance" />
       <MemberSignature Language="C++ CLI" Value="SingleInstance" />
+      <MemberSignature Language="F#" Value="SingleInstance = 0" Usage="System.Diagnostics.PerformanceCounterCategoryType.SingleInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Diagnostics.PerformanceCounterCategoryType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

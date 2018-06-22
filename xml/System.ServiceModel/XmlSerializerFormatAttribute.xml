@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XmlSerializerFormatAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerFormatAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerFormatAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlSerializerFormatAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As OperationFormatStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::OperationFormatStyle Style { System::ServiceModel::OperationFormatStyle get(); void set(System::ServiceModel::OperationFormatStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.ServiceModel.OperationFormatStyle with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportFaults : bool with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Use" />
       <MemberSignature Language="VB.NET" Value="Public Property Use As OperationFormatUse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::OperationFormatUse Use { System::ServiceModel::OperationFormatUse get(); void set(System::ServiceModel::OperationFormatUse value); };" />
+      <MemberSignature Language="F#" Value="member this.Use : System.ServiceModel.OperationFormatUse with get, set" Usage="System.ServiceModel.XmlSerializerFormatAttribute.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

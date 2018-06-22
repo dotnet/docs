@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DesignerActionUIStateChangeEventHandler(sender As Object, e As DesignerActionUIStateChangeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DesignerActionUIStateChangeEventHandler(System::Object ^ sender, DesignerActionUIStateChangeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DesignerActionUIStateChangeEventHandler = delegate of obj * DesignerActionUIStateChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

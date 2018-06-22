@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XPathExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathExpression abstract" />
+  <TypeSignature Language="F#" Value="type XPathExpression = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.AddSort(System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddSort (expr As Object, comparer As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddSort(System::Object ^ expr, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member AddSort : obj * System.Collections.IComparer -&gt; unit" Usage="xPathExpression.AddSort (expr, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -183,6 +185,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.AddSort(System.Object,System.Xml.XPath.XmlSortOrder,System.Xml.XPath.XmlCaseOrder,System.String,System.Xml.XPath.XmlDataType)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddSort (expr As Object, order As XmlSortOrder, caseOrder As XmlCaseOrder, lang As String, dataType As XmlDataType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddSort(System::Object ^ expr, System::Xml::XPath::XmlSortOrder order, System::Xml::XPath::XmlCaseOrder caseOrder, System::String ^ lang, System::Xml::XPath::XmlDataType dataType);" />
+      <MemberSignature Language="F#" Value="abstract member AddSort : obj * System.Xml.XPath.XmlSortOrder * System.Xml.XPath.XmlCaseOrder * string * System.Xml.XPath.XmlDataType -&gt; unit" Usage="xPathExpression.AddSort (expr, order, caseOrder, lang, dataType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -290,6 +293,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.Clone" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As XPathExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XPath::XPathExpression ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Xml.XPath.XPathExpression" Usage="xPathExpression.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -341,6 +345,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.Compile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compile (xpath As String) As XPathExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XPath::XPathExpression ^ Compile(System::String ^ xpath);" />
+      <MemberSignature Language="F#" Value="static member Compile : string -&gt; System.Xml.XPath.XPathExpression" Usage="System.Xml.XPath.XPathExpression.Compile xpath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -442,6 +447,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.Compile(System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compile (xpath As String, nsResolver As IXmlNamespaceResolver) As XPathExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XPath::XPathExpression ^ Compile(System::String ^ xpath, System::Xml::IXmlNamespaceResolver ^ nsResolver);" />
+      <MemberSignature Language="F#" Value="static member Compile : string * System.Xml.IXmlNamespaceResolver -&gt; System.Xml.XPath.XPathExpression" Usage="System.Xml.XPath.XPathExpression.Compile (xpath, nsResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -508,6 +514,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Expression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Expression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : string" Usage="System.Xml.XPath.XPathExpression.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -542,6 +549,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathExpression.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReturnType As XPathResultType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XPath::XPathResultType ReturnType { System::Xml::XPath::XPathResultType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : System.Xml.XPath.XPathResultType" Usage="System.Xml.XPath.XPathExpression.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -630,6 +638,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetContext (nsResolver As IXmlNamespaceResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetContext(System::Xml::IXmlNamespaceResolver ^ nsResolver);" />
+      <MemberSignature Language="F#" Value="abstract member SetContext : System.Xml.IXmlNamespaceResolver -&gt; unit" Usage="xPathExpression.SetContext nsResolver" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -728,6 +737,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathExpression.SetContext(System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetContext (nsManager As XmlNamespaceManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetContext(System::Xml::XmlNamespaceManager ^ nsManager);" />
+      <MemberSignature Language="F#" Value="abstract member SetContext : System.Xml.XmlNamespaceManager -&gt; unit" Usage="xPathExpression.SetContext nsManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

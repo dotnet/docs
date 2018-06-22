@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ButtonBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ButtonBase&#xA;Inherits ContentControl&#xA;Implements ICommandSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class ButtonBase abstract : System::Windows::Controls::ContentControl, System::Windows::Input::ICommandSource" />
+  <TypeSignature Language="F#" Value="type ButtonBase = class&#xA;    inherit ContentControl&#xA;    interface ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.ButtonBase.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : System.Windows.RoutedEventHandler " Usage="member this.Click : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.ClickEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClickEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Primitives.ButtonBase.ClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.ClickMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ClickMode As ClickMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ClickMode ClickMode { System::Windows::Controls::ClickMode get(); void set(System::Windows::Controls::ClickMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ClickMode : System.Windows.Controls.ClickMode with get, set" Usage="System.Windows.Controls.Primitives.ButtonBase.ClickMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.ClickModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ClickModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClickModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ButtonBase.ClickModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Controls.Primitives.ButtonBase.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.CommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="System.Windows.Controls.Primitives.ButtonBase.CommandParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -329,6 +336,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.CommandParameterProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ButtonBase.CommandParameterProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +356,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.CommandProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ButtonBase.CommandProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.CommandTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTarget : System.Windows.IInputElement with get, set" Usage="System.Windows.Controls.Primitives.ButtonBase.CommandTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -423,6 +433,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.CommandTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ButtonBase.CommandTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -442,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.IsEnabledCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="System.Windows.Controls.Primitives.ButtonBase.IsEnabledCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ButtonBase.IsPressed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPressed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:  property bool IsPressed {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsPressed : bool with get, set" Usage="System.Windows.Controls.Primitives.ButtonBase.IsPressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -526,6 +539,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ButtonBase.IsPressedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsPressedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsPressedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsPressedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.ButtonBase.IsPressedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -545,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (e As AccessKeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnAccessKey : System.Windows.Input.AccessKeyEventArgs -&gt; unit" Usage="buttonBase.OnAccessKey e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -575,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick();" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : unit -&gt; unit&#xA;override this.OnClick : unit -&gt; unit" Usage="buttonBase.OnClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnIsPressedChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIsPressedChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIsPressedChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="abstract member OnIsPressedChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit&#xA;override this.OnIsPressedChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="buttonBase.OnIsPressedChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="buttonBase.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -667,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="buttonBase.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -700,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="buttonBase.OnLostKeyboardFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -723,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostMouseCapture (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostMouseCapture(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostMouseCapture : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="buttonBase.OnLostMouseCapture e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -756,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseEnter : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="buttonBase.OnMouseEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="buttonBase.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -822,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="buttonBase.OnMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -857,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="buttonBase.OnMouseLeftButtonUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -892,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="buttonBase.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -925,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ButtonBase.OnRenderSizeChanged(System.Windows.SizeChangedInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnRenderSizeChanged (sizeInfo As SizeChangedInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnRenderSizeChanged(System::Windows::SizeChangedInfo ^ sizeInfo);" />
+      <MemberSignature Language="F#" Value="override this.OnRenderSizeChanged : System.Windows.SizeChangedInfo -&gt; unit" Usage="buttonBase.OnRenderSizeChanged sizeInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

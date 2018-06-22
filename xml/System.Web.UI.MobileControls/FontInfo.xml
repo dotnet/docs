@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FontInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class FontInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class FontInfo" />
+  <TypeSignature Language="F#" Value="type FontInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.FontInfo.Bold" />
       <MemberSignature Language="VB.NET" Value="Public Property Bold As BooleanOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::BooleanOption Bold { System::Web::UI::MobileControls::BooleanOption get(); void set(System::Web::UI::MobileControls::BooleanOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Bold : System.Web.UI.MobileControls.BooleanOption with get, set" Usage="System.Web.UI.MobileControls.FontInfo.Bold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.FontInfo.Italic" />
       <MemberSignature Language="VB.NET" Value="Public Property Italic As BooleanOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::BooleanOption Italic { System::Web::UI::MobileControls::BooleanOption get(); void set(System::Web::UI::MobileControls::BooleanOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Italic : System.Web.UI.MobileControls.BooleanOption with get, set" Usage="System.Web.UI.MobileControls.FontInfo.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.FontInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.MobileControls.FontInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.FontInfo.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As FontSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::FontSize Size { System::Web::UI::MobileControls::FontSize get(); void set(System::Web::UI::MobileControls::FontSize value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Web.UI.MobileControls.FontSize with get, set" Usage="System.Web.UI.MobileControls.FontInfo.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.FontInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

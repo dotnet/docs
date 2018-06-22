@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.BasicProfileViolationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class BasicProfileViolationCollection&#xA;Inherits CollectionBase&#xA;Implements IEnumerable(Of BasicProfileViolation)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicProfileViolationCollection : System::Collections::CollectionBase, System::Collections::Generic::IEnumerable&lt;System::Web::Services::Description::BasicProfileViolation ^&gt;" />
+  <TypeSignature Language="F#" Value="type BasicProfileViolationCollection = class&#xA;    inherit CollectionBase&#xA;    interface seq&lt;BasicProfileViolation&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Contains(System.Web.Services.Description.BasicProfileViolation)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (violation As BasicProfileViolation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Description.BasicProfileViolation -&gt; bool" Usage="basicProfileViolationCollection.Contains violation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.CopyTo(System.Web.Services.Description.BasicProfileViolation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As BasicProfileViolation(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::BasicProfileViolation ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Description.BasicProfileViolation[] * int -&gt; unit" Usage="basicProfileViolationCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.IndexOf(System.Web.Services.Description.BasicProfileViolation)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (violation As BasicProfileViolation) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Description.BasicProfileViolation -&gt; int" Usage="basicProfileViolationCollection.IndexOf violation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Insert(System.Int32,System.Web.Services.Description.BasicProfileViolation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, violation As BasicProfileViolation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::BasicProfileViolation ^ violation);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Description.BasicProfileViolation -&gt; unit" Usage="basicProfileViolationCollection.Insert (index, violation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BasicProfileViolation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::BasicProfileViolation ^ default[int] { System::Web::Services::Description::BasicProfileViolation ^ get(int index); void set(int index, System::Web::Services::Description::BasicProfileViolation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Description.BasicProfileViolation with get, set" Usage="System.Web.Services.Description.BasicProfileViolationCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.Remove(System.Web.Services.Description.BasicProfileViolation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (violation As BasicProfileViolation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::BasicProfileViolation ^ violation);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Description.BasicProfileViolation -&gt; unit" Usage="basicProfileViolationCollection.Remove violation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="basicProfileViolationCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

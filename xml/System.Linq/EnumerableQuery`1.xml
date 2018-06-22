@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.EnumerableQuery`1" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumerableQuery(Of T)&#xA;Inherits EnumerableQuery&#xA;Implements IEnumerable(Of T), IOrderedQueryable(Of T), IQueryable(Of T), IQueryProvider" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class EnumerableQuery : System::Linq::EnumerableQuery, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Linq::IOrderedQueryable&lt;T&gt;, System::Linq::IQueryable&lt;T&gt;, System::Linq::IQueryProvider" />
+  <TypeSignature Language="F#" Value="type EnumerableQuery&lt;'T&gt; = class&#xA;    inherit EnumerableQuery&#xA;    interface IOrderedQueryable&lt;'T&gt;&#xA;    interface IQueryable&#xA;    interface IQueryProvider&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable&lt;'T&gt;&#xA;    interface IOrderedQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableQuery`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enumerable As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerableQuery(System::Collections::Generic::IEnumerable&lt;T&gt; ^ enumerable);" />
+      <MemberSignature Language="F#" Value="new System.Linq.EnumerableQuery&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Linq.EnumerableQuery&lt;'T&gt;" Usage="new System.Linq.EnumerableQuery&lt;'T&gt; enumerable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableQuery`1.#ctor(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerableQuery(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.Linq.EnumerableQuery&lt;'T&gt; : System.Linq.Expressions.Expression -&gt; System.Linq.EnumerableQuery&lt;'T&gt;" Usage="new System.Linq.EnumerableQuery&lt;'T&gt; expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
@@ -192,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#ElementType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ElementType As Type Implements IQueryable.ElementType" />
       <MemberSignature Language="C++ CLI" Value="property Type ^ System.Linq.IQueryable.ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.ElementType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Expression" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Expression As Expression Implements IQueryable.Expression" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System.Linq.IQueryable.Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.Expression" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Provider" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Provider As IQueryProvider Implements IQueryable.Provider" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System.Linq.IQueryable.Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.EnumerableQuery&lt;'T&gt;.System.Linq.IQueryable.Provider" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>
@@ -447,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableQuery`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="enumerableQuery.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>

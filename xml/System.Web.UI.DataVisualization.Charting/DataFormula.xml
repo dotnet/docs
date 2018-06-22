@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataFormula" />
   <TypeSignature Language="VB.NET" Value="Public Class DataFormula" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataFormula" />
+  <TypeSignature Language="F#" Value="type DataFormula = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.CopySeriesValues(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopySeriesValues (inputSeries As String, outputSeries As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopySeriesValues(System::String ^ inputSeries, System::String ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.CopySeriesValues : string * string -&gt; unit" Usage="dataFormula.CopySeriesValues (inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, inputSeries As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::String ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * string -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, inputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, inputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, inputSeries As String, outputSeries As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::String ^ inputSeries, System::String ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * string * string -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, parameters As String, inputSeries As String, outputSeries As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::String ^ parameters, System::String ^ inputSeries, System::String ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * string * string * string -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, parameters, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FinancialFormula (formulaName As FinancialFormula, parameters As String, inputSeries As Series, outputSeries As Series)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FinancialFormula(System::Web::UI::DataVisualization::Charting::FinancialFormula formulaName, System::String ^ parameters, System::Web::UI::DataVisualization::Charting::Series ^ inputSeries, System::Web::UI::DataVisualization::Charting::Series ^ outputSeries);" />
+      <MemberSignature Language="F#" Value="member this.FinancialFormula : System.Web.UI.DataVisualization.Charting.FinancialFormula * string * System.Web.UI.DataVisualization.Charting.Series * System.Web.UI.DataVisualization.Charting.Series -&gt; unit" Usage="dataFormula.FinancialFormula (formulaName, parameters, inputSeries, outputSeries)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataFormula.IsEmptyPointIgnored" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEmptyPointIgnored As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmptyPointIgnored { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmptyPointIgnored : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataFormula.IsEmptyPointIgnored" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataFormula.IsStartFromFirst" />
       <MemberSignature Language="VB.NET" Value="Public Property IsStartFromFirst As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStartFromFirst { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsStartFromFirst : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.DataFormula.IsStartFromFirst" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -285,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataFormula.Statistics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statistics As StatisticFormula" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::StatisticFormula ^ Statistics { System::Web::UI::DataVisualization::Charting::StatisticFormula ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Statistics : System.Web.UI.DataVisualization.Charting.StatisticFormula" Usage="System.Web.UI.DataVisualization.Charting.DataFormula.Statistics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

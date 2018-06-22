@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptReference&#xA;Inherits ScriptReferenceBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptReference : System::Web::UI::ScriptReferenceBase" />
+  <TypeSignature Language="F#" Value="type ScriptReference = class&#xA;    inherit ScriptReferenceBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptReference : string -&gt; System.Web.UI.ScriptReference" Usage="new System.Web.UI.ScriptReference path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, assembly As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptReference(System::String ^ name, System::String ^ assembly);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptReference : string * string -&gt; System.Web.UI.ScriptReference" Usage="new System.Web.UI.ScriptReference (name, assembly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Property Assembly As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Assembly { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : string with get, set" Usage="System.Web.UI.ScriptReference.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetUrl(System::Web::UI::ScriptManager ^ scriptManager, bool zip);" />
+      <MemberSignature Language="F#" Value="override this.GetUrl : System.Web.UI.ScriptManager * bool -&gt; string" Usage="scriptReference.GetUrl (scriptManager, zip)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.IgnoreScriptPath" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreScriptPath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreScriptPath { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreScriptPath : bool with get, set" Usage="System.Web.UI.ScriptReference.IgnoreScriptPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsAjaxFrameworkScript(System::Web::UI::ScriptManager ^ scriptManager);" />
+      <MemberSignature Language="F#" Value="override this.IsAjaxFrameworkScript : System.Web.UI.ScriptManager -&gt; bool" Usage="scriptReference.IsAjaxFrameworkScript scriptManager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.IsFromSystemWebExtensions" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsFromSystemWebExtensions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsFromSystemWebExtensions();" />
+      <MemberSignature Language="F#" Value="override this.IsFromSystemWebExtensions : unit -&gt; bool" Usage="scriptReference.IsFromSystemWebExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -322,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.ScriptReference.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="scriptReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

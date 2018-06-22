@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.GetParentChain" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GetParentChain&#xA;Inherits CodeActivity(Of IEnumerable(Of Activity))" />
   <TypeSignature Language="C++ CLI" Value="public ref class GetParentChain sealed : System::Activities::CodeActivity&lt;System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type GetParentChain = class&#xA;    inherit CodeActivity&lt;seq&lt;Activity&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.GetParentChain.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As IEnumerable(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; seq&lt;System.Activities.Activity&gt;" Usage="getParentChain.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.GetParentChain.ValidationContext" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationContext As InArgument(Of ValidationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::Activities::Validation::ValidationContext ^&gt; ^ ValidationContext { System::Activities::InArgument&lt;System::Activities::Validation::ValidationContext ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::Activities::Validation::ValidationContext ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationContext : System.Activities.InArgument&lt;System.Activities.Validation.ValidationContext&gt; with get, set" Usage="System.Activities.Validation.GetParentChain.ValidationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

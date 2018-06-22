@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Constraint" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Constraint" />
   <TypeSignature Language="C++ CLI" Value="public ref class Constraint abstract" />
+  <TypeSignature Language="F#" Value="type Constraint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Constraint._DataSet" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property _DataSet As DataSet" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::DataSet ^ _DataSet { System::Data::DataSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._DataSet : System.Data.DataSet" Usage="System.Data.Constraint._DataSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Constraint.CheckStateForProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckStateForProperty ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckStateForProperty();" />
+      <MemberSignature Language="F#" Value="member this.CheckStateForProperty : unit -&gt; unit" Usage="constraint.CheckStateForProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Constraint.ConstraintName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConstraintName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConstraintName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConstraintName : string with get, set" Usage="System.Data.Constraint.ConstraintName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Constraint.ExtendedProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedProperties As PropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::PropertyCollection ^ ExtendedProperties { System::Data::PropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProperties : System.Data.PropertyCollection" Usage="System.Data.Constraint.ExtendedProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -255,6 +260,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetDataSet(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Constraint.SetDataSet(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void SetDataSet(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="member this.SetDataSet : System.Data.DataSet -&gt; unit" Usage="constraint.SetDataSet dataSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -298,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Constraint.Table" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Table As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.Constraint.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -338,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Constraint.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="constraint.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.Grammar" />
   <TypeSignature Language="VB.NET" Value="Public Class Grammar" />
   <TypeSignature Language="C++ CLI" Value="public ref class Grammar" />
+  <TypeSignature Language="F#" Value="type Grammar = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@ private static Grammar CreateGrammarFromFile()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.IO.Stream -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -243,6 +245,7 @@ private static Grammar CreateGrammarFromStream()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.GrammarBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As GrammarBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::GrammarBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.GrammarBuilder -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -299,6 +302,7 @@ private static Grammar CreateGrammarBuilderGrammar()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::SrgsGrammar::SrgsDocument ^ srgsDocument);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.SrgsGrammar.SrgsDocument -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar srgsDocument" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -387,6 +391,7 @@ private static Grammar CreateSrgsDocumentGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : string -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -479,6 +484,7 @@ private static Grammar CreateGrammarFromFile()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string ruleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::IO::Stream ^ stream, System::String ^ ruleName);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.IO.Stream * string -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (stream, ruleName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -573,6 +579,7 @@ private static Grammar CreateGrammarFromStream2()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsDocument, string ruleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsDocument,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::SrgsGrammar::SrgsDocument ^ srgsDocument, System::String ^ ruleName);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.SrgsGrammar.SrgsDocument * string -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (srgsDocument, ruleName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -695,6 +702,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, ruleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::String ^ path, System::String ^ ruleName);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : string * string -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (path, ruleName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -787,6 +795,7 @@ private static Grammar CreateGrammarFromFile2()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string ruleName, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.IO.Stream,System.String,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::IO::Stream ^ stream, System::String ^ ruleName, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.IO.Stream * string * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (stream, ruleName, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -825,6 +834,7 @@ private static Grammar CreateGrammarFromFile2()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string ruleName, class System.Uri baseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.IO.Stream,System.String,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::IO::Stream ^ stream, System::String ^ ruleName, Uri ^ baseUri);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.IO.Stream * string * Uri -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (stream, ruleName, baseUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -945,6 +955,7 @@ private static Grammar CreateGrammarFromStream3()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsDocument, string ruleName, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsDocument,System.String,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::SrgsGrammar::SrgsDocument ^ srgsDocument, System::String ^ ruleName, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.SrgsGrammar.SrgsDocument * string * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (srgsDocument, ruleName, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -980,6 +991,7 @@ private static Grammar CreateGrammarFromStream3()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsDocument, string ruleName, class System.Uri baseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsDocument,System.String,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::SrgsGrammar::SrgsDocument ^ srgsDocument, System::String ^ ruleName, Uri ^ baseUri);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.SrgsGrammar.SrgsDocument * string * Uri -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (srgsDocument, ruleName, baseUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1097,6 +1109,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.String,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, ruleName As String, parameters As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::String ^ path, System::String ^ ruleName, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : string * string * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (path, ruleName, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1134,6 +1147,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string ruleName, class System.Uri baseUri, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.IO.Stream,System.String,System.Uri,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::IO::Stream ^ stream, System::String ^ ruleName, Uri ^ baseUri, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.IO.Stream * string * Uri * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (stream, ruleName, baseUri, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1178,6 +1192,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsDocument, string ruleName, class System.Uri baseUri, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsDocument,System.String,System.Uri,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Grammar(System::Speech::Recognition::SrgsGrammar::SrgsDocument ^ srgsDocument, System::String ^ ruleName, Uri ^ baseUri, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.Grammar : System.Speech.Recognition.SrgsGrammar.SrgsDocument * string * Uri * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="new System.Speech.Recognition.Grammar (srgsDocument, ruleName, baseUri, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1223,6 +1238,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Speech.Recognition.Grammar.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1278,6 +1294,7 @@ private static void DumpGrammarStatus(Grammar item)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.IsStg" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property IsStg As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsStg { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStg : bool" Usage="System.Speech.Recognition.Grammar.IsStg" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1312,6 +1329,7 @@ private static void DumpGrammarStatus(Grammar item)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.Loaded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Loaded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Loaded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Loaded : bool" Usage="System.Speech.Recognition.Grammar.Loaded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1366,6 +1384,7 @@ private static void DumpGrammarStatus(Grammar item)
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Speech.Recognition.Grammar LoadLocalizedGrammarFromType(class System.Type type, object[] onInitParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.LoadLocalizedGrammarFromType(System.Type,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Speech::Recognition::Grammar ^ LoadLocalizedGrammarFromType(Type ^ type, ... cli::array &lt;System::Object ^&gt; ^ onInitParameters);" />
+      <MemberSignature Language="F#" Value="static member LoadLocalizedGrammarFromType : Type * obj[] -&gt; System.Speech.Recognition.Grammar" Usage="System.Speech.Recognition.Grammar.LoadLocalizedGrammarFromType (type, onInitParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1405,6 +1424,7 @@ private static void DumpGrammarStatus(Grammar item)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Speech.Recognition.Grammar.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1464,6 +1484,7 @@ recognizer.RecognizeAsync(RecognizeMode.Multiple);
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.Speech.Recognition.Grammar.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1531,6 +1552,7 @@ recognizer.RecognizeAsync(RecognizeMode.Multiple);
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.ResourceName" />
       <MemberSignature Language="VB.NET" Value="Protected Property ResourceName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ResourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceName : string with get, set" Usage="System.Speech.Recognition.Grammar.ResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1551,6 +1573,7 @@ recognizer.RecognizeAsync(RecognizeMode.Multiple);
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.RuleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RuleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RuleName : string" Usage="System.Speech.Recognition.Grammar.RuleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1610,6 +1633,7 @@ private static void DumpGrammarStatus(Grammar item)
       <MemberSignature Language="DocId" Value="E:System.Speech.Recognition.Grammar.SpeechRecognized" />
       <MemberSignature Language="VB.NET" Value="Public Event SpeechRecognized As EventHandler(Of SpeechRecognizedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Speech::Recognition::SpeechRecognizedEventArgs ^&gt; ^ SpeechRecognized;" />
+      <MemberSignature Language="F#" Value="member this.SpeechRecognized : EventHandler&lt;System.Speech.Recognition.SpeechRecognizedEventArgs&gt; " Usage="member this.SpeechRecognized : System.EventHandler&lt;System.Speech.Recognition.SpeechRecognizedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1679,6 +1703,7 @@ public partial class Form1 : Form
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.StgInit(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub StgInit (parameters As Object())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void StgInit(cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.StgInit : obj[] -&gt; unit" Usage="grammar.StgInit parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1716,6 +1741,7 @@ public partial class Form1 : Form
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.Grammar.Weight" />
       <MemberSignature Language="VB.NET" Value="Public Property Weight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Weight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Weight : single with get, set" Usage="System.Speech.Recognition.Grammar.Weight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

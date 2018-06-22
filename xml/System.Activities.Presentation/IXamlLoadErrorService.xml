@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IXamlLoadErrorService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlLoadErrorService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlLoadErrorService" />
+  <TypeSignature Language="F#" Value="type IXamlLoadErrorService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors(System.Collections.Generic.IList{System.Activities.Presentation.XamlLoadErrorInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowXamlLoadErrors (errors As IList(Of XamlLoadErrorInfo))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowXamlLoadErrors(System::Collections::Generic::IList&lt;System::Activities::Presentation::XamlLoadErrorInfo ^&gt; ^ errors);" />
+      <MemberSignature Language="F#" Value="abstract member ShowXamlLoadErrors : System.Collections.Generic.IList&lt;System.Activities.Presentation.XamlLoadErrorInfo&gt; -&gt; unit" Usage="iXamlLoadErrorService.ShowXamlLoadErrors errors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataContractResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataContractResolver abstract" />
+  <TypeSignature Language="F#" Value="type DataContractResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractResolver.ResolveName(System.String,System.String,System.Type,System.Runtime.Serialization.DataContractResolver)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveName (typeName As String, typeNamespace As String, declaredType As Type, knownTypeResolver As DataContractResolver) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ ResolveName(System::String ^ typeName, System::String ^ typeNamespace, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveName : string * string * Type * System.Runtime.Serialization.DataContractResolver -&gt; Type" Usage="dataContractResolver.ResolveName (typeName, typeNamespace, declaredType, knownTypeResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveType(class System.Type type, class System.Type declaredType, class System.Runtime.Serialization.DataContractResolver knownTypeResolver, [out] class System.Xml.XmlDictionaryString&amp; typeName, [out] class System.Xml.XmlDictionaryString&amp; typeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractResolver.TryResolveType(System.Type,System.Type,System.Runtime.Serialization.DataContractResolver,System.Xml.XmlDictionaryString@,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryResolveType(Type ^ type, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeName, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member TryResolveType : Type * Type * System.Runtime.Serialization.DataContractResolver *  *  -&gt; bool" Usage="dataContractResolver.TryResolveType (type, declaredType, knownTypeResolver, typeName, typeNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

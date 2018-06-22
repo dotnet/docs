@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyActiveDirectorySchemaPropertyCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyActiveDirectorySchemaPropertyCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReadOnlyActiveDirectorySchemaPropertyCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (schemaProperty As ActiveDirectorySchemaProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ schemaProperty);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty -&gt; bool" Usage="readOnlyActiveDirectorySchemaPropertyCollection.Contains schemaProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (properties As ActiveDirectorySchemaProperty(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^&gt; ^ properties, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty[] * int -&gt; unit" Usage="readOnlyActiveDirectorySchemaPropertyCollection.CopyTo (properties, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (schemaProperty As ActiveDirectorySchemaProperty) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ schemaProperty);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty -&gt; int" Usage="readOnlyActiveDirectorySchemaPropertyCollection.IndexOf schemaProperty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ActiveDirectorySchemaProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

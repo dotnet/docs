@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpResponse" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpResponse" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpResponse sealed" />
+  <TypeSignature Language="F#" Value="type HttpResponse = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponse(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpResponse : System.IO.TextWriter -&gt; System.Web.HttpResponse" Usage="new System.Web.HttpResponse writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddCacheDependency(System.Web.Caching.CacheDependency[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCacheDependency (ParamArray dependencies As CacheDependency())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCacheDependency(... cli::array &lt;System::Web::Caching::CacheDependency ^&gt; ^ dependencies);" />
+      <MemberSignature Language="F#" Value="member this.AddCacheDependency : System.Web.Caching.CacheDependency[] -&gt; unit" Usage="httpResponse.AddCacheDependency dependencies" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddCacheItemDependencies(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCacheItemDependencies (cacheKeys As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCacheItemDependencies(System::Collections::ArrayList ^ cacheKeys);" />
+      <MemberSignature Language="F#" Value="member this.AddCacheItemDependencies : System.Collections.ArrayList -&gt; unit" Usage="httpResponse.AddCacheItemDependencies cacheKeys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddCacheItemDependencies(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCacheItemDependencies (cacheKeys As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCacheItemDependencies(cli::array &lt;System::String ^&gt; ^ cacheKeys);" />
+      <MemberSignature Language="F#" Value="member this.AddCacheItemDependencies : string[] -&gt; unit" Usage="httpResponse.AddCacheItemDependencies cacheKeys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddCacheItemDependency(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCacheItemDependency (cacheKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCacheItemDependency(System::String ^ cacheKey);" />
+      <MemberSignature Language="F#" Value="member this.AddCacheItemDependency : string -&gt; unit" Usage="httpResponse.AddCacheItemDependency cacheKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddFileDependencies(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFileDependencies (filenames As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFileDependencies(System::Collections::ArrayList ^ filenames);" />
+      <MemberSignature Language="F#" Value="member this.AddFileDependencies : System.Collections.ArrayList -&gt; unit" Usage="httpResponse.AddFileDependencies filenames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddFileDependencies(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFileDependencies (filenames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFileDependencies(cli::array &lt;System::String ^&gt; ^ filenames);" />
+      <MemberSignature Language="F#" Value="member this.AddFileDependencies : string[] -&gt; unit" Usage="httpResponse.AddFileDependencies filenames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -341,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddFileDependency(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFileDependency (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFileDependency(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="member this.AddFileDependency : string -&gt; unit" Usage="httpResponse.AddFileDependency filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHeader (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHeader(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddHeader : string * string -&gt; unit" Usage="httpResponse.AddHeader (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AddOnSendingHeaders(System.Action{System.Web.HttpContext})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOnSendingHeaders (callback As Action(Of HttpContext)) As ISubscriptionToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::ISubscriptionToken ^ AddOnSendingHeaders(Action&lt;System::Web::HttpContext ^&gt; ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.AddOnSendingHeaders : Action&lt;System.Web.HttpContext&gt; -&gt; System.Web.ISubscriptionToken" Usage="httpResponse.AddOnSendingHeaders callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AppendCookie(System.Web.HttpCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendCookie (cookie As HttpCookie)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendCookie(System::Web::HttpCookie ^ cookie);" />
+      <MemberSignature Language="F#" Value="member this.AppendCookie : System.Web.HttpCookie -&gt; unit" Usage="httpResponse.AppendCookie cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AppendHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendHeader (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendHeader(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AppendHeader : string * string -&gt; unit" Usage="httpResponse.AppendHeader (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.AppendToLog(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendToLog (param As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendToLog(System::String ^ param);" />
+      <MemberSignature Language="F#" Value="member this.AppendToLog : string -&gt; unit" Usage="httpResponse.AppendToLog param" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.ApplyAppPathModifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyAppPathModifier (virtualPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ApplyAppPathModifier(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.ApplyAppPathModifier : string -&gt; string" Usage="httpResponse.ApplyAppPathModifier virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -624,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.BeginFlush(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginFlush (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFlush(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginFlush : AsyncCallback * obj -&gt; IAsyncResult" Usage="httpResponse.BeginFlush (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -658,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.BinaryWrite(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub BinaryWrite (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BinaryWrite(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="member this.BinaryWrite : byte[] -&gt; unit" Usage="httpResponse.BinaryWrite buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -691,6 +708,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public Property Buffer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Buffer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : bool with get, set" Usage="System.Web.HttpResponse.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -719,6 +737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.BufferOutput" />
       <MemberSignature Language="VB.NET" Value="Public Property BufferOutput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BufferOutput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BufferOutput : bool with get, set" Usage="System.Web.HttpResponse.BufferOutput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -752,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Cache" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cache As HttpCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCachePolicy ^ Cache { System::Web::HttpCachePolicy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cache : System.Web.HttpCachePolicy" Usage="System.Web.HttpResponse.Cache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -782,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.CacheControl" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheControl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CacheControl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheControl : string with get, set" Usage="System.Web.HttpResponse.CacheControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -812,6 +833,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Charset" />
       <MemberSignature Language="VB.NET" Value="Public Property Charset As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Charset { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Charset : string with get, set" Usage="System.Web.HttpResponse.Charset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -848,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="httpResponse.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -886,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.ClearContent" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearContent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearContent();" />
+      <MemberSignature Language="F#" Value="member this.ClearContent : unit -&gt; unit" Usage="httpResponse.ClearContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -922,6 +946,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.ClearHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearHeaders ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearHeaders();" />
+      <MemberSignature Language="F#" Value="member this.ClearHeaders : unit -&gt; unit" Usage="httpResponse.ClearHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -954,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.ClientDisconnectedToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientDisconnectedToken As CancellationToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::CancellationToken ClientDisconnectedToken { System::Threading::CancellationToken get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientDisconnectedToken : System.Threading.CancellationToken" Usage="System.Web.HttpResponse.ClientDisconnectedToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -995,6 +1021,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="httpResponse.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1024,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ ContentEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : System.Text.Encoding with get, set" Usage="System.Web.HttpResponse.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1060,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Web.HttpResponse.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1093,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Cookies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookies As HttpCookieCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Web.HttpCookieCollection" Usage="System.Web.HttpResponse.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1130,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.DisableKernelCache" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisableKernelCache ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisableKernelCache();" />
+      <MemberSignature Language="F#" Value="member this.DisableKernelCache : unit -&gt; unit" Usage="httpResponse.DisableKernelCache " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1157,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.DisableUserCache" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisableUserCache ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisableUserCache();" />
+      <MemberSignature Language="F#" Value="member this.DisableUserCache : unit -&gt; unit" Usage="httpResponse.DisableUserCache " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1184,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.End" />
       <MemberSignature Language="VB.NET" Value="Public Sub End ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void End();" />
+      <MemberSignature Language="F#" Value="member this.End : unit -&gt; unit" Usage="httpResponse.End " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1220,6 +1253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.EndFlush(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndFlush (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndFlush(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndFlush : IAsyncResult -&gt; unit" Usage="httpResponse.EndFlush asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1245,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Expires { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Expires : int with get, set" Usage="System.Web.HttpResponse.Expires" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1272,6 +1307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.ExpiresAbsolute" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpiresAbsolute As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ExpiresAbsolute { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpiresAbsolute : DateTime with get, set" Usage="System.Web.HttpResponse.ExpiresAbsolute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1299,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Filter { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.IO.Stream with get, set" Usage="System.Web.HttpResponse.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1335,6 +1372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="httpResponse.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1373,6 +1411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.FlushAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function FlushAsync () As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ FlushAsync();" />
+      <MemberSignature Language="F#" Value="member this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="httpResponse.FlushAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1394,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.HeaderEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ HeaderEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderEncoding : System.Text.Encoding with get, set" Usage="System.Web.HttpResponse.HeaderEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1429,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpResponse.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1457,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.HeadersWritten" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeadersWritten As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HeadersWritten { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeadersWritten : bool" Usage="System.Web.HttpResponse.HeadersWritten" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1480,6 +1522,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.IsClientConnected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClientConnected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClientConnected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClientConnected : bool" Usage="System.Web.HttpResponse.IsClientConnected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1520,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.IsRequestBeingRedirected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequestBeingRedirected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequestBeingRedirected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequestBeingRedirected : bool" Usage="System.Web.HttpResponse.IsRequestBeingRedirected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1548,6 +1592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Output" />
       <MemberSignature Language="VB.NET" Value="Public Property Output As TextWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ Output { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Output : System.IO.TextWriter with get, set" Usage="System.Web.HttpResponse.Output" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1578,6 +1623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.OutputStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ OutputStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputStream : System.IO.Stream" Usage="System.Web.HttpResponse.OutputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1621,6 +1667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Pics(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pics (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pics(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Pics : string -&gt; unit" Usage="httpResponse.Pics value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1670,6 +1717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.PushPromise(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PushPromise (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushPromise(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.PushPromise : string -&gt; unit" Usage="httpResponse.PushPromise path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1700,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.PushPromise(System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PushPromise (path As String, method As String, headers As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushPromise(System::String ^ path, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ headers);" />
+      <MemberSignature Language="F#" Value="member this.PushPromise : string * string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="httpResponse.PushPromise (path, method, headers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1743,6 +1792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Redirect(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Redirect (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Redirect(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Redirect : string -&gt; unit" Usage="httpResponse.Redirect url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1789,6 +1839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Redirect (url As String, endResponse As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Redirect(System::String ^ url, bool endResponse);" />
+      <MemberSignature Language="F#" Value="member this.Redirect : string * bool -&gt; unit" Usage="httpResponse.Redirect (url, endResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1842,6 +1893,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.RedirectLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RedirectLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RedirectLocation : string with get, set" Usage="System.Web.HttpResponse.RedirectLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1886,6 +1938,7 @@ Response.End();
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectPermanent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectPermanent (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectPermanent(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.RedirectPermanent : string -&gt; unit" Usage="httpResponse.RedirectPermanent url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1922,6 +1975,7 @@ Response.End();
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectPermanent(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectPermanent (url As String, endResponse As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectPermanent(System::String ^ url, bool endResponse);" />
+      <MemberSignature Language="F#" Value="member this.RedirectPermanent : string * bool -&gt; unit" Usage="httpResponse.RedirectPermanent (url, endResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1968,6 +2022,7 @@ Response.End();
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoute (routeValues As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoute(System::Object ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoute : obj -&gt; unit" Usage="httpResponse.RedirectToRoute routeValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2019,6 +2074,7 @@ Response.RedirectToRoute(
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoute (routeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoute(System::String ^ routeName);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoute : string -&gt; unit" Usage="httpResponse.RedirectToRoute routeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2068,6 +2124,7 @@ Response.RedirectToRoute("Products");
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoute(System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoute (routeValues As RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoute(System::Web::Routing::RouteValueDictionary ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoute : System.Web.Routing.RouteValueDictionary -&gt; unit" Usage="httpResponse.RedirectToRoute routeValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2119,6 +2176,7 @@ Response.RedirectToRoute(
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoute(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoute (routeName As String, routeValues As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoute(System::String ^ routeName, System::Object ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoute : string * obj -&gt; unit" Usage="httpResponse.RedirectToRoute (routeName, routeValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2172,6 +2230,7 @@ Response.RedirectToRoute("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoute (routeName As String, routeValues As RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoute(System::String ^ routeName, System::Web::Routing::RouteValueDictionary ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoute : string * System.Web.Routing.RouteValueDictionary -&gt; unit" Usage="httpResponse.RedirectToRoute (routeName, routeValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2234,6 +2293,7 @@ Response.RedirectToRoute("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoutePermanent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoutePermanent (routeValues As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoutePermanent(System::Object ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoutePermanent : obj -&gt; unit" Usage="httpResponse.RedirectToRoutePermanent routeValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2285,6 +2345,7 @@ Response.RedirectToRoutePermanent(
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoutePermanent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoutePermanent (routeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoutePermanent(System::String ^ routeName);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoutePermanent : string -&gt; unit" Usage="httpResponse.RedirectToRoutePermanent routeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2334,6 +2395,7 @@ Response.RedirectToRoutePermanent("Products");
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoutePermanent(System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoutePermanent (routeValues As RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoutePermanent(System::Web::Routing::RouteValueDictionary ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoutePermanent : System.Web.Routing.RouteValueDictionary -&gt; unit" Usage="httpResponse.RedirectToRoutePermanent routeValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2385,6 +2447,7 @@ Response.RedirectToRoutePermanent(
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoutePermanent(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoutePermanent (routeName As String, routeValues As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoutePermanent(System::String ^ routeName, System::Object ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoutePermanent : string * obj -&gt; unit" Usage="httpResponse.RedirectToRoutePermanent (routeName, routeValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2438,6 +2501,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToRoutePermanent (routeName As String, routeValues As RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToRoutePermanent(System::String ^ routeName, System::Web::Routing::RouteValueDictionary ^ routeValues);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToRoutePermanent : string * System.Web.Routing.RouteValueDictionary -&gt; unit" Usage="httpResponse.RedirectToRoutePermanent (routeName, routeValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2500,6 +2564,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RemoveOutputCacheItem(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveOutputCacheItem (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveOutputCacheItem(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member RemoveOutputCacheItem : string -&gt; unit" Usage="System.Web.HttpResponse.RemoveOutputCacheItem path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2534,6 +2599,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.RemoveOutputCacheItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveOutputCacheItem (path As String, providerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveOutputCacheItem(System::String ^ path, System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="static member RemoveOutputCacheItem : string * string -&gt; unit" Usage="System.Web.HttpResponse.RemoveOutputCacheItem (path, providerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2570,6 +2636,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.SetCookie(System.Web.HttpCookie)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCookie (cookie As HttpCookie)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCookie(System::Web::HttpCookie ^ cookie);" />
+      <MemberSignature Language="F#" Value="member this.SetCookie : System.Web.HttpCookie -&gt; unit" Usage="httpResponse.SetCookie cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2607,6 +2674,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Status { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : string with get, set" Usage="System.Web.HttpResponse.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2635,6 +2703,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StatusCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int with get, set" Usage="System.Web.HttpResponse.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2668,6 +2737,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.StatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string with get, set" Usage="System.Web.HttpResponse.StatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2701,6 +2771,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.SubStatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property SubStatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubStatusCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SubStatusCode : int with get, set" Usage="System.Web.HttpResponse.SubStatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2739,6 +2810,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.SupportsAsyncFlush" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsAsyncFlush As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsAsyncFlush { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsAsyncFlush : bool" Usage="System.Web.HttpResponse.SupportsAsyncFlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2767,6 +2839,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.SuppressContent" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressContent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressContent : bool with get, set" Usage="System.Web.HttpResponse.SuppressContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2798,6 +2871,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.SuppressDefaultCacheControlHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressDefaultCacheControlHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressDefaultCacheControlHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressDefaultCacheControlHeader : bool with get, set" Usage="System.Web.HttpResponse.SuppressDefaultCacheControlHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2830,6 +2904,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressFormsAuthenticationRedirect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressFormsAuthenticationRedirect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressFormsAuthenticationRedirect : bool with get, set" Usage="System.Web.HttpResponse.SuppressFormsAuthenticationRedirect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2867,6 +2942,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.TransmitFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransmitFile (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransmitFile(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="member this.TransmitFile : string -&gt; unit" Usage="httpResponse.TransmitFile filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2891,6 +2967,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.TransmitFile(System.String,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransmitFile (filename As String, offset As Long, length As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransmitFile(System::String ^ filename, long offset, long length);" />
+      <MemberSignature Language="F#" Value="member this.TransmitFile : string * int64 * int64 -&gt; unit" Usage="httpResponse.TransmitFile (filename, offset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2944,6 +3021,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="P:System.Web.HttpResponse.TrySkipIisCustomErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property TrySkipIisCustomErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrySkipIisCustomErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TrySkipIisCustomErrors : bool with get, set" Usage="System.Web.HttpResponse.TrySkipIisCustomErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2981,6 +3059,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (ch As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(char ch);" />
+      <MemberSignature Language="F#" Value="member this.Write : char -&gt; unit" Usage="httpResponse.Write ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3014,6 +3093,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.Write : obj -&gt; unit" Usage="httpResponse.Write obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3037,6 +3117,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="httpResponse.Write s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3081,6 +3162,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.Write : char[] * int * int -&gt; unit" Usage="httpResponse.Write (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3127,6 +3209,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.WriteFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteFile (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteFile(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="member this.WriteFile : string -&gt; unit" Usage="httpResponse.WriteFile filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3166,6 +3249,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.WriteFile(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteFile (filename As String, readIntoMemory As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteFile(System::String ^ filename, bool readIntoMemory);" />
+      <MemberSignature Language="F#" Value="member this.WriteFile : string * bool -&gt; unit" Usage="httpResponse.WriteFile (filename, readIntoMemory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3207,6 +3291,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.WriteFile(System.IntPtr,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteFile (fileHandle As IntPtr, offset As Long, size As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteFile(IntPtr fileHandle, long offset, long size);" />
+      <MemberSignature Language="F#" Value="member this.WriteFile : nativeint * int64 * int64 -&gt; unit" Usage="httpResponse.WriteFile (fileHandle, offset, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3257,6 +3342,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.WriteFile(System.String,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteFile (filename As String, offset As Long, size As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteFile(System::String ^ filename, long offset, long size);" />
+      <MemberSignature Language="F#" Value="member this.WriteFile : string * int64 * int64 -&gt; unit" Usage="httpResponse.WriteFile (filename, offset, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3306,6 +3392,7 @@ Response.RedirectToRoutePermanent("Product",
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponse.WriteSubstitution(System.Web.HttpResponseSubstitutionCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteSubstitution (callback As HttpResponseSubstitutionCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSubstitution(System::Web::HttpResponseSubstitutionCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.WriteSubstitution : System.Web.HttpResponseSubstitutionCallback -&gt; unit" Usage="httpResponse.WriteSubstitution callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

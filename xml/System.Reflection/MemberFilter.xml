@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberFilter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function MemberFilter(m As MemberInfo, filterCriteria As Object) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool MemberFilter(MemberInfo ^ m, System::Object ^ filterCriteria);" />
+  <TypeSignature Language="F#" Value="type MemberFilter = delegate of MemberInfo * obj -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

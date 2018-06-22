@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SimplePropertyEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class SimplePropertyEntry&#xA;Inherits PropertyEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimplePropertyEntry : System::Web::UI::PropertyEntry" />
+  <TypeSignature Language="F#" Value="type SimplePropertyEntry = class&#xA;    inherit PropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.PersistedValue" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PersistedValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistedValue : string with get, set" Usage="System.Web.UI.SimplePropertyEntry.PersistedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.UseSetAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSetAttribute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSetAttribute { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseSetAttribute : bool with get, set" Usage="System.Web.UI.SimplePropertyEntry.UseSetAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Web.UI.SimplePropertyEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

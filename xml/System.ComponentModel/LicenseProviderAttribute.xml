@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LicenseProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class LicenseProviderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type LicenseProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseProviderAttribute(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseProviderAttribute : string -&gt; System.ComponentModel.LicenseProviderAttribute" Usage="new System.ComponentModel.LicenseProviderAttribute typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseProviderAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseProviderAttribute : Type -&gt; System.ComponentModel.LicenseProviderAttribute" Usage="new System.ComponentModel.LicenseProviderAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LicenseProviderAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As LicenseProviderAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::LicenseProviderAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.LicenseProviderAttribute" Usage="System.ComponentModel.LicenseProviderAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="licenseProviderAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="licenseProviderAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseProviderAttribute.LicenseProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LicenseProvider As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ LicenseProvider { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LicenseProvider : Type" Usage="System.ComponentModel.LicenseProviderAttribute.LicenseProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseProviderAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.LicenseProviderAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CssStyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CssStyleCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class CssStyleCollection sealed" />
+  <TypeSignature Language="F#" Value="type CssStyleCollection = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CssStyleCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="cssStyleCollection.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CssStyleCollection.Add(System.Web.UI.HtmlTextWriterStyle,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As HtmlTextWriterStyle, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::HtmlTextWriterStyle key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.HtmlTextWriterStyle * string -&gt; unit" Usage="cssStyleCollection.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CssStyleCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="cssStyleCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CssStyleCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.CssStyleCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CssStyleCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.UI.CssStyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CssStyleCollection.Item(System.Web.UI.HtmlTextWriterStyle)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As HtmlTextWriterStyle) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::Web::UI::HtmlTextWriterStyle] { System::String ^ get(System::Web::UI::HtmlTextWriterStyle key); void set(System::Web::UI::HtmlTextWriterStyle key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(System.Web.UI.HtmlTextWriterStyle) : string with get, set" Usage="System.Web.UI.CssStyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CssStyleCollection.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Web.UI.CssStyleCollection.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CssStyleCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="cssStyleCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -356,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CssStyleCollection.Remove(System.Web.UI.HtmlTextWriterStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As HtmlTextWriterStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::HtmlTextWriterStyle key);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.HtmlTextWriterStyle -&gt; unit" Usage="cssStyleCollection.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CssStyleCollection.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.CssStyleCollection.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

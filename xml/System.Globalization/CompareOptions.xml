@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CompareOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompareOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompareOptions" />
+  <TypeSignature Language="F#" Value="type CompareOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="IgnoreCase" />
       <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Globalization.CompareOptions.IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreKanaType" />
       <MemberSignature Language="VB.NET" Value="IgnoreKanaType" />
       <MemberSignature Language="C++ CLI" Value="IgnoreKanaType" />
+      <MemberSignature Language="F#" Value="IgnoreKanaType = 8" Usage="System.Globalization.CompareOptions.IgnoreKanaType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreNonSpace" />
       <MemberSignature Language="VB.NET" Value="IgnoreNonSpace" />
       <MemberSignature Language="C++ CLI" Value="IgnoreNonSpace" />
+      <MemberSignature Language="F#" Value="IgnoreNonSpace = 2" Usage="System.Globalization.CompareOptions.IgnoreNonSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreSymbols" />
       <MemberSignature Language="VB.NET" Value="IgnoreSymbols" />
       <MemberSignature Language="C++ CLI" Value="IgnoreSymbols" />
+      <MemberSignature Language="F#" Value="IgnoreSymbols = 4" Usage="System.Globalization.CompareOptions.IgnoreSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreWidth" />
       <MemberSignature Language="VB.NET" Value="IgnoreWidth" />
       <MemberSignature Language="C++ CLI" Value="IgnoreWidth" />
+      <MemberSignature Language="F#" Value="IgnoreWidth = 16" Usage="System.Globalization.CompareOptions.IgnoreWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Globalization.CompareOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -272,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.Ordinal" />
       <MemberSignature Language="VB.NET" Value="Ordinal" />
       <MemberSignature Language="C++ CLI" Value="Ordinal" />
+      <MemberSignature Language="F#" Value="Ordinal = 1073741824" Usage="System.Globalization.CompareOptions.Ordinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="OrdinalIgnoreCase" />
       <MemberSignature Language="C++ CLI" Value="OrdinalIgnoreCase" />
+      <MemberSignature Language="F#" Value="OrdinalIgnoreCase = 268435456" Usage="System.Globalization.CompareOptions.OrdinalIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.StringSort" />
       <MemberSignature Language="VB.NET" Value="StringSort" />
       <MemberSignature Language="C++ CLI" Value="StringSort" />
+      <MemberSignature Language="F#" Value="StringSort = 536870912" Usage="System.Globalization.CompareOptions.StringSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

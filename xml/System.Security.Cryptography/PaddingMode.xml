@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PaddingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PaddingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PaddingMode" />
+  <TypeSignature Language="F#" Value="type PaddingMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.ANSIX923" />
       <MemberSignature Language="VB.NET" Value="ANSIX923" />
       <MemberSignature Language="C++ CLI" Value="ANSIX923" />
+      <MemberSignature Language="F#" Value="ANSIX923 = 4" Usage="System.Security.Cryptography.PaddingMode.ANSIX923" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.ISO10126" />
       <MemberSignature Language="VB.NET" Value="ISO10126" />
       <MemberSignature Language="C++ CLI" Value="ISO10126" />
+      <MemberSignature Language="F#" Value="ISO10126 = 5" Usage="System.Security.Cryptography.PaddingMode.ISO10126" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Security.Cryptography.PaddingMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.PKCS7" />
       <MemberSignature Language="VB.NET" Value="PKCS7" />
       <MemberSignature Language="C++ CLI" Value="PKCS7" />
+      <MemberSignature Language="F#" Value="PKCS7 = 2" Usage="System.Security.Cryptography.PaddingMode.PKCS7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.Zeros" />
       <MemberSignature Language="VB.NET" Value="Zeros" />
       <MemberSignature Language="C++ CLI" Value="Zeros" />
+      <MemberSignature Language="F#" Value="Zeros = 3" Usage="System.Security.Cryptography.PaddingMode.Zeros" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>

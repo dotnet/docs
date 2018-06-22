@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SetterBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SetterBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SetterBase abstract" />
+  <TypeSignature Language="F#" Value="type SetterBase = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SetterBase.CheckSealed" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckSealed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckSealed();" />
+      <MemberSignature Language="F#" Value="member this.CheckSealed : unit -&gt; unit" Usage="setterBase.CheckSealed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SetterBase.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.SetterBase.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

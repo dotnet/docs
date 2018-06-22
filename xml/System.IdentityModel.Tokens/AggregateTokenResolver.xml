@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AggregateTokenResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class AggregateTokenResolver&#xA;Inherits SecurityTokenResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class AggregateTokenResolver : System::IdentityModel::Selectors::SecurityTokenResolver" />
+  <TypeSignature Language="F#" Value="type AggregateTokenResolver = class&#xA;    inherit SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AggregateTokenResolver.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Selectors.SecurityTokenResolver})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenResolvers As IEnumerable(Of SecurityTokenResolver))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AggregateTokenResolver(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Selectors::SecurityTokenResolver ^&gt; ^ tokenResolvers);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AggregateTokenResolver : seq&lt;System.IdentityModel.Selectors.SecurityTokenResolver&gt; -&gt; System.IdentityModel.Tokens.AggregateTokenResolver" Usage="new System.IdentityModel.Tokens.AggregateTokenResolver tokenResolvers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AggregateTokenResolver.TokenResolvers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenResolvers As ReadOnlyCollection(Of SecurityTokenResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Selectors::SecurityTokenResolver ^&gt; ^ TokenResolvers { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Selectors::SecurityTokenResolver ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenResolvers : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Selectors.SecurityTokenResolver&gt;" Usage="System.IdentityModel.Tokens.AggregateTokenResolver.TokenResolvers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AggregateTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveSecurityKeyCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef key As SecurityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveSecurityKeyCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKey ^ % key);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveSecurityKeyCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="aggregateTokenResolver.TryResolveSecurityKeyCore (keyIdentifierClause, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AggregateTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifier As SecurityKeyIdentifier, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifier *  -&gt; bool" Usage="aggregateTokenResolver.TryResolveTokenCore (keyIdentifier, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AggregateTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
+      <MemberSignature Language="F#" Value="override this.TryResolveTokenCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause *  -&gt; bool" Usage="aggregateTokenResolver.TryResolveTokenCore (keyIdentifierClause, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

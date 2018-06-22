@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityConnection&#xA;Inherits DbConnection" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityConnection sealed : System::Data::Common::DbConnection" />
+  <TypeSignature Language="F#" Value="type EntityConnection = class&#xA;    inherit DbConnection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityConnection(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityConnection : string -&gt; System.Data.EntityClient.EntityConnection" Usage="new System.Data.EntityClient.EntityConnection connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.#ctor(System.Data.Metadata.Edm.MetadataWorkspace,System.Data.Common.DbConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workspace As MetadataWorkspace, connection As DbConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityConnection(System::Data::Metadata::Edm::MetadataWorkspace ^ workspace, System::Data::Common::DbConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityConnection : System.Data.Metadata.Edm.MetadataWorkspace * System.Data.Common.DbConnection -&gt; System.Data.EntityClient.EntityConnection" Usage="new System.Data.EntityClient.EntityConnection (workspace, connection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
+      <MemberSignature Language="F#" Value="override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="entityConnection.BeginDbTransaction isolationLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As EntityTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::EntityClient::EntityTransaction ^ BeginTransaction();" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : unit -&gt; System.Data.EntityClient.EntityTransaction" Usage="entityConnection.BeginTransaction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -255,6 +260,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.EntityClient.EntityTransaction BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::EntityClient::EntityTransaction ^ BeginTransaction(System::Data::IsolationLevel isolationLevel);" />
+      <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.EntityClient.EntityTransaction" Usage="entityConnection.BeginTransaction isolationLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -295,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (databaseName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ databaseName);" />
+      <MemberSignature Language="F#" Value="override this.ChangeDatabase : string -&gt; unit" Usage="entityConnection.ChangeDatabase databaseName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="entityConnection.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -354,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.EntityClient.EntityConnection.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -423,6 +432,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConnectionTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.EntityClient.EntityConnection.ConnectionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -451,6 +461,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As EntityCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::EntityClient::EntityCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.EntityClient.EntityCommand" Usage="entityConnection.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -473,6 +484,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="entityConnection.CreateDbCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -494,6 +506,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Database As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Database { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.EntityClient.EntityConnection.Database" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -522,6 +535,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataSource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSource { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.Data.EntityClient.EntityConnection.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -550,6 +564,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.DbProviderFactory" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbProviderFactory As DbProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbProviderFactory ^ DbProviderFactory { System::Data::Common::DbProviderFactory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbProviderFactory : System.Data.Common.DbProviderFactory" Usage="System.Data.EntityClient.EntityConnection.DbProviderFactory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -570,6 +585,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="entityConnection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -592,6 +608,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="entityConnection.EnlistTransaction transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -623,6 +640,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.GetMetadataWorkspace" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadataWorkspace () As MetadataWorkspace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::MetadataWorkspace ^ GetMetadataWorkspace();" />
+      <MemberSignature Language="F#" Value="member this.GetMetadataWorkspace : unit -&gt; System.Data.Metadata.Edm.MetadataWorkspace" Usage="entityConnection.GetMetadataWorkspace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -665,6 +683,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
+      <MemberSignature Language="F#" Value="override this.Open : unit -&gt; unit" Usage="entityConnection.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -700,6 +719,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.ServerVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ServerVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ServerVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerVersion : string" Usage="System.Data.EntityClient.EntityConnection.ServerVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -721,6 +741,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.EntityClient.EntityConnection.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -742,6 +763,7 @@ Provider Connection String= 'Data Source=localhost;
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnection.StoreConnection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbConnection ^ StoreConnection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoreConnection : System.Data.Common.DbConnection" Usage="System.Data.EntityClient.EntityConnection.StoreConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

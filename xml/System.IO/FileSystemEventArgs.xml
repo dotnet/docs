@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FileSystemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileSystemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FileSystemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemEventArgs.#ctor(System.IO.WatcherChangeTypes,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (changeType As WatcherChangeTypes, directory As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemEventArgs(System::IO::WatcherChangeTypes changeType, System::String ^ directory, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemEventArgs : System.IO.WatcherChangeTypes * string * string -&gt; System.IO.FileSystemEventArgs" Usage="new System.IO.FileSystemEventArgs (changeType, directory, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemEventArgs.ChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeType As WatcherChangeTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::WatcherChangeTypes ChangeType { System::IO::WatcherChangeTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : System.IO.WatcherChangeTypes" Usage="System.IO.FileSystemEventArgs.ChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemEventArgs.FullPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullPath : string" Usage="System.IO.FileSystemEventArgs.FullPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemEventArgs.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.FileSystemEventArgs.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

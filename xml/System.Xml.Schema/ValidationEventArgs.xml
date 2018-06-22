@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.ValidationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ValidationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.ValidationEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As XmlSchemaException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaException ^ Exception { System::Xml::Schema::XmlSchemaException ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Xml.Schema.XmlSchemaException" Usage="System.Xml.Schema.ValidationEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.ValidationEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Xml.Schema.ValidationEventArgs.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.ValidationEventArgs.Severity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Severity As XmlSeverityType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSeverityType Severity { System::Xml::Schema::XmlSeverityType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Severity : System.Xml.Schema.XmlSeverityType" Usage="System.Xml.Schema.ValidationEventArgs.Severity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

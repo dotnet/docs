@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.Log" />
   <TypeSignature Language="VB.NET" Value="Public Class Log" />
   <TypeSignature Language="C++ CLI" Value="public ref class Log" />
+  <TypeSignature Language="F#" Value="type Log = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Log(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Logging.Log : string -&gt; Microsoft.VisualBasic.Logging.Log" Usage="new Microsoft.VisualBasic.Logging.Log name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFileLogWriter As FileLogTraceListener" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Logging::FileLogTraceListener ^ DefaultFileLogWriter { Microsoft::VisualBasic::Logging::FileLogTraceListener ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFileLogWriter : Microsoft.VisualBasic.Logging.FileLogTraceListener" Usage="Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.InitializeWithDefaultsSinceNoConfigExists" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub InitializeWithDefaultsSinceNoConfigExists ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeWithDefaultsSinceNoConfigExists();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeWithDefaultsSinceNoConfigExists : unit -&gt; unit&#xA;override this.InitializeWithDefaultsSinceNoConfigExists : unit -&gt; unit" Usage="log.InitializeWithDefaultsSinceNoConfigExists " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.Log.TraceSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceSource As TraceSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceSource ^ TraceSource { System::Diagnostics::TraceSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceSource : System.Diagnostics.TraceSource" Usage="Microsoft.VisualBasic.Logging.Log.TraceSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteEntry(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string -&gt; unit" Usage="log.WriteEntry message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -319,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteEntry(System.String,System.Diagnostics.TraceEventType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, severity As TraceEventType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::TraceEventType severity);" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.TraceEventType -&gt; unit" Usage="log.WriteEntry (message, severity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -402,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteEntry(System.String,System.Diagnostics.TraceEventType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, severity As TraceEventType, id As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::TraceEventType severity, int id);" />
+      <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.TraceEventType * int -&gt; unit" Usage="log.WriteEntry (message, severity, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -496,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteException (ex As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteException(Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="member this.WriteException : Exception -&gt; unit" Usage="log.WriteException ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -579,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteException(System.Exception,System.Diagnostics.TraceEventType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteException (ex As Exception, severity As TraceEventType, additionalInfo As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteException(Exception ^ ex, System::Diagnostics::TraceEventType severity, System::String ^ additionalInfo);" />
+      <MemberSignature Language="F#" Value="member this.WriteException : Exception * System.Diagnostics.TraceEventType * string -&gt; unit" Usage="log.WriteException (ex, severity, additionalInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -667,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.Log.WriteException(System.Exception,System.Diagnostics.TraceEventType,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteException (ex As Exception, severity As TraceEventType, additionalInfo As String, id As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteException(Exception ^ ex, System::Diagnostics::TraceEventType severity, System::String ^ additionalInfo, int id);" />
+      <MemberSignature Language="F#" Value="member this.WriteException : Exception * System.Diagnostics.TraceEventType * string * int -&gt; unit" Usage="log.WriteException (ex, severity, additionalInfo, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

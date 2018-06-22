@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlAttributeEventHandler(sender As Object, e As XmlAttributeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XmlAttributeEventHandler(System::Object ^ sender, XmlAttributeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type XmlAttributeEventHandler = delegate of obj * XmlAttributeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

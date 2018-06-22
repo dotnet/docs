@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportAuthenticationModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportAuthenticationModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class PassportAuthenticationModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type PassportAuthenticationModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Security.PassportAuthenticationModule.Authenticate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Authenticate As PassportAuthenticationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Security::PassportAuthenticationEventHandler ^ Authenticate;" />
+      <MemberSignature Language="F#" Value="member this.Authenticate : System.Web.Security.PassportAuthenticationEventHandler " Usage="member this.Authenticate : System.Web.Security.PassportAuthenticationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportAuthenticationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="passportAuthenticationModule.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportAuthenticationModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="passportAuthenticationModule.Init app" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>

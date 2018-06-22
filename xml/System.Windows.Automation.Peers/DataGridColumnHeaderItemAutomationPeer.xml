@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridColumnHeaderItemAutomationPeer&#xA;Inherits ItemAutomationPeer&#xA;Implements IInvokeProvider, IScrollItemProvider, ITransformProvider, IVirtualizedItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnHeaderItemAutomationPeer : System::Windows::Automation::Peers::ItemAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ITransformProvider, System::Windows::Automation::Provider::IVirtualizedItemProvider" />
+  <TypeSignature Language="F#" Value="type DataGridColumnHeaderItemAutomationPeer = class&#xA;    inherit ItemAutomationPeer&#xA;    interface IInvokeProvider&#xA;    interface IScrollItemProvider&#xA;    interface ITransformProvider&#xA;    interface IVirtualizedItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.#ctor(System.Object,System.Windows.Controls.DataGridColumn,System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, column As DataGridColumn, peer As DataGridColumnHeadersPresenterAutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnHeaderItemAutomationPeer(System::Object ^ item, System::Windows::Controls::DataGridColumn ^ column, System::Windows::Automation::Peers::DataGridColumnHeadersPresenterAutomationPeer ^ peer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer : obj * System.Windows.Controls.DataGridColumn * System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer -&gt; System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer" Usage="new System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer (item, column, peer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="dataGridColumnHeaderItemAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="dataGridColumnHeaderItemAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="dataGridColumnHeaderItemAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="dataGridColumnHeaderItemAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanMove As Boolean Implements ITransformProvider.CanMove" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanMove { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanMove" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanMove</InterfaceMember>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanResize As Boolean Implements ITransformProvider.CanResize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanResize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanResize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanResize</InterfaceMember>
@@ -284,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRotate As Boolean Implements ITransformProvider.CanRotate" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanRotate { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanRotate</InterfaceMember>

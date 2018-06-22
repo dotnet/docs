@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MustUnderstandBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class MustUnderstandBehavior&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class MustUnderstandBehavior : System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type MustUnderstandBehavior = class&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MustUnderstandBehavior.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MustUnderstandBehavior(bool validate);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MustUnderstandBehavior : bool -&gt; System.ServiceModel.Description.MustUnderstandBehavior" Usage="new System.ServiceModel.Description.MustUnderstandBehavior validate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateMustUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.Description.MustUnderstandBehavior.ValidateMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

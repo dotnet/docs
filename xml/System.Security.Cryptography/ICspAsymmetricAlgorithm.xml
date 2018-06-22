@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ICspAsymmetricAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICspAsymmetricAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICspAsymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type ICspAsymmetricAlgorithm = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CspKeyContainerInfo As CspKeyContainerInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CspKeyContainerInfo ^ CspKeyContainerInfo { System::Security::Cryptography::CspKeyContainerInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CspKeyContainerInfo : System.Security.Cryptography.CspKeyContainerInfo" Usage="System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportCspBlob (includePrivateParameters As Boolean) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ExportCspBlob(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="abstract member ExportCspBlob : bool -&gt; byte[]" Usage="iCspAsymmetricAlgorithm.ExportCspBlob includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportCspBlob (rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportCspBlob(cli::array &lt;System::Byte&gt; ^ rawData);" />
+      <MemberSignature Language="F#" Value="abstract member ImportCspBlob : byte[] -&gt; unit" Usage="iCspAsymmetricAlgorithm.ImportCspBlob rawData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>

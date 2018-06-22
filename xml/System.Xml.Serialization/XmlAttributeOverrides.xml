@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeOverrides" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlAttributeOverrides" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlAttributeOverrides" />
+  <TypeSignature Language="F#" Value="type XmlAttributeOverrides = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Type type, class System.Xml.Serialization.XmlAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.Xml.Serialization.XmlAttributes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Type ^ type, System::Xml::Serialization::XmlAttributes ^ attributes);" />
+      <MemberSignature Language="F#" Value="member this.Add : Type * System.Xml.Serialization.XmlAttributes -&gt; unit" Usage="xmlAttributeOverrides.Add (type, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Type type, string member, class System.Xml.Serialization.XmlAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.String,System.Xml.Serialization.XmlAttributes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Type ^ type, System::String ^ member, System::Xml::Serialization::XmlAttributes ^ attributes);" />
+      <MemberSignature Language="F#" Value="member this.Add : Type * string * System.Xml.Serialization.XmlAttributes -&gt; unit" Usage="xmlAttributeOverrides.Add (type, member, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -232,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(type As Type) As XmlAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlAttributes ^ default[Type ^] { System::Xml::Serialization::XmlAttributes ^ get(Type ^ type); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : System.Xml.Serialization.XmlAttributes" Usage="System.Xml.Serialization.XmlAttributeOverrides.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -287,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(type As Type, member As String) As XmlAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlAttributes ^ default[Type ^, System::String ^] { System::Xml::Serialization::XmlAttributes ^ get(Type ^ type, System::String ^ member); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type * string) : System.Xml.Serialization.XmlAttributes" Usage="System.Xml.Serialization.XmlAttributeOverrides.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

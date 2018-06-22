@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.SizingType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SizingType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SizingType" />
+  <TypeSignature Language="F#" Value="type SizingType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.FixedSize" />
       <MemberSignature Language="VB.NET" Value="FixedSize" />
       <MemberSignature Language="C++ CLI" Value="FixedSize" />
+      <MemberSignature Language="F#" Value="FixedSize = 0" Usage="System.Windows.Forms.VisualStyles.SizingType.FixedSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.Stretch" />
       <MemberSignature Language="VB.NET" Value="Stretch" />
       <MemberSignature Language="C++ CLI" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 1" Usage="System.Windows.Forms.VisualStyles.SizingType.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.SizingType.Tile" />
       <MemberSignature Language="VB.NET" Value="Tile" />
       <MemberSignature Language="C++ CLI" Value="Tile" />
+      <MemberSignature Language="F#" Value="Tile = 2" Usage="System.Windows.Forms.VisualStyles.SizingType.Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

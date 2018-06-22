@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.SerializableFuncDeferringLoader" />
   <TypeSignature Language="VB.NET" Value="Public Class SerializableFuncDeferringLoader&#xA;Inherits XamlDeferringLoader" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializableFuncDeferringLoader : System::Xaml::XamlDeferringLoader" />
+  <TypeSignature Language="F#" Value="type SerializableFuncDeferringLoader = class&#xA;    inherit XamlDeferringLoader" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Load(class System.Xaml.XamlReader xamlReader, class System.IServiceProvider context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.SerializableFuncDeferringLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Load(System::Xaml::XamlReader ^ xamlReader, IServiceProvider ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Load : System.Xaml.XamlReader * IServiceProvider -&gt; obj" Usage="serializableFuncDeferringLoader.Load (xamlReader, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.SerializableFuncDeferringLoader.Save(System.Object,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Save (value As Object, serviceProvider As IServiceProvider) As XamlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xaml::XamlReader ^ Save(System::Object ^ value, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.Save : obj * IServiceProvider -&gt; System.Xaml.XamlReader" Usage="serializableFuncDeferringLoader.Save (value, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

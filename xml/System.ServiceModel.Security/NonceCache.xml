@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.NonceCache" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class NonceCache" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonceCache abstract" />
+  <TypeSignature Language="F#" Value="type NonceCache = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.NonceCache.CacheSize" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheSize : int with get, set" Usage="System.ServiceModel.Security.NonceCache.CacheSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.NonceCache.CachingTimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public Property CachingTimeSpan As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CachingTimeSpan { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.CachingTimeSpan : TimeSpan with get, set" Usage="System.ServiceModel.Security.NonceCache.CachingTimeSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.NonceCache.CheckNonce(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CheckNonce (nonce As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CheckNonce(cli::array &lt;System::Byte&gt; ^ nonce);" />
+      <MemberSignature Language="F#" Value="abstract member CheckNonce : byte[] -&gt; bool" Usage="nonceCache.CheckNonce nonce" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.NonceCache.TryAddNonce(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryAddNonce (nonce As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryAddNonce(cli::array &lt;System::Byte&gt; ^ nonce);" />
+      <MemberSignature Language="F#" Value="abstract member TryAddNonce : byte[] -&gt; bool" Usage="nonceCache.TryAddNonce nonce" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

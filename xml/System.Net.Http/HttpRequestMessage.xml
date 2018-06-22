@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpRequestMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpRequestMessage&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestMessage : IDisposable" />
+  <TypeSignature Language="F#" Value="type HttpRequestMessage = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestMessage.#ctor(System.Net.Http.HttpMethod,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As HttpMethod, requestUri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestMessage(System::Net::Http::HttpMethod ^ method, System::String ^ requestUri);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpRequestMessage : System.Net.Http.HttpMethod * string -&gt; System.Net.Http.HttpRequestMessage" Usage="new System.Net.Http.HttpRequestMessage (method, requestUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestMessage.#ctor(System.Net.Http.HttpMethod,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method As HttpMethod, requestUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestMessage(System::Net::Http::HttpMethod ^ method, Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpRequestMessage : System.Net.Http.HttpMethod * Uri -&gt; System.Net.Http.HttpRequestMessage" Usage="new System.Net.Http.HttpRequestMessage (method, requestUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As HttpContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpContent ^ Content { System::Net::Http::HttpContent ^ get(); void set(System::Net::Http::HttpContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Net.Http.HttpContent with get, set" Usage="System.Net.Http.HttpRequestMessage.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestMessage.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpRequestMessage.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestMessage.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="httpRequestMessage.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As HttpRequestHeaders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpRequestHeaders ^ Headers { System::Net::Http::Headers::HttpRequestHeaders ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.Http.Headers.HttpRequestHeaders" Usage="System.Net.Http.HttpRequestMessage.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As HttpMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpMethod ^ Method { System::Net::Http::HttpMethod ^ get(); void set(System::Net::Http::HttpMethod ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Net.Http.HttpMethod with get, set" Usage="System.Net.Http.HttpRequestMessage.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -326,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Net.Http.HttpRequestMessage.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -354,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RequestUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri with get, set" Usage="System.Net.Http.HttpRequestMessage.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -389,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestMessage.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="httpRequestMessage.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -418,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpRequestMessage.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Net.Http.HttpRequestMessage.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

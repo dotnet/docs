@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ClrObjectFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ClrObjectFactory&#xA;Implements IClrObjectFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClrObjectFactory : System::EnterpriseServices::Internal::IClrObjectFactory" />
+  <TypeSignature Language="F#" Value="type ClrObjectFactory = class&#xA;    interface IClrObjectFactory" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromAssembly(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromAssembly (AssemblyName As String, TypeName As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateFromAssembly(System::String ^ AssemblyName, System::String ^ TypeName, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromAssembly : string * string * string -&gt; obj&#xA;override this.CreateFromAssembly : string * string * string -&gt; obj" Usage="clrObjectFactory.CreateFromAssembly (AssemblyName, TypeName, Mode)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromAssembly(System.String,System.String,System.String)</InterfaceMember>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromMailbox(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromMailbox (Mailbox As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateFromMailbox(System::String ^ Mailbox, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromMailbox : string * string -&gt; obj&#xA;override this.CreateFromMailbox : string * string -&gt; obj" Usage="clrObjectFactory.CreateFromMailbox (Mailbox, Mode)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromMailbox(System.String,System.String)</InterfaceMember>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromVroot(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromVroot (VrootUrl As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateFromVroot(System::String ^ VrootUrl, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromVroot : string * string -&gt; obj&#xA;override this.CreateFromVroot : string * string -&gt; obj" Usage="clrObjectFactory.CreateFromVroot (VrootUrl, Mode)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromVroot(System.String,System.String)</InterfaceMember>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClrObjectFactory.CreateFromWsdl(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFromWsdl (WsdlUrl As String, Mode As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateFromWsdl(System::String ^ WsdlUrl, System::String ^ Mode);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFromWsdl : string * string -&gt; obj&#xA;override this.CreateFromWsdl : string * string -&gt; obj" Usage="clrObjectFactory.CreateFromWsdl (WsdlUrl, Mode)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromWsdl(System.String,System.String)</InterfaceMember>

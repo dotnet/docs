@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" />
   <TypeSignature Language="VB.NET" Value="Public Class DependencyPropertyValueSource&#xA;Inherits PropertyValueSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class DependencyPropertyValueSource : System::Activities::Presentation::PropertyEditing::PropertyValueSource" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyValueSource = class&#xA;    inherit PropertyValueSource" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.CustomMarkupExtension" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CustomMarkupExtension As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ CustomMarkupExtension { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomMarkupExtension : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.CustomMarkupExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DataBound" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DataBound As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ DataBound { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBound : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DataBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultValue As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ DefaultValue { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Inherited" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Inherited As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ Inherited { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inherited : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Inherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsCustomMarkupExtension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCustomMarkupExtension As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCustomMarkupExtension { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCustomMarkupExtension : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsCustomMarkupExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDataBound" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataBound As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataBound { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDataBound : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDataBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefaultValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultValue : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -166,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsExpression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExpression As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpression { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsExpression : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsInherited" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInherited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInherited { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInherited : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsInherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -208,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocalResource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocalResource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocalResource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLocalResource : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocalResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -250,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsResource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsResource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsResource : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -271,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsSystemResource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSystemResource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemResource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSystemResource : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsSystemResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsTemplateBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTemplateBinding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTemplateBinding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTemplateBinding : bool" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsTemplateBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -313,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Local" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Local As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ Local { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Local : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Local" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -333,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalDynamicResource" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LocalDynamicResource As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ LocalDynamicResource { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalDynamicResource : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalDynamicResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -360,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalStaticResource" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LocalStaticResource As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ LocalStaticResource { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalStaticResource : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalStaticResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -387,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.SystemResource" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemResource As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ SystemResource { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemResource : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.SystemResource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -407,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TemplateBinding As DependencyPropertyValueSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ TemplateBinding { System::Activities::Presentation::PropertyEditing::DependencyPropertyValueSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplateBinding : System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" Usage="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.PlacementMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PlacementMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PlacementMode" />
+  <TypeSignature Language="F#" Value="type PlacementMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 0" Usage="System.Windows.Controls.Primitives.PlacementMode.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.AbsolutePoint" />
       <MemberSignature Language="VB.NET" Value="AbsolutePoint" />
       <MemberSignature Language="C++ CLI" Value="AbsolutePoint" />
+      <MemberSignature Language="F#" Value="AbsolutePoint = 5" Usage="System.Windows.Controls.Primitives.PlacementMode.AbsolutePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Bottom" />
       <MemberSignature Language="VB.NET" Value="Bottom" />
       <MemberSignature Language="C++ CLI" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Windows.Controls.Primitives.PlacementMode.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 3" Usage="System.Windows.Controls.Primitives.PlacementMode.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 11" Usage="System.Windows.Controls.Primitives.PlacementMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 9" Usage="System.Windows.Controls.Primitives.PlacementMode.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Mouse" />
       <MemberSignature Language="VB.NET" Value="Mouse" />
       <MemberSignature Language="C++ CLI" Value="Mouse" />
+      <MemberSignature Language="F#" Value="Mouse = 7" Usage="System.Windows.Controls.Primitives.PlacementMode.Mouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.MousePoint" />
       <MemberSignature Language="VB.NET" Value="MousePoint" />
       <MemberSignature Language="C++ CLI" Value="MousePoint" />
+      <MemberSignature Language="F#" Value="MousePoint = 8" Usage="System.Windows.Controls.Primitives.PlacementMode.MousePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Relative" />
       <MemberSignature Language="VB.NET" Value="Relative" />
       <MemberSignature Language="C++ CLI" Value="Relative" />
+      <MemberSignature Language="F#" Value="Relative = 1" Usage="System.Windows.Controls.Primitives.PlacementMode.Relative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -215,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.RelativePoint" />
       <MemberSignature Language="VB.NET" Value="RelativePoint" />
       <MemberSignature Language="C++ CLI" Value="RelativePoint" />
+      <MemberSignature Language="F#" Value="RelativePoint = 6" Usage="System.Windows.Controls.Primitives.PlacementMode.RelativePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Windows.Controls.Primitives.PlacementMode.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Top" />
       <MemberSignature Language="VB.NET" Value="Top" />
       <MemberSignature Language="C++ CLI" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 10" Usage="System.Windows.Controls.Primitives.PlacementMode.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

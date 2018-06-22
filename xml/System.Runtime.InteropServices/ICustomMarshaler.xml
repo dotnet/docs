@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomMarshaler" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomMarshaler" />
+  <TypeSignature Language="F#" Value="type ICustomMarshaler = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -178,6 +179,7 @@ library UserLib {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CleanUpManagedData (ManagedObj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanUpManagedData(System::Object ^ ManagedObj);" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpManagedData : obj -&gt; unit" Usage="iCustomMarshaler.CleanUpManagedData ManagedObj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +213,7 @@ library UserLib {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CleanUpNativeData (pNativeData As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanUpNativeData(IntPtr pNativeData);" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpNativeData : nativeint -&gt; unit" Usage="iCustomMarshaler.CleanUpNativeData pNativeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +247,7 @@ library UserLib {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNativeDataSize () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetNativeDataSize();" />
+      <MemberSignature Language="F#" Value="abstract member GetNativeDataSize : unit -&gt; int" Usage="iCustomMarshaler.GetNativeDataSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -275,6 +279,7 @@ library UserLib {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function MarshalManagedToNative (ManagedObj As Object) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr MarshalManagedToNative(System::Object ^ ManagedObj);" />
+      <MemberSignature Language="F#" Value="abstract member MarshalManagedToNative : obj -&gt; nativeint" Usage="iCustomMarshaler.MarshalManagedToNative ManagedObj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +314,7 @@ library UserLib {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function MarshalNativeToManaged (pNativeData As IntPtr) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ MarshalNativeToManaged(IntPtr pNativeData);" />
+      <MemberSignature Language="F#" Value="abstract member MarshalNativeToManaged : nativeint -&gt; obj" Usage="iCustomMarshaler.MarshalNativeToManaged pNativeData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

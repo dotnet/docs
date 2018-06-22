@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelQuery`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ParallelQuery(Of TSource)&#xA;Inherits ParallelQuery&#xA;Implements IEnumerable(Of TSource)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource&gt;&#xA;public ref class ParallelQuery : System::Linq::ParallelQuery, System::Collections::Generic::IEnumerable&lt;TSource&gt;" />
+  <TypeSignature Language="F#" Value="type ParallelQuery&lt;'Source&gt; = class&#xA;    inherit ParallelQuery&#xA;    interface seq&lt;'Source&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.ParallelQuery`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TSource&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Source&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Source&gt;" Usage="parallelQuery.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>

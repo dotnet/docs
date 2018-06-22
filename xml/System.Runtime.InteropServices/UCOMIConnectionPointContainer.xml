@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIConnectionPointContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIConnectionPointContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIConnectionPointContainer" />
+  <TypeSignature Language="F#" Value="type UCOMIConnectionPointContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIConnectionPointContainer.EnumConnectionPoints(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumConnectionPoints (ByRef ppEnum As UCOMIEnumConnectionPoints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnectionPoints([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumConnectionPoints ^ % ppEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnectionPoints :  -&gt; unit" Usage="uCOMIConnectionPointContainer.EnumConnectionPoints ppEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIConnectionPointContainer.FindConnectionPoint(System.Guid@,System.Runtime.InteropServices.UCOMIConnectionPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindConnectionPoint (ByRef riid As Guid, ByRef ppCP As UCOMIConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindConnectionPoint(Guid % riid, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIConnectionPoint ^ % ppCP);" />
+      <MemberSignature Language="F#" Value="abstract member FindConnectionPoint :  *  -&gt; unit" Usage="uCOMIConnectionPointContainer.FindConnectionPoint (riid, ppCP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

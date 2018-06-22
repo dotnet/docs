@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Tracking.StateMachineStateRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateMachineStateRecord&#xA;Inherits CustomTrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateMachineStateRecord sealed : System::Activities::Tracking::CustomTrackingRecord" />
+  <TypeSignature Language="F#" Value="type StateMachineStateRecord = class&#xA;    inherit CustomTrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Tracking.StateMachineStateRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="stateMachineStateRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Tracking.StateMachineStateRecord.StateMachineName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateMachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateMachineName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateMachineName : string" Usage="System.Activities.Statements.Tracking.StateMachineStateRecord.StateMachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Tracking.StateMachineStateRecord.StateName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateName : string" Usage="System.Activities.Statements.Tracking.StateMachineStateRecord.StateName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ReadWriteControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadWriteControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadWriteControlDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type ReadWriteControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="readWriteControlDesigner.GetDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.MapPropertyToStyle(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MapPropertyToStyle (propName As String, varPropValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MapPropertyToStyle(System::String ^ propName, System::Object ^ varPropValue);" />
+      <MemberSignature Language="F#" Value="abstract member MapPropertyToStyle : string * obj -&gt; unit&#xA;override this.MapPropertyToStyle : string * obj -&gt; unit" Usage="readWriteControlDesigner.MapPropertyToStyle (propName, varPropValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.OnBehaviorAttached" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBehaviorAttached ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBehaviorAttached();" />
+      <MemberSignature Language="F#" Value="override this.OnBehaviorAttached : unit -&gt; unit" Usage="readWriteControlDesigner.OnBehaviorAttached " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="readWriteControlDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ReadWriteControlDesigner.UpdateDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateDesignTimeHtml ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateDesignTimeHtml();" />
+      <MemberSignature Language="F#" Value="override this.UpdateDesignTimeHtml : unit -&gt; unit" Usage="readWriteControlDesigner.UpdateDesignTimeHtml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizedPhrase" />
   <TypeSignature Language="VB.NET" Value="Public Class RecognizedPhrase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecognizedPhrase" />
+  <TypeSignature Language="F#" Value="type RecognizedPhrase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Confidence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Confidence { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Confidence : single" Usage="System.Speech.Recognition.RecognizedPhrase.Confidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -217,6 +219,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedPhrase.ConstructSmlFromSemantics" />
       <MemberSignature Language="VB.NET" Value="Public Function ConstructSmlFromSemantics () As IXPathNavigable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::IXPathNavigable ^ ConstructSmlFromSemantics();" />
+      <MemberSignature Language="F#" Value="member this.ConstructSmlFromSemantics : unit -&gt; System.Xml.XPath.IXPathNavigable" Usage="recognizedPhrase.ConstructSmlFromSemantics " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -264,6 +267,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Grammar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Grammar As Grammar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::Grammar ^ Grammar { System::Speech::Recognition::Grammar ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Grammar : System.Speech.Recognition.Grammar" Usage="System.Speech.Recognition.RecognizedPhrase.Grammar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -288,6 +292,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.HomophoneGroupId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HomophoneGroupId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HomophoneGroupId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HomophoneGroupId : int" Usage="System.Speech.Recognition.RecognizedPhrase.HomophoneGroupId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -319,6 +324,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Homophones" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Homophones As ReadOnlyCollection(Of RecognizedPhrase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedPhrase ^&gt; ^ Homophones { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedPhrase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Homophones : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Recognition.RecognizedPhrase&gt;" Usage="System.Speech.Recognition.RecognizedPhrase.Homophones" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -350,6 +356,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.ReplacementWordUnits" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplacementWordUnits As Collection(Of ReplacementText)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::ReplacementText ^&gt; ^ ReplacementWordUnits { System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::ReplacementText ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReplacementWordUnits : System.Collections.ObjectModel.Collection&lt;System.Speech.Recognition.ReplacementText&gt;" Usage="System.Speech.Recognition.RecognizedPhrase.ReplacementWordUnits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -383,6 +390,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Semantics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Semantics As SemanticValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SemanticValue ^ Semantics { System::Speech::Recognition::SemanticValue ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Semantics : System.Speech.Recognition.SemanticValue" Usage="System.Speech.Recognition.RecognizedPhrase.Semantics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -433,6 +441,7 @@ static bool TryGetSemanticValue(
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Speech.Recognition.RecognizedPhrase.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -464,6 +473,7 @@ static bool TryGetSemanticValue(
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedPhrase.Words" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Words As ReadOnlyCollection(Of RecognizedWordUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedWordUnit ^&gt; ^ Words { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::Recognition::RecognizedWordUnit ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Words : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Recognition.RecognizedWordUnit&gt;" Usage="System.Speech.Recognition.RecognizedPhrase.Words" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

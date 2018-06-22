@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class FormsIdentity&#xA;Inherits ClaimsIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormsIdentity : System::Security::Claims::ClaimsIdentity" />
+  <TypeSignature Language="F#" Value="type FormsIdentity = class&#xA;    inherit ClaimsIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.#ctor(System.Web.Security.FormsAuthenticationTicket)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ticket As FormsAuthenticationTicket)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsIdentity(System::Web::Security::FormsAuthenticationTicket ^ ticket);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.FormsIdentity : System.Web.Security.FormsAuthenticationTicket -&gt; System.Web.Security.FormsIdentity" Usage="new System.Web.Security.FormsIdentity ticket" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.#ctor(System.Web.Security.FormsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (identity As FormsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FormsIdentity(System::Web::Security::FormsIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.FormsIdentity : System.Web.Security.FormsIdentity -&gt; System.Web.Security.FormsIdentity" Usage="new System.Web.Security.FormsIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AuthenticationType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Web.Security.FormsIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Claims" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Claims As IEnumerable(Of Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Claims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Web.Security.FormsIdentity.Claims" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As ClaimsIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Claims::ClaimsIdentity ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Claims.ClaimsIdentity&#xA;override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="formsIdentity.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.Security.FormsIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Security.FormsIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsIdentity.Ticket" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ticket As FormsAuthenticationTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::FormsAuthenticationTicket ^ Ticket { System::Web::Security::FormsAuthenticationTicket ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ticket : System.Web.Security.FormsAuthenticationTicket" Usage="System.Web.Security.FormsIdentity.Ticket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

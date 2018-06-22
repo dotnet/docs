@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketClientAccessPolicyProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketClientAccessPolicyProtocol" />
   <TypeSignature Language="C++ CLI" Value="public enum class SocketClientAccessPolicyProtocol" />
+  <TypeSignature Language="F#" Value="type SocketClientAccessPolicyProtocol = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketClientAccessPolicyProtocol.Http" />
       <MemberSignature Language="VB.NET" Value="Http" />
       <MemberSignature Language="C++ CLI" Value="Http" />
+      <MemberSignature Language="F#" Value="Http = 1" Usage="System.Net.Sockets.SocketClientAccessPolicyProtocol.Http" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketClientAccessPolicyProtocol.Tcp" />
       <MemberSignature Language="VB.NET" Value="Tcp" />
       <MemberSignature Language="C++ CLI" Value="Tcp" />
+      <MemberSignature Language="F#" Value="Tcp = 0" Usage="System.Net.Sockets.SocketClientAccessPolicyProtocol.Tcp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItem&#xA;Implements ICloneable, IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItem sealed : ICloneable, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    interface IStateManager&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -249,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItem : string -&gt; System.Web.UI.WebControls.MenuItem" Usage="new System.Web.UI.WebControls.MenuItem text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItem : string * string -&gt; System.Web.UI.WebControls.MenuItem" Usage="new System.Web.UI.WebControls.MenuItem (text, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItem : string * string * string -&gt; System.Web.UI.WebControls.MenuItem" Usage="new System.Web.UI.WebControls.MenuItem (text, value, imageUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl, System::String ^ navigateUrl);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItem : string * string * string * string -&gt; System.Web.UI.WebControls.MenuItem" Usage="new System.Web.UI.WebControls.MenuItem (text, value, imageUrl, navigateUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String, target As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl, System::String ^ navigateUrl, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItem : string * string * string * string * string -&gt; System.Web.UI.WebControls.MenuItem" Usage="new System.Web.UI.WebControls.MenuItem (text, value, imageUrl, navigateUrl, target)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -514,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildItems As MenuItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemCollection ^ ChildItems { System::Web::UI::WebControls::MenuItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildItems : System.Web.UI.WebControls.MenuItemCollection" Usage="System.Web.UI.WebControls.MenuItem.ChildItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -566,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataBound" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBound As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataBound { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBound : bool" Usage="System.Web.UI.WebControls.MenuItem.DataBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -609,6 +617,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Web.UI.WebControls.MenuItem.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -649,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataPath : string" Usage="System.Web.UI.WebControls.MenuItem.DataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -690,6 +700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Depth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Web.UI.WebControls.MenuItem.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -736,6 +747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.MenuItem.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -783,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -893,6 +907,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItem ^ Parent { System::Web::UI::WebControls::MenuItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Web.UI.WebControls.MenuItem" Usage="System.Web.UI.WebControls.MenuItem.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -943,6 +958,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property PopOutImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PopOutImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PopOutImageUrl : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1008,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Selectable" />
       <MemberSignature Language="VB.NET" Value="Public Property Selectable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selectable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Selectable : bool with get, set" Usage="System.Web.UI.WebControls.MenuItem.Selectable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1063,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Web.UI.WebControls.MenuItem.Selected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1180,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property SeparatorImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SeparatorImageUrl : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1270,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.MenuItem.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -1392,6 +1412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1457,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1513,6 +1535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1567,6 +1590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.WebControls.MenuItem.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1628,6 +1652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ValuePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValuePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValuePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValuePath : string" Usage="System.Web.UI.WebControls.MenuItem.ValuePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

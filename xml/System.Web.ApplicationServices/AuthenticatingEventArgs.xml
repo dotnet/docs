@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.AuthenticatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticatingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticatingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AuthenticatingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.AuthenticatingEventArgs.Authenticated" />
       <MemberSignature Language="VB.NET" Value="Public Property Authenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Authenticated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Authenticated : bool with get, set" Usage="System.Web.ApplicationServices.AuthenticatingEventArgs.Authenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.AuthenticatingEventArgs.AuthenticationIsComplete" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationIsComplete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AuthenticationIsComplete { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationIsComplete : bool with get, set" Usage="System.Web.ApplicationServices.AuthenticatingEventArgs.AuthenticationIsComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.AuthenticatingEventArgs.CustomCredential" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomCredential As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomCredential { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomCredential : string" Usage="System.Web.ApplicationServices.AuthenticatingEventArgs.CustomCredential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.AuthenticatingEventArgs.Password" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.Web.ApplicationServices.AuthenticatingEventArgs.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.AuthenticatingEventArgs.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Web.ApplicationServices.AuthenticatingEventArgs.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

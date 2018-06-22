@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class GCSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class GCSettings abstract sealed" />
+  <TypeSignature Language="F#" Value="type GCSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.IsServerGC" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsServerGC As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsServerGC { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsServerGC : bool" Usage="System.Runtime.GCSettings.IsServerGC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.LargeObjectHeapCompactionMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property LargeObjectHeapCompactionMode As GCLargeObjectHeapCompactionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::GCLargeObjectHeapCompactionMode LargeObjectHeapCompactionMode { System::Runtime::GCLargeObjectHeapCompactionMode get(); void set(System::Runtime::GCLargeObjectHeapCompactionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.LargeObjectHeapCompactionMode : System.Runtime.GCLargeObjectHeapCompactionMode with get, set" Usage="System.Runtime.GCSettings.LargeObjectHeapCompactionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.LatencyMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property LatencyMode As GCLatencyMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::GCLatencyMode LatencyMode { System::Runtime::GCLatencyMode get(); void set(System::Runtime::GCLatencyMode value); };" />
+      <MemberSignature Language="F#" Value="member this.LatencyMode : System.Runtime.GCLatencyMode with get, set" Usage="System.Runtime.GCSettings.LatencyMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

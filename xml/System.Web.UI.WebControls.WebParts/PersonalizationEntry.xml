@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersonalizationEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationEntry sealed" />
+  <TypeSignature Language="F#" Value="type PersonalizationEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationEntry.#ctor(System.Object,System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, scope As PersonalizationScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersonalizationEntry(System::Object ^ value, System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.PersonalizationEntry : obj * System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; System.Web.UI.WebControls.WebParts.PersonalizationEntry" Usage="new System.Web.UI.WebControls.WebParts.PersonalizationEntry (value, scope)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationEntry.#ctor(System.Object,System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, scope As PersonalizationScope, isSensitive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersonalizationEntry(System::Object ^ value, System::Web::UI::WebControls::WebParts::PersonalizationScope scope, bool isSensitive);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.PersonalizationEntry : obj * System.Web.UI.WebControls.WebParts.PersonalizationScope * bool -&gt; System.Web.UI.WebControls.WebParts.PersonalizationEntry" Usage="new System.Web.UI.WebControls.WebParts.PersonalizationEntry (value, scope, isSensitive)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.IsSensitive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSensitive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSensitive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSensitive : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationEntry.IsSensitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As PersonalizationScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::PersonalizationScope Scope { System::Web::UI::WebControls::WebParts::PersonalizationScope get(); void set(System::Web::UI::WebControls::WebParts::PersonalizationScope value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Web.UI.WebControls.WebParts.PersonalizationScope with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationEntry.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

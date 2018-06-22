@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlDataSourceEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlDataSourceEnumerator&#xA;Inherits DbDataSourceEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceEnumerator sealed : System::Data::Common::DbDataSourceEnumerator" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceEnumerator = class&#xA;    inherit DbDataSourceEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlDataSourceEnumerator.GetDataSources" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataSources () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetDataSources();" />
+      <MemberSignature Language="F#" Value="override this.GetDataSources : unit -&gt; System.Data.DataTable" Usage="sqlDataSourceEnumerator.GetDataSources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -136,6 +138,7 @@ class Program
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlDataSourceEnumerator.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As SqlDataSourceEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::Sql::SqlDataSourceEnumerator ^ Instance { System::Data::Sql::SqlDataSourceEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Instance : System.Data.Sql.SqlDataSourceEnumerator" Usage="System.Data.Sql.SqlDataSourceEnumerator.Instance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

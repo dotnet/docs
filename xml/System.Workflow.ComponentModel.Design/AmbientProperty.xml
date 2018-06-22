@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.AmbientProperty" />
   <TypeSignature Language="VB.NET" Value="Public Enum AmbientProperty" />
   <TypeSignature Language="C++ CLI" Value="public enum class AmbientProperty" />
+  <TypeSignature Language="F#" Value="type AmbientProperty = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize" />
       <MemberSignature Language="VB.NET" Value="DesignerSize" />
       <MemberSignature Language="C++ CLI" Value="DesignerSize" />
+      <MemberSignature Language="F#" Value="DesignerSize = 0" Usage="System.Workflow.ComponentModel.Design.AmbientProperty.DesignerSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting" />
       <MemberSignature Language="VB.NET" Value="OperatingSystemSetting" />
       <MemberSignature Language="C++ CLI" Value="OperatingSystemSetting" />
+      <MemberSignature Language="F#" Value="OperatingSystemSetting = 1" Usage="System.Workflow.ComponentModel.Design.AmbientProperty.OperatingSystemSetting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

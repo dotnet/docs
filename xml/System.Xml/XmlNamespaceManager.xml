@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNamespaceManager" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlNamespaceManager&#xA;Implements IEnumerable, IXmlNamespaceResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlNamespaceManager : System::Collections::IEnumerable, System::Xml::IXmlNamespaceResolver" />
+  <TypeSignature Language="F#" Value="type XmlNamespaceManager = class&#xA;    interface IXmlNamespaceResolver&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,6 +128,7 @@ while (reader.Read())
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.#ctor(System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nameTable As XmlNameTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNamespaceManager(System::Xml::XmlNameTable ^ nameTable);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlNamespaceManager : System.Xml.XmlNameTable -&gt; System.Xml.XmlNamespaceManager" Usage="new System.Xml.XmlNamespaceManager nameTable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -183,6 +185,7 @@ while (reader.Read())
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.AddNamespace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddNamespace (prefix As String, uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddNamespace(System::String ^ prefix, System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member AddNamespace : string * string -&gt; unit&#xA;override this.AddNamespace : string * string -&gt; unit" Usage="xmlNamespaceManager.AddNamespace (prefix, uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -253,6 +256,7 @@ while (reader.Read())
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNamespaceManager.DefaultNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultNamespace : string" Usage="System.Xml.XmlNamespaceManager.DefaultNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -303,6 +307,7 @@ while (reader.Read())
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xmlNamespaceManager.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -356,6 +361,7 @@ Loop
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespacesInScope (scope As XmlNamespaceScope) As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetNamespacesInScope(System::Xml::XmlNamespaceScope scope);" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;&#xA;override this.GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="xmlNamespaceManager.GetNamespacesInScope scope" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)</InterfaceMember>
@@ -411,6 +417,7 @@ Loop
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.HasNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasNamespace (prefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member HasNamespace : string -&gt; bool&#xA;override this.HasNamespace : string -&gt; bool" Usage="xmlNamespaceManager.HasNamespace prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -468,6 +475,7 @@ Loop
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ LookupNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member LookupNamespace : string -&gt; string&#xA;override this.LookupNamespace : string -&gt; string" Usage="xmlNamespaceManager.LookupNamespace prefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)</InterfaceMember>
@@ -522,6 +530,7 @@ Loop
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LookupPrefix (uri As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ LookupPrefix(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string&#xA;override this.LookupPrefix : string -&gt; string" Usage="xmlNamespaceManager.LookupPrefix uri" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)</InterfaceMember>
@@ -612,6 +621,7 @@ writer.WriteEndElement()
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNamespaceManager.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlNamespaceManager.NameTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -653,6 +663,7 @@ writer.WriteEndElement()
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.PopScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PopScope () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool PopScope();" />
+      <MemberSignature Language="F#" Value="abstract member PopScope : unit -&gt; bool&#xA;override this.PopScope : unit -&gt; bool" Usage="xmlNamespaceManager.PopScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -705,6 +716,7 @@ writer.WriteEndElement()
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.PushScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub PushScope ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PushScope();" />
+      <MemberSignature Language="F#" Value="abstract member PushScope : unit -&gt; unit&#xA;override this.PushScope : unit -&gt; unit" Usage="xmlNamespaceManager.PushScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -755,6 +767,7 @@ writer.WriteEndElement()
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNamespaceManager.RemoveNamespace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveNamespace (prefix As String, uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveNamespace(System::String ^ prefix, System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveNamespace : string * string -&gt; unit&#xA;override this.RemoveNamespace : string * string -&gt; unit" Usage="xmlNamespaceManager.RemoveNamespace (prefix, uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

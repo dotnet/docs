@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.CmsSigner" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CmsSigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class CmsSigner sealed" />
+  <TypeSignature Language="F#" Value="type CmsSigner = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsSigner.#ctor(System.Security.Cryptography.CspParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As CspParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsSigner(System::Security::Cryptography::CspParameters ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsSigner : System.Security.Cryptography.CspParameters -&gt; System.Security.Cryptography.Pkcs.CmsSigner" Usage="new System.Security.Cryptography.Pkcs.CmsSigner parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsSigner.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsSigner(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsSigner : System.Security.Cryptography.Pkcs.SubjectIdentifierType -&gt; System.Security.Cryptography.Pkcs.CmsSigner" Usage="new System.Security.Cryptography.Pkcs.CmsSigner signerIdentifierType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsSigner.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsSigner(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsSigner : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.Pkcs.CmsSigner" Usage="new System.Security.Cryptography.Pkcs.CmsSigner certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsSigner.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsSigner(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsSigner : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.Pkcs.CmsSigner" Usage="new System.Security.Cryptography.Pkcs.CmsSigner (signerIdentifierType, certificate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public Property Certificate As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Certificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); void set(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : System.Security.Cryptography.X509Certificates.X509Certificate2 with get, set" Usage="System.Security.Cryptography.Pkcs.CmsSigner.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.Pkcs.CmsSigner.Certificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property DigestAlgorithm As Oid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ DigestAlgorithm { System::Security::Cryptography::Oid ^ get(); void set(System::Security::Cryptography::Oid ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DigestAlgorithm : System.Security.Cryptography.Oid with get, set" Usage="System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeOption As X509IncludeOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509IncludeOption IncludeOption { System::Security::Cryptography::X509Certificates::X509IncludeOption get(); void set(System::Security::Cryptography::X509Certificates::X509IncludeOption value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeOption : System.Security.Cryptography.X509Certificates.X509IncludeOption with get, set" Usage="System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedAttributes As CryptographicAttributeObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ SignedAttributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedAttributes : System.Security.Cryptography.CryptographicAttributeObjectCollection" Usage="System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -346,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
       <MemberSignature Language="VB.NET" Value="Public Property SignerIdentifierType As SubjectIdentifierType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SubjectIdentifierType SignerIdentifierType { System::Security::Cryptography::Pkcs::SubjectIdentifierType get(); void set(System::Security::Cryptography::Pkcs::SubjectIdentifierType value); };" />
+      <MemberSignature Language="F#" Value="member this.SignerIdentifierType : System.Security.Cryptography.Pkcs.SubjectIdentifierType with get, set" Usage="System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -373,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnsignedAttributes As CryptographicAttributeObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ UnsignedAttributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnsignedAttributes : System.Security.Cryptography.CryptographicAttributeObjectCollection" Usage="System.Security.Cryptography.Pkcs.CmsSigner.UnsignedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

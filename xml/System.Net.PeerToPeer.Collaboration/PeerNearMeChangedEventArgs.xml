@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerNearMeChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNearMeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PeerNearMeChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerChangeType As PeerChangeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerChangeType PeerChangeType { System::Net::PeerToPeer::Collaboration::PeerChangeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerChangeType : System.Net.PeerToPeer.Collaboration.PeerChangeType" Usage="System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerNearMe" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerNearMe As PeerNearMe" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerNearMe ^ PeerNearMe { System::Net::PeerToPeer::Collaboration::PeerNearMe ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeerNearMe : System.Net.PeerToPeer.Collaboration.PeerNearMe" Usage="System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerNearMe" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

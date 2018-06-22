@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.ImportContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportContext" />
+  <TypeSignature Language="F#" Value="type ImportContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.ImportContext.#ctor(System.Xml.Serialization.CodeIdentifiers,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identifiers As CodeIdentifiers, shareTypes As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportContext(System::Xml::Serialization::CodeIdentifiers ^ identifiers, bool shareTypes);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.ImportContext : System.Xml.Serialization.CodeIdentifiers * bool -&gt; System.Xml.Serialization.ImportContext" Usage="new System.Xml.Serialization.ImportContext (identifiers, shareTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.ImportContext.ShareTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShareTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShareTypes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShareTypes : bool" Usage="System.Xml.Serialization.ImportContext.ShareTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.ImportContext.TypeIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeIdentifiers As CodeIdentifiers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::CodeIdentifiers ^ TypeIdentifiers { System::Xml::Serialization::CodeIdentifiers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeIdentifiers : System.Xml.Serialization.CodeIdentifiers" Usage="System.Xml.Serialization.ImportContext.TypeIdentifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.ImportContext.Warnings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Warnings As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Warnings { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Warnings : System.Collections.Specialized.StringCollection" Usage="System.Xml.Serialization.ImportContext.Warnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

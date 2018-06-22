@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSaveMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationSaveMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationSaveMode" />
+  <TypeSignature Language="F#" Value="type ConfigurationSaveMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Full" />
       <MemberSignature Language="VB.NET" Value="Full" />
       <MemberSignature Language="C++ CLI" Value="Full" />
+      <MemberSignature Language="F#" Value="Full = 2" Usage="System.Configuration.ConfigurationSaveMode.Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Minimal" />
       <MemberSignature Language="VB.NET" Value="Minimal" />
       <MemberSignature Language="C++ CLI" Value="Minimal" />
+      <MemberSignature Language="F#" Value="Minimal = 1" Usage="System.Configuration.ConfigurationSaveMode.Minimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Modified" />
       <MemberSignature Language="VB.NET" Value="Modified" />
       <MemberSignature Language="C++ CLI" Value="Modified" />
+      <MemberSignature Language="F#" Value="Modified = 0" Usage="System.Configuration.ConfigurationSaveMode.Modified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

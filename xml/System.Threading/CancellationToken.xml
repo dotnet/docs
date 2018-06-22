@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.CancellationToken" />
   <TypeSignature Language="VB.NET" Value="Public Structure CancellationToken" />
   <TypeSignature Language="C++ CLI" Value="public value class CancellationToken" />
+  <TypeSignature Language="F#" Value="type CancellationToken = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (canceled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CancellationToken(bool canceled);" />
+      <MemberSignature Language="F#" Value="new System.Threading.CancellationToken : bool -&gt; System.Threading.CancellationToken" Usage="new System.Threading.CancellationToken canceled" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.CancellationToken.CanBeCanceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanBeCanceled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanBeCanceled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanBeCanceled : bool" Usage="System.Threading.CancellationToken.CanBeCanceled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cancellationToken.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -219,6 +223,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Equals(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CancellationToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Threading::CancellationToken other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Threading.CancellationToken -&gt; bool" Usage="cancellationToken.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -272,6 +277,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cancellationToken.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -308,6 +314,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="P:System.Threading.CancellationToken.IsCancellationRequested" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancellationRequested { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCancellationRequested : bool" Usage="System.Threading.CancellationToken.IsCancellationRequested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -365,6 +372,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="P:System.Threading.CancellationToken.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As CancellationToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Threading::CancellationToken None { System::Threading::CancellationToken get(); };" />
+      <MemberSignature Language="F#" Value="member this.None : System.Threading.CancellationToken" Usage="System.Threading.CancellationToken.None" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -411,6 +419,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.op_Equality(System.Threading.CancellationToken,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CancellationToken, right As CancellationToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::CancellationToken left, System::Threading::CancellationToken right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.CancellationToken * System.Threading.CancellationToken -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -466,6 +475,7 @@ Two cancellation tokens are equal if any one of the following conditions is true
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.op_Inequality(System.Threading.CancellationToken,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CancellationToken, right As CancellationToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::CancellationToken left, System::Threading::CancellationToken right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.CancellationToken * System.Threading.CancellationToken -&gt; bool" Usage="System.Threading.CancellationToken.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -525,6 +535,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Register(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Function Register (callback As Action) As CancellationTokenRegistration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::CancellationTokenRegistration Register(Action ^ callback);" />
+      <MemberSignature Language="F#" Value="member this.Register : Action -&gt; System.Threading.CancellationTokenRegistration" Usage="cancellationToken.Register callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -578,6 +589,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Register(System.Action,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Register (callback As Action, useSynchronizationContext As Boolean) As CancellationTokenRegistration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::CancellationTokenRegistration Register(Action ^ callback, bool useSynchronizationContext);" />
+      <MemberSignature Language="F#" Value="member this.Register : Action * bool -&gt; System.Threading.CancellationTokenRegistration" Usage="cancellationToken.Register (callback, useSynchronizationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -633,6 +645,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Register(System.Action{System.Object},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Register (callback As Action(Of Object), state As Object) As CancellationTokenRegistration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::CancellationTokenRegistration Register(Action&lt;System::Object ^&gt; ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.Register : Action&lt;obj&gt; * obj -&gt; System.Threading.CancellationTokenRegistration" Usage="cancellationToken.Register (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -688,6 +701,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.Register(System.Action{System.Object},System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Register (callback As Action(Of Object), state As Object, useSynchronizationContext As Boolean) As CancellationTokenRegistration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::CancellationTokenRegistration Register(Action&lt;System::Object ^&gt; ^ callback, System::Object ^ state, bool useSynchronizationContext);" />
+      <MemberSignature Language="F#" Value="member this.Register : Action&lt;obj&gt; * obj * bool -&gt; System.Threading.CancellationTokenRegistration" Usage="cancellationToken.Register (callback, state, useSynchronizationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -745,6 +759,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationToken.ThrowIfCancellationRequested" />
       <MemberSignature Language="VB.NET" Value="Public Sub ThrowIfCancellationRequested ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ThrowIfCancellationRequested();" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfCancellationRequested : unit -&gt; unit" Usage="cancellationToken.ThrowIfCancellationRequested " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -802,6 +817,7 @@ End If
       <MemberSignature Language="DocId" Value="P:System.Threading.CancellationToken.WaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WaitHandle : System.Threading.WaitHandle" Usage="System.Threading.CancellationToken.WaitHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIBindCtx" />
   <TypeSignature Language="VB.NET" Value="Public Interface UCOMIBindCtx" />
   <TypeSignature Language="C++ CLI" Value="public interface class UCOMIBindCtx" />
+  <TypeSignature Language="F#" Value="type UCOMIBindCtx = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.EnumObjectParam(System.Runtime.InteropServices.UCOMIEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumObjectParam (ByRef ppenum As UCOMIEnumString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumObjectParam([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumString ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumObjectParam :  -&gt; unit" Usage="uCOMIBindCtx.EnumObjectParam ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBindOptions (ByRef pbindopts As BIND_OPTS)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBindOptions(System::Runtime::InteropServices::BIND_OPTS % pbindopts);" />
+      <MemberSignature Language="F#" Value="abstract member GetBindOptions :  -&gt; unit" Usage="uCOMIBindCtx.GetBindOptions pbindopts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetObjectParam(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectParam (pszKey As String, ByRef ppunk As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetObjectParam(System::String ^ pszKey, [Runtime::InteropServices::Out] System::Object ^ % ppunk);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectParam : string *  -&gt; unit" Usage="uCOMIBindCtx.GetObjectParam (pszKey, ppunk)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.GetRunningObjectTable(System.Runtime.InteropServices.UCOMIRunningObjectTable@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRunningObjectTable (ByRef pprot As UCOMIRunningObjectTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRunningObjectTable([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIRunningObjectTable ^ % pprot);" />
+      <MemberSignature Language="F#" Value="abstract member GetRunningObjectTable :  -&gt; unit" Usage="uCOMIBindCtx.GetRunningObjectTable pprot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.RegisterObjectBound(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObjectBound (punk As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObjectBound(System::Object ^ punk);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObjectBound : obj -&gt; unit" Usage="uCOMIBindCtx.RegisterObjectBound punk" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.RegisterObjectParam(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObjectParam (pszKey As String, punk As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObjectParam(System::String ^ pszKey, System::Object ^ punk);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObjectParam : string * obj -&gt; unit" Usage="uCOMIBindCtx.RegisterObjectParam (pszKey, punk)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.ReleaseBoundObjects" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseBoundObjects ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseBoundObjects();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseBoundObjects : unit -&gt; unit" Usage="uCOMIBindCtx.ReleaseBoundObjects " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.RevokeObjectBound(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevokeObjectBound (punk As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevokeObjectBound(System::Object ^ punk);" />
+      <MemberSignature Language="F#" Value="abstract member RevokeObjectBound : obj -&gt; unit" Usage="uCOMIBindCtx.RevokeObjectBound punk" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.RevokeObjectParam(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevokeObjectParam (pszKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevokeObjectParam(System::String ^ pszKey);" />
+      <MemberSignature Language="F#" Value="abstract member RevokeObjectParam : string -&gt; unit" Usage="uCOMIBindCtx.RevokeObjectParam pszKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIBindCtx.SetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBindOptions (ByRef pbindopts As BIND_OPTS)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBindOptions(System::Runtime::InteropServices::BIND_OPTS % pbindopts);" />
+      <MemberSignature Language="F#" Value="abstract member SetBindOptions :  -&gt; unit" Usage="uCOMIBindCtx.SetBindOptions pbindopts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

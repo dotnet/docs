@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowView" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowView&#xA;Inherits UserControl&#xA;Implements IMessageFilter, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowView : System::Windows::Forms::UserControl, IServiceProvider, System::Windows::Forms::IMessageFilter" />
+  <TypeSignature Language="F#" Value="type WorkflowView = class&#xA;    inherit UserControl&#xA;    interface IServiceProvider&#xA;    interface IMessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowView(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.WorkflowView : IServiceProvider -&gt; System.Workflow.ComponentModel.Design.WorkflowView" Usage="new System.Workflow.ComponentModel.Design.WorkflowView serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.AddDesignerMessageFilter(System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDesignerMessageFilter (designerMessageFilter As WorkflowDesignerMessageFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDesignerMessageFilter(System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^ designerMessageFilter);" />
+      <MemberSignature Language="F#" Value="member this.AddDesignerMessageFilter : System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter -&gt; unit" Usage="workflowView.AddDesignerMessageFilter designerMessageFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientPointToLogical(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function ClientPointToLogical (clientPoint As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ClientPointToLogical(System::Drawing::Point clientPoint);" />
+      <MemberSignature Language="F#" Value="member this.ClientPointToLogical : System.Drawing.Point -&gt; System.Drawing.Point" Usage="workflowView.ClientPointToLogical clientPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle ClientRectangleToLogical(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientRectangleToLogical(System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle ClientRectangleToLogical(System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="member this.ClientRectangleToLogical : System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="workflowView.ClientRectangleToLogical rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -238,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ClientSizeToLogical(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Function ClientSizeToLogical (clientSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Size ClientSizeToLogical(System::Drawing::Size clientSize);" />
+      <MemberSignature Language="F#" Value="member this.ClientSizeToLogical : System.Drawing.Size -&gt; System.Drawing.Size" Usage="workflowView.ClientSizeToLogical clientSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="workflowView.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="workflowView.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.EnableFitToScreen" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableFitToScreen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableFitToScreen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableFitToScreen : bool with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.EnableFitToScreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.EnsureVisible(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnsureVisible (selectableObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureVisible(System::Object ^ selectableObject);" />
+      <MemberSignature Language="F#" Value="member this.EnsureVisible : obj -&gt; unit" Usage="workflowView.EnsureVisible selectableObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -415,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize" />
       <MemberSignature Language="VB.NET" Value="Public Sub FitToScreenSize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FitToScreenSize();" />
+      <MemberSignature Language="F#" Value="member this.FitToScreenSize : unit -&gt; unit" Usage="workflowView.FitToScreenSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -450,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.FitToWorkflowSize" />
       <MemberSignature Language="VB.NET" Value="Public Sub FitToWorkflowSize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FitToWorkflowSize();" />
+      <MemberSignature Language="F#" Value="member this.FitToWorkflowSize : unit -&gt; unit" Usage="workflowView.FitToWorkflowSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -480,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="workflowView.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -519,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HScrollBar As HScrollBar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HScrollBar ^ HScrollBar { System::Windows::Forms::HScrollBar ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HScrollBar : System.Windows.Forms.HScrollBar" Usage="System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.Idle" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Idle As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Idle;" />
+      <MemberSignature Language="F#" Value="member this.Idle : EventHandler " Usage="member this.Idle : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -575,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateClientRectangle(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvalidateClientRectangle (clientRectangle As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateClientRectangle(System::Drawing::Rectangle clientRectangle);" />
+      <MemberSignature Language="F#" Value="member this.InvalidateClientRectangle : System.Drawing.Rectangle -&gt; unit" Usage="workflowView.InvalidateClientRectangle clientRectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -605,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.InvalidateLogicalRectangle(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvalidateLogicalRectangle (logicalRectangle As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateLogicalRectangle(System::Drawing::Rectangle logicalRectangle);" />
+      <MemberSignature Language="F#" Value="member this.InvalidateLogicalRectangle : System.Drawing.Rectangle -&gt; unit" Usage="workflowView.InvalidateLogicalRectangle logicalRectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -635,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LoadViewState(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadViewState (viewState As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadViewState(System::IO::Stream ^ viewState);" />
+      <MemberSignature Language="F#" Value="member this.LoadViewState : System.IO.Stream -&gt; unit" Usage="workflowView.LoadViewState viewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -675,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalPointToClient(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function LogicalPointToClient (logicalPoint As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point LogicalPointToClient(System::Drawing::Point logicalPoint);" />
+      <MemberSignature Language="F#" Value="member this.LogicalPointToClient : System.Drawing.Point -&gt; System.Drawing.Point" Usage="workflowView.LogicalPointToClient logicalPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -710,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalPointToScreen(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function LogicalPointToScreen (logicalPoint As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point LogicalPointToScreen(System::Drawing::Point logicalPoint);" />
+      <MemberSignature Language="F#" Value="member this.LogicalPointToScreen : System.Drawing.Point -&gt; System.Drawing.Point" Usage="workflowView.LogicalPointToScreen logicalPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -744,6 +764,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle LogicalRectangleToClient(valuetype System.Drawing.Rectangle rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalRectangleToClient(System.Drawing.Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle LogicalRectangleToClient(System::Drawing::Rectangle rectangle);" />
+      <MemberSignature Language="F#" Value="member this.LogicalRectangleToClient : System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="workflowView.LogicalRectangleToClient rectangle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -779,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.LogicalSizeToClient(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Function LogicalSizeToClient (logicalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Size LogicalSizeToClient(System::Drawing::Size logicalSize);" />
+      <MemberSignature Language="F#" Value="member this.LogicalSizeToClient : System.Drawing.Size -&gt; System.Drawing.Size" Usage="workflowView.LogicalSizeToClient logicalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -814,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnControlAdded(System.Windows.Forms.ControlEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnControlAdded (e As ControlEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnControlAdded(System::Windows::Forms::ControlEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnControlAdded : System.Windows.Forms.ControlEventArgs -&gt; unit" Usage="workflowView.OnControlAdded e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -844,6 +867,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragDrop(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragDrop(System::Windows::Forms::DragEventArgs ^ dragEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnDragDrop : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="workflowView.OnDragDrop dragEventArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -873,6 +897,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::Forms::DragEventArgs ^ dragEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnDragEnter : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="workflowView.OnDragEnter dragEventArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -903,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragLeave (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragLeave(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragLeave : EventArgs -&gt; unit" Usage="workflowView.OnDragLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -932,6 +958,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.Forms.DragEventArgs dragEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnDragOver(System.Windows.Forms.DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::Forms::DragEventArgs ^ dragEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="workflowView.OnDragOver dragEventArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -962,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGiveFeedback (gfbevent As GiveFeedbackEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGiveFeedback(System::Windows::Forms::GiveFeedbackEventArgs ^ gfbevent);" />
+      <MemberSignature Language="F#" Value="override this.OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit" Usage="workflowView.OnGiveFeedback gfbevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -992,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="workflowView.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1022,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="workflowView.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1052,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="workflowView.OnLayout levent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1082,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseCaptureChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseCaptureChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseCaptureChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseCaptureChanged : EventArgs -&gt; unit" Usage="workflowView.OnMouseCaptureChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1112,6 +1144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDoubleClick (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDoubleClick(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDoubleClick : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="workflowView.OnMouseDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1142,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="workflowView.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1186,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseEnter(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseEnter : EventArgs -&gt; unit" Usage="workflowView.OnMouseEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1228,6 +1263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseHover(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseHover (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseHover(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseHover : EventArgs -&gt; unit" Usage="workflowView.OnMouseHover e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1270,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="workflowView.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1312,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="workflowView.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1354,6 +1392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="workflowView.OnMouseUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1396,6 +1435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="workflowView.OnMouseWheel e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1438,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="workflowView.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1468,6 +1509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnQueryContinueDrag (qcdevent As QueryContinueDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnQueryContinueDrag(System::Windows::Forms::QueryContinueDragEventArgs ^ qcdevent);" />
+      <MemberSignature Language="F#" Value="override this.OnQueryContinueDrag : System.Windows.Forms.QueryContinueDragEventArgs -&gt; unit" Usage="workflowView.OnQueryContinueDrag qcdevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1521,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnRootDesignerChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRootDesignerChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRootDesignerChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnRootDesignerChanged : unit -&gt; unit&#xA;override this.OnRootDesignerChanged : unit -&gt; unit" Usage="workflowView.OnRootDesignerChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1541,6 +1584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.OnZoomChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnZoomChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnZoomChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnZoomChanged : unit -&gt; unit&#xA;override this.OnZoomChanged : unit -&gt; unit" Usage="workflowView.OnZoomChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1561,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PerformLayout (immediateUpdate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PerformLayout(bool immediateUpdate);" />
+      <MemberSignature Language="F#" Value="override this.PerformLayout : bool -&gt; unit" Usage="workflowView.PerformLayout immediateUpdate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1592,6 +1637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.PrintDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintDocument As PrintDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ PrintDocument { System::Drawing::Printing::PrintDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrintDocument : System.Drawing.Printing.PrintDocument" Usage="System.Workflow.ComponentModel.Design.WorkflowView.PrintDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1627,6 +1673,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.PrintPreviewMode" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintPreviewMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrintPreviewMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintPreviewMode : bool with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.PrintPreviewMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1658,6 +1705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.RemoveDesignerMessageFilter(System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDesignerMessageFilter (designerMessageFilter As WorkflowDesignerMessageFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDesignerMessageFilter(System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^ designerMessageFilter);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDesignerMessageFilter : System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter -&gt; unit" Usage="workflowView.RemoveDesignerMessageFilter designerMessageFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1688,6 +1736,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.RootDesigner" />
       <MemberSignature Language="VB.NET" Value="Public Property RootDesigner As ActivityDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ActivityDesigner ^ RootDesigner { System::Workflow::ComponentModel::Design::ActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::ActivityDesigner ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.RootDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1725,6 +1774,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.RootDesignerChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RootDesignerChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RootDesignerChanged;" />
+      <MemberSignature Language="F#" Value="member this.RootDesignerChanged : EventHandler " Usage="member this.RootDesignerChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1744,6 +1794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveViewState(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveViewState (viewState As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveViewState(System::IO::Stream ^ viewState);" />
+      <MemberSignature Language="F#" Value="member this.SaveViewState : System.IO.Stream -&gt; unit" Usage="workflowView.SaveViewState viewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1790,6 +1841,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveWorkflowImage(class System.IO.Stream stream, class System.Drawing.Imaging.ImageFormat imageFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveWorkflowImage(System::IO::Stream ^ stream, System::Drawing::Imaging::ImageFormat ^ imageFormat);" />
+      <MemberSignature Language="F#" Value="member this.SaveWorkflowImage : System.IO.Stream * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="workflowView.SaveWorkflowImage (stream, imageFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1831,6 +1883,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveWorkflowImage(string imageFile, class System.Drawing.Imaging.ImageFormat imageFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImage(System.String,System.Drawing.Imaging.ImageFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveWorkflowImage(System::String ^ imageFile, System::Drawing::Imaging::ImageFormat ^ imageFormat);" />
+      <MemberSignature Language="F#" Value="member this.SaveWorkflowImage : string * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="workflowView.SaveWorkflowImage (imageFile, imageFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1873,6 +1926,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.SaveWorkflowImageToClipboard" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveWorkflowImageToClipboard ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveWorkflowImageToClipboard();" />
+      <MemberSignature Language="F#" Value="member this.SaveWorkflowImageToClipboard : unit -&gt; unit" Usage="workflowView.SaveWorkflowImageToClipboard " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1893,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ScreenPointToLogical(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function ScreenPointToLogical (screenPoint As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ScreenPointToLogical(System::Drawing::Point screenPoint);" />
+      <MemberSignature Language="F#" Value="member this.ScreenPointToLogical : System.Drawing.Point -&gt; System.Drawing.Point" Usage="workflowView.ScreenPointToLogical screenPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1928,6 +1983,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ScrollPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrollPosition As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point ScrollPosition { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollPosition : System.Drawing.Point with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.ScrollPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1963,6 +2019,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ShadowDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowDepth : int with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.ShadowDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2020,6 +2077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowInfoTip (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowInfoTip(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ShowInfoTip : string -&gt; unit" Usage="workflowView.ShowInfoTip text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2052,6 +2110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowInfoTip (title As String, text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowInfoTip(System::String ^ title, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ShowInfoTip : string * string -&gt; unit" Usage="workflowView.ShowInfoTip (title, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2090,6 +2149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.ShowInPlaceToolTip(System.String,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowInPlaceToolTip (toolTipText As String, toolTipRectangle As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowInPlaceToolTip(System::String ^ toolTipText, System::Drawing::Rectangle toolTipRectangle);" />
+      <MemberSignature Language="F#" Value="member this.ShowInPlaceToolTip : string * System.Drawing.Rectangle -&gt; unit" Usage="workflowView.ShowInPlaceToolTip (toolTipText, toolTipRectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2191,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewPortRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ViewPortRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewPortRectangle : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.WorkflowView.ViewPortRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2226,6 +2287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.ViewPortSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewPortSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size ViewPortSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewPortSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.WorkflowView.ViewPortSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2253,6 +2315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VScrollBar As VScrollBar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VScrollBar ^ VScrollBar { System::Windows::Forms::VScrollBar ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VScrollBar : System.Windows.Forms.VScrollBar" Usage="System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2288,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowView.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="workflowView.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2323,6 +2387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowView.Zoom" />
       <MemberSignature Language="VB.NET" Value="Public Property Zoom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Zoom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Zoom : int with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowView.Zoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -2365,6 +2430,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowView.ZoomChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ZoomChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ZoomChanged;" />
+      <MemberSignature Language="F#" Value="member this.ZoomChanged : EventHandler " Usage="member this.ZoomChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

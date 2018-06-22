@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module QueryExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type QueryExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtensions.SortBy``1(System.Linq.IQueryable{``0},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SortBy(Of T As Class) (source As IQueryable(Of T), sortExpression As String) As IQueryable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;T&gt; ^ SortBy(System::Linq::IQueryable&lt;T&gt; ^ source, System::String ^ sortExpression);" />
+      <MemberSignature Language="F#" Value="static member SortBy : System.Linq.IQueryable&lt;'T (requires 'T : null)&gt; * string -&gt; System.Linq.IQueryable&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="System.Web.UI.WebControls.QueryExtensions.SortBy (source, sortExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

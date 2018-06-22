@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ExeContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExeContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExeContext sealed" />
+  <TypeSignature Language="F#" Value="type ExeContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeContext.ExePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExePath : string" Usage="System.Configuration.ExeContext.ExePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeContext.UserLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserLevel As ConfigurationUserLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationUserLevel UserLevel { System::Configuration::ConfigurationUserLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserLevel : System.Configuration.ConfigurationUserLevel" Usage="System.Configuration.ExeContext.UserLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

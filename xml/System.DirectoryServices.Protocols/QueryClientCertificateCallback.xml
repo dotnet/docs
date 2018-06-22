@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function QueryClientCertificateCallback(connection As LdapConnection, trustedCAs As Byte()()) As X509Certificate " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Security::Cryptography::X509Certificates::X509Certificate ^ QueryClientCertificateCallback(LdapConnection ^ connection, cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ trustedCAs);" />
+  <TypeSignature Language="F#" Value="type QueryClientCertificateCallback = delegate of LdapConnection * byte[][] -&gt; X509Certificate" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

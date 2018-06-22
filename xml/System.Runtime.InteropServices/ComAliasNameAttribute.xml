@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComAliasNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComAliasNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComAliasNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ComAliasNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@ interface Baz {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAliasNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (alias As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComAliasNameAttribute(System::String ^ alias);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComAliasNameAttribute : string -&gt; System.Runtime.InteropServices.ComAliasNameAttribute" Usage="new System.Runtime.InteropServices.ComAliasNameAttribute alias" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +102,7 @@ interface Baz {
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAliasNameAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Runtime.InteropServices.ComAliasNameAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12OperationBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12OperationBinding&#xA;Inherits SoapOperationBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class Soap12OperationBinding sealed : System::Web::Services::Description::SoapOperationBinding" />
+  <TypeSignature Language="F#" Value="type Soap12OperationBinding = class&#xA;    inherit SoapOperationBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Soap12OperationBinding.SoapActionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapActionRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SoapActionRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapActionRequired : bool with get, set" Usage="System.Web.Services.Description.Soap12OperationBinding.SoapActionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

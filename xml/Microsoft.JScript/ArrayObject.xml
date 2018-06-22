@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type ArrayObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ArrayObject.length" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property length As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ length { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.length : obj with get, set" Usage="Microsoft.JScript.ArrayObject.length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayObject.SpliceSlowly(System.UInt32,System.UInt32,System.Object[],Microsoft.JScript.ArrayObject,System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SpliceSlowly (start As UInteger, deleteCount As UInteger, args As Object(), outArray As ArrayObject, oldLength As UInteger, newLength As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SpliceSlowly(System::UInt32 start, System::UInt32 deleteCount, cli::array &lt;System::Object ^&gt; ^ args, Microsoft::JScript::ArrayObject ^ outArray, System::UInt32 oldLength, System::UInt32 newLength);" />
+      <MemberSignature Language="F#" Value="member this.SpliceSlowly : uint32 * uint32 * obj[] * Microsoft.JScript.ArrayObject * uint32 * uint32 -&gt; unit" Usage="arrayObject.SpliceSlowly (start, deleteCount, args, outArray, oldLength, newLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

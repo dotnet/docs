@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValueSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValueSerializer abstract" />
+  <TypeSignature Language="F#" Value="type ValueSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool&#xA;override this.CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="valueSerializer.CanConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool&#xA;override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="valueSerializer.CanConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj&#xA;override this.ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj" Usage="valueSerializer.ConvertFromString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string&#xA;override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="valueSerializer.ConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetConvertFromException(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetConvertFromException (value As Object) As Exception" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ GetConvertFromException(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.GetConvertFromException : obj -&gt; Exception" Usage="valueSerializer.GetConvertFromException value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetConvertToException(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetConvertToException (value As Object, destinationType As Type) As Exception" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ GetConvertToException(System::Object ^ value, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="member this.GetConvertToException : obj * Type -&gt; Exception" Usage="valueSerializer.GetConvertToException (value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetSerializerFor(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSerializerFor (descriptor As PropertyDescriptor) As ValueSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::ValueSerializer ^ GetSerializerFor(System::ComponentModel::PropertyDescriptor ^ descriptor);" />
+      <MemberSignature Language="F#" Value="static member GetSerializerFor : System.ComponentModel.PropertyDescriptor -&gt; System.Windows.Markup.ValueSerializer" Usage="System.Windows.Markup.ValueSerializer.GetSerializerFor descriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.ValueSerializer GetSerializerFor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetSerializerFor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::ValueSerializer ^ GetSerializerFor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetSerializerFor : Type -&gt; System.Windows.Markup.ValueSerializer" Usage="System.Windows.Markup.ValueSerializer.GetSerializerFor type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetSerializerFor(System.ComponentModel.PropertyDescriptor,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSerializerFor (descriptor As PropertyDescriptor, context As IValueSerializerContext) As ValueSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::ValueSerializer ^ GetSerializerFor(System::ComponentModel::PropertyDescriptor ^ descriptor, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetSerializerFor : System.ComponentModel.PropertyDescriptor * System.Windows.Markup.IValueSerializerContext -&gt; System.Windows.Markup.ValueSerializer" Usage="System.Windows.Markup.ValueSerializer.GetSerializerFor (descriptor, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -423,6 +433,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.ValueSerializer GetSerializerFor(class System.Type type, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.GetSerializerFor(System.Type,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::ValueSerializer ^ GetSerializerFor(Type ^ type, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetSerializerFor : Type * System.Windows.Markup.IValueSerializerContext -&gt; System.Windows.Markup.ValueSerializer" Usage="System.Windows.Markup.ValueSerializer.GetSerializerFor (type, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -462,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializer.TypeReferences(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TypeReferences (value As Object, context As IValueSerializerContext) As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ TypeReferences(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member TypeReferences : obj * System.Windows.Markup.IValueSerializerContext -&gt; seq&lt;Type&gt;&#xA;override this.TypeReferences : obj * System.Windows.Markup.IValueSerializerContext -&gt; seq&lt;Type&gt;" Usage="valueSerializer.TypeReferences (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.ContentRight" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContentRight" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContentRight" />
+  <TypeSignature Language="F#" Value="type ContentRight = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.DocumentEdit" />
       <MemberSignature Language="VB.NET" Value="DocumentEdit" />
       <MemberSignature Language="C++ CLI" Value="DocumentEdit" />
+      <MemberSignature Language="F#" Value="DocumentEdit = 11" Usage="System.Security.RightsManagement.ContentRight.DocumentEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Edit" />
       <MemberSignature Language="VB.NET" Value="Edit" />
       <MemberSignature Language="C++ CLI" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 1" Usage="System.Security.RightsManagement.ContentRight.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Export" />
       <MemberSignature Language="VB.NET" Value="Export" />
       <MemberSignature Language="C++ CLI" Value="Export" />
+      <MemberSignature Language="F#" Value="Export = 12" Usage="System.Security.RightsManagement.ContentRight.Export" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Extract" />
       <MemberSignature Language="VB.NET" Value="Extract" />
       <MemberSignature Language="C++ CLI" Value="Extract" />
+      <MemberSignature Language="F#" Value="Extract = 3" Usage="System.Security.RightsManagement.ContentRight.Extract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Forward" />
       <MemberSignature Language="VB.NET" Value="Forward" />
       <MemberSignature Language="C++ CLI" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 7" Usage="System.Security.RightsManagement.ContentRight.Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ObjectModel" />
       <MemberSignature Language="VB.NET" Value="ObjectModel" />
       <MemberSignature Language="C++ CLI" Value="ObjectModel" />
+      <MemberSignature Language="F#" Value="ObjectModel = 4" Usage="System.Security.RightsManagement.ContentRight.ObjectModel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Owner" />
       <MemberSignature Language="VB.NET" Value="Owner" />
       <MemberSignature Language="C++ CLI" Value="Owner" />
+      <MemberSignature Language="F#" Value="Owner = 5" Usage="System.Security.RightsManagement.ContentRight.Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Print" />
       <MemberSignature Language="VB.NET" Value="Print" />
       <MemberSignature Language="C++ CLI" Value="Print" />
+      <MemberSignature Language="F#" Value="Print = 2" Usage="System.Security.RightsManagement.ContentRight.Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -182,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Reply" />
       <MemberSignature Language="VB.NET" Value="Reply" />
       <MemberSignature Language="C++ CLI" Value="Reply" />
+      <MemberSignature Language="F#" Value="Reply = 8" Usage="System.Security.RightsManagement.ContentRight.Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -201,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ReplyAll" />
       <MemberSignature Language="VB.NET" Value="ReplyAll" />
       <MemberSignature Language="C++ CLI" Value="ReplyAll" />
+      <MemberSignature Language="F#" Value="ReplyAll = 9" Usage="System.Security.RightsManagement.ContentRight.ReplyAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -220,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Sign" />
       <MemberSignature Language="VB.NET" Value="Sign" />
       <MemberSignature Language="C++ CLI" Value="Sign" />
+      <MemberSignature Language="F#" Value="Sign = 10" Usage="System.Security.RightsManagement.ContentRight.Sign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -239,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.View" />
       <MemberSignature Language="VB.NET" Value="View" />
       <MemberSignature Language="C++ CLI" Value="View" />
+      <MemberSignature Language="F#" Value="View = 0" Usage="System.Security.RightsManagement.ContentRight.View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -258,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ViewRightsData" />
       <MemberSignature Language="VB.NET" Value="ViewRightsData" />
       <MemberSignature Language="C++ CLI" Value="ViewRightsData" />
+      <MemberSignature Language="F#" Value="ViewRightsData = 6" Usage="System.Security.RightsManagement.ContentRight.ViewRightsData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

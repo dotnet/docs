@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.ActiveXInvokeKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum AxHost.ActiveXInvokeKind" />
   <TypeSignature Language="C++ CLI" Value="public: enum class AxHost::ActiveXInvokeKind" />
+  <TypeSignature Language="F#" Value="type AxHost.ActiveXInvokeKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AxHost.ActiveXInvokeKind.MethodInvoke" />
       <MemberSignature Language="VB.NET" Value="MethodInvoke" />
       <MemberSignature Language="C++ CLI" Value="MethodInvoke" />
+      <MemberSignature Language="F#" Value="MethodInvoke = 0" Usage="System.Windows.Forms.AxHost.ActiveXInvokeKind.MethodInvoke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AxHost.ActiveXInvokeKind.PropertyGet" />
       <MemberSignature Language="VB.NET" Value="PropertyGet" />
       <MemberSignature Language="C++ CLI" Value="PropertyGet" />
+      <MemberSignature Language="F#" Value="PropertyGet = 1" Usage="System.Windows.Forms.AxHost.ActiveXInvokeKind.PropertyGet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AxHost.ActiveXInvokeKind.PropertySet" />
       <MemberSignature Language="VB.NET" Value="PropertySet" />
       <MemberSignature Language="C++ CLI" Value="PropertySet" />
+      <MemberSignature Language="F#" Value="PropertySet = 2" Usage="System.Windows.Forms.AxHost.ActiveXInvokeKind.PropertySet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

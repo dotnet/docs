@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextRange" />
   <TypeSignature Language="VB.NET" Value="Public Class TextRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextRange" />
+  <TypeSignature Language="F#" Value="type TextRange = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (position1 As TextPointer, position2 As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextRange(System::Windows::Documents::TextPointer ^ position1, System::Windows::Documents::TextPointer ^ position2);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.TextRange : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.TextRange" Usage="new System.Windows.Documents.TextRange (position1, position2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.ApplyPropertyValue(System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyPropertyValue (formattingProperty As DependencyProperty, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyPropertyValue(System::Windows::DependencyProperty ^ formattingProperty, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ApplyPropertyValue : System.Windows.DependencyProperty * obj -&gt; unit" Usage="textRange.ApplyPropertyValue (formattingProperty, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.CanLoad(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanLoad (dataFormat As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanLoad(System::String ^ dataFormat);" />
+      <MemberSignature Language="F#" Value="member this.CanLoad : string -&gt; bool" Usage="textRange.CanLoad dataFormat" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.CanSave(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanSave (dataFormat As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanSave(System::String ^ dataFormat);" />
+      <MemberSignature Language="F#" Value="member this.CanSave : string -&gt; bool" Usage="textRange.CanSave dataFormat" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Documents.ITextRange.CanSave(System.String)</InterfaceMember>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.TextRange.Changed" />
       <MemberSignature Language="VB.NET" Value="Public Event Changed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler " Usage="member this.Changed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Windows.Documents.ITextRange.Changed</InterfaceMember>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.ClearAllProperties" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAllProperties ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAllProperties();" />
+      <MemberSignature Language="F#" Value="member this.ClearAllProperties : unit -&gt; unit" Usage="textRange.ClearAllProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Documents.TextPointer textPointer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.Contains(System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Documents::TextPointer ^ textPointer);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Documents.TextPointer -&gt; bool" Usage="textRange.Contains textPointer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextRange.End" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As TextPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ End { System::Windows::Documents::TextPointer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.End : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextRange.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.GetPropertyValue(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (formattingProperty As DependencyProperty) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(System::Windows::DependencyProperty ^ formattingProperty);" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValue : System.Windows.DependencyProperty -&gt; obj" Usage="textRange.GetPropertyValue formattingProperty" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Documents.ITextRange.GetPropertyValue(System.Windows.DependencyProperty)</InterfaceMember>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextRange.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Documents.TextRange.IsEmpty" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.ITextRange.IsEmpty</InterfaceMember>
@@ -418,6 +429,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.Stream stream, string dataFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.Load(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::Stream ^ stream, System::String ^ dataFormat);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.IO.Stream * string -&gt; unit" Usage="textRange.Load (stream, dataFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -473,6 +485,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, string dataFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.Save(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::String ^ dataFormat);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * string -&gt; unit" Usage="textRange.Save (stream, dataFormat)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Documents.ITextRange.Save(System.IO.Stream,System.String)</InterfaceMember>
@@ -527,6 +540,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, string dataFormat, bool preserveTextElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.Save(System.IO.Stream,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::String ^ dataFormat, bool preserveTextElements);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * string * bool -&gt; unit" Usage="textRange.Save (stream, dataFormat, preserveTextElements)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Documents.ITextRange.Save(System.IO.Stream,System.String,System.Boolean)</InterfaceMember>
@@ -569,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextRange.Select(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select (position1 As TextPointer, position2 As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(System::Windows::Documents::TextPointer ^ position1, System::Windows::Documents::TextPointer ^ position2);" />
+      <MemberSignature Language="F#" Value="member this.Select : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; unit" Usage="textRange.Select (position1, position2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextRange.Start" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As TextPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ Start { System::Windows::Documents::TextPointer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Start : System.Windows.Documents.TextPointer" Usage="System.Windows.Documents.TextRange.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -636,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextRange.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Documents.TextRange.Text" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.ITextRange.Text</InterfaceMember>

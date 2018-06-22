@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageFormat" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageFormat" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageFormat sealed" />
+  <TypeSignature Language="F#" Value="type ImageFormat = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageFormat.#ctor(System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageFormat(Guid guid);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.ImageFormat : Guid -&gt; System.Drawing.Imaging.ImageFormat" Usage="new System.Drawing.Imaging.ImageFormat guid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Bmp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bmp As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Bmp { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bmp : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Bmp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Emf" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Emf As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Emf { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Emf : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Emf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageFormat.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="imageFormat.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Exif" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Exif As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Exif { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exif : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Exif" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageFormat.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="imageFormat.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Gif" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gif As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Gif { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gif : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Gif" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Guid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.Drawing.Imaging.ImageFormat.Guid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -209,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Icon As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Icon { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -229,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Jpeg" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Jpeg As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Jpeg { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Jpeg : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Jpeg" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.MemoryBmp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MemoryBmp As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ MemoryBmp { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemoryBmp : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.MemoryBmp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -269,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Png" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Png As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Png { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Png : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Png" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -289,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Tiff" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tiff As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Tiff { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tiff : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Tiff" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -309,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageFormat.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="imageFormat.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -330,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageFormat.Wmf" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Wmf As ImageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Imaging::ImageFormat ^ Wmf { System::Drawing::Imaging::ImageFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Wmf : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Imaging.ImageFormat.Wmf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

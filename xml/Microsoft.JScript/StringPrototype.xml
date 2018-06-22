@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StringPrototype" />
   <TypeSignature Language="VB.NET" Value="Public Class StringPrototype&#xA;Inherits StringObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringPrototype : Microsoft::JScript::StringObject" />
+  <TypeSignature Language="F#" Value="type StringPrototype = class&#xA;    inherit StringObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.anchor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function anchor (thisob As Object, anchorName As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ anchor(System::Object ^ thisob, System::Object ^ anchorName);" />
+      <MemberSignature Language="F#" Value="static member anchor : obj * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.anchor (thisob, anchorName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.big(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function big (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ big(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member big : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.big thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.blink(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function blink (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ blink(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member blink : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.blink thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.bold(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function bold (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ bold(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member bold : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.bold thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.charAt(System.Object,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function charAt (thisob As Object, pos As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ charAt(System::Object ^ thisob, double pos);" />
+      <MemberSignature Language="F#" Value="static member charAt : obj * double -&gt; string" Usage="Microsoft.JScript.StringPrototype.charAt (thisob, pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.charCodeAt(System.Object,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function charCodeAt (thisob As Object, pos As Double) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ charCodeAt(System::Object ^ thisob, double pos);" />
+      <MemberSignature Language="F#" Value="static member charCodeAt : obj * double -&gt; obj" Usage="Microsoft.JScript.StringPrototype.charCodeAt (thisob, pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.concat(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function concat (thisob As Object, ParamArray args As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ concat(System::Object ^ thisob, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member concat : obj * obj[] -&gt; string" Usage="Microsoft.JScript.StringPrototype.concat (thisob, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.StringPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As StringConstructor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::StringConstructor ^ constructor { Microsoft::JScript::StringConstructor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.constructor : Microsoft.JScript.StringConstructor" Usage="Microsoft.JScript.StringPrototype.constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.fixed(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function fixed (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ fixed(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member fixed : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.fixed thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.fontcolor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function fontcolor (thisob As Object, colorName As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ fontcolor(System::Object ^ thisob, System::Object ^ colorName);" />
+      <MemberSignature Language="F#" Value="static member fontcolor : obj * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.fontcolor (thisob, colorName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -352,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.fontsize(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function fontsize (thisob As Object, fontSize As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ fontsize(System::Object ^ thisob, System::Object ^ fontSize);" />
+      <MemberSignature Language="F#" Value="static member fontsize : obj * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.fontsize (thisob, fontSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.indexOf(System.Object,System.Object,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function indexOf (thisob As Object, searchString As Object, position As Double) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int indexOf(System::Object ^ thisob, System::Object ^ searchString, double position);" />
+      <MemberSignature Language="F#" Value="static member indexOf : obj * obj * double -&gt; int" Usage="Microsoft.JScript.StringPrototype.indexOf (thisob, searchString, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -422,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.italics(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function italics (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ italics(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member italics : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.italics thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -454,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.lastIndexOf(System.Object,System.Object,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function lastIndexOf (thisob As Object, searchString As Object, position As Double) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int lastIndexOf(System::Object ^ thisob, System::Object ^ searchString, double position);" />
+      <MemberSignature Language="F#" Value="static member lastIndexOf : obj * obj * double -&gt; int" Usage="Microsoft.JScript.StringPrototype.lastIndexOf (thisob, searchString, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -490,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.link(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function link (thisob As Object, linkRef As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ link(System::Object ^ thisob, System::Object ^ linkRef);" />
+      <MemberSignature Language="F#" Value="static member link : obj * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.link (thisob, linkRef)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -524,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.localeCompare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function localeCompare (thisob As Object, thatob As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int localeCompare(System::Object ^ thisob, System::Object ^ thatob);" />
+      <MemberSignature Language="F#" Value="static member localeCompare : obj * obj -&gt; int" Usage="Microsoft.JScript.StringPrototype.localeCompare (thisob, thatob)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -558,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.match(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function match (thisob As Object, engine As VsaEngine, regExp As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ match(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, System::Object ^ regExp);" />
+      <MemberSignature Language="F#" Value="static member match : obj * Microsoft.JScript.Vsa.VsaEngine * obj -&gt; obj" Usage="Microsoft.JScript.StringPrototype.match (thisob, engine, regExp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -594,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.replace(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function replace (thisob As Object, regExp As Object, replacement As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ replace(System::Object ^ thisob, System::Object ^ regExp, System::Object ^ replacement);" />
+      <MemberSignature Language="F#" Value="static member replace : obj * obj * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.replace (thisob, regExp, replacement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -630,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.search(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function search (thisob As Object, engine As VsaEngine, regExp As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int search(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, System::Object ^ regExp);" />
+      <MemberSignature Language="F#" Value="static member search : obj * Microsoft.JScript.Vsa.VsaEngine * obj -&gt; int" Usage="Microsoft.JScript.StringPrototype.search (thisob, engine, regExp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -666,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.slice(System.Object,System.Double,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function slice (thisob As Object, start As Double, end As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ slice(System::Object ^ thisob, double start, System::Object ^ end);" />
+      <MemberSignature Language="F#" Value="static member slice : obj * double * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.slice (thisob, start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -702,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.small(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function small (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ small(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member small : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.small thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -734,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.split(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function split (thisob As Object, engine As VsaEngine, separator As Object, limit As Object) As ArrayObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ split(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, System::Object ^ separator, System::Object ^ limit);" />
+      <MemberSignature Language="F#" Value="static member split : obj * Microsoft.JScript.Vsa.VsaEngine * obj * obj -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.StringPrototype.split (thisob, engine, separator, limit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -772,6 +795,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.strike(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function strike (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ strike(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member strike : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.strike thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -804,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.sub(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function sub (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ sub(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member sub : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.sub thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -836,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.substr(System.Object,System.Double,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function substr (thisob As Object, start As Double, count As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ substr(System::Object ^ thisob, double start, System::Object ^ count);" />
+      <MemberSignature Language="F#" Value="static member substr : obj * double * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.substr (thisob, start, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -875,6 +901,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function substring (thisob As Object, start As Double, end As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ substring(System::Object ^ thisob, double start, System::Object ^ end);" />
+      <MemberSignature Language="F#" Value="static member substring : obj * double * obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.substring (thisob, start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -911,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.sup(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function sup (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ sup(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member sup : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.sup thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -943,6 +971,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.toLocaleLowerCase(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toLocaleLowerCase (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toLocaleLowerCase(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toLocaleLowerCase : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.toLocaleLowerCase thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -975,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.toLocaleUpperCase(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toLocaleUpperCase (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toLocaleUpperCase(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toLocaleUpperCase : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.toLocaleUpperCase thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1007,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.toLowerCase(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toLowerCase (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toLowerCase(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toLowerCase : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.toLowerCase thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1039,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.toString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toString : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.toString thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1071,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.toUpperCase(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function toUpperCase (thisob As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toUpperCase(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member toUpperCase : obj -&gt; string" Usage="Microsoft.JScript.StringPrototype.toUpperCase thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1103,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringPrototype.valueOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function valueOf (thisob As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ valueOf(System::Object ^ thisob);" />
+      <MemberSignature Language="F#" Value="static member valueOf : obj -&gt; obj" Usage="Microsoft.JScript.StringPrototype.valueOf thisob" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

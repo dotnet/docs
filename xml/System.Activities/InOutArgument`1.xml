@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.InOutArgument`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InOutArgument(Of T)&#xA;Inherits InOutArgument" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class InOutArgument sealed : System::Activities::InOutArgument" />
+  <TypeSignature Language="F#" Value="type InOutArgument&lt;'T&gt; = class&#xA;    inherit InOutArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.#ctor(System.Activities.Activity{System.Activities.Location{`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Activity(Of Location(Of T)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InOutArgument(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.Activities.InOutArgument&lt;'T&gt; : System.Activities.Activity&lt;System.Activities.Location&lt;'T&gt;&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="new System.Activities.InOutArgument&lt;'T&gt; expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -136,6 +138,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.#ctor(System.Activities.Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InOutArgument(System::Activities::Variable ^ variable);" />
+      <MemberSignature Language="F#" Value="new System.Activities.InOutArgument&lt;'T&gt; : System.Activities.Variable -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="new System.Activities.InOutArgument&lt;'T&gt; variable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -156,6 +159,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.#ctor(System.Activities.Variable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (variable As Variable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InOutArgument(System::Activities::Variable&lt;T&gt; ^ variable);" />
+      <MemberSignature Language="F#" Value="new System.Activities.InOutArgument&lt;'T&gt; : System.Activities.Variable&lt;'T&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="new System.Activities.InOutArgument&lt;'T&gt; variable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -176,6 +180,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Expression(Of Func(Of ActivityContext, T)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InOutArgument(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.Activities.InOutArgument&lt;'T&gt; : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'T&gt;&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="new System.Activities.InOutArgument&lt;'T&gt; expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -196,6 +201,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="P:System.Activities.InOutArgument`1.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As Activity(Of Location(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ Expression { System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ get(); void set(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Activities.Activity&lt;System.Activities.Location&lt;'T&gt;&gt; with get, set" Usage="System.Activities.InOutArgument&lt;'T&gt;.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -221,6 +227,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.FromExpression(System.Activities.Activity{System.Activities.Location{`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromExpression (expression As Activity(Of Location(Of T))) As InOutArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InOutArgument&lt;T&gt; ^ FromExpression(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="static member FromExpression : System.Activities.Activity&lt;System.Activities.Location&lt;'T&gt;&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="System.Activities.InOutArgument&lt;'T&gt;.FromExpression expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -245,6 +252,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.FromVariable(System.Activities.Variable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromVariable (variable As Variable(Of T)) As InOutArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InOutArgument&lt;T&gt; ^ FromVariable(System::Activities::Variable&lt;T&gt; ^ variable);" />
+      <MemberSignature Language="F#" Value="static member FromVariable : System.Activities.Variable&lt;'T&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="System.Activities.InOutArgument&lt;'T&gt;.FromVariable variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -269,6 +277,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.Get(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="inOutArgument.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -293,6 +302,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.GetLocation(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location&lt;'T&gt;" Usage="inOutArgument.GetLocation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -317,6 +327,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.op_Implicit(System.Activities.Activity{System.Activities.Location{`0}})~System.Activities.InOutArgument{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (expression As Activity(Of Location(Of T))) As InOutArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InOutArgument&lt;T&gt; ^(System::Activities::Activity&lt;System::Activities::Location&lt;T&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Activity&lt;System.Activities.Location&lt;'T&gt;&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="System.Activities.InOutArgument&lt;'T&gt;.op_Implicit expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -341,6 +352,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.InOutArgument{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (variable As Variable(Of T)) As InOutArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InOutArgument&lt;T&gt; ^(System::Activities::Variable&lt;T&gt; ^ variable);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Variable&lt;'T&gt; -&gt; System.Activities.InOutArgument&lt;'T&gt;" Usage="System.Activities.InOutArgument&lt;'T&gt;.op_Implicit variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -365,6 +377,7 @@ WorkflowInvoker.Invoke(activity1);
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.Set(System.Activities.ActivityContext,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
+      <MemberSignature Language="F#" Value="override this.Set : System.Activities.ActivityContext * 'T -&gt; unit" Usage="inOutArgument.Set (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

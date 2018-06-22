@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBidirectionalIterator(Of TValue)&#xA;Implements IForwardIterator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IBidirectionalIterator : Microsoft::VisualC::StlClr::Generic::IForwardIterator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type IBidirectionalIterator&lt;'Value&gt; = interface&#xA;    interface IForwardIterator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1.prev" />
       <MemberSignature Language="VB.NET" Value="Public Sub prev ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void prev();" />
+      <MemberSignature Language="F#" Value="abstract member prev : unit -&gt; unit" Usage="iBidirectionalIterator.prev " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

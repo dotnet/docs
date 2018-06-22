@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractFailureKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContractFailureKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContractFailureKind" />
+  <TypeSignature Language="F#" Value="type ContractFailureKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.Assert" />
       <MemberSignature Language="VB.NET" Value="Assert" />
       <MemberSignature Language="C++ CLI" Value="Assert" />
+      <MemberSignature Language="F#" Value="Assert = 4" Usage="System.Diagnostics.Contracts.ContractFailureKind.Assert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.Assume" />
       <MemberSignature Language="VB.NET" Value="Assume" />
       <MemberSignature Language="C++ CLI" Value="Assume" />
+      <MemberSignature Language="F#" Value="Assume = 5" Usage="System.Diagnostics.Contracts.ContractFailureKind.Assume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.Invariant" />
       <MemberSignature Language="VB.NET" Value="Invariant" />
       <MemberSignature Language="C++ CLI" Value="Invariant" />
+      <MemberSignature Language="F#" Value="Invariant = 3" Usage="System.Diagnostics.Contracts.ContractFailureKind.Invariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.Postcondition" />
       <MemberSignature Language="VB.NET" Value="Postcondition" />
       <MemberSignature Language="C++ CLI" Value="Postcondition" />
+      <MemberSignature Language="F#" Value="Postcondition = 1" Usage="System.Diagnostics.Contracts.ContractFailureKind.Postcondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.PostconditionOnException" />
       <MemberSignature Language="VB.NET" Value="PostconditionOnException" />
       <MemberSignature Language="C++ CLI" Value="PostconditionOnException" />
+      <MemberSignature Language="F#" Value="PostconditionOnException = 2" Usage="System.Diagnostics.Contracts.ContractFailureKind.PostconditionOnException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Contracts.ContractFailureKind.Precondition" />
       <MemberSignature Language="VB.NET" Value="Precondition" />
       <MemberSignature Language="C++ CLI" Value="Precondition" />
+      <MemberSignature Language="F#" Value="Precondition = 0" Usage="System.Diagnostics.Contracts.ContractFailureKind.Precondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

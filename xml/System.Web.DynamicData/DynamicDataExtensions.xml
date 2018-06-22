@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DynamicDataExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicDataExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DynamicDataExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.ConvertEditedValue(System.Web.DynamicData.IFieldFormattingOptions,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ConvertEditedValue (formattingOptions As IFieldFormattingOptions, value As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ ConvertEditedValue(System::Web::DynamicData::IFieldFormattingOptions ^ formattingOptions, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member ConvertEditedValue : System.Web.DynamicData.IFieldFormattingOptions * string -&gt; obj" Usage="System.Web.DynamicData.DynamicDataExtensions.ConvertEditedValue (formattingOptions, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.EnablePersistedSelection(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub EnablePersistedSelection (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void EnablePersistedSelection(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
+      <MemberSignature Language="F#" Value="static member EnablePersistedSelection : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.EnablePersistedSelection dataBoundControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.ExpandDynamicWhereParameters(System.Web.DynamicData.IDynamicDataSource)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExpandDynamicWhereParameters (dataSource As IDynamicDataSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExpandDynamicWhereParameters(System::Web::DynamicData::IDynamicDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member ExpandDynamicWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.ExpandDynamicWhereParameters dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.FindDataSourceControl(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDataSourceControl (current As Control) As IDynamicDataSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::DynamicData::IDynamicDataSource ^ FindDataSourceControl(System::Web::UI::Control ^ current);" />
+      <MemberSignature Language="F#" Value="static member FindDataSourceControl : System.Web.UI.Control -&gt; System.Web.DynamicData.IDynamicDataSource" Usage="System.Web.DynamicData.DynamicDataExtensions.FindDataSourceControl current" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Control FindFieldTemplate(class System.Web.UI.Control control, string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.FindFieldTemplate(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::UI::Control ^ FindFieldTemplate(System::Web::UI::Control ^ control, System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="static member FindFieldTemplate : System.Web.UI.Control * string -&gt; System.Web.UI.Control" Usage="System.Web.DynamicData.DynamicDataExtensions.FindFieldTemplate (control, columnName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindMetaTable (current As Control) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::DynamicData::MetaTable ^ FindMetaTable(System::Web::UI::Control ^ current);" />
+      <MemberSignature Language="F#" Value="static member FindMetaTable : System.Web.UI.Control -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.DynamicDataExtensions.FindMetaTable current" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.FormatEditValue(System.Web.DynamicData.IFieldFormattingOptions,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FormatEditValue (formattingOptions As IFieldFormattingOptions, fieldValue As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FormatEditValue(System::Web::DynamicData::IFieldFormattingOptions ^ formattingOptions, System::Object ^ fieldValue);" />
+      <MemberSignature Language="F#" Value="static member FormatEditValue : System.Web.DynamicData.IFieldFormattingOptions * obj -&gt; string" Usage="System.Web.DynamicData.DynamicDataExtensions.FormatEditValue (formattingOptions, fieldValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.FormatValue(System.Web.DynamicData.IFieldFormattingOptions,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FormatValue (formattingOptions As IFieldFormattingOptions, fieldValue As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FormatValue(System::Web::DynamicData::IFieldFormattingOptions ^ formattingOptions, System::Object ^ fieldValue);" />
+      <MemberSignature Language="F#" Value="static member FormatValue : System.Web.DynamicData.IFieldFormattingOptions * obj -&gt; string" Usage="System.Web.DynamicData.DynamicDataExtensions.FormatValue (formattingOptions, fieldValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -302,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetDefaultValues(System.Web.UI.IDataSource)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDefaultValues (dataSource As IDataSource) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GetDefaultValues(System::Web::UI::IDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultValues : System.Web.UI.IDataSource -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.DynamicData.DynamicDataExtensions.GetDefaultValues dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetDefaultValues(System.Web.UI.INamingContainer)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDefaultValues (control As INamingContainer) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GetDefaultValues(System::Web::UI::INamingContainer ^ control);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultValues : System.Web.UI.INamingContainer -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.DynamicData.DynamicDataExtensions.GetDefaultValues control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -364,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetEnumType(System.Web.DynamicData.MetaColumn)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEnumType (column As MetaColumn) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Type ^ GetEnumType(System::Web::DynamicData::MetaColumn ^ column);" />
+      <MemberSignature Language="F#" Value="static member GetEnumType : System.Web.DynamicData.MetaColumn -&gt; Type" Usage="System.Web.DynamicData.DynamicDataExtensions.GetEnumType column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -404,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetMetaTable(System.Web.UI.IDataSource)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMetaTable (dataSource As IDataSource) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::DynamicData::MetaTable ^ GetMetaTable(System::Web::UI::IDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member GetMetaTable : System.Web.UI.IDataSource -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.DynamicDataExtensions.GetMetaTable dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -435,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetMetaTable(System.Web.UI.INamingContainer)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMetaTable (control As INamingContainer) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::DynamicData::MetaTable ^ GetMetaTable(System::Web::UI::INamingContainer ^ control);" />
+      <MemberSignature Language="F#" Value="static member GetMetaTable : System.Web.UI.INamingContainer -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.DynamicDataExtensions.GetMetaTable control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -466,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.GetTable(System.Web.DynamicData.IDynamicDataSource)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTable (dataSource As IDynamicDataSource) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Web::DynamicData::MetaTable ^ GetTable(System::Web::DynamicData::IDynamicDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member GetTable : System.Web.DynamicData.IDynamicDataSource -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.DynamicDataExtensions.GetTable dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -495,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.LoadWith``1(System.Web.UI.WebControls.LinqDataSource)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub LoadWith(Of TEntity) (dataSource As LinqDataSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void LoadWith(System::Web::UI::WebControls::LinqDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="static member LoadWith : System.Web.UI.WebControls.LinqDataSource -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.LoadWith dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -522,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.LoadWithForeignKeys(System.Web.UI.WebControls.LinqDataSource,System.Type)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub LoadWithForeignKeys (dataSource As LinqDataSource, rowType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void LoadWithForeignKeys(System::Web::UI::WebControls::LinqDataSource ^ dataSource, Type ^ rowType);" />
+      <MemberSignature Language="F#" Value="static member LoadWithForeignKeys : System.Web.UI.WebControls.LinqDataSource * Type -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.LoadWithForeignKeys (dataSource, rowType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -563,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.SetMetaTable(System.Web.UI.INamingContainer,System.Web.DynamicData.MetaTable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetMetaTable (control As INamingContainer, table As MetaTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetMetaTable(System::Web::UI::INamingContainer ^ control, System::Web::DynamicData::MetaTable ^ table);" />
+      <MemberSignature Language="F#" Value="static member SetMetaTable : System.Web.UI.INamingContainer * System.Web.DynamicData.MetaTable -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.SetMetaTable (control, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -588,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.SetMetaTable(System.Web.UI.INamingContainer,System.Web.DynamicData.MetaTable,System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetMetaTable (control As INamingContainer, table As MetaTable, defaultValues As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetMetaTable(System::Web::UI::INamingContainer ^ control, System::Web::DynamicData::MetaTable ^ table, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="static member SetMetaTable : System.Web.UI.INamingContainer * System.Web.DynamicData.MetaTable * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.SetMetaTable (control, table, defaultValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -615,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.SetMetaTable(System.Web.UI.INamingContainer,System.Web.DynamicData.MetaTable,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetMetaTable (control As INamingContainer, table As MetaTable, defaultValues As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetMetaTable(System::Web::UI::INamingContainer ^ control, System::Web::DynamicData::MetaTable ^ table, System::Object ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="static member SetMetaTable : System.Web.UI.INamingContainer * System.Web.DynamicData.MetaTable * obj -&gt; unit" Usage="System.Web.DynamicData.DynamicDataExtensions.SetMetaTable (control, table, defaultValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -651,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.TryGetMetaTable(System.Web.UI.IDataSource,System.Web.DynamicData.MetaTable@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryGetMetaTable (dataSource As IDataSource, ByRef table As MetaTable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryGetMetaTable(System::Web::UI::IDataSource ^ dataSource, [Runtime::InteropServices::Out] System::Web::DynamicData::MetaTable ^ % table);" />
+      <MemberSignature Language="F#" Value="static member TryGetMetaTable : System.Web.UI.IDataSource *  -&gt; bool" Usage="System.Web.DynamicData.DynamicDataExtensions.TryGetMetaTable (dataSource, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -678,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataExtensions.TryGetMetaTable(System.Web.UI.INamingContainer,System.Web.DynamicData.MetaTable@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryGetMetaTable (control As INamingContainer, ByRef table As MetaTable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool TryGetMetaTable(System::Web::UI::INamingContainer ^ control, [Runtime::InteropServices::Out] System::Web::DynamicData::MetaTable ^ % table);" />
+      <MemberSignature Language="F#" Value="static member TryGetMetaTable : System.Web.UI.INamingContainer *  -&gt; bool" Usage="System.Web.DynamicData.DynamicDataExtensions.TryGetMetaTable (control, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

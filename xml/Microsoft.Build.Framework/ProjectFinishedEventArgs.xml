@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ProjectFinishedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectFinishedEventArgs&#xA;Inherits BuildStatusEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectFinishedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
+  <TypeSignature Language="F#" Value="type ProjectFinishedEventArgs = class&#xA;    inherit BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, succeeded As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, bool succeeded);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectFinishedEventArgs : string * string * string * bool -&gt; Microsoft.Build.Framework.ProjectFinishedEventArgs" Usage="new Microsoft.Build.Framework.ProjectFinishedEventArgs (message, helpKeyword, projectFile, succeeded)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, succeeded As Boolean, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, bool succeeded, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectFinishedEventArgs : string * string * string * bool * DateTime -&gt; Microsoft.Build.Framework.ProjectFinishedEventArgs" Usage="new Microsoft.Build.Framework.ProjectFinishedEventArgs (message, helpKeyword, projectFile, succeeded, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

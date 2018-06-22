@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System._AppDomain" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AppDomain" />
   <TypeSignature Language="C++ CLI" Value="public interface class _AppDomain" />
+  <TypeSignature Language="F#" Value="type _AppDomain = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.AppendPrivatePath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendPrivatePath (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendPrivatePath(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member AppendPrivatePath : string -&gt; unit" Usage="_AppDomain.AppendPrivatePath path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.AssemblyLoad" />
       <MemberSignature Language="VB.NET" Value="Event AssemblyLoad As AssemblyLoadEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event AssemblyLoadEventHandler ^ AssemblyLoad;" />
+      <MemberSignature Language="F#" Value="member this.AssemblyLoad : AssemblyLoadEventHandler " Usage="member this.AssemblyLoad : System.AssemblyLoadEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.AssemblyResolve" />
       <MemberSignature Language="VB.NET" Value="Event AssemblyResolve As ResolveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event ResolveEventHandler ^ AssemblyResolve;" />
+      <MemberSignature Language="F#" Value="member this.AssemblyResolve : ResolveEventHandler " Usage="member this.AssemblyResolve : System.ResolveEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.BaseDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseDirectory : string" Usage="System._AppDomain.BaseDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ClearPrivatePath" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearPrivatePath ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearPrivatePath();" />
+      <MemberSignature Language="F#" Value="abstract member ClearPrivatePath : unit -&gt; unit" Usage="_AppDomain.ClearPrivatePath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ClearShadowCopyPath" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearShadowCopyPath ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearShadowCopyPath();" />
+      <MemberSignature Language="F#" Value="abstract member ClearShadowCopyPath : unit -&gt; unit" Usage="_AppDomain.ClearShadowCopyPath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstance(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (assemblyName As String, typeName As String) As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : string * string -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstance (assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstance(System.String,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (assemblyName As String, typeName As String, activationAttributes As Object()) As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : string * string * obj[] -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstance (assemblyName, typeName, activationAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : string * string * bool * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo * obj[] * System.Security.Policy.Evidence -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstance (assemblyName, typeName, ignoreCase, bindingAttr, binder, args, culture, activationAttributes, securityAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstanceFrom(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceFrom (assemblyFile As String, typeName As String) As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceFrom : string * string -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstanceFrom (assemblyFile, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -422,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstanceFrom(System.String,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceFrom (assemblyFile As String, typeName As String, activationAttributes As Object()) As ObjectHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceFrom : string * string * obj[] -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstanceFrom (assemblyFile, typeName, activationAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -459,6 +471,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceFrom : string * string * bool * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo * obj[] * System.Security.Policy.Evidence -&gt; System.Runtime.Remoting.ObjectHandle" Usage="_AppDomain.CreateInstanceFrom (assemblyFile, typeName, ignoreCase, bindingAttr, binder, args, culture, activationAttributes, securityAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -552,6 +566,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder DefineDynamicAssembly(class System.Reflection.AssemblyName name, valuetype System.Reflection.Emit.AssemblyBuilderAccess access, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * System.Security.Policy.Evidence -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, evidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -588,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess, dir As String) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::String ^ dir);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * string -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, dir)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -623,6 +639,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder DefineDynamicAssembly(class System.Reflection.AssemblyName name, valuetype System.Reflection.Emit.AssemblyBuilderAccess access, string dir, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.String,System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::String ^ dir, System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * string * System.Security.Policy.Evidence -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, dir, evidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -661,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess, requiredPermissions As PermissionSet, optionalPermissions As PermissionSet, refusedPermissions As PermissionSet) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::Security::PermissionSet ^ requiredPermissions, System::Security::PermissionSet ^ optionalPermissions, System::Security::PermissionSet ^ refusedPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, requiredPermissions, optionalPermissions, refusedPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -700,6 +718,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder DefineDynamicAssembly(class System.Reflection.AssemblyName name, valuetype System.Reflection.Emit.AssemblyBuilderAccess access, class System.Security.Policy.Evidence evidence, class System.Security.PermissionSet requiredPermissions, class System.Security.PermissionSet optionalPermissions, class System.Security.PermissionSet refusedPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.Security.Policy.Evidence,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::Security::Policy::Evidence ^ evidence, System::Security::PermissionSet ^ requiredPermissions, System::Security::PermissionSet ^ optionalPermissions, System::Security::PermissionSet ^ refusedPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * System.Security.Policy.Evidence * System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, evidence, requiredPermissions, optionalPermissions, refusedPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -742,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.String,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineDynamicAssembly (name As AssemblyName, access As AssemblyBuilderAccess, dir As String, requiredPermissions As PermissionSet, optionalPermissions As PermissionSet, refusedPermissions As PermissionSet) As AssemblyBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::String ^ dir, System::Security::PermissionSet ^ requiredPermissions, System::Security::PermissionSet ^ optionalPermissions, System::Security::PermissionSet ^ refusedPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * string * System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, dir, requiredPermissions, optionalPermissions, refusedPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -783,6 +803,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder DefineDynamicAssembly(class System.Reflection.AssemblyName name, valuetype System.Reflection.Emit.AssemblyBuilderAccess access, string dir, class System.Security.Policy.Evidence evidence, class System.Security.PermissionSet requiredPermissions, class System.Security.PermissionSet optionalPermissions, class System.Security.PermissionSet refusedPermissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.String,System.Security.Policy.Evidence,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::String ^ dir, System::Security::Policy::Evidence ^ evidence, System::Security::PermissionSet ^ requiredPermissions, System::Security::PermissionSet ^ optionalPermissions, System::Security::PermissionSet ^ refusedPermissions);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * string * System.Security.Policy.Evidence * System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, dir, evidence, requiredPermissions, optionalPermissions, refusedPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -826,6 +847,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder DefineDynamicAssembly(class System.Reflection.AssemblyName name, valuetype System.Reflection.Emit.AssemblyBuilderAccess access, string dir, class System.Security.Policy.Evidence evidence, class System.Security.PermissionSet requiredPermissions, class System.Security.PermissionSet optionalPermissions, class System.Security.PermissionSet refusedPermissions, bool isSynchronized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DefineDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess,System.String,System.Security.Policy.Evidence,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::AssemblyBuilder ^ DefineDynamicAssembly(System::Reflection::AssemblyName ^ name, System::Reflection::Emit::AssemblyBuilderAccess access, System::String ^ dir, System::Security::Policy::Evidence ^ evidence, System::Security::PermissionSet ^ requiredPermissions, System::Security::PermissionSet ^ optionalPermissions, System::Security::PermissionSet ^ refusedPermissions, bool isSynchronized);" />
+      <MemberSignature Language="F#" Value="abstract member DefineDynamicAssembly : System.Reflection.AssemblyName * System.Reflection.Emit.AssemblyBuilderAccess * string * System.Security.Policy.Evidence * System.Security.PermissionSet * System.Security.PermissionSet * System.Security.PermissionSet * bool -&gt; System.Reflection.Emit.AssemblyBuilder" Usage="_AppDomain.DefineDynamicAssembly (name, access, dir, evidence, requiredPermissions, optionalPermissions, refusedPermissions, isSynchronized)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -873,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.DoCallBack(System.CrossAppDomainDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoCallBack (theDelegate As CrossAppDomainDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoCallBack(CrossAppDomainDelegate ^ theDelegate);" />
+      <MemberSignature Language="F#" Value="abstract member DoCallBack : CrossAppDomainDelegate -&gt; unit" Usage="_AppDomain.DoCallBack theDelegate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -904,6 +927,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.DomainUnload" />
       <MemberSignature Language="VB.NET" Value="Event DomainUnload As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DomainUnload;" />
+      <MemberSignature Language="F#" Value="member this.DomainUnload : EventHandler " Usage="member this.DomainUnload : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -931,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.DynamicDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DynamicDirectory : string" Usage="System._AppDomain.DynamicDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -959,6 +984,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool" Usage="_AppDomain.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.Evidence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Evidence As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence" Usage="System._AppDomain.Evidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1030,6 +1057,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ExecuteAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteAssembly (assemblyFile As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteAssembly(System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAssembly : string -&gt; int" Usage="_AppDomain.ExecuteAssembly assemblyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1062,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ExecuteAssembly(System.String,System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteAssembly (assemblyFile As String, assemblySecurity As Evidence) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteAssembly(System::String ^ assemblyFile, System::Security::Policy::Evidence ^ assemblySecurity);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAssembly : string * System.Security.Policy.Evidence -&gt; int" Usage="_AppDomain.ExecuteAssembly (assemblyFile, assemblySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1096,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ExecuteAssembly(System.String,System.Security.Policy.Evidence,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteAssembly (assemblyFile As String, assemblySecurity As Evidence, args As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteAssembly(System::String ^ assemblyFile, System::Security::Policy::Evidence ^ assemblySecurity, cli::array &lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAssembly : string * System.Security.Policy.Evidence * string[] -&gt; int" Usage="_AppDomain.ExecuteAssembly (assemblyFile, assemblySecurity, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1132,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="System._AppDomain.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1160,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblies () As Assembly()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::Assembly ^&gt; ^ GetAssemblies();" />
+      <MemberSignature Language="F#" Value="abstract member GetAssemblies : unit -&gt; System.Reflection.Assembly[]" Usage="_AppDomain.GetAssemblies " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1189,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string -&gt; obj" Usage="_AppDomain.GetData name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1221,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int" Usage="_AppDomain.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1250,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId);" />
+      <MemberSignature Language="F#" Value="abstract member GetIDsOfNames :  * nativeint * uint32 * uint32 * nativeint -&gt; unit" Usage="_AppDomain.GetIDsOfNames (riid, rgszNames, cNames, lcid, rgDispId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1290,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetLifetimeService();" />
+      <MemberSignature Language="F#" Value="abstract member GetLifetimeService : unit -&gt; obj" Usage="_AppDomain.GetLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1325,6 +1361,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
+      <MemberSignature Language="F#" Value="abstract member GetType : unit -&gt; Type" Usage="_AppDomain.GetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1354,6 +1391,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit" Usage="_AppDomain.GetTypeInfo (iTInfo, lcid, ppTInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1390,6 +1428,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoCount (ByRef pcTInfo As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount :  -&gt; unit" Usage="_AppDomain.GetTypeInfoCount pcTInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1422,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeLifetimeService : unit -&gt; obj" Usage="_AppDomain.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1457,6 +1497,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : uint32 *  * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit" Usage="_AppDomain.Invoke (dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1513,6 +1554,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (rawAssembly As Byte()) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(cli::array &lt;System::Byte&gt; ^ rawAssembly);" />
+      <MemberSignature Language="F#" Value="abstract member Load : byte[] -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load rawAssembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1545,6 +1587,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (assemblyRef As AssemblyName) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(System::Reflection::AssemblyName ^ assemblyRef);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load assemblyRef" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1577,6 +1620,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (assemblyString As String) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(System::String ^ assemblyString);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load assemblyString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1609,6 +1653,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (rawAssembly As Byte(), rawSymbolStore As Byte()) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(cli::array &lt;System::Byte&gt; ^ rawAssembly, cli::array &lt;System::Byte&gt; ^ rawSymbolStore);" />
+      <MemberSignature Language="F#" Value="abstract member Load : byte[] * byte[] -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load (rawAssembly, rawSymbolStore)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1643,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.Reflection.AssemblyName,System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (assemblyRef As AssemblyName, assemblySecurity As Evidence) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(System::Reflection::AssemblyName ^ assemblyRef, System::Security::Policy::Evidence ^ assemblySecurity);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Reflection.AssemblyName * System.Security.Policy.Evidence -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load (assemblyRef, assemblySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1677,6 +1723,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.String,System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (assemblyString As String, assemblySecurity As Evidence) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(System::String ^ assemblyString, System::Security::Policy::Evidence ^ assemblySecurity);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string * System.Security.Policy.Evidence -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load (assemblyString, assemblySecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1711,6 +1758,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Load(System.Byte[],System.Byte[],System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (rawAssembly As Byte(), rawSymbolStore As Byte(), securityEvidence As Evidence) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ Load(cli::array &lt;System::Byte&gt; ^ rawAssembly, cli::array &lt;System::Byte&gt; ^ rawSymbolStore, System::Security::Policy::Evidence ^ securityEvidence);" />
+      <MemberSignature Language="F#" Value="abstract member Load : byte[] * byte[] * System.Security.Policy.Evidence -&gt; System.Reflection.Assembly" Usage="_AppDomain.Load (rawAssembly, rawSymbolStore, securityEvidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1747,6 +1795,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.ProcessExit" />
       <MemberSignature Language="VB.NET" Value="Event ProcessExit As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ProcessExit;" />
+      <MemberSignature Language="F#" Value="member this.ProcessExit : EventHandler " Usage="member this.ProcessExit : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1774,6 +1823,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.RelativeSearchPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeSearchPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeSearchPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeSearchPath : string" Usage="System._AppDomain.RelativeSearchPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1802,6 +1852,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.ResourceResolve" />
       <MemberSignature Language="VB.NET" Value="Event ResourceResolve As ResolveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event ResolveEventHandler ^ ResourceResolve;" />
+      <MemberSignature Language="F#" Value="member this.ResourceResolve : ResolveEventHandler " Usage="member this.ResourceResolve : System.ResolveEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1838,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetAppDomainPolicy(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAppDomainPolicy (domainPolicy As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAppDomainPolicy(System::Security::Policy::PolicyLevel ^ domainPolicy);" />
+      <MemberSignature Language="F#" Value="abstract member SetAppDomainPolicy : System.Security.Policy.PolicyLevel -&gt; unit" Usage="_AppDomain.SetAppDomainPolicy domainPolicy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1875,6 +1927,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetCachePath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCachePath (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCachePath(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member SetCachePath : string -&gt; unit" Usage="_AppDomain.SetCachePath s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1912,6 +1965,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (name As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ name, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * obj -&gt; unit" Usage="_AppDomain.SetData (name, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1951,6 +2005,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetPrincipalPolicy(System.Security.Principal.PrincipalPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPrincipalPolicy (policy As PrincipalPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPrincipalPolicy(System::Security::Principal::PrincipalPolicy policy);" />
+      <MemberSignature Language="F#" Value="abstract member SetPrincipalPolicy : System.Security.Principal.PrincipalPolicy -&gt; unit" Usage="_AppDomain.SetPrincipalPolicy policy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1982,6 +2037,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetShadowCopyPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetShadowCopyPath (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetShadowCopyPath(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member SetShadowCopyPath : string -&gt; unit" Usage="_AppDomain.SetShadowCopyPath s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2019,6 +2075,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.SetThreadPrincipal(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetThreadPrincipal (principal As IPrincipal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetThreadPrincipal(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member SetThreadPrincipal : System.Security.Principal.IPrincipal -&gt; unit" Usage="_AppDomain.SetThreadPrincipal principal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2050,6 +2107,7 @@
       <MemberSignature Language="DocId" Value="P:System._AppDomain.ShadowCopyFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShadowCopyFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShadowCopyFiles { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowCopyFiles : bool" Usage="System._AppDomain.ShadowCopyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2079,6 +2137,7 @@
       <MemberSignature Language="DocId" Value="M:System._AppDomain.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string" Usage="_AppDomain.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2108,6 +2167,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.TypeResolve" />
       <MemberSignature Language="VB.NET" Value="Event TypeResolve As ResolveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event ResolveEventHandler ^ TypeResolve;" />
+      <MemberSignature Language="F#" Value="member this.TypeResolve : ResolveEventHandler " Usage="member this.TypeResolve : System.ResolveEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2144,6 +2204,7 @@
       <MemberSignature Language="DocId" Value="E:System._AppDomain.UnhandledException" />
       <MemberSignature Language="VB.NET" Value="Event UnhandledException As UnhandledExceptionEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event UnhandledExceptionEventHandler ^ UnhandledException;" />
+      <MemberSignature Language="F#" Value="member this.UnhandledException : UnhandledExceptionEventHandler " Usage="member this.UnhandledException : System.UnhandledExceptionEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

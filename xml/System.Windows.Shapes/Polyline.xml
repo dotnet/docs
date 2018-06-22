@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Polyline" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Polyline&#xA;Inherits Shape" />
   <TypeSignature Language="C++ CLI" Value="public ref class Polyline sealed : System::Windows::Shapes::Shape" />
+  <TypeSignature Language="F#" Value="type Polyline = class&#xA;    inherit Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polyline.DefiningGeometry" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefiningGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Polyline.DefiningGeometry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polyline.FillRule" />
       <MemberSignature Language="VB.NET" Value="Public Property FillRule As FillRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FillRule FillRule { System::Windows::Media::FillRule get(); void set(System::Windows::Media::FillRule value); };" />
+      <MemberSignature Language="F#" Value="member this.FillRule : System.Windows.Media.FillRule with get, set" Usage="System.Windows.Shapes.Polyline.FillRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +120,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Polyline.FillRuleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillRuleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillRuleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FillRuleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Polyline.FillRuleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +141,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polyline.Points" />
       <MemberSignature Language="VB.NET" Value="Public Property Points As PointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ Points { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Points : System.Windows.Media.PointCollection with get, set" Usage="System.Windows.Shapes.Polyline.Points" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,6 +187,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Polyline.PointsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PointsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Polyline.PointsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

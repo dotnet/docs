@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthorizationRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthorizationRule&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationRule sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AuthorizationRule = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.#ctor(System.Web.Configuration.AuthorizationRuleAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As AuthorizationRuleAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationRule(System::Web::Configuration::AuthorizationRuleAction action);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.AuthorizationRule : System.Web.Configuration.AuthorizationRuleAction -&gt; System.Web.Configuration.AuthorizationRule" Usage="new System.Web.Configuration.AuthorizationRule action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRule.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As AuthorizationRuleAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthorizationRuleAction Action { System::Web::Configuration::AuthorizationRuleAction get(); void set(System::Web::Configuration::AuthorizationRuleAction value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Web.Configuration.AuthorizationRuleAction with get, set" Usage="System.Web.Configuration.AuthorizationRule.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="authorizationRule.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="authorizationRule.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="authorizationRule.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="authorizationRule.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.PreSerialize(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreSerialize (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreSerialize(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.PreSerialize : System.Xml.XmlWriter -&gt; unit" Usage="authorizationRule.PreSerialize writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRule.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.AuthorizationRule.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="authorizationRule.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetModified();" />
+      <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="authorizationRule.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRule.Roles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Roles As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Roles { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Roles : System.Collections.Specialized.StringCollection" Usage="System.Web.Configuration.AuthorizationRule.Roles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.SerializeElement : System.Xml.XmlWriter * bool -&gt; bool" Usage="authorizationRule.SerializeElement (writer, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="override this.SetReadOnly : unit -&gt; unit" Usage="authorizationRule.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRule.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="authorizationRule.Unmerge (sourceElement, parentElement, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRule.Users" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Users As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Users { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Users : System.Collections.Specialized.StringCollection" Usage="System.Web.Configuration.AuthorizationRule.Users" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRule.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Verbs { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.Collections.Specialized.StringCollection" Usage="System.Web.Configuration.AuthorizationRule.Verbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

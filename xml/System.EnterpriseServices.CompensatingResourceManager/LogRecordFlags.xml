@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogRecordFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogRecordFlags" />
+  <TypeSignature Language="F#" Value="type LogRecordFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.ForgetTarget" />
       <MemberSignature Language="VB.NET" Value="ForgetTarget" />
       <MemberSignature Language="C++ CLI" Value="ForgetTarget" />
+      <MemberSignature Language="F#" Value="ForgetTarget = 1" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.ForgetTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.ReplayInProgress" />
       <MemberSignature Language="VB.NET" Value="ReplayInProgress" />
       <MemberSignature Language="C++ CLI" Value="ReplayInProgress" />
+      <MemberSignature Language="F#" Value="ReplayInProgress = 64" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.ReplayInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringAbort" />
       <MemberSignature Language="VB.NET" Value="WrittenDuringAbort" />
       <MemberSignature Language="C++ CLI" Value="WrittenDuringAbort" />
+      <MemberSignature Language="F#" Value="WrittenDuringAbort = 8" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringAbort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringCommit" />
       <MemberSignature Language="VB.NET" Value="WrittenDuringCommit" />
       <MemberSignature Language="C++ CLI" Value="WrittenDuringCommit" />
+      <MemberSignature Language="F#" Value="WrittenDuringCommit = 4" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringCommit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringPrepare" />
       <MemberSignature Language="VB.NET" Value="WrittenDuringPrepare" />
       <MemberSignature Language="C++ CLI" Value="WrittenDuringPrepare" />
+      <MemberSignature Language="F#" Value="WrittenDuringPrepare = 2" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringPrepare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringReplay" />
       <MemberSignature Language="VB.NET" Value="WrittenDuringReplay" />
       <MemberSignature Language="C++ CLI" Value="WrittenDuringReplay" />
+      <MemberSignature Language="F#" Value="WrittenDuringReplay = 32" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDuringReplay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDurringRecovery" />
       <MemberSignature Language="VB.NET" Value="WrittenDurringRecovery" />
       <MemberSignature Language="C++ CLI" Value="WrittenDurringRecovery" />
+      <MemberSignature Language="F#" Value="WrittenDurringRecovery = 16" Usage="System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags.WrittenDurringRecovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptoConfig" />
   <TypeSignature Language="VB.NET" Value="Public Class CryptoConfig" />
   <TypeSignature Language="C++ CLI" Value="public ref class CryptoConfig" />
+  <TypeSignature Language="F#" Value="type CryptoConfig = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAlgorithm (algorithm As Type, ParamArray names As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAlgorithm(Type ^ algorithm, ... cli::array &lt;System::String ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="static member AddAlgorithm : Type * string[] -&gt; unit" Usage="System.Security.Cryptography.CryptoConfig.AddAlgorithm (algorithm, names)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.AddOID(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddOID (oid As String, ParamArray names As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddOID(System::String ^ oid, ... cli::array &lt;System::String ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="static member AddOID : string * string[] -&gt; unit" Usage="System.Security.Cryptography.CryptoConfig.AddOID (oid, names)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoConfig.AllowOnlyFipsAlgorithms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllowOnlyFipsAlgorithms As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AllowOnlyFipsAlgorithms { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowOnlyFipsAlgorithms : bool" Usage="System.Security.Cryptography.CryptoConfig.AllowOnlyFipsAlgorithms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.CreateFromName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromName (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateFromName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member CreateFromName : string -&gt; obj" Usage="System.Security.Cryptography.CryptoConfig.CreateFromName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.CreateFromName(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromName (name As String, ParamArray args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateFromName(System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member CreateFromName : string * obj[] -&gt; obj" Usage="System.Security.Cryptography.CryptoConfig.CreateFromName (name, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeOID (str As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ EncodeOID(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member EncodeOID : string -&gt; byte[]" Usage="System.Security.Cryptography.CryptoConfig.EncodeOID str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -435,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.MapNameToOID(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MapNameToOID (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MapNameToOID(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member MapNameToOID : string -&gt; string" Usage="System.Security.Cryptography.CryptoConfig.MapNameToOID name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

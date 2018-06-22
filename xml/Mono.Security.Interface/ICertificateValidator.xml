@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ICertificateValidator" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICertificateValidator" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICertificateValidator" />
+  <TypeSignature Language="F#" Value="type ICertificateValidator = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.ICertificateValidator.SelectClientCertificate(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Cryptography.X509Certificates.X509Certificate,System.String[],System.Security.Cryptography.X509Certificates.X509Certificate@)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectClientCertificate (targetHost As String, localCertificates As X509CertificateCollection, remoteCertificate As X509Certificate, acceptableIssuers As String(), ByRef clientCertificate As X509Certificate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SelectClientCertificate(System::String ^ targetHost, System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ localCertificates, System::Security::Cryptography::X509Certificates::X509Certificate ^ remoteCertificate, cli::array &lt;System::String ^&gt; ^ acceptableIssuers, [Runtime::InteropServices::Out] System::Security::Cryptography::X509Certificates::X509Certificate ^ % clientCertificate);" />
+      <MemberSignature Language="F#" Value="abstract member SelectClientCertificate : string * System.Security.Cryptography.X509Certificates.X509CertificateCollection * System.Security.Cryptography.X509Certificates.X509Certificate * string[] *  -&gt; bool" Usage="iCertificateValidator.SelectClientCertificate (targetHost, localCertificates, remoteCertificate, acceptableIssuers, clientCertificate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ICertificateValidator.Settings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As MonoTlsSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::MonoTlsSettings ^ Settings { Mono::Security::Interface::MonoTlsSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Settings : Mono.Security.Interface.MonoTlsSettings" Usage="Mono.Security.Interface.ICertificateValidator.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.ICertificateValidator.ValidateCertificate(System.String,System.Boolean,System.Security.Cryptography.X509Certificates.X509CertificateCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateCertificate (targetHost As String, serverMode As Boolean, certificates As X509CertificateCollection) As ValidationResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::Security::Interface::ValidationResult ^ ValidateCertificate(System::String ^ targetHost, bool serverMode, System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ certificates);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateCertificate : string * bool * System.Security.Cryptography.X509Certificates.X509CertificateCollection -&gt; Mono.Security.Interface.ValidationResult" Usage="iCertificateValidator.ValidateCertificate (targetHost, serverMode, certificates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

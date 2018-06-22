@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.NeutralResourcesLanguageAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NeutralResourcesLanguageAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class NeutralResourcesLanguageAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type NeutralResourcesLanguageAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.ResourceManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -158,6 +159,7 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="DocId" Value="M:System.Resources.NeutralResourcesLanguageAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cultureName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NeutralResourcesLanguageAttribute(System::String ^ cultureName);" />
+      <MemberSignature Language="F#" Value="new System.Resources.NeutralResourcesLanguageAttribute : string -&gt; System.Resources.NeutralResourcesLanguageAttribute" Usage="new System.Resources.NeutralResourcesLanguageAttribute cultureName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -198,6 +200,7 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="DocId" Value="M:System.Resources.NeutralResourcesLanguageAttribute.#ctor(System.String,System.Resources.UltimateResourceFallbackLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cultureName As String, location As UltimateResourceFallbackLocation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NeutralResourcesLanguageAttribute(System::String ^ cultureName, System::Resources::UltimateResourceFallbackLocation location);" />
+      <MemberSignature Language="F#" Value="new System.Resources.NeutralResourcesLanguageAttribute : string * System.Resources.UltimateResourceFallbackLocation -&gt; System.Resources.NeutralResourcesLanguageAttribute" Usage="new System.Resources.NeutralResourcesLanguageAttribute (cultureName, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +248,7 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="DocId" Value="P:System.Resources.NeutralResourcesLanguageAttribute.CultureName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureName : string" Usage="System.Resources.NeutralResourcesLanguageAttribute.CultureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -284,6 +288,7 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="DocId" Value="P:System.Resources.NeutralResourcesLanguageAttribute.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As UltimateResourceFallbackLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Resources::UltimateResourceFallbackLocation Location { System::Resources::UltimateResourceFallbackLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Resources.UltimateResourceFallbackLocation" Usage="System.Resources.NeutralResourcesLanguageAttribute.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

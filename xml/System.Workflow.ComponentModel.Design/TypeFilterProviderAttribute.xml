@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeFilterProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeFilterProviderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeFilterProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeFilterProviderAttribute(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute : string -&gt; System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute" Usage="new System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeFilterProviderAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute : Type -&gt; System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute" Usage="new System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.TypeFilterProviderTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeFilterProviderTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeFilterProviderTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeFilterProviderTypeName : string" Usage="System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.TypeFilterProviderTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

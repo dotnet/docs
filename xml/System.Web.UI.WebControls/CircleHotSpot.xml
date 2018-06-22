@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CircleHotSpot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CircleHotSpot&#xA;Inherits HotSpot" />
   <TypeSignature Language="C++ CLI" Value="public ref class CircleHotSpot sealed : System::Web::UI::WebControls::HotSpot" />
+  <TypeSignature Language="F#" Value="type CircleHotSpot = class&#xA;    inherit HotSpot" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CircleHotSpot.GetCoordinates" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCoordinates () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCoordinates();" />
+      <MemberSignature Language="F#" Value="override this.GetCoordinates : unit -&gt; string" Usage="circleHotSpot.GetCoordinates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.MarkupName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property MarkupName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ MarkupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupName : string" Usage="System.Web.UI.WebControls.CircleHotSpot.MarkupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.Radius" />
       <MemberSignature Language="VB.NET" Value="Public Property Radius As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Radius { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Radius : int with get, set" Usage="System.Web.UI.WebControls.CircleHotSpot.Radius" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Web.UI.WebControls.CircleHotSpot.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CircleHotSpot.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Web.UI.WebControls.CircleHotSpot.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

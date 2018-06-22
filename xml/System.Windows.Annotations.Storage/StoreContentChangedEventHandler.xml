@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.StoreContentChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StoreContentChangedEventHandler(sender As Object, e As StoreContentChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StoreContentChangedEventHandler(System::Object ^ sender, StoreContentChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StoreContentChangedEventHandler = delegate of obj * StoreContentChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

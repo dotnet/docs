@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MediaState" />
   <TypeSignature Language="VB.NET" Value="Public Enum MediaState" />
   <TypeSignature Language="C++ CLI" Value="public enum class MediaState" />
+  <TypeSignature Language="F#" Value="type MediaState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Close" />
       <MemberSignature Language="VB.NET" Value="Close" />
       <MemberSignature Language="C++ CLI" Value="Close" />
+      <MemberSignature Language="F#" Value="Close = 2" Usage="System.Windows.Controls.MediaState.Close" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Manual" />
       <MemberSignature Language="VB.NET" Value="Manual" />
       <MemberSignature Language="C++ CLI" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 0" Usage="System.Windows.Controls.MediaState.Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Pause" />
       <MemberSignature Language="VB.NET" Value="Pause" />
       <MemberSignature Language="C++ CLI" Value="Pause" />
+      <MemberSignature Language="F#" Value="Pause = 3" Usage="System.Windows.Controls.MediaState.Pause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Play" />
       <MemberSignature Language="VB.NET" Value="Play" />
       <MemberSignature Language="C++ CLI" Value="Play" />
+      <MemberSignature Language="F#" Value="Play = 1" Usage="System.Windows.Controls.MediaState.Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 4" Usage="System.Windows.Controls.MediaState.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

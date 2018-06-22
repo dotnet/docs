@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.IInvokeOnGetBinder" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInvokeOnGetBinder" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInvokeOnGetBinder" />
+  <TypeSignature Language="F#" Value="type IInvokeOnGetBinder = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.IInvokeOnGetBinder.InvokeOnGet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvokeOnGet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvokeOnGet { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeOnGet : bool" Usage="System.Dynamic.IInvokeOnGetBinder.InvokeOnGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

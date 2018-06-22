@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredHiddenField" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegisteredHiddenField" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegisteredHiddenField sealed" />
+  <TypeSignature Language="F#" Value="type RegisteredHiddenField = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredHiddenField.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ Control { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.Control" Usage="System.Web.UI.RegisteredHiddenField.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredHiddenField.InitialValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InitialValue : string" Usage="System.Web.UI.RegisteredHiddenField.InitialValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredHiddenField.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.RegisteredHiddenField.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

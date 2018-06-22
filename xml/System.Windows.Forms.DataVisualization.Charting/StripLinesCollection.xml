@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StripLinesCollection&#xA;Inherits ChartElementCollection(Of StripLine)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StripLinesCollection : System::Windows::Forms::DataVisualization::Charting::ChartElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::StripLine ^&gt;" />
+  <TypeSignature Language="F#" Value="type StripLinesCollection = class&#xA;    inherit ChartElementCollection&lt;StripLine&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

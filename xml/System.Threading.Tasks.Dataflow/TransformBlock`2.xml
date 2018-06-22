@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.TransformBlock`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformBlock(Of TInput, TOutput)&#xA;Implements IPropagatorBlock(Of TInput, TOutput), IReceivableSourceBlock(Of TOutput), ISourceBlock(Of TOutput), ITargetBlock(Of TInput)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TInput, typename TOutput&gt;&#xA;public ref class TransformBlock sealed : System::Threading::Tasks::Dataflow::IPropagatorBlock&lt;TInput, TOutput&gt;, System::Threading::Tasks::Dataflow::IReceivableSourceBlock&lt;TOutput&gt;, System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt;, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt;" />
+  <TypeSignature Language="F#" Value="type TransformBlock&lt;'Input, 'Output&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface IPropagatorBlock&lt;'Input, 'Output&gt;&#xA;    interface ISourceBlock&lt;'Output&gt;&#xA;    interface ITargetBlock&lt;'Input&gt;&#xA;    interface IReceivableSourceBlock&lt;'Output&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.#ctor(System.Func{`0,System.Threading.Tasks.Task{`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transform As Func(Of TInput, Task(Of TOutput)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformBlock(Func&lt;TInput, System::Threading::Tasks::Task&lt;TOutput&gt; ^&gt; ^ transform);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; : Func&lt;'Input, System.Threading.Tasks.Task&lt;'Output&gt;&gt; -&gt; System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;" Usage="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; transform" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.#ctor(System.Func{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transform As Func(Of TInput, TOutput))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformBlock(Func&lt;TInput, TOutput&gt; ^ transform);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; : Func&lt;'Input, 'Output&gt; -&gt; System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;" Usage="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; transform" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.#ctor(System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transform As Func(Of TInput, Task(Of TOutput)), dataflowBlockOptions As ExecutionDataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformBlock(Func&lt;TInput, System::Threading::Tasks::Task&lt;TOutput&gt; ^&gt; ^ transform, System::Threading::Tasks::Dataflow::ExecutionDataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; : Func&lt;'Input, System.Threading.Tasks.Task&lt;'Output&gt;&gt; * System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;" Usage="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; (transform, dataflowBlockOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.#ctor(System.Func{`0,`1},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transform As Func(Of TInput, TOutput), dataflowBlockOptions As ExecutionDataflowBlockOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformBlock(Func&lt;TInput, TOutput&gt; ^ transform, System::Threading::Tasks::Dataflow::ExecutionDataflowBlockOptions ^ dataflowBlockOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; : Func&lt;'Input, 'Output&gt; * System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;" Usage="new System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt; (transform, dataflowBlockOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete();" />
+      <MemberSignature Language="F#" Value="abstract member Complete : unit -&gt; unit&#xA;override this.Complete : unit -&gt; unit" Usage="transformBlock.Complete " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete</InterfaceMember>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.TransformBlock`2.Completion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completion As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Completion { System::Threading::Tasks::Task ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Completion : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;.Completion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion</InterfaceMember>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.TransformBlock`2.InputCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputCount : int" Usage="System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;.InputCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`1},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function LinkTo (target As ITargetBlock(Of TOutput), linkOptions As DataflowLinkOptions) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions);" />
+      <MemberSignature Language="F#" Value="abstract member LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable&#xA;override this.LinkTo : System.Threading.Tasks.Dataflow.ITargetBlock&lt;'Output&gt; * System.Threading.Tasks.Dataflow.DataflowLinkOptions -&gt; IDisposable" Usage="transformBlock.LinkTo (target, linkOptions)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)</InterfaceMember>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.TransformBlock`2.OutputCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputCount : int" Usage="System.Threading.Tasks.Dataflow.TransformBlock&lt;'Input, 'Output&gt;.OutputCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -529,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="transformBlock.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -560,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.TryReceive(System.Predicate{`1},`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceive (filter As Predicate(Of TOutput), ByRef item As TOutput) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceive(Predicate&lt;TOutput&gt; ^ filter, [Runtime::InteropServices::Out] TOutput % item);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool&#xA;override this.TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool" Usage="transformBlock.TryReceive (filter, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0@)</InterfaceMember>
@@ -602,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformBlock`2.TryReceiveAll(System.Collections.Generic.IList{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceiveAll (ByRef items As IList(Of TOutput)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceiveAll([Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;TOutput&gt; ^ % items);" />
+      <MemberSignature Language="F#" Value="abstract member TryReceiveAll :  -&gt; bool&#xA;override this.TryReceiveAll :  -&gt; bool" Usage="transformBlock.TryReceiveAll items" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)</InterfaceMember>

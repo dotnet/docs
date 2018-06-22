@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VariantType" />
   <TypeSignature Language="VB.NET" Value="Public Enum VariantType" />
   <TypeSignature Language="C++ CLI" Value="public enum class VariantType" />
+  <TypeSignature Language="F#" Value="type VariantType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Array" />
       <MemberSignature Language="VB.NET" Value="Array" />
       <MemberSignature Language="C++ CLI" Value="Array" />
+      <MemberSignature Language="F#" Value="Array = 8192" Usage="Microsoft.VisualBasic.VariantType.Array" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 11" Usage="Microsoft.VisualBasic.VariantType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 17" Usage="Microsoft.VisualBasic.VariantType.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 18" Usage="Microsoft.VisualBasic.VariantType.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
       <MemberSignature Language="C++ CLI" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 6" Usage="Microsoft.VisualBasic.VariantType.Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.DataObject" />
       <MemberSignature Language="VB.NET" Value="DataObject" />
       <MemberSignature Language="C++ CLI" Value="DataObject" />
+      <MemberSignature Language="F#" Value="DataObject = 13" Usage="Microsoft.VisualBasic.VariantType.DataObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 7" Usage="Microsoft.VisualBasic.VariantType.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -169,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 14" Usage="Microsoft.VisualBasic.VariantType.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -189,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 5" Usage="Microsoft.VisualBasic.VariantType.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -209,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="C++ CLI" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 0" Usage="Microsoft.VisualBasic.VariantType.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -228,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 10" Usage="Microsoft.VisualBasic.VariantType.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
       <MemberSignature Language="C++ CLI" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 3" Usage="Microsoft.VisualBasic.VariantType.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -269,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Long" />
       <MemberSignature Language="VB.NET" Value="Long" />
       <MemberSignature Language="C++ CLI" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 20" Usage="Microsoft.VisualBasic.VariantType.Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -289,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Null" />
       <MemberSignature Language="VB.NET" Value="Null" />
       <MemberSignature Language="C++ CLI" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 1" Usage="Microsoft.VisualBasic.VariantType.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -308,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Object" />
       <MemberSignature Language="VB.NET" Value="Object" />
       <MemberSignature Language="C++ CLI" Value="Object" />
+      <MemberSignature Language="F#" Value="Object = 9" Usage="Microsoft.VisualBasic.VariantType.Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -327,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="C++ CLI" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 2" Usage="Microsoft.VisualBasic.VariantType.Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -347,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 4" Usage="Microsoft.VisualBasic.VariantType.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -367,6 +385,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 8" Usage="Microsoft.VisualBasic.VariantType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -387,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.UserDefinedType" />
       <MemberSignature Language="VB.NET" Value="UserDefinedType" />
       <MemberSignature Language="C++ CLI" Value="UserDefinedType" />
+      <MemberSignature Language="F#" Value="UserDefinedType = 36" Usage="Microsoft.VisualBasic.VariantType.UserDefinedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -406,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Variant" />
       <MemberSignature Language="VB.NET" Value="Variant" />
       <MemberSignature Language="C++ CLI" Value="Variant" />
+      <MemberSignature Language="F#" Value="Variant = 12" Usage="Microsoft.VisualBasic.VariantType.Variant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

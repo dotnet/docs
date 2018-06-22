@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum TouchAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class TouchAction" />
+  <TypeSignature Language="F#" Value="type TouchAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 0" Usage="System.Windows.Input.TouchAction.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Move" />
       <MemberSignature Language="VB.NET" Value="Move" />
       <MemberSignature Language="C++ CLI" Value="Move" />
+      <MemberSignature Language="F#" Value="Move = 1" Usage="System.Windows.Input.TouchAction.Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 2" Usage="System.Windows.Input.TouchAction.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInclude" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaInclude&#xA;Inherits XmlSchemaExternal" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaInclude : System::Xml::Schema::XmlSchemaExternal" />
+  <TypeSignature Language="F#" Value="type XmlSchemaInclude = class&#xA;    inherit XmlSchemaExternal" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaInclude.Annotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Annotation As XmlSchemaAnnotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnnotation ^ Annotation { System::Xml::Schema::XmlSchemaAnnotation ^ get(); void set(System::Xml::Schema::XmlSchemaAnnotation ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Annotation : System.Xml.Schema.XmlSchemaAnnotation with get, set" Usage="System.Xml.Schema.XmlSchemaInclude.Annotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

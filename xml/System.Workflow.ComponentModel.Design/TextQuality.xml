@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.TextQuality" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextQuality" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextQuality" />
+  <TypeSignature Language="F#" Value="type TextQuality = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.TextQuality.Aliased" />
       <MemberSignature Language="VB.NET" Value="Aliased" />
       <MemberSignature Language="C++ CLI" Value="Aliased" />
+      <MemberSignature Language="F#" Value="Aliased = 0" Usage="System.Workflow.ComponentModel.Design.TextQuality.Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.TextQuality.AntiAliased" />
       <MemberSignature Language="VB.NET" Value="AntiAliased" />
       <MemberSignature Language="C++ CLI" Value="AntiAliased" />
+      <MemberSignature Language="F#" Value="AntiAliased = 1" Usage="System.Workflow.ComponentModel.Design.TextQuality.AntiAliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

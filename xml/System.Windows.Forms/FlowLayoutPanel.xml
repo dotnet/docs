@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowLayoutPanel&#xA;Inherits Panel&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowLayoutPanel : System::Windows::Forms::Panel, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type FlowLayoutPanel = class&#xA;    inherit Panel&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlowDirection FlowDirection { System::Windows::Forms::FlowDirection get(); void set(System::Windows::Forms::FlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.Forms.FlowDirection with get, set" Usage="System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetFlowBreak(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.GetFlowBreak(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetFlowBreak(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetFlowBreak : System.Windows.Forms.Control -&gt; bool" Usage="flowLayoutPanel.GetFlowBreak control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.LayoutEngine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.FlowLayoutPanel.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFlowBreak(class System.Windows.Forms.Control control, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutPanel.SetFlowBreak(System.Windows.Forms.Control,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFlowBreak(System::Windows::Forms::Control ^ control, bool value);" />
+      <MemberSignature Language="F#" Value="member this.SetFlowBreak : System.Windows.Forms.Control * bool -&gt; unit" Usage="flowLayoutPanel.SetFlowBreak (control, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutPanel.WrapContents" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapContents : bool with get, set" Usage="System.Windows.Forms.FlowLayoutPanel.WrapContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

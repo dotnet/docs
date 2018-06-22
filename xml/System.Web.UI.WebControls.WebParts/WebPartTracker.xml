@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTracker" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartTracker&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartTracker sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type WebPartTracker = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTracker.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartTracker(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartTracker : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint -&gt; System.Web.UI.WebControls.WebParts.WebPartTracker" Usage="new System.Web.UI.WebControls.WebParts.WebPartTracker (webPart, providerConnectionPoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCircularConnection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCircularConnection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCircularConnection : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.JustInTimeActivationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JustInTimeActivationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class JustInTimeActivationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type JustInTimeActivationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.JustInTimeActivationAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JustInTimeActivationAttribute(bool val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.JustInTimeActivationAttribute : bool -&gt; System.EnterpriseServices.JustInTimeActivationAttribute" Usage="new System.EnterpriseServices.JustInTimeActivationAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.JustInTimeActivationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.EnterpriseServices.JustInTimeActivationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

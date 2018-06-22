@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.ICodeCompiler" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICodeCompiler" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICodeCompiler" />
+  <TypeSignature Language="F#" Value="type ICodeCompiler = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromDom (options As CompilerParameters, compilationUnit As CodeCompileUnit) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromDom(System::CodeDom::Compiler::CompilerParameters ^ options, System::CodeDom::CodeCompileUnit ^ compilationUnit);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromDom : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromDom (options, compilationUnit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromDomBatch(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromDomBatch (options As CompilerParameters, compilationUnits As CodeCompileUnit()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromDomBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::CodeDom::CodeCompileUnit ^&gt; ^ compilationUnits);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromDomBatch : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromDomBatch (options, compilationUnits)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromFile (options As CompilerParameters, fileName As String) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromFile(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromFile : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromFile (options, fileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromFileBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromFileBatch (options As CompilerParameters, fileNames As String()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromFileBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ fileNames);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromFileBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromFileBatch (options, fileNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromSource (options As CompilerParameters, source As String) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromSource(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromSource : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromSource (options, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromSourceBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromSourceBatch (options As CompilerParameters, sources As String()) As CompilerResults" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromSourceBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromSourceBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromSourceBatch (options, sources)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

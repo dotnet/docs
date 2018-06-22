@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataStringDecoder" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataStringDecoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataStringDecoder" />
+  <TypeSignature Language="F#" Value="type MetadataStringDecoder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataStringDecoder.#ctor(System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataStringDecoder(System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MetadataStringDecoder : System.Text.Encoding -&gt; System.Reflection.Metadata.MetadataStringDecoder" Usage="new System.Reflection.Metadata.MetadataStringDecoder encoding" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataStringDecoder.DefaultUTF8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultUTF8 As MetadataStringDecoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Reflection::Metadata::MetadataStringDecoder ^ DefaultUTF8 { System::Reflection::Metadata::MetadataStringDecoder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultUTF8 : System.Reflection.Metadata.MetadataStringDecoder" Usage="System.Reflection.Metadata.MetadataStringDecoder.DefaultUTF8" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MetadataStringDecoder.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.Reflection.Metadata.MetadataStringDecoder.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(unsigned int8* bytes, int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataStringDecoder.GetString(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::Byte* bytes, int byteCount);" />
+      <MemberSignature Language="F#" Value="abstract member GetString : nativeptr&lt;byte&gt; * int -&gt; string&#xA;override this.GetString : nativeptr&lt;byte&gt; * int -&gt; string" Usage="metadataStringDecoder.GetString (bytes, byteCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

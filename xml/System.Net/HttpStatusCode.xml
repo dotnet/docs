@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpStatusCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpStatusCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpStatusCode" />
+  <TypeSignature Language="F#" Value="type HttpStatusCode = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>3.9.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Accepted" />
       <MemberSignature Language="VB.NET" Value="Accepted" />
       <MemberSignature Language="C++ CLI" Value="Accepted" />
+      <MemberSignature Language="F#" Value="Accepted = 202" Usage="System.Net.HttpStatusCode.Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.AlreadyReported" />
       <MemberSignature Language="VB.NET" Value="AlreadyReported" />
       <MemberSignature Language="C++ CLI" Value="AlreadyReported" />
+      <MemberSignature Language="F#" Value="AlreadyReported = 208" Usage="System.Net.HttpStatusCode.AlreadyReported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Ambiguous" />
       <MemberSignature Language="VB.NET" Value="Ambiguous" />
       <MemberSignature Language="C++ CLI" Value="Ambiguous" />
+      <MemberSignature Language="F#" Value="Ambiguous = 300" Usage="System.Net.HttpStatusCode.Ambiguous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.BadGateway" />
       <MemberSignature Language="VB.NET" Value="BadGateway" />
       <MemberSignature Language="C++ CLI" Value="BadGateway" />
+      <MemberSignature Language="F#" Value="BadGateway = 502" Usage="System.Net.HttpStatusCode.BadGateway" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.BadRequest" />
       <MemberSignature Language="VB.NET" Value="BadRequest" />
       <MemberSignature Language="C++ CLI" Value="BadRequest" />
+      <MemberSignature Language="F#" Value="BadRequest = 400" Usage="System.Net.HttpStatusCode.BadRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Conflict" />
       <MemberSignature Language="VB.NET" Value="Conflict" />
       <MemberSignature Language="C++ CLI" Value="Conflict" />
+      <MemberSignature Language="F#" Value="Conflict = 409" Usage="System.Net.HttpStatusCode.Conflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 100" Usage="System.Net.HttpStatusCode.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
       <MemberSignature Language="C++ CLI" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 201" Usage="System.Net.HttpStatusCode.Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.EarlyHints" />
       <MemberSignature Language="VB.NET" Value="EarlyHints" />
       <MemberSignature Language="C++ CLI" Value="EarlyHints" />
+      <MemberSignature Language="F#" Value="EarlyHints = 103" Usage="System.Net.HttpStatusCode.EarlyHints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -325,6 +335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ExpectationFailed" />
       <MemberSignature Language="VB.NET" Value="ExpectationFailed" />
       <MemberSignature Language="C++ CLI" Value="ExpectationFailed" />
+      <MemberSignature Language="F#" Value="ExpectationFailed = 417" Usage="System.Net.HttpStatusCode.ExpectationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.FailedDependency" />
       <MemberSignature Language="VB.NET" Value="FailedDependency" />
       <MemberSignature Language="C++ CLI" Value="FailedDependency" />
+      <MemberSignature Language="F#" Value="FailedDependency = 424" Usage="System.Net.HttpStatusCode.FailedDependency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Forbidden" />
       <MemberSignature Language="VB.NET" Value="Forbidden" />
       <MemberSignature Language="C++ CLI" Value="Forbidden" />
+      <MemberSignature Language="F#" Value="Forbidden = 403" Usage="System.Net.HttpStatusCode.Forbidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -408,6 +421,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Found" />
       <MemberSignature Language="VB.NET" Value="Found" />
       <MemberSignature Language="C++ CLI" Value="Found" />
+      <MemberSignature Language="F#" Value="Found = 302" Usage="System.Net.HttpStatusCode.Found" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -450,6 +464,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.GatewayTimeout" />
       <MemberSignature Language="VB.NET" Value="GatewayTimeout" />
       <MemberSignature Language="C++ CLI" Value="GatewayTimeout" />
+      <MemberSignature Language="F#" Value="GatewayTimeout = 504" Usage="System.Net.HttpStatusCode.GatewayTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Gone" />
       <MemberSignature Language="VB.NET" Value="Gone" />
       <MemberSignature Language="C++ CLI" Value="Gone" />
+      <MemberSignature Language="F#" Value="Gone = 410" Usage="System.Net.HttpStatusCode.Gone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -514,6 +530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.HttpVersionNotSupported" />
       <MemberSignature Language="VB.NET" Value="HttpVersionNotSupported" />
       <MemberSignature Language="C++ CLI" Value="HttpVersionNotSupported" />
+      <MemberSignature Language="F#" Value="HttpVersionNotSupported = 505" Usage="System.Net.HttpStatusCode.HttpVersionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -546,6 +563,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.IMUsed" />
       <MemberSignature Language="VB.NET" Value="IMUsed" />
       <MemberSignature Language="C++ CLI" Value="IMUsed" />
+      <MemberSignature Language="F#" Value="IMUsed = 226" Usage="System.Net.HttpStatusCode.IMUsed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -565,6 +583,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.InsufficientStorage" />
       <MemberSignature Language="VB.NET" Value="InsufficientStorage" />
       <MemberSignature Language="C++ CLI" Value="InsufficientStorage" />
+      <MemberSignature Language="F#" Value="InsufficientStorage = 507" Usage="System.Net.HttpStatusCode.InsufficientStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -584,6 +603,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.InternalServerError" />
       <MemberSignature Language="VB.NET" Value="InternalServerError" />
       <MemberSignature Language="C++ CLI" Value="InternalServerError" />
+      <MemberSignature Language="F#" Value="InternalServerError = 500" Usage="System.Net.HttpStatusCode.InternalServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -616,6 +636,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.LengthRequired" />
       <MemberSignature Language="VB.NET" Value="LengthRequired" />
       <MemberSignature Language="C++ CLI" Value="LengthRequired" />
+      <MemberSignature Language="F#" Value="LengthRequired = 411" Usage="System.Net.HttpStatusCode.LengthRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -648,6 +669,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Locked" />
       <MemberSignature Language="VB.NET" Value="Locked" />
       <MemberSignature Language="C++ CLI" Value="Locked" />
+      <MemberSignature Language="F#" Value="Locked = 423" Usage="System.Net.HttpStatusCode.Locked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -667,6 +689,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.LoopDetected" />
       <MemberSignature Language="VB.NET" Value="LoopDetected" />
       <MemberSignature Language="C++ CLI" Value="LoopDetected" />
+      <MemberSignature Language="F#" Value="LoopDetected = 508" Usage="System.Net.HttpStatusCode.LoopDetected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -686,6 +709,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MethodNotAllowed" />
       <MemberSignature Language="VB.NET" Value="MethodNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="MethodNotAllowed" />
+      <MemberSignature Language="F#" Value="MethodNotAllowed = 405" Usage="System.Net.HttpStatusCode.MethodNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -718,6 +742,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MisdirectedRequest" />
       <MemberSignature Language="VB.NET" Value="MisdirectedRequest" />
       <MemberSignature Language="C++ CLI" Value="MisdirectedRequest" />
+      <MemberSignature Language="F#" Value="MisdirectedRequest = 421" Usage="System.Net.HttpStatusCode.MisdirectedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -737,6 +762,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Moved" />
       <MemberSignature Language="VB.NET" Value="Moved" />
       <MemberSignature Language="C++ CLI" Value="Moved" />
+      <MemberSignature Language="F#" Value="Moved = 301" Usage="System.Net.HttpStatusCode.Moved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -777,6 +803,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MovedPermanently" />
       <MemberSignature Language="VB.NET" Value="MovedPermanently" />
       <MemberSignature Language="C++ CLI" Value="MovedPermanently" />
+      <MemberSignature Language="F#" Value="MovedPermanently = 301" Usage="System.Net.HttpStatusCode.MovedPermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -817,6 +844,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MultipleChoices" />
       <MemberSignature Language="VB.NET" Value="MultipleChoices" />
       <MemberSignature Language="C++ CLI" Value="MultipleChoices" />
+      <MemberSignature Language="F#" Value="MultipleChoices = 300" Usage="System.Net.HttpStatusCode.MultipleChoices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -859,6 +887,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MultiStatus" />
       <MemberSignature Language="VB.NET" Value="MultiStatus" />
       <MemberSignature Language="C++ CLI" Value="MultiStatus" />
+      <MemberSignature Language="F#" Value="MultiStatus = 207" Usage="System.Net.HttpStatusCode.MultiStatus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -878,6 +907,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
       <MemberSignature Language="VB.NET" Value="NetworkAuthenticationRequired" />
       <MemberSignature Language="C++ CLI" Value="NetworkAuthenticationRequired" />
+      <MemberSignature Language="F#" Value="NetworkAuthenticationRequired = 511" Usage="System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -897,6 +927,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NoContent" />
       <MemberSignature Language="VB.NET" Value="NoContent" />
       <MemberSignature Language="C++ CLI" Value="NoContent" />
+      <MemberSignature Language="F#" Value="NoContent = 204" Usage="System.Net.HttpStatusCode.NoContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -929,6 +960,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NonAuthoritativeInformation" />
       <MemberSignature Language="VB.NET" Value="NonAuthoritativeInformation" />
       <MemberSignature Language="C++ CLI" Value="NonAuthoritativeInformation" />
+      <MemberSignature Language="F#" Value="NonAuthoritativeInformation = 203" Usage="System.Net.HttpStatusCode.NonAuthoritativeInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -961,6 +993,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotAcceptable" />
       <MemberSignature Language="VB.NET" Value="NotAcceptable" />
       <MemberSignature Language="C++ CLI" Value="NotAcceptable" />
+      <MemberSignature Language="F#" Value="NotAcceptable = 406" Usage="System.Net.HttpStatusCode.NotAcceptable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -993,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotExtended" />
       <MemberSignature Language="VB.NET" Value="NotExtended" />
       <MemberSignature Language="C++ CLI" Value="NotExtended" />
+      <MemberSignature Language="F#" Value="NotExtended = 510" Usage="System.Net.HttpStatusCode.NotExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1012,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotFound" />
       <MemberSignature Language="VB.NET" Value="NotFound" />
       <MemberSignature Language="C++ CLI" Value="NotFound" />
+      <MemberSignature Language="F#" Value="NotFound = 404" Usage="System.Net.HttpStatusCode.NotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1044,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotImplemented" />
       <MemberSignature Language="VB.NET" Value="NotImplemented" />
       <MemberSignature Language="C++ CLI" Value="NotImplemented" />
+      <MemberSignature Language="F#" Value="NotImplemented = 501" Usage="System.Net.HttpStatusCode.NotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1076,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotModified" />
       <MemberSignature Language="VB.NET" Value="NotModified" />
       <MemberSignature Language="C++ CLI" Value="NotModified" />
+      <MemberSignature Language="F#" Value="NotModified = 304" Usage="System.Net.HttpStatusCode.NotModified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1108,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
       <MemberSignature Language="C++ CLI" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 200" Usage="System.Net.HttpStatusCode.OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1140,6 +1178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PartialContent" />
       <MemberSignature Language="VB.NET" Value="PartialContent" />
       <MemberSignature Language="C++ CLI" Value="PartialContent" />
+      <MemberSignature Language="F#" Value="PartialContent = 206" Usage="System.Net.HttpStatusCode.PartialContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1172,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PaymentRequired" />
       <MemberSignature Language="VB.NET" Value="PaymentRequired" />
       <MemberSignature Language="C++ CLI" Value="PaymentRequired" />
+      <MemberSignature Language="F#" Value="PaymentRequired = 402" Usage="System.Net.HttpStatusCode.PaymentRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1204,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PermanentRedirect" />
       <MemberSignature Language="VB.NET" Value="PermanentRedirect" />
       <MemberSignature Language="C++ CLI" Value="PermanentRedirect" />
+      <MemberSignature Language="F#" Value="PermanentRedirect = 308" Usage="System.Net.HttpStatusCode.PermanentRedirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1223,6 +1264,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PreconditionFailed" />
       <MemberSignature Language="VB.NET" Value="PreconditionFailed" />
       <MemberSignature Language="C++ CLI" Value="PreconditionFailed" />
+      <MemberSignature Language="F#" Value="PreconditionFailed = 412" Usage="System.Net.HttpStatusCode.PreconditionFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1255,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PreconditionRequired" />
       <MemberSignature Language="VB.NET" Value="PreconditionRequired" />
       <MemberSignature Language="C++ CLI" Value="PreconditionRequired" />
+      <MemberSignature Language="F#" Value="PreconditionRequired = 428" Usage="System.Net.HttpStatusCode.PreconditionRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1274,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Processing" />
       <MemberSignature Language="VB.NET" Value="Processing" />
       <MemberSignature Language="C++ CLI" Value="Processing" />
+      <MemberSignature Language="F#" Value="Processing = 102" Usage="System.Net.HttpStatusCode.Processing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1293,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ProxyAuthenticationRequired" />
       <MemberSignature Language="VB.NET" Value="ProxyAuthenticationRequired" />
       <MemberSignature Language="C++ CLI" Value="ProxyAuthenticationRequired" />
+      <MemberSignature Language="F#" Value="ProxyAuthenticationRequired = 407" Usage="System.Net.HttpStatusCode.ProxyAuthenticationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1325,6 +1370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Redirect" />
       <MemberSignature Language="VB.NET" Value="Redirect" />
       <MemberSignature Language="C++ CLI" Value="Redirect" />
+      <MemberSignature Language="F#" Value="Redirect = 302" Usage="System.Net.HttpStatusCode.Redirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1367,6 +1413,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RedirectKeepVerb" />
       <MemberSignature Language="VB.NET" Value="RedirectKeepVerb" />
       <MemberSignature Language="C++ CLI" Value="RedirectKeepVerb" />
+      <MemberSignature Language="F#" Value="RedirectKeepVerb = 307" Usage="System.Net.HttpStatusCode.RedirectKeepVerb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1409,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RedirectMethod" />
       <MemberSignature Language="VB.NET" Value="RedirectMethod" />
       <MemberSignature Language="C++ CLI" Value="RedirectMethod" />
+      <MemberSignature Language="F#" Value="RedirectMethod = 303" Usage="System.Net.HttpStatusCode.RedirectMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1451,6 +1499,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestedRangeNotSatisfiable" />
       <MemberSignature Language="VB.NET" Value="RequestedRangeNotSatisfiable" />
       <MemberSignature Language="C++ CLI" Value="RequestedRangeNotSatisfiable" />
+      <MemberSignature Language="F#" Value="RequestedRangeNotSatisfiable = 416" Usage="System.Net.HttpStatusCode.RequestedRangeNotSatisfiable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1483,6 +1532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestEntityTooLarge" />
       <MemberSignature Language="VB.NET" Value="RequestEntityTooLarge" />
       <MemberSignature Language="C++ CLI" Value="RequestEntityTooLarge" />
+      <MemberSignature Language="F#" Value="RequestEntityTooLarge = 413" Usage="System.Net.HttpStatusCode.RequestEntityTooLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1515,6 +1565,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
       <MemberSignature Language="VB.NET" Value="RequestHeaderFieldsTooLarge" />
       <MemberSignature Language="C++ CLI" Value="RequestHeaderFieldsTooLarge" />
+      <MemberSignature Language="F#" Value="RequestHeaderFieldsTooLarge = 431" Usage="System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1534,6 +1585,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestTimeout" />
       <MemberSignature Language="VB.NET" Value="RequestTimeout" />
       <MemberSignature Language="C++ CLI" Value="RequestTimeout" />
+      <MemberSignature Language="F#" Value="RequestTimeout = 408" Usage="System.Net.HttpStatusCode.RequestTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1566,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestUriTooLong" />
       <MemberSignature Language="VB.NET" Value="RequestUriTooLong" />
       <MemberSignature Language="C++ CLI" Value="RequestUriTooLong" />
+      <MemberSignature Language="F#" Value="RequestUriTooLong = 414" Usage="System.Net.HttpStatusCode.RequestUriTooLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1598,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ResetContent" />
       <MemberSignature Language="VB.NET" Value="ResetContent" />
       <MemberSignature Language="C++ CLI" Value="ResetContent" />
+      <MemberSignature Language="F#" Value="ResetContent = 205" Usage="System.Net.HttpStatusCode.ResetContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1630,6 +1684,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.SeeOther" />
       <MemberSignature Language="VB.NET" Value="SeeOther" />
       <MemberSignature Language="C++ CLI" Value="SeeOther" />
+      <MemberSignature Language="F#" Value="SeeOther = 303" Usage="System.Net.HttpStatusCode.SeeOther" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1672,6 +1727,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ServiceUnavailable" />
       <MemberSignature Language="VB.NET" Value="ServiceUnavailable" />
       <MemberSignature Language="C++ CLI" Value="ServiceUnavailable" />
+      <MemberSignature Language="F#" Value="ServiceUnavailable = 503" Usage="System.Net.HttpStatusCode.ServiceUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1704,6 +1760,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.SwitchingProtocols" />
       <MemberSignature Language="VB.NET" Value="SwitchingProtocols" />
       <MemberSignature Language="C++ CLI" Value="SwitchingProtocols" />
+      <MemberSignature Language="F#" Value="SwitchingProtocols = 101" Usage="System.Net.HttpStatusCode.SwitchingProtocols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1736,6 +1793,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.TemporaryRedirect" />
       <MemberSignature Language="VB.NET" Value="TemporaryRedirect" />
       <MemberSignature Language="C++ CLI" Value="TemporaryRedirect" />
+      <MemberSignature Language="F#" Value="TemporaryRedirect = 307" Usage="System.Net.HttpStatusCode.TemporaryRedirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1778,6 +1836,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.TooManyRequests" />
       <MemberSignature Language="VB.NET" Value="TooManyRequests" />
       <MemberSignature Language="C++ CLI" Value="TooManyRequests" />
+      <MemberSignature Language="F#" Value="TooManyRequests = 429" Usage="System.Net.HttpStatusCode.TooManyRequests" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1797,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Unauthorized" />
       <MemberSignature Language="VB.NET" Value="Unauthorized" />
       <MemberSignature Language="C++ CLI" Value="Unauthorized" />
+      <MemberSignature Language="F#" Value="Unauthorized = 401" Usage="System.Net.HttpStatusCode.Unauthorized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1829,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnavailableForLegalReasons" />
       <MemberSignature Language="VB.NET" Value="UnavailableForLegalReasons" />
       <MemberSignature Language="C++ CLI" Value="UnavailableForLegalReasons" />
+      <MemberSignature Language="F#" Value="UnavailableForLegalReasons = 451" Usage="System.Net.HttpStatusCode.UnavailableForLegalReasons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1848,6 +1909,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnprocessableEntity" />
       <MemberSignature Language="VB.NET" Value="UnprocessableEntity" />
       <MemberSignature Language="C++ CLI" Value="UnprocessableEntity" />
+      <MemberSignature Language="F#" Value="UnprocessableEntity = 422" Usage="System.Net.HttpStatusCode.UnprocessableEntity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1867,6 +1929,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnsupportedMediaType" />
       <MemberSignature Language="VB.NET" Value="UnsupportedMediaType" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedMediaType" />
+      <MemberSignature Language="F#" Value="UnsupportedMediaType = 415" Usage="System.Net.HttpStatusCode.UnsupportedMediaType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1899,6 +1962,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Unused" />
       <MemberSignature Language="VB.NET" Value="Unused" />
       <MemberSignature Language="C++ CLI" Value="Unused" />
+      <MemberSignature Language="F#" Value="Unused = 306" Usage="System.Net.HttpStatusCode.Unused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1931,6 +1995,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UpgradeRequired" />
       <MemberSignature Language="VB.NET" Value="UpgradeRequired" />
       <MemberSignature Language="C++ CLI" Value="UpgradeRequired" />
+      <MemberSignature Language="F#" Value="UpgradeRequired = 426" Usage="System.Net.HttpStatusCode.UpgradeRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1962,6 +2027,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UseProxy" />
       <MemberSignature Language="VB.NET" Value="UseProxy" />
       <MemberSignature Language="C++ CLI" Value="UseProxy" />
+      <MemberSignature Language="F#" Value="UseProxy = 305" Usage="System.Net.HttpStatusCode.UseProxy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1994,6 +2060,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.VariantAlsoNegotiates" />
       <MemberSignature Language="VB.NET" Value="VariantAlsoNegotiates" />
       <MemberSignature Language="C++ CLI" Value="VariantAlsoNegotiates" />
+      <MemberSignature Language="F#" Value="VariantAlsoNegotiates = 506" Usage="System.Net.HttpStatusCode.VariantAlsoNegotiates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

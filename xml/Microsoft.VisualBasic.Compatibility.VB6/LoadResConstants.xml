@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants" />
   <TypeSignature Language="VB.NET" Value="Public Enum LoadResConstants" />
   <TypeSignature Language="C++ CLI" Value="public enum class LoadResConstants" />
+  <TypeSignature Language="F#" Value="type LoadResConstants = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResBitmap" />
       <MemberSignature Language="VB.NET" Value="ResBitmap" />
       <MemberSignature Language="C++ CLI" Value="ResBitmap" />
+      <MemberSignature Language="F#" Value="ResBitmap = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResBitmap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResCursor" />
       <MemberSignature Language="VB.NET" Value="ResCursor" />
       <MemberSignature Language="C++ CLI" Value="ResCursor" />
+      <MemberSignature Language="F#" Value="ResCursor = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResCursor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResIcon" />
       <MemberSignature Language="VB.NET" Value="ResIcon" />
       <MemberSignature Language="C++ CLI" Value="ResIcon" />
+      <MemberSignature Language="F#" Value="ResIcon = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants.ResIcon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

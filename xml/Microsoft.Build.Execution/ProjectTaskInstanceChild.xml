@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectTaskInstanceChild" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectTaskInstanceChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectTaskInstanceChild abstract" />
+  <TypeSignature Language="F#" Value="type ProjectTaskInstanceChild = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.Condition" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Condition { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.Location" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Location As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.TaskParameterLocation" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TaskParameterLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ TaskParameterLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskParameterLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.TaskParameterLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

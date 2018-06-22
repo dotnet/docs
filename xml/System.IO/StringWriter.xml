@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.StringWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class StringWriter&#xA;Inherits TextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringWriter : System::IO::TextWriter" />
+  <TypeSignature Language="F#" Value="type StringWriter = class&#xA;    inherit TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.#ctor(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (formatProvider As IFormatProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringWriter(IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="new System.IO.StringWriter : IFormatProvider -&gt; System.IO.StringWriter" Usage="new System.IO.StringWriter formatProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -221,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.#ctor(System.Text.StringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sb As StringBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringWriter(System::Text::StringBuilder ^ sb);" />
+      <MemberSignature Language="F#" Value="new System.IO.StringWriter : System.Text.StringBuilder -&gt; System.IO.StringWriter" Usage="new System.IO.StringWriter sb" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -290,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.#ctor(System.Text.StringBuilder,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sb As StringBuilder, formatProvider As IFormatProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringWriter(System::Text::StringBuilder ^ sb, IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="new System.IO.StringWriter : System.Text.StringBuilder * IFormatProvider -&gt; System.IO.StringWriter" Usage="new System.IO.StringWriter (sb, formatProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -350,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="stringWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -402,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="stringWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -453,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StringWriter.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.IO.StringWriter.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -513,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.FlushAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync () As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync();" />
+      <MemberSignature Language="F#" Value="override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="stringWriter.FlushAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -555,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.GetStringBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStringBuilder () As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::StringBuilder ^ GetStringBuilder();" />
+      <MemberSignature Language="F#" Value="abstract member GetStringBuilder : unit -&gt; System.Text.StringBuilder&#xA;override this.GetStringBuilder : unit -&gt; System.Text.StringBuilder" Usage="stringWriter.GetStringBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -616,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stringWriter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -686,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
+      <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="stringWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -757,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As ReadOnlySpan(Of Char))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.Write : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="stringWriter.Write buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -780,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="stringWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -853,6 +866,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="stringWriter.Write (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -946,6 +960,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As Char) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(char value);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1003,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As String) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : string -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1058,6 +1074,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1084,6 +1101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1150,6 +1168,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLine(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As ReadOnlySpan(Of Char))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(ReadOnlySpan&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="stringWriter.WriteLine buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1184,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLineAsync(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As Char) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(char value);" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteLineAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1246,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLineAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As String) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : string -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteLineAsync value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1306,6 +1327,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteLineAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1332,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteLineAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

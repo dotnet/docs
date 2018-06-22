@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.LogFileLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum LogFileLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class LogFileLocation" />
+  <TypeSignature Language="F#" Value="type LogFileLocation = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileLocation.CommonApplicationDirectory" />
       <MemberSignature Language="VB.NET" Value="CommonApplicationDirectory" />
       <MemberSignature Language="C++ CLI" Value="CommonApplicationDirectory" />
+      <MemberSignature Language="F#" Value="CommonApplicationDirectory = 2" Usage="Microsoft.VisualBasic.Logging.LogFileLocation.CommonApplicationDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileLocation.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 4" Usage="Microsoft.VisualBasic.Logging.LogFileLocation.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileLocation.ExecutableDirectory" />
       <MemberSignature Language="VB.NET" Value="ExecutableDirectory" />
       <MemberSignature Language="C++ CLI" Value="ExecutableDirectory" />
+      <MemberSignature Language="F#" Value="ExecutableDirectory = 3" Usage="Microsoft.VisualBasic.Logging.LogFileLocation.ExecutableDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileLocation.LocalUserApplicationDirectory" />
       <MemberSignature Language="VB.NET" Value="LocalUserApplicationDirectory" />
       <MemberSignature Language="C++ CLI" Value="LocalUserApplicationDirectory" />
+      <MemberSignature Language="F#" Value="LocalUserApplicationDirectory = 1" Usage="Microsoft.VisualBasic.Logging.LogFileLocation.LocalUserApplicationDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.LogFileLocation.TempDirectory" />
       <MemberSignature Language="VB.NET" Value="TempDirectory" />
       <MemberSignature Language="C++ CLI" Value="TempDirectory" />
+      <MemberSignature Language="F#" Value="TempDirectory = 0" Usage="Microsoft.VisualBasic.Logging.LogFileLocation.TempDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

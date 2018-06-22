@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RecognizerInfo&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecognizerInfo : IDisposable" />
+  <TypeSignature Language="F#" Value="type RecognizerInfo = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@ private SpeechRecognitionEngine SelectRecognizer(CultureInfo requiredCulture, st
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.AdditionalInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalInfo As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ AdditionalInfo { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalInfo : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Speech.Recognition.RecognizerInfo.AdditionalInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -130,6 +132,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="System.Speech.Recognition.RecognizerInfo.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -196,6 +199,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Speech.Recognition.RecognizerInfo.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -256,6 +260,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizerInfo.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="recognizerInfo.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -279,6 +284,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Speech.Recognition.RecognizerInfo.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -344,6 +350,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Speech.Recognition.RecognizerInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -404,6 +411,7 @@ private void recognizerInfoButton_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizerInfo.SupportedAudioFormats" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedAudioFormats As ReadOnlyCollection(Of SpeechAudioFormatInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::AudioFormat::SpeechAudioFormatInfo ^&gt; ^ SupportedAudioFormats { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Speech::AudioFormat::SpeechAudioFormatInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedAudioFormats : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.AudioFormat.SpeechAudioFormatInfo&gt;" Usage="System.Speech.Recognition.RecognizerInfo.SupportedAudioFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

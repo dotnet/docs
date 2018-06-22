@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowDataContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowDataContext&#xA;Inherits CustomTypeDescriptor&#xA;Implements IDisposable, INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDataContext sealed : System::ComponentModel::CustomTypeDescriptor, IDisposable, System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type WorkflowDataContext = class&#xA;    inherit CustomTypeDescriptor&#xA;    interface INotifyPropertyChanged&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="workflowDataContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.GetProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties () As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties();" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="workflowDataContext.GetProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.WorkflowDataContext.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

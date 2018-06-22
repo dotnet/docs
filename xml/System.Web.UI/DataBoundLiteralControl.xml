@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBoundLiteralControl" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataBoundLiteralControl&#xA;Inherits Control&#xA;Implements ITextControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBoundLiteralControl sealed : System::Web::UI::Control, System::Web::UI::ITextControl" />
+  <TypeSignature Language="F#" Value="type DataBoundLiteralControl = class&#xA;    inherit Control&#xA;    interface ITextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (staticLiteralsCount As Integer, dataBoundLiteralCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBoundLiteralControl(int staticLiteralsCount, int dataBoundLiteralCount);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataBoundLiteralControl : int * int -&gt; System.Web.UI.DataBoundLiteralControl" Usage="new System.Web.UI.DataBoundLiteralControl (staticLiteralsCount, dataBoundLiteralCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="dataBoundLiteralControl.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="dataBoundLiteralControl.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (output As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataBoundLiteralControl.Render output" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="dataBoundLiteralControl.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.SetDataBoundString(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDataBoundString (index As Integer, s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataBoundString(int index, System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.SetDataBoundString : int * string -&gt; unit" Usage="dataBoundLiteralControl.SetDataBoundString (index, s)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBoundLiteralControl.SetStaticString(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetStaticString (index As Integer, s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStaticString(int index, System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.SetStaticString : int * string -&gt; unit" Usage="dataBoundLiteralControl.SetStaticString (index, s)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBoundLiteralControl.System#Web#UI#ITextControl#Text" />
       <MemberSignature Language="VB.NET" Value=" Property Text As String Implements ITextControl.Text" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.ITextControl.Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.DataBoundLiteralControl.System.Web.UI.ITextControl.Text" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.ITextControl.Text</InterfaceMember>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBoundLiteralControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Web.UI.DataBoundLiteralControl.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

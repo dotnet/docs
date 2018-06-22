@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSToken" />
   <TypeSignature Language="VB.NET" Value="Public Enum JSToken" />
   <TypeSignature Language="C++ CLI" Value="public enum class JSToken" />
+  <TypeSignature Language="F#" Value="type JSToken = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Abstract" />
       <MemberSignature Language="VB.NET" Value="Abstract" />
       <MemberSignature Language="C++ CLI" Value="Abstract" />
+      <MemberSignature Language="F#" Value="Abstract = 15" Usage="Microsoft.JScript.JSToken.Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.AccessField" />
       <MemberSignature Language="VB.NET" Value="AccessField" />
       <MemberSignature Language="C++ CLI" Value="AccessField" />
+      <MemberSignature Language="F#" Value="AccessField = 38" Usage="Microsoft.JScript.JSToken.AccessField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Assert" />
       <MemberSignature Language="VB.NET" Value="Assert" />
       <MemberSignature Language="C++ CLI" Value="Assert" />
+      <MemberSignature Language="F#" Value="Assert = 104" Usage="Microsoft.JScript.JSToken.Assert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Assign" />
       <MemberSignature Language="VB.NET" Value="Assign" />
       <MemberSignature Language="C++ CLI" Value="Assign" />
+      <MemberSignature Language="F#" Value="Assign = 69" Usage="Microsoft.JScript.JSToken.Assign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseAnd" />
       <MemberSignature Language="VB.NET" Value="BitwiseAnd" />
       <MemberSignature Language="C++ CLI" Value="BitwiseAnd" />
+      <MemberSignature Language="F#" Value="BitwiseAnd = 52" Usage="Microsoft.JScript.JSToken.BitwiseAnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseAndAssign" />
       <MemberSignature Language="VB.NET" Value="BitwiseAndAssign" />
       <MemberSignature Language="C++ CLI" Value="BitwiseAndAssign" />
+      <MemberSignature Language="F#" Value="BitwiseAndAssign = 74" Usage="Microsoft.JScript.JSToken.BitwiseAndAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseNot" />
       <MemberSignature Language="VB.NET" Value="BitwiseNot" />
       <MemberSignature Language="C++ CLI" Value="BitwiseNot" />
+      <MemberSignature Language="F#" Value="BitwiseNot = 40" Usage="Microsoft.JScript.JSToken.BitwiseNot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseOr" />
       <MemberSignature Language="VB.NET" Value="BitwiseOr" />
       <MemberSignature Language="C++ CLI" Value="BitwiseOr" />
+      <MemberSignature Language="F#" Value="BitwiseOr = 50" Usage="Microsoft.JScript.JSToken.BitwiseOr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseOrAssign" />
       <MemberSignature Language="VB.NET" Value="BitwiseOrAssign" />
       <MemberSignature Language="C++ CLI" Value="BitwiseOrAssign" />
+      <MemberSignature Language="F#" Value="BitwiseOrAssign = 75" Usage="Microsoft.JScript.JSToken.BitwiseOrAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -212,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseXor" />
       <MemberSignature Language="VB.NET" Value="BitwiseXor" />
       <MemberSignature Language="C++ CLI" Value="BitwiseXor" />
+      <MemberSignature Language="F#" Value="BitwiseXor = 51" Usage="Microsoft.JScript.JSToken.BitwiseXor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -232,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseXorAssign" />
       <MemberSignature Language="VB.NET" Value="BitwiseXorAssign" />
       <MemberSignature Language="C++ CLI" Value="BitwiseXorAssign" />
+      <MemberSignature Language="F#" Value="BitwiseXorAssign = 76" Usage="Microsoft.JScript.JSToken.BitwiseXorAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -252,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 105" Usage="Microsoft.JScript.JSToken.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -272,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Break" />
       <MemberSignature Language="VB.NET" Value="Break" />
       <MemberSignature Language="C++ CLI" Value="Break" />
+      <MemberSignature Language="F#" Value="Break = 6" Usage="Microsoft.JScript.JSToken.Break" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="C++ CLI" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 106" Usage="Microsoft.JScript.JSToken.Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Case" />
       <MemberSignature Language="VB.NET" Value="Case" />
       <MemberSignature Language="C++ CLI" Value="Case" />
+      <MemberSignature Language="F#" Value="Case = 84" Usage="Microsoft.JScript.JSToken.Case" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -332,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Catch" />
       <MemberSignature Language="VB.NET" Value="Catch" />
       <MemberSignature Language="C++ CLI" Value="Catch" />
+      <MemberSignature Language="F#" Value="Catch = 85" Usage="Microsoft.JScript.JSToken.Catch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -352,6 +369,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
       <MemberSignature Language="C++ CLI" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 107" Usage="Microsoft.JScript.JSToken.Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -372,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Class" />
       <MemberSignature Language="VB.NET" Value="Class" />
       <MemberSignature Language="C++ CLI" Value="Class" />
+      <MemberSignature Language="F#" Value="Class = 24" Usage="Microsoft.JScript.JSToken.Class" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -392,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Colon" />
       <MemberSignature Language="VB.NET" Value="Colon" />
       <MemberSignature Language="C++ CLI" Value="Colon" />
+      <MemberSignature Language="F#" Value="Colon = 82" Usage="Microsoft.JScript.JSToken.Colon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -412,6 +432,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Comma" />
       <MemberSignature Language="VB.NET" Value="Comma" />
       <MemberSignature Language="C++ CLI" Value="Comma" />
+      <MemberSignature Language="F#" Value="Comma = 83" Usage="Microsoft.JScript.JSToken.Comma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -432,6 +453,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Comment" />
       <MemberSignature Language="VB.NET" Value="Comment" />
       <MemberSignature Language="C++ CLI" Value="Comment" />
+      <MemberSignature Language="F#" Value="Comment = 102" Usage="Microsoft.JScript.JSToken.Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -452,6 +474,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ConditionalIf" />
       <MemberSignature Language="VB.NET" Value="ConditionalIf" />
       <MemberSignature Language="C++ CLI" Value="ConditionalIf" />
+      <MemberSignature Language="F#" Value="ConditionalIf = 81" Usage="Microsoft.JScript.JSToken.ConditionalIf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -472,6 +495,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Const" />
       <MemberSignature Language="VB.NET" Value="Const" />
       <MemberSignature Language="C++ CLI" Value="Const" />
+      <MemberSignature Language="F#" Value="Const = 23" Usage="Microsoft.JScript.JSToken.Const" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -492,6 +516,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 5" Usage="Microsoft.JScript.JSToken.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -512,6 +537,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Debugger" />
       <MemberSignature Language="VB.NET" Value="Debugger" />
       <MemberSignature Language="C++ CLI" Value="Debugger" />
+      <MemberSignature Language="F#" Value="Debugger = 86" Usage="Microsoft.JScript.JSToken.Debugger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -532,6 +558,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="C++ CLI" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 108" Usage="Microsoft.JScript.JSToken.Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -552,6 +579,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Decrement" />
       <MemberSignature Language="VB.NET" Value="Decrement" />
       <MemberSignature Language="C++ CLI" Value="Decrement" />
+      <MemberSignature Language="F#" Value="Decrement = 45" Usage="Microsoft.JScript.JSToken.Decrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -572,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 87" Usage="Microsoft.JScript.JSToken.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -592,6 +621,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 41" Usage="Microsoft.JScript.JSToken.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -612,6 +642,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="C++ CLI" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 65" Usage="Microsoft.JScript.JSToken.Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -632,6 +663,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.DivideAssign" />
       <MemberSignature Language="VB.NET" Value="DivideAssign" />
       <MemberSignature Language="C++ CLI" Value="DivideAssign" />
+      <MemberSignature Language="F#" Value="DivideAssign = 73" Usage="Microsoft.JScript.JSToken.DivideAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -652,6 +684,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Do" />
       <MemberSignature Language="VB.NET" Value="Do" />
       <MemberSignature Language="C++ CLI" Value="Do" />
+      <MemberSignature Language="F#" Value="Do = 3" Usage="Microsoft.JScript.JSToken.Do" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -672,6 +705,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 109" Usage="Microsoft.JScript.JSToken.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -692,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.DoubleColon" />
       <MemberSignature Language="VB.NET" Value="DoubleColon" />
       <MemberSignature Language="C++ CLI" Value="DoubleColon" />
+      <MemberSignature Language="F#" Value="DoubleColon = 110" Usage="Microsoft.JScript.JSToken.DoubleColon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -712,6 +747,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Else" />
       <MemberSignature Language="VB.NET" Value="Else" />
       <MemberSignature Language="C++ CLI" Value="Else" />
+      <MemberSignature Language="F#" Value="Else = 88" Usage="Microsoft.JScript.JSToken.Else" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -732,6 +768,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.EndOfFile" />
       <MemberSignature Language="VB.NET" Value="EndOfFile" />
       <MemberSignature Language="C++ CLI" Value="EndOfFile" />
+      <MemberSignature Language="F#" Value="EndOfFile = 0" Usage="Microsoft.JScript.JSToken.EndOfFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -752,6 +789,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.EndOfLine" />
       <MemberSignature Language="VB.NET" Value="EndOfLine" />
       <MemberSignature Language="C++ CLI" Value="EndOfLine" />
+      <MemberSignature Language="F#" Value="EndOfLine = 132" Usage="Microsoft.JScript.JSToken.EndOfLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -772,6 +810,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ensure" />
       <MemberSignature Language="VB.NET" Value="Ensure" />
       <MemberSignature Language="C++ CLI" Value="Ensure" />
+      <MemberSignature Language="F#" Value="Ensure = 112" Usage="Microsoft.JScript.JSToken.Ensure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -792,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Enum" />
       <MemberSignature Language="VB.NET" Value="Enum" />
       <MemberSignature Language="C++ CLI" Value="Enum" />
+      <MemberSignature Language="F#" Value="Enum = 111" Usage="Microsoft.JScript.JSToken.Enum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -812,6 +852,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Equal" />
       <MemberSignature Language="VB.NET" Value="Equal" />
       <MemberSignature Language="C++ CLI" Value="Equal" />
+      <MemberSignature Language="F#" Value="Equal = 53" Usage="Microsoft.JScript.JSToken.Equal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -832,6 +873,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Event" />
       <MemberSignature Language="VB.NET" Value="Event" />
       <MemberSignature Language="C++ CLI" Value="Event" />
+      <MemberSignature Language="F#" Value="Event = 21" Usage="Microsoft.JScript.JSToken.Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -852,6 +894,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Export" />
       <MemberSignature Language="VB.NET" Value="Export" />
       <MemberSignature Language="C++ CLI" Value="Export" />
+      <MemberSignature Language="F#" Value="Export = 89" Usage="Microsoft.JScript.JSToken.Export" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -872,6 +915,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Extends" />
       <MemberSignature Language="VB.NET" Value="Extends" />
       <MemberSignature Language="C++ CLI" Value="Extends" />
+      <MemberSignature Language="F#" Value="Extends = 90" Usage="Microsoft.JScript.JSToken.Extends" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -892,6 +936,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.False" />
       <MemberSignature Language="VB.NET" Value="False" />
       <MemberSignature Language="C++ CLI" Value="False" />
+      <MemberSignature Language="F#" Value="False = 30" Usage="Microsoft.JScript.JSToken.False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -912,6 +957,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Final" />
       <MemberSignature Language="VB.NET" Value="Final" />
       <MemberSignature Language="C++ CLI" Value="Final" />
+      <MemberSignature Language="F#" Value="Final = 20" Usage="Microsoft.JScript.JSToken.Final" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -932,6 +978,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Finally" />
       <MemberSignature Language="VB.NET" Value="Finally" />
       <MemberSignature Language="C++ CLI" Value="Finally" />
+      <MemberSignature Language="F#" Value="Finally = 91" Usage="Microsoft.JScript.JSToken.Finally" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -952,6 +999,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.FirstBinaryOp" />
       <MemberSignature Language="VB.NET" Value="FirstBinaryOp" />
       <MemberSignature Language="C++ CLI" Value="FirstBinaryOp" />
+      <MemberSignature Language="F#" Value="FirstBinaryOp = 46" Usage="Microsoft.JScript.JSToken.FirstBinaryOp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -972,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.FirstOp" />
       <MemberSignature Language="VB.NET" Value="FirstOp" />
       <MemberSignature Language="C++ CLI" Value="FirstOp" />
+      <MemberSignature Language="F#" Value="FirstOp = 39" Usage="Microsoft.JScript.JSToken.FirstOp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -992,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Float" />
       <MemberSignature Language="VB.NET" Value="Float" />
       <MemberSignature Language="C++ CLI" Value="Float" />
+      <MemberSignature Language="F#" Value="Float = 113" Usage="Microsoft.JScript.JSToken.Float" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1012,6 +1062,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.For" />
       <MemberSignature Language="VB.NET" Value="For" />
       <MemberSignature Language="C++ CLI" Value="For" />
+      <MemberSignature Language="F#" Value="For = 2" Usage="Microsoft.JScript.JSToken.For" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1032,6 +1083,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Function" />
       <MemberSignature Language="VB.NET" Value="Function" />
       <MemberSignature Language="C++ CLI" Value="Function" />
+      <MemberSignature Language="F#" Value="Function = 25" Usage="Microsoft.JScript.JSToken.Function" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1052,6 +1104,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Get" />
       <MemberSignature Language="VB.NET" Value="Get" />
       <MemberSignature Language="C++ CLI" Value="Get" />
+      <MemberSignature Language="F#" Value="Get = 92" Usage="Microsoft.JScript.JSToken.Get" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1072,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Goto" />
       <MemberSignature Language="VB.NET" Value="Goto" />
       <MemberSignature Language="C++ CLI" Value="Goto" />
+      <MemberSignature Language="F#" Value="Goto = 114" Usage="Microsoft.JScript.JSToken.Goto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1092,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="C++ CLI" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 57" Usage="Microsoft.JScript.JSToken.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1112,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.GreaterThanEqual" />
       <MemberSignature Language="VB.NET" Value="GreaterThanEqual" />
       <MemberSignature Language="C++ CLI" Value="GreaterThanEqual" />
+      <MemberSignature Language="F#" Value="GreaterThanEqual = 60" Usage="Microsoft.JScript.JSToken.GreaterThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1132,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Identifier" />
       <MemberSignature Language="VB.NET" Value="Identifier" />
       <MemberSignature Language="C++ CLI" Value="Identifier" />
+      <MemberSignature Language="F#" Value="Identifier = 32" Usage="Microsoft.JScript.JSToken.Identifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1152,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.If" />
       <MemberSignature Language="VB.NET" Value="If" />
       <MemberSignature Language="C++ CLI" Value="If" />
+      <MemberSignature Language="F#" Value="If = 1" Usage="Microsoft.JScript.JSToken.If" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1172,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Implements" />
       <MemberSignature Language="VB.NET" Value="Implements" />
       <MemberSignature Language="C++ CLI" Value="Implements" />
+      <MemberSignature Language="F#" Value="Implements = 93" Usage="Microsoft.JScript.JSToken.Implements" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1192,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Import" />
       <MemberSignature Language="VB.NET" Value="Import" />
       <MemberSignature Language="C++ CLI" Value="Import" />
+      <MemberSignature Language="F#" Value="Import = 8" Usage="Microsoft.JScript.JSToken.Import" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1212,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 68" Usage="Microsoft.JScript.JSToken.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1232,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Increment" />
       <MemberSignature Language="VB.NET" Value="Increment" />
       <MemberSignature Language="C++ CLI" Value="Increment" />
+      <MemberSignature Language="F#" Value="Increment = 44" Usage="Microsoft.JScript.JSToken.Increment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1252,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Instanceof" />
       <MemberSignature Language="VB.NET" Value="Instanceof" />
       <MemberSignature Language="C++ CLI" Value="Instanceof" />
+      <MemberSignature Language="F#" Value="Instanceof = 67" Usage="Microsoft.JScript.JSToken.Instanceof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1272,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Int" />
       <MemberSignature Language="VB.NET" Value="Int" />
       <MemberSignature Language="C++ CLI" Value="Int" />
+      <MemberSignature Language="F#" Value="Int = 115" Usage="Microsoft.JScript.JSToken.Int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1292,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.IntegerLiteral" />
       <MemberSignature Language="VB.NET" Value="IntegerLiteral" />
       <MemberSignature Language="C++ CLI" Value="IntegerLiteral" />
+      <MemberSignature Language="F#" Value="IntegerLiteral = 34" Usage="Microsoft.JScript.JSToken.IntegerLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1312,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Interface" />
       <MemberSignature Language="VB.NET" Value="Interface" />
       <MemberSignature Language="C++ CLI" Value="Interface" />
+      <MemberSignature Language="F#" Value="Interface = 94" Usage="Microsoft.JScript.JSToken.Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1332,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Internal" />
       <MemberSignature Language="VB.NET" Value="Internal" />
       <MemberSignature Language="C++ CLI" Value="Internal" />
+      <MemberSignature Language="F#" Value="Internal = 14" Usage="Microsoft.JScript.JSToken.Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1352,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Invariant" />
       <MemberSignature Language="VB.NET" Value="Invariant" />
       <MemberSignature Language="C++ CLI" Value="Invariant" />
+      <MemberSignature Language="F#" Value="Invariant = 116" Usage="Microsoft.JScript.JSToken.Invariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1372,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastAssign" />
       <MemberSignature Language="VB.NET" Value="LastAssign" />
       <MemberSignature Language="C++ CLI" Value="LastAssign" />
+      <MemberSignature Language="F#" Value="LastAssign = 80" Usage="Microsoft.JScript.JSToken.LastAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1392,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastBinaryOp" />
       <MemberSignature Language="VB.NET" Value="LastBinaryOp" />
       <MemberSignature Language="C++ CLI" Value="LastBinaryOp" />
+      <MemberSignature Language="F#" Value="LastBinaryOp = 80" Usage="Microsoft.JScript.JSToken.LastBinaryOp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1412,6 +1482,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastOp" />
       <MemberSignature Language="VB.NET" Value="LastOp" />
       <MemberSignature Language="C++ CLI" Value="LastOp" />
+      <MemberSignature Language="F#" Value="LastOp = 83" Usage="Microsoft.JScript.JSToken.LastOp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1432,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastPPOperator" />
       <MemberSignature Language="VB.NET" Value="LastPPOperator" />
       <MemberSignature Language="C++ CLI" Value="LastPPOperator" />
+      <MemberSignature Language="F#" Value="LastPPOperator = 66" Usage="Microsoft.JScript.JSToken.LastPPOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1452,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftBracket" />
       <MemberSignature Language="VB.NET" Value="LeftBracket" />
       <MemberSignature Language="C++ CLI" Value="LeftBracket" />
+      <MemberSignature Language="F#" Value="LeftBracket = 37" Usage="Microsoft.JScript.JSToken.LeftBracket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1472,6 +1545,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftCurly" />
       <MemberSignature Language="VB.NET" Value="LeftCurly" />
       <MemberSignature Language="C++ CLI" Value="LeftCurly" />
+      <MemberSignature Language="F#" Value="LeftCurly = 26" Usage="Microsoft.JScript.JSToken.LeftCurly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1492,6 +1566,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftParen" />
       <MemberSignature Language="VB.NET" Value="LeftParen" />
       <MemberSignature Language="C++ CLI" Value="LeftParen" />
+      <MemberSignature Language="F#" Value="LeftParen = 36" Usage="Microsoft.JScript.JSToken.LeftParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1512,6 +1587,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftShift" />
       <MemberSignature Language="VB.NET" Value="LeftShift" />
       <MemberSignature Language="C++ CLI" Value="LeftShift" />
+      <MemberSignature Language="F#" Value="LeftShift = 61" Usage="Microsoft.JScript.JSToken.LeftShift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1532,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftShiftAssign" />
       <MemberSignature Language="VB.NET" Value="LeftShiftAssign" />
       <MemberSignature Language="C++ CLI" Value="LeftShiftAssign" />
+      <MemberSignature Language="F#" Value="LeftShiftAssign = 78" Usage="Microsoft.JScript.JSToken.LeftShiftAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1552,6 +1629,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 58" Usage="Microsoft.JScript.JSToken.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1572,6 +1650,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LessThanEqual" />
       <MemberSignature Language="VB.NET" Value="LessThanEqual" />
       <MemberSignature Language="C++ CLI" Value="LessThanEqual" />
+      <MemberSignature Language="F#" Value="LessThanEqual = 59" Usage="Microsoft.JScript.JSToken.LessThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1592,6 +1671,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalAnd" />
       <MemberSignature Language="VB.NET" Value="LogicalAnd" />
       <MemberSignature Language="C++ CLI" Value="LogicalAnd" />
+      <MemberSignature Language="F#" Value="LogicalAnd = 49" Usage="Microsoft.JScript.JSToken.LogicalAnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1612,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalNot" />
       <MemberSignature Language="VB.NET" Value="LogicalNot" />
       <MemberSignature Language="C++ CLI" Value="LogicalNot" />
+      <MemberSignature Language="F#" Value="LogicalNot = 39" Usage="Microsoft.JScript.JSToken.LogicalNot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1632,6 +1713,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalOr" />
       <MemberSignature Language="VB.NET" Value="LogicalOr" />
       <MemberSignature Language="C++ CLI" Value="LogicalOr" />
+      <MemberSignature Language="F#" Value="LogicalOr = 48" Usage="Microsoft.JScript.JSToken.LogicalOr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1652,6 +1734,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Long" />
       <MemberSignature Language="VB.NET" Value="Long" />
       <MemberSignature Language="C++ CLI" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 117" Usage="Microsoft.JScript.JSToken.Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1672,6 +1755,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Minus" />
       <MemberSignature Language="VB.NET" Value="Minus" />
       <MemberSignature Language="C++ CLI" Value="Minus" />
+      <MemberSignature Language="F#" Value="Minus = 47" Usage="Microsoft.JScript.JSToken.Minus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1692,6 +1776,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.MinusAssign" />
       <MemberSignature Language="VB.NET" Value="MinusAssign" />
       <MemberSignature Language="C++ CLI" Value="MinusAssign" />
+      <MemberSignature Language="F#" Value="MinusAssign = 71" Usage="Microsoft.JScript.JSToken.MinusAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1712,6 +1797,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Modulo" />
       <MemberSignature Language="VB.NET" Value="Modulo" />
       <MemberSignature Language="C++ CLI" Value="Modulo" />
+      <MemberSignature Language="F#" Value="Modulo = 66" Usage="Microsoft.JScript.JSToken.Modulo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1732,6 +1818,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ModuloAssign" />
       <MemberSignature Language="VB.NET" Value="ModuloAssign" />
       <MemberSignature Language="C++ CLI" Value="ModuloAssign" />
+      <MemberSignature Language="F#" Value="ModuloAssign = 77" Usage="Microsoft.JScript.JSToken.ModuloAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1752,6 +1839,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="C++ CLI" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 64" Usage="Microsoft.JScript.JSToken.Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1772,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.MultiplyAssign" />
       <MemberSignature Language="VB.NET" Value="MultiplyAssign" />
       <MemberSignature Language="C++ CLI" Value="MultiplyAssign" />
+      <MemberSignature Language="F#" Value="MultiplyAssign = 72" Usage="Microsoft.JScript.JSToken.MultiplyAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1792,6 +1881,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Namespace" />
       <MemberSignature Language="VB.NET" Value="Namespace" />
       <MemberSignature Language="C++ CLI" Value="Namespace" />
+      <MemberSignature Language="F#" Value="Namespace = 118" Usage="Microsoft.JScript.JSToken.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1812,6 +1902,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 119" Usage="Microsoft.JScript.JSToken.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1832,6 +1923,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.New" />
       <MemberSignature Language="VB.NET" Value="New" />
       <MemberSignature Language="C++ CLI" Value="New" />
+      <MemberSignature Language="F#" Value="New = 95" Usage="Microsoft.JScript.JSToken.New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1852,6 +1944,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = -1" Usage="Microsoft.JScript.JSToken.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1872,6 +1965,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.NotEqual" />
       <MemberSignature Language="VB.NET" Value="NotEqual" />
       <MemberSignature Language="C++ CLI" Value="NotEqual" />
+      <MemberSignature Language="F#" Value="NotEqual = 54" Usage="Microsoft.JScript.JSToken.NotEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1892,6 +1986,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Null" />
       <MemberSignature Language="VB.NET" Value="Null" />
       <MemberSignature Language="C++ CLI" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 28" Usage="Microsoft.JScript.JSToken.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1912,6 +2007,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.NumericLiteral" />
       <MemberSignature Language="VB.NET" Value="NumericLiteral" />
       <MemberSignature Language="C++ CLI" Value="NumericLiteral" />
+      <MemberSignature Language="F#" Value="NumericLiteral = 35" Usage="Microsoft.JScript.JSToken.NumericLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1932,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Package" />
       <MemberSignature Language="VB.NET" Value="Package" />
       <MemberSignature Language="C++ CLI" Value="Package" />
+      <MemberSignature Language="F#" Value="Package = 13" Usage="Microsoft.JScript.JSToken.Package" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1952,6 +2049,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ParamArray" />
       <MemberSignature Language="VB.NET" Value="ParamArray" />
       <MemberSignature Language="C++ CLI" Value="ParamArray" />
+      <MemberSignature Language="F#" Value="ParamArray = 126" Usage="Microsoft.JScript.JSToken.ParamArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1972,6 +2070,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Plus" />
       <MemberSignature Language="VB.NET" Value="Plus" />
       <MemberSignature Language="C++ CLI" Value="Plus" />
+      <MemberSignature Language="F#" Value="Plus = 46" Usage="Microsoft.JScript.JSToken.Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1992,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PlusAssign" />
       <MemberSignature Language="VB.NET" Value="PlusAssign" />
       <MemberSignature Language="C++ CLI" Value="PlusAssign" />
+      <MemberSignature Language="F#" Value="PlusAssign = 70" Usage="Microsoft.JScript.JSToken.PlusAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2012,6 +2112,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PreProcessDirective" />
       <MemberSignature Language="VB.NET" Value="PreProcessDirective" />
       <MemberSignature Language="C++ CLI" Value="PreProcessDirective" />
+      <MemberSignature Language="F#" Value="PreProcessDirective = 133" Usage="Microsoft.JScript.JSToken.PreProcessDirective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2032,6 +2133,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PreProcessorConstant" />
       <MemberSignature Language="VB.NET" Value="PreProcessorConstant" />
       <MemberSignature Language="C++ CLI" Value="PreProcessorConstant" />
+      <MemberSignature Language="F#" Value="PreProcessorConstant = 101" Usage="Microsoft.JScript.JSToken.PreProcessorConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2052,6 +2154,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="C++ CLI" Value="Private" />
+      <MemberSignature Language="F#" Value="Private = 18" Usage="Microsoft.JScript.JSToken.Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2072,6 +2175,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Protected" />
       <MemberSignature Language="VB.NET" Value="Protected" />
       <MemberSignature Language="C++ CLI" Value="Protected" />
+      <MemberSignature Language="F#" Value="Protected = 19" Usage="Microsoft.JScript.JSToken.Protected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2092,6 +2196,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="C++ CLI" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 16" Usage="Microsoft.JScript.JSToken.Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2112,6 +2217,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Require" />
       <MemberSignature Language="VB.NET" Value="Require" />
       <MemberSignature Language="C++ CLI" Value="Require" />
+      <MemberSignature Language="F#" Value="Require = 120" Usage="Microsoft.JScript.JSToken.Require" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2132,6 +2238,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Return" />
       <MemberSignature Language="VB.NET" Value="Return" />
       <MemberSignature Language="C++ CLI" Value="Return" />
+      <MemberSignature Language="F#" Value="Return = 7" Usage="Microsoft.JScript.JSToken.Return" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2152,6 +2259,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightBracket" />
       <MemberSignature Language="VB.NET" Value="RightBracket" />
       <MemberSignature Language="C++ CLI" Value="RightBracket" />
+      <MemberSignature Language="F#" Value="RightBracket = 100" Usage="Microsoft.JScript.JSToken.RightBracket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2172,6 +2280,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightCurly" />
       <MemberSignature Language="VB.NET" Value="RightCurly" />
       <MemberSignature Language="C++ CLI" Value="RightCurly" />
+      <MemberSignature Language="F#" Value="RightCurly = 99" Usage="Microsoft.JScript.JSToken.RightCurly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2192,6 +2301,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightParen" />
       <MemberSignature Language="VB.NET" Value="RightParen" />
       <MemberSignature Language="C++ CLI" Value="RightParen" />
+      <MemberSignature Language="F#" Value="RightParen = 98" Usage="Microsoft.JScript.JSToken.RightParen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2212,6 +2322,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightShift" />
       <MemberSignature Language="VB.NET" Value="RightShift" />
       <MemberSignature Language="C++ CLI" Value="RightShift" />
+      <MemberSignature Language="F#" Value="RightShift = 62" Usage="Microsoft.JScript.JSToken.RightShift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2232,6 +2343,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightShiftAssign" />
       <MemberSignature Language="VB.NET" Value="RightShiftAssign" />
       <MemberSignature Language="C++ CLI" Value="RightShiftAssign" />
+      <MemberSignature Language="F#" Value="RightShiftAssign = 79" Usage="Microsoft.JScript.JSToken.RightShiftAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2252,6 +2364,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Sbyte" />
       <MemberSignature Language="VB.NET" Value="Sbyte" />
       <MemberSignature Language="C++ CLI" Value="Sbyte" />
+      <MemberSignature Language="F#" Value="Sbyte = 121" Usage="Microsoft.JScript.JSToken.Sbyte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2272,6 +2385,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Semicolon" />
       <MemberSignature Language="VB.NET" Value="Semicolon" />
       <MemberSignature Language="C++ CLI" Value="Semicolon" />
+      <MemberSignature Language="F#" Value="Semicolon = 27" Usage="Microsoft.JScript.JSToken.Semicolon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2292,6 +2406,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Set" />
       <MemberSignature Language="VB.NET" Value="Set" />
       <MemberSignature Language="C++ CLI" Value="Set" />
+      <MemberSignature Language="F#" Value="Set = 96" Usage="Microsoft.JScript.JSToken.Set" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2312,6 +2427,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="C++ CLI" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 122" Usage="Microsoft.JScript.JSToken.Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2332,6 +2448,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 17" Usage="Microsoft.JScript.JSToken.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2352,6 +2469,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StrictEqual" />
       <MemberSignature Language="VB.NET" Value="StrictEqual" />
       <MemberSignature Language="C++ CLI" Value="StrictEqual" />
+      <MemberSignature Language="F#" Value="StrictEqual = 55" Usage="Microsoft.JScript.JSToken.StrictEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2372,6 +2490,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StrictNotEqual" />
       <MemberSignature Language="VB.NET" Value="StrictNotEqual" />
       <MemberSignature Language="C++ CLI" Value="StrictNotEqual" />
+      <MemberSignature Language="F#" Value="StrictNotEqual = 56" Usage="Microsoft.JScript.JSToken.StrictNotEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2392,6 +2511,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StringLiteral" />
       <MemberSignature Language="VB.NET" Value="StringLiteral" />
       <MemberSignature Language="C++ CLI" Value="StringLiteral" />
+      <MemberSignature Language="F#" Value="StringLiteral = 33" Usage="Microsoft.JScript.JSToken.StringLiteral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2412,6 +2532,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Super" />
       <MemberSignature Language="VB.NET" Value="Super" />
       <MemberSignature Language="C++ CLI" Value="Super" />
+      <MemberSignature Language="F#" Value="Super = 97" Usage="Microsoft.JScript.JSToken.Super" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2432,6 +2553,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Switch" />
       <MemberSignature Language="VB.NET" Value="Switch" />
       <MemberSignature Language="C++ CLI" Value="Switch" />
+      <MemberSignature Language="F#" Value="Switch = 10" Usage="Microsoft.JScript.JSToken.Switch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2452,6 +2574,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Synchronized" />
       <MemberSignature Language="VB.NET" Value="Synchronized" />
       <MemberSignature Language="C++ CLI" Value="Synchronized" />
+      <MemberSignature Language="F#" Value="Synchronized = 123" Usage="Microsoft.JScript.JSToken.Synchronized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2472,6 +2595,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.This" />
       <MemberSignature Language="VB.NET" Value="This" />
       <MemberSignature Language="C++ CLI" Value="This" />
+      <MemberSignature Language="F#" Value="This = 31" Usage="Microsoft.JScript.JSToken.This" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2492,6 +2616,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Throw" />
       <MemberSignature Language="VB.NET" Value="Throw" />
       <MemberSignature Language="C++ CLI" Value="Throw" />
+      <MemberSignature Language="F#" Value="Throw = 11" Usage="Microsoft.JScript.JSToken.Throw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2512,6 +2637,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Throws" />
       <MemberSignature Language="VB.NET" Value="Throws" />
       <MemberSignature Language="C++ CLI" Value="Throws" />
+      <MemberSignature Language="F#" Value="Throws = 125" Usage="Microsoft.JScript.JSToken.Throws" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2532,6 +2658,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Transient" />
       <MemberSignature Language="VB.NET" Value="Transient" />
       <MemberSignature Language="C++ CLI" Value="Transient" />
+      <MemberSignature Language="F#" Value="Transient = 124" Usage="Microsoft.JScript.JSToken.Transient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2552,6 +2679,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.True" />
       <MemberSignature Language="VB.NET" Value="True" />
       <MemberSignature Language="C++ CLI" Value="True" />
+      <MemberSignature Language="F#" Value="True = 29" Usage="Microsoft.JScript.JSToken.True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2572,6 +2700,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Try" />
       <MemberSignature Language="VB.NET" Value="Try" />
       <MemberSignature Language="C++ CLI" Value="Try" />
+      <MemberSignature Language="F#" Value="Try = 12" Usage="Microsoft.JScript.JSToken.Try" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2592,6 +2721,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Typeof" />
       <MemberSignature Language="VB.NET" Value="Typeof" />
       <MemberSignature Language="C++ CLI" Value="Typeof" />
+      <MemberSignature Language="F#" Value="Typeof = 43" Usage="Microsoft.JScript.JSToken.Typeof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2612,6 +2742,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Uint" />
       <MemberSignature Language="VB.NET" Value="Uint" />
       <MemberSignature Language="C++ CLI" Value="Uint" />
+      <MemberSignature Language="F#" Value="Uint = 129" Usage="Microsoft.JScript.JSToken.Uint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2632,6 +2763,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ulong" />
       <MemberSignature Language="VB.NET" Value="Ulong" />
       <MemberSignature Language="C++ CLI" Value="Ulong" />
+      <MemberSignature Language="F#" Value="Ulong = 130" Usage="Microsoft.JScript.JSToken.Ulong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2652,6 +2784,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnsignedRightShift" />
       <MemberSignature Language="VB.NET" Value="UnsignedRightShift" />
       <MemberSignature Language="C++ CLI" Value="UnsignedRightShift" />
+      <MemberSignature Language="F#" Value="UnsignedRightShift = 63" Usage="Microsoft.JScript.JSToken.UnsignedRightShift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2672,6 +2805,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnsignedRightShiftAssign" />
       <MemberSignature Language="VB.NET" Value="UnsignedRightShiftAssign" />
       <MemberSignature Language="C++ CLI" Value="UnsignedRightShiftAssign" />
+      <MemberSignature Language="F#" Value="UnsignedRightShiftAssign = 80" Usage="Microsoft.JScript.JSToken.UnsignedRightShiftAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2692,6 +2826,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnterminatedComment" />
       <MemberSignature Language="VB.NET" Value="UnterminatedComment" />
       <MemberSignature Language="C++ CLI" Value="UnterminatedComment" />
+      <MemberSignature Language="F#" Value="UnterminatedComment = 103" Usage="Microsoft.JScript.JSToken.UnterminatedComment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2712,6 +2847,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Use" />
       <MemberSignature Language="VB.NET" Value="Use" />
       <MemberSignature Language="C++ CLI" Value="Use" />
+      <MemberSignature Language="F#" Value="Use = 131" Usage="Microsoft.JScript.JSToken.Use" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2732,6 +2868,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ushort" />
       <MemberSignature Language="VB.NET" Value="Ushort" />
       <MemberSignature Language="C++ CLI" Value="Ushort" />
+      <MemberSignature Language="F#" Value="Ushort = 128" Usage="Microsoft.JScript.JSToken.Ushort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2752,6 +2889,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Var" />
       <MemberSignature Language="VB.NET" Value="Var" />
       <MemberSignature Language="C++ CLI" Value="Var" />
+      <MemberSignature Language="F#" Value="Var = 22" Usage="Microsoft.JScript.JSToken.Var" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2772,6 +2910,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Void" />
       <MemberSignature Language="VB.NET" Value="Void" />
       <MemberSignature Language="C++ CLI" Value="Void" />
+      <MemberSignature Language="F#" Value="Void = 42" Usage="Microsoft.JScript.JSToken.Void" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2792,6 +2931,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Volatile" />
       <MemberSignature Language="VB.NET" Value="Volatile" />
       <MemberSignature Language="C++ CLI" Value="Volatile" />
+      <MemberSignature Language="F#" Value="Volatile = 127" Usage="Microsoft.JScript.JSToken.Volatile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2812,6 +2952,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.While" />
       <MemberSignature Language="VB.NET" Value="While" />
       <MemberSignature Language="C++ CLI" Value="While" />
+      <MemberSignature Language="F#" Value="While = 4" Usage="Microsoft.JScript.JSToken.While" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2832,6 +2973,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.With" />
       <MemberSignature Language="VB.NET" Value="With" />
       <MemberSignature Language="C++ CLI" Value="With" />
+      <MemberSignature Language="F#" Value="With = 9" Usage="Microsoft.JScript.JSToken.With" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyManager" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyManager&#xA;Inherits BindingManagerBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyManager : System::Windows::Forms::BindingManagerBase" />
+  <TypeSignature Language="F#" Value="type PropertyManager = class&#xA;    inherit BindingManagerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.AddNew" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddNew ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddNew();" />
+      <MemberSignature Language="F#" Value="override this.AddNew : unit -&gt; unit" Usage="propertyManager.AddNew " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.CancelCurrentEdit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelCurrentEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelCurrentEdit();" />
+      <MemberSignature Language="F#" Value="override this.CancelCurrentEdit : unit -&gt; unit" Usage="propertyManager.CancelCurrentEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.PropertyManager.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Current" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Windows.Forms.PropertyManager.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.EndCurrentEdit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndCurrentEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndCurrentEdit();" />
+      <MemberSignature Language="F#" Value="override this.EndCurrentEdit : unit -&gt; unit" Usage="propertyManager.EndCurrentEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.GetListName(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetListName (listAccessors As ArrayList) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetListName(System::Collections::ArrayList ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="override this.GetListName : System.Collections.ArrayList -&gt; string" Usage="propertyManager.GetListName listAccessors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentChanged (ea As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentChanged(EventArgs ^ ea);" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentChanged : EventArgs -&gt; unit" Usage="propertyManager.OnCurrentChanged ea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentItemChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentItemChanged (ea As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentItemChanged(EventArgs ^ ea);" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentItemChanged : EventArgs -&gt; unit" Usage="propertyManager.OnCurrentItemChanged ea" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Position { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="System.Windows.Forms.PropertyManager.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="propertyManager.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.ResumeBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResumeBinding ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResumeBinding();" />
+      <MemberSignature Language="F#" Value="override this.ResumeBinding : unit -&gt; unit" Usage="propertyManager.ResumeBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -301,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.SuspendBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SuspendBinding ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SuspendBinding();" />
+      <MemberSignature Language="F#" Value="override this.SuspendBinding : unit -&gt; unit" Usage="propertyManager.SuspendBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.UpdateIsBinding" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateIsBinding ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateIsBinding();" />
+      <MemberSignature Language="F#" Value="override this.UpdateIsBinding : unit -&gt; unit" Usage="propertyManager.UpdateIsBinding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.PARAMDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure PARAMDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class PARAMDESC" />
+  <TypeSignature Language="F#" Value="type PARAMDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMDESC.lpVarValue" />
       <MemberSignature Language="VB.NET" Value="Public lpVarValue As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpVarValue;" />
+      <MemberSignature Language="F#" Value="val mutable lpVarValue : nativeint" Usage="System.Runtime.InteropServices.PARAMDESC.lpVarValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.PARAMDESC.wParamFlags" />
       <MemberSignature Language="VB.NET" Value="Public wParamFlags As PARAMFLAG " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::PARAMFLAG wParamFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wParamFlags : System.Runtime.InteropServices.PARAMFLAG" Usage="System.Runtime.InteropServices.PARAMDESC.wParamFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

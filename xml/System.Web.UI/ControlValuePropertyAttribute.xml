@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlValuePropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlValuePropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlValuePropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ControlValuePropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlValuePropertyAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ControlValuePropertyAttribute : string -&gt; System.Web.UI.ControlValuePropertyAttribute" Usage="new System.Web.UI.ControlValuePropertyAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlValuePropertyAttribute(System::String ^ name, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ControlValuePropertyAttribute : string * obj -&gt; System.Web.UI.ControlValuePropertyAttribute" Usage="new System.Web.UI.ControlValuePropertyAttribute (name, defaultValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, string defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlValuePropertyAttribute(System::String ^ name, Type ^ type, System::String ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ControlValuePropertyAttribute : string * Type * string -&gt; System.Web.UI.ControlValuePropertyAttribute" Usage="new System.Web.UI.ControlValuePropertyAttribute (name, type, defaultValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="controlValuePropertyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="controlValuePropertyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.ControlValuePropertyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

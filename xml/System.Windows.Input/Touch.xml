@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Touch" />
   <TypeSignature Language="VB.NET" Value="Public Class Touch" />
   <TypeSignature Language="C++ CLI" Value="public ref class Touch abstract sealed" />
+  <TypeSignature Language="F#" Value="type Touch = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Touch.FrameReported" />
       <MemberSignature Language="VB.NET" Value="Public Shared Event FrameReported As TouchFrameEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Windows::Input::TouchFrameEventHandler ^ FrameReported;" />
+      <MemberSignature Language="F#" Value="member this.FrameReported : System.Windows.Input.TouchFrameEventHandler " Usage="member this.FrameReported : System.Windows.Input.TouchFrameEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

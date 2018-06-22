@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.TokenColor" />
   <TypeSignature Language="VB.NET" Value="Public Enum TokenColor" />
   <TypeSignature Language="C++ CLI" Value="public enum class TokenColor" />
+  <TypeSignature Language="F#" Value="type TokenColor = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_COMMENT" />
       <MemberSignature Language="VB.NET" Value="COLOR_COMMENT" />
       <MemberSignature Language="C++ CLI" Value="COLOR_COMMENT" />
+      <MemberSignature Language="F#" Value="COLOR_COMMENT = 3" Usage="Microsoft.JScript.TokenColor.COLOR_COMMENT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_CONDITIONAL_COMP" />
       <MemberSignature Language="VB.NET" Value="COLOR_CONDITIONAL_COMP" />
       <MemberSignature Language="C++ CLI" Value="COLOR_CONDITIONAL_COMP" />
+      <MemberSignature Language="F#" Value="COLOR_CONDITIONAL_COMP = 7" Usage="Microsoft.JScript.TokenColor.COLOR_CONDITIONAL_COMP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_IDENTIFIER" />
       <MemberSignature Language="VB.NET" Value="COLOR_IDENTIFIER" />
       <MemberSignature Language="C++ CLI" Value="COLOR_IDENTIFIER" />
+      <MemberSignature Language="F#" Value="COLOR_IDENTIFIER = 1" Usage="Microsoft.JScript.TokenColor.COLOR_IDENTIFIER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_KEYWORD" />
       <MemberSignature Language="VB.NET" Value="COLOR_KEYWORD" />
       <MemberSignature Language="C++ CLI" Value="COLOR_KEYWORD" />
+      <MemberSignature Language="F#" Value="COLOR_KEYWORD = 2" Usage="Microsoft.JScript.TokenColor.COLOR_KEYWORD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_NUMBER" />
       <MemberSignature Language="VB.NET" Value="COLOR_NUMBER" />
       <MemberSignature Language="C++ CLI" Value="COLOR_NUMBER" />
+      <MemberSignature Language="F#" Value="COLOR_NUMBER = 5" Usage="Microsoft.JScript.TokenColor.COLOR_NUMBER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_OPERATOR" />
       <MemberSignature Language="VB.NET" Value="COLOR_OPERATOR" />
       <MemberSignature Language="C++ CLI" Value="COLOR_OPERATOR" />
+      <MemberSignature Language="F#" Value="COLOR_OPERATOR = 4" Usage="Microsoft.JScript.TokenColor.COLOR_OPERATOR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_STRING" />
       <MemberSignature Language="VB.NET" Value="COLOR_STRING" />
       <MemberSignature Language="C++ CLI" Value="COLOR_STRING" />
+      <MemberSignature Language="F#" Value="COLOR_STRING = 6" Usage="Microsoft.JScript.TokenColor.COLOR_STRING" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -175,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.TokenColor.COLOR_TEXT" />
       <MemberSignature Language="VB.NET" Value="COLOR_TEXT" />
       <MemberSignature Language="C++ CLI" Value="COLOR_TEXT" />
+      <MemberSignature Language="F#" Value="COLOR_TEXT = 0" Usage="Microsoft.JScript.TokenColor.COLOR_TEXT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

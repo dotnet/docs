@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopeName" />
   <TypeSignature Language="VB.NET" Value="Public Class InputScopeName&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputScopeName : System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type InputScopeName = class&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopeName.#ctor(System.Windows.Input.InputScopeNameValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nameValue As InputScopeNameValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputScopeName(System::Windows::Input::InputScopeNameValue nameValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputScopeName : System.Windows.Input.InputScopeNameValue -&gt; System.Windows.Input.InputScopeName" Usage="new System.Windows.Input.InputScopeName nameValue" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopeName.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="inputScopeName.AddChild value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopeName.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddText (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddText(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="inputScopeName.AddText name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScopeName.NameValue" />
       <MemberSignature Language="VB.NET" Value="Public Property NameValue As InputScopeNameValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputScopeNameValue NameValue { System::Windows::Input::InputScopeNameValue get(); void set(System::Windows::Input::InputScopeNameValue value); };" />
+      <MemberSignature Language="F#" Value="member this.NameValue : System.Windows.Input.InputScopeNameValue with get, set" Usage="System.Windows.Input.InputScopeName.NameValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

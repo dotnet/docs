@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildSubmissionCompleteCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildSubmissionCompleteCallback(submission As BuildSubmission)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void BuildSubmissionCompleteCallback(BuildSubmission ^ submission);" />
+  <TypeSignature Language="F#" Value="type BuildSubmissionCompleteCallback = delegate of BuildSubmission -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

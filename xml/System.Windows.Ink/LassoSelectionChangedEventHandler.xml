@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.LassoSelectionChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LassoSelectionChangedEventHandler(sender As Object, e As LassoSelectionChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LassoSelectionChangedEventHandler(System::Object ^ sender, LassoSelectionChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LassoSelectionChangedEventHandler = delegate of obj * LassoSelectionChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

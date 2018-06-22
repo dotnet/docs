@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.MatchEvaluator" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function MatchEvaluator(match As Match) As String " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::String ^ MatchEvaluator(Match ^ match);" />
+  <TypeSignature Language="F#" Value="type MatchEvaluator = delegate of Match -&gt; string" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

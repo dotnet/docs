@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Transition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Transition" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transition sealed" />
+  <TypeSignature Language="F#" Value="type Transition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Transition.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Action { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Activities.Activity with get, set" Usage="System.Activities.Statements.Transition.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Transition.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As Activity(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;bool&gt; ^ Condition { System::Activities::Activity&lt;bool&gt; ^ get(); void set(System::Activities::Activity&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Activities.Activity&lt;bool&gt; with get, set" Usage="System.Activities.Statements.Transition.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Transition.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Statements.Transition.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Transition.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As State" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Statements::State ^ To { System::Activities::Statements::State ^ get(); void set(System::Activities::Statements::State ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : System.Activities.Statements.State with get, set" Usage="System.Activities.Statements.Transition.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Transition.Trigger" />
       <MemberSignature Language="VB.NET" Value="Public Property Trigger As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Trigger { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Trigger : System.Activities.Activity with get, set" Usage="System.Activities.Statements.Transition.Trigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

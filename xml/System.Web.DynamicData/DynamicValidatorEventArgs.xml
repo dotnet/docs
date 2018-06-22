@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicValidatorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicValidatorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicValidatorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DynamicValidatorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, valuetype System.Web.DynamicData.DynamicDataSourceOperation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidatorEventArgs.#ctor(System.Exception,System.Web.DynamicData.DynamicDataSourceOperation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicValidatorEventArgs(Exception ^ exception, System::Web::DynamicData::DynamicDataSourceOperation operation);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DynamicValidatorEventArgs : Exception * System.Web.DynamicData.DynamicDataSourceOperation -&gt; System.Web.DynamicData.DynamicValidatorEventArgs" Usage="new System.Web.DynamicData.DynamicValidatorEventArgs (exception, operation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidatorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.DynamicData.DynamicValidatorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidatorEventArgs.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As DynamicDataSourceOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DynamicDataSourceOperation Operation { System::Web::DynamicData::DynamicDataSourceOperation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Web.DynamicData.DynamicDataSourceOperation" Usage="System.Web.DynamicData.DynamicValidatorEventArgs.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

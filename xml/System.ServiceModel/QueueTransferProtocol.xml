@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.QueueTransferProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Enum QueueTransferProtocol" />
   <TypeSignature Language="C++ CLI" Value="public enum class QueueTransferProtocol" />
+  <TypeSignature Language="F#" Value="type QueueTransferProtocol = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 0" Usage="System.ServiceModel.QueueTransferProtocol.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.Srmp" />
       <MemberSignature Language="VB.NET" Value="Srmp" />
       <MemberSignature Language="C++ CLI" Value="Srmp" />
+      <MemberSignature Language="F#" Value="Srmp = 1" Usage="System.ServiceModel.QueueTransferProtocol.Srmp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.SrmpSecure" />
       <MemberSignature Language="VB.NET" Value="SrmpSecure" />
       <MemberSignature Language="C++ CLI" Value="SrmpSecure" />
+      <MemberSignature Language="F#" Value="SrmpSecure = 2" Usage="System.ServiceModel.QueueTransferProtocol.SrmpSecure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

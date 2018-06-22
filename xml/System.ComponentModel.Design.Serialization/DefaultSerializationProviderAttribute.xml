@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultSerializationProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultSerializationProviderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultSerializationProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSerializationProviderAttribute(System::String ^ providerTypeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute : string -&gt; System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" Usage="new System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute providerTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSerializationProviderAttribute(Type ^ providerType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute : Type -&gt; System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" Usage="new System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute providerType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute.ProviderTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderTypeName : string" Usage="System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute.ProviderTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

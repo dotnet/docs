@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WS2007FederationHttpBindingElement&#xA;Inherits WSFederationHttpBindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WS2007FederationHttpBindingElement : System::ServiceModel::Configuration::WSFederationHttpBindingElement" />
+  <TypeSignature Language="F#" Value="type WS2007FederationHttpBindingElement = class&#xA;    inherit WSFederationHttpBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WS2007FederationHttpBindingElement : string -&gt; System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" Usage="new System.ServiceModel.Configuration.WS2007FederationHttpBindingElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

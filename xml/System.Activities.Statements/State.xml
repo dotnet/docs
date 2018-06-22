@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.State" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class State" />
   <TypeSignature Language="C++ CLI" Value="public ref class State sealed" />
+  <TypeSignature Language="F#" Value="type State = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Statements.State.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.Entry" />
       <MemberSignature Language="VB.NET" Value="Public Property Entry As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Entry { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Entry : System.Activities.Activity with get, set" Usage="System.Activities.Statements.State.Entry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.Exit" />
       <MemberSignature Language="VB.NET" Value="Public Property Exit As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Exit { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exit : System.Activities.Activity with get, set" Usage="System.Activities.Statements.State.Exit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.IsFinal" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFinal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFinal : bool with get, set" Usage="System.Activities.Statements.State.IsFinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.Transitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transitions As Collection(Of Transition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::Transition ^&gt; ^ Transitions { System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::Transition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transitions : System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.Transition&gt;" Usage="System.Activities.Statements.State.Transitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.State.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As Collection(Of Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ Variables { System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" Usage="System.Activities.Statements.State.Variables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

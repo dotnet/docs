@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ContractAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractAdapter abstract sealed" />
+  <TypeSignature Language="F#" Value="type ContractAdapter = class" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter``1(System.AddIn.Pipeline.ContractHandle,System.AddIn.Hosting.PipelineStoreLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContractToViewAdapter(Of TView) (contract As ContractHandle, location As PipelineStoreLocation) As TView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TView&gt;&#xA; static TView ContractToViewAdapter(System::AddIn::Pipeline::ContractHandle ^ contract, System::AddIn::Hosting::PipelineStoreLocation location);" />
+      <MemberSignature Language="F#" Value="static member ContractToViewAdapter : System.AddIn.Pipeline.ContractHandle * System.AddIn.Hosting.PipelineStoreLocation -&gt; 'View" Usage="System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter (contract, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter``1(System.AddIn.Pipeline.ContractHandle,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContractToViewAdapter(Of TView) (contract As ContractHandle, pipelineRoot As String) As TView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TView&gt;&#xA; static TView ContractToViewAdapter(System::AddIn::Pipeline::ContractHandle ^ contract, System::String ^ pipelineRoot);" />
+      <MemberSignature Language="F#" Value="static member ContractToViewAdapter : System.AddIn.Pipeline.ContractHandle * string -&gt; 'View" Usage="System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter (contract, pipelineRoot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ViewToContractAdapter (view As Object) As ContractHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Pipeline::ContractHandle ^ ViewToContractAdapter(System::Object ^ view);" />
+      <MemberSignature Language="F#" Value="static member ViewToContractAdapter : obj -&gt; System.AddIn.Pipeline.ContractHandle" Usage="System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

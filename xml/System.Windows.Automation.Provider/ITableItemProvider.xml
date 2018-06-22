@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITableItemProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITableItemProvider&#xA;Implements IGridItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITableItemProvider : System::Windows::Automation::Provider::IGridItemProvider" />
+  <TypeSignature Language="F#" Value="type ITableItemProvider = interface&#xA;    interface IGridItemProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnHeaderItems () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetColumnHeaderItems();" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnHeaderItems : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTableItemProvider.GetColumnHeaderItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRowHeaderItems () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetRowHeaderItems();" />
+      <MemberSignature Language="F#" Value="abstract member GetRowHeaderItems : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTableItemProvider.GetRowHeaderItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

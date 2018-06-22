@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbGeographyWellKnownValue" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbGeographyWellKnownValue" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbGeographyWellKnownValue sealed" />
+  <TypeSignature Language="F#" Value="type DbGeographyWellKnownValue = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeographyWellKnownValue.CoordinateSystemId" />
       <MemberSignature Language="VB.NET" Value="Public Property CoordinateSystemId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CoordinateSystemId { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CoordinateSystemId : int with get, set" Usage="System.Data.Spatial.DbGeographyWellKnownValue.CoordinateSystemId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeographyWellKnownValue.WellKnownBinary" />
       <MemberSignature Language="VB.NET" Value="Public Property WellKnownBinary As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ WellKnownBinary { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WellKnownBinary : byte[] with get, set" Usage="System.Data.Spatial.DbGeographyWellKnownValue.WellKnownBinary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeographyWellKnownValue.WellKnownText" />
       <MemberSignature Language="VB.NET" Value="Public Property WellKnownText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WellKnownText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WellKnownText : string with get, set" Usage="System.Data.Spatial.DbGeographyWellKnownValue.WellKnownText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

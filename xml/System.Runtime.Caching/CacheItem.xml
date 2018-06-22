@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheItem" />
   <TypeSignature Language="VB.NET" Value="Public Class CacheItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class CacheItem" />
+  <TypeSignature Language="F#" Value="type CacheItem = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheItem.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheItem(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.CacheItem : string -&gt; System.Runtime.Caching.CacheItem" Usage="new System.Runtime.Caching.CacheItem key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheItem.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheItem(System::String ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.CacheItem : string * obj -&gt; System.Runtime.Caching.CacheItem" Usage="new System.Runtime.Caching.CacheItem (key, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheItem.#ctor(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, value As Object, regionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheItem(System::String ^ key, System::Object ^ value, System::String ^ regionName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.CacheItem : string * obj * string -&gt; System.Runtime.Caching.CacheItem" Usage="new System.Runtime.Caching.CacheItem (key, value, regionName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItem.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : string with get, set" Usage="System.Runtime.Caching.CacheItem.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItem.RegionName" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegionName : string with get, set" Usage="System.Runtime.Caching.CacheItem.RegionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItem.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Runtime.Caching.CacheItem.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

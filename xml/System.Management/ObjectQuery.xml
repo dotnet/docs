@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery&#xA;Inherits ManagementQuery" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectQuery : System::Management::ManagementQuery" />
+  <TypeSignature Language="F#" Value="type ObjectQuery = class&#xA;    inherit ManagementQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectQuery : string -&gt; System.Management.ObjectQuery" Usage="new System.Management.ObjectQuery query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, query As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ language, System::String ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ObjectQuery : string * string -&gt; System.Management.ObjectQuery" Usage="new System.Management.ObjectQuery (language, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ObjectQuery.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="objectQuery.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EasingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EasingMode" />
+  <TypeSignature Language="F#" Value="type EasingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseIn" />
       <MemberSignature Language="VB.NET" Value="EaseIn" />
       <MemberSignature Language="C++ CLI" Value="EaseIn" />
+      <MemberSignature Language="F#" Value="EaseIn = 0" Usage="System.Windows.Media.Animation.EasingMode.EaseIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseInOut" />
       <MemberSignature Language="VB.NET" Value="EaseInOut" />
       <MemberSignature Language="C++ CLI" Value="EaseInOut" />
+      <MemberSignature Language="F#" Value="EaseInOut = 2" Usage="System.Windows.Media.Animation.EasingMode.EaseInOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingMode.EaseOut" />
       <MemberSignature Language="VB.NET" Value="EaseOut" />
       <MemberSignature Language="C++ CLI" Value="EaseOut" />
+      <MemberSignature Language="F#" Value="EaseOut = 1" Usage="System.Windows.Media.Animation.EasingMode.EaseOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

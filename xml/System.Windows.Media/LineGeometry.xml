@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LineGeometry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LineGeometry&#xA;Inherits Geometry" />
   <TypeSignature Language="C++ CLI" Value="public ref class LineGeometry sealed : System::Windows::Media::Geometry" />
+  <TypeSignature Language="F#" Value="type LineGeometry = class&#xA;    inherit Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.#ctor(System.Windows.Point,System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startPoint As Point, endPoint As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LineGeometry(System::Windows::Point startPoint, System::Windows::Point endPoint);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.LineGeometry : System.Windows.Point * System.Windows.Point -&gt; System.Windows.Media.LineGeometry" Usage="new System.Windows.Media.LineGeometry (startPoint, endPoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point startPoint, valuetype System.Windows.Point endPoint, class System.Windows.Media.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.#ctor(System.Windows.Point,System.Windows.Point,System.Windows.Media.Transform)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LineGeometry(System::Windows::Point startPoint, System::Windows::Point endPoint, System::Windows::Media::Transform ^ transform);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.LineGeometry : System.Windows.Point * System.Windows.Point * System.Windows.Media.Transform -&gt; System.Windows.Media.LineGeometry" Usage="new System.Windows.Media.LineGeometry (startPoint, endPoint, transform)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LineGeometry.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Media.LineGeometry.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As LineGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineGeometry ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.LineGeometry" Usage="lineGeometry.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As LineGeometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineGeometry ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.LineGeometry" Usage="lineGeometry.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="lineGeometry.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LineGeometry.EndPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property EndPoint As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point EndPoint { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.EndPoint : System.Windows.Point with get, set" Usage="System.Windows.Media.LineGeometry.EndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LineGeometry.EndPointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndPointProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EndPointProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndPointProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.LineGeometry.EndPointProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.GetArea(System.Double,System.Windows.Media.ToleranceType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetArea (tolerance As Double, type As ToleranceType) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetArea(double tolerance, System::Windows::Media::ToleranceType type);" />
+      <MemberSignature Language="F#" Value="override this.GetArea : double * System.Windows.Media.ToleranceType -&gt; double" Usage="lineGeometry.GetArea (tolerance, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
+      <MemberSignature Language="F#" Value="override this.IsEmpty : unit -&gt; bool" Usage="lineGeometry.IsEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineGeometry.MayHaveCurves" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
+      <MemberSignature Language="F#" Value="override this.MayHaveCurves : unit -&gt; bool" Usage="lineGeometry.MayHaveCurves " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -341,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LineGeometry.StartPoint" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPoint As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point StartPoint { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.StartPoint : System.Windows.Point with get, set" Usage="System.Windows.Media.LineGeometry.StartPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LineGeometry.StartPointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartPointProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StartPointProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartPointProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.LineGeometry.StartPointProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

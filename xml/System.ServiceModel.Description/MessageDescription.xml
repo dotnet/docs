@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageDescription" />
+  <TypeSignature Language="F#" Value="type MessageDescription = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageDescription.#ctor(System.String,System.ServiceModel.Description.MessageDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As String, direction As MessageDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageDescription(System::String ^ action, System::ServiceModel::Description::MessageDirection direction);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MessageDescription : string * System.ServiceModel.Description.MessageDirection -&gt; System.ServiceModel.Description.MessageDescription" Usage="new System.ServiceModel.Description.MessageDescription (action, direction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.ServiceModel.Description.MessageDescription.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.Body" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As MessageBodyDescription" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessageBodyDescription ^ Body { System::ServiceModel::Description::MessageBodyDescription ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Body : System.ServiceModel.Description.MessageBodyDescription" Usage="System.ServiceModel.Description.MessageDescription.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As MessageDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessageDirection Direction { System::ServiceModel::Description::MessageDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.ServiceModel.Description.MessageDirection" Usage="System.ServiceModel.Description.MessageDescription.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.HasProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.Description.MessageDescription.HasProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As MessageHeaderDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessageHeaderDescriptionCollection ^ Headers { System::ServiceModel::Description::MessageHeaderDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Description.MessageHeaderDescriptionCollection" Usage="System.ServiceModel.Description.MessageDescription.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.MessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MessageType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageType : Type with get, set" Usage="System.ServiceModel.Description.MessageDescription.MessageType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As MessagePropertyDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessagePropertyDescriptionCollection ^ Properties { System::ServiceModel::Description::MessagePropertyDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.ServiceModel.Description.MessagePropertyDescriptionCollection" Usage="System.ServiceModel.Description.MessageDescription.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageDescription.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Description.MessageDescription.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageDescription.ShouldSerializeProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeProtectionLevel () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProtectionLevel();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeProtectionLevel : unit -&gt; bool" Usage="messageDescription.ShouldSerializeProtectionLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

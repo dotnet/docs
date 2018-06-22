@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IMessageFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMessageFilter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMessageFilter" />
+  <TypeSignature Language="F#" Value="type IMessageFilter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Function PreFilterMessage (ByRef m As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PreFilterMessage(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="abstract member PreFilterMessage :  -&gt; bool" Usage="iMessageFilter.PreFilterMessage m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

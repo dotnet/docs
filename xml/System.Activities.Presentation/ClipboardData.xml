@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ClipboardData" />
   <TypeSignature Language="VB.NET" Value="Public Class ClipboardData" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClipboardData" />
+  <TypeSignature Language="F#" Value="type ClipboardData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As List(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Object ^&gt; ^ Data { System::Collections::Generic::List&lt;System::Object ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Collections.Generic.List&lt;obj&gt; with get, set" Usage="System.Activities.Presentation.ClipboardData.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As List(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Object ^&gt; ^ Metadata { System::Collections::Generic::List&lt;System::Object ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.List&lt;obj&gt; with get, set" Usage="System.Activities.Presentation.ClipboardData.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Activities.Presentation.ClipboardData.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProgressChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProgressChangedEventHandler(sender As Object, e As ProgressChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ProgressChangedEventHandler(System::Object ^ sender, ProgressChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ProgressChangedEventHandler = delegate of obj * ProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

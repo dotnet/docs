@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.TableNotEnabledForNotificationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TableNotEnabledForNotificationException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableNotEnabledForNotificationException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type TableNotEnabledForNotificationException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.TableNotEnabledForNotificationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.TableNotEnabledForNotificationException : string -&gt; System.Web.Caching.TableNotEnabledForNotificationException" Usage="new System.Web.Caching.TableNotEnabledForNotificationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.TableNotEnabledForNotificationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.TableNotEnabledForNotificationException : string * Exception -&gt; System.Web.Caching.TableNotEnabledForNotificationException" Usage="new System.Web.Caching.TableNotEnabledForNotificationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

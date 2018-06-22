@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.SdlType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SdlType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SdlType" />
+  <TypeSignature Language="F#" Value="type SdlType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.MetadataServices.SdlType.Sdl" />
       <MemberSignature Language="VB.NET" Value="Sdl" />
       <MemberSignature Language="C++ CLI" Value="Sdl" />
+      <MemberSignature Language="F#" Value="Sdl = 0" Usage="System.Runtime.Remoting.MetadataServices.SdlType.Sdl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.MetadataServices.SdlType.Wsdl" />
       <MemberSignature Language="VB.NET" Value="Wsdl" />
       <MemberSignature Language="C++ CLI" Value="Wsdl" />
+      <MemberSignature Language="F#" Value="Wsdl = 1" Usage="System.Runtime.Remoting.MetadataServices.SdlType.Wsdl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

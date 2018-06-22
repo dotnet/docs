@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebPartRow" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebPartRow" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebPartRow" />
+  <TypeSignature Language="F#" Value="type IWebPartRow = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IWebPartRow.GetRowData(System.Web.UI.WebControls.WebParts.RowCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRowData (callback As RowCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRowData(System::Web::UI::WebControls::WebParts::RowCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member GetRowData : System.Web.UI.WebControls.WebParts.RowCallback -&gt; unit" Usage="iWebPartRow.GetRowData callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPartRow.Schema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptorCollection ^ Schema { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.ComponentModel.PropertyDescriptorCollection" Usage="System.Web.UI.WebControls.WebParts.IWebPartRow.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

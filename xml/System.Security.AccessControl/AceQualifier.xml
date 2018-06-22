@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AceQualifier" />
   <TypeSignature Language="VB.NET" Value="Public Enum AceQualifier" />
   <TypeSignature Language="C++ CLI" Value="public enum class AceQualifier" />
+  <TypeSignature Language="F#" Value="type AceQualifier = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.AccessAllowed" />
       <MemberSignature Language="VB.NET" Value="AccessAllowed" />
       <MemberSignature Language="C++ CLI" Value="AccessAllowed" />
+      <MemberSignature Language="F#" Value="AccessAllowed = 0" Usage="System.Security.AccessControl.AceQualifier.AccessAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 1" Usage="System.Security.AccessControl.AceQualifier.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.SystemAlarm" />
       <MemberSignature Language="VB.NET" Value="SystemAlarm" />
       <MemberSignature Language="C++ CLI" Value="SystemAlarm" />
+      <MemberSignature Language="F#" Value="SystemAlarm = 3" Usage="System.Security.AccessControl.AceQualifier.SystemAlarm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceQualifier.SystemAudit" />
       <MemberSignature Language="VB.NET" Value="SystemAudit" />
       <MemberSignature Language="C++ CLI" Value="SystemAudit" />
+      <MemberSignature Language="F#" Value="SystemAudit = 2" Usage="System.Security.AccessControl.AceQualifier.SystemAudit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

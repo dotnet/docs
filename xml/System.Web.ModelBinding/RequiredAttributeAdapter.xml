@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RequiredAttributeAdapter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of RequiredAttribute)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::RequiredAttribute ^&gt;" />
+  <TypeSignature Language="F#" Value="type RequiredAttributeAdapter = class&#xA;    inherit DataAnnotationsModelValidator&lt;RequiredAttribute&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RequiredAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.RequiredAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As RequiredAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequiredAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::RequiredAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.RequiredAttributeAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.RequiredAttribute -&gt; System.Web.ModelBinding.RequiredAttributeAdapter" Usage="new System.Web.ModelBinding.RequiredAttributeAdapter (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

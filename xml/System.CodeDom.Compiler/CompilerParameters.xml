@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class CompilerParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompilerParameters" />
+  <TypeSignature Language="F#" Value="type CompilerParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerParameters(cli::array &lt;System::String ^&gt; ^ assemblyNames);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerParameters : string[] -&gt; System.CodeDom.Compiler.CompilerParameters" Usage="new System.CodeDom.Compiler.CompilerParameters assemblyNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyNames As String(), outputName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerParameters(cli::array &lt;System::String ^&gt; ^ assemblyNames, System::String ^ outputName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerParameters : string[] * string -&gt; System.CodeDom.Compiler.CompilerParameters" Usage="new System.CodeDom.Compiler.CompilerParameters (assemblyNames, outputName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyNames As String(), outputName As String, includeDebugInformation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerParameters(cli::array &lt;System::String ^&gt; ^ assemblyNames, System::String ^ outputName, bool includeDebugInformation);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerParameters : string[] * string * bool -&gt; System.CodeDom.Compiler.CompilerParameters" Usage="new System.CodeDom.Compiler.CompilerParameters (assemblyNames, outputName, includeDebugInformation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.CompilerOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property CompilerOptions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompilerOptions { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CompilerOptions : string with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.CompilerOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property CoreAssemblyFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CoreAssemblyFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CoreAssemblyFileName : string with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmbeddedResources As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ EmbeddedResources { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmbeddedResources : System.Collections.Specialized.StringCollection" Usage="System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.Evidence" />
       <MemberSignature Language="VB.NET" Value="Public Property Evidence As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); void set(System::Security::Policy::Evidence ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.Evidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateExecutable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateExecutable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateExecutable : bool with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.GenerateExecutable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.GenerateInMemory" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateInMemory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateInMemory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateInMemory : bool with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.GenerateInMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -414,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeDebugInformation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeDebugInformation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeDebugInformation : bool with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -439,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkedResources As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ LinkedResources { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkedResources : System.Collections.Specialized.StringCollection" Usage="System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -493,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.MainClass" />
       <MemberSignature Language="VB.NET" Value="Public Property MainClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MainClass { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MainClass : string with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.MainClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -533,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.OutputAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputAssembly As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputAssembly { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputAssembly : string with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.OutputAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -568,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedAssemblies As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ ReferencedAssemblies { System::Collections::Specialized::StringCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : System.Collections.Specialized.StringCollection" Usage="System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -609,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.TempFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property TempFiles As TempFileCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::TempFileCollection ^ TempFiles { System::CodeDom::Compiler::TempFileCollection ^ get(); void set(System::CodeDom::Compiler::TempFileCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TempFiles : System.CodeDom.Compiler.TempFileCollection with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.TempFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -653,6 +669,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property TreatWarningsAsErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TreatWarningsAsErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TreatWarningsAsErrors : bool with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -689,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.UserToken" />
       <MemberSignature Language="VB.NET" Value="Public Property UserToken As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr UserToken { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.UserToken : nativeint with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.UserToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -713,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.WarningLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property WarningLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WarningLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WarningLevel : int with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.WarningLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -748,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       <MemberSignature Language="VB.NET" Value="Public Property Win32Resource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Win32Resource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Win32Resource : string with get, set" Usage="System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

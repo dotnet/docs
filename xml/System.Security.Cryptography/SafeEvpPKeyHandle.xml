@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SafeEvpPKeyHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeEvpPKeyHandle&#xA;Inherits SafeHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeEvpPKeyHandle sealed : System::Runtime::InteropServices::SafeHandle" />
+  <TypeSignature Language="F#" Value="type SafeEvpPKeyHandle = class&#xA;    inherit SafeHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SafeEvpPKeyHandle.#ctor(System.IntPtr,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, ownsHandle As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeEvpPKeyHandle(IntPtr handle, bool ownsHandle);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.SafeEvpPKeyHandle : nativeint * bool -&gt; System.Security.Cryptography.SafeEvpPKeyHandle" Usage="new System.Security.Cryptography.SafeEvpPKeyHandle (handle, ownsHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SafeEvpPKeyHandle.DuplicateHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function DuplicateHandle () As SafeEvpPKeyHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::SafeEvpPKeyHandle ^ DuplicateHandle();" />
+      <MemberSignature Language="F#" Value="member this.DuplicateHandle : unit -&gt; System.Security.Cryptography.SafeEvpPKeyHandle" Usage="safeEvpPKeyHandle.DuplicateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SafeEvpPKeyHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="System.Security.Cryptography.SafeEvpPKeyHandle.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SafeEvpPKeyHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeEvpPKeyHandle.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonControlDataAutomationPeer&#xA;Inherits ItemAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonControlDataAutomationPeer : System::Windows::Automation::Peers::ItemAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonControlDataAutomationPeer = class&#xA;    inherit ItemAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.ItemsControlAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, itemsControlPeer As ItemsControlAutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonControlDataAutomationPeer(System::Object ^ item, System::Windows::Automation::Peers::ItemsControlAutomationPeer ^ itemsControlPeer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonControlDataAutomationPeer : obj * System.Windows.Automation.Peers.ItemsControlAutomationPeer -&gt; System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonControlDataAutomationPeer (item, itemsControlPeer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonControlDataAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonControlDataAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonControlDataAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

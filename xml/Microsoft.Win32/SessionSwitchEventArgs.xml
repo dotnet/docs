@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionSwitchEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionSwitchEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionSwitchEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SessionSwitchEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SessionSwitchEventArgs.#ctor(Microsoft.Win32.SessionSwitchReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As SessionSwitchReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSwitchEventArgs(Microsoft::Win32::SessionSwitchReason reason);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SessionSwitchEventArgs : Microsoft.Win32.SessionSwitchReason -&gt; Microsoft.Win32.SessionSwitchEventArgs" Usage="new Microsoft.Win32.SessionSwitchEventArgs reason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SessionSwitchEventArgs.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As SessionSwitchReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SessionSwitchReason Reason { Microsoft::Win32::SessionSwitchReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : Microsoft.Win32.SessionSwitchReason" Usage="Microsoft.Win32.SessionSwitchEventArgs.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

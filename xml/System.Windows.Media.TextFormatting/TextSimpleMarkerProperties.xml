@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class TextSimpleMarkerProperties&#xA;Inherits TextMarkerProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextSimpleMarkerProperties : System::Windows::Media::TextFormatting::TextMarkerProperties" />
+  <TypeSignature Language="F#" Value="type TextSimpleMarkerProperties = class&#xA;    inherit TextMarkerProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TextMarkerStyle style, float64 offset, int32 autoNumberingIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties textParagraphProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.#ctor(System.Windows.TextMarkerStyle,System.Double,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextSimpleMarkerProperties(System::Windows::TextMarkerStyle style, double offset, int autoNumberingIndex, System::Windows::Media::TextFormatting::TextParagraphProperties ^ textParagraphProperties);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextSimpleMarkerProperties : System.Windows.TextMarkerStyle * double * int * System.Windows.Media.TextFormatting.TextParagraphProperties -&gt; System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" Usage="new System.Windows.Media.TextFormatting.TextSimpleMarkerProperties (style, offset, autoNumberingIndex, textParagraphProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Offset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Offset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : double" Usage="System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.TextSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TextSource As TextSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextSource ^ TextSource { System::Windows::Media::TextFormatting::TextSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextSource : System.Windows.Media.TextFormatting.TextSource" Usage="System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.TextSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

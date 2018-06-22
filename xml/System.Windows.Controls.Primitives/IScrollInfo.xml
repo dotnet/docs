@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IScrollInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IScrollInfo" />
+  <TypeSignature Language="F#" Value="type IScrollInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.CanHorizontallyScroll" />
       <MemberSignature Language="VB.NET" Value="Public Property CanHorizontallyScroll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHorizontallyScroll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanHorizontallyScroll : bool with get, set" Usage="System.Windows.Controls.Primitives.IScrollInfo.CanHorizontallyScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.CanVerticallyScroll" />
       <MemberSignature Language="VB.NET" Value="Public Property CanVerticallyScroll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanVerticallyScroll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanVerticallyScroll : bool with get, set" Usage="System.Windows.Controls.Primitives.IScrollInfo.CanVerticallyScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.ExtentWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.ExtentWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.LineDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineDown();" />
+      <MemberSignature Language="F#" Value="abstract member LineDown : unit -&gt; unit" Usage="iScrollInfo.LineDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.LineLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineLeft ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineLeft();" />
+      <MemberSignature Language="F#" Value="abstract member LineLeft : unit -&gt; unit" Usage="iScrollInfo.LineLeft " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.LineRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineRight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineRight();" />
+      <MemberSignature Language="F#" Value="abstract member LineRight : unit -&gt; unit" Usage="iScrollInfo.LineRight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.LineUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineUp();" />
+      <MemberSignature Language="F#" Value="abstract member LineUp : unit -&gt; unit" Usage="iScrollInfo.LineUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,6 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect MakeVisible(class System.Windows.Media.Visual visual, valuetype System.Windows.Rect rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect MakeVisible(System::Windows::Media::Visual ^ visual, System::Windows::Rect rectangle);" />
+      <MemberSignature Language="F#" Value="abstract member MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect" Usage="iScrollInfo.MakeVisible (visual, rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MouseWheelDown();" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelDown : unit -&gt; unit" Usage="iScrollInfo.MouseWheelDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -324,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelLeft ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MouseWheelLeft();" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelLeft : unit -&gt; unit" Usage="iScrollInfo.MouseWheelLeft " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -354,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelRight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MouseWheelRight();" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelRight : unit -&gt; unit" Usage="iScrollInfo.MouseWheelRight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -384,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MouseWheelUp();" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelUp : unit -&gt; unit" Usage="iScrollInfo.MouseWheelUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -414,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.PageDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageDown();" />
+      <MemberSignature Language="F#" Value="abstract member PageDown : unit -&gt; unit" Usage="iScrollInfo.PageDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -444,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.PageLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageLeft ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageLeft();" />
+      <MemberSignature Language="F#" Value="abstract member PageLeft : unit -&gt; unit" Usage="iScrollInfo.PageLeft " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.PageRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageRight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageRight();" />
+      <MemberSignature Language="F#" Value="abstract member PageRight : unit -&gt; unit" Usage="iScrollInfo.PageRight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.PageUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageUp();" />
+      <MemberSignature Language="F#" Value="abstract member PageUp : unit -&gt; unit" Usage="iScrollInfo.PageUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -534,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.ScrollOwner" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrollOwner As ScrollViewer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollViewer ^ ScrollOwner { System::Windows::Controls::ScrollViewer ^ get(); void set(System::Windows::Controls::ScrollViewer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollOwner : System.Windows.Controls.ScrollViewer with get, set" Usage="System.Windows.Controls.Primitives.IScrollInfo.ScrollOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -571,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.SetHorizontalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHorizontalOffset (offset As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHorizontalOffset(double offset);" />
+      <MemberSignature Language="F#" Value="abstract member SetHorizontalOffset : double -&gt; unit" Usage="iScrollInfo.SetHorizontalOffset offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -595,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IScrollInfo.SetVerticalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVerticalOffset (offset As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVerticalOffset(double offset);" />
+      <MemberSignature Language="F#" Value="abstract member SetVerticalOffset : double -&gt; unit" Usage="iScrollInfo.SetVerticalOffset offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -619,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -639,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -659,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IScrollInfo.ViewportWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.Primitives.IScrollInfo.ViewportWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

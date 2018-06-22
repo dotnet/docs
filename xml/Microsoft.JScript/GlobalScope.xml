@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.GlobalScope" />
   <TypeSignature Language="VB.NET" Value="Public Class GlobalScope&#xA;Inherits ActivationObject&#xA;Implements IExpando, IReflect" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlobalScope : Microsoft::JScript::ActivationObject, System::Reflection::IReflect, System::Runtime::InteropServices::Expando::IExpando" />
+  <TypeSignature Language="F#" Value="type GlobalScope = class&#xA;    inherit ActivationObject&#xA;    interface IExpando&#xA;    interface IReflect" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.#ctor(Microsoft.JScript.GlobalScope,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parent As GlobalScope, engine As VsaEngine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlobalScope(Microsoft::JScript::GlobalScope ^ parent, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.GlobalScope : Microsoft.JScript.GlobalScope * Microsoft.JScript.Vsa.VsaEngine -&gt; Microsoft.JScript.GlobalScope" Usage="new Microsoft.JScript.GlobalScope (parent, engine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.AddField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddField : string -&gt; System.Reflection.FieldInfo&#xA;override this.AddField : string -&gt; System.Reflection.FieldInfo" Usage="globalScope.AddField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetDefaultThisObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultThisObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetDefaultThisObject();" />
+      <MemberSignature Language="F#" Value="override this.GetDefaultThisObject : unit -&gt; obj" Usage="globalScope.GetDefaultThisObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetField(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetField (name As String, lexLevel As Integer) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::FieldInfo ^ GetField(System::String ^ name, int lexLevel);" />
+      <MemberSignature Language="F#" Value="override this.GetField : string * int -&gt; System.Reflection.FieldInfo" Usage="globalScope.GetField (name, lexLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetFields(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFields (bindingAttr As BindingFlags) As FieldInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="globalScope.GetFields bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetFields(System.Reflection.BindingFlags)</InterfaceMember>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetGlobalScope" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGlobalScope () As GlobalScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Microsoft::JScript::GlobalScope ^ GetGlobalScope();" />
+      <MemberSignature Language="F#" Value="override this.GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="globalScope.GetGlobalScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetLocalField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocalField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::FieldInfo ^ GetLocalField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalField : string -&gt; System.Reflection.FieldInfo" Usage="globalScope.GetLocalField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="globalScope.GetMember (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMember(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="globalScope.GetMembers bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMembers(System.Reflection.BindingFlags)</InterfaceMember>
@@ -295,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetMethods(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethods (bindingAttr As BindingFlags) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="globalScope.GetMethods bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMethods(System.Reflection.BindingFlags)</InterfaceMember>
@@ -326,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.GlobalScope.GetProperties(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (bindingAttr As BindingFlags) As PropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="globalScope.GetProperties bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetProperties(System.Reflection.BindingFlags)</InterfaceMember>

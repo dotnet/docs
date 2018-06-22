@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ActivationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivationContext&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivationContext sealed : IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ActivationContext = class&#xA;    interface IDisposable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.ApplicationManifestBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationManifestBytes As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ApplicationManifestBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManifestBytes : byte[]" Usage="System.ActivationContext.ApplicationManifestBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.CreatePartialActivationContext(System.ApplicationIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartialActivationContext (identity As ApplicationIdentity) As ActivationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static ActivationContext ^ CreatePartialActivationContext(ApplicationIdentity ^ identity);" />
+      <MemberSignature Language="F#" Value="static member CreatePartialActivationContext : ApplicationIdentity -&gt; ActivationContext" Usage="System.ActivationContext.CreatePartialActivationContext identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.CreatePartialActivationContext(System.ApplicationIdentity,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartialActivationContext (identity As ApplicationIdentity, manifestPaths As String()) As ActivationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static ActivationContext ^ CreatePartialActivationContext(ApplicationIdentity ^ identity, cli::array &lt;System::String ^&gt; ^ manifestPaths);" />
+      <MemberSignature Language="F#" Value="static member CreatePartialActivationContext : ApplicationIdentity * string[] -&gt; ActivationContext" Usage="System.ActivationContext.CreatePartialActivationContext (identity, manifestPaths)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.DeploymentManifestBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeploymentManifestBytes As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ DeploymentManifestBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeploymentManifestBytes : byte[]" Usage="System.ActivationContext.DeploymentManifestBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="activationContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ActivationContext ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="activationContext.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.Form" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As ActivationContext.ContextForm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ActivationContext::ContextForm Form { ActivationContext::ContextForm get(); };" />
+      <MemberSignature Language="F#" Value="member this.Form : ActivationContext.ContextForm" Usage="System.ActivationContext.Form" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As ApplicationIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationIdentity ^ Identity { ApplicationIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : ApplicationIdentity" Usage="System.ActivationContext.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

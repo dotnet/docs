@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerApplication&#xA;Implements IDisposable, IEquatable(Of PeerApplication), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerApplication : IDisposable, IEquatable&lt;System::Net::PeerToPeer::Collaboration::PeerApplication ^&gt;, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type PeerApplication = class&#xA;    interface IDisposable&#xA;    interface IEquatable&lt;PeerApplication&gt;&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerApplication(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.Collaboration.PeerApplication : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.PeerToPeer.Collaboration.PeerApplication" Usage="new System.Net.PeerToPeer.Collaboration.PeerApplication (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, string description, unsigned int8[] data, string path, string commandLineArgs, valuetype System.Net.PeerToPeer.Collaboration.PeerScope peerScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.#ctor(System.Guid,System.String,System.Byte[],System.String,System.String,System.Net.PeerToPeer.Collaboration.PeerScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerApplication(Guid id, System::String ^ description, cli::array &lt;System::Byte&gt; ^ data, System::String ^ path, System::String ^ commandLineArgs, System::Net::PeerToPeer::Collaboration::PeerScope peerScope);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.Collaboration.PeerApplication : Guid * string * byte[] * string * string * System.Net.PeerToPeer.Collaboration.PeerScope -&gt; System.Net.PeerToPeer.Collaboration.PeerApplication" Usage="new System.Net.PeerToPeer.Collaboration.PeerApplication (id, description, data, path, commandLineArgs, peerScope)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerApplication.ApplicationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ApplicationChanged As EventHandler(Of ApplicationChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::ApplicationChangedEventArgs ^&gt; ^ ApplicationChanged;" />
+      <MemberSignature Language="F#" Value="member this.ApplicationChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; " Usage="member this.ApplicationChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.CommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandLineArgs As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLineArgs { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLineArgs : string with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.CommandLineArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : byte[] with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="peerApplication.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="peerApplication.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.Equals(System.Net.PeerToPeer.Collaboration.PeerApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PeerApplication) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::PeerToPeer::Collaboration::PeerApplication ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.PeerToPeer.Collaboration.PeerApplication -&gt; bool" Usage="peerApplication.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -405,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="peerApplication.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -433,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (objA As Object, objB As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ objA, System::Object ^ objB);" />
+      <MemberSignature Language="F#" Value="static member Equals : obj * obj -&gt; bool" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.Equals (objA, objB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="peerApplication.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -486,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="peerApplication.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -516,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -547,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnApplicationChanged (appChangedArgs As ApplicationChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnApplicationChanged(System::Net::PeerToPeer::Collaboration::ApplicationChangedEventArgs ^ appChangedArgs);" />
+      <MemberSignature Language="F#" Value="abstract member OnApplicationChanged : System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs -&gt; unit&#xA;override this.OnApplicationChanged : System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs -&gt; unit" Usage="peerApplication.OnApplicationChanged appChangedArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -580,6 +596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -610,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.PeerScope" />
       <MemberSignature Language="VB.NET" Value="Public Property PeerScope As PeerScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerScope PeerScope { System::Net::PeerToPeer::Collaboration::PeerScope get(); void set(System::Net::PeerToPeer::Collaboration::PeerScope value); };" />
+      <MemberSignature Language="F#" Value="member this.PeerScope : System.Net.PeerToPeer.Collaboration.PeerScope with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.PeerScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -634,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplication.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Net.PeerToPeer.Collaboration.PeerApplication.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -712,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerApplication.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerApplication.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionOption" />
+  <TypeSignature Language="F#" Value="type TransactionOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 0" Usage="System.EnterpriseServices.TransactionOption.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.NotSupported" />
       <MemberSignature Language="VB.NET" Value="NotSupported" />
       <MemberSignature Language="C++ CLI" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.EnterpriseServices.TransactionOption.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 3" Usage="System.EnterpriseServices.TransactionOption.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.RequiresNew" />
       <MemberSignature Language="VB.NET" Value="RequiresNew" />
       <MemberSignature Language="C++ CLI" Value="RequiresNew" />
+      <MemberSignature Language="F#" Value="RequiresNew = 4" Usage="System.EnterpriseServices.TransactionOption.RequiresNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Supported" />
       <MemberSignature Language="VB.NET" Value="Supported" />
       <MemberSignature Language="C++ CLI" Value="Supported" />
+      <MemberSignature Language="F#" Value="Supported = 2" Usage="System.EnterpriseServices.TransactionOption.Supported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

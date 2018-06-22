@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TicketCompatibilityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TicketCompatibilityMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TicketCompatibilityMode" />
+  <TypeSignature Language="F#" Value="type TicketCompatibilityMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework20" />
       <MemberSignature Language="VB.NET" Value="Framework20" />
       <MemberSignature Language="C++ CLI" Value="Framework20" />
+      <MemberSignature Language="F#" Value="Framework20 = 0" Usage="System.Web.Configuration.TicketCompatibilityMode.Framework20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework40" />
       <MemberSignature Language="VB.NET" Value="Framework40" />
       <MemberSignature Language="C++ CLI" Value="Framework40" />
+      <MemberSignature Language="F#" Value="Framework40 = 1" Usage="System.Web.Configuration.TicketCompatibilityMode.Framework40" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

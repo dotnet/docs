@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserEncryptionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebBrowserEncryptionLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebBrowserEncryptionLevel" />
+  <TypeSignature Language="F#" Value="type WebBrowserEncryptionLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit128" />
       <MemberSignature Language="VB.NET" Value="Bit128" />
       <MemberSignature Language="C++ CLI" Value="Bit128" />
+      <MemberSignature Language="F#" Value="Bit128 = 6" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Bit128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit40" />
       <MemberSignature Language="VB.NET" Value="Bit40" />
       <MemberSignature Language="C++ CLI" Value="Bit40" />
+      <MemberSignature Language="F#" Value="Bit40 = 3" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Bit40" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit56" />
       <MemberSignature Language="VB.NET" Value="Bit56" />
       <MemberSignature Language="C++ CLI" Value="Bit56" />
+      <MemberSignature Language="F#" Value="Bit56 = 4" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Bit56" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Fortezza" />
       <MemberSignature Language="VB.NET" Value="Fortezza" />
       <MemberSignature Language="C++ CLI" Value="Fortezza" />
+      <MemberSignature Language="F#" Value="Fortezza = 5" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Fortezza" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Insecure" />
       <MemberSignature Language="VB.NET" Value="Insecure" />
       <MemberSignature Language="C++ CLI" Value="Insecure" />
+      <MemberSignature Language="F#" Value="Insecure = 0" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Insecure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Mixed" />
       <MemberSignature Language="VB.NET" Value="Mixed" />
       <MemberSignature Language="C++ CLI" Value="Mixed" />
+      <MemberSignature Language="F#" Value="Mixed = 1" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Mixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 2" Usage="System.Windows.Forms.WebBrowserEncryptionLevel.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

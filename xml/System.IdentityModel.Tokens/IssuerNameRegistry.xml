@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.IssuerNameRegistry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IssuerNameRegistry&#xA;Implements ICustomIdentityConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class IssuerNameRegistry abstract : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type IssuerNameRegistry = class&#xA;    interface ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetIssuerName(System::IdentityModel::Tokens::SecurityToken ^ securityToken);" />
+      <MemberSignature Language="F#" Value="abstract member GetIssuerName : System.IdentityModel.Tokens.SecurityToken -&gt; string" Usage="issuerNameRegistry.GetIssuerName securityToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken, string requestedIssuerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetIssuerName(System::IdentityModel::Tokens::SecurityToken ^ securityToken, System::String ^ requestedIssuerName);" />
+      <MemberSignature Language="F#" Value="abstract member GetIssuerName : System.IdentityModel.Tokens.SecurityToken * string -&gt; string&#xA;override this.GetIssuerName : System.IdentityModel.Tokens.SecurityToken * string -&gt; string" Usage="issuerNameRegistry.GetIssuerName (securityToken, requestedIssuerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetWindowsIssuerName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWindowsIssuerName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetWindowsIssuerName();" />
+      <MemberSignature Language="F#" Value="abstract member GetWindowsIssuerName : unit -&gt; string&#xA;override this.GetWindowsIssuerName : unit -&gt; string" Usage="issuerNameRegistry.GetWindowsIssuerName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="issuerNameRegistry.LoadCustomConfiguration nodelist" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>

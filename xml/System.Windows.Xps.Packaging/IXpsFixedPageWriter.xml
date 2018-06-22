@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IXpsFixedPageWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXpsFixedPageWriter&#xA;Implements IStoryFragmentProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXpsFixedPageWriter : System::Windows::Xps::Packaging::IStoryFragmentProvider" />
+  <TypeSignature Language="F#" Value="type IXpsFixedPageWriter = interface&#xA;    interface IStoryFragmentProvider" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext" />
       <MemberSignature Language="VB.NET" Value="Public Function AddColorContext () As XpsColorContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsColorContext ^ AddColorContext();" />
+      <MemberSignature Language="F#" Value="abstract member AddColorContext : unit -&gt; System.Windows.Xps.Packaging.XpsColorContext" Usage="iXpsFixedPageWriter.AddColorContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFont () As XpsFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsFont ^ AddFont();" />
+      <MemberSignature Language="F#" Value="abstract member AddFont : unit -&gt; System.Windows.Xps.Packaging.XpsFont" Usage="iXpsFixedPageWriter.AddFont " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFont (obfuscate As Boolean) As XpsFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsFont ^ AddFont(bool obfuscate);" />
+      <MemberSignature Language="F#" Value="abstract member AddFont : bool -&gt; System.Windows.Xps.Packaging.XpsFont" Usage="iXpsFixedPageWriter.AddFont obfuscate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFont (obfuscate As Boolean, addRestrictedRelationship As Boolean) As XpsFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsFont ^ AddFont(bool obfuscate, bool addRestrictedRelationship);" />
+      <MemberSignature Language="F#" Value="abstract member AddFont : bool * bool -&gt; System.Windows.Xps.Packaging.XpsFont" Usage="iXpsFixedPageWriter.AddFont (obfuscate, addRestrictedRelationship)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddImage (mimeType As String) As XpsImage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsImage ^ AddImage(System::String ^ mimeType);" />
+      <MemberSignature Language="F#" Value="abstract member AddImage : string -&gt; System.Windows.Xps.Packaging.XpsImage" Usage="iXpsFixedPageWriter.AddImage mimeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -310,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage(System.Windows.Xps.Packaging.XpsImageType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddImage (imageType As XpsImageType) As XpsImage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsImage ^ AddImage(System::Windows::Xps::Packaging::XpsImageType imageType);" />
+      <MemberSignature Language="F#" Value="abstract member AddImage : System.Windows.Xps.Packaging.XpsImageType -&gt; System.Windows.Xps.Packaging.XpsImage" Usage="iXpsFixedPageWriter.AddImage imageType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource(System.Type,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddResource (resourceType As Type, resourceUri As Uri) As XpsResource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsResource ^ AddResource(Type ^ resourceType, Uri ^ resourceUri);" />
+      <MemberSignature Language="F#" Value="abstract member AddResource : Type * Uri -&gt; System.Windows.Xps.Packaging.XpsResource" Usage="iXpsFixedPageWriter.AddResource (resourceType, resourceUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -397,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Function AddResourceDictionary () As XpsResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsResourceDictionary ^ AddResourceDictionary();" />
+      <MemberSignature Language="F#" Value="abstract member AddResourceDictionary : unit -&gt; System.Windows.Xps.Packaging.XpsResourceDictionary" Usage="iXpsFixedPageWriter.AddResourceDictionary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -428,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddThumbnail (imageType As XpsImageType) As XpsThumbnail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsThumbnail ^ AddThumbnail(System::Windows::Xps::Packaging::XpsImageType imageType);" />
+      <MemberSignature Language="F#" Value="abstract member AddThumbnail : System.Windows.Xps.Packaging.XpsImageType -&gt; System.Windows.Xps.Packaging.XpsThumbnail" Usage="iXpsFixedPageWriter.AddThumbnail imageType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -468,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberSignature Language="F#" Value="abstract member Commit : unit -&gt; unit" Usage="iXpsFixedPageWriter.Commit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -504,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.LinkTargetStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkTargetStream As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ LinkTargetStream { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkTargetStream : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Windows.Xps.Packaging.IXpsFixedPageWriter.LinkTargetStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -533,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int" Usage="System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -560,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintTicket As PrintTicket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ PrintTicket {  void set(System::Printing::PrintTicket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintTicket : System.Printing.PrintTicket" Usage="System.Windows.Xps.Packaging.IXpsFixedPageWriter.PrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -580,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Xps.Packaging.IXpsFixedPageWriter.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -600,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.XmlWriter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlWriter As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlWriter ^ XmlWriter { System::Xml::XmlWriter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlWriter : System.Xml.XmlWriter" Usage="System.Windows.Xps.Packaging.IXpsFixedPageWriter.XmlWriter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberBinding" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberBinding abstract" />
+  <TypeSignature Language="F#" Value="type MemberBinding = class" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberBinding.#ctor(System.Linq.Expressions.MemberBindingType,System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (type As MemberBindingType, member As MemberInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberBinding(System::Linq::Expressions::MemberBindingType type, System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="new System.Linq.Expressions.MemberBinding : System.Linq.Expressions.MemberBindingType * System.Reflection.MemberInfo -&gt; System.Linq.Expressions.MemberBinding" Usage="new System.Linq.Expressions.MemberBinding (type, member)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberBinding.BindingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingType As MemberBindingType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::MemberBindingType BindingType { System::Linq::Expressions::MemberBindingType get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingType : System.Linq.Expressions.MemberBindingType" Usage="System.Linq.Expressions.MemberBinding.BindingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberBinding.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ Member { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Reflection.MemberInfo" Usage="System.Linq.Expressions.MemberBinding.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberBinding.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="memberBinding.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

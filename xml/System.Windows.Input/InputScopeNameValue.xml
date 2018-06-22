@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopeNameValue" />
   <TypeSignature Language="VB.NET" Value="Public Enum InputScopeNameValue" />
   <TypeSignature Language="C++ CLI" Value="public enum class InputScopeNameValue" />
+  <TypeSignature Language="F#" Value="type InputScopeNameValue = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AddressCity" />
       <MemberSignature Language="VB.NET" Value="AddressCity" />
       <MemberSignature Language="C++ CLI" Value="AddressCity" />
+      <MemberSignature Language="F#" Value="AddressCity = 17" Usage="System.Windows.Input.InputScopeNameValue.AddressCity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AddressCountryName" />
       <MemberSignature Language="VB.NET" Value="AddressCountryName" />
       <MemberSignature Language="C++ CLI" Value="AddressCountryName" />
+      <MemberSignature Language="F#" Value="AddressCountryName = 18" Usage="System.Windows.Input.InputScopeNameValue.AddressCountryName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AddressCountryShortName" />
       <MemberSignature Language="VB.NET" Value="AddressCountryShortName" />
       <MemberSignature Language="C++ CLI" Value="AddressCountryShortName" />
+      <MemberSignature Language="F#" Value="AddressCountryShortName = 19" Usage="System.Windows.Input.InputScopeNameValue.AddressCountryShortName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AddressStateOrProvince" />
       <MemberSignature Language="VB.NET" Value="AddressStateOrProvince" />
       <MemberSignature Language="C++ CLI" Value="AddressStateOrProvince" />
+      <MemberSignature Language="F#" Value="AddressStateOrProvince = 16" Usage="System.Windows.Input.InputScopeNameValue.AddressStateOrProvince" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AddressStreet" />
       <MemberSignature Language="VB.NET" Value="AddressStreet" />
       <MemberSignature Language="C++ CLI" Value="AddressStreet" />
+      <MemberSignature Language="F#" Value="AddressStreet = 15" Usage="System.Windows.Input.InputScopeNameValue.AddressStreet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AlphanumericFullWidth" />
       <MemberSignature Language="VB.NET" Value="AlphanumericFullWidth" />
       <MemberSignature Language="C++ CLI" Value="AlphanumericFullWidth" />
+      <MemberSignature Language="F#" Value="AlphanumericFullWidth = 41" Usage="System.Windows.Input.InputScopeNameValue.AlphanumericFullWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.AlphanumericHalfWidth" />
       <MemberSignature Language="VB.NET" Value="AlphanumericHalfWidth" />
       <MemberSignature Language="C++ CLI" Value="AlphanumericHalfWidth" />
+      <MemberSignature Language="F#" Value="AlphanumericHalfWidth = 40" Usage="System.Windows.Input.InputScopeNameValue.AlphanumericHalfWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Bopomofo" />
       <MemberSignature Language="VB.NET" Value="Bopomofo" />
       <MemberSignature Language="C++ CLI" Value="Bopomofo" />
+      <MemberSignature Language="F#" Value="Bopomofo = 43" Usage="System.Windows.Input.InputScopeNameValue.Bopomofo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -182,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.CurrencyAmount" />
       <MemberSignature Language="VB.NET" Value="CurrencyAmount" />
       <MemberSignature Language="C++ CLI" Value="CurrencyAmount" />
+      <MemberSignature Language="F#" Value="CurrencyAmount = 21" Usage="System.Windows.Input.InputScopeNameValue.CurrencyAmount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -201,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.CurrencyAmountAndSymbol" />
       <MemberSignature Language="VB.NET" Value="CurrencyAmountAndSymbol" />
       <MemberSignature Language="C++ CLI" Value="CurrencyAmountAndSymbol" />
+      <MemberSignature Language="F#" Value="CurrencyAmountAndSymbol = 20" Usage="System.Windows.Input.InputScopeNameValue.CurrencyAmountAndSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.CurrencyChinese" />
       <MemberSignature Language="VB.NET" Value="CurrencyChinese" />
       <MemberSignature Language="C++ CLI" Value="CurrencyChinese" />
+      <MemberSignature Language="F#" Value="CurrencyChinese = 42" Usage="System.Windows.Input.InputScopeNameValue.CurrencyChinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 22" Usage="System.Windows.Input.InputScopeNameValue.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.DateDay" />
       <MemberSignature Language="VB.NET" Value="DateDay" />
       <MemberSignature Language="C++ CLI" Value="DateDay" />
+      <MemberSignature Language="F#" Value="DateDay = 24" Usage="System.Windows.Input.InputScopeNameValue.DateDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -277,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.DateDayName" />
       <MemberSignature Language="VB.NET" Value="DateDayName" />
       <MemberSignature Language="C++ CLI" Value="DateDayName" />
+      <MemberSignature Language="F#" Value="DateDayName = 27" Usage="System.Windows.Input.InputScopeNameValue.DateDayName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -296,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.DateMonth" />
       <MemberSignature Language="VB.NET" Value="DateMonth" />
       <MemberSignature Language="C++ CLI" Value="DateMonth" />
+      <MemberSignature Language="F#" Value="DateMonth = 23" Usage="System.Windows.Input.InputScopeNameValue.DateMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -315,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.DateMonthName" />
       <MemberSignature Language="VB.NET" Value="DateMonthName" />
       <MemberSignature Language="C++ CLI" Value="DateMonthName" />
+      <MemberSignature Language="F#" Value="DateMonthName = 26" Usage="System.Windows.Input.InputScopeNameValue.DateMonthName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -334,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.DateYear" />
       <MemberSignature Language="VB.NET" Value="DateYear" />
       <MemberSignature Language="C++ CLI" Value="DateYear" />
+      <MemberSignature Language="F#" Value="DateYear = 25" Usage="System.Windows.Input.InputScopeNameValue.DateYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Input.InputScopeNameValue.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -372,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Digits" />
       <MemberSignature Language="VB.NET" Value="Digits" />
       <MemberSignature Language="C++ CLI" Value="Digits" />
+      <MemberSignature Language="F#" Value="Digits = 28" Usage="System.Windows.Input.InputScopeNameValue.Digits" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -391,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.EmailSmtpAddress" />
       <MemberSignature Language="VB.NET" Value="EmailSmtpAddress" />
       <MemberSignature Language="C++ CLI" Value="EmailSmtpAddress" />
+      <MemberSignature Language="F#" Value="EmailSmtpAddress = 5" Usage="System.Windows.Input.InputScopeNameValue.EmailSmtpAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +431,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.EmailUserName" />
       <MemberSignature Language="VB.NET" Value="EmailUserName" />
       <MemberSignature Language="C++ CLI" Value="EmailUserName" />
+      <MemberSignature Language="F#" Value="EmailUserName = 4" Usage="System.Windows.Input.InputScopeNameValue.EmailUserName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -429,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.FileName" />
       <MemberSignature Language="VB.NET" Value="FileName" />
       <MemberSignature Language="C++ CLI" Value="FileName" />
+      <MemberSignature Language="F#" Value="FileName = 3" Usage="System.Windows.Input.InputScopeNameValue.FileName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -448,6 +471,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.FullFilePath" />
       <MemberSignature Language="VB.NET" Value="FullFilePath" />
       <MemberSignature Language="C++ CLI" Value="FullFilePath" />
+      <MemberSignature Language="F#" Value="FullFilePath = 2" Usage="System.Windows.Input.InputScopeNameValue.FullFilePath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -467,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Hanja" />
       <MemberSignature Language="VB.NET" Value="Hanja" />
       <MemberSignature Language="C++ CLI" Value="Hanja" />
+      <MemberSignature Language="F#" Value="Hanja = 47" Usage="System.Windows.Input.InputScopeNameValue.Hanja" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -486,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Hiragana" />
       <MemberSignature Language="VB.NET" Value="Hiragana" />
       <MemberSignature Language="C++ CLI" Value="Hiragana" />
+      <MemberSignature Language="F#" Value="Hiragana = 44" Usage="System.Windows.Input.InputScopeNameValue.Hiragana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.KatakanaFullWidth" />
       <MemberSignature Language="VB.NET" Value="KatakanaFullWidth" />
       <MemberSignature Language="C++ CLI" Value="KatakanaFullWidth" />
+      <MemberSignature Language="F#" Value="KatakanaFullWidth = 46" Usage="System.Windows.Input.InputScopeNameValue.KatakanaFullWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -524,6 +551,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.KatakanaHalfWidth" />
       <MemberSignature Language="VB.NET" Value="KatakanaHalfWidth" />
       <MemberSignature Language="C++ CLI" Value="KatakanaHalfWidth" />
+      <MemberSignature Language="F#" Value="KatakanaHalfWidth = 45" Usage="System.Windows.Input.InputScopeNameValue.KatakanaHalfWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -543,6 +571,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.LogOnName" />
       <MemberSignature Language="VB.NET" Value="LogOnName" />
       <MemberSignature Language="C++ CLI" Value="LogOnName" />
+      <MemberSignature Language="F#" Value="LogOnName = 6" Usage="System.Windows.Input.InputScopeNameValue.LogOnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -562,6 +591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
       <MemberSignature Language="C++ CLI" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 29" Usage="System.Windows.Input.InputScopeNameValue.Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -581,6 +611,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.NumberFullWidth" />
       <MemberSignature Language="VB.NET" Value="NumberFullWidth" />
       <MemberSignature Language="C++ CLI" Value="NumberFullWidth" />
+      <MemberSignature Language="F#" Value="NumberFullWidth = 39" Usage="System.Windows.Input.InputScopeNameValue.NumberFullWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -600,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.OneChar" />
       <MemberSignature Language="VB.NET" Value="OneChar" />
       <MemberSignature Language="C++ CLI" Value="OneChar" />
+      <MemberSignature Language="F#" Value="OneChar = 30" Usage="System.Windows.Input.InputScopeNameValue.OneChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -619,6 +651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Password" />
       <MemberSignature Language="VB.NET" Value="Password" />
       <MemberSignature Language="C++ CLI" Value="Password" />
+      <MemberSignature Language="F#" Value="Password = 31" Usage="System.Windows.Input.InputScopeNameValue.Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -638,6 +671,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalFullName" />
       <MemberSignature Language="VB.NET" Value="PersonalFullName" />
       <MemberSignature Language="C++ CLI" Value="PersonalFullName" />
+      <MemberSignature Language="F#" Value="PersonalFullName = 7" Usage="System.Windows.Input.InputScopeNameValue.PersonalFullName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -657,6 +691,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalGivenName" />
       <MemberSignature Language="VB.NET" Value="PersonalGivenName" />
       <MemberSignature Language="C++ CLI" Value="PersonalGivenName" />
+      <MemberSignature Language="F#" Value="PersonalGivenName = 9" Usage="System.Windows.Input.InputScopeNameValue.PersonalGivenName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -676,6 +711,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalMiddleName" />
       <MemberSignature Language="VB.NET" Value="PersonalMiddleName" />
       <MemberSignature Language="C++ CLI" Value="PersonalMiddleName" />
+      <MemberSignature Language="F#" Value="PersonalMiddleName = 10" Usage="System.Windows.Input.InputScopeNameValue.PersonalMiddleName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -695,6 +731,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalNamePrefix" />
       <MemberSignature Language="VB.NET" Value="PersonalNamePrefix" />
       <MemberSignature Language="C++ CLI" Value="PersonalNamePrefix" />
+      <MemberSignature Language="F#" Value="PersonalNamePrefix = 8" Usage="System.Windows.Input.InputScopeNameValue.PersonalNamePrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -714,6 +751,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalNameSuffix" />
       <MemberSignature Language="VB.NET" Value="PersonalNameSuffix" />
       <MemberSignature Language="C++ CLI" Value="PersonalNameSuffix" />
+      <MemberSignature Language="F#" Value="PersonalNameSuffix = 12" Usage="System.Windows.Input.InputScopeNameValue.PersonalNameSuffix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -733,6 +771,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PersonalSurname" />
       <MemberSignature Language="VB.NET" Value="PersonalSurname" />
       <MemberSignature Language="C++ CLI" Value="PersonalSurname" />
+      <MemberSignature Language="F#" Value="PersonalSurname = 11" Usage="System.Windows.Input.InputScopeNameValue.PersonalSurname" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -752,6 +791,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PhraseList" />
       <MemberSignature Language="VB.NET" Value="PhraseList" />
       <MemberSignature Language="C++ CLI" Value="PhraseList" />
+      <MemberSignature Language="F#" Value="PhraseList = -1" Usage="System.Windows.Input.InputScopeNameValue.PhraseList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -771,6 +811,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PostalAddress" />
       <MemberSignature Language="VB.NET" Value="PostalAddress" />
       <MemberSignature Language="C++ CLI" Value="PostalAddress" />
+      <MemberSignature Language="F#" Value="PostalAddress = 13" Usage="System.Windows.Input.InputScopeNameValue.PostalAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -790,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.PostalCode" />
       <MemberSignature Language="VB.NET" Value="PostalCode" />
       <MemberSignature Language="C++ CLI" Value="PostalCode" />
+      <MemberSignature Language="F#" Value="PostalCode = 14" Usage="System.Windows.Input.InputScopeNameValue.PostalCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -809,6 +851,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.RegularExpression" />
       <MemberSignature Language="VB.NET" Value="RegularExpression" />
       <MemberSignature Language="C++ CLI" Value="RegularExpression" />
+      <MemberSignature Language="F#" Value="RegularExpression = -2" Usage="System.Windows.Input.InputScopeNameValue.RegularExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -828,6 +871,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Srgs" />
       <MemberSignature Language="VB.NET" Value="Srgs" />
       <MemberSignature Language="C++ CLI" Value="Srgs" />
+      <MemberSignature Language="F#" Value="Srgs = -3" Usage="System.Windows.Input.InputScopeNameValue.Srgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -847,6 +891,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TelephoneAreaCode" />
       <MemberSignature Language="VB.NET" Value="TelephoneAreaCode" />
       <MemberSignature Language="C++ CLI" Value="TelephoneAreaCode" />
+      <MemberSignature Language="F#" Value="TelephoneAreaCode = 34" Usage="System.Windows.Input.InputScopeNameValue.TelephoneAreaCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -866,6 +911,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TelephoneCountryCode" />
       <MemberSignature Language="VB.NET" Value="TelephoneCountryCode" />
       <MemberSignature Language="C++ CLI" Value="TelephoneCountryCode" />
+      <MemberSignature Language="F#" Value="TelephoneCountryCode = 33" Usage="System.Windows.Input.InputScopeNameValue.TelephoneCountryCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -885,6 +931,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TelephoneLocalNumber" />
       <MemberSignature Language="VB.NET" Value="TelephoneLocalNumber" />
       <MemberSignature Language="C++ CLI" Value="TelephoneLocalNumber" />
+      <MemberSignature Language="F#" Value="TelephoneLocalNumber = 35" Usage="System.Windows.Input.InputScopeNameValue.TelephoneLocalNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -904,6 +951,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TelephoneNumber" />
       <MemberSignature Language="VB.NET" Value="TelephoneNumber" />
       <MemberSignature Language="C++ CLI" Value="TelephoneNumber" />
+      <MemberSignature Language="F#" Value="TelephoneNumber = 32" Usage="System.Windows.Input.InputScopeNameValue.TelephoneNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -923,6 +971,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="C++ CLI" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 36" Usage="System.Windows.Input.InputScopeNameValue.Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -942,6 +991,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TimeHour" />
       <MemberSignature Language="VB.NET" Value="TimeHour" />
       <MemberSignature Language="C++ CLI" Value="TimeHour" />
+      <MemberSignature Language="F#" Value="TimeHour = 37" Usage="System.Windows.Input.InputScopeNameValue.TimeHour" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -961,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.TimeMinorSec" />
       <MemberSignature Language="VB.NET" Value="TimeMinorSec" />
       <MemberSignature Language="C++ CLI" Value="TimeMinorSec" />
+      <MemberSignature Language="F#" Value="TimeMinorSec = 38" Usage="System.Windows.Input.InputScopeNameValue.TimeMinorSec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -980,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Url" />
       <MemberSignature Language="VB.NET" Value="Url" />
       <MemberSignature Language="C++ CLI" Value="Url" />
+      <MemberSignature Language="F#" Value="Url = 1" Usage="System.Windows.Input.InputScopeNameValue.Url" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -999,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputScopeNameValue.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = -4" Usage="System.Windows.Input.InputScopeNameValue.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

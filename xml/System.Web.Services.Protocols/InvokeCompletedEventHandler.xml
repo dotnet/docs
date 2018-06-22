@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.InvokeCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InvokeCompletedEventHandler(sender As Object, e As InvokeCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InvokeCompletedEventHandler(System::Object ^ sender, InvokeCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InvokeCompletedEventHandler = delegate of obj * InvokeCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

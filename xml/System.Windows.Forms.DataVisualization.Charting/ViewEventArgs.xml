@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ViewEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewEventArgs(System::Windows::Forms::DataVisualization::Charting::Axis ^ axis, double newPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ViewEventArgs : System.Windows.Forms.DataVisualization.Charting.Axis * double -&gt; System.Windows.Forms.DataVisualization.Charting.ViewEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.ViewEventArgs (axis, newPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newPosition, float64 newSize, valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType newSizeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Double,System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewEventArgs(System::Windows::Forms::DataVisualization::Charting::Axis ^ axis, double newPosition, double newSize, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType newSizeType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ViewEventArgs : System.Windows.Forms.DataVisualization.Charting.Axis * double * double * System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType -&gt; System.Windows.Forms.DataVisualization.Charting.ViewEventArgs" Usage="new System.Windows.Forms.DataVisualization.Charting.ViewEventArgs (axis, newPosition, newSize, newSizeType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.Axis" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Axis As Axis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Axis ^ Axis { System::Windows::Forms::DataVisualization::Charting::Axis ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Axis : System.Windows.Forms.DataVisualization.Charting.Axis" Usage="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.Axis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartArea ^ ChartArea { System::Windows::Forms::DataVisualization::Charting::ChartArea ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : System.Windows.Forms.DataVisualization.Charting.ChartArea" Usage="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property NewPosition As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewPosition { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.NewPosition : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize" />
       <MemberSignature Language="VB.NET" Value="Public Property NewSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.NewSize : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSizeType" />
       <MemberSignature Language="VB.NET" Value="Public Property NewSizeType As DateTimeIntervalType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType NewSizeType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
+      <MemberSignature Language="F#" Value="member this.NewSizeType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSizeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

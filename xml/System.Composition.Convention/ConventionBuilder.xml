@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ConventionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ConventionBuilder&#xA;Inherits AttributedModelProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConventionBuilder : System::Composition::Convention::AttributedModelProvider" />
+  <TypeSignature Language="F#" Value="type ConventionBuilder = class&#xA;    inherit AttributedModelProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Convention</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder ForType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ForType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ForType : Type -&gt; System.Composition.Convention.PartConventionBuilder" Usage="conventionBuilder.ForType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForType``1" />
       <MemberSignature Language="VB.NET" Value="Public Function ForType(Of T) () As PartConventionBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder&lt;T&gt; ^ ForType();" />
+      <MemberSignature Language="F#" Value="member this.ForType : unit -&gt; System.Composition.Convention.PartConventionBuilder&lt;'T&gt;" Usage="conventionBuilder.ForType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder ForTypesDerivedFrom(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesDerivedFrom(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ForTypesDerivedFrom(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesDerivedFrom : Type -&gt; System.Composition.Convention.PartConventionBuilder" Usage="conventionBuilder.ForTypesDerivedFrom type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesDerivedFrom``1" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesDerivedFrom(Of T) () As PartConventionBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder&lt;T&gt; ^ ForTypesDerivedFrom();" />
+      <MemberSignature Language="F#" Value="member this.ForTypesDerivedFrom : unit -&gt; System.Composition.Convention.PartConventionBuilder&lt;'T&gt;" Usage="conventionBuilder.ForTypesDerivedFrom " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesMatching(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesMatching (typeFilter As Predicate(Of Type)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ForTypesMatching(Predicate&lt;Type ^&gt; ^ typeFilter);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesMatching : Predicate&lt;Type&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="conventionBuilder.ForTypesMatching typeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesMatching``1(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ForTypesMatching(Of T) (typeFilter As Predicate(Of Type)) As PartConventionBuilder(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder&lt;T&gt; ^ ForTypesMatching(Predicate&lt;Type ^&gt; ^ typeFilter);" />
+      <MemberSignature Language="F#" Value="member this.ForTypesMatching : Predicate&lt;Type&gt; -&gt; System.Composition.Convention.PartConventionBuilder&lt;'T&gt;" Usage="conventionBuilder.ForTypesMatching typeFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (reflectedType As Type, member As MemberInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(Type ^ reflectedType, System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * System.Reflection.MemberInfo -&gt; seq&lt;Attribute&gt;" Usage="conventionBuilder.GetCustomAttributes (reflectedType, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.GetCustomAttributes(System.Type,System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (reflectedType As Type, parameter As ParameterInfo) As IEnumerable(Of Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;Attribute ^&gt; ^ GetCustomAttributes(Type ^ reflectedType, System::Reflection::ParameterInfo ^ parameter);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * System.Reflection.ParameterInfo -&gt; seq&lt;Attribute&gt;" Usage="conventionBuilder.GetCustomAttributes (reflectedType, parameter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>

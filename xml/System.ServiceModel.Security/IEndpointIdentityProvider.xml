@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IEndpointIdentityProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEndpointIdentityProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEndpointIdentityProvider" />
+  <TypeSignature Language="F#" Value="type IEndpointIdentityProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IEndpointIdentityProvider.GetIdentityOfSelf(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIdentityOfSelf (tokenRequirement As SecurityTokenRequirement) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointIdentity ^ GetIdentityOfSelf(System::IdentityModel::Selectors::SecurityTokenRequirement ^ tokenRequirement);" />
+      <MemberSignature Language="F#" Value="abstract member GetIdentityOfSelf : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.ServiceModel.EndpointIdentity" Usage="iEndpointIdentityProvider.GetIdentityOfSelf tokenRequirement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Class Bookmark&#xA;Implements IEquatable(Of Bookmark)" />
   <TypeSignature Language="C++ CLI" Value="public ref class Bookmark : IEquatable&lt;System::Activities::Bookmark ^&gt;" />
+  <TypeSignature Language="F#" Value="type Bookmark = class&#xA;    interface IEquatable&lt;Bookmark&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +141,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Bookmark(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Bookmark : string -&gt; System.Activities.Bookmark" Usage="new System.Activities.Bookmark name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -169,6 +171,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.Equals(System.Activities.Bookmark)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Bookmark) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Activities::Bookmark ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Activities.Bookmark -&gt; bool" Usage="bookmark.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -197,6 +200,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bookmark.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -222,6 +226,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bookmark.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -243,6 +248,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="P:System.Activities.Bookmark.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.Bookmark.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -263,6 +269,7 @@ syncEvent.WaitOne();
       <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="bookmark.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

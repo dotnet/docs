@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileDialogPermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileDialogPermissionAccess" />
+  <TypeSignature Language="F#" Value="type FileDialogPermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.FileDialogPermissionAccess.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Open" />
       <MemberSignature Language="VB.NET" Value="Open" />
       <MemberSignature Language="C++ CLI" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 1" Usage="System.Security.Permissions.FileDialogPermissionAccess.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.OpenSave" />
       <MemberSignature Language="VB.NET" Value="OpenSave" />
       <MemberSignature Language="C++ CLI" Value="OpenSave" />
+      <MemberSignature Language="F#" Value="OpenSave = 3" Usage="System.Security.Permissions.FileDialogPermissionAccess.OpenSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Save" />
       <MemberSignature Language="VB.NET" Value="Save" />
       <MemberSignature Language="C++ CLI" Value="Save" />
+      <MemberSignature Language="F#" Value="Save = 2" Usage="System.Security.Permissions.FileDialogPermissionAccess.Save" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownCloseReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripDropDownCloseReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripDropDownCloseReason" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownCloseReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownCloseReason.AppClicked" />
       <MemberSignature Language="VB.NET" Value="AppClicked" />
       <MemberSignature Language="C++ CLI" Value="AppClicked" />
+      <MemberSignature Language="F#" Value="AppClicked = 1" Usage="System.Windows.Forms.ToolStripDropDownCloseReason.AppClicked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownCloseReason.AppFocusChange" />
       <MemberSignature Language="VB.NET" Value="AppFocusChange" />
       <MemberSignature Language="C++ CLI" Value="AppFocusChange" />
+      <MemberSignature Language="F#" Value="AppFocusChange = 0" Usage="System.Windows.Forms.ToolStripDropDownCloseReason.AppFocusChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownCloseReason.CloseCalled" />
       <MemberSignature Language="VB.NET" Value="CloseCalled" />
       <MemberSignature Language="C++ CLI" Value="CloseCalled" />
+      <MemberSignature Language="F#" Value="CloseCalled = 4" Usage="System.Windows.Forms.ToolStripDropDownCloseReason.CloseCalled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownCloseReason.ItemClicked" />
       <MemberSignature Language="VB.NET" Value="ItemClicked" />
       <MemberSignature Language="C++ CLI" Value="ItemClicked" />
+      <MemberSignature Language="F#" Value="ItemClicked = 2" Usage="System.Windows.Forms.ToolStripDropDownCloseReason.ItemClicked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripDropDownCloseReason.Keyboard" />
       <MemberSignature Language="VB.NET" Value="Keyboard" />
       <MemberSignature Language="C++ CLI" Value="Keyboard" />
+      <MemberSignature Language="F#" Value="Keyboard = 3" Usage="System.Windows.Forms.ToolStripDropDownCloseReason.Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

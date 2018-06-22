@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2SecurityKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2SecurityKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type Saml2SecurityKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause.#ctor(System.IdentityModel.Tokens.Saml2Assertion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assertion As Saml2Assertion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SecurityKeyIdentifierClause(System::IdentityModel::Tokens::Saml2Assertion ^ assertion);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause : System.IdentityModel.Tokens.Saml2Assertion -&gt; System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause assertion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause.Assertion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assertion As Saml2Assertion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Assertion ^ Assertion { System::IdentityModel::Tokens::Saml2Assertion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assertion : System.IdentityModel.Tokens.Saml2Assertion" Usage="System.IdentityModel.Tokens.Saml2SecurityKeyIdentifierClause.Assertion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

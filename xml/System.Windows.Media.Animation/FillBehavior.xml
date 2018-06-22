@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.FillBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum FillBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class FillBehavior" />
+  <TypeSignature Language="F#" Value="type FillBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.FillBehavior.HoldEnd" />
       <MemberSignature Language="VB.NET" Value="HoldEnd" />
       <MemberSignature Language="C++ CLI" Value="HoldEnd" />
+      <MemberSignature Language="F#" Value="HoldEnd = 0" Usage="System.Windows.Media.Animation.FillBehavior.HoldEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.FillBehavior.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 1" Usage="System.Windows.Media.Animation.FillBehavior.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

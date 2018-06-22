@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerRandomAccessIterator(Of TValue)&#xA;Implements IRandomAccessIterator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class ContainerRandomAccessIterator : Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type ContainerRandomAccessIterator&lt;'Value&gt; = class&#xA;    interface IRandomAccessIterator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer{`0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Cont As IRandomAccessContainer(Of TValue), _Offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainerRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::IRandomAccessContainer&lt;TValue&gt; ^ _Cont, int _Offset);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;'Value&gt; * int -&gt; Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt; (_Cont, _Offset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="containerRandomAccessIterator.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.container" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function container () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ container();" />
+      <MemberSignature Language="F#" Value="abstract member container : unit -&gt; obj&#xA;override this.container : unit -&gt; obj" Usage="containerRandomAccessIterator.container " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function distance (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int distance(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member distance : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int&#xA;override this.distance : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="containerRandomAccessIterator.distance _Right" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})</InterfaceMember>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function equal_to (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool equal_to(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool&#xA;override this.equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.equal_to _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -261,12 +267,101 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="get_bias">
+      <MemberSignature Language="C#" Value="public virtual int get_bias ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 get_bias() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.get_bias" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function get_bias () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int get_bias();" />
+      <MemberSignature Language="F#" Value="abstract member get_bias : unit -&gt; int&#xA;override this.get_bias : unit -&gt; int" Usage="containerRandomAccessIterator.get_bias " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get_cref">
+      <MemberSignature Language="C#" Value="public virtual TValue get_cref ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_cref() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.get_cref" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function get_cref () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TValue % get_cref();" />
+      <MemberSignature Language="F#" Value="abstract member get_cref : unit -&gt; &#xA;override this.get_cref : unit -&gt; " Usage="containerRandomAccessIterator.get_cref " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get_node">
+      <MemberSignature Language="C#" Value="public virtual object get_node ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object get_node() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.get_node" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function get_node () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ get_node();" />
+      <MemberSignature Language="F#" Value="abstract member get_node : unit -&gt; obj&#xA;override this.get_node : unit -&gt; obj" Usage="containerRandomAccessIterator.get_node " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get_ref">
+      <MemberSignature Language="C#" Value="public virtual TValue get_ref ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_ref() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.get_ref" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function get_ref () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TValue % get_ref();" />
+      <MemberSignature Language="F#" Value="abstract member get_ref : unit -&gt; &#xA;override this.get_ref : unit -&gt; " Usage="containerRandomAccessIterator.get_ref " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public TValue this[int _Pos] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(_Pos As Integer) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[int] { TValue get(int _Pos); void set(int _Pos, TValue value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;'Value&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -325,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function less_than (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool less_than(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member less_than : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool&#xA;override this.less_than : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.less_than _Right" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})</InterfaceMember>
@@ -353,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.move(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function move (_Offset As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int move(int _Offset);" />
+      <MemberSignature Language="F#" Value="abstract member move : int -&gt; int&#xA;override this.move : int -&gt; int" Usage="containerRandomAccessIterator.move _Offset" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.move(System.Int32)</InterfaceMember>
@@ -380,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.next" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub next ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void next();" />
+      <MemberSignature Language="F#" Value="abstract member next : unit -&gt; unit&#xA;override this.next : unit -&gt; unit" Usage="containerRandomAccessIterator.next " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -405,10 +503,11 @@
     </MemberGroup>
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public void operator + (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator + (ByRef  As ContainerRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator +(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />
+      <MemberSignature Language="F#" Value="member this.( + ) :  * int -&gt; unit" Usage=" + _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -497,10 +596,11 @@
     </MemberGroup>
     <Member MemberName="op_Decrement">
       <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="member this.op_Decrement :  -&gt; unit" Usage="containerRandomAccessIterator.op_Decrement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -521,10 +621,11 @@
     </Member>
     <Member MemberName="op_Decrement">
       <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ContainerRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
+      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="containerRandomAccessIterator.op_Decrement (, A_0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -590,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -728,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThanOrEqual(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator &gt;= (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;=(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &gt;= ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&gt;= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -753,6 +856,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Implicit~Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Widening Operator CType () As IRandomAccessIterator(Of TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; operator Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^();" />
+      <MemberSignature Language="F#" Value="member this.op_Implicit : unit -&gt; Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt;" Usage="containerRandomAccessIterator.op_Implicit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -779,10 +883,11 @@
     </MemberGroup>
     <Member MemberName="op_Increment">
       <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
+      <MemberSignature Language="F#" Value="member this.op_Increment :  -&gt; unit" Usage="containerRandomAccessIterator.op_Increment " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -803,10 +908,11 @@
     </Member>
     <Member MemberName="op_Increment">
       <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ContainerRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
+      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="containerRandomAccessIterator.op_Increment (, A_0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -867,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="containerRandomAccessIterator.op_Inequality _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -931,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThan(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator &lt; (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( &lt; ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="&lt; _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1100,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator - (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int operator -(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( - ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="- _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1125,10 +1234,11 @@
     </Member>
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public void operator - (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator - (ByRef  As ContainerRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator -(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />
+      <MemberSignature Language="F#" Value="member this.( - ) :  * int -&gt; unit" Usage=" - _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1155,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.prev" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub prev ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void prev();" />
+      <MemberSignature Language="F#" Value="abstract member prev : unit -&gt; unit&#xA;override this.prev : unit -&gt; unit" Usage="containerRandomAccessIterator.prev " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1175,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.valid" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function valid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool valid();" />
+      <MemberSignature Language="F#" Value="abstract member valid : unit -&gt; bool&#xA;override this.valid : unit -&gt; bool" Usage="containerRandomAccessIterator.valid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

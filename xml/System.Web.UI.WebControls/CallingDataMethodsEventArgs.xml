@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CallingDataMethodsEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CallingDataMethodsEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallingDataMethodsEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CallingDataMethodsEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMethodsObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataMethodsObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMethodsObject : obj with get, set" Usage="System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMethodsType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DataMethodsType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMethodsType : Type with get, set" Usage="System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

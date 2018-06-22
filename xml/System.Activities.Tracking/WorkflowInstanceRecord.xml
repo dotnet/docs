@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowInstanceRecord&#xA;Inherits TrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceRecord : System::Activities::Tracking::TrackingRecord" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceRecord = class&#xA;    inherit TrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.#ctor(System.Activities.Tracking.WorkflowInstanceRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (record As WorkflowInstanceRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowInstanceRecord(System::Activities::Tracking::WorkflowInstanceRecord ^ record);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceRecord : System.Activities.Tracking.WorkflowInstanceRecord -&gt; System.Activities.Tracking.WorkflowInstanceRecord" Usage="new System.Activities.Tracking.WorkflowInstanceRecord record" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.#ctor(System.Guid,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, state As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceRecord(Guid instanceId, System::String ^ activityDefinitionId, System::String ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceRecord : Guid * string * string -&gt; System.Activities.Tracking.WorkflowInstanceRecord" Usage="new System.Activities.Tracking.WorkflowInstanceRecord (instanceId, activityDefinitionId, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.#ctor(System.Guid,System.Int64,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, state As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::String ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceRecord : Guid * int64 * string * string -&gt; System.Activities.Tracking.WorkflowInstanceRecord" Usage="new System.Activities.Tracking.WorkflowInstanceRecord (instanceId, recordNumber, activityDefinitionId, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.#ctor(System.Guid,System.String,System.String,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, state As String, workflowDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceRecord(Guid instanceId, System::String ^ activityDefinitionId, System::String ^ state, System::Activities::WorkflowIdentity ^ workflowDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceRecord : Guid * string * string * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceRecord" Usage="new System.Activities.Tracking.WorkflowInstanceRecord (instanceId, activityDefinitionId, state, workflowDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.#ctor(System.Guid,System.Int64,System.String,System.String,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, state As String, workflowDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::String ^ state, System::Activities::WorkflowIdentity ^ workflowDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceRecord : Guid * int64 * string * string * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceRecord" Usage="new System.Activities.Tracking.WorkflowInstanceRecord (instanceId, recordNumber, activityDefinitionId, state, workflowDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceRecord.ActivityDefinitionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityDefinitionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityDefinitionId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityDefinitionId : string" Usage="System.Activities.Tracking.WorkflowInstanceRecord.ActivityDefinitionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="workflowInstanceRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceRecord.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : string" Usage="System.Activities.Tracking.WorkflowInstanceRecord.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -222,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="workflowInstanceRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -243,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceRecord.WorkflowDefinitionIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowDefinitionIdentity As WorkflowIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::Activities::WorkflowIdentity ^ WorkflowDefinitionIdentity {  public:&#xA;System::Activities::WorkflowIdentity ^ get(); protected:&#xA; void set(System::Activities::WorkflowIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinitionIdentity : System.Activities.WorkflowIdentity with get, set" Usage="System.Activities.Tracking.WorkflowInstanceRecord.WorkflowDefinitionIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

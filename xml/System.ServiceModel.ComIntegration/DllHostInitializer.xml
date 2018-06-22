@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.DllHostInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Class DllHostInitializer&#xA;Implements IProcessInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DllHostInitializer : System::EnterpriseServices::IProcessInitializer" />
+  <TypeSignature Language="F#" Value="type DllHostInitializer = class&#xA;    interface IProcessInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.DllHostInitializer.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="dllHostInitializer.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.IProcessInitializer.Shutdown</InterfaceMember>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.DllHostInitializer.Startup(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Startup (punkProcessControl As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Startup(System::Object ^ punkProcessControl);" />
+      <MemberSignature Language="F#" Value="abstract member Startup : obj -&gt; unit&#xA;override this.Startup : obj -&gt; unit" Usage="dllHostInitializer.Startup punkProcessControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)</InterfaceMember>

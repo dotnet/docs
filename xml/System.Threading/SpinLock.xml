@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinLock" />
   <TypeSignature Language="VB.NET" Value="Public Structure SpinLock" />
   <TypeSignature Language="C++ CLI" Value="public value class SpinLock" />
+  <TypeSignature Language="F#" Value="type SpinLock = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableThreadOwnerTracking As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpinLock(bool enableThreadOwnerTracking);" />
+      <MemberSignature Language="F#" Value="new System.Threading.SpinLock : bool -&gt; System.Threading.SpinLock" Usage="new System.Threading.SpinLock enableThreadOwnerTracking" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -164,6 +166,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.Enter(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enter (ByRef lockTaken As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enter(bool % lockTaken);" />
+      <MemberSignature Language="F#" Value="member this.Enter :  -&gt; unit" Usage="spinLock.Enter lockTaken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -221,6 +224,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.Exit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Exit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exit();" />
+      <MemberSignature Language="F#" Value="member this.Exit : unit -&gt; unit" Usage="spinLock.Exit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -268,6 +272,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.Exit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Exit (useMemoryBarrier As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exit(bool useMemoryBarrier);" />
+      <MemberSignature Language="F#" Value="member this.Exit : bool -&gt; unit" Usage="spinLock.Exit useMemoryBarrier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -318,6 +323,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinLock.IsHeld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHeld As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHeld { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHeld : bool" Usage="System.Threading.SpinLock.IsHeld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -355,6 +361,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinLock.IsHeldByCurrentThread" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHeldByCurrentThread As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHeldByCurrentThread { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHeldByCurrentThread : bool" Usage="System.Threading.SpinLock.IsHeldByCurrentThread" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -400,6 +407,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinLock.IsThreadOwnerTrackingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsThreadOwnerTrackingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsThreadOwnerTrackingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsThreadOwnerTrackingEnabled : bool" Usage="System.Threading.SpinLock.IsThreadOwnerTrackingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -448,6 +456,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TryEnter (ByRef lockTaken As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TryEnter(bool % lockTaken);" />
+      <MemberSignature Language="F#" Value="member this.TryEnter :  -&gt; unit" Usage="spinLock.TryEnter lockTaken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -492,6 +501,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.Int32,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TryEnter (millisecondsTimeout As Integer, ByRef lockTaken As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TryEnter(int millisecondsTimeout, bool % lockTaken);" />
+      <MemberSignature Language="F#" Value="member this.TryEnter : int *  -&gt; unit" Usage="spinLock.TryEnter (millisecondsTimeout, lockTaken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -540,6 +550,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.TimeSpan,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TryEnter (timeout As TimeSpan, ByRef lockTaken As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TryEnter(TimeSpan timeout, bool % lockTaken);" />
+      <MemberSignature Language="F#" Value="member this.TryEnter : TimeSpan *  -&gt; unit" Usage="spinLock.TryEnter (timeout, lockTaken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

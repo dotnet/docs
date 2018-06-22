@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITableProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITableProvider&#xA;Implements IGridProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITableProvider : System::Windows::Automation::Provider::IGridProvider" />
+  <TypeSignature Language="F#" Value="type ITableProvider = interface&#xA;    interface IGridProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnHeaders () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetColumnHeaders();" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnHeaders : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTableProvider.GetColumnHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableProvider.GetRowHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRowHeaders () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetRowHeaders();" />
+      <MemberSignature Language="F#" Value="abstract member GetRowHeaders : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTableProvider.GetRowHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowOrColumnMajor As RowOrColumnMajor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::RowOrColumnMajor RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowOrColumnMajor : System.Windows.Automation.RowOrColumnMajor" Usage="System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

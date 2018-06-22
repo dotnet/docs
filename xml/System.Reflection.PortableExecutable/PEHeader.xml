@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PEHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class PEHeader sealed" />
+  <TypeSignature Language="F#" Value="type PEHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.AddressOfEntryPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressOfEntryPoint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AddressOfEntryPoint { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressOfEntryPoint : int" Usage="System.Reflection.PortableExecutable.PEHeader.AddressOfEntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseOfCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseOfCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BaseOfCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseOfCode : int" Usage="System.Reflection.PortableExecutable.PEHeader.BaseOfCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseOfData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseOfData As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BaseOfData { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseOfData : int" Usage="System.Reflection.PortableExecutable.PEHeader.BaseOfData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BaseRelocationTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseRelocationTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry BaseRelocationTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseRelocationTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.BaseRelocationTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.BoundImportTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundImportTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry BoundImportTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundImportTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.BoundImportTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CertificateTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry CertificateTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.CertificateTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.CertificateTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CheckSum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckSum As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 CheckSum { System::UInt32 get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckSum : uint32" Usage="System.Reflection.PortableExecutable.PEHeader.CheckSum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -187,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CopyrightTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CopyrightTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry CopyrightTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.CopyrightTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.CopyrightTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.CorHeaderTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorHeaderTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry CorHeaderTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorHeaderTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.CorHeaderTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -233,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DebugTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry DebugTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.DebugTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -256,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DelayImportTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelayImportTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry DelayImportTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.DelayImportTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.DelayImportTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -279,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.DllCharacteristics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DllCharacteristics As DllCharacteristics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DllCharacteristics DllCharacteristics { System::Reflection::PortableExecutable::DllCharacteristics get(); };" />
+      <MemberSignature Language="F#" Value="member this.DllCharacteristics : System.Reflection.PortableExecutable.DllCharacteristics" Usage="System.Reflection.PortableExecutable.PEHeader.DllCharacteristics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -302,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ExceptionTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceptionTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ExceptionTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ExceptionTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -325,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ExportTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ExportTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExportTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ExportTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -348,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.FileAlignment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileAlignment As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileAlignment { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileAlignment : int" Usage="System.Reflection.PortableExecutable.PEHeader.FileAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -371,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.GlobalPointerTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalPointerTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry GlobalPointerTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalPointerTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.GlobalPointerTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -394,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImageBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageBase As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 ImageBase { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageBase : uint64" Usage="System.Reflection.PortableExecutable.PEHeader.ImageBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -417,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImportAddressTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportAddressTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ImportAddressTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportAddressTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ImportAddressTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -440,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ImportTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ImportTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ImportTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -463,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.LoadConfigTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadConfigTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry LoadConfigTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoadConfigTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.LoadConfigTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -486,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.Magic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Magic As PEMagic" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::PEMagic Magic { System::Reflection::PortableExecutable::PEMagic get(); };" />
+      <MemberSignature Language="F#" Value="member this.Magic : System.Reflection.PortableExecutable.PEMagic" Usage="System.Reflection.PortableExecutable.PEHeader.Magic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -509,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorImageVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorImageVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MajorImageVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorImageVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MajorImageVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -532,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorLinkerVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorLinkerVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte MajorLinkerVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorLinkerVersion : byte" Usage="System.Reflection.PortableExecutable.PEHeader.MajorLinkerVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -555,6 +579,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorOperatingSystemVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorOperatingSystemVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MajorOperatingSystemVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorOperatingSystemVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MajorOperatingSystemVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -578,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MajorSubsystemVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorSubsystemVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MajorSubsystemVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MajorSubsystemVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MajorSubsystemVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -601,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorImageVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorImageVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MinorImageVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorImageVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MinorImageVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -624,6 +651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorLinkerVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorLinkerVersion As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte MinorLinkerVersion { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorLinkerVersion : byte" Usage="System.Reflection.PortableExecutable.PEHeader.MinorLinkerVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -647,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorOperatingSystemVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorOperatingSystemVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MinorOperatingSystemVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorOperatingSystemVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MinorOperatingSystemVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -670,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.MinorSubsystemVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorSubsystemVersion As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 MinorSubsystemVersion { System::UInt16 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinorSubsystemVersion : uint16" Usage="System.Reflection.PortableExecutable.PEHeader.MinorSubsystemVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -693,6 +723,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.NumberOfRvaAndSizes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfRvaAndSizes As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfRvaAndSizes { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfRvaAndSizes : int" Usage="System.Reflection.PortableExecutable.PEHeader.NumberOfRvaAndSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -716,6 +747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ResourceTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ResourceTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ResourceTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -739,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SectionAlignment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionAlignment As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SectionAlignment { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SectionAlignment : int" Usage="System.Reflection.PortableExecutable.PEHeader.SectionAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -762,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfCode : int" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -785,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfHeaders As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfHeaders { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfHeaders : int" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -808,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeapCommit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfHeapCommit As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 SizeOfHeapCommit { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfHeapCommit : uint64" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfHeapCommit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -831,6 +867,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfHeapReserve" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfHeapReserve As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 SizeOfHeapReserve { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfHeapReserve : uint64" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfHeapReserve" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -854,6 +891,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfImage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfImage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfImage { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfImage : int" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -877,6 +915,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfInitializedData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfInitializedData As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfInitializedData { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfInitializedData : int" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfInitializedData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -900,6 +939,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfStackCommit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfStackCommit As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 SizeOfStackCommit { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfStackCommit : uint64" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfStackCommit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -923,6 +963,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfStackReserve" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfStackReserve As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 SizeOfStackReserve { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfStackReserve : uint64" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfStackReserve" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -946,6 +987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.SizeOfUninitializedData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfUninitializedData As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfUninitializedData { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeOfUninitializedData : int" Usage="System.Reflection.PortableExecutable.PEHeader.SizeOfUninitializedData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -969,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.Subsystem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subsystem As Subsystem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::Subsystem Subsystem { System::Reflection::PortableExecutable::Subsystem get(); };" />
+      <MemberSignature Language="F#" Value="member this.Subsystem : System.Reflection.PortableExecutable.Subsystem" Usage="System.Reflection.PortableExecutable.PEHeader.Subsystem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -992,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEHeader.ThreadLocalStorageTableDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadLocalStorageTableDirectory As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::DirectoryEntry ThreadLocalStorageTableDirectory { System::Reflection::PortableExecutable::DirectoryEntry get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadLocalStorageTableDirectory : System.Reflection.PortableExecutable.DirectoryEntry" Usage="System.Reflection.PortableExecutable.PEHeader.ThreadLocalStorageTableDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

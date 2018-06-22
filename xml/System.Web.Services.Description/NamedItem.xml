@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class NamedItem&#xA;Inherits DocumentableItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedItem abstract : System::Web::Services::Description::DocumentableItem" />
+  <TypeSignature Language="F#" Value="type NamedItem = class&#xA;    inherit DocumentableItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.NamedItem.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Services.Description.NamedItem.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SequenceMarshal" />
   <TypeSignature Language="VB.NET" Value="Public Class SequenceMarshal" />
   <TypeSignature Language="C++ CLI" Value="public ref class SequenceMarshal abstract sealed" />
+  <TypeSignature Language="F#" Value="type SequenceMarshal = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetArray``1(System.Buffers.ReadOnlySequence{``0},System.ArraySegment{``0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetArray(Of T) (sequence As ReadOnlySequence(Of T), ByRef segment As ArraySegment(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetArray(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] ArraySegment&lt;T&gt; % segment);" />
+      <MemberSignature Language="F#" Value="static member TryGetArray : System.Buffers.ReadOnlySequence&lt;'T&gt; *  -&gt; bool" Usage="System.Runtime.InteropServices.SequenceMarshal.TryGetArray (sequence, segment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlyMemory``1(System.Buffers.ReadOnlySequence{``0},System.ReadOnlyMemory{``0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetReadOnlyMemory(Of T) (sequence As ReadOnlySequence(Of T), ByRef memory As ReadOnlyMemory(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetReadOnlyMemory(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] ReadOnlyMemory&lt;T&gt; % memory);" />
+      <MemberSignature Language="F#" Value="static member TryGetReadOnlyMemory : System.Buffers.ReadOnlySequence&lt;'T&gt; *  -&gt; bool" Usage="System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlyMemory (sequence, memory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlySequenceSegment``1(System.Buffers.ReadOnlySequence{``0},System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@,System.Buffers.ReadOnlySequenceSegment{``0}@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetReadOnlySequenceSegment(Of T) (sequence As ReadOnlySequence(Of T), ByRef startSegment As ReadOnlySequenceSegment(Of T), ByRef startIndex As Integer, ByRef endSegment As ReadOnlySequenceSegment(Of T), ByRef endIndex As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryGetReadOnlySequenceSegment(System::Buffers::ReadOnlySequence&lt;T&gt; sequence, [Runtime::InteropServices::Out] System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ % startSegment, [Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ % endSegment, [Runtime::InteropServices::Out] int % endIndex);" />
+      <MemberSignature Language="F#" Value="static member TryGetReadOnlySequenceSegment : System.Buffers.ReadOnlySequence&lt;'T&gt; *  *  *  *  -&gt; bool" Usage="System.Runtime.InteropServices.SequenceMarshal.TryGetReadOnlySequenceSegment (sequence, startSegment, startIndex, endSegment, endIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.IExpressionEditorService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExpressionEditorService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExpressionEditorService" />
+  <TypeSignature Language="F#" Value="type IExpressionEditorService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseExpressionEditors ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseExpressionEditors();" />
+      <MemberSignature Language="F#" Value="abstract member CloseExpressionEditors : unit -&gt; unit" Usage="iExpressionEditorService.CloseExpressionEditors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String) As IExpressionEditorInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, expressionType As Type) As IExpressionEditorInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, Type ^ expressionType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * Type -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, expressionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, initialSize As Size) As IExpressionEditorInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, System::Windows::Size initialSize);" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * System.Windows.Size -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, initialSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type,System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, expressionType As Type, initialSize As Size) As IExpressionEditorInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, Type ^ expressionType, System::Windows::Size initialSize);" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * Type * System.Windows.Size -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, expressionType, initialSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.UpdateContext(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateContext (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateContext(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateContext : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem -&gt; unit" Usage="iExpressionEditorService.UpdateContext (assemblies, importedNamespaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

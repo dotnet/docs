@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ArraySegment`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ArraySegment(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ArraySegment : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="new ArraySegment&lt;'T&gt; : 'T[] -&gt; ArraySegment&lt;'T&gt;" Usage="new System.ArraySegment&lt;'T&gt; array" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array, int offset, int count);" />
+      <MemberSignature Language="F#" Value="new ArraySegment&lt;'T&gt; : 'T[] * int * int -&gt; ArraySegment&lt;'T&gt;" Usage="new System.ArraySegment&lt;'T&gt; (array, offset, count)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -236,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Array" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Array As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;T&gt; ^ Array { cli::array &lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Array : 'T[]" Usage="System.ArraySegment&lt;'T&gt;.Array" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -287,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As ArraySegment(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(ArraySegment&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : ArraySegment&lt;'T&gt; -&gt; unit" Usage="arraySegment.CopyTo destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -311,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="arraySegment.CopyTo destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -335,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T(), destinationIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="arraySegment.CopyTo (destination, destinationIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -364,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ArraySegment&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -415,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ArraySegment(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ArraySegment&lt;T&gt; Empty { ArraySegment&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : ArraySegment&lt;'T&gt;" Usage="System.ArraySegment&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -449,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ArraySegment(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ArraySegment&lt;T&gt; obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : ArraySegment&lt;'T&gt; -&gt; bool" Usage="arraySegment.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -501,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="arraySegment.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -553,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ArraySegment(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; ArraySegment&lt;'T&gt;.Enumerator" Usage="arraySegment.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -575,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="arraySegment.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -610,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="System.ArraySegment&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -638,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.ArraySegment&lt;'T&gt;.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -685,6 +700,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : ArraySegment&lt;'T&gt; * ArraySegment&lt;'T&gt; -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -739,6 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T()) As ArraySegment(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ArraySegment&lt;T&gt;(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T[] -&gt; ArraySegment&lt;'T&gt;" Usage="System.ArraySegment&lt;'T&gt;.op_Implicit array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -764,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : ArraySegment&lt;'T&gt; * ArraySegment&lt;'T&gt; -&gt; bool" Usage="System.ArraySegment&lt;'T&gt;.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -818,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer) As ArraySegment(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int -&gt; ArraySegment&lt;'T&gt;" Usage="arraySegment.Slice index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -843,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer, count As Integer) As ArraySegment(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; ArraySegment&lt;'T&gt;" Usage="arraySegment.Slice (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1074,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1314,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
       <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IList&lt;T&gt;.Item[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -1418,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As T Implements IReadOnlyList(Of T).Item" />
       <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item[int] { T get(int index); };" />
+      <MemberSignature Language="F#" Usage="System.ArraySegment&lt;'T&gt;.System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
@@ -1514,6 +1537,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="arraySegment.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

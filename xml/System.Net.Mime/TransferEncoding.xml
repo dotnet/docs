@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.TransferEncoding" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransferEncoding" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransferEncoding" />
+  <TypeSignature Language="F#" Value="type TransferEncoding = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.Base64" />
       <MemberSignature Language="VB.NET" Value="Base64" />
       <MemberSignature Language="C++ CLI" Value="Base64" />
+      <MemberSignature Language="F#" Value="Base64 = 1" Usage="System.Net.Mime.TransferEncoding.Base64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.EightBit" />
       <MemberSignature Language="VB.NET" Value="EightBit" />
       <MemberSignature Language="C++ CLI" Value="EightBit" />
+      <MemberSignature Language="F#" Value="EightBit = 3" Usage="System.Net.Mime.TransferEncoding.EightBit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.QuotedPrintable" />
       <MemberSignature Language="VB.NET" Value="QuotedPrintable" />
       <MemberSignature Language="C++ CLI" Value="QuotedPrintable" />
+      <MemberSignature Language="F#" Value="QuotedPrintable = 0" Usage="System.Net.Mime.TransferEncoding.QuotedPrintable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.SevenBit" />
       <MemberSignature Language="VB.NET" Value="SevenBit" />
       <MemberSignature Language="C++ CLI" Value="SevenBit" />
+      <MemberSignature Language="F#" Value="SevenBit = 2" Usage="System.Net.Mime.TransferEncoding.SevenBit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Mime.TransferEncoding.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

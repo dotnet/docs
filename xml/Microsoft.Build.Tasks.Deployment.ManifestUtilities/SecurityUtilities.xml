@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityUtilities" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityUtilities abstract sealed" />
+  <TypeSignature Language="F#" Value="type SecurityUtilities = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.ComputeZonePermissionSet(System.String,System.Security.PermissionSet,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeZonePermissionSet (targetZone As String, includedPermissionSet As PermissionSet, excludedPermissions As String()) As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ ComputeZonePermissionSet(System::String ^ targetZone, System::Security::PermissionSet ^ includedPermissionSet, cli::array &lt;System::String ^&gt; ^ excludedPermissions);" />
+      <MemberSignature Language="F#" Value="static member ComputeZonePermissionSet : string * System.Security.PermissionSet * string[] -&gt; System.Security.PermissionSet" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.ComputeZonePermissionSet (targetZone, includedPermissionSet, excludedPermissions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.IdentityListToPermissionSet(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IdentityListToPermissionSet (ids As String()) As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ IdentityListToPermissionSet(cli::array &lt;System::String ^&gt; ^ ids);" />
+      <MemberSignature Language="F#" Value="static member IdentityListToPermissionSet : string[] -&gt; System.Security.PermissionSet" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.IdentityListToPermissionSet ids" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] PermissionSetToIdentityList(class System.Security.PermissionSet permissionSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.PermissionSetToIdentityList(System.Security.PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ PermissionSetToIdentityList(System::Security::PermissionSet ^ permissionSet);" />
+      <MemberSignature Language="F#" Value="static member PermissionSetToIdentityList : System.Security.PermissionSet -&gt; string[]" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.PermissionSetToIdentityList permissionSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SignFile (cert As X509Certificate2, timestampUrl As Uri, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SignFile(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ cert, Uri ^ timestampUrl, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member SignFile : System.Security.Cryptography.X509Certificates.X509Certificate2 * Uri * string -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile (cert, timestampUrl, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile(System.String,System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SignFile (certThumbprint As String, timestampUrl As Uri, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SignFile(System::String ^ certThumbprint, Uri ^ timestampUrl, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member SignFile : string * Uri * string -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile (certThumbprint, timestampUrl, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile(System.String,System.Security.SecureString,System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SignFile (certPath As String, certPassword As SecureString, timestampUrl As Uri, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SignFile(System::String ^ certPath, System::Security::SecureString ^ certPassword, Uri ^ timestampUrl, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member SignFile : string * System.Security.SecureString * Uri * string -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.SignFile (certPath, certPassword, timestampUrl, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.XmlToPermissionSet(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function XmlToPermissionSet (element As XmlElement) As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ XmlToPermissionSet(System::Xml::XmlElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member XmlToPermissionSet : System.Xml.XmlElement -&gt; System.Security.PermissionSet" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.XmlToPermissionSet element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

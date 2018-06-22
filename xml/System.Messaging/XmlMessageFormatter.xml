@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.XmlMessageFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlMessageFormatter&#xA;Implements ICloneable, IMessageFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlMessageFormatter : ICloneable, System::Messaging::IMessageFormatter" />
+  <TypeSignature Language="F#" Value="type XmlMessageFormatter = class&#xA;    interface IMessageFormatter&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetTypeNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlMessageFormatter(cli::array &lt;System::String ^&gt; ^ targetTypeNames);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.XmlMessageFormatter : string[] -&gt; System.Messaging.XmlMessageFormatter" Usage="new System.Messaging.XmlMessageFormatter targetTypeNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.#ctor(System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetTypes As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlMessageFormatter(cli::array &lt;Type ^&gt; ^ targetTypes);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.XmlMessageFormatter : Type[] -&gt; System.Messaging.XmlMessageFormatter" Usage="new System.Messaging.XmlMessageFormatter targetTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -207,6 +210,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRead(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanRead(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Messaging.Message -&gt; bool&#xA;override this.CanRead : System.Messaging.Message -&gt; bool" Usage="xmlMessageFormatter.CanRead message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.CanRead(System.Messaging.Message)</InterfaceMember>
@@ -254,6 +258,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="xmlMessageFormatter.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -285,6 +290,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Read(class System.Messaging.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Read(System.Messaging.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Read(System::Messaging::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Messaging.Message -&gt; obj&#xA;override this.Read : System.Messaging.Message -&gt; obj" Usage="xmlMessageFormatter.Read message" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.Read(System.Messaging.Message)</InterfaceMember>
@@ -334,6 +340,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="DocId" Value="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetTypeNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ TargetTypeNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetTypeNames : string[] with get, set" Usage="System.Messaging.XmlMessageFormatter.TargetTypeNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -378,6 +385,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="DocId" Value="P:System.Messaging.XmlMessageFormatter.TargetTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetTypes As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ TargetTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetTypes : Type[] with get, set" Usage="System.Messaging.XmlMessageFormatter.TargetTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -438,6 +446,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Messaging.Message message, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.XmlMessageFormatter.Write(System.Messaging.Message,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Messaging::Message ^ message, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Messaging.Message * obj -&gt; unit&#xA;override this.Write : System.Messaging.Message * obj -&gt; unit" Usage="xmlMessageFormatter.Write (message, obj)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Messaging.IMessageFormatter.Write(System.Messaging.Message,System.Object)</InterfaceMember>

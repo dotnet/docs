@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.StoreContentAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum StoreContentAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class StoreContentAction" />
+  <TypeSignature Language="F#" Value="type StoreContentAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.Storage.StoreContentAction.Added" />
       <MemberSignature Language="VB.NET" Value="Added" />
       <MemberSignature Language="C++ CLI" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 0" Usage="System.Windows.Annotations.Storage.StoreContentAction.Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.Storage.StoreContentAction.Deleted" />
       <MemberSignature Language="VB.NET" Value="Deleted" />
       <MemberSignature Language="C++ CLI" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 1" Usage="System.Windows.Annotations.Storage.StoreContentAction.Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

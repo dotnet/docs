@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.StoppedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StoppedEventArgs&#xA;Inherits ManagementEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StoppedEventArgs : System::Management::ManagementEventArgs" />
+  <TypeSignature Language="F#" Value="type StoppedEventArgs = class&#xA;    inherit ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.StoppedEventArgs.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As ManagementStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementStatus Status { System::Management::ManagementStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Management.ManagementStatus" Usage="System.Management.StoppedEventArgs.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

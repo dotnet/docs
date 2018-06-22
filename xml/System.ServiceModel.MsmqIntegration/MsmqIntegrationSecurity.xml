@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqIntegrationSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqIntegrationSecurity sealed" />
+  <TypeSignature Language="F#" Value="type MsmqIntegrationSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As MsmqIntegrationSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode Mode { System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode get(); void set(System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As MsmqTransportSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqTransportSecurity ^ Transport { System::ServiceModel::MsmqTransportSecurity ^ get(); void set(System::ServiceModel::MsmqTransportSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.MsmqTransportSecurity with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

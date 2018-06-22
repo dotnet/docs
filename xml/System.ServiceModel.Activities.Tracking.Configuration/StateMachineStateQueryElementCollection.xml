@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StateMachineStateQueryElementCollection&#xA;Inherits TrackingConfigurationCollection(Of StateMachineStateQueryElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateMachineStateQueryElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::StateMachineStateQueryElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type StateMachineStateQueryElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;StateMachineStateQueryElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElementCollection.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

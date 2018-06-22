@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class MachineKeySessionSecurityTokenHandler&#xA;Inherits SessionSecurityTokenHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class MachineKeySessionSecurityTokenHandler : System::IdentityModel::Tokens::SessionSecurityTokenHandler" />
+  <TypeSignature Language="F#" Value="type MachineKeySessionSecurityTokenHandler = class&#xA;    inherit SessionSecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenLifetime As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MachineKeySessionSecurityTokenHandler(TimeSpan tokenLifetime);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler : TimeSpan -&gt; System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" Usage="new System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler tokenLifetime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

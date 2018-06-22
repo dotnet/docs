@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.GlobalProxySelection" />
   <TypeSignature Language="VB.NET" Value="Public Class GlobalProxySelection" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlobalProxySelection" />
+  <TypeSignature Language="F#" Value="type GlobalProxySelection = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.GlobalProxySelection.GetEmptyWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEmptyWebProxy () As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ GetEmptyWebProxy();" />
+      <MemberSignature Language="F#" Value="static member GetEmptyWebProxy : unit -&gt; System.Net.IWebProxy" Usage="System.Net.GlobalProxySelection.GetEmptyWebProxy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +134,7 @@ Instead of calling the `GetEmptyWebProxy` method, you can assign `null` to membe
       <MemberSignature Language="DocId" Value="P:System.Net.GlobalProxySelection.Select" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Select As IWebProxy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ Select { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Select : System.Net.IWebProxy with get, set" Usage="System.Net.GlobalProxySelection.Select" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ActivationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActivationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActivationOption" />
+  <TypeSignature Language="F#" Value="type ActivationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Library" />
       <MemberSignature Language="VB.NET" Value="Library" />
       <MemberSignature Language="C++ CLI" Value="Library" />
+      <MemberSignature Language="F#" Value="Library = 0" Usage="System.EnterpriseServices.ActivationOption.Library" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Server" />
       <MemberSignature Language="VB.NET" Value="Server" />
       <MemberSignature Language="C++ CLI" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 1" Usage="System.EnterpriseServices.ActivationOption.Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

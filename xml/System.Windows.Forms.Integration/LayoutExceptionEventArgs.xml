@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.LayoutExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LayoutExceptionEventArgs&#xA;Inherits IntegrationExceptionEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LayoutExceptionEventArgs : System::Windows::Forms::Integration::IntegrationExceptionEventArgs" />
+  <TypeSignature Language="F#" Value="type LayoutExceptionEventArgs = class&#xA;    inherit IntegrationExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.LayoutExceptionEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LayoutExceptionEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.LayoutExceptionEventArgs : Exception -&gt; System.Windows.Forms.Integration.LayoutExceptionEventArgs" Usage="new System.Windows.Forms.Integration.LayoutExceptionEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

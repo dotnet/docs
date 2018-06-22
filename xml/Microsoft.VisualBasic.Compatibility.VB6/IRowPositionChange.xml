@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRowPositionChange" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRowPositionChange" />
+  <TypeSignature Language="F#" Value="type IRowPositionChange = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange.OnRowPositionChange(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnRowPositionChange (dbReason As Integer, eventPhase As Integer, fCantDeny As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int OnRowPositionChange(int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowPositionChange : int * int * int -&gt; int" Usage="iRowPositionChange.OnRowPositionChange (dbReason, eventPhase, fCantDeny)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

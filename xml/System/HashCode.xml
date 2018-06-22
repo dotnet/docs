@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.HashCode" />
   <TypeSignature Language="VB.NET" Value="Public Structure HashCode" />
   <TypeSignature Language="C++ CLI" Value="public value class HashCode" />
+  <TypeSignature Language="F#" Value="type HashCode = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -69,6 +70,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Add``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add(Of T) (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Add(T value);" />
+      <MemberSignature Language="F#" Value="member this.Add : 'T -&gt; unit" Usage="hashCode.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -87,6 +89,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <typeparam name="T">The type of the value to add to the hash code.</typeparam>
         <param name="value">The value to add to the hash code.</param>
         <summary>Adds a single value to the hash code.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add&lt;T&gt;">
@@ -95,6 +98,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Add``1(``0,System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add(Of T) (value As T, comparer As IEqualityComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Add(T value, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Add : 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; unit" Usage="hashCode.Add (value, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -121,6 +125,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <summary>
           Adds a single value to the hash code, specifying the type that provides the hash code function.
         </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1&gt;">
@@ -129,6 +134,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1) (value1 As T1) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1&gt;&#xA; static int Combine(T1 value1);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 -&gt; int" Usage="System.HashCode.Combine value1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -161,6 +167,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``2(``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2) (value1 As T1, value2 As T2) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2&gt;&#xA; static int Combine(T1 value1, T2 value2);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 -&gt; int" Usage="System.HashCode.Combine (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -184,6 +191,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value2">The second value to combine into the hash code.</param>
         <summary>Combines two values into a hash code.</summary>
         <returns>The hash code that represents the two values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3&gt;">
@@ -192,6 +200,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``3(``0,``1,``2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3) (value1 As T1, value2 As T2, value3 As T3) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -219,6 +228,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value3">The third value to combine into the hash code.</param>
         <summary>Combines three values into a hash code.</summary>
         <returns>The hash code that represents the three values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4&gt;">
@@ -227,6 +237,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``4(``0,``1,``2,``3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3, T4) (value1 As T1, value2 As T2, value3 As T3, value4 As T4) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3, T4 value4);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 * 'T4 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3, value4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -258,6 +269,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value4">The fourth value to combine into the hash code.</param>
         <summary>Combines four values into a hash code.</summary>
         <returns>The hash code that represents the four values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5&gt;">
@@ -266,6 +278,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``5(``0,``1,``2,``3,``4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3, T4, T5) (value1 As T1, value2 As T2, value3 As T3, value4 As T4, value5 As T5) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3, value4, value5)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -301,6 +314,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value5">The fifth value to combine into the hash code.</param>
         <summary>Combines five values into a hash code.</summary>
         <returns>The hash code that represents the five values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -309,6 +323,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``6(``0,``1,``2,``3,``4,``5)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3, T4, T5, T6) (value1 As T1, value2 As T2, value3 As T3, value4 As T4, value5 As T5, value6 As T6) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3, value4, value5, value6)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -348,6 +363,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value6">The sixth value to combine into the hash code.</param>
         <summary>Combines six values into a hash code.</summary>
         <returns>The hash code that represents the six values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -356,6 +372,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``7(``0,``1,``2,``3,``4,``5,``6)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3, T4, T5, T6, T7) (value1 As T1, value2 As T2, value3 As T3, value4 As T4, value5 As T5, value6 As T6, value7 As T7) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3, value4, value5, value6, value7)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -399,6 +416,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value7">The seventh value to combine into the hash code.</param>
         <summary>Combines six values into a hash code.</summary>
         <returns>The hash code that represents the seven values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Combine&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -407,6 +425,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Combine``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Combine(Of T1, T2, T3, T4, T5, T6, T7, T8) (value1 As T1, value2 As T2, value3 As T3, value4 As T4, value5 As T5, value6 As T6, value7 As T7, value8 As T8) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8&gt;&#xA; static int Combine(T1 value1, T2 value2, T3 value3, T4 value4, T5 value5, T6 value6, T7 value7, T8 value8);" />
+      <MemberSignature Language="F#" Value="static member Combine : 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 * 'T7 * 'T8 -&gt; int" Usage="System.HashCode.Combine (value1, value2, value3, value4, value5, value6, value7, value8)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -454,6 +473,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="value8">The eighth value to combine into the hash code.</param>
         <summary>Combines eight values into a hash code.</summary>
         <returns>The hash code that represents the eight values.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -462,6 +482,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hashCode.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -485,6 +506,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
         <param name="obj">Ignored.</param>
         <summary>This method is not supported and should not be called.</summary>
         <returns>This method will always throw a <see cref="T:System.NotSupportedException" />.</returns>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown when this method is called.</exception>
       </Docs>
     </Member>
@@ -494,6 +516,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hashCode.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -514,6 +537,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <Docs>
         <summary>This method is not supported and should not be called.</summary>
         <returns>This method will always throw a <see cref="T:System.NotSupportedException" />.</returns>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown when this method is called.</exception>
       </Docs>
     </Member>
@@ -523,6 +547,7 @@ The <xref:System.HashCode> structure must be passed by-reference to other method
       <MemberSignature Language="DocId" Value="M:System.HashCode.ToHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Function ToHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToHashCode();" />
+      <MemberSignature Language="F#" Value="member this.ToHashCode : unit -&gt; int" Usage="hashCode.ToHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

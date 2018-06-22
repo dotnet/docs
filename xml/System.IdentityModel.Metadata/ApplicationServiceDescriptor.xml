@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ApplicationServiceDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationServiceDescriptor&#xA;Inherits WebServiceDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationServiceDescriptor : System::IdentityModel::Metadata::WebServiceDescriptor" />
+  <TypeSignature Language="F#" Value="type ApplicationServiceDescriptor = class&#xA;    inherit WebServiceDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ApplicationServiceDescriptor.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As ICollection(Of EndpointReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ Endpoints { System::Collections::Generic::ICollection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoints : System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Metadata.ApplicationServiceDescriptor.Endpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ApplicationServiceDescriptor.PassiveRequestorEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PassiveRequestorEndpoints As ICollection(Of EndpointReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ PassiveRequestorEndpoints { System::Collections::Generic::ICollection&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PassiveRequestorEndpoints : System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Metadata.ApplicationServiceDescriptor.PassiveRequestorEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

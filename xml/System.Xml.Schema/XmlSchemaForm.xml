@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaForm" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaForm" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaForm" />
+  <TypeSignature Language="F#" Value="type XmlSchemaForm = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaForm.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Schema.XmlSchemaForm.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaForm.Qualified" />
       <MemberSignature Language="VB.NET" Value="Qualified" />
       <MemberSignature Language="C++ CLI" Value="Qualified" />
+      <MemberSignature Language="F#" Value="Qualified = 1" Usage="System.Xml.Schema.XmlSchemaForm.Qualified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaForm.Unqualified" />
       <MemberSignature Language="VB.NET" Value="Unqualified" />
       <MemberSignature Language="C++ CLI" Value="Unqualified" />
+      <MemberSignature Language="F#" Value="Unqualified = 2" Usage="System.Xml.Schema.XmlSchemaForm.Unqualified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewCancelEventArgs.#ctor(System.Int32,System.Web.UI.WebControls.ListViewCancelMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer, cancelMode As ListViewCancelMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewCancelEventArgs(int itemIndex, System::Web::UI::WebControls::ListViewCancelMode cancelMode);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewCancelEventArgs : int * System.Web.UI.WebControls.ListViewCancelMode -&gt; System.Web.UI.WebControls.ListViewCancelEventArgs" Usage="new System.Web.UI.WebControls.ListViewCancelEventArgs (itemIndex, cancelMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelMode As ListViewCancelMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ListViewCancelMode CancelMode { System::Web::UI::WebControls::ListViewCancelMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancelMode : System.Web.UI.WebControls.ListViewCancelMode" Usage="System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

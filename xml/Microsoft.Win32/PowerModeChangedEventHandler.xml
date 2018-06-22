@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.PowerModeChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PowerModeChangedEventHandler(sender As Object, e As PowerModeChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PowerModeChangedEventHandler(System::Object ^ sender, PowerModeChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PowerModeChangedEventHandler = delegate of obj * PowerModeChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

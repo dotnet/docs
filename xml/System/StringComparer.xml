@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.StringComparer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StringComparer&#xA;Implements IComparer, IComparer(Of String), IEqualityComparer, IEqualityComparer(Of String)" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringComparer abstract : System::Collections::Generic::IComparer&lt;System::String ^&gt;, System::Collections::Generic::IEqualityComparer&lt;System::String ^&gt;, System::Collections::IComparer, System::Collections::IEqualityComparer" />
+  <TypeSignature Language="F#" Value="type StringComparer = class&#xA;    interface IComparer&#xA;    interface IEqualityComparer&#xA;    interface IComparer&lt;string&gt;&#xA;    interface IEqualityComparer&lt;string&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As Object, y As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Object ^ x, System::Object ^ y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int&#xA;override this.Compare : obj * obj -&gt; int" Usage="stringComparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
@@ -196,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Compare(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Compare (x As String, y As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int Compare(System::String ^ x, System::String ^ y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : string * string -&gt; int" Usage="stringComparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -275,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (culture As CultureInfo, ignoreCase As Boolean) As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static StringComparer ^ Create(System::Globalization::CultureInfo ^ culture, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Globalization.CultureInfo * bool -&gt; StringComparer" Usage="System.StringComparer.Create (culture, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -326,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (culture As CultureInfo, options As CompareOptions) As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static StringComparer ^ Create(System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Globalization.CultureInfo * System.Globalization.CompareOptions -&gt; StringComparer" Usage="System.StringComparer.Create (culture, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -352,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.CurrentCulture" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentCulture As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ CurrentCulture { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCulture : StringComparer" Usage="System.StringComparer.CurrentCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -412,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.CurrentCultureIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentCultureIgnoreCase As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ CurrentCultureIgnoreCase { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCultureIgnoreCase : StringComparer" Usage="System.StringComparer.CurrentCultureIgnoreCase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -473,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As Object, y As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Object ^ x, System::Object ^ y);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj * obj -&gt; bool" Usage="stringComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)</InterfaceMember>
@@ -520,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.Equals(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Equals (x As String, y As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Equals(System::String ^ x, System::String ^ y);" />
+      <MemberSignature Language="F#" Value="override this.Equals : string * string -&gt; bool" Usage="stringComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -570,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.FromComparison(System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromComparison (comparisonType As StringComparison) As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static StringComparer ^ FromComparison(StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member FromComparison : StringComparison -&gt; StringComparer" Usage="System.StringComparer.FromComparison comparisonType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -605,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : obj -&gt; int" Usage="stringComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEqualityComparer.GetHashCode(System.Object)</InterfaceMember>
@@ -655,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.StringComparer.GetHashCode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHashCode (obj As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetHashCode(System::String ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : string -&gt; int" Usage="stringComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
@@ -708,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.InvariantCulture" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvariantCulture As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ InvariantCulture { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvariantCulture : StringComparer" Usage="System.StringComparer.InvariantCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -758,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.InvariantCultureIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvariantCultureIgnoreCase As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ InvariantCultureIgnoreCase { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvariantCultureIgnoreCase : StringComparer" Usage="System.StringComparer.InvariantCultureIgnoreCase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -799,6 +813,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.Ordinal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ordinal As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ Ordinal { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ordinal : StringComparer" Usage="System.StringComparer.Ordinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -850,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:System.StringComparer.OrdinalIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OrdinalIgnoreCase As StringComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property StringComparer ^ OrdinalIgnoreCase { StringComparer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrdinalIgnoreCase : StringComparer" Usage="System.StringComparer.OrdinalIgnoreCase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

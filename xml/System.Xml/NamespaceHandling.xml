@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.NamespaceHandling" />
   <TypeSignature Language="VB.NET" Value="Public Enum NamespaceHandling" />
   <TypeSignature Language="C++ CLI" Value="public enum class NamespaceHandling" />
+  <TypeSignature Language="F#" Value="type NamespaceHandling = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Xml.NamespaceHandling.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.OmitDuplicates" />
       <MemberSignature Language="VB.NET" Value="OmitDuplicates" />
       <MemberSignature Language="C++ CLI" Value="OmitDuplicates" />
+      <MemberSignature Language="F#" Value="OmitDuplicates = 1" Usage="System.Xml.NamespaceHandling.OmitDuplicates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

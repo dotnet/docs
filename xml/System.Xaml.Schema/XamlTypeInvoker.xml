@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlTypeInvoker" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlTypeInvoker" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlTypeInvoker" />
+  <TypeSignature Language="F#" Value="type XamlTypeInvoker = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.#ctor(System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As XamlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeInvoker(System::Xaml::XamlType ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.Schema.XamlTypeInvoker : System.Xaml.XamlType -&gt; System.Xaml.Schema.XamlTypeInvoker" Usage="new System.Xaml.Schema.XamlTypeInvoker type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.AddToCollection(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddToCollection (instance As Object, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddToCollection(System::Object ^ instance, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member AddToCollection : obj * obj -&gt; unit&#xA;override this.AddToCollection : obj * obj -&gt; unit" Usage="xamlTypeInvoker.AddToCollection (instance, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.AddToDictionary(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddToDictionary (instance As Object, key As Object, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddToDictionary(System::Object ^ instance, System::Object ^ key, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member AddToDictionary : obj * obj * obj -&gt; unit&#xA;override this.AddToDictionary : obj * obj * obj -&gt; unit" Usage="xamlTypeInvoker.AddToDictionary (instance, key, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -200,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.CreateInstance(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstance (arguments As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(cli::array &lt;System::Object ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : obj[] -&gt; obj&#xA;override this.CreateInstance : obj[] -&gt; obj" Usage="xamlTypeInvoker.CreateInstance arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.GetAddMethod(System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAddMethod (contentType As XamlType) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetAddMethod(System::Xaml::XamlType ^ contentType);" />
+      <MemberSignature Language="F#" Value="abstract member GetAddMethod : System.Xaml.XamlType -&gt; System.Reflection.MethodInfo&#xA;override this.GetAddMethod : System.Xaml.XamlType -&gt; System.Reflection.MethodInfo" Usage="xamlTypeInvoker.GetAddMethod contentType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.GetEnumeratorMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumeratorMethod () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetEnumeratorMethod();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumeratorMethod : unit -&gt; System.Reflection.MethodInfo&#xA;override this.GetEnumeratorMethod : unit -&gt; System.Reflection.MethodInfo" Usage="xamlTypeInvoker.GetEnumeratorMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -305,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeInvoker.GetItems(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItems (instance As Object) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetItems(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetItems : obj -&gt; System.Collections.IEnumerator&#xA;override this.GetItems : obj -&gt; System.Collections.IEnumerator" Usage="xamlTypeInvoker.GetItems instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -341,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeInvoker.SetMarkupExtensionHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetMarkupExtensionHandler As EventHandler(Of XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^&gt; ^ SetMarkupExtensionHandler { EventHandler&lt;System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SetMarkupExtensionHandler : EventHandler&lt;System.Windows.Markup.XamlSetMarkupExtensionEventArgs&gt;" Usage="System.Xaml.Schema.XamlTypeInvoker.SetMarkupExtensionHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -372,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetTypeConverterHandler As EventHandler(Of XamlSetTypeConverterEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Windows::Markup::XamlSetTypeConverterEventArgs ^&gt; ^ SetTypeConverterHandler { EventHandler&lt;System::Windows::Markup::XamlSetTypeConverterEventArgs ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SetTypeConverterHandler : EventHandler&lt;System.Windows.Markup.XamlSetTypeConverterEventArgs&gt;" Usage="System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -403,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnknownInvoker As XamlTypeInvoker" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::Schema::XamlTypeInvoker ^ UnknownInvoker { System::Xaml::Schema::XamlTypeInvoker ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnknownInvoker : System.Xaml.Schema.XamlTypeInvoker" Usage="System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
   <TypeSignature Language="C++ CLI" Value="public: enum class BaseCompatibilityPreferences::HandleDispatcherRequestProcessingFailureOptions" />
+  <TypeSignature Language="F#" Value="type BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 0" Usage="System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Reset" />
       <MemberSignature Language="VB.NET" Value="Reset" />
       <MemberSignature Language="C++ CLI" Value="Reset" />
+      <MemberSignature Language="F#" Value="Reset = 2" Usage="System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Throw" />
       <MemberSignature Language="VB.NET" Value="Throw" />
       <MemberSignature Language="C++ CLI" Value="Throw" />
+      <MemberSignature Language="F#" Value="Throw = 1" Usage="System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Throw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

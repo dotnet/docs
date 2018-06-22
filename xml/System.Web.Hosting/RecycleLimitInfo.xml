@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RecycleLimitInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecycleLimitInfo sealed" />
+  <TypeSignature Language="F#" Value="type RecycleLimitInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitInfo.#ctor(System.Int64,System.Int64,System.Web.Hosting.RecycleLimitNotificationFrequency)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (currentPrivateBytes As Long, recycleLimit As Long, recycleLimitNearFrequency As RecycleLimitNotificationFrequency)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RecycleLimitInfo(long currentPrivateBytes, long recycleLimit, System::Web::Hosting::RecycleLimitNotificationFrequency recycleLimitNearFrequency);" />
+      <MemberSignature Language="F#" Value="new System.Web.Hosting.RecycleLimitInfo : int64 * int64 * System.Web.Hosting.RecycleLimitNotificationFrequency -&gt; System.Web.Hosting.RecycleLimitInfo" Usage="new System.Web.Hosting.RecycleLimitInfo (currentPrivateBytes, recycleLimit, recycleLimitNearFrequency)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.RecycleLimitInfo.CurrentPrivateBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPrivateBytes As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CurrentPrivateBytes { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrivateBytes : int64" Usage="System.Web.Hosting.RecycleLimitInfo.CurrentPrivateBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.RecycleLimitInfo.RecycleLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecycleLimit As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RecycleLimit { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecycleLimit : int64" Usage="System.Web.Hosting.RecycleLimitInfo.RecycleLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.RecycleLimitInfo.RequestGC" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestGC As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequestGC { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestGC : bool with get, set" Usage="System.Web.Hosting.RecycleLimitInfo.RequestGC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.RecycleLimitInfo.TrimFrequency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrimFrequency As RecycleLimitNotificationFrequency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Hosting::RecycleLimitNotificationFrequency TrimFrequency { System::Web::Hosting::RecycleLimitNotificationFrequency get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrimFrequency : System.Web.Hosting.RecycleLimitNotificationFrequency" Usage="System.Web.Hosting.RecycleLimitInfo.TrimFrequency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

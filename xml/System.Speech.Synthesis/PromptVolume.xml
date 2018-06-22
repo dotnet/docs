@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptVolume" />
   <TypeSignature Language="VB.NET" Value="Public Enum PromptVolume" />
   <TypeSignature Language="C++ CLI" Value="public enum class PromptVolume" />
+  <TypeSignature Language="F#" Value="type PromptVolume = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 7" Usage="System.Speech.Synthesis.PromptVolume.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.ExtraLoud" />
       <MemberSignature Language="VB.NET" Value="ExtraLoud" />
       <MemberSignature Language="C++ CLI" Value="ExtraLoud" />
+      <MemberSignature Language="F#" Value="ExtraLoud = 6" Usage="System.Speech.Synthesis.PromptVolume.ExtraLoud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.ExtraSoft" />
       <MemberSignature Language="VB.NET" Value="ExtraSoft" />
       <MemberSignature Language="C++ CLI" Value="ExtraSoft" />
+      <MemberSignature Language="F#" Value="ExtraSoft = 2" Usage="System.Speech.Synthesis.PromptVolume.ExtraSoft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Loud" />
       <MemberSignature Language="VB.NET" Value="Loud" />
       <MemberSignature Language="C++ CLI" Value="Loud" />
+      <MemberSignature Language="F#" Value="Loud = 5" Usage="System.Speech.Synthesis.PromptVolume.Loud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 4" Usage="System.Speech.Synthesis.PromptVolume.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Speech.Synthesis.PromptVolume.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Silent" />
       <MemberSignature Language="VB.NET" Value="Silent" />
       <MemberSignature Language="C++ CLI" Value="Silent" />
+      <MemberSignature Language="F#" Value="Silent = 1" Usage="System.Speech.Synthesis.PromptVolume.Silent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Soft" />
       <MemberSignature Language="VB.NET" Value="Soft" />
       <MemberSignature Language="C++ CLI" Value="Soft" />
+      <MemberSignature Language="F#" Value="Soft = 3" Usage="System.Speech.Synthesis.PromptVolume.Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

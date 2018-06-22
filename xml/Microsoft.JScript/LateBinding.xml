@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LateBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LateBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class LateBinding sealed" />
+  <TypeSignature Language="F#" Value="type LateBinding = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LateBinding(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.LateBinding : string -&gt; Microsoft.JScript.LateBinding" Usage="new Microsoft.JScript.LateBinding name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LateBinding(System::String ^ name, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.LateBinding : string * obj -&gt; Microsoft.JScript.LateBinding" Usage="new Microsoft.JScript.LateBinding (name, obj)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.Call(System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Function Call (arguments As Object(), construct As Boolean, brackets As Boolean, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Call(cli::array &lt;System::Object ^&gt; ^ arguments, bool construct, bool brackets, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="member this.Call : obj[] * bool * bool * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="lateBinding.Call (arguments, construct, brackets, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.CallValue(System.Object,System.Object,System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CallValue (thisob As Object, val As Object, arguments As Object(), construct As Boolean, brackets As Boolean, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CallValue(System::Object ^ thisob, System::Object ^ val, cli::array &lt;System::Object ^&gt; ^ arguments, bool construct, bool brackets, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member CallValue : obj * obj * obj[] * bool * bool * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="Microsoft.JScript.LateBinding.CallValue (thisob, val, arguments, construct, brackets, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.CallValue2(System.Object,System.Object,System.Object[],System.Boolean,System.Boolean,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CallValue2 (val As Object, thisob As Object, arguments As Object(), construct As Boolean, brackets As Boolean, engine As VsaEngine) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CallValue2(System::Object ^ val, System::Object ^ thisob, cli::array &lt;System::Object ^&gt; ^ arguments, bool construct, bool brackets, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member CallValue2 : obj * obj * obj[] * bool * bool * Microsoft.JScript.Vsa.VsaEngine -&gt; obj" Usage="Microsoft.JScript.LateBinding.CallValue2 (val, thisob, arguments, construct, brackets, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; bool" Usage="lateBinding.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.DeleteMember(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteMember (obj As Object, name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeleteMember(System::Object ^ obj, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member DeleteMember : obj * string -&gt; bool" Usage="Microsoft.JScript.LateBinding.DeleteMember (obj, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.GetNonMissingValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNonMissingValue () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetNonMissingValue();" />
+      <MemberSignature Language="F#" Value="member this.GetNonMissingValue : unit -&gt; obj" Usage="lateBinding.GetNonMissingValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.GetValue2" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue2 () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue2();" />
+      <MemberSignature Language="F#" Value="member this.GetValue2 : unit -&gt; obj" Usage="lateBinding.GetValue2 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LateBinding.obj" />
       <MemberSignature Language="VB.NET" Value="Public obj As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ obj;" />
+      <MemberSignature Language="F#" Value="val mutable obj : obj" Usage="Microsoft.JScript.LateBinding.obj" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.SetIndexedPropertyValueStatic(System.Object,System.Object[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIndexedPropertyValueStatic (obj As Object, arguments As Object(), value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIndexedPropertyValueStatic(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ arguments, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetIndexedPropertyValueStatic : obj * obj[] * obj -&gt; unit" Usage="Microsoft.JScript.LateBinding.SetIndexedPropertyValueStatic (obj, arguments, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -360,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.LateBinding.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : obj -&gt; unit" Usage="lateBinding.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

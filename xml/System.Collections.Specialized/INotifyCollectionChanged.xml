@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyCollectionChanged" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type INotifyCollectionChanged = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

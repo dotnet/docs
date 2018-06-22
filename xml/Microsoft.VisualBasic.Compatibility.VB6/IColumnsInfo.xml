@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IColumnsInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IColumnsInfo" />
+  <TypeSignature Language="F#" Value="type IColumnsInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.GetColumnInfo(System.Int32@,System.IntPtr@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetColumnInfo (ByRef cColumns As Integer, ByRef pColumnInfo As IntPtr, ByRef pStringsBuffer As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetColumnInfo([Runtime::InteropServices::Out] int % cColumns, [Runtime::InteropServices::Out] IntPtr % pColumnInfo, [Runtime::InteropServices::Out] IntPtr % pStringsBuffer);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnInfo :  *  *  -&gt; unit" Usage="iColumnsInfo.GetColumnInfo (cColumns, pColumnInfo, pStringsBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.MapColumnIDs(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBID[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub MapColumnIDs (cColumnIDs As Integer, columnIDs As DBID(), rgColumns As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MapColumnIDs(int cColumnIDs, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBID&gt; ^ columnIDs, cli::array &lt;int&gt; ^ rgColumns);" />
+      <MemberSignature Language="F#" Value="abstract member MapColumnIDs : int * Microsoft.VisualBasic.Compatibility.VB6.DBID[] * int[] -&gt; unit" Usage="iColumnsInfo.MapColumnIDs (cColumnIDs, columnIDs, rgColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

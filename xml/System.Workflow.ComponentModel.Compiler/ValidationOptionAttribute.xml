@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationOptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationOptionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ValidationOptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@ public sealed partial class Activity1: Activity
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.Compiler.ValidationOption validationOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.#ctor(System.Workflow.ComponentModel.Compiler.ValidationOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationOptionAttribute(System::Workflow::ComponentModel::Compiler::ValidationOption validationOption);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute : System.Workflow.ComponentModel.Compiler.ValidationOption -&gt; System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" Usage="new System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute validationOption" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -97,6 +99,7 @@ public sealed partial class Activity1: Activity
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationOption As ValidationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::ValidationOption ValidationOption { System::Workflow::ComponentModel::Compiler::ValidationOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationOption : System.Workflow.ComponentModel.Compiler.ValidationOption" Usage="System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

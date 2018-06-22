@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlModification" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessControlModification" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessControlModification" />
+  <TypeSignature Language="F#" Value="type AccessControlModification = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 0" Usage="System.Security.AccessControl.AccessControlModification.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 3" Usage="System.Security.AccessControl.AccessControlModification.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="RemoveAll" />
       <MemberSignature Language="C++ CLI" Value="RemoveAll" />
+      <MemberSignature Language="F#" Value="RemoveAll = 4" Usage="System.Security.AccessControl.AccessControlModification.RemoveAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.RemoveSpecific" />
       <MemberSignature Language="VB.NET" Value="RemoveSpecific" />
       <MemberSignature Language="C++ CLI" Value="RemoveSpecific" />
+      <MemberSignature Language="F#" Value="RemoveSpecific = 5" Usage="System.Security.AccessControl.AccessControlModification.RemoveSpecific" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Reset" />
       <MemberSignature Language="VB.NET" Value="Reset" />
       <MemberSignature Language="C++ CLI" Value="Reset" />
+      <MemberSignature Language="F#" Value="Reset = 2" Usage="System.Security.AccessControl.AccessControlModification.Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlModification.Set" />
       <MemberSignature Language="VB.NET" Value="Set" />
       <MemberSignature Language="C++ CLI" Value="Set" />
+      <MemberSignature Language="F#" Value="Set = 1" Usage="System.Security.AccessControl.AccessControlModification.Set" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

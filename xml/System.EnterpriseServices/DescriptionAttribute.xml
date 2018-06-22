@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.DescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DescriptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DescriptionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DescriptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.DescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (desc As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DescriptionAttribute(System::String ^ desc);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.DescriptionAttribute : string -&gt; System.EnterpriseServices.DescriptionAttribute" Usage="new System.EnterpriseServices.DescriptionAttribute desc" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

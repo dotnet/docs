@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedSet`1.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure SortedSet(Of T).Enumerator&#xA;Implements IDeserializationCallback, IEnumerator(Of T), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public: value class SortedSet&lt;T&gt;::Enumerator : System::Collections::Generic::IEnumerator&lt;T&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type SortedSet&lt;'T&gt;.Enumerator = struct&#xA;    interface IEnumerator&lt;'T&gt;&#xA;    interface IEnumerator&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Enumerator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="enumerator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedSet&lt;'T&gt;.Enumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

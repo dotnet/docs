@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrackBarThumbState" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrackBarThumbState" />
+  <TypeSignature Language="F#" Value="type TrackBarThumbState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 5" Usage="System.Windows.Forms.VisualStyles.TrackBarThumbState.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Hot" />
       <MemberSignature Language="VB.NET" Value="Hot" />
       <MemberSignature Language="C++ CLI" Value="Hot" />
+      <MemberSignature Language="F#" Value="Hot = 2" Usage="System.Windows.Forms.VisualStyles.TrackBarThumbState.Hot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.Windows.Forms.VisualStyles.TrackBarThumbState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Pressed" />
       <MemberSignature Language="VB.NET" Value="Pressed" />
       <MemberSignature Language="C++ CLI" Value="Pressed" />
+      <MemberSignature Language="F#" Value="Pressed = 3" Usage="System.Windows.Forms.VisualStyles.TrackBarThumbState.Pressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

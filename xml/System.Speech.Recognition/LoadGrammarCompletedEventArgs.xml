@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.LoadGrammarCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LoadGrammarCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoadGrammarCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type LoadGrammarCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +141,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Grammar As Grammar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::Grammar ^ Grammar { System::Speech::Recognition::Grammar ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Grammar : System.Speech.Recognition.Grammar" Usage="System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseContext" />
   <TypeSignature Language="VB.NET" Value="Public Class LicenseContext&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class LicenseContext : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type LicenseContext = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSavedLicenseKey(class System.Type type, class System.Reflection.Assembly resourceAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSavedLicenseKey(Type ^ type, System::Reflection::Assembly ^ resourceAssembly);" />
+      <MemberSignature Language="F#" Value="abstract member GetSavedLicenseKey : Type * System.Reflection.Assembly -&gt; string&#xA;override this.GetSavedLicenseKey : Type * System.Reflection.Assembly -&gt; string" Usage="licenseContext.GetSavedLicenseKey (type, resourceAssembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetService(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="licenseContext.GetService type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSavedLicenseKey(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSavedLicenseKey(Type ^ type, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member SetSavedLicenseKey : Type * string -&gt; unit&#xA;override this.SetSavedLicenseKey : Type * string -&gt; unit" Usage="licenseContext.SetSavedLicenseKey (type, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseContext.UsageMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UsageMode As LicenseUsageMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::LicenseUsageMode UsageMode { System::ComponentModel::LicenseUsageMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsageMode : System.ComponentModel.LicenseUsageMode" Usage="System.ComponentModel.LicenseContext.UsageMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

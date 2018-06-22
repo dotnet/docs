@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Json.JsonArray" />
   <TypeSignature Language="VB.NET" Value="Public Class JsonArray&#xA;Inherits JsonValue&#xA;Implements ICollection(Of JsonValue), IEnumerable(Of JsonValue), IList(Of JsonValue)" />
   <TypeSignature Language="C++ CLI" Value="public ref class JsonArray : System::Json::JsonValue, System::Collections::Generic::ICollection&lt;System::Json::JsonValue ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Json::JsonValue ^&gt;, System::Collections::Generic::IList&lt;System::Json::JsonValue ^&gt;" />
+  <TypeSignature Language="F#" Value="type JsonArray = class&#xA;    inherit JsonValue&#xA;    interface IList&lt;JsonValue&gt;&#xA;    interface ICollection&lt;JsonValue&gt;&#xA;    interface seq&lt;JsonValue&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Json</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.#ctor(System.Collections.Generic.IEnumerable{System.Json.JsonValue})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of JsonValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonArray(System::Collections::Generic::IEnumerable&lt;System::Json::JsonValue ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Json.JsonArray : seq&lt;System.Json.JsonValue&gt; -&gt; System.Json.JsonArray" Usage="new System.Json.JsonArray items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.#ctor(System.Json.JsonValue[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray items As JsonValue())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonArray(... cli::array &lt;System::Json::JsonValue ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Json.JsonArray : System.Json.JsonValue[] -&gt; System.Json.JsonArray" Usage="new System.Json.JsonArray items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Add(System.Json.JsonValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As JsonValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Json::JsonValue ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Json.JsonValue -&gt; unit&#xA;override this.Add : System.Json.JsonValue -&gt; unit" Usage="jsonArray.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.AddRange(System.Collections.Generic.IEnumerable{System.Json.JsonValue})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (items As IEnumerable(Of JsonValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::Generic::IEnumerable&lt;System::Json::JsonValue ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;System.Json.JsonValue&gt; -&gt; unit" Usage="jsonArray.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.AddRange(System.Json.JsonValue[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (ParamArray items As JsonValue())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(... cli::array &lt;System::Json::JsonValue ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Json.JsonValue[] -&gt; unit" Usage="jsonArray.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="jsonArray.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Contains(System.Json.JsonValue)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As JsonValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Json::JsonValue ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Json.JsonValue -&gt; bool&#xA;override this.Contains : System.Json.JsonValue -&gt; bool" Usage="jsonArray.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.CopyTo(System.Json.JsonValue[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As JsonValue(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Json::JsonValue ^&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Json.JsonValue[] * int -&gt; unit&#xA;override this.CopyTo : System.Json.JsonValue[] * int -&gt; unit" Usage="jsonArray.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonArray.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Json.JsonArray.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -265,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.IndexOf(System.Json.JsonValue)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As JsonValue) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Json::JsonValue ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Json.JsonValue -&gt; int&#xA;override this.IndexOf : System.Json.JsonValue -&gt; int" Usage="jsonArray.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -293,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Insert(System.Int32,System.Json.JsonValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As JsonValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Json::JsonValue ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Json.JsonValue -&gt; unit&#xA;override this.Insert : int * System.Json.JsonValue -&gt; unit" Usage="jsonArray.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -322,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonArray.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Json.JsonArray.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -346,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonArray.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides NotOverridable Property Item(index As Integer) As JsonValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Json::JsonValue ^ default[int] { System::Json::JsonValue ^ get(int index); void set(int index, System::Json::JsonValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Json.JsonValue with get, set" Usage="System.Json.JsonArray.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -374,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Json.JsonArray.JsonType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property JsonType As JsonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Json::JsonType JsonType { System::Json::JsonType get(); };" />
+      <MemberSignature Language="F#" Value="member this.JsonType : System.Json.JsonType" Usage="System.Json.JsonArray.JsonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -395,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Remove(System.Json.JsonValue)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As JsonValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Json::JsonValue ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Json.JsonValue -&gt; bool&#xA;override this.Remove : System.Json.JsonValue -&gt; bool" Usage="jsonArray.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -423,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="jsonArray.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -449,6 +466,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="override this.Save : System.IO.Stream -&gt; unit" Usage="jsonArray.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>

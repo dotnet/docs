@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageExtensionMethods" />
   <TypeSignature Language="VB.NET" Value="Public Module MessageExtensionMethods" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageExtensionMethods abstract sealed" />
+  <TypeSignature Language="F#" Value="type MessageExtensionMethods = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpRequestMessage ToHttpRequestMessage(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpRequestMessage(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Net::Http::HttpRequestMessage ^ ToHttpRequestMessage(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="static member ToHttpRequestMessage : System.ServiceModel.Channels.Message -&gt; System.Net.Http.HttpRequestMessage" Usage="System.ServiceModel.Channels.MessageExtensionMethods.ToHttpRequestMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpResponseMessage ToHttpResponseMessage(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Net::Http::HttpResponseMessage ^ ToHttpResponseMessage(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="static member ToHttpResponseMessage : System.ServiceModel.Channels.Message -&gt; System.Net.Http.HttpResponseMessage" Usage="System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualTransition" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualTransition&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualTransition : System::Windows::DependencyObject" />
+  <TypeSignature Language="F#" Value="type VisualTransition = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ From { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="System.Windows.VisualTransition.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.GeneratedDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedDuration As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Duration GeneratedDuration { System::Windows::Duration get(); void set(System::Windows::Duration value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedDuration : System.Windows.Duration with get, set" Usage="System.Windows.VisualTransition.GeneratedDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.GeneratedEasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedEasingFunction As IEasingFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ GeneratedEasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedEasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.VisualTransition.GeneratedEasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.Storyboard" />
       <MemberSignature Language="VB.NET" Value="Public Property Storyboard As Storyboard" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Storyboard ^ Storyboard { System::Windows::Media::Animation::Storyboard ^ get(); void set(System::Windows::Media::Animation::Storyboard ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Storyboard : System.Windows.Media.Animation.Storyboard with get, set" Usage="System.Windows.VisualTransition.Storyboard" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualTransition.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ To { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : string with get, set" Usage="System.Windows.VisualTransition.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

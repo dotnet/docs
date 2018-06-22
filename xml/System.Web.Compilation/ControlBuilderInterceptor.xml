@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ControlBuilderInterceptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ControlBuilderInterceptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlBuilderInterceptor abstract" />
+  <TypeSignature Language="F#" Value="type ControlBuilderInterceptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnProcessGeneratedCode(class System.Web.UI.ControlBuilder controlBuilder, class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.CodeDom.CodeTypeDeclaration baseType, class System.CodeDom.CodeTypeDeclaration derivedType, class System.CodeDom.CodeMemberMethod buildMethod, class System.CodeDom.CodeMemberMethod dataBindingMethod, class System.Collections.IDictionary additionalState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ControlBuilderInterceptor.OnProcessGeneratedCode(System.Web.UI.ControlBuilder,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnProcessGeneratedCode(System::Web::UI::ControlBuilder ^ controlBuilder, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::CodeDom::CodeTypeDeclaration ^ baseType, System::CodeDom::CodeTypeDeclaration ^ derivedType, System::CodeDom::CodeMemberMethod ^ buildMethod, System::CodeDom::CodeMemberMethod ^ dataBindingMethod, System::Collections::IDictionary ^ additionalState);" />
+      <MemberSignature Language="F#" Value="abstract member OnProcessGeneratedCode : System.Web.UI.ControlBuilder * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod * System.Collections.IDictionary -&gt; unit&#xA;override this.OnProcessGeneratedCode : System.Web.UI.ControlBuilder * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod * System.Collections.IDictionary -&gt; unit" Usage="controlBuilderInterceptor.OnProcessGeneratedCode (controlBuilder, codeCompileUnit, baseType, derivedType, buildMethod, dataBindingMethod, additionalState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PreControlBuilderInit(class System.Web.UI.ControlBuilder controlBuilder, class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attributes, class System.Collections.IDictionary additionalState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ControlBuilderInterceptor.PreControlBuilderInit(System.Web.UI.ControlBuilder,System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PreControlBuilderInit(System::Web::UI::ControlBuilder ^ controlBuilder, System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attributes, System::Collections::IDictionary ^ additionalState);" />
+      <MemberSignature Language="F#" Value="abstract member PreControlBuilderInit : System.Web.UI.ControlBuilder * System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary * System.Collections.IDictionary -&gt; unit&#xA;override this.PreControlBuilderInit : System.Web.UI.ControlBuilder * System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary * System.Collections.IDictionary -&gt; unit" Usage="controlBuilderInterceptor.PreControlBuilderInit (controlBuilder, parser, parentBuilder, type, tagName, id, attributes, additionalState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

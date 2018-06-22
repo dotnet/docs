@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.SequenceNumber" />
   <TypeSignature Language="VB.NET" Value="Public Structure SequenceNumber&#xA;Implements IComparable(Of SequenceNumber)" />
   <TypeSignature Language="C++ CLI" Value="public value class SequenceNumber : IComparable&lt;System::IO::Log::SequenceNumber&gt;" />
+  <TypeSignature Language="F#" Value="type SequenceNumber = struct" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sequenceNumber As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequenceNumber(cli::array &lt;System::Byte&gt; ^ sequenceNumber);" />
+      <MemberSignature Language="F#" Value="new System.IO.Log.SequenceNumber : byte[] -&gt; System.IO.Log.SequenceNumber" Usage="new System.IO.Log.SequenceNumber sequenceNumber" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.CompareTo(System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As SequenceNumber) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::IO::Log::SequenceNumber other);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : System.IO.Log.SequenceNumber -&gt; int&#xA;override this.CompareTo : System.IO.Log.SequenceNumber -&gt; int" Usage="sequenceNumber.CompareTo other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.Equals(System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::IO::Log::SequenceNumber other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.IO.Log.SequenceNumber -&gt; bool" Usage="sequenceNumber.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sequenceNumber.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBytes () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBytes();" />
+      <MemberSignature Language="F#" Value="member this.GetBytes : unit -&gt; byte[]" Usage="sequenceNumber.GetBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sequenceNumber.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.SequenceNumber.Invalid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Invalid As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::Log::SequenceNumber Invalid { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.Invalid : System.IO.Log.SequenceNumber" Usage="System.IO.Log.SequenceNumber.Invalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Equality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="c1 = c2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="c1 &gt; c2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="c1 &gt;= c2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Inequality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="System.IO.Log.SequenceNumber.op_Inequality (c1, c2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="c1 &lt; c2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (c1 As SequenceNumber, c2 As SequenceNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::IO::Log::SequenceNumber c1, System::IO::Log::SequenceNumber c2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.IO.Log.SequenceNumber * System.IO.Log.SequenceNumber -&gt; bool" Usage="c1 &lt;= c2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

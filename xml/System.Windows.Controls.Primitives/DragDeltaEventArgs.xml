@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DragDeltaEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DragDeltaEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DragDeltaEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragDeltaEventArgs.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (horizontalChange As Double, verticalChange As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DragDeltaEventArgs(double horizontalChange, double verticalChange);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Primitives.DragDeltaEventArgs : double * double -&gt; System.Windows.Controls.Primitives.DragDeltaEventArgs" Usage="new System.Windows.Controls.Primitives.DragDeltaEventArgs (horizontalChange, verticalChange)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragDeltaEventArgs.HorizontalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalChange : double" Usage="System.Windows.Controls.Primitives.DragDeltaEventArgs.HorizontalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragDeltaEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dragDeltaEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragDeltaEventArgs.VerticalChange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalChange As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalChange { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalChange : double" Usage="System.Windows.Controls.Primitives.DragDeltaEventArgs.VerticalChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTemplate&#xA;Inherits FrameworkTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTemplate : System::Windows::FrameworkTemplate" />
+  <TypeSignature Language="F#" Value="type DataTemplate = class&#xA;    inherit FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataTemplate.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataType As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTemplate(System::Object ^ dataType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataTemplate : obj -&gt; System.Windows.DataTemplate" Usage="new System.Windows.DataTemplate dataType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTemplate.DataTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTemplateKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataTemplateKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTemplateKey : obj" Usage="System.Windows.DataTemplate.DataTemplateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTemplate.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataType { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : obj with get, set" Usage="System.Windows.DataTemplate.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTemplate.Triggers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Triggers As TriggerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerCollection ^ Triggers { System::Windows::TriggerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Triggers : System.Windows.TriggerCollection" Usage="System.Windows.DataTemplate.Triggers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
+      <MemberSignature Language="F#" Value="override this.ValidateTemplatedParent : System.Windows.FrameworkElement -&gt; unit" Usage="dataTemplate.ValidateTemplatedParent templatedParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

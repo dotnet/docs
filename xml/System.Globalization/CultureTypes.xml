@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum CultureTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class CultureTypes" />
+  <TypeSignature Language="F#" Value="type CultureTypes = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.AllCultures" />
       <MemberSignature Language="VB.NET" Value="AllCultures" />
       <MemberSignature Language="C++ CLI" Value="AllCultures" />
+      <MemberSignature Language="F#" Value="AllCultures = 7" Usage="System.Globalization.CultureTypes.AllCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.FrameworkCultures" />
       <MemberSignature Language="VB.NET" Value="FrameworkCultures" />
       <MemberSignature Language="C++ CLI" Value="FrameworkCultures" />
+      <MemberSignature Language="F#" Value="FrameworkCultures = 64" Usage="System.Globalization.CultureTypes.FrameworkCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.InstalledWin32Cultures" />
       <MemberSignature Language="VB.NET" Value="InstalledWin32Cultures" />
       <MemberSignature Language="C++ CLI" Value="InstalledWin32Cultures" />
+      <MemberSignature Language="F#" Value="InstalledWin32Cultures = 4" Usage="System.Globalization.CultureTypes.InstalledWin32Cultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.NeutralCultures" />
       <MemberSignature Language="VB.NET" Value="NeutralCultures" />
       <MemberSignature Language="C++ CLI" Value="NeutralCultures" />
+      <MemberSignature Language="F#" Value="NeutralCultures = 1" Usage="System.Globalization.CultureTypes.NeutralCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.ReplacementCultures" />
       <MemberSignature Language="VB.NET" Value="ReplacementCultures" />
       <MemberSignature Language="C++ CLI" Value="ReplacementCultures" />
+      <MemberSignature Language="F#" Value="ReplacementCultures = 16" Usage="System.Globalization.CultureTypes.ReplacementCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.SpecificCultures" />
       <MemberSignature Language="VB.NET" Value="SpecificCultures" />
       <MemberSignature Language="C++ CLI" Value="SpecificCultures" />
+      <MemberSignature Language="F#" Value="SpecificCultures = 2" Usage="System.Globalization.CultureTypes.SpecificCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.UserCustomCulture" />
       <MemberSignature Language="VB.NET" Value="UserCustomCulture" />
       <MemberSignature Language="C++ CLI" Value="UserCustomCulture" />
+      <MemberSignature Language="F#" Value="UserCustomCulture = 8" Usage="System.Globalization.CultureTypes.UserCustomCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.WindowsOnlyCultures" />
       <MemberSignature Language="VB.NET" Value="WindowsOnlyCultures" />
       <MemberSignature Language="C++ CLI" Value="WindowsOnlyCultures" />
+      <MemberSignature Language="F#" Value="WindowsOnlyCultures = 32" Usage="System.Globalization.CultureTypes.WindowsOnlyCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

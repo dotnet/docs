@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.UrlAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UrlAttribute&#xA;Inherits DataTypeAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlAttribute sealed : System::ComponentModel::DataAnnotations::DataTypeAttribute" />
+  <TypeSignature Language="F#" Value="type UrlAttribute = class&#xA;    inherit DataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.UrlAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="urlAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

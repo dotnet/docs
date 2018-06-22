@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EnvelopeVersion" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnvelopeVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnvelopeVersion sealed" />
+  <TypeSignature Language="F#" Value="type EnvelopeVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EnvelopeVersion.GetUltimateDestinationActorValues" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUltimateDestinationActorValues () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetUltimateDestinationActorValues();" />
+      <MemberSignature Language="F#" Value="member this.GetUltimateDestinationActorValues : unit -&gt; string[]" Usage="envelopeVersion.GetUltimateDestinationActorValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.NextDestinationActorValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextDestinationActorValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextDestinationActorValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextDestinationActorValue : string" Usage="System.ServiceModel.EnvelopeVersion.NextDestinationActorValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As EnvelopeVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::EnvelopeVersion ^ None { System::ServiceModel::EnvelopeVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.None : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.EnvelopeVersion.None" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.Soap11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap11 As EnvelopeVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::EnvelopeVersion ^ Soap11 { System::ServiceModel::EnvelopeVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Soap11 : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.EnvelopeVersion.Soap11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.Soap12" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap12 As EnvelopeVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::EnvelopeVersion ^ Soap12 { System::ServiceModel::EnvelopeVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Soap12 : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.EnvelopeVersion.Soap12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EnvelopeVersion.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="envelopeVersion.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

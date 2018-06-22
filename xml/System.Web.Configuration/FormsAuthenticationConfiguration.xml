@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationConfiguration&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationConfiguration sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationConfiguration = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
       <MemberSignature Language="VB.NET" Value="Public Property Cookieless As HttpCookieMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieMode Cookieless { System::Web::HttpCookieMode get(); void set(System::Web::HttpCookieMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Cookieless : System.Web.HttpCookieMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.CookieSameSite" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieSameSite As SameSiteMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SameSiteMode CookieSameSite { System::Web::SameSiteMode get(); void set(System::Web::SameSiteMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieSameSite : System.Web.SameSiteMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.CookieSameSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As FormsAuthenticationCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FormsAuthenticationCredentials ^ Credentials { System::Web::Configuration::FormsAuthenticationCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Web.Configuration.FormsAuthenticationCredentials" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCrossAppRedirects As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCrossAppRedirects { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCrossAppRedirects : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property LoginUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoginUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoginUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -475,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       <MemberSignature Language="VB.NET" Value="Public Property Protection As FormsProtectionEnum" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FormsProtectionEnum Protection { System::Web::Configuration::FormsProtectionEnum get(); void set(System::Web::Configuration::FormsProtectionEnum value); };" />
+      <MemberSignature Language="F#" Value="member this.Protection : System.Web.Configuration.FormsProtectionEnum with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -534,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireSSL As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSSL { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireSSL : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -576,6 +590,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property SlidingExpiration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SlidingExpiration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SlidingExpiration : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -617,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TicketCompatibilityMode As TicketCompatibilityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TicketCompatibilityMode TicketCompatibilityMode { System::Web::Configuration::TicketCompatibilityMode get(); void set(System::Web::Configuration::TicketCompatibilityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TicketCompatibilityMode : System.Web.Configuration.TicketCompatibilityMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -656,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

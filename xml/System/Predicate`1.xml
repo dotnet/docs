@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Predicate`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Predicate(Of In T)(obj As T) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public delegate bool Predicate(T obj);" />
+  <TypeSignature Language="F#" Value="type Predicate&lt;'T&gt; = delegate of 'T -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

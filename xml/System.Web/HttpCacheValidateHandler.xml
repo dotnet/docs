@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheValidateHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub HttpCacheValidateHandler(context As HttpContext, data As Object, ByRef validationStatus As HttpValidationStatus)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void HttpCacheValidateHandler(HttpContext ^ context, System::Object ^ data, HttpValidationStatus % validationStatus);" />
+  <TypeSignature Language="F#" Value="type HttpCacheValidateHandler = delegate of HttpContext * obj *  -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

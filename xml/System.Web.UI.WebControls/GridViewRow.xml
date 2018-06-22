@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRow" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewRow&#xA;Inherits TableRow&#xA;Implements IDataItemContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewRow : System::Web::UI::WebControls::TableRow, System::Web::UI::IDataItemContainer" />
+  <TypeSignature Language="F#" Value="type GridViewRow = class&#xA;    inherit TableRow&#xA;    interface IDataItemContainer&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRow.#ctor(System.Int32,System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, dataItemIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewRow(int rowIndex, int dataItemIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewRow : int * int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.GridViewRow" Usage="new System.Web.UI.WebControls.GridViewRow (rowIndex, dataItemIndex, rowType, rowState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.GridViewRow.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.GridViewRow.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="gridViewRow.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Web.UI.WebControls.GridViewRow.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RowState As DataControlRowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowState RowState { System::Web::UI::WebControls::DataControlRowState get(); void set(System::Web::UI::WebControls::DataControlRowState value); };" />
+      <MemberSignature Language="F#" Value="member this.RowState : System.Web.UI.WebControls.DataControlRowState with get, set" Usage="System.Web.UI.WebControls.GridViewRow.RowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -330,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.RowType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RowType As DataControlRowType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowType RowType { System::Web::UI::WebControls::DataControlRowType get(); void set(System::Web::UI::WebControls::DataControlRowType value); };" />
+      <MemberSignature Language="F#" Value="member this.RowType : System.Web.UI.WebControls.DataControlRowType with get, set" Usage="System.Web.UI.WebControls.GridViewRow.RowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DataItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItem As Object Implements IDataItemContainer.DataItem" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.IDataItemContainer.DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridViewRow.System.Web.UI.IDataItemContainer.DataItem" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItem</InterfaceMember>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DataItemIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItemIndex As Integer Implements IDataItemContainer.DataItemIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridViewRow.System.Web.UI.IDataItemContainer.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -441,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRow.System#Web#UI#IDataItemContainer#DisplayIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DisplayIndex As Integer Implements IDataItemContainer.DisplayIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridViewRow.System.Web.UI.IDataItemContainer.DisplayIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowDividerDoubleClickEventArgs&#xA;Inherits HandledMouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowDividerDoubleClickEventArgs : System::Windows::Forms::HandledMouseEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowDividerDoubleClickEventArgs = class&#xA;    inherit HandledMouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs.#ctor(System.Int32,System.Windows.Forms.HandledMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, e As HandledMouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewRowDividerDoubleClickEventArgs(int rowIndex, System::Windows::Forms::HandledMouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs : int * System.Windows.Forms.HandledMouseEventArgs -&gt; System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs" Usage="new System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs (rowIndex, e)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

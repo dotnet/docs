@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReceiveSettings sealed" />
+  <TypeSignature Language="F#" Value="type ReceiveSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property CanCreateInstance As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateInstance { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateInstance : bool with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerDisplayName : string with get, set" Usage="System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

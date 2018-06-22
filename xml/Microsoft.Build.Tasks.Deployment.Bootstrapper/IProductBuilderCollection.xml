@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProductBuilderCollection" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProductBuilderCollection" />
+  <TypeSignature Language="F#" Value="type IProductBuilderCollection = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (builder As ProductBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit" Usage="iProductBuilderCollection.Add builder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

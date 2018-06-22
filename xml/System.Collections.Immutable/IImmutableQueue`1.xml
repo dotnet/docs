@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.IImmutableQueue`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IImmutableQueue(Of T)&#xA;Implements IEnumerable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IImmutableQueue : System::Collections::Generic::IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type IImmutableQueue&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableQueue`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As IImmutableQueue(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; System.Collections.Immutable.IImmutableQueue&lt;'T&gt;" Usage="iImmutableQueue.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableQueue`1.Dequeue" />
       <MemberSignature Language="VB.NET" Value="Public Function Dequeue () As IImmutableQueue(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ Dequeue();" />
+      <MemberSignature Language="F#" Value="abstract member Dequeue : unit -&gt; System.Collections.Immutable.IImmutableQueue&lt;'T&gt;" Usage="iImmutableQueue.Dequeue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableQueue`1.Enqueue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Enqueue (value As T) As IImmutableQueue(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ Enqueue(T value);" />
+      <MemberSignature Language="F#" Value="abstract member Enqueue : 'T -&gt; System.Collections.Immutable.IImmutableQueue&lt;'T&gt;" Usage="iImmutableQueue.Enqueue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.IImmutableQueue`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Immutable.IImmutableQueue&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.IImmutableQueue`1.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Peek();" />
+      <MemberSignature Language="F#" Value="abstract member Peek : unit -&gt; 'T" Usage="iImmutableQueue.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionStatus" />
+  <TypeSignature Language="F#" Value="type TransactionStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 4" Usage="System.EnterpriseServices.TransactionStatus.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborting" />
       <MemberSignature Language="VB.NET" Value="Aborting" />
       <MemberSignature Language="C++ CLI" Value="Aborting" />
+      <MemberSignature Language="F#" Value="Aborting = 3" Usage="System.EnterpriseServices.TransactionStatus.Aborting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Commited" />
       <MemberSignature Language="VB.NET" Value="Commited" />
       <MemberSignature Language="C++ CLI" Value="Commited" />
+      <MemberSignature Language="F#" Value="Commited = 0" Usage="System.EnterpriseServices.TransactionStatus.Commited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.LocallyOk" />
       <MemberSignature Language="VB.NET" Value="LocallyOk" />
       <MemberSignature Language="C++ CLI" Value="LocallyOk" />
+      <MemberSignature Language="F#" Value="LocallyOk = 1" Usage="System.EnterpriseServices.TransactionStatus.LocallyOk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.NoTransaction" />
       <MemberSignature Language="VB.NET" Value="NoTransaction" />
       <MemberSignature Language="C++ CLI" Value="NoTransaction" />
+      <MemberSignature Language="F#" Value="NoTransaction = 2" Usage="System.EnterpriseServices.TransactionStatus.NoTransaction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

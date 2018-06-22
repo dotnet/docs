@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeDomLocalizationModel" />
   <TypeSignature Language="C++ CLI" Value="public enum class CodeDomLocalizationModel" />
+  <TypeSignature Language="F#" Value="type CodeDomLocalizationModel = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyAssignment" />
       <MemberSignature Language="VB.NET" Value="PropertyAssignment" />
       <MemberSignature Language="C++ CLI" Value="PropertyAssignment" />
+      <MemberSignature Language="F#" Value="PropertyAssignment = 1" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyReflection" />
       <MemberSignature Language="VB.NET" Value="PropertyReflection" />
       <MemberSignature Language="C++ CLI" Value="PropertyReflection" />
+      <MemberSignature Language="F#" Value="PropertyReflection = 2" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyReflection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

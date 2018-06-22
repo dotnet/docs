@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IAsyncErrorNotify" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAsyncErrorNotify" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAsyncErrorNotify" />
+  <TypeSignature Language="F#" Value="type IAsyncErrorNotify = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IAsyncErrorNotify.OnError(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnError (hresult As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnError(int hresult);" />
+      <MemberSignature Language="F#" Value="abstract member OnError : int -&gt; unit" Usage="iAsyncErrorNotify.OnError hresult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MergeAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum MergeAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class MergeAction" />
+  <TypeSignature Language="F#" Value="type MergeAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Append" />
       <MemberSignature Language="VB.NET" Value="Append" />
       <MemberSignature Language="C++ CLI" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 0" Usage="System.Windows.Forms.MergeAction.Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Windows.Forms.MergeAction.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.MatchOnly" />
       <MemberSignature Language="VB.NET" Value="MatchOnly" />
       <MemberSignature Language="C++ CLI" Value="MatchOnly" />
+      <MemberSignature Language="F#" Value="MatchOnly = 4" Usage="System.Windows.Forms.MergeAction.MatchOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 3" Usage="System.Windows.Forms.MergeAction.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 2" Usage="System.Windows.Forms.MergeAction.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

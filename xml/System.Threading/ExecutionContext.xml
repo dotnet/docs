@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ExecutionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExecutionContext&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExecutionContext sealed : IDisposable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ExecutionContext = class&#xA;    interface IDisposable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.Capture" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Capture () As ExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ExecutionContext ^ Capture();" />
+      <MemberSignature Language="F#" Value="static member Capture : unit -&gt; System.Threading.ExecutionContext" Usage="System.Threading.ExecutionContext.Capture " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As ExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::ExecutionContext ^ CreateCopy();" />
+      <MemberSignature Language="F#" Value="member this.CreateCopy : unit -&gt; System.Threading.ExecutionContext" Usage="executionContext.CreateCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="executionContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="executionContext.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.IsFlowSuppressed" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsFlowSuppressed () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFlowSuppressed();" />
+      <MemberSignature Language="F#" Value="static member IsFlowSuppressed : unit -&gt; bool" Usage="System.Threading.ExecutionContext.IsFlowSuppressed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.RestoreFlow" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RestoreFlow ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RestoreFlow();" />
+      <MemberSignature Language="F#" Value="static member RestoreFlow : unit -&gt; unit" Usage="System.Threading.ExecutionContext.RestoreFlow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +335,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Run(class System.Threading.ExecutionContext executionContext, class System.Threading.ContextCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run(System::Threading::ExecutionContext ^ executionContext, System::Threading::ContextCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="static member Run : System.Threading.ExecutionContext * System.Threading.ContextCallback * obj -&gt; unit" Usage="System.Threading.ExecutionContext.Run (executionContext, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -389,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ExecutionContext.SuppressFlow" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SuppressFlow () As AsyncFlowControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::AsyncFlowControl SuppressFlow();" />
+      <MemberSignature Language="F#" Value="static member SuppressFlow : unit -&gt; System.Threading.AsyncFlowControl" Usage="System.Threading.ExecutionContext.SuppressFlow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

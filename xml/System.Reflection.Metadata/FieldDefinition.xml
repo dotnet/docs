@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.FieldDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Structure FieldDefinition" />
   <TypeSignature Language="C++ CLI" Value="public value class FieldDefinition" />
+  <TypeSignature Language="F#" Value="type FieldDefinition = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.FieldDefinition.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As FieldAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::FieldAttributes Attributes { System::Reflection::FieldAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.FieldAttributes" Usage="System.Reflection.Metadata.FieldDefinition.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.DecodeSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; TType DecodeSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.DecodeSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype&gt; -&gt; 'ype" Usage="fieldDefinition.DecodeSignature provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.DecodeSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As TType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; TType DecodeSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
+      <MemberSignature Language="F#" Value="member this.DecodeSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype, 'GenericContext&gt; * 'GenericContext -&gt; 'ype" Usage="fieldDefinition.DecodeSignature (provider, genericContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="fieldDefinition.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetDeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeclaringType () As TypeDefinitionHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::TypeDefinitionHandle GetDeclaringType();" />
+      <MemberSignature Language="F#" Value="member this.GetDeclaringType : unit -&gt; System.Reflection.Metadata.TypeDefinitionHandle" Usage="fieldDefinition.GetDeclaringType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefaultValue () As ConstantHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ConstantHandle GetDefaultValue();" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultValue : unit -&gt; System.Reflection.Metadata.ConstantHandle" Usage="fieldDefinition.GetDefaultValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetMarshallingDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMarshallingDescriptor () As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobHandle GetMarshallingDescriptor();" />
+      <MemberSignature Language="F#" Value="member this.GetMarshallingDescriptor : unit -&gt; System.Reflection.Metadata.BlobHandle" Usage="fieldDefinition.GetMarshallingDescriptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetOffset" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOffset () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOffset();" />
+      <MemberSignature Language="F#" Value="member this.GetOffset : unit -&gt; int" Usage="fieldDefinition.GetOffset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.FieldDefinition.GetRelativeVirtualAddress" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelativeVirtualAddress () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRelativeVirtualAddress();" />
+      <MemberSignature Language="F#" Value="member this.GetRelativeVirtualAddress : unit -&gt; int" Usage="fieldDefinition.GetRelativeVirtualAddress " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -259,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.FieldDefinition.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.FieldDefinition.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -282,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.FieldDefinition.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Signature { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signature : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.FieldDefinition.Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

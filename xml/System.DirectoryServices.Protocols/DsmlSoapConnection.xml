@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlSoapConnection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DsmlSoapConnection&#xA;Inherits DirectoryConnection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DsmlSoapConnection abstract : System::DirectoryServices::Protocols::DirectoryConnection" />
+  <TypeSignature Language="F#" Value="type DsmlSoapConnection = class&#xA;    inherit DirectoryConnection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapConnection.BeginSession" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginSession ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginSession();" />
+      <MemberSignature Language="F#" Value="abstract member BeginSession : unit -&gt; unit" Usage="dsmlSoapConnection.BeginSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapConnection.EndSession" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndSession ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndSession();" />
+      <MemberSignature Language="F#" Value="abstract member EndSession : unit -&gt; unit" Usage="dsmlSoapConnection.EndSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapConnection.SessionId" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SessionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ SessionId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionId : string" Usage="System.DirectoryServices.Protocols.DsmlSoapConnection.SessionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapConnection.SoapRequestHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapRequestHeader As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ SoapRequestHeader { System::Xml::XmlNode ^ get(); void set(System::Xml::XmlNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapRequestHeader : System.Xml.XmlNode with get, set" Usage="System.DirectoryServices.Protocols.DsmlSoapConnection.SoapRequestHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

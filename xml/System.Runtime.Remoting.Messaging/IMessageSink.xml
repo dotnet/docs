@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMessageSink" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMessageSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMessageSink" />
+  <TypeSignature Language="F#" Value="type IMessageSink = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Messaging.IMessageSink)" />
       <MemberSignature Language="VB.NET" Value="Public Function AsyncProcessMessage (msg As IMessage, replySink As IMessageSink) As IMessageCtrl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Messaging::IMessageCtrl ^ AsyncProcessMessage(System::Runtime::Remoting::Messaging::IMessage ^ msg, System::Runtime::Remoting::Messaging::IMessageSink ^ replySink);" />
+      <MemberSignature Language="F#" Value="abstract member AsyncProcessMessage : System.Runtime.Remoting.Messaging.IMessage * System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Messaging.IMessageCtrl" Usage="iMessageSink.AsyncProcessMessage (msg, replySink)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMessageSink.NextSink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSink As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Messaging::IMessageSink ^ NextSink { System::Runtime::Remoting::Messaging::IMessageSink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSink : System.Runtime.Remoting.Messaging.IMessageSink" Usage="System.Runtime.Remoting.Messaging.IMessageSink.NextSink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMessageSink.SyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function SyncProcessMessage (msg As IMessage) As IMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Messaging::IMessage ^ SyncProcessMessage(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member SyncProcessMessage : System.Runtime.Remoting.Messaging.IMessage -&gt; System.Runtime.Remoting.Messaging.IMessage" Usage="iMessageSink.SyncProcessMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

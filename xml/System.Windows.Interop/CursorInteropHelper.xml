@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.CursorInteropHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class CursorInteropHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class CursorInteropHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type CursorInteropHelper = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.CursorInteropHelper.Create(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (cursorHandle As SafeHandle) As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::Cursor ^ Create(System::Runtime::InteropServices::SafeHandle ^ cursorHandle);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Runtime.InteropServices.SafeHandle -&gt; System.Windows.Input.Cursor" Usage="System.Windows.Interop.CursorInteropHelper.Create cursorHandle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

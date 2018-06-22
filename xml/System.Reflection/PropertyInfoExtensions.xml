@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PropertyInfoExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module PropertyInfoExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyInfoExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type PropertyInfoExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetAccessors(System.Reflection.PropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessors (property As PropertyInfo) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetAccessors(System::Reflection::PropertyInfo ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetAccessors : System.Reflection.PropertyInfo -&gt; System.Reflection.MethodInfo[]" Usage="System.Reflection.PropertyInfoExtensions.GetAccessors property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetAccessors(System.Reflection.PropertyInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessors (property As PropertyInfo, nonPublic As Boolean) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetAccessors(System::Reflection::PropertyInfo ^ property, bool nonPublic);" />
+      <MemberSignature Language="F#" Value="static member GetAccessors : System.Reflection.PropertyInfo * bool -&gt; System.Reflection.MethodInfo[]" Usage="System.Reflection.PropertyInfoExtensions.GetAccessors (property, nonPublic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetGetMethod(System.Reflection.PropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGetMethod (property As PropertyInfo) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetGetMethod(System::Reflection::PropertyInfo ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetGetMethod : System.Reflection.PropertyInfo -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.PropertyInfoExtensions.GetGetMethod property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetGetMethod(System.Reflection.PropertyInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGetMethod (property As PropertyInfo, nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetGetMethod(System::Reflection::PropertyInfo ^ property, bool nonPublic);" />
+      <MemberSignature Language="F#" Value="static member GetGetMethod : System.Reflection.PropertyInfo * bool -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.PropertyInfoExtensions.GetGetMethod (property, nonPublic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetSetMethod(System.Reflection.PropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSetMethod (property As PropertyInfo) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetSetMethod(System::Reflection::PropertyInfo ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetSetMethod : System.Reflection.PropertyInfo -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.PropertyInfoExtensions.GetSetMethod property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfoExtensions.GetSetMethod(System.Reflection.PropertyInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSetMethod (property As PropertyInfo, nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetSetMethod(System::Reflection::PropertyInfo ^ property, bool nonPublic);" />
+      <MemberSignature Language="F#" Value="static member GetSetMethod : System.Reflection.PropertyInfo * bool -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.PropertyInfoExtensions.GetSetMethod (property, nonPublic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

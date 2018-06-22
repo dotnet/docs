@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ExecutedRoutedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ExecutedRoutedEventHandler(sender As Object, e As ExecutedRoutedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ExecutedRoutedEventHandler(System::Object ^ sender, ExecutedRoutedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ExecutedRoutedEventHandler = delegate of obj * ExecutedRoutedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

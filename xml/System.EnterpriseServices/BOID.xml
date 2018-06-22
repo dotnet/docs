@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BOID" />
   <TypeSignature Language="VB.NET" Value="Public Structure BOID" />
   <TypeSignature Language="C++ CLI" Value="public value class BOID" />
+  <TypeSignature Language="F#" Value="type BOID = struct" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BOID.rgb" />
       <MemberSignature Language="VB.NET" Value="Public rgb As Byte() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ rgb;" />
+      <MemberSignature Language="F#" Value="val mutable rgb : byte[]" Usage="System.EnterpriseServices.BOID.rgb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.SatelliteContractVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SatelliteContractVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SatelliteContractVersionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SatelliteContractVersionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.ResourceManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.SatelliteContractVersionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SatelliteContractVersionAttribute(System::String ^ version);" />
+      <MemberSignature Language="F#" Value="new System.Resources.SatelliteContractVersionAttribute : string -&gt; System.Resources.SatelliteContractVersionAttribute" Usage="new System.Resources.SatelliteContractVersionAttribute version" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Resources.SatelliteContractVersionAttribute.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Resources.SatelliteContractVersionAttribute.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>

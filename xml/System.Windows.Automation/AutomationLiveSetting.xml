@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationLiveSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutomationLiveSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class AutomationLiveSetting" />
+  <TypeSignature Language="F#" Value="type AutomationLiveSetting = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Assertive" />
       <MemberSignature Language="VB.NET" Value="Assertive" />
       <MemberSignature Language="C++ CLI" Value="Assertive" />
+      <MemberSignature Language="F#" Value="Assertive = 2" Usage="System.Windows.Automation.AutomationLiveSetting.Assertive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Windows.Automation.AutomationLiveSetting.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationLiveSetting.Polite" />
       <MemberSignature Language="VB.NET" Value="Polite" />
       <MemberSignature Language="C++ CLI" Value="Polite" />
+      <MemberSignature Language="F#" Value="Polite = 1" Usage="System.Windows.Automation.AutomationLiveSetting.Polite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyView" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceKeyView" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceKeyView sealed" />
+  <TypeSignature Language="F#" Value="type InstanceKeyView = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKey As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceKey { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceKey : Guid" Usage="System.Runtime.DurableInstancing.InstanceKeyView.InstanceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeyMetadata As IDictionary(Of XName, InstanceValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ InstanceKeyMetadata { System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeyMetadata : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;" Usage="System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadataConsistency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeyMetadataConsistency As InstanceValueConsistency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceValueConsistency InstanceKeyMetadataConsistency { System::Runtime::DurableInstancing::InstanceValueConsistency get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeyMetadataConsistency : System.Runtime.DurableInstancing.InstanceValueConsistency" Usage="System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadataConsistency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeyState As InstanceKeyState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceKeyState InstanceKeyState { System::Runtime::DurableInstancing::InstanceKeyState get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeyState : System.Runtime.DurableInstancing.InstanceKeyState" Usage="System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

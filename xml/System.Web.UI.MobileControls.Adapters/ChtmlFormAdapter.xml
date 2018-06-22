@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlFormAdapter&#xA;Inherits HtmlFormAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlFormAdapter : System::Web::UI::MobileControls::Adapters::HtmlFormAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlFormAdapter = class&#xA;    inherit HtmlFormAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.RenderExtraHeadElements(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderExtraHeadElements (writer As HtmlMobileTextWriter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RenderExtraHeadElements(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderExtraHeadElements : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; bool" Usage="chtmlFormAdapter.RenderExtraHeadElements writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.RenderPagerTag(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderPagerTag (writer As HtmlMobileTextWriter, pageToNavigate As Integer, text As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderPagerTag(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, int pageToNavigate, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.RenderPagerTag : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * int * string -&gt; unit" Usage="chtmlFormAdapter.RenderPagerTag (writer, pageToNavigate, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlFormAdapter.ShouldRenderFormTag" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldRenderFormTag () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldRenderFormTag();" />
+      <MemberSignature Language="F#" Value="override this.ShouldRenderFormTag : unit -&gt; bool" Usage="chtmlFormAdapter.ShouldRenderFormTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

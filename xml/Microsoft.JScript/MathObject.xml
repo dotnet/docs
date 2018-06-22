@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MathObject" />
   <TypeSignature Language="VB.NET" Value="Public Class MathObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class MathObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type MathObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.abs(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function abs (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double abs(double d);" />
+      <MemberSignature Language="F#" Value="static member abs : double -&gt; double" Usage="Microsoft.JScript.MathObject.abs d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.acos(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function acos (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double acos(double x);" />
+      <MemberSignature Language="F#" Value="static member acos : double -&gt; double" Usage="Microsoft.JScript.MathObject.acos x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.asin(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function asin (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double asin(double x);" />
+      <MemberSignature Language="F#" Value="static member asin : double -&gt; double" Usage="Microsoft.JScript.MathObject.asin x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.atan(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function atan (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double atan(double x);" />
+      <MemberSignature Language="F#" Value="static member atan : double -&gt; double" Usage="Microsoft.JScript.MathObject.atan x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function atan2 (dy As Double, dx As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double atan2(double dy, double dx);" />
+      <MemberSignature Language="F#" Value="static member atan2 : double * double -&gt; double" Usage="Microsoft.JScript.MathObject.atan2 (dy, dx)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.ceil(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ceil (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ceil(double x);" />
+      <MemberSignature Language="F#" Value="static member ceil : double -&gt; double" Usage="Microsoft.JScript.MathObject.ceil x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.cos(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function cos (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double cos(double x);" />
+      <MemberSignature Language="F#" Value="static member cos : double -&gt; double" Usage="Microsoft.JScript.MathObject.cos x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.E" />
       <MemberSignature Language="VB.NET" Value="Public Const E As Double  = 2.71828182845905" />
       <MemberSignature Language="C++ CLI" Value="public: double E = 2.71828182845905;" />
+      <MemberSignature Language="F#" Value="val mutable E : double" Usage="Microsoft.JScript.MathObject.E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.exp(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function exp (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double exp(double x);" />
+      <MemberSignature Language="F#" Value="static member exp : double -&gt; double" Usage="Microsoft.JScript.MathObject.exp x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.floor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function floor (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double floor(double x);" />
+      <MemberSignature Language="F#" Value="static member floor : double -&gt; double" Usage="Microsoft.JScript.MathObject.floor x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LN10" />
       <MemberSignature Language="VB.NET" Value="Public Const LN10 As Double  = 2.30258509299405" />
       <MemberSignature Language="C++ CLI" Value="public: double LN10 = 2.30258509299405;" />
+      <MemberSignature Language="F#" Value="val mutable LN10 : double" Usage="Microsoft.JScript.MathObject.LN10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -346,6 +358,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LN2" />
       <MemberSignature Language="VB.NET" Value="Public Const LN2 As Double  = 0.693147180559945" />
       <MemberSignature Language="C++ CLI" Value="public: double LN2 = 0.693147180559945;" />
+      <MemberSignature Language="F#" Value="val mutable LN2 : double" Usage="Microsoft.JScript.MathObject.LN2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.log(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function log (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double log(double x);" />
+      <MemberSignature Language="F#" Value="static member log : double -&gt; double" Usage="Microsoft.JScript.MathObject.log x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -398,6 +412,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LOG10E" />
       <MemberSignature Language="VB.NET" Value="Public Const LOG10E As Double  = 0.434294481903252" />
       <MemberSignature Language="C++ CLI" Value="public: double LOG10E = 0.434294481903252;" />
+      <MemberSignature Language="F#" Value="val mutable LOG10E : double" Usage="Microsoft.JScript.MathObject.LOG10E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -419,6 +434,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.LOG2E" />
       <MemberSignature Language="VB.NET" Value="Public Const LOG2E As Double  = 1.44269504088896" />
       <MemberSignature Language="C++ CLI" Value="public: double LOG2E = 1.44269504088896;" />
+      <MemberSignature Language="F#" Value="val mutable LOG2E : double" Usage="Microsoft.JScript.MathObject.LOG2E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -440,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function max (x As Object, y As Object, ParamArray args As Object()) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double max(System::Object ^ x, System::Object ^ y, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member max : obj * obj * obj[] -&gt; double" Usage="Microsoft.JScript.MathObject.max (x, y, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -480,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function min (x As Object, y As Object, ParamArray args As Object()) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double min(System::Object ^ x, System::Object ^ y, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member min : obj * obj * obj[] -&gt; double" Usage="Microsoft.JScript.MathObject.min (x, y, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -520,6 +538,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.PI" />
       <MemberSignature Language="VB.NET" Value="Public Const PI As Double  = 3.14159265358979" />
       <MemberSignature Language="C++ CLI" Value="public: double PI = 3.14159265358979;" />
+      <MemberSignature Language="F#" Value="val mutable PI : double" Usage="Microsoft.JScript.MathObject.PI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -541,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function pow (dx As Double, dy As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double pow(double dx, double dy);" />
+      <MemberSignature Language="F#" Value="static member pow : double * double -&gt; double" Usage="Microsoft.JScript.MathObject.pow (dx, dy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -573,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.random" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function random () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double random();" />
+      <MemberSignature Language="F#" Value="static member random : unit -&gt; double" Usage="Microsoft.JScript.MathObject.random " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -601,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.round(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function round (d As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double round(double d);" />
+      <MemberSignature Language="F#" Value="static member round : double -&gt; double" Usage="Microsoft.JScript.MathObject.round d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -631,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.sin(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function sin (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double sin(double x);" />
+      <MemberSignature Language="F#" Value="static member sin : double -&gt; double" Usage="Microsoft.JScript.MathObject.sin x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -662,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.sqrt(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function sqrt (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double sqrt(double x);" />
+      <MemberSignature Language="F#" Value="static member sqrt : double -&gt; double" Usage="Microsoft.JScript.MathObject.sqrt x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -693,6 +717,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.SQRT1_2" />
       <MemberSignature Language="VB.NET" Value="Public Const SQRT1_2 As Double  = 0.707106781186548" />
       <MemberSignature Language="C++ CLI" Value="public: double SQRT1_2 = 0.707106781186548;" />
+      <MemberSignature Language="F#" Value="val mutable SQRT1_2 : double" Usage="Microsoft.JScript.MathObject.SQRT1_2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -714,6 +739,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.MathObject.SQRT2" />
       <MemberSignature Language="VB.NET" Value="Public Const SQRT2 As Double  = 1.4142135623731" />
       <MemberSignature Language="C++ CLI" Value="public: double SQRT2 = 1.4142135623731;" />
+      <MemberSignature Language="F#" Value="val mutable SQRT2 : double" Usage="Microsoft.JScript.MathObject.SQRT2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -735,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.tan(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function tan (x As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double tan(double x);" />
+      <MemberSignature Language="F#" Value="static member tan : double -&gt; double" Usage="Microsoft.JScript.MathObject.tan x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

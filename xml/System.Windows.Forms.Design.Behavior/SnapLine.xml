@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLine" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SnapLine" />
   <TypeSignature Language="C++ CLI" Value="public ref class SnapLine sealed" />
+  <TypeSignature Language="F#" Value="type SnapLine = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.SnapLine : System.Windows.Forms.Design.Behavior.SnapLineType * int -&gt; System.Windows.Forms.Design.Behavior.SnapLine" Usage="new System.Windows.Forms.Design.Behavior.SnapLine (type, offset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, filter As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::String ^ filter);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.SnapLine : System.Windows.Forms.Design.Behavior.SnapLineType * int * string -&gt; System.Windows.Forms.Design.Behavior.SnapLine" Usage="new System.Windows.Forms.Design.Behavior.SnapLine (type, offset, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.Windows.Forms.Design.Behavior.SnapLinePriority)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, priority As SnapLinePriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::Windows::Forms::Design::Behavior::SnapLinePriority priority);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.SnapLine : System.Windows.Forms.Design.Behavior.SnapLineType * int * System.Windows.Forms.Design.Behavior.SnapLinePriority -&gt; System.Windows.Forms.Design.Behavior.SnapLine" Usage="new System.Windows.Forms.Design.Behavior.SnapLine (type, offset, priority)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String,System.Windows.Forms.Design.Behavior.SnapLinePriority)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As SnapLineType, offset As Integer, filter As String, priority As SnapLinePriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SnapLine(System::Windows::Forms::Design::Behavior::SnapLineType type, int offset, System::String ^ filter, System::Windows::Forms::Design::Behavior::SnapLinePriority priority);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.SnapLine : System.Windows.Forms.Design.Behavior.SnapLineType * int * string * System.Windows.Forms.Design.Behavior.SnapLinePriority -&gt; System.Windows.Forms.Design.Behavior.SnapLine" Usage="new System.Windows.Forms.Design.Behavior.SnapLine (type, offset, filter, priority)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.AdjustOffset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdjustOffset (adjustment As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdjustOffset(int adjustment);" />
+      <MemberSignature Language="F#" Value="member this.AdjustOffset : int -&gt; unit" Usage="snapLine.AdjustOffset adjustment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Windows.Forms.Design.Behavior.SnapLine.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -275,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.IsHorizontal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHorizontal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHorizontal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHorizontal : bool" Usage="System.Windows.Forms.Design.Behavior.SnapLine.IsHorizontal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.IsVertical" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVertical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVertical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsVertical : bool" Usage="System.Windows.Forms.Design.Behavior.SnapLine.IsVertical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -333,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.Windows.Forms.Design.Behavior.SnapLine.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Priority As SnapLinePriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::SnapLinePriority Priority { System::Windows::Forms::Design::Behavior::SnapLinePriority get(); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Windows.Forms.Design.Behavior.SnapLinePriority" Usage="System.Windows.Forms.Design.Behavior.SnapLine.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -397,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.ShouldSnap(System.Windows.Forms.Design.Behavior.SnapLine,System.Windows.Forms.Design.Behavior.SnapLine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldSnap (line1 As SnapLine, line2 As SnapLine) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ShouldSnap(System::Windows::Forms::Design::Behavior::SnapLine ^ line1, System::Windows::Forms::Design::Behavior::SnapLine ^ line2);" />
+      <MemberSignature Language="F#" Value="static member ShouldSnap : System.Windows.Forms.Design.Behavior.SnapLine * System.Windows.Forms.Design.Behavior.SnapLine -&gt; bool" Usage="System.Windows.Forms.Design.Behavior.SnapLine.ShouldSnap (line1, line2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SnapLineType As SnapLineType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::SnapLineType SnapLineType { System::Windows::Forms::Design::Behavior::SnapLineType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SnapLineType : System.Windows.Forms.Design.Behavior.SnapLineType" Usage="System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -456,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.SnapLine.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="snapLine.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormView" />
   <TypeSignature Language="VB.NET" Value="Public Class FormView&#xA;Inherits CompositeDataBoundControl&#xA;Implements IDataBoundItemControl, IDataItemContainer, IPostBackContainer, IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormView : System::Web::UI::WebControls::CompositeDataBoundControl, System::Web::UI::IDataItemContainer, System::Web::UI::IPostBackEventHandler, System::Web::UI::WebControls::IDataBoundItemControl, System::Web::UI::WebControls::IPostBackContainer" />
+  <TypeSignature Language="F#" Value="type FormView = class&#xA;    inherit CompositeDataBoundControl&#xA;    interface IDataItemContainer&#xA;    interface INamingContainer&#xA;    interface IPostBackEventHandler&#xA;    interface IPostBackContainer&#xA;    interface IDataBoundItemControl&#xA;    interface IDataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -418,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.AllowPaging" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowPaging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowPaging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPaging : bool with get, set" Usage="System.Web.UI.WebControls.FormView.AllowPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -494,6 +496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BackImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageUrl : string with get, set" Usage="System.Web.UI.WebControls.FormView.BackImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -547,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BottomPagerRow As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewRow ^ BottomPagerRow { System::Web::UI::WebControls::FormViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BottomPagerRow : System.Web.UI.WebControls.FormViewRow" Usage="System.Web.UI.WebControls.FormView.BottomPagerRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -606,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Web.UI.WebControls.FormView.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -654,6 +659,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.CaptionAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CaptionAlign As TableCaptionAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableCaptionAlign CaptionAlign { System::Web::UI::WebControls::TableCaptionAlign get(); void set(System::Web::UI::WebControls::TableCaptionAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionAlign : System.Web.UI.WebControls.TableCaptionAlign with get, set" Usage="System.Web.UI.WebControls.FormView.CaptionAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +718,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.CellPadding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellPadding As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellPadding { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.WebControls.FormView.CellPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -763,6 +770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.CellSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellSpacing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellSpacing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.WebControls.FormView.CellSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -812,6 +820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChangeMode (newMode As FormViewMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeMode(System::Web::UI::WebControls::FormViewMode newMode);" />
+      <MemberSignature Language="F#" Value="member this.ChangeMode : System.Web.UI.WebControls.FormViewMode -&gt; unit" Usage="formView.ChangeMode newMode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -863,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateChildControls (dataSource As IEnumerable, dataBinding As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int CreateChildControls(System::Collections::IEnumerable ^ dataSource, bool dataBinding);" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : System.Collections.IEnumerable * bool -&gt; int" Usage="formView.CreateChildControls (dataSource, dataBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -903,6 +913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="formView.CreateControlStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -936,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.CreateDataSourceSelectArguments" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDataSourceSelectArguments () As DataSourceSelectArguments" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceSelectArguments ^ CreateDataSourceSelectArguments();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments" Usage="formView.CreateDataSourceSelectArguments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -969,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.CreateRow(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateRow (itemIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState) As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::FormViewRow ^ CreateRow(int itemIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
+      <MemberSignature Language="F#" Value="abstract member CreateRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.FormViewRow&#xA;override this.CreateRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.FormViewRow" Usage="formView.CreateRow (itemIndex, rowType, rowState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1010,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.CreateTable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateTable () As Table" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Table ^ CreateTable();" />
+      <MemberSignature Language="F#" Value="abstract member CreateTable : unit -&gt; System.Web.UI.WebControls.Table&#xA;override this.CreateTable : unit -&gt; System.Web.UI.WebControls.Table" Usage="formView.CreateTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1039,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.CurrentMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentMode As FormViewMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FormViewMode CurrentMode { System::Web::UI::WebControls::FormViewMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentMode : System.Web.UI.WebControls.FormViewMode" Usage="System.Web.UI.WebControls.FormView.CurrentMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1102,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub DataBind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
+      <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="formView.DataBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1130,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj" Usage="System.Web.UI.WebControls.FormView.DataItem" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItem</InterfaceMember>
@@ -1183,6 +1200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DataItemCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItemCount : int" Usage="System.Web.UI.WebControls.FormView.DataItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1221,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DataItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.FormView.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -1265,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataKey As DataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ DataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.FormView.DataKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundItemControl.DataKey</InterfaceMember>
@@ -1317,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataKeyNames As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataKeyNames : string[] with get, set" Usage="System.Web.UI.WebControls.FormView.DataKeyNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -1372,6 +1393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DefaultMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultMode As FormViewMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewMode DefaultMode { System::Web::UI::WebControls::FormViewMode get(); void set(System::Web::UI::WebControls::FormViewMode value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMode : System.Web.UI.WebControls.FormViewMode with get, set" Usage="System.Web.UI.WebControls.FormView.DefaultMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1426,6 +1448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.DeleteItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteItem ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteItem();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteItem : unit -&gt; unit&#xA;override this.DeleteItem : unit -&gt; unit" Usage="formView.DeleteItem " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1466,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.DeleteMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteMethod : string with get, set" Usage="System.Web.UI.WebControls.FormView.DeleteMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1501,6 +1525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EditItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EditItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.EditItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1577,6 +1602,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditRowStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ EditRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.EditRowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1639,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmptyDataRowStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ EmptyDataRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyDataRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1701,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyDataTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EmptyDataTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyDataTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1762,6 +1790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyDataText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyDataText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmptyDataText : string with get, set" Usage="System.Web.UI.WebControls.FormView.EmptyDataText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1814,6 +1843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.EnableModelValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableModelValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableModelValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableModelValidation : bool with get, set" Usage="System.Web.UI.WebControls.FormView.EnableModelValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1840,6 +1870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.EnsureDataBound" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EnsureDataBound ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EnsureDataBound();" />
+      <MemberSignature Language="F#" Value="override this.EnsureDataBound : unit -&gt; unit" Usage="formView.EnsureDataBound " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1868,6 +1899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.ExtractRowValues(System.Collections.Specialized.IOrderedDictionary,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExtractRowValues (fieldValues As IOrderedDictionary, includeKeys As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExtractRowValues(System::Collections::Specialized::IOrderedDictionary ^ fieldValues, bool includeKeys);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractRowValues : System.Collections.Specialized.IOrderedDictionary * bool -&gt; unit&#xA;override this.ExtractRowValues : System.Collections.Specialized.IOrderedDictionary * bool -&gt; unit" Usage="formView.ExtractRowValues (fieldValues, includeKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1917,6 +1949,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.FooterRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FooterRow As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewRow ^ FooterRow { System::Web::UI::WebControls::FormViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FooterRow : System.Web.UI.WebControls.FormViewRow" Usage="System.Web.UI.WebControls.FormView.FooterRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1973,6 +2006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.FooterStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FooterStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ FooterStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FooterStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.FooterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2036,6 +2070,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FooterTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.FooterTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2097,6 +2132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.FooterText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FooterText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FooterText : string with get, set" Usage="System.Web.UI.WebControls.FormView.FooterText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2149,6 +2185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.GridLines" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GridLines As GridLines" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridLines GridLines { System::Web::UI::WebControls::GridLines get(); void set(System::Web::UI::WebControls::GridLines value); };" />
+      <MemberSignature Language="F#" Value="member this.GridLines : System.Web.UI.WebControls.GridLines with get, set" Usage="System.Web.UI.WebControls.FormView.GridLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2201,6 +2238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.HeaderRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderRow As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewRow ^ HeaderRow { System::Web::UI::WebControls::FormViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderRow : System.Web.UI.WebControls.FormViewRow" Usage="System.Web.UI.WebControls.FormView.HeaderRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2255,6 +2293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.HeaderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2317,6 +2356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2377,6 +2417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.FormView.HeaderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2429,6 +2470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HorizontalAlign As HorizontalAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.FormView.HorizontalAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2484,6 +2526,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializePager(class System.Web.UI.WebControls.FormViewRow row, class System.Web.UI.WebControls.PagedDataSource pagedDataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.InitializePager(System.Web.UI.WebControls.FormViewRow,System.Web.UI.WebControls.PagedDataSource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializePager(System::Web::UI::WebControls::FormViewRow ^ row, System::Web::UI::WebControls::PagedDataSource ^ pagedDataSource);" />
+      <MemberSignature Language="F#" Value="abstract member InitializePager : System.Web.UI.WebControls.FormViewRow * System.Web.UI.WebControls.PagedDataSource -&gt; unit&#xA;override this.InitializePager : System.Web.UI.WebControls.FormViewRow * System.Web.UI.WebControls.PagedDataSource -&gt; unit" Usage="formView.InitializePager (row, pagedDataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2524,6 +2567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.InitializeRow(System.Web.UI.WebControls.FormViewRow)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeRow (row As FormViewRow)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeRow(System::Web::UI::WebControls::FormViewRow ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeRow : System.Web.UI.WebControls.FormViewRow -&gt; unit&#xA;override this.InitializeRow : System.Web.UI.WebControls.FormViewRow -&gt; unit" Usage="formView.InitializeRow row" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2571,6 +2615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.InsertItem(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertItem (causesValidation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertItem(bool causesValidation);" />
+      <MemberSignature Language="F#" Value="abstract member InsertItem : bool -&gt; unit&#xA;override this.InsertItem : bool -&gt; unit" Usage="formView.InsertItem causesValidation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2625,6 +2670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ InsertItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.InsertItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2701,6 +2747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.InsertMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InsertMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertMethod : string with get, set" Usage="System.Web.UI.WebControls.FormView.InsertMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2736,6 +2783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertRowStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ InsertRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InsertRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.InsertRowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2799,6 +2847,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsBindableType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.IsBindableType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsBindableType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member IsBindableType : Type -&gt; bool&#xA;override this.IsBindableType : Type -&gt; bool" Usage="formView.IsBindableType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2849,6 +2898,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As FormViewCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewCommandEventHandler ^ ItemCommand;" />
+      <MemberSignature Language="F#" Value="member this.ItemCommand : System.Web.UI.WebControls.FormViewCommandEventHandler " Usage="member this.ItemCommand : System.Web.UI.WebControls.FormViewCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2907,6 +2957,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCreated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ItemCreated;" />
+      <MemberSignature Language="F#" Value="member this.ItemCreated : EventHandler " Usage="member this.ItemCreated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2956,6 +3007,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDeleted As FormViewDeletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewDeletedEventHandler ^ ItemDeleted;" />
+      <MemberSignature Language="F#" Value="member this.ItemDeleted : System.Web.UI.WebControls.FormViewDeletedEventHandler " Usage="member this.ItemDeleted : System.Web.UI.WebControls.FormViewDeletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3002,6 +3054,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDeleting As FormViewDeleteEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewDeleteEventHandler ^ ItemDeleting;" />
+      <MemberSignature Language="F#" Value="member this.ItemDeleting : System.Web.UI.WebControls.FormViewDeleteEventHandler " Usage="member this.ItemDeleting : System.Web.UI.WebControls.FormViewDeleteEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3047,6 +3100,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemInserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemInserted As FormViewInsertedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewInsertedEventHandler ^ ItemInserted;" />
+      <MemberSignature Language="F#" Value="member this.ItemInserted : System.Web.UI.WebControls.FormViewInsertedEventHandler " Usage="member this.ItemInserted : System.Web.UI.WebControls.FormViewInsertedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3095,6 +3149,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemInserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemInserting As FormViewInsertEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewInsertEventHandler ^ ItemInserting;" />
+      <MemberSignature Language="F#" Value="member this.ItemInserting : System.Web.UI.WebControls.FormViewInsertEventHandler " Usage="member this.ItemInserting : System.Web.UI.WebControls.FormViewInsertEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3139,6 +3194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.ItemTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3214,6 +3270,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemUpdated As FormViewUpdatedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewUpdatedEventHandler ^ ItemUpdated;" />
+      <MemberSignature Language="F#" Value="member this.ItemUpdated : System.Web.UI.WebControls.FormViewUpdatedEventHandler " Usage="member this.ItemUpdated : System.Web.UI.WebControls.FormViewUpdatedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3264,6 +3321,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemUpdating As FormViewUpdateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewUpdateEventHandler ^ ItemUpdating;" />
+      <MemberSignature Language="F#" Value="member this.ItemUpdating : System.Web.UI.WebControls.FormViewUpdateEventHandler " Usage="member this.ItemUpdating : System.Web.UI.WebControls.FormViewUpdateEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3310,6 +3368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="formView.LoadControlState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3346,6 +3405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="formView.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3381,6 +3441,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.ModeChanged : EventHandler " Usage="member this.ModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3420,6 +3481,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ModeChanging As FormViewModeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewModeEventHandler ^ ModeChanging;" />
+      <MemberSignature Language="F#" Value="member this.ModeChanging : System.Web.UI.WebControls.FormViewModeEventHandler " Usage="member this.ModeChanging : System.Web.UI.WebControls.FormViewModeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3464,6 +3526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.ModifiedOuterTableStylePropertyName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ModifiedOuterTableStylePropertyName () As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ ModifiedOuterTableStylePropertyName();" />
+      <MemberSignature Language="F#" Value="abstract member ModifiedOuterTableStylePropertyName : unit -&gt; string&#xA;override this.ModifiedOuterTableStylePropertyName : unit -&gt; string" Usage="formView.ModifiedOuterTableStylePropertyName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3492,6 +3555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="formView.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3545,6 +3609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="formView.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3584,6 +3649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As FormViewCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::WebControls::FormViewCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCommand : System.Web.UI.WebControls.FormViewCommandEventArgs -&gt; unit&#xA;override this.OnItemCommand : System.Web.UI.WebControls.FormViewCommandEventArgs -&gt; unit" Usage="formView.OnItemCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3623,6 +3689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCreated : EventArgs -&gt; unit&#xA;override this.OnItemCreated : EventArgs -&gt; unit" Usage="formView.OnItemCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3662,6 +3729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDeleted (e As FormViewDeletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDeleted(System::Web::UI::WebControls::FormViewDeletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDeleted : System.Web.UI.WebControls.FormViewDeletedEventArgs -&gt; unit&#xA;override this.OnItemDeleted : System.Web.UI.WebControls.FormViewDeletedEventArgs -&gt; unit" Usage="formView.OnItemDeleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3701,6 +3769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDeleting (e As FormViewDeleteEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDeleting(System::Web::UI::WebControls::FormViewDeleteEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDeleting : System.Web.UI.WebControls.FormViewDeleteEventArgs -&gt; unit&#xA;override this.OnItemDeleting : System.Web.UI.WebControls.FormViewDeleteEventArgs -&gt; unit" Usage="formView.OnItemDeleting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3741,6 +3810,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemInserted (e As FormViewInsertedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemInserted(System::Web::UI::WebControls::FormViewInsertedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemInserted : System.Web.UI.WebControls.FormViewInsertedEventArgs -&gt; unit&#xA;override this.OnItemInserted : System.Web.UI.WebControls.FormViewInsertedEventArgs -&gt; unit" Usage="formView.OnItemInserted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3780,6 +3850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemInserting (e As FormViewInsertEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemInserting(System::Web::UI::WebControls::FormViewInsertEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemInserting : System.Web.UI.WebControls.FormViewInsertEventArgs -&gt; unit&#xA;override this.OnItemInserting : System.Web.UI.WebControls.FormViewInsertEventArgs -&gt; unit" Usage="formView.OnItemInserting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3820,6 +3891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemUpdated (e As FormViewUpdatedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemUpdated(System::Web::UI::WebControls::FormViewUpdatedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemUpdated : System.Web.UI.WebControls.FormViewUpdatedEventArgs -&gt; unit&#xA;override this.OnItemUpdated : System.Web.UI.WebControls.FormViewUpdatedEventArgs -&gt; unit" Usage="formView.OnItemUpdated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3859,6 +3931,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemUpdating (e As FormViewUpdateEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemUpdating(System::Web::UI::WebControls::FormViewUpdateEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemUpdating : System.Web.UI.WebControls.FormViewUpdateEventArgs -&gt; unit&#xA;override this.OnItemUpdating : System.Web.UI.WebControls.FormViewUpdateEventArgs -&gt; unit" Usage="formView.OnItemUpdating e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3899,6 +3972,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModeChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModeChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnModeChanged : EventArgs -&gt; unit&#xA;override this.OnModeChanged : EventArgs -&gt; unit" Usage="formView.OnModeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3938,6 +4012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModeChanging (e As FormViewModeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModeChanging(System::Web::UI::WebControls::FormViewModeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnModeChanging : System.Web.UI.WebControls.FormViewModeEventArgs -&gt; unit&#xA;override this.OnModeChanging : System.Web.UI.WebControls.FormViewModeEventArgs -&gt; unit" Usage="formView.OnModeChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3978,6 +4053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPageIndexChanged : EventArgs -&gt; unit&#xA;override this.OnPageIndexChanged : EventArgs -&gt; unit" Usage="formView.OnPageIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4017,6 +4093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageIndexChanging (e As FormViewPageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageIndexChanging(System::Web::UI::WebControls::FormViewPageEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPageIndexChanging : System.Web.UI.WebControls.FormViewPageEventArgs -&gt; unit&#xA;override this.OnPageIndexChanging : System.Web.UI.WebControls.FormViewPageEventArgs -&gt; unit" Usage="formView.OnPageIndexChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4057,6 +4134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.PageCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PageCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageCount : int" Usage="System.Web.UI.WebControls.FormView.PageCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4113,6 +4191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.PageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageIndex : int with get, set" Usage="System.Web.UI.WebControls.FormView.PageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4170,6 +4249,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PageIndexChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PageIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.PageIndexChanged : EventHandler " Usage="member this.PageIndexChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4214,6 +4294,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PageIndexChanging As FormViewPageEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::FormViewPageEventHandler ^ PageIndexChanging;" />
+      <MemberSignature Language="F#" Value="member this.PageIndexChanging : System.Web.UI.WebControls.FormViewPageEventHandler " Usage="member this.PageIndexChanging : System.Web.UI.WebControls.FormViewPageEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4265,6 +4346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.PagerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PagerSettings As PagerSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::PagerSettings ^ PagerSettings { System::Web::UI::WebControls::PagerSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PagerSettings : System.Web.UI.WebControls.PagerSettings" Usage="System.Web.UI.WebControls.FormView.PagerSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4320,6 +4402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.PagerStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagerStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ PagerStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PagerStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.PagerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4387,6 +4470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PagerTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ PagerTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PagerTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.FormView.PagerTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4466,6 +4550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (data As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
+      <MemberSignature Language="F#" Value="override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="formView.PerformDataBinding data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4500,6 +4585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.PrepareControlHierarchy" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PrepareControlHierarchy ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PrepareControlHierarchy();" />
+      <MemberSignature Language="F#" Value="abstract member PrepareControlHierarchy : unit -&gt; unit&#xA;override this.PrepareControlHierarchy : unit -&gt; unit" Usage="formView.PrepareControlHierarchy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4527,6 +4613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="formView.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -4566,6 +4653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="formView.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4597,6 +4685,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.RenderOuterTable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RenderOuterTable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RenderOuterTable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderOuterTable : bool with get, set" Usage="System.Web.UI.WebControls.FormView.RenderOuterTable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IRenderOuterTableControl.RenderOuterTable</InterfaceMember>
@@ -4633,6 +4722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.Row" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Row As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewRow ^ Row { System::Web::UI::WebControls::FormViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Web.UI.WebControls.FormViewRow" Usage="System.Web.UI.WebControls.FormView.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4688,6 +4778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.RowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ RowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.FormView.RowStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4750,6 +4841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="formView.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4782,6 +4874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="formView.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4810,6 +4903,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedValue : obj" Usage="System.Web.UI.WebControls.FormView.SelectedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4859,6 +4953,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.SetPageIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPageIndex (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPageIndex(int index);" />
+      <MemberSignature Language="F#" Value="member this.SetPageIndex : int -&gt; unit" Usage="formView.SetPageIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4882,6 +4977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#IDataItemContainer#DataItemIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItemIndex As Integer Implements IDataItemContainer.DataItemIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.IDataItemContainer.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -4914,6 +5010,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#IDataItemContainer#DisplayIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DisplayIndex As Integer Implements IDataItemContainer.DisplayIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.IDataItemContainer.DisplayIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>
@@ -4979,6 +5076,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataKeyNames" />
       <MemberSignature Language="VB.NET" Value=" Property DataKeyNames As String() Implements IDataBoundControl.DataKeyNames" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundControl.DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundControl.DataKeyNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -5009,6 +5107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataMember" />
       <MemberSignature Language="VB.NET" Value=" Property DataMember As String Implements IDataBoundControl.DataMember" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundControl.DataMember" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataMember</InterfaceMember>
@@ -5039,6 +5138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataSource" />
       <MemberSignature Language="VB.NET" Value=" Property DataSource As Object Implements IDataBoundControl.DataSource" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.WebControls.IDataBoundControl.DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundControl.DataSource" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSource</InterfaceMember>
@@ -5069,6 +5169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataSourceID" />
       <MemberSignature Language="VB.NET" Value=" Property DataSourceID As String Implements IDataBoundControl.DataSourceID" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundControl.DataSourceID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceID</InterfaceMember>
@@ -5099,6 +5200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataSourceObject" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataSourceObject As IDataSource Implements IDataBoundControl.DataSourceObject" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::IDataSource ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundControl.DataSourceObject" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceObject</InterfaceMember>
@@ -5129,6 +5231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundItemControl#DataKey" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataKey As DataKey Implements IDataBoundItemControl.DataKey" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IDataBoundItemControl.DataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundItemControl.DataKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundItemControl.DataKey</InterfaceMember>
@@ -5159,6 +5262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundItemControl#Mode" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Mode As DataBoundControlMode Implements IDataBoundItemControl.Mode" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataBoundControlMode System.Web.UI.WebControls.IDataBoundItemControl.Mode { System::Web::UI::WebControls::DataBoundControlMode get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.FormView.System.Web.UI.WebControls.IDataBoundItemControl.Mode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundItemControl.Mode</InterfaceMember>
@@ -5226,6 +5330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.FormView.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5258,6 +5363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TopPagerRow As FormViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FormViewRow ^ TopPagerRow { System::Web::UI::WebControls::FormViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TopPagerRow : System.Web.UI.WebControls.FormViewRow" Usage="System.Web.UI.WebControls.FormView.TopPagerRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5317,6 +5423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="formView.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5346,6 +5453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormView.UpdateItem(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateItem (causesValidation As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateItem(bool causesValidation);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateItem : bool -&gt; unit&#xA;override this.UpdateItem : bool -&gt; unit" Usage="formView.UpdateItem causesValidation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5400,6 +5508,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormView.UpdateMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMethod : string with get, set" Usage="System.Web.UI.WebControls.FormView.UpdateMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

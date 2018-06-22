@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type OutputCacheSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.DefaultProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProviderName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProviderName : string with get, set" Usage="System.Web.Configuration.OutputCacheSection.DefaultProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableFragmentCache" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableFragmentCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableFragmentCache { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableFragmentCache : bool with get, set" Usage="System.Web.Configuration.OutputCacheSection.EnableFragmentCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableKernelCacheForVaryByStar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableKernelCacheForVaryByStar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableKernelCacheForVaryByStar : bool with get, set" Usage="System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableOutputCache" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableOutputCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableOutputCache { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableOutputCache : bool with get, set" Usage="System.Web.Configuration.OutputCacheSection.EnableOutputCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.OmitVaryStar" />
       <MemberSignature Language="VB.NET" Value="Public Property OmitVaryStar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OmitVaryStar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OmitVaryStar : bool with get, set" Usage="System.Web.Configuration.OutputCacheSection.OmitVaryStar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.OutputCacheSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.OutputCacheSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SendCacheControlHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendCacheControlHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SendCacheControlHeader : bool with get, set" Usage="System.Web.Configuration.OutputCacheSection.SendCacheControlHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

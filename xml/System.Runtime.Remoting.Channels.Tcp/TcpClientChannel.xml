@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel" />
   <TypeSignature Language="VB.NET" Value="Public Class TcpClientChannel&#xA;Implements IChannel, IChannelSender, ISecurableChannel" />
   <TypeSignature Language="C++ CLI" Value="public ref class TcpClientChannel : System::Runtime::Remoting::Channels::IChannel, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
+  <TypeSignature Language="F#" Value="type TcpClientChannel = class&#xA;    interface IChannelSender&#xA;    interface IChannel&#xA;    interface ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IClientChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, sinkProvider As IClientChannelSinkProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpClientChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ sinkProvider);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Tcp.TcpClientChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IClientChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Tcp.TcpClientChannel" Usage="new System.Runtime.Remoting.Channels.Tcp.TcpClientChannel (properties, sinkProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -142,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.#ctor(System.String,System.Runtime.Remoting.Channels.IClientChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, sinkProvider As IClientChannelSinkProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpClientChannel(System::String ^ name, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ sinkProvider);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Tcp.TcpClientChannel : string * System.Runtime.Remoting.Channels.IClientChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Tcp.TcpClientChannel" Usage="new System.Runtime.Remoting.Channels.Tcp.TcpClientChannel (name, sinkProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.ChannelName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.ChannelName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.ChannelPriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.ChannelPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateMessageSink (url As String, remoteChannelData As Object, ByRef objectURI As String) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ CreateMessageSink(System::String ^ url, System::Object ^ remoteChannelData, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="tcpClientChannel.CreateMessageSink (url, remoteChannelData, objectURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -294,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.IsSecured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.IsSecured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.Parse(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="tcpClientChannel.Parse (url, objectURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyAgreeRecipientInfo&#xA;Inherits RecipientInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyAgreeRecipientInfo sealed : System::Security::Cryptography::Pkcs::RecipientInfo" />
+  <TypeSignature Language="F#" Value="type KeyAgreeRecipientInfo = class&#xA;    inherit RecipientInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EncryptedKey As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ EncryptedKey { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptedKey : byte[]" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyEncryptionAlgorithm As AlgorithmIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ KeyEncryptionAlgorithm { System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyEncryptionAlgorithm : System.Security.Cryptography.Pkcs.AlgorithmIdentifier" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginatorIdentifierOrKey As SubjectIdentifierOrKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SubjectIdentifierOrKey ^ OriginatorIdentifierOrKey { System::Security::Cryptography::Pkcs::SubjectIdentifierOrKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginatorIdentifierOrKey : System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherKeyAttribute As CryptographicAttributeObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObject ^ OtherKeyAttribute { System::Security::Cryptography::CryptographicAttributeObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OtherKeyAttribute : System.Security.Cryptography.CryptographicAttributeObject" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecipientIdentifier As SubjectIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Pkcs::SubjectIdentifier ^ RecipientIdentifier { System::Security::Cryptography::Pkcs::SubjectIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientIdentifier : System.Security.Cryptography.Pkcs.SubjectIdentifier" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Version { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

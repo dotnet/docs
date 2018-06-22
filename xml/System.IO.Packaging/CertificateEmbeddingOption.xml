@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.CertificateEmbeddingOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum CertificateEmbeddingOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class CertificateEmbeddingOption" />
+  <TypeSignature Language="F#" Value="type CertificateEmbeddingOption = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.InCertificatePart" />
       <MemberSignature Language="VB.NET" Value="InCertificatePart" />
       <MemberSignature Language="C++ CLI" Value="InCertificatePart" />
+      <MemberSignature Language="F#" Value="InCertificatePart = 0" Usage="System.IO.Packaging.CertificateEmbeddingOption.InCertificatePart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.InSignaturePart" />
       <MemberSignature Language="VB.NET" Value="InSignaturePart" />
       <MemberSignature Language="C++ CLI" Value="InSignaturePart" />
+      <MemberSignature Language="F#" Value="InSignaturePart = 1" Usage="System.IO.Packaging.CertificateEmbeddingOption.InSignaturePart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.CertificateEmbeddingOption.NotEmbedded" />
       <MemberSignature Language="VB.NET" Value="NotEmbedded" />
       <MemberSignature Language="C++ CLI" Value="NotEmbedded" />
+      <MemberSignature Language="F#" Value="NotEmbedded = 2" Usage="System.IO.Packaging.CertificateEmbeddingOption.NotEmbedded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

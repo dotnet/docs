@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.ApplicationGesture" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApplicationGesture" />
   <TypeSignature Language="C++ CLI" Value="public enum class ApplicationGesture" />
+  <TypeSignature Language="F#" Value="type ApplicationGesture = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.AllGestures" />
       <MemberSignature Language="VB.NET" Value="AllGestures" />
       <MemberSignature Language="C++ CLI" Value="AllGestures" />
+      <MemberSignature Language="F#" Value="AllGestures = 0" Usage="System.Windows.Ink.ApplicationGesture.AllGestures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowDown" />
       <MemberSignature Language="VB.NET" Value="ArrowDown" />
       <MemberSignature Language="C++ CLI" Value="ArrowDown" />
+      <MemberSignature Language="F#" Value="ArrowDown = 61497" Usage="System.Windows.Ink.ApplicationGesture.ArrowDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowLeft" />
       <MemberSignature Language="VB.NET" Value="ArrowLeft" />
       <MemberSignature Language="C++ CLI" Value="ArrowLeft" />
+      <MemberSignature Language="F#" Value="ArrowLeft = 61498" Usage="System.Windows.Ink.ApplicationGesture.ArrowLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowRight" />
       <MemberSignature Language="VB.NET" Value="ArrowRight" />
       <MemberSignature Language="C++ CLI" Value="ArrowRight" />
+      <MemberSignature Language="F#" Value="ArrowRight = 61499" Usage="System.Windows.Ink.ApplicationGesture.ArrowRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowUp" />
       <MemberSignature Language="VB.NET" Value="ArrowUp" />
       <MemberSignature Language="C++ CLI" Value="ArrowUp" />
+      <MemberSignature Language="F#" Value="ArrowUp = 61496" Usage="System.Windows.Ink.ApplicationGesture.ArrowUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Check" />
       <MemberSignature Language="VB.NET" Value="Check" />
       <MemberSignature Language="C++ CLI" Value="Check" />
+      <MemberSignature Language="F#" Value="Check = 61445" Usage="System.Windows.Ink.ApplicationGesture.Check" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronDown" />
       <MemberSignature Language="VB.NET" Value="ChevronDown" />
       <MemberSignature Language="C++ CLI" Value="ChevronDown" />
+      <MemberSignature Language="F#" Value="ChevronDown = 61489" Usage="System.Windows.Ink.ApplicationGesture.ChevronDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronLeft" />
       <MemberSignature Language="VB.NET" Value="ChevronLeft" />
       <MemberSignature Language="C++ CLI" Value="ChevronLeft" />
+      <MemberSignature Language="F#" Value="ChevronLeft = 61490" Usage="System.Windows.Ink.ApplicationGesture.ChevronLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronRight" />
       <MemberSignature Language="VB.NET" Value="ChevronRight" />
       <MemberSignature Language="C++ CLI" Value="ChevronRight" />
+      <MemberSignature Language="F#" Value="ChevronRight = 61491" Usage="System.Windows.Ink.ApplicationGesture.ChevronRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronUp" />
       <MemberSignature Language="VB.NET" Value="ChevronUp" />
       <MemberSignature Language="C++ CLI" Value="ChevronUp" />
+      <MemberSignature Language="F#" Value="ChevronUp = 61488" Usage="System.Windows.Ink.ApplicationGesture.ChevronUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Circle" />
       <MemberSignature Language="VB.NET" Value="Circle" />
       <MemberSignature Language="C++ CLI" Value="Circle" />
+      <MemberSignature Language="F#" Value="Circle = 61472" Usage="System.Windows.Ink.ApplicationGesture.Circle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Curlicue" />
       <MemberSignature Language="VB.NET" Value="Curlicue" />
       <MemberSignature Language="C++ CLI" Value="Curlicue" />
+      <MemberSignature Language="F#" Value="Curlicue = 61456" Usage="System.Windows.Ink.ApplicationGesture.Curlicue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleCircle" />
       <MemberSignature Language="VB.NET" Value="DoubleCircle" />
       <MemberSignature Language="C++ CLI" Value="DoubleCircle" />
+      <MemberSignature Language="F#" Value="DoubleCircle = 61473" Usage="System.Windows.Ink.ApplicationGesture.DoubleCircle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -287,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleCurlicue" />
       <MemberSignature Language="VB.NET" Value="DoubleCurlicue" />
       <MemberSignature Language="C++ CLI" Value="DoubleCurlicue" />
+      <MemberSignature Language="F#" Value="DoubleCurlicue = 61457" Usage="System.Windows.Ink.ApplicationGesture.DoubleCurlicue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleTap" />
       <MemberSignature Language="VB.NET" Value="DoubleTap" />
       <MemberSignature Language="C++ CLI" Value="DoubleTap" />
+      <MemberSignature Language="F#" Value="DoubleTap = 61681" Usage="System.Windows.Ink.ApplicationGesture.DoubleTap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -325,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 61529" Usage="System.Windows.Ink.ApplicationGesture.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownLeft" />
       <MemberSignature Language="VB.NET" Value="DownLeft" />
       <MemberSignature Language="C++ CLI" Value="DownLeft" />
+      <MemberSignature Language="F#" Value="DownLeft = 61546" Usage="System.Windows.Ink.ApplicationGesture.DownLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -363,6 +381,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownLeftLong" />
       <MemberSignature Language="VB.NET" Value="DownLeftLong" />
       <MemberSignature Language="C++ CLI" Value="DownLeftLong" />
+      <MemberSignature Language="F#" Value="DownLeftLong = 61542" Usage="System.Windows.Ink.ApplicationGesture.DownLeftLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -382,6 +401,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownRight" />
       <MemberSignature Language="VB.NET" Value="DownRight" />
       <MemberSignature Language="C++ CLI" Value="DownRight" />
+      <MemberSignature Language="F#" Value="DownRight = 61547" Usage="System.Windows.Ink.ApplicationGesture.DownRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +421,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownRightLong" />
       <MemberSignature Language="VB.NET" Value="DownRightLong" />
       <MemberSignature Language="C++ CLI" Value="DownRightLong" />
+      <MemberSignature Language="F#" Value="DownRightLong = 61543" Usage="System.Windows.Ink.ApplicationGesture.DownRightLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -420,6 +441,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownUp" />
       <MemberSignature Language="VB.NET" Value="DownUp" />
       <MemberSignature Language="C++ CLI" Value="DownUp" />
+      <MemberSignature Language="F#" Value="DownUp = 61537" Usage="System.Windows.Ink.ApplicationGesture.DownUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -439,6 +461,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Exclamation" />
       <MemberSignature Language="VB.NET" Value="Exclamation" />
       <MemberSignature Language="C++ CLI" Value="Exclamation" />
+      <MemberSignature Language="F#" Value="Exclamation = 61604" Usage="System.Windows.Ink.ApplicationGesture.Exclamation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -458,6 +481,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Left" />
       <MemberSignature Language="VB.NET" Value="Left" />
       <MemberSignature Language="C++ CLI" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 61530" Usage="System.Windows.Ink.ApplicationGesture.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -477,6 +501,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftDown" />
       <MemberSignature Language="VB.NET" Value="LeftDown" />
       <MemberSignature Language="C++ CLI" Value="LeftDown" />
+      <MemberSignature Language="F#" Value="LeftDown = 61549" Usage="System.Windows.Ink.ApplicationGesture.LeftDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -496,6 +521,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftRight" />
       <MemberSignature Language="VB.NET" Value="LeftRight" />
       <MemberSignature Language="C++ CLI" Value="LeftRight" />
+      <MemberSignature Language="F#" Value="LeftRight = 61538" Usage="System.Windows.Ink.ApplicationGesture.LeftRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -515,6 +541,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftUp" />
       <MemberSignature Language="VB.NET" Value="LeftUp" />
       <MemberSignature Language="C++ CLI" Value="LeftUp" />
+      <MemberSignature Language="F#" Value="LeftUp = 61548" Usage="System.Windows.Ink.ApplicationGesture.LeftUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -534,6 +561,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.NoGesture" />
       <MemberSignature Language="VB.NET" Value="NoGesture" />
       <MemberSignature Language="C++ CLI" Value="NoGesture" />
+      <MemberSignature Language="F#" Value="NoGesture = 61440" Usage="System.Windows.Ink.ApplicationGesture.NoGesture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -553,6 +581,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Right" />
       <MemberSignature Language="VB.NET" Value="Right" />
       <MemberSignature Language="C++ CLI" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 61531" Usage="System.Windows.Ink.ApplicationGesture.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -572,6 +601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightDown" />
       <MemberSignature Language="VB.NET" Value="RightDown" />
       <MemberSignature Language="C++ CLI" Value="RightDown" />
+      <MemberSignature Language="F#" Value="RightDown = 61551" Usage="System.Windows.Ink.ApplicationGesture.RightDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -591,6 +621,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightLeft" />
       <MemberSignature Language="VB.NET" Value="RightLeft" />
       <MemberSignature Language="C++ CLI" Value="RightLeft" />
+      <MemberSignature Language="F#" Value="RightLeft = 61539" Usage="System.Windows.Ink.ApplicationGesture.RightLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -610,6 +641,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightUp" />
       <MemberSignature Language="VB.NET" Value="RightUp" />
       <MemberSignature Language="C++ CLI" Value="RightUp" />
+      <MemberSignature Language="F#" Value="RightUp = 61550" Usage="System.Windows.Ink.ApplicationGesture.RightUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -629,6 +661,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ScratchOut" />
       <MemberSignature Language="VB.NET" Value="ScratchOut" />
       <MemberSignature Language="C++ CLI" Value="ScratchOut" />
+      <MemberSignature Language="F#" Value="ScratchOut = 61441" Usage="System.Windows.Ink.ApplicationGesture.ScratchOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -648,6 +681,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.SemicircleLeft" />
       <MemberSignature Language="VB.NET" Value="SemicircleLeft" />
       <MemberSignature Language="C++ CLI" Value="SemicircleLeft" />
+      <MemberSignature Language="F#" Value="SemicircleLeft = 61480" Usage="System.Windows.Ink.ApplicationGesture.SemicircleLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -667,6 +701,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.SemicircleRight" />
       <MemberSignature Language="VB.NET" Value="SemicircleRight" />
       <MemberSignature Language="C++ CLI" Value="SemicircleRight" />
+      <MemberSignature Language="F#" Value="SemicircleRight = 61481" Usage="System.Windows.Ink.ApplicationGesture.SemicircleRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -686,6 +721,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Square" />
       <MemberSignature Language="VB.NET" Value="Square" />
       <MemberSignature Language="C++ CLI" Value="Square" />
+      <MemberSignature Language="F#" Value="Square = 61443" Usage="System.Windows.Ink.ApplicationGesture.Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -705,6 +741,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Star" />
       <MemberSignature Language="VB.NET" Value="Star" />
       <MemberSignature Language="C++ CLI" Value="Star" />
+      <MemberSignature Language="F#" Value="Star = 61444" Usage="System.Windows.Ink.ApplicationGesture.Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -724,6 +761,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Tap" />
       <MemberSignature Language="VB.NET" Value="Tap" />
       <MemberSignature Language="C++ CLI" Value="Tap" />
+      <MemberSignature Language="F#" Value="Tap = 61680" Usage="System.Windows.Ink.ApplicationGesture.Tap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -743,6 +781,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Triangle" />
       <MemberSignature Language="VB.NET" Value="Triangle" />
       <MemberSignature Language="C++ CLI" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 61442" Usage="System.Windows.Ink.ApplicationGesture.Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -762,6 +801,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 61528" Usage="System.Windows.Ink.ApplicationGesture.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -781,6 +821,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpDown" />
       <MemberSignature Language="VB.NET" Value="UpDown" />
       <MemberSignature Language="C++ CLI" Value="UpDown" />
+      <MemberSignature Language="F#" Value="UpDown = 61536" Usage="System.Windows.Ink.ApplicationGesture.UpDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -800,6 +841,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpLeft" />
       <MemberSignature Language="VB.NET" Value="UpLeft" />
       <MemberSignature Language="C++ CLI" Value="UpLeft" />
+      <MemberSignature Language="F#" Value="UpLeft = 61544" Usage="System.Windows.Ink.ApplicationGesture.UpLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -819,6 +861,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpLeftLong" />
       <MemberSignature Language="VB.NET" Value="UpLeftLong" />
       <MemberSignature Language="C++ CLI" Value="UpLeftLong" />
+      <MemberSignature Language="F#" Value="UpLeftLong = 61540" Usage="System.Windows.Ink.ApplicationGesture.UpLeftLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -838,6 +881,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpRight" />
       <MemberSignature Language="VB.NET" Value="UpRight" />
       <MemberSignature Language="C++ CLI" Value="UpRight" />
+      <MemberSignature Language="F#" Value="UpRight = 61545" Usage="System.Windows.Ink.ApplicationGesture.UpRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -857,6 +901,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpRightLong" />
       <MemberSignature Language="VB.NET" Value="UpRightLong" />
       <MemberSignature Language="C++ CLI" Value="UpRightLong" />
+      <MemberSignature Language="F#" Value="UpRightLong = 61541" Usage="System.Windows.Ink.ApplicationGesture.UpRightLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

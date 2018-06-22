@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletDeviceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum TabletDeviceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class TabletDeviceType" />
+  <TypeSignature Language="F#" Value="type TabletDeviceType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletDeviceType.Stylus" />
       <MemberSignature Language="VB.NET" Value="Stylus" />
       <MemberSignature Language="C++ CLI" Value="Stylus" />
+      <MemberSignature Language="F#" Value="Stylus = 0" Usage="System.Windows.Input.TabletDeviceType.Stylus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletDeviceType.Touch" />
       <MemberSignature Language="VB.NET" Value="Touch" />
       <MemberSignature Language="C++ CLI" Value="Touch" />
+      <MemberSignature Language="F#" Value="Touch = 1" Usage="System.Windows.Input.TabletDeviceType.Touch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

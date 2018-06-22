@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextPatternRangeEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextPatternRangeEndpoint" />
+  <TypeSignature Language="F#" Value="type TextPatternRangeEndpoint = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" />
       <MemberSignature Language="VB.NET" Value="End" />
       <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberSignature Language="F#" Value="End = 1" Usage="System.Windows.Automation.Text.TextPatternRangeEndpoint.End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 0" Usage="System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

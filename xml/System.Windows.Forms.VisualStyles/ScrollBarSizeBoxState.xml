@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarSizeBoxState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarSizeBoxState" />
+  <TypeSignature Language="F#" Value="type ScrollBarSizeBoxState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.LeftAlign" />
       <MemberSignature Language="VB.NET" Value="LeftAlign" />
       <MemberSignature Language="C++ CLI" Value="LeftAlign" />
+      <MemberSignature Language="F#" Value="LeftAlign = 2" Usage="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.LeftAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.RightAlign" />
       <MemberSignature Language="VB.NET" Value="RightAlign" />
       <MemberSignature Language="C++ CLI" Value="RightAlign" />
+      <MemberSignature Language="F#" Value="RightAlign = 1" Usage="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.RightAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

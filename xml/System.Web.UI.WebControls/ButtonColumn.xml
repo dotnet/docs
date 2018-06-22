@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class ButtonColumn&#xA;Inherits DataGridColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class ButtonColumn : System::Web::UI::WebControls::DataGridColumn" />
+  <TypeSignature Language="F#" Value="type ButtonColumn = class&#xA;    inherit DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.ButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ButtonType As ButtonColumnType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonColumnType ButtonType { System::Web::UI::WebControls::ButtonColumnType get(); void set(System::Web::UI::WebControls::ButtonColumnType value); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Web.UI.WebControls.ButtonColumnType with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.ButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.CommandName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CommandName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandName : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.CommandName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.DataTextField" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTextField : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.DataTextField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTextFormatString : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.FormatDataTextValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FormatDataTextValue (dataTextValue As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FormatDataTextValue(System::Object ^ dataTextValue);" />
+      <MemberSignature Language="F#" Value="abstract member FormatDataTextValue : obj -&gt; string&#xA;override this.FormatDataTextValue : obj -&gt; string" Usage="buttonColumn.FormatDataTextValue dataTextValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -372,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="buttonColumn.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="buttonColumn.InitializeCell (cell, columnIndex, itemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -489,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

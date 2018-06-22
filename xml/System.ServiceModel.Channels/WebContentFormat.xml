@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebContentFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebContentFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebContentFormat" />
+  <TypeSignature Language="F#" Value="type WebContentFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.ServiceModel.Channels.WebContentFormat.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Json" />
       <MemberSignature Language="VB.NET" Value="Json" />
       <MemberSignature Language="C++ CLI" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 2" Usage="System.ServiceModel.Channels.WebContentFormat.Json" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Raw" />
       <MemberSignature Language="VB.NET" Value="Raw" />
       <MemberSignature Language="C++ CLI" Value="Raw" />
+      <MemberSignature Language="F#" Value="Raw = 3" Usage="System.ServiceModel.Channels.WebContentFormat.Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 1" Usage="System.ServiceModel.Channels.WebContentFormat.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

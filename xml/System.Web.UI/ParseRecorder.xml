@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ParseRecorder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ParseRecorder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParseRecorder abstract" />
+  <TypeSignature Language="F#" Value="type ParseRecorder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.Initialize(System.Web.UI.TemplateParser)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (parser As TemplateParser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::Web::UI::TemplateParser ^ parser);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Web.UI.TemplateParser -&gt; unit&#xA;override this.Initialize : System.Web.UI.TemplateParser -&gt; unit" Usage="parseRecorder.Initialize parser" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.ParseComplete(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ParseComplete (root As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ParseComplete(System::Web::UI::ControlBuilder ^ root);" />
+      <MemberSignature Language="F#" Value="abstract member ParseComplete : System.Web.UI.ControlBuilder -&gt; unit&#xA;override this.ParseComplete : System.Web.UI.ControlBuilder -&gt; unit" Usage="parseRecorder.ParseComplete root" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessGeneratedCode(class System.Web.UI.ControlBuilder builder, class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.CodeDom.CodeTypeDeclaration baseType, class System.CodeDom.CodeTypeDeclaration derivedType, class System.CodeDom.CodeMemberMethod buildMethod, class System.CodeDom.CodeMemberMethod dataBindingMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.ProcessGeneratedCode(System.Web.UI.ControlBuilder,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessGeneratedCode(System::Web::UI::ControlBuilder ^ builder, System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::CodeDom::CodeTypeDeclaration ^ baseType, System::CodeDom::CodeTypeDeclaration ^ derivedType, System::CodeDom::CodeMemberMethod ^ buildMethod, System::CodeDom::CodeMemberMethod ^ dataBindingMethod);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessGeneratedCode : System.Web.UI.ControlBuilder * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod -&gt; unit&#xA;override this.ProcessGeneratedCode : System.Web.UI.ControlBuilder * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod -&gt; unit" Usage="parseRecorder.ProcessGeneratedCode (builder, codeCompileUnit, baseType, derivedType, buildMethod, dataBindingMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordBeginTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordBeginTag (builder As ControlBuilder, tag As Match)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordBeginTag(System::Web::UI::ControlBuilder ^ builder, System::Text::RegularExpressions::Match ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member RecordBeginTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit&#xA;override this.RecordBeginTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit" Usage="parseRecorder.RecordBeginTag (builder, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordCodeBlock(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordCodeBlock (builder As ControlBuilder, codeBlock As Match)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordCodeBlock(System::Web::UI::ControlBuilder ^ builder, System::Text::RegularExpressions::Match ^ codeBlock);" />
+      <MemberSignature Language="F#" Value="abstract member RecordCodeBlock : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit&#xA;override this.RecordCodeBlock : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit" Usage="parseRecorder.RecordCodeBlock (builder, codeBlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordEmptyTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordEmptyTag (builder As ControlBuilder, tag As Match)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordEmptyTag(System::Web::UI::ControlBuilder ^ builder, System::Text::RegularExpressions::Match ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member RecordEmptyTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit&#xA;override this.RecordEmptyTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit" Usage="parseRecorder.RecordEmptyTag (builder, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordEndTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordEndTag (builder As ControlBuilder, tag As Match)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordEndTag(System::Web::UI::ControlBuilder ^ builder, System::Text::RegularExpressions::Match ^ tag);" />
+      <MemberSignature Language="F#" Value="abstract member RecordEndTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit&#xA;override this.RecordEndTag : System.Web.UI.ControlBuilder * System.Text.RegularExpressions.Match -&gt; unit" Usage="parseRecorder.RecordEndTag (builder, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ParseRecorder.RecorderFactories" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RecorderFactories As IList(Of Func(Of ParseRecorder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;Func&lt;System::Web::UI::ParseRecorder ^&gt; ^&gt; ^ RecorderFactories { System::Collections::Generic::IList&lt;Func&lt;System::Web::UI::ParseRecorder ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecorderFactories : System.Collections.Generic.IList&lt;Func&lt;System.Web.UI.ParseRecorder&gt;&gt;" Usage="System.Web.UI.ParseRecorder.RecorderFactories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ItemPager" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemPager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemPager" />
+  <TypeSignature Language="F#" Value="type ItemPager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ItemPager.#ctor(System.Web.UI.MobileControls.ControlPager,System.Web.UI.MobileControls.MobileControl,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pager As ControlPager, control As MobileControl, itemCount As Integer, itemsPerPage As Integer, itemWeight As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemPager(System::Web::UI::MobileControls::ControlPager ^ pager, System::Web::UI::MobileControls::MobileControl ^ control, int itemCount, int itemsPerPage, int itemWeight);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ItemPager : System.Web.UI.MobileControls.ControlPager * System.Web.UI.MobileControls.MobileControl * int * int * int -&gt; System.Web.UI.MobileControls.ItemPager" Usage="new System.Web.UI.MobileControls.ItemPager (pager, control, itemCount, itemsPerPage, itemWeight)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ItemPager.ItemCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int" Usage="System.Web.UI.MobileControls.ItemPager.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ItemPager.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.MobileControls.ItemPager.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

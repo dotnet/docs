@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsSubset" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsSubset&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsSubset : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsSubset = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSubset.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsSubset(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsSubset : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsSubset" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsSubset text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSubset.#ctor(System.String,System.Speech.Recognition.SubsetMatchingMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, matchingMode As SubsetMatchingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsSubset(System::String ^ text, System::Speech::Recognition::SubsetMatchingMode matchingMode);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsSubset : string * System.Speech.Recognition.SubsetMatchingMode -&gt; System.Speech.Recognition.SrgsGrammar.SrgsSubset" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsSubset (text, matchingMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsSubset.MatchingMode" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchingMode As SubsetMatchingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SubsetMatchingMode MatchingMode { System::Speech::Recognition::SubsetMatchingMode get(); void set(System::Speech::Recognition::SubsetMatchingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchingMode : System.Speech.Recognition.SubsetMatchingMode with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsSubset.MatchingMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsSubset.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsSubset.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

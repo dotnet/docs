@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SkinBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SkinBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class SkinBuilder sealed : System::Web::UI::ControlBuilder" />
+  <TypeSignature Language="F#" Value="type SkinBuilder = class&#xA;    inherit ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ThemeProvider provider, class System.Web.UI.Control control, class System.Web.UI.ControlBuilder skinBuilder, string themePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.#ctor(System.Web.UI.ThemeProvider,System.Web.UI.Control,System.Web.UI.ControlBuilder,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SkinBuilder(System::Web::UI::ThemeProvider ^ provider, System::Web::UI::Control ^ control, System::Web::UI::ControlBuilder ^ skinBuilder, System::String ^ themePath);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.SkinBuilder : System.Web.UI.ThemeProvider * System.Web.UI.Control * System.Web.UI.ControlBuilder * string -&gt; System.Web.UI.SkinBuilder" Usage="new System.Web.UI.SkinBuilder (provider, control, skinBuilder, themePath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.ApplyTheme" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyTheme () As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ ApplyTheme();" />
+      <MemberSignature Language="F#" Value="member this.ApplyTheme : unit -&gt; System.Web.UI.Control" Usage="skinBuilder.ApplyTheme " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

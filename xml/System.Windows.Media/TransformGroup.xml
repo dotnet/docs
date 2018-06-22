@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TransformGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformGroup&#xA;Inherits Transform" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransformGroup sealed : System::Windows::Media::Transform" />
+  <TypeSignature Language="F#" Value="type TransformGroup = class&#xA;    inherit Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformGroup.Children" />
       <MemberSignature Language="VB.NET" Value="Public Property Children As TransformCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TransformCollection ^ Children { System::Windows::Media::TransformCollection ^ get(); void set(System::Windows::Media::TransformCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.TransformCollection with get, set" Usage="System.Windows.Media.TransformGroup.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TransformGroup.ChildrenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ChildrenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TransformGroup.ChildrenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformGroup.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TransformGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TransformGroup ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.TransformGroup" Usage="transformGroup.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformGroup.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TransformGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TransformGroup ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.TransformGroup" Usage="transformGroup.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformGroup.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="transformGroup.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformGroup.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.TransformGroup.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

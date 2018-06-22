@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.GridPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class GridPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type GridPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.GridPattern.Cached" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As GridPattern.GridPatternInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::GridPattern::GridPatternInformation Cached { System::Windows::Automation::GridPattern::GridPatternInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cached : System.Windows.Automation.GridPattern.GridPatternInformation" Usage="System.Windows.Automation.GridPattern.Cached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPattern.ColumnCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnCountProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ColumnCountProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnCountProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.GridPattern.ColumnCountProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.GridPattern.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As GridPattern.GridPatternInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::GridPattern::GridPatternInformation Current { System::Windows::Automation::GridPattern::GridPatternInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.GridPattern.GridPatternInformation" Usage="System.Windows.Automation.GridPattern.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.GridPattern.GetItem(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItem (row As Integer, column As Integer) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetItem(int row, int column);" />
+      <MemberSignature Language="F#" Value="member this.GetItem : int * int -&gt; System.Windows.Automation.AutomationElement" Usage="gridPattern.GetItem (row, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -175,6 +180,7 @@ Example of a Grid Control with Empty Coordinates
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.GridPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -211,6 +217,7 @@ Example of a Grid Control with Empty Coordinates
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPattern.RowCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowCountProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RowCountProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowCountProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.GridPattern.RowCountProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

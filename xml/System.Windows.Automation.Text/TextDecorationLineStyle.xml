@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextDecorationLineStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextDecorationLineStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextDecorationLineStyle" />
+  <TypeSignature Language="F#" Value="type TextDecorationLineStyle = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Dash" />
       <MemberSignature Language="VB.NET" Value="Dash" />
       <MemberSignature Language="C++ CLI" Value="Dash" />
+      <MemberSignature Language="F#" Value="Dash = 5" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Dash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DashDot" />
       <MemberSignature Language="VB.NET" Value="DashDot" />
       <MemberSignature Language="C++ CLI" Value="DashDot" />
+      <MemberSignature Language="F#" Value="DashDot = 6" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.DashDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DashDotDot" />
       <MemberSignature Language="VB.NET" Value="DashDotDot" />
       <MemberSignature Language="C++ CLI" Value="DashDotDot" />
+      <MemberSignature Language="F#" Value="DashDotDot = 7" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.DashDotDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Dot" />
       <MemberSignature Language="VB.NET" Value="Dot" />
       <MemberSignature Language="C++ CLI" Value="Dot" />
+      <MemberSignature Language="F#" Value="Dot = 4" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Dot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 3" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DoubleWavy" />
       <MemberSignature Language="VB.NET" Value="DoubleWavy" />
       <MemberSignature Language="C++ CLI" Value="DoubleWavy" />
+      <MemberSignature Language="F#" Value="DoubleWavy = 11" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.DoubleWavy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.LongDash" />
       <MemberSignature Language="VB.NET" Value="LongDash" />
       <MemberSignature Language="C++ CLI" Value="LongDash" />
+      <MemberSignature Language="F#" Value="LongDash = 13" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.LongDash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -182,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = -1" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -201,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -220,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDash" />
       <MemberSignature Language="VB.NET" Value="ThickDash" />
       <MemberSignature Language="C++ CLI" Value="ThickDash" />
+      <MemberSignature Language="F#" Value="ThickDash = 14" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickDash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -239,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDot" />
       <MemberSignature Language="VB.NET" Value="ThickDashDot" />
       <MemberSignature Language="C++ CLI" Value="ThickDashDot" />
+      <MemberSignature Language="F#" Value="ThickDashDot = 15" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -258,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDotDot" />
       <MemberSignature Language="VB.NET" Value="ThickDashDotDot" />
       <MemberSignature Language="C++ CLI" Value="ThickDashDotDot" />
+      <MemberSignature Language="F#" Value="ThickDashDotDot = 16" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDotDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -277,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDot" />
       <MemberSignature Language="VB.NET" Value="ThickDot" />
       <MemberSignature Language="C++ CLI" Value="ThickDot" />
+      <MemberSignature Language="F#" Value="ThickDot = 17" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -296,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickLongDash" />
       <MemberSignature Language="VB.NET" Value="ThickLongDash" />
       <MemberSignature Language="C++ CLI" Value="ThickLongDash" />
+      <MemberSignature Language="F#" Value="ThickLongDash = 18" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickLongDash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -315,6 +331,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickSingle" />
       <MemberSignature Language="VB.NET" Value="ThickSingle" />
       <MemberSignature Language="C++ CLI" Value="ThickSingle" />
+      <MemberSignature Language="F#" Value="ThickSingle = 9" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -334,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickWavy" />
       <MemberSignature Language="VB.NET" Value="ThickWavy" />
       <MemberSignature Language="C++ CLI" Value="ThickWavy" />
+      <MemberSignature Language="F#" Value="ThickWavy = 12" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.ThickWavy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -353,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Wavy" />
       <MemberSignature Language="VB.NET" Value="Wavy" />
       <MemberSignature Language="C++ CLI" Value="Wavy" />
+      <MemberSignature Language="F#" Value="Wavy = 8" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.Wavy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -372,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.WordsOnly" />
       <MemberSignature Language="VB.NET" Value="WordsOnly" />
       <MemberSignature Language="C++ CLI" Value="WordsOnly" />
+      <MemberSignature Language="F#" Value="WordsOnly = 2" Usage="System.Windows.Automation.Text.TextDecorationLineStyle.WordsOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

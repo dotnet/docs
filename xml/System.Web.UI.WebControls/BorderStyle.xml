@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum BorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class BorderStyle" />
+  <TypeSignature Language="F#" Value="type BorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Dashed" />
       <MemberSignature Language="VB.NET" Value="Dashed" />
       <MemberSignature Language="C++ CLI" Value="Dashed" />
+      <MemberSignature Language="F#" Value="Dashed = 3" Usage="System.Web.UI.WebControls.BorderStyle.Dashed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Dotted" />
       <MemberSignature Language="VB.NET" Value="Dotted" />
       <MemberSignature Language="C++ CLI" Value="Dotted" />
+      <MemberSignature Language="F#" Value="Dotted = 2" Usage="System.Web.UI.WebControls.BorderStyle.Dotted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="C++ CLI" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 5" Usage="System.Web.UI.WebControls.BorderStyle.Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Groove" />
       <MemberSignature Language="VB.NET" Value="Groove" />
       <MemberSignature Language="C++ CLI" Value="Groove" />
+      <MemberSignature Language="F#" Value="Groove = 6" Usage="System.Web.UI.WebControls.BorderStyle.Groove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Inset" />
       <MemberSignature Language="VB.NET" Value="Inset" />
       <MemberSignature Language="C++ CLI" Value="Inset" />
+      <MemberSignature Language="F#" Value="Inset = 8" Usage="System.Web.UI.WebControls.BorderStyle.Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Web.UI.WebControls.BorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.WebControls.BorderStyle.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Outset" />
       <MemberSignature Language="VB.NET" Value="Outset" />
       <MemberSignature Language="C++ CLI" Value="Outset" />
+      <MemberSignature Language="F#" Value="Outset = 9" Usage="System.Web.UI.WebControls.BorderStyle.Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Ridge" />
       <MemberSignature Language="VB.NET" Value="Ridge" />
       <MemberSignature Language="C++ CLI" Value="Ridge" />
+      <MemberSignature Language="F#" Value="Ridge = 7" Usage="System.Web.UI.WebControls.BorderStyle.Ridge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BorderStyle.Solid" />
       <MemberSignature Language="VB.NET" Value="Solid" />
       <MemberSignature Language="C++ CLI" Value="Solid" />
+      <MemberSignature Language="F#" Value="Solid = 4" Usage="System.Web.UI.WebControls.BorderStyle.Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

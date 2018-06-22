@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function CreateExpressionFromStringCallback(expressionText As String, useLocationExpression As Boolean, expressionType As Type) As ActivityWithResult " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Activities::ActivityWithResult ^ CreateExpressionFromStringCallback(System::String ^ expressionText, bool useLocationExpression, Type ^ expressionType);" />
+  <TypeSignature Language="F#" Value="type CreateExpressionFromStringCallback = delegate of string * bool * Type -&gt; ActivityWithResult" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

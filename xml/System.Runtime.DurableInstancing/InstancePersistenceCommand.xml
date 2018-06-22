@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstancePersistenceCommand" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstancePersistenceCommand abstract" />
+  <TypeSignature Language="F#" Value="type InstancePersistenceCommand = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommand.#ctor(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As XName)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstancePersistenceCommand(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstancePersistenceCommand : System.Xml.Linq.XName -&gt; System.Runtime.DurableInstancing.InstancePersistenceCommand" Usage="new System.Runtime.DurableInstancing.InstancePersistenceCommand name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.AutomaticallyAcquiringLock" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property AutomaticallyAcquiringLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AutomaticallyAcquiringLock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyAcquiringLock : bool" Usage="System.Runtime.DurableInstancing.InstancePersistenceCommand.AutomaticallyAcquiringLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.IsTransactionEnlistmentOptional" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Runtime.DurableInstancing.InstancePersistenceCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As XName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Xml.Linq.XName" Usage="System.Runtime.DurableInstancing.InstancePersistenceCommand.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Validate (view As InstanceView)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit&#xA;override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="instancePersistenceCommand.Validate view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

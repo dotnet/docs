@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectImportElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectImportElement&#xA;Inherits ProjectElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectImportElement : Microsoft::Build::Construction::ProjectElement" />
+  <TypeSignature Language="F#" Value="type ProjectImportElement = class&#xA;    inherit ProjectElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectImportElement.Project" />
       <MemberSignature Language="VB.NET" Value="Public Property Project As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Project { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Project : string with get, set" Usage="Microsoft.Build.Construction.ProjectImportElement.Project" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectImportElement.ProjectLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ProjectLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectImportElement.ProjectLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

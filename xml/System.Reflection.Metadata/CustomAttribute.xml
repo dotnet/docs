@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Structure CustomAttribute" />
   <TypeSignature Language="C++ CLI" Value="public value class CustomAttribute" />
+  <TypeSignature Language="F#" Value="type CustomAttribute = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttribute.Constructor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constructor As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Constructor { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Constructor : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.CustomAttribute.Constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttribute.DecodeValue``1(System.Reflection.Metadata.ICustomAttributeTypeProvider{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function DecodeValue(Of TType) (provider As ICustomAttributeTypeProvider(Of TType)) As CustomAttributeValue(Of TType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; System::Reflection::Metadata::CustomAttributeValue&lt;TType&gt; DecodeValue(System::Reflection::Metadata::ICustomAttributeTypeProvider&lt;TType&gt; ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.DecodeValue : System.Reflection.Metadata.ICustomAttributeTypeProvider&lt;'ype&gt; -&gt; System.Reflection.Metadata.CustomAttributeValue&lt;'ype&gt;" Usage="customAttribute.DecodeValue provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttribute.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Parent { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.CustomAttribute.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Value { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.CustomAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

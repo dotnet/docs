@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UIntPtr" />
   <TypeSignature Language="VB.NET" Value="Public Structure UIntPtr&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class UIntPtr : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type unativeint = struct&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIntPtr(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="new unativeint : uint32 -&gt; unativeint" Usage="new System.unativeint value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.#ctor(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIntPtr(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="new unativeint : uint64 -&gt; unativeint" Usage="new System.unativeint value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.#ctor(System.Void*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UIntPtr(void* value);" />
+      <MemberSignature Language="F#" Value="new unativeint : nativeptr&lt;unit&gt; -&gt; unativeint" Usage="new System.unativeint value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.Add(System.UIntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pointer As UIntPtr, offset As Integer) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr Add(UIntPtr pointer, int offset);" />
+      <MemberSignature Language="F#" Value="static member Add : unativeint * int -&gt; unativeint" Usage="System.unativeint.Add (pointer, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="unativeint.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="unativeint.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Addition(System.UIntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pointer As UIntPtr, offset As Integer) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr operator +(UIntPtr pointer, int offset);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : unativeint * int -&gt; unativeint" Usage="pointer + offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -381,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Equality(System.UIntPtr,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (value1 As UIntPtr, value2 As UIntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(UIntPtr value1, UIntPtr value2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : unativeint * unativeint -&gt; bool" Usage="value1 = value2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -424,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UInt32)~System.UIntPtr" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As UInteger) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator UIntPtr(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : uint32 -&gt; unativeint" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -463,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UInt64)~System.UIntPtr" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As ULong) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator UIntPtr(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : uint64 -&gt; unativeint" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As UIntPtr) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt32(UIntPtr value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : unativeint -&gt; uint32" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -549,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As UIntPtr) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt64(UIntPtr value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : unativeint -&gt; uint64" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -587,6 +600,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void* op_Explicit(native unsigned int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.Void*" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator void*(UIntPtr value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : unativeint -&gt; nativeptr&lt;unit&gt;" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -633,6 +647,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Explicit(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.Void*)~System.UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator UIntPtr(void* value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : nativeptr&lt;unit&gt; -&gt; unativeint" Usage="System.unativeint.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -680,6 +695,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Inequality(System.UIntPtr,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (value1 As UIntPtr, value2 As UIntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(UIntPtr value1, UIntPtr value2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : unativeint * unativeint -&gt; bool" Usage="System.unativeint.op_Inequality (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -723,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Subtraction(System.UIntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pointer As UIntPtr, offset As Integer) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr operator -(UIntPtr pointer, int offset);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : unativeint * int -&gt; unativeint" Usage="pointer - offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -778,6 +795,7 @@
       <MemberSignature Language="DocId" Value="P:System.UIntPtr.Size" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.unativeint.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -812,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.Subtract(System.UIntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pointer As UIntPtr, offset As Integer) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr Subtract(UIntPtr pointer, int offset);" />
+      <MemberSignature Language="F#" Value="static member Subtract : unativeint * int -&gt; unativeint" Usage="System.unativeint.Subtract (pointer, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -945,6 +964,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void* ToPointer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.ToPointer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void* ToPointer();" />
+      <MemberSignature Language="F#" Value="member this.ToPointer : unit -&gt; nativeptr&lt;unit&gt;" Usage="unativeint.ToPointer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -985,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="unativeint.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1027,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.ToUInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt32 () As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 ToUInt32();" />
+      <MemberSignature Language="F#" Value="member this.ToUInt32 : unit -&gt; uint32" Usage="unativeint.ToUInt32 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1070,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.ToUInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt64 () As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 ToUInt64();" />
+      <MemberSignature Language="F#" Value="member this.ToUInt64 : unit -&gt; uint64" Usage="unativeint.ToUInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1105,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="F:System.UIntPtr.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As UIntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly UIntPtr Zero;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : unativeint" Usage="System.unativeint.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

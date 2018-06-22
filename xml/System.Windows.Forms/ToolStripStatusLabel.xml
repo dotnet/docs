@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripStatusLabel" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripStatusLabel&#xA;Inherits ToolStripLabel" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripStatusLabel : System::Windows::Forms::ToolStripLabel" />
+  <TypeSignature Language="F#" Value="type ToolStripStatusLabel = class&#xA;    inherit ToolStripLabel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.#ctor(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripStatusLabel(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripStatusLabel : System.Drawing.Image -&gt; System.Windows.Forms.ToolStripStatusLabel" Usage="new System.Windows.Forms.ToolStripStatusLabel image" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripStatusLabel(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripStatusLabel : string -&gt; System.Windows.Forms.ToolStripStatusLabel" Usage="new System.Windows.Forms.ToolStripStatusLabel text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.#ctor(System.String,System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripStatusLabel(System::String ^ text, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripStatusLabel : string * System.Drawing.Image -&gt; System.Windows.Forms.ToolStripStatusLabel" Usage="new System.Windows.Forms.ToolStripStatusLabel (text, image)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.#ctor(System.String,System.Drawing.Image,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripStatusLabel(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripStatusLabel : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripStatusLabel" Usage="new System.Windows.Forms.ToolStripStatusLabel (text, image, onClick)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripStatusLabel(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripStatusLabel : string * System.Drawing.Image * EventHandler * string -&gt; System.Windows.Forms.ToolStripStatusLabel" Usage="new System.Windows.Forms.ToolStripStatusLabel (text, image, onClick, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripStatusLabel.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As ToolStripItemAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItemAlignment Alignment { System::Windows::Forms::ToolStripItemAlignment get(); void set(System::Windows::Forms::ToolStripItemAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.ToolStripItemAlignment with get, set" Usage="System.Windows.Forms.ToolStripStatusLabel.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripStatusLabel.BorderSides" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderSides As ToolStripStatusLabelBorderSides" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripStatusLabelBorderSides BorderSides { System::Windows::Forms::ToolStripStatusLabelBorderSides get(); void set(System::Windows::Forms::ToolStripStatusLabelBorderSides value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderSides : System.Windows.Forms.ToolStripStatusLabelBorderSides with get, set" Usage="System.Windows.Forms.ToolStripStatusLabel.BorderSides" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripStatusLabel.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As Border3DStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Border3DStyle BorderStyle { System::Windows::Forms::Border3DStyle get(); void set(System::Windows::Forms::Border3DStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.Border3DStyle with get, set" Usage="System.Windows.Forms.ToolStripStatusLabel.BorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripStatusLabel.DefaultMargin" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultMargin As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Forms::Padding DefaultMargin { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripStatusLabel.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.GetPreferredSize(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size constrainingSize);" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripStatusLabel.GetPreferredSize constrainingSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripStatusLabel.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripStatusLabel.OnPaint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripStatusLabel.Spring" />
       <MemberSignature Language="VB.NET" Value="Public Property Spring As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Spring { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Spring : bool with get, set" Usage="System.Windows.Forms.ToolStripStatusLabel.Spring" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

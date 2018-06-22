@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignTimeResourceProviderFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeResourceProviderFactory abstract" />
+  <TypeSignature Language="F#" Value="type DesignTimeResourceProviderFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider(System.IServiceProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeGlobalResourceProvider (serviceProvider As IServiceProvider, classKey As String) As IResourceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateDesignTimeGlobalResourceProvider(IServiceProvider ^ serviceProvider, System::String ^ classKey);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDesignTimeGlobalResourceProvider : IServiceProvider * string -&gt; System.Web.Compilation.IResourceProvider" Usage="designTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider (serviceProvider, classKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeLocalResourceProvider (serviceProvider As IServiceProvider) As IResourceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateDesignTimeLocalResourceProvider(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDesignTimeLocalResourceProvider : IServiceProvider -&gt; System.Web.Compilation.IResourceProvider" Usage="designTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeLocalResourceWriter (serviceProvider As IServiceProvider) As IDesignTimeResourceWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::Design::IDesignTimeResourceWriter ^ CreateDesignTimeLocalResourceWriter(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDesignTimeLocalResourceWriter : IServiceProvider -&gt; System.Web.UI.Design.IDesignTimeResourceWriter" Usage="designTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

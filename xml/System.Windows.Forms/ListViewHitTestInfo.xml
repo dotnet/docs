@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewHitTestInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewHitTestInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewHitTestInfo" />
+  <TypeSignature Language="F#" Value="type ListViewHitTestInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewHitTestInfo.#ctor(System.Windows.Forms.ListViewItem,System.Windows.Forms.ListViewItem.ListViewSubItem,System.Windows.Forms.ListViewHitTestLocations)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hitItem As ListViewItem, hitSubItem As ListViewItem.ListViewSubItem, hitLocation As ListViewHitTestLocations)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewHitTestInfo(System::Windows::Forms::ListViewItem ^ hitItem, System::Windows::Forms::ListViewItem::ListViewSubItem ^ hitSubItem, System::Windows::Forms::ListViewHitTestLocations hitLocation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewHitTestInfo : System.Windows.Forms.ListViewItem * System.Windows.Forms.ListViewItem.ListViewSubItem * System.Windows.Forms.ListViewHitTestLocations -&gt; System.Windows.Forms.ListViewHitTestInfo" Usage="new System.Windows.Forms.ListViewHitTestInfo (hitItem, hitSubItem, hitLocation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem ^ Item { System::Windows::Forms::ListViewItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Windows.Forms.ListViewItem" Usage="System.Windows.Forms.ListViewHitTestInfo.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As ListViewHitTestLocations" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewHitTestLocations Location { System::Windows::Forms::ListViewHitTestLocations get(); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Windows.Forms.ListViewHitTestLocations" Usage="System.Windows.Forms.ListViewHitTestInfo.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.SubItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubItem As ListViewItem.ListViewSubItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem::ListViewSubItem ^ SubItem { System::Windows::Forms::ListViewItem::ListViewSubItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubItem : System.Windows.Forms.ListViewItem.ListViewSubItem" Usage="System.Windows.Forms.ListViewHitTestInfo.SubItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

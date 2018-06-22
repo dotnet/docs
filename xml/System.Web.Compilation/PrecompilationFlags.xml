@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.PrecompilationFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrecompilationFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrecompilationFlags" />
+  <TypeSignature Language="F#" Value="type PrecompilationFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.AllowPartiallyTrustedCallers" />
       <MemberSignature Language="VB.NET" Value="AllowPartiallyTrustedCallers" />
       <MemberSignature Language="C++ CLI" Value="AllowPartiallyTrustedCallers" />
+      <MemberSignature Language="F#" Value="AllowPartiallyTrustedCallers = 32" Usage="System.Web.Compilation.PrecompilationFlags.AllowPartiallyTrustedCallers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.Clean" />
       <MemberSignature Language="VB.NET" Value="Clean" />
       <MemberSignature Language="C++ CLI" Value="Clean" />
+      <MemberSignature Language="F#" Value="Clean = 8" Usage="System.Web.Compilation.PrecompilationFlags.Clean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.CodeAnalysis" />
       <MemberSignature Language="VB.NET" Value="CodeAnalysis" />
       <MemberSignature Language="C++ CLI" Value="CodeAnalysis" />
+      <MemberSignature Language="F#" Value="CodeAnalysis = 16" Usage="System.Web.Compilation.PrecompilationFlags.CodeAnalysis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Compilation.PrecompilationFlags.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.DelaySign" />
       <MemberSignature Language="VB.NET" Value="DelaySign" />
       <MemberSignature Language="C++ CLI" Value="DelaySign" />
+      <MemberSignature Language="F#" Value="DelaySign = 64" Usage="System.Web.Compilation.PrecompilationFlags.DelaySign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.FixedNames" />
       <MemberSignature Language="VB.NET" Value="FixedNames" />
       <MemberSignature Language="C++ CLI" Value="FixedNames" />
+      <MemberSignature Language="F#" Value="FixedNames = 128" Usage="System.Web.Compilation.PrecompilationFlags.FixedNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.ForceDebug" />
       <MemberSignature Language="VB.NET" Value="ForceDebug" />
       <MemberSignature Language="C++ CLI" Value="ForceDebug" />
+      <MemberSignature Language="F#" Value="ForceDebug = 4" Usage="System.Web.Compilation.PrecompilationFlags.ForceDebug" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.IgnoreBadImageFormatException" />
       <MemberSignature Language="VB.NET" Value="IgnoreBadImageFormatException" />
       <MemberSignature Language="C++ CLI" Value="IgnoreBadImageFormatException" />
+      <MemberSignature Language="F#" Value="IgnoreBadImageFormatException = 256" Usage="System.Web.Compilation.PrecompilationFlags.IgnoreBadImageFormatException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.OverwriteTarget" />
       <MemberSignature Language="VB.NET" Value="OverwriteTarget" />
       <MemberSignature Language="C++ CLI" Value="OverwriteTarget" />
+      <MemberSignature Language="F#" Value="OverwriteTarget = 2" Usage="System.Web.Compilation.PrecompilationFlags.OverwriteTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.PrecompilationFlags.Updatable" />
       <MemberSignature Language="VB.NET" Value="Updatable" />
       <MemberSignature Language="C++ CLI" Value="Updatable" />
+      <MemberSignature Language="F#" Value="Updatable = 1" Usage="System.Web.Compilation.PrecompilationFlags.Updatable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

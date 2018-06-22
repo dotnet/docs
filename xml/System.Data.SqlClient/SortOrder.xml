@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SortOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum SortOrder" />
   <TypeSignature Language="C++ CLI" Value="public enum class SortOrder" />
+  <TypeSignature Language="F#" Value="type SortOrder = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SortOrder.Ascending" />
       <MemberSignature Language="VB.NET" Value="Ascending" />
       <MemberSignature Language="C++ CLI" Value="Ascending" />
+      <MemberSignature Language="F#" Value="Ascending = 0" Usage="System.Data.SqlClient.SortOrder.Ascending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SortOrder.Descending" />
       <MemberSignature Language="VB.NET" Value="Descending" />
       <MemberSignature Language="C++ CLI" Value="Descending" />
+      <MemberSignature Language="F#" Value="Descending = 1" Usage="System.Data.SqlClient.SortOrder.Descending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SortOrder.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = -1" Usage="System.Data.SqlClient.SortOrder.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

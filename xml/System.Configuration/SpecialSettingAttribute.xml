@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SpecialSettingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpecialSettingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpecialSettingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SpecialSettingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SpecialSettingAttribute.#ctor(System.Configuration.SpecialSetting)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (setting As SpecialSetting)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpecialSettingAttribute(System::Configuration::SpecialSetting setting);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SpecialSettingAttribute : System.Configuration.SpecialSetting -&gt; System.Configuration.SpecialSettingAttribute" Usage="new System.Configuration.SpecialSettingAttribute setting" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SpecialSettingAttribute.SpecialSetting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecialSetting As SpecialSetting" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SpecialSetting SpecialSetting { System::Configuration::SpecialSetting get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpecialSetting : System.Configuration.SpecialSetting" Usage="System.Configuration.SpecialSettingAttribute.SpecialSetting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

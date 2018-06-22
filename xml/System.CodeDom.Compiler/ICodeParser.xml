@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.ICodeParser" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICodeParser" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICodeParser" />
+  <TypeSignature Language="F#" Value="type ICodeParser = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeParser.Parse(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse (codeStream As TextReader) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeCompileUnit ^ Parse(System::IO::TextReader ^ codeStream);" />
+      <MemberSignature Language="F#" Value="abstract member Parse : System.IO.TextReader -&gt; System.CodeDom.CodeCompileUnit" Usage="iCodeParser.Parse codeStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

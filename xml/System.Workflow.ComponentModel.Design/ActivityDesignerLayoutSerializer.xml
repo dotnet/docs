@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerLayoutSerializer&#xA;Inherits WorkflowMarkupSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerLayoutSerializer : System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializer" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerLayoutSerializer = class&#xA;    inherit WorkflowMarkupSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer.CreateInstance(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; obj" Usage="activityDesignerLayoutSerializer.CreateInstance (serializationManager, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer.GetProperties(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProperties (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As PropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.PropertyInfo[]" Usage="activityDesignerLayoutSerializer.GetProperties (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer.OnBeforeSerialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeforeSerialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeforeSerialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.OnBeforeSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="activityDesignerLayoutSerializer.OnBeforeSerialize (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

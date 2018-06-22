@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.UnsupportedTokenTypeBadRequestException" />
   <TypeSignature Language="VB.NET" Value="Public Class UnsupportedTokenTypeBadRequestException&#xA;Inherits BadRequestException" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnsupportedTokenTypeBadRequestException : System::IdentityModel::BadRequestException" />
+  <TypeSignature Language="F#" Value="type UnsupportedTokenTypeBadRequestException = class&#xA;    inherit BadRequestException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.UnsupportedTokenTypeBadRequestException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokenType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnsupportedTokenTypeBadRequestException(System::String ^ tokenType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.UnsupportedTokenTypeBadRequestException : string -&gt; System.IdentityModel.UnsupportedTokenTypeBadRequestException" Usage="new System.IdentityModel.UnsupportedTokenTypeBadRequestException tokenType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.UnsupportedTokenTypeBadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UnsupportedTokenTypeBadRequestException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.UnsupportedTokenTypeBadRequestException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.UnsupportedTokenTypeBadRequestException" Usage="new System.IdentityModel.UnsupportedTokenTypeBadRequestException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.UnsupportedTokenTypeBadRequestException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnsupportedTokenTypeBadRequestException(System::String ^ message, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.UnsupportedTokenTypeBadRequestException : string * Exception -&gt; System.IdentityModel.UnsupportedTokenTypeBadRequestException" Usage="new System.IdentityModel.UnsupportedTokenTypeBadRequestException (message, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.UnsupportedTokenTypeBadRequestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="unsupportedTokenTypeBadRequestException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.UnsupportedTokenTypeBadRequestException.TokenType" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenType : string with get, set" Usage="System.IdentityModel.UnsupportedTokenTypeBadRequestException.TokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

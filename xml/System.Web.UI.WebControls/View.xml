@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.View" />
   <TypeSignature Language="VB.NET" Value="Public Class View&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class View : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Activate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activate;" />
+      <MemberSignature Language="F#" Value="member this.Activate : EventHandler " Usage="member this.Activate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivate;" />
+      <MemberSignature Language="F#" Value="member this.Deactivate : EventHandler " Usage="member this.Deactivate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.View.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnActivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivate : EventArgs -&gt; unit&#xA;override this.OnActivate : EventArgs -&gt; unit" Usage="view.OnActivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnDeactivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnDeactivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnDeactivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivate : EventArgs -&gt; unit&#xA;override this.OnDeactivate : EventArgs -&gt; unit" Usage="view.OnDeactivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.View.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

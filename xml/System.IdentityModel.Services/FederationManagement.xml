@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederationManagement" />
   <TypeSignature Language="VB.NET" Value="Public Class FederationManagement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederationManagement abstract sealed" />
+  <TypeSignature Language="F#" Value="type FederationManagement = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader CreateApplicationFederationMetadata(class System.Uri applicationUri, class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Metadata.DisplayClaim&gt; claimsRequired, valuetype System.IdentityModel.Services.ApplicationType applicationType, class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; audienceUris) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.CreateApplicationFederationMetadata(System.Uri,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.DisplayClaim},System.IdentityModel.Services.ApplicationType,System.Collections.ObjectModel.Collection{System.Uri})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ CreateApplicationFederationMetadata(Uri ^ applicationUri, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Metadata::DisplayClaim ^&gt; ^ claimsRequired, System::IdentityModel::Services::ApplicationType applicationType, System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ audienceUris);" />
+      <MemberSignature Language="F#" Value="static member CreateApplicationFederationMetadata : Uri * System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.DisplayClaim&gt; * System.IdentityModel.Services.ApplicationType * System.Collections.ObjectModel.Collection&lt;Uri&gt; -&gt; System.Xml.XmlReader" Usage="System.IdentityModel.Services.FederationManagement.CreateApplicationFederationMetadata (applicationUri, certificate, claimsRequired, applicationType, audienceUris)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateIdentityProviderTrustInfo (metadataReader As XmlReader, inputConfiguration As XmlReader, claimsOfferedUpdate As Boolean) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ UpdateIdentityProviderTrustInfo(System::Xml::XmlReader ^ metadataReader, System::Xml::XmlReader ^ inputConfiguration, bool claimsOfferedUpdate);" />
+      <MemberSignature Language="F#" Value="static member UpdateIdentityProviderTrustInfo : System.Xml.XmlReader * System.Xml.XmlReader * bool -&gt; System.Xml.XmlReader" Usage="System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo (metadataReader, inputConfiguration, claimsOfferedUpdate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Boolean,System.IdentityModel.Metadata.MetadataSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlReader ^ UpdateIdentityProviderTrustInfo(System::Xml::XmlReader ^ metadataReader, System::Xml::XmlReader ^ inputConfiguration, bool claimsOfferedUpdate, System::IdentityModel::Metadata::MetadataSerializer ^ metadataSerializer);" />
+      <MemberSignature Language="F#" Value="static member UpdateIdentityProviderTrustInfo : System.Xml.XmlReader * System.Xml.XmlReader * bool * System.IdentityModel.Metadata.MetadataSerializer -&gt; System.Xml.XmlReader" Usage="System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo (metadataReader, inputConfiguration, claimsOfferedUpdate, metadataSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateIdentityProviderTrustInfo (metadataReader As XmlReader, inputConfiguration As XmlReader, ByRef newIssuerNameRegistry As XmlNodeReader, ByRef claimTypesOffered As XmlNodeReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateIdentityProviderTrustInfo(System::Xml::XmlReader ^ metadataReader, System::Xml::XmlReader ^ inputConfiguration, [Runtime::InteropServices::Out] System::Xml::XmlNodeReader ^ % newIssuerNameRegistry, [Runtime::InteropServices::Out] System::Xml::XmlNodeReader ^ % claimTypesOffered);" />
+      <MemberSignature Language="F#" Value="static member UpdateIdentityProviderTrustInfo : System.Xml.XmlReader * System.Xml.XmlReader *  *  -&gt; unit" Usage="System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo (metadataReader, inputConfiguration, newIssuerNameRegistry, claimTypesOffered)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, [out] class System.Xml.XmlNodeReader&amp; newIssuerNameRegistry, [out] class System.Xml.XmlNodeReader&amp; claimTypesOffered, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo(System.Xml.XmlReader,System.Xml.XmlReader,System.Xml.XmlNodeReader@,System.Xml.XmlNodeReader@,System.IdentityModel.Metadata.MetadataSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateIdentityProviderTrustInfo(System::Xml::XmlReader ^ metadataReader, System::Xml::XmlReader ^ inputConfiguration, [Runtime::InteropServices::Out] System::Xml::XmlNodeReader ^ % newIssuerNameRegistry, [Runtime::InteropServices::Out] System::Xml::XmlNodeReader ^ % claimTypesOffered, System::IdentityModel::Metadata::MetadataSerializer ^ metadataSerializer);" />
+      <MemberSignature Language="F#" Value="static member UpdateIdentityProviderTrustInfo : System.Xml.XmlReader * System.Xml.XmlReader *  *  * System.IdentityModel.Metadata.MetadataSerializer -&gt; unit" Usage="System.IdentityModel.Services.FederationManagement.UpdateIdentityProviderTrustInfo (metadataReader, inputConfiguration, newIssuerNameRegistry, claimTypesOffered, metadataSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IStartWorkflow" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStartWorkflow" />
   <TypeSignature Language="C++ CLI" Value="public interface class IStartWorkflow" />
+  <TypeSignature Language="F#" Value="type IStartWorkflow = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IStartWorkflow.StartWorkflow(System.Type,System.Collections.Generic.Dictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function StartWorkflow (workflowType As Type, namedArgumentValues As Dictionary(Of String, Object)) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid StartWorkflow(Type ^ workflowType, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ namedArgumentValues);" />
+      <MemberSignature Language="F#" Value="abstract member StartWorkflow : Type * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; Guid" Usage="iStartWorkflow.StartWorkflow (workflowType, namedArgumentValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

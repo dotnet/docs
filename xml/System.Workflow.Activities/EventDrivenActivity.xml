@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.EventDrivenActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventDrivenActivity&#xA;Inherits SequenceActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventDrivenActivity sealed : System::Workflow::Activities::SequenceActivity" />
+  <TypeSignature Language="F#" Value="type EventDrivenActivity = class&#xA;    inherit SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventDrivenActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDrivenActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.EventDrivenActivity : string -&gt; System.Workflow.Activities.EventDrivenActivity" Usage="new System.Workflow.Activities.EventDrivenActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.EventDrivenActivity.EventActivity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventActivity As IEventActivity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::IEventActivity ^ EventActivity { System::Workflow::Activities::IEventActivity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventActivity : System.Workflow.Activities.IEventActivity" Usage="System.Workflow.Activities.EventDrivenActivity.EventActivity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

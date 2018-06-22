@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LineStackingStrategy" />
   <TypeSignature Language="VB.NET" Value="Public Enum LineStackingStrategy" />
   <TypeSignature Language="C++ CLI" Value="public enum class LineStackingStrategy" />
+  <TypeSignature Language="F#" Value="type LineStackingStrategy = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineStackingStrategy.BlockLineHeight" />
       <MemberSignature Language="VB.NET" Value="BlockLineHeight" />
       <MemberSignature Language="C++ CLI" Value="BlockLineHeight" />
+      <MemberSignature Language="F#" Value="BlockLineHeight = 0" Usage="System.Windows.LineStackingStrategy.BlockLineHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.LineStackingStrategy.MaxHeight" />
       <MemberSignature Language="VB.NET" Value="MaxHeight" />
       <MemberSignature Language="C++ CLI" Value="MaxHeight" />
+      <MemberSignature Language="F#" Value="MaxHeight = 1" Usage="System.Windows.LineStackingStrategy.MaxHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeGotoStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeGotoStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeGotoStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeGotoStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeGotoStatement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (label As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeGotoStatement(System::String ^ label);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeGotoStatement : string -&gt; System.CodeDom.CodeGotoStatement" Usage="new System.CodeDom.CodeGotoStatement label" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeGotoStatement.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.CodeDom.CodeGotoStatement.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

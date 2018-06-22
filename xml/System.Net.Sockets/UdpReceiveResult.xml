@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpReceiveResult" />
   <TypeSignature Language="VB.NET" Value="Public Structure UdpReceiveResult&#xA;Implements IEquatable(Of UdpReceiveResult)" />
   <TypeSignature Language="C++ CLI" Value="public value class UdpReceiveResult : IEquatable&lt;System::Net::Sockets::UdpReceiveResult&gt;" />
+  <TypeSignature Language="F#" Value="type UdpReceiveResult = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.#ctor(System.Byte[],System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As Byte(), remoteEndPoint As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpReceiveResult(cli::array &lt;System::Byte&gt; ^ buffer, System::Net::IPEndPoint ^ remoteEndPoint);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpReceiveResult : byte[] * System.Net.IPEndPoint -&gt; System.Net.Sockets.UdpReceiveResult" Usage="new System.Net.Sockets.UdpReceiveResult (buffer, remoteEndPoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpReceiveResult.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="System.Net.Sockets.UdpReceiveResult.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.Equals(System.Net.Sockets.UdpReceiveResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As UdpReceiveResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::Sockets::UdpReceiveResult other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.Sockets.UdpReceiveResult -&gt; bool" Usage="udpReceiveResult.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="udpReceiveResult.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="udpReceiveResult.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.op_Equality(System.Net.Sockets.UdpReceiveResult,System.Net.Sockets.UdpReceiveResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As UdpReceiveResult, right As UdpReceiveResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Net::Sockets::UdpReceiveResult left, System::Net::Sockets::UdpReceiveResult right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Net.Sockets.UdpReceiveResult * System.Net.Sockets.UdpReceiveResult -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpReceiveResult.op_Inequality(System.Net.Sockets.UdpReceiveResult,System.Net.Sockets.UdpReceiveResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As UdpReceiveResult, right As UdpReceiveResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Net::Sockets::UdpReceiveResult left, System::Net::Sockets::UdpReceiveResult right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Net.Sockets.UdpReceiveResult * System.Net.Sockets.UdpReceiveResult -&gt; bool" Usage="System.Net.Sockets.UdpReceiveResult.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpReceiveResult.RemoteEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteEndPoint As IPEndPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPEndPoint ^ RemoteEndPoint { System::Net::IPEndPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemoteEndPoint : System.Net.IPEndPoint" Usage="System.Net.Sockets.UdpReceiveResult.RemoteEndPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

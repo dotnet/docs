@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextViewElement" />
   <TypeSignature Language="VB.NET" Value="Public Class TextViewElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextViewElement" />
+  <TypeSignature Language="F#" Value="type TextViewElement = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextViewElement.BreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BreakAfter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BreakAfter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BreakAfter : bool" Usage="System.Web.UI.MobileControls.TextViewElement.BreakAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextViewElement.IsBold" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBold As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBold { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBold : bool" Usage="System.Web.UI.MobileControls.TextViewElement.IsBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextViewElement.IsItalic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsItalic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsItalic { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsItalic : bool" Usage="System.Web.UI.MobileControls.TextViewElement.IsItalic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextViewElement.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Web.UI.MobileControls.TextViewElement.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextViewElement.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : string" Usage="System.Web.UI.MobileControls.TextViewElement.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataColumn" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataColumn sealed" />
+  <TypeSignature Language="F#" Value="type DesignerDataColumn = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataColumn : string * System.Data.DbType -&gt; System.ComponentModel.Design.Data.DesignerDataColumn" Usage="new System.ComponentModel.Design.Data.DesignerDataColumn (name, dataType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataColumn : string * System.Data.DbType * obj -&gt; System.ComponentModel.Design.Data.DesignerDataColumn" Usage="new System.ComponentModel.Design.Data.DesignerDataColumn (name, dataType, defaultValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType,System.Object,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, defaultValue As Object, identity As Boolean, nullable As Boolean, primaryKey As Boolean, precision As Integer, scale As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType, System::Object ^ defaultValue, bool identity, bool nullable, bool primaryKey, int precision, int scale, int length);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataColumn : string * System.Data.DbType * obj * bool * bool * bool * int * int * int -&gt; System.ComponentModel.Design.Data.DesignerDataColumn" Usage="new System.ComponentModel.Design.Data.DesignerDataColumn (name, dataType, defaultValue, identity, nullable, primaryKey, precision, scale, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.DataType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DataType { System::Data::DbType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : System.Data.DbType" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Identity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : bool" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Nullable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Nullable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Nullable : bool" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Nullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Precision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : int" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Precision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.PrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrimaryKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryKey : bool" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.PrimaryKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -308,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Scale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scale As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : int" Usage="System.ComponentModel.Design.Data.DesignerDataColumn.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

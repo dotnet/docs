@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FunctionExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FunctionExpression&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class FunctionExpression sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type FunctionExpression = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionExpression.JScriptFunctionExpression(System.RuntimeTypeHandle,System.String,System.String,System.String[],Microsoft.JScript.JSLocalField[],System.Boolean,System.Boolean,System.String,Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptFunctionExpression (handle As RuntimeTypeHandle, name As String, method_name As String, formal_params As String(), fields As JSLocalField(), must_save_stack_locals As Boolean, hasArgumentsObject As Boolean, text As String, engine As VsaEngine) As FunctionObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::FunctionObject ^ JScriptFunctionExpression(RuntimeTypeHandle handle, System::String ^ name, System::String ^ method_name, cli::array &lt;System::String ^&gt; ^ formal_params, cli::array &lt;Microsoft::JScript::JSLocalField ^&gt; ^ fields, bool must_save_stack_locals, bool hasArgumentsObject, System::String ^ text, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="static member JScriptFunctionExpression : RuntimeTypeHandle * string * string * string[] * Microsoft.JScript.JSLocalField[] * bool * bool * string * Microsoft.JScript.Vsa.VsaEngine -&gt; Microsoft.JScript.FunctionObject" Usage="Microsoft.JScript.FunctionExpression.JScriptFunctionExpression (handle, name, method_name, formal_params, fields, must_save_stack_locals, hasArgumentsObject, text, engine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

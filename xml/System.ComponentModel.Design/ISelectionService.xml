@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ISelectionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISelectionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISelectionService" />
+  <TypeSignature Language="F#" Value="type ISelectionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetComponentSelected(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetComponentSelected (component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetComponentSelected(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentSelected : obj -&gt; bool" Usage="iSelectionService.GetComponentSelected component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetSelectedComponents" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectedComponents () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetSelectedComponents();" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedComponents : unit -&gt; System.Collections.ICollection" Usage="iSelectionService.GetSelectedComponents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.PrimarySelection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimarySelection As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PrimarySelection { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimarySelection : obj" Usage="System.ComponentModel.Design.ISelectionService.PrimarySelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Event SelectionChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanging" />
       <MemberSignature Language="VB.NET" Value="Event SelectionChanging As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanging;" />
+      <MemberSignature Language="F#" Value="member this.SelectionChanging : EventHandler " Usage="member this.SelectionChanging : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.SelectionCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionCount : int" Usage="System.ComponentModel.Design.ISelectionService.SelectionCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedComponents (components As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedComponents(System::Collections::ICollection ^ components);" />
+      <MemberSignature Language="F#" Value="abstract member SetSelectedComponents : System.Collections.ICollection -&gt; unit" Usage="iSelectionService.SetSelectedComponents components" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -341,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection,System.ComponentModel.Design.SelectionTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedComponents (components As ICollection, selectionType As SelectionTypes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedComponents(System::Collections::ICollection ^ components, System::ComponentModel::Design::SelectionTypes selectionType);" />
+      <MemberSignature Language="F#" Value="abstract member SetSelectedComponents : System.Collections.ICollection * System.ComponentModel.Design.SelectionTypes -&gt; unit" Usage="iSelectionService.SetSelectedComponents (components, selectionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RowDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class RowDefinition&#xA;Inherits DefinitionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RowDefinition : System::Windows::Controls::DefinitionBase" />
+  <TypeSignature Language="F#" Value="type RowDefinition = class&#xA;    inherit DefinitionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinition.ActualHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ActualHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActualHeight : double" Usage="System.Windows.Controls.RowDefinition.ActualHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinition.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As GridLength" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::GridLength Height { System::Windows::GridLength get(); void set(System::Windows::GridLength value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : System.Windows.GridLength with get, set" Usage="System.Windows.Controls.RowDefinition.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RowDefinition.HeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.RowDefinition.HeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinition.MaxHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxHeight : double with get, set" Usage="System.Windows.Controls.RowDefinition.MaxHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RowDefinition.MaxHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.RowDefinition.MaxHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinition.MinHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property MinHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MinHeight : double with get, set" Usage="System.Windows.Controls.RowDefinition.MinHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RowDefinition.MinHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.RowDefinition.MinHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinition.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Offset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : double" Usage="System.Windows.Controls.RowDefinition.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteSingleKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscreteSingleKeyFrame&#xA;Inherits SingleKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscreteSingleKeyFrame : System::Windows::Media::Animation::SingleKeyFrame" />
+  <TypeSignature Language="F#" Value="type DiscreteSingleKeyFrame = class&#xA;    inherit SingleKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSingleKeyFrame.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteSingleKeyFrame(float value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteSingleKeyFrame : single -&gt; System.Windows.Media.Animation.DiscreteSingleKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteSingleKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSingleKeyFrame.#ctor(System.Single,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteSingleKeyFrame(float value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteSingleKeyFrame : single * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.DiscreteSingleKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteSingleKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSingleKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="discreteSingleKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSingleKeyFrame.InterpolateValueCore(System.Single,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Single, keyFrameProgress As Double) As Single" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override float InterpolateValueCore(float baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : single * double -&gt; single" Usage="discreteSingleKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

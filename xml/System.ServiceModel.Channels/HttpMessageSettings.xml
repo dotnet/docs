@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpMessageSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpMessageSettings&#xA;Implements IEquatable(Of HttpMessageSettings)" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpMessageSettings sealed : IEquatable&lt;System::ServiceModel::Channels::HttpMessageSettings ^&gt;" />
+  <TypeSignature Language="F#" Value="type HttpMessageSettings = class&#xA;    interface IEquatable&lt;HttpMessageSettings&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpMessageSettings.Equals(System.ServiceModel.Channels.HttpMessageSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As HttpMessageSettings) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::ServiceModel::Channels::HttpMessageSettings ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.ServiceModel.Channels.HttpMessageSettings -&gt; bool" Usage="httpMessageSettings.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpMessageSettings.HttpMessagesSupported" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpMessagesSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpMessagesSupported { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpMessagesSupported : bool with get, set" Usage="System.ServiceModel.Channels.HttpMessageSettings.HttpMessagesSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

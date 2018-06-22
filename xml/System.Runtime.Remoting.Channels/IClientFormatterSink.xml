@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientFormatterSink" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientFormatterSink&#xA;Implements IClientChannelSink, IMessageSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClientFormatterSink : System::Runtime::Remoting::Channels::IClientChannelSink, System::Runtime::Remoting::Messaging::IMessageSink" />
+  <TypeSignature Language="F#" Value="type IClientFormatterSink = interface&#xA;    interface IMessageSink&#xA;    interface IClientChannelSink&#xA;    interface IChannelSinkBase" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

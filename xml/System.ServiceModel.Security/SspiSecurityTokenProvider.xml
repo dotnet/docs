@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SspiSecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SspiSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SspiSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
+  <TypeSignature Language="F#" Value="type SspiSecurityTokenProvider = class&#xA;    inherit SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.#ctor(System.Net.NetworkCredential,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credential As NetworkCredential, extractGroupsForWindowsAccounts As Boolean, allowUnauthenticatedCallers As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SspiSecurityTokenProvider(System::Net::NetworkCredential ^ credential, bool extractGroupsForWindowsAccounts, bool allowUnauthenticatedCallers);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SspiSecurityTokenProvider : System.Net.NetworkCredential * bool * bool -&gt; System.ServiceModel.Security.SspiSecurityTokenProvider" Usage="new System.ServiceModel.Security.SspiSecurityTokenProvider (credential, extractGroupsForWindowsAccounts, allowUnauthenticatedCallers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.#ctor(System.Net.NetworkCredential,System.Boolean,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credential As NetworkCredential, allowNtlm As Boolean, impersonationLevel As TokenImpersonationLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SspiSecurityTokenProvider(System::Net::NetworkCredential ^ credential, bool allowNtlm, System::Security::Principal::TokenImpersonationLevel impersonationLevel);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SspiSecurityTokenProvider : System.Net.NetworkCredential * bool * System.Security.Principal.TokenImpersonationLevel -&gt; System.ServiceModel.Security.SspiSecurityTokenProvider" Usage="new System.ServiceModel.Security.SspiSecurityTokenProvider (credential, allowNtlm, impersonationLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SspiSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="sspiSecurityTokenProvider.GetTokenCore timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

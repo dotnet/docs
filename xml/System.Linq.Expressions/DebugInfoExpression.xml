@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.DebugInfoExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class DebugInfoExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebugInfoExpression : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type DebugInfoExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DebugInfoExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="debugInfoExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As SymbolDocumentInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::SymbolDocumentInfo ^ Document { System::Linq::Expressions::SymbolDocumentInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Linq.Expressions.SymbolDocumentInfo" Usage="System.Linq.Expressions.DebugInfoExpression.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.EndColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EndColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EndColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndColumn : int" Usage="System.Linq.Expressions.DebugInfoExpression.EndColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.EndLine" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EndLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EndLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndLine : int" Usage="System.Linq.Expressions.DebugInfoExpression.EndLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.IsClear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsClear As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClear { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClear : bool" Usage="System.Linq.Expressions.DebugInfoExpression.IsClear" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.DebugInfoExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.StartColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StartColumn As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StartColumn { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int" Usage="System.Linq.Expressions.DebugInfoExpression.StartColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.StartLine" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StartLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StartLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartLine : int" Usage="System.Linq.Expressions.DebugInfoExpression.StartLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -316,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.DebugInfoExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.DebugInfoExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

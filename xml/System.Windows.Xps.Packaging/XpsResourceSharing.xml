@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResourceSharing" />
   <TypeSignature Language="VB.NET" Value="Public Enum XpsResourceSharing" />
   <TypeSignature Language="C++ CLI" Value="public enum class XpsResourceSharing" />
+  <TypeSignature Language="F#" Value="type XpsResourceSharing = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsResourceSharing.NoResourceSharing" />
       <MemberSignature Language="VB.NET" Value="NoResourceSharing" />
       <MemberSignature Language="C++ CLI" Value="NoResourceSharing" />
+      <MemberSignature Language="F#" Value="NoResourceSharing = 1" Usage="System.Windows.Xps.Packaging.XpsResourceSharing.NoResourceSharing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsResourceSharing.ShareResources" />
       <MemberSignature Language="VB.NET" Value="ShareResources" />
       <MemberSignature Language="C++ CLI" Value="ShareResources" />
+      <MemberSignature Language="F#" Value="ShareResources = 0" Usage="System.Windows.Xps.Packaging.XpsResourceSharing.ShareResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

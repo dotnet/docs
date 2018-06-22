@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripProgressBar" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripProgressBar&#xA;Inherits ToolStripControlHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripProgressBar : System::Windows::Forms::ToolStripControlHost" />
+  <TypeSignature Language="F#" Value="type ToolStripProgressBar = class&#xA;    inherit ToolStripControlHost" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripProgressBar(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripProgressBar : string -&gt; System.Windows.Forms.ToolStripProgressBar" Usage="new System.Windows.Forms.ToolStripProgressBar name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.DefaultMargin" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultMargin As Padding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Forms::Padding DefaultMargin { System::Windows::Forms::Padding get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultMargin : System.Windows.Forms.Padding" Usage="System.Windows.Forms.ToolStripProgressBar.DefaultMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStripProgressBar.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.Increment(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Increment (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Increment(int value);" />
+      <MemberSignature Language="F#" Value="member this.Increment : int -&gt; unit" Usage="toolStripProgressBar.Increment value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LocationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Property MarqueeAnimationSpeed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarqueeAnimationSpeed { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarqueeAnimationSpeed : int with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minimum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -512,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.OnRightToLeftLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="toolStripProgressBar.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -546,6 +561,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSubscribeControlEvents(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.OnSubscribeControlEvents(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSubscribeControlEvents(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.OnSubscribeControlEvents : System.Windows.Forms.Control -&gt; unit" Usage="toolStripProgressBar.OnSubscribeControlEvents control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -569,6 +585,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUnsubscribeControlEvents(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.OnUnsubscribeControlEvents(System.Windows.Forms.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUnsubscribeControlEvents(System::Windows::Forms::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.OnUnsubscribeControlEvents : System.Windows.Forms.Control -&gt; unit" Usage="toolStripProgressBar.OnUnsubscribeControlEvents control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -593,6 +610,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.OwnerChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event OwnerChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ OwnerChanged;" />
+      <MemberSignature Language="F#" Value="member this.OwnerChanged : EventHandler " Usage="member this.OwnerChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -627,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripProgressBar.PerformStep" />
       <MemberSignature Language="VB.NET" Value="Public Sub PerformStep ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PerformStep();" />
+      <MemberSignature Language="F#" Value="member this.PerformStep : unit -&gt; unit" Usage="toolStripProgressBar.PerformStep " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -656,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.ProgressBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgressBar As ProgressBar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ProgressBar ^ ProgressBar { System::Windows::Forms::ProgressBar ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProgressBar : System.Windows.Forms.ProgressBar" Usage="System.Windows.Forms.ToolStripProgressBar.ProgressBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -691,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -728,6 +749,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -764,6 +786,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Step" />
       <MemberSignature Language="VB.NET" Value="Public Property Step As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Step { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Step : int with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Step" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -789,6 +812,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As ProgressBarStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ProgressBarStyle Style { System::Windows::Forms::ProgressBarStyle get(); void set(System::Windows::Forms::ProgressBarStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.Forms.ProgressBarStyle with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -814,6 +838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -852,6 +877,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -886,6 +912,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.Validated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Validated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -920,6 +947,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripProgressBar.Validating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Validating As CancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -954,6 +982,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripProgressBar.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int with get, set" Usage="System.Windows.Forms.ToolStripProgressBar.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

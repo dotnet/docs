@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityAlgorithms" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityAlgorithms" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityAlgorithms abstract sealed" />
+  <TypeSignature Language="F#" Value="type SecurityAlgorithms = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes128Encryption As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes128Encryption;" />
+      <MemberSignature Language="F#" Value="val mutable Aes128Encryption : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes128KeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes128KeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable Aes128KeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes192Encryption As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes192Encryption;" />
+      <MemberSignature Language="F#" Value="val mutable Aes192Encryption : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes192KeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes192KeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable Aes192KeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes256Encryption As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes256Encryption;" />
+      <MemberSignature Language="F#" Value="val mutable Aes256Encryption : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const Aes256KeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Aes256KeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable Aes256KeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.DesEncryption" />
       <MemberSignature Language="VB.NET" Value="Public Const DesEncryption As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesEncryption;" />
+      <MemberSignature Language="F#" Value="val mutable DesEncryption : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.DesEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.DsaSha1Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const DsaSha1Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DsaSha1Signature;" />
+      <MemberSignature Language="F#" Value="val mutable DsaSha1Signature : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.DsaSha1Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14n" />
       <MemberSignature Language="VB.NET" Value="Public Const ExclusiveC14n As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ExclusiveC14n;" />
+      <MemberSignature Language="F#" Value="val mutable ExclusiveC14n : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14n" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -194,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14nWithComments" />
       <MemberSignature Language="VB.NET" Value="Public Const ExclusiveC14nWithComments As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ExclusiveC14nWithComments;" />
+      <MemberSignature Language="F#" Value="val mutable ExclusiveC14nWithComments : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14nWithComments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -213,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const HmacSha1Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HmacSha1Signature;" />
+      <MemberSignature Language="F#" Value="val mutable HmacSha1Signature : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -232,6 +244,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha256Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const HmacSha256Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HmacSha256Signature;" />
+      <MemberSignature Language="F#" Value="val mutable HmacSha256Signature : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha256Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -251,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation" />
       <MemberSignature Language="VB.NET" Value="Public Const Psha1KeyDerivation As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Psha1KeyDerivation;" />
+      <MemberSignature Language="F#" Value="val mutable Psha1KeyDerivation : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -270,6 +284,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivationDec2005" />
       <MemberSignature Language="VB.NET" Value="Public Const Psha1KeyDerivationDec2005 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Psha1KeyDerivationDec2005;" />
+      <MemberSignature Language="F#" Value="val mutable Psha1KeyDerivationDec2005 : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivationDec2005" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -289,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Ripemd160Digest" />
       <MemberSignature Language="VB.NET" Value="Public Const Ripemd160Digest As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Ripemd160Digest;" />
+      <MemberSignature Language="F#" Value="val mutable Ripemd160Digest : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Ripemd160Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -308,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const RsaOaepKeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RsaOaepKeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable RsaOaepKeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -327,6 +344,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const RsaSha1Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RsaSha1Signature;" />
+      <MemberSignature Language="F#" Value="val mutable RsaSha1Signature : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -346,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const RsaSha256Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RsaSha256Signature;" />
+      <MemberSignature Language="F#" Value="val mutable RsaSha256Signature : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -365,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const RsaV15KeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RsaV15KeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable RsaV15KeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -384,6 +404,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha1Digest" />
       <MemberSignature Language="VB.NET" Value="Public Const Sha1Digest As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Sha1Digest;" />
+      <MemberSignature Language="F#" Value="val mutable Sha1Digest : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Sha1Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -403,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha256Digest" />
       <MemberSignature Language="VB.NET" Value="Public Const Sha256Digest As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Sha256Digest;" />
+      <MemberSignature Language="F#" Value="val mutable Sha256Digest : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Sha256Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -422,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha512Digest" />
       <MemberSignature Language="VB.NET" Value="Public Const Sha512Digest As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Sha512Digest;" />
+      <MemberSignature Language="F#" Value="val mutable Sha512Digest : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.Sha512Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -441,6 +464,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.StrTransform" />
       <MemberSignature Language="VB.NET" Value="Public Const StrTransform As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ StrTransform;" />
+      <MemberSignature Language="F#" Value="val mutable StrTransform : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.StrTransform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -460,6 +484,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TlsSspiKeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const TlsSspiKeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ TlsSspiKeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable TlsSspiKeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.TlsSspiKeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -479,6 +504,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />
       <MemberSignature Language="VB.NET" Value="Public Const TripleDesEncryption As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ TripleDesEncryption;" />
+      <MemberSignature Language="F#" Value="val mutable TripleDesEncryption : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -498,6 +524,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const TripleDesKeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ TripleDesKeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable TripleDesKeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -517,6 +544,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.WindowsSspiKeyWrap" />
       <MemberSignature Language="VB.NET" Value="Public Const WindowsSspiKeyWrap As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ WindowsSspiKeyWrap;" />
+      <MemberSignature Language="F#" Value="val mutable WindowsSspiKeyWrap : string" Usage="System.IdentityModel.Tokens.SecurityAlgorithms.WindowsSspiKeyWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

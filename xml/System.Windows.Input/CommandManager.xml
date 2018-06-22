@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommandManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandManager sealed" />
+  <TypeSignature Language="F#" Value="type CommandManager = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.AddCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddCanExecuteHandler (element As UIElement, handler As CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddCanExecuteHandler(System::Windows::UIElement ^ element, System::Windows::Input::CanExecuteRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddCanExecuteHandler : System.Windows.UIElement * System.Windows.Input.CanExecuteRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.AddCanExecuteHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.AddExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddExecutedHandler (element As UIElement, handler As ExecutedRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddExecutedHandler(System::Windows::UIElement ^ element, System::Windows::Input::ExecutedRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddExecutedHandler : System.Windows.UIElement * System.Windows.Input.ExecutedRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.AddExecutedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.AddPreviewCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewCanExecuteHandler (element As UIElement, handler As CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewCanExecuteHandler(System::Windows::UIElement ^ element, System::Windows::Input::CanExecuteRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewCanExecuteHandler : System.Windows.UIElement * System.Windows.Input.CanExecuteRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.AddPreviewCanExecuteHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.AddPreviewExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewExecutedHandler (element As UIElement, handler As ExecutedRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewExecutedHandler(System::Windows::UIElement ^ element, System::Windows::Input::ExecutedRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewExecutedHandler : System.Windows.UIElement * System.Windows.Input.ExecutedRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.AddPreviewExecutedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +256,7 @@
       <MemberSignature Language="ILAsm" Value="see AddCanExecuteHandler, and RemoveCanExecuteHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandManager.CanExecute" />
       <MemberSignature Language="VB.NET" Value="see AddCanExecuteHandler, and RemoveCanExecuteHandler" />
+      <MemberSignature Language="F#" Value="see AddCanExecuteHandler, and RemoveCanExecuteHandler" Usage="see AddCanExecuteHandler, and RemoveCanExecuteHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CommandManager.CanExecuteEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanExecuteEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CanExecuteEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanExecuteEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.CommandManager.CanExecuteEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="ILAsm" Value="see AddExecutedHandler, and RemoveExecutedHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandManager.Executed" />
       <MemberSignature Language="VB.NET" Value="see AddExecutedHandler, and RemoveExecutedHandler" />
+      <MemberSignature Language="F#" Value="see AddExecutedHandler, and RemoveExecutedHandler" Usage="see AddExecutedHandler, and RemoveExecutedHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CommandManager.ExecutedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExecutedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ExecutedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExecutedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.CommandManager.ExecutedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.InvalidateRequerySuggested" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvalidateRequerySuggested ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvalidateRequerySuggested();" />
+      <MemberSignature Language="F#" Value="static member InvalidateRequerySuggested : unit -&gt; unit" Usage="System.Windows.Input.CommandManager.InvalidateRequerySuggested " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewCanExecuteHandler, and RemovePreviewCanExecuteHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandManager.PreviewCanExecute" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewCanExecuteHandler, and RemovePreviewCanExecuteHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewCanExecuteHandler, and RemovePreviewCanExecuteHandler" Usage="see AddPreviewCanExecuteHandler, and RemovePreviewCanExecuteHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CommandManager.PreviewCanExecuteEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewCanExecuteEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewCanExecuteEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewCanExecuteEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.CommandManager.PreviewCanExecuteEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -388,6 +400,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewExecutedHandler, and RemovePreviewExecutedHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandManager.PreviewExecuted" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewExecutedHandler, and RemovePreviewExecutedHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewExecutedHandler, and RemovePreviewExecutedHandler" Usage="see AddPreviewExecutedHandler, and RemovePreviewExecutedHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -404,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CommandManager.PreviewExecutedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewExecutedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewExecutedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewExecutedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.CommandManager.PreviewExecutedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -422,6 +436,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassCommandBinding(class System.Type type, class System.Windows.Input.CommandBinding commandBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RegisterClassCommandBinding(System.Type,System.Windows.Input.CommandBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClassCommandBinding(Type ^ type, System::Windows::Input::CommandBinding ^ commandBinding);" />
+      <MemberSignature Language="F#" Value="static member RegisterClassCommandBinding : Type * System.Windows.Input.CommandBinding -&gt; unit" Usage="System.Windows.Input.CommandManager.RegisterClassCommandBinding (type, commandBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -455,6 +470,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassInputBinding(class System.Type type, class System.Windows.Input.InputBinding inputBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RegisterClassInputBinding(System.Type,System.Windows.Input.InputBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClassInputBinding(Type ^ type, System::Windows::Input::InputBinding ^ inputBinding);" />
+      <MemberSignature Language="F#" Value="static member RegisterClassInputBinding : Type * System.Windows.Input.InputBinding -&gt; unit" Usage="System.Windows.Input.CommandManager.RegisterClassInputBinding (type, inputBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -489,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RemoveCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveCanExecuteHandler (element As UIElement, handler As CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveCanExecuteHandler(System::Windows::UIElement ^ element, System::Windows::Input::CanExecuteRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveCanExecuteHandler : System.Windows.UIElement * System.Windows.Input.CanExecuteRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.RemoveCanExecuteHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -528,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RemoveExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveExecutedHandler (element As UIElement, handler As ExecutedRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveExecutedHandler(System::Windows::UIElement ^ element, System::Windows::Input::ExecutedRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveExecutedHandler : System.Windows.UIElement * System.Windows.Input.ExecutedRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.RemoveExecutedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -567,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RemovePreviewCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewCanExecuteHandler (element As UIElement, handler As CanExecuteRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewCanExecuteHandler(System::Windows::UIElement ^ element, System::Windows::Input::CanExecuteRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewCanExecuteHandler : System.Windows.UIElement * System.Windows.Input.CanExecuteRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.RemovePreviewCanExecuteHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -606,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandManager.RemovePreviewExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewExecutedHandler (element As UIElement, handler As ExecutedRoutedEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewExecutedHandler(System::Windows::UIElement ^ element, System::Windows::Input::ExecutedRoutedEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewExecutedHandler : System.Windows.UIElement * System.Windows.Input.ExecutedRoutedEventHandler -&gt; unit" Usage="System.Windows.Input.CommandManager.RemovePreviewExecutedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +665,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandManager.RequerySuggested" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event RequerySuggested As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ RequerySuggested;" />
+      <MemberSignature Language="F#" Value="member this.RequerySuggested : EventHandler " Usage="member this.RequerySuggested : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

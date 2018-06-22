@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Enumeration.FileSystemName" />
   <TypeSignature Language="VB.NET" Value="Public Class FileSystemName" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileSystemName abstract sealed" />
+  <TypeSignature Language="F#" Value="type FileSystemName = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MatchesSimpleExpression(valuetype System.ReadOnlySpan`1&lt;char&gt; expression, valuetype System.ReadOnlySpan`1&lt;char&gt; name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemName.MatchesSimpleExpression(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MatchesSimpleExpression (expression As ReadOnlySpan(Of Char), name As ReadOnlySpan(Of Char), Optional ignoreCase As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MatchesSimpleExpression : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * bool -&gt; bool" Usage="System.IO.Enumeration.FileSystemName.MatchesSimpleExpression (expression, name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool MatchesWin32Expression(valuetype System.ReadOnlySpan`1&lt;char&gt; expression, valuetype System.ReadOnlySpan`1&lt;char&gt; name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemName.MatchesWin32Expression(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MatchesWin32Expression (expression As ReadOnlySpan(Of Char), name As ReadOnlySpan(Of Char), Optional ignoreCase As Boolean = true) As Boolean" />
+      <MemberSignature Language="F#" Value="static member MatchesWin32Expression : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * bool -&gt; bool" Usage="System.IO.Enumeration.FileSystemName.MatchesWin32Expression (expression, name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemName.TranslateWin32Expression(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TranslateWin32Expression (expression As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TranslateWin32Expression(System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member TranslateWin32Expression : string -&gt; string" Usage="System.IO.Enumeration.FileSystemName.TranslateWin32Expression expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

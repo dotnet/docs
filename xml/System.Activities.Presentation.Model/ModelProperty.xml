@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelProperty" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelProperty abstract" />
+  <TypeSignature Language="F#" Value="type ModelProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.AttachedOwnerType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AttachedOwnerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ AttachedOwnerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttachedOwnerType : Type" Usage="System.Activities.Presentation.Model.ModelProperty.AttachedOwnerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Activities.Presentation.Model.ModelProperty.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.ClearValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ClearValue ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ClearValue();" />
+      <MemberSignature Language="F#" Value="abstract member ClearValue : unit -&gt; unit" Usage="modelProperty.ClearValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Collection" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Collection As ModelItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItemCollection ^ Collection { System::Activities::Presentation::Model::ModelItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Activities.Presentation.Model.ModelItemCollection" Usage="System.Activities.Presentation.Model.ModelProperty.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.ComputedValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ComputedValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ ComputedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ComputedValue : obj with get, set" Usage="System.Activities.Presentation.Model.ModelProperty.ComputedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Converter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Converter As TypeConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.ComponentModel.TypeConverter" Usage="System.Activities.Presentation.Model.ModelProperty.Converter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ DefaultValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.Activities.Presentation.Model.ModelProperty.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Dictionary" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Dictionary As ModelItemDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItemDictionary ^ Dictionary { System::Activities::Presentation::Model::ModelItemDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dictionary : System.Activities.Presentation.Model.ModelItemDictionary" Usage="System.Activities.Presentation.Model.ModelProperty.Dictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="modelProperty.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="modelProperty.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -274,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsAttached" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAttached As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAttached { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAttached : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsAttached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -295,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsBrowsable" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsBrowsable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsBrowsable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBrowsable : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsBrowsable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -316,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsCollection" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsCollection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsCollection { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollection : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -337,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsDictionary" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDictionary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDictionary { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDictionary : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -358,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -379,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.IsSet" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsSet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsSet { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSet : bool" Usage="System.Activities.Presentation.Model.ModelProperty.IsSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -400,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.Presentation.Model.ModelProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -420,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.op_Equality(System.Activities.Presentation.Model.ModelProperty,System.Activities.Presentation.Model.ModelProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (first As ModelProperty, second As ModelProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Activities::Presentation::Model::ModelProperty ^ first, System::Activities::Presentation::Model::ModelProperty ^ second);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Activities.Presentation.Model.ModelProperty * System.Activities.Presentation.Model.ModelProperty -&gt; bool" Usage="first = second" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -447,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.op_Inequality(System.Activities.Presentation.Model.ModelProperty,System.Activities.Presentation.Model.ModelProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (first As ModelProperty, second As ModelProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Activities::Presentation::Model::ModelProperty ^ first, System::Activities::Presentation::Model::ModelProperty ^ second);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Activities.Presentation.Model.ModelProperty * System.Activities.Presentation.Model.ModelProperty -&gt; bool" Usage="System.Activities.Presentation.Model.ModelProperty.op_Inequality (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -474,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Parent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parent As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Parent { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelProperty.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -494,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.Activities.Presentation.Model.ModelProperty.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -514,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelProperty.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function SetValue (value As Object) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ SetValue(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelProperty.SetValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -548,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Value { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

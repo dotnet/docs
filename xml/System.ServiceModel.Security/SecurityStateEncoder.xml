@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityStateEncoder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityStateEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityStateEncoder abstract" />
+  <TypeSignature Language="F#" Value="type SecurityStateEncoder = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityStateEncoder.DecodeSecurityState(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function DecodeSecurityState (data As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ DecodeSecurityState(cli::array &lt;System::Byte&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member DecodeSecurityState : byte[] -&gt; byte[]" Usage="securityStateEncoder.DecodeSecurityState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityStateEncoder.EncodeSecurityState(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function EncodeSecurityState (data As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ EncodeSecurityState(cli::array &lt;System::Byte&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member EncodeSecurityState : byte[] -&gt; byte[]" Usage="securityStateEncoder.EncodeSecurityState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

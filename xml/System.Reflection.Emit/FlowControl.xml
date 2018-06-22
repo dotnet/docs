@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.FlowControl" />
   <TypeSignature Language="VB.NET" Value="Public Enum FlowControl" />
   <TypeSignature Language="C++ CLI" Value="public enum class FlowControl" />
+  <TypeSignature Language="F#" Value="type FlowControl = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Branch" />
       <MemberSignature Language="VB.NET" Value="Branch" />
       <MemberSignature Language="C++ CLI" Value="Branch" />
+      <MemberSignature Language="F#" Value="Branch = 0" Usage="System.Reflection.Emit.FlowControl.Branch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Break" />
       <MemberSignature Language="VB.NET" Value="Break" />
       <MemberSignature Language="C++ CLI" Value="Break" />
+      <MemberSignature Language="F#" Value="Break = 1" Usage="System.Reflection.Emit.FlowControl.Break" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Call" />
       <MemberSignature Language="VB.NET" Value="Call" />
       <MemberSignature Language="C++ CLI" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 2" Usage="System.Reflection.Emit.FlowControl.Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Cond_Branch" />
       <MemberSignature Language="VB.NET" Value="Cond_Branch" />
       <MemberSignature Language="C++ CLI" Value="Cond_Branch" />
+      <MemberSignature Language="F#" Value="Cond_Branch = 3" Usage="System.Reflection.Emit.FlowControl.Cond_Branch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Meta" />
       <MemberSignature Language="VB.NET" Value="Meta" />
       <MemberSignature Language="C++ CLI" Value="Meta" />
+      <MemberSignature Language="F#" Value="Meta = 4" Usage="System.Reflection.Emit.FlowControl.Meta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Next" />
       <MemberSignature Language="VB.NET" Value="Next" />
       <MemberSignature Language="C++ CLI" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 5" Usage="System.Reflection.Emit.FlowControl.Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Phi" />
       <MemberSignature Language="VB.NET" Value="Phi" />
       <MemberSignature Language="C++ CLI" Value="Phi" />
+      <MemberSignature Language="F#" Value="Phi = 6" Usage="System.Reflection.Emit.FlowControl.Phi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Return" />
       <MemberSignature Language="VB.NET" Value="Return" />
       <MemberSignature Language="C++ CLI" Value="Return" />
+      <MemberSignature Language="F#" Value="Return = 7" Usage="System.Reflection.Emit.FlowControl.Return" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FlowControl.Throw" />
       <MemberSignature Language="VB.NET" Value="Throw" />
       <MemberSignature Language="C++ CLI" Value="Throw" />
+      <MemberSignature Language="F#" Value="Throw = 8" Usage="System.Reflection.Emit.FlowControl.Throw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

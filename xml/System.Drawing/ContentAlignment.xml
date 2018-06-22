@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ContentAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContentAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContentAlignment" />
+  <TypeSignature Language="F#" Value="type ContentAlignment = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomCenter" />
       <MemberSignature Language="VB.NET" Value="BottomCenter" />
       <MemberSignature Language="C++ CLI" Value="BottomCenter" />
+      <MemberSignature Language="F#" Value="BottomCenter = 512" Usage="System.Drawing.ContentAlignment.BottomCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="BottomLeft" />
       <MemberSignature Language="C++ CLI" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 256" Usage="System.Drawing.ContentAlignment.BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
       <MemberSignature Language="C++ CLI" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 1024" Usage="System.Drawing.ContentAlignment.BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleCenter" />
       <MemberSignature Language="VB.NET" Value="MiddleCenter" />
       <MemberSignature Language="C++ CLI" Value="MiddleCenter" />
+      <MemberSignature Language="F#" Value="MiddleCenter = 32" Usage="System.Drawing.ContentAlignment.MiddleCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleLeft" />
       <MemberSignature Language="VB.NET" Value="MiddleLeft" />
       <MemberSignature Language="C++ CLI" Value="MiddleLeft" />
+      <MemberSignature Language="F#" Value="MiddleLeft = 16" Usage="System.Drawing.ContentAlignment.MiddleLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleRight" />
       <MemberSignature Language="VB.NET" Value="MiddleRight" />
       <MemberSignature Language="C++ CLI" Value="MiddleRight" />
+      <MemberSignature Language="F#" Value="MiddleRight = 64" Usage="System.Drawing.ContentAlignment.MiddleRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopCenter" />
       <MemberSignature Language="VB.NET" Value="TopCenter" />
       <MemberSignature Language="C++ CLI" Value="TopCenter" />
+      <MemberSignature Language="F#" Value="TopCenter = 2" Usage="System.Drawing.ContentAlignment.TopCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
       <MemberSignature Language="C++ CLI" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 1" Usage="System.Drawing.ContentAlignment.TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopRight" />
       <MemberSignature Language="VB.NET" Value="TopRight" />
       <MemberSignature Language="C++ CLI" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 4" Usage="System.Drawing.ContentAlignment.TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray" />
   <TypeSignature Language="VB.NET" Value="Public Class MenuItemArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItemArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type MenuItemArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemArray(System::ComponentModel::IContainer ^ Container);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray Container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="menuItemArray.CanExtend target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Click" />
       <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.DrawItem" />
       <MemberSignature Language="VB.NET" Value="Public Event DrawItem As DrawItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="menuItemArray.GetControlInstanceType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetIndex(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As MenuItem) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::MenuItem ^ o);" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.MenuItem -&gt; int16" Usage="menuItemArray.GetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="menuItemArray.HookUpControlEvents o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MenuItem ^ default[short] { System::Windows::Forms::MenuItem ^ get(short Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.MenuItem" Usage="Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -352,6 +361,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.MeasureItem" />
       <MemberSignature Language="VB.NET" Value="Public Event MeasureItem As MeasureItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
+      <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -383,6 +393,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Popup" />
       <MemberSignature Language="VB.NET" Value="Public Event Popup As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Popup;" />
+      <MemberSignature Language="F#" Value="member this.Popup : EventHandler " Usage="member this.Popup : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -414,6 +425,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ResetIndex(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::MenuItem ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.MenuItem -&gt; unit" Usage="menuItemArray.ResetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -452,6 +464,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Select" />
       <MemberSignature Language="VB.NET" Value="Public Event Select As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Select;" />
+      <MemberSignature Language="F#" Value="member this.Select : EventHandler " Usage="member this.Select : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -483,6 +496,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.SetIndex(System.Windows.Forms.MenuItem,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As MenuItem, Index As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::MenuItem ^ o, short Index);" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.MenuItem * int16 -&gt; unit" Usage="menuItemArray.SetIndex (o, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -523,6 +537,7 @@ MsgBox(CStr(MenuItemArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ShouldSerializeIndex(System.Windows.Forms.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As MenuItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::MenuItem ^ o);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.MenuItem -&gt; bool" Usage="menuItemArray.ShouldSerializeIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

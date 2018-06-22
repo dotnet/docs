@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Architecture" />
   <TypeSignature Language="VB.NET" Value="Public Enum Architecture" />
   <TypeSignature Language="C++ CLI" Value="public enum class Architecture" />
+  <TypeSignature Language="F#" Value="type Architecture = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm" />
       <MemberSignature Language="VB.NET" Value="Arm" />
       <MemberSignature Language="C++ CLI" Value="Arm" />
+      <MemberSignature Language="F#" Value="Arm = 2" Usage="System.Runtime.InteropServices.Architecture.Arm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm64" />
       <MemberSignature Language="VB.NET" Value="Arm64" />
       <MemberSignature Language="C++ CLI" Value="Arm64" />
+      <MemberSignature Language="F#" Value="Arm64 = 3" Usage="System.Runtime.InteropServices.Architecture.Arm64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X64" />
       <MemberSignature Language="VB.NET" Value="X64" />
       <MemberSignature Language="C++ CLI" Value="X64" />
+      <MemberSignature Language="F#" Value="X64 = 1" Usage="System.Runtime.InteropServices.Architecture.X64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X86" />
       <MemberSignature Language="VB.NET" Value="X86" />
       <MemberSignature Language="C++ CLI" Value="X86" />
+      <MemberSignature Language="F#" Value="X86 = 0" Usage="System.Runtime.InteropServices.Architecture.X86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>

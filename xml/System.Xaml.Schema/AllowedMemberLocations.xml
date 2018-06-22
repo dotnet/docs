@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.AllowedMemberLocations" />
   <TypeSignature Language="VB.NET" Value="Public Enum AllowedMemberLocations" />
   <TypeSignature Language="C++ CLI" Value="public enum class AllowedMemberLocations" />
+  <TypeSignature Language="F#" Value="type AllowedMemberLocations = " />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.AllowedMemberLocations.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 3" Usage="System.Xaml.Schema.AllowedMemberLocations.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.AllowedMemberLocations.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 1" Usage="System.Xaml.Schema.AllowedMemberLocations.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.AllowedMemberLocations.MemberElement" />
       <MemberSignature Language="VB.NET" Value="MemberElement" />
       <MemberSignature Language="C++ CLI" Value="MemberElement" />
+      <MemberSignature Language="F#" Value="MemberElement = 2" Usage="System.Xaml.Schema.AllowedMemberLocations.MemberElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.AllowedMemberLocations.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xaml.Schema.AllowedMemberLocations.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

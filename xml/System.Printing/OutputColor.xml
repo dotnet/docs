@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.OutputColor" />
   <TypeSignature Language="VB.NET" Value="Public Enum OutputColor" />
   <TypeSignature Language="C++ CLI" Value="public enum class OutputColor" />
+  <TypeSignature Language="F#" Value="type OutputColor = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Color" />
       <MemberSignature Language="VB.NET" Value="Color" />
       <MemberSignature Language="C++ CLI" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 1" Usage="System.Printing.OutputColor.Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Grayscale" />
       <MemberSignature Language="VB.NET" Value="Grayscale" />
       <MemberSignature Language="C++ CLI" Value="Grayscale" />
+      <MemberSignature Language="F#" Value="Grayscale = 2" Usage="System.Printing.OutputColor.Grayscale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Monochrome" />
       <MemberSignature Language="VB.NET" Value="Monochrome" />
       <MemberSignature Language="C++ CLI" Value="Monochrome" />
+      <MemberSignature Language="F#" Value="Monochrome = 3" Usage="System.Printing.OutputColor.Monochrome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.OutputColor.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

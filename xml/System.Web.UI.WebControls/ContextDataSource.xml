@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ContextDataSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContextDataSource&#xA;Inherits QueryableDataSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextDataSource abstract : System::Web::UI::WebControls::QueryableDataSource" />
+  <TypeSignature Language="F#" Value="type ContextDataSource = class&#xA;    inherit QueryableDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.ContextTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextTypeName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSource.ContextTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Protected Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSource.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ContextDataSource.EntityTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EntityTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EntityTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityTypeName : string with get, set" Usage="System.Web.UI.WebControls.ContextDataSource.EntityTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

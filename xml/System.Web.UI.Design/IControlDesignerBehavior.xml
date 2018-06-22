@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IControlDesignerBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Interface IControlDesignerBehavior" />
   <TypeSignature Language="C++ CLI" Value="public interface class IControlDesignerBehavior" />
+  <TypeSignature Language="F#" Value="type IControlDesignerBehavior = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerBehavior.DesignTimeElementView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignTimeElementView As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DesignTimeElementView { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeElementView : obj" Usage="System.Web.UI.Design.IControlDesignerBehavior.DesignTimeElementView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerBehavior.DesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Property DesignTimeHtml As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DesignTimeHtml { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeHtml : string with get, set" Usage="System.Web.UI.Design.IControlDesignerBehavior.DesignTimeHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnTemplateModeChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnTemplateModeChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnTemplateModeChanged : unit -&gt; unit" Usage="iControlDesignerBehavior.OnTemplateModeChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationSection&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSection abstract : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ConfigurationSection = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -132,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.DeserializeSection(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub DeserializeSection (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void DeserializeSection(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeSection : System.Xml.XmlReader -&gt; unit&#xA;override this.DeserializeSection : System.Xml.XmlReader -&gt; unit" Usage="configurationSection.DeserializeSection reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -168,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.GetRuntimeObject" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetRuntimeObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ GetRuntimeObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetRuntimeObject : unit -&gt; obj&#xA;override this.GetRuntimeObject : unit -&gt; obj" Usage="configurationSection.GetRuntimeObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -217,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
+      <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="configurationSection.IsModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ResetModified ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ResetModified();" />
+      <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="configurationSection.ResetModified " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSection.SectionInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionInformation As SectionInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SectionInformation ^ SectionInformation { System::Configuration::SectionInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SectionInformation : System.Configuration.SectionInformation" Usage="System.Configuration.ConfigurationSection.SectionInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -302,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SerializeSection (parentElement As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentElement, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string&#xA;override this.SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string" Usage="configurationSection.SerializeSection (parentElement, name, saveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -341,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.ShouldSerializeElementInTargetVersion(System.Configuration.ConfigurationElement,System.String,System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeElementInTargetVersion (element As ConfigurationElement, elementName As String, targetFramework As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeElementInTargetVersion(System::Configuration::ConfigurationElement ^ element, System::String ^ elementName, System::Runtime::Versioning::FrameworkName ^ targetFramework);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeElementInTargetVersion : System.Configuration.ConfigurationElement * string * System.Runtime.Versioning.FrameworkName -&gt; bool&#xA;override this.ShouldSerializeElementInTargetVersion : System.Configuration.ConfigurationElement * string * System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="configurationSection.ShouldSerializeElementInTargetVersion (element, elementName, targetFramework)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -383,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.ShouldSerializePropertyInTargetVersion(System.Configuration.ConfigurationProperty,System.String,System.Runtime.Versioning.FrameworkName,System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializePropertyInTargetVersion (property As ConfigurationProperty, propertyName As String, targetFramework As FrameworkName, parentConfigurationElement As ConfigurationElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializePropertyInTargetVersion(System::Configuration::ConfigurationProperty ^ property, System::String ^ propertyName, System::Runtime::Versioning::FrameworkName ^ targetFramework, System::Configuration::ConfigurationElement ^ parentConfigurationElement);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializePropertyInTargetVersion : System.Configuration.ConfigurationProperty * string * System.Runtime.Versioning.FrameworkName * System.Configuration.ConfigurationElement -&gt; bool&#xA;override this.ShouldSerializePropertyInTargetVersion : System.Configuration.ConfigurationProperty * string * System.Runtime.Versioning.FrameworkName * System.Configuration.ConfigurationElement -&gt; bool" Usage="configurationSection.ShouldSerializePropertyInTargetVersion (property, propertyName, targetFramework, parentConfigurationElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSection.ShouldSerializeSectionInTargetVersion(System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeSectionInTargetVersion (targetFramework As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeSectionInTargetVersion(System::Runtime::Versioning::FrameworkName ^ targetFramework);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeSectionInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool&#xA;override this.ShouldSerializeSectionInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="configurationSection.ShouldSerializeSectionInTargetVersion targetFramework" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CallbackBehaviorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallbackBehaviorAttribute&#xA;Inherits Attribute&#xA;Implements IEndpointBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallbackBehaviorAttribute sealed : Attribute, System::ServiceModel::Description::IEndpointBehavior" />
+  <TypeSignature Language="F#" Value="type CallbackBehaviorAttribute = class&#xA;    inherit Attribute&#xA;    interface IEndpointBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -130,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticSessionShutdown As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticSessionShutdown { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticSessionShutdown : bool with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ConcurrencyMode As ConcurrencyMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ConcurrencyMode ConcurrencyMode { System::ServiceModel::ConcurrencyMode get(); void set(System::ServiceModel::ConcurrencyMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ConcurrencyMode : System.ServiceModel.ConcurrencyMode with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -277,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.MaxItemsInObjectGraph" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.MaxItemsInObjectGraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -455,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.TransactionIsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionIsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::IsolationLevel TransactionIsolationLevel { System::Transactions::IsolationLevel get(); void set(System::Transactions::IsolationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionIsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.TransactionIsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.TransactionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionTimeout As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransactionTimeout { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionTimeout : string with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.TransactionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -511,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSynchronizationContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSynchronizationContext { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseSynchronizationContext : bool with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -556,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateMustUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.KeyValuePair" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyValuePair" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyValuePair abstract sealed" />
+  <TypeSignature Language="F#" Value="type KeyValuePair = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyValuePair.Create``2(``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TKey, TValue) (key As TKey, value As TValue) As KeyValuePair(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; Create(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="static member Create : 'Key * 'Value -&gt; System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;" Usage="System.Collections.Generic.KeyValuePair.Create (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

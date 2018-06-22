@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpList" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JumpList&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class JumpList sealed : System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type JumpList = class&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -132,6 +133,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Shell.JumpItem},System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of JumpItem), showFrequent As Boolean, showRecent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpList(System::Collections::Generic::IEnumerable&lt;System::Windows::Shell::JumpItem ^&gt; ^ items, bool showFrequent, bool showRecent);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Shell.JumpList : seq&lt;System.Windows.Shell.JumpItem&gt; * bool * bool -&gt; System.Windows.Shell.JumpList" Usage="new System.Windows.Shell.JumpList (items, showFrequent, showRecent)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +183,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddToRecentCategory (itemPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::String ^ itemPath);" />
+      <MemberSignature Language="F#" Value="static member AddToRecentCategory : string -&gt; unit" Usage="System.Windows.Shell.JumpList.AddToRecentCategory itemPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +222,7 @@ Windows Media Player Jump List
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpPath jumpPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::Windows::Shell::JumpPath ^ jumpPath);" />
+      <MemberSignature Language="F#" Value="static member AddToRecentCategory : System.Windows.Shell.JumpPath -&gt; unit" Usage="System.Windows.Shell.JumpList.AddToRecentCategory jumpPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -257,6 +261,7 @@ Windows Media Player Jump List
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpTask jumpTask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpTask)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddToRecentCategory(System::Windows::Shell::JumpTask ^ jumpTask);" />
+      <MemberSignature Language="F#" Value="static member AddToRecentCategory : System.Windows.Shell.JumpTask -&gt; unit" Usage="System.Windows.Shell.JumpList.AddToRecentCategory jumpTask" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -296,6 +301,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.Apply" />
       <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberSignature Language="F#" Value="member this.Apply : unit -&gt; unit" Usage="jumpList.Apply " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -337,6 +343,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="jumpList.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +380,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="jumpList.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -410,6 +418,7 @@ Windows Media Player Jump List
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Shell.JumpList GetJumpList(class System.Windows.Application application) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.GetJumpList(System.Windows.Application)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Shell::JumpList ^ GetJumpList(System::Windows::Application ^ application);" />
+      <MemberSignature Language="F#" Value="static member GetJumpList : System.Windows.Application -&gt; System.Windows.Shell.JumpList" Usage="System.Windows.Shell.JumpList.GetJumpList application" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -448,6 +457,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.JumpItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JumpItems As List(Of JumpItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Windows::Shell::JumpItem ^&gt; ^ JumpItems { System::Collections::Generic::List&lt;System::Windows::Shell::JumpItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.JumpItems : System.Collections.Generic.List&lt;System.Windows.Shell.JumpItem&gt;" Usage="System.Windows.Shell.JumpList.JumpItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -484,6 +494,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
       <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRejected As EventHandler(Of JumpItemsRejectedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRejectedEventArgs ^&gt; ^ JumpItemsRejected;" />
+      <MemberSignature Language="F#" Value="member this.JumpItemsRejected : EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; " Usage="member this.JumpItemsRejected : System.EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -517,6 +528,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRemovedByUser" />
       <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRemovedByUser As EventHandler(Of JumpItemsRemovedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRemovedEventArgs ^&gt; ^ JumpItemsRemovedByUser;" />
+      <MemberSignature Language="F#" Value="member this.JumpItemsRemovedByUser : EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; " Usage="member this.JumpItemsRemovedByUser : System.EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -549,6 +561,7 @@ Windows Media Player Jump List
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetJumpList(class System.Windows.Application application, class System.Windows.Shell.JumpList value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.SetJumpList(System.Windows.Application,System.Windows.Shell.JumpList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetJumpList(System::Windows::Application ^ application, System::Windows::Shell::JumpList ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetJumpList : System.Windows.Application * System.Windows.Shell.JumpList -&gt; unit" Usage="System.Windows.Shell.JumpList.SetJumpList (application, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -593,6 +606,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowFrequentCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFrequentCategory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFrequentCategory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFrequentCategory : bool with get, set" Usage="System.Windows.Shell.JumpList.ShowFrequentCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -638,6 +652,7 @@ Windows Media Player Jump List
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowRecentCategory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowRecentCategory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowRecentCategory : bool with get, set" Usage="System.Windows.Shell.JumpList.ShowRecentCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

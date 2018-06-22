@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IVsaFullErrorInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVsaFullErrorInfo&#xA;Implements IJSVsaError" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVsaFullErrorInfo : Microsoft::JScript::Vsa::IJSVsaError" />
+  <TypeSignature Language="F#" Value="type IVsaFullErrorInfo = interface&#xA;    interface IJSVsaError" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaFullErrorInfo.EndLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLine { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndLine : int" Usage="Microsoft.JScript.IVsaFullErrorInfo.EndLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.DynamicExpressionVisitor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DynamicExpressionVisitor&#xA;Inherits ExpressionVisitor" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicExpressionVisitor abstract : System::Linq::Expressions::ExpressionVisitor" />
+  <TypeSignature Language="F#" Value="type DynamicExpressionVisitor = class&#xA;    inherit ExpressionVisitor" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function VisitDynamic (node As DynamicExpression) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ VisitDynamic(System::Linq::Expressions::DynamicExpression ^ node);" />
+      <MemberSignature Language="F#" Value="override this.VisitDynamic : System.Linq.Expressions.DynamicExpression -&gt; System.Linq.Expressions.Expression" Usage="dynamicExpressionVisitor.VisitDynamic node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

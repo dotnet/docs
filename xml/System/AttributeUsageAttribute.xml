@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AttributeUsageAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeUsageAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeUsageAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AttributeUsageAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.AttributeUsageAttribute.#ctor(System.AttributeTargets)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (validOn As AttributeTargets)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeUsageAttribute(AttributeTargets validOn);" />
+      <MemberSignature Language="F#" Value="new AttributeUsageAttribute : AttributeTargets -&gt; AttributeUsageAttribute" Usage="new System.AttributeUsageAttribute validOn" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.AllowMultiple" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowMultiple As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowMultiple { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowMultiple : bool with get, set" Usage="System.AttributeUsageAttribute.AllowMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.Inherited" />
       <MemberSignature Language="VB.NET" Value="Public Property Inherited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inherited { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Inherited : bool with get, set" Usage="System.AttributeUsageAttribute.Inherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -230,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.ValidOn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidOn As AttributeTargets" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property AttributeTargets ValidOn { AttributeTargets get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidOn : AttributeTargets" Usage="System.AttributeUsageAttribute.ValidOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

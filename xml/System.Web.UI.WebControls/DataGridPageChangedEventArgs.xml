@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridPageChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridPageChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridPageChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridPageChangedEventArgs.#ctor(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandSource As Object, newPageIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridPageChangedEventArgs(System::Object ^ commandSource, int newPageIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataGridPageChangedEventArgs : obj * int -&gt; System.Web.UI.WebControls.DataGridPageChangedEventArgs" Usage="new System.Web.UI.WebControls.DataGridPageChangedEventArgs (commandSource, newPageIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPageChangedEventArgs.CommandSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandSource : obj" Usage="System.Web.UI.WebControls.DataGridPageChangedEventArgs.CommandSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewPageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewPageIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewPageIndex : int" Usage="System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

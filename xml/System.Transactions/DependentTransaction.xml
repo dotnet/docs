@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.DependentTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependentTransaction&#xA;Inherits Transaction&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DependentTransaction sealed : System::Transactions::Transaction, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type DependentTransaction = class&#xA;    inherit Transaction&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.DependentTransaction.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
+      <MemberSignature Language="F#" Value="override this.Complete : unit -&gt; unit" Usage="dependentTransaction.Complete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

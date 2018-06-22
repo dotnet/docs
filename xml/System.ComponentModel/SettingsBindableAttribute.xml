@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SettingsBindableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsBindableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsBindableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsBindableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bindable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsBindableAttribute(bool bindable);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.SettingsBindableAttribute : bool -&gt; System.ComponentModel.SettingsBindableAttribute" Usage="new System.ComponentModel.SettingsBindableAttribute bindable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.SettingsBindableAttribute.Bindable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Bindable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bindable : bool" Usage="System.ComponentModel.SettingsBindableAttribute.Bindable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="settingsBindableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="settingsBindableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SettingsBindableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As SettingsBindableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SettingsBindableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.SettingsBindableAttribute" Usage="System.ComponentModel.SettingsBindableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SettingsBindableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As SettingsBindableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SettingsBindableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.SettingsBindableAttribute" Usage="System.ComponentModel.SettingsBindableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

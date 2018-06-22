@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlTextReaderInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlTextReaderInitializer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextReaderInitializer" />
+  <TypeSignature Language="F#" Value="type IXmlTextReaderInitializer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(class System.IO.Stream stream, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlTextReaderInitializer.SetInput(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : System.IO.Stream * System.Text.Encoding * System.Xml.XmlDictionaryReaderQuotas * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlTextReaderInitializer.SetInput (stream, encoding, quotas, onClose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(unsigned int8[] buffer, int32 offset, int32 count, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlTextReaderInitializer.SetInput(System.Byte[],System.Int32,System.Int32,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : byte[] * int * int * System.Text.Encoding * System.Xml.XmlDictionaryReaderQuotas * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlTextReaderInitializer.SetInput (buffer, offset, count, encoding, quotas, onClose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyNameProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyNameProxy&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyNameProxy : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type AssemblyNameProxy = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyNameProxy.GetAssemblyName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyName (assemblyFile As String) As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::AssemblyName ^ GetAssemblyName(System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="member this.GetAssemblyName : string -&gt; System.Reflection.AssemblyName" Usage="assemblyNameProxy.GetAssemblyName assemblyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

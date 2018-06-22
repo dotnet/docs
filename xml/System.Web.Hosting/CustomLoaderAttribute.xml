@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.CustomLoaderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomLoaderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomLoaderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type CustomLoaderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.CustomLoaderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (customLoaderType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomLoaderAttribute(Type ^ customLoaderType);" />
+      <MemberSignature Language="F#" Value="new System.Web.Hosting.CustomLoaderAttribute : Type -&gt; System.Web.Hosting.CustomLoaderAttribute" Usage="new System.Web.Hosting.CustomLoaderAttribute customLoaderType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.CustomLoaderAttribute.CustomLoaderType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomLoaderType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CustomLoaderType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomLoaderType : Type" Usage="System.Web.Hosting.CustomLoaderAttribute.CustomLoaderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>

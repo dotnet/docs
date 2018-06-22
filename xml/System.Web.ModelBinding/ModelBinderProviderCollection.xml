@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelBinderProviderCollection&#xA;Inherits Collection(Of ModelBinderProvider)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderProviderCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Web::ModelBinding::ModelBinderProvider ^&gt;" />
+  <TypeSignature Language="F#" Value="type ModelBinderProviderCollection = class&#xA;    inherit Collection&lt;ModelBinderProvider&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.ModelBinding.ModelBinderProvider})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As IList(Of ModelBinderProvider))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelBinderProviderCollection(System::Collections::Generic::IList&lt;System::Web::ModelBinding::ModelBinderProvider ^&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelBinderProviderCollection : System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelBinderProvider&gt; -&gt; System.Web.ModelBinding.ModelBinderProviderCollection" Usage="new System.Web.ModelBinding.ModelBinderProviderCollection list" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="member this.GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="modelBinderProviderCollection.GetBinder (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.ModelBinderProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As ModelBinderProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Web::ModelBinding::ModelBinderProvider ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Web.ModelBinding.ModelBinderProvider -&gt; unit" Usage="modelBinderProviderCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Func{System.Type[],System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterBinderForGenericType (modelType As Type, modelBinderFactory As Func(Of Type(), IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterBinderForGenericType(Type ^ modelType, Func&lt;cli::array &lt;Type ^&gt; ^, System::Web::ModelBinding::IModelBinder ^&gt; ^ modelBinderFactory);" />
+      <MemberSignature Language="F#" Value="member this.RegisterBinderForGenericType : Type * Func&lt;Type[], System.Web.ModelBinding.IModelBinder&gt; -&gt; unit" Usage="modelBinderProviderCollection.RegisterBinderForGenericType (modelType, modelBinderFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterBinderForGenericType (modelType As Type, modelBinderType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterBinderForGenericType(Type ^ modelType, Type ^ modelBinderType);" />
+      <MemberSignature Language="F#" Value="member this.RegisterBinderForGenericType : Type * Type -&gt; unit" Usage="modelBinderProviderCollection.RegisterBinderForGenericType (modelType, modelBinderType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Web.ModelBinding.IModelBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterBinderForGenericType (modelType As Type, modelBinder As IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterBinderForGenericType(Type ^ modelType, System::Web::ModelBinding::IModelBinder ^ modelBinder);" />
+      <MemberSignature Language="F#" Value="member this.RegisterBinderForGenericType : Type * System.Web.ModelBinding.IModelBinder -&gt; unit" Usage="modelBinderProviderCollection.RegisterBinderForGenericType (modelType, modelBinder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Func{System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterBinderForType (modelType As Type, modelBinderFactory As Func(Of IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterBinderForType(Type ^ modelType, Func&lt;System::Web::ModelBinding::IModelBinder ^&gt; ^ modelBinderFactory);" />
+      <MemberSignature Language="F#" Value="member this.RegisterBinderForType : Type * Func&lt;System.Web.ModelBinding.IModelBinder&gt; -&gt; unit" Usage="modelBinderProviderCollection.RegisterBinderForType (modelType, modelBinderFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Web.ModelBinding.IModelBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterBinderForType (modelType As Type, modelBinder As IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterBinderForType(Type ^ modelType, System::Web::ModelBinding::IModelBinder ^ modelBinder);" />
+      <MemberSignature Language="F#" Value="member this.RegisterBinderForType : Type * System.Web.ModelBinding.IModelBinder -&gt; unit" Usage="modelBinderProviderCollection.RegisterBinderForType (modelType, modelBinder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.SetItem(System.Int32,System.Web.ModelBinding.ModelBinderProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As ModelBinderProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Web::ModelBinding::ModelBinderProvider ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Web.ModelBinding.ModelBinderProvider -&gt; unit" Usage="modelBinderProviderCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

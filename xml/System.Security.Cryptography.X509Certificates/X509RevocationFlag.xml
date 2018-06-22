@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509RevocationFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509RevocationFlag" />
   <TypeSignature Language="C++ CLI" Value="public enum class X509RevocationFlag" />
+  <TypeSignature Language="F#" Value="type X509RevocationFlag = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.EndCertificateOnly" />
       <MemberSignature Language="VB.NET" Value="EndCertificateOnly" />
       <MemberSignature Language="C++ CLI" Value="EndCertificateOnly" />
+      <MemberSignature Language="F#" Value="EndCertificateOnly = 0" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.EndCertificateOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.EntireChain" />
       <MemberSignature Language="VB.NET" Value="EntireChain" />
       <MemberSignature Language="C++ CLI" Value="EntireChain" />
+      <MemberSignature Language="F#" Value="EntireChain = 1" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.EntireChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.ExcludeRoot" />
       <MemberSignature Language="VB.NET" Value="ExcludeRoot" />
       <MemberSignature Language="C++ CLI" Value="ExcludeRoot" />
+      <MemberSignature Language="F#" Value="ExcludeRoot = 2" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.ExcludeRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

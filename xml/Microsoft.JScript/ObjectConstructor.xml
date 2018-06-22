@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ObjectConstructor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectConstructor&#xA;Inherits ScriptFunction" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectConstructor sealed : Microsoft::JScript::ScriptFunction" />
+  <TypeSignature Language="F#" Value="type ObjectConstructor = class&#xA;    inherit ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.ConstructObject" />
       <MemberSignature Language="VB.NET" Value="Public Function ConstructObject () As JSObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::JSObject ^ ConstructObject();" />
+      <MemberSignature Language="F#" Value="member this.ConstructObject : unit -&gt; Microsoft.JScript.JSObject" Usage="objectConstructor.ConstructObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.CreateInstance(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : obj[] -&gt; obj" Usage="objectConstructor.CreateInstance args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.Invoke(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (ParamArray args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj[] -&gt; obj" Usage="objectConstructor.Invoke args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

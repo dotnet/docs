@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.PoolBlockingPeriod" />
   <TypeSignature Language="VB.NET" Value="Public Enum PoolBlockingPeriod" />
   <TypeSignature Language="C++ CLI" Value="public enum class PoolBlockingPeriod" />
+  <TypeSignature Language="F#" Value="type PoolBlockingPeriod = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock" />
       <MemberSignature Language="VB.NET" Value="AlwaysBlock" />
       <MemberSignature Language="C++ CLI" Value="AlwaysBlock" />
+      <MemberSignature Language="F#" Value="AlwaysBlock = 1" Usage="System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Data.SqlClient.PoolBlockingPeriod.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock" />
       <MemberSignature Language="VB.NET" Value="NeverBlock" />
       <MemberSignature Language="C++ CLI" Value="NeverBlock" />
+      <MemberSignature Language="F#" Value="NeverBlock = 2" Usage="System.Data.SqlClient.PoolBlockingPeriod.NeverBlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppDomainUnloadedException" />
   <TypeSignature Language="VB.NET" Value="Public Class AppDomainUnloadedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainUnloadedException : SystemException" />
+  <TypeSignature Language="F#" Value="type AppDomainUnloadedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -130,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainUnloadedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainUnloadedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new AppDomainUnloadedException : string -&gt; AppDomainUnloadedException" Usage="new System.AppDomainUnloadedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainUnloadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AppDomainUnloadedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new AppDomainUnloadedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; AppDomainUnloadedException" Usage="new System.AppDomainUnloadedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainUnloadedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainUnloadedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new AppDomainUnloadedException : string * Exception -&gt; AppDomainUnloadedException" Usage="new System.AppDomainUnloadedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

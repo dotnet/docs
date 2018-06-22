@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceHandle sealed" />
+  <TypeSignature Language="F#" Value="type InstanceHandle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceHandle.Free" />
       <MemberSignature Language="VB.NET" Value="Public Sub Free ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Free();" />
+      <MemberSignature Language="F#" Value="member this.Free : unit -&gt; unit" Usage="instanceHandle.Free " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceHandle.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Runtime.DurableInstancing.InstanceHandle.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

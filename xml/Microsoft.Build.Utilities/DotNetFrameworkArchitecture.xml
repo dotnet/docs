@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
   <TypeSignature Language="VB.NET" Value="Public Enum DotNetFrameworkArchitecture" />
   <TypeSignature Language="C++ CLI" Value="public enum class DotNetFrameworkArchitecture" />
+  <TypeSignature Language="F#" Value="type DotNetFrameworkArchitecture = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness32" />
       <MemberSignature Language="VB.NET" Value="Bitness32" />
       <MemberSignature Language="C++ CLI" Value="Bitness32" />
+      <MemberSignature Language="F#" Value="Bitness32 = 1" Usage="Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness64" />
       <MemberSignature Language="VB.NET" Value="Bitness64" />
       <MemberSignature Language="C++ CLI" Value="Bitness64" />
+      <MemberSignature Language="F#" Value="Bitness64 = 2" Usage="Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Current" />
       <MemberSignature Language="VB.NET" Value="Current" />
       <MemberSignature Language="C++ CLI" Value="Current" />
+      <MemberSignature Language="F#" Value="Current = 0" Usage="Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.Text.Base64" />
   <TypeSignature Language="VB.NET" Value="Public Class Base64" />
   <TypeSignature Language="C++ CLI" Value="public ref class Base64 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Base64 = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeFromUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8, valuetype System.Span`1&lt;unsigned int8&gt; bytes, [out] int32&amp; bytesConsumed, [out] int32&amp; bytesWritten, bool isFinalBlock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf8 (utf8 As ReadOnlySpan(Of Byte), bytes As Span(Of Byte), ByRef bytesConsumed As Integer, ByRef bytesWritten As Integer, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberSignature Language="F#" Value="static member DecodeFromUtf8 : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; *  *  * bool -&gt; System.Buffers.OperationStatus" Usage="System.Buffers.Text.Base64.DecodeFromUtf8 (utf8, bytes, bytesConsumed, bytesWritten, isFinalBlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.DecodeFromUtf8InPlace(System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf8InPlace (buffer As Span(Of Byte), ByRef bytesWritten As Integer) As OperationStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeFromUtf8InPlace(Span&lt;System::Byte&gt; buffer, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="static member DecodeFromUtf8InPlace : Span&lt;byte&gt; *  -&gt; System.Buffers.OperationStatus" Usage="System.Buffers.Text.Base64.DecodeFromUtf8InPlace (buffer, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus EncodeToUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes, valuetype System.Span`1&lt;unsigned int8&gt; utf8, [out] int32&amp; bytesConsumed, [out] int32&amp; bytesWritten, bool isFinalBlock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.EncodeToUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeToUtf8 (bytes As ReadOnlySpan(Of Byte), utf8 As Span(Of Byte), ByRef bytesConsumed As Integer, ByRef bytesWritten As Integer, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberSignature Language="F#" Value="static member EncodeToUtf8 : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; *  *  * bool -&gt; System.Buffers.OperationStatus" Usage="System.Buffers.Text.Base64.EncodeToUtf8 (bytes, utf8, bytesConsumed, bytesWritten, isFinalBlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.EncodeToUtf8InPlace(System.Span{System.Byte},System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeToUtf8InPlace (buffer As Span(Of Byte), dataLength As Integer, ByRef bytesWritten As Integer) As OperationStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus EncodeToUtf8InPlace(Span&lt;System::Byte&gt; buffer, int dataLength, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="static member EncodeToUtf8InPlace : Span&lt;byte&gt; * int *  -&gt; System.Buffers.OperationStatus" Usage="System.Buffers.Text.Base64.EncodeToUtf8InPlace (buffer, dataLength, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.GetMaxDecodedFromUtf8Length(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaxDecodedFromUtf8Length (length As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetMaxDecodedFromUtf8Length(int length);" />
+      <MemberSignature Language="F#" Value="static member GetMaxDecodedFromUtf8Length : int -&gt; int" Usage="System.Buffers.Text.Base64.GetMaxDecodedFromUtf8Length length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Text.Base64.GetMaxEncodedToUtf8Length(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaxEncodedToUtf8Length (length As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetMaxEncodedToUtf8Length(int length);" />
+      <MemberSignature Language="F#" Value="static member GetMaxEncodedToUtf8Length : int -&gt; int" Usage="System.Buffers.Text.Base64.GetMaxEncodedToUtf8Length length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

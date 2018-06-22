@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewInsertionMark" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListViewInsertionMark" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewInsertionMark sealed" />
+  <TypeSignature Language="F#" Value="type ListViewInsertionMark = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem" />
       <MemberSignature Language="VB.NET" Value="Public Property AppearsAfterItem As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppearsAfterItem { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AppearsAfterItem : bool with get, set" Usage="System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.ListViewInsertionMark.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color Color { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListViewInsertionMark.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Index" />
       <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="System.Windows.Forms.ListViewInsertionMark.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewInsertionMark.NearestIndex(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function NearestIndex (pt As Point) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NearestIndex(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="member this.NearestIndex : System.Drawing.Point -&gt; int" Usage="listViewInsertionMark.NearestIndex pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

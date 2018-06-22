@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ManifestSignatureInformationCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManifestSignatureInformationCollection&#xA;Inherits ReadOnlyCollection(Of ManifestSignatureInformation)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManifestSignatureInformationCollection sealed : System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Cryptography::ManifestSignatureInformation ^&gt;" />
+  <TypeSignature Language="F#" Value="type ManifestSignatureInformationCollection = class&#xA;    inherit ReadOnlyCollection&lt;ManifestSignatureInformation&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

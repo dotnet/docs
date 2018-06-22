@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectionConsumerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionConsumerAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ConnectionConsumerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionConsumerAttribute(System::String ^ displayName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute : string -&gt; System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute displayName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionConsumerAttribute(System::String ^ displayName, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute : string * string -&gt; System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute (displayName, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, connectionPointType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionConsumerAttribute(System::String ^ displayName, Type ^ connectionPointType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute : string * Type -&gt; System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute (displayName, connectionPointType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.#ctor(System.String,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, id As String, connectionPointType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionConsumerAttribute(System::String ^ displayName, System::String ^ id, Type ^ connectionPointType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute : string * string * Type -&gt; System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute (displayName, id, connectionPointType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowsMultipleConnections As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowsMultipleConnections { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowsMultipleConnections : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ConnectionPointType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionPointType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ConnectionPointType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionPointType : Type" Usage="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ConnectionPointType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -342,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayNameValue" />
       <MemberSignature Language="VB.NET" Value="Protected Property DisplayNameValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DisplayNameValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayNameValue : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.DisplayNameValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -370,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

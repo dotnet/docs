@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressHeaderCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddressHeaderCollection&#xA;Inherits ReadOnlyCollection(Of AddressHeader)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddressHeaderCollection sealed : System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Channels::AddressHeader ^&gt;" />
+  <TypeSignature Language="F#" Value="type AddressHeaderCollection = class&#xA;    inherit ReadOnlyCollection&lt;AddressHeader&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addressHeaders As IEnumerable(Of AddressHeader))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AddressHeaderCollection(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ addressHeaders);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.AddressHeaderCollection : seq&lt;System.ServiceModel.Channels.AddressHeader&gt; -&gt; System.ServiceModel.Channels.AddressHeaderCollection" Usage="new System.ServiceModel.Channels.AddressHeaderCollection addressHeaders" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHeadersTo(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.AddHeadersTo(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHeadersTo(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="member this.AddHeadersTo : System.ServiceModel.Channels.Message -&gt; unit" Usage="addressHeaderCollection.AddHeadersTo message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.FindAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (name As String, ns As String) As AddressHeader()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ FindAll(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : string * string -&gt; System.ServiceModel.Channels.AddressHeader[]" Usage="addressHeaderCollection.FindAll (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeaderCollection.FindHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindHeader (name As String, ns As String) As AddressHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::AddressHeader ^ FindHeader(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="member this.FindHeader : string * string -&gt; System.ServiceModel.Channels.AddressHeader" Usage="addressHeaderCollection.FindHeader (name, ns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

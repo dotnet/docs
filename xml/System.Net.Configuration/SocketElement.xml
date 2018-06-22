@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SocketElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocketElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SocketElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SocketElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysUseCompletionPortsForAccept As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysUseCompletionPortsForAccept { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysUseCompletionPortsForAccept : bool with get, set" Usage="System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysUseCompletionPortsForConnect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysUseCompletionPortsForConnect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysUseCompletionPortsForConnect : bool with get, set" Usage="System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.IPProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IPProtectionLevel As IPProtectionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::IPProtectionLevel IPProtectionLevel { System::Net::Sockets::IPProtectionLevel get(); void set(System::Net::Sockets::IPProtectionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.IPProtectionLevel : System.Net.Sockets.IPProtectionLevel with get, set" Usage="System.Net.Configuration.SocketElement.IPProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.SocketElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="socketElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SocketElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

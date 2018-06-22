@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Structure EventDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public value class EventDescriptor" />
+  <TypeSignature Language="F#" Value="type EventDescriptor = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@ unchecked
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventDescriptor.#ctor(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As Integer, version As Byte, channel As Byte, level As Byte, opcode As Byte, task As Integer, keywords As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDescriptor(int id, System::Byte version, System::Byte channel, System::Byte level, System::Byte opcode, int task, long keywords);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.EventDescriptor : int * byte * byte * byte * byte * int * int64 -&gt; System.Diagnostics.Eventing.EventDescriptor" Usage="new System.Diagnostics.Eventing.EventDescriptor (id, version, channel, level, opcode, task, keywords)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -86,6 +88,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Channel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Channel As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Channel { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Channel : byte" Usage="System.Diagnostics.Eventing.EventDescriptor.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -106,6 +109,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.EventId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventId : int" Usage="System.Diagnostics.Eventing.EventDescriptor.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,6 +130,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Keywords { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : int64" Usage="System.Diagnostics.Eventing.EventDescriptor.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -146,6 +151,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Level { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : byte" Usage="System.Diagnostics.Eventing.EventDescriptor.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -166,6 +172,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Opcode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcode As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Opcode { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opcode : byte" Usage="System.Diagnostics.Eventing.EventDescriptor.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -186,6 +193,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Task { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : int" Usage="System.Diagnostics.Eventing.EventDescriptor.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -206,6 +214,7 @@ unchecked
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : byte" Usage="System.Diagnostics.Eventing.EventDescriptor.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

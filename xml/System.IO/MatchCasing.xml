@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MatchCasing" />
   <TypeSignature Language="VB.NET" Value="Public Enum MatchCasing" />
   <TypeSignature Language="C++ CLI" Value="public enum class MatchCasing" />
+  <TypeSignature Language="F#" Value="type MatchCasing = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.CaseInsensitive" />
       <MemberSignature Language="VB.NET" Value="CaseInsensitive" />
       <MemberSignature Language="C++ CLI" Value="CaseInsensitive" />
+      <MemberSignature Language="F#" Value="CaseInsensitive = 2" Usage="System.IO.MatchCasing.CaseInsensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.CaseSensitive" />
       <MemberSignature Language="VB.NET" Value="CaseSensitive" />
       <MemberSignature Language="C++ CLI" Value="CaseSensitive" />
+      <MemberSignature Language="F#" Value="CaseSensitive = 1" Usage="System.IO.MatchCasing.CaseSensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MatchCasing.PlatformDefault" />
       <MemberSignature Language="VB.NET" Value="PlatformDefault" />
       <MemberSignature Language="C++ CLI" Value="PlatformDefault" />
+      <MemberSignature Language="F#" Value="PlatformDefault = 0" Usage="System.IO.MatchCasing.PlatformDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

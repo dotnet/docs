@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class VoiceChangeEventArgs&#xA;Inherits PromptEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class VoiceChangeEventArgs : System::Speech::Synthesis::PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type VoiceChangeEventArgs = class&#xA;    inherit PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.VoiceChangeEventArgs.Voice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Voice As VoiceInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::VoiceInfo ^ Voice { System::Speech::Synthesis::VoiceInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Voice : System.Speech.Synthesis.VoiceInfo" Usage="System.Speech.Synthesis.VoiceChangeEventArgs.Voice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

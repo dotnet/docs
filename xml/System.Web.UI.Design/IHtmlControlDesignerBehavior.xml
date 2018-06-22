@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHtmlControlDesignerBehavior" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHtmlControlDesignerBehavior" />
+  <TypeSignature Language="F#" Value="type IHtmlControlDesignerBehavior = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHtmlControlDesignerBehavior.Designer" />
       <MemberSignature Language="VB.NET" Value="Public Property Designer As HtmlControlDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::HtmlControlDesigner ^ Designer { System::Web::UI::Design::HtmlControlDesigner ^ get(); void set(System::Web::UI::Design::HtmlControlDesigner ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Designer : System.Web.UI.Design.HtmlControlDesigner with get, set" Usage="System.Web.UI.Design.IHtmlControlDesignerBehavior.Designer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHtmlControlDesignerBehavior.DesignTimeElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignTimeElement As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DesignTimeElement { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeElement : obj" Usage="System.Web.UI.Design.IHtmlControlDesignerBehavior.DesignTimeElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetAttribute(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (attribute As String, ignoreCase As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetAttribute(System::String ^ attribute, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string * bool -&gt; obj" Usage="iHtmlControlDesignerBehavior.GetAttribute (attribute, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetStyleAttribute(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStyleAttribute (attribute As String, designTimeOnly As Boolean, ignoreCase As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetStyleAttribute(System::String ^ attribute, bool designTimeOnly, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetStyleAttribute : string * bool * bool -&gt; obj" Usage="iHtmlControlDesignerBehavior.GetStyleAttribute (attribute, designTimeOnly, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.RemoveAttribute(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAttribute (attribute As String, ignoreCase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAttribute(System::String ^ attribute, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAttribute : string * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.RemoveAttribute (attribute, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.RemoveStyleAttribute(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveStyleAttribute (attribute As String, designTimeOnly As Boolean, ignoreCase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveStyleAttribute(System::String ^ attribute, bool designTimeOnly, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveStyleAttribute : string * bool * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.RemoveStyleAttribute (attribute, designTimeOnly, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetAttribute(System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (attribute As String, value As Object, ignoreCase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute(System::String ^ attribute, System::Object ^ value, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : string * obj * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.SetAttribute (attribute, value, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetStyleAttribute(System.String,System.Boolean,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetStyleAttribute (attribute As String, designTimeOnly As Boolean, value As Object, ignoreCase As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStyleAttribute(System::String ^ attribute, bool designTimeOnly, System::Object ^ value, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member SetStyleAttribute : string * bool * obj * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.SetStyleAttribute (attribute, designTimeOnly, value, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

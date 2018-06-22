@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.InternalActivationContextHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalActivationContextHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalActivationContextHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type InternalActivationContextHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetActivationContextData(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetActivationContextData (appInfo As ActivationContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetActivationContextData(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member GetActivationContextData : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetActivationContextData appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetApplicationComponentManifest(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationComponentManifest (appInfo As ActivationContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetApplicationComponentManifest(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member GetApplicationComponentManifest : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetApplicationComponentManifest appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationManifestBytes (appInfo As ActivationContext) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetApplicationManifestBytes(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member GetApplicationManifestBytes : ActivationContext -&gt; byte[]" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetApplicationManifestBytes appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDeploymentComponentManifest (appInfo As ActivationContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetDeploymentComponentManifest(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentComponentManifest : ActivationContext -&gt; obj" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentComponentManifest appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentManifestBytes(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDeploymentManifestBytes (appInfo As ActivationContext) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetDeploymentManifestBytes(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentManifestBytes : ActivationContext -&gt; byte[]" Usage="System.Deployment.Internal.InternalActivationContextHelper.GetDeploymentManifestBytes appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsFirstRun (appInfo As ActivationContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFirstRun(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member IsFirstRun : ActivationContext -&gt; bool" Usage="System.Deployment.Internal.InternalActivationContextHelper.IsFirstRun appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalActivationContextHelper.PrepareForExecution(System.ActivationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareForExecution (appInfo As ActivationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareForExecution(ActivationContext ^ appInfo);" />
+      <MemberSignature Language="F#" Value="static member PrepareForExecution : ActivationContext -&gt; unit" Usage="System.Deployment.Internal.InternalActivationContextHelper.PrepareForExecution appInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

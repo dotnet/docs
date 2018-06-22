@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCounter" />
   <TypeSignature Language="VB.NET" Value="Public Class EventCounter" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventCounter" />
+  <TypeSignature Language="F#" Value="type EventCounter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Diagnostics.Tracing.EventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventCounter(System::String ^ name, System::Diagnostics::Tracing::EventSource ^ eventSource);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventCounter : string * System.Diagnostics.Tracing.EventSource -&gt; System.Diagnostics.Tracing.EventCounter" Usage="new System.Diagnostics.Tracing.EventCounter (name, eventSource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -79,6 +81,7 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventCounter.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -102,6 +105,7 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteMetric (value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetric(float value);" />
+      <MemberSignature Language="F#" Value="member this.WriteMetric : single -&gt; unit" Usage="eventCounter.WriteMetric value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

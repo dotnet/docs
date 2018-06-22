@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedEntry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LocalizedEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizedEntry abstract" />
+  <TypeSignature Language="F#" Value="type LocalizedEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntry.#ctor(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (language As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; LocalizedEntry(System::Globalization::CultureInfo ^ language);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.LocalizedEntry : System.Globalization.CultureInfo -&gt; System.IdentityModel.Metadata.LocalizedEntry" Usage="new System.IdentityModel.Metadata.LocalizedEntry language" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.LocalizedEntry.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Language { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : System.Globalization.CultureInfo with get, set" Usage="System.IdentityModel.Metadata.LocalizedEntry.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

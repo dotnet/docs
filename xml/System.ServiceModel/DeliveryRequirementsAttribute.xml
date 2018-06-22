@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DeliveryRequirementsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeliveryRequirementsAttribute&#xA;Inherits Attribute&#xA;Implements IContractBehavior, IContractBehaviorAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeliveryRequirementsAttribute sealed : Attribute, System::ServiceModel::Description::IContractBehavior, System::ServiceModel::Description::IContractBehaviorAttribute" />
+  <TypeSignature Language="F#" Value="type DeliveryRequirementsAttribute = class&#xA;    inherit Attribute&#xA;    interface IContractBehavior&#xA;    interface IContractBehaviorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements" />
       <MemberSignature Language="VB.NET" Value="Public Property QueuedDeliveryRequirements As QueuedDeliveryRequirementsMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::QueuedDeliveryRequirementsMode QueuedDeliveryRequirements { System::ServiceModel::QueuedDeliveryRequirementsMode get(); void set(System::ServiceModel::QueuedDeliveryRequirementsMode value); };" />
+      <MemberSignature Language="F#" Value="member this.QueuedDeliveryRequirements : System.ServiceModel.QueuedDeliveryRequirementsMode with get, set" Usage="System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireOrderedDelivery As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireOrderedDelivery { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireOrderedDelivery : bool with get, set" Usage="System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetContract As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetContract { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetContract : Type with get, set" Usage="System.ServiceModel.DeliveryRequirementsAttribute.TargetContract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

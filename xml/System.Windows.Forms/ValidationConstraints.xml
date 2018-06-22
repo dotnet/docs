@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ValidationConstraints" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationConstraints" />
   <TypeSignature Language="C++ CLI" Value="public enum class ValidationConstraints" />
+  <TypeSignature Language="F#" Value="type ValidationConstraints = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="C++ CLI" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 2" Usage="System.Windows.Forms.ValidationConstraints.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.ImmediateChildren" />
       <MemberSignature Language="VB.NET" Value="ImmediateChildren" />
       <MemberSignature Language="C++ CLI" Value="ImmediateChildren" />
+      <MemberSignature Language="F#" Value="ImmediateChildren = 16" Usage="System.Windows.Forms.ValidationConstraints.ImmediateChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ValidationConstraints.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Selectable" />
       <MemberSignature Language="VB.NET" Value="Selectable" />
       <MemberSignature Language="C++ CLI" Value="Selectable" />
+      <MemberSignature Language="F#" Value="Selectable = 1" Usage="System.Windows.Forms.ValidationConstraints.Selectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.TabStop" />
       <MemberSignature Language="VB.NET" Value="TabStop" />
       <MemberSignature Language="C++ CLI" Value="TabStop" />
+      <MemberSignature Language="F#" Value="TabStop = 8" Usage="System.Windows.Forms.ValidationConstraints.TabStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="C++ CLI" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 4" Usage="System.Windows.Forms.ValidationConstraints.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlObjectEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type XamlObjectEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectEventArgs(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectEventArgs : obj -&gt; System.Xaml.XamlObjectEventArgs" Usage="new System.Xaml.XamlObjectEventArgs instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.ElementLineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementLineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementLineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementLineNumber : int" Usage="System.Xaml.XamlObjectEventArgs.ElementLineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.ElementLinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementLinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementLinePosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementLinePosition : int" Usage="System.Xaml.XamlObjectEventArgs.ElementLinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.Instance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Instance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Instance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Instance : obj" Usage="System.Xaml.XamlObjectEventArgs.Instance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.SourceBamlUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceBamlUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceBamlUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceBamlUri : Uri" Usage="System.Xaml.XamlObjectEventArgs.SourceBamlUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

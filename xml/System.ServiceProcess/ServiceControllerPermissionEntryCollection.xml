@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceControllerPermissionEntryCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceControllerPermissionEntryCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type ServiceControllerPermissionEntryCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Add(System.ServiceProcess.ServiceControllerPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As ServiceControllerPermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ServiceProcess::ServiceControllerPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceProcess.ServiceControllerPermissionEntry -&gt; int" Usage="serviceControllerPermissionEntryCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.AddRange(System.ServiceProcess.ServiceControllerPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ServiceControllerPermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::ServiceProcess::ServiceControllerPermissionEntry ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.ServiceProcess.ServiceControllerPermissionEntry[] -&gt; unit" Usage="serviceControllerPermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.AddRange(System.ServiceProcess.ServiceControllerPermissionEntryCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ServiceControllerPermissionEntryCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.ServiceProcess.ServiceControllerPermissionEntryCollection -&gt; unit" Usage="serviceControllerPermissionEntryCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Contains(System.ServiceProcess.ServiceControllerPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ServiceControllerPermissionEntry) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ServiceProcess::ServiceControllerPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.ServiceProcess.ServiceControllerPermissionEntry -&gt; bool" Usage="serviceControllerPermissionEntryCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.CopyTo(System.ServiceProcess.ServiceControllerPermissionEntry[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ServiceControllerPermissionEntry(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ServiceProcess::ServiceControllerPermissionEntry ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.ServiceProcess.ServiceControllerPermissionEntry[] * int -&gt; unit" Usage="serviceControllerPermissionEntryCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.IndexOf(System.ServiceProcess.ServiceControllerPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ServiceControllerPermissionEntry) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ServiceProcess::ServiceControllerPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.ServiceProcess.ServiceControllerPermissionEntry -&gt; int" Usage="serviceControllerPermissionEntryCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Insert(System.Int32,System.ServiceProcess.ServiceControllerPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As ServiceControllerPermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ServiceProcess::ServiceControllerPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.ServiceProcess.ServiceControllerPermissionEntry -&gt; unit" Usage="serviceControllerPermissionEntryCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ServiceControllerPermissionEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerPermissionEntry ^ default[int] { System::ServiceProcess::ServiceControllerPermissionEntry ^ get(int index); void set(int index, System::ServiceProcess::ServiceControllerPermissionEntry ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ServiceProcess.ServiceControllerPermissionEntry with get, set" Usage="System.ServiceProcess.ServiceControllerPermissionEntryCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="serviceControllerPermissionEntryCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="serviceControllerPermissionEntryCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="serviceControllerPermissionEntryCollection.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -304,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="serviceControllerPermissionEntryCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -331,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Remove(System.ServiceProcess.ServiceControllerPermissionEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As ServiceControllerPermissionEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ServiceProcess::ServiceControllerPermissionEntry ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ServiceProcess.ServiceControllerPermissionEntry -&gt; unit" Usage="serviceControllerPermissionEntryCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

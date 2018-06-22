@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSetInstance" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CounterSetInstance&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CounterSetInstance sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type CounterSetInstance = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterSetInstance.Counters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Counters As CounterSetInstanceCounterDataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceData::CounterSetInstanceCounterDataSet ^ Counters { System::Diagnostics::PerformanceData::CounterSetInstanceCounterDataSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Counters : System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet" Usage="System.Diagnostics.PerformanceData.CounterSetInstance.Counters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSetInstance.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="counterSetInstance.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSetInstance.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!CounterSetInstance ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="counterSetInstance.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

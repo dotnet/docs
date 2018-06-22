@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstrumentationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstrumentationType" />
+  <TypeSignature Language="F#" Value="type InstrumentationType = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Abstract" />
       <MemberSignature Language="VB.NET" Value="Abstract" />
       <MemberSignature Language="C++ CLI" Value="Abstract" />
+      <MemberSignature Language="F#" Value="Abstract = 2" Usage="System.Management.Instrumentation.InstrumentationType.Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Event" />
       <MemberSignature Language="VB.NET" Value="Event" />
       <MemberSignature Language="C++ CLI" Value="Event" />
+      <MemberSignature Language="F#" Value="Event = 1" Usage="System.Management.Instrumentation.InstrumentationType.Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Instance" />
       <MemberSignature Language="VB.NET" Value="Instance" />
       <MemberSignature Language="C++ CLI" Value="Instance" />
+      <MemberSignature Language="F#" Value="Instance = 0" Usage="System.Management.Instrumentation.InstrumentationType.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

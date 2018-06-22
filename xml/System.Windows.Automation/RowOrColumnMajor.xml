@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RowOrColumnMajor" />
   <TypeSignature Language="VB.NET" Value="Public Enum RowOrColumnMajor" />
   <TypeSignature Language="C++ CLI" Value="public enum class RowOrColumnMajor" />
+  <TypeSignature Language="F#" Value="type RowOrColumnMajor = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />
       <MemberSignature Language="VB.NET" Value="ColumnMajor" />
       <MemberSignature Language="C++ CLI" Value="ColumnMajor" />
+      <MemberSignature Language="F#" Value="ColumnMajor = 1" Usage="System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />
       <MemberSignature Language="VB.NET" Value="Indeterminate" />
       <MemberSignature Language="C++ CLI" Value="Indeterminate" />
+      <MemberSignature Language="F#" Value="Indeterminate = 2" Usage="System.Windows.Automation.RowOrColumnMajor.Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.RowMajor" />
       <MemberSignature Language="VB.NET" Value="RowMajor" />
       <MemberSignature Language="C++ CLI" Value="RowMajor" />
+      <MemberSignature Language="F#" Value="RowMajor = 0" Usage="System.Windows.Automation.RowOrColumnMajor.RowMajor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

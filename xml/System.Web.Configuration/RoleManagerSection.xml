@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RoleManagerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleManagerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleManagerSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type RoleManagerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheRolesInCookie As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheRolesInCookie { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheRolesInCookie : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CacheRolesInCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieName" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CookieName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieName : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookiePath" />
       <MemberSignature Language="VB.NET" Value="Public Property CookiePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CookiePath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookiePath : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookiePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieProtection" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieProtection As CookieProtection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::CookieProtection CookieProtection { System::Web::Security::CookieProtection get(); void set(System::Web::Security::CookieProtection value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieProtection : System.Web.Security.CookieProtection with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieProtection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieRequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieRequireSSL As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CookieRequireSSL { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieRequireSSL : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieRequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieSlidingExpiration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CookieSlidingExpiration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieSlidingExpiration : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CookieTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.RoleManagerSection.CookieTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatePersistentCookie As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreatePersistentCookie { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreatePersistentCookie : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.CreatePersistentCookie" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -465,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.RoleManagerSection.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -544,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Configuration.RoleManagerSection.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.MaxCachedResults" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCachedResults As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCachedResults { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCachedResults : int with get, set" Usage="System.Web.Configuration.RoleManagerSection.MaxCachedResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -618,6 +631,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.RoleManagerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -638,6 +652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.RoleManagerSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

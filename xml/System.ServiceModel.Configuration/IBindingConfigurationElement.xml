@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IBindingConfigurationElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindingConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindingConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IBindingConfigurationElement = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IBindingConfigurationElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="iBindingConfigurationElement.ApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IBindingConfigurationElement.CloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseTimeout : TimeSpan" Usage="System.ServiceModel.Configuration.IBindingConfigurationElement.CloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IBindingConfigurationElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Configuration.IBindingConfigurationElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IBindingConfigurationElement.OpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpenTimeout : TimeSpan" Usage="System.ServiceModel.Configuration.IBindingConfigurationElement.OpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IBindingConfigurationElement.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiveTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : TimeSpan" Usage="System.ServiceModel.Configuration.IBindingConfigurationElement.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IBindingConfigurationElement.SendTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SendTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : TimeSpan" Usage="System.ServiceModel.Configuration.IBindingConfigurationElement.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapDuration" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapDuration sealed" />
+  <TypeSignature Language="F#" Value="type SoapDuration = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; TimeSpan" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString(System.TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="static member ToString : TimeSpan -&gt; string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString timeSpan" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.XsdType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.XsdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

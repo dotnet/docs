@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Match" />
   <TypeSignature Language="VB.NET" Value="Public Class Match&#xA;Inherits Group" />
   <TypeSignature Language="C++ CLI" Value="public ref class Match : System::Text::RegularExpressions::Group" />
+  <TypeSignature Language="F#" Value="type Match = class&#xA;    inherit Group" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Match.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Match" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::RegularExpressions::Match ^ Empty { System::Text::RegularExpressions::Match ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Text.RegularExpressions.Match" Usage="System.Text.RegularExpressions.Match.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Match.Groups" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Groups As GroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::RegularExpressions::GroupCollection ^ Groups { System::Text::RegularExpressions::GroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Text.RegularExpressions.GroupCollection" Usage="System.Text.RegularExpressions.Match.Groups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Match.NextMatch" />
       <MemberSignature Language="VB.NET" Value="Public Function NextMatch () As Match" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::RegularExpressions::Match ^ NextMatch();" />
+      <MemberSignature Language="F#" Value="member this.NextMatch : unit -&gt; System.Text.RegularExpressions.Match" Usage="match.NextMatch " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -248,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Match.Result(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Result (replacement As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Result(System::String ^ replacement);" />
+      <MemberSignature Language="F#" Value="abstract member Result : string -&gt; string&#xA;override this.Result : string -&gt; string" Usage="match.Result replacement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -319,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Match.Synchronized(System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (inner As Match) As Match" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::RegularExpressions::Match ^ Synchronized(System::Text::RegularExpressions::Match ^ inner);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Text.RegularExpressions.Match -&gt; System.Text.RegularExpressions.Match" Usage="System.Text.RegularExpressions.Match.Synchronized inner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

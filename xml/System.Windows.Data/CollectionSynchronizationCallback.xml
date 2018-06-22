@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionSynchronizationCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CollectionSynchronizationCallback(collection As IEnumerable, context As Object, accessMethod As Action, writeAccess As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CollectionSynchronizationCallback(IEnumerable ^ collection, System::Object ^ context, Action ^ accessMethod, bool writeAccess);" />
+  <TypeSignature Language="F#" Value="type CollectionSynchronizationCallback = delegate of IEnumerable * obj * Action * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

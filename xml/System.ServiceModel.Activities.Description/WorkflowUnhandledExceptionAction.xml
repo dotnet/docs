@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowUnhandledExceptionAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class WorkflowUnhandledExceptionAction" />
+  <TypeSignature Language="F#" Value="type WorkflowUnhandledExceptionAction = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon" />
       <MemberSignature Language="VB.NET" Value="Abandon" />
       <MemberSignature Language="C++ CLI" Value="Abandon" />
+      <MemberSignature Language="F#" Value="Abandon = 0" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend" />
       <MemberSignature Language="VB.NET" Value="AbandonAndSuspend" />
       <MemberSignature Language="C++ CLI" Value="AbandonAndSuspend" />
+      <MemberSignature Language="F#" Value="AbandonAndSuspend = 3" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 1" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate" />
       <MemberSignature Language="VB.NET" Value="Terminate" />
       <MemberSignature Language="C++ CLI" Value="Terminate" />
+      <MemberSignature Language="F#" Value="Terminate = 2" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

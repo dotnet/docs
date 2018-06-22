@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControlToolboxItem" />
   <TypeSignature Language="VB.NET" Value="Public Class WebControlToolboxItem&#xA;Inherits ToolboxItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebControlToolboxItem : System::Drawing::Design::ToolboxItem" />
+  <TypeSignature Language="F#" Value="type WebControlToolboxItem = class&#xA;    inherit ToolboxItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebControlToolboxItem(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControlToolboxItem : Type -&gt; System.Web.UI.Design.WebControlToolboxItem" Usage="new System.Web.UI.Design.WebControlToolboxItem type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebControlToolboxItem(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControlToolboxItem : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Web.UI.Design.WebControlToolboxItem" Usage="new System.Web.UI.Design.WebControlToolboxItem (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateComponentsCore (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsCore(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="webControlToolboxItem.CreateComponentsCore host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Deserialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Deserialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Deserialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.GetToolAttributeValue(System.ComponentModel.Design.IDesignerHost,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToolAttributeValue (host As IDesignerHost, attributeType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetToolAttributeValue(System::ComponentModel::Design::IDesignerHost ^ host, Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="member this.GetToolAttributeValue : System.ComponentModel.Design.IDesignerHost * Type -&gt; obj" Usage="webControlToolboxItem.GetToolAttributeValue (host, attributeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.GetToolHtml(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToolHtml (host As IDesignerHost) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetToolHtml(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="member this.GetToolHtml : System.ComponentModel.Design.IDesignerHost -&gt; string" Usage="webControlToolboxItem.GetToolHtml host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.GetToolType(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToolType (host As IDesignerHost) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetToolType(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="member this.GetToolType : System.ComponentModel.Design.IDesignerHost -&gt; Type" Usage="webControlToolboxItem.GetToolType host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Initialize(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Type -&gt; unit&#xA;override this.Initialize : Type -&gt; unit" Usage="webControlToolboxItem.Initialize type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Serialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Serialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Serialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

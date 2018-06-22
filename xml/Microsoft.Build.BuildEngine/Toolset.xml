@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Toolset" />
   <TypeSignature Language="VB.NET" Value="Public Class Toolset" />
   <TypeSignature Language="C++ CLI" Value="public ref class Toolset" />
+  <TypeSignature Language="F#" Value="type Toolset = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Toolset.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolsVersion As String, toolsPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Toolset(System::String ^ toolsVersion, System::String ^ toolsPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.Toolset : string * string -&gt; Microsoft.Build.BuildEngine.Toolset" Usage="new Microsoft.Build.BuildEngine.Toolset (toolsVersion, toolsPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Toolset.#ctor(System.String,System.String,Microsoft.Build.BuildEngine.BuildPropertyGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolsVersion As String, toolsPath As String, buildProperties As BuildPropertyGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Toolset(System::String ^ toolsVersion, System::String ^ toolsPath, Microsoft::Build::BuildEngine::BuildPropertyGroup ^ buildProperties);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.Toolset : string * string * Microsoft.Build.BuildEngine.BuildPropertyGroup -&gt; Microsoft.Build.BuildEngine.Toolset" Usage="new Microsoft.Build.BuildEngine.Toolset (toolsVersion, toolsPath, buildProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Toolset.BuildProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildProperties As BuildPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroup ^ BuildProperties { Microsoft::Build::BuildEngine::BuildPropertyGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildProperties : Microsoft.Build.BuildEngine.BuildPropertyGroup" Usage="Microsoft.Build.BuildEngine.Toolset.BuildProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Toolset.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Toolset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::Toolset ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Microsoft.Build.BuildEngine.Toolset" Usage="toolset.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Toolset.ToolsPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsPath : string" Usage="Microsoft.Build.BuildEngine.Toolset.ToolsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Toolset.ToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsVersion : string" Usage="Microsoft.Build.BuildEngine.Toolset.ToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

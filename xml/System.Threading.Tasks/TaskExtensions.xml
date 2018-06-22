@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module TaskExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type TaskExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task Unwrap(class System.Threading.Tasks.Task`1&lt;class System.Threading.Tasks.Task&gt; task) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task ^ Unwrap(System::Threading::Tasks::Task&lt;System::Threading::Tasks::Task ^&gt; ^ task);" />
+      <MemberSignature Language="F#" Value="static member Unwrap : System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="System.Threading.Tasks.TaskExtensions.Unwrap task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Unwrap(Of TResult) (task As Task(Of Task(Of TResult))) As Task(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;TResult&gt; ^ Unwrap(System::Threading::Tasks::Task&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ task);" />
+      <MemberSignature Language="F#" Value="static member Unwrap : System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;'Result&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="System.Threading.Tasks.TaskExtensions.Unwrap task" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

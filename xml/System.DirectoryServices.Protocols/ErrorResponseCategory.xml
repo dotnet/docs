@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ErrorResponseCategory" />
   <TypeSignature Language="VB.NET" Value="Public Enum ErrorResponseCategory" />
   <TypeSignature Language="C++ CLI" Value="public enum class ErrorResponseCategory" />
+  <TypeSignature Language="F#" Value="type ErrorResponseCategory = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.AuthenticationFailed" />
       <MemberSignature Language="VB.NET" Value="AuthenticationFailed" />
       <MemberSignature Language="C++ CLI" Value="AuthenticationFailed" />
+      <MemberSignature Language="F#" Value="AuthenticationFailed = 5" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.AuthenticationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.ConnectionClosed" />
       <MemberSignature Language="VB.NET" Value="ConnectionClosed" />
       <MemberSignature Language="C++ CLI" Value="ConnectionClosed" />
+      <MemberSignature Language="F#" Value="ConnectionClosed = 2" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.ConnectionClosed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.CouldNotConnect" />
       <MemberSignature Language="VB.NET" Value="CouldNotConnect" />
       <MemberSignature Language="C++ CLI" Value="CouldNotConnect" />
+      <MemberSignature Language="F#" Value="CouldNotConnect = 1" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.CouldNotConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.GatewayInternalError" />
       <MemberSignature Language="VB.NET" Value="GatewayInternalError" />
       <MemberSignature Language="C++ CLI" Value="GatewayInternalError" />
+      <MemberSignature Language="F#" Value="GatewayInternalError = 4" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.GatewayInternalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.MalformedRequest" />
       <MemberSignature Language="VB.NET" Value="MalformedRequest" />
       <MemberSignature Language="C++ CLI" Value="MalformedRequest" />
+      <MemberSignature Language="F#" Value="MalformedRequest = 3" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.MalformedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.NotAttempted" />
       <MemberSignature Language="VB.NET" Value="NotAttempted" />
       <MemberSignature Language="C++ CLI" Value="NotAttempted" />
+      <MemberSignature Language="F#" Value="NotAttempted = 0" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.NotAttempted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 7" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.UnresolvableUri" />
       <MemberSignature Language="VB.NET" Value="UnresolvableUri" />
       <MemberSignature Language="C++ CLI" Value="UnresolvableUri" />
+      <MemberSignature Language="F#" Value="UnresolvableUri = 6" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.UnresolvableUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

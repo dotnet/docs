@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AttributeStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2AttributeStatement&#xA;Inherits Saml2Statement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2AttributeStatement : System::IdentityModel::Tokens::Saml2Statement" />
+  <TypeSignature Language="F#" Value="type Saml2AttributeStatement = class&#xA;    inherit Saml2Statement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.Saml2Attribute})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributes As IEnumerable(Of Saml2Attribute))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AttributeStatement(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::Saml2Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AttributeStatement : seq&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; -&gt; System.IdentityModel.Tokens.Saml2AttributeStatement" Usage="new System.IdentityModel.Tokens.Saml2AttributeStatement attributes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.IdentityModel.Tokens.Saml2Attribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attribute As Saml2Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AttributeStatement(System::IdentityModel::Tokens::Saml2Attribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AttributeStatement : System.IdentityModel.Tokens.Saml2Attribute -&gt; System.IdentityModel.Tokens.Saml2AttributeStatement" Usage="new System.IdentityModel.Tokens.Saml2AttributeStatement attribute" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As Collection(Of Saml2Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Attribute ^&gt; ^ Attributes { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Attribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" Usage="System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

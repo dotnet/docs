@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITextRangeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITextRangeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITextRangeProvider" />
+  <TypeSignature Language="F#" Value="type ITextRangeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddToSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToSelection();" />
+      <MemberSignature Language="F#" Value="abstract member AddToSelection : unit -&gt; unit" Usage="iTextRangeProvider.AddToSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ITextRangeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Compare(System.Windows.Automation.Provider.ITextRangeProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (range As ITextRangeProvider) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compare(System::Windows::Automation::Provider::ITextRangeProvider ^ range);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : System.Windows.Automation.Provider.ITextRangeProvider -&gt; bool" Usage="iTextRangeProvider.Compare range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.CompareEndpoints(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Provider.ITextRangeProvider,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareEndpoints (endpoint As TextPatternRangeEndpoint, targetRange As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareEndpoints(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Provider::ITextRangeProvider ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
+      <MemberSignature Language="F#" Value="abstract member CompareEndpoints : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Provider.ITextRangeProvider * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; int" Usage="iTextRangeProvider.CompareEndpoints (endpoint, targetRange, targetEndpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(System.Windows.Automation.Text.TextUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandToEnclosingUnit (unit As TextUnit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandToEnclosingUnit(System::Windows::Automation::Text::TextUnit unit);" />
+      <MemberSignature Language="F#" Value="abstract member ExpandToEnclosingUnit : System.Windows.Automation.Text.TextUnit -&gt; unit" Usage="iTextRangeProvider.ExpandToEnclosingUnit unit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -224,6 +230,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.FindAttribute(System.Int32,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAttribute (attribute As Integer, value As Object, backward As Boolean) As ITextRangeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ FindAttribute(int attribute, System::Object ^ value, bool backward);" />
+      <MemberSignature Language="F#" Value="abstract member FindAttribute : int * obj * bool -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.FindAttribute (attribute, value, backward)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -260,6 +267,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.FindText(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindText (text As String, backward As Boolean, ignoreCase As Boolean) As ITextRangeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ FindText(System::String ^ text, bool backward, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member FindText : string * bool * bool -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.FindText (text, backward, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -297,6 +305,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetAttributeValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttributeValue (attribute As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetAttributeValue(int attribute);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttributeValue : int -&gt; obj" Usage="iTextRangeProvider.GetAttributeValue attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -333,6 +342,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetBoundingRectangles" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBoundingRectangles () As Double()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;double&gt; ^ GetBoundingRectangles();" />
+      <MemberSignature Language="F#" Value="abstract member GetBoundingRectangles : unit -&gt; double[]" Usage="iTextRangeProvider.GetBoundingRectangles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -358,6 +368,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As IRawElementProviderSimple()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetChildren();" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTextRangeProvider.GetChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -381,6 +392,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetEnclosingElement" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnclosingElement () As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ GetEnclosingElement();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnclosingElement : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iTextRangeProvider.GetEnclosingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -402,6 +414,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetText (maxLength As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(int maxLength);" />
+      <MemberSignature Language="F#" Value="abstract member GetText : int -&gt; string" Usage="iTextRangeProvider.GetText maxLength" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -438,6 +451,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Move(System.Windows.Automation.Text.TextUnit,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Move (unit As TextUnit, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Move(System::Windows::Automation::Text::TextUnit unit, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Move : System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="iTextRangeProvider.Move (unit, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -511,6 +525,7 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Provider.ITextRangeProvider,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveEndpointByRange (endpoint As TextPatternRangeEndpoint, targetRange As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveEndpointByRange(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Provider::ITextRangeProvider ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
+      <MemberSignature Language="F#" Value="abstract member MoveEndpointByRange : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Provider.ITextRangeProvider * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; unit" Usage="iTextRangeProvider.MoveEndpointByRange (endpoint, targetRange, targetEndpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -545,6 +560,7 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Text.TextUnit,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveEndpointByUnit (endpoint As TextPatternRangeEndpoint, unit As TextUnit, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int MoveEndpointByUnit(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Text::TextUnit unit, int count);" />
+      <MemberSignature Language="F#" Value="abstract member MoveEndpointByUnit : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="iTextRangeProvider.MoveEndpointByUnit (endpoint, unit, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -607,6 +623,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFromSelection();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveFromSelection : unit -&gt; unit" Usage="iTextRangeProvider.RemoveFromSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -637,6 +654,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.ScrollIntoView(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (alignToTop As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView(bool alignToTop);" />
+      <MemberSignature Language="F#" Value="abstract member ScrollIntoView : bool -&gt; unit" Usage="iTextRangeProvider.ScrollIntoView alignToTop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -670,6 +688,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="iTextRangeProvider.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

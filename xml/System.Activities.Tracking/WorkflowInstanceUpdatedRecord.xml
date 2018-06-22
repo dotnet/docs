@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceUpdatedRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowInstanceUpdatedRecord&#xA;Inherits WorkflowInstanceRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceUpdatedRecord sealed : System::Activities::Tracking::WorkflowInstanceRecord" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceUpdatedRecord = class&#xA;    inherit WorkflowInstanceRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.#ctor(System.Guid,System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, originalDefinitionIdentity As WorkflowIdentity, updatedDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceUpdatedRecord(Guid instanceId, System::String ^ activityDefinitionId, System::Activities::WorkflowIdentity ^ originalDefinitionIdentity, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord : Guid * string * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceUpdatedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord (instanceId, activityDefinitionId, originalDefinitionIdentity, updatedDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, originalDefinitionIdentity As WorkflowIdentity, updatedDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceUpdatedRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::Activities::WorkflowIdentity ^ originalDefinitionIdentity, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord : Guid * int64 * string * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceUpdatedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord (instanceId, recordNumber, activityDefinitionId, originalDefinitionIdentity, updatedDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.#ctor(System.Guid,System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, originalDefinitionIdentity As WorkflowIdentity, updatedDefinitionIdentity As WorkflowIdentity, blockingActivities As IList(Of ActivityBlockingUpdate))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceUpdatedRecord(Guid instanceId, System::String ^ activityDefinitionId, System::Activities::WorkflowIdentity ^ originalDefinitionIdentity, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ blockingActivities);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord : Guid * string * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentity * System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; -&gt; System.Activities.Tracking.WorkflowInstanceUpdatedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord (instanceId, activityDefinitionId, originalDefinitionIdentity, updatedDefinitionIdentity, blockingActivities)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, originalDefinitionIdentity As WorkflowIdentity, updatedDefinitionIdentity As WorkflowIdentity, blockingActivities As IList(Of ActivityBlockingUpdate))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceUpdatedRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::Activities::WorkflowIdentity ^ originalDefinitionIdentity, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ blockingActivities);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord : Guid * int64 * string * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentity * System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; -&gt; System.Activities.Tracking.WorkflowInstanceUpdatedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceUpdatedRecord (instanceId, recordNumber, activityDefinitionId, originalDefinitionIdentity, updatedDefinitionIdentity, blockingActivities)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.BlockingActivities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockingActivities As IList(Of ActivityBlockingUpdate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ BlockingActivities { System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlockingActivities : System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" Usage="System.Activities.Tracking.WorkflowInstanceUpdatedRecord.BlockingActivities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="workflowInstanceUpdatedRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.IsSuccessful" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSuccessful As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSuccessful { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSuccessful : bool" Usage="System.Activities.Tracking.WorkflowInstanceUpdatedRecord.IsSuccessful" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.OriginalDefinitionIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalDefinitionIdentity As WorkflowIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ OriginalDefinitionIdentity { System::Activities::WorkflowIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalDefinitionIdentity : System.Activities.WorkflowIdentity" Usage="System.Activities.Tracking.WorkflowInstanceUpdatedRecord.OriginalDefinitionIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUpdatedRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="workflowInstanceUpdatedRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

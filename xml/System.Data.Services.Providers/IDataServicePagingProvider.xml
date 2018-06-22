@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServicePagingProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataServicePagingProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataServicePagingProvider" />
+  <TypeSignature Language="F#" Value="type IDataServicePagingProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServicePagingProvider.GetContinuationToken(System.Collections.IEnumerator)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContinuationToken (enumerator As IEnumerator) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetContinuationToken(System::Collections::IEnumerator ^ enumerator);" />
+      <MemberSignature Language="F#" Value="abstract member GetContinuationToken : System.Collections.IEnumerator -&gt; obj[]" Usage="iDataServicePagingProvider.GetContinuationToken enumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContinuationToken(class System.Linq.IQueryable query, class System.Data.Services.Providers.ResourceType resourceType, object[] continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServicePagingProvider.SetContinuationToken(System.Linq.IQueryable,System.Data.Services.Providers.ResourceType,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContinuationToken(System::Linq::IQueryable ^ query, System::Data::Services::Providers::ResourceType ^ resourceType, cli::array &lt;System::Object ^&gt; ^ continuationToken);" />
+      <MemberSignature Language="F#" Value="abstract member SetContinuationToken : System.Linq.IQueryable * System.Data.Services.Providers.ResourceType * obj[] -&gt; unit" Usage="iDataServicePagingProvider.SetContinuationToken (query, resourceType, continuationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

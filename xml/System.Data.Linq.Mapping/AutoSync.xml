@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AutoSync" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutoSync" />
   <TypeSignature Language="C++ CLI" Value="public enum class AutoSync" />
+  <TypeSignature Language="F#" Value="type AutoSync = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Data.Linq.Mapping.AutoSync.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Data.Linq.Mapping.AutoSync.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 2" Usage="System.Data.Linq.Mapping.AutoSync.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnInsert" />
       <MemberSignature Language="VB.NET" Value="OnInsert" />
       <MemberSignature Language="C++ CLI" Value="OnInsert" />
+      <MemberSignature Language="F#" Value="OnInsert = 3" Usage="System.Data.Linq.Mapping.AutoSync.OnInsert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnUpdate" />
       <MemberSignature Language="VB.NET" Value="OnUpdate" />
       <MemberSignature Language="C++ CLI" Value="OnUpdate" />
+      <MemberSignature Language="F#" Value="OnUpdate = 4" Usage="System.Data.Linq.Mapping.AutoSync.OnUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

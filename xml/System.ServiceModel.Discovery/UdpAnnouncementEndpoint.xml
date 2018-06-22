@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.UdpAnnouncementEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpAnnouncementEndpoint&#xA;Inherits AnnouncementEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpAnnouncementEndpoint : System::ServiceModel::Discovery::AnnouncementEndpoint" />
+  <TypeSignature Language="F#" Value="type UdpAnnouncementEndpoint = class&#xA;    inherit AnnouncementEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryVersion discoveryVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnnouncementEndpoint(System::ServiceModel::Discovery::DiscoveryVersion ^ discoveryVersion);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint : System.ServiceModel.Discovery.DiscoveryVersion -&gt; System.ServiceModel.Discovery.UdpAnnouncementEndpoint" Usage="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint discoveryVersion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (multicastAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnnouncementEndpoint(System::String ^ multicastAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint : string -&gt; System.ServiceModel.Discovery.UdpAnnouncementEndpoint" Usage="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint multicastAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (multicastAddress As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnnouncementEndpoint(Uri ^ multicastAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint : Uri -&gt; System.ServiceModel.Discovery.UdpAnnouncementEndpoint" Usage="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint multicastAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryVersion discoveryVersion, string multicastAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnnouncementEndpoint(System::ServiceModel::Discovery::DiscoveryVersion ^ discoveryVersion, System::String ^ multicastAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint : System.ServiceModel.Discovery.DiscoveryVersion * string -&gt; System.ServiceModel.Discovery.UdpAnnouncementEndpoint" Usage="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint (discoveryVersion, multicastAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryVersion discoveryVersion, class System.Uri multicastAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnnouncementEndpoint(System::ServiceModel::Discovery::DiscoveryVersion ^ discoveryVersion, Uri ^ multicastAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint : System.ServiceModel.Discovery.DiscoveryVersion * Uri -&gt; System.ServiceModel.Discovery.UdpAnnouncementEndpoint" Usage="new System.ServiceModel.Discovery.UdpAnnouncementEndpoint (discoveryVersion, multicastAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.DefaultIPv4MulticastAddress" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultIPv4MulticastAddress As Uri " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ DefaultIPv4MulticastAddress;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultIPv4MulticastAddress : Uri" Usage="System.ServiceModel.Discovery.UdpAnnouncementEndpoint.DefaultIPv4MulticastAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.DefaultIPv6MulticastAddress" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultIPv6MulticastAddress As Uri " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ DefaultIPv6MulticastAddress;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultIPv6MulticastAddress : Uri" Usage="System.ServiceModel.Discovery.UdpAnnouncementEndpoint.DefaultIPv6MulticastAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -188,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.MulticastAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ MulticastAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastAddress : Uri with get, set" Usage="System.ServiceModel.Discovery.UdpAnnouncementEndpoint.MulticastAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.UdpAnnouncementEndpoint.TransportSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportSettings As UdpTransportSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::UdpTransportSettings ^ TransportSettings { System::ServiceModel::Discovery::UdpTransportSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransportSettings : System.ServiceModel.Discovery.UdpTransportSettings" Usage="System.ServiceModel.Discovery.UdpAnnouncementEndpoint.TransportSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

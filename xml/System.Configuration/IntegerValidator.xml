@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IntegerValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class IntegerValidator&#xA;Inherits ConfigurationValidatorBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class IntegerValidator : System::Configuration::ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type IntegerValidator = class&#xA;    inherit ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer, rangeIsExclusive As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue, bool rangeIsExclusive);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int * bool -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue, rangeIsExclusive)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer, rangeIsExclusive As Boolean, resolution As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue, bool rangeIsExclusive, int resolution);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int * bool * int -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue, rangeIsExclusive, resolution)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.CanValidate(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="integerValidator.CanValidate type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="integerValidator.Validate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

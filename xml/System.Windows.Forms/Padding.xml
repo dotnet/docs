@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Padding" />
   <TypeSignature Language="VB.NET" Value="Public Structure Padding" />
   <TypeSignature Language="C++ CLI" Value="public value class Padding" />
+  <TypeSignature Language="F#" Value="type Padding = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (all As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Padding(int all);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Padding : int -&gt; System.Windows.Forms.Padding" Usage="new System.Windows.Forms.Padding all" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (left As Integer, top As Integer, right As Integer, bottom As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Padding(int left, int top, int right, int bottom);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Padding : int * int * int * int -&gt; System.Windows.Forms.Padding" Usage="new System.Windows.Forms.Padding (left, top, right, bottom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.Add(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (p1 As Padding, p2 As Padding) As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Padding Add(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; System.Windows.Forms.Padding" Usage="System.Windows.Forms.Padding.Add (p1, p2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.All" />
       <MemberSignature Language="VB.NET" Value="Public Property All As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int All { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.All : int with get, set" Usage="System.Windows.Forms.Padding.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Windows.Forms.Padding.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Padding.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Padding " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::Padding Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Windows.Forms.Padding" Usage="System.Windows.Forms.Padding.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="padding.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="padding.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Horizontal As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Horizontal { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Horizontal : int" Usage="System.Windows.Forms.Padding.Horizontal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Windows.Forms.Padding.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Addition(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (p1 As Padding, p2 As Padding) As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Padding operator +(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; System.Windows.Forms.Padding" Usage="p1 + p2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Equality(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (p1 As Padding, p2 As Padding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; bool" Usage="p1 = p2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -471,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Inequality(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (p1 As Padding, p2 As Padding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; bool" Usage="System.Windows.Forms.Padding.op_Inequality (p1, p2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -506,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Subtraction(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (p1 As Padding, p2 As Padding) As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Padding operator -(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; System.Windows.Forms.Padding" Usage="p1 - p2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Windows.Forms.Padding.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -576,6 +592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size" Usage="System.Windows.Forms.Padding.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -614,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.Subtract(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (p1 As Padding, p2 As Padding) As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Padding Subtract(System::Windows::Forms::Padding p1, System::Windows::Forms::Padding p2);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Windows.Forms.Padding * System.Windows.Forms.Padding -&gt; System.Windows.Forms.Padding" Usage="System.Windows.Forms.Padding.Subtract (p1, p2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -640,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Windows.Forms.Padding.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -676,6 +695,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="padding.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -707,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Padding.Vertical" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertical As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Vertical { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Vertical : int" Usage="System.Windows.Forms.Padding.Vertical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.IOrderedQueryable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOrderedQueryable&#xA;Implements IEnumerable, IQueryable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOrderedQueryable : System::Collections::IEnumerable, System::Linq::IQueryable" />
+  <TypeSignature Language="F#" Value="type IOrderedQueryable = interface&#xA;    interface IQueryable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

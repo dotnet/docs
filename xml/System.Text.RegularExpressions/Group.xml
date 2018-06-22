@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Group" />
   <TypeSignature Language="VB.NET" Value="Public Class Group&#xA;Inherits Capture" />
   <TypeSignature Language="C++ CLI" Value="public ref class Group : System::Text::RegularExpressions::Capture" />
+  <TypeSignature Language="F#" Value="type Group = class&#xA;    inherit Capture" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Group.Captures" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Captures As CaptureCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::RegularExpressions::CaptureCollection ^ Captures { System::Text::RegularExpressions::CaptureCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Captures : System.Text.RegularExpressions.CaptureCollection" Usage="System.Text.RegularExpressions.Group.Captures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Group.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Text.RegularExpressions.Group.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Group.Success" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Success As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Success { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Success : bool" Usage="System.Text.RegularExpressions.Group.Success" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Group.Synchronized(System.Text.RegularExpressions.Group)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (inner As Group) As Group" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::RegularExpressions::Group ^ Synchronized(System::Text::RegularExpressions::Group ^ inner);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Text.RegularExpressions.Group -&gt; System.Text.RegularExpressions.Group" Usage="System.Text.RegularExpressions.Group.Synchronized inner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

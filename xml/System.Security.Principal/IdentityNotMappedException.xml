@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.IdentityNotMappedException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentityNotMappedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class IdentityNotMappedException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type IdentityNotMappedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityNotMappedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityNotMappedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.IdentityNotMappedException : string -&gt; System.Security.Principal.IdentityNotMappedException" Usage="new System.Security.Principal.IdentityNotMappedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityNotMappedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityNotMappedException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.IdentityNotMappedException : string * Exception -&gt; System.Security.Principal.IdentityNotMappedException" Usage="new System.Security.Principal.IdentityNotMappedException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityNotMappedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="identityNotMappedException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityNotMappedException.UnmappedIdentities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnmappedIdentities As IdentityReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IdentityReferenceCollection ^ UnmappedIdentities { System::Security::Principal::IdentityReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnmappedIdentities : System.Security.Principal.IdentityReferenceCollection" Usage="System.Security.Principal.IdentityNotMappedException.UnmappedIdentities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.RecordChangeCompleteDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.RecordChangeCompleteDelegate(adReason As EventReasonEnum, cRecords As Integer, pError As Error, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::RecordChangeCompleteDelegate(EventReasonEnum adReason, int cRecords, Error ^ pError, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.RecordChangeCompleteDelegate = delegate of EventReasonEnum * int * Error *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

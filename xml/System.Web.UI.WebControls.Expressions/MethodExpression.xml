@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.MethodExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class MethodExpression&#xA;Inherits ParameterDataSourceExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class MethodExpression : System::Web::UI::WebControls::Expressions::ParameterDataSourceExpression" />
+  <TypeSignature Language="F#" Value="type MethodExpression = class&#xA;    inherit ParameterDataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +118,7 @@ public static IQueryable<Product>
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.MethodExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="methodExpression.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -151,6 +153,7 @@ public static IQueryable<Product>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.MethodExpression.IgnoreIfNotFound" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreIfNotFound As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreIfNotFound { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreIfNotFound : bool with get, set" Usage="System.Web.UI.WebControls.Expressions.MethodExpression.IgnoreIfNotFound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -179,6 +182,7 @@ public static IQueryable<Product>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.MethodExpression.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Web.UI.WebControls.Expressions.MethodExpression.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -219,6 +223,7 @@ public static IQueryable<Product>
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.MethodExpression.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Web.UI.WebControls.Expressions.MethodExpression.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

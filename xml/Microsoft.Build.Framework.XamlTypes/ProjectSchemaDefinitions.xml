@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.ProjectSchemaDefinitions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectSchemaDefinitions&#xA;Implements IProjectSchemaNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectSchemaDefinitions sealed : Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode" />
+  <TypeSignature Language="F#" Value="type ProjectSchemaDefinitions = class&#xA;    interface IProjectSchemaNode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetSchemaObjects(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ProjectSchemaDefinitions.GetSchemaObjects(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetSchemaObjects(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjects : Type -&gt; seq&lt;obj&gt;&#xA;override this.GetSchemaObjects : Type -&gt; seq&lt;obj&gt;" Usage="projectSchemaDefinitions.GetSchemaObjects type" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjects(System.Type)</InterfaceMember>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ProjectSchemaDefinitions.GetSchemaObjectTypes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchemaObjectTypes () As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ GetSchemaObjectTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;&#xA;override this.GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;" Usage="projectSchemaDefinitions.GetSchemaObjectTypes " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjectTypes</InterfaceMember>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ProjectSchemaDefinitions.Nodes" />
       <MemberSignature Language="VB.NET" Value="Public Property Nodes As List(Of IProjectSchemaNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode ^&gt; ^ Nodes { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Nodes : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ProjectSchemaDefinitions.Nodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

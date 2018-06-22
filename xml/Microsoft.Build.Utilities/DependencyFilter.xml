@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.DependencyFilter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function DependencyFilter(fullPath As String) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool DependencyFilter(System::String ^ fullPath);" />
+  <TypeSignature Language="F#" Value="type DependencyFilter = delegate of string -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

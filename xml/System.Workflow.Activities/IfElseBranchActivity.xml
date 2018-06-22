@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseBranchActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IfElseBranchActivity&#xA;Inherits SequenceActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class IfElseBranchActivity sealed : System::Workflow::Activities::SequenceActivity" />
+  <TypeSignature Language="F#" Value="type IfElseBranchActivity = class&#xA;    inherit SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseBranchActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IfElseBranchActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.IfElseBranchActivity : string -&gt; System.Workflow.Activities.IfElseBranchActivity" Usage="new System.Workflow.Activities.IfElseBranchActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.IfElseBranchActivity.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As ActivityCondition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ Condition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Workflow.ComponentModel.ActivityCondition with get, set" Usage="System.Workflow.Activities.IfElseBranchActivity.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.IfElseBranchActivity.ConditionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConditionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ConditionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ConditionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.IfElseBranchActivity.ConditionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

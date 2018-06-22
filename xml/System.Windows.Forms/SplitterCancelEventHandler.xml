@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SplitterCancelEventHandler(sender As Object, e As SplitterCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SplitterCancelEventHandler(System::Object ^ sender, SplitterCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SplitterCancelEventHandler = delegate of obj * SplitterCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

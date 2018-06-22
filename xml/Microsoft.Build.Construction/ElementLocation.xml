@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ElementLocation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ElementLocation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ElementLocation abstract" />
+  <TypeSignature Language="F#" Value="type ElementLocation = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ElementLocation.Column" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Column { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="Microsoft.Build.Construction.ElementLocation.Column" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Shared.IElementLocation.Column</InterfaceMember>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ElementLocation.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="elementLocation.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ElementLocation.File" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property File As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ File { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.File : string" Usage="Microsoft.Build.Construction.ElementLocation.File" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Shared.IElementLocation.File</InterfaceMember>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ElementLocation.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="elementLocation.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ElementLocation.Line" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="Microsoft.Build.Construction.ElementLocation.Line" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Shared.IElementLocation.Line</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ElementLocation.LocationString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocationString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationString : string" Usage="Microsoft.Build.Construction.ElementLocation.LocationString" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Shared.IElementLocation.LocationString</InterfaceMember>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ElementLocation.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="elementLocation.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

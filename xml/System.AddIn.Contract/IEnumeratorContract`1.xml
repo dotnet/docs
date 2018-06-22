@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IEnumeratorContract`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumeratorContract(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IEnumeratorContract : IDisposable" />
+  <TypeSignature Language="F#" Value="type IEnumeratorContract&lt;'T&gt; = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IEnumeratorContract`1.GetCurrent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrent () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T GetCurrent();" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrent : unit -&gt; 'T" Usage="iEnumeratorContract.GetCurrent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IEnumeratorContract`1.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool" Usage="iEnumeratorContract.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IEnumeratorContract`1.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumeratorContract.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

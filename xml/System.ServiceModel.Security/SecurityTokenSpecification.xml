@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityTokenSpecification" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenSpecification" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenSpecification" />
+  <TypeSignature Language="F#" Value="type SecurityTokenSpecification = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityTokenSpecification.#ctor(System.IdentityModel.Tokens.SecurityToken,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, tokenPolicies As ReadOnlyCollection(Of IAuthorizationPolicy))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenSpecification(System::IdentityModel::Tokens::SecurityToken ^ token, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ tokenPolicies);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityTokenSpecification : System.IdentityModel.Tokens.SecurityToken * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; -&gt; System.ServiceModel.Security.SecurityTokenSpecification" Usage="new System.ServiceModel.Security.SecurityTokenSpecification (token, tokenPolicies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityTokenSpecification.SecurityToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityToken As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ SecurityToken { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityToken : System.IdentityModel.Tokens.SecurityToken" Usage="System.ServiceModel.Security.SecurityTokenSpecification.SecurityToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityTokenSpecification.SecurityTokenPolicies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ SecurityTokenPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenPolicies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="System.ServiceModel.Security.SecurityTokenSpecification.SecurityTokenPolicies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.Design.MessageDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageDesigner&#xA;Inherits ComponentDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageDesigner : System::ComponentModel::Design::ComponentDesigner" />
+  <TypeSignature Language="F#" Value="type MessageDesigner = class&#xA;    inherit ComponentDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.MessageDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="messageDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

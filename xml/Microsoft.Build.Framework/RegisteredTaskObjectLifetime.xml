@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.RegisteredTaskObjectLifetime" />
   <TypeSignature Language="VB.NET" Value="Public Enum RegisteredTaskObjectLifetime" />
   <TypeSignature Language="C++ CLI" Value="public enum class RegisteredTaskObjectLifetime" />
+  <TypeSignature Language="F#" Value="type RegisteredTaskObjectLifetime = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.RegisteredTaskObjectLifetime.AppDomain" />
       <MemberSignature Language="VB.NET" Value="AppDomain" />
       <MemberSignature Language="C++ CLI" Value="AppDomain" />
+      <MemberSignature Language="F#" Value="AppDomain = 1" Usage="Microsoft.Build.Framework.RegisteredTaskObjectLifetime.AppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.RegisteredTaskObjectLifetime.Build" />
       <MemberSignature Language="VB.NET" Value="Build" />
       <MemberSignature Language="C++ CLI" Value="Build" />
+      <MemberSignature Language="F#" Value="Build = 0" Usage="Microsoft.Build.Framework.RegisteredTaskObjectLifetime.Build" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

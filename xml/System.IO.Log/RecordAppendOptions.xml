@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.RecordAppendOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecordAppendOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecordAppendOptions" />
+  <TypeSignature Language="F#" Value="type RecordAppendOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.ForceAppend" />
       <MemberSignature Language="VB.NET" Value="ForceAppend" />
       <MemberSignature Language="C++ CLI" Value="ForceAppend" />
+      <MemberSignature Language="F#" Value="ForceAppend = 1" Usage="System.IO.Log.RecordAppendOptions.ForceAppend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.ForceFlush" />
       <MemberSignature Language="VB.NET" Value="ForceFlush" />
       <MemberSignature Language="C++ CLI" Value="ForceFlush" />
+      <MemberSignature Language="F#" Value="ForceFlush = 2" Usage="System.IO.Log.RecordAppendOptions.ForceFlush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.Log.RecordAppendOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

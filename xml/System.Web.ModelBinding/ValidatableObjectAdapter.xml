@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ValidatableObjectAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidatableObjectAdapter&#xA;Inherits ModelValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidatableObjectAdapter : System::Web::ModelBinding::ModelValidator" />
+  <TypeSignature Language="F#" Value="type ValidatableObjectAdapter = class&#xA;    inherit ModelValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValidatableObjectAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidatableObjectAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ValidatableObjectAdapter : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.ValidatableObjectAdapter" Usage="new System.Web.ModelBinding.ValidatableObjectAdapter (metadata, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValidatableObjectAdapter.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (container As Object) As IEnumerable(Of ModelValidationResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidationResult ^&gt; ^ Validate(System::Object ^ container);" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; seq&lt;System.Web.ModelBinding.ModelValidationResult&gt;" Usage="validatableObjectAdapter.Validate container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

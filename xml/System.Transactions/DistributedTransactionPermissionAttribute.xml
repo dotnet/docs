@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.DistributedTransactionPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DistributedTransactionPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DistributedTransactionPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DistributedTransactionPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.DistributedTransactionPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DistributedTransactionPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Transactions.DistributedTransactionPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Transactions.DistributedTransactionPermissionAttribute" Usage="new System.Transactions.DistributedTransactionPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.DistributedTransactionPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="distributedTransactionPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.DistributedTransactionPermissionAttribute.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Property Unrestricted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unrestricted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Unrestricted : bool with get, set" Usage="System.Transactions.DistributedTransactionPermissionAttribute.Unrestricted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

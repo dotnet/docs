@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGrid.HitTestInfo" />
   <TypeSignature Language="C++ CLI" Value="public: ref class DataGrid::HitTestInfo sealed" />
+  <TypeSignature Language="F#" Value="type DataGrid.HitTestInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="System.Windows.Forms.DataGrid.HitTestInfo.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hitTestInfo.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hitTestInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Nowhere As DataGrid.HitTestInfo " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGrid::HitTestInfo ^ Nowhere;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Nowhere : System.Windows.Forms.DataGrid.HitTestInfo" Usage="System.Windows.Forms.DataGrid.HitTestInfo.Nowhere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Row { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : int" Usage="System.Windows.Forms.DataGrid.HitTestInfo.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hitTestInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As DataGrid.HitTestType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGrid::HitTestType Type { System::Windows::Forms::DataGrid::HitTestType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Windows.Forms.DataGrid.HitTestType" Usage="System.Windows.Forms.DataGrid.HitTestInfo.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

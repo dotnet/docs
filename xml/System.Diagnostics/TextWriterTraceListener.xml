@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public Class TextWriterTraceListener&#xA;Inherits TraceListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextWriterTraceListener : System::Diagnostics::TraceListener" />
+  <TypeSignature Language="F#" Value="type TextWriterTraceListener = class&#xA;    inherit TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : System.IO.Stream -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -209,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : System.IO.TextWriter -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -266,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : string -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -320,6 +324,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.IO.Stream,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::IO::Stream ^ stream, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : System.IO.Stream * string -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener (stream, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -378,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::IO::TextWriter ^ writer, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : System.IO.TextWriter * string -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener (writer, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -431,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextWriterTraceListener(System::String ^ fileName, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TextWriterTraceListener : string * string -&gt; System.Diagnostics.TextWriterTraceListener" Usage="new System.Diagnostics.TextWriterTraceListener (fileName, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -488,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="textWriterTraceListener.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -543,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="textWriterTraceListener.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -585,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="textWriterTraceListener.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -636,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="textWriterTraceListener.Write message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -690,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="textWriterTraceListener.WriteLine message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -744,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TextWriterTraceListener.Writer" />
       <MemberSignature Language="VB.NET" Value="Public Property Writer As TextWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ Writer { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Writer : System.IO.TextWriter with get, set" Usage="System.Diagnostics.TextWriterTraceListener.Writer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>

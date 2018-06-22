@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.CategoryEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CategoryEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class CategoryEditor abstract" />
+  <TypeSignature Language="F#" Value="type CategoryEditor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ConsumesProperty(class System.Activities.Presentation.PropertyEditing.PropertyEntry propertyEntry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEditor.ConsumesProperty(System.Activities.Presentation.PropertyEditing.PropertyEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ConsumesProperty(System::Activities::Presentation::PropertyEditing::PropertyEntry ^ propertyEntry);" />
+      <MemberSignature Language="F#" Value="abstract member ConsumesProperty : System.Activities.Presentation.PropertyEditing.PropertyEntry -&gt; bool" Usage="categoryEditor.ConsumesProperty propertyEntry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEditor.CreateEditorAttribute(System.Activities.Presentation.PropertyEditing.CategoryEditor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEditorAttribute (editor As CategoryEditor) As EditorAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EditorAttribute ^ CreateEditorAttribute(System::Activities::Presentation::PropertyEditing::CategoryEditor ^ editor);" />
+      <MemberSignature Language="F#" Value="static member CreateEditorAttribute : System.Activities.Presentation.PropertyEditing.CategoryEditor -&gt; System.ComponentModel.EditorAttribute" Usage="System.Activities.Presentation.PropertyEditing.CategoryEditor.CreateEditorAttribute editor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEditor.CreateEditorAttribute(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEditorAttribute (categoryEditorType As Type) As EditorAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EditorAttribute ^ CreateEditorAttribute(Type ^ categoryEditorType);" />
+      <MemberSignature Language="F#" Value="static member CreateEditorAttribute : Type -&gt; System.ComponentModel.EditorAttribute" Usage="System.Activities.Presentation.PropertyEditing.CategoryEditor.CreateEditorAttribute categoryEditorType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEditor.EditorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EditorTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::DataTemplate ^ EditorTemplate { System::Windows::DataTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditorTemplate : System.Windows.DataTemplate" Usage="System.Activities.Presentation.PropertyEditing.CategoryEditor.EditorTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEditor.GetImage(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetImage (desiredSize As Size) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetImage(System::Windows::Size desiredSize);" />
+      <MemberSignature Language="F#" Value="abstract member GetImage : System.Windows.Size -&gt; obj" Usage="categoryEditor.GetImage desiredSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEditor.TargetCategory" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TargetCategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ TargetCategory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetCategory : string" Usage="System.Activities.Presentation.PropertyEditing.CategoryEditor.TargetCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

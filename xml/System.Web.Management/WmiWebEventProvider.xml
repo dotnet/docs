@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WmiWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class WmiWebEventProvider&#xA;Inherits WebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmiWebEventProvider : System::Web::Management::WebEventProvider" />
+  <TypeSignature Language="F#" Value="type WmiWebEventProvider = class&#xA;    inherit WebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WmiWebEventProvider.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="wmiWebEventProvider.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WmiWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="wmiWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WmiWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
+      <MemberSignature Language="F#" Value="override this.ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="wmiWebEventProvider.ProcessEvent eventRaised" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WmiWebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
+      <MemberSignature Language="F#" Value="override this.Shutdown : unit -&gt; unit" Usage="wmiWebEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

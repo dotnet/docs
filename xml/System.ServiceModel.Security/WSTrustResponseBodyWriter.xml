@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustResponseBodyWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustResponseBodyWriter&#xA;Inherits BodyWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustResponseBodyWriter : System::ServiceModel::Channels::BodyWriter" />
+  <TypeSignature Language="F#" Value="type WSTrustResponseBodyWriter = class&#xA;    inherit BodyWriter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer serializer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustResponseBodyWriter.#ctor(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustResponseBodyWriter(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ requestSecurityTokenResponse, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ serializer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustResponseBodyWriter : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse * System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer * System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext -&gt; System.ServiceModel.Security.WSTrustResponseBodyWriter" Usage="new System.ServiceModel.Security.WSTrustResponseBodyWriter (requestSecurityTokenResponse, serializer, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustResponseBodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWriteBodyContents (writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.OnWriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="wSTrustResponseBodyWriter.OnWriteBodyContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

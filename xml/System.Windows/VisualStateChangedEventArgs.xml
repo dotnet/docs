@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualStateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VisualStateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualStateChangedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type VisualStateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateChangedEventArgs.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As FrameworkElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElement ^ Control { System::Windows::FrameworkElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Windows.FrameworkElement" Usage="System.Windows.VisualStateChangedEventArgs.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateChangedEventArgs.NewState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewState As VisualState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::VisualState ^ NewState { System::Windows::VisualState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewState : System.Windows.VisualState" Usage="System.Windows.VisualStateChangedEventArgs.NewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateChangedEventArgs.OldState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldState As VisualState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::VisualState ^ OldState { System::Windows::VisualState ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldState : System.Windows.VisualState" Usage="System.Windows.VisualStateChangedEventArgs.OldState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateGroupsRoot As FrameworkElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElement ^ StateGroupsRoot { System::Windows::FrameworkElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateGroupsRoot : System.Windows.FrameworkElement" Usage="System.Windows.VisualStateChangedEventArgs.StateGroupsRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

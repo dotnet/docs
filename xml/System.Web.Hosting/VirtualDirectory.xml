@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualDirectory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualDirectory&#xA;Inherits VirtualFileBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualDirectory abstract : System::Web::Hosting::VirtualFileBase" />
+  <TypeSignature Language="F#" Value="type VirtualDirectory = class&#xA;    inherit VirtualFileBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualDirectory.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (virtualPath As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualDirectory(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.Hosting.VirtualDirectory : string -&gt; System.Web.Hosting.VirtualDirectory" Usage="new System.Web.Hosting.VirtualDirectory virtualPath" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualDirectory.Children" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Children As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::IEnumerable ^ Children { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.IEnumerable" Usage="System.Web.Hosting.VirtualDirectory.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualDirectory.Directories" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Directories As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::IEnumerable ^ Directories { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Directories : System.Collections.IEnumerable" Usage="System.Web.Hosting.VirtualDirectory.Directories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualDirectory.Files" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Files As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::IEnumerable ^ Files { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Files : System.Collections.IEnumerable" Usage="System.Web.Hosting.VirtualDirectory.Files" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualDirectory.IsDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDirectory { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirectory : bool" Usage="System.Web.Hosting.VirtualDirectory.IsDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewBand" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewBand&#xA;Inherits DataGridViewElement&#xA;Implements ICloneable, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewBand : System::Windows::Forms::DataGridViewElement, ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type DataGridViewBand = class&#xA;    inherit DataGridViewElement&#xA;    interface ICloneable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="dataGridViewBand.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.ContextMenuStrip" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextMenuStrip As ContextMenuStrip" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.DataGridViewBand.ContextMenuStrip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultCellStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.DefaultHeaderCellType" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultHeaderCellType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DefaultHeaderCellType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultHeaderCellType : Type with get, set" Usage="System.Windows.Forms.DataGridViewBand.DefaultHeaderCellType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Displayed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Displayed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Displayed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Displayed : bool" Usage="System.Windows.Forms.DataGridViewBand.Displayed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dataGridViewBand.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -306,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dataGridViewBand.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -349,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!DataGridViewBand ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="dataGridViewBand.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -383,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Frozen" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Frozen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Frozen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Frozen : bool with get, set" Usage="System.Windows.Forms.DataGridViewBand.Frozen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -429,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.HasDefaultCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDefaultCellStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDefaultCellStyle { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDefaultCellStyle : bool" Usage="System.Windows.Forms.DataGridViewBand.HasDefaultCellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -469,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.HeaderCellCore" />
       <MemberSignature Language="VB.NET" Value="Protected Property HeaderCellCore As DataGridViewHeaderCell" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::DataGridViewHeaderCell ^ HeaderCellCore { System::Windows::Forms::DataGridViewHeaderCell ^ get(); void set(System::Windows::Forms::DataGridViewHeaderCell ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderCellCore : System.Windows.Forms.DataGridViewHeaderCell with get, set" Usage="System.Windows.Forms.DataGridViewBand.HeaderCellCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -507,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Windows.Forms.DataGridViewBand.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -555,6 +568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.InheritedStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InheritedStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ InheritedStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritedStyle : System.Windows.Forms.DataGridViewCellStyle" Usage="System.Windows.Forms.DataGridViewBand.InheritedStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -593,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.IsRow" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsRow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsRow { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRow : bool" Usage="System.Windows.Forms.DataGridViewBand.IsRow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -617,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.OnDataGridViewChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataGridViewChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataGridViewChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnDataGridViewChanged : unit -&gt; unit" Usage="dataGridViewBand.OnDataGridViewChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -643,6 +659,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.DataGridViewBand.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -692,6 +709,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Resizable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Resizable As DataGridViewTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewTriState Resizable { System::Windows::Forms::DataGridViewTriState get(); void set(System::Windows::Forms::DataGridViewTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Resizable : System.Windows.Forms.DataGridViewTriState with get, set" Usage="System.Windows.Forms.DataGridViewBand.Resizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -742,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Selected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Selected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Windows.Forms.DataGridViewBand.Selected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -795,6 +814,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.DataGridViewBand.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -843,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewBand.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewBand.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -874,6 +895,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewBand.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.DataGridViewBand.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Vector3DCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Vector3DCollection&#xA;Inherits Freezable&#xA;Implements ICollection(Of Vector3D), IEnumerable(Of Vector3D), IFormattable, IList, IList(Of Vector3D)" />
   <TypeSignature Language="C++ CLI" Value="public ref class Vector3DCollection sealed : System::Windows::Freezable, IFormattable, System::Collections::Generic::ICollection&lt;System::Windows::Media::Media3D::Vector3D&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Media3D::Vector3D&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::Media3D::Vector3D&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type Vector3DCollection = class&#xA;    inherit Freezable&#xA;    interface IFormattable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;Vector3D&gt;&#xA;    interface ICollection&lt;Vector3D&gt;&#xA;    interface seq&lt;Vector3D&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Media3D.Vector3D})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of Vector3D))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3DCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Media3D::Vector3D&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Vector3DCollection : seq&lt;System.Windows.Media.Media3D.Vector3D&gt; -&gt; System.Windows.Media.Media3D.Vector3DCollection" Usage="new System.Windows.Media.Media3D.Vector3DCollection collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3DCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Vector3DCollection : int -&gt; System.Windows.Media.Media3D.Vector3DCollection" Usage="new System.Windows.Media.Media3D.Vector3DCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Add(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Media.Media3D.Vector3D -&gt; unit&#xA;override this.Add : System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="vector3DCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="vector3DCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Vector3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3DCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Media.Media3D.Vector3DCollection" Usage="vector3DCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="vector3DCollection.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Vector3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3DCollection ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.Vector3DCollection" Usage="vector3DCollection.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="vector3DCollection.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Contains(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Media.Media3D.Vector3D -&gt; bool&#xA;override this.Contains : System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="vector3DCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.CopyTo(System.Windows.Media.Media3D.Vector3D[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Vector3D(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::Media3D::Vector3D&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Media.Media3D.Vector3D[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Media.Media3D.Vector3D[] * int -&gt; unit" Usage="vector3DCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -358,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.Media3D.Vector3DCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -382,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="vector3DCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -403,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="vector3DCollection.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -426,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="vector3DCollection.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -449,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Vector3DCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3DCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.Media.Media3D.Vector3DCollection.Enumerator" Usage="vector3DCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -487,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.IndexOf(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Vector3D) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.Media.Media3D.Vector3D -&gt; int&#xA;override this.IndexOf : System.Windows.Media.Media3D.Vector3D -&gt; int" Usage="vector3DCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -514,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Insert(System.Int32,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Vector3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Media.Media3D.Vector3D -&gt; unit&#xA;override this.Insert : int * System.Windows.Media.Media3D.Vector3D -&gt; unit" Usage="vector3DCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -542,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D default[int] { System::Windows::Media::Media3D::Vector3D get(int index); void set(int index, System::Windows::Media::Media3D::Vector3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.Media3D.Vector3D with get, set" Usage="System.Windows.Media.Media3D.Vector3DCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -569,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Vector3DCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3DCollection ^ Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Media3D.Vector3DCollection" Usage="System.Windows.Media.Media3D.Vector3DCollection.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -593,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.Remove(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Media.Media3D.Vector3D -&gt; bool&#xA;override this.Remove : System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="vector3DCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -621,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="vector3DCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -648,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Media3D#Vector3D&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of Vector3D).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Media3D.Vector3D&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.Generic.ICollection&lt;System.Windows.Media.Media3D.Vector3D&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -744,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -775,6 +799,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -974,6 +999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1005,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1036,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3DCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Media3D.Vector3DCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1156,6 +1184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="vector3DCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1177,6 +1206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3DCollection.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="vector3DCollection.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

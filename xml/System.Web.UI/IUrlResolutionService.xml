@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUrlResolutionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IUrlResolutionService" />
+  <TypeSignature Language="F#" Value="type IUrlResolutionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IUrlResolutionService.ResolveClientUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveClientUrl (relativeUrl As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveClientUrl(System::String ^ relativeUrl);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveClientUrl : string -&gt; string" Usage="iUrlResolutionService.ResolveClientUrl relativeUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

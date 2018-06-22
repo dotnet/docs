@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.FragmentNavigationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FragmentNavigationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FragmentNavigationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type FragmentNavigationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Fragment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fragment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Fragment { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fragment : string" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Fragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Navigator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Navigator As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navigator : obj" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Navigator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

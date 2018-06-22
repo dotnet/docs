@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.RenamedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RenamedEventHandler(System::Object ^ sender, RenamedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RenamedEventHandler = delegate of obj * RenamedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

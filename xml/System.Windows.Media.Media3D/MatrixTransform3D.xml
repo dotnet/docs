@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.MatrixTransform3D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatrixTransform3D&#xA;Inherits Transform3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class MatrixTransform3D sealed : System::Windows::Media::Media3D::Transform3D" />
+  <TypeSignature Language="F#" Value="type MatrixTransform3D = class&#xA;    inherit Transform3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MatrixTransform3D.#ctor(System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (matrix As Matrix3D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MatrixTransform3D(System::Windows::Media::Media3D::Matrix3D matrix);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.MatrixTransform3D : System.Windows.Media.Media3D.Matrix3D -&gt; System.Windows.Media.Media3D.MatrixTransform3D" Usage="new System.Windows.Media.Media3D.MatrixTransform3D matrix" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MatrixTransform3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As MatrixTransform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MatrixTransform3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.MatrixTransform3D" Usage="matrixTransform3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MatrixTransform3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As MatrixTransform3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MatrixTransform3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.MatrixTransform3D" Usage="matrixTransform3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MatrixTransform3D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="matrixTransform3D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MatrixTransform3D.IsAffine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAffine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAffine { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAffine : bool" Usage="System.Windows.Media.Media3D.MatrixTransform3D.IsAffine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MatrixTransform3D.Matrix" />
       <MemberSignature Language="VB.NET" Value="Public Property Matrix As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Matrix3D Matrix { System::Windows::Media::Media3D::Matrix3D get(); void set(System::Windows::Media::Media3D::Matrix3D value); };" />
+      <MemberSignature Language="F#" Value="member this.Matrix : System.Windows.Media.Media3D.Matrix3D with get, set" Usage="System.Windows.Media.Media3D.MatrixTransform3D.Matrix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MatrixTransform3D.MatrixProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MatrixProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MatrixProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MatrixProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.MatrixTransform3D.MatrixProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MatrixTransform3D.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::Matrix3D Value { System::Windows::Media::Media3D::Matrix3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.MatrixTransform3D.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

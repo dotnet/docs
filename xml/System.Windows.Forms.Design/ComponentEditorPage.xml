@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorPage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComponentEditorPage&#xA;Inherits Panel" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentEditorPage abstract : System::Windows::Forms::Panel" />
+  <TypeSignature Language="F#" Value="type ComponentEditorPage = class&#xA;    inherit Panel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit&#xA;override this.Activate : unit -&gt; unit" Usage="componentEditorPage.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ApplyChanges" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyChanges();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyChanges : unit -&gt; unit&#xA;override this.ApplyChanges : unit -&gt; unit" Usage="componentEditorPage.ApplyChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.ComponentEditorPage.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CommitOnDeactivate" />
       <MemberSignature Language="VB.NET" Value="Public Property CommitOnDeactivate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CommitOnDeactivate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CommitOnDeactivate : bool with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.CommitOnDeactivate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Component" />
       <MemberSignature Language="VB.NET" Value="Protected Property Component As IComponent" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.Component" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.Design.ComponentEditorPage.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Deactivate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Deactivate();" />
+      <MemberSignature Language="F#" Value="abstract member Deactivate : unit -&gt; unit&#xA;override this.Deactivate : unit -&gt; unit" Usage="componentEditorPage.Deactivate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EnterLoadingMode ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnterLoadingMode();" />
+      <MemberSignature Language="F#" Value="member this.EnterLoadingMode : unit -&gt; unit" Usage="componentEditorPage.EnterLoadingMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ExitLoadingMode" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ExitLoadingMode ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ExitLoadingMode();" />
+      <MemberSignature Language="F#" Value="member this.ExitLoadingMode : unit -&gt; unit" Usage="componentEditorPage.ExitLoadingMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -315,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.FirstActivate" />
       <MemberSignature Language="VB.NET" Value="Protected Property FirstActivate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool FirstActivate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstActivate : bool with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.FirstActivate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -336,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetControl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::Control ^ GetControl();" />
+      <MemberSignature Language="F#" Value="abstract member GetControl : unit -&gt; System.Windows.Forms.Control&#xA;override this.GetControl : unit -&gt; System.Windows.Forms.Control" Usage="componentEditorPage.GetControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetSelectedComponent" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetSelectedComponent () As IComponent" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::IComponent ^ GetSelectedComponent();" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedComponent : unit -&gt; System.ComponentModel.IComponent" Usage="componentEditorPage.GetSelectedComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -378,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -398,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsFirstActivate" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsFirstActivate () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsFirstActivate();" />
+      <MemberSignature Language="F#" Value="member this.IsFirstActivate : unit -&gt; bool" Usage="componentEditorPage.IsFirstActivate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsLoading" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsLoading () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsLoading();" />
+      <MemberSignature Language="F#" Value="member this.IsLoading : unit -&gt; bool" Usage="componentEditorPage.IsLoading " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -442,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsPageMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsPageMessage (ByRef msg As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsPageMessage(System::Windows::Forms::Message % msg);" />
+      <MemberSignature Language="F#" Value="abstract member IsPageMessage :  -&gt; bool&#xA;override this.IsPageMessage :  -&gt; bool" Usage="componentEditorPage.IsPageMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -474,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.LoadComponent" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub LoadComponent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void LoadComponent();" />
+      <MemberSignature Language="F#" Value="abstract member LoadComponent : unit -&gt; unit" Usage="componentEditorPage.LoadComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -497,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Loading" />
       <MemberSignature Language="VB.NET" Value="Protected Property Loading As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Loading { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Loading : int with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.Loading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -524,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.LoadRequired" />
       <MemberSignature Language="VB.NET" Value="Protected Property LoadRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool LoadRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadRequired : bool with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.LoadRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.OnApplyComplete" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnApplyComplete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnApplyComplete();" />
+      <MemberSignature Language="F#" Value="abstract member OnApplyComplete : unit -&gt; unit&#xA;override this.OnApplyComplete : unit -&gt; unit" Usage="componentEditorPage.OnApplyComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -565,6 +587,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.PageSite" />
       <MemberSignature Language="VB.NET" Value="Protected Property PageSite As IComponentEditorPageSite" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::IComponentEditorPageSite ^ PageSite { System::Windows::Forms::IComponentEditorPageSite ^ get(); void set(System::Windows::Forms::IComponentEditorPageSite ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PageSite : System.Windows.Forms.IComponentEditorPageSite with get, set" Usage="System.Windows.Forms.Design.ComponentEditorPage.PageSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -592,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ReloadComponent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReloadComponent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReloadComponent();" />
+      <MemberSignature Language="F#" Value="abstract member ReloadComponent : unit -&gt; unit&#xA;override this.ReloadComponent : unit -&gt; unit" Usage="componentEditorPage.ReloadComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -619,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SaveComponent" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SaveComponent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SaveComponent();" />
+      <MemberSignature Language="F#" Value="abstract member SaveComponent : unit -&gt; unit" Usage="componentEditorPage.SaveComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetComponent (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetComponent(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member SetComponent : System.ComponentModel.IComponent -&gt; unit&#xA;override this.SetComponent : System.ComponentModel.IComponent -&gt; unit" Usage="componentEditorPage.SetComponent component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -665,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDirty ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : unit -&gt; unit&#xA;override this.SetDirty : unit -&gt; unit" Usage="componentEditorPage.SetDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -685,6 +712,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetSite(System.Windows.Forms.IComponentEditorPageSite)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSite (site As IComponentEditorPageSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSite(System::Windows::Forms::IComponentEditorPageSite ^ site);" />
+      <MemberSignature Language="F#" Value="abstract member SetSite : System.Windows.Forms.IComponentEditorPageSite -&gt; unit&#xA;override this.SetSite : System.Windows.Forms.IComponentEditorPageSite -&gt; unit" Usage="componentEditorPage.SetSite site" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -708,6 +736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ShowHelp" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShowHelp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowHelp();" />
+      <MemberSignature Language="F#" Value="abstract member ShowHelp : unit -&gt; unit&#xA;override this.ShowHelp : unit -&gt; unit" Usage="componentEditorPage.ShowHelp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -735,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SupportsHelp" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SupportsHelp () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SupportsHelp();" />
+      <MemberSignature Language="F#" Value="abstract member SupportsHelp : unit -&gt; bool&#xA;override this.SupportsHelp : unit -&gt; bool" Usage="componentEditorPage.SupportsHelp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -757,6 +787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="System.Windows.Forms.Design.ComponentEditorPage.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

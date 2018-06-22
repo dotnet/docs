@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowLayoutSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowLayoutSettings&#xA;Inherits LayoutSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowLayoutSettings : System::Windows::Forms::LayoutSettings" />
+  <TypeSignature Language="F#" Value="type FlowLayoutSettings = class&#xA;    inherit LayoutSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlowDirection FlowDirection { System::Windows::Forms::FlowDirection get(); void set(System::Windows::Forms::FlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.Forms.FlowDirection with get, set" Usage="System.Windows.Forms.FlowLayoutSettings.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutSettings.GetFlowBreak(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFlowBreak (child As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetFlowBreak(System::Object ^ child);" />
+      <MemberSignature Language="F#" Value="member this.GetFlowBreak : obj -&gt; bool" Usage="flowLayoutSettings.GetFlowBreak child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.LayoutEngine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.FlowLayoutSettings.LayoutEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FlowLayoutSettings.SetFlowBreak(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFlowBreak (child As Object, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFlowBreak(System::Object ^ child, bool value);" />
+      <MemberSignature Language="F#" Value="member this.SetFlowBreak : obj * bool -&gt; unit" Usage="flowLayoutSettings.SetFlowBreak (child, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlowLayoutSettings.WrapContents" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapContents : bool with get, set" Usage="System.Windows.Forms.FlowLayoutSettings.WrapContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

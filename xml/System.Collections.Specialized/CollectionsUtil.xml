@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.CollectionsUtil" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionsUtil" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionsUtil" />
+  <TypeSignature Language="F#" Value="type CollectionsUtil = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable () As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable();" />
+      <MemberSignature Language="F#" Value="static member CreateCaseInsensitiveHashtable : unit -&gt; System.Collections.Hashtable" Usage="System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable (d As IDictionary) As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable(System::Collections::IDictionary ^ d);" />
+      <MemberSignature Language="F#" Value="static member CreateCaseInsensitiveHashtable : System.Collections.IDictionary -&gt; System.Collections.Hashtable" Usage="System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -186,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable (capacity As Integer) As Hashtable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable(int capacity);" />
+      <MemberSignature Language="F#" Value="static member CreateCaseInsensitiveHashtable : int -&gt; System.Collections.Hashtable" Usage="System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable capacity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveSortedList" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveSortedList () As SortedList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::SortedList ^ CreateCaseInsensitiveSortedList();" />
+      <MemberSignature Language="F#" Value="static member CreateCaseInsensitiveSortedList : unit -&gt; System.Collections.SortedList" Usage="System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveSortedList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>

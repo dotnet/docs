@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListDataBindEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectListDataBindEventHandler(sender As Object, e As ObjectListDataBindEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectListDataBindEventHandler(System::Object ^ sender, ObjectListDataBindEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectListDataBindEventHandler = delegate of obj * ObjectListDataBindEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

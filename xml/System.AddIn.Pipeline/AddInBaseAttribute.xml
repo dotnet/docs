@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.AddInBaseAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInBaseAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddInBaseAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AddInBaseAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Pipeline.AddInBaseAttribute.ActivatableAs" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivatableAs As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ActivatableAs { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivatableAs : Type[] with get, set" Usage="System.AddIn.Pipeline.AddInBaseAttribute.ActivatableAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

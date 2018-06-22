@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugVsaScriptCodeItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDebugVsaScriptCodeItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDebugVsaScriptCodeItem" />
+  <TypeSignature Language="F#" Value="type IDebugVsaScriptCodeItem = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate" />
       <MemberSignature Language="VB.NET" Value="Public Function Evaluate () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Evaluate();" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : unit -&gt; obj" Usage="iDebugVsaScriptCodeItem.Evaluate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.ParseNamedBreakPoint(System.String,System.String@,System.Int32@,System.String@,System.String@,System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ParseNamedBreakPoint (input As String, ByRef functionName As String, ByRef nargs As Integer, ByRef arguments As String, ByRef returnType As String, ByRef offset As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ParseNamedBreakPoint(System::String ^ input, [Runtime::InteropServices::Out] System::String ^ % functionName, [Runtime::InteropServices::Out] int % nargs, [Runtime::InteropServices::Out] System::String ^ % arguments, [Runtime::InteropServices::Out] System::String ^ % returnType, [Runtime::InteropServices::Out] System::UInt64 % offset);" />
+      <MemberSignature Language="F#" Value="abstract member ParseNamedBreakPoint : string *  *  *  *  *  -&gt; bool" Usage="iDebugVsaScriptCodeItem.ParseNamedBreakPoint (input, functionName, nargs, arguments, returnType, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

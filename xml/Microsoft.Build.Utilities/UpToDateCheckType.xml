@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.UpToDateCheckType" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpToDateCheckType" />
   <TypeSignature Language="C++ CLI" Value="public enum class UpToDateCheckType" />
+  <TypeSignature Language="F#" Value="type UpToDateCheckType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanOutput" />
       <MemberSignature Language="VB.NET" Value="InputNewerThanOutput" />
       <MemberSignature Language="C++ CLI" Value="InputNewerThanOutput" />
+      <MemberSignature Language="F#" Value="InputNewerThanOutput = 0" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanOutput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanTracking" />
       <MemberSignature Language="VB.NET" Value="InputNewerThanTracking" />
       <MemberSignature Language="C++ CLI" Value="InputNewerThanTracking" />
+      <MemberSignature Language="F#" Value="InputNewerThanTracking = 2" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputOrOutputNewerThanTracking" />
       <MemberSignature Language="VB.NET" Value="InputOrOutputNewerThanTracking" />
       <MemberSignature Language="C++ CLI" Value="InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="F#" Value="InputOrOutputNewerThanTracking = 1" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputOrOutputNewerThanTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

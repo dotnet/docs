@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceState" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceState" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceState" />
+  <TypeSignature Language="F#" Value="type InstanceState = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceState.Completed" />
       <MemberSignature Language="VB.NET" Value="Completed" />
       <MemberSignature Language="C++ CLI" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 3" Usage="System.Runtime.DurableInstancing.InstanceState.Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceState.Initialized" />
       <MemberSignature Language="VB.NET" Value="Initialized" />
       <MemberSignature Language="C++ CLI" Value="Initialized" />
+      <MemberSignature Language="F#" Value="Initialized = 2" Usage="System.Runtime.DurableInstancing.InstanceState.Initialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceState.Uninitialized" />
       <MemberSignature Language="VB.NET" Value="Uninitialized" />
       <MemberSignature Language="C++ CLI" Value="Uninitialized" />
+      <MemberSignature Language="F#" Value="Uninitialized = 1" Usage="System.Runtime.DurableInstancing.InstanceState.Uninitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceState.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Runtime.DurableInstancing.InstanceState.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

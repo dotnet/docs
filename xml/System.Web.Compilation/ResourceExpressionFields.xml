@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ResourceExpressionFields" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceExpressionFields" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceExpressionFields sealed" />
+  <TypeSignature Language="F#" Value="type ResourceExpressionFields = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassKey : string" Usage="System.Web.Compilation.ResourceExpressionFields.ClassKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceKey : string" Usage="System.Web.Compilation.ResourceExpressionFields.ResourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

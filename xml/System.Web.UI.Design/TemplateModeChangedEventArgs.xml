@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateModeChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateModeChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateModeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TemplateModeChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateModeChangedEventArgs.#ctor(System.Web.UI.Design.TemplateGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newTemplateGroup As TemplateGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateModeChangedEventArgs(System::Web::UI::Design::TemplateGroup ^ newTemplateGroup);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplateModeChangedEventArgs : System.Web.UI.Design.TemplateGroup -&gt; System.Web.UI.Design.TemplateModeChangedEventArgs" Usage="new System.Web.UI.Design.TemplateModeChangedEventArgs newTemplateGroup" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewTemplateGroup As TemplateGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::TemplateGroup ^ NewTemplateGroup { System::Web::UI::Design::TemplateGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewTemplateGroup : System.Web.UI.Design.TemplateGroup" Usage="System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

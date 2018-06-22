@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ComponentCommands" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentCommands" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentCommands abstract sealed" />
+  <TypeSignature Language="F#" Value="type ComponentCommands = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ExtendSelectionDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtendSelectionDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ExtendSelectionDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendSelectionDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ExtendSelectionDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ExtendSelectionLeft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtendSelectionLeft As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ExtendSelectionLeft { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendSelectionLeft : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ExtendSelectionLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ExtendSelectionRight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtendSelectionRight As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ExtendSelectionRight { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendSelectionRight : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ExtendSelectionRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ExtendSelectionUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExtendSelectionUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ExtendSelectionUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendSelectionUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ExtendSelectionUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -322,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusBack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusBack As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusBack { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusBack : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -378,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -434,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusForward" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusForward As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusForward { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusForward : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusForward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -490,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusPageDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusPageDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusPageDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusPageDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusPageDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -546,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusPageUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusPageUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusPageUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusPageUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusPageUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -602,6 +613,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveFocusUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveFocusUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveFocusUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveFocusUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveFocusUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -658,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveLeft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveLeft As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveLeft { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveLeft : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -714,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveRight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveRight As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveRight { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveRight : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -770,6 +784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveToEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -826,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveToHome" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToHome As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToHome { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToHome : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveToHome" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -882,6 +898,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveToPageDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToPageDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToPageDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToPageDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveToPageDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -938,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveToPageUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveToPageUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveToPageUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveToPageUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveToPageUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -994,6 +1012,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.MoveUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MoveUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MoveUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MoveUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.MoveUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1050,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ScrollByLine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollByLine As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ScrollByLine { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollByLine : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ScrollByLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1106,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ScrollPageDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollPageDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ScrollPageDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollPageDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ScrollPageDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1162,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ScrollPageLeft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollPageLeft As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ScrollPageLeft { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollPageLeft : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ScrollPageLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1218,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ScrollPageRight" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollPageRight As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ScrollPageRight { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollPageRight : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ScrollPageRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1274,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.ScrollPageUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollPageUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ScrollPageUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollPageUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.ScrollPageUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1330,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.SelectToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToEnd As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToEnd { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToEnd : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.SelectToEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1386,6 +1411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.SelectToHome" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToHome As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToHome { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToHome : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.SelectToHome" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1442,6 +1468,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.SelectToPageDown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToPageDown As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToPageDown { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToPageDown : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.SelectToPageDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1498,6 +1525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ComponentCommands.SelectToPageUp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectToPageUp As RoutedUICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ SelectToPageUp { System::Windows::Input::RoutedUICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectToPageUp : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Input.ComponentCommands.SelectToPageUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

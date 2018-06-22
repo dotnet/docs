@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JScriptCodeProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JScriptCodeProvider&#xA;Inherits CodeDomProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class JScriptCodeProvider sealed : System::CodeDom::Compiler::CodeDomProvider" />
+  <TypeSignature Language="F#" Value="type JScriptCodeProvider = class&#xA;    inherit CodeDomProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateCompiler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCompiler () As ICodeCompiler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeCompiler ^ CreateCompiler();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler&#xA;override this.CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler" Usage="jScriptCodeProvider.CreateCompiler " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateGenerator () As ICodeGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeGenerator ^ CreateGenerator();" />
+      <MemberSignature Language="F#" Value="abstract member CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator&#xA;override this.CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator" Usage="jScriptCodeProvider.CreateGenerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptCodeProvider.FileExtension" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FileExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileExtension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileExtension : string" Usage="Microsoft.JScript.JScriptCodeProvider.FileExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

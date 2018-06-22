@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VbStrConv" />
   <TypeSignature Language="VB.NET" Value="Public Enum VbStrConv" />
   <TypeSignature Language="C++ CLI" Value="public enum class VbStrConv" />
+  <TypeSignature Language="F#" Value="type VbStrConv = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Hiragana" />
       <MemberSignature Language="VB.NET" Value="Hiragana" />
       <MemberSignature Language="C++ CLI" Value="Hiragana" />
+      <MemberSignature Language="F#" Value="Hiragana = 32" Usage="Microsoft.VisualBasic.VbStrConv.Hiragana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Katakana" />
       <MemberSignature Language="VB.NET" Value="Katakana" />
       <MemberSignature Language="C++ CLI" Value="Katakana" />
+      <MemberSignature Language="F#" Value="Katakana = 16" Usage="Microsoft.VisualBasic.VbStrConv.Katakana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.LinguisticCasing" />
       <MemberSignature Language="VB.NET" Value="LinguisticCasing" />
       <MemberSignature Language="C++ CLI" Value="LinguisticCasing" />
+      <MemberSignature Language="F#" Value="LinguisticCasing = 1024" Usage="Microsoft.VisualBasic.VbStrConv.LinguisticCasing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Lowercase" />
       <MemberSignature Language="VB.NET" Value="Lowercase" />
       <MemberSignature Language="C++ CLI" Value="Lowercase" />
+      <MemberSignature Language="F#" Value="Lowercase = 2" Usage="Microsoft.VisualBasic.VbStrConv.Lowercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Narrow" />
       <MemberSignature Language="VB.NET" Value="Narrow" />
       <MemberSignature Language="C++ CLI" Value="Narrow" />
+      <MemberSignature Language="F#" Value="Narrow = 8" Usage="Microsoft.VisualBasic.VbStrConv.Narrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.VisualBasic.VbStrConv.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.ProperCase" />
       <MemberSignature Language="VB.NET" Value="ProperCase" />
       <MemberSignature Language="C++ CLI" Value="ProperCase" />
+      <MemberSignature Language="F#" Value="ProperCase = 3" Usage="Microsoft.VisualBasic.VbStrConv.ProperCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.SimplifiedChinese" />
       <MemberSignature Language="VB.NET" Value="SimplifiedChinese" />
       <MemberSignature Language="C++ CLI" Value="SimplifiedChinese" />
+      <MemberSignature Language="F#" Value="SimplifiedChinese = 256" Usage="Microsoft.VisualBasic.VbStrConv.SimplifiedChinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.TraditionalChinese" />
       <MemberSignature Language="VB.NET" Value="TraditionalChinese" />
       <MemberSignature Language="C++ CLI" Value="TraditionalChinese" />
+      <MemberSignature Language="F#" Value="TraditionalChinese = 512" Usage="Microsoft.VisualBasic.VbStrConv.TraditionalChinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Uppercase" />
       <MemberSignature Language="VB.NET" Value="Uppercase" />
       <MemberSignature Language="C++ CLI" Value="Uppercase" />
+      <MemberSignature Language="F#" Value="Uppercase = 1" Usage="Microsoft.VisualBasic.VbStrConv.Uppercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -225,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Wide" />
       <MemberSignature Language="VB.NET" Value="Wide" />
       <MemberSignature Language="C++ CLI" Value="Wide" />
+      <MemberSignature Language="F#" Value="Wide = 4" Usage="Microsoft.VisualBasic.VbStrConv.Wide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

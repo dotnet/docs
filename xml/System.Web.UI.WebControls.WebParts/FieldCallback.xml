@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.FieldCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FieldCallback(fieldValue As Object)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FieldCallback(System::Object ^ fieldValue);" />
+  <TypeSignature Language="F#" Value="type FieldCallback = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

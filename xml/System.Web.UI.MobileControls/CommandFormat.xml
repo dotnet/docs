@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CommandFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommandFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class CommandFormat" />
+  <TypeSignature Language="F#" Value="type CommandFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Button" />
       <MemberSignature Language="VB.NET" Value="Button" />
       <MemberSignature Language="C++ CLI" Value="Button" />
+      <MemberSignature Language="F#" Value="Button = 0" Usage="System.Web.UI.MobileControls.CommandFormat.Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Link" />
       <MemberSignature Language="VB.NET" Value="Link" />
       <MemberSignature Language="C++ CLI" Value="Link" />
+      <MemberSignature Language="F#" Value="Link = 1" Usage="System.Web.UI.MobileControls.CommandFormat.Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

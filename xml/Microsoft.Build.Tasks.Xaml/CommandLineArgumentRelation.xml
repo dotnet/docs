@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandLineArgumentRelation&#xA;Inherits PropertyRelation" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandLineArgumentRelation : Microsoft::Build::Tasks::Xaml::PropertyRelation" />
+  <TypeSignature Language="F#" Value="type CommandLineArgumentRelation = class&#xA;    inherit PropertyRelation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.#ctor(System.String,System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argument As String, value As String, required As Boolean, separator As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandLineArgumentRelation(System::String ^ argument, System::String ^ value, bool required, System::String ^ separator);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation : string * string * bool * string -&gt; Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" Usage="new Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation (argument, value, required, separator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Separator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.Separator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProtocolsConfigurationHandler" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolsConfigurationHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtocolsConfigurationHandler sealed : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type ProtocolsConfigurationHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolsConfigurationHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, configContextObj As Object, section As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configContextObj, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="protocolsConfigurationHandler.Create (parent, configContextObj, section)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

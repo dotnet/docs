@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class SymmetricProofDescriptor&#xA;Inherits ProofDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymmetricProofDescriptor : System::IdentityModel::Tokens::ProofDescriptor" />
+  <TypeSignature Language="F#" Value="type SymmetricProofDescriptor = class&#xA;    inherit ProofDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetWrappingCredentials As EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor targetWrappingCredentials" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Byte[],System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte(), targetWrappingCredentials As EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(cli::array &lt;System::Byte&gt; ^ key, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : byte[] * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (key, targetWrappingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Int32,System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySizeInBits As Integer, targetWrappingCredentials As EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(int keySizeInBits, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : int * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (keySizeInBits, targetWrappingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Int32,System.IdentityModel.Tokens.EncryptingCredentials,System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySizeInBits As Integer, targetWrappingCredentials As EncryptingCredentials, requestorWrappingCredentials As EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(int keySizeInBits, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials, System::IdentityModel::Tokens::EncryptingCredentials ^ requestorWrappingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : int * System.IdentityModel.Tokens.EncryptingCredentials * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (keySizeInBits, targetWrappingCredentials, requestorWrappingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Int32,System.IdentityModel.Tokens.EncryptingCredentials,System.IdentityModel.Tokens.EncryptingCredentials,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySizeInBits As Integer, targetWrappingCredentials As EncryptingCredentials, requestorWrappingCredentials As EncryptingCredentials, sourceEntropy As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(int keySizeInBits, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials, System::IdentityModel::Tokens::EncryptingCredentials ^ requestorWrappingCredentials, cli::array &lt;System::Byte&gt; ^ sourceEntropy);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : int * System.IdentityModel.Tokens.EncryptingCredentials * System.IdentityModel.Tokens.EncryptingCredentials * byte[] -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (keySizeInBits, targetWrappingCredentials, requestorWrappingCredentials, sourceEntropy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Int32,System.IdentityModel.Tokens.EncryptingCredentials,System.IdentityModel.Tokens.EncryptingCredentials,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySizeInBits As Integer, targetWrappingCredentials As EncryptingCredentials, requestorWrappingCredentials As EncryptingCredentials, encryptWith As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(int keySizeInBits, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials, System::IdentityModel::Tokens::EncryptingCredentials ^ requestorWrappingCredentials, System::String ^ encryptWith);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : int * System.IdentityModel.Tokens.EncryptingCredentials * System.IdentityModel.Tokens.EncryptingCredentials * string -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (keySizeInBits, targetWrappingCredentials, requestorWrappingCredentials, encryptWith)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.#ctor(System.Int32,System.IdentityModel.Tokens.EncryptingCredentials,System.IdentityModel.Tokens.EncryptingCredentials,System.Byte[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySizeInBits As Integer, targetWrappingCredentials As EncryptingCredentials, requestorWrappingCredentials As EncryptingCredentials, sourceEntropy As Byte(), encryptWith As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymmetricProofDescriptor(int keySizeInBits, System::IdentityModel::Tokens::EncryptingCredentials ^ targetWrappingCredentials, System::IdentityModel::Tokens::EncryptingCredentials ^ requestorWrappingCredentials, cli::array &lt;System::Byte&gt; ^ sourceEntropy, System::String ^ encryptWith);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SymmetricProofDescriptor : int * System.IdentityModel.Tokens.EncryptingCredentials * System.IdentityModel.Tokens.EncryptingCredentials * byte[] * string -&gt; System.IdentityModel.Tokens.SymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.SymmetricProofDescriptor (keySizeInBits, targetWrappingCredentials, requestorWrappingCredentials, sourceEntropy, encryptWith)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ApplyTo (response As RequestSecurityTokenResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyTo(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response);" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit" Usage="symmetricProofDescriptor.ApplyTo response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.GetKeyBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKeyBytes () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetKeyBytes();" />
+      <MemberSignature Language="F#" Value="member this.GetKeyBytes : unit -&gt; byte[]" Usage="symmetricProofDescriptor.GetKeyBytes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -326,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.GetSourceEntropy" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetSourceEntropy () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Byte&gt; ^ GetSourceEntropy();" />
+      <MemberSignature Language="F#" Value="member this.GetSourceEntropy : unit -&gt; byte[]" Usage="symmetricProofDescriptor.GetSourceEntropy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SymmetricProofDescriptor.GetTargetEntropy" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetTargetEntropy () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Byte&gt; ^ GetTargetEntropy();" />
+      <MemberSignature Language="F#" Value="member this.GetTargetEntropy : unit -&gt; byte[]" Usage="symmetricProofDescriptor.GetTargetEntropy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -368,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SymmetricProofDescriptor.KeyIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyIdentifier As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ KeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.SymmetricProofDescriptor.KeyIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -388,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SymmetricProofDescriptor.RequestorEncryptingCredentials" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property RequestorEncryptingCredentials As EncryptingCredentials" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::IdentityModel::Tokens::EncryptingCredentials ^ RequestorEncryptingCredentials { System::IdentityModel::Tokens::EncryptingCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestorEncryptingCredentials : System.IdentityModel.Tokens.EncryptingCredentials" Usage="System.IdentityModel.Tokens.SymmetricProofDescriptor.RequestorEncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -408,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SymmetricProofDescriptor.TargetEncryptingCredentials" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property TargetEncryptingCredentials As EncryptingCredentials" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::IdentityModel::Tokens::EncryptingCredentials ^ TargetEncryptingCredentials { System::IdentityModel::Tokens::EncryptingCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetEncryptingCredentials : System.IdentityModel.Tokens.EncryptingCredentials" Usage="System.IdentityModel.Tokens.SymmetricProofDescriptor.TargetEncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

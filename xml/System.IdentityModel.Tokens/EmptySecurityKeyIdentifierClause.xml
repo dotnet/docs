@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class EmptySecurityKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class EmptySecurityKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type EmptySecurityKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EmptySecurityKeyIdentifierClause(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause : obj -&gt; System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : obj" Usage="System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

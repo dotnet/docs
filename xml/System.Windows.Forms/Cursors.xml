@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Cursors" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Cursors" />
   <TypeSignature Language="C++ CLI" Value="public ref class Cursors sealed" />
+  <TypeSignature Language="F#" Value="type Cursors = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.AppStarting" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppStarting As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ AppStarting { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppStarting : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.AppStarting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Arrow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Arrow As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Arrow { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arrow : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.Arrow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Cross" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cross As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Cross { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cross : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.Cross" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Default { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Hand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hand As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Hand { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hand : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.Hand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.Help" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Help As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ Help { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Help : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.Help" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.HSplit" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HSplit As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ HSplit { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HSplit : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.HSplit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.IBeam" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IBeam As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ IBeam { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IBeam : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.IBeam" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property No As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ No { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.No : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.No" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMove2D" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoMove2D As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ NoMove2D { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoMove2D : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.NoMove2D" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -291,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMoveHoriz" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoMoveHoriz As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ NoMoveHoriz { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoMoveHoriz : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.NoMoveHoriz" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.NoMoveVert" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoMoveVert As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ NoMoveVert { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoMoveVert : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.NoMoveVert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanEast" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanEast As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanEast { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanEast : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanEast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNE" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanNE As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanNE { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanNE : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanNE" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNorth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanNorth As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanNorth { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanNorth : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanNorth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanNW" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanNW As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanNW { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanNW : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanNW" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSE" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanSE As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanSE { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanSE : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanSE" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -438,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSouth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanSouth As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanSouth { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanSouth : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanSouth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -459,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanSW" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanSW As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanSW { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanSW : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanSW" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.PanWest" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PanWest As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ PanWest { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PanWest : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.PanWest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -501,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeAll" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeAll As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ SizeAll { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeAll : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.SizeAll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -522,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNESW" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNESW As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ SizeNESW { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeNESW : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.SizeNESW" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNS" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNS As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ SizeNS { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeNS : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.SizeNS" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -564,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeNWSE" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNWSE As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ SizeNWSE { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeNWSE : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.SizeNWSE" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.SizeWE" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeWE As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ SizeWE { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeWE : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.SizeWE" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.UpArrow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UpArrow As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ UpArrow { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpArrow : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.UpArrow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -638,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.VSplit" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VSplit As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ VSplit { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VSplit : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.VSplit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -659,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursors.WaitCursor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WaitCursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::Cursor ^ WaitCursor { System::Windows::Forms::Cursor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WaitCursor : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Cursors.WaitCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

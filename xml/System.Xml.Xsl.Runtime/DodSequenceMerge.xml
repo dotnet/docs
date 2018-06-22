@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.DodSequenceMerge" />
   <TypeSignature Language="VB.NET" Value="Public Structure DodSequenceMerge" />
   <TypeSignature Language="C++ CLI" Value="public value class DodSequenceMerge" />
+  <TypeSignature Language="F#" Value="type DodSequenceMerge = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DodSequenceMerge.AddSequence(System.Collections.Generic.IList{System.Xml.XPath.XPathNavigator})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSequence (sequence As IList(Of XPathNavigator))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSequence(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ sequence);" />
+      <MemberSignature Language="F#" Value="member this.AddSequence : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; -&gt; unit" Usage="dodSequenceMerge.AddSequence sequence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DodSequenceMerge.Create(System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Create (runtime As XmlQueryRuntime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
+      <MemberSignature Language="F#" Value="member this.Create : System.Xml.Xsl.Runtime.XmlQueryRuntime -&gt; unit" Usage="dodSequenceMerge.Create runtime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DodSequenceMerge.MergeSequences" />
       <MemberSignature Language="VB.NET" Value="Public Function MergeSequences () As IList(Of XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ MergeSequences();" />
+      <MemberSignature Language="F#" Value="member this.MergeSequences : unit -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" Usage="dodSequenceMerge.MergeSequences " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

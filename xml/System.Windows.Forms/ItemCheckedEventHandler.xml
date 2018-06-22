@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemCheckedEventHandler(sender As Object, e As ItemCheckedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ItemCheckedEventHandler(System::Object ^ sender, ItemCheckedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ItemCheckedEventHandler = delegate of obj * ItemCheckedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

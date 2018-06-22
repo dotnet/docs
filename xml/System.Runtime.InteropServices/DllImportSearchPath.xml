@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportSearchPath" />
   <TypeSignature Language="VB.NET" Value="Public Enum DllImportSearchPath" />
   <TypeSignature Language="C++ CLI" Value="public enum class DllImportSearchPath" />
+  <TypeSignature Language="F#" Value="type DllImportSearchPath = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.ApplicationDirectory" />
       <MemberSignature Language="VB.NET" Value="ApplicationDirectory" />
       <MemberSignature Language="C++ CLI" Value="ApplicationDirectory" />
+      <MemberSignature Language="F#" Value="ApplicationDirectory = 512" Usage="System.Runtime.InteropServices.DllImportSearchPath.ApplicationDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory" />
       <MemberSignature Language="VB.NET" Value="AssemblyDirectory" />
       <MemberSignature Language="C++ CLI" Value="AssemblyDirectory" />
+      <MemberSignature Language="F#" Value="AssemblyDirectory = 2" Usage="System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.LegacyBehavior" />
       <MemberSignature Language="VB.NET" Value="LegacyBehavior" />
       <MemberSignature Language="C++ CLI" Value="LegacyBehavior" />
+      <MemberSignature Language="F#" Value="LegacyBehavior = 0" Usage="System.Runtime.InteropServices.DllImportSearchPath.LegacyBehavior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories" />
       <MemberSignature Language="VB.NET" Value="SafeDirectories" />
       <MemberSignature Language="C++ CLI" Value="SafeDirectories" />
+      <MemberSignature Language="F#" Value="SafeDirectories = 4096" Usage="System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.System32" />
       <MemberSignature Language="VB.NET" Value="System32" />
       <MemberSignature Language="C++ CLI" Value="System32" />
+      <MemberSignature Language="F#" Value="System32 = 2048" Usage="System.Runtime.InteropServices.DllImportSearchPath.System32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UseDllDirectoryForDependencies" />
       <MemberSignature Language="VB.NET" Value="UseDllDirectoryForDependencies" />
       <MemberSignature Language="C++ CLI" Value="UseDllDirectoryForDependencies" />
+      <MemberSignature Language="F#" Value="UseDllDirectoryForDependencies = 256" Usage="System.Runtime.InteropServices.DllImportSearchPath.UseDllDirectoryForDependencies" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UserDirectories" />
       <MemberSignature Language="VB.NET" Value="UserDirectories" />
       <MemberSignature Language="C++ CLI" Value="UserDirectories" />
+      <MemberSignature Language="F#" Value="UserDirectories = 1024" Usage="System.Runtime.InteropServices.DllImportSearchPath.UserDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

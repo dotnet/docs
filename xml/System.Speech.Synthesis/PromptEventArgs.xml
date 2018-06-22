@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PromptEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PromptEventArgs abstract : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type PromptEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PromptEventArgs.Prompt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prompt As Prompt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::Prompt ^ Prompt { System::Speech::Synthesis::Prompt ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prompt : System.Speech.Synthesis.Prompt" Usage="System.Speech.Synthesis.PromptEventArgs.Prompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

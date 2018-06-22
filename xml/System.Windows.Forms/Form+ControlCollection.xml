@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form.ControlCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class Form.ControlCollection&#xA;Inherits Control.ControlCollection" />
   <TypeSignature Language="C++ CLI" Value="public: ref class Form::ControlCollection : System::Windows::Forms::Control::ControlCollection" />
+  <TypeSignature Language="F#" Value="type Form.ControlCollection = class&#xA;    inherit Control.ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.#ctor(System.Windows.Forms.Form)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlCollection(System::Windows::Forms::Form ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Form.ControlCollection : System.Windows.Forms.Form -&gt; System.Windows.Forms.Form.ControlCollection" Usage="new System.Windows.Forms.Form.ControlCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Add(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (value As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Windows::Forms::Control ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Windows.Forms.Control -&gt; unit" Usage="controlCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Remove(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Windows::Forms::Control ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Remove : System.Windows.Forms.Control -&gt; unit" Usage="controlCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

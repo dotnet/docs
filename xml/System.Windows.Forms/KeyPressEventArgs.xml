@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyPressEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyPressEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyPressEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type KeyPressEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.KeyPressEventArgs.#ctor(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyChar As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyPressEventArgs(char keyChar);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.KeyPressEventArgs : char -&gt; System.Windows.Forms.KeyPressEventArgs" Usage="new System.Windows.Forms.KeyPressEventArgs keyChar" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyPressEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.KeyPressEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyPressEventArgs.KeyChar" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char KeyChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyChar : char with get, set" Usage="System.Windows.Forms.KeyPressEventArgs.KeyChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

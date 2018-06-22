@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PartialCachingControl" />
   <TypeSignature Language="VB.NET" Value="Public Class PartialCachingControl&#xA;Inherits BasePartialCachingControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class PartialCachingControl : System::Web::UI::BasePartialCachingControl" />
+  <TypeSignature Language="F#" Value="type PartialCachingControl = class&#xA;    inherit BasePartialCachingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingControl.CachedControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachedControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ CachedControl { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CachedControl : System.Web.UI.Control" Usage="System.Web.UI.PartialCachingControl.CachedControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

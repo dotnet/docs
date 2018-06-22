@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class AcceptedMarkupExtensionExpressionTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AcceptedMarkupExtensionExpressionTypeAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type AcceptedMarkupExtensionExpressionTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AcceptedMarkupExtensionExpressionTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute : Type -&gt; System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute" Usage="new System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialogCustomPlace" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileDialogCustomPlace" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileDialogCustomPlace sealed" />
+  <TypeSignature Language="F#" Value="type FileDialogCustomPlace = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (knownFolder As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(Guid knownFolder);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.FileDialogCustomPlace : Guid -&gt; Microsoft.Win32.FileDialogCustomPlace" Usage="new Microsoft.Win32.FileDialogCustomPlace knownFolder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.FileDialogCustomPlace : string -&gt; Microsoft.Win32.FileDialogCustomPlace" Usage="new Microsoft.Win32.FileDialogCustomPlace path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.KnownFolder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownFolder As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid KnownFolder { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.KnownFolder : Guid" Usage="Microsoft.Win32.FileDialogCustomPlace.KnownFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Win32.FileDialogCustomPlace.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

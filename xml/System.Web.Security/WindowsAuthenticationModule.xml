@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsAuthenticationModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsAuthenticationModule sealed : System::Web::IHttpModule" />
+  <TypeSignature Language="F#" Value="type WindowsAuthenticationModule = class&#xA;    interface IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Security.WindowsAuthenticationModule.Authenticate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Authenticate As WindowsAuthenticationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Security::WindowsAuthenticationEventHandler ^ Authenticate;" />
+      <MemberSignature Language="F#" Value="member this.Authenticate : System.Web.Security.WindowsAuthenticationEventHandler " Usage="member this.Authenticate : System.Web.Security.WindowsAuthenticationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsAuthenticationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="windowsAuthenticationModule.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsAuthenticationModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="windowsAuthenticationModule.Init app" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>

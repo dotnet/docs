@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerGenerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ItemContainerGenerator&#xA;Implements IRecyclingItemContainerGenerator, IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerGenerator sealed : System::Windows::Controls::Primitives::IRecyclingItemContainerGenerator, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type ItemContainerGenerator = class&#xA;    interface IRecyclingItemContainerGenerator&#xA;    interface IItemContainerGenerator&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainerFromIndex (index As Integer) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ ContainerFromIndex(int index);" />
+      <MemberSignature Language="F#" Value="member this.ContainerFromIndex : int -&gt; System.Windows.DependencyObject" Usage="itemContainerGenerator.ContainerFromIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainerFromItem (item As Object) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ ContainerFromItem(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.ContainerFromItem : obj -&gt; System.Windows.DependencyObject" Usage="itemContainerGenerator.ContainerFromItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.GenerateBatches" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateBatches () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GenerateBatches();" />
+      <MemberSignature Language="F#" Value="member this.GenerateBatches : unit -&gt; IDisposable" Usage="itemContainerGenerator.GenerateBatches " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexFromContainer (container As DependencyObject) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromContainer(System::Windows::DependencyObject ^ container);" />
+      <MemberSignature Language="F#" Value="member this.IndexFromContainer : System.Windows.DependencyObject -&gt; int" Usage="itemContainerGenerator.IndexFromContainer container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexFromContainer (container As DependencyObject, returnLocalIndex As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromContainer(System::Windows::DependencyObject ^ container, bool returnLocalIndex);" />
+      <MemberSignature Language="F#" Value="member this.IndexFromContainer : System.Windows.DependencyObject * bool -&gt; int" Usage="itemContainerGenerator.IndexFromContainer (container, returnLocalIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function ItemFromContainer (container As DependencyObject) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ItemFromContainer(System::Windows::DependencyObject ^ container);" />
+      <MemberSignature Language="F#" Value="member this.ItemFromContainer : System.Windows.DependencyObject -&gt; obj" Usage="itemContainerGenerator.ItemFromContainer container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerGenerator.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ReadOnlyCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ Items { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.ObjectModel.ReadOnlyCollection&lt;obj&gt;" Usage="System.Windows.Controls.ItemContainerGenerator.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ItemsChanged As ItemsChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::Primitives::ItemsChangedEventHandler ^ ItemsChanged;" />
+      <MemberSignature Language="F#" Value="member this.ItemsChanged : System.Windows.Controls.Primitives.ItemsChangedEventHandler " Usage="member this.ItemsChanged : System.Windows.Controls.Primitives.ItemsChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerGenerator.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GeneratorStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::GeneratorStatus Status { System::Windows::Controls::Primitives::GeneratorStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Windows.Controls.Primitives.GeneratorStatus" Usage="System.Windows.Controls.ItemContainerGenerator.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ItemContainerGenerator.StatusChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StatusChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StatusChanged;" />
+      <MemberSignature Language="F#" Value="member this.StatusChanged : EventHandler " Usage="member this.StatusChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

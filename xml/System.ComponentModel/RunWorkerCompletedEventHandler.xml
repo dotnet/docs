@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RunWorkerCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RunWorkerCompletedEventHandler(sender As Object, e As RunWorkerCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void RunWorkerCompletedEventHandler(System::Object ^ sender, RunWorkerCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type RunWorkerCompletedEventHandler = delegate of obj * RunWorkerCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

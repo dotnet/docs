@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CreatingCookieEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreatingCookieEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CreatingCookieEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieIsSet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CookieIsSet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieIsSet : bool with get, set" Usage="System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomCredential As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomCredential { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomCredential : string" Usage="System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPersistent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPersistent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPersistent : bool" Usage="System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.Password" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.Web.ApplicationServices.CreatingCookieEventArgs.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Web.ApplicationServices.CreatingCookieEventArgs.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

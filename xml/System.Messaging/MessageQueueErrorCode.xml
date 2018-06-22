@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueErrorCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageQueueErrorCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageQueueErrorCode" />
+  <TypeSignature Language="F#" Value="type MessageQueueErrorCode = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = -1072824283" Usage="System.Messaging.MessageQueueErrorCode.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.BadSecurityContext" />
       <MemberSignature Language="VB.NET" Value="BadSecurityContext" />
       <MemberSignature Language="C++ CLI" Value="BadSecurityContext" />
+      <MemberSignature Language="F#" Value="BadSecurityContext = -1072824267" Usage="System.Messaging.MessageQueueErrorCode.BadSecurityContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Base" />
       <MemberSignature Language="VB.NET" Value="Base" />
       <MemberSignature Language="C++ CLI" Value="Base" />
+      <MemberSignature Language="F#" Value="Base = -1072824320" Usage="System.Messaging.MessageQueueErrorCode.Base" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.BufferOverflow" />
       <MemberSignature Language="VB.NET" Value="BufferOverflow" />
       <MemberSignature Language="C++ CLI" Value="BufferOverflow" />
+      <MemberSignature Language="F#" Value="BufferOverflow = -1072824294" Usage="System.Messaging.MessageQueueErrorCode.BufferOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateCertificateStore" />
       <MemberSignature Language="VB.NET" Value="CannotCreateCertificateStore" />
       <MemberSignature Language="C++ CLI" Value="CannotCreateCertificateStore" />
+      <MemberSignature Language="F#" Value="CannotCreateCertificateStore = -1072824209" Usage="System.Messaging.MessageQueueErrorCode.CannotCreateCertificateStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateHashEx" />
       <MemberSignature Language="VB.NET" Value="CannotCreateHashEx" />
       <MemberSignature Language="C++ CLI" Value="CannotCreateHashEx" />
+      <MemberSignature Language="F#" Value="CannotCreateHashEx = -1072824191" Usage="System.Messaging.MessageQueueErrorCode.CannotCreateHashEx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotCreateOnGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="CannotCreateOnGlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="CannotCreateOnGlobalCatalog" />
+      <MemberSignature Language="F#" Value="CannotCreateOnGlobalCatalog = -1072824201" Usage="System.Messaging.MessageQueueErrorCode.CannotCreateOnGlobalCatalog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotGetDistinguishedName" />
       <MemberSignature Language="VB.NET" Value="CannotGetDistinguishedName" />
       <MemberSignature Language="C++ CLI" Value="CannotGetDistinguishedName" />
+      <MemberSignature Language="F#" Value="CannotGetDistinguishedName = -1072824194" Usage="System.Messaging.MessageQueueErrorCode.CannotGetDistinguishedName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotGrantAddGuid" />
       <MemberSignature Language="VB.NET" Value="CannotGrantAddGuid" />
       <MemberSignature Language="C++ CLI" Value="CannotGrantAddGuid" />
+      <MemberSignature Language="F#" Value="CannotGrantAddGuid = -1072824206" Usage="System.Messaging.MessageQueueErrorCode.CannotGrantAddGuid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotHashDataEx" />
       <MemberSignature Language="VB.NET" Value="CannotHashDataEx" />
       <MemberSignature Language="C++ CLI" Value="CannotHashDataEx" />
+      <MemberSignature Language="F#" Value="CannotHashDataEx = -1072824193" Usage="System.Messaging.MessageQueueErrorCode.CannotHashDataEx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotImpersonateClient" />
       <MemberSignature Language="VB.NET" Value="CannotImpersonateClient" />
       <MemberSignature Language="C++ CLI" Value="CannotImpersonateClient" />
+      <MemberSignature Language="F#" Value="CannotImpersonateClient = -1072824284" Usage="System.Messaging.MessageQueueErrorCode.CannotImpersonateClient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -305,6 +317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotJoinDomain" />
       <MemberSignature Language="VB.NET" Value="CannotJoinDomain" />
       <MemberSignature Language="C++ CLI" Value="CannotJoinDomain" />
+      <MemberSignature Language="F#" Value="CannotJoinDomain = -1072824202" Usage="System.Messaging.MessageQueueErrorCode.CannotJoinDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -325,6 +338,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotLoadMsmqOcm" />
       <MemberSignature Language="VB.NET" Value="CannotLoadMsmqOcm" />
       <MemberSignature Language="C++ CLI" Value="CannotLoadMsmqOcm" />
+      <MemberSignature Language="F#" Value="CannotLoadMsmqOcm = -1072824205" Usage="System.Messaging.MessageQueueErrorCode.CannotLoadMsmqOcm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -345,6 +359,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotOpenCertificateStore" />
       <MemberSignature Language="VB.NET" Value="CannotOpenCertificateStore" />
       <MemberSignature Language="C++ CLI" Value="CannotOpenCertificateStore" />
+      <MemberSignature Language="F#" Value="CannotOpenCertificateStore = -1072824208" Usage="System.Messaging.MessageQueueErrorCode.CannotOpenCertificateStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -373,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotSetCryptographicSecurityDescriptor" />
       <MemberSignature Language="VB.NET" Value="CannotSetCryptographicSecurityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="CannotSetCryptographicSecurityDescriptor" />
+      <MemberSignature Language="F#" Value="CannotSetCryptographicSecurityDescriptor = -1072824212" Usage="System.Messaging.MessageQueueErrorCode.CannotSetCryptographicSecurityDescriptor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -401,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CannotSignDataEx" />
       <MemberSignature Language="VB.NET" Value="CannotSignDataEx" />
       <MemberSignature Language="C++ CLI" Value="CannotSignDataEx" />
+      <MemberSignature Language="F#" Value="CannotSignDataEx = -1072824192" Usage="System.Messaging.MessageQueueErrorCode.CannotSignDataEx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -429,6 +446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CertificateNotProvided" />
       <MemberSignature Language="VB.NET" Value="CertificateNotProvided" />
       <MemberSignature Language="C++ CLI" Value="CertificateNotProvided" />
+      <MemberSignature Language="F#" Value="CertificateNotProvided = -1072824211" Usage="System.Messaging.MessageQueueErrorCode.CertificateNotProvided" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -457,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ComputerDoesNotSupportEncryption" />
       <MemberSignature Language="VB.NET" Value="ComputerDoesNotSupportEncryption" />
       <MemberSignature Language="C++ CLI" Value="ComputerDoesNotSupportEncryption" />
+      <MemberSignature Language="F#" Value="ComputerDoesNotSupportEncryption = -1072824269" Usage="System.Messaging.MessageQueueErrorCode.ComputerDoesNotSupportEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -485,6 +504,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedInternalCertificate" />
       <MemberSignature Language="VB.NET" Value="CorruptedInternalCertificate" />
       <MemberSignature Language="C++ CLI" Value="CorruptedInternalCertificate" />
+      <MemberSignature Language="F#" Value="CorruptedInternalCertificate = -1072824275" Usage="System.Messaging.MessageQueueErrorCode.CorruptedInternalCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -513,6 +533,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedPersonalCertStore" />
       <MemberSignature Language="VB.NET" Value="CorruptedPersonalCertStore" />
       <MemberSignature Language="C++ CLI" Value="CorruptedPersonalCertStore" />
+      <MemberSignature Language="F#" Value="CorruptedPersonalCertStore = -1072824271" Usage="System.Messaging.MessageQueueErrorCode.CorruptedPersonalCertStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -541,6 +562,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedQueueWasDeleted" />
       <MemberSignature Language="VB.NET" Value="CorruptedQueueWasDeleted" />
       <MemberSignature Language="C++ CLI" Value="CorruptedQueueWasDeleted" />
+      <MemberSignature Language="F#" Value="CorruptedQueueWasDeleted = -1072824216" Usage="System.Messaging.MessageQueueErrorCode.CorruptedQueueWasDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -561,6 +583,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CorruptedSecurityData" />
       <MemberSignature Language="VB.NET" Value="CorruptedSecurityData" />
       <MemberSignature Language="C++ CLI" Value="CorruptedSecurityData" />
+      <MemberSignature Language="F#" Value="CorruptedSecurityData = -1072824272" Usage="System.Messaging.MessageQueueErrorCode.CorruptedSecurityData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -581,6 +604,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CouldNotGetAccountInfo" />
       <MemberSignature Language="VB.NET" Value="CouldNotGetAccountInfo" />
       <MemberSignature Language="C++ CLI" Value="CouldNotGetAccountInfo" />
+      <MemberSignature Language="F#" Value="CouldNotGetAccountInfo = -1072824265" Usage="System.Messaging.MessageQueueErrorCode.CouldNotGetAccountInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -601,6 +625,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.CouldNotGetUserSid" />
       <MemberSignature Language="VB.NET" Value="CouldNotGetUserSid" />
       <MemberSignature Language="C++ CLI" Value="CouldNotGetUserSid" />
+      <MemberSignature Language="F#" Value="CouldNotGetUserSid = -1072824266" Usage="System.Messaging.MessageQueueErrorCode.CouldNotGetUserSid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -629,6 +654,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DeleteConnectedNetworkInUse" />
       <MemberSignature Language="VB.NET" Value="DeleteConnectedNetworkInUse" />
       <MemberSignature Language="C++ CLI" Value="DeleteConnectedNetworkInUse" />
+      <MemberSignature Language="F#" Value="DeleteConnectedNetworkInUse = -1072824248" Usage="System.Messaging.MessageQueueErrorCode.DeleteConnectedNetworkInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -657,6 +683,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DependentClientLicenseOverflow" />
       <MemberSignature Language="VB.NET" Value="DependentClientLicenseOverflow" />
       <MemberSignature Language="C++ CLI" Value="DependentClientLicenseOverflow" />
+      <MemberSignature Language="F#" Value="DependentClientLicenseOverflow = -1072824217" Usage="System.Messaging.MessageQueueErrorCode.DependentClientLicenseOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -677,6 +704,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DsError" />
       <MemberSignature Language="VB.NET" Value="DsError" />
       <MemberSignature Language="C++ CLI" Value="DsError" />
+      <MemberSignature Language="F#" Value="DsError = -1072824253" Usage="System.Messaging.MessageQueueErrorCode.DsError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -697,6 +725,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DsIsFull" />
       <MemberSignature Language="VB.NET" Value="DsIsFull" />
       <MemberSignature Language="C++ CLI" Value="DsIsFull" />
+      <MemberSignature Language="F#" Value="DsIsFull = -1072824254" Usage="System.Messaging.MessageQueueErrorCode.DsIsFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -725,6 +754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.DtcConnect" />
       <MemberSignature Language="VB.NET" Value="DtcConnect" />
       <MemberSignature Language="C++ CLI" Value="DtcConnect" />
+      <MemberSignature Language="F#" Value="DtcConnect = -1072824244" Usage="System.Messaging.MessageQueueErrorCode.DtcConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -753,6 +783,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.EncryptionProviderNotSupported" />
       <MemberSignature Language="VB.NET" Value="EncryptionProviderNotSupported" />
       <MemberSignature Language="C++ CLI" Value="EncryptionProviderNotSupported" />
+      <MemberSignature Language="F#" Value="EncryptionProviderNotSupported = -1072824213" Usage="System.Messaging.MessageQueueErrorCode.EncryptionProviderNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -773,6 +804,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.FailVerifySignatureEx" />
       <MemberSignature Language="VB.NET" Value="FailVerifySignatureEx" />
       <MemberSignature Language="C++ CLI" Value="FailVerifySignatureEx" />
+      <MemberSignature Language="F#" Value="FailVerifySignatureEx = -1072824190" Usage="System.Messaging.MessageQueueErrorCode.FailVerifySignatureEx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -793,6 +825,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.FormatNameBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="FormatNameBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="FormatNameBufferTooSmall" />
+      <MemberSignature Language="F#" Value="FormatNameBufferTooSmall = -1072824289" Usage="System.Messaging.MessageQueueErrorCode.FormatNameBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -813,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Generic" />
       <MemberSignature Language="VB.NET" Value="Generic" />
       <MemberSignature Language="C++ CLI" Value="Generic" />
+      <MemberSignature Language="F#" Value="Generic = -1072824319" Usage="System.Messaging.MessageQueueErrorCode.Generic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -841,6 +875,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.GuidNotMatching" />
       <MemberSignature Language="VB.NET" Value="GuidNotMatching" />
       <MemberSignature Language="C++ CLI" Value="GuidNotMatching" />
+      <MemberSignature Language="F#" Value="GuidNotMatching = -1072824200" Usage="System.Messaging.MessageQueueErrorCode.GuidNotMatching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -861,6 +896,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalContext" />
       <MemberSignature Language="VB.NET" Value="IllegalContext" />
       <MemberSignature Language="C++ CLI" Value="IllegalContext" />
+      <MemberSignature Language="F#" Value="IllegalContext = -1072824229" Usage="System.Messaging.MessageQueueErrorCode.IllegalContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -881,6 +917,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalCriteriaColumns" />
       <MemberSignature Language="VB.NET" Value="IllegalCriteriaColumns" />
       <MemberSignature Language="C++ CLI" Value="IllegalCriteriaColumns" />
+      <MemberSignature Language="F#" Value="IllegalCriteriaColumns = -1072824264" Usage="System.Messaging.MessageQueueErrorCode.IllegalCriteriaColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -909,6 +946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalCursorAction" />
       <MemberSignature Language="VB.NET" Value="IllegalCursorAction" />
       <MemberSignature Language="C++ CLI" Value="IllegalCursorAction" />
+      <MemberSignature Language="F#" Value="IllegalCursorAction = -1072824292" Usage="System.Messaging.MessageQueueErrorCode.IllegalCursorAction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -937,6 +975,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalEnterpriseOperation" />
       <MemberSignature Language="VB.NET" Value="IllegalEnterpriseOperation" />
       <MemberSignature Language="C++ CLI" Value="IllegalEnterpriseOperation" />
+      <MemberSignature Language="F#" Value="IllegalEnterpriseOperation = -1072824207" Usage="System.Messaging.MessageQueueErrorCode.IllegalEnterpriseOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -957,6 +996,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalFormatName" />
       <MemberSignature Language="VB.NET" Value="IllegalFormatName" />
       <MemberSignature Language="C++ CLI" Value="IllegalFormatName" />
+      <MemberSignature Language="F#" Value="IllegalFormatName = -1072824290" Usage="System.Messaging.MessageQueueErrorCode.IllegalFormatName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -985,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalMessageProperties" />
       <MemberSignature Language="VB.NET" Value="IllegalMessageProperties" />
       <MemberSignature Language="C++ CLI" Value="IllegalMessageProperties" />
+      <MemberSignature Language="F#" Value="IllegalMessageProperties = -1072824255" Usage="System.Messaging.MessageQueueErrorCode.IllegalMessageProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1013,6 +1054,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalOperation" />
       <MemberSignature Language="VB.NET" Value="IllegalOperation" />
       <MemberSignature Language="C++ CLI" Value="IllegalOperation" />
+      <MemberSignature Language="F#" Value="IllegalOperation = -1072824220" Usage="System.Messaging.MessageQueueErrorCode.IllegalOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1033,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPrivateProperties" />
       <MemberSignature Language="VB.NET" Value="IllegalPrivateProperties" />
       <MemberSignature Language="C++ CLI" Value="IllegalPrivateProperties" />
+      <MemberSignature Language="F#" Value="IllegalPrivateProperties = -1072824197" Usage="System.Messaging.MessageQueueErrorCode.IllegalPrivateProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1053,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyId" />
       <MemberSignature Language="VB.NET" Value="IllegalPropertyId" />
       <MemberSignature Language="C++ CLI" Value="IllegalPropertyId" />
+      <MemberSignature Language="F#" Value="IllegalPropertyId = -1072824263" Usage="System.Messaging.MessageQueueErrorCode.IllegalPropertyId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1073,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertySize" />
       <MemberSignature Language="VB.NET" Value="IllegalPropertySize" />
       <MemberSignature Language="C++ CLI" Value="IllegalPropertySize" />
+      <MemberSignature Language="F#" Value="IllegalPropertySize = -1072824261" Usage="System.Messaging.MessageQueueErrorCode.IllegalPropertySize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1101,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyValue" />
       <MemberSignature Language="VB.NET" Value="IllegalPropertyValue" />
       <MemberSignature Language="C++ CLI" Value="IllegalPropertyValue" />
+      <MemberSignature Language="F#" Value="IllegalPropertyValue = -1072824296" Usage="System.Messaging.MessageQueueErrorCode.IllegalPropertyValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1121,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalPropertyVt" />
       <MemberSignature Language="VB.NET" Value="IllegalPropertyVt" />
       <MemberSignature Language="C++ CLI" Value="IllegalPropertyVt" />
+      <MemberSignature Language="F#" Value="IllegalPropertyVt = -1072824295" Usage="System.Messaging.MessageQueueErrorCode.IllegalPropertyVt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1141,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalQueuePathName" />
       <MemberSignature Language="VB.NET" Value="IllegalQueuePathName" />
       <MemberSignature Language="C++ CLI" Value="IllegalQueuePathName" />
+      <MemberSignature Language="F#" Value="IllegalQueuePathName = -1072824300" Usage="System.Messaging.MessageQueueErrorCode.IllegalQueuePathName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1169,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalQueueProperties" />
       <MemberSignature Language="VB.NET" Value="IllegalQueueProperties" />
       <MemberSignature Language="C++ CLI" Value="IllegalQueueProperties" />
+      <MemberSignature Language="F#" Value="IllegalQueueProperties = -1072824259" Usage="System.Messaging.MessageQueueErrorCode.IllegalQueueProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1199,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalRelation" />
       <MemberSignature Language="VB.NET" Value="IllegalRelation" />
       <MemberSignature Language="C++ CLI" Value="IllegalRelation" />
+      <MemberSignature Language="F#" Value="IllegalRelation = -1072824262" Usage="System.Messaging.MessageQueueErrorCode.IllegalRelation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1219,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalRestrictionPropertyId" />
       <MemberSignature Language="VB.NET" Value="IllegalRestrictionPropertyId" />
       <MemberSignature Language="C++ CLI" Value="IllegalRestrictionPropertyId" />
+      <MemberSignature Language="F#" Value="IllegalRestrictionPropertyId = -1072824260" Usage="System.Messaging.MessageQueueErrorCode.IllegalRestrictionPropertyId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1247,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSecurityDescriptor" />
       <MemberSignature Language="VB.NET" Value="IllegalSecurityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="IllegalSecurityDescriptor" />
+      <MemberSignature Language="F#" Value="IllegalSecurityDescriptor = -1072824287" Usage="System.Messaging.MessageQueueErrorCode.IllegalSecurityDescriptor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1267,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSort" />
       <MemberSignature Language="VB.NET" Value="IllegalSort" />
       <MemberSignature Language="C++ CLI" Value="IllegalSort" />
+      <MemberSignature Language="F#" Value="IllegalSort = -1072824304" Usage="System.Messaging.MessageQueueErrorCode.IllegalSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1287,6 +1340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalSortPropertyId" />
       <MemberSignature Language="VB.NET" Value="IllegalSortPropertyId" />
       <MemberSignature Language="C++ CLI" Value="IllegalSortPropertyId" />
+      <MemberSignature Language="F#" Value="IllegalSortPropertyId = -1072824228" Usage="System.Messaging.MessageQueueErrorCode.IllegalSortPropertyId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1315,6 +1369,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IllegalUser" />
       <MemberSignature Language="VB.NET" Value="IllegalUser" />
       <MemberSignature Language="C++ CLI" Value="IllegalUser" />
+      <MemberSignature Language="F#" Value="IllegalUser = -1072824303" Usage="System.Messaging.MessageQueueErrorCode.IllegalUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1343,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InsufficientProperties" />
       <MemberSignature Language="VB.NET" Value="InsufficientProperties" />
       <MemberSignature Language="C++ CLI" Value="InsufficientProperties" />
+      <MemberSignature Language="F#" Value="InsufficientProperties = -1072824257" Usage="System.Messaging.MessageQueueErrorCode.InsufficientProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1363,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InsufficientResources" />
       <MemberSignature Language="VB.NET" Value="InsufficientResources" />
       <MemberSignature Language="C++ CLI" Value="InsufficientResources" />
+      <MemberSignature Language="F#" Value="InsufficientResources = -1072824281" Usage="System.Messaging.MessageQueueErrorCode.InsufficientResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1391,6 +1448,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidCertificate" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificate" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificate" />
+      <MemberSignature Language="F#" Value="InvalidCertificate = -1072824276" Usage="System.Messaging.MessageQueueErrorCode.InvalidCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1419,6 +1477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidHandle" />
       <MemberSignature Language="VB.NET" Value="InvalidHandle" />
       <MemberSignature Language="C++ CLI" Value="InvalidHandle" />
+      <MemberSignature Language="F#" Value="InvalidHandle = -1072824313" Usage="System.Messaging.MessageQueueErrorCode.InvalidHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1447,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidOwner" />
       <MemberSignature Language="VB.NET" Value="InvalidOwner" />
       <MemberSignature Language="C++ CLI" Value="InvalidOwner" />
+      <MemberSignature Language="F#" Value="InvalidOwner = -1072824252" Usage="System.Messaging.MessageQueueErrorCode.InvalidOwner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1475,6 +1535,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.InvalidParameter" />
       <MemberSignature Language="VB.NET" Value="InvalidParameter" />
       <MemberSignature Language="C++ CLI" Value="InvalidParameter" />
+      <MemberSignature Language="F#" Value="InvalidParameter = -1072824314" Usage="System.Messaging.MessageQueueErrorCode.InvalidParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1503,6 +1564,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.IOTimeout" />
       <MemberSignature Language="VB.NET" Value="IOTimeout" />
       <MemberSignature Language="C++ CLI" Value="IOTimeout" />
+      <MemberSignature Language="F#" Value="IOTimeout = -1072824293" Usage="System.Messaging.MessageQueueErrorCode.IOTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1531,6 +1593,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.LabelBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="LabelBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="LabelBufferTooSmall" />
+      <MemberSignature Language="F#" Value="LabelBufferTooSmall = -1072824226" Usage="System.Messaging.MessageQueueErrorCode.LabelBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1551,6 +1614,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MachineExists" />
       <MemberSignature Language="VB.NET" Value="MachineExists" />
       <MemberSignature Language="C++ CLI" Value="MachineExists" />
+      <MemberSignature Language="F#" Value="MachineExists = -1072824256" Usage="System.Messaging.MessageQueueErrorCode.MachineExists" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1571,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MachineNotFound" />
       <MemberSignature Language="VB.NET" Value="MachineNotFound" />
       <MemberSignature Language="C++ CLI" Value="MachineNotFound" />
+      <MemberSignature Language="F#" Value="MachineNotFound = -1072824307" Usage="System.Messaging.MessageQueueErrorCode.MachineNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1599,6 +1664,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageAlreadyReceived" />
       <MemberSignature Language="VB.NET" Value="MessageAlreadyReceived" />
       <MemberSignature Language="C++ CLI" Value="MessageAlreadyReceived" />
+      <MemberSignature Language="F#" Value="MessageAlreadyReceived = -1072824291" Usage="System.Messaging.MessageQueueErrorCode.MessageAlreadyReceived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1627,6 +1693,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageNotFound" />
       <MemberSignature Language="VB.NET" Value="MessageNotFound" />
       <MemberSignature Language="C++ CLI" Value="MessageNotFound" />
+      <MemberSignature Language="F#" Value="MessageNotFound = -1072824184" Usage="System.Messaging.MessageQueueErrorCode.MessageNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1655,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MessageStorageFailed" />
       <MemberSignature Language="VB.NET" Value="MessageStorageFailed" />
       <MemberSignature Language="C++ CLI" Value="MessageStorageFailed" />
+      <MemberSignature Language="F#" Value="MessageStorageFailed = -1072824278" Usage="System.Messaging.MessageQueueErrorCode.MessageStorageFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1683,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MissingConnectorType" />
       <MemberSignature Language="VB.NET" Value="MissingConnectorType" />
       <MemberSignature Language="C++ CLI" Value="MissingConnectorType" />
+      <MemberSignature Language="F#" Value="MissingConnectorType = -1072824235" Usage="System.Messaging.MessageQueueErrorCode.MissingConnectorType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1711,6 +1780,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MqisReadOnlyMode" />
       <MemberSignature Language="VB.NET" Value="MqisReadOnlyMode" />
       <MemberSignature Language="C++ CLI" Value="MqisReadOnlyMode" />
+      <MemberSignature Language="F#" Value="MqisReadOnlyMode = -1072824224" Usage="System.Messaging.MessageQueueErrorCode.MqisReadOnlyMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1731,6 +1801,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.MqisServerEmpty" />
       <MemberSignature Language="VB.NET" Value="MqisServerEmpty" />
       <MemberSignature Language="C++ CLI" Value="MqisServerEmpty" />
+      <MemberSignature Language="F#" Value="MqisServerEmpty = -1072824225" Usage="System.Messaging.MessageQueueErrorCode.MqisServerEmpty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1759,6 +1830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoDs" />
       <MemberSignature Language="VB.NET" Value="NoDs" />
       <MemberSignature Language="C++ CLI" Value="NoDs" />
+      <MemberSignature Language="F#" Value="NoDs = -1072824301" Usage="System.Messaging.MessageQueueErrorCode.NoDs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1787,6 +1859,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoEntryPointMsmqOcm" />
       <MemberSignature Language="VB.NET" Value="NoEntryPointMsmqOcm" />
       <MemberSignature Language="C++ CLI" Value="NoEntryPointMsmqOcm" />
+      <MemberSignature Language="F#" Value="NoEntryPointMsmqOcm = -1072824204" Usage="System.Messaging.MessageQueueErrorCode.NoEntryPointMsmqOcm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1807,6 +1880,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoGlobalCatalogInDomain" />
       <MemberSignature Language="VB.NET" Value="NoGlobalCatalogInDomain" />
       <MemberSignature Language="C++ CLI" Value="NoGlobalCatalogInDomain" />
+      <MemberSignature Language="F#" Value="NoGlobalCatalogInDomain = -1072824196" Usage="System.Messaging.MessageQueueErrorCode.NoGlobalCatalogInDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1827,6 +1901,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoInternalUserCertificate" />
       <MemberSignature Language="VB.NET" Value="NoInternalUserCertificate" />
       <MemberSignature Language="C++ CLI" Value="NoInternalUserCertificate" />
+      <MemberSignature Language="F#" Value="NoInternalUserCertificate = -1072824273" Usage="System.Messaging.MessageQueueErrorCode.NoInternalUserCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1855,6 +1930,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoMsmqServersOnDc" />
       <MemberSignature Language="VB.NET" Value="NoMsmqServersOnDc" />
       <MemberSignature Language="C++ CLI" Value="NoMsmqServersOnDc" />
+      <MemberSignature Language="F#" Value="NoMsmqServersOnDc = -1072824203" Usage="System.Messaging.MessageQueueErrorCode.NoMsmqServersOnDc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1875,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoMsmqServersOnGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="NoMsmqServersOnGlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="NoMsmqServersOnGlobalCatalog" />
+      <MemberSignature Language="F#" Value="NoMsmqServersOnGlobalCatalog = -1072824195" Usage="System.Messaging.MessageQueueErrorCode.NoMsmqServersOnGlobalCatalog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1895,6 +1972,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.NoResponseFromObjectServer" />
       <MemberSignature Language="VB.NET" Value="NoResponseFromObjectServer" />
       <MemberSignature Language="C++ CLI" Value="NoResponseFromObjectServer" />
+      <MemberSignature Language="F#" Value="NoResponseFromObjectServer = -1072824247" Usage="System.Messaging.MessageQueueErrorCode.NoResponseFromObjectServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1923,6 +2001,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ObjectServerNotAvailable" />
       <MemberSignature Language="VB.NET" Value="ObjectServerNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="ObjectServerNotAvailable" />
+      <MemberSignature Language="F#" Value="ObjectServerNotAvailable = -1072824246" Usage="System.Messaging.MessageQueueErrorCode.ObjectServerNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1951,6 +2030,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.OperationCanceled" />
       <MemberSignature Language="VB.NET" Value="OperationCanceled" />
       <MemberSignature Language="C++ CLI" Value="OperationCanceled" />
+      <MemberSignature Language="F#" Value="OperationCanceled = -1072824312" Usage="System.Messaging.MessageQueueErrorCode.OperationCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1971,6 +2051,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PrivilegeNotHeld" />
       <MemberSignature Language="VB.NET" Value="PrivilegeNotHeld" />
       <MemberSignature Language="C++ CLI" Value="PrivilegeNotHeld" />
+      <MemberSignature Language="F#" Value="PrivilegeNotHeld = -1072824282" Usage="System.Messaging.MessageQueueErrorCode.PrivilegeNotHeld" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1991,6 +2072,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="C++ CLI" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = -1072824318" Usage="System.Messaging.MessageQueueErrorCode.Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2011,6 +2093,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PropertyNotAllowed" />
       <MemberSignature Language="VB.NET" Value="PropertyNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="PropertyNotAllowed" />
+      <MemberSignature Language="F#" Value="PropertyNotAllowed = -1072824258" Usage="System.Messaging.MessageQueueErrorCode.PropertyNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2031,6 +2114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ProviderNameBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="ProviderNameBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="ProviderNameBufferTooSmall" />
+      <MemberSignature Language="F#" Value="ProviderNameBufferTooSmall = -1072824221" Usage="System.Messaging.MessageQueueErrorCode.ProviderNameBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2059,6 +2143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PublicKeyDoesNotExist" />
       <MemberSignature Language="VB.NET" Value="PublicKeyDoesNotExist" />
       <MemberSignature Language="C++ CLI" Value="PublicKeyDoesNotExist" />
+      <MemberSignature Language="F#" Value="PublicKeyDoesNotExist = -1072824198" Usage="System.Messaging.MessageQueueErrorCode.PublicKeyDoesNotExist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2087,6 +2172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.PublicKeyNotFound" />
       <MemberSignature Language="VB.NET" Value="PublicKeyNotFound" />
       <MemberSignature Language="C++ CLI" Value="PublicKeyNotFound" />
+      <MemberSignature Language="F#" Value="PublicKeyNotFound = -1072824199" Usage="System.Messaging.MessageQueueErrorCode.PublicKeyNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2115,6 +2201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QDnsPropertyNotSupported" />
       <MemberSignature Language="VB.NET" Value="QDnsPropertyNotSupported" />
       <MemberSignature Language="C++ CLI" Value="QDnsPropertyNotSupported" />
+      <MemberSignature Language="F#" Value="QDnsPropertyNotSupported = -1072824210" Usage="System.Messaging.MessageQueueErrorCode.QDnsPropertyNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2143,6 +2230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueDeleted" />
       <MemberSignature Language="VB.NET" Value="QueueDeleted" />
       <MemberSignature Language="C++ CLI" Value="QueueDeleted" />
+      <MemberSignature Language="F#" Value="QueueDeleted = -1072824230" Usage="System.Messaging.MessageQueueErrorCode.QueueDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2163,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueExists" />
       <MemberSignature Language="VB.NET" Value="QueueExists" />
       <MemberSignature Language="C++ CLI" Value="QueueExists" />
+      <MemberSignature Language="F#" Value="QueueExists = -1072824315" Usage="System.Messaging.MessageQueueErrorCode.QueueExists" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2191,6 +2280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueNotAvailable" />
       <MemberSignature Language="VB.NET" Value="QueueNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="QueueNotAvailable" />
+      <MemberSignature Language="F#" Value="QueueNotAvailable = -1072824245" Usage="System.Messaging.MessageQueueErrorCode.QueueNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2211,6 +2301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.QueueNotFound" />
       <MemberSignature Language="VB.NET" Value="QueueNotFound" />
       <MemberSignature Language="C++ CLI" Value="QueueNotFound" />
+      <MemberSignature Language="F#" Value="QueueNotFound = -1072824317" Usage="System.Messaging.MessageQueueErrorCode.QueueNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2239,6 +2330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.RemoteMachineNotAvailable" />
       <MemberSignature Language="VB.NET" Value="RemoteMachineNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="RemoteMachineNotAvailable" />
+      <MemberSignature Language="F#" Value="RemoteMachineNotAvailable = -1072824215" Usage="System.Messaging.MessageQueueErrorCode.RemoteMachineNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2259,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ResultBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="ResultBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="ResultBufferTooSmall" />
+      <MemberSignature Language="F#" Value="ResultBufferTooSmall = -1072824250" Usage="System.Messaging.MessageQueueErrorCode.ResultBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2279,6 +2372,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SecurityDescriptorBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="SecurityDescriptorBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="SecurityDescriptorBufferTooSmall" />
+      <MemberSignature Language="F#" Value="SecurityDescriptorBufferTooSmall = -1072824285" Usage="System.Messaging.MessageQueueErrorCode.SecurityDescriptorBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2307,6 +2401,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SenderCertificateBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="SenderCertificateBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="SenderCertificateBufferTooSmall" />
+      <MemberSignature Language="F#" Value="SenderCertificateBufferTooSmall = -1072824277" Usage="System.Messaging.MessageQueueErrorCode.SenderCertificateBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2335,6 +2430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SenderIdBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="SenderIdBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="SenderIdBufferTooSmall" />
+      <MemberSignature Language="F#" Value="SenderIdBufferTooSmall = -1072824286" Usage="System.Messaging.MessageQueueErrorCode.SenderIdBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2363,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.ServiceNotAvailable" />
       <MemberSignature Language="VB.NET" Value="ServiceNotAvailable" />
       <MemberSignature Language="C++ CLI" Value="ServiceNotAvailable" />
+      <MemberSignature Language="F#" Value="ServiceNotAvailable = -1072824309" Usage="System.Messaging.MessageQueueErrorCode.ServiceNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2391,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SharingViolation" />
       <MemberSignature Language="VB.NET" Value="SharingViolation" />
       <MemberSignature Language="C++ CLI" Value="SharingViolation" />
+      <MemberSignature Language="F#" Value="SharingViolation = -1072824311" Usage="System.Messaging.MessageQueueErrorCode.SharingViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2419,6 +2517,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SignatureBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="SignatureBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="SignatureBufferTooSmall" />
+      <MemberSignature Language="F#" Value="SignatureBufferTooSmall = -1072824222" Usage="System.Messaging.MessageQueueErrorCode.SignatureBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2447,6 +2546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.StaleHandle" />
       <MemberSignature Language="VB.NET" Value="StaleHandle" />
       <MemberSignature Language="C++ CLI" Value="StaleHandle" />
+      <MemberSignature Language="F#" Value="StaleHandle = -1072824234" Usage="System.Messaging.MessageQueueErrorCode.StaleHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2475,6 +2575,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.SymmetricKeyBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="SymmetricKeyBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="SymmetricKeyBufferTooSmall" />
+      <MemberSignature Language="F#" Value="SymmetricKeyBufferTooSmall = -1072824223" Usage="System.Messaging.MessageQueueErrorCode.SymmetricKeyBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2503,6 +2604,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionEnlist" />
       <MemberSignature Language="VB.NET" Value="TransactionEnlist" />
       <MemberSignature Language="C++ CLI" Value="TransactionEnlist" />
+      <MemberSignature Language="F#" Value="TransactionEnlist = -1072824232" Usage="System.Messaging.MessageQueueErrorCode.TransactionEnlist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2523,6 +2625,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionImport" />
       <MemberSignature Language="VB.NET" Value="TransactionImport" />
       <MemberSignature Language="C++ CLI" Value="TransactionImport" />
+      <MemberSignature Language="F#" Value="TransactionImport = -1072824242" Usage="System.Messaging.MessageQueueErrorCode.TransactionImport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2543,6 +2646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionSequence" />
       <MemberSignature Language="VB.NET" Value="TransactionSequence" />
       <MemberSignature Language="C++ CLI" Value="TransactionSequence" />
+      <MemberSignature Language="F#" Value="TransactionSequence = -1072824239" Usage="System.Messaging.MessageQueueErrorCode.TransactionSequence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2563,6 +2667,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.TransactionUsage" />
       <MemberSignature Language="VB.NET" Value="TransactionUsage" />
       <MemberSignature Language="C++ CLI" Value="TransactionUsage" />
+      <MemberSignature Language="F#" Value="TransactionUsage = -1072824240" Usage="System.Messaging.MessageQueueErrorCode.TransactionUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2591,6 +2696,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedAccessMode" />
       <MemberSignature Language="VB.NET" Value="UnsupportedAccessMode" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedAccessMode" />
+      <MemberSignature Language="F#" Value="UnsupportedAccessMode = -1072824251" Usage="System.Messaging.MessageQueueErrorCode.UnsupportedAccessMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2619,6 +2725,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedFormatNameOperation" />
       <MemberSignature Language="VB.NET" Value="UnsupportedFormatNameOperation" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedFormatNameOperation" />
+      <MemberSignature Language="F#" Value="UnsupportedFormatNameOperation = -1072824288" Usage="System.Messaging.MessageQueueErrorCode.UnsupportedFormatNameOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2647,6 +2754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UnsupportedOperation" />
       <MemberSignature Language="VB.NET" Value="UnsupportedOperation" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedOperation" />
+      <MemberSignature Language="F#" Value="UnsupportedOperation = -1072824214" Usage="System.Messaging.MessageQueueErrorCode.UnsupportedOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2667,6 +2775,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.UserBufferTooSmall" />
       <MemberSignature Language="VB.NET" Value="UserBufferTooSmall" />
       <MemberSignature Language="C++ CLI" Value="UserBufferTooSmall" />
+      <MemberSignature Language="F#" Value="UserBufferTooSmall = -1072824280" Usage="System.Messaging.MessageQueueErrorCode.UserBufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2687,6 +2796,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.WksCantServeClient" />
       <MemberSignature Language="VB.NET" Value="WksCantServeClient" />
       <MemberSignature Language="C++ CLI" Value="WksCantServeClient" />
+      <MemberSignature Language="F#" Value="WksCantServeClient = -1072824218" Usage="System.Messaging.MessageQueueErrorCode.WksCantServeClient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2707,6 +2817,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueErrorCode.WriteNotAllowed" />
       <MemberSignature Language="VB.NET" Value="WriteNotAllowed" />
       <MemberSignature Language="C++ CLI" Value="WriteNotAllowed" />
+      <MemberSignature Language="F#" Value="WriteNotAllowed = -1072824219" Usage="System.Messaging.MessageQueueErrorCode.WriteNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

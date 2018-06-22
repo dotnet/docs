@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedCellsChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SelectedCellsChangedEventHandler(sender As Object, e As SelectedCellsChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SelectedCellsChangedEventHandler(System::Object ^ sender, SelectedCellsChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SelectedCellsChangedEventHandler = delegate of obj * SelectedCellsChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeWriter" />
+  <TypeSignature Language="F#" Value="type CodeWriter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tw As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeWriter(System::IO::TextWriter ^ tw);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeWriter : System.IO.TextWriter -&gt; Mono.CodeGeneration.CodeWriter" Usage="new Mono.CodeGeneration.CodeWriter tw" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.BeginLine" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginLine () As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ BeginLine();" />
+      <MemberSignature Language="F#" Value="member this.BeginLine : unit -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.BeginLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.EndLine" />
       <MemberSignature Language="VB.NET" Value="Public Function EndLine () As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ EndLine();" />
+      <MemberSignature Language="F#" Value="member this.EndLine : unit -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.EndLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Sub Indent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Indent();" />
+      <MemberSignature Language="F#" Value="member this.Indent : unit -&gt; unit" Usage="codeWriter.Indent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Unindent" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unindent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unindent();" />
+      <MemberSignature Language="F#" Value="member this.Unindent : unit -&gt; unit" Usage="codeWriter.Unindent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Write (s As String) As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ Write(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.Write s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteLine (s As String) As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLine(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.WriteLine : string -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.WriteLine s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLineInd(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteLineInd (s As String) As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLineInd(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.WriteLineInd : string -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.WriteLineInd s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -206,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLineUnind(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteLineUnind (s As String) As CodeWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLineUnind(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="member this.WriteLineUnind : string -&gt; Mono.CodeGeneration.CodeWriter" Usage="codeWriter.WriteLineUnind s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

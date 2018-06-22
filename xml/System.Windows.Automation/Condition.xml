@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Condition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Condition" />
   <TypeSignature Language="C++ CLI" Value="public ref class Condition abstract" />
+  <TypeSignature Language="F#" Value="type Condition = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.FalseCondition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FalseCondition As Condition " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ FalseCondition;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FalseCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Condition.FalseCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.TrueCondition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrueCondition As Condition " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ TrueCondition;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TrueCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Condition.TrueCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

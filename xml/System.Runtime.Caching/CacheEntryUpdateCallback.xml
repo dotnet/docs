@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryUpdateCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheEntryUpdateCallback(arguments As CacheEntryUpdateArguments)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CacheEntryUpdateCallback(CacheEntryUpdateArguments ^ arguments);" />
+  <TypeSignature Language="F#" Value="type CacheEntryUpdateCallback = delegate of CacheEntryUpdateArguments -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

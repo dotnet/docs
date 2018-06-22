@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.TextualExpressionEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextualExpressionEditor&#xA;Inherits ExpressionActivityEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextualExpressionEditor abstract : System::Activities::Presentation::Expressions::ExpressionActivityEditor" />
+  <TypeSignature Language="F#" Value="type TextualExpressionEditor = class&#xA;    inherit ExpressionActivityEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.TextualExpressionEditor.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : string with get, set" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.TextualExpressionEditor.DefaultValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DefaultValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultValueProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.DefaultValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.TextualExpressionEditor.ExpressionEditorService" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExpressionEditorService As IExpressionEditorService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::Presentation::View::IExpressionEditorService ^ ExpressionEditorService { System::Activities::Presentation::View::IExpressionEditorService ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionEditorService : System.Activities.Presentation.View.IExpressionEditorService" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.ExpressionEditorService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.TextualExpressionEditor.MaxLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLines { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLines : int with get, set" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.MaxLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.TextualExpressionEditor.MaxLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxLinesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxLinesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxLinesProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.MaxLinesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.TextualExpressionEditor.MinLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MinLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinLines { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinLines : int with get, set" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.MinLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Expressions.TextualExpressionEditor.MinLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinLinesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinLinesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinLinesProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.Expressions.TextualExpressionEditor.MinLinesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -177,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnCompleteWordCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnCompleteWordCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleteWordCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleteWordCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnCompleteWordCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnCompleteWordCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -200,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnCompleteWordCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnCompleteWordCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleteWordCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleteWordCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnCompleteWordCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnCompleteWordCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnDecreaseFilterLevelCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDecreaseFilterLevelCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDecreaseFilterLevelCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDecreaseFilterLevelCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnDecreaseFilterLevelCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnDecreaseFilterLevelCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -246,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnDecreaseFilterLevelCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDecreaseFilterLevelCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDecreaseFilterLevelCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDecreaseFilterLevelCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnDecreaseFilterLevelCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnDecreaseFilterLevelCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -269,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnGlobalIntellisenseCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnGlobalIntellisenseCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnGlobalIntellisenseCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnGlobalIntellisenseCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnGlobalIntellisenseCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnGlobalIntellisenseCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -292,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnGlobalIntellisenseCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnGlobalIntellisenseCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnGlobalIntellisenseCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnGlobalIntellisenseCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnGlobalIntellisenseCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnGlobalIntellisenseCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -315,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnIncreaseFilterLevelCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnIncreaseFilterLevelCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnIncreaseFilterLevelCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnIncreaseFilterLevelCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnIncreaseFilterLevelCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnIncreaseFilterLevelCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -338,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnIncreaseFilterLevelCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnIncreaseFilterLevelCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnIncreaseFilterLevelCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnIncreaseFilterLevelCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnIncreaseFilterLevelCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnIncreaseFilterLevelCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -361,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnParameterInfoCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnParameterInfoCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnParameterInfoCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnParameterInfoCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnParameterInfoCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnParameterInfoCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -384,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnParameterInfoCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnParameterInfoCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnParameterInfoCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnParameterInfoCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnParameterInfoCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnParameterInfoCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -407,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnQuickInfoCommandCanExecute(System.Windows.Input.CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnQuickInfoCommandCanExecute (e As CanExecuteRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnQuickInfoCommandCanExecute(System::Windows::Input::CanExecuteRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnQuickInfoCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit&#xA;override this.OnQuickInfoCommandCanExecute : System.Windows.Input.CanExecuteRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnQuickInfoCommandCanExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -430,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.TextualExpressionEditor.OnQuickInfoCommandExecute(System.Windows.Input.ExecutedRoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnQuickInfoCommandExecute (e As ExecutedRoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnQuickInfoCommandExecute(System::Windows::Input::ExecutedRoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnQuickInfoCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit&#xA;override this.OnQuickInfoCommandExecute : System.Windows.Input.ExecutedRoutedEventArgs -&gt; unit" Usage="textualExpressionEditor.OnQuickInfoCommandExecute e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

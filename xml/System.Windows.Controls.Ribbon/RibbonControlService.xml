@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlService" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonControlService" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonControlService abstract sealed" />
+  <TypeSignature Language="F#" Value="type RibbonControlService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.AddDismissPopupHandler(System.Windows.DependencyObject,System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddDismissPopupHandler (element As DependencyObject, handler As RibbonDismissPopupEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddDismissPopupHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::Ribbon::RibbonDismissPopupEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddDismissPopupHandler : System.Windows.DependencyObject * System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.AddDismissPopupHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value="see GetCanAddToQuickAccessToolBarDirectly, and SetCanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="VB.NET" Value="see GetCanAddToQuickAccessToolBarDirectly, and SetCanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="F#" Value="see GetCanAddToQuickAccessToolBarDirectly, and SetCanAddToQuickAccessToolBarDirectly" Usage="see GetCanAddToQuickAccessToolBarDirectly, and SetCanAddToQuickAccessToolBarDirectly" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanAddToQuickAccessToolBarDirectlyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanAddToQuickAccessToolBarDirectlyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanAddToQuickAccessToolBarDirectlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value="see GetCheckedBackground, and SetCheckedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackground" />
       <MemberSignature Language="VB.NET" Value="see GetCheckedBackground, and SetCheckedBackground" />
+      <MemberSignature Language="F#" Value="see GetCheckedBackground, and SetCheckedBackground" Usage="see GetCheckedBackground, and SetCheckedBackground" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -97,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -115,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value="see GetCheckedBorderBrush, and SetCheckedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="see GetCheckedBorderBrush, and SetCheckedBorderBrush" />
+      <MemberSignature Language="F#" Value="see GetCheckedBorderBrush, and SetCheckedBorderBrush" Usage="see GetCheckedBorderBrush, and SetCheckedBorderBrush" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -131,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -149,6 +157,7 @@
       <MemberSignature Language="ILAsm" Value="see GetControlSizeDefinition, and SetControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="see GetControlSizeDefinition, and SetControlSizeDefinition" />
+      <MemberSignature Language="F#" Value="see GetControlSizeDefinition, and SetControlSizeDefinition" Usage="see GetControlSizeDefinition, and SetControlSizeDefinition" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -165,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinitionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -183,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value="see GetCornerRadius, and SetCornerRadius" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadius" />
       <MemberSignature Language="VB.NET" Value="see GetCornerRadius, and SetCornerRadius" />
+      <MemberSignature Language="F#" Value="see GetCornerRadius, and SetCornerRadius" Usage="see GetCornerRadius, and SetCornerRadius" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -199,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadiusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CornerRadiusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.CornerRadiusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -217,6 +229,7 @@
       <MemberSignature Language="ILAsm" Value="see GetDefaultControlSizeDefinition, and SetDefaultControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="see GetDefaultControlSizeDefinition, and SetDefaultControlSizeDefinition" />
+      <MemberSignature Language="F#" Value="see GetDefaultControlSizeDefinition, and SetDefaultControlSizeDefinition" Usage="see GetDefaultControlSizeDefinition, and SetDefaultControlSizeDefinition" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -233,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DefaultControlSizeDefinitionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinitionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -251,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value="see AddDismissPopupHandler, and RemoveDismissPopupHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" />
       <MemberSignature Language="VB.NET" Value="see AddDismissPopupHandler, and RemoveDismissPopupHandler" />
+      <MemberSignature Language="F#" Value="see AddDismissPopupHandler, and RemoveDismissPopupHandler" Usage="see AddDismissPopupHandler, and RemoveDismissPopupHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -267,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopupEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DismissPopupEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ DismissPopupEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DismissPopupEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Ribbon.RibbonControlService.DismissPopupEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -285,6 +301,7 @@
       <MemberSignature Language="ILAsm" Value="see GetFocusedBackground, and SetFocusedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackground" />
       <MemberSignature Language="VB.NET" Value="see GetFocusedBackground, and SetFocusedBackground" />
+      <MemberSignature Language="F#" Value="see GetFocusedBackground, and SetFocusedBackground" Usage="see GetFocusedBackground, and SetFocusedBackground" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -301,6 +318,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -319,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value="see GetFocusedBorderBrush, and SetFocusedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="see GetFocusedBorderBrush, and SetFocusedBorderBrush" />
+      <MemberSignature Language="F#" Value="see GetFocusedBorderBrush, and SetFocusedBorderBrush" Usage="see GetFocusedBorderBrush, and SetFocusedBorderBrush" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -335,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -354,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetCanAddToQuickAccessToolBarDirectly(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCanAddToQuickAccessToolBarDirectly (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCanAddToQuickAccessToolBarDirectly(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCanAddToQuickAccessToolBarDirectly : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetCanAddToQuickAccessToolBarDirectly element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -379,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetCheckedBackground(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCheckedBackground (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetCheckedBackground(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCheckedBackground : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetCheckedBackground element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -404,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetCheckedBorderBrush(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCheckedBorderBrush (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetCheckedBorderBrush(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCheckedBorderBrush : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetCheckedBorderBrush element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -429,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetControlSizeDefinition(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetControlSizeDefinition (element As DependencyObject) As RibbonControlSizeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ GetControlSizeDefinition(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetControlSizeDefinition : System.Windows.DependencyObject -&gt; System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetControlSizeDefinition element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -454,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetCornerRadius(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCornerRadius (element As DependencyObject) As CornerRadius" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::CornerRadius GetCornerRadius(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCornerRadius : System.Windows.DependencyObject -&gt; System.Windows.CornerRadius" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetCornerRadius element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -479,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetDefaultControlSizeDefinition(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultControlSizeDefinition (element As DependencyObject) As RibbonControlSizeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ GetDefaultControlSizeDefinition(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultControlSizeDefinition : System.Windows.DependencyObject -&gt; System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetDefaultControlSizeDefinition element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -504,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetFocusedBackground(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFocusedBackground (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetFocusedBackground(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetFocusedBackground : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetFocusedBackground element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -529,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetFocusedBorderBrush(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFocusedBorderBrush (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetFocusedBorderBrush(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetFocusedBorderBrush : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetFocusedBorderBrush element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -554,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetIsInControlGroup(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsInControlGroup (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsInControlGroup(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsInControlGroup : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetIsInControlGroup element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -579,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetIsInQuickAccessToolBar(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsInQuickAccessToolBar (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsInQuickAccessToolBar(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsInQuickAccessToolBar : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetIsInQuickAccessToolBar element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -604,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetLabel(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLabel (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetLabel(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetLabel : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetLabel element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -629,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetLargeImageSource(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLargeImageSource (element As DependencyObject) As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::ImageSource ^ GetLargeImageSource(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetLargeImageSource : System.Windows.DependencyObject -&gt; System.Windows.Media.ImageSource" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetLargeImageSource element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -654,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetMouseOverBackground(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMouseOverBackground (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetMouseOverBackground(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetMouseOverBackground : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetMouseOverBackground element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -679,6 +712,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetMouseOverBorderBrush(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMouseOverBorderBrush (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetMouseOverBorderBrush(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetMouseOverBorderBrush : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetMouseOverBorderBrush element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -704,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetPressedBackground(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPressedBackground (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetPressedBackground(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPressedBackground : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetPressedBackground element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -729,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetPressedBorderBrush(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPressedBorderBrush (element As DependencyObject) As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Brush ^ GetPressedBorderBrush(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPressedBorderBrush : System.Windows.DependencyObject -&gt; System.Windows.Media.Brush" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetPressedBorderBrush element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -754,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetQuickAccessToolBarControlSizeDefinition(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetQuickAccessToolBarControlSizeDefinition (element As DependencyObject) As RibbonControlSizeDefinition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ GetQuickAccessToolBarControlSizeDefinition(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetQuickAccessToolBarControlSizeDefinition : System.Windows.DependencyObject -&gt; System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetQuickAccessToolBarControlSizeDefinition element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -779,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetQuickAccessToolBarId(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetQuickAccessToolBarId (element As DependencyObject) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetQuickAccessToolBarId(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetQuickAccessToolBarId : System.Windows.DependencyObject -&gt; obj" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetQuickAccessToolBarId element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -804,6 +842,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetRibbon(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRibbon (element As DependencyObject) As Ribbon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Ribbon::Ribbon ^ GetRibbon(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetRibbon : System.Windows.DependencyObject -&gt; System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetRibbon element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -829,6 +868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetShowKeyboardCues(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetShowKeyboardCues (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetShowKeyboardCues(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetShowKeyboardCues : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetShowKeyboardCues element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -854,6 +894,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetSmallImageSource(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSmallImageSource (element As DependencyObject) As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::ImageSource ^ GetSmallImageSource(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetSmallImageSource : System.Windows.DependencyObject -&gt; System.Windows.Media.ImageSource" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetSmallImageSource element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -879,6 +920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipDescription(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipDescription (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetToolTipDescription(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipDescription : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipDescription element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -904,6 +946,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterDescription(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipFooterDescription (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetToolTipFooterDescription(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipFooterDescription : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterDescription element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -929,6 +972,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterImageSource(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipFooterImageSource (element As DependencyObject) As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::ImageSource ^ GetToolTipFooterImageSource(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipFooterImageSource : System.Windows.DependencyObject -&gt; System.Windows.Media.ImageSource" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterImageSource element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -954,6 +998,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterTitle(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipFooterTitle (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetToolTipFooterTitle(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipFooterTitle : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipFooterTitle element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -979,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipImageSource(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipImageSource (element As DependencyObject) As ImageSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::ImageSource ^ GetToolTipImageSource(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipImageSource : System.Windows.DependencyObject -&gt; System.Windows.Media.ImageSource" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipImageSource element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1004,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipTitle(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolTipTitle (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetToolTipTitle(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetToolTipTitle : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Controls.Ribbon.RibbonControlService.GetToolTipTitle element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1029,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInControlGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1048,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBarProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1066,6 +1115,7 @@
       <MemberSignature Language="ILAsm" Value="see GetLabel, and SetLabel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.Label" />
       <MemberSignature Language="VB.NET" Value="see GetLabel, and SetLabel" />
+      <MemberSignature Language="F#" Value="see GetLabel, and SetLabel" Usage="see GetLabel, and SetLabel" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1082,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.LabelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LabelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.LabelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1100,6 +1151,7 @@
       <MemberSignature Language="ILAsm" Value="see GetLargeImageSource, and SetLargeImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource" />
       <MemberSignature Language="VB.NET" Value="see GetLargeImageSource, and SetLargeImageSource" />
+      <MemberSignature Language="F#" Value="see GetLargeImageSource, and SetLargeImageSource" Usage="see GetLargeImageSource, and SetLargeImageSource" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1116,6 +1168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LargeImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LargeImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1134,6 +1187,7 @@
       <MemberSignature Language="ILAsm" Value="see GetMouseOverBackground, and SetMouseOverBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackground" />
       <MemberSignature Language="VB.NET" Value="see GetMouseOverBackground, and SetMouseOverBackground" />
+      <MemberSignature Language="F#" Value="see GetMouseOverBackground, and SetMouseOverBackground" Usage="see GetMouseOverBackground, and SetMouseOverBackground" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1150,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1168,6 +1223,7 @@
       <MemberSignature Language="ILAsm" Value="see GetMouseOverBorderBrush, and SetMouseOverBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrush" />
       <MemberSignature Language="VB.NET" Value="see GetMouseOverBorderBrush, and SetMouseOverBorderBrush" />
+      <MemberSignature Language="F#" Value="see GetMouseOverBorderBrush, and SetMouseOverBorderBrush" Usage="see GetMouseOverBorderBrush, and SetMouseOverBorderBrush" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1184,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1202,6 +1259,7 @@
       <MemberSignature Language="ILAsm" Value="see GetPressedBackground, and SetPressedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackground" />
       <MemberSignature Language="VB.NET" Value="see GetPressedBackground, and SetPressedBackground" />
+      <MemberSignature Language="F#" Value="see GetPressedBackground, and SetPressedBackground" Usage="see GetPressedBackground, and SetPressedBackground" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1218,6 +1276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PressedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.PressedBackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1236,6 +1295,7 @@
       <MemberSignature Language="ILAsm" Value="see GetPressedBorderBrush, and SetPressedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="see GetPressedBorderBrush, and SetPressedBorderBrush" />
+      <MemberSignature Language="F#" Value="see GetPressedBorderBrush, and SetPressedBorderBrush" Usage="see GetPressedBorderBrush, and SetPressedBorderBrush" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1252,6 +1312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBorderBrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PressedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1270,6 +1331,7 @@
       <MemberSignature Language="ILAsm" Value="see GetQuickAccessToolBarControlSizeDefinition, and SetQuickAccessToolBarControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="see GetQuickAccessToolBarControlSizeDefinition, and SetQuickAccessToolBarControlSizeDefinition" />
+      <MemberSignature Language="F#" Value="see GetQuickAccessToolBarControlSizeDefinition, and SetQuickAccessToolBarControlSizeDefinition" Usage="see GetQuickAccessToolBarControlSizeDefinition, and SetQuickAccessToolBarControlSizeDefinition" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1286,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarControlSizeDefinitionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinitionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1304,6 +1367,7 @@
       <MemberSignature Language="ILAsm" Value="see GetQuickAccessToolBarId, and SetQuickAccessToolBarId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarId" />
       <MemberSignature Language="VB.NET" Value="see GetQuickAccessToolBarId, and SetQuickAccessToolBarId" />
+      <MemberSignature Language="F#" Value="see GetQuickAccessToolBarId, and SetQuickAccessToolBarId" Usage="see GetQuickAccessToolBarId, and SetQuickAccessToolBarId" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1320,6 +1384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarIdProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1339,6 +1404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.RemoveDismissPopupHandler(System.Windows.DependencyObject,System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveDismissPopupHandler (element As DependencyObject, handler As RibbonDismissPopupEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveDismissPopupHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::Ribbon::RibbonDismissPopupEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveDismissPopupHandler : System.Windows.DependencyObject * System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.RemoveDismissPopupHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1364,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.RibbonProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.RibbonProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1383,6 +1450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetCanAddToQuickAccessToolBarDirectly(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCanAddToQuickAccessToolBarDirectly (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCanAddToQuickAccessToolBarDirectly(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetCanAddToQuickAccessToolBarDirectly : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetCanAddToQuickAccessToolBarDirectly (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1409,6 +1477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetCheckedBackground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCheckedBackground (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCheckedBackground(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetCheckedBackground : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetCheckedBackground (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1435,6 +1504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetCheckedBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCheckedBorderBrush (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCheckedBorderBrush(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetCheckedBorderBrush : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetCheckedBorderBrush (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1461,6 +1531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetControlSizeDefinition(System.Windows.DependencyObject,System.Windows.Controls.Ribbon.RibbonControlSizeDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetControlSizeDefinition (element As DependencyObject, value As RibbonControlSizeDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetControlSizeDefinition(System::Windows::DependencyObject ^ element, System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetControlSizeDefinition : System.Windows.DependencyObject * System.Windows.Controls.Ribbon.RibbonControlSizeDefinition -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetControlSizeDefinition (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1487,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetCornerRadius(System.Windows.DependencyObject,System.Windows.CornerRadius)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCornerRadius (element As DependencyObject, value As CornerRadius)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCornerRadius(System::Windows::DependencyObject ^ element, System::Windows::CornerRadius value);" />
+      <MemberSignature Language="F#" Value="static member SetCornerRadius : System.Windows.DependencyObject * System.Windows.CornerRadius -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetCornerRadius (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1513,6 +1585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetDefaultControlSizeDefinition(System.Windows.DependencyObject,System.Windows.Controls.Ribbon.RibbonControlSizeDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDefaultControlSizeDefinition (element As DependencyObject, value As RibbonControlSizeDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDefaultControlSizeDefinition(System::Windows::DependencyObject ^ element, System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetDefaultControlSizeDefinition : System.Windows.DependencyObject * System.Windows.Controls.Ribbon.RibbonControlSizeDefinition -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetDefaultControlSizeDefinition (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1539,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetFocusedBackground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFocusedBackground (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFocusedBackground(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetFocusedBackground : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetFocusedBackground (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1565,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetFocusedBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFocusedBorderBrush (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFocusedBorderBrush(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetFocusedBorderBrush : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetFocusedBorderBrush (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1591,6 +1666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetLabel(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLabel (element As DependencyObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLabel(System::Windows::DependencyObject ^ element, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetLabel : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetLabel (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1617,6 +1693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetLargeImageSource(System.Windows.DependencyObject,System.Windows.Media.ImageSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLargeImageSource (element As DependencyObject, value As ImageSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLargeImageSource(System::Windows::DependencyObject ^ element, System::Windows::Media::ImageSource ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetLargeImageSource : System.Windows.DependencyObject * System.Windows.Media.ImageSource -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetLargeImageSource (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1643,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetMouseOverBackground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMouseOverBackground (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetMouseOverBackground(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetMouseOverBackground : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetMouseOverBackground (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1669,6 +1747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetMouseOverBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMouseOverBorderBrush (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetMouseOverBorderBrush(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetMouseOverBorderBrush : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetMouseOverBorderBrush (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1695,6 +1774,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetPressedBackground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPressedBackground (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPressedBackground(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetPressedBackground : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetPressedBackground (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1721,6 +1801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetPressedBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPressedBorderBrush (element As DependencyObject, value As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPressedBorderBrush(System::Windows::DependencyObject ^ element, System::Windows::Media::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetPressedBorderBrush : System.Windows.DependencyObject * System.Windows.Media.Brush -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetPressedBorderBrush (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1747,6 +1828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetQuickAccessToolBarControlSizeDefinition(System.Windows.DependencyObject,System.Windows.Controls.Ribbon.RibbonControlSizeDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetQuickAccessToolBarControlSizeDefinition (element As DependencyObject, value As RibbonControlSizeDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetQuickAccessToolBarControlSizeDefinition(System::Windows::DependencyObject ^ element, System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetQuickAccessToolBarControlSizeDefinition : System.Windows.DependencyObject * System.Windows.Controls.Ribbon.RibbonControlSizeDefinition -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetQuickAccessToolBarControlSizeDefinition (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1773,6 +1855,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetQuickAccessToolBarId(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetQuickAccessToolBarId (element As DependencyObject, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetQuickAccessToolBarId(System::Windows::DependencyObject ^ element, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetQuickAccessToolBarId : System.Windows.DependencyObject * obj -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetQuickAccessToolBarId (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1799,6 +1882,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetSmallImageSource(System.Windows.DependencyObject,System.Windows.Media.ImageSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSmallImageSource (element As DependencyObject, value As ImageSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSmallImageSource(System::Windows::DependencyObject ^ element, System::Windows::Media::ImageSource ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetSmallImageSource : System.Windows.DependencyObject * System.Windows.Media.ImageSource -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetSmallImageSource (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1825,6 +1909,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipDescription(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipDescription (element As DependencyObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipDescription(System::Windows::DependencyObject ^ element, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipDescription : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipDescription (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1851,6 +1936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterDescription(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipFooterDescription (element As DependencyObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipFooterDescription(System::Windows::DependencyObject ^ element, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipFooterDescription : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterDescription (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1877,6 +1963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterImageSource(System.Windows.DependencyObject,System.Windows.Media.ImageSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipFooterImageSource (element As DependencyObject, value As ImageSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipFooterImageSource(System::Windows::DependencyObject ^ element, System::Windows::Media::ImageSource ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipFooterImageSource : System.Windows.DependencyObject * System.Windows.Media.ImageSource -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterImageSource (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1903,6 +1990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterTitle(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipFooterTitle (element As DependencyObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipFooterTitle(System::Windows::DependencyObject ^ element, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipFooterTitle : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipFooterTitle (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1929,6 +2017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipImageSource(System.Windows.DependencyObject,System.Windows.Media.ImageSource)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipImageSource (element As DependencyObject, value As ImageSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipImageSource(System::Windows::DependencyObject ^ element, System::Windows::Media::ImageSource ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipImageSource : System.Windows.DependencyObject * System.Windows.Media.ImageSource -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipImageSource (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1955,6 +2044,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipTitle(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetToolTipTitle (element As DependencyObject, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetToolTipTitle(System::Windows::DependencyObject ^ element, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetToolTipTitle : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SetToolTipTitle (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1981,6 +2071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCuesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowKeyboardCuesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowKeyboardCuesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowKeyboardCuesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCuesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1999,6 +2090,7 @@
       <MemberSignature Language="ILAsm" Value="see GetSmallImageSource, and SetSmallImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource" />
       <MemberSignature Language="VB.NET" Value="see GetSmallImageSource, and SetSmallImageSource" />
+      <MemberSignature Language="F#" Value="see GetSmallImageSource, and SetSmallImageSource" Usage="see GetSmallImageSource, and SetSmallImageSource" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2015,6 +2107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmallImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SmallImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2033,6 +2126,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipDescription, and SetToolTipDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescription" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipDescription, and SetToolTipDescription" />
+      <MemberSignature Language="F#" Value="see GetToolTipDescription, and SetToolTipDescription" Usage="see GetToolTipDescription, and SetToolTipDescription" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2049,6 +2143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipDescriptionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2067,6 +2162,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipFooterDescription, and SetToolTipFooterDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescription" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipFooterDescription, and SetToolTipFooterDescription" />
+      <MemberSignature Language="F#" Value="see GetToolTipFooterDescription, and SetToolTipFooterDescription" Usage="see GetToolTipFooterDescription, and SetToolTipFooterDescription" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2083,6 +2179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterDescriptionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescriptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2101,6 +2198,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipFooterImageSource, and SetToolTipFooterImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSource" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipFooterImageSource, and SetToolTipFooterImageSource" />
+      <MemberSignature Language="F#" Value="see GetToolTipFooterImageSource, and SetToolTipFooterImageSource" Usage="see GetToolTipFooterImageSource, and SetToolTipFooterImageSource" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2117,6 +2215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2135,6 +2234,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipFooterTitle, and SetToolTipFooterTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitle" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipFooterTitle, and SetToolTipFooterTitle" />
+      <MemberSignature Language="F#" Value="see GetToolTipFooterTitle, and SetToolTipFooterTitle" Usage="see GetToolTipFooterTitle, and SetToolTipFooterTitle" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2151,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterTitleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterTitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2169,6 +2270,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipImageSource, and SetToolTipImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSource" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipImageSource, and SetToolTipImageSource" />
+      <MemberSignature Language="F#" Value="see GetToolTipImageSource, and SetToolTipImageSource" Usage="see GetToolTipImageSource, and SetToolTipImageSource" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2185,6 +2287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2203,6 +2306,7 @@
       <MemberSignature Language="ILAsm" Value="see GetToolTipTitle, and SetToolTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitle" />
       <MemberSignature Language="VB.NET" Value="see GetToolTipTitle, and SetToolTipTitle" />
+      <MemberSignature Language="F#" Value="see GetToolTipTitle, and SetToolTipTitle" Usage="see GetToolTipTitle, and SetToolTipTitle" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2219,6 +2323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipTitleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipTitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

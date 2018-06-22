@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSortEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewSortEventHandler(sender As Object, e As GridViewSortEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GridViewSortEventHandler(System::Object ^ sender, GridViewSortEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GridViewSortEventHandler = delegate of obj * GridViewSortEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

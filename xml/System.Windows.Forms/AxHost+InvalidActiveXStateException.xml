@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" />
   <TypeSignature Language="VB.NET" Value="Public Class AxHost.InvalidActiveXStateException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public: ref class AxHost::InvalidActiveXStateException : Exception" />
+  <TypeSignature Language="F#" Value="type AxHost.InvalidActiveXStateException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.InvalidActiveXStateException.#ctor(System.String,System.Windows.Forms.AxHost.ActiveXInvokeKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, kind As AxHost.ActiveXInvokeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidActiveXStateException(System::String ^ name, System::Windows::Forms::AxHost::ActiveXInvokeKind kind);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.AxHost.InvalidActiveXStateException : string * System.Windows.Forms.AxHost.ActiveXInvokeKind -&gt; System.Windows.Forms.AxHost.InvalidActiveXStateException" Usage="new System.Windows.Forms.AxHost.InvalidActiveXStateException (name, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.InvalidActiveXStateException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="invalidActiveXStateException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

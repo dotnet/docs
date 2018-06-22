@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LegendStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LegendStyle" />
+  <TypeSignature Language="F#" Value="type LegendStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendStyle.Column" />
       <MemberSignature Language="VB.NET" Value="Column" />
       <MemberSignature Language="C++ CLI" Value="Column" />
+      <MemberSignature Language="F#" Value="Column = 0" Usage="System.Web.UI.DataVisualization.Charting.LegendStyle.Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendStyle.Row" />
       <MemberSignature Language="VB.NET" Value="Row" />
       <MemberSignature Language="C++ CLI" Value="Row" />
+      <MemberSignature Language="F#" Value="Row = 1" Usage="System.Web.UI.DataVisualization.Charting.LegendStyle.Row" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendStyle.Table" />
       <MemberSignature Language="VB.NET" Value="Table" />
       <MemberSignature Language="C++ CLI" Value="Table" />
+      <MemberSignature Language="F#" Value="Table = 2" Usage="System.Web.UI.DataVisualization.Charting.LegendStyle.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

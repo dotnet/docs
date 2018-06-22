@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessThread" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessThread&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessThread : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type ProcessThread = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.BasePriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BasePriority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BasePriority { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BasePriority : int" Usage="System.Diagnostics.ProcessThread.BasePriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.CurrentPriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPriority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPriority { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPriority : int" Usage="System.Diagnostics.ProcessThread.CurrentPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Diagnostics.ProcessThread.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.IdealProcessor" />
       <MemberSignature Language="VB.NET" Value="Public Property IdealProcessor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IdealProcessor {  void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IdealProcessor : int" Usage="System.Diagnostics.ProcessThread.IdealProcessor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.PriorityBoostEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property PriorityBoostEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PriorityBoostEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PriorityBoostEnabled : bool with get, set" Usage="System.Diagnostics.ProcessThread.PriorityBoostEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -338,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.PriorityLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property PriorityLevel As ThreadPriorityLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ThreadPriorityLevel PriorityLevel { System::Diagnostics::ThreadPriorityLevel get(); void set(System::Diagnostics::ThreadPriorityLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.PriorityLevel : System.Diagnostics.ThreadPriorityLevel with get, set" Usage="System.Diagnostics.ProcessThread.PriorityLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -395,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.PrivilegedProcessorTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivilegedProcessorTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PrivilegedProcessorTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrivilegedProcessorTime : TimeSpan" Usage="System.Diagnostics.ProcessThread.PrivilegedProcessorTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -448,6 +456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.ProcessorAffinity" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessorAffinity As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ProcessorAffinity {  void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessorAffinity : nativeint" Usage="System.Diagnostics.ProcessThread.ProcessorAffinity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -520,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThread.ResetIdealProcessor" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIdealProcessor ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIdealProcessor();" />
+      <MemberSignature Language="F#" Value="member this.ResetIdealProcessor : unit -&gt; unit" Usage="processThread.ResetIdealProcessor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -560,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.StartAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartAddress As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr StartAddress { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartAddress : nativeint" Usage="System.Diagnostics.ProcessThread.StartAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -612,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartTime : DateTime" Usage="System.Diagnostics.ProcessThread.StartTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -654,6 +666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.ThreadState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadState As ThreadState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ThreadState ThreadState { System::Diagnostics::ThreadState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadState : System.Diagnostics.ThreadState" Usage="System.Diagnostics.ProcessThread.ThreadState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -702,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.TotalProcessorTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalProcessorTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TotalProcessorTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalProcessorTime : TimeSpan" Usage="System.Diagnostics.ProcessThread.TotalProcessorTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -755,6 +769,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.UserProcessorTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserProcessorTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UserProcessorTime { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserProcessorTime : TimeSpan" Usage="System.Diagnostics.ProcessThread.UserProcessorTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -808,6 +823,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThread.WaitReason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitReason As ThreadWaitReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ThreadWaitReason WaitReason { System::Diagnostics::ThreadWaitReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.WaitReason : System.Diagnostics.ThreadWaitReason" Usage="System.Diagnostics.ProcessThread.WaitReason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffer" />
   <TypeSignature Language="VB.NET" Value="Public Class Buffer" />
   <TypeSignature Language="C++ CLI" Value="public ref class Buffer abstract sealed" />
+  <TypeSignature Language="F#" Value="type Buffer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub BlockCopy (src As Array, srcOffset As Integer, dst As Array, dstOffset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BlockCopy(Array ^ src, int srcOffset, Array ^ dst, int dstOffset, int count);" />
+      <MemberSignature Language="F#" Value="static member BlockCopy : Array * int * Array * int * int -&gt; unit" Usage="System.Buffer.BlockCopy (src, srcOffset, dst, dstOffset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ByteLength(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffer.ByteLength(System.Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ByteLength(Array ^ array);" />
+      <MemberSignature Language="F#" Value="static member ByteLength : Array -&gt; int" Usage="System.Buffer.ByteLength array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -204,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 GetByte(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffer.GetByte(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte GetByte(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="static member GetByte : Array * int -&gt; byte" Usage="System.Buffer.GetByte (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -278,6 +282,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MemoryCopy(void* source, void* destination, int64 destinationSizeInBytes, int64 sourceBytesToCopy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffer.MemoryCopy(System.Void*,System.Void*,System.Int64,System.Int64)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryCopy(void* source, void* destination, long destinationSizeInBytes, long sourceBytesToCopy);" />
+      <MemberSignature Language="F#" Value="static member MemoryCopy : nativeptr&lt;unit&gt; * nativeptr&lt;unit&gt; * int64 * int64 -&gt; unit" Usage="System.Buffer.MemoryCopy (source, destination, destinationSizeInBytes, sourceBytesToCopy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -334,6 +339,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MemoryCopy(void* source, void* destination, unsigned int64 destinationSizeInBytes, unsigned int64 sourceBytesToCopy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffer.MemoryCopy(System.Void*,System.Void*,System.UInt64,System.UInt64)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryCopy(void* source, void* destination, System::UInt64 destinationSizeInBytes, System::UInt64 sourceBytesToCopy);" />
+      <MemberSignature Language="F#" Value="static member MemoryCopy : nativeptr&lt;unit&gt; * nativeptr&lt;unit&gt; * uint64 * uint64 -&gt; unit" Usage="System.Buffer.MemoryCopy (source, destination, destinationSizeInBytes, sourceBytesToCopy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -390,6 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetByte(class System.Array array, int32 index, unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffer.SetByte(System.Array,System.Int32,System.Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetByte(Array ^ array, int index, System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member SetByte : Array * int * byte -&gt; unit" Usage="System.Buffer.SetByte (array, index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

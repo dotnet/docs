@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectContext : IDisposable" />
+  <TypeSignature Language="F#" Value="type ObjectContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.#ctor(System.Data.EntityClient.EntityConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connection As EntityConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectContext(System::Data::EntityClient::EntityConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectContext : System.Data.EntityClient.EntityConnection -&gt; System.Data.Objects.ObjectContext" Usage="new System.Data.Objects.ObjectContext connection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectContext(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectContext : string -&gt; System.Data.Objects.ObjectContext" Usage="new System.Data.Objects.ObjectContext connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.#ctor(System.Data.EntityClient.EntityConnection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (connection As EntityConnection, defaultContainerName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectContext(System::Data::EntityClient::EntityConnection ^ connection, System::String ^ defaultContainerName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectContext : System.Data.EntityClient.EntityConnection * string -&gt; System.Data.Objects.ObjectContext" Usage="new System.Data.Objects.ObjectContext (connection, defaultContainerName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (connectionString As String, defaultContainerName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectContext(System::String ^ connectionString, System::String ^ defaultContainerName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectContext : string * string -&gt; System.Data.Objects.ObjectContext" Usage="new System.Data.Objects.ObjectContext (connectionString, defaultContainerName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.AcceptAllChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptAllChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptAllChanges();" />
+      <MemberSignature Language="F#" Value="member this.AcceptAllChanges : unit -&gt; unit" Usage="objectContext.AcceptAllChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.AddObject(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddObject (entitySetName As String, entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddObject(System::String ^ entitySetName, System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.AddObject : string * obj -&gt; unit" Usage="objectContext.AddObject (entitySetName, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -284,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ApplyCurrentValues``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyCurrentValues(Of TEntity As Class) (entitySetName As String, currentEntity As TEntity) As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class TEntity ApplyCurrentValues(System::String ^ entitySetName, TEntity currentEntity);" />
+      <MemberSignature Language="F#" Value="member this.ApplyCurrentValues : string * 'Entity -&gt; 'Entity (requires 'Entity : null)" Usage="objectContext.ApplyCurrentValues (entitySetName, currentEntity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ApplyOriginalValues``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyOriginalValues(Of TEntity As Class) (entitySetName As String, originalEntity As TEntity) As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class TEntity ApplyOriginalValues(System::String ^ entitySetName, TEntity originalEntity);" />
+      <MemberSignature Language="F#" Value="member this.ApplyOriginalValues : string * 'Entity -&gt; 'Entity (requires 'Entity : null)" Usage="objectContext.ApplyOriginalValues (entitySetName, originalEntity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -406,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ApplyPropertyChanges(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyPropertyChanges (entitySetName As String, changed As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyPropertyChanges(System::String ^ entitySetName, System::Object ^ changed);" />
+      <MemberSignature Language="F#" Value="member this.ApplyPropertyChanges : string * obj -&gt; unit" Usage="objectContext.ApplyPropertyChanges (entitySetName, changed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -474,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Attach(System.Data.Objects.DataClasses.IEntityWithKey)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As IEntityWithKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Data::Objects::DataClasses::IEntityWithKey ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.Attach : System.Data.Objects.DataClasses.IEntityWithKey -&gt; unit" Usage="objectContext.Attach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -531,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.AttachTo(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachTo (entitySetName As String, entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachTo(System::String ^ entitySetName, System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.AttachTo : string * obj -&gt; unit" Usage="objectContext.AttachTo (entitySetName, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -606,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CommandTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTimeout : Nullable&lt;int&gt; with get, set" Usage="System.Data.Objects.ObjectContext.CommandTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -644,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbConnection ^ Connection { System::Data::Common::DbConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.Common.DbConnection" Usage="System.Data.Objects.ObjectContext.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -680,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.ContextOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextOptions As ObjectContextOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContextOptions ^ ContextOptions { System::Data::Objects::ObjectContextOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextOptions : System.Data.Objects.ObjectContextOptions" Usage="System.Data.Objects.ObjectContext.ContextOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -700,6 +715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateDatabase" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateDatabase ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateDatabase();" />
+      <MemberSignature Language="F#" Value="member this.CreateDatabase : unit -&gt; unit" Usage="objectContext.CreateDatabase " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -733,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateDatabaseScript" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDatabaseScript () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateDatabaseScript();" />
+      <MemberSignature Language="F#" Value="member this.CreateDatabaseScript : unit -&gt; string" Usage="objectContext.CreateDatabaseScript " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -767,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateEntityKey(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateEntityKey (entitySetName As String, entity As Object) As EntityKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::EntityKey ^ CreateEntityKey(System::String ^ entitySetName, System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.CreateEntityKey : string * obj -&gt; System.Data.EntityKey" Usage="objectContext.CreateEntityKey (entitySetName, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -821,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateObject``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateObject(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T CreateObject();" />
+      <MemberSignature Language="F#" Value="member this.CreateObject : unit -&gt; 'T (requires 'T : null)" Usage="objectContext.CreateObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -857,6 +876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateObjectSet``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateObjectSet(Of TEntity As Class) () As ObjectSet(Of TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class System::Data::Objects::ObjectSet&lt;TEntity&gt; ^ CreateObjectSet();" />
+      <MemberSignature Language="F#" Value="member this.CreateObjectSet : unit -&gt; System.Data.Objects.ObjectSet&lt;'Entity (requires 'Entity : null)&gt; (requires 'Entity : null)" Usage="objectContext.CreateObjectSet " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -891,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateObjectSet``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateObjectSet(Of TEntity As Class) (entitySetName As String) As ObjectSet(Of TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class System::Data::Objects::ObjectSet&lt;TEntity&gt; ^ CreateObjectSet(System::String ^ entitySetName);" />
+      <MemberSignature Language="F#" Value="member this.CreateObjectSet : string -&gt; System.Data.Objects.ObjectSet&lt;'Entity (requires 'Entity : null)&gt; (requires 'Entity : null)" Usage="objectContext.CreateObjectSet entitySetName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -932,6 +953,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateProxyTypes(System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateProxyTypes (types As IEnumerable(Of Type))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateProxyTypes(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ types);" />
+      <MemberSignature Language="F#" Value="member this.CreateProxyTypes : seq&lt;Type&gt; -&gt; unit" Usage="objectContext.CreateProxyTypes types" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -964,6 +986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateQuery``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateQuery(Of T) (queryString As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ CreateQuery(System::String ^ queryString, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.CreateQuery : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectQuery&lt;'T&gt;" Usage="objectContext.CreateQuery (queryString, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1018,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.DatabaseExists" />
       <MemberSignature Language="VB.NET" Value="Public Function DatabaseExists () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DatabaseExists();" />
+      <MemberSignature Language="F#" Value="member this.DatabaseExists : unit -&gt; bool" Usage="objectContext.DatabaseExists " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1051,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.DefaultContainerName" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultContainerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultContainerName : string with get, set" Usage="System.Data.Objects.ObjectContext.DefaultContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1080,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.DeleteDatabase" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteDatabase ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteDatabase();" />
+      <MemberSignature Language="F#" Value="member this.DeleteDatabase : unit -&gt; unit" Usage="objectContext.DeleteDatabase " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1112,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.DeleteObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteObject (entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteObject(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.DeleteObject : obj -&gt; unit" Usage="objectContext.DeleteObject entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1166,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Detach(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.Detach : obj -&gt; unit" Usage="objectContext.Detach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1220,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.DetectChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub DetectChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DetectChanges();" />
+      <MemberSignature Language="F#" Value="member this.DetectChanges : unit -&gt; unit" Usage="objectContext.DetectChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1249,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="objectContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1283,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="objectContext.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1316,6 +1347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteFunction (functionName As String, ParamArray parameters As ObjectParameter()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteFunction(System::String ^ functionName, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteFunction : string * System.Data.Objects.ObjectParameter[] -&gt; int" Usage="objectContext.ExecuteFunction (functionName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1359,6 +1391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteFunction(Of TElement) (functionName As String, ParamArray parameters As ObjectParameter()) As ObjectResult(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Data::Objects::ObjectResult&lt;TElement&gt; ^ ExecuteFunction(System::String ^ functionName, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteFunction : string * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectResult&lt;'Element&gt;" Usage="objectContext.ExecuteFunction (functionName, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1416,6 +1449,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TElement&gt; ExecuteFunction&lt;TElement&gt;(string functionName, valuetype System.Data.Objects.MergeOption mergeOption, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction``1(System.String,System.Data.Objects.MergeOption,System.Data.Objects.ObjectParameter[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Data::Objects::ObjectResult&lt;TElement&gt; ^ ExecuteFunction(System::String ^ functionName, System::Data::Objects::MergeOption mergeOption, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteFunction : string * System.Data.Objects.MergeOption * System.Data.Objects.ObjectParameter[] -&gt; System.Data.Objects.ObjectResult&lt;'Element&gt;" Usage="objectContext.ExecuteFunction (functionName, mergeOption, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1474,6 +1508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreCommand(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteStoreCommand (commandText As String, ParamArray parameters As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteStoreCommand(System::String ^ commandText, ... cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteStoreCommand : string * obj[] -&gt; int" Usage="objectContext.ExecuteStoreCommand (commandText, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1523,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteStoreQuery(Of TElement) (commandText As String, ParamArray parameters As Object()) As ObjectResult(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Data::Objects::ObjectResult&lt;TElement&gt; ^ ExecuteStoreQuery(System::String ^ commandText, ... cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteStoreQuery : string * obj[] -&gt; System.Data.Objects.ObjectResult&lt;'Element&gt;" Usage="objectContext.ExecuteStoreQuery (commandText, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1581,6 +1617,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TEntity&gt; ExecuteStoreQuery&lt;TEntity&gt;(string commandText, string entitySetName, valuetype System.Data.Objects.MergeOption mergeOption, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.String,System.Data.Objects.MergeOption,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; System::Data::Objects::ObjectResult&lt;TEntity&gt; ^ ExecuteStoreQuery(System::String ^ commandText, System::String ^ entitySetName, System::Data::Objects::MergeOption mergeOption, ... cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteStoreQuery : string * string * System.Data.Objects.MergeOption * obj[] -&gt; System.Data.Objects.ObjectResult&lt;'Entity&gt;" Usage="objectContext.ExecuteStoreQuery (commandText, entitySetName, mergeOption, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1644,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.GetKnownProxyTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownProxyTypes () As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ GetKnownProxyTypes();" />
+      <MemberSignature Language="F#" Value="static member GetKnownProxyTypes : unit -&gt; seq&lt;Type&gt;" Usage="System.Data.Objects.ObjectContext.GetKnownProxyTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1672,6 +1710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.GetObjectByKey(System.Data.EntityKey)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetObjectByKey (key As EntityKey) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObjectByKey(System::Data::EntityKey ^ key);" />
+      <MemberSignature Language="F#" Value="member this.GetObjectByKey : System.Data.EntityKey -&gt; obj" Usage="objectContext.GetObjectByKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1718,6 +1757,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetObjectType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.GetObjectType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetObjectType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetObjectType : Type -&gt; Type" Usage="System.Data.Objects.ObjectContext.GetObjectType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1766,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.LoadProperty(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadProperty (entity As Object, navigationProperty As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadProperty(System::Object ^ entity, System::String ^ navigationProperty);" />
+      <MemberSignature Language="F#" Value="member this.LoadProperty : obj * string -&gt; unit" Usage="objectContext.LoadProperty (entity, navigationProperty)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1808,6 +1849,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadProperty(object entity, string navigationProperty, valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.LoadProperty(System.Object,System.String,System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadProperty(System::Object ^ entity, System::String ^ navigationProperty, System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="member this.LoadProperty : obj * string * System.Data.Objects.MergeOption -&gt; unit" Usage="objectContext.LoadProperty (entity, navigationProperty, mergeOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1851,6 +1893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.LoadProperty``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadProperty(Of TEntity) (entity As TEntity, selector As Expression(Of Func(Of TEntity, Object)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; void LoadProperty(TEntity entity, System::Linq::Expressions::Expression&lt;Func&lt;TEntity, System::Object ^&gt; ^&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="member this.LoadProperty : 'Entity * System.Linq.Expressions.Expression&lt;Func&lt;'Entity, obj&gt;&gt; -&gt; unit" Usage="objectContext.LoadProperty (entity, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1901,6 +1944,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadProperty&lt;TEntity&gt;(!!TEntity entity, class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!TEntity, object&gt;&gt; selector, valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.LoadProperty``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; void LoadProperty(TEntity entity, System::Linq::Expressions::Expression&lt;Func&lt;TEntity, System::Object ^&gt; ^&gt; ^ selector, System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="member this.LoadProperty : 'Entity * System.Linq.Expressions.Expression&lt;Func&lt;'Entity, obj&gt;&gt; * System.Data.Objects.MergeOption -&gt; unit" Usage="objectContext.LoadProperty (entity, selector, mergeOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1954,6 +1998,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.MetadataWorkspace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataWorkspace As MetadataWorkspace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::MetadataWorkspace ^ MetadataWorkspace { System::Data::Metadata::Edm::MetadataWorkspace ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataWorkspace : System.Data.Metadata.Edm.MetadataWorkspace" Usage="System.Data.Objects.ObjectContext.MetadataWorkspace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1986,6 +2031,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.ObjectContext.ObjectMaterialized" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectMaterialized As ObjectMaterializedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::Objects::ObjectMaterializedEventHandler ^ ObjectMaterialized;" />
+      <MemberSignature Language="F#" Value="member this.ObjectMaterialized : System.Data.Objects.ObjectMaterializedEventHandler " Usage="member this.ObjectMaterialized : System.Data.Objects.ObjectMaterializedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2012,6 +2058,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.ObjectStateManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectStateManager As ObjectStateManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectStateManager ^ ObjectStateManager { System::Data::Objects::ObjectStateManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectStateManager : System.Data.Objects.ObjectStateManager" Usage="System.Data.Objects.ObjectContext.ObjectStateManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2047,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectContext.QueryProvider" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property QueryProvider As IQueryProvider" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Linq::IQueryProvider ^ QueryProvider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryProvider : System.Linq.IQueryProvider" Usage="System.Data.Objects.ObjectContext.QueryProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2083,6 +2131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Data.Objects.RefreshMode refreshMode, class System.Collections.IEnumerable collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Refresh(System.Data.Objects.RefreshMode,System.Collections.IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh(System::Data::Objects::RefreshMode refreshMode, System::Collections::IEnumerable ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.Refresh : System.Data.Objects.RefreshMode * System.Collections.IEnumerable -&gt; unit" Usage="objectContext.Refresh (refreshMode, collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2130,6 +2179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Data.Objects.RefreshMode refreshMode, object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Refresh(System.Data.Objects.RefreshMode,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh(System::Data::Objects::RefreshMode refreshMode, System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="member this.Refresh : System.Data.Objects.RefreshMode * obj -&gt; unit" Usage="objectContext.Refresh (refreshMode, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2195,6 +2245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.SaveChanges" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveChanges () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int SaveChanges();" />
+      <MemberSignature Language="F#" Value="member this.SaveChanges : unit -&gt; int" Usage="objectContext.SaveChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2236,6 +2287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.SaveChanges(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveChanges (acceptChangesDuringSave As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int SaveChanges(bool acceptChangesDuringSave);" />
+      <MemberSignature Language="F#" Value="member this.SaveChanges : bool -&gt; int" Usage="objectContext.SaveChanges acceptChangesDuringSave" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2279,6 +2331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.SaveChanges(System.Data.Objects.SaveOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SaveChanges (options As SaveOptions) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int SaveChanges(System::Data::Objects::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="abstract member SaveChanges : System.Data.Objects.SaveOptions -&gt; int&#xA;override this.SaveChanges : System.Data.Objects.SaveOptions -&gt; int" Usage="objectContext.SaveChanges options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2317,6 +2370,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.ObjectContext.SavingChanges" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SavingChanges As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SavingChanges;" />
+      <MemberSignature Language="F#" Value="member this.SavingChanges : EventHandler " Usage="member this.SavingChanges : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2351,6 +2405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Translate(Of TElement) (reader As DbDataReader) As ObjectResult(Of TElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Data::Objects::ObjectResult&lt;TElement&gt; ^ Translate(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="member this.Translate : System.Data.Common.DbDataReader -&gt; System.Data.Objects.ObjectResult&lt;'Element&gt;" Usage="objectContext.Translate reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2394,6 +2449,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TEntity&gt; Translate&lt;TEntity&gt;(class System.Data.Common.DbDataReader reader, string entitySetName, valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader,System.String,System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; System::Data::Objects::ObjectResult&lt;TEntity&gt; ^ Translate(System::Data::Common::DbDataReader ^ reader, System::String ^ entitySetName, System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="member this.Translate : System.Data.Common.DbDataReader * string * System.Data.Objects.MergeOption -&gt; System.Data.Objects.ObjectResult&lt;'Entity&gt;" Usage="objectContext.Translate (reader, entitySetName, mergeOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2444,6 +2500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.TryGetObjectByKey(System.Data.EntityKey,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetObjectByKey (key As EntityKey, ByRef value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetObjectByKey(System::Data::EntityKey ^ key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetObjectByKey : System.Data.EntityKey *  -&gt; bool" Usage="objectContext.TryGetObjectByKey (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

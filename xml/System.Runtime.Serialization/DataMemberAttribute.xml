@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataMemberAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataMemberAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataMemberAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataMemberAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property EmitDefaultValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitDefaultValue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EmitDefaultValue : bool with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameSetExplicitly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameSetExplicitly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNameSetExplicitly : bool" Usage="System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

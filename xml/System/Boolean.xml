@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Boolean" />
   <TypeSignature Language="VB.NET" Value="Public Structure Boolean&#xA;Implements IComparable, IComparable(Of Boolean), IConvertible, IEquatable(Of Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public value class Boolean : IComparable, IComparable&lt;bool&gt;, IConvertible, IEquatable&lt;bool&gt;" />
+  <TypeSignature Language="F#" Value="type bool = struct&#xA;    interface IConvertible" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.CompareTo(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(bool value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : bool -&gt; int&#xA;override this.CompareTo : bool -&gt; int" Usage="bool.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -302,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="bool.CompareTo obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -387,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.Equals(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(bool obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : bool -&gt; bool" Usage="bool.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -438,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bool.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -486,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Boolean.FalseString" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FalseString As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FalseString;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FalseString : string" Usage="System.bool.FalseString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -530,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bool.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -573,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="bool.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -607,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.Parse(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As ReadOnlySpan(Of Char)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Parse(ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="System.bool.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -631,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; bool" Usage="System.bool.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1479,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="bool.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1532,6 +1543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="bool.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -1579,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Boolean.TrueString" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrueString As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ TrueString;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TrueString : string" Usage="System.bool.TrueString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1623,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.TryFormat(System.Span{System.Char},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryFormat(Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  -&gt; bool" Usage="bool.TryFormat (destination, charsWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1649,6 +1663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.TryParse(System.ReadOnlySpan{System.Char},System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As ReadOnlySpan(Of Char), ByRef result As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; value, [Runtime::InteropServices::Out] bool % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.bool.TryParse (value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1675,6 +1690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Boolean.TryParse(System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As String, ByRef result As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] bool % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.bool.TryParse (value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

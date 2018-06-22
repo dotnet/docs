@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationDelta" />
   <TypeSignature Language="VB.NET" Value="Public Class ManipulationDelta" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManipulationDelta" />
+  <TypeSignature Language="F#" Value="type ManipulationDelta = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDelta.#ctor(System.Windows.Vector,System.Double,System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (translation As Vector, rotation As Double, scale As Vector, expansion As Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManipulationDelta(System::Windows::Vector translation, double rotation, System::Windows::Vector scale, System::Windows::Vector expansion);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.ManipulationDelta : System.Windows.Vector * double * System.Windows.Vector * System.Windows.Vector -&gt; System.Windows.Input.ManipulationDelta" Usage="new System.Windows.Input.ManipulationDelta (translation, rotation, scale, expansion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDelta.Expansion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expansion As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector Expansion { System::Windows::Vector get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expansion : System.Windows.Vector" Usage="System.Windows.Input.ManipulationDelta.Expansion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDelta.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rotation As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Rotation { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : double" Usage="System.Windows.Input.ManipulationDelta.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDelta.Scale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scale As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector Scale { System::Windows::Vector get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : System.Windows.Vector" Usage="System.Windows.Input.ManipulationDelta.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDelta.Translation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Translation As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector Translation { System::Windows::Vector get(); };" />
+      <MemberSignature Language="F#" Value="member this.Translation : System.Windows.Vector" Usage="System.Windows.Input.ManipulationDelta.Translation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

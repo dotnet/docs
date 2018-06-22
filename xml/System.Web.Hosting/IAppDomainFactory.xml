@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppDomainFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAppDomainFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAppDomainFactory" />
+  <TypeSignature Language="F#" Value="type IAppDomainFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (module As String, typeName As String, appId As String, appPath As String, strUrlOfAppOrigin As String, iZone As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Create(System::String ^ module, System::String ^ typeName, System::String ^ appId, System::String ^ appPath, System::String ^ strUrlOfAppOrigin, int iZone);" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string * string * string * string * int -&gt; obj" Usage="iAppDomainFactory.Create (module, typeName, appId, appPath, strUrlOfAppOrigin, iZone)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

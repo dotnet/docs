@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.EncodingFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum EncodingFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class EncodingFormat" />
+  <TypeSignature Language="F#" Value="type EncodingFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.EncodingFormat.ALaw" />
       <MemberSignature Language="VB.NET" Value="ALaw" />
       <MemberSignature Language="C++ CLI" Value="ALaw" />
+      <MemberSignature Language="F#" Value="ALaw = 6" Usage="System.Speech.AudioFormat.EncodingFormat.ALaw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.EncodingFormat.Pcm" />
       <MemberSignature Language="VB.NET" Value="Pcm" />
       <MemberSignature Language="C++ CLI" Value="Pcm" />
+      <MemberSignature Language="F#" Value="Pcm = 1" Usage="System.Speech.AudioFormat.EncodingFormat.Pcm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.EncodingFormat.ULaw" />
       <MemberSignature Language="VB.NET" Value="ULaw" />
       <MemberSignature Language="C++ CLI" Value="ULaw" />
+      <MemberSignature Language="F#" Value="ULaw = 7" Usage="System.Speech.AudioFormat.EncodingFormat.ULaw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

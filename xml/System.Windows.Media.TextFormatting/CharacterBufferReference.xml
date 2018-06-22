@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterBufferReference" />
   <TypeSignature Language="VB.NET" Value="Public Structure CharacterBufferReference&#xA;Implements IEquatable(Of CharacterBufferReference)" />
   <TypeSignature Language="C++ CLI" Value="public value class CharacterBufferReference : IEquatable&lt;System::Windows::Media::TextFormatting::CharacterBufferReference&gt;" />
+  <TypeSignature Language="F#" Value="type CharacterBufferReference = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* unsafeCharacterString, int32 characterLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.#ctor(System.Char*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterBufferReference(char* unsafeCharacterString, int characterLength);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.CharacterBufferReference : nativeptr&lt;char&gt; * int -&gt; System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="new System.Windows.Media.TextFormatting.CharacterBufferReference (unsafeCharacterString, characterLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.#ctor(System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (characterArray As Char(), offsetToFirstChar As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterBufferReference(cli::array &lt;char&gt; ^ characterArray, int offsetToFirstChar);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.CharacterBufferReference : char[] * int -&gt; System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="new System.Windows.Media.TextFormatting.CharacterBufferReference (characterArray, offsetToFirstChar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (characterString As String, offsetToFirstChar As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterBufferReference(System::String ^ characterString, int offsetToFirstChar);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.CharacterBufferReference : string * int -&gt; System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="new System.Windows.Media.TextFormatting.CharacterBufferReference (characterString, offsetToFirstChar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="characterBufferReference.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.Equals(System.Windows.Media.TextFormatting.CharacterBufferReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As CharacterBufferReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::TextFormatting::CharacterBufferReference value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.TextFormatting.CharacterBufferReference -&gt; bool" Usage="characterBufferReference.Equals value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="characterBufferReference.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.op_Equality(System.Windows.Media.TextFormatting.CharacterBufferReference,System.Windows.Media.TextFormatting.CharacterBufferReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CharacterBufferReference, right As CharacterBufferReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::TextFormatting::CharacterBufferReference left, System::Windows::Media::TextFormatting::CharacterBufferReference right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.TextFormatting.CharacterBufferReference * System.Windows.Media.TextFormatting.CharacterBufferReference -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterBufferReference.op_Inequality(System.Windows.Media.TextFormatting.CharacterBufferReference,System.Windows.Media.TextFormatting.CharacterBufferReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CharacterBufferReference, right As CharacterBufferReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::TextFormatting::CharacterBufferReference left, System::Windows::Media::TextFormatting::CharacterBufferReference right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.TextFormatting.CharacterBufferReference * System.Windows.Media.TextFormatting.CharacterBufferReference -&gt; bool" Usage="System.Windows.Media.TextFormatting.CharacterBufferReference.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

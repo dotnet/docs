@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintQueueCollection&#xA;Inherits PrintSystemObjects&#xA;Implements IDisposable, IEnumerable(Of PrintQueue)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintQueueCollection : System::Printing::PrintSystemObjects, IDisposable, System::Collections::Generic::IEnumerable&lt;System::Printing::PrintQueue ^&gt;" />
+  <TypeSignature Language="F#" Value="type PrintQueueCollection = class&#xA;    inherit PrintSystemObjects&#xA;    interface seq&lt;PrintQueue&gt;&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string[] propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.#ctor(System.Printing.PrintServer,System.String[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueCollection(System::Printing::PrintServer ^ printServer, cli::array &lt;System::String ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueCollection : System.Printing.PrintServer * string[] -&gt; System.Printing.PrintQueueCollection" Usage="new System.Printing.PrintQueueCollection (printServer, propertyFilter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Printing.PrintServer printServer, string[] propertyFilter, valuetype System.Printing.EnumeratedPrintQueueTypes[] enumerationFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.#ctor(System.Printing.PrintServer,System.String[],System.Printing.EnumeratedPrintQueueTypes[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueCollection(System::Printing::PrintServer ^ printServer, cli::array &lt;System::String ^&gt; ^ propertyFilter, cli::array &lt;System::Printing::EnumeratedPrintQueueTypes&gt; ^ enumerationFlag);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueCollection : System.Printing.PrintServer * string[] * System.Printing.EnumeratedPrintQueueTypes[] -&gt; System.Printing.PrintQueueCollection" Usage="new System.Printing.PrintQueueCollection (printServer, propertyFilter, enumerationFlag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.Add(System.Printing.PrintQueue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (printObject As PrintQueue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Printing::PrintQueue ^ printObject);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Printing.PrintQueue -&gt; unit" Usage="printQueueCollection.Add printObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="printQueueCollection.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator(Of PrintQueue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Printing::PrintQueue ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Printing.PrintQueue&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Printing.PrintQueue&gt;" Usage="printQueueCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueCollection.GetNonGenericEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNonGenericEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetNonGenericEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member GetNonGenericEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetNonGenericEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="printQueueCollection.GetNonGenericEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Printing.PrintQueueCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

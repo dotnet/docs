@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.RequiredAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class RequiredAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type RequiredAttribute = class&#xA;    inherit ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowEmptyStrings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowEmptyStrings { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowEmptyStrings : bool with get, set" Usage="System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RequiredAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="requiredAttribute.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

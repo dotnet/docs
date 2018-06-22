@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.OverloadGroupAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OverloadGroupAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class OverloadGroupAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type OverloadGroupAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.OverloadGroupAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OverloadGroupAttribute(System::String ^ groupName);" />
+      <MemberSignature Language="F#" Value="new System.Activities.OverloadGroupAttribute : string -&gt; System.Activities.OverloadGroupAttribute" Usage="new System.Activities.OverloadGroupAttribute groupName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.OverloadGroupAttribute.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.Activities.OverloadGroupAttribute.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.OverloadGroupAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.OverloadGroupAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

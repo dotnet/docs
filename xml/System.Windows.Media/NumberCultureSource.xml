@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.NumberCultureSource" />
   <TypeSignature Language="VB.NET" Value="Public Enum NumberCultureSource" />
   <TypeSignature Language="C++ CLI" Value="public enum class NumberCultureSource" />
+  <TypeSignature Language="F#" Value="type NumberCultureSource = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberCultureSource.Override" />
       <MemberSignature Language="VB.NET" Value="Override" />
       <MemberSignature Language="C++ CLI" Value="Override" />
+      <MemberSignature Language="F#" Value="Override = 2" Usage="System.Windows.Media.NumberCultureSource.Override" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberCultureSource.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Windows.Media.NumberCultureSource.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberCultureSource.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 1" Usage="System.Windows.Media.NumberCultureSource.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

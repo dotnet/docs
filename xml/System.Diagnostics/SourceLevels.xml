@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SourceLevels" />
   <TypeSignature Language="VB.NET" Value="Public Enum SourceLevels" />
   <TypeSignature Language="C++ CLI" Value="public enum class SourceLevels" />
+  <TypeSignature Language="F#" Value="type SourceLevels = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.ActivityTracing" />
       <MemberSignature Language="VB.NET" Value="ActivityTracing" />
       <MemberSignature Language="C++ CLI" Value="ActivityTracing" />
+      <MemberSignature Language="F#" Value="ActivityTracing = 65280" Usage="System.Diagnostics.SourceLevels.ActivityTracing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = -1" Usage="System.Diagnostics.SourceLevels.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Critical" />
       <MemberSignature Language="VB.NET" Value="Critical" />
       <MemberSignature Language="C++ CLI" Value="Critical" />
+      <MemberSignature Language="F#" Value="Critical = 1" Usage="System.Diagnostics.SourceLevels.Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 3" Usage="System.Diagnostics.SourceLevels.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Information" />
       <MemberSignature Language="VB.NET" Value="Information" />
       <MemberSignature Language="C++ CLI" Value="Information" />
+      <MemberSignature Language="F#" Value="Information = 15" Usage="System.Diagnostics.SourceLevels.Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Diagnostics.SourceLevels.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Verbose" />
       <MemberSignature Language="VB.NET" Value="Verbose" />
       <MemberSignature Language="C++ CLI" Value="Verbose" />
+      <MemberSignature Language="F#" Value="Verbose = 31" Usage="System.Diagnostics.SourceLevels.Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SourceLevels.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 7" Usage="System.Diagnostics.SourceLevels.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

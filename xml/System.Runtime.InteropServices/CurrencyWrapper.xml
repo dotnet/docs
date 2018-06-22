@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CurrencyWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CurrencyWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class CurrencyWrapper sealed" />
+  <TypeSignature Language="F#" Value="type CurrencyWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrencyWrapper(System::Decimal obj);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.CurrencyWrapper : decimal -&gt; System.Runtime.InteropServices.CurrencyWrapper" Usage="new System.Runtime.InteropServices.CurrencyWrapper obj" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrencyWrapper(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.CurrencyWrapper : obj -&gt; System.Runtime.InteropServices.CurrencyWrapper" Usage="new System.Runtime.InteropServices.CurrencyWrapper obj" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.CurrencyWrapper.WrappedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal WrappedObject { System::Decimal get(); };" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : decimal" Usage="System.Runtime.InteropServices.CurrencyWrapper.WrappedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

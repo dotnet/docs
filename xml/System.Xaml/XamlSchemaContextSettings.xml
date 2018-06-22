@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlSchemaContextSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlSchemaContextSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlSchemaContextSettings" />
+  <TypeSignature Language="F#" Value="type XamlSchemaContextSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContextSettings.#ctor(System.Xaml.XamlSchemaContextSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlSchemaContextSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContextSettings(System::Xaml::XamlSchemaContextSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlSchemaContextSettings : System.Xaml.XamlSchemaContextSettings -&gt; System.Xaml.XamlSchemaContextSettings" Usage="new System.Xaml.XamlSchemaContextSettings settings" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Property FullyQualifyAssemblyNamesInClrNamespaces As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullyQualifyAssemblyNamesInClrNamespaces { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FullyQualifyAssemblyNamesInClrNamespaces : bool with get, set" Usage="System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportMarkupExtensionsWithDuplicateArity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportMarkupExtensionsWithDuplicateArity { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportMarkupExtensionsWithDuplicateArity : bool with get, set" Usage="System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

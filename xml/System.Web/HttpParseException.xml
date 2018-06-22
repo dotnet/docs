@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpParseException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpParseException&#xA;Inherits HttpException" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpParseException sealed : System::Web::HttpException" />
+  <TypeSignature Language="F#" Value="type HttpParseException = class&#xA;    inherit HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpParseException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpParseException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpParseException : string -&gt; System.Web.HttpParseException" Usage="new System.Web.HttpParseException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpParseException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpParseException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpParseException : string * Exception -&gt; System.Web.HttpParseException" Usage="new System.Web.HttpParseException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpParseException.#ctor(System.String,System.Exception,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, virtualPath As String, sourceCode As String, line As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpParseException(System::String ^ message, Exception ^ innerException, System::String ^ virtualPath, System::String ^ sourceCode, int line);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpParseException : string * Exception * string * string * int -&gt; System.Web.HttpParseException" Usage="new System.Web.HttpParseException (message, innerException, virtualPath, sourceCode, line)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpParseException.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Web.HttpParseException.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpParseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpParseException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpParseException.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Web.HttpParseException.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpParseException.ParserErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParserErrors As ParserErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ParserErrorCollection ^ ParserErrors { System::Web::ParserErrorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParserErrors : System.Web.ParserErrorCollection" Usage="System.Web.HttpParseException.ParserErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpParseException.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.Web.HttpParseException.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

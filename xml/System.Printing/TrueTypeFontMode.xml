@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.TrueTypeFontMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrueTypeFontMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrueTypeFontMode" />
+  <TypeSignature Language="F#" Value="type TrueTypeFontMode = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Printing.TrueTypeFontMode.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsNativeTrueTypeFont" />
       <MemberSignature Language="VB.NET" Value="DownloadAsNativeTrueTypeFont" />
       <MemberSignature Language="C++ CLI" Value="DownloadAsNativeTrueTypeFont" />
+      <MemberSignature Language="F#" Value="DownloadAsNativeTrueTypeFont = 4" Usage="System.Printing.TrueTypeFontMode.DownloadAsNativeTrueTypeFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsOutlineFont" />
       <MemberSignature Language="VB.NET" Value="DownloadAsOutlineFont" />
       <MemberSignature Language="C++ CLI" Value="DownloadAsOutlineFont" />
+      <MemberSignature Language="F#" Value="DownloadAsOutlineFont = 2" Usage="System.Printing.TrueTypeFontMode.DownloadAsOutlineFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsRasterFont" />
       <MemberSignature Language="VB.NET" Value="DownloadAsRasterFont" />
       <MemberSignature Language="C++ CLI" Value="DownloadAsRasterFont" />
+      <MemberSignature Language="F#" Value="DownloadAsRasterFont = 3" Usage="System.Printing.TrueTypeFontMode.DownloadAsRasterFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.RenderAsBitmap" />
       <MemberSignature Language="VB.NET" Value="RenderAsBitmap" />
       <MemberSignature Language="C++ CLI" Value="RenderAsBitmap" />
+      <MemberSignature Language="F#" Value="RenderAsBitmap = 5" Usage="System.Printing.TrueTypeFontMode.RenderAsBitmap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.TrueTypeFontMode.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

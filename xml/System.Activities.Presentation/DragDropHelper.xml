@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DragDropHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class DragDropHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class DragDropHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type DragDropHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.AllowDrop(System.Windows.IDataObject,System.Activities.Presentation.EditingContext,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllowDrop (draggedDataObject As IDataObject, context As EditingContext, ParamArray allowedItemTypes As Type()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AllowDrop(System::Windows::IDataObject ^ draggedDataObject, System::Activities::Presentation::EditingContext ^ context, ... cli::array &lt;Type ^&gt; ^ allowedItemTypes);" />
+      <MemberSignature Language="F#" Value="static member AllowDrop : System.Windows.IDataObject * System.Activities.Presentation.EditingContext * Type[] -&gt; bool" Usage="System.Activities.Presentation.DragDropHelper.AllowDrop (draggedDataObject, context, allowedItemTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.CompletedEffectsFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompletedEffectsFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ CompletedEffectsFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CompletedEffectsFormat : string" Usage="System.Activities.Presentation.DragDropHelper.CompletedEffectsFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.CompositeViewFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompositeViewFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ CompositeViewFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CompositeViewFormat : string" Usage="System.Activities.Presentation.DragDropHelper.CompositeViewFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.DoDragMove(System.Activities.Presentation.WorkflowViewElement,System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DoDragMove (draggedViewElement As WorkflowViewElement, referencePoint As Point) As DragDropEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DragDropEffects DoDragMove(System::Activities::Presentation::WorkflowViewElement ^ draggedViewElement, System::Windows::Point referencePoint);" />
+      <MemberSignature Language="F#" Value="static member DoDragMove : System.Activities.Presentation.WorkflowViewElement * System.Windows.Point -&gt; System.Windows.DragDropEffects" Usage="System.Activities.Presentation.DragDropHelper.DoDragMove (draggedViewElement, referencePoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.DragAnchorPointFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DragAnchorPointFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DragAnchorPointFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragAnchorPointFormat : string" Usage="System.Activities.Presentation.DragDropHelper.DragAnchorPointFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.DragSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DragSourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DragSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DragSourceProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.DragDropHelper.DragSourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.UIElement GetCompositeView(class System.Activities.Presentation.WorkflowViewElement workflowViewElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetCompositeView(System.Activities.Presentation.WorkflowViewElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::UIElement ^ GetCompositeView(System::Activities::Presentation::WorkflowViewElement ^ workflowViewElement);" />
+      <MemberSignature Language="F#" Value="static member GetCompositeView : System.Activities.Presentation.WorkflowViewElement -&gt; System.Windows.UIElement" Usage="System.Activities.Presentation.DragDropHelper.GetCompositeView workflowViewElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -204,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetCompositeView(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompositeView (e As DragEventArgs) As ICompositeView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::ICompositeView ^ GetCompositeView(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member GetCompositeView : System.Windows.DragEventArgs -&gt; System.Activities.Presentation.ICompositeView" Usage="System.Activities.Presentation.DragDropHelper.GetCompositeView e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDragDropAnchorPoint(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDragDropAnchorPoint (e As DragEventArgs) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point GetDragDropAnchorPoint(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member GetDragDropAnchorPoint : System.Windows.DragEventArgs -&gt; System.Windows.Point" Usage="System.Activities.Presentation.DragDropHelper.GetDragDropAnchorPoint e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDragDropCompletedEffects(System.Windows.DataObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDragDropCompletedEffects (data As DataObject) As DragDropEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DragDropEffects GetDragDropCompletedEffects(System::Windows::DataObject ^ data);" />
+      <MemberSignature Language="F#" Value="static member GetDragDropCompletedEffects : System.Windows.DataObject -&gt; System.Windows.DragDropEffects" Usage="System.Activities.Presentation.DragDropHelper.GetDragDropCompletedEffects data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDraggedModelItem(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDraggedModelItem (e As DragEventArgs) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Presentation::Model::ModelItem ^ GetDraggedModelItem(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member GetDraggedModelItem : System.Windows.DragEventArgs -&gt; System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.DragDropHelper.GetDraggedModelItem e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -315,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDraggedModelItems(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDraggedModelItems (e As DragEventArgs) As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ GetDraggedModelItems(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member GetDraggedModelItems : System.Windows.DragEventArgs -&gt; seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.DragDropHelper.GetDraggedModelItems e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -339,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDroppedObject(System.Windows.DependencyObject,System.Windows.DragEventArgs,System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDroppedObject (dropTarget As DependencyObject, e As DragEventArgs, context As EditingContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetDroppedObject(System::Windows::DependencyObject ^ dropTarget, System::Windows::DragEventArgs ^ e, System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetDroppedObject : System.Windows.DependencyObject * System.Windows.DragEventArgs * System.Activities.Presentation.EditingContext -&gt; obj" Usage="System.Activities.Presentation.DragDropHelper.GetDroppedObject (dropTarget, e, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -372,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.GetDroppedObjects(System.Windows.DependencyObject,System.Windows.DragEventArgs,System.Activities.Presentation.EditingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDroppedObjects (dropTarget As DependencyObject, e As DragEventArgs, context As EditingContext) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetDroppedObjects(System::Windows::DependencyObject ^ dropTarget, System::Windows::DragEventArgs ^ e, System::Activities::Presentation::EditingContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetDroppedObjects : System.Windows.DependencyObject * System.Windows.DragEventArgs * System.Activities.Presentation.EditingContext -&gt; seq&lt;obj&gt;" Usage="System.Activities.Presentation.DragDropHelper.GetDroppedObjects (dropTarget, e, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -400,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.ModelItemDataFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModelItemDataFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ModelItemDataFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ModelItemDataFormat : string" Usage="System.Activities.Presentation.DragDropHelper.ModelItemDataFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -418,6 +434,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCompositeView(class System.Activities.Presentation.WorkflowViewElement workflowViewElement, class System.Windows.UIElement dragSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.SetCompositeView(System.Activities.Presentation.WorkflowViewElement,System.Windows.UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCompositeView(System::Activities::Presentation::WorkflowViewElement ^ workflowViewElement, System::Windows::UIElement ^ dragSource);" />
+      <MemberSignature Language="F#" Value="static member SetCompositeView : System.Activities.Presentation.WorkflowViewElement * System.Windows.UIElement -&gt; unit" Usage="System.Activities.Presentation.DragDropHelper.SetCompositeView (workflowViewElement, dragSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -443,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.SetDragDropCompletedEffects(System.Windows.DragEventArgs,System.Windows.DragDropEffects)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDragDropCompletedEffects (e As DragEventArgs, completedEffects As DragDropEffects)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDragDropCompletedEffects(System::Windows::DragEventArgs ^ e, System::Windows::DragDropEffects completedEffects);" />
+      <MemberSignature Language="F#" Value="static member SetDragDropCompletedEffects : System.Windows.DragEventArgs * System.Windows.DragDropEffects -&gt; unit" Usage="System.Activities.Presentation.DragDropHelper.SetDragDropCompletedEffects (e, completedEffects)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -473,6 +491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.DragDropHelper.WorkflowItemTypeNameFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WorkflowItemTypeNameFormat As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ WorkflowItemTypeNameFormat;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WorkflowItemTypeNameFormat : string" Usage="System.Activities.Presentation.DragDropHelper.WorkflowItemTypeNameFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

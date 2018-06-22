@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GetPageCompletedEventHandler(sender As Object, e As GetPageCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GetPageCompletedEventHandler(System::Object ^ sender, GetPageCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GetPageCompletedEventHandler = delegate of obj * GetPageCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

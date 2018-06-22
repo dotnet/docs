@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollBarVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarVisibility" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarVisibility" />
+  <TypeSignature Language="F#" Value="type ScrollBarVisibility = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 1" Usage="System.Windows.Controls.ScrollBarVisibility.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 0" Usage="System.Windows.Controls.ScrollBarVisibility.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="C++ CLI" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 2" Usage="System.Windows.Controls.ScrollBarVisibility.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="C++ CLI" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 3" Usage="System.Windows.Controls.ScrollBarVisibility.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

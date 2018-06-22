@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageHeaderDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageHeaderDescription&#xA;Inherits MessagePartDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaderDescription : System::ServiceModel::Description::MessagePartDescription" />
+  <TypeSignature Language="F#" Value="type MessageHeaderDescription = class&#xA;    inherit MessagePartDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageHeaderDescription.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaderDescription(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MessageHeaderDescription : string * string -&gt; System.ServiceModel.Description.MessageHeaderDescription" Usage="new System.ServiceModel.Description.MessageHeaderDescription (name, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageHeaderDescription.Actor" />
       <MemberSignature Language="VB.NET" Value="Public Property Actor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Actor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Actor : string with get, set" Usage="System.ServiceModel.Description.MessageHeaderDescription.Actor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property MustUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MustUnderstand : bool with get, set" Usage="System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageHeaderDescription.Relay" />
       <MemberSignature Language="VB.NET" Value="Public Property Relay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Relay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Relay : bool with get, set" Usage="System.ServiceModel.Description.MessageHeaderDescription.Relay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageHeaderDescription.TypedHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property TypedHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TypedHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TypedHeader : bool with get, set" Usage="System.ServiceModel.Description.MessageHeaderDescription.TypedHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Progress`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Progress(Of T)&#xA;Implements IProgress(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Progress : IProgress&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type Progress&lt;'T&gt; = class&#xA;    interface IProgress&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Progress`1.#ctor(System.Action{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As Action(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Progress(Action&lt;T&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="new Progress&lt;'T&gt; : Action&lt;'T&gt; -&gt; Progress&lt;'T&gt;" Usage="new System.Progress&lt;'T&gt; handler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Progress`1.OnReport(`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReport (value As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReport(T value);" />
+      <MemberSignature Language="F#" Value="abstract member OnReport : 'T -&gt; unit&#xA;override this.OnReport : 'T -&gt; unit" Usage="progress.OnReport value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="E:System.Progress`1.ProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As EventHandler(Of T) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;T&gt; ^ ProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : EventHandler&lt;'T&gt; " Usage="member this.ProgressChanged : System.EventHandler&lt;'T&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

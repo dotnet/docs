@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebPartHelpMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebPartHelpMode" />
+  <TypeSignature Language="F#" Value="type WebPartHelpMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modal" />
       <MemberSignature Language="VB.NET" Value="Modal" />
       <MemberSignature Language="C++ CLI" Value="Modal" />
+      <MemberSignature Language="F#" Value="Modal = 0" Usage="System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modeless" />
       <MemberSignature Language="VB.NET" Value="Modeless" />
       <MemberSignature Language="C++ CLI" Value="Modeless" />
+      <MemberSignature Language="F#" Value="Modeless = 1" Usage="System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modeless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate" />
       <MemberSignature Language="VB.NET" Value="Navigate" />
       <MemberSignature Language="C++ CLI" Value="Navigate" />
+      <MemberSignature Language="F#" Value="Navigate = 2" Usage="System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

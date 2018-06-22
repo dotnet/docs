@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Scope" />
   <TypeSignature Language="VB.NET" Value="Public Class Scope" />
   <TypeSignature Language="C++ CLI" Value="public ref class Scope" />
+  <TypeSignature Language="F#" Value="type Scope = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (appliesToAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Scope(System::String ^ appliesToAddress);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Scope : string -&gt; System.IdentityModel.Scope" Usage="new System.IdentityModel.Scope appliesToAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Scope(System::String ^ appliesToAddress, System::IdentityModel::Tokens::EncryptingCredentials ^ encryptingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Scope : string * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Scope" Usage="new System.IdentityModel.Scope (appliesToAddress, encryptingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Scope(System::String ^ appliesToAddress, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Scope : string * System.IdentityModel.Tokens.SigningCredentials -&gt; System.IdentityModel.Scope" Usage="new System.IdentityModel.Scope (appliesToAddress, signingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.SigningCredentials signingCredentials, class System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Scope(System::String ^ appliesToAddress, System::IdentityModel::Tokens::SigningCredentials ^ signingCredentials, System::IdentityModel::Tokens::EncryptingCredentials ^ encryptingCredentials);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Scope : string * System.IdentityModel.Tokens.SigningCredentials * System.IdentityModel.Tokens.EncryptingCredentials -&gt; System.IdentityModel.Scope" Usage="new System.IdentityModel.Scope (appliesToAddress, signingCredentials, encryptingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.AppliesToAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AppliesToAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AppliesToAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppliesToAddress : string with get, set" Usage="System.IdentityModel.Scope.AppliesToAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.EncryptingCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EncryptingCredentials As EncryptingCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IdentityModel::Tokens::EncryptingCredentials ^ EncryptingCredentials { System::IdentityModel::Tokens::EncryptingCredentials ^ get(); void set(System::IdentityModel::Tokens::EncryptingCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptingCredentials : System.IdentityModel.Tokens.EncryptingCredentials with get, set" Usage="System.IdentityModel.Scope.EncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Scope.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.ReplyToAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReplyToAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ReplyToAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyToAddress : string with get, set" Usage="System.IdentityModel.Scope.ReplyToAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -317,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.SigningCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SigningCredentials As SigningCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); void set(System::IdentityModel::Tokens::SigningCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningCredentials : System.IdentityModel.Tokens.SigningCredentials with get, set" Usage="System.IdentityModel.Scope.SigningCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SymmetricKeyEncryptionRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SymmetricKeyEncryptionRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SymmetricKeyEncryptionRequired : bool with get, set" Usage="System.IdentityModel.Scope.SymmetricKeyEncryptionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -365,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.TokenEncryptionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TokenEncryptionRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool TokenEncryptionRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenEncryptionRequired : bool with get, set" Usage="System.IdentityModel.Scope.TokenEncryptionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

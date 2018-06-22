@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Structure ActivityMetadata" />
   <TypeSignature Language="C++ CLI" Value="public value class ActivityMetadata" />
+  <TypeSignature Language="F#" Value="type ActivityMetadata = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddArgument(System.Activities.RuntimeArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As RuntimeArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(System::Activities::RuntimeArgument ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.AddArgument : System.Activities.RuntimeArgument -&gt; unit" Usage="activityMetadata.AddArgument argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddDefaultExtensionProvider``1(System.Func{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDefaultExtensionProvider(Of T As Class) (extensionProvider As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void AddDefaultExtensionProvider(Func&lt;T&gt; ^ extensionProvider);" />
+      <MemberSignature Language="F#" Value="member this.AddDefaultExtensionProvider : Func&lt;'T (requires 'T : null)&gt; -&gt; unit (requires 'T : null)" Usage="activityMetadata.AddDefaultExtensionProvider extensionProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddImportedChild(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddImportedChild (importedChild As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddImportedChild(System::Activities::Activity ^ importedChild);" />
+      <MemberSignature Language="F#" Value="member this.AddImportedChild : System.Activities.Activity -&gt; unit" Usage="activityMetadata.AddImportedChild importedChild" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddImportedChild(System.Activities.Activity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddImportedChild (importedChild As Activity, origin As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddImportedChild(System::Activities::Activity ^ importedChild, System::Object ^ origin);" />
+      <MemberSignature Language="F#" Value="member this.AddImportedChild : System.Activities.Activity * obj -&gt; unit" Usage="activityMetadata.AddImportedChild (importedChild, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddImportedDelegate(System.Activities.ActivityDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddImportedDelegate (importedDelegate As ActivityDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddImportedDelegate(System::Activities::ActivityDelegate ^ importedDelegate);" />
+      <MemberSignature Language="F#" Value="member this.AddImportedDelegate : System.Activities.ActivityDelegate -&gt; unit" Usage="activityMetadata.AddImportedDelegate importedDelegate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddImportedDelegate(System.Activities.ActivityDelegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddImportedDelegate (importedDelegate As ActivityDelegate, origin As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddImportedDelegate(System::Activities::ActivityDelegate ^ importedDelegate, System::Object ^ origin);" />
+      <MemberSignature Language="F#" Value="member this.AddImportedDelegate : System.Activities.ActivityDelegate * obj -&gt; unit" Usage="activityMetadata.AddImportedDelegate (importedDelegate, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -228,6 +235,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(class System.Activities.Validation.ValidationError validationError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddValidationError(System.Activities.Validation.ValidationError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValidationError(System::Activities::Validation::ValidationError ^ validationError);" />
+      <MemberSignature Language="F#" Value="member this.AddValidationError : System.Activities.Validation.ValidationError -&gt; unit" Usage="activityMetadata.AddValidationError validationError" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -258,6 +266,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddValidationError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValidationError (validationErrorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValidationError(System::String ^ validationErrorMessage);" />
+      <MemberSignature Language="F#" Value="member this.AddValidationError : string -&gt; unit" Usage="activityMetadata.AddValidationError validationErrorMessage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -296,6 +305,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddVariable(System.Activities.Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddVariable(System::Activities::Variable ^ variable);" />
+      <MemberSignature Language="F#" Value="member this.AddVariable : System.Activities.Variable -&gt; unit" Usage="activityMetadata.AddVariable variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -325,6 +335,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable, object origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.AddVariable(System.Activities.Variable,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddVariable(System::Activities::Variable ^ variable, System::Object ^ origin);" />
+      <MemberSignature Language="F#" Value="member this.AddVariable : System.Activities.Variable * obj -&gt; unit" Usage="activityMetadata.AddVariable (variable, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -349,6 +360,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Bind(class System.Activities.Argument binding, class System.Activities.RuntimeArgument argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.Bind(System.Activities.Argument,System.Activities.RuntimeArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::Activities::Argument ^ binding, System::Activities::RuntimeArgument ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.Bind : System.Activities.Argument * System.Activities.RuntimeArgument -&gt; unit" Usage="activityMetadata.Bind (binding, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -374,6 +386,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityMetadata.Environment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As LocationReferenceEnvironment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::LocationReferenceEnvironment ^ Environment { System::Activities::LocationReferenceEnvironment ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Environment : System.Activities.LocationReferenceEnvironment" Usage="System.Activities.ActivityMetadata.Environment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -394,6 +407,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="activityMetadata.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -419,6 +433,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.GetArgumentsWithReflection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArgumentsWithReflection () As Collection(Of RuntimeArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Activities::RuntimeArgument ^&gt; ^ GetArgumentsWithReflection();" />
+      <MemberSignature Language="F#" Value="member this.GetArgumentsWithReflection : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;" Usage="activityMetadata.GetArgumentsWithReflection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -447,6 +462,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="activityMetadata.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -468,6 +484,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.GetImportedChildrenWithReflection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImportedChildrenWithReflection () As Collection(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Activities::Activity ^&gt; ^ GetImportedChildrenWithReflection();" />
+      <MemberSignature Language="F#" Value="member this.GetImportedChildrenWithReflection : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" Usage="activityMetadata.GetImportedChildrenWithReflection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -496,6 +513,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.GetImportedDelegatesWithReflection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImportedDelegatesWithReflection () As Collection(Of ActivityDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Activities::ActivityDelegate ^&gt; ^ GetImportedDelegatesWithReflection();" />
+      <MemberSignature Language="F#" Value="member this.GetImportedDelegatesWithReflection : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" Usage="activityMetadata.GetImportedDelegatesWithReflection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -524,6 +542,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.GetVariablesWithReflection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVariablesWithReflection () As Collection(Of Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ GetVariablesWithReflection();" />
+      <MemberSignature Language="F#" Value="member this.GetVariablesWithReflection : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" Usage="activityMetadata.GetVariablesWithReflection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -552,6 +571,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityMetadata.HasViolations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasViolations As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasViolations { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasViolations : bool" Usage="System.Activities.ActivityMetadata.HasViolations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -573,6 +593,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.op_Equality(System.Activities.ActivityMetadata,System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ActivityMetadata, right As ActivityMetadata) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Activities::ActivityMetadata left, System::Activities::ActivityMetadata right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Activities.ActivityMetadata * System.Activities.ActivityMetadata -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -600,6 +621,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.op_Inequality(System.Activities.ActivityMetadata,System.Activities.ActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ActivityMetadata, right As ActivityMetadata) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Activities::ActivityMetadata left, System::Activities::ActivityMetadata right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Activities.ActivityMetadata * System.Activities.ActivityMetadata -&gt; bool" Usage="System.Activities.ActivityMetadata.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -627,6 +649,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.RequireExtension(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequireExtension (extensionType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequireExtension(Type ^ extensionType);" />
+      <MemberSignature Language="F#" Value="member this.RequireExtension : Type -&gt; unit" Usage="activityMetadata.RequireExtension extensionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -657,6 +680,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.RequireExtension``1" />
       <MemberSignature Language="VB.NET" Value="Public Sub RequireExtension(Of T As Class) ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void RequireExtension();" />
+      <MemberSignature Language="F#" Value="member this.RequireExtension : unit -&gt; unit (requires 'T : null)" Usage="activityMetadata.RequireExtension " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -692,6 +716,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.SetArgumentsCollection(System.Collections.ObjectModel.Collection{System.Activities.RuntimeArgument})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetArgumentsCollection (arguments As Collection(Of RuntimeArgument))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetArgumentsCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::RuntimeArgument ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="member this.SetArgumentsCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; -&gt; unit" Usage="activityMetadata.SetArgumentsCollection arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -715,6 +740,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.SetImportedChildrenCollection(System.Collections.ObjectModel.Collection{System.Activities.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedChildrenCollection (importedChildren As Collection(Of Activity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedChildrenCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::Activity ^&gt; ^ importedChildren);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedChildrenCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; -&gt; unit" Usage="activityMetadata.SetImportedChildrenCollection importedChildren" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -745,6 +771,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.SetImportedDelegatesCollection(System.Collections.ObjectModel.Collection{System.Activities.ActivityDelegate})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedDelegatesCollection (importedDelegates As Collection(Of ActivityDelegate))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedDelegatesCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::ActivityDelegate ^&gt; ^ importedDelegates);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedDelegatesCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; -&gt; unit" Usage="activityMetadata.SetImportedDelegatesCollection importedDelegates" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -775,6 +802,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.SetValidationErrorsCollection(System.Collections.ObjectModel.Collection{System.Activities.Validation.ValidationError})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValidationErrorsCollection (validationErrors As Collection(Of ValidationError))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValidationErrorsCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::ValidationError ^&gt; ^ validationErrors);" />
+      <MemberSignature Language="F#" Value="member this.SetValidationErrorsCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt; -&gt; unit" Usage="activityMetadata.SetValidationErrorsCollection validationErrors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -798,6 +826,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.SetVariablesCollection(System.Collections.ObjectModel.Collection{System.Activities.Variable})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVariablesCollection (variables As Collection(Of Variable))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVariablesCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ variables);" />
+      <MemberSignature Language="F#" Value="member this.SetVariablesCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; -&gt; unit" Usage="activityMetadata.SetVariablesCollection variables" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

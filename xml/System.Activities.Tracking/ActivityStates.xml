@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.ActivityStates" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityStates" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityStates abstract sealed" />
+  <TypeSignature Language="F#" Value="type ActivityStates = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ActivityStates.Canceled" />
       <MemberSignature Language="VB.NET" Value="Public Const Canceled As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Canceled;" />
+      <MemberSignature Language="F#" Value="val mutable Canceled : string" Usage="System.Activities.Tracking.ActivityStates.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ActivityStates.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Const Closed As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Closed;" />
+      <MemberSignature Language="F#" Value="val mutable Closed : string" Usage="System.Activities.Tracking.ActivityStates.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ActivityStates.Executing" />
       <MemberSignature Language="VB.NET" Value="Public Const Executing As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Executing;" />
+      <MemberSignature Language="F#" Value="val mutable Executing : string" Usage="System.Activities.Tracking.ActivityStates.Executing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ActivityStates.Faulted" />
       <MemberSignature Language="VB.NET" Value="Public Const Faulted As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Faulted;" />
+      <MemberSignature Language="F#" Value="val mutable Faulted : string" Usage="System.Activities.Tracking.ActivityStates.Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

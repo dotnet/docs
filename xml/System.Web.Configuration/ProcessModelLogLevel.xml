@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelLogLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProcessModelLogLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProcessModelLogLevel" />
+  <TypeSignature Language="F#" Value="type ProcessModelLogLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Web.Configuration.ProcessModelLogLevel.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.Errors" />
       <MemberSignature Language="VB.NET" Value="Errors" />
       <MemberSignature Language="C++ CLI" Value="Errors" />
+      <MemberSignature Language="F#" Value="Errors = 2" Usage="System.Web.Configuration.ProcessModelLogLevel.Errors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Configuration.ProcessModelLogLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

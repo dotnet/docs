@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.StandardAccessRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum StandardAccessRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class StandardAccessRights" />
+  <TypeSignature Language="F#" Value="type StandardAccessRights = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 2031616" Usage="System.Messaging.StandardAccessRights.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.Messaging.StandardAccessRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Execute" />
       <MemberSignature Language="VB.NET" Value="Execute" />
       <MemberSignature Language="C++ CLI" Value="Execute" />
+      <MemberSignature Language="F#" Value="Execute = 131072" Usage="System.Messaging.StandardAccessRights.Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ModifyOwner" />
       <MemberSignature Language="VB.NET" Value="ModifyOwner" />
       <MemberSignature Language="C++ CLI" Value="ModifyOwner" />
+      <MemberSignature Language="F#" Value="ModifyOwner = 524288" Usage="System.Messaging.StandardAccessRights.ModifyOwner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.StandardAccessRights.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 131072" Usage="System.Messaging.StandardAccessRights.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ReadSecurity" />
       <MemberSignature Language="VB.NET" Value="ReadSecurity" />
       <MemberSignature Language="C++ CLI" Value="ReadSecurity" />
+      <MemberSignature Language="F#" Value="ReadSecurity = 131072" Usage="System.Messaging.StandardAccessRights.ReadSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -174,6 +182,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 851968" Usage="System.Messaging.StandardAccessRights.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -193,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.Messaging.StandardAccessRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -212,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 131072" Usage="System.Messaging.StandardAccessRights.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -231,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.WriteSecurity" />
       <MemberSignature Language="VB.NET" Value="WriteSecurity" />
       <MemberSignature Language="C++ CLI" Value="WriteSecurity" />
+      <MemberSignature Language="F#" Value="WriteSecurity = 262144" Usage="System.Messaging.StandardAccessRights.WriteSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

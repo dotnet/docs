@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateInstance" />
   <TypeSignature Language="VB.NET" Value="Public Enum TemplateInstance" />
   <TypeSignature Language="C++ CLI" Value="public enum class TemplateInstance" />
+  <TypeSignature Language="F#" Value="type TemplateInstance = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.TemplateInstance.Multiple" />
       <MemberSignature Language="VB.NET" Value="Multiple" />
       <MemberSignature Language="C++ CLI" Value="Multiple" />
+      <MemberSignature Language="F#" Value="Multiple = 0" Usage="System.Web.UI.TemplateInstance.Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.TemplateInstance.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Web.UI.TemplateInstance.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

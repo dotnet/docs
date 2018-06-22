@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapHierarchicalDataSourceView&#xA;Inherits HierarchicalDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapHierarchicalDataSourceView : System::Web::UI::HierarchicalDataSourceView" />
+  <TypeSignature Language="F#" Value="type SiteMapHierarchicalDataSourceView = class&#xA;    inherit HierarchicalDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView.#ctor(System.Web.SiteMapNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As SiteMapNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapHierarchicalDataSourceView(System::Web::SiteMapNode ^ node);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView : System.Web.SiteMapNode -&gt; System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" Usage="new System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView node" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView.#ctor(System.Web.SiteMapNodeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As SiteMapNodeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapHierarchicalDataSourceView(System::Web::SiteMapNodeCollection ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView : System.Web.SiteMapNodeCollection -&gt; System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" Usage="new System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView.Select" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Select () As IHierarchicalEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::IHierarchicalEnumerable ^ Select();" />
+      <MemberSignature Language="F#" Value="override this.Select : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="siteMapHierarchicalDataSourceView.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class PromptStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class PromptStyle" />
+  <TypeSignature Language="F#" Value="type PromptStyle = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptEmphasis)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (emphasis As PromptEmphasis)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PromptStyle(System::Speech::Synthesis::PromptEmphasis emphasis);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.PromptStyle : System.Speech.Synthesis.PromptEmphasis -&gt; System.Speech.Synthesis.PromptStyle" Usage="new System.Speech.Synthesis.PromptStyle emphasis" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptRate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rate As PromptRate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PromptStyle(System::Speech::Synthesis::PromptRate rate);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.PromptStyle : System.Speech.Synthesis.PromptRate -&gt; System.Speech.Synthesis.PromptStyle" Usage="new System.Speech.Synthesis.PromptStyle rate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -141,6 +144,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptVolume)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (volume As PromptVolume)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PromptStyle(System::Speech::Synthesis::PromptVolume volume);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.PromptStyle : System.Speech.Synthesis.PromptVolume -&gt; System.Speech.Synthesis.PromptStyle" Usage="new System.Speech.Synthesis.PromptStyle volume" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -219,6 +223,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PromptStyle.Emphasis" />
       <MemberSignature Language="VB.NET" Value="Public Property Emphasis As PromptEmphasis" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::PromptEmphasis Emphasis { System::Speech::Synthesis::PromptEmphasis get(); void set(System::Speech::Synthesis::PromptEmphasis value); };" />
+      <MemberSignature Language="F#" Value="member this.Emphasis : System.Speech.Synthesis.PromptEmphasis with get, set" Usage="System.Speech.Synthesis.PromptStyle.Emphasis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -246,6 +251,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PromptStyle.Rate" />
       <MemberSignature Language="VB.NET" Value="Public Property Rate As PromptRate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::PromptRate Rate { System::Speech::Synthesis::PromptRate get(); void set(System::Speech::Synthesis::PromptRate value); };" />
+      <MemberSignature Language="F#" Value="member this.Rate : System.Speech.Synthesis.PromptRate with get, set" Usage="System.Speech.Synthesis.PromptStyle.Rate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -266,6 +272,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PromptStyle.Volume" />
       <MemberSignature Language="VB.NET" Value="Public Property Volume As PromptVolume" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::PromptVolume Volume { System::Speech::Synthesis::PromptVolume get(); void set(System::Speech::Synthesis::PromptVolume value); };" />
+      <MemberSignature Language="F#" Value="member this.Volume : System.Speech.Synthesis.PromptVolume with get, set" Usage="System.Speech.Synthesis.PromptStyle.Volume" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

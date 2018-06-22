@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.RegisterAssembly" />
   <TypeSignature Language="VB.NET" Value="Public Class RegisterAssembly&#xA;Inherits AppDomainIsolatedTaskExtension&#xA;Implements ITypeLibExporterNotifySink" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegisterAssembly : Microsoft::Build::Tasks::AppDomainIsolatedTaskExtension, System::Runtime::InteropServices::ITypeLibExporterNotifySink" />
+  <TypeSignature Language="F#" Value="type RegisterAssembly = class&#xA;    inherit AppDomainIsolatedTaskExtension&#xA;    interface ITypeLibExporterNotifySink" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RegisterAssembly.Assemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property Assemblies As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Assemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.RegisterAssembly.Assemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RegisterAssembly.AssemblyListFile" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyListFile As ITaskItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ AssemblyListFile { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyListFile : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.RegisterAssembly.AssemblyListFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RegisterAssembly.CreateCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateCodeBase As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateCodeBase { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateCodeBase : bool with get, set" Usage="Microsoft.Build.Tasks.RegisterAssembly.CreateCodeBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.RegisterAssembly.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="registerAssembly.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.RegisterAssembly.ReportEvent(System.Runtime.InteropServices.ExporterEventKind,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportEvent (kind As ExporterEventKind, code As Integer, msg As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReportEvent(System::Runtime::InteropServices::ExporterEventKind kind, int code, System::String ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member ReportEvent : System.Runtime.InteropServices.ExporterEventKind * int * string -&gt; unit&#xA;override this.ReportEvent : System.Runtime.InteropServices.ExporterEventKind * int * string -&gt; unit" Usage="registerAssembly.ReportEvent (kind, code, msg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.RegisterAssembly.ResolveRef(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveRef (assemblyToResolve As Assembly) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ResolveRef(System::Reflection::Assembly ^ assemblyToResolve);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveRef : System.Reflection.Assembly -&gt; obj&#xA;override this.ResolveRef : System.Reflection.Assembly -&gt; obj" Usage="registerAssembly.ResolveRef assemblyToResolve" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.RegisterAssembly.TypeLibFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TypeLibFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeLibFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.RegisterAssembly.TypeLibFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

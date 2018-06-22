@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IntegerValidatorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IntegerValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IntegerValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
+  <TypeSignature Language="F#" Value="type IntegerValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.IntegerValidatorAttribute.ExcludeRange" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeRange As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeRange { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludeRange : bool with get, set" Usage="System.Configuration.IntegerValidatorAttribute.ExcludeRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.IntegerValidatorAttribute.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxValue { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxValue : int with get, set" Usage="System.Configuration.IntegerValidatorAttribute.MaxValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.IntegerValidatorAttribute.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinValue { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinValue : int with get, set" Usage="System.Configuration.IntegerValidatorAttribute.MinValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.IntegerValidatorAttribute.ValidatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.IntegerValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

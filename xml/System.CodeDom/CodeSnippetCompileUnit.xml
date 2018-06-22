@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeSnippetCompileUnit" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeSnippetCompileUnit&#xA;Inherits CodeCompileUnit" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeSnippetCompileUnit : System::CodeDom::CodeCompileUnit" />
+  <TypeSignature Language="F#" Value="type CodeSnippetCompileUnit = class&#xA;    inherit CodeCompileUnit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeSnippetCompileUnit.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeSnippetCompileUnit(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeSnippetCompileUnit : string -&gt; System.CodeDom.CodeSnippetCompileUnit" Usage="new System.CodeDom.CodeSnippetCompileUnit value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeSnippetCompileUnit.LinePragma" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePragma As CodeLinePragma" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeLinePragma ^ LinePragma { System::CodeDom::CodeLinePragma ^ get(); void set(System::CodeDom::CodeLinePragma ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinePragma : System.CodeDom.CodeLinePragma with get, set" Usage="System.CodeDom.CodeSnippetCompileUnit.LinePragma" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeSnippetCompileUnit.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.CodeDom.CodeSnippetCompileUnit.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

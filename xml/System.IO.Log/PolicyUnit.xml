@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnit" />
   <TypeSignature Language="VB.NET" Value="Public Structure PolicyUnit" />
   <TypeSignature Language="C++ CLI" Value="public value class PolicyUnit" />
+  <TypeSignature Language="F#" Value="type PolicyUnit = struct" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.#ctor(System.Int64,System.IO.Log.PolicyUnitType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long, type As PolicyUnitType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyUnit(long value, System::IO::Log::PolicyUnitType type);" />
+      <MemberSignature Language="F#" Value="new System.IO.Log.PolicyUnit : int64 * System.IO.Log.PolicyUnitType -&gt; System.IO.Log.PolicyUnit" Usage="new System.IO.Log.PolicyUnit (value, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="policyUnit.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Extents(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Extents (value As Long) As PolicyUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Log::PolicyUnit Extents(long value);" />
+      <MemberSignature Language="F#" Value="static member Extents : int64 -&gt; System.IO.Log.PolicyUnit" Usage="System.IO.Log.PolicyUnit.Extents value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="policyUnit.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Equality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PolicyUnit, right As PolicyUnit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::IO::Log::PolicyUnit left, System::IO::Log::PolicyUnit right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.IO.Log.PolicyUnit * System.IO.Log.PolicyUnit -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Inequality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PolicyUnit, right As PolicyUnit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::IO::Log::PolicyUnit left, System::IO::Log::PolicyUnit right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.IO.Log.PolicyUnit * System.IO.Log.PolicyUnit -&gt; bool" Usage="System.IO.Log.PolicyUnit.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Percentage(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Percentage (value As Long) As PolicyUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Log::PolicyUnit Percentage(long value);" />
+      <MemberSignature Language="F#" Value="static member Percentage : int64 -&gt; System.IO.Log.PolicyUnit" Usage="System.IO.Log.PolicyUnit.Percentage value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="policyUnit.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PolicyUnitType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::PolicyUnitType Type { System::IO::Log::PolicyUnitType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.IO.Log.PolicyUnitType" Usage="System.IO.Log.PolicyUnit.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Value { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int64" Usage="System.IO.Log.PolicyUnit.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

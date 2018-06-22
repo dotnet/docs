@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DesignTimeTemplateParser" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignTimeTemplateParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeTemplateParser abstract sealed" />
+  <TypeSignature Language="F#" Value="type DesignTimeTemplateParser = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseControl(System.Web.UI.DesignTimeParseData)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControl (data As DesignTimeParseData) As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Control ^ ParseControl(System::Web::UI::DesignTimeParseData ^ data);" />
+      <MemberSignature Language="F#" Value="static member ParseControl : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.Control" Usage="System.Web.UI.DesignTimeTemplateParser.ParseControl data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseControls(System.Web.UI.DesignTimeParseData)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControls (data As DesignTimeParseData) As Control()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::UI::Control ^&gt; ^ ParseControls(System::Web::UI::DesignTimeParseData ^ data);" />
+      <MemberSignature Language="F#" Value="static member ParseControls : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.Control[]" Usage="System.Web.UI.DesignTimeTemplateParser.ParseControls data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseTemplate(System.Web.UI.DesignTimeParseData)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTemplate (data As DesignTimeParseData) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ITemplate ^ ParseTemplate(System::Web::UI::DesignTimeParseData ^ data);" />
+      <MemberSignature Language="F#" Value="static member ParseTemplate : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.ITemplate" Usage="System.Web.UI.DesignTimeTemplateParser.ParseTemplate data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseTheme(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTheme (host As IDesignerHost, theme As String, themePath As String) As ControlBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ControlBuilder ^ ParseTheme(System::ComponentModel::Design::IDesignerHost ^ host, System::String ^ theme, System::String ^ themePath);" />
+      <MemberSignature Language="F#" Value="static member ParseTheme : System.ComponentModel.Design.IDesignerHost * string * string -&gt; System.Web.UI.ControlBuilder" Usage="System.Web.UI.DesignTimeTemplateParser.ParseTheme (host, theme, themePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingDataItemValue" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingDataItemValue" />
+  <TypeSignature Language="F#" Value="type TrackingDataItemValue = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (qualifiedName As String, fieldName As String, dataValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingDataItemValue(System::String ^ qualifiedName, System::String ^ fieldName, System::String ^ dataValue);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingDataItemValue : string * string * string -&gt; System.Workflow.Runtime.Tracking.TrackingDataItemValue" Usage="new System.Workflow.Runtime.Tracking.TrackingDataItemValue (qualifiedName, fieldName, dataValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DataValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataValue : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.QualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public Property QualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QualifiedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.QualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

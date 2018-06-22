@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowUpdateableInstanceManagement&#xA;Implements IWorkflowInstanceManagement" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowUpdateableInstanceManagement : System::ServiceModel::Activities::IWorkflowInstanceManagement" />
+  <TypeSignature Language="F#" Value="type IWorkflowUpdateableInstanceManagement = interface&#xA;    interface IWorkflowInstanceManagement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.BeginTransactedUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedUpdate (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedUpdate(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedUpdate : Guid * System.Activities.WorkflowIdentity * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowUpdateableInstanceManagement.BeginTransactedUpdate (instanceId, updatedDefinitionIdentity, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.BeginUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginUpdate (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUpdate(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginUpdate : Guid * System.Activities.WorkflowIdentity * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowUpdateableInstanceManagement.BeginUpdate (instanceId, updatedDefinitionIdentity, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.EndTransactedUpdate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedUpdate (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedUpdate(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedUpdate : IAsyncResult -&gt; unit" Usage="iWorkflowUpdateableInstanceManagement.EndTransactedUpdate result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.EndUpdate(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndUpdate : IAsyncResult -&gt; unit" Usage="iWorkflowUpdateableInstanceManagement.EndUpdate result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.TransactedUpdate(System.Guid,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransactedUpdate (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedUpdate(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="abstract member TransactedUpdate : Guid * System.Activities.WorkflowIdentity -&gt; unit" Usage="iWorkflowUpdateableInstanceManagement.TransactedUpdate (instanceId, updatedDefinitionIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.Update(System.Guid,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Update (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="abstract member Update : Guid * System.Activities.WorkflowIdentity -&gt; unit" Usage="iWorkflowUpdateableInstanceManagement.Update (instanceId, updatedDefinitionIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

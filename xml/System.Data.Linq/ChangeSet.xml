@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ChangeSet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChangeSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChangeSet sealed" />
+  <TypeSignature Language="F#" Value="type ChangeSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Deletes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Deletes As IList(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Object ^&gt; ^ Deletes { System::Collections::Generic::IList&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Deletes : System.Collections.Generic.IList&lt;obj&gt;" Usage="System.Data.Linq.ChangeSet.Deletes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Inserts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inserts As IList(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Object ^&gt; ^ Inserts { System::Collections::Generic::IList&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inserts : System.Collections.Generic.IList&lt;obj&gt;" Usage="System.Data.Linq.ChangeSet.Inserts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ChangeSet.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="changeSet.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Updates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Updates As IList(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Object ^&gt; ^ Updates { System::Collections::Generic::IList&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Updates : System.Collections.Generic.IList&lt;obj&gt;" Usage="System.Data.Linq.ChangeSet.Updates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

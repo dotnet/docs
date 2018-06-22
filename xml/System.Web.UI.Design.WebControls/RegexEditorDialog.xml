@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.RegexEditorDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class RegexEditorDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegexEditorDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type RegexEditorDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.#ctor(System.ComponentModel.ISite)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (site As ISite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexEditorDialog(System::ComponentModel::ISite ^ site);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.RegexEditorDialog : System.ComponentModel.ISite -&gt; System.Web.UI.Design.WebControls.RegexEditorDialog" Usage="new System.Web.UI.Design.WebControls.RegexEditorDialog site" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.cmdHelp_Click(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub cmdHelp_Click (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void cmdHelp_Click(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.cmdHelp_Click : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.cmdHelp_Click (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.cmdOK_Click(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub cmdOK_Click (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void cmdOK_Click(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.cmdOK_Click : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.cmdOK_Click (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.cmdTestValidate_Click(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub cmdTestValidate_Click (sender As Object, args As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void cmdTestValidate_Click(System::Object ^ sender, EventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="member this.cmdTestValidate_Click : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.cmdTestValidate_Click (sender, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="regexEditorDialog.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.lstStandardExpressions_SelectedIndexChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub lstStandardExpressions_SelectedIndexChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void lstStandardExpressions_SelectedIndexChanged(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.lstStandardExpressions_SelectedIndexChanged : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.lstStandardExpressions_SelectedIndexChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.RegexTypeEditor_Activated(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RegexTypeEditor_Activated (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RegexTypeEditor_Activated(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.RegexTypeEditor_Activated : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.RegexTypeEditor_Activated (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.RegexEditorDialog.RegularExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property RegularExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegularExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegularExpression : string with get, set" Usage="System.Web.UI.Design.WebControls.RegexEditorDialog.RegularExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RegexEditorDialog.txtExpression_TextChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub txtExpression_TextChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void txtExpression_TextChanged(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.txtExpression_TextChanged : obj * EventArgs -&gt; unit" Usage="regexEditorDialog.txtExpression_TextChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

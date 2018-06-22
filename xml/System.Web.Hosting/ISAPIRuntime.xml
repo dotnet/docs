@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ISAPIRuntime" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ISAPIRuntime&#xA;Inherits MarshalByRefObject&#xA;Implements IISAPIRuntime, IRegisteredObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ISAPIRuntime sealed : MarshalByRefObject, System::Web::Hosting::IISAPIRuntime, System::Web::Hosting::IRegisteredObject" />
+  <TypeSignature Language="F#" Value="type ISAPIRuntime = class&#xA;    inherit MarshalByRefObject&#xA;    interface IISAPIRuntime&#xA;    interface IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISAPIRuntime.DoGCCollect" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoGCCollect ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoGCCollect();" />
+      <MemberSignature Language="F#" Value="abstract member DoGCCollect : unit -&gt; unit&#xA;override this.DoGCCollect : unit -&gt; unit" Usage="iSAPIRuntime.DoGCCollect " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IISAPIRuntime.DoGCCollect</InterfaceMember>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISAPIRuntime.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="iSAPIRuntime.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISAPIRuntime.ProcessRequest(System.IntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProcessRequest (ecb As IntPtr, iWRType As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ProcessRequest(IntPtr ecb, int iWRType);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int -&gt; int&#xA;override this.ProcessRequest : nativeint * int -&gt; int" Usage="iSAPIRuntime.ProcessRequest (ecb, iWRType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IISAPIRuntime.ProcessRequest(System.IntPtr,System.Int32)</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISAPIRuntime.StartProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartProcessing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartProcessing();" />
+      <MemberSignature Language="F#" Value="abstract member StartProcessing : unit -&gt; unit&#xA;override this.StartProcessing : unit -&gt; unit" Usage="iSAPIRuntime.StartProcessing " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IISAPIRuntime.StartProcessing</InterfaceMember>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISAPIRuntime.StopProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopProcessing();" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessing : unit -&gt; unit&#xA;override this.StopProcessing : unit -&gt; unit" Usage="iSAPIRuntime.StopProcessing " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IISAPIRuntime.StopProcessing</InterfaceMember>

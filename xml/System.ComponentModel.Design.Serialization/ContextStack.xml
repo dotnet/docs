@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ContextStack" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextStack" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextStack sealed" />
+  <TypeSignature Language="F#" Value="type ContextStack = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ContextStack.Append(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Append (context As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Append : obj -&gt; unit" Usage="contextStack.Append context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ContextStack.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.ComponentModel.Design.Serialization.ContextStack.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ContextStack.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(level As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int level); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.ComponentModel.Design.Serialization.ContextStack.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -220,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ContextStack.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(type As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[Type ^] { System::Object ^ get(Type ^ type); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : obj" Usage="System.ComponentModel.Design.Serialization.ContextStack.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ContextStack.Pop" />
       <MemberSignature Language="VB.NET" Value="Public Function Pop () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Pop();" />
+      <MemberSignature Language="F#" Value="member this.Pop : unit -&gt; obj" Usage="contextStack.Pop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ContextStack.Push(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push (context As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Push : obj -&gt; unit" Usage="contextStack.Push context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

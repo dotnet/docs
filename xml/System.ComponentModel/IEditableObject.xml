@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IEditableObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEditableObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEditableObject" />
+  <TypeSignature Language="F#" Value="type IEditableObject = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : unit -&gt; unit" Usage="iEditableObject.BeginEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
+      <MemberSignature Language="F#" Value="abstract member CancelEdit : unit -&gt; unit" Usage="iEditableObject.CancelEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.EndEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndEdit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit();" />
+      <MemberSignature Language="F#" Value="abstract member EndEdit : unit -&gt; unit" Usage="iEditableObject.EndEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel</AssemblyName>

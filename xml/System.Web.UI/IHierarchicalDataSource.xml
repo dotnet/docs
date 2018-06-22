@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalDataSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalDataSource" />
+  <TypeSignature Language="F#" Value="type IHierarchicalDataSource = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.IHierarchicalDataSource.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHierarchicalView (viewPath As String) As HierarchicalDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetHierarchicalView : string -&gt; System.Web.UI.HierarchicalDataSourceView" Usage="iHierarchicalDataSource.GetHierarchicalView viewPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

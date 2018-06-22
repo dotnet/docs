@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.EventBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventBuilder&#xA;Implements _EventBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventBuilder sealed : System::Runtime::InteropServices::_EventBuilder" />
+  <TypeSignature Language="F#" Value="type EventBuilder = class&#xA;    interface _EventBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOtherMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOtherMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.AddOtherMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="eventBuilder.AddOtherMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.GetEventToken" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEventToken () As EventToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::EventToken GetEventToken();" />
+      <MemberSignature Language="F#" Value="member this.GetEventToken : unit -&gt; System.Reflection.Emit.EventToken" Usage="eventBuilder.GetEventToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAddOnMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAddOnMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetAddOnMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="eventBuilder.SetAddOnMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="eventBuilder.SetCustomAttribute customBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="eventBuilder.SetCustomAttribute (con, binaryAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRaiseMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRaiseMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetRaiseMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="eventBuilder.SetRaiseMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRemoveOnMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRemoveOnMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetRemoveOnMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="eventBuilder.SetRemoveOnMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>

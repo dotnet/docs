@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class RadioButton.RadioButtonAccessibleObject&#xA;Inherits ButtonBase.ButtonBaseAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class RadioButton::RadioButtonAccessibleObject : System::Windows::Forms::ButtonBase::ButtonBaseAccessibleObject" />
+  <TypeSignature Language="F#" Value="type RadioButton.RadioButtonAccessibleObject = class&#xA;    inherit ButtonBase.ButtonBaseAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.#ctor(System.Windows.Forms.RadioButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RadioButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RadioButtonAccessibleObject(System::Windows::Forms::RadioButton ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.RadioButton.RadioButtonAccessibleObject : System.Windows.Forms.RadioButton -&gt; System.Windows.Forms.RadioButton.RadioButtonAccessibleObject" Usage="new System.Windows.Forms.RadioButton.RadioButtonAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.DefaultAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="radioButtonAccessibleObject.DoDefaultAction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.Role" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.Role" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ParameterEditorUserControl" />
   <TypeSignature Language="VB.NET" Value="Public Class ParameterEditorUserControl&#xA;Inherits UserControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParameterEditorUserControl : System::Windows::Forms::UserControl" />
+  <TypeSignature Language="F#" Value="type ParameterEditorUserControl = class&#xA;    inherit UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterEditorUserControl(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.ParameterEditorUserControl : IServiceProvider -&gt; System.Web.UI.Design.WebControls.ParameterEditorUserControl" Usage="new System.Web.UI.Design.WebControls.ParameterEditorUserControl serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.AddParameters(System.Web.UI.WebControls.Parameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddParameters (parameters As Parameter())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddParameters(cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.AddParameters : System.Web.UI.WebControls.Parameter[] -&gt; unit" Usage="parameterEditorUserControl.AddParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ClearParameters" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearParameters ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearParameters();" />
+      <MemberSignature Language="F#" Value="member this.ClearParameters : unit -&gt; unit" Usage="parameterEditorUserControl.ClearParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameters () As Parameter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ GetParameters();" />
+      <MemberSignature Language="F#" Value="member this.GetParameters : unit -&gt; System.Web.UI.WebControls.Parameter[]" Usage="parameterEditorUserControl.GetParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.OnParametersChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnParametersChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnParametersChanged(System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnParametersChanged : obj * EventArgs -&gt; unit&#xA;override this.OnParametersChanged : obj * EventArgs -&gt; unit" Usage="parameterEditorUserControl.OnParametersChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ParametersChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParametersChanged;" />
+      <MemberSignature Language="F#" Value="member this.ParametersChanged : EventHandler " Usage="member this.ParametersChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersConfigured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParametersConfigured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ParametersConfigured { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParametersConfigured : bool" Usage="System.Web.UI.Design.WebControls.ParameterEditorUserControl.ParametersConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterEditorUserControl.SetAllowCollectionChanges(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAllowCollectionChanges (allowChanges As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAllowCollectionChanges(bool allowChanges);" />
+      <MemberSignature Language="F#" Value="member this.SetAllowCollectionChanges : bool -&gt; unit" Usage="parameterEditorUserControl.SetAllowCollectionChanges allowChanges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ParameterEditorUserControl.TypeDescriptionProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeDescriptionProvider As TypeDescriptionProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::TypeDescriptionProvider ^ TypeDescriptionProvider { System::ComponentModel::TypeDescriptionProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeDescriptionProvider : System.ComponentModel.TypeDescriptionProvider" Usage="System.Web.UI.Design.WebControls.ParameterEditorUserControl.TypeDescriptionProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

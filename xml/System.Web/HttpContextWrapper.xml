@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpContextWrapper" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpContextWrapper&#xA;Inherits HttpContextBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpContextWrapper : System::Web::HttpContextBase" />
+  <TypeSignature Language="F#" Value="type HttpContextWrapper = class&#xA;    inherit HttpContextBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext httpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpContextWrapper(System::Web::HttpContext ^ httpContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpContextWrapper : System.Web.HttpContext -&gt; System.Web.HttpContextWrapper" Usage="new System.Web.HttpContextWrapper httpContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.AcceptWebSocketRequest(System.Func{System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AcceptWebSocketRequest (userFunc As Func(Of AspNetWebSocketContext, Task))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AcceptWebSocketRequest(Func&lt;System::Web::WebSockets::AspNetWebSocketContext ^, System::Threading::Tasks::Task ^&gt; ^ userFunc);" />
+      <MemberSignature Language="F#" Value="override this.AcceptWebSocketRequest : Func&lt;System.Web.WebSockets.AspNetWebSocketContext, System.Threading.Tasks.Task&gt; -&gt; unit" Usage="httpContextWrapper.AcceptWebSocketRequest userFunc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.AcceptWebSocketRequest(System.Func{System.Web.WebSockets.AspNetWebSocketContext,System.Threading.Tasks.Task},System.Web.WebSockets.AspNetWebSocketOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AcceptWebSocketRequest (userFunc As Func(Of AspNetWebSocketContext, Task), options As AspNetWebSocketOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AcceptWebSocketRequest(Func&lt;System::Web::WebSockets::AspNetWebSocketContext ^, System::Threading::Tasks::Task ^&gt; ^ userFunc, System::Web::WebSockets::AspNetWebSocketOptions ^ options);" />
+      <MemberSignature Language="F#" Value="override this.AcceptWebSocketRequest : Func&lt;System.Web.WebSockets.AspNetWebSocketContext, System.Threading.Tasks.Task&gt; * System.Web.WebSockets.AspNetWebSocketOptions -&gt; unit" Usage="httpContextWrapper.AcceptWebSocketRequest (userFunc, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.AddError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddError (errorInfo As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddError(Exception ^ errorInfo);" />
+      <MemberSignature Language="F#" Value="override this.AddError : Exception -&gt; unit" Usage="httpContextWrapper.AddError errorInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.AddOnRequestCompleted(System.Action{System.Web.HttpContextBase})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddOnRequestCompleted (callback As Action(Of HttpContextBase)) As ISubscriptionToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ISubscriptionToken ^ AddOnRequestCompleted(Action&lt;System::Web::HttpContextBase ^&gt; ^ callback);" />
+      <MemberSignature Language="F#" Value="override this.AddOnRequestCompleted : Action&lt;System.Web.HttpContextBase&gt; -&gt; System.Web.ISubscriptionToken" Usage="httpContextWrapper.AddOnRequestCompleted callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.AllErrors" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllErrors As Exception()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Exception ^&gt; ^ AllErrors { cli::array &lt;Exception ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllErrors : Exception[]" Usage="System.Web.HttpContextWrapper.AllErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.AllowAsyncDuringSyncStages" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowAsyncDuringSyncStages As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowAsyncDuringSyncStages { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowAsyncDuringSyncStages : bool with get, set" Usage="System.Web.HttpContextWrapper.AllowAsyncDuringSyncStages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Application" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Application As HttpApplicationStateBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpApplicationStateBase ^ Application { System::Web::HttpApplicationStateBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationStateBase" Usage="System.Web.HttpContextWrapper.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.ApplicationInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationInstance As HttpApplication" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpApplication ^ ApplicationInstance { System::Web::HttpApplication ^ get(); void set(System::Web::HttpApplication ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationInstance : System.Web.HttpApplication with get, set" Usage="System.Web.HttpContextWrapper.ApplicationInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.AsyncPreloadMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AsyncPreloadMode As AsyncPreloadModeFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Configuration::AsyncPreloadModeFlags AsyncPreloadMode { System::Web::Configuration::AsyncPreloadModeFlags get(); void set(System::Web::Configuration::AsyncPreloadModeFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncPreloadMode : System.Web.Configuration.AsyncPreloadModeFlags with get, set" Usage="System.Web.HttpContextWrapper.AsyncPreloadMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Cache" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Cache As Cache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.HttpContextWrapper.Cache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.ClearError" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ClearError ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ClearError();" />
+      <MemberSignature Language="F#" Value="override this.ClearError : unit -&gt; unit" Usage="httpContextWrapper.ClearError " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.CurrentHandler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentHandler As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::IHttpHandler ^ CurrentHandler { System::Web::IHttpHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentHandler : System.Web.IHttpHandler" Usage="System.Web.HttpContextWrapper.CurrentHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.CurrentNotification" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentNotification As RequestNotification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::RequestNotification CurrentNotification { System::Web::RequestNotification get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentNotification : System.Web.RequestNotification" Usage="System.Web.HttpContextWrapper.CurrentNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.DisposeOnPipelineCompleted(System.IDisposable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DisposeOnPipelineCompleted (target As IDisposable) As ISubscriptionToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ISubscriptionToken ^ DisposeOnPipelineCompleted(IDisposable ^ target);" />
+      <MemberSignature Language="F#" Value="override this.DisposeOnPipelineCompleted : IDisposable -&gt; System.Web.ISubscriptionToken" Usage="httpContextWrapper.DisposeOnPipelineCompleted target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -391,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Error" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Error As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Exception ^ Error { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : Exception" Usage="System.Web.HttpContextWrapper.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetGlobalResourceObject(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGlobalResourceObject (classKey As String, resourceKey As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetGlobalResourceObject(System::String ^ classKey, System::String ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="override this.GetGlobalResourceObject : string * string -&gt; obj" Usage="httpContextWrapper.GetGlobalResourceObject (classKey, resourceKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -446,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetGlobalResourceObject(System.String,System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGlobalResourceObject (classKey As String, resourceKey As String, culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetGlobalResourceObject(System::String ^ classKey, System::String ^ resourceKey, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.GetGlobalResourceObject : string * string * System.Globalization.CultureInfo -&gt; obj" Usage="httpContextWrapper.GetGlobalResourceObject (classKey, resourceKey, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetLocalResourceObject(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocalResourceObject (virtualPath As String, resourceKey As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetLocalResourceObject(System::String ^ virtualPath, System::String ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalResourceObject : string * string -&gt; obj" Usage="httpContextWrapper.GetLocalResourceObject (virtualPath, resourceKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -509,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetLocalResourceObject(System.String,System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocalResourceObject (virtualPath As String, resourceKey As String, culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetLocalResourceObject(System::String ^ virtualPath, System::String ^ resourceKey, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.GetLocalResourceObject : string * string * System.Globalization.CultureInfo -&gt; obj" Usage="httpContextWrapper.GetLocalResourceObject (virtualPath, resourceKey, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -537,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSection (sectionName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetSection(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="override this.GetSection : string -&gt; obj" Usage="httpContextWrapper.GetSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -561,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="override this.GetService : Type -&gt; obj" Usage="httpContextWrapper.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Handler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Handler As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::IHttpHandler ^ Handler { System::Web::IHttpHandler ^ get(); void set(System::Web::IHttpHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Handler : System.Web.IHttpHandler with get, set" Usage="System.Web.HttpContextWrapper.Handler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -605,6 +629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.IsCustomErrorEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsCustomErrorEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCustomErrorEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCustomErrorEnabled : bool" Usage="System.Web.HttpContextWrapper.IsCustomErrorEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -626,6 +651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.IsDebuggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDebuggingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDebuggingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDebuggingEnabled : bool" Usage="System.Web.HttpContextWrapper.IsDebuggingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -647,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.IsPostNotification" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPostNotification As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPostNotification { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPostNotification : bool" Usage="System.Web.HttpContextWrapper.IsPostNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -668,6 +695,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.IsWebSocketRequest" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsWebSocketRequest As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsWebSocketRequest { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWebSocketRequest : bool" Usage="System.Web.HttpContextWrapper.IsWebSocketRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -689,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.IsWebSocketRequestUpgrading" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsWebSocketRequestUpgrading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsWebSocketRequestUpgrading { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWebSocketRequestUpgrading : bool" Usage="System.Web.HttpContextWrapper.IsWebSocketRequestUpgrading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -710,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Items As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Items { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.IDictionary" Usage="System.Web.HttpContextWrapper.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -730,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.PageInstrumentation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PageInstrumentation As PageInstrumentationService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Instrumentation::PageInstrumentationService ^ PageInstrumentation { System::Web::Instrumentation::PageInstrumentationService ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageInstrumentation : System.Web.Instrumentation.PageInstrumentationService" Usage="System.Web.HttpContextWrapper.PageInstrumentation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -750,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.PreviousHandler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PreviousHandler As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::IHttpHandler ^ PreviousHandler { System::Web::IHttpHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousHandler : System.Web.IHttpHandler" Usage="System.Web.HttpContextWrapper.PreviousHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -770,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Profile" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Profile As ProfileBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Profile::ProfileBase ^ Profile { System::Web::Profile::ProfileBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Profile : System.Web.Profile.ProfileBase" Usage="System.Web.HttpContextWrapper.Profile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -790,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.RemapHandler(System.Web.IHttpHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemapHandler (handler As IHttpHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemapHandler(System::Web::IHttpHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="override this.RemapHandler : System.Web.IHttpHandler -&gt; unit" Usage="httpContextWrapper.RemapHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -821,6 +855,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Request" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Request As HttpRequestBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpRequestBase ^ Request { System::Web::HttpRequestBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.Web.HttpRequestBase" Usage="System.Web.HttpContextWrapper.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -841,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Response" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Response As HttpResponseBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpResponseBase ^ Response { System::Web::HttpResponseBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Web.HttpResponseBase" Usage="System.Web.HttpContextWrapper.Response" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -870,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.RewritePath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RewritePath (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RewritePath(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="override this.RewritePath : string -&gt; unit" Usage="httpContextWrapper.RewritePath path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -897,6 +934,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.RewritePath(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RewritePath (path As String, rebaseClientPath As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RewritePath(System::String ^ path, bool rebaseClientPath);" />
+      <MemberSignature Language="F#" Value="override this.RewritePath : string * bool -&gt; unit" Usage="httpContextWrapper.RewritePath (path, rebaseClientPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -927,6 +965,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.RewritePath(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RewritePath (filePath As String, pathInfo As String, queryString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RewritePath(System::String ^ filePath, System::String ^ pathInfo, System::String ^ queryString);" />
+      <MemberSignature Language="F#" Value="override this.RewritePath : string * string * string -&gt; unit" Usage="httpContextWrapper.RewritePath (filePath, pathInfo, queryString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -956,6 +995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.RewritePath(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RewritePath (filePath As String, pathInfo As String, queryString As String, setClientFilePath As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RewritePath(System::String ^ filePath, System::String ^ pathInfo, System::String ^ queryString, bool setClientFilePath);" />
+      <MemberSignature Language="F#" Value="override this.RewritePath : string * string * string * bool -&gt; unit" Usage="httpContextWrapper.RewritePath (filePath, pathInfo, queryString, setClientFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -990,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Server" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Server As HttpServerUtilityBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpServerUtilityBase ^ Server { System::Web::HttpServerUtilityBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtilityBase" Usage="System.Web.HttpContextWrapper.Server" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1010,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Session" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Session As HttpSessionStateBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpSessionStateBase ^ Session { System::Web::HttpSessionStateBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.HttpSessionStateBase" Usage="System.Web.HttpContextWrapper.Session" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1029,6 +1071,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetSessionStateBehavior(valuetype System.Web.SessionState.SessionStateBehavior sessionStateBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpContextWrapper.SetSessionStateBehavior(System.Web.SessionState.SessionStateBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetSessionStateBehavior(System::Web::SessionState::SessionStateBehavior sessionStateBehavior);" />
+      <MemberSignature Language="F#" Value="override this.SetSessionStateBehavior : System.Web.SessionState.SessionStateBehavior -&gt; unit" Usage="httpContextWrapper.SetSessionStateBehavior sessionStateBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1060,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.SkipAuthorization" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkipAuthorization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SkipAuthorization { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipAuthorization : bool with get, set" Usage="System.Web.HttpContextWrapper.SkipAuthorization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1081,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.ThreadAbortOnTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ThreadAbortOnTimeout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ThreadAbortOnTimeout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadAbortOnTimeout : bool with get, set" Usage="System.Web.HttpContextWrapper.ThreadAbortOnTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1109,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Timestamp As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime Timestamp { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTime" Usage="System.Web.HttpContextWrapper.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1129,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.Trace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Trace As TraceContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::TraceContext ^ Trace { System::Web::TraceContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Trace : System.Web.TraceContext" Usage="System.Web.HttpContextWrapper.Trace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1149,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.User" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property User As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal with get, set" Usage="System.Web.HttpContextWrapper.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1169,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.WebSocketNegotiatedProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WebSocketNegotiatedProtocol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WebSocketNegotiatedProtocol { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketNegotiatedProtocol : string" Usage="System.Web.HttpContextWrapper.WebSocketNegotiatedProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1189,6 +1238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpContextWrapper.WebSocketRequestedProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WebSocketRequestedProtocols As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::String ^&gt; ^ WebSocketRequestedProtocols { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketRequestedProtocols : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Web.HttpContextWrapper.WebSocketRequestedProtocols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

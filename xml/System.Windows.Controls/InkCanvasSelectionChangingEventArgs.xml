@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InkCanvasSelectionChangingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasSelectionChangingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasSelectionChangingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedElements" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectedElements () As ReadOnlyCollection(Of UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::UIElement ^&gt; ^ GetSelectedElements();" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedElements : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.UIElement&gt;" Usage="inkCanvasSelectionChangingEventArgs.GetSelectedElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedStrokes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectedStrokes () As StrokeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ GetSelectedStrokes();" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedStrokes : unit -&gt; System.Windows.Ink.StrokeCollection" Usage="inkCanvasSelectionChangingEventArgs.GetSelectedStrokes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedElements(System.Collections.Generic.IEnumerable{System.Windows.UIElement})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedElements (selectedElements As IEnumerable(Of UIElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedElements(System::Collections::Generic::IEnumerable&lt;System::Windows::UIElement ^&gt; ^ selectedElements);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectedElements : seq&lt;System.Windows.UIElement&gt; -&gt; unit" Usage="inkCanvasSelectionChangingEventArgs.SetSelectedElements selectedElements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedStrokes(System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedStrokes (selectedStrokes As StrokeCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedStrokes(System::Windows::Ink::StrokeCollection ^ selectedStrokes);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectedStrokes : System.Windows.Ink.StrokeCollection -&gt; unit" Usage="inkCanvasSelectionChangingEventArgs.SetSelectedStrokes selectedStrokes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

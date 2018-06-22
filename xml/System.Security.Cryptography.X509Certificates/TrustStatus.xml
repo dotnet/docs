@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.TrustStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrustStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrustStatus" />
+  <TypeSignature Language="F#" Value="type TrustStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.KnownIdentity" />
       <MemberSignature Language="VB.NET" Value="KnownIdentity" />
       <MemberSignature Language="C++ CLI" Value="KnownIdentity" />
+      <MemberSignature Language="F#" Value="KnownIdentity = 2" Usage="System.Security.Cryptography.X509Certificates.TrustStatus.KnownIdentity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.Trusted" />
       <MemberSignature Language="VB.NET" Value="Trusted" />
       <MemberSignature Language="C++ CLI" Value="Trusted" />
+      <MemberSignature Language="F#" Value="Trusted = 3" Usage="System.Security.Cryptography.X509Certificates.TrustStatus.Trusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.UnknownIdentity" />
       <MemberSignature Language="VB.NET" Value="UnknownIdentity" />
       <MemberSignature Language="C++ CLI" Value="UnknownIdentity" />
+      <MemberSignature Language="F#" Value="UnknownIdentity = 1" Usage="System.Security.Cryptography.X509Certificates.TrustStatus.UnknownIdentity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.Untrusted" />
       <MemberSignature Language="VB.NET" Value="Untrusted" />
       <MemberSignature Language="C++ CLI" Value="Untrusted" />
+      <MemberSignature Language="F#" Value="Untrusted = 0" Usage="System.Security.Cryptography.X509Certificates.TrustStatus.Untrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -64,6 +64,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
       <MemberSignature Language="VB.NET" Value="Public Property DataPointer As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr DataPointer { IntPtr get(); void set(IntPtr value); };" />
+      <MemberSignature Language="F#" Value="member this.DataPointer : nativeint with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -98,6 +99,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

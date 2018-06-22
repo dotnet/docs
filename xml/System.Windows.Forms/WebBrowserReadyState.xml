@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserReadyState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebBrowserReadyState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebBrowserReadyState" />
+  <TypeSignature Language="F#" Value="type WebBrowserReadyState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserReadyState.Complete" />
       <MemberSignature Language="VB.NET" Value="Complete" />
       <MemberSignature Language="C++ CLI" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 4" Usage="System.Windows.Forms.WebBrowserReadyState.Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserReadyState.Interactive" />
       <MemberSignature Language="VB.NET" Value="Interactive" />
       <MemberSignature Language="C++ CLI" Value="Interactive" />
+      <MemberSignature Language="F#" Value="Interactive = 3" Usage="System.Windows.Forms.WebBrowserReadyState.Interactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserReadyState.Loaded" />
       <MemberSignature Language="VB.NET" Value="Loaded" />
       <MemberSignature Language="C++ CLI" Value="Loaded" />
+      <MemberSignature Language="F#" Value="Loaded = 2" Usage="System.Windows.Forms.WebBrowserReadyState.Loaded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserReadyState.Loading" />
       <MemberSignature Language="VB.NET" Value="Loading" />
       <MemberSignature Language="C++ CLI" Value="Loading" />
+      <MemberSignature Language="F#" Value="Loading = 1" Usage="System.Windows.Forms.WebBrowserReadyState.Loading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserReadyState.Uninitialized" />
       <MemberSignature Language="VB.NET" Value="Uninitialized" />
       <MemberSignature Language="C++ CLI" Value="Uninitialized" />
+      <MemberSignature Language="F#" Value="Uninitialized = 0" Usage="System.Windows.Forms.WebBrowserReadyState.Uninitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

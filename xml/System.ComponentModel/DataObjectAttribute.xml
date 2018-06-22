@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObjectAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataObjectAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isDataObject As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectAttribute(bool isDataObject);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectAttribute : bool -&gt; System.ComponentModel.DataObjectAttribute" Usage="new System.ComponentModel.DataObjectAttribute isDataObject" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectAttribute.DataObject" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataObject As DataObjectAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DataObjectAttribute ^ DataObject;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataObject : System.ComponentModel.DataObjectAttribute" Usage="System.ComponentModel.DataObjectAttribute.DataObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DataObjectAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DataObjectAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DataObjectAttribute" Usage="System.ComponentModel.DataObjectAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataObjectAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataObjectAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectAttribute.IsDataObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataObject As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataObject { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDataObject : bool" Usage="System.ComponentModel.DataObjectAttribute.IsDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="dataObjectAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +363,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectAttribute.NonDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NonDataObject As DataObjectAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DataObjectAttribute ^ NonDataObject;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NonDataObject : System.ComponentModel.DataObjectAttribute" Usage="System.ComponentModel.DataObjectAttribute.NonDataObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

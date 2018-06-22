@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkClickedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinkClickedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinkClickedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LinkClickedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkClickedEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (linkText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkClickedEventArgs(System::String ^ linkText);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.LinkClickedEventArgs : string -&gt; System.Windows.Forms.LinkClickedEventArgs" Usage="new System.Windows.Forms.LinkClickedEventArgs linkText" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkClickedEventArgs.LinkText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkText : string" Usage="System.Windows.Forms.LinkClickedEventArgs.LinkText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

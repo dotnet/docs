@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechHypothesizedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeechHypothesizedEventArgs&#xA;Inherits RecognitionEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeechHypothesizedEventArgs : System::Speech::Recognition::RecognitionEventArgs" />
+  <TypeSignature Language="F#" Value="type SpeechHypothesizedEventArgs = class&#xA;    inherit RecognitionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

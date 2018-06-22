@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyActivityGlyph&#xA;Inherits DesignerGlyph" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyActivityGlyph : System::Workflow::ComponentModel::Design::DesignerGlyph" />
+  <TypeSignature Language="F#" Value="type ReadOnlyActivityGlyph = class&#xA;    inherit DesignerGlyph" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph.GetBounds(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBounds (designer As ActivityDesigner, activated As Boolean) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Rectangle GetBounds(System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer, bool activated);" />
+      <MemberSignature Language="F#" Value="override this.GetBounds : System.Workflow.ComponentModel.Design.ActivityDesigner * bool -&gt; System.Drawing.Rectangle" Usage="readOnlyActivityGlyph.GetBounds (designer, activated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Drawing.Graphics graphics, bool activated, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme, class System.Workflow.ComponentModel.Design.ActivityDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph.OnPaint(System.Drawing.Graphics,System.Boolean,System.Workflow.ComponentModel.Design.AmbientTheme,System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Drawing::Graphics ^ graphics, bool activated, System::Workflow::ComponentModel::Design::AmbientTheme ^ ambientTheme, System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer);" />
+      <MemberSignature Language="F#" Value="override this.OnPaint : System.Drawing.Graphics * bool * System.Workflow.ComponentModel.Design.AmbientTheme * System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="readOnlyActivityGlyph.OnPaint (graphics, activated, ambientTheme, designer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Priority { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int" Usage="System.Workflow.ComponentModel.Design.ReadOnlyActivityGlyph.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

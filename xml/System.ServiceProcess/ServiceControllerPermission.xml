@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceControllerPermission&#xA;Inherits ResourcePermissionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceControllerPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
+  <TypeSignature Language="F#" Value="type ServiceControllerPermission = class&#xA;    inherit ResourcePermissionBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.Security.Permissions.PermissionState -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.ServiceProcess.ServiceControllerPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As ServiceControllerPermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(cli::array &lt;System::ServiceProcess::ServiceControllerPermissionEntry ^&gt; ^ permissionAccessEntries);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.ServiceProcess.ServiceControllerPermissionEntry[] -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission permissionAccessEntries" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.ServiceProcess.ServiceControllerPermissionAccess,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As ServiceControllerPermissionAccess, machineName As String, serviceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::ServiceProcess::ServiceControllerPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ serviceName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.ServiceProcess.ServiceControllerPermissionAccess * string * string -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission (permissionAccess, machineName, serviceName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermission.PermissionEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As ServiceControllerPermissionEntryCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ PermissionEntries { System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionEntries : System.ServiceProcess.ServiceControllerPermissionEntryCollection" Usage="System.ServiceProcess.ServiceControllerPermission.PermissionEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

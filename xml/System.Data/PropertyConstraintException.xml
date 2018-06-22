@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.PropertyConstraintException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyConstraintException&#xA;Inherits ConstraintException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyConstraintException sealed : System::Data::ConstraintException" />
+  <TypeSignature Language="F#" Value="type PropertyConstraintException = class&#xA;    inherit ConstraintException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyConstraintException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyConstraintException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.PropertyConstraintException : string -&gt; System.Data.PropertyConstraintException" Usage="new System.Data.PropertyConstraintException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyConstraintException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyConstraintException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.PropertyConstraintException : string * Exception -&gt; System.Data.PropertyConstraintException" Usage="new System.Data.PropertyConstraintException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyConstraintException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyConstraintException(System::String ^ message, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Data.PropertyConstraintException : string * string -&gt; System.Data.PropertyConstraintException" Usage="new System.Data.PropertyConstraintException (message, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyConstraintException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, propertyName As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyConstraintException(System::String ^ message, System::String ^ propertyName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.PropertyConstraintException : string * string * Exception -&gt; System.Data.PropertyConstraintException" Usage="new System.Data.PropertyConstraintException (message, propertyName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyConstraintException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="propertyConstraintException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.PropertyConstraintException.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Data.PropertyConstraintException.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

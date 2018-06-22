@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterSettings.StringCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PrinterSettings.StringCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public: ref class PrinterSettings::StringCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type PrinterSettings.StringCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.StringCollection.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringCollection(cli::array &lt;System::String ^&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.PrinterSettings.StringCollection : string[] -&gt; System.Drawing.Printing.PrinterSettings.StringCollection" Usage="new System.Drawing.Printing.PrinterSettings.StringCollection array" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.StringCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; int" Usage="stringCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.StringCollection.CopyTo(System.String[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (strings As String(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::String ^&gt; ^ strings, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : string[] * int -&gt; unit" Usage="stringCollection.CopyTo (strings, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.StringCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Drawing.Printing.PrinterSettings.StringCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.StringCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="stringCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.StringCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[int] { System::String ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Drawing.Printing.PrinterSettings.StringCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.StringCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.StringCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.StringCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.StringCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.StringCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.StringCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

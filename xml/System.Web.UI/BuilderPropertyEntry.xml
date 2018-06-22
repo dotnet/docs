@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuilderPropertyEntry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuilderPropertyEntry&#xA;Inherits PropertyEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuilderPropertyEntry abstract : System::Web::UI::PropertyEntry" />
+  <TypeSignature Language="F#" Value="type BuilderPropertyEntry = class&#xA;    inherit PropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BuilderPropertyEntry.Builder" />
       <MemberSignature Language="VB.NET" Value="Public Property Builder As ControlBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlBuilder ^ Builder { System::Web::UI::ControlBuilder ^ get(); void set(System::Web::UI::ControlBuilder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Web.UI.ControlBuilder with get, set" Usage="System.Web.UI.BuilderPropertyEntry.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

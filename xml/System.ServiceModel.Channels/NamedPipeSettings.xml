@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.NamedPipeSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeSettings sealed" />
+  <TypeSignature Language="F#" Value="type NamedPipeSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeSettings.ApplicationContainerSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationContainerSettings As ApplicationContainerSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::ApplicationContainerSettings ^ ApplicationContainerSettings { System::ServiceModel::Channels::ApplicationContainerSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContainerSettings : System.ServiceModel.Channels.ApplicationContainerSettings" Usage="System.ServiceModel.Channels.NamedPipeSettings.ApplicationContainerSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntryPosition" />
   <TypeSignature Language="VB.NET" Value="Public Enum JournalEntryPosition" />
   <TypeSignature Language="C++ CLI" Value="public enum class JournalEntryPosition" />
+  <TypeSignature Language="F#" Value="type JournalEntryPosition = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntryPosition.Back" />
       <MemberSignature Language="VB.NET" Value="Back" />
       <MemberSignature Language="C++ CLI" Value="Back" />
+      <MemberSignature Language="F#" Value="Back = 0" Usage="System.Windows.Navigation.JournalEntryPosition.Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntryPosition.Current" />
       <MemberSignature Language="VB.NET" Value="Current" />
       <MemberSignature Language="C++ CLI" Value="Current" />
+      <MemberSignature Language="F#" Value="Current = 1" Usage="System.Windows.Navigation.JournalEntryPosition.Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntryPosition.Forward" />
       <MemberSignature Language="VB.NET" Value="Forward" />
       <MemberSignature Language="C++ CLI" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 2" Usage="System.Windows.Navigation.JournalEntryPosition.Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

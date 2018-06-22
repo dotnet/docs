@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContactManager&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContactManager sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type ContactManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddContact(class System.Net.PeerToPeer.Collaboration.PeerContact peerContact) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.AddContact(System.Net.PeerToPeer.Collaboration.PeerContact)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddContact(System::Net::PeerToPeer::Collaboration::PeerContact ^ peerContact);" />
+      <MemberSignature Language="F#" Value="member this.AddContact : System.Net.PeerToPeer.Collaboration.PeerContact -&gt; unit" Usage="contactManager.AddContact peerContact" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.ApplicationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ApplicationChanged As EventHandler(Of ApplicationChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::ApplicationChangedEventArgs ^&gt; ^ ApplicationChanged;" />
+      <MemberSignature Language="F#" Value="member this.ApplicationChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; " Usage="member this.ApplicationChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerContact CreateContact(class System.Net.PeerToPeer.Collaboration.PeerNearMe peerNearMe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContact(System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerContact ^ CreateContact(System::Net::PeerToPeer::Collaboration::PeerNearMe ^ peerNearMe);" />
+      <MemberSignature Language="F#" Value="member this.CreateContact : System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; System.Net.PeerToPeer.Collaboration.PeerContact" Usage="contactManager.CreateContact peerNearMe" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateContactAsync(class System.Net.PeerToPeer.Collaboration.PeerNearMe peerNearMe, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactAsync(System.Net.PeerToPeer.Collaboration.PeerNearMe,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateContactAsync(System::Net::PeerToPeer::Collaboration::PeerNearMe ^ peerNearMe, System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="member this.CreateContactAsync : System.Net.PeerToPeer.Collaboration.PeerNearMe * obj -&gt; unit" Usage="contactManager.CreateContactAsync (peerNearMe, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CreateContactCompleted As EventHandler(Of CreateContactCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::CreateContactCompletedEventArgs ^&gt; ^ CreateContactCompleted;" />
+      <MemberSignature Language="F#" Value="member this.CreateContactCompleted : EventHandler&lt;System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs&gt; " Usage="member this.CreateContactCompleted : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteContact(class System.Net.PeerToPeer.Collaboration.PeerContact peerContact) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.DeleteContact(System.Net.PeerToPeer.Collaboration.PeerContact)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteContact(System::Net::PeerToPeer::Collaboration::PeerContact ^ peerContact);" />
+      <MemberSignature Language="F#" Value="member this.DeleteContact : System.Net.PeerToPeer.Collaboration.PeerContact -&gt; unit" Usage="contactManager.DeleteContact peerContact" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -298,6 +305,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteContact(class System.Net.PeerToPeer.PeerName peerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.DeleteContact(System.Net.PeerToPeer.PeerName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteContact(System::Net::PeerToPeer::PeerName ^ peerName);" />
+      <MemberSignature Language="F#" Value="member this.DeleteContact : System.Net.PeerToPeer.PeerName -&gt; unit" Usage="contactManager.DeleteContact peerName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -346,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="contactManager.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -373,6 +382,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerContact GetContact(class System.Net.PeerToPeer.PeerName peerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.GetContact(System.Net.PeerToPeer.PeerName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerContact ^ GetContact(System::Net::PeerToPeer::PeerName ^ peerName);" />
+      <MemberSignature Language="F#" Value="member this.GetContact : System.Net.PeerToPeer.PeerName -&gt; System.Net.PeerToPeer.Collaboration.PeerContact" Usage="contactManager.GetContact peerName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -419,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.GetContacts" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContacts () As PeerContactCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerContactCollection ^ GetContacts();" />
+      <MemberSignature Language="F#" Value="member this.GetContacts : unit -&gt; System.Net.PeerToPeer.Collaboration.PeerContactCollection" Usage="contactManager.GetContacts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -467,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ContactManager.LocalContact" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LocalContact As PeerContact" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::PeerToPeer::Collaboration::PeerContact ^ LocalContact { System::Net::PeerToPeer::Collaboration::PeerContact ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalContact : System.Net.PeerToPeer.Collaboration.PeerContact" Usage="System.Net.PeerToPeer.Collaboration.ContactManager.LocalContact" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -504,6 +516,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.NameChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NameChanged As EventHandler(Of NameChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::NameChangedEventArgs ^&gt; ^ NameChanged;" />
+      <MemberSignature Language="F#" Value="member this.NameChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.NameChangedEventArgs&gt; " Usage="member this.NameChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.NameChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -544,6 +557,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.ObjectChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectChanged As EventHandler(Of ObjectChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::ObjectChangedEventArgs ^&gt; ^ ObjectChanged;" />
+      <MemberSignature Language="F#" Value="member this.ObjectChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs&gt; " Usage="member this.ObjectChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -584,6 +598,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.PresenceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PresenceChanged As EventHandler(Of PresenceChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::PresenceChangedEventArgs ^&gt; ^ PresenceChanged;" />
+      <MemberSignature Language="F#" Value="member this.PresenceChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs&gt; " Usage="member this.PresenceChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -624,6 +639,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SubscriptionListChanged As EventHandler(Of SubscriptionListChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::SubscriptionListChangedEventArgs ^&gt; ^ SubscriptionListChanged;" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionListChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs&gt; " Usage="member this.SubscriptionListChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -664,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.ContactManager.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Net.PeerToPeer.Collaboration.ContactManager.SynchronizingObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -705,6 +722,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateContact(class System.Net.PeerToPeer.Collaboration.PeerContact peerContact) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.ContactManager.UpdateContact(System.Net.PeerToPeer.Collaboration.PeerContact)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateContact(System::Net::PeerToPeer::Collaboration::PeerContact ^ peerContact);" />
+      <MemberSignature Language="F#" Value="member this.UpdateContact : System.Net.PeerToPeer.Collaboration.PeerContact -&gt; unit" Usage="contactManager.UpdateContact peerContact" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum EntityStoreSchemaFilterObjectTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class EntityStoreSchemaFilterObjectTypes" />
+  <TypeSignature Language="F#" Value="type EntityStoreSchemaFilterObjectTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 7" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Function" />
       <MemberSignature Language="VB.NET" Value="Function" />
       <MemberSignature Language="C++ CLI" Value="Function" />
+      <MemberSignature Language="F#" Value="Function = 4" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Function" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Table" />
       <MemberSignature Language="VB.NET" Value="Table" />
       <MemberSignature Language="C++ CLI" Value="Table" />
+      <MemberSignature Language="F#" Value="Table = 1" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.View" />
       <MemberSignature Language="VB.NET" Value="View" />
       <MemberSignature Language="C++ CLI" Value="View" />
+      <MemberSignature Language="F#" Value="View = 2" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

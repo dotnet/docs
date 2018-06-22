@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebSocketState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebSocketState" />
+  <TypeSignature Language="F#" Value="type WebSocketState = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 6" Usage="System.Net.WebSockets.WebSocketState.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Closed" />
       <MemberSignature Language="VB.NET" Value="Closed" />
       <MemberSignature Language="C++ CLI" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 5" Usage="System.Net.WebSockets.WebSocketState.Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseReceived" />
       <MemberSignature Language="VB.NET" Value="CloseReceived" />
       <MemberSignature Language="C++ CLI" Value="CloseReceived" />
+      <MemberSignature Language="F#" Value="CloseReceived = 4" Usage="System.Net.WebSockets.WebSocketState.CloseReceived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseSent" />
       <MemberSignature Language="VB.NET" Value="CloseSent" />
       <MemberSignature Language="C++ CLI" Value="CloseSent" />
+      <MemberSignature Language="F#" Value="CloseSent = 3" Usage="System.Net.WebSockets.WebSocketState.CloseSent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Connecting" />
       <MemberSignature Language="VB.NET" Value="Connecting" />
       <MemberSignature Language="C++ CLI" Value="Connecting" />
+      <MemberSignature Language="F#" Value="Connecting = 1" Usage="System.Net.WebSockets.WebSocketState.Connecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.WebSockets.WebSocketState.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Open" />
       <MemberSignature Language="VB.NET" Value="Open" />
       <MemberSignature Language="C++ CLI" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 2" Usage="System.Net.WebSockets.WebSocketState.Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>

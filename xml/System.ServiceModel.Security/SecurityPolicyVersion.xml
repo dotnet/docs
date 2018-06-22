@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityPolicyVersion" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityPolicyVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityPolicyVersion abstract" />
+  <TypeSignature Language="F#" Value="type SecurityPolicyVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.Security.SecurityPolicyVersion.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.ServiceModel.Security.SecurityPolicyVersion.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurityPolicy11 As SecurityPolicyVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityPolicyVersion ^ WSSecurityPolicy11 { System::ServiceModel::Security::SecurityPolicyVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSSecurityPolicy11 : System.ServiceModel.Security.SecurityPolicyVersion" Usage="System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy12" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecurityPolicy12 As SecurityPolicyVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityPolicyVersion ^ WSSecurityPolicy12 { System::ServiceModel::Security::SecurityPolicyVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSSecurityPolicy12 : System.ServiceModel.Security.SecurityPolicyVersion" Usage="System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

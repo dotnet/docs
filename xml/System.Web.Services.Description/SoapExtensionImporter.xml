@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapExtensionImporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapExtensionImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapExtensionImporter abstract" />
+  <TypeSignature Language="F#" Value="type SoapExtensionImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapExtensionImporter.ImportContext" />
       <MemberSignature Language="VB.NET" Value="Public Property ImportContext As SoapProtocolImporter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapProtocolImporter ^ ImportContext { System::Web::Services::Description::SoapProtocolImporter ^ get(); void set(System::Web::Services::Description::SoapProtocolImporter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImportContext : System.Web.Services.Description.SoapProtocolImporter with get, set" Usage="System.Web.Services.Description.SoapExtensionImporter.ImportContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionImporter.ImportMethod(System.CodeDom.CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ImportMethod (metadata As CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ImportMethod(System::CodeDom::CodeAttributeDeclarationCollection ^ metadata);" />
+      <MemberSignature Language="F#" Value="abstract member ImportMethod : System.CodeDom.CodeAttributeDeclarationCollection -&gt; unit" Usage="soapExtensionImporter.ImportMethod metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

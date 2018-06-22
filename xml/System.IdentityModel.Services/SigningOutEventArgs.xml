@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SigningOutEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SigningOutEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SigningOutEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SigningOutEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SigningOutEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isIPInitiated As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SigningOutEventArgs(bool isIPInitiated);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SigningOutEventArgs : bool -&gt; System.IdentityModel.Services.SigningOutEventArgs" Usage="new System.IdentityModel.Services.SigningOutEventArgs isIPInitiated" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SigningOutEventArgs.IPInitiated" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IPInitiated As SigningOutEventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::SigningOutEventArgs ^ IPInitiated { System::IdentityModel::Services::SigningOutEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IPInitiated : System.IdentityModel.Services.SigningOutEventArgs" Usage="System.IdentityModel.Services.SigningOutEventArgs.IPInitiated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPInitiated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPInitiated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIPInitiated : bool" Usage="System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SigningOutEventArgs.RPInitiated" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RPInitiated As SigningOutEventArgs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::SigningOutEventArgs ^ RPInitiated { System::IdentityModel::Services::SigningOutEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RPInitiated : System.IdentityModel.Services.SigningOutEventArgs" Usage="System.IdentityModel.Services.SigningOutEventArgs.RPInitiated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

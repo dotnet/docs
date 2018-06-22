@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderSimple = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPatternProvider (patternId As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPatternProvider(int patternId);" />
+      <MemberSignature Language="F#" Value="abstract member GetPatternProvider : int -&gt; obj" Usage="iRawElementProviderSimple.GetPatternProvider patternId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (propertyId As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(int propertyId);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyValue : int -&gt; obj" Usage="iRawElementProviderSimple.GetPropertyValue propertyId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostRawElementProvider As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Provider::IRawElementProviderSimple ^ HostRawElementProvider { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostRawElementProvider : System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IRawElementProviderSimple.ProviderOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderOptions As ProviderOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Provider::ProviderOptions ProviderOptions { System::Windows::Automation::Provider::ProviderOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderOptions : System.Windows.Automation.Provider.ProviderOptions" Usage="System.Windows.Automation.Provider.IRawElementProviderSimple.ProviderOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AnonymousIdentificationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousIdentificationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnonymousIdentificationEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type AnonymousIdentificationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AnonymousIdentificationEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousIdentificationEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.AnonymousIdentificationEventArgs : System.Web.HttpContext -&gt; System.Web.Security.AnonymousIdentificationEventArgs" Usage="new System.Web.Security.AnonymousIdentificationEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID" />
       <MemberSignature Language="VB.NET" Value="Public Property AnonymousID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AnonymousID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnonymousID : string with get, set" Usage="System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AnonymousIdentificationEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.AnonymousIdentificationEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.UltimateResourceFallbackLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum UltimateResourceFallbackLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class UltimateResourceFallbackLocation" />
+  <TypeSignature Language="F#" Value="type UltimateResourceFallbackLocation = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Resources.UltimateResourceFallbackLocation.MainAssembly" />
       <MemberSignature Language="VB.NET" Value="MainAssembly" />
       <MemberSignature Language="C++ CLI" Value="MainAssembly" />
+      <MemberSignature Language="F#" Value="MainAssembly = 0" Usage="System.Resources.UltimateResourceFallbackLocation.MainAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Resources.UltimateResourceFallbackLocation.Satellite" />
       <MemberSignature Language="VB.NET" Value="Satellite" />
       <MemberSignature Language="C++ CLI" Value="Satellite" />
+      <MemberSignature Language="F#" Value="Satellite = 1" Usage="System.Resources.UltimateResourceFallbackLocation.Satellite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

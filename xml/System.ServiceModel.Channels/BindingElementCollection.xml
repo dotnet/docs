@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingElementCollection&#xA;Inherits Collection(Of BindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingElementCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::BindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type BindingElementCollection = class&#xA;    inherit Collection&lt;BindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elements As IEnumerable(Of BindingElement))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingElementCollection(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.BindingElementCollection : seq&lt;System.ServiceModel.Channels.BindingElement&gt; -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="new System.ServiceModel.Channels.BindingElementCollection elements" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.ServiceModel.Channels.BindingElement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elements As BindingElement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingElementCollection(cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.BindingElementCollection : System.ServiceModel.Channels.BindingElement[] -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="new System.ServiceModel.Channels.BindingElementCollection elements" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.AddRange(System.ServiceModel.Channels.BindingElement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (ParamArray elements As BindingElement())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(... cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.ServiceModel.Channels.BindingElement[] -&gt; unit" Usage="bindingElementCollection.AddRange elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::BindingElementCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="bindingElementCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Contains(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (bindingElementType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(Type ^ bindingElementType);" />
+      <MemberSignature Language="F#" Value="override this.Contains : Type -&gt; bool" Usage="bindingElementCollection.Contains bindingElementType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Find``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Find(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Find();" />
+      <MemberSignature Language="F#" Value="member this.Find : unit -&gt; 'T" Usage="bindingElementCollection.Find " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.FindAll``1" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of T) () As Collection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ FindAll();" />
+      <MemberSignature Language="F#" Value="member this.FindAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="bindingElementCollection.FindAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.InsertItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Channels::BindingElement ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="bindingElementCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Remove``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Remove();" />
+      <MemberSignature Language="F#" Value="override this.Remove : unit -&gt; 'T" Usage="bindingElementCollection.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -355,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.RemoveAll``1" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll(Of T) () As Collection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ RemoveAll();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="bindingElementCollection.RemoveAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.SetItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Channels::BindingElement ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="bindingElementCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

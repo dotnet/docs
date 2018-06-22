@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AmbiguousMatchException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AmbiguousMatchException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class AmbiguousMatchException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type AmbiguousMatchException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AmbiguousMatchException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousMatchException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AmbiguousMatchException : string -&gt; System.Reflection.AmbiguousMatchException" Usage="new System.Reflection.AmbiguousMatchException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -162,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AmbiguousMatchException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousMatchException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AmbiguousMatchException : string * Exception -&gt; System.Reflection.AmbiguousMatchException" Usage="new System.Reflection.AmbiguousMatchException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcPermission&#xA;Inherits DBDataPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcPermission sealed : System::Data::Common::DBDataPermission" />
+  <TypeSignature Language="F#" Value="type OdbcPermission = class&#xA;    inherit DBDataPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcPermission : System.Security.Permissions.PermissionState -&gt; System.Data.Odbc.OdbcPermission" Usage="new System.Data.Odbc.OdbcPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Odbc.OdbcPermission" Usage="new System.Data.Odbc.OdbcPermission (state, allowBlankPassword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (connectionString As String, restrictions As String, behavior As KeyRestrictionBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::String ^ connectionString, System::String ^ restrictions, System::Data::KeyRestrictionBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string * System.Data.KeyRestrictionBehavior -&gt; unit" Usage="odbcPermission.Add (connectionString, restrictions, behavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="odbcPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbSetClause" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbSetClause&#xA;Inherits DbModificationClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbSetClause sealed : System::Data::Common::CommandTrees::DbModificationClause" />
+  <TypeSignature Language="F#" Value="type DbSetClause = class&#xA;    inherit DbModificationClause" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSetClause.Property" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Property { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbSetClause.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSetClause.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Value { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbSetClause.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.AspLog" />
   <TypeSignature Language="VB.NET" Value="Public Class AspLog&#xA;Inherits Log" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspLog : Microsoft::VisualBasic::Logging::Log" />
+  <TypeSignature Language="F#" Value="type AspLog = class&#xA;    inherit Log" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AspLog(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Logging.AspLog : string -&gt; Microsoft.VisualBasic.Logging.AspLog" Usage="new Microsoft.VisualBasic.Logging.AspLog name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.InitializeWithDefaultsSinceNoConfigExists" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub InitializeWithDefaultsSinceNoConfigExists ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeWithDefaultsSinceNoConfigExists();" />
+      <MemberSignature Language="F#" Value="override this.InitializeWithDefaultsSinceNoConfigExists : unit -&gt; unit" Usage="aspLog.InitializeWithDefaultsSinceNoConfigExists " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

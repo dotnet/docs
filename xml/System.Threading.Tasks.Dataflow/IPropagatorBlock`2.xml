@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.IPropagatorBlock`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPropagatorBlock(Of In TInput, Out TOutput)&#xA;Implements ISourceBlock(Of Out TOutput), ITargetBlock(Of In TInput)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TInput, typename TOutput&gt;&#xA;public interface class IPropagatorBlock : System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt;, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt;" />
+  <TypeSignature Language="F#" Value="type IPropagatorBlock&lt;'Input, 'Output&gt; = interface&#xA;    interface IDataflowBlock&#xA;    interface ISourceBlock&lt;'Output&gt;&#xA;    interface ITargetBlock&lt;'Input&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>

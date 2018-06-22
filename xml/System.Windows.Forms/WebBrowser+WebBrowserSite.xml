@@ -41,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.WebBrowserSite.#ctor(System.Windows.Forms.WebBrowser)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As WebBrowser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserSite(System::Windows::Forms::WebBrowser ^ host);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.WebBrowser.WebBrowserSite : System.Windows.Forms.WebBrowser -&gt; System.Windows.Forms.WebBrowser.WebBrowserSite" Usage="new System.Windows.Forms.WebBrowser.WebBrowserSite host" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

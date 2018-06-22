@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Rotation3DAnimation" />
   <TypeSignature Language="VB.NET" Value="Public Class Rotation3DAnimation&#xA;Inherits Rotation3DAnimationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Rotation3DAnimation : System::Windows::Media::Animation::Rotation3DAnimationBase" />
+  <TypeSignature Language="F#" Value="type Rotation3DAnimation = class&#xA;    inherit Rotation3DAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rotation3DAnimation(System::Windows::Media::Media3D::Rotation3D ^ toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Rotation3DAnimation : System.Windows.Media.Media3D.Rotation3D * System.Windows.Duration -&gt; System.Windows.Media.Animation.Rotation3DAnimation" Usage="new System.Windows.Media.Animation.Rotation3DAnimation (toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rotation3DAnimation(System::Windows::Media::Media3D::Rotation3D ^ toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Rotation3DAnimation : System.Windows.Media.Media3D.Rotation3D * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.Rotation3DAnimation" Usage="new System.Windows.Media.Animation.Rotation3DAnimation (toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D fromValue, class System.Windows.Media.Media3D.Rotation3D toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Media3D.Rotation3D,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rotation3DAnimation(System::Windows::Media::Media3D::Rotation3D ^ fromValue, System::Windows::Media::Media3D::Rotation3D ^ toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Rotation3DAnimation : System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Media3D.Rotation3D * System.Windows.Duration -&gt; System.Windows.Media.Animation.Rotation3DAnimation" Usage="new System.Windows.Media.Animation.Rotation3DAnimation (fromValue, toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D fromValue, class System.Windows.Media.Media3D.Rotation3D toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Media3D.Rotation3D,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rotation3DAnimation(System::Windows::Media::Media3D::Rotation3D ^ fromValue, System::Windows::Media::Media3D::Rotation3D ^ toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.Rotation3DAnimation : System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Media3D.Rotation3D * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.Rotation3DAnimation" Usage="new System.Windows.Media.Animation.Rotation3DAnimation (fromValue, toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.By" />
       <MemberSignature Language="VB.NET" Value="Public Property By As Rotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Rotation3D ^ By { System::Windows::Media::Media3D::Rotation3D ^ get(); void set(System::Windows::Media::Media3D::Rotation3D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.By : System.Windows.Media.Media3D.Rotation3D with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.By" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Rotation3DAnimation.ByProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ByProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ByProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Rotation3DAnimation.ByProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Rotation3DAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Rotation3DAnimation ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.Rotation3DAnimation" Usage="rotation3DAnimation.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="rotation3DAnimation.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.EasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.EasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Rotation3DAnimation.EasingFunctionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Rotation3DAnimation.EasingFunctionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As Rotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Rotation3D ^ From { System::Windows::Media::Media3D::Rotation3D ^ get(); void set(System::Windows::Media::Media3D::Rotation3D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.From : System.Windows.Media.Media3D.Rotation3D with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Rotation3DAnimation.FromProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FromProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FromProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Rotation3DAnimation.FromProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +441,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Media3D.Rotation3D GetCurrentValueCore(class System.Windows.Media.Media3D.Rotation3D defaultOriginValue, class System.Windows.Media.Media3D.Rotation3D defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Rotation3DAnimation.GetCurrentValueCore(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Rotation3D ^ GetCurrentValueCore(System::Windows::Media::Media3D::Rotation3D ^ defaultOriginValue, System::Windows::Media::Media3D::Rotation3D ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Media3D.Rotation3D * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Media.Media3D.Rotation3D" Usage="rotation3DAnimation.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -465,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.IsAdditive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.IsAdditive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -504,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.IsCumulative" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.IsCumulative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -542,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Rotation3DAnimation.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As Rotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Rotation3D ^ To { System::Windows::Media::Media3D::Rotation3D ^ get(); void set(System::Windows::Media::Media3D::Rotation3D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : System.Windows.Media.Media3D.Rotation3D with get, set" Usage="System.Windows.Media.Animation.Rotation3DAnimation.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -599,6 +616,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Rotation3DAnimation.ToProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Rotation3DAnimation.ToProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

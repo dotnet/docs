@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.GCHandleType" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCHandleType" />
   <TypeSignature Language="C++ CLI" Value="public enum class GCHandleType" />
+  <TypeSignature Language="F#" Value="type GCHandleType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.GCHandleType.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 2" Usage="System.Runtime.InteropServices.GCHandleType.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.GCHandleType.Pinned" />
       <MemberSignature Language="VB.NET" Value="Pinned" />
       <MemberSignature Language="C++ CLI" Value="Pinned" />
+      <MemberSignature Language="F#" Value="Pinned = 3" Usage="System.Runtime.InteropServices.GCHandleType.Pinned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.GCHandleType.Weak" />
       <MemberSignature Language="VB.NET" Value="Weak" />
       <MemberSignature Language="C++ CLI" Value="Weak" />
+      <MemberSignature Language="F#" Value="Weak = 0" Usage="System.Runtime.InteropServices.GCHandleType.Weak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.GCHandleType.WeakTrackResurrection" />
       <MemberSignature Language="VB.NET" Value="WeakTrackResurrection" />
       <MemberSignature Language="C++ CLI" Value="WeakTrackResurrection" />
+      <MemberSignature Language="F#" Value="WeakTrackResurrection = 1" Usage="System.Runtime.InteropServices.GCHandleType.WeakTrackResurrection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Throw" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Throw&#xA;Inherits AST" />
   <TypeSignature Language="C++ CLI" Value="public ref class Throw sealed : Microsoft::JScript::AST" />
+  <TypeSignature Language="F#" Value="type Throw = class&#xA;    inherit AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Throw.JScriptThrow(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptThrow (value As Object) As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ JScriptThrow(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member JScriptThrow : obj -&gt; Exception" Usage="Microsoft.JScript.Throw.JScriptThrow value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

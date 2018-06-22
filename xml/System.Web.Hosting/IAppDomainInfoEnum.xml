@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppDomainInfoEnum" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAppDomainInfoEnum" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAppDomainInfoEnum" />
+  <TypeSignature Language="F#" Value="type IAppDomainInfoEnum = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfoEnum.Count" />
       <MemberSignature Language="VB.NET" Value="Public Function Count () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Count();" />
+      <MemberSignature Language="F#" Value="abstract member Count : unit -&gt; int" Usage="iAppDomainInfoEnum.Count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfoEnum.GetData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData () As IAppDomainInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Hosting::IAppDomainInfo ^ GetData();" />
+      <MemberSignature Language="F#" Value="abstract member GetData : unit -&gt; System.Web.Hosting.IAppDomainInfo" Usage="iAppDomainInfoEnum.GetData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfoEnum.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool" Usage="iAppDomainInfoEnum.MoveNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfoEnum.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iAppDomainInfoEnum.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

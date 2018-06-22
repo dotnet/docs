@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XsltConvert" />
   <TypeSignature Language="VB.NET" Value="Public Class XsltConvert" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsltConvert abstract sealed" />
+  <TypeSignature Language="F#" Value="type XsltConvert = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.EnsureNodeSet(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EnsureNodeSet (listItems As IList(Of XPathItem)) As IList(Of XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ EnsureNodeSet(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member EnsureNodeSet : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" Usage="System.Xml.Xsl.Runtime.XsltConvert.EnsureNodeSet listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToBoolean(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (listItems As IList(Of XPathItem)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member ToBoolean : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; bool" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToBoolean listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToBoolean(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (item As XPathItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="static member ToBoolean : System.Xml.XPath.XPathItem -&gt; bool" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToBoolean item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDateTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member ToDateTime : string -&gt; DateTime" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDateTime value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDecimal(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Double) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(double value);" />
+      <MemberSignature Language="F#" Value="static member ToDecimal : double -&gt; decimal" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDecimal value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (listItems As IList(Of XPathItem)) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Decimal) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : decimal -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(int value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : int -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Long) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(long value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : int64 -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -325,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : string -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -354,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToDouble(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (item As XPathItem) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="static member ToDouble : System.Xml.XPath.XPathItem -&gt; double" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToDouble item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToInt(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt (value As Double) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt(double value);" />
+      <MemberSignature Language="F#" Value="static member ToInt : double -&gt; int" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToInt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -412,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToLong(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLong (value As Double) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToLong(double value);" />
+      <MemberSignature Language="F#" Value="static member ToLong : double -&gt; int64" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToLong value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -450,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToNode(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToNode (listItems As IList(Of XPathItem)) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XPath::XPathNavigator ^ ToNode(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member ToNode : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToNode listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -479,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToNode(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToNode (item As XPathItem) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XPath::XPathNavigator ^ ToNode(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="static member ToNode : System.Xml.XPath.XPathItem -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToNode item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -517,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToNodeSet(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToNodeSet (listItems As IList(Of XPathItem)) As IList(Of XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ ToNodeSet(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member ToNodeSet : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToNodeSet listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -546,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToNodeSet(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToNodeSet (item As XPathItem) As IList(Of XPathNavigator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ ToNodeSet(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="static member ToNodeSet : System.Xml.XPath.XPathItem -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToNodeSet item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -584,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToString(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (listItems As IList(Of XPathItem)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
+      <MemberSignature Language="F#" Value="static member ToString : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; -&gt; string" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToString listItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -613,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToString(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value);" />
+      <MemberSignature Language="F#" Value="static member ToString : DateTime -&gt; string" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -642,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToString(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double value);" />
+      <MemberSignature Language="F#" Value="static member ToString : double -&gt; string" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -671,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltConvert.ToString(System.Xml.XPath.XPathItem)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (item As XPathItem) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Xml::XPath::XPathItem ^ item);" />
+      <MemberSignature Language="F#" Value="static member ToString : System.Xml.XPath.XPathItem -&gt; string" Usage="System.Xml.Xsl.Runtime.XsltConvert.ToString item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

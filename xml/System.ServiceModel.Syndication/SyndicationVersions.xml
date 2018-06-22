@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationVersions" />
   <TypeSignature Language="VB.NET" Value="Public Class SyndicationVersions" />
   <TypeSignature Language="C++ CLI" Value="public ref class SyndicationVersions abstract sealed" />
+  <TypeSignature Language="F#" Value="type SyndicationVersions = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.SyndicationVersions.Atom10" />
       <MemberSignature Language="VB.NET" Value="Public Const Atom10 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Atom10;" />
+      <MemberSignature Language="F#" Value="val mutable Atom10 : string" Usage="System.ServiceModel.Syndication.SyndicationVersions.Atom10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.SyndicationVersions.Rss20" />
       <MemberSignature Language="VB.NET" Value="Public Const Rss20 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Rss20;" />
+      <MemberSignature Language="F#" Value="val mutable Rss20 : string" Usage="System.ServiceModel.Syndication.SyndicationVersions.Rss20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

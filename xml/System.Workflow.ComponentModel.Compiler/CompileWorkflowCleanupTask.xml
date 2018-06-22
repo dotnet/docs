@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompileWorkflowCleanupTask&#xA;Inherits Task&#xA;Implements ITask" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompileWorkflowCleanupTask sealed : Microsoft::Build::Utilities::Task, Microsoft::Build::Framework::ITask" />
+  <TypeSignature Language="F#" Value="type CompileWorkflowCleanupTask = class&#xA;    inherit Task&#xA;    interface ITask" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="compileWorkflowCleanupTask.Execute " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.TemporaryFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property TemporaryFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TemporaryFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TemporaryFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.TemporaryFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

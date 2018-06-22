@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask" />
   <TypeSignature Language="VB.NET" Value="Public Class PartialClassGenerationTask&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class PartialClassGenerationTask : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type PartialClassGenerationTask = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.ApplicationMarkup" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationMarkup As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ApplicationMarkup { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationMarkup : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.ApplicationMarkup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.BuildTaskPath" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildTaskPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildTaskPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildTaskPath : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.BuildTaskPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="partialClassGenerationTask.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedCodeFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedCodeFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedCodeFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedCodeFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedResources" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedResources As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedResources { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedResources : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedResources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedSourceExtension" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedSourceExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GeneratedSourceExtension { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedSourceExtension : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.GeneratedSourceExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.IsInProcessXamlMarkupCompile" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInProcessXamlMarkupCompile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInProcessXamlMarkupCompile { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInProcessXamlMarkupCompile : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.IsInProcessXamlMarkupCompile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.KnownReferencePaths" />
       <MemberSignature Language="VB.NET" Value="Public Property KnownReferencePaths As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ KnownReferencePaths { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KnownReferencePaths : string[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.KnownReferencePaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.MSBuildProjectDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property MSBuildProjectDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MSBuildProjectDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MSBuildProjectDirectory : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.MSBuildProjectDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -298,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.OutputPath" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.OutputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -323,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.References" />
       <MemberSignature Language="VB.NET" Value="Public Property References As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ References { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.References : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.RequiresCompilationPass2" />
       <MemberSignature Language="VB.NET" Value="Public Property RequiresCompilationPass2 As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequiresCompilationPass2 { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresCompilationPass2 : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.RequiresCompilationPass2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -376,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -396,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.SourceCodeFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceCodeFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SourceCodeFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.SourceCodeFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -416,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.XamlBuildTypeGenerationExtensionNames" />
       <MemberSignature Language="VB.NET" Value="Public Property XamlBuildTypeGenerationExtensionNames As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ XamlBuildTypeGenerationExtensionNames { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XamlBuildTypeGenerationExtensionNames : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.XamlBuildTypeGenerationExtensionNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -436,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.XamlBuildTypeInspectionExtensionNames" />
       <MemberSignature Language="VB.NET" Value="Public Property XamlBuildTypeInspectionExtensionNames As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ XamlBuildTypeInspectionExtensionNames { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XamlBuildTypeInspectionExtensionNames : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.PartialClassGenerationTask.XamlBuildTypeInspectionExtensionNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

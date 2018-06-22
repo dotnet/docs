@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IClientChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientChannel&#xA;Implements IContextChannel, IDisposable, IExtensibleObject(Of IContextChannel)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClientChannel : IDisposable, System::ServiceModel::IContextChannel, System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::IContextChannel ^&gt;" />
+  <TypeSignature Language="F#" Value="type IClientChannel = interface&#xA;    interface IContextChannel&#xA;    interface ICommunicationObject&#xA;    interface IDisposable&#xA;    interface IChannel&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IClientChannel.AllowInitializationUI" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowInitializationUI As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInitializationUI { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInitializationUI : bool with get, set" Usage="System.ServiceModel.IClientChannel.AllowInitializationUI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IClientChannel.BeginDisplayInitializationUI(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginDisplayInitializationUI (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginDisplayInitializationUI(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginDisplayInitializationUI : AsyncCallback * obj -&gt; IAsyncResult" Usage="iClientChannel.BeginDisplayInitializationUI (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IClientChannel.DidInteractiveInitialization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DidInteractiveInitialization As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DidInteractiveInitialization { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DidInteractiveInitialization : bool" Usage="System.ServiceModel.IClientChannel.DidInteractiveInitialization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IClientChannel.DisplayInitializationUI" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisplayInitializationUI ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisplayInitializationUI();" />
+      <MemberSignature Language="F#" Value="abstract member DisplayInitializationUI : unit -&gt; unit" Usage="iClientChannel.DisplayInitializationUI " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IClientChannel.EndDisplayInitializationUI(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndDisplayInitializationUI (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndDisplayInitializationUI(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndDisplayInitializationUI : IAsyncResult -&gt; unit" Usage="iClientChannel.EndDisplayInitializationUI result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.IClientChannel.UnknownMessageReceived" />
       <MemberSignature Language="VB.NET" Value="Event UnknownMessageReceived As EventHandler(Of UnknownMessageReceivedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::UnknownMessageReceivedEventArgs ^&gt; ^ UnknownMessageReceived;" />
+      <MemberSignature Language="F#" Value="member this.UnknownMessageReceived : EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt; " Usage="member this.UnknownMessageReceived : System.EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IClientChannel.Via" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Via As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Via { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Via : Uri" Usage="System.ServiceModel.IClientChannel.Via" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

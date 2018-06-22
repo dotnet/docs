@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Day" />
   <TypeSignature Language="VB.NET" Value="Public Enum Day" />
   <TypeSignature Language="C++ CLI" Value="public enum class Day" />
+  <TypeSignature Language="F#" Value="type Day = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 7" Usage="System.Windows.Forms.Day.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Friday" />
       <MemberSignature Language="VB.NET" Value="Friday" />
       <MemberSignature Language="C++ CLI" Value="Friday" />
+      <MemberSignature Language="F#" Value="Friday = 4" Usage="System.Windows.Forms.Day.Friday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Monday" />
       <MemberSignature Language="VB.NET" Value="Monday" />
       <MemberSignature Language="C++ CLI" Value="Monday" />
+      <MemberSignature Language="F#" Value="Monday = 0" Usage="System.Windows.Forms.Day.Monday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Saturday" />
       <MemberSignature Language="VB.NET" Value="Saturday" />
       <MemberSignature Language="C++ CLI" Value="Saturday" />
+      <MemberSignature Language="F#" Value="Saturday = 5" Usage="System.Windows.Forms.Day.Saturday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Sunday" />
       <MemberSignature Language="VB.NET" Value="Sunday" />
       <MemberSignature Language="C++ CLI" Value="Sunday" />
+      <MemberSignature Language="F#" Value="Sunday = 6" Usage="System.Windows.Forms.Day.Sunday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Thursday" />
       <MemberSignature Language="VB.NET" Value="Thursday" />
       <MemberSignature Language="C++ CLI" Value="Thursday" />
+      <MemberSignature Language="F#" Value="Thursday = 3" Usage="System.Windows.Forms.Day.Thursday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Tuesday" />
       <MemberSignature Language="VB.NET" Value="Tuesday" />
       <MemberSignature Language="C++ CLI" Value="Tuesday" />
+      <MemberSignature Language="F#" Value="Tuesday = 1" Usage="System.Windows.Forms.Day.Tuesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Wednesday" />
       <MemberSignature Language="VB.NET" Value="Wednesday" />
       <MemberSignature Language="C++ CLI" Value="Wednesday" />
+      <MemberSignature Language="F#" Value="Wednesday = 2" Usage="System.Windows.Forms.Day.Wednesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

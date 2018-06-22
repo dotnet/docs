@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DateTimeConstantAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeConstantAttribute&#xA;Inherits CustomConstantAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateTimeConstantAttribute sealed : System::Runtime::CompilerServices::CustomConstantAttribute" />
+  <TypeSignature Language="F#" Value="type DateTimeConstantAttribute = class&#xA;    inherit CustomConstantAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DateTimeConstantAttribute.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeConstantAttribute(long ticks);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DateTimeConstantAttribute : int64 -&gt; System.Runtime.CompilerServices.DateTimeConstantAttribute" Usage="new System.Runtime.CompilerServices.DateTimeConstantAttribute ticks" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DateTimeConstantAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.CompilerServices.DateTimeConstantAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

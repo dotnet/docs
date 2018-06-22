@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelDataSource&#xA;Implements IDataSource, IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelDataSource : System::Web::UI::IDataSource, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type ModelDataSource = class&#xA;    interface IDataSource&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.#ctor(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataControl As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelDataSource(System::Web::UI::Control ^ dataControl);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ModelDataSource : System.Web.UI.Control -&gt; System.Web.UI.WebControls.ModelDataSource" Usage="new System.Web.UI.WebControls.ModelDataSource dataControl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ModelDataSource.CallingDataMethods" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CallingDataMethods As CallingDataMethodsEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CallingDataMethodsEventHandler ^ CallingDataMethods;" />
+      <MemberSignature Language="F#" Value="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " Usage="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSource.DataControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataControl As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ DataControl { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataControl : System.Web.UI.Control" Usage="System.Web.UI.WebControls.ModelDataSource.DataControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsTrackingViewState () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsTrackingViewState();" />
+      <MemberSignature Language="F#" Value="abstract member IsTrackingViewState : unit -&gt; bool&#xA;override this.IsTrackingViewState : unit -&gt; bool" Usage="modelDataSource.IsTrackingViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="modelDataSource.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="modelDataSource.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSource.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ModelDataSource.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="modelDataSource.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -419,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.UpdateProperties(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateProperties (modelTypeName As String, selectMethod As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateProperties(System::String ^ modelTypeName, System::String ^ selectMethod);" />
+      <MemberSignature Language="F#" Value="member this.UpdateProperties : string * string -&gt; unit" Usage="modelDataSource.UpdateProperties (modelTypeName, selectMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSource.UpdateProperties(System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateProperties (modelTypeName As String, selectMethod As String, updateMethod As String, insertMethod As String, deleteMethod As String, dataKeyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateProperties(System::String ^ modelTypeName, System::String ^ selectMethod, System::String ^ updateMethod, System::String ^ insertMethod, System::String ^ deleteMethod, System::String ^ dataKeyName);" />
+      <MemberSignature Language="F#" Value="member this.UpdateProperties : string * string * string * string * string * string -&gt; unit" Usage="modelDataSource.UpdateProperties (modelTypeName, selectMethod, updateMethod, insertMethod, deleteMethod, dataKeyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -477,6 +488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSource.View" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property View As ModelDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ModelDataSourceView ^ View { System::Web::UI::WebControls::ModelDataSourceView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : System.Web.UI.WebControls.ModelDataSourceView" Usage="System.Web.UI.WebControls.ModelDataSource.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

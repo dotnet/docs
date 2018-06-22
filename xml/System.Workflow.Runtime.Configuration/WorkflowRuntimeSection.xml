@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntimeSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeSection : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.CommonParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommonParameters As NameValueConfigurationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::NameValueConfigurationCollection ^ CommonParameters { System::Configuration::NameValueConfigurationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommonParameters : System.Configuration.NameValueConfigurationCollection" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.CommonParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.EnablePerformanceCounters" />
       <MemberSignature Language="VB.NET" Value="Public Property EnablePerformanceCounters As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePerformanceCounters { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePerformanceCounters : bool with get, set" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.EnablePerformanceCounters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As WorkflowRuntimeServiceElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElementCollection ^ Services { System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateOnCreate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateOnCreate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateOnCreate : bool with get, set" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.ValidateOnCreate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.WorkflowDefinitionCacheCapacity" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkflowDefinitionCacheCapacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WorkflowDefinitionCacheCapacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinitionCacheCapacity : int with get, set" Usage="System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.WorkflowDefinitionCacheCapacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

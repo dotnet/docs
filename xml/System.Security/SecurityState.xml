@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityState" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityState" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityState abstract" />
+  <TypeSignature Language="F#" Value="type SecurityState = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -137,6 +138,7 @@ public class WebcamSecurityState : SecurityState
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityState.EnsureState" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EnsureState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EnsureState();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureState : unit -&gt; unit" Usage="securityState.EnsureState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +180,7 @@ public override void EnsureState()
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityState.IsStateAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Function IsStateAvailable () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsStateAvailable();" />
+      <MemberSignature Language="F#" Value="member this.IsStateAvailable : unit -&gt; bool" Usage="securityState.IsStateAvailable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

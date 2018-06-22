@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationIdentity sealed" />
+  <TypeSignature Language="F#" Value="type ApplicationIdentity = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, deployManifestIdentity As AssemblyIdentity, applicationManifestIdentity As AssemblyIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationIdentity(System::String ^ url, Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ deployManifestIdentity, Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ applicationManifestIdentity);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity : string * Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity * Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity (url, deployManifestIdentity, applicationManifestIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, deployManifestPath As String, applicationManifestPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationIdentity(System::String ^ url, System::String ^ deployManifestPath, System::String ^ applicationManifestPath);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity : string * string * string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity (url, deployManifestPath, applicationManifestPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="applicationIdentity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

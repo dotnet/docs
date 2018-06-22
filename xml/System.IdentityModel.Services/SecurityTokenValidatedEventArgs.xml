@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SecurityTokenValidatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenValidatedEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenValidatedEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SecurityTokenValidatedEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal claimsPrincipal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.#ctor(System.Security.Claims.ClaimsPrincipal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenValidatedEventArgs(System::Security::Claims::ClaimsPrincipal ^ claimsPrincipal);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenValidatedEventArgs : System.Security.Claims.ClaimsPrincipal -&gt; System.IdentityModel.Services.SecurityTokenValidatedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenValidatedEventArgs claimsPrincipal" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal" />
       <MemberSignature Language="VB.NET" Value="Public Property ClaimsPrincipal As ClaimsPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ ClaimsPrincipal { System::Security::Claims::ClaimsPrincipal ^ get(); void set(System::Security::Claims::ClaimsPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimsPrincipal : System.Security.Claims.ClaimsPrincipal with get, set" Usage="System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

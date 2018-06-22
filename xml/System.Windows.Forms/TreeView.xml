@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeView" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeView&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeView : System::Windows::Forms::Control" />
+  <TypeSignature Language="F#" Value="type TreeView = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -125,6 +126,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.AfterCheck" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AfterCheck As TreeViewEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterCheck;" />
+      <MemberSignature Language="F#" Value="member this.AfterCheck : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterCheck : System.Windows.Forms.TreeViewEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +168,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.AfterCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AfterCollapse As TreeViewEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterCollapse;" />
+      <MemberSignature Language="F#" Value="member this.AfterCollapse : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterCollapse : System.Windows.Forms.TreeViewEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +207,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.AfterExpand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AfterExpand As TreeViewEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterExpand;" />
+      <MemberSignature Language="F#" Value="member this.AfterExpand : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterExpand : System.Windows.Forms.TreeViewEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.AfterLabelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AfterLabelEdit As NodeLabelEditEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::NodeLabelEditEventHandler ^ AfterLabelEdit;" />
+      <MemberSignature Language="F#" Value="member this.AfterLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " Usage="member this.AfterLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +286,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.AfterSelect" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AfterSelect As TreeViewEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterSelect;" />
+      <MemberSignature Language="F#" Value="member this.AfterSelect : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterSelect : System.Windows.Forms.TreeViewEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TreeView.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -344,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.TreeView.BackgroundImage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -379,6 +387,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -406,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.TreeView.BackgroundImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -441,6 +451,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -468,6 +479,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BeforeCheck" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeCheck As TreeViewCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeCheck;" />
+      <MemberSignature Language="F#" Value="member this.BeforeCheck : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeCheck : System.Windows.Forms.TreeViewCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -511,6 +523,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BeforeCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeCollapse As TreeViewCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeCollapse;" />
+      <MemberSignature Language="F#" Value="member this.BeforeCollapse : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeCollapse : System.Windows.Forms.TreeViewCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +566,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BeforeExpand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeExpand As TreeViewCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeExpand;" />
+      <MemberSignature Language="F#" Value="member this.BeforeExpand : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeExpand : System.Windows.Forms.TreeViewCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -595,6 +609,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BeforeLabelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeLabelEdit As NodeLabelEditEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::NodeLabelEditEventHandler ^ BeforeLabelEdit;" />
+      <MemberSignature Language="F#" Value="member this.BeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " Usage="member this.BeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -636,6 +651,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.BeforeSelect" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeSelect As TreeViewCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeSelect;" />
+      <MemberSignature Language="F#" Value="member this.BeforeSelect : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeSelect : System.Windows.Forms.TreeViewCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -675,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.BeginUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginUpdate();" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : unit -&gt; unit" Usage="treeView.BeginUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -714,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.TreeView.BorderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -760,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.CheckBoxes" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckBoxes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckBoxes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckBoxes : bool with get, set" Usage="System.Windows.Forms.TreeView.CheckBoxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -810,6 +829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.CollapseAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollapseAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollapseAll();" />
+      <MemberSignature Language="F#" Value="member this.CollapseAll : unit -&gt; unit" Usage="treeView.CollapseAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -855,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="treeView.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -876,6 +897,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.TreeView.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -897,6 +919,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.TreeView.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -918,6 +941,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="treeView.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -957,6 +981,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.DoubleBuffered" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DoubleBuffered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.TreeView.DoubleBuffered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -990,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.DrawMode" />
       <MemberSignature Language="VB.NET" Value="Public Property DrawMode As TreeViewDrawMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeViewDrawMode DrawMode { System::Windows::Forms::TreeViewDrawMode get(); void set(System::Windows::Forms::TreeViewDrawMode value); };" />
+      <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.TreeViewDrawMode with get, set" Usage="System.Windows.Forms.TreeView.DrawMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1038,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.DrawNode" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DrawNode As DrawTreeNodeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawTreeNodeEventHandler ^ DrawNode;" />
+      <MemberSignature Language="F#" Value="member this.DrawNode : System.Windows.Forms.DrawTreeNodeEventHandler " Usage="member this.DrawNode : System.Windows.Forms.DrawTreeNodeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1096,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.EndUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate();" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : unit -&gt; unit" Usage="treeView.EndUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1135,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.ExpandAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandAll();" />
+      <MemberSignature Language="F#" Value="member this.ExpandAll : unit -&gt; unit" Usage="treeView.ExpandAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1176,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TreeView.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1197,6 +1227,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.FullRowSelect" />
       <MemberSignature Language="VB.NET" Value="Public Property FullRowSelect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullRowSelect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FullRowSelect : bool with get, set" Usage="System.Windows.Forms.TreeView.FullRowSelect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1241,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.GetItemRenderStyles(System.Windows.Forms.TreeNode,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetItemRenderStyles (node As TreeNode, state As Integer) As OwnerDrawPropertyBag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Forms::OwnerDrawPropertyBag ^ GetItemRenderStyles(System::Windows::Forms::TreeNode ^ node, int state);" />
+      <MemberSignature Language="F#" Value="member this.GetItemRenderStyles : System.Windows.Forms.TreeNode * int -&gt; System.Windows.Forms.OwnerDrawPropertyBag" Usage="treeView.GetItemRenderStyles (node, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1276,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.GetNodeAt(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNodeAt (pt As Point) As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TreeNode ^ GetNodeAt(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="member this.GetNodeAt : System.Drawing.Point -&gt; System.Windows.Forms.TreeNode" Usage="treeView.GetNodeAt pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1308,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.GetNodeAt(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNodeAt (x As Integer, y As Integer) As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TreeNode ^ GetNodeAt(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.GetNodeAt : int * int -&gt; System.Windows.Forms.TreeNode" Usage="treeView.GetNodeAt (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1351,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.GetNodeCount(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNodeCount (includeSubTrees As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetNodeCount(bool includeSubTrees);" />
+      <MemberSignature Language="F#" Value="member this.GetNodeCount : bool -&gt; int" Usage="treeView.GetNodeCount includeSubTrees" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1393,6 +1428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.HideSelection" />
       <MemberSignature Language="VB.NET" Value="Public Property HideSelection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HideSelection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HideSelection : bool with get, set" Usage="System.Windows.Forms.TreeView.HideSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1448,6 +1484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.HitTest(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function HitTest (pt As Point) As TreeViewHitTestInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TreeViewHitTestInfo ^ HitTest(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Drawing.Point -&gt; System.Windows.Forms.TreeViewHitTestInfo" Usage="treeView.HitTest pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1479,6 +1516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.HitTest(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer) As TreeViewHitTestInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TreeViewHitTestInfo ^ HitTest(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int -&gt; System.Windows.Forms.TreeViewHitTestInfo" Usage="treeView.HitTest (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1521,6 +1559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.HotTracking" />
       <MemberSignature Language="VB.NET" Value="Public Property HotTracking As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HotTracking { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HotTracking : bool with get, set" Usage="System.Windows.Forms.TreeView.HotTracking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1568,6 +1607,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ImageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageIndex : int with get, set" Usage="System.Windows.Forms.TreeView.ImageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1630,6 +1670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ImageKey" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageKey : string with get, set" Usage="System.Windows.Forms.TreeView.ImageKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1681,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ImageList" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageList As ImageList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ ImageList { System::Windows::Forms::ImageList ^ get(); void set(System::Windows::Forms::ImageList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.TreeView.ImageList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1728,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Property Indent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Indent : int with get, set" Usage="System.Windows.Forms.TreeView.Indent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1776,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.IsInputKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="treeView.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1808,6 +1852,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.ItemDrag" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDrag As ItemDragEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemDragEventHandler ^ ItemDrag;" />
+      <MemberSignature Language="F#" Value="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " Usage="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1844,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ItemHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemHeight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int with get, set" Usage="System.Windows.Forms.TreeView.ItemHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1886,6 +1932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.LabelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelEdit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LabelEdit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LabelEdit : bool with get, set" Usage="System.Windows.Forms.TreeView.LabelEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1930,6 +1977,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TreeView.LineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1966,6 +2014,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.NodeMouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeMouseClick As TreeNodeMouseClickEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseClickEventHandler ^ NodeMouseClick;" />
+      <MemberSignature Language="F#" Value="member this.NodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " Usage="member this.NodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2004,6 +2053,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.NodeMouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeMouseDoubleClick As TreeNodeMouseClickEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseClickEventHandler ^ NodeMouseDoubleClick;" />
+      <MemberSignature Language="F#" Value="member this.NodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " Usage="member this.NodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2042,6 +2092,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.NodeMouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeMouseHover As TreeNodeMouseHoverEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseHoverEventHandler ^ NodeMouseHover;" />
+      <MemberSignature Language="F#" Value="member this.NodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventHandler " Usage="member this.NodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2080,6 +2131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Nodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As TreeNodeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNodeCollection ^ Nodes { System::Windows::Forms::TreeNodeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Nodes : System.Windows.Forms.TreeNodeCollection" Usage="System.Windows.Forms.TreeView.Nodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2129,6 +2181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterCheck (e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterCheck(System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterCheck : System.Windows.Forms.TreeViewEventArgs -&gt; unit&#xA;override this.OnAfterCheck : System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="treeView.OnAfterCheck e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2167,6 +2220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnAfterCollapse (e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnAfterCollapse(System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterCollapse : System.Windows.Forms.TreeViewEventArgs -&gt; unit&#xA;override this.OnAfterCollapse : System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="treeView.OnAfterCollapse e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2205,6 +2259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterExpand (e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterExpand(System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterExpand : System.Windows.Forms.TreeViewEventArgs -&gt; unit&#xA;override this.OnAfterExpand : System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="treeView.OnAfterExpand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2243,6 +2298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterLabelEdit (e As NodeLabelEditEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterLabelEdit(System::Windows::Forms::NodeLabelEditEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterLabelEdit : System.Windows.Forms.NodeLabelEditEventArgs -&gt; unit&#xA;override this.OnAfterLabelEdit : System.Windows.Forms.NodeLabelEditEventArgs -&gt; unit" Usage="treeView.OnAfterLabelEdit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2281,6 +2337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterSelect (e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterSelect(System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterSelect : System.Windows.Forms.TreeViewEventArgs -&gt; unit&#xA;override this.OnAfterSelect : System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="treeView.OnAfterSelect e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2319,6 +2376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeCheck (e As TreeViewCancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeCheck(System::Windows::Forms::TreeViewCancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeCheck : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit&#xA;override this.OnBeforeCheck : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit" Usage="treeView.OnBeforeCheck e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2357,6 +2415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnBeforeCollapse (e As TreeViewCancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnBeforeCollapse(System::Windows::Forms::TreeViewCancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeCollapse : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit&#xA;override this.OnBeforeCollapse : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit" Usage="treeView.OnBeforeCollapse e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2395,6 +2454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeExpand (e As TreeViewCancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeExpand(System::Windows::Forms::TreeViewCancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeExpand : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit&#xA;override this.OnBeforeExpand : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit" Usage="treeView.OnBeforeExpand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2433,6 +2493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeLabelEdit (e As NodeLabelEditEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeLabelEdit(System::Windows::Forms::NodeLabelEditEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventArgs -&gt; unit&#xA;override this.OnBeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventArgs -&gt; unit" Usage="treeView.OnBeforeLabelEdit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2471,6 +2532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeSelect (e As TreeViewCancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeSelect(System::Windows::Forms::TreeViewCancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeSelect : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit&#xA;override this.OnBeforeSelect : System.Windows.Forms.TreeViewCancelEventArgs -&gt; unit" Usage="treeView.OnBeforeSelect e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2509,6 +2571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnDrawNode(System.Windows.Forms.DrawTreeNodeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawNode (e As DrawTreeNodeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawNode(System::Windows::Forms::DrawTreeNodeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawNode : System.Windows.Forms.DrawTreeNodeEventArgs -&gt; unit&#xA;override this.OnDrawNode : System.Windows.Forms.DrawTreeNodeEventArgs -&gt; unit" Usage="treeView.OnDrawNode e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2546,6 +2609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="treeView.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2581,6 +2645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="treeView.OnHandleDestroyed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2616,6 +2681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDrag (e As ItemDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDrag(System::Windows::Forms::ItemDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDrag : System.Windows.Forms.ItemDragEventArgs -&gt; unit&#xA;override this.OnItemDrag : System.Windows.Forms.ItemDragEventArgs -&gt; unit" Usage="treeView.OnItemDrag e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2652,6 +2718,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="treeView.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2689,6 +2756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyPress : System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="treeView.OnKeyPress e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2726,6 +2794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="treeView.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2761,6 +2830,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnMouseHover(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseHover (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseHover(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseHover : EventArgs -&gt; unit" Usage="treeView.OnMouseHover e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2798,6 +2868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="treeView.OnMouseLeave e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2833,6 +2904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnNodeMouseClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNodeMouseClick (e As TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNodeMouseClick(System::Windows::Forms::TreeNodeMouseClickEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnNodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventArgs -&gt; unit&#xA;override this.OnNodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventArgs -&gt; unit" Usage="treeView.OnNodeMouseClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2868,6 +2940,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNodeMouseDoubleClick (e As TreeNodeMouseClickEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNodeMouseDoubleClick(System::Windows::Forms::TreeNodeMouseClickEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnNodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventArgs -&gt; unit&#xA;override this.OnNodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventArgs -&gt; unit" Usage="treeView.OnNodeMouseDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2903,6 +2976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnNodeMouseHover(System.Windows.Forms.TreeNodeMouseHoverEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNodeMouseHover (e As TreeNodeMouseHoverEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNodeMouseHover(System::Windows::Forms::TreeNodeMouseHoverEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnNodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventArgs -&gt; unit&#xA;override this.OnNodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventArgs -&gt; unit" Usage="treeView.OnNodeMouseHover e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2938,6 +3012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.OnRightToLeftLayoutChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="treeView.OnRightToLeftLayoutChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2978,6 +3053,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.TreeView.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3016,6 +3092,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3043,6 +3120,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3070,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.PathSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property PathSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PathSeparator : string with get, set" Usage="System.Windows.Forms.TreeView.PathSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3112,6 +3191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.RightToLeftLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.TreeView.RightToLeftLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3148,6 +3228,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3184,6 +3265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Scrollable" />
       <MemberSignature Language="VB.NET" Value="Public Property Scrollable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Scrollable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Scrollable : bool with get, set" Usage="System.Windows.Forms.TreeView.Scrollable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3229,6 +3311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.SelectedImageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedImageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedImageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedImageIndex : int with get, set" Usage="System.Windows.Forms.TreeView.SelectedImageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3288,6 +3371,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.SelectedImageKey" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedImageKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedImageKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedImageKey : string with get, set" Usage="System.Windows.Forms.TreeView.SelectedImageKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3337,6 +3421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.SelectedNode" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedNode As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ SelectedNode { System::Windows::Forms::TreeNode ^ get(); void set(System::Windows::Forms::TreeNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedNode : System.Windows.Forms.TreeNode with get, set" Usage="System.Windows.Forms.TreeView.SelectedNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3386,6 +3471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ShowLines" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowLines : bool with get, set" Usage="System.Windows.Forms.TreeView.ShowLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3430,6 +3516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ShowNodeToolTips" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowNodeToolTips As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNodeToolTips { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowNodeToolTips : bool with get, set" Usage="System.Windows.Forms.TreeView.ShowNodeToolTips" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3472,6 +3559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ShowPlusMinus" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowPlusMinus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPlusMinus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowPlusMinus : bool with get, set" Usage="System.Windows.Forms.TreeView.ShowPlusMinus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3517,6 +3605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.ShowRootLines" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowRootLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowRootLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowRootLines : bool with get, set" Usage="System.Windows.Forms.TreeView.ShowRootLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3560,6 +3649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort();" />
+      <MemberSignature Language="F#" Value="member this.Sort : unit -&gt; unit" Usage="treeView.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3590,6 +3680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Sorted" />
       <MemberSignature Language="VB.NET" Value="Public Property Sorted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool with get, set" Usage="System.Windows.Forms.TreeView.Sorted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3632,6 +3723,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.StateImageList" />
       <MemberSignature Language="VB.NET" Value="Public Property StateImageList As ImageList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ StateImageList { System::Windows::Forms::ImageList ^ get(); void set(System::Windows::Forms::ImageList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StateImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.TreeView.StateImageList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3684,6 +3776,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.TreeView.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3723,6 +3816,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TreeView.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3750,6 +3844,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.TopNode" />
       <MemberSignature Language="VB.NET" Value="Public Property TopNode As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ TopNode { System::Windows::Forms::TreeNode ^ get(); void set(System::Windows::Forms::TreeNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TopNode : System.Windows.Forms.TreeNode with get, set" Usage="System.Windows.Forms.TreeView.TopNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3801,6 +3896,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="treeView.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3823,6 +3919,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.TreeViewNodeSorter" />
       <MemberSignature Language="VB.NET" Value="Public Property TreeViewNodeSorter As IComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IComparer ^ TreeViewNodeSorter { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TreeViewNodeSorter : System.Collections.IComparer with get, set" Usage="System.Windows.Forms.TreeView.TreeViewNodeSorter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3873,6 +3970,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeView.VisibleCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VisibleCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisibleCount : int" Usage="System.Windows.Forms.TreeView.VisibleCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3909,6 +4007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="treeView.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

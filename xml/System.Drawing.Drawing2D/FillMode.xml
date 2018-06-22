@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FillMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum FillMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class FillMode" />
+  <TypeSignature Language="F#" Value="type FillMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FillMode.Alternate" />
       <MemberSignature Language="VB.NET" Value="Alternate" />
       <MemberSignature Language="C++ CLI" Value="Alternate" />
+      <MemberSignature Language="F#" Value="Alternate = 0" Usage="System.Drawing.Drawing2D.FillMode.Alternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FillMode.Winding" />
       <MemberSignature Language="VB.NET" Value="Winding" />
       <MemberSignature Language="C++ CLI" Value="Winding" />
+      <MemberSignature Language="F#" Value="Winding = 1" Usage="System.Drawing.Drawing2D.FillMode.Winding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

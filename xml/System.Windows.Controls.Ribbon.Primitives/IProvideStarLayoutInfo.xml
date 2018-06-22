@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProvideStarLayoutInfo&#xA;Implements IProvideStarLayoutInfoBase" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProvideStarLayoutInfo : System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="F#" Value="type IProvideStarLayoutInfo = interface&#xA;    interface IProvideStarLayoutInfoBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.OnStarSizeAllocationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnStarSizeAllocationCompleted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnStarSizeAllocationCompleted();" />
+      <MemberSignature Language="F#" Value="abstract member OnStarSizeAllocationCompleted : unit -&gt; unit" Usage="iProvideStarLayoutInfo.OnStarSizeAllocationCompleted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StarLayoutCombinations As IEnumerable(Of StarLayoutInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ StarLayoutCombinations { System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StarLayoutCombinations : seq&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt;" Usage="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

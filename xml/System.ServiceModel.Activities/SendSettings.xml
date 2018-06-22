@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendSettings sealed" />
+  <TypeSignature Language="F#" Value="type SendSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property Endpoint As Endpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Endpoint ^ Endpoint { System::ServiceModel::Endpoint ^ get(); void set(System::ServiceModel::Endpoint ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Endpoint with get, set" Usage="System.ServiceModel.Activities.SendSettings.Endpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.EndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ EndpointAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointAddress : Uri with get, set" Usage="System.ServiceModel.Activities.SendSettings.EndpointAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.EndpointConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointConfigurationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointConfigurationName : string with get, set" Usage="System.ServiceModel.Activities.SendSettings.EndpointConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.IsOneWay" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOneWay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOneWay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOneWay : bool with get, set" Usage="System.ServiceModel.Activities.SendSettings.IsOneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.OwnerDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerDisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerDisplayName : string with get, set" Usage="System.ServiceModel.Activities.SendSettings.OwnerDisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As Nullable(Of ProtectionLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Net::Security::ProtectionLevel&gt; ProtectionLevel { Nullable&lt;System::Net::Security::ProtectionLevel&gt; get(); void set(Nullable&lt;System::Net::Security::ProtectionLevel&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : Nullable&lt;System.Net.Security.ProtectionLevel&gt; with get, set" Usage="System.ServiceModel.Activities.SendSettings.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.RequirePersistBeforeSend" />
       <MemberSignature Language="VB.NET" Value="Public Property RequirePersistBeforeSend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequirePersistBeforeSend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequirePersistBeforeSend : bool with get, set" Usage="System.ServiceModel.Activities.SendSettings.RequirePersistBeforeSend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendSettings.TokenImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel TokenImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.ServiceModel.Activities.SendSettings.TokenImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.DigitShapes" />
   <TypeSignature Language="VB.NET" Value="Public Enum DigitShapes" />
   <TypeSignature Language="C++ CLI" Value="public enum class DigitShapes" />
+  <TypeSignature Language="F#" Value="type DigitShapes = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.Context" />
       <MemberSignature Language="VB.NET" Value="Context" />
       <MemberSignature Language="C++ CLI" Value="Context" />
+      <MemberSignature Language="F#" Value="Context = 0" Usage="System.Globalization.DigitShapes.Context" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.NativeNational" />
       <MemberSignature Language="VB.NET" Value="NativeNational" />
       <MemberSignature Language="C++ CLI" Value="NativeNational" />
+      <MemberSignature Language="F#" Value="NativeNational = 2" Usage="System.Globalization.DigitShapes.NativeNational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.DigitShapes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Globalization.DigitShapes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

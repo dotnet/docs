@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterCategory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounterCategory" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterCategory sealed" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterCategory = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterCategory(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterCategory : string -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="new System.Diagnostics.PerformanceCounterCategory categoryName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, machineName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterCategory(System::String ^ categoryName, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterCategory : string * string -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="new System.Diagnostics.PerformanceCounterCategory (categoryName, machineName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryHelp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryHelp As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryHelp { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryHelp : string" Usage="System.Diagnostics.PerformanceCounterCategory.CategoryHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounterCategory.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryType As PerformanceCounterCategoryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterCategoryType CategoryType { System::Diagnostics::PerformanceCounterCategoryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryType : System.Diagnostics.PerformanceCounterCategoryType" Usage="System.Diagnostics.PerformanceCounterCategory.CategoryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CounterExists (counterName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CounterExists(System::String ^ counterName);" />
+      <MemberSignature Language="F#" Value="member this.CounterExists : string -&gt; bool" Usage="performanceCounterCategory.CounterExists counterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CounterExists (counterName As String, categoryName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CounterExists(System::String ^ counterName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="static member CounterExists : string * string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.CounterExists (counterName, categoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -416,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CounterExists (counterName As String, categoryName As String, machineName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CounterExists(System::String ^ counterName, System::String ^ categoryName, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member CounterExists : string * string * string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.CounterExists (counterName, categoryName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -492,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (categoryName As String, categoryHelp As String, counterData As CounterCreationDataCollection) As PerformanceCounterCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::PerformanceCounterCategory ^ Create(System::String ^ categoryName, System::String ^ categoryHelp, System::Diagnostics::CounterCreationDataCollection ^ counterData);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * System.Diagnostics.CounterCreationDataCollection -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="System.Diagnostics.PerformanceCounterCategory.Create (categoryName, categoryHelp, counterData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -569,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.Diagnostics.CounterCreationDataCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (categoryName As String, categoryHelp As String, categoryType As PerformanceCounterCategoryType, counterData As CounterCreationDataCollection) As PerformanceCounterCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::PerformanceCounterCategory ^ Create(System::String ^ categoryName, System::String ^ categoryHelp, System::Diagnostics::PerformanceCounterCategoryType categoryType, System::Diagnostics::CounterCreationDataCollection ^ counterData);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * System.Diagnostics.PerformanceCounterCategoryType * System.Diagnostics.CounterCreationDataCollection -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="System.Diagnostics.PerformanceCounterCategory.Create (categoryName, categoryHelp, categoryType, counterData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -655,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (categoryName As String, categoryHelp As String, counterName As String, counterHelp As String) As PerformanceCounterCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::PerformanceCounterCategory ^ Create(System::String ^ categoryName, System::String ^ categoryHelp, System::String ^ counterName, System::String ^ counterHelp);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * string * string -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="System.Diagnostics.PerformanceCounterCategory.Create (categoryName, categoryHelp, counterName, counterHelp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -735,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (categoryName As String, categoryHelp As String, categoryType As PerformanceCounterCategoryType, counterName As String, counterHelp As String) As PerformanceCounterCategory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::PerformanceCounterCategory ^ Create(System::String ^ categoryName, System::String ^ categoryHelp, System::Diagnostics::PerformanceCounterCategoryType categoryType, System::String ^ counterName, System::String ^ counterHelp);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * System.Diagnostics.PerformanceCounterCategoryType * string * string -&gt; System.Diagnostics.PerformanceCounterCategory" Usage="System.Diagnostics.PerformanceCounterCategory.Create (categoryName, categoryHelp, categoryType, counterName, counterHelp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -818,6 +831,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="static member Delete : string -&gt; unit" Usage="System.Diagnostics.PerformanceCounterCategory.Delete categoryName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -879,6 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (categoryName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.Exists categoryName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -934,6 +949,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (categoryName As String, machineName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ categoryName, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member Exists : string * string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.Exists (categoryName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1009,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCategories" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCategories () As PerformanceCounterCategory()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::PerformanceCounterCategory ^&gt; ^ GetCategories();" />
+      <MemberSignature Language="F#" Value="static member GetCategories : unit -&gt; System.Diagnostics.PerformanceCounterCategory[]" Usage="System.Diagnostics.PerformanceCounterCategory.GetCategories " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1056,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCategories(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCategories (machineName As String) As PerformanceCounterCategory()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::PerformanceCounterCategory ^&gt; ^ GetCategories(System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member GetCategories : string -&gt; System.Diagnostics.PerformanceCounterCategory[]" Usage="System.Diagnostics.PerformanceCounterCategory.GetCategories machineName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1117,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCounters" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCounters () As PerformanceCounter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::PerformanceCounter ^&gt; ^ GetCounters();" />
+      <MemberSignature Language="F#" Value="member this.GetCounters : unit -&gt; System.Diagnostics.PerformanceCounter[]" Usage="performanceCounterCategory.GetCounters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1168,6 +1187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCounters(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCounters (instanceName As String) As PerformanceCounter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::PerformanceCounter ^&gt; ^ GetCounters(System::String ^ instanceName);" />
+      <MemberSignature Language="F#" Value="member this.GetCounters : string -&gt; System.Diagnostics.PerformanceCounter[]" Usage="performanceCounterCategory.GetCounters instanceName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1228,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetInstanceNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstanceNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetInstanceNames();" />
+      <MemberSignature Language="F#" Value="member this.GetInstanceNames : unit -&gt; string[]" Usage="performanceCounterCategory.GetInstanceNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1290,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function InstanceExists (instanceName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InstanceExists(System::String ^ instanceName);" />
+      <MemberSignature Language="F#" Value="member this.InstanceExists : string -&gt; bool" Usage="performanceCounterCategory.InstanceExists instanceName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1347,6 +1369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InstanceExists (instanceName As String, categoryName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool InstanceExists(System::String ^ instanceName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="static member InstanceExists : string * string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.InstanceExists (instanceName, categoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1409,6 +1432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InstanceExists (instanceName As String, categoryName As String, machineName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool InstanceExists(System::String ^ instanceName, System::String ^ categoryName, System::String ^ machineName);" />
+      <MemberSignature Language="F#" Value="static member InstanceExists : string * string * string -&gt; bool" Usage="System.Diagnostics.PerformanceCounterCategory.InstanceExists (instanceName, categoryName, machineName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1479,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.PerformanceCounterCategory.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1513,6 +1538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.ReadCategory" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadCategory () As InstanceDataCollectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::InstanceDataCollectionCollection ^ ReadCategory();" />
+      <MemberSignature Language="F#" Value="member this.ReadCategory : unit -&gt; System.Diagnostics.InstanceDataCollectionCollection" Usage="performanceCounterCategory.ReadCategory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

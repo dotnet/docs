@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileIOPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileIOPermissionAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileIOPermissionAccess" />
+  <TypeSignature Language="F#" Value="type FileIOPermissionAccess = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" />
       <MemberSignature Language="VB.NET" Value="AllAccess" />
       <MemberSignature Language="C++ CLI" Value="AllAccess" />
+      <MemberSignature Language="F#" Value="AllAccess = 15" Usage="System.Security.Permissions.FileIOPermissionAccess.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Append" />
       <MemberSignature Language="VB.NET" Value="Append" />
       <MemberSignature Language="C++ CLI" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 4" Usage="System.Security.Permissions.FileIOPermissionAccess.Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" />
       <MemberSignature Language="VB.NET" Value="NoAccess" />
       <MemberSignature Language="C++ CLI" Value="NoAccess" />
+      <MemberSignature Language="F#" Value="NoAccess = 0" Usage="System.Security.Permissions.FileIOPermissionAccess.NoAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />
       <MemberSignature Language="VB.NET" Value="PathDiscovery" />
       <MemberSignature Language="C++ CLI" Value="PathDiscovery" />
+      <MemberSignature Language="F#" Value="PathDiscovery = 8" Usage="System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Security.Permissions.FileIOPermissionAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Security.Permissions.FileIOPermissionAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

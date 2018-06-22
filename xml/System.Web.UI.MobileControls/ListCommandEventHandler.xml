@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListCommandEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListCommandEventHandler(sender As Object, e As ListCommandEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ListCommandEventHandler(System::Object ^ sender, ListCommandEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ListCommandEventHandler = delegate of obj * ListCommandEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

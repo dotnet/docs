@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackagingProgressEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PackagingProgressEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackagingProgressEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PackagingProgressEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.PackagingProgressEventArgs.#ctor(System.Windows.Xps.Packaging.PackagingAction,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As PackagingAction, numberCompleted As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PackagingProgressEventArgs(System::Windows::Xps::Packaging::PackagingAction action, int numberCompleted);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.PackagingProgressEventArgs : System.Windows.Xps.Packaging.PackagingAction * int -&gt; System.Windows.Xps.Packaging.PackagingProgressEventArgs" Usage="new System.Windows.Xps.Packaging.PackagingProgressEventArgs (action, numberCompleted)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As PackagingAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::PackagingAction Action { System::Windows::Xps::Packaging::PackagingAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Xps.Packaging.PackagingAction" Usage="System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberCompleted As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberCompleted { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberCompleted : int" Usage="System.Windows.Xps.Packaging.PackagingProgressEventArgs.NumberCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

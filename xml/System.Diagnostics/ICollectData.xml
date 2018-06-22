@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ICollectData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICollectData" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICollectData" />
+  <TypeSignature Language="F#" Value="type ICollectData = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ICollectData.CloseData" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseData ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseData();" />
+      <MemberSignature Language="F#" Value="abstract member CloseData : unit -&gt; unit" Usage="iCollectData.CloseData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ICollectData.CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollectData (id As Integer, valueName As IntPtr, data As IntPtr, totalBytes As Integer, ByRef res As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollectData(int id, IntPtr valueName, IntPtr data, int totalBytes, [Runtime::InteropServices::Out] IntPtr % res);" />
+      <MemberSignature Language="F#" Value="abstract member CollectData : int * nativeint * nativeint * int *  -&gt; unit" Usage="iCollectData.CollectData (id, valueName, data, totalBytes, res)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

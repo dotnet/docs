@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.EmphasisBreak" />
   <TypeSignature Language="VB.NET" Value="Public Enum EmphasisBreak" />
   <TypeSignature Language="C++ CLI" Value="public enum class EmphasisBreak" />
+  <TypeSignature Language="F#" Value="type EmphasisBreak = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -7" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraStrong" />
       <MemberSignature Language="VB.NET" Value="ExtraStrong" />
       <MemberSignature Language="C++ CLI" Value="ExtraStrong" />
+      <MemberSignature Language="F#" Value="ExtraStrong = -6" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraStrong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraWeak" />
       <MemberSignature Language="VB.NET" Value="ExtraWeak" />
       <MemberSignature Language="C++ CLI" Value="ExtraWeak" />
+      <MemberSignature Language="F#" Value="ExtraWeak = -2" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraWeak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = -4" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = -1" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Strong" />
       <MemberSignature Language="VB.NET" Value="Strong" />
       <MemberSignature Language="C++ CLI" Value="Strong" />
+      <MemberSignature Language="F#" Value="Strong = -5" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Weak" />
       <MemberSignature Language="VB.NET" Value="Weak" />
       <MemberSignature Language="C++ CLI" Value="Weak" />
+      <MemberSignature Language="F#" Value="Weak = -3" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Weak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

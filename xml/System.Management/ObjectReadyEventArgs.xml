@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectReadyEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectReadyEventArgs&#xA;Inherits ManagementEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectReadyEventArgs : System::Management::ManagementEventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectReadyEventArgs = class&#xA;    inherit ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ObjectReadyEventArgs.NewObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewObject As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ NewObject { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewObject : System.Management.ManagementBaseObject" Usage="System.Management.ObjectReadyEventArgs.NewObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

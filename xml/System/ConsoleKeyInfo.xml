@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleKeyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure ConsoleKeyInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class ConsoleKeyInfo" />
+  <TypeSignature Language="F#" Value="type ConsoleKeyInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.#ctor(System.Char,System.ConsoleKey,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyChar As Char, key As ConsoleKey, shift As Boolean, alt As Boolean, control As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleKeyInfo(char keyChar, ConsoleKey key, bool shift, bool alt, bool control);" />
+      <MemberSignature Language="F#" Value="new ConsoleKeyInfo : char * ConsoleKey * bool * bool * bool -&gt; ConsoleKeyInfo" Usage="new System.ConsoleKeyInfo (keyChar, key, shift, alt, control)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.Equals(System.ConsoleKeyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ConsoleKeyInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ConsoleKeyInfo obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : ConsoleKeyInfo -&gt; bool" Usage="consoleKeyInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="consoleKeyInfo.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="consoleKeyInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.ConsoleKeyInfo.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As ConsoleKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ConsoleKey Key { ConsoleKey get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : ConsoleKey" Usage="System.ConsoleKeyInfo.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -303,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.ConsoleKeyInfo.KeyChar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char KeyChar { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyChar : char" Usage="System.ConsoleKeyInfo.KeyChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -349,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.ConsoleKeyInfo.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As ConsoleModifiers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ConsoleModifiers Modifiers { ConsoleModifiers get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : ConsoleModifiers" Usage="System.ConsoleKeyInfo.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -391,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.op_Equality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ConsoleKeyInfo, b As ConsoleKeyInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ConsoleKeyInfo a, ConsoleKeyInfo b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : ConsoleKeyInfo * ConsoleKeyInfo -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -436,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.op_Inequality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ConsoleKeyInfo, b As ConsoleKeyInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ConsoleKeyInfo a, ConsoleKeyInfo b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : ConsoleKeyInfo * ConsoleKeyInfo -&gt; bool" Usage="System.ConsoleKeyInfo.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>

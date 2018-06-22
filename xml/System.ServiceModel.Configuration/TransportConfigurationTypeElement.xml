@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TransportConfigurationTypeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransportConfigurationTypeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransportConfigurationTypeElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type TransportConfigurationTypeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportConfigurationTypeElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.TransportConfigurationTypeElement : string -&gt; System.ServiceModel.Configuration.TransportConfigurationTypeElement" Usage="new System.ServiceModel.Configuration.TransportConfigurationTypeElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, transportConfigurationTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportConfigurationTypeElement(System::String ^ name, System::String ^ transportConfigurationTypeName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.TransportConfigurationTypeElement : string * string -&gt; System.ServiceModel.Configuration.TransportConfigurationTypeElement" Usage="new System.ServiceModel.Configuration.TransportConfigurationTypeElement (name, transportConfigurationTypeName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.TransportConfigurationType" />
       <MemberSignature Language="VB.NET" Value="Public Property TransportConfigurationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransportConfigurationType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransportConfigurationType : string with get, set" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.TransportConfigurationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

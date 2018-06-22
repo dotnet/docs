@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExecutionType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExecutionType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExecutionType" />
+  <TypeSignature Language="F#" Value="type ExecutionType = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Parallel" />
       <MemberSignature Language="VB.NET" Value="Parallel" />
       <MemberSignature Language="C++ CLI" Value="Parallel" />
+      <MemberSignature Language="F#" Value="Parallel = 1" Usage="System.Workflow.Activities.ExecutionType.Parallel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ExecutionType.Sequence" />
       <MemberSignature Language="VB.NET" Value="Sequence" />
       <MemberSignature Language="C++ CLI" Value="Sequence" />
+      <MemberSignature Language="F#" Value="Sequence = 0" Usage="System.Workflow.Activities.ExecutionType.Sequence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

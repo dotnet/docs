@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectTarget" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEffectTarget" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEffectTarget" />
+  <TypeSignature Language="F#" Value="type TextEffectTarget = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectTarget.Disable" />
       <MemberSignature Language="VB.NET" Value="Public Sub Disable ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disable();" />
+      <MemberSignature Language="F#" Value="member this.Disable : unit -&gt; unit" Usage="textEffectTarget.Disable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.Element" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Element As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Element { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Element : System.Windows.DependencyObject" Usage="System.Windows.Documents.TextEffectTarget.Element" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectTarget.Enable" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enable ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enable();" />
+      <MemberSignature Language="F#" Value="member this.Enable : unit -&gt; unit" Usage="textEffectTarget.Enable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.Windows.Documents.TextEffectTarget.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.TextEffect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextEffect As TextEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextEffect ^ TextEffect { System::Windows::Media::TextEffect ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffect : System.Windows.Media.TextEffect" Usage="System.Windows.Documents.TextEffectTarget.TextEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

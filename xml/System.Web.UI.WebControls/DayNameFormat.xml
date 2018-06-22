@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DayNameFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum DayNameFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class DayNameFormat" />
+  <TypeSignature Language="F#" Value="type DayNameFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.FirstLetter" />
       <MemberSignature Language="VB.NET" Value="FirstLetter" />
       <MemberSignature Language="C++ CLI" Value="FirstLetter" />
+      <MemberSignature Language="F#" Value="FirstLetter = 2" Usage="System.Web.UI.WebControls.DayNameFormat.FirstLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.FirstTwoLetters" />
       <MemberSignature Language="VB.NET" Value="FirstTwoLetters" />
       <MemberSignature Language="C++ CLI" Value="FirstTwoLetters" />
+      <MemberSignature Language="F#" Value="FirstTwoLetters = 3" Usage="System.Web.UI.WebControls.DayNameFormat.FirstTwoLetters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Full" />
       <MemberSignature Language="VB.NET" Value="Full" />
       <MemberSignature Language="C++ CLI" Value="Full" />
+      <MemberSignature Language="F#" Value="Full = 0" Usage="System.Web.UI.WebControls.DayNameFormat.Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="C++ CLI" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 1" Usage="System.Web.UI.WebControls.DayNameFormat.Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Shortest" />
       <MemberSignature Language="VB.NET" Value="Shortest" />
       <MemberSignature Language="C++ CLI" Value="Shortest" />
+      <MemberSignature Language="F#" Value="Shortest = 4" Usage="System.Web.UI.WebControls.DayNameFormat.Shortest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

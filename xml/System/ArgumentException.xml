@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ArgumentException" />
   <TypeSignature Language="VB.NET" Value="Public Class ArgumentException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArgumentException : SystemException" />
+  <TypeSignature Language="F#" Value="type ArgumentException = class&#xA;    inherit SystemException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -132,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ArgumentException : string -&gt; ArgumentException" Usage="new System.ArgumentException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -180,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ArgumentException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new ArgumentException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; ArgumentException" Usage="new System.ArgumentException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ArgumentException : string * Exception -&gt; ArgumentException" Usage="new System.ArgumentException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -272,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, paramName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentException(System::String ^ message, System::String ^ paramName);" />
+      <MemberSignature Language="F#" Value="new ArgumentException : string * string -&gt; ArgumentException" Usage="new System.ArgumentException (message, paramName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -332,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, paramName As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentException(System::String ^ message, System::String ^ paramName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ArgumentException : string * string * Exception -&gt; ArgumentException" Usage="new System.ArgumentException (message, paramName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -390,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.ArgumentException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="argumentException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -446,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArgumentException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ArgumentException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -501,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:System.ArgumentException.ParamName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParamName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ParamName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParamName : string" Usage="System.ArgumentException.ParamName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

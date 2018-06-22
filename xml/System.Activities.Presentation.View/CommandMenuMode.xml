@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.CommandMenuMode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommandMenuMode" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandMenuMode sealed" />
+  <TypeSignature Language="F#" Value="type CommandMenuMode = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.CommandMenuMode.FullCommandMenu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FullCommandMenu As CommandMenuMode " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Activities::Presentation::View::CommandMenuMode ^ FullCommandMenu;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FullCommandMenu : System.Activities.Presentation.View.CommandMenuMode" Usage="System.Activities.Presentation.View.CommandMenuMode.FullCommandMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.CommandMenuMode.NoCommandMenu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoCommandMenu As CommandMenuMode " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Activities::Presentation::View::CommandMenuMode ^ NoCommandMenu;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NoCommandMenu : System.Activities.Presentation.View.CommandMenuMode" Usage="System.Activities.Presentation.View.CommandMenuMode.NoCommandMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

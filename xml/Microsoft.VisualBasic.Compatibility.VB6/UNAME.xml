@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.UNAME" />
   <TypeSignature Language="VB.NET" Value="Public Structure UNAME" />
   <TypeSignature Language="C++ CLI" Value="public value class UNAME" />
+  <TypeSignature Language="F#" Value="type UNAME = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UNAME.name" />
       <MemberSignature Language="VB.NET" Value="Public name As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr name;" />
+      <MemberSignature Language="F#" Value="val mutable name : nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.UNAME.name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

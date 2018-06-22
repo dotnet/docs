@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HasActivatableWorkflowEvent&#xA;Inherits InstancePersistenceEvent(Of HasActivatableWorkflowEvent)" />
   <TypeSignature Language="C++ CLI" Value="public ref class HasActivatableWorkflowEvent sealed : System::Runtime::DurableInstancing::InstancePersistenceEvent&lt;System::Activities::DurableInstancing::HasActivatableWorkflowEvent ^&gt;" />
+  <TypeSignature Language="F#" Value="type HasActivatableWorkflowEvent = class&#xA;    inherit InstancePersistenceEvent&lt;HasActivatableWorkflowEvent&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

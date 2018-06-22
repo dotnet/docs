@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MissingMethodException" />
   <TypeSignature Language="VB.NET" Value="Public Class MissingMethodException&#xA;Inherits MissingMemberException" />
   <TypeSignature Language="C++ CLI" Value="public ref class MissingMethodException : MissingMemberException" />
+  <TypeSignature Language="F#" Value="type MissingMethodException = class&#xA;    inherit MissingMemberException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -118,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingMethodException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingMethodException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new MissingMethodException : string -&gt; MissingMethodException" Usage="new System.MissingMethodException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingMethodException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MissingMethodException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new MissingMethodException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; MissingMethodException" Usage="new System.MissingMethodException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingMethodException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingMethodException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new MissingMethodException : string * Exception -&gt; MissingMethodException" Usage="new System.MissingMethodException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -252,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingMethodException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (className As String, methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingMethodException(System::String ^ className, System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new MissingMethodException : string * string -&gt; MissingMethodException" Usage="new System.MissingMethodException (className, methodName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.MissingMethodException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.MissingMethodException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

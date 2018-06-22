@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaUse" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaUse" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaUse" />
+  <TypeSignature Language="F#" Value="type XmlSchemaUse = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Schema.XmlSchemaUse.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Optional" />
       <MemberSignature Language="VB.NET" Value="Optional" />
       <MemberSignature Language="C++ CLI" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 1" Usage="System.Xml.Schema.XmlSchemaUse.Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Prohibited" />
       <MemberSignature Language="VB.NET" Value="Prohibited" />
       <MemberSignature Language="C++ CLI" Value="Prohibited" />
+      <MemberSignature Language="F#" Value="Prohibited = 2" Usage="System.Xml.Schema.XmlSchemaUse.Prohibited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 3" Usage="System.Xml.Schema.XmlSchemaUse.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

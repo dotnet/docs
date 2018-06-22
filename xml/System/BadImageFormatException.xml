@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.BadImageFormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class BadImageFormatException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class BadImageFormatException : SystemException" />
+  <TypeSignature Language="F#" Value="type BadImageFormatException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BadImageFormatException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new BadImageFormatException : string -&gt; BadImageFormatException" Usage="new System.BadImageFormatException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -200,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BadImageFormatException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new BadImageFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; BadImageFormatException" Usage="new System.BadImageFormatException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BadImageFormatException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new BadImageFormatException : string * Exception -&gt; BadImageFormatException" Usage="new System.BadImageFormatException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -290,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BadImageFormatException(System::String ^ message, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new BadImageFormatException : string * string -&gt; BadImageFormatException" Usage="new System.BadImageFormatException (message, fileName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -338,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BadImageFormatException(System::String ^ message, System::String ^ fileName, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new BadImageFormatException : string * string * Exception -&gt; BadImageFormatException" Usage="new System.BadImageFormatException (message, fileName, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -391,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.BadImageFormatException.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.BadImageFormatException.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -434,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.BadImageFormatException.FusionLog" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FusionLog As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FusionLog { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FusionLog : string" Usage="System.BadImageFormatException.FusionLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -470,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="badImageFormatException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -512,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:System.BadImageFormatException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.BadImageFormatException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -555,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.BadImageFormatException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="badImageFormatException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Log.TailPinnedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TailPinnedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TailPinnedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type TailPinnedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Log.SequenceNumber sequenceNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.TailPinnedEventArgs.#ctor(System.IO.Log.SequenceNumber)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TailPinnedEventArgs(System::IO::Log::SequenceNumber sequenceNumber);" />
+      <MemberSignature Language="F#" Value="new System.IO.Log.TailPinnedEventArgs : System.IO.Log.SequenceNumber -&gt; System.IO.Log.TailPinnedEventArgs" Usage="new System.IO.Log.TailPinnedEventArgs sequenceNumber" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -74,6 +76,7 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
       <MemberSignature Language="DocId" Value="P:System.IO.Log.TailPinnedEventArgs.TargetSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSequenceNumber As SequenceNumber" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::SequenceNumber TargetSequenceNumber { System::IO::Log::SequenceNumber get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetSequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.TailPinnedEventArgs.TargetSequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

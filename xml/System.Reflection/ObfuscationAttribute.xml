@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ObfuscationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObfuscationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObfuscationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ObfuscationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.ApplyToMembers" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyToMembers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyToMembers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyToMembers : bool with get, set" Usage="System.Reflection.ObfuscationAttribute.ApplyToMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.Exclude" />
       <MemberSignature Language="VB.NET" Value="Public Property Exclude As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Exclude { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Exclude : bool with get, set" Usage="System.Reflection.ObfuscationAttribute.Exclude" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.Feature" />
       <MemberSignature Language="VB.NET" Value="Public Property Feature As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Feature { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Feature : string with get, set" Usage="System.Reflection.ObfuscationAttribute.Feature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.StripAfterObfuscation" />
       <MemberSignature Language="VB.NET" Value="Public Property StripAfterObfuscation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StripAfterObfuscation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.StripAfterObfuscation : bool with get, set" Usage="System.Reflection.ObfuscationAttribute.StripAfterObfuscation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

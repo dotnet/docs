@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.DynamicILInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicILInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicILInfo" />
+  <TypeSignature Language="F#" Value="type DynamicILInfo = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicILInfo.DynamicMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicMethod As DynamicMethod" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::DynamicMethod ^ DynamicMethod { System::Reflection::Emit::DynamicMethod ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DynamicMethod : System.Reflection.Emit.DynamicMethod" Usage="System.Reflection.Emit.DynamicILInfo.DynamicMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (signature As Byte()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(cli::array &lt;System::Byte&gt; ^ signature);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : byte[] -&gt; int" Usage="dynamicILInfo.GetTokenFor signature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.Reflection.Emit.DynamicMethod)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As DynamicMethod) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(System::Reflection::Emit::DynamicMethod ^ method);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : System.Reflection.Emit.DynamicMethod -&gt; int" Usage="dynamicILInfo.GetTokenFor method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeFieldHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (field As RuntimeFieldHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeFieldHandle field);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : RuntimeFieldHandle -&gt; int" Usage="dynamicILInfo.GetTokenFor field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As RuntimeMethodHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeMethodHandle method);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : RuntimeMethodHandle -&gt; int" Usage="dynamicILInfo.GetTokenFor method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (type As RuntimeTypeHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeTypeHandle type);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : RuntimeTypeHandle -&gt; int" Usage="dynamicILInfo.GetTokenFor type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (literal As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(System::String ^ literal);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : string -&gt; int" Usage="dynamicILInfo.GetTokenFor literal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeFieldHandle,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (field As RuntimeFieldHandle, contextType As RuntimeTypeHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeFieldHandle field, RuntimeTypeHandle contextType);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : RuntimeFieldHandle * RuntimeTypeHandle -&gt; int" Usage="dynamicILInfo.GetTokenFor (field, contextType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As RuntimeMethodHandle, contextType As RuntimeTypeHandle) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeMethodHandle method, RuntimeTypeHandle contextType);" />
+      <MemberSignature Language="F#" Value="member this.GetTokenFor : RuntimeMethodHandle * RuntimeTypeHandle -&gt; int" Usage="dynamicILInfo.GetTokenFor (method, contextType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetCode(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCode (code As Byte(), maxStackSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCode(cli::array &lt;System::Byte&gt; ^ code, int maxStackSize);" />
+      <MemberSignature Language="F#" Value="member this.SetCode : byte[] * int -&gt; unit" Usage="dynamicILInfo.SetCode (code, maxStackSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCode(unsigned int8* code, int32 codeSize, int32 maxStackSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetCode(System.Byte*,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCode(System::Byte* code, int codeSize, int maxStackSize);" />
+      <MemberSignature Language="F#" Value="member this.SetCode : nativeptr&lt;byte&gt; * int * int -&gt; unit" Usage="dynamicILInfo.SetCode (code, codeSize, maxStackSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -447,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetExceptions(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetExceptions (exceptions As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExceptions(cli::array &lt;System::Byte&gt; ^ exceptions);" />
+      <MemberSignature Language="F#" Value="member this.SetExceptions : byte[] -&gt; unit" Usage="dynamicILInfo.SetExceptions exceptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -477,6 +490,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExceptions(unsigned int8* exceptions, int32 exceptionsSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetExceptions(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExceptions(System::Byte* exceptions, int exceptionsSize);" />
+      <MemberSignature Language="F#" Value="member this.SetExceptions : nativeptr&lt;byte&gt; * int -&gt; unit" Usage="dynamicILInfo.SetExceptions (exceptions, exceptionsSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -531,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetLocalSignature(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSignature (localSignature As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSignature(cli::array &lt;System::Byte&gt; ^ localSignature);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalSignature : byte[] -&gt; unit" Usage="dynamicILInfo.SetLocalSignature localSignature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -563,6 +578,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocalSignature(unsigned int8* localSignature, int32 signatureSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetLocalSignature(System.Byte*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSignature(System::Byte* localSignature, int signatureSize);" />
+      <MemberSignature Language="F#" Value="member this.SetLocalSignature : nativeptr&lt;byte&gt; * int -&gt; unit" Usage="dynamicILInfo.SetLocalSignature (localSignature, signatureSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

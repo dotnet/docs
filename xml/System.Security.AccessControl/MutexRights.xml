@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum MutexRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class MutexRights" />
+  <TypeSignature Language="F#" Value="type MutexRights = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.ChangePermissions" />
       <MemberSignature Language="VB.NET" Value="ChangePermissions" />
       <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
+      <MemberSignature Language="F#" Value="ChangePermissions = 262144" Usage="System.Security.AccessControl.MutexRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.Security.AccessControl.MutexRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.FullControl" />
       <MemberSignature Language="VB.NET" Value="FullControl" />
       <MemberSignature Language="C++ CLI" Value="FullControl" />
+      <MemberSignature Language="F#" Value="FullControl = 2031617" Usage="System.Security.AccessControl.MutexRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Modify" />
       <MemberSignature Language="VB.NET" Value="Modify" />
       <MemberSignature Language="C++ CLI" Value="Modify" />
+      <MemberSignature Language="F#" Value="Modify = 1" Usage="System.Security.AccessControl.MutexRights.Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.ReadPermissions" />
       <MemberSignature Language="VB.NET" Value="ReadPermissions" />
       <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
+      <MemberSignature Language="F#" Value="ReadPermissions = 131072" Usage="System.Security.AccessControl.MutexRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.Security.AccessControl.MutexRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.TakeOwnership" />
       <MemberSignature Language="VB.NET" Value="TakeOwnership" />
       <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
+      <MemberSignature Language="F#" Value="TakeOwnership = 524288" Usage="System.Security.AccessControl.MutexRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>

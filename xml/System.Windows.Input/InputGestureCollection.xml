@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputGestureCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputGestureCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputGestureCollection sealed : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type InputGestureCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.#ctor(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inputGestures As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputGestureCollection(System::Collections::IList ^ inputGestures);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputGestureCollection : System.Collections.IList -&gt; System.Windows.Input.InputGestureCollection" Usage="new System.Windows.Input.InputGestureCollection inputGestures" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Input.InputGesture inputGesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Add(System.Windows.Input.InputGesture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Input::InputGesture ^ inputGesture);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Input.InputGesture -&gt; int" Usage="inputGestureCollection.Add inputGesture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.AddRange(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (collection As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::ICollection ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Collections.ICollection -&gt; unit" Usage="inputGestureCollection.AddRange collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="inputGestureCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Contains(System.Windows.Input.InputGesture)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (key As InputGesture) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Input::InputGesture ^ key);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Input.InputGesture -&gt; bool" Usage="inputGestureCollection.Contains key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.CopyTo(System.Windows.Input.InputGesture[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (inputGestures As InputGesture(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Input::InputGesture ^&gt; ^ inputGestures, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Input.InputGesture[] * int -&gt; unit" Usage="inputGestureCollection.CopyTo (inputGestures, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Input.InputGestureCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="inputGestureCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.IndexOf(System.Windows.Input.InputGesture)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As InputGesture) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Input::InputGesture ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Input.InputGesture -&gt; int" Usage="inputGestureCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -306,6 +316,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Input.InputGesture inputGesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Insert(System.Int32,System.Windows.Input.InputGesture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Input::InputGesture ^ inputGesture);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Input.InputGesture -&gt; unit" Usage="inputGestureCollection.Insert (index, inputGesture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Input.InputGestureCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Input.InputGestureCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Input.InputGestureCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As InputGesture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputGesture ^ default[int] { System::Windows::Input::InputGesture ^ get(int index); void set(int index, System::Windows::Input::InputGesture ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Input.InputGesture with get, set" Usage="System.Windows.Input.InputGestureCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -440,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Input.InputGesture inputGesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Remove(System.Windows.Input.InputGesture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Input::InputGesture ^ inputGesture);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Input.InputGesture -&gt; unit" Usage="inputGestureCollection.Remove inputGesture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -465,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="inputGestureCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -492,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGestureCollection.Seal" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
+      <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="inputGestureCollection.Seal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -512,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Input.InputGestureCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -713,6 +732,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputGestureCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Input.InputGestureCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

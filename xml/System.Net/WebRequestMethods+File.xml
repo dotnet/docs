@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequestMethods.File" />
   <TypeSignature Language="VB.NET" Value="Public Class WebRequestMethods.File" />
   <TypeSignature Language="C++ CLI" Value="public: ref class WebRequestMethods::File abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebRequestMethods.File = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.File.DownloadFile" />
       <MemberSignature Language="VB.NET" Value="Public Const DownloadFile As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DownloadFile;" />
+      <MemberSignature Language="F#" Value="val mutable DownloadFile : string" Usage="System.Net.WebRequestMethods.File.DownloadFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.File.UploadFile" />
       <MemberSignature Language="VB.NET" Value="Public Const UploadFile As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ UploadFile;" />
+      <MemberSignature Language="F#" Value="val mutable UploadFile : string" Usage="System.Net.WebRequestMethods.File.UploadFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

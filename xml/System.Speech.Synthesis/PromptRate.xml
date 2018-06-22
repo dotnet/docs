@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptRate" />
   <TypeSignature Language="VB.NET" Value="Public Enum PromptRate" />
   <TypeSignature Language="C++ CLI" Value="public enum class PromptRate" />
+  <TypeSignature Language="F#" Value="type PromptRate = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.ExtraFast" />
       <MemberSignature Language="VB.NET" Value="ExtraFast" />
       <MemberSignature Language="C++ CLI" Value="ExtraFast" />
+      <MemberSignature Language="F#" Value="ExtraFast = 1" Usage="System.Speech.Synthesis.PromptRate.ExtraFast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.ExtraSlow" />
       <MemberSignature Language="VB.NET" Value="ExtraSlow" />
       <MemberSignature Language="C++ CLI" Value="ExtraSlow" />
+      <MemberSignature Language="F#" Value="ExtraSlow = 5" Usage="System.Speech.Synthesis.PromptRate.ExtraSlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Fast" />
       <MemberSignature Language="VB.NET" Value="Fast" />
       <MemberSignature Language="C++ CLI" Value="Fast" />
+      <MemberSignature Language="F#" Value="Fast = 2" Usage="System.Speech.Synthesis.PromptRate.Fast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 3" Usage="System.Speech.Synthesis.PromptRate.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Speech.Synthesis.PromptRate.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Slow" />
       <MemberSignature Language="VB.NET" Value="Slow" />
       <MemberSignature Language="C++ CLI" Value="Slow" />
+      <MemberSignature Language="F#" Value="Slow = 4" Usage="System.Speech.Synthesis.PromptRate.Slow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

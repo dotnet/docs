@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RequiredArgumentAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredArgumentAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredArgumentAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RequiredArgumentAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

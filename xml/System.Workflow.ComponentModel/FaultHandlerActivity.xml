@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.FaultHandlerActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FaultHandlerActivity&#xA;Inherits CompositeActivity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs), IDynamicPropertyTypeProvider, ITypeFilterProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultHandlerActivity sealed : System::Workflow::ComponentModel::CompositeActivity, System::Workflow::ComponentModel::Design::ITypeFilterProvider, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type FaultHandlerActivity = class&#xA;    inherit CompositeActivity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;&#xA;    interface ITypeFilterProvider&#xA;    interface IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultHandlerActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.FaultHandlerActivity : string -&gt; System.Workflow.ComponentModel.FaultHandlerActivity" Usage="new System.Workflow.ComponentModel.FaultHandlerActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="faultHandlerActivity.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="faultHandlerActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.FaultHandlerActivity.Fault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fault As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Fault { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fault : Exception" Usage="System.Workflow.ComponentModel.FaultHandlerActivity.Fault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ FaultType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FaultType : Type with get, set" Usage="System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.FaultHandlerActivity.FaultTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FaultTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ FaultTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FaultTypeProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.FaultHandlerActivity.FaultTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="faultHandlerActivity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnActivityChangeRemove (executionContext As ActivityExecutionContext, removedActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnActivityChangeRemove(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ removedActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="faultHandlerActivity.OnActivityChangeRemove (executionContext, removedActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.FaultHandlerActivity.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnWorkflowChangesCompleted (executionContext As ActivityExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnWorkflowChangesCompleted(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="faultHandlerActivity.OnWorkflowChangesCompleted executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.FaultHandlerActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FilterDescription As String Implements ITypeFilterProvider.FilterDescription" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.FaultHandlerActivity.System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription</InterfaceMember>

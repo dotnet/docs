@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxButtons" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxButtons" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxButtons" />
+  <TypeSignature Language="F#" Value="type MessageBoxButtons = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.AbortRetryIgnore" />
       <MemberSignature Language="VB.NET" Value="AbortRetryIgnore" />
       <MemberSignature Language="C++ CLI" Value="AbortRetryIgnore" />
+      <MemberSignature Language="F#" Value="AbortRetryIgnore = 2" Usage="System.Windows.Forms.MessageBoxButtons.AbortRetryIgnore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
       <MemberSignature Language="C++ CLI" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 0" Usage="System.Windows.Forms.MessageBoxButtons.OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.OKCancel" />
       <MemberSignature Language="VB.NET" Value="OKCancel" />
       <MemberSignature Language="C++ CLI" Value="OKCancel" />
+      <MemberSignature Language="F#" Value="OKCancel = 1" Usage="System.Windows.Forms.MessageBoxButtons.OKCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.RetryCancel" />
       <MemberSignature Language="VB.NET" Value="RetryCancel" />
       <MemberSignature Language="C++ CLI" Value="RetryCancel" />
+      <MemberSignature Language="F#" Value="RetryCancel = 5" Usage="System.Windows.Forms.MessageBoxButtons.RetryCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.YesNo" />
       <MemberSignature Language="VB.NET" Value="YesNo" />
       <MemberSignature Language="C++ CLI" Value="YesNo" />
+      <MemberSignature Language="F#" Value="YesNo = 4" Usage="System.Windows.Forms.MessageBoxButtons.YesNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.YesNoCancel" />
       <MemberSignature Language="VB.NET" Value="YesNoCancel" />
       <MemberSignature Language="C++ CLI" Value="YesNoCancel" />
+      <MemberSignature Language="F#" Value="YesNoCancel = 3" Usage="System.Windows.Forms.MessageBoxButtons.YesNoCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

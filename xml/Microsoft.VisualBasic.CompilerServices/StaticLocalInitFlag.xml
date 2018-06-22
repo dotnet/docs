@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StaticLocalInitFlag" />
   <TypeSignature Language="C++ CLI" Value="public ref class StaticLocalInitFlag sealed" />
+  <TypeSignature Language="F#" Value="type StaticLocalInitFlag = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State" />
       <MemberSignature Language="VB.NET" Value="Public State As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short State;" />
+      <MemberSignature Language="F#" Value="val mutable State : int16" Usage="Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

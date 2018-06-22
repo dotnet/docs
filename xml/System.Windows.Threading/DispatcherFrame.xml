@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class DispatcherFrame&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherFrame : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type DispatcherFrame = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherFrame.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exitWhenRequested As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherFrame(bool exitWhenRequested);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherFrame : bool -&gt; System.Windows.Threading.DispatcherFrame" Usage="new System.Windows.Threading.DispatcherFrame exitWhenRequested" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherFrame.Continue" />
       <MemberSignature Language="VB.NET" Value="Public Property Continue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Continue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Continue : bool with get, set" Usage="System.Windows.Threading.DispatcherFrame.Continue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

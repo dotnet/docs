@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmItemCollection&#xA;Inherits ItemCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmItemCollection sealed : System::Data::Metadata::Edm::ItemCollection" />
+  <TypeSignature Language="F#" Value="type EdmItemCollection = class&#xA;    inherit ItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmItemCollection.#ctor(System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlReaders As IEnumerable(Of XmlReader))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmItemCollection(System::Collections::Generic::IEnumerable&lt;System::Xml::XmlReader ^&gt; ^ xmlReaders);" />
+      <MemberSignature Language="F#" Value="new System.Data.Metadata.Edm.EdmItemCollection : seq&lt;System.Xml.XmlReader&gt; -&gt; System.Data.Metadata.Edm.EdmItemCollection" Usage="new System.Data.Metadata.Edm.EdmItemCollection xmlReaders" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmItemCollection.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray filePaths As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmItemCollection(... cli::array &lt;System::String ^&gt; ^ filePaths);" />
+      <MemberSignature Language="F#" Value="new System.Data.Metadata.Edm.EdmItemCollection : string[] -&gt; System.Data.Metadata.Edm.EdmItemCollection" Usage="new System.Data.Metadata.Edm.EdmItemCollection filePaths" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmItemCollection.EdmVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdmVersion As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double EdmVersion { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.EdmVersion : double" Usage="System.Data.Metadata.Edm.EdmItemCollection.EdmVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimitiveTypes () As ReadOnlyCollection(Of PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetPrimitiveTypes();" />
+      <MemberSignature Language="F#" Value="member this.GetPrimitiveTypes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="edmItemCollection.GetPrimitiveTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimitiveTypes (edmVersion As Double) As ReadOnlyCollection(Of PrimitiveType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetPrimitiveTypes(double edmVersion);" />
+      <MemberSignature Language="F#" Value="member this.GetPrimitiveTypes : double -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="edmItemCollection.GetPrimitiveTypes edmVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

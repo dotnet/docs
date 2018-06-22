@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScope" />
   <TypeSignature Language="VB.NET" Value="Public Class InputScope" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputScope" />
+  <TypeSignature Language="F#" Value="type InputScope = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.Names" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Names As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Names { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Names : System.Collections.IList" Usage="System.Windows.Input.InputScope.Names" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.PhraseList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhraseList As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ PhraseList { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PhraseList : System.Collections.IList" Usage="System.Windows.Input.InputScope.PhraseList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.RegularExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property RegularExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegularExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegularExpression : string with get, set" Usage="System.Windows.Input.InputScope.RegularExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.SrgsMarkup" />
       <MemberSignature Language="VB.NET" Value="Public Property SrgsMarkup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SrgsMarkup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SrgsMarkup : string with get, set" Usage="System.Windows.Input.InputScope.SrgsMarkup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

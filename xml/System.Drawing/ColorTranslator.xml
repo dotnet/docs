@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ColorTranslator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorTranslator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColorTranslator sealed" />
+  <TypeSignature Language="F#" Value="type ColorTranslator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromHtml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHtml (htmlColor As String) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromHtml(System::String ^ htmlColor);" />
+      <MemberSignature Language="F#" Value="static member FromHtml : string -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromHtml htmlColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromOle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOle (oleColor As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromOle(int oleColor);" />
+      <MemberSignature Language="F#" Value="static member FromOle : int -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromOle oleColor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromWin32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromWin32 (win32Color As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromWin32(int win32Color);" />
+      <MemberSignature Language="F#" Value="static member FromWin32 : int -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromWin32 win32Color" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToHtml(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToHtml (c As Color) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToHtml(System::Drawing::Color c);" />
+      <MemberSignature Language="F#" Value="static member ToHtml : System.Drawing.Color -&gt; string" Usage="System.Drawing.ColorTranslator.ToHtml c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToOle(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToOle (c As Color) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToOle(System::Drawing::Color c);" />
+      <MemberSignature Language="F#" Value="static member ToOle : System.Drawing.Color -&gt; int" Usage="System.Drawing.ColorTranslator.ToOle c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToWin32(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToWin32 (c As Color) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToWin32(System::Drawing::Color c);" />
+      <MemberSignature Language="F#" Value="static member ToWin32 : System.Drawing.Color -&gt; int" Usage="System.Drawing.ColorTranslator.ToWin32 c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

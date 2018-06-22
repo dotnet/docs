@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.SecureEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public Class SecureEnvironment&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecureEnvironment : IDisposable" />
+  <TypeSignature Language="F#" Value="type SecureEnvironment = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.SecureEnvironment.ApplicationManifest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationManifest As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationManifest { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManifest : string" Usage="System.Security.RightsManagement.SecureEnvironment.ApplicationManifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.ContentUser)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (applicationManifest As String, user As ContentUser) As SecureEnvironment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::RightsManagement::SecureEnvironment ^ Create(System::String ^ applicationManifest, System::Security::RightsManagement::ContentUser ^ user);" />
+      <MemberSignature Language="F#" Value="static member Create : string * System.Security.RightsManagement.ContentUser -&gt; System.Security.RightsManagement.SecureEnvironment" Usage="System.Security.RightsManagement.SecureEnvironment.Create (applicationManifest, user)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.RightsManagement.SecureEnvironment Create(string applicationManifest, valuetype System.Security.RightsManagement.AuthenticationType authentication, valuetype System.Security.RightsManagement.UserActivationMode userActivationMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.AuthenticationType,System.Security.RightsManagement.UserActivationMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::RightsManagement::SecureEnvironment ^ Create(System::String ^ applicationManifest, System::Security::RightsManagement::AuthenticationType authentication, System::Security::RightsManagement::UserActivationMode userActivationMode);" />
+      <MemberSignature Language="F#" Value="static member Create : string * System.Security.RightsManagement.AuthenticationType * System.Security.RightsManagement.UserActivationMode -&gt; System.Security.RightsManagement.SecureEnvironment" Usage="System.Security.RightsManagement.SecureEnvironment.Create (applicationManifest, authentication, userActivationMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="secureEnvironment.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="secureEnvironment.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetActivatedUsers () As ReadOnlyCollection(Of ContentUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::RightsManagement::ContentUser ^&gt; ^ GetActivatedUsers();" />
+      <MemberSignature Language="F#" Value="static member GetActivatedUsers : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.RightsManagement.ContentUser&gt;" Usage="System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsUserActivated (user As ContentUser) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUserActivated(System::Security::RightsManagement::ContentUser ^ user);" />
+      <MemberSignature Language="F#" Value="static member IsUserActivated : System.Security.RightsManagement.ContentUser -&gt; bool" Usage="System.Security.RightsManagement.SecureEnvironment.IsUserActivated user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.SecureEnvironment.RemoveActivatedUser(System.Security.RightsManagement.ContentUser)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveActivatedUser (user As ContentUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveActivatedUser(System::Security::RightsManagement::ContentUser ^ user);" />
+      <MemberSignature Language="F#" Value="static member RemoveActivatedUser : System.Security.RightsManagement.ContentUser -&gt; unit" Usage="System.Security.RightsManagement.SecureEnvironment.RemoveActivatedUser user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.SecureEnvironment.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As ContentUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentUser ^ User { System::Security::RightsManagement::ContentUser ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.RightsManagement.ContentUser" Usage="System.Security.RightsManagement.SecureEnvironment.User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

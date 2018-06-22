@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.InvalidProjectFileException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidProjectFileException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidProjectFileException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type InvalidProjectFileException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.InvalidProjectFileException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProjectFileException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.InvalidProjectFileException : string -&gt; Microsoft.Build.BuildEngine.InvalidProjectFileException" Usage="new Microsoft.Build.BuildEngine.InvalidProjectFileException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.InvalidProjectFileException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProjectFileException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.InvalidProjectFileException : string * Exception -&gt; Microsoft.Build.BuildEngine.InvalidProjectFileException" Usage="new Microsoft.Build.BuildEngine.InvalidProjectFileException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode xmlNode, string message, string errorSubcategory, string errorCode, string helpKeyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.InvalidProjectFileException.#ctor(System.Xml.XmlNode,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProjectFileException(System::Xml::XmlNode ^ xmlNode, System::String ^ message, System::String ^ errorSubcategory, System::String ^ errorCode, System::String ^ helpKeyword);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.InvalidProjectFileException : System.Xml.XmlNode * string * string * string * string -&gt; Microsoft.Build.BuildEngine.InvalidProjectFileException" Usage="new Microsoft.Build.BuildEngine.InvalidProjectFileException (xmlNode, message, errorSubcategory, errorCode, helpKeyword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.InvalidProjectFileException.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectFile As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, errorSubcategory As String, errorCode As String, helpKeyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProjectFileException(System::String ^ projectFile, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ errorSubcategory, System::String ^ errorCode, System::String ^ helpKeyword);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.InvalidProjectFileException : string * int * int * int * int * string * string * string * string -&gt; Microsoft.Build.BuildEngine.InvalidProjectFileException" Usage="new Microsoft.Build.BuildEngine.InvalidProjectFileException (projectFile, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, errorSubcategory, errorCode, helpKeyword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.BaseMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseMessage : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.BaseMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.ColumnNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnNumber : int" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.ColumnNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.EndColumnNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumnNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumnNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndColumnNumber : int" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.EndColumnNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.EndLineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndLineNumber : int" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.EndLineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -268,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.ErrorSubcategory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorSubcategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorSubcategory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorSubcategory : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.ErrorSubcategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -288,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.InvalidProjectFileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="invalidProjectFileException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -313,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -333,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -353,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -373,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.InvalidProjectFileException.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.BuildEngine.InvalidProjectFileException.ProjectFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

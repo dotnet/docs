@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.EXCEPINFO" />
   <TypeSignature Language="VB.NET" Value="Public Structure EXCEPINFO" />
   <TypeSignature Language="C++ CLI" Value="public value class EXCEPINFO" />
+  <TypeSignature Language="F#" Value="type EXCEPINFO = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.bstrDescription" />
       <MemberSignature Language="VB.NET" Value="Public bstrDescription As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ bstrDescription;" />
+      <MemberSignature Language="F#" Value="val mutable bstrDescription : string" Usage="System.Runtime.InteropServices.EXCEPINFO.bstrDescription" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.bstrHelpFile" />
       <MemberSignature Language="VB.NET" Value="Public bstrHelpFile As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ bstrHelpFile;" />
+      <MemberSignature Language="F#" Value="val mutable bstrHelpFile : string" Usage="System.Runtime.InteropServices.EXCEPINFO.bstrHelpFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.bstrSource" />
       <MemberSignature Language="VB.NET" Value="Public bstrSource As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ bstrSource;" />
+      <MemberSignature Language="F#" Value="val mutable bstrSource : string" Usage="System.Runtime.InteropServices.EXCEPINFO.bstrSource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.dwHelpContext" />
       <MemberSignature Language="VB.NET" Value="Public dwHelpContext As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int dwHelpContext;" />
+      <MemberSignature Language="F#" Value="val mutable dwHelpContext : int" Usage="System.Runtime.InteropServices.EXCEPINFO.dwHelpContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.pfnDeferredFillIn" />
       <MemberSignature Language="VB.NET" Value="Public pfnDeferredFillIn As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr pfnDeferredFillIn;" />
+      <MemberSignature Language="F#" Value="val mutable pfnDeferredFillIn : nativeint" Usage="System.Runtime.InteropServices.EXCEPINFO.pfnDeferredFillIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.pvReserved" />
       <MemberSignature Language="VB.NET" Value="Public pvReserved As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr pvReserved;" />
+      <MemberSignature Language="F#" Value="val mutable pvReserved : nativeint" Usage="System.Runtime.InteropServices.EXCEPINFO.pvReserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.wCode" />
       <MemberSignature Language="VB.NET" Value="Public wCode As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wCode;" />
+      <MemberSignature Language="F#" Value="val mutable wCode : int16" Usage="System.Runtime.InteropServices.EXCEPINFO.wCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.EXCEPINFO.wReserved" />
       <MemberSignature Language="VB.NET" Value="Public wReserved As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wReserved;" />
+      <MemberSignature Language="F#" Value="val mutable wReserved : int16" Usage="System.Runtime.InteropServices.EXCEPINFO.wReserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

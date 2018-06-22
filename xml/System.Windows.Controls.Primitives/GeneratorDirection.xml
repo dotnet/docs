@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum GeneratorDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class GeneratorDirection" />
+  <TypeSignature Language="F#" Value="type GeneratorDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Backward" />
       <MemberSignature Language="VB.NET" Value="Backward" />
       <MemberSignature Language="C++ CLI" Value="Backward" />
+      <MemberSignature Language="F#" Value="Backward = 1" Usage="System.Windows.Controls.Primitives.GeneratorDirection.Backward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Forward" />
       <MemberSignature Language="VB.NET" Value="Forward" />
       <MemberSignature Language="C++ CLI" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 0" Usage="System.Windows.Controls.Primitives.GeneratorDirection.Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

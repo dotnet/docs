@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="F#" Value="type IDataGridColumnStyleEditingNotificationService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ColumnStartedEditing (editingControl As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ColumnStartedEditing(System::Windows::Forms::Control ^ editingControl);" />
+      <MemberSignature Language="F#" Value="abstract member ColumnStartedEditing : System.Windows.Forms.Control -&gt; unit" Usage="iDataGridColumnStyleEditingNotificationService.ColumnStartedEditing editingControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

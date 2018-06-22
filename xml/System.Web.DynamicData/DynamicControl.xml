@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicControl" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicControl&#xA;Inherits Control&#xA;Implements IAttributeAccessor, IFieldFormattingOptions, IFieldTemplateHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicControl : System::Web::UI::Control, System::Web::DynamicData::IFieldFormattingOptions, System::Web::DynamicData::IFieldTemplateHost, System::Web::UI::IAttributeAccessor" />
+  <TypeSignature Language="F#" Value="type DynamicControl = class&#xA;    inherit Control&#xA;    interface IAttributeAccessor&#xA;    interface IFieldTemplateHost&#xA;    interface IFieldFormattingOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.#ctor(System.Web.UI.WebControls.DataBoundControlMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As DataBoundControlMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicControl(System::Web::UI::WebControls::DataBoundControlMode mode);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DynamicControl : System.Web.UI.WebControls.DataBoundControlMode -&gt; System.Web.DynamicData.DynamicControl" Usage="new System.Web.DynamicData.DynamicControl mode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -167,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyFormatInEditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyFormatInEditMode : bool with get, set" Usage="System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -208,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Column" />
       <MemberSignature Language="VB.NET" Value="Public Property Column As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); void set(System::Web::DynamicData::MetaColumn ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn with get, set" Usage="System.Web.DynamicData.DynamicControl.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -242,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool with get, set" Usage="System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.CssClass" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CssClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CssClass { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CssClass : string with get, set" Usage="System.Web.DynamicData.DynamicControl.CssClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -309,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.DataField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataField : string with get, set" Usage="System.Web.DynamicData.DynamicControl.DataField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -359,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.DataFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormatString : string with get, set" Usage="System.Web.DynamicData.DynamicControl.DataFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -402,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.FieldTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldTemplate As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ FieldTemplate { System::Web::UI::Control ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldTemplate : System.Web.UI.Control" Usage="System.Web.DynamicData.DynamicControl.FieldTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAttribute(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string&#xA;override this.GetAttribute : string -&gt; string" Usage="dynamicControl.GetAttribute key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -459,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.HtmlEncode" />
       <MemberSignature Language="VB.NET" Value="Public Property HtmlEncode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HtmlEncode : bool with get, set" Usage="System.Web.DynamicData.DynamicControl.HtmlEncode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -498,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As DataBoundControlMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); void set(System::Web::UI::WebControls::DataBoundControlMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode with get, set" Usage="System.Web.DynamicData.DynamicControl.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -539,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.NullDisplayText" />
       <MemberSignature Language="VB.NET" Value="Public Property NullDisplayText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NullDisplayText : string with get, set" Usage="System.Web.DynamicData.DynamicControl.NullDisplayText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -577,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="dynamicControl.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -613,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dynamicControl.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -643,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAttribute(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : string * string -&gt; unit&#xA;override this.SetAttribute : string * string -&gt; unit" Usage="dynamicControl.SetAttribute (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -668,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.System#Web#DynamicData#IFieldTemplateHost#FormattingOptions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FormattingOptions As IFieldFormattingOptions Implements IFieldTemplateHost.FormattingOptions" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::IFieldFormattingOptions ^ System.Web.DynamicData.IFieldTemplateHost.FormattingOptions { System::Web::DynamicData::IFieldFormattingOptions ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.DynamicData.DynamicControl.System.Web.DynamicData.IFieldTemplateHost.FormattingOptions" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IFieldTemplateHost.FormattingOptions</InterfaceMember>
@@ -691,6 +708,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Table" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Table As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::DynamicData::MetaTable ^ Table { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.DynamicControl.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -725,6 +743,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.UIHint" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UIHint { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UIHint : string with get, set" Usage="System.Web.DynamicData.DynamicControl.UIHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -779,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.DynamicData.DynamicControl.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

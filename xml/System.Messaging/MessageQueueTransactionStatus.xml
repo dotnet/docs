@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransactionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageQueueTransactionStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageQueueTransactionStatus" />
+  <TypeSignature Language="F#" Value="type MessageQueueTransactionStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Aborted" />
       <MemberSignature Language="VB.NET" Value="Aborted" />
       <MemberSignature Language="C++ CLI" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 0" Usage="System.Messaging.MessageQueueTransactionStatus.Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Committed" />
       <MemberSignature Language="VB.NET" Value="Committed" />
       <MemberSignature Language="C++ CLI" Value="Committed" />
+      <MemberSignature Language="F#" Value="Committed = 1" Usage="System.Messaging.MessageQueueTransactionStatus.Committed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Initialized" />
       <MemberSignature Language="VB.NET" Value="Initialized" />
       <MemberSignature Language="C++ CLI" Value="Initialized" />
+      <MemberSignature Language="F#" Value="Initialized = 2" Usage="System.Messaging.MessageQueueTransactionStatus.Initialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Pending" />
       <MemberSignature Language="VB.NET" Value="Pending" />
       <MemberSignature Language="C++ CLI" Value="Pending" />
+      <MemberSignature Language="F#" Value="Pending = 3" Usage="System.Messaging.MessageQueueTransactionStatus.Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

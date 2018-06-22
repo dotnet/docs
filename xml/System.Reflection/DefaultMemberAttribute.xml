@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.DefaultMemberAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultMemberAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultMemberAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultMemberAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.DefaultMemberAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultMemberAttribute(System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.DefaultMemberAttribute : string -&gt; System.Reflection.DefaultMemberAttribute" Usage="new System.Reflection.DefaultMemberAttribute memberName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.DefaultMemberAttribute.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string" Usage="System.Reflection.DefaultMemberAttribute.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

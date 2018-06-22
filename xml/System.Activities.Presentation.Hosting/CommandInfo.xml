@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.CommandInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommandInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandInfo sealed" />
+  <TypeSignature Language="F#" Value="type CommandInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.CommandInfo.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand" Usage="System.Activities.Presentation.Hosting.CommandInfo.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.CommandInfo.IsBindingEnabledInDesigner" />
       <MemberSignature Language="VB.NET" Value="Public Property IsBindingEnabledInDesigner As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindingEnabledInDesigner { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBindingEnabledInDesigner : bool with get, set" Usage="System.Activities.Presentation.Hosting.CommandInfo.IsBindingEnabledInDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

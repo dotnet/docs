@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemContainerTemplate&#xA;Inherits DataTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerTemplate : System::Windows::DataTemplate" />
+  <TypeSignature Language="F#" Value="type ItemContainerTemplate = class&#xA;    inherit DataTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerTemplate.ItemContainerTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemContainerTemplateKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ItemContainerTemplateKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerTemplateKey : obj" Usage="System.Windows.Controls.ItemContainerTemplate.ItemContainerTemplateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

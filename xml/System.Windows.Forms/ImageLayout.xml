@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImageLayout" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImageLayout" />
+  <TypeSignature Language="F#" Value="type ImageLayout = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImageLayout.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 2" Usage="System.Windows.Forms.ImageLayout.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImageLayout.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ImageLayout.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImageLayout.Stretch" />
       <MemberSignature Language="VB.NET" Value="Stretch" />
       <MemberSignature Language="C++ CLI" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 3" Usage="System.Windows.Forms.ImageLayout.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImageLayout.Tile" />
       <MemberSignature Language="VB.NET" Value="Tile" />
       <MemberSignature Language="C++ CLI" Value="Tile" />
+      <MemberSignature Language="F#" Value="Tile = 1" Usage="System.Windows.Forms.ImageLayout.Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImageLayout.Zoom" />
       <MemberSignature Language="VB.NET" Value="Zoom" />
       <MemberSignature Language="C++ CLI" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 4" Usage="System.Windows.Forms.ImageLayout.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

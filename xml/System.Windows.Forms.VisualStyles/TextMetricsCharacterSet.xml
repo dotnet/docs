@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextMetricsCharacterSet" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextMetricsCharacterSet" />
+  <TypeSignature Language="F#" Value="type TextMetricsCharacterSet = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Ansi" />
       <MemberSignature Language="VB.NET" Value="Ansi" />
       <MemberSignature Language="C++ CLI" Value="Ansi" />
+      <MemberSignature Language="F#" Value="Ansi = 0" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Ansi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Arabic" />
       <MemberSignature Language="VB.NET" Value="Arabic" />
       <MemberSignature Language="C++ CLI" Value="Arabic" />
+      <MemberSignature Language="F#" Value="Arabic = 178" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Arabic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Baltic" />
       <MemberSignature Language="VB.NET" Value="Baltic" />
       <MemberSignature Language="C++ CLI" Value="Baltic" />
+      <MemberSignature Language="F#" Value="Baltic = 186" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Baltic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.ChineseBig5" />
       <MemberSignature Language="VB.NET" Value="ChineseBig5" />
       <MemberSignature Language="C++ CLI" Value="ChineseBig5" />
+      <MemberSignature Language="F#" Value="ChineseBig5 = 136" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.ChineseBig5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.EastEurope" />
       <MemberSignature Language="VB.NET" Value="EastEurope" />
       <MemberSignature Language="C++ CLI" Value="EastEurope" />
+      <MemberSignature Language="F#" Value="EastEurope = 238" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.EastEurope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Gb2312" />
       <MemberSignature Language="VB.NET" Value="Gb2312" />
       <MemberSignature Language="C++ CLI" Value="Gb2312" />
+      <MemberSignature Language="F#" Value="Gb2312 = 134" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Gb2312" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Greek" />
       <MemberSignature Language="VB.NET" Value="Greek" />
       <MemberSignature Language="C++ CLI" Value="Greek" />
+      <MemberSignature Language="F#" Value="Greek = 161" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Greek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Hangul" />
       <MemberSignature Language="VB.NET" Value="Hangul" />
       <MemberSignature Language="C++ CLI" Value="Hangul" />
+      <MemberSignature Language="F#" Value="Hangul = 129" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Hangul" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Hebrew" />
       <MemberSignature Language="VB.NET" Value="Hebrew" />
       <MemberSignature Language="C++ CLI" Value="Hebrew" />
+      <MemberSignature Language="F#" Value="Hebrew = 177" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Hebrew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Johab" />
       <MemberSignature Language="VB.NET" Value="Johab" />
       <MemberSignature Language="C++ CLI" Value="Johab" />
+      <MemberSignature Language="F#" Value="Johab = 130" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Johab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Mac" />
       <MemberSignature Language="VB.NET" Value="Mac" />
       <MemberSignature Language="C++ CLI" Value="Mac" />
+      <MemberSignature Language="F#" Value="Mac = 77" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Mac" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Oem" />
       <MemberSignature Language="VB.NET" Value="Oem" />
       <MemberSignature Language="C++ CLI" Value="Oem" />
+      <MemberSignature Language="F#" Value="Oem = 255" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Oem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Russian" />
       <MemberSignature Language="VB.NET" Value="Russian" />
       <MemberSignature Language="C++ CLI" Value="Russian" />
+      <MemberSignature Language="F#" Value="Russian = 204" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Russian" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.ShiftJis" />
       <MemberSignature Language="VB.NET" Value="ShiftJis" />
       <MemberSignature Language="C++ CLI" Value="ShiftJis" />
+      <MemberSignature Language="F#" Value="ShiftJis = 128" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.ShiftJis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -314,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Symbol" />
       <MemberSignature Language="VB.NET" Value="Symbol" />
       <MemberSignature Language="C++ CLI" Value="Symbol" />
+      <MemberSignature Language="F#" Value="Symbol = 2" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Symbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Thai" />
       <MemberSignature Language="VB.NET" Value="Thai" />
       <MemberSignature Language="C++ CLI" Value="Thai" />
+      <MemberSignature Language="F#" Value="Thai = 222" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Thai" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -352,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Turkish" />
       <MemberSignature Language="VB.NET" Value="Turkish" />
       <MemberSignature Language="C++ CLI" Value="Turkish" />
+      <MemberSignature Language="F#" Value="Turkish = 162" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Turkish" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -371,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Vietnamese" />
       <MemberSignature Language="VB.NET" Value="Vietnamese" />
       <MemberSignature Language="C++ CLI" Value="Vietnamese" />
+      <MemberSignature Language="F#" Value="Vietnamese = 163" Usage="System.Windows.Forms.VisualStyles.TextMetricsCharacterSet.Vietnamese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

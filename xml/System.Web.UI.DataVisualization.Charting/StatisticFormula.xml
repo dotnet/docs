@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.StatisticFormula" />
   <TypeSignature Language="VB.NET" Value="Public Class StatisticFormula" />
   <TypeSignature Language="C++ CLI" Value="public ref class StatisticFormula" />
+  <TypeSignature Language="F#" Value="type StatisticFormula = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Anova(System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Anova (probability As Double, inputSeriesNames As String) As AnovaResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::AnovaResult ^ Anova(double probability, System::String ^ inputSeriesNames);" />
+      <MemberSignature Language="F#" Value="member this.Anova : double * string -&gt; System.Web.UI.DataVisualization.Charting.AnovaResult" Usage="statisticFormula.Anova (probability, inputSeriesNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -71,6 +73,7 @@ AnovaResult result = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Serie
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.BetaFunction(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function BetaFunction (m As Double, n As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double BetaFunction(double m, double n);" />
+      <MemberSignature Language="F#" Value="member this.BetaFunction : double * double -&gt; double" Usage="statisticFormula.BetaFunction (m, n)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -112,6 +115,7 @@ double result = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Correlation(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Correlation (firstInputSeriesName As String, secondInputSeriesName As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Correlation(System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Correlation : string * string -&gt; double" Usage="statisticFormula.Correlation (firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -158,6 +162,7 @@ double result = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Covariance(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Covariance (firstInputSeriesName As String, secondInputSeriesName As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Covariance(System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Covariance : string * string -&gt; double" Usage="statisticFormula.Covariance (firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -204,6 +209,7 @@ double result = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.FDistribution(System.Double,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FDistribution (value As Double, firstDegreeOfFreedom As Integer, secondDegreeOfFreedom As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double FDistribution(double value, int firstDegreeOfFreedom, int secondDegreeOfFreedom);" />
+      <MemberSignature Language="F#" Value="member this.FDistribution : double * int * int -&gt; double" Usage="statisticFormula.FDistribution (value, firstDegreeOfFreedom, secondDegreeOfFreedom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -247,6 +253,7 @@ double result = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.FTest(System.Double,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FTest (probability As Double, firstInputSeriesName As String, secondInputSeriesName As String) As FTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::FTestResult ^ FTest(double probability, System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.FTest : double * string * string -&gt; System.Web.UI.DataVisualization.Charting.FTestResult" Usage="statisticFormula.FTest (probability, firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -295,6 +302,7 @@ FTestResult result = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "S
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.GammaFunction(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function GammaFunction (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double GammaFunction(double value);" />
+      <MemberSignature Language="F#" Value="member this.GammaFunction : double -&gt; double" Usage="statisticFormula.GammaFunction value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -334,6 +342,7 @@ double result = Chart1.DataManipulator.Statistics.GammaFunction(6.2);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseFDistribution(System.Double,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function InverseFDistribution (probability As Double, firstDegreeOfFreedom As Integer, secondDegreeOfFreedom As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double InverseFDistribution(double probability, int firstDegreeOfFreedom, int secondDegreeOfFreedom);" />
+      <MemberSignature Language="F#" Value="member this.InverseFDistribution : double * int * int -&gt; double" Usage="statisticFormula.InverseFDistribution (probability, firstDegreeOfFreedom, secondDegreeOfFreedom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -377,6 +386,7 @@ double result = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseNormalDistribution(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InverseNormalDistribution (probability As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double InverseNormalDistribution(double probability);" />
+      <MemberSignature Language="F#" Value="member this.InverseNormalDistribution : double -&gt; double" Usage="statisticFormula.InverseNormalDistribution probability" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -416,6 +426,7 @@ double result = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05)
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseTDistribution(System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function InverseTDistribution (probability As Double, degreeOfFreedom As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double InverseTDistribution(double probability, int degreeOfFreedom);" />
+      <MemberSignature Language="F#" Value="member this.InverseTDistribution : double * int -&gt; double" Usage="statisticFormula.InverseTDistribution (probability, degreeOfFreedom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -457,6 +468,7 @@ double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Mean(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Mean (inputSeriesName As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Mean(System::String ^ inputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Mean : string -&gt; double" Usage="statisticFormula.Mean inputSeriesName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -501,6 +513,7 @@ double result = Chart1.DataManipulator.Statistics.Mean("Series1");
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Median(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Median (inputSeriesName As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Median(System::String ^ inputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.Median : string -&gt; double" Usage="statisticFormula.Median inputSeriesName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -545,6 +558,7 @@ double result = Chart1.DataManipulator.Statistics.Median("Series1");
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.NormalDistribution(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function NormalDistribution (zValue As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double NormalDistribution(double zValue);" />
+      <MemberSignature Language="F#" Value="member this.NormalDistribution : double -&gt; double" Usage="statisticFormula.NormalDistribution zValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -584,6 +598,7 @@ double result = Chart1.DataManipulator.Statistics.NormalDistribution(1.96);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TDistribution(System.Double,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TDistribution (value As Double, degreeOfFreedom As Integer, oneTail As Boolean) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double TDistribution(double value, int degreeOfFreedom, bool oneTail);" />
+      <MemberSignature Language="F#" Value="member this.TDistribution : double * int * bool -&gt; double" Usage="statisticFormula.TDistribution (value, degreeOfFreedom, oneTail)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -628,6 +643,7 @@ double result = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true);
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestEqualVariances(System.Double,System.Double,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TTestEqualVariances (hypothesizedMeanDifference As Double, probability As Double, firstInputSeriesName As String, secondInputSeriesName As String) As TTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::TTestResult ^ TTestEqualVariances(double hypothesizedMeanDifference, double probability, System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.TTestEqualVariances : double * double * string * string -&gt; System.Web.UI.DataVisualization.Charting.TTestResult" Usage="statisticFormula.TTestEqualVariances (hypothesizedMeanDifference, probability, firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -673,6 +689,7 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "S
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestPaired(System.Double,System.Double,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TTestPaired (hypothesizedMeanDifference As Double, probability As Double, firstInputSeriesName As String, secondInputSeriesName As String) As TTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::TTestResult ^ TTestPaired(double hypothesizedMeanDifference, double probability, System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.TTestPaired : double * double * string * string -&gt; System.Web.UI.DataVisualization.Charting.TTestResult" Usage="statisticFormula.TTestPaired (hypothesizedMeanDifference, probability, firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -718,6 +735,7 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "S
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestUnequalVariances(System.Double,System.Double,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TTestUnequalVariances (hypothesizedMeanDifference As Double, probability As Double, firstInputSeriesName As String, secondInputSeriesName As String) As TTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::TTestResult ^ TTestUnequalVariances(double hypothesizedMeanDifference, double probability, System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.TTestUnequalVariances : double * double * string * string -&gt; System.Web.UI.DataVisualization.Charting.TTestResult" Usage="statisticFormula.TTestUnequalVariances (hypothesizedMeanDifference, probability, firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -763,6 +781,7 @@ TTestResult result = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Variance(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Variance (inputSeriesName As String, sampleVariance As Boolean) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double Variance(System::String ^ inputSeriesName, bool sampleVariance);" />
+      <MemberSignature Language="F#" Value="member this.Variance : string * bool -&gt; double" Usage="statisticFormula.Variance (inputSeriesName, sampleVariance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -804,6 +823,7 @@ TTestResult result = double result = Chart1.DataManipulator.Statistics.Variance(
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.ZTest(System.Double,System.Double,System.Double,System.Double,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ZTest (hypothesizedMeanDifference As Double, varianceFirstGroup As Double, varianceSecondGroup As Double, probability As Double, firstInputSeriesName As String, secondInputSeriesName As String) As ZTestResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::ZTestResult ^ ZTest(double hypothesizedMeanDifference, double varianceFirstGroup, double varianceSecondGroup, double probability, System::String ^ firstInputSeriesName, System::String ^ secondInputSeriesName);" />
+      <MemberSignature Language="F#" Value="member this.ZTest : double * double * double * double * string * string -&gt; System.Web.UI.DataVisualization.Charting.ZTestResult" Usage="statisticFormula.ZTest (hypothesizedMeanDifference, varianceFirstGroup, varianceSecondGroup, probability, firstInputSeriesName, secondInputSeriesName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

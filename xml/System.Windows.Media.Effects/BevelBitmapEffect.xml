@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BevelBitmapEffect" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BevelBitmapEffect&#xA;Inherits BitmapEffect" />
   <TypeSignature Language="C++ CLI" Value="public ref class BevelBitmapEffect sealed : System::Windows::Media::Effects::BitmapEffect" />
+  <TypeSignature Language="F#" Value="type BevelBitmapEffect = class&#xA;    inherit BitmapEffect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property BevelWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BevelWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BevelWidth : double with get, set" Usage="System.Windows.Media.Effects.BevelBitmapEffect.BevelWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BevelWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BevelWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BevelWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BevelBitmapEffect.BevelWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BevelBitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BevelBitmapEffect ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BevelBitmapEffect" Usage="bevelBitmapEffect.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BevelBitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BevelBitmapEffect ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BevelBitmapEffect" Usage="bevelBitmapEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bevelBitmapEffect.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CreateUnmanagedEffect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUnmanagedEffect () As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
+      <MemberSignature Language="F#" Value="override this.CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="bevelBitmapEffect.CreateUnmanagedEffect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property EdgeProfile As EdgeProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::EdgeProfile EdgeProfile { System::Windows::Media::Effects::EdgeProfile get(); void set(System::Windows::Media::Effects::EdgeProfile value); };" />
+      <MemberSignature Language="F#" Value="member this.EdgeProfile : System.Windows.Media.Effects.EdgeProfile with get, set" Usage="System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfileProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EdgeProfileProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EdgeProfileProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EdgeProfileProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfileProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.LightAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property LightAngle As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LightAngle { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.LightAngle : double with get, set" Usage="System.Windows.Media.Effects.BevelBitmapEffect.LightAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -351,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.LightAngleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LightAngleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LightAngleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LightAngleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BevelBitmapEffect.LightAngleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.Relief" />
       <MemberSignature Language="VB.NET" Value="Public Property Relief As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Relief { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Relief : double with get, set" Usage="System.Windows.Media.Effects.BevelBitmapEffect.Relief" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -407,6 +419,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.ReliefProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReliefProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ReliefProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ReliefProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BevelBitmapEffect.ReliefProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -426,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.Smoothness" />
       <MemberSignature Language="VB.NET" Value="Public Property Smoothness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Smoothness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Smoothness : double with get, set" Usage="System.Windows.Media.Effects.BevelBitmapEffect.Smoothness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -463,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.SmoothnessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmoothnessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmoothnessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SmoothnessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BevelBitmapEffect.SmoothnessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
+      <MemberSignature Language="F#" Value="override this.UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="bevelBitmapEffect.UpdateUnmanagedPropertyState unmanagedEffect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRecyclingItemContainerGenerator&#xA;Implements IItemContainerGenerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRecyclingItemContainerGenerator : System::Windows::Controls::Primitives::IItemContainerGenerator" />
+  <TypeSignature Language="F#" Value="type IRecyclingItemContainerGenerator = interface&#xA;    interface IItemContainerGenerator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Recycle (position As GeneratorPosition, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recycle(System::Windows::Controls::Primitives::GeneratorPosition position, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Recycle : System.Windows.Controls.Primitives.GeneratorPosition * int -&gt; unit" Usage="iRecyclingItemContainerGenerator.Recycle (position, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

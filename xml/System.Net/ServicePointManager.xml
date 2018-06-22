@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePointManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ServicePointManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServicePointManager" />
+  <TypeSignature Language="F#" Value="type ServicePointManager = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.CertificatePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CertificatePolicy As ICertificatePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::ICertificatePolicy ^ CertificatePolicy { System::Net::ICertificatePolicy ^ get(); void set(System::Net::ICertificatePolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CertificatePolicy : System.Net.ICertificatePolicy with get, set" Usage="System.Net.ServicePointManager.CertificatePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.CheckCertificateRevocationList" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CheckCertificateRevocationList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CheckCertificateRevocationList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCertificateRevocationList : bool with get, set" Usage="System.Net.ServicePointManager.CheckCertificateRevocationList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.ClientCipherSuitesCallback" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ClientCipherSuitesCallback As CipherSuitesCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::CipherSuitesCallback ^ ClientCipherSuitesCallback { System::Net::CipherSuitesCallback ^ get(); void set(System::Net::CipherSuitesCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCipherSuitesCallback : System.Net.CipherSuitesCallback with get, set" Usage="System.Net.ServicePointManager.ClientCipherSuitesCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.DefaultConnectionLimit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultConnectionLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int DefaultConnectionLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultConnectionLimit : int with get, set" Usage="System.Net.ServicePointManager.DefaultConnectionLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.ServicePointManager.DefaultNonPersistentConnectionLimit" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultNonPersistentConnectionLimit As Integer  = 4" />
       <MemberSignature Language="C++ CLI" Value="public: int DefaultNonPersistentConnectionLimit = 4;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultNonPersistentConnectionLimit : int" Usage="System.Net.ServicePointManager.DefaultNonPersistentConnectionLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.ServicePointManager.DefaultPersistentConnectionLimit" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultPersistentConnectionLimit As Integer  = 2" />
       <MemberSignature Language="C++ CLI" Value="public: int DefaultPersistentConnectionLimit = 2;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultPersistentConnectionLimit : int" Usage="System.Net.ServicePointManager.DefaultPersistentConnectionLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.DnsRefreshTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DnsRefreshTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int DnsRefreshTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DnsRefreshTimeout : int with get, set" Usage="System.Net.ServicePointManager.DnsRefreshTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.EnableDnsRoundRobin" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property EnableDnsRoundRobin As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableDnsRoundRobin { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDnsRoundRobin : bool with get, set" Usage="System.Net.ServicePointManager.EnableDnsRoundRobin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -405,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.EncryptionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EncryptionPolicy As EncryptionPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Security::EncryptionPolicy EncryptionPolicy { System::Net::Security::EncryptionPolicy get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionPolicy : System.Net.Security.EncryptionPolicy" Usage="System.Net.ServicePointManager.EncryptionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -452,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.Expect100Continue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property Expect100Continue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Expect100Continue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expect100Continue : bool with get, set" Usage="System.Net.ServicePointManager.Expect100Continue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -520,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePointManager.FindServicePoint(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindServicePoint (address As Uri) As ServicePoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::ServicePoint ^ FindServicePoint(Uri ^ address);" />
+      <MemberSignature Language="F#" Value="static member FindServicePoint : Uri -&gt; System.Net.ServicePoint" Usage="System.Net.ServicePointManager.FindServicePoint address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -565,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePointManager.FindServicePoint(System.String,System.Net.IWebProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindServicePoint (uriString As String, proxy As IWebProxy) As ServicePoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::ServicePoint ^ FindServicePoint(System::String ^ uriString, System::Net::IWebProxy ^ proxy);" />
+      <MemberSignature Language="F#" Value="static member FindServicePoint : string * System.Net.IWebProxy -&gt; System.Net.ServicePoint" Usage="System.Net.ServicePointManager.FindServicePoint (uriString, proxy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -621,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePointManager.FindServicePoint(System.Uri,System.Net.IWebProxy)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindServicePoint (address As Uri, proxy As IWebProxy) As ServicePoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::ServicePoint ^ FindServicePoint(Uri ^ address, System::Net::IWebProxy ^ proxy);" />
+      <MemberSignature Language="F#" Value="static member FindServicePoint : Uri * System.Net.IWebProxy -&gt; System.Net.ServicePoint" Usage="System.Net.ServicePointManager.FindServicePoint (address, proxy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -668,6 +682,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.MaxServicePointIdleTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property MaxServicePointIdleTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxServicePointIdleTime { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxServicePointIdleTime : int with get, set" Usage="System.Net.ServicePointManager.MaxServicePointIdleTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -721,6 +736,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.MaxServicePoints" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property MaxServicePoints As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxServicePoints { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxServicePoints : int with get, set" Usage="System.Net.ServicePointManager.MaxServicePoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -772,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.ReusePort" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ReusePort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ReusePort { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReusePort : bool with get, set" Usage="System.Net.ServicePointManager.ReusePort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -814,6 +831,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.SecurityProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property SecurityProtocol As SecurityProtocolType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::SecurityProtocolType SecurityProtocol { System::Net::SecurityProtocolType get(); void set(System::Net::SecurityProtocolType value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityProtocol : System.Net.SecurityProtocolType with get, set" Usage="System.Net.ServicePointManager.SecurityProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -864,6 +882,7 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ServerCertificateValidationCallback As RemoteCertificateValidationCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Security::RemoteCertificateValidationCallback ^ ServerCertificateValidationCallback { System::Net::Security::RemoteCertificateValidationCallback ^ get(); void set(System::Net::Security::RemoteCertificateValidationCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCertificateValidationCallback : System.Net.Security.RemoteCertificateValidationCallback with get, set" Usage="System.Net.ServicePointManager.ServerCertificateValidationCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -910,6 +929,7 @@ Each callback returns a value that indicates whether the certificate is accepted
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.ServerCipherSuitesCallback" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ServerCipherSuitesCallback As CipherSuitesCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::CipherSuitesCallback ^ ServerCipherSuitesCallback { System::Net::CipherSuitesCallback ^ get(); void set(System::Net::CipherSuitesCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCipherSuitesCallback : System.Net.CipherSuitesCallback with get, set" Usage="System.Net.ServicePointManager.ServerCipherSuitesCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -935,6 +955,7 @@ Each callback returns a value that indicates whether the certificate is accepted
       <MemberSignature Language="DocId" Value="M:System.Net.ServicePointManager.SetTcpKeepAlive(System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTcpKeepAlive (enabled As Boolean, keepAliveTime As Integer, keepAliveInterval As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTcpKeepAlive(bool enabled, int keepAliveTime, int keepAliveInterval);" />
+      <MemberSignature Language="F#" Value="static member SetTcpKeepAlive : bool * int * int -&gt; unit" Usage="System.Net.ServicePointManager.SetTcpKeepAlive (enabled, keepAliveTime, keepAliveInterval)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -993,6 +1014,7 @@ Each callback returns a value that indicates whether the certificate is accepted
       <MemberSignature Language="DocId" Value="P:System.Net.ServicePointManager.UseNagleAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property UseNagleAlgorithm As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseNagleAlgorithm { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseNagleAlgorithm : bool with get, set" Usage="System.Net.ServicePointManager.UseNagleAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

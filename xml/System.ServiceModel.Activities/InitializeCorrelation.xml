@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.InitializeCorrelation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InitializeCorrelation&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class InitializeCorrelation sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type InitializeCorrelation = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.InitializeCorrelation.Correlation" />
       <MemberSignature Language="VB.NET" Value="Public Property Correlation As InArgument(Of CorrelationHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ Correlation { System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Correlation : System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; with get, set" Usage="System.ServiceModel.Activities.InitializeCorrelation.Correlation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationData As IDictionary(Of String, InArgument(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument&lt;System::String ^&gt; ^&gt; ^ CorrelationData { System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument&lt;System::String ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationData : System.Collections.Generic.IDictionary&lt;string, System.Activities.InArgument&lt;string&gt;&gt;" Usage="System.ServiceModel.Activities.InitializeCorrelation.CorrelationData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.InitializeCorrelation.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="initializeCorrelation.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

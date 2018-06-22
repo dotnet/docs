@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ComponentResourceKey" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentResourceKey&#xA;Inherits ResourceKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentResourceKey : System::Windows::ResourceKey" />
+  <TypeSignature Language="F#" Value="type ComponentResourceKey = class&#xA;    inherit ResourceKey" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.#ctor(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeInTargetAssembly As Type, resourceId As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentResourceKey(Type ^ typeInTargetAssembly, System::Object ^ resourceId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ComponentResourceKey : Type * obj -&gt; System.Windows.ComponentResourceKey" Usage="new System.Windows.ComponentResourceKey (typeInTargetAssembly, resourceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Windows.ComponentResourceKey.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="componentResourceKey.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="componentResourceKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.ResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceId { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : obj with get, set" Usage="System.Windows.ComponentResourceKey.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ComponentResourceKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="componentResourceKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ComponentResourceKey.TypeInTargetAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeInTargetAssembly As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TypeInTargetAssembly { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeInTargetAssembly : Type with get, set" Usage="System.Windows.ComponentResourceKey.TypeInTargetAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppDomainManagerInitializationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum AppDomainManagerInitializationOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class AppDomainManagerInitializationOptions" />
+  <TypeSignature Language="F#" Value="type AppDomainManagerInitializationOptions = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.AppDomainManagerInitializationOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.RegisterWithHost" />
       <MemberSignature Language="VB.NET" Value="RegisterWithHost" />
       <MemberSignature Language="C++ CLI" Value="RegisterWithHost" />
+      <MemberSignature Language="F#" Value="RegisterWithHost = 1" Usage="System.AppDomainManagerInitializationOptions.RegisterWithHost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

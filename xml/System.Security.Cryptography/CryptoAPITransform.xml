@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptoAPITransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CryptoAPITransform&#xA;Implements ICryptoTransform" />
   <TypeSignature Language="C++ CLI" Value="public ref class CryptoAPITransform sealed : System::Security::Cryptography::ICryptoTransform" />
+  <TypeSignature Language="F#" Value="type CryptoAPITransform = class&#xA;    interface ICryptoTransform&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.CanReuseTransform" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanReuseTransform As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReuseTransform { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanReuseTransform : bool" Usage="System.Security.Cryptography.CryptoAPITransform.CanReuseTransform" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanReuseTransform</InterfaceMember>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanTransformMultipleBlocks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTransformMultipleBlocks { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanTransformMultipleBlocks : bool" Usage="System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks</InterfaceMember>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="cryptoAPITransform.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cryptoAPITransform.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.InputBlockSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputBlockSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputBlockSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputBlockSize : int" Usage="System.Security.Cryptography.CryptoAPITransform.InputBlockSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.InputBlockSize</InterfaceMember>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.KeyHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyHandle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr KeyHandle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyHandle : nativeint" Usage="System.Security.Cryptography.CryptoAPITransform.KeyHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.OutputBlockSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputBlockSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputBlockSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputBlockSize : int" Usage="System.Security.Cryptography.CryptoAPITransform.OutputBlockSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.OutputBlockSize</InterfaceMember>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="cryptoAPITransform.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -315,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TransformBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
+      <MemberSignature Language="F#" Value="abstract member TransformBlock : byte[] * int * int * byte[] * int -&gt; int&#xA;override this.TransformBlock : byte[] * int * int * byte[] * int -&gt; int" Usage="cryptoAPITransform.TransformBlock (inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)</InterfaceMember>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TransformFinalBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
+      <MemberSignature Language="F#" Value="abstract member TransformFinalBlock : byte[] * int * int -&gt; byte[]&#xA;override this.TransformFinalBlock : byte[] * int * int -&gt; byte[]" Usage="cryptoAPITransform.TransformFinalBlock (inputBuffer, inputOffset, inputCount)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)</InterfaceMember>

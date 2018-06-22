@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkState" />
   <TypeSignature Language="VB.NET" Value="Public Enum LinkState" />
   <TypeSignature Language="C++ CLI" Value="public enum class LinkState" />
+  <TypeSignature Language="F#" Value="type LinkState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Active" />
       <MemberSignature Language="VB.NET" Value="Active" />
       <MemberSignature Language="C++ CLI" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 2" Usage="System.Windows.Forms.LinkState.Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Hover" />
       <MemberSignature Language="VB.NET" Value="Hover" />
       <MemberSignature Language="C++ CLI" Value="Hover" />
+      <MemberSignature Language="F#" Value="Hover = 1" Usage="System.Windows.Forms.LinkState.Hover" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.LinkState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Visited" />
       <MemberSignature Language="VB.NET" Value="Visited" />
       <MemberSignature Language="C++ CLI" Value="Visited" />
+      <MemberSignature Language="F#" Value="Visited = 4" Usage="System.Windows.Forms.LinkState.Visited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

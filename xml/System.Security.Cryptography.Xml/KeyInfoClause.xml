@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class KeyInfoClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoClause abstract" />
+  <TypeSignature Language="F#" Value="type KeyInfoClause = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoClause.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="abstract member GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoClause.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoClause.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub LoadXml (element As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void LoadXml(System::Xml::XmlElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoClause.LoadXml element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

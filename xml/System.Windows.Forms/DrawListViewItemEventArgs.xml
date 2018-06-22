@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewItemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawListViewItemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawListViewItemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DrawListViewItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Windows.Forms.ListViewItem item, valuetype System.Drawing.Rectangle bounds, int32 itemIndex, valuetype System.Windows.Forms.ListViewItemStates state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewItemEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ListViewItem,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.ListViewItemStates)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawListViewItemEventArgs(System::Drawing::Graphics ^ graphics, System::Windows::Forms::ListViewItem ^ item, System::Drawing::Rectangle bounds, int itemIndex, System::Windows::Forms::ListViewItemStates state);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DrawListViewItemEventArgs : System.Drawing.Graphics * System.Windows.Forms.ListViewItem * System.Drawing.Rectangle * int * System.Windows.Forms.ListViewItemStates -&gt; System.Windows.Forms.DrawListViewItemEventArgs" Usage="new System.Windows.Forms.DrawListViewItemEventArgs (graphics, item, bounds, itemIndex, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DrawListViewItemEventArgs.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewItemEventArgs.DrawBackground" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawBackground ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawBackground();" />
+      <MemberSignature Language="F#" Value="member this.DrawBackground : unit -&gt; unit" Usage="drawListViewItemEventArgs.DrawBackground " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.DrawDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property DrawDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DrawDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DrawDefault : bool with get, set" Usage="System.Windows.Forms.DrawListViewItemEventArgs.DrawDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewItemEventArgs.DrawFocusRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawFocusRectangle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawFocusRectangle();" />
+      <MemberSignature Language="F#" Value="member this.DrawFocusRectangle : unit -&gt; unit" Usage="drawListViewItemEventArgs.DrawFocusRectangle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -248,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewItemEventArgs.DrawText" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawText ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText();" />
+      <MemberSignature Language="F#" Value="member this.DrawText : unit -&gt; unit" Usage="drawListViewItemEventArgs.DrawText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewItemEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawText (flags As TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText(System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="member this.DrawText : System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="drawListViewItemEventArgs.DrawText flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -338,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.DrawListViewItemEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -379,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem ^ Item { System::Windows::Forms::ListViewItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Windows.Forms.ListViewItem" Usage="System.Windows.Forms.DrawListViewItemEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -423,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -459,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewItemEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ListViewItemStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItemStates State { System::Windows::Forms::ListViewItemStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.ListViewItemStates" Usage="System.Windows.Forms.DrawListViewItemEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

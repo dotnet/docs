@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadStart" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ThreadStart()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ThreadStart();" />
+  <TypeSignature Language="F#" Value="type ThreadStart = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

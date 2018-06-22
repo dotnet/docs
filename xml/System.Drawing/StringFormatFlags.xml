@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringFormatFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringFormatFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class StringFormatFlags" />
+  <TypeSignature Language="F#" Value="type StringFormatFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DirectionRightToLeft" />
       <MemberSignature Language="VB.NET" Value="DirectionRightToLeft" />
       <MemberSignature Language="C++ CLI" Value="DirectionRightToLeft" />
+      <MemberSignature Language="F#" Value="DirectionRightToLeft = 1" Usage="System.Drawing.StringFormatFlags.DirectionRightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DirectionVertical" />
       <MemberSignature Language="VB.NET" Value="DirectionVertical" />
       <MemberSignature Language="C++ CLI" Value="DirectionVertical" />
+      <MemberSignature Language="F#" Value="DirectionVertical = 2" Usage="System.Drawing.StringFormatFlags.DirectionVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DisplayFormatControl" />
       <MemberSignature Language="VB.NET" Value="DisplayFormatControl" />
       <MemberSignature Language="C++ CLI" Value="DisplayFormatControl" />
+      <MemberSignature Language="F#" Value="DisplayFormatControl = 32" Usage="System.Drawing.StringFormatFlags.DisplayFormatControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.FitBlackBox" />
       <MemberSignature Language="VB.NET" Value="FitBlackBox" />
       <MemberSignature Language="C++ CLI" Value="FitBlackBox" />
+      <MemberSignature Language="F#" Value="FitBlackBox = 4" Usage="System.Drawing.StringFormatFlags.FitBlackBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.LineLimit" />
       <MemberSignature Language="VB.NET" Value="LineLimit" />
       <MemberSignature Language="C++ CLI" Value="LineLimit" />
+      <MemberSignature Language="F#" Value="LineLimit = 8192" Usage="System.Drawing.StringFormatFlags.LineLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.MeasureTrailingSpaces" />
       <MemberSignature Language="VB.NET" Value="MeasureTrailingSpaces" />
       <MemberSignature Language="C++ CLI" Value="MeasureTrailingSpaces" />
+      <MemberSignature Language="F#" Value="MeasureTrailingSpaces = 2048" Usage="System.Drawing.StringFormatFlags.MeasureTrailingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoClip" />
       <MemberSignature Language="VB.NET" Value="NoClip" />
       <MemberSignature Language="C++ CLI" Value="NoClip" />
+      <MemberSignature Language="F#" Value="NoClip = 16384" Usage="System.Drawing.StringFormatFlags.NoClip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoFontFallback" />
       <MemberSignature Language="VB.NET" Value="NoFontFallback" />
       <MemberSignature Language="C++ CLI" Value="NoFontFallback" />
+      <MemberSignature Language="F#" Value="NoFontFallback = 1024" Usage="System.Drawing.StringFormatFlags.NoFontFallback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoWrap" />
       <MemberSignature Language="VB.NET" Value="NoWrap" />
       <MemberSignature Language="C++ CLI" Value="NoWrap" />
+      <MemberSignature Language="F#" Value="NoWrap = 4096" Usage="System.Drawing.StringFormatFlags.NoWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

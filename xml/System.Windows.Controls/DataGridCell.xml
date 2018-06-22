@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridCell" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridCell&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridCell : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type DataGridCell = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridCell.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCell.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridCell.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.ColumnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridCell.ColumnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCell.IsEditing" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEditing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEditing : bool with get, set" Usage="System.Windows.Controls.DataGridCell.IsEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.IsEditingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEditingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEditingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEditingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridCell.IsEditingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCell.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Controls.DataGridCell.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.IsReadOnlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsReadOnlyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsReadOnlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridCell.IsReadOnlyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCell.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSelected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool with get, set" Usage="System.Windows.Controls.DataGridCell.IsSelected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.IsSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridCell.IsSelectedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -248,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridCell.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnColumnChanged(System.Windows.Controls.DataGridColumn,System.Windows.Controls.DataGridColumn)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnChanged (oldColumn As DataGridColumn, newColumn As DataGridColumn)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnChanged(System::Windows::Controls::DataGridColumn ^ oldColumn, System::Windows::Controls::DataGridColumn ^ newColumn);" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnChanged : System.Windows.Controls.DataGridColumn * System.Windows.Controls.DataGridColumn -&gt; unit&#xA;override this.OnColumnChanged : System.Windows.Controls.DataGridColumn * System.Windows.Controls.DataGridColumn -&gt; unit" Usage="dataGridCell.OnColumnChanged (oldColumn, newColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridCell.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnIsEditingChanged(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIsEditingChanged (isEditing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIsEditingChanged(bool isEditing);" />
+      <MemberSignature Language="F#" Value="abstract member OnIsEditingChanged : bool -&gt; unit&#xA;override this.OnIsEditingChanged : bool -&gt; unit" Usage="dataGridCell.OnIsEditingChanged isEditing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -369,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="dataGridCell.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -399,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="dataGridCell.OnPreviewKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -428,6 +444,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="dataGridCell.OnRender drawingContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -451,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnSelected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSelected : System.Windows.RoutedEventArgs -&gt; unit" Usage="dataGridCell.OnSelected e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnTextInput(System.Windows.Input.TextCompositionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextInput (e As TextCompositionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextInput(System::Windows::Input::TextCompositionEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextInput : System.Windows.Input.TextCompositionEventArgs -&gt; unit" Usage="dataGridCell.OnTextInput e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -516,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCell.OnUnselected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnselected (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnselected(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUnselected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnUnselected : System.Windows.RoutedEventArgs -&gt; unit" Usage="dataGridCell.OnUnselected e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -551,6 +571,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridCell.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Selected;" />
+      <MemberSignature Language="F#" Value="member this.Selected : System.Windows.RoutedEventHandler " Usage="member this.Selected : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -579,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.SelectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.DataGridCell.SelectedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -598,6 +620,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridCell.Unselected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unselected As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unselected;" />
+      <MemberSignature Language="F#" Value="member this.Unselected : System.Windows.RoutedEventHandler " Usage="member this.Unselected : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -626,6 +649,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridCell.UnselectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnselectedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UnselectedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnselectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.DataGridCell.UnselectedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

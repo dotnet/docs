@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlFacetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlFacetAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlFacetAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type SqlFacetAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.IsFixedLength" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFixedLength As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedLength { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedLength : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.IsFixedLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.MaxSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSize : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.MaxSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.Precision" />
       <MemberSignature Language="VB.NET" Value="Public Property Precision As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.Precision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.Scale" />
       <MemberSignature Language="VB.NET" Value="Public Property Scale As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.Scale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

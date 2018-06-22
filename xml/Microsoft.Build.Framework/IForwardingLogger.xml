@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IForwardingLogger" />
   <TypeSignature Language="VB.NET" Value="Public Interface IForwardingLogger&#xA;Implements INodeLogger" />
   <TypeSignature Language="C++ CLI" Value="public interface class IForwardingLogger : Microsoft::Build::Framework::INodeLogger" />
+  <TypeSignature Language="F#" Value="type IForwardingLogger = interface&#xA;    interface INodeLogger&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildEventRedirector As IEventRedirector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IEventRedirector ^ BuildEventRedirector { Microsoft::Build::Framework::IEventRedirector ^ get(); void set(Microsoft::Build::Framework::IEventRedirector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildEventRedirector : Microsoft.Build.Framework.IEventRedirector with get, set" Usage="Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.NodeId" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeId { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NodeId : int with get, set" Usage="Microsoft.Build.Framework.IForwardingLogger.NodeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

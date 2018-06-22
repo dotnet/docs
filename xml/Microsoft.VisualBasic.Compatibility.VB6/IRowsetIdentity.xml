@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRowsetIdentity" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRowsetIdentity" />
+  <TypeSignature Language="F#" Value="type IRowsetIdentity = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity.IsSameRow(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSameRow (hThisRow As Integer, hThatRow As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsSameRow(int hThisRow, int hThatRow);" />
+      <MemberSignature Language="F#" Value="abstract member IsSameRow : int * int -&gt; int" Usage="iRowsetIdentity.IsSameRow (hThisRow, hThatRow)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

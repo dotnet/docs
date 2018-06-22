@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IFeatureSupport" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFeatureSupport" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFeatureSupport" />
+  <TypeSignature Language="F#" Value="type IFeatureSupport = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.GetVersionPresent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVersionPresent (feature As Object) As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Version ^ GetVersionPresent(System::Object ^ feature);" />
+      <MemberSignature Language="F#" Value="abstract member GetVersionPresent : obj -&gt; Version" Usage="iFeatureSupport.GetVersionPresent feature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsPresent (feature As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsPresent(System::Object ^ feature);" />
+      <MemberSignature Language="F#" Value="abstract member IsPresent : obj -&gt; bool" Usage="iFeatureSupport.IsPresent feature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsPresent (feature As Object, minimumVersion As Version) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsPresent(System::Object ^ feature, Version ^ minimumVersion);" />
+      <MemberSignature Language="F#" Value="abstract member IsPresent : obj * Version -&gt; bool" Usage="iFeatureSupport.IsPresent (feature, minimumVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

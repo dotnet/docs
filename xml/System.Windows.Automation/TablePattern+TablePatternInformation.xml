@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TablePattern.TablePatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure TablePattern.TablePatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class TablePattern::TablePatternInformation" />
+  <TypeSignature Language="F#" Value="type TablePattern.TablePatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.ColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnCount : int" Usage="System.Windows.Automation.TablePattern.TablePatternInformation.ColumnCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TablePattern.TablePatternInformation.GetColumnHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnHeaders () As AutomationElement()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetColumnHeaders();" />
+      <MemberSignature Language="F#" Value="member this.GetColumnHeaders : unit -&gt; System.Windows.Automation.AutomationElement[]" Usage="tablePatternInformation.GetColumnHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TablePattern.TablePatternInformation.GetRowHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRowHeaders () As AutomationElement()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetRowHeaders();" />
+      <MemberSignature Language="F#" Value="member this.GetRowHeaders : unit -&gt; System.Windows.Automation.AutomationElement[]" Usage="tablePatternInformation.GetRowHeaders " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Windows.Automation.TablePattern.TablePatternInformation.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowOrColumnMajor As RowOrColumnMajor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::RowOrColumnMajor RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowOrColumnMajor : System.Windows.Automation.RowOrColumnMajor" Usage="System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

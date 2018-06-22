@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class NativeActivityUpdateMapMetadata&#xA;Inherits UpdateMapMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityUpdateMapMetadata : System::Activities::DynamicUpdate::UpdateMapMetadata" />
+  <TypeSignature Language="F#" Value="type NativeActivityUpdateMapMetadata = class&#xA;    inherit UpdateMapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.Activities.Activity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveOriginalValue (updatedChildActivity As Activity, originalValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveOriginalValue(System::Activities::Activity ^ updatedChildActivity, System::Object ^ originalValue);" />
+      <MemberSignature Language="F#" Value="member this.SaveOriginalValue : System.Activities.Activity * obj -&gt; unit" Usage="nativeActivityUpdateMapMetadata.SaveOriginalValue (updatedChildActivity, originalValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveOriginalValue (propertyName As String, originalValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveOriginalValue(System::String ^ propertyName, System::Object ^ originalValue);" />
+      <MemberSignature Language="F#" Value="member this.SaveOriginalValue : string * obj -&gt; unit" Usage="nativeActivityUpdateMapMetadata.SaveOriginalValue (propertyName, originalValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

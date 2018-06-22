@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerError" />
   <TypeSignature Language="VB.NET" Value="Public Class CompilerError" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompilerError" />
+  <TypeSignature Language="F#" Value="type CompilerError = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerError.#ctor(System.String,System.Int32,System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, line As Integer, column As Integer, errorNumber As String, errorText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerError(System::String ^ fileName, int line, int column, System::String ^ errorNumber, System::String ^ errorText);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerError : string * int * int * string * string -&gt; System.CodeDom.Compiler.CompilerError" Usage="new System.CodeDom.Compiler.CompilerError (fileName, line, column, errorNumber, errorText)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.Column" />
       <MemberSignature Language="VB.NET" Value="Public Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int with get, set" Usage="System.CodeDom.Compiler.CompilerError.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.ErrorNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorNumber { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorNumber : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.ErrorNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.ErrorText" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.ErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property IsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool with get, set" Usage="System.CodeDom.Compiler.CompilerError.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.Line" />
       <MemberSignature Language="VB.NET" Value="Public Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int with get, set" Usage="System.CodeDom.Compiler.CompilerError.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerError.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compilerError.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

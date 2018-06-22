@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointPropertyUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum StylusPointPropertyUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class StylusPointPropertyUnit" />
+  <TypeSignature Language="F#" Value="type StylusPointPropertyUnit = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Centimeters" />
       <MemberSignature Language="VB.NET" Value="Centimeters" />
       <MemberSignature Language="C++ CLI" Value="Centimeters" />
+      <MemberSignature Language="F#" Value="Centimeters = 2" Usage="System.Windows.Input.StylusPointPropertyUnit.Centimeters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Degrees" />
       <MemberSignature Language="VB.NET" Value="Degrees" />
       <MemberSignature Language="C++ CLI" Value="Degrees" />
+      <MemberSignature Language="F#" Value="Degrees = 3" Usage="System.Windows.Input.StylusPointPropertyUnit.Degrees" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Grams" />
       <MemberSignature Language="VB.NET" Value="Grams" />
       <MemberSignature Language="C++ CLI" Value="Grams" />
+      <MemberSignature Language="F#" Value="Grams = 7" Usage="System.Windows.Input.StylusPointPropertyUnit.Grams" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Inches" />
       <MemberSignature Language="VB.NET" Value="Inches" />
       <MemberSignature Language="C++ CLI" Value="Inches" />
+      <MemberSignature Language="F#" Value="Inches = 1" Usage="System.Windows.Input.StylusPointPropertyUnit.Inches" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.StylusPointPropertyUnit.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Pounds" />
       <MemberSignature Language="VB.NET" Value="Pounds" />
       <MemberSignature Language="C++ CLI" Value="Pounds" />
+      <MemberSignature Language="F#" Value="Pounds = 6" Usage="System.Windows.Input.StylusPointPropertyUnit.Pounds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Radians" />
       <MemberSignature Language="VB.NET" Value="Radians" />
       <MemberSignature Language="C++ CLI" Value="Radians" />
+      <MemberSignature Language="F#" Value="Radians = 4" Usage="System.Windows.Input.StylusPointPropertyUnit.Radians" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusPointPropertyUnit.Seconds" />
       <MemberSignature Language="VB.NET" Value="Seconds" />
       <MemberSignature Language="C++ CLI" Value="Seconds" />
+      <MemberSignature Language="F#" Value="Seconds = 5" Usage="System.Windows.Input.StylusPointPropertyUnit.Seconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

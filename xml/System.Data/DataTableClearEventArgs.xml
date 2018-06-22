@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableClearEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableClearEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTableClearEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataTableClearEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataTable dataTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableClearEventArgs.#ctor(System.Data.DataTable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableClearEventArgs(System::Data::DataTable ^ dataTable);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataTableClearEventArgs : System.Data.DataTable -&gt; System.Data.DataTableClearEventArgs" Usage="new System.Data.DataTableClearEventArgs dataTable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.DataTableClearEventArgs.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.TableName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableName : string" Usage="System.Data.DataTableClearEventArgs.TableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.TableNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableNamespace : string" Usage="System.Data.DataTableClearEventArgs.TableNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

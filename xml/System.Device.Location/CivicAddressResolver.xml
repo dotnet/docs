@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Device.Location.CivicAddressResolver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CivicAddressResolver&#xA;Implements ICivicAddressResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class CivicAddressResolver sealed : System::Device::Location::ICivicAddressResolver" />
+  <TypeSignature Language="F#" Value="type CivicAddressResolver = class&#xA;    interface ICivicAddressResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveAddress (coordinate As GeoCoordinate) As CivicAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Device::Location::CivicAddress ^ ResolveAddress(System::Device::Location::GeoCoordinate ^ coordinate);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress&#xA;override this.ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress" Usage="civicAddressResolver.ResolveAddress coordinate" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)</InterfaceMember>
@@ -122,6 +124,7 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAddressAsync (coordinate As GeoCoordinate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResolveAddressAsync(System::Device::Location::GeoCoordinate ^ coordinate);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit&#xA;override this.ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit" Usage="civicAddressResolver.ResolveAddressAsync coordinate" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)</InterfaceMember>
@@ -162,6 +165,7 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="DocId" Value="E:System.Device.Location.CivicAddressResolver.ResolveAddressCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Device::Location::ResolveAddressCompletedEventArgs ^&gt; ^ ResolveAddressCompleted;" />
+      <MemberSignature Language="F#" Value="member this.ResolveAddressCompleted : EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " Usage="member this.ResolveAddressCompleted : System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted</InterfaceMember>

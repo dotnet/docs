@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileListItemType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MobileListItemType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MobileListItemType" />
+  <TypeSignature Language="F#" Value="type MobileListItemType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.FooterItem" />
       <MemberSignature Language="VB.NET" Value="FooterItem" />
       <MemberSignature Language="C++ CLI" Value="FooterItem" />
+      <MemberSignature Language="F#" Value="FooterItem = 2" Usage="System.Web.UI.MobileControls.MobileListItemType.FooterItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.HeaderItem" />
       <MemberSignature Language="VB.NET" Value="HeaderItem" />
       <MemberSignature Language="C++ CLI" Value="HeaderItem" />
+      <MemberSignature Language="F#" Value="HeaderItem = 0" Usage="System.Web.UI.MobileControls.MobileListItemType.HeaderItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.ListItem" />
       <MemberSignature Language="VB.NET" Value="ListItem" />
       <MemberSignature Language="C++ CLI" Value="ListItem" />
+      <MemberSignature Language="F#" Value="ListItem = 1" Usage="System.Web.UI.MobileControls.MobileListItemType.ListItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.SeparatorItem" />
       <MemberSignature Language="VB.NET" Value="SeparatorItem" />
       <MemberSignature Language="C++ CLI" Value="SeparatorItem" />
+      <MemberSignature Language="F#" Value="SeparatorItem = 3" Usage="System.Web.UI.MobileControls.MobileListItemType.SeparatorItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

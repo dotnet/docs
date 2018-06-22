@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeStatement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeStatement&#xA;Inherits CodeItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeStatement abstract : Mono::CodeGeneration::CodeItem" />
+  <TypeSignature Language="F#" Value="type CodeStatement = class&#xA;    inherit CodeItem" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

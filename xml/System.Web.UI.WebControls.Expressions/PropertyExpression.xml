@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.PropertyExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyExpression&#xA;Inherits ParameterDataSourceExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyExpression : System::Web::UI::WebControls::Expressions::ParameterDataSourceExpression" />
+  <TypeSignature Language="F#" Value="type PropertyExpression = class&#xA;    inherit ParameterDataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.PropertyExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="propertyExpression.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

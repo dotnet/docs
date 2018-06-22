@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewColumnHeaderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DrawListViewColumnHeaderEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DrawListViewColumnHeaderEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DrawListViewColumnHeaderEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, int32 columnIndex, class System.Windows.Forms.ColumnHeader header, valuetype System.Windows.Forms.ListViewItemStates state, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.ColumnHeader,System.Windows.Forms.ListViewItemStates,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawListViewColumnHeaderEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds, int columnIndex, System::Windows::Forms::ColumnHeader ^ header, System::Windows::Forms::ListViewItemStates state, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DrawListViewColumnHeaderEventArgs : System.Drawing.Graphics * System.Drawing.Rectangle * int * System.Windows.Forms.ColumnHeader * System.Windows.Forms.ListViewItemStates * System.Drawing.Color * System.Drawing.Color * System.Drawing.Font -&gt; System.Windows.Forms.DrawListViewColumnHeaderEventArgs" Usage="new System.Windows.Forms.DrawListViewColumnHeaderEventArgs (graphics, bounds, columnIndex, header, state, foreColor, backColor, font)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ColumnIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ColumnIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawBackground" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawBackground ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawBackground();" />
+      <MemberSignature Language="F#" Value="member this.DrawBackground : unit -&gt; unit" Usage="drawListViewColumnHeaderEventArgs.DrawBackground " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property DrawDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DrawDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DrawDefault : bool with get, set" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawText ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText();" />
+      <MemberSignature Language="F#" Value="member this.DrawText : unit -&gt; unit" Usage="drawListViewColumnHeaderEventArgs.DrawText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DrawText (flags As TextFormatFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText(System::Windows::Forms::TextFormatFlags flags);" />
+      <MemberSignature Language="F#" Value="member this.DrawText : System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="drawListViewColumnHeaderEventArgs.DrawText flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Header" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ColumnHeader ^ Header { System::Windows::Forms::ColumnHeader ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Header : System.Windows.Forms.ColumnHeader" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Header" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -502,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ListViewItemStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItemStates State { System::Windows::Forms::ListViewItemStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.ListViewItemStates" Usage="System.Windows.Forms.DrawListViewColumnHeaderEventArgs.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

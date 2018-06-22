@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItemCollection&#xA;Implements ICollection, IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItemCollection sealed : System::Collections::ICollection, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type MenuItemCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.#ctor(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemCollection(System::Web::UI::WebControls::MenuItem ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MenuItemCollection : System.Web.UI.WebControls.MenuItem -&gt; System.Web.UI.WebControls.MenuItemCollection" Usage="new System.Web.UI.WebControls.MenuItemCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.Add(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (child As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::MenuItem ^ child);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.MenuItem -&gt; unit" Usage="menuItemCollection.Add child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.AddAt(System.Int32,System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAt (index As Integer, child As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(int index, System::Web::UI::WebControls::MenuItem ^ child);" />
+      <MemberSignature Language="F#" Value="member this.AddAt : int * System.Web.UI.WebControls.MenuItem -&gt; unit" Usage="menuItemCollection.AddAt (index, child)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="menuItemCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.Contains(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (c As MenuItem) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::MenuItem ^ c);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.MenuItem -&gt; bool" Usage="menuItemCollection.Contains c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -364,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="menuItemCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -409,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.CopyTo(System.Web.UI.WebControls.MenuItem[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MenuItem(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::MenuItem ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.MenuItem[] * int -&gt; unit" Usage="menuItemCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -457,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.WebControls.MenuItemCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -501,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="menuItemCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -551,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.IndexOf(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As MenuItem) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::MenuItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.MenuItem -&gt; int" Usage="menuItemCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -599,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.WebControls.MenuItemCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -635,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItem ^ default[int] { System::Web::UI::WebControls::MenuItem ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.MenuItem" Usage="System.Web.UI.WebControls.MenuItemCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -680,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As MenuItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::MenuItem ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.MenuItem -&gt; unit" Usage="menuItemCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -733,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="menuItemCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +799,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.WebControls.MenuItemCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -831,6 +847,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.MenuItemCollection.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>

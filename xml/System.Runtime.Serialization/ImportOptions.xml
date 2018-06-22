@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ImportOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportOptions" />
+  <TypeSignature Language="F#" Value="type ImportOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.CodeProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeProvider As CodeDomProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CodeDomProvider ^ CodeProvider { System::CodeDom::Compiler::CodeDomProvider ^ get(); void set(System::CodeDom::Compiler::CodeDomProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CodeProvider : System.CodeDom.Compiler.CodeDomProvider with get, set" Usage="System.Runtime.Serialization.ImportOptions.CodeProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.DataContractSurrogate" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.Runtime.Serialization.ImportOptions.DataContractSurrogate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.EnableDataBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDataBinding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDataBinding { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDataBinding : bool with get, set" Usage="System.Runtime.Serialization.ImportOptions.EnableDataBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.GenerateInternal" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateInternal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateInternal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateInternal : bool with get, set" Usage="System.Runtime.Serialization.ImportOptions.GenerateInternal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.GenerateSerializable" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateSerializable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateSerializable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateSerializable : bool with get, set" Usage="System.Runtime.Serialization.ImportOptions.GenerateSerializable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ImportXmlType" />
       <MemberSignature Language="VB.NET" Value="Public Property ImportXmlType As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ImportXmlType { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ImportXmlType : bool with get, set" Usage="System.Runtime.Serialization.ImportOptions.ImportXmlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Namespaces { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Runtime.Serialization.ImportOptions.Namespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedCollectionTypes As ICollection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Type ^&gt; ^ ReferencedCollectionTypes { System::Collections::Generic::ICollection&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedCollectionTypes : System.Collections.Generic.ICollection&lt;Type&gt;" Usage="System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ReferencedTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedTypes As ICollection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Type ^&gt; ^ ReferencedTypes { System::Collections::Generic::ICollection&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReferencedTypes : System.Collections.Generic.ICollection&lt;Type&gt;" Usage="System.Runtime.Serialization.ImportOptions.ReferencedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

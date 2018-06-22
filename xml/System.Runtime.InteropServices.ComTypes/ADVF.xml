@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ADVF" />
   <TypeSignature Language="VB.NET" Value="Public Enum ADVF" />
   <TypeSignature Language="C++ CLI" Value="public enum class ADVF" />
+  <TypeSignature Language="F#" Value="type ADVF = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_DATAONSTOP" />
       <MemberSignature Language="VB.NET" Value="ADVF_DATAONSTOP" />
       <MemberSignature Language="C++ CLI" Value="ADVF_DATAONSTOP" />
+      <MemberSignature Language="F#" Value="ADVF_DATAONSTOP = 64" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVF_DATAONSTOP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_NODATA" />
       <MemberSignature Language="VB.NET" Value="ADVF_NODATA" />
       <MemberSignature Language="C++ CLI" Value="ADVF_NODATA" />
+      <MemberSignature Language="F#" Value="ADVF_NODATA = 1" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVF_NODATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_ONLYONCE" />
       <MemberSignature Language="VB.NET" Value="ADVF_ONLYONCE" />
       <MemberSignature Language="C++ CLI" Value="ADVF_ONLYONCE" />
+      <MemberSignature Language="F#" Value="ADVF_ONLYONCE = 4" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVF_ONLYONCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_PRIMEFIRST" />
       <MemberSignature Language="VB.NET" Value="ADVF_PRIMEFIRST" />
       <MemberSignature Language="C++ CLI" Value="ADVF_PRIMEFIRST" />
+      <MemberSignature Language="F#" Value="ADVF_PRIMEFIRST = 2" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVF_PRIMEFIRST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_FORCEBUILTIN" />
       <MemberSignature Language="VB.NET" Value="ADVFCACHE_FORCEBUILTIN" />
       <MemberSignature Language="C++ CLI" Value="ADVFCACHE_FORCEBUILTIN" />
+      <MemberSignature Language="F#" Value="ADVFCACHE_FORCEBUILTIN = 16" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_FORCEBUILTIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_NOHANDLER" />
       <MemberSignature Language="VB.NET" Value="ADVFCACHE_NOHANDLER" />
       <MemberSignature Language="C++ CLI" Value="ADVFCACHE_NOHANDLER" />
+      <MemberSignature Language="F#" Value="ADVFCACHE_NOHANDLER = 8" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_NOHANDLER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_ONSAVE" />
       <MemberSignature Language="VB.NET" Value="ADVFCACHE_ONSAVE" />
       <MemberSignature Language="C++ CLI" Value="ADVFCACHE_ONSAVE" />
+      <MemberSignature Language="F#" Value="ADVFCACHE_ONSAVE = 32" Usage="System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_ONSAVE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanelGrowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum TableLayoutPanelGrowStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class TableLayoutPanelGrowStyle" />
+  <TypeSignature Language="F#" Value="type TableLayoutPanelGrowStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns" />
       <MemberSignature Language="VB.NET" Value="AddColumns" />
       <MemberSignature Language="C++ CLI" Value="AddColumns" />
+      <MemberSignature Language="F#" Value="AddColumns = 2" Usage="System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows" />
       <MemberSignature Language="VB.NET" Value="AddRows" />
       <MemberSignature Language="C++ CLI" Value="AddRows" />
+      <MemberSignature Language="F#" Value="AddRows = 1" Usage="System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize" />
       <MemberSignature Language="VB.NET" Value="FixedSize" />
       <MemberSignature Language="C++ CLI" Value="FixedSize" />
+      <MemberSignature Language="F#" Value="FixedSize = 0" Usage="System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

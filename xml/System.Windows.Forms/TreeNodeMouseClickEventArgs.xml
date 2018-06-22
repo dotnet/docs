@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeNodeMouseClickEventArgs&#xA;Inherits MouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeMouseClickEventArgs : System::Windows::Forms::MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type TreeNodeMouseClickEventArgs = class&#xA;    inherit MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNodeMouseClickEventArgs.#ctor(System.Windows.Forms.TreeNode,System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As TreeNode, button As MouseButtons, clicks As Integer, x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeMouseClickEventArgs(System::Windows::Forms::TreeNode ^ node, System::Windows::Forms::MouseButtons button, int clicks, int x, int y);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNodeMouseClickEventArgs : System.Windows.Forms.TreeNode * System.Windows.Forms.MouseButtons * int * int * int -&gt; System.Windows.Forms.TreeNodeMouseClickEventArgs" Usage="new System.Windows.Forms.TreeNodeMouseClickEventArgs (node, button, clicks, x, y)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNodeMouseClickEventArgs.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ Node { System::Windows::Forms::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNodeMouseClickEventArgs.Node" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

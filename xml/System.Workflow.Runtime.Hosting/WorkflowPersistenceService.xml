@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowPersistenceService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowPersistenceService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowPersistenceService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type WorkflowPersistenceService = class&#xA;    inherit WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig unsigned int8[] GetDefaultSerializedForm(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetDefaultSerializedForm(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Byte&gt; ^ GetDefaultSerializedForm(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultSerializedForm : System.Workflow.ComponentModel.Activity -&gt; byte[]" Usage="System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetDefaultSerializedForm activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetIsBlocked(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function GetIsBlocked (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool GetIsBlocked(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="static member GetIsBlocked : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetIsBlocked rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetSuspendOrTerminateInfo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function GetSuspendOrTerminateInfo (rootActivity As Activity) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::String ^ GetSuspendOrTerminateInfo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="static member GetSuspendOrTerminateInfo : System.Workflow.ComponentModel.Activity -&gt; string" Usage="System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetSuspendOrTerminateInfo rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetWorkflowStatus(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function GetWorkflowStatus (rootActivity As Activity) As WorkflowStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Workflow::Runtime::WorkflowStatus GetWorkflowStatus(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="static member GetWorkflowStatus : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.Runtime.WorkflowStatus" Usage="System.Workflow.Runtime.Hosting.WorkflowPersistenceService.GetWorkflowStatus rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.LoadCompletedContextActivity(System.Guid,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function LoadCompletedContextActivity (scopeId As Guid, outerActivity As Activity) As Activity" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ LoadCompletedContextActivity(Guid scopeId, System::Workflow::ComponentModel::Activity ^ outerActivity);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCompletedContextActivity : Guid * System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowPersistenceService.LoadCompletedContextActivity (scopeId, outerActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.LoadWorkflowInstanceState(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function LoadWorkflowInstanceState (instanceId As Guid) As Activity" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ LoadWorkflowInstanceState(Guid instanceId);" />
+      <MemberSignature Language="F#" Value="abstract member LoadWorkflowInstanceState : Guid -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowPersistenceService.LoadWorkflowInstanceState instanceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.RestoreFromDefaultSerializedForm(System.Byte[],System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function RestoreFromDefaultSerializedForm (activityBytes As Byte(), outerActivity As Activity) As Activity" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Workflow::ComponentModel::Activity ^ RestoreFromDefaultSerializedForm(cli::array &lt;System::Byte&gt; ^ activityBytes, System::Workflow::ComponentModel::Activity ^ outerActivity);" />
+      <MemberSignature Language="F#" Value="static member RestoreFromDefaultSerializedForm : byte[] * System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Runtime.Hosting.WorkflowPersistenceService.RestoreFromDefaultSerializedForm (activityBytes, outerActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SaveCompletedContextActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.SaveCompletedContextActivity(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void SaveCompletedContextActivity(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="abstract member SaveCompletedContextActivity : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="workflowPersistenceService.SaveCompletedContextActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -335,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.SaveWorkflowInstanceState(System.Workflow.ComponentModel.Activity,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub SaveWorkflowInstanceState (rootActivity As Activity, unlock As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void SaveWorkflowInstanceState(System::Workflow::ComponentModel::Activity ^ rootActivity, bool unlock);" />
+      <MemberSignature Language="F#" Value="abstract member SaveWorkflowInstanceState : System.Workflow.ComponentModel.Activity * bool -&gt; unit" Usage="workflowPersistenceService.SaveWorkflowInstanceState (rootActivity, unlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -383,6 +393,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool UnloadOnIdle(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.UnloadOnIdle(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool UnloadOnIdle(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="abstract member UnloadOnIdle : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="workflowPersistenceService.UnloadOnIdle activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -417,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowPersistenceService.UnlockWorkflowInstanceState(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub UnlockWorkflowInstanceState (rootActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void UnlockWorkflowInstanceState(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="abstract member UnlockWorkflowInstanceState : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="workflowPersistenceService.UnlockWorkflowInstanceState rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

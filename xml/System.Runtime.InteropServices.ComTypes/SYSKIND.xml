@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.SYSKIND" />
   <TypeSignature Language="VB.NET" Value="Public Enum SYSKIND" />
   <TypeSignature Language="C++ CLI" Value="public enum class SYSKIND" />
+  <TypeSignature Language="F#" Value="type SYSKIND = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_MAC" />
       <MemberSignature Language="VB.NET" Value="SYS_MAC" />
       <MemberSignature Language="C++ CLI" Value="SYS_MAC" />
+      <MemberSignature Language="F#" Value="SYS_MAC = 2" Usage="System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_MAC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN16" />
       <MemberSignature Language="VB.NET" Value="SYS_WIN16" />
       <MemberSignature Language="C++ CLI" Value="SYS_WIN16" />
+      <MemberSignature Language="F#" Value="SYS_WIN16 = 0" Usage="System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN32" />
       <MemberSignature Language="VB.NET" Value="SYS_WIN32" />
       <MemberSignature Language="C++ CLI" Value="SYS_WIN32" />
+      <MemberSignature Language="F#" Value="SYS_WIN32 = 1" Usage="System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN64" />
       <MemberSignature Language="VB.NET" Value="SYS_WIN64" />
       <MemberSignature Language="C++ CLI" Value="SYS_WIN64" />
+      <MemberSignature Language="F#" Value="SYS_WIN64 = 3" Usage="System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.DashCap" />
   <TypeSignature Language="VB.NET" Value="Public Enum DashCap" />
   <TypeSignature Language="C++ CLI" Value="public enum class DashCap" />
+  <TypeSignature Language="F#" Value="type DashCap = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Flat" />
       <MemberSignature Language="VB.NET" Value="Flat" />
       <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 0" Usage="System.Drawing.Drawing2D.DashCap.Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Round" />
       <MemberSignature Language="VB.NET" Value="Round" />
       <MemberSignature Language="C++ CLI" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 2" Usage="System.Drawing.Drawing2D.DashCap.Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Triangle" />
       <MemberSignature Language="VB.NET" Value="Triangle" />
       <MemberSignature Language="C++ CLI" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 3" Usage="System.Drawing.Drawing2D.DashCap.Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

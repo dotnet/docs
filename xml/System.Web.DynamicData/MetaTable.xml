@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaTable" />
   <TypeSignature Language="VB.NET" Value="Public Class MetaTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetaTable" />
+  <TypeSignature Language="F#" Value="type MetaTable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@ End Class
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaModel metaModel, class System.Web.DynamicData.ModelProviders.TableProvider tableProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.#ctor(System.Web.DynamicData.MetaModel,System.Web.DynamicData.ModelProviders.TableProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetaTable(System::Web::DynamicData::MetaModel ^ metaModel, System::Web::DynamicData::ModelProviders::TableProvider ^ tableProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.MetaTable : System.Web.DynamicData.MetaModel * System.Web.DynamicData.ModelProviders.TableProvider -&gt; System.Web.DynamicData.MetaTable" Usage="new System.Web.DynamicData.MetaTable (metaModel, tableProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -83,6 +85,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Web.DynamicData.MetaTable.Attributes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.Attributes</InterfaceMember>
@@ -106,6 +109,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.BuildAttributeCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function BuildAttributeCollection () As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::AttributeCollection ^ BuildAttributeCollection();" />
+      <MemberSignature Language="F#" Value="abstract member BuildAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection&#xA;override this.BuildAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection" Usage="metaTable.BuildAttributeCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -127,6 +131,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CanDelete(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanDelete (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanDelete(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanDelete : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanDelete : System.Security.Principal.IPrincipal -&gt; bool" Usage="metaTable.CanDelete principal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.CanDelete(System.Security.Principal.IPrincipal)</InterfaceMember>
@@ -162,6 +167,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CanInsert(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanInsert (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanInsert(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanInsert : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanInsert : System.Security.Principal.IPrincipal -&gt; bool" Usage="metaTable.CanInsert principal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.CanInsert(System.Security.Principal.IPrincipal)</InterfaceMember>
@@ -197,6 +203,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CanRead(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanRead (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanRead(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanRead : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanRead : System.Security.Principal.IPrincipal -&gt; bool" Usage="metaTable.CanRead principal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.CanRead(System.Security.Principal.IPrincipal)</InterfaceMember>
@@ -232,6 +239,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CanUpdate(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanUpdate (principal As IPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanUpdate(System::Security::Principal::IPrincipal ^ principal);" />
+      <MemberSignature Language="F#" Value="abstract member CanUpdate : System.Security.Principal.IPrincipal -&gt; bool&#xA;override this.CanUpdate : System.Security.Principal.IPrincipal -&gt; bool" Usage="metaTable.CanUpdate principal" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.CanUpdate(System.Security.Principal.IPrincipal)</InterfaceMember>
@@ -267,6 +275,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Columns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As ReadOnlyCollection(Of MetaColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ Columns { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.MetaColumn&gt;" Usage="System.Web.DynamicData.MetaTable.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -296,6 +305,7 @@ End Class
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.DynamicData.MetaChildrenColumn CreateChildrenColumn(class System.Web.DynamicData.ModelProviders.ColumnProvider columnProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateChildrenColumn(System.Web.DynamicData.ModelProviders.ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::DynamicData::MetaChildrenColumn ^ CreateChildrenColumn(System::Web::DynamicData::ModelProviders::ColumnProvider ^ columnProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateChildrenColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaChildrenColumn&#xA;override this.CreateChildrenColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaChildrenColumn" Usage="metaTable.CreateChildrenColumn columnProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -326,6 +336,7 @@ End Class
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.DynamicData.MetaColumn CreateColumn(class System.Web.DynamicData.ModelProviders.ColumnProvider columnProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateColumn(System.Web.DynamicData.ModelProviders.ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::DynamicData::MetaColumn ^ CreateColumn(System::Web::DynamicData::ModelProviders::ColumnProvider ^ columnProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaColumn&#xA;override this.CreateColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaColumn" Usage="metaTable.CreateColumn columnProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -357,6 +368,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateContext () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateContext();" />
+      <MemberSignature Language="F#" Value="abstract member CreateContext : unit -&gt; obj&#xA;override this.CreateContext : unit -&gt; obj" Usage="metaTable.CreateContext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.CreateContext</InterfaceMember>
@@ -387,6 +399,7 @@ End Class
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.DynamicData.MetaForeignKeyColumn CreateForeignKeyColumn(class System.Web.DynamicData.ModelProviders.ColumnProvider columnProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateForeignKeyColumn(System.Web.DynamicData.ModelProviders.ColumnProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::DynamicData::MetaForeignKeyColumn ^ CreateForeignKeyColumn(System::Web::DynamicData::ModelProviders::ColumnProvider ^ columnProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateForeignKeyColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaForeignKeyColumn&#xA;override this.CreateForeignKeyColumn : System.Web.DynamicData.ModelProviders.ColumnProvider -&gt; System.Web.DynamicData.MetaForeignKeyColumn" Usage="metaTable.CreateForeignKeyColumn columnProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -427,6 +440,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateTable(System.ComponentModel.ICustomTypeDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTable (typeDescriptor As ICustomTypeDescriptor) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::DynamicData::MetaTable ^ CreateTable(System::ComponentModel::ICustomTypeDescriptor ^ typeDescriptor);" />
+      <MemberSignature Language="F#" Value="static member CreateTable : System.ComponentModel.ICustomTypeDescriptor -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.MetaTable.CreateTable typeDescriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -451,6 +465,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.CreateTable(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTable (entityType As Type) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::DynamicData::MetaTable ^ CreateTable(Type ^ entityType);" />
+      <MemberSignature Language="F#" Value="static member CreateTable : Type -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.MetaTable.CreateTable entityType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -475,6 +490,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.DataContextPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataContextPropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataContextPropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataContextPropertyName : string" Usage="System.Web.DynamicData.MetaTable.DataContextPropertyName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.DataContextPropertyName</InterfaceMember>
@@ -505,6 +521,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.DataContextType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataContextType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DataContextType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataContextType : Type" Usage="System.Web.DynamicData.MetaTable.DataContextType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.DataContextType</InterfaceMember>
@@ -535,6 +552,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.DisplayColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayColumn As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::DynamicData::MetaColumn ^ DisplayColumn { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayColumn : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.MetaTable.DisplayColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -572,6 +590,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Web.DynamicData.MetaTable.DisplayName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.DisplayName</InterfaceMember>
@@ -602,6 +621,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.EntityType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ EntityType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityType : Type" Usage="System.Web.DynamicData.MetaTable.EntityType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.EntityType</InterfaceMember>
@@ -625,6 +645,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.ForeignKeyColumnsNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeignKeyColumnsNames As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ForeignKeyColumnsNames { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForeignKeyColumnsNames : string" Usage="System.Web.DynamicData.MetaTable.ForeignKeyColumnsNames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.ForeignKeyColumnsNames</InterfaceMember>
@@ -665,6 +686,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string -&gt; string&#xA;override this.GetActionPath : string -&gt; string" Usage="metaTable.GetActionPath action" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String)</InterfaceMember>
@@ -699,6 +721,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String,System.Collections.Generic.IList{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String, primaryKeyValues As IList(Of Object)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action, System::Collections::Generic::IList&lt;System::Object ^&gt; ^ primaryKeyValues);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string * System.Collections.Generic.IList&lt;obj&gt; -&gt; string&#xA;override this.GetActionPath : string * System.Collections.Generic.IList&lt;obj&gt; -&gt; string" Usage="metaTable.GetActionPath (action, primaryKeyValues)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String,System.Collections.Generic.IList{System.Object})</InterfaceMember>
@@ -735,6 +758,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String, row As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action, System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string * obj -&gt; string&#xA;override this.GetActionPath : string * obj -&gt; string" Usage="metaTable.GetActionPath (action, row)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String,System.Object)</InterfaceMember>
@@ -773,6 +797,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String, routeValues As RouteValueDictionary) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action, System::Web::Routing::RouteValueDictionary ^ routeValues);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string * System.Web.Routing.RouteValueDictionary -&gt; string&#xA;override this.GetActionPath : string * System.Web.Routing.RouteValueDictionary -&gt; string" Usage="metaTable.GetActionPath (action, routeValues)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String,System.Web.Routing.RouteValueDictionary)</InterfaceMember>
@@ -809,6 +834,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String,System.Collections.Generic.IList{System.Object},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String, primaryKeyValues As IList(Of Object), path As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action, System::Collections::Generic::IList&lt;System::Object ^&gt; ^ primaryKeyValues, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string * System.Collections.Generic.IList&lt;obj&gt; * string -&gt; string&#xA;override this.GetActionPath : string * System.Collections.Generic.IList&lt;obj&gt; * string -&gt; string" Usage="metaTable.GetActionPath (action, primaryKeyValues, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String,System.Collections.Generic.IList{System.Object},System.String)</InterfaceMember>
@@ -847,6 +873,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetActionPath(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActionPath (action As String, row As Object, path As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetActionPath(System::String ^ action, System::Object ^ row, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member GetActionPath : string * obj * string -&gt; string&#xA;override this.GetActionPath : string * obj * string -&gt; string" Usage="metaTable.GetActionPath (action, row, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetActionPath(System.String,System.Object,System.String)</InterfaceMember>
@@ -885,6 +912,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetColumn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumn (columnName As String) As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::DynamicData::MetaColumn ^ GetColumn(System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="member this.GetColumn : string -&gt; System.Web.DynamicData.MetaColumn" Usage="metaTable.GetColumn columnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -909,6 +937,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetColumnValuesFromRoute(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnValuesFromRoute (context As HttpContext) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GetColumnValuesFromRoute(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.GetColumnValuesFromRoute : System.Web.HttpContext -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="metaTable.GetColumnValuesFromRoute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -933,6 +962,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetDataKeyFromRoute" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataKeyFromRoute () As DataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::DataKey ^ GetDataKeyFromRoute();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataKeyFromRoute : unit -&gt; System.Web.UI.WebControls.DataKey&#xA;override this.GetDataKeyFromRoute : unit -&gt; System.Web.UI.WebControls.DataKey" Usage="metaTable.GetDataKeyFromRoute " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetDataKeyFromRoute</InterfaceMember>
@@ -964,6 +994,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetDisplayString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisplayString (row As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetDisplayString(System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetDisplayString : obj -&gt; string&#xA;override this.GetDisplayString : obj -&gt; string" Usage="metaTable.GetDisplayString row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetDisplayString(System.Object)</InterfaceMember>
@@ -998,6 +1029,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetFilteredColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilteredColumns () As IEnumerable(Of MetaColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ GetFilteredColumns();" />
+      <MemberSignature Language="F#" Value="abstract member GetFilteredColumns : unit -&gt; seq&lt;System.Web.DynamicData.MetaColumn&gt;&#xA;override this.GetFilteredColumns : unit -&gt; seq&lt;System.Web.DynamicData.MetaColumn&gt;" Usage="metaTable.GetFilteredColumns " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1026,6 +1058,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetPrimaryKeyDictionary(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryKeyDictionary (row As Object) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GetPrimaryKeyDictionary(System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimaryKeyDictionary : obj -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;&#xA;override this.GetPrimaryKeyDictionary : obj -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="metaTable.GetPrimaryKeyDictionary row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetPrimaryKeyDictionary(System.Object)</InterfaceMember>
@@ -1090,6 +1123,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetPrimaryKeyString(System.Collections.Generic.IList{System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryKeyString (primaryKeyValues As IList(Of Object)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPrimaryKeyString(System::Collections::Generic::IList&lt;System::Object ^&gt; ^ primaryKeyValues);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimaryKeyString : System.Collections.Generic.IList&lt;obj&gt; -&gt; string&#xA;override this.GetPrimaryKeyString : System.Collections.Generic.IList&lt;obj&gt; -&gt; string" Usage="metaTable.GetPrimaryKeyString primaryKeyValues" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetPrimaryKeyString(System.Collections.Generic.IList{System.Object})</InterfaceMember>
@@ -1117,6 +1151,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetPrimaryKeyString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryKeyString (row As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPrimaryKeyString(System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimaryKeyString : obj -&gt; string&#xA;override this.GetPrimaryKeyString : obj -&gt; string" Usage="metaTable.GetPrimaryKeyString row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetPrimaryKeyString(System.Object)</InterfaceMember>
@@ -1144,6 +1179,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetPrimaryKeyValues(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryKeyValues (row As Object) As IList(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Object ^&gt; ^ GetPrimaryKeyValues(System::Object ^ row);" />
+      <MemberSignature Language="F#" Value="abstract member GetPrimaryKeyValues : obj -&gt; System.Collections.Generic.IList&lt;obj&gt;&#xA;override this.GetPrimaryKeyValues : obj -&gt; System.Collections.Generic.IList&lt;obj&gt;" Usage="metaTable.GetPrimaryKeyValues row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetPrimaryKeyValues(System.Object)</InterfaceMember>
@@ -1180,6 +1216,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetQuery" />
       <MemberSignature Language="VB.NET" Value="Public Function GetQuery () As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Linq::IQueryable ^ GetQuery();" />
+      <MemberSignature Language="F#" Value="abstract member GetQuery : unit -&gt; System.Linq.IQueryable&#xA;override this.GetQuery : unit -&gt; System.Linq.IQueryable" Usage="metaTable.GetQuery " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetQuery</InterfaceMember>
@@ -1204,6 +1241,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetQuery(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetQuery (context As Object) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Linq::IQueryable ^ GetQuery(System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetQuery : obj -&gt; System.Linq.IQueryable&#xA;override this.GetQuery : obj -&gt; System.Linq.IQueryable" Usage="metaTable.GetQuery context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IMetaTable.GetQuery(System.Object)</InterfaceMember>
@@ -1237,6 +1275,7 @@ End Function
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.DynamicData.MetaColumn&gt; GetScaffoldColumns(valuetype System.Web.UI.WebControls.DataBoundControlMode mode, valuetype System.Web.DynamicData.ContainerType containerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetScaffoldColumns(System.Web.UI.WebControls.DataBoundControlMode,System.Web.DynamicData.ContainerType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ GetScaffoldColumns(System::Web::UI::WebControls::DataBoundControlMode mode, System::Web::DynamicData::ContainerType containerType);" />
+      <MemberSignature Language="F#" Value="abstract member GetScaffoldColumns : System.Web.UI.WebControls.DataBoundControlMode * System.Web.DynamicData.ContainerType -&gt; seq&lt;System.Web.DynamicData.MetaColumn&gt;&#xA;override this.GetScaffoldColumns : System.Web.UI.WebControls.DataBoundControlMode * System.Web.DynamicData.ContainerType -&gt; seq&lt;System.Web.DynamicData.MetaColumn&gt;" Usage="metaTable.GetScaffoldColumns (mode, containerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1274,6 +1313,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.GetTable(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTable (entityType As Type) As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::DynamicData::MetaTable ^ GetTable(Type ^ entityType);" />
+      <MemberSignature Language="F#" Value="static member GetTable : Type -&gt; System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.MetaTable.GetTable entityType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1306,6 +1346,7 @@ End Function
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.HasPrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasPrimaryKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPrimaryKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPrimaryKey : bool" Usage="System.Web.DynamicData.MetaTable.HasPrimaryKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.HasPrimaryKey</InterfaceMember>
@@ -1330,6 +1371,7 @@ End Function
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="metaTable.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1376,6 +1418,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.DynamicData.MetaTable.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.IsReadOnly</InterfaceMember>
@@ -1400,6 +1443,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.ListActionPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListActionPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ListActionPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListActionPath : string" Usage="System.Web.DynamicData.MetaTable.ListActionPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1427,6 +1471,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Model" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Model As MetaModel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaModel ^ Model { System::Web::DynamicData::MetaModel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Model : System.Web.DynamicData.MetaModel" Usage="System.Web.DynamicData.MetaTable.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1454,6 +1499,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.DynamicData.MetaTable.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1474,6 +1520,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.PrimaryKeyColumns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKeyColumns As ReadOnlyCollection(Of MetaColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ PrimaryKeyColumns { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::DynamicData::MetaColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryKeyColumns : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.MetaColumn&gt;" Usage="System.Web.DynamicData.MetaTable.PrimaryKeyColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1494,6 +1541,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As TableProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::ModelProviders::TableProvider ^ Provider { System::Web::DynamicData::ModelProviders::TableProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.DynamicData.ModelProviders.TableProvider" Usage="System.Web.DynamicData.MetaTable.Provider" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.Provider</InterfaceMember>
@@ -1517,6 +1565,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.ResetMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetMetadata ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetMetadata();" />
+      <MemberSignature Language="F#" Value="member this.ResetMetadata : unit -&gt; unit" Usage="metaTable.ResetMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1544,6 +1593,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.RootEntityType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootEntityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ RootEntityType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootEntityType : Type" Usage="System.Web.DynamicData.MetaTable.RootEntityType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.RootEntityType</InterfaceMember>
@@ -1574,6 +1624,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.Scaffold" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Scaffold As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Scaffold { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scaffold : bool" Usage="System.Web.DynamicData.MetaTable.Scaffold" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.Scaffold</InterfaceMember>
@@ -1598,6 +1649,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.SortColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortColumn As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::DynamicData::MetaColumn ^ SortColumn { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortColumn : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.MetaTable.SortColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1618,6 +1670,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaTable.SortDescending" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortDescending As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SortDescending { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortDescending : bool" Usage="System.Web.DynamicData.MetaTable.SortDescending" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IMetaTable.SortDescending</InterfaceMember>
@@ -1649,6 +1702,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="metaTable.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1670,6 +1724,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetColumn(System.String,System.Web.DynamicData.MetaColumn@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetColumn (columnName As String, ByRef column As MetaColumn) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetColumn(System::String ^ columnName, [Runtime::InteropServices::Out] System::Web::DynamicData::MetaColumn ^ % column);" />
+      <MemberSignature Language="F#" Value="member this.TryGetColumn : string *  -&gt; bool" Usage="metaTable.TryGetColumn (columnName, column)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -1704,6 +1759,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetTable (entityType As Type, ByRef table As MetaTable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetTable(Type ^ entityType, [Runtime::InteropServices::Out] System::Web::DynamicData::MetaTable ^ % table);" />
+      <MemberSignature Language="F#" Value="static member TryGetTable : Type *  -&gt; bool" Usage="System.Web.DynamicData.MetaTable.TryGetTable (entityType, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

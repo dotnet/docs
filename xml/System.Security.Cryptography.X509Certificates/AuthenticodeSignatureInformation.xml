@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticodeSignatureInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticodeSignatureInformation sealed" />
+  <TypeSignature Language="F#" Value="type AuthenticodeSignatureInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.DescriptionUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DescriptionUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ DescriptionUrl { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DescriptionUrl : Uri" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.DescriptionUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : string" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HResult As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HResult { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HResult : int" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SignatureChain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureChain As X509Chain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Chain ^ SignatureChain { System::Security::Cryptography::X509Certificates::X509Chain ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureChain : System.Security.Cryptography.X509Certificates.X509Chain" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SignatureChain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SigningCertificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SigningCertificate As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ SigningCertificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SigningCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SigningCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As TimestampInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::TimestampInformation ^ Timestamp { System::Security::Cryptography::X509Certificates::TimestampInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : System.Security.Cryptography.X509Certificates.TimestampInformation" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.TrustStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrustStatus As TrustStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::TrustStatus TrustStatus { System::Security::Cryptography::X509Certificates::TrustStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrustStatus : System.Security.Cryptography.X509Certificates.TrustStatus" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.TrustStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.VerificationResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerificationResult As SignatureVerificationResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::SignatureVerificationResult VerificationResult { System::Security::Cryptography::SignatureVerificationResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerificationResult : System.Security.Cryptography.SignatureVerificationResult" Usage="System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.VerificationResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

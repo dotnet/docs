@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.MessageSurrogateFilter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function MessageSurrogateFilter(key As String, value As Object) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool MessageSurrogateFilter(System::String ^ key, System::Object ^ value);" />
+  <TypeSignature Language="F#" Value="type MessageSurrogateFilter = delegate of string * obj -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Application" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Application" />
   <TypeSignature Language="C++ CLI" Value="public ref class Application sealed" />
+  <TypeSignature Language="F#" Value="type Application = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMessageFilter (value As IMessageFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMessageFilter(System::Windows::Forms::IMessageFilter ^ value);" />
+      <MemberSignature Language="F#" Value="static member AddMessageFilter : System.Windows.Forms.IMessageFilter -&gt; unit" Usage="System.Windows.Forms.Application.AddMessageFilter value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.AllowQuit" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllowQuit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AllowQuit { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowQuit : bool" Usage="System.Windows.Forms.Application.AllowQuit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.ApplicationExit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ApplicationExit As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ ApplicationExit;" />
+      <MemberSignature Language="F#" Value="member this.ApplicationExit : EventHandler " Usage="member this.ApplicationExit : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.CommonAppDataPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommonAppDataPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CommonAppDataPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommonAppDataPath : string" Usage="System.Windows.Forms.Application.CommonAppDataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.CommonAppDataRegistry" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommonAppDataRegistry As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Win32::RegistryKey ^ CommonAppDataRegistry { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommonAppDataRegistry : Microsoft.Win32.RegistryKey" Usage="System.Windows.Forms.Application.CommonAppDataRegistry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.CompanyName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CompanyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CompanyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompanyName : string" Usage="System.Windows.Forms.Application.CompanyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.CurrentCulture" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentCulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ CurrentCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCulture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Forms.Application.CurrentCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.CurrentInputLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentInputLanguage As InputLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::InputLanguage ^ CurrentInputLanguage { System::Windows::Forms::InputLanguage ^ get(); void set(System::Windows::Forms::InputLanguage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentInputLanguage : System.Windows.Forms.InputLanguage with get, set" Usage="System.Windows.Forms.Application.CurrentInputLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.DoEvents" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DoEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DoEvents();" />
+      <MemberSignature Language="F#" Value="static member DoEvents : unit -&gt; unit" Usage="System.Windows.Forms.Application.DoEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -390,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.EnableVisualStyles" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableVisualStyles ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableVisualStyles();" />
+      <MemberSignature Language="F#" Value="static member EnableVisualStyles : unit -&gt; unit" Usage="System.Windows.Forms.Application.EnableVisualStyles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,6 +446,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.EnterThreadModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event EnterThreadModal As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ EnterThreadModal;" />
+      <MemberSignature Language="F#" Value="member this.EnterThreadModal : EventHandler " Usage="member this.EnterThreadModal : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.ExecutablePath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ExecutablePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ExecutablePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutablePath : string" Usage="System.Windows.Forms.Application.ExecutablePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -511,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Exit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Exit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Exit();" />
+      <MemberSignature Language="F#" Value="static member Exit : unit -&gt; unit" Usage="System.Windows.Forms.Application.Exit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -566,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Exit(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Exit (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Exit(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member Exit : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="System.Windows.Forms.Application.Exit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.ExitThread" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExitThread ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExitThread();" />
+      <MemberSignature Language="F#" Value="static member ExitThread : unit -&gt; unit" Usage="System.Windows.Forms.Application.ExitThread " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -625,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FilterMessage (ByRef message As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FilterMessage(System::Windows::Forms::Message % message);" />
+      <MemberSignature Language="F#" Value="static member FilterMessage :  -&gt; bool" Usage="System.Windows.Forms.Application.FilterMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -655,6 +672,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.Idle" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event Idle As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ Idle;" />
+      <MemberSignature Language="F#" Value="member this.Idle : EventHandler " Usage="member this.Idle : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -694,6 +712,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.LeaveThreadModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event LeaveThreadModal As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ LeaveThreadModal;" />
+      <MemberSignature Language="F#" Value="member this.LeaveThreadModal : EventHandler " Usage="member this.LeaveThreadModal : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -737,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.LocalUserAppDataPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LocalUserAppDataPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ LocalUserAppDataPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalUserAppDataPath : string" Usage="System.Windows.Forms.Application.LocalUserAppDataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -781,6 +801,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.MessageLoop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageLoop As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool MessageLoop { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageLoop : bool" Usage="System.Windows.Forms.Application.MessageLoop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -809,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.OleRequired" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OleRequired () As ApartmentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ApartmentState OleRequired();" />
+      <MemberSignature Language="F#" Value="static member OleRequired : unit -&gt; System.Threading.ApartmentState" Usage="System.Windows.Forms.Application.OleRequired " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -840,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.OnThreadException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub OnThreadException (t As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void OnThreadException(Exception ^ t);" />
+      <MemberSignature Language="F#" Value="static member OnThreadException : Exception -&gt; unit" Usage="System.Windows.Forms.Application.OnThreadException t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -874,6 +897,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.OpenForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OpenForms As FormCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::FormCollection ^ OpenForms { System::Windows::Forms::FormCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpenForms : System.Windows.Forms.FormCollection" Usage="System.Windows.Forms.Application.OpenForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -904,6 +928,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.ProductName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProductName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ProductName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="System.Windows.Forms.Application.ProductName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -943,6 +968,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.ProductVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProductVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ProductVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductVersion : string" Usage="System.Windows.Forms.Application.ProductVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -984,6 +1010,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.RaiseIdle(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RaiseIdle (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseIdle(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="static member RaiseIdle : EventArgs -&gt; unit" Usage="System.Windows.Forms.Application.RaiseIdle e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1020,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.RegisterMessageLoop(System.Windows.Forms.Application.MessageLoopCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterMessageLoop (callback As Application.MessageLoopCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterMessageLoop(System::Windows::Forms::Application::MessageLoopCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="static member RegisterMessageLoop : System.Windows.Forms.Application.MessageLoopCallback -&gt; unit" Usage="System.Windows.Forms.Application.RegisterMessageLoop callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1056,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.RemoveMessageFilter(System.Windows.Forms.IMessageFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMessageFilter (value As IMessageFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMessageFilter(System::Windows::Forms::IMessageFilter ^ value);" />
+      <MemberSignature Language="F#" Value="static member RemoveMessageFilter : System.Windows.Forms.IMessageFilter -&gt; unit" Usage="System.Windows.Forms.Application.RemoveMessageFilter value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1096,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RenderWithVisualStyles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool RenderWithVisualStyles { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RenderWithVisualStyles : bool" Usage="System.Windows.Forms.Application.RenderWithVisualStyles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Restart" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Restart ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Restart();" />
+      <MemberSignature Language="F#" Value="static member Restart : unit -&gt; unit" Usage="System.Windows.Forms.Application.Restart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1175,6 +1206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Run" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Run ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run();" />
+      <MemberSignature Language="F#" Value="static member Run : unit -&gt; unit" Usage="System.Windows.Forms.Application.Run " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1208,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Run(System.Windows.Forms.ApplicationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Run (context As ApplicationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run(System::Windows::Forms::ApplicationContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member Run : System.Windows.Forms.ApplicationContext -&gt; unit" Usage="System.Windows.Forms.Application.Run context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1255,6 +1288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.Run(System.Windows.Forms.Form)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Run (mainForm As Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run(System::Windows::Forms::Form ^ mainForm);" />
+      <MemberSignature Language="F#" Value="static member Run : System.Windows.Forms.Form -&gt; unit" Usage="System.Windows.Forms.Application.Run mainForm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1307,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.SafeTopLevelCaptionFormat" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property SafeTopLevelCaptionFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SafeTopLevelCaptionFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SafeTopLevelCaptionFormat : string with get, set" Usage="System.Windows.Forms.Application.SafeTopLevelCaptionFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1328,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCompatibleTextRenderingDefault (defaultValue As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCompatibleTextRenderingDefault(bool defaultValue);" />
+      <MemberSignature Language="F#" Value="static member SetCompatibleTextRenderingDefault : bool -&gt; unit" Usage="System.Windows.Forms.Application.SetCompatibleTextRenderingDefault defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1398,6 +1434,7 @@ static class Program
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.SetSuspendState(System.Windows.Forms.PowerState,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetSuspendState (state As PowerState, force As Boolean, disableWakeEvent As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetSuspendState(System::Windows::Forms::PowerState state, bool force, bool disableWakeEvent);" />
+      <MemberSignature Language="F#" Value="static member SetSuspendState : System.Windows.Forms.PowerState * bool * bool -&gt; bool" Usage="System.Windows.Forms.Application.SetSuspendState (state, force, disableWakeEvent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1460,6 +1497,7 @@ static class Program
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.SetUnhandledExceptionMode(System.Windows.Forms.UnhandledExceptionMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetUnhandledExceptionMode (mode As UnhandledExceptionMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetUnhandledExceptionMode(System::Windows::Forms::UnhandledExceptionMode mode);" />
+      <MemberSignature Language="F#" Value="static member SetUnhandledExceptionMode : System.Windows.Forms.UnhandledExceptionMode -&gt; unit" Usage="System.Windows.Forms.Application.SetUnhandledExceptionMode mode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1507,6 +1545,7 @@ static class Program
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.SetUnhandledExceptionMode(System.Windows.Forms.UnhandledExceptionMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetUnhandledExceptionMode (mode As UnhandledExceptionMode, threadScope As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetUnhandledExceptionMode(System::Windows::Forms::UnhandledExceptionMode mode, bool threadScope);" />
+      <MemberSignature Language="F#" Value="static member SetUnhandledExceptionMode : System.Windows.Forms.UnhandledExceptionMode * bool -&gt; unit" Usage="System.Windows.Forms.Application.SetUnhandledExceptionMode (mode, threadScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1560,6 +1599,7 @@ static class Program
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.StartupPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StartupPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StartupPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartupPath : string" Usage="System.Windows.Forms.Application.StartupPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1594,6 +1634,7 @@ static class Program
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.ThreadException" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThreadException As ThreadExceptionEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Threading::ThreadExceptionEventHandler ^ ThreadException;" />
+      <MemberSignature Language="F#" Value="member this.ThreadException : System.Threading.ThreadExceptionEventHandler " Usage="member this.ThreadException : System.Threading.ThreadExceptionEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1640,6 +1681,7 @@ static class Program
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Application.ThreadExit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThreadExit As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ ThreadExit;" />
+      <MemberSignature Language="F#" Value="member this.ThreadExit : EventHandler " Usage="member this.ThreadExit : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1680,6 +1722,7 @@ static class Program
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.UnregisterMessageLoop" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterMessageLoop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterMessageLoop();" />
+      <MemberSignature Language="F#" Value="static member UnregisterMessageLoop : unit -&gt; unit" Usage="System.Windows.Forms.Application.UnregisterMessageLoop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1705,6 +1748,7 @@ static class Program
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.UserAppDataPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserAppDataPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserAppDataPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserAppDataPath : string" Usage="System.Windows.Forms.Application.UserAppDataPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1752,6 +1796,7 @@ static class Program
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.UserAppDataRegistry" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserAppDataRegistry As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Win32::RegistryKey ^ UserAppDataRegistry { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserAppDataRegistry : Microsoft.Win32.RegistryKey" Usage="System.Windows.Forms.Application.UserAppDataRegistry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1784,6 +1829,7 @@ static class Program
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.UseWaitCursor" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property UseWaitCursor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseWaitCursor { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseWaitCursor : bool with get, set" Usage="System.Windows.Forms.Application.UseWaitCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1812,6 +1858,7 @@ static class Program
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.VisualStyleState" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property VisualStyleState As VisualStyleState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleState VisualStyleState { System::Windows::Forms::VisualStyles::VisualStyleState get(); void set(System::Windows::Forms::VisualStyles::VisualStyleState value); };" />
+      <MemberSignature Language="F#" Value="member this.VisualStyleState : System.Windows.Forms.VisualStyles.VisualStyleState with get, set" Usage="System.Windows.Forms.Application.VisualStyleState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SynchronizationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum SynchronizationOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class SynchronizationOption" />
+  <TypeSignature Language="F#" Value="type SynchronizationOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SynchronizationOption.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 0" Usage="System.EnterpriseServices.SynchronizationOption.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SynchronizationOption.NotSupported" />
       <MemberSignature Language="VB.NET" Value="NotSupported" />
       <MemberSignature Language="C++ CLI" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.EnterpriseServices.SynchronizationOption.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SynchronizationOption.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 3" Usage="System.EnterpriseServices.SynchronizationOption.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SynchronizationOption.RequiresNew" />
       <MemberSignature Language="VB.NET" Value="RequiresNew" />
       <MemberSignature Language="C++ CLI" Value="RequiresNew" />
+      <MemberSignature Language="F#" Value="RequiresNew = 4" Usage="System.EnterpriseServices.SynchronizationOption.RequiresNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SynchronizationOption.Supported" />
       <MemberSignature Language="VB.NET" Value="Supported" />
       <MemberSignature Language="C++ CLI" Value="Supported" />
+      <MemberSignature Language="F#" Value="Supported = 2" Usage="System.EnterpriseServices.SynchronizationOption.Supported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearThicknessKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class LinearThicknessKeyFrame&#xA;Inherits ThicknessKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinearThicknessKeyFrame : System::Windows::Media::Animation::ThicknessKeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearThicknessKeyFrame = class&#xA;    inherit ThicknessKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearThicknessKeyFrame.#ctor(System.Windows.Thickness)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Thickness)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearThicknessKeyFrame(System::Windows::Thickness value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearThicknessKeyFrame : System.Windows.Thickness -&gt; System.Windows.Media.Animation.LinearThicknessKeyFrame" Usage="new System.Windows.Media.Animation.LinearThicknessKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearThicknessKeyFrame(System::Windows::Thickness value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearThicknessKeyFrame : System.Windows.Thickness * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearThicknessKeyFrame" Usage="new System.Windows.Media.Animation.LinearThicknessKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearThicknessKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearThicknessKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Thickness, keyFrameProgress As Double) As Thickness" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Thickness InterpolateValueCore(System::Windows::Thickness baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Thickness * double -&gt; System.Windows.Thickness" Usage="linearThicknessKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

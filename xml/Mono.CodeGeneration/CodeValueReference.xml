@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeValueReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeValueReference&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeValueReference abstract : Mono::CodeGeneration::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeValueReference = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeValueReference.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GenerateSet(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codeValueReference.GenerateSet (gen, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

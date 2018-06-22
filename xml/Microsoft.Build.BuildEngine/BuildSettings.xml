@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildSettings" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuildSettings" />
   <TypeSignature Language="C++ CLI" Value="public enum class BuildSettings" />
+  <TypeSignature Language="F#" Value="type BuildSettings = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.BuildSettings.DoNotResetPreviouslyBuiltTargets" />
       <MemberSignature Language="VB.NET" Value="DoNotResetPreviouslyBuiltTargets" />
       <MemberSignature Language="C++ CLI" Value="DoNotResetPreviouslyBuiltTargets" />
+      <MemberSignature Language="F#" Value="DoNotResetPreviouslyBuiltTargets = 1" Usage="Microsoft.Build.BuildEngine.BuildSettings.DoNotResetPreviouslyBuiltTargets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.BuildSettings.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Build.BuildEngine.BuildSettings.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

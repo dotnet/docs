@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.GCNotificationStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCNotificationStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class GCNotificationStatus" />
+  <TypeSignature Language="F#" Value="type GCNotificationStatus = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Canceled" />
       <MemberSignature Language="VB.NET" Value="Canceled" />
       <MemberSignature Language="C++ CLI" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 2" Usage="System.GCNotificationStatus.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Failed" />
       <MemberSignature Language="VB.NET" Value="Failed" />
       <MemberSignature Language="C++ CLI" Value="Failed" />
+      <MemberSignature Language="F#" Value="Failed = 1" Usage="System.GCNotificationStatus.Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.NotApplicable" />
       <MemberSignature Language="VB.NET" Value="NotApplicable" />
       <MemberSignature Language="C++ CLI" Value="NotApplicable" />
+      <MemberSignature Language="F#" Value="NotApplicable = 4" Usage="System.GCNotificationStatus.NotApplicable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Succeeded" />
       <MemberSignature Language="C++ CLI" Value="Succeeded" />
+      <MemberSignature Language="F#" Value="Succeeded = 0" Usage="System.GCNotificationStatus.Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Timeout" />
       <MemberSignature Language="VB.NET" Value="Timeout" />
       <MemberSignature Language="C++ CLI" Value="Timeout" />
+      <MemberSignature Language="F#" Value="Timeout = 3" Usage="System.GCNotificationStatus.Timeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AccessText" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessText&#xA;Inherits FrameworkElement&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessText : System::Windows::FrameworkElement, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type AccessText = class&#xA;    inherit FrameworkElement&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.AccessKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessKey As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char AccessKey { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessKey : char" Usage="System.Windows.Controls.AccessText.AccessKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="accessText.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.AccessText.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.BaselineOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property BaselineOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BaselineOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BaselineOffset : double with get, set" Usage="System.Windows.Controls.AccessText.BaselineOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.BaselineOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaselineOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BaselineOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BaselineOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.BaselineOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Controls.AccessText.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontFamilyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Controls.AccessText.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -389,6 +399,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontStretch" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStretch As FontStretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch FontStretch { System::Windows::FontStretch get(); void set(System::Windows::FontStretch value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Controls.AccessText.FontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -443,6 +455,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontStretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.FontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -462,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle FontStyle { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Controls.AccessText.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -505,6 +519,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -524,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.FontWeight" />
       <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight FontWeight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Controls.AccessText.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -566,6 +582,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.FontWeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontWeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -585,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Foreground" />
       <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.AccessText.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -627,6 +645,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.ForegroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -646,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="accessText.GetVisualChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -670,6 +690,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LineHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property LineHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LineHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="System.Windows.Controls.AccessText.LineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -746,6 +767,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.LineHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.LineHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -765,6 +787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LineStackingStrategy" />
       <MemberSignature Language="VB.NET" Value="Public Property LineStackingStrategy As LineStackingStrategy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LineStackingStrategy LineStackingStrategy { System::Windows::LineStackingStrategy get(); void set(System::Windows::LineStackingStrategy value); };" />
+      <MemberSignature Language="F#" Value="member this.LineStackingStrategy : System.Windows.LineStackingStrategy with get, set" Usage="System.Windows.Controls.AccessText.LineStackingStrategy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -806,6 +829,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.LineStackingStrategyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineStackingStrategyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineStackingStrategyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineStackingStrategyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.LineStackingStrategyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -825,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.AccessText.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -845,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AccessText.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="accessText.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -935,6 +961,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Controls.AccessText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1001,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlignment : System.Windows.TextAlignment with get, set" Usage="System.Windows.Controls.AccessText.TextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1036,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextAlignmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextAlignmentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextAlignmentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1055,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextDecorations" />
       <MemberSignature Language="VB.NET" Value="Public Property TextDecorations As TextDecorationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection with get, set" Usage="System.Windows.Controls.AccessText.TextDecorations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1111,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextDecorationsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextDecorationsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextDecorationsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1130,6 +1161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextEffects" />
       <MemberSignature Language="VB.NET" Value="Public Property TextEffects As TextEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextEffectCollection ^ TextEffects { System::Windows::Media::TextEffectCollection ^ get(); void set(System::Windows::Media::TextEffectCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffects : System.Windows.Media.TextEffectCollection with get, set" Usage="System.Windows.Controls.AccessText.TextEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1187,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextEffectsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextEffectsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextEffectsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextEffectsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextEffectsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1206,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1225,6 +1259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextTrimming" />
       <MemberSignature Language="VB.NET" Value="Public Property TextTrimming As TextTrimming" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextTrimming TextTrimming { System::Windows::TextTrimming get(); void set(System::Windows::TextTrimming value); };" />
+      <MemberSignature Language="F#" Value="member this.TextTrimming : System.Windows.TextTrimming with get, set" Usage="System.Windows.Controls.AccessText.TextTrimming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1261,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextTrimmingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextTrimmingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextTrimmingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextTrimmingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextTrimmingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1280,6 +1316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.TextWrapping" />
       <MemberSignature Language="VB.NET" Value="Public Property TextWrapping As TextWrapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextWrapping TextWrapping { System::Windows::TextWrapping get(); void set(System::Windows::TextWrapping value); };" />
+      <MemberSignature Language="F#" Value="member this.TextWrapping : System.Windows.TextWrapping with get, set" Usage="System.Windows.Controls.AccessText.TextWrapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1322,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.AccessText.TextWrappingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextWrappingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextWrappingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextWrappingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.AccessText.TextWrappingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1341,6 +1379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AccessText.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.AccessText.VisualChildrenCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

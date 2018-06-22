@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListsChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DesignerActionListsChangedEventHandler(sender As Object, e As DesignerActionListsChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DesignerActionListsChangedEventHandler(System::Object ^ sender, DesignerActionListsChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DesignerActionListsChangedEventHandler = delegate of obj * DesignerActionListsChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

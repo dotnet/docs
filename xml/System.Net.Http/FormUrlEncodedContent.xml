@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.FormUrlEncodedContent" />
   <TypeSignature Language="VB.NET" Value="Public Class FormUrlEncodedContent&#xA;Inherits ByteArrayContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormUrlEncodedContent : System::Net::Http::ByteArrayContent" />
+  <TypeSignature Language="F#" Value="type FormUrlEncodedContent = class&#xA;    inherit ByteArrayContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.FormUrlEncodedContent.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nameValueCollection As IEnumerable(Of KeyValuePair(Of String, String)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormUrlEncodedContent(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ nameValueCollection);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.FormUrlEncodedContent : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; -&gt; System.Net.Http.FormUrlEncodedContent" Usage="new System.Net.Http.FormUrlEncodedContent nameValueCollection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

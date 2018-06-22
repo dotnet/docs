@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridCellItemAutomationPeer&#xA;Inherits AutomationPeer&#xA;Implements IInvokeProvider, IScrollItemProvider, ISelectionItemProvider, ITableItemProvider, IValueProvider, IVirtualizedItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridCellItemAutomationPeer sealed : System::Windows::Automation::Peers::AutomationPeer, System::Windows::Automation::Provider::IInvokeProvider, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ISelectionItemProvider, System::Windows::Automation::Provider::ITableItemProvider, System::Windows::Automation::Provider::IValueProvider, System::Windows::Automation::Provider::IVirtualizedItemProvider" />
+  <TypeSignature Language="F#" Value="type DataGridCellItemAutomationPeer = class&#xA;    inherit AutomationPeer&#xA;    interface IGridItemProvider&#xA;    interface ITableItemProvider&#xA;    interface IInvokeProvider&#xA;    interface IScrollItemProvider&#xA;    interface ISelectionItemProvider&#xA;    interface IValueProvider&#xA;    interface IVirtualizedItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Controls.DataGridColumn dataGridColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.#ctor(System.Object,System.Windows.Controls.DataGridColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCellItemAutomationPeer(System::Object ^ item, System::Windows::Controls::DataGridColumn ^ dataGridColumn);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DataGridCellItemAutomationPeer : obj * System.Windows.Controls.DataGridColumn -&gt; System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" Usage="new System.Windows.Automation.Peers.DataGridCellItemAutomationPeer (item, dataGridColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetAcceleratorKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAcceleratorKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAcceleratorKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAcceleratorKeyCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetAcceleratorKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetAccessKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetAccessKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="dataGridCellItemAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetAutomationIdCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetAutomationIdCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetBoundingRectangleCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBoundingRectangleCore () As Rect" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect GetBoundingRectangleCore();" />
+      <MemberSignature Language="F#" Value="override this.GetBoundingRectangleCore : unit -&gt; System.Windows.Rect" Usage="dataGridCellItemAutomationPeer.GetBoundingRectangleCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="dataGridCellItemAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetClickablePointCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClickablePointCore () As Point" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetClickablePointCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClickablePointCore : unit -&gt; System.Windows.Point" Usage="dataGridCellItemAutomationPeer.GetClickablePointCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetItemStatusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItemStatusCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetItemStatusCore();" />
+      <MemberSignature Language="F#" Value="override this.GetItemStatusCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetItemStatusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetItemTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItemTypeCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetItemTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetItemTypeCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetItemTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetLabeledByCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLabeledByCore () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetLabeledByCore();" />
+      <MemberSignature Language="F#" Value="override this.GetLabeledByCore : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridCellItemAutomationPeer.GetLabeledByCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetLiveSettingCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLiveSettingCore () As AutomationLiveSetting" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::AutomationLiveSetting GetLiveSettingCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting&#xA;override this.GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting" Usage="dataGridCellItemAutomationPeer.GetLiveSettingCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -336,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetLocalizedControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedControlTypeCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedControlTypeCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetLocalizedControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="dataGridCellItemAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -378,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetOrientationCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetOrientationCore () As AutomationOrientation" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationOrientation GetOrientationCore();" />
+      <MemberSignature Language="F#" Value="override this.GetOrientationCore : unit -&gt; System.Windows.Automation.Peers.AutomationOrientation" Usage="dataGridCellItemAutomationPeer.GetOrientationCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -398,6 +416,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="dataGridCellItemAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -441,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.HasKeyboardFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasKeyboardFocusCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HasKeyboardFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.HasKeyboardFocusCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.HasKeyboardFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -462,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -483,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsControlElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsControlElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsEnabledCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsEnabledCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsEnabledCore();" />
+      <MemberSignature Language="F#" Value="override this.IsEnabledCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsEnabledCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -525,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsKeyboardFocusableCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsKeyboardFocusableCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsKeyboardFocusableCore();" />
+      <MemberSignature Language="F#" Value="override this.IsKeyboardFocusableCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsKeyboardFocusableCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -546,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsOffscreenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsOffscreenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -567,6 +592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsPasswordCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsPasswordCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsPasswordCore();" />
+      <MemberSignature Language="F#" Value="override this.IsPasswordCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsPasswordCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -588,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.IsRequiredForFormCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsRequiredForFormCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsRequiredForFormCore();" />
+      <MemberSignature Language="F#" Value="override this.IsRequiredForFormCore : unit -&gt; bool" Usage="dataGridCellItemAutomationPeer.IsRequiredForFormCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -609,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.SetFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="dataGridCellItemAutomationPeer.SetFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -629,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Column As Integer Implements IGridItemProvider.Column" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.Column { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IGridItemProvider.Column" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.Column</InterfaceMember>
@@ -659,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnSpan As Integer Implements IGridItemProvider.ColumnSpan" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan</InterfaceMember>
@@ -689,6 +719,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainingGrid As IRawElementProviderSimple Implements IGridItemProvider.ContainingGrid" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid</InterfaceMember>
@@ -719,6 +750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Row As Integer Implements IGridItemProvider.Row" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.Row { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IGridItemProvider.Row" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.Row</InterfaceMember>
@@ -749,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowSpan As Integer Implements IGridItemProvider.RowSpan" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.RowSpan { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.RowSpan</InterfaceMember>
@@ -869,6 +902,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
@@ -960,6 +994,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>
@@ -1052,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IValueProvider.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.IValueProvider.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IValueProvider.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.IsReadOnly</InterfaceMember>
@@ -1117,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As String Implements IValueProvider.Value" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Windows.Automation.Provider.IValueProvider.Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System.Windows.Automation.Provider.IValueProvider.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IValueProvider.Value</InterfaceMember>

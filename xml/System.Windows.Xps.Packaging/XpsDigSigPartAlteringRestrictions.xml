@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
   <TypeSignature Language="VB.NET" Value="Public Enum XpsDigSigPartAlteringRestrictions" />
   <TypeSignature Language="C++ CLI" Value="public enum class XpsDigSigPartAlteringRestrictions" />
+  <TypeSignature Language="F#" Value="type XpsDigSigPartAlteringRestrictions = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.Annotations" />
       <MemberSignature Language="VB.NET" Value="Annotations" />
       <MemberSignature Language="C++ CLI" Value="Annotations" />
+      <MemberSignature Language="F#" Value="Annotations = 2" Usage="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.Annotations" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.CoreMetadata" />
       <MemberSignature Language="VB.NET" Value="CoreMetadata" />
       <MemberSignature Language="C++ CLI" Value="CoreMetadata" />
+      <MemberSignature Language="F#" Value="CoreMetadata = 1" Usage="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.CoreMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin" />
       <MemberSignature Language="VB.NET" Value="SignatureOrigin" />
       <MemberSignature Language="C++ CLI" Value="SignatureOrigin" />
+      <MemberSignature Language="F#" Value="SignatureOrigin = 4" Usage="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

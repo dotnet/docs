@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.Symbol.DebugSymbol" />
   <TypeSignature Language="VB.NET" Value="Public Class DebugSymbol" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebugSymbol abstract sealed" />
+  <TypeSignature Language="F#" Value="type DebugSymbol = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.DebugSymbol.GetSymbol(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSymbol (instance As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSymbol(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member GetSymbol : obj -&gt; obj" Usage="System.Activities.Debugger.Symbol.DebugSymbol.GetSymbol instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.DebugSymbol.SetSymbol(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSymbol (instance As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSymbol(System::Object ^ instance, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetSymbol : obj * obj -&gt; unit" Usage="System.Activities.Debugger.Symbol.DebugSymbol.SetSymbol (instance, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.Symbol.DebugSymbol.SymbolName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SymbolName As AttachableMemberIdentifier " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ SymbolName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SymbolName : System.Xaml.AttachableMemberIdentifier" Usage="System.Activities.Debugger.Symbol.DebugSymbol.SymbolName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

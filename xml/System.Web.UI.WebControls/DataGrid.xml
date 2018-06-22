@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGrid" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGrid&#xA;Inherits BaseDataList&#xA;Implements INamingContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGrid : System::Web::UI::WebControls::BaseDataList, System::Web::UI::INamingContainer" />
+  <TypeSignature Language="F#" Value="type DataGrid = class&#xA;    inherit BaseDataList&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -373,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowCustomPaging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowCustomPaging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCustomPaging : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowPaging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowPaging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPaging : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.AllowPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -494,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowSorting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowSorting As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowSorting { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowSorting : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.AllowSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AlternatingItemStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ AlternatingItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlternatingItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.AlternatingItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -608,6 +613,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoGenerateColumns As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoGenerateColumns { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateColumns : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.AutoGenerateColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -667,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.BackImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BackImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageUrl : string with get, set" Usage="System.Web.UI.WebControls.DataGrid.BackImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,6 +727,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CancelCommand As DataGridCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridCommandEventHandler ^ CancelCommand;" />
+      <MemberSignature Language="F#" Value="member this.CancelCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " Usage="member this.CancelCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -767,6 +775,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const CancelCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ CancelCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable CancelCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.CancelCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -801,6 +810,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Columns As DataGridColumnCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataGridColumnCollection ^ Columns { System::Web::UI::WebControls::DataGridColumnCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Web.UI.WebControls.DataGridColumnCollection" Usage="System.Web.UI.WebControls.DataGrid.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -877,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateColumnSet(System.Web.UI.WebControls.PagedDataSource,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateColumnSet (dataSource As PagedDataSource, useDataSource As Boolean) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::ArrayList ^ CreateColumnSet(System::Web::UI::WebControls::PagedDataSource ^ dataSource, bool useDataSource);" />
+      <MemberSignature Language="F#" Value="abstract member CreateColumnSet : System.Web.UI.WebControls.PagedDataSource * bool -&gt; System.Collections.ArrayList&#xA;override this.CreateColumnSet : System.Web.UI.WebControls.PagedDataSource * bool -&gt; System.Collections.ArrayList" Usage="dataGrid.CreateColumnSet (dataSource, useDataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -903,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateControlHierarchy (useDataSource As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateControlHierarchy(bool useDataSource);" />
+      <MemberSignature Language="F#" Value="override this.CreateControlHierarchy : bool -&gt; unit" Usage="dataGrid.CreateControlHierarchy useDataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -939,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="dataGrid.CreateControlStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -973,6 +986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateItem(System.Int32,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItem (itemIndex As Integer, dataSourceIndex As Integer, itemType As ListItemType) As DataGridItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::DataGridItem ^ CreateItem(int itemIndex, int dataSourceIndex, System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : int * int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.DataGridItem&#xA;override this.CreateItem : int * int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.DataGridItem" Usage="dataGrid.CreateItem (itemIndex, dataSourceIndex, itemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1013,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.CurrentPageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPageIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPageIndex : int with get, set" Usage="System.Web.UI.WebControls.DataGrid.CurrentPageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1064,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DeleteCommand As DataGridCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridCommandEventHandler ^ DeleteCommand;" />
+      <MemberSignature Language="F#" Value="member this.DeleteCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " Usage="member this.DeleteCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1108,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const DeleteCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ DeleteCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable DeleteCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1142,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EditCommand As DataGridCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridCommandEventHandler ^ EditCommand;" />
+      <MemberSignature Language="F#" Value="member this.EditCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " Usage="member this.EditCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1189,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const EditCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ EditCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable EditCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.EditCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1223,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.EditItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditItemIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EditItemIndex : int with get, set" Usage="System.Web.UI.WebControls.DataGrid.EditItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1276,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.EditItemStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditItemStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ EditItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.EditItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1336,6 +1357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.FooterStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FooterStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ FooterStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FooterStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.FooterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1398,6 +1420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.HeaderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1460,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.InitializeItem(System.Web.UI.WebControls.DataGridItem,System.Web.UI.WebControls.DataGridColumn[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeItem (item As DataGridItem, columns As DataGridColumn())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeItem(System::Web::UI::WebControls::DataGridItem ^ item, cli::array &lt;System::Web::UI::WebControls::DataGridColumn ^&gt; ^ columns);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeItem : System.Web.UI.WebControls.DataGridItem * System.Web.UI.WebControls.DataGridColumn[] -&gt; unit&#xA;override this.InitializeItem : System.Web.UI.WebControls.DataGridItem * System.Web.UI.WebControls.DataGridColumn[] -&gt; unit" Usage="dataGrid.InitializeItem (item, columns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1496,6 +1520,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializePager(class System.Web.UI.WebControls.DataGridItem item, int32 columnSpan, class System.Web.UI.WebControls.PagedDataSource pagedDataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.InitializePager(System.Web.UI.WebControls.DataGridItem,System.Int32,System.Web.UI.WebControls.PagedDataSource)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializePager(System::Web::UI::WebControls::DataGridItem ^ item, int columnSpan, System::Web::UI::WebControls::PagedDataSource ^ pagedDataSource);" />
+      <MemberSignature Language="F#" Value="abstract member InitializePager : System.Web.UI.WebControls.DataGridItem * int * System.Web.UI.WebControls.PagedDataSource -&gt; unit&#xA;override this.InitializePager : System.Web.UI.WebControls.DataGridItem * int * System.Web.UI.WebControls.PagedDataSource -&gt; unit" Usage="dataGrid.InitializePager (item, columnSpan, pagedDataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1535,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As DataGridCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridCommandEventHandler ^ ItemCommand;" />
+      <MemberSignature Language="F#" Value="member this.ItemCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " Usage="member this.ItemCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1577,6 +1603,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCreated As DataGridItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridItemEventHandler ^ ItemCreated;" />
+      <MemberSignature Language="F#" Value="member this.ItemCreated : System.Web.UI.WebControls.DataGridItemEventHandler " Usage="member this.ItemCreated : System.Web.UI.WebControls.DataGridItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1624,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBound As DataGridItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridItemEventHandler ^ ItemDataBound;" />
+      <MemberSignature Language="F#" Value="member this.ItemDataBound : System.Web.UI.WebControls.DataGridItemEventHandler " Usage="member this.ItemDataBound : System.Web.UI.WebControls.DataGridItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1669,6 +1697,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As DataGridItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataGridItemCollection ^ Items { System::Web::UI::WebControls::DataGridItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Web.UI.WebControls.DataGridItemCollection" Usage="System.Web.UI.WebControls.DataGrid.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1720,6 +1749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ItemStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ ItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.ItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1786,6 +1816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="dataGrid.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1809,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const NextPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ NextPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable NextPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1843,6 +1875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataGrid.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1881,6 +1914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnCancelCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelCommand (e As DataGridCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelCommand(System::Web::UI::WebControls::DataGridCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit&#xA;override this.OnCancelCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit" Usage="dataGrid.OnCancelCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1939,6 +1973,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnDeleteCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeleteCommand (e As DataGridCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeleteCommand(System::Web::UI::WebControls::DataGridCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeleteCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit&#xA;override this.OnDeleteCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit" Usage="dataGrid.OnDeleteCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1994,6 +2029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnEditCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEditCommand (e As DataGridCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEditCommand(System::Web::UI::WebControls::DataGridCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnEditCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit&#xA;override this.OnEditCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit" Usage="dataGrid.OnEditCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2052,6 +2088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As DataGridCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::WebControls::DataGridCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit&#xA;override this.OnItemCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit" Usage="dataGrid.OnItemCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2105,6 +2142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemCreated(System.Web.UI.WebControls.DataGridItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCreated (e As DataGridItemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCreated(System::Web::UI::WebControls::DataGridItemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCreated : System.Web.UI.WebControls.DataGridItemEventArgs -&gt; unit&#xA;override this.OnItemCreated : System.Web.UI.WebControls.DataGridItemEventArgs -&gt; unit" Usage="dataGrid.OnItemCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2163,6 +2201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemDataBound(System.Web.UI.WebControls.DataGridItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBound (e As DataGridItemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBound(System::Web::UI::WebControls::DataGridItemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDataBound : System.Web.UI.WebControls.DataGridItemEventArgs -&gt; unit&#xA;override this.OnItemDataBound : System.Web.UI.WebControls.DataGridItemEventArgs -&gt; unit" Usage="dataGrid.OnItemDataBound e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2219,6 +2258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageIndexChanged (e As DataGridPageChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageIndexChanged(System::Web::UI::WebControls::DataGridPageChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPageIndexChanged : System.Web.UI.WebControls.DataGridPageChangedEventArgs -&gt; unit&#xA;override this.OnPageIndexChanged : System.Web.UI.WebControls.DataGridPageChangedEventArgs -&gt; unit" Usage="dataGrid.OnPageIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2277,6 +2317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSortCommand (e As DataGridSortCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSortCommand(System::Web::UI::WebControls::DataGridSortCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSortCommand : System.Web.UI.WebControls.DataGridSortCommandEventArgs -&gt; unit&#xA;override this.OnSortCommand : System.Web.UI.WebControls.DataGridSortCommandEventArgs -&gt; unit" Usage="dataGrid.OnSortCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2332,6 +2373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnUpdateCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUpdateCommand (e As DataGridCommandEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUpdateCommand(System::Web::UI::WebControls::DataGridCommandEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUpdateCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit&#xA;override this.OnUpdateCommand : System.Web.UI.WebControls.DataGridCommandEventArgs -&gt; unit" Usage="dataGrid.OnUpdateCommand e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2390,6 +2432,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const PageCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ PageCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable PageCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.PageCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2424,6 +2467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PageCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageCount : int" Usage="System.Web.UI.WebControls.DataGrid.PageCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2468,6 +2512,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PageIndexChanged As DataGridPageChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridPageChangedEventHandler ^ PageIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.PageIndexChanged : System.Web.UI.WebControls.DataGridPageChangedEventHandler " Usage="member this.PageIndexChanged : System.Web.UI.WebControls.DataGridPageChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2512,6 +2557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PagerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PagerStyle As DataGridPagerStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataGridPagerStyle ^ PagerStyle { System::Web::UI::WebControls::DataGridPagerStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PagerStyle : System.Web.UI.WebControls.DataGridPagerStyle" Usage="System.Web.UI.WebControls.DataGrid.PagerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2564,6 +2610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PageSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PageSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageSize : int with get, set" Usage="System.Web.UI.WebControls.DataGrid.PageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2611,6 +2658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.PrepareControlHierarchy" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PrepareControlHierarchy ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PrepareControlHierarchy();" />
+      <MemberSignature Language="F#" Value="override this.PrepareControlHierarchy : unit -&gt; unit" Usage="dataGrid.PrepareControlHierarchy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2638,6 +2686,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       <MemberSignature Language="VB.NET" Value="Public Const PrevPageCommandArgument As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ PrevPageCommandArgument;" />
+      <MemberSignature Language="F#" Value="val mutable PrevPageCommandArgument : string" Usage="System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2672,6 +2721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="dataGrid.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2693,6 +2743,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const SelectCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SelectCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable SelectCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.SelectCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2727,6 +2778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.DataGrid.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2773,6 +2825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedItem As DataGridItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataGridItem ^ SelectedItem { System::Web::UI::WebControls::DataGridItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : System.Web.UI.WebControls.DataGridItem" Usage="System.Web.UI.WebControls.DataGrid.SelectedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2820,6 +2873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedItemStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedItemStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ SelectedItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGrid.SelectedItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2883,6 +2937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ShowFooter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowFooter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowFooter { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFooter : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.ShowFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2928,6 +2983,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ShowHeader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHeader : bool with get, set" Usage="System.Web.UI.WebControls.DataGrid.ShowHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2973,6 +3029,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.SortCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SortCommand As DataGridSortCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridSortCommandEventHandler ^ SortCommand;" />
+      <MemberSignature Language="F#" Value="member this.SortCommand : System.Web.UI.WebControls.DataGridSortCommandEventHandler " Usage="member this.SortCommand : System.Web.UI.WebControls.DataGridSortCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3017,6 +3074,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const SortCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ SortCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable SortCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.SortCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3051,6 +3109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.DataGrid.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3080,6 +3139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="dataGrid.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3100,6 +3160,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateCommand As DataGridCommandEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataGridCommandEventHandler ^ UpdateCommand;" />
+      <MemberSignature Language="F#" Value="member this.UpdateCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " Usage="member this.UpdateCommand : System.Web.UI.WebControls.DataGridCommandEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3147,6 +3208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Const UpdateCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ UpdateCommandName;" />
+      <MemberSignature Language="F#" Value="val mutable UpdateCommandName : string" Usage="System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3181,6 +3243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property VirtualItemCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VirtualItemCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualItemCount : int with get, set" Usage="System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

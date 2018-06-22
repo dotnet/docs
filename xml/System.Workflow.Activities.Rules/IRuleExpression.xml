@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.IRuleExpression" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRuleExpression" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRuleExpression" />
+  <TypeSignature Language="F#" Value="type IRuleExpression = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -165,6 +166,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.AnalyzeUsage(System.Workflow.Activities.Rules.RuleAnalysis,System.Boolean,System.Boolean,System.Workflow.Activities.Rules.RulePathQualifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AnalyzeUsage (analysis As RuleAnalysis, isRead As Boolean, isWritten As Boolean, qualifier As RulePathQualifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnalyzeUsage(System::Workflow::Activities::Rules::RuleAnalysis ^ analysis, bool isRead, bool isWritten, System::Workflow::Activities::Rules::RulePathQualifier ^ qualifier);" />
+      <MemberSignature Language="F#" Value="abstract member AnalyzeUsage : System.Workflow.Activities.Rules.RuleAnalysis * bool * bool * System.Workflow.Activities.Rules.RulePathQualifier -&gt; unit" Usage="iRuleExpression.AnalyzeUsage (analysis, isRead, isWritten, qualifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -196,6 +198,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeExpression ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.CodeDom.CodeExpression" Usage="iRuleExpression.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -216,6 +219,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Decompile(class System.Text.StringBuilder stringBuilder, class System.CodeDom.CodeExpression parentExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.Decompile(System.Text.StringBuilder,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decompile(System::Text::StringBuilder ^ stringBuilder, System::CodeDom::CodeExpression ^ parentExpression);" />
+      <MemberSignature Language="F#" Value="abstract member Decompile : System.Text.StringBuilder * System.CodeDom.CodeExpression -&gt; unit" Usage="iRuleExpression.Decompile (stringBuilder, parentExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -246,6 +250,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.Evaluate(System.Workflow.Activities.Rules.RuleExecution)" />
       <MemberSignature Language="VB.NET" Value="Public Function Evaluate (execution As RuleExecution) As RuleExpressionResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::Rules::RuleExpressionResult ^ Evaluate(System::Workflow::Activities::Rules::RuleExecution ^ execution);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.Workflow.Activities.Rules.RuleExecution -&gt; System.Workflow.Activities.Rules.RuleExpressionResult" Usage="iRuleExpression.Evaluate execution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -270,6 +275,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.Match(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (expression As CodeExpression) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::CodeDom::CodeExpression ^ expression);" />
+      <MemberSignature Language="F#" Value="abstract member Match : System.CodeDom.CodeExpression -&gt; bool" Usage="iRuleExpression.Match expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -295,6 +301,7 @@ namespace TwoOfThreeRuleExpression
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.IRuleExpression.Validate(System.Workflow.Activities.Rules.RuleValidation,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate (validation As RuleValidation, isWritten As Boolean) As RuleExpressionInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::Rules::RuleExpressionInfo ^ Validate(System::Workflow::Activities::Rules::RuleValidation ^ validation, bool isWritten);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : System.Workflow.Activities.Rules.RuleValidation * bool -&gt; System.Workflow.Activities.Rules.RuleExpressionInfo" Usage="iRuleExpression.Validate (validation, isWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

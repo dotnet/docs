@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EmfType" />
   <TypeSignature Language="VB.NET" Value="Public Enum EmfType" />
   <TypeSignature Language="C++ CLI" Value="public enum class EmfType" />
+  <TypeSignature Language="F#" Value="type EmfType = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfOnly" />
       <MemberSignature Language="VB.NET" Value="EmfOnly" />
       <MemberSignature Language="C++ CLI" Value="EmfOnly" />
+      <MemberSignature Language="F#" Value="EmfOnly = 3" Usage="System.Drawing.Imaging.EmfType.EmfOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusDual" />
       <MemberSignature Language="VB.NET" Value="EmfPlusDual" />
       <MemberSignature Language="C++ CLI" Value="EmfPlusDual" />
+      <MemberSignature Language="F#" Value="EmfPlusDual = 5" Usage="System.Drawing.Imaging.EmfType.EmfPlusDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusOnly" />
       <MemberSignature Language="VB.NET" Value="EmfPlusOnly" />
       <MemberSignature Language="C++ CLI" Value="EmfPlusOnly" />
+      <MemberSignature Language="F#" Value="EmfPlusOnly = 4" Usage="System.Drawing.Imaging.EmfType.EmfPlusOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

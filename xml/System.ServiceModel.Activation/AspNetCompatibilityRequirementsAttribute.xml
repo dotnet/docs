@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetCompatibilityRequirementsAttribute&#xA;Inherits Attribute&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspNetCompatibilityRequirementsAttribute sealed : Attribute, System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type AspNetCompatibilityRequirementsAttribute = class&#xA;    inherit Attribute&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RequirementsMode As AspNetCompatibilityRequirementsMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode RequirementsMode { System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode get(); void set(System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RequirementsMode : System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode with get, set" Usage="System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

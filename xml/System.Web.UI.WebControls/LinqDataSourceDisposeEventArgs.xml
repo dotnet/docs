@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceDisposeEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceDisposeEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceDisposeEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceDisposeEventArgs(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs : obj -&gt; System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectInstance : obj" Usage="System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

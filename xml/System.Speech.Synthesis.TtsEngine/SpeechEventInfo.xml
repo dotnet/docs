@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure SpeechEventInfo&#xA;Implements IEquatable(Of SpeechEventInfo)" />
   <TypeSignature Language="C++ CLI" Value="public value class SpeechEventInfo : IEquatable&lt;System::Speech::Synthesis::TtsEngine::SpeechEventInfo&gt;" />
+  <TypeSignature Language="F#" Value="type SpeechEventInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.#ctor(System.Int16,System.Int16,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventId As Short, parameterType As Short, param1 As Integer, param2 As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpeechEventInfo(short eventId, short parameterType, int param1, IntPtr param2);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.TtsEngine.SpeechEventInfo : int16 * int16 * int * nativeint -&gt; System.Speech.Synthesis.TtsEngine.SpeechEventInfo" Usage="new System.Speech.Synthesis.TtsEngine.SpeechEventInfo (eventId, parameterType, param1, param2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -223,6 +225,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="speechEventInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -248,6 +251,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Equals(System.Speech.Synthesis.TtsEngine.SpeechEventInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SpeechEventInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Speech::Synthesis::TtsEngine::SpeechEventInfo other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Speech.Synthesis.TtsEngine.SpeechEventInfo -&gt; bool" Usage="speechEventInfo.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -276,6 +280,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.EventId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventId As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short EventId { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventId : int16" Usage="System.Speech.Synthesis.TtsEngine.SpeechEventInfo.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -371,6 +376,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="speechEventInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -392,6 +398,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.op_Equality(System.Speech.Synthesis.TtsEngine.SpeechEventInfo,System.Speech.Synthesis.TtsEngine.SpeechEventInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (event1 As SpeechEventInfo, event2 As SpeechEventInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Speech::Synthesis::TtsEngine::SpeechEventInfo event1, System::Speech::Synthesis::TtsEngine::SpeechEventInfo event2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Speech.Synthesis.TtsEngine.SpeechEventInfo * System.Speech.Synthesis.TtsEngine.SpeechEventInfo -&gt; bool" Usage="event1 = event2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -421,6 +428,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.op_Inequality(System.Speech.Synthesis.TtsEngine.SpeechEventInfo,System.Speech.Synthesis.TtsEngine.SpeechEventInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (event1 As SpeechEventInfo, event2 As SpeechEventInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Speech::Synthesis::TtsEngine::SpeechEventInfo event1, System::Speech::Synthesis::TtsEngine::SpeechEventInfo event2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Speech.Synthesis.TtsEngine.SpeechEventInfo * System.Speech.Synthesis.TtsEngine.SpeechEventInfo -&gt; bool" Usage="System.Speech.Synthesis.TtsEngine.SpeechEventInfo.op_Inequality (event1, event2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -450,6 +458,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Param1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Param1 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Param1 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Param1 : int" Usage="System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Param1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -552,6 +561,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Param2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Param2 As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Param2 { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Param2 : nativeint" Usage="System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Param2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -654,6 +664,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.ParameterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterType As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short ParameterType { short get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterType : int16" Usage="System.Speech.Synthesis.TtsEngine.SpeechEventInfo.ParameterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.InvalidTimeZoneException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidTimeZoneException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidTimeZoneException : Exception" />
+  <TypeSignature Language="F#" Value="type InvalidTimeZoneException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.InvalidTimeZoneException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidTimeZoneException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new InvalidTimeZoneException : string -&gt; InvalidTimeZoneException" Usage="new System.InvalidTimeZoneException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.InvalidTimeZoneException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidTimeZoneException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new InvalidTimeZoneException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; InvalidTimeZoneException" Usage="new System.InvalidTimeZoneException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.InvalidTimeZoneException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidTimeZoneException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new InvalidTimeZoneException : string * Exception -&gt; InvalidTimeZoneException" Usage="new System.InvalidTimeZoneException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

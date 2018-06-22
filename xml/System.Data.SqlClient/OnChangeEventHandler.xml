@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.OnChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OnChangeEventHandler(sender As Object, e As SqlNotificationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OnChangeEventHandler(System::Object ^ sender, SqlNotificationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OnChangeEventHandler = delegate of obj * SqlNotificationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ServiceProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceProviders&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceProviders : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ServiceProviders = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.AddService(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, service As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::Object ^ service);" />
+      <MemberSignature Language="F#" Value="member this.AddService : Type * obj -&gt; unit" Usage="serviceProviders.AddService (serviceType, service)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="serviceProviders.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.AttachedPropertyBrowsableForTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachedPropertyBrowsableForTypeAttribute&#xA;Inherits AttachedPropertyBrowsableAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertyBrowsableForTypeAttribute sealed : System::Windows::AttachedPropertyBrowsableAttribute" />
+  <TypeSignature Language="F#" Value="type AttachedPropertyBrowsableForTypeAttribute = class&#xA;    inherit AttachedPropertyBrowsableAttribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachedPropertyBrowsableForTypeAttribute(Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.AttachedPropertyBrowsableForTypeAttribute : Type -&gt; System.Windows.AttachedPropertyBrowsableForTypeAttribute" Usage="new System.Windows.AttachedPropertyBrowsableForTypeAttribute targetType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForTypeAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="attachedPropertyBrowsableForTypeAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForTypeAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="attachedPropertyBrowsableForTypeAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.AttachedPropertyBrowsableForTypeAttribute.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type" Usage="System.Windows.AttachedPropertyBrowsableForTypeAttribute.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.AttachedPropertyBrowsableForTypeAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Windows.AttachedPropertyBrowsableForTypeAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

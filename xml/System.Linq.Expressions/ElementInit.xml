@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.ElementInit" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ElementInit&#xA;Implements IArgumentProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ElementInit sealed : System::Linq::Expressions::IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type ElementInit = class&#xA;    interface IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ElementInit.AddMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddMethod As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ AddMethod { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddMethod : System.Reflection.MethodInfo" Usage="System.Linq.Expressions.ElementInit.AddMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ElementInit.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Arguments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.ElementInit.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.ElementInit.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.Expressions.ElementInit.System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ElementInit.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="elementInit.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ElementInit.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (arguments As IEnumerable(Of Expression)) As ElementInit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::ElementInit ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.ElementInit" Usage="elementInit.Update arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

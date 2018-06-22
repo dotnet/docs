@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PropertyKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyKind" />
+  <TypeSignature Language="F#" Value="type PropertyKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,6 +127,7 @@ class UsePropertyKindExample
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.Extended" />
       <MemberSignature Language="VB.NET" Value="Extended" />
       <MemberSignature Language="C++ CLI" Value="Extended" />
+      <MemberSignature Language="F#" Value="Extended = 1" Usage="System.Data.Metadata.Edm.PropertyKind.Extended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -145,6 +147,7 @@ class UsePropertyKindExample
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 0" Usage="System.Data.Metadata.Edm.PropertyKind.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

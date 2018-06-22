@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.PartConventionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class PartConventionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class PartConventionBuilder" />
+  <TypeSignature Language="F#" Value="type PartConventionBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Convention</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.AddPartMetadata(System.String,System.Func{System.Type,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPartMetadata (name As String, getValueFromPartType As Func(Of Type, Object)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ AddPartMetadata(System::String ^ name, Func&lt;Type ^, System::Object ^&gt; ^ getValueFromPartType);" />
+      <MemberSignature Language="F#" Value="member this.AddPartMetadata : string * Func&lt;Type, obj&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.AddPartMetadata (name, getValueFromPartType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.AddPartMetadata(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPartMetadata (name As String, value As Object) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ AddPartMetadata(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddPartMetadata : string * obj -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.AddPartMetadata (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Export" />
       <MemberSignature Language="VB.NET" Value="Public Function Export () As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ Export();" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Export " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Export(System.Action{System.Composition.Convention.ExportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (exportConfiguration As Action(Of ExportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ Export(Action&lt;System::Composition::Convention::ExportConventionBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.Composition.Convention.ExportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Export exportConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Export``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) () As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ Export();" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Export " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Export``1(System.Action{System.Composition.Convention.ExportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) (exportConfiguration As Action(Of ExportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ Export(Action&lt;System::Composition::Convention::ExportConventionBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.Composition.Convention.ExportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Export exportConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportInterfaces" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces () As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportInterfaces();" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : unit -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportInterfaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportInterfaces(System.Predicate{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportInterfaces interfaceFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportInterfaces(System.Predicate{System.Type},System.Action{System.Type,System.Composition.Convention.ExportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type), exportConfiguration As Action(Of Type, ExportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter, Action&lt;Type ^, System::Composition::Convention::ExportConventionBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; * Action&lt;Type, System.Composition.Convention.ExportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportInterfaces (interfaceFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.Composition.Convention.ExportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::Composition::Convention::ExportConventionBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.Composition.Convention.ExportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -335,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.Composition.Convention.ExportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::Composition::Convention::ExportConventionBuilder ^&gt; ^ exportConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.Composition.Convention.ExportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -366,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ImportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -391,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.Composition.Convention.ImportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::Composition::Convention::ImportConventionBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.Composition.Convention.ImportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ImportProperties (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -418,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ImportProperties propertyFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -447,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.Composition.Convention.ImportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Composition::Convention::PartConventionBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::Composition::Convention::ImportConventionBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.Composition.Convention.ImportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.ImportProperties (propertyFilter, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -478,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.NotifyImportsSatisfied(System.Predicate{System.Reflection.MethodInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function NotifyImportsSatisfied (methodFilter As Predicate(Of MethodInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ NotifyImportsSatisfied(Predicate&lt;System::Reflection::MethodInfo ^&gt; ^ methodFilter);" />
+      <MemberSignature Language="F#" Value="member this.NotifyImportsSatisfied : Predicate&lt;System.Reflection.MethodInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.NotifyImportsSatisfied methodFilter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -503,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.SelectConstructor(System.Func{System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo},System.Reflection.ConstructorInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorSelector As Func(Of IEnumerable(Of ConstructorInfo), ConstructorInfo)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ SelectConstructor(Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorSelector);" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;seq&lt;System.Reflection.ConstructorInfo&gt;, System.Reflection.ConstructorInfo&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.SelectConstructor constructorSelector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -528,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.SelectConstructor(System.Func{System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo},System.Reflection.ConstructorInfo},System.Action{System.Reflection.ParameterInfo,System.Composition.Convention.ImportConventionBuilder})" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorSelector As Func(Of IEnumerable(Of ConstructorInfo), ConstructorInfo), importConfiguration As Action(Of ParameterInfo, ImportConventionBuilder)) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ SelectConstructor(Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorSelector, Action&lt;System::Reflection::ParameterInfo ^, System::Composition::Convention::ImportConventionBuilder ^&gt; ^ importConfiguration);" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;seq&lt;System.Reflection.ConstructorInfo&gt;, System.Reflection.ConstructorInfo&gt; * Action&lt;System.Reflection.ParameterInfo, System.Composition.Convention.ImportConventionBuilder&gt; -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.SelectConstructor (constructorSelector, importConfiguration)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -555,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Function Shared () As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ Shared();" />
+      <MemberSignature Language="F#" Value="member this.Shared : unit -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Shared " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>
@@ -577,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder.Shared(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Shared (sharingBoundary As String) As PartConventionBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Convention::PartConventionBuilder ^ Shared(System::String ^ sharingBoundary);" />
+      <MemberSignature Language="F#" Value="member this.Shared : string -&gt; System.Composition.Convention.PartConventionBuilder" Usage="partConventionBuilder.Shared sharingBoundary" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Convention</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.RawStylusInput" />
   <TypeSignature Language="VB.NET" Value="Public Class RawStylusInput" />
   <TypeSignature Language="C++ CLI" Value="public ref class RawStylusInput" />
+  <TypeSignature Language="F#" Value="type RawStylusInput = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.GetStylusPoints" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStylusPoints () As StylusPointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ GetStylusPoints();" />
+      <MemberSignature Language="F#" Value="member this.GetStylusPoints : unit -&gt; System.Windows.Input.StylusPointCollection" Usage="rawStylusInput.GetStylusPoints " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NotifyWhenProcessed (callbackData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyWhenProcessed(System::Object ^ callbackData);" />
+      <MemberSignature Language="F#" Value="member this.NotifyWhenProcessed : obj -&gt; unit" Usage="rawStylusInput.NotifyWhenProcessed callbackData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.SetStylusPoints(System.Windows.Input.StylusPointCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetStylusPoints (stylusPoints As StylusPointCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStylusPoints(System::Windows::Input::StylusPointCollection ^ stylusPoints);" />
+      <MemberSignature Language="F#" Value="member this.SetStylusPoints : System.Windows.Input.StylusPointCollection -&gt; unit" Usage="rawStylusInput.SetStylusPoints stylusPoints" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.StylusDeviceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDeviceId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StylusDeviceId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusDeviceId : int" Usage="System.Windows.Input.StylusPlugIns.RawStylusInput.StylusDeviceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.TabletDeviceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabletDeviceId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabletDeviceId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TabletDeviceId : int" Usage="System.Windows.Input.StylusPlugIns.RawStylusInput.TabletDeviceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timestamp { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : int" Usage="System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

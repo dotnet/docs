@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DynamicDiscoveryDocument" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicDiscoveryDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicDiscoveryDocument sealed" />
+  <TypeSignature Language="F#" Value="type DynamicDiscoveryDocument = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DynamicDiscoveryDocument.ExcludePaths" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludePaths As ExcludePathInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Web::Services::Discovery::ExcludePathInfo ^&gt; ^ ExcludePaths { cli::array &lt;System::Web::Services::Discovery::ExcludePathInfo ^&gt; ^ get(); void set(cli::array &lt;System::Web::Services::Discovery::ExcludePathInfo ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExcludePaths : System.Web.Services.Discovery.ExcludePathInfo[] with get, set" Usage="System.Web.Services.Discovery.DynamicDiscoveryDocument.ExcludePaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Discovery.DynamicDiscoveryDocument Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DynamicDiscoveryDocument.Load(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Discovery::DynamicDiscoveryDocument ^ Load(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; System.Web.Services.Discovery.DynamicDiscoveryDocument" Usage="System.Web.Services.Discovery.DynamicDiscoveryDocument.Load stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.DynamicDiscoveryDocument.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Discovery.DynamicDiscoveryDocument.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DynamicDiscoveryDocument.Write(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.Stream -&gt; unit" Usage="dynamicDiscoveryDocument.Write stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

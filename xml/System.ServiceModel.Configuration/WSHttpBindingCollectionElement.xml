@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WSHttpBinding, WSHttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WSHttpBinding ^, System::ServiceModel::Configuration::WSHttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WSHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WSHttpBinding, WSHttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

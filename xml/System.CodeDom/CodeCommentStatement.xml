@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCommentStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeCommentStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeCommentStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeCommentStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.CodeDom.CodeComment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comment As CodeComment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::CodeDom::CodeComment ^ comment);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : System.CodeDom.CodeComment -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement comment" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : string -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, docComment As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::String ^ text, bool docComment);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : string * bool -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement (text, docComment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCommentStatement.Comment" />
       <MemberSignature Language="VB.NET" Value="Public Property Comment As CodeComment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeComment ^ Comment { System::CodeDom::CodeComment ^ get(); void set(System::CodeDom::CodeComment ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : System.CodeDom.CodeComment with get, set" Usage="System.CodeDom.CodeCommentStatement.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

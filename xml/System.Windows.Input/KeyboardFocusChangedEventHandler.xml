@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardFocusChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyboardFocusChangedEventHandler(sender As Object, e As KeyboardFocusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void KeyboardFocusChangedEventHandler(System::Object ^ sender, KeyboardFocusChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type KeyboardFocusChangedEventHandler = delegate of obj * KeyboardFocusChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent" />
   <TypeSignature Language="VB.NET" Value="Public Enum SyncFromAllServersEvent" />
   <TypeSignature Language="C++ CLI" Value="public enum class SyncFromAllServersEvent" />
+  <TypeSignature Language="F#" Value="type SyncFromAllServersEvent = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 0" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Finished" />
       <MemberSignature Language="VB.NET" Value="Finished" />
       <MemberSignature Language="C++ CLI" Value="Finished" />
+      <MemberSignature Language="F#" Value="Finished = 3" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Finished" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncCompleted" />
       <MemberSignature Language="VB.NET" Value="SyncCompleted" />
       <MemberSignature Language="C++ CLI" Value="SyncCompleted" />
+      <MemberSignature Language="F#" Value="SyncCompleted = 2" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncCompleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncStarted" />
       <MemberSignature Language="VB.NET" Value="SyncStarted" />
       <MemberSignature Language="C++ CLI" Value="SyncStarted" />
+      <MemberSignature Language="F#" Value="SyncStarted = 1" Usage="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncStarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

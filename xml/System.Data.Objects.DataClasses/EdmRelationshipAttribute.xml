@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmRelationshipAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmRelationshipAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EdmRelationshipAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationshipNamespaceName As String, relationshipName As String, role1Name As String, role1Multiplicity As RelationshipMultiplicity, role1Type As Type, role2Name As String, role2Multiplicity As RelationshipMultiplicity, role2Type As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmRelationshipAttribute(System::String ^ relationshipNamespaceName, System::String ^ relationshipName, System::String ^ role1Name, System::Data::Metadata::Edm::RelationshipMultiplicity role1Multiplicity, Type ^ role1Type, System::String ^ role2Name, System::Data::Metadata::Edm::RelationshipMultiplicity role2Multiplicity, Type ^ role2Type);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.DataClasses.EdmRelationshipAttribute : string * string * string * System.Data.Metadata.Edm.RelationshipMultiplicity * Type * string * System.Data.Metadata.Edm.RelationshipMultiplicity * Type -&gt; System.Data.Objects.DataClasses.EdmRelationshipAttribute" Usage="new System.Data.Objects.DataClasses.EdmRelationshipAttribute (relationshipNamespaceName, relationshipName, role1Name, role1Multiplicity, role1Type, role2Name, role2Multiplicity, role2Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationshipNamespaceName As String, relationshipName As String, role1Name As String, role1Multiplicity As RelationshipMultiplicity, role1Type As Type, role2Name As String, role2Multiplicity As RelationshipMultiplicity, role2Type As Type, isForeignKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmRelationshipAttribute(System::String ^ relationshipNamespaceName, System::String ^ relationshipName, System::String ^ role1Name, System::Data::Metadata::Edm::RelationshipMultiplicity role1Multiplicity, Type ^ role1Type, System::String ^ role2Name, System::Data::Metadata::Edm::RelationshipMultiplicity role2Multiplicity, Type ^ role2Type, bool isForeignKey);" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.DataClasses.EdmRelationshipAttribute : string * string * string * System.Data.Metadata.Edm.RelationshipMultiplicity * Type * string * System.Data.Metadata.Edm.RelationshipMultiplicity * Type * bool -&gt; System.Data.Objects.DataClasses.EdmRelationshipAttribute" Usage="new System.Data.Objects.DataClasses.EdmRelationshipAttribute (relationshipNamespaceName, relationshipName, role1Name, role1Multiplicity, role1Type, role2Name, role2Multiplicity, role2Type, isForeignKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.IsForeignKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsForeignKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsForeignKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsForeignKey : bool" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.IsForeignKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipName : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipNamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipNamespaceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipNamespaceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipNamespaceName : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipNamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Multiplicity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role1Multiplicity As RelationshipMultiplicity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipMultiplicity Role1Multiplicity { System::Data::Metadata::Edm::RelationshipMultiplicity get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role1Multiplicity : System.Data.Metadata.Edm.RelationshipMultiplicity" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Multiplicity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role1Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role1Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role1Name : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role1Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Role1Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role1Type : Type" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Multiplicity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role2Multiplicity As RelationshipMultiplicity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipMultiplicity Role2Multiplicity { System::Data::Metadata::Edm::RelationshipMultiplicity get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role2Multiplicity : System.Data.Metadata.Edm.RelationshipMultiplicity" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Multiplicity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role2Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role2Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role2Name : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role2Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Role2Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Role2Type : Type" Usage="System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

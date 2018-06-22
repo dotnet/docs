@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ListBoxAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ListBoxAutomationPeer&#xA;Inherits SelectorAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListBoxAutomationPeer : System::Windows::Automation::Peers::SelectorAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ListBoxAutomationPeer = class&#xA;    inherit SelectorAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.#ctor(System.Windows.Controls.ListBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListBox)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxAutomationPeer(System::Windows::Controls::ListBox ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ListBoxAutomationPeer : System.Windows.Controls.ListBox -&gt; System.Windows.Automation.Peers.ListBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.ListBoxAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="listBoxAutomationPeer.CreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="listBoxAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

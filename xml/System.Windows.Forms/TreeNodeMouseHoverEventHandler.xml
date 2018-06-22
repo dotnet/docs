@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNodeMouseHoverEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TreeNodeMouseHoverEventHandler(sender As Object, e As TreeNodeMouseHoverEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TreeNodeMouseHoverEventHandler(System::Object ^ sender, TreeNodeMouseHoverEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TreeNodeMouseHoverEventHandler = delegate of obj * TreeNodeMouseHoverEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

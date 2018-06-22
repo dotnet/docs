@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ToolboxItemFilterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxItemFilterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItemFilterAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ToolboxItemFilterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemFilterAttribute(System::String ^ filterString);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ToolboxItemFilterAttribute : string -&gt; System.ComponentModel.ToolboxItemFilterAttribute" Usage="new System.ComponentModel.ToolboxItemFilterAttribute filterString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.#ctor(System.String,System.ComponentModel.ToolboxItemFilterType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterString As String, filterType As ToolboxItemFilterType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemFilterAttribute(System::String ^ filterString, System::ComponentModel::ToolboxItemFilterType filterType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ToolboxItemFilterAttribute : string * System.ComponentModel.ToolboxItemFilterType -&gt; System.ComponentModel.ToolboxItemFilterAttribute" Usage="new System.ComponentModel.ToolboxItemFilterAttribute (filterString, filterType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="toolboxItemFilterAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ToolboxItemFilterAttribute.FilterString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterString : string" Usage="System.ComponentModel.ToolboxItemFilterAttribute.FilterString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ToolboxItemFilterAttribute.FilterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterType As ToolboxItemFilterType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ToolboxItemFilterType FilterType { System::ComponentModel::ToolboxItemFilterType get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterType : System.ComponentModel.ToolboxItemFilterType" Usage="System.ComponentModel.ToolboxItemFilterAttribute.FilterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="toolboxItemFilterAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.Match(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Match : obj -&gt; bool" Usage="toolboxItemFilterAttribute.Match obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemFilterAttribute.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolboxItemFilterAttribute.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ToolboxItemFilterAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.ToolboxItemFilterAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

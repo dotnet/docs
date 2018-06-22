@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellCheck" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpellCheck" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpellCheck sealed" />
+  <TypeSignature Language="F#" Value="type SpellCheck = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SpellCheck.CustomDictionaries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDictionaries As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ CustomDictionaries { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomDictionaries : System.Collections.IList" Usage="System.Windows.Controls.SpellCheck.CustomDictionaries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +97,7 @@ ListBox
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellCheck.CustomDictionariesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomDictionariesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CustomDictionariesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomDictionariesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.SpellCheck.CustomDictionariesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +116,7 @@ ListBox
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IList GetCustomDictionaries(class System.Windows.Controls.Primitives.TextBoxBase textBoxBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellCheck.GetCustomDictionaries(System.Windows.Controls.Primitives.TextBoxBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ GetCustomDictionaries(System::Windows::Controls::Primitives::TextBoxBase ^ textBoxBase);" />
+      <MemberSignature Language="F#" Value="static member GetCustomDictionaries : System.Windows.Controls.Primitives.TextBoxBase -&gt; System.Collections.IList" Usage="System.Windows.Controls.SpellCheck.GetCustomDictionaries textBoxBase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +163,7 @@ ListBox
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsEnabled(class System.Windows.Controls.Primitives.TextBoxBase textBoxBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellCheck.GetIsEnabled(System.Windows.Controls.Primitives.TextBoxBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsEnabled(System::Windows::Controls::Primitives::TextBoxBase ^ textBoxBase);" />
+      <MemberSignature Language="F#" Value="static member GetIsEnabled : System.Windows.Controls.Primitives.TextBoxBase -&gt; bool" Usage="System.Windows.Controls.SpellCheck.GetIsEnabled textBoxBase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +190,7 @@ ListBox
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SpellCheck.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Windows.Controls.SpellCheck.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -221,6 +227,7 @@ ListBox
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellCheck.IsEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.SpellCheck.IsEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,6 +246,7 @@ ListBox
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsEnabled(class System.Windows.Controls.Primitives.TextBoxBase textBoxBase, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellCheck.SetIsEnabled(System.Windows.Controls.Primitives.TextBoxBase,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsEnabled(System::Windows::Controls::Primitives::TextBoxBase ^ textBoxBase, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetIsEnabled : System.Windows.Controls.Primitives.TextBoxBase * bool -&gt; unit" Usage="System.Windows.Controls.SpellCheck.SetIsEnabled (textBoxBase, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +278,7 @@ ListBox
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSpellingReform(class System.Windows.Controls.Primitives.TextBoxBase textBoxBase, valuetype System.Windows.Controls.SpellingReform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellCheck.SetSpellingReform(System.Windows.Controls.Primitives.TextBoxBase,System.Windows.Controls.SpellingReform)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSpellingReform(System::Windows::Controls::Primitives::TextBoxBase ^ textBoxBase, System::Windows::Controls::SpellingReform value);" />
+      <MemberSignature Language="F#" Value="static member SetSpellingReform : System.Windows.Controls.Primitives.TextBoxBase * System.Windows.Controls.SpellingReform -&gt; unit" Usage="System.Windows.Controls.SpellCheck.SetSpellingReform (textBoxBase, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -304,6 +313,7 @@ ListBox
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SpellCheck.SpellingReform" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellingReform As SpellingReform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::SpellingReform SpellingReform { System::Windows::Controls::SpellingReform get(); void set(System::Windows::Controls::SpellingReform value); };" />
+      <MemberSignature Language="F#" Value="member this.SpellingReform : System.Windows.Controls.SpellingReform with get, set" Usage="System.Windows.Controls.SpellCheck.SpellingReform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -341,6 +351,7 @@ ListBox
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellCheck.SpellingReformProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SpellingReformProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SpellingReformProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SpellingReformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.SpellCheck.SpellingReformProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

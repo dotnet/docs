@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivatedClientTypeEntry&#xA;Inherits TypeEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivatedClientTypeEntry : System::Runtime::Remoting::TypeEntry" />
+  <TypeSignature Language="F#" Value="type ActivatedClientTypeEntry = class&#xA;    inherit TypeEntry" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string appUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ActivatedClientTypeEntry.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivatedClientTypeEntry(Type ^ type, System::String ^ appUrl);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.ActivatedClientTypeEntry : Type * string -&gt; System.Runtime.Remoting.ActivatedClientTypeEntry" Usage="new System.Runtime.Remoting.ActivatedClientTypeEntry (type, appUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ActivatedClientTypeEntry.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, assemblyName As String, appUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivatedClientTypeEntry(System::String ^ typeName, System::String ^ assemblyName, System::String ^ appUrl);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.ActivatedClientTypeEntry : string * string * string -&gt; System.Runtime.Remoting.ActivatedClientTypeEntry" Usage="new System.Runtime.Remoting.ActivatedClientTypeEntry (typeName, assemblyName, appUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ActivatedClientTypeEntry.ApplicationUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationUrl : string" Usage="System.Runtime.Remoting.ActivatedClientTypeEntry.ApplicationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ActivatedClientTypeEntry.ContextAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextAttributes As IContextAttribute()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ ContextAttributes { cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextAttributes : System.Runtime.Remoting.Contexts.IContextAttribute[] with get, set" Usage="System.Runtime.Remoting.ActivatedClientTypeEntry.ContextAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.ActivatedClientTypeEntry.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Runtime.Remoting.ActivatedClientTypeEntry.ObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ActivatedClientTypeEntry.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activatedClientTypeEntry.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

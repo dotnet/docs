@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.CAccPropServicesClass" />
   <TypeSignature Language="VB.NET" Value="Public Class CAccPropServicesClass&#xA;Implements CAccPropServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class CAccPropServicesClass : Accessibility::CAccPropServices" />
+  <TypeSignature Language="F#" Value="type CAccPropServicesClass = class&#xA;    interface IAccPropServices&#xA;    interface CAccPropServices" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearHmenuProps(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearHmenuProps (ByRef hmenu As _RemotableHandle, idChild As UInteger, ByRef paProps As Guid, cProps As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ClearHmenuProps(Accessibility::_RemotableHandle % hmenu, System::UInt32 idChild, Guid % paProps, int cProps) = Accessibility::IAccPropServices::ClearHmenuProps;" />
+      <MemberSignature Language="F#" Value="abstract member ClearHmenuProps :  * uint32 *  * int -&gt; unit&#xA;override this.ClearHmenuProps :  * uint32 *  * int -&gt; unit" Usage="cAccPropServicesClass.ClearHmenuProps (hmenu, idChild, paProps, cProps)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.ClearHmenuProps(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32)</InterfaceMember>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearHwndProps(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearHwndProps (ByRef hwnd As _RemotableHandle, idObject As UInteger, idChild As UInteger, ByRef paProps As Guid, cProps As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ClearHwndProps(Accessibility::_RemotableHandle % hwnd, System::UInt32 idObject, System::UInt32 idChild, Guid % paProps, int cProps) = Accessibility::IAccPropServices::ClearHwndProps;" />
+      <MemberSignature Language="F#" Value="abstract member ClearHwndProps :  * uint32 * uint32 *  * int -&gt; unit&#xA;override this.ClearHwndProps :  * uint32 * uint32 *  * int -&gt; unit" Usage="cAccPropServicesClass.ClearHwndProps (hwnd, idObject, idChild, paProps, cProps)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.ClearHwndProps(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32)</InterfaceMember>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearProps(System.Byte@,System.UInt32,System.Guid@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearProps (ByRef pIDString As Byte, dwIDStringLen As UInteger, ByRef paProps As Guid, cProps As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ClearProps(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid % paProps, int cProps) = Accessibility::IAccPropServices::ClearProps;" />
+      <MemberSignature Language="F#" Value="abstract member ClearProps :  * uint32 *  * int -&gt; unit&#xA;override this.ClearProps :  * uint32 *  * int -&gt; unit" Usage="cAccPropServicesClass.ClearProps (pIDString, dwIDStringLen, paProps, cProps)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.ClearProps(System.Byte@,System.UInt32,System.Guid@,System.Int32)</InterfaceMember>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ComposeHmenuIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComposeHmenuIdentityString (ByRef hmenu As _RemotableHandle, idChild As UInteger, ppIDString As IntPtr, ByRef pdwIDStringLen As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComposeHmenuIdentityString(Accessibility::_RemotableHandle % hmenu, System::UInt32 idChild, IntPtr ppIDString, [Runtime::InteropServices::Out] System::UInt32 % pdwIDStringLen) = Accessibility::IAccPropServices::ComposeHmenuIdentityString;" />
+      <MemberSignature Language="F#" Value="abstract member ComposeHmenuIdentityString :  * uint32 * nativeint *  -&gt; unit&#xA;override this.ComposeHmenuIdentityString :  * uint32 * nativeint *  -&gt; unit" Usage="cAccPropServicesClass.ComposeHmenuIdentityString (hmenu, idChild, ppIDString, pdwIDStringLen)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.ComposeHmenuIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.IntPtr,System.UInt32@)</InterfaceMember>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ComposeHwndIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComposeHwndIdentityString (ByRef hwnd As _RemotableHandle, idObject As UInteger, idChild As UInteger, ppIDString As IntPtr, ByRef pdwIDStringLen As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComposeHwndIdentityString(Accessibility::_RemotableHandle % hwnd, System::UInt32 idObject, System::UInt32 idChild, IntPtr ppIDString, [Runtime::InteropServices::Out] System::UInt32 % pdwIDStringLen) = Accessibility::IAccPropServices::ComposeHwndIdentityString;" />
+      <MemberSignature Language="F#" Value="abstract member ComposeHwndIdentityString :  * uint32 * uint32 * nativeint *  -&gt; unit&#xA;override this.ComposeHwndIdentityString :  * uint32 * uint32 * nativeint *  -&gt; unit" Usage="cAccPropServicesClass.ComposeHwndIdentityString (hwnd, idObject, idChild, ppIDString, pdwIDStringLen)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.ComposeHwndIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.IntPtr,System.UInt32@)</InterfaceMember>
@@ -296,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.DecomposeHmenuIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DecomposeHmenuIdentityString (ByRef pIDString As Byte, dwIDStringLen As UInteger, phmenu As IntPtr, ByRef pidChild As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DecomposeHmenuIdentityString(System::Byte % pIDString, System::UInt32 dwIDStringLen, IntPtr phmenu, [Runtime::InteropServices::Out] System::UInt32 % pidChild) = Accessibility::IAccPropServices::DecomposeHmenuIdentityString;" />
+      <MemberSignature Language="F#" Value="abstract member DecomposeHmenuIdentityString :  * uint32 * nativeint *  -&gt; unit&#xA;override this.DecomposeHmenuIdentityString :  * uint32 * nativeint *  -&gt; unit" Usage="cAccPropServicesClass.DecomposeHmenuIdentityString (pIDString, dwIDStringLen, phmenu, pidChild)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.DecomposeHmenuIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@)</InterfaceMember>
@@ -334,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.DecomposeHwndIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DecomposeHwndIdentityString (ByRef pIDString As Byte, dwIDStringLen As UInteger, phwnd As IntPtr, ByRef pidObject As UInteger, ByRef pidChild As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DecomposeHwndIdentityString(System::Byte % pIDString, System::UInt32 dwIDStringLen, IntPtr phwnd, [Runtime::InteropServices::Out] System::UInt32 % pidObject, [Runtime::InteropServices::Out] System::UInt32 % pidChild) = Accessibility::IAccPropServices::DecomposeHwndIdentityString;" />
+      <MemberSignature Language="F#" Value="abstract member DecomposeHwndIdentityString :  * uint32 * nativeint *  *  -&gt; unit&#xA;override this.DecomposeHwndIdentityString :  * uint32 * nativeint *  *  -&gt; unit" Usage="cAccPropServicesClass.DecomposeHwndIdentityString (pIDString, dwIDStringLen, phwnd, pidObject, pidChild)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.DecomposeHwndIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@,System.UInt32@)</InterfaceMember>
@@ -374,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuProp(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHmenuProp (ByRef hmenu As _RemotableHandle, idChild As UInteger, idProp As Guid, var As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHmenuProp(Accessibility::_RemotableHandle % hmenu, System::UInt32 idChild, Guid idProp, System::Object ^ var) = Accessibility::IAccPropServices::SetHmenuProp;" />
+      <MemberSignature Language="F#" Value="abstract member SetHmenuProp :  * uint32 * Guid * obj -&gt; unit&#xA;override this.SetHmenuProp :  * uint32 * Guid * obj -&gt; unit" Usage="cAccPropServicesClass.SetHmenuProp (hmenu, idChild, idProp, var)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHmenuProp(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.Object)</InterfaceMember>
@@ -418,6 +427,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropServer([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuPropServer(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHmenuPropServer(Accessibility::_RemotableHandle % hmenu, System::UInt32 idChild, Guid % paProps, int cProps, Accessibility::IAccPropServer ^ pServer, Accessibility::AnnoScope AnnoScope) = Accessibility::IAccPropServices::SetHmenuPropServer;" />
+      <MemberSignature Language="F#" Value="abstract member SetHmenuPropServer :  * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit&#xA;override this.SetHmenuPropServer :  * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit" Usage="cAccPropServicesClass.SetHmenuPropServer (hmenu, idChild, paProps, cProps, pServer, AnnoScope)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHmenuPropServer(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)</InterfaceMember>
@@ -467,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuPropStr(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHmenuPropStr (ByRef hmenu As _RemotableHandle, idChild As UInteger, idProp As Guid, str As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHmenuPropStr(Accessibility::_RemotableHandle % hmenu, System::UInt32 idChild, Guid idProp, System::String ^ str) = Accessibility::IAccPropServices::SetHmenuPropStr;" />
+      <MemberSignature Language="F#" Value="abstract member SetHmenuPropStr :  * uint32 * Guid * string -&gt; unit&#xA;override this.SetHmenuPropStr :  * uint32 * Guid * string -&gt; unit" Usage="cAccPropServicesClass.SetHmenuPropStr (hmenu, idChild, idProp, str)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHmenuPropStr(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.String)</InterfaceMember>
@@ -512,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndProp(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHwndProp (ByRef hwnd As _RemotableHandle, idObject As UInteger, idChild As UInteger, idProp As Guid, var As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHwndProp(Accessibility::_RemotableHandle % hwnd, System::UInt32 idObject, System::UInt32 idChild, Guid idProp, System::Object ^ var) = Accessibility::IAccPropServices::SetHwndProp;" />
+      <MemberSignature Language="F#" Value="abstract member SetHwndProp :  * uint32 * uint32 * Guid * obj -&gt; unit&#xA;override this.SetHwndProp :  * uint32 * uint32 * Guid * obj -&gt; unit" Usage="cAccPropServicesClass.SetHwndProp (hwnd, idObject, idChild, idProp, var)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHwndProp(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.Object)</InterfaceMember>
@@ -558,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropServer([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndPropServer(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHwndPropServer(Accessibility::_RemotableHandle % hwnd, System::UInt32 idObject, System::UInt32 idChild, Guid % paProps, int cProps, Accessibility::IAccPropServer ^ pServer, Accessibility::AnnoScope AnnoScope) = Accessibility::IAccPropServices::SetHwndPropServer;" />
+      <MemberSignature Language="F#" Value="abstract member SetHwndPropServer :  * uint32 * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit&#xA;override this.SetHwndPropServer :  * uint32 * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit" Usage="cAccPropServicesClass.SetHwndPropServer (hwnd, idObject, idChild, paProps, cProps, pServer, AnnoScope)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHwndPropServer(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)</InterfaceMember>
@@ -609,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndPropStr(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetHwndPropStr (ByRef hwnd As _RemotableHandle, idObject As UInteger, idChild As UInteger, idProp As Guid, str As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHwndPropStr(Accessibility::_RemotableHandle % hwnd, System::UInt32 idObject, System::UInt32 idChild, Guid idProp, System::String ^ str) = Accessibility::IAccPropServices::SetHwndPropStr;" />
+      <MemberSignature Language="F#" Value="abstract member SetHwndPropStr :  * uint32 * uint32 * Guid * string -&gt; unit&#xA;override this.SetHwndPropStr :  * uint32 * uint32 * Guid * string -&gt; unit" Usage="cAccPropServicesClass.SetHwndPropStr (hwnd, idObject, idChild, idProp, str)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetHwndPropStr(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.String)</InterfaceMember>
@@ -655,6 +669,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropServer([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetPropServer(System.Byte@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetPropServer(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid % paProps, int cProps, Accessibility::IAccPropServer ^ pServer, Accessibility::AnnoScope AnnoScope) = Accessibility::IAccPropServices::SetPropServer;" />
+      <MemberSignature Language="F#" Value="abstract member SetPropServer :  * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit&#xA;override this.SetPropServer :  * uint32 *  * int * Accessibility.IAccPropServer * Accessibility.AnnoScope -&gt; unit" Usage="cAccPropServicesClass.SetPropServer (pIDString, dwIDStringLen, paProps, cProps, pServer, AnnoScope)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetPropServer(System.Byte@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)</InterfaceMember>
@@ -698,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetPropValue (ByRef pIDString As Byte, dwIDStringLen As UInteger, idProp As Guid, var As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetPropValue(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid idProp, System::Object ^ var) = Accessibility::IAccPropServices::SetPropValue;" />
+      <MemberSignature Language="F#" Value="abstract member SetPropValue :  * uint32 * Guid * obj -&gt; unit&#xA;override this.SetPropValue :  * uint32 * Guid * obj -&gt; unit" Usage="cAccPropServicesClass.SetPropValue (pIDString, dwIDStringLen, idProp, var)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Accessibility.IAccPropServices.SetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object)</InterfaceMember>

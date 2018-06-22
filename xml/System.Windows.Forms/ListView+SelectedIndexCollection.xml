@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.SelectedIndexCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ListView.SelectedIndexCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ListView::SelectedIndexCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ListView.SelectedIndexCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.#ctor(System.Windows.Forms.ListView)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectedIndexCollection(System::Windows::Forms::ListView ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListView.SelectedIndexCollection : System.Windows.Forms.ListView -&gt; System.Windows.Forms.ListView.SelectedIndexCollection" Usage="new System.Windows.Forms.ListView.SelectedIndexCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.Add(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (itemIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(int itemIndex);" />
+      <MemberSignature Language="F#" Value="member this.Add : int -&gt; int" Usage="selectedIndexCollection.Add itemIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="selectedIndexCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.Contains(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (selectedIndex As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(int selectedIndex);" />
+      <MemberSignature Language="F#" Value="member this.Contains : int -&gt; bool" Usage="selectedIndexCollection.Contains selectedIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ dest, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="selectedIndexCollection.CopyTo (dest, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="selectedIndexCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.IndexOf(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (selectedIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(int selectedIndex);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : int -&gt; int" Usage="selectedIndexCollection.IndexOf selectedIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int default[int] { int get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : int" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.SelectedIndexCollection.Remove(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (itemIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(int itemIndex);" />
+      <MemberSignature Language="F#" Value="member this.Remove : int -&gt; unit" Usage="selectedIndexCollection.Remove itemIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -422,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -446,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -626,6 +640,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -650,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndexCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ListView.SelectedIndexCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

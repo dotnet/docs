@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum VirtualizationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class VirtualizationMode" />
+  <TypeSignature Language="F#" Value="type VirtualizationMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationMode.Recycling" />
       <MemberSignature Language="VB.NET" Value="Recycling" />
       <MemberSignature Language="C++ CLI" Value="Recycling" />
+      <MemberSignature Language="F#" Value="Recycling = 1" Usage="System.Windows.Controls.VirtualizationMode.Recycling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationMode.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 0" Usage="System.Windows.Controls.VirtualizationMode.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

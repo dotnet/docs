@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ExpandedWrapper`12" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpandedWrapper(Of TExpandedElement, TProperty0, TProperty1, TProperty2, TProperty3, TProperty4, TProperty5, TProperty6, TProperty7, TProperty8, TProperty9, TProperty10)&#xA;Inherits ExpandedWrapper(Of TExpandedElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TExpandedElement, typename TProperty0, typename TProperty1, typename TProperty2, typename TProperty3, typename TProperty4, typename TProperty5, typename TProperty6, typename TProperty7, typename TProperty8, typename TProperty9, typename TProperty10&gt;&#xA;public ref class ExpandedWrapper sealed : System::Data::Services::Internal::ExpandedWrapper&lt;TExpandedElement&gt;" />
+  <TypeSignature Language="F#" Value="type ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt; = class&#xA;    inherit ExpandedWrapper&lt;'ExpandedElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`12.InternalGetExpandedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InternalGetExpandedPropertyValue (nameIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InternalGetExpandedPropertyValue(int nameIndex);" />
+      <MemberSignature Language="F#" Value="override this.InternalGetExpandedPropertyValue : int -&gt; obj" Usage="expandedWrapper.InternalGetExpandedPropertyValue nameIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty0" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty0 As TProperty0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty0 ProjectedProperty0 { TProperty0 get(); void set(TProperty0 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty0 : 'TProperty0 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty1" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty1 As TProperty1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty1 ProjectedProperty1 { TProperty1 get(); void set(TProperty1 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty1 : 'TProperty1 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty10" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty10 As TProperty10" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty10 ProjectedProperty10 { TProperty10 get(); void set(TProperty10 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty10 : 'TProperty10 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty10" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty2" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty2 As TProperty2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty2 ProjectedProperty2 { TProperty2 get(); void set(TProperty2 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty2 : 'TProperty2 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty3" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty3 As TProperty3" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty3 ProjectedProperty3 { TProperty3 get(); void set(TProperty3 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty3 : 'TProperty3 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty4" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty4 As TProperty4" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty4 ProjectedProperty4 { TProperty4 get(); void set(TProperty4 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty4 : 'TProperty4 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty5" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty5 As TProperty5" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty5 ProjectedProperty5 { TProperty5 get(); void set(TProperty5 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty5 : 'TProperty5 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty6" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty6 As TProperty6" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty6 ProjectedProperty6 { TProperty6 get(); void set(TProperty6 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty6 : 'TProperty6 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -275,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty7" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty7 As TProperty7" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty7 ProjectedProperty7 { TProperty7 get(); void set(TProperty7 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty7 : 'TProperty7 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty7" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty8" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty8 As TProperty8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty8 ProjectedProperty8 { TProperty8 get(); void set(TProperty8 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty8 : 'TProperty8 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty8" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -317,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`12.ProjectedProperty9" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty9 As TProperty9" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TProperty9 ProjectedProperty9 { TProperty9 get(); void set(TProperty9 value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty9 : 'TProperty9 with get, set" Usage="System.Data.Services.Internal.ExpandedWrapper&lt;'ExpandedElement, 'TProperty0, 'TProperty1, 'TProperty2, 'TProperty3, 'TProperty4, 'TProperty5, 'TProperty6, 'TProperty7, 'TProperty8, 'TProperty9, 'TProperty10&gt;.ProjectedProperty9" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ClassInterfaceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClassInterfaceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ClassInterfaceType" />
+  <TypeSignature Language="F#" Value="type ClassInterfaceType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch" />
       <MemberSignature Language="VB.NET" Value="AutoDispatch" />
       <MemberSignature Language="C++ CLI" Value="AutoDispatch" />
+      <MemberSignature Language="F#" Value="AutoDispatch = 1" Usage="System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ClassInterfaceType.AutoDual" />
       <MemberSignature Language="VB.NET" Value="AutoDual" />
       <MemberSignature Language="C++ CLI" Value="AutoDual" />
+      <MemberSignature Language="F#" Value="AutoDual = 2" Usage="System.Runtime.InteropServices.ClassInterfaceType.AutoDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ClassInterfaceType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.InteropServices.ClassInterfaceType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

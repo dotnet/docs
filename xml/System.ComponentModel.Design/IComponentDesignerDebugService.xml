@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentDesignerDebugService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentDesignerDebugService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentDesignerDebugService" />
+  <TypeSignature Language="F#" Value="type IComponentDesignerDebugService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Assert(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Assert (condition As Boolean, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Assert(bool condition, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Assert : bool * string -&gt; unit" Usage="iComponentDesignerDebugService.Assert (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Fail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Fail (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Fail(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Fail : string -&gt; unit" Usage="iComponentDesignerDebugService.Fail message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IndentLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndentLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentLevel : int with get, set" Usage="System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IComponentDesignerDebugService.Listeners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Listeners As TraceListenerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceListenerCollection ^ Listeners { System::Diagnostics::TraceListenerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Listeners : System.Diagnostics.TraceListenerCollection" Usage="System.ComponentModel.Design.IComponentDesignerDebugService.Listeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerDebugService.Trace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Trace (message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Trace(System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="abstract member Trace : string * string -&gt; unit" Usage="iComponentDesignerDebugService.Trace (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerApplicationRegistrationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerApplicationRegistrationType" />
+  <TypeSignature Language="F#" Value="type PeerApplicationRegistrationType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType.AllUsers" />
       <MemberSignature Language="VB.NET" Value="AllUsers" />
       <MemberSignature Language="C++ CLI" Value="AllUsers" />
+      <MemberSignature Language="F#" Value="AllUsers = 1" Usage="System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType.AllUsers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="CurrentUser" />
       <MemberSignature Language="C++ CLI" Value="CurrentUser" />
+      <MemberSignature Language="F#" Value="CurrentUser = 0" Usage="System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType.CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

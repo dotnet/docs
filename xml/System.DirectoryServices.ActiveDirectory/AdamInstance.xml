@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class AdamInstance&#xA;Inherits DirectoryServer" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdamInstance : System::DirectoryServices::ActiveDirectory::DirectoryServer" />
+  <TypeSignature Language="F#" Value="type AdamInstance = class&#xA;    inherit DirectoryServer" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.CheckReplicationConsistency" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CheckReplicationConsistency ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CheckReplicationConsistency();" />
+      <MemberSignature Language="F#" Value="override this.CheckReplicationConsistency : unit -&gt; unit" Usage="adamInstance.CheckReplicationConsistency " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.ConfigurationSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationSet As ConfigurationSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ConfigurationSet ^ ConfigurationSet { System::DirectoryServices::ActiveDirectory::ConfigurationSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationSet : System.DirectoryServices.ActiveDirectory.ConfigurationSet" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.ConfigurationSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.DefaultPartition" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultPartition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultPartition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPartition : string with get, set" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.DefaultPartition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="adamInstance.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AdamInstance ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="adamInstance.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.FindAll(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll (context As DirectoryContext, partitionName As String) As AdamInstanceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::AdamInstanceCollection ^ FindAll(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ partitionName);" />
+      <MemberSignature Language="F#" Value="static member FindAll : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.AdamInstanceCollection" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.FindAll (context, partitionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, partitionName As String) As AdamInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::AdamInstance ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ partitionName);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.AdamInstance" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.FindOne (context, partitionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetAdamInstance(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAdamInstance (context As DirectoryContext) As AdamInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::AdamInstance ^ GetAdamInstance(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetAdamInstance : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.AdamInstance" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.GetAdamInstance context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetAllReplicationNeighbors" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllReplicationNeighbors () As ReplicationNeighborCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationNeighborCollection ^ GetAllReplicationNeighbors();" />
+      <MemberSignature Language="F#" Value="override this.GetAllReplicationNeighbors : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" Usage="adamInstance.GetAllReplicationNeighbors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationConnectionFailures" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationConnectionFailures () As ReplicationFailureCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationFailureCollection ^ GetReplicationConnectionFailures();" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationConnectionFailures : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" Usage="adamInstance.GetReplicationConnectionFailures " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationCursors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationCursors (partition As String) As ReplicationCursorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationCursorCollection ^ GetReplicationCursors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationCursors : string -&gt; System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" Usage="adamInstance.GetReplicationCursors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -351,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationMetadata (objectPath As String) As ActiveDirectoryReplicationMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ActiveDirectoryReplicationMetadata ^ GetReplicationMetadata(System::String ^ objectPath);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationMetadata : string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" Usage="adamInstance.GetReplicationMetadata objectPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationNeighbors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationNeighbors (partition As String) As ReplicationNeighborCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationNeighborCollection ^ GetReplicationNeighbors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationNeighbors : string -&gt; System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" Usage="adamInstance.GetReplicationNeighbors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.GetReplicationOperationInformation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetReplicationOperationInformation () As ReplicationOperationInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::ReplicationOperationInformation ^ GetReplicationOperationInformation();" />
+      <MemberSignature Language="F#" Value="override this.GetReplicationOperationInformation : unit -&gt; System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" Usage="adamInstance.GetReplicationOperationInformation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -447,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.HostName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.HostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -469,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.InboundConnections" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InboundConnections As ReplicationConnectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ InboundConnections { System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InboundConnections : System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.InboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -493,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.IPAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IPAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ IPAddress { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IPAddress : string" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.IPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -517,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.LdapPort" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LdapPort As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LdapPort { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.LdapPort : int" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.LdapPort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -539,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.OutboundConnections" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OutboundConnections As ReplicationConnectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ OutboundConnections { System::DirectoryServices::ActiveDirectory::ReplicationConnectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutboundConnections : System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.OutboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -563,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.Roles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Roles As AdamRoleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::AdamRoleCollection ^ Roles { System::DirectoryServices::ActiveDirectory::AdamRoleCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Roles : System.DirectoryServices.ActiveDirectory.AdamRoleCollection" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.Roles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -587,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="adamInstance.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -610,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.SeizeRoleOwnership(System.DirectoryServices.ActiveDirectory.AdamRole)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeizeRoleOwnership (role As AdamRole)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeizeRoleOwnership(System::DirectoryServices::ActiveDirectory::AdamRole role);" />
+      <MemberSignature Language="F#" Value="member this.SeizeRoleOwnership : System.DirectoryServices.ActiveDirectory.AdamRole -&gt; unit" Usage="adamInstance.SeizeRoleOwnership role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -637,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.SiteName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SiteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SiteName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SiteName : string" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.SiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -660,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.SslPort" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SslPort As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SslPort { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SslPort : int" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.SslPort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -682,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.AdamInstance.SyncFromAllServersCallback" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SyncFromAllServersCallback As SyncUpdateCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ SyncFromAllServersCallback { System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ get(); void set(System::DirectoryServices::ActiveDirectory::SyncUpdateCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SyncFromAllServersCallback : System.DirectoryServices.ActiveDirectory.SyncUpdateCallback with get, set" Usage="System.DirectoryServices.ActiveDirectory.AdamInstance.SyncFromAllServersCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -706,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncReplicaFromAllServers (partition As String, options As SyncFromAllServersOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncReplicaFromAllServers(System::String ^ partition, System::DirectoryServices::ActiveDirectory::SyncFromAllServersOptions options);" />
+      <MemberSignature Language="F#" Value="override this.SyncReplicaFromAllServers : string * System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions -&gt; unit" Usage="adamInstance.SyncReplicaFromAllServers (partition, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -738,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.SyncReplicaFromServer(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncReplicaFromServer (partition As String, sourceServer As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncReplicaFromServer(System::String ^ partition, System::String ^ sourceServer);" />
+      <MemberSignature Language="F#" Value="override this.SyncReplicaFromServer : string * string -&gt; unit" Usage="adamInstance.SyncReplicaFromServer (partition, sourceServer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -771,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.TransferRoleOwnership(System.DirectoryServices.ActiveDirectory.AdamRole)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransferRoleOwnership (role As AdamRole)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransferRoleOwnership(System::DirectoryServices::ActiveDirectory::AdamRole role);" />
+      <MemberSignature Language="F#" Value="member this.TransferRoleOwnership : System.DirectoryServices.ActiveDirectory.AdamRole -&gt; unit" Usage="adamInstance.TransferRoleOwnership role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -798,6 +827,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.AdamInstance.TriggerSyncReplicaFromNeighbors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TriggerSyncReplicaFromNeighbors (partition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TriggerSyncReplicaFromNeighbors(System::String ^ partition);" />
+      <MemberSignature Language="F#" Value="override this.TriggerSyncReplicaFromNeighbors : string -&gt; unit" Usage="adamInstance.TriggerSyncReplicaFromNeighbors partition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

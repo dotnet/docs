@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmScalarPropertyAttribute&#xA;Inherits EdmPropertyAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmScalarPropertyAttribute sealed : System::Data::Objects::DataClasses::EdmPropertyAttribute" />
+  <TypeSignature Language="F#" Value="type EdmScalarPropertyAttribute = class&#xA;    inherit EdmPropertyAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityKeyProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EntityKeyProperty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityKeyProperty : bool with get, set" Usage="System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

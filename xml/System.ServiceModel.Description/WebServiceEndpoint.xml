@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebServiceEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebServiceEndpoint&#xA;Inherits ServiceEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceEndpoint abstract : System::ServiceModel::Description::ServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type WebServiceEndpoint = class&#xA;    inherit ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.ContentTypeMapper" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTypeMapper As WebContentTypeMapper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::WebContentTypeMapper ^ ContentTypeMapper { System::ServiceModel::Channels::WebContentTypeMapper ^ get(); void set(System::ServiceModel::Channels::WebContentTypeMapper ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentTypeMapper : System.ServiceModel.Channels.WebContentTypeMapper with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.ContentTypeMapper" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.CrossDomainScriptAccessEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property CrossDomainScriptAccessEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CrossDomainScriptAccessEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CrossDomainScriptAccessEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.CrossDomainScriptAccessEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.MaxBufferPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.MaxReceivedMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryReaderQuotas ^ ReaderQuotas { System::Xml::XmlDictionaryReaderQuotas ^ get(); void set(System::Xml::XmlDictionaryReaderQuotas ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As WebHttpSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WebHttpSecurity ^ Security { System::ServiceModel::WebHttpSecurity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.WebHttpSecurity" Usage="System.ServiceModel.Description.WebServiceEndpoint.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.TransferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.WebEndpointType" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property WebEndpointType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property Type ^ WebEndpointType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebEndpointType : Type" Usage="System.ServiceModel.Description.WebServiceEndpoint.WebEndpointType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebServiceEndpoint.WriteEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ WriteEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteEncoding : System.Text.Encoding with get, set" Usage="System.ServiceModel.Description.WebServiceEndpoint.WriteEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

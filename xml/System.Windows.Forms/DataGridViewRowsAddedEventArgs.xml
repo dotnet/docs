@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowsAddedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowsAddedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowsAddedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowsAddedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowsAddedEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, rowCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewRowsAddedEventArgs(int rowIndex, int rowCount);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewRowsAddedEventArgs : int * int -&gt; System.Windows.Forms.DataGridViewRowsAddedEventArgs" Usage="new System.Windows.Forms.DataGridViewRowsAddedEventArgs (rowIndex, rowCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

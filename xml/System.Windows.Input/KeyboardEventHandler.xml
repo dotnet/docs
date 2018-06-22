@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyboardEventHandler(sender As Object, e As KeyboardEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void KeyboardEventHandler(System::Object ^ sender, KeyboardEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type KeyboardEventHandler = delegate of obj * KeyboardEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

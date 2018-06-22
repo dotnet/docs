@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.CimType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CimType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CimType" />
+  <TypeSignature Language="F#" Value="type CimType = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 11" Usage="System.Management.CimType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Char16" />
       <MemberSignature Language="VB.NET" Value="Char16" />
       <MemberSignature Language="C++ CLI" Value="Char16" />
+      <MemberSignature Language="F#" Value="Char16 = 103" Usage="System.Management.CimType.Char16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="C++ CLI" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 101" Usage="System.Management.CimType.DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Management.CimType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Object" />
       <MemberSignature Language="VB.NET" Value="Object" />
       <MemberSignature Language="C++ CLI" Value="Object" />
+      <MemberSignature Language="F#" Value="Object = 13" Usage="System.Management.CimType.Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Real32" />
       <MemberSignature Language="VB.NET" Value="Real32" />
       <MemberSignature Language="C++ CLI" Value="Real32" />
+      <MemberSignature Language="F#" Value="Real32 = 4" Usage="System.Management.CimType.Real32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Real64" />
       <MemberSignature Language="VB.NET" Value="Real64" />
       <MemberSignature Language="C++ CLI" Value="Real64" />
+      <MemberSignature Language="F#" Value="Real64 = 5" Usage="System.Management.CimType.Real64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.Reference" />
       <MemberSignature Language="VB.NET" Value="Reference" />
       <MemberSignature Language="C++ CLI" Value="Reference" />
+      <MemberSignature Language="F#" Value="Reference = 102" Usage="System.Management.CimType.Reference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.SInt16" />
       <MemberSignature Language="VB.NET" Value="SInt16" />
       <MemberSignature Language="C++ CLI" Value="SInt16" />
+      <MemberSignature Language="F#" Value="SInt16 = 2" Usage="System.Management.CimType.SInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.SInt32" />
       <MemberSignature Language="VB.NET" Value="SInt32" />
       <MemberSignature Language="C++ CLI" Value="SInt32" />
+      <MemberSignature Language="F#" Value="SInt32 = 3" Usage="System.Management.CimType.SInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.SInt64" />
       <MemberSignature Language="VB.NET" Value="SInt64" />
       <MemberSignature Language="C++ CLI" Value="SInt64" />
+      <MemberSignature Language="F#" Value="SInt64 = 20" Usage="System.Management.CimType.SInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.SInt8" />
       <MemberSignature Language="VB.NET" Value="SInt8" />
       <MemberSignature Language="C++ CLI" Value="SInt8" />
+      <MemberSignature Language="F#" Value="SInt8 = 16" Usage="System.Management.CimType.SInt8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 8" Usage="System.Management.CimType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.UInt16" />
       <MemberSignature Language="VB.NET" Value="UInt16" />
       <MemberSignature Language="C++ CLI" Value="UInt16" />
+      <MemberSignature Language="F#" Value="UInt16 = 18" Usage="System.Management.CimType.UInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.UInt32" />
       <MemberSignature Language="VB.NET" Value="UInt32" />
       <MemberSignature Language="C++ CLI" Value="UInt32" />
+      <MemberSignature Language="F#" Value="UInt32 = 19" Usage="System.Management.CimType.UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.UInt64" />
       <MemberSignature Language="VB.NET" Value="UInt64" />
       <MemberSignature Language="C++ CLI" Value="UInt64" />
+      <MemberSignature Language="F#" Value="UInt64 = 21" Usage="System.Management.CimType.UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.CimType.UInt8" />
       <MemberSignature Language="VB.NET" Value="UInt8" />
       <MemberSignature Language="C++ CLI" Value="UInt8" />
+      <MemberSignature Language="F#" Value="UInt8 = 17" Usage="System.Management.CimType.UInt8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

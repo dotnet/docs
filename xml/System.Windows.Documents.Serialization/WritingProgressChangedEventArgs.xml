@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WritingProgressChangedEventArgs&#xA;Inherits ProgressChangedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WritingProgressChangedEventArgs : System::ComponentModel::ProgressChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type WritingProgressChangedEventArgs = class&#xA;    inherit ProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.#ctor(System.Windows.Documents.Serialization.WritingProgressChangeLevel,System.Int32,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writingLevel As WritingProgressChangeLevel, number As Integer, progressPercentage As Integer, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WritingProgressChangedEventArgs(System::Windows::Documents::Serialization::WritingProgressChangeLevel writingLevel, int number, int progressPercentage, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Serialization.WritingProgressChangedEventArgs : System.Windows.Documents.Serialization.WritingProgressChangeLevel * int * int * obj -&gt; System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" Usage="new System.Windows.Documents.Serialization.WritingProgressChangedEventArgs (writingLevel, number, progressPercentage, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Number : int" Usage="System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WritingLevel As WritingProgressChangeLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Serialization::WritingProgressChangeLevel WritingLevel { System::Windows::Documents::Serialization::WritingProgressChangeLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.WritingLevel : System.Windows.Documents.Serialization.WritingProgressChangeLevel" Usage="System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

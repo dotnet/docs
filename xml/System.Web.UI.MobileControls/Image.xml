@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Image" />
   <TypeSignature Language="VB.NET" Value="Public Class Image&#xA;Inherits MobileControl&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class Image : System::Web::UI::MobileControls::MobileControl, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit MobileControl&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Image.AlternateText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternateText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternateText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternateText : string with get, set" Usage="System.Web.UI.MobileControls.Image.AlternateText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Image.ImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.MobileControls.Image.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Image.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.MobileControls.Image.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Image.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (argument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RaisePostBackEvent : string -&gt; unit" Usage="image.RaisePostBackEvent argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Image.SoftkeyLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property SoftkeyLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoftkeyLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoftkeyLabel : string with get, set" Usage="System.Web.UI.MobileControls.Image.SoftkeyLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

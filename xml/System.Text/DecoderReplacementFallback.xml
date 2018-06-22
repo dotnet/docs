@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderReplacementFallback" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderReplacementFallback&#xA;Inherits DecoderFallback" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecoderReplacementFallback sealed : System::Text::DecoderFallback" />
+  <TypeSignature Language="F#" Value="type DecoderReplacementFallback = class&#xA;    inherit DecoderFallback" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (replacement As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoderReplacementFallback(System::String ^ replacement);" />
+      <MemberSignature Language="F#" Value="new System.Text.DecoderReplacementFallback : string -&gt; System.Text.DecoderReplacementFallback" Usage="new System.Text.DecoderReplacementFallback replacement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.CreateFallbackBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFallbackBuffer () As DecoderFallbackBuffer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::DecoderFallbackBuffer ^ CreateFallbackBuffer();" />
+      <MemberSignature Language="F#" Value="override this.CreateFallbackBuffer : unit -&gt; System.Text.DecoderFallbackBuffer" Usage="decoderReplacementFallback.CreateFallbackBuffer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderReplacementFallback.DefaultString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultString : string" Usage="System.Text.DecoderReplacementFallback.DefaultString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="decoderReplacementFallback.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -267,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="decoderReplacementFallback.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -309,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderReplacementFallback.MaxCharCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxCharCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxCharCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharCount : int" Usage="System.Text.DecoderReplacementFallback.MaxCharCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

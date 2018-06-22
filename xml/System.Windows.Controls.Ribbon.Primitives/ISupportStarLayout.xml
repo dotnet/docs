@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISupportStarLayout" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISupportStarLayout" />
+  <TypeSignature Language="F#" Value="type ISupportStarLayout = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.IsStarLayoutPass" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStarLayoutPass As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStarLayoutPass { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStarLayoutPass : bool" Usage="System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.IsStarLayoutPass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.RegisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterStarLayoutProvider (starLayoutInfoProvider As IProvideStarLayoutInfoBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterStarLayoutProvider(System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase ^ starLayoutInfoProvider);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit" Usage="iSupportStarLayout.RegisterStarLayoutProvider starLayoutInfoProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.UnregisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterStarLayoutProvider (starLayoutInfoProvider As IProvideStarLayoutInfoBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterStarLayoutProvider(System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase ^ starLayoutInfoProvider);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit" Usage="iSupportStarLayout.UnregisterStarLayoutProvider starLayoutInfoProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

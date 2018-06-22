@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.TransactionOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionOption" />
+  <TypeSignature Language="F#" Value="type TransactionOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.TransactionOption.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 0" Usage="System.Web.Services.TransactionOption.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.TransactionOption.NotSupported" />
       <MemberSignature Language="VB.NET" Value="NotSupported" />
       <MemberSignature Language="C++ CLI" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.Web.Services.TransactionOption.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.TransactionOption.Required" />
       <MemberSignature Language="VB.NET" Value="Required" />
       <MemberSignature Language="C++ CLI" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 2" Usage="System.Web.Services.TransactionOption.Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.TransactionOption.RequiresNew" />
       <MemberSignature Language="VB.NET" Value="RequiresNew" />
       <MemberSignature Language="C++ CLI" Value="RequiresNew" />
+      <MemberSignature Language="F#" Value="RequiresNew = 3" Usage="System.Web.Services.TransactionOption.RequiresNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.TransactionOption.Supported" />
       <MemberSignature Language="VB.NET" Value="Supported" />
       <MemberSignature Language="C++ CLI" Value="Supported" />
+      <MemberSignature Language="F#" Value="Supported = 4" Usage="System.Web.Services.TransactionOption.Supported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CustomBuildEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomBuildEventArgs&#xA;Inherits LazyFormattedBuildEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomBuildEventArgs abstract : Microsoft::Build::Framework::LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="F#" Value="type CustomBuildEventArgs = class&#xA;    inherit LazyFormattedBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomBuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CustomBuildEventArgs : string * string * string -&gt; Microsoft.Build.Framework.CustomBuildEventArgs" Usage="new Microsoft.Build.Framework.CustomBuildEventArgs (message, helpKeyword, senderName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomBuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CustomBuildEventArgs : string * string * string * DateTime -&gt; Microsoft.Build.Framework.CustomBuildEventArgs" Usage="new Microsoft.Build.Framework.CustomBuildEventArgs (message, helpKeyword, senderName, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomBuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.CustomBuildEventArgs : string * string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.CustomBuildEventArgs" Usage="new Microsoft.Build.Framework.CustomBuildEventArgs (message, helpKeyword, senderName, eventTimestamp, messageArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

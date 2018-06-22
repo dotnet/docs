@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AccessedThroughPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AccessedThroughPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessedThroughPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AccessedThroughPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AccessedThroughPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessedThroughPropertyAttribute(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.AccessedThroughPropertyAttribute : string -&gt; System.Runtime.CompilerServices.AccessedThroughPropertyAttribute" Usage="new System.Runtime.CompilerServices.AccessedThroughPropertyAttribute propertyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.AccessedThroughPropertyAttribute.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Runtime.CompilerServices.AccessedThroughPropertyAttribute.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

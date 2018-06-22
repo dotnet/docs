@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendContent" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SendContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendContent abstract" />
+  <TypeSignature Language="F#" Value="type SendContent = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendContent.Create(System.Activities.InArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (message As InArgument) As SendMessageContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::SendMessageContent ^ Create(System::Activities::InArgument ^ message);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Activities.InArgument -&gt; System.ServiceModel.Activities.SendMessageContent" Usage="System.ServiceModel.Activities.SendContent.Create message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendContent.Create(System.Collections.Generic.IDictionary{System.String,System.Activities.InArgument})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (parameters As IDictionary(Of String, InArgument)) As SendParametersContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::SendParametersContent ^ Create(System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IDictionary&lt;string, System.Activities.InArgument&gt; -&gt; System.ServiceModel.Activities.SendParametersContent" Usage="System.ServiceModel.Activities.SendContent.Create parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendContent.Create(System.Activities.InArgument,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (message As InArgument, declaredMessageType As Type) As SendMessageContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Activities::SendMessageContent ^ Create(System::Activities::InArgument ^ message, Type ^ declaredMessageType);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Activities.InArgument * Type -&gt; System.ServiceModel.Activities.SendMessageContent" Usage="System.ServiceModel.Activities.SendContent.Create (message, declaredMessageType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

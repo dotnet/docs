@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationException" />
   <TypeSignature Language="VB.NET" Value="Public Class SerializationException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SerializationException : SystemException" />
+  <TypeSignature Language="F#" Value="type SerializationException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -113,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationException : string -&gt; System.Runtime.Serialization.SerializationException" Usage="new System.Runtime.Serialization.SerializationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SerializationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.SerializationException" Usage="new System.Runtime.Serialization.SerializationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationException : string * Exception -&gt; System.Runtime.Serialization.SerializationException" Usage="new System.Runtime.Serialization.SerializationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

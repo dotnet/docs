@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ActivityChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Activity activity, class System.ComponentModel.MemberDescriptor member, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.#ctor(System.Workflow.ComponentModel.Activity,System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityChangedEventArgs(System::Workflow::ComponentModel::Activity ^ activity, System::ComponentModel::MemberDescriptor ^ member, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityChangedEventArgs : System.Workflow.ComponentModel.Activity * System.ComponentModel.MemberDescriptor * obj * obj -&gt; System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" Usage="new System.Workflow.ComponentModel.Design.ActivityChangedEventArgs (activity, member, oldValue, newValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Activity { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MemberDescriptor ^ Member { System::ComponentModel::MemberDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.ComponentModel.MemberDescriptor" Usage="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.NewValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OldValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : obj" Usage="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs.OldValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ValidateValueCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ValidateValueCallback(value As Object) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool ValidateValueCallback(System::Object ^ value);" />
+  <TypeSignature Language="F#" Value="type ValidateValueCallback = delegate of obj -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleBFile" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleBFile&#xA;Inherits Stream&#xA;Implements ICloneable, INullable" />
   <TypeSignature Language="C++ CLI" Value="public ref class OracleBFile sealed : System::IO::Stream, ICloneable, System::Data::SqlTypes::INullable" />
+  <TypeSignature Language="F#" Value="type OracleBFile = class&#xA;    inherit Stream&#xA;    interface ICloneable&#xA;    interface INullable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.Data.OracleClient.OracleBFile.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.Data.OracleClient.OracleBFile.CanSeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.Data.OracleClient.OracleBFile.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="oracleBFile.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As OracleConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleConnection ^ Connection { System::Data::OracleClient::OracleConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.OracleClient.OracleConnection" Usage="System.Data.OracleClient.OracleBFile.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.CopyTo(System.Data.OracleClient.OracleLob)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (destination As OracleLob) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long CopyTo(System::Data::OracleClient::OracleLob ^ destination);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.OracleClient.OracleLob -&gt; int64" Usage="oracleBFile.CopyTo destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.CopyTo(System.Data.OracleClient.OracleLob,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (destination As OracleLob, destinationOffset As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long CopyTo(System::Data::OracleClient::OracleLob ^ destination, long destinationOffset);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.OracleClient.OracleLob * int64 -&gt; int64" Usage="oracleBFile.CopyTo (destination, destinationOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.CopyTo(System.Int64,System.Data.OracleClient.OracleLob,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (sourceOffset As Long, destination As OracleLob, destinationOffset As Long, amount As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long CopyTo(long sourceOffset, System::Data::OracleClient::OracleLob ^ destination, long destinationOffset, long amount);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : int64 * System.Data.OracleClient.OracleLob * int64 * int64 -&gt; int64" Usage="oracleBFile.CopyTo (sourceOffset, destination, destinationOffset, amount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.DirectoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectoryName : string" Usage="System.Data.OracleClient.OracleBFile.DirectoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="oracleBFile.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -380,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.FileExists" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FileExists { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileExists : bool" Usage="System.Data.OracleClient.OracleBFile.FileExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Data.OracleClient.OracleBFile.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="oracleBFile.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -451,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.OracleClient.OracleBFile.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -475,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Data.OracleClient.OracleBFile.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -496,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleBFile.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleBFile " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleBFile ^ Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.OracleClient.OracleBFile" Usage="System.Data.OracleClient.OracleBFile.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -524,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.Data.OracleClient.OracleBFile.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -555,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="oracleBFile.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -622,6 +641,7 @@ using (dataReader) {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="oracleBFile.Seek (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -683,6 +703,7 @@ using (dataReader) {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.SetFileName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFileName (directory As String, file As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFileName(System::String ^ directory, System::String ^ file);" />
+      <MemberSignature Language="F#" Value="member this.SetFileName : string * string -&gt; unit" Usage="oracleBFile.SetFileName (directory, file)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -745,6 +766,7 @@ using (dataReader) {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="oracleBFile.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -769,6 +791,7 @@ using (dataReader) {
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleBFile.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Data.OracleClient.OracleBFile.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -799,6 +822,7 @@ using (dataReader) {
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBFile.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="oracleBFile.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

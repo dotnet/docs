@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.TYPEATTR" />
   <TypeSignature Language="VB.NET" Value="Public Structure TYPEATTR" />
   <TypeSignature Language="C++ CLI" Value="public value class TYPEATTR" />
+  <TypeSignature Language="F#" Value="type TYPEATTR = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbAlignment" />
       <MemberSignature Language="VB.NET" Value="Public cbAlignment As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short cbAlignment;" />
+      <MemberSignature Language="F#" Value="val mutable cbAlignment : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cbAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeInstance" />
       <MemberSignature Language="VB.NET" Value="Public cbSizeInstance As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int cbSizeInstance;" />
+      <MemberSignature Language="F#" Value="val mutable cbSizeInstance : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeVft" />
       <MemberSignature Language="VB.NET" Value="Public cbSizeVft As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short cbSizeVft;" />
+      <MemberSignature Language="F#" Value="val mutable cbSizeVft : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeVft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cFuncs" />
       <MemberSignature Language="VB.NET" Value="Public cFuncs As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short cFuncs;" />
+      <MemberSignature Language="F#" Value="val mutable cFuncs : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cFuncs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cImplTypes" />
       <MemberSignature Language="VB.NET" Value="Public cImplTypes As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short cImplTypes;" />
+      <MemberSignature Language="F#" Value="val mutable cImplTypes : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cImplTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cVars" />
       <MemberSignature Language="VB.NET" Value="Public cVars As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short cVars;" />
+      <MemberSignature Language="F#" Value="val mutable cVars : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.cVars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -293,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.dwReserved" />
       <MemberSignature Language="VB.NET" Value="Public dwReserved As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int dwReserved;" />
+      <MemberSignature Language="F#" Value="val mutable dwReserved : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.dwReserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.guid" />
       <MemberSignature Language="VB.NET" Value="Public guid As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: Guid guid;" />
+      <MemberSignature Language="F#" Value="val mutable guid : Guid" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.idldescType" />
       <MemberSignature Language="VB.NET" Value="Public idldescType As IDLDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::IDLDESC idldescType;" />
+      <MemberSignature Language="F#" Value="val mutable idldescType : System.Runtime.InteropServices.ComTypes.IDLDESC" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.idldescType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -416,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.lcid" />
       <MemberSignature Language="VB.NET" Value="Public lcid As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int lcid;" />
+      <MemberSignature Language="F#" Value="val mutable lcid : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -457,6 +468,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.lpstrSchema" />
       <MemberSignature Language="VB.NET" Value="Public lpstrSchema As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpstrSchema;" />
+      <MemberSignature Language="F#" Value="val mutable lpstrSchema : nativeint" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.lpstrSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -498,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.MEMBER_ID_NIL" />
       <MemberSignature Language="VB.NET" Value="Public Const MEMBER_ID_NIL As Integer  = -1" />
       <MemberSignature Language="C++ CLI" Value="public: int MEMBER_ID_NIL = -1;" />
+      <MemberSignature Language="F#" Value="val mutable MEMBER_ID_NIL : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.MEMBER_ID_NIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -540,6 +553,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.memidConstructor" />
       <MemberSignature Language="VB.NET" Value="Public memidConstructor As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int memidConstructor;" />
+      <MemberSignature Language="F#" Value="val mutable memidConstructor : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.memidConstructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -581,6 +595,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.memidDestructor" />
       <MemberSignature Language="VB.NET" Value="Public memidDestructor As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int memidDestructor;" />
+      <MemberSignature Language="F#" Value="val mutable memidDestructor : int" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.memidDestructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -622,6 +637,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.tdescAlias" />
       <MemberSignature Language="VB.NET" Value="Public tdescAlias As TYPEDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEDESC tdescAlias;" />
+      <MemberSignature Language="F#" Value="val mutable tdescAlias : System.Runtime.InteropServices.ComTypes.TYPEDESC" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.tdescAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -663,6 +679,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.typekind" />
       <MemberSignature Language="VB.NET" Value="Public typekind As TYPEKIND " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEKIND typekind;" />
+      <MemberSignature Language="F#" Value="val mutable typekind : System.Runtime.InteropServices.ComTypes.TYPEKIND" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.typekind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -704,6 +721,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wMajorVerNum" />
       <MemberSignature Language="VB.NET" Value="Public wMajorVerNum As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wMajorVerNum;" />
+      <MemberSignature Language="F#" Value="val mutable wMajorVerNum : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.wMajorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -745,6 +763,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wMinorVerNum" />
       <MemberSignature Language="VB.NET" Value="Public wMinorVerNum As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wMinorVerNum;" />
+      <MemberSignature Language="F#" Value="val mutable wMinorVerNum : int16" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.wMinorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -786,6 +805,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wTypeFlags" />
       <MemberSignature Language="VB.NET" Value="Public wTypeFlags As TYPEFLAGS " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEFLAGS wTypeFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wTypeFlags : System.Runtime.InteropServices.ComTypes.TYPEFLAGS" Usage="System.Runtime.InteropServices.ComTypes.TYPEATTR.wTypeFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

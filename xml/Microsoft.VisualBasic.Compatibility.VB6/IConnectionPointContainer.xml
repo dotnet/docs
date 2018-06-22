@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConnectionPointContainer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConnectionPointContainer" />
+  <TypeSignature Language="F#" Value="type IConnectionPointContainer = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer.EnumConnectionPoints(Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumConnectionPoints (ByRef enumC As IEnumConnectionPoints)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnectionPoints([Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::IEnumConnectionPoints ^ % enumC);" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnectionPoints :  -&gt; unit" Usage="iConnectionPointContainer.EnumConnectionPoints enumC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer.FindConnectionPoint(System.Guid@,Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindConnectionPoint (ByRef riid As Guid, ByRef cp As IConnectionPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindConnectionPoint(Guid % riid, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::IConnectionPoint ^ % cp);" />
+      <MemberSignature Language="F#" Value="abstract member FindConnectionPoint :  *  -&gt; unit" Usage="iConnectionPointContainer.FindConnectionPoint (riid, cp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

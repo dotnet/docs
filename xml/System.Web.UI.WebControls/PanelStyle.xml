@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PanelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class PanelStyle&#xA;Inherits Style" />
   <TypeSignature Language="C++ CLI" Value="public ref class PanelStyle : System::Web::UI::WebControls::Style" />
+  <TypeSignature Language="F#" Value="type PanelStyle = class&#xA;    inherit Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PanelStyle.#ctor(System.Web.UI.StateBag)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PanelStyle(System::Web::UI::StateBag ^ bag);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.PanelStyle : System.Web.UI.StateBag -&gt; System.Web.UI.WebControls.PanelStyle" Usage="new System.Web.UI.WebControls.PanelStyle bag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PanelStyle.BackImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BackImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackImageUrl : string with get, set" Usage="System.Web.UI.WebControls.PanelStyle.BackImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PanelStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Web.UI.WebControls.Style -&gt; unit" Usage="panelStyle.CopyFrom s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PanelStyle.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Direction As ContentDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ContentDirection Direction { System::Web::UI::WebControls::ContentDirection get(); void set(System::Web::UI::WebControls::ContentDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Web.UI.WebControls.ContentDirection with get, set" Usage="System.Web.UI.WebControls.PanelStyle.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PanelStyle.HorizontalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HorizontalAlign As HorizontalAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.PanelStyle.HorizontalAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PanelStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.MergeWith : System.Web.UI.WebControls.Style -&gt; unit" Usage="panelStyle.MergeWith s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PanelStyle.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="panelStyle.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PanelStyle.ScrollBars" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ScrollBars As ScrollBars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ScrollBars ScrollBars { System::Web::UI::WebControls::ScrollBars get(); void set(System::Web::UI::WebControls::ScrollBars value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollBars : System.Web.UI.WebControls.ScrollBars with get, set" Usage="System.Web.UI.WebControls.PanelStyle.ScrollBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -368,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PanelStyle.Wrap" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Wrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Wrap { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Wrap : bool with get, set" Usage="System.Web.UI.WebControls.PanelStyle.Wrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

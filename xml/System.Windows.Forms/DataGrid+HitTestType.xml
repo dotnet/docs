@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGrid.HitTestType" />
   <TypeSignature Language="C++ CLI" Value="public: enum class DataGrid::HitTestType" />
+  <TypeSignature Language="F#" Value="type DataGrid.HitTestType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.Caption" />
       <MemberSignature Language="VB.NET" Value="Caption" />
       <MemberSignature Language="C++ CLI" Value="Caption" />
+      <MemberSignature Language="F#" Value="Caption = 32" Usage="System.Windows.Forms.DataGrid.HitTestType.Caption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.Cell" />
       <MemberSignature Language="VB.NET" Value="Cell" />
       <MemberSignature Language="C++ CLI" Value="Cell" />
+      <MemberSignature Language="F#" Value="Cell = 1" Usage="System.Windows.Forms.DataGrid.HitTestType.Cell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ColumnHeader" />
       <MemberSignature Language="VB.NET" Value="ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="ColumnHeader" />
+      <MemberSignature Language="F#" Value="ColumnHeader = 2" Usage="System.Windows.Forms.DataGrid.HitTestType.ColumnHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ColumnResize" />
       <MemberSignature Language="VB.NET" Value="ColumnResize" />
       <MemberSignature Language="C++ CLI" Value="ColumnResize" />
+      <MemberSignature Language="F#" Value="ColumnResize = 8" Usage="System.Windows.Forms.DataGrid.HitTestType.ColumnResize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGrid.HitTestType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.ParentRows" />
       <MemberSignature Language="VB.NET" Value="ParentRows" />
       <MemberSignature Language="C++ CLI" Value="ParentRows" />
+      <MemberSignature Language="F#" Value="ParentRows = 64" Usage="System.Windows.Forms.DataGrid.HitTestType.ParentRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.RowHeader" />
       <MemberSignature Language="VB.NET" Value="RowHeader" />
       <MemberSignature Language="C++ CLI" Value="RowHeader" />
+      <MemberSignature Language="F#" Value="RowHeader = 4" Usage="System.Windows.Forms.DataGrid.HitTestType.RowHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestType.RowResize" />
       <MemberSignature Language="VB.NET" Value="RowResize" />
       <MemberSignature Language="C++ CLI" Value="RowResize" />
+      <MemberSignature Language="F#" Value="RowResize = 16" Usage="System.Windows.Forms.DataGrid.HitTestType.RowResize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

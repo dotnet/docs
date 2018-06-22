@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateOutArgument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DelegateOutArgument&#xA;Inherits DelegateArgument" />
   <TypeSignature Language="C++ CLI" Value="public ref class DelegateOutArgument abstract : System::Activities::DelegateArgument" />
+  <TypeSignature Language="F#" Value="type DelegateOutArgument = class&#xA;    inherit DelegateArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySpanAction`2" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ReadOnlySpanAction(Of T, In TArg)(span As ReadOnlySpan(Of T), arg As TArg)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TArg&gt;&#xA;public delegate void ReadOnlySpanAction(ReadOnlySpan&lt;T&gt; span, TArg arg);" />
+  <TypeSignature Language="F#" Value="type ReadOnlySpanAction&lt;'T, 'Arg&gt; = delegate of ReadOnlySpan&lt;'T&gt; * 'Arg -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>

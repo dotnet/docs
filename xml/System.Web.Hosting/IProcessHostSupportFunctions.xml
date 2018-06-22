@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHostSupportFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessHostSupportFunctions" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessHostSupportFunctions" />
+  <TypeSignature Language="F#" Value="type IProcessHostSupportFunctions = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetAppHostConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppHostConfigFilename () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAppHostConfigFilename();" />
+      <MemberSignature Language="F#" Value="abstract member GetAppHostConfigFilename : unit -&gt; string" Usage="iProcessHostSupportFunctions.GetAppHostConfigFilename " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetApplicationProperties(System.String,System.String@,System.String@,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetApplicationProperties (appId As String, ByRef virtualPath As String, ByRef physicalPath As String, ByRef siteName As String, ByRef siteId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetApplicationProperties(System::String ^ appId, [Runtime::InteropServices::Out] System::String ^ % virtualPath, [Runtime::InteropServices::Out] System::String ^ % physicalPath, [Runtime::InteropServices::Out] System::String ^ % siteName, [Runtime::InteropServices::Out] System::String ^ % siteId);" />
+      <MemberSignature Language="F#" Value="abstract member GetApplicationProperties : string *  *  *  *  -&gt; unit" Usage="iProcessHostSupportFunctions.GetApplicationProperties (appId, virtualPath, physicalPath, siteName, siteId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetConfigToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigToken (appId As String) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetConfigToken(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigToken : string -&gt; nativeint" Usage="iProcessHostSupportFunctions.GetConfigToken appId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetNativeConfigurationSystem" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNativeConfigurationSystem () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetNativeConfigurationSystem();" />
+      <MemberSignature Language="F#" Value="abstract member GetNativeConfigurationSystem : unit -&gt; nativeint" Usage="iProcessHostSupportFunctions.GetNativeConfigurationSystem " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetRootWebConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRootWebConfigFilename () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRootWebConfigFilename();" />
+      <MemberSignature Language="F#" Value="abstract member GetRootWebConfigFilename : unit -&gt; string" Usage="iProcessHostSupportFunctions.GetRootWebConfigFilename " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.MapPath(System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MapPath (appId As String, virtualPath As String, ByRef physicalPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MapPath(System::String ^ appId, System::String ^ virtualPath, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
+      <MemberSignature Language="F#" Value="abstract member MapPath : string * string *  -&gt; unit" Usage="iProcessHostSupportFunctions.MapPath (appId, virtualPath, physicalPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

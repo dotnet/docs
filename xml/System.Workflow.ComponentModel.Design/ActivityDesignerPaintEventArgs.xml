@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerPaintEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerPaintEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerPaintEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipRectangle, valuetype System.Drawing.Rectangle viewPort, class System.Workflow.ComponentModel.Design.ActivityDesignerTheme designerTheme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.ActivityDesignerTheme)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerPaintEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipRectangle, System::Drawing::Rectangle viewPort, System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ designerTheme);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.ActivityDesignerTheme -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs (graphics, clipRectangle, viewPort, designerTheme)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.AmbientTheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AmbientTheme As AmbientTheme" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::AmbientTheme ^ AmbientTheme { System::Workflow::ComponentModel::Design::AmbientTheme ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AmbientTheme : System.Workflow.ComponentModel.Design.AmbientTheme" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.AmbientTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.ClipRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClipRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ClipRectangle { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClipRectangle : System.Drawing.Rectangle" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.ClipRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.DesignerTheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerTheme As ActivityDesignerTheme" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ DesignerTheme { System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerTheme : System.Workflow.ComponentModel.Design.ActivityDesignerTheme" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.DesignerTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

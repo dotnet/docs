@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve.ECCurveType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ECCurve.ECCurveType" />
   <TypeSignature Language="C++ CLI" Value="public: enum class ECCurve::ECCurveType" />
+  <TypeSignature Language="F#" Value="type ECCurve.ECCurveType = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
       <MemberSignature Language="VB.NET" Value="Characteristic2" />
       <MemberSignature Language="C++ CLI" Value="Characteristic2" />
+      <MemberSignature Language="F#" Value="Characteristic2 = 4" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
       <MemberSignature Language="VB.NET" Value="Implicit" />
       <MemberSignature Language="C++ CLI" Value="Implicit" />
+      <MemberSignature Language="F#" Value="Implicit = 0" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Named" />
       <MemberSignature Language="VB.NET" Value="Named" />
       <MemberSignature Language="C++ CLI" Value="Named" />
+      <MemberSignature Language="F#" Value="Named = 5" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Named" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
       <MemberSignature Language="VB.NET" Value="PrimeMontgomery" />
       <MemberSignature Language="C++ CLI" Value="PrimeMontgomery" />
+      <MemberSignature Language="F#" Value="PrimeMontgomery = 3" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
       <MemberSignature Language="VB.NET" Value="PrimeShortWeierstrass" />
       <MemberSignature Language="C++ CLI" Value="PrimeShortWeierstrass" />
+      <MemberSignature Language="F#" Value="PrimeShortWeierstrass = 1" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
       <MemberSignature Language="VB.NET" Value="PrimeTwistedEdwards" />
       <MemberSignature Language="C++ CLI" Value="PrimeTwistedEdwards" />
+      <MemberSignature Language="F#" Value="PrimeTwistedEdwards = 2" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

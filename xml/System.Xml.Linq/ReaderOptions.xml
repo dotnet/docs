@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.ReaderOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReaderOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReaderOptions" />
+  <TypeSignature Language="F#" Value="type ReaderOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Linq.ReaderOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces" />
       <MemberSignature Language="VB.NET" Value="OmitDuplicateNamespaces" />
       <MemberSignature Language="C++ CLI" Value="OmitDuplicateNamespaces" />
+      <MemberSignature Language="F#" Value="OmitDuplicateNamespaces = 1" Usage="System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSObject" />
   <TypeSignature Language="VB.NET" Value="Public Class JSObject&#xA;Inherits ScriptObject&#xA;Implements IEnumerable, IExpando, IReflect" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSObject : Microsoft::JScript::ScriptObject, System::Collections::IEnumerable, System::Reflection::IReflect, System::Runtime::InteropServices::Expando::IExpando" />
+  <TypeSignature Language="F#" Value="type JSObject = class&#xA;    inherit ScriptObject&#xA;    interface IEnumerable&#xA;    interface IExpando&#xA;    interface IReflect" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.AddField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddField : string -&gt; System.Reflection.FieldInfo&#xA;override this.AddField : string -&gt; System.Reflection.FieldInfo" Usage="jSObject.AddField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSObject.field_table" />
       <MemberSignature Language="VB.NET" Value="Protected field_table As ArrayList " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::ArrayList ^ field_table;" />
+      <MemberSignature Language="F#" Value="val mutable field_table : System.Collections.ArrayList" Usage="Microsoft.JScript.JSObject.field_table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="jSObject.GetMember (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMember(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="jSObject.GetMembers bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMembers(System.Reflection.BindingFlags)</InterfaceMember>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.SetMemberValue2(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMemberValue2 (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMemberValue2(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetMemberValue2 : string * obj -&gt; unit" Usage="jSObject.SetMemberValue2 (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -311,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jSObject.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

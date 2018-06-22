@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.ManagedInstallerClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagedInstallerClass&#xA;Implements IManagedInstaller" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagedInstallerClass : System::Configuration::Install::IManagedInstaller" />
+  <TypeSignature Language="F#" Value="type ManagedInstallerClass = class&#xA;    interface IManagedInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ManagedInstallerClass.InstallHelper(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallHelper (args As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallHelper(cli::array &lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member InstallHelper : string[] -&gt; unit" Usage="System.Configuration.Install.ManagedInstallerClass.InstallHelper args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

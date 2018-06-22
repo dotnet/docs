@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IProfferServiceContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProfferServiceContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProfferServiceContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IProfferServiceContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IProfferServiceContract.ProfferService(System.String,System.AddIn.Contract.IServiceProviderContract)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProfferService (serviceIdentifier As String, service As IServiceProviderContract)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProfferService(System::String ^ serviceIdentifier, System::AddIn::Contract::IServiceProviderContract ^ service);" />
+      <MemberSignature Language="F#" Value="abstract member ProfferService : string * System.AddIn.Contract.IServiceProviderContract -&gt; unit" Usage="iProfferServiceContract.ProfferService (serviceIdentifier, service)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IProfferServiceContract.RevokeService(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevokeService (serviceIdentifier As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevokeService(System::String ^ serviceIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member RevokeService : string -&gt; unit" Usage="iProfferServiceContract.RevokeService serviceIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

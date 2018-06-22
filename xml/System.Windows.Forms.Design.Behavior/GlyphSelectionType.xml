@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.GlyphSelectionType" />
   <TypeSignature Language="VB.NET" Value="Public Enum GlyphSelectionType" />
   <TypeSignature Language="C++ CLI" Value="public enum class GlyphSelectionType" />
+  <TypeSignature Language="F#" Value="type GlyphSelectionType = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.GlyphSelectionType.NotSelected" />
       <MemberSignature Language="VB.NET" Value="NotSelected" />
       <MemberSignature Language="C++ CLI" Value="NotSelected" />
+      <MemberSignature Language="F#" Value="NotSelected = 0" Usage="System.Windows.Forms.Design.Behavior.GlyphSelectionType.NotSelected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.GlyphSelectionType.Selected" />
       <MemberSignature Language="VB.NET" Value="Selected" />
       <MemberSignature Language="C++ CLI" Value="Selected" />
+      <MemberSignature Language="F#" Value="Selected = 1" Usage="System.Windows.Forms.Design.Behavior.GlyphSelectionType.Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.GlyphSelectionType.SelectedPrimary" />
       <MemberSignature Language="VB.NET" Value="SelectedPrimary" />
       <MemberSignature Language="C++ CLI" Value="SelectedPrimary" />
+      <MemberSignature Language="F#" Value="SelectedPrimary = 2" Usage="System.Windows.Forms.Design.Behavior.GlyphSelectionType.SelectedPrimary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

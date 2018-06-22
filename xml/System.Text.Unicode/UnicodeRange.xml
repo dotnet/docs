@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Unicode.UnicodeRange" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnicodeRange" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnicodeRange sealed" />
+  <TypeSignature Language="F#" Value="type UnicodeRange = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
       <MemberSignature Language="DocId" Value="M:System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (firstCodePoint As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnicodeRange(int firstCodePoint, int length);" />
+      <MemberSignature Language="F#" Value="new System.Text.Unicode.UnicodeRange : int * int -&gt; System.Text.Unicode.UnicodeRange" Usage="new System.Text.Unicode.UnicodeRange (firstCodePoint, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -76,6 +78,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
       <MemberSignature Language="DocId" Value="M:System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (firstCharacter As Char, lastCharacter As Char) As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Unicode::UnicodeRange ^ Create(char firstCharacter, char lastCharacter);" />
+      <MemberSignature Language="F#" Value="static member Create : char * char -&gt; System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRange.Create (firstCharacter, lastCharacter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -107,6 +110,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRange.FirstCodePoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstCodePoint As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstCodePoint { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstCodePoint : int" Usage="System.Text.Unicode.UnicodeRange.FirstCodePoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -129,6 +133,7 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRange.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Text.Unicode.UnicodeRange.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class BookmarkResumptionQueryElementCollection&#xA;Inherits TrackingConfigurationCollection(Of BookmarkResumptionQueryElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BookmarkResumptionQueryElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::BookmarkResumptionQueryElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type BookmarkResumptionQueryElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;BookmarkResumptionQueryElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

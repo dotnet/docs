@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Participants" />
   <TypeSignature Language="VB.NET" Value="Public Class Participants" />
   <TypeSignature Language="C++ CLI" Value="public ref class Participants" />
+  <TypeSignature Language="F#" Value="type Participants = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Participants.Participant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Participant As List(Of EndpointReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ Participant { System::Collections::Generic::List&lt;System::IdentityModel::Protocols::WSTrust::EndpointReference ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Participant : System.Collections.Generic.List&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;" Usage="System.IdentityModel.Protocols.WSTrust.Participants.Participant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Participants.Primary" />
       <MemberSignature Language="VB.NET" Value="Public Property Primary As EndpointReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::EndpointReference ^ Primary { System::IdentityModel::Protocols::WSTrust::EndpointReference ^ get(); void set(System::IdentityModel::Protocols::WSTrust::EndpointReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Primary : System.IdentityModel.Protocols.WSTrust.EndpointReference with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Participants.Primary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

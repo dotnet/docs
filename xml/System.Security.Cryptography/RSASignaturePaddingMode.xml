@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSASignaturePaddingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RSASignaturePaddingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class RSASignaturePaddingMode" />
+  <TypeSignature Language="F#" Value="type RSASignaturePaddingMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSASignaturePaddingMode.Pkcs1" />
       <MemberSignature Language="VB.NET" Value="Pkcs1" />
       <MemberSignature Language="C++ CLI" Value="Pkcs1" />
+      <MemberSignature Language="F#" Value="Pkcs1 = 0" Usage="System.Security.Cryptography.RSASignaturePaddingMode.Pkcs1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RSASignaturePaddingMode.Pss" />
       <MemberSignature Language="VB.NET" Value="Pss" />
       <MemberSignature Language="C++ CLI" Value="Pss" />
+      <MemberSignature Language="F#" Value="Pss = 1" Usage="System.Security.Cryptography.RSASignaturePaddingMode.Pss" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

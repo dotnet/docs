@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityDesignerVerbCollection&#xA;Inherits DesignerVerbCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerVerbCollection sealed : System::ComponentModel::Design::DesignerVerbCollection" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerVerbCollection = class&#xA;    inherit DesignerVerbCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Design.ActivityDesignerVerb})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (verbs As IEnumerable(Of ActivityDesignerVerb))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerVerbCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Design::ActivityDesignerVerb ^&gt; ^ verbs);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection : seq&lt;System.Workflow.ComponentModel.Design.ActivityDesignerVerb&gt; -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection verbs" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="activityDesignerVerbCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.LostFocusEventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class LostFocusEventManager&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class LostFocusEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type LostFocusEventManager = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.AddHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As DependencyObject, handler As EventHandler(Of RoutedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::Windows::DependencyObject ^ source, EventHandler&lt;System::Windows::RoutedEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.RoutedEventArgs&gt; -&gt; unit" Usage="System.Windows.LostFocusEventManager.AddHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.AddListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddListener (source As DependencyObject, listener As IWeakEventListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddListener(System::Windows::DependencyObject ^ source, System::Windows::IWeakEventListener ^ listener);" />
+      <MemberSignature Language="F#" Value="static member AddListener : System.Windows.DependencyObject * System.Windows.IWeakEventListener -&gt; unit" Usage="System.Windows.LostFocusEventManager.AddListener (source, listener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
+      <MemberSignature Language="F#" Value="abstract member NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList&#xA;override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="lostFocusEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.RemoveHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As DependencyObject, handler As EventHandler(Of RoutedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::Windows::DependencyObject ^ source, EventHandler&lt;System::Windows::RoutedEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.RoutedEventArgs&gt; -&gt; unit" Usage="System.Windows.LostFocusEventManager.RemoveHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.RemoveListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveListener (source As DependencyObject, listener As IWeakEventListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveListener(System::Windows::DependencyObject ^ source, System::Windows::IWeakEventListener ^ listener);" />
+      <MemberSignature Language="F#" Value="static member RemoveListener : System.Windows.DependencyObject * System.Windows.IWeakEventListener -&gt; unit" Usage="System.Windows.LostFocusEventManager.RemoveListener (source, listener)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="lostFocusEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="lostFocusEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

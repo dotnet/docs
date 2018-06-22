@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterResolutionKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrinterResolutionKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrinterResolutionKind" />
+  <TypeSignature Language="F#" Value="type PrinterResolutionKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Drawing.Printing.PrinterResolutionKind.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Draft" />
       <MemberSignature Language="VB.NET" Value="Draft" />
       <MemberSignature Language="C++ CLI" Value="Draft" />
+      <MemberSignature Language="F#" Value="Draft = -1" Usage="System.Drawing.Printing.PrinterResolutionKind.Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="C++ CLI" Value="High" />
+      <MemberSignature Language="F#" Value="High = -4" Usage="System.Drawing.Printing.PrinterResolutionKind.High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="C++ CLI" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = -2" Usage="System.Drawing.Printing.PrinterResolutionKind.Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = -3" Usage="System.Drawing.Printing.PrinterResolutionKind.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

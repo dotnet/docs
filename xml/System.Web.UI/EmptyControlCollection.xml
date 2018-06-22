@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.EmptyControlCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class EmptyControlCollection&#xA;Inherits ControlCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class EmptyControlCollection : System::Web::UI::ControlCollection" />
+  <TypeSignature Language="F#" Value="type EmptyControlCollection = class&#xA;    inherit ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.#ctor(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EmptyControlCollection(System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.EmptyControlCollection : System.Web.UI.Control -&gt; System.Web.UI.EmptyControlCollection" Usage="new System.Web.UI.EmptyControlCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +101,7 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.Add(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="emptyControlCollection.Add child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +126,7 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
+      <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="emptyControlCollection.AddAt (index, child)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

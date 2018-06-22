@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.IContentHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContentHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContentHost" />
+  <TypeSignature Language="F#" Value="type IContentHost = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.IContentHost.GetRectangles(System.Windows.ContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRectangles (child As ContentElement) As ReadOnlyCollection(Of Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Rect&gt; ^ GetRectangles(System::Windows::ContentElement ^ child);" />
+      <MemberSignature Language="F#" Value="abstract member GetRectangles : System.Windows.ContentElement -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Rect&gt;" Usage="iContentHost.GetRectangles child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.IContentHost.HostedElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostedElements As IEnumerator(Of IInputElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerator&lt;System::Windows::IInputElement ^&gt; ^ HostedElements { System::Collections::Generic::IEnumerator&lt;System::Windows::IInputElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostedElements : System.Collections.Generic.IEnumerator&lt;System.Windows.IInputElement&gt;" Usage="System.Windows.IContentHost.HostedElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.IInputElement InputHitTest(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IContentHost.InputHitTest(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::IInputElement ^ InputHitTest(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="abstract member InputHitTest : System.Windows.Point -&gt; System.Windows.IInputElement" Usage="iContentHost.InputHitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.IContentHost.OnChildDesiredSizeChanged(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnChildDesiredSizeChanged (child As UIElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnChildDesiredSizeChanged(System::Windows::UIElement ^ child);" />
+      <MemberSignature Language="F#" Value="abstract member OnChildDesiredSizeChanged : System.Windows.UIElement -&gt; unit" Usage="iContentHost.OnChildDesiredSizeChanged child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

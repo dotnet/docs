@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrationException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type RegistrationException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationException(System::String ^ msg);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.RegistrationException : string -&gt; System.EnterpriseServices.RegistrationException" Usage="new System.EnterpriseServices.RegistrationException msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationException(System::String ^ msg, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.RegistrationException : string * Exception -&gt; System.EnterpriseServices.RegistrationException" Usage="new System.EnterpriseServices.RegistrationException (msg, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationException.ErrorInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorInfo As RegistrationErrorInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::EnterpriseServices::RegistrationErrorInfo ^&gt; ^ ErrorInfo { cli::array &lt;System::EnterpriseServices::RegistrationErrorInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorInfo : System.EnterpriseServices.RegistrationErrorInfo[]" Usage="System.EnterpriseServices.RegistrationException.ErrorInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, ctx As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext ctx);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="registrationException.GetObjectData (info, ctx)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

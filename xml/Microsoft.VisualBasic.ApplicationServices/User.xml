@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.User" />
   <TypeSignature Language="VB.NET" Value="Public Class User" />
   <TypeSignature Language="C++ CLI" Value="public ref class User" />
+  <TypeSignature Language="F#" Value="type User = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPrincipal As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ CurrentPrincipal { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrincipal : System.Security.Principal.IPrincipal with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.User.InitializeWithWindowsUser" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeWithWindowsUser ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeWithWindowsUser();" />
+      <MemberSignature Language="F#" Value="member this.InitializeWithWindowsUser : unit -&gt; unit" Usage="user.InitializeWithWindowsUser " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.User.InternalPrincipal" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property InternalPrincipal As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Security::Principal::IPrincipal ^ InternalPrincipal { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InternalPrincipal : System.Security.Principal.IPrincipal with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.User.InternalPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.User.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="Microsoft.VisualBasic.ApplicationServices.User.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.User.IsInRole(Microsoft.VisualBasic.ApplicationServices.BuiltInRole)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInRole (role As BuiltInRole) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInRole(Microsoft::VisualBasic::ApplicationServices::BuiltInRole role);" />
+      <MemberSignature Language="F#" Value="member this.IsInRole : Microsoft.VisualBasic.ApplicationServices.BuiltInRole -&gt; bool" Usage="user.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.User.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="member this.IsInRole : string -&gt; bool" Usage="user.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -391,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.User.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.VisualBasic.ApplicationServices.User.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

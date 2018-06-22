@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.ClsidAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AxHost.ClsidAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public: ref class AxHost::ClsidAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AxHost.ClsidAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AxHost.ClsidAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (clsid As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClsidAttribute(System::String ^ clsid);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.AxHost.ClsidAttribute : string -&gt; System.Windows.Forms.AxHost.ClsidAttribute" Usage="new System.Windows.Forms.AxHost.ClsidAttribute clsid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.AxHost.ClsidAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Windows.Forms.AxHost.ClsidAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

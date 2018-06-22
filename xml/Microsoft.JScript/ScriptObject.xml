@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptObject&#xA;Implements IReflect" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptObject abstract : System::Reflection::IReflect" />
+  <TypeSignature Language="F#" Value="type ScriptObject = class&#xA;    interface IReflect" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptObject.engine" />
       <MemberSignature Language="VB.NET" Value="Public engine As VsaEngine " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::JScript::Vsa::VsaEngine ^ engine;" />
+      <MemberSignature Language="F#" Value="val mutable engine : Microsoft.JScript.Vsa.VsaEngine" Usage="Microsoft.JScript.ScriptObject.engine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetField(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String, bindingAttr As BindingFlags) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo&#xA;override this.GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="scriptObject.GetField (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetField(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetFields(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFields (bindingAttr As BindingFlags) As FieldInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]&#xA;override this.GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="scriptObject.GetFields bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetFields(System.Reflection.BindingFlags)</InterfaceMember>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="scriptObject.GetMember (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMember(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="scriptObject.GetMembers bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMembers(System.Reflection.BindingFlags)</InterfaceMember>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetMethod(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, bindingAttr As BindingFlags) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo&#xA;override this.GetMethod : string * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo" Usage="scriptObject.GetMethod (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMethod(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -230,6 +237,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo&#xA;override this.GetMethod : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="scriptObject.GetMethod (name, bindingAttr, binder, types, modifiers)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])</InterfaceMember>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetMethods(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethods (bindingAttr As BindingFlags) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]&#xA;override this.GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="scriptObject.GetMethods bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMethods(System.Reflection.BindingFlags)</InterfaceMember>
@@ -300,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetParent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParent () As ScriptObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ScriptObject ^ GetParent();" />
+      <MemberSignature Language="F#" Value="member this.GetParent : unit -&gt; Microsoft.JScript.ScriptObject" Usage="scriptObject.GetParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetProperties(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (bindingAttr As BindingFlags) As PropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]&#xA;override this.GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="scriptObject.GetProperties bindingAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetProperties(System.Reflection.BindingFlags)</InterfaceMember>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetProperty(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, bindingAttr As BindingFlags) As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo&#xA;override this.GetProperty : string * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo" Usage="scriptObject.GetProperty (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetProperty(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -407,6 +419,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type returnType, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo&#xA;override this.GetProperty : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="scriptObject.GetProperty (name, bindingAttr, binder, returnType, types, modifiers)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])</InterfaceMember>
@@ -447,6 +460,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo locale, string[] namedParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers, System::Globalization::CultureInfo ^ locale, cli::array &lt;System::String ^&gt; ^ namedParameters);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] * System.Reflection.ParameterModifier[] * System.Globalization.CultureInfo * string[] -&gt; obj&#xA;override this.InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] * System.Reflection.ParameterModifier[] * System.Globalization.CultureInfo * string[] -&gt; obj" Usage="scriptObject.InvokeMember (name, invokeAttr, binder, target, args, modifiers, locale, namedParameters)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])</InterfaceMember>
@@ -509,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.Item(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Double) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[double] { System::Object ^ get(double index); void set(double index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(double) : obj with get, set" Usage="Microsoft.JScript.ScriptObject.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -537,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="Microsoft.JScript.ScriptObject.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.Item(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(ParamArray pars As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[cli::array &lt;System::Object ^&gt; ^] { System::Object ^ get(... cli::array &lt;System::Object ^&gt; ^ pars); void set(... cli::array &lt;System::Object ^&gt; ^ pars, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj[]) : obj with get, set" Usage="Microsoft.JScript.ScriptObject.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -606,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="Microsoft.JScript.ScriptObject.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -634,6 +652,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptObject.parent" />
       <MemberSignature Language="VB.NET" Value="Protected parent As ScriptObject " />
       <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::ScriptObject ^ parent;" />
+      <MemberSignature Language="F#" Value="val mutable parent : Microsoft.JScript.ScriptObject" Usage="Microsoft.JScript.ScriptObject.parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -664,6 +683,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.UnderlyingSystemType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UnderlyingSystemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ UnderlyingSystemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingSystemType : Type" Usage="Microsoft.JScript.ScriptObject.UnderlyingSystemType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Reflection.IReflect.UnderlyingSystemType</InterfaceMember>
@@ -703,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.WrapMembers(System.Reflection.MemberInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function WrapMembers (member As MemberInfo, obj As Object) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ WrapMembers(System::Reflection::MemberInfo ^ member, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member WrapMembers : System.Reflection.MemberInfo * obj -&gt; System.Reflection.MemberInfo[]" Usage="Microsoft.JScript.ScriptObject.WrapMembers (member, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -740,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.WrapMembers(System.Reflection.MemberInfo[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function WrapMembers (members As MemberInfo(), obj As Object) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ WrapMembers(cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="static member WrapMembers : System.Reflection.MemberInfo[] * obj -&gt; System.Reflection.MemberInfo[]" Usage="Microsoft.JScript.ScriptObject.WrapMembers (members, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -777,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptObject.WrapMembers(System.Reflection.MemberInfo[],System.Object,Microsoft.JScript.SimpleHashtable)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function WrapMembers (members As MemberInfo(), obj As Object, cache As SimpleHashtable) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ WrapMembers(cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members, System::Object ^ obj, Microsoft::JScript::SimpleHashtable ^ cache);" />
+      <MemberSignature Language="F#" Value="static member WrapMembers : System.Reflection.MemberInfo[] * obj * Microsoft.JScript.SimpleHashtable -&gt; System.Reflection.MemberInfo[]" Usage="Microsoft.JScript.ScriptObject.WrapMembers (members, obj, cache)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

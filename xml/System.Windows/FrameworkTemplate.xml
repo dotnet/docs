@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkTemplate" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FrameworkTemplate&#xA;Inherits DispatcherObject&#xA;Implements INameScope, IQueryAmbient, ISealable" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkTemplate abstract : System::Windows::Threading::DispatcherObject, System::Windows::ISealable, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type FrameworkTemplate = class&#xA;    inherit DispatcherObject&#xA;    interface INameScope&#xA;    interface ISealable&#xA;    interface IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.FindName(System.String,System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindName (name As String, templatedParent As FrameworkElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindName(System::String ^ name, System::Windows::FrameworkElement ^ templatedParent);" />
+      <MemberSignature Language="F#" Value="member this.FindName : string * System.Windows.FrameworkElement -&gt; obj" Usage="frameworkTemplate.FindName (name, templatedParent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.HasContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasContent : bool" Usage="System.Windows.FrameworkTemplate.HasContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.FrameworkTemplate.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.LoadContent" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadContent () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ LoadContent();" />
+      <MemberSignature Language="F#" Value="member this.LoadContent : unit -&gt; System.Windows.DependencyObject" Usage="frameworkTemplate.LoadContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.RegisterName(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterName : string * obj -&gt; unit&#xA;override this.RegisterName : string * obj -&gt; unit" Usage="frameworkTemplate.RegisterName (name, scopedElement)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)</InterfaceMember>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.Resources" />
       <MemberSignature Language="VB.NET" Value="Public Property Resources As ResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ Resources { System::Windows::ResourceDictionary ^ get(); void set(System::Windows::ResourceDictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resources : System.Windows.ResourceDictionary with get, set" Usage="System.Windows.FrameworkTemplate.Resources" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IHaveResources.Resources</InterfaceMember>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.Seal" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
+      <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="frameworkTemplate.Seal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ShouldSerializeResources(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeResources (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeResources(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeResources : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="frameworkTemplate.ShouldSerializeResources manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ShouldSerializeVisualTree" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeVisualTree () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeVisualTree();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeVisualTree : unit -&gt; bool" Usage="frameworkTemplate.ShouldSerializeVisualTree " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.System#Windows#ISealable#CanSeal" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSeal As Boolean Implements ISealable.CanSeal" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.CanSeal { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.FrameworkTemplate.System.Windows.ISealable.CanSeal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.System#Windows#ISealable#IsSealed" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSealed As Boolean Implements ISealable.IsSealed" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.FrameworkTemplate.System.Windows.ISealable.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -450,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.Template" />
       <MemberSignature Language="VB.NET" Value="Public Property Template As TemplateContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TemplateContent ^ Template { System::Windows::TemplateContent ^ get(); void set(System::Windows::TemplateContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Template : System.Windows.TemplateContent with get, set" Usage="System.Windows.FrameworkTemplate.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -479,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.UnregisterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterName : string -&gt; unit&#xA;override this.UnregisterName : string -&gt; unit" Usage="frameworkTemplate.UnregisterName name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.INameScope.UnregisterName(System.String)</InterfaceMember>
@@ -512,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateTemplatedParent : System.Windows.FrameworkElement -&gt; unit&#xA;override this.ValidateTemplatedParent : System.Windows.FrameworkElement -&gt; unit" Usage="frameworkTemplate.ValidateTemplatedParent templatedParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -542,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.VisualTree" />
       <MemberSignature Language="VB.NET" Value="Public Property VisualTree As FrameworkElementFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElementFactory ^ VisualTree { System::Windows::FrameworkElementFactory ^ get(); void set(System::Windows::FrameworkElementFactory ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VisualTree : System.Windows.FrameworkElementFactory with get, set" Usage="System.Windows.FrameworkTemplate.VisualTree" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

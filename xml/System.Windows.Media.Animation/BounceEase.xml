@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.BounceEase" />
   <TypeSignature Language="VB.NET" Value="Public Class BounceEase&#xA;Inherits EasingFunctionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class BounceEase : System::Windows::Media::Animation::EasingFunctionBase" />
+  <TypeSignature Language="F#" Value="type BounceEase = class&#xA;    inherit EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.BounceEase.Bounces" />
       <MemberSignature Language="VB.NET" Value="Public Property Bounces As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bounces { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Bounces : int with get, set" Usage="System.Windows.Media.Animation.BounceEase.Bounces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.BounceEase.BouncesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BouncesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BouncesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BouncesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.BounceEase.BouncesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.BounceEase.Bounciness" />
       <MemberSignature Language="VB.NET" Value="Public Property Bounciness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Bounciness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Bounciness : double with get, set" Usage="System.Windows.Media.Animation.BounceEase.Bounciness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.BounceEase.BouncinessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BouncinessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BouncinessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BouncinessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.BounceEase.BouncinessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BounceEase.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bounceEase.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.BounceEase.EaseInCore(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
+      <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="bounceEase.EaseInCore normalizedTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

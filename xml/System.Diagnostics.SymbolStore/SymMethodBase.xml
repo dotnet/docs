@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymMethodBase" />
   <TypeSignature Language="VB.NET" Value="Public Class SymMethodBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymMethodBase" />
+  <TypeSignature Language="F#" Value="type SymMethodBase = class" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethodBase.{dtor}" />
       <MemberSignature Language="VB.NET" Value="Public Sub {dtor} ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void {dtor}();" />
+      <MemberSignature Language="F#" Value="member this.{dtor} : unit -&gt; unit" Usage="symMethodBase.{dtor} " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

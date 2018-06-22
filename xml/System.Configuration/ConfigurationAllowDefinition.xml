@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationAllowDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationAllowDefinition" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationAllowDefinition" />
+  <TypeSignature Language="F#" Value="type ConfigurationAllowDefinition = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.Everywhere" />
       <MemberSignature Language="VB.NET" Value="Everywhere" />
       <MemberSignature Language="C++ CLI" Value="Everywhere" />
+      <MemberSignature Language="F#" Value="Everywhere = 300" Usage="System.Configuration.ConfigurationAllowDefinition.Everywhere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineOnly" />
       <MemberSignature Language="VB.NET" Value="MachineOnly" />
       <MemberSignature Language="C++ CLI" Value="MachineOnly" />
+      <MemberSignature Language="F#" Value="MachineOnly = 0" Usage="System.Configuration.ConfigurationAllowDefinition.MachineOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineToApplication" />
       <MemberSignature Language="VB.NET" Value="MachineToApplication" />
       <MemberSignature Language="C++ CLI" Value="MachineToApplication" />
+      <MemberSignature Language="F#" Value="MachineToApplication = 200" Usage="System.Configuration.ConfigurationAllowDefinition.MachineToApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineToWebRoot" />
       <MemberSignature Language="VB.NET" Value="MachineToWebRoot" />
       <MemberSignature Language="C++ CLI" Value="MachineToWebRoot" />
+      <MemberSignature Language="F#" Value="MachineToWebRoot = 100" Usage="System.Configuration.ConfigurationAllowDefinition.MachineToWebRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

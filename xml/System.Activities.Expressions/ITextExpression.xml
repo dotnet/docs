@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ITextExpression" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITextExpression" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITextExpression" />
+  <TypeSignature Language="F#" Value="type ITextExpression = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ITextExpression.ExpressionText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionText : string" Usage="System.Activities.Expressions.ITextExpression.ExpressionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ITextExpression.GetExpressionTree" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExpressionTree () As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ GetExpressionTree();" />
+      <MemberSignature Language="F#" Value="abstract member GetExpressionTree : unit -&gt; System.Linq.Expressions.Expression" Usage="iTextExpression.GetExpressionTree " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ITextExpression.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Activities.Expressions.ITextExpression.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ITextExpression.RequiresCompilation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiresCompilation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequiresCompilation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresCompilation : bool" Usage="System.Activities.Expressions.ITextExpression.RequiresCompilation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

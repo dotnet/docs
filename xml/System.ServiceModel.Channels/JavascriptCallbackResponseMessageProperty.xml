@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JavascriptCallbackResponseMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class JavascriptCallbackResponseMessageProperty sealed" />
+  <TypeSignature Language="F#" Value="type JavascriptCallbackResponseMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.CallbackFunctionName" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackFunctionName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CallbackFunctionName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CallbackFunctionName : string with get, set" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.CallbackFunctionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Nullable(Of HttpStatusCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Net::HttpStatusCode&gt; StatusCode { Nullable&lt;System::Net::HttpStatusCode&gt; get(); void set(Nullable&lt;System::Net::HttpStatusCode&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : Nullable&lt;System.Net.HttpStatusCode&gt; with get, set" Usage="System.ServiceModel.Channels.JavascriptCallbackResponseMessageProperty.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

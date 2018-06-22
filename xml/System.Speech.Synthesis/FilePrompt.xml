@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.FilePrompt" />
   <TypeSignature Language="VB.NET" Value="Public Class FilePrompt&#xA;Inherits Prompt" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilePrompt : System::Speech::Synthesis::Prompt" />
+  <TypeSignature Language="F#" Value="type FilePrompt = class&#xA;    inherit Prompt" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.String,System.Speech.Synthesis.SynthesisMediaType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, media As SynthesisMediaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilePrompt(System::String ^ path, System::Speech::Synthesis::SynthesisMediaType media);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.FilePrompt : string * System.Speech.Synthesis.SynthesisMediaType -&gt; System.Speech.Synthesis.FilePrompt" Usage="new System.Speech.Synthesis.FilePrompt (path, media)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -117,6 +119,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.Uri,System.Speech.Synthesis.SynthesisMediaType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptFile As Uri, media As SynthesisMediaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilePrompt(Uri ^ promptFile, System::Speech::Synthesis::SynthesisMediaType media);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.FilePrompt : Uri * System.Speech.Synthesis.SynthesisMediaType -&gt; System.Speech.Synthesis.FilePrompt" Usage="new System.Speech.Synthesis.FilePrompt (promptFile, media)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

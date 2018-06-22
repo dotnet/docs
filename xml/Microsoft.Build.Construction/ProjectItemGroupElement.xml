@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectItemGroupElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectItemGroupElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectItemGroupElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectItemGroupElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectItemGroupElement.AddItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemType As String, include As String) As ProjectItemElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectItemElement ^ AddItem(System::String ^ itemType, System::String ^ include);" />
+      <MemberSignature Language="F#" Value="member this.AddItem : string * string -&gt; Microsoft.Build.Construction.ProjectItemElement" Usage="projectItemGroupElement.AddItem (itemType, include)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectItemGroupElement.AddItem(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemType As String, include As String, metadata As IEnumerable(Of KeyValuePair(Of String, String))) As ProjectItemElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectItemElement ^ AddItem(System::String ^ itemType, System::String ^ include, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ metadata);" />
+      <MemberSignature Language="F#" Value="member this.AddItem : string * string * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; -&gt; Microsoft.Build.Construction.ProjectItemElement" Usage="projectItemGroupElement.AddItem (itemType, include, metadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemGroupElement.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ICollection(Of ProjectItemElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemElement ^&gt; ^ Items { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemElement&gt;" Usage="Microsoft.Build.Construction.ProjectItemGroupElement.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

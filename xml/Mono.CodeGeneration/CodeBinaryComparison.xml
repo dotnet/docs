@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeBinaryComparison" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeBinaryComparison&#xA;Inherits CodeConditionExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeBinaryComparison abstract : Mono::CodeGeneration::CodeConditionExpression" />
+  <TypeSignature Language="F#" Value="type CodeBinaryComparison = class&#xA;    inherit CodeConditionExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBinaryComparison.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exp1 As CodeExpression, exp2 As CodeExpression, symbol As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBinaryComparison(Mono::CodeGeneration::CodeExpression ^ exp1, Mono::CodeGeneration::CodeExpression ^ exp2, System::String ^ symbol);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeBinaryComparison : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression * string -&gt; Mono.CodeGeneration.CodeBinaryComparison" Usage="new Mono.CodeGeneration.CodeBinaryComparison (exp1, exp2, symbol)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeBinaryComparison.exp1" />
       <MemberSignature Language="VB.NET" Value="Protected exp1 As CodeExpression " />
       <MemberSignature Language="C++ CLI" Value="protected: Mono::CodeGeneration::CodeExpression ^ exp1;" />
+      <MemberSignature Language="F#" Value="val mutable exp1 : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeBinaryComparison.exp1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeBinaryComparison.exp2" />
       <MemberSignature Language="VB.NET" Value="Protected exp2 As CodeExpression " />
       <MemberSignature Language="C++ CLI" Value="protected: Mono::CodeGeneration::CodeExpression ^ exp2;" />
+      <MemberSignature Language="F#" Value="val mutable exp2 : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeBinaryComparison.exp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBinaryComparison.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeBinaryComparison.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBinaryComparison.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeBinaryComparison.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeBinaryComparison.t1" />
       <MemberSignature Language="VB.NET" Value="Protected t1 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ t1;" />
+      <MemberSignature Language="F#" Value="val mutable t1 : Type" Usage="Mono.CodeGeneration.CodeBinaryComparison.t1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeBinaryComparison.t2" />
       <MemberSignature Language="VB.NET" Value="Protected t2 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ t2;" />
+      <MemberSignature Language="F#" Value="val mutable t2 : Type" Usage="Mono.CodeGeneration.CodeBinaryComparison.t2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

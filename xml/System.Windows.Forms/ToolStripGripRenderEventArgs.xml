@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripRenderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripGripRenderEventArgs&#xA;Inherits ToolStripRenderEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripGripRenderEventArgs : System::Windows::Forms::ToolStripRenderEventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripGripRenderEventArgs = class&#xA;    inherit ToolStripRenderEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStrip toolStrip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripGripRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStrip)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripGripRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStrip ^ toolStrip);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripGripRenderEventArgs : System.Drawing.Graphics * System.Windows.Forms.ToolStrip -&gt; System.Windows.Forms.ToolStripGripRenderEventArgs" Usage="new System.Windows.Forms.ToolStripGripRenderEventArgs (g, toolStrip)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GripBounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle GripBounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.GripBounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStripGripRenderEventArgs.GripBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripDisplayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GripDisplayStyle As ToolStripGripDisplayStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripGripDisplayStyle GripDisplayStyle { System::Windows::Forms::ToolStripGripDisplayStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.GripDisplayStyle : System.Windows.Forms.ToolStripGripDisplayStyle" Usage="System.Windows.Forms.ToolStripGripRenderEventArgs.GripDisplayStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripGripRenderEventArgs.GripStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GripStyle As ToolStripGripStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripGripStyle GripStyle { System::Windows::Forms::ToolStripGripStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.GripStyle : System.Windows.Forms.ToolStripGripStyle" Usage="System.Windows.Forms.ToolStripGripRenderEventArgs.GripStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

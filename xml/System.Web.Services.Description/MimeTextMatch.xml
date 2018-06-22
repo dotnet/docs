@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatch" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeTextMatch" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeTextMatch sealed" />
+  <TypeSignature Language="F#" Value="type MimeTextMatch = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Capture" />
       <MemberSignature Language="VB.NET" Value="Public Property Capture As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capture { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capture : int with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Capture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Group { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : int with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreCase As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCase { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreCase : bool with get, set" Usage="System.Web.Services.Description.MimeTextMatch.IgnoreCase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Matches" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Matches As MimeTextMatchCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MimeTextMatchCollection ^ Matches { System::Web::Services::Description::MimeTextMatchCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Matches : System.Web.Services.Description.MimeTextMatchCollection" Usage="System.Web.Services.Description.MimeTextMatch.Matches" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Property Pattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : string with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -292,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Repeats" />
       <MemberSignature Language="VB.NET" Value="Public Property Repeats As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Repeats { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Repeats : int with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Repeats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.RepeatsString" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatsString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepeatsString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatsString : string with get, set" Usage="System.Web.Services.Description.MimeTextMatch.RepeatsString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatch.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Services.Description.MimeTextMatch.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

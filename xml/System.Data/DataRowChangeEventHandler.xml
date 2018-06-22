@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataRowChangeEventHandler(sender As Object, e As DataRowChangeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataRowChangeEventHandler(System::Object ^ sender, DataRowChangeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataRowChangeEventHandler = delegate of obj * DataRowChangeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

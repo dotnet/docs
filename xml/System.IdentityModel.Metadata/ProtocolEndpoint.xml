@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ProtocolEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class ProtocolEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtocolEndpoint" />
+  <TypeSignature Language="F#" Value="type ProtocolEndpoint = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ProtocolEndpoint.#ctor(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binding As Uri, location As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolEndpoint(Uri ^ binding, Uri ^ location);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.ProtocolEndpoint : Uri * Uri -&gt; System.IdentityModel.Metadata.ProtocolEndpoint" Usage="new System.IdentityModel.Metadata.ProtocolEndpoint (binding, location)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Binding { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : Uri with get, set" Usage="System.IdentityModel.Metadata.ProtocolEndpoint.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Location { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Uri with get, set" Usage="System.IdentityModel.Metadata.ProtocolEndpoint.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ProtocolEndpoint.ResponseLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseLocation As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ResponseLocation { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseLocation : Uri with get, set" Usage="System.IdentityModel.Metadata.ProtocolEndpoint.ResponseLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

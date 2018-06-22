@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MappingType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MappingType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MappingType" />
+  <TypeSignature Language="F#" Value="type MappingType = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 2" Usage="System.Data.MappingType.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="C++ CLI" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 1" Usage="System.Data.MappingType.Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="C++ CLI" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 4" Usage="System.Data.MappingType.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.SimpleContent" />
       <MemberSignature Language="VB.NET" Value="SimpleContent" />
       <MemberSignature Language="C++ CLI" Value="SimpleContent" />
+      <MemberSignature Language="F#" Value="SimpleContent = 3" Usage="System.Data.MappingType.SimpleContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

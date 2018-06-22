@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRandomAccessContainer(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IRandomAccessContainer" />
+  <TypeSignature Language="F#" Value="type IRandomAccessContainer&lt;'Value&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.at_bias(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function at_bias (A_0 As Integer) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % at_bias(int A_0);" />
+      <MemberSignature Language="F#" Value="abstract member at_bias : int -&gt; " Usage="iRandomAccessContainer.at_bias A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.valid_bias(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function valid_bias (A_0 As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool valid_bias(int A_0);" />
+      <MemberSignature Language="F#" Value="abstract member valid_bias : int -&gt; bool" Usage="iRandomAccessContainer.valid_bias A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

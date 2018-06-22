@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterSampleCalculator" />
   <TypeSignature Language="VB.NET" Value="Public Class CounterSampleCalculator" />
   <TypeSignature Language="C++ CLI" Value="public ref class CounterSampleCalculator abstract sealed" />
+  <TypeSignature Language="F#" Value="type CounterSampleCalculator = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeCounterValue (newSample As CounterSample) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ComputeCounterValue(System::Diagnostics::CounterSample newSample);" />
+      <MemberSignature Language="F#" Value="static member ComputeCounterValue : System.Diagnostics.CounterSample -&gt; single" Usage="System.Diagnostics.CounterSampleCalculator.ComputeCounterValue newSample" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComputeCounterValue (oldSample As CounterSample, newSample As CounterSample) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ComputeCounterValue(System::Diagnostics::CounterSample oldSample, System::Diagnostics::CounterSample newSample);" />
+      <MemberSignature Language="F#" Value="static member ComputeCounterValue : System.Diagnostics.CounterSample * System.Diagnostics.CounterSample -&gt; single" Usage="System.Diagnostics.CounterSampleCalculator.ComputeCounterValue (oldSample, newSample)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

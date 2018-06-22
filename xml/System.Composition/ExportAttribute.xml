@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.ExportAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ExportAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExportAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ExportAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -228,6 +229,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
       <MemberSignature Language="DocId" Value="M:System.Composition.ExportAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportAttribute(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="new System.Composition.ExportAttribute : string -&gt; System.Composition.ExportAttribute" Usage="new System.Composition.ExportAttribute contractName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -258,6 +260,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
       <MemberSignature Language="DocId" Value="M:System.Composition.ExportAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportAttribute(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.Composition.ExportAttribute : Type -&gt; System.Composition.ExportAttribute" Usage="new System.Composition.ExportAttribute contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -288,6 +291,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
       <MemberSignature Language="DocId" Value="M:System.Composition.ExportAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportAttribute(System::String ^ contractName, Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.Composition.ExportAttribute : string * Type -&gt; System.Composition.ExportAttribute" Usage="new System.Composition.ExportAttribute (contractName, contractType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -311,6 +315,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
       <MemberSignature Language="DocId" Value="P:System.Composition.ExportAttribute.ContractName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.Composition.ExportAttribute.ContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -332,6 +337,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
       <MemberSignature Language="DocId" Value="P:System.Composition.ExportAttribute.ContractType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractType : Type" Usage="System.Composition.ExportAttribute.ContractType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

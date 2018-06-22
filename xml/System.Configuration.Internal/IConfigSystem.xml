@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigSystem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigSystem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConfigSystem" />
+  <TypeSignature Language="F#" Value="type IConfigSystem = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigSystem.Host" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As IInternalConfigHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Internal::IInternalConfigHost ^ Host { System::Configuration::Internal::IInternalConfigHost ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Host : System.Configuration.Internal.IInternalConfigHost" Usage="System.Configuration.Internal.IConfigSystem.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IConfigSystem.Init(System.Type,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (typeConfigHost As Type, ParamArray hostInitParams As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(Type ^ typeConfigHost, ... cli::array &lt;System::Object ^&gt; ^ hostInitParams);" />
+      <MemberSignature Language="F#" Value="abstract member Init : Type * obj[] -&gt; unit" Usage="iConfigSystem.Init (typeConfigHost, hostInitParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigSystem.Root" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As IInternalConfigRoot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Internal::IInternalConfigRoot ^ Root { System::Configuration::Internal::IInternalConfigRoot ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Configuration.Internal.IInternalConfigRoot" Usage="System.Configuration.Internal.IConfigSystem.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

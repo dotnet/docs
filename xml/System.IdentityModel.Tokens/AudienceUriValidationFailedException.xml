@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException" />
   <TypeSignature Language="VB.NET" Value="Public Class AudienceUriValidationFailedException&#xA;Inherits SecurityTokenValidationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class AudienceUriValidationFailedException : System::IdentityModel::Tokens::SecurityTokenValidationException" />
+  <TypeSignature Language="F#" Value="type AudienceUriValidationFailedException = class&#xA;    inherit SecurityTokenValidationException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceUriValidationFailedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AudienceUriValidationFailedException : string -&gt; System.IdentityModel.Tokens.AudienceUriValidationFailedException" Usage="new System.IdentityModel.Tokens.AudienceUriValidationFailedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AudienceUriValidationFailedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AudienceUriValidationFailedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Tokens.AudienceUriValidationFailedException" Usage="new System.IdentityModel.Tokens.AudienceUriValidationFailedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceUriValidationFailedException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AudienceUriValidationFailedException : string * Exception -&gt; System.IdentityModel.Tokens.AudienceUriValidationFailedException" Usage="new System.IdentityModel.Tokens.AudienceUriValidationFailedException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

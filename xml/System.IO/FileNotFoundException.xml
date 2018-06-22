@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class FileNotFoundException&#xA;Inherits IOException" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileNotFoundException : System::IO::IOException" />
+  <TypeSignature Language="F#" Value="type FileNotFoundException = class&#xA;    inherit IOException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -105,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileNotFoundException : string -&gt; System.IO.FileNotFoundException" Usage="new System.IO.FileNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.FileNotFoundException" Usage="new System.IO.FileNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileNotFoundException : string * Exception -&gt; System.IO.FileNotFoundException" Usage="new System.IO.FileNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -235,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileNotFoundException(System::String ^ message, System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileNotFoundException : string * string -&gt; System.IO.FileNotFoundException" Usage="new System.IO.FileNotFoundException (message, fileName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.#ctor(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileNotFoundException(System::String ^ message, System::String ^ fileName, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.IO.FileNotFoundException : string * string * Exception -&gt; System.IO.FileNotFoundException" Usage="new System.IO.FileNotFoundException (message, fileName, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -337,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileNotFoundException.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.IO.FileNotFoundException.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -380,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileNotFoundException.FusionLog" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FusionLog As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FusionLog { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FusionLog : string" Usage="System.IO.FileNotFoundException.FusionLog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -417,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileNotFoundException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -459,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileNotFoundException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.IO.FileNotFoundException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -504,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileNotFoundException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileNotFoundException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ExpressionPrefixAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionPrefixAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionPrefixAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ExpressionPrefixAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ExpressionPrefixAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expressionPrefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionPrefixAttribute(System::String ^ expressionPrefix);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.ExpressionPrefixAttribute : string -&gt; System.Web.Compilation.ExpressionPrefixAttribute" Usage="new System.Web.Compilation.ExpressionPrefixAttribute expressionPrefix" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +110,7 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ExpressionPrefixAttribute.ExpressionPrefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionPrefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionPrefix : string" Usage="System.Web.Compilation.ExpressionPrefixAttribute.ExpressionPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

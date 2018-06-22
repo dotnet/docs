@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CacheVirtualItemsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheVirtualItemsEventHandler(sender As Object, e As CacheVirtualItemsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CacheVirtualItemsEventHandler(System::Object ^ sender, CacheVirtualItemsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CacheVirtualItemsEventHandler = delegate of obj * CacheVirtualItemsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

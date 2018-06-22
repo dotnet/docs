@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityKeyIdentifierClause abstract" />
+  <TypeSignature Language="F#" Value="type SecurityKeyIdentifierClause = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityKeyIdentifierClause(System::String ^ clauseType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause : string -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause clauseType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (clauseType As String, derivationNonce As Byte(), derivationLength As Integer)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityKeyIdentifierClause(System::String ^ clauseType, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause : string * byte[] * int -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.SecurityKeyIdentifierClause (clauseType, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCreateKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateKey : bool" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClauseType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClauseType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClauseType : string" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateKey () As SecurityKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityKey ^ CreateKey();" />
+      <MemberSignature Language="F#" Value="abstract member CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey&#xA;override this.CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey" Usage="securityKeyIdentifierClause.CreateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DerivationLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DerivationLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DerivationLength : int" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDerivationNonce () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetDerivationNonce();" />
+      <MemberSignature Language="F#" Value="member this.GetDerivationNonce : unit -&gt; byte[]" Usage="securityKeyIdentifierClause.GetDerivationNonce " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool&#xA;override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityKeyIdentifierClause.Matches clause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ComSoapPublishError" />
   <TypeSignature Language="VB.NET" Value="Public Class ComSoapPublishError" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComSoapPublishError" />
+  <TypeSignature Language="F#" Value="type ComSoapPublishError = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComSoapPublishError.Report(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Report (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Report(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Report : string -&gt; unit" Usage="System.EnterpriseServices.Internal.ComSoapPublishError.Report s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

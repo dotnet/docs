@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementDateTimeConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementDateTimeConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementDateTimeConverter sealed" />
+  <TypeSignature Language="F#" Value="type ManagementDateTimeConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementDateTimeConverter.ToDateTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (dmtfDate As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ dmtfDate);" />
+      <MemberSignature Language="F#" Value="static member ToDateTime : string -&gt; DateTime" Usage="System.Management.ManagementDateTimeConverter.ToDateTime dmtfDate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementDateTimeConverter.ToDmtfDateTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDmtfDateTime (date As DateTime) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToDmtfDateTime(DateTime date);" />
+      <MemberSignature Language="F#" Value="static member ToDmtfDateTime : DateTime -&gt; string" Usage="System.Management.ManagementDateTimeConverter.ToDmtfDateTime date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToDmtfTimeInterval(valuetype System.TimeSpan timespan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementDateTimeConverter.ToDmtfTimeInterval(System.TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToDmtfTimeInterval(TimeSpan timespan);" />
+      <MemberSignature Language="F#" Value="static member ToDmtfTimeInterval : TimeSpan -&gt; string" Usage="System.Management.ManagementDateTimeConverter.ToDmtfTimeInterval timespan" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementDateTimeConverter.ToTimeSpan(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToTimeSpan (dmtfTimespan As String) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan ToTimeSpan(System::String ^ dmtfTimespan);" />
+      <MemberSignature Language="F#" Value="static member ToTimeSpan : string -&gt; TimeSpan" Usage="System.Management.ManagementDateTimeConverter.ToTimeSpan dmtfTimespan" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

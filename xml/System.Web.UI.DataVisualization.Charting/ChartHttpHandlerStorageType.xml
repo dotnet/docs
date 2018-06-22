@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChartHttpHandlerStorageType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChartHttpHandlerStorageType" />
+  <TypeSignature Language="F#" Value="type ChartHttpHandlerStorageType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.File" />
       <MemberSignature Language="VB.NET" Value="File" />
       <MemberSignature Language="C++ CLI" Value="File" />
+      <MemberSignature Language="F#" Value="File = 1" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.InProcess" />
       <MemberSignature Language="VB.NET" Value="InProcess" />
       <MemberSignature Language="C++ CLI" Value="InProcess" />
+      <MemberSignature Language="F#" Value="InProcess = 0" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.InProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.Session" />
       <MemberSignature Language="VB.NET" Value="Session" />
       <MemberSignature Language="C++ CLI" Value="Session" />
+      <MemberSignature Language="F#" Value="Session = 2" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.Session" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

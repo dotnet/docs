@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDelegateCreateExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeDelegateCreateExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDelegateCreateExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeDelegateCreateExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (delegateType As CodeTypeReference, targetObject As CodeExpression, methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateCreateExpression(System::CodeDom::CodeTypeReference ^ delegateType, System::CodeDom::CodeExpression ^ targetObject, System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDelegateCreateExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodeDelegateCreateExpression" Usage="new System.CodeDom.CodeDelegateCreateExpression (delegateType, targetObject, methodName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.DelegateType" />
       <MemberSignature Language="VB.NET" Value="Public Property DelegateType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ DelegateType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DelegateType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.DelegateType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GeneratedInternalTypeHelper&#xA;Inherits InternalTypeHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeneratedInternalTypeHelper sealed : System::Windows::Markup::InternalTypeHelper" />
+  <TypeSignature Language="F#" Value="type GeneratedInternalTypeHelper = class&#xA;    inherit InternalTypeHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddEventHandler(class System.Reflection.EventInfo eventInfo, object target, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddEventHandler(System::Reflection::EventInfo ^ eventInfo, System::Object ^ target, Delegate ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member AddEventHandler : System.Reflection.EventInfo * obj * Delegate -&gt; unit&#xA;override this.AddEventHandler : System.Reflection.EventInfo * obj * Delegate -&gt; unit" Usage="generatedInternalTypeHelper.AddEventHandler (eventInfo, target, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDelegate (delegateType As Type, target As Object, handler As String) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Delegate ^ CreateDelegate(Type ^ delegateType, System::Object ^ target, System::String ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDelegate : Type * obj * string -&gt; Delegate&#xA;override this.CreateDelegate : Type * obj * string -&gt; Delegate" Usage="generatedInternalTypeHelper.CreateDelegate (delegateType, target, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type type, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(Type ^ type, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type * System.Globalization.CultureInfo -&gt; obj&#xA;override this.CreateInstance : Type * System.Globalization.CultureInfo -&gt; obj" Usage="generatedInternalTypeHelper.CreateInstance (type, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetPropertyValue(class System.Reflection.PropertyInfo propertyInfo, object target, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetPropertyValue(System::Reflection::PropertyInfo ^ propertyInfo, System::Object ^ target, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyValue : System.Reflection.PropertyInfo * obj * System.Globalization.CultureInfo -&gt; obj&#xA;override this.GetPropertyValue : System.Reflection.PropertyInfo * obj * System.Globalization.CultureInfo -&gt; obj" Usage="generatedInternalTypeHelper.GetPropertyValue (propertyInfo, target, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetPropertyValue(class System.Reflection.PropertyInfo propertyInfo, object target, object value, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetPropertyValue(System::Reflection::PropertyInfo ^ propertyInfo, System::Object ^ target, System::Object ^ value, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member SetPropertyValue : System.Reflection.PropertyInfo * obj * obj * System.Globalization.CultureInfo -&gt; unit&#xA;override this.SetPropertyValue : System.Reflection.PropertyInfo * obj * obj * System.Globalization.CultureInfo -&gt; unit" Usage="generatedInternalTypeHelper.SetPropertyValue (propertyInfo, target, value, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

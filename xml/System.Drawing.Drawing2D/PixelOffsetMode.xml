@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PixelOffsetMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PixelOffsetMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PixelOffsetMode" />
+  <TypeSignature Language="F#" Value="type PixelOffsetMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Drawing2D.PixelOffsetMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Half" />
       <MemberSignature Language="VB.NET" Value="Half" />
       <MemberSignature Language="C++ CLI" Value="Half" />
+      <MemberSignature Language="F#" Value="Half = 4" Usage="System.Drawing.Drawing2D.PixelOffsetMode.Half" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.HighQuality" />
       <MemberSignature Language="VB.NET" Value="HighQuality" />
       <MemberSignature Language="C++ CLI" Value="HighQuality" />
+      <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Drawing.Drawing2D.PixelOffsetMode.HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.HighSpeed" />
       <MemberSignature Language="VB.NET" Value="HighSpeed" />
       <MemberSignature Language="C++ CLI" Value="HighSpeed" />
+      <MemberSignature Language="F#" Value="HighSpeed = 1" Usage="System.Drawing.Drawing2D.PixelOffsetMode.HighSpeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = -1" Usage="System.Drawing.Drawing2D.PixelOffsetMode.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 3" Usage="System.Drawing.Drawing2D.PixelOffsetMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

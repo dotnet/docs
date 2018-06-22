@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.SqlCacheDependencyAdmin" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlCacheDependencyAdmin" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependencyAdmin abstract sealed" />
+  <TypeSignature Language="F#" Value="type SqlCacheDependencyAdmin = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.DisableNotifications(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableNotifications (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableNotifications(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member DisableNotifications : string -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.DisableNotifications connectionString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.DisableTableForNotifications(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableTableForNotifications (connectionString As String, table As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableTableForNotifications(System::String ^ connectionString, System::String ^ table);" />
+      <MemberSignature Language="F#" Value="static member DisableTableForNotifications : string * string -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.DisableTableForNotifications (connectionString, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.DisableTableForNotifications(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableTableForNotifications (connectionString As String, tables As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableTableForNotifications(System::String ^ connectionString, cli::array &lt;System::String ^&gt; ^ tables);" />
+      <MemberSignature Language="F#" Value="static member DisableTableForNotifications : string * string[] -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.DisableTableForNotifications (connectionString, tables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.EnableNotifications(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableNotifications (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableNotifications(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member EnableNotifications : string -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.EnableNotifications connectionString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableTableForNotifications (connectionString As String, table As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableTableForNotifications(System::String ^ connectionString, System::String ^ table);" />
+      <MemberSignature Language="F#" Value="static member EnableTableForNotifications : string * string -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications (connectionString, table)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableTableForNotifications (connectionString As String, tables As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableTableForNotifications(System::String ^ connectionString, cli::array &lt;System::String ^&gt; ^ tables);" />
+      <MemberSignature Language="F#" Value="static member EnableTableForNotifications : string * string[] -&gt; unit" Usage="System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications (connectionString, tables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependencyAdmin.GetTablesEnabledForNotifications(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTablesEnabledForNotifications (connectionString As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetTablesEnabledForNotifications(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member GetTablesEnabledForNotifications : string -&gt; string[]" Usage="System.Web.Caching.SqlCacheDependencyAdmin.GetTablesEnabledForNotifications connectionString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

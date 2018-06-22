@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbBinaryExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbBinaryExpression&#xA;Inherits DbExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbBinaryExpression abstract : System::Data::Common::CommandTrees::DbExpression" />
+  <TypeSignature Language="F#" Value="type DbBinaryExpression = class&#xA;    inherit DbExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbBinaryExpression.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Left { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbBinaryExpression.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbBinaryExpression.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Right { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbBinaryExpression.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

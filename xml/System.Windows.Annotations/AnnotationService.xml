@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnotationService&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationService sealed : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type AnnotationService = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.#ctor(System.Windows.Controls.FlowDocumentReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (viewer As FlowDocumentReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationService(System::Windows::Controls::FlowDocumentReader ^ viewer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationService : System.Windows.Controls.FlowDocumentReader -&gt; System.Windows.Annotations.AnnotationService" Usage="new System.Windows.Annotations.AnnotationService viewer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.#ctor(System.Windows.Controls.FlowDocumentScrollViewer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (viewer As FlowDocumentScrollViewer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationService(System::Windows::Controls::FlowDocumentScrollViewer ^ viewer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationService : System.Windows.Controls.FlowDocumentScrollViewer -&gt; System.Windows.Annotations.AnnotationService" Usage="new System.Windows.Annotations.AnnotationService viewer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.#ctor(System.Windows.Controls.Primitives.DocumentViewerBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (viewer As DocumentViewerBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationService(System::Windows::Controls::Primitives::DocumentViewerBase ^ viewer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationService : System.Windows.Controls.Primitives.DocumentViewerBase -&gt; System.Windows.Annotations.AnnotationService" Usage="new System.Windows.Annotations.AnnotationService viewer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.ClearHighlightsCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClearHighlightsCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ ClearHighlightsCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClearHighlightsCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.ClearHighlightsCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CreateHighlightCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ CreateHighlightCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CreateHighlightCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CreateInkStickyNoteCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ CreateInkStickyNoteCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CreateInkStickyNoteCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CreateTextStickyNoteCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ CreateTextStickyNoteCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CreateTextStickyNoteCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DeleteAnnotationsCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ DeleteAnnotationsCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DeleteAnnotationsCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationService.DeleteStickyNotesCommand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DeleteStickyNotesCommand As RoutedUICommand " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Input::RoutedUICommand ^ DeleteStickyNotesCommand;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DeleteStickyNotesCommand : System.Windows.Input.RoutedUICommand" Usage="System.Windows.Annotations.AnnotationService.DeleteStickyNotesCommand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -367,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.Disable" />
       <MemberSignature Language="VB.NET" Value="Public Sub Disable ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disable();" />
+      <MemberSignature Language="F#" Value="member this.Disable : unit -&gt; unit" Usage="annotationService.Disable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enable(class System.Windows.Annotations.Storage.AnnotationStore annotationStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.Enable(System.Windows.Annotations.Storage.AnnotationStore)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enable(System::Windows::Annotations::Storage::AnnotationStore ^ annotationStore);" />
+      <MemberSignature Language="F#" Value="member this.Enable : System.Windows.Annotations.Storage.AnnotationStore -&gt; unit" Usage="annotationService.Enable annotationStore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -475,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetService (reader As FlowDocumentReader) As AnnotationService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::AnnotationService ^ GetService(System::Windows::Controls::FlowDocumentReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetService : System.Windows.Controls.FlowDocumentReader -&gt; System.Windows.Annotations.AnnotationService" Usage="System.Windows.Annotations.AnnotationService.GetService reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -521,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentScrollViewer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetService (viewer As FlowDocumentScrollViewer) As AnnotationService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::AnnotationService ^ GetService(System::Windows::Controls::FlowDocumentScrollViewer ^ viewer);" />
+      <MemberSignature Language="F#" Value="static member GetService : System.Windows.Controls.FlowDocumentScrollViewer -&gt; System.Windows.Annotations.AnnotationService" Usage="System.Windows.Annotations.AnnotationService.GetService viewer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -569,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.Primitives.DocumentViewerBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetService (viewer As DocumentViewerBase) As AnnotationService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::AnnotationService ^ GetService(System::Windows::Controls::Primitives::DocumentViewerBase ^ viewer);" />
+      <MemberSignature Language="F#" Value="static member GetService : System.Windows.Controls.Primitives.DocumentViewerBase -&gt; System.Windows.Annotations.AnnotationService" Usage="System.Windows.Annotations.AnnotationService.GetService viewer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -616,6 +631,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationService.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.Windows.Annotations.AnnotationService.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -649,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationService.Store" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Store As AnnotationStore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Annotations::Storage::AnnotationStore ^ Store { System::Windows::Annotations::Storage::AnnotationStore ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Store : System.Windows.Annotations.Storage.AnnotationStore" Usage="System.Windows.Annotations.AnnotationService.Store" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingWorkflowChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingWorkflowChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type TrackingWorkflowChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Changes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changes As IList(Of WorkflowChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ Changes { System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Changes : System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Changes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Definition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Definition As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Definition { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Definition : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Definition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

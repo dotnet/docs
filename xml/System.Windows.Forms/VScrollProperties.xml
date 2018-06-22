@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VScrollProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class VScrollProperties&#xA;Inherits ScrollProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class VScrollProperties : System::Windows::Forms::ScrollProperties" />
+  <TypeSignature Language="F#" Value="type VScrollProperties = class&#xA;    inherit ScrollProperties" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.VScrollProperties.#ctor(System.Windows.Forms.ScrollableControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As ScrollableControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VScrollProperties(System::Windows::Forms::ScrollableControl ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.VScrollProperties : System.Windows.Forms.ScrollableControl -&gt; System.Windows.Forms.VScrollProperties" Usage="new System.Windows.Forms.VScrollProperties container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

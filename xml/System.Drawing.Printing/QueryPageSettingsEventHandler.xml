@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.QueryPageSettingsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryPageSettingsEventHandler(sender As Object, e As QueryPageSettingsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void QueryPageSettingsEventHandler(System::Object ^ sender, QueryPageSettingsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type QueryPageSettingsEventHandler = delegate of obj * QueryPageSettingsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

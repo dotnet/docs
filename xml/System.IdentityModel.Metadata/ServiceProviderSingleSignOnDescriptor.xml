@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceProviderSingleSignOnDescriptor&#xA;Inherits SingleSignOnDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceProviderSingleSignOnDescriptor : System::IdentityModel::Metadata::SingleSignOnDescriptor" />
+  <TypeSignature Language="F#" Value="type ServiceProviderSingleSignOnDescriptor = class&#xA;    inherit SingleSignOnDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor(System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IndexedProtocolEndpointDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceProviderSingleSignOnDescriptor(System::IdentityModel::Metadata::IndexedProtocolEndpointDictionary ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor : System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary -&gt; System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" Usage="new System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssertionConsumerServices As IndexedProtocolEndpointDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::IndexedProtocolEndpointDictionary ^ AssertionConsumerServices { System::IdentityModel::Metadata::IndexedProtocolEndpointDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssertionConsumerServices : System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" Usage="System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AuthenticationRequestsSigned" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationRequestsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AuthenticationRequestsSigned { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationRequestsSigned : bool with get, set" Usage="System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AuthenticationRequestsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.WantAssertionsSigned" />
       <MemberSignature Language="VB.NET" Value="Public Property WantAssertionsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WantAssertionsSigned { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WantAssertionsSigned : bool with get, set" Usage="System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.WantAssertionsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

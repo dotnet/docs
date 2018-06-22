@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DateTimeKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum DateTimeKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class DateTimeKind" />
+  <TypeSignature Language="F#" Value="type DateTimeKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="C++ CLI" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 2" Usage="System.DateTimeKind.Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.DateTimeKind.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.DateTimeKind.Utc" />
       <MemberSignature Language="VB.NET" Value="Utc" />
       <MemberSignature Language="C++ CLI" Value="Utc" />
+      <MemberSignature Language="F#" Value="Utc = 1" Usage="System.DateTimeKind.Utc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

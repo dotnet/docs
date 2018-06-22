@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IUnvalidatedValueProviderSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUnvalidatedValueProviderSource&#xA;Implements IValueProviderSource" />
   <TypeSignature Language="C++ CLI" Value="public interface class IUnvalidatedValueProviderSource : System::Web::ModelBinding::IValueProviderSource" />
+  <TypeSignature Language="F#" Value="type IUnvalidatedValueProviderSource = interface&#xA;    interface IValueProviderSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.IUnvalidatedValueProviderSource.ValidateInput" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateInput : bool with get, set" Usage="System.Web.ModelBinding.IUnvalidatedValueProviderSource.ValidateInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

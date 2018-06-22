@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Colors" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Colors" />
   <TypeSignature Language="C++ CLI" Value="public ref class Colors sealed" />
+  <TypeSignature Language="F#" Value="type Colors = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.AliceBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AliceBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AliceBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.AliceBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.AliceBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +80,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.AntiqueWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AntiqueWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AntiqueWhite { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.AntiqueWhite : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.AntiqueWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +115,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Aqua" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aqua As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Aqua { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aqua : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Aqua" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Aquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aquamarine As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Aquamarine { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aquamarine : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Aquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +185,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Azure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Azure As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Azure { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Azure : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Azure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +220,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Beige" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Beige As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Beige { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Beige : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Beige" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,6 +255,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Bisque" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bisque As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Bisque { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bisque : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Bisque" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +290,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Black" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Black As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Black { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Black : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Black" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -316,6 +325,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.BlanchedAlmond" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlanchedAlmond As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color BlanchedAlmond { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlanchedAlmond : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.BlanchedAlmond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +360,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Blue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Blue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Blue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Blue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Blue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +395,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.BlueViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlueViolet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color BlueViolet { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlueViolet : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.BlueViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -418,6 +430,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Brown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Brown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Brown { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Brown : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Brown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -452,6 +465,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.BurlyWood" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BurlyWood As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color BurlyWood { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BurlyWood : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.BurlyWood" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -486,6 +500,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.CadetBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CadetBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color CadetBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CadetBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.CadetBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -520,6 +535,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Chartreuse" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chartreuse As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Chartreuse { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chartreuse : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Chartreuse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -554,6 +570,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Chocolate" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chocolate As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Chocolate { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chocolate : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Chocolate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -588,6 +605,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Coral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Coral As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Coral { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Coral : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Coral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -622,6 +640,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.CornflowerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CornflowerBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color CornflowerBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CornflowerBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.CornflowerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -656,6 +675,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Cornsilk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cornsilk As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Cornsilk { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cornsilk : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Cornsilk" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -690,6 +710,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Crimson" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Crimson As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Crimson { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Crimson : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Crimson" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -724,6 +745,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Cyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Cyan { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cyan : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Cyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -758,6 +780,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -792,6 +815,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkCyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkCyan { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkCyan : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -826,6 +850,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGoldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkGoldenrod { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGoldenrod : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -860,6 +885,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -894,6 +920,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -928,6 +955,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkKhaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkKhaki As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkKhaki { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkKhaki : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkKhaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -962,6 +990,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkMagenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkMagenta As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkMagenta { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkMagenta : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkMagenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -996,6 +1025,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkOliveGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOliveGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkOliveGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOliveGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkOliveGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1030,6 +1060,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkOrange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrange As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkOrange { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrange : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkOrange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1064,6 +1095,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkOrchid { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrchid : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1098,6 +1130,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkRed { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkRed : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1132,6 +1165,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSalmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkSalmon { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSalmon : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1166,6 +1200,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkSeaGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSeaGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1200,6 +1235,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkSlateBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1234,6 +1270,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkSlateGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1268,6 +1305,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkTurquoise { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkTurquoise : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1302,6 +1340,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DarkViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkViolet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DarkViolet { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkViolet : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DarkViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1336,6 +1375,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DeepPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DeepPink { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepPink : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DeepPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1370,6 +1410,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DeepSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepSkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DeepSkyBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepSkyBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DeepSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1404,6 +1445,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DimGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DimGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DimGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DimGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DimGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1438,6 +1480,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.DodgerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DodgerBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DodgerBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DodgerBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.DodgerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1472,6 +1515,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Firebrick" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Firebrick As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Firebrick { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Firebrick : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Firebrick" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1506,6 +1550,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.FloralWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FloralWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color FloralWhite { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.FloralWhite : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.FloralWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1540,6 +1585,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.ForestGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ForestGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ForestGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForestGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.ForestGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1574,6 +1620,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Fuchsia" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Fuchsia As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Fuchsia { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fuchsia : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Fuchsia" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1608,6 +1655,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Gainsboro" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gainsboro As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Gainsboro { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gainsboro : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Gainsboro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1642,6 +1690,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.GhostWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GhostWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color GhostWhite { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GhostWhite : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.GhostWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1676,6 +1725,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Gold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gold As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Gold { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gold : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Gold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1710,6 +1760,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Goldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Goldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Goldenrod { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Goldenrod : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Goldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1744,6 +1795,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Gray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Gray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Gray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1778,6 +1830,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Green" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Green As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Green { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Green : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Green" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1812,6 +1865,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.GreenYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GreenYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color GreenYellow { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GreenYellow : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.GreenYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1846,6 +1900,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Honeydew" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Honeydew As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Honeydew { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Honeydew : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Honeydew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1880,6 +1935,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.HotPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color HotPink { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotPink : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.HotPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1914,6 +1970,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.IndianRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IndianRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color IndianRed { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.IndianRed : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.IndianRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1948,6 +2005,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Indigo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indigo As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Indigo { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indigo : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Indigo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1982,6 +2040,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Ivory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ivory As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Ivory { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ivory : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Ivory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2016,6 +2075,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Khaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Khaki As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Khaki { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Khaki : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Khaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2050,6 +2110,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Lavender" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lavender As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Lavender { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lavender : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Lavender" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2084,6 +2145,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LavenderBlush" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LavenderBlush As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LavenderBlush { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LavenderBlush : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LavenderBlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2118,6 +2180,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LawnGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LawnGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LawnGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LawnGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LawnGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2152,6 +2215,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LemonChiffon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LemonChiffon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LemonChiffon { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LemonChiffon : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LemonChiffon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2186,6 +2250,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2220,6 +2285,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightCoral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCoral As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightCoral { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCoral : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightCoral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2254,6 +2320,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightCyan { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCyan : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2288,6 +2355,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightGoldenrodYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGoldenrodYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightGoldenrodYellow { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGoldenrodYellow : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightGoldenrodYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2322,6 +2390,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2356,6 +2425,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2390,6 +2460,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightPink { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightPink : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2424,6 +2495,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSalmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightSalmon { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSalmon : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2458,6 +2530,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightSeaGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSeaGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2492,6 +2565,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightSkyBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSkyBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2526,6 +2600,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightSlateGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSlateGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2560,6 +2635,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightSteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSteelBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightSteelBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSteelBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightSteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2594,6 +2670,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LightYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LightYellow { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightYellow : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LightYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2628,6 +2705,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Lime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lime As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Lime { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lime : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Lime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2662,6 +2740,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.LimeGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LimeGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color LimeGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LimeGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.LimeGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2696,6 +2775,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Linen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Linen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Linen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Linen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2730,6 +2810,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Magenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Magenta As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Magenta { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Magenta : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Magenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2764,6 +2845,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Maroon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Maroon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Maroon { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maroon : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Maroon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2798,6 +2880,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumAquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumAquamarine As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumAquamarine { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumAquamarine : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumAquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2832,6 +2915,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2866,6 +2950,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumOrchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumOrchid { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumOrchid : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2900,6 +2985,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumPurple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumPurple As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumPurple { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumPurple : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumPurple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2934,6 +3020,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumSeaGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSeaGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2968,6 +3055,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumSlateBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSlateBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3002,6 +3090,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumSpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSpringGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumSpringGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSpringGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumSpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3036,6 +3125,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumTurquoise { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumTurquoise : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3070,6 +3160,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MediumVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumVioletRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MediumVioletRed { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumVioletRed : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MediumVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3104,6 +3195,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MidnightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MidnightBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MidnightBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MidnightBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MidnightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3138,6 +3230,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MintCream" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MintCream As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MintCream { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MintCream : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MintCream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3172,6 +3265,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.MistyRose" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MistyRose As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color MistyRose { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MistyRose : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.MistyRose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3206,6 +3300,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Moccasin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Moccasin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Moccasin { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Moccasin : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Moccasin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3240,6 +3335,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.NavajoWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NavajoWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color NavajoWhite { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavajoWhite : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.NavajoWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3274,6 +3370,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Navy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navy As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Navy { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navy : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Navy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3308,6 +3405,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.OldLace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OldLace As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OldLace { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldLace : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.OldLace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3342,6 +3440,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Olive" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Olive As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Olive { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Olive : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Olive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3376,6 +3475,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.OliveDrab" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OliveDrab As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OliveDrab { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OliveDrab : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.OliveDrab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3410,6 +3510,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Orange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orange As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Orange { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orange : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Orange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3444,6 +3545,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.OrangeRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OrangeRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OrangeRed { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrangeRed : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.OrangeRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3478,6 +3580,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Orchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Orchid { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orchid : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Orchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3512,6 +3615,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PaleGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGoldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PaleGoldenrod { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGoldenrod : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PaleGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3546,6 +3650,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PaleGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PaleGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PaleGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3580,6 +3685,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PaleTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PaleTurquoise { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleTurquoise : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PaleTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3614,6 +3720,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PaleVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleVioletRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PaleVioletRed { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleVioletRed : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PaleVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3648,6 +3755,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PapayaWhip" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PapayaWhip As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PapayaWhip { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PapayaWhip : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PapayaWhip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3682,6 +3790,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PeachPuff" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PeachPuff As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PeachPuff { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeachPuff : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PeachPuff" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3716,6 +3825,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Peru" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Peru As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Peru { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Peru : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Peru" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3750,6 +3860,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Pink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Pink { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pink : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Pink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3784,6 +3895,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Plum" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Plum As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Plum { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Plum : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Plum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3818,6 +3930,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.PowderBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowderBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color PowderBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowderBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.PowderBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3852,6 +3965,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Purple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Purple As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Purple { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Purple : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Purple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3886,6 +4000,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Red" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Red As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Red { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Red : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Red" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3920,6 +4035,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.RosyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RosyBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color RosyBrown { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RosyBrown : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.RosyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3954,6 +4070,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.RoyalBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RoyalBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color RoyalBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoyalBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.RoyalBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -3988,6 +4105,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SaddleBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SaddleBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SaddleBrown { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SaddleBrown : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SaddleBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4022,6 +4140,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Salmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Salmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Salmon { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Salmon : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Salmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4056,6 +4175,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SandyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SandyBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SandyBrown { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SandyBrown : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SandyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4090,6 +4210,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SeaGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4124,6 +4245,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SeaShell" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaShell As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SeaShell { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaShell : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SeaShell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4158,6 +4280,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Sienna" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Sienna As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Sienna { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sienna : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Sienna" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4192,6 +4315,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Silver" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Silver As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Silver { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Silver : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Silver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4226,6 +4350,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SkyBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SkyBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4260,6 +4385,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SlateBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4294,6 +4420,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SlateGray { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateGray : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4328,6 +4455,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Snow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Snow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Snow { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Snow : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Snow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4362,6 +4490,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SpringGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SpringGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpringGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4396,6 +4525,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.SteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SteelBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color SteelBlue { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SteelBlue : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.SteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4430,6 +4560,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Tan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Tan { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tan : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Tan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4464,6 +4595,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Teal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Teal As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Teal { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Teal : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Teal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4498,6 +4630,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Thistle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thistle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Thistle { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thistle : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Thistle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4532,6 +4665,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Tomato" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tomato As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Tomato { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tomato : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Tomato" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4566,6 +4700,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Transparent As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Transparent { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transparent : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Transparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4600,6 +4735,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Turquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Turquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Turquoise { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Turquoise : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Turquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4634,6 +4770,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Violet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Violet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Violet { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Violet : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Violet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4668,6 +4805,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Wheat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Wheat As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Wheat { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Wheat : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Wheat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4702,6 +4840,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.White" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property White As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color White { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.White : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.White" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4736,6 +4875,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.WhiteSmoke" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WhiteSmoke As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WhiteSmoke { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhiteSmoke : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.WhiteSmoke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4770,6 +4910,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.Yellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Yellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color Yellow { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Yellow : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.Yellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -4804,6 +4945,7 @@ Color Table including a color swatch, the color name, and the hexadecimal value
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Colors.YellowGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YellowGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color YellowGreen { System::Windows::Media::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.YellowGreen : System.Windows.Media.Color" Usage="System.Windows.Media.Colors.YellowGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

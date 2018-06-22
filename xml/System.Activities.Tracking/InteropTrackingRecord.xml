@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.InteropTrackingRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class InteropTrackingRecord&#xA;Inherits CustomTrackingRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class InteropTrackingRecord : System::Activities::Tracking::CustomTrackingRecord" />
+  <TypeSignature Language="F#" Value="type InteropTrackingRecord = class&#xA;    inherit CustomTrackingRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.#ctor(System.Activities.Tracking.InteropTrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (record As InteropTrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; InteropTrackingRecord(System::Activities::Tracking::InteropTrackingRecord ^ record);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.InteropTrackingRecord : System.Activities.Tracking.InteropTrackingRecord -&gt; System.Activities.Tracking.InteropTrackingRecord" Usage="new System.Activities.Tracking.InteropTrackingRecord record" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.#ctor(System.String,System.Workflow.Runtime.Tracking.TrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityDisplayName As String, v1TrackingRecord As TrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InteropTrackingRecord(System::String ^ activityDisplayName, System::Workflow::Runtime::Tracking::TrackingRecord ^ v1TrackingRecord);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.InteropTrackingRecord : string * System.Workflow.Runtime.Tracking.TrackingRecord -&gt; System.Activities.Tracking.InteropTrackingRecord" Usage="new System.Activities.Tracking.InteropTrackingRecord (activityDisplayName, v1TrackingRecord)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="interopTrackingRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.InteropTrackingRecord.TrackingRecord" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrackingRecord As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::TrackingRecord ^ TrackingRecord { System::Workflow::Runtime::Tracking::TrackingRecord ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrackingRecord : System.Workflow.Runtime.Tracking.TrackingRecord" Usage="System.Activities.Tracking.InteropTrackingRecord.TrackingRecord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

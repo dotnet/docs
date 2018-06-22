@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BestFitMappingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BestFitMappingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class BestFitMappingAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type BestFitMappingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.BestFitMappingAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (BestFitMapping As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BestFitMappingAttribute(bool BestFitMapping);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.BestFitMappingAttribute : bool -&gt; System.Runtime.InteropServices.BestFitMappingAttribute" Usage="new System.Runtime.InteropServices.BestFitMappingAttribute BestFitMapping" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.BestFitMappingAttribute.BestFitMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BestFitMapping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BestFitMapping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BestFitMapping : bool" Usage="System.Runtime.InteropServices.BestFitMappingAttribute.BestFitMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar" />
       <MemberSignature Language="VB.NET" Value="Public ThrowOnUnmappableChar As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool ThrowOnUnmappableChar;" />
+      <MemberSignature Language="F#" Value="val mutable ThrowOnUnmappableChar : bool" Usage="System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.EntitySql.FunctionDefinition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FunctionDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class FunctionDefinition sealed" />
+  <TypeSignature Language="F#" Value="type FunctionDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.FunctionDefinition.EndPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndPosition : int" Usage="System.Data.Common.EntitySql.FunctionDefinition.EndPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.FunctionDefinition.Lambda" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lambda As DbLambda" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbLambda ^ Lambda { System::Data::Common::CommandTrees::DbLambda ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lambda : System.Data.Common.CommandTrees.DbLambda" Usage="System.Data.Common.EntitySql.FunctionDefinition.Lambda" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.FunctionDefinition.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Common.EntitySql.FunctionDefinition.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.FunctionDefinition.StartPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartPosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPosition { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartPosition : int" Usage="System.Data.Common.EntitySql.FunctionDefinition.StartPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

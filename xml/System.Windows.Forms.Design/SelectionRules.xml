@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.SelectionRules" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectionRules" />
   <TypeSignature Language="C++ CLI" Value="public enum class SelectionRules" />
+  <TypeSignature Language="F#" Value="type SelectionRules = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.AllSizeable" />
       <MemberSignature Language="VB.NET" Value="AllSizeable" />
       <MemberSignature Language="C++ CLI" Value="AllSizeable" />
+      <MemberSignature Language="F#" Value="AllSizeable = 15" Usage="System.Windows.Forms.Design.SelectionRules.AllSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.BottomSizeable" />
       <MemberSignature Language="VB.NET" Value="BottomSizeable" />
       <MemberSignature Language="C++ CLI" Value="BottomSizeable" />
+      <MemberSignature Language="F#" Value="BottomSizeable = 2" Usage="System.Windows.Forms.Design.SelectionRules.BottomSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.LeftSizeable" />
       <MemberSignature Language="VB.NET" Value="LeftSizeable" />
       <MemberSignature Language="C++ CLI" Value="LeftSizeable" />
+      <MemberSignature Language="F#" Value="LeftSizeable = 4" Usage="System.Windows.Forms.Design.SelectionRules.LeftSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Locked" />
       <MemberSignature Language="VB.NET" Value="Locked" />
       <MemberSignature Language="C++ CLI" Value="Locked" />
+      <MemberSignature Language="F#" Value="Locked = -2147483648" Usage="System.Windows.Forms.Design.SelectionRules.Locked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Moveable" />
       <MemberSignature Language="VB.NET" Value="Moveable" />
       <MemberSignature Language="C++ CLI" Value="Moveable" />
+      <MemberSignature Language="F#" Value="Moveable = 268435456" Usage="System.Windows.Forms.Design.SelectionRules.Moveable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.Design.SelectionRules.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.RightSizeable" />
       <MemberSignature Language="VB.NET" Value="RightSizeable" />
       <MemberSignature Language="C++ CLI" Value="RightSizeable" />
+      <MemberSignature Language="F#" Value="RightSizeable = 8" Usage="System.Windows.Forms.Design.SelectionRules.RightSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.TopSizeable" />
       <MemberSignature Language="VB.NET" Value="TopSizeable" />
       <MemberSignature Language="C++ CLI" Value="TopSizeable" />
+      <MemberSignature Language="F#" Value="TopSizeable = 1" Usage="System.Windows.Forms.Design.SelectionRules.TopSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -186,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="C++ CLI" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 1073741824" Usage="System.Windows.Forms.Design.SelectionRules.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

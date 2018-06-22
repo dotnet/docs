@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BooleanObject" />
   <TypeSignature Language="VB.NET" Value="Public Class BooleanObject&#xA;Inherits JSObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class BooleanObject : Microsoft::JScript::JSObject" />
+  <TypeSignature Language="F#" Value="type BooleanObject = class&#xA;    inherit JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.#ctor(Microsoft.JScript.ScriptObject,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (prototype As ScriptObject, subType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BooleanObject(Microsoft::JScript::ScriptObject ^ prototype, Type ^ subType);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BooleanObject : Microsoft.JScript.ScriptObject * Type -&gt; Microsoft.JScript.BooleanObject" Usage="new Microsoft.JScript.BooleanObject (prototype, subType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="booleanObject.GetType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

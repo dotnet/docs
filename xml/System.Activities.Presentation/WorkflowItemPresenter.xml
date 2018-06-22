@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowItemPresenter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowItemPresenter&#xA;Inherits ContentControl&#xA;Implements ICompositeView" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowItemPresenter sealed : System::Windows::Controls::ContentControl, System::Activities::Presentation::ICompositeView" />
+  <TypeSignature Language="F#" Value="type WorkflowItemPresenter = class&#xA;    inherit ContentControl&#xA;    interface ICompositeView" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemPresenter.AllowedItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowedItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ AllowedItemType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedItemType : Type with get, set" Usage="System.Activities.Presentation.WorkflowItemPresenter.AllowedItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemPresenter.AllowedItemTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowedItemTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowedItemTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowedItemTypeProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemPresenter.AllowedItemTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property DroppingTypeResolvingOptions As TypeResolvingOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::View::TypeResolvingOptions ^ DroppingTypeResolvingOptions { System::Activities::Presentation::View::TypeResolvingOptions ^ get(); void set(System::Activities::Presentation::View::TypeResolvingOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DroppingTypeResolvingOptions : System.Activities.Presentation.View.TypeResolvingOptions with get, set" Usage="System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DroppingTypeResolvingOptionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DroppingTypeResolvingOptionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DroppingTypeResolvingOptionsProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemPresenter.HintText" />
       <MemberSignature Language="VB.NET" Value="Public Property HintText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HintText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HintText : string with get, set" Usage="System.Activities.Presentation.WorkflowItemPresenter.HintText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemPresenter.HintTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HintTextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HintTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HintTextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemPresenter.HintTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefaultContainer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultContainer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultContainer : bool with get, set" Usage="System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDefaultContainerProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDefaultContainerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDefaultContainerProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemPresenter.Item" />
       <MemberSignature Language="VB.NET" Value="Public Property Item As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ Item { System::Activities::Presentation::Model::ModelItem ^ get(); void set(System::Activities::Presentation::Model::ModelItem ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Activities.Presentation.Model.ModelItem with get, set" Usage="System.Activities.Presentation.WorkflowItemPresenter.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemPresenter.ItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowItemPresenter.ItemProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="workflowItemPresenter.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -298,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnDragEnter(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragEnter : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemPresenter.OnDragEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnDragOver(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemPresenter.OnDragOver e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -344,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnDrop(System.Windows.DragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDrop (e As DragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDrop(System::Windows::DragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDrop : System.Windows.DragEventArgs -&gt; unit" Usage="workflowItemPresenter.OnDrop e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -367,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="workflowItemPresenter.OnInitialized e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -390,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="workflowItemPresenter.OnMouseDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -412,6 +429,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemPresenter.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="workflowItemPresenter.OnRender drawingContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

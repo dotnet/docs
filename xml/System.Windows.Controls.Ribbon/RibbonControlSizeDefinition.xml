@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonControlSizeDefinition&#xA;Inherits Freezable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonControlSizeDefinition : System::Windows::Freezable" />
+  <TypeSignature Language="F#" Value="type RibbonControlSizeDefinition = class&#xA;    inherit Freezable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="ribbonControlSizeDefinition.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageSize As RibbonImageSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonImageSize ImageSize { System::Windows::Controls::Ribbon::RibbonImageSize get(); void set(System::Windows::Controls::Ribbon::RibbonImageSize value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageSize : System.Windows.Controls.Ribbon.RibbonImageSize with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ImageSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCollapsed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCollapsed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollapsed : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCollapsedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCollapsedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsCollapsedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsCollapsedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLabelVisible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLabelVisible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLabelVisible : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLabelVisibleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLabelVisibleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsLabelVisibleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.IsLabelVisibleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWidth As RibbonControlLength" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlLength MaxWidth { System::Windows::Controls::Ribbon::RibbonControlLength get(); void set(System::Windows::Controls::Ribbon::RibbonControlLength value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWidth : System.Windows.Controls.Ribbon.RibbonControlLength with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MaxWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -272,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MinWidth As RibbonControlLength" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlLength MinWidth { System::Windows::Controls::Ribbon::RibbonControlLength get(); void set(System::Windows::Controls::Ribbon::RibbonControlLength value); };" />
+      <MemberSignature Language="F#" Value="member this.MinWidth : System.Windows.Controls.Ribbon.RibbonControlLength with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.MinWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -326,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As RibbonControlLength" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlLength Width { System::Windows::Controls::Ribbon::RibbonControlLength get(); void set(System::Windows::Controls::Ribbon::RibbonControlLength value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : System.Windows.Controls.Ribbon.RibbonControlLength with get, set" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -361,6 +374,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.WidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

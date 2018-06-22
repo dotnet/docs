@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCanceledException" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskCanceledException&#xA;Inherits OperationCanceledException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskCanceledException : OperationCanceledException" />
+  <TypeSignature Language="F#" Value="type TaskCanceledException = class&#xA;    inherit OperationCanceledException" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCanceledException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCanceledException : string -&gt; System.Threading.Tasks.TaskCanceledException" Usage="new System.Threading.Tasks.TaskCanceledException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Task task) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.Threading.Tasks.Task)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCanceledException(System::Threading::Tasks::Task ^ task);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCanceledException : System.Threading.Tasks.Task -&gt; System.Threading.Tasks.TaskCanceledException" Usage="new System.Threading.Tasks.TaskCanceledException task" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TaskCanceledException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCanceledException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.Tasks.TaskCanceledException" Usage="new System.Threading.Tasks.TaskCanceledException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCanceledException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCanceledException : string * Exception -&gt; System.Threading.Tasks.TaskCanceledException" Usage="new System.Threading.Tasks.TaskCanceledException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, token As CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCanceledException(System::String ^ message, Exception ^ innerException, System::Threading::CancellationToken token);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCanceledException : string * Exception * System.Threading.CancellationToken -&gt; System.Threading.Tasks.TaskCanceledException" Usage="new System.Threading.Tasks.TaskCanceledException (message, innerException, token)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -276,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskCanceledException.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Task { System::Threading::Tasks::Task ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.TaskCanceledException.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

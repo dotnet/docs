@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MonthChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class MonthChangedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MonthChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type MonthChangedEventArgs = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MonthChangedEventArgs.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newDate As DateTime, previousDate As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MonthChangedEventArgs(DateTime newDate, DateTime previousDate);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.MonthChangedEventArgs : DateTime * DateTime -&gt; System.Web.UI.WebControls.MonthChangedEventArgs" Usage="new System.Web.UI.WebControls.MonthChangedEventArgs (newDate, previousDate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MonthChangedEventArgs.NewDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewDate : DateTime" Usage="System.Web.UI.WebControls.MonthChangedEventArgs.NewDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime PreviousDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousDate : DateTime" Usage="System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeModeConversion" />
   <TypeSignature Language="VB.NET" Value="Public Structure ImeModeConversion" />
   <TypeSignature Language="C++ CLI" Value="public value class ImeModeConversion" />
+  <TypeSignature Language="F#" Value="type ImeModeConversion = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.ImeModeConversionBits" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ImeModeConversionBits As Dictionary(Of ImeMode, ImeModeConversion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::Dictionary&lt;System::Windows::Forms::ImeMode, System::Windows::Forms::ImeModeConversion&gt; ^ ImeModeConversionBits { System::Collections::Generic::Dictionary&lt;System::Windows::Forms::ImeMode, System::Windows::Forms::ImeModeConversion&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImeModeConversionBits : System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode, System.Windows.Forms.ImeModeConversion&gt;" Usage="System.Windows.Forms.ImeModeConversion.ImeModeConversionBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.IsCurrentConversionTableSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsCurrentConversionTableSupported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsCurrentConversionTableSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCurrentConversionTableSupported : bool" Usage="System.Windows.Forms.ImeModeConversion.IsCurrentConversionTableSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

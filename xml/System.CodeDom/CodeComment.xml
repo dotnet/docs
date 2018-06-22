@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeComment" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeComment&#xA;Inherits CodeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeComment : System::CodeDom::CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeComment = class&#xA;    inherit CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeComment.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeComment(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeComment : string -&gt; System.CodeDom.CodeComment" Usage="new System.CodeDom.CodeComment text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeComment.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, docComment As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeComment(System::String ^ text, bool docComment);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeComment : string * bool -&gt; System.CodeDom.CodeComment" Usage="new System.CodeDom.CodeComment (text, docComment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeComment.DocComment" />
       <MemberSignature Language="VB.NET" Value="Public Property DocComment As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DocComment { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DocComment : bool with get, set" Usage="System.CodeDom.CodeComment.DocComment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeComment.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.CodeDom.CodeComment.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

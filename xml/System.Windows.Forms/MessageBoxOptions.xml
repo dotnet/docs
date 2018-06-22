@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxOptions" />
+  <TypeSignature Language="F#" Value="type MessageBoxOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxOptions.DefaultDesktopOnly" />
       <MemberSignature Language="VB.NET" Value="DefaultDesktopOnly" />
       <MemberSignature Language="C++ CLI" Value="DefaultDesktopOnly" />
+      <MemberSignature Language="F#" Value="DefaultDesktopOnly = 131072" Usage="System.Windows.Forms.MessageBoxOptions.DefaultDesktopOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxOptions.RightAlign" />
       <MemberSignature Language="VB.NET" Value="RightAlign" />
       <MemberSignature Language="C++ CLI" Value="RightAlign" />
+      <MemberSignature Language="F#" Value="RightAlign = 524288" Usage="System.Windows.Forms.MessageBoxOptions.RightAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxOptions.RtlReading" />
       <MemberSignature Language="VB.NET" Value="RtlReading" />
       <MemberSignature Language="C++ CLI" Value="RtlReading" />
+      <MemberSignature Language="F#" Value="RtlReading = 1048576" Usage="System.Windows.Forms.MessageBoxOptions.RtlReading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxOptions.ServiceNotification" />
       <MemberSignature Language="VB.NET" Value="ServiceNotification" />
       <MemberSignature Language="C++ CLI" Value="ServiceNotification" />
+      <MemberSignature Language="F#" Value="ServiceNotification = 2097152" Usage="System.Windows.Forms.MessageBoxOptions.ServiceNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MethodBodyAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodBodyAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class MethodBodyAttributes" />
+  <TypeSignature Language="F#" Value="type MethodBodyAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals" />
       <MemberSignature Language="VB.NET" Value="InitLocals" />
       <MemberSignature Language="C++ CLI" Value="InitLocals" />
+      <MemberSignature Language="F#" Value="InitLocals = 1" Usage="System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.MethodBodyAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.Metadata.Ecma335.MethodBodyAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

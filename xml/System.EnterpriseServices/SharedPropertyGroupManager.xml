@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroupManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SharedPropertyGroupManager&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SharedPropertyGroupManager sealed : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type SharedPropertyGroupManager = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.CreatePropertyGroup(System.String,System.EnterpriseServices.PropertyLockMode@,System.EnterpriseServices.PropertyReleaseMode@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePropertyGroup (name As String, ByRef dwIsoMode As PropertyLockMode, ByRef dwRelMode As PropertyReleaseMode, ByRef fExist As Boolean) As SharedPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedPropertyGroup ^ CreatePropertyGroup(System::String ^ name, System::EnterpriseServices::PropertyLockMode % dwIsoMode, System::EnterpriseServices::PropertyReleaseMode % dwRelMode, [Runtime::InteropServices::Out] bool % fExist);" />
+      <MemberSignature Language="F#" Value="member this.CreatePropertyGroup : string *  *  *  -&gt; System.EnterpriseServices.SharedPropertyGroup" Usage="sharedPropertyGroupManager.CreatePropertyGroup (name, dwIsoMode, dwRelMode, fExist)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="sharedPropertyGroupManager.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.Group(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Group (name As String) As SharedPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedPropertyGroup ^ Group(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Group : string -&gt; System.EnterpriseServices.SharedPropertyGroup" Usage="sharedPropertyGroupManager.Group name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

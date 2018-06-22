@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipHorizontalPlacement" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyTipHorizontalPlacement" />
   <TypeSignature Language="C++ CLI" Value="public enum class KeyTipHorizontalPlacement" />
+  <TypeSignature Language="F#" Value="type KeyTipHorizontalPlacement = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetCenter" />
       <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetCenter" />
       <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetCenter = 4" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetLeft" />
       <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetLeft" />
       <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetLeft = 3" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetRight" />
       <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetRight" />
       <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetRight = 5" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetCenter" />
       <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetCenter" />
       <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetCenter = 1" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetLeft" />
       <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetLeft" />
       <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetLeft = 0" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetRight" />
       <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetRight" />
       <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetRight = 2" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetCenter" />
       <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetCenter" />
       <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetCenter = 7" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetLeft" />
       <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetLeft" />
       <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetLeft = 6" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetRight" />
       <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetRight" />
       <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetRight = 8" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

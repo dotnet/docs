@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Unicode.UnicodeRanges" />
   <TypeSignature Language="VB.NET" Value="Public Class UnicodeRanges" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnicodeRanges abstract sealed" />
+  <TypeSignature Language="F#" Value="type UnicodeRanges = class" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.All" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property All As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ All { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.All : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -55,6 +57,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.AlphabeticPresentationForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlphabeticPresentationForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ AlphabeticPresentationForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlphabeticPresentationForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.AlphabeticPresentationForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -77,6 +80,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Arabic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Arabic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Arabic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arabic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Arabic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -99,6 +103,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArabicExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ArabicExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArabicExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ArabicExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -121,6 +126,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArabicPresentationFormsA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ArabicPresentationFormsA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArabicPresentationFormsA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -143,6 +149,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArabicPresentationFormsB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ArabicPresentationFormsB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArabicPresentationFormsB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -165,6 +172,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArabicSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ArabicSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArabicSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ArabicSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -187,6 +195,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Armenian" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Armenian As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Armenian { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Armenian : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Armenian" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -209,6 +218,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Arrows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Arrows As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Arrows { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arrows : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Arrows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -231,6 +241,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Balinese" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Balinese As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Balinese { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Balinese : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Balinese" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -253,6 +264,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bamum" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bamum As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Bamum { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bamum : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Bamum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -275,6 +287,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BasicLatin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BasicLatin As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ BasicLatin { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BasicLatin : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.BasicLatin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -297,6 +310,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Batak" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Batak As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Batak { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Batak : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Batak" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -319,6 +333,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bengali" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bengali As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Bengali { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bengali : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Bengali" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -341,6 +356,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BlockElements" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlockElements As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ BlockElements { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlockElements : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.BlockElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -363,6 +379,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bopomofo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bopomofo As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Bopomofo { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bopomofo : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Bopomofo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -385,6 +402,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BopomofoExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BopomofoExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ BopomofoExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BopomofoExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.BopomofoExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -407,6 +425,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BoxDrawing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BoxDrawing As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ BoxDrawing { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoxDrawing : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.BoxDrawing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -429,6 +448,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BraillePatterns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BraillePatterns As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ BraillePatterns { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BraillePatterns : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.BraillePatterns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -451,6 +471,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Buginese" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Buginese As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Buginese { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buginese : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Buginese" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -473,6 +494,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Buhid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Buhid As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Buhid { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buhid : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Buhid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -495,6 +517,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cham" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cham As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Cham { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cham : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Cham" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -517,6 +540,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cherokee" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cherokee As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Cherokee { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cherokee : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Cherokee" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -539,6 +563,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CherokeeSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CherokeeSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CherokeeSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CherokeeSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CherokeeSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -561,6 +586,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibility" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkCompatibility As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkCompatibility { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkCompatibility : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkCompatibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -583,6 +609,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkCompatibilityForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkCompatibilityForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkCompatibilityForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkCompatibilityForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -605,6 +632,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityIdeographs" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkCompatibilityIdeographs As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkCompatibilityIdeographs { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkCompatibilityIdeographs : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkCompatibilityIdeographs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -627,6 +655,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkRadicalsSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkRadicalsSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkRadicalsSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkRadicalsSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkRadicalsSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -649,6 +678,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkStrokes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkStrokes As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkStrokes { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkStrokes : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkStrokes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -671,6 +701,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkSymbolsandPunctuation As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkSymbolsandPunctuation { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkSymbolsandPunctuation : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -693,6 +724,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographs" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkUnifiedIdeographs As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkUnifiedIdeographs { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkUnifiedIdeographs : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -715,6 +747,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographsExtensionA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CjkUnifiedIdeographsExtensionA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CjkUnifiedIdeographsExtensionA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CjkUnifiedIdeographsExtensionA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographsExtensionA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -737,6 +770,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarks" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CombiningDiacriticalMarks As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CombiningDiacriticalMarks { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CombiningDiacriticalMarks : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -759,6 +793,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CombiningDiacriticalMarksExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CombiningDiacriticalMarksExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CombiningDiacriticalMarksExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -781,6 +816,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksforSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CombiningDiacriticalMarksforSymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CombiningDiacriticalMarksforSymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CombiningDiacriticalMarksforSymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksforSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -803,6 +839,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CombiningDiacriticalMarksSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CombiningDiacriticalMarksSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CombiningDiacriticalMarksSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -825,6 +862,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningHalfMarks" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CombiningHalfMarks As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CombiningHalfMarks { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CombiningHalfMarks : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CombiningHalfMarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -847,6 +885,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CommonIndicNumberForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommonIndicNumberForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CommonIndicNumberForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommonIndicNumberForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CommonIndicNumberForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -869,6 +908,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ControlPictures" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlPictures As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ControlPictures { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlPictures : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ControlPictures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -891,6 +931,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Coptic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Coptic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Coptic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Coptic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Coptic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -913,6 +954,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CurrencySymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrencySymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CurrencySymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrencySymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CurrencySymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -935,6 +977,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cyrillic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cyrillic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Cyrillic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cyrillic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Cyrillic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -957,6 +1000,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CyrillicExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CyrillicExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CyrillicExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CyrillicExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -979,6 +1023,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CyrillicExtendedB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CyrillicExtendedB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CyrillicExtendedB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CyrillicExtendedB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1001,6 +1046,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CyrillicSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CyrillicSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CyrillicSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CyrillicSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1023,6 +1069,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Devanagari" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Devanagari As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Devanagari { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Devanagari : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Devanagari" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1045,6 +1092,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.DevanagariExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DevanagariExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ DevanagariExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DevanagariExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.DevanagariExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1067,6 +1115,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Dingbats" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Dingbats As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Dingbats { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dingbats : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Dingbats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1089,6 +1138,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EnclosedAlphanumerics" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EnclosedAlphanumerics As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ EnclosedAlphanumerics { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnclosedAlphanumerics : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.EnclosedAlphanumerics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1111,6 +1161,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EnclosedCjkLettersandMonths" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EnclosedCjkLettersandMonths As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ EnclosedCjkLettersandMonths { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnclosedCjkLettersandMonths : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.EnclosedCjkLettersandMonths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1133,6 +1184,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Ethiopic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ethiopic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Ethiopic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ethiopic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Ethiopic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1155,6 +1207,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EthiopicExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ EthiopicExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EthiopicExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.EthiopicExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1177,6 +1230,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EthiopicExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ EthiopicExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EthiopicExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.EthiopicExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1199,6 +1253,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EthiopicSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ EthiopicSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EthiopicSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.EthiopicSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1221,6 +1276,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeneralPunctuation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeneralPunctuation As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GeneralPunctuation { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeneralPunctuation : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GeneralPunctuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1243,6 +1299,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeometricShapes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeometricShapes As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GeometricShapes { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeometricShapes : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GeometricShapes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1265,6 +1322,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Georgian" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Georgian As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Georgian { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Georgian : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Georgian" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1287,6 +1345,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeorgianSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeorgianSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GeorgianSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeorgianSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GeorgianSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1309,6 +1368,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Glagolitic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Glagolitic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Glagolitic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glagolitic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Glagolitic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1331,6 +1391,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GreekandCoptic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GreekandCoptic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GreekandCoptic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GreekandCoptic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GreekandCoptic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1353,6 +1414,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GreekExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GreekExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GreekExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GreekExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GreekExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1375,6 +1437,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Gujarati" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gujarati As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Gujarati { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gujarati : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Gujarati" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1397,6 +1460,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Gurmukhi" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gurmukhi As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Gurmukhi { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gurmukhi : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Gurmukhi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1419,6 +1483,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HalfwidthandFullwidthForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HalfwidthandFullwidthForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HalfwidthandFullwidthForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HalfwidthandFullwidthForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HalfwidthandFullwidthForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1441,6 +1506,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulCompatibilityJamo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HangulCompatibilityJamo As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HangulCompatibilityJamo { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HangulCompatibilityJamo : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HangulCompatibilityJamo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1463,6 +1529,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HangulJamo As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HangulJamo { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HangulJamo : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HangulJamo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1485,6 +1552,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HangulJamoExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HangulJamoExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HangulJamoExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HangulJamoExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1507,6 +1575,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HangulJamoExtendedB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HangulJamoExtendedB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HangulJamoExtendedB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HangulJamoExtendedB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1529,6 +1598,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulSyllables" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HangulSyllables As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ HangulSyllables { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HangulSyllables : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.HangulSyllables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1551,6 +1621,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hanunoo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hanunoo As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Hanunoo { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hanunoo : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Hanunoo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1573,6 +1644,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hebrew" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hebrew As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Hebrew { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hebrew : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Hebrew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1595,6 +1667,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hiragana" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hiragana As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Hiragana { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hiragana : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Hiragana" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1617,6 +1690,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.IdeographicDescriptionCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IdeographicDescriptionCharacters As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ IdeographicDescriptionCharacters { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdeographicDescriptionCharacters : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.IdeographicDescriptionCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1639,6 +1713,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.IpaExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IpaExtensions As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ IpaExtensions { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IpaExtensions : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.IpaExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1661,6 +1736,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Javanese" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Javanese As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Javanese { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Javanese : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Javanese" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1683,6 +1759,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Kanbun" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Kanbun As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Kanbun { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kanbun : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Kanbun" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1705,6 +1782,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KangxiRadicals" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KangxiRadicals As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ KangxiRadicals { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KangxiRadicals : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.KangxiRadicals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1727,6 +1805,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Kannada" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Kannada As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Kannada { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kannada : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Kannada" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1749,6 +1828,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Katakana" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Katakana As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Katakana { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Katakana : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Katakana" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1771,6 +1851,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KatakanaPhoneticExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KatakanaPhoneticExtensions As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ KatakanaPhoneticExtensions { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KatakanaPhoneticExtensions : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.KatakanaPhoneticExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1793,6 +1874,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KayahLi" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KayahLi As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ KayahLi { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KayahLi : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.KayahLi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1815,6 +1897,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Khmer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Khmer As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Khmer { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Khmer : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Khmer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1837,6 +1920,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KhmerSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KhmerSymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ KhmerSymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KhmerSymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.KhmerSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1859,6 +1943,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lao" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lao As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Lao { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lao : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Lao" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1881,6 +1966,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Latin1Supplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Latin1Supplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Latin1Supplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Latin1Supplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Latin1Supplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1903,6 +1989,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1925,6 +2012,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedAdditional" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedAdditional As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedAdditional { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedAdditional : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedAdditional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1947,6 +2035,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1969,6 +2058,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedC" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedC As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedC { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedC : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -1991,6 +2081,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedD" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedD As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedD { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedD : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedD" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2013,6 +2104,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedE" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LatinExtendedE As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LatinExtendedE { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LatinExtendedE : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LatinExtendedE" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2035,6 +2127,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lepcha" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lepcha As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Lepcha { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lepcha : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Lepcha" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2057,6 +2150,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LetterlikeSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LetterlikeSymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ LetterlikeSymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LetterlikeSymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.LetterlikeSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2079,6 +2173,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Limbu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Limbu As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Limbu { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Limbu : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Limbu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2101,6 +2196,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lisu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lisu As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Lisu { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lisu : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Lisu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2123,6 +2219,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Malayalam" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Malayalam As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Malayalam { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Malayalam : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Malayalam" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2145,6 +2242,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Mandaic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Mandaic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Mandaic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mandaic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Mandaic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2167,6 +2265,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MathematicalOperators" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MathematicalOperators As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MathematicalOperators { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MathematicalOperators : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MathematicalOperators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2189,6 +2288,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MeeteiMayek" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MeeteiMayek As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MeeteiMayek { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeeteiMayek : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MeeteiMayek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2211,6 +2311,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MeeteiMayekExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MeeteiMayekExtensions As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MeeteiMayekExtensions { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeeteiMayekExtensions : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MeeteiMayekExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2233,6 +2334,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiscellaneousMathematicalSymbolsA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MiscellaneousMathematicalSymbolsA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiscellaneousMathematicalSymbolsA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2255,6 +2357,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiscellaneousMathematicalSymbolsB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MiscellaneousMathematicalSymbolsB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiscellaneousMathematicalSymbolsB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2277,6 +2380,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiscellaneousSymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MiscellaneousSymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiscellaneousSymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MiscellaneousSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2299,6 +2403,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbolsandArrows" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiscellaneousSymbolsandArrows As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MiscellaneousSymbolsandArrows { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiscellaneousSymbolsandArrows : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MiscellaneousSymbolsandArrows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2321,6 +2426,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousTechnical" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiscellaneousTechnical As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MiscellaneousTechnical { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiscellaneousTechnical : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MiscellaneousTechnical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2343,6 +2449,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ModifierToneLetters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ModifierToneLetters As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ ModifierToneLetters { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModifierToneLetters : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.ModifierToneLetters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2365,6 +2472,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Mongolian" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Mongolian As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Mongolian { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mongolian : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Mongolian" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2387,6 +2495,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Myanmar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Myanmar As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Myanmar { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Myanmar : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Myanmar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2409,6 +2518,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MyanmarExtendedA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MyanmarExtendedA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MyanmarExtendedA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MyanmarExtendedA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2431,6 +2541,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MyanmarExtendedB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ MyanmarExtendedB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MyanmarExtendedB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.MyanmarExtendedB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2453,6 +2564,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NewTaiLue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NewTaiLue As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ NewTaiLue { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewTaiLue : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.NewTaiLue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2475,6 +2587,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NKo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NKo As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ NKo { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NKo : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.NKo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2497,6 +2610,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ None { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.None : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.None" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2519,6 +2633,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NumberForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ NumberForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.NumberForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2541,6 +2656,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Ogham" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ogham As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Ogham { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ogham : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Ogham" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2563,6 +2679,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.OlChiki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OlChiki As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ OlChiki { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OlChiki : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.OlChiki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2585,6 +2702,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.OpticalCharacterRecognition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OpticalCharacterRecognition As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ OpticalCharacterRecognition { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpticalCharacterRecognition : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.OpticalCharacterRecognition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2607,6 +2725,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Oriya" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Oriya As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Oriya { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Oriya : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Oriya" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2629,6 +2748,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Phagspa" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Phagspa As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Phagspa { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Phagspa : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Phagspa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2651,6 +2771,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PhoneticExtensions As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ PhoneticExtensions { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PhoneticExtensions : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.PhoneticExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2673,6 +2794,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensionsSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PhoneticExtensionsSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ PhoneticExtensionsSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PhoneticExtensionsSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.PhoneticExtensionsSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2695,6 +2817,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Rejang" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Rejang As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Rejang { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rejang : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Rejang" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2717,6 +2840,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Runic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Runic As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Runic { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Runic : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Runic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2739,6 +2863,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Samaritan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Samaritan As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Samaritan { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Samaritan : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Samaritan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2761,6 +2886,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Saurashtra" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Saurashtra As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Saurashtra { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Saurashtra : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Saurashtra" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2783,6 +2909,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Sinhala" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Sinhala As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Sinhala { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sinhala : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Sinhala" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2805,6 +2932,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SmallFormVariants" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallFormVariants As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SmallFormVariants { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmallFormVariants : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SmallFormVariants" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2827,6 +2955,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SpacingModifierLetters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SpacingModifierLetters As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SpacingModifierLetters { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpacingModifierLetters : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SpacingModifierLetters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2849,6 +2978,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Specials" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Specials As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Specials { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Specials : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Specials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2871,6 +3001,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Sundanese" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Sundanese As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Sundanese { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sundanese : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Sundanese" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2893,6 +3024,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SundaneseSupplement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SundaneseSupplement As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SundaneseSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SundaneseSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SundaneseSupplement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2915,6 +3047,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SuperscriptsandSubscripts" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SuperscriptsandSubscripts As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SuperscriptsandSubscripts { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SuperscriptsandSubscripts : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SuperscriptsandSubscripts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2937,6 +3070,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsA" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupplementalArrowsA As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SupplementalArrowsA { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupplementalArrowsA : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SupplementalArrowsA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2959,6 +3093,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsB" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupplementalArrowsB As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SupplementalArrowsB { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupplementalArrowsB : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SupplementalArrowsB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -2981,6 +3116,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalMathematicalOperators" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupplementalMathematicalOperators As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SupplementalMathematicalOperators { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupplementalMathematicalOperators : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SupplementalMathematicalOperators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3003,6 +3139,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalPunctuation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SupplementalPunctuation As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SupplementalPunctuation { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupplementalPunctuation : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SupplementalPunctuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3025,6 +3162,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SylotiNagri" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SylotiNagri As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SylotiNagri { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SylotiNagri : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SylotiNagri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3047,6 +3185,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Syriac" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Syriac As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Syriac { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Syriac : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Syriac" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3069,6 +3208,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tagalog" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tagalog As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Tagalog { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tagalog : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Tagalog" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3091,6 +3231,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tagbanwa" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tagbanwa As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Tagbanwa { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tagbanwa : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Tagbanwa" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3113,6 +3254,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiLe" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TaiLe As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ TaiLe { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaiLe : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.TaiLe" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3135,6 +3277,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiTham" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TaiTham As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ TaiTham { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaiTham : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.TaiTham" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3157,6 +3300,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiViet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TaiViet As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ TaiViet { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaiViet : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.TaiViet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3179,6 +3323,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tamil" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tamil As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Tamil { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tamil : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Tamil" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3201,6 +3346,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Telugu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Telugu As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Telugu { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Telugu : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Telugu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3223,6 +3369,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Thaana" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thaana As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Thaana { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thaana : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Thaana" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3245,6 +3392,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Thai" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thai As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Thai { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thai : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Thai" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3267,6 +3415,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tibetan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tibetan As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Tibetan { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tibetan : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Tibetan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3289,6 +3438,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tifinagh" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tifinagh As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Tifinagh { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tifinagh : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Tifinagh" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3311,6 +3461,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabics" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnifiedCanadianAboriginalSyllabics As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ UnifiedCanadianAboriginalSyllabics { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnifiedCanadianAboriginalSyllabics : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3333,6 +3484,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabicsExtended" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnifiedCanadianAboriginalSyllabicsExtended As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ UnifiedCanadianAboriginalSyllabicsExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UnifiedCanadianAboriginalSyllabicsExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabicsExtended" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3355,6 +3507,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Vai" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Vai As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ Vai { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Vai : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.Vai" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3377,6 +3530,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VariationSelectors" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VariationSelectors As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ VariationSelectors { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VariationSelectors : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.VariationSelectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3399,6 +3553,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VedicExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VedicExtensions As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ VedicExtensions { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VedicExtensions : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.VedicExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3421,6 +3576,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VerticalForms" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VerticalForms As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ VerticalForms { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalForms : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.VerticalForms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3443,6 +3599,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YijingHexagramSymbols" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YijingHexagramSymbols As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ YijingHexagramSymbols { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.YijingHexagramSymbols : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.YijingHexagramSymbols" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3465,6 +3622,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YiRadicals" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YiRadicals As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ YiRadicals { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.YiRadicals : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.YiRadicals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -3487,6 +3645,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YiSyllables" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YiSyllables As UnicodeRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ YiSyllables { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.YiSyllables : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.YiSyllables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>

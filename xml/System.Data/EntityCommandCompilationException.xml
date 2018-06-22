@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityCommandCompilationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityCommandCompilationException&#xA;Inherits EntityException" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityCommandCompilationException sealed : System::Data::EntityException" />
+  <TypeSignature Language="F#" Value="type EntityCommandCompilationException = class&#xA;    inherit EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityCommandCompilationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCommandCompilationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityCommandCompilationException : string -&gt; System.Data.EntityCommandCompilationException" Usage="new System.Data.EntityCommandCompilationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityCommandCompilationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCommandCompilationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityCommandCompilationException : string * Exception -&gt; System.Data.EntityCommandCompilationException" Usage="new System.Data.EntityCommandCompilationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

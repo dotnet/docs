@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Wrapping" />
   <TypeSignature Language="VB.NET" Value="Public Enum Wrapping" />
   <TypeSignature Language="C++ CLI" Value="public enum class Wrapping" />
+  <TypeSignature Language="F#" Value="type Wrapping = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.NotSet" />
       <MemberSignature Language="VB.NET" Value="NotSet" />
       <MemberSignature Language="C++ CLI" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.MobileControls.Wrapping.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.NoWrap" />
       <MemberSignature Language="VB.NET" Value="NoWrap" />
       <MemberSignature Language="C++ CLI" Value="NoWrap" />
+      <MemberSignature Language="F#" Value="NoWrap = 2" Usage="System.Web.UI.MobileControls.Wrapping.NoWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.Wrap" />
       <MemberSignature Language="VB.NET" Value="Wrap" />
       <MemberSignature Language="C++ CLI" Value="Wrap" />
+      <MemberSignature Language="F#" Value="Wrap = 1" Usage="System.Web.UI.MobileControls.Wrapping.Wrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

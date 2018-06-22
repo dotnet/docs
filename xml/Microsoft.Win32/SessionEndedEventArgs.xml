@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionEndedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionEndedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SessionEndedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SessionEndedEventArgs.#ctor(Microsoft.Win32.SessionEndReasons)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As SessionEndReasons)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionEndedEventArgs(Microsoft::Win32::SessionEndReasons reason);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SessionEndedEventArgs : Microsoft.Win32.SessionEndReasons -&gt; Microsoft.Win32.SessionEndedEventArgs" Usage="new Microsoft.Win32.SessionEndedEventArgs reason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SessionEndedEventArgs.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As SessionEndReasons" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SessionEndReasons Reason { Microsoft::Win32::SessionEndReasons get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : Microsoft.Win32.SessionEndReasons" Usage="Microsoft.Win32.SessionEndedEventArgs.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

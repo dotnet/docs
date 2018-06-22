@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" />
   <TypeSignature Language="VB.NET" Value="Public Class EditorPartChrome" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditorPartChrome" />
+  <TypeSignature Language="F#" Value="type EditorPartChrome = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.#ctor(System.Web.UI.WebControls.WebParts.EditorZoneBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (zone As EditorZoneBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartChrome(System::Web::UI::WebControls::WebParts::EditorZoneBase ^ zone);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.EditorPartChrome : System.Web.UI.WebControls.WebParts.EditorZoneBase -&gt; System.Web.UI.WebControls.WebParts.EditorPartChrome" Usage="new System.Web.UI.WebControls.WebParts.EditorPartChrome zone" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Style CreateEditorPartChromeStyle(class System.Web.UI.WebControls.WebParts.EditorPart editorPart, valuetype System.Web.UI.WebControls.WebParts.PartChromeType chromeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.CreateEditorPartChromeStyle(System.Web.UI.WebControls.WebParts.EditorPart,System.Web.UI.WebControls.WebParts.PartChromeType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Style ^ CreateEditorPartChromeStyle(System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart, System::Web::UI::WebControls::WebParts::PartChromeType chromeType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateEditorPartChromeStyle : System.Web.UI.WebControls.WebParts.EditorPart * System.Web.UI.WebControls.WebParts.PartChromeType -&gt; System.Web.UI.WebControls.Style&#xA;override this.CreateEditorPartChromeStyle : System.Web.UI.WebControls.WebParts.EditorPart * System.Web.UI.WebControls.WebParts.PartChromeType -&gt; System.Web.UI.WebControls.Style" Usage="editorPartChrome.CreateEditorPartChromeStyle (editorPart, chromeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.PerformPreRender" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub PerformPreRender ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PerformPreRender();" />
+      <MemberSignature Language="F#" Value="abstract member PerformPreRender : unit -&gt; unit&#xA;override this.PerformPreRender : unit -&gt; unit" Usage="editorPartChrome.PerformPreRender " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEditorPart(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderEditorPart(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.EditorPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEditorPart(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEditorPart : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.EditorPart -&gt; unit&#xA;override this.RenderEditorPart : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.EditorPart -&gt; unit" Usage="editorPartChrome.RenderEditorPart (writer, editorPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderPartContents(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartChrome.RenderPartContents(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.EditorPart)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPartContents(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
+      <MemberSignature Language="F#" Value="abstract member RenderPartContents : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.EditorPart -&gt; unit&#xA;override this.RenderPartContents : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.EditorPart -&gt; unit" Usage="editorPartChrome.RenderPartContents (writer, editorPart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPartChrome.Zone" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Zone As EditorZoneBase" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::EditorZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::EditorZoneBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zone : System.Web.UI.WebControls.WebParts.EditorZoneBase" Usage="System.Web.UI.WebControls.WebParts.EditorPartChrome.Zone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

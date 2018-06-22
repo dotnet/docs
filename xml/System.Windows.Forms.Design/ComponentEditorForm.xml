@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorForm" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentEditorForm&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentEditorForm : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type ComponentEditorForm = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.#ctor(System.Object,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (component As Object, pageTypes As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentEditorForm(System::Object ^ component, cli::array &lt;Type ^&gt; ^ pageTypes);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.ComponentEditorForm : obj * Type[] -&gt; System.Windows.Forms.Design.ComponentEditorForm" Usage="new System.Windows.Forms.Design.ComponentEditorForm (component, pageTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorForm.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.Design.ComponentEditorForm.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.ComponentEditorForm.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnActivated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnActivated : EventArgs -&gt; unit" Usage="componentEditorForm.OnActivated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHelpRequested (e As HelpEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHelpRequested(System::Windows::Forms::HelpEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHelpRequested : System.Windows.Forms.HelpEventArgs -&gt; unit" Usage="componentEditorForm.OnHelpRequested e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.OnSelChangeSelector(System.Object,System.Windows.Forms.TreeViewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelChangeSelector (source As Object, e As TreeViewEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelChangeSelector(System::Object ^ source, System::Windows::Forms::TreeViewEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelChangeSelector : obj * System.Windows.Forms.TreeViewEventArgs -&gt; unit&#xA;override this.OnSelChangeSelector : obj * System.Windows.Forms.TreeViewEventArgs -&gt; unit" Usage="componentEditorForm.OnSelChangeSelector (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.PreProcessMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function PreProcessMessage (ByRef msg As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PreProcessMessage(System::Windows::Forms::Message % msg);" />
+      <MemberSignature Language="F#" Value="override this.PreProcessMessage :  -&gt; bool" Usage="componentEditorForm.PreProcessMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm () As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm();" />
+      <MemberSignature Language="F#" Value="abstract member ShowForm : unit -&gt; System.Windows.Forms.DialogResult&#xA;override this.ShowForm : unit -&gt; System.Windows.Forms.DialogResult" Usage="componentEditorForm.ShowForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -293,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (page As Integer) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(int page);" />
+      <MemberSignature Language="F#" Value="abstract member ShowForm : int -&gt; System.Windows.Forms.DialogResult&#xA;override this.ShowForm : int -&gt; System.Windows.Forms.DialogResult" Usage="componentEditorForm.ShowForm page" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (owner As IWin32Window) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(System::Windows::Forms::IWin32Window ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member ShowForm : System.Windows.Forms.IWin32Window -&gt; System.Windows.Forms.DialogResult&#xA;override this.ShowForm : System.Windows.Forms.IWin32Window -&gt; System.Windows.Forms.DialogResult" Usage="componentEditorForm.ShowForm owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorForm.ShowForm(System.Windows.Forms.IWin32Window,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowForm (owner As IWin32Window, page As Integer) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DialogResult ShowForm(System::Windows::Forms::IWin32Window ^ owner, int page);" />
+      <MemberSignature Language="F#" Value="abstract member ShowForm : System.Windows.Forms.IWin32Window * int -&gt; System.Windows.Forms.DialogResult&#xA;override this.ShowForm : System.Windows.Forms.IWin32Window * int -&gt; System.Windows.Forms.DialogResult" Usage="componentEditorForm.ShowForm (owner, page)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

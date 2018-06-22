@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCultureAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCultureAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyCultureAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyCultureAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyCultureAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyCultureAttribute(System::String ^ culture);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyCultureAttribute : string -&gt; System.Reflection.AssemblyCultureAttribute" Usage="new System.Reflection.AssemblyCultureAttribute culture" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyCultureAttribute.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : string" Usage="System.Reflection.AssemblyCultureAttribute.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

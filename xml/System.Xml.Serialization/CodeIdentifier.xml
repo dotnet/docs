@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.CodeIdentifier" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeIdentifier" />
+  <TypeSignature Language="F#" Value="type CodeIdentifier = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakeCamel(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeCamel (identifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeCamel(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="static member MakeCamel : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakeCamel identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakePascal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakePascal (identifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakePascal(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="static member MakePascal : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakePascal identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakeValid(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeValid (identifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeValid(System::String ^ identifier);" />
+      <MemberSignature Language="F#" Value="static member MakeValid : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakeValid identifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

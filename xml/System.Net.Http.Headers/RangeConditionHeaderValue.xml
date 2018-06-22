@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.RangeConditionHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class RangeConditionHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RangeConditionHeaderValue : ICloneable" />
+  <TypeSignature Language="F#" Value="type RangeConditionHeaderValue = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (date As DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeConditionHeaderValue(DateTimeOffset date);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RangeConditionHeaderValue : DateTimeOffset -&gt; System.Net.Http.Headers.RangeConditionHeaderValue" Usage="new System.Net.Http.Headers.RangeConditionHeaderValue date" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.Net.Http.Headers.EntityTagHeaderValue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityTag As EntityTagHeaderValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeConditionHeaderValue(System::Net::Http::Headers::EntityTagHeaderValue ^ entityTag);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RangeConditionHeaderValue : System.Net.Http.Headers.EntityTagHeaderValue -&gt; System.Net.Http.Headers.RangeConditionHeaderValue" Usage="new System.Net.Http.Headers.RangeConditionHeaderValue entityTag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityTag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeConditionHeaderValue(System::String ^ entityTag);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RangeConditionHeaderValue : string -&gt; System.Net.Http.Headers.RangeConditionHeaderValue" Usage="new System.Net.Http.Headers.RangeConditionHeaderValue entityTag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RangeConditionHeaderValue.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; Date { Nullable&lt;DateTimeOffset&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTimeOffset&gt;" Usage="System.Net.Http.Headers.RangeConditionHeaderValue.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RangeConditionHeaderValue.EntityTag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityTag As EntityTagHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::EntityTagHeaderValue ^ EntityTag { System::Net::Http::Headers::EntityTagHeaderValue ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityTag : System.Net.Http.Headers.EntityTagHeaderValue" Usage="System.Net.Http.Headers.RangeConditionHeaderValue.EntityTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rangeConditionHeaderValue.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rangeConditionHeaderValue.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As RangeConditionHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::RangeConditionHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.RangeConditionHeaderValue" Usage="System.Net.Http.Headers.RangeConditionHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -331,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rangeConditionHeaderValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -360,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeConditionHeaderValue.TryParse(System.String,System.Net.Http.Headers.RangeConditionHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As RangeConditionHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::RangeConditionHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.RangeConditionHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

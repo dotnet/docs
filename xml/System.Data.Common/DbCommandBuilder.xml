@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbCommandBuilder&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbCommandBuilder abstract : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type DbCommandBuilder = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ApplyParameterInfo(class System.Data.Common.DbParameter parameter, class System.Data.DataRow row, valuetype System.Data.StatementType statementType, bool whereClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.ApplyParameterInfo(System.Data.Common.DbParameter,System.Data.DataRow,System.Data.StatementType,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ApplyParameterInfo(System::Data::Common::DbParameter ^ parameter, System::Data::DataRow ^ row, System::Data::StatementType statementType, bool whereClause);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyParameterInfo : System.Data.Common.DbParameter * System.Data.DataRow * System.Data.StatementType * bool -&gt; unit" Usage="dbCommandBuilder.ApplyParameterInfo (parameter, row, statementType, whereClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.CatalogLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CatalogLocation As CatalogLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Common::CatalogLocation CatalogLocation { System::Data::Common::CatalogLocation get(); void set(System::Data::Common::CatalogLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.CatalogLocation : System.Data.Common.CatalogLocation with get, set" Usage="System.Data.Common.DbCommandBuilder.CatalogLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.CatalogSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CatalogSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CatalogSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CatalogSeparator : string with get, set" Usage="System.Data.Common.DbCommandBuilder.CatalogSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.ConflictOption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConflictOption As ConflictOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConflictOption ConflictOption { System::Data::ConflictOption get(); void set(System::Data::ConflictOption value); };" />
+      <MemberSignature Language="F#" Value="member this.ConflictOption : System.Data.ConflictOption with get, set" Usage="System.Data.Common.DbCommandBuilder.ConflictOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.DataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Property DataAdapter As DbDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbDataAdapter ^ DataAdapter { System::Data::Common::DbDataAdapter ^ get(); void set(System::Data::Common::DbDataAdapter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataAdapter : System.Data.Common.DbDataAdapter with get, set" Usage="System.Data.Common.DbCommandBuilder.DataAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -277,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbCommandBuilder.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -350,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetDeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetDeleteCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetDeleteCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetDeleteCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -392,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetDeleteCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetDeleteCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetDeleteCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetDeleteCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetInsertCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetInsertCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetInsertCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetInsertCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -511,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetInsertCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetInsertCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetInsertCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetInsertCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -574,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterName (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterName(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterName : int -&gt; string" Usage="dbCommandBuilder.GetParameterName parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -608,6 +620,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterName (parameterName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterName(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterName : string -&gt; string" Usage="dbCommandBuilder.GetParameterName parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -642,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterPlaceholder(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterPlaceholder (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterPlaceholder(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterPlaceholder : int -&gt; string" Usage="dbCommandBuilder.GetParameterPlaceholder parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -683,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetSchemaTable(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSchemaTable (sourceCommand As DbCommand) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ GetSchemaTable(System::Data::Common::DbCommand ^ sourceCommand);" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaTable : System.Data.Common.DbCommand -&gt; System.Data.DataTable&#xA;override this.GetSchemaTable : System.Data.Common.DbCommand -&gt; System.Data.DataTable" Usage="dbCommandBuilder.GetSchemaTable sourceCommand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -748,6 +763,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetUpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetUpdateCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetUpdateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetUpdateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -790,6 +806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetUpdateCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetUpdateCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetUpdateCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetUpdateCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -843,6 +860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.InitializeCommand(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function InitializeCommand (command As DbCommand) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DbCommand ^ InitializeCommand(System::Data::Common::DbCommand ^ command);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeCommand : System.Data.Common.DbCommand -&gt; System.Data.Common.DbCommand&#xA;override this.InitializeCommand : System.Data.Common.DbCommand -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.InitializeCommand command" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -884,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.QuoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QuoteIdentifier (unquotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QuoteIdentifier(System::String ^ unquotedIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member QuoteIdentifier : string -&gt; string&#xA;override this.QuoteIdentifier : string -&gt; string" Usage="dbCommandBuilder.QuoteIdentifier unquotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -918,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.QuotePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QuotePrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QuotePrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuotePrefix : string with get, set" Usage="System.Data.Common.DbCommandBuilder.QuotePrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -964,6 +984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.QuoteSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QuoteSuffix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QuoteSuffix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuoteSuffix : string with get, set" Usage="System.Data.Common.DbCommandBuilder.QuoteSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1009,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.RefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RefreshSchema ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RefreshSchema();" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : unit -&gt; unit&#xA;override this.RefreshSchema : unit -&gt; unit" Usage="dbCommandBuilder.RefreshSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1052,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.RowUpdatingHandler(System.Data.Common.RowUpdatingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RowUpdatingHandler (rowUpdatingEvent As RowUpdatingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RowUpdatingHandler(System::Data::Common::RowUpdatingEventArgs ^ rowUpdatingEvent);" />
+      <MemberSignature Language="F#" Value="member this.RowUpdatingHandler : System.Data.Common.RowUpdatingEventArgs -&gt; unit" Usage="dbCommandBuilder.RowUpdatingHandler rowUpdatingEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1085,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.SchemaSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SchemaSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SchemaSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaSeparator : string with get, set" Usage="System.Data.Common.DbCommandBuilder.SchemaSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1127,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.SetAllValues" />
       <MemberSignature Language="VB.NET" Value="Public Property SetAllValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetAllValues { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SetAllValues : bool with get, set" Usage="System.Data.Common.DbCommandBuilder.SetAllValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1170,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.SetRowUpdatingHandler(System.Data.Common.DbDataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SetRowUpdatingHandler (adapter As DbDataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SetRowUpdatingHandler(System::Data::Common::DbDataAdapter ^ adapter);" />
+      <MemberSignature Language="F#" Value="abstract member SetRowUpdatingHandler : System.Data.Common.DbDataAdapter -&gt; unit" Usage="dbCommandBuilder.SetRowUpdatingHandler adapter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1210,6 +1236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.UnquoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function UnquoteIdentifier (quotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UnquoteIdentifier(System::String ^ quotedIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member UnquoteIdentifier : string -&gt; string&#xA;override this.UnquoteIdentifier : string -&gt; string" Usage="dbCommandBuilder.UnquoteIdentifier quotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

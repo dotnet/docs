@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataObjectSettingDataEventHandler(sender As Object, e As DataObjectSettingDataEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataObjectSettingDataEventHandler(System::Object ^ sender, DataObjectSettingDataEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataObjectSettingDataEventHandler = delegate of obj * DataObjectSettingDataEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

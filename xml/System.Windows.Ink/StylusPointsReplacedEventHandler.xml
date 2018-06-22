@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusPointsReplacedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StylusPointsReplacedEventHandler(sender As Object, e As StylusPointsReplacedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StylusPointsReplacedEventHandler(System::Object ^ sender, StylusPointsReplacedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type StylusPointsReplacedEventHandler = delegate of obj * StylusPointsReplacedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

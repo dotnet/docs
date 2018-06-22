@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenHandlerCollectionManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenHandlerCollectionManager" />
+  <TypeSignature Language="F#" Value="type SecurityTokenHandlerCollectionManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerCollectionManager(System::String ^ serviceName);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager : string -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" Usage="new System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager serviceName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (usage As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::String ^ usage);" />
+      <MemberSignature Language="F#" Value="member this.ContainsKey : string -&gt; bool" Usage="securityTokenHandlerCollectionManager.ContainsKey usage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.CreateDefaultSecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultSecurityTokenHandlerCollectionManager () As SecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ CreateDefaultSecurityTokenHandlerCollectionManager();" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultSecurityTokenHandlerCollectionManager : unit -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.CreateDefaultSecurityTokenHandlerCollectionManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.CreateEmptySecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEmptySecurityTokenHandlerCollectionManager () As SecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ CreateEmptySecurityTokenHandlerCollectionManager();" />
+      <MemberSignature Language="F#" Value="static member CreateEmptySecurityTokenHandlerCollectionManager : unit -&gt; System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.CreateEmptySecurityTokenHandlerCollectionManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(usage As String) As SecurityTokenHandlerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ default[System::String ^] { System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ get(System::String ^ usage); void set(System::String ^ usage, System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.IdentityModel.Tokens.SecurityTokenHandlerCollection with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.SecurityTokenHandlerCollections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenHandlerCollections As IEnumerable(Of SecurityTokenHandlerCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^&gt; ^ SecurityTokenHandlerCollections { System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenHandlerCollections : seq&lt;System.IdentityModel.Tokens.SecurityTokenHandlerCollection&gt;" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.SecurityTokenHandlerCollections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.ServiceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceName : string" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.ServiceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

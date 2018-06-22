@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IHttpAsyncHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHttpAsyncHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHttpAsyncHandler : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type IHttpAsyncHandler = interface&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginProcessRequest (context As HttpContext, cb As AsyncCallback, extraData As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ cb, System::Object ^ extraData);" />
+      <MemberSignature Language="F#" Value="abstract member BeginProcessRequest : System.Web.HttpContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="iHttpAsyncHandler.BeginProcessRequest (context, cb, extraData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndProcessRequest (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndProcessRequest(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndProcessRequest : IAsyncResult -&gt; unit" Usage="iHttpAsyncHandler.EndProcessRequest result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

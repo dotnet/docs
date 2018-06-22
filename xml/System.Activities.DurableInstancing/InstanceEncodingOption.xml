@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceEncodingOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceEncodingOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceEncodingOption" />
+  <TypeSignature Language="F#" Value="type InstanceEncodingOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceEncodingOption.GZip" />
       <MemberSignature Language="VB.NET" Value="GZip" />
       <MemberSignature Language="C++ CLI" Value="GZip" />
+      <MemberSignature Language="F#" Value="GZip = 1" Usage="System.Activities.DurableInstancing.InstanceEncodingOption.GZip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceEncodingOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.DurableInstancing.InstanceEncodingOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>

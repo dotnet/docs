@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlColumnEncryptionCngProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlColumnEncryptionCngProvider&#xA;Inherits SqlColumnEncryptionKeyStoreProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlColumnEncryptionCngProvider : System::Data::SqlClient::SqlColumnEncryptionKeyStoreProvider" />
+  <TypeSignature Language="F#" Value="type SqlColumnEncryptionCngProvider = class&#xA;    inherit SqlColumnEncryptionKeyStoreProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCngProvider.DecryptColumnEncryptionKey(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptColumnEncryptionKey (masterKeyPath As String, encryptionAlgorithm As String, encryptedColumnEncryptionKey As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptColumnEncryptionKey(System::String ^ masterKeyPath, System::String ^ encryptionAlgorithm, cli::array &lt;System::Byte&gt; ^ encryptedColumnEncryptionKey);" />
+      <MemberSignature Language="F#" Value="override this.DecryptColumnEncryptionKey : string * string * byte[] -&gt; byte[]" Usage="sqlColumnEncryptionCngProvider.DecryptColumnEncryptionKey (masterKeyPath, encryptionAlgorithm, encryptedColumnEncryptionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCngProvider.EncryptColumnEncryptionKey(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptColumnEncryptionKey (masterKeyPath As String, encryptionAlgorithm As String, columnEncryptionKey As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptColumnEncryptionKey(System::String ^ masterKeyPath, System::String ^ encryptionAlgorithm, cli::array &lt;System::Byte&gt; ^ columnEncryptionKey);" />
+      <MemberSignature Language="F#" Value="override this.EncryptColumnEncryptionKey : string * string * byte[] -&gt; byte[]" Usage="sqlColumnEncryptionCngProvider.EncryptColumnEncryptionKey (masterKeyPath, encryptionAlgorithm, columnEncryptionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlColumnEncryptionCngProvider.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Const ProviderName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ ProviderName;" />
+      <MemberSignature Language="F#" Value="val mutable ProviderName : string" Usage="System.Data.SqlClient.SqlColumnEncryptionCngProvider.ProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCngProvider.SignColumnMasterKeyMetadata(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SignColumnMasterKeyMetadata (masterKeyPath As String, allowEnclaveComputations As Boolean) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignColumnMasterKeyMetadata(System::String ^ masterKeyPath, bool allowEnclaveComputations);" />
+      <MemberSignature Language="F#" Value="override this.SignColumnMasterKeyMetadata : string * bool -&gt; byte[]" Usage="sqlColumnEncryptionCngProvider.SignColumnMasterKeyMetadata (masterKeyPath, allowEnclaveComputations)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlColumnEncryptionCngProvider.VerifyColumnMasterKeyMetadata(System.String,System.Boolean,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyColumnMasterKeyMetadata (masterKeyPath As String, allowEnclaveComputations As Boolean, signature As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyColumnMasterKeyMetadata(System::String ^ masterKeyPath, bool allowEnclaveComputations, cli::array &lt;System::Byte&gt; ^ signature);" />
+      <MemberSignature Language="F#" Value="override this.VerifyColumnMasterKeyMetadata : string * bool * byte[] -&gt; bool" Usage="sqlColumnEncryptionCngProvider.VerifyColumnMasterKeyMetadata (masterKeyPath, allowEnclaveComputations, signature)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

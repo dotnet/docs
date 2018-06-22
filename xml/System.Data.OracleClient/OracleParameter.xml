@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleParameter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleParameter&#xA;Inherits DbParameter&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class OracleParameter sealed : System::Data::Common::DbParameter, ICloneable" />
+  <TypeSignature Language="F#" Value="type OracleParameter = class&#xA;    inherit DbParameter&#xA;    interface ICloneable&#xA;    interface IDbDataParameter&#xA;    interface IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OracleClient.OracleType oracleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Data.OracleClient.OracleType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Data::OracleClient::OracleType oracleType);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * System.Data.OracleClient.OracleType -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, oracleType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -125,6 +127,7 @@ OleDbDataReader reader = command.ExecuteReader();
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * obj -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -161,6 +164,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OracleClient.OracleType oracleType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Data.OracleClient.OracleType,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Data::OracleClient::OracleType oracleType, int size);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * System.Data.OracleClient.OracleType * int -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, oracleType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -195,6 +199,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OracleClient.OracleType oracleType, int32 size, string srcColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Data.OracleClient.OracleType,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Data::OracleClient::OracleType oracleType, int size, System::String ^ srcColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * System.Data.OracleClient.OracleType * int * string -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, oracleType, size, srcColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -231,6 +236,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OracleClient.OracleType oracleType, int32 size, valuetype System.Data.ParameterDirection direction, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, bool sourceColumnNullMapping, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Data.OracleClient.OracleType,System.Int32,System.Data.ParameterDirection,System.String,System.Data.DataRowVersion,System.Boolean,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Data::OracleClient::OracleType oracleType, int size, System::Data::ParameterDirection direction, System::String ^ sourceColumn, System::Data::DataRowVersion sourceVersion, bool sourceColumnNullMapping, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * System.Data.OracleClient.OracleType * int * System.Data.ParameterDirection * string * System.Data.DataRowVersion * bool * obj -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, oracleType, size, direction, sourceColumn, sourceVersion, sourceColumnNullMapping, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -266,6 +272,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.OracleClient.OracleType oracleType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string srcColumn, valuetype System.Data.DataRowVersion srcVersion, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Data.OracleClient.OracleType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleParameter(System::String ^ name, System::Data::OracleClient::OracleType oracleType, int size, System::Data::ParameterDirection direction, bool isNullable, System::Byte precision, System::Byte scale, System::String ^ srcColumn, System::Data::DataRowVersion srcVersion, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleParameter : string * System.Data.OracleClient.OracleType * int * System.Data.ParameterDirection * bool * byte * byte * string * System.Data.DataRowVersion * obj -&gt; System.Data.OracleClient.OracleParameter" Usage="new System.Data.OracleClient.OracleParameter (name, oracleType, size, direction, isNullable, precision, scale, srcColumn, srcVersion, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -316,6 +323,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.DbType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DbType As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DbType DbType { System::Data::DbType get(); void set(System::Data::DbType value); };" />
+      <MemberSignature Language="F#" Value="member this.DbType : System.Data.DbType with get, set" Usage="System.Data.OracleClient.OracleParameter.DbType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.DbType</InterfaceMember>
@@ -360,6 +368,7 @@ Parameter = new OracleParameter("pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Direction As ParameterDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); void set(System::Data::ParameterDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection with get, set" Usage="System.Data.OracleClient.OracleParameter.Direction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.Direction</InterfaceMember>
@@ -424,6 +433,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsNullable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Data.OracleClient.OracleParameter.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -474,6 +484,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="System.Data.OracleClient.OracleParameter.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -533,6 +544,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.OracleType" />
       <MemberSignature Language="VB.NET" Value="Public Property OracleType As OracleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleType OracleType { System::Data::OracleClient::OracleType get(); void set(System::Data::OracleClient::OracleType value); };" />
+      <MemberSignature Language="F#" Value="member this.OracleType : System.Data.OracleClient.OracleType with get, set" Usage="System.Data.OracleClient.OracleParameter.OracleType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -575,6 +587,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.ParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.Data.OracleClient.OracleParameter.ParameterName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.ParameterName</InterfaceMember>
@@ -631,6 +644,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Precision" />
       <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte with get, set" Usage="System.Data.OracleClient.OracleParameter.Precision" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Precision</InterfaceMember>
@@ -672,6 +686,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.ResetDbType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetDbType ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetDbType();" />
+      <MemberSignature Language="F#" Value="override this.ResetDbType : unit -&gt; unit" Usage="oracleParameter.ResetDbType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -702,6 +717,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.ResetOracleType" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetOracleType ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetOracleType();" />
+      <MemberSignature Language="F#" Value="member this.ResetOracleType : unit -&gt; unit" Usage="oracleParameter.ResetOracleType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -732,6 +748,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Scale" />
       <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Scale { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : byte with get, set" Usage="System.Data.OracleClient.OracleParameter.Scale" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Scale</InterfaceMember>
@@ -773,6 +790,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Size" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Data.OracleClient.OracleParameter.Size" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Size</InterfaceMember>
@@ -839,6 +857,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.SourceColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.OracleClient.OracleParameter.SourceColumn" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.SourceColumn</InterfaceMember>
@@ -895,6 +914,7 @@ public void CreateOracleDbParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.SourceColumnNullMapping" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumnNullMapping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SourceColumnNullMapping { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumnNullMapping : bool with get, set" Usage="System.Data.OracleClient.OracleParameter.SourceColumnNullMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -938,6 +958,7 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.SourceVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceVersion As DataRowVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataRowVersion SourceVersion { System::Data::DataRowVersion get(); void set(System::Data::DataRowVersion value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceVersion : System.Data.DataRowVersion with get, set" Usage="System.Data.OracleClient.OracleParameter.SourceVersion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.SourceVersion</InterfaceMember>
@@ -1025,6 +1046,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleParameter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oracleParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1046,6 +1068,7 @@ public void CreateOracleParameter()
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleParameter.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Data.OracleClient.OracleParameter.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.Value</InterfaceMember>

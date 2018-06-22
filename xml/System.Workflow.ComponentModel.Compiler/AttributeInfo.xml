@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeInfo sealed" />
+  <TypeSignature Language="F#" Value="type AttributeInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.AttributeInfo.ArgumentValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentValues As ReadOnlyCollection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ ArgumentValues { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentValues : System.Collections.ObjectModel.ReadOnlyCollection&lt;obj&gt;" Usage="System.Workflow.ComponentModel.Compiler.AttributeInfo.ArgumentValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.AttributeInfo.AttributeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ AttributeType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeType : Type" Usage="System.Workflow.ComponentModel.Compiler.AttributeInfo.AttributeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.AttributeInfo.Creatable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creatable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Creatable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creatable : bool" Usage="System.Workflow.ComponentModel.Compiler.AttributeInfo.Creatable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.AttributeInfo.CreateAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAttribute () As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Attribute ^ CreateAttribute();" />
+      <MemberSignature Language="F#" Value="member this.CreateAttribute : unit -&gt; Attribute" Usage="attributeInfo.CreateAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.AttributeInfo.GetArgumentValueAs(System.IServiceProvider,System.Int32,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetArgumentValueAs (serviceProvider As IServiceProvider, argumentIndex As Integer, requestedType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetArgumentValueAs(IServiceProvider ^ serviceProvider, int argumentIndex, Type ^ requestedType);" />
+      <MemberSignature Language="F#" Value="member this.GetArgumentValueAs : IServiceProvider * int * Type -&gt; obj" Usage="attributeInfo.GetArgumentValueAs (serviceProvider, argumentIndex, requestedType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

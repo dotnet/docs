@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class RowStyle&#xA;Inherits TableLayoutStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class RowStyle : System::Windows::Forms::TableLayoutStyle" />
+  <TypeSignature Language="F#" Value="type RowStyle = class&#xA;    inherit TableLayoutStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RowStyle(System::Windows::Forms::SizeType sizeType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.RowStyle : System.Windows.Forms.SizeType -&gt; System.Windows.Forms.RowStyle" Usage="new System.Windows.Forms.RowStyle sizeType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType, float32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType,System.Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RowStyle(System::Windows::Forms::SizeType sizeType, float height);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.RowStyle : System.Windows.Forms.SizeType * single -&gt; System.Windows.Forms.RowStyle" Usage="new System.Windows.Forms.RowStyle (sizeType, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RowStyle.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="System.Windows.Forms.RowStyle.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

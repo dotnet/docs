@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityTokenInclusionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityTokenInclusionMode" />
+  <TypeSignature Language="F#" Value="type SecurityTokenInclusionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.AlwaysToInitiator" />
       <MemberSignature Language="VB.NET" Value="AlwaysToInitiator" />
       <MemberSignature Language="C++ CLI" Value="AlwaysToInitiator" />
+      <MemberSignature Language="F#" Value="AlwaysToInitiator = 3" Usage="System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.AlwaysToInitiator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.AlwaysToRecipient" />
       <MemberSignature Language="VB.NET" Value="AlwaysToRecipient" />
       <MemberSignature Language="C++ CLI" Value="AlwaysToRecipient" />
+      <MemberSignature Language="F#" Value="AlwaysToRecipient = 0" Usage="System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.AlwaysToRecipient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 1" Usage="System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Once" />
       <MemberSignature Language="VB.NET" Value="Once" />
       <MemberSignature Language="C++ CLI" Value="Once" />
+      <MemberSignature Language="F#" Value="Once = 2" Usage="System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode.Once" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

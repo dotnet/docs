@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyMappingExceptionEventArgs&#xA;Inherits IntegrationExceptionEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyMappingExceptionEventArgs : System::Windows::Forms::Integration::IntegrationExceptionEventArgs" />
+  <TypeSignature Language="F#" Value="type PropertyMappingExceptionEventArgs = class&#xA;    inherit IntegrationExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, string propertyName, object propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.#ctor(System.Exception,System.String,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyMappingExceptionEventArgs(Exception ^ exception, System::String ^ propertyName, System::Object ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs : Exception * string * obj -&gt; System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs" Usage="new System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs (exception, propertyName, propertyValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PropertyValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyValue : obj" Usage="System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

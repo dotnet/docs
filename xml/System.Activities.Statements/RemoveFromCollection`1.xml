@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.RemoveFromCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RemoveFromCollection(Of T)&#xA;Inherits CodeActivity(Of Boolean)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class RemoveFromCollection sealed : System::Activities::CodeActivity&lt;bool&gt;" />
+  <TypeSignature Language="F#" Value="type RemoveFromCollection&lt;'T&gt; = class&#xA;    inherit CodeActivity&lt;bool&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.RemoveFromCollection`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="removeFromCollection.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.RemoveFromCollection`1.Collection" />
       <MemberSignature Language="VB.NET" Value="Public Property Collection As InArgument(Of ICollection(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::Collections::Generic::ICollection&lt;T&gt; ^&gt; ^ Collection { System::Activities::InArgument&lt;System::Collections::Generic::ICollection&lt;T&gt; ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::Collections::Generic::ICollection&lt;T&gt; ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Activities.InArgument&lt;System.Collections.Generic.ICollection&lt;'T&gt;&gt; with get, set" Usage="System.Activities.Statements.RemoveFromCollection&lt;'T&gt;.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.RemoveFromCollection`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; bool" Usage="removeFromCollection.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.RemoveFromCollection`1.Item" />
       <MemberSignature Language="VB.NET" Value="Public Property Item As InArgument(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T&gt; ^ Item { System::Activities::InArgument&lt;T&gt; ^ get(); void set(System::Activities::InArgument&lt;T&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Activities.InArgument&lt;'T&gt; with get, set" Usage="System.Activities.Statements.RemoveFromCollection&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

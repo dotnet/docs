@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.StreamChangeCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub StreamChangeCallback(streamName As String)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void StreamChangeCallback(System::String ^ streamName);" />
+  <TypeSignature Language="F#" Value="type StreamChangeCallback = delegate of string -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

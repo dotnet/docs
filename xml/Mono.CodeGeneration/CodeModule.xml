@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeModule" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeModule" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeModule" />
+  <TypeSignature Language="F#" Value="type CodeModule = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeModule(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeModule : string -&gt; Mono.CodeGeneration.CodeModule" Usage="new Mono.CodeGeneration.CodeModule name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.CreateClass(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateClass (name As String) As CodeClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeClass ^ CreateClass(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.CreateClass : string -&gt; Mono.CodeGeneration.CodeClass" Usage="codeModule.CreateClass name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.CreateClass(System.String,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateClass (name As String, baseType As Type, ParamArray interfaces As Type()) As CodeClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeClass ^ CreateClass(System::String ^ name, Type ^ baseType, ... cli::array &lt;Type ^&gt; ^ interfaces);" />
+      <MemberSignature Language="F#" Value="member this.CreateClass : string * Type * Type[] -&gt; Mono.CodeGeneration.CodeClass" Usage="codeModule.CreateClass (name, baseType, interfaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.CreateClass(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateClass (name As String, attr As TypeAttributes, baseType As Type, ParamArray interfaces As Type()) As CodeClass" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeClass ^ CreateClass(System::String ^ name, System::Reflection::TypeAttributes attr, Type ^ baseType, ... cli::array &lt;Type ^&gt; ^ interfaces);" />
+      <MemberSignature Language="F#" Value="member this.CreateClass : string * System.Reflection.TypeAttributes * Type * Type[] -&gt; Mono.CodeGeneration.CodeClass" Usage="codeModule.CreateClass (name, attr, baseType, interfaces)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeModule.ModuleBuilder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModuleBuilder As ModuleBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::ModuleBuilder ^ ModuleBuilder { System::Reflection::Emit::ModuleBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModuleBuilder : System.Reflection.Emit.ModuleBuilder" Usage="Mono.CodeGeneration.CodeModule.ModuleBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeModule.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As CodeModule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Mono::CodeGeneration::CodeModule ^ Shared { Mono::CodeGeneration::CodeModule ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shared : Mono.CodeGeneration.CodeModule" Usage="Mono.CodeGeneration.CodeModule.Shared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

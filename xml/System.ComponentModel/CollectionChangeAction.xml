@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CollectionChangeAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum CollectionChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class CollectionChangeAction" />
+  <TypeSignature Language="F#" Value="type CollectionChangeAction = " />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.CollectionChangeAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 1" Usage="System.ComponentModel.CollectionChangeAction.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.CollectionChangeAction.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
       <MemberSignature Language="C++ CLI" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 3" Usage="System.ComponentModel.CollectionChangeAction.Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.CollectionChangeAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 2" Usage="System.ComponentModel.CollectionChangeAction.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

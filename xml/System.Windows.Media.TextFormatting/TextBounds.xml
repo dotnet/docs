@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextBounds" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextBounds" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextBounds sealed" />
+  <TypeSignature Language="F#" Value="type TextBounds = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextBounds.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.FlowDirection" Usage="System.Windows.Media.TextFormatting.TextBounds.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextBounds.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangle As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rectangle { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rectangle : System.Windows.Rect" Usage="System.Windows.Media.TextFormatting.TextBounds.Rectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextBounds.TextRunBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRunBounds As IList(Of TextRunBounds)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextRunBounds ^&gt; ^ TextRunBounds { System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextRunBounds ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextRunBounds : System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextRunBounds&gt;" Usage="System.Windows.Media.TextFormatting.TextBounds.TextRunBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

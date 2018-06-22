@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.DuplicateAddressDetectionState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DuplicateAddressDetectionState" />
   <TypeSignature Language="C++ CLI" Value="public enum class DuplicateAddressDetectionState" />
+  <TypeSignature Language="F#" Value="type DuplicateAddressDetectionState = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Deprecated" />
       <MemberSignature Language="VB.NET" Value="Deprecated" />
       <MemberSignature Language="C++ CLI" Value="Deprecated" />
+      <MemberSignature Language="F#" Value="Deprecated = 3" Usage="System.Net.NetworkInformation.DuplicateAddressDetectionState.Deprecated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Duplicate" />
       <MemberSignature Language="VB.NET" Value="Duplicate" />
       <MemberSignature Language="C++ CLI" Value="Duplicate" />
+      <MemberSignature Language="F#" Value="Duplicate = 2" Usage="System.Net.NetworkInformation.DuplicateAddressDetectionState.Duplicate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="System.Net.NetworkInformation.DuplicateAddressDetectionState.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Preferred" />
       <MemberSignature Language="VB.NET" Value="Preferred" />
       <MemberSignature Language="C++ CLI" Value="Preferred" />
+      <MemberSignature Language="F#" Value="Preferred = 4" Usage="System.Net.NetworkInformation.DuplicateAddressDetectionState.Preferred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.DuplicateAddressDetectionState.Tentative" />
       <MemberSignature Language="VB.NET" Value="Tentative" />
       <MemberSignature Language="C++ CLI" Value="Tentative" />
+      <MemberSignature Language="F#" Value="Tentative = 1" Usage="System.Net.NetworkInformation.DuplicateAddressDetectionState.Tentative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

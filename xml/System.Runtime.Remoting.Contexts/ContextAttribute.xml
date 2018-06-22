@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextAttribute&#xA;Inherits Attribute&#xA;Implements IContextAttribute, IContextProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextAttribute : Attribute, System::Runtime::Remoting::Contexts::IContextAttribute, System::Runtime::Remoting::Contexts::IContextProperty" />
+  <TypeSignature Language="F#" Value="type ContextAttribute = class&#xA;    inherit Attribute&#xA;    interface IContextAttribute&#xA;    interface IContextProperty" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Contexts.ContextAttribute : string -&gt; System.Runtime.Remoting.Contexts.ContextAttribute" Usage="new System.Runtime.Remoting.Contexts.ContextAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName" />
       <MemberSignature Language="VB.NET" Value="Protected AttributeName As String " />
       <MemberSignature Language="C++ CLI" Value="protected: System::String ^ AttributeName;" />
+      <MemberSignature Language="F#" Value="val mutable AttributeName : string" Usage="System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contextAttribute.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.Freeze(System.Runtime.Remoting.Contexts.Context)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Freeze (newContext As Context)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Freeze(System::Runtime::Remoting::Contexts::Context ^ newContext);" />
+      <MemberSignature Language="F#" Value="abstract member Freeze : System.Runtime.Remoting.Contexts.Context -&gt; unit&#xA;override this.Freeze : System.Runtime.Remoting.Contexts.Context -&gt; unit" Usage="contextAttribute.Freeze newContext" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextProperty.Freeze(System.Runtime.Remoting.Contexts.Context)</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contextAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetPropertiesForNewContext (ctorMsg As IConstructionCallMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPropertiesForNewContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit&#xA;override this.GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit" Usage="contextAttribute.GetPropertiesForNewContext ctorMsg" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsContextOK (ctx As Context, ctorMsg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsContextOK(System::Runtime::Remoting::Contexts::Context ^ ctx, System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
+      <MemberSignature Language="F#" Value="abstract member IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool&#xA;override this.IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="contextAttribute.IsContextOK (ctx, ctorMsg)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsNewContextOK (newCtx As Context) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsNewContextOK(System::Runtime::Remoting::Contexts::Context ^ newCtx);" />
+      <MemberSignature Language="F#" Value="abstract member IsNewContextOK : System.Runtime.Remoting.Contexts.Context -&gt; bool&#xA;override this.IsNewContextOK : System.Runtime.Remoting.Contexts.Context -&gt; bool" Usage="contextAttribute.IsNewContextOK newCtx" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextProperty.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)</InterfaceMember>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.ContextAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Remoting.Contexts.ContextAttribute.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Contexts.IContextProperty.Name</InterfaceMember>

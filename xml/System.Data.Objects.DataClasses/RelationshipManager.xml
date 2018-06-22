@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelationshipManager" />
   <TypeSignature Language="VB.NET" Value="Public Class RelationshipManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelationshipManager" />
+  <TypeSignature Language="F#" Value="type RelationshipManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.Create(System.Data.Objects.DataClasses.IEntityWithRelationships)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (owner As IEntityWithRelationships) As RelationshipManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Objects::DataClasses::RelationshipManager ^ Create(System::Data::Objects::DataClasses::IEntityWithRelationships ^ owner);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Data.Objects.DataClasses.IEntityWithRelationships -&gt; System.Data.Objects.DataClasses.RelationshipManager" Usage="System.Data.Objects.DataClasses.RelationshipManager.Create owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.GetAllRelatedEnds" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Function GetAllRelatedEnds () As IEnumerable(Of IRelatedEnd)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Data::Objects::DataClasses::IRelatedEnd ^&gt; ^ GetAllRelatedEnds();" />
+      <MemberSignature Language="F#" Value="member this.GetAllRelatedEnds : unit -&gt; seq&lt;System.Data.Objects.DataClasses.IRelatedEnd&gt;" Usage="relationshipManager.GetAllRelatedEnds " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.GetRelatedCollection``1(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedCollection(Of TTargetEntity As Class) (relationshipName As String, targetRoleName As String) As EntityCollection(Of TTargetEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TTargetEntity&gt;&#xA; where TTargetEntity : class System::Data::Objects::DataClasses::EntityCollection&lt;TTargetEntity&gt; ^ GetRelatedCollection(System::String ^ relationshipName, System::String ^ targetRoleName);" />
+      <MemberSignature Language="F#" Value="member this.GetRelatedCollection : string * string -&gt; System.Data.Objects.DataClasses.EntityCollection&lt;'argetEntity (requires 'argetEntity : null)&gt; (requires 'argetEntity : null)" Usage="relationshipManager.GetRelatedCollection (relationshipName, targetRoleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.GetRelatedEnd(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedEnd (relationshipName As String, targetRoleName As String) As IRelatedEnd" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::DataClasses::IRelatedEnd ^ GetRelatedEnd(System::String ^ relationshipName, System::String ^ targetRoleName);" />
+      <MemberSignature Language="F#" Value="member this.GetRelatedEnd : string * string -&gt; System.Data.Objects.DataClasses.IRelatedEnd" Usage="relationshipManager.GetRelatedEnd (relationshipName, targetRoleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.GetRelatedReference``1(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedReference(Of TTargetEntity As Class) (relationshipName As String, targetRoleName As String) As EntityReference(Of TTargetEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TTargetEntity&gt;&#xA; where TTargetEntity : class System::Data::Objects::DataClasses::EntityReference&lt;TTargetEntity&gt; ^ GetRelatedReference(System::String ^ relationshipName, System::String ^ targetRoleName);" />
+      <MemberSignature Language="F#" Value="member this.GetRelatedReference : string * string -&gt; System.Data.Objects.DataClasses.EntityReference&lt;'argetEntity (requires 'argetEntity : null)&gt; (requires 'argetEntity : null)" Usage="relationshipManager.GetRelatedReference (relationshipName, targetRoleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedCollection``1(System.String,System.String,System.Data.Objects.DataClasses.EntityCollection{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeRelatedCollection(Of TTargetEntity As Class) (relationshipName As String, targetRoleName As String, entityCollection As EntityCollection(Of TTargetEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TTargetEntity&gt;&#xA; where TTargetEntity : class void InitializeRelatedCollection(System::String ^ relationshipName, System::String ^ targetRoleName, System::Data::Objects::DataClasses::EntityCollection&lt;TTargetEntity&gt; ^ entityCollection);" />
+      <MemberSignature Language="F#" Value="member this.InitializeRelatedCollection : string * string * System.Data.Objects.DataClasses.EntityCollection&lt;'argetEntity (requires 'argetEntity : null)&gt; -&gt; unit (requires 'argetEntity : null)" Usage="relationshipManager.InitializeRelatedCollection (relationshipName, targetRoleName, entityCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedReference``1(System.String,System.String,System.Data.Objects.DataClasses.EntityReference{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeRelatedReference(Of TTargetEntity As Class) (relationshipName As String, targetRoleName As String, entityReference As EntityReference(Of TTargetEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TTargetEntity&gt;&#xA; where TTargetEntity : class void InitializeRelatedReference(System::String ^ relationshipName, System::String ^ targetRoleName, System::Data::Objects::DataClasses::EntityReference&lt;TTargetEntity&gt; ^ entityReference);" />
+      <MemberSignature Language="F#" Value="member this.InitializeRelatedReference : string * string * System.Data.Objects.DataClasses.EntityReference&lt;'argetEntity (requires 'argetEntity : null)&gt; -&gt; unit (requires 'argetEntity : null)" Usage="relationshipManager.InitializeRelatedReference (relationshipName, targetRoleName, entityReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -363,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.OnDeserialized(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialized (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserialized(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnDeserialized : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="relationshipManager.OnDeserialized context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -397,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelationshipManager.OnSerializing(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSerializing (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSerializing(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnSerializing : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="relationshipManager.OnSerializing context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

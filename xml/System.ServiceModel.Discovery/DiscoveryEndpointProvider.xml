@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryEndpointProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiscoveryEndpointProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryEndpointProvider abstract" />
+  <TypeSignature Language="F#" Value="type DiscoveryEndpointProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDiscoveryEndpoint () As DiscoveryEndpoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Discovery::DiscoveryEndpoint ^ GetDiscoveryEndpoint();" />
+      <MemberSignature Language="F#" Value="abstract member GetDiscoveryEndpoint : unit -&gt; System.ServiceModel.Discovery.DiscoveryEndpoint" Usage="discoveryEndpointProvider.GetDiscoveryEndpoint " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

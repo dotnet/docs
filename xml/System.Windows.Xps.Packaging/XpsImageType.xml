@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsImageType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XpsImageType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XpsImageType" />
+  <TypeSignature Language="F#" Value="type XpsImageType = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.JpegImageType" />
       <MemberSignature Language="VB.NET" Value="JpegImageType" />
       <MemberSignature Language="C++ CLI" Value="JpegImageType" />
+      <MemberSignature Language="F#" Value="JpegImageType = 1" Usage="System.Windows.Xps.Packaging.XpsImageType.JpegImageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.PngImageType" />
       <MemberSignature Language="VB.NET" Value="PngImageType" />
       <MemberSignature Language="C++ CLI" Value="PngImageType" />
+      <MemberSignature Language="F#" Value="PngImageType = 0" Usage="System.Windows.Xps.Packaging.XpsImageType.PngImageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.TiffImageType" />
       <MemberSignature Language="VB.NET" Value="TiffImageType" />
       <MemberSignature Language="C++ CLI" Value="TiffImageType" />
+      <MemberSignature Language="F#" Value="TiffImageType = 2" Usage="System.Windows.Xps.Packaging.XpsImageType.TiffImageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.WdpImageType" />
       <MemberSignature Language="VB.NET" Value="WdpImageType" />
       <MemberSignature Language="C++ CLI" Value="WdpImageType" />
+      <MemberSignature Language="F#" Value="WdpImageType = 3" Usage="System.Windows.Xps.Packaging.XpsImageType.WdpImageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

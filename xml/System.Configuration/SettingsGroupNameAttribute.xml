@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsGroupNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsGroupNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsGroupNameAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsGroupNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsGroupNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsGroupNameAttribute(System::String ^ groupName);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsGroupNameAttribute : string -&gt; System.Configuration.SettingsGroupNameAttribute" Usage="new System.Configuration.SettingsGroupNameAttribute groupName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsGroupNameAttribute.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string" Usage="System.Configuration.SettingsGroupNameAttribute.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

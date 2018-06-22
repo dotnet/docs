@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.CookieValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CookieValueProvider&#xA;Implements IUnvalidatedValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class CookieValueProvider sealed : System::Web::ModelBinding::IUnvalidatedValueProvider" />
+  <TypeSignature Language="F#" Value="type CookieValueProvider = class&#xA;    interface IValueProvider&#xA;    interface IUnvalidatedValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CookieValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.CookieValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.CookieValueProvider" Usage="new System.Web.ModelBinding.CookieValueProvider modelBindingExecutionContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CookieValueProvider.ContainsPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsPrefix (prefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsPrefix(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsPrefix : string -&gt; bool&#xA;override this.ContainsPrefix : string -&gt; bool" Usage="cookieValueProvider.ContainsPrefix prefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CookieValueProvider.GetValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As String) As ValueProviderResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult&#xA;override this.GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="cookieValueProvider.GetValue key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)</InterfaceMember>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CookieValueProvider.GetValue(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As String, skipValidation As Boolean) As ValueProviderResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key, bool skipValidation);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string * bool -&gt; System.Web.ModelBinding.ValueProviderResult&#xA;override this.GetValue : string * bool -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="cookieValueProvider.GetValue (key, skipValidation)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue(System.String,System.Boolean)</InterfaceMember>

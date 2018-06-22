@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DictionaryModelBinderProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DictionaryModelBinderProvider&#xA;Inherits ModelBinderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DictionaryModelBinderProvider sealed : System::Web::ModelBinding::ModelBinderProvider" />
+  <TypeSignature Language="F#" Value="type DictionaryModelBinderProvider = class&#xA;    inherit ModelBinderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryModelBinderProvider.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="dictionaryModelBinderProvider.GetBinder (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

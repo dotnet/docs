@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ErrorWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ErrorWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorWrapper sealed" />
+  <TypeSignature Language="F#" Value="type ErrorWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +109,7 @@ UInt32[ ] arr2 = (UInt32[])o;
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ErrorWrapper.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorWrapper(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ErrorWrapper : Exception -&gt; System.Runtime.InteropServices.ErrorWrapper" Usage="new System.Runtime.InteropServices.ErrorWrapper e" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +155,7 @@ UInt32[ ] arr2 = (UInt32[])o;
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ErrorWrapper.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorWrapper(int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ErrorWrapper : int -&gt; System.Runtime.InteropServices.ErrorWrapper" Usage="new System.Runtime.InteropServices.ErrorWrapper errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -188,6 +191,7 @@ UInt32[ ] arr2 = (UInt32[])o;
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ErrorWrapper.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorWrapper(System::Object ^ errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ErrorWrapper : obj -&gt; System.Runtime.InteropServices.ErrorWrapper" Usage="new System.Runtime.InteropServices.ErrorWrapper errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -224,6 +228,7 @@ UInt32[ ] arr2 = (UInt32[])o;
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.VisualStudioVersion" />
   <TypeSignature Language="VB.NET" Value="Public Enum VisualStudioVersion" />
   <TypeSignature Language="C++ CLI" Value="public enum class VisualStudioVersion" />
+  <TypeSignature Language="F#" Value="type VisualStudioVersion = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.Version100" />
       <MemberSignature Language="VB.NET" Value="Version100" />
       <MemberSignature Language="C++ CLI" Value="Version100" />
+      <MemberSignature Language="F#" Value="Version100 = 0" Usage="Microsoft.Build.Utilities.VisualStudioVersion.Version100" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.Version110" />
       <MemberSignature Language="VB.NET" Value="Version110" />
       <MemberSignature Language="C++ CLI" Value="Version110" />
+      <MemberSignature Language="F#" Value="Version110 = 1" Usage="Microsoft.Build.Utilities.VisualStudioVersion.Version110" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.VersionLatest" />
       <MemberSignature Language="VB.NET" Value="VersionLatest" />
       <MemberSignature Language="C++ CLI" Value="VersionLatest" />
+      <MemberSignature Language="F#" Value="VersionLatest = 1" Usage="Microsoft.Build.Utilities.VisualStudioVersion.VersionLatest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

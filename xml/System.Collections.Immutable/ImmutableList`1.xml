@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableList`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImmutableList(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IImmutableList(Of T), IList, IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ImmutableList sealed : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;, System::Collections::IList, System::Collections::Immutable::IImmutableList&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ImmutableList&lt;'T&gt; = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IImmutableList&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As T) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Add(T value);" />
+      <MemberSignature Language="F#" Value="member this.Add : 'T -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddRange (items As IEnumerable(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ AddRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.AddRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(T item);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : 'T -&gt; int" Usage="immutableList.BinarySearch item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(T item, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="immutableList.BinarySearch (item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (index As Integer, count As Integer, item As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(int index, int count, T item, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : int * int * 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="immutableList.BinarySearch (index, count, item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="immutableList.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ConvertAll``1(System.Func{`0,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertAll(Of TOutput) (converter As Func(Of T, TOutput)) As ImmutableList(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA; System::Collections::Immutable::ImmutableList&lt;TOutput&gt; ^ ConvertAll(Func&lt;T, TOutput&gt; ^ converter);" />
+      <MemberSignature Language="F#" Value="member this.ConvertAll : Func&lt;'T, 'Output&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'Output&gt;" Usage="immutableList.ConvertAll converter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="immutableList.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="immutableList.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -354,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (index As Integer, array As T(), arrayIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int index, cli::array &lt;T&gt; ^ array, int arrayIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * 'T[] * int * int -&gt; unit" Usage="immutableList.CopyTo (index, array, arrayIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="F:System.Collections.Immutable.ImmutableList`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ImmutableList(Of T) " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -436,6 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Exists(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Exists : Predicate&lt;'T&gt; -&gt; bool" Usage="immutableList.Exists match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -464,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Find(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (match As Predicate(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Find(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Find : Predicate&lt;'T&gt; -&gt; 'T" Usage="immutableList.Find match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -491,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (match As Predicate(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ FindAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : Predicate&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.FindAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -518,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -545,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -574,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * int * Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -605,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLast(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLast (match As Predicate(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T FindLast(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLast : Predicate&lt;'T&gt; -&gt; 'T" Usage="immutableList.FindLast match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -632,6 +653,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindLastIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -659,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindLastIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -688,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * int * Predicate&lt;'T&gt; -&gt; int" Usage="immutableList.FindLastIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -719,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ForEach(System.Action{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForEach (action As Action(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForEach(Action&lt;T&gt; ^ action);" />
+      <MemberSignature Language="F#" Value="member this.ForEach : Action&lt;'T&gt; -&gt; unit" Usage="immutableList.ForEach action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -745,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ImmutableList(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;.Enumerator" Usage="immutableList.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -778,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.GetRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRange (index As Integer, count As Integer) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ GetRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.GetRange : int * int -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.GetRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -807,6 +834,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="immutableList.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -837,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T, index As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T item, int index, int count, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'T * int * int * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; int&#xA;override this.IndexOf : 'T * int * int * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; int" Usage="immutableList.IndexOf (item, index, count, equalityComparer)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Immutable.IImmutableList`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})</InterfaceMember>
@@ -873,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, item As T) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Insert(int index, T item);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * 'T -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -902,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function InsertRange (index As Integer, items As IEnumerable(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ InsertRange(int index, System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.InsertRange : int * seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.InsertRange (index, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -931,6 +962,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -955,6 +987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'T" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
@@ -985,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ItemRef(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T&amp;" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::T&amp; ^ ItemRef(int index);" />
+      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; System.Collections.Immutable.T&amp;" Usage="immutableList.ItemRef index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1014,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As T, index As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(T item, int index, int count, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : 'T * int * int * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; int&#xA;override this.LastIndexOf : 'T * int * int * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; int" Usage="immutableList.LastIndexOf (item, index, count, equalityComparer)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Immutable.IImmutableList`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})</InterfaceMember>
@@ -1050,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As T) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Remove(T value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : 'T -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1077,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As T, equalityComparer As IEqualityComparer(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Remove(T value, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="member this.Remove : 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Remove (value, equalityComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1106,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.RemoveAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll (match As Predicate(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ RemoveAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : Predicate&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.RemoveAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1133,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (index As Integer) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1160,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (items As IEnumerable(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.RemoveRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1187,6 +1227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (items As IEnumerable(Of T), equalityComparer As IEqualityComparer(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRange : seq&lt;'T&gt; * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.RemoveRange (items, equalityComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1216,6 +1257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.RemoveRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (index As Integer, count As Integer) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ RemoveRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRange : int * int -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.RemoveRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1245,6 +1287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Replace(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As T, newValue As T) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Replace(T oldValue, T newValue);" />
+      <MemberSignature Language="F#" Value="member this.Replace : 'T * 'T -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Replace (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1276,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As T, newValue As T, equalityComparer As IEqualityComparer(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Replace(T oldValue, T newValue, System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="member this.Replace : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Replace (oldValue, newValue, equalityComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1307,6 +1351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Function Reverse () As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Reverse();" />
+      <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Reverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1331,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Reverse(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Reverse (index As Integer, count As Integer) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Reverse(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.Reverse : int * int -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Reverse (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1360,6 +1406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetItem (index As Integer, value As T) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ SetItem(int index, T value);" />
+      <MemberSignature Language="F#" Value="member this.SetItem : int * 'T -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.SetItem (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1389,6 +1436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Function Sort () As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Sort();" />
+      <MemberSignature Language="F#" Value="member this.Sort : unit -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1413,6 +1461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Sort(System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sort (comparer As IComparer(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Sort(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1440,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Sort(System.Comparison{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sort (comparison As Comparison(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Sort(Comparison&lt;T&gt; ^ comparison);" />
+      <MemberSignature Language="F#" Value="member this.Sort : Comparison&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Sort comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1467,6 +1517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Sort (index As Integer, count As Integer, comparer As IComparer(Of T)) As ImmutableList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt; ^ Sort(int index, int count, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : int * int * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;" Usage="immutableList.Sort (index, count, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1569,6 +1620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1706,6 +1758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
       <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IList&lt;T&gt;.Item[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -1812,6 +1865,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1838,6 +1892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -2086,6 +2141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -2112,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -2138,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableList`1.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Immutable.ImmutableList&lt;'T&gt;.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -2715,6 +2773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ToBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBuilder () As ImmutableList(Of T).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableList&lt;T&gt;::Builder ^ ToBuilder();" />
+      <MemberSignature Language="F#" Value="member this.ToBuilder : unit -&gt; System.Collections.Immutable.ImmutableList&lt;'T&gt;.Builder" Usage="immutableList.ToBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -2746,6 +2805,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.TrueForAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function TrueForAll (match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrueForAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.TrueForAll : Predicate&lt;'T&gt; -&gt; bool" Usage="immutableList.TrueForAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

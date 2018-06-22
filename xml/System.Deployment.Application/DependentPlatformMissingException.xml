@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DependentPlatformMissingException" />
   <TypeSignature Language="VB.NET" Value="Public Class DependentPlatformMissingException&#xA;Inherits DeploymentException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DependentPlatformMissingException : System::Deployment::Application::DeploymentException" />
+  <TypeSignature Language="F#" Value="type DependentPlatformMissingException = class&#xA;    inherit DeploymentException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DependentPlatformMissingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DependentPlatformMissingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.DependentPlatformMissingException : string -&gt; System.Deployment.Application.DependentPlatformMissingException" Usage="new System.Deployment.Application.DependentPlatformMissingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DependentPlatformMissingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DependentPlatformMissingException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.DependentPlatformMissingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Deployment.Application.DependentPlatformMissingException" Usage="new System.Deployment.Application.DependentPlatformMissingException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DependentPlatformMissingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DependentPlatformMissingException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.DependentPlatformMissingException : string * Exception -&gt; System.Deployment.Application.DependentPlatformMissingException" Usage="new System.Deployment.Application.DependentPlatformMissingException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DependentPlatformMissingException.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, supportUrl As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DependentPlatformMissingException(System::String ^ message, Uri ^ supportUrl);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.DependentPlatformMissingException : string * Uri -&gt; System.Deployment.Application.DependentPlatformMissingException" Usage="new System.Deployment.Application.DependentPlatformMissingException (message, supportUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DependentPlatformMissingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="dependentPlatformMissingException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DependentPlatformMissingException.SupportUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUrl As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SupportUrl { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : Uri" Usage="System.Deployment.Application.DependentPlatformMissingException.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

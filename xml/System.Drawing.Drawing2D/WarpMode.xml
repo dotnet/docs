@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.WarpMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WarpMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WarpMode" />
+  <TypeSignature Language="F#" Value="type WarpMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WarpMode.Bilinear" />
       <MemberSignature Language="VB.NET" Value="Bilinear" />
       <MemberSignature Language="C++ CLI" Value="Bilinear" />
+      <MemberSignature Language="F#" Value="Bilinear = 1" Usage="System.Drawing.Drawing2D.WarpMode.Bilinear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WarpMode.Perspective" />
       <MemberSignature Language="VB.NET" Value="Perspective" />
       <MemberSignature Language="C++ CLI" Value="Perspective" />
+      <MemberSignature Language="F#" Value="Perspective = 0" Usage="System.Drawing.Drawing2D.WarpMode.Perspective" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.PostOrPrefixOperator" />
   <TypeSignature Language="VB.NET" Value="Public Class PostOrPrefixOperator&#xA;Inherits UnaryOp" />
   <TypeSignature Language="C++ CLI" Value="public ref class PostOrPrefixOperator : Microsoft::JScript::UnaryOp" />
+  <TypeSignature Language="F#" Value="type PostOrPrefixOperator = class&#xA;    inherit UnaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.PostOrPrefixOperator.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operatorTok As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PostOrPrefixOperator(int operatorTok);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.PostOrPrefixOperator : int -&gt; Microsoft.JScript.PostOrPrefixOperator" Usage="new Microsoft.JScript.PostOrPrefixOperator operatorTok" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.PostOrPrefixOperator.EvaluatePostOrPrefix(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluatePostOrPrefix (ByRef v As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ EvaluatePostOrPrefix(System::Object ^ % v);" />
+      <MemberSignature Language="F#" Value="member this.EvaluatePostOrPrefix :  -&gt; obj" Usage="postOrPrefixOperator.EvaluatePostOrPrefix v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

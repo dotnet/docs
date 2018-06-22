@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchFrameEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TouchFrameEventHandler(sender As Object, e As TouchFrameEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TouchFrameEventHandler(System::Object ^ sender, TouchFrameEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TouchFrameEventHandler = delegate of obj * TouchFrameEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IControlDesignerTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface IControlDesignerTag" />
   <TypeSignature Language="C++ CLI" Value="public interface class IControlDesignerTag" />
+  <TypeSignature Language="F#" Value="type IControlDesignerTag = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string" Usage="iControlDesignerTag.GetAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.GetContent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContent () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetContent();" />
+      <MemberSignature Language="F#" Value="abstract member GetContent : unit -&gt; string" Usage="iControlDesignerTag.GetContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.GetOuterContent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOuterContent () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetOuterContent();" />
+      <MemberSignature Language="F#" Value="abstract member GetOuterContent : unit -&gt; string" Usage="iControlDesignerTag.GetOuterContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerTag.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="System.Web.UI.Design.IControlDesignerTag.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.RemoveAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAttribute (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAttribute : string -&gt; unit" Usage="iControlDesignerTag.RemoveAttribute name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : string * string -&gt; unit" Usage="iControlDesignerTag.SetAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.SetContent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetContent (content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContent(System::String ^ content);" />
+      <MemberSignature Language="F#" Value="abstract member SetContent : string -&gt; unit" Usage="iControlDesignerTag.SetContent content" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerTag.SetDirty(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDirty (dirty As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDirty(bool dirty);" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : bool -&gt; unit" Usage="iControlDesignerTag.SetDirty dirty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

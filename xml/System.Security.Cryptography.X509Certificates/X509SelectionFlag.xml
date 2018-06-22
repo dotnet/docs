@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509SelectionFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509SelectionFlag" />
   <TypeSignature Language="C++ CLI" Value="public enum class X509SelectionFlag" />
+  <TypeSignature Language="F#" Value="type X509SelectionFlag = " />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SelectionFlag.MultiSelection" />
       <MemberSignature Language="VB.NET" Value="MultiSelection" />
       <MemberSignature Language="C++ CLI" Value="MultiSelection" />
+      <MemberSignature Language="F#" Value="MultiSelection = 1" Usage="System.Security.Cryptography.X509Certificates.X509SelectionFlag.MultiSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection" />
       <MemberSignature Language="VB.NET" Value="SingleSelection" />
       <MemberSignature Language="C++ CLI" Value="SingleSelection" />
+      <MemberSignature Language="F#" Value="SingleSelection = 0" Usage="System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapper1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectedWrapper1&#xA;Inherits ProjectedWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectedWrapper1 sealed : System::Data::Services::Internal::ProjectedWrapper" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapper1 = class&#xA;    inherit ProjectedWrapper" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper1.InternalGetProjectedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InternalGetProjectedPropertyValue(int propertyIndex);" />
+      <MemberSignature Language="F#" Value="override this.InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapper1.InternalGetProjectedPropertyValue propertyIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper1.ProjectedProperty0" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty0 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty0 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty0 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper1.ProjectedProperty0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

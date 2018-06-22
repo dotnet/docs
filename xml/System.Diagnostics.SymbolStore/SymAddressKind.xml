@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymAddressKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum SymAddressKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class SymAddressKind" />
+  <TypeSignature Language="F#" Value="type SymAddressKind = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.BitField" />
       <MemberSignature Language="VB.NET" Value="BitField" />
       <MemberSignature Language="C++ CLI" Value="BitField" />
+      <MemberSignature Language="F#" Value="BitField = 9" Usage="System.Diagnostics.SymbolStore.SymAddressKind.BitField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.ILOffset" />
       <MemberSignature Language="VB.NET" Value="ILOffset" />
       <MemberSignature Language="C++ CLI" Value="ILOffset" />
+      <MemberSignature Language="F#" Value="ILOffset = 1" Usage="System.Diagnostics.SymbolStore.SymAddressKind.ILOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeOffset" />
       <MemberSignature Language="VB.NET" Value="NativeOffset" />
       <MemberSignature Language="C++ CLI" Value="NativeOffset" />
+      <MemberSignature Language="F#" Value="NativeOffset = 5" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegister" />
       <MemberSignature Language="VB.NET" Value="NativeRegister" />
       <MemberSignature Language="C++ CLI" Value="NativeRegister" />
+      <MemberSignature Language="F#" Value="NativeRegister = 3" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeRegister" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRegister" />
       <MemberSignature Language="VB.NET" Value="NativeRegisterRegister" />
       <MemberSignature Language="C++ CLI" Value="NativeRegisterRegister" />
+      <MemberSignature Language="F#" Value="NativeRegisterRegister = 6" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRegister" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRelative" />
       <MemberSignature Language="VB.NET" Value="NativeRegisterRelative" />
       <MemberSignature Language="C++ CLI" Value="NativeRegisterRelative" />
+      <MemberSignature Language="F#" Value="NativeRegisterRelative = 4" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRelative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterStack" />
       <MemberSignature Language="VB.NET" Value="NativeRegisterStack" />
       <MemberSignature Language="C++ CLI" Value="NativeRegisterStack" />
+      <MemberSignature Language="F#" Value="NativeRegisterStack = 7" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterStack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRVA" />
       <MemberSignature Language="VB.NET" Value="NativeRVA" />
       <MemberSignature Language="C++ CLI" Value="NativeRVA" />
+      <MemberSignature Language="F#" Value="NativeRVA = 2" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeRVA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeSectionOffset" />
       <MemberSignature Language="VB.NET" Value="NativeSectionOffset" />
       <MemberSignature Language="C++ CLI" Value="NativeSectionOffset" />
+      <MemberSignature Language="F#" Value="NativeSectionOffset = 10" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeSectionOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeStackRegister" />
       <MemberSignature Language="VB.NET" Value="NativeStackRegister" />
       <MemberSignature Language="C++ CLI" Value="NativeStackRegister" />
+      <MemberSignature Language="F#" Value="NativeStackRegister = 8" Usage="System.Diagnostics.SymbolStore.SymAddressKind.NativeStackRegister" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

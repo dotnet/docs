@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.RetryConditionHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class RetryConditionHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class RetryConditionHeaderValue : ICloneable" />
+  <TypeSignature Language="F#" Value="type RetryConditionHeaderValue = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.#ctor(System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (date As DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RetryConditionHeaderValue(DateTimeOffset date);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RetryConditionHeaderValue : DateTimeOffset -&gt; System.Net.Http.Headers.RetryConditionHeaderValue" Usage="new System.Net.Http.Headers.RetryConditionHeaderValue date" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (delta As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RetryConditionHeaderValue(TimeSpan delta);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RetryConditionHeaderValue : TimeSpan -&gt; System.Net.Http.Headers.RetryConditionHeaderValue" Usage="new System.Net.Http.Headers.RetryConditionHeaderValue delta" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RetryConditionHeaderValue.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; Date { Nullable&lt;DateTimeOffset&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTimeOffset&gt;" Usage="System.Net.Http.Headers.RetryConditionHeaderValue.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RetryConditionHeaderValue.Delta" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Delta As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; Delta { Nullable&lt;TimeSpan&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Delta : Nullable&lt;TimeSpan&gt;" Usage="System.Net.Http.Headers.RetryConditionHeaderValue.Delta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="retryConditionHeaderValue.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="retryConditionHeaderValue.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As RetryConditionHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::RetryConditionHeaderValue ^ Parse(System::String ^ input);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.RetryConditionHeaderValue" Usage="System.Net.Http.Headers.RetryConditionHeaderValue.Parse input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="retryConditionHeaderValue.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RetryConditionHeaderValue.TryParse(System.String,System.Net.Http.Headers.RetryConditionHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As RetryConditionHeaderValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::RetryConditionHeaderValue ^ % parsedValue);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.RetryConditionHeaderValue.TryParse (input, parsedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

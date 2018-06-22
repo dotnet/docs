@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ThemedScrollbarWindow" />
   <TypeSignature Language="VB.NET" Value="Public Structure ThemedScrollbarWindow" />
   <TypeSignature Language="C++ CLI" Value="public value class ThemedScrollbarWindow" />
+  <TypeSignature Language="F#" Value="type ThemedScrollbarWindow = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarWindow.Handle" />
       <MemberSignature Language="VB.NET" Value="Public Handle As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr Handle;" />
+      <MemberSignature Language="F#" Value="val mutable Handle : nativeint" Usage="System.Windows.Forms.Design.ThemedScrollbarWindow.Handle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarWindow.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Mode As ThemedScrollbarMode " />
       <MemberSignature Language="C++ CLI" Value="public: System::Windows::Forms::Design::ThemedScrollbarMode Mode;" />
+      <MemberSignature Language="F#" Value="val mutable Mode : System.Windows.Forms.Design.ThemedScrollbarMode" Usage="System.Windows.Forms.Design.ThemedScrollbarWindow.Mode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaExternal" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaExternal&#xA;Inherits XmlSchemaObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaExternal abstract : System::Xml::Schema::XmlSchemaObject" />
+  <TypeSignature Language="F#" Value="type XmlSchemaExternal = class&#xA;    inherit XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Xml.Schema.XmlSchemaExternal.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ Schema { System::Xml::Schema::XmlSchema ^ get(); void set(System::Xml::Schema::XmlSchema ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Xml.Schema.XmlSchema with get, set" Usage="System.Xml.Schema.XmlSchemaExternal.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.SchemaLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaLocation : string with get, set" Usage="System.Xml.Schema.XmlSchemaExternal.SchemaLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaExternal.UnhandledAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property UnhandledAttributes As XmlAttribute()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ UnhandledAttributes { cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UnhandledAttributes : System.Xml.XmlAttribute[] with get, set" Usage="System.Xml.Schema.XmlSchemaExternal.UnhandledAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CustomConstantAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomConstantAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomConstantAttribute abstract : Attribute" />
+  <TypeSignature Language="F#" Value="type CustomConstantAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CustomConstantAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.CompilerServices.CustomConstantAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

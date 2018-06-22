@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IComponentConnector" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentConnector" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentConnector" />
+  <TypeSignature Language="F#" Value="type IComponentConnector = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (connectionId As Integer, target As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(int connectionId, System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Connect : int * obj -&gt; unit" Usage="iComponentConnector.Connect (connectionId, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.InitializeComponent" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeComponent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeComponent();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeComponent : unit -&gt; unit" Usage="iComponentConnector.InitializeComponent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

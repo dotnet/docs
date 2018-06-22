@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.PrintTicketLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintTicketLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintTicketLevel" />
+  <TypeSignature Language="F#" Value="type PrintTicketLevel = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentPrintTicket" />
       <MemberSignature Language="VB.NET" Value="FixedDocumentPrintTicket" />
       <MemberSignature Language="C++ CLI" Value="FixedDocumentPrintTicket" />
+      <MemberSignature Language="F#" Value="FixedDocumentPrintTicket = 2" Usage="System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentPrintTicket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentSequencePrintTicket" />
       <MemberSignature Language="VB.NET" Value="FixedDocumentSequencePrintTicket" />
       <MemberSignature Language="C++ CLI" Value="FixedDocumentSequencePrintTicket" />
+      <MemberSignature Language="F#" Value="FixedDocumentSequencePrintTicket = 1" Usage="System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentSequencePrintTicket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedPagePrintTicket" />
       <MemberSignature Language="VB.NET" Value="FixedPagePrintTicket" />
       <MemberSignature Language="C++ CLI" Value="FixedPagePrintTicket" />
+      <MemberSignature Language="F#" Value="FixedPagePrintTicket = 3" Usage="System.Windows.Xps.Serialization.PrintTicketLevel.FixedPagePrintTicket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.Serialization.PrintTicketLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

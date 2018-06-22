@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IExtendedUIService2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtendedUIService2" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExtendedUIService2" />
+  <TypeSignature Language="F#" Value="type IExtendedUIService2 = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetReflectionAssembly(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService2.GetReflectionAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetReflectionAssembly(System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetReflectionAssembly : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="iExtendedUIService2.GetReflectionAssembly assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService2.GetRuntimeType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeType (reflectionType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetRuntimeType(Type ^ reflectionType);" />
+      <MemberSignature Language="F#" Value="abstract member GetRuntimeType : Type -&gt; Type" Usage="iExtendedUIService2.GetRuntimeType reflectionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService2.GetTargetFrameworkVersion" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTargetFrameworkVersion () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long GetTargetFrameworkVersion();" />
+      <MemberSignature Language="F#" Value="abstract member GetTargetFrameworkVersion : unit -&gt; int64" Usage="iExtendedUIService2.GetTargetFrameworkVersion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService2.IsSupportedType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupportedType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupportedType : Type -&gt; bool" Usage="iExtendedUIService2.IsSupportedType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

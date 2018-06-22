@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class MessageDirection" />
+  <TypeSignature Language="F#" Value="type MessageDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.MessageDirection.Input" />
       <MemberSignature Language="VB.NET" Value="Input" />
       <MemberSignature Language="C++ CLI" Value="Input" />
+      <MemberSignature Language="F#" Value="Input = 0" Usage="System.ServiceModel.Description.MessageDirection.Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.MessageDirection.Output" />
       <MemberSignature Language="VB.NET" Value="Output" />
       <MemberSignature Language="C++ CLI" Value="Output" />
+      <MemberSignature Language="F#" Value="Output = 1" Usage="System.ServiceModel.Description.MessageDirection.Output" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

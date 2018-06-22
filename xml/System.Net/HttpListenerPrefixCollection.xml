@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerPrefixCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpListenerPrefixCollection&#xA;Implements ICollection(Of String), IEnumerable(Of String)" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerPrefixCollection : System::Collections::Generic::ICollection&lt;System::String ^&gt;, System::Collections::Generic::IEnumerable&lt;System::String ^&gt;" />
+  <TypeSignature Language="F#" Value="type HttpListenerPrefixCollection = class&#xA;    interface ICollection&lt;string&gt;&#xA;    interface seq&lt;string&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (uriPrefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ uriPrefix);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; unit&#xA;override this.Add : string -&gt; unit" Usage="httpListenerPrefixCollection.Add uriPrefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="httpListenerPrefixCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -175,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (uriPrefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ uriPrefix);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool&#xA;override this.Contains : string -&gt; bool" Usage="httpListenerPrefixCollection.Contains uriPrefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -247,6 +251,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Array array, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ array, int offset);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Array * int -&gt; unit" Usage="httpListenerPrefixCollection.CopyTo (array, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.CopyTo(System.String[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As String(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::String ^&gt; ^ array, int offset);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : string[] * int -&gt; unit&#xA;override this.CopyTo : string[] * int -&gt; unit" Usage="httpListenerPrefixCollection.CopyTo (array, offset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerPrefixCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Net.HttpListenerPrefixCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -400,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::String ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;string&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;string&gt;" Usage="httpListenerPrefixCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -453,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerPrefixCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Net.HttpListenerPrefixCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -486,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerPrefixCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Net.HttpListenerPrefixCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -524,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerPrefixCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (uriPrefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ uriPrefix);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="httpListenerPrefixCollection.Remove uriPrefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemRemovedReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheItemRemovedReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheItemRemovedReason" />
+  <TypeSignature Language="F#" Value="type CacheItemRemovedReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.DependencyChanged" />
       <MemberSignature Language="VB.NET" Value="DependencyChanged" />
       <MemberSignature Language="C++ CLI" Value="DependencyChanged" />
+      <MemberSignature Language="F#" Value="DependencyChanged = 4" Usage="System.Web.Caching.CacheItemRemovedReason.DependencyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Expired" />
       <MemberSignature Language="VB.NET" Value="Expired" />
       <MemberSignature Language="C++ CLI" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 2" Usage="System.Web.Caching.CacheItemRemovedReason.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Removed" />
       <MemberSignature Language="VB.NET" Value="Removed" />
       <MemberSignature Language="C++ CLI" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 1" Usage="System.Web.Caching.CacheItemRemovedReason.Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Underused" />
       <MemberSignature Language="VB.NET" Value="Underused" />
       <MemberSignature Language="C++ CLI" Value="Underused" />
+      <MemberSignature Language="F#" Value="Underused = 3" Usage="System.Web.Caching.CacheItemRemovedReason.Underused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

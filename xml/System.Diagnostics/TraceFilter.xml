@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TraceFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceFilter abstract" />
+  <TypeSignature Language="F#" Value="type TraceFilter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceFilter.ShouldTrace(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[],System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ShouldTrace (cache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, formatOrMessage As String, args As Object(), data1 As Object, data As Object()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ShouldTrace(System::Diagnostics::TraceEventCache ^ cache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ formatOrMessage, cli::array &lt;System::Object ^&gt; ^ args, System::Object ^ data1, cli::array &lt;System::Object ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldTrace : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] * obj * obj[] -&gt; bool" Usage="traceFilter.ShouldTrace (cache, source, eventType, id, formatOrMessage, args, data1, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

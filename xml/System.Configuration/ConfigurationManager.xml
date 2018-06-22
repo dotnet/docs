@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type ConfigurationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -325,6 +326,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationManager.AppSettings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppSettings As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Specialized::NameValueCollection ^ AppSettings { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppSettings : System.Collections.Specialized.NameValueCollection" Usage="System.Configuration.ConfigurationManager.AppSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -522,6 +524,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConnectionStrings As ConnectionStringSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Configuration::ConnectionStringSettingsCollection ^ ConnectionStrings { System::Configuration::ConnectionStringSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringSettingsCollection" Usage="System.Configuration.ConfigurationManager.ConnectionStrings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -637,6 +640,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.GetSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (sectionName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSection(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="static member GetSection : string -&gt; obj" Usage="System.Configuration.ConfigurationManager.GetSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -704,6 +708,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenExeConfiguration(System.Configuration.ConfigurationUserLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExeConfiguration (userLevel As ConfigurationUserLevel) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenExeConfiguration(System::Configuration::ConfigurationUserLevel userLevel);" />
+      <MemberSignature Language="F#" Value="static member OpenExeConfiguration : System.Configuration.ConfigurationUserLevel -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenExeConfiguration userLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -761,6 +766,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenExeConfiguration(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExeConfiguration (exePath As String) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenExeConfiguration(System::String ^ exePath);" />
+      <MemberSignature Language="F#" Value="static member OpenExeConfiguration : string -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenExeConfiguration exePath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -809,6 +815,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenMachineConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMachineConfiguration () As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMachineConfiguration();" />
+      <MemberSignature Language="F#" Value="static member OpenMachineConfiguration : unit -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenMachineConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -865,6 +872,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(System.Configuration.ExeConfigurationFileMap,System.Configuration.ConfigurationUserLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedExeConfiguration (fileMap As ExeConfigurationFileMap, userLevel As ConfigurationUserLevel) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedExeConfiguration(System::Configuration::ExeConfigurationFileMap ^ fileMap, System::Configuration::ConfigurationUserLevel userLevel);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedExeConfiguration : System.Configuration.ExeConfigurationFileMap * System.Configuration.ConfigurationUserLevel -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenMappedExeConfiguration (fileMap, userLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -916,6 +924,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(System.Configuration.ExeConfigurationFileMap,System.Configuration.ConfigurationUserLevel,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedExeConfiguration (fileMap As ExeConfigurationFileMap, userLevel As ConfigurationUserLevel, preLoad As Boolean) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedExeConfiguration(System::Configuration::ExeConfigurationFileMap ^ fileMap, System::Configuration::ConfigurationUserLevel userLevel, bool preLoad);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedExeConfiguration : System.Configuration.ExeConfigurationFileMap * System.Configuration.ConfigurationUserLevel * bool -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenMappedExeConfiguration (fileMap, userLevel, preLoad)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -962,6 +971,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenMappedMachineConfiguration (fileMap As ConfigurationFileMap) As Configuration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Configuration ^ OpenMappedMachineConfiguration(System::Configuration::ConfigurationFileMap ^ fileMap);" />
+      <MemberSignature Language="F#" Value="static member OpenMappedMachineConfiguration : System.Configuration.ConfigurationFileMap -&gt; System.Configuration.Configuration" Usage="System.Configuration.ConfigurationManager.OpenMappedMachineConfiguration fileMap" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1013,6 +1023,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationManager.RefreshSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RefreshSection (sectionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RefreshSection(System::String ^ sectionName);" />
+      <MemberSignature Language="F#" Value="static member RefreshSection : string -&gt; unit" Usage="System.Configuration.ConfigurationManager.RefreshSection sectionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

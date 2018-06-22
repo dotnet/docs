@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbIsOfExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbIsOfExpression&#xA;Inherits DbUnaryExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbIsOfExpression sealed : System::Data::Common::CommandTrees::DbUnaryExpression" />
+  <TypeSignature Language="F#" Value="type DbIsOfExpression = class&#xA;    inherit DbUnaryExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbIsOfExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Accept (visitor As DbExpressionVisitor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Accept(System::Data::Common::CommandTrees::DbExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor -&gt; unit" Usage="dbIsOfExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbIsOfExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResultType) (visitor As DbExpressionVisitor(Of TResultType)) As TResultType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; override TResultType Accept(System::Data::Common::CommandTrees::DbExpressionVisitor&lt;TResultType&gt; ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor&lt;'ResultType&gt; -&gt; 'ResultType" Usage="dbIsOfExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbIsOfExpression.OfType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OfType As TypeUsage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ OfType { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OfType : System.Data.Metadata.Edm.TypeUsage" Usage="System.Data.Common.CommandTrees.DbIsOfExpression.OfType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

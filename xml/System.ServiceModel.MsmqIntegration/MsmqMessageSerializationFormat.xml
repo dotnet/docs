@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum MsmqMessageSerializationFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class MsmqMessageSerializationFormat" />
+  <TypeSignature Language="F#" Value="type MsmqMessageSerializationFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ActiveX" />
       <MemberSignature Language="VB.NET" Value="ActiveX" />
       <MemberSignature Language="C++ CLI" Value="ActiveX" />
+      <MemberSignature Language="F#" Value="ActiveX = 2" Usage="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ActiveX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
       <MemberSignature Language="C++ CLI" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray" />
       <MemberSignature Language="VB.NET" Value="ByteArray" />
       <MemberSignature Language="C++ CLI" Value="ByteArray" />
+      <MemberSignature Language="F#" Value="ByteArray = 3" Usage="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream" />
       <MemberSignature Language="VB.NET" Value="Stream" />
       <MemberSignature Language="C++ CLI" Value="Stream" />
+      <MemberSignature Language="F#" Value="Stream = 4" Usage="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="C++ CLI" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 0" Usage="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

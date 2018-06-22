@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ConflictOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConflictOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConflictOption" />
+  <TypeSignature Language="F#" Value="type ConflictOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.CompareAllSearchableValues" />
       <MemberSignature Language="VB.NET" Value="CompareAllSearchableValues" />
       <MemberSignature Language="C++ CLI" Value="CompareAllSearchableValues" />
+      <MemberSignature Language="F#" Value="CompareAllSearchableValues = 1" Usage="System.Data.ConflictOption.CompareAllSearchableValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.CompareRowVersion" />
       <MemberSignature Language="VB.NET" Value="CompareRowVersion" />
       <MemberSignature Language="C++ CLI" Value="CompareRowVersion" />
+      <MemberSignature Language="F#" Value="CompareRowVersion = 2" Usage="System.Data.ConflictOption.CompareRowVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.OverwriteChanges" />
       <MemberSignature Language="VB.NET" Value="OverwriteChanges" />
       <MemberSignature Language="C++ CLI" Value="OverwriteChanges" />
+      <MemberSignature Language="F#" Value="OverwriteChanges = 3" Usage="System.Data.ConflictOption.OverwriteChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

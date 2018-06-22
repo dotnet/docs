@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ITargetResult" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITargetResult" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITargetResult" />
+  <TypeSignature Language="F#" Value="type ITargetResult = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ITargetResult.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="Microsoft.Build.Execution.ITargetResult.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ITargetResult.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Items { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Execution.ITargetResult.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ITargetResult.ResultCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultCode As TargetResultCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::TargetResultCode ResultCode { Microsoft::Build::Execution::TargetResultCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultCode : Microsoft.Build.Execution.TargetResultCode" Usage="Microsoft.Build.Execution.ITargetResult.ResultCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

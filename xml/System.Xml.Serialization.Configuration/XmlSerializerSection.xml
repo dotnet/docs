@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.XmlSerializerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type XmlSerializerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckDeserializeAdvances As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckDeserializeAdvances { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckDeserializeAdvances : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TempFilesLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TempFilesLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TempFilesLocation : string with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
       <MemberSignature Language="VB.NET" Value="Public Property UseLegacySerializerGeneration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLegacySerializerGeneration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseLegacySerializerGeneration : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

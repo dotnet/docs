@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceHostFactoryBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostFactoryBase abstract" />
+  <TypeSignature Language="F#" Value="type ServiceHostFactoryBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactoryBase.CreateServiceHost(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="abstract member CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="serviceHostFactoryBase.CreateServiceHost (constructorString, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

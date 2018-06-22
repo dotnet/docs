@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRowSection" />
   <TypeSignature Language="VB.NET" Value="Public Enum TableRowSection" />
   <TypeSignature Language="C++ CLI" Value="public enum class TableRowSection" />
+  <TypeSignature Language="F#" Value="type TableRowSection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableBody" />
       <MemberSignature Language="VB.NET" Value="TableBody" />
       <MemberSignature Language="C++ CLI" Value="TableBody" />
+      <MemberSignature Language="F#" Value="TableBody = 1" Usage="System.Web.UI.WebControls.TableRowSection.TableBody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableFooter" />
       <MemberSignature Language="VB.NET" Value="TableFooter" />
       <MemberSignature Language="C++ CLI" Value="TableFooter" />
+      <MemberSignature Language="F#" Value="TableFooter = 2" Usage="System.Web.UI.WebControls.TableRowSection.TableFooter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableHeader" />
       <MemberSignature Language="VB.NET" Value="TableHeader" />
       <MemberSignature Language="C++ CLI" Value="TableHeader" />
+      <MemberSignature Language="F#" Value="TableHeader = 0" Usage="System.Web.UI.WebControls.TableRowSection.TableHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

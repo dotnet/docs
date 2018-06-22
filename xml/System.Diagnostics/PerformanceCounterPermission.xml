@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounterPermission&#xA;Inherits ResourcePermissionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterPermission = class&#xA;    inherit ResourcePermissionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As PerformanceCounterPermissionEntry())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermission(cli::array &lt;System::Diagnostics::PerformanceCounterPermissionEntry ^&gt; ^ permissionAccessEntries);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermission : System.Diagnostics.PerformanceCounterPermissionEntry[] -&gt; System.Diagnostics.PerformanceCounterPermission" Usage="new System.Diagnostics.PerformanceCounterPermission permissionAccessEntries" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermission : System.Security.Permissions.PermissionState -&gt; System.Diagnostics.PerformanceCounterPermission" Usage="new System.Diagnostics.PerformanceCounterPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionAccess,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As PerformanceCounterPermissionAccess, machineName As String, categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermission(System::Diagnostics::PerformanceCounterPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermission : System.Diagnostics.PerformanceCounterPermissionAccess * string * string -&gt; System.Diagnostics.PerformanceCounterPermission" Usage="new System.Diagnostics.PerformanceCounterPermission (permissionAccess, machineName, categoryName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermission.PermissionEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As PerformanceCounterPermissionEntryCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterPermissionEntryCollection ^ PermissionEntries { System::Diagnostics::PerformanceCounterPermissionEntryCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionEntries : System.Diagnostics.PerformanceCounterPermissionEntryCollection" Usage="System.Diagnostics.PerformanceCounterPermission.PermissionEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

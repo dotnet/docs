@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaint" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerPaint" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerPaint abstract sealed" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerPaint = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Draw3DButton(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle bounds, float32 transparency, valuetype System.Windows.Forms.ButtonState buttonState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.Draw3DButton(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Single,System.Windows.Forms.ButtonState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Draw3DButton(System::Drawing::Graphics ^ graphics, System::Drawing::Image ^ image, System::Drawing::Rectangle bounds, float transparency, System::Windows::Forms::ButtonState buttonState);" />
+      <MemberSignature Language="F#" Value="static member Draw3DButton : System.Drawing.Graphics * System.Drawing.Image * System.Drawing.Rectangle * single * System.Windows.Forms.ButtonState -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.Draw3DButton (graphics, image, bounds, transparency, buttonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawExpandButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle boundingRect, bool drawExpanded, class System.Workflow.ComponentModel.Design.CompositeDesignerTheme compositeDesignerTheme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean,System.Workflow.ComponentModel.Design.CompositeDesignerTheme)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawExpandButton(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle boundingRect, bool drawExpanded, System::Workflow::ComponentModel::Design::CompositeDesignerTheme ^ compositeDesignerTheme);" />
+      <MemberSignature Language="F#" Value="static member DrawExpandButton : System.Drawing.Graphics * System.Drawing.Rectangle * bool * System.Workflow.ComponentModel.Design.CompositeDesignerTheme -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton (graphics, boundingRect, drawExpanded, compositeDesignerTheme)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImage(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle destination, valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.DesignerContentAlignment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawImage(System::Drawing::Graphics ^ graphics, System::Drawing::Image ^ image, System::Drawing::Rectangle destination, System::Workflow::ComponentModel::Design::DesignerContentAlignment alignment);" />
+      <MemberSignature Language="F#" Value="static member DrawImage : System.Drawing.Graphics * System.Drawing.Image * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.DesignerContentAlignment -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage (graphics, image, destination, alignment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImage(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle destination, valuetype System.Drawing.Rectangle source, valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment, float32 transparency, bool grayscale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.DesignerContentAlignment,System.Single,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawImage(System::Drawing::Graphics ^ graphics, System::Drawing::Image ^ image, System::Drawing::Rectangle destination, System::Drawing::Rectangle source, System::Workflow::ComponentModel::Design::DesignerContentAlignment alignment, float transparency, bool grayscale);" />
+      <MemberSignature Language="F#" Value="static member DrawImage : System.Drawing.Graphics * System.Drawing.Image * System.Drawing.Rectangle * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.DesignerContentAlignment * single * bool -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage (graphics, image, destination, source, alignment, transparency, grayscale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRoundedRectangle(class System.Drawing.Graphics graphics, class System.Drawing.Pen drawingPen, valuetype System.Drawing.Rectangle rectangle, int32 radius) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Rectangle,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRoundedRectangle(System::Drawing::Graphics ^ graphics, System::Drawing::Pen ^ drawingPen, System::Drawing::Rectangle rectangle, int radius);" />
+      <MemberSignature Language="F#" Value="static member DrawRoundedRectangle : System.Drawing.Graphics * System.Drawing.Pen * System.Drawing.Rectangle * int -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle (graphics, drawingPen, rectangle, radius)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.Graphics graphics, class System.Drawing.Font font, string text, valuetype System.Drawing.Rectangle boundingRect, valuetype System.Drawing.StringAlignment alignment, valuetype System.Workflow.ComponentModel.Design.TextQuality textQuality, class System.Drawing.Brush textBrush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText(System.Drawing.Graphics,System.Drawing.Font,System.String,System.Drawing.Rectangle,System.Drawing.StringAlignment,System.Workflow.ComponentModel.Design.TextQuality,System.Drawing.Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawText(System::Drawing::Graphics ^ graphics, System::Drawing::Font ^ font, System::String ^ text, System::Drawing::Rectangle boundingRect, System::Drawing::StringAlignment alignment, System::Workflow::ComponentModel::Design::TextQuality textQuality, System::Drawing::Brush ^ textBrush);" />
+      <MemberSignature Language="F#" Value="static member DrawText : System.Drawing.Graphics * System.Drawing.Font * string * System.Drawing.Rectangle * System.Drawing.StringAlignment * System.Workflow.ComponentModel.Design.TextQuality * System.Drawing.Brush -&gt; unit" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText (graphics, font, text, boundingRect, alignment, textQuality, textBrush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -303,6 +310,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Drawing2D.GraphicsPath GetRoundedRectanglePath(valuetype System.Drawing.Rectangle rectangle, int32 radius) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Drawing2D::GraphicsPath ^ GetRoundedRectanglePath(System::Drawing::Rectangle rectangle, int radius);" />
+      <MemberSignature Language="F#" Value="static member GetRoundedRectanglePath : System.Drawing.Rectangle * int -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath (rectangle, radius)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

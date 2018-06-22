@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.PersistenceException" />
   <TypeSignature Language="VB.NET" Value="Public Class PersistenceException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistenceException : System::ServiceModel::CommunicationException" />
+  <TypeSignature Language="F#" Value="type PersistenceException = class&#xA;    inherit CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : string -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersistenceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : string * Exception -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

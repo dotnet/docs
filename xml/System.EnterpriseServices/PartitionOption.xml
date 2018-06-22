@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PartitionOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum PartitionOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class PartitionOption" />
+  <TypeSignature Language="F#" Value="type PartitionOption = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PartitionOption.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 0" Usage="System.EnterpriseServices.PartitionOption.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PartitionOption.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="System.EnterpriseServices.PartitionOption.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PartitionOption.New" />
       <MemberSignature Language="VB.NET" Value="New" />
       <MemberSignature Language="C++ CLI" Value="New" />
+      <MemberSignature Language="F#" Value="New = 2" Usage="System.EnterpriseServices.PartitionOption.New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OptionalReliableSession" />
   <TypeSignature Language="VB.NET" Value="Public Class OptionalReliableSession&#xA;Inherits ReliableSession" />
   <TypeSignature Language="C++ CLI" Value="public ref class OptionalReliableSession : System::ServiceModel::ReliableSession" />
+  <TypeSignature Language="F#" Value="type OptionalReliableSession = class&#xA;    inherit ReliableSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OptionalReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ binding);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.OptionalReliableSession : System.ServiceModel.Channels.ReliableSessionBindingElement -&gt; System.ServiceModel.OptionalReliableSession" Usage="new System.ServiceModel.OptionalReliableSession binding" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OptionalReliableSession.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ServiceModel.OptionalReliableSession.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

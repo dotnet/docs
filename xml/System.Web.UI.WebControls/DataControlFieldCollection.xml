@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataControlFieldCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlFieldCollection sealed : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type DataControlFieldCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.Add(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (field As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::DataControlField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="dataControlFieldCollection.Add field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.CloneFields" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneFields () As DataControlFieldCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::DataControlFieldCollection ^ CloneFields();" />
+      <MemberSignature Language="F#" Value="member this.CloneFields : unit -&gt; System.Web.UI.WebControls.DataControlFieldCollection" Usage="dataControlFieldCollection.CloneFields " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.Contains(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (field As DataControlField) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::DataControlField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.DataControlField -&gt; bool" Usage="dataControlFieldCollection.Contains field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.CopyTo(System.Web.UI.WebControls.DataControlField[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataControlField(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::DataControlField ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.DataControlField[] * int -&gt; unit" Usage="dataControlFieldCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="dataControlFieldCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataControlFieldCollection.FieldsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FieldsChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FieldsChanged;" />
+      <MemberSignature Language="F#" Value="member this.FieldsChanged : EventHandler " Usage="member this.FieldsChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="dataControlFieldCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.IndexOf(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As DataControlField) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::DataControlField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.DataControlField -&gt; int" Usage="dataControlFieldCollection.IndexOf field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, field As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::DataControlField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="dataControlFieldCollection.Insert (index, field)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataControlField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataControlField ^ default[int] { System::Web::UI::WebControls::DataControlField ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.DataControlField" Usage="System.Web.UI.WebControls.DataControlFieldCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
+      <MemberSignature Language="F#" Value="override this.OnClearComplete : unit -&gt; unit" Usage="dataControlFieldCollection.OnClearComplete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -422,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnInsertComplete : int * obj -&gt; unit" Usage="dataControlFieldCollection.OnInsertComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnRemoveComplete : int * obj -&gt; unit" Usage="dataControlFieldCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="dataControlFieldCollection.OnValidate o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.Remove(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (field As DataControlField)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::DataControlField ^ field);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="dataControlFieldCollection.Remove field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -521,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataControlFieldCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -547,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="dataControlFieldCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

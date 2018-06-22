@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.TextControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextControl&#xA;Inherits MobileControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextControl abstract : System::Web::UI::MobileControls::MobileControl" />
+  <TypeSignature Language="F#" Value="type TextControl = class&#xA;    inherit MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.TextControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.MobileControls.TextControl.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

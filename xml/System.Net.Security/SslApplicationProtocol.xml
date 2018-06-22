@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslApplicationProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Structure SslApplicationProtocol&#xA;Implements IEquatable(Of SslApplicationProtocol)" />
   <TypeSignature Language="C++ CLI" Value="public value class SslApplicationProtocol : IEquatable&lt;System::Net::Security::SslApplicationProtocol&gt;" />
+  <TypeSignature Language="F#" Value="type SslApplicationProtocol = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SslApplicationProtocol(cli::array &lt;System::Byte&gt; ^ protocol);" />
+      <MemberSignature Language="F#" Value="new System.Net.Security.SslApplicationProtocol : byte[] -&gt; System.Net.Security.SslApplicationProtocol" Usage="new System.Net.Security.SslApplicationProtocol protocol" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SslApplicationProtocol(System::String ^ protocol);" />
+      <MemberSignature Language="F#" Value="new System.Net.Security.SslApplicationProtocol : string -&gt; System.Net.Security.SslApplicationProtocol" Usage="new System.Net.Security.SslApplicationProtocol protocol" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.Equals(System.Net.Security.SslApplicationProtocol)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SslApplicationProtocol) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::Security::SslApplicationProtocol other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.Security.SslApplicationProtocol -&gt; bool" Usage="sslApplicationProtocol.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sslApplicationProtocol.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sslApplicationProtocol.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslApplicationProtocol.Http11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Http11 As SslApplicationProtocol " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::Security::SslApplicationProtocol Http11;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Http11 : System.Net.Security.SslApplicationProtocol" Usage="System.Net.Security.SslApplicationProtocol.Http11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.SslApplicationProtocol.Http2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Http2 As SslApplicationProtocol " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::Security::SslApplicationProtocol Http2;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Http2 : System.Net.Security.SslApplicationProtocol" Usage="System.Net.Security.SslApplicationProtocol.Http2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -182,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.op_Equality(System.Net.Security.SslApplicationProtocol,System.Net.Security.SslApplicationProtocol)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SslApplicationProtocol, right As SslApplicationProtocol) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Net::Security::SslApplicationProtocol left, System::Net::Security::SslApplicationProtocol right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Net.Security.SslApplicationProtocol * System.Net.Security.SslApplicationProtocol -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -208,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.op_Inequality(System.Net.Security.SslApplicationProtocol,System.Net.Security.SslApplicationProtocol)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SslApplicationProtocol, right As SslApplicationProtocol) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Net::Security::SslApplicationProtocol left, System::Net::Security::SslApplicationProtocol right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Net.Security.SslApplicationProtocol * System.Net.Security.SslApplicationProtocol -&gt; bool" Usage="System.Net.Security.SslApplicationProtocol.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -234,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.SslApplicationProtocol.Protocol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocol As ReadOnlyMemory(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;System::Byte&gt; Protocol { ReadOnlyMemory&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Protocol : ReadOnlyMemory&lt;byte&gt;" Usage="System.Net.Security.SslApplicationProtocol.Protocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -254,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslApplicationProtocol.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sslApplicationProtocol.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

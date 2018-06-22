@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellStyleContentChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellStyleContentChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellStyleContentChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs.CellStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCellStyle ^ CellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellStyle : System.Windows.Forms.DataGridViewCellStyle" Usage="System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs.CellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs.CellStyleScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellStyleScope As DataGridViewCellStyleScopes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCellStyleScopes CellStyleScope { System::Windows::Forms::DataGridViewCellStyleScopes get(); };" />
+      <MemberSignature Language="F#" Value="member this.CellStyleScope : System.Windows.Forms.DataGridViewCellStyleScopes" Usage="System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs.CellStyleScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

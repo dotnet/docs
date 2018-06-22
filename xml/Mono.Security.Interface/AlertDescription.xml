@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.AlertDescription" />
   <TypeSignature Language="VB.NET" Value="Public Enum AlertDescription" />
   <TypeSignature Language="C++ CLI" Value="public enum class AlertDescription" />
+  <TypeSignature Language="F#" Value="type AlertDescription = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.AccessDenied" />
       <MemberSignature Language="VB.NET" Value="AccessDenied" />
       <MemberSignature Language="C++ CLI" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 49" Usage="Mono.Security.Interface.AlertDescription.AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadCertificate" />
       <MemberSignature Language="VB.NET" Value="BadCertificate" />
       <MemberSignature Language="C++ CLI" Value="BadCertificate" />
+      <MemberSignature Language="F#" Value="BadCertificate = 42" Usage="Mono.Security.Interface.AlertDescription.BadCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadRecordMAC" />
       <MemberSignature Language="VB.NET" Value="BadRecordMAC" />
       <MemberSignature Language="C++ CLI" Value="BadRecordMAC" />
+      <MemberSignature Language="F#" Value="BadRecordMAC = 20" Usage="Mono.Security.Interface.AlertDescription.BadRecordMAC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateExpired" />
       <MemberSignature Language="VB.NET" Value="CertificateExpired" />
       <MemberSignature Language="C++ CLI" Value="CertificateExpired" />
+      <MemberSignature Language="F#" Value="CertificateExpired = 45" Usage="Mono.Security.Interface.AlertDescription.CertificateExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateRevoked" />
       <MemberSignature Language="VB.NET" Value="CertificateRevoked" />
       <MemberSignature Language="C++ CLI" Value="CertificateRevoked" />
+      <MemberSignature Language="F#" Value="CertificateRevoked = 44" Usage="Mono.Security.Interface.AlertDescription.CertificateRevoked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateUnknown" />
       <MemberSignature Language="VB.NET" Value="CertificateUnknown" />
       <MemberSignature Language="C++ CLI" Value="CertificateUnknown" />
+      <MemberSignature Language="F#" Value="CertificateUnknown = 46" Usage="Mono.Security.Interface.AlertDescription.CertificateUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CloseNotify" />
       <MemberSignature Language="VB.NET" Value="CloseNotify" />
       <MemberSignature Language="C++ CLI" Value="CloseNotify" />
+      <MemberSignature Language="F#" Value="CloseNotify = 0" Usage="Mono.Security.Interface.AlertDescription.CloseNotify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecodeError" />
       <MemberSignature Language="VB.NET" Value="DecodeError" />
       <MemberSignature Language="C++ CLI" Value="DecodeError" />
+      <MemberSignature Language="F#" Value="DecodeError = 50" Usage="Mono.Security.Interface.AlertDescription.DecodeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecompressionFailure" />
       <MemberSignature Language="VB.NET" Value="DecompressionFailure" />
       <MemberSignature Language="C++ CLI" Value="DecompressionFailure" />
+      <MemberSignature Language="F#" Value="DecompressionFailure = 30" Usage="Mono.Security.Interface.AlertDescription.DecompressionFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptError" />
       <MemberSignature Language="VB.NET" Value="DecryptError" />
       <MemberSignature Language="C++ CLI" Value="DecryptError" />
+      <MemberSignature Language="F#" Value="DecryptError = 51" Usage="Mono.Security.Interface.AlertDescription.DecryptError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -212,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptionFailed_RESERVED" />
       <MemberSignature Language="VB.NET" Value="DecryptionFailed_RESERVED" />
       <MemberSignature Language="C++ CLI" Value="DecryptionFailed_RESERVED" />
+      <MemberSignature Language="F#" Value="DecryptionFailed_RESERVED = 21" Usage="Mono.Security.Interface.AlertDescription.DecryptionFailed_RESERVED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ExportRestriction" />
       <MemberSignature Language="VB.NET" Value="ExportRestriction" />
       <MemberSignature Language="C++ CLI" Value="ExportRestriction" />
+      <MemberSignature Language="F#" Value="ExportRestriction = 60" Usage="Mono.Security.Interface.AlertDescription.ExportRestriction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.HandshakeFailure" />
       <MemberSignature Language="VB.NET" Value="HandshakeFailure" />
       <MemberSignature Language="C++ CLI" Value="HandshakeFailure" />
+      <MemberSignature Language="F#" Value="HandshakeFailure = 40" Usage="Mono.Security.Interface.AlertDescription.HandshakeFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.IlegalParameter" />
       <MemberSignature Language="VB.NET" Value="IlegalParameter" />
       <MemberSignature Language="C++ CLI" Value="IlegalParameter" />
+      <MemberSignature Language="F#" Value="IlegalParameter = 47" Usage="Mono.Security.Interface.AlertDescription.IlegalParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -288,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InsuficientSecurity" />
       <MemberSignature Language="VB.NET" Value="InsuficientSecurity" />
       <MemberSignature Language="C++ CLI" Value="InsuficientSecurity" />
+      <MemberSignature Language="F#" Value="InsuficientSecurity = 71" Usage="Mono.Security.Interface.AlertDescription.InsuficientSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InternalError" />
       <MemberSignature Language="VB.NET" Value="InternalError" />
       <MemberSignature Language="C++ CLI" Value="InternalError" />
+      <MemberSignature Language="F#" Value="InternalError = 80" Usage="Mono.Security.Interface.AlertDescription.InternalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -326,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoCertificate_RESERVED" />
       <MemberSignature Language="VB.NET" Value="NoCertificate_RESERVED" />
       <MemberSignature Language="C++ CLI" Value="NoCertificate_RESERVED" />
+      <MemberSignature Language="F#" Value="NoCertificate_RESERVED = 41" Usage="Mono.Security.Interface.AlertDescription.NoCertificate_RESERVED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -345,6 +363,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoRenegotiation" />
       <MemberSignature Language="VB.NET" Value="NoRenegotiation" />
       <MemberSignature Language="C++ CLI" Value="NoRenegotiation" />
+      <MemberSignature Language="F#" Value="NoRenegotiation = 100" Usage="Mono.Security.Interface.AlertDescription.NoRenegotiation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="ProtocolVersion" />
       <MemberSignature Language="C++ CLI" Value="ProtocolVersion" />
+      <MemberSignature Language="F#" Value="ProtocolVersion = 70" Usage="Mono.Security.Interface.AlertDescription.ProtocolVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -383,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.RecordOverflow" />
       <MemberSignature Language="VB.NET" Value="RecordOverflow" />
       <MemberSignature Language="C++ CLI" Value="RecordOverflow" />
+      <MemberSignature Language="F#" Value="RecordOverflow = 22" Usage="Mono.Security.Interface.AlertDescription.RecordOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +423,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnexpectedMessage" />
       <MemberSignature Language="VB.NET" Value="UnexpectedMessage" />
       <MemberSignature Language="C++ CLI" Value="UnexpectedMessage" />
+      <MemberSignature Language="F#" Value="UnexpectedMessage = 10" Usage="Mono.Security.Interface.AlertDescription.UnexpectedMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -421,6 +443,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnknownCA" />
       <MemberSignature Language="VB.NET" Value="UnknownCA" />
       <MemberSignature Language="C++ CLI" Value="UnknownCA" />
+      <MemberSignature Language="F#" Value="UnknownCA = 48" Usage="Mono.Security.Interface.AlertDescription.UnknownCA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -440,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedCertificate" />
       <MemberSignature Language="VB.NET" Value="UnsupportedCertificate" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedCertificate" />
+      <MemberSignature Language="F#" Value="UnsupportedCertificate = 43" Usage="Mono.Security.Interface.AlertDescription.UnsupportedCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -459,6 +483,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedExtension" />
       <MemberSignature Language="VB.NET" Value="UnsupportedExtension" />
       <MemberSignature Language="C++ CLI" Value="UnsupportedExtension" />
+      <MemberSignature Language="F#" Value="UnsupportedExtension = 110" Usage="Mono.Security.Interface.AlertDescription.UnsupportedExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -478,6 +503,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UserCancelled" />
       <MemberSignature Language="VB.NET" Value="UserCancelled" />
       <MemberSignature Language="C++ CLI" Value="UserCancelled" />
+      <MemberSignature Language="F#" Value="UserCancelled = 90" Usage="Mono.Security.Interface.AlertDescription.UserCancelled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

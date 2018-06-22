@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Appearance" />
   <TypeSignature Language="VB.NET" Value="Public Enum Appearance" />
   <TypeSignature Language="C++ CLI" Value="public enum class Appearance" />
+  <TypeSignature Language="F#" Value="type Appearance = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Appearance.Button" />
       <MemberSignature Language="VB.NET" Value="Button" />
       <MemberSignature Language="C++ CLI" Value="Button" />
+      <MemberSignature Language="F#" Value="Button = 1" Usage="System.Windows.Forms.Appearance.Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Appearance.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.Appearance.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

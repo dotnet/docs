@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.IManagedInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Interface IManagedInstaller" />
   <TypeSignature Language="C++ CLI" Value="public interface class IManagedInstaller" />
+  <TypeSignature Language="F#" Value="type IManagedInstaller = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ManagedInstall (commandLine As String, hInstall As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ManagedInstall(System::String ^ commandLine, int hInstall);" />
+      <MemberSignature Language="F#" Value="abstract member ManagedInstall : string * int -&gt; int" Usage="iManagedInstaller.ManagedInstall (commandLine, hInstall)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

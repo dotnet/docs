@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsRedirectMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CustomErrorsRedirectMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CustomErrorsRedirectMode" />
+  <TypeSignature Language="F#" Value="type CustomErrorsRedirectMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRedirect" />
       <MemberSignature Language="VB.NET" Value="ResponseRedirect" />
       <MemberSignature Language="C++ CLI" Value="ResponseRedirect" />
+      <MemberSignature Language="F#" Value="ResponseRedirect = 0" Usage="System.Web.Configuration.CustomErrorsRedirectMode.ResponseRedirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRewrite" />
       <MemberSignature Language="VB.NET" Value="ResponseRewrite" />
       <MemberSignature Language="C++ CLI" Value="ResponseRewrite" />
+      <MemberSignature Language="F#" Value="ResponseRewrite = 1" Usage="System.Web.Configuration.CustomErrorsRedirectMode.ResponseRewrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

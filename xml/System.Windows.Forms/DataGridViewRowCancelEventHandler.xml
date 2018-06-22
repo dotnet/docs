@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowCancelEventHandler(sender As Object, e As DataGridViewRowCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowCancelEventHandler(System::Object ^ sender, DataGridViewRowCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowCancelEventHandler = delegate of obj * DataGridViewRowCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

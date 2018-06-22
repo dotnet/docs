@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpResponseHeader" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpResponseHeader" />
   <TypeSignature Language="C++ CLI" Value="public enum class HttpResponseHeader" />
+  <TypeSignature Language="F#" Value="type HttpResponseHeader = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.AcceptRanges" />
       <MemberSignature Language="VB.NET" Value="AcceptRanges" />
       <MemberSignature Language="C++ CLI" Value="AcceptRanges" />
+      <MemberSignature Language="F#" Value="AcceptRanges = 20" Usage="System.Net.HttpResponseHeader.AcceptRanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Age" />
       <MemberSignature Language="VB.NET" Value="Age" />
       <MemberSignature Language="C++ CLI" Value="Age" />
+      <MemberSignature Language="F#" Value="Age = 21" Usage="System.Net.HttpResponseHeader.Age" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 10" Usage="System.Net.HttpResponseHeader.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.CacheControl" />
       <MemberSignature Language="VB.NET" Value="CacheControl" />
       <MemberSignature Language="C++ CLI" Value="CacheControl" />
+      <MemberSignature Language="F#" Value="CacheControl = 0" Usage="System.Net.HttpResponseHeader.CacheControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Connection" />
       <MemberSignature Language="VB.NET" Value="Connection" />
       <MemberSignature Language="C++ CLI" Value="Connection" />
+      <MemberSignature Language="F#" Value="Connection = 1" Usage="System.Net.HttpResponseHeader.Connection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="ContentEncoding" />
       <MemberSignature Language="C++ CLI" Value="ContentEncoding" />
+      <MemberSignature Language="F#" Value="ContentEncoding = 13" Usage="System.Net.HttpResponseHeader.ContentEncoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentLanguage" />
       <MemberSignature Language="VB.NET" Value="ContentLanguage" />
       <MemberSignature Language="C++ CLI" Value="ContentLanguage" />
+      <MemberSignature Language="F#" Value="ContentLanguage = 14" Usage="System.Net.HttpResponseHeader.ContentLanguage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentLength" />
       <MemberSignature Language="VB.NET" Value="ContentLength" />
       <MemberSignature Language="C++ CLI" Value="ContentLength" />
+      <MemberSignature Language="F#" Value="ContentLength = 11" Usage="System.Net.HttpResponseHeader.ContentLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentLocation" />
       <MemberSignature Language="VB.NET" Value="ContentLocation" />
       <MemberSignature Language="C++ CLI" Value="ContentLocation" />
+      <MemberSignature Language="F#" Value="ContentLocation = 15" Usage="System.Net.HttpResponseHeader.ContentLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentMd5" />
       <MemberSignature Language="VB.NET" Value="ContentMd5" />
       <MemberSignature Language="C++ CLI" Value="ContentMd5" />
+      <MemberSignature Language="F#" Value="ContentMd5 = 16" Usage="System.Net.HttpResponseHeader.ContentMd5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -341,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentRange" />
       <MemberSignature Language="VB.NET" Value="ContentRange" />
       <MemberSignature Language="C++ CLI" Value="ContentRange" />
+      <MemberSignature Language="F#" Value="ContentRange = 17" Usage="System.Net.HttpResponseHeader.ContentRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ContentType" />
       <MemberSignature Language="VB.NET" Value="ContentType" />
       <MemberSignature Language="C++ CLI" Value="ContentType" />
+      <MemberSignature Language="F#" Value="ContentType = 12" Usage="System.Net.HttpResponseHeader.ContentType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="C++ CLI" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 2" Usage="System.Net.HttpResponseHeader.Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -431,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ETag" />
       <MemberSignature Language="VB.NET" Value="ETag" />
       <MemberSignature Language="C++ CLI" Value="ETag" />
+      <MemberSignature Language="F#" Value="ETag = 22" Usage="System.Net.HttpResponseHeader.ETag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -461,6 +476,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Expires" />
       <MemberSignature Language="VB.NET" Value="Expires" />
       <MemberSignature Language="C++ CLI" Value="Expires" />
+      <MemberSignature Language="F#" Value="Expires = 18" Usage="System.Net.HttpResponseHeader.Expires" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -491,6 +507,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.KeepAlive" />
       <MemberSignature Language="VB.NET" Value="KeepAlive" />
       <MemberSignature Language="C++ CLI" Value="KeepAlive" />
+      <MemberSignature Language="F#" Value="KeepAlive = 3" Usage="System.Net.HttpResponseHeader.KeepAlive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -521,6 +538,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.LastModified" />
       <MemberSignature Language="VB.NET" Value="LastModified" />
       <MemberSignature Language="C++ CLI" Value="LastModified" />
+      <MemberSignature Language="F#" Value="LastModified = 19" Usage="System.Net.HttpResponseHeader.LastModified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -551,6 +569,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Location" />
       <MemberSignature Language="VB.NET" Value="Location" />
       <MemberSignature Language="C++ CLI" Value="Location" />
+      <MemberSignature Language="F#" Value="Location = 23" Usage="System.Net.HttpResponseHeader.Location" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -581,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Pragma" />
       <MemberSignature Language="VB.NET" Value="Pragma" />
       <MemberSignature Language="C++ CLI" Value="Pragma" />
+      <MemberSignature Language="F#" Value="Pragma = 4" Usage="System.Net.HttpResponseHeader.Pragma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -611,6 +631,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.ProxyAuthenticate" />
       <MemberSignature Language="VB.NET" Value="ProxyAuthenticate" />
       <MemberSignature Language="C++ CLI" Value="ProxyAuthenticate" />
+      <MemberSignature Language="F#" Value="ProxyAuthenticate = 24" Usage="System.Net.HttpResponseHeader.ProxyAuthenticate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -641,6 +662,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.RetryAfter" />
       <MemberSignature Language="VB.NET" Value="RetryAfter" />
       <MemberSignature Language="C++ CLI" Value="RetryAfter" />
+      <MemberSignature Language="F#" Value="RetryAfter = 25" Usage="System.Net.HttpResponseHeader.RetryAfter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -671,6 +693,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Server" />
       <MemberSignature Language="VB.NET" Value="Server" />
       <MemberSignature Language="C++ CLI" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 26" Usage="System.Net.HttpResponseHeader.Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -701,6 +724,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.SetCookie" />
       <MemberSignature Language="VB.NET" Value="SetCookie" />
       <MemberSignature Language="C++ CLI" Value="SetCookie" />
+      <MemberSignature Language="F#" Value="SetCookie = 27" Usage="System.Net.HttpResponseHeader.SetCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -731,6 +755,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Trailer" />
       <MemberSignature Language="VB.NET" Value="Trailer" />
       <MemberSignature Language="C++ CLI" Value="Trailer" />
+      <MemberSignature Language="F#" Value="Trailer = 5" Usage="System.Net.HttpResponseHeader.Trailer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -761,6 +786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.TransferEncoding" />
       <MemberSignature Language="VB.NET" Value="TransferEncoding" />
       <MemberSignature Language="C++ CLI" Value="TransferEncoding" />
+      <MemberSignature Language="F#" Value="TransferEncoding = 6" Usage="System.Net.HttpResponseHeader.TransferEncoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -791,6 +817,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Upgrade" />
       <MemberSignature Language="VB.NET" Value="Upgrade" />
       <MemberSignature Language="C++ CLI" Value="Upgrade" />
+      <MemberSignature Language="F#" Value="Upgrade = 7" Usage="System.Net.HttpResponseHeader.Upgrade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -821,6 +848,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Vary" />
       <MemberSignature Language="VB.NET" Value="Vary" />
       <MemberSignature Language="C++ CLI" Value="Vary" />
+      <MemberSignature Language="F#" Value="Vary = 28" Usage="System.Net.HttpResponseHeader.Vary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -851,6 +879,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Via" />
       <MemberSignature Language="VB.NET" Value="Via" />
       <MemberSignature Language="C++ CLI" Value="Via" />
+      <MemberSignature Language="F#" Value="Via = 8" Usage="System.Net.HttpResponseHeader.Via" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -881,6 +910,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="C++ CLI" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 9" Usage="System.Net.HttpResponseHeader.Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -911,6 +941,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.HttpResponseHeader.WwwAuthenticate" />
       <MemberSignature Language="VB.NET" Value="WwwAuthenticate" />
       <MemberSignature Language="C++ CLI" Value="WwwAuthenticate" />
+      <MemberSignature Language="F#" Value="WwwAuthenticate = 29" Usage="System.Net.HttpResponseHeader.WwwAuthenticate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>

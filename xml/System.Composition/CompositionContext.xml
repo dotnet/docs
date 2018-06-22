@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CompositionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionContext abstract" />
+  <TypeSignature Language="F#" Value="type CompositionContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -49,6 +50,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport (contract As CompositionContract) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetExport(System::Composition::Hosting::Core::CompositionContract ^ contract);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : System.Composition.Hosting.Core.CompositionContract -&gt; obj" Usage="compositionContext.GetExport contract" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -75,6 +77,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport (exportType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetExport(Type ^ exportType);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : Type -&gt; obj" Usage="compositionContext.GetExport exportType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -100,6 +103,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport (exportType As Type, contractName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetExport(Type ^ exportType, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : Type * string -&gt; obj" Usage="compositionContext.GetExport (exportType, contractName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -127,6 +131,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of TExport) () As TExport" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; TExport GetExport();" />
+      <MemberSignature Language="F#" Value="member this.GetExport : unit -&gt; 'Export" Usage="compositionContext.GetExport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -153,6 +158,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExport(Of TExport) (contractName As String) As TExport" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; TExport GetExport(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExport : string -&gt; 'Export" Usage="compositionContext.GetExport contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -182,6 +188,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports (exportType As Type) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetExports(Type ^ exportType);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : Type -&gt; seq&lt;obj&gt;" Usage="compositionContext.GetExports exportType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -207,6 +214,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports (exportType As Type, contractName As String) As IEnumerable(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetExports(Type ^ exportType, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : Type * string -&gt; seq&lt;obj&gt;" Usage="compositionContext.GetExports (exportType, contractName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -234,6 +242,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of TExport) () As IEnumerable(Of TExport)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; System::Collections::Generic::IEnumerable&lt;TExport&gt; ^ GetExports();" />
+      <MemberSignature Language="F#" Value="member this.GetExports : unit -&gt; seq&lt;'Export&gt;" Usage="compositionContext.GetExports " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -260,6 +269,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExports(Of TExport) (contractName As String) As IEnumerable(Of TExport)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; System::Collections::Generic::IEnumerable&lt;TExport&gt; ^ GetExports(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="member this.GetExports : string -&gt; seq&lt;'Export&gt;" Usage="compositionContext.GetExports contractName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -289,6 +299,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetExport (contract As CompositionContract, ByRef export As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetExport(System::Composition::Hosting::Core::CompositionContract ^ contract, [Runtime::InteropServices::Out] System::Object ^ % export);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetExport : System.Composition.Hosting.Core.CompositionContract *  -&gt; bool" Usage="compositionContext.TryGetExport (contract, export)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -317,6 +328,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetExport (exportType As Type, ByRef export As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetExport(Type ^ exportType, [Runtime::InteropServices::Out] System::Object ^ % export);" />
+      <MemberSignature Language="F#" Value="member this.TryGetExport : Type *  -&gt; bool" Usage="compositionContext.TryGetExport (exportType, export)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -345,6 +357,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetExport (exportType As Type, contractName As String, ByRef export As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetExport(Type ^ exportType, System::String ^ contractName, [Runtime::InteropServices::Out] System::Object ^ % export);" />
+      <MemberSignature Language="F#" Value="member this.TryGetExport : Type * string *  -&gt; bool" Usage="compositionContext.TryGetExport (exportType, contractName, export)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -375,6 +388,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetExport(Of TExport) (ByRef export As TExport) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; bool TryGetExport([Runtime::InteropServices::Out] TExport % export);" />
+      <MemberSignature Language="F#" Value="member this.TryGetExport :  -&gt; bool" Usage="compositionContext.TryGetExport export" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -405,6 +419,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetExport(Of TExport) (contractName As String, ByRef export As TExport) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExport&gt;&#xA; bool TryGetExport(System::String ^ contractName, [Runtime::InteropServices::Out] TExport % export);" />
+      <MemberSignature Language="F#" Value="member this.TryGetExport : string *  -&gt; bool" Usage="compositionContext.TryGetExport (contractName, export)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

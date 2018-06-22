@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ExecutionEngineException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExecutionEngineException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExecutionEngineException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type ExecutionEngineException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ExecutionEngineException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExecutionEngineException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ExecutionEngineException : string -&gt; ExecutionEngineException" Usage="new System.ExecutionEngineException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ExecutionEngineException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExecutionEngineException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ExecutionEngineException : string * Exception -&gt; ExecutionEngineException" Usage="new System.ExecutionEngineException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

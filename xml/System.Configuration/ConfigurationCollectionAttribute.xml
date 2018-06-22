@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationCollectionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationCollectionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationCollectionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConfigurationCollectionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationCollectionAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationCollectionAttribute(Type ^ itemType);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationCollectionAttribute : Type -&gt; System.Configuration.ConfigurationCollectionAttribute" Usage="new System.Configuration.ConfigurationCollectionAttribute itemType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.AddItemName" />
       <MemberSignature Language="VB.NET" Value="Public Property AddItemName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddItemName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AddItemName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.AddItemName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ClearItemsName" />
       <MemberSignature Language="VB.NET" Value="Public Property ClearItemsName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClearItemsName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClearItemsName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.ClearItemsName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); void set(System::Configuration::ConfigurationElementCollectionType value); };" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.CollectionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Configuration.ConfigurationCollectionAttribute.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.RemoveItemName" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoveItemName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoveItemName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RemoveItemName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.RemoveItemName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

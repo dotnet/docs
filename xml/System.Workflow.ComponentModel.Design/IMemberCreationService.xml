@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IMemberCreationService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMemberCreationService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMemberCreationService" />
+  <TypeSignature Language="F#" Value="type IMemberCreationService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateEvent(System.String,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateEvent (className As String, eventName As String, eventType As Type, attributes As AttributeInfo(), emitDependencyProperty As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateEvent(System::String ^ className, System::String ^ eventName, Type ^ eventType, cli::array &lt;System::Workflow::ComponentModel::Compiler::AttributeInfo ^&gt; ^ attributes, bool emitDependencyProperty);" />
+      <MemberSignature Language="F#" Value="abstract member CreateEvent : string * string * Type * System.Workflow.ComponentModel.Compiler.AttributeInfo[] * bool -&gt; unit" Usage="iMemberCreationService.CreateEvent (className, eventName, eventType, attributes, emitDependencyProperty)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateField(System.String,System.String,System.Type,System.Type[],System.CodeDom.MemberAttributes,System.CodeDom.CodeSnippetExpression,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateField (className As String, fieldName As String, fieldType As Type, genericParameterTypes As Type(), attributes As MemberAttributes, initializationExpression As CodeSnippetExpression, overwriteExisting As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateField(System::String ^ className, System::String ^ fieldName, Type ^ fieldType, cli::array &lt;Type ^&gt; ^ genericParameterTypes, System::CodeDom::MemberAttributes attributes, System::CodeDom::CodeSnippetExpression ^ initializationExpression, bool overwriteExisting);" />
+      <MemberSignature Language="F#" Value="abstract member CreateField : string * string * Type * Type[] * System.CodeDom.MemberAttributes * System.CodeDom.CodeSnippetExpression * bool -&gt; unit" Usage="iMemberCreationService.CreateField (className, fieldName, fieldType, genericParameterTypes, attributes, initializationExpression, overwriteExisting)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateProperty(System.String,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean,System.Boolean,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateProperty (className As String, propertyName As String, propertyType As Type, attributes As AttributeInfo(), emitDependencyProperty As Boolean, isMetaProperty As Boolean, isAttached As Boolean, ownerType As Type, isReadOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateProperty(System::String ^ className, System::String ^ propertyName, Type ^ propertyType, cli::array &lt;System::Workflow::ComponentModel::Compiler::AttributeInfo ^&gt; ^ attributes, bool emitDependencyProperty, bool isMetaProperty, bool isAttached, Type ^ ownerType, bool isReadOnly);" />
+      <MemberSignature Language="F#" Value="abstract member CreateProperty : string * string * Type * System.Workflow.ComponentModel.Compiler.AttributeInfo[] * bool * bool * bool * Type * bool -&gt; unit" Usage="iMemberCreationService.CreateProperty (className, propertyName, propertyType, attributes, emitDependencyProperty, isMetaProperty, isAttached, ownerType, isReadOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.RemoveEvent(System.String,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEvent (className As String, eventName As String, eventType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEvent(System::String ^ className, System::String ^ eventName, Type ^ eventType);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEvent : string * string * Type -&gt; unit" Usage="iMemberCreationService.RemoveEvent (className, eventName, eventType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.RemoveProperty(System.String,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveProperty (className As String, propertyName As String, propertyType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveProperty(System::String ^ className, System::String ^ propertyName, Type ^ propertyType);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveProperty : string * string * Type -&gt; unit" Usage="iMemberCreationService.RemoveProperty (className, propertyName, propertyType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.ShowCode" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowCode ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowCode();" />
+      <MemberSignature Language="F#" Value="abstract member ShowCode : unit -&gt; unit" Usage="iMemberCreationService.ShowCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowCode(class System.Workflow.ComponentModel.Activity activity, string methodName, class System.Type delegateType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.ShowCode(System.Workflow.ComponentModel.Activity,System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowCode(System::Workflow::ComponentModel::Activity ^ activity, System::String ^ methodName, Type ^ delegateType);" />
+      <MemberSignature Language="F#" Value="abstract member ShowCode : System.Workflow.ComponentModel.Activity * string * Type -&gt; unit" Usage="iMemberCreationService.ShowCode (activity, methodName, delegateType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateBaseType(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateBaseType (className As String, baseType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateBaseType(System::String ^ className, Type ^ baseType);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateBaseType : string * Type -&gt; unit" Usage="iMemberCreationService.UpdateBaseType (className, baseType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateEvent(System.String,System.String,System.Type,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateEvent (className As String, oldEventName As String, oldEventType As Type, newEventName As String, newEventType As Type, attributes As AttributeInfo(), emitDependencyProperty As Boolean, isMetaProperty As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateEvent(System::String ^ className, System::String ^ oldEventName, Type ^ oldEventType, System::String ^ newEventName, Type ^ newEventType, cli::array &lt;System::Workflow::ComponentModel::Compiler::AttributeInfo ^&gt; ^ attributes, bool emitDependencyProperty, bool isMetaProperty);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateEvent : string * string * Type * string * Type * System.Workflow.ComponentModel.Compiler.AttributeInfo[] * bool * bool -&gt; unit" Usage="iMemberCreationService.UpdateEvent (className, oldEventName, oldEventType, newEventName, newEventType, attributes, emitDependencyProperty, isMetaProperty)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateProperty(System.String,System.String,System.Type,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateProperty (className As String, oldPropertyName As String, oldPropertyType As Type, newPropertyName As String, newPropertyType As Type, attributes As AttributeInfo(), emitDependencyProperty As Boolean, isMetaProperty As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateProperty(System::String ^ className, System::String ^ oldPropertyName, Type ^ oldPropertyType, System::String ^ newPropertyName, Type ^ newPropertyType, cli::array &lt;System::Workflow::ComponentModel::Compiler::AttributeInfo ^&gt; ^ attributes, bool emitDependencyProperty, bool isMetaProperty);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateProperty : string * string * Type * string * Type * System.Workflow.ComponentModel.Compiler.AttributeInfo[] * bool * bool -&gt; unit" Usage="iMemberCreationService.UpdateProperty (className, oldPropertyName, oldPropertyType, newPropertyName, newPropertyType, attributes, emitDependencyProperty, isMetaProperty)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateTypeName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateTypeName (oldClassName As String, newClassName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateTypeName(System::String ^ oldClassName, System::String ^ newClassName);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTypeName : string * string -&gt; unit" Usage="iMemberCreationService.UpdateTypeName (oldClassName, newClassName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicEnumProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicEnumProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
+  <TypeSignature Language="F#" Value="type DynamicEnumProperty = class&#xA;    inherit BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.EnumProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property EnumProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EnumProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EnumProvider : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.EnumProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.ProviderSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderSettings As List(Of NameValuePair)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ ProviderSettings { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderSettings : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.ProviderSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

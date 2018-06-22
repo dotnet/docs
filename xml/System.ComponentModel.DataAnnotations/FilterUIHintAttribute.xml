@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FilterUIHintAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterUIHintAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type FilterUIHintAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterUIHint As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterUIHintAttribute(System::String ^ filterUIHint);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute : string -&gt; System.ComponentModel.DataAnnotations.FilterUIHintAttribute" Usage="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute filterUIHint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -140,6 +142,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterUIHint As String, presentationLayer As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterUIHintAttribute(System::String ^ filterUIHint, System::String ^ presentationLayer);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute : string * string -&gt; System.ComponentModel.DataAnnotations.FilterUIHintAttribute" Usage="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute (filterUIHint, presentationLayer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -168,6 +171,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.#ctor(System.String,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterUIHint As String, presentationLayer As String, ParamArray controlParameters As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterUIHintAttribute(System::String ^ filterUIHint, System::String ^ presentationLayer, ... cli::array &lt;System::Object ^&gt; ^ controlParameters);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute : string * string * obj[] -&gt; System.ComponentModel.DataAnnotations.FilterUIHintAttribute" Usage="new System.ComponentModel.DataAnnotations.FilterUIHintAttribute (filterUIHint, presentationLayer, controlParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -204,6 +208,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.ControlParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlParameters As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ ControlParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ComponentModel.DataAnnotations.FilterUIHintAttribute.ControlParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -230,6 +235,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="filterUIHintAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -261,6 +267,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterUIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterUIHint { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterUIHint : string" Usage="System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -287,6 +294,7 @@ End Class
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="filterUIHintAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -314,6 +322,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.PresentationLayer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresentationLayer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PresentationLayer { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresentationLayer : string" Usage="System.ComponentModel.DataAnnotations.FilterUIHintAttribute.PresentationLayer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -340,6 +349,7 @@ End Class
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.DataAnnotations.FilterUIHintAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

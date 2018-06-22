@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ServiceReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceReferenceCollection&#xA;Inherits Collection(Of ServiceReference)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceReferenceCollection : System::Collections::ObjectModel::Collection&lt;System::Web::UI::ServiceReference ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceReferenceCollection = class&#xA;    inherit Collection&lt;ServiceReference&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

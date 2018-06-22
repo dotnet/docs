@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityCollectionChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityCollectionChangeEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ActivityCollectionChangeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.#ctor(System.Int32,System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity},System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity},System.Object,System.Workflow.ComponentModel.ActivityCollectionChangeAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer, removedItems As ICollection(Of Activity), addedItems As ICollection(Of Activity), owner As Object, action As ActivityCollectionChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCollectionChangeEventArgs(int index, System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ removedItems, System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ addedItems, System::Object ^ owner, System::Workflow::ComponentModel::ActivityCollectionChangeAction action);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs : int * System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; * System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; * obj * System.Workflow.ComponentModel.ActivityCollectionChangeAction -&gt; System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" Usage="new System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs (index, removedItems, addedItems, owner, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.#ctor(System.Int32,System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.Activity,System.Object,System.Workflow.ComponentModel.ActivityCollectionChangeAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer, removedActivity As Activity, addedActivity As Activity, owner As Object, action As ActivityCollectionChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCollectionChangeEventArgs(int index, System::Workflow::ComponentModel::Activity ^ removedActivity, System::Workflow::ComponentModel::Activity ^ addedActivity, System::Object ^ owner, System::Workflow::ComponentModel::ActivityCollectionChangeAction action);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs : int * System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.Activity * obj * System.Workflow.ComponentModel.ActivityCollectionChangeAction -&gt; System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" Usage="new System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs (index, removedActivity, addedActivity, owner, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As ActivityCollectionChangeAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCollectionChangeAction Action { System::Workflow::ComponentModel::ActivityCollectionChangeAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Workflow.ComponentModel.ActivityCollectionChangeAction" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.AddedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddedItems As IList(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ AddedItems { System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddedItems : System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.AddedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Owner { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : obj" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.RemovedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedItems As IList(Of Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ RemovedItems { System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedItems : System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;" Usage="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.RemovedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

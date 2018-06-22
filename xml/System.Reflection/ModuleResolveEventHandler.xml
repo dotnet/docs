@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ModuleResolveEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ModuleResolveEventHandler(sender As Object, e As ResolveEventArgs) As Module " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Reflection::Module ^ ModuleResolveEventHandler(System::Object ^ sender, ResolveEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ModuleResolveEventHandler = delegate of obj * ResolveEventArgs -&gt; Module" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

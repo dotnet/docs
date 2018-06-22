@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationInfo" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlNotificationInfo" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlNotificationInfo" />
+  <TypeSignature Language="F#" Value="type SqlNotificationInfo = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.AlreadyChanged" />
       <MemberSignature Language="VB.NET" Value="AlreadyChanged" />
       <MemberSignature Language="C++ CLI" Value="AlreadyChanged" />
+      <MemberSignature Language="F#" Value="AlreadyChanged = -2" Usage="System.Data.SqlClient.SqlNotificationInfo.AlreadyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Alter" />
       <MemberSignature Language="VB.NET" Value="Alter" />
       <MemberSignature Language="C++ CLI" Value="Alter" />
+      <MemberSignature Language="F#" Value="Alter = 5" Usage="System.Data.SqlClient.SqlNotificationInfo.Alter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 3" Usage="System.Data.SqlClient.SqlNotificationInfo.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Drop" />
       <MemberSignature Language="VB.NET" Value="Drop" />
       <MemberSignature Language="C++ CLI" Value="Drop" />
+      <MemberSignature Language="F#" Value="Drop = 4" Usage="System.Data.SqlClient.SqlNotificationInfo.Drop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 7" Usage="System.Data.SqlClient.SqlNotificationInfo.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Expired" />
       <MemberSignature Language="VB.NET" Value="Expired" />
       <MemberSignature Language="C++ CLI" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 12" Usage="System.Data.SqlClient.SqlNotificationInfo.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Data.SqlClient.SqlNotificationInfo.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 9" Usage="System.Data.SqlClient.SqlNotificationInfo.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Isolation" />
       <MemberSignature Language="VB.NET" Value="Isolation" />
       <MemberSignature Language="C++ CLI" Value="Isolation" />
+      <MemberSignature Language="F#" Value="Isolation = 11" Usage="System.Data.SqlClient.SqlNotificationInfo.Isolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Merge" />
       <MemberSignature Language="VB.NET" Value="Merge" />
       <MemberSignature Language="C++ CLI" Value="Merge" />
+      <MemberSignature Language="F#" Value="Merge = 16" Usage="System.Data.SqlClient.SqlNotificationInfo.Merge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Options" />
       <MemberSignature Language="VB.NET" Value="Options" />
       <MemberSignature Language="C++ CLI" Value="Options" />
+      <MemberSignature Language="F#" Value="Options = 10" Usage="System.Data.SqlClient.SqlNotificationInfo.Options" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.PreviousFire" />
       <MemberSignature Language="VB.NET" Value="PreviousFire" />
       <MemberSignature Language="C++ CLI" Value="PreviousFire" />
+      <MemberSignature Language="F#" Value="PreviousFire = 14" Usage="System.Data.SqlClient.SqlNotificationInfo.PreviousFire" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -269,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Query" />
       <MemberSignature Language="VB.NET" Value="Query" />
       <MemberSignature Language="C++ CLI" Value="Query" />
+      <MemberSignature Language="F#" Value="Query = 8" Usage="System.Data.SqlClient.SqlNotificationInfo.Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -289,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Resource" />
       <MemberSignature Language="VB.NET" Value="Resource" />
       <MemberSignature Language="C++ CLI" Value="Resource" />
+      <MemberSignature Language="F#" Value="Resource = 13" Usage="System.Data.SqlClient.SqlNotificationInfo.Resource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -309,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Restart" />
       <MemberSignature Language="VB.NET" Value="Restart" />
       <MemberSignature Language="C++ CLI" Value="Restart" />
+      <MemberSignature Language="F#" Value="Restart = 6" Usage="System.Data.SqlClient.SqlNotificationInfo.Restart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -329,6 +345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.TemplateLimit" />
       <MemberSignature Language="VB.NET" Value="TemplateLimit" />
       <MemberSignature Language="C++ CLI" Value="TemplateLimit" />
+      <MemberSignature Language="F#" Value="TemplateLimit = 15" Usage="System.Data.SqlClient.SqlNotificationInfo.TemplateLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -349,6 +366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Truncate" />
       <MemberSignature Language="VB.NET" Value="Truncate" />
       <MemberSignature Language="C++ CLI" Value="Truncate" />
+      <MemberSignature Language="F#" Value="Truncate = 0" Usage="System.Data.SqlClient.SqlNotificationInfo.Truncate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -369,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Data.SqlClient.SqlNotificationInfo.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -389,6 +408,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 2" Usage="System.Data.SqlClient.SqlNotificationInfo.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

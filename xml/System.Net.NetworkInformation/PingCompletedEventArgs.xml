@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PingCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PingCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type PingCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingCompletedEventArgs.Reply" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reply As PingReply" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::NetworkInformation::PingReply ^ Reply { System::Net::NetworkInformation::PingReply ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reply : System.Net.NetworkInformation.PingReply" Usage="System.Net.NetworkInformation.PingCompletedEventArgs.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

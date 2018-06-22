@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Pair" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pair" />
   <TypeSignature Language="C++ CLI" Value="public ref class Pair sealed" />
+  <TypeSignature Language="F#" Value="type Pair = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Pair.#ctor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Object, y As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Pair(System::Object ^ x, System::Object ^ y);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Pair : obj * obj -&gt; System.Web.UI.Pair" Usage="new System.Web.UI.Pair (x, y)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Pair.First" />
       <MemberSignature Language="VB.NET" Value="Public First As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ First;" />
+      <MemberSignature Language="F#" Value="val mutable First : obj" Usage="System.Web.UI.Pair.First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Pair.Second" />
       <MemberSignature Language="VB.NET" Value="Public Second As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Second;" />
+      <MemberSignature Language="F#" Value="val mutable Second : obj" Usage="System.Web.UI.Pair.Second" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

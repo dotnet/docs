@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAPKCS1SignatureDeformatter" />
   <TypeSignature Language="VB.NET" Value="Public Class RSAPKCS1SignatureDeformatter&#xA;Inherits AsymmetricSignatureDeformatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSAPKCS1SignatureDeformatter : System::Security::Cryptography::AsymmetricSignatureDeformatter" />
+  <TypeSignature Language="F#" Value="type RSAPKCS1SignatureDeformatter = class&#xA;    inherit AsymmetricSignatureDeformatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAPKCS1SignatureDeformatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSAPKCS1SignatureDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.RSAPKCS1SignatureDeformatter" Usage="new System.Security.Cryptography.RSAPKCS1SignatureDeformatter key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.SetHashAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetHashAlgorithm (strName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetHashAlgorithm(System::String ^ strName);" />
+      <MemberSignature Language="F#" Value="override this.SetHashAlgorithm : string -&gt; unit" Usage="rSAPKCS1SignatureDeformatter.SetHashAlgorithm strName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="rSAPKCS1SignatureDeformatter.SetKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
+      <MemberSignature Language="F#" Value="override this.VerifySignature : byte[] * byte[] -&gt; bool" Usage="rSAPKCS1SignatureDeformatter.VerifySignature (rgbHash, rgbSignature)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

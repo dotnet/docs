@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewHitTestType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewHitTestType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewHitTestType" />
+  <TypeSignature Language="F#" Value="type DataGridViewHitTestType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.Cell" />
       <MemberSignature Language="VB.NET" Value="Cell" />
       <MemberSignature Language="C++ CLI" Value="Cell" />
+      <MemberSignature Language="F#" Value="Cell = 1" Usage="System.Windows.Forms.DataGridViewHitTestType.Cell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.ColumnHeader" />
       <MemberSignature Language="VB.NET" Value="ColumnHeader" />
       <MemberSignature Language="C++ CLI" Value="ColumnHeader" />
+      <MemberSignature Language="F#" Value="ColumnHeader = 2" Usage="System.Windows.Forms.DataGridViewHitTestType.ColumnHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.HorizontalScrollBar" />
       <MemberSignature Language="VB.NET" Value="HorizontalScrollBar" />
       <MemberSignature Language="C++ CLI" Value="HorizontalScrollBar" />
+      <MemberSignature Language="F#" Value="HorizontalScrollBar = 5" Usage="System.Windows.Forms.DataGridViewHitTestType.HorizontalScrollBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewHitTestType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.RowHeader" />
       <MemberSignature Language="VB.NET" Value="RowHeader" />
       <MemberSignature Language="C++ CLI" Value="RowHeader" />
+      <MemberSignature Language="F#" Value="RowHeader = 3" Usage="System.Windows.Forms.DataGridViewHitTestType.RowHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.TopLeftHeader" />
       <MemberSignature Language="VB.NET" Value="TopLeftHeader" />
       <MemberSignature Language="C++ CLI" Value="TopLeftHeader" />
+      <MemberSignature Language="F#" Value="TopLeftHeader = 4" Usage="System.Windows.Forms.DataGridViewHitTestType.TopLeftHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHitTestType.VerticalScrollBar" />
       <MemberSignature Language="VB.NET" Value="VerticalScrollBar" />
       <MemberSignature Language="C++ CLI" Value="VerticalScrollBar" />
+      <MemberSignature Language="F#" Value="VerticalScrollBar = 6" Usage="System.Windows.Forms.DataGridViewHitTestType.VerticalScrollBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

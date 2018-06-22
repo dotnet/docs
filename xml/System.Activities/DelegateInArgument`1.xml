@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateInArgument`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DelegateInArgument(Of T)&#xA;Inherits DelegateInArgument" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DelegateInArgument sealed : System::Activities::DelegateInArgument" />
+  <TypeSignature Language="F#" Value="type DelegateInArgument&lt;'T&gt; = class&#xA;    inherit DelegateInArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateInArgument(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Activities.DelegateInArgument&lt;'T&gt; : string -&gt; System.Activities.DelegateInArgument&lt;'T&gt;" Usage="new System.Activities.DelegateInArgument&lt;'T&gt; name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Get(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="delegateInArgument.Get context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Set(System.Activities.ActivityContext,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Activities.ActivityContext * 'T -&gt; unit" Usage="delegateInArgument.Set (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DelegateInArgument`1.TypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TypeCore As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ TypeCore { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.DelegateInArgument&lt;'T&gt;.TypeCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

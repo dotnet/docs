@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationFailedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub NavigationFailedEventHandler(sender As Object, e As NavigationFailedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void NavigationFailedEventHandler(System::Object ^ sender, NavigationFailedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type NavigationFailedEventHandler = delegate of obj * NavigationFailedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementObject" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementObject&#xA;Inherits ManagementBaseObject&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementObject : System::Management::ManagementBaseObject, ICloneable" />
+  <TypeSignature Language="F#" Value="type ManagementObject = class&#xA;    inherit ManagementBaseObject&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::Management::ManagementPath ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : System.Management.ManagementPath -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : string -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath, options As ObjectGetOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : System.Management.ManagementPath * System.Management.ObjectGetOptions -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject (path, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementObject(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, options As ObjectGetOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : string * System.Management.ObjectGetOptions -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject (path, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, path As ManagementPath, options As ObjectGetOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::Management::ManagementScope ^ scope, System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : System.Management.ManagementScope * System.Management.ManagementPath * System.Management.ObjectGetOptions -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject (scope, path, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String,System.String,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scopeString As String, pathString As String, options As ObjectGetOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObject(System::String ^ scopeString, System::String ^ pathString, System::Management::ObjectGetOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObject : string * string * System.Management.ObjectGetOptions -&gt; System.Management.ManagementObject" Usage="new System.Management.ManagementObject (scopeString, pathString, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.ClassPath" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClassPath As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ ClassPath { System::Management::ManagementPath ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassPath : System.Management.ManagementPath" Usage="System.Management.ManagementObject.ClassPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -382,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="managementObject.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -424,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (path As ManagementPath) As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ CopyTo(System::Management::ManagementPath ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementPath -&gt; System.Management.ManagementPath" Usage="managementObject.CopyTo path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -457,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (path As String) As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ CopyTo(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : string -&gt; System.Management.ManagementPath" Usage="managementObject.CopyTo path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -490,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (watcher As ManagementOperationObserver, path As ManagementPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Management::ManagementOperationObserver ^ watcher, System::Management::ManagementPath ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementOperationObserver * System.Management.ManagementPath -&gt; unit" Usage="managementObject.CopyTo (watcher, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -524,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (watcher As ManagementOperationObserver, path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Management::ManagementOperationObserver ^ watcher, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementOperationObserver * string -&gt; unit" Usage="managementObject.CopyTo (watcher, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -558,6 +572,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (path As ManagementPath, options As PutOptions) As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ CopyTo(System::Management::ManagementPath ^ path, System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementPath * System.Management.PutOptions -&gt; System.Management.ManagementPath" Usage="managementObject.CopyTo (path, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -593,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (path As String, options As PutOptions) As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ CopyTo(System::String ^ path, System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : string * System.Management.PutOptions -&gt; System.Management.ManagementPath" Usage="managementObject.CopyTo (path, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -628,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (watcher As ManagementOperationObserver, path As ManagementPath, options As PutOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Management::ManagementOperationObserver ^ watcher, System::Management::ManagementPath ^ path, System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementOperationObserver * System.Management.ManagementPath * System.Management.PutOptions -&gt; unit" Usage="managementObject.CopyTo (watcher, path, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -664,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (watcher As ManagementOperationObserver, path As String, options As PutOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Management::ManagementOperationObserver ^ watcher, System::String ^ path, System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Management.ManagementOperationObserver * string * System.Management.PutOptions -&gt; unit" Usage="managementObject.CopyTo (watcher, path, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -709,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="managementObject.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -738,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.DeleteOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (options As DeleteOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::Management::DeleteOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.Delete : System.Management.DeleteOptions -&gt; unit" Usage="managementObject.Delete options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -770,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.Delete : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObject.Delete watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -802,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (watcher As ManagementOperationObserver, options As DeleteOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::Management::ManagementOperationObserver ^ watcher, System::Management::DeleteOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.Delete : System.Management.ManagementOperationObserver * System.Management.DeleteOptions -&gt; unit" Usage="managementObject.Delete (watcher, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -836,6 +858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="managementObject.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -875,6 +898,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Get" />
       <MemberSignature Language="VB.NET" Value="Public Sub Get ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Get();" />
+      <MemberSignature Language="F#" Value="member this.Get : unit -&gt; unit" Usage="managementObject.Get " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -913,6 +937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Get (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Get(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.Get : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObject.Get watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -954,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetMethodParameters(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodParameters (methodName As String) As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementBaseObject ^ GetMethodParameters(System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="member this.GetMethodParameters : string -&gt; System.Management.ManagementBaseObject" Usage="managementObject.GetMethodParameters methodName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -988,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="managementObject.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1031,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelated () As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelated();" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1070,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelated (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelated(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObject.GetRelated watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1102,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelated (relatedClass As String) As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelated(System::String ^ relatedClass);" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : string -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelated relatedClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1143,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelated (watcher As ManagementOperationObserver, relatedClass As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelated(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass);" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : System.Management.ManagementOperationObserver * string -&gt; unit" Usage="managementObject.GetRelated (watcher, relatedClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1178,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelated (relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, classDefinitionsOnly As Boolean, options As EnumerationOptions) As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelated(System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, bool classDefinitionsOnly, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : string * string * string * string * string * string * bool * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelated (relatedClass, relationshipClass, relationshipQualifier, relatedQualifier, relatedRole, thisRole, classDefinitionsOnly, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1226,6 +1258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelated (watcher As ManagementOperationObserver, relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, classDefinitionsOnly As Boolean, options As EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelated(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, bool classDefinitionsOnly, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.GetRelated : System.Management.ManagementOperationObserver * string * string * string * string * string * string * bool * System.Management.EnumerationOptions -&gt; unit" Usage="managementObject.GetRelated (watcher, relatedClass, relationshipClass, relationshipQualifier, relatedQualifier, relatedRole, thisRole, classDefinitionsOnly, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1284,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationships () As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationships();" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelationships " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1315,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationships (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationships(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObject.GetRelationships watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1348,6 +1383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationships (relationshipClass As String) As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationships(System::String ^ relationshipClass);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : string -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelationships relationshipClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1382,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationships (watcher As ManagementOperationObserver, relationshipClass As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationships(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : System.Management.ManagementOperationObserver * string -&gt; unit" Usage="managementObject.GetRelationships (watcher, relationshipClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1417,6 +1454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationships (relationshipClass As String, relationshipQualifier As String, thisRole As String, classDefinitionsOnly As Boolean, options As EnumerationOptions) As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationships(System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, bool classDefinitionsOnly, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : string * string * string * bool * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementObject.GetRelationships (relationshipClass, relationshipQualifier, thisRole, classDefinitionsOnly, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1459,6 +1497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationships (watcher As ManagementOperationObserver, relationshipClass As String, relationshipQualifier As String, thisRole As String, classDefinitionsOnly As Boolean, options As EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationships(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, bool classDefinitionsOnly, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : System.Management.ManagementOperationObserver * string * string * string * bool * System.Management.EnumerationOptions -&gt; unit" Usage="managementObject.GetRelationships (watcher, relationshipClass, relationshipQualifier, thisRole, classDefinitionsOnly, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1511,6 +1550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeMethod (methodName As String, args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMethod(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.InvokeMethod : string * obj[] -&gt; obj" Usage="managementObject.InvokeMethod (methodName, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1555,6 +1595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeMethod (watcher As ManagementOperationObserver, methodName As String, args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeMethod(System::Management::ManagementOperationObserver ^ watcher, System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.InvokeMethod : System.Management.ManagementOperationObserver * string * obj[] -&gt; unit" Usage="managementObject.InvokeMethod (watcher, methodName, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1592,6 +1633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeMethod (methodName As String, inParameters As ManagementBaseObject, options As InvokeMethodOptions) As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementBaseObject ^ InvokeMethod(System::String ^ methodName, System::Management::ManagementBaseObject ^ inParameters, System::Management::InvokeMethodOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.InvokeMethod : string * System.Management.ManagementBaseObject * System.Management.InvokeMethodOptions -&gt; System.Management.ManagementBaseObject" Usage="managementObject.InvokeMethod (methodName, inParameters, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1637,6 +1679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeMethod (watcher As ManagementOperationObserver, methodName As String, inParameters As ManagementBaseObject, options As InvokeMethodOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeMethod(System::Management::ManagementOperationObserver ^ watcher, System::String ^ methodName, System::Management::ManagementBaseObject ^ inParameters, System::Management::InvokeMethodOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.InvokeMethod : System.Management.ManagementOperationObserver * string * System.Management.ManagementBaseObject * System.Management.InvokeMethodOptions -&gt; unit" Usage="managementObject.InvokeMethod (watcher, methodName, inParameters, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1676,6 +1719,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As ObjectGetOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ObjectGetOptions ^ Options { System::Management::ObjectGetOptions ^ get(); void set(System::Management::ObjectGetOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Management.ObjectGetOptions with get, set" Usage="System.Management.ManagementObject.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1714,6 +1758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Path As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); void set(System::Management::ManagementPath ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : System.Management.ManagementPath with get, set" Usage="System.Management.ManagementObject.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1763,6 +1808,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put" />
       <MemberSignature Language="VB.NET" Value="Public Function Put () As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ Put();" />
+      <MemberSignature Language="F#" Value="member this.Put : unit -&gt; System.Management.ManagementPath" Usage="managementObject.Put " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1793,6 +1839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Put (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Put(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.Put : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObject.Put watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1825,6 +1872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Put (options As PutOptions) As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementPath ^ Put(System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.Put : System.Management.PutOptions -&gt; System.Management.ManagementPath" Usage="managementObject.Put options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1858,6 +1906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Put (watcher As ManagementOperationObserver, options As PutOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Put(System::Management::ManagementOperationObserver ^ watcher, System::Management::PutOptions ^ options);" />
+      <MemberSignature Language="F#" Value="member this.Put : System.Management.ManagementOperationObserver * System.Management.PutOptions -&gt; unit" Usage="managementObject.Put (watcher, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1892,6 +1941,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As ManagementScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementScope ^ Scope { System::Management::ManagementScope ^ get(); void set(System::Management::ManagementScope ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Management.ManagementScope with get, set" Usage="System.Management.ManagementObject.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1932,6 +1982,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="managementObject.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

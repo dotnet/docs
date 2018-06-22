@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.FragmentNavigationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FragmentNavigationEventHandler(sender As Object, e As FragmentNavigationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FragmentNavigationEventHandler(System::Object ^ sender, FragmentNavigationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FragmentNavigationEventHandler = delegate of obj * FragmentNavigationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

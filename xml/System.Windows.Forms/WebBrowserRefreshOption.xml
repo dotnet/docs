@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserRefreshOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebBrowserRefreshOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebBrowserRefreshOption" />
+  <TypeSignature Language="F#" Value="type WebBrowserRefreshOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserRefreshOption.Completely" />
       <MemberSignature Language="VB.NET" Value="Completely" />
       <MemberSignature Language="C++ CLI" Value="Completely" />
+      <MemberSignature Language="F#" Value="Completely = 3" Usage="System.Windows.Forms.WebBrowserRefreshOption.Completely" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserRefreshOption.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 2" Usage="System.Windows.Forms.WebBrowserRefreshOption.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserRefreshOption.IfExpired" />
       <MemberSignature Language="VB.NET" Value="IfExpired" />
       <MemberSignature Language="C++ CLI" Value="IfExpired" />
+      <MemberSignature Language="F#" Value="IfExpired = 1" Usage="System.Windows.Forms.WebBrowserRefreshOption.IfExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserRefreshOption.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.WebBrowserRefreshOption.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCellColumnType" />
   <TypeSignature Language="VB.NET" Value="Public Enum LegendCellColumnType" />
   <TypeSignature Language="C++ CLI" Value="public enum class LegendCellColumnType" />
+  <TypeSignature Language="F#" Value="type LegendCellColumnType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendCellColumnType.SeriesSymbol" />
       <MemberSignature Language="VB.NET" Value="SeriesSymbol" />
       <MemberSignature Language="C++ CLI" Value="SeriesSymbol" />
+      <MemberSignature Language="F#" Value="SeriesSymbol = 1" Usage="System.Web.UI.DataVisualization.Charting.LegendCellColumnType.SeriesSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendCellColumnType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Web.UI.DataVisualization.Charting.LegendCellColumnType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

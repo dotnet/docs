@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateStoreData" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionStateStoreData" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionStateStoreData" />
+  <TypeSignature Language="F#" Value="type SessionStateStoreData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreData.#ctor(System.Web.SessionState.ISessionStateItemCollection,System.Web.HttpStaticObjectsCollection,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sessionItems As ISessionStateItemCollection, staticObjects As HttpStaticObjectsCollection, timeout As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionStateStoreData(System::Web::SessionState::ISessionStateItemCollection ^ sessionItems, System::Web::HttpStaticObjectsCollection ^ staticObjects, int timeout);" />
+      <MemberSignature Language="F#" Value="new System.Web.SessionState.SessionStateStoreData : System.Web.SessionState.ISessionStateItemCollection * System.Web.HttpStaticObjectsCollection * int -&gt; System.Web.SessionState.SessionStateStoreData" Usage="new System.Web.SessionState.SessionStateStoreData (sessionItems, staticObjects, timeout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As ISessionStateItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::SessionState::ISessionStateItemCollection ^ Items { System::Web::SessionState::ISessionStateItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Web.SessionState.ISessionStateItemCollection" Usage="System.Web.SessionState.SessionStateStoreData.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.StaticObjects" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StaticObjects As HttpStaticObjectsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpStaticObjectsCollection ^ StaticObjects { System::Web::HttpStaticObjectsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StaticObjects : System.Web.HttpStaticObjectsCollection" Usage="System.Web.SessionState.SessionStateStoreData.StaticObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Web.SessionState.SessionStateStoreData.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

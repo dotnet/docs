@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.IWebObjectFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebObjectFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebObjectFactory" />
+  <TypeSignature Language="F#" Value="type IWebObjectFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebObjectFactory.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : unit -&gt; obj" Usage="iWebObjectFactory.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

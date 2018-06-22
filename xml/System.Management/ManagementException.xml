@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementException" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementException : SystemException" />
+  <TypeSignature Language="F#" Value="type ManagementException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementException : string -&gt; System.Management.ManagementException" Usage="new System.Management.ManagementException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Management.ManagementException" Usage="new System.Management.ManagementException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementException : string * Exception -&gt; System.Management.ManagementException" Usage="new System.Management.ManagementException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As ManagementStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementStatus ErrorCode { System::Management::ManagementStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : System.Management.ManagementStatus" Usage="System.Management.ManagementException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementException.ErrorInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorInformation As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ ErrorInformation { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorInformation : System.Management.ManagementBaseObject" Usage="System.Management.ManagementException.ErrorInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="managementException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

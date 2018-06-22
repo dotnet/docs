@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounterManager&#xA;Implements ICollectData" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterManager sealed : System::Diagnostics::ICollectData" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterManager = class&#xA;    interface ICollectData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

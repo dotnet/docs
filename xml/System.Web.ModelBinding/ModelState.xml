@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelState" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelState" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelState" />
+  <TypeSignature Language="F#" Value="type ModelState = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelState.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ModelErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelErrorCollection ^ Errors { System::Web::ModelBinding::ModelErrorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Web.ModelBinding.ModelErrorCollection" Usage="System.Web.ModelBinding.ModelState.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelState.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As ValueProviderResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ValueProviderResult ^ Value { System::Web::ModelBinding::ValueProviderResult ^ get(); void set(System::Web::ModelBinding::ValueProviderResult ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Web.ModelBinding.ValueProviderResult with get, set" Usage="System.Web.ModelBinding.ModelState.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

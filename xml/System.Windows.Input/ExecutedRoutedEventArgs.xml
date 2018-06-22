@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ExecutedRoutedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExecutedRoutedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExecutedRoutedEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ExecutedRoutedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ExecutedRoutedEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand" Usage="System.Windows.Input.ExecutedRoutedEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, target As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="executedRoutedEventArgs.InvokeEventHandler (genericHandler, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ExecutedRoutedEventArgs.Parameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parameter { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameter : obj" Usage="System.Windows.Input.ExecutedRoutedEventArgs.Parameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

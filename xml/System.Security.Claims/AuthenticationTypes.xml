@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.AuthenticationTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationTypes" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationTypes abstract sealed" />
+  <TypeSignature Language="F#" Value="type AuthenticationTypes = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Basic" />
       <MemberSignature Language="VB.NET" Value="Public Const Basic As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Basic;" />
+      <MemberSignature Language="F#" Value="val mutable Basic : string" Usage="System.Security.Claims.AuthenticationTypes.Basic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Federation" />
       <MemberSignature Language="VB.NET" Value="Public Const Federation As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Federation;" />
+      <MemberSignature Language="F#" Value="val mutable Federation : string" Usage="System.Security.Claims.AuthenticationTypes.Federation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Kerberos" />
       <MemberSignature Language="VB.NET" Value="Public Const Kerberos As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Kerberos;" />
+      <MemberSignature Language="F#" Value="val mutable Kerberos : string" Usage="System.Security.Claims.AuthenticationTypes.Kerberos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Negotiate" />
       <MemberSignature Language="VB.NET" Value="Public Const Negotiate As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Negotiate;" />
+      <MemberSignature Language="F#" Value="val mutable Negotiate : string" Usage="System.Security.Claims.AuthenticationTypes.Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Password" />
       <MemberSignature Language="VB.NET" Value="Public Const Password As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Password;" />
+      <MemberSignature Language="F#" Value="val mutable Password : string" Usage="System.Security.Claims.AuthenticationTypes.Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Signature" />
       <MemberSignature Language="VB.NET" Value="Public Const Signature As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Signature;" />
+      <MemberSignature Language="F#" Value="val mutable Signature : string" Usage="System.Security.Claims.AuthenticationTypes.Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Windows" />
       <MemberSignature Language="VB.NET" Value="Public Const Windows As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Windows;" />
+      <MemberSignature Language="F#" Value="val mutable Windows : string" Usage="System.Security.Claims.AuthenticationTypes.Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.X509" />
       <MemberSignature Language="VB.NET" Value="Public Const X509 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ X509;" />
+      <MemberSignature Language="F#" Value="val mutable X509 : string" Usage="System.Security.Claims.AuthenticationTypes.X509" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

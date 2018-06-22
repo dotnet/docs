@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfileWorkflowElement&#xA;Inherits TrackingConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileWorkflowElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProfileWorkflowElement = class&#xA;    inherit TrackingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityDefinitionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityDefinitionId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityDefinitionId : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityScheduledQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityScheduledQueries As ActivityScheduledQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::ActivityScheduledQueryElementCollection ^ ActivityScheduledQueries { System::ServiceModel::Activities::Tracking::Configuration::ActivityScheduledQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityScheduledQueries : System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityScheduledQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityStateQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityStateQueries As ActivityStateQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::ActivityStateQueryElementCollection ^ ActivityStateQueries { System::ServiceModel::Activities::Tracking::Configuration::ActivityStateQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityStateQueries : System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityStateQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.BookmarkResumptionQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BookmarkResumptionQueries As BookmarkResumptionQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::BookmarkResumptionQueryElementCollection ^ BookmarkResumptionQueries { System::ServiceModel::Activities::Tracking::Configuration::BookmarkResumptionQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BookmarkResumptionQueries : System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.BookmarkResumptionQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.CancelRequestedQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelRequestedQueries As CancelRequestedQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::CancelRequestedQueryElementCollection ^ CancelRequestedQueries { System::ServiceModel::Activities::Tracking::Configuration::CancelRequestedQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancelRequestedQueries : System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.CancelRequestedQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.CustomTrackingQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomTrackingQueries As CustomTrackingQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::CustomTrackingQueryElementCollection ^ CustomTrackingQueries { System::ServiceModel::Activities::Tracking::Configuration::CustomTrackingQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomTrackingQueries : System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.CustomTrackingQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ElementKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ElementKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementKey : obj" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ElementKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.FaultPropagationQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FaultPropagationQueries As FaultPropagationQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::FaultPropagationQueryElementCollection ^ FaultPropagationQueries { System::ServiceModel::Activities::Tracking::Configuration::FaultPropagationQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FaultPropagationQueries : System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.FaultPropagationQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.StateMachineStateQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateMachineStateQueries As StateMachineStateQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::StateMachineStateQueryElementCollection ^ StateMachineStateQueries { System::ServiceModel::Activities::Tracking::Configuration::StateMachineStateQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateMachineStateQueries : System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.StateMachineStateQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.WorkflowInstanceQueries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowInstanceQueries As WorkflowInstanceQueryElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::WorkflowInstanceQueryElementCollection ^ WorkflowInstanceQueries { System::ServiceModel::Activities::Tracking::Configuration::WorkflowInstanceQueryElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceQueries : System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.WorkflowInstanceQueries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

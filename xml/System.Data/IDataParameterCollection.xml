@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDataParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataParameterCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataParameterCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type IDataParameterCollection = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (parameterName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool" Usage="iDataParameterCollection.Contains parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (parameterName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int" Usage="iDataParameterCollection.IndexOf parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameterCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(parameterName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ parameterName); void set(System::String ^ parameterName, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.IDataParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (parameterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : string -&gt; unit" Usage="iDataParameterCollection.RemoveAt parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

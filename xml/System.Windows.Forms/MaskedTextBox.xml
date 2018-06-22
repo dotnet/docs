@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskedTextBox" />
   <TypeSignature Language="VB.NET" Value="Public Class MaskedTextBox&#xA;Inherits TextBoxBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MaskedTextBox : System::Windows::Forms::TextBoxBase" />
+  <TypeSignature Language="F#" Value="type MaskedTextBox = class&#xA;    inherit TextBoxBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -143,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.MaskedTextProvider maskedTextProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.#ctor(System.ComponentModel.MaskedTextProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextBox(System::ComponentModel::MaskedTextProvider ^ maskedTextProvider);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.MaskedTextBox : System.ComponentModel.MaskedTextProvider -&gt; System.Windows.Forms.MaskedTextBox" Usage="new System.Windows.Forms.MaskedTextBox maskedTextProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextBox(System::String ^ mask);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.MaskedTextBox : string -&gt; System.Windows.Forms.MaskedTextBox" Usage="new System.Windows.Forms.MaskedTextBox mask" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -210,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AcceptsTab" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptsTab As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptsTab { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptsTab : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.AcceptsTab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -252,6 +256,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.AcceptsTabChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AcceptsTabChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AcceptsTabChanged;" />
+      <MemberSignature Language="F#" Value="member this.AcceptsTabChanged : EventHandler " Usage="member this.AcceptsTabChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -292,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPromptAsInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPromptAsInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPromptAsInput : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.AllowPromptAsInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -330,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AsciiOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property AsciiOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AsciiOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AsciiOnly : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.AsciiOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -368,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.BeepOnError" />
       <MemberSignature Language="VB.NET" Value="Public Property BeepOnError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BeepOnError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BeepOnError : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.BeepOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CanUndo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanUndo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUndo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanUndo : bool" Usage="System.Windows.Forms.MaskedTextBox.CanUndo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -444,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ClearUndo" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearUndo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearUndo();" />
+      <MemberSignature Language="F#" Value="override this.ClearUndo : unit -&gt; unit" Usage="maskedTextBox.ClearUndo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.CreateHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="maskedTextBox.CreateHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.MaskedTextBox.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -524,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Forms.MaskedTextBox.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -552,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property CutCopyMaskFormat As MaskFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MaskFormat CutCopyMaskFormat { System::Windows::Forms::MaskFormat get(); void set(System::Windows::Forms::MaskFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.CutCopyMaskFormat : System.Windows.Forms.MaskFormat with get, set" Usage="System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.FormatProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property FormatProvider As IFormatProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatProvider { IFormatProvider ^ get(); void set(IFormatProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormatProvider : IFormatProvider with get, set" Usage="System.Windows.Forms.MaskedTextBox.FormatProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -633,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetCharFromPosition(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharFromPosition (pt As Point) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetCharFromPosition(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="override this.GetCharFromPosition : System.Drawing.Point -&gt; char" Usage="maskedTextBox.GetCharFromPosition pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -658,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharIndexFromPosition (pt As Point) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharIndexFromPosition(System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="override this.GetCharIndexFromPosition : System.Drawing.Point -&gt; int" Usage="maskedTextBox.GetCharIndexFromPosition pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -683,6 +700,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexFromLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstCharIndexFromLine (lineNumber As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetFirstCharIndexFromLine(int lineNumber);" />
+      <MemberSignature Language="F#" Value="override this.GetFirstCharIndexFromLine : int -&gt; int" Usage="maskedTextBox.GetFirstCharIndexFromLine lineNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -722,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexOfCurrentLine" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstCharIndexOfCurrentLine () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetFirstCharIndexOfCurrentLine();" />
+      <MemberSignature Language="F#" Value="override this.GetFirstCharIndexOfCurrentLine : unit -&gt; int" Usage="maskedTextBox.GetFirstCharIndexOfCurrentLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -758,6 +777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetLineFromCharIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLineFromCharIndex (index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLineFromCharIndex(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetLineFromCharIndex : int -&gt; int" Usage="maskedTextBox.GetLineFromCharIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -797,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetPositionFromCharIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPositionFromCharIndex (index As Integer) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Point GetPositionFromCharIndex(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetPositionFromCharIndex : int -&gt; System.Drawing.Point" Usage="maskedTextBox.GetPositionFromCharIndex index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -822,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave" />
       <MemberSignature Language="VB.NET" Value="Public Property HidePromptOnLeave As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HidePromptOnLeave { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HidePromptOnLeave : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.HidePromptOnLeave" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -855,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.InsertKeyMode" />
       <MemberSignature Language="VB.NET" Value="Public Property InsertKeyMode As InsertKeyMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::InsertKeyMode InsertKeyMode { System::Windows::Forms::InsertKeyMode get(); void set(System::Windows::Forms::InsertKeyMode value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertKeyMode : System.Windows.Forms.InsertKeyMode with get, set" Usage="System.Windows.Forms.MaskedTextBox.InsertKeyMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -894,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.IsInputKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="maskedTextBox.IsInputKey keyData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -918,6 +942,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.IsOverwriteMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOverwriteMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOverwriteMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOverwriteMode : bool" Usage="System.Windows.Forms.MaskedTextBox.IsOverwriteMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -955,6 +980,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event IsOverwriteModeChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ IsOverwriteModeChanged;" />
+      <MemberSignature Language="F#" Value="member this.IsOverwriteModeChanged : EventHandler " Usage="member this.IsOverwriteModeChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -995,6 +1021,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Lines" />
       <MemberSignature Language="VB.NET" Value="Public Property Lines As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Lines { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Lines : string[] with get, set" Usage="System.Windows.Forms.MaskedTextBox.Lines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1036,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Mask" />
       <MemberSignature Language="VB.NET" Value="Public Property Mask As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Mask { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Mask : string with get, set" Usage="System.Windows.Forms.MaskedTextBox.Mask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1128,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MaskChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MaskChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MaskChanged;" />
+      <MemberSignature Language="F#" Value="member this.MaskChanged : EventHandler " Usage="member this.MaskChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1167,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaskCompleted : bool" Usage="System.Windows.Forms.MaskedTextBox.MaskCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1204,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskedTextProvider As MaskedTextProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MaskedTextProvider ^ MaskedTextProvider { System::ComponentModel::MaskedTextProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaskedTextProvider : System.ComponentModel.MaskedTextProvider" Usage="System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1243,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskFull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskFull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskFull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaskFull : bool" Usage="System.Windows.Forms.MaskedTextBox.MaskFull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1289,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MaskInputRejected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MaskInputRejected As MaskInputRejectedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MaskInputRejectedEventHandler ^ MaskInputRejected;" />
+      <MemberSignature Language="F#" Value="member this.MaskInputRejected : System.Windows.Forms.MaskInputRejectedEventHandler " Usage="member this.MaskInputRejected : System.Windows.Forms.MaskInputRejectedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1347,6 +1380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MaxLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Windows.Forms.MaskedTextBox.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1387,6 +1421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Multiline" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Multiline As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Multiline { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Multiline : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.Multiline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1428,6 +1463,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MultilineChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MultilineChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MultilineChanged;" />
+      <MemberSignature Language="F#" Value="member this.MultilineChanged : EventHandler " Usage="member this.MultilineChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1467,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1490,6 +1527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="maskedTextBox.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1513,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnIsOverwriteModeChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIsOverwriteModeChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIsOverwriteModeChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnIsOverwriteModeChanged : EventArgs -&gt; unit&#xA;override this.OnIsOverwriteModeChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnIsOverwriteModeChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1555,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="maskedTextBox.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1579,6 +1619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyPress : System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="maskedTextBox.OnKeyPress e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1603,6 +1644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="maskedTextBox.OnKeyUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1627,6 +1669,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnMaskChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMaskChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMaskChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMaskChanged : EventArgs -&gt; unit&#xA;override this.OnMaskChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnMaskChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1669,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnMultilineChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMultilineChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMultilineChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMultilineChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnMultilineChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1706,6 +1750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnTextAlignChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextAlignChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextAlignChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTextAlignChanged : EventArgs -&gt; unit&#xA;override this.OnTextAlignChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnTextAlignChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1743,6 +1788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnTextChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="maskedTextBox.OnTextChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1780,6 +1826,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnValidating(System.ComponentModel.CancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidating (e As CancelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidating(System::ComponentModel::CancelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnValidating : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="maskedTextBox.OnValidating e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1829,6 +1876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.PasswordChar" />
       <MemberSignature Language="VB.NET" Value="Public Property PasswordChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PasswordChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordChar : char with get, set" Usage="System.Windows.Forms.MaskedTextBox.PasswordChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1874,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="maskedTextBox.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1902,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ProcessKeyMessage(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessKeyMessage (ByRef m As Message) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessKeyMessage(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.ProcessKeyMessage :  -&gt; bool" Usage="maskedTextBox.ProcessKeyMessage m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1934,6 +1984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.PromptChar" />
       <MemberSignature Language="VB.NET" Value="Public Property PromptChar As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PromptChar { char get(); void set(char value); };" />
+      <MemberSignature Language="F#" Value="member this.PromptChar : char with get, set" Usage="System.Windows.Forms.MaskedTextBox.PromptChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1981,6 +2032,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2002,6 +2054,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.RejectInputOnFirstFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property RejectInputOnFirstFailure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RejectInputOnFirstFailure { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RejectInputOnFirstFailure : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.RejectInputOnFirstFailure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2051,6 +2104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ResetOnPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnPrompt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnPrompt { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnPrompt : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.ResetOnPrompt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2097,6 +2151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ResetOnSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnSpace As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnSpace { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnSpace : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.ResetOnSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2133,6 +2188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ScrollToCaret" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToCaret ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToCaret();" />
+      <MemberSignature Language="F#" Value="override this.ScrollToCaret : unit -&gt; unit" Usage="maskedTextBox.ScrollToCaret " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2166,6 +2222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.SelectedText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedText : string with get, set" Usage="System.Windows.Forms.MaskedTextBox.SelectedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2198,6 +2255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.SkipLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipLiterals As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipLiterals { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipLiterals : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.SkipLiterals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2244,6 +2302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.MaskedTextBox.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2310,6 +2369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlign As HorizontalAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment TextAlign { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlign : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.MaskedTextBox.TextAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2350,6 +2410,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.TextAlignChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextAlignChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextAlignChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextAlignChanged : EventHandler " Usage="member this.TextAlignChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2388,6 +2449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TextLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TextLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextLength : int" Usage="System.Windows.Forms.MaskedTextBox.TextLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2413,6 +2475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextMaskFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TextMaskFormat As MaskFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MaskFormat TextMaskFormat { System::Windows::Forms::MaskFormat get(); void set(System::Windows::Forms::MaskFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.TextMaskFormat : System.Windows.Forms.MaskFormat with get, set" Usage="System.Windows.Forms.MaskedTextBox.TextMaskFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2457,6 +2520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="maskedTextBox.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2493,6 +2557,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TypeValidationCompleted As TypeValidationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TypeValidationEventHandler ^ TypeValidationCompleted;" />
+      <MemberSignature Language="F#" Value="member this.TypeValidationCompleted : System.Windows.Forms.TypeValidationEventHandler " Usage="member this.TypeValidationCompleted : System.Windows.Forms.TypeValidationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2549,6 +2614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.Undo" />
       <MemberSignature Language="VB.NET" Value="Public Sub Undo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Undo();" />
+      <MemberSignature Language="F#" Value="override this.Undo : unit -&gt; unit" Usage="maskedTextBox.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2583,6 +2649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSystemPasswordChar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSystemPasswordChar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseSystemPasswordChar : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2626,6 +2693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ValidateText" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateText () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ValidateText();" />
+      <MemberSignature Language="F#" Value="member this.ValidateText : unit -&gt; obj" Usage="maskedTextBox.ValidateText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2661,6 +2729,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatingType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValidatingType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatingType : Type with get, set" Usage="System.Windows.Forms.MaskedTextBox.ValidatingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2725,6 +2794,7 @@ maskedTextBox1.Mask = "99/99/9999";
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="maskedTextBox.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2749,6 +2819,7 @@ maskedTextBox1.Mask = "99/99/9999";
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.WordWrap" />
       <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WordWrap { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : bool with get, set" Usage="System.Windows.Forms.MaskedTextBox.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

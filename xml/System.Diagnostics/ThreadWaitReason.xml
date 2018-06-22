@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ThreadWaitReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadWaitReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThreadWaitReason" />
+  <TypeSignature Language="F#" Value="type ThreadWaitReason = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.EventPairHigh" />
       <MemberSignature Language="VB.NET" Value="EventPairHigh" />
       <MemberSignature Language="C++ CLI" Value="EventPairHigh" />
+      <MemberSignature Language="F#" Value="EventPairHigh = 7" Usage="System.Diagnostics.ThreadWaitReason.EventPairHigh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.EventPairLow" />
       <MemberSignature Language="VB.NET" Value="EventPairLow" />
       <MemberSignature Language="C++ CLI" Value="EventPairLow" />
+      <MemberSignature Language="F#" Value="EventPairLow = 8" Usage="System.Diagnostics.ThreadWaitReason.EventPairLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.ExecutionDelay" />
       <MemberSignature Language="VB.NET" Value="ExecutionDelay" />
       <MemberSignature Language="C++ CLI" Value="ExecutionDelay" />
+      <MemberSignature Language="F#" Value="ExecutionDelay = 4" Usage="System.Diagnostics.ThreadWaitReason.ExecutionDelay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Executive" />
       <MemberSignature Language="VB.NET" Value="Executive" />
       <MemberSignature Language="C++ CLI" Value="Executive" />
+      <MemberSignature Language="F#" Value="Executive = 0" Usage="System.Diagnostics.ThreadWaitReason.Executive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.FreePage" />
       <MemberSignature Language="VB.NET" Value="FreePage" />
       <MemberSignature Language="C++ CLI" Value="FreePage" />
+      <MemberSignature Language="F#" Value="FreePage = 1" Usage="System.Diagnostics.ThreadWaitReason.FreePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.LpcReceive" />
       <MemberSignature Language="VB.NET" Value="LpcReceive" />
       <MemberSignature Language="C++ CLI" Value="LpcReceive" />
+      <MemberSignature Language="F#" Value="LpcReceive = 9" Usage="System.Diagnostics.ThreadWaitReason.LpcReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.LpcReply" />
       <MemberSignature Language="VB.NET" Value="LpcReply" />
       <MemberSignature Language="C++ CLI" Value="LpcReply" />
+      <MemberSignature Language="F#" Value="LpcReply = 10" Usage="System.Diagnostics.ThreadWaitReason.LpcReply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.PageIn" />
       <MemberSignature Language="VB.NET" Value="PageIn" />
       <MemberSignature Language="C++ CLI" Value="PageIn" />
+      <MemberSignature Language="F#" Value="PageIn = 2" Usage="System.Diagnostics.ThreadWaitReason.PageIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.PageOut" />
       <MemberSignature Language="VB.NET" Value="PageOut" />
       <MemberSignature Language="C++ CLI" Value="PageOut" />
+      <MemberSignature Language="F#" Value="PageOut = 12" Usage="System.Diagnostics.ThreadWaitReason.PageOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Suspended" />
       <MemberSignature Language="VB.NET" Value="Suspended" />
       <MemberSignature Language="C++ CLI" Value="Suspended" />
+      <MemberSignature Language="F#" Value="Suspended = 5" Usage="System.Diagnostics.ThreadWaitReason.Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -341,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.SystemAllocation" />
       <MemberSignature Language="VB.NET" Value="SystemAllocation" />
       <MemberSignature Language="C++ CLI" Value="SystemAllocation" />
+      <MemberSignature Language="F#" Value="SystemAllocation = 3" Usage="System.Diagnostics.ThreadWaitReason.SystemAllocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 13" Usage="System.Diagnostics.ThreadWaitReason.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.UserRequest" />
       <MemberSignature Language="VB.NET" Value="UserRequest" />
       <MemberSignature Language="C++ CLI" Value="UserRequest" />
+      <MemberSignature Language="F#" Value="UserRequest = 6" Usage="System.Diagnostics.ThreadWaitReason.UserRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -431,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadWaitReason.VirtualMemory" />
       <MemberSignature Language="VB.NET" Value="VirtualMemory" />
       <MemberSignature Language="C++ CLI" Value="VirtualMemory" />
+      <MemberSignature Language="F#" Value="VirtualMemory = 11" Usage="System.Diagnostics.ThreadWaitReason.VirtualMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

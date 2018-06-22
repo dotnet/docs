@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.SelectiveScrollingGrid" />
   <TypeSignature Language="VB.NET" Value="Public Class SelectiveScrollingGrid&#xA;Inherits Grid" />
   <TypeSignature Language="C++ CLI" Value="public ref class SelectiveScrollingGrid : System::Windows::Controls::Grid" />
+  <TypeSignature Language="F#" Value="type SelectiveScrollingGrid = class&#xA;    inherit Grid" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.SelectiveScrollingGrid.GetSelectiveScrollingOrientation(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSelectiveScrollingOrientation (obj As DependencyObject) As SelectiveScrollingOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::SelectiveScrollingOrientation GetSelectiveScrollingOrientation(System::Windows::DependencyObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetSelectiveScrollingOrientation : System.Windows.DependencyObject -&gt; System.Windows.Controls.SelectiveScrollingOrientation" Usage="System.Windows.Controls.Primitives.SelectiveScrollingGrid.GetSelectiveScrollingOrientation obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value="see GetSelectiveScrollingOrientation, and SetSelectiveScrollingOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.SelectiveScrollingGrid.SelectiveScrollingOrientation" />
       <MemberSignature Language="VB.NET" Value="see GetSelectiveScrollingOrientation, and SetSelectiveScrollingOrientation" />
+      <MemberSignature Language="F#" Value="see GetSelectiveScrollingOrientation, and SetSelectiveScrollingOrientation" Usage="see GetSelectiveScrollingOrientation, and SetSelectiveScrollingOrientation" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.SelectiveScrollingGrid.SelectiveScrollingOrientationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectiveScrollingOrientationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectiveScrollingOrientationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectiveScrollingOrientationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.SelectiveScrollingGrid.SelectiveScrollingOrientationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.SelectiveScrollingGrid.SetSelectiveScrollingOrientation(System.Windows.DependencyObject,System.Windows.Controls.SelectiveScrollingOrientation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSelectiveScrollingOrientation (obj As DependencyObject, value As SelectiveScrollingOrientation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSelectiveScrollingOrientation(System::Windows::DependencyObject ^ obj, System::Windows::Controls::SelectiveScrollingOrientation value);" />
+      <MemberSignature Language="F#" Value="static member SetSelectiveScrollingOrientation : System.Windows.DependencyObject * System.Windows.Controls.SelectiveScrollingOrientation -&gt; unit" Usage="System.Windows.Controls.Primitives.SelectiveScrollingGrid.SetSelectiveScrollingOrientation (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

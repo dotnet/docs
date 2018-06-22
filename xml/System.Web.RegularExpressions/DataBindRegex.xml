@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.DataBindRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class DataBindRegex&#xA;Inherits Regex" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBindRegex : System::Text::RegularExpressions::Regex" />
+  <TypeSignature Language="F#" Value="type DataBindRegex = class&#xA;    inherit Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.DataBindRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBindRegex(TimeSpan A_1);" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.DataBindRegex : TimeSpan -&gt; System.Web.RegularExpressions.DataBindRegex" Usage="new System.Web.RegularExpressions.DataBindRegex A_1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.CmsRecipient" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CmsRecipient" />
   <TypeSignature Language="C++ CLI" Value="public ref class CmsRecipient sealed" />
+  <TypeSignature Language="F#" Value="type CmsRecipient = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsRecipient(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsRecipient : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.Pkcs.CmsRecipient" Usage="new System.Security.Cryptography.Pkcs.CmsRecipient certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (recipientIdentifierType As SubjectIdentifierType, certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CmsRecipient(System::Security::Cryptography::Pkcs::SubjectIdentifierType recipientIdentifierType, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.CmsRecipient : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.Pkcs.CmsRecipient" Usage="new System.Security.Cryptography.Pkcs.CmsRecipient (recipientIdentifierType, certificate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsRecipient.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509Certificate2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Certificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="System.Security.Cryptography.Pkcs.CmsRecipient.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecipientIdentifierType As SubjectIdentifierType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SubjectIdentifierType RecipientIdentifierType { System::Security::Cryptography::Pkcs::SubjectIdentifierType get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientIdentifierType : System.Security.Cryptography.Pkcs.SubjectIdentifierType" Usage="System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

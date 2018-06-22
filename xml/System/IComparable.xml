@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IComparable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComparable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComparable" />
+  <TypeSignature Language="F#" Value="type IComparable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IComparable.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int" Usage="iComparable.CompareTo obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

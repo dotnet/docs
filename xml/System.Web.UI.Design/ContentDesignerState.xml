@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ContentDesignerState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContentDesignerState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContentDesignerState" />
+  <TypeSignature Language="F#" Value="type ContentDesignerState = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowDefaultContent" />
       <MemberSignature Language="VB.NET" Value="ShowDefaultContent" />
       <MemberSignature Language="C++ CLI" Value="ShowDefaultContent" />
+      <MemberSignature Language="F#" Value="ShowDefaultContent = 0" Usage="System.Web.UI.Design.ContentDesignerState.ShowDefaultContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowUserContent" />
       <MemberSignature Language="VB.NET" Value="ShowUserContent" />
       <MemberSignature Language="C++ CLI" Value="ShowUserContent" />
+      <MemberSignature Language="F#" Value="ShowUserContent = 1" Usage="System.Web.UI.Design.ContentDesignerState.ShowUserContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

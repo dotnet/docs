@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteMethodData" />
   <TypeSignature Language="VB.NET" Value="Public Structure RemoteMethodData" />
   <TypeSignature Language="C++ CLI" Value="public value class RemoteMethodData" />
+  <TypeSignature Language="F#" Value="type RemoteMethodData = struct" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteMethodData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Attributes As MethodAttributes " />
       <MemberSignature Language="C++ CLI" Value="public: System::Reflection::MethodAttributes Attributes;" />
+      <MemberSignature Language="F#" Value="val mutable Attributes : System.Reflection.MethodAttributes" Usage="System.AddIn.Contract.Automation.RemoteMethodData.Attributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteMethodData.MemberData" />
       <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
+      <MemberSignature Language="F#" Value="val mutable MemberData : System.AddIn.Contract.Automation.RemoteMemberData" Usage="System.AddIn.Contract.Automation.RemoteMethodData.MemberData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteMethodData.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Parameters As RemoteParameterData() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::AddIn::Contract::Automation::RemoteParameterData&gt; ^ Parameters;" />
+      <MemberSignature Language="F#" Value="val mutable Parameters : System.AddIn.Contract.Automation.RemoteParameterData[]" Usage="System.AddIn.Contract.Automation.RemoteMethodData.Parameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteMethodData.ReturnParameter" />
       <MemberSignature Language="VB.NET" Value="Public ReturnParameter As RemoteParameterData " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteParameterData ReturnParameter;" />
+      <MemberSignature Language="F#" Value="val mutable ReturnParameter : System.AddIn.Contract.Automation.RemoteParameterData" Usage="System.AddIn.Contract.Automation.RemoteMethodData.ReturnParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

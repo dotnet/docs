@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractVerificationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractVerificationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractVerificationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ContractVerificationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractVerificationAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractVerificationAttribute(bool value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractVerificationAttribute : bool -&gt; System.Diagnostics.Contracts.ContractVerificationAttribute" Usage="new System.Diagnostics.Contracts.ContractVerificationAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractVerificationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.Diagnostics.Contracts.ContractVerificationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

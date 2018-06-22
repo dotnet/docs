@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpContentHeaders" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpContentHeaders&#xA;Inherits HttpHeaders" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpContentHeaders sealed : System::Net::Http::Headers::HttpHeaders" />
+  <TypeSignature Language="F#" Value="type HttpContentHeaders = class&#xA;    inherit HttpHeaders" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.Allow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Allow As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ Allow { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Allow : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpContentHeaders.Allow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentDisposition" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentDisposition As ContentDispositionHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::ContentDispositionHeaderValue ^ ContentDisposition { System::Net::Http::Headers::ContentDispositionHeaderValue ^ get(); void set(System::Net::Http::Headers::ContentDispositionHeaderValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentDisposition : System.Net.Http.Headers.ContentDispositionHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentDisposition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEncoding As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ ContentEncoding { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentLanguage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentLanguage As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ ContentLanguage { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLanguage : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentLength As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; ContentLength { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : Nullable&lt;int64&gt; with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentLocation As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ContentLocation { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLocation : Uri with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentMD5" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentMD5 As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ContentMD5 { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentMD5 : byte[] with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentMD5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentRange" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentRange As ContentRangeHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::ContentRangeHeaderValue ^ ContentRange { System::Net::Http::Headers::ContentRangeHeaderValue ^ get(); void set(System::Net::Http::Headers::ContentRangeHeaderValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentRange : System.Net.Http.Headers.ContentRangeHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As MediaTypeHeaderValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::MediaTypeHeaderValue ^ ContentType { System::Net::Http::Headers::MediaTypeHeaderValue ^ get(); void set(System::Net::Http::Headers::MediaTypeHeaderValue ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : System.Net.Http.Headers.MediaTypeHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; Expires { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Expires : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.Expires" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -311,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpContentHeaders.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public Property LastModified As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; LastModified { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpContentHeaders.LastModified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

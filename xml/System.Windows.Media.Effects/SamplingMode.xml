@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.SamplingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SamplingMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SamplingMode" />
+  <TypeSignature Language="F#" Value="type SamplingMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 2" Usage="System.Windows.Media.Effects.SamplingMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.Bilinear" />
       <MemberSignature Language="VB.NET" Value="Bilinear" />
       <MemberSignature Language="C++ CLI" Value="Bilinear" />
+      <MemberSignature Language="F#" Value="Bilinear = 1" Usage="System.Windows.Media.Effects.SamplingMode.Bilinear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.NearestNeighbor" />
       <MemberSignature Language="VB.NET" Value="NearestNeighbor" />
       <MemberSignature Language="C++ CLI" Value="NearestNeighbor" />
+      <MemberSignature Language="F#" Value="NearestNeighbor = 0" Usage="System.Windows.Media.Effects.SamplingMode.NearestNeighbor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

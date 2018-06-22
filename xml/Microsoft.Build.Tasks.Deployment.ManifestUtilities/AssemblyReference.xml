@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyReference&#xA;Inherits BaseReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyReference sealed : Microsoft::Build::Tasks::Deployment::ManifestUtilities::BaseReference" />
+  <TypeSignature Language="F#" Value="type AssemblyReference = class&#xA;    inherit BaseReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyReference(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.AssemblyIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyIdentity As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ AssemblyIdentity { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyIdentity : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.AssemblyIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.IsPrerequisite" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPrerequisite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrerequisite { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsPrerequisite : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.IsPrerequisite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.ReferenceType" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferenceType As AssemblyReferenceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReferenceType ReferenceType { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReferenceType get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReferenceType value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceType : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.ReferenceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.SortName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SortName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ SortName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SortName : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.SortName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="assemblyReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlAssemblyIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlAssemblyIdentity As AssemblyIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ XmlAssemblyIdentity { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlAssemblyIdentity : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlAssemblyIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlIsNative" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlIsNative As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlIsNative { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlIsNative : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlIsNative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlIsPrerequisite" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlIsPrerequisite As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlIsPrerequisite { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlIsPrerequisite : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.XmlIsPrerequisite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

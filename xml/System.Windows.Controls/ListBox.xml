@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ListBox" />
   <TypeSignature Language="VB.NET" Value="Public Class ListBox&#xA;Inherits Selector" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListBox : System::Windows::Controls::Primitives::Selector" />
+  <TypeSignature Language="F#" Value="type ListBox = class&#xA;    inherit Selector" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ListBox.AnchorItem" />
       <MemberSignature Language="VB.NET" Value="Protected Property AnchorItem As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ AnchorItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorItem : obj with get, set" Usage="System.Windows.Controls.ListBox.AnchorItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="listBox.GetContainerForItemOverride " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ListBox.HandlesScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.ListBox.HandlesScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="listBox.IsItemItsOwnContainerOverride item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="listBox.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsMouseCapturedChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsMouseCapturedChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnIsMouseCapturedChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="listBox.OnIsMouseCapturedChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="listBox.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="listBox.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.OnSelectionChanged(System.Windows.Controls.SelectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectionChanged (e As SelectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectionChanged(System::Windows::Controls::SelectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectionChanged : System.Windows.Controls.SelectionChangedEventArgs -&gt; unit" Usage="listBox.OnSelectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="listBox.PrepareContainerForItemOverride (element, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -326,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.ScrollIntoView(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.ScrollIntoView : obj -&gt; unit" Usage="listBox.ScrollIntoView item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.SelectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberSignature Language="F#" Value="member this.SelectAll : unit -&gt; unit" Usage="listBox.SelectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ListBox.SelectedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedItems As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ SelectedItems { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedItems : System.Collections.IList" Usage="System.Windows.Controls.ListBox.SelectedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -442,6 +456,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ListBox.SelectedItemsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedItemsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedItemsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedItemsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ListBox.SelectedItemsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -461,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ListBox.SelectionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionMode As SelectionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::SelectionMode SelectionMode { System::Windows::Controls::SelectionMode get(); void set(System::Windows::Controls::SelectionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Windows.Controls.SelectionMode with get, set" Usage="System.Windows.Controls.ListBox.SelectionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -502,6 +518,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ListBox.SelectionModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ListBox.SelectionModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -521,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.SetSelectedItems(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Function SetSelectedItems (selectedItems As IEnumerable) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool SetSelectedItems(System::Collections::IEnumerable ^ selectedItems);" />
+      <MemberSignature Language="F#" Value="member this.SetSelectedItems : System.Collections.IEnumerable -&gt; bool" Usage="listBox.SetSelectedItems selectedItems" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -546,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListBox.UnselectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnselectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnselectAll();" />
+      <MemberSignature Language="F#" Value="member this.UnselectAll : unit -&gt; unit" Usage="listBox.UnselectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

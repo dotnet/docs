@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterCreationDataCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CounterCreationDataCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CounterCreationDataCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CounterCreationDataCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.#ctor(System.Diagnostics.CounterCreationData[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CounterCreationData())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterCreationDataCollection(cli::array &lt;System::Diagnostics::CounterCreationData ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.CounterCreationDataCollection : System.Diagnostics.CounterCreationData[] -&gt; System.Diagnostics.CounterCreationDataCollection" Usage="new System.Diagnostics.CounterCreationDataCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.#ctor(System.Diagnostics.CounterCreationDataCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CounterCreationDataCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterCreationDataCollection(System::Diagnostics::CounterCreationDataCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.CounterCreationDataCollection : System.Diagnostics.CounterCreationDataCollection -&gt; System.Diagnostics.CounterCreationDataCollection" Usage="new System.Diagnostics.CounterCreationDataCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.Add(System.Diagnostics.CounterCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CounterCreationData) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Diagnostics::CounterCreationData ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Diagnostics.CounterCreationData -&gt; int" Usage="counterCreationDataCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.AddRange(System.Diagnostics.CounterCreationData[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CounterCreationData())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Diagnostics::CounterCreationData ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Diagnostics.CounterCreationData[] -&gt; unit" Usage="counterCreationDataCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.AddRange(System.Diagnostics.CounterCreationDataCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CounterCreationDataCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Diagnostics::CounterCreationDataCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Diagnostics.CounterCreationDataCollection -&gt; unit" Usage="counterCreationDataCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.Contains(System.Diagnostics.CounterCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CounterCreationData) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Diagnostics::CounterCreationData ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Diagnostics.CounterCreationData -&gt; bool" Usage="counterCreationDataCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.CopyTo(System.Diagnostics.CounterCreationData[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CounterCreationData(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::CounterCreationData ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Diagnostics.CounterCreationData[] * int -&gt; unit" Usage="counterCreationDataCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.IndexOf(System.Diagnostics.CounterCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CounterCreationData) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Diagnostics::CounterCreationData ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Diagnostics.CounterCreationData -&gt; int" Usage="counterCreationDataCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.Insert(System.Int32,System.Diagnostics.CounterCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CounterCreationData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Diagnostics::CounterCreationData ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Diagnostics.CounterCreationData -&gt; unit" Usage="counterCreationDataCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterCreationDataCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CounterCreationData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::CounterCreationData ^ default[int] { System::Diagnostics::CounterCreationData ^ get(int index); void set(int index, System::Diagnostics::CounterCreationData ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Diagnostics.CounterCreationData with get, set" Usage="System.Diagnostics.CounterCreationDataCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="counterCreationDataCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -446,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.Remove(System.Diagnostics.CounterCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As CounterCreationData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Diagnostics::CounterCreationData ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Diagnostics.CounterCreationData -&gt; unit&#xA;override this.Remove : System.Diagnostics.CounterCreationData -&gt; unit" Usage="counterCreationDataCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

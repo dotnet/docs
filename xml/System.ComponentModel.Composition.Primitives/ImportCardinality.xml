@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ImportCardinality" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImportCardinality" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImportCardinality" />
+  <TypeSignature Language="F#" Value="type ImportCardinality = " />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne" />
       <MemberSignature Language="VB.NET" Value="ExactlyOne" />
       <MemberSignature Language="C++ CLI" Value="ExactlyOne" />
+      <MemberSignature Language="F#" Value="ExactlyOne = 1" Usage="System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ZeroOrMore" />
       <MemberSignature Language="VB.NET" Value="ZeroOrMore" />
       <MemberSignature Language="C++ CLI" Value="ZeroOrMore" />
+      <MemberSignature Language="F#" Value="ZeroOrMore = 2" Usage="System.ComponentModel.Composition.Primitives.ImportCardinality.ZeroOrMore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ZeroOrOne" />
       <MemberSignature Language="VB.NET" Value="ZeroOrOne" />
       <MemberSignature Language="C++ CLI" Value="ZeroOrOne" />
+      <MemberSignature Language="F#" Value="ZeroOrOne = 0" Usage="System.ComponentModel.Composition.Primitives.ImportCardinality.ZeroOrOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

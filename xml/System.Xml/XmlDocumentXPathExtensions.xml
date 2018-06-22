@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocumentXPathExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module XmlDocumentXPathExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDocumentXPathExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type XmlDocumentXPathExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.CreateNavigator(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateNavigator (document As XmlDocument) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlDocument ^ document);" />
+      <MemberSignature Language="F#" Value="static member CreateNavigator : System.Xml.XmlDocument -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.XmlDocumentXPathExtensions.CreateNavigator document" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.CreateNavigator(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateNavigator (node As XmlNode) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlNode ^ node);" />
+      <MemberSignature Language="F#" Value="static member CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.XmlDocumentXPathExtensions.CreateNavigator node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.CreateNavigator(System.Xml.XmlDocument,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateNavigator (document As XmlDocument, node As XmlNode) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlDocument ^ document, System::Xml::XmlNode ^ node);" />
+      <MemberSignature Language="F#" Value="static member CreateNavigator : System.Xml.XmlDocument * System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.XmlDocumentXPathExtensions.CreateNavigator (document, node)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.SelectNodes(System.Xml.XmlNode,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectNodes (node As XmlNode, xpath As String) As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XmlNodeList ^ SelectNodes(System::Xml::XmlNode ^ node, System::String ^ xpath);" />
+      <MemberSignature Language="F#" Value="static member SelectNodes : System.Xml.XmlNode * string -&gt; System.Xml.XmlNodeList" Usage="System.Xml.XmlDocumentXPathExtensions.SelectNodes (node, xpath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.SelectNodes(System.Xml.XmlNode,System.String,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectNodes (node As XmlNode, xpath As String, nsmgr As XmlNamespaceManager) As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XmlNodeList ^ SelectNodes(System::Xml::XmlNode ^ node, System::String ^ xpath, System::Xml::XmlNamespaceManager ^ nsmgr);" />
+      <MemberSignature Language="F#" Value="static member SelectNodes : System.Xml.XmlNode * string * System.Xml.XmlNamespaceManager -&gt; System.Xml.XmlNodeList" Usage="System.Xml.XmlDocumentXPathExtensions.SelectNodes (node, xpath, nsmgr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.SelectSingleNode(System.Xml.XmlNode,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectSingleNode (node As XmlNode, xpath As String) As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XmlNode ^ SelectSingleNode(System::Xml::XmlNode ^ node, System::String ^ xpath);" />
+      <MemberSignature Language="F#" Value="static member SelectSingleNode : System.Xml.XmlNode * string -&gt; System.Xml.XmlNode" Usage="System.Xml.XmlDocumentXPathExtensions.SelectSingleNode (node, xpath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.SelectSingleNode(System.Xml.XmlNode,System.String,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectSingleNode (node As XmlNode, xpath As String, nsmgr As XmlNamespaceManager) As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XmlNode ^ SelectSingleNode(System::Xml::XmlNode ^ node, System::String ^ xpath, System::Xml::XmlNamespaceManager ^ nsmgr);" />
+      <MemberSignature Language="F#" Value="static member SelectSingleNode : System.Xml.XmlNode * string * System.Xml.XmlNamespaceManager -&gt; System.Xml.XmlNode" Usage="System.Xml.XmlDocumentXPathExtensions.SelectSingleNode (node, xpath, nsmgr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentXPathExtensions.ToXPathNavigable(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToXPathNavigable (node As XmlNode) As IXPathNavigable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::IXPathNavigable ^ ToXPathNavigable(System::Xml::XmlNode ^ node);" />
+      <MemberSignature Language="F#" Value="static member ToXPathNavigable : System.Xml.XmlNode -&gt; System.Xml.XPath.IXPathNavigable" Usage="System.Xml.XmlDocumentXPathExtensions.ToXPathNavigable node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XmlDocument</AssemblyName>

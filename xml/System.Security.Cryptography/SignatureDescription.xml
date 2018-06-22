@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SignatureDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class SignatureDescription" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignatureDescription" />
+  <TypeSignature Language="F#" Value="type SignatureDescription = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SignatureDescription.#ctor(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (el As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureDescription(System::Security::SecurityElement ^ el);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.SignatureDescription : System.Security.SecurityElement -&gt; System.Security.Cryptography.SignatureDescription" Usage="new System.Security.Cryptography.SignatureDescription el" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDeformatter (key As AsymmetricAlgorithm) As AsymmetricSignatureDeformatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::AsymmetricSignatureDeformatter ^ CreateDeformatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter&#xA;override this.CreateDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="signatureDescription.CreateDeformatter key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SignatureDescription.CreateDigest" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDigest () As HashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::HashAlgorithm ^ CreateDigest();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDigest : unit -&gt; System.Security.Cryptography.HashAlgorithm&#xA;override this.CreateDigest : unit -&gt; System.Security.Cryptography.HashAlgorithm" Usage="signatureDescription.CreateDigest " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateFormatter (key As AsymmetricAlgorithm) As AsymmetricSignatureFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::AsymmetricSignatureFormatter ^ CreateFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter&#xA;override this.CreateFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="signatureDescription.CreateFormatter key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property DeformatterAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeformatterAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeformatterAlgorithm : string with get, set" Usage="System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -314,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SignatureDescription.DigestAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property DigestAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DigestAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DigestAlgorithm : string with get, set" Usage="System.Security.Cryptography.SignatureDescription.DigestAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SignatureDescription.FormatterAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property FormatterAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatterAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormatterAlgorithm : string with get, set" Usage="System.Security.Cryptography.SignatureDescription.FormatterAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SignatureDescription.KeyAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyAlgorithm : string with get, set" Usage="System.Security.Cryptography.SignatureDescription.KeyAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

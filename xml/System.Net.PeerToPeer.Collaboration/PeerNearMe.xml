@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerNearMe&#xA;Inherits Peer&#xA;Implements IEquatable(Of PeerNearMe), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNearMe : System::Net::PeerToPeer::Collaboration::Peer, IEquatable&lt;System::Net::PeerToPeer::Collaboration::PeerNearMe ^&gt;, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type PeerNearMe = class&#xA;    inherit Peer&#xA;    interface IEquatable&lt;PeerNearMe&gt;&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerNearMe(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.Collaboration.PeerNearMe : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.PeerToPeer.Collaboration.PeerNearMe" Usage="new System.Net.PeerToPeer.Collaboration.PeerNearMe (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.AddToContactManager" />
       <MemberSignature Language="VB.NET" Value="Public Function AddToContactManager () As PeerContact" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerContact ^ AddToContactManager();" />
+      <MemberSignature Language="F#" Value="member this.AddToContactManager : unit -&gt; System.Net.PeerToPeer.Collaboration.PeerContact" Usage="peerNearMe.AddToContactManager " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.AddToContactManager(System.String,System.String,System.Net.Mail.MailAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddToContactManager (displayName As String, nickname As String, emailAddress As MailAddress) As PeerContact" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::Collaboration::PeerContact ^ AddToContactManager(System::String ^ displayName, System::String ^ nickname, System::Net::Mail::MailAddress ^ emailAddress);" />
+      <MemberSignature Language="F#" Value="member this.AddToContactManager : string * string * System.Net.Mail.MailAddress -&gt; System.Net.PeerToPeer.Collaboration.PeerContact" Usage="peerNearMe.AddToContactManager (displayName, nickname, emailAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.PeerToPeer.Collaboration.PeerNearMe CreateFromPeerEndPoint(class System.Net.PeerToPeer.Collaboration.PeerEndPoint peerEndPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.CreateFromPeerEndPoint(System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::PeerToPeer::Collaboration::PeerNearMe ^ CreateFromPeerEndPoint(System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ peerEndPoint);" />
+      <MemberSignature Language="F#" Value="static member CreateFromPeerEndPoint : System.Net.PeerToPeer.Collaboration.PeerEndPoint -&gt; System.Net.PeerToPeer.Collaboration.PeerNearMe" Usage="System.Net.PeerToPeer.Collaboration.PeerNearMe.CreateFromPeerEndPoint peerEndPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="peerNearMe.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Equals(System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PeerNearMe) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Net::PeerToPeer::Collaboration::PeerNearMe ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; bool" Usage="peerNearMe.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="peerNearMe.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (objA As Object, objB As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ objA, System::Object ^ objB);" />
+      <MemberSignature Language="F#" Value="static member Equals : obj * obj -&gt; bool" Usage="System.Net.PeerToPeer.Collaboration.PeerNearMe.Equals (objA, objB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="peerNearMe.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="peerNearMe.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub InternalRefreshData (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void InternalRefreshData(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.InternalRefreshData : obj -&gt; unit" Usage="peerNearMe.InternalRefreshData state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -409,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Invite () As PeerInvitationResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite();" />
+      <MemberSignature Language="F#" Value="override this.Invite : unit -&gt; System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" Usage="peerNearMe.Invite " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Invite (applicationToInvite As PeerApplication, message As String, invitationData As Byte()) As PeerInvitationResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::PeerToPeer::Collaboration::PeerInvitationResponse ^ Invite(System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData);" />
+      <MemberSignature Language="F#" Value="override this.Invite : System.Net.PeerToPeer.Collaboration.PeerApplication * string * byte[] -&gt; System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" Usage="peerNearMe.Invite (applicationToInvite, message, invitationData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -488,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.InviteAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InviteAsync (userToken As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InviteAsync(System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="override this.InviteAsync : obj -&gt; unit" Usage="peerNearMe.InviteAsync userToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -519,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InviteAsync (applicationToInvite As PeerApplication, message As String, invitationData As Byte(), userToken As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InviteAsync(System::Net::PeerToPeer::Collaboration::PeerApplication ^ applicationToInvite, System::String ^ message, cli::array &lt;System::Byte&gt; ^ invitationData, System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="override this.InviteAsync : System.Net.PeerToPeer.Collaboration.PeerApplication * string * byte[] * obj -&gt; unit" Usage="peerNearMe.InviteAsync (applicationToInvite, message, invitationData, userToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -559,6 +575,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerNearMe.Nickname" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nickname As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Nickname { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Nickname : string" Usage="System.Net.PeerToPeer.Collaboration.PeerNearMe.Nickname" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -588,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.OnRefreshDataCompleted(System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnRefreshDataCompleted (e As RefreshDataCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnRefreshDataCompleted(System::Net::PeerToPeer::Collaboration::RefreshDataCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnRefreshDataCompleted : System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs -&gt; unit" Usage="peerNearMe.OnRefreshDataCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -623,6 +641,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.PeerNearMeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event PeerNearMeChanged As EventHandler(Of PeerNearMeChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Net::PeerToPeer::Collaboration::PeerNearMeChangedEventArgs ^&gt; ^ PeerNearMeChanged;" />
+      <MemberSignature Language="F#" Value="member this.PeerNearMeChanged : EventHandler&lt;System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs&gt; " Usage="member this.PeerNearMeChanged : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -650,6 +669,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshData ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshData();" />
+      <MemberSignature Language="F#" Value="member this.RefreshData : unit -&gt; unit" Usage="peerNearMe.RefreshData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -687,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshDataAsync (userToken As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshDataAsync(System::Object ^ userToken);" />
+      <MemberSignature Language="F#" Value="member this.RefreshDataAsync : obj -&gt; unit" Usage="peerNearMe.RefreshDataAsync userToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RefreshDataCompleted As EventHandler(Of RefreshDataCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::Collaboration::RefreshDataCompletedEventArgs ^&gt; ^ RefreshDataCompleted;" />
+      <MemberSignature Language="F#" Value="member this.RefreshDataCompleted : EventHandler&lt;System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs&gt; " Usage="member this.RefreshDataCompleted : System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -785,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerNearMe.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

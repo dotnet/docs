@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonAutomationPeer&#xA;Inherits SelectorAutomationPeer&#xA;Implements IExpandCollapseProvider, ISelectionProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonAutomationPeer : System::Windows::Automation::Peers::SelectorAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider, System::Windows::Automation::Provider::ISelectionProvider" />
+  <TypeSignature Language="F#" Value="type RibbonAutomationPeer = class&#xA;    inherit SelectorAutomationPeer&#xA;    interface IExpandCollapseProvider&#xA;    interface ISelectionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.Ribbon)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Ribbon)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonAutomationPeer(System::Windows::Controls::Ribbon::Ribbon ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonAutomationPeer : System.Windows.Controls.Ribbon.Ribbon -&gt; System.Windows.Automation.Peers.RibbonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.Collapse" />
       <MemberSignature Language="VB.NET" Value="Public Sub Collapse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Collapse();" />
+      <MemberSignature Language="F#" Value="abstract member Collapse : unit -&gt; unit&#xA;override this.Collapse : unit -&gt; unit" Usage="ribbonAutomationPeer.Collapse " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse</InterfaceMember>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonAutomationPeer.CreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.Expand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Expand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Expand();" />
+      <MemberSignature Language="F#" Value="abstract member Expand : unit -&gt; unit&#xA;override this.Expand : unit -&gt; unit" Usage="ribbonAutomationPeer.Expand " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Expand</InterfaceMember>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpandCollapseState As ExpandCollapseState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ExpandCollapseState ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpandCollapseState : System.Windows.Automation.ExpandCollapseState" Usage="System.Windows.Automation.Peers.RibbonAutomationPeer.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="ribbonAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.IsOffscreenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="ribbonAutomationPeer.IsOffscreenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -272,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.SetFocusCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="ribbonAutomationPeer.SetFocusCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -292,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSelectMultiple As Boolean Implements ISelectionProvider.CanSelectMultiple" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple</InterfaceMember>
@@ -323,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelectionRequired As Boolean Implements ISelectionProvider.IsSelectionRequired" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired</InterfaceMember>

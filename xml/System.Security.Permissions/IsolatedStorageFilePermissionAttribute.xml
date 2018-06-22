@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageFilePermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsolatedStorageFilePermissionAttribute&#xA;Inherits IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IsolatedStorageFilePermissionAttribute sealed : System::Security::Permissions::IsolatedStoragePermissionAttribute" />
+  <TypeSignature Language="F#" Value="type IsolatedStorageFilePermissionAttribute = class&#xA;    inherit IsolatedStoragePermissionAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStorageFilePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IsolatedStorageFilePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.IsolatedStorageFilePermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.IsolatedStorageFilePermissionAttribute" Usage="new System.Security.Permissions.IsolatedStorageFilePermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStorageFilePermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="isolatedStorageFilePermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DictionaryModelBinder`2" />
   <TypeSignature Language="VB.NET" Value="Public Class DictionaryModelBinder(Of TKey, TValue)&#xA;Inherits CollectionModelBinder(Of KeyValuePair(Of TKey, TValue))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class DictionaryModelBinder : System::Web::ModelBinding::CollectionModelBinder&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;" />
+  <TypeSignature Language="F#" Value="type DictionaryModelBinder&lt;'Key, 'Value&gt; = class&#xA;    inherit CollectionModelBinder&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CreateOrReplaceCollection(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; newCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryModelBinder`2.CreateOrReplaceCollection(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CreateOrReplaceCollection(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext, System::Collections::Generic::IList&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ newCollection);" />
+      <MemberSignature Language="F#" Value="override this.CreateOrReplaceCollection : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext * System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; bool" Usage="dictionaryModelBinder.CreateOrReplaceCollection (modelBindingExecutionContext, bindingContext, newCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

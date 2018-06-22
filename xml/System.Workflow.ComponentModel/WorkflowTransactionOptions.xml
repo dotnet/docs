@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowTransactionOptions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTransactionOptions&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTransactionOptions sealed : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type WorkflowTransactionOptions = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowTransactionOptions.IsolationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IsolationLevel As IsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::IsolationLevel IsolationLevel { System::Transactions::IsolationLevel get(); void set(System::Transactions::IsolationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Transactions.IsolationLevel with get, set" Usage="System.Workflow.ComponentModel.WorkflowTransactionOptions.IsolationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowTransactionOptions.IsolationLevelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsolationLevelProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ IsolationLevelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsolationLevelProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.WorkflowTransactionOptions.IsolationLevelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowTransactionOptions.TimeoutDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeoutDuration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeoutDuration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.TimeoutDuration : TimeSpan with get, set" Usage="System.Workflow.ComponentModel.WorkflowTransactionOptions.TimeoutDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowTransactionOptions.TimeoutDurationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TimeoutDurationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TimeoutDurationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TimeoutDurationProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.WorkflowTransactionOptions.TimeoutDurationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

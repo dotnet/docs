@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataSourceIDConverter&#xA;Inherits DataSourceIDConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataSourceIDConverter : System::Web::UI::Design::WebControls::DataSourceIDConverter" />
+  <TypeSignature Language="F#" Value="type HierarchicalDataSourceIDConverter = class&#xA;    inherit DataSourceIDConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsValidDataSource (component As IComponent) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsValidDataSource(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.IsValidDataSource : System.ComponentModel.IComponent -&gt; bool" Usage="hierarchicalDataSourceIDConverter.IsValidDataSource component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

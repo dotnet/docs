@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeDesignerAccessibleObject&#xA;Inherits ActivityDesignerAccessibleObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeDesignerAccessibleObject : System::Workflow::ComponentModel::Design::ActivityDesignerAccessibleObject" />
+  <TypeSignature Language="F#" Value="type CompositeDesignerAccessibleObject = class&#xA;    inherit ActivityDesignerAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.CompositeActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityDesigner As CompositeActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeDesignerAccessibleObject(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ activityDesigner);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject : System.Workflow.ComponentModel.Design.CompositeActivityDesigner -&gt; System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject" Usage="new System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject activityDesigner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="compositeDesignerAccessibleObject.GetChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
+      <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="compositeDesignerAccessibleObject.GetChildCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ExportFactory`2" />
   <TypeSignature Language="VB.NET" Value="Public Class ExportFactory(Of T, TMetadata)&#xA;Inherits ExportFactory(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TMetadata&gt;&#xA;public ref class ExportFactory : System::ComponentModel::Composition::ExportFactory&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ExportFactory&lt;'T, 'Metadata&gt; = class&#xA;    inherit ExportFactory&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ExportFactory`2.#ctor(System.Func{System.Tuple{`0,System.Action}},`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exportLifetimeContextCreator As Func(Of Tuple(Of T, Action)), metadata As TMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportFactory(Func&lt;Tuple&lt;T, Action ^&gt; ^&gt; ^ exportLifetimeContextCreator, TMetadata metadata);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ExportFactory&lt;'T, 'Metadata&gt; : Func&lt;'T * Action&gt; * 'Metadata -&gt; System.ComponentModel.Composition.ExportFactory&lt;'T, 'Metadata&gt;" Usage="new System.ComponentModel.Composition.ExportFactory&lt;'T, 'Metadata&gt; (exportLifetimeContextCreator, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ExportFactory`2.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As TMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TMetadata Metadata { TMetadata get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : 'Metadata" Usage="System.ComponentModel.Composition.ExportFactory&lt;'T, 'Metadata&gt;.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

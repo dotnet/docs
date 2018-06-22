@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridCell" />
   <TypeSignature Language="VB.NET" Value="Public Structure DataGridCell" />
   <TypeSignature Language="C++ CLI" Value="public value class DataGridCell" />
+  <TypeSignature Language="F#" Value="type DataGridCell = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (r As Integer, c As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCell(int r, int c);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridCell : int * int -&gt; System.Windows.Forms.DataGridCell" Usage="new System.Windows.Forms.DataGridCell (r, c)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridCell.ColumnNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnNumber : int with get, set" Usage="System.Windows.Forms.DataGridCell.ColumnNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridCell.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridCell.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridCell.RowNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property RowNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RowNumber : int with get, set" Usage="System.Windows.Forms.DataGridCell.RowNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridCell.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

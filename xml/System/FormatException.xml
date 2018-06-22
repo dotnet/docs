@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.FormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class FormatException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormatException : SystemException" />
+  <TypeSignature Language="F#" Value="type FormatException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -197,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormatException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new FormatException : string -&gt; FormatException" Usage="new System.FormatException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -245,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FormatException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new FormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; FormatException" Usage="new System.FormatException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormatException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new FormatException : string * Exception -&gt; FormatException" Usage="new System.FormatException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

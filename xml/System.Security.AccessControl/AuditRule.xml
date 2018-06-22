@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AuditRule" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuditRule&#xA;Inherits AuthorizationRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuditRule abstract : System::Security::AccessControl::AuthorizationRule" />
+  <TypeSignature Language="F#" Value="type AuditRule = class&#xA;    inherit AuthorizationRule" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags auditFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuditRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AuditRule(System::Security::Principal::IdentityReference ^ identity, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags auditFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AuditRule : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="new System.Security.AccessControl.AuditRule (identity, accessMask, isInherited, inheritanceFlags, propagationFlags, auditFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuditRule.AuditFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuditFlags As AuditFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AuditFlags AuditFlags { System::Security::AccessControl::AuditFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuditFlags : System.Security.AccessControl.AuditFlags" Usage="System.Security.AccessControl.AuditRule.AuditFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

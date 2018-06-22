@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.JsonFaultDetail" />
   <TypeSignature Language="VB.NET" Value="Public Class JsonFaultDetail" />
   <TypeSignature Language="C++ CLI" Value="public ref class JsonFaultDetail" />
+  <TypeSignature Language="F#" Value="type JsonFaultDetail = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.JsonFaultDetail.ExceptionDetail" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionDetail As ExceptionDetail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ExceptionDetail ^ ExceptionDetail { System::ServiceModel::ExceptionDetail ^ get(); void set(System::ServiceModel::ExceptionDetail ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionDetail : System.ServiceModel.ExceptionDetail with get, set" Usage="System.ServiceModel.Description.JsonFaultDetail.ExceptionDetail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.JsonFaultDetail.ExceptionType" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExceptionType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionType : string with get, set" Usage="System.ServiceModel.Description.JsonFaultDetail.ExceptionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.JsonFaultDetail.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="System.ServiceModel.Description.JsonFaultDetail.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.JsonFaultDetail.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public Property StackTrace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string with get, set" Usage="System.ServiceModel.Description.JsonFaultDetail.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

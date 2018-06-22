@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class DataflowLinkOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataflowLinkOptions" />
+  <TypeSignature Language="F#" Value="type DataflowLinkOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append" />
       <MemberSignature Language="VB.NET" Value="Public Property Append As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Append { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Append : bool with get, set" Usage="System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxMessages As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxMessages { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxMessages : int with get, set" Usage="System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion" />
       <MemberSignature Language="VB.NET" Value="Public Property PropagateCompletion As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropagateCompletion { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PropagateCompletion : bool with get, set" Usage="System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridSortCommandEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridSortCommandEventHandler(source As Object, e As DataGridSortCommandEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridSortCommandEventHandler(System::Object ^ source, DataGridSortCommandEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridSortCommandEventHandler = delegate of obj * DataGridSortCommandEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

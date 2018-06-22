@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ToleranceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToleranceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToleranceType" />
+  <TypeSignature Language="F#" Value="type ToleranceType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ToleranceType.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 0" Usage="System.Windows.Media.ToleranceType.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ToleranceType.Relative" />
       <MemberSignature Language="VB.NET" Value="Relative" />
       <MemberSignature Language="C++ CLI" Value="Relative" />
+      <MemberSignature Language="F#" Value="Relative = 1" Usage="System.Windows.Media.ToleranceType.Relative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

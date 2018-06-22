@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellingError" />
   <TypeSignature Language="VB.NET" Value="Public Class SpellingError" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpellingError" />
+  <TypeSignature Language="F#" Value="type SpellingError = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellingError.Correct(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Correct (correctedText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Correct(System::String ^ correctedText);" />
+      <MemberSignature Language="F#" Value="member this.Correct : string -&gt; unit" Usage="spellingError.Correct correctedText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellingError.IgnoreAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub IgnoreAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IgnoreAll();" />
+      <MemberSignature Language="F#" Value="member this.IgnoreAll : unit -&gt; unit" Usage="spellingError.IgnoreAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SpellingError.Suggestions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Suggestions As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ Suggestions { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Suggestions : seq&lt;string&gt;" Usage="System.Windows.Controls.SpellingError.Suggestions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

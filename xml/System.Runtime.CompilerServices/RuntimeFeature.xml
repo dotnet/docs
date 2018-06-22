@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeFeature" />
   <TypeSignature Language="VB.NET" Value="Public Class RuntimeFeature" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuntimeFeature abstract sealed" />
+  <TypeSignature Language="F#" Value="type RuntimeFeature = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeFeature.IsSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSupported (feature As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSupported(System::String ^ feature);" />
+      <MemberSignature Language="F#" Value="static member IsSupported : string -&gt; bool" Usage="System.Runtime.CompilerServices.RuntimeFeature.IsSupported feature" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.RuntimeFeature.PortablePdb" />
       <MemberSignature Language="VB.NET" Value="Public Const PortablePdb As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ PortablePdb;" />
+      <MemberSignature Language="F#" Value="val mutable PortablePdb : string" Usage="System.Runtime.CompilerServices.RuntimeFeature.PortablePdb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

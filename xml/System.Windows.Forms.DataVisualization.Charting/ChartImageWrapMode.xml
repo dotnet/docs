@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ChartImageWrapMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ChartImageWrapMode" />
+  <TypeSignature Language="F#" Value="type ChartImageWrapMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled" />
       <MemberSignature Language="VB.NET" Value="Scaled" />
       <MemberSignature Language="C++ CLI" Value="Scaled" />
+      <MemberSignature Language="F#" Value="Scaled = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile" />
       <MemberSignature Language="VB.NET" Value="Tile" />
       <MemberSignature Language="C++ CLI" Value="Tile" />
+      <MemberSignature Language="F#" Value="Tile = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipX" />
       <MemberSignature Language="VB.NET" Value="TileFlipX" />
       <MemberSignature Language="C++ CLI" Value="TileFlipX" />
+      <MemberSignature Language="F#" Value="TileFlipX = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipXY" />
       <MemberSignature Language="VB.NET" Value="TileFlipXY" />
       <MemberSignature Language="C++ CLI" Value="TileFlipXY" />
+      <MemberSignature Language="F#" Value="TileFlipXY = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipY" />
       <MemberSignature Language="VB.NET" Value="TileFlipY" />
       <MemberSignature Language="C++ CLI" Value="TileFlipY" />
+      <MemberSignature Language="F#" Value="TileFlipY = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled" />
       <MemberSignature Language="VB.NET" Value="Unscaled" />
       <MemberSignature Language="C++ CLI" Value="Unscaled" />
+      <MemberSignature Language="F#" Value="Unscaled = 100" Usage="System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

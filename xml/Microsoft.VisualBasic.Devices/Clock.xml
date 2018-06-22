@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Clock" />
   <TypeSignature Language="VB.NET" Value="Public Class Clock" />
   <TypeSignature Language="C++ CLI" Value="public ref class Clock" />
+  <TypeSignature Language="F#" Value="type Clock = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Clock.GmtTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GmtTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime GmtTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.GmtTime : DateTime" Usage="Microsoft.VisualBasic.Devices.Clock.GmtTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Clock.LocalTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LocalTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalTime : DateTime" Usage="Microsoft.VisualBasic.Devices.Clock.LocalTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Clock.TickCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TickCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TickCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TickCount : int" Usage="Microsoft.VisualBasic.Devices.Clock.TickCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

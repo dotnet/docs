@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum NetworkAccess" />
   <TypeSignature Language="C++ CLI" Value="public enum class NetworkAccess" />
+  <TypeSignature Language="F#" Value="type NetworkAccess = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkAccess.Accept" />
       <MemberSignature Language="VB.NET" Value="Accept" />
       <MemberSignature Language="C++ CLI" Value="Accept" />
+      <MemberSignature Language="F#" Value="Accept = 128" Usage="System.Net.NetworkAccess.Accept" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkAccess.Connect" />
       <MemberSignature Language="VB.NET" Value="Connect" />
       <MemberSignature Language="C++ CLI" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 64" Usage="System.Net.NetworkAccess.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

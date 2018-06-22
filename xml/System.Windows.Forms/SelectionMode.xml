@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SelectionMode" />
+  <TypeSignature Language="F#" Value="type SelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.MultiExtended" />
       <MemberSignature Language="VB.NET" Value="MultiExtended" />
       <MemberSignature Language="C++ CLI" Value="MultiExtended" />
+      <MemberSignature Language="F#" Value="MultiExtended = 3" Usage="System.Windows.Forms.SelectionMode.MultiExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.MultiSimple" />
       <MemberSignature Language="VB.NET" Value="MultiSimple" />
       <MemberSignature Language="C++ CLI" Value="MultiSimple" />
+      <MemberSignature Language="F#" Value="MultiSimple = 2" Usage="System.Windows.Forms.SelectionMode.MultiSimple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.SelectionMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SelectionMode.One" />
       <MemberSignature Language="VB.NET" Value="One" />
       <MemberSignature Language="C++ CLI" Value="One" />
+      <MemberSignature Language="F#" Value="One = 1" Usage="System.Windows.Forms.SelectionMode.One" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

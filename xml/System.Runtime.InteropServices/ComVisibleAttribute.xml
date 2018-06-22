@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComVisibleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComVisibleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComVisibleAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ComVisibleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ComVisibleAttribute(bool visibility);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComVisibleAttribute : bool -&gt; System.Runtime.InteropServices.ComVisibleAttribute" Usage="new System.Runtime.InteropServices.ComVisibleAttribute visibility" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComVisibleAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.Runtime.InteropServices.ComVisibleAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

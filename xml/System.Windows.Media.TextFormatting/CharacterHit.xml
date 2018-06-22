@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterHit" />
   <TypeSignature Language="VB.NET" Value="Public Structure CharacterHit&#xA;Implements IEquatable(Of CharacterHit)" />
   <TypeSignature Language="C++ CLI" Value="public value class CharacterHit : IEquatable&lt;System::Windows::Media::TextFormatting::CharacterHit&gt;" />
+  <TypeSignature Language="F#" Value="type CharacterHit = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (firstCharacterIndex As Integer, trailingLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterHit(int firstCharacterIndex, int trailingLength);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.CharacterHit : int * int -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="new System.Windows.Media.TextFormatting.CharacterHit (firstCharacterIndex, trailingLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="characterHit.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.Equals(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As CharacterHit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::TextFormatting::CharacterHit obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.TextFormatting.CharacterHit -&gt; bool" Usage="characterHit.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CharacterHit.FirstCharacterIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstCharacterIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstCharacterIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstCharacterIndex : int" Usage="System.Windows.Media.TextFormatting.CharacterHit.FirstCharacterIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="characterHit.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.op_Equality(System.Windows.Media.TextFormatting.CharacterHit,System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CharacterHit, right As CharacterHit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::TextFormatting::CharacterHit left, System::Windows::Media::TextFormatting::CharacterHit right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.TextFormatting.CharacterHit * System.Windows.Media.TextFormatting.CharacterHit -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.op_Inequality(System.Windows.Media.TextFormatting.CharacterHit,System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CharacterHit, right As CharacterHit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::TextFormatting::CharacterHit left, System::Windows::Media::TextFormatting::CharacterHit right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.TextFormatting.CharacterHit * System.Windows.Media.TextFormatting.CharacterHit -&gt; bool" Usage="System.Windows.Media.TextFormatting.CharacterHit.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CharacterHit.TrailingLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrailingLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TrailingLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingLength : int" Usage="System.Windows.Media.TextFormatting.CharacterHit.TrailingLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceThrottlingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceThrottlingElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceThrottlingElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type ServiceThrottlingElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.ServiceThrottlingElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceThrottlingElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="serviceThrottlingElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceThrottlingElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="serviceThrottlingElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentCalls" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentCalls As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentCalls { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentCalls : int with get, set" Usage="System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentCalls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentInstances" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentInstances As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentInstances { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentInstances : int with get, set" Usage="System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentInstances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentSessions" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentSessions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentSessions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentSessions : int with get, set" Usage="System.ServiceModel.Configuration.ServiceThrottlingElement.MaxConcurrentSessions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceThrottlingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceThrottlingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

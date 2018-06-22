@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbDataReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbDataReader&#xA;Inherits DbDataReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbDataReader sealed : System::Data::Common::DbDataReader" />
+  <TypeSignature Language="F#" Value="type OleDbDataReader = class&#xA;    inherit DbDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="oleDbDataReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.OleDb.OleDbDataReader.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.OleDb.OleDbDataReader.FieldCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="oleDbDataReader.GetBoolean ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (ordinal As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="oleDbDataReader.GetByte ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (ordinal As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int ordinal, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="oleDbDataReader.GetBytes (ordinal, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (ordinal As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="oleDbDataReader.GetChar ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (ordinal As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int ordinal, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="oleDbDataReader.GetChars (ordinal, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetData(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (ordinal As Integer) As OleDbDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbDataReader ^ GetData(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetData : int -&gt; System.Data.OleDb.OleDbDataReader" Usage="oleDbDataReader.GetData ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -366,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="oleDbDataReader.GetDataTypeName index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -390,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (ordinal As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="oleDbDataReader.GetDateTime ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDbDataReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbDataReader (ordinal As Integer) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ GetDbDataReader(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDbDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="oleDbDataReader.GetDbDataReader ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -448,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (ordinal As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="oleDbDataReader.GetDecimal ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -482,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (ordinal As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="oleDbDataReader.GetDouble ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -516,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oleDbDataReader.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -544,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (index As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="oleDbDataReader.GetFieldType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -568,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (ordinal As Integer) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="oleDbDataReader.GetFloat ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -602,6 +620,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (ordinal As Integer) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="oleDbDataReader.GetGuid ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -636,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (ordinal As Integer) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="oleDbDataReader.GetInt16 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -670,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (ordinal As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="oleDbDataReader.GetInt32 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -704,6 +725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (ordinal As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="oleDbDataReader.GetInt64 ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -738,6 +760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="oleDbDataReader.GetName index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -762,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="oleDbDataReader.GetOrdinal name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -806,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetSchemaTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
+      <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="oleDbDataReader.GetSchemaTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -859,6 +884,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (ordinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="oleDbDataReader.GetString ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -893,6 +919,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetTimeSpan(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTimeSpan (ordinal As Integer) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetTimeSpan(int ordinal);" />
+      <MemberSignature Language="F#" Value="member this.GetTimeSpan : int -&gt; TimeSpan" Usage="oleDbDataReader.GetTimeSpan ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -927,6 +954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (ordinal As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="oleDbDataReader.GetValue ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -958,6 +986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="oleDbDataReader.GetValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -999,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.HasRows" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.OleDb.OleDbDataReader.HasRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1020,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.OleDb.OleDbDataReader.IsClosed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1048,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (ordinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int ordinal);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="oleDbDataReader.IsDBNull ordinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1089,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.OleDb.OleDbDataReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1114,6 +1147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.OleDb.OleDbDataReader.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1148,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.NextResult" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
+      <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="oleDbDataReader.NextResult " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1179,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="oleDbDataReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1218,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.RecordsAffected" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.OleDb.OleDbDataReader.RecordsAffected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1249,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.VisibleFieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VisibleFieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleFieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisibleFieldCount : int" Usage="System.Data.OleDb.OleDbDataReader.VisibleFieldCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmSchemaError" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmSchemaError&#xA;Inherits EdmError" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmSchemaError sealed : System::Data::Metadata::Edm::EdmError" />
+  <TypeSignature Language="F#" Value="type EdmSchemaError = class&#xA;    inherit EdmError" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="System.Data.Metadata.Edm.EdmSchemaError.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Data.Metadata.Edm.EdmSchemaError.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Data.Metadata.Edm.EdmSchemaError.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.SchemaLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaLocation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaLocation : string" Usage="System.Data.Metadata.Edm.EdmSchemaError.SchemaLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.SchemaName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaName : string" Usage="System.Data.Metadata.Edm.EdmSchemaError.SchemaName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.Severity" />
       <MemberSignature Language="VB.NET" Value="Public Property Severity As EdmSchemaErrorSeverity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmSchemaErrorSeverity Severity { System::Data::Metadata::Edm::EdmSchemaErrorSeverity get(); void set(System::Data::Metadata::Edm::EdmSchemaErrorSeverity value); };" />
+      <MemberSignature Language="F#" Value="member this.Severity : System.Data.Metadata.Edm.EdmSchemaErrorSeverity with get, set" Usage="System.Data.Metadata.Edm.EdmSchemaError.Severity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmSchemaError.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StackTrace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="System.Data.Metadata.Edm.EdmSchemaError.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmSchemaError.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="edmSchemaError.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataKey" />
   <TypeSignature Language="VB.NET" Value="Public Class DataKey&#xA;Implements IEquatable(Of DataKey), IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataKey : IEquatable&lt;System::Web::UI::WebControls::DataKey ^&gt;, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type DataKey = class&#xA;    interface IStateManager&#xA;    interface IEquatable&lt;DataKey&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.#ctor(System.Collections.Specialized.IOrderedDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyTable As IOrderedDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataKey(System::Collections::Specialized::IOrderedDictionary ^ keyTable);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataKey : System.Collections.Specialized.IOrderedDictionary -&gt; System.Web.UI.WebControls.DataKey" Usage="new System.Web.UI.WebControls.DataKey keyTable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.#ctor(System.Collections.Specialized.IOrderedDictionary,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyTable As IOrderedDictionary, keyNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataKey(System::Collections::Specialized::IOrderedDictionary ^ keyTable, cli::array &lt;System::String ^&gt; ^ keyNames);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataKey : System.Collections.Specialized.IOrderedDictionary * string[] -&gt; System.Web.UI.WebControls.DataKey" Usage="new System.Web.UI.WebControls.DataKey (keyTable, keyNames)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.Equals(System.Web.UI.WebControls.DataKey)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As DataKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Web::UI::WebControls::DataKey ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Web.UI.WebControls.DataKey -&gt; bool" Usage="dataKey.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.DataKey.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Web.UI.WebControls.DataKey.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Web.UI.WebControls.DataKey.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="dataKey.LoadViewState state" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -336,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="dataKey.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataKey.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -508,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataKey.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="dataKey.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -544,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Web.UI.WebControls.DataKey.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -583,6 +595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataKey.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::IOrderedDictionary ^ Values { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.DataKey.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MultiView" />
   <TypeSignature Language="VB.NET" Value="Public Class MultiView&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class MultiView : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type MultiView = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,6 +197,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.MultiView.ActiveViewChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ActiveViewChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ActiveViewChanged;" />
+      <MemberSignature Language="F#" Value="member this.ActiveViewChanged : EventHandler " Usage="member this.ActiveViewChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ActiveViewIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ActiveViewIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveViewIndex : int with get, set" Usage="System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="multiView.AddParsedSubObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="multiView.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MultiView.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.MultiView.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -387,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActiveView () As View" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::View ^ GetActiveView();" />
+      <MemberSignature Language="F#" Value="member this.GetActiveView : unit -&gt; System.Web.UI.WebControls.View" Usage="multiView.GetActiveView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="multiView.LoadControlState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NextViewCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NextViewCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NextViewCommandName : string" Usage="System.Web.UI.WebControls.MultiView.NextViewCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActiveViewChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActiveViewChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActiveViewChanged : EventArgs -&gt; unit&#xA;override this.OnActiveViewChanged : EventArgs -&gt; unit" Usage="multiView.OnActiveViewChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -544,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="multiView.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -580,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="multiView.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -610,6 +622,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviousViewCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ PreviousViewCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviousViewCommandName : string" Usage="System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -653,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.RemovedControl(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RemovedControl (ctl As Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RemovedControl(System::Web::UI::Control ^ ctl);" />
+      <MemberSignature Language="F#" Value="override this.RemovedControl : System.Web.UI.Control -&gt; unit" Usage="multiView.RemovedControl ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -683,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="multiView.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -717,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="multiView.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -737,6 +753,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetActiveView(class System.Web.UI.WebControls.View view) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetActiveView(System::Web::UI::WebControls::View ^ view);" />
+      <MemberSignature Language="F#" Value="member this.SetActiveView : System.Web.UI.WebControls.View -&gt; unit" Usage="multiView.SetActiveView view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -785,6 +802,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SwitchViewByIDCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SwitchViewByIDCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SwitchViewByIDCommandName : string" Usage="System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -828,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SwitchViewByIndexCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SwitchViewByIndexCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SwitchViewByIndexCommandName : string" Usage="System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -871,6 +890,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MultiView.Views" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Views As ViewCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ViewCollection ^ Views { System::Web::UI::WebControls::ViewCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Views : System.Web.UI.WebControls.ViewCollection" Usage="System.Web.UI.WebControls.MultiView.Views" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

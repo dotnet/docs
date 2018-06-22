@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.CloudCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CloudCollection&#xA;Inherits Collection(Of Cloud)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CloudCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::Cloud ^&gt;" />
+  <TypeSignature Language="F#" Value="type CloudCollection = class&#xA;    inherit Collection&lt;Cloud&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.CloudCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Cloud)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::Cloud ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.Cloud -&gt; unit" Usage="cloudCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.CloudCollection.SetItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Cloud)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::Cloud ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.Cloud -&gt; unit" Usage="cloudCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

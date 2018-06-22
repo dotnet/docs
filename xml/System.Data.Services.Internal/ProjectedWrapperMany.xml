@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapperMany" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectedWrapperMany&#xA;Inherits ProjectedWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectedWrapperMany : System::Data::Services::Internal::ProjectedWrapper" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapperMany = class&#xA;    inherit ProjectedWrapper" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapperMany.InternalGetProjectedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InternalGetProjectedPropertyValue(int propertyIndex);" />
+      <MemberSignature Language="F#" Value="override this.InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapperMany.InternalGetProjectedPropertyValue propertyIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As ProjectedWrapperMany" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Internal::ProjectedWrapperMany ^ Next { System::Data::Services::Internal::ProjectedWrapperMany ^ get(); void set(System::Data::Services::Internal::ProjectedWrapperMany ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Next : System.Data.Services.Internal.ProjectedWrapperMany with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty0" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty0 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty0 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty0 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty1" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty1 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty1 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty1 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty2" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty2 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty2 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty2 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty3" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty3 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty3 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty3 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty4" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty4 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty4 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty4 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty5" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty5 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty5 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty5 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty6" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty6 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty6 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty6 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty7" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty7 As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty7 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty7 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty7" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

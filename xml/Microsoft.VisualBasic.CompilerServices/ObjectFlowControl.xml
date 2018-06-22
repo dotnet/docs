@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectFlowControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectFlowControl sealed" />
+  <TypeSignature Language="F#" Value="type ObjectFlowControl = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckForSyncLockOnValueType (Expression As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckForSyncLockOnValueType(System::Object ^ Expression);" />
+      <MemberSignature Language="F#" Value="static member CheckForSyncLockOnValueType : obj -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType Expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

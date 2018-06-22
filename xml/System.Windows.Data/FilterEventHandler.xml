@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.FilterEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FilterEventHandler(sender As Object, e As FilterEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FilterEventHandler(System::Object ^ sender, FilterEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FilterEventHandler = delegate of obj * FilterEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

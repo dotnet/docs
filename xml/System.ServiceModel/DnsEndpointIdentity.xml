@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DnsEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class DnsEndpointIdentity&#xA;Inherits EndpointIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class DnsEndpointIdentity : System::ServiceModel::EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type DnsEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DnsEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.DnsEndpointIdentity" Usage="new System.ServiceModel.DnsEndpointIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dnsName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndpointIdentity(System::String ^ dnsName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DnsEndpointIdentity : string -&gt; System.ServiceModel.DnsEndpointIdentity" Usage="new System.ServiceModel.DnsEndpointIdentity dnsName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

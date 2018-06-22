@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.Logger" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Logger&#xA;Implements ILogger" />
   <TypeSignature Language="C++ CLI" Value="public ref class Logger abstract : Microsoft::Build::Framework::ILogger" />
+  <TypeSignature Language="F#" Value="type Logger = class&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Logger.FormatErrorEvent(Microsoft.Build.Framework.BuildErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FormatErrorEvent (args As BuildErrorEventArgs) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ FormatErrorEvent(Microsoft::Build::Framework::BuildErrorEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member FormatErrorEvent : Microsoft.Build.Framework.BuildErrorEventArgs -&gt; string&#xA;override this.FormatErrorEvent : Microsoft.Build.Framework.BuildErrorEventArgs -&gt; string" Usage="logger.FormatErrorEvent args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Logger.FormatWarningEvent(Microsoft.Build.Framework.BuildWarningEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FormatWarningEvent (args As BuildWarningEventArgs) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ FormatWarningEvent(Microsoft::Build::Framework::BuildWarningEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member FormatWarningEvent : Microsoft.Build.Framework.BuildWarningEventArgs -&gt; string&#xA;override this.FormatWarningEvent : Microsoft.Build.Framework.BuildWarningEventArgs -&gt; string" Usage="logger.FormatWarningEvent args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Logger.Initialize(Microsoft.Build.Framework.IEventSource)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize (eventSource As IEventSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit" Usage="logger.Initialize eventSource" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Logger.IsVerbosityAtLeast(Microsoft.Build.Framework.LoggerVerbosity)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsVerbosityAtLeast (checkVerbosity As LoggerVerbosity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVerbosityAtLeast(Microsoft::Build::Framework::LoggerVerbosity checkVerbosity);" />
+      <MemberSignature Language="F#" Value="member this.IsVerbosityAtLeast : Microsoft.Build.Framework.LoggerVerbosity -&gt; bool" Usage="logger.IsVerbosityAtLeast checkVerbosity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Logger.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.Utilities.Logger.Parameters" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.Logger.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="logger.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.Logger.Verbosity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Verbosity As LoggerVerbosity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity with get, set" Usage="Microsoft.Build.Utilities.Logger.Verbosity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>

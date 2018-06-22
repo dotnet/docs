@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyValueEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyValueEditor" />
+  <TypeSignature Language="F#" Value="type PropertyValueEditor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor(System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inlineEditorTemplate As DataTemplate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyValueEditor(System::Windows::DataTemplate ^ inlineEditorTemplate);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.PropertyValueEditor : System.Windows.DataTemplate -&gt; System.Activities.Presentation.PropertyEditing.PropertyValueEditor" Usage="new System.Activities.Presentation.PropertyEditing.PropertyValueEditor inlineEditorTemplate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute(System.Activities.Presentation.PropertyEditing.PropertyValueEditor)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEditorAttribute (editor As PropertyValueEditor) As EditorAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EditorAttribute ^ CreateEditorAttribute(System::Activities::Presentation::PropertyEditing::PropertyValueEditor ^ editor);" />
+      <MemberSignature Language="F#" Value="static member CreateEditorAttribute : System.Activities.Presentation.PropertyEditing.PropertyValueEditor -&gt; System.ComponentModel.EditorAttribute" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute editor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEditorAttribute (propertyValueEditorType As Type) As EditorAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EditorAttribute ^ CreateEditorAttribute(Type ^ propertyValueEditorType);" />
+      <MemberSignature Language="F#" Value="static member CreateEditorAttribute : Type -&gt; System.ComponentModel.EditorAttribute" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute propertyValueEditorType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property InlineEditorTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ InlineEditorTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InlineEditorTemplate : System.Windows.DataTemplate with get, set" Usage="System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

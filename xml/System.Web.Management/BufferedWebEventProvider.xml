@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.BufferedWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BufferedWebEventProvider&#xA;Inherits WebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class BufferedWebEventProvider abstract : System::Web::Management::WebEventProvider" />
+  <TypeSignature Language="F#" Value="type BufferedWebEventProvider = class&#xA;    inherit WebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.BufferedWebEventProvider.BufferMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferMode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BufferMode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BufferMode : string" Usage="System.Web.Management.BufferedWebEventProvider.BufferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="bufferedWebEventProvider.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="bufferedWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
+      <MemberSignature Language="F#" Value="override this.ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="bufferedWebEventProvider.ProcessEvent eventRaised" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.ProcessEventFlush(System.Web.Management.WebEventBufferFlushInfo)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessEventFlush (flushInfo As WebEventBufferFlushInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessEventFlush(System::Web::Management::WebEventBufferFlushInfo ^ flushInfo);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessEventFlush : System.Web.Management.WebEventBufferFlushInfo -&gt; unit" Usage="bufferedWebEventProvider.ProcessEventFlush flushInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.BufferedWebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
+      <MemberSignature Language="F#" Value="override this.Shutdown : unit -&gt; unit" Usage="bufferedWebEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -341,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.BufferedWebEventProvider.UseBuffering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseBuffering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseBuffering { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseBuffering : bool" Usage="System.Web.Management.BufferedWebEventProvider.UseBuffering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

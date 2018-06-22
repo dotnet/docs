@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.LineBreak" />
   <TypeSignature Language="VB.NET" Value="Public Class LineBreak&#xA;Inherits Inline" />
   <TypeSignature Language="C++ CLI" Value="public ref class LineBreak : System::Windows::Documents::Inline" />
+  <TypeSignature Language="F#" Value="type LineBreak = class&#xA;    inherit Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.LineBreak.#ctor(System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LineBreak(System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.LineBreak : System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.LineBreak" Usage="new System.Windows.Documents.LineBreak insertionPosition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

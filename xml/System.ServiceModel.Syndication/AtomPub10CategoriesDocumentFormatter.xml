@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class AtomPub10CategoriesDocumentFormatter&#xA;Inherits CategoriesDocumentFormatter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AtomPub10CategoriesDocumentFormatter : System::ServiceModel::Syndication::CategoriesDocumentFormatter, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type AtomPub10CategoriesDocumentFormatter = class&#xA;    inherit CategoriesDocumentFormatter&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor(System.ServiceModel.Syndication.CategoriesDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (documentToWrite As CategoriesDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10CategoriesDocumentFormatter(System::ServiceModel::Syndication::CategoriesDocument ^ documentToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter : System.ServiceModel.Syndication.CategoriesDocument -&gt; System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" Usage="new System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter documentToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inlineDocumentType As Type, referencedDocumentType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10CategoriesDocumentFormatter(Type ^ inlineDocumentType, Type ^ referencedDocumentType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter : Type * Type -&gt; System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" Usage="new System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter (inlineDocumentType, referencedDocumentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="atomPub10CategoriesDocumentFormatter.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CreateInlineCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInlineCategoriesDocument () As InlineCategoriesDocument" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::InlineCategoriesDocument ^ CreateInlineCategoriesDocument();" />
+      <MemberSignature Language="F#" Value="override this.CreateInlineCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument" Usage="atomPub10CategoriesDocumentFormatter.CreateInlineCategoriesDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CreateReferencedCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateReferencedCategoriesDocument () As ReferencedCategoriesDocument" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::ReferencedCategoriesDocument ^ CreateReferencedCategoriesDocument();" />
+      <MemberSignature Language="F#" Value="override this.CreateReferencedCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument" Usage="atomPub10CategoriesDocumentFormatter.CreateReferencedCategoriesDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="atomPub10CategoriesDocumentFormatter.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -317,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -348,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="atomPub10CategoriesDocumentFormatter.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

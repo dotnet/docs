@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.DownloadProgressEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DownloadProgressEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DownloadProgressEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DownloadProgressEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.DownloadProgressEventArgs.Progress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Progress As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Progress { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Progress : int" Usage="System.Windows.Media.Imaging.DownloadProgressEventArgs.Progress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackagingProgressEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PackagingProgressEventHandler(sender As Object, e As PackagingProgressEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PackagingProgressEventHandler(System::Object ^ sender, PackagingProgressEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PackagingProgressEventHandler = delegate of obj * PackagingProgressEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

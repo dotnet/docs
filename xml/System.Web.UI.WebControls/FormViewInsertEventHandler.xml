@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewInsertEventHandler(sender As Object, e As FormViewInsertEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FormViewInsertEventHandler(System::Object ^ sender, FormViewInsertEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type FormViewInsertEventHandler = delegate of obj * FormViewInsertEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

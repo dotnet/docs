@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IHttpModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHttpModule" />
   <TypeSignature Language="C++ CLI" Value="public interface class IHttpModule" />
+  <TypeSignature Language="F#" Value="type IHttpModule = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="iHttpModule.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (context As HttpApplication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Web::HttpApplication ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit" Usage="iHttpModule.Init context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

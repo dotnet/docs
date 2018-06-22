@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistenceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersistenceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersistenceMode" />
+  <TypeSignature Language="F#" Value="type PersistenceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="C++ CLI" Value="Attribute" />
+      <MemberSignature Language="F#" Value="Attribute = 0" Usage="System.Web.UI.PersistenceMode.Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.EncodedInnerDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="EncodedInnerDefaultProperty" />
       <MemberSignature Language="C++ CLI" Value="EncodedInnerDefaultProperty" />
+      <MemberSignature Language="F#" Value="EncodedInnerDefaultProperty = 3" Usage="System.Web.UI.PersistenceMode.EncodedInnerDefaultProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.InnerDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="InnerDefaultProperty" />
       <MemberSignature Language="C++ CLI" Value="InnerDefaultProperty" />
+      <MemberSignature Language="F#" Value="InnerDefaultProperty = 2" Usage="System.Web.UI.PersistenceMode.InnerDefaultProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.InnerProperty" />
       <MemberSignature Language="VB.NET" Value="InnerProperty" />
       <MemberSignature Language="C++ CLI" Value="InnerProperty" />
+      <MemberSignature Language="F#" Value="InnerProperty = 1" Usage="System.Web.UI.PersistenceMode.InnerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

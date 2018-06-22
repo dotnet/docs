@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClaimTypeElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimTypeElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of ClaimTypeElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimTypeElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::ClaimTypeElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type ClaimTypeElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;ClaimTypeElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="claimTypeElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

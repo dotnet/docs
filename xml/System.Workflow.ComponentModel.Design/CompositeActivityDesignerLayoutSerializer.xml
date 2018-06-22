@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityDesignerLayoutSerializer&#xA;Inherits ActivityDesignerLayoutSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityDesignerLayoutSerializer : System::Workflow::ComponentModel::Design::ActivityDesignerLayoutSerializer" />
+  <TypeSignature Language="F#" Value="type CompositeActivityDesignerLayoutSerializer = class&#xA;    inherit ActivityDesignerLayoutSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer.GetProperties(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProperties (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As PropertyInfo()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.PropertyInfo[]" Usage="compositeActivityDesignerLayoutSerializer.GetProperties (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChartNamedElement&#xA;Inherits ChartElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChartNamedElement abstract : System::Windows::Forms::DataVisualization::Charting::ChartElement" />
+  <TypeSignature Language="F#" Value="type ChartNamedElement = class&#xA;    inherit ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChartNamedElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ChartNamedElement : string -&gt; System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" Usage="new System.Windows.Forms.DataVisualization.Charting.ChartNamedElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

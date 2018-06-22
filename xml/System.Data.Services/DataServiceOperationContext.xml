@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceOperationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceOperationContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceOperationContext sealed" />
+  <TypeSignature Language="F#" Value="type DataServiceOperationContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.AbsoluteRequestUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteRequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ AbsoluteRequestUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteRequestUri : Uri" Usage="System.Data.Services.DataServiceOperationContext.AbsoluteRequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.AbsoluteServiceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteServiceUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ AbsoluteServiceUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteServiceUri : Uri" Usage="System.Data.Services.DataServiceOperationContext.AbsoluteServiceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.IsBatchRequest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBatchRequest As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBatchRequest { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBatchRequest : bool" Usage="System.Data.Services.DataServiceOperationContext.IsBatchRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.RequestHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHeaders As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ RequestHeaders { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.DataServiceOperationContext.RequestHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.RequestMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestMethod { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestMethod : string" Usage="System.Data.Services.DataServiceOperationContext.RequestMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.ResponseHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseHeaders As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ ResponseHeaders { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.DataServiceOperationContext.ResponseHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceOperationContext.ResponseStatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseStatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResponseStatusCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseStatusCode : int with get, set" Usage="System.Data.Services.DataServiceOperationContext.ResponseStatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

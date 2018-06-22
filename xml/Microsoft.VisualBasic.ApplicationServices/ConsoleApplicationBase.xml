@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
   <TypeSignature Language="VB.NET" Value="Public Class ConsoleApplicationBase&#xA;Inherits ApplicationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConsoleApplicationBase : Microsoft::VisualBasic::ApplicationServices::ApplicationBase" />
+  <TypeSignature Language="F#" Value="type ConsoleApplicationBase = class&#xA;    inherit ApplicationBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLineArgs As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CommandLineArgs { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLineArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Deployment As ApplicationDeployment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::ApplicationDeployment ^ Deployment { System::Deployment::Application::ApplicationDeployment ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Deployment : System.Deployment.Application.ApplicationDeployment" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine" />
       <MemberSignature Language="VB.NET" Value="Protected Property InternalCommandLine As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ InternalCommandLine {  void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InternalCommandLine : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNetworkDeployed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNetworkDeployed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNetworkDeployed : bool" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

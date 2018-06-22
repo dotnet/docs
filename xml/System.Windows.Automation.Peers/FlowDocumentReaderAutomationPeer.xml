@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowDocumentReaderAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IMultipleViewProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlowDocumentReaderAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IMultipleViewProvider" />
+  <TypeSignature Language="F#" Value="type FlowDocumentReaderAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IMultipleViewProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.#ctor(System.Windows.Controls.FlowDocumentReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FlowDocumentReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowDocumentReaderAutomationPeer(System::Windows::Controls::FlowDocumentReader ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer : System.Windows.Controls.FlowDocumentReader -&gt; System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer" Usage="new System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="flowDocumentReaderAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="flowDocumentReaderAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="flowDocumentReaderAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#CurrentView" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CurrentView As Integer Implements IMultipleViewProvider.CurrentView" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.FlowDocumentReaderAutomationPeer.System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView</InterfaceMember>

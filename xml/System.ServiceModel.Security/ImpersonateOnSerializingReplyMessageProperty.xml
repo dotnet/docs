@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class ImpersonateOnSerializingReplyMessageProperty&#xA;Implements IMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImpersonateOnSerializingReplyMessageProperty : System::ServiceModel::Channels::IMessageProperty" />
+  <TypeSignature Language="F#" Value="type ImpersonateOnSerializingReplyMessageProperty = class&#xA;    interface IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty&#xA;override this.CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty" Usage="impersonateOnSerializingReplyMessageProperty.CreateCopy " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.StartImpersonation(System.IDisposable@,System.Security.Principal.IPrincipal@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartImpersonation (ByRef impersonationContext As IDisposable, ByRef originalPrincipal As IPrincipal, ByRef isThreadPrincipalSet As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartImpersonation([Runtime::InteropServices::Out] IDisposable ^ % impersonationContext, [Runtime::InteropServices::Out] System::Security::Principal::IPrincipal ^ % originalPrincipal, [Runtime::InteropServices::Out] bool % isThreadPrincipalSet);" />
+      <MemberSignature Language="F#" Value="member this.StartImpersonation :  *  *  -&gt; unit" Usage="impersonateOnSerializingReplyMessageProperty.StartImpersonation (impersonationContext, originalPrincipal, isThreadPrincipalSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.StopImpersonation(System.IDisposable,System.Security.Principal.IPrincipal,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopImpersonation (impersonationContext As IDisposable, originalPrincipal As IPrincipal, isThreadPrincipalSet As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopImpersonation(IDisposable ^ impersonationContext, System::Security::Principal::IPrincipal ^ originalPrincipal, bool isThreadPrincipalSet);" />
+      <MemberSignature Language="F#" Value="member this.StopImpersonation : IDisposable * System.Security.Principal.IPrincipal * bool -&gt; unit" Usage="impersonateOnSerializingReplyMessageProperty.StopImpersonation (impersonationContext, originalPrincipal, isThreadPrincipalSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Security::ImpersonateOnSerializingReplyMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet (message, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As ImpersonateOnSerializingReplyMessageProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Security::ImpersonateOnSerializingReplyMessageProperty ^ % property);" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet (properties, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

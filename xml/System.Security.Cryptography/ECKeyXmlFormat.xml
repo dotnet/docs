@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECKeyXmlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum ECKeyXmlFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class ECKeyXmlFormat" />
+  <TypeSignature Language="F#" Value="type ECKeyXmlFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />
       <MemberSignature Language="VB.NET" Value="Rfc4050" />
       <MemberSignature Language="C++ CLI" Value="Rfc4050" />
+      <MemberSignature Language="F#" Value="Rfc4050 = 0" Usage="System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

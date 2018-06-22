@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.Registry" />
   <TypeSignature Language="VB.NET" Value="Public Class Registry" />
   <TypeSignature Language="C++ CLI" Value="public ref class Registry abstract sealed" />
+  <TypeSignature Language="F#" Value="type Registry = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.ClassesRoot" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClassesRoot As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ ClassesRoot;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClassesRoot : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.ClassesRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.CurrentConfig" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CurrentConfig As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ CurrentConfig;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CurrentConfig : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.CurrentConfig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CurrentUser As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ CurrentUser;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CurrentUser : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.DynData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DynData As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ DynData;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DynData : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.DynData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.GetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValue (keyName As String, valueName As String, defaultValue As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="static member GetValue : string * string * obj -&gt; obj" Usage="Microsoft.Win32.Registry.GetValue (keyName, valueName, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LocalMachine As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ LocalMachine;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LocalMachine : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -397,6 +404,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.PerformanceData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PerformanceData As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ PerformanceData;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PerformanceData : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.PerformanceData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -468,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValue (keyName As String, valueName As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetValue : string * string * obj -&gt; unit" Usage="Microsoft.Win32.Registry.SetValue (keyName, valueName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -551,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValue (keyName As String, valueName As String, value As Object, valueKind As RegistryValueKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value, Microsoft::Win32::RegistryValueKind valueKind);" />
+      <MemberSignature Language="F#" Value="static member SetValue : string * string * obj * Microsoft.Win32.RegistryValueKind -&gt; unit" Usage="Microsoft.Win32.Registry.SetValue (keyName, valueName, value, valueKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -639,6 +649,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.Users" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Users As RegistryKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Win32::RegistryKey ^ Users;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Users : Microsoft.Win32.RegistryKey" Usage="Microsoft.Win32.Registry.Users" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>

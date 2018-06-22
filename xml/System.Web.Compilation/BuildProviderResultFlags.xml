@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderResultFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuildProviderResultFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class BuildProviderResultFlags" />
+  <TypeSignature Language="F#" Value="type BuildProviderResultFlags = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Compilation.BuildProviderResultFlags.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange" />
       <MemberSignature Language="VB.NET" Value="ShutdownAppDomainOnChange" />
       <MemberSignature Language="C++ CLI" Value="ShutdownAppDomainOnChange" />
+      <MemberSignature Language="F#" Value="ShutdownAppDomainOnChange = 1" Usage="System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

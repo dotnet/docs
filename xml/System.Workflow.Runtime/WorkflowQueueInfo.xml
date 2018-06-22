@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueueInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueueInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowQueueInfo" />
+  <TypeSignature Language="F#" Value="type WorkflowQueueInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Items { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.ICollection" Usage="System.Workflow.Runtime.WorkflowQueueInfo.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Runtime.WorkflowQueueInfo.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubscribedActivityNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ SubscribedActivityNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubscribedActivityNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

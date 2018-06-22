@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyUnit" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProsodyUnit" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProsodyUnit" />
+  <TypeSignature Language="F#" Value="type ProsodyUnit = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Hz" />
       <MemberSignature Language="VB.NET" Value="Hz" />
       <MemberSignature Language="C++ CLI" Value="Hz" />
+      <MemberSignature Language="F#" Value="Hz = 1" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Hz" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Semitone" />
       <MemberSignature Language="VB.NET" Value="Semitone" />
       <MemberSignature Language="C++ CLI" Value="Semitone" />
+      <MemberSignature Language="F#" Value="Semitone = 2" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Semitone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

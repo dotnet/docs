@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowInteractionState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WindowInteractionState" />
   <TypeSignature Language="C++ CLI" Value="public enum class WindowInteractionState" />
+  <TypeSignature Language="F#" Value="type WindowInteractionState = " />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.BlockedByModalWindow" />
       <MemberSignature Language="VB.NET" Value="BlockedByModalWindow" />
       <MemberSignature Language="C++ CLI" Value="BlockedByModalWindow" />
+      <MemberSignature Language="F#" Value="BlockedByModalWindow = 3" Usage="System.Windows.Automation.WindowInteractionState.BlockedByModalWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.Closing" />
       <MemberSignature Language="VB.NET" Value="Closing" />
       <MemberSignature Language="C++ CLI" Value="Closing" />
+      <MemberSignature Language="F#" Value="Closing = 1" Usage="System.Windows.Automation.WindowInteractionState.Closing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.NotResponding" />
       <MemberSignature Language="VB.NET" Value="NotResponding" />
       <MemberSignature Language="C++ CLI" Value="NotResponding" />
+      <MemberSignature Language="F#" Value="NotResponding = 4" Usage="System.Windows.Automation.WindowInteractionState.NotResponding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction" />
       <MemberSignature Language="VB.NET" Value="ReadyForUserInteraction" />
       <MemberSignature Language="C++ CLI" Value="ReadyForUserInteraction" />
+      <MemberSignature Language="F#" Value="ReadyForUserInteraction = 2" Usage="System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.Running" />
       <MemberSignature Language="VB.NET" Value="Running" />
       <MemberSignature Language="C++ CLI" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 0" Usage="System.Windows.Automation.WindowInteractionState.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

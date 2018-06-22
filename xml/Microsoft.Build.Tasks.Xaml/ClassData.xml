@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.ClassData" />
   <TypeSignature Language="VB.NET" Value="Public Class ClassData" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClassData" />
+  <TypeSignature Language="F#" Value="type ClassData = class" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As IList(Of AttributeData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::AttributeData ^&gt; ^ Attributes { System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::AttributeData ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Generic.IList&lt;Microsoft.Build.Tasks.Xaml.AttributeData&gt;" Usage="Microsoft.Build.Tasks.Xaml.ClassData.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseType As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ BaseType { System::Xaml::XamlType ^ get(); void set(System::Xaml::XamlType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.Xaml.XamlType with get, set" Usage="Microsoft.Build.Tasks.Xaml.ClassData.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.CodeSnippets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeSnippets As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ CodeSnippets { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeSnippets : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Build.Tasks.Xaml.ClassData.CodeSnippets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceFileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmbeddedResourceFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EmbeddedResourceFileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmbeddedResourceFileName : string" Usage="Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceXaml" />
       <MemberSignature Language="VB.NET" Value="Public Property EmbeddedResourceXaml As XamlNodeList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlNodeList ^ EmbeddedResourceXaml { System::Xaml::XamlNodeList ^ get(); void set(System::Xaml::XamlNodeList ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmbeddedResourceXaml : System.Xaml.XamlNodeList with get, set" Usage="Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceXaml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="Microsoft.Build.Tasks.Xaml.ClassData.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.HelperClassFullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelperClassFullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelperClassFullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelperClassFullName : string" Usage="Microsoft.Build.Tasks.Xaml.ClassData.HelperClassFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -180,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPublic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.ClassData.IsPublic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Tasks.Xaml.ClassData.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -221,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.NamedObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamedObjects As IList(Of NamedObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::NamedObject ^&gt; ^ NamedObjects { System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::NamedObject ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamedObjects : System.Collections.Generic.IList&lt;Microsoft.Build.Tasks.Xaml.NamedObject&gt;" Usage="Microsoft.Build.Tasks.Xaml.ClassData.NamedObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -241,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="Microsoft.Build.Tasks.Xaml.ClassData.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -261,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.ClassData.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As KeyedCollection(Of String, PropertyData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, Microsoft::Build::Tasks::Xaml::PropertyData ^&gt; ^ Properties { System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, Microsoft::Build::Tasks::Xaml::PropertyData ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.ObjectModel.KeyedCollection&lt;string, Microsoft.Build.Tasks.Xaml.PropertyData&gt;" Usage="Microsoft.Build.Tasks.Xaml.ClassData.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

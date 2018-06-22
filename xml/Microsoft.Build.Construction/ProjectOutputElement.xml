@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectOutputElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectOutputElement&#xA;Inherits ProjectElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectOutputElement : Microsoft::Build::Construction::ProjectElement" />
+  <TypeSignature Language="F#" Value="type ProjectOutputElement = class&#xA;    inherit ProjectElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.IsOutputItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOutputItem As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOutputItem { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOutputItem : bool" Usage="Microsoft.Build.Construction.ProjectOutputElement.IsOutputItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.IsOutputProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOutputProperty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOutputProperty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOutputProperty : bool" Usage="Microsoft.Build.Construction.ProjectOutputElement.IsOutputProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="Microsoft.Build.Construction.ProjectOutputElement.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.ItemTypeLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemTypeLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ItemTypeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTypeLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectOutputElement.ItemTypeLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="Microsoft.Build.Construction.ProjectOutputElement.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.PropertyNameLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyNameLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ PropertyNameLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNameLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectOutputElement.PropertyNameLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.TaskParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskParameter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskParameter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TaskParameter : string with get, set" Usage="Microsoft.Build.Construction.ProjectOutputElement.TaskParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOutputElement.TaskParameterLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskParameterLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ TaskParameterLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskParameterLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectOutputElement.TaskParameterLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

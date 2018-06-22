@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Storyboard" />
   <TypeSignature Language="VB.NET" Value="Public Class Storyboard&#xA;Inherits ParallelTimeline" />
   <TypeSignature Language="C++ CLI" Value="public ref class Storyboard : System::Windows::Media::Animation::ParallelTimeline" />
+  <TypeSignature Language="F#" Value="type Storyboard = class&#xA;    inherit ParallelTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin();" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; unit" Usage="storyboard.Begin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.Begin containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.Begin containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin (containingObject As FrameworkContentElement, isControllable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkContentElement ^ containingObject, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkContentElement * bool -&gt; unit" Usage="storyboard.Begin (containingObject, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Windows.Media.Animation.HandoffBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkContentElement ^ containingObject, System::Windows::Media::Animation::HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkContentElement * System.Windows.Media.Animation.HandoffBehavior -&gt; unit" Usage="storyboard.Begin (containingObject, handoffBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin (containingObject As FrameworkElement, isControllable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * bool -&gt; unit" Usage="storyboard.Begin (containingObject, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +318,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.FrameworkTemplate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::FrameworkTemplate ^ frameworkTemplate);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.FrameworkTemplate -&gt; unit" Usage="storyboard.Begin (containingObject, frameworkTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -346,6 +354,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.Media.Animation.HandoffBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::Media::Animation::HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.Media.Animation.HandoffBehavior -&gt; unit" Usage="storyboard.Begin (containingObject, handoffBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -380,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Windows.Media.Animation.HandoffBehavior,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkContentElement ^ containingObject, System::Windows::Media::Animation::HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkContentElement * System.Windows.Media.Animation.HandoffBehavior * bool -&gt; unit" Usage="storyboard.Begin (containingObject, handoffBehavior, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, bool isControllable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.FrameworkTemplate,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::FrameworkTemplate ^ frameworkTemplate, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.FrameworkTemplate * bool -&gt; unit" Usage="storyboard.Begin (containingObject, frameworkTemplate, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -485,6 +496,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.FrameworkTemplate,System.Windows.Media.Animation.HandoffBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::FrameworkTemplate ^ frameworkTemplate, System::Windows::Media::Animation::HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.FrameworkTemplate * System.Windows.Media.Animation.HandoffBehavior -&gt; unit" Usage="storyboard.Begin (containingObject, frameworkTemplate, handoffBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -533,6 +545,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.Media.Animation.HandoffBehavior,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::Media::Animation::HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.Media.Animation.HandoffBehavior * bool -&gt; unit" Usage="storyboard.Begin (containingObject, handoffBehavior, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -596,6 +609,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Windows.FrameworkTemplate,System.Windows.Media.Animation.HandoffBehavior,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin(System::Windows::FrameworkElement ^ containingObject, System::Windows::FrameworkTemplate ^ frameworkTemplate, System::Windows::Media::Animation::HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Windows.FrameworkElement * System.Windows.FrameworkTemplate * System.Windows.Media.Animation.HandoffBehavior * bool -&gt; unit" Usage="storyboard.Begin (containingObject, frameworkTemplate, handoffBehavior, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Storyboard" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Storyboard ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.Storyboard" Usage="storyboard.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -680,6 +695,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="storyboard.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -740,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentGlobalSpeed" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentGlobalSpeed () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetCurrentGlobalSpeed();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentGlobalSpeed : unit -&gt; double" Usage="storyboard.GetCurrentGlobalSpeed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -761,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentGlobalSpeed(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentGlobalSpeed (containingObject As FrameworkContentElement) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;double&gt; GetCurrentGlobalSpeed(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentGlobalSpeed : System.Windows.FrameworkContentElement -&gt; Nullable&lt;double&gt;" Usage="storyboard.GetCurrentGlobalSpeed containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -795,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentGlobalSpeed(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentGlobalSpeed (containingObject As FrameworkElement) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;double&gt; GetCurrentGlobalSpeed(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentGlobalSpeed : System.Windows.FrameworkElement -&gt; Nullable&lt;double&gt;" Usage="storyboard.GetCurrentGlobalSpeed containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -838,6 +857,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentIteration" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentIteration () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCurrentIteration();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentIteration : unit -&gt; int" Usage="storyboard.GetCurrentIteration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -871,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentIteration(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentIteration (containingObject As FrameworkContentElement) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;int&gt; GetCurrentIteration(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentIteration : System.Windows.FrameworkContentElement -&gt; Nullable&lt;int&gt;" Usage="storyboard.GetCurrentIteration containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -907,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentIteration(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentIteration (containingObject As FrameworkElement) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;int&gt; GetCurrentIteration(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentIteration : System.Windows.FrameworkElement -&gt; Nullable&lt;int&gt;" Usage="storyboard.GetCurrentIteration containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -954,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentProgress" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentProgress () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetCurrentProgress();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentProgress : unit -&gt; double" Usage="storyboard.GetCurrentProgress " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -983,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentProgress(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentProgress (containingObject As FrameworkContentElement) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;double&gt; GetCurrentProgress(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentProgress : System.Windows.FrameworkContentElement -&gt; Nullable&lt;double&gt;" Usage="storyboard.GetCurrentProgress containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1015,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentProgress(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentProgress (containingObject As FrameworkElement) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;double&gt; GetCurrentProgress(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentProgress : System.Windows.FrameworkElement -&gt; Nullable&lt;double&gt;" Usage="storyboard.GetCurrentProgress containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1056,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentState" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentState () As ClockState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ClockState GetCurrentState();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentState : unit -&gt; System.Windows.Media.Animation.ClockState" Usage="storyboard.GetCurrentState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1086,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentState(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentState (containingObject As FrameworkContentElement) As ClockState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ClockState GetCurrentState(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentState : System.Windows.FrameworkContentElement -&gt; System.Windows.Media.Animation.ClockState" Usage="storyboard.GetCurrentState containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1119,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentState(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentState (containingObject As FrameworkElement) As ClockState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ClockState GetCurrentState(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentState : System.Windows.FrameworkElement -&gt; System.Windows.Media.Animation.ClockState" Usage="storyboard.GetCurrentState containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1161,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentTime" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTime () As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetCurrentTime();" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTime : unit -&gt; TimeSpan" Usage="storyboard.GetCurrentTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1191,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentTime(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTime (containingObject As FrameworkContentElement) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;TimeSpan&gt; GetCurrentTime(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTime : System.Windows.FrameworkContentElement -&gt; Nullable&lt;TimeSpan&gt;" Usage="storyboard.GetCurrentTime containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1224,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetCurrentTime(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentTime (containingObject As FrameworkElement) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;TimeSpan&gt; GetCurrentTime(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentTime : System.Windows.FrameworkElement -&gt; Nullable&lt;TimeSpan&gt;" Usage="storyboard.GetCurrentTime containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1266,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetIsPaused" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIsPaused () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsPaused();" />
+      <MemberSignature Language="F#" Value="member this.GetIsPaused : unit -&gt; bool" Usage="storyboard.GetIsPaused " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1296,6 +1328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetIsPaused(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIsPaused (containingObject As FrameworkContentElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsPaused(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetIsPaused : System.Windows.FrameworkContentElement -&gt; bool" Usage="storyboard.GetIsPaused containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1329,6 +1362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetIsPaused(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIsPaused (containingObject As FrameworkElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsPaused(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.GetIsPaused : System.Windows.FrameworkElement -&gt; bool" Usage="storyboard.GetIsPaused containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1362,6 +1396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetTarget(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTarget (element As DependencyObject) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetTarget(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTarget : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.Media.Animation.Storyboard.GetTarget element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1399,6 +1434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetTargetName(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTargetName (element As DependencyObject) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTargetName(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTargetName : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Media.Animation.Storyboard.GetTargetName element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1431,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.GetTargetProperty(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTargetProperty (element As DependencyObject) As PropertyPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::PropertyPath ^ GetTargetProperty(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTargetProperty : System.Windows.DependencyObject -&gt; System.Windows.PropertyPath" Usage="System.Windows.Media.Animation.Storyboard.GetTargetProperty element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1474,6 +1511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="storyboard.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1506,6 +1544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Pause(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Pause : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.Pause containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1554,6 +1593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Pause(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Pause : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.Pause containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1603,6 +1643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="storyboard.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1632,6 +1673,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Remove(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.Remove containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1664,6 +1706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Remove(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.Remove containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1705,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="storyboard.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1732,6 +1776,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Resume(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Resume : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.Resume containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1777,6 +1822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Resume(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Resume : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.Resume containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1823,6 +1869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Seek(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (offset As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(TimeSpan offset);" />
+      <MemberSignature Language="F#" Value="member this.Seek : TimeSpan -&gt; unit" Usage="storyboard.Seek offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1855,6 +1902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Seek(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.Seek : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.Seek (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1889,6 +1937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Seek(System.Windows.FrameworkContentElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (containingObject As FrameworkContentElement, offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(System::Windows::FrameworkContentElement ^ containingObject, TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.Seek : System.Windows.FrameworkContentElement * TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.Seek (containingObject, offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1937,6 +1986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Seek(System.Windows.FrameworkElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (containingObject As FrameworkElement, offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(System::Windows::FrameworkElement ^ containingObject, TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.Seek : System.Windows.FrameworkElement * TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.Seek (containingObject, offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2000,6 +2050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (offset As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(TimeSpan offset);" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : TimeSpan -&gt; unit" Usage="storyboard.SeekAlignedToLastTick offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2034,6 +2085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.SeekAlignedToLastTick (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2070,6 +2122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.Windows.FrameworkContentElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (containingObject As FrameworkContentElement, offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(System::Windows::FrameworkContentElement ^ containingObject, TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : System.Windows.FrameworkContentElement * TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.SeekAlignedToLastTick (containingObject, offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2122,6 +2175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.Windows.FrameworkElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (containingObject As FrameworkElement, offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(System::Windows::FrameworkElement ^ containingObject, TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : System.Windows.FrameworkElement * TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="storyboard.SeekAlignedToLastTick (containingObject, offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2183,6 +2237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetSpeedRatio(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSpeedRatio (speedRatio As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSpeedRatio(double speedRatio);" />
+      <MemberSignature Language="F#" Value="member this.SetSpeedRatio : double -&gt; unit" Usage="storyboard.SetSpeedRatio speedRatio" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2213,6 +2268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetSpeedRatio(System.Windows.FrameworkContentElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSpeedRatio (containingObject As FrameworkContentElement, speedRatio As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSpeedRatio(System::Windows::FrameworkContentElement ^ containingObject, double speedRatio);" />
+      <MemberSignature Language="F#" Value="member this.SetSpeedRatio : System.Windows.FrameworkContentElement * double -&gt; unit" Usage="storyboard.SetSpeedRatio (containingObject, speedRatio)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2255,6 +2311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetSpeedRatio(System.Windows.FrameworkElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSpeedRatio (containingObject As FrameworkElement, speedRatio As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSpeedRatio(System::Windows::FrameworkElement ^ containingObject, double speedRatio);" />
+      <MemberSignature Language="F#" Value="member this.SetSpeedRatio : System.Windows.FrameworkElement * double -&gt; unit" Usage="storyboard.SetSpeedRatio (containingObject, speedRatio)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2289,6 +2346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetTarget(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTarget (element As DependencyObject, value As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTarget(System::Windows::DependencyObject ^ element, System::Windows::DependencyObject ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetTarget : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="System.Windows.Media.Animation.Storyboard.SetTarget (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2325,6 +2383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetTargetName(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTargetName (element As DependencyObject, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTargetName(System::Windows::DependencyObject ^ element, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member SetTargetName : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Media.Animation.Storyboard.SetTargetName (element, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2358,6 +2417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SetTargetProperty(System.Windows.DependencyObject,System.Windows.PropertyPath)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTargetProperty (element As DependencyObject, path As PropertyPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTargetProperty(System::Windows::DependencyObject ^ element, System::Windows::PropertyPath ^ path);" />
+      <MemberSignature Language="F#" Value="static member SetTargetProperty : System.Windows.DependencyObject * System.Windows.PropertyPath -&gt; unit" Usage="System.Windows.Media.Animation.Storyboard.SetTargetProperty (element, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2400,6 +2460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SkipToFill" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkipToFill ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToFill();" />
+      <MemberSignature Language="F#" Value="member this.SkipToFill : unit -&gt; unit" Usage="storyboard.SkipToFill " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2427,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SkipToFill(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkipToFill (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToFill(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.SkipToFill : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.SkipToFill containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2471,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.SkipToFill(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkipToFill (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToFill(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.SkipToFill : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.SkipToFill containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2516,6 +2579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="storyboard.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2543,6 +2607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Stop(System.Windows.FrameworkContentElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop (containingObject As FrameworkContentElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop(System::Windows::FrameworkContentElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Stop : System.Windows.FrameworkContentElement -&gt; unit" Usage="storyboard.Stop containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2585,6 +2650,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Storyboard.Stop(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop (containingObject As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop(System::Windows::FrameworkElement ^ containingObject);" />
+      <MemberSignature Language="F#" Value="member this.Stop : System.Windows.FrameworkElement -&gt; unit" Usage="storyboard.Stop containingObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2618,6 +2684,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTarget, and SetTarget" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Storyboard.Target" />
       <MemberSignature Language="VB.NET" Value="see GetTarget, and SetTarget" />
+      <MemberSignature Language="F#" Value="see GetTarget, and SetTarget" Usage="see GetTarget, and SetTarget" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2633,6 +2700,7 @@
       <MemberSignature Language="ILAsm" Value="see GetTargetName, and SetTargetName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Storyboard.TargetName" />
       <MemberSignature Language="VB.NET" Value="see GetTargetName, and SetTargetName" />
+      <MemberSignature Language="F#" Value="see GetTargetName, and SetTargetName" Usage="see GetTargetName, and SetTargetName" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2649,6 +2717,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Storyboard.TargetNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TargetNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetNameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Storyboard.TargetNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2669,6 +2738,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Storyboard.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Storyboard.TargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2689,6 +2759,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Storyboard.TargetPropertyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetPropertyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TargetPropertyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetPropertyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.Storyboard.TargetPropertyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

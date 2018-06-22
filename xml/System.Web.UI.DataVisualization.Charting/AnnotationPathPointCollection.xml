@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationPathPointCollection&#xA;Inherits ChartElementCollection(Of AnnotationPathPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationPathPointCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::AnnotationPathPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type AnnotationPathPointCollection = class&#xA;    inherit ChartElementCollection&lt;AnnotationPathPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.#ctor(System.Web.UI.DataVisualization.Charting.PolylineAnnotation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotation As PolylineAnnotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationPathPointCollection(System::Web::UI::DataVisualization::Charting::PolylineAnnotation ^ annotation);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection : System.Web.UI.DataVisualization.Charting.PolylineAnnotation -&gt; System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection" Usage="new System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection annotation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="annotationPathPointCollection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Invalidate();" />
+      <MemberSignature Language="F#" Value="override this.Invalidate : unit -&gt; unit" Usage="annotationPathPointCollection.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

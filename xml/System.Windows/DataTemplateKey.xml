@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataTemplateKey" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTemplateKey&#xA;Inherits TemplateKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTemplateKey : System::Windows::TemplateKey" />
+  <TypeSignature Language="F#" Value="type DataTemplateKey = class&#xA;    inherit TemplateKey" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataTemplateKey.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataType As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTemplateKey(System::Object ^ dataType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataTemplateKey : obj -&gt; System.Windows.DataTemplateKey" Usage="new System.Windows.DataTemplateKey dataType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

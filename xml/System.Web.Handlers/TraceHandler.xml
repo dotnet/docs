@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.TraceHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class TraceHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceHandler : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type TraceHandler = class&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.TraceHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Handlers.TraceHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.TraceHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProcessRequest (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProcessRequest(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="traceHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.TraceHandler.ShowDetails(System.Data.DataSet)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ShowDetails (data As DataSet)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ShowDetails(System::Data::DataSet ^ data);" />
+      <MemberSignature Language="F#" Value="member this.ShowDetails : System.Data.DataSet -&gt; unit" Usage="traceHandler.ShowDetails data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.TraceHandler.ShowRequests(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ShowRequests (data As IList)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ShowRequests(System::Collections::IList ^ data);" />
+      <MemberSignature Language="F#" Value="member this.ShowRequests : System.Collections.IList -&gt; unit" Usage="traceHandler.ShowRequests data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.TraceHandler.ShowVersionDetails" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ShowVersionDetails ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ShowVersionDetails();" />
+      <MemberSignature Language="F#" Value="member this.ShowVersionDetails : unit -&gt; unit" Usage="traceHandler.ShowVersionDetails " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.TraceHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Handlers.TraceHandler.System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>

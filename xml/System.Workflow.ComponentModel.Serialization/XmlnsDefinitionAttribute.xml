@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlnsDefinitionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlnsDefinitionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlnsDefinitionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, clrNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDefinitionAttribute(System::String ^ xmlNamespace, System::String ^ clrNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute : string * string -&gt; System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute" Usage="new System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute (xmlNamespace, clrNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.ClrNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClrNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClrNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClrNamespace : string" Usage="System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.ClrNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.XmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespace : string" Usage="System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.XmlNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

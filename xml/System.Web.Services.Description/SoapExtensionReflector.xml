@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapExtensionReflector" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapExtensionReflector" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapExtensionReflector abstract" />
+  <TypeSignature Language="F#" Value="type SoapExtensionReflector = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionReflector.ReflectDescription" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReflectDescription ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReflectDescription();" />
+      <MemberSignature Language="F#" Value="abstract member ReflectDescription : unit -&gt; unit&#xA;override this.ReflectDescription : unit -&gt; unit" Usage="soapExtensionReflector.ReflectDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapExtensionReflector.ReflectionContext" />
       <MemberSignature Language="VB.NET" Value="Public Property ReflectionContext As ProtocolReflector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ProtocolReflector ^ ReflectionContext { System::Web::Services::Description::ProtocolReflector ^ get(); void set(System::Web::Services::Description::ProtocolReflector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectionContext : System.Web.Services.Description.ProtocolReflector with get, set" Usage="System.Web.Services.Description.SoapExtensionReflector.ReflectionContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapExtensionReflector.ReflectMethod" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ReflectMethod ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReflectMethod();" />
+      <MemberSignature Language="F#" Value="abstract member ReflectMethod : unit -&gt; unit" Usage="soapExtensionReflector.ReflectMethod " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

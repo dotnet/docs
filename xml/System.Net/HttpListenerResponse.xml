@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerResponse" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListenerResponse&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerResponse sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type HttpListenerResponse = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="httpListenerResponse.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.AddHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHeader (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHeader(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddHeader : string * string -&gt; unit" Usage="httpListenerResponse.AddHeader (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendCookie(class System.Net.Cookie cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.AppendCookie(System.Net.Cookie)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendCookie(System::Net::Cookie ^ cookie);" />
+      <MemberSignature Language="F#" Value="member this.AppendCookie : System.Net.Cookie -&gt; unit" Usage="httpListenerResponse.AppendCookie cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.AppendHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendHeader (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendHeader(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AppendHeader : string * string -&gt; unit" Usage="httpListenerResponse.AppendHeader (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="httpListenerResponse.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -322,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.Close(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (responseEntity As Byte(), willBlock As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(cli::array &lt;System::Byte&gt; ^ responseEntity, bool willBlock);" />
+      <MemberSignature Language="F#" Value="member this.Close : byte[] * bool -&gt; unit" Usage="httpListenerResponse.Close (responseEntity, willBlock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -380,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ ContentEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentEncoding : System.Text.Encoding with get, set" Usage="System.Net.HttpListenerResponse.ContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -428,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.ContentLength64" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentLength64 As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ContentLength64 { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentLength64 : int64 with get, set" Usage="System.Net.HttpListenerResponse.ContentLength64" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -480,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Net.HttpListenerResponse.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -525,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.Cookies" />
       <MemberSignature Language="VB.NET" Value="Public Property Cookies As CookieCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieCollection ^ Cookies { System::Net::CookieCollection ^ get(); void set(System::Net::CookieCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Net.CookieCollection with get, set" Usage="System.Net.HttpListenerResponse.Cookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -572,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.CopyFrom(System.Net.HttpListenerResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyFrom (templateResponse As HttpListenerResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyFrom(System::Net::HttpListenerResponse ^ templateResponse);" />
+      <MemberSignature Language="F#" Value="member this.CopyFrom : System.Net.HttpListenerResponse -&gt; unit" Usage="httpListenerResponse.CopyFrom templateResponse" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -637,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection with get, set" Usage="System.Net.HttpListenerResponse.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -690,6 +703,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.KeepAlive" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepAlive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepAlive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepAlive : bool with get, set" Usage="System.Net.HttpListenerResponse.KeepAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -742,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.OutputStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ OutputStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputStream : System.IO.Stream" Usage="System.Net.HttpListenerResponse.OutputStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -793,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.ProtocolVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtocolVersion As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ ProtocolVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtocolVersion : Version with get, set" Usage="System.Net.HttpListenerResponse.ProtocolVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -844,6 +860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.Redirect(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Redirect (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Redirect(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Redirect : string -&gt; unit" Usage="httpListenerResponse.Redirect url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -894,6 +911,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.RedirectLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RedirectLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RedirectLocation : string with get, set" Usage="System.Net.HttpListenerResponse.RedirectLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -946,6 +964,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.SendChunked" />
       <MemberSignature Language="VB.NET" Value="Public Property SendChunked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendChunked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SendChunked : bool with get, set" Usage="System.Net.HttpListenerResponse.SendChunked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -983,6 +1002,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCookie(class System.Net.Cookie cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerResponse.SetCookie(System.Net.Cookie)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCookie(System::Net::Cookie ^ cookie);" />
+      <MemberSignature Language="F#" Value="member this.SetCookie : System.Net.Cookie -&gt; unit" Usage="httpListenerResponse.SetCookie cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1036,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StatusCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int with get, set" Usage="System.Net.HttpListenerResponse.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1087,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerResponse.StatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string with get, set" Usage="System.Net.HttpListenerResponse.StatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

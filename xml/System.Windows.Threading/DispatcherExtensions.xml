@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DispatcherExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DispatcherExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.BeginInvoke(System.Windows.Threading.Dispatcher,System.Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Windows::Threading::DispatcherOperation ^ BeginInvoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member BeginInvoke : System.Windows.Threading.Dispatcher * Action -&gt; System.Windows.Threading.DispatcherOperation" Usage="System.Windows.Threading.DispatcherExtensions.BeginInvoke (dispatcher, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.BeginInvoke(System.Windows.Threading.Dispatcher,System.Action,System.Windows.Threading.DispatcherPriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Windows::Threading::DispatcherOperation ^ BeginInvoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, System::Windows::Threading::DispatcherPriority priority);" />
+      <MemberSignature Language="F#" Value="static member BeginInvoke : System.Windows.Threading.Dispatcher * Action * System.Windows.Threading.DispatcherPriority -&gt; System.Windows.Threading.DispatcherOperation" Usage="System.Windows.Threading.DispatcherExtensions.BeginInvoke (dispatcher, action, priority)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * TimeSpan -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.Windows.Threading.DispatcherPriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, System::Windows::Threading::DispatcherPriority priority);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * System.Windows.Threading.DispatcherPriority -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, priority)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.TimeSpan timeout, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.TimeSpan,System.Windows.Threading.DispatcherPriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, TimeSpan timeout, System::Windows::Threading::DispatcherPriority priority);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * TimeSpan * System.Windows.Threading.DispatcherPriority -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, timeout, priority)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>

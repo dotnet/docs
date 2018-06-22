@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridCellInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure DataGridCellInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class DataGridCellInfo" />
+  <TypeSignature Language="F#" Value="type DataGridCellInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.#ctor(System.Windows.Controls.DataGridCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cell As DataGridCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCellInfo(System::Windows::Controls::DataGridCell ^ cell);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridCellInfo : System.Windows.Controls.DataGridCell -&gt; System.Windows.Controls.DataGridCellInfo" Usage="new System.Windows.Controls.DataGridCellInfo cell" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.#ctor(System.Object,System.Windows.Controls.DataGridColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, column As DataGridColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCellInfo(System::Object ^ item, System::Windows::Controls::DataGridColumn ^ column);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridCellInfo : obj * System.Windows.Controls.DataGridColumn -&gt; System.Windows.Controls.DataGridCellInfo" Usage="new System.Windows.Controls.DataGridCellInfo (item, column)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridCellInfo.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridCellInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridCellInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Windows.Controls.DataGridCellInfo.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Controls.DataGridCellInfo.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.op_Equality(System.Windows.Controls.DataGridCellInfo,System.Windows.Controls.DataGridCellInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (cell1 As DataGridCellInfo, cell2 As DataGridCellInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::DataGridCellInfo cell1, System::Windows::Controls::DataGridCellInfo cell2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.DataGridCellInfo * System.Windows.Controls.DataGridCellInfo -&gt; bool" Usage="cell1 = cell2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.op_Inequality(System.Windows.Controls.DataGridCellInfo,System.Windows.Controls.DataGridCellInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (cell1 As DataGridCellInfo, cell2 As DataGridCellInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::DataGridCellInfo cell1, System::Windows::Controls::DataGridCellInfo cell2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.DataGridCellInfo * System.Windows.Controls.DataGridCellInfo -&gt; bool" Usage="System.Windows.Controls.DataGridCellInfo.op_Inequality (cell1, cell2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

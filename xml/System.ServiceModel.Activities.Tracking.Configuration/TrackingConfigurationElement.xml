@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingConfigurationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingConfigurationElement abstract : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type TrackingConfigurationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.ElementKey" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ElementKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ ElementKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementKey : obj" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.ElementKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.GetStringPairKey(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetStringPairKey (value1 As String, value2 As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ GetStringPairKey(System::String ^ value1, System::String ^ value2);" />
+      <MemberSignature Language="F#" Value="static member GetStringPairKey : string * string -&gt; string" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.GetStringPairKey (value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

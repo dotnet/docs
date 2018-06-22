@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewSortEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewSortEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewSortEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewSortEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sortExpression, valuetype System.Web.UI.WebControls.SortDirection sortDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewSortEventArgs.#ctor(System.String,System.Web.UI.WebControls.SortDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewSortEventArgs(System::String ^ sortExpression, System::Web::UI::WebControls::SortDirection sortDirection);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewSortEventArgs : string * System.Web.UI.WebControls.SortDirection -&gt; System.Web.UI.WebControls.ListViewSortEventArgs" Usage="new System.Web.UI.WebControls.ListViewSortEventArgs (sortExpression, sortDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property SortDirection As SortDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SortDirection SortDirection { System::Web::UI::WebControls::SortDirection get(); void set(System::Web::UI::WebControls::SortDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.SortDirection : System.Web.UI.WebControls.SortDirection with get, set" Usage="System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property SortExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SortExpression : string with get, set" Usage="System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

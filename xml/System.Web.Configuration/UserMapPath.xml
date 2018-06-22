@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.UserMapPath" />
   <TypeSignature Language="VB.NET" Value="Public Class UserMapPath&#xA;Implements IConfigMapPath" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserMapPath : System::Web::Configuration::IConfigMapPath" />
+  <TypeSignature Language="F#" Value="type UserMapPath = class&#xA;    interface IConfigMapPath" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.#ctor(System.Configuration.ConfigurationFileMap)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileMap As ConfigurationFileMap)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UserMapPath(System::Configuration::ConfigurationFileMap ^ fileMap);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.UserMapPath : System.Configuration.ConfigurationFileMap -&gt; System.Web.Configuration.UserMapPath" Usage="new System.Web.Configuration.UserMapPath fileMap" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.GetAppPathForPath(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAppPathForPath (siteID As String, path As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAppPathForPath(System::String ^ siteID, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member GetAppPathForPath : string * string -&gt; string&#xA;override this.GetAppPathForPath : string * string -&gt; string" Usage="userMapPath.GetAppPathForPath (siteID, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetAppPathForPath(System.String,System.String)</InterfaceMember>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDefaultSiteNameAndID (ByRef siteName As String, ByRef siteID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetDefaultSiteNameAndID([Runtime::InteropServices::Out] System::String ^ % siteName, [Runtime::InteropServices::Out] System::String ^ % siteID);" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultSiteNameAndID :  *  -&gt; unit&#xA;override this.GetDefaultSiteNameAndID :  *  -&gt; unit" Usage="userMapPath.GetDefaultSiteNameAndID (siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)</InterfaceMember>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.GetMachineConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMachineConfigFilename () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetMachineConfigFilename();" />
+      <MemberSignature Language="F#" Value="abstract member GetMachineConfigFilename : unit -&gt; string&#xA;override this.GetMachineConfigFilename : unit -&gt; string" Usage="userMapPath.GetMachineConfigFilename " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetMachineConfigFilename</InterfaceMember>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPathConfigFilename (siteID As String, path As String, ByRef directory As String, ByRef baseName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPathConfigFilename(System::String ^ siteID, System::String ^ path, [Runtime::InteropServices::Out] System::String ^ % directory, [Runtime::InteropServices::Out] System::String ^ % baseName);" />
+      <MemberSignature Language="F#" Value="abstract member GetPathConfigFilename : string * string *  *  -&gt; unit&#xA;override this.GetPathConfigFilename : string * string *  *  -&gt; unit" Usage="userMapPath.GetPathConfigFilename (siteID, path, directory, baseName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)</InterfaceMember>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.GetRootWebConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRootWebConfigFilename () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetRootWebConfigFilename();" />
+      <MemberSignature Language="F#" Value="abstract member GetRootWebConfigFilename : unit -&gt; string&#xA;override this.GetRootWebConfigFilename : unit -&gt; string" Usage="userMapPath.GetRootWebConfigFilename " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.GetRootWebConfigFilename</InterfaceMember>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.MapPath(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPath (siteID As String, path As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MapPath(System::String ^ siteID, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member MapPath : string * string -&gt; string&#xA;override this.MapPath : string * string -&gt; string" Usage="userMapPath.MapPath (siteID, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.MapPath(System.String,System.String)</InterfaceMember>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UserMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveSiteArgument (siteArgument As String, ByRef siteName As String, ByRef siteID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResolveSiteArgument(System::String ^ siteArgument, [Runtime::InteropServices::Out] System::String ^ % siteName, [Runtime::InteropServices::Out] System::String ^ % siteID);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveSiteArgument : string *  *  -&gt; unit&#xA;override this.ResolveSiteArgument : string *  *  -&gt; unit" Usage="userMapPath.ResolveSiteArgument (siteArgument, siteName, siteID)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)</InterfaceMember>

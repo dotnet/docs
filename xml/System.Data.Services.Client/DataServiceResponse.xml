@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceResponse" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceResponse&#xA;Implements IEnumerable(Of OperationResponse)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceResponse sealed : System::Collections::Generic::IEnumerable&lt;System::Data::Services::Client::OperationResponse ^&gt;" />
+  <TypeSignature Language="F#" Value="type DataServiceResponse = class&#xA;    interface seq&lt;OperationResponse&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.BatchHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BatchHeaders As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ BatchHeaders { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BatchHeaders : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Data.Services.Client.DataServiceResponse.BatchHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.BatchStatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BatchStatusCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BatchStatusCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BatchStatusCode : int" Usage="System.Data.Services.Client.DataServiceResponse.BatchStatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceResponse.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of OperationResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Data::Services::Client::OperationResponse ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Data.Services.Client.OperationResponse&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Data.Services.Client.OperationResponse&gt;" Usage="dataServiceResponse.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.IsBatchResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBatchResponse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBatchResponse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBatchResponse : bool" Usage="System.Data.Services.Client.DataServiceResponse.IsBatchResponse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

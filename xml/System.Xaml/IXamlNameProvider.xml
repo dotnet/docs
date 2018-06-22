@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNameProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlNameProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlNameProvider" />
+  <TypeSignature Language="F#" Value="type IXamlNameProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameProvider.GetName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string" Usage="iXamlNameProvider.GetName value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

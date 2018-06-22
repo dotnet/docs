@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Zone" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Zone&#xA;Inherits EvidenceBase&#xA;Implements IIdentityPermissionFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class Zone sealed : System::Security::Policy::EvidenceBase, System::Security::Policy::IIdentityPermissionFactory" />
+  <TypeSignature Language="F#" Value="type Zone = class&#xA;    inherit EvidenceBase&#xA;    interface IIdentityPermissionFactory" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.#ctor(System.Security.SecurityZone)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (zone As SecurityZone)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Zone(System::Security::SecurityZone zone);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.Zone : System.Security.SecurityZone -&gt; System.Security.Policy.Zone" Usage="new System.Security.Policy.Zone zone" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="zone.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; obj" Usage="zone.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.CreateFromUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromUrl (url As String) As Zone" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Zone ^ CreateFromUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="static member CreateFromUrl : string -&gt; System.Security.Policy.Zone" Usage="System.Security.Policy.Zone.CreateFromUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.CreateIdentityPermission(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ CreateIdentityPermission(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission&#xA;override this.CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission" Usage="zone.CreateIdentityPermission evidence" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)</InterfaceMember>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="zone.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="zone.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Zone.SecurityZone" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityZone As SecurityZone" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecurityZone SecurityZone { System::Security::SecurityZone get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityZone : System.Security.SecurityZone" Usage="System.Security.Policy.Zone.SecurityZone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Zone.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="zone.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

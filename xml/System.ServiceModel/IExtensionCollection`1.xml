@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtensionCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtensionCollection(Of T)&#xA;Implements ICollection(Of IExtension(Of T)), IEnumerable(Of IExtension(Of T))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : IExtensibleObject&lt;T&gt;public interface class IExtensionCollection : System::Collections::Generic::ICollection&lt;System::ServiceModel::IExtension&lt;T&gt; ^&gt;, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::IExtension&lt;T&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type IExtensionCollection&lt;'T (requires 'T :&gt; IExtensibleObject&lt;'T&gt;)&gt; = interface&#xA;    interface ICollection&lt;IExtension&lt;'T&gt;&gt;&#xA;    interface seq&lt;IExtension&lt;'T&gt;&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtensionCollection`1.Find``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Find(Of E) () As E" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename E&gt;&#xA; E Find();" />
+      <MemberSignature Language="F#" Value="abstract member Find : unit -&gt; 'E" Usage="iExtensionCollection.Find " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtensionCollection`1.FindAll``1" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of E) () As Collection(Of E)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename E&gt;&#xA; System::Collections::ObjectModel::Collection&lt;E&gt; ^ FindAll();" />
+      <MemberSignature Language="F#" Value="abstract member FindAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'E&gt;" Usage="iExtensionCollection.FindAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

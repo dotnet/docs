@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RenderTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RenderTraceListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class RenderTraceListener abstract" />
+  <TypeSignature Language="F#" Value="type RenderTraceListener = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.BeginRendering(System.IO.TextWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginRendering (writer As TextWriter, renderedObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginRendering(System::IO::TextWriter ^ writer, System::Object ^ renderedObject);" />
+      <MemberSignature Language="F#" Value="abstract member BeginRendering : System.IO.TextWriter * obj -&gt; unit&#xA;override this.BeginRendering : System.IO.TextWriter * obj -&gt; unit" Usage="renderTraceListener.BeginRendering (writer, renderedObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.EndRendering(System.IO.TextWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndRendering (writer As TextWriter, renderedObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndRendering(System::IO::TextWriter ^ writer, System::Object ^ renderedObject);" />
+      <MemberSignature Language="F#" Value="abstract member EndRendering : System.IO.TextWriter * obj -&gt; unit&#xA;override this.EndRendering : System.IO.TextWriter * obj -&gt; unit" Usage="renderTraceListener.EndRendering (writer, renderedObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.Initialize(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Web.HttpContext -&gt; unit&#xA;override this.Initialize : System.Web.HttpContext -&gt; unit" Usage="renderTraceListener.Initialize context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RenderTraceListener.ListenerFactories" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ListenerFactories As IList(Of Func(Of RenderTraceListener))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;Func&lt;System::Web::UI::RenderTraceListener ^&gt; ^&gt; ^ ListenerFactories { System::Collections::Generic::IList&lt;Func&lt;System::Web::UI::RenderTraceListener ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListenerFactories : System.Collections.Generic.IList&lt;Func&lt;System.Web.UI.RenderTraceListener&gt;&gt;" Usage="System.Web.UI.RenderTraceListener.ListenerFactories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.SetTraceData(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetTraceData (tracedObject As Object, traceDataKey As Object, traceDataValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetTraceData(System::Object ^ tracedObject, System::Object ^ traceDataKey, System::Object ^ traceDataValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetTraceData : obj * obj * obj -&gt; unit&#xA;override this.SetTraceData : obj * obj * obj -&gt; unit" Usage="renderTraceListener.SetTraceData (tracedObject, traceDataKey, traceDataValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.ShareTraceData(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShareTraceData (source As Object, destination As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShareTraceData(System::Object ^ source, System::Object ^ destination);" />
+      <MemberSignature Language="F#" Value="abstract member ShareTraceData : obj * obj -&gt; unit&#xA;override this.ShareTraceData : obj * obj -&gt; unit" Usage="renderTraceListener.ShareTraceData (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ComparisonOperator" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComparisonOperator" />
   <TypeSignature Language="C++ CLI" Value="public enum class ComparisonOperator" />
+  <TypeSignature Language="F#" Value="type ComparisonOperator = " />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Tracking.ComparisonOperator.Equals" />
       <MemberSignature Language="VB.NET" Value="Equals" />
       <MemberSignature Language="C++ CLI" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 0" Usage="System.Workflow.Runtime.Tracking.ComparisonOperator.Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Tracking.ComparisonOperator.NotEquals" />
       <MemberSignature Language="VB.NET" Value="NotEquals" />
       <MemberSignature Language="C++ CLI" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 1" Usage="System.Workflow.Runtime.Tracking.ComparisonOperator.NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

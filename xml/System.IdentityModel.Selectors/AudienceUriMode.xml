@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.AudienceUriMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AudienceUriMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AudienceUriMode" />
+  <TypeSignature Language="F#" Value="type AudienceUriMode = " />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.IdentityModel.Selectors.AudienceUriMode.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly" />
       <MemberSignature Language="VB.NET" Value="BearerKeyOnly" />
       <MemberSignature Language="C++ CLI" Value="BearerKeyOnly" />
+      <MemberSignature Language="F#" Value="BearerKeyOnly = 2" Usage="System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.IdentityModel.Selectors.AudienceUriMode.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

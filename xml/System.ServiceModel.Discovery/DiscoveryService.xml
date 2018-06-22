@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiscoveryService" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryService abstract" />
+  <TypeSignature Language="F#" Value="type DiscoveryService = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DiscoveryService(System::ServiceModel::Discovery::DiscoveryMessageSequenceGenerator ^ discoveryMessageSequenceGenerator);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryService : System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator -&gt; System.ServiceModel.Discovery.DiscoveryService" Usage="new System.ServiceModel.Discovery.DiscoveryService discoveryMessageSequenceGenerator" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator, int32 duplicateMessageHistoryLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DiscoveryService(System::ServiceModel::Discovery::DiscoveryMessageSequenceGenerator ^ discoveryMessageSequenceGenerator, int duplicateMessageHistoryLength);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.DiscoveryService : System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator * int -&gt; System.ServiceModel.Discovery.DiscoveryService" Usage="new System.ServiceModel.Discovery.DiscoveryService (discoveryMessageSequenceGenerator, duplicateMessageHistoryLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginFind(class System.ServiceModel.Discovery.FindRequestContext findRequestContext, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind(System.ServiceModel.Discovery.FindRequestContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginFind(System::ServiceModel::Discovery::FindRequestContext ^ findRequestContext, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginFind : System.ServiceModel.Discovery.FindRequestContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="discoveryService.OnBeginFind (findRequestContext, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginResolve(class System.ServiceModel.Discovery.ResolveCriteria resolveCriteria, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnBeginResolve(System.ServiceModel.Discovery.ResolveCriteria,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginResolve(System::ServiceModel::Discovery::ResolveCriteria ^ resolveCriteria, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginResolve : System.ServiceModel.Discovery.ResolveCriteria * AsyncCallback * obj -&gt; IAsyncResult" Usage="discoveryService.OnBeginResolve (resolveCriteria, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnEndFind(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEndFind (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEndFind(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndFind : IAsyncResult -&gt; unit" Usage="discoveryService.OnEndFind result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnEndResolve(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnEndResolve (result As IAsyncResult) As EndpointDiscoveryMetadata" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ OnEndResolve(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member OnEndResolve : IAsyncResult -&gt; System.ServiceModel.Discovery.EndpointDiscoveryMetadata" Usage="discoveryService.OnEndResolve result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

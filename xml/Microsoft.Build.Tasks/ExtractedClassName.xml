@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ExtractedClassName" />
   <TypeSignature Language="VB.NET" Value="Public Structure ExtractedClassName" />
   <TypeSignature Language="C++ CLI" Value="public value class ExtractedClassName" />
+  <TypeSignature Language="F#" Value="type ExtractedClassName = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInsideConditionalBlock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInsideConditionalBlock { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsInsideConditionalBlock : bool with get, set" Usage="Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.ExtractedClassName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

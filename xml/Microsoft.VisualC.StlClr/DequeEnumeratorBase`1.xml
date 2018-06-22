@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.DequeEnumeratorBase`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DequeEnumeratorBase(Of TValue)&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class DequeEnumeratorBase : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type DequeEnumeratorBase&lt;'Value&gt; = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumeratorBase`1.#ctor(Microsoft.VisualC.StlClr.IDeque{`0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Cont As IDeque(Of TValue), _First As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DequeEnumeratorBase(Microsoft::VisualC::StlClr::IDeque&lt;TValue&gt; ^ _Cont, int _First);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.DequeEnumeratorBase&lt;'Value&gt; : Microsoft.VisualC.StlClr.IDeque&lt;'Value&gt; * int -&gt; Microsoft.VisualC.StlClr.DequeEnumeratorBase&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.DequeEnumeratorBase&lt;'Value&gt; (_Cont, _First)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.DequeEnumeratorBase`1.Current" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj with get, set" Usage="Microsoft.VisualC.StlClr.DequeEnumeratorBase&lt;'Value&gt;.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumeratorBase`1.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="dequeEnumeratorBase.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumeratorBase`1.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="dequeEnumeratorBase.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildResult" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildResult" />
+  <TypeSignature Language="F#" Value="type BuildResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildResult.AddResultsForTarget(System.String,Microsoft.Build.Execution.TargetResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddResultsForTarget (target As String, result As TargetResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResultsForTarget(System::String ^ target, Microsoft::Build::Execution::TargetResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.AddResultsForTarget : string * Microsoft.Build.Execution.TargetResult -&gt; unit" Usage="buildResult.AddResultsForTarget (target, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.CircularDependency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CircularDependency As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CircularDependency { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CircularDependency : bool" Usage="Microsoft.Build.Execution.BuildResult.CircularDependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.ConfigurationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfigurationId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConfigurationId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationId : int" Usage="Microsoft.Build.Execution.BuildResult.ConfigurationId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="Microsoft.Build.Execution.BuildResult.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.GlobalRequestId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalRequestId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GlobalRequestId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalRequestId : int" Usage="Microsoft.Build.Execution.BuildResult.GlobalRequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildResult.HasResultsForTarget(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasResultsForTarget (target As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasResultsForTarget(System::String ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member HasResultsForTarget : string -&gt; bool&#xA;override this.HasResultsForTarget : string -&gt; bool" Usage="buildResult.HasResultsForTarget target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.BackEnd.IBuildResults.HasResultsForTarget(System.String)</InterfaceMember>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(target As String) As ITargetResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::ITargetResult ^ default[System::String ^] { Microsoft::Build::Execution::ITargetResult ^ get(System::String ^ target); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Microsoft.Build.Execution.ITargetResult" Usage="Microsoft.Build.Execution.BuildResult.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.BackEnd.IBuildResults.Item(System.String)</InterfaceMember>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildResult.MergeResults(Microsoft.Build.Execution.BuildResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MergeResults (results As BuildResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MergeResults(Microsoft::Build::Execution::BuildResult ^ results);" />
+      <MemberSignature Language="F#" Value="member this.MergeResults : Microsoft.Build.Execution.BuildResult -&gt; unit" Usage="buildResult.MergeResults results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.NodeRequestId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeRequestId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeRequestId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeRequestId : int" Usage="Microsoft.Build.Execution.BuildResult.NodeRequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.OverallResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverallResult As BuildResultCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::BuildResultCode OverallResult { Microsoft::Build::Execution::BuildResultCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverallResult : Microsoft.Build.Execution.BuildResultCode" Usage="Microsoft.Build.Execution.BuildResult.OverallResult" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.BackEnd.IBuildResults.OverallResult</InterfaceMember>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.ParentGlobalRequestId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentGlobalRequestId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ParentGlobalRequestId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentGlobalRequestId : int" Usage="Microsoft.Build.Execution.BuildResult.ParentGlobalRequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -330,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.ProjectStateAfterBuild" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectStateAfterBuild As ProjectInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::ProjectInstance ^ ProjectStateAfterBuild { Microsoft::Build::Execution::ProjectInstance ^ get(); void set(Microsoft::Build::Execution::ProjectInstance ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectStateAfterBuild : Microsoft.Build.Execution.ProjectInstance with get, set" Usage="Microsoft.Build.Execution.BuildResult.ProjectStateAfterBuild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -357,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.ResultsByTarget" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultsByTarget As IDictionary(Of String, TargetResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::TargetResult ^&gt; ^ ResultsByTarget { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::TargetResult ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResultsByTarget : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Execution.TargetResult&gt;" Usage="Microsoft.Build.Execution.BuildResult.ResultsByTarget" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.BackEnd.IBuildResults.ResultsByTarget</InterfaceMember>
@@ -385,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildResult.SubmissionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmissionId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubmissionId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmissionId : int" Usage="Microsoft.Build.Execution.BuildResult.SubmissionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

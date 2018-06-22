@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UserActivationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UserActivationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class UserActivationMode" />
+  <TypeSignature Language="F#" Value="type UserActivationMode = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.UserActivationMode.Permanent" />
       <MemberSignature Language="VB.NET" Value="Permanent" />
       <MemberSignature Language="C++ CLI" Value="Permanent" />
+      <MemberSignature Language="F#" Value="Permanent = 0" Usage="System.Security.RightsManagement.UserActivationMode.Permanent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.UserActivationMode.Temporary" />
       <MemberSignature Language="VB.NET" Value="Temporary" />
       <MemberSignature Language="C++ CLI" Value="Temporary" />
+      <MemberSignature Language="F#" Value="Temporary = 1" Usage="System.Security.RightsManagement.UserActivationMode.Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

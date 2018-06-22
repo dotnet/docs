@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomLabelsCollection&#xA;Inherits ChartElementCollection(Of CustomLabel)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomLabelsCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::CustomLabel ^&gt;" />
+  <TypeSignature Language="F#" Value="type CustomLabelsCollection = class&#xA;    inherit ChartElementCollection&lt;CustomLabel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Web.UI.DataVisualization.Charting.DateTimeIntervalType -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Web.UI.DataVisualization.Charting.DateTimeIntervalType * string -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Web.UI.DataVisualization.Charting.DateTimeIntervalType * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, format, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle,System.Web.UI.DataVisualization.Charting.GridTickTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle, gridTick As GridTickTypes) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle, System::Web::UI::DataVisualization::Charting::GridTickTypes gridTick);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle * System.Web.UI.DataVisualization.Charting.GridTickTypes -&gt; System.Web.UI.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text, rowIndex, markStyle, gridTick)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Web.UI.DataVisualization.Charting.DateTimeIntervalType,System.Double,System.Double,System.String,System.Int32,System.Web.UI.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, min As Double, max As Double, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Web::UI::DataVisualization::Charting::DateTimeIntervalType intervalType, double min, double max, System::String ^ format, int rowIndex, System::Web::UI::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Web.UI.DataVisualization.Charting.DateTimeIntervalType * double * double * string * int * System.Web.UI.DataVisualization.Charting.LabelMarkStyle -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, min, max, format, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

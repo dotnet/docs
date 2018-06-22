@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.LockRecursionPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum LockRecursionPolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class LockRecursionPolicy" />
+  <TypeSignature Language="F#" Value="type LockRecursionPolicy = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.LockRecursionPolicy.NoRecursion" />
       <MemberSignature Language="VB.NET" Value="NoRecursion" />
       <MemberSignature Language="C++ CLI" Value="NoRecursion" />
+      <MemberSignature Language="F#" Value="NoRecursion = 0" Usage="System.Threading.LockRecursionPolicy.NoRecursion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.LockRecursionPolicy.SupportsRecursion" />
       <MemberSignature Language="VB.NET" Value="SupportsRecursion" />
       <MemberSignature Language="C++ CLI" Value="SupportsRecursion" />
+      <MemberSignature Language="F#" Value="SupportsRecursion = 1" Usage="System.Threading.LockRecursionPolicy.SupportsRecursion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

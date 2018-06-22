@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AndCondition" />
   <TypeSignature Language="VB.NET" Value="Public Class AndCondition&#xA;Inherits Condition" />
   <TypeSignature Language="C++ CLI" Value="public ref class AndCondition : System::Windows::Automation::Condition" />
+  <TypeSignature Language="F#" Value="type AndCondition = class&#xA;    inherit Condition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AndCondition.#ctor(System.Windows.Automation.Condition[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray conditions As Condition())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AndCondition(... cli::array &lt;System::Windows::Automation::Condition ^&gt; ^ conditions);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.AndCondition : System.Windows.Automation.Condition[] -&gt; System.Windows.Automation.AndCondition" Usage="new System.Windows.Automation.AndCondition conditions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AndCondition.GetConditions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConditions () As Condition()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Condition ^&gt; ^ GetConditions();" />
+      <MemberSignature Language="F#" Value="member this.GetConditions : unit -&gt; System.Windows.Automation.Condition[]" Usage="andCondition.GetConditions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

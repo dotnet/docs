@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeVariableDeclarationStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeVariableDeclarationStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeVariableDeclarationStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeVariableDeclarationStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(System::CodeDom::CodeTypeReference ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : System.CodeDom.CodeTypeReference * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(System::String ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : string * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(Type ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : Type * string -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference, name As String, initExpression As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(System::CodeDom::CodeTypeReference ^ type, System::String ^ name, System::CodeDom::CodeExpression ^ initExpression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : System.CodeDom.CodeTypeReference * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, name As String, initExpression As CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(System::String ^ type, System::String ^ name, System::CodeDom::CodeExpression ^ initExpression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : string * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeVariableDeclarationStatement(Type ^ type, System::String ^ name, System::CodeDom::CodeExpression ^ initExpression);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeVariableDeclarationStatement : Type * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeVariableDeclarationStatement" Usage="new System.CodeDom.CodeVariableDeclarationStatement (type, name, initExpression)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.InitExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property InitExpression As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ InitExpression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InitExpression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.InitExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ Type { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeVariableDeclarationStatement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

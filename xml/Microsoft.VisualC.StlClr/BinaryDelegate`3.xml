@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.BinaryDelegate`3" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BinaryDelegate(Of TArg1, TArg2, TResult)(A_0 As TArg1, A_1 As TArg2) As TResult " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TArg1, typename TArg2, typename TResult&gt;&#xA;public delegate TResult BinaryDelegate(TArg1 A_0, TArg2 A_1);" />
+  <TypeSignature Language="F#" Value="type BinaryDelegate&lt;'TArg1, 'TArg2, 'Result&gt; = delegate of 'TArg1 * 'TArg2 -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>

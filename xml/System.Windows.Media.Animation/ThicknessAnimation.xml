@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ThicknessAnimation" />
   <TypeSignature Language="VB.NET" Value="Public Class ThicknessAnimation&#xA;Inherits ThicknessAnimationBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThicknessAnimation : System::Windows::Media::Animation::ThicknessAnimationBase" />
+  <TypeSignature Language="F#" Value="type ThicknessAnimation = class&#xA;    inherit ThicknessAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.#ctor(System.Windows.Thickness,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThicknessAnimation(System::Windows::Thickness toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessAnimation : System.Windows.Thickness * System.Windows.Duration -&gt; System.Windows.Media.Animation.ThicknessAnimation" Usage="new System.Windows.Media.Animation.ThicknessAnimation (toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.#ctor(System.Windows.Thickness,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThicknessAnimation(System::Windows::Thickness toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessAnimation : System.Windows.Thickness * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.ThicknessAnimation" Usage="new System.Windows.Media.Animation.ThicknessAnimation (toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness fromValue, valuetype System.Windows.Thickness toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.#ctor(System.Windows.Thickness,System.Windows.Thickness,System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThicknessAnimation(System::Windows::Thickness fromValue, System::Windows::Thickness toValue, System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessAnimation : System.Windows.Thickness * System.Windows.Thickness * System.Windows.Duration -&gt; System.Windows.Media.Animation.ThicknessAnimation" Usage="new System.Windows.Media.Animation.ThicknessAnimation (fromValue, toValue, duration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness fromValue, valuetype System.Windows.Thickness toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.#ctor(System.Windows.Thickness,System.Windows.Thickness,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThicknessAnimation(System::Windows::Thickness fromValue, System::Windows::Thickness toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ThicknessAnimation : System.Windows.Thickness * System.Windows.Thickness * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.ThicknessAnimation" Usage="new System.Windows.Media.Animation.ThicknessAnimation (fromValue, toValue, duration, fillBehavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.By" />
       <MemberSignature Language="VB.NET" Value="Public Property By As Nullable(Of Thickness)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Thickness&gt; By { Nullable&lt;System::Windows::Thickness&gt; get(); void set(Nullable&lt;System::Windows::Thickness&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.By : Nullable&lt;System.Windows.Thickness&gt; with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.By" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessAnimation.ByProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ByProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ByProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessAnimation.ByProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ThicknessAnimation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ThicknessAnimation ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.ThicknessAnimation" Usage="thicknessAnimation.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="thicknessAnimation.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.EasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.EasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessAnimation.EasingFunctionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessAnimation.EasingFunctionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As Nullable(Of Thickness)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Thickness&gt; From { Nullable&lt;System::Windows::Thickness&gt; get(); void set(Nullable&lt;System::Windows::Thickness&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.From : Nullable&lt;System.Windows.Thickness&gt; with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessAnimation.FromProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FromProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FromProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessAnimation.FromProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -444,6 +457,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Thickness GetCurrentValueCore(valuetype System.Windows.Thickness defaultOriginValue, valuetype System.Windows.Thickness defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ThicknessAnimation.GetCurrentValueCore(System.Windows.Thickness,System.Windows.Thickness,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Thickness GetCurrentValueCore(System::Windows::Thickness defaultOriginValue, System::Windows::Thickness defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : System.Windows.Thickness * System.Windows.Thickness * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Thickness" Usage="thicknessAnimation.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -482,6 +496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.IsAdditive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.IsAdditive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -521,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.IsCumulative" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.IsCumulative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -560,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ThicknessAnimation.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As Nullable(Of Thickness)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Thickness&gt; To { Nullable&lt;System::Windows::Thickness&gt; get(); void set(Nullable&lt;System::Windows::Thickness&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.To : Nullable&lt;System.Windows.Thickness&gt; with get, set" Usage="System.Windows.Media.Animation.ThicknessAnimation.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -629,6 +646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ThicknessAnimation.ToProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ThicknessAnimation.ToProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

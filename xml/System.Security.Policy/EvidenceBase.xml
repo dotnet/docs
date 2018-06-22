@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.EvidenceBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EvidenceBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EvidenceBase abstract" />
+  <TypeSignature Language="F#" Value="type EvidenceBase = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.EvidenceBase.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Policy.EvidenceBase&#xA;override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="evidenceBase.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

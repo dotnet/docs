@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PowerState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PowerState" />
   <TypeSignature Language="C++ CLI" Value="public enum class PowerState" />
+  <TypeSignature Language="F#" Value="type PowerState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PowerState.Hibernate" />
       <MemberSignature Language="VB.NET" Value="Hibernate" />
       <MemberSignature Language="C++ CLI" Value="Hibernate" />
+      <MemberSignature Language="F#" Value="Hibernate = 1" Usage="System.Windows.Forms.PowerState.Hibernate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PowerState.Suspend" />
       <MemberSignature Language="VB.NET" Value="Suspend" />
       <MemberSignature Language="C++ CLI" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 0" Usage="System.Windows.Forms.PowerState.Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

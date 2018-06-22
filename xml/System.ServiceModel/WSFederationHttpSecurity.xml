@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSFederationHttpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSFederationHttpSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSFederationHttpSecurity sealed" />
+  <TypeSignature Language="F#" Value="type WSFederationHttpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As FederatedMessageSecurityOverHttp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FederatedMessageSecurityOverHttp ^ Message { System::ServiceModel::FederatedMessageSecurityOverHttp ^ get(); void set(System::ServiceModel::FederatedMessageSecurityOverHttp ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.FederatedMessageSecurityOverHttp with get, set" Usage="System.ServiceModel.WSFederationHttpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As WSFederationHttpSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSFederationHttpSecurityMode Mode { System::ServiceModel::WSFederationHttpSecurityMode get(); void set(System::ServiceModel::WSFederationHttpSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.WSFederationHttpSecurityMode with get, set" Usage="System.ServiceModel.WSFederationHttpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpSecurity.ShouldSerializeMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessage();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="wSFederationHttpSecurity.ShouldSerializeMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpSecurity.ShouldSerializeMode" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMode () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMode();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMode : unit -&gt; bool" Usage="wSFederationHttpSecurity.ShouldSerializeMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

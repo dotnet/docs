@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtension`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtension(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : IExtensibleObject&lt;T&gt;public interface class IExtension" />
+  <TypeSignature Language="F#" Value="type IExtension&lt;'T (requires 'T :&gt; IExtensibleObject&lt;'T&gt;)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtension`1.Attach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (owner As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(T owner);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : 'T -&gt; unit" Usage="iExtension.Attach owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +95,7 @@ public void Attach(InstanceContext owner)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtension`1.Detach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (owner As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(T owner);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : 'T -&gt; unit" Usage="iExtension.Detach owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

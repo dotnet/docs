@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Throw" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Throw&#xA;Inherits CodeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class Throw sealed : System::Activities::CodeActivity" />
+  <TypeSignature Language="F#" Value="type Throw = class&#xA;    inherit CodeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Throw.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="throw.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Throw.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Property Exception As InArgument(Of Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;Exception ^&gt; ^ Exception { System::Activities::InArgument&lt;Exception ^&gt; ^ get(); void set(System::Activities::InArgument&lt;Exception ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Activities.InArgument&lt;Exception&gt; with get, set" Usage="System.Activities.Statements.Throw.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Throw.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As CodeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; unit" Usage="throw.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AppDomainInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class AppDomainInfo&#xA;Implements IAppDomainInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainInfo : System::Web::Hosting::IAppDomainInfo" />
+  <TypeSignature Language="F#" Value="type AppDomainInfo = class&#xA;    interface IAppDomainInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfo.GetId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetId () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetId();" />
+      <MemberSignature Language="F#" Value="abstract member GetId : unit -&gt; string&#xA;override this.GetId : unit -&gt; string" Usage="appDomainInfo.GetId " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfo.GetId</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfo.GetPhysicalPath" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPhysicalPath () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPhysicalPath();" />
+      <MemberSignature Language="F#" Value="abstract member GetPhysicalPath : unit -&gt; string&#xA;override this.GetPhysicalPath : unit -&gt; string" Usage="appDomainInfo.GetPhysicalPath " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfo.GetPhysicalPath</InterfaceMember>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfo.GetSiteId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSiteId () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetSiteId();" />
+      <MemberSignature Language="F#" Value="abstract member GetSiteId : unit -&gt; int&#xA;override this.GetSiteId : unit -&gt; int" Usage="appDomainInfo.GetSiteId " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfo.GetSiteId</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfo.GetVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVirtualPath () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetVirtualPath();" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : unit -&gt; string&#xA;override this.GetVirtualPath : unit -&gt; string" Usage="appDomainInfo.GetVirtualPath " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfo.GetVirtualPath</InterfaceMember>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainInfo.IsIdle" />
       <MemberSignature Language="VB.NET" Value="Public Function IsIdle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsIdle();" />
+      <MemberSignature Language="F#" Value="abstract member IsIdle : unit -&gt; bool&#xA;override this.IsIdle : unit -&gt; bool" Usage="appDomainInfo.IsIdle " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IAppDomainInfo.IsIdle</InterfaceMember>

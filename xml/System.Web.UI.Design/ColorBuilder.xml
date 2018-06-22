@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ColorBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColorBuilder sealed" />
+  <TypeSignature Language="F#" Value="type ColorBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ColorBuilder.BuildColor(System.ComponentModel.IComponent,System.Windows.Forms.Control,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BuildColor (component As IComponent, owner As Control, initialColor As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ BuildColor(System::ComponentModel::IComponent ^ component, System::Windows::Forms::Control ^ owner, System::String ^ initialColor);" />
+      <MemberSignature Language="F#" Value="static member BuildColor : System.ComponentModel.IComponent * System.Windows.Forms.Control * string -&gt; string" Usage="System.Web.UI.Design.ColorBuilder.BuildColor (component, owner, initialColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

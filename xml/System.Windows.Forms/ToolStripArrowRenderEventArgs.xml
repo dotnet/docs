@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripArrowRenderEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripArrowRenderEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripArrowRenderEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripArrowRenderEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripItem toolStripItem, valuetype System.Drawing.Rectangle arrowRectangle, valuetype System.Drawing.Color arrowColor, valuetype System.Windows.Forms.ArrowDirection arrowDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripArrowRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.ArrowDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripArrowRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripItem ^ toolStripItem, System::Drawing::Rectangle arrowRectangle, System::Drawing::Color arrowColor, System::Windows::Forms::ArrowDirection arrowDirection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripArrowRenderEventArgs : System.Drawing.Graphics * System.Windows.Forms.ToolStripItem * System.Drawing.Rectangle * System.Drawing.Color * System.Windows.Forms.ArrowDirection -&gt; System.Windows.Forms.ToolStripArrowRenderEventArgs" Usage="new System.Windows.Forms.ToolStripArrowRenderEventArgs (g, toolStripItem, arrowRectangle, arrowColor, arrowDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripArrowRenderEventArgs.ArrowColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrowColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ArrowColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ArrowColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStripArrowRenderEventArgs.ArrowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripArrowRenderEventArgs.ArrowRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrowRectangle As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ArrowRectangle { System::Drawing::Rectangle get(); void set(System::Drawing::Rectangle value); };" />
+      <MemberSignature Language="F#" Value="member this.ArrowRectangle : System.Drawing.Rectangle with get, set" Usage="System.Windows.Forms.ToolStripArrowRenderEventArgs.ArrowRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripArrowRenderEventArgs.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As ArrowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ArrowDirection Direction { System::Windows::Forms::ArrowDirection get(); void set(System::Windows::Forms::ArrowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Windows.Forms.ArrowDirection with get, set" Usage="System.Windows.Forms.ToolStripArrowRenderEventArgs.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripArrowRenderEventArgs.Graphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.ToolStripArrowRenderEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripArrowRenderEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ Item { System::Windows::Forms::ToolStripItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Windows.Forms.ToolStripItem" Usage="System.Windows.Forms.ToolStripArrowRenderEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

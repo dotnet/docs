@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewSelectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewSelectionMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewSelectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.CellSelect" />
       <MemberSignature Language="VB.NET" Value="CellSelect" />
       <MemberSignature Language="C++ CLI" Value="CellSelect" />
+      <MemberSignature Language="F#" Value="CellSelect = 0" Usage="System.Windows.Forms.DataGridViewSelectionMode.CellSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />
       <MemberSignature Language="VB.NET" Value="ColumnHeaderSelect" />
       <MemberSignature Language="C++ CLI" Value="ColumnHeaderSelect" />
+      <MemberSignature Language="F#" Value="ColumnHeaderSelect = 4" Usage="System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" />
       <MemberSignature Language="VB.NET" Value="FullColumnSelect" />
       <MemberSignature Language="C++ CLI" Value="FullColumnSelect" />
+      <MemberSignature Language="F#" Value="FullColumnSelect = 2" Usage="System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect" />
       <MemberSignature Language="VB.NET" Value="FullRowSelect" />
       <MemberSignature Language="C++ CLI" Value="FullRowSelect" />
+      <MemberSignature Language="F#" Value="FullRowSelect = 1" Usage="System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" />
       <MemberSignature Language="VB.NET" Value="RowHeaderSelect" />
       <MemberSignature Language="C++ CLI" Value="RowHeaderSelect" />
+      <MemberSignature Language="F#" Value="RowHeaderSelect = 3" Usage="System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

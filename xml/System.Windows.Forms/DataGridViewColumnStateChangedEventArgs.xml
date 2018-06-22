@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewColumnStateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumnStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnStateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn, valuetype System.Windows.Forms.DataGridViewElementStates stateChanged) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs.#ctor(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumnStateChangedEventArgs(System::Windows::Forms::DataGridViewColumn ^ dataGridViewColumn, System::Windows::Forms::DataGridViewElementStates stateChanged);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewColumnStateChangedEventArgs : System.Windows.Forms.DataGridViewColumn * System.Windows.Forms.DataGridViewElementStates -&gt; System.Windows.Forms.DataGridViewColumnStateChangedEventArgs" Usage="new System.Windows.Forms.DataGridViewColumnStateChangedEventArgs (dataGridViewColumn, stateChanged)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridViewColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumn ^ Column { System::Windows::Forms::DataGridViewColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Forms.DataGridViewColumn" Usage="System.Windows.Forms.DataGridViewColumnStateChangedEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnStateChangedEventArgs.StateChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateChanged As DataGridViewElementStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewElementStates StateChanged { System::Windows::Forms::DataGridViewElementStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.StateChanged : System.Windows.Forms.DataGridViewElementStates" Usage="System.Windows.Forms.DataGridViewColumnStateChangedEventArgs.StateChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

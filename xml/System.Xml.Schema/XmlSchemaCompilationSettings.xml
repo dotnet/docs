@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaCompilationSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaCompilationSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaCompilationSettings sealed" />
+  <TypeSignature Language="F#" Value="type XmlSchemaCompilationSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCompilationSettings.EnableUpaCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableUpaCheck As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpaCheck { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableUpaCheck : bool with get, set" Usage="System.Xml.Schema.XmlSchemaCompilationSettings.EnableUpaCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

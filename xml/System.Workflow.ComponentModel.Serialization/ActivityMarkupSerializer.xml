@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityMarkupSerializer&#xA;Inherits WorkflowMarkupSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityMarkupSerializer : System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializer" />
+  <TypeSignature Language="F#" Value="type ActivityMarkupSerializer = class&#xA;    inherit WorkflowMarkupSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.CreateInstance(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; obj" Usage="activityMarkupSerializer.CreateInstance (serializationManager, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.EndColumnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndColumnProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ EndColumnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndColumnProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.EndColumnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.EndLineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndLineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ EndLineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndLineProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.EndLineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.OnAfterSerialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAfterSerialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAfterSerialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.OnAfterSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="activityMarkupSerializer.OnAfterSerialize (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.OnBeforeSerialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeforeSerialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeforeSerialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.OnBeforeSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="activityMarkupSerializer.OnBeforeSerialize (serializationManager, obj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.StartColumnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartColumnProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ StartColumnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartColumnProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.StartColumnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.StartLineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartLineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ StartLineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartLineProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer.StartLineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

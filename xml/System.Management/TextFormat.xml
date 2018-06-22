@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.TextFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextFormat" />
+  <TypeSignature Language="F#" Value="type TextFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.CimDtd20" />
       <MemberSignature Language="VB.NET" Value="CimDtd20" />
       <MemberSignature Language="C++ CLI" Value="CimDtd20" />
+      <MemberSignature Language="F#" Value="CimDtd20 = 1" Usage="System.Management.TextFormat.CimDtd20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.Mof" />
       <MemberSignature Language="VB.NET" Value="Mof" />
       <MemberSignature Language="C++ CLI" Value="Mof" />
+      <MemberSignature Language="F#" Value="Mof = 0" Usage="System.Management.TextFormat.Mof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.WmiDtd20" />
       <MemberSignature Language="VB.NET" Value="WmiDtd20" />
       <MemberSignature Language="C++ CLI" Value="WmiDtd20" />
+      <MemberSignature Language="F#" Value="WmiDtd20 = 2" Usage="System.Management.TextFormat.WmiDtd20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceSelectingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceSelectingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceSelectingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSource As EntityDataSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::EntityDataSource ^ DataSource { System::Web::UI::WebControls::EntityDataSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : System.Web.UI.WebControls.EntityDataSource" Usage="System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs.SelectArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectArguments As DataSourceSelectArguments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceSelectArguments ^ SelectArguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectArguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs.SelectArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

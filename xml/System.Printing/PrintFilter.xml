@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PrintFilter&#xA;Inherits PrintSystemObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrintFilter abstract : System::Printing::PrintSystemObject" />
+  <TypeSignature Language="F#" Value="type PrintFilter = class&#xA;    inherit PrintSystemObject" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintFilter.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printFilter.InternalDispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

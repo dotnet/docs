@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Primitives.MarkupProperty" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarkupProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarkupProperty abstract" />
+  <TypeSignature Language="F#" Value="type MarkupProperty = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Windows.Markup.Primitives.MarkupProperty.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DependencyProperty As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::DependencyProperty ^ DependencyProperty { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DependencyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsAttached" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAttached As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAttached { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAttached : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsAttached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsComposite" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsComposite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsComposite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsComposite : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsComposite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsConstructorArgument As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsConstructorArgument { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConstructorArgument : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsContent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsContent : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsKey { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsKey : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsValueAsString As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsValueAsString { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueAsString : bool" Usage="System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Items" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Items As IEnumerable(Of MarkupObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Windows::Markup::Primitives::MarkupObject ^&gt; ^ Items { System::Collections::Generic::IEnumerable&lt;System::Windows::Markup::Primitives::MarkupObject ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : seq&lt;System.Windows.Markup.Primitives.MarkupObject&gt;" Usage="System.Windows.Markup.Primitives.MarkupProperty.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Markup.Primitives.MarkupProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyDescriptor As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ PropertyDescriptor { System::ComponentModel::PropertyDescriptor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyDescriptor : System.ComponentModel.PropertyDescriptor" Usage="System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.Windows.Markup.Primitives.MarkupProperty.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -376,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.StringValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StringValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ StringValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StringValue : string" Usage="System.Windows.Markup.Primitives.MarkupProperty.StringValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -396,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.TypeReferences" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TypeReferences As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ TypeReferences { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeReferences : seq&lt;Type&gt;" Usage="System.Windows.Markup.Primitives.MarkupProperty.TypeReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -423,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Windows.Markup.Primitives.MarkupProperty.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

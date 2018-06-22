@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowCancelEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowCancelEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowCancelEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewRow dataGridViewRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowCancelEventArgs.#ctor(System.Windows.Forms.DataGridViewRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewRowCancelEventArgs(System::Windows::Forms::DataGridViewRow ^ dataGridViewRow);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewRowCancelEventArgs : System.Windows.Forms.DataGridViewRow -&gt; System.Windows.Forms.DataGridViewRowCancelEventArgs" Usage="new System.Windows.Forms.DataGridViewRowCancelEventArgs dataGridViewRow" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowCancelEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridViewRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewRow ^ Row { System::Windows::Forms::DataGridViewRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Forms.DataGridViewRow" Usage="System.Windows.Forms.DataGridViewRowCancelEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

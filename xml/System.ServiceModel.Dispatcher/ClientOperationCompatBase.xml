@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientOperationCompatBase" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientOperationCompatBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientOperationCompatBase" />
+  <TypeSignature Language="F#" Value="type ClientOperationCompatBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterInspectors As IList(Of IParameterInspector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ ParameterInspectors { System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IParameterInspector ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterInspectors : System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

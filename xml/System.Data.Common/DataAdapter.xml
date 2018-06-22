@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAdapter&#xA;Inherits Component&#xA;Implements IDataAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAdapter : System::ComponentModel::Component, System::Data::IDataAdapter" />
+  <TypeSignature Language="F#" Value="type DataAdapter = class&#xA;    inherit Component&#xA;    interface IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor(System.Data.Common.DataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (from As DataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter(System::Data::Common::DataAdapter ^ from);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DataAdapter : System.Data.Common.DataAdapter -&gt; System.Data.Common.DataAdapter" Usage="new System.Data.Common.DataAdapter from" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringFill" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringFill As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringFill { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptChangesDuringFill : bool with get, set" Usage="System.Data.Common.DataAdapter.AcceptChangesDuringFill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -180,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptChangesDuringUpdate : bool with get, set" Usage="System.Data.Common.DataAdapter.AcceptChangesDuringUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CloneInternals" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CloneInternals () As DataAdapter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataAdapter ^ CloneInternals();" />
+      <MemberSignature Language="F#" Value="abstract member CloneInternals : unit -&gt; System.Data.Common.DataAdapter&#xA;override this.CloneInternals : unit -&gt; System.Data.Common.DataAdapter" Usage="dataAdapter.CloneInternals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -282,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ContinueUpdateOnError" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinueUpdateOnError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueUpdateOnError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueUpdateOnError : bool with get, set" Usage="System.Data.Common.DataAdapter.ContinueUpdateOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -327,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CreateTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateTableMappings () As DataTableMappingCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataTableMappingCollection ^ CreateTableMappings();" />
+      <MemberSignature Language="F#" Value="abstract member CreateTableMappings : unit -&gt; System.Data.Common.DataTableMappingCollection&#xA;override this.CreateTableMappings : unit -&gt; System.Data.Common.DataTableMappingCollection" Usage="dataAdapter.CreateTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -358,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dataAdapter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -416,6 +424,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet -&gt; int&#xA;override this.Fill : System.Data.DataSet -&gt; int" Usage="dataAdapter.Fill dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Fill(System.Data.DataSet)</InterfaceMember>
@@ -473,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataTable ^ dataTable, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataTable * System.Data.IDataReader -&gt; int&#xA;override this.Fill : System.Data.DataTable * System.Data.IDataReader -&gt; int" Usage="dataAdapter.Fill (dataTable, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -516,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable[],System.Data.IDataReader,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Fill (dataTables As DataTable(), dataReader As IDataReader, startRecord As Integer, maxRecords As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataTable[] * System.Data.IDataReader * int * int -&gt; int&#xA;override this.Fill : System.Data.DataTable[] * System.Data.IDataReader * int * int -&gt; int" Usage="dataAdapter.Fill (dataTables, dataReader, startRecord, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -562,6 +573,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet, string srcTable, class System.Data.IDataReader dataReader, int32 startRecord, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet,System.String,System.Data.IDataReader,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet, System::String ^ srcTable, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet * string * System.Data.IDataReader * int * int -&gt; int&#xA;override this.Fill : System.Data.DataSet * string * System.Data.IDataReader * int * int -&gt; int" Usage="dataAdapter.Fill (dataSet, srcTable, dataReader, startRecord, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -611,6 +623,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Common.DataAdapter.FillError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FillError As FillErrorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::FillErrorEventHandler ^ FillError;" />
+      <MemberSignature Language="F#" Value="member this.FillError : System.Data.FillErrorEventHandler " Usage="member this.FillError : System.Data.FillErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -651,6 +664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.FillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Property FillLoadOption As LoadOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::LoadOption FillLoadOption { System::Data::LoadOption get(); void set(System::Data::LoadOption value); };" />
+      <MemberSignature Language="F#" Value="member this.FillLoadOption : System.Data.LoadOption with get, set" Usage="System.Data.Common.DataAdapter.FillLoadOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -696,6 +710,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]&#xA;override this.FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]" Usage="dataAdapter.FillSchema (dataSet, schemaType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)</InterfaceMember>
@@ -776,6 +791,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable FillSchema(class System.Data.DataTable dataTable, valuetype System.Data.SchemaType schemaType, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataTable,System.Data.SchemaType,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ FillSchema(System::Data::DataTable ^ dataTable, System::Data::SchemaType schemaType, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataTable * System.Data.SchemaType * System.Data.IDataReader -&gt; System.Data.DataTable&#xA;override this.FillSchema : System.Data.DataTable * System.Data.SchemaType * System.Data.IDataReader -&gt; System.Data.DataTable" Usage="dataAdapter.FillSchema (dataTable, schemaType, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -813,6 +829,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType, string srcTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType,System.String,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType, System::String ^ srcTable, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType * string * System.Data.IDataReader -&gt; System.Data.DataTable[]&#xA;override this.FillSchema : System.Data.DataSet * System.Data.SchemaType * string * System.Data.IDataReader -&gt; System.Data.DataTable[]" Usage="dataAdapter.FillSchema (dataSet, schemaType, srcTable, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -853,6 +870,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.GetFillParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFillParameters () As IDataParameter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::IDataParameter ^&gt; ^ GetFillParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetFillParameters : unit -&gt; System.Data.IDataParameter[]&#xA;override this.GetFillParameters : unit -&gt; System.Data.IDataParameter[]" Usage="dataAdapter.GetFillParameters " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.GetFillParameters</InterfaceMember>
@@ -892,6 +910,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.HasTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasTableMappings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasTableMappings();" />
+      <MemberSignature Language="F#" Value="member this.HasTableMappings : unit -&gt; bool" Usage="dataAdapter.HasTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -924,6 +943,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingMappingAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingMappingAction As MissingMappingAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingMappingAction MissingMappingAction { System::Data::MissingMappingAction get(); void set(System::Data::MissingMappingAction value); };" />
+      <MemberSignature Language="F#" Value="member this.MissingMappingAction : System.Data.MissingMappingAction with get, set" Usage="System.Data.Common.DataAdapter.MissingMappingAction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.MissingMappingAction</InterfaceMember>
@@ -979,6 +999,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingSchemaAction As MissingSchemaAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingSchemaAction MissingSchemaAction { System::Data::MissingSchemaAction get(); void set(System::Data::MissingSchemaAction value); };" />
+      <MemberSignature Language="F#" Value="member this.MissingSchemaAction : System.Data.MissingSchemaAction with get, set" Usage="System.Data.Common.DataAdapter.MissingSchemaAction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.MissingSchemaAction</InterfaceMember>
@@ -1029,6 +1050,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.OnFillError(System.Data.FillErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFillError (value As FillErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFillError(System::Data::FillErrorEventArgs ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnFillError : System.Data.FillErrorEventArgs -&gt; unit&#xA;override this.OnFillError : System.Data.FillErrorEventArgs -&gt; unit" Usage="dataAdapter.OnFillError value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1062,6 +1084,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ResetFillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetFillLoadOption ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFillLoadOption();" />
+      <MemberSignature Language="F#" Value="member this.ResetFillLoadOption : unit -&gt; unit" Usage="dataAdapter.ResetFillLoadOption " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1097,6 +1120,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ReturnProviderSpecificTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnProviderSpecificTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnProviderSpecificTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnProviderSpecificTypes : bool with get, set" Usage="System.Data.Common.DataAdapter.ReturnProviderSpecificTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1140,6 +1164,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeAcceptChangesDuringFill" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeAcceptChangesDuringFill () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeAcceptChangesDuringFill();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeAcceptChangesDuringFill : unit -&gt; bool&#xA;override this.ShouldSerializeAcceptChangesDuringFill : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeAcceptChangesDuringFill " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1177,6 +1202,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeFillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeFillLoadOption () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeFillLoadOption();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeFillLoadOption : unit -&gt; bool&#xA;override this.ShouldSerializeFillLoadOption : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeFillLoadOption " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1214,6 +1240,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeTableMappings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeTableMappings();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeTableMappings : unit -&gt; bool&#xA;override this.ShouldSerializeTableMappings : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1246,6 +1273,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.System#Data#IDataAdapter#TableMappings" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property TableMappings As ITableMappingCollection Implements IDataAdapter.TableMappings" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::ITableMappingCollection ^ System.Data.IDataAdapter.TableMappings { System::Data::ITableMappingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DataAdapter.System.Data.IDataAdapter.TableMappings" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.TableMappings</InterfaceMember>
@@ -1288,6 +1316,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.TableMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMappings As DataTableMappingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMappingCollection ^ TableMappings { System::Data::Common::DataTableMappingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableMappings : System.Data.Common.DataTableMappingCollection" Usage="System.Data.Common.DataAdapter.TableMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1337,6 +1366,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Update(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Update(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="abstract member Update : System.Data.DataSet -&gt; int&#xA;override this.Update : System.Data.DataSet -&gt; int" Usage="dataAdapter.Update dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Update(System.Data.DataSet)</InterfaceMember>

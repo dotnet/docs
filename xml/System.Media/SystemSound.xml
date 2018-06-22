@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSound" />
   <TypeSignature Language="VB.NET" Value="Public Class SystemSound" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemSound" />
+  <TypeSignature Language="F#" Value="type SystemSound = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SystemSound.Play" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="systemSound.Play " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

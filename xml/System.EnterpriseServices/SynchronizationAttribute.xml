@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SynchronizationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SynchronizationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SynchronizationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SynchronizationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SynchronizationAttribute.#ctor(System.EnterpriseServices.SynchronizationOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As SynchronizationOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationAttribute(System::EnterpriseServices::SynchronizationOption val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.SynchronizationAttribute : System.EnterpriseServices.SynchronizationOption -&gt; System.EnterpriseServices.SynchronizationAttribute" Usage="new System.EnterpriseServices.SynchronizationAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SynchronizationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As SynchronizationOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SynchronizationOption Value { System::EnterpriseServices::SynchronizationOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.EnterpriseServices.SynchronizationOption" Usage="System.EnterpriseServices.SynchronizationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

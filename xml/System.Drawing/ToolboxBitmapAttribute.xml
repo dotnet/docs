@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.ToolboxBitmapAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolboxBitmapAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxBitmapAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type ToolboxBitmapAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (imageFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxBitmapAttribute(System::String ^ imageFile);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.ToolboxBitmapAttribute : string -&gt; System.Drawing.ToolboxBitmapAttribute" Usage="new System.Drawing.ToolboxBitmapAttribute imageFile" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (t As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxBitmapAttribute(Type ^ t);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.ToolboxBitmapAttribute : Type -&gt; System.Drawing.ToolboxBitmapAttribute" Usage="new System.Drawing.ToolboxBitmapAttribute t" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (t As Type, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxBitmapAttribute(Type ^ t, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.ToolboxBitmapAttribute : Type * string -&gt; System.Drawing.ToolboxBitmapAttribute" Usage="new System.Drawing.ToolboxBitmapAttribute (t, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.ToolboxBitmapAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ToolboxBitmapAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::ToolboxBitmapAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Drawing.ToolboxBitmapAttribute" Usage="System.Drawing.ToolboxBitmapAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="toolboxBitmapAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="toolboxBitmapAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImage (component As Object) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="member this.GetImage : obj -&gt; System.Drawing.Image" Usage="toolboxBitmapAttribute.GetImage component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Image GetImage(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImage(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetImage : Type -&gt; System.Drawing.Image" Usage="toolboxBitmapAttribute.GetImage type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImage(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImage (component As Object, large As Boolean) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage(System::Object ^ component, bool large);" />
+      <MemberSignature Language="F#" Value="member this.GetImage : obj * bool -&gt; System.Drawing.Image" Usage="toolboxBitmapAttribute.GetImage (component, large)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Image GetImage(class System.Type type, bool large) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImage(System.Type,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage(Type ^ type, bool large);" />
+      <MemberSignature Language="F#" Value="member this.GetImage : Type * bool -&gt; System.Drawing.Image" Usage="toolboxBitmapAttribute.GetImage (type, large)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -371,6 +382,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Image GetImage(class System.Type type, string imgName, bool large) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImage(System.Type,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage(Type ^ type, System::String ^ imgName, bool large);" />
+      <MemberSignature Language="F#" Value="member this.GetImage : Type * string * bool -&gt; System.Drawing.Image" Usage="toolboxBitmapAttribute.GetImage (type, imgName, large)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -408,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.ToolboxBitmapAttribute.GetImageFromResource(System.Type,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetImageFromResource (t As Type, imageName As String, large As Boolean) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ GetImageFromResource(Type ^ t, System::String ^ imageName, bool large);" />
+      <MemberSignature Language="F#" Value="static member GetImageFromResource : Type * string * bool -&gt; System.Drawing.Image" Usage="System.Drawing.ToolboxBitmapAttribute.GetImageFromResource (t, imageName, large)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

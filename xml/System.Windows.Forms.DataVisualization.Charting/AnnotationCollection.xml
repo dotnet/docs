@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationCollection&#xA;Inherits ChartNamedElementCollection(Of Annotation)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationCollection : System::Windows::Forms::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::Annotation ^&gt;" />
+  <TypeSignature Language="F#" Value="type AnnotationCollection = class&#xA;    inherit ChartNamedElementCollection&lt;Annotation&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationCollection.FindByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindByName (name As String) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::DataVisualization::Charting::Annotation ^ FindByName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.FindByName : string -&gt; System.Windows.Forms.DataVisualization.Charting.Annotation" Usage="annotationCollection.FindByName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

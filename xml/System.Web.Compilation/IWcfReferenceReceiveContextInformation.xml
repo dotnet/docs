@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IWcfReferenceReceiveContextInformation" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWcfReferenceReceiveContextInformation" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWcfReferenceReceiveContextInformation" />
+  <TypeSignature Language="F#" Value="type IWcfReferenceReceiveContextInformation = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IWcfReferenceReceiveContextInformation.ReceiveImportContextInformation(System.Collections.Generic.IDictionary{System.String,System.Byte[]},System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReceiveImportContextInformation (serviceReferenceExtensionFileContents As IDictionary(Of String, Byte()), serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReceiveImportContextInformation(System::Collections::Generic::IDictionary&lt;System::String ^, cli::array &lt;System::Byte&gt; ^&gt; ^ serviceReferenceExtensionFileContents, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveImportContextInformation : System.Collections.Generic.IDictionary&lt;string, byte[]&gt; * IServiceProvider -&gt; unit" Usage="iWcfReferenceReceiveContextInformation.ReceiveImportContextInformation (serviceReferenceExtensionFileContents, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

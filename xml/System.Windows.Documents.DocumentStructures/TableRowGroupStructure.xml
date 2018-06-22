@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.TableRowGroupStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class TableRowGroupStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of TableRowStructure)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableRowGroupStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableRowStructure ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type TableRowGroupStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;TableRowStructure&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowGroupStructure.Add(System.Windows.Documents.DocumentStructures.TableRowStructure)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (tableRow As TableRowStructure)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::TableRowStructure ^ tableRow);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.TableRowStructure -&gt; unit" Usage="tableRowGroupStructure.Add tableRow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

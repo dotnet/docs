@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Action`6" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub Action(Of In T1, In T2, In T3, In T4, In T5, In T6)(arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4, arg5 As T5, arg6 As T6)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6&gt;&#xA;public delegate void Action(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6);" />
+  <TypeSignature Language="F#" Value="type Action&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt; = delegate of 'T1 * 'T2 * 'T3 * 'T4 * 'T5 * 'T6 -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

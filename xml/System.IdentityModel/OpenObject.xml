@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.OpenObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OpenObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class OpenObject abstract" />
+  <TypeSignature Language="F#" Value="type OpenObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.OpenObject.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As Dictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="System.IdentityModel.OpenObject.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

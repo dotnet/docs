@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IEventBindingService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEventBindingService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEventBindingService" />
+  <TypeSignature Language="F#" Value="type IEventBindingService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateUniqueMethodName (component As IComponent, e As EventDescriptor) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateUniqueMethodName(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member CreateUniqueMethodName : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor -&gt; string" Usage="iEventBindingService.CreateUniqueMethodName (component, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCompatibleMethods (e As EventDescriptor) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetCompatibleMethods(System::ComponentModel::EventDescriptor ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member GetCompatibleMethods : System.ComponentModel.EventDescriptor -&gt; System.Collections.ICollection" Usage="iEventBindingService.GetCompatibleMethods e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEvent(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEvent (property As PropertyDescriptor) As EventDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::EventDescriptor ^ GetEvent(System::ComponentModel::PropertyDescriptor ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member GetEvent : System.ComponentModel.PropertyDescriptor -&gt; System.ComponentModel.EventDescriptor" Usage="iEventBindingService.GetEvent property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEventProperties(System.ComponentModel.EventDescriptorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEventProperties (events As EventDescriptorCollection) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetEventProperties(System::ComponentModel::EventDescriptorCollection ^ events);" />
+      <MemberSignature Language="F#" Value="abstract member GetEventProperties : System.ComponentModel.EventDescriptorCollection -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="iEventBindingService.GetEventProperties events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEventProperty(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEventProperty (e As EventDescriptor) As PropertyDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptor ^ GetEventProperty(System::ComponentModel::EventDescriptor ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member GetEventProperty : System.ComponentModel.EventDescriptor -&gt; System.ComponentModel.PropertyDescriptor" Usage="iEventBindingService.GetEventProperty e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowCode () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowCode();" />
+      <MemberSignature Language="F#" Value="abstract member ShowCode : unit -&gt; bool" Usage="iEventBindingService.ShowCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -308,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowCode (lineNumber As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowCode(int lineNumber);" />
+      <MemberSignature Language="F#" Value="abstract member ShowCode : int -&gt; bool" Usage="iEventBindingService.ShowCode lineNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowCode (component As IComponent, e As EventDescriptor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowCode(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ShowCode : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor -&gt; bool" Usage="iEventBindingService.ShowCode (component, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

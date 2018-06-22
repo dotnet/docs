@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.HttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type HttpBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.HttpBinding.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.HttpBinding.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.HttpBinding.Verb" />
       <MemberSignature Language="VB.NET" Value="Public Property Verb As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Verb { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Verb : string with get, set" Usage="System.Web.Services.Description.HttpBinding.Verb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

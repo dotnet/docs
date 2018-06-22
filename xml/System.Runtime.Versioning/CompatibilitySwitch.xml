@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.CompatibilitySwitch" />
   <TypeSignature Language="VB.NET" Value="Public Class CompatibilitySwitch" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompatibilitySwitch abstract sealed" />
+  <TypeSignature Language="F#" Value="type CompatibilitySwitch = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.CompatibilitySwitch.GetValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValue (compatibilitySwitchName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetValue(System::String ^ compatibilitySwitchName);" />
+      <MemberSignature Language="F#" Value="static member GetValue : string -&gt; string" Usage="System.Runtime.Versioning.CompatibilitySwitch.GetValue compatibilitySwitchName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.CompatibilitySwitch.IsEnabled(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsEnabled (compatibilitySwitchName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEnabled(System::String ^ compatibilitySwitchName);" />
+      <MemberSignature Language="F#" Value="static member IsEnabled : string -&gt; bool" Usage="System.Runtime.Versioning.CompatibilitySwitch.IsEnabled compatibilitySwitchName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityToolboxItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityToolboxItem&#xA;Inherits ToolboxItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityToolboxItem : System::Drawing::Design::ToolboxItem" />
+  <TypeSignature Language="F#" Value="type ActivityToolboxItem = class&#xA;    inherit ToolboxItem" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityToolboxItem(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityToolboxItem : Type -&gt; System.Workflow.ComponentModel.Design.ActivityToolboxItem" Usage="new System.Workflow.ComponentModel.Design.ActivityToolboxItem type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityToolboxItem(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityToolboxItem : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Workflow.ComponentModel.Design.ActivityToolboxItem" Usage="new System.Workflow.ComponentModel.Design.ActivityToolboxItem (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateComponentsCore (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsCore(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="activityToolboxItem.CreateComponentsCore host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.CreateComponentsWithUI(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateComponentsWithUI (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsWithUI(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponentsWithUI : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsWithUI : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="activityToolboxItem.CreateComponentsWithUI host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.GetToolboxDisplayName(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolboxDisplayName (activityType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetToolboxDisplayName(Type ^ activityType);" />
+      <MemberSignature Language="F#" Value="static member GetToolboxDisplayName : Type -&gt; string" Usage="System.Workflow.ComponentModel.Design.ActivityToolboxItem.GetToolboxDisplayName activityType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityToolboxItem.GetToolboxImage(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToolboxImage (activityType As Type) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ GetToolboxImage(Type ^ activityType);" />
+      <MemberSignature Language="F#" Value="static member GetToolboxImage : Type -&gt; System.Drawing.Image" Usage="System.Workflow.ComponentModel.Design.ActivityToolboxItem.GetToolboxImage activityType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

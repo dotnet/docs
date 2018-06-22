@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeDomComponentSerializationService&#xA;Inherits ComponentSerializationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDomComponentSerializationService sealed : System::ComponentModel::Design::Serialization::ComponentSerializationService" />
+  <TypeSignature Language="F#" Value="type CodeDomComponentSerializationService = class&#xA;    inherit ComponentSerializationService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomComponentSerializationService(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService : IServiceProvider -&gt; System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService" Usage="new System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.CreateStore" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateStore () As SerializationStore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::Design::Serialization::SerializationStore ^ CreateStore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateStore : unit -&gt; System.ComponentModel.Design.Serialization.SerializationStore&#xA;override this.CreateStore : unit -&gt; System.ComponentModel.Design.Serialization.SerializationStore" Usage="codeDomComponentSerializationService.CreateStore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Deserialize (store As SerializationStore) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ICollection ^ Deserialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.ComponentModel.Design.Serialization.SerializationStore -&gt; System.Collections.ICollection&#xA;override this.Deserialize : System.ComponentModel.Design.Serialization.SerializationStore -&gt; System.Collections.ICollection" Usage="codeDomComponentSerializationService.Deserialize store" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Deserialize (store As SerializationStore, container As IContainer) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ICollection ^ Deserialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer -&gt; System.Collections.ICollection&#xA;override this.Deserialize : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer -&gt; System.Collections.ICollection" Usage="codeDomComponentSerializationService.Deserialize (store, container)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DeserializeTo (store As SerializationStore, container As IContainer, validateRecycledTypes As Boolean, applyDefaults As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DeserializeTo(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container, bool validateRecycledTypes, bool applyDefaults);" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeTo : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer * bool * bool -&gt; unit&#xA;override this.DeserializeTo : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer * bool * bool -&gt; unit" Usage="codeDomComponentSerializationService.DeserializeTo (store, container, validateRecycledTypes, applyDefaults)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.Design.Serialization.SerializationStore LoadStore(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.LoadStore(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::Design::Serialization::SerializationStore ^ LoadStore(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member LoadStore : System.IO.Stream -&gt; System.ComponentModel.Design.Serialization.SerializationStore&#xA;override this.LoadStore : System.IO.Stream -&gt; System.ComponentModel.Design.Serialization.SerializationStore" Usage="codeDomComponentSerializationService.LoadStore stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Serialize (store As SerializationStore, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Serialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit&#xA;override this.Serialize : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit" Usage="codeDomComponentSerializationService.Serialize (store, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.SerializeAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SerializeAbsolute (store As SerializationStore, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SerializeAbsolute(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit&#xA;override this.SerializeAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit" Usage="codeDomComponentSerializationService.SerializeAbsolute (store, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SerializeMember (store As SerializationStore, owningObject As Object, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SerializeMember(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMember : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit&#xA;override this.SerializeMember : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="codeDomComponentSerializationService.SerializeMember (store, owningObject, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -376,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SerializeMemberAbsolute (store As SerializationStore, owningObject As Object, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SerializeMemberAbsolute(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMemberAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit&#xA;override this.SerializeMemberAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="codeDomComponentSerializationService.SerializeMemberAbsolute (store, owningObject, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

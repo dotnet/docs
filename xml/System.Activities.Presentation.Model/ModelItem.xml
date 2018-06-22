@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelItem&#xA;Implements INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelItem abstract : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ModelItem = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +130,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.Activities.Presentation.Model.ModelItem.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -159,6 +161,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginEdit () As ModelEditingScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelEditingScope ^ BeginEdit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : unit -&gt; System.Activities.Presentation.Model.ModelEditingScope" Usage="modelItem.BeginEdit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -189,6 +192,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.BeginEdit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginEdit (shouldApplyChangesImmediately As Boolean) As ModelEditingScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Activities::Presentation::Model::ModelEditingScope ^ BeginEdit(bool shouldApplyChangesImmediately);" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : bool -&gt; System.Activities.Presentation.Model.ModelEditingScope&#xA;override this.BeginEdit : bool -&gt; System.Activities.Presentation.Model.ModelEditingScope" Usage="modelItem.BeginEdit shouldApplyChangesImmediately" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -214,6 +218,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.BeginEdit(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginEdit (description As String) As ModelEditingScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelEditingScope ^ BeginEdit(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : string -&gt; System.Activities.Presentation.Model.ModelEditingScope" Usage="modelItem.BeginEdit description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -247,6 +252,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.BeginEdit(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginEdit (description As String, shouldApplyChangesImmediately As Boolean) As ModelEditingScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Activities::Presentation::Model::ModelEditingScope ^ BeginEdit(System::String ^ description, bool shouldApplyChangesImmediately);" />
+      <MemberSignature Language="F#" Value="abstract member BeginEdit : string * bool -&gt; System.Activities.Presentation.Model.ModelEditingScope&#xA;override this.BeginEdit : string * bool -&gt; System.Activities.Presentation.Model.ModelEditingScope" Usage="modelItem.BeginEdit (description, shouldApplyChangesImmediately)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -274,6 +280,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Content" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Content As ModelProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelProperty ^ Content { System::Activities::Presentation::Model::ModelProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Activities.Presentation.Model.ModelProperty" Usage="System.Activities.Presentation.Model.ModelItem.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -294,6 +301,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.GetCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCurrentValue () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetCurrentValue();" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValue : unit -&gt; obj" Usage="modelItem.GetCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -322,6 +330,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Model.ModelItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -342,6 +351,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Presentation.Model.ModelItem.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -369,6 +379,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Parent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parent As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Parent { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelItem.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -389,6 +400,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Parents" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parents As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ Parents { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parents : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.Model.ModelItem.Parents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -409,6 +421,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As ModelPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelPropertyCollection ^ Properties { System::Activities::Presentation::Model::ModelPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Activities.Presentation.Model.ModelPropertyCollection" Usage="System.Activities.Presentation.Model.ModelItem.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -436,6 +449,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Model.ModelItem.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -462,6 +476,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Root" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Root As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ Root { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelItem.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -482,6 +497,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Source" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Source As ModelProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelProperty ^ Source { System::Activities::Presentation::Model::ModelProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Activities.Presentation.Model.ModelProperty" Usage="System.Activities.Presentation.Model.ModelItem.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -509,6 +525,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.Sources" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Sources As IEnumerable(Of ModelProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ Sources { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sources : seq&lt;System.Activities.Presentation.Model.ModelProperty&gt;" Usage="System.Activities.Presentation.Model.ModelItem.Sources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -529,6 +546,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItem.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="modelItem.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -550,6 +568,7 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItem.View" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property View As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::DependencyObject ^ View { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : System.Windows.DependencyObject" Usage="System.Activities.Presentation.Model.ModelItem.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

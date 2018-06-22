@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapExtension abstract" />
+  <TypeSignature Language="F#" Value="type SoapExtension = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream ChainStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtension.ChainStream(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ ChainStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member ChainStream : System.IO.Stream -&gt; System.IO.Stream&#xA;override this.ChainStream : System.IO.Stream -&gt; System.IO.Stream" Usage="soapExtension.ChainStream stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtension.GetInitializer(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInitializer (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetInitializer(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetInitializer : Type -&gt; obj" Usage="soapExtension.GetInitializer serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtension.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo,System.Web.Services.Protocols.SoapExtensionAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInitializer (methodInfo As LogicalMethodInfo, attribute As SoapExtensionAttribute) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo, System::Web::Services::Protocols::SoapExtensionAttribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="abstract member GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo * System.Web.Services.Protocols.SoapExtensionAttribute -&gt; obj" Usage="soapExtension.GetInitializer (methodInfo, attribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtension.Initialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize (initializer As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize(System::Object ^ initializer);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : obj -&gt; unit" Usage="soapExtension.Initialize initializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtension.ProcessMessage(System.Web.Services.Protocols.SoapMessage)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessMessage (message As SoapMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessMessage(System::Web::Services::Protocols::SoapMessage ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessMessage : System.Web.Services.Protocols.SoapMessage -&gt; unit" Usage="soapExtension.ProcessMessage message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationInitializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CorrelationInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationInitializer abstract" />
+  <TypeSignature Language="F#" Value="type CorrelationInitializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property CorrelationHandle As InArgument(Of CorrelationHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ CorrelationHandle { System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationHandle : System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; with get, set" Usage="System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

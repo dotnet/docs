@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryHitTestParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class GeometryHitTestParameters&#xA;Inherits HitTestParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeometryHitTestParameters : System::Windows::Media::HitTestParameters" />
+  <TypeSignature Language="F#" Value="type GeometryHitTestParameters = class&#xA;    inherit HitTestParameters" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@ Intersection between hit test geometry and target object
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryHitTestParameters.#ctor(System.Windows.Media.Geometry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GeometryHitTestParameters(System::Windows::Media::Geometry ^ geometry);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GeometryHitTestParameters : System.Windows.Media.Geometry -&gt; System.Windows.Media.GeometryHitTestParameters" Usage="new System.Windows.Media.GeometryHitTestParameters geometry" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +80,7 @@ Intersection between hit test geometry and target object
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryHitTestParameters.HitGeometry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HitGeometry As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Geometry ^ HitGeometry { System::Windows::Media::Geometry ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HitGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Media.GeometryHitTestParameters.HitGeometry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

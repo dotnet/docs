@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyMetadataCollection(Of T)&#xA;Inherits ReadOnlyCollection(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : MetadataItempublic ref class ReadOnlyMetadataCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type ReadOnlyMetadataCollection&lt;'T (requires 'T :&gt; MetadataItem)&gt; = class&#xA;    inherit ReadOnlyCollection&lt;'T (requires 'T :&gt; MetadataItem)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (identity As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ identity);" />
+      <MemberSignature Language="F#" Value="override this.Contains : string -&gt; bool" Usage="readOnlyMetadataCollection.Contains identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlyMetadataCollection(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;'T (requires 'T :&gt; System.Data.Metadata.Edm.MetadataItem)&gt;.Enumerator" Usage="readOnlyMetadataCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetValue(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (identity As String, ignoreCase As Boolean) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual T GetValue(System::String ^ identity, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string * bool -&gt; 'T&#xA;override this.GetValue : string * bool -&gt; 'T" Usage="readOnlyMetadataCollection.GetValue (identity, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T value);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : 'T -&gt; int" Usage="readOnlyMetadataCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;'T (requires 'T :&gt; System.Data.Metadata.Edm.MetadataItem)&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(identity As String) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T default[System::String ^] { T get(System::String ^ identity); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : 'T" Usage="System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;'T (requires 'T :&gt; System.Data.Metadata.Edm.MetadataItem)&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.TryGetValue(System.String,System.Boolean,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetValue (identity As String, ignoreCase As Boolean, ByRef item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ identity, bool ignoreCase, [Runtime::InteropServices::Out] T % item);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string * bool *  -&gt; bool&#xA;override this.TryGetValue : string * bool *  -&gt; bool" Usage="readOnlyMetadataCollection.TryGetValue (identity, ignoreCase, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

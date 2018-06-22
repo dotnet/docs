@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualPathProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualPathProvider&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualPathProvider abstract : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type VirtualPathProvider = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -203,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.CombineVirtualPaths(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CombineVirtualPaths (basePath As String, relativePath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ CombineVirtualPaths(System::String ^ basePath, System::String ^ relativePath);" />
+      <MemberSignature Language="F#" Value="abstract member CombineVirtualPaths : string * string -&gt; string&#xA;override this.CombineVirtualPaths : string * string -&gt; string" Usage="virtualPathProvider.CombineVirtualPaths (basePath, relativePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.DirectoryExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DirectoryExists (virtualDir As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DirectoryExists(System::String ^ virtualDir);" />
+      <MemberSignature Language="F#" Value="abstract member DirectoryExists : string -&gt; bool&#xA;override this.DirectoryExists : string -&gt; bool" Usage="virtualPathProvider.DirectoryExists virtualDir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -288,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.FileExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FileExists (virtualPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool FileExists(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="abstract member FileExists : string -&gt; bool&#xA;override this.FileExists : string -&gt; bool" Usage="virtualPathProvider.FileExists virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -328,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetCacheDependency(System.String,System.Collections.IEnumerable,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCacheDependency (virtualPath As String, virtualPathDependencies As IEnumerable, utcStart As DateTime) As CacheDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Caching::CacheDependency ^ GetCacheDependency(System::String ^ virtualPath, System::Collections::IEnumerable ^ virtualPathDependencies, DateTime utcStart);" />
+      <MemberSignature Language="F#" Value="abstract member GetCacheDependency : string * System.Collections.IEnumerable * DateTime -&gt; System.Web.Caching.CacheDependency&#xA;override this.GetCacheDependency : string * System.Collections.IEnumerable * DateTime -&gt; System.Web.Caching.CacheDependency" Usage="virtualPathProvider.GetCacheDependency (virtualPath, virtualPathDependencies, utcStart)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -371,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetCacheKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCacheKey (virtualPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetCacheKey(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetCacheKey : string -&gt; string&#xA;override this.GetCacheKey : string -&gt; string" Usage="virtualPathProvider.GetCacheKey virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDirectory (virtualDir As String) As VirtualDirectory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::VirtualDirectory ^ GetDirectory(System::String ^ virtualDir);" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectory : string -&gt; System.Web.Hosting.VirtualDirectory&#xA;override this.GetDirectory : string -&gt; System.Web.Hosting.VirtualDirectory" Usage="virtualPathProvider.GetDirectory virtualDir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFile (virtualPath As String) As VirtualFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::VirtualFile ^ GetFile(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetFile : string -&gt; System.Web.Hosting.VirtualFile&#xA;override this.GetFile : string -&gt; System.Web.Hosting.VirtualFile" Usage="virtualPathProvider.GetFile virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetFileHash(System.String,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileHash (virtualPath As String, virtualPathDependencies As IEnumerable) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFileHash(System::String ^ virtualPath, System::Collections::IEnumerable ^ virtualPathDependencies);" />
+      <MemberSignature Language="F#" Value="abstract member GetFileHash : string * System.Collections.IEnumerable -&gt; string&#xA;override this.GetFileHash : string * System.Collections.IEnumerable -&gt; string" Usage="virtualPathProvider.GetFileHash (virtualPath, virtualPathDependencies)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -521,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="virtualPathProvider.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="virtualPathProvider.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -584,6 +595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.OpenFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenFile (virtualPath As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenFile(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="static member OpenFile : string -&gt; System.IO.Stream" Usage="System.Web.Hosting.VirtualPathProvider.OpenFile virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -615,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualPathProvider.Previous" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Previous As VirtualPathProvider" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::Hosting::VirtualPathProvider ^ Previous { System::Web::Hosting::VirtualPathProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : System.Web.Hosting.VirtualPathProvider" Usage="System.Web.Hosting.VirtualPathProvider.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

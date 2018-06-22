@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementHostingModel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ManagementHostingModel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ManagementHostingModel" />
+  <TypeSignature Language="F#" Value="type ManagementHostingModel = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.Decoupled" />
       <MemberSignature Language="VB.NET" Value="Decoupled" />
       <MemberSignature Language="C++ CLI" Value="Decoupled" />
+      <MemberSignature Language="F#" Value="Decoupled = 0" Usage="System.Management.Instrumentation.ManagementHostingModel.Decoupled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.LocalService" />
       <MemberSignature Language="VB.NET" Value="LocalService" />
       <MemberSignature Language="C++ CLI" Value="LocalService" />
+      <MemberSignature Language="F#" Value="LocalService = 2" Usage="System.Management.Instrumentation.ManagementHostingModel.LocalService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.LocalSystem" />
       <MemberSignature Language="VB.NET" Value="LocalSystem" />
       <MemberSignature Language="C++ CLI" Value="LocalSystem" />
+      <MemberSignature Language="F#" Value="LocalSystem = 3" Usage="System.Management.Instrumentation.ManagementHostingModel.LocalSystem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.NetworkService" />
       <MemberSignature Language="VB.NET" Value="NetworkService" />
       <MemberSignature Language="C++ CLI" Value="NetworkService" />
+      <MemberSignature Language="F#" Value="NetworkService = 1" Usage="System.Management.Instrumentation.ManagementHostingModel.NetworkService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

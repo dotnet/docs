@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageAsyncTask" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageAsyncTask" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageAsyncTask sealed" />
+  <TypeSignature Language="F#" Value="type PageAsyncTask = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageAsyncTask.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As Func(Of CancellationToken, Task))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageAsyncTask(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PageAsyncTask : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt; -&gt; System.Web.UI.PageAsyncTask" Usage="new System.Web.UI.PageAsyncTask handler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageAsyncTask.#ctor(System.Func{System.Threading.Tasks.Task})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As Func(Of Task))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageAsyncTask(Func&lt;System::Threading::Tasks::Task ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PageAsyncTask : Func&lt;System.Threading.Tasks.Task&gt; -&gt; System.Web.UI.PageAsyncTask" Usage="new System.Web.UI.PageAsyncTask handler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageAsyncTask.#ctor(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (beginHandler As BeginEventHandler, endHandler As EndEventHandler, timeoutHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageAsyncTask(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Web::EndEventHandler ^ timeoutHandler, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PageAsyncTask : System.Web.BeginEventHandler * System.Web.EndEventHandler * System.Web.EndEventHandler * obj -&gt; System.Web.UI.PageAsyncTask" Usage="new System.Web.UI.PageAsyncTask (beginHandler, endHandler, timeoutHandler, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageAsyncTask.#ctor(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Web.EndEventHandler,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (beginHandler As BeginEventHandler, endHandler As EndEventHandler, timeoutHandler As EndEventHandler, state As Object, executeInParallel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageAsyncTask(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Web::EndEventHandler ^ timeoutHandler, System::Object ^ state, bool executeInParallel);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PageAsyncTask : System.Web.BeginEventHandler * System.Web.EndEventHandler * System.Web.EndEventHandler * obj * bool -&gt; System.Web.UI.PageAsyncTask" Usage="new System.Web.UI.PageAsyncTask (beginHandler, endHandler, timeoutHandler, state, executeInParallel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageAsyncTask.BeginHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BeginHandler As BeginEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::BeginEventHandler ^ BeginHandler { System::Web::BeginEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BeginHandler : System.Web.BeginEventHandler" Usage="System.Web.UI.PageAsyncTask.BeginHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageAsyncTask.EndHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndHandler As EndEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::EndEventHandler ^ EndHandler { System::Web::EndEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndHandler : System.Web.EndEventHandler" Usage="System.Web.UI.PageAsyncTask.EndHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageAsyncTask.ExecuteInParallel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecuteInParallel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExecuteInParallel { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteInParallel : bool" Usage="System.Web.UI.PageAsyncTask.ExecuteInParallel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageAsyncTask.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ State { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : obj" Usage="System.Web.UI.PageAsyncTask.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -344,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageAsyncTask.TimeoutHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeoutHandler As EndEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::EndEventHandler ^ TimeoutHandler { System::Web::EndEventHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeoutHandler : System.Web.EndEventHandler" Usage="System.Web.UI.PageAsyncTask.TimeoutHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

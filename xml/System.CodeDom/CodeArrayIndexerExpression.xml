@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayIndexerExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeArrayIndexerExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeArrayIndexerExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeArrayIndexerExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, ParamArray indices As CodeExpression())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArrayIndexerExpression(System::CodeDom::CodeExpression ^ targetObject, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ indices);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArrayIndexerExpression : System.CodeDom.CodeExpression * System.CodeDom.CodeExpression[] -&gt; System.CodeDom.CodeArrayIndexerExpression" Usage="new System.CodeDom.CodeArrayIndexerExpression (targetObject, indices)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayIndexerExpression.Indices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As CodeExpressionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Indices { System::CodeDom::CodeExpressionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indices : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeArrayIndexerExpression.Indices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayIndexerExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeArrayIndexerExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

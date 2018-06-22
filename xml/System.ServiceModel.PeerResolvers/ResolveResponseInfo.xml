@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ResolveResponseInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResolveResponseInfo" />
+  <TypeSignature Language="F#" Value="type ResolveResponseInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor(System.ServiceModel.PeerNodeAddress[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (addresses As PeerNodeAddress())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveResponseInfo(cli::array &lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ addresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.ResolveResponseInfo : System.ServiceModel.PeerNodeAddress[] -&gt; System.ServiceModel.PeerResolvers.ResolveResponseInfo" Usage="new System.ServiceModel.PeerResolvers.ResolveResponseInfo addresses" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.ResolveResponseInfo.Addresses" />
       <MemberSignature Language="VB.NET" Value="Public Property Addresses As IList(Of PeerNodeAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ Addresses { System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Addresses : System.Collections.Generic.IList&lt;System.ServiceModel.PeerNodeAddress&gt; with get, set" Usage="System.ServiceModel.PeerResolvers.ResolveResponseInfo.Addresses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
+      <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="resolveResponseInfo.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

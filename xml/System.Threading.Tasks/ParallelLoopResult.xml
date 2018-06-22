@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ParallelLoopResult" />
   <TypeSignature Language="VB.NET" Value="Public Structure ParallelLoopResult" />
   <TypeSignature Language="C++ CLI" Value="public value class ParallelLoopResult" />
+  <TypeSignature Language="F#" Value="type ParallelLoopResult = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopResult.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Threading.Tasks.ParallelLoopResult.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LowestBreakIteration As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; LowestBreakIteration { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.LowestBreakIteration : Nullable&lt;int64&gt;" Usage="System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectOtherwiseElement" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectOtherwiseElement&#xA;Inherits ProjectElementContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectOtherwiseElement : Microsoft::Build::Construction::ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectOtherwiseElement = class&#xA;    inherit ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOtherwiseElement.ChooseElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChooseElements As ICollection(Of ProjectChooseElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectChooseElement ^&gt; ^ ChooseElements { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectChooseElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChooseElements : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectChooseElement&gt;" Usage="Microsoft.Build.Construction.ProjectOtherwiseElement.ChooseElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOtherwiseElement.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.Construction.ProjectOtherwiseElement.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOtherwiseElement.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectOtherwiseElement.ConditionLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOtherwiseElement.ItemGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemGroups As ICollection(Of ProjectItemGroupElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ ItemGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectOtherwiseElement.ItemGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectOtherwiseElement.PropertyGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGroups As ICollection(Of ProjectPropertyGroupElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ PropertyGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectPropertyGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectOtherwiseElement.PropertyGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

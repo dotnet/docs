@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.SpcInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure SpcInfo" />
   <TypeSignature Language="C++ CLI" Value="public value class SpcInfo" />
+  <TypeSignature Language="F#" Value="type SpcInfo = struct" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.SpcInfo.Count" />
       <MemberSignature Language="VB.NET" Value="Public Count As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short Count;" />
+      <MemberSignature Language="F#" Value="val mutable Count : int16" Usage="Microsoft.VisualBasic.SpcInfo.Count" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessPingCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessPingCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessPingCallback" />
+  <TypeSignature Language="F#" Value="type IProcessPingCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessPingCallback.Respond" />
       <MemberSignature Language="VB.NET" Value="Public Sub Respond ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Respond();" />
+      <MemberSignature Language="F#" Value="abstract member Respond : unit -&gt; unit" Usage="iProcessPingCallback.Respond " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

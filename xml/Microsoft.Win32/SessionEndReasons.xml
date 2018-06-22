@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndReasons" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionEndReasons" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionEndReasons" />
+  <TypeSignature Language="F#" Value="type SessionEndReasons = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.Logoff" />
       <MemberSignature Language="VB.NET" Value="Logoff" />
       <MemberSignature Language="C++ CLI" Value="Logoff" />
+      <MemberSignature Language="F#" Value="Logoff = 1" Usage="Microsoft.Win32.SessionEndReasons.Logoff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.SystemShutdown" />
       <MemberSignature Language="VB.NET" Value="SystemShutdown" />
       <MemberSignature Language="C++ CLI" Value="SystemShutdown" />
+      <MemberSignature Language="F#" Value="SystemShutdown = 2" Usage="Microsoft.Win32.SessionEndReasons.SystemShutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

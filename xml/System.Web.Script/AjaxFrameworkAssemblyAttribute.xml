@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.AjaxFrameworkAssemblyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class AjaxFrameworkAssemblyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AjaxFrameworkAssemblyAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type AjaxFrameworkAssemblyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Script.AjaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetDefaultAjaxFrameworkAssembly (currentAssembly As Assembly) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Reflection::Assembly ^ GetDefaultAjaxFrameworkAssembly(System::Reflection::Assembly ^ currentAssembly);" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultAjaxFrameworkAssembly : System.Reflection.Assembly -&gt; System.Reflection.Assembly&#xA;override this.GetDefaultAjaxFrameworkAssembly : System.Reflection.Assembly -&gt; System.Reflection.Assembly" Usage="ajaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly currentAssembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

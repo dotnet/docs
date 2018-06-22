@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowTerminatedException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTerminatedException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTerminatedException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type WorkflowTerminatedException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTerminatedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.WorkflowTerminatedException : string -&gt; System.Workflow.ComponentModel.WorkflowTerminatedException" Usage="new System.Workflow.ComponentModel.WorkflowTerminatedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTerminatedException(System::String ^ message, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.WorkflowTerminatedException : string * Exception -&gt; System.Workflow.ComponentModel.WorkflowTerminatedException" Usage="new System.Workflow.ComponentModel.WorkflowTerminatedException (message, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

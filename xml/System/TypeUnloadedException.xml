@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.TypeUnloadedException" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeUnloadedException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeUnloadedException : SystemException" />
+  <TypeSignature Language="F#" Value="type TypeUnloadedException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypeUnloadedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeUnloadedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new TypeUnloadedException : string -&gt; TypeUnloadedException" Usage="new System.TypeUnloadedException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypeUnloadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeUnloadedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new TypeUnloadedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; TypeUnloadedException" Usage="new System.TypeUnloadedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypeUnloadedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeUnloadedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new TypeUnloadedException : string * Exception -&gt; TypeUnloadedException" Usage="new System.TypeUnloadedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

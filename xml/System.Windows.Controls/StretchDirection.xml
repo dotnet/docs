@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StretchDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum StretchDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class StretchDirection" />
+  <TypeSignature Language="F#" Value="type StretchDirection = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="C++ CLI" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 2" Usage="System.Windows.Controls.StretchDirection.Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.DownOnly" />
       <MemberSignature Language="VB.NET" Value="DownOnly" />
       <MemberSignature Language="C++ CLI" Value="DownOnly" />
+      <MemberSignature Language="F#" Value="DownOnly = 1" Usage="System.Windows.Controls.StretchDirection.DownOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.UpOnly" />
       <MemberSignature Language="VB.NET" Value="UpOnly" />
       <MemberSignature Language="C++ CLI" Value="UpOnly" />
+      <MemberSignature Language="F#" Value="UpOnly = 0" Usage="System.Windows.Controls.StretchDirection.UpOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

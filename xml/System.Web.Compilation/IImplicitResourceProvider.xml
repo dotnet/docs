@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IImplicitResourceProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IImplicitResourceProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IImplicitResourceProvider" />
+  <TypeSignature Language="F#" Value="type IImplicitResourceProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IImplicitResourceProvider.GetImplicitResourceKeys(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImplicitResourceKeys (keyPrefix As String) As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetImplicitResourceKeys(System::String ^ keyPrefix);" />
+      <MemberSignature Language="F#" Value="abstract member GetImplicitResourceKeys : string -&gt; System.Collections.ICollection" Usage="iImplicitResourceProvider.GetImplicitResourceKeys keyPrefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IImplicitResourceProvider.GetObject(System.Web.Compilation.ImplicitResourceKey,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetObject (key As ImplicitResourceKey, culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObject(System::Web::Compilation::ImplicitResourceKey ^ key, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : System.Web.Compilation.ImplicitResourceKey * System.Globalization.CultureInfo -&gt; obj" Usage="iImplicitResourceProvider.GetObject (key, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

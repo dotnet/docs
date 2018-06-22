@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITypeResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeResolutionService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeResolutionService" />
+  <TypeSignature Language="F#" Value="type ITypeResolutionService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssembly (name As AssemblyName) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetAssembly(System::Reflection::AssemblyName ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetAssembly : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="iTypeResolutionService.GetAssembly name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetAssembly(System.Reflection.AssemblyName,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAssembly (name As AssemblyName, throwOnError As Boolean) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetAssembly(System::Reflection::AssemblyName ^ name, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member GetAssembly : System.Reflection.AssemblyName * bool -&gt; System.Reflection.Assembly" Usage="iTypeResolutionService.GetAssembly (name, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetPathOfAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPathOfAssembly (name As AssemblyName) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPathOfAssembly(System::Reflection::AssemblyName ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetPathOfAssembly : System.Reflection.AssemblyName -&gt; string" Usage="iTypeResolutionService.GetPathOfAssembly name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string -&gt; Type" Usage="iTypeResolutionService.GetType name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, throwOnError As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ name, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string * bool -&gt; Type" Usage="iTypeResolutionService.GetType (name, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.GetType(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, throwOnError As Boolean, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ name, bool throwOnError, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetType : string * bool * bool -&gt; Type" Usage="iTypeResolutionService.GetType (name, throwOnError, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeResolutionService.ReferenceAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReferenceAssembly (name As AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReferenceAssembly(System::Reflection::AssemblyName ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ReferenceAssembly : System.Reflection.AssemblyName -&gt; unit" Usage="iTypeResolutionService.ReferenceAssembly name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AttributeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class AttributeCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type AttributeCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.#ctor(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray attributes As Attribute())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeCollection(... cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AttributeCollection : Attribute[] -&gt; System.ComponentModel.AttributeCollection" Usage="new System.ComponentModel.AttributeCollection attributes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -162,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Attributes" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Attributes As Attribute()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;Attribute ^&gt; ^ Attributes { cli::array &lt;Attribute ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : Attribute[]" Usage="System.ComponentModel.AttributeCollection.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Attribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Contains(System.Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(Attribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="member this.Contains : Attribute -&gt; bool" Usage="attributeCollection.Contains attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -260,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Contains(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (attributes As Attribute()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="member this.Contains : Attribute[] -&gt; bool" Usage="attributeCollection.Contains attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -312,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="attributeCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -352,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ComponentModel.AttributeCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -403,6 +410,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.AttributeCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As AttributeCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::AttributeCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.AttributeCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.FromExisting(System.ComponentModel.AttributeCollection,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (existing As AttributeCollection, ParamArray newAttributes As Attribute()) As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::AttributeCollection ^ FromExisting(System::ComponentModel::AttributeCollection ^ existing, ... cli::array &lt;Attribute ^&gt; ^ newAttributes);" />
+      <MemberSignature Language="F#" Value="static member FromExisting : System.ComponentModel.AttributeCollection * Attribute[] -&gt; System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.AttributeCollection.FromExisting (existing, newAttributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -485,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.GetDefaultAttribute(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultAttribute (attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Attribute ^ GetDefaultAttribute(Type ^ attributeType);" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultAttribute : Type -&gt; Attribute" Usage="attributeCollection.GetDefaultAttribute attributeType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -520,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="attributeCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -578,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Attribute ^ default[int] { Attribute ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Attribute" Usage="System.ComponentModel.AttributeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -630,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Item(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(attributeType As Type) As Attribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Attribute ^ default[Type ^] { Attribute ^ get(Type ^ attributeType); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : Attribute" Usage="System.ComponentModel.AttributeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -693,6 +706,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Attribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Matches(System.Attribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(Attribute ^ attribute);" />
+      <MemberSignature Language="F#" Value="member this.Matches : Attribute -&gt; bool" Usage="attributeCollection.Matches attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -751,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Matches(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (attributes As Attribute()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="member this.Matches : Attribute[] -&gt; bool" Usage="attributeCollection.Matches attributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -804,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.AttributeCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -837,6 +853,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.AttributeCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -872,6 +889,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.AttributeCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

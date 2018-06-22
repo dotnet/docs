@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.XmlHierarchicalDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlHierarchicalDataSourceView&#xA;Inherits HierarchicalDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlHierarchicalDataSourceView : System::Web::UI::HierarchicalDataSourceView" />
+  <TypeSignature Language="F#" Value="type XmlHierarchicalDataSourceView = class&#xA;    inherit HierarchicalDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlHierarchicalDataSourceView.Select" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Select () As IHierarchicalEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::IHierarchicalEnumerable ^ Select();" />
+      <MemberSignature Language="F#" Value="override this.Select : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="xmlHierarchicalDataSourceView.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

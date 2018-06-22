@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyContainerEditMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyContainerEditMode" />
+  <TypeSignature Language="F#" Value="type PropertyContainerEditMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Dialog" />
       <MemberSignature Language="VB.NET" Value="Dialog" />
       <MemberSignature Language="C++ CLI" Value="Dialog" />
+      <MemberSignature Language="F#" Value="Dialog = 3" Usage="System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Dialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPinned" />
       <MemberSignature Language="VB.NET" Value="ExtendedPinned" />
       <MemberSignature Language="C++ CLI" Value="ExtendedPinned" />
+      <MemberSignature Language="F#" Value="ExtendedPinned = 2" Usage="System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPinned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPopup" />
       <MemberSignature Language="VB.NET" Value="ExtendedPopup" />
       <MemberSignature Language="C++ CLI" Value="ExtendedPopup" />
+      <MemberSignature Language="F#" Value="ExtendedPopup = 1" Usage="System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPopup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Inline" />
       <MemberSignature Language="VB.NET" Value="Inline" />
       <MemberSignature Language="C++ CLI" Value="Inline" />
+      <MemberSignature Language="F#" Value="Inline = 0" Usage="System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

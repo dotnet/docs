@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommand" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbCommand&#xA;Inherits Component&#xA;Implements IDbCommand, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbCommand abstract : System::ComponentModel::Component, IDisposable, System::Data::IDbCommand" />
+  <TypeSignature Language="F#" Value="type DbCommand = class&#xA;    inherit Component&#xA;    interface IDbCommand&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Cancel();" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="dbCommand.Cancel " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.Cancel</InterfaceMember>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.CommandText" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property CommandText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.Common.DbCommand.CommandText" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandText</InterfaceMember>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property CommandTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int CommandTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.Common.DbCommand.CommandTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandTimeout</InterfaceMember>
@@ -203,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.CommandType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property CommandType As CommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.Common.DbCommand.CommandType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandType</InterfaceMember>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbConnection ^ Connection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.Common.DbConnection with get, set" Usage="System.Data.Common.DbCommand.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -294,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.CreateDbParameter" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDbParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbParameter ^ CreateDbParameter();" />
+      <MemberSignature Language="F#" Value="abstract member CreateDbParameter : unit -&gt; System.Data.Common.DbParameter" Usage="dbCommand.CreateDbParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="member this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="dbCommand.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection with get, set" Usage="System.Data.Common.DbCommand.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -389,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.DbParameterCollection" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DbParameterCollection As DbParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Data::Common::DbParameterCollection ^ DbParameterCollection { System::Data::Common::DbParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbParameterCollection : System.Data.Common.DbParameterCollection" Usage="System.Data.Common.DbCommand.DbParameterCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -420,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.DbTransaction" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Property DbTransaction As DbTransaction" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Data::Common::DbTransaction ^ DbTransaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbTransaction : System.Data.Common.DbTransaction with get, set" Usage="System.Data.Common.DbCommand.DbTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -451,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.DesignTimeVisible" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property DesignTimeVisible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool DesignTimeVisible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeVisible : bool with get, set" Usage="System.Data.Common.DbCommand.DesignTimeVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -497,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dbCommand.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -520,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbCommand.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -543,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ExecuteDbDataReader (behavior As CommandBehavior) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbDataReader ^ ExecuteDbDataReader(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteDbDataReader : System.Data.CommandBehavior -&gt; System.Data.Common.DbDataReader" Usage="dbCommand.ExecuteDbDataReader behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -579,6 +594,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Data.Common.DbDataReader&gt; ExecuteDbDataReaderAsync(valuetype System.Data.CommandBehavior behavior, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteDbDataReaderAsync(System::Data::CommandBehavior behavior, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteDbDataReaderAsync : System.Data.CommandBehavior * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;&#xA;override this.ExecuteDbDataReaderAsync : System.Data.CommandBehavior * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;" Usage="dbCommand.ExecuteDbDataReaderAsync (behavior, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -629,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteNonQuery" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ExecuteNonQuery () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int ExecuteNonQuery();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteNonQuery : unit -&gt; int" Usage="dbCommand.ExecuteNonQuery " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteNonQuery</InterfaceMember>
@@ -692,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteNonQueryAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteNonQueryAsync () As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ ExecuteNonQueryAsync();" />
+      <MemberSignature Language="F#" Value="member this.ExecuteNonQueryAsync : unit -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="dbCommand.ExecuteNonQueryAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -733,6 +751,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ExecuteNonQueryAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ExecuteNonQueryAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteNonQueryAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ExecuteNonQueryAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="dbCommand.ExecuteNonQueryAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -790,6 +809,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbDataReader ^ ExecuteReader();" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReader : unit -&gt; System.Data.Common.DbDataReader" Usage="dbCommand.ExecuteReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -822,6 +842,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.Common.DbDataReader" Usage="dbCommand.ExecuteReader behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -874,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReaderAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReaderAsync () As Task(Of DbDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteReaderAsync();" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReaderAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;" Usage="dbCommand.ExecuteReaderAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -917,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReaderAsync (behavior As CommandBehavior) As Task(Of DbDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteReaderAsync(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReaderAsync : System.Data.CommandBehavior -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;" Usage="dbCommand.ExecuteReaderAsync behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -962,6 +985,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.Common.DbDataReader&gt; ExecuteReaderAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteReaderAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReaderAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;" Usage="dbCommand.ExecuteReaderAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1007,6 +1031,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.Common.DbDataReader&gt; ExecuteReaderAsync(valuetype System.Data.CommandBehavior behavior, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteReaderAsync(System::Data::CommandBehavior behavior, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteReaderAsync : System.Data.CommandBehavior * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt;" Usage="dbCommand.ExecuteReaderAsync (behavior, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1053,6 +1078,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteScalar" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ExecuteScalar () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ExecuteScalar();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteScalar : unit -&gt; obj" Usage="dbCommand.ExecuteScalar " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteScalar</InterfaceMember>
@@ -1114,6 +1140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteScalarAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteScalarAsync () As Task(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ExecuteScalarAsync();" />
+      <MemberSignature Language="F#" Value="member this.ExecuteScalarAsync : unit -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="dbCommand.ExecuteScalarAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1155,6 +1182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; ExecuteScalarAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ExecuteScalarAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteScalarAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.ExecuteScalarAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="dbCommand.ExecuteScalarAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1202,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As DbParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbParameterCollection ^ Parameters { System::Data::Common::DbParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Data.Common.DbParameterCollection" Usage="System.Data.Common.DbCommand.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1241,6 +1270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommand.Prepare" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Prepare ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Prepare();" />
+      <MemberSignature Language="F#" Value="abstract member Prepare : unit -&gt; unit" Usage="dbCommand.Prepare " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.Prepare</InterfaceMember>
@@ -1282,6 +1312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.System#Data#IDbCommand#Connection" />
       <MemberSignature Language="VB.NET" Value=" Property Connection As IDbConnection Implements IDbCommand.Connection" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbConnection ^ System.Data.IDbCommand.Connection { System::Data::IDbConnection ^ get(); void set(System::Data::IDbConnection ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbCommand.System.Data.IDbCommand.Connection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.Connection</InterfaceMember>
@@ -1468,6 +1499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.System#Data#IDbCommand#Parameters" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Parameters As IDataParameterCollection Implements IDbCommand.Parameters" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDataParameterCollection ^ System.Data.IDbCommand.Parameters { System::Data::IDataParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbCommand.System.Data.IDbCommand.Parameters" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.Parameters</InterfaceMember>
@@ -1511,6 +1543,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.System#Data#IDbCommand#Transaction" />
       <MemberSignature Language="VB.NET" Value=" Property Transaction As IDbTransaction Implements IDbCommand.Transaction" />
       <MemberSignature Language="C++ CLI" Value="property System::Data::IDbTransaction ^ System.Data.IDbCommand.Transaction { System::Data::IDbTransaction ^ get(); void set(System::Data::IDbTransaction ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Data.Common.DbCommand.System.Data.IDbCommand.Transaction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.Transaction</InterfaceMember>
@@ -1552,6 +1585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Property Transaction As DbTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbTransaction ^ Transaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transaction : System.Data.Common.DbTransaction with get, set" Usage="System.Data.Common.DbCommand.Transaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1594,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommand.UpdatedRowSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property UpdatedRowSource As UpdateRowSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.Common.DbCommand.UpdatedRowSource" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.UpdatedRowSource</InterfaceMember>

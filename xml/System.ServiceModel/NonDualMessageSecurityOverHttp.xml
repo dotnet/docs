@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NonDualMessageSecurityOverHttp" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonDualMessageSecurityOverHttp&#xA;Inherits MessageSecurityOverHttp" />
   <TypeSignature Language="C++ CLI" Value="public ref class NonDualMessageSecurityOverHttp sealed : System::ServiceModel::MessageSecurityOverHttp" />
+  <TypeSignature Language="F#" Value="type NonDualMessageSecurityOverHttp = class&#xA;    inherit MessageSecurityOverHttp" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext" />
       <MemberSignature Language="VB.NET" Value="Public Property EstablishSecurityContext As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EstablishSecurityContext { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EstablishSecurityContext : bool with get, set" Usage="System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NonDualMessageSecurityOverHttp.IsSecureConversationEnabled" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsSecureConversationEnabled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsSecureConversationEnabled();" />
+      <MemberSignature Language="F#" Value="override this.IsSecureConversationEnabled : unit -&gt; bool" Usage="nonDualMessageSecurityOverHttp.IsSecureConversationEnabled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.AssemblyTargetedPatchBandAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyTargetedPatchBandAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyTargetedPatchBandAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyTargetedPatchBandAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.AssemblyTargetedPatchBandAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetedPatchBand As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyTargetedPatchBandAttribute(System::String ^ targetedPatchBand);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.AssemblyTargetedPatchBandAttribute : string -&gt; System.Runtime.AssemblyTargetedPatchBandAttribute" Usage="new System.Runtime.AssemblyTargetedPatchBandAttribute targetedPatchBand" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.AssemblyTargetedPatchBandAttribute.TargetedPatchBand" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetedPatchBand As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedPatchBand { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetedPatchBand : string" Usage="System.Runtime.AssemblyTargetedPatchBandAttribute.TargetedPatchBand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

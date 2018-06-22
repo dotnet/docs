@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AuthorizationRule" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuthorizationRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationRule abstract" />
+  <TypeSignature Language="F#" Value="type AuthorizationRule = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AuthorizationRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; AuthorizationRule(System::Security::Principal::IdentityReference ^ identity, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.AuthorizationRule : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags -&gt; System.Security.AccessControl.AuthorizationRule" Usage="new System.Security.AccessControl.AuthorizationRule (identity, accessMask, isInherited, inheritanceFlags, propagationFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuthorizationRule.AccessMask" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property AccessMask As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property int AccessMask { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessMask : int" Usage="System.Security.AccessControl.AuthorizationRule.AccessMask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuthorizationRule.IdentityReference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdentityReference As IdentityReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IdentityReference ^ IdentityReference { System::Security::Principal::IdentityReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdentityReference : System.Security.Principal.IdentityReference" Usage="System.Security.AccessControl.AuthorizationRule.IdentityReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuthorizationRule.InheritanceFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceFlags As InheritanceFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::InheritanceFlags InheritanceFlags { System::Security::AccessControl::InheritanceFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceFlags : System.Security.AccessControl.InheritanceFlags" Usage="System.Security.AccessControl.AuthorizationRule.InheritanceFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuthorizationRule.IsInherited" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInherited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInherited { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInherited : bool" Usage="System.Security.AccessControl.AuthorizationRule.IsInherited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AuthorizationRule.PropagationFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropagationFlags As PropagationFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::PropagationFlags PropagationFlags { System::Security::AccessControl::PropagationFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropagationFlags : System.Security.AccessControl.PropagationFlags" Usage="System.Security.AccessControl.AuthorizationRule.PropagationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

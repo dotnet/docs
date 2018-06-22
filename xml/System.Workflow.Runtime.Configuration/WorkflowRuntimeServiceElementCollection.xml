@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntimeServiceElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeServiceElementCollection : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeServiceElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.Add(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (serviceSettings As WorkflowRuntimeServiceElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElement ^ serviceSettings);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement -&gt; unit" Usage="workflowRuntimeServiceElementCollection.Add serviceSettings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="workflowRuntimeServiceElementCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (settings As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ settings);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="workflowRuntimeServiceElementCollection.GetElementKey settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

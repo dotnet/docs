@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IConfigMapPathFactory" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigMapPathFactory" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConfigMapPathFactory" />
+  <TypeSignature Language="F#" Value="type IConfigMapPathFactory = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPathFactory.Create(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (virtualPath As String, physicalPath As String) As IConfigMapPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::IConfigMapPath ^ Create(System::String ^ virtualPath, System::String ^ physicalPath);" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string -&gt; System.Web.Configuration.IConfigMapPath" Usage="iConfigMapPathFactory.Create (virtualPath, physicalPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

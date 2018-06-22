@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenCacheKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenCacheKey" />
+  <TypeSignature Language="F#" Value="type SessionSecurityTokenCacheKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.#ctor(System.String,System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpointId As String, contextId As UniqueId, keyGeneration As UniqueId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenCacheKey(System::String ^ endpointId, System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ keyGeneration);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SessionSecurityTokenCacheKey : string * System.Xml.UniqueId * System.Xml.UniqueId -&gt; System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" Usage="new System.IdentityModel.Tokens.SessionSecurityTokenCacheKey (endpointId, contextId, keyGeneration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ContextId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextId As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ ContextId { System::Xml::UniqueId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextId : System.Xml.UniqueId" Usage="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ContextId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.EndpointId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointId : string" Usage="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.EndpointId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sessionSecurityTokenCacheKey.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sessionSecurityTokenCacheKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreKeyGeneration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreKeyGeneration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreKeyGeneration : bool with get, set" Usage="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyGeneration As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ KeyGeneration { System::Xml::UniqueId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyGeneration : System.Xml.UniqueId" Usage="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Equality(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (first As SessionSecurityTokenCacheKey, second As SessionSecurityTokenCacheKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ first, System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ second);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.IdentityModel.Tokens.SessionSecurityTokenCacheKey * System.IdentityModel.Tokens.SessionSecurityTokenCacheKey -&gt; bool" Usage="first = second" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (first As SessionSecurityTokenCacheKey, second As SessionSecurityTokenCacheKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ first, System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ second);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.IdentityModel.Tokens.SessionSecurityTokenCacheKey * System.IdentityModel.Tokens.SessionSecurityTokenCacheKey -&gt; bool" Usage="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sessionSecurityTokenCacheKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

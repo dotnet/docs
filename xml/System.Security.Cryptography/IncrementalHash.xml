@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.IncrementalHash" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IncrementalHash&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class IncrementalHash sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type IncrementalHash = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.IncrementalHash.AlgorithmName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmName As HashAlgorithmName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::HashAlgorithmName AlgorithmName { System::Security::Cryptography::HashAlgorithmName get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmName : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.IncrementalHash.AlgorithmName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.AppendData(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendData (data As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendData(cli::array &lt;System::Byte&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="member this.AppendData : byte[] -&gt; unit" Usage="incrementalHash.AppendData data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.AppendData(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendData (data As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendData(ReadOnlySpan&lt;System::Byte&gt; data);" />
+      <MemberSignature Language="F#" Value="member this.AppendData : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="incrementalHash.AppendData data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.AppendData(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendData (data As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count);" />
+      <MemberSignature Language="F#" Value="member this.AppendData : byte[] * int * int -&gt; unit" Usage="incrementalHash.AppendData (data, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.CreateHash(System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHash (hashAlgorithm As HashAlgorithmName) As IncrementalHash" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::IncrementalHash ^ CreateHash(System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="static member CreateHash : System.Security.Cryptography.HashAlgorithmName -&gt; System.Security.Cryptography.IncrementalHash" Usage="System.Security.Cryptography.IncrementalHash.CreateHash hashAlgorithm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.CreateHMAC(System.Security.Cryptography.HashAlgorithmName,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHMAC (hashAlgorithm As HashAlgorithmName, key As Byte()) As IncrementalHash" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::IncrementalHash ^ CreateHMAC(System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ key);" />
+      <MemberSignature Language="F#" Value="static member CreateHMAC : System.Security.Cryptography.HashAlgorithmName * byte[] -&gt; System.Security.Cryptography.IncrementalHash" Usage="System.Security.Cryptography.IncrementalHash.CreateHMAC (hashAlgorithm, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -289,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="incrementalHash.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.GetHashAndReset" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashAndReset () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetHashAndReset();" />
+      <MemberSignature Language="F#" Value="member this.GetHashAndReset : unit -&gt; byte[]" Usage="incrementalHash.GetHashAndReset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -366,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.IncrementalHash.TryGetHashAndReset(System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetHashAndReset (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetHashAndReset(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryGetHashAndReset : Span&lt;byte&gt; *  -&gt; bool" Usage="incrementalHash.TryGetHashAndReset (destination, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

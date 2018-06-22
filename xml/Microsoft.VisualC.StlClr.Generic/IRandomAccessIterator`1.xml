@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRandomAccessIterator(Of TValue)&#xA;Implements IBidirectionalIterator(Of TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IRandomAccessIterator : Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt;" />
+  <TypeSignature Language="F#" Value="type IRandomAccessIterator&lt;'Value&gt; = interface&#xA;    interface IBidirectionalIterator&lt;'Value&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function distance (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int distance(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member distance : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="iRandomAccessIterator.distance _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function less_than (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool less_than(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="abstract member less_than : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="iRandomAccessIterator.less_than _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.move(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function move (_Offset As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int move(int _Offset);" />
+      <MemberSignature Language="F#" Value="abstract member move : int -&gt; int" Usage="iRandomAccessIterator.move _Offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

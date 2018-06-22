@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.LocalVariablesEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure LocalVariablesEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class LocalVariablesEncoder" />
+  <TypeSignature Language="F#" Value="type LocalVariablesEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariablesEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalVariablesEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.LocalVariablesEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.LocalVariablesEncoder" Usage="new System.Reflection.Metadata.Ecma335.LocalVariablesEncoder builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariablesEncoder.AddVariable" />
       <MemberSignature Language="VB.NET" Value="Public Function AddVariable () As LocalVariableTypeEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::LocalVariableTypeEncoder AddVariable();" />
+      <MemberSignature Language="F#" Value="member this.AddVariable : unit -&gt; System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder" Usage="localVariablesEncoder.AddVariable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.LocalVariablesEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.LocalVariablesEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

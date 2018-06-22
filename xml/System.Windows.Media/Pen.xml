@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Pen" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pen&#xA;Inherits Animatable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Pen sealed : System::Windows::Media::Animation::Animatable" />
+  <TypeSignature Language="F#" Value="type Pen = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush brush, float64 thickness) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Pen.#ctor(System.Windows.Media.Brush,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Pen(System::Windows::Media::Brush ^ brush, double thickness);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Pen : System.Windows.Media.Brush * double -&gt; System.Windows.Media.Pen" Usage="new System.Windows.Media.Pen (brush, thickness)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.Brush" />
       <MemberSignature Language="VB.NET" Value="Public Property Brush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Brush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Brush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.Pen.Brush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.BrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.BrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Pen.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Pen ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Pen" Usage="pen.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Pen.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Pen ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Pen" Usage="pen.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Pen.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="pen.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.DashCap" />
       <MemberSignature Language="VB.NET" Value="Public Property DashCap As PenLineCap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap DashCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
+      <MemberSignature Language="F#" Value="member this.DashCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Media.Pen.DashCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.DashCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DashCapProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DashCapProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DashCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.DashCapProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.DashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DashStyle As DashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DashStyle ^ DashStyle { System::Windows::Media::DashStyle ^ get(); void set(System::Windows::Media::DashStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DashStyle : System.Windows.Media.DashStyle with get, set" Usage="System.Windows.Media.Pen.DashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.DashStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DashStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DashStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DashStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.DashStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.EndLineCap" />
       <MemberSignature Language="VB.NET" Value="Public Property EndLineCap As PenLineCap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap EndLineCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
+      <MemberSignature Language="F#" Value="member this.EndLineCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Media.Pen.EndLineCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.EndLineCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndLineCapProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EndLineCapProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EndLineCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.EndLineCapProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.LineJoin" />
       <MemberSignature Language="VB.NET" Value="Public Property LineJoin As PenLineJoin" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineJoin LineJoin { System::Windows::Media::PenLineJoin get(); void set(System::Windows::Media::PenLineJoin value); };" />
+      <MemberSignature Language="F#" Value="member this.LineJoin : System.Windows.Media.PenLineJoin with get, set" Usage="System.Windows.Media.Pen.LineJoin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +442,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.LineJoinProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineJoinProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineJoinProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LineJoinProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.LineJoinProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -447,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.MiterLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property MiterLimit As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MiterLimit { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MiterLimit : double with get, set" Usage="System.Windows.Media.Pen.MiterLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.MiterLimitProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MiterLimitProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MiterLimitProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MiterLimitProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.MiterLimitProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -513,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.StartLineCap" />
       <MemberSignature Language="VB.NET" Value="Public Property StartLineCap As PenLineCap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap StartLineCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
+      <MemberSignature Language="F#" Value="member this.StartLineCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Media.Pen.StartLineCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -555,6 +573,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.StartLineCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartLineCapProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StartLineCapProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartLineCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.StartLineCapProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -574,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Pen.Thickness" />
       <MemberSignature Language="VB.NET" Value="Public Property Thickness As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Thickness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Thickness : double with get, set" Usage="System.Windows.Media.Pen.Thickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -609,6 +629,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Pen.ThicknessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ThicknessProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ThicknessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Pen.ThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

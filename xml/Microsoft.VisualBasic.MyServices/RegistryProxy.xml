@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class RegistryProxy" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryProxy" />
+  <TypeSignature Language="F#" Value="type RegistryProxy = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassesRoot As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ ClassesRoot { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassesRoot : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentConfig As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ CurrentConfig { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentConfig : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUser As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ CurrentUser { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentUser : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynData As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ DynData { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DynData : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.DynData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -290,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.GetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (keyName As String, valueName As String, defaultValue As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : string * string * obj -&gt; obj" Usage="registryProxy.GetValue (keyName, valueName, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -349,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalMachine As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ LocalMachine { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalMachine : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -407,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PerformanceData As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ PerformanceData { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PerformanceData : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -478,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (keyName As String, valueName As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * string * obj -&gt; unit" Usage="registryProxy.SetValue (keyName, valueName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -541,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (keyName As String, valueName As String, value As Object, valueKind As RegistryValueKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value, Microsoft::Win32::RegistryValueKind valueKind);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * string * obj * Microsoft.Win32.RegistryValueKind -&gt; unit" Usage="registryProxy.SetValue (keyName, valueName, value, valueKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -611,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.Users" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Users As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ Users { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Users : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.Users" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

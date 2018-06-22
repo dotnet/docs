@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlBodyGlyph&#xA;Inherits ComponentGlyph" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlBodyGlyph : System::Windows::Forms::Design::Behavior::ComponentGlyph" />
+  <TypeSignature Language="F#" Value="type ControlBodyGlyph = class&#xA;    inherit ComponentGlyph" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Cursor cursor, class System.ComponentModel.IComponent relatedComponent, class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlBodyGlyph(System::Drawing::Rectangle bounds, System::Windows::Forms::Cursor ^ cursor, System::ComponentModel::IComponent ^ relatedComponent, System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.ControlBodyGlyph : System.Drawing.Rectangle * System.Windows.Forms.Cursor * System.ComponentModel.IComponent * System.Windows.Forms.Design.Behavior.Behavior -&gt; System.Windows.Forms.Design.Behavior.ControlBodyGlyph" Usage="new System.Windows.Forms.Design.Behavior.ControlBodyGlyph (bounds, cursor, relatedComponent, behavior)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Cursor cursor, class System.ComponentModel.IComponent relatedComponent, class System.Windows.Forms.Design.ControlDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.ControlDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlBodyGlyph(System::Drawing::Rectangle bounds, System::Windows::Forms::Cursor ^ cursor, System::ComponentModel::IComponent ^ relatedComponent, System::Windows::Forms::Design::ControlDesigner ^ designer);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.Behavior.ControlBodyGlyph : System.Drawing.Rectangle * System.Windows.Forms.Cursor * System.ComponentModel.IComponent * System.Windows.Forms.Design.ControlDesigner -&gt; System.Windows.Forms.Design.Behavior.ControlBodyGlyph" Usage="new System.Windows.Forms.Design.Behavior.ControlBodyGlyph (bounds, cursor, relatedComponent, designer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.Design.Behavior.ControlBodyGlyph.Bounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.GetHitTest(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHitTest (p As Point) As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::Cursor ^ GetHitTest(System::Drawing::Point p);" />
+      <MemberSignature Language="F#" Value="override this.GetHitTest : System.Drawing.Point -&gt; System.Windows.Forms.Cursor" Usage="controlBodyGlyph.GetHitTest p" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryServiceExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiscoveryServiceExtension&#xA;Implements IExtension(Of ServiceHostBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryServiceExtension abstract : System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type DiscoveryServiceExtension = class&#xA;    interface IExtension&lt;ServiceHostBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryServiceExtension.GetDiscoveryService" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDiscoveryService () As DiscoveryService" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Discovery::DiscoveryService ^ GetDiscoveryService();" />
+      <MemberSignature Language="F#" Value="abstract member GetDiscoveryService : unit -&gt; System.ServiceModel.Discovery.DiscoveryService" Usage="discoveryServiceExtension.GetDiscoveryService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryServiceExtension.PublishedEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublishedEndpoints As ReadOnlyCollection(Of EndpointDiscoveryMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^&gt; ^ PublishedEndpoints { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublishedEndpoints : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;" Usage="System.ServiceModel.Discovery.DiscoveryServiceExtension.PublishedEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

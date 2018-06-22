@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ConnectivityStatus" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectivityStatus" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectivityStatus abstract sealed" />
+  <TypeSignature Language="F#" Value="type ConnectivityStatus = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property IsOffline As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsOffline { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOffline : bool with get, set" Usage="System.Web.ClientServices.ConnectivityStatus.IsOffline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

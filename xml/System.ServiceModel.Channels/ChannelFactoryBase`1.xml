@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelFactoryBase`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelFactoryBase(Of TChannel)&#xA;Inherits ChannelFactoryBase&#xA;Implements IChannelFactory(Of TChannel)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public ref class ChannelFactoryBase abstract : System::ServiceModel::Channels::ChannelFactoryBase, System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="F#" Value="type ChannelFactoryBase&lt;'Channel&gt; = class&#xA;    inherit ChannelFactoryBase&#xA;    interface IChannelFactory&lt;'Channel&gt;&#xA;    interface IChannelFactory&#xA;    interface ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (timeouts As IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelFactoryBase(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ChannelFactoryBase&lt;'Channel&gt; : System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Channels.ChannelFactoryBase&lt;'Channel&gt;" Usage="new System.ServiceModel.Channels.ChannelFactoryBase&lt;'Channel&gt; timeouts" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (address As EndpointAddress) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : System.ServiceModel.EndpointAddress -&gt; 'Channel&#xA;override this.CreateChannel : System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="channelFactoryBase.CreateChannel address" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)</InterfaceMember>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (address As EndpointAddress, via As Uri) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="abstract member CreateChannel : System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel&#xA;override this.CreateChannel : System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="channelFactoryBase.CreateChannel (address, via)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)</InterfaceMember>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
+      <MemberSignature Language="F#" Value="override this.OnAbort : unit -&gt; unit" Usage="channelFactoryBase.OnAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.OnBeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="channelFactoryBase.OnBeginClose (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnClose(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.OnClose : TimeSpan -&gt; unit" Usage="channelFactoryBase.OnClose timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnCreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnCreateChannel (address As EndpointAddress, via As Uri) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TChannel OnCreateChannel(System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateChannel : System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="channelFactoryBase.OnCreateChannel (address, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -376,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnEndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.OnEndClose : IAsyncResult -&gt; unit" Usage="channelFactoryBase.OnEndClose result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -406,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase`1.ValidateCreateChannel" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ValidateCreateChannel ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidateCreateChannel();" />
+      <MemberSignature Language="F#" Value="member this.ValidateCreateChannel : unit -&gt; unit" Usage="channelFactoryBase.ValidateCreateChannel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

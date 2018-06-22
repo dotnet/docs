@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.WillChangeRecordsetDelegate" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.WillChangeRecordsetDelegate(adReason As EventReasonEnum, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::WillChangeRecordsetDelegate(EventReasonEnum adReason, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
+  <TypeSignature Language="F#" Value="type ADODC.WillChangeRecordsetDelegate = delegate of EventReasonEnum *  * Recordset -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

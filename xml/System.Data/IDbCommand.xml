@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDbCommand" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbCommand&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDbCommand : IDisposable" />
+  <TypeSignature Language="F#" Value="type IDbCommand = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="iDbCommand.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandText" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.IDbCommand.CommandText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CommandTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.IDbCommand.CommandTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandType As CommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.IDbCommand.CommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -254,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As IDbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbConnection ^ Connection { System::Data::IDbConnection ^ get(); void set(System::Data::IDbConnection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.IDbConnection with get, set" Usage="System.Data.IDbCommand.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As IDbDataParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbDataParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="abstract member CreateParameter : unit -&gt; System.Data.IDbDataParameter" Usage="iDbCommand.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -324,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteNonQuery" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteNonQuery () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteNonQuery();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteNonQuery : unit -&gt; int" Usage="iDbCommand.ExecuteNonQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -390,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As IDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteReader : unit -&gt; System.Data.IDataReader" Usage="iDbCommand.ExecuteReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -422,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As IDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.IDataReader" Usage="iDbCommand.ExecuteReader behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -471,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteScalar" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteScalar () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ExecuteScalar();" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteScalar : unit -&gt; obj" Usage="iDbCommand.ExecuteScalar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -527,6 +538,7 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IDataParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDataParameterCollection ^ Parameters { System::Data::IDataParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Data.IDataParameterCollection" Usage="System.Data.IDbCommand.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -569,6 +581,7 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.Prepare" />
       <MemberSignature Language="VB.NET" Value="Public Sub Prepare ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepare();" />
+      <MemberSignature Language="F#" Value="abstract member Prepare : unit -&gt; unit" Usage="iDbCommand.Prepare " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -620,6 +633,7 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Property Transaction As IDbTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbTransaction ^ Transaction { System::Data::IDbTransaction ^ get(); void set(System::Data::IDbTransaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transaction : System.Data.IDbTransaction with get, set" Usage="System.Data.IDbCommand.Transaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -651,6 +665,7 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.UpdatedRowSource" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdatedRowSource As UpdateRowSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.IDbCommand.UpdatedRowSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

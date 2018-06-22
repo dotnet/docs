@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.AuthenticationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationLevel" />
+  <TypeSignature Language="F#" Value="type AuthenticationLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Call" />
       <MemberSignature Language="VB.NET" Value="Call" />
       <MemberSignature Language="C++ CLI" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 3" Usage="System.Management.AuthenticationLevel.Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Connect" />
       <MemberSignature Language="VB.NET" Value="Connect" />
       <MemberSignature Language="C++ CLI" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 2" Usage="System.Management.AuthenticationLevel.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Management.AuthenticationLevel.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Management.AuthenticationLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Packet" />
       <MemberSignature Language="VB.NET" Value="Packet" />
       <MemberSignature Language="C++ CLI" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 4" Usage="System.Management.AuthenticationLevel.Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketIntegrity" />
       <MemberSignature Language="VB.NET" Value="PacketIntegrity" />
       <MemberSignature Language="C++ CLI" Value="PacketIntegrity" />
+      <MemberSignature Language="F#" Value="PacketIntegrity = 5" Usage="System.Management.AuthenticationLevel.PacketIntegrity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketPrivacy" />
       <MemberSignature Language="VB.NET" Value="PacketPrivacy" />
       <MemberSignature Language="C++ CLI" Value="PacketPrivacy" />
+      <MemberSignature Language="F#" Value="PacketPrivacy = 6" Usage="System.Management.AuthenticationLevel.PacketPrivacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Unchanged" />
       <MemberSignature Language="VB.NET" Value="Unchanged" />
       <MemberSignature Language="C++ CLI" Value="Unchanged" />
+      <MemberSignature Language="F#" Value="Unchanged = -1" Usage="System.Management.AuthenticationLevel.Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

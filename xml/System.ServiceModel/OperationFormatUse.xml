@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationFormatUse" />
   <TypeSignature Language="VB.NET" Value="Public Enum OperationFormatUse" />
   <TypeSignature Language="C++ CLI" Value="public enum class OperationFormatUse" />
+  <TypeSignature Language="F#" Value="type OperationFormatUse = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatUse.Encoded" />
       <MemberSignature Language="VB.NET" Value="Encoded" />
       <MemberSignature Language="C++ CLI" Value="Encoded" />
+      <MemberSignature Language="F#" Value="Encoded = 1" Usage="System.ServiceModel.OperationFormatUse.Encoded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatUse.Literal" />
       <MemberSignature Language="VB.NET" Value="Literal" />
       <MemberSignature Language="C++ CLI" Value="Literal" />
+      <MemberSignature Language="F#" Value="Literal = 0" Usage="System.ServiceModel.OperationFormatUse.Literal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

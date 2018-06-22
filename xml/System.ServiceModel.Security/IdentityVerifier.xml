@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IdentityVerifier" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IdentityVerifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class IdentityVerifier abstract" />
+  <TypeSignature Language="F#" Value="type IdentityVerifier = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.CheckAccess(System.ServiceModel.EndpointIdentity,System.IdentityModel.Policy.AuthorizationContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CheckAccess (identity As EndpointIdentity, authContext As AuthorizationContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CheckAccess(System::ServiceModel::EndpointIdentity ^ identity, System::IdentityModel::Policy::AuthorizationContext ^ authContext);" />
+      <MemberSignature Language="F#" Value="abstract member CheckAccess : System.ServiceModel.EndpointIdentity * System.IdentityModel.Policy.AuthorizationContext -&gt; bool" Usage="identityVerifier.CheckAccess (identity, authContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.CreateDefault" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefault () As IdentityVerifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::IdentityVerifier ^ CreateDefault();" />
+      <MemberSignature Language="F#" Value="static member CreateDefault : unit -&gt; System.ServiceModel.Security.IdentityVerifier" Usage="System.ServiceModel.Security.IdentityVerifier.CreateDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointIdentity@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetIdentity (reference As EndpointAddress, ByRef identity As EndpointIdentity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetIdentity(System::ServiceModel::EndpointAddress ^ reference, [Runtime::InteropServices::Out] System::ServiceModel::EndpointIdentity ^ % identity);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetIdentity : System.ServiceModel.EndpointAddress *  -&gt; bool" Usage="identityVerifier.TryGetIdentity (reference, identity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AttributeCallback(builder As AttributeCallbackBuilder)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AttributeCallback(AttributeCallbackBuilder ^ builder);" />
+  <TypeSignature Language="F#" Value="type AttributeCallback = delegate of AttributeCallbackBuilder -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

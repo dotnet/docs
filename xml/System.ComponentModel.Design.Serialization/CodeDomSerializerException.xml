@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomSerializerException" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeDomSerializerException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeDomSerializerException : SystemException" />
+  <TypeSignature Language="F#" Value="type CodeDomSerializerException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.#ctor(System.Exception,System.CodeDom.CodeLinePragma)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ex As Exception, linePragma As CodeLinePragma)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomSerializerException(Exception ^ ex, System::CodeDom::CodeLinePragma ^ linePragma);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomSerializerException : Exception * System.CodeDom.CodeLinePragma -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializerException" Usage="new System.ComponentModel.Design.Serialization.CodeDomSerializerException (ex, linePragma)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.#ctor(System.Exception,System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ex As Exception, manager As IDesignerSerializationManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomSerializerException(Exception ^ ex, System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomSerializerException : Exception * System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializerException" Usage="new System.ComponentModel.Design.Serialization.CodeDomSerializerException (ex, manager)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeDomSerializerException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomSerializerException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializerException" Usage="new System.ComponentModel.Design.Serialization.CodeDomSerializerException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.#ctor(System.String,System.CodeDom.CodeLinePragma)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, linePragma As CodeLinePragma)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomSerializerException(System::String ^ message, System::CodeDom::CodeLinePragma ^ linePragma);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomSerializerException : string * System.CodeDom.CodeLinePragma -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializerException" Usage="new System.ComponentModel.Design.Serialization.CodeDomSerializerException (message, linePragma)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.#ctor(System.String,System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, manager As IDesignerSerializationManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomSerializerException(System::String ^ message, System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.CodeDomSerializerException : string * System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializerException" Usage="new System.ComponentModel.Design.Serialization.CodeDomSerializerException (message, manager)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="codeDomSerializerException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.CodeDomSerializerException.LinePragma" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePragma As CodeLinePragma" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeLinePragma ^ LinePragma { System::CodeDom::CodeLinePragma ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinePragma : System.CodeDom.CodeLinePragma" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerException.LinePragma" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

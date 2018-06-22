@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineOptionParser" />
   <TypeSignature Language="VB.NET" Value="Public Class CmdLineOptionParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class CmdLineOptionParser" />
+  <TypeSignature Language="F#" Value="type CmdLineOptionParser = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsArgumentOption (option As String, prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsArgumentOption(System::String ^ option, System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="static member IsArgumentOption : string * string -&gt; string" Usage="Microsoft.JScript.CmdLineOptionParser.IsArgumentOption (option, prefix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsArgumentOption (option As String, shortPrefix As String, longPrefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsArgumentOption(System::String ^ option, System::String ^ shortPrefix, System::String ^ longPrefix);" />
+      <MemberSignature Language="F#" Value="static member IsArgumentOption : string * string * string -&gt; string" Usage="Microsoft.JScript.CmdLineOptionParser.IsArgumentOption (option, shortPrefix, longPrefix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsBooleanOption (option As String, prefix As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IsBooleanOption(System::String ^ option, System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="static member IsBooleanOption : string * string -&gt; obj" Usage="Microsoft.JScript.CmdLineOptionParser.IsBooleanOption (option, prefix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsBooleanOption (option As String, shortPrefix As String, longPrefix As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IsBooleanOption(System::String ^ option, System::String ^ shortPrefix, System::String ^ longPrefix);" />
+      <MemberSignature Language="F#" Value="static member IsBooleanOption : string * string * string -&gt; obj" Usage="Microsoft.JScript.CmdLineOptionParser.IsBooleanOption (option, shortPrefix, longPrefix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsSimpleOption(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSimpleOption (option As String, prefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSimpleOption(System::String ^ option, System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="static member IsSimpleOption : string * string -&gt; bool" Usage="Microsoft.JScript.CmdLineOptionParser.IsSimpleOption (option, prefix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

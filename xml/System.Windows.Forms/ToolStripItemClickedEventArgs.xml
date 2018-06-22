@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemClickedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemClickedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemClickedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripItemClickedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemClickedEventArgs.#ctor(System.Windows.Forms.ToolStripItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (clickedItem As ToolStripItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemClickedEventArgs(System::Windows::Forms::ToolStripItem ^ clickedItem);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItemClickedEventArgs : System.Windows.Forms.ToolStripItem -&gt; System.Windows.Forms.ToolStripItemClickedEventArgs" Usage="new System.Windows.Forms.ToolStripItemClickedEventArgs clickedItem" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemClickedEventArgs.ClickedItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClickedItem As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ ClickedItem { System::Windows::Forms::ToolStripItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClickedItem : System.Windows.Forms.ToolStripItem" Usage="System.Windows.Forms.ToolStripItemClickedEventArgs.ClickedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

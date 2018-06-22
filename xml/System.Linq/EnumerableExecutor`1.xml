@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.EnumerableExecutor`1" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumerableExecutor(Of T)&#xA;Inherits EnumerableExecutor" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class EnumerableExecutor : System::Linq::EnumerableExecutor" />
+  <TypeSignature Language="F#" Value="type EnumerableExecutor&lt;'T&gt; = class&#xA;    inherit EnumerableExecutor" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableExecutor`1.#ctor(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerableExecutor(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="new System.Linq.EnumerableExecutor&lt;'T&gt; : System.Linq.Expressions.Expression -&gt; System.Linq.EnumerableExecutor&lt;'T&gt;" Usage="new System.Linq.EnumerableExecutor&lt;'T&gt; expression" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>

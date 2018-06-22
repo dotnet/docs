@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceStore" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstanceStore" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceStore abstract" />
+  <TypeSignature Language="F#" Value="type InstanceStore = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.BeginExecute(System.Runtime.DurableInstancing.InstanceHandle,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginExecute (handle As InstanceHandle, command As InstancePersistenceCommand, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecute(System::Runtime::DurableInstancing::InstanceHandle ^ handle, System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginExecute : System.Runtime.DurableInstancing.InstanceHandle * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="instanceStore.BeginExecute (handle, command, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand(System.Runtime.DurableInstancing.InstancePersistenceContext,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function BeginTryCommand (context As InstancePersistenceContext, command As InstancePersistenceCommand, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual IAsyncResult ^ BeginTryCommand(System::Runtime::DurableInstancing::InstancePersistenceContext ^ context, System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginTryCommand : System.Runtime.DurableInstancing.InstancePersistenceContext * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginTryCommand : System.Runtime.DurableInstancing.InstancePersistenceContext * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="instanceStore.BeginTryCommand (context, command, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.BeginWaitForEvents(System.Runtime.DurableInstancing.InstanceHandle,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWaitForEvents (handle As InstanceHandle, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWaitForEvents(System::Runtime::DurableInstancing::InstanceHandle ^ handle, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginWaitForEvents : System.Runtime.DurableInstancing.InstanceHandle * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="instanceStore.BeginWaitForEvents (handle, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceHandle () As InstanceHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceHandle ^ CreateInstanceHandle();" />
+      <MemberSignature Language="F#" Value="member this.CreateInstanceHandle : unit -&gt; System.Runtime.DurableInstancing.InstanceHandle" Usage="instanceStore.CreateInstanceHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceHandle (instanceId As Guid) As InstanceHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceHandle ^ CreateInstanceHandle(Guid instanceId);" />
+      <MemberSignature Language="F#" Value="member this.CreateInstanceHandle : Guid -&gt; System.Runtime.DurableInstancing.InstanceHandle" Usage="instanceStore.CreateInstanceHandle instanceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle(System.Runtime.DurableInstancing.InstanceOwner)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceHandle (owner As InstanceOwner) As InstanceHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceHandle ^ CreateInstanceHandle(System::Runtime::DurableInstancing::InstanceOwner ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.CreateInstanceHandle : System.Runtime.DurableInstancing.InstanceOwner -&gt; System.Runtime.DurableInstancing.InstanceHandle" Usage="instanceStore.CreateInstanceHandle owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle(System.Runtime.DurableInstancing.InstanceOwner,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstanceHandle (owner As InstanceOwner, instanceId As Guid) As InstanceHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceHandle ^ CreateInstanceHandle(System::Runtime::DurableInstancing::InstanceOwner ^ owner, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="member this.CreateInstanceHandle : System.Runtime.DurableInstancing.InstanceOwner * Guid -&gt; System.Runtime.DurableInstancing.InstanceHandle" Usage="instanceStore.CreateInstanceHandle (owner, instanceId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceStore.DefaultInstanceOwner" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultInstanceOwner As InstanceOwner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceOwner ^ DefaultInstanceOwner { System::Runtime::DurableInstancing::InstanceOwner ^ get(); void set(System::Runtime::DurableInstancing::InstanceOwner ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceOwner with get, set" Usage="System.Runtime.DurableInstancing.InstanceStore.DefaultInstanceOwner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.EndExecute(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndExecute (result As IAsyncResult) As InstanceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceView ^ EndExecute(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndExecute : IAsyncResult -&gt; System.Runtime.DurableInstancing.InstanceView" Usage="instanceStore.EndExecute result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.EndTryCommand(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function EndTryCommand (result As IAsyncResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool EndTryCommand(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndTryCommand : IAsyncResult -&gt; bool&#xA;override this.EndTryCommand : IAsyncResult -&gt; bool" Usage="instanceStore.EndTryCommand result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -363,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.EndWaitForEvents(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndWaitForEvents (result As IAsyncResult) As List(Of InstancePersistenceEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Runtime::DurableInstancing::InstancePersistenceEvent ^&gt; ^ EndWaitForEvents(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndWaitForEvents : IAsyncResult -&gt; System.Collections.Generic.List&lt;System.Runtime.DurableInstancing.InstancePersistenceEvent&gt;" Usage="instanceStore.EndWaitForEvents result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -387,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.Execute(System.Runtime.DurableInstancing.InstanceHandle,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute (handle As InstanceHandle, command As InstancePersistenceCommand, timeout As TimeSpan) As InstanceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::DurableInstancing::InstanceView ^ Execute(System::Runtime::DurableInstancing::InstanceHandle ^ handle, System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Execute : System.Runtime.DurableInstancing.InstanceHandle * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan -&gt; System.Runtime.DurableInstancing.InstanceView" Usage="instanceStore.Execute (handle, command, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -427,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.GetEvents(System.Runtime.DurableInstancing.InstanceOwner)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetEvents (owner As InstanceOwner) As InstancePersistenceEvent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Runtime::DurableInstancing::InstancePersistenceEvent ^&gt; ^ GetEvents(System::Runtime::DurableInstancing::InstanceOwner ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.GetEvents : System.Runtime.DurableInstancing.InstanceOwner -&gt; System.Runtime.DurableInstancing.InstancePersistenceEvent[]" Usage="instanceStore.GetEvents owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -451,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.GetInstanceOwners" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetInstanceOwners () As InstanceOwner()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Runtime::DurableInstancing::InstanceOwner ^&gt; ^ GetInstanceOwners();" />
+      <MemberSignature Language="F#" Value="member this.GetInstanceOwners : unit -&gt; System.Runtime.DurableInstancing.InstanceOwner[]" Usage="instanceStore.GetInstanceOwners " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -478,6 +493,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFreeInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle, object userContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.OnFreeInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFreeInstanceHandle(System::Runtime::DurableInstancing::InstanceHandle ^ instanceHandle, System::Object ^ userContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnFreeInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle * obj -&gt; unit&#xA;override this.OnFreeInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle * obj -&gt; unit" Usage="instanceStore.OnFreeInstanceHandle (instanceHandle, userContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -502,6 +518,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object OnNewInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.OnNewInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ OnNewInstanceHandle(System::Runtime::DurableInstancing::InstanceHandle ^ instanceHandle);" />
+      <MemberSignature Language="F#" Value="abstract member OnNewInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle -&gt; obj&#xA;override this.OnNewInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle -&gt; obj" Usage="instanceStore.OnNewInstanceHandle instanceHandle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -526,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.ResetEvent(System.Runtime.DurableInstancing.InstancePersistenceEvent,System.Runtime.DurableInstancing.InstanceOwner)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ResetEvent (persistenceEvent As InstancePersistenceEvent, owner As InstanceOwner)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetEvent(System::Runtime::DurableInstancing::InstancePersistenceEvent ^ persistenceEvent, System::Runtime::DurableInstancing::InstanceOwner ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.ResetEvent : System.Runtime.DurableInstancing.InstancePersistenceEvent * System.Runtime.DurableInstancing.InstanceOwner -&gt; unit" Usage="instanceStore.ResetEvent (persistenceEvent, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -551,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.SignalEvent(System.Runtime.DurableInstancing.InstancePersistenceEvent,System.Runtime.DurableInstancing.InstanceOwner)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SignalEvent (persistenceEvent As InstancePersistenceEvent, owner As InstanceOwner)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SignalEvent(System::Runtime::DurableInstancing::InstancePersistenceEvent ^ persistenceEvent, System::Runtime::DurableInstancing::InstanceOwner ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.SignalEvent : System.Runtime.DurableInstancing.InstancePersistenceEvent * System.Runtime.DurableInstancing.InstanceOwner -&gt; unit" Usage="instanceStore.SignalEvent (persistenceEvent, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -576,6 +595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.TryCommand(System.Runtime.DurableInstancing.InstancePersistenceContext,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryCommand (context As InstancePersistenceContext, command As InstancePersistenceCommand, timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryCommand(System::Runtime::DurableInstancing::InstancePersistenceContext ^ context, System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member TryCommand : System.Runtime.DurableInstancing.InstancePersistenceContext * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan -&gt; bool&#xA;override this.TryCommand : System.Runtime.DurableInstancing.InstancePersistenceContext * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan -&gt; bool" Usage="instanceStore.TryCommand (context, command, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -611,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStore.WaitForEvents(System.Runtime.DurableInstancing.InstanceHandle,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForEvents (handle As InstanceHandle, timeout As TimeSpan) As List(Of InstancePersistenceEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Runtime::DurableInstancing::InstancePersistenceEvent ^&gt; ^ WaitForEvents(System::Runtime::DurableInstancing::InstanceHandle ^ handle, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.WaitForEvents : System.Runtime.DurableInstancing.InstanceHandle * TimeSpan -&gt; System.Collections.Generic.List&lt;System.Runtime.DurableInstancing.InstancePersistenceEvent&gt;" Usage="instanceStore.WaitForEvents (handle, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

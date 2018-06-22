@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapTransportImporter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapTransportImporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapTransportImporter abstract" />
+  <TypeSignature Language="F#" Value="type SoapTransportImporter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapTransportImporter.ImportClass" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ImportClass ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ImportClass();" />
+      <MemberSignature Language="F#" Value="abstract member ImportClass : unit -&gt; unit" Usage="soapTransportImporter.ImportClass " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapTransportImporter.ImportContext" />
       <MemberSignature Language="VB.NET" Value="Public Property ImportContext As SoapProtocolImporter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapProtocolImporter ^ ImportContext { System::Web::Services::Description::SoapProtocolImporter ^ get(); void set(System::Web::Services::Description::SoapProtocolImporter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImportContext : System.Web.Services.Description.SoapProtocolImporter with get, set" Usage="System.Web.Services.Description.SoapTransportImporter.ImportContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapTransportImporter.IsSupportedTransport(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupportedTransport (transport As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupportedTransport(System::String ^ transport);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupportedTransport : string -&gt; bool" Usage="soapTransportImporter.IsSupportedTransport transport" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

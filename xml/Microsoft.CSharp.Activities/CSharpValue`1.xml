@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.Activities.CSharpValue`1" />
   <TypeSignature Language="VB.NET" Value="Public Class CSharpValue(Of TResult)&#xA;Inherits CodeActivity(Of TResult)&#xA;Implements ITextExpression" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class CSharpValue : System::Activities::CodeActivity&lt;TResult&gt;, System::Activities::Expressions::ITextExpression" />
+  <TypeSignature Language="F#" Value="type CSharpValue&lt;'Result&gt; = class&#xA;    inherit CodeActivity&lt;'Result&gt;&#xA;    interface ITextExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expressionText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CSharpValue(System::String ^ expressionText);" />
+      <MemberSignature Language="F#" Value="new Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt; : string -&gt; Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;" Usage="new Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt; expressionText" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="cSharpValue.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Result" Usage="cSharpValue.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.ExpressionText" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpressionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionText : string with get, set" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.ExpressionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.GetExpressionTree" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExpressionTree () As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Linq::Expressions::Expression ^ GetExpressionTree();" />
+      <MemberSignature Language="F#" Value="abstract member GetExpressionTree : unit -&gt; System.Linq.Expressions.Expression&#xA;override this.GetExpressionTree : unit -&gt; System.Linq.Expressions.Expression" Usage="cSharpValue.GetExpressionTree " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Expressions.ITextExpression.GetExpressionTree</InterfaceMember>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.Language" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Activities.Expressions.ITextExpression.Language</InterfaceMember>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.RequiresCompilation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiresCompilation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequiresCompilation { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresCompilation : bool" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.RequiresCompilation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Activities.Expressions.ITextExpression.RequiresCompilation</InterfaceMember>

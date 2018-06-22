@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ReferentialConstraint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReferentialConstraint&#xA;Inherits MetadataItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReferentialConstraint sealed : System::Data::Metadata::Edm::MetadataItem" />
+  <TypeSignature Language="F#" Value="type ReferentialConstraint = class&#xA;    inherit MetadataItem" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.ReferentialConstraint.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.FromProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromProperties As ReadOnlyMetadataCollection(Of EdmProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ FromProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FromProperties : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;" Usage="System.Data.Metadata.Edm.ReferentialConstraint.FromProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.FromRole" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromRole As RelationshipEndMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ FromRole { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FromRole : System.Data.Metadata.Edm.RelationshipEndMember" Usage="System.Data.Metadata.Edm.ReferentialConstraint.FromRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.ToProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToProperties As ReadOnlyMetadataCollection(Of EdmProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ ToProperties { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToProperties : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;" Usage="System.Data.Metadata.Edm.ReferentialConstraint.ToProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReferentialConstraint.ToRole" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToRole As RelationshipEndMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ ToRole { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToRole : System.Data.Metadata.Edm.RelationshipEndMember" Usage="System.Data.Metadata.Edm.ReferentialConstraint.ToRole" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReferentialConstraint.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="referentialConstraint.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

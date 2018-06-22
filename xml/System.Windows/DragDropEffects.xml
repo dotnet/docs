@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DragDropEffects" />
   <TypeSignature Language="VB.NET" Value="Public Enum DragDropEffects" />
   <TypeSignature Language="C++ CLI" Value="public enum class DragDropEffects" />
+  <TypeSignature Language="F#" Value="type DragDropEffects = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = -2147483645" Usage="System.Windows.DragDropEffects.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.Copy" />
       <MemberSignature Language="VB.NET" Value="Copy" />
       <MemberSignature Language="C++ CLI" Value="Copy" />
+      <MemberSignature Language="F#" Value="Copy = 1" Usage="System.Windows.DragDropEffects.Copy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.Link" />
       <MemberSignature Language="VB.NET" Value="Link" />
       <MemberSignature Language="C++ CLI" Value="Link" />
+      <MemberSignature Language="F#" Value="Link = 4" Usage="System.Windows.DragDropEffects.Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.Move" />
       <MemberSignature Language="VB.NET" Value="Move" />
       <MemberSignature Language="C++ CLI" Value="Move" />
+      <MemberSignature Language="F#" Value="Move = 2" Usage="System.Windows.DragDropEffects.Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.DragDropEffects.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.DragDropEffects.Scroll" />
       <MemberSignature Language="VB.NET" Value="Scroll" />
       <MemberSignature Language="C++ CLI" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = -2147483648" Usage="System.Windows.DragDropEffects.Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

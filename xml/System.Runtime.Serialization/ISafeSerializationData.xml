@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISafeSerializationData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISafeSerializationData" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISafeSerializationData" />
+  <TypeSignature Language="F#" Value="type ISafeSerializationData = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompleteDeserialization (deserialized As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteDeserialization(System::Object ^ deserialized);" />
+      <MemberSignature Language="F#" Value="abstract member CompleteDeserialization : obj -&gt; unit" Usage="iSafeSerializationData.CompleteDeserialization deserialized" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

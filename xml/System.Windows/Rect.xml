@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Rect" />
   <TypeSignature Language="VB.NET" Value="Public Structure Rect&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Rect : IFormattable" />
+  <TypeSignature Language="F#" Value="type Rect = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.#ctor(System.Windows.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect(System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Rect : System.Windows.Size -&gt; System.Windows.Rect" Usage="new System.Windows.Rect size" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.#ctor(System.Windows.Point,System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As Point, point2 As Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect(System::Windows::Point point1, System::Windows::Point point2);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Rect : System.Windows.Point * System.Windows.Point -&gt; System.Windows.Rect" Usage="new System.Windows.Rect (point1, point2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point location, valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.#ctor(System.Windows.Point,System.Windows.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect(System::Windows::Point location, System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Rect : System.Windows.Point * System.Windows.Size -&gt; System.Windows.Rect" Usage="new System.Windows.Rect (location, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.#ctor(System.Windows.Point,System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect(System::Windows::Point point, System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Rect : System.Windows.Point * System.Windows.Vector -&gt; System.Windows.Rect" Usage="new System.Windows.Rect (point, vector)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.#ctor(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double, width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rect(double x, double y, double width, double height);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Rect : double * double * double * double -&gt; System.Windows.Rect" Usage="new System.Windows.Rect (x, y, width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Bottom { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : double" Usage="System.Windows.Rect.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BottomLeft As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point BottomLeft { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.BottomLeft : System.Windows.Point" Usage="System.Windows.Rect.BottomLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.BottomRight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BottomRight As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point BottomRight { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.BottomRight : System.Windows.Point" Usage="System.Windows.Rect.BottomRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Contains(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Point -&gt; bool" Usage="rect.Contains point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -395,6 +405,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Contains(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Rect -&gt; bool" Usage="rect.Contains rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -429,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Contains(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (x As Double, y As Double) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(double x, double y);" />
+      <MemberSignature Language="F#" Value="member this.Contains : double * double -&gt; bool" Usage="rect.Contains (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -465,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Rect Empty { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Rect" Usage="System.Windows.Rect.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -502,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rect.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Equals(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Rect value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Rect -&gt; bool" Usage="rect.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -594,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Equals(System.Windows.Rect,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (rect1 As Rect, rect2 As Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Rect rect1, System::Windows::Rect rect2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Rect * System.Windows.Rect -&gt; bool" Usage="System.Windows.Rect.Equals (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -642,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rect.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -677,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="System.Windows.Rect.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -730,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Inflate(System.Windows.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="member this.Inflate : System.Windows.Size -&gt; unit" Usage="rect.Inflate size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -769,6 +788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Inflate(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Inflate (width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(double width, double height);" />
+      <MemberSignature Language="F#" Value="member this.Inflate : double * double -&gt; unit" Usage="rect.Inflate (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -811,6 +831,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Inflate(valuetype System.Windows.Rect rect, valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Inflate(System.Windows.Rect,System.Windows.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Inflate(System::Windows::Rect rect, System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="static member Inflate : System.Windows.Rect * System.Windows.Size -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Inflate (rect, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -853,6 +874,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Inflate(valuetype System.Windows.Rect rect, float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Inflate(System.Windows.Rect,System.Double,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Inflate(System::Windows::Rect rect, double width, double height);" />
+      <MemberSignature Language="F#" Value="static member Inflate : System.Windows.Rect * double * double -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Inflate (rect, width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -908,6 +930,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Intersect(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="member this.Intersect : System.Windows.Rect -&gt; unit" Usage="rect.Intersect rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -946,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Intersect(System.Windows.Rect,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Intersect (rect1 As Rect, rect2 As Rect) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Intersect(System::Windows::Rect rect1, System::Windows::Rect rect2);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Windows.Rect * System.Windows.Rect -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Intersect (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -981,6 +1005,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IntersectsWith(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.IntersectsWith(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="member this.IntersectsWith : System.Windows.Rect -&gt; bool" Usage="rect.IntersectsWith rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1015,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Rect.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1044,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="System.Windows.Rect.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1079,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Location { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Windows.Point with get, set" Usage="System.Windows.Rect.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1130,6 +1158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Offset(System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetVector As Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Windows::Vector offsetVector);" />
+      <MemberSignature Language="F#" Value="member this.Offset : System.Windows.Vector -&gt; unit" Usage="rect.Offset offsetVector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1170,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Offset(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (offsetX As Double, offsetY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="member this.Offset : double * double -&gt; unit" Usage="rect.Offset (offsetX, offsetY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1211,6 +1241,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Offset(valuetype System.Windows.Rect rect, valuetype System.Windows.Vector offsetVector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Offset(System.Windows.Rect,System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Offset(System::Windows::Rect rect, System::Windows::Vector offsetVector);" />
+      <MemberSignature Language="F#" Value="static member Offset : System.Windows.Rect * System.Windows.Vector -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Offset (rect, offsetVector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1252,6 +1283,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Offset(valuetype System.Windows.Rect rect, float64 offsetX, float64 offsetY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Offset(System.Windows.Rect,System.Double,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Offset(System::Windows::Rect rect, double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="static member Offset : System.Windows.Rect * double * double -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Offset (rect, offsetX, offsetY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1296,6 +1328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.op_Equality(System.Windows.Rect,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (rect1 As Rect, rect2 As Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Rect rect1, System::Windows::Rect rect2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Rect * System.Windows.Rect -&gt; bool" Usage="rect1 = rect2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1343,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.op_Inequality(System.Windows.Rect,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (rect1 As Rect, rect2 As Rect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Rect rect1, System::Windows::Rect rect2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Rect * System.Windows.Rect -&gt; bool" Usage="System.Windows.Rect.op_Inequality (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1390,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1424,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Right { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : double" Usage="System.Windows.Rect.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1458,6 +1494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Scale(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Scale (scaleX As Double, scaleY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scale(double scaleX, double scaleY);" />
+      <MemberSignature Language="F#" Value="member this.Scale : double * double -&gt; unit" Usage="rect.Scale (scaleX, scaleY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1493,6 +1530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size Size { System::Windows::Size get(); void set(System::Windows::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Windows.Size with get, set" Usage="System.Windows.Rect.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1575,6 +1613,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="System.Windows.Rect.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1610,6 +1649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.TopLeft" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopLeft As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point TopLeft { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.TopLeft : System.Windows.Point" Usage="System.Windows.Rect.TopLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1644,6 +1684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.TopRight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopRight As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point TopRight { System::Windows::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.TopRight : System.Windows.Point" Usage="System.Windows.Rect.TopRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1687,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rect.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1717,6 +1759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="rect.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1749,6 +1792,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Transform(System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Matrix -&gt; unit" Usage="rect.Transform matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1780,6 +1824,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Transform(valuetype System.Windows.Rect rect, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Transform(System.Windows.Rect,System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Transform(System::Windows::Rect rect, System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Windows.Rect * System.Windows.Media.Matrix -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Transform (rect, matrix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1823,6 +1868,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Union(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Windows.Point -&gt; unit" Usage="rect.Union point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1855,6 +1901,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Union(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Windows.Rect -&gt; unit" Usage="rect.Union rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1887,6 +1934,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect Union(valuetype System.Windows.Rect rect, valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Union(System.Windows.Rect,System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Union(System::Windows::Rect rect, System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Windows.Rect * System.Windows.Point -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Union (rect, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1923,6 +1971,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.Union(System.Windows.Rect,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (rect1 As Rect, rect2 As Rect) As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect Union(System::Windows::Rect rect1, System::Windows::Rect rect2);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Windows.Rect * System.Windows.Rect -&gt; System.Windows.Rect" Usage="System.Windows.Rect.Union (rect1, rect2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1959,6 +2008,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Rect.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -2004,6 +2054,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Rect.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -2047,6 +2098,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Rect.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Rect.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

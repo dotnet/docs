@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridLineStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridLineStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridLineStyle" />
+  <TypeSignature Language="F#" Value="type DataGridLineStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridLineStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridLineStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridLineStyle.Solid" />
       <MemberSignature Language="VB.NET" Value="Solid" />
       <MemberSignature Language="C++ CLI" Value="Solid" />
+      <MemberSignature Language="F#" Value="Solid = 1" Usage="System.Windows.Forms.DataGridLineStyle.Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

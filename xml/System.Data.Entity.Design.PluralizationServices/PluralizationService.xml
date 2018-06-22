@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.PluralizationServices.PluralizationService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PluralizationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class PluralizationService abstract" />
+  <TypeSignature Language="F#" Value="type PluralizationService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.CreateService(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateService (culture As CultureInfo) As PluralizationService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Entity::Design::PluralizationServices::PluralizationService ^ CreateService(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member CreateService : System.Globalization.CultureInfo -&gt; System.Data.Entity.Design.PluralizationServices.PluralizationService" Usage="System.Data.Entity.Design.PluralizationServices.PluralizationService.CreateService culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PluralizationServices.PluralizationService.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:  property System::Globalization::CultureInfo ^ Culture {  public:&#xA;System::Globalization::CultureInfo ^ get(); protected:&#xA; void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Data.Entity.Design.PluralizationServices.PluralizationService.Culture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.IsPlural(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsPlural (word As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsPlural(System::String ^ word);" />
+      <MemberSignature Language="F#" Value="abstract member IsPlural : string -&gt; bool" Usage="pluralizationService.IsPlural word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.IsSingular(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSingular (word As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSingular(System::String ^ word);" />
+      <MemberSignature Language="F#" Value="abstract member IsSingular : string -&gt; bool" Usage="pluralizationService.IsSingular word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.Pluralize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Pluralize (word As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Pluralize(System::String ^ word);" />
+      <MemberSignature Language="F#" Value="abstract member Pluralize : string -&gt; string" Usage="pluralizationService.Pluralize word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.Singularize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Singularize (word As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Singularize(System::String ^ word);" />
+      <MemberSignature Language="F#" Value="abstract member Singularize : string -&gt; string" Usage="pluralizationService.Singularize word" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

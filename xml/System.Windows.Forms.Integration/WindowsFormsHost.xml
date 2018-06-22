@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.WindowsFormsHost" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsFormsHost&#xA;Inherits HwndHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsHost : System::Windows::Interop::HwndHost" />
+  <TypeSignature Language="F#" Value="type WindowsFormsHost = class&#xA;    inherit HwndHost&#xA;    interface IKeyboardInputSink" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="windowsFormsHost.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function BuildWindowCore (hwndParent As HandleRef) As HandleRef" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::HandleRef BuildWindowCore(System::Runtime::InteropServices::HandleRef hwndParent);" />
+      <MemberSignature Language="F#" Value="override this.BuildWindowCore : System.Runtime.InteropServices.HandleRef -&gt; System.Runtime.InteropServices.HandleRef" Usage="windowsFormsHost.BuildWindowCore hwndParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ Child { System::Windows::Forms::Control ^ get(); void set(System::Windows::Forms::Control ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.Forms.Control with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.Child" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.WindowsFormsHost.ChildChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ChildChanged As EventHandler(Of ChildChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Forms::Integration::ChildChangedEventArgs ^&gt; ^ ChildChanged;" />
+      <MemberSignature Language="F#" Value="member this.ChildChanged : EventHandler&lt;System.Windows.Forms.Integration.ChildChangedEventArgs&gt; " Usage="member this.ChildChanged : System.EventHandler&lt;System.Windows.Forms.Integration.ChildChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyWindowCore (hwnd As HandleRef)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DestroyWindowCore(System::Runtime::InteropServices::HandleRef hwnd);" />
+      <MemberSignature Language="F#" Value="override this.DestroyWindowCore : System.Runtime.InteropServices.HandleRef -&gt; unit" Usage="windowsFormsHost.DestroyWindowCore hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="windowsFormsHost.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableWindowsFormsInterop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableWindowsFormsInterop();" />
+      <MemberSignature Language="F#" Value="static member EnableWindowsFormsInterop : unit -&gt; unit" Usage="System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -380,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.FontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -431,6 +442,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontFamilyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -452,6 +464,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.FontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontSizeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -520,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle FontStyle { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : System.Windows.FontStyle with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -569,6 +584,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -589,6 +605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.FontWeight" />
       <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight FontWeight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -638,6 +655,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontWeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -658,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.Foreground" />
       <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -707,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -727,6 +747,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.WindowsFormsHost.LayoutError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LayoutError As EventHandler(Of LayoutExceptionEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Forms::Integration::LayoutExceptionEventArgs ^&gt; ^ LayoutError;" />
+      <MemberSignature Language="F#" Value="member this.LayoutError : EventHandler&lt;System.Windows.Forms.Integration.LayoutExceptionEventArgs&gt; " Usage="member this.LayoutError : System.EventHandler&lt;System.Windows.Forms.Integration.LayoutExceptionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -760,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="windowsFormsHost.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -792,6 +814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="windowsFormsHost.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -813,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="windowsFormsHost.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -844,6 +868,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Padding { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Thickness with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -899,6 +924,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.PaddingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PaddingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PaddingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -918,6 +944,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyMap As PropertyMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Integration::PropertyMap ^ PropertyMap { System::Windows::Forms::Integration::PropertyMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyMap : System.Windows.Forms.Integration.PropertyMap" Usage="System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -954,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild(System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ScaleChild (newScale As Vector) As Vector" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Vector ScaleChild(System::Windows::Vector newScale);" />
+      <MemberSignature Language="F#" Value="abstract member ScaleChild : System.Windows.Vector -&gt; System.Windows.Vector&#xA;override this.ScaleChild : System.Windows.Vector -&gt; System.Windows.Vector" Usage="windowsFormsHost.ScaleChild newScale" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -987,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.WindowsFormsHost.TabIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="System.Windows.Forms.Integration.WindowsFormsHost.TabIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1040,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Integration.WindowsFormsHost.TabIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabIndexProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabIndexProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Forms.Integration.WindowsFormsHost.TabIndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1060,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.TabInto(System.Windows.Input.TraversalRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TabInto (request As TraversalRequest) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TabInto(System::Windows::Input::TraversalRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member TabInto : System.Windows.Input.TraversalRequest -&gt; bool&#xA;override this.TabInto : System.Windows.Input.TraversalRequest -&gt; bool" Usage="windowsFormsHost.TabInto request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1095,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function WndProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr, ByRef handled As Boolean) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, bool % handled);" />
+      <MemberSignature Language="F#" Value="override this.WndProc : nativeint * int * nativeint * nativeint *  -&gt; nativeint" Usage="windowsFormsHost.WndProc (hwnd, msg, wParam, lParam, handled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

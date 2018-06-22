@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendMessageChannelCacheElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendMessageChannelCacheElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type SendMessageChannelCacheElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.AllowUnsafeCaching" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowUnsafeCaching As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowUnsafeCaching { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowUnsafeCaching : bool with get, set" Usage="System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.AllowUnsafeCaching" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.ChannelSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelSettings As ChannelSettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Configuration::ChannelSettingsElement ^ ChannelSettings { System::ServiceModel::Activities::Configuration::ChannelSettingsElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelSettings : System.ServiceModel.Activities.Configuration.ChannelSettingsElement" Usage="System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.ChannelSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="sendMessageChannelCacheElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.FactorySettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FactorySettings As FactorySettingsElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Configuration::FactorySettingsElement ^ FactorySettings { System::ServiceModel::Activities::Configuration::FactorySettingsElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FactorySettings : System.ServiceModel.Activities.Configuration.FactorySettingsElement" Usage="System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.FactorySettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.CachingHint" />
   <TypeSignature Language="VB.NET" Value="Public Enum CachingHint" />
   <TypeSignature Language="C++ CLI" Value="public enum class CachingHint" />
+  <TypeSignature Language="F#" Value="type CachingHint = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.CachingHint.Cache" />
       <MemberSignature Language="VB.NET" Value="Cache" />
       <MemberSignature Language="C++ CLI" Value="Cache" />
+      <MemberSignature Language="F#" Value="Cache = 1" Usage="System.Windows.Media.CachingHint.Cache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.CachingHint.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Windows.Media.CachingHint.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.Context" />
   <TypeSignature Language="VB.NET" Value="Public Class Context" />
   <TypeSignature Language="C++ CLI" Value="public ref class Context" />
+  <TypeSignature Language="F#" Value="type Context = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.AllocateDataSlot" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateDataSlot () As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateDataSlot();" />
+      <MemberSignature Language="F#" Value="static member AllocateDataSlot : unit -&gt; LocalDataStoreSlot" Usage="System.Runtime.Remoting.Contexts.Context.AllocateDataSlot " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateNamedDataSlot (name As String) As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member AllocateNamedDataSlot : string -&gt; LocalDataStoreSlot" Usage="System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.ContextID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ContextID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextID : int" Usage="System.Runtime.Remoting.Contexts.Context.ContextID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.ContextProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextProperties As IContextProperty()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Runtime::Remoting::Contexts::IContextProperty ^&gt; ^ ContextProperties { cli::array &lt;System::Runtime::Remoting::Contexts::IContextProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextProperties : System.Runtime.Remoting.Contexts.IContextProperty[]" Usage="System.Runtime.Remoting.Contexts.Context.ContextProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.DefaultContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultContext As Context" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Remoting::Contexts::Context ^ DefaultContext { System::Runtime::Remoting::Contexts::Context ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultContext : System.Runtime.Remoting.Contexts.Context" Usage="System.Runtime.Remoting.Contexts.Context.DefaultContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.DoCallBack(System.Runtime.Remoting.Contexts.CrossContextDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoCallBack (deleg As CrossContextDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoCallBack(System::Runtime::Remoting::Contexts::CrossContextDelegate ^ deleg);" />
+      <MemberSignature Language="F#" Value="member this.DoCallBack : System.Runtime.Remoting.Contexts.CrossContextDelegate -&gt; unit" Usage="context.DoCallBack deleg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Context ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="context.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.FreeNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeNamedDataSlot (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member FreeNamedDataSlot : string -&gt; unit" Usage="System.Runtime.Remoting.Contexts.Context.FreeNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.Freeze" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Freeze ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Freeze();" />
+      <MemberSignature Language="F#" Value="abstract member Freeze : unit -&gt; unit&#xA;override this.Freeze : unit -&gt; unit" Usage="context.Freeze " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetData(System.LocalDataStoreSlot)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (slot As LocalDataStoreSlot) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(LocalDataStoreSlot ^ slot);" />
+      <MemberSignature Language="F#" Value="static member GetData : LocalDataStoreSlot -&gt; obj" Usage="System.Runtime.Remoting.Contexts.Context.GetData slot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamedDataSlot (name As String) As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ GetNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetNamedDataSlot : string -&gt; LocalDataStoreSlot" Usage="System.Runtime.Remoting.Contexts.Context.GetNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty (name As String) As IContextProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Contexts::IContextProperty ^ GetProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string -&gt; System.Runtime.Remoting.Contexts.IContextProperty&#xA;override this.GetProperty : string -&gt; System.Runtime.Remoting.Contexts.IContextProperty" Usage="context.GetProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -406,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty(System.Runtime.Remoting.Contexts.IDynamicProperty,System.ContextBoundObject,System.Runtime.Remoting.Contexts.Context)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterDynamicProperty (prop As IDynamicProperty, obj As ContextBoundObject, ctx As Context) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RegisterDynamicProperty(System::Runtime::Remoting::Contexts::IDynamicProperty ^ prop, ContextBoundObject ^ obj, System::Runtime::Remoting::Contexts::Context ^ ctx);" />
+      <MemberSignature Language="F#" Value="static member RegisterDynamicProperty : System.Runtime.Remoting.Contexts.IDynamicProperty * ContextBoundObject * System.Runtime.Remoting.Contexts.Context -&gt; bool" Usage="System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty (prop, obj, ctx)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -453,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.SetData(System.LocalDataStoreSlot,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetData (slot As LocalDataStoreSlot, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetData(LocalDataStoreSlot ^ slot, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="static member SetData : LocalDataStoreSlot * obj -&gt; unit" Usage="System.Runtime.Remoting.Contexts.Context.SetData (slot, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -480,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.SetProperty(System.Runtime.Remoting.Contexts.IContextProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetProperty (prop As IContextProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetProperty(System::Runtime::Remoting::Contexts::IContextProperty ^ prop);" />
+      <MemberSignature Language="F#" Value="abstract member SetProperty : System.Runtime.Remoting.Contexts.IContextProperty -&gt; unit&#xA;override this.SetProperty : System.Runtime.Remoting.Contexts.IContextProperty -&gt; unit" Usage="context.SetProperty prop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -514,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="context.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -537,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty(System.String,System.ContextBoundObject,System.Runtime.Remoting.Contexts.Context)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnregisterDynamicProperty (name As String, obj As ContextBoundObject, ctx As Context) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnregisterDynamicProperty(System::String ^ name, ContextBoundObject ^ obj, System::Runtime::Remoting::Contexts::Context ^ ctx);" />
+      <MemberSignature Language="F#" Value="static member UnregisterDynamicProperty : string * ContextBoundObject * System.Runtime.Remoting.Contexts.Context -&gt; bool" Usage="System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty (name, obj, ctx)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

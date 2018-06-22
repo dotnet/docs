@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Class Hyperlink&#xA;Inherits Span&#xA;Implements ICommandSource, IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class Hyperlink : System::Windows::Documents::Span, System::Windows::Input::ICommandSource, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type Hyperlink = class&#xA;    inherit Span&#xA;    interface ICommandSource&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Hyperlink(System::Windows::Documents::Inline ^ childInline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Hyperlink : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Hyperlink" Usage="new System.Windows.Documents.Hyperlink childInline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Hyperlink(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Hyperlink : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Hyperlink" Usage="new System.Windows.Documents.Hyperlink (childInline, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Hyperlink(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Hyperlink : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Hyperlink" Usage="new System.Windows.Documents.Hyperlink (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Documents.Hyperlink.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.Hyperlink.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : System.Windows.RoutedEventHandler " Usage="member this.Click : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.ClickEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClickEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Documents.Hyperlink.ClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Documents.Hyperlink.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.CommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="System.Windows.Documents.Hyperlink.CommandParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.CommandParameterProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Hyperlink.CommandParameterProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -379,6 +389,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.CommandProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Hyperlink.CommandProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -398,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.CommandTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTarget : System.Windows.IInputElement with get, set" Usage="System.Windows.Documents.Hyperlink.CommandTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -440,6 +452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.CommandTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Hyperlink.CommandTargetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -459,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.DoClick" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoClick ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoClick();" />
+      <MemberSignature Language="F#" Value="member this.DoClick : unit -&gt; unit" Usage="hyperlink.DoClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.IsEnabledCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="System.Windows.Documents.Hyperlink.IsEnabledCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -514,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.NavigateUri" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ NavigateUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NavigateUri : Uri with get, set" Usage="System.Windows.Documents.Hyperlink.NavigateUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -582,6 +598,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.NavigateUriProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NavigateUriProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NavigateUriProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavigateUriProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Hyperlink.NavigateUriProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -601,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick();" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : unit -&gt; unit&#xA;override this.OnClick : unit -&gt; unit" Usage="hyperlink.OnClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="hyperlink.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -659,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="hyperlink.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -694,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="hyperlink.OnMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -724,6 +745,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Hyperlink.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="hyperlink.OnMouseLeftButtonUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -759,6 +781,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.Hyperlink.RequestNavigate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RequestNavigate As RequestNavigateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::RequestNavigateEventHandler ^ RequestNavigate;" />
+      <MemberSignature Language="F#" Value="member this.RequestNavigate : System.Windows.Navigation.RequestNavigateEventHandler " Usage="member this.RequestNavigate : System.Windows.Navigation.RequestNavigateEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -793,6 +816,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.RequestNavigateEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RequestNavigateEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ RequestNavigateEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RequestNavigateEvent : System.Windows.RoutedEvent" Usage="System.Windows.Documents.Hyperlink.RequestNavigateEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -812,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Documents.Hyperlink.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -835,6 +860,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Hyperlink.TargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Windows.Documents.Hyperlink.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -878,6 +904,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Hyperlink.TargetNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TargetNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetNameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Hyperlink.TargetNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

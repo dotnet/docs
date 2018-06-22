@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFilterExpressionProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFilterExpressionProvider" />
+  <TypeSignature Language="F#" Value="type IFilterExpressionProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="iFilterExpressionProvider.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFilterExpressionProvider.Initialize(System.Web.UI.WebControls.IQueryableDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (dataSource As IQueryableDataSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="iFilterExpressionProvider.Initialize dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

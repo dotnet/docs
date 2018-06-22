@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DuplexChannelFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DuplexChannelFactory(Of TChannel)&#xA;Inherits ChannelFactory(Of TChannel)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public ref class DuplexChannelFactory : System::ServiceModel::ChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="F#" Value="type DuplexChannelFactory&lt;'Channel&gt; = class&#xA;    inherit ChannelFactory&lt;'Channel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As InstanceContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; callbackInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstanceType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; callbackInstanceType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; callbackInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As InstanceContext, endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type callbackInstanceType, class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, binding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstanceType As Type, endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstanceType As Type, endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +338,7 @@
       <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpoint As ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -404,6 +416,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -437,6 +450,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -476,6 +490,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -509,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -548,6 +564,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type callbackInstanceType, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -574,6 +591,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type callbackInstanceType, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -601,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Type,System.String,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstanceType As Type, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(Type ^ callbackInstanceType, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : Type * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstanceType, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -630,6 +649,7 @@
       <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -668,6 +688,7 @@
       <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, string remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -701,6 +722,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -747,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (callbackInstance As InstanceContext) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance);" />
+      <MemberSignature Language="F#" Value="override this.CreateChannel : System.ServiceModel.InstanceContext -&gt; 'Channel" Usage="duplexChannelFactory.CreateChannel callbackInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -780,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateChannel (callbackObject As Object, endpointConfigurationName As String) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::Object ^ callbackObject, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : obj * string -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackObject, endpointConfigurationName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -811,6 +835,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateChannel (address As EndpointAddress, via As Uri) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override TChannel CreateChannel(System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="override this.CreateChannel : System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="duplexChannelFactory.CreateChannel (address, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -846,6 +871,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChannel (callbackInstance As InstanceContext, address As EndpointAddress) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="override this.CreateChannel : System.ServiceModel.InstanceContext * System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="duplexChannelFactory.CreateChannel (callbackInstance, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -883,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateChannel (callbackInstance As InstanceContext, endpointConfigurationName As String) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.InstanceContext * string -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackInstance, endpointConfigurationName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -913,6 +940,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(object callbackObject, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::Object ^ callbackObject, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackObject, binding, endpointAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -945,6 +973,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackInstance, binding, endpointAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -978,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateChannel (callbackInstance As InstanceContext, address As EndpointAddress, via As Uri) As TChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="override this.CreateChannel : System.ServiceModel.InstanceContext * System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="duplexChannelFactory.CreateChannel (callbackInstance, address, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1016,6 +1046,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(object callbackObject, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::Object ^ callbackObject, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackObject, binding, endpointAddress, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1050,6 +1081,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress, Uri ^ via);" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;.CreateChannel (callbackInstance, binding, endpointAddress, via)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

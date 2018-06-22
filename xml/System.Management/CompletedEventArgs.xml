@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.CompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CompletedEventArgs&#xA;Inherits ManagementEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompletedEventArgs : System::Management::ManagementEventArgs" />
+  <TypeSignature Language="F#" Value="type CompletedEventArgs = class&#xA;    inherit ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.CompletedEventArgs.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As ManagementStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementStatus Status { System::Management::ManagementStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Management.ManagementStatus" Usage="System.Management.CompletedEventArgs.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.CompletedEventArgs.StatusObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusObject As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ StatusObject { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatusObject : System.Management.ManagementBaseObject" Usage="System.Management.CompletedEventArgs.StatusObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.CustomPeerResolverService" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomPeerResolverService&#xA;Implements IPeerResolverContract" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomPeerResolverService : System::ServiceModel::PeerResolvers::IPeerResolverContract" />
+  <TypeSignature Language="F#" Value="type CustomPeerResolverService = class&#xA;    interface IPeerResolverContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property CleanupInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CleanupInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.CleanupInterval : TimeSpan with get, set" Usage="System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="customPeerResolverService.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.CustomPeerResolverService.ControlShape" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlShape As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlShape { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlShape : bool with get, set" Usage="System.ServiceModel.PeerResolvers.CustomPeerResolverService.ControlShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.GetServiceSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServiceSettings () As ServiceSettingsResponseInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::ServiceSettingsResponseInfo ^ GetServiceSettings();" />
+      <MemberSignature Language="F#" Value="abstract member GetServiceSettings : unit -&gt; System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo&#xA;override this.GetServiceSettings : unit -&gt; System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo" Usage="customPeerResolverService.GetServiceSettings " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.GetServiceSettings</InterfaceMember>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="customPeerResolverService.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RefreshResponseInfo Refresh(class System.ServiceModel.PeerResolvers.RefreshInfo refreshInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh(System.ServiceModel.PeerResolvers.RefreshInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::RefreshResponseInfo ^ Refresh(System::ServiceModel::PeerResolvers::RefreshInfo ^ refreshInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : System.ServiceModel.PeerResolvers.RefreshInfo -&gt; System.ServiceModel.PeerResolvers.RefreshResponseInfo&#xA;override this.Refresh : System.ServiceModel.PeerResolvers.RefreshInfo -&gt; System.ServiceModel.PeerResolvers.RefreshResponseInfo" Usage="customPeerResolverService.Refresh refreshInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Refresh(System.ServiceModel.PeerResolvers.RefreshInfo)</InterfaceMember>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property RefreshInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RefreshInterval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.RefreshInterval : TimeSpan with get, set" Usage="System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RegisterResponseInfo Register(class System.ServiceModel.PeerResolvers.RegisterInfo registerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.ServiceModel.PeerResolvers.RegisterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::RegisterResponseInfo ^ Register(System::ServiceModel::PeerResolvers::RegisterInfo ^ registerInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Register : System.ServiceModel.PeerResolvers.RegisterInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo&#xA;override this.Register : System.ServiceModel.PeerResolvers.RegisterInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="customPeerResolverService.Register registerInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register(System.ServiceModel.PeerResolvers.RegisterInfo)</InterfaceMember>
@@ -319,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.Guid,System.String,System.ServiceModel.PeerNodeAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Register (clientId As Guid, meshId As String, address As PeerNodeAddress) As RegisterResponseInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::RegisterResponseInfo ^ Register(Guid clientId, System::String ^ meshId, System::ServiceModel::PeerNodeAddress ^ address);" />
+      <MemberSignature Language="F#" Value="abstract member Register : Guid * string * System.ServiceModel.PeerNodeAddress -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo&#xA;override this.Register : Guid * string * System.ServiceModel.PeerNodeAddress -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="customPeerResolverService.Register (clientId, meshId, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -350,6 +360,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.ResolveResponseInfo Resolve(class System.ServiceModel.PeerResolvers.ResolveInfo resolveInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve(System.ServiceModel.PeerResolvers.ResolveInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::ResolveResponseInfo ^ Resolve(System::ServiceModel::PeerResolvers::ResolveInfo ^ resolveInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : System.ServiceModel.PeerResolvers.ResolveInfo -&gt; System.ServiceModel.PeerResolvers.ResolveResponseInfo&#xA;override this.Resolve : System.ServiceModel.PeerResolvers.ResolveInfo -&gt; System.ServiceModel.PeerResolvers.ResolveResponseInfo" Usage="customPeerResolverService.Resolve resolveInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve(System.ServiceModel.PeerResolvers.ResolveInfo)</InterfaceMember>
@@ -387,6 +398,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister(class System.ServiceModel.PeerResolvers.UnregisterInfo unregisterInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Unregister(System.ServiceModel.PeerResolvers.UnregisterInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Unregister(System::ServiceModel::PeerResolvers::UnregisterInfo ^ unregisterInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : System.ServiceModel.PeerResolvers.UnregisterInfo -&gt; unit&#xA;override this.Unregister : System.ServiceModel.PeerResolvers.UnregisterInfo -&gt; unit" Usage="customPeerResolverService.Unregister unregisterInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Unregister(System.ServiceModel.PeerResolvers.UnregisterInfo)</InterfaceMember>
@@ -415,6 +427,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.PeerResolvers.RegisterResponseInfo Update(class System.ServiceModel.PeerResolvers.UpdateInfo updateInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Update(System.ServiceModel.PeerResolvers.UpdateInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::PeerResolvers::RegisterResponseInfo ^ Update(System::ServiceModel::PeerResolvers::UpdateInfo ^ updateInfo);" />
+      <MemberSignature Language="F#" Value="abstract member Update : System.ServiceModel.PeerResolvers.UpdateInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo&#xA;override this.Update : System.ServiceModel.PeerResolvers.UpdateInfo -&gt; System.ServiceModel.PeerResolvers.RegisterResponseInfo" Usage="customPeerResolverService.Update updateInfo" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.PeerResolvers.IPeerResolverContract.Update(System.ServiceModel.PeerResolvers.UpdateInfo)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionFlowOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionFlowOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class TransactionFlowOption" />
+  <TypeSignature Language="F#" Value="type TransactionFlowOption = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransactionFlowOption.Allowed" />
       <MemberSignature Language="VB.NET" Value="Allowed" />
       <MemberSignature Language="C++ CLI" Value="Allowed" />
+      <MemberSignature Language="F#" Value="Allowed = 1" Usage="System.ServiceModel.TransactionFlowOption.Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransactionFlowOption.Mandatory" />
       <MemberSignature Language="VB.NET" Value="Mandatory" />
       <MemberSignature Language="C++ CLI" Value="Mandatory" />
+      <MemberSignature Language="F#" Value="Mandatory = 2" Usage="System.ServiceModel.TransactionFlowOption.Mandatory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransactionFlowOption.NotAllowed" />
       <MemberSignature Language="VB.NET" Value="NotAllowed" />
       <MemberSignature Language="C++ CLI" Value="NotAllowed" />
+      <MemberSignature Language="F#" Value="NotAllowed = 0" Usage="System.ServiceModel.TransactionFlowOption.NotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

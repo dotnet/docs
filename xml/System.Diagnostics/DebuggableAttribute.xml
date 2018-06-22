@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebuggableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DebuggableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggableAttribute.#ctor(System.Diagnostics.DebuggableAttribute.DebuggingModes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modes As DebuggableAttribute.DebuggingModes)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggableAttribute(System::Diagnostics::DebuggableAttribute::DebuggingModes modes);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggableAttribute : System.Diagnostics.DebuggableAttribute.DebuggingModes -&gt; System.Diagnostics.DebuggableAttribute" Usage="new System.Diagnostics.DebuggableAttribute modes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggableAttribute.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isJITTrackingEnabled As Boolean, isJITOptimizerDisabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggableAttribute(bool isJITTrackingEnabled, bool isJITOptimizerDisabled);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggableAttribute : bool * bool -&gt; System.Diagnostics.DebuggableAttribute" Usage="new System.Diagnostics.DebuggableAttribute (isJITTrackingEnabled, isJITOptimizerDisabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.DebuggingFlags" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebuggingFlags As DebuggableAttribute.DebuggingModes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::DebuggableAttribute::DebuggingModes DebuggingFlags { System::Diagnostics::DebuggableAttribute::DebuggingModes get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebuggingFlags : System.Diagnostics.DebuggableAttribute.DebuggingModes" Usage="System.Diagnostics.DebuggableAttribute.DebuggingFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.IsJITOptimizerDisabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsJITOptimizerDisabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsJITOptimizerDisabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsJITOptimizerDisabled : bool" Usage="System.Diagnostics.DebuggableAttribute.IsJITOptimizerDisabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsJITTrackingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsJITTrackingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsJITTrackingEnabled : bool" Usage="System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

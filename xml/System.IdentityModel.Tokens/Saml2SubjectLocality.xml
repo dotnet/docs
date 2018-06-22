@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectLocality" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2SubjectLocality" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2SubjectLocality" />
+  <TypeSignature Language="F#" Value="type Saml2SubjectLocality = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectLocality.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As String, dnsName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectLocality(System::String ^ address, System::String ^ dnsName);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2SubjectLocality : string * string -&gt; System.IdentityModel.Tokens.Saml2SubjectLocality" Usage="new System.IdentityModel.Tokens.Saml2SubjectLocality (address, dnsName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectLocality.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectLocality.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectLocality.DnsName" />
       <MemberSignature Language="VB.NET" Value="Public Property DnsName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DnsName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DnsName : string with get, set" Usage="System.IdentityModel.Tokens.Saml2SubjectLocality.DnsName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

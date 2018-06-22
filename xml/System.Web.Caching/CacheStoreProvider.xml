@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheStoreProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CacheStoreProvider&#xA;Inherits ProviderBase&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CacheStoreProvider abstract : System::Configuration::Provider::ProviderBase, IDisposable" />
+  <TypeSignature Language="F#" Value="type CacheStoreProvider = class&#xA;    inherit ProviderBase&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Add(System.String,System.Object,System.Web.Caching.CacheInsertOptions)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (key As String, item As Object, options As CacheInsertOptions) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Add(System::String ^ key, System::Object ^ item, System::Web::Caching::CacheInsertOptions ^ options);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj * System.Web.Caching.CacheInsertOptions -&gt; obj" Usage="cacheStoreProvider.Add (key, item, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.AddDependent(System.String,System.Web.Caching.CacheDependency,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddDependent (key As String, dependency As CacheDependency, ByRef utcLastUpdated As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool AddDependent(System::String ^ key, System::Web::Caching::CacheDependency ^ dependency, [Runtime::InteropServices::Out] DateTime % utcLastUpdated);" />
+      <MemberSignature Language="F#" Value="abstract member AddDependent : string * System.Web.Caching.CacheDependency *  -&gt; bool" Usage="cacheStoreProvider.AddDependent (key, dependency, utcLastUpdated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="cacheStoreProvider.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Get(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; obj" Usage="cacheStoreProvider.Get key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="cacheStoreProvider.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="cacheStoreProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Insert(System.String,System.Object,System.Web.Caching.CacheInsertOptions)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Insert (key As String, item As Object, options As CacheInsertOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Insert(System::String ^ key, System::Object ^ item, System::Web::Caching::CacheInsertOptions ^ options);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : string * obj * System.Web.Caching.CacheInsertOptions -&gt; unit" Usage="cacheStoreProvider.Insert (key, item, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheStoreProvider.ItemCount" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemCount As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ItemCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int64" Usage="System.Web.Caching.CacheStoreProvider.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Remove (key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; obj" Usage="cacheStoreProvider.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Remove(System.String,System.Web.Caching.CacheItemRemovedReason)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Remove (key As String, reason As CacheItemRemovedReason) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Remove(System::String ^ key, System::Web::Caching::CacheItemRemovedReason reason);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string * System.Web.Caching.CacheItemRemovedReason -&gt; obj" Usage="cacheStoreProvider.Remove (key, reason)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.RemoveDependent(System.String,System.Web.Caching.CacheDependency)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveDependent (key As String, dependency As CacheDependency)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveDependent(System::String ^ key, System::Web::Caching::CacheDependency ^ dependency);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveDependent : string * System.Web.Caching.CacheDependency -&gt; unit" Usage="cacheStoreProvider.RemoveDependent (key, dependency)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheStoreProvider.SizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SizeInBytes As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SizeInBytes { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.SizeInBytes : int64" Usage="System.Web.Caching.CacheStoreProvider.SizeInBytes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.Trim(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Trim (percent As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long Trim(int percent);" />
+      <MemberSignature Language="F#" Value="abstract member Trim : int -&gt; int64" Usage="cacheStoreProvider.Trim percent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

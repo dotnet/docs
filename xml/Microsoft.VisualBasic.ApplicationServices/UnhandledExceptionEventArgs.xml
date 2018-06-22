@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UnhandledExceptionEventArgs&#xA;Inherits ThreadExceptionEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnhandledExceptionEventArgs : System::Threading::ThreadExceptionEventArgs" />
+  <TypeSignature Language="F#" Value="type UnhandledExceptionEventArgs = class&#xA;    inherit ThreadExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(bool exitApplication, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.#ctor(System.Boolean,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnhandledExceptionEventArgs(bool exitApplication, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs : bool * Exception -&gt; Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" Usage="new Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs (exitApplication, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication" />
       <MemberSignature Language="VB.NET" Value="Public Property ExitApplication As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExitApplication { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExitApplication : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

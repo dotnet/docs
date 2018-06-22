@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContextMenuEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextMenuEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextMenuEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type ContextMenuEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenuEventArgs.CursorLeft" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CursorLeft As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CursorLeft { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorLeft : double" Usage="System.Windows.Controls.ContextMenuEventArgs.CursorLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContextMenuEventArgs.CursorTop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CursorTop As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CursorTop { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.CursorTop : double" Usage="System.Windows.Controls.ContextMenuEventArgs.CursorTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="contextMenuEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

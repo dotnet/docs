@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.IValidationErrorService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValidationErrorService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValidationErrorService" />
+  <TypeSignature Language="F#" Value="type IValidationErrorService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors(System.Collections.Generic.IList{System.Activities.Presentation.Validation.ValidationErrorInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowValidationErrors (errors As IList(Of ValidationErrorInfo))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowValidationErrors(System::Collections::Generic::IList&lt;System::Activities::Presentation::Validation::ValidationErrorInfo ^&gt; ^ errors);" />
+      <MemberSignature Language="F#" Value="abstract member ShowValidationErrors : System.Collections.Generic.IList&lt;System.Activities.Presentation.Validation.ValidationErrorInfo&gt; -&gt; unit" Usage="iValidationErrorService.ShowValidationErrors errors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSystemRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileSystemRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class FileSystemRights" />
+  <TypeSignature Language="F#" Value="type FileSystemRights = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.AppendData" />
       <MemberSignature Language="VB.NET" Value="AppendData" />
       <MemberSignature Language="C++ CLI" Value="AppendData" />
+      <MemberSignature Language="F#" Value="AppendData = 4" Usage="System.Security.AccessControl.FileSystemRights.AppendData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ChangePermissions" />
       <MemberSignature Language="VB.NET" Value="ChangePermissions" />
       <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
+      <MemberSignature Language="F#" Value="ChangePermissions = 262144" Usage="System.Security.AccessControl.FileSystemRights.ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.CreateDirectories" />
       <MemberSignature Language="VB.NET" Value="CreateDirectories" />
       <MemberSignature Language="C++ CLI" Value="CreateDirectories" />
+      <MemberSignature Language="F#" Value="CreateDirectories = 4" Usage="System.Security.AccessControl.FileSystemRights.CreateDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.CreateFiles" />
       <MemberSignature Language="VB.NET" Value="CreateFiles" />
       <MemberSignature Language="C++ CLI" Value="CreateFiles" />
+      <MemberSignature Language="F#" Value="CreateFiles = 2" Usage="System.Security.AccessControl.FileSystemRights.CreateFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.Security.AccessControl.FileSystemRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.DeleteSubdirectoriesAndFiles" />
       <MemberSignature Language="VB.NET" Value="DeleteSubdirectoriesAndFiles" />
       <MemberSignature Language="C++ CLI" Value="DeleteSubdirectoriesAndFiles" />
+      <MemberSignature Language="F#" Value="DeleteSubdirectoriesAndFiles = 64" Usage="System.Security.AccessControl.FileSystemRights.DeleteSubdirectoriesAndFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ExecuteFile" />
       <MemberSignature Language="VB.NET" Value="ExecuteFile" />
       <MemberSignature Language="C++ CLI" Value="ExecuteFile" />
+      <MemberSignature Language="F#" Value="ExecuteFile = 32" Usage="System.Security.AccessControl.FileSystemRights.ExecuteFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.FullControl" />
       <MemberSignature Language="VB.NET" Value="FullControl" />
       <MemberSignature Language="C++ CLI" Value="FullControl" />
+      <MemberSignature Language="F#" Value="FullControl = 2032127" Usage="System.Security.AccessControl.FileSystemRights.FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ListDirectory" />
       <MemberSignature Language="VB.NET" Value="ListDirectory" />
       <MemberSignature Language="C++ CLI" Value="ListDirectory" />
+      <MemberSignature Language="F#" Value="ListDirectory = 1" Usage="System.Security.AccessControl.FileSystemRights.ListDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Modify" />
       <MemberSignature Language="VB.NET" Value="Modify" />
       <MemberSignature Language="C++ CLI" Value="Modify" />
+      <MemberSignature Language="F#" Value="Modify = 197055" Usage="System.Security.AccessControl.FileSystemRights.Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 131209" Usage="System.Security.AccessControl.FileSystemRights.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ReadAndExecute" />
       <MemberSignature Language="VB.NET" Value="ReadAndExecute" />
       <MemberSignature Language="C++ CLI" Value="ReadAndExecute" />
+      <MemberSignature Language="F#" Value="ReadAndExecute = 131241" Usage="System.Security.AccessControl.FileSystemRights.ReadAndExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -369,6 +382,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ReadAttributes" />
       <MemberSignature Language="VB.NET" Value="ReadAttributes" />
       <MemberSignature Language="C++ CLI" Value="ReadAttributes" />
+      <MemberSignature Language="F#" Value="ReadAttributes = 128" Usage="System.Security.AccessControl.FileSystemRights.ReadAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -394,6 +408,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ReadData" />
       <MemberSignature Language="VB.NET" Value="ReadData" />
       <MemberSignature Language="C++ CLI" Value="ReadData" />
+      <MemberSignature Language="F#" Value="ReadData = 1" Usage="System.Security.AccessControl.FileSystemRights.ReadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -419,6 +434,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes" />
       <MemberSignature Language="VB.NET" Value="ReadExtendedAttributes" />
       <MemberSignature Language="C++ CLI" Value="ReadExtendedAttributes" />
+      <MemberSignature Language="F#" Value="ReadExtendedAttributes = 8" Usage="System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -444,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.ReadPermissions" />
       <MemberSignature Language="VB.NET" Value="ReadPermissions" />
       <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
+      <MemberSignature Language="F#" Value="ReadPermissions = 131072" Usage="System.Security.AccessControl.FileSystemRights.ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -469,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.Security.AccessControl.FileSystemRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -504,6 +522,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.TakeOwnership" />
       <MemberSignature Language="VB.NET" Value="TakeOwnership" />
       <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
+      <MemberSignature Language="F#" Value="TakeOwnership = 524288" Usage="System.Security.AccessControl.FileSystemRights.TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -529,6 +548,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Traverse" />
       <MemberSignature Language="VB.NET" Value="Traverse" />
       <MemberSignature Language="C++ CLI" Value="Traverse" />
+      <MemberSignature Language="F#" Value="Traverse = 32" Usage="System.Security.AccessControl.FileSystemRights.Traverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -554,6 +574,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 278" Usage="System.Security.AccessControl.FileSystemRights.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -579,6 +600,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.WriteAttributes" />
       <MemberSignature Language="VB.NET" Value="WriteAttributes" />
       <MemberSignature Language="C++ CLI" Value="WriteAttributes" />
+      <MemberSignature Language="F#" Value="WriteAttributes = 256" Usage="System.Security.AccessControl.FileSystemRights.WriteAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -604,6 +626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.WriteData" />
       <MemberSignature Language="VB.NET" Value="WriteData" />
       <MemberSignature Language="C++ CLI" Value="WriteData" />
+      <MemberSignature Language="F#" Value="WriteData = 2" Usage="System.Security.AccessControl.FileSystemRights.WriteData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -629,6 +652,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.FileSystemRights.WriteExtendedAttributes" />
       <MemberSignature Language="VB.NET" Value="WriteExtendedAttributes" />
       <MemberSignature Language="C++ CLI" Value="WriteExtendedAttributes" />
+      <MemberSignature Language="F#" Value="WriteExtendedAttributes = 16" Usage="System.Security.AccessControl.FileSystemRights.WriteExtendedAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

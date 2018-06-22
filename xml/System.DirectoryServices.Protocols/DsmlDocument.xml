@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDocument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DsmlDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class DsmlDocument abstract" />
+  <TypeSignature Language="F#" Value="type DsmlDocument = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDocument.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToXml () As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlDocument ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Xml.XmlDocument" Usage="dsmlDocument.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

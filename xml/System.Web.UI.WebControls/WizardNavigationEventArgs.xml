@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardNavigationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WizardNavigationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WizardNavigationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type WizardNavigationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardNavigationEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (currentStepIndex As Integer, nextStepIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WizardNavigationEventArgs(int currentStepIndex, int nextStepIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WizardNavigationEventArgs : int * int -&gt; System.Web.UI.WebControls.WizardNavigationEventArgs" Usage="new System.Web.UI.WebControls.WizardNavigationEventArgs (currentStepIndex, nextStepIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardNavigationEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Web.UI.WebControls.WizardNavigationEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStepIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentStepIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentStepIndex : int" Usage="System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextStepIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NextStepIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextStepIndex : int" Usage="System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

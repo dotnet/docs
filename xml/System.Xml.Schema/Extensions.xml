@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Extensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -137,6 +138,7 @@ custOrd did not validate
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.GetSchemaInfo(System.Xml.Linq.XAttribute)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSchemaInfo (source As XAttribute) As IXmlSchemaInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::Schema::IXmlSchemaInfo ^ GetSchemaInfo(System::Xml::Linq::XAttribute ^ source);" />
+      <MemberSignature Language="F#" Value="static member GetSchemaInfo : System.Xml.Linq.XAttribute -&gt; System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.Schema.Extensions.GetSchemaInfo source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -182,6 +184,7 @@ custOrd did not validate
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.GetSchemaInfo(System.Xml.Linq.XElement)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSchemaInfo (source As XElement) As IXmlSchemaInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::Schema::IXmlSchemaInfo ^ GetSchemaInfo(System::Xml::Linq::XElement ^ source);" />
+      <MemberSignature Language="F#" Value="static member GetSchemaInfo : System.Xml.Linq.XElement -&gt; System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.Schema.Extensions.GetSchemaInfo source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -424,6 +427,7 @@ Invalid Element /Root/Child1/GrandChild3
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XDocument source, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XDocument,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XDocument ^ source, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XDocument * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, schemas, validationEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -587,6 +591,7 @@ doc2 did not validate
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XAttribute source, class System.Xml.Schema.XmlSchemaObject partialValidationType, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XAttribute,System.Xml.Schema.XmlSchemaObject,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XAttribute ^ source, System::Xml::Schema::XmlSchemaObject ^ partialValidationType, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XAttribute * System.Xml.Schema.XmlSchemaObject * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, partialValidationType, schemas, validationEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -796,6 +801,7 @@ lang did not validate
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XDocument source, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler, bool addSchemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XDocument,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XDocument ^ source, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler, bool addSchemaInfo);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XDocument * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler * bool -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, schemas, validationEventHandler, addSchemaInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1182,6 +1188,7 @@ Invalid Element /Root/Child1/GrandChild3
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XElement source, class System.Xml.Schema.XmlSchemaObject partialValidationType, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XElement,System.Xml.Schema.XmlSchemaObject,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XElement ^ source, System::Xml::Schema::XmlSchemaObject ^ partialValidationType, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XElement * System.Xml.Schema.XmlSchemaObject * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, partialValidationType, schemas, validationEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1391,6 +1398,7 @@ child1 did not validate
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XAttribute source, class System.Xml.Schema.XmlSchemaObject partialValidationType, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler, bool addSchemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XAttribute,System.Xml.Schema.XmlSchemaObject,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XAttribute ^ source, System::Xml::Schema::XmlSchemaObject ^ partialValidationType, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler, bool addSchemaInfo);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XAttribute * System.Xml.Schema.XmlSchemaObject * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler * bool -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, partialValidationType, schemas, validationEventHandler, addSchemaInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1662,6 +1670,7 @@ Invalid Attribute /Root/@Lang
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XElement source, class System.Xml.Schema.XmlSchemaObject partialValidationType, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler, bool addSchemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.Extensions.Validate(System.Xml.Linq.XElement,System.Xml.Schema.XmlSchemaObject,System.Xml.Schema.XmlSchemaSet,System.Xml.Schema.ValidationEventHandler,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Validate(System::Xml::Linq::XElement ^ source, System::Xml::Schema::XmlSchemaObject ^ partialValidationType, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler, bool addSchemaInfo);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Xml.Linq.XElement * System.Xml.Schema.XmlSchemaObject * System.Xml.Schema.XmlSchemaSet * System.Xml.Schema.ValidationEventHandler * bool -&gt; unit" Usage="System.Xml.Schema.Extensions.Validate (source, partialValidationType, schemas, validationEventHandler, addSchemaInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>

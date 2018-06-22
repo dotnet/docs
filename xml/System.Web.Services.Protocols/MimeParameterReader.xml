@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeParameterReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MimeParameterReader&#xA;Inherits MimeFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MimeParameterReader abstract : System::Web::Services::Protocols::MimeFormatter" />
+  <TypeSignature Language="F#" Value="type MimeParameterReader = class&#xA;    inherit MimeFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeParameterReader.Read(System.Web.HttpRequest)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read (request As HttpRequest) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Object ^&gt; ^ Read(System::Web::HttpRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.Web.HttpRequest -&gt; obj[]" Usage="mimeParameterReader.Read request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

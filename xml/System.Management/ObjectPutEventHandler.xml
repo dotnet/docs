@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectPutEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectPutEventHandler(sender As Object, e As ObjectPutEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ObjectPutEventHandler(System::Object ^ sender, ObjectPutEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ObjectPutEventHandler = delegate of obj * ObjectPutEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

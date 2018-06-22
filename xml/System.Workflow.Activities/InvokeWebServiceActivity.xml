@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.InvokeWebServiceActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeWebServiceActivity&#xA;Inherits Activity&#xA;Implements IDynamicPropertyTypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeWebServiceActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type InvokeWebServiceActivity = class&#xA;    inherit Activity&#xA;    interface IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWebServiceActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeWebServiceActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.InvokeWebServiceActivity : string -&gt; System.Workflow.Activities.InvokeWebServiceActivity" Usage="new System.Workflow.Activities.InvokeWebServiceActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWebServiceActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="invokeWebServiceActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.InvokeWebServiceActivity.Invoked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Invoked As EventHandler(Of InvokeWebServiceEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::InvokeWebServiceEventArgs ^&gt; ^ Invoked;" />
+      <MemberSignature Language="F#" Value="member this.Invoked : EventHandler&lt;System.Workflow.Activities.InvokeWebServiceEventArgs&gt; " Usage="member this.Invoked : System.EventHandler&lt;System.Workflow.Activities.InvokeWebServiceEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.InvokedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InvokedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.InvokedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.InvokeWebServiceActivity.Invoking" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Invoking As EventHandler(Of InvokeWebServiceEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::InvokeWebServiceEventArgs ^&gt; ^ Invoking;" />
+      <MemberSignature Language="F#" Value="member this.Invoking : EventHandler&lt;System.Workflow.Activities.InvokeWebServiceEventArgs&gt; " Usage="member this.Invoking : System.EventHandler&lt;System.Workflow.Activities.InvokeWebServiceEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.InvokingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InvokingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.InvokingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWebServiceActivity.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Workflow.Activities.InvokeWebServiceActivity.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.MethodNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MethodNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ MethodNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MethodNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.MethodNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWebServiceActivity.OnClosed(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : IServiceProvider -&gt; unit" Usage="invokeWebServiceActivity.OnClosed provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -285,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWebServiceActivity.ParameterBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.InvokeWebServiceActivity.ParameterBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -313,6 +324,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.ParameterBindingsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterBindingsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterBindingsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ParameterBindingsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.ParameterBindingsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -332,6 +344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWebServiceActivity.ProxyClass" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyClass As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ProxyClass { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyClass : Type with get, set" Usage="System.Workflow.Activities.InvokeWebServiceActivity.ProxyClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -374,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.ProxyClassProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProxyClassProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ProxyClassProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProxyClassProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.ProxyClassProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -393,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWebServiceActivity.SessionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionId : string with get, set" Usage="System.Workflow.Activities.InvokeWebServiceActivity.SessionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -428,6 +443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWebServiceActivity.SessionIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SessionIdProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ SessionIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SessionIdProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWebServiceActivity.SessionIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CallingDataMethodsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CallingDataMethodsEventHandler(sender As Object, e As CallingDataMethodsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CallingDataMethodsEventHandler(System::Object ^ sender, CallingDataMethodsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CallingDataMethodsEventHandler = delegate of obj * CallingDataMethodsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapBinding : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type SoapBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBinding.HttpTransport" />
       <MemberSignature Language="VB.NET" Value="Public Const HttpTransport As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpTransport;" />
+      <MemberSignature Language="F#" Value="val mutable HttpTransport : string" Usage="System.Web.Services.Description.SoapBinding.HttpTransport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBinding.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.SoapBinding.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBinding.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Schema As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Schema::XmlSchema ^ Schema { System::Xml::Schema::XmlSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Xml.Schema.XmlSchema" Usage="System.Web.Services.Description.SoapBinding.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBinding.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As SoapBindingStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBindingStyle Style { System::Web::Services::Description::SoapBindingStyle get(); void set(System::Web::Services::Description::SoapBindingStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.SoapBindingStyle with get, set" Usage="System.Web.Services.Description.SoapBinding.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBinding.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Transport { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : string with get, set" Usage="System.Web.Services.Description.SoapBinding.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ExtendedRequest" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtendedRequest&#xA;Inherits DirectoryRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtendedRequest : System::DirectoryServices::Protocols::DirectoryRequest" />
+  <TypeSignature Language="F#" Value="type ExtendedRequest = class&#xA;    inherit DirectoryRequest" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requestName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRequest(System::String ^ requestName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ExtendedRequest : string -&gt; System.DirectoryServices.Protocols.ExtendedRequest" Usage="new System.DirectoryServices.Protocols.ExtendedRequest requestName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (requestName As String, requestValue As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRequest(System::String ^ requestName, cli::array &lt;System::Byte&gt; ^ requestValue);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.ExtendedRequest : string * byte[] -&gt; System.DirectoryServices.Protocols.ExtendedRequest" Usage="new System.DirectoryServices.Protocols.ExtendedRequest (requestName, requestValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ExtendedRequest.RequestName" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestName : string with get, set" Usage="System.DirectoryServices.Protocols.ExtendedRequest.RequestName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ExtendedRequest.RequestValue" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestValue As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ RequestValue { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestValue : byte[] with get, set" Usage="System.DirectoryServices.Protocols.ExtendedRequest.RequestValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ToXmlNode (doc As XmlDocument) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlElement ^ ToXmlNode(System::Xml::XmlDocument ^ doc);" />
+      <MemberSignature Language="F#" Value="override this.ToXmlNode : System.Xml.XmlDocument -&gt; System.Xml.XmlElement" Usage="extendedRequest.ToXmlNode doc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

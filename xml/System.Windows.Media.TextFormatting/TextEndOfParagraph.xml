@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfParagraph" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEndOfParagraph&#xA;Inherits TextEndOfLine" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEndOfParagraph : System::Windows::Media::TextFormatting::TextEndOfLine" />
+  <TypeSignature Language="F#" Value="type TextEndOfParagraph = class&#xA;    inherit TextEndOfLine" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfParagraph.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfParagraph(int length);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEndOfParagraph : int -&gt; System.Windows.Media.TextFormatting.TextEndOfParagraph" Usage="new System.Windows.Media.TextFormatting.TextEndOfParagraph length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfParagraph.#ctor(System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfParagraph(int length, System::Windows::Media::TextFormatting::TextRunProperties ^ textRunProperties);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEndOfParagraph : int * System.Windows.Media.TextFormatting.TextRunProperties -&gt; System.Windows.Media.TextFormatting.TextEndOfParagraph" Usage="new System.Windows.Media.TextFormatting.TextEndOfParagraph (length, textRunProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

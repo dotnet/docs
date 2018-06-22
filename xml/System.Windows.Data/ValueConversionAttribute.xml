@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.ValueConversionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueConversionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValueConversionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ValueConversionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ValueConversionAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceType As Type, targetType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueConversionAttribute(Type ^ sourceType, Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.ValueConversionAttribute : Type * Type -&gt; System.Windows.Data.ValueConversionAttribute" Usage="new System.Windows.Data.ValueConversionAttribute (sourceType, targetType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ValueConversionAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueConversionAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ValueConversionAttribute.ParameterType" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ParameterType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterType : Type with get, set" Usage="System.Windows.Data.ValueConversionAttribute.ParameterType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ValueConversionAttribute.SourceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SourceType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceType : Type" Usage="System.Windows.Data.ValueConversionAttribute.SourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ValueConversionAttribute.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type" Usage="System.Windows.Data.ValueConversionAttribute.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ValueConversionAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Windows.Data.ValueConversionAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

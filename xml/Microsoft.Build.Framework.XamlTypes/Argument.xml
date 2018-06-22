@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.Argument" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Argument&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class Argument sealed : System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type Argument = class&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.Argument.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="argument.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.Argument.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="argument.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Separator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.Separator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

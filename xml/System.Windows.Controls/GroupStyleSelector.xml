@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupStyleSelector" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function GroupStyleSelector(group As CollectionViewGroup, level As Integer) As GroupStyle " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Windows::Controls::GroupStyle ^ GroupStyleSelector(CollectionViewGroup ^ group, int level);" />
+  <TypeSignature Language="F#" Value="type GroupStyleSelector = delegate of CollectionViewGroup * int -&gt; GroupStyle" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

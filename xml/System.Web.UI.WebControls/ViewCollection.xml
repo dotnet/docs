@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ViewCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewCollection&#xA;Inherits ControlCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewCollection : System::Web::UI::ControlCollection" />
+  <TypeSignature Language="F#" Value="type ViewCollection = class&#xA;    inherit ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.#ctor(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewCollection(System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ViewCollection : System.Web.UI.Control -&gt; System.Web.UI.WebControls.ViewCollection" Usage="new System.Web.UI.WebControls.ViewCollection owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.Add(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (v As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ v);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="viewCollection.Add v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, v As Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ v);" />
+      <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="viewCollection.AddAt (index, v)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ViewCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(i As Integer) As View" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::View ^ default[int] { System::Web::UI::WebControls::View ^ get(int i); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.View" Usage="System.Web.UI.WebControls.ViewCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DecimalConstantAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecimalConstantAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DecimalConstantAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DecimalConstantAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scale As Byte, sign As Byte, hi As Integer, mid As Integer, low As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DecimalConstantAttribute(System::Byte scale, System::Byte sign, int hi, int mid, int low);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DecimalConstantAttribute : byte * byte * int * int * int -&gt; System.Runtime.CompilerServices.DecimalConstantAttribute" Usage="new System.Runtime.CompilerServices.DecimalConstantAttribute (scale, sign, hi, mid, low)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.UInt32,System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scale As Byte, sign As Byte, hi As UInteger, mid As UInteger, low As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DecimalConstantAttribute(System::Byte scale, System::Byte sign, System::UInt32 hi, System::UInt32 mid, System::UInt32 low);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DecimalConstantAttribute : byte * byte * uint32 * uint32 * uint32 -&gt; System.Runtime.CompilerServices.DecimalConstantAttribute" Usage="new System.Runtime.CompilerServices.DecimalConstantAttribute (scale, sign, hi, mid, low)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Value { System::Decimal get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : decimal" Usage="System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

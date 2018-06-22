@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TextOrientation" />
   <TypeSignature Language="VB.NET" Value="Public Enum TextOrientation" />
   <TypeSignature Language="C++ CLI" Value="public enum class TextOrientation" />
+  <TypeSignature Language="F#" Value="type TextOrientation = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextOrientation.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.DataVisualization.Charting.TextOrientation.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextOrientation.Horizontal" />
       <MemberSignature Language="VB.NET" Value="Horizontal" />
       <MemberSignature Language="C++ CLI" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Web.UI.DataVisualization.Charting.TextOrientation.Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextOrientation.Rotated270" />
       <MemberSignature Language="VB.NET" Value="Rotated270" />
       <MemberSignature Language="C++ CLI" Value="Rotated270" />
+      <MemberSignature Language="F#" Value="Rotated270 = 3" Usage="System.Web.UI.DataVisualization.Charting.TextOrientation.Rotated270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextOrientation.Rotated90" />
       <MemberSignature Language="VB.NET" Value="Rotated90" />
       <MemberSignature Language="C++ CLI" Value="Rotated90" />
+      <MemberSignature Language="F#" Value="Rotated90 = 2" Usage="System.Web.UI.DataVisualization.Charting.TextOrientation.Rotated90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TextOrientation.Stacked" />
       <MemberSignature Language="VB.NET" Value="Stacked" />
       <MemberSignature Language="C++ CLI" Value="Stacked" />
+      <MemberSignature Language="F#" Value="Stacked = 4" Usage="System.Web.UI.DataVisualization.Charting.TextOrientation.Stacked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

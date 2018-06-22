@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngExportPolicies" />
   <TypeSignature Language="VB.NET" Value="Public Enum CngExportPolicies" />
   <TypeSignature Language="C++ CLI" Value="public enum class CngExportPolicies" />
+  <TypeSignature Language="F#" Value="type CngExportPolicies = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
       <MemberSignature Language="VB.NET" Value="AllowArchiving" />
       <MemberSignature Language="C++ CLI" Value="AllowArchiving" />
+      <MemberSignature Language="F#" Value="AllowArchiving = 4" Usage="System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowExport" />
       <MemberSignature Language="VB.NET" Value="AllowExport" />
       <MemberSignature Language="C++ CLI" Value="AllowExport" />
+      <MemberSignature Language="F#" Value="AllowExport = 1" Usage="System.Security.Cryptography.CngExportPolicies.AllowExport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
       <MemberSignature Language="VB.NET" Value="AllowPlaintextArchiving" />
       <MemberSignature Language="C++ CLI" Value="AllowPlaintextArchiving" />
+      <MemberSignature Language="F#" Value="AllowPlaintextArchiving = 8" Usage="System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
       <MemberSignature Language="VB.NET" Value="AllowPlaintextExport" />
       <MemberSignature Language="C++ CLI" Value="AllowPlaintextExport" />
+      <MemberSignature Language="F#" Value="AllowPlaintextExport = 2" Usage="System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngExportPolicies.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

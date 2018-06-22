@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ControlChars" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlChars" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlChars sealed" />
+  <TypeSignature Language="F#" Value="type ControlChars = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Back" />
       <MemberSignature Language="VB.NET" Value="Public Const Back As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char Back;" />
+      <MemberSignature Language="F#" Value="val mutable Back : char" Usage="Microsoft.VisualBasic.ControlChars.Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Cr" />
       <MemberSignature Language="VB.NET" Value="Public Const Cr As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char Cr;" />
+      <MemberSignature Language="F#" Value="val mutable Cr : char" Usage="Microsoft.VisualBasic.ControlChars.Cr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.CrLf" />
       <MemberSignature Language="VB.NET" Value="Public Const CrLf As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ CrLf;" />
+      <MemberSignature Language="F#" Value="val mutable CrLf : string" Usage="Microsoft.VisualBasic.ControlChars.CrLf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.FormFeed" />
       <MemberSignature Language="VB.NET" Value="Public Const FormFeed As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char FormFeed;" />
+      <MemberSignature Language="F#" Value="val mutable FormFeed : char" Usage="Microsoft.VisualBasic.ControlChars.FormFeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Lf" />
       <MemberSignature Language="VB.NET" Value="Public Const Lf As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char Lf;" />
+      <MemberSignature Language="F#" Value="val mutable Lf : char" Usage="Microsoft.VisualBasic.ControlChars.Lf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.NewLine" />
       <MemberSignature Language="VB.NET" Value="Public Const NewLine As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ NewLine;" />
+      <MemberSignature Language="F#" Value="val mutable NewLine : string" Usage="Microsoft.VisualBasic.ControlChars.NewLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.NullChar" />
       <MemberSignature Language="VB.NET" Value="Public Const NullChar As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char NullChar;" />
+      <MemberSignature Language="F#" Value="val mutable NullChar : char" Usage="Microsoft.VisualBasic.ControlChars.NullChar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Quote" />
       <MemberSignature Language="VB.NET" Value="Public Const Quote As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char Quote;" />
+      <MemberSignature Language="F#" Value="val mutable Quote : char" Usage="Microsoft.VisualBasic.ControlChars.Quote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Tab" />
       <MemberSignature Language="VB.NET" Value="Public Const Tab As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char Tab;" />
+      <MemberSignature Language="F#" Value="val mutable Tab : char" Usage="Microsoft.VisualBasic.ControlChars.Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.VerticalTab" />
       <MemberSignature Language="VB.NET" Value="Public Const VerticalTab As Char " />
       <MemberSignature Language="C++ CLI" Value="public: char VerticalTab;" />
+      <MemberSignature Language="F#" Value="val mutable VerticalTab : char" Usage="Microsoft.VisualBasic.ControlChars.VerticalTab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

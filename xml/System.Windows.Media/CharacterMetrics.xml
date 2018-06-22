@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.CharacterMetrics" />
   <TypeSignature Language="VB.NET" Value="Public Class CharacterMetrics" />
   <TypeSignature Language="C++ CLI" Value="public ref class CharacterMetrics" />
+  <TypeSignature Language="F#" Value="type CharacterMetrics = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetrics.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metrics As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterMetrics(System::String ^ metrics);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.CharacterMetrics : string -&gt; System.Windows.Media.CharacterMetrics" Usage="new System.Windows.Media.CharacterMetrics metrics" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Baseline As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Baseline { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Baseline : double" Usage="System.Windows.Media.CharacterMetrics.Baseline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.BlackBoxHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlackBoxHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BlackBoxHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlackBoxHeight : double" Usage="System.Windows.Media.CharacterMetrics.BlackBoxHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.BlackBoxWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlackBoxWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BlackBoxWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlackBoxWidth : double" Usage="System.Windows.Media.CharacterMetrics.BlackBoxWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.BottomSideBearing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BottomSideBearing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BottomSideBearing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.BottomSideBearing : double" Usage="System.Windows.Media.CharacterMetrics.BottomSideBearing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetrics.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="characterMetrics.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetrics.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="characterMetrics.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.LeftSideBearing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeftSideBearing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LeftSideBearing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeftSideBearing : double" Usage="System.Windows.Media.CharacterMetrics.LeftSideBearing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.Metrics" />
       <MemberSignature Language="VB.NET" Value="Public Property Metrics As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Metrics { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Metrics : string with get, set" Usage="System.Windows.Media.CharacterMetrics.Metrics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.RightSideBearing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightSideBearing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RightSideBearing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightSideBearing : double" Usage="System.Windows.Media.CharacterMetrics.RightSideBearing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetrics.TopSideBearing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopSideBearing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TopSideBearing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.TopSideBearing : double" Usage="System.Windows.Media.CharacterMetrics.TopSideBearing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

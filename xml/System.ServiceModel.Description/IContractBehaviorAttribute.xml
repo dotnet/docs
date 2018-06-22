@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IContractBehaviorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContractBehaviorAttribute" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContractBehaviorAttribute" />
+  <TypeSignature Language="F#" Value="type IContractBehaviorAttribute = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetContract As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetContract { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetContract : Type" Usage="System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

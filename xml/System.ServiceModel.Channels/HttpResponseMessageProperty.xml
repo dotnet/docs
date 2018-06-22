@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpResponseMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpResponseMessageProperty&#xA;Implements IMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseMessageProperty sealed : System::ServiceModel::Channels::IMessageProperty" />
+  <TypeSignature Language="F#" Value="type HttpResponseMessageProperty = class&#xA;    interface IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As HttpStatusCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); void set(System::Net::HttpStatusCode value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.HttpStatusCode with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressEntityBody As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressEntityBody { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressEntityBody : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressPreamble As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPreamble { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressPreamble : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

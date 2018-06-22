@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeReferenceCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeReferenceCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeTypeReferenceCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.#ctor(System.CodeDom.CodeTypeReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeReference())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReferenceCollection(cli::array &lt;System::CodeDom::CodeTypeReference ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReferenceCollection : System.CodeDom.CodeTypeReference[] -&gt; System.CodeDom.CodeTypeReferenceCollection" Usage="new System.CodeDom.CodeTypeReferenceCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.#ctor(System.CodeDom.CodeTypeReferenceCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeReferenceCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReferenceCollection(System::CodeDom::CodeTypeReferenceCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReferenceCollection : System.CodeDom.CodeTypeReferenceCollection -&gt; System.CodeDom.CodeTypeReferenceCollection" Usage="new System.CodeDom.CodeTypeReferenceCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeTypeReference) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeTypeReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeTypeReference -&gt; int" Usage="codeTypeReferenceCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; unit" Usage="codeTypeReferenceCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Add(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Type ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : Type -&gt; unit" Usage="codeTypeReferenceCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.AddRange(System.CodeDom.CodeTypeReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeReference())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeTypeReference ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeReference[] -&gt; unit" Usage="codeTypeReferenceCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.AddRange(System.CodeDom.CodeTypeReferenceCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeReferenceCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeTypeReferenceCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeReferenceCollection -&gt; unit" Usage="codeTypeReferenceCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Contains(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeTypeReference) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeTypeReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeTypeReference -&gt; bool" Usage="codeTypeReferenceCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.CopyTo(System.CodeDom.CodeTypeReference[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeTypeReference(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeTypeReference ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeTypeReference[] * int -&gt; unit" Usage="codeTypeReferenceCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -410,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.IndexOf(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeTypeReference) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeTypeReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeTypeReference -&gt; int" Usage="codeTypeReferenceCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Insert(System.Int32,System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeTypeReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeTypeReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeTypeReference -&gt; unit" Usage="codeTypeReferenceCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReferenceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ default[int] { System::CodeDom::CodeTypeReference ^ get(int index); void set(int index, System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeTypeReferenceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -523,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReferenceCollection.Remove(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeTypeReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeTypeReference ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeTypeReference -&gt; unit" Usage="codeTypeReferenceCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

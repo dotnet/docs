@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemSelectionChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListViewItemSelectionChangedEventHandler(sender As Object, e As ListViewItemSelectionChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ListViewItemSelectionChangedEventHandler(System::Object ^ sender, ListViewItemSelectionChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ListViewItemSelectionChangedEventHandler = delegate of obj * ListViewItemSelectionChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

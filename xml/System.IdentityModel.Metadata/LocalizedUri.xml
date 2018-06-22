@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedUri" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalizedUri&#xA;Inherits LocalizedEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalizedUri : System::IdentityModel::Metadata::LocalizedEntry" />
+  <TypeSignature Language="F#" Value="type LocalizedUri = class&#xA;    inherit LocalizedEntry" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class System.Globalization.CultureInfo language) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedUri.#ctor(System.Uri,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedUri(Uri ^ uri, System::Globalization::CultureInfo ^ language);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.LocalizedUri : Uri * System.Globalization.CultureInfo -&gt; System.IdentityModel.Metadata.LocalizedUri" Usage="new System.IdentityModel.Metadata.LocalizedUri (uri, language)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.LocalizedUri.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.IdentityModel.Metadata.LocalizedUri.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

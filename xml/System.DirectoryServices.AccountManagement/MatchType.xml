@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.MatchType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MatchType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MatchType" />
+  <TypeSignature Language="F#" Value="type MatchType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.Equals" />
       <MemberSignature Language="VB.NET" Value="Equals" />
       <MemberSignature Language="C++ CLI" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 0" Usage="System.DirectoryServices.AccountManagement.MatchType.Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="C++ CLI" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 2" Usage="System.DirectoryServices.AccountManagement.MatchType.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.GreaterThanOrEquals" />
       <MemberSignature Language="VB.NET" Value="GreaterThanOrEquals" />
       <MemberSignature Language="C++ CLI" Value="GreaterThanOrEquals" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEquals = 3" Usage="System.DirectoryServices.AccountManagement.MatchType.GreaterThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 4" Usage="System.DirectoryServices.AccountManagement.MatchType.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.LessThanOrEquals" />
       <MemberSignature Language="VB.NET" Value="LessThanOrEquals" />
       <MemberSignature Language="C++ CLI" Value="LessThanOrEquals" />
+      <MemberSignature Language="F#" Value="LessThanOrEquals = 5" Usage="System.DirectoryServices.AccountManagement.MatchType.LessThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.MatchType.NotEquals" />
       <MemberSignature Language="VB.NET" Value="NotEquals" />
       <MemberSignature Language="C++ CLI" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 1" Usage="System.DirectoryServices.AccountManagement.MatchType.NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

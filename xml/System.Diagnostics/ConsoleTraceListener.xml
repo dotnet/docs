@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConsoleTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public Class ConsoleTraceListener&#xA;Inherits TextWriterTraceListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConsoleTraceListener : System::Diagnostics::TextWriterTraceListener" />
+  <TypeSignature Language="F#" Value="type ConsoleTraceListener = class&#xA;    inherit TextWriterTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useErrorStream As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleTraceListener(bool useErrorStream);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ConsoleTraceListener : bool -&gt; System.Diagnostics.ConsoleTraceListener" Usage="new System.Diagnostics.ConsoleTraceListener useErrorStream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="consoleTraceListener.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

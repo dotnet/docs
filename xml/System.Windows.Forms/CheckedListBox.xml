@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckedListBox&#xA;Inherits ListBox" />
   <TypeSignature Language="C++ CLI" Value="public ref class CheckedListBox : System::Windows::Forms::ListBox" />
+  <TypeSignature Language="F#" Value="type CheckedListBox = class&#xA;    inherit ListBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckedIndices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckedIndices As CheckedListBox.CheckedIndexCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CheckedListBox::CheckedIndexCollection ^ CheckedIndices { System::Windows::Forms::CheckedListBox::CheckedIndexCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckedIndices : System.Windows.Forms.CheckedListBox.CheckedIndexCollection" Usage="System.Windows.Forms.CheckedListBox.CheckedIndices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckedItems As CheckedListBox.CheckedItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CheckedListBox::CheckedItemCollection ^ CheckedItems { System::Windows::Forms::CheckedListBox::CheckedItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckedItems : System.Windows.Forms.CheckedListBox.CheckedItemCollection" Usage="System.Windows.Forms.CheckedListBox.CheckedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckOnClick" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckOnClick As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckOnClick { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckOnClick : bool with get, set" Usage="System.Windows.Forms.CheckedListBox.CheckOnClick" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -274,6 +278,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="checkedListBox.CreateAccessibilityInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -354,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.CreateItemCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemCollection () As ListBox.ObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::ListBox::ObjectCollection ^ CreateItemCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateItemCollection : unit -&gt; System.Windows.Forms.ListBox.ObjectCollection" Usage="checkedListBox.CreateItemCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.CheckedListBox.CreateParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -416,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Windows.Forms.CheckedListBox.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -444,6 +453,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -471,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DisplayMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayMember : string with get, set" Usage="System.Windows.Forms.CheckedListBox.DisplayMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,6 +530,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DisplayMemberChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DisplayMemberChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DisplayMemberChanged;" />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberChanged : EventHandler " Usage="member this.DisplayMemberChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -546,6 +558,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DrawItem" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DrawItem As DrawItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -582,6 +595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DrawMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DrawMode As DrawMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DrawMode DrawMode { System::Windows::Forms::DrawMode get(); void set(System::Windows::Forms::DrawMode value); };" />
+      <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.DrawMode with get, set" Usage="System.Windows.Forms.CheckedListBox.DrawMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -620,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.GetItemChecked(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemChecked (index As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetItemChecked(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetItemChecked : int -&gt; bool" Usage="checkedListBox.GetItemChecked index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -659,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.GetItemCheckState(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemCheckState (index As Integer) As CheckState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::CheckState GetItemCheckState(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetItemCheckState : int -&gt; System.Windows.Forms.CheckState" Usage="checkedListBox.GetItemCheckState index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -708,6 +724,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.ItemCheck" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCheck As ItemCheckEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemCheckEventHandler ^ ItemCheck;" />
+      <MemberSignature Language="F#" Value="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " Usage="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -744,6 +761,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ItemHeight" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ItemHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ItemHeight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int with get, set" Usage="System.Windows.Forms.CheckedListBox.ItemHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -784,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As CheckedListBox.ObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CheckedListBox::ObjectCollection ^ Items { System::Windows::Forms::CheckedListBox::ObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.CheckedListBox.ObjectCollection" Usage="System.Windows.Forms.CheckedListBox.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -835,6 +854,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.MeasureItem" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MeasureItem As MeasureItemEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
+      <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -873,6 +893,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -917,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="checkedListBox.OnBackColorChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -941,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnClick : EventArgs -&gt; unit" Usage="checkedListBox.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -978,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDrawItem (e As DrawItemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDrawItem(System::Windows::Forms::DrawItemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit" Usage="checkedListBox.OnDrawItem e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1013,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="checkedListBox.OnFontChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1048,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="checkedListBox.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1083,6 +1109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCheck (ice As ItemCheckEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCheck(System::Windows::Forms::ItemCheckEventArgs ^ ice);" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCheck : System.Windows.Forms.ItemCheckEventArgs -&gt; unit&#xA;override this.OnItemCheck : System.Windows.Forms.ItemCheckEventArgs -&gt; unit" Usage="checkedListBox.OnItemCheck ice" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1118,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyPress : System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="checkedListBox.OnKeyPress e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1155,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMeasureItem (e As MeasureItemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMeasureItem(System::Windows::Forms::MeasureItemEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMeasureItem : System.Windows.Forms.MeasureItemEventArgs -&gt; unit" Usage="checkedListBox.OnMeasureItem e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1190,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="checkedListBox.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1225,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.CheckedListBox.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1265,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.RefreshItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshItems();" />
+      <MemberSignature Language="F#" Value="override this.RefreshItems : unit -&gt; unit" Usage="checkedListBox.RefreshItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1285,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.SelectionMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectionMode As SelectionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::SelectionMode SelectionMode { System::Windows::Forms::SelectionMode get(); void set(System::Windows::Forms::SelectionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Windows.Forms.SelectionMode with get, set" Usage="System.Windows.Forms.CheckedListBox.SelectionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1326,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.SetItemChecked(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetItemChecked (index As Integer, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItemChecked(int index, bool value);" />
+      <MemberSignature Language="F#" Value="member this.SetItemChecked : int * bool -&gt; unit" Usage="checkedListBox.SetItemChecked (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1375,6 +1409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.SetItemCheckState(System.Int32,System.Windows.Forms.CheckState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetItemCheckState (index As Integer, value As CheckState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItemCheckState(int index, System::Windows::Forms::CheckState value);" />
+      <MemberSignature Language="F#" Value="member this.SetItemCheckState : int * System.Windows.Forms.CheckState -&gt; unit" Usage="checkedListBox.SetItemCheckState (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1427,6 +1462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes" />
       <MemberSignature Language="VB.NET" Value="Public Property ThreeDCheckBoxes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThreeDCheckBoxes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ThreeDCheckBoxes : bool with get, set" Usage="System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1467,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.UseCompatibleTextRendering" />
       <MemberSignature Language="VB.NET" Value="Public Property UseCompatibleTextRendering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCompatibleTextRendering { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseCompatibleTextRendering : bool with get, set" Usage="System.Windows.Forms.CheckedListBox.UseCompatibleTextRendering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1504,6 +1541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ValueMember" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueMember : string with get, set" Usage="System.Windows.Forms.CheckedListBox.ValueMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1544,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.ValueMemberChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ValueMemberChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueMemberChanged;" />
+      <MemberSignature Language="F#" Value="member this.ValueMemberChanged : EventHandler " Usage="member this.ValueMemberChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1571,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.WmReflectCommand(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WmReflectCommand (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WmReflectCommand(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WmReflectCommand :  -&gt; unit" Usage="checkedListBox.WmReflectCommand m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1595,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="checkedListBox.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WSFederationMessage&#xA;Inherits FederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSFederationMessage abstract : System::IdentityModel::Services::FederationMessage" />
+  <TypeSignature Language="F#" Value="type WSFederationMessage = class&#xA;    inherit FederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessage.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationMessage(Uri ^ baseUrl, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.WSFederationMessage : Uri * string -&gt; System.IdentityModel.Services.WSFederationMessage" Usage="new System.IdentityModel.Services.WSFederationMessage (baseUrl, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationMessage.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.IdentityModel.Services.WSFederationMessage.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationMessage.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Context { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : string with get, set" Usage="System.IdentityModel.Services.WSFederationMessage.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessage.CreateFromFormPost(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFormPost (request As HttpRequestBase) As WSFederationMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Services::WSFederationMessage ^ CreateFromFormPost(System::Web::HttpRequestBase ^ request);" />
+      <MemberSignature Language="F#" Value="static member CreateFromFormPost : System.Web.HttpRequestBase -&gt; System.IdentityModel.Services.WSFederationMessage" Usage="System.IdentityModel.Services.WSFederationMessage.CreateFromFormPost request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromNameValueCollection (baseUrl As Uri, collection As NameValueCollection) As WSFederationMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Services::WSFederationMessage ^ CreateFromNameValueCollection(Uri ^ baseUrl, System::Collections::Specialized::NameValueCollection ^ collection);" />
+      <MemberSignature Language="F#" Value="static member CreateFromNameValueCollection : Uri * System.Collections.Specialized.NameValueCollection -&gt; System.IdentityModel.Services.WSFederationMessage" Usage="System.IdentityModel.Services.WSFederationMessage.CreateFromNameValueCollection (baseUrl, collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessage.CreateFromUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromUri (requestUri As Uri) As WSFederationMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Services::WSFederationMessage ^ CreateFromUri(Uri ^ requestUri);" />
+      <MemberSignature Language="F#" Value="static member CreateFromUri : Uri -&gt; System.IdentityModel.Services.WSFederationMessage" Usage="System.IdentityModel.Services.WSFederationMessage.CreateFromUri requestUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationMessage.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.IdentityModel.Services.WSFederationMessage.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessage.TryCreateFromUri(System.Uri,System.IdentityModel.Services.WSFederationMessage@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreateFromUri (requestUri As Uri, ByRef fedMsg As WSFederationMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreateFromUri(Uri ^ requestUri, [Runtime::InteropServices::Out] System::IdentityModel::Services::WSFederationMessage ^ % fedMsg);" />
+      <MemberSignature Language="F#" Value="static member TryCreateFromUri : Uri *  -&gt; bool" Usage="System.IdentityModel.Services.WSFederationMessage.TryCreateFromUri (requestUri, fedMsg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

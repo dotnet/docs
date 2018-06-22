@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICodeDomDesignerReload" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICodeDomDesignerReload" />
+  <TypeSignature Language="F#" Value="type ICodeDomDesignerReload = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldReloadDesigner (newTree As CodeCompileUnit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldReloadDesigner(System::CodeDom::CodeCompileUnit ^ newTree);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldReloadDesigner : System.CodeDom.CodeCompileUnit -&gt; bool" Usage="iCodeDomDesignerReload.ShouldReloadDesigner newTree" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

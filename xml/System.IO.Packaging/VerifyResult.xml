@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.VerifyResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum VerifyResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class VerifyResult" />
+  <TypeSignature Language="F#" Value="type VerifyResult = " />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.CertificateRequired" />
       <MemberSignature Language="VB.NET" Value="CertificateRequired" />
       <MemberSignature Language="C++ CLI" Value="CertificateRequired" />
+      <MemberSignature Language="F#" Value="CertificateRequired = 2" Usage="System.IO.Packaging.VerifyResult.CertificateRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidCertificate" />
       <MemberSignature Language="VB.NET" Value="InvalidCertificate" />
       <MemberSignature Language="C++ CLI" Value="InvalidCertificate" />
+      <MemberSignature Language="F#" Value="InvalidCertificate = 3" Usage="System.IO.Packaging.VerifyResult.InvalidCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidSignature" />
       <MemberSignature Language="VB.NET" Value="InvalidSignature" />
       <MemberSignature Language="C++ CLI" Value="InvalidSignature" />
+      <MemberSignature Language="F#" Value="InvalidSignature = 1" Usage="System.IO.Packaging.VerifyResult.InvalidSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.NotSigned" />
       <MemberSignature Language="VB.NET" Value="NotSigned" />
       <MemberSignature Language="C++ CLI" Value="NotSigned" />
+      <MemberSignature Language="F#" Value="NotSigned = 5" Usage="System.IO.Packaging.VerifyResult.NotSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.ReferenceNotFound" />
       <MemberSignature Language="VB.NET" Value="ReferenceNotFound" />
       <MemberSignature Language="C++ CLI" Value="ReferenceNotFound" />
+      <MemberSignature Language="F#" Value="ReferenceNotFound = 4" Usage="System.IO.Packaging.VerifyResult.ReferenceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.IO.Packaging.VerifyResult.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

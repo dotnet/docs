@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationEvent&#xA;Inherits AutomationIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationEvent : System::Windows::Automation::AutomationIdentifier" />
+  <TypeSignature Language="F#" Value="type AutomationEvent = class&#xA;    inherit AutomationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationEvent.LookupById(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LookupById (id As Integer) As AutomationEvent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationEvent ^ LookupById(int id);" />
+      <MemberSignature Language="F#" Value="static member LookupById : int -&gt; System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationEvent.LookupById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

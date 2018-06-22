@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CommonDialog&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommonDialog abstract : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type CommonDialog = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CommonDialog.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event HelpRequest As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
+      <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function HookProc (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr HookProc(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
+      <MemberSignature Language="F#" Value="abstract member HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint&#xA;override this.HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="commonDialog.HookProc (hWnd, msg, wparam, lparam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.OnHelpRequest(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHelpRequest (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHelpRequest(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnHelpRequest : EventArgs -&gt; unit&#xA;override this.OnHelpRequest : EventArgs -&gt; unit" Usage="commonDialog.OnHelpRequest e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.OwnerWndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OwnerWndProc (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr OwnerWndProc(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
+      <MemberSignature Language="F#" Value="abstract member OwnerWndProc : nativeint * int * nativeint * nativeint -&gt; nativeint&#xA;override this.OwnerWndProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="commonDialog.OwnerWndProc (hWnd, msg, wparam, lparam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="commonDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.RunDialog(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function RunDialog (hwndOwner As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool RunDialog(IntPtr hwndOwner);" />
+      <MemberSignature Language="F#" Value="abstract member RunDialog : nativeint -&gt; bool" Usage="commonDialog.RunDialog hwndOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.ShowDialog" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowDialog () As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog();" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : unit -&gt; System.Windows.Forms.DialogResult" Usage="commonDialog.ShowDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CommonDialog.ShowDialog(System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowDialog (owner As IWin32Window) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DialogResult ShowDialog(System::Windows::Forms::IWin32Window ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : System.Windows.Forms.IWin32Window -&gt; System.Windows.Forms.DialogResult" Usage="commonDialog.ShowDialog owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -366,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CommonDialog.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.CommonDialog.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

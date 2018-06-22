@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridCommandEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridCommandEventHandler(source As Object, e As DataGridCommandEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridCommandEventHandler(System::Object ^ source, DataGridCommandEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridCommandEventHandler = delegate of obj * DataGridCommandEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

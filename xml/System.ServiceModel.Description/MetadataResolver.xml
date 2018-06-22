@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class MetadataResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataResolver abstract sealed" />
+  <TypeSignature Language="F#" Value="type MetadataResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.ServiceModel.EndpointAddress,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contracts As IEnumerable(Of ContractDescription), address As EndpointAddress, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, System::ServiceModel::EndpointAddress ^ address, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * System.ServiceModel.EndpointAddress * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contracts, address, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Type,System.ServiceModel.EndpointAddress,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contract As Type, address As EndpointAddress, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(Type ^ contract, System::ServiceModel::EndpointAddress ^ address, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : Type * System.ServiceModel.EndpointAddress * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contract, address, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.ServiceModel.EndpointAddress,System.ServiceModel.Description.MetadataExchangeClient,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contracts As IEnumerable(Of ContractDescription), address As EndpointAddress, client As MetadataExchangeClient, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, System::ServiceModel::EndpointAddress ^ address, System::ServiceModel::Description::MetadataExchangeClient ^ client, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * System.ServiceModel.EndpointAddress * System.ServiceModel.Description.MetadataExchangeClient * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contracts, address, client, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contracts As IEnumerable(Of ContractDescription), address As Uri, mode As MetadataExchangeClientMode, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * Uri * System.ServiceModel.Description.MetadataExchangeClientMode * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contracts, address, mode, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Type,System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contract As Type, address As Uri, mode As MetadataExchangeClientMode, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(Type ^ contract, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : Type * Uri * System.ServiceModel.Description.MetadataExchangeClientMode * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contract, address, mode, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.BeginResolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode,System.ServiceModel.Description.MetadataExchangeClient,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (contracts As IEnumerable(Of ContractDescription), address As Uri, mode As MetadataExchangeClientMode, client As MetadataExchangeClient, callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode, System::ServiceModel::Description::MetadataExchangeClient ^ client, AsyncCallback ^ callback, System::Object ^ asyncState);" />
+      <MemberSignature Language="F#" Value="static member BeginResolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * Uri * System.ServiceModel.Description.MetadataExchangeClientMode * System.ServiceModel.Description.MetadataExchangeClient * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.ServiceModel.Description.MetadataResolver.BeginResolve (contracts, address, mode, client, callback, asyncState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.EndResolve(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function EndResolve (result As IAsyncResult) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ EndResolve(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="static member EndResolve : IAsyncResult -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.EndResolve result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -386,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contracts As IEnumerable(Of ContractDescription), address As EndpointAddress) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="static member Resolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contracts, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Type,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contract As Type, address As EndpointAddress) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(Type ^ contract, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="static member Resolve : Type * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contract, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -479,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.ServiceModel.EndpointAddress,System.ServiceModel.Description.MetadataExchangeClient)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contracts As IEnumerable(Of ContractDescription), address As EndpointAddress, client As MetadataExchangeClient) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, System::ServiceModel::EndpointAddress ^ address, System::ServiceModel::Description::MetadataExchangeClient ^ client);" />
+      <MemberSignature Language="F#" Value="static member Resolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * System.ServiceModel.EndpointAddress * System.ServiceModel.Description.MetadataExchangeClient -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contracts, address, client)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -522,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contracts As IEnumerable(Of ContractDescription), address As Uri, mode As MetadataExchangeClientMode) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode);" />
+      <MemberSignature Language="F#" Value="static member Resolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * Uri * System.ServiceModel.Description.MetadataExchangeClientMode -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contracts, address, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -565,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Type,System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contract As Type, address As Uri, mode As MetadataExchangeClientMode) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(Type ^ contract, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode);" />
+      <MemberSignature Language="F#" Value="static member Resolve : Type * Uri * System.ServiceModel.Description.MetadataExchangeClientMode -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contract, address, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -615,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataResolver.Resolve(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ContractDescription},System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode,System.ServiceModel.Description.MetadataExchangeClient)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (contracts As IEnumerable(Of ContractDescription), address As Uri, mode As MetadataExchangeClientMode, client As MetadataExchangeClient) As ServiceEndpointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ServiceEndpointCollection ^ Resolve(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ contracts, Uri ^ address, System::ServiceModel::Description::MetadataExchangeClientMode mode, System::ServiceModel::Description::MetadataExchangeClient ^ client);" />
+      <MemberSignature Language="F#" Value="static member Resolve : seq&lt;System.ServiceModel.Description.ContractDescription&gt; * Uri * System.ServiceModel.Description.MetadataExchangeClientMode * System.ServiceModel.Description.MetadataExchangeClient -&gt; System.ServiceModel.Description.ServiceEndpointCollection" Usage="System.ServiceModel.Description.MetadataResolver.Resolve (contracts, address, mode, client)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

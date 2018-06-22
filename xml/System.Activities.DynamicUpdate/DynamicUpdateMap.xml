@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.DynamicUpdateMap" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicUpdateMap" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicUpdateMap" />
+  <TypeSignature Language="F#" Value="type DynamicUpdateMap = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateImplementationMapItems(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateImplementationMapItems (activityDefinitionToBeUpdated As Activity) As IDictionary(Of Object, DynamicUpdateMapItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::Object ^, System::Activities::DynamicUpdate::DynamicUpdateMapItem ^&gt; ^ CalculateImplementationMapItems(System::Activities::Activity ^ activityDefinitionToBeUpdated);" />
+      <MemberSignature Language="F#" Value="static member CalculateImplementationMapItems : System.Activities.Activity -&gt; System.Collections.Generic.IDictionary&lt;obj, System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt;" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateImplementationMapItems activityDefinitionToBeUpdated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateImplementationMapItems(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateImplementationMapItems (activityDefinitionToBeUpdated As Activity, environment As LocationReferenceEnvironment) As IDictionary(Of Object, DynamicUpdateMapItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::Object ^, System::Activities::DynamicUpdate::DynamicUpdateMapItem ^&gt; ^ CalculateImplementationMapItems(System::Activities::Activity ^ activityDefinitionToBeUpdated, System::Activities::LocationReferenceEnvironment ^ environment);" />
+      <MemberSignature Language="F#" Value="static member CalculateImplementationMapItems : System.Activities.Activity * System.Activities.LocationReferenceEnvironment -&gt; System.Collections.Generic.IDictionary&lt;obj, System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt;" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateImplementationMapItems (activityDefinitionToBeUpdated, environment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateMapItems(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateMapItems (workflowDefinitionToBeUpdated As Activity) As IDictionary(Of Object, DynamicUpdateMapItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::Object ^, System::Activities::DynamicUpdate::DynamicUpdateMapItem ^&gt; ^ CalculateMapItems(System::Activities::Activity ^ workflowDefinitionToBeUpdated);" />
+      <MemberSignature Language="F#" Value="static member CalculateMapItems : System.Activities.Activity -&gt; System.Collections.Generic.IDictionary&lt;obj, System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt;" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateMapItems workflowDefinitionToBeUpdated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateMapItems(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CalculateMapItems (workflowDefinitionToBeUpdated As Activity, environment As LocationReferenceEnvironment) As IDictionary(Of Object, DynamicUpdateMapItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::Object ^, System::Activities::DynamicUpdate::DynamicUpdateMapItem ^&gt; ^ CalculateMapItems(System::Activities::Activity ^ workflowDefinitionToBeUpdated, System::Activities::LocationReferenceEnvironment ^ environment);" />
+      <MemberSignature Language="F#" Value="static member CalculateMapItems : System.Activities.Activity * System.Activities.LocationReferenceEnvironment -&gt; System.Collections.Generic.IDictionary&lt;obj, System.Activities.DynamicUpdate.DynamicUpdateMapItem&gt;" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.CalculateMapItems (workflowDefinitionToBeUpdated, environment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.Merge(System.Activities.DynamicUpdate.DynamicUpdateMap[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Merge (ParamArray maps As DynamicUpdateMap()) As DynamicUpdateMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ Merge(... cli::array &lt;System::Activities::DynamicUpdate::DynamicUpdateMap ^&gt; ^ maps);" />
+      <MemberSignature Language="F#" Value="static member Merge : System.Activities.DynamicUpdate.DynamicUpdateMap[] -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.Merge maps" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.Merge(System.Collections.Generic.IEnumerable{System.Activities.DynamicUpdate.DynamicUpdateMap})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Merge (maps As IEnumerable(Of DynamicUpdateMap)) As DynamicUpdateMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ Merge(System::Collections::Generic::IEnumerable&lt;System::Activities::DynamicUpdate::DynamicUpdateMap ^&gt; ^ maps);" />
+      <MemberSignature Language="F#" Value="static member Merge : seq&lt;System.Activities.DynamicUpdate.DynamicUpdateMap&gt; -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.Merge maps" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.DynamicUpdateMap.NoChanges" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NoChanges As DynamicUpdateMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::DynamicUpdate::DynamicUpdateMap ^ NoChanges { System::Activities::DynamicUpdate::DynamicUpdateMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoChanges : System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateMap.NoChanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMap.Query(System.Activities.Activity,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function Query (updatedWorkflowDefinition As Activity, originalWorkflowDefinition As Activity) As DynamicUpdateMapQuery" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::DynamicUpdate::DynamicUpdateMapQuery ^ Query(System::Activities::Activity ^ updatedWorkflowDefinition, System::Activities::Activity ^ originalWorkflowDefinition);" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Activities.Activity * System.Activities.Activity -&gt; System.Activities.DynamicUpdate.DynamicUpdateMapQuery" Usage="dynamicUpdateMap.Query (updatedWorkflowDefinition, originalWorkflowDefinition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

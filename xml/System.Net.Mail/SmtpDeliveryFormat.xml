@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpDeliveryFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum SmtpDeliveryFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class SmtpDeliveryFormat" />
+  <TypeSignature Language="F#" Value="type SmtpDeliveryFormat = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.International" />
       <MemberSignature Language="VB.NET" Value="International" />
       <MemberSignature Language="C++ CLI" Value="International" />
+      <MemberSignature Language="F#" Value="International = 1" Usage="System.Net.Mail.SmtpDeliveryFormat.International" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.SevenBit" />
       <MemberSignature Language="VB.NET" Value="SevenBit" />
       <MemberSignature Language="C++ CLI" Value="SevenBit" />
+      <MemberSignature Language="F#" Value="SevenBit = 0" Usage="System.Net.Mail.SmtpDeliveryFormat.SevenBit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

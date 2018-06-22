@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalStrokeHitTester" />
   <TypeSignature Language="VB.NET" Value="Public Class IncrementalStrokeHitTester&#xA;Inherits IncrementalHitTester" />
   <TypeSignature Language="C++ CLI" Value="public ref class IncrementalStrokeHitTester : System::Windows::Ink::IncrementalHitTester" />
+  <TypeSignature Language="F#" Value="type IncrementalStrokeHitTester = class&#xA;    inherit IncrementalHitTester" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalStrokeHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddPointsCore (points As IEnumerable(Of Point))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddPointsCore(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="override this.AddPointsCore : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="incrementalStrokeHitTester.AddPointsCore points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalStrokeHitTester.OnStrokeHit(System.Windows.Ink.StrokeHitEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnStrokeHit (eventArgs As StrokeHitEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnStrokeHit(System::Windows::Ink::StrokeHitEventArgs ^ eventArgs);" />
+      <MemberSignature Language="F#" Value="member this.OnStrokeHit : System.Windows.Ink.StrokeHitEventArgs -&gt; unit" Usage="incrementalStrokeHitTester.OnStrokeHit eventArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" />
       <MemberSignature Language="VB.NET" Value="Public Event StrokeHit As StrokeHitEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::StrokeHitEventHandler ^ StrokeHit;" />
+      <MemberSignature Language="F#" Value="member this.StrokeHit : System.Windows.Ink.StrokeHitEventHandler " Usage="member this.StrokeHit : System.Windows.Ink.StrokeHitEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

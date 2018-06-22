@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetaHeader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetaHeader" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetaHeader sealed" />
+  <TypeSignature Language="F#" Value="type MetaHeader = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.HeaderSize" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderSize As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short HeaderSize { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderSize : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.HeaderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.MaxRecord" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRecord As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRecord { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxRecord : int with get, set" Usage="System.Drawing.Imaging.MetaHeader.MaxRecord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.NoObjects" />
       <MemberSignature Language="VB.NET" Value="Public Property NoObjects As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short NoObjects { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.NoObjects : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.NoObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.NoParameters" />
       <MemberSignature Language="VB.NET" Value="Public Property NoParameters As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short NoParameters { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.NoParameters : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.NoParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Drawing.Imaging.MetaHeader.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Type { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.MetaHeader.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Version { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : int16 with get, set" Usage="System.Drawing.Imaging.MetaHeader.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

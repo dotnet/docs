@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.TypeLayout" />
   <TypeSignature Language="VB.NET" Value="Public Structure TypeLayout" />
   <TypeSignature Language="C++ CLI" Value="public value class TypeLayout" />
+  <TypeSignature Language="F#" Value="type TypeLayout = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.TypeLayout.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (size As Integer, packingSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeLayout(int size, int packingSize);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.TypeLayout : int * int -&gt; System.Reflection.Metadata.TypeLayout" Usage="new System.Reflection.Metadata.TypeLayout (size, packingSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeLayout.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Reflection.Metadata.TypeLayout.IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeLayout.PackingSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PackingSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PackingSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PackingSize : int" Usage="System.Reflection.Metadata.TypeLayout.PackingSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.TypeLayout.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Reflection.Metadata.TypeLayout.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

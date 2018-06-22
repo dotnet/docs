@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemDisplayStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripItemDisplayStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripItemDisplayStyle" />
+  <TypeSignature Language="F#" Value="type ToolStripItemDisplayStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemDisplayStyle.Image" />
       <MemberSignature Language="VB.NET" Value="Image" />
       <MemberSignature Language="C++ CLI" Value="Image" />
+      <MemberSignature Language="F#" Value="Image = 2" Usage="System.Windows.Forms.ToolStripItemDisplayStyle.Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText" />
       <MemberSignature Language="VB.NET" Value="ImageAndText" />
       <MemberSignature Language="C++ CLI" Value="ImageAndText" />
+      <MemberSignature Language="F#" Value="ImageAndText = 3" Usage="System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemDisplayStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ToolStripItemDisplayStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemDisplayStyle.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Forms.ToolStripItemDisplayStyle.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509SubjectKeyIdentifierHashAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public enum class X509SubjectKeyIdentifierHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type X509SubjectKeyIdentifierHashAlgorithm = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1" />
       <MemberSignature Language="VB.NET" Value="CapiSha1" />
       <MemberSignature Language="C++ CLI" Value="CapiSha1" />
+      <MemberSignature Language="F#" Value="CapiSha1 = 2" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1" />
       <MemberSignature Language="VB.NET" Value="Sha1" />
       <MemberSignature Language="C++ CLI" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 0" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1" />
       <MemberSignature Language="VB.NET" Value="ShortSha1" />
       <MemberSignature Language="C++ CLI" Value="ShortSha1" />
+      <MemberSignature Language="F#" Value="ShortSha1 = 1" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

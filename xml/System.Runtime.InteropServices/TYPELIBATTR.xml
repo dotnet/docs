@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPELIBATTR" />
   <TypeSignature Language="VB.NET" Value="Public Structure TYPELIBATTR" />
   <TypeSignature Language="C++ CLI" Value="public value class TYPELIBATTR" />
+  <TypeSignature Language="F#" Value="type TYPELIBATTR = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.guid" />
       <MemberSignature Language="VB.NET" Value="Public guid As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: Guid guid;" />
+      <MemberSignature Language="F#" Value="val mutable guid : Guid" Usage="System.Runtime.InteropServices.TYPELIBATTR.guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.lcid" />
       <MemberSignature Language="VB.NET" Value="Public lcid As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int lcid;" />
+      <MemberSignature Language="F#" Value="val mutable lcid : int" Usage="System.Runtime.InteropServices.TYPELIBATTR.lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.syskind" />
       <MemberSignature Language="VB.NET" Value="Public syskind As SYSKIND " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::SYSKIND syskind;" />
+      <MemberSignature Language="F#" Value="val mutable syskind : System.Runtime.InteropServices.SYSKIND" Usage="System.Runtime.InteropServices.TYPELIBATTR.syskind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wLibFlags" />
       <MemberSignature Language="VB.NET" Value="Public wLibFlags As LIBFLAGS " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::LIBFLAGS wLibFlags;" />
+      <MemberSignature Language="F#" Value="val mutable wLibFlags : System.Runtime.InteropServices.LIBFLAGS" Usage="System.Runtime.InteropServices.TYPELIBATTR.wLibFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wMajorVerNum" />
       <MemberSignature Language="VB.NET" Value="Public wMajorVerNum As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wMajorVerNum;" />
+      <MemberSignature Language="F#" Value="val mutable wMajorVerNum : int16" Usage="System.Runtime.InteropServices.TYPELIBATTR.wMajorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wMinorVerNum" />
       <MemberSignature Language="VB.NET" Value="Public wMinorVerNum As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short wMinorVerNum;" />
+      <MemberSignature Language="F#" Value="val mutable wMinorVerNum : int16" Usage="System.Runtime.InteropServices.TYPELIBATTR.wMinorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class RemotingSurrogateSelector&#xA;Implements ISurrogateSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class RemotingSurrogateSelector : System::Runtime::Serialization::ISurrogateSelector" />
+  <TypeSignature Language="F#" Value="type RemotingSurrogateSelector = class&#xA;    interface ISurrogateSelector" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ChainSelector (selector As ISurrogateSelector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ChainSelector(System::Runtime::Serialization::ISurrogateSelector ^ selector);" />
+      <MemberSignature Language="F#" Value="abstract member ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit&#xA;override this.ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit" Usage="remotingSurrogateSelector.ChainSelector selector" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As MessageSurrogateFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Messaging::MessageSurrogateFilter ^ Filter { System::Runtime::Remoting::Messaging::MessageSurrogateFilter ^ get(); void set(System::Runtime::Remoting::Messaging::MessageSurrogateFilter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Runtime.Remoting.Messaging.MessageSurrogateFilter with get, set" Usage="System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetNextSelector" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextSelector () As ISurrogateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::ISurrogateSelector ^ GetNextSelector();" />
+      <MemberSignature Language="F#" Value="abstract member GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector&#xA;override this.GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector" Usage="remotingSurrogateSelector.GetNextSelector " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetNextSelector</InterfaceMember>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetRootObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRootObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetRootObject();" />
+      <MemberSignature Language="F#" Value="member this.GetRootObject : unit -&gt; obj" Usage="remotingSurrogateSelector.GetRootObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; ssout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::ISerializationSurrogate ^ GetSurrogate(Type ^ type, System::Runtime::Serialization::StreamingContext context, [Runtime::InteropServices::Out] System::Runtime::Serialization::ISurrogateSelector ^ % ssout);" />
+      <MemberSignature Language="F#" Value="abstract member GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate&#xA;override this.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="remotingSurrogateSelector.GetSurrogate (type, context, ssout)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)</InterfaceMember>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.SetRootObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRootObject (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRootObject(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="member this.SetRootObject : obj -&gt; unit" Usage="remotingSurrogateSelector.SetRootObject obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.UseSoapFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UseSoapFormat ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UseSoapFormat();" />
+      <MemberSignature Language="F#" Value="abstract member UseSoapFormat : unit -&gt; unit&#xA;override this.UseSoapFormat : unit -&gt; unit" Usage="remotingSurrogateSelector.UseSoapFormat " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

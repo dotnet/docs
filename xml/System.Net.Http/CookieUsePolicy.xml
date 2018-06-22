@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.CookieUsePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Enum CookieUsePolicy" />
   <TypeSignature Language="C++ CLI" Value="public enum class CookieUsePolicy" />
+  <TypeSignature Language="F#" Value="type CookieUsePolicy = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.IgnoreCookies" />
       <MemberSignature Language="VB.NET" Value="IgnoreCookies" />
       <MemberSignature Language="C++ CLI" Value="IgnoreCookies" />
+      <MemberSignature Language="F#" Value="IgnoreCookies = 0" Usage="System.Net.Http.CookieUsePolicy.IgnoreCookies" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly" />
       <MemberSignature Language="VB.NET" Value="UseInternalCookieStoreOnly" />
       <MemberSignature Language="C++ CLI" Value="UseInternalCookieStoreOnly" />
+      <MemberSignature Language="F#" Value="UseInternalCookieStoreOnly = 1" Usage="System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer" />
       <MemberSignature Language="VB.NET" Value="UseSpecifiedCookieContainer" />
       <MemberSignature Language="C++ CLI" Value="UseSpecifiedCookieContainer" />
+      <MemberSignature Language="F#" Value="UseSpecifiedCookieContainer = 2" Usage="System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>

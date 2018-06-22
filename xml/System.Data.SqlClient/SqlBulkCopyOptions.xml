@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlBulkCopyOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlBulkCopyOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlBulkCopyOptions" />
+  <TypeSignature Language="F#" Value="type SqlBulkCopyOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.AllowEncryptedValueModifications" />
       <MemberSignature Language="VB.NET" Value="AllowEncryptedValueModifications" />
       <MemberSignature Language="C++ CLI" Value="AllowEncryptedValueModifications" />
+      <MemberSignature Language="F#" Value="AllowEncryptedValueModifications = 64" Usage="System.Data.SqlClient.SqlBulkCopyOptions.AllowEncryptedValueModifications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.CheckConstraints" />
       <MemberSignature Language="VB.NET" Value="CheckConstraints" />
       <MemberSignature Language="C++ CLI" Value="CheckConstraints" />
+      <MemberSignature Language="F#" Value="CheckConstraints = 2" Usage="System.Data.SqlClient.SqlBulkCopyOptions.CheckConstraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Data.SqlClient.SqlBulkCopyOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.FireTriggers" />
       <MemberSignature Language="VB.NET" Value="FireTriggers" />
       <MemberSignature Language="C++ CLI" Value="FireTriggers" />
+      <MemberSignature Language="F#" Value="FireTriggers = 16" Usage="System.Data.SqlClient.SqlBulkCopyOptions.FireTriggers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.KeepIdentity" />
       <MemberSignature Language="VB.NET" Value="KeepIdentity" />
       <MemberSignature Language="C++ CLI" Value="KeepIdentity" />
+      <MemberSignature Language="F#" Value="KeepIdentity = 1" Usage="System.Data.SqlClient.SqlBulkCopyOptions.KeepIdentity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.KeepNulls" />
       <MemberSignature Language="VB.NET" Value="KeepNulls" />
       <MemberSignature Language="C++ CLI" Value="KeepNulls" />
+      <MemberSignature Language="F#" Value="KeepNulls = 8" Usage="System.Data.SqlClient.SqlBulkCopyOptions.KeepNulls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.TableLock" />
       <MemberSignature Language="VB.NET" Value="TableLock" />
       <MemberSignature Language="C++ CLI" Value="TableLock" />
+      <MemberSignature Language="F#" Value="TableLock = 4" Usage="System.Data.SqlClient.SqlBulkCopyOptions.TableLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction" />
       <MemberSignature Language="VB.NET" Value="UseInternalTransaction" />
       <MemberSignature Language="C++ CLI" Value="UseInternalTransaction" />
+      <MemberSignature Language="F#" Value="UseInternalTransaction = 32" Usage="System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

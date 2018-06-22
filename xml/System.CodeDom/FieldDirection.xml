@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.FieldDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum FieldDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class FieldDirection" />
+  <TypeSignature Language="F#" Value="type FieldDirection = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.In" />
       <MemberSignature Language="VB.NET" Value="In" />
       <MemberSignature Language="C++ CLI" Value="In" />
+      <MemberSignature Language="F#" Value="In = 0" Usage="System.CodeDom.FieldDirection.In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.Out" />
       <MemberSignature Language="VB.NET" Value="Out" />
       <MemberSignature Language="C++ CLI" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 1" Usage="System.CodeDom.FieldDirection.Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.Ref" />
       <MemberSignature Language="VB.NET" Value="Ref" />
       <MemberSignature Language="C++ CLI" Value="Ref" />
+      <MemberSignature Language="F#" Value="Ref = 2" Usage="System.CodeDom.FieldDirection.Ref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OpCodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum OpCodeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class OpCodeType" />
+  <TypeSignature Language="F#" Value="type OpCodeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Annotation" />
       <MemberSignature Language="VB.NET" Value="Annotation" />
       <MemberSignature Language="C++ CLI" Value="Annotation" />
+      <MemberSignature Language="F#" Value="Annotation = 0" Usage="System.Reflection.Emit.OpCodeType.Annotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Macro" />
       <MemberSignature Language="VB.NET" Value="Macro" />
       <MemberSignature Language="C++ CLI" Value="Macro" />
+      <MemberSignature Language="F#" Value="Macro = 1" Usage="System.Reflection.Emit.OpCodeType.Macro" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Nternal" />
       <MemberSignature Language="VB.NET" Value="Nternal" />
       <MemberSignature Language="C++ CLI" Value="Nternal" />
+      <MemberSignature Language="F#" Value="Nternal = 2" Usage="System.Reflection.Emit.OpCodeType.Nternal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Objmodel" />
       <MemberSignature Language="VB.NET" Value="Objmodel" />
       <MemberSignature Language="C++ CLI" Value="Objmodel" />
+      <MemberSignature Language="F#" Value="Objmodel = 3" Usage="System.Reflection.Emit.OpCodeType.Objmodel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Prefix" />
       <MemberSignature Language="VB.NET" Value="Prefix" />
       <MemberSignature Language="C++ CLI" Value="Prefix" />
+      <MemberSignature Language="F#" Value="Prefix = 4" Usage="System.Reflection.Emit.OpCodeType.Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Primitive" />
       <MemberSignature Language="VB.NET" Value="Primitive" />
       <MemberSignature Language="C++ CLI" Value="Primitive" />
+      <MemberSignature Language="F#" Value="Primitive = 5" Usage="System.Reflection.Emit.OpCodeType.Primitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

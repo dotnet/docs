@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaObject abstract" />
+  <TypeSignature Language="F#" Value="type XmlSchemaObject = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObject.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int with get, set" Usage="System.Xml.Schema.XmlSchemaObject.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObject.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePosition As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int with get, set" Usage="System.Xml.Schema.XmlSchemaObject.LinePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObject.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespaces As XmlSerializerNamespaces" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSerializerNamespaces ^ Namespaces { System::Xml::Serialization::XmlSerializerNamespaces ^ get(); void set(System::Xml::Serialization::XmlSerializerNamespaces ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.Xml.Serialization.XmlSerializerNamespaces with get, set" Usage="System.Xml.Schema.XmlSchemaObject.Namespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -235,6 +239,7 @@ s.Namespaces = namespaces;
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObject.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Property Parent As XmlSchemaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObject ^ Parent { System::Xml::Schema::XmlSchemaObject ^ get(); void set(System::Xml::Schema::XmlSchemaObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Xml.Schema.XmlSchemaObject with get, set" Usage="System.Xml.Schema.XmlSchemaObject.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -270,6 +275,7 @@ s.Namespaces = namespaces;
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaObject.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceUri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceUri { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : string with get, set" Usage="System.Xml.Schema.XmlSchemaObject.SourceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

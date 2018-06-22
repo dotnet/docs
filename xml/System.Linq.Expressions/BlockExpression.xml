@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.BlockExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class BlockExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class BlockExpression : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type BlockExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.BlockExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="blockExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BlockExpression.Expressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Expressions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.BlockExpression.Expressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BlockExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.BlockExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BlockExpression.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Result { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.BlockExpression.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BlockExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.BlockExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.BlockExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (variables As IEnumerable(Of ParameterExpression), expressions As IEnumerable(Of Expression)) As BlockExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::BlockExpression ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ variables, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ expressions);" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.ParameterExpression&gt; * seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.BlockExpression" Usage="blockExpression.Update (variables, expressions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -271,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.BlockExpression.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As ReadOnlyCollection(Of ParameterExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ Variables { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt;" Usage="System.Linq.Expressions.BlockExpression.Variables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

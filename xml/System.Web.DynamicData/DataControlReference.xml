@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DataControlReference" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataControlReference" />
+  <TypeSignature Language="F#" Value="type DataControlReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.ControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.DynamicData.DataControlReference.ControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -144,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As DynamicDataManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DynamicDataManager ^ Owner { System::Web::DynamicData::DynamicDataManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Web.DynamicData.DynamicDataManager" Usage="System.Web.DynamicData.DataControlReference.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataControlReference.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

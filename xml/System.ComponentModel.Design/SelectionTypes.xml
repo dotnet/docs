@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.SelectionTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectionTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class SelectionTypes" />
+  <TypeSignature Language="F#" Value="type SelectionTypes = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 64" Usage="System.ComponentModel.Design.SelectionTypes.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 1" Usage="System.ComponentModel.Design.SelectionTypes.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Click" />
       <MemberSignature Language="VB.NET" Value="Click" />
       <MemberSignature Language="C++ CLI" Value="Click" />
+      <MemberSignature Language="F#" Value="Click = 16" Usage="System.ComponentModel.Design.SelectionTypes.Click" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.MouseDown" />
       <MemberSignature Language="VB.NET" Value="MouseDown" />
       <MemberSignature Language="C++ CLI" Value="MouseDown" />
+      <MemberSignature Language="F#" Value="MouseDown = 4" Usage="System.ComponentModel.Design.SelectionTypes.MouseDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.MouseUp" />
       <MemberSignature Language="VB.NET" Value="MouseUp" />
       <MemberSignature Language="C++ CLI" Value="MouseUp" />
+      <MemberSignature Language="F#" Value="MouseUp = 8" Usage="System.ComponentModel.Design.SelectionTypes.MouseUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.ComponentModel.Design.SelectionTypes.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Primary" />
       <MemberSignature Language="VB.NET" Value="Primary" />
       <MemberSignature Language="C++ CLI" Value="Primary" />
+      <MemberSignature Language="F#" Value="Primary = 16" Usage="System.ComponentModel.Design.SelectionTypes.Primary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
       <MemberSignature Language="C++ CLI" Value="Remove" />
+      <MemberSignature Language="F#" Value="Remove = 128" Usage="System.ComponentModel.Design.SelectionTypes.Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 2" Usage="System.ComponentModel.Design.SelectionTypes.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Toggle" />
       <MemberSignature Language="VB.NET" Value="Toggle" />
       <MemberSignature Language="C++ CLI" Value="Toggle" />
+      <MemberSignature Language="F#" Value="Toggle = 32" Usage="System.ComponentModel.Design.SelectionTypes.Toggle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.SelectionTypes.Valid" />
       <MemberSignature Language="VB.NET" Value="Valid" />
       <MemberSignature Language="C++ CLI" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 31" Usage="System.ComponentModel.Design.SelectionTypes.Valid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

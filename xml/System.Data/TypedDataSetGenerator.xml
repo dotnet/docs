@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.TypedDataSetGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class TypedDataSetGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypedDataSetGenerator" />
+  <TypeSignature Language="F#" Value="type TypedDataSetGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Generate(class System.Data.DataSet dataSet, class System.CodeDom.CodeNamespace codeNamespace, class System.CodeDom.Compiler.ICodeGenerator codeGen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.TypedDataSetGenerator.Generate(System.Data.DataSet,System.CodeDom.CodeNamespace,System.CodeDom.Compiler.ICodeGenerator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Generate(System::Data::DataSet ^ dataSet, System::CodeDom::CodeNamespace ^ codeNamespace, System::CodeDom::Compiler::ICodeGenerator ^ codeGen);" />
+      <MemberSignature Language="F#" Value="static member Generate : System.Data.DataSet * System.CodeDom.CodeNamespace * System.CodeDom.Compiler.ICodeGenerator -&gt; unit" Usage="System.Data.TypedDataSetGenerator.Generate (dataSet, codeNamespace, codeGen)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.TypedDataSetGenerator.GenerateIdName(System.String,System.CodeDom.Compiler.ICodeGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateIdName (name As String, codeGen As ICodeGenerator) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateIdName(System::String ^ name, System::CodeDom::Compiler::ICodeGenerator ^ codeGen);" />
+      <MemberSignature Language="F#" Value="static member GenerateIdName : string * System.CodeDom.Compiler.ICodeGenerator -&gt; string" Usage="System.Data.TypedDataSetGenerator.GenerateIdName (name, codeGen)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

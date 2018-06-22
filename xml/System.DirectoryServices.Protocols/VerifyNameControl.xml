@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.VerifyNameControl" />
   <TypeSignature Language="VB.NET" Value="Public Class VerifyNameControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class VerifyNameControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type VerifyNameControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serverName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VerifyNameControl(System::String ^ serverName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.VerifyNameControl : string -&gt; System.DirectoryServices.Protocols.VerifyNameControl" Usage="new System.DirectoryServices.Protocols.VerifyNameControl serverName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serverName As String, flag As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VerifyNameControl(System::String ^ serverName, int flag);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.VerifyNameControl : string * int -&gt; System.DirectoryServices.Protocols.VerifyNameControl" Usage="new System.DirectoryServices.Protocols.VerifyNameControl (serverName, flag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VerifyNameControl.Flag" />
       <MemberSignature Language="VB.NET" Value="Public Property Flag As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Flag { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Flag : int with get, set" Usage="System.DirectoryServices.Protocols.VerifyNameControl.Flag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.VerifyNameControl.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="verifyNameControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VerifyNameControl.ServerName" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerName : string with get, set" Usage="System.DirectoryServices.Protocols.VerifyNameControl.ServerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

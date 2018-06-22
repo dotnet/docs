@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.RangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum RangeType" />
   <TypeSignature Language="C++ CLI" Value="public enum class RangeType" />
+  <TypeSignature Language="F#" Value="type RangeType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Exclusive" />
       <MemberSignature Language="VB.NET" Value="Exclusive" />
       <MemberSignature Language="C++ CLI" Value="Exclusive" />
+      <MemberSignature Language="F#" Value="Exclusive = 1" Usage="System.Web.UI.WebControls.Expressions.RangeType.Exclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Inclusive" />
       <MemberSignature Language="VB.NET" Value="Inclusive" />
       <MemberSignature Language="C++ CLI" Value="Inclusive" />
+      <MemberSignature Language="F#" Value="Inclusive = 2" Usage="System.Web.UI.WebControls.Expressions.RangeType.Inclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.Expressions.RangeType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

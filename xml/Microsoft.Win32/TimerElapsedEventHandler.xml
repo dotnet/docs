@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.TimerElapsedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub TimerElapsedEventHandler(sender As Object, e As TimerElapsedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void TimerElapsedEventHandler(System::Object ^ sender, TimerElapsedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type TimerElapsedEventHandler = delegate of obj * TimerElapsedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

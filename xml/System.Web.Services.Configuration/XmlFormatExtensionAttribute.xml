@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlFormatExtensionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoints As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, cli::array &lt;Type ^&gt; ^ extensionPoints);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type[] -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type, extensionPoint3 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2, Type ^ extensionPoint3);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2, extensionPoint3)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type, extensionPoint3 As Type, extensionPoint4 As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2, Type ^ extensionPoint3, Type ^ extensionPoint4);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2, extensionPoint3, extensionPoint4)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.ElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.ExtensionPoints" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtensionPoints As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ExtensionPoints { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensionPoints : Type[] with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.ExtensionPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

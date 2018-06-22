@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyName&#xA;Implements _AssemblyName, ICloneable, IDeserializationCallback, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyName sealed : ICloneable, System::Runtime::InteropServices::_AssemblyName, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type AssemblyName = class&#xA;    interface ICloneable&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface _AssemblyName" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -214,6 +215,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyName(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyName : string -&gt; System.Reflection.AssemblyName" Usage="new System.Reflection.AssemblyName assemblyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -279,6 +281,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="assemblyName.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -320,6 +323,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CodeBase" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeBase As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeBase { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CodeBase : string with get, set" Usage="System.Reflection.AssemblyName.CodeBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -371,6 +375,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentType As AssemblyContentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyContentType ContentType { System::Reflection::AssemblyContentType get(); void set(System::Reflection::AssemblyContentType value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : System.Reflection.AssemblyContentType with get, set" Usage="System.Reflection.AssemblyName.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -412,6 +417,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CultureInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property CultureInfo As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo with get, set" Usage="System.Reflection.AssemblyName.CultureInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -453,6 +459,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.CultureName" />
       <MemberSignature Language="VB.NET" Value="Public Property CultureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CultureName : string with get, set" Usage="System.Reflection.AssemblyName.CultureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -489,6 +496,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.EscapedCodeBase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EscapedCodeBase As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EscapedCodeBase { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EscapedCodeBase : string" Usage="System.Reflection.AssemblyName.EscapedCodeBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,6 +527,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As AssemblyNameFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyNameFlags Flags { System::Reflection::AssemblyNameFlags get(); void set(System::Reflection::AssemblyNameFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Reflection.AssemblyNameFlags with get, set" Usage="System.Reflection.AssemblyName.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -566,6 +575,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Reflection.AssemblyName.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -626,6 +636,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetAssemblyName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAssemblyName (assemblyFile As String) As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::AssemblyName ^ GetAssemblyName(System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="static member GetAssemblyName : string -&gt; System.Reflection.AssemblyName" Usage="System.Reflection.AssemblyName.GetAssemblyName assemblyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -687,6 +698,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="assemblyName.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -728,6 +740,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetPublicKey" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPublicKey () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetPublicKey();" />
+      <MemberSignature Language="F#" Value="member this.GetPublicKey : unit -&gt; byte[]" Usage="assemblyName.GetPublicKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -777,6 +790,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.GetPublicKeyToken" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPublicKeyToken () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetPublicKeyToken();" />
+      <MemberSignature Language="F#" Value="member this.GetPublicKeyToken : unit -&gt; byte[]" Usage="assemblyName.GetPublicKeyToken " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -825,6 +839,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property HashAlgorithm As AssemblyHashAlgorithm" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyHashAlgorithm HashAlgorithm { System::Configuration::Assemblies::AssemblyHashAlgorithm get(); void set(System::Configuration::Assemblies::AssemblyHashAlgorithm value); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : System.Configuration.Assemblies.AssemblyHashAlgorithm with get, set" Usage="System.Reflection.AssemblyName.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -873,6 +888,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.KeyPair" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyPair As StrongNameKeyPair" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::StrongNameKeyPair ^ KeyPair { System::Reflection::StrongNameKeyPair ^ get(); void set(System::Reflection::StrongNameKeyPair ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyPair : System.Reflection.StrongNameKeyPair with get, set" Usage="System.Reflection.AssemblyName.KeyPair" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -919,6 +935,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Reflection.AssemblyName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -973,6 +990,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="assemblyName.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -1011,6 +1029,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.ProcessorArchitecture" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessorArchitecture As ProcessorArchitecture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ProcessorArchitecture ProcessorArchitecture { System::Reflection::ProcessorArchitecture get(); void set(System::Reflection::ProcessorArchitecture value); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessorArchitecture : System.Reflection.ProcessorArchitecture with get, set" Usage="System.Reflection.AssemblyName.ProcessorArchitecture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1054,6 +1073,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.ReferenceMatchesDefinition(System.Reflection.AssemblyName,System.Reflection.AssemblyName)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReferenceMatchesDefinition (reference As AssemblyName, definition As AssemblyName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ReferenceMatchesDefinition(System::Reflection::AssemblyName ^ reference, System::Reflection::AssemblyName ^ definition);" />
+      <MemberSignature Language="F#" Value="static member ReferenceMatchesDefinition : System.Reflection.AssemblyName * System.Reflection.AssemblyName -&gt; bool" Usage="System.Reflection.AssemblyName.ReferenceMatchesDefinition (reference, definition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1098,6 +1118,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.SetPublicKey(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPublicKey (publicKey As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPublicKey(cli::array &lt;System::Byte&gt; ^ publicKey);" />
+      <MemberSignature Language="F#" Value="member this.SetPublicKey : byte[] -&gt; unit" Usage="assemblyName.SetPublicKey publicKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1153,6 +1174,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.SetPublicKeyToken(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPublicKeyToken (publicKeyToken As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPublicKeyToken(cli::array &lt;System::Byte&gt; ^ publicKeyToken);" />
+      <MemberSignature Language="F#" Value="member this.SetPublicKeyToken : byte[] -&gt; unit" Usage="assemblyName.SetPublicKeyToken publicKeyToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1370,6 +1392,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="assemblyName.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1423,6 +1446,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Reflection.AssemblyName.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1487,6 +1511,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyName.VersionCompatibility" />
       <MemberSignature Language="VB.NET" Value="Public Property VersionCompatibility As AssemblyVersionCompatibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Assemblies::AssemblyVersionCompatibility VersionCompatibility { System::Configuration::Assemblies::AssemblyVersionCompatibility get(); void set(System::Configuration::Assemblies::AssemblyVersionCompatibility value); };" />
+      <MemberSignature Language="F#" Value="member this.VersionCompatibility : System.Configuration.Assemblies.AssemblyVersionCompatibility with get, set" Usage="System.Reflection.AssemblyName.VersionCompatibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

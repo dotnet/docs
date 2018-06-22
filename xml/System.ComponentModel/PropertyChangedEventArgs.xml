@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PropertyChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyChangedEventArgs(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyChangedEventArgs : string -&gt; System.ComponentModel.PropertyChangedEventArgs" Usage="new System.ComponentModel.PropertyChangedEventArgs propertyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyChangedEventArgs.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.ComponentModel.PropertyChangedEventArgs.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

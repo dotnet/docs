@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AttributeProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class AttributeProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeProviderAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type AttributeProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeProviderAttribute(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AttributeProviderAttribute : string -&gt; System.ComponentModel.AttributeProviderAttribute" Usage="new System.ComponentModel.AttributeProviderAttribute typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeProviderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeProviderAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AttributeProviderAttribute : Type -&gt; System.ComponentModel.AttributeProviderAttribute" Usage="new System.ComponentModel.AttributeProviderAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeProviderAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeProviderAttribute(System::String ^ typeName, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AttributeProviderAttribute : string * string -&gt; System.ComponentModel.AttributeProviderAttribute" Usage="new System.ComponentModel.AttributeProviderAttribute (typeName, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeProviderAttribute.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.ComponentModel.AttributeProviderAttribute.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeProviderAttribute.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.ComponentModel.AttributeProviderAttribute.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

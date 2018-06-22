@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PolyLineSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolyLineSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolyLineSegment sealed : System::Windows::Media::PathSegment" />
+  <TypeSignature Language="F#" Value="type PolyLineSegment = class&#xA;    inherit PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of Point), isStroked As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PolyLineSegment(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points, bool isStroked);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.PolyLineSegment : seq&lt;System.Windows.Point&gt; * bool -&gt; System.Windows.Media.PolyLineSegment" Usage="new System.Windows.Media.PolyLineSegment (points, isStroked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PolyLineSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyLineSegment ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.PolyLineSegment" Usage="polyLineSegment.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PolyLineSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyLineSegment ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.PolyLineSegment" Usage="polyLineSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyLineSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="polyLineSegment.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PolyLineSegment.Points" />
       <MemberSignature Language="VB.NET" Value="Public Property Points As PointCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ Points { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Points : System.Windows.Media.PointCollection with get, set" Usage="System.Windows.Media.PolyLineSegment.Points" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PolyLineSegment.PointsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PointsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PolyLineSegment.PointsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

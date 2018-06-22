@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeyNumber" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyNumber" />
   <TypeSignature Language="C++ CLI" Value="public enum class KeyNumber" />
+  <TypeSignature Language="F#" Value="type KeyNumber = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.KeyNumber.Exchange" />
       <MemberSignature Language="VB.NET" Value="Exchange" />
       <MemberSignature Language="C++ CLI" Value="Exchange" />
+      <MemberSignature Language="F#" Value="Exchange = 1" Usage="System.Security.Cryptography.KeyNumber.Exchange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.KeyNumber.Signature" />
       <MemberSignature Language="VB.NET" Value="Signature" />
       <MemberSignature Language="C++ CLI" Value="Signature" />
+      <MemberSignature Language="F#" Value="Signature = 2" Usage="System.Security.Cryptography.KeyNumber.Signature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>

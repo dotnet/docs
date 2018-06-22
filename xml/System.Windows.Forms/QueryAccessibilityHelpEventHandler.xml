@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryAccessibilityHelpEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryAccessibilityHelpEventHandler(sender As Object, e As QueryAccessibilityHelpEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void QueryAccessibilityHelpEventHandler(System::Object ^ sender, QueryAccessibilityHelpEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type QueryAccessibilityHelpEventHandler = delegate of obj * QueryAccessibilityHelpEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionStateMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionStateMode" />
+  <TypeSignature Language="F#" Value="type SessionStateMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 4" Usage="System.Web.SessionState.SessionStateMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateMode.InProc" />
       <MemberSignature Language="VB.NET" Value="InProc" />
       <MemberSignature Language="C++ CLI" Value="InProc" />
+      <MemberSignature Language="F#" Value="InProc = 1" Usage="System.Web.SessionState.SessionStateMode.InProc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateMode.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Web.SessionState.SessionStateMode.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateMode.SQLServer" />
       <MemberSignature Language="VB.NET" Value="SQLServer" />
       <MemberSignature Language="C++ CLI" Value="SQLServer" />
+      <MemberSignature Language="F#" Value="SQLServer = 3" Usage="System.Web.SessionState.SessionStateMode.SQLServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateMode.StateServer" />
       <MemberSignature Language="VB.NET" Value="StateServer" />
       <MemberSignature Language="C++ CLI" Value="StateServer" />
+      <MemberSignature Language="F#" Value="StateServer = 2" Usage="System.Web.SessionState.SessionStateMode.StateServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

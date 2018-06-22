@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject4" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICscHostObject4&#xA;Implements ICscHostObject3, ITaskHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICscHostObject4 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::ICscHostObject3" />
+  <TypeSignature Language="F#" Value="type ICscHostObject4 = interface&#xA;    interface ICscHostObject3&#xA;    interface ICscHostObject2&#xA;    interface ICscHostObject&#xA;    interface ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetHighEntropyVA(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetHighEntropyVA (highEntropyVA As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetHighEntropyVA(bool highEntropyVA);" />
+      <MemberSignature Language="F#" Value="abstract member SetHighEntropyVA : bool -&gt; bool" Usage="iCscHostObject4.SetHighEntropyVA highEntropyVA" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetPlatformWith32BitPreference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetPlatformWith32BitPreference (platformWith32BitPreference As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPlatformWith32BitPreference(System::String ^ platformWith32BitPreference);" />
+      <MemberSignature Language="F#" Value="abstract member SetPlatformWith32BitPreference : string -&gt; bool" Usage="iCscHostObject4.SetPlatformWith32BitPreference platformWith32BitPreference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetSubsystemVersion(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetSubsystemVersion (subsystemVersion As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSubsystemVersion(System::String ^ subsystemVersion);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubsystemVersion : string -&gt; bool" Usage="iCscHostObject4.SetSubsystemVersion subsystemVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

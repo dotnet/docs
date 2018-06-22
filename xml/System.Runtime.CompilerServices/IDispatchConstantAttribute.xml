@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IDispatchConstantAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IDispatchConstantAttribute&#xA;Inherits CustomConstantAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IDispatchConstantAttribute sealed : System::Runtime::CompilerServices::CustomConstantAttribute" />
+  <TypeSignature Language="F#" Value="type IDispatchConstantAttribute = class&#xA;    inherit CustomConstantAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.IDispatchConstantAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.CompilerServices.IDispatchConstantAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

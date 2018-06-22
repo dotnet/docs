@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionReflector" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceDescriptionReflector" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceDescriptionReflector" />
+  <TypeSignature Language="F#" Value="type ServiceDescriptionReflector = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reflect(class System.Type type, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionReflector.Reflect(System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reflect(Type ^ type, System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Reflect : Type * string -&gt; unit" Usage="serviceDescriptionReflector.Reflect (type, url)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionReflector.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ Schemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Serialization.XmlSchemas" Usage="System.Web.Services.Description.ServiceDescriptionReflector.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ ServiceDescriptions { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceDescriptions : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

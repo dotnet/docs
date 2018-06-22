@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PageResolution" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageResolution" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageResolution sealed" />
+  <TypeSignature Language="F#" Value="type PageResolution = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Printing.PageQualitativeResolution)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (qualitative As PageQualitativeResolution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResolution(System::Printing::PageQualitativeResolution qualitative);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageResolution : System.Printing.PageQualitativeResolution -&gt; System.Printing.PageResolution" Usage="new System.Printing.PageResolution qualitative" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resolutionX As Integer, resolutionY As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResolution(int resolutionX, int resolutionY);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageResolution : int * int -&gt; System.Printing.PageResolution" Usage="new System.Printing.PageResolution (resolutionX, resolutionY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Int32,System.Int32,System.Printing.PageQualitativeResolution)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resolutionX As Integer, resolutionY As Integer, qualitative As PageQualitativeResolution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResolution(int resolutionX, int resolutionY, System::Printing::PageQualitativeResolution qualitative);" />
+      <MemberSignature Language="F#" Value="new System.Printing.PageResolution : int * int * System.Printing.PageQualitativeResolution -&gt; System.Printing.PageResolution" Usage="new System.Printing.PageResolution (resolutionX, resolutionY, qualitative)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.QualitativeResolution" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualitativeResolution As Nullable(Of PageQualitativeResolution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageQualitativeResolution&gt; QualitativeResolution { Nullable&lt;System::Printing::PageQualitativeResolution&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.QualitativeResolution : Nullable&lt;System.Printing.PageQualitativeResolution&gt;" Usage="System.Printing.PageResolution.QualitativeResolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pageResolution.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.X" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property X As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; X { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.X : Nullable&lt;int&gt;" Usage="System.Printing.PageResolution.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.Y" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Y As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Y { Nullable&lt;int&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Y : Nullable&lt;int&gt;" Usage="System.Printing.PageResolution.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

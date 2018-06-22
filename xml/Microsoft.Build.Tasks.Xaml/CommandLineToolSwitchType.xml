@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommandLineToolSwitchType" />
   <TypeSignature Language="C++ CLI" Value="public enum class CommandLineToolSwitchType" />
+  <TypeSignature Language="F#" Value="type CommandLineToolSwitchType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="C++ CLI" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 0" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
       <MemberSignature Language="C++ CLI" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 1" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.ITaskItemArray" />
       <MemberSignature Language="VB.NET" Value="ITaskItemArray" />
       <MemberSignature Language="C++ CLI" Value="ITaskItemArray" />
+      <MemberSignature Language="F#" Value="ITaskItemArray = 4" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.ITaskItemArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="C++ CLI" Value="String" />
+      <MemberSignature Language="F#" Value="String = 2" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.StringArray" />
       <MemberSignature Language="VB.NET" Value="StringArray" />
       <MemberSignature Language="C++ CLI" Value="StringArray" />
+      <MemberSignature Language="F#" Value="StringArray = 3" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType.StringArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

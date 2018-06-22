@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.EntityRef`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure EntityRef(Of TEntity)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic value class EntityRef" />
+  <TypeSignature Language="F#" Value="type EntityRef&lt;'Entity (requires 'Entity : null)&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As IEnumerable(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityRef(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; : seq&lt;'Entity (requires 'Entity : null)&gt; -&gt; System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt;" Usage="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(System.Data.Linq.EntityRef{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entityRef As EntityRef(Of TEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityRef(System::Data::Linq::EntityRef&lt;TEntity&gt; entityRef);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; : System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; -&gt; System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt;" Usage="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; entityRef" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.EntityRef`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityRef(TEntity entity);" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; : 'Entity -&gt; System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt;" Usage="new System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt; entity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntityRef`1.Entity" />
       <MemberSignature Language="VB.NET" Value="Public Property Entity As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TEntity Entity { TEntity get(); void set(TEntity value); };" />
+      <MemberSignature Language="F#" Value="member this.Entity : 'Entity with get, set" Usage="System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt;.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.EntityRef`1.HasLoadedOrAssignedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLoadedOrAssignedValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLoadedOrAssignedValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasLoadedOrAssignedValue : bool" Usage="System.Data.Linq.EntityRef&lt;'Entity (requires 'Entity : null)&gt;.HasLoadedOrAssignedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

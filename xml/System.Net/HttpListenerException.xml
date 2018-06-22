@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerException" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpListenerException&#xA;Inherits Win32Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerException : System::ComponentModel::Win32Exception" />
+  <TypeSignature Language="F#" Value="type HttpListenerException = class&#xA;    inherit Win32Exception" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListenerException(int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Net.HttpListenerException : int -&gt; System.Net.HttpListenerException" Usage="new System.Net.HttpListenerException errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListenerException(int errorCode, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.HttpListenerException : int * string -&gt; System.Net.HttpListenerException" Usage="new System.Net.HttpListenerException (errorCode, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpListenerException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.HttpListenerException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.HttpListenerException" Usage="new System.Net.HttpListenerException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Net.HttpListenerException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

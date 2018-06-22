@@ -1,9 +1,10 @@
-<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
+﻿<Type Name="HttpUtility" FullName="System.Web.HttpUtility">
   <TypeSignature Language="C#" Value="public sealed class HttpUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpUtility" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpUtility sealed" />
+  <TypeSignature Language="F#" Value="type HttpUtility = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlAttributeEncode (s As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlAttributeEncode(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member HtmlAttributeEncode : string -&gt; string" Usage="System.Web.HttpUtility.HtmlAttributeEncode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlAttributeEncode (s As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlAttributeEncode(System::String ^ s, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlAttributeEncode : string * System.IO.TextWriter -&gt; unit" Usage="System.Web.HttpUtility.HtmlAttributeEncode (s, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlDecode (s As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlDecode(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string -&gt; string" Usage="System.Web.HttpUtility.HtmlDecode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlDecode (s As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlDecode(System::String ^ s, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string * System.IO.TextWriter -&gt; unit" Usage="System.Web.HttpUtility.HtmlDecode (s, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlEncode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlEncode (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlEncode(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : obj -&gt; string" Usage="System.Web.HttpUtility.HtmlEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -370,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlEncode (s As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlEncode(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string -&gt; string" Usage="System.Web.HttpUtility.HtmlEncode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlEncode (s As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlEncode(System::String ^ s, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string * System.IO.TextWriter -&gt; unit" Usage="System.Web.HttpUtility.HtmlEncode (s, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -494,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.JavaScriptStringEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JavaScriptStringEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ JavaScriptStringEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member JavaScriptStringEncode : string -&gt; string" Usage="System.Web.HttpUtility.JavaScriptStringEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -532,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JavaScriptStringEncode (value As String, addDoubleQuotes As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ JavaScriptStringEncode(System::String ^ value, bool addDoubleQuotes);" />
+      <MemberSignature Language="F#" Value="static member JavaScriptStringEncode : string * bool -&gt; string" Usage="System.Web.HttpUtility.JavaScriptStringEncode (value, addDoubleQuotes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.ParseQueryString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseQueryString (query As String) As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::NameValueCollection ^ ParseQueryString(System::String ^ query);" />
+      <MemberSignature Language="F#" Value="static member ParseQueryString : string -&gt; System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpUtility.ParseQueryString query" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -639,6 +650,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Specialized.NameValueCollection ParseQueryString(string query, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.ParseQueryString(System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::NameValueCollection ^ ParseQueryString(System::String ^ query, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="static member ParseQueryString : string * System.Text.Encoding -&gt; System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpUtility.ParseQueryString (query, encoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -707,6 +719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string -&gt; string" Usage="System.Web.HttpUtility.UrlDecode str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -755,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.Byte[],System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (bytes As Byte(), e As Encoding) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(cli::array &lt;System::Byte&gt; ^ bytes, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : byte[] * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (bytes, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -802,14 +816,15 @@
     <Member MemberName="UrlDecode">
       <MemberSignature Language="C#" Value="public static string UrlDecode (string str, System.Text.Encoding e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string str, class System.Text.Encoding e) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (str As String, e As Encoding) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ str, System::Text::Encoding ^ e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public static string UrlDecode (string s, System.Text.Encoding e);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string s, class System.Text.Encoding e) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (s As String, e As Encoding) As String" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (s, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -862,6 +877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (bytes As Byte(), offset As Integer, count As Integer, e As Encoding) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : byte[] * int * int * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (bytes, offset, count, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -935,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecodeToBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (bytes As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(cli::array &lt;System::Byte&gt; ^ bytes);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : byte[] -&gt; byte[]" Usage="System.Web.HttpUtility.UrlDecodeToBytes bytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -983,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (str As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : string -&gt; byte[]" Usage="System.Web.HttpUtility.UrlDecodeToBytes str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1031,6 +1049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (str As String, e As Encoding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(System::String ^ str, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : string * System.Text.Encoding -&gt; byte[]" Usage="System.Web.HttpUtility.UrlDecodeToBytes (str, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1081,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (bytes As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Web.HttpUtility.UrlDecodeToBytes (bytes, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1152,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (bytes As Byte()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(cli::array &lt;System::Byte&gt; ^ bytes);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : byte[] -&gt; string" Usage="System.Web.HttpUtility.UrlEncode bytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1200,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlEncode str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1254,6 +1276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (bytes As Byte(), offset As Integer, count As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : byte[] * int * int -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (bytes, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1303,14 +1326,15 @@
     <Member MemberName="UrlEncode">
       <MemberSignature Language="C#" Value="public static string UrlEncode (string str, System.Text.Encoding e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string str, class System.Text.Encoding e) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (str As String, e As Encoding) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ str, System::Text::Encoding ^ e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public static string UrlEncode (string s, System.Text.Encoding Enc);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string s, class System.Text.Encoding Enc) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (s As String, Enc As Encoding) As String" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ Enc);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1376,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeToBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (bytes As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(cli::array &lt;System::Byte&gt; ^ bytes);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : byte[] -&gt; byte[]" Usage="System.Web.HttpUtility.UrlEncodeToBytes bytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1424,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (str As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : string -&gt; byte[]" Usage="System.Web.HttpUtility.UrlEncodeToBytes str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1472,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (str As String, e As Encoding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(System::String ^ str, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : string * System.Text.Encoding -&gt; byte[]" Usage="System.Web.HttpUtility.UrlEncodeToBytes (str, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1522,6 +1549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (bytes As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Web.HttpUtility.UrlEncodeToBytes (bytes, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1582,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeUnicode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeUnicode (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncodeUnicode(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeUnicode : string -&gt; string" Usage="System.Web.HttpUtility.UrlEncodeUnicode str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1627,6 +1656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncodeUnicodeToBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeUnicodeToBytes (str As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeUnicodeToBytes(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeUnicodeToBytes : string -&gt; byte[]" Usage="System.Web.HttpUtility.UrlEncodeUnicodeToBytes str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1669,14 +1699,15 @@
     <Member MemberName="UrlPathEncode">
       <MemberSignature Language="C#" Value="public static string UrlPathEncode (string str);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlPathEncode(string str) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlPathEncode (str As String) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ str);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2" />
       <MemberSignature Language="C#" Value="public static string UrlPathEncode (string s);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlPathEncode(string s) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="netframework-4.7;netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlPathEncode (s As String) As String" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ s);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="static member UrlPathEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlPathEncode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

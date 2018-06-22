@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContextExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module CompositionContextExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionContextExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type CompositionContextExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.TypedParts</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SatisfyImports(System::Composition::CompositionContext ^ compositionContext, System::Object ^ objectWithLooseImports);" />
+      <MemberSignature Language="F#" Value="static member SatisfyImports : System.Composition.CompositionContext * obj -&gt; unit" Usage="System.Composition.CompositionContextExtensions.SatisfyImports (compositionContext, objectWithLooseImports)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SatisfyImports(class System.Composition.CompositionContext compositionContext, object objectWithLooseImports, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SatisfyImports(System::Composition::CompositionContext ^ compositionContext, System::Object ^ objectWithLooseImports, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
+      <MemberSignature Language="F#" Value="static member SatisfyImports : System.Composition.CompositionContext * obj * System.Composition.Convention.AttributedModelProvider -&gt; unit" Usage="System.Composition.CompositionContextExtensions.SatisfyImports (compositionContext, objectWithLooseImports, conventions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>

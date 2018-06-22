@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateParser" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplateParser&#xA;Inherits BaseParser" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateParser abstract : System::Web::UI::BaseParser" />
+  <TypeSignature Language="F#" Value="type TemplateParser = class&#xA;    inherit BaseParser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ParseFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ParseFile (physicalPath As String, virtualPath As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ParseFile(System::String ^ physicalPath, System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.ParseFile : string * string -&gt; unit" Usage="templateParser.ParseFile (physicalPath, virtualPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ParseTemplate(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTemplate (content As String, virtualPath As String, ignoreFilter As Boolean) As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ITemplate ^ ParseTemplate(System::String ^ content, System::String ^ virtualPath, bool ignoreFilter);" />
+      <MemberSignature Language="F#" Value="static member ParseTemplate : string * string * bool -&gt; System.Web.UI.ITemplate" Usage="System.Web.UI.TemplateParser.ParseTemplate (content, virtualPath, ignoreFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ProcessError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProcessError (message As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProcessError(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.ProcessError : string -&gt; unit" Usage="templateParser.ProcessError message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateParser.ProcessException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProcessException (ex As Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProcessException(Exception ^ ex);" />
+      <MemberSignature Language="F#" Value="member this.ProcessException : Exception -&gt; unit" Usage="templateParser.ProcessException ex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateParser.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Web.UI.TemplateParser.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

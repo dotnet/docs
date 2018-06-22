@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebRequestErrorEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebRequestErrorEvent&#xA;Inherits WebBaseErrorEvent" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebRequestErrorEvent : System::Web::Management::WebBaseErrorEvent" />
+  <TypeSignature Language="F#" Value="type WebRequestErrorEvent = class&#xA;    inherit WebBaseErrorEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebRequestErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebRequestErrorEvent : string * obj * int * Exception -&gt; System.Web.Management.WebRequestErrorEvent" Usage="new System.Web.Management.WebRequestErrorEvent (message, eventSource, eventCode, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebRequestErrorEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebRequestErrorEvent : string * obj * int * int * Exception -&gt; System.Web.Management.WebRequestErrorEvent" Usage="new System.Web.Management.WebRequestErrorEvent (message, eventSource, eventCode, eventDetailCode, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestErrorEvent.IncrementPerfCounters" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webRequestErrorEvent.IncrementPerfCounters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebRequestErrorEvent.RequestInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestInformation As WebRequestInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebRequestInformation ^ RequestInformation { System::Web::Management::WebRequestInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestInformation : System.Web.Management.WebRequestInformation" Usage="System.Web.Management.WebRequestErrorEvent.RequestInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebRequestErrorEvent.ThreadInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadInformation As WebThreadInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebThreadInformation ^ ThreadInformation { System::Web::Management::WebThreadInformation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadInformation : System.Web.Management.WebThreadInformation" Usage="System.Web.Management.WebRequestErrorEvent.ThreadInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

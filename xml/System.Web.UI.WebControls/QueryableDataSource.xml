@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryableDataSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class QueryableDataSource&#xA;Inherits DataSourceControl&#xA;Implements IQueryableDataSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryableDataSource abstract : System::Web::UI::DataSourceControl, System::Web::UI::WebControls::IQueryableDataSource" />
+  <TypeSignature Language="F#" Value="type QueryableDataSource = class&#xA;    inherit DataSourceControl&#xA;    interface IQueryableDataSource&#xA;    interface IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.CreateQueryableView" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateQueryableView () As QueryableDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::WebControls::QueryableDataSourceView ^ CreateQueryableView();" />
+      <MemberSignature Language="F#" Value="abstract member CreateQueryableView : unit -&gt; System.Web.UI.WebControls.QueryableDataSourceView" Usage="queryableDataSource.CreateQueryableView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetView (viewName As String) As DataSourceView" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.DataSourceView&#xA;override this.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="queryableDataSource.GetView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetViewNames () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ICollection ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; System.Collections.ICollection&#xA;override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="queryableDataSource.GetViewNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="queryableDataSource.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="queryableDataSource.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.QueryableDataSource.QueryCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueryCreated As EventHandler(Of QueryCreatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Web::UI::WebControls::QueryCreatedEventArgs ^&gt; ^ QueryCreated;" />
+      <MemberSignature Language="F#" Value="member this.QueryCreated : EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " Usage="member this.QueryCreated : System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Web.UI.WebControls.IQueryableDataSource.QueryCreated</InterfaceMember>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.RaiseViewChanged" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseViewChanged ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RaiseViewChanged();" />
+      <MemberSignature Language="F#" Value="abstract member RaiseViewChanged : unit -&gt; unit&#xA;override this.RaiseViewChanged : unit -&gt; unit" Usage="queryableDataSource.RaiseViewChanged " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged</InterfaceMember>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="queryableDataSource.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="queryableDataSource.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSource.UpdateParameterVales" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UpdateParameterVales ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateParameterVales();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateParameterVales : unit -&gt; unit&#xA;override this.UpdateParameterVales : unit -&gt; unit" Usage="queryableDataSource.UpdateParameterVales " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

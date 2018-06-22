@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationTrust" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationTrust&#xA;Inherits EvidenceBase&#xA;Implements ISecurityEncodable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationTrust sealed : System::Security::Policy::EvidenceBase, System::Security::ISecurityEncodable" />
+  <TypeSignature Language="F#" Value="type ApplicationTrust = class&#xA;    inherit EvidenceBase&#xA;    interface ISecurityEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrust.#ctor(System.ApplicationIdentity)" FrameworkAlternate="netframework-4.5;netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationTrust(ApplicationIdentity ^ applicationIdentity);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.ApplicationTrust : ApplicationIdentity -&gt; System.Security.Policy.ApplicationTrust" Usage="new System.Security.Policy.ApplicationTrust applicationIdentity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrust.#ctor(System.Security.PermissionSet,System.Collections.Generic.IEnumerable{System.Security.Policy.StrongName})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultGrantSet As PermissionSet, fullTrustAssemblies As IEnumerable(Of StrongName))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationTrust(System::Security::PermissionSet ^ defaultGrantSet, System::Collections::Generic::IEnumerable&lt;System::Security::Policy::StrongName ^&gt; ^ fullTrustAssemblies);" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.ApplicationTrust : System.Security.PermissionSet * seq&lt;System.Security.Policy.StrongName&gt; -&gt; System.Security.Policy.ApplicationTrust" Usage="new System.Security.Policy.ApplicationTrust (defaultGrantSet, fullTrustAssemblies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.ApplicationIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationIdentity As ApplicationIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationIdentity ^ ApplicationIdentity { ApplicationIdentity ^ get(); void set(ApplicationIdentity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationIdentity : ApplicationIdentity with get, set" Usage="System.Security.Policy.ApplicationTrust.ApplicationIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrust.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="applicationTrust.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.DefaultGrantSet" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultGrantSet As PolicyStatement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::PolicyStatement ^ DefaultGrantSet { System::Security::Policy::PolicyStatement ^ get(); void set(System::Security::Policy::PolicyStatement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultGrantSet : System.Security.Policy.PolicyStatement with get, set" Usage="System.Security.Policy.ApplicationTrust.DefaultGrantSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.ExtraInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtraInfo As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExtraInfo { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraInfo : obj with get, set" Usage="System.Security.Policy.ApplicationTrust.ExtraInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrust.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (element As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="applicationTrust.FromXml element" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
@@ -318,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.FullTrustAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullTrustAssemblies As IList(Of StrongName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Security::Policy::StrongName ^&gt; ^ FullTrustAssemblies { System::Collections::Generic::IList&lt;System::Security::Policy::StrongName ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullTrustAssemblies : System.Collections.Generic.IList&lt;System.Security.Policy.StrongName&gt;" Usage="System.Security.Policy.ApplicationTrust.FullTrustAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun" />
       <MemberSignature Language="VB.NET" Value="Public Property IsApplicationTrustedToRun As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsApplicationTrustedToRun { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsApplicationTrustedToRun : bool with get, set" Usage="System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -383,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrust.Persist" />
       <MemberSignature Language="VB.NET" Value="Public Property Persist As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Persist { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Persist : bool with get, set" Usage="System.Security.Policy.ApplicationTrust.Persist" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -416,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrust.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="applicationTrust.ToXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>

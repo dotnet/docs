@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlCompareOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlCompareOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlCompareOptions" />
+  <TypeSignature Language="F#" Value="type SqlCompareOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.BinarySort" />
       <MemberSignature Language="VB.NET" Value="BinarySort" />
       <MemberSignature Language="C++ CLI" Value="BinarySort" />
+      <MemberSignature Language="F#" Value="BinarySort = 32768" Usage="System.Data.SqlTypes.SqlCompareOptions.BinarySort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.BinarySort2" />
       <MemberSignature Language="VB.NET" Value="BinarySort2" />
       <MemberSignature Language="C++ CLI" Value="BinarySort2" />
+      <MemberSignature Language="F#" Value="BinarySort2 = 16384" Usage="System.Data.SqlTypes.SqlCompareOptions.BinarySort2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="IgnoreCase" />
       <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Data.SqlTypes.SqlCompareOptions.IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.IgnoreKanaType" />
       <MemberSignature Language="VB.NET" Value="IgnoreKanaType" />
       <MemberSignature Language="C++ CLI" Value="IgnoreKanaType" />
+      <MemberSignature Language="F#" Value="IgnoreKanaType = 8" Usage="System.Data.SqlTypes.SqlCompareOptions.IgnoreKanaType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.IgnoreNonSpace" />
       <MemberSignature Language="VB.NET" Value="IgnoreNonSpace" />
       <MemberSignature Language="C++ CLI" Value="IgnoreNonSpace" />
+      <MemberSignature Language="F#" Value="IgnoreNonSpace = 2" Usage="System.Data.SqlTypes.SqlCompareOptions.IgnoreNonSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.IgnoreWidth" />
       <MemberSignature Language="VB.NET" Value="IgnoreWidth" />
       <MemberSignature Language="C++ CLI" Value="IgnoreWidth" />
+      <MemberSignature Language="F#" Value="IgnoreWidth = 16" Usage="System.Data.SqlTypes.SqlCompareOptions.IgnoreWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlCompareOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.SqlTypes.SqlCompareOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

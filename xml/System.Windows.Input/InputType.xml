@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputType" />
   <TypeSignature Language="VB.NET" Value="Public Enum InputType" />
   <TypeSignature Language="C++ CLI" Value="public enum class InputType" />
+  <TypeSignature Language="F#" Value="type InputType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Command" />
       <MemberSignature Language="VB.NET" Value="Command" />
       <MemberSignature Language="C++ CLI" Value="Command" />
+      <MemberSignature Language="F#" Value="Command = 5" Usage="System.Windows.Input.InputType.Command" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Hid" />
       <MemberSignature Language="VB.NET" Value="Hid" />
       <MemberSignature Language="C++ CLI" Value="Hid" />
+      <MemberSignature Language="F#" Value="Hid = 3" Usage="System.Windows.Input.InputType.Hid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Keyboard" />
       <MemberSignature Language="VB.NET" Value="Keyboard" />
       <MemberSignature Language="C++ CLI" Value="Keyboard" />
+      <MemberSignature Language="F#" Value="Keyboard = 0" Usage="System.Windows.Input.InputType.Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Mouse" />
       <MemberSignature Language="VB.NET" Value="Mouse" />
       <MemberSignature Language="C++ CLI" Value="Mouse" />
+      <MemberSignature Language="F#" Value="Mouse = 1" Usage="System.Windows.Input.InputType.Mouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Stylus" />
       <MemberSignature Language="VB.NET" Value="Stylus" />
       <MemberSignature Language="C++ CLI" Value="Stylus" />
+      <MemberSignature Language="F#" Value="Stylus = 2" Usage="System.Windows.Input.InputType.Stylus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 4" Usage="System.Windows.Input.InputType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

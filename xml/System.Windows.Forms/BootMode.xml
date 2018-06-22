@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BootMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BootMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class BootMode" />
+  <TypeSignature Language="F#" Value="type BootMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.FailSafe" />
       <MemberSignature Language="VB.NET" Value="FailSafe" />
       <MemberSignature Language="C++ CLI" Value="FailSafe" />
+      <MemberSignature Language="F#" Value="FailSafe = 1" Usage="System.Windows.Forms.BootMode.FailSafe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.FailSafeWithNetwork" />
       <MemberSignature Language="VB.NET" Value="FailSafeWithNetwork" />
       <MemberSignature Language="C++ CLI" Value="FailSafeWithNetwork" />
+      <MemberSignature Language="F#" Value="FailSafeWithNetwork = 2" Usage="System.Windows.Forms.BootMode.FailSafeWithNetwork" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.BootMode.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

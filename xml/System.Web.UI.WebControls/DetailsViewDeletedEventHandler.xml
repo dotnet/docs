@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DetailsViewDeletedEventHandler(sender As Object, e As DetailsViewDeletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DetailsViewDeletedEventHandler(System::Object ^ sender, DetailsViewDeletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DetailsViewDeletedEventHandler = delegate of obj * DetailsViewDeletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

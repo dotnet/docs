@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelValidator abstract" />
+  <TypeSignature Language="F#" Value="type ModelValidator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidator.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ModelValidator(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelValidator : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.ModelValidator" Usage="new System.Web.ModelBinding.ModelValidator (metadata, modelBindingExecutionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidator.GetModelValidator(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetModelValidator (metadata As ModelMetadata, context As ModelBindingExecutionContext) As ModelValidator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::ModelBinding::ModelValidator ^ GetModelValidator(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetModelValidator : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.ModelValidator" Usage="System.Web.ModelBinding.ModelValidator.GetModelValidator (metadata, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidator.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool" Usage="System.Web.ModelBinding.ModelValidator.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidator.Metadata" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Metadata As ModelMetadata" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::ModelBinding::ModelMetadata ^ Metadata { System::Web::ModelBinding::ModelMetadata ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Web.ModelBinding.ModelMetadata" Usage="System.Web.ModelBinding.ModelValidator.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidator.ModelBindingExecutionContext" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ModelBindingExecutionContext As ModelBindingExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::ModelBinding::ModelBindingExecutionContext ^ ModelBindingExecutionContext { System::Web::ModelBinding::ModelBindingExecutionContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelBindingExecutionContext : System.Web.ModelBinding.ModelBindingExecutionContext" Usage="System.Web.ModelBinding.ModelValidator.ModelBindingExecutionContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidator.Validate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Validate (container As Object) As IEnumerable(Of ModelValidationResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidationResult ^&gt; ^ Validate(System::Object ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj -&gt; seq&lt;System.Web.ModelBinding.ModelValidationResult&gt;" Usage="modelValidator.Validate container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.IObjectSet`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObjectSet(Of TEntity)&#xA;Implements IEnumerable(Of TEntity), IQueryable, IQueryable(Of TEntity)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic interface class IObjectSet : System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::Linq::IQueryable, System::Linq::IQueryable&lt;TEntity&gt;" />
+  <TypeSignature Language="F#" Value="type IObjectSet&lt;'Entity (requires 'Entity : null)&gt; = interface&#xA;    interface IQueryable&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.IObjectSet`1.AddObject(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddObject (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddObject(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member AddObject : 'Entity -&gt; unit" Usage="iObjectSet.AddObject entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.IObjectSet`1.Attach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : 'Entity -&gt; unit" Usage="iObjectSet.Attach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.IObjectSet`1.DeleteObject(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteObject (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteObject(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteObject : 'Entity -&gt; unit" Usage="iObjectSet.DeleteObject entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.IObjectSet`1.Detach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach(TEntity entity);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : 'Entity -&gt; unit" Usage="iObjectSet.Detach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

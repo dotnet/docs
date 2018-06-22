@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.String" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class String&#xA;Implements ICloneable, IComparable, IComparable(Of String), IConvertible, IEnumerable(Of Char), IEquatable(Of String)" />
   <TypeSignature Language="C++ CLI" Value="public ref class String sealed : ICloneable, IComparable, IComparable&lt;System::String ^&gt;, IConvertible, IEquatable&lt;System::String ^&gt;, System::Collections::Generic::IEnumerable&lt;char&gt;" />
+  <TypeSignature Language="F#" Value="type string = class&#xA;    interface IComparable&#xA;    interface ICloneable&#xA;    interface IConvertible&#xA;    interface IEnumerable&#xA;    interface IComparable&lt;string&gt;&#xA;    interface seq&lt;char&gt;&#xA;    interface IEquatable&lt;string&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -773,6 +774,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char* value);" />
+      <MemberSignature Language="F#" Value="new string : nativeptr&lt;char&gt; -&gt; string" Usage="new System.string value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -828,6 +830,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(cli::array &lt;char&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new string : char[] -&gt; string" Usage="new System.string value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -876,6 +879,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ReadOnlySpan(Of Char))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="new string : ReadOnlySpan&lt;char&gt; -&gt; string" Usage="new System.string value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -895,6 +899,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value);" />
+      <MemberSignature Language="F#" Value="new string : nativeptr&lt;sbyte&gt; -&gt; string" Usage="new System.string value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -949,6 +954,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (c As Char, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char c, int count);" />
+      <MemberSignature Language="F#" Value="new string : char * int -&gt; string" Usage="new System.string (c, count)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1000,6 +1006,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* value, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char*,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char* value, int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="new string : nativeptr&lt;char&gt; * int * int -&gt; string" Usage="new System.string (value, startIndex, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1060,6 +1067,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char(), startIndex As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(cli::array &lt;char&gt; ^ value, int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="new string : char[] * int * int -&gt; string" Usage="new System.string (value, startIndex, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1119,6 +1127,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value, int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="new string : nativeptr&lt;sbyte&gt; * int * int -&gt; string" Usage="new System.string (value, startIndex, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1189,6 +1198,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value, int32 startIndex, int32 length, class System.Text.Encoding enc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value, int startIndex, int length, System::Text::Encoding ^ enc);" />
+      <MemberSignature Language="F#" Value="new string : nativeptr&lt;sbyte&gt; * int * int * System.Text.Encoding -&gt; string" Usage="new System.string (value, startIndex, length, enc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1262,6 +1272,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="P:System.String.Chars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Chars(index As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Chars(int) : char" Usage="System.string.Chars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1328,6 +1339,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="string.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -1402,6 +1414,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string -&gt; int" Usage="System.string.Compare (strA, strB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1514,6 +1527,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, ignoreCase As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string * bool -&gt; int" Usage="System.string.Compare (strA, strB, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1622,6 +1636,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string * StringComparison -&gt; int" Usage="System.string.Compare (strA, strB, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1730,6 +1745,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, ignoreCase As Boolean, culture As CultureInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string * bool * System.Globalization.CultureInfo -&gt; int" Usage="System.string.Compare (strA, strB, ignoreCase, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1838,6 +1854,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, culture As CultureInfo, options As CompareOptions) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string * System.Globalization.CultureInfo * System.Globalization.CompareOptions -&gt; int" Usage="System.string.Compare (strA, strB, culture, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1931,6 +1948,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * int * string * int * int -&gt; int" Usage="System.string.Compare (strA, indexA, strB, indexB, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2056,6 +2074,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, ignoreCase As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * int * string * int * int * bool -&gt; int" Usage="System.string.Compare (strA, indexA, strB, indexB, length, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2180,6 +2199,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * int * string * int * int * StringComparison -&gt; int" Usage="System.string.Compare (strA, indexA, strB, indexB, length, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2309,6 +2329,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, ignoreCase As Boolean, culture As CultureInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * int * string * int * int * bool * System.Globalization.CultureInfo -&gt; int" Usage="System.string.Compare (strA, indexA, strB, indexB, length, ignoreCase, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2434,6 +2455,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, culture As CultureInfo, options As CompareOptions) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * int * string * int * int * System.Globalization.CultureInfo * System.Globalization.CompareOptions -&gt; int" Usage="System.string.Compare (strA, indexA, strB, indexB, length, culture, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2561,6 +2583,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.CompareOrdinal(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareOrdinal (strA As String, strB As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareOrdinal(System::String ^ strA, System::String ^ strB);" />
+      <MemberSignature Language="F#" Value="static member CompareOrdinal : string * string -&gt; int" Usage="System.string.CompareOrdinal (strA, strB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2640,6 +2663,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareOrdinal (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareOrdinal(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length);" />
+      <MemberSignature Language="F#" Value="static member CompareOrdinal : string * int * string * int * int -&gt; int" Usage="System.string.CompareOrdinal (strA, indexA, strB, indexB, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2762,6 +2786,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="string.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -2856,6 +2881,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.CompareTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (strB As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::String ^ strB);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : string -&gt; int&#xA;override this.CompareTo : string -&gt; int" Usage="string.CompareTo strB" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -2971,6 +2997,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (values As IEnumerable(Of String)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Concat : seq&lt;string&gt; -&gt; string" Usage="System.string.Concat values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3040,6 +3067,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj -&gt; string" Usage="System.string.Concat arg0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3096,6 +3124,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (ParamArray args As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj[] -&gt; string" Usage="System.string.Concat args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3165,6 +3194,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (ParamArray values As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(... cli::array &lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Concat : string[] -&gt; string" Usage="System.string.Concat values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3231,6 +3261,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj * obj -&gt; string" Usage="System.string.Concat (arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3293,6 +3324,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1);" />
+      <MemberSignature Language="F#" Value="static member Concat : string * string -&gt; string" Usage="System.string.Concat (str0, str1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3362,6 +3394,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object, arg2 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj * obj * obj -&gt; string" Usage="System.string.Concat (arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3424,6 +3457,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String, str2 As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1, System::String ^ str2);" />
+      <MemberSignature Language="F#" Value="static member Concat : string * string * string -&gt; string" Usage="System.string.Concat (str0, str1, str2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3495,6 +3529,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object, arg2 As Object, arg3 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2, System::Object ^ arg3);" />
+      <MemberSignature Language="F#" Value="static member Concat : obj * obj * obj * obj -&gt; string" Usage="System.string.Concat (arg0, arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3562,6 +3597,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String, str2 As String, str3 As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1, System::String ^ str2, System::String ^ str3);" />
+      <MemberSignature Language="F#" Value="static member Concat : string * string * string * string -&gt; string" Usage="System.string.Concat (str0, str1, str2, str3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3634,6 +3670,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Concat``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat(Of T) (values As IEnumerable(Of T)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Concat(System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Concat : seq&lt;'T&gt; -&gt; string" Usage="System.string.Concat values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3702,6 +3739,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Contains(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(char value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : char -&gt; bool" Usage="string.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3726,6 +3764,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="string.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3797,6 +3836,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Contains(System.Char,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Char, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(char value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.Contains : char * StringComparison -&gt; bool" Usage="string.Contains (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3823,6 +3863,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Contains(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string * StringComparison -&gt; bool" Usage="string.Contains (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3849,6 +3890,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Copy(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Copy (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Copy(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member Copy : string -&gt; string" Usage="System.string.Copy str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3905,6 +3947,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, cli::array &lt;char&gt; ^ destination, int destinationIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * char[] * int * int -&gt; unit" Usage="string.CopyTo (sourceIndex, destination, destinationIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3995,6 +4038,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Create``1(System.Int32,``0,System.Buffers.SpanAction{System.Char,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TState) (length As Integer, state As TState, action As SpanAction(Of Char, TState)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TState&gt;&#xA; static System::String ^ Create(int length, TState state, System::Buffers::SpanAction&lt;char, TState&gt; ^ action);" />
+      <MemberSignature Language="F#" Value="static member Create : int * 'State * System.Buffers.SpanAction&lt;char, 'State&gt; -&gt; string" Usage="System.string.Create (length, state, action)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4027,6 +4071,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="F:System.String.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : string" Usage="System.string.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4080,6 +4125,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(char value);" />
+      <MemberSignature Language="F#" Value="member this.EndsWith : char -&gt; bool" Usage="string.EndsWith value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4105,6 +4151,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.EndsWith : string -&gt; bool" Usage="string.EndsWith value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4174,6 +4221,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.EndsWith : string * StringComparison -&gt; bool" Usage="string.EndsWith (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4244,6 +4292,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String, ignoreCase As Boolean, culture As CultureInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.EndsWith : string * bool * System.Globalization.CultureInfo -&gt; bool" Usage="string.EndsWith (value, ignoreCase, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4317,6 +4366,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="string.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4379,6 +4429,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : string -&gt; bool" Usage="string.Equals value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -4442,6 +4493,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (a As String, b As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::String ^ a, System::String ^ b);" />
+      <MemberSignature Language="F#" Value="static member Equals : string * string -&gt; bool" Usage="System.string.Equals (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4500,6 +4552,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As String, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="override this.Equals : string * StringComparison -&gt; bool" Usage="string.Equals (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4569,6 +4622,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (a As String, b As String, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::String ^ a, System::String ^ b, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member Equals : string * string * StringComparison -&gt; bool" Usage="System.string.Equals (a, b, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4994,6 +5048,7 @@ The following are some of the examples included in the article:
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="static member Format : string * obj -&gt; string" Usage="System.string.Format (format, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5059,6 +5114,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, ParamArray args As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member Format : string * obj[] -&gt; string" Usage="System.string.Format (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5139,6 +5195,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="static member Format : IFormatProvider * string * obj -&gt; string" Usage="System.string.Format (provider, format, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5199,6 +5256,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, ParamArray args As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member Format : IFormatProvider * string * obj[] -&gt; string" Usage="System.string.Format (provider, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5277,6 +5335,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object, arg1 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Format : string * obj * obj -&gt; string" Usage="System.string.Format (format, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5345,6 +5404,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="static member Format : IFormatProvider * string * obj * obj -&gt; string" Usage="System.string.Format (provider, format, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5407,6 +5467,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object, arg1 As Object, arg2 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Format : string * obj * obj * obj -&gt; string" Usage="System.string.Format (format, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5477,6 +5538,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="static member Format : IFormatProvider * string * obj * obj * obj -&gt; string" Usage="System.string.Format (provider, format, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5541,6 +5603,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As CharEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CharEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; CharEnumerator" Usage="string.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5595,6 +5658,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="DocId" Value="M:System.String.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="string.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5710,6 +5774,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.GetHashCode(System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : StringComparison -&gt; int" Usage="string.GetHashCode comparisonType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5735,6 +5800,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="string.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -5793,6 +5859,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : char -&gt; int" Usage="string.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5853,6 +5920,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="string.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5930,6 +5998,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : char * int -&gt; int" Usage="string.IndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5997,6 +6066,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : char * StringComparison -&gt; int" Usage="string.IndexOf (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6023,6 +6093,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * int -&gt; int" Usage="string.IndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6098,6 +6169,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * StringComparison -&gt; int" Usage="string.IndexOf (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6167,6 +6239,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : char * int * int -&gt; int" Usage="string.IndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6244,6 +6317,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * int * int -&gt; int" Usage="string.IndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6329,6 +6403,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * int * StringComparison -&gt; int" Usage="string.IndexOf (value, startIndex, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6402,6 +6477,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, count As Integer, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, int count, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string * int * int * StringComparison -&gt; int" Usage="string.IndexOf (value, startIndex, count, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6505,6 +6581,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfAny : char[] -&gt; int" Usage="string.IndexOfAny anyOf" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6567,6 +6644,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char(), startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfAny : char[] * int -&gt; int" Usage="string.IndexOfAny (anyOf, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6643,6 +6721,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char(), startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfAny : char[] * int * int -&gt; int" Usage="string.IndexOfAny (anyOf, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6721,6 +6800,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (startIndex As Integer, value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Insert(int startIndex, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; string" Usage="string.Insert (startIndex, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6806,6 +6886,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Intern(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Intern (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Intern(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member Intern : string -&gt; string" Usage="System.string.Intern str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6888,6 +6969,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IsInterned(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsInterned (str As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsInterned(System::String ^ str);" />
+      <MemberSignature Language="F#" Value="static member IsInterned : string -&gt; string" Usage="System.string.IsInterned str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6970,6 +7052,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IsNormalized" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNormalized () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNormalized();" />
+      <MemberSignature Language="F#" Value="member this.IsNormalized : unit -&gt; bool" Usage="string.IsNormalized " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -7026,6 +7109,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNormalized(valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsNormalized(System.Text.NormalizationForm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNormalized(System::Text::NormalizationForm normalizationForm);" />
+      <MemberSignature Language="F#" Value="member this.IsNormalized : System.Text.NormalizationForm -&gt; bool" Usage="string.IsNormalized normalizationForm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -7091,6 +7175,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IsNullOrEmpty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNullOrEmpty (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNullOrEmpty(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member IsNullOrEmpty : string -&gt; bool" Usage="System.string.IsNullOrEmpty value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7167,6 +7252,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.IsNullOrWhiteSpace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNullOrWhiteSpace (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNullOrWhiteSpace(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member IsNullOrWhiteSpace : string -&gt; bool" Usage="System.string.IsNullOrWhiteSpace value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7237,6 +7323,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, ParamArray values As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Join : char * obj[] -&gt; string" Usage="System.string.Join (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7270,6 +7357,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, ParamArray value As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, ... cli::array &lt;System::String ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="static member Join : char * string[] -&gt; string" Usage="System.string.Join (separator, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7303,6 +7391,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, values As IEnumerable(Of String)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Join : string * seq&lt;string&gt; -&gt; string" Usage="System.string.Join (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7371,6 +7460,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, ParamArray values As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Join : string * obj[] -&gt; string" Usage="System.string.Join (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7448,6 +7538,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, ParamArray value As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, ... cli::array &lt;System::String ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="static member Join : string * string[] -&gt; string" Usage="System.string.Join (separator, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7515,6 +7606,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.String[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, value As String(), startIndex As Integer, count As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, cli::array &lt;System::String ^&gt; ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="static member Join : char * string[] * int * int -&gt; string" Usage="System.string.Join (separator, value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7546,6 +7638,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.String[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, value As String(), startIndex As Integer, count As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, cli::array &lt;System::String ^&gt; ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="static member Join : string * string[] * int * int -&gt; string" Usage="System.string.Join (separator, value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7627,6 +7720,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join``1(System.Char,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join(Of T) (separator As Char, values As IEnumerable(Of T)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Join(char separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Join : char * seq&lt;'T&gt; -&gt; string" Usage="System.string.Join (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7658,6 +7752,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Join``1(System.String,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Join(Of T) (separator As String, values As IEnumerable(Of T)) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Join(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="static member Join : string * seq&lt;'T&gt; -&gt; string" Usage="System.string.Join (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7745,6 +7840,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : char -&gt; int" Usage="string.LastIndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7806,6 +7902,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string -&gt; int" Usage="string.LastIndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7877,6 +7974,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : char * int -&gt; int" Usage="string.LastIndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7941,6 +8039,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string * int -&gt; int" Usage="string.LastIndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8020,6 +8119,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string * StringComparison -&gt; int" Usage="string.LastIndexOf (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8091,6 +8191,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : char * int * int -&gt; int" Usage="string.LastIndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8163,6 +8264,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string * int * int -&gt; int" Usage="string.LastIndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8261,6 +8363,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string * int * StringComparison -&gt; int" Usage="string.LastIndexOf (value, startIndex, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8339,6 +8442,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, count As Integer, comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, int count, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : string * int * int * StringComparison -&gt; int" Usage="string.LastIndexOf (value, startIndex, count, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8454,6 +8558,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOfAny : char[] -&gt; int" Usage="string.LastIndexOfAny anyOf" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8520,6 +8625,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char(), startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOfAny : char[] * int -&gt; int" Usage="string.LastIndexOfAny (anyOf, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8589,6 +8695,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char(), startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOfAny : char[] * int * int -&gt; int" Usage="string.LastIndexOfAny (anyOf, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8664,6 +8771,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="P:System.String.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.string.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8731,6 +8839,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Normalize" />
       <MemberSignature Language="VB.NET" Value="Public Function Normalize () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Normalize();" />
+      <MemberSignature Language="F#" Value="member this.Normalize : unit -&gt; string" Usage="string.Normalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -8804,6 +8913,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Normalize(valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Normalize(System.Text.NormalizationForm)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Normalize(System::Text::NormalizationForm normalizationForm);" />
+      <MemberSignature Language="F#" Value="member this.Normalize : System.Text.NormalizationForm -&gt; string" Usage="string.Normalize normalizationForm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -8878,6 +8988,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.op_Equality(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As String, b As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::String ^ a, System::String ^ b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : string * string -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8937,6 +9048,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.op_Implicit(System.String)~System.ReadOnlySpan{System.Char}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;char&gt;(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.string.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8961,6 +9073,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.op_Inequality(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As String, b As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::String ^ a, System::String ^ b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : string * string -&gt; bool" Usage="System.string.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9035,6 +9148,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.PadLeft(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function PadLeft (totalWidth As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadLeft(int totalWidth);" />
+      <MemberSignature Language="F#" Value="member this.PadLeft : int -&gt; string" Usage="string.PadLeft totalWidth" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9099,6 +9213,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.PadLeft(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function PadLeft (totalWidth As Integer, paddingChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadLeft(int totalWidth, char paddingChar);" />
+      <MemberSignature Language="F#" Value="member this.PadLeft : int * char -&gt; string" Usage="string.PadLeft (totalWidth, paddingChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9177,6 +9292,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.PadRight(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function PadRight (totalWidth As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadRight(int totalWidth);" />
+      <MemberSignature Language="F#" Value="member this.PadRight : int -&gt; string" Usage="string.PadRight totalWidth" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9241,6 +9357,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.PadRight(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function PadRight (totalWidth As Integer, paddingChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadRight(int totalWidth, char paddingChar);" />
+      <MemberSignature Language="F#" Value="member this.PadRight : int * char -&gt; string" Usage="string.PadRight (totalWidth, paddingChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9319,6 +9436,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Remove(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Remove(int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.Remove : int -&gt; string" Usage="string.Remove startIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9390,6 +9508,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Remove(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer, count As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Remove(int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.Remove : int * int -&gt; string" Usage="string.Remove (startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9480,6 +9599,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(char oldChar, char newChar);" />
+      <MemberSignature Language="F#" Value="member this.Replace : char * char -&gt; string" Usage="string.Replace (oldChar, newChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9552,6 +9672,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue);" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * string -&gt; string" Usage="string.Replace (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9629,6 +9750,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, comparisonType As StringComparison) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * string * StringComparison -&gt; string" Usage="string.Replace (oldValue, newValue, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9658,6 +9780,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, ignoreCase As Boolean, culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * string * bool * System.Globalization.CultureInfo -&gt; string" Usage="string.Replace (oldValue, newValue, ignoreCase, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9789,6 +9912,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (ParamArray separator As Char()) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(... cli::array &lt;char&gt; ^ separator);" />
+      <MemberSignature Language="F#" Value="member this.Split : char[] -&gt; string[]" Usage="string.Split separator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9975,6 +10099,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
+      <MemberSignature Language="F#" Value="member this.Split : char * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10002,6 +10127,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), count As Integer) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, int count);" />
+      <MemberSignature Language="F#" Value="member this.Split : char[] * int -&gt; string[]" Usage="string.Split (separator, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10100,6 +10226,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), options As StringSplitOptions) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, StringSplitOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Split : char[] * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10204,6 +10331,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
+      <MemberSignature Language="F#" Value="member this.Split : string * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10231,6 +10359,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String[],System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String(), options As StringSplitOptions) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;System::String ^&gt; ^ separator, StringSplitOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Split : string[] * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10352,6 +10481,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char,System.Int32,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char, count As Integer, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
+      <MemberSignature Language="F#" Value="member this.Split : char * int * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, count, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10381,6 +10511,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.Int32,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), count As Integer, options As StringSplitOptions) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, int count, StringSplitOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Split : char[] * int * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, count, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10471,6 +10602,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String,System.Int32,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String, count As Integer, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
+      <MemberSignature Language="F#" Value="member this.Split : string * int * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, count, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10500,6 +10632,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String[],System.Int32,System.StringSplitOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String(), count As Integer, options As StringSplitOptions) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;System::String ^&gt; ^ separator, int count, StringSplitOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Split : string[] * int * StringSplitOptions -&gt; string[]" Usage="string.Split (separator, count, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10618,6 +10751,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As Char) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(char value);" />
+      <MemberSignature Language="F#" Value="member this.StartsWith : char -&gt; bool" Usage="string.StartsWith value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10643,6 +10777,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.StartsWith : string -&gt; bool" Usage="string.StartsWith value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10706,6 +10841,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String,System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String, comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="member this.StartsWith : string * StringComparison -&gt; bool" Usage="string.StartsWith (value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10782,6 +10918,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String, ignoreCase As Boolean, culture As CultureInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.StartsWith : string * bool * System.Globalization.CultureInfo -&gt; bool" Usage="string.StartsWith (value, ignoreCase, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -10856,6 +10993,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Substring (startIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(int startIndex);" />
+      <MemberSignature Language="F#" Value="member this.Substring : int -&gt; string" Usage="string.Substring startIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10934,6 +11072,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Substring (startIndex As Integer, length As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="member this.Substring : int * int -&gt; string" Usage="string.Substring (startIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11939,6 +12078,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToCharArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToCharArray () As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;char&gt; ^ ToCharArray();" />
+      <MemberSignature Language="F#" Value="member this.ToCharArray : unit -&gt; char[]" Usage="string.ToCharArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12016,6 +12156,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToCharArray(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToCharArray (startIndex As Integer, length As Integer) As Char()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;char&gt; ^ ToCharArray(int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="member this.ToCharArray : int * int -&gt; char[]" Usage="string.ToCharArray (startIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12115,6 +12256,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToLower" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLower () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLower();" />
+      <MemberSignature Language="F#" Value="member this.ToLower : unit -&gt; string" Usage="string.ToLower " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12178,6 +12320,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToLower(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLower (culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLower(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.ToLower : System.Globalization.CultureInfo -&gt; string" Usage="string.ToLower culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -12238,6 +12381,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToLowerInvariant" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLowerInvariant () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLowerInvariant();" />
+      <MemberSignature Language="F#" Value="member this.ToLowerInvariant : unit -&gt; string" Usage="string.ToLowerInvariant " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12313,6 +12457,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="string.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12365,6 +12510,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="string.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -12424,6 +12570,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToUpper" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUpper () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpper();" />
+      <MemberSignature Language="F#" Value="member this.ToUpper : unit -&gt; string" Usage="string.ToUpper " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12489,6 +12636,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToUpper(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUpper (culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpper(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.ToUpper : System.Globalization.CultureInfo -&gt; string" Usage="string.ToUpper culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -12549,6 +12697,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.ToUpperInvariant" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUpperInvariant () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpperInvariant();" />
+      <MemberSignature Language="F#" Value="member this.ToUpperInvariant : unit -&gt; string" Usage="string.ToUpperInvariant " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12623,6 +12772,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Trim" />
       <MemberSignature Language="VB.NET" Value="Public Function Trim () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim();" />
+      <MemberSignature Language="F#" Value="member this.Trim : unit -&gt; string" Usage="string.Trim " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12687,6 +12837,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Trim(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Trim (trimChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim(char trimChar);" />
+      <MemberSignature Language="F#" Value="member this.Trim : char -&gt; string" Usage="string.Trim trimChar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12712,6 +12863,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.Trim(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Trim (ParamArray trimChars As Char()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim(... cli::array &lt;char&gt; ^ trimChars);" />
+      <MemberSignature Language="F#" Value="member this.Trim : char[] -&gt; string" Usage="string.Trim trimChars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12786,6 +12938,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimEnd () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd();" />
+      <MemberSignature Language="F#" Value="member this.TrimEnd : unit -&gt; string" Usage="string.TrimEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12808,6 +12961,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimEnd (trimChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd(char trimChar);" />
+      <MemberSignature Language="F#" Value="member this.TrimEnd : char -&gt; string" Usage="string.TrimEnd trimChar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12833,6 +12987,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimEnd (ParamArray trimChars As Char()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd(... cli::array &lt;char&gt; ^ trimChars);" />
+      <MemberSignature Language="F#" Value="member this.TrimEnd : char[] -&gt; string" Usage="string.TrimEnd trimChars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12902,6 +13057,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimStart () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart();" />
+      <MemberSignature Language="F#" Value="member this.TrimStart : unit -&gt; string" Usage="string.TrimStart " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12924,6 +13080,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimStart (trimChar As Char) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart(char trimChar);" />
+      <MemberSignature Language="F#" Value="member this.TrimStart : char -&gt; string" Usage="string.TrimStart trimChar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -12949,6 +13106,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TrimStart (ParamArray trimChars As Char()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart(... cli::array &lt;char&gt; ^ trimChars);" />
+      <MemberSignature Language="F#" Value="member this.TrimStart : char[] -&gt; string" Usage="string.TrimStart trimChars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

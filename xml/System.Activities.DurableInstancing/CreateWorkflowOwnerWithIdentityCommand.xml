@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CreateWorkflowOwnerWithIdentityCommand&#xA;Inherits InstancePersistenceCommand" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateWorkflowOwnerWithIdentityCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type CreateWorkflowOwnerWithIdentityCommand = class&#xA;    inherit InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.InstanceOwnerMetadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceOwnerMetadata As IDictionary(Of XName, InstanceValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ InstanceOwnerMetadata { System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceOwnerMetadata : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;" Usage="System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.InstanceOwnerMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.IsTransactionEnlistmentOptional" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="createWorkflowOwnerWithIdentityCommand.Validate view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

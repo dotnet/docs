@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.IExecuteResult" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExecuteResult&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExecuteResult : IDisposable" />
+  <TypeSignature Language="F#" Value="type IExecuteResult = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.IExecuteResult.GetParameterValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParameterValue (parameterIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetParameterValue(int parameterIndex);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterValue : int -&gt; obj" Usage="iExecuteResult.GetParameterValue parameterIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.IExecuteResult.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnValue : obj" Usage="System.Data.Linq.IExecuteResult.ReturnValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

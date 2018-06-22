@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketCloseStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebSocketCloseStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebSocketCloseStatus" />
+  <TypeSignature Language="F#" Value="type WebSocketCloseStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="C++ CLI" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 1005" Usage="System.Net.WebSockets.WebSocketCloseStatus.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.EndpointUnavailable" />
       <MemberSignature Language="VB.NET" Value="EndpointUnavailable" />
       <MemberSignature Language="C++ CLI" Value="EndpointUnavailable" />
+      <MemberSignature Language="F#" Value="EndpointUnavailable = 1001" Usage="System.Net.WebSockets.WebSocketCloseStatus.EndpointUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InternalServerError" />
       <MemberSignature Language="VB.NET" Value="InternalServerError" />
       <MemberSignature Language="C++ CLI" Value="InternalServerError" />
+      <MemberSignature Language="F#" Value="InternalServerError = 1011" Usage="System.Net.WebSockets.WebSocketCloseStatus.InternalServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidMessageType" />
       <MemberSignature Language="VB.NET" Value="InvalidMessageType" />
       <MemberSignature Language="C++ CLI" Value="InvalidMessageType" />
+      <MemberSignature Language="F#" Value="InvalidMessageType = 1003" Usage="System.Net.WebSockets.WebSocketCloseStatus.InvalidMessageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidPayloadData" />
       <MemberSignature Language="VB.NET" Value="InvalidPayloadData" />
       <MemberSignature Language="C++ CLI" Value="InvalidPayloadData" />
+      <MemberSignature Language="F#" Value="InvalidPayloadData = 1007" Usage="System.Net.WebSockets.WebSocketCloseStatus.InvalidPayloadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MandatoryExtension" />
       <MemberSignature Language="VB.NET" Value="MandatoryExtension" />
       <MemberSignature Language="C++ CLI" Value="MandatoryExtension" />
+      <MemberSignature Language="F#" Value="MandatoryExtension = 1010" Usage="System.Net.WebSockets.WebSocketCloseStatus.MandatoryExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MessageTooBig" />
       <MemberSignature Language="VB.NET" Value="MessageTooBig" />
       <MemberSignature Language="C++ CLI" Value="MessageTooBig" />
+      <MemberSignature Language="F#" Value="MessageTooBig = 1009" Usage="System.Net.WebSockets.WebSocketCloseStatus.MessageTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.NormalClosure" />
       <MemberSignature Language="VB.NET" Value="NormalClosure" />
       <MemberSignature Language="C++ CLI" Value="NormalClosure" />
+      <MemberSignature Language="F#" Value="NormalClosure = 1000" Usage="System.Net.WebSockets.WebSocketCloseStatus.NormalClosure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.PolicyViolation" />
       <MemberSignature Language="VB.NET" Value="PolicyViolation" />
       <MemberSignature Language="C++ CLI" Value="PolicyViolation" />
+      <MemberSignature Language="F#" Value="PolicyViolation = 1008" Usage="System.Net.WebSockets.WebSocketCloseStatus.PolicyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.ProtocolError" />
       <MemberSignature Language="VB.NET" Value="ProtocolError" />
       <MemberSignature Language="C++ CLI" Value="ProtocolError" />
+      <MemberSignature Language="F#" Value="ProtocolError = 1002" Usage="System.Net.WebSockets.WebSocketCloseStatus.ProtocolError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>

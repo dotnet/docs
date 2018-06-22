@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AppDomainProtocolHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AppDomainProtocolHandler&#xA;Inherits MarshalByRefObject&#xA;Implements IRegisteredObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainProtocolHandler abstract : MarshalByRefObject, System::Web::Hosting::IRegisteredObject" />
+  <TypeSignature Language="F#" Value="type AppDomainProtocolHandler = class&#xA;    inherit MarshalByRefObject&#xA;    interface IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainProtocolHandler.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="appDomainProtocolHandler.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainProtocolHandler.StartListenerChannel(System.Web.Hosting.IListenerChannelCallback)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StartListenerChannel (listenerChannelCallback As IListenerChannelCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StartListenerChannel(System::Web::Hosting::IListenerChannelCallback ^ listenerChannelCallback);" />
+      <MemberSignature Language="F#" Value="abstract member StartListenerChannel : System.Web.Hosting.IListenerChannelCallback -&gt; unit" Usage="appDomainProtocolHandler.StartListenerChannel listenerChannelCallback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainProtocolHandler.Stop(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Stop (immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Stop(bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member Stop : bool -&gt; unit&#xA;override this.Stop : bool -&gt; unit" Usage="appDomainProtocolHandler.Stop immediate" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.Hosting.IRegisteredObject.Stop(System.Boolean)</InterfaceMember>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainProtocolHandler.StopListenerChannel(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopListenerChannel (listenerChannelId As Integer, immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopListenerChannel(int listenerChannelId, bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopListenerChannel : int * bool -&gt; unit" Usage="appDomainProtocolHandler.StopListenerChannel (listenerChannelId, immediate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainProtocolHandler.StopProtocol(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub StopProtocol (immediate As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void StopProtocol(bool immediate);" />
+      <MemberSignature Language="F#" Value="abstract member StopProtocol : bool -&gt; unit" Usage="appDomainProtocolHandler.StopProtocol immediate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

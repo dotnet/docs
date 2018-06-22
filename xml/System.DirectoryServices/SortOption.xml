@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SortOption" />
   <TypeSignature Language="VB.NET" Value="Public Class SortOption" />
   <TypeSignature Language="C++ CLI" Value="public ref class SortOption" />
+  <TypeSignature Language="F#" Value="type SortOption = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SortOption.#ctor(System.String,System.DirectoryServices.SortDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, direction As SortDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortOption(System::String ^ propertyName, System::DirectoryServices::SortDirection direction);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.SortOption : string * System.DirectoryServices.SortDirection -&gt; System.DirectoryServices.SortOption" Usage="new System.DirectoryServices.SortOption (propertyName, direction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SortOption.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As SortDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SortDirection Direction { System::DirectoryServices::SortDirection get(); void set(System::DirectoryServices::SortDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.DirectoryServices.SortDirection with get, set" Usage="System.DirectoryServices.SortOption.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SortOption.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.DirectoryServices.SortOption.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

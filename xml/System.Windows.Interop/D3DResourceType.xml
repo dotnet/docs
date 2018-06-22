@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.D3DResourceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum D3DResourceType" />
   <TypeSignature Language="C++ CLI" Value="public enum class D3DResourceType" />
+  <TypeSignature Language="F#" Value="type D3DResourceType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Interop.D3DResourceType.IDirect3DSurface9" />
       <MemberSignature Language="VB.NET" Value="IDirect3DSurface9" />
       <MemberSignature Language="C++ CLI" Value="IDirect3DSurface9" />
+      <MemberSignature Language="F#" Value="IDirect3DSurface9 = 0" Usage="System.Windows.Interop.D3DResourceType.IDirect3DSurface9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

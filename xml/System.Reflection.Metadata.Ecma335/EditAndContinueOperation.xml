@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.EditAndContinueOperation" />
   <TypeSignature Language="VB.NET" Value="Public Enum EditAndContinueOperation" />
   <TypeSignature Language="C++ CLI" Value="public enum class EditAndContinueOperation" />
+  <TypeSignature Language="F#" Value="type EditAndContinueOperation = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddEvent" />
       <MemberSignature Language="VB.NET" Value="AddEvent" />
       <MemberSignature Language="C++ CLI" Value="AddEvent" />
+      <MemberSignature Language="F#" Value="AddEvent = 5" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddField" />
       <MemberSignature Language="VB.NET" Value="AddField" />
       <MemberSignature Language="C++ CLI" Value="AddField" />
+      <MemberSignature Language="F#" Value="AddField = 2" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddMethod" />
       <MemberSignature Language="VB.NET" Value="AddMethod" />
       <MemberSignature Language="C++ CLI" Value="AddMethod" />
+      <MemberSignature Language="F#" Value="AddMethod = 1" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddParameter" />
       <MemberSignature Language="VB.NET" Value="AddParameter" />
       <MemberSignature Language="C++ CLI" Value="AddParameter" />
+      <MemberSignature Language="F#" Value="AddParameter = 3" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddProperty" />
       <MemberSignature Language="VB.NET" Value="AddProperty" />
       <MemberSignature Language="C++ CLI" Value="AddProperty" />
+      <MemberSignature Language="F#" Value="AddProperty = 4" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.EditAndContinueOperation.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.Metadata.Ecma335.EditAndContinueOperation.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

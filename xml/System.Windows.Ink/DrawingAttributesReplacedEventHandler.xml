@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributesReplacedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawingAttributesReplacedEventHandler(sender As Object, e As DrawingAttributesReplacedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DrawingAttributesReplacedEventHandler(System::Object ^ sender, DrawingAttributesReplacedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DrawingAttributesReplacedEventHandler = delegate of obj * DrawingAttributesReplacedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

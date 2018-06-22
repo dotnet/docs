@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RoleGroupCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleGroupCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleGroupCollection sealed : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type RoleGroupCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.Add(System.Web.UI.WebControls.RoleGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (group As RoleGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::RoleGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.RoleGroup -&gt; unit" Usage="roleGroupCollection.Add group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.Contains(System.Web.UI.WebControls.RoleGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (group As RoleGroup) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::RoleGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.RoleGroup -&gt; bool" Usage="roleGroupCollection.Contains group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.CopyTo(System.Web.UI.WebControls.RoleGroup[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As RoleGroup(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::RoleGroup ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.RoleGroup[] * int -&gt; unit" Usage="roleGroupCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.GetMatchingRoleGroup(System.Security.Principal.IPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMatchingRoleGroup (user As IPrincipal) As RoleGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::RoleGroup ^ GetMatchingRoleGroup(System::Security::Principal::IPrincipal ^ user);" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingRoleGroup : System.Security.Principal.IPrincipal -&gt; System.Web.UI.WebControls.RoleGroup" Usage="roleGroupCollection.GetMatchingRoleGroup user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.IndexOf(System.Web.UI.WebControls.RoleGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (group As RoleGroup) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::RoleGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.RoleGroup -&gt; int" Usage="roleGroupCollection.IndexOf group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.Insert(System.Int32,System.Web.UI.WebControls.RoleGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, group As RoleGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::RoleGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.RoleGroup -&gt; unit" Usage="roleGroupCollection.Insert (index, group)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RoleGroupCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As RoleGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::RoleGroup ^ default[int] { System::Web::UI::WebControls::RoleGroup ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.RoleGroup" Usage="System.Web.UI.WebControls.RoleGroupCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="roleGroupCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroupCollection.Remove(System.Web.UI.WebControls.RoleGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (group As RoleGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::RoleGroup ^ group);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.RoleGroup -&gt; unit" Usage="roleGroupCollection.Remove group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

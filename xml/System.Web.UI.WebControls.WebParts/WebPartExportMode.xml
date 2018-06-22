@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebPartExportMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WebPartExportMode" />
+  <TypeSignature Language="F#" Value="type WebPartExportMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Web.UI.WebControls.WebParts.WebPartExportMode.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData" />
       <MemberSignature Language="VB.NET" Value="NonSensitiveData" />
       <MemberSignature Language="C++ CLI" Value="NonSensitiveData" />
+      <MemberSignature Language="F#" Value="NonSensitiveData = 2" Usage="System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

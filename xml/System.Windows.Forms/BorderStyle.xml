@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum BorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class BorderStyle" />
+  <TypeSignature Language="F#" Value="type BorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BorderStyle.Fixed3D" />
       <MemberSignature Language="VB.NET" Value="Fixed3D" />
       <MemberSignature Language="C++ CLI" Value="Fixed3D" />
+      <MemberSignature Language="F#" Value="Fixed3D = 2" Usage="System.Windows.Forms.BorderStyle.Fixed3D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BorderStyle.FixedSingle" />
       <MemberSignature Language="VB.NET" Value="FixedSingle" />
       <MemberSignature Language="C++ CLI" Value="FixedSingle" />
+      <MemberSignature Language="F#" Value="FixedSingle = 1" Usage="System.Windows.Forms.BorderStyle.FixedSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.BorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

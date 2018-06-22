@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppDomainManager" />
   <TypeSignature Language="VB.NET" Value="Public Class AppDomainManager&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainManager : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type AppDomainManager = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppDomainManager.ApplicationActivator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ApplicationActivator As ApplicationActivator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::Hosting::ApplicationActivator ^ ApplicationActivator { System::Runtime::Hosting::ApplicationActivator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationActivator : System.Runtime.Hosting.ApplicationActivator" Usage="System.AppDomainManager.ApplicationActivator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CheckSecuritySettings(System.Security.SecurityState)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckSecuritySettings (state As SecurityState) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CheckSecuritySettings(System::Security::SecurityState ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member CheckSecuritySettings : System.Security.SecurityState -&gt; bool&#xA;override this.CheckSecuritySettings : System.Security.SecurityState -&gt; bool" Usage="appDomainManager.CheckSecuritySettings state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CreateDomain(System.String,System.Security.Policy.Evidence,System.AppDomainSetup)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDomain (friendlyName As String, securityInfo As Evidence, appDomainInfo As AppDomainSetup) As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual AppDomain ^ CreateDomain(System::String ^ friendlyName, System::Security::Policy::Evidence ^ securityInfo, AppDomainSetup ^ appDomainInfo);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDomain : string * System.Security.Policy.Evidence * AppDomainSetup -&gt; AppDomain&#xA;override this.CreateDomain : string * System.Security.Policy.Evidence * AppDomainSetup -&gt; AppDomain" Usage="appDomainManager.CreateDomain (friendlyName, securityInfo, appDomainInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CreateDomainHelper(System.String,System.Security.Policy.Evidence,System.AppDomainSetup)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateDomainHelper (friendlyName As String, securityInfo As Evidence, appDomainInfo As AppDomainSetup) As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static AppDomain ^ CreateDomainHelper(System::String ^ friendlyName, System::Security::Policy::Evidence ^ securityInfo, AppDomainSetup ^ appDomainInfo);" />
+      <MemberSignature Language="F#" Value="static member CreateDomainHelper : string * System.Security.Policy.Evidence * AppDomainSetup -&gt; AppDomain" Usage="System.AppDomainManager.CreateDomainHelper (friendlyName, securityInfo, appDomainInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppDomainManager.EntryAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EntryAssembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ EntryAssembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntryAssembly : System.Reflection.Assembly" Usage="System.AppDomainManager.EntryAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppDomainManager.HostExecutionContextManager" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HostExecutionContextManager As HostExecutionContextManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Threading::HostExecutionContextManager ^ HostExecutionContextManager { System::Threading::HostExecutionContextManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostExecutionContextManager : System.Threading.HostExecutionContextManager" Usage="System.AppDomainManager.HostExecutionContextManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppDomainManager.HostSecurityManager" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HostSecurityManager As HostSecurityManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::HostSecurityManager ^ HostSecurityManager { System::Security::HostSecurityManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HostSecurityManager : System.Security.HostSecurityManager" Usage="System.AppDomainManager.HostSecurityManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -331,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppDomainManager.InitializationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property InitializationFlags As AppDomainManagerInitializationOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property AppDomainManagerInitializationOptions InitializationFlags { AppDomainManagerInitializationOptions get(); void set(AppDomainManagerInitializationOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.InitializationFlags : AppDomainManagerInitializationOptions with get, set" Usage="System.AppDomainManager.InitializationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppDomainManager.InitializeNewDomain(System.AppDomainSetup)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeNewDomain (appDomainInfo As AppDomainSetup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeNewDomain(AppDomainSetup ^ appDomainInfo);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeNewDomain : AppDomainSetup -&gt; unit&#xA;override this.InitializeNewDomain : AppDomainSetup -&gt; unit" Usage="appDomainManager.InitializeNewDomain appDomainInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

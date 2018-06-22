@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewItemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewItemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewItemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewItemEventArgs.#ctor(System.Web.UI.WebControls.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As ListViewItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItemEventArgs(System::Web::UI::WebControls::ListViewItem ^ item);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewItemEventArgs : System.Web.UI.WebControls.ListViewItem -&gt; System.Web.UI.WebControls.ListViewItemEventArgs" Usage="new System.Web.UI.WebControls.ListViewItemEventArgs item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewItemEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ListViewItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ListViewItem ^ Item { System::Web::UI::WebControls::ListViewItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.ListViewItem" Usage="System.Web.UI.WebControls.ListViewItemEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.EntityChangedParams" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityChangedParams" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityChangedParams sealed" />
+  <TypeSignature Language="F#" Value="type EntityChangedParams = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataServiceContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::DataServiceContext ^ Context { System::Data::Services::Client::DataServiceContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Services.Client.DataServiceContext" Usage="System.Data.Services.Client.EntityChangedParams.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.Entity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entity As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Entity { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entity : obj" Usage="System.Data.Services.Client.EntityChangedParams.Entity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Data.Services.Client.EntityChangedParams.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.PropertyValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PropertyValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyValue : obj" Usage="System.Data.Services.Client.EntityChangedParams.PropertyValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.SourceEntitySet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceEntitySet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceEntitySet { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceEntitySet : string" Usage="System.Data.Services.Client.EntityChangedParams.SourceEntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityChangedParams.TargetEntitySet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetEntitySet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetEntitySet { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetEntitySet : string" Usage="System.Data.Services.Client.EntityChangedParams.TargetEntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

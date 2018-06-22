@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildResultCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuildResultCode" />
   <TypeSignature Language="C++ CLI" Value="public enum class BuildResultCode" />
+  <TypeSignature Language="F#" Value="type BuildResultCode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildResultCode.Failure" />
       <MemberSignature Language="VB.NET" Value="Failure" />
       <MemberSignature Language="C++ CLI" Value="Failure" />
+      <MemberSignature Language="F#" Value="Failure = 1" Usage="Microsoft.Build.Execution.BuildResultCode.Failure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildResultCode.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="C++ CLI" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="Microsoft.Build.Execution.BuildResultCode.Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

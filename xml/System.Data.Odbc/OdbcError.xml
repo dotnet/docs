@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcError" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcError" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcError sealed" />
+  <TypeSignature Language="F#" Value="type OdbcError = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.Odbc.OdbcError.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.NativeError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NativeError As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NativeError { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NativeError : int" Usage="System.Data.Odbc.OdbcError.NativeError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.Source" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : string" Usage="System.Data.Odbc.OdbcError.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.SQLState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SQLState As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SQLState { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SQLState : string" Usage="System.Data.Odbc.OdbcError.SQLState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcError.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="odbcError.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChartElementCollection(Of T)&#xA;Inherits Collection(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : ChartElementpublic ref class ChartElementCollection abstract : System::Collections::ObjectModel::Collection&lt;T&gt;, IDisposable" />
+  <TypeSignature Language="F#" Value="type ChartElementCollection&lt;'T (requires 'T :&gt; ChartElement)&gt; = class&#xA;    inherit Collection&lt;'T (requires 'T :&gt; ChartElement)&gt;&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="chartElementCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="chartElementCollection.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="chartElementCollection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.InsertItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="chartElementCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Invalidate();" />
+      <MemberSignature Language="F#" Value="abstract member Invalidate : unit -&gt; unit&#xA;override this.Invalidate : unit -&gt; unit" Usage="chartElementCollection.Invalidate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.DataVisualization.Charting.IChartElement.Invalidate</InterfaceMember>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="chartElementCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.ResumeUpdates" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResumeUpdates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResumeUpdates();" />
+      <MemberSignature Language="F#" Value="abstract member ResumeUpdates : unit -&gt; unit&#xA;override this.ResumeUpdates : unit -&gt; unit" Usage="chartElementCollection.ResumeUpdates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -212,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'T -&gt; unit" Usage="chartElementCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.SuspendUpdates" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SuspendUpdates ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SuspendUpdates();" />
+      <MemberSignature Language="F#" Value="abstract member SuspendUpdates : unit -&gt; unit&#xA;override this.SuspendUpdates : unit -&gt; unit" Usage="chartElementCollection.SuspendUpdates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

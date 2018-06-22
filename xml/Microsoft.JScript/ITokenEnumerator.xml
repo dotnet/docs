@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ITokenEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITokenEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITokenEnumerator" />
+  <TypeSignature Language="F#" Value="type ITokenEnumerator = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ITokenEnumerator.GetNext" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNext () As ITokenColorInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ITokenColorInfo ^ GetNext();" />
+      <MemberSignature Language="F#" Value="abstract member GetNext : unit -&gt; Microsoft.JScript.ITokenColorInfo" Usage="iTokenEnumerator.GetNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ITokenEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iTokenEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

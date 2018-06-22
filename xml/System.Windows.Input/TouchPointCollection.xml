@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TouchPointCollection&#xA;Inherits Collection(Of TouchPoint)" />
   <TypeSignature Language="C++ CLI" Value="public ref class TouchPointCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Input::TouchPoint ^&gt;" />
+  <TypeSignature Language="F#" Value="type TouchPointCollection = class&#xA;    inherit Collection&lt;TouchPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

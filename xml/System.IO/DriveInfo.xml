@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.DriveInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DriveInfo&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DriveInfo sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type DriveInfo = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (driveName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveInfo(System::String ^ driveName);" />
+      <MemberSignature Language="F#" Value="new System.IO.DriveInfo : string -&gt; System.IO.DriveInfo" Usage="new System.IO.DriveInfo driveName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.AvailableFreeSpace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableFreeSpace As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long AvailableFreeSpace { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailableFreeSpace : int64" Usage="System.IO.DriveInfo.AvailableFreeSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.DriveFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DriveFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DriveFormat { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DriveFormat : string" Usage="System.IO.DriveInfo.DriveFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -201,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.DriveType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DriveType As DriveType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::DriveType DriveType { System::IO::DriveType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DriveType : System.IO.DriveType" Usage="System.IO.DriveInfo.DriveType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -247,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveInfo.GetDrives" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDrives () As DriveInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::IO::DriveInfo ^&gt; ^ GetDrives();" />
+      <MemberSignature Language="F#" Value="static member GetDrives : unit -&gt; System.IO.DriveInfo[]" Usage="System.IO.DriveInfo.GetDrives " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.IsReady" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReady As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReady { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReady : bool" Usage="System.IO.DriveInfo.IsReady" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -346,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.DriveInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -392,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.RootDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootDirectory As DirectoryInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::DirectoryInfo ^ RootDirectory { System::IO::DirectoryInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootDirectory : System.IO.DirectoryInfo" Usage="System.IO.DriveInfo.RootDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -471,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="driveInfo.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -510,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.TotalFreeSpace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalFreeSpace As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TotalFreeSpace { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalFreeSpace : int64" Usage="System.IO.DriveInfo.TotalFreeSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -559,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.TotalSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TotalSize { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalSize : int64" Usage="System.IO.DriveInfo.TotalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -608,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.DriveInfo.VolumeLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property VolumeLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VolumeLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VolumeLabel : string with get, set" Usage="System.IO.DriveInfo.VolumeLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>

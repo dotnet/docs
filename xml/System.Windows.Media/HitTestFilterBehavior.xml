@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum HitTestFilterBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class HitTestFilterBehavior" />
+  <TypeSignature Language="F#" Value="type HitTestFilterBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@ Pruning a visual tree
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="C++ CLI" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 6" Usage="System.Windows.Media.HitTestFilterBehavior.Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +64,7 @@ Pruning a visual tree
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipChildren" />
       <MemberSignature Language="VB.NET" Value="ContinueSkipChildren" />
       <MemberSignature Language="C++ CLI" Value="ContinueSkipChildren" />
+      <MemberSignature Language="F#" Value="ContinueSkipChildren = 2" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +84,7 @@ Pruning a visual tree
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelf" />
       <MemberSignature Language="VB.NET" Value="ContinueSkipSelf" />
       <MemberSignature Language="C++ CLI" Value="ContinueSkipSelf" />
+      <MemberSignature Language="F#" Value="ContinueSkipSelf = 4" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +104,7 @@ Pruning a visual tree
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren" />
       <MemberSignature Language="VB.NET" Value="ContinueSkipSelfAndChildren" />
       <MemberSignature Language="C++ CLI" Value="ContinueSkipSelfAndChildren" />
+      <MemberSignature Language="F#" Value="ContinueSkipSelfAndChildren = 0" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +124,7 @@ Pruning a visual tree
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 8" Usage="System.Windows.Media.HitTestFilterBehavior.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

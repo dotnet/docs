@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IdentityModelCaches" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentityModelCaches" />
   <TypeSignature Language="C++ CLI" Value="public ref class IdentityModelCaches sealed" />
+  <TypeSignature Language="F#" Value="type IdentityModelCaches = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCaches.SessionSecurityTokenCache" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionSecurityTokenCache As SessionSecurityTokenCache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SessionSecurityTokenCache ^ SessionSecurityTokenCache { System::IdentityModel::Tokens::SessionSecurityTokenCache ^ get(); void set(System::IdentityModel::Tokens::SessionSecurityTokenCache ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionSecurityTokenCache : System.IdentityModel.Tokens.SessionSecurityTokenCache with get, set" Usage="System.IdentityModel.Configuration.IdentityModelCaches.SessionSecurityTokenCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCaches.TokenReplayCache" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenReplayCache As TokenReplayCache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::TokenReplayCache ^ TokenReplayCache { System::IdentityModel::Tokens::TokenReplayCache ^ get(); void set(System::IdentityModel::Tokens::TokenReplayCache ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenReplayCache : System.IdentityModel.Tokens.TokenReplayCache with get, set" Usage="System.IdentityModel.Configuration.IdentityModelCaches.TokenReplayCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextHidden" />
   <TypeSignature Language="VB.NET" Value="Public Class TextHidden&#xA;Inherits TextRun" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextHidden : System::Windows::Media::TextFormatting::TextRun" />
+  <TypeSignature Language="F#" Value="type TextHidden = class&#xA;    inherit TextRun" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextHidden.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextHidden(int length);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextHidden : int -&gt; System.Windows.Media.TextFormatting.TextHidden" Usage="new System.Windows.Media.TextFormatting.TextHidden length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextHidden.CharacterBufferReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::CharacterBufferReference CharacterBufferReference { System::Windows::Media::TextFormatting::CharacterBufferReference get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferReference : System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="System.Windows.Media.TextFormatting.TextHidden.CharacterBufferReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextHidden.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextHidden.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextHidden.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Properties As TextRunProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRunProperties ^ Properties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Windows.Media.TextFormatting.TextRunProperties" Usage="System.Windows.Media.TextFormatting.TextHidden.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

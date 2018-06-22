@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustFeb2005SyncContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWSTrustFeb2005SyncContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="F#" Value="type IWSTrustFeb2005SyncContract = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Cancel(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Cancel(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Cancel : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005Cancel message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005CancelResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005CancelResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005CancelResponse message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Issue(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Issue(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Issue : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005Issue message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005IssueResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005IssueResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005IssueResponse message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Renew(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Renew(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Renew : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005Renew message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005RenewResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005RenewResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005RenewResponse message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Validate(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005Validate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005Validate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005Validate message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessTrustFeb2005ValidateResponse(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessTrustFeb2005ValidateResponse : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iWSTrustFeb2005SyncContract.ProcessTrustFeb2005ValidateResponse message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

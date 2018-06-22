@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerInvitationResponseType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerInvitationResponseType" />
+  <TypeSignature Language="F#" Value="type PeerInvitationResponseType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Accepted" />
       <MemberSignature Language="VB.NET" Value="Accepted" />
       <MemberSignature Language="C++ CLI" Value="Accepted" />
+      <MemberSignature Language="F#" Value="Accepted = 1" Usage="System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Declined" />
       <MemberSignature Language="VB.NET" Value="Declined" />
       <MemberSignature Language="C++ CLI" Value="Declined" />
+      <MemberSignature Language="F#" Value="Declined = 0" Usage="System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Declined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Expired" />
       <MemberSignature Language="VB.NET" Value="Expired" />
       <MemberSignature Language="C++ CLI" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 2" Usage="System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType.Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

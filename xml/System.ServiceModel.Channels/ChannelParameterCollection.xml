@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelParameterCollection&#xA;Inherits Collection(Of Object)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelParameterCollection : System::Collections::ObjectModel::Collection&lt;System::Object ^&gt;" />
+  <TypeSignature Language="F#" Value="type ChannelParameterCollection = class&#xA;    inherit Collection&lt;obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.#ctor(System.ServiceModel.Channels.IChannel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (channel As IChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelParameterCollection(System::ServiceModel::Channels::IChannel ^ channel);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ChannelParameterCollection : System.ServiceModel.Channels.IChannel -&gt; System.ServiceModel.Channels.ChannelParameterCollection" Usage="new System.ServiceModel.Channels.ChannelParameterCollection channel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelParameterCollection.Channel" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Channel As IChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ServiceModel::Channels::IChannel ^ Channel { System::ServiceModel::Channels::IChannel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Channel : System.ServiceModel.Channels.IChannel" Usage="System.ServiceModel.Channels.ChannelParameterCollection.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="channelParameterCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.InsertItem(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * obj -&gt; unit" Usage="channelParameterCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.PropagateChannelParameters(System.ServiceModel.Channels.IChannel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PropagateChannelParameters (innerChannel As IChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PropagateChannelParameters(System::ServiceModel::Channels::IChannel ^ innerChannel);" />
+      <MemberSignature Language="F#" Value="member this.PropagateChannelParameters : System.ServiceModel.Channels.IChannel -&gt; unit" Usage="channelParameterCollection.PropagateChannelParameters innerChannel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="channelParameterCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelParameterCollection.SetItem(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * obj -&gt; unit" Usage="channelParameterCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

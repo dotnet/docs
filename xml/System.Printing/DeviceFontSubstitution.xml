@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.DeviceFontSubstitution" />
   <TypeSignature Language="VB.NET" Value="Public Enum DeviceFontSubstitution" />
   <TypeSignature Language="C++ CLI" Value="public enum class DeviceFontSubstitution" />
+  <TypeSignature Language="F#" Value="type DeviceFontSubstitution = " />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 1" Usage="System.Printing.DeviceFontSubstitution.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.On" />
       <MemberSignature Language="VB.NET" Value="On" />
       <MemberSignature Language="C++ CLI" Value="On" />
+      <MemberSignature Language="F#" Value="On = 2" Usage="System.Printing.DeviceFontSubstitution.On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.DeviceFontSubstitution.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.DeviceFontSubstitution.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

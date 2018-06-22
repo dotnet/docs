@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarState" />
+  <TypeSignature Language="F#" Value="type ScrollBarState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarState.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 4" Usage="System.Windows.Forms.VisualStyles.ScrollBarState.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarState.Hot" />
       <MemberSignature Language="VB.NET" Value="Hot" />
       <MemberSignature Language="C++ CLI" Value="Hot" />
+      <MemberSignature Language="F#" Value="Hot = 2" Usage="System.Windows.Forms.VisualStyles.ScrollBarState.Hot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.Windows.Forms.VisualStyles.ScrollBarState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarState.Pressed" />
       <MemberSignature Language="VB.NET" Value="Pressed" />
       <MemberSignature Language="C++ CLI" Value="Pressed" />
+      <MemberSignature Language="F#" Value="Pressed = 3" Usage="System.Windows.Forms.VisualStyles.ScrollBarState.Pressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpResponseMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpResponseMessage&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseMessage : IDisposable" />
+  <TypeSignature Language="F#" Value="type HttpResponseMessage = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.#ctor(System.Net.HttpStatusCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As HttpStatusCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponseMessage(System::Net::HttpStatusCode statusCode);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpResponseMessage : System.Net.HttpStatusCode -&gt; System.Net.Http.HttpResponseMessage" Usage="new System.Net.Http.HttpResponseMessage statusCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As HttpContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpContent ^ Content { System::Net::Http::HttpContent ^ get(); void set(System::Net::Http::HttpContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Net.Http.HttpContent with get, set" Usage="System.Net.Http.HttpResponseMessage.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpResponseMessage.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="httpResponseMessage.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Function EnsureSuccessStatusCode () As HttpResponseMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Http::HttpResponseMessage ^ EnsureSuccessStatusCode();" />
+      <MemberSignature Language="F#" Value="member this.EnsureSuccessStatusCode : unit -&gt; System.Net.Http.HttpResponseMessage" Usage="httpResponseMessage.EnsureSuccessStatusCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As HttpResponseHeaders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpResponseHeaders ^ Headers { System::Net::Http::Headers::HttpResponseHeaders ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.Http.Headers.HttpResponseHeaders" Usage="System.Net.Http.HttpResponseMessage.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSuccessStatusCode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSuccessStatusCode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSuccessStatusCode : bool" Usage="System.Net.Http.HttpResponseMessage.IsSuccessStatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.ReasonPhrase" />
       <MemberSignature Language="VB.NET" Value="Public Property ReasonPhrase As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReasonPhrase { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReasonPhrase : string with get, set" Usage="System.Net.Http.HttpResponseMessage.ReasonPhrase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.RequestMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestMessage As HttpRequestMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpRequestMessage ^ RequestMessage { System::Net::Http::HttpRequestMessage ^ get(); void set(System::Net::Http::HttpRequestMessage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestMessage : System.Net.Http.HttpRequestMessage with get, set" Usage="System.Net.Http.HttpResponseMessage.RequestMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -388,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As HttpStatusCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); void set(System::Net::HttpStatusCode value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.HttpStatusCode with get, set" Usage="System.Net.Http.HttpResponseMessage.StatusCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -416,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="httpResponseMessage.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -445,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Net.Http.HttpResponseMessage.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

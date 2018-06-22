@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="VB.NET" Value="Public Class Parameter&#xA;Implements ICloneable, IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class Parameter : ICloneable, System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type Parameter = class&#xA;    interface ICloneable&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Parameter(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : string -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.Web.UI.WebControls.Parameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As Parameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Parameter(System::Web::UI::WebControls::Parameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : System.Web.UI.WebControls.Parameter -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.Data.DbType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Parameter(System::String ^ name, System::Data::DbType dbType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : string * System.Data.DbType -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter (name, dbType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.TypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Parameter(System::String ^ name, TypeCode type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : string * TypeCode -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter (name, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Parameter(System::String ^ name, System::Data::DbType dbType, System::String ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter (name, dbType, defaultValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, defaultValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Parameter(System::String ^ name, TypeCode type, System::String ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Parameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.Parameter" Usage="new System.Web.UI.WebControls.Parameter (name, type, defaultValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Web.UI.WebControls.Parameter&#xA;override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="parameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TypeCode ConvertDbTypeToTypeCode(valuetype System.Data.DbType dbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ConvertDbTypeToTypeCode(System.Data.DbType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TypeCode ConvertDbTypeToTypeCode(System::Data::DbType dbType);" />
+      <MemberSignature Language="F#" Value="static member ConvertDbTypeToTypeCode : System.Data.DbType -&gt; TypeCode" Usage="System.Web.UI.WebControls.Parameter.ConvertDbTypeToTypeCode dbType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool with get, set" Usage="System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -439,6 +449,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.DbType ConvertTypeCodeToDbType(valuetype System.TypeCode typeCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ConvertTypeCodeToDbType(System.TypeCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DbType ConvertTypeCodeToDbType(TypeCode typeCode);" />
+      <MemberSignature Language="F#" Value="static member ConvertTypeCodeToDbType : TypeCode -&gt; System.Data.DbType" Usage="System.Web.UI.WebControls.Parameter.ConvertTypeCodeToDbType typeCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -470,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.DbType" />
       <MemberSignature Language="VB.NET" Value="Public Property DbType As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DbType { System::Data::DbType get(); void set(System::Data::DbType value); };" />
+      <MemberSignature Language="F#" Value="member this.DbType : System.Data.DbType with get, set" Usage="System.Web.UI.WebControls.Parameter.DbType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : string with get, set" Usage="System.Web.UI.WebControls.Parameter.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -549,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As ParameterDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); void set(System::Data::ParameterDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection with get, set" Usage="System.Web.UI.WebControls.Parameter.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -592,6 +606,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj&#xA;override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="parameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -633,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.GetDatabaseType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDatabaseType () As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DbType GetDatabaseType();" />
+      <MemberSignature Language="F#" Value="member this.GetDatabaseType : unit -&gt; System.Data.DbType" Usage="parameter.GetDatabaseType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -662,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.Parameter.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -690,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="parameter.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -729,6 +747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.WebControls.Parameter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -776,6 +795,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.OnParameterChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnParameterChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnParameterChanged();" />
+      <MemberSignature Language="F#" Value="member this.OnParameterChanged : unit -&gt; unit" Usage="parameter.OnParameterChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -821,6 +841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="parameter.SaveViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -860,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetDirty ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : unit -&gt; unit&#xA;override this.SetDirty : unit -&gt; unit" Usage="parameter.SetDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -888,6 +910,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Web.UI.WebControls.Parameter.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -955,6 +978,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.Parameter.System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -1084,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="parameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1121,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Parameter.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
+      <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="parameter.TrackViewState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -1146,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TypeCode Type { TypeCode get(); void set(TypeCode value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : TypeCode with get, set" Usage="System.Web.UI.WebControls.Parameter.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1190,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Parameter.ViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewState : System.Web.UI.StateBag" Usage="System.Web.UI.WebControls.Parameter.ViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

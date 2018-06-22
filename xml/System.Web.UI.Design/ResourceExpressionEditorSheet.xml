@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceExpressionEditorSheet&#xA;Inherits ExpressionEditorSheet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceExpressionEditorSheet : System::Web::UI::Design::ExpressionEditorSheet" />
+  <TypeSignature Language="F#" Value="type ResourceExpressionEditorSheet = class&#xA;    inherit ExpressionEditorSheet" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ResourceExpressionEditorSheet.#ctor(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String, serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.ResourceExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ResourceExpressionEditorSheet" Usage="new System.Web.UI.Design.ResourceExpressionEditorSheet (expression, serviceProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ResourceExpressionEditorSheet.ClassKey" />
       <MemberSignature Language="VB.NET" Value="Public Property ClassKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClassKey : string with get, set" Usage="System.Web.UI.Design.ResourceExpressionEditorSheet.ClassKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ResourceExpressionEditorSheet.GetExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpression () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetExpression();" />
+      <MemberSignature Language="F#" Value="override this.GetExpression : unit -&gt; string" Usage="resourceExpressionEditorSheet.GetExpression " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ResourceExpressionEditorSheet.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsValid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsValid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Web.UI.Design.ResourceExpressionEditorSheet.IsValid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ResourceExpressionEditorSheet.ResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceKey : string with get, set" Usage="System.Web.UI.Design.ResourceExpressionEditorSheet.ResourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

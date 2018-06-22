@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ELEMDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class ELEMDESC" />
+  <TypeSignature Language="F#" Value="type ELEMDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.desc" />
       <MemberSignature Language="VB.NET" Value="Public desc As ELEMDESC.DESCUNION " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ELEMDESC::DESCUNION desc;" />
+      <MemberSignature Language="F#" Value="val mutable desc : System.Runtime.InteropServices.ELEMDESC.DESCUNION" Usage="System.Runtime.InteropServices.ELEMDESC.desc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.tdesc" />
       <MemberSignature Language="VB.NET" Value="Public tdesc As TYPEDESC " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::TYPEDESC tdesc;" />
+      <MemberSignature Language="F#" Value="val mutable tdesc : System.Runtime.InteropServices.TYPEDESC" Usage="System.Runtime.InteropServices.ELEMDESC.tdesc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

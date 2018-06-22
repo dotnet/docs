@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ControlFilterExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlFilterExpression&#xA;Inherits DataSourceExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlFilterExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
+  <TypeSignature Language="F#" Value="type ControlFilterExpression = class&#xA;    inherit DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.Column" />
       <MemberSignature Language="VB.NET" Value="Public Property Column As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Column { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Column : string with get, set" Usage="System.Web.DynamicData.ControlFilterExpression.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.ControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.DynamicData.ControlFilterExpression.ControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="controlFilterExpression.GetQueryable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="controlFilterExpression.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="controlFilterExpression.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetContext (owner As Control, context As HttpContext, dataSource As IQueryableDataSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetContext(System::Web::UI::Control ^ owner, System::Web::HttpContext ^ context, System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
+      <MemberSignature Language="F#" Value="override this.SetContext : System.Web.UI.Control * System.Web.HttpContext * System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="controlFilterExpression.SetContext (owner, context, dataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="controlFilterExpression.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

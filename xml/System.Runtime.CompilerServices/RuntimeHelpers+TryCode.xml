@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeHelpers.TryCode" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RuntimeHelpers.TryCode(userData As Object)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void RuntimeHelpers::TryCode(System::Object ^ userData);" />
+  <TypeSignature Language="F#" Value="type RuntimeHelpers.TryCode = delegate of obj -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.RadioButtonState" />
   <TypeSignature Language="VB.NET" Value="Public Enum RadioButtonState" />
   <TypeSignature Language="C++ CLI" Value="public enum class RadioButtonState" />
+  <TypeSignature Language="F#" Value="type RadioButtonState = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedDisabled" />
       <MemberSignature Language="VB.NET" Value="CheckedDisabled" />
       <MemberSignature Language="C++ CLI" Value="CheckedDisabled" />
+      <MemberSignature Language="F#" Value="CheckedDisabled = 8" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.CheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedHot" />
       <MemberSignature Language="VB.NET" Value="CheckedHot" />
       <MemberSignature Language="C++ CLI" Value="CheckedHot" />
+      <MemberSignature Language="F#" Value="CheckedHot = 6" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.CheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedNormal" />
       <MemberSignature Language="VB.NET" Value="CheckedNormal" />
       <MemberSignature Language="C++ CLI" Value="CheckedNormal" />
+      <MemberSignature Language="F#" Value="CheckedNormal = 5" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.CheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedPressed" />
       <MemberSignature Language="VB.NET" Value="CheckedPressed" />
       <MemberSignature Language="C++ CLI" Value="CheckedPressed" />
+      <MemberSignature Language="F#" Value="CheckedPressed = 7" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.CheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedDisabled" />
       <MemberSignature Language="VB.NET" Value="UncheckedDisabled" />
       <MemberSignature Language="C++ CLI" Value="UncheckedDisabled" />
+      <MemberSignature Language="F#" Value="UncheckedDisabled = 4" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedHot" />
       <MemberSignature Language="VB.NET" Value="UncheckedHot" />
       <MemberSignature Language="C++ CLI" Value="UncheckedHot" />
+      <MemberSignature Language="F#" Value="UncheckedHot = 2" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedNormal" />
       <MemberSignature Language="VB.NET" Value="UncheckedNormal" />
       <MemberSignature Language="C++ CLI" Value="UncheckedNormal" />
+      <MemberSignature Language="F#" Value="UncheckedNormal = 1" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedPressed" />
       <MemberSignature Language="VB.NET" Value="UncheckedPressed" />
       <MemberSignature Language="C++ CLI" Value="UncheckedPressed" />
+      <MemberSignature Language="F#" Value="UncheckedPressed = 3" Usage="System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityViewGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityViewGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityViewGenerator" />
+  <TypeSignature Language="F#" Value="type EntityViewGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.Entity.Design.LanguageOption languageOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.#ctor(System.Data.Entity.Design.LanguageOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityViewGenerator(System::Data::Entity::Design::LanguageOption languageOption);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.EntityViewGenerator : System.Data.Entity.Design.LanguageOption -&gt; System.Data.Entity.Design.EntityViewGenerator" Usage="new System.Data.Entity.Design.EntityViewGenerator languageOption" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateViews (mappingCollection As StorageMappingItemCollection, outputWriter As TextWriter) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateViews(System::Data::Mapping::StorageMappingItemCollection ^ mappingCollection, System::IO::TextWriter ^ outputWriter);" />
+      <MemberSignature Language="F#" Value="member this.GenerateViews : System.Data.Mapping.StorageMappingItemCollection * System.IO.TextWriter -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityViewGenerator.GenerateViews (mappingCollection, outputWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateViews (mappingCollection As StorageMappingItemCollection, outputPath As String) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateViews(System::Data::Mapping::StorageMappingItemCollection ^ mappingCollection, System::String ^ outputPath);" />
+      <MemberSignature Language="F#" Value="member this.GenerateViews : System.Data.Mapping.StorageMappingItemCollection * string -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityViewGenerator.GenerateViews (mappingCollection, outputPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.IO.TextWriter,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateViews (mappingCollection As StorageMappingItemCollection, outputWriter As TextWriter, targetEntityFrameworkVersion As Version) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateViews(System::Data::Mapping::StorageMappingItemCollection ^ mappingCollection, System::IO::TextWriter ^ outputWriter, Version ^ targetEntityFrameworkVersion);" />
+      <MemberSignature Language="F#" Value="member this.GenerateViews : System.Data.Mapping.StorageMappingItemCollection * System.IO.TextWriter * Version -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityViewGenerator.GenerateViews (mappingCollection, outputWriter, targetEntityFrameworkVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityViewGenerator.LanguageOption" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageOption As LanguageOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::LanguageOption LanguageOption { System::Data::Entity::Design::LanguageOption get(); void set(System::Data::Entity::Design::LanguageOption value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageOption : System.Data.Entity.Design.LanguageOption with get, set" Usage="System.Data.Entity.Design.EntityViewGenerator.LanguageOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.Validate(System.Data.Mapping.StorageMappingItemCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (mappingCollection As StorageMappingItemCollection) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ Validate(System::Data::Mapping::StorageMappingItemCollection ^ mappingCollection);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Data.Mapping.StorageMappingItemCollection -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="System.Data.Entity.Design.EntityViewGenerator.Validate mappingCollection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityViewGenerator.Validate(System.Data.Mapping.StorageMappingItemCollection,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (mappingCollection As StorageMappingItemCollection, targetEntityFrameworkVersion As Version) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ Validate(System::Data::Mapping::StorageMappingItemCollection ^ mappingCollection, Version ^ targetEntityFrameworkVersion);" />
+      <MemberSignature Language="F#" Value="static member Validate : System.Data.Mapping.StorageMappingItemCollection * Version -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="System.Data.Entity.Design.EntityViewGenerator.Validate (mappingCollection, targetEntityFrameworkVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

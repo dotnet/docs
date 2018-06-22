@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBuildSettings" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBuildSettings" />
+  <TypeSignature Language="F#" Value="type IBuildSettings = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationFile" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationFile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationRequiresElevation" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationRequiresElevation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplicationRequiresElevation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationRequiresElevation : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationRequiresElevation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ApplicationUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ComponentsLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property ComponentsLocation As ComponentsLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::ComponentsLocation ComponentsLocation { Microsoft::Build::Tasks::Deployment::Bootstrapper::ComponentsLocation get(); void set(Microsoft::Build::Tasks::Deployment::Bootstrapper::ComponentsLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentsLocation : Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ComponentsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ComponentsUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ComponentsUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ComponentsUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentsUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ComponentsUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.CopyComponents" />
       <MemberSignature Language="VB.NET" Value="Public Property CopyComponents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CopyComponents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CopyComponents : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.CopyComponents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.FallbackLCID" />
       <MemberSignature Language="VB.NET" Value="Public Property FallbackLCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FallbackLCID { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FallbackLCID : int with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.FallbackLCID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -275,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.LCID" />
       <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.LCID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.OutputPath" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.OutputPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ProductBuilders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductBuilders As ProductBuilderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilderCollection ^ ProductBuilders { Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductBuilders : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.ProductBuilders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -350,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.SupportUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Property Validate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Validate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Validate : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildSettings.Validate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

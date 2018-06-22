@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.PackageSerializationManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PackageSerializationManager&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageSerializationManager abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type PackageSerializationManager = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.PackageSerializationManager.SaveAsXaml(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SaveAsXaml (serializedObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SaveAsXaml(System::Object ^ serializedObject);" />
+      <MemberSignature Language="F#" Value="abstract member SaveAsXaml : obj -&gt; unit" Usage="packageSerializationManager.SaveAsXaml serializedObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.AddressFilterMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AddressFilterMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AddressFilterMode" />
+  <TypeSignature Language="F#" Value="type AddressFilterMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AddressFilterMode.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="C++ CLI" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 2" Usage="System.ServiceModel.AddressFilterMode.Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AddressFilterMode.Exact" />
       <MemberSignature Language="VB.NET" Value="Exact" />
       <MemberSignature Language="C++ CLI" Value="Exact" />
+      <MemberSignature Language="F#" Value="Exact = 0" Usage="System.ServiceModel.AddressFilterMode.Exact" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.AddressFilterMode.Prefix" />
       <MemberSignature Language="VB.NET" Value="Prefix" />
       <MemberSignature Language="C++ CLI" Value="Prefix" />
+      <MemberSignature Language="F#" Value="Prefix = 1" Usage="System.ServiceModel.AddressFilterMode.Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

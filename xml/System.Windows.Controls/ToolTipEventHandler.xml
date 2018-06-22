@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolTipEventHandler(sender As Object, e As ToolTipEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ToolTipEventHandler(System::Object ^ sender, ToolTipEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ToolTipEventHandler = delegate of obj * ToolTipEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

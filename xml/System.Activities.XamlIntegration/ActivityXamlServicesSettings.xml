@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.ActivityXamlServicesSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ActivityXamlServicesSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityXamlServicesSettings" />
+  <TypeSignature Language="F#" Value="type ActivityXamlServicesSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions" />
       <MemberSignature Language="VB.NET" Value="Public Property CompileExpressions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CompileExpressions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CompileExpressions : bool with get, set" Usage="System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.ActivityXamlServicesSettings.LocationReferenceEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public Property LocationReferenceEnvironment As LocationReferenceEnvironment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::LocationReferenceEnvironment ^ LocationReferenceEnvironment { System::Activities::LocationReferenceEnvironment ^ get(); void set(System::Activities::LocationReferenceEnvironment ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocationReferenceEnvironment : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.XamlIntegration.ActivityXamlServicesSettings.LocationReferenceEnvironment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

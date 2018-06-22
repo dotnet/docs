@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ITypeProviderCreator" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeProviderCreator" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeProviderCreator" />
+  <TypeSignature Language="F#" Value="type ITypeProviderCreator = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetLocalAssembly(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocalAssembly (obj As Object) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetLocalAssembly(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalAssembly : obj -&gt; System.Reflection.Assembly" Usage="iTypeProviderCreator.GetLocalAssembly obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetTransientAssembly(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTransientAssembly(System.Reflection.AssemblyName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ GetTransientAssembly(System::Reflection::AssemblyName ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetTransientAssembly : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="iTypeProviderCreator.GetTransientAssembly assemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTypeProvider(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeProvider (obj As Object) As ITypeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Compiler::ITypeProvider ^ GetTypeProvider(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeProvider : obj -&gt; System.Workflow.ComponentModel.Compiler.ITypeProvider" Usage="iTypeProviderCreator.GetTypeProvider obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTypeResolutionService(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeResolutionService (obj As Object) As ITypeResolutionService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::ITypeResolutionService ^ GetTypeResolutionService(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeResolutionService : obj -&gt; System.ComponentModel.Design.ITypeResolutionService" Usage="iTypeProviderCreator.GetTypeResolutionService obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

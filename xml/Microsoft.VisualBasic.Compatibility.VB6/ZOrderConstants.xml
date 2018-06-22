@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ZOrderConstants" />
   <TypeSignature Language="VB.NET" Value="Public Enum ZOrderConstants" />
   <TypeSignature Language="C++ CLI" Value="public enum class ZOrderConstants" />
+  <TypeSignature Language="F#" Value="type ZOrderConstants = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ZOrderConstants.BringToFront" />
       <MemberSignature Language="VB.NET" Value="BringToFront" />
       <MemberSignature Language="C++ CLI" Value="BringToFront" />
+      <MemberSignature Language="F#" Value="BringToFront = 0" Usage="Microsoft.VisualBasic.Compatibility.VB6.ZOrderConstants.BringToFront" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ZOrderConstants.SendToBack" />
       <MemberSignature Language="VB.NET" Value="SendToBack" />
       <MemberSignature Language="C++ CLI" Value="SendToBack" />
+      <MemberSignature Language="F#" Value="SendToBack = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ZOrderConstants.SendToBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

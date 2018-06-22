@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Pens" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pens" />
   <TypeSignature Language="C++ CLI" Value="public ref class Pens sealed" />
+  <TypeSignature Language="F#" Value="type Pens = class" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.AliceBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AliceBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ AliceBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AliceBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.AliceBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.AntiqueWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AntiqueWhite As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ AntiqueWhite { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AntiqueWhite : System.Drawing.Pen" Usage="System.Drawing.Pens.AntiqueWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Aqua" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aqua As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Aqua { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aqua : System.Drawing.Pen" Usage="System.Drawing.Pens.Aqua" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Aquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aquamarine As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Aquamarine { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aquamarine : System.Drawing.Pen" Usage="System.Drawing.Pens.Aquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Azure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Azure As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Azure { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Azure : System.Drawing.Pen" Usage="System.Drawing.Pens.Azure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Beige" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Beige As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Beige { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Beige : System.Drawing.Pen" Usage="System.Drawing.Pens.Beige" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Bisque" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bisque As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Bisque { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bisque : System.Drawing.Pen" Usage="System.Drawing.Pens.Bisque" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Black" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Black As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Black { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Black : System.Drawing.Pen" Usage="System.Drawing.Pens.Black" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BlanchedAlmond" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlanchedAlmond As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ BlanchedAlmond { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlanchedAlmond : System.Drawing.Pen" Usage="System.Drawing.Pens.BlanchedAlmond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Blue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Blue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Blue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Blue : System.Drawing.Pen" Usage="System.Drawing.Pens.Blue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BlueViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlueViolet As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ BlueViolet { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlueViolet : System.Drawing.Pen" Usage="System.Drawing.Pens.BlueViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -336,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Brown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Brown As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Brown { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Brown : System.Drawing.Pen" Usage="System.Drawing.Pens.Brown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -363,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BurlyWood" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BurlyWood As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ BurlyWood { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BurlyWood : System.Drawing.Pen" Usage="System.Drawing.Pens.BurlyWood" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -390,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.CadetBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CadetBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ CadetBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CadetBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.CadetBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -417,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Chartreuse" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chartreuse As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Chartreuse { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chartreuse : System.Drawing.Pen" Usage="System.Drawing.Pens.Chartreuse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -444,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Chocolate" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chocolate As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Chocolate { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chocolate : System.Drawing.Pen" Usage="System.Drawing.Pens.Chocolate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -471,6 +488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Coral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Coral As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Coral { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Coral : System.Drawing.Pen" Usage="System.Drawing.Pens.Coral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -498,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.CornflowerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CornflowerBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ CornflowerBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CornflowerBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.CornflowerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -525,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Cornsilk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cornsilk As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Cornsilk { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cornsilk : System.Drawing.Pen" Usage="System.Drawing.Pens.Cornsilk" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -552,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Crimson" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Crimson As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Crimson { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Crimson : System.Drawing.Pen" Usage="System.Drawing.Pens.Crimson" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -579,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Cyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cyan As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Cyan { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cyan : System.Drawing.Pen" Usage="System.Drawing.Pens.Cyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -606,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -633,6 +656,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkCyan As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkCyan { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkCyan : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -660,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGoldenrod As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkGoldenrod { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGoldenrod : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -687,6 +712,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGray : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -714,6 +740,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -741,6 +768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkKhaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkKhaki As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkKhaki { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkKhaki : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkKhaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -768,6 +796,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkMagenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkMagenta As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkMagenta { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkMagenta : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkMagenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -795,6 +824,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOliveGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOliveGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkOliveGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOliveGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkOliveGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -822,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOrange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrange As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkOrange { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrange : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkOrange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -849,6 +880,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrchid As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkOrchid { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrchid : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -876,6 +908,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkRed As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkRed { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkRed : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -903,6 +936,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSalmon As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkSalmon { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSalmon : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -930,6 +964,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSeaGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkSeaGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSeaGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -957,6 +992,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkSlateBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -984,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkSlateGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateGray : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1011,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkTurquoise As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkTurquoise { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkTurquoise : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1038,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkViolet As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DarkViolet { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkViolet : System.Drawing.Pen" Usage="System.Drawing.Pens.DarkViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1065,6 +1104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DeepPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepPink As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DeepPink { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepPink : System.Drawing.Pen" Usage="System.Drawing.Pens.DeepPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1092,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DeepSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepSkyBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DeepSkyBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepSkyBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.DeepSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1119,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DimGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DimGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DimGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DimGray : System.Drawing.Pen" Usage="System.Drawing.Pens.DimGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1146,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DodgerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DodgerBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ DodgerBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DodgerBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.DodgerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1173,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Firebrick" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Firebrick As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Firebrick { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Firebrick : System.Drawing.Pen" Usage="System.Drawing.Pens.Firebrick" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1200,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.FloralWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FloralWhite As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ FloralWhite { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FloralWhite : System.Drawing.Pen" Usage="System.Drawing.Pens.FloralWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1227,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.ForestGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ForestGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ ForestGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForestGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.ForestGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1254,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Fuchsia" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Fuchsia As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Fuchsia { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fuchsia : System.Drawing.Pen" Usage="System.Drawing.Pens.Fuchsia" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1281,6 +1328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gainsboro" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gainsboro As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Gainsboro { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gainsboro : System.Drawing.Pen" Usage="System.Drawing.Pens.Gainsboro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1308,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.GhostWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GhostWhite As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ GhostWhite { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GhostWhite : System.Drawing.Pen" Usage="System.Drawing.Pens.GhostWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1335,6 +1384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gold As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Gold { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gold : System.Drawing.Pen" Usage="System.Drawing.Pens.Gold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1362,6 +1412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Goldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Goldenrod As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Goldenrod { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Goldenrod : System.Drawing.Pen" Usage="System.Drawing.Pens.Goldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1389,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Gray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gray : System.Drawing.Pen" Usage="System.Drawing.Pens.Gray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1416,6 +1468,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Green" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Green As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Green { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Green : System.Drawing.Pen" Usage="System.Drawing.Pens.Green" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1443,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.GreenYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GreenYellow As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ GreenYellow { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GreenYellow : System.Drawing.Pen" Usage="System.Drawing.Pens.GreenYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1470,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Honeydew" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Honeydew As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Honeydew { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Honeydew : System.Drawing.Pen" Usage="System.Drawing.Pens.Honeydew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1497,6 +1552,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.HotPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotPink As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ HotPink { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotPink : System.Drawing.Pen" Usage="System.Drawing.Pens.HotPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1524,6 +1580,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.IndianRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IndianRed As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ IndianRed { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IndianRed : System.Drawing.Pen" Usage="System.Drawing.Pens.IndianRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1551,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Indigo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indigo As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Indigo { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indigo : System.Drawing.Pen" Usage="System.Drawing.Pens.Indigo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1578,6 +1636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Ivory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ivory As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Ivory { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ivory : System.Drawing.Pen" Usage="System.Drawing.Pens.Ivory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1605,6 +1664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Khaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Khaki As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Khaki { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Khaki : System.Drawing.Pen" Usage="System.Drawing.Pens.Khaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1632,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Lavender" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lavender As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Lavender { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lavender : System.Drawing.Pen" Usage="System.Drawing.Pens.Lavender" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1659,6 +1720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LavenderBlush" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LavenderBlush As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LavenderBlush { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LavenderBlush : System.Drawing.Pen" Usage="System.Drawing.Pens.LavenderBlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1686,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LawnGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LawnGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LawnGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LawnGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.LawnGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1713,6 +1776,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LemonChiffon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LemonChiffon As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LemonChiffon { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LemonChiffon : System.Drawing.Pen" Usage="System.Drawing.Pens.LemonChiffon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1740,6 +1804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.LightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1767,6 +1832,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightCoral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCoral As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightCoral { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCoral : System.Drawing.Pen" Usage="System.Drawing.Pens.LightCoral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1794,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCyan As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightCyan { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCyan : System.Drawing.Pen" Usage="System.Drawing.Pens.LightCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1821,6 +1888,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGoldenrodYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGoldenrodYellow As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightGoldenrodYellow { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGoldenrodYellow : System.Drawing.Pen" Usage="System.Drawing.Pens.LightGoldenrodYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1848,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGray : System.Drawing.Pen" Usage="System.Drawing.Pens.LightGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1875,6 +1944,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.LightGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1902,6 +1972,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightPink As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightPink { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightPink : System.Drawing.Pen" Usage="System.Drawing.Pens.LightPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1929,6 +2000,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSalmon As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightSalmon { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSalmon : System.Drawing.Pen" Usage="System.Drawing.Pens.LightSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1956,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSeaGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightSeaGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSeaGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.LightSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1983,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSkyBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightSkyBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSkyBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.LightSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2010,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSlateGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightSlateGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSlateGray : System.Drawing.Pen" Usage="System.Drawing.Pens.LightSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2037,6 +2112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSteelBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightSteelBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSteelBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.LightSteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2064,6 +2140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightYellow As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LightYellow { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightYellow : System.Drawing.Pen" Usage="System.Drawing.Pens.LightYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2091,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Lime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lime As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Lime { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lime : System.Drawing.Pen" Usage="System.Drawing.Pens.Lime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2118,6 +2196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LimeGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LimeGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ LimeGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LimeGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.LimeGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2145,6 +2224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Linen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Linen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Linen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linen : System.Drawing.Pen" Usage="System.Drawing.Pens.Linen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2172,6 +2252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Magenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Magenta As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Magenta { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Magenta : System.Drawing.Pen" Usage="System.Drawing.Pens.Magenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2199,6 +2280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Maroon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Maroon As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Maroon { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maroon : System.Drawing.Pen" Usage="System.Drawing.Pens.Maroon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2226,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumAquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumAquamarine As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumAquamarine { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumAquamarine : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumAquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2253,6 +2336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2280,6 +2364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumOrchid As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumOrchid { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumOrchid : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2307,6 +2392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumPurple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumPurple As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumPurple { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumPurple : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumPurple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2334,6 +2420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSeaGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumSeaGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSeaGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2361,6 +2448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSlateBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumSlateBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSlateBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2388,6 +2476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSpringGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumSpringGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSpringGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumSpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2415,6 +2504,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumTurquoise As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumTurquoise { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumTurquoise : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2442,6 +2532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumVioletRed As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MediumVioletRed { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumVioletRed : System.Drawing.Pen" Usage="System.Drawing.Pens.MediumVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2469,6 +2560,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MidnightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MidnightBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MidnightBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MidnightBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.MidnightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2496,6 +2588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MintCream" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MintCream As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MintCream { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MintCream : System.Drawing.Pen" Usage="System.Drawing.Pens.MintCream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2523,6 +2616,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MistyRose" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MistyRose As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ MistyRose { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MistyRose : System.Drawing.Pen" Usage="System.Drawing.Pens.MistyRose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2550,6 +2644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Moccasin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Moccasin As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Moccasin { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Moccasin : System.Drawing.Pen" Usage="System.Drawing.Pens.Moccasin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2577,6 +2672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.NavajoWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NavajoWhite As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ NavajoWhite { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavajoWhite : System.Drawing.Pen" Usage="System.Drawing.Pens.NavajoWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2604,6 +2700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Navy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navy As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Navy { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navy : System.Drawing.Pen" Usage="System.Drawing.Pens.Navy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2631,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OldLace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OldLace As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ OldLace { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldLace : System.Drawing.Pen" Usage="System.Drawing.Pens.OldLace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2658,6 +2756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Olive" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Olive As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Olive { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Olive : System.Drawing.Pen" Usage="System.Drawing.Pens.Olive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2685,6 +2784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OliveDrab" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OliveDrab As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ OliveDrab { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OliveDrab : System.Drawing.Pen" Usage="System.Drawing.Pens.OliveDrab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2712,6 +2812,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Orange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orange As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Orange { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orange : System.Drawing.Pen" Usage="System.Drawing.Pens.Orange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2739,6 +2840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OrangeRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OrangeRed As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ OrangeRed { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrangeRed : System.Drawing.Pen" Usage="System.Drawing.Pens.OrangeRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2766,6 +2868,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Orchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orchid As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Orchid { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orchid : System.Drawing.Pen" Usage="System.Drawing.Pens.Orchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2793,6 +2896,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGoldenrod As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PaleGoldenrod { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGoldenrod : System.Drawing.Pen" Usage="System.Drawing.Pens.PaleGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2820,6 +2924,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PaleGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.PaleGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2847,6 +2952,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleTurquoise As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PaleTurquoise { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleTurquoise : System.Drawing.Pen" Usage="System.Drawing.Pens.PaleTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2874,6 +2980,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleVioletRed As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PaleVioletRed { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleVioletRed : System.Drawing.Pen" Usage="System.Drawing.Pens.PaleVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2901,6 +3008,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PapayaWhip" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PapayaWhip As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PapayaWhip { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PapayaWhip : System.Drawing.Pen" Usage="System.Drawing.Pens.PapayaWhip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2928,6 +3036,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PeachPuff" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PeachPuff As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PeachPuff { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeachPuff : System.Drawing.Pen" Usage="System.Drawing.Pens.PeachPuff" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2955,6 +3064,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Peru" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Peru As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Peru { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Peru : System.Drawing.Pen" Usage="System.Drawing.Pens.Peru" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2982,6 +3092,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Pink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pink As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Pink { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pink : System.Drawing.Pen" Usage="System.Drawing.Pens.Pink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3009,6 +3120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Plum" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Plum As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Plum { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Plum : System.Drawing.Pen" Usage="System.Drawing.Pens.Plum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3036,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PowderBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowderBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ PowderBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowderBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.PowderBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3063,6 +3176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Purple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Purple As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Purple { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Purple : System.Drawing.Pen" Usage="System.Drawing.Pens.Purple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3090,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Red" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Red As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Red { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Red : System.Drawing.Pen" Usage="System.Drawing.Pens.Red" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3117,6 +3232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.RosyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RosyBrown As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ RosyBrown { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RosyBrown : System.Drawing.Pen" Usage="System.Drawing.Pens.RosyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3144,6 +3260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.RoyalBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RoyalBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ RoyalBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoyalBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.RoyalBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3171,6 +3288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SaddleBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SaddleBrown As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SaddleBrown { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SaddleBrown : System.Drawing.Pen" Usage="System.Drawing.Pens.SaddleBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3198,6 +3316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Salmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Salmon As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Salmon { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Salmon : System.Drawing.Pen" Usage="System.Drawing.Pens.Salmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3225,6 +3344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SandyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SandyBrown As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SandyBrown { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SandyBrown : System.Drawing.Pen" Usage="System.Drawing.Pens.SandyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3252,6 +3372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SeaGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.SeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3279,6 +3400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SeaShell" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaShell As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SeaShell { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaShell : System.Drawing.Pen" Usage="System.Drawing.Pens.SeaShell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3306,6 +3428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Sienna" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Sienna As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Sienna { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sienna : System.Drawing.Pen" Usage="System.Drawing.Pens.Sienna" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3333,6 +3456,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Silver" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Silver As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Silver { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Silver : System.Drawing.Pen" Usage="System.Drawing.Pens.Silver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3360,6 +3484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SkyBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SkyBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SkyBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.SkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3387,6 +3512,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SlateBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.SlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3414,6 +3540,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateGray As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SlateGray { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateGray : System.Drawing.Pen" Usage="System.Drawing.Pens.SlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3441,6 +3568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Snow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Snow As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Snow { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Snow : System.Drawing.Pen" Usage="System.Drawing.Pens.Snow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3468,6 +3596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SpringGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SpringGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpringGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.SpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3495,6 +3624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SteelBlue As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ SteelBlue { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SteelBlue : System.Drawing.Pen" Usage="System.Drawing.Pens.SteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3522,6 +3652,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Tan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tan As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Tan { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tan : System.Drawing.Pen" Usage="System.Drawing.Pens.Tan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3549,6 +3680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Teal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Teal As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Teal { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Teal : System.Drawing.Pen" Usage="System.Drawing.Pens.Teal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3576,6 +3708,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Thistle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thistle As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Thistle { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thistle : System.Drawing.Pen" Usage="System.Drawing.Pens.Thistle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3603,6 +3736,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Tomato" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tomato As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Tomato { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tomato : System.Drawing.Pen" Usage="System.Drawing.Pens.Tomato" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3630,6 +3764,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Transparent As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Transparent { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transparent : System.Drawing.Pen" Usage="System.Drawing.Pens.Transparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3657,6 +3792,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Turquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Turquoise As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Turquoise { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Turquoise : System.Drawing.Pen" Usage="System.Drawing.Pens.Turquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3684,6 +3820,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Violet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Violet As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Violet { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Violet : System.Drawing.Pen" Usage="System.Drawing.Pens.Violet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3711,6 +3848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Wheat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Wheat As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Wheat { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Wheat : System.Drawing.Pen" Usage="System.Drawing.Pens.Wheat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3738,6 +3876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.White" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property White As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ White { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.White : System.Drawing.Pen" Usage="System.Drawing.Pens.White" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3765,6 +3904,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.WhiteSmoke" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WhiteSmoke As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ WhiteSmoke { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhiteSmoke : System.Drawing.Pen" Usage="System.Drawing.Pens.WhiteSmoke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3792,6 +3932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Yellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Yellow As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ Yellow { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Yellow : System.Drawing.Pen" Usage="System.Drawing.Pens.Yellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3819,6 +3960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.YellowGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YellowGreen As Pen" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Pen ^ YellowGreen { System::Drawing::Pen ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.YellowGreen : System.Drawing.Pen" Usage="System.Drawing.Pens.YellowGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

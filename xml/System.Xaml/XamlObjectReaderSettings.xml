@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectReaderSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlObjectReaderSettings&#xA;Inherits XamlReaderSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectReaderSettings : System::Xaml::XamlReaderSettings" />
+  <TypeSignature Language="F#" Value="type XamlObjectReaderSettings = class&#xA;    inherit XamlReaderSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireExplicitContentVisibility As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireExplicitContentVisibility { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireExplicitContentVisibility : bool with get, set" Usage="System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

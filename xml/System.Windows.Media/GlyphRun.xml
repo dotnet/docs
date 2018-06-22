@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GlyphRun" />
   <TypeSignature Language="VB.NET" Value="Public Class GlyphRun&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlyphRun : System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type GlyphRun = class&#xA;    interface DUCE.IResource&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pixelsPerDip As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphRun(float pixelsPerDip);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphRun : single -&gt; System.Windows.Media.GlyphRun" Usage="new System.Windows.Media.GlyphRun pixelsPerDip" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +95,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Windows.Media.GlyphTypeface,System.Int32,System.Boolean,System.Double,System.Collections.Generic.IList{System.UInt16},System.Windows.Point,System.Collections.Generic.IList{System.Double},System.Collections.Generic.IList{System.Windows.Point},System.Collections.Generic.IList{System.Char},System.String,System.Collections.Generic.IList{System.UInt16},System.Collections.Generic.IList{System.Boolean},System.Windows.Markup.XmlLanguage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphRun(System::Windows::Media::GlyphTypeface ^ glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, System::Collections::Generic::IList&lt;System::UInt16&gt; ^ glyphIndices, System::Windows::Point baselineOrigin, System::Collections::Generic::IList&lt;double&gt; ^ advanceWidths, System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ glyphOffsets, System::Collections::Generic::IList&lt;char&gt; ^ characters, System::String ^ deviceFontName, System::Collections::Generic::IList&lt;System::UInt16&gt; ^ clusterMap, System::Collections::Generic::IList&lt;bool&gt; ^ caretStops, System::Windows::Markup::XmlLanguage ^ language);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphRun : System.Windows.Media.GlyphTypeface * int * bool * double * System.Collections.Generic.IList&lt;uint16&gt; * System.Windows.Point * System.Collections.Generic.IList&lt;double&gt; * System.Collections.Generic.IList&lt;System.Windows.Point&gt; * System.Collections.Generic.IList&lt;char&gt; * string * System.Collections.Generic.IList&lt;uint16&gt; * System.Collections.Generic.IList&lt;bool&gt; * System.Windows.Markup.XmlLanguage -&gt; System.Windows.Media.GlyphRun" Usage="new System.Windows.Media.GlyphRun (glyphTypeface, bidiLevel, isSideways, renderingEmSize, glyphIndices, baselineOrigin, advanceWidths, glyphOffsets, characters, deviceFontName, clusterMap, caretStops, language)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +147,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, float32 pixelsPerDip, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Windows.Media.GlyphTypeface,System.Int32,System.Boolean,System.Double,System.Single,System.Collections.Generic.IList{System.UInt16},System.Windows.Point,System.Collections.Generic.IList{System.Double},System.Collections.Generic.IList{System.Windows.Point},System.Collections.Generic.IList{System.Char},System.String,System.Collections.Generic.IList{System.UInt16},System.Collections.Generic.IList{System.Boolean},System.Windows.Markup.XmlLanguage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphRun(System::Windows::Media::GlyphTypeface ^ glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, float pixelsPerDip, System::Collections::Generic::IList&lt;System::UInt16&gt; ^ glyphIndices, System::Windows::Point baselineOrigin, System::Collections::Generic::IList&lt;double&gt; ^ advanceWidths, System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ glyphOffsets, System::Collections::Generic::IList&lt;char&gt; ^ characters, System::String ^ deviceFontName, System::Collections::Generic::IList&lt;System::UInt16&gt; ^ clusterMap, System::Collections::Generic::IList&lt;bool&gt; ^ caretStops, System::Windows::Markup::XmlLanguage ^ language);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphRun : System.Windows.Media.GlyphTypeface * int * bool * double * single * System.Collections.Generic.IList&lt;uint16&gt; * System.Windows.Point * System.Collections.Generic.IList&lt;double&gt; * System.Collections.Generic.IList&lt;System.Windows.Point&gt; * System.Collections.Generic.IList&lt;char&gt; * string * System.Collections.Generic.IList&lt;uint16&gt; * System.Collections.Generic.IList&lt;bool&gt; * System.Windows.Markup.XmlLanguage -&gt; System.Windows.Media.GlyphRun" Usage="new System.Windows.Media.GlyphRun (glyphTypeface, bidiLevel, isSideways, renderingEmSize, pixelsPerDip, glyphIndices, baselineOrigin, advanceWidths, glyphOffsets, characters, deviceFontName, clusterMap, caretStops, language)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +199,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.AdvanceWidths" />
       <MemberSignature Language="VB.NET" Value="Public Property AdvanceWidths As IList(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;double&gt; ^ AdvanceWidths { System::Collections::Generic::IList&lt;double&gt; ^ get(); void set(System::Collections::Generic::IList&lt;double&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AdvanceWidths : System.Collections.Generic.IList&lt;double&gt; with get, set" Usage="System.Windows.Media.GlyphRun.AdvanceWidths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +235,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.BaselineOrigin" />
       <MemberSignature Language="VB.NET" Value="Public Property BaselineOrigin As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point BaselineOrigin { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.BaselineOrigin : System.Windows.Point with get, set" Usage="System.Windows.Media.GlyphRun.BaselineOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +256,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.BidiLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property BidiLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BidiLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BidiLevel : int with get, set" Usage="System.Windows.Media.GlyphRun.BidiLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +277,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.BuildGeometry" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildGeometry () As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ BuildGeometry();" />
+      <MemberSignature Language="F#" Value="member this.BuildGeometry : unit -&gt; System.Windows.Media.Geometry" Usage="glyphRun.BuildGeometry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -298,6 +306,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.CaretStops" />
       <MemberSignature Language="VB.NET" Value="Public Property CaretStops As IList(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;bool&gt; ^ CaretStops { System::Collections::Generic::IList&lt;bool&gt; ^ get(); void set(System::Collections::Generic::IList&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CaretStops : System.Collections.Generic.IList&lt;bool&gt; with get, set" Usage="System.Windows.Media.GlyphRun.CaretStops" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +342,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.Characters" />
       <MemberSignature Language="VB.NET" Value="Public Property Characters As IList(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;char&gt; ^ Characters { System::Collections::Generic::IList&lt;char&gt; ^ get(); void set(System::Collections::Generic::IList&lt;char&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Characters : System.Collections.Generic.IList&lt;char&gt; with get, set" Usage="System.Windows.Media.GlyphRun.Characters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -361,6 +371,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.ClusterMap" />
       <MemberSignature Language="VB.NET" Value="Public Property ClusterMap As IList(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::UInt16&gt; ^ ClusterMap { System::Collections::Generic::IList&lt;System::UInt16&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::UInt16&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClusterMap : System.Collections.Generic.IList&lt;uint16&gt; with get, set" Usage="System.Windows.Media.GlyphRun.ClusterMap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -400,6 +411,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.ComputeAlignmentBox" />
       <MemberSignature Language="VB.NET" Value="Public Function ComputeAlignmentBox () As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect ComputeAlignmentBox();" />
+      <MemberSignature Language="F#" Value="member this.ComputeAlignmentBox : unit -&gt; System.Windows.Rect" Usage="glyphRun.ComputeAlignmentBox " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +440,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.ComputeInkBoundingBox" />
       <MemberSignature Language="VB.NET" Value="Public Function ComputeInkBoundingBox () As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect ComputeInkBoundingBox();" />
+      <MemberSignature Language="F#" Value="member this.ComputeInkBoundingBox : unit -&gt; System.Windows.Rect" Usage="glyphRun.ComputeInkBoundingBox " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -456,6 +469,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.DeviceFontName" />
       <MemberSignature Language="VB.NET" Value="Public Property DeviceFontName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeviceFontName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontName : string with get, set" Usage="System.Windows.Media.GlyphRun.DeviceFontName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -483,6 +497,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.FontRenderingEmSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontRenderingEmSize As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontRenderingEmSize { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.FontRenderingEmSize : double with get, set" Usage="System.Windows.Media.GlyphRun.FontRenderingEmSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -503,6 +518,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetCaretCharacterHitFromDistance(System.Double,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCaretCharacterHitFromDistance (distance As Double, ByRef isInside As Boolean) As CharacterHit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextFormatting::CharacterHit GetCaretCharacterHitFromDistance(double distance, [Runtime::InteropServices::Out] bool % isInside);" />
+      <MemberSignature Language="F#" Value="member this.GetCaretCharacterHitFromDistance : double *  -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="glyphRun.GetCaretCharacterHitFromDistance (distance, isInside)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -539,6 +555,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDistanceFromCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetDistanceFromCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetDistanceFromCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
+      <MemberSignature Language="F#" Value="member this.GetDistanceFromCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; double" Usage="glyphRun.GetDistanceFromCaretCharacterHit characterHit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -570,6 +587,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextFormatting::CharacterHit GetNextCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
+      <MemberSignature Language="F#" Value="member this.GetNextCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="glyphRun.GetNextCaretCharacterHit characterHit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -600,6 +618,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetPreviousCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextFormatting::CharacterHit GetPreviousCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="glyphRun.GetPreviousCaretCharacterHit characterHit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -631,6 +650,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphIndices" />
       <MemberSignature Language="VB.NET" Value="Public Property GlyphIndices As IList(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::UInt16&gt; ^ GlyphIndices { System::Collections::Generic::IList&lt;System::UInt16&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::UInt16&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphIndices : System.Collections.Generic.IList&lt;uint16&gt; with get, set" Usage="System.Windows.Media.GlyphRun.GlyphIndices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -666,6 +686,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphOffsets" />
       <MemberSignature Language="VB.NET" Value="Public Property GlyphOffsets As IList(Of Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ GlyphOffsets { System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::Windows::Point&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphOffsets : System.Collections.Generic.IList&lt;System.Windows.Point&gt; with get, set" Usage="System.Windows.Media.GlyphRun.GlyphOffsets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -703,6 +724,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphTypeface" />
       <MemberSignature Language="VB.NET" Value="Public Property GlyphTypeface As GlyphTypeface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GlyphTypeface ^ GlyphTypeface { System::Windows::Media::GlyphTypeface ^ get(); void set(System::Windows::Media::GlyphTypeface ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GlyphTypeface : System.Windows.Media.GlyphTypeface with get, set" Usage="System.Windows.Media.GlyphRun.GlyphTypeface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -723,6 +745,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.IsHitTestable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHitTestable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHitTestable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHitTestable : bool" Usage="System.Windows.Media.GlyphRun.IsHitTestable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -744,6 +767,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.IsSideways" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSideways As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSideways { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSideways : bool with get, set" Usage="System.Windows.Media.GlyphRun.IsSideways" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -772,6 +796,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As XmlLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::XmlLanguage ^ Language { System::Windows::Markup::XmlLanguage ^ get(); void set(System::Windows::Markup::XmlLanguage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : System.Windows.Markup.XmlLanguage with get, set" Usage="System.Windows.Media.GlyphRun.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -792,6 +817,7 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.PixelsPerDip" />
       <MemberSignature Language="VB.NET" Value="Public Property PixelsPerDip As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float PixelsPerDip { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerDip : single with get, set" Usage="System.Windows.Media.GlyphRun.PixelsPerDip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

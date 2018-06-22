@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlDataSourceCommandType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlDataSourceCommandType" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceCommandType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceCommandType.StoredProcedure" />
       <MemberSignature Language="VB.NET" Value="StoredProcedure" />
       <MemberSignature Language="C++ CLI" Value="StoredProcedure" />
+      <MemberSignature Language="F#" Value="StoredProcedure = 1" Usage="System.Web.UI.WebControls.SqlDataSourceCommandType.StoredProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceCommandType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Web.UI.WebControls.SqlDataSourceCommandType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

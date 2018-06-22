@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Document" />
   <TypeSignature Language="VB.NET" Value="Public Structure Document" />
   <TypeSignature Language="C++ CLI" Value="public value class Document" />
+  <TypeSignature Language="F#" Value="type Document = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Document.Hash" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hash As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Hash { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hash : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.Document.Hash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Document.HashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As GuidHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GuidHandle HashAlgorithm { System::Reflection::Metadata::GuidHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashAlgorithm : System.Reflection.Metadata.GuidHandle" Usage="System.Reflection.Metadata.Document.HashAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Document.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As GuidHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GuidHandle Language { System::Reflection::Metadata::GuidHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : System.Reflection.Metadata.GuidHandle" Usage="System.Reflection.Metadata.Document.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Document.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As DocumentNameBlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::DocumentNameBlobHandle Name { System::Reflection::Metadata::DocumentNameBlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.DocumentNameBlobHandle" Usage="System.Reflection.Metadata.Document.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

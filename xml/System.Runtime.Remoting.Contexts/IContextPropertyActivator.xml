@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContextPropertyActivator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContextPropertyActivator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContextPropertyActivator" />
+  <TypeSignature Language="F#" Value="type IContextPropertyActivator = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromClientContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollectFromClientContext (msg As IConstructionCallMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollectFromClientContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member CollectFromClientContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit" Usage="iContextPropertyActivator.CollectFromClientContext msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromServerContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollectFromServerContext (msg As IConstructionReturnMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollectFromServerContext(System::Runtime::Remoting::Activation::IConstructionReturnMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member CollectFromServerContext : System.Runtime.Remoting.Activation.IConstructionReturnMessage -&gt; unit" Usage="iContextPropertyActivator.CollectFromServerContext msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverClientContextToServerContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeliverClientContextToServerContext (msg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DeliverClientContextToServerContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member DeliverClientContextToServerContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="iContextPropertyActivator.DeliverClientContextToServerContext msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverServerContextToClientContext(System.Runtime.Remoting.Activation.IConstructionReturnMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeliverServerContextToClientContext (msg As IConstructionReturnMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DeliverServerContextToClientContext(System::Runtime::Remoting::Activation::IConstructionReturnMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member DeliverServerContextToClientContext : System.Runtime.Remoting.Activation.IConstructionReturnMessage -&gt; bool" Usage="iContextPropertyActivator.DeliverServerContextToClientContext msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContextPropertyActivator.IsOKToActivate(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsOKToActivate (msg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOKToActivate(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member IsOKToActivate : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="iContextPropertyActivator.IsOKToActivate msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

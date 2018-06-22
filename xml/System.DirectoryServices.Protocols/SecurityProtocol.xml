@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityProtocol" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityProtocol" />
+  <TypeSignature Language="F#" Value="type SecurityProtocol = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Pct1Client" />
       <MemberSignature Language="VB.NET" Value="Pct1Client" />
       <MemberSignature Language="C++ CLI" Value="Pct1Client" />
+      <MemberSignature Language="F#" Value="Pct1Client = 2" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Pct1Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Pct1Server" />
       <MemberSignature Language="VB.NET" Value="Pct1Server" />
       <MemberSignature Language="C++ CLI" Value="Pct1Server" />
+      <MemberSignature Language="F#" Value="Pct1Server = 1" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Pct1Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Client" />
       <MemberSignature Language="VB.NET" Value="Ssl2Client" />
       <MemberSignature Language="C++ CLI" Value="Ssl2Client" />
+      <MemberSignature Language="F#" Value="Ssl2Client = 8" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Server" />
       <MemberSignature Language="VB.NET" Value="Ssl2Server" />
       <MemberSignature Language="C++ CLI" Value="Ssl2Server" />
+      <MemberSignature Language="F#" Value="Ssl2Server = 4" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Client" />
       <MemberSignature Language="VB.NET" Value="Ssl3Client" />
       <MemberSignature Language="C++ CLI" Value="Ssl3Client" />
+      <MemberSignature Language="F#" Value="Ssl3Client = 32" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Server" />
       <MemberSignature Language="VB.NET" Value="Ssl3Server" />
       <MemberSignature Language="C++ CLI" Value="Ssl3Server" />
+      <MemberSignature Language="F#" Value="Ssl3Server = 16" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Tls1Client" />
       <MemberSignature Language="VB.NET" Value="Tls1Client" />
       <MemberSignature Language="C++ CLI" Value="Tls1Client" />
+      <MemberSignature Language="F#" Value="Tls1Client = 128" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Tls1Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Tls1Server" />
       <MemberSignature Language="VB.NET" Value="Tls1Server" />
       <MemberSignature Language="C++ CLI" Value="Tls1Server" />
+      <MemberSignature Language="F#" Value="Tls1Server = 64" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Tls1Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.FigureStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class FigureStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of NamedElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class FigureStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::NamedElement ^&gt;, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type FigureStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;NamedElement&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.FigureStructure.Add(System.Windows.Documents.DocumentStructures.NamedElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As NamedElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::NamedElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.NamedElement -&gt; unit" Usage="figureStructure.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

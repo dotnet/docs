@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBCodeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class VBCodeProvider&#xA;Inherits CodeDomProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class VBCodeProvider : System::CodeDom::Compiler::CodeDomProvider" />
+  <TypeSignature Language="F#" Value="type VBCodeProvider = class&#xA;    inherit CodeDomProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerOptions As IDictionary(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; VBCodeProvider(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ providerOptions);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.VBCodeProvider : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.VisualBasic.VBCodeProvider" Usage="new Microsoft.VisualBasic.VBCodeProvider providerOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.CreateCompiler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCompiler () As ICodeCompiler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeCompiler ^ CreateCompiler();" />
+      <MemberSignature Language="F#" Value="override this.CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler" Usage="vBCodeProvider.CreateCompiler " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.CreateGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateGenerator () As ICodeGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeGenerator ^ CreateGenerator();" />
+      <MemberSignature Language="F#" Value="override this.CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator" Usage="vBCodeProvider.CreateGenerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBCodeProvider.FileExtension" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FileExtension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileExtension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileExtension : string" Usage="Microsoft.VisualBasic.VBCodeProvider.FileExtension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateCodeFromMember (member As CodeTypeMember, writer As TextWriter, options As CodeGeneratorOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCodeFromMember(System::CodeDom::CodeTypeMember ^ member, System::IO::TextWriter ^ writer, System::CodeDom::Compiler::CodeGeneratorOptions ^ options);" />
+      <MemberSignature Language="F#" Value="override this.GenerateCodeFromMember : System.CodeDom.CodeTypeMember * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="vBCodeProvider.GenerateCodeFromMember (member, writer, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +302,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter GetConverter(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.GetConverter(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter ^ GetConverter(Type ^ type);" />
+      <MemberSignature Language="F#" Value="override this.GetConverter : Type -&gt; System.ComponentModel.TypeConverter" Usage="vBCodeProvider.GetConverter type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBCodeProvider.LanguageOptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LanguageOptions As LanguageOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::CodeDom::Compiler::LanguageOptions LanguageOptions { System::CodeDom::Compiler::LanguageOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageOptions : System.CodeDom.Compiler.LanguageOptions" Usage="Microsoft.VisualBasic.VBCodeProvider.LanguageOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheEntryRemovedCallback(arguments As CacheEntryRemovedArguments)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CacheEntryRemovedCallback(CacheEntryRemovedArguments ^ arguments);" />
+  <TypeSignature Language="F#" Value="type CacheEntryRemovedCallback = delegate of CacheEntryRemovedArguments -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

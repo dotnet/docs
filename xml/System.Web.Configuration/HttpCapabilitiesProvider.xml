@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpCapabilitiesProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpCapabilitiesProvider abstract" />
+  <TypeSignature Language="F#" Value="type HttpCapabilitiesProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesProvider.GetBrowserCapabilities(System.Web.HttpRequest)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBrowserCapabilities (request As HttpRequest) As HttpBrowserCapabilities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::HttpBrowserCapabilities ^ GetBrowserCapabilities(System::Web::HttpRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member GetBrowserCapabilities : System.Web.HttpRequest -&gt; System.Web.HttpBrowserCapabilities" Usage="httpCapabilitiesProvider.GetBrowserCapabilities request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

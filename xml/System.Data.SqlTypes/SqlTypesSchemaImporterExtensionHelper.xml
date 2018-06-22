@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlTypesSchemaImporterExtensionHelper&#xA;Inherits SchemaImporterExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTypesSchemaImporterExtensionHelper : System::Xml::Serialization::Advanced::SchemaImporterExtension" />
+  <TypeSignature Language="F#" Value="type SqlTypesSchemaImporterExtensionHelper = class&#xA;    inherit SchemaImporterExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, destinationType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTypesSchemaImporterExtensionHelper(System::String ^ name, System::String ^ destinationType);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper : string * string -&gt; System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" Usage="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper (name, destinationType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, destinationType As String, direct As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTypesSchemaImporterExtensionHelper(System::String ^ name, System::String ^ destinationType, bool direct);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper : string * string * bool -&gt; System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" Usage="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper (name, destinationType, direct)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.#ctor(System.String,System.String,System.String[],System.CodeDom.CodeNamespaceImport[],System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, targetNamespace As String, references As String(), namespaceImports As CodeNamespaceImport(), destinationType As String, direct As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTypesSchemaImporterExtensionHelper(System::String ^ name, System::String ^ targetNamespace, cli::array &lt;System::String ^&gt; ^ references, cli::array &lt;System::CodeDom::CodeNamespaceImport ^&gt; ^ namespaceImports, System::String ^ destinationType, bool direct);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper : string * string * string[] * System.CodeDom.CodeNamespaceImport[] * string * bool -&gt; System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" Usage="new System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper (name, targetNamespace, references, namespaceImports, destinationType, direct)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.ImportSchemaType(System.Xml.Schema.XmlSchemaType,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportSchemaType (type As XmlSchemaType, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ImportSchemaType(System::Xml::Schema::XmlSchemaType ^ type, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ImportSchemaType : System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string&#xA;override this.ImportSchemaType : System.Xml.Schema.XmlSchemaType * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="sqlTypesSchemaImporterExtensionHelper.ImportSchemaType (type, context, schemas, importer, compileUnit, mainNamespace, options, codeProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.ImportSchemaType(System.String,System.String,System.Xml.Schema.XmlSchemaObject,System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.XmlSchemaImporter,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeNamespace,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ImportSchemaType (name As String, xmlNamespace As String, context As XmlSchemaObject, schemas As XmlSchemas, importer As XmlSchemaImporter, compileUnit As CodeCompileUnit, mainNamespace As CodeNamespace, options As CodeGenerationOptions, codeProvider As CodeDomProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ImportSchemaType(System::String ^ name, System::String ^ xmlNamespace, System::Xml::Schema::XmlSchemaObject ^ context, System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::XmlSchemaImporter ^ importer, System::CodeDom::CodeCompileUnit ^ compileUnit, System::CodeDom::CodeNamespace ^ mainNamespace, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ImportSchemaType : string * string * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string&#xA;override this.ImportSchemaType : string * string * System.Xml.Schema.XmlSchemaObject * System.Xml.Serialization.XmlSchemas * System.Xml.Serialization.XmlSchemaImporter * System.CodeDom.CodeCompileUnit * System.CodeDom.CodeNamespace * System.Xml.Serialization.CodeGenerationOptions * System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="sqlTypesSchemaImporterExtensionHelper.ImportSchemaType (name, xmlNamespace, context, schemas, importer, compileUnit, mainNamespace, options, codeProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.SqlTypesNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly SqlTypesNamespace As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ SqlTypesNamespace;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SqlTypesNamespace : string" Usage="System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper.SqlTypesNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

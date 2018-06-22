@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrintQueueAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrintQueueAttributes" />
+  <TypeSignature Language="F#" Value="type PrintQueueAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Direct" />
       <MemberSignature Language="VB.NET" Value="Direct" />
       <MemberSignature Language="C++ CLI" Value="Direct" />
+      <MemberSignature Language="F#" Value="Direct = 2" Usage="System.Printing.PrintQueueAttributes.Direct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.EnableBidi" />
       <MemberSignature Language="VB.NET" Value="EnableBidi" />
       <MemberSignature Language="C++ CLI" Value="EnableBidi" />
+      <MemberSignature Language="F#" Value="EnableBidi = 2048" Usage="System.Printing.PrintQueueAttributes.EnableBidi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.EnableDevQuery" />
       <MemberSignature Language="VB.NET" Value="EnableDevQuery" />
       <MemberSignature Language="C++ CLI" Value="EnableDevQuery" />
+      <MemberSignature Language="F#" Value="EnableDevQuery = 128" Usage="System.Printing.PrintQueueAttributes.EnableDevQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="C++ CLI" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 32" Usage="System.Printing.PrintQueueAttributes.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.KeepPrintedJobs" />
       <MemberSignature Language="VB.NET" Value="KeepPrintedJobs" />
       <MemberSignature Language="C++ CLI" Value="KeepPrintedJobs" />
+      <MemberSignature Language="F#" Value="KeepPrintedJobs = 256" Usage="System.Printing.PrintQueueAttributes.KeepPrintedJobs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Printing.PrintQueueAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Published" />
       <MemberSignature Language="VB.NET" Value="Published" />
       <MemberSignature Language="C++ CLI" Value="Published" />
+      <MemberSignature Language="F#" Value="Published = 8192" Usage="System.Printing.PrintQueueAttributes.Published" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Queued" />
       <MemberSignature Language="VB.NET" Value="Queued" />
       <MemberSignature Language="C++ CLI" Value="Queued" />
+      <MemberSignature Language="F#" Value="Queued = 1" Usage="System.Printing.PrintQueueAttributes.Queued" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.RawOnly" />
       <MemberSignature Language="VB.NET" Value="RawOnly" />
       <MemberSignature Language="C++ CLI" Value="RawOnly" />
+      <MemberSignature Language="F#" Value="RawOnly = 4096" Usage="System.Printing.PrintQueueAttributes.RawOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.ScheduleCompletedJobsFirst" />
       <MemberSignature Language="VB.NET" Value="ScheduleCompletedJobsFirst" />
       <MemberSignature Language="C++ CLI" Value="ScheduleCompletedJobsFirst" />
+      <MemberSignature Language="F#" Value="ScheduleCompletedJobsFirst = 512" Usage="System.Printing.PrintQueueAttributes.ScheduleCompletedJobsFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -217,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Shared" />
       <MemberSignature Language="VB.NET" Value="Shared" />
       <MemberSignature Language="C++ CLI" Value="Shared" />
+      <MemberSignature Language="F#" Value="Shared = 8" Usage="System.Printing.PrintQueueAttributes.Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

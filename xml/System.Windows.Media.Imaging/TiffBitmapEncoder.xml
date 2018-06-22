@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.TiffBitmapEncoder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TiffBitmapEncoder&#xA;Inherits BitmapEncoder" />
   <TypeSignature Language="C++ CLI" Value="public ref class TiffBitmapEncoder sealed : System::Windows::Media::Imaging::BitmapEncoder" />
+  <TypeSignature Language="F#" Value="type TiffBitmapEncoder = class&#xA;    inherit BitmapEncoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression" />
       <MemberSignature Language="VB.NET" Value="Public Property Compression As TiffCompressOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::TiffCompressOption Compression { System::Windows::Media::Imaging::TiffCompressOption get(); void set(System::Windows::Media::Imaging::TiffCompressOption value); };" />
+      <MemberSignature Language="F#" Value="member this.Compression : System.Windows.Media.Imaging.TiffCompressOption with get, set" Usage="System.Windows.Media.Imaging.TiffBitmapEncoder.Compression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

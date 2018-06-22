@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DeploymentProgressChangedEventHandler(sender As Object, e As DeploymentProgressChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DeploymentProgressChangedEventHandler(System::Object ^ sender, DeploymentProgressChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DeploymentProgressChangedEventHandler = delegate of obj * DeploymentProgressChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

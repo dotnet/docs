@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListBindingHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class ListBindingHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListBindingHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type ListBindingHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetList(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetList (list As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetList(System::Object ^ list);" />
+      <MemberSignature Language="F#" Value="static member GetList : obj -&gt; obj" Usage="System.Windows.Forms.ListBindingHelper.GetList list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetList(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetList (dataSource As Object, dataMember As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetList(System::Object ^ dataSource, System::String ^ dataMember);" />
+      <MemberSignature Language="F#" Value="static member GetList : obj * string -&gt; obj" Usage="System.Windows.Forms.ListBindingHelper.GetList (dataSource, dataMember)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListItemProperties(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListItemProperties (list As Object) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetListItemProperties(System::Object ^ list);" />
+      <MemberSignature Language="F#" Value="static member GetListItemProperties : obj -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="System.Windows.Forms.ListBindingHelper.GetListItemProperties list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListItemProperties(System.Object,System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListItemProperties (list As Object, listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetListItemProperties(System::Object ^ list, cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="static member GetListItemProperties : obj * System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="System.Windows.Forms.ListBindingHelper.GetListItemProperties (list, listAccessors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListItemProperties(System.Object,System.String,System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListItemProperties (dataSource As Object, dataMember As String, listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetListItemProperties(System::Object ^ dataSource, System::String ^ dataMember, cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="static member GetListItemProperties : obj * string * System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="System.Windows.Forms.ListBindingHelper.GetListItemProperties (dataSource, dataMember, listAccessors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListItemType(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListItemType (list As Object) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetListItemType(System::Object ^ list);" />
+      <MemberSignature Language="F#" Value="static member GetListItemType : obj -&gt; Type" Usage="System.Windows.Forms.ListBindingHelper.GetListItemType list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListItemType(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListItemType (dataSource As Object, dataMember As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetListItemType(System::Object ^ dataSource, System::String ^ dataMember);" />
+      <MemberSignature Language="F#" Value="static member GetListItemType : obj * string -&gt; Type" Usage="System.Windows.Forms.ListBindingHelper.GetListItemType (dataSource, dataMember)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBindingHelper.GetListName(System.Object,System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetListName (list As Object, listAccessors As PropertyDescriptor()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetListName(System::Object ^ list, cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="static member GetListName : obj * System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="System.Windows.Forms.ListBindingHelper.GetListName (list, listAccessors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

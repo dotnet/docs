@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DragEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DragEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DragEventArgs sealed : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DragEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DragEventArgs.AllowedEffects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedEffects As DragDropEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DragDropEffects AllowedEffects { System::Windows::DragDropEffects get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowedEffects : System.Windows.DragDropEffects" Usage="System.Windows.DragEventArgs.AllowedEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DragEventArgs.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ Data { System::Windows::IDataObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Windows.IDataObject" Usage="System.Windows.DragEventArgs.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DragEventArgs.Effects" />
       <MemberSignature Language="VB.NET" Value="Public Property Effects As DragDropEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DragDropEffects Effects { System::Windows::DragDropEffects get(); void set(System::Windows::DragDropEffects value); };" />
+      <MemberSignature Language="F#" Value="member this.Effects : System.Windows.DragDropEffects with get, set" Usage="System.Windows.DragEventArgs.Effects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DragEventArgs.GetPosition(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (relativeTo As IInputElement) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="dragEventArgs.GetPosition relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DragEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dragEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DragEventArgs.KeyStates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyStates As DragDropKeyStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DragDropKeyStates KeyStates { System::Windows::DragDropKeyStates get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyStates : System.Windows.DragDropKeyStates" Usage="System.Windows.DragEventArgs.KeyStates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

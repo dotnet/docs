@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ProjectTargetFrameworkAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectTargetFrameworkAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectTargetFrameworkAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ProjectTargetFrameworkAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ProjectTargetFrameworkAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetFrameworkMoniker As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectTargetFrameworkAttribute(System::String ^ targetFrameworkMoniker);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ProjectTargetFrameworkAttribute : string -&gt; System.ComponentModel.Design.ProjectTargetFrameworkAttribute" Usage="new System.ComponentModel.Design.ProjectTargetFrameworkAttribute targetFrameworkMoniker" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ProjectTargetFrameworkAttribute.TargetFrameworkMoniker" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetFrameworkMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string" Usage="System.ComponentModel.Design.ProjectTargetFrameworkAttribute.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

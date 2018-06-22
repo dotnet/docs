@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class X509ThumbprintKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class X509ThumbprintKeyIdentifierClause : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type X509ThumbprintKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ThumbprintKeyIdentifierClause(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause certificate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Byte[])" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificateThumbprint As Byte())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ThumbprintKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ certificateThumbprint);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause : byte[] -&gt; System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause certificateThumbprint" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.GetX509Thumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Function GetX509Thumbprint () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetX509Thumbprint();" />
+      <MemberSignature Language="F#" Value="member this.GetX509Thumbprint : unit -&gt; byte[]" Usage="x509ThumbprintKeyIdentifierClause.GetX509Thumbprint " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509ThumbprintKeyIdentifierClause.Matches certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509ThumbprintKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

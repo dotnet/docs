@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataSourceViewSchemaAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceViewSchemaAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceViewSchemaAccessor" />
+  <TypeSignature Language="F#" Value="type IDataSourceViewSchemaAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataSourceViewSchemaAccessor.DataSourceViewSchema" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSourceViewSchema As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceViewSchema { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceViewSchema : obj with get, set" Usage="System.Web.UI.IDataSourceViewSchemaAccessor.DataSourceViewSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

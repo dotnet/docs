@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.WSTrustMessage" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WSTrustMessage&#xA;Inherits OpenObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSTrustMessage abstract : System::IdentityModel::OpenObject" />
+  <TypeSignature Language="F#" Value="type WSTrustMessage = class&#xA;    inherit OpenObject" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AllowPostdating" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPostdating As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPostdating { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPostdating : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AllowPostdating" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AppliesTo" />
       <MemberSignature Language="VB.NET" Value="Public Property AppliesTo As EndpointReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::EndpointReference ^ AppliesTo { System::IdentityModel::Protocols::WSTrust::EndpointReference ^ get(); void set(System::IdentityModel::Protocols::WSTrust::EndpointReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AppliesTo : System.IdentityModel.Protocols.WSTrust.EndpointReference with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AppliesTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.BinaryExchange" />
       <MemberSignature Language="VB.NET" Value="Public Property BinaryExchange As BinaryExchange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::BinaryExchange ^ BinaryExchange { System::IdentityModel::Protocols::WSTrust::BinaryExchange ^ get(); void set(System::IdentityModel::Protocols::WSTrust::BinaryExchange ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BinaryExchange : System.IdentityModel.Protocols.WSTrust.BinaryExchange with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.BinaryExchange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.CanonicalizationAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property CanonicalizationAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CanonicalizationAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CanonicalizationAlgorithm : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.CanonicalizationAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Context { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncryptionAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionAlgorithm : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptionAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptWith" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptWith As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncryptWith { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptWith : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptWith" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Entropy" />
       <MemberSignature Language="VB.NET" Value="Public Property Entropy As Entropy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Entropy ^ Entropy { System::IdentityModel::Protocols::WSTrust::Entropy ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Entropy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Entropy : System.IdentityModel.Protocols.WSTrust.Entropy with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Entropy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeySizeInBits" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySizeInBits As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; KeySizeInBits { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySizeInBits : Nullable&lt;int&gt; with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeySizeInBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyType" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyType : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -337,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyWrapAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyWrapAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyWrapAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyWrapAlgorithm : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyWrapAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -364,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Lifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property Lifetime As Lifetime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::Lifetime ^ Lifetime { System::IdentityModel::Protocols::WSTrust::Lifetime ^ get(); void set(System::IdentityModel::Protocols::WSTrust::Lifetime ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Lifetime : System.IdentityModel.Protocols.WSTrust.Lifetime with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Lifetime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -391,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.ReplyTo" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyTo As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReplyTo { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplyTo : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.ReplyTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -418,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.RequestType" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestType : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.RequestType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -445,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property SignatureAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignatureAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -472,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignWith" />
       <MemberSignature Language="VB.NET" Value="Public Property SignWith As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignWith { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignWith : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignWith" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -500,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TokenType : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -527,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.UseKey" />
       <MemberSignature Language="VB.NET" Value="Public Property UseKey As UseKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::UseKey ^ UseKey { System::IdentityModel::Protocols::WSTrust::UseKey ^ get(); void set(System::IdentityModel::Protocols::WSTrust::UseKey ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UseKey : System.IdentityModel.Protocols.WSTrust.UseKey with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustMessage.UseKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexTcpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexTcpBindingCollectionElement&#xA;Inherits MexBindingBindingCollectionElement(Of CustomBinding, MexTcpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MexTcpBindingCollectionElement : System::ServiceModel::Configuration::MexBindingBindingCollectionElement&lt;System::ServiceModel::Channels::CustomBinding ^, System::ServiceModel::Configuration::MexTcpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type MexTcpBindingCollectionElement = class&#xA;    inherit MexBindingBindingCollectionElement&lt;CustomBinding, MexTcpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexTcpBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="mexTcpBindingCollectionElement.GetDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

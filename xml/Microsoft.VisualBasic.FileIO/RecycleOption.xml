@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum RecycleOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class RecycleOption" />
+  <TypeSignature Language="F#" Value="type RecycleOption = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.DeletePermanently" />
       <MemberSignature Language="VB.NET" Value="DeletePermanently" />
       <MemberSignature Language="C++ CLI" Value="DeletePermanently" />
+      <MemberSignature Language="F#" Value="DeletePermanently = 2" Usage="Microsoft.VisualBasic.FileIO.RecycleOption.DeletePermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.SendToRecycleBin" />
       <MemberSignature Language="VB.NET" Value="SendToRecycleBin" />
       <MemberSignature Language="C++ CLI" Value="SendToRecycleBin" />
+      <MemberSignature Language="F#" Value="SendToRecycleBin = 3" Usage="Microsoft.VisualBasic.FileIO.RecycleOption.SendToRecycleBin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

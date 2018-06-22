@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationMode" />
+  <TypeSignature Language="F#" Value="type AuthenticationMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined" />
       <MemberSignature Language="VB.NET" Value="ApplicationDefined" />
       <MemberSignature Language="C++ CLI" Value="ApplicationDefined" />
+      <MemberSignature Language="F#" Value="ApplicationDefined = 1" Usage="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows" />
       <MemberSignature Language="VB.NET" Value="Windows" />
       <MemberSignature Language="C++ CLI" Value="Windows" />
+      <MemberSignature Language="F#" Value="Windows = 0" Usage="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

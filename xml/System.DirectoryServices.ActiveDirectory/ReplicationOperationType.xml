@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReplicationOperationType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReplicationOperationType" />
+  <TypeSignature Language="F#" Value="type ReplicationOperationType = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="C++ CLI" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 1" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 2" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Modify" />
       <MemberSignature Language="VB.NET" Value="Modify" />
       <MemberSignature Language="C++ CLI" Value="Modify" />
+      <MemberSignature Language="F#" Value="Modify = 3" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Sync" />
       <MemberSignature Language="VB.NET" Value="Sync" />
       <MemberSignature Language="C++ CLI" Value="Sync" />
+      <MemberSignature Language="F#" Value="Sync = 0" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationType.Sync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationOperationType.UpdateReference" />
       <MemberSignature Language="VB.NET" Value="UpdateReference" />
       <MemberSignature Language="C++ CLI" Value="UpdateReference" />
+      <MemberSignature Language="F#" Value="UpdateReference = 4" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationType.UpdateReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

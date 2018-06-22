@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles" />
   <TypeSignature Language="VB.NET" Value="Public Class CanonicalTrackedOutputFiles" />
   <TypeSignature Language="C++ CLI" Value="public ref class CanonicalTrackedOutputFiles" />
+  <TypeSignature Language="F#" Value="type CanonicalTrackedOutputFiles = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.#ctor(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedOutputFiles(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles : Microsoft.Build.Framework.ITaskItem[] -&gt; Microsoft.Build.Utilities.CanonicalTrackedOutputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles tlogFiles" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedOutputFiles(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] -&gt; Microsoft.Build.Utilities.CanonicalTrackedOutputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles (ownerTask, tlogFiles)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), constructOutputsFromTLogs As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedOutputFiles(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, bool constructOutputsFromTLogs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedOutputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedOutputFiles (ownerTask, tlogFiles, constructOutputsFromTLogs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.AddComputedOutputForSourceRoot(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddComputedOutputForSourceRoot (sourceKey As String, computedOutput As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddComputedOutputForSourceRoot(System::String ^ sourceKey, System::String ^ computedOutput);" />
+      <MemberSignature Language="F#" Value="member this.AddComputedOutputForSourceRoot : string * string -&gt; unit" Usage="canonicalTrackedOutputFiles.AddComputedOutputForSourceRoot (sourceKey, computedOutput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.AddComputedOutputsForSourceRoot(System.String,Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddComputedOutputsForSourceRoot (sourceKey As String, computedOutputs As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddComputedOutputsForSourceRoot(System::String ^ sourceKey, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ computedOutputs);" />
+      <MemberSignature Language="F#" Value="member this.AddComputedOutputsForSourceRoot : string * Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedOutputFiles.AddComputedOutputsForSourceRoot (sourceKey, computedOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.AddComputedOutputsForSourceRoot(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddComputedOutputsForSourceRoot (sourceKey As String, computedOutputs As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddComputedOutputsForSourceRoot(System::String ^ sourceKey, cli::array &lt;System::String ^&gt; ^ computedOutputs);" />
+      <MemberSignature Language="F#" Value="member this.AddComputedOutputsForSourceRoot : string * string[] -&gt; unit" Usage="canonicalTrackedOutputFiles.AddComputedOutputsForSourceRoot (sourceKey, computedOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.DependencyTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyTable As Dictionary(Of String, Dictionary(Of String, DateTime))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Collections::Generic::Dictionary&lt;System::String ^, DateTime&gt; ^&gt; ^ DependencyTable { System::Collections::Generic::Dictionary&lt;System::String ^, System::Collections::Generic::Dictionary&lt;System::String ^, DateTime&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DependencyTable : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.Dictionary&lt;string, DateTime&gt;&gt;" Usage="Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.DependencyTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.OutputsForNonCompositeSource(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function OutputsForNonCompositeSource (ParamArray sources As ITaskItem()) As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputsForNonCompositeSource(... cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="member this.OutputsForNonCompositeSource : Microsoft.Build.Framework.ITaskItem[] -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="canonicalTrackedOutputFiles.OutputsForNonCompositeSource sources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.OutputsForSource(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function OutputsForSource (ParamArray sources As ITaskItem()) As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputsForSource(... cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="member this.OutputsForSource : Microsoft.Build.Framework.ITaskItem[] -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="canonicalTrackedOutputFiles.OutputsForSource sources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -271,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.OutputsForSource(Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function OutputsForSource (sources As ITaskItem(), searchForSubRootsInCompositeRootingMarkers As Boolean) As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputsForSource(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources, bool searchForSubRootsInCompositeRootingMarkers);" />
+      <MemberSignature Language="F#" Value="member this.OutputsForSource : Microsoft.Build.Framework.ITaskItem[] * bool -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="canonicalTrackedOutputFiles.OutputsForSource (sources, searchForSubRootsInCompositeRootingMarkers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -306,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(Microsoft::Build::Framework::ITaskItem ^ source);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -329,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem, correspondingOutput As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ correspondingOutput);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing (source, correspondingOutput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -377,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem(), correspondingOutputs As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ correspondingOutputs);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependenciesFromEntryIfMissing (source, correspondingOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -411,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependencyFromEntry(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependencyFromEntry (source As ITaskItem, dependencyToRemove As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependencyFromEntry(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ dependencyToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependencyFromEntry : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependencyFromEntry (source, dependencyToRemove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -436,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveDependencyFromEntry(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependencyFromEntry (sources As ITaskItem(), dependencyToRemove As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependencyFromEntry(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources, Microsoft::Build::Framework::ITaskItem ^ dependencyToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependencyFromEntry : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveDependencyFromEntry (sources, dependencyToRemove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -470,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(Microsoft::Build::Framework::ITaskItem ^ source);" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveEntriesForSource source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -493,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveEntriesForSource source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -516,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem, correspondingOutput As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ correspondingOutput);" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveEntriesForSource (source, correspondingOutput)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -541,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem(), correspondingOutputs As ITaskItem())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ correspondingOutputs);" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedOutputFiles.RemoveEntriesForSource (source, correspondingOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -566,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveOutputForSourceRoot(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveOutputForSourceRoot (sourceRoot As String, outputPathToRemove As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveOutputForSourceRoot(System::String ^ sourceRoot, System::String ^ outputPathToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveOutputForSourceRoot : string * string -&gt; bool" Usage="canonicalTrackedOutputFiles.RemoveOutputForSourceRoot (sourceRoot, outputPathToRemove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -592,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveRootsWithSharedOutputs(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRootsWithSharedOutputs (sources As ITaskItem()) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ RemoveRootsWithSharedOutputs(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRootsWithSharedOutputs : Microsoft.Build.Framework.ITaskItem[] -&gt; string[]" Usage="canonicalTrackedOutputFiles.RemoveRootsWithSharedOutputs sources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -625,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.SaveTlog" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog();" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : unit -&gt; unit" Usage="canonicalTrackedOutputFiles.SaveTlog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -645,6 +669,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.SaveTlog(Microsoft.Build.Utilities.DependencyFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog (includeInTLog As DependencyFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog(Microsoft::Build::Utilities::DependencyFilter ^ includeInTLog);" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : Microsoft.Build.Utilities.DependencyFilter -&gt; unit" Usage="canonicalTrackedOutputFiles.SaveTlog includeInTLog" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

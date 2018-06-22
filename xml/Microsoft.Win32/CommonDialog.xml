@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.CommonDialog" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CommonDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommonDialog abstract" />
+  <TypeSignature Language="F#" Value="type CommonDialog = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.CheckPermissionsToShowDialog" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CheckPermissionsToShowDialog ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CheckPermissionsToShowDialog();" />
+      <MemberSignature Language="F#" Value="abstract member CheckPermissionsToShowDialog : unit -&gt; unit&#xA;override this.CheckPermissionsToShowDialog : unit -&gt; unit" Usage="commonDialog.CheckPermissionsToShowDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function HookProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr HookProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam);" />
+      <MemberSignature Language="F#" Value="abstract member HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint&#xA;override this.HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="commonDialog.HookProc (hwnd, msg, wParam, lParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="commonDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function RunDialog (hwndOwner As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool RunDialog(IntPtr hwndOwner);" />
+      <MemberSignature Language="F#" Value="abstract member RunDialog : nativeint -&gt; bool" Usage="commonDialog.RunDialog hwndOwner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.ShowDialog" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowDialog () As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Nullable&lt;bool&gt; ShowDialog();" />
+      <MemberSignature Language="F#" Value="abstract member ShowDialog : unit -&gt; Nullable&lt;bool&gt;&#xA;override this.ShowDialog : unit -&gt; Nullable&lt;bool&gt;" Usage="commonDialog.ShowDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowDialog (owner As Window) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;bool&gt; ShowDialog(System::Windows::Window ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : System.Windows.Window -&gt; Nullable&lt;bool&gt;" Usage="commonDialog.ShowDialog owner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.CommonDialog.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="Microsoft.Win32.CommonDialog.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

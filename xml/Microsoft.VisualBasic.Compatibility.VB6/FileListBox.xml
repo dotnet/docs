@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FileListBox" />
   <TypeSignature Language="VB.NET" Value="Public Class FileListBox&#xA;Inherits ListBox" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileListBox : System::Windows::Forms::ListBox" />
+  <TypeSignature Language="F#" Value="type FileListBox = class&#xA;    inherit ListBox" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Archive" />
       <MemberSignature Language="VB.NET" Value="Public Property Archive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Archive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Archive : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Archive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.DisplayMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayMember : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.DisplayMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Hidden" />
       <MemberSignature Language="VB.NET" Value="Public Property Hidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Hidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Hidden : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Hidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ItemHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemHeight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ItemHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ListBox.ObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListBox::ObjectCollection ^ Items { System::Windows::Forms::ListBox::ObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ListBox.ObjectCollection" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Items(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items(Index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Items[int] { System::String ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Items(int) : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Normal" />
       <MemberSignature Language="VB.NET" Value="Public Property Normal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Normal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Normal : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -413,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.OnDoubleClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDoubleClick (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDoubleClick(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDoubleClick : EventArgs -&gt; unit" Usage="fileListBox.OnDoubleClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -447,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.OnPathChange(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPathChange (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPathChange(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPathChange : EventArgs -&gt; unit&#xA;override this.OnPathChange : EventArgs -&gt; unit" Usage="fileListBox.OnPathChange e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.OnPatternChange(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPatternChange (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPatternChange(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPatternChange : EventArgs -&gt; unit&#xA;override this.OnPatternChange : EventArgs -&gt; unit" Usage="fileListBox.OnPatternChange e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -515,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="fileListBox.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -596,6 +611,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.PathChange" />
       <MemberSignature Language="VB.NET" Value="Public Event PathChange As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PathChange;" />
+      <MemberSignature Language="F#" Value="member this.PathChange : EventHandler " Usage="member this.PathChange : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -624,6 +640,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Property Pattern As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pattern { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.PatternChange" />
       <MemberSignature Language="VB.NET" Value="Public Event PatternChange As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PatternChange;" />
+      <MemberSignature Language="F#" Value="member this.PatternChange : EventHandler " Usage="member this.PatternChange : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -690,6 +708,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -728,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="fileListBox.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -758,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Sorted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sorted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Sorted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -799,6 +820,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.System" />
       <MemberSignature Language="VB.NET" Value="Public Property System As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool System { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.System : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.System" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -834,6 +856,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ValueMember" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueMember : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBox.ValueMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

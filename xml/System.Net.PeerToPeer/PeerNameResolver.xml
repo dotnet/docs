@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerNameResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerNameResolver" />
+  <TypeSignature Language="F#" Value="type PeerNameResolver = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.OnResolveCompleted(System.Net.PeerToPeer.ResolveCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnResolveCompleted (e As ResolveCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnResolveCompleted(System::Net::PeerToPeer::ResolveCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnResolveCompleted : System.Net.PeerToPeer.ResolveCompletedEventArgs -&gt; unit" Usage="peerNameResolver.OnResolveCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.OnResolveProgressChanged(System.Net.PeerToPeer.ResolveProgressChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnResolveProgressChanged (e As ResolveProgressChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnResolveProgressChanged(System::Net::PeerToPeer::ResolveProgressChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.OnResolveProgressChanged : System.Net.PeerToPeer.ResolveProgressChangedEventArgs -&gt; unit" Usage="peerNameResolver.OnResolveProgressChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.PeerNameRecordCollection Resolve(class System.Net.PeerToPeer.PeerName peerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::PeerNameRecordCollection ^ Resolve(System::Net::PeerToPeer::PeerName ^ peerName);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Net.PeerToPeer.PeerName -&gt; System.Net.PeerToPeer.PeerNameRecordCollection" Usage="peerNameResolver.Resolve peerName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.PeerNameRecordCollection Resolve(class System.Net.PeerToPeer.PeerName peerName, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::PeerNameRecordCollection ^ Resolve(System::Net::PeerToPeer::PeerName ^ peerName, int maxRecords);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Net.PeerToPeer.PeerName * int -&gt; System.Net.PeerToPeer.PeerNameRecordCollection" Usage="peerNameResolver.Resolve (peerName, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.PeerNameRecordCollection Resolve(class System.Net.PeerToPeer.PeerName peerName, class System.Net.PeerToPeer.Cloud cloud) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::PeerNameRecordCollection ^ Resolve(System::Net::PeerToPeer::PeerName ^ peerName, System::Net::PeerToPeer::Cloud ^ cloud);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Net.PeerToPeer.PeerName * System.Net.PeerToPeer.Cloud -&gt; System.Net.PeerToPeer.PeerNameRecordCollection" Usage="peerNameResolver.Resolve (peerName, cloud)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.PeerNameRecordCollection Resolve(class System.Net.PeerToPeer.PeerName peerName, class System.Net.PeerToPeer.Cloud cloud, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::PeerToPeer::PeerNameRecordCollection ^ Resolve(System::Net::PeerToPeer::PeerName ^ peerName, System::Net::PeerToPeer::Cloud ^ cloud, int maxRecords);" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Net.PeerToPeer.PeerName * System.Net.PeerToPeer.Cloud * int -&gt; System.Net.PeerToPeer.PeerNameRecordCollection" Usage="peerNameResolver.Resolve (peerName, cloud, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -345,6 +352,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAsync(class System.Net.PeerToPeer.PeerName peerName, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::Net::PeerToPeer::PeerName ^ peerName, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.Net.PeerToPeer.PeerName * obj -&gt; unit" Usage="peerNameResolver.ResolveAsync (peerName, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -389,6 +397,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAsync(class System.Net.PeerToPeer.PeerName peerName, int32 maxRecords, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Int32,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::Net::PeerToPeer::PeerName ^ peerName, int maxRecords, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.Net.PeerToPeer.PeerName * int * obj -&gt; unit" Usage="peerNameResolver.ResolveAsync (peerName, maxRecords, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -432,6 +441,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAsync(class System.Net.PeerToPeer.PeerName peerName, class System.Net.PeerToPeer.Cloud cloud, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::Net::PeerToPeer::PeerName ^ peerName, System::Net::PeerToPeer::Cloud ^ cloud, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.Net.PeerToPeer.PeerName * System.Net.PeerToPeer.Cloud * obj -&gt; unit" Usage="peerNameResolver.ResolveAsync (peerName, cloud, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -476,6 +486,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAsync(class System.Net.PeerToPeer.PeerName peerName, class System.Net.PeerToPeer.Cloud cloud, int32 maxRecords, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Int32,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsync(System::Net::PeerToPeer::PeerName ^ peerName, System::Net::PeerToPeer::Cloud ^ cloud, int maxRecords, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsync : System.Net.PeerToPeer.PeerName * System.Net.PeerToPeer.Cloud * int * obj -&gt; unit" Usage="peerNameResolver.ResolveAsync (peerName, cloud, maxRecords, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -531,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameResolver.ResolveAsyncCancel(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAsyncCancel (userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAsyncCancel(System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ResolveAsyncCancel : obj -&gt; unit" Usage="peerNameResolver.ResolveAsyncCancel userState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -574,6 +586,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.PeerNameResolver.ResolveCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveCompleted As EventHandler(Of ResolveCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::ResolveCompletedEventArgs ^&gt; ^ ResolveCompleted;" />
+      <MemberSignature Language="F#" Value="member this.ResolveCompleted : EventHandler&lt;System.Net.PeerToPeer.ResolveCompletedEventArgs&gt; " Usage="member this.ResolveCompleted : System.EventHandler&lt;System.Net.PeerToPeer.ResolveCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -603,6 +616,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.PeerToPeer.PeerNameResolver.ResolveProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveProgressChanged As EventHandler(Of ResolveProgressChangedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::PeerToPeer::ResolveProgressChangedEventArgs ^&gt; ^ ResolveProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.ResolveProgressChanged : EventHandler&lt;System.Net.PeerToPeer.ResolveProgressChangedEventArgs&gt; " Usage="member this.ResolveProgressChanged : System.EventHandler&lt;System.Net.PeerToPeer.ResolveProgressChangedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

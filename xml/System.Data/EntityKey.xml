@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityKey&#xA;Implements IEquatable(Of EntityKey)" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityKey sealed : IEquatable&lt;System::Data::EntityKey ^&gt;" />
+  <TypeSignature Language="F#" Value="type EntityKey = class&#xA;    interface IEquatable&lt;EntityKey&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (qualifiedEntitySetName As String, entityKeyValues As IEnumerable(Of KeyValuePair(Of String, Object)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityKey(System::String ^ qualifiedEntitySetName, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ entityKeyValues);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityKey : string * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Data.EntityKey" Usage="new System.Data.EntityKey (qualifiedEntitySetName, entityKeyValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Data.EntityKeyMember})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (qualifiedEntitySetName As String, entityKeyValues As IEnumerable(Of EntityKeyMember))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityKey(System::String ^ qualifiedEntitySetName, System::Collections::Generic::IEnumerable&lt;System::Data::EntityKeyMember ^&gt; ^ entityKeyValues);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityKey : string * seq&lt;System.Data.EntityKeyMember&gt; -&gt; System.Data.EntityKey" Usage="new System.Data.EntityKey (qualifiedEntitySetName, entityKeyValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.#ctor(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (qualifiedEntitySetName As String, keyName As String, keyValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityKey(System::String ^ qualifiedEntitySetName, System::String ^ keyName, System::Object ^ keyValue);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityKey : string * string * obj -&gt; System.Data.EntityKey" Usage="new System.Data.EntityKey (qualifiedEntitySetName, keyName, keyValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKey.EntityContainerName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityContainerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityContainerName : string with get, set" Usage="System.Data.EntityKey.EntityContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKey.EntityKeyValues" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityKeyValues As EntityKeyMember()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Data::EntityKeyMember ^&gt; ^ EntityKeyValues { cli::array &lt;System::Data::EntityKeyMember ^&gt; ^ get(); void set(cli::array &lt;System::Data::EntityKeyMember ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntityKeyValues : System.Data.EntityKeyMember[] with get, set" Usage="System.Data.EntityKey.EntityKeyValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.EntityKey.EntityNotValidKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EntityNotValidKey As EntityKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::EntityKey ^ EntityNotValidKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EntityNotValidKey : System.Data.EntityKey" Usage="System.Data.EntityKey.EntityNotValidKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKey.EntitySetName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntitySetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string with get, set" Usage="System.Data.EntityKey.EntitySetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.Equals(System.Data.EntityKey)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As EntityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Data::EntityKey ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Data.EntityKey -&gt; bool" Usage="entityKey.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -331,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="entityKey.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EntitySet GetEntitySet(class System.Data.Metadata.Edm.MetadataWorkspace metadataWorkspace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.GetEntitySet(System.Data.Metadata.Edm.MetadataWorkspace)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EntitySet ^ GetEntitySet(System::Data::Metadata::Edm::MetadataWorkspace ^ metadataWorkspace);" />
+      <MemberSignature Language="F#" Value="member this.GetEntitySet : System.Data.Metadata.Edm.MetadataWorkspace -&gt; System.Data.Metadata.Edm.EntitySet" Usage="entityKey.GetEntitySet metadataWorkspace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -400,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="entityKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -421,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityKey.IsTemporary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTemporary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTemporary { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTemporary : bool" Usage="System.Data.EntityKey.IsTemporary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -462,6 +475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.EntityKey.NoEntitySetKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoEntitySetKey As EntityKey " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::EntityKey ^ NoEntitySetKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NoEntitySetKey : System.Data.EntityKey" Usage="System.Data.EntityKey.NoEntitySetKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -488,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.OnDeserialized(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialized (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserialized(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnDeserialized : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entityKey.OnDeserialized context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.OnDeserializing(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserializing (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserializing(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnDeserializing : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entityKey.OnDeserializing context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -570,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.op_Equality(System.Data.EntityKey,System.Data.EntityKey)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (key1 As EntityKey, key2 As EntityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Data::EntityKey ^ key1, System::Data::EntityKey ^ key2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.EntityKey * System.Data.EntityKey -&gt; bool" Usage="key1 = key2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -648,6 +665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.op_Inequality(System.Data.EntityKey,System.Data.EntityKey)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (key1 As EntityKey, key2 As EntityKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Data::EntityKey ^ key1, System::Data::EntityKey ^ key2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.EntityKey * System.Data.EntityKey -&gt; bool" Usage="System.Data.EntityKey.op_Inequality (key1, key2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

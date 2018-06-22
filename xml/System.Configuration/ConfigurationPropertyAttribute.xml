@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationPropertyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConfigurationPropertyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationPropertyAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationPropertyAttribute : string -&gt; System.Configuration.ConfigurationPropertyAttribute" Usage="new System.Configuration.ConfigurationPropertyAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj with get, set" Usage="System.Configuration.ConfigurationPropertyAttribute.DefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.IsDefaultCollection" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefaultCollection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultCollection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultCollection : bool with get, set" Usage="System.Configuration.ConfigurationPropertyAttribute.IsDefaultCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.IsKey" />
       <MemberSignature Language="VB.NET" Value="Public Property IsKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKey { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsKey : bool with get, set" Usage="System.Configuration.ConfigurationPropertyAttribute.IsKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="System.Configuration.ConfigurationPropertyAttribute.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -259,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationPropertyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyAttribute.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As ConfigurationPropertyOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationPropertyOptions Options { System::Configuration::ConfigurationPropertyOptions get(); void set(System::Configuration::ConfigurationPropertyOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Configuration.ConfigurationPropertyOptions with get, set" Usage="System.Configuration.ConfigurationPropertyAttribute.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

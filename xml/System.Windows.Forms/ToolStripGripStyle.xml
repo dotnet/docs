@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripGripStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripGripStyle" />
+  <TypeSignature Language="F#" Value="type ToolStripGripStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripStyle.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="C++ CLI" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 0" Usage="System.Windows.Forms.ToolStripGripStyle.Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripGripStyle.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="C++ CLI" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 1" Usage="System.Windows.Forms.ToolStripGripStyle.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

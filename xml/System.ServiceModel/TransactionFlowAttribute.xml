@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionFlowAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionFlowAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionFlowAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
+  <TypeSignature Language="F#" Value="type TransactionFlowAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,6 +125,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.#ctor(System.ServiceModel.TransactionFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactions As TransactionFlowOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionFlowAttribute(System::ServiceModel::TransactionFlowOption transactions);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.TransactionFlowAttribute : System.ServiceModel.TransactionFlowOption -&gt; System.ServiceModel.TransactionFlowAttribute" Usage="new System.ServiceModel.TransactionFlowAttribute transactions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -292,6 +294,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionFlowAttribute.Transactions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transactions As TransactionFlowOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransactionFlowOption Transactions { System::ServiceModel::TransactionFlowOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transactions : System.ServiceModel.TransactionFlowOption" Usage="System.ServiceModel.TransactionFlowAttribute.Transactions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

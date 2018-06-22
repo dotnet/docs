@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidator`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAnnotationsModelValidator(Of TAttribute)&#xA;Inherits DataAnnotationsModelValidator" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TAttribute&gt;&#xA; where TAttribute : ValidationAttributepublic ref class DataAnnotationsModelValidator : System::Web::ModelBinding::DataAnnotationsModelValidator" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelValidator&lt;'Attribute (requires 'Attribute :&gt; ValidationAttribute)&gt; = class&#xA;    inherit DataAnnotationsModelValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator`1.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As TAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataAnnotationsModelValidator(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, TAttribute attribute);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.DataAnnotationsModelValidator&lt;'Attribute (requires 'Attribute :&gt; System.ComponentModel.DataAnnotations.ValidationAttribute)&gt; : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * 'Attribute -&gt; System.Web.ModelBinding.DataAnnotationsModelValidator&lt;'Attribute (requires 'Attribute :&gt; System.ComponentModel.DataAnnotations.ValidationAttribute)&gt;" Usage="new System.Web.ModelBinding.DataAnnotationsModelValidator&lt;'Attribute (requires 'Attribute :&gt; System.ComponentModel.DataAnnotations.ValidationAttribute)&gt; (metadata, context, attribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DataAnnotationsModelValidator`1.Attribute" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Attribute As TAttribute" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TAttribute Attribute { TAttribute get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attribute : 'Attribute" Usage="System.Web.ModelBinding.DataAnnotationsModelValidator&lt;'Attribute (requires 'Attribute :&gt; System.ComponentModel.DataAnnotations.ValidationAttribute)&gt;.Attribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

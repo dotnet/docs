@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationPartition&#xA;Inherits ActiveDirectoryPartition" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationPartition : System::DirectoryServices::ActiveDirectory::ActiveDirectoryPartition" />
+  <TypeSignature Language="F#" Value="type ApplicationPartition = class&#xA;    inherit ActiveDirectoryPartition" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, distinguishedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationPartition(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ distinguishedName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ApplicationPartition : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.ApplicationPartition" Usage="new System.DirectoryServices.ActiveDirectory.ApplicationPartition (context, distinguishedName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, distinguishedName As String, objectClass As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationPartition(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ distinguishedName, System::String ^ objectClass);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ApplicationPartition : System.DirectoryServices.ActiveDirectory.DirectoryContext * string * string -&gt; System.DirectoryServices.ActiveDirectory.ApplicationPartition" Usage="new System.DirectoryServices.ActiveDirectory.ApplicationPartition (context, distinguishedName, objectClass)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="applicationPartition.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryServers As DirectoryServerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryServerCollection ^ DirectoryServers { System::DirectoryServices::ActiveDirectory::DirectoryServerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectoryServers : System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" Usage="System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="applicationPartition.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDirectoryServers () As ReadOnlyDirectoryServerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyDirectoryServerCollection ^ FindAllDirectoryServers();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDirectoryServers : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" Usage="applicationPartition.FindAllDirectoryServers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDirectoryServers (siteName As String) As ReadOnlyDirectoryServerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyDirectoryServerCollection ^ FindAllDirectoryServers(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllDirectoryServers : string -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" Usage="applicationPartition.FindAllDirectoryServers siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDiscoverableDirectoryServers" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableDirectoryServers () As ReadOnlyDirectoryServerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyDirectoryServerCollection ^ FindAllDiscoverableDirectoryServers();" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableDirectoryServers : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" Usage="applicationPartition.FindAllDiscoverableDirectoryServers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDiscoverableDirectoryServers(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllDiscoverableDirectoryServers (siteName As String) As ReadOnlyDirectoryServerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyDirectoryServerCollection ^ FindAllDiscoverableDirectoryServers(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindAllDiscoverableDirectoryServers : string -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" Usage="applicationPartition.FindAllDiscoverableDirectoryServers siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByName (context As DirectoryContext, distinguishedName As String) As ApplicationPartition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ FindByName(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ distinguishedName);" />
+      <MemberSignature Language="F#" Value="static member FindByName : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.ApplicationPartition" Usage="System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindByName (context, distinguishedName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -382,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindDirectoryServer" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDirectoryServer () As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DirectoryServer ^ FindDirectoryServer();" />
+      <MemberSignature Language="F#" Value="member this.FindDirectoryServer : unit -&gt; System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="applicationPartition.FindDirectoryServer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -407,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindDirectoryServer(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDirectoryServer (forceRediscovery As Boolean) As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DirectoryServer ^ FindDirectoryServer(bool forceRediscovery);" />
+      <MemberSignature Language="F#" Value="member this.FindDirectoryServer : bool -&gt; System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="applicationPartition.FindDirectoryServer forceRediscovery" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -435,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindDirectoryServer(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDirectoryServer (siteName As String) As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DirectoryServer ^ FindDirectoryServer(System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="member this.FindDirectoryServer : string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="applicationPartition.FindDirectoryServer siteName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -467,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindDirectoryServer(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindDirectoryServer (siteName As String, forceRediscovery As Boolean) As DirectoryServer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DirectoryServer ^ FindDirectoryServer(System::String ^ siteName, bool forceRediscovery);" />
+      <MemberSignature Language="F#" Value="member this.FindDirectoryServer : string * bool -&gt; System.DirectoryServices.ActiveDirectory.DirectoryServer" Usage="applicationPartition.FindDirectoryServer (siteName, forceRediscovery)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -501,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.GetApplicationPartition(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetApplicationPartition (context As DirectoryContext) As ApplicationPartition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ GetApplicationPartition(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetApplicationPartition : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.ApplicationPartition" Usage="System.DirectoryServices.ActiveDirectory.ApplicationPartition.GetApplicationPartition context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -533,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.GetDirectoryEntry" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDirectoryEntry () As DirectoryEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
+      <MemberSignature Language="F#" Value="override this.GetDirectoryEntry : unit -&gt; System.DirectoryServices.DirectoryEntry" Usage="applicationPartition.GetDirectoryEntry " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -558,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartition.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="applicationPartition.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -584,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ApplicationPartition.SecurityReferenceDomain" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityReferenceDomain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityReferenceDomain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityReferenceDomain : string with get, set" Usage="System.DirectoryServices.ActiveDirectory.ApplicationPartition.SecurityReferenceDomain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

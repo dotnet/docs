@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ComponentDispatcher" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentDispatcher" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComponentDispatcher abstract sealed" />
+  <TypeSignature Language="F#" Value="type ComponentDispatcher = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.ComponentDispatcher.CurrentKeyboardMessage" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentKeyboardMessage As MSG" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Interop::MSG CurrentKeyboardMessage { System::Windows::Interop::MSG get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentKeyboardMessage : System.Windows.Interop.MSG" Usage="System.Windows.Interop.ComponentDispatcher.CurrentKeyboardMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.EnterThreadModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event EnterThreadModal As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ EnterThreadModal;" />
+      <MemberSignature Language="F#" Value="member this.EnterThreadModal : EventHandler " Usage="member this.EnterThreadModal : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.ComponentDispatcher.IsThreadModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsThreadModal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsThreadModal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsThreadModal : bool" Usage="System.Windows.Interop.ComponentDispatcher.IsThreadModal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.LeaveThreadModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event LeaveThreadModal As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ LeaveThreadModal;" />
+      <MemberSignature Language="F#" Value="member this.LeaveThreadModal : EventHandler " Usage="member this.LeaveThreadModal : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PopModal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PopModal();" />
+      <MemberSignature Language="F#" Value="static member PopModal : unit -&gt; unit" Usage="System.Windows.Interop.ComponentDispatcher.PopModal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PushModal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PushModal();" />
+      <MemberSignature Language="F#" Value="static member PushModal : unit -&gt; unit" Usage="System.Windows.Interop.ComponentDispatcher.PushModal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.RaiseIdle" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RaiseIdle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseIdle();" />
+      <MemberSignature Language="F#" Value="static member RaiseIdle : unit -&gt; unit" Usage="System.Windows.Interop.ComponentDispatcher.RaiseIdle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage(System.Windows.Interop.MSG@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RaiseThreadMessage (ByRef msg As MSG) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RaiseThreadMessage(System::Windows::Interop::MSG % msg);" />
+      <MemberSignature Language="F#" Value="static member RaiseThreadMessage :  -&gt; bool" Usage="System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThreadFilterMessage As ThreadMessageEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Windows::Interop::ThreadMessageEventHandler ^ ThreadFilterMessage;" />
+      <MemberSignature Language="F#" Value="member this.ThreadFilterMessage : System.Windows.Interop.ThreadMessageEventHandler " Usage="member this.ThreadFilterMessage : System.Windows.Interop.ThreadMessageEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -315,6 +325,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadIdle" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThreadIdle As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ ThreadIdle;" />
+      <MemberSignature Language="F#" Value="member this.ThreadIdle : EventHandler " Usage="member this.ThreadIdle : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -352,6 +363,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThreadPreprocessMessage As ThreadMessageEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Windows::Interop::ThreadMessageEventHandler ^ ThreadPreprocessMessage;" />
+      <MemberSignature Language="F#" Value="member this.ThreadPreprocessMessage : System.Windows.Interop.ThreadMessageEventHandler " Usage="member this.ThreadPreprocessMessage : System.Windows.Interop.ThreadMessageEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Mouse" />
   <TypeSignature Language="VB.NET" Value="Public Class Mouse" />
   <TypeSignature Language="C++ CLI" Value="public ref class Mouse abstract sealed" />
+  <TypeSignature Language="F#" Value="type Mouse = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddGotMouseCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddGotMouseCaptureHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddGotMouseCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddGotMouseCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddGotMouseCaptureHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddLostMouseCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddLostMouseCaptureHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddLostMouseCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddLostMouseCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddLostMouseCaptureHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseDownHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseDownHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseDownHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseEnterHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseEnterHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseEnterHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseEnterHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseEnterHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseLeaveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseLeaveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseLeaveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseLeaveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseLeaveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseMoveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseMoveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseMoveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseMoveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseUpHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseUpHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseUpHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddMouseWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddMouseWheelHandler (element As DependencyObject, handler As MouseWheelEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddMouseWheelHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseWheelEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddMouseWheelHandler : System.Windows.DependencyObject * System.Windows.Input.MouseWheelEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddMouseWheelHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseDownHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseDownHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseDownHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseDownOutsideCapturedElementHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseDownOutsideCapturedElementHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseDownOutsideCapturedElementHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseDownOutsideCapturedElementHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseDownOutsideCapturedElementHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseMoveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseMoveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseMoveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseMoveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -309,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseUpHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseUpHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseUpHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -334,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseUpOutsideCapturedElementHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseUpOutsideCapturedElementHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseUpOutsideCapturedElementHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseUpOutsideCapturedElementHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseUpOutsideCapturedElementHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddPreviewMouseWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewMouseWheelHandler (element As DependencyObject, handler As MouseWheelEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewMouseWheelHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseWheelEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddPreviewMouseWheelHandler : System.Windows.DependencyObject * System.Windows.Input.MouseWheelEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddPreviewMouseWheelHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.AddQueryCursorHandler(System.Windows.DependencyObject,System.Windows.Input.QueryCursorEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddQueryCursorHandler (element As DependencyObject, handler As QueryCursorEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddQueryCursorHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::QueryCursorEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddQueryCursorHandler : System.Windows.DependencyObject * System.Windows.Input.QueryCursorEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.AddQueryCursorHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -432,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.Capture(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Capture (element As IInputElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Capture(System::Windows::IInputElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member Capture : System.Windows.IInputElement -&gt; bool" Usage="System.Windows.Input.Mouse.Capture element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -477,6 +494,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Capture(System::Windows::IInputElement ^ element, System::Windows::Input::CaptureMode captureMode);" />
+      <MemberSignature Language="F#" Value="static member Capture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; bool" Usage="System.Windows.Input.Mouse.Capture (element, captureMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -523,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.Captured" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Captured As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::IInputElement ^ Captured { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Captured : System.Windows.IInputElement" Usage="System.Windows.Input.Mouse.Captured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -558,6 +577,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.DirectlyOver" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DirectlyOver As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::IInputElement ^ DirectlyOver { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectlyOver : System.Windows.IInputElement" Usage="System.Windows.Input.Mouse.DirectlyOver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -591,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.GetIntermediatePoints(System.Windows.IInputElement,System.Windows.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIntermediatePoints (relativeTo As IInputElement, points As Point()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetIntermediatePoints(System::Windows::IInputElement ^ relativeTo, cli::array &lt;System::Windows::Point&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="static member GetIntermediatePoints : System.Windows.IInputElement * System.Windows.Point[] -&gt; int" Usage="System.Windows.Input.Mouse.GetIntermediatePoints (relativeTo, points)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -622,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.GetPosition(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPosition (relativeTo As IInputElement) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="static member GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="System.Windows.Input.Mouse.GetPosition relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -667,6 +689,7 @@
       <MemberSignature Language="ILAsm" Value="see AddGotMouseCaptureHandler, and RemoveGotMouseCaptureHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.GotMouseCapture" />
       <MemberSignature Language="VB.NET" Value="see AddGotMouseCaptureHandler, and RemoveGotMouseCaptureHandler" />
+      <MemberSignature Language="F#" Value="see AddGotMouseCaptureHandler, and RemoveGotMouseCaptureHandler" Usage="see AddGotMouseCaptureHandler, and RemoveGotMouseCaptureHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -683,6 +706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.GotMouseCaptureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GotMouseCaptureEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ GotMouseCaptureEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable GotMouseCaptureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.GotMouseCaptureEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -709,6 +733,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.LeftButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LeftButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseButtonState LeftButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeftButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.Mouse.LeftButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -739,6 +764,7 @@
       <MemberSignature Language="ILAsm" Value="see AddLostMouseCaptureHandler, and RemoveLostMouseCaptureHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.LostMouseCapture" />
       <MemberSignature Language="VB.NET" Value="see AddLostMouseCaptureHandler, and RemoveLostMouseCaptureHandler" />
+      <MemberSignature Language="F#" Value="see AddLostMouseCaptureHandler, and RemoveLostMouseCaptureHandler" Usage="see AddLostMouseCaptureHandler, and RemoveLostMouseCaptureHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -755,6 +781,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.LostMouseCaptureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LostMouseCaptureEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ LostMouseCaptureEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LostMouseCaptureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.LostMouseCaptureEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -781,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.MiddleButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MiddleButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseButtonState MiddleButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiddleButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.Mouse.MiddleButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -811,6 +839,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseDownHandler, and RemoveMouseDownHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseDown" />
       <MemberSignature Language="VB.NET" Value="see AddMouseDownHandler, and RemoveMouseDownHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseDownHandler, and RemoveMouseDownHandler" Usage="see AddMouseDownHandler, and RemoveMouseDownHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -827,6 +856,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseDownEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseDownEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseDownEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -852,6 +882,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseEnterHandler, and RemoveMouseEnterHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="see AddMouseEnterHandler, and RemoveMouseEnterHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseEnterHandler, and RemoveMouseEnterHandler" Usage="see AddMouseEnterHandler, and RemoveMouseEnterHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -868,6 +899,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseEnterEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseEnterEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseEnterEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseEnterEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseEnterEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -893,6 +925,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseLeaveHandler, and RemoveMouseLeaveHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="see AddMouseLeaveHandler, and RemoveMouseLeaveHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseLeaveHandler, and RemoveMouseLeaveHandler" Usage="see AddMouseLeaveHandler, and RemoveMouseLeaveHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -909,6 +942,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseLeaveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseLeaveEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseLeaveEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseLeaveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseLeaveEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -934,6 +968,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseMoveHandler, and RemoveMouseMoveHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseMove" />
       <MemberSignature Language="VB.NET" Value="see AddMouseMoveHandler, and RemoveMouseMoveHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseMoveHandler, and RemoveMouseMoveHandler" Usage="see AddMouseMoveHandler, and RemoveMouseMoveHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -950,6 +985,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseMoveEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseMoveEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseMoveEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -975,6 +1011,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseUpHandler, and RemoveMouseUpHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseUp" />
       <MemberSignature Language="VB.NET" Value="see AddMouseUpHandler, and RemoveMouseUpHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseUpHandler, and RemoveMouseUpHandler" Usage="see AddMouseUpHandler, and RemoveMouseUpHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -991,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseUpEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseUpEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseUpEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1016,6 +1054,7 @@
       <MemberSignature Language="ILAsm" Value="see AddMouseWheelHandler, and RemoveMouseWheelHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.MouseWheel" />
       <MemberSignature Language="VB.NET" Value="see AddMouseWheelHandler, and RemoveMouseWheelHandler" />
+      <MemberSignature Language="F#" Value="see AddMouseWheelHandler, and RemoveMouseWheelHandler" Usage="see AddMouseWheelHandler, and RemoveMouseWheelHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1032,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseWheelDeltaForOneLine" />
       <MemberSignature Language="VB.NET" Value="Public Const MouseWheelDeltaForOneLine As Integer  = 120" />
       <MemberSignature Language="C++ CLI" Value="public: int MouseWheelDeltaForOneLine = 120;" />
+      <MemberSignature Language="F#" Value="val mutable MouseWheelDeltaForOneLine : int" Usage="System.Windows.Input.Mouse.MouseWheelDeltaForOneLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1060,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.MouseWheelEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseWheelEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MouseWheelEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseWheelEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.MouseWheelEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1086,6 +1127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.OverrideCursor" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property OverrideCursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ OverrideCursor { System::Windows::Input::Cursor ^ get(); void set(System::Windows::Input::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OverrideCursor : System.Windows.Input.Cursor with get, set" Usage="System.Windows.Input.Mouse.OverrideCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1124,6 +1166,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseDownHandler, and RemovePreviewMouseDownHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseDown" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseDownHandler, and RemovePreviewMouseDownHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseDownHandler, and RemovePreviewMouseDownHandler" Usage="see AddPreviewMouseDownHandler, and RemovePreviewMouseDownHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1140,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseDownEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseDownEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseDownEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1165,6 +1209,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseDownOutsideCapturedElementHandler, and RemovePreviewMouseDownOutsideCapturedElementHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseDownOutsideCapturedElementHandler, and RemovePreviewMouseDownOutsideCapturedElementHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseDownOutsideCapturedElementHandler, and RemovePreviewMouseDownOutsideCapturedElementHandler" Usage="see AddPreviewMouseDownOutsideCapturedElementHandler, and RemovePreviewMouseDownOutsideCapturedElementHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1181,6 +1226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElementEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseDownOutsideCapturedElementEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseDownOutsideCapturedElementEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseDownOutsideCapturedElementEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElementEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1206,6 +1252,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseMoveHandler, and RemovePreviewMouseMoveHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseMove" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseMoveHandler, and RemovePreviewMouseMoveHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseMoveHandler, and RemovePreviewMouseMoveHandler" Usage="see AddPreviewMouseMoveHandler, and RemovePreviewMouseMoveHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1222,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseMoveEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseMoveEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseMoveEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1247,6 +1295,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseUpHandler, and RemovePreviewMouseUpHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseUp" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseUpHandler, and RemovePreviewMouseUpHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseUpHandler, and RemovePreviewMouseUpHandler" Usage="see AddPreviewMouseUpHandler, and RemovePreviewMouseUpHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1263,6 +1312,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseUpEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseUpEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseUpEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1288,6 +1338,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseUpOutsideCapturedElementHandler, and RemovePreviewMouseUpOutsideCapturedElementHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseUpOutsideCapturedElementHandler, and RemovePreviewMouseUpOutsideCapturedElementHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseUpOutsideCapturedElementHandler, and RemovePreviewMouseUpOutsideCapturedElementHandler" Usage="see AddPreviewMouseUpOutsideCapturedElementHandler, and RemovePreviewMouseUpOutsideCapturedElementHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1304,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElementEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseUpOutsideCapturedElementEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseUpOutsideCapturedElementEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseUpOutsideCapturedElementEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElementEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1329,6 +1381,7 @@
       <MemberSignature Language="ILAsm" Value="see AddPreviewMouseWheelHandler, and RemovePreviewMouseWheelHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.PreviewMouseWheel" />
       <MemberSignature Language="VB.NET" Value="see AddPreviewMouseWheelHandler, and RemovePreviewMouseWheelHandler" />
+      <MemberSignature Language="F#" Value="see AddPreviewMouseWheelHandler, and RemovePreviewMouseWheelHandler" Usage="see AddPreviewMouseWheelHandler, and RemovePreviewMouseWheelHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1345,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.PreviewMouseWheelEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewMouseWheelEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewMouseWheelEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviewMouseWheelEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.PreviewMouseWheelEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1371,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.PrimaryDevice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PrimaryDevice As MouseDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseDevice ^ PrimaryDevice { System::Windows::Input::MouseDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrimaryDevice : System.Windows.Input.MouseDevice" Usage="System.Windows.Input.Mouse.PrimaryDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1403,6 +1458,7 @@
       <MemberSignature Language="ILAsm" Value="see AddQueryCursorHandler, and RemoveQueryCursorHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Mouse.QueryCursor" />
       <MemberSignature Language="VB.NET" Value="see AddQueryCursorHandler, and RemoveQueryCursorHandler" />
+      <MemberSignature Language="F#" Value="see AddQueryCursorHandler, and RemoveQueryCursorHandler" Usage="see AddQueryCursorHandler, and RemoveQueryCursorHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1419,6 +1475,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Mouse.QueryCursorEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QueryCursorEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ QueryCursorEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryCursorEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Mouse.QueryCursorEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1445,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveGotMouseCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveGotMouseCaptureHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveGotMouseCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveGotMouseCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveGotMouseCaptureHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1470,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveLostMouseCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveLostMouseCaptureHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveLostMouseCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveLostMouseCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveLostMouseCaptureHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1495,6 +1554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseDownHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseDownHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseDownHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1520,6 +1580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseEnterHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseEnterHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseEnterHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseEnterHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseEnterHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1545,6 +1606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseLeaveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseLeaveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseLeaveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseLeaveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseLeaveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1570,6 +1632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseMoveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseMoveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseMoveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseMoveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1595,6 +1658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseUpHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseUpHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseUpHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1620,6 +1684,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveMouseWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveMouseWheelHandler (element As DependencyObject, handler As MouseWheelEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveMouseWheelHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseWheelEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveMouseWheelHandler : System.Windows.DependencyObject * System.Windows.Input.MouseWheelEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveMouseWheelHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1645,6 +1710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseDownHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseDownHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseDownHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseDownHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1670,6 +1736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseDownOutsideCapturedElementHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseDownOutsideCapturedElementHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseDownOutsideCapturedElementHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseDownOutsideCapturedElementHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseDownOutsideCapturedElementHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1695,6 +1762,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseMoveHandler(System.Windows.DependencyObject,System.Windows.Input.MouseEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseMoveHandler (element As DependencyObject, handler As MouseEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseMoveHandler : System.Windows.DependencyObject * System.Windows.Input.MouseEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseMoveHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1720,6 +1788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseUpHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseUpHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseUpHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseUpHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1745,6 +1814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseUpOutsideCapturedElementHandler(System.Windows.DependencyObject,System.Windows.Input.MouseButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseUpOutsideCapturedElementHandler (element As DependencyObject, handler As MouseButtonEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseUpOutsideCapturedElementHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseButtonEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseUpOutsideCapturedElementHandler : System.Windows.DependencyObject * System.Windows.Input.MouseButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseUpOutsideCapturedElementHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1770,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemovePreviewMouseWheelHandler(System.Windows.DependencyObject,System.Windows.Input.MouseWheelEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewMouseWheelHandler (element As DependencyObject, handler As MouseWheelEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewMouseWheelHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::MouseWheelEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemovePreviewMouseWheelHandler : System.Windows.DependencyObject * System.Windows.Input.MouseWheelEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemovePreviewMouseWheelHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1795,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.RemoveQueryCursorHandler(System.Windows.DependencyObject,System.Windows.Input.QueryCursorEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveQueryCursorHandler (element As DependencyObject, handler As QueryCursorEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveQueryCursorHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::QueryCursorEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveQueryCursorHandler : System.Windows.DependencyObject * System.Windows.Input.QueryCursorEventHandler -&gt; unit" Usage="System.Windows.Input.Mouse.RemoveQueryCursorHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1820,6 +1892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.RightButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RightButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseButtonState RightButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.Mouse.RightButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1850,6 +1923,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetCursor(class System.Windows.Input.Cursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.SetCursor(System.Windows.Input.Cursor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetCursor(System::Windows::Input::Cursor ^ cursor);" />
+      <MemberSignature Language="F#" Value="static member SetCursor : System.Windows.Input.Cursor -&gt; bool" Usage="System.Windows.Input.Mouse.SetCursor cursor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1888,6 +1962,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Synchronize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Synchronize();" />
+      <MemberSignature Language="F#" Value="static member Synchronize : unit -&gt; unit" Usage="System.Windows.Input.Mouse.Synchronize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1910,6 +1985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Mouse.UpdateCursor" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateCursor ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateCursor();" />
+      <MemberSignature Language="F#" Value="static member UpdateCursor : unit -&gt; unit" Usage="System.Windows.Input.Mouse.UpdateCursor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1930,6 +2006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.XButton1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XButton1 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseButtonState XButton1 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton1 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.Mouse.XButton1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1961,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Mouse.XButton2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XButton2 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::MouseButtonState XButton2 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton2 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.Mouse.XButton2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

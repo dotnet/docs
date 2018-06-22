@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.GenericAccessRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum GenericAccessRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class GenericAccessRights" />
+  <TypeSignature Language="F#" Value="type GenericAccessRights = " />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 268435456" Usage="System.Messaging.GenericAccessRights.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Execute" />
       <MemberSignature Language="VB.NET" Value="Execute" />
       <MemberSignature Language="C++ CLI" Value="Execute" />
+      <MemberSignature Language="F#" Value="Execute = 536870912" Usage="System.Messaging.GenericAccessRights.Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.GenericAccessRights.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="C++ CLI" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = -2147483648" Usage="System.Messaging.GenericAccessRights.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Messaging.GenericAccessRights.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="C++ CLI" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 1073741824" Usage="System.Messaging.GenericAccessRights.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

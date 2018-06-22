@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SizeChangedEventHandler(sender As Object, e As SizeChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SizeChangedEventHandler(System::Object ^ sender, SizeChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type SizeChangedEventHandler = delegate of obj * SizeChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

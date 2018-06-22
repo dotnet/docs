@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2AuthenticationStatement&#xA;Inherits Saml2Statement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2AuthenticationStatement : System::IdentityModel::Tokens::Saml2Statement" />
+  <TypeSignature Language="F#" Value="type Saml2AuthenticationStatement = class&#xA;    inherit Saml2Statement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationContext As Saml2AuthenticationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthenticationStatement(System::IdentityModel::Tokens::Saml2AuthenticationContext ^ authenticationContext);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationStatement : System.IdentityModel.Tokens.Saml2AuthenticationContext -&gt; System.IdentityModel.Tokens.Saml2AuthenticationStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationStatement authenticationContext" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationContext As Saml2AuthenticationContext, authenticationInstant As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2AuthenticationStatement(System::IdentityModel::Tokens::Saml2AuthenticationContext ^ authenticationContext, DateTime authenticationInstant);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2AuthenticationStatement : System.IdentityModel.Tokens.Saml2AuthenticationContext * DateTime -&gt; System.IdentityModel.Tokens.Saml2AuthenticationStatement" Usage="new System.IdentityModel.Tokens.Saml2AuthenticationStatement (authenticationContext, authenticationInstant)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationContext" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationContext As Saml2AuthenticationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2AuthenticationContext ^ AuthenticationContext { System::IdentityModel::Tokens::Saml2AuthenticationContext ^ get(); void set(System::IdentityModel::Tokens::Saml2AuthenticationContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationContext : System.IdentityModel.Tokens.Saml2AuthenticationContext with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationInstant As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime AuthenticationInstant { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationInstant : DateTime with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionIndex As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionIndex { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionIndex : string with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionNotOnOrAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionNotOnOrAfter As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; SessionNotOnOrAfter { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionNotOnOrAfter : Nullable&lt;DateTime&gt; with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionNotOnOrAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AuthenticationStatement.SubjectLocality" />
       <MemberSignature Language="VB.NET" Value="Public Property SubjectLocality As Saml2SubjectLocality" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2SubjectLocality ^ SubjectLocality { System::IdentityModel::Tokens::Saml2SubjectLocality ^ get(); void set(System::IdentityModel::Tokens::Saml2SubjectLocality ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectLocality : System.IdentityModel.Tokens.Saml2SubjectLocality with get, set" Usage="System.IdentityModel.Tokens.Saml2AuthenticationStatement.SubjectLocality" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

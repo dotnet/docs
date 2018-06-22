@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Mapping.StorageMappingItemCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StorageMappingItemCollection&#xA;Inherits MappingItemCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class StorageMappingItemCollection : System::Data::Mapping::MappingItemCollection" />
+  <TypeSignature Language="F#" Value="type StorageMappingItemCollection = class&#xA;    inherit MappingItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.StorageMappingItemCollection.#ctor(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (edmCollection As EdmItemCollection, storeCollection As StoreItemCollection, xmlReaders As IEnumerable(Of XmlReader))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StorageMappingItemCollection(System::Data::Metadata::Edm::EdmItemCollection ^ edmCollection, System::Data::Metadata::Edm::StoreItemCollection ^ storeCollection, System::Collections::Generic::IEnumerable&lt;System::Xml::XmlReader ^&gt; ^ xmlReaders);" />
+      <MemberSignature Language="F#" Value="new System.Data.Mapping.StorageMappingItemCollection : System.Data.Metadata.Edm.EdmItemCollection * System.Data.Metadata.Edm.StoreItemCollection * seq&lt;System.Xml.XmlReader&gt; -&gt; System.Data.Mapping.StorageMappingItemCollection" Usage="new System.Data.Mapping.StorageMappingItemCollection (edmCollection, storeCollection, xmlReaders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.StorageMappingItemCollection.#ctor(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (edmCollection As EdmItemCollection, storeCollection As StoreItemCollection, ParamArray filePaths As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StorageMappingItemCollection(System::Data::Metadata::Edm::EdmItemCollection ^ edmCollection, System::Data::Metadata::Edm::StoreItemCollection ^ storeCollection, ... cli::array &lt;System::String ^&gt; ^ filePaths);" />
+      <MemberSignature Language="F#" Value="new System.Data.Mapping.StorageMappingItemCollection : System.Data.Metadata.Edm.EdmItemCollection * System.Data.Metadata.Edm.StoreItemCollection * string[] -&gt; System.Data.Mapping.StorageMappingItemCollection" Usage="new System.Data.Mapping.StorageMappingItemCollection (edmCollection, storeCollection, filePaths)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.StorageMappingItemCollection.MappingVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MappingVersion As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MappingVersion { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MappingVersion : double" Usage="System.Data.Mapping.StorageMappingItemCollection.MappingVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

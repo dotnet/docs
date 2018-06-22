@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientStringConstructor" />
   <TypeSignature Language="VB.NET" Value="Public Class LenientStringConstructor&#xA;Inherits StringConstructor" />
   <TypeSignature Language="C++ CLI" Value="public ref class LenientStringConstructor : Microsoft::JScript::StringConstructor" />
+  <TypeSignature Language="F#" Value="type LenientStringConstructor = class&#xA;    inherit StringConstructor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringConstructor.fromCharCode" />
       <MemberSignature Language="VB.NET" Value="Public fromCharCode As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ fromCharCode;" />
+      <MemberSignature Language="F#" Value="val mutable fromCharCode : obj" Usage="Microsoft.JScript.LenientStringConstructor.fromCharCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

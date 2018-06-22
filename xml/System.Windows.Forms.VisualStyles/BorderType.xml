@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.BorderType" />
   <TypeSignature Language="VB.NET" Value="Public Enum BorderType" />
   <TypeSignature Language="C++ CLI" Value="public enum class BorderType" />
+  <TypeSignature Language="F#" Value="type BorderType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.Ellipse" />
       <MemberSignature Language="VB.NET" Value="Ellipse" />
       <MemberSignature Language="C++ CLI" Value="Ellipse" />
+      <MemberSignature Language="F#" Value="Ellipse = 2" Usage="System.Windows.Forms.VisualStyles.BorderType.Ellipse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.Rectangle" />
       <MemberSignature Language="VB.NET" Value="Rectangle" />
       <MemberSignature Language="C++ CLI" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Windows.Forms.VisualStyles.BorderType.Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.RoundedRectangle" />
       <MemberSignature Language="VB.NET" Value="RoundedRectangle" />
       <MemberSignature Language="C++ CLI" Value="RoundedRectangle" />
+      <MemberSignature Language="F#" Value="RoundedRectangle = 1" Usage="System.Windows.Forms.VisualStyles.BorderType.RoundedRectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

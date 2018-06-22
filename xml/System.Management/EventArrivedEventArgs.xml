@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.EventArrivedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventArrivedEventArgs&#xA;Inherits ManagementEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventArrivedEventArgs : System::Management::ManagementEventArgs" />
+  <TypeSignature Language="F#" Value="type EventArrivedEventArgs = class&#xA;    inherit ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.EventArrivedEventArgs.NewEvent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewEvent As ManagementBaseObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ NewEvent { System::Management::ManagementBaseObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewEvent : System.Management.ManagementBaseObject" Usage="System.Management.EventArrivedEventArgs.NewEvent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

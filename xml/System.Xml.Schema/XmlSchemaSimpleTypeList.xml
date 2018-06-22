@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleTypeList" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSimpleTypeList&#xA;Inherits XmlSchemaSimpleTypeContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleTypeList : System::Xml::Schema::XmlSchemaSimpleTypeContent" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSimpleTypeList = class&#xA;    inherit XmlSchemaSimpleTypeContent" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeList.BaseItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseItemType As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleType ^ BaseItemType { System::Xml::Schema::XmlSchemaSimpleType ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseItemType : System.Xml.Schema.XmlSchemaSimpleType with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleTypeList.BaseItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemType As XmlSchemaSimpleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleType ^ ItemType { System::Xml::Schema::XmlSchemaSimpleType ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : System.Xml.Schema.XmlSchemaSimpleType with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleTypeList.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemTypeName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ ItemTypeName { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTypeName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleTypeList.ItemTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

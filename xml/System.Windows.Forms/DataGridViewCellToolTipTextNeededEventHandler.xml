@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellToolTipTextNeededEventHandler(sender As Object, e As DataGridViewCellToolTipTextNeededEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellToolTipTextNeededEventHandler(System::Object ^ sender, DataGridViewCellToolTipTextNeededEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellToolTipTextNeededEventHandler = delegate of obj * DataGridViewCellToolTipTextNeededEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

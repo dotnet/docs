@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSAuthor" />
   <TypeSignature Language="VB.NET" Value="Public Class JSAuthor&#xA;Implements IAuthorServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSAuthor : Microsoft::JScript::IAuthorServices" />
+  <TypeSignature Language="F#" Value="type JSAuthor = class&#xA;    interface IAuthorServices" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetCodeSense" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCodeSense () As IParseText" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::IParseText ^ GetCodeSense();" />
+      <MemberSignature Language="F#" Value="abstract member GetCodeSense : unit -&gt; Microsoft.JScript.IParseText&#xA;override this.GetCodeSense : unit -&gt; Microsoft.JScript.IParseText" Usage="jSAuthor.GetCodeSense " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IAuthorServices.GetCodeSense</InterfaceMember>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetColorizer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetColorizer () As IColorizeText" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::IColorizeText ^ GetColorizer();" />
+      <MemberSignature Language="F#" Value="abstract member GetColorizer : unit -&gt; Microsoft.JScript.IColorizeText&#xA;override this.GetColorizer : unit -&gt; Microsoft.JScript.IColorizeText" Usage="jSAuthor.GetColorizer " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IAuthorServices.GetColorizer</InterfaceMember>

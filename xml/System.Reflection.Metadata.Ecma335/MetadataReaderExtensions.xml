@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module MetadataReaderExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataReaderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type MetadataReaderExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueLogEntries(System.Reflection.Metadata.MetadataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEditAndContinueLogEntries (reader As MetadataReader) As IEnumerable(Of EditAndContinueLogEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Ecma335::EditAndContinueLogEntry&gt; ^ GetEditAndContinueLogEntries(System::Reflection::Metadata::MetadataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetEditAndContinueLogEntries : System.Reflection.Metadata.MetadataReader -&gt; seq&lt;System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt;" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueLogEntries reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueMapEntries(System.Reflection.Metadata.MetadataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEditAndContinueMapEntries (reader As MetadataReader) As IEnumerable(Of EntityHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::EntityHandle&gt; ^ GetEditAndContinueMapEntries(System::Reflection::Metadata::MetadataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetEditAndContinueMapEntries : System.Reflection.Metadata.MetadataReader -&gt; seq&lt;System.Reflection.Metadata.EntityHandle&gt;" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueMapEntries reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapMetadataOffset(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.HeapIndex heapIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetHeapMetadataOffset(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::Ecma335::HeapIndex heapIndex);" />
+      <MemberSignature Language="F#" Value="static member GetHeapMetadataOffset : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.Ecma335.HeapIndex -&gt; int" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapMetadataOffset (reader, heapIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapSize(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.HeapIndex heapIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetHeapSize(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::Ecma335::HeapIndex heapIndex);" />
+      <MemberSignature Language="F#" Value="static member GetHeapSize : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.Ecma335.HeapIndex -&gt; int" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapSize (reader, heapIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.BlobHandle)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNextHandle (reader As MetadataReader, handle As BlobHandle) As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::BlobHandle GetNextHandle(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::BlobHandle handle);" />
+      <MemberSignature Language="F#" Value="static member GetNextHandle : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.BlobHandle -&gt; System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle (reader, handle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.StringHandle)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNextHandle (reader As MetadataReader, handle As StringHandle) As StringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::StringHandle GetNextHandle(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::StringHandle handle);" />
+      <MemberSignature Language="F#" Value="static member GetNextHandle : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.StringHandle -&gt; System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle (reader, handle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.UserStringHandle)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNextHandle (reader As MetadataReader, handle As UserStringHandle) As UserStringHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::UserStringHandle GetNextHandle(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::UserStringHandle handle);" />
+      <MemberSignature Language="F#" Value="static member GetNextHandle : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.UserStringHandle -&gt; System.Reflection.Metadata.UserStringHandle" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle (reader, handle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableMetadataOffset(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetTableMetadataOffset(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::Ecma335::TableIndex tableIndex);" />
+      <MemberSignature Language="F#" Value="static member GetTableMetadataOffset : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.Ecma335.TableIndex -&gt; int" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableMetadataOffset (reader, tableIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -250,6 +259,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableRowCount(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowCount(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetTableRowCount(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::Ecma335::TableIndex tableIndex);" />
+      <MemberSignature Language="F#" Value="static member GetTableRowCount : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.Ecma335.TableIndex -&gt; int" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowCount (reader, tableIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -278,6 +288,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableRowSize(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetTableRowSize(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::Ecma335::TableIndex tableIndex);" />
+      <MemberSignature Language="F#" Value="static member GetTableRowSize : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.Ecma335.TableIndex -&gt; int" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowSize (reader, tableIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -307,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithEvents(System.Reflection.Metadata.MetadataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTypesWithEvents (reader As MetadataReader) As IEnumerable(Of TypeDefinitionHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::TypeDefinitionHandle&gt; ^ GetTypesWithEvents(System::Reflection::Metadata::MetadataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetTypesWithEvents : System.Reflection.Metadata.MetadataReader -&gt; seq&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithEvents reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -334,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithProperties(System.Reflection.Metadata.MetadataReader)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTypesWithProperties (reader As MetadataReader) As IEnumerable(Of TypeDefinitionHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::TypeDefinitionHandle&gt; ^ GetTypesWithProperties(System::Reflection::Metadata::MetadataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member GetTypesWithProperties : System.Reflection.Metadata.MetadataReader -&gt; seq&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithProperties reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -361,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.ResolveSignatureTypeKind(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ResolveSignatureTypeKind (reader As MetadataReader, typeHandle As EntityHandle, rawTypeKind As Byte) As SignatureTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::SignatureTypeKind ResolveSignatureTypeKind(System::Reflection::Metadata::MetadataReader ^ reader, System::Reflection::Metadata::EntityHandle typeHandle, System::Byte rawTypeKind);" />
+      <MemberSignature Language="F#" Value="static member ResolveSignatureTypeKind : System.Reflection.Metadata.MetadataReader * System.Reflection.Metadata.EntityHandle * byte -&gt; System.Reflection.Metadata.SignatureTypeKind" Usage="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.ResolveSignatureTypeKind (reader, typeHandle, rawTypeKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

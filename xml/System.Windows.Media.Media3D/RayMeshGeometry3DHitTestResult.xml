@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RayMeshGeometry3DHitTestResult&#xA;Inherits RayHitTestResult" />
   <TypeSignature Language="C++ CLI" Value="public ref class RayMeshGeometry3DHitTestResult sealed : System::Windows::Media::Media3D::RayHitTestResult" />
+  <TypeSignature Language="F#" Value="type RayMeshGeometry3DHitTestResult = class&#xA;    inherit RayHitTestResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.DistanceToRayOrigin" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DistanceToRayOrigin As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double DistanceToRayOrigin { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceToRayOrigin : double" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.DistanceToRayOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.MeshHit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeshHit As MeshGeometry3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::MeshGeometry3D ^ MeshHit { System::Windows::Media::Media3D::MeshGeometry3D ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeshHit : System.Windows.Media.Media3D.MeshGeometry3D" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.MeshHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.PointHit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PointHit As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::Point3D PointHit { System::Windows::Media::Media3D::Point3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.PointHit : System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.PointHit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexIndex1 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VertexIndex1 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexIndex1 : int" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexIndex2 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VertexIndex2 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexIndex2 : int" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex3" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexIndex3 As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VertexIndex3 { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexIndex3 : int" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexWeight1 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VertexWeight1 { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexWeight1 : double" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexWeight2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VertexWeight2 { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexWeight2 : double" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight3" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VertexWeight3 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VertexWeight3 { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VertexWeight3 : double" Usage="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

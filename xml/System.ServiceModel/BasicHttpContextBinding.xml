@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpContextBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class BasicHttpContextBinding&#xA;Inherits BasicHttpBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpContextBinding : System::ServiceModel::BasicHttpBinding" />
+  <TypeSignature Language="F#" Value="type BasicHttpContextBinding = class&#xA;    inherit BasicHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As BasicHttpSecurityMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpContextBinding(System::ServiceModel::BasicHttpSecurityMode securityMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.BasicHttpContextBinding : System.ServiceModel.BasicHttpSecurityMode -&gt; System.ServiceModel.BasicHttpContextBinding" Usage="new System.ServiceModel.BasicHttpContextBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpContextBinding(System::String ^ configName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.BasicHttpContextBinding : string -&gt; System.ServiceModel.BasicHttpContextBinding" Usage="new System.ServiceModel.BasicHttpContextBinding configName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextManagementEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextManagementEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextManagementEnabled : bool with get, set" Usage="System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.CreateBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="basicHttpContextBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

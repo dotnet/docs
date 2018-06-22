@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceProviderService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceProviderService" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceProviderService abstract" />
+  <TypeSignature Language="F#" Value="type DataSourceProviderService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDataSourceInstance(class System.ComponentModel.Design.IDesignerHost host, class System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance(System.ComponentModel.Design.IDesignerHost,System.ComponentModel.Design.Data.DataSourceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ AddDataSourceInstance(System::ComponentModel::Design::IDesignerHost ^ host, System::ComponentModel::Design::Data::DataSourceDescriptor ^ dataSourceDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member AddDataSourceInstance : System.ComponentModel.Design.IDesignerHost * System.ComponentModel.Design.Data.DataSourceDescriptor -&gt; obj" Usage="dataSourceProviderService.AddDataSourceInstance (host, dataSourceDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.GetDataSources" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDataSources () As DataSourceGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::Design::Data::DataSourceGroupCollection ^ GetDataSources();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataSources : unit -&gt; System.ComponentModel.Design.Data.DataSourceGroupCollection" Usage="dataSourceProviderService.GetDataSources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function InvokeAddNewDataSource (parentWindow As IWin32Window, startPosition As FormStartPosition) As DataSourceGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::Design::Data::DataSourceGroup ^ InvokeAddNewDataSource(System::Windows::Forms::IWin32Window ^ parentWindow, System::Windows::Forms::FormStartPosition startPosition);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeAddNewDataSource : System.Windows.Forms.IWin32Window * System.Windows.Forms.FormStartPosition -&gt; System.ComponentModel.Design.Data.DataSourceGroup" Usage="dataSourceProviderService.InvokeAddNewDataSource (parentWindow, startPosition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool InvokeConfigureDataSource(class System.Windows.Forms.IWin32Window parentWindow, valuetype System.Windows.Forms.FormStartPosition startPosition, class System.ComponentModel.Design.Data.DataSourceDescriptor dataSourceDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool InvokeConfigureDataSource(System::Windows::Forms::IWin32Window ^ parentWindow, System::Windows::Forms::FormStartPosition startPosition, System::ComponentModel::Design::Data::DataSourceDescriptor ^ dataSourceDescriptor);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeConfigureDataSource : System.Windows.Forms.IWin32Window * System.Windows.Forms.FormStartPosition * System.ComponentModel.Design.Data.DataSourceDescriptor -&gt; bool" Usage="dataSourceProviderService.InvokeConfigureDataSource (parentWindow, startPosition, dataSourceDescriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceProviderService.NotifyDataSourceComponentAdded(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub NotifyDataSourceComponentAdded (dsc As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void NotifyDataSourceComponentAdded(System::Object ^ dsc);" />
+      <MemberSignature Language="F#" Value="abstract member NotifyDataSourceComponentAdded : obj -&gt; unit" Usage="dataSourceProviderService.NotifyDataSourceComponentAdded dsc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceProviderService.SupportsAddNewDataSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportsAddNewDataSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SupportsAddNewDataSource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsAddNewDataSource : bool" Usage="System.ComponentModel.Design.Data.DataSourceProviderService.SupportsAddNewDataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceProviderService.SupportsConfigureDataSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportsConfigureDataSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SupportsConfigureDataSource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsConfigureDataSource : bool" Usage="System.ComponentModel.Design.Data.DataSourceProviderService.SupportsConfigureDataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

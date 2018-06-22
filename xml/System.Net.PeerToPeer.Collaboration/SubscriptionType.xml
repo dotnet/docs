@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.SubscriptionType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SubscriptionType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SubscriptionType" />
+  <TypeSignature Language="F#" Value="type SubscriptionType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed" />
       <MemberSignature Language="VB.NET" Value="Allowed" />
       <MemberSignature Language="C++ CLI" Value="Allowed" />
+      <MemberSignature Language="F#" Value="Allowed = 1" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.SubscriptionType.Blocked" />
       <MemberSignature Language="VB.NET" Value="Blocked" />
       <MemberSignature Language="C++ CLI" Value="Blocked" />
+      <MemberSignature Language="F#" Value="Blocked = 0" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionType.Blocked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

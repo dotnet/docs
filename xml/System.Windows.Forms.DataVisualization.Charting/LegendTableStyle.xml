@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum LegendTableStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class LegendTableStyle" />
+  <TypeSignature Language="F#" Value="type LegendTableStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Tall" />
       <MemberSignature Language="VB.NET" Value="Tall" />
       <MemberSignature Language="C++ CLI" Value="Tall" />
+      <MemberSignature Language="F#" Value="Tall = 2" Usage="System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Tall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide" />
       <MemberSignature Language="VB.NET" Value="Wide" />
       <MemberSignature Language="C++ CLI" Value="Wide" />
+      <MemberSignature Language="F#" Value="Wide = 1" Usage="System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

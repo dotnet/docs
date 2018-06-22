@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemEventArgs.#ctor(System.Windows.Forms.ToolStripItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As ToolStripItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemEventArgs(System::Windows::Forms::ToolStripItem ^ item);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItemEventArgs : System.Windows.Forms.ToolStripItem -&gt; System.Windows.Forms.ToolStripItemEventArgs" Usage="new System.Windows.Forms.ToolStripItemEventArgs item" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemEventArgs.Item" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ToolStripItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ Item { System::Windows::Forms::ToolStripItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Windows.Forms.ToolStripItem" Usage="System.Windows.Forms.ToolStripItemEventArgs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

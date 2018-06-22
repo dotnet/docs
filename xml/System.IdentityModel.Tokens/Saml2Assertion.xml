@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Assertion" />
   <TypeSignature Language="VB.NET" Value="Public Class Saml2Assertion" />
   <TypeSignature Language="C++ CLI" Value="public ref class Saml2Assertion" />
+  <TypeSignature Language="F#" Value="type Saml2Assertion = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Assertion.#ctor(System.IdentityModel.Tokens.Saml2NameIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (issuer As Saml2NameIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2Assertion(System::IdentityModel::Tokens::Saml2NameIdentifier ^ issuer);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.Saml2Assertion : System.IdentityModel.Tokens.Saml2NameIdentifier -&gt; System.IdentityModel.Tokens.Saml2Assertion" Usage="new System.IdentityModel.Tokens.Saml2Assertion issuer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Advice" />
       <MemberSignature Language="VB.NET" Value="Public Property Advice As Saml2Advice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Advice ^ Advice { System::IdentityModel::Tokens::Saml2Advice ^ get(); void set(System::IdentityModel::Tokens::Saml2Advice ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Advice : System.IdentityModel.Tokens.Saml2Advice with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.Advice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.CanWriteSourceData" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanWriteSourceData As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteSourceData { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWriteSourceData : bool" Usage="System.IdentityModel.Tokens.Saml2Assertion.CanWriteSourceData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Conditions" />
       <MemberSignature Language="VB.NET" Value="Public Property Conditions As Saml2Conditions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Conditions ^ Conditions { System::IdentityModel::Tokens::Saml2Conditions ^ get(); void set(System::IdentityModel::Tokens::Saml2Conditions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Conditions : System.IdentityModel.Tokens.Saml2Conditions with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.Conditions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.EncryptingCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptingCredentials As EncryptingCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::EncryptingCredentials ^ EncryptingCredentials { System::IdentityModel::Tokens::EncryptingCredentials ^ get(); void set(System::IdentityModel::Tokens::EncryptingCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptingCredentials : System.IdentityModel.Tokens.EncryptingCredentials with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.EncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.ExternalEncryptedKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalEncryptedKeys As Collection(Of EncryptedKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::EncryptedKeyIdentifierClause ^&gt; ^ ExternalEncryptedKeys { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::EncryptedKeyIdentifierClause ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExternalEncryptedKeys : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.EncryptedKeyIdentifierClause&gt;" Usage="System.IdentityModel.Tokens.Saml2Assertion.ExternalEncryptedKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As Saml2Id" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Id ^ Id { System::IdentityModel::Tokens::Saml2Id ^ get(); void set(System::IdentityModel::Tokens::Saml2Id ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : System.IdentityModel.Tokens.Saml2Id with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -212,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.IssueInstant" />
       <MemberSignature Language="VB.NET" Value="Public Property IssueInstant As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime IssueInstant { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.IssueInstant : DateTime with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.IssueInstant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public Property Issuer As Saml2NameIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2NameIdentifier ^ Issuer { System::IdentityModel::Tokens::Saml2NameIdentifier ^ get(); void set(System::IdentityModel::Tokens::Saml2NameIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : System.IdentityModel.Tokens.Saml2NameIdentifier with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.SigningCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property SigningCredentials As SigningCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); void set(System::IdentityModel::Tokens::SigningCredentials ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SigningCredentials : System.IdentityModel.Tokens.SigningCredentials with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.SigningCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statements As Collection(Of Saml2Statement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Statement ^&gt; ^ Statements { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::Saml2Statement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Statements : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Statement&gt;" Usage="System.IdentityModel.Tokens.Saml2Assertion.Statements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -314,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As Saml2Subject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Subject ^ Subject { System::IdentityModel::Tokens::Saml2Subject ^ get(); void set(System::IdentityModel::Tokens::Saml2Subject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : System.IdentityModel.Tokens.Saml2Subject with get, set" Usage="System.IdentityModel.Tokens.Saml2Assertion.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -341,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.IdentityModel.Tokens.Saml2Assertion.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -368,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Assertion.WriteSourceData(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteSourceData (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteSourceData(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteSourceData : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteSourceData : System.Xml.XmlWriter -&gt; unit" Usage="saml2Assertion.WriteSourceData writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.SqlCacheDependency" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCacheDependency&#xA;Inherits CacheDependency" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependency sealed : System::Web::Caching::CacheDependency" />
+  <TypeSignature Language="F#" Value="type SqlCacheDependency = class&#xA;    inherit CacheDependency" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependency.#ctor(System.Data.SqlClient.SqlCommand)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sqlCmd As SqlCommand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependency(System::Data::SqlClient::SqlCommand ^ sqlCmd);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.SqlCacheDependency : System.Data.SqlClient.SqlCommand -&gt; System.Web.Caching.SqlCacheDependency" Usage="new System.Web.Caching.SqlCacheDependency sqlCmd" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependency.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (databaseEntryName As String, tableName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependency(System::String ^ databaseEntryName, System::String ^ tableName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.SqlCacheDependency : string * string -&gt; System.Web.Caching.SqlCacheDependency" Usage="new System.Web.Caching.SqlCacheDependency (databaseEntryName, tableName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependency.CreateOutputCacheDependency(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOutputCacheDependency (dependency As String) As CacheDependency" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Caching::CacheDependency ^ CreateOutputCacheDependency(System::String ^ dependency);" />
+      <MemberSignature Language="F#" Value="static member CreateOutputCacheDependency : string -&gt; System.Web.Caching.CacheDependency" Usage="System.Web.Caching.SqlCacheDependency.CreateOutputCacheDependency dependency" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependency.DependencyDispose" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DependencyDispose ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DependencyDispose();" />
+      <MemberSignature Language="F#" Value="override this.DependencyDispose : unit -&gt; unit" Usage="sqlCacheDependency.DependencyDispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.SqlCacheDependency.GetUniqueID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUniqueID () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUniqueID();" />
+      <MemberSignature Language="F#" Value="override this.GetUniqueID : unit -&gt; string" Usage="sqlCacheDependency.GetUniqueID " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

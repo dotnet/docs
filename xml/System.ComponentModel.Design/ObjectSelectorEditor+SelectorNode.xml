@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectSelectorEditor.SelectorNode&#xA;Inherits TreeNode" />
   <TypeSignature Language="C++ CLI" Value="public: ref class ObjectSelectorEditor::SelectorNode : System::Windows::Forms::TreeNode" />
+  <TypeSignature Language="F#" Value="type ObjectSelectorEditor.SelectorNode = class&#xA;    inherit TreeNode" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (label As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectorNode(System::String ^ label, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode : string * obj -&gt; System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" Usage="new System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode (label, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.value" />
       <MemberSignature Language="VB.NET" Value="Public value As Object " />
       <MemberSignature Language="C++ CLI" Value="public: System::Object ^ value;" />
+      <MemberSignature Language="F#" Value="val mutable value : obj" Usage="System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

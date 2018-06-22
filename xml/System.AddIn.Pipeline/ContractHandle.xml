@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class ContractHandle&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractHandle : IDisposable" />
+  <TypeSignature Language="F#" Value="type ContractHandle = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.#ctor(System.AddIn.Contract.IContract)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contract As IContract)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractHandle(System::AddIn::Contract::IContract ^ contract);" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Pipeline.ContractHandle : System.AddIn.Contract.IContract -&gt; System.AddIn.Pipeline.ContractHandle" Usage="new System.AddIn.Pipeline.ContractHandle contract" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.AppDomainOwner(System.AppDomain)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AppDomainOwner (domain As AppDomain) As IContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::IContract ^ AppDomainOwner(AppDomain ^ domain);" />
+      <MemberSignature Language="F#" Value="static member AppDomainOwner : AppDomain -&gt; System.AddIn.Contract.IContract" Usage="System.AddIn.Pipeline.ContractHandle.AppDomainOwner domain" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.AddIn.Pipeline.ContractHandle.Contract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As IContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Contract::IContract ^ Contract { System::AddIn::Contract::IContract ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.AddIn.Contract.IContract" Usage="System.AddIn.Pipeline.ContractHandle.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.ContractOwnsAppDomain(System.AddIn.Contract.IContract,System.AppDomain)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContractOwnsAppDomain (contract As IContract, domain As AppDomain) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContractOwnsAppDomain(System::AddIn::Contract::IContract ^ contract, AppDomain ^ domain);" />
+      <MemberSignature Language="F#" Value="static member ContractOwnsAppDomain : System.AddIn.Contract.IContract * AppDomain -&gt; bool" Usage="System.AddIn.Pipeline.ContractHandle.ContractOwnsAppDomain (contract, domain)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="contractHandle.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="contractHandle.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractHandle.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ContractHandle ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="contractHandle.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

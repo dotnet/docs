@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Import" />
   <TypeSignature Language="VB.NET" Value="Public Class Import" />
   <TypeSignature Language="C++ CLI" Value="public ref class Import" />
+  <TypeSignature Language="F#" Value="type Import = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.Condition" />
       <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.BuildEngine.Import.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.EvaluatedProjectPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedProjectPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedProjectPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedProjectPath : string" Usage="Microsoft.Build.BuildEngine.Import.EvaluatedProjectPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.IsImported" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.BuildEngine.Import.IsImported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Import.ProjectPath" />
       <MemberSignature Language="VB.NET" Value="Public Property ProjectPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectPath : string with get, set" Usage="Microsoft.Build.BuildEngine.Import.ProjectPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

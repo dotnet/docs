@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.COMPropertyInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class COMPropertyInfo&#xA;Inherits PropertyInfo&#xA;Implements MemberInfoInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class COMPropertyInfo sealed : System::Reflection::PropertyInfo, Microsoft::JScript::MemberInfoInitializer" />
+  <TypeSignature Language="F#" Value="type COMPropertyInfo = class&#xA;    inherit PropertyInfo&#xA;    interface MemberInfoInitializer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As PropertyAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::PropertyAttributes Attributes { System::Reflection::PropertyAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.PropertyAttributes" Usage="Microsoft.JScript.COMPropertyInfo.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="Microsoft.JScript.COMPropertyInfo.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="Microsoft.JScript.COMPropertyInfo.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="Microsoft.JScript.COMPropertyInfo.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetAccessors(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAccessors (nonPublic As Boolean) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetAccessors(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetAccessors : bool -&gt; System.Reflection.MethodInfo[]" Usage="cOMPropertyInfo.GetAccessors nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetCOMMemberInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCOMMemberInfo () As COMMemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::COMMemberInfo ^ GetCOMMemberInfo();" />
+      <MemberSignature Language="F#" Value="abstract member GetCOMMemberInfo : unit -&gt; Microsoft.JScript.COMMemberInfo&#xA;override this.GetCOMMemberInfo : unit -&gt; Microsoft.JScript.COMMemberInfo" Usage="cOMPropertyInfo.GetCOMMemberInfo " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.MemberInfoInitializer.GetCOMMemberInfo</InterfaceMember>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="cOMPropertyInfo.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (t As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ t, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="cOMPropertyInfo.GetCustomAttributes (t, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -299,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetGetMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGetMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetGetMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetGetMethod : bool -&gt; System.Reflection.MethodInfo" Usage="cOMPropertyInfo.GetGetMethod nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -329,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetIndexParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIndexParameters () As ParameterInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetIndexParameters();" />
+      <MemberSignature Language="F#" Value="override this.GetIndexParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="cOMPropertyInfo.GetIndexParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -355,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetSetMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSetMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetSetMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetSetMethod : bool -&gt; System.Reflection.MethodInfo" Usage="cOMPropertyInfo.GetSetMethod nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -384,6 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] index, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ index, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="cOMPropertyInfo.GetValue (obj, invokeAttr, binder, index, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -421,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (name As String, dispatch As COMMemberInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::String ^ name, Microsoft::JScript::COMMemberInfo ^ dispatch);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * Microsoft.JScript.COMMemberInfo -&gt; unit&#xA;override this.Initialize : string * Microsoft.JScript.COMMemberInfo -&gt; unit" Usage="cOMPropertyInfo.Initialize (name, dispatch)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.MemberInfoInitializer.Initialize(System.String,Microsoft.JScript.COMMemberInfo)</InterfaceMember>
@@ -453,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (t As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ t, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="cOMPropertyInfo.IsDefined (t, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -486,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="Microsoft.JScript.COMPropertyInfo.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -512,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.JScript.COMPropertyInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -537,6 +554,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="Microsoft.JScript.COMPropertyInfo.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -562,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.COMPropertyInfo.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="Microsoft.JScript.COMPropertyInfo.ReflectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -586,6 +605,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] index, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.COMPropertyInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ value, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ index, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; unit" Usage="cOMPropertyInfo.SetValue (obj, value, invokeAttr, binder, index, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

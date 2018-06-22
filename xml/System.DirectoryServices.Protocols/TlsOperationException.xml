@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.TlsOperationException" />
   <TypeSignature Language="VB.NET" Value="Public Class TlsOperationException&#xA;Inherits DirectoryOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class TlsOperationException : System::DirectoryServices::Protocols::DirectoryOperationException" />
+  <TypeSignature Language="F#" Value="type TlsOperationException = class&#xA;    inherit DirectoryOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : System.DirectoryServices.Protocols.DirectoryResponse -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException response" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : string -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : System.DirectoryServices.Protocols.DirectoryResponse * string -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException (response, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TlsOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : string * Exception -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (response As DirectoryResponse, message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsOperationException(System::DirectoryServices::Protocols::DirectoryResponse ^ response, System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.TlsOperationException : System.DirectoryServices.Protocols.DirectoryResponse * string * Exception -&gt; System.DirectoryServices.Protocols.TlsOperationException" Usage="new System.DirectoryServices.Protocols.TlsOperationException (response, message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

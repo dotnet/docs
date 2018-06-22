@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.RegistryPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type RegistryPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.RegistryPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.RegistryPermission" Usage="new System.Security.Permissions.RegistryPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As RegistryPermissionAccess, pathList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.RegistryPermission : System.Security.Permissions.RegistryPermissionAccess * string -&gt; System.Security.Permissions.RegistryPermission" Usage="new System.Security.Permissions.RegistryPermission (access, pathList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.RegistryPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As RegistryPermissionAccess, control As AccessControlActions, pathList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::RegistryPermissionAccess access, System::Security::AccessControl::AccessControlActions control, System::String ^ pathList);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.RegistryPermission : System.Security.Permissions.RegistryPermissionAccess * System.Security.AccessControl.AccessControlActions * string -&gt; System.Security.Permissions.RegistryPermission" Usage="new System.Security.Permissions.RegistryPermission (access, control, pathList)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.AddPathList(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As RegistryPermissionAccess, pathList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
+      <MemberSignature Language="F#" Value="member this.AddPathList : System.Security.Permissions.RegistryPermissionAccess * string -&gt; unit" Usage="registryPermission.AddPathList (access, pathList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -269,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.AddPathList(System.Security.Permissions.RegistryPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" FrameworkAlternate="netframework-4.5;netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As RegistryPermissionAccess, control As AccessControlActions, pathList As String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::RegistryPermissionAccess access, System::Security::AccessControl::AccessControlActions control, System::String ^ pathList);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.AddPathList : System.Security.Permissions.RegistryPermissionAccess * System.Security.AccessControl.AccessControlActions * string -&gt; unit" Usage="registryPermission.AddPathList (access, control, pathList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -320,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="registryPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -357,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netframework-4.5;netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="registryPermission.FromXml esd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -393,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.GetPathList(System.Security.Permissions.RegistryPermissionAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPathList (access As RegistryPermissionAccess) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPathList(System::Security::Permissions::RegistryPermissionAccess access);" />
+      <MemberSignature Language="F#" Value="member this.GetPathList : System.Security.Permissions.RegistryPermissionAccess -&gt; string" Usage="registryPermission.GetPathList access" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -446,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="registryPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -483,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="registryPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -521,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="registryPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -558,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.SetPathList(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPathList (access As RegistryPermissionAccess, pathList As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPathList(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
+      <MemberSignature Language="F#" Value="member this.SetPathList : System.Security.Permissions.RegistryPermissionAccess * string -&gt; unit" Usage="registryPermission.SetPathList (access, pathList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -608,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="registryPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -634,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="registryPermission.Union other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

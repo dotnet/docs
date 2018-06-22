@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformerTypeCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransformerTypeCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type TransformerTypeCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transformerTypes As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformerTypeCollection(System::Collections::ICollection ^ transformerTypes);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.TransformerTypeCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.TransformerTypeCollection" Usage="new System.Web.UI.WebControls.WebParts.TransformerTypeCollection transformerTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor(System.Web.UI.WebControls.WebParts.TransformerTypeCollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (existingTransformerTypes As TransformerTypeCollection, transformerTypes As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformerTypeCollection(System::Web::UI::WebControls::WebParts::TransformerTypeCollection ^ existingTransformerTypes, System::Collections::ICollection ^ transformerTypes);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.TransformerTypeCollection : System.Web.UI.WebControls.WebParts.TransformerTypeCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.TransformerTypeCollection" Usage="new System.Web.UI.WebControls.WebParts.TransformerTypeCollection (existingTransformerTypes, transformerTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Contains(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(Type ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : Type -&gt; bool" Usage="transformerTypeCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.CopyTo(System.Type[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Type(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;Type ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Type[] * int -&gt; unit" Usage="transformerTypeCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As TransformerTypeCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::TransformerTypeCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.TransformerTypeCollection" Usage="System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.IndexOf(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Type) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(Type ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : Type -&gt; int" Usage="transformerTypeCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ default[int] { Type ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Type" Usage="System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

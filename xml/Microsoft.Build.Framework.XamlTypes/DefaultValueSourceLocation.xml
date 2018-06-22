@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum DefaultValueSourceLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class DefaultValueSourceLocation" />
+  <TypeSignature Language="F#" Value="type DefaultValueSourceLocation = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.AfterContext" />
       <MemberSignature Language="VB.NET" Value="AfterContext" />
       <MemberSignature Language="C++ CLI" Value="AfterContext" />
+      <MemberSignature Language="F#" Value="AfterContext = 1" Usage="Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.AfterContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.BeforeContext" />
       <MemberSignature Language="VB.NET" Value="BeforeContext" />
       <MemberSignature Language="C++ CLI" Value="BeforeContext" />
+      <MemberSignature Language="F#" Value="BeforeContext = 0" Usage="Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.BeforeContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

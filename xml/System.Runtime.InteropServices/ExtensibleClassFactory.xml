@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ExtensibleClassFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtensibleClassFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtensibleClassFactory sealed" />
+  <TypeSignature Language="F#" Value="type ExtensibleClassFactory = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterObjectCreationCallback (callback As ObjectCreationDelegate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterObjectCreationCallback(System::Runtime::InteropServices::ObjectCreationDelegate ^ callback);" />
+      <MemberSignature Language="F#" Value="static member RegisterObjectCreationCallback : System.Runtime.InteropServices.ObjectCreationDelegate -&gt; unit" Usage="System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

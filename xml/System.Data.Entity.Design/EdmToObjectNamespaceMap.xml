@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />
   <TypeSignature Language="VB.NET" Value="Public Class EdmToObjectNamespaceMap" />
   <TypeSignature Language="C++ CLI" Value="public ref class EdmToObjectNamespaceMap" />
+  <TypeSignature Language="F#" Value="type EdmToObjectNamespaceMap = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (edmNamespace As String, objectNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ edmNamespace, System::String ^ objectNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="edmToObjectNamespaceMap.Add (edmNamespace, objectNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="edmToObjectNamespaceMap.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (edmNamespace As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ edmNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="edmToObjectNamespaceMap.Contains edmNamespace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.Entity.Design.EdmToObjectNamespaceMap.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.EdmNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdmNamespaces As ICollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ EdmNamespaces { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EdmNamespaces : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Data.Entity.Design.EdmToObjectNamespaceMap.EdmNamespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(edmNamespace As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ edmNamespace); void set(System::String ^ edmNamespace, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Data.Entity.Design.EdmToObjectNamespaceMap.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (edmNamespace As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::String ^ edmNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; bool" Usage="edmToObjectNamespaceMap.Remove edmNamespace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.TryGetObjectNamespace(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetObjectNamespace (edmNamespace As String, ByRef objectNamespace As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetObjectNamespace(System::String ^ edmNamespace, [Runtime::InteropServices::Out] System::String ^ % objectNamespace);" />
+      <MemberSignature Language="F#" Value="member this.TryGetObjectNamespace : string *  -&gt; bool" Usage="edmToObjectNamespaceMap.TryGetObjectNamespace (edmNamespace, objectNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

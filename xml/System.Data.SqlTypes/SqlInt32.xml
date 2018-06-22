@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlInt32" />
   <TypeSignature Language="VB.NET" Value="Public Structure SqlInt32&#xA;Implements IComparable, INullable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class SqlInt32 : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlInt32 = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlInt32(int value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlInt32 : int -&gt; System.Data.SqlTypes.SqlInt32" Usage="new System.Data.SqlTypes.SqlInt32 value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Add(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Add(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Add (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.BitwiseAnd(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseAnd (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 BitwiseAnd(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member BitwiseAnd : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.BitwiseAnd (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.BitwiseOr(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseOr (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 BitwiseOr(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member BitwiseOr : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.BitwiseOr (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.CompareTo(System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlInt32) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlInt32 value);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlInt32 -&gt; int" Usage="sqlInt32.CompareTo value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlInt32.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -338,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Divide(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Divide(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Divide (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -387,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlInt32.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -426,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Equals(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -467,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlInt32.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -502,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlInt32.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -536,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.GreaterThan(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.GreaterThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -576,6 +589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.GreaterThanOrEqual(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.GreaterThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -616,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlInt32.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlInt32.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -660,6 +675,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.LessThan(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.LessThan (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -700,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.LessThanOrEqual(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.LessThanOrEqual (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -740,6 +757,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt32.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As SqlInt32 " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt32 MaxValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -780,6 +798,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt32.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As SqlInt32 " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt32 MinValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -820,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Mod(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Mod (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Mod(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Mod : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Mod (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -860,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Modulus(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Modulus (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Modulus(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Modulus : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Modulus (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -907,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Multiply(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Multiply(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Multiply (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -947,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.NotEquals(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.NotEquals (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -987,6 +1010,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt32.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlInt32 " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt32 Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1027,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.OnesComplement(System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OnesComplement (x As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 OnesComplement(System::Data::SqlTypes::SqlInt32 x);" />
+      <MemberSignature Language="F#" Value="static member OnesComplement : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.OnesComplement x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1065,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Addition(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator +(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1107,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_BitwiseAnd(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator And (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator &amp;(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( &amp;&amp;&amp; ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x &amp;&amp;&amp; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1149,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_BitwiseOr(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Or (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator |(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( ||| ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x ||| y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1191,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Division(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator /(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x / y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1233,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Equality(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1275,6 +1305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_ExclusiveOr(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Xor (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator ^(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( ^^^ ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x ^^^ y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1326,6 +1357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBoolean) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlBoolean x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBoolean -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1366,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDecimal) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlDecimal x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1406,6 +1439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDouble) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlDouble x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDouble -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1446,6 +1480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlInt32)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt32) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Data::SqlTypes::SqlInt32 x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt32 -&gt; int" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1484,6 +1519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt64) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlInt64 x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1524,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlMoney) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlMoney x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlMoney -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1564,6 +1601,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlSingle) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlSingle x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlSingle -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1604,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlString x);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Explicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1644,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_GreaterThan(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1686,6 +1726,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1737,6 +1778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlByte) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlByte x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlByte -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1777,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt16) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt32(System::Data::SqlTypes::SqlInt16 x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt16 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1817,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Implicit(System.Int32)~System.Data.SqlTypes.SqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Integer) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt32(int x);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_Implicit x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1855,6 +1899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Inequality(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt32.op_Inequality (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1897,6 +1942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_LessThan(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1939,6 +1985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_LessThanOrEqual(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlInt32, y As SqlInt32) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1981,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Modulus(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Mod (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator %(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( % ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x % y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2023,6 +2071,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Multiply(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator *(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x * y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2065,6 +2114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_OnesComplement(System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Not (x As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator ~(System::Data::SqlTypes::SqlInt32 x);" />
+      <MemberSignature Language="F#" Value="static member op_OnesComplement : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.op_OnesComplement x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2105,6 +2155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_Subtraction(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator -(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="x - y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2147,6 +2198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.op_UnaryNegation(System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 operator -(System::Data::SqlTypes::SqlInt32 x);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="- x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2185,6 +2237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2223,6 +2276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Subtract(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Subtract(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Subtract (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2373,6 +2427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBoolean () As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlBoolean : unit -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlInt32.ToSqlBoolean " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2409,6 +2464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlByte () As SqlByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlByte : unit -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlInt32.ToSqlByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2444,6 +2500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDecimal () As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDecimal ToSqlDecimal();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlDecimal : unit -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlInt32.ToSqlDecimal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2479,6 +2536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDouble () As SqlDouble" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlDouble : unit -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlInt32.ToSqlDouble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2514,6 +2572,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt16 () As SqlInt16" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt16 : unit -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlInt32.ToSqlInt16 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2549,6 +2608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt64 () As SqlInt64" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt64 ToSqlInt64();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt64 : unit -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlInt32.ToSqlInt64 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2584,6 +2644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlMoney" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlMoney () As SqlMoney" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlMoney : unit -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlInt32.ToSqlMoney " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2619,6 +2680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlSingle" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlSingle () As SqlSingle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlSingle : unit -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlInt32.ToSqlSingle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2654,6 +2716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToSqlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlInt32.ToSqlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2689,6 +2752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlInt32.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2724,6 +2788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlInt32.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Data.SqlTypes.SqlInt32.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2759,6 +2824,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt32.Xor(System.Data.SqlTypes.SqlInt32,System.Data.SqlTypes.SqlInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Xor (x As SqlInt32, y As SqlInt32) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt32 Xor(System::Data::SqlTypes::SqlInt32 x, System::Data::SqlTypes::SqlInt32 y);" />
+      <MemberSignature Language="F#" Value="static member Xor : System.Data.SqlTypes.SqlInt32 * System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Xor (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2799,6 +2865,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt32.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As SqlInt32 " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt32 Zero;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : System.Data.SqlTypes.SqlInt32" Usage="System.Data.SqlTypes.SqlInt32.Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

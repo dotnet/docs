@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.EndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EndpointCollectionElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointCollectionElement abstract : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type EndpointCollectionElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointCollectionElement.ConfiguredEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConfiguredEndpoints As ReadOnlyCollection(Of StandardEndpointElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Configuration::StandardEndpointElement ^&gt; ^ ConfiguredEndpoints { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Configuration::StandardEndpointElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfiguredEndpoints : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Configuration.StandardEndpointElement&gt;" Usage="System.ServiceModel.Configuration.EndpointCollectionElement.ConfiguredEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointCollectionElement.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ContainsKey (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ContainsKey(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool" Usage="endpointCollectionElement.ContainsKey name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointCollectionElement.EndpointName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointName : string" Usage="System.ServiceModel.Configuration.EndpointCollectionElement.EndpointName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointCollectionElement.EndpointType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EndpointType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ EndpointType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointType : Type" Usage="System.ServiceModel.Configuration.EndpointCollectionElement.EndpointType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointCollectionElement.GetDefaultStandardEndpointElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetDefaultStandardEndpointElement () As StandardEndpointElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::ServiceModel::Configuration::StandardEndpointElement ^ GetDefaultStandardEndpointElement();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultStandardEndpointElement : unit -&gt; System.ServiceModel.Configuration.StandardEndpointElement" Usage="endpointCollectionElement.GetDefaultStandardEndpointElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointCollectionElement.TryAdd(System.String,System.ServiceModel.Description.ServiceEndpoint,System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryAdd (name As String, endpoint As ServiceEndpoint, config As Configuration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryAdd(System::String ^ name, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="abstract member TryAdd : string * System.ServiceModel.Description.ServiceEndpoint * System.Configuration.Configuration -&gt; bool" Usage="endpointCollectionElement.TryAdd (name, endpoint, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

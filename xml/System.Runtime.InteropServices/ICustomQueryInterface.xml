@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ICustomQueryInterface" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICustomQueryInterface" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICustomQueryInterface" />
+  <TypeSignature Language="F#" Value="type ICustomQueryInterface = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInterface (ByRef iid As Guid, ByRef ppv As IntPtr) As CustomQueryInterfaceResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::InteropServices::CustomQueryInterfaceResult GetInterface(Guid % iid, [Runtime::InteropServices::Out] IntPtr % ppv);" />
+      <MemberSignature Language="F#" Value="abstract member GetInterface :  *  -&gt; System.Runtime.InteropServices.CustomQueryInterfaceResult" Usage="iCustomQueryInterface.GetInterface (iid, ppv)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfileCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheProfileCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProfileCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type OutputCacheProfileCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Add(System.Web.Configuration.OutputCacheProfile)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As OutputCacheProfile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::OutputCacheProfile ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.OutputCacheProfile -&gt; unit" Usage="outputCacheProfileCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfileCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.Configuration.OutputCacheProfileCollection.AllKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="outputCacheProfileCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="outputCacheProfileCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As OutputCacheProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::OutputCacheProfile ^ Get(int index);" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.OutputCacheProfile" Usage="outputCacheProfileCollection.Get index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As OutputCacheProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::OutputCacheProfile ^ Get(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.OutputCacheProfile" Usage="outputCacheProfileCollection.Get name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="outputCacheProfileCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="outputCacheProfileCollection.GetKey index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfileCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As OutputCacheProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::OutputCacheProfile ^ default[int] { System::Web::Configuration::OutputCacheProfile ^ get(int index); void set(int index, System::Web::Configuration::OutputCacheProfile ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.OutputCacheProfile with get, set" Usage="System.Web.Configuration.OutputCacheProfileCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfileCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As OutputCacheProfile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::OutputCacheProfile ^ default[System::String ^] { System::Web::Configuration::OutputCacheProfile ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.OutputCacheProfile" Usage="System.Web.Configuration.OutputCacheProfileCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfileCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.OutputCacheProfileCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="outputCacheProfileCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="outputCacheProfileCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -511,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfileCollection.Set(System.Web.Configuration.OutputCacheProfile)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (user As OutputCacheProfile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Web::Configuration::OutputCacheProfile ^ user);" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Web.Configuration.OutputCacheProfile -&gt; unit" Usage="outputCacheProfileCollection.Set user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

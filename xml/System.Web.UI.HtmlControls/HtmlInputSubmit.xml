@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputSubmit" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlInputSubmit&#xA;Inherits HtmlInputButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlInputSubmit : System::Web::UI::HtmlControls::HtmlInputButton" />
+  <TypeSignature Language="F#" Value="type HtmlInputSubmit = class&#xA;    inherit HtmlInputButton&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputSubmit.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlInputSubmit(System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.HtmlControls.HtmlInputSubmit : string -&gt; System.Web.UI.HtmlControls.HtmlInputSubmit" Usage="new System.Web.UI.HtmlControls.HtmlInputSubmit type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

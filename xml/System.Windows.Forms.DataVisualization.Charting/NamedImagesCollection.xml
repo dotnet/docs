@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.NamedImagesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class NamedImagesCollection&#xA;Inherits ChartNamedElementCollection(Of NamedImage)" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamedImagesCollection : System::Windows::Forms::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::NamedImage ^&gt;" />
+  <TypeSignature Language="F#" Value="type NamedImagesCollection = class&#xA;    inherit ChartNamedElementCollection&lt;NamedImage&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

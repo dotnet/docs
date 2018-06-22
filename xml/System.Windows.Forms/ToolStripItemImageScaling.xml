@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemImageScaling" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripItemImageScaling" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripItemImageScaling" />
+  <TypeSignature Language="F#" Value="type ToolStripItemImageScaling = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemImageScaling.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ToolStripItemImageScaling.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit" />
       <MemberSignature Language="VB.NET" Value="SizeToFit" />
       <MemberSignature Language="C++ CLI" Value="SizeToFit" />
+      <MemberSignature Language="F#" Value="SizeToFit = 1" Usage="System.Windows.Forms.ToolStripItemImageScaling.SizeToFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

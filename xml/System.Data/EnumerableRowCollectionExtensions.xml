@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EnumerableRowCollectionExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module EnumerableRowCollectionExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumerableRowCollectionExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type EnumerableRowCollectionExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Cast``1(System.Data.EnumerableRowCollection)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Cast(Of TResult) (source As EnumerableRowCollection) As EnumerableRowCollection(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TResult&gt; ^ Cast(System::Data::EnumerableRowCollection ^ source);" />
+      <MemberSignature Language="F#" Value="static member Cast : System.Data.EnumerableRowCollection -&gt; System.Data.EnumerableRowCollection&lt;'Result&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Cast source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderBy (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderBy (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderByDescending (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderByDescending (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TRow, S) (source As EnumerableRowCollection(Of TRow), selector As Func(Of TRow, S)) As EnumerableRowCollection(Of S)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename S&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;S&gt; ^ Select(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, S&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Select : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'S&gt; -&gt; System.Data.EnumerableRowCollection&lt;'S&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Select (source, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenBy (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenBy (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -413,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenByDescending (source, keySelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -457,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenByDescending (source, keySelector, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Where``1(System.Data.EnumerableRowCollection{``0},System.Func{``0,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of TRow) (source As EnumerableRowCollection(Of TRow), predicate As Func(Of TRow, Boolean)) As EnumerableRowCollection(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TRow&gt; ^ Where(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, bool&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Where : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, bool&gt; -&gt; System.Data.EnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Where (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.PersistenceProviderFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistenceProviderFactory&#xA;Inherits CommunicationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistenceProviderFactory abstract : System::ServiceModel::Channels::CommunicationObject" />
+  <TypeSignature Language="F#" Value="type PersistenceProviderFactory = class&#xA;    inherit CommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProviderFactory.CreateProvider(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateProvider (id As Guid) As PersistenceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Persistence::PersistenceProvider ^ CreateProvider(Guid id);" />
+      <MemberSignature Language="F#" Value="abstract member CreateProvider : Guid -&gt; System.ServiceModel.Persistence.PersistenceProvider" Usage="persistenceProviderFactory.CreateProvider id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

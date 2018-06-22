@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageContainment" />
   <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageContainment" />
   <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageContainment" />
+  <TypeSignature Language="F#" Value="type IsolatedStorageContainment = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" />
       <MemberSignature Language="VB.NET" Value="AdministerIsolatedStorageByUser" />
       <MemberSignature Language="C++ CLI" Value="AdministerIsolatedStorageByUser" />
+      <MemberSignature Language="F#" Value="AdministerIsolatedStorageByUser = 112" Usage="System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByMachine" />
       <MemberSignature Language="VB.NET" Value="ApplicationIsolationByMachine" />
       <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByMachine" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByMachine = 69" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByRoamingUser" />
       <MemberSignature Language="VB.NET" Value="ApplicationIsolationByRoamingUser" />
       <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByRoamingUser = 101" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByUser" />
       <MemberSignature Language="VB.NET" Value="ApplicationIsolationByUser" />
       <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByUser" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByUser = 21" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByMachine" />
       <MemberSignature Language="VB.NET" Value="AssemblyIsolationByMachine" />
       <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByMachine" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByMachine = 64" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByRoamingUser" />
       <MemberSignature Language="VB.NET" Value="AssemblyIsolationByRoamingUser" />
       <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByRoamingUser = 96" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" />
       <MemberSignature Language="VB.NET" Value="AssemblyIsolationByUser" />
       <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByUser" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByUser = 32" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByMachine" />
       <MemberSignature Language="VB.NET" Value="DomainIsolationByMachine" />
       <MemberSignature Language="C++ CLI" Value="DomainIsolationByMachine" />
+      <MemberSignature Language="F#" Value="DomainIsolationByMachine = 48" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByRoamingUser" />
       <MemberSignature Language="VB.NET" Value="DomainIsolationByRoamingUser" />
       <MemberSignature Language="C++ CLI" Value="DomainIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="DomainIsolationByRoamingUser = 80" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" />
       <MemberSignature Language="VB.NET" Value="DomainIsolationByUser" />
       <MemberSignature Language="C++ CLI" Value="DomainIsolationByUser" />
+      <MemberSignature Language="F#" Value="DomainIsolationByUser = 16" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.IsolatedStorageContainment.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -336,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage" />
       <MemberSignature Language="VB.NET" Value="UnrestrictedIsolatedStorage" />
       <MemberSignature Language="C++ CLI" Value="UnrestrictedIsolatedStorage" />
+      <MemberSignature Language="F#" Value="UnrestrictedIsolatedStorage = 240" Usage="System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

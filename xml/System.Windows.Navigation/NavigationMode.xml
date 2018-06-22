@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum NavigationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class NavigationMode" />
+  <TypeSignature Language="F#" Value="type NavigationMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Back" />
       <MemberSignature Language="VB.NET" Value="Back" />
       <MemberSignature Language="C++ CLI" Value="Back" />
+      <MemberSignature Language="F#" Value="Back = 1" Usage="System.Windows.Navigation.NavigationMode.Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Forward" />
       <MemberSignature Language="VB.NET" Value="Forward" />
       <MemberSignature Language="C++ CLI" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 2" Usage="System.Windows.Navigation.NavigationMode.Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.New" />
       <MemberSignature Language="VB.NET" Value="New" />
       <MemberSignature Language="C++ CLI" Value="New" />
+      <MemberSignature Language="F#" Value="New = 0" Usage="System.Windows.Navigation.NavigationMode.New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
       <MemberSignature Language="C++ CLI" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 3" Usage="System.Windows.Navigation.NavigationMode.Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

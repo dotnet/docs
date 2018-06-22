@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureTypeKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum SignatureTypeKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class SignatureTypeKind" />
+  <TypeSignature Language="F#" Value="type SignatureTypeKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeKind.Class" />
       <MemberSignature Language="VB.NET" Value="Class" />
       <MemberSignature Language="C++ CLI" Value="Class" />
+      <MemberSignature Language="F#" Value="Class = 18" Usage="System.Reflection.Metadata.SignatureTypeKind.Class" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeKind.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Reflection.Metadata.SignatureTypeKind.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeKind.ValueType" />
       <MemberSignature Language="VB.NET" Value="ValueType" />
       <MemberSignature Language="C++ CLI" Value="ValueType" />
+      <MemberSignature Language="F#" Value="ValueType = 17" Usage="System.Reflection.Metadata.SignatureTypeKind.ValueType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

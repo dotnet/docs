@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocumentType" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDocumentType&#xA;Inherits XmlLinkedNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDocumentType : System::Xml::XmlLinkedNode" />
+  <TypeSignature Language="F#" Value="type XmlDocumentType = class&#xA;    inherit XmlLinkedNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentType.#ctor(System.String,System.String,System.String,System.String,System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (name As String, publicId As String, systemId As String, internalSubset As String, doc As XmlDocument)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlDocumentType(System::String ^ name, System::String ^ publicId, System::String ^ systemId, System::String ^ internalSubset, System::Xml::XmlDocument ^ doc);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDocumentType : string * string * string * string * System.Xml.XmlDocument -&gt; System.Xml.XmlDocumentType" Usage="new System.Xml.XmlDocumentType (name, publicId, systemId, internalSubset, doc)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentType.CloneNode(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
+      <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlDocumentType.CloneNode deep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.Entities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entities As XmlNamedNodeMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamedNodeMap ^ Entities { System::Xml::XmlNamedNodeMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Xml.XmlNamedNodeMap" Usage="System.Xml.XmlDocumentType.Entities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.InternalSubset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalSubset As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InternalSubset { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InternalSubset : string" Usage="System.Xml.XmlDocumentType.InternalSubset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Xml.XmlDocumentType.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlDocumentType.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlDocumentType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlDocumentType.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.Notations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Notations As XmlNamedNodeMap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamedNodeMap ^ Notations { System::Xml::XmlNamedNodeMap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Notations : System.Xml.XmlNamedNodeMap" Usage="System.Xml.XmlDocumentType.Notations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -428,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.PublicId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublicId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PublicId : string" Usage="System.Xml.XmlDocumentType.PublicId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -458,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocumentType.SystemId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SystemId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SystemId : string" Usage="System.Xml.XmlDocumentType.SystemId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -488,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentType.WriteContentTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ w);" />
+      <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocumentType.WriteContentTo w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -521,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocumentType.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocumentType.WriteTo w" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

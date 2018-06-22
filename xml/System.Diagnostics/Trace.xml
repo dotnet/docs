@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Trace" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Trace" />
   <TypeSignature Language="C++ CLI" Value="public ref class Trace sealed" />
+  <TypeSignature Language="F#" Value="type Trace = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition);" />
+      <MemberSignature Language="F#" Value="static member Assert : bool -&gt; unit" Usage="System.Diagnostics.Trace.Assert condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -187,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member Assert : bool * string -&gt; unit" Usage="System.Diagnostics.Trace.Assert (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -272,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Assert (condition As Boolean, message As String, detailMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Assert(bool condition, System::String ^ message, System::String ^ detailMessage);" />
+      <MemberSignature Language="F#" Value="static member Assert : bool * string * string -&gt; unit" Usage="System.Diagnostics.Trace.Assert (condition, message, detailMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -359,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.AutoFlush" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AutoFlush As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AutoFlush { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="System.Diagnostics.Trace.AutoFlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -418,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Close" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Close();" />
+      <MemberSignature Language="F#" Value="static member Close : unit -&gt; unit" Usage="System.Diagnostics.Trace.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -480,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.CorrelationManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CorrelationManager As CorrelationManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::CorrelationManager ^ CorrelationManager { System::Diagnostics::CorrelationManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationManager : System.Diagnostics.CorrelationManager" Usage="System.Diagnostics.Trace.CorrelationManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -533,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Fail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fail (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fail(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member Fail : string -&gt; unit" Usage="System.Diagnostics.Trace.Fail message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -606,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Fail(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fail (message As String, detailMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fail(System::String ^ message, System::String ^ detailMessage);" />
+      <MemberSignature Language="F#" Value="static member Fail : string * string -&gt; unit" Usage="System.Diagnostics.Trace.Fail (message, detailMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -681,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Flush();" />
+      <MemberSignature Language="F#" Value="static member Flush : unit -&gt; unit" Usage="System.Diagnostics.Trace.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -740,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Indent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Indent();" />
+      <MemberSignature Language="F#" Value="static member Indent : unit -&gt; unit" Usage="System.Diagnostics.Trace.Indent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -799,6 +810,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.IndentLevel" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property IndentLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IndentLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentLevel : int with get, set" Usage="System.Diagnostics.Trace.IndentLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -865,6 +877,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.IndentSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property IndentSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IndentSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IndentSize : int with get, set" Usage="System.Diagnostics.Trace.IndentSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -923,6 +936,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.Listeners" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Listeners As TraceListenerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::TraceListenerCollection ^ Listeners { System::Diagnostics::TraceListenerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Listeners : System.Diagnostics.TraceListenerCollection" Usage="System.Diagnostics.Trace.Listeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -981,6 +995,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh();" />
+      <MemberSignature Language="F#" Value="static member Refresh : unit -&gt; unit" Usage="System.Diagnostics.Trace.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1029,6 +1044,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceError (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceError(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member TraceError : string -&gt; unit" Usage="System.Diagnostics.Trace.TraceError message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1082,6 +1098,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceError(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceError (format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceError(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member TraceError : string * obj[] -&gt; unit" Usage="System.Diagnostics.Trace.TraceError (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1153,6 +1170,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceInformation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceInformation (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceInformation(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member TraceInformation : string -&gt; unit" Usage="System.Diagnostics.Trace.TraceInformation message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1206,6 +1224,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceInformation(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceInformation (format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceInformation(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member TraceInformation : string * obj[] -&gt; unit" Usage="System.Diagnostics.Trace.TraceInformation (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1277,6 +1296,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceWarning(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceWarning (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceWarning(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member TraceWarning : string -&gt; unit" Usage="System.Diagnostics.Trace.TraceWarning message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1330,6 +1350,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceWarning(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TraceWarning (format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TraceWarning(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="static member TraceWarning : string * obj[] -&gt; unit" Usage="System.Diagnostics.Trace.TraceWarning (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1391,6 +1412,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Unindent" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Unindent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unindent();" />
+      <MemberSignature Language="F#" Value="static member Unindent : unit -&gt; unit" Usage="System.Diagnostics.Trace.Unindent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1452,6 +1474,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Trace.UseGlobalLock" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property UseGlobalLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseGlobalLock { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseGlobalLock : bool with get, set" Usage="System.Diagnostics.Trace.UseGlobalLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1512,6 +1535,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Write : obj -&gt; unit" Usage="System.Diagnostics.Trace.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1585,6 +1609,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member Write : string -&gt; unit" Usage="System.Diagnostics.Trace.Write message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1658,6 +1683,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Object ^ value, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member Write : obj * string -&gt; unit" Usage="System.Diagnostics.Trace.Write (value, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1735,6 +1761,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.Write(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member Write : string * string -&gt; unit" Usage="System.Diagnostics.Trace.Write (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1822,6 +1849,7 @@ End of list of errors
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member WriteIf : bool * obj -&gt; unit" Usage="System.Diagnostics.Trace.WriteIf (condition, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1909,6 +1937,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member WriteIf : bool * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteIf (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -1996,6 +2025,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, value As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::Object ^ value, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteIf : bool * obj * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteIf (condition, value, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2087,6 +2117,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteIf(System.Boolean,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteIf (condition As Boolean, message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteIf(bool condition, System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteIf : bool * string * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteIf (condition, message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2188,6 +2219,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member WriteLine : obj -&gt; unit" Usage="System.Diagnostics.Trace.WriteLine value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2256,6 +2288,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLine message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2324,6 +2357,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Object ^ value, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteLine : obj * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLine (value, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2396,6 +2430,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLine(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLine (message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2478,6 +2513,7 @@ Trace.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member WriteLineIf : bool * obj -&gt; unit" Usage="System.Diagnostics.Trace.WriteLineIf (condition, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2565,6 +2601,7 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="static member WriteLineIf : bool * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLineIf (condition, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2652,6 +2689,7 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, value As Object, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::Object ^ value, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteLineIf : bool * obj * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLineIf (condition, value, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -2743,6 +2781,7 @@ Trace.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.WriteLineIf(System.Boolean,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLineIf (condition As Boolean, message As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLineIf(bool condition, System::String ^ message, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="static member WriteLineIf : bool * string * string -&gt; unit" Usage="System.Diagnostics.Trace.WriteLineIf (condition, message, category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

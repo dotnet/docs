@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.RequestCachePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestCachePolicy" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestCachePolicy" />
+  <TypeSignature Language="F#" Value="type RequestCachePolicy = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.RequestCachePolicy.#ctor(System.Net.Cache.RequestCacheLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As RequestCacheLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestCachePolicy(System::Net::Cache::RequestCacheLevel level);" />
+      <MemberSignature Language="F#" Value="new System.Net.Cache.RequestCachePolicy : System.Net.Cache.RequestCacheLevel -&gt; System.Net.Cache.RequestCachePolicy" Usage="new System.Net.Cache.RequestCachePolicy level" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.RequestCachePolicy.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As RequestCacheLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCacheLevel Level { System::Net::Cache::RequestCacheLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Net.Cache.RequestCacheLevel" Usage="System.Net.Cache.RequestCachePolicy.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.RequestCachePolicy.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="requestCachePolicy.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

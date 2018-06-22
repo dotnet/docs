@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataTrigger" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTrigger&#xA;Inherits TriggerBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTrigger : System::Windows::TriggerBase, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type DataTrigger = class&#xA;    inherit TriggerBase&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTrigger.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As BindingBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingBase ^ Binding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.DataTrigger.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataTrigger.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveMarkupExtension (targetObject As Object, eventArgs As XamlSetMarkupExtensionEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveMarkupExtension(System::Object ^ targetObject, System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^ eventArgs);" />
+      <MemberSignature Language="F#" Value="static member ReceiveMarkupExtension : obj * System.Windows.Markup.XamlSetMarkupExtensionEventArgs -&gt; unit" Usage="System.Windows.DataTrigger.ReceiveMarkupExtension (targetObject, eventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTrigger.Setters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Setters As SetterBaseCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::SetterBaseCollection ^ Setters { System::Windows::SetterBaseCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Setters : System.Windows.SetterBaseCollection" Usage="System.Windows.DataTrigger.Setters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataTrigger.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Windows.DataTrigger.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.MailSettingsSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MailSettingsSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailSettingsSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type MailSettingsSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.MailSettingsSectionGroup.Smtp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Smtp As SmtpSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::SmtpSection ^ Smtp { System::Net::Configuration::SmtpSection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Smtp : System.Net.Configuration.SmtpSection" Usage="System.Net.Configuration.MailSettingsSectionGroup.Smtp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

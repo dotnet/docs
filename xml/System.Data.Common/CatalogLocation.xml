@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CatalogLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum CatalogLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class CatalogLocation" />
+  <TypeSignature Language="F#" Value="type CatalogLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CatalogLocation.End" />
       <MemberSignature Language="VB.NET" Value="End" />
       <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberSignature Language="F#" Value="End = 2" Usage="System.Data.Common.CatalogLocation.End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CatalogLocation.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 1" Usage="System.Data.Common.CatalogLocation.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

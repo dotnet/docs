@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.DataServiceKeyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceKeyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceKeyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataServiceKeyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.DataServiceKeyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceKeyAttribute(System::String ^ keyName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.DataServiceKeyAttribute : string -&gt; System.Data.Services.Common.DataServiceKeyAttribute" Usage="new System.Data.Services.Common.DataServiceKeyAttribute keyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.DataServiceKeyAttribute.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray keyNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceKeyAttribute(... cli::array &lt;System::String ^&gt; ^ keyNames);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.DataServiceKeyAttribute : string[] -&gt; System.Data.Services.Common.DataServiceKeyAttribute" Usage="new System.Data.Services.Common.DataServiceKeyAttribute keyNames" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.DataServiceKeyAttribute.KeyNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyNames As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ KeyNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Data.Services.Common.DataServiceKeyAttribute.KeyNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

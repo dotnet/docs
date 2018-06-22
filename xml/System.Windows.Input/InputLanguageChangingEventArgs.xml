@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InputLanguageChangingEventArgs&#xA;Inherits InputLanguageEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputLanguageChangingEventArgs : System::Windows::Input::InputLanguageEventArgs" />
+  <TypeSignature Language="F#" Value="type InputLanguageChangingEventArgs = class&#xA;    inherit InputLanguageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageChangingEventArgs.#ctor(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newLanguageId As CultureInfo, previousLanguageId As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputLanguageChangingEventArgs(System::Globalization::CultureInfo ^ newLanguageId, System::Globalization::CultureInfo ^ previousLanguageId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputLanguageChangingEventArgs : System.Globalization.CultureInfo * System.Globalization.CultureInfo -&gt; System.Windows.Input.InputLanguageChangingEventArgs" Usage="new System.Windows.Input.InputLanguageChangingEventArgs (newLanguageId, previousLanguageId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageChangingEventArgs.Rejected" />
       <MemberSignature Language="VB.NET" Value="Public Property Rejected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Rejected { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Rejected : bool with get, set" Usage="System.Windows.Input.InputLanguageChangingEventArgs.Rejected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

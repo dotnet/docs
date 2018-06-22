@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpBindingBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WSHttpBindingBase&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSHttpBindingBase abstract : System::ServiceModel::Channels::Binding, System::ServiceModel::Channels::IBindingRuntimePreferences" />
+  <TypeSignature Language="F#" Value="type WSHttpBindingBase = class&#xA;    inherit Binding&#xA;    interface IBindingRuntimePreferences" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (reliableSessionEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; WSHttpBindingBase(bool reliableSessionEnabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSHttpBindingBase : bool -&gt; System.ServiceModel.WSHttpBindingBase" Usage="new System.ServiceModel.WSHttpBindingBase reliableSessionEnabled" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property BypassProxyOnLocal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BypassProxyOnLocal { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BypassProxyOnLocal : bool with get, set" Usage="System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.CreateBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="wSHttpBindingBase.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.CreateMessageSecurity" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateMessageSecurity () As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Channels::SecurityBindingElement ^ CreateMessageSecurity();" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageSecurity : unit -&gt; System.ServiceModel.Channels.SecurityBindingElement" Usage="wSHttpBindingBase.CreateMessageSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.EnvelopeVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvelopeVersion As EnvelopeVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EnvelopeVersion ^ EnvelopeVersion { System::ServiceModel::EnvelopeVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnvelopeVersion : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.WSHttpBindingBase.EnvelopeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.GetTransport" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetTransport () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Channels::TransportBindingElement ^ GetTransport();" />
+      <MemberSignature Language="F#" Value="abstract member GetTransport : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="wSHttpBindingBase.GetTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.WSHttpBindingBase.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MaxBufferPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.WSHttpBindingBase.MaxBufferPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MessageEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageEncoding As WSMessageEncoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSMessageEncoding MessageEncoding { System::ServiceModel::WSMessageEncoding get(); void set(System::ServiceModel::WSMessageEncoding value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageEncoding : System.ServiceModel.WSMessageEncoding with get, set" Usage="System.ServiceModel.WSHttpBindingBase.MessageEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ProxyAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ProxyAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProxyAddress : Uri with get, set" Usage="System.ServiceModel.WSHttpBindingBase.ProxyAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -456,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryReaderQuotas ^ ReaderQuotas { System::Xml::XmlDictionaryReaderQuotas ^ get(); void set(System::Xml::XmlDictionaryReaderQuotas ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.ServiceModel.WSHttpBindingBase.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -491,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ReliableSession" />
       <MemberSignature Language="VB.NET" Value="Public Property ReliableSession As OptionalReliableSession" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::OptionalReliableSession ^ ReliableSession { System::ServiceModel::OptionalReliableSession ^ get(); void set(System::ServiceModel::OptionalReliableSession ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReliableSession : System.ServiceModel.OptionalReliableSession with get, set" Usage="System.ServiceModel.WSHttpBindingBase.ReliableSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -526,6 +540,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.WSHttpBindingBase.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -556,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReaderQuotas () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeReaderQuotas();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReaderQuotas : unit -&gt; bool" Usage="wSHttpBindingBase.ShouldSerializeReaderQuotas " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -583,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeReliableSession" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReliableSession () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeReliableSession();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReliableSession : unit -&gt; bool" Usage="wSHttpBindingBase.ShouldSerializeReliableSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -610,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeTextEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTextEncoding () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTextEncoding();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTextEncoding : unit -&gt; bool" Usage="wSHttpBindingBase.ShouldSerializeTextEncoding " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -637,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveSynchronously As Boolean Implements IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.WSHttpBindingBase.System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously</InterfaceMember>
@@ -671,6 +690,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.TextEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property TextEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ TextEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextEncoding : System.Text.Encoding with get, set" Usage="System.ServiceModel.WSHttpBindingBase.TextEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -706,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.TransactionFlow" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionFlow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TransactionFlow : bool with get, set" Usage="System.ServiceModel.WSHttpBindingBase.TransactionFlow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -742,6 +763,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.UseDefaultWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultWebProxy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultWebProxy { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultWebProxy : bool with get, set" Usage="System.ServiceModel.WSHttpBindingBase.UseDefaultWebProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

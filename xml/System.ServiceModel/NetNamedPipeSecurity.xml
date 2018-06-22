@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetNamedPipeSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetNamedPipeSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeSecurity sealed" />
+  <TypeSignature Language="F#" Value="type NetNamedPipeSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetNamedPipeSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As NetNamedPipeSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetNamedPipeSecurityMode Mode { System::ServiceModel::NetNamedPipeSecurityMode get(); void set(System::ServiceModel::NetNamedPipeSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.NetNamedPipeSecurityMode with get, set" Usage="System.ServiceModel.NetNamedPipeSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetNamedPipeSecurity.ShouldSerializeTransport" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="netNamedPipeSecurity.ShouldSerializeTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetNamedPipeSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As NamedPipeTransportSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NamedPipeTransportSecurity ^ Transport { System::ServiceModel::NamedPipeTransportSecurity ^ get(); void set(System::ServiceModel::NamedPipeTransportSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.NamedPipeTransportSecurity with get, set" Usage="System.ServiceModel.NetNamedPipeSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

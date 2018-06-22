@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequestMethods.Http" />
   <TypeSignature Language="VB.NET" Value="Public Class WebRequestMethods.Http" />
   <TypeSignature Language="C++ CLI" Value="public: ref class WebRequestMethods::Http abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebRequestMethods.Http = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.Connect" />
       <MemberSignature Language="VB.NET" Value="Public Const Connect As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Connect;" />
+      <MemberSignature Language="F#" Value="val mutable Connect : string" Usage="System.Net.WebRequestMethods.Http.Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.Get" />
       <MemberSignature Language="VB.NET" Value="Public Const Get As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Get;" />
+      <MemberSignature Language="F#" Value="val mutable Get : string" Usage="System.Net.WebRequestMethods.Http.Get" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.Head" />
       <MemberSignature Language="VB.NET" Value="Public Const Head As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Head;" />
+      <MemberSignature Language="F#" Value="val mutable Head : string" Usage="System.Net.WebRequestMethods.Http.Head" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.MkCol" />
       <MemberSignature Language="VB.NET" Value="Public Const MkCol As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ MkCol;" />
+      <MemberSignature Language="F#" Value="val mutable MkCol : string" Usage="System.Net.WebRequestMethods.Http.MkCol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.Post" />
       <MemberSignature Language="VB.NET" Value="Public Const Post As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Post;" />
+      <MemberSignature Language="F#" Value="val mutable Post : string" Usage="System.Net.WebRequestMethods.Http.Post" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Http.Put" />
       <MemberSignature Language="VB.NET" Value="Public Const Put As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Put;" />
+      <MemberSignature Language="F#" Value="val mutable Put : string" Usage="System.Net.WebRequestMethods.Http.Put" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

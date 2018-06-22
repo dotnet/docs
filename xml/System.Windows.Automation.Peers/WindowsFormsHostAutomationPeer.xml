@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsHostAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsHostAutomationPeer sealed : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type WindowsFormsHostAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.#ctor(System.Windows.Forms.Integration.WindowsFormsHost)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As WindowsFormsHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsFormsHostAutomationPeer(System::Windows::Forms::Integration::WindowsFormsHost ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer : System.Windows.Forms.Integration.WindowsFormsHost -&gt; System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer" Usage="new System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="windowsFormsHostAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="windowsFormsHostAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetHostRawElementProviderCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHostRawElementProviderCore () As HostedWindowWrapper" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::HostedWindowWrapper ^ GetHostRawElementProviderCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHostRawElementProviderCore : unit -&gt; System.Windows.Automation.Peers.HostedWindowWrapper" Usage="windowsFormsHostAutomationPeer.GetHostRawElementProviderCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.IsHwndHost" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsHwndHost As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsHwndHost { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHwndHost : bool" Usage="System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.IsHwndHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

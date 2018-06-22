@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentChangeService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentChangeService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentChangeService" />
+  <TypeSignature Language="F#" Value="type IComponentChangeService = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded" />
       <MemberSignature Language="VB.NET" Value="Event ComponentAdded As ComponentEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentEventHandler ^ ComponentAdded;" />
+      <MemberSignature Language="F#" Value="member this.ComponentAdded : System.ComponentModel.Design.ComponentEventHandler " Usage="member this.ComponentAdded : System.ComponentModel.Design.ComponentEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding" />
       <MemberSignature Language="VB.NET" Value="Event ComponentAdding As ComponentEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentEventHandler ^ ComponentAdding;" />
+      <MemberSignature Language="F#" Value="member this.ComponentAdding : System.ComponentModel.Design.ComponentEventHandler " Usage="member this.ComponentAdding : System.ComponentModel.Design.ComponentEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       <MemberSignature Language="VB.NET" Value="Event ComponentChanged As ComponentChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentChangedEventHandler ^ ComponentChanged;" />
+      <MemberSignature Language="F#" Value="member this.ComponentChanged : System.ComponentModel.Design.ComponentChangedEventHandler " Usage="member this.ComponentChanged : System.ComponentModel.Design.ComponentChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" />
       <MemberSignature Language="VB.NET" Value="Event ComponentChanging As ComponentChangingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentChangingEventHandler ^ ComponentChanging;" />
+      <MemberSignature Language="F#" Value="member this.ComponentChanging : System.ComponentModel.Design.ComponentChangingEventHandler " Usage="member this.ComponentChanging : System.ComponentModel.Design.ComponentChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved" />
       <MemberSignature Language="VB.NET" Value="Event ComponentRemoved As ComponentEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentEventHandler ^ ComponentRemoved;" />
+      <MemberSignature Language="F#" Value="member this.ComponentRemoved : System.ComponentModel.Design.ComponentEventHandler " Usage="member this.ComponentRemoved : System.ComponentModel.Design.ComponentEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving" />
       <MemberSignature Language="VB.NET" Value="Event ComponentRemoving As ComponentEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentEventHandler ^ ComponentRemoving;" />
+      <MemberSignature Language="F#" Value="member this.ComponentRemoving : System.ComponentModel.Design.ComponentEventHandler " Usage="member this.ComponentRemoving : System.ComponentModel.Design.ComponentEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" />
       <MemberSignature Language="VB.NET" Value="Event ComponentRename As ComponentRenameEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentRenameEventHandler ^ ComponentRename;" />
+      <MemberSignature Language="F#" Value="member this.ComponentRename : System.ComponentModel.Design.ComponentRenameEventHandler " Usage="member this.ComponentRename : System.ComponentModel.Design.ComponentRenameEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentChangeService.OnComponentChanged(System.Object,System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnComponentChanged (component As Object, member As MemberDescriptor, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnComponentChanged(System::Object ^ component, System::ComponentModel::MemberDescriptor ^ member, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentChanged : obj * System.ComponentModel.MemberDescriptor * obj * obj -&gt; unit" Usage="iComponentChangeService.OnComponentChanged (component, member, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -398,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentChangeService.OnComponentChanging(System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnComponentChanging (component As Object, member As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnComponentChanging(System::Object ^ component, System::ComponentModel::MemberDescriptor ^ member);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentChanging : obj * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="iComponentChangeService.OnComponentChanging (component, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

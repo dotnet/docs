@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.WindowsSecurityToken" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsSecurityToken&#xA;Inherits SecurityToken" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsSecurityToken : System::IdentityModel::Tokens::SecurityToken" />
+  <TypeSignature Language="F#" Value="type WindowsSecurityToken = class&#xA;    inherit SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ identity);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As WindowsIdentity, id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ identity, System::String ^ id);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity * string -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken (identity, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, string id, string authenticationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsSecurityToken(System::Security::Principal::WindowsIdentity ^ windowsIdentity, System::String ^ id, System::String ^ authenticationType);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.WindowsSecurityToken : System.Security.Principal.WindowsIdentity * string * string -&gt; System.IdentityModel.Tokens.WindowsSecurityToken" Usage="new System.IdentityModel.Tokens.WindowsSecurityToken (windowsIdentity, id, authenticationType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="windowsSecurityToken.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(string id, valuetype System.DateTime effectiveTime, valuetype System.DateTime expirationTime, class System.Security.Principal.WindowsIdentity windowsIdentity, bool clone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::String ^ id, DateTime effectiveTime, DateTime expirationTime, System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool clone);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * DateTime * DateTime * System.Security.Principal.WindowsIdentity * bool -&gt; unit" Usage="windowsSecurityToken.Initialize (id, effectiveTime, expirationTime, windowsIdentity, clone)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(string id, string authenticationType, valuetype System.DateTime effectiveTime, valuetype System.DateTime expirationTime, class System.Security.Principal.WindowsIdentity windowsIdentity, bool clone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::String ^ id, System::String ^ authenticationType, DateTime effectiveTime, DateTime expirationTime, System::Security::Principal::WindowsIdentity ^ windowsIdentity, bool clone);" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * DateTime * DateTime * System.Security.Principal.WindowsIdentity * bool -&gt; unit" Usage="windowsSecurityToken.Initialize (id, authenticationType, effectiveTime, expirationTime, windowsIdentity, clone)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -319,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -346,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.ThrowIfDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposed();" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfDisposed : unit -&gt; unit" Usage="windowsSecurityToken.ThrowIfDisposed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -367,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidFrom { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -394,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidTo { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidTo : DateTime" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -421,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowsIdentity As WindowsIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::WindowsIdentity ^ WindowsIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowsIdentity : System.Security.Principal.WindowsIdentity" Usage="System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

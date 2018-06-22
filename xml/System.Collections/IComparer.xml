@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IComparer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComparer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComparer" />
+  <TypeSignature Language="F#" Value="type IComparer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ The following example uses the <xref:System.Collections.IComparer> interface to 
       <MemberSignature Language="DocId" Value="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As Object, y As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Compare(System::Object ^ x, System::Object ^ y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int" Usage="iComparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -92,7 +94,7 @@ The following example uses the <xref:System.Collections.IComparer> interface to 
         <param name="x">The first object to compare.</param>
         <param name="y">The second object to compare.</param>
         <summary>Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
-        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />:<br/>   - If less than 0, <paramref name="x" /> is less than <paramref name="y" />.<br/>   - If 0, <paramref name="x" /> equals <paramref name="y" />.<br/>   - If greater than 0, <paramref name="x" /> is greater than <paramref name="y" />. 
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />:<br />   - If less than 0, <paramref name="x" /> is less than <paramref name="y" />.<br />   - If 0, <paramref name="x" /> equals <paramref name="y" />.<br />   - If greater than 0, <paramref name="x" /> is greater than <paramref name="y" />. 
   
         </returns>
         <remarks>

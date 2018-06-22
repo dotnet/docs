@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitOrTimerCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WaitOrTimerCallback(state As Object, timedOut As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WaitOrTimerCallback(System::Object ^ state, bool timedOut);" />
+  <TypeSignature Language="F#" Value="type WaitOrTimerCallback = delegate of obj * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.ThreadPool</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

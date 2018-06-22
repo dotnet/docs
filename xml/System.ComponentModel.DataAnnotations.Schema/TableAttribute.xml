@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.TableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class TableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type TableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TableAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.Schema.TableAttribute : string -&gt; System.ComponentModel.DataAnnotations.Schema.TableAttribute" Usage="new System.ComponentModel.DataAnnotations.Schema.TableAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.TableAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.DataAnnotations.Schema.TableAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.TableAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Schema { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : string with get, set" Usage="System.ComponentModel.DataAnnotations.Schema.TableAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

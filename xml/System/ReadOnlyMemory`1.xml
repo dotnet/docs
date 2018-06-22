@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ReadOnlyMemory`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlyMemory(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ReadOnlyMemory" />
+  <TypeSignature Language="F#" Value="type ReadOnlyMemory&lt;'T&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="new ReadOnlyMemory&lt;'T&gt; : 'T[] -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="new System.ReadOnlyMemory&lt;'T&gt; array" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.#ctor(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer, length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberSignature Language="F#" Value="new ReadOnlyMemory&lt;'T&gt; : 'T[] * int * int -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="new System.ReadOnlyMemory&lt;'T&gt; (array, start, length)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.CopyTo(System.Memory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Memory(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Memory&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Memory&lt;'T&gt; -&gt; unit" Usage="readOnlyMemory.CopyTo destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ReadOnlyMemory`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ReadOnlyMemory&lt;T&gt; Empty { ReadOnlyMemory&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : ReadOnlyMemory&lt;'T&gt;" Usage="System.ReadOnlyMemory&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="readOnlyMemory.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.Equals(System.ReadOnlyMemory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ReadOnlyMemory(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ReadOnlyMemory&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : ReadOnlyMemory&lt;'T&gt; -&gt; bool" Usage="readOnlyMemory.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="readOnlyMemory.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.ReadOnlyMemory`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.ReadOnlyMemory&lt;'T&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -218,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.ReadOnlyMemory`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.ReadOnlyMemory&lt;'T&gt;.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -238,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlyMemory{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlyMemory&lt;T&gt;(ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="System.ReadOnlyMemory&lt;'T&gt;.op_Implicit segment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -262,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.op_Implicit(`0[])~System.ReadOnlyMemory{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T()) As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlyMemory&lt;T&gt;(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T[] -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="System.ReadOnlyMemory&lt;'T&gt;.op_Implicit array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -286,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.Pin" />
       <MemberSignature Language="VB.NET" Value="Public Function Pin () As MemoryHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::MemoryHandle Pin();" />
+      <MemberSignature Language="F#" Value="member this.Pin : unit -&gt; System.Buffers.MemoryHandle" Usage="readOnlyMemory.Pin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -307,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.Slice(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer) As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory&lt;T&gt; Slice(int start);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="readOnlyMemory.Slice start" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -331,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.Slice(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, length As Integer) As ReadOnlyMemory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory&lt;T&gt; Slice(int start, int length);" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="readOnlyMemory.Slice (start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -357,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.ReadOnlyMemory`1.Span" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Span As ReadOnlySpan(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;T&gt; Span { ReadOnlySpan&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Span : ReadOnlySpan&lt;'T&gt;" Usage="System.ReadOnlyMemory&lt;'T&gt;.Span" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -377,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="readOnlyMemory.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -398,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="readOnlyMemory.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -419,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:System.ReadOnlyMemory`1.TryCopyTo(System.Memory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Memory(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCopyTo(Memory&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Memory&lt;'T&gt; -&gt; bool" Usage="readOnlyMemory.TryCopyTo destination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

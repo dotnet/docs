@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowComparer" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRowComparer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRowComparer abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataRowComparer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowComparer.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As DataRowComparer(Of DataRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::DataRowComparer&lt;System::Data::DataRow ^&gt; ^ Default { System::Data::DataRowComparer&lt;System::Data::DataRow ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Data.DataRowComparer&lt;System.Data.DataRow&gt;" Usage="System.Data.DataRowComparer.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>

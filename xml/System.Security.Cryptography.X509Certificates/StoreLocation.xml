@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.StoreLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum StoreLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class StoreLocation" />
+  <TypeSignature Language="F#" Value="type StoreLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="CurrentUser" />
       <MemberSignature Language="C++ CLI" Value="CurrentUser" />
+      <MemberSignature Language="F#" Value="CurrentUser = 1" Usage="System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="LocalMachine" />
       <MemberSignature Language="C++ CLI" Value="LocalMachine" />
+      <MemberSignature Language="F#" Value="LocalMachine = 2" Usage="System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

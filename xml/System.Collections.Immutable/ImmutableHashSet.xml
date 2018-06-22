@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableHashSet" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableHashSet" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImmutableHashSet abstract sealed" />
+  <TypeSignature Language="F#" Value="type ImmutableHashSet = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) () As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (equalityComparer As IEqualityComparer(Of T)) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create equalityComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (item As T) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create(T item);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (ParamArray items As T()) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create(... cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T[] -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (equalityComparer As IEqualityComparer(Of T), item As T) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer, T item);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'T -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create (equalityComparer, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.Create``1(System.Collections.Generic.IEqualityComparer{``0},``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (equalityComparer As IEqualityComparer(Of T), ParamArray items As T()) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ Create(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer, ... cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'T[] -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.Create (equalityComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateBuilder``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of T) () As ImmutableHashSet(Of T).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt;::Builder ^ CreateBuilder();" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : unit -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Builder" Usage="System.Collections.Immutable.ImmutableHashSet.CreateBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateBuilder``1(System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBuilder(Of T) (equalityComparer As IEqualityComparer(Of T)) As ImmutableHashSet(Of T).Builder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt;::Builder ^ CreateBuilder(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilder : System.Collections.Generic.IEqualityComparer&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;.Builder" Usage="System.Collections.Immutable.ImmutableHashSet.CreateBuilder equalityComparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (items As IEnumerable(Of T)) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.CreateRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.CreateRange``1(System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (equalityComparer As IEqualityComparer(Of T), items As IEnumerable(Of T)) As ImmutableHashSet(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ equalityComparer, System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : System.Collections.Generic.IEqualityComparer&lt;'T&gt; * seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.CreateRange (equalityComparer, items)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableHashSet(Of TSource) (source As IEnumerable(Of TSource)) As ImmutableHashSet(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;TSource&gt; ^ ToImmutableHashSet(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableHashSet : seq&lt;'Source&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'Source&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -382,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToImmutableHashSet(Of TSource) (source As IEnumerable(Of TSource), equalityComparer As IEqualityComparer(Of TSource)) As ImmutableHashSet(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::ImmutableHashSet&lt;TSource&gt; ^ ToImmutableHashSet(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Collections::Generic::IEqualityComparer&lt;TSource&gt; ^ equalityComparer);" />
+      <MemberSignature Language="F#" Value="static member ToImmutableHashSet : seq&lt;'Source&gt; * System.Collections.Generic.IEqualityComparer&lt;'Source&gt; -&gt; System.Collections.Immutable.ImmutableHashSet&lt;'Source&gt;" Usage="System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet (source, equalityComparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

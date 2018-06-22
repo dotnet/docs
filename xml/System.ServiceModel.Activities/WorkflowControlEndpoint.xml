@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowControlEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowControlEndpoint&#xA;Inherits ServiceEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowControlEndpoint : System::ServiceModel::Description::ServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type WorkflowControlEndpoint = class&#xA;    inherit ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowControlEndpoint.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowControlEndpoint(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowControlEndpoint : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Activities.WorkflowControlEndpoint" Usage="new System.ServiceModel.Activities.WorkflowControlEndpoint (binding, address)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

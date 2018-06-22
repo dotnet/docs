@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.IOrderedDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOrderedDictionary&#xA;Implements IDictionary" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOrderedDictionary : System::Collections::IDictionary" />
+  <TypeSignature Language="F#" Value="type IOrderedDictionary = interface&#xA;    interface IDictionary&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="iOrderedDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Object ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * obj * obj -&gt; unit" Usage="iOrderedDictionary.Insert (index, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -205,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Collections.Specialized.IOrderedDictionary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -271,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit" Usage="iOrderedDictionary.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>

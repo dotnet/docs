@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActiveDirectoryRights" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActiveDirectoryRights" />
+  <TypeSignature Language="F#" Value="type ActiveDirectoryRights = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.AccessSystemSecurity" />
       <MemberSignature Language="VB.NET" Value="AccessSystemSecurity" />
       <MemberSignature Language="C++ CLI" Value="AccessSystemSecurity" />
+      <MemberSignature Language="F#" Value="AccessSystemSecurity = 16777216" Usage="System.DirectoryServices.ActiveDirectoryRights.AccessSystemSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.CreateChild" />
       <MemberSignature Language="VB.NET" Value="CreateChild" />
       <MemberSignature Language="C++ CLI" Value="CreateChild" />
+      <MemberSignature Language="F#" Value="CreateChild = 1" Usage="System.DirectoryServices.ActiveDirectoryRights.CreateChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.DirectoryServices.ActiveDirectoryRights.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.DeleteChild" />
       <MemberSignature Language="VB.NET" Value="DeleteChild" />
       <MemberSignature Language="C++ CLI" Value="DeleteChild" />
+      <MemberSignature Language="F#" Value="DeleteChild = 2" Usage="System.DirectoryServices.ActiveDirectoryRights.DeleteChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.DeleteTree" />
       <MemberSignature Language="VB.NET" Value="DeleteTree" />
       <MemberSignature Language="C++ CLI" Value="DeleteTree" />
+      <MemberSignature Language="F#" Value="DeleteTree = 64" Usage="System.DirectoryServices.ActiveDirectoryRights.DeleteTree" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ExtendedRight" />
       <MemberSignature Language="VB.NET" Value="ExtendedRight" />
       <MemberSignature Language="C++ CLI" Value="ExtendedRight" />
+      <MemberSignature Language="F#" Value="ExtendedRight = 256" Usage="System.DirectoryServices.ActiveDirectoryRights.ExtendedRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericAll" />
       <MemberSignature Language="VB.NET" Value="GenericAll" />
       <MemberSignature Language="C++ CLI" Value="GenericAll" />
+      <MemberSignature Language="F#" Value="GenericAll = 983551" Usage="System.DirectoryServices.ActiveDirectoryRights.GenericAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -172,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericExecute" />
       <MemberSignature Language="VB.NET" Value="GenericExecute" />
       <MemberSignature Language="C++ CLI" Value="GenericExecute" />
+      <MemberSignature Language="F#" Value="GenericExecute = 131076" Usage="System.DirectoryServices.ActiveDirectoryRights.GenericExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericRead" />
       <MemberSignature Language="VB.NET" Value="GenericRead" />
       <MemberSignature Language="C++ CLI" Value="GenericRead" />
+      <MemberSignature Language="F#" Value="GenericRead = 131220" Usage="System.DirectoryServices.ActiveDirectoryRights.GenericRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -212,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.GenericWrite" />
       <MemberSignature Language="VB.NET" Value="GenericWrite" />
       <MemberSignature Language="C++ CLI" Value="GenericWrite" />
+      <MemberSignature Language="F#" Value="GenericWrite = 131112" Usage="System.DirectoryServices.ActiveDirectoryRights.GenericWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -232,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ListChildren" />
       <MemberSignature Language="VB.NET" Value="ListChildren" />
       <MemberSignature Language="C++ CLI" Value="ListChildren" />
+      <MemberSignature Language="F#" Value="ListChildren = 4" Usage="System.DirectoryServices.ActiveDirectoryRights.ListChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -252,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ListObject" />
       <MemberSignature Language="VB.NET" Value="ListObject" />
       <MemberSignature Language="C++ CLI" Value="ListObject" />
+      <MemberSignature Language="F#" Value="ListObject = 128" Usage="System.DirectoryServices.ActiveDirectoryRights.ListObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -272,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ReadControl" />
       <MemberSignature Language="VB.NET" Value="ReadControl" />
       <MemberSignature Language="C++ CLI" Value="ReadControl" />
+      <MemberSignature Language="F#" Value="ReadControl = 131072" Usage="System.DirectoryServices.ActiveDirectoryRights.ReadControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.ReadProperty" />
       <MemberSignature Language="VB.NET" Value="ReadProperty" />
       <MemberSignature Language="C++ CLI" Value="ReadProperty" />
+      <MemberSignature Language="F#" Value="ReadProperty = 16" Usage="System.DirectoryServices.ActiveDirectoryRights.ReadProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Self" />
       <MemberSignature Language="VB.NET" Value="Self" />
       <MemberSignature Language="C++ CLI" Value="Self" />
+      <MemberSignature Language="F#" Value="Self = 8" Usage="System.DirectoryServices.ActiveDirectoryRights.Self" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -332,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Synchronize" />
       <MemberSignature Language="C++ CLI" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.DirectoryServices.ActiveDirectoryRights.Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -352,6 +369,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteDacl" />
       <MemberSignature Language="VB.NET" Value="WriteDacl" />
       <MemberSignature Language="C++ CLI" Value="WriteDacl" />
+      <MemberSignature Language="F#" Value="WriteDacl = 262144" Usage="System.DirectoryServices.ActiveDirectoryRights.WriteDacl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -372,6 +390,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteOwner" />
       <MemberSignature Language="VB.NET" Value="WriteOwner" />
       <MemberSignature Language="C++ CLI" Value="WriteOwner" />
+      <MemberSignature Language="F#" Value="WriteOwner = 524288" Usage="System.DirectoryServices.ActiveDirectoryRights.WriteOwner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -392,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectoryRights.WriteProperty" />
       <MemberSignature Language="VB.NET" Value="WriteProperty" />
       <MemberSignature Language="C++ CLI" Value="WriteProperty" />
+      <MemberSignature Language="F#" Value="WriteProperty = 32" Usage="System.DirectoryServices.ActiveDirectoryRights.WriteProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

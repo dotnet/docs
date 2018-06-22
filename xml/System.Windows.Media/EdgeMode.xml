@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.EdgeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EdgeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EdgeMode" />
+  <TypeSignature Language="F#" Value="type EdgeMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Aliased" />
       <MemberSignature Language="VB.NET" Value="Aliased" />
       <MemberSignature Language="C++ CLI" Value="Aliased" />
+      <MemberSignature Language="F#" Value="Aliased = 1" Usage="System.Windows.Media.EdgeMode.Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Windows.Media.EdgeMode.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

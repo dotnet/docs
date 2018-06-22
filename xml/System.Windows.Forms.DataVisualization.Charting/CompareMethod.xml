@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompareMethod" />
   <TypeSignature Language="C++ CLI" Value="public enum class CompareMethod" />
+  <TypeSignature Language="F#" Value="type CompareMethod = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />
       <MemberSignature Language="VB.NET" Value="EqualTo" />
       <MemberSignature Language="C++ CLI" Value="EqualTo" />
+      <MemberSignature Language="F#" Value="EqualTo = 2" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="C++ CLI" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 1" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThanOrEqualTo" />
       <MemberSignature Language="VB.NET" Value="LessThanOrEqualTo" />
       <MemberSignature Language="C++ CLI" Value="LessThanOrEqualTo" />
+      <MemberSignature Language="F#" Value="LessThanOrEqualTo = 4" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThanOrEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThan" />
       <MemberSignature Language="VB.NET" Value="MoreThan" />
       <MemberSignature Language="C++ CLI" Value="MoreThan" />
+      <MemberSignature Language="F#" Value="MoreThan = 0" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThanOrEqualTo" />
       <MemberSignature Language="VB.NET" Value="MoreThanOrEqualTo" />
       <MemberSignature Language="C++ CLI" Value="MoreThanOrEqualTo" />
+      <MemberSignature Language="F#" Value="MoreThanOrEqualTo = 3" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThanOrEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.NotEqualTo" />
       <MemberSignature Language="VB.NET" Value="NotEqualTo" />
       <MemberSignature Language="C++ CLI" Value="NotEqualTo" />
+      <MemberSignature Language="F#" Value="NotEqualTo = 5" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.NotEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

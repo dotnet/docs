@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteMethodInfoContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteMethodInfoContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IRemoteMethodInfoContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.GetMethodData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethodData () As RemoteMethodData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::RemoteMethodData GetMethodData();" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodData : unit -&gt; System.AddIn.Contract.Automation.RemoteMethodData" Usage="iRemoteMethodInfoContract.GetMethodData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument Invoke(class System.AddIn.Contract.Automation.IRemoteObjectContract target, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract parameters, int32 localeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteMethodInfoContract.Invoke(System.AddIn.Contract.Automation.IRemoteObjectContract,System.Reflection.BindingFlags,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument Invoke(System::AddIn::Contract::Automation::IRemoteObjectContract ^ target, System::Reflection::BindingFlags bindingFlags, System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ parameters, int localeId);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : System.AddIn.Contract.Automation.IRemoteObjectContract * System.Reflection.BindingFlags * System.AddIn.Contract.Collections.IRemoteArgumentArrayContract * int -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteMethodInfoContract.Invoke (target, bindingFlags, parameters, localeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederatedAuthentication" />
   <TypeSignature Language="VB.NET" Value="Public Class FederatedAuthentication" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederatedAuthentication abstract sealed" />
+  <TypeSignature Language="F#" Value="type FederatedAuthentication = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.ClaimsAuthorizationModule" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClaimsAuthorizationModule As ClaimsAuthorizationModule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::ClaimsAuthorizationModule ^ ClaimsAuthorizationModule { System::IdentityModel::Services::ClaimsAuthorizationModule ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClaimsAuthorizationModule : System.IdentityModel.Services.ClaimsAuthorizationModule" Usage="System.IdentityModel.Services.FederatedAuthentication.ClaimsAuthorizationModule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FederationConfiguration As FederationConfiguration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::Configuration::FederationConfiguration ^ FederationConfiguration { System::IdentityModel::Services::Configuration::FederationConfiguration ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FederationConfiguration : System.IdentityModel.Services.Configuration.FederationConfiguration" Usage="System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated" />
       <MemberSignature Language="VB.NET" Value="Public Shared Event FederationConfigurationCreated As EventHandler(Of FederationConfigurationCreatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::IdentityModel::Services::Configuration::FederationConfigurationCreatedEventArgs ^&gt; ^ FederationConfigurationCreated;" />
+      <MemberSignature Language="F#" Value="member this.FederationConfigurationCreated : EventHandler&lt;System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs&gt; " Usage="member this.FederationConfigurationCreated : System.EventHandler&lt;System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedAuthentication.GetHttpModule``1" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHttpModule(Of T As {Class, IHttpModule}) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class, System::Web::IHttpModule static T GetHttpModule();" />
+      <MemberSignature Language="F#" Value="static member GetHttpModule : unit -&gt; 'T (requires 'T : null and 'T :&gt; System.Web.IHttpModule)" Usage="System.IdentityModel.Services.FederatedAuthentication.GetHttpModule " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SessionAuthenticationModule As SessionAuthenticationModule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::SessionAuthenticationModule ^ SessionAuthenticationModule { System::IdentityModel::Services::SessionAuthenticationModule ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionAuthenticationModule : System.IdentityModel.Services.SessionAuthenticationModule" Usage="System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.WSFederationAuthenticationModule" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSFederationAuthenticationModule As WSFederationAuthenticationModule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Services::WSFederationAuthenticationModule ^ WSFederationAuthenticationModule { System::IdentityModel::Services::WSFederationAuthenticationModule ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSFederationAuthenticationModule : System.IdentityModel.Services.WSFederationAuthenticationModule" Usage="System.IdentityModel.Services.FederatedAuthentication.WSFederationAuthenticationModule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.MediaTypeNames.Image" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaTypeNames.Image" />
   <TypeSignature Language="C++ CLI" Value="public: ref class MediaTypeNames::Image abstract sealed" />
+  <TypeSignature Language="F#" Value="type MediaTypeNames.Image = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Gif" />
       <MemberSignature Language="VB.NET" Value="Public Const Gif As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Gif;" />
+      <MemberSignature Language="F#" Value="val mutable Gif : string" Usage="System.Net.Mime.MediaTypeNames.Image.Gif" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Jpeg" />
       <MemberSignature Language="VB.NET" Value="Public Const Jpeg As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Jpeg;" />
+      <MemberSignature Language="F#" Value="val mutable Jpeg : string" Usage="System.Net.Mime.MediaTypeNames.Image.Jpeg" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Image.Tiff" />
       <MemberSignature Language="VB.NET" Value="Public Const Tiff As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Tiff;" />
+      <MemberSignature Language="F#" Value="val mutable Tiff : string" Usage="System.Net.Mime.MediaTypeNames.Image.Tiff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

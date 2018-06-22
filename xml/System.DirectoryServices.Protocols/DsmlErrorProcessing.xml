@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" />
   <TypeSignature Language="VB.NET" Value="Public Enum DsmlErrorProcessing" />
   <TypeSignature Language="C++ CLI" Value="public enum class DsmlErrorProcessing" />
+  <TypeSignature Language="F#" Value="type DsmlErrorProcessing = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlErrorProcessing.Exit" />
       <MemberSignature Language="VB.NET" Value="Exit" />
       <MemberSignature Language="C++ CLI" Value="Exit" />
+      <MemberSignature Language="F#" Value="Exit = 1" Usage="System.DirectoryServices.Protocols.DsmlErrorProcessing.Exit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlErrorProcessing.Resume" />
       <MemberSignature Language="VB.NET" Value="Resume" />
       <MemberSignature Language="C++ CLI" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 0" Usage="System.DirectoryServices.Protocols.DsmlErrorProcessing.Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItemBindingCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItemBindingCollection sealed : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type MenuItemBindingCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -135,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.Add(System.Web.UI.WebControls.MenuItemBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (binding As MenuItemBinding) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::MenuItemBinding ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.MenuItemBinding -&gt; int" Usage="menuItemBindingCollection.Add binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.Contains(System.Web.UI.WebControls.MenuItemBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (binding As MenuItemBinding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::MenuItemBinding ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.MenuItemBinding -&gt; bool" Usage="menuItemBindingCollection.Contains binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.CopyTo(System.Web.UI.WebControls.MenuItemBinding[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MenuItemBinding(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::MenuItemBinding ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.MenuItemBinding[] * int -&gt; unit" Usage="menuItemBindingCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="menuItemBindingCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="menuItemBindingCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -445,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.IndexOf(System.Web.UI.WebControls.MenuItemBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As MenuItemBinding) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::MenuItemBinding ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.MenuItemBinding -&gt; int" Usage="menuItemBindingCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -560,6 +567,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, binding As MenuItemBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::MenuItemBinding ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.MenuItemBinding -&gt; unit" Usage="menuItemBindingCollection.Insert (index, binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -678,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemBindingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As MenuItemBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemBinding ^ default[int] { System::Web::UI::WebControls::MenuItemBinding ^ get(int i); void set(int i, System::Web::UI::WebControls::MenuItemBinding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.MenuItemBinding with get, set" Usage="System.Web.UI.WebControls.MenuItemBindingCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -785,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="menuItemBindingCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -805,6 +815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnRemoveComplete : int * obj -&gt; unit" Usage="menuItemBindingCollection.OnRemoveComplete (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -830,6 +841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="menuItemBindingCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -853,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.Remove(System.Web.UI.WebControls.MenuItemBinding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (binding As MenuItemBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::MenuItemBinding ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.MenuItemBinding -&gt; unit" Usage="menuItemBindingCollection.Remove binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -969,6 +982,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="menuItemBindingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1082,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemBindingCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="menuItemBindingCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

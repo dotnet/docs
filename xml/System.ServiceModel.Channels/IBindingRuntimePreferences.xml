@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindingRuntimePreferences" />
   <TypeSignature Language="C++ CLI" Value="public interface class IBindingRuntimePreferences" />
+  <TypeSignature Language="F#" Value="type IBindingRuntimePreferences = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiveSynchronously As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReceiveSynchronously { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveSynchronously : bool" Usage="System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

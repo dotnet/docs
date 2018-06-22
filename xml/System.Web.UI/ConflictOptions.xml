@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ConflictOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConflictOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConflictOptions" />
+  <TypeSignature Language="F#" Value="type ConflictOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ConflictOptions.CompareAllValues" />
       <MemberSignature Language="VB.NET" Value="CompareAllValues" />
       <MemberSignature Language="C++ CLI" Value="CompareAllValues" />
+      <MemberSignature Language="F#" Value="CompareAllValues = 1" Usage="System.Web.UI.ConflictOptions.CompareAllValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ConflictOptions.OverwriteChanges" />
       <MemberSignature Language="VB.NET" Value="OverwriteChanges" />
       <MemberSignature Language="C++ CLI" Value="OverwriteChanges" />
+      <MemberSignature Language="F#" Value="OverwriteChanges = 0" Usage="System.Web.UI.ConflictOptions.OverwriteChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

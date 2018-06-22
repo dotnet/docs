@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaContentModel" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaContentModel&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaContentModel abstract : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaContentModel = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaContentModel.Content" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Content As XmlSchemaContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::Schema::XmlSchemaContent ^ Content { System::Xml::Schema::XmlSchemaContent ^ get(); void set(System::Xml::Schema::XmlSchemaContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Xml.Schema.XmlSchemaContent with get, set" Usage="System.Xml.Schema.XmlSchemaContentModel.Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

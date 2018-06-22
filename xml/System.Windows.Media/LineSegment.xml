@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LineSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LineSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="C++ CLI" Value="public ref class LineSegment sealed : System::Windows::Media::PathSegment" />
+  <TypeSignature Language="F#" Value="type LineSegment = class&#xA;    inherit PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point, bool isStroked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.#ctor(System.Windows.Point,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LineSegment(System::Windows::Point point, bool isStroked);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.LineSegment : System.Windows.Point * bool -&gt; System.Windows.Media.LineSegment" Usage="new System.Windows.Media.LineSegment (point, isStroked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As LineSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineSegment ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.LineSegment" Usage="lineSegment.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As LineSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineSegment ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.LineSegment" Usage="lineSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="lineSegment.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LineSegment.Point" />
       <MemberSignature Language="VB.NET" Value="Public Property Point As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Point : System.Windows.Point with get, set" Usage="System.Windows.Media.LineSegment.Point" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LineSegment.PointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PointProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.LineSegment.PointProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

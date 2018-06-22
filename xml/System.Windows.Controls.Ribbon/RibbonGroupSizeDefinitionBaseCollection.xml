@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGroupSizeDefinitionBaseCollection&#xA;Inherits FreezableCollection(Of RibbonGroupSizeDefinitionBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroupSizeDefinitionBaseCollection : System::Windows::FreezableCollection&lt;System::Windows::Controls::Ribbon::RibbonGroupSizeDefinitionBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type RibbonGroupSizeDefinitionBaseCollection = class&#xA;    inherit FreezableCollection&lt;RibbonGroupSizeDefinitionBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="ribbonGroupSizeDefinitionBaseCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

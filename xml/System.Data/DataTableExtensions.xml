@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module DataTableExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTableExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataTableExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.AsDataView(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsDataView (table As DataTable) As DataView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::DataView ^ AsDataView(System::Data::DataTable ^ table);" />
+      <MemberSignature Language="F#" Value="static member AsDataView : System.Data.DataTable -&gt; System.Data.DataView" Usage="System.Data.DataTableExtensions.AsDataView table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.AsDataView``1(System.Data.EnumerableRowCollection{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsDataView(Of T As DataRow) (source As EnumerableRowCollection(Of T)) As DataView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::DataView ^ AsDataView(System::Data::EnumerableRowCollection&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsDataView : System.Data.EnumerableRowCollection&lt;'T (requires 'T :&gt; System.Data.DataRow)&gt; -&gt; System.Data.DataView (requires 'T :&gt; System.Data.DataRow)" Usage="System.Data.DataTableExtensions.AsDataView source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.AsEnumerable(System.Data.DataTable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsEnumerable (source As DataTable) As EnumerableRowCollection(Of DataRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;System::Data::DataRow ^&gt; ^ AsEnumerable(System::Data::DataTable ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsEnumerable : System.Data.DataTable -&gt; System.Data.EnumerableRowCollection&lt;System.Data.DataRow&gt;" Usage="System.Data.DataTableExtensions.AsEnumerable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -182,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CopyToDataTable(Of T As DataRow) (source As IEnumerable(Of T)) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::DataTable ^ CopyToDataTable(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member CopyToDataTable : seq&lt;'T (requires 'T :&gt; System.Data.DataRow)&gt; -&gt; System.Data.DataTable (requires 'T :&gt; System.Data.DataRow)" Usage="System.Data.DataTableExtensions.CopyToDataTable source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0},System.Data.DataTable,System.Data.LoadOption)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyToDataTable(Of T As DataRow) (source As IEnumerable(Of T), table As DataTable, options As LoadOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static void CopyToDataTable(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Data::DataTable ^ table, System::Data::LoadOption options);" />
+      <MemberSignature Language="F#" Value="static member CopyToDataTable : seq&lt;'T (requires 'T :&gt; System.Data.DataRow)&gt; * System.Data.DataTable * System.Data.LoadOption -&gt; unit (requires 'T :&gt; System.Data.DataRow)" Usage="System.Data.DataTableExtensions.CopyToDataTable (source, table, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0},System.Data.DataTable,System.Data.LoadOption,System.Data.FillErrorEventHandler)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyToDataTable(Of T As DataRow) (source As IEnumerable(Of T), table As DataTable, options As LoadOption, errorHandler As FillErrorEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::DataRow[System::Runtime::CompilerServices::Extension]&#xA; static void CopyToDataTable(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Data::DataTable ^ table, System::Data::LoadOption options, System::Data::FillErrorEventHandler ^ errorHandler);" />
+      <MemberSignature Language="F#" Value="static member CopyToDataTable : seq&lt;'T (requires 'T :&gt; System.Data.DataRow)&gt; * System.Data.DataTable * System.Data.LoadOption * System.Data.FillErrorEventHandler -&gt; unit (requires 'T :&gt; System.Data.DataRow)" Usage="System.Data.DataTableExtensions.CopyToDataTable (source, table, options, errorHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>

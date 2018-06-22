@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Enumeration.FileSystemEnumerable`1" />
   <TypeSignature Language="VB.NET" Value="Public Class FileSystemEnumerable(Of TResult)&#xA;Implements IEnumerable(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class FileSystemEnumerable : System::Collections::Generic::IEnumerable&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type FileSystemEnumerable&lt;'Result&gt; = class&#xA;    interface seq&lt;'Result&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directory, class System.IO.Enumeration.FileSystemEnumerable`1/FindTransform&lt;!TResult&gt; transform, class System.IO.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, transform As FileSystemEnumerable(Of TResult).FindTransform, Optional options As EnumerationOptions = null)" />
+      <MemberSignature Language="F#" Value="new System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt; : string * System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;.FindTransform * System.IO.EnumerationOptions -&gt; System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;" Usage="new System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt; (directory, transform, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TResult&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Result&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Result&gt;" Usage="fileSystemEnumerable.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerable`1.ShouldIncludePredicate" />
       <MemberSignature Language="VB.NET" Value="Public Property ShouldIncludePredicate As FileSystemEnumerable(Of TResult).FindPredicate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ ShouldIncludePredicate { System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ get(); void set(System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldIncludePredicate : System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;.FindPredicate with get, set" Usage="System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;.ShouldIncludePredicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerable`1.ShouldRecursePredicate" />
       <MemberSignature Language="VB.NET" Value="Public Property ShouldRecursePredicate As FileSystemEnumerable(Of TResult).FindPredicate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ ShouldRecursePredicate { System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ get(); void set(System::IO::Enumeration::FileSystemEnumerable&lt;TResult&gt;::FindPredicate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldRecursePredicate : System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;.FindPredicate with get, set" Usage="System.IO.Enumeration.FileSystemEnumerable&lt;'Result&gt;.ShouldRecursePredicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

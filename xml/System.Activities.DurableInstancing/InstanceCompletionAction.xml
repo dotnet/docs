@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceCompletionAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum InstanceCompletionAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class InstanceCompletionAction" />
+  <TypeSignature Language="F#" Value="type InstanceCompletionAction = " />
   <AssemblyInfo>
     <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceCompletionAction.DeleteAll" />
       <MemberSignature Language="VB.NET" Value="DeleteAll" />
       <MemberSignature Language="C++ CLI" Value="DeleteAll" />
+      <MemberSignature Language="F#" Value="DeleteAll = 1" Usage="System.Activities.DurableInstancing.InstanceCompletionAction.DeleteAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceCompletionAction.DeleteNothing" />
       <MemberSignature Language="VB.NET" Value="DeleteNothing" />
       <MemberSignature Language="C++ CLI" Value="DeleteNothing" />
+      <MemberSignature Language="F#" Value="DeleteNothing = 0" Usage="System.Activities.DurableInstancing.InstanceCompletionAction.DeleteNothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>

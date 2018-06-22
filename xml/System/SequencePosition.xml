@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.SequencePosition" />
   <TypeSignature Language="VB.NET" Value="Public Structure SequencePosition&#xA;Implements IEquatable(Of SequencePosition)" />
   <TypeSignature Language="C++ CLI" Value="public value class SequencePosition : IEquatable&lt;SequencePosition&gt;" />
+  <TypeSignature Language="F#" Value="type SequencePosition = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object object, int32 integer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.#ctor(System.Object,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition(System::Object ^ object, int integer);" />
+      <MemberSignature Language="F#" Value="new SequencePosition : obj * int -&gt; SequencePosition" Usage="new System.SequencePosition (object, integer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sequencePosition.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.Equals(System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SequencePosition) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(SequencePosition other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : SequencePosition -&gt; bool" Usage="sequencePosition.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sequencePosition.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.GetInteger" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInteger () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetInteger();" />
+      <MemberSignature Language="F#" Value="member this.GetInteger : unit -&gt; int" Usage="sequencePosition.GetInteger " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.SequencePosition.GetObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObject();" />
+      <MemberSignature Language="F#" Value="member this.GetObject : unit -&gt; obj" Usage="sequencePosition.GetObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

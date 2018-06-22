@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeConverter" />
+  <TypeSignature Language="F#" Value="type TypeConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -146,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanConvertFrom (sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanConvertFrom(Type ^ sourceType);" />
+      <MemberSignature Language="F#" Value="member this.CanConvertFrom : Type -&gt; bool" Usage="typeConverter.CanConvertFrom sourceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -189,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="typeConverter.CanConvertFrom (context, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -250,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CanConvertTo(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanConvertTo (destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanConvertTo(Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="member this.CanConvertTo : Type -&gt; bool" Usage="typeConverter.CanConvertTo destinationType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -293,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="typeConverter.CanConvertTo (context, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -354,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFrom(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFrom (value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFrom(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFrom : obj -&gt; obj" Usage="typeConverter.ConvertFrom value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -390,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="typeConverter.ConvertFrom (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -457,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromInvariantString (text As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromInvariantString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFromInvariantString : string -&gt; obj" Usage="typeConverter.ConvertFromInvariantString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -501,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.ComponentModel.ITypeDescriptorContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromInvariantString (context As ITypeDescriptorContext, text As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromInvariantString(System::ComponentModel::ITypeDescriptorContext ^ context, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFromInvariantString : System.ComponentModel.ITypeDescriptorContext * string -&gt; obj" Usage="typeConverter.ConvertFromInvariantString (context, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -559,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromString (text As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromString(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFromString : string -&gt; obj" Usage="typeConverter.ConvertFromString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -607,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromString (context As ITypeDescriptorContext, text As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromString(System::ComponentModel::ITypeDescriptorContext ^ context, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFromString : System.ComponentModel.ITypeDescriptorContext * string -&gt; obj" Usage="typeConverter.ConvertFromString (context, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -655,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromString (context As ITypeDescriptorContext, culture As CultureInfo, text As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromString(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.ConvertFromString : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * string -&gt; obj" Usage="typeConverter.ConvertFromString (context, culture, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -715,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertTo (value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertTo(System::Object ^ value, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="member this.ConvertTo : obj * Type -&gt; obj" Usage="typeConverter.ConvertTo (value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -761,6 +774,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="typeConverter.ConvertTo (context, culture, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -833,6 +847,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToInvariantString (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToInvariantString(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToInvariantString : obj -&gt; string" Usage="typeConverter.ConvertToInvariantString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -879,6 +894,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertToInvariantString(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToInvariantString (context As ITypeDescriptorContext, value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToInvariantString(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToInvariantString : System.ComponentModel.ITypeDescriptorContext * obj -&gt; string" Usage="typeConverter.ConvertToInvariantString (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -937,6 +953,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertToString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToString(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToString : obj -&gt; string" Usage="typeConverter.ConvertToString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -985,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (context As ITypeDescriptorContext, value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToString(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToString : System.ComponentModel.ITypeDescriptorContext * obj -&gt; string" Usage="typeConverter.ConvertToString (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1033,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToString (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ConvertToString(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ConvertToString : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; string" Usage="typeConverter.ConvertToString (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1093,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CreateInstance(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (propertyValues As IDictionary) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(System::Collections::IDictionary ^ propertyValues);" />
+      <MemberSignature Language="F#" Value="member this.CreateInstance : System.Collections.IDictionary -&gt; obj" Usage="typeConverter.CreateInstance propertyValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1138,6 +1158,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstance (context As ITypeDescriptorContext, propertyValues As IDictionary) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(System::ComponentModel::ITypeDescriptorContext ^ context, System::Collections::IDictionary ^ propertyValues);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj&#xA;override this.CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj" Usage="typeConverter.CreateInstance (context, propertyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1191,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetConvertFromException (value As Object) As Exception" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ GetConvertFromException(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.GetConvertFromException : obj -&gt; Exception" Usage="typeConverter.GetConvertFromException value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1227,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetConvertToException (value As Object, destinationType As Type) As Exception" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ GetConvertToException(System::Object ^ value, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="member this.GetConvertToException : obj * Type -&gt; Exception" Usage="typeConverter.GetConvertToException (value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1275,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetCreateInstanceSupported" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCreateInstanceSupported () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetCreateInstanceSupported();" />
+      <MemberSignature Language="F#" Value="member this.GetCreateInstanceSupported : unit -&gt; bool" Usage="typeConverter.GetCreateInstanceSupported " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1308,6 +1332,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCreateInstanceSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetCreateInstanceSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="typeConverter.GetCreateInstanceSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1367,6 +1392,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetProperties(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperties (value As Object) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.GetProperties : obj -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="typeConverter.GetProperties value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1411,6 +1437,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperties (context As ITypeDescriptorContext, value As Object) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="typeConverter.GetProperties (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1460,6 +1487,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="typeConverter.GetProperties (context, value, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1533,6 +1561,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetPropertiesSupported" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPropertiesSupported () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetPropertiesSupported();" />
+      <MemberSignature Language="F#" Value="member this.GetPropertiesSupported : unit -&gt; bool" Usage="typeConverter.GetPropertiesSupported " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1573,6 +1602,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="typeConverter.GetPropertiesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1632,6 +1662,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValues" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStandardValues () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetStandardValues();" />
+      <MemberSignature Language="F#" Value="member this.GetStandardValues : unit -&gt; System.Collections.ICollection" Usage="typeConverter.GetStandardValues " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1671,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="typeConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1732,6 +1764,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStandardValuesExclusive () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetStandardValuesExclusive();" />
+      <MemberSignature Language="F#" Value="member this.GetStandardValuesExclusive : unit -&gt; bool" Usage="typeConverter.GetStandardValuesExclusive " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1774,6 +1807,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="typeConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1835,6 +1869,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStandardValuesSupported () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetStandardValuesSupported();" />
+      <MemberSignature Language="F#" Value="member this.GetStandardValuesSupported : unit -&gt; bool" Usage="typeConverter.GetStandardValuesSupported " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1868,6 +1903,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="typeConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1927,6 +1963,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValid(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IsValid : obj -&gt; bool" Usage="typeConverter.IsValid value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1988,6 +2025,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValid (context As ITypeDescriptorContext, value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValid(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IsValid : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool&#xA;override this.IsValid : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="typeConverter.IsValid (context, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2057,6 +2095,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SortProperties(System.ComponentModel.PropertyDescriptorCollection,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Function SortProperties (props As PropertyDescriptorCollection, names As String()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ SortProperties(System::ComponentModel::PropertyDescriptorCollection ^ props, cli::array &lt;System::String ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="member this.SortProperties : System.ComponentModel.PropertyDescriptorCollection * string[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="typeConverter.SortProperties (props, names)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebPartAuthorizationEventHandler(sender As Object, e As WebPartAuthorizationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WebPartAuthorizationEventHandler(System::Object ^ sender, WebPartAuthorizationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WebPartAuthorizationEventHandler = delegate of obj * WebPartAuthorizationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPropertyFilterTarget" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPropertyFilterTarget" />
+  <TypeSignature Language="F#" Value="type IPropertyFilterTarget = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyFilter (filter As PropertyFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyFilter(System::Activities::Presentation::PropertyEditing::PropertyFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyFilter : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit" Usage="iPropertyFilterTarget.ApplyFilter filter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.FilterApplied" />
       <MemberSignature Language="VB.NET" Value="Event FilterApplied As EventHandler(Of PropertyFilterAppliedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::PropertyEditing::PropertyFilterAppliedEventArgs ^&gt; ^ FilterApplied;" />
+      <MemberSignature Language="F#" Value="member this.FilterApplied : EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " Usage="member this.FilterApplied : System.EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchesFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchesFilter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchesFilter : bool" Usage="System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)" />
       <MemberSignature Language="VB.NET" Value="Public Function MatchesPredicate (predicate As PropertyFilterPredicate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchesPredicate(System::Activities::Presentation::PropertyEditing::PropertyFilterPredicate ^ predicate);" />
+      <MemberSignature Language="F#" Value="abstract member MatchesPredicate : System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate -&gt; bool" Usage="iPropertyFilterTarget.MatchesPredicate predicate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

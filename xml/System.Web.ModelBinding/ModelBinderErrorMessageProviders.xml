@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderErrorMessageProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelBinderErrorMessageProviders" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderErrorMessageProviders abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModelBinderErrorMessageProviders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderErrorMessageProviders.TypeConversionErrorMessageProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property TypeConversionErrorMessageProvider As ModelBinderErrorMessageProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ TypeConversionErrorMessageProvider { System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ get(); void set(System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeConversionErrorMessageProvider : System.Web.ModelBinding.ModelBinderErrorMessageProvider with get, set" Usage="System.Web.ModelBinding.ModelBinderErrorMessageProviders.TypeConversionErrorMessageProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderErrorMessageProviders.ValueRequiredErrorMessageProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ValueRequiredErrorMessageProvider As ModelBinderErrorMessageProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ ValueRequiredErrorMessageProvider { System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ get(); void set(System::Web::ModelBinding::ModelBinderErrorMessageProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueRequiredErrorMessageProvider : System.Web.ModelBinding.ModelBinderErrorMessageProvider with get, set" Usage="System.Web.ModelBinding.ModelBinderErrorMessageProviders.ValueRequiredErrorMessageProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

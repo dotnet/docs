@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.WellKnownObjectMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum WellKnownObjectMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class WellKnownObjectMode" />
+  <TypeSignature Language="F#" Value="type WellKnownObjectMode = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.WellKnownObjectMode.SingleCall" />
       <MemberSignature Language="VB.NET" Value="SingleCall" />
       <MemberSignature Language="C++ CLI" Value="SingleCall" />
+      <MemberSignature Language="F#" Value="SingleCall = 2" Usage="System.Runtime.Remoting.WellKnownObjectMode.SingleCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.WellKnownObjectMode.Singleton" />
       <MemberSignature Language="VB.NET" Value="Singleton" />
       <MemberSignature Language="C++ CLI" Value="Singleton" />
+      <MemberSignature Language="F#" Value="Singleton = 1" Usage="System.Runtime.Remoting.WellKnownObjectMode.Singleton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

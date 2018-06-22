@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildMethod" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function BuildMethod() As Control " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Web::UI::Control ^ BuildMethod();" />
+  <TypeSignature Language="F#" Value="type BuildMethod = delegate of unit -&gt; Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

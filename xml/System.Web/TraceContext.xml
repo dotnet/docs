@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceContext sealed" />
+  <TypeSignature Language="F#" Value="type TraceContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContext(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.TraceContext : System.Web.HttpContext -&gt; System.Web.TraceContext" Usage="new System.Web.TraceContext context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Web.TraceContext.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.TraceContext.TraceFinished" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TraceFinished As TraceContextEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::TraceContextEventHandler ^ TraceFinished;" />
+      <MemberSignature Language="F#" Value="member this.TraceFinished : System.Web.TraceContextEventHandler " Usage="member this.TraceFinished : System.Web.TraceContextEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.TraceMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TraceMode As TraceMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::TraceMode TraceMode { System::Web::TraceMode get(); void set(System::Web::TraceMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TraceMode : System.Web.TraceMode with get, set" Usage="System.Web.TraceContext.TraceMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Warn (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Warn : string -&gt; unit" Usage="traceContext.Warn message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Warn (category As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ category, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Warn : string * string -&gt; unit" Usage="traceContext.Warn (category, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Warn (category As String, message As String, errorInfo As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ category, System::String ^ message, Exception ^ errorInfo);" />
+      <MemberSignature Language="F#" Value="member this.Warn : string * string * Exception -&gt; unit" Usage="traceContext.Warn (category, message, errorInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="traceContext.Write message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (category As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ category, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Write : string * string -&gt; unit" Usage="traceContext.Write (category, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (category As String, message As String, errorInfo As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ category, System::String ^ message, Exception ^ errorInfo);" />
+      <MemberSignature Language="F#" Value="member this.Write : string * string * Exception -&gt; unit" Usage="traceContext.Write (category, message, errorInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSetSchema" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataSetSchema&#xA;Implements IDataSourceSchema" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSetSchema sealed : System::Web::UI::Design::IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type DataSetSchema = class&#xA;    interface IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSetSchema.#ctor(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSetSchema(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DataSetSchema : System.Data.DataSet -&gt; System.Web.UI.Design.DataSetSchema" Usage="new System.Web.UI.Design.DataSetSchema dataSet" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSetSchema.GetViews" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetViews();" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]&#xA;override this.GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="dataSetSchema.GetViews " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.Design.IDataSourceSchema.GetViews</InterfaceMember>

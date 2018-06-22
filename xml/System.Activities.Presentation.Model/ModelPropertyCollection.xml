@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelPropertyCollection&#xA;Inherits ModelMemberCollection(Of ModelProperty, DependencyProperty)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelPropertyCollection abstract : System::Activities::Presentation::Model::ModelMemberCollection&lt;System::Activities::Presentation::Model::ModelProperty ^, System::Windows::DependencyProperty ^&gt;" />
+  <TypeSignature Language="F#" Value="type ModelPropertyCollection = class&#xA;    inherit ModelMemberCollection&lt;ModelProperty, DependencyProperty&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

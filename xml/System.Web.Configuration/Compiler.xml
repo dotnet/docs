@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.Compiler" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Compiler&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Compiler sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type Compiler = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.Compiler.#ctor(System.String,System.String,System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (compilerOptions As String, extension As String, language As String, type As String, warningLevel As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Compiler(System::String ^ compilerOptions, System::String ^ extension, System::String ^ language, System::String ^ type, int warningLevel);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.Compiler : string * string * string * string * int -&gt; System.Web.Configuration.Compiler" Usage="new System.Web.Configuration.Compiler (compilerOptions, extension, language, type, warningLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.CompilerOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompilerOptions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompilerOptions { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompilerOptions : string" Usage="System.Web.Configuration.Compiler.CompilerOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.Extension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extension { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extension : string" Usage="System.Web.Configuration.Compiler.Extension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Web.Configuration.Compiler.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.Compiler.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.Web.Configuration.Compiler.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.Compiler.WarningLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WarningLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WarningLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.WarningLevel : int" Usage="System.Web.Configuration.Compiler.WarningLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

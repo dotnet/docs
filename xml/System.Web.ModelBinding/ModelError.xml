@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelError" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelError" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelError" />
+  <TypeSignature Language="F#" Value="type ModelError = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelError.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelError(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelError : Exception -&gt; System.Web.ModelBinding.ModelError" Usage="new System.Web.ModelBinding.ModelError exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelError.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelError(System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelError : string -&gt; System.Web.ModelBinding.ModelError" Usage="new System.Web.ModelBinding.ModelError errorMessage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelError.#ctor(System.Exception,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelError(Exception ^ exception, System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ModelError : Exception * string -&gt; System.Web.ModelBinding.ModelError" Usage="new System.Web.ModelBinding.ModelError (exception, errorMessage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelError.ErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="System.Web.ModelBinding.ModelError.ErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelError.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.ModelBinding.ModelError.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

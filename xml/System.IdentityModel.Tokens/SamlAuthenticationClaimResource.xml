@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlAuthenticationClaimResource" />
   <TypeSignature Language="C++ CLI" Value="public ref class SamlAuthenticationClaimResource" />
+  <TypeSignature Language="F#" Value="type SamlAuthenticationClaimResource = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationInstant As DateTime, authenticationMethod As String, dnsAddress As String, ipAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthenticationClaimResource(DateTime authenticationInstant, System::String ^ authenticationMethod, System::String ^ dnsAddress, System::String ^ ipAddress);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource : DateTime * string * string * string -&gt; System.IdentityModel.Tokens.SamlAuthenticationClaimResource" Usage="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource (authenticationInstant, authenticationMethod, dnsAddress, ipAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAuthorityBinding})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationInstant As DateTime, authenticationMethod As String, dnsAddress As String, ipAddress As String, authorityBindings As IEnumerable(Of SamlAuthorityBinding))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthenticationClaimResource(DateTime authenticationInstant, System::String ^ authenticationMethod, System::String ^ dnsAddress, System::String ^ ipAddress, System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlAuthorityBinding ^&gt; ^ authorityBindings);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource : DateTime * string * string * string * seq&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; -&gt; System.IdentityModel.Tokens.SamlAuthenticationClaimResource" Usage="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource (authenticationInstant, authenticationMethod, dnsAddress, ipAddress, authorityBindings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Tokens.SamlAuthorityBinding})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationInstant As DateTime, authenticationMethod As String, dnsAddress As String, ipAddress As String, authorityBindings As ReadOnlyCollection(Of SamlAuthorityBinding))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthenticationClaimResource(DateTime authenticationInstant, System::String ^ authenticationMethod, System::String ^ dnsAddress, System::String ^ ipAddress, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SamlAuthorityBinding ^&gt; ^ authorityBindings);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource : DateTime * string * string * string * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt; -&gt; System.IdentityModel.Tokens.SamlAuthenticationClaimResource" Usage="new System.IdentityModel.Tokens.SamlAuthenticationClaimResource (authenticationInstant, authenticationMethod, dnsAddress, ipAddress, authorityBindings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationInstant As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime AuthenticationInstant { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationInstant : DateTime" Usage="System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationMethod { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationMethod : string" Usage="System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -264,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthorityBindings As ReadOnlyCollection(Of SamlAuthorityBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SamlAuthorityBinding ^&gt; ^ AuthorityBindings { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SamlAuthorityBinding ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthorityBindings : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SamlAuthorityBinding&gt;" Usage="System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DnsAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DnsAddress { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DnsAddress : string" Usage="System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -318,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="samlAuthenticationClaimResource.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="samlAuthenticationClaimResource.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -364,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IPAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IPAddress { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IPAddress : string" Usage="System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

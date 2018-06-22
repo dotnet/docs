@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessModelInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessModelInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessModelInfo" />
+  <TypeSignature Language="F#" Value="type ProcessModelInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessModelInfo.GetCurrentProcessInfo" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentProcessInfo () As ProcessInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::ProcessInfo ^ GetCurrentProcessInfo();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentProcessInfo : unit -&gt; System.Web.ProcessInfo" Usage="System.Web.ProcessModelInfo.GetCurrentProcessInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessModelInfo.GetHistory(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHistory (numRecords As Integer) As ProcessInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::ProcessInfo ^&gt; ^ GetHistory(int numRecords);" />
+      <MemberSignature Language="F#" Value="static member GetHistory : int -&gt; System.Web.ProcessInfo[]" Usage="System.Web.ProcessModelInfo.GetHistory numRecords" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

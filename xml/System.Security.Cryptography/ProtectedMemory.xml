@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ProtectedMemory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedMemory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtectedMemory sealed" />
+  <TypeSignature Language="F#" Value="type ProtectedMemory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Protect (userData As Byte(), scope As MemoryProtectionScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Protect(cli::array &lt;System::Byte&gt; ^ userData, System::Security::Cryptography::MemoryProtectionScope scope);" />
+      <MemberSignature Language="F#" Value="static member Protect : byte[] * System.Security.Cryptography.MemoryProtectionScope -&gt; unit" Usage="System.Security.Cryptography.ProtectedMemory.Protect (userData, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedMemory.Unprotect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Unprotect (encryptedData As Byte(), scope As MemoryProtectionScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unprotect(cli::array &lt;System::Byte&gt; ^ encryptedData, System::Security::Cryptography::MemoryProtectionScope scope);" />
+      <MemberSignature Language="F#" Value="static member Unprotect : byte[] * System.Security.Cryptography.MemoryProtectionScope -&gt; unit" Usage="System.Security.Cryptography.ProtectedMemory.Unprotect (encryptedData, scope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

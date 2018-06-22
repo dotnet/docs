@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VisualBasicSettingsValueSerializer&#xA;Inherits ValueSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualBasicSettingsValueSerializer sealed : System::Windows::Markup::ValueSerializer" />
+  <TypeSignature Language="F#" Value="type VisualBasicSettingsValueSerializer = class&#xA;    inherit ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="visualBasicSettingsValueSerializer.CanConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="visualBasicSettingsValueSerializer.ConvertToString (value, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

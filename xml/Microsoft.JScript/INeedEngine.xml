@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.INeedEngine" />
   <TypeSignature Language="VB.NET" Value="Public Interface INeedEngine" />
   <TypeSignature Language="C++ CLI" Value="public interface class INeedEngine" />
+  <TypeSignature Language="F#" Value="type INeedEngine = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.INeedEngine.GetEngine" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEngine () As VsaEngine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::VsaEngine ^ GetEngine();" />
+      <MemberSignature Language="F#" Value="abstract member GetEngine : unit -&gt; Microsoft.JScript.Vsa.VsaEngine" Usage="iNeedEngine.GetEngine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.INeedEngine.SetEngine(Microsoft.JScript.Vsa.VsaEngine)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEngine (engine As VsaEngine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEngine(Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
+      <MemberSignature Language="F#" Value="abstract member SetEngine : Microsoft.JScript.Vsa.VsaEngine -&gt; unit" Usage="iNeedEngine.SetEngine engine" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

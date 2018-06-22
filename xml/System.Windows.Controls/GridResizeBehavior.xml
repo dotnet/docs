@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridResizeBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum GridResizeBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class GridResizeBehavior" />
+  <TypeSignature Language="F#" Value="type GridResizeBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.BasedOnAlignment" />
       <MemberSignature Language="VB.NET" Value="BasedOnAlignment" />
       <MemberSignature Language="C++ CLI" Value="BasedOnAlignment" />
+      <MemberSignature Language="F#" Value="BasedOnAlignment = 0" Usage="System.Windows.Controls.GridResizeBehavior.BasedOnAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.CurrentAndNext" />
       <MemberSignature Language="VB.NET" Value="CurrentAndNext" />
       <MemberSignature Language="C++ CLI" Value="CurrentAndNext" />
+      <MemberSignature Language="F#" Value="CurrentAndNext = 1" Usage="System.Windows.Controls.GridResizeBehavior.CurrentAndNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.PreviousAndCurrent" />
       <MemberSignature Language="VB.NET" Value="PreviousAndCurrent" />
       <MemberSignature Language="C++ CLI" Value="PreviousAndCurrent" />
+      <MemberSignature Language="F#" Value="PreviousAndCurrent = 2" Usage="System.Windows.Controls.GridResizeBehavior.PreviousAndCurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridResizeBehavior.PreviousAndNext" />
       <MemberSignature Language="VB.NET" Value="PreviousAndNext" />
       <MemberSignature Language="C++ CLI" Value="PreviousAndNext" />
+      <MemberSignature Language="F#" Value="PreviousAndNext = 3" Usage="System.Windows.Controls.GridResizeBehavior.PreviousAndNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.InertiaProcessor2D" />
   <TypeSignature Language="VB.NET" Value="Public Class InertiaProcessor2D" />
   <TypeSignature Language="C++ CLI" Value="public ref class InertiaProcessor2D" />
+  <TypeSignature Language="F#" Value="type InertiaProcessor2D = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.InertiaProcessor2D.Complete(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete (timestamp As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(long timestamp);" />
+      <MemberSignature Language="F#" Value="member this.Complete : int64 -&gt; unit" Usage="inertiaProcessor2D.Complete timestamp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler(Of Manipulation2DCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Input::Manipulations::Manipulation2DCompletedEventArgs ^&gt; ^ Completed;" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs&gt; " Usage="member this.Completed : System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta" />
       <MemberSignature Language="VB.NET" Value="Public Event Delta As EventHandler(Of Manipulation2DDeltaEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Input::Manipulations::Manipulation2DDeltaEventArgs ^&gt; ^ Delta;" />
+      <MemberSignature Language="F#" Value="member this.Delta : EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs&gt; " Usage="member this.Delta : System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.ExpansionBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpansionBehavior As InertiaExpansionBehavior2D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Manipulations::InertiaExpansionBehavior2D ^ ExpansionBehavior { System::Windows::Input::Manipulations::InertiaExpansionBehavior2D ^ get(); void set(System::Windows::Input::Manipulations::InertiaExpansionBehavior2D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpansionBehavior : System.Windows.Input.Manipulations.InertiaExpansionBehavior2D with get, set" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.ExpansionBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginX" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialOriginX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float InitialOriginX { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialOriginX : single with get, set" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginY" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialOriginY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float InitialOriginY { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialOriginY : single with get, set" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.InitialOriginY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.IsRunning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunning { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.IsRunning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.InertiaProcessor2D.Process(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Process (timestamp As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Process(long timestamp);" />
+      <MemberSignature Language="F#" Value="member this.Process : int64 -&gt; bool" Usage="inertiaProcessor2D.Process timestamp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.RotationBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property RotationBehavior As InertiaRotationBehavior2D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Manipulations::InertiaRotationBehavior2D ^ RotationBehavior { System::Windows::Input::Manipulations::InertiaRotationBehavior2D ^ get(); void set(System::Windows::Input::Manipulations::InertiaRotationBehavior2D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RotationBehavior : System.Windows.Input.Manipulations.InertiaRotationBehavior2D with get, set" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.RotationBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -313,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.InertiaProcessor2D.SetParameters(System.Windows.Input.Manipulations.InertiaParameters2D)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetParameters (parameters As InertiaParameters2D)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParameters(System::Windows::Input::Manipulations::InertiaParameters2D ^ parameters);" />
+      <MemberSignature Language="F#" Value="member this.SetParameters : System.Windows.Input.Manipulations.InertiaParameters2D -&gt; unit" Usage="inertiaProcessor2D.SetParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -341,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaProcessor2D.TranslationBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property TranslationBehavior As InertiaTranslationBehavior2D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Manipulations::InertiaTranslationBehavior2D ^ TranslationBehavior { System::Windows::Input::Manipulations::InertiaTranslationBehavior2D ^ get(); void set(System::Windows::Input::Manipulations::InertiaTranslationBehavior2D ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TranslationBehavior : System.Windows.Input.Manipulations.InertiaTranslationBehavior2D with get, set" Usage="System.Windows.Input.Manipulations.InertiaProcessor2D.TranslationBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

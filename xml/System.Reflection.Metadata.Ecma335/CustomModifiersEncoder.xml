@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.CustomModifiersEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure CustomModifiersEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class CustomModifiersEncoder" />
+  <TypeSignature Language="F#" Value="type CustomModifiersEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomModifiersEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomModifiersEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.CustomModifiersEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.CustomModifiersEncoder" Usage="new System.Reflection.Metadata.Ecma335.CustomModifiersEncoder builder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomModifiersEncoder.AddModifier(System.Reflection.Metadata.EntityHandle,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddModifier (type As EntityHandle, isOptional As Boolean) As CustomModifiersEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomModifiersEncoder AddModifier(System::Reflection::Metadata::EntityHandle type, bool isOptional);" />
+      <MemberSignature Language="F#" Value="member this.AddModifier : System.Reflection.Metadata.EntityHandle * bool -&gt; System.Reflection.Metadata.Ecma335.CustomModifiersEncoder" Usage="customModifiersEncoder.AddModifier (type, isOptional)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.CustomModifiersEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.CustomModifiersEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

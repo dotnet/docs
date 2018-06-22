@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CustomBuildEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub CustomBuildEventHandler(sender As Object, e As CustomBuildEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void CustomBuildEventHandler(System::Object ^ sender, CustomBuildEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type CustomBuildEventHandler = delegate of obj * CustomBuildEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

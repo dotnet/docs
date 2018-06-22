@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.EntitySetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntitySetAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntitySetAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EntitySetAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.EntitySetAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entitySet As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySetAttribute(System::String ^ entitySet);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.EntitySetAttribute : string -&gt; System.Data.Services.Common.EntitySetAttribute" Usage="new System.Data.Services.Common.EntitySetAttribute entitySet" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntitySetAttribute.EntitySet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntitySet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySet { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntitySet : string" Usage="System.Data.Services.Common.EntitySetAttribute.EntitySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.UserProfileAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserProfileAttribute&#xA;Inherits Attribute&#xA;Implements IValueProviderSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserProfileAttribute sealed : Attribute, System::Web::ModelBinding::IValueProviderSource" />
+  <TypeSignature Language="F#" Value="type UserProfileAttribute = class&#xA;    inherit Attribute&#xA;    interface IValueProviderSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.UserProfileAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::IValueProvider ^ GetValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.IValueProvider&#xA;override this.GetValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.IValueProvider" Usage="userProfileAttribute.GetValueProvider modelBindingExecutionContext" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IValueProviderSource.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)</InterfaceMember>

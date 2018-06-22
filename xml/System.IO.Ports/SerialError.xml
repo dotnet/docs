@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialError" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerialError" />
   <TypeSignature Language="C++ CLI" Value="public enum class SerialError" />
+  <TypeSignature Language="F#" Value="type SerialError = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.Frame" />
       <MemberSignature Language="VB.NET" Value="Frame" />
       <MemberSignature Language="C++ CLI" Value="Frame" />
+      <MemberSignature Language="F#" Value="Frame = 8" Usage="System.IO.Ports.SerialError.Frame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.Overrun" />
       <MemberSignature Language="VB.NET" Value="Overrun" />
       <MemberSignature Language="C++ CLI" Value="Overrun" />
+      <MemberSignature Language="F#" Value="Overrun = 2" Usage="System.IO.Ports.SerialError.Overrun" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.RXOver" />
       <MemberSignature Language="VB.NET" Value="RXOver" />
       <MemberSignature Language="C++ CLI" Value="RXOver" />
+      <MemberSignature Language="F#" Value="RXOver = 1" Usage="System.IO.Ports.SerialError.RXOver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.RXParity" />
       <MemberSignature Language="VB.NET" Value="RXParity" />
       <MemberSignature Language="C++ CLI" Value="RXParity" />
+      <MemberSignature Language="F#" Value="RXParity = 4" Usage="System.IO.Ports.SerialError.RXParity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.TXFull" />
       <MemberSignature Language="VB.NET" Value="TXFull" />
       <MemberSignature Language="C++ CLI" Value="TXFull" />
+      <MemberSignature Language="F#" Value="TXFull = 256" Usage="System.IO.Ports.SerialError.TXFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

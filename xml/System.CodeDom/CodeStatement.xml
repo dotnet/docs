@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeStatement&#xA;Inherits CodeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeStatement : System::CodeDom::CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeStatement = class&#xA;    inherit CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeStatement.EndDirectives" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndDirectives As CodeDirectiveCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirectiveCollection ^ EndDirectives { System::CodeDom::CodeDirectiveCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndDirectives : System.CodeDom.CodeDirectiveCollection" Usage="System.CodeDom.CodeStatement.EndDirectives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeStatement.LinePragma" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePragma As CodeLinePragma" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeLinePragma ^ LinePragma { System::CodeDom::CodeLinePragma ^ get(); void set(System::CodeDom::CodeLinePragma ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinePragma : System.CodeDom.CodeLinePragma with get, set" Usage="System.CodeDom.CodeStatement.LinePragma" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeStatement.StartDirectives" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartDirectives As CodeDirectiveCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirectiveCollection ^ StartDirectives { System::CodeDom::CodeDirectiveCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartDirectives : System.CodeDom.CodeDirectiveCollection" Usage="System.CodeDom.CodeStatement.StartDirectives" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

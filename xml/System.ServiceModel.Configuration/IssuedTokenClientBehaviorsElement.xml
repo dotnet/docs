@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuedTokenClientBehaviorsElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class IssuedTokenClientBehaviorsElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IssuedTokenClientBehaviorsElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.BehaviorConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BehaviorConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.BehaviorConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.IssuerAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerAddress : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.IssuerAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

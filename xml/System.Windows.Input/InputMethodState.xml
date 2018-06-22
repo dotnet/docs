@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethodState" />
   <TypeSignature Language="VB.NET" Value="Public Enum InputMethodState" />
   <TypeSignature Language="C++ CLI" Value="public enum class InputMethodState" />
+  <TypeSignature Language="F#" Value="type InputMethodState = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.DoNotCare" />
       <MemberSignature Language="VB.NET" Value="DoNotCare" />
       <MemberSignature Language="C++ CLI" Value="DoNotCare" />
+      <MemberSignature Language="F#" Value="DoNotCare = 2" Usage="System.Windows.Input.InputMethodState.DoNotCare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
       <MemberSignature Language="C++ CLI" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Windows.Input.InputMethodState.Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.On" />
       <MemberSignature Language="VB.NET" Value="On" />
       <MemberSignature Language="C++ CLI" Value="On" />
+      <MemberSignature Language="F#" Value="On = 1" Usage="System.Windows.Input.InputMethodState.On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

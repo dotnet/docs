@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowChangeAction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowChangeAction" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowChangeAction abstract" />
+  <TypeSignature Language="F#" Value="type WorkflowChangeAction = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChangeAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function ApplyTo (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="workflowChangeAction.ApplyTo rootActivity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ ValidateChanges(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="workflowChangeAction.ValidateChanges activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

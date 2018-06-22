@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type AnnotationHelper = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.ClearHighlightsForSelection(System.Windows.Annotations.AnnotationService)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearHighlightsForSelection (service As AnnotationService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearHighlightsForSelection(System::Windows::Annotations::AnnotationService ^ service);" />
+      <MemberSignature Language="F#" Value="static member ClearHighlightsForSelection : System.Windows.Annotations.AnnotationService -&gt; unit" Usage="System.Windows.Annotations.AnnotationHelper.ClearHighlightsForSelection service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection(System.Windows.Annotations.AnnotationService,System.String,System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHighlightForSelection (service As AnnotationService, author As String, highlightBrush As Brush) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::Annotation ^ CreateHighlightForSelection(System::Windows::Annotations::AnnotationService ^ service, System::String ^ author, System::Windows::Media::Brush ^ highlightBrush);" />
+      <MemberSignature Language="F#" Value="static member CreateHighlightForSelection : System.Windows.Annotations.AnnotationService * string * System.Windows.Media.Brush -&gt; System.Windows.Annotations.Annotation" Usage="System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection (service, author, highlightBrush)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection(System.Windows.Annotations.AnnotationService,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInkStickyNoteForSelection (service As AnnotationService, author As String) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::Annotation ^ CreateInkStickyNoteForSelection(System::Windows::Annotations::AnnotationService ^ service, System::String ^ author);" />
+      <MemberSignature Language="F#" Value="static member CreateInkStickyNoteForSelection : System.Windows.Annotations.AnnotationService * string -&gt; System.Windows.Annotations.Annotation" Usage="System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection (service, author)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection(System.Windows.Annotations.AnnotationService,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTextStickyNoteForSelection (service As AnnotationService, author As String) As Annotation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::Annotation ^ CreateTextStickyNoteForSelection(System::Windows::Annotations::AnnotationService ^ service, System::String ^ author);" />
+      <MemberSignature Language="F#" Value="static member CreateTextStickyNoteForSelection : System.Windows.Annotations.AnnotationService * string -&gt; System.Windows.Annotations.Annotation" Usage="System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection (service, author)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection(System.Windows.Annotations.AnnotationService)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteInkStickyNotesForSelection (service As AnnotationService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteInkStickyNotesForSelection(System::Windows::Annotations::AnnotationService ^ service);" />
+      <MemberSignature Language="F#" Value="static member DeleteInkStickyNotesForSelection : System.Windows.Annotations.AnnotationService -&gt; unit" Usage="System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection(System.Windows.Annotations.AnnotationService)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteTextStickyNotesForSelection (service As AnnotationService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteTextStickyNotesForSelection(System::Windows::Annotations::AnnotationService ^ service);" />
+      <MemberSignature Language="F#" Value="static member DeleteTextStickyNotesForSelection : System.Windows.Annotations.AnnotationService -&gt; unit" Usage="System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +294,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.IAnchorInfo GetAnchorInfo(class System.Windows.Annotations.AnnotationService service, class System.Windows.Annotations.Annotation annotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo(System.Windows.Annotations.AnnotationService,System.Windows.Annotations.Annotation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Annotations::IAnchorInfo ^ GetAnchorInfo(System::Windows::Annotations::AnnotationService ^ service, System::Windows::Annotations::Annotation ^ annotation);" />
+      <MemberSignature Language="F#" Value="static member GetAnchorInfo : System.Windows.Annotations.AnnotationService * System.Windows.Annotations.Annotation -&gt; System.Windows.Annotations.IAnchorInfo" Usage="System.Windows.Annotations.AnnotationHelper.GetAnchorInfo (service, annotation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

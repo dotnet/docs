@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SafeSerializationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeSerializationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeSerializationEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type SafeSerializationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SafeSerializationEventArgs.AddSerializedState(System.Runtime.Serialization.ISafeSerializationData)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSerializedState (serializedState As ISafeSerializationData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSerializedState(System::Runtime::Serialization::ISafeSerializationData ^ serializedState);" />
+      <MemberSignature Language="F#" Value="member this.AddSerializedState : System.Runtime.Serialization.ISafeSerializationData -&gt; unit" Usage="safeSerializationEventArgs.AddSerializedState serializedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SafeSerializationEventArgs.StreamingContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StreamingContext As StreamingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::StreamingContext StreamingContext { System::Runtime::Serialization::StreamingContext get(); };" />
+      <MemberSignature Language="F#" Value="member this.StreamingContext : System.Runtime.Serialization.StreamingContext" Usage="System.Runtime.Serialization.SafeSerializationEventArgs.StreamingContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

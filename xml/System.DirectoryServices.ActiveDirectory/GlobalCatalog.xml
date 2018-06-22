@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
   <TypeSignature Language="VB.NET" Value="Public Class GlobalCatalog&#xA;Inherits DomainController" />
   <TypeSignature Language="C++ CLI" Value="public ref class GlobalCatalog : System::DirectoryServices::ActiveDirectory::DomainController" />
+  <TypeSignature Language="F#" Value="type GlobalCatalog = class&#xA;    inherit DomainController" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Function DisableGlobalCatalog () As DomainController" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::DomainController ^ DisableGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="member this.DisableGlobalCatalog : unit -&gt; System.DirectoryServices.ActiveDirectory.DomainController" Usage="globalCatalog.DisableGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.EnableGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EnableGlobalCatalog () As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ EnableGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="override this.EnableGlobalCatalog : unit -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="globalCatalog.EnableGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindAll(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll (context As DirectoryContext) As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAll(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member FindAll : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindAll context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindAll(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll (context As DirectoryContext, siteName As String) As GlobalCatalogCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalogCollection ^ FindAll(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="static member FindAll : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindAll (context, siteName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindAllProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAllProperties () As ReadOnlyActiveDirectorySchemaPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllProperties();" />
+      <MemberSignature Language="F#" Value="member this.FindAllProperties : unit -&gt; System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" Usage="globalCatalog.FindAllProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -205,6 +211,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -236,6 +243,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, flag As LocatorOptions) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne (context, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -270,6 +278,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, siteName As String) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne (context, siteName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -303,6 +312,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindOne (context As DirectoryContext, siteName As String, flag As LocatorOptions) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ FindOne(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ siteName, System::DirectoryServices::ActiveDirectory::LocatorOptions flag);" />
+      <MemberSignature Language="F#" Value="static member FindOne : System.DirectoryServices.ActiveDirectory.DirectoryContext * string * System.DirectoryServices.ActiveDirectory.LocatorOptions -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne (context, siteName, flag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -339,6 +349,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.GetDirectorySearcher" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDirectorySearcher () As DirectorySearcher" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::DirectorySearcher ^ GetDirectorySearcher();" />
+      <MemberSignature Language="F#" Value="override this.GetDirectorySearcher : unit -&gt; System.DirectoryServices.DirectorySearcher" Usage="globalCatalog.GetDirectorySearcher " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -365,6 +376,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.GetGlobalCatalog(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetGlobalCatalog (context As DirectoryContext) As GlobalCatalog" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ GetGlobalCatalog(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member GetGlobalCatalog : System.DirectoryServices.ActiveDirectory.DirectoryContext -&gt; System.DirectoryServices.ActiveDirectory.GlobalCatalog" Usage="System.DirectoryServices.ActiveDirectory.GlobalCatalog.GetGlobalCatalog context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -396,6 +408,7 @@ foreach (GlobalCatalog gc in GlobalCatalog.FindAll(context))
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.IsGlobalCatalog" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsGlobalCatalog () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsGlobalCatalog();" />
+      <MemberSignature Language="F#" Value="override this.IsGlobalCatalog : unit -&gt; bool" Usage="globalCatalog.IsGlobalCatalog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

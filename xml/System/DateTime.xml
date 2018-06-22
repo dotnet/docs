@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DateTime" />
   <TypeSignature Language="VB.NET" Value="Public Structure DateTime&#xA;Implements IComparable, IComparable(Of DateTime), IConvertible, IEquatable(Of DateTime), IFormattable, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public value class DateTime : IComparable, IComparable&lt;DateTime&gt;, IConvertible, IEquatable&lt;DateTime&gt;, IFormattable, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type DateTime = struct&#xA;    interface IFormattable&#xA;    interface IConvertible&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -484,6 +485,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(long ticks);" />
+      <MemberSignature Language="F#" Value="new DateTime : int64 -&gt; DateTime" Usage="new System.DateTime ticks" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -538,6 +540,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int64,System.DateTimeKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long, kind As DateTimeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(long ticks, DateTimeKind kind);" />
+      <MemberSignature Language="F#" Value="new DateTime : int64 * DateTimeKind -&gt; DateTime" Usage="new System.DateTime (ticks, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -585,6 +588,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int -&gt; DateTime" Usage="new System.DateTime (year, month, day)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -649,6 +653,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, System::Globalization::Calendar ^ calendar);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * System.Globalization.Calendar -&gt; DateTime" Usage="new System.DateTime (year, month, day, calendar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -718,6 +723,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -803,6 +809,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, kind As DateTimeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, DateTimeKind kind);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * DateTimeKind -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -889,6 +896,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, System::Globalization::Calendar ^ calendar);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * System.Globalization.Calendar -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, calendar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -976,6 +984,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, int millisecond);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * int -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, millisecond)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1068,6 +1077,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, kind As DateTimeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, DateTimeKind kind);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * int * DateTimeKind -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, millisecond, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1160,6 +1170,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, System::Globalization::Calendar ^ calendar);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * int * System.Globalization.Calendar -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, millisecond, calendar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1254,6 +1265,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, class System.Globalization.Calendar calendar, valuetype System.DateTimeKind kind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.DateTimeKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, System::Globalization::Calendar ^ calendar, DateTimeKind kind);" />
+      <MemberSignature Language="F#" Value="new DateTime : int * int * int * int * int * int * int * System.Globalization.Calendar * DateTimeKind -&gt; DateTime" Usage="new System.DateTime (year, month, day, hour, minute, second, millisecond, calendar, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1349,6 +1361,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.Add(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As TimeSpan) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime Add(TimeSpan value);" />
+      <MemberSignature Language="F#" Value="member this.Add : TimeSpan -&gt; DateTime" Usage="dateTime.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1410,6 +1423,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddDays(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddDays (value As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddDays(double value);" />
+      <MemberSignature Language="F#" Value="member this.AddDays : double -&gt; DateTime" Usage="dateTime.AddDays value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1472,6 +1486,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddHours(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddHours (value As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddHours(double value);" />
+      <MemberSignature Language="F#" Value="member this.AddHours : double -&gt; DateTime" Usage="dateTime.AddHours value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1533,6 +1548,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddMilliseconds(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMilliseconds (value As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddMilliseconds(double value);" />
+      <MemberSignature Language="F#" Value="member this.AddMilliseconds : double -&gt; DateTime" Usage="dateTime.AddMilliseconds value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1592,6 +1608,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddMinutes(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMinutes (value As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddMinutes(double value);" />
+      <MemberSignature Language="F#" Value="member this.AddMinutes : double -&gt; DateTime" Usage="dateTime.AddMinutes value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1652,6 +1669,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddMonths(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMonths (months As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddMonths(int months);" />
+      <MemberSignature Language="F#" Value="member this.AddMonths : int -&gt; DateTime" Usage="dateTime.AddMonths months" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1714,6 +1732,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddSeconds(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddSeconds (value As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddSeconds(double value);" />
+      <MemberSignature Language="F#" Value="member this.AddSeconds : double -&gt; DateTime" Usage="dateTime.AddSeconds value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1773,6 +1792,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddTicks(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddTicks (value As Long) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddTicks(long value);" />
+      <MemberSignature Language="F#" Value="member this.AddTicks : int64 -&gt; DateTime" Usage="dateTime.AddTicks value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1821,6 +1841,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.AddYears(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddYears (value As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime AddYears(int value);" />
+      <MemberSignature Language="F#" Value="member this.AddYears : int -&gt; DateTime" Usage="dateTime.AddYears value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1881,6 +1902,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (t1 As DateTime, t2 As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member Compare : DateTime * DateTime -&gt; int" Usage="System.DateTime.Compare (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1982,6 +2004,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.CompareTo(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(DateTime value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : DateTime -&gt; int&#xA;override this.CompareTo : DateTime -&gt; int" Usage="dateTime.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -2060,6 +2083,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="dateTime.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -2137,6 +2161,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="P:System.DateTime.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime" Usage="System.DateTime.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2189,6 +2214,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="P:System.DateTime.Day" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Day As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Day { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Day : int" Usage="System.DateTime.Day" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2247,6 +2273,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="P:System.DateTime.DayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayOfWeek As DayOfWeek" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DayOfWeek DayOfWeek { DayOfWeek get(); };" />
+      <MemberSignature Language="F#" Value="member this.DayOfWeek : DayOfWeek" Usage="System.DateTime.DayOfWeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2301,6 +2328,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="P:System.DateTime.DayOfYear" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayOfYear As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DayOfYear { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DayOfYear : int" Usage="System.DateTime.DayOfYear" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2351,6 +2379,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.DaysInMonth(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DaysInMonth (year As Integer, month As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DaysInMonth(int year, int month);" />
+      <MemberSignature Language="F#" Value="static member DaysInMonth : int * int -&gt; int" Usage="System.DateTime.DaysInMonth (year, month)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2433,6 +2462,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.Equals(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(DateTime value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : DateTime -&gt; bool" Usage="dateTime.Equals value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -2495,6 +2525,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dateTime.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2551,6 +2582,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.Equals(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (t1 As DateTime, t2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member Equals : DateTime * DateTime -&gt; bool" Usage="System.DateTime.Equals (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2611,6 +2643,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.FromBinary(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromBinary (dateData As Long) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromBinary(long dateData);" />
+      <MemberSignature Language="F#" Value="static member FromBinary : int64 -&gt; DateTime" Usage="System.DateTime.FromBinary dateData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2681,6 +2714,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.FromFileTime(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromFileTime (fileTime As Long) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromFileTime(long fileTime);" />
+      <MemberSignature Language="F#" Value="static member FromFileTime : int64 -&gt; DateTime" Usage="System.DateTime.FromFileTime fileTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2755,6 +2789,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.FromFileTimeUtc(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromFileTimeUtc (fileTime As Long) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromFileTimeUtc(long fileTime);" />
+      <MemberSignature Language="F#" Value="static member FromFileTimeUtc : int64 -&gt; DateTime" Usage="System.DateTime.FromFileTimeUtc fileTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2809,6 +2844,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.FromOADate(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOADate (d As Double) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromOADate(double d);" />
+      <MemberSignature Language="F#" Value="static member FromOADate : double -&gt; DateTime" Usage="System.DateTime.FromOADate d" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2878,6 +2914,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetDateTimeFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDateTimeFormats () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDateTimeFormats();" />
+      <MemberSignature Language="F#" Value="member this.GetDateTimeFormats : unit -&gt; string[]" Usage="dateTime.GetDateTimeFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3072,6 +3109,7 @@ July, 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetDateTimeFormats(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDateTimeFormats (format As Char) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDateTimeFormats(char format);" />
+      <MemberSignature Language="F#" Value="member this.GetDateTimeFormats : char -&gt; string[]" Usage="dateTime.GetDateTimeFormats format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3132,6 +3170,7 @@ July, 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetDateTimeFormats(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDateTimeFormats (provider As IFormatProvider) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDateTimeFormats(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.GetDateTimeFormats : IFormatProvider -&gt; string[]" Usage="dateTime.GetDateTimeFormats provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3298,6 +3337,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetDateTimeFormats(System.Char,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDateTimeFormats (format As Char, provider As IFormatProvider) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDateTimeFormats(char format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.GetDateTimeFormats : char * IFormatProvider -&gt; string[]" Usage="dateTime.GetDateTimeFormats (format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3360,6 +3400,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dateTime.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3395,6 +3436,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="dateTime.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -3429,6 +3471,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Hour" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hour As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hour { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hour : int" Usage="System.DateTime.Hour" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3482,6 +3525,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.IsDaylightSavingTime" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDaylightSavingTime () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDaylightSavingTime();" />
+      <MemberSignature Language="F#" Value="member this.IsDaylightSavingTime : unit -&gt; bool" Usage="dateTime.IsDaylightSavingTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3530,6 +3574,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.IsLeapYear(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLeapYear (year As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLeapYear(int year);" />
+      <MemberSignature Language="F#" Value="static member IsLeapYear : int -&gt; bool" Usage="System.DateTime.IsLeapYear year" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3588,6 +3633,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As DateTimeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeKind Kind { DateTimeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : DateTimeKind" Usage="System.DateTime.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3640,6 +3686,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="F:System.DateTime.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As DateTime " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly DateTime MaxValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : DateTime" Usage="System.DateTime.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3691,6 +3738,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Millisecond" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Millisecond As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Millisecond { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Millisecond : int" Usage="System.DateTime.Millisecond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3754,6 +3802,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Minute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minute As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minute { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Minute : int" Usage="System.DateTime.Minute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3799,6 +3848,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="F:System.DateTime.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As DateTime " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly DateTime MinValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : DateTime" Usage="System.DateTime.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3854,6 +3904,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Month" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Month As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Month { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Month : int" Usage="System.DateTime.Month" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3899,6 +3950,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="P:System.DateTime.Now" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Now As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime Now { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Now : DateTime" Usage="System.DateTime.Now" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3964,6 +4016,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Addition(System.DateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (d As DateTime, t As TimeSpan) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime operator +(DateTime d, TimeSpan t);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : DateTime * TimeSpan -&gt; DateTime" Usage="d + t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4019,6 +4072,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Equality(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (d1 As DateTime, d2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(DateTime d1, DateTime d2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : DateTime * DateTime -&gt; bool" Usage="d1 = d2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4077,6 +4131,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_GreaterThan(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (t1 As DateTime, t2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : DateTime * DateTime -&gt; bool" Usage="t1 &gt; t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4126,6 +4181,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_GreaterThanOrEqual(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (t1 As DateTime, t2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : DateTime * DateTime -&gt; bool" Usage="t1 &gt;= t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4175,6 +4231,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Inequality(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (d1 As DateTime, d2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(DateTime d1, DateTime d2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : DateTime * DateTime -&gt; bool" Usage="System.DateTime.op_Inequality (d1, d2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4224,6 +4281,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_LessThan(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (t1 As DateTime, t2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : DateTime * DateTime -&gt; bool" Usage="t1 &lt; t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4273,6 +4331,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_LessThanOrEqual(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (t1 As DateTime, t2 As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(DateTime t1, DateTime t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : DateTime * DateTime -&gt; bool" Usage="t1 &lt;= t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4336,6 +4395,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Subtraction(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (d1 As DateTime, d2 As DateTime) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan operator -(DateTime d1, DateTime d2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : DateTime * DateTime -&gt; TimeSpan" Usage="d1 - d2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4397,6 +4457,7 @@ juillet 2009
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Subtraction(System.DateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (d As DateTime, t As TimeSpan) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime operator -(DateTime d, TimeSpan t);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : DateTime * TimeSpan -&gt; DateTime" Usage="d - t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4622,6 +4683,7 @@ You can also download a complete set of `DateTime.Parse` examples, which are inc
       <MemberSignature Language="DocId" Value="M:System.DateTime.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; DateTime" Usage="System.DateTime.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4692,6 +4754,7 @@ It handles the <xref:System.FormatException> exception that is thrown when the m
       <MemberSignature Language="DocId" Value="M:System.DateTime.Parse(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Parse(System::String ^ s, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * IFormatProvider -&gt; DateTime" Usage="System.DateTime.Parse (s, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4755,6 +4818,7 @@ The following example parses an array of date strings by using the conventions o
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles styles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char), Optional provider As IFormatProvider = null, Optional styles As DateTimeStyles = System.Globalization.DateTimeStyles.None) As DateTime" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.Parse (s, provider, styles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4783,6 +4847,7 @@ The following example parses an array of date strings by using the conventions o
       <MemberSignature Language="DocId" Value="M:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider, styles As DateTimeStyles) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Parse(System::String ^ s, IFormatProvider ^ provider, System::Globalization::DateTimeStyles styles);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.Parse (s, provider, styles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4870,6 +4935,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (s As String, format As String, provider As IFormatProvider) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ParseExact(System::String ^ s, System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member ParseExact : string * string * IFormatProvider -&gt; DateTime" Usage="System.DateTime.ParseExact (s, format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4961,6 +5027,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ParseExact(valuetype System.ReadOnlySpan`1&lt;char&gt; s, valuetype System.ReadOnlySpan`1&lt;char&gt; format, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (s As ReadOnlySpan(Of Char), format As ReadOnlySpan(Of Char), provider As IFormatProvider, Optional style As DateTimeStyles = System.Globalization.DateTimeStyles.None) As DateTime" />
+      <MemberSignature Language="F#" Value="static member ParseExact : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.ParseExact (s, format, provider, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4990,6 +5057,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ParseExact(valuetype System.ReadOnlySpan`1&lt;char&gt; s, string[] formats, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.ParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (s As ReadOnlySpan(Of Char), formats As String(), provider As IFormatProvider, Optional style As DateTimeStyles = System.Globalization.DateTimeStyles.None) As DateTime" />
+      <MemberSignature Language="F#" Value="static member ParseExact : ReadOnlySpan&lt;char&gt; * string[] * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.ParseExact (s, formats, provider, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5020,6 +5088,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (s As String, format As String, provider As IFormatProvider, style As DateTimeStyles) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ParseExact(System::String ^ s, System::String ^ format, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style);" />
+      <MemberSignature Language="F#" Value="static member ParseExact : string * string * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.ParseExact (s, format, provider, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5135,6 +5204,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseExact (s As String, formats As String(), provider As IFormatProvider, style As DateTimeStyles) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ParseExact(System::String ^ s, cli::array &lt;System::String ^&gt; ^ formats, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style);" />
+      <MemberSignature Language="F#" Value="static member ParseExact : string * string[] * IFormatProvider * System.Globalization.DateTimeStyles -&gt; DateTime" Usage="System.DateTime.ParseExact (s, formats, provider, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5251,6 +5321,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.Second" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Second As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Second { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Second : int" Usage="System.DateTime.Second" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5296,6 +5367,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SpecifyKind (value As DateTime, kind As DateTimeKind) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime SpecifyKind(DateTime value, DateTimeKind kind);" />
+      <MemberSignature Language="F#" Value="static member SpecifyKind : DateTime * DateTimeKind -&gt; DateTime" Usage="System.DateTime.SpecifyKind (value, kind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5369,6 +5441,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.Subtract(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Subtract (value As DateTime) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan Subtract(DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.Subtract : DateTime -&gt; TimeSpan" Usage="dateTime.Subtract value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5431,6 +5504,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.Subtract(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Subtract (value As TimeSpan) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime Subtract(TimeSpan value);" />
+      <MemberSignature Language="F#" Value="member this.Subtract : TimeSpan -&gt; DateTime" Usage="dateTime.Subtract value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6222,6 +6296,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.Ticks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ticks As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Ticks { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ticks : int64" Usage="System.DateTime.Ticks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6273,6 +6348,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.TimeOfDay" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeOfDay As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeOfDay { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeOfDay : TimeSpan" Usage="System.DateTime.TimeOfDay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6325,6 +6401,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToBinary" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBinary () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToBinary();" />
+      <MemberSignature Language="F#" Value="member this.ToBinary : unit -&gt; int64" Usage="dateTime.ToBinary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6390,6 +6467,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.Today" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Today As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime Today { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Today : DateTime" Usage="System.DateTime.Today" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6443,6 +6521,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToFileTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ToFileTime () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToFileTime();" />
+      <MemberSignature Language="F#" Value="member this.ToFileTime : unit -&gt; int64" Usage="dateTime.ToFileTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6513,6 +6592,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToFileTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public Function ToFileTimeUtc () As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToFileTimeUtc();" />
+      <MemberSignature Language="F#" Value="member this.ToFileTimeUtc : unit -&gt; int64" Usage="dateTime.ToFileTimeUtc " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6565,6 +6645,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToLocalTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLocalTime () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ToLocalTime();" />
+      <MemberSignature Language="F#" Value="member this.ToLocalTime : unit -&gt; DateTime" Usage="dateTime.ToLocalTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6649,6 +6730,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToLongDateString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLongDateString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLongDateString();" />
+      <MemberSignature Language="F#" Value="member this.ToLongDateString : unit -&gt; string" Usage="dateTime.ToLongDateString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6704,6 +6786,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToLongTimeString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToLongTimeString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLongTimeString();" />
+      <MemberSignature Language="F#" Value="member this.ToLongTimeString : unit -&gt; string" Usage="dateTime.ToLongTimeString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6759,6 +6842,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToOADate" />
       <MemberSignature Language="VB.NET" Value="Public Function ToOADate () As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double ToOADate();" />
+      <MemberSignature Language="F#" Value="member this.ToOADate : unit -&gt; double" Usage="dateTime.ToOADate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6806,6 +6890,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToShortDateString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToShortDateString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToShortDateString();" />
+      <MemberSignature Language="F#" Value="member this.ToShortDateString : unit -&gt; string" Usage="dateTime.ToShortDateString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6861,6 +6946,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToShortTimeString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToShortTimeString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToShortTimeString();" />
+      <MemberSignature Language="F#" Value="member this.ToShortTimeString : unit -&gt; string" Usage="dateTime.ToShortTimeString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6929,6 +7015,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dateTime.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6990,6 +7077,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="dateTime.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -7065,6 +7153,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="dateTime.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7149,6 +7238,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="dateTime.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -7237,6 +7327,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.ToUniversalTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUniversalTime () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ToUniversalTime();" />
+      <MemberSignature Language="F#" Value="member this.ToUniversalTime : unit -&gt; DateTime" Usage="dateTime.ToUniversalTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7319,6 +7410,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFormat(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten, valuetype System.ReadOnlySpan`1&lt;char&gt; format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer, Optional format As ReadOnlySpan(Of Char) = null, Optional provider As IFormatProvider = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  * ReadOnlySpan&lt;char&gt; * IFormatProvider -&gt; bool" Usage="dateTime.TryFormat (destination, charsWritten, format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7363,6 +7455,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.ReadOnlySpan{System.Char},System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.DateTime.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7389,6 +7482,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.String,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.DateTime.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7462,6 +7556,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), provider As IFormatProvider, styles As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, IFormatProvider ^ provider, System::Globalization::DateTimeStyles styles, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParse (s, provider, styles, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7492,6 +7587,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, provider As IFormatProvider, styles As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, IFormatProvider ^ provider, System::Globalization::DateTimeStyles styles, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParse (s, provider, styles, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7621,6 +7717,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (s As ReadOnlySpan(Of Char), format As ReadOnlySpan(Of Char), provider As IFormatProvider, style As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(ReadOnlySpan&lt;char&gt; s, ReadOnlySpan&lt;char&gt; format, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParseExact (s, format, provider, style, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7653,6 +7750,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (s As ReadOnlySpan(Of Char), formats As String(), provider As IFormatProvider, style As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(ReadOnlySpan&lt;char&gt; s, cli::array &lt;System::String ^&gt; ^ formats, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : ReadOnlySpan&lt;char&gt; * string[] * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParseExact (s, formats, provider, style, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7685,6 +7783,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (s As String, format As String, provider As IFormatProvider, style As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(System::String ^ s, System::String ^ format, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : string * string * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParseExact (s, format, provider, style, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7795,6 +7894,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseExact (s As String, formats As String(), provider As IFormatProvider, style As DateTimeStyles, ByRef result As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseExact(System::String ^ s, cli::array &lt;System::String ^&gt; ^ formats, IFormatProvider ^ provider, System::Globalization::DateTimeStyles style, [Runtime::InteropServices::Out] DateTime % result);" />
+      <MemberSignature Language="F#" Value="static member TryParseExact : string * string[] * IFormatProvider * System.Globalization.DateTimeStyles *  -&gt; bool" Usage="System.DateTime.TryParseExact (s, formats, provider, style, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7902,6 +8002,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="F:System.DateTime.UnixEpoch" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnixEpoch As DateTime " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly DateTime UnixEpoch;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnixEpoch : DateTime" Usage="System.DateTime.UnixEpoch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7921,6 +8022,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.UtcNow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UtcNow As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property DateTime UtcNow { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.UtcNow : DateTime" Usage="System.DateTime.UtcNow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7979,6 +8081,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <MemberSignature Language="DocId" Value="P:System.DateTime.Year" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Year As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Year { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Year : int" Usage="System.DateTime.Year" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

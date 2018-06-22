@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.StaticPartialCachingControl" />
   <TypeSignature Language="VB.NET" Value="Public Class StaticPartialCachingControl&#xA;Inherits BasePartialCachingControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class StaticPartialCachingControl : System::Web::UI::BasePartialCachingControl" />
+  <TypeSignature Language="F#" Value="type StaticPartialCachingControl = class&#xA;    inherit BasePartialCachingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, class System.Web.UI.BuildMethod buildMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticPartialCachingControl(System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::Web::UI::BuildMethod ^ buildMethod);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.StaticPartialCachingControl : string * string * int * string * string * string * System.Web.UI.BuildMethod -&gt; System.Web.UI.StaticPartialCachingControl" Usage="new System.Web.UI.StaticPartialCachingControl (ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, buildMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, class System.Web.UI.BuildMethod buildMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticPartialCachingControl(System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::String ^ sqlDependency, System::Web::UI::BuildMethod ^ buildMethod);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.StaticPartialCachingControl : string * string * int * string * string * string * string * System.Web.UI.BuildMethod -&gt; System.Web.UI.StaticPartialCachingControl" Usage="new System.Web.UI.StaticPartialCachingControl (ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, sqlDependency, buildMethod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, class System.Web.UI.BuildMethod buildMethod, string providerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Web.UI.BuildMethod,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticPartialCachingControl(System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::String ^ sqlDependency, System::Web::UI::BuildMethod ^ buildMethod, System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.StaticPartialCachingControl : string * string * int * string * string * string * string * System.Web.UI.BuildMethod * string -&gt; System.Web.UI.StaticPartialCachingControl" Usage="new System.Web.UI.StaticPartialCachingControl (ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, sqlDependency, buildMethod, providerName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildCachedControl(class System.Web.UI.Control parent, string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, class System.Web.UI.BuildMethod buildMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.BuildCachedControl(System.Web.UI.Control,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BuildCachedControl(System::Web::UI::Control ^ parent, System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::Web::UI::BuildMethod ^ buildMethod);" />
+      <MemberSignature Language="F#" Value="static member BuildCachedControl : System.Web.UI.Control * string * string * int * string * string * string * System.Web.UI.BuildMethod -&gt; unit" Usage="System.Web.UI.StaticPartialCachingControl.BuildCachedControl (parent, ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, buildMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildCachedControl(class System.Web.UI.Control parent, string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, class System.Web.UI.BuildMethod buildMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.BuildCachedControl(System.Web.UI.Control,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Web.UI.BuildMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BuildCachedControl(System::Web::UI::Control ^ parent, System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::String ^ sqlDependency, System::Web::UI::BuildMethod ^ buildMethod);" />
+      <MemberSignature Language="F#" Value="static member BuildCachedControl : System.Web.UI.Control * string * string * int * string * string * string * string * System.Web.UI.BuildMethod -&gt; unit" Usage="System.Web.UI.StaticPartialCachingControl.BuildCachedControl (parent, ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, sqlDependency, buildMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +269,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildCachedControl(class System.Web.UI.Control parent, string ctrlID, string guid, int32 duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, class System.Web.UI.BuildMethod buildMethod, string providerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.StaticPartialCachingControl.BuildCachedControl(System.Web.UI.Control,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Web.UI.BuildMethod,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BuildCachedControl(System::Web::UI::Control ^ parent, System::String ^ ctrlID, System::String ^ guid, int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::String ^ sqlDependency, System::Web::UI::BuildMethod ^ buildMethod, System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="static member BuildCachedControl : System.Web.UI.Control * string * string * int * string * string * string * string * System.Web.UI.BuildMethod * string -&gt; unit" Usage="System.Web.UI.StaticPartialCachingControl.BuildCachedControl (parent, ctrlID, guid, duration, varyByParams, varyByControls, varyByCustom, sqlDependency, buildMethod, providerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

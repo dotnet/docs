@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryableDataSourceEditData" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryableDataSourceEditData" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryableDataSourceEditData" />
+  <TypeSignature Language="F#" Value="type QueryableDataSourceEditData = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryableDataSourceEditData.NewDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property NewDataObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewDataObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewDataObject : obj with get, set" Usage="System.Web.UI.WebControls.QueryableDataSourceEditData.NewDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryableDataSourceEditData.OriginalDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalDataObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalDataObject { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalDataObject : obj with get, set" Usage="System.Web.UI.WebControls.QueryableDataSourceEditData.OriginalDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

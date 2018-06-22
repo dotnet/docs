@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class KerberosSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class KerberosSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
+  <TypeSignature Language="F#" Value="type KerberosSecurityTokenProvider = class&#xA;    inherit SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (servicePrincipalName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KerberosSecurityTokenProvider(System::String ^ servicePrincipalName);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider : string -&gt; System.IdentityModel.Selectors.KerberosSecurityTokenProvider" Usage="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider servicePrincipalName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string servicePrincipalName, valuetype System.Security.Principal.TokenImpersonationLevel tokenImpersonationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.#ctor(System.String,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KerberosSecurityTokenProvider(System::String ^ servicePrincipalName, System::Security::Principal::TokenImpersonationLevel tokenImpersonationLevel);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider : string * System.Security.Principal.TokenImpersonationLevel -&gt; System.IdentityModel.Selectors.KerberosSecurityTokenProvider" Usage="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider (servicePrincipalName, tokenImpersonationLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string servicePrincipalName, valuetype System.Security.Principal.TokenImpersonationLevel tokenImpersonationLevel, class System.Net.NetworkCredential credential) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.#ctor(System.String,System.Security.Principal.TokenImpersonationLevel,System.Net.NetworkCredential)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KerberosSecurityTokenProvider(System::String ^ servicePrincipalName, System::Security::Principal::TokenImpersonationLevel tokenImpersonationLevel, System::Net::NetworkCredential ^ credential);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider : string * System.Security.Principal.TokenImpersonationLevel * System.Net.NetworkCredential -&gt; System.IdentityModel.Selectors.KerberosSecurityTokenProvider" Usage="new System.IdentityModel.Selectors.KerberosSecurityTokenProvider (servicePrincipalName, tokenImpersonationLevel, credential)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="kerberosSecurityTokenProvider.GetTokenCore timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.NetworkCredential" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NetworkCredential As NetworkCredential" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::NetworkCredential ^ NetworkCredential { System::Net::NetworkCredential ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NetworkCredential : System.Net.NetworkCredential" Usage="System.IdentityModel.Selectors.KerberosSecurityTokenProvider.NetworkCredential" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.ServicePrincipalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePrincipalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServicePrincipalName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePrincipalName : string" Usage="System.IdentityModel.Selectors.KerberosSecurityTokenProvider.ServicePrincipalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.TokenImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel TokenImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenImpersonationLevel : System.Security.Principal.TokenImpersonationLevel" Usage="System.IdentityModel.Selectors.KerberosSecurityTokenProvider.TokenImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

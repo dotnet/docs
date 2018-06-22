@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SeriesCollection&#xA;Inherits ChartNamedElementCollection(Of Series)" />
   <TypeSignature Language="C++ CLI" Value="public ref class SeriesCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::Series ^&gt;" />
+  <TypeSignature Language="F#" Value="type SeriesCollection = class&#xA;    inherit ChartNamedElementCollection&lt;Series&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.SeriesCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As Series" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::Series ^ Add(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Web.UI.DataVisualization.Charting.Series" Usage="seriesCollection.Add name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

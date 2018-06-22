@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ObjectDisposedException" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDisposedException&#xA;Inherits InvalidOperationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectDisposedException : InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ObjectDisposedException = class&#xA;    inherit InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +91,7 @@ Caught:
       <MemberSignature Language="DocId" Value="M:System.ObjectDisposedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (objectName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDisposedException(System::String ^ objectName);" />
+      <MemberSignature Language="F#" Value="new ObjectDisposedException : string -&gt; ObjectDisposedException" Usage="new System.ObjectDisposedException objectName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +137,7 @@ Caught:
       <MemberSignature Language="DocId" Value="M:System.ObjectDisposedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectDisposedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new ObjectDisposedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; ObjectDisposedException" Usage="new System.ObjectDisposedException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +170,7 @@ Caught:
       <MemberSignature Language="DocId" Value="M:System.ObjectDisposedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDisposedException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new ObjectDisposedException : string * Exception -&gt; ObjectDisposedException" Usage="new System.ObjectDisposedException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -210,6 +214,7 @@ Caught:
       <MemberSignature Language="DocId" Value="M:System.ObjectDisposedException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (objectName As String, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDisposedException(System::String ^ objectName, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new ObjectDisposedException : string * string -&gt; ObjectDisposedException" Usage="new System.ObjectDisposedException (objectName, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -255,6 +260,7 @@ Caught:
       <MemberSignature Language="DocId" Value="M:System.ObjectDisposedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="objectDisposedException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +303,7 @@ Caught:
       <MemberSignature Language="DocId" Value="P:System.ObjectDisposedException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ObjectDisposedException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -340,6 +347,7 @@ Caught:
       <MemberSignature Language="DocId" Value="P:System.ObjectDisposedException.ObjectName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ObjectName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectName : string" Usage="System.ObjectDisposedException.ObjectName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.GenericParameterConstraint" />
   <TypeSignature Language="VB.NET" Value="Public Structure GenericParameterConstraint" />
   <TypeSignature Language="C++ CLI" Value="public value class GenericParameterConstraint" />
+  <TypeSignature Language="F#" Value="type GenericParameterConstraint = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraint.GetCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="genericParameterConstraint.GetCustomAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.GenericParameterConstraint.Parameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameter As GenericParameterHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GenericParameterHandle Parameter { System::Reflection::Metadata::GenericParameterHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameter : System.Reflection.Metadata.GenericParameterHandle" Usage="System.Reflection.Metadata.GenericParameterConstraint.Parameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.GenericParameterConstraint.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As EntityHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Type { System::Reflection::Metadata::EntityHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.GenericParameterConstraint.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

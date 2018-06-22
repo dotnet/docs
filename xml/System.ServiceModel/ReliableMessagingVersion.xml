@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableMessagingVersion" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReliableMessagingVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReliableMessagingVersion abstract" />
+  <TypeSignature Language="F#" Value="type ReliableMessagingVersion = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As ReliableMessagingVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ Default { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.ReliableMessagingVersion" Usage="System.ServiceModel.ReliableMessagingVersion.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.WSReliableMessaging11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSReliableMessaging11 As ReliableMessagingVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ WSReliableMessaging11 { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSReliableMessaging11 : System.ServiceModel.ReliableMessagingVersion" Usage="System.ServiceModel.ReliableMessagingVersion.WSReliableMessaging11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableMessagingVersion.WSReliableMessagingFebruary2005" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSReliableMessagingFebruary2005 As ReliableMessagingVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ReliableMessagingVersion ^ WSReliableMessagingFebruary2005 { System::ServiceModel::ReliableMessagingVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSReliableMessagingFebruary2005 : System.ServiceModel.ReliableMessagingVersion" Usage="System.ServiceModel.ReliableMessagingVersion.WSReliableMessagingFebruary2005" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.PrivilegeNotHeldException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrivilegeNotHeldException&#xA;Inherits UnauthorizedAccessException" />
   <TypeSignature Language="C++ CLI" Value="public ref class PrivilegeNotHeldException sealed : UnauthorizedAccessException" />
+  <TypeSignature Language="F#" Value="type PrivilegeNotHeldException = class&#xA;    inherit UnauthorizedAccessException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.PrivilegeNotHeldException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (privilege As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrivilegeNotHeldException(System::String ^ privilege);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.PrivilegeNotHeldException : string -&gt; System.Security.AccessControl.PrivilegeNotHeldException" Usage="new System.Security.AccessControl.PrivilegeNotHeldException privilege" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.PrivilegeNotHeldException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (privilege As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PrivilegeNotHeldException(System::String ^ privilege, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.PrivilegeNotHeldException : string * Exception -&gt; System.Security.AccessControl.PrivilegeNotHeldException" Usage="new System.Security.AccessControl.PrivilegeNotHeldException (privilege, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.PrivilegeNotHeldException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="privilegeNotHeldException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.PrivilegeNotHeldException.PrivilegeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivilegeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivilegeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrivilegeName : string" Usage="System.Security.AccessControl.PrivilegeNotHeldException.PrivilegeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

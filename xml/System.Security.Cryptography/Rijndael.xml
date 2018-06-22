@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Rijndael" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Rijndael&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class Rijndael abstract : System::Security::Cryptography::SymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type Rijndael = class&#xA;    inherit SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Rijndael.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As Rijndael" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Rijndael ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.Rijndael" Usage="System.Security.Cryptography.Rijndael.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Rijndael.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As Rijndael" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Rijndael ^ Create(System::String ^ algName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.Rijndael" Usage="System.Security.Cryptography.Rijndael.Create algName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

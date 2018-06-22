@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodSemanticsAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodSemanticsAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class MethodSemanticsAttributes" />
+  <TypeSignature Language="F#" Value="type MethodSemanticsAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Adder" />
       <MemberSignature Language="VB.NET" Value="Adder" />
       <MemberSignature Language="C++ CLI" Value="Adder" />
+      <MemberSignature Language="F#" Value="Adder = 8" Usage="System.Reflection.MethodSemanticsAttributes.Adder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Getter" />
       <MemberSignature Language="VB.NET" Value="Getter" />
       <MemberSignature Language="C++ CLI" Value="Getter" />
+      <MemberSignature Language="F#" Value="Getter = 2" Usage="System.Reflection.MethodSemanticsAttributes.Getter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Other" />
       <MemberSignature Language="VB.NET" Value="Other" />
       <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 4" Usage="System.Reflection.MethodSemanticsAttributes.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Raiser" />
       <MemberSignature Language="VB.NET" Value="Raiser" />
       <MemberSignature Language="C++ CLI" Value="Raiser" />
+      <MemberSignature Language="F#" Value="Raiser = 32" Usage="System.Reflection.MethodSemanticsAttributes.Raiser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Remover" />
       <MemberSignature Language="VB.NET" Value="Remover" />
       <MemberSignature Language="C++ CLI" Value="Remover" />
+      <MemberSignature Language="F#" Value="Remover = 16" Usage="System.Reflection.MethodSemanticsAttributes.Remover" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodSemanticsAttributes.Setter" />
       <MemberSignature Language="VB.NET" Value="Setter" />
       <MemberSignature Language="C++ CLI" Value="Setter" />
+      <MemberSignature Language="F#" Value="Setter = 1" Usage="System.Reflection.MethodSemanticsAttributes.Setter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

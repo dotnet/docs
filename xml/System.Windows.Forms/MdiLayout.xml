@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MdiLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum MdiLayout" />
   <TypeSignature Language="C++ CLI" Value="public enum class MdiLayout" />
+  <TypeSignature Language="F#" Value="type MdiLayout = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.ArrangeIcons" />
       <MemberSignature Language="VB.NET" Value="ArrangeIcons" />
       <MemberSignature Language="C++ CLI" Value="ArrangeIcons" />
+      <MemberSignature Language="F#" Value="ArrangeIcons = 3" Usage="System.Windows.Forms.MdiLayout.ArrangeIcons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.Cascade" />
       <MemberSignature Language="VB.NET" Value="Cascade" />
       <MemberSignature Language="C++ CLI" Value="Cascade" />
+      <MemberSignature Language="F#" Value="Cascade = 0" Usage="System.Windows.Forms.MdiLayout.Cascade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.TileHorizontal" />
       <MemberSignature Language="VB.NET" Value="TileHorizontal" />
       <MemberSignature Language="C++ CLI" Value="TileHorizontal" />
+      <MemberSignature Language="F#" Value="TileHorizontal = 1" Usage="System.Windows.Forms.MdiLayout.TileHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.TileVertical" />
       <MemberSignature Language="VB.NET" Value="TileVertical" />
       <MemberSignature Language="C++ CLI" Value="TileVertical" />
+      <MemberSignature Language="F#" Value="TileVertical = 2" Usage="System.Windows.Forms.MdiLayout.TileVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

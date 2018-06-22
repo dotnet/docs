@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignOnlyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignOnlyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignOnlyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignOnlyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignOnlyAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isDesignOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignOnlyAttribute(bool isDesignOnly);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignOnlyAttribute : bool -&gt; System.ComponentModel.DesignOnlyAttribute" Usage="new System.ComponentModel.DesignOnlyAttribute isDesignOnly" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignOnlyAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DesignOnlyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignOnlyAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DesignOnlyAttribute" Usage="System.ComponentModel.DesignOnlyAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignOnlyAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designOnlyAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignOnlyAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designOnlyAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignOnlyAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="designOnlyAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignOnlyAttribute.IsDesignOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDesignOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDesignOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDesignOnly : bool" Usage="System.ComponentModel.DesignOnlyAttribute.IsDesignOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignOnlyAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As DesignOnlyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignOnlyAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.DesignOnlyAttribute" Usage="System.ComponentModel.DesignOnlyAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -303,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignOnlyAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As DesignOnlyAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignOnlyAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.DesignOnlyAttribute" Usage="System.ComponentModel.DesignOnlyAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

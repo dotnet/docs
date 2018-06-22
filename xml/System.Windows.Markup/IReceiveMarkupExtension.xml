@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IReceiveMarkupExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IReceiveMarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IReceiveMarkupExtension" />
+  <TypeSignature Language="F#" Value="type IReceiveMarkupExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReceiveMarkupExtension(string property, class System.Windows.Markup.MarkupExtension markupExtension, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IReceiveMarkupExtension.ReceiveMarkupExtension(System.String,System.Windows.Markup.MarkupExtension,System.IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReceiveMarkupExtension(System::String ^ property, System::Windows::Markup::MarkupExtension ^ markupExtension, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveMarkupExtension : string * System.Windows.Markup.MarkupExtension * IServiceProvider -&gt; unit" Usage="iReceiveMarkupExtension.ReceiveMarkupExtension (property, markupExtension, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

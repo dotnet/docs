@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SlipBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum SlipBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class SlipBehavior" />
+  <TypeSignature Language="F#" Value="type SlipBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SlipBehavior.Grow" />
       <MemberSignature Language="VB.NET" Value="Grow" />
       <MemberSignature Language="C++ CLI" Value="Grow" />
+      <MemberSignature Language="F#" Value="Grow = 0" Usage="System.Windows.Media.Animation.SlipBehavior.Grow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SlipBehavior.Slip" />
       <MemberSignature Language="VB.NET" Value="Slip" />
       <MemberSignature Language="C++ CLI" Value="Slip" />
+      <MemberSignature Language="F#" Value="Slip = 1" Usage="System.Windows.Media.Animation.SlipBehavior.Slip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

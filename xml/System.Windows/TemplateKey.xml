@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateKey" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplateKey&#xA;Inherits ResourceKey&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateKey abstract : System::Windows::ResourceKey, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type TemplateKey = class&#xA;    inherit ResourceKey&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TemplateKey/TemplateType templateType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateKey.#ctor(System.Windows.TemplateKey.TemplateType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TemplateKey(System::Windows::TemplateKey::TemplateType templateType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.TemplateKey : System.Windows.TemplateKey.TemplateType -&gt; System.Windows.TemplateKey" Usage="new System.Windows.TemplateKey templateType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TemplateKey/TemplateType templateType, object dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateKey.#ctor(System.Windows.TemplateKey.TemplateType,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TemplateKey(System::Windows::TemplateKey::TemplateType templateType, System::Object ^ dataType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.TemplateKey : System.Windows.TemplateKey.TemplateType * obj -&gt; System.Windows.TemplateKey" Usage="new System.Windows.TemplateKey (templateType, dataType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateKey.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Windows.TemplateKey.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateKey.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataType { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : obj with get, set" Usage="System.Windows.TemplateKey.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateKey.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="templateKey.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateKey.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="templateKey.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="templateKey.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

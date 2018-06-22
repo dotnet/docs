@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SettingsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type SettingsSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.HttpListener" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpListener As HttpListenerElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::HttpListenerElement ^ HttpListener { System::Net::Configuration::HttpListenerElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HttpListener : System.Net.Configuration.HttpListenerElement" Usage="System.Net.Configuration.SettingsSection.HttpListener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.HttpWebRequest" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpWebRequest As HttpWebRequestElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::HttpWebRequestElement ^ HttpWebRequest { System::Net::Configuration::HttpWebRequestElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HttpWebRequest : System.Net.Configuration.HttpWebRequestElement" Usage="System.Net.Configuration.SettingsSection.HttpWebRequest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.Ipv6" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ipv6 As Ipv6Element" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::Ipv6Element ^ Ipv6 { System::Net::Configuration::Ipv6Element ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ipv6 : System.Net.Configuration.Ipv6Element" Usage="System.Net.Configuration.SettingsSection.Ipv6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.PerformanceCounters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PerformanceCounters As PerformanceCountersElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::PerformanceCountersElement ^ PerformanceCounters { System::Net::Configuration::PerformanceCountersElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PerformanceCounters : System.Net.Configuration.PerformanceCountersElement" Usage="System.Net.Configuration.SettingsSection.PerformanceCounters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SettingsSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.ServicePointManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePointManager As ServicePointManagerElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ServicePointManagerElement ^ ServicePointManager { System::Net::Configuration::ServicePointManagerElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePointManager : System.Net.Configuration.ServicePointManagerElement" Usage="System.Net.Configuration.SettingsSection.ServicePointManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.Socket" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Socket As SocketElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::SocketElement ^ Socket { System::Net::Configuration::SocketElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Socket : System.Net.Configuration.SocketElement" Usage="System.Net.Configuration.SettingsSection.Socket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.WebProxyScript" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebProxyScript As WebProxyScriptElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::WebProxyScriptElement ^ WebProxyScript { System::Net::Configuration::WebProxyScriptElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebProxyScript : System.Net.Configuration.WebProxyScriptElement" Usage="System.Net.Configuration.SettingsSection.WebProxyScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SettingsSection.WebUtility" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebUtility As WebUtilityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::WebUtilityElement ^ WebUtility { System::Net::Configuration::WebUtilityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebUtility : System.Net.Configuration.WebUtilityElement" Usage="System.Net.Configuration.SettingsSection.WebUtility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

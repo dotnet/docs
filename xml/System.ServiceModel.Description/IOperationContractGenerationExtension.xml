@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IOperationContractGenerationExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOperationContractGenerationExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOperationContractGenerationExtension" />
+  <TypeSignature Language="F#" Value="type IOperationContractGenerationExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation(System.ServiceModel.Description.OperationContractGenerationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GenerateOperation (context As OperationContractGenerationContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateOperation(System::ServiceModel::Description::OperationContractGenerationContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateOperation : System.ServiceModel.Description.OperationContractGenerationContext -&gt; unit" Usage="iOperationContractGenerationExtension.GenerateOperation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

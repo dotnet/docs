@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildSubmission" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildSubmission" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildSubmission" />
+  <TypeSignature Language="F#" Value="type BuildSubmission = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.AsyncContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncContext As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AsyncContext { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncContext : obj" Usage="Microsoft.Build.Execution.BuildSubmission.AsyncContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.BuildManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildManager As BuildManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::BuildManager ^ BuildManager { Microsoft::Build::Execution::BuildManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildManager : Microsoft.Build.Execution.BuildManager" Usage="Microsoft.Build.Execution.BuildSubmission.BuildManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.BuildResult" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildResult As BuildResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Execution::BuildResult ^ BuildResult { Microsoft::Build::Execution::BuildResult ^ get(); void set(Microsoft::Build::Execution::BuildResult ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildResult : Microsoft.Build.Execution.BuildResult with get, set" Usage="Microsoft.Build.Execution.BuildSubmission.BuildResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildSubmission.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Function Execute () As BuildResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::BuildResult ^ Execute();" />
+      <MemberSignature Language="F#" Value="member this.Execute : unit -&gt; Microsoft.Build.Execution.BuildResult" Usage="buildSubmission.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExecuteAsync (callback As BuildSubmissionCompleteCallback, context As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteAsync(Microsoft::Build::Execution::BuildSubmissionCompleteCallback ^ callback, System::Object ^ context);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteAsync : Microsoft.Build.Execution.BuildSubmissionCompleteCallback * obj -&gt; unit" Usage="buildSubmission.ExecuteAsync (callback, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="Microsoft.Build.Execution.BuildSubmission.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.SubmissionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmissionId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubmissionId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmissionId : int" Usage="Microsoft.Build.Execution.BuildSubmission.SubmissionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.WaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WaitHandle : System.Threading.WaitHandle" Usage="Microsoft.Build.Execution.BuildSubmission.WaitHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

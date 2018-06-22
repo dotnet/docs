@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ComponentChangedEventHandler(sender As Object, e As ComponentChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ComponentChangedEventHandler(System::Object ^ sender, ComponentChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ComponentChangedEventHandler = delegate of obj * ComponentChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

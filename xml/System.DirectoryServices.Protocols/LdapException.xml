@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LdapException" />
   <TypeSignature Language="VB.NET" Value="Public Class LdapException&#xA;Inherits DirectoryException" />
   <TypeSignature Language="C++ CLI" Value="public ref class LdapException : System::DirectoryServices::Protocols::DirectoryException" />
+  <TypeSignature Language="F#" Value="type LdapException = class&#xA;    inherit DirectoryException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : int -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : string -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(int errorCode, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : int * string -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException (errorCode, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; LdapException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : string * Exception -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(int errorCode, System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : int * string * Exception -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException (errorCode, message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, serverErrorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LdapException(int errorCode, System::String ^ message, System::String ^ serverErrorMessage);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.LdapException : int * string * string -&gt; System.DirectoryServices.Protocols.LdapException" Usage="new System.DirectoryServices.Protocols.LdapException (errorCode, message, serverErrorMessage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.DirectoryServices.Protocols.LdapException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="ldapException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -262,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapException.PartialResults" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartialResults As PartialResultsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::PartialResultsCollection ^ PartialResults { System::DirectoryServices::Protocols::PartialResultsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartialResults : System.DirectoryServices.Protocols.PartialResultsCollection" Usage="System.DirectoryServices.Protocols.LdapException.PartialResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapException.ServerErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServerErrorMessage : string" Usage="System.DirectoryServices.Protocols.LdapException.ServerErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

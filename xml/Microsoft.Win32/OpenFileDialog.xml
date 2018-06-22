@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.OpenFileDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OpenFileDialog&#xA;Inherits FileDialog" />
   <TypeSignature Language="C++ CLI" Value="public ref class OpenFileDialog sealed : Microsoft::Win32::FileDialog" />
+  <TypeSignature Language="F#" Value="type OpenFileDialog = class&#xA;    inherit FileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.CheckPermissionsToShowDialog" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CheckPermissionsToShowDialog ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CheckPermissionsToShowDialog();" />
+      <MemberSignature Language="F#" Value="override this.CheckPermissionsToShowDialog : unit -&gt; unit" Usage="openFileDialog.CheckPermissionsToShowDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.Multiselect" />
       <MemberSignature Language="VB.NET" Value="Public Property Multiselect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Multiselect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Multiselect : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.Multiselect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFile" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : unit -&gt; System.IO.Stream" Usage="openFileDialog.OpenFile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFiles" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFiles () As Stream()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Stream ^&gt; ^ OpenFiles();" />
+      <MemberSignature Language="F#" Value="member this.OpenFiles : unit -&gt; System.IO.Stream[]" Usage="openFileDialog.OpenFiles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ReadOnlyChecked" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnlyChecked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyChecked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyChecked : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.ReadOnlyChecked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="openFileDialog.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ShowReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowReadOnly : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.ShowReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

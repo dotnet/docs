@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FormattedText" />
   <TypeSignature Language="VB.NET" Value="Public Class FormattedText" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormattedText" />
+  <TypeSignature Language="F#" Value="type FormattedText = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +91,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground, float64 pixelsPerDip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground, double pixelsPerDip);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush * double -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground, pixelsPerDip)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +123,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground, class System.Windows.Media.NumberSubstitution numberSubstitution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground, System::Windows::Media::NumberSubstitution ^ numberSubstitution);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush * System.Windows.Media.NumberSubstitution -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground, numberSubstitution)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +160,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground, class System.Windows.Media.NumberSubstitution numberSubstitution, float64 pixelsPerDip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground, System::Windows::Media::NumberSubstitution ^ numberSubstitution, double pixelsPerDip);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush * System.Windows.Media.NumberSubstitution * double -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground, numberSubstitution, pixelsPerDip)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +194,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground, class System.Windows.Media.NumberSubstitution numberSubstitution, valuetype System.Windows.Media.TextFormattingMode textFormattingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution,System.Windows.Media.TextFormattingMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground, System::Windows::Media::NumberSubstitution ^ numberSubstitution, System::Windows::Media::TextFormattingMode textFormattingMode);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush * System.Windows.Media.NumberSubstitution * System.Windows.Media.TextFormattingMode -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground, numberSubstitution, textFormattingMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +233,7 @@ Example of a formatted text string
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string textToFormat, class System.Globalization.CultureInfo culture, valuetype System.Windows.FlowDirection flowDirection, class System.Windows.Media.Typeface typeface, float64 emSize, class System.Windows.Media.Brush foreground, class System.Windows.Media.NumberSubstitution numberSubstitution, valuetype System.Windows.Media.TextFormattingMode textFormattingMode, float64 pixelsPerDip) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.#ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution,System.Windows.Media.TextFormattingMode,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormattedText(System::String ^ textToFormat, System::Globalization::CultureInfo ^ culture, System::Windows::FlowDirection flowDirection, System::Windows::Media::Typeface ^ typeface, double emSize, System::Windows::Media::Brush ^ foreground, System::Windows::Media::NumberSubstitution ^ numberSubstitution, System::Windows::Media::TextFormattingMode textFormattingMode, double pixelsPerDip);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.FormattedText : string * System.Globalization.CultureInfo * System.Windows.FlowDirection * System.Windows.Media.Typeface * double * System.Windows.Media.Brush * System.Windows.Media.NumberSubstitution * System.Windows.Media.TextFormattingMode * double -&gt; System.Windows.Media.FormattedText" Usage="new System.Windows.Media.FormattedText (textToFormat, culture, flowDirection, typeface, emSize, foreground, numberSubstitution, textFormattingMode, pixelsPerDip)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +270,7 @@ Example of a formatted text string
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Baseline As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Baseline { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Baseline : double" Usage="System.Windows.Media.FormattedText.Baseline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +291,7 @@ Example of a formatted text string
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.BuildGeometry(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildGeometry (origin As Point) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ BuildGeometry(System::Windows::Point origin);" />
+      <MemberSignature Language="F#" Value="member this.BuildGeometry : System.Windows.Point -&gt; System.Windows.Media.Geometry" Usage="formattedText.BuildGeometry origin" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -345,6 +354,7 @@ Example of an image brush applied to the stroke
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.BuildHighlightGeometry(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildHighlightGeometry (origin As Point) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ BuildHighlightGeometry(System::Windows::Point origin);" />
+      <MemberSignature Language="F#" Value="member this.BuildHighlightGeometry : System.Windows.Point -&gt; System.Windows.Media.Geometry" Usage="formattedText.BuildHighlightGeometry origin" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -389,6 +399,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.BuildHighlightGeometry(System.Windows.Point,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildHighlightGeometry (origin As Point, startIndex As Integer, count As Integer) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ BuildHighlightGeometry(System::Windows::Point origin, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.BuildHighlightGeometry : System.Windows.Point * int * int -&gt; System.Windows.Media.Geometry" Usage="formattedText.BuildHighlightGeometry (origin, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -424,6 +435,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Extent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extent As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Extent { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extent : double" Usage="System.Windows.Media.FormattedText.Extent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -451,6 +463,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); void set(System::Windows::FlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.FlowDirection with get, set" Usage="System.Windows.Media.FormattedText.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -471,6 +484,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.GetMaxTextWidths" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMaxTextWidths () As Double()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;double&gt; ^ GetMaxTextWidths();" />
+      <MemberSignature Language="F#" Value="member this.GetMaxTextWidths : unit -&gt; double[]" Usage="formattedText.GetMaxTextWidths " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -499,6 +513,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Media.FormattedText.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -519,6 +534,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.LineHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property LineHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LineHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.LineHeight : double with get, set" Usage="System.Windows.Media.FormattedText.LineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -546,6 +562,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.MaxLineCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLineCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLineCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLineCount : int with get, set" Usage="System.Windows.Media.FormattedText.MaxLineCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -573,6 +590,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.MaxTextHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTextHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxTextHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxTextHeight : double with get, set" Usage="System.Windows.Media.FormattedText.MaxTextHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -608,6 +626,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.MaxTextWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTextWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxTextWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxTextWidth : double with get, set" Usage="System.Windows.Media.FormattedText.MaxTextWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -647,6 +666,7 @@ Example of an image brush applied to the stroke and highlight
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.MinWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinWidth : double" Usage="System.Windows.Media.FormattedText.MinWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -687,6 +707,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.OverhangAfter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverhangAfter As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OverhangAfter { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverhangAfter : double" Usage="System.Windows.Media.FormattedText.OverhangAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -714,6 +735,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.OverhangLeading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverhangLeading As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OverhangLeading { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverhangLeading : double" Usage="System.Windows.Media.FormattedText.OverhangLeading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -741,6 +763,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.OverhangTrailing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverhangTrailing As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OverhangTrailing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.OverhangTrailing : double" Usage="System.Windows.Media.FormattedText.OverhangTrailing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -768,6 +791,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.PixelsPerDip" />
       <MemberSignature Language="VB.NET" Value="Public Property PixelsPerDip As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerDip : double with get, set" Usage="System.Windows.Media.FormattedText.PixelsPerDip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -797,6 +821,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetCulture(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCulture (culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCulture(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="member this.SetCulture : System.Globalization.CultureInfo -&gt; unit" Usage="formattedText.SetCulture culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -829,6 +854,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetCulture(System.Globalization.CultureInfo,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCulture (culture As CultureInfo, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCulture(System::Globalization::CultureInfo ^ culture, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetCulture : System.Globalization.CultureInfo * int * int -&gt; unit" Usage="formattedText.SetCulture (culture, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -874,6 +900,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontFamily(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontFamily (fontFamily As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontFamily(System::String ^ fontFamily);" />
+      <MemberSignature Language="F#" Value="member this.SetFontFamily : string -&gt; unit" Usage="formattedText.SetFontFamily fontFamily" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -903,6 +930,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontFamily(class System.Windows.Media.FontFamily fontFamily) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontFamily(System.Windows.Media.FontFamily)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontFamily(System::Windows::Media::FontFamily ^ fontFamily);" />
+      <MemberSignature Language="F#" Value="member this.SetFontFamily : System.Windows.Media.FontFamily -&gt; unit" Usage="formattedText.SetFontFamily fontFamily" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -933,6 +961,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontFamily(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontFamily (fontFamily As String, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontFamily(System::String ^ fontFamily, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontFamily : string * int * int -&gt; unit" Usage="formattedText.SetFontFamily (fontFamily, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -966,6 +995,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontFamily(class System.Windows.Media.FontFamily fontFamily, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontFamily(System.Windows.Media.FontFamily,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontFamily(System::Windows::Media::FontFamily ^ fontFamily, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontFamily : System.Windows.Media.FontFamily * int * int -&gt; unit" Usage="formattedText.SetFontFamily (fontFamily, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1009,6 +1039,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontSize(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontSize (emSize As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontSize(double emSize);" />
+      <MemberSignature Language="F#" Value="member this.SetFontSize : double -&gt; unit" Usage="formattedText.SetFontSize emSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1039,6 +1070,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontSize(System.Double,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontSize (emSize As Double, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontSize(double emSize, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontSize : double * int * int -&gt; unit" Usage="formattedText.SetFontSize (emSize, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1090,6 +1122,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontStretch(System.Windows.FontStretch)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontStretch (stretch As FontStretch)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontStretch(System::Windows::FontStretch stretch);" />
+      <MemberSignature Language="F#" Value="member this.SetFontStretch : System.Windows.FontStretch -&gt; unit" Usage="formattedText.SetFontStretch stretch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1122,6 +1155,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontStretch(System.Windows.FontStretch,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontStretch (stretch As FontStretch, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontStretch(System::Windows::FontStretch stretch, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontStretch : System.Windows.FontStretch * int * int -&gt; unit" Usage="formattedText.SetFontStretch (stretch, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1169,6 +1203,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontStyle(System.Windows.FontStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontStyle (style As FontStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontStyle(System::Windows::FontStyle style);" />
+      <MemberSignature Language="F#" Value="member this.SetFontStyle : System.Windows.FontStyle -&gt; unit" Usage="formattedText.SetFontStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1201,6 +1236,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontStyle(System.Windows.FontStyle,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontStyle (style As FontStyle, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontStyle(System::Windows::FontStyle style, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontStyle : System.Windows.FontStyle * int * int -&gt; unit" Usage="formattedText.SetFontStyle (style, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1253,6 +1289,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontTypeface(class System.Windows.Media.Typeface typeface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontTypeface(System.Windows.Media.Typeface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontTypeface(System::Windows::Media::Typeface ^ typeface);" />
+      <MemberSignature Language="F#" Value="member this.SetFontTypeface : System.Windows.Media.Typeface -&gt; unit" Usage="formattedText.SetFontTypeface typeface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1284,6 +1321,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontTypeface(class System.Windows.Media.Typeface typeface, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontTypeface(System.Windows.Media.Typeface,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontTypeface(System::Windows::Media::Typeface ^ typeface, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontTypeface : System.Windows.Media.Typeface * int * int -&gt; unit" Usage="formattedText.SetFontTypeface (typeface, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1329,6 +1367,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontWeight(System.Windows.FontWeight)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontWeight (weight As FontWeight)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontWeight(System::Windows::FontWeight weight);" />
+      <MemberSignature Language="F#" Value="member this.SetFontWeight : System.Windows.FontWeight -&gt; unit" Usage="formattedText.SetFontWeight weight" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1359,6 +1398,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetFontWeight(System.Windows.FontWeight,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFontWeight (weight As FontWeight, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontWeight(System::Windows::FontWeight weight, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetFontWeight : System.Windows.FontWeight * int * int -&gt; unit" Usage="formattedText.SetFontWeight (weight, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1410,6 +1450,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetForegroundBrush(System.Windows.Media.Brush)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetForegroundBrush (foregroundBrush As Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetForegroundBrush(System::Windows::Media::Brush ^ foregroundBrush);" />
+      <MemberSignature Language="F#" Value="member this.SetForegroundBrush : System.Windows.Media.Brush -&gt; unit" Usage="formattedText.SetForegroundBrush foregroundBrush" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1440,6 +1481,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetForegroundBrush(System.Windows.Media.Brush,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetForegroundBrush (foregroundBrush As Brush, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetForegroundBrush(System::Windows::Media::Brush ^ foregroundBrush, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetForegroundBrush : System.Windows.Media.Brush * int * int -&gt; unit" Usage="formattedText.SetForegroundBrush (foregroundBrush, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1482,6 +1524,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetMaxTextWidths(System.Double[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMaxTextWidths (maxTextWidths As Double())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMaxTextWidths(cli::array &lt;double&gt; ^ maxTextWidths);" />
+      <MemberSignature Language="F#" Value="member this.SetMaxTextWidths : double[] -&gt; unit" Usage="formattedText.SetMaxTextWidths maxTextWidths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1520,6 +1563,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNumberSubstitution(class System.Windows.Media.NumberSubstitution numberSubstitution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetNumberSubstitution(System.Windows.Media.NumberSubstitution)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNumberSubstitution(System::Windows::Media::NumberSubstitution ^ numberSubstitution);" />
+      <MemberSignature Language="F#" Value="member this.SetNumberSubstitution : System.Windows.Media.NumberSubstitution -&gt; unit" Usage="formattedText.SetNumberSubstitution numberSubstitution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1549,6 +1593,7 @@ Minimum text width
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNumberSubstitution(class System.Windows.Media.NumberSubstitution numberSubstitution, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetNumberSubstitution(System.Windows.Media.NumberSubstitution,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNumberSubstitution(System::Windows::Media::NumberSubstitution ^ numberSubstitution, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetNumberSubstitution : System.Windows.Media.NumberSubstitution * int * int -&gt; unit" Usage="formattedText.SetNumberSubstitution (numberSubstitution, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1592,6 +1637,7 @@ Minimum text width
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetTextDecorations(System.Windows.TextDecorationCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetTextDecorations (textDecorations As TextDecorationCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTextDecorations(System::Windows::TextDecorationCollection ^ textDecorations);" />
+      <MemberSignature Language="F#" Value="member this.SetTextDecorations : System.Windows.TextDecorationCollection -&gt; unit" Usage="formattedText.SetTextDecorations textDecorations" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1629,6 +1675,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FormattedText.SetTextDecorations(System.Windows.TextDecorationCollection,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetTextDecorations (textDecorations As TextDecorationCollection, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTextDecorations(System::Windows::TextDecorationCollection ^ textDecorations, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.SetTextDecorations : System.Windows.TextDecorationCollection * int * int -&gt; unit" Usage="formattedText.SetTextDecorations (textDecorations, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1670,6 +1717,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Windows.Media.FormattedText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1698,6 +1746,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.TextAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlignment : System.Windows.TextAlignment with get, set" Usage="System.Windows.Media.FormattedText.TextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1718,6 +1767,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Trimming" />
       <MemberSignature Language="VB.NET" Value="Public Property Trimming As TextTrimming" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextTrimming Trimming { System::Windows::TextTrimming get(); void set(System::Windows::TextTrimming value); };" />
+      <MemberSignature Language="F#" Value="member this.Trimming : System.Windows.TextTrimming with get, set" Usage="System.Windows.Media.FormattedText.Trimming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1738,6 +1788,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.FormattedText.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1765,6 +1816,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FormattedText.WidthIncludingTrailingWhitespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WidthIncludingTrailingWhitespace As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double WidthIncludingTrailingWhitespace { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.WidthIncludingTrailingWhitespace : double" Usage="System.Windows.Media.FormattedText.WidthIncludingTrailingWhitespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

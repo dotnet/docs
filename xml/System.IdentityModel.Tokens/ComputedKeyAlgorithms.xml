@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ComputedKeyAlgorithms" />
   <TypeSignature Language="VB.NET" Value="Public Class ComputedKeyAlgorithms" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComputedKeyAlgorithms abstract sealed" />
+  <TypeSignature Language="F#" Value="type ComputedKeyAlgorithms = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.ComputedKeyAlgorithms.Psha1" />
       <MemberSignature Language="VB.NET" Value="Public Const Psha1 As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Psha1;" />
+      <MemberSignature Language="F#" Value="val mutable Psha1 : string" Usage="System.IdentityModel.Tokens.ComputedKeyAlgorithms.Psha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

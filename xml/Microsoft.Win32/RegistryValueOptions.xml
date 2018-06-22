@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryValueOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum RegistryValueOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class RegistryValueOptions" />
+  <TypeSignature Language="F#" Value="type RegistryValueOptions = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueOptions.DoNotExpandEnvironmentNames" />
       <MemberSignature Language="VB.NET" Value="DoNotExpandEnvironmentNames" />
       <MemberSignature Language="C++ CLI" Value="DoNotExpandEnvironmentNames" />
+      <MemberSignature Language="F#" Value="DoNotExpandEnvironmentNames = 1" Usage="Microsoft.Win32.RegistryValueOptions.DoNotExpandEnvironmentNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Win32.RegistryValueOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>

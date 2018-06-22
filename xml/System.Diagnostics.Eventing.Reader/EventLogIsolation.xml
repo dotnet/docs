@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogIsolation" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogIsolation" />
+  <TypeSignature Language="F#" Value="type EventLogIsolation = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.Application" />
       <MemberSignature Language="VB.NET" Value="Application" />
       <MemberSignature Language="C++ CLI" Value="Application" />
+      <MemberSignature Language="F#" Value="Application = 0" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 2" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 1" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

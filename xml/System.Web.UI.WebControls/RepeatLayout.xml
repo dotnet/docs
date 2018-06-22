@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeatLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum RepeatLayout" />
   <TypeSignature Language="C++ CLI" Value="public enum class RepeatLayout" />
+  <TypeSignature Language="F#" Value="type RepeatLayout = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.Flow" />
       <MemberSignature Language="VB.NET" Value="Flow" />
       <MemberSignature Language="C++ CLI" Value="Flow" />
+      <MemberSignature Language="F#" Value="Flow = 1" Usage="System.Web.UI.WebControls.RepeatLayout.Flow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.OrderedList" />
       <MemberSignature Language="VB.NET" Value="OrderedList" />
       <MemberSignature Language="C++ CLI" Value="OrderedList" />
+      <MemberSignature Language="F#" Value="OrderedList = 3" Usage="System.Web.UI.WebControls.RepeatLayout.OrderedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.Table" />
       <MemberSignature Language="VB.NET" Value="Table" />
       <MemberSignature Language="C++ CLI" Value="Table" />
+      <MemberSignature Language="F#" Value="Table = 0" Usage="System.Web.UI.WebControls.RepeatLayout.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatLayout.UnorderedList" />
       <MemberSignature Language="VB.NET" Value="UnorderedList" />
       <MemberSignature Language="C++ CLI" Value="UnorderedList" />
+      <MemberSignature Language="F#" Value="UnorderedList = 2" Usage="System.Web.UI.WebControls.RepeatLayout.UnorderedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

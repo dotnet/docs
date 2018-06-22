@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ChannelCacheSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelCacheSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelCacheSettings" />
+  <TypeSignature Language="F#" Value="type ChannelCacheSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ChannelCacheSettings.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Activities.ChannelCacheSettings.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ChannelCacheSettings.LeaseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LeaseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.LeaseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Activities.ChannelCacheSettings.LeaseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInCache As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInCache { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInCache : int with get, set" Usage="System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

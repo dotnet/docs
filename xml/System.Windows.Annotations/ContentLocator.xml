@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentLocator&#xA;Inherits ContentLocatorBase&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentLocator sealed : System::Windows::Annotations::ContentLocatorBase, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type ContentLocator = class&#xA;    inherit ContentLocatorBase&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocator.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="contentLocator.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocator.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
+      <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="contentLocator.GetSchema " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocator.Parts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parts As Collection(Of ContentLocatorPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocatorPart ^&gt; ^ Parts { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::ContentLocatorPart ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parts : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.ContentLocatorPart&gt;" Usage="System.Windows.Annotations.ContentLocator.Parts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocator.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="contentLocator.ReadXml reader" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocator.StartsWith(System.Windows.Annotations.ContentLocator)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartsWith (locator As ContentLocator) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::Windows::Annotations::ContentLocator ^ locator);" />
+      <MemberSignature Language="F#" Value="member this.StartsWith : System.Windows.Annotations.ContentLocator -&gt; bool" Usage="contentLocator.StartsWith locator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocator.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="contentLocator.WriteXml writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>

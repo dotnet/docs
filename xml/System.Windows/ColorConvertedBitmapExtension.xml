@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ColorConvertedBitmapExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ColorConvertedBitmapExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ColorConvertedBitmapExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type ColorConvertedBitmapExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ColorConvertedBitmapExtension.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (image As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorConvertedBitmapExtension(System::Object ^ image);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ColorConvertedBitmapExtension : obj -&gt; System.Windows.ColorConvertedBitmapExtension" Usage="new System.Windows.ColorConvertedBitmapExtension image" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="colorConvertedBitmapExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

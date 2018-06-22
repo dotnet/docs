@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeArithmeticOperation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeArithmeticOperation&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeArithmeticOperation abstract : Mono::CodeGeneration::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeArithmeticOperation = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArithmeticOperation.#ctor(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exp1 As CodeExpression, exp2 As CodeExpression, symbol As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArithmeticOperation(Mono::CodeGeneration::CodeExpression ^ exp1, Mono::CodeGeneration::CodeExpression ^ exp2, System::String ^ symbol);" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeArithmeticOperation : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression * string -&gt; Mono.CodeGeneration.CodeArithmeticOperation" Usage="new Mono.CodeGeneration.CodeArithmeticOperation (exp1, exp2, symbol)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeArithmeticOperation.exp1" />
       <MemberSignature Language="VB.NET" Value="Protected exp1 As CodeExpression " />
       <MemberSignature Language="C++ CLI" Value="protected: Mono::CodeGeneration::CodeExpression ^ exp1;" />
+      <MemberSignature Language="F#" Value="val mutable exp1 : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeArithmeticOperation.exp1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeArithmeticOperation.exp2" />
       <MemberSignature Language="VB.NET" Value="Protected exp2 As CodeExpression " />
       <MemberSignature Language="C++ CLI" Value="protected: Mono::CodeGeneration::CodeExpression ^ exp2;" />
+      <MemberSignature Language="F#" Value="val mutable exp2 : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeArithmeticOperation.exp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArithmeticOperation.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeArithmeticOperation.GetResultType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeArithmeticOperation.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeArithmeticOperation.PrintCode cp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeArithmeticOperation.symbol" />
       <MemberSignature Language="VB.NET" Value="Protected symbol As String " />
       <MemberSignature Language="C++ CLI" Value="protected: System::String ^ symbol;" />
+      <MemberSignature Language="F#" Value="val mutable symbol : string" Usage="Mono.CodeGeneration.CodeArithmeticOperation.symbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeArithmeticOperation.t1" />
       <MemberSignature Language="VB.NET" Value="Protected t1 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ t1;" />
+      <MemberSignature Language="F#" Value="val mutable t1 : Type" Usage="Mono.CodeGeneration.CodeArithmeticOperation.t1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:Mono.CodeGeneration.CodeArithmeticOperation.t2" />
       <MemberSignature Language="VB.NET" Value="Protected t2 As Type " />
       <MemberSignature Language="C++ CLI" Value="protected: Type ^ t2;" />
+      <MemberSignature Language="F#" Value="val mutable t2 : Type" Usage="Mono.CodeGeneration.CodeArithmeticOperation.t2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

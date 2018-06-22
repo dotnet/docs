@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreateUserErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateUserErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateUserErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CreateUserErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CreateUserErrorEventArgs.#ctor(System.Web.Security.MembershipCreateStatus)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As MembershipCreateStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateUserErrorEventArgs(System::Web::Security::MembershipCreateStatus s);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CreateUserErrorEventArgs : System.Web.Security.MembershipCreateStatus -&gt; System.Web.UI.WebControls.CreateUserErrorEventArgs" Usage="new System.Web.UI.WebControls.CreateUserErrorEventArgs s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CreateUserErrorEventArgs.CreateUserError" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateUserError As MembershipCreateStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipCreateStatus CreateUserError { System::Web::Security::MembershipCreateStatus get(); void set(System::Web::Security::MembershipCreateStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateUserError : System.Web.Security.MembershipCreateStatus with get, set" Usage="System.Web.UI.WebControls.CreateUserErrorEventArgs.CreateUserError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

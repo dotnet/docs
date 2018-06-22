@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ServerValidateEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ServerValidateEventHandler(source As Object, args As ServerValidateEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ServerValidateEventHandler(System::Object ^ source, ServerValidateEventArgs ^ args);" />
+  <TypeSignature Language="F#" Value="type ServerValidateEventHandler = delegate of obj * ServerValidateEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

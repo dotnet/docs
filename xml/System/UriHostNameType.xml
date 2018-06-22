@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriHostNameType" />
   <TypeSignature Language="VB.NET" Value="Public Enum UriHostNameType" />
   <TypeSignature Language="C++ CLI" Value="public enum class UriHostNameType" />
+  <TypeSignature Language="F#" Value="type UriHostNameType = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriHostNameType.Basic" />
       <MemberSignature Language="VB.NET" Value="Basic" />
       <MemberSignature Language="C++ CLI" Value="Basic" />
+      <MemberSignature Language="F#" Value="Basic = 1" Usage="System.UriHostNameType.Basic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriHostNameType.Dns" />
       <MemberSignature Language="VB.NET" Value="Dns" />
       <MemberSignature Language="C++ CLI" Value="Dns" />
+      <MemberSignature Language="F#" Value="Dns = 2" Usage="System.UriHostNameType.Dns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriHostNameType.IPv4" />
       <MemberSignature Language="VB.NET" Value="IPv4" />
       <MemberSignature Language="C++ CLI" Value="IPv4" />
+      <MemberSignature Language="F#" Value="IPv4 = 3" Usage="System.UriHostNameType.IPv4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriHostNameType.IPv6" />
       <MemberSignature Language="VB.NET" Value="IPv6" />
       <MemberSignature Language="C++ CLI" Value="IPv6" />
+      <MemberSignature Language="F#" Value="IPv6 = 4" Usage="System.UriHostNameType.IPv6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriHostNameType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.UriHostNameType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

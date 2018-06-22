@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityTransactionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NativeActivityTransactionContext&#xA;Inherits NativeActivityContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityTransactionContext sealed : System::Activities::NativeActivityContext" />
+  <TypeSignature Language="F#" Value="type NativeActivityTransactionContext = class&#xA;    inherit NativeActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRuntimeTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityTransactionContext.SetRuntimeTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRuntimeTransaction(System::Transactions::Transaction ^ transaction);" />
+      <MemberSignature Language="F#" Value="member this.SetRuntimeTransaction : System.Transactions.Transaction -&gt; unit" Usage="nativeActivityTransactionContext.SetRuntimeTransaction transaction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

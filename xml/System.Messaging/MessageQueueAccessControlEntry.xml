@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueAccessControlEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageQueueAccessControlEntry&#xA;Inherits AccessControlEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageQueueAccessControlEntry : System::Messaging::AccessControlEntry" />
+  <TypeSignature Language="F#" Value="type MessageQueueAccessControlEntry = class&#xA;    inherit AccessControlEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Messaging.Trustee trustee, valuetype System.Messaging.MessageQueueAccessRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueAccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.MessageQueueAccessRights)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueueAccessControlEntry(System::Messaging::Trustee ^ trustee, System::Messaging::MessageQueueAccessRights rights);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueueAccessControlEntry : System.Messaging.Trustee * System.Messaging.MessageQueueAccessRights -&gt; System.Messaging.MessageQueueAccessControlEntry" Usage="new System.Messaging.MessageQueueAccessControlEntry (trustee, rights)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Messaging.Trustee trustee, valuetype System.Messaging.MessageQueueAccessRights rights, valuetype System.Messaging.AccessControlEntryType entryType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueAccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.MessageQueueAccessRights,System.Messaging.AccessControlEntryType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueueAccessControlEntry(System::Messaging::Trustee ^ trustee, System::Messaging::MessageQueueAccessRights rights, System::Messaging::AccessControlEntryType entryType);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueueAccessControlEntry : System.Messaging.Trustee * System.Messaging.MessageQueueAccessRights * System.Messaging.AccessControlEntryType -&gt; System.Messaging.MessageQueueAccessControlEntry" Usage="new System.Messaging.MessageQueueAccessControlEntry (trustee, rights, entryType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageQueueAccessRights As MessageQueueAccessRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueueAccessRights MessageQueueAccessRights { System::Messaging::MessageQueueAccessRights get(); void set(System::Messaging::MessageQueueAccessRights value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageQueueAccessRights : System.Messaging.MessageQueueAccessRights with get, set" Usage="System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

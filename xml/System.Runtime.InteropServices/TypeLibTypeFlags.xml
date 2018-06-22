@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibTypeFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum TypeLibTypeFlags" />
   <TypeSignature Language="C++ CLI" Value="public enum class TypeLibTypeFlags" />
+  <TypeSignature Language="F#" Value="type TypeLibTypeFlags = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable" />
       <MemberSignature Language="VB.NET" Value="FAggregatable" />
       <MemberSignature Language="C++ CLI" Value="FAggregatable" />
+      <MemberSignature Language="F#" Value="FAggregatable = 1024" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject" />
       <MemberSignature Language="VB.NET" Value="FAppObject" />
       <MemberSignature Language="C++ CLI" Value="FAppObject" />
+      <MemberSignature Language="F#" Value="FAppObject = 1" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate" />
       <MemberSignature Language="VB.NET" Value="FCanCreate" />
       <MemberSignature Language="C++ CLI" Value="FCanCreate" />
+      <MemberSignature Language="F#" Value="FCanCreate = 2" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FControl" />
       <MemberSignature Language="VB.NET" Value="FControl" />
       <MemberSignature Language="C++ CLI" Value="FControl" />
+      <MemberSignature Language="F#" Value="FControl = 32" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable" />
       <MemberSignature Language="VB.NET" Value="FDispatchable" />
       <MemberSignature Language="C++ CLI" Value="FDispatchable" />
+      <MemberSignature Language="F#" Value="FDispatchable = 4096" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDual" />
       <MemberSignature Language="VB.NET" Value="FDual" />
       <MemberSignature Language="C++ CLI" Value="FDual" />
+      <MemberSignature Language="F#" Value="FDual = 64" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FHidden" />
       <MemberSignature Language="VB.NET" Value="FHidden" />
       <MemberSignature Language="C++ CLI" Value="FHidden" />
+      <MemberSignature Language="F#" Value="FHidden = 16" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FHidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed" />
       <MemberSignature Language="VB.NET" Value="FLicensed" />
       <MemberSignature Language="C++ CLI" Value="FLicensed" />
+      <MemberSignature Language="F#" Value="FLicensed = 4" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible" />
       <MemberSignature Language="VB.NET" Value="FNonExtensible" />
       <MemberSignature Language="C++ CLI" Value="FNonExtensible" />
+      <MemberSignature Language="F#" Value="FNonExtensible = 128" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -270,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation" />
       <MemberSignature Language="VB.NET" Value="FOleAutomation" />
       <MemberSignature Language="C++ CLI" Value="FOleAutomation" />
+      <MemberSignature Language="F#" Value="FOleAutomation = 256" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId" />
       <MemberSignature Language="VB.NET" Value="FPreDeclId" />
       <MemberSignature Language="C++ CLI" Value="FPreDeclId" />
+      <MemberSignature Language="F#" Value="FPreDeclId = 8" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -320,6 +332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable" />
       <MemberSignature Language="VB.NET" Value="FReplaceable" />
       <MemberSignature Language="C++ CLI" Value="FReplaceable" />
+      <MemberSignature Language="F#" Value="FReplaceable = 2048" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -345,6 +358,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted" />
       <MemberSignature Language="VB.NET" Value="FRestricted" />
       <MemberSignature Language="C++ CLI" Value="FRestricted" />
+      <MemberSignature Language="F#" Value="FRestricted = 512" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -370,6 +384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind" />
       <MemberSignature Language="VB.NET" Value="FReverseBind" />
       <MemberSignature Language="C++ CLI" Value="FReverseBind" />
+      <MemberSignature Language="F#" Value="FReverseBind = 8192" Usage="System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

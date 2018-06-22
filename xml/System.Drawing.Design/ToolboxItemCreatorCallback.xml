@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function ToolboxItemCreatorCallback(serializedObject As Object, format As String) As ToolboxItem " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Drawing::Design::ToolboxItem ^ ToolboxItemCreatorCallback(System::Object ^ serializedObject, System::String ^ format);" />
+  <TypeSignature Language="F#" Value="type ToolboxItemCreatorCallback = delegate of obj * string -&gt; ToolboxItem" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

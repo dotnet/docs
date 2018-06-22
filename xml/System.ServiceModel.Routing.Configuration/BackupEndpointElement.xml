@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.BackupEndpointElement" />
   <TypeSignature Language="VB.NET" Value="Public Class BackupEndpointElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BackupEndpointElement : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type BackupEndpointElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.BackupEndpointElement.EndpointName" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointName : string with get, set" Usage="System.ServiceModel.Routing.Configuration.BackupEndpointElement.EndpointName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

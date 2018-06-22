@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingChannel" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingChannel" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingChannel abstract" />
+  <TypeSignature Language="F#" Value="type TrackingChannel = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub InstanceCompletedOrTerminated ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void InstanceCompletedOrTerminated();" />
+      <MemberSignature Language="F#" Value="abstract member InstanceCompletedOrTerminated : unit -&gt; unit" Usage="trackingChannel.InstanceCompletedOrTerminated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.Send(System.Workflow.Runtime.Tracking.TrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Send (record As TrackingRecord)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Send(System::Workflow::Runtime::Tracking::TrackingRecord ^ record);" />
+      <MemberSignature Language="F#" Value="abstract member Send : System.Workflow.Runtime.Tracking.TrackingRecord -&gt; unit" Usage="trackingChannel.Send record" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

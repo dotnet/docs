@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.EmissiveMaterial" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EmissiveMaterial&#xA;Inherits Material" />
   <TypeSignature Language="C++ CLI" Value="public ref class EmissiveMaterial sealed : System::Windows::Media::Media3D::Material" />
+  <TypeSignature Language="F#" Value="type EmissiveMaterial = class&#xA;    inherit Material" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush brush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.EmissiveMaterial.#ctor(System.Windows.Media.Brush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EmissiveMaterial(System::Windows::Media::Brush ^ brush);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.EmissiveMaterial : System.Windows.Media.Brush -&gt; System.Windows.Media.Media3D.EmissiveMaterial" Usage="new System.Windows.Media.Media3D.EmissiveMaterial brush" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.EmissiveMaterial.Brush" />
       <MemberSignature Language="VB.NET" Value="Public Property Brush As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Brush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Brush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.Media3D.EmissiveMaterial.Brush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.EmissiveMaterial.BrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrushProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BrushProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.EmissiveMaterial.BrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.EmissiveMaterial.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As EmissiveMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::EmissiveMaterial ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.EmissiveMaterial" Usage="emissiveMaterial.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.EmissiveMaterial.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As EmissiveMaterial" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::EmissiveMaterial ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.EmissiveMaterial" Usage="emissiveMaterial.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.EmissiveMaterial.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Windows.Media.Color with get, set" Usage="System.Windows.Media.Media3D.EmissiveMaterial.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.EmissiveMaterial.ColorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.EmissiveMaterial.ColorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.EmissiveMaterial.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="emissiveMaterial.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

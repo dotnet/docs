@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Action`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub Action(Of In T)(obj As T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public delegate void Action(T obj);" />
+  <TypeSignature Language="F#" Value="type Action&lt;'T&gt; = delegate of 'T -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

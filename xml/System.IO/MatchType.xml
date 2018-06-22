@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MatchType" />
   <TypeSignature Language="VB.NET" Value="Public Enum MatchType" />
   <TypeSignature Language="C++ CLI" Value="public enum class MatchType" />
+  <TypeSignature Language="F#" Value="type MatchType = " />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MatchType.Simple" />
       <MemberSignature Language="VB.NET" Value="Simple" />
       <MemberSignature Language="C++ CLI" Value="Simple" />
+      <MemberSignature Language="F#" Value="Simple = 0" Usage="System.IO.MatchType.Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MatchType.Win32" />
       <MemberSignature Language="VB.NET" Value="Win32" />
       <MemberSignature Language="C++ CLI" Value="Win32" />
+      <MemberSignature Language="F#" Value="Win32 = 1" Usage="System.IO.MatchType.Win32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

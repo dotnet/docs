@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.InterfaceMapping" />
   <TypeSignature Language="VB.NET" Value="Public Structure InterfaceMapping" />
   <TypeSignature Language="C++ CLI" Value="public value class InterfaceMapping" />
+  <TypeSignature Language="F#" Value="type InterfaceMapping = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.InterfaceMapping.InterfaceMethods" />
       <MemberSignature Language="VB.NET" Value="Public InterfaceMethods As MethodInfo() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ InterfaceMethods;" />
+      <MemberSignature Language="F#" Value="val mutable InterfaceMethods : System.Reflection.MethodInfo[]" Usage="System.Reflection.InterfaceMapping.InterfaceMethods" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.InterfaceMapping.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public InterfaceType As Type " />
       <MemberSignature Language="C++ CLI" Value="public: Type ^ InterfaceType;" />
+      <MemberSignature Language="F#" Value="val mutable InterfaceType : Type" Usage="System.Reflection.InterfaceMapping.InterfaceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.InterfaceMapping.TargetMethods" />
       <MemberSignature Language="VB.NET" Value="Public TargetMethods As MethodInfo() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ TargetMethods;" />
+      <MemberSignature Language="F#" Value="val mutable TargetMethods : System.Reflection.MethodInfo[]" Usage="System.Reflection.InterfaceMapping.TargetMethods" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.InterfaceMapping.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public TargetType As Type " />
       <MemberSignature Language="C++ CLI" Value="public: Type ^ TargetType;" />
+      <MemberSignature Language="F#" Value="val mutable TargetType : Type" Usage="System.Reflection.InterfaceMapping.TargetType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>

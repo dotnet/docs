@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationSpan" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReplicationSpan" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReplicationSpan" />
+  <TypeSignature Language="F#" Value="type ReplicationSpan = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationSpan.InterSite" />
       <MemberSignature Language="VB.NET" Value="InterSite" />
       <MemberSignature Language="C++ CLI" Value="InterSite" />
+      <MemberSignature Language="F#" Value="InterSite = 1" Usage="System.DirectoryServices.ActiveDirectory.ReplicationSpan.InterSite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ReplicationSpan.IntraSite" />
       <MemberSignature Language="VB.NET" Value="IntraSite" />
       <MemberSignature Language="C++ CLI" Value="IntraSite" />
+      <MemberSignature Language="F#" Value="IntraSite = 0" Usage="System.DirectoryServices.ActiveDirectory.ReplicationSpan.IntraSite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

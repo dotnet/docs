@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class PerformanceCounterPermissionEntry" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterPermissionEntry" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterPermissionEntry = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionEntry.#ctor(System.Diagnostics.PerformanceCounterPermissionAccess,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As PerformanceCounterPermissionAccess, machineName As String, categoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermissionEntry(System::Diagnostics::PerformanceCounterPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ categoryName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermissionEntry : System.Diagnostics.PerformanceCounterPermissionAccess * string * string -&gt; System.Diagnostics.PerformanceCounterPermissionEntry" Usage="new System.Diagnostics.PerformanceCounterPermissionEntry (permissionAccess, machineName, categoryName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string" Usage="System.Diagnostics.PerformanceCounterPermissionEntry.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.PerformanceCounterPermissionEntry.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionEntry.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccess As PerformanceCounterPermissionAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterPermissionAccess PermissionAccess { System::Diagnostics::PerformanceCounterPermissionAccess get(); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Diagnostics.PerformanceCounterPermissionAccess" Usage="System.Diagnostics.PerformanceCounterPermissionEntry.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

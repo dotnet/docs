@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.AssemblyResourceLoader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyResourceLoader&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyResourceLoader sealed : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type AssemblyResourceLoader = class&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@ WebResource.axd?d=<encrypted identifier>&t=<time stamp value>
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.AssemblyResourceLoader.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>

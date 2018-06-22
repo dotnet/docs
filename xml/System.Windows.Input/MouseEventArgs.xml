@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class MouseEventArgs&#xA;Inherits InputEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class MouseEventArgs : System::Windows::Input::InputEventArgs" />
+  <TypeSignature Language="F#" Value="type MouseEventArgs = class&#xA;    inherit InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mouse As MouseDevice, timestamp As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseEventArgs(System::Windows::Input::MouseDevice ^ mouse, int timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseEventArgs : System.Windows.Input.MouseDevice * int -&gt; System.Windows.Input.MouseEventArgs" Usage="new System.Windows.Input.MouseEventArgs (mouse, timestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.MouseDevice mouse, int32 timestamp, class System.Windows.Input.StylusDevice stylusDevice) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32,System.Windows.Input.StylusDevice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseEventArgs(System::Windows::Input::MouseDevice ^ mouse, int timestamp, System::Windows::Input::StylusDevice ^ stylusDevice);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseEventArgs : System.Windows.Input.MouseDevice * int * System.Windows.Input.StylusDevice -&gt; System.Windows.Input.MouseEventArgs" Usage="new System.Windows.Input.MouseEventArgs (mouse, timestamp, stylusDevice)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseEventArgs.GetPosition(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (relativeTo As IInputElement) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="mouseEventArgs.GetPosition relativeTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="mouseEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.LeftButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeftButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState LeftButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeftButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseEventArgs.LeftButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.MiddleButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MiddleButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState MiddleButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.MiddleButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseEventArgs.MiddleButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.MouseDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MouseDevice As MouseDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseDevice ^ MouseDevice { System::Windows::Input::MouseDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MouseDevice : System.Windows.Input.MouseDevice" Usage="System.Windows.Input.MouseEventArgs.MouseDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.RightButton" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightButton As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState RightButton { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RightButton : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseEventArgs.RightButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.StylusDevice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDevice As StylusDevice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusDevice ^ StylusDevice { System::Windows::Input::StylusDevice ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StylusDevice : System.Windows.Input.StylusDevice" Usage="System.Windows.Input.MouseEventArgs.StylusDevice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.XButton1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XButton1 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState XButton1 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton1 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseEventArgs.XButton1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -394,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseEventArgs.XButton2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XButton2 As MouseButtonState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseButtonState XButton2 { System::Windows::Input::MouseButtonState get(); };" />
+      <MemberSignature Language="F#" Value="member this.XButton2 : System.Windows.Input.MouseButtonState" Usage="System.Windows.Input.MouseEventArgs.XButton2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

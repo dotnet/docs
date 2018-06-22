@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.WebSockets.AspNetWebSocketOptions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetWebSocketOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class AspNetWebSocketOptions sealed" />
+  <TypeSignature Language="F#" Value="type AspNetWebSocketOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketOptions.RequireSameOrigin" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireSameOrigin As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSameOrigin { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireSameOrigin : bool with get, set" Usage="System.Web.WebSockets.AspNetWebSocketOptions.RequireSameOrigin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketOptions.SubProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property SubProtocol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubProtocol { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubProtocol : string with get, set" Usage="System.Web.WebSockets.AspNetWebSocketOptions.SubProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

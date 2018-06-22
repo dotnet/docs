@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceSuspendedRecord" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowInstanceSuspendedRecord&#xA;Inherits WorkflowInstanceRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstanceSuspendedRecord sealed : System::Activities::Tracking::WorkflowInstanceRecord" />
+  <TypeSignature Language="F#" Value="type WorkflowInstanceSuspendedRecord = class&#xA;    inherit WorkflowInstanceRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, reason As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceSuspendedRecord(Guid instanceId, System::String ^ activityDefinitionId, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord : Guid * string * string -&gt; System.Activities.Tracking.WorkflowInstanceSuspendedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord (instanceId, activityDefinitionId, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.Int64,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, reason As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceSuspendedRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord : Guid * int64 * string * string -&gt; System.Activities.Tracking.WorkflowInstanceSuspendedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord (instanceId, recordNumber, activityDefinitionId, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.String,System.String,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, activityDefinitionId As String, reason As String, workflowDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceSuspendedRecord(Guid instanceId, System::String ^ activityDefinitionId, System::String ^ reason, System::Activities::WorkflowIdentity ^ workflowDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord : Guid * string * string * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceSuspendedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord (instanceId, activityDefinitionId, reason, workflowDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.Int64,System.String,System.String,System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, recordNumber As Long, activityDefinitionId As String, reason As String, workflowDefinitionIdentity As WorkflowIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowInstanceSuspendedRecord(Guid instanceId, long recordNumber, System::String ^ activityDefinitionId, System::String ^ reason, System::Activities::WorkflowIdentity ^ workflowDefinitionIdentity);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord : Guid * int64 * string * string * System.Activities.WorkflowIdentity -&gt; System.Activities.Tracking.WorkflowInstanceSuspendedRecord" Usage="new System.Activities.Tracking.WorkflowInstanceSuspendedRecord (instanceId, recordNumber, activityDefinitionId, reason, workflowDefinitionIdentity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Clone () As TrackingRecord" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::Tracking::TrackingRecord ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="workflowInstanceSuspendedRecord.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reason { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : string" Usage="System.Activities.Tracking.WorkflowInstanceSuspendedRecord.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceSuspendedRecord.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="workflowInstanceSuspendedRecord.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

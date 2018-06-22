@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class LegendCellColumnCollection&#xA;Inherits ChartNamedElementCollection(Of LegendCellColumn)" />
   <TypeSignature Language="C++ CLI" Value="public ref class LegendCellColumnCollection : System::Windows::Forms::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::LegendCellColumn ^&gt;" />
+  <TypeSignature Language="F#" Value="type LegendCellColumnCollection = class&#xA;    inherit ChartNamedElementCollection&lt;LegendCellColumn&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="legendCellColumnCollection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

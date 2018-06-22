@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.MemberAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemberAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class MemberAttributes" />
+  <TypeSignature Language="F#" Value="type MemberAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Abstract" />
       <MemberSignature Language="VB.NET" Value="Abstract" />
       <MemberSignature Language="C++ CLI" Value="Abstract" />
+      <MemberSignature Language="F#" Value="Abstract = 1" Usage="System.CodeDom.MemberAttributes.Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.AccessMask" />
       <MemberSignature Language="VB.NET" Value="AccessMask" />
       <MemberSignature Language="C++ CLI" Value="AccessMask" />
+      <MemberSignature Language="F#" Value="AccessMask = 61440" Usage="System.CodeDom.MemberAttributes.AccessMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="C++ CLI" Value="Assembly" />
+      <MemberSignature Language="F#" Value="Assembly = 4096" Usage="System.CodeDom.MemberAttributes.Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Const" />
       <MemberSignature Language="VB.NET" Value="Const" />
       <MemberSignature Language="C++ CLI" Value="Const" />
+      <MemberSignature Language="F#" Value="Const = 5" Usage="System.CodeDom.MemberAttributes.Const" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Family" />
       <MemberSignature Language="VB.NET" Value="Family" />
       <MemberSignature Language="C++ CLI" Value="Family" />
+      <MemberSignature Language="F#" Value="Family = 12288" Usage="System.CodeDom.MemberAttributes.Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.FamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value="FamilyAndAssembly" />
       <MemberSignature Language="C++ CLI" Value="FamilyAndAssembly" />
+      <MemberSignature Language="F#" Value="FamilyAndAssembly = 8192" Usage="System.CodeDom.MemberAttributes.FamilyAndAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.FamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value="FamilyOrAssembly" />
       <MemberSignature Language="C++ CLI" Value="FamilyOrAssembly" />
+      <MemberSignature Language="F#" Value="FamilyOrAssembly = 16384" Usage="System.CodeDom.MemberAttributes.FamilyOrAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +226,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Final" />
       <MemberSignature Language="VB.NET" Value="Final" />
       <MemberSignature Language="C++ CLI" Value="Final" />
+      <MemberSignature Language="F#" Value="Final = 2" Usage="System.CodeDom.MemberAttributes.Final" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.New" />
       <MemberSignature Language="VB.NET" Value="New" />
       <MemberSignature Language="C++ CLI" Value="New" />
+      <MemberSignature Language="F#" Value="New = 16" Usage="System.CodeDom.MemberAttributes.New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Overloaded" />
       <MemberSignature Language="VB.NET" Value="Overloaded" />
       <MemberSignature Language="C++ CLI" Value="Overloaded" />
+      <MemberSignature Language="F#" Value="Overloaded = 256" Usage="System.CodeDom.MemberAttributes.Overloaded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -287,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Override" />
       <MemberSignature Language="VB.NET" Value="Override" />
       <MemberSignature Language="C++ CLI" Value="Override" />
+      <MemberSignature Language="F#" Value="Override = 4" Usage="System.CodeDom.MemberAttributes.Override" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="C++ CLI" Value="Private" />
+      <MemberSignature Language="F#" Value="Private = 20480" Usage="System.CodeDom.MemberAttributes.Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -333,6 +346,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="C++ CLI" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 24576" Usage="System.CodeDom.MemberAttributes.Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +370,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.ScopeMask" />
       <MemberSignature Language="VB.NET" Value="ScopeMask" />
       <MemberSignature Language="C++ CLI" Value="ScopeMask" />
+      <MemberSignature Language="F#" Value="ScopeMask = 15" Usage="System.CodeDom.MemberAttributes.ScopeMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -379,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 3" Usage="System.CodeDom.MemberAttributes.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +418,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.VTableMask" />
       <MemberSignature Language="VB.NET" Value="VTableMask" />
       <MemberSignature Language="C++ CLI" Value="VTableMask" />
+      <MemberSignature Language="F#" Value="VTableMask = 240" Usage="System.CodeDom.MemberAttributes.VTableMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

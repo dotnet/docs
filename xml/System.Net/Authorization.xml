@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Authorization" />
   <TypeSignature Language="VB.NET" Value="Public Class Authorization" />
   <TypeSignature Language="C++ CLI" Value="public ref class Authorization" />
+  <TypeSignature Language="F#" Value="type Authorization = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Authorization(System::String ^ token);" />
+      <MemberSignature Language="F#" Value="new System.Net.Authorization : string -&gt; System.Net.Authorization" Usage="new System.Net.Authorization token" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As String, finished As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Authorization(System::String ^ token, bool finished);" />
+      <MemberSignature Language="F#" Value="new System.Net.Authorization : string * bool -&gt; System.Net.Authorization" Usage="new System.Net.Authorization (token, finished)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (token As String, finished As Boolean, connectionGroupId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Authorization(System::String ^ token, bool finished, System::String ^ connectionGroupId);" />
+      <MemberSignature Language="F#" Value="new System.Net.Authorization : string * bool * string -&gt; System.Net.Authorization" Usage="new System.Net.Authorization (token, finished, connectionGroupId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Authorization.Complete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Complete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Complete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Complete : bool" Usage="System.Net.Authorization.Complete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Authorization.ConnectionGroupId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionGroupId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionGroupId { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionGroupId : string" Usage="System.Net.Authorization.ConnectionGroupId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Authorization.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Net.Authorization.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -335,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Authorization.MutuallyAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Property MutuallyAuthenticated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MutuallyAuthenticated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MutuallyAuthenticated : bool with get, set" Usage="System.Net.Authorization.MutuallyAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Authorization.ProtectionRealm" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionRealm As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ProtectionRealm { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionRealm : string[] with get, set" Usage="System.Net.Authorization.ProtectionRealm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedPropertyChangedEventHandler`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RoutedPropertyChangedEventHandler(Of T)(sender As Object, e As RoutedPropertyChangedEventArgs(Of T))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public delegate void RoutedPropertyChangedEventHandler(System::Object ^ sender, RoutedPropertyChangedEventArgs&lt;T&gt; ^ e);" />
+  <TypeSignature Language="F#" Value="type RoutedPropertyChangedEventHandler&lt;'T&gt; = delegate of obj * RoutedPropertyChangedEventArgs&lt;'T&gt; -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

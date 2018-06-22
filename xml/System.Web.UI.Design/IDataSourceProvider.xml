@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceProvider" />
+  <TypeSignature Language="F#" Value="type IDataSourceProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResolvedSelectedDataSource () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetResolvedSelectedDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetResolvedSelectedDataSource : unit -&gt; System.Collections.IEnumerable" Usage="iDataSourceProvider.GetResolvedSelectedDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectedDataSource () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSelectedDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedDataSource : unit -&gt; obj" Usage="iDataSourceProvider.GetSelectedDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

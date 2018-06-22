@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type KeyEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.KeyEventArgs.#ctor(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyData As Keys)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyEventArgs(System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.KeyEventArgs : System.Windows.Forms.Keys -&gt; System.Windows.Forms.KeyEventArgs" Usage="new System.Windows.Forms.KeyEventArgs keyData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Alt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Alt As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Alt { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alt : bool" Usage="System.Windows.Forms.KeyEventArgs.Alt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Control { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Control : bool" Usage="System.Windows.Forms.KeyEventArgs.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.KeyEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCode As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyCode { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyCode : System.Windows.Forms.Keys" Usage="System.Windows.Forms.KeyEventArgs.KeyCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -271,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyData As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys KeyData { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyData : System.Windows.Forms.Keys" Usage="System.Windows.Forms.KeyEventArgs.KeyData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyValue { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyValue : int" Usage="System.Windows.Forms.KeyEventArgs.KeyValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As Keys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Keys Modifiers { System::Windows::Forms::Keys get(); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Forms.Keys" Usage="System.Windows.Forms.KeyEventArgs.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Shift" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Shift As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Shift { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shift : bool" Usage="System.Windows.Forms.KeyEventArgs.Shift" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -419,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.SuppressKeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressKeyPress As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressKeyPress { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressKeyPress : bool with get, set" Usage="System.Windows.Forms.KeyEventArgs.SuppressKeyPress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

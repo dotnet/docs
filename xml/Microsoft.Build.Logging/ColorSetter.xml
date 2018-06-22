@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ColorSetter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColorSetter(color As ConsoleColor)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ColorSetter(ConsoleColor color);" />
+  <TypeSignature Language="F#" Value="type ColorSetter = delegate of ConsoleColor -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

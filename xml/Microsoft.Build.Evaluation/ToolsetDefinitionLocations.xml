@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ToolsetDefinitionLocations" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolsetDefinitionLocations" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolsetDefinitionLocations" />
+  <TypeSignature Language="F#" Value="type ToolsetDefinitionLocations = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ToolsetDefinitionLocations.ConfigurationFile" />
       <MemberSignature Language="VB.NET" Value="ConfigurationFile" />
       <MemberSignature Language="C++ CLI" Value="ConfigurationFile" />
+      <MemberSignature Language="F#" Value="ConfigurationFile = 1" Usage="Microsoft.Build.Evaluation.ToolsetDefinitionLocations.ConfigurationFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ToolsetDefinitionLocations.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Build.Evaluation.ToolsetDefinitionLocations.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ToolsetDefinitionLocations.Registry" />
       <MemberSignature Language="VB.NET" Value="Registry" />
       <MemberSignature Language="C++ CLI" Value="Registry" />
+      <MemberSignature Language="F#" Value="Registry = 2" Usage="Microsoft.Build.Evaluation.ToolsetDefinitionLocations.Registry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ChannelDispatcherBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelDispatcherBase&#xA;Inherits CommunicationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelDispatcherBase abstract : System::ServiceModel::Channels::CommunicationObject" />
+  <TypeSignature Language="F#" Value="type ChannelDispatcherBase = class&#xA;    inherit CommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Attach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Attach (host As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Attach(System::ServiceModel::ServiceHostBase ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Attach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="channelDispatcherBase.Attach host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.CloseInput" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseInput ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseInput();" />
+      <MemberSignature Language="F#" Value="abstract member CloseInput : unit -&gt; unit&#xA;override this.CloseInput : unit -&gt; unit" Usage="channelDispatcherBase.CloseInput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Detach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Detach (host As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Detach(System::ServiceModel::ServiceHostBase ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Detach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="channelDispatcherBase.Detach host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Host As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::ServiceHostBase ^ Host { System::ServiceModel::ServiceHostBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Host : System.ServiceModel.ServiceHostBase" Usage="System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Listener" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Listener As IChannelListener" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::IChannelListener ^ Listener { System::ServiceModel::Channels::IChannelListener ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Listener : System.ServiceModel.Channels.IChannelListener" Usage="System.ServiceModel.Dispatcher.ChannelDispatcherBase.Listener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

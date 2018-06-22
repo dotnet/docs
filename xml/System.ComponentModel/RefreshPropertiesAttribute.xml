@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshPropertiesAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RefreshPropertiesAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RefreshPropertiesAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RefreshPropertiesAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.#ctor(System.ComponentModel.RefreshProperties)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (refresh As RefreshProperties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshPropertiesAttribute(System::ComponentModel::RefreshProperties refresh);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.RefreshPropertiesAttribute : System.ComponentModel.RefreshProperties -&gt; System.ComponentModel.RefreshPropertiesAttribute" Usage="new System.ComponentModel.RefreshPropertiesAttribute refresh" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.All" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly All As RefreshPropertiesAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RefreshPropertiesAttribute ^ All;" />
+      <MemberSignature Language="F#" Value=" staticval mutable All : System.ComponentModel.RefreshPropertiesAttribute" Usage="System.ComponentModel.RefreshPropertiesAttribute.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As RefreshPropertiesAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RefreshPropertiesAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.RefreshPropertiesAttribute" Usage="System.ComponentModel.RefreshPropertiesAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="refreshPropertiesAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="refreshPropertiesAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshPropertiesAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="refreshPropertiesAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RefreshPropertiesAttribute.RefreshProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefreshProperties As RefreshProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::RefreshProperties RefreshProperties { System::ComponentModel::RefreshProperties get(); };" />
+      <MemberSignature Language="F#" Value="member this.RefreshProperties : System.ComponentModel.RefreshProperties" Usage="System.ComponentModel.RefreshPropertiesAttribute.RefreshProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RefreshPropertiesAttribute.Repaint" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Repaint As RefreshPropertiesAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RefreshPropertiesAttribute ^ Repaint;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Repaint : System.ComponentModel.RefreshPropertiesAttribute" Usage="System.ComponentModel.RefreshPropertiesAttribute.Repaint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

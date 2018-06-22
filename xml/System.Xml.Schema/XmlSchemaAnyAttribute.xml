@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAnyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAnyAttribute&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAnyAttribute : System::Xml::Schema::XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaAnyAttribute = class&#xA;    inherit XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnyAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Schema.XmlSchemaAnyAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnyAttribute.ProcessContents" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessContents As XmlSchemaContentProcessing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentProcessing ProcessContents { System::Xml::Schema::XmlSchemaContentProcessing get(); void set(System::Xml::Schema::XmlSchemaContentProcessing value); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessContents : System.Xml.Schema.XmlSchemaContentProcessing with get, set" Usage="System.Xml.Schema.XmlSchemaAnyAttribute.ProcessContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

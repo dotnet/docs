@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IRootObjectProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRootObjectProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRootObjectProvider" />
+  <TypeSignature Language="F#" Value="type IRootObjectProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.IRootObjectProvider.RootObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RootObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootObject : obj" Usage="System.Xaml.IRootObjectProvider.RootObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

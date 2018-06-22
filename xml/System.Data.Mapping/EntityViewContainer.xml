@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Mapping.EntityViewContainer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EntityViewContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityViewContainer abstract" />
+  <TypeSignature Language="F#" Value="type EntityViewContainer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.EdmEntityContainerName" />
       <MemberSignature Language="VB.NET" Value="Public Property EdmEntityContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EdmEntityContainerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EdmEntityContainerName : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.EdmEntityContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.EntityViewContainer.GetViewAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetViewAt (index As Integer) As KeyValuePair(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt; GetViewAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetViewAt : int -&gt; System.Collections.Generic.KeyValuePair&lt;string, string&gt;" Usage="entityViewContainer.GetViewAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.HashOverAllExtentViews" />
       <MemberSignature Language="VB.NET" Value="Public Property HashOverAllExtentViews As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashOverAllExtentViews { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashOverAllExtentViews : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.HashOverAllExtentViews" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.HashOverMappingClosure" />
       <MemberSignature Language="VB.NET" Value="Public Property HashOverMappingClosure As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashOverMappingClosure { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HashOverMappingClosure : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.HashOverMappingClosure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.StoreEntityContainerName" />
       <MemberSignature Language="VB.NET" Value="Public Property StoreEntityContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreEntityContainerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StoreEntityContainerName : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.StoreEntityContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.ViewCount" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:  property int ViewCount {  public:&#xA;int get(); protected:&#xA; void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewCount : int with get, set" Usage="System.Data.Mapping.EntityViewContainer.ViewCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

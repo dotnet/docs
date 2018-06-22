@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FixedDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class FixedDocument&#xA;Inherits FrameworkContentElement&#xA;Implements IDocumentPaginatorSource, IServiceProvider, IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class FixedDocument : System::Windows::FrameworkContentElement, IServiceProvider, System::Windows::Documents::IDocumentPaginatorSource, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type FixedDocument = class&#xA;    inherit FrameworkContentElement&#xA;    interface IDocumentPaginatorSource&#xA;    interface IAddChild&#xA;    interface IServiceProvider&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.DocumentPaginator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPaginator As DocumentPaginator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPaginator ^ DocumentPaginator { System::Windows::Documents::DocumentPaginator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentPaginator : System.Windows.Documents.DocumentPaginator" Usage="System.Windows.Documents.FixedDocument.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator</InterfaceMember>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.FixedDocument.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FixedDocument.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="fixedDocument.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.Pages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As PageContentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::PageContentCollection ^ Pages { System::Windows::Documents::PageContentCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pages : System.Windows.Documents.PageContentCollection" Usage="System.Windows.Documents.FixedDocument.Pages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.PrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintTicket As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PrintTicket { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintTicket : obj with get, set" Usage="System.Windows.Documents.FixedDocument.PrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FixedDocument.PrintTicketProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PrintTicketProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PrintTicketProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PrintTicketProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FixedDocument.PrintTicketProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Documents.FixedDocument.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>

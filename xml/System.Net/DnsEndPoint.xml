@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.DnsEndPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class DnsEndPoint&#xA;Inherits EndPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class DnsEndPoint : System::Net::EndPoint" />
+  <TypeSignature Language="F#" Value="type DnsEndPoint = class&#xA;    inherit EndPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.DnsEndPoint.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndPoint(System::String ^ host, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.DnsEndPoint : string * int -&gt; System.Net.DnsEndPoint" Usage="new System.Net.DnsEndPoint (host, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string host, int32 port, valuetype System.Net.Sockets.AddressFamily addressFamily) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.DnsEndPoint.#ctor(System.String,System.Int32,System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndPoint(System::String ^ host, int port, System::Net::Sockets::AddressFamily addressFamily);" />
+      <MemberSignature Language="F#" Value="new System.Net.DnsEndPoint : string * int * System.Net.Sockets.AddressFamily -&gt; System.Net.DnsEndPoint" Usage="new System.Net.DnsEndPoint (host, port, addressFamily)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.DnsEndPoint.AddressFamily" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AddressFamily As AddressFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.DnsEndPoint.AddressFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.DnsEndPoint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dnsEndPoint.Equals comparand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.DnsEndPoint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dnsEndPoint.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -276,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.DnsEndPoint.Host" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string" Usage="System.Net.DnsEndPoint.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.DnsEndPoint.Port" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int" Usage="System.Net.DnsEndPoint.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -345,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.DnsEndPoint.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dnsEndPoint.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.DistributedFileLogger" />
   <TypeSignature Language="VB.NET" Value="Public Class DistributedFileLogger&#xA;Implements IForwardingLogger" />
   <TypeSignature Language="C++ CLI" Value="public ref class DistributedFileLogger : Microsoft::Build::Framework::IForwardingLogger" />
+  <TypeSignature Language="F#" Value="type DistributedFileLogger = class&#xA;    interface IForwardingLogger&#xA;    interface INodeLogger&#xA;    interface ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.DistributedFileLogger.BuildEventRedirector" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildEventRedirector As IEventRedirector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IEventRedirector ^ BuildEventRedirector { Microsoft::Build::Framework::IEventRedirector ^ get(); void set(Microsoft::Build::Framework::IEventRedirector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildEventRedirector : Microsoft.Build.Framework.IEventRedirector with get, set" Usage="Microsoft.Build.Logging.DistributedFileLogger.BuildEventRedirector" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector</InterfaceMember>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit" Usage="distributedFileLogger.Initialize eventSource" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit" Usage="distributedFileLogger.Initialize (eventSource, nodeCount)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.DistributedFileLogger.NodeId" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeId { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NodeId : int with get, set" Usage="Microsoft.Build.Logging.DistributedFileLogger.NodeId" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.NodeId</InterfaceMember>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.DistributedFileLogger.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.Logging.DistributedFileLogger.Parameters" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.DistributedFileLogger.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="distributedFileLogger.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.DistributedFileLogger.Verbosity" />
       <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity with get, set" Usage="Microsoft.Build.Logging.DistributedFileLogger.Verbosity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>

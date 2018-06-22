@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.MemoryCache" />
   <TypeSignature Language="VB.NET" Value="Public Class MemoryCache&#xA;Inherits ObjectCache&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryCache : System::Runtime::Caching::ObjectCache, IDisposable" />
+  <TypeSignature Language="F#" Value="type MemoryCache = class&#xA;    inherit ObjectCache&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.#ctor(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional config As NameValueCollection = null)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.MemoryCache : string * System.Collections.Specialized.NameValueCollection -&gt; System.Runtime.Caching.MemoryCache" Usage="new System.Runtime.Caching.MemoryCache (name, config)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -153,6 +155,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.#ctor(System.String,System.Collections.Specialized.NameValueCollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, config As NameValueCollection, ignoreConfigSection As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MemoryCache(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config, bool ignoreConfigSection);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.MemoryCache : string * System.Collections.Specialized.NameValueCollection * bool -&gt; System.Runtime.Caching.MemoryCache" Usage="new System.Runtime.Caching.MemoryCache (name, config, ignoreConfigSection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -177,6 +180,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Add(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (item As CacheItem, policy As CacheItemPolicy) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Add(System::Runtime::Caching::CacheItem ^ item, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Runtime.Caching.CacheItem * System.Runtime.Caching.CacheItemPolicy -&gt; bool" Usage="memoryCache.Add (item, policy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -229,6 +233,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddOrGetExisting (item As CacheItem, policy As CacheItemPolicy) As CacheItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Runtime::Caching::CacheItem ^ AddOrGetExisting(System::Runtime::Caching::CacheItem ^ item, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
+      <MemberSignature Language="F#" Value="override this.AddOrGetExisting : System.Runtime.Caching.CacheItem * System.Runtime.Caching.CacheItemPolicy -&gt; System.Runtime.Caching.CacheItem" Usage="memoryCache.AddOrGetExisting (item, policy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -275,6 +280,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object AddOrGetExisting(string key, object value, valuetype System.DateTimeOffset absoluteExpiration, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.String,System.Object,System.DateTimeOffset,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddOrGetExisting (key As String, value As Object, absoluteExpiration As DateTimeOffset, Optional regionName As String = null) As Object" />
+      <MemberSignature Language="F#" Value="override this.AddOrGetExisting : string * obj * DateTimeOffset * string -&gt; obj" Usage="memoryCache.AddOrGetExisting (key, value, absoluteExpiration, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -328,6 +334,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object AddOrGetExisting(string key, object value, class System.Runtime.Caching.CacheItemPolicy policy, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.AddOrGetExisting(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddOrGetExisting (key As String, value As Object, policy As CacheItemPolicy, Optional regionName As String = null) As Object" />
+      <MemberSignature Language="F#" Value="override this.AddOrGetExisting : string * obj * System.Runtime.Caching.CacheItemPolicy * string -&gt; obj" Usage="memoryCache.AddOrGetExisting (key, value, policy, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -383,6 +390,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.CacheMemoryLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheMemoryLimit As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CacheMemoryLimit { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheMemoryLimit : int64" Usage="System.Runtime.Caching.MemoryCache.CacheMemoryLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -413,6 +421,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Contains(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (key As String, Optional regionName As String = null) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Contains : string * string -&gt; bool" Usage="memoryCache.Contains (key, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -443,6 +452,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Caching.CacheEntryChangeMonitor CreateCacheEntryChangeMonitor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.CreateCacheEntryChangeMonitor(System.Collections.Generic.IEnumerable{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCacheEntryChangeMonitor (keys As IEnumerable(Of String), Optional regionName As String = null) As CacheEntryChangeMonitor" />
+      <MemberSignature Language="F#" Value="override this.CreateCacheEntryChangeMonitor : seq&lt;string&gt; * string -&gt; System.Runtime.Caching.CacheEntryChangeMonitor" Usage="memoryCache.CreateCacheEntryChangeMonitor (keys, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -487,6 +497,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As MemoryCache" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Caching::MemoryCache ^ Default { System::Runtime::Caching::MemoryCache ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Runtime.Caching.MemoryCache" Usage="System.Runtime.Caching.MemoryCache.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -516,6 +527,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.DefaultCacheCapabilities" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultCacheCapabilities As DefaultCacheCapabilities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::Caching::DefaultCacheCapabilities DefaultCacheCapabilities { System::Runtime::Caching::DefaultCacheCapabilities get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCacheCapabilities : System.Runtime.Caching.DefaultCacheCapabilities" Usage="System.Runtime.Caching.MemoryCache.DefaultCacheCapabilities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -555,6 +567,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryCache.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -598,6 +611,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Get(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Get(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (key As String, Optional regionName As String = null) As Object" />
+      <MemberSignature Language="F#" Value="override this.Get : string * string -&gt; obj" Usage="memoryCache.Get (key, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -627,6 +641,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Caching.CacheItem GetCacheItem(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.GetCacheItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCacheItem (key As String, Optional regionName As String = null) As CacheItem" />
+      <MemberSignature Language="F#" Value="override this.GetCacheItem : string * string -&gt; System.Runtime.Caching.CacheItem" Usage="memoryCache.GetCacheItem (key, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -663,6 +678,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetCount(string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.GetCount(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCount (Optional regionName As String = null) As Long" />
+      <MemberSignature Language="F#" Value="override this.GetCount : string -&gt; int64" Usage="memoryCache.GetCount regionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -689,6 +705,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;" Usage="memoryCache.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -719,6 +736,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 GetLastSize(string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.GetLastSize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastSize (Optional regionName As String = null) As Long" />
+      <MemberSignature Language="F#" Value="member this.GetLastSize : string -&gt; int64" Usage="memoryCache.GetLastSize regionName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -742,6 +760,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GetValues(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.GetValues(System.Collections.Generic.IEnumerable{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (keys As IEnumerable(Of String), Optional regionName As String = null) As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="override this.GetValues : seq&lt;string&gt; * string -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="memoryCache.GetValues (keys, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -780,6 +799,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Runtime.Caching.MemoryCache.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -817,6 +837,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Caching.MemoryCache.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -844,6 +865,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhysicalMemoryLimit As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PhysicalMemoryLimit { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.PhysicalMemoryLimit : int64" Usage="System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -873,6 +895,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.MemoryCache.PollingInterval" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PollingInterval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PollingInterval { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.PollingInterval : TimeSpan" Usage="System.Runtime.Caching.MemoryCache.PollingInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -908,6 +931,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Remove(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Remove(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (key As String, Optional regionName As String = null) As Object" />
+      <MemberSignature Language="F#" Value="override this.Remove : string * string -&gt; obj" Usage="memoryCache.Remove (key, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -944,6 +968,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Remove(string key, valuetype System.Runtime.Caching.CacheEntryRemovedReason reason, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Remove(System.String,System.Runtime.Caching.CacheEntryRemovedReason,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String, reason As CacheEntryRemovedReason, Optional regionName As String = null) As Object" />
+      <MemberSignature Language="F#" Value="override this.Remove : string * System.Runtime.Caching.CacheEntryRemovedReason * string -&gt; obj" Usage="memoryCache.Remove (key, reason, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -989,6 +1014,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Set(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Set (item As CacheItem, policy As CacheItemPolicy)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Set(System::Runtime::Caching::CacheItem ^ item, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
+      <MemberSignature Language="F#" Value="override this.Set : System.Runtime.Caching.CacheItem * System.Runtime.Caching.CacheItemPolicy -&gt; unit" Usage="memoryCache.Set (item, policy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -1044,6 +1070,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Set(string key, object value, valuetype System.DateTimeOffset absoluteExpiration, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Set (key As String, value As Object, absoluteExpiration As DateTimeOffset, Optional regionName As String = null)" />
+      <MemberSignature Language="F#" Value="override this.Set : string * obj * DateTimeOffset * string -&gt; unit" Usage="memoryCache.Set (key, value, absoluteExpiration, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -1105,6 +1132,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Set(string key, object value, class System.Runtime.Caching.CacheItemPolicy policy, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Set(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Set (key As String, value As Object, policy As CacheItemPolicy, Optional regionName As String = null)" />
+      <MemberSignature Language="F#" Value="override this.Set : string * obj * System.Runtime.Caching.CacheItemPolicy * string -&gt; unit" Usage="memoryCache.Set (key, value, policy, regionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -1202,6 +1230,7 @@ private void btnGet_Click(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.MemoryCache.Trim(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Trim (percent As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long Trim(int percent);" />
+      <MemberSignature Language="F#" Value="member this.Trim : int -&gt; int64" Usage="memoryCache.Trim percent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

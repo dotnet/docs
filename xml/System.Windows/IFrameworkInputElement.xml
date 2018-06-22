@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.IFrameworkInputElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFrameworkInputElement&#xA;Implements IInputElement" />
   <TypeSignature Language="C++ CLI" Value="public interface class IFrameworkInputElement : System::Windows::IInputElement" />
+  <TypeSignature Language="F#" Value="type IFrameworkInputElement = interface&#xA;    interface IInputElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.IFrameworkInputElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.IFrameworkInputElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

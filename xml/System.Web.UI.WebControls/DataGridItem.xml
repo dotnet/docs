@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridItem" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridItem&#xA;Inherits TableRow&#xA;Implements IDataItemContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridItem : System::Web::UI::WebControls::TableRow, System::Web::UI::IDataItemContainer" />
+  <TypeSignature Language="F#" Value="type DataGridItem = class&#xA;    inherit TableRow&#xA;    interface IDataItemContainer&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridItem.#ctor(System.Int32,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer, dataSetIndex As Integer, itemType As ListItemType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridItem(int itemIndex, int dataSetIndex, System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataGridItem : int * int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.DataGridItem" Usage="new System.Web.UI.WebControls.DataGridItem (itemIndex, dataSetIndex, itemType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.DataGridItem.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.DataSetIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataSetIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataSetIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSetIndex : int" Usage="System.Web.UI.WebControls.DataGridItem.DataSetIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.ItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.WebControls.DataGridItem.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemType As ListItemType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListItemType ItemType { System::Web::UI::WebControls::ListItemType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : System.Web.UI.WebControls.ListItemType" Usage="System.Web.UI.WebControls.DataGridItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataGridItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridItem.SetItemType(System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetItemType (itemType As ListItemType)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetItemType(System::Web::UI::WebControls::ListItemType itemType);" />
+      <MemberSignature Language="F#" Value="abstract member SetItemType : System.Web.UI.WebControls.ListItemType -&gt; unit&#xA;override this.SetItemType : System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="dataGridItem.SetItemType itemType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.System#Web#UI#IDataItemContainer#DataItem" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItem As Object Implements IDataItemContainer.DataItem" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.IDataItemContainer.DataItem { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataGridItem.System.Web.UI.IDataItemContainer.DataItem" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItem</InterfaceMember>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.System#Web#UI#IDataItemContainer#DataItemIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataItemIndex As Integer Implements IDataItemContainer.DataItemIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataGridItem.System.Web.UI.IDataItemContainer.DataItemIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
@@ -385,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItem.System#Web#UI#IDataItemContainer#DisplayIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DisplayIndex As Integer Implements IDataItemContainer.DisplayIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.IDataItemContainer.DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataGridItem.System.Web.UI.IDataItemContainer.DisplayIndex" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>

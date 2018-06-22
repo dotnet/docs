@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IMemoryCacheManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMemoryCacheManager" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMemoryCacheManager" />
+  <TypeSignature Language="F#" Value="type IMemoryCacheManager = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IMemoryCacheManager.ReleaseCache(System.Runtime.Caching.MemoryCache)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseCache (cache As MemoryCache)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseCache(System::Runtime::Caching::MemoryCache ^ cache);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseCache : System.Runtime.Caching.MemoryCache -&gt; unit" Usage="iMemoryCacheManager.ReleaseCache cache" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IMemoryCacheManager.UpdateCacheSize(System.Int64,System.Runtime.Caching.MemoryCache)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateCacheSize (size As Long, cache As MemoryCache)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateCacheSize(long size, System::Runtime::Caching::MemoryCache ^ cache);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateCacheSize : int64 * System.Runtime.Caching.MemoryCache -&gt; unit" Usage="iMemoryCacheManager.UpdateCacheSize (size, cache)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

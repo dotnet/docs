@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.SwitchExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SwitchExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class SwitchExpression sealed : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type SwitchExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.SwitchExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="switchExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.Cases" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cases As ReadOnlyCollection(Of SwitchCase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::SwitchCase ^&gt; ^ Cases { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::SwitchCase ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cases : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.SwitchCase&gt;" Usage="System.Linq.Expressions.SwitchExpression.Cases" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.Comparison" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparison As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ Comparison { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comparison : System.Reflection.MethodInfo" Usage="System.Linq.Expressions.SwitchExpression.Comparison" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.DefaultBody" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultBody As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ DefaultBody { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultBody : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.SwitchExpression.DefaultBody" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.SwitchExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.SwitchValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SwitchValue As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ SwitchValue { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchValue : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.SwitchExpression.SwitchValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.SwitchExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.SwitchExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.SwitchCase},System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (switchValue As Expression, cases As IEnumerable(Of SwitchCase), defaultBody As Expression) As SwitchExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::SwitchExpression ^ Update(System::Linq::Expressions::Expression ^ switchValue, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::SwitchCase ^&gt; ^ cases, System::Linq::Expressions::Expression ^ defaultBody);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression * seq&lt;System.Linq.Expressions.SwitchCase&gt; * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.SwitchExpression" Usage="switchExpression.Update (switchValue, cases, defaultBody)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

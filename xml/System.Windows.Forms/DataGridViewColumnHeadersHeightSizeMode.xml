@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewColumnHeadersHeightSizeMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewColumnHeadersHeightSizeMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnHeadersHeightSizeMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize" />
       <MemberSignature Language="VB.NET" Value="AutoSize" />
       <MemberSignature Language="C++ CLI" Value="AutoSize" />
+      <MemberSignature Language="F#" Value="AutoSize = 2" Usage="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing" />
       <MemberSignature Language="VB.NET" Value="DisableResizing" />
       <MemberSignature Language="C++ CLI" Value="DisableResizing" />
+      <MemberSignature Language="F#" Value="DisableResizing = 1" Usage="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing" />
       <MemberSignature Language="VB.NET" Value="EnableResizing" />
       <MemberSignature Language="C++ CLI" Value="EnableResizing" />
+      <MemberSignature Language="F#" Value="EnableResizing = 0" Usage="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

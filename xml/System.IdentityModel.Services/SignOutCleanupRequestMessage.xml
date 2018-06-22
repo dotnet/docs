@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class SignOutCleanupRequestMessage&#xA;Inherits WSFederationMessage" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignOutCleanupRequestMessage : System::IdentityModel::Services::WSFederationMessage" />
+  <TypeSignature Language="F#" Value="type SignOutCleanupRequestMessage = class&#xA;    inherit WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutCleanupRequestMessage(Uri ^ baseUrl);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignOutCleanupRequestMessage : Uri -&gt; System.IdentityModel.Services.SignOutCleanupRequestMessage" Usage="new System.IdentityModel.Services.SignOutCleanupRequestMessage baseUrl" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, reply As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutCleanupRequestMessage(Uri ^ baseUrl, System::String ^ reply);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SignOutCleanupRequestMessage : Uri * string -&gt; System.IdentityModel.Services.SignOutCleanupRequestMessage" Usage="new System.IdentityModel.Services.SignOutCleanupRequestMessage (baseUrl, reply)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignOutCleanupRequestMessage.Reply" />
       <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.SignOutCleanupRequestMessage.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="signOutCleanupRequestMessage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.Write(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Write : System.IO.TextWriter -&gt; unit" Usage="signOutCleanupRequestMessage.Write writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

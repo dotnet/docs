@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSFederationHttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class WSFederationHttpBinding&#xA;Inherits WSHttpBindingBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSFederationHttpBinding : System::ServiceModel::WSHttpBindingBase" />
+  <TypeSignature Language="F#" Value="type WSFederationHttpBinding = class&#xA;    inherit WSHttpBindingBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSFederationHttpBinding : System.ServiceModel.WSFederationHttpSecurityMode -&gt; System.ServiceModel.WSFederationHttpBinding" Usage="new System.ServiceModel.WSFederationHttpBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationHttpBinding(System::String ^ configName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSFederationHttpBinding : string -&gt; System.ServiceModel.WSFederationHttpBinding" Usage="new System.ServiceModel.WSFederationHttpBinding configName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSFederationHttpSecurityMode, reliableSessionEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationHttpBinding(System::ServiceModel::WSFederationHttpSecurityMode securityMode, bool reliableSessionEnabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSFederationHttpBinding : System.ServiceModel.WSFederationHttpSecurityMode * bool -&gt; System.ServiceModel.WSFederationHttpBinding" Usage="new System.ServiceModel.WSFederationHttpBinding (securityMode, reliableSessionEnabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.CreateBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="wSFederationHttpBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.CreateMessageSecurity" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateMessageSecurity () As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::SecurityBindingElement ^ CreateMessageSecurity();" />
+      <MemberSignature Language="F#" Value="override this.CreateMessageSecurity : unit -&gt; System.ServiceModel.Channels.SecurityBindingElement" Usage="wSFederationHttpBinding.CreateMessageSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.GetTransport" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTransport () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ GetTransport();" />
+      <MemberSignature Language="F#" Value="override this.GetTransport : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="wSFederationHttpBinding.GetTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpBinding.PrivacyNoticeAt" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivacyNoticeAt As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ PrivacyNoticeAt { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivacyNoticeAt : Uri with get, set" Usage="System.ServiceModel.WSFederationHttpBinding.PrivacyNoticeAt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpBinding.PrivacyNoticeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivacyNoticeVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PrivacyNoticeVersion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivacyNoticeVersion : int with get, set" Usage="System.ServiceModel.WSFederationHttpBinding.PrivacyNoticeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSFederationHttpBinding.Security" />
       <MemberSignature Language="VB.NET" Value="Public Property Security As WSFederationHttpSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSFederationHttpSecurity ^ Security { System::ServiceModel::WSFederationHttpSecurity ^ get(); void set(System::ServiceModel::WSFederationHttpSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.WSFederationHttpSecurity with get, set" Usage="System.ServiceModel.WSFederationHttpBinding.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSFederationHttpBinding.ShouldSerializeSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSecurity();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSecurity : unit -&gt; bool" Usage="wSFederationHttpBinding.ShouldSerializeSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

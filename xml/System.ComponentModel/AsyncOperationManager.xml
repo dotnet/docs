@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncOperationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class AsyncOperationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncOperationManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type AsyncOperationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncOperationManager.CreateOperation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOperation (userSuppliedState As Object) As AsyncOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::AsyncOperation ^ CreateOperation(System::Object ^ userSuppliedState);" />
+      <MemberSignature Language="F#" Value="static member CreateOperation : obj -&gt; System.ComponentModel.AsyncOperation" Usage="System.ComponentModel.AsyncOperationManager.CreateOperation userSuppliedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncOperationManager.SynchronizationContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property SynchronizationContext As SynchronizationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Threading::SynchronizationContext ^ SynchronizationContext { System::Threading::SynchronizationContext ^ get(); void set(System::Threading::SynchronizationContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SynchronizationContext : System.Threading.SynchronizationContext with get, set" Usage="System.ComponentModel.AsyncOperationManager.SynchronizationContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasGestureEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub InkCanvasGestureEventHandler(sender As Object, e As InkCanvasGestureEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void InkCanvasGestureEventHandler(System::Object ^ sender, InkCanvasGestureEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type InkCanvasGestureEventHandler = delegate of obj * InkCanvasGestureEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

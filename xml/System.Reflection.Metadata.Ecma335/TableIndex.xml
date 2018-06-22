@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.TableIndex" />
   <TypeSignature Language="VB.NET" Value="Public Enum TableIndex" />
   <TypeSignature Language="C++ CLI" Value="public enum class TableIndex" />
+  <TypeSignature Language="F#" Value="type TableIndex = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="C++ CLI" Value="Assembly" />
+      <MemberSignature Language="F#" Value="Assembly = 32" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyOS" />
       <MemberSignature Language="VB.NET" Value="AssemblyOS" />
       <MemberSignature Language="C++ CLI" Value="AssemblyOS" />
+      <MemberSignature Language="F#" Value="AssemblyOS = 34" Usage="System.Reflection.Metadata.Ecma335.TableIndex.AssemblyOS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyProcessor" />
       <MemberSignature Language="VB.NET" Value="AssemblyProcessor" />
       <MemberSignature Language="C++ CLI" Value="AssemblyProcessor" />
+      <MemberSignature Language="F#" Value="AssemblyProcessor = 33" Usage="System.Reflection.Metadata.Ecma335.TableIndex.AssemblyProcessor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRef" />
       <MemberSignature Language="VB.NET" Value="AssemblyRef" />
       <MemberSignature Language="C++ CLI" Value="AssemblyRef" />
+      <MemberSignature Language="F#" Value="AssemblyRef = 35" Usage="System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefOS" />
       <MemberSignature Language="VB.NET" Value="AssemblyRefOS" />
       <MemberSignature Language="C++ CLI" Value="AssemblyRefOS" />
+      <MemberSignature Language="F#" Value="AssemblyRefOS = 37" Usage="System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefOS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefProcessor" />
       <MemberSignature Language="VB.NET" Value="AssemblyRefProcessor" />
       <MemberSignature Language="C++ CLI" Value="AssemblyRefProcessor" />
+      <MemberSignature Language="F#" Value="AssemblyRefProcessor = 36" Usage="System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefProcessor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ClassLayout" />
       <MemberSignature Language="VB.NET" Value="ClassLayout" />
       <MemberSignature Language="C++ CLI" Value="ClassLayout" />
+      <MemberSignature Language="F#" Value="ClassLayout = 15" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ClassLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Constant" />
       <MemberSignature Language="VB.NET" Value="Constant" />
       <MemberSignature Language="C++ CLI" Value="Constant" />
+      <MemberSignature Language="F#" Value="Constant = 11" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.CustomAttribute" />
       <MemberSignature Language="VB.NET" Value="CustomAttribute" />
       <MemberSignature Language="C++ CLI" Value="CustomAttribute" />
+      <MemberSignature Language="F#" Value="CustomAttribute = 12" Usage="System.Reflection.Metadata.Ecma335.TableIndex.CustomAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.CustomDebugInformation" />
       <MemberSignature Language="VB.NET" Value="CustomDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="CustomDebugInformation" />
+      <MemberSignature Language="F#" Value="CustomDebugInformation = 55" Usage="System.Reflection.Metadata.Ecma335.TableIndex.CustomDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -245,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.DeclSecurity" />
       <MemberSignature Language="VB.NET" Value="DeclSecurity" />
       <MemberSignature Language="C++ CLI" Value="DeclSecurity" />
+      <MemberSignature Language="F#" Value="DeclSecurity = 14" Usage="System.Reflection.Metadata.Ecma335.TableIndex.DeclSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -267,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="C++ CLI" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 48" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -289,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EncLog" />
       <MemberSignature Language="VB.NET" Value="EncLog" />
       <MemberSignature Language="C++ CLI" Value="EncLog" />
+      <MemberSignature Language="F#" Value="EncLog = 30" Usage="System.Reflection.Metadata.Ecma335.TableIndex.EncLog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EncMap" />
       <MemberSignature Language="VB.NET" Value="EncMap" />
       <MemberSignature Language="C++ CLI" Value="EncMap" />
+      <MemberSignature Language="F#" Value="EncMap = 31" Usage="System.Reflection.Metadata.Ecma335.TableIndex.EncMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -333,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Event" />
       <MemberSignature Language="VB.NET" Value="Event" />
       <MemberSignature Language="C++ CLI" Value="Event" />
+      <MemberSignature Language="F#" Value="Event = 20" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -355,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EventMap" />
       <MemberSignature Language="VB.NET" Value="EventMap" />
       <MemberSignature Language="C++ CLI" Value="EventMap" />
+      <MemberSignature Language="F#" Value="EventMap = 18" Usage="System.Reflection.Metadata.Ecma335.TableIndex.EventMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -377,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EventPtr" />
       <MemberSignature Language="VB.NET" Value="EventPtr" />
       <MemberSignature Language="C++ CLI" Value="EventPtr" />
+      <MemberSignature Language="F#" Value="EventPtr = 19" Usage="System.Reflection.Metadata.Ecma335.TableIndex.EventPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -399,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ExportedType" />
       <MemberSignature Language="VB.NET" Value="ExportedType" />
       <MemberSignature Language="C++ CLI" Value="ExportedType" />
+      <MemberSignature Language="F#" Value="ExportedType = 39" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ExportedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -421,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
       <MemberSignature Language="C++ CLI" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 4" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -443,6 +463,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldLayout" />
       <MemberSignature Language="VB.NET" Value="FieldLayout" />
       <MemberSignature Language="C++ CLI" Value="FieldLayout" />
+      <MemberSignature Language="F#" Value="FieldLayout = 16" Usage="System.Reflection.Metadata.Ecma335.TableIndex.FieldLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -465,6 +486,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldMarshal" />
       <MemberSignature Language="VB.NET" Value="FieldMarshal" />
       <MemberSignature Language="C++ CLI" Value="FieldMarshal" />
+      <MemberSignature Language="F#" Value="FieldMarshal = 13" Usage="System.Reflection.Metadata.Ecma335.TableIndex.FieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -487,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldPtr" />
       <MemberSignature Language="VB.NET" Value="FieldPtr" />
       <MemberSignature Language="C++ CLI" Value="FieldPtr" />
+      <MemberSignature Language="F#" Value="FieldPtr = 3" Usage="System.Reflection.Metadata.Ecma335.TableIndex.FieldPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -509,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldRva" />
       <MemberSignature Language="VB.NET" Value="FieldRva" />
       <MemberSignature Language="C++ CLI" Value="FieldRva" />
+      <MemberSignature Language="F#" Value="FieldRva = 29" Usage="System.Reflection.Metadata.Ecma335.TableIndex.FieldRva" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -531,6 +555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.File" />
       <MemberSignature Language="VB.NET" Value="File" />
       <MemberSignature Language="C++ CLI" Value="File" />
+      <MemberSignature Language="F#" Value="File = 38" Usage="System.Reflection.Metadata.Ecma335.TableIndex.File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -553,6 +578,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.GenericParam" />
       <MemberSignature Language="VB.NET" Value="GenericParam" />
       <MemberSignature Language="C++ CLI" Value="GenericParam" />
+      <MemberSignature Language="F#" Value="GenericParam = 42" Usage="System.Reflection.Metadata.Ecma335.TableIndex.GenericParam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -575,6 +601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.GenericParamConstraint" />
       <MemberSignature Language="VB.NET" Value="GenericParamConstraint" />
       <MemberSignature Language="C++ CLI" Value="GenericParamConstraint" />
+      <MemberSignature Language="F#" Value="GenericParamConstraint = 44" Usage="System.Reflection.Metadata.Ecma335.TableIndex.GenericParamConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -597,6 +624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ImplMap" />
       <MemberSignature Language="VB.NET" Value="ImplMap" />
       <MemberSignature Language="C++ CLI" Value="ImplMap" />
+      <MemberSignature Language="F#" Value="ImplMap = 28" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ImplMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -619,6 +647,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ImportScope" />
       <MemberSignature Language="VB.NET" Value="ImportScope" />
       <MemberSignature Language="C++ CLI" Value="ImportScope" />
+      <MemberSignature Language="F#" Value="ImportScope = 53" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ImportScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -641,6 +670,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.InterfaceImpl" />
       <MemberSignature Language="VB.NET" Value="InterfaceImpl" />
       <MemberSignature Language="C++ CLI" Value="InterfaceImpl" />
+      <MemberSignature Language="F#" Value="InterfaceImpl = 9" Usage="System.Reflection.Metadata.Ecma335.TableIndex.InterfaceImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -663,6 +693,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalConstant" />
       <MemberSignature Language="VB.NET" Value="LocalConstant" />
       <MemberSignature Language="C++ CLI" Value="LocalConstant" />
+      <MemberSignature Language="F#" Value="LocalConstant = 52" Usage="System.Reflection.Metadata.Ecma335.TableIndex.LocalConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -685,6 +716,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalScope" />
       <MemberSignature Language="VB.NET" Value="LocalScope" />
       <MemberSignature Language="C++ CLI" Value="LocalScope" />
+      <MemberSignature Language="F#" Value="LocalScope = 50" Usage="System.Reflection.Metadata.Ecma335.TableIndex.LocalScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -707,6 +739,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalVariable" />
       <MemberSignature Language="VB.NET" Value="LocalVariable" />
       <MemberSignature Language="C++ CLI" Value="LocalVariable" />
+      <MemberSignature Language="F#" Value="LocalVariable = 51" Usage="System.Reflection.Metadata.Ecma335.TableIndex.LocalVariable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -729,6 +762,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ManifestResource" />
       <MemberSignature Language="VB.NET" Value="ManifestResource" />
       <MemberSignature Language="C++ CLI" Value="ManifestResource" />
+      <MemberSignature Language="F#" Value="ManifestResource = 40" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ManifestResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -751,6 +785,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MemberRef" />
       <MemberSignature Language="VB.NET" Value="MemberRef" />
       <MemberSignature Language="C++ CLI" Value="MemberRef" />
+      <MemberSignature Language="F#" Value="MemberRef = 10" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MemberRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -773,6 +808,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodDebugInformation" />
       <MemberSignature Language="VB.NET" Value="MethodDebugInformation" />
       <MemberSignature Language="C++ CLI" Value="MethodDebugInformation" />
+      <MemberSignature Language="F#" Value="MethodDebugInformation = 49" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -795,6 +831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodDef" />
       <MemberSignature Language="VB.NET" Value="MethodDef" />
       <MemberSignature Language="C++ CLI" Value="MethodDef" />
+      <MemberSignature Language="F#" Value="MethodDef = 6" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodDef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -817,6 +854,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodImpl" />
       <MemberSignature Language="VB.NET" Value="MethodImpl" />
       <MemberSignature Language="C++ CLI" Value="MethodImpl" />
+      <MemberSignature Language="F#" Value="MethodImpl = 25" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -839,6 +877,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodPtr" />
       <MemberSignature Language="VB.NET" Value="MethodPtr" />
       <MemberSignature Language="C++ CLI" Value="MethodPtr" />
+      <MemberSignature Language="F#" Value="MethodPtr = 5" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -861,6 +900,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodSemantics" />
       <MemberSignature Language="VB.NET" Value="MethodSemantics" />
       <MemberSignature Language="C++ CLI" Value="MethodSemantics" />
+      <MemberSignature Language="F#" Value="MethodSemantics = 24" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodSemantics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -883,6 +923,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodSpec" />
       <MemberSignature Language="VB.NET" Value="MethodSpec" />
       <MemberSignature Language="C++ CLI" Value="MethodSpec" />
+      <MemberSignature Language="F#" Value="MethodSpec = 43" Usage="System.Reflection.Metadata.Ecma335.TableIndex.MethodSpec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -905,6 +946,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Module" />
       <MemberSignature Language="VB.NET" Value="Module" />
       <MemberSignature Language="C++ CLI" Value="Module" />
+      <MemberSignature Language="F#" Value="Module = 0" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Module" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -927,6 +969,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ModuleRef" />
       <MemberSignature Language="VB.NET" Value="ModuleRef" />
       <MemberSignature Language="C++ CLI" Value="ModuleRef" />
+      <MemberSignature Language="F#" Value="ModuleRef = 26" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ModuleRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -949,6 +992,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.NestedClass" />
       <MemberSignature Language="VB.NET" Value="NestedClass" />
       <MemberSignature Language="C++ CLI" Value="NestedClass" />
+      <MemberSignature Language="F#" Value="NestedClass = 41" Usage="System.Reflection.Metadata.Ecma335.TableIndex.NestedClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -971,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Param" />
       <MemberSignature Language="VB.NET" Value="Param" />
       <MemberSignature Language="C++ CLI" Value="Param" />
+      <MemberSignature Language="F#" Value="Param = 8" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Param" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -993,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ParamPtr" />
       <MemberSignature Language="VB.NET" Value="ParamPtr" />
       <MemberSignature Language="C++ CLI" Value="ParamPtr" />
+      <MemberSignature Language="F#" Value="ParamPtr = 7" Usage="System.Reflection.Metadata.Ecma335.TableIndex.ParamPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1015,6 +1061,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="C++ CLI" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 23" Usage="System.Reflection.Metadata.Ecma335.TableIndex.Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1037,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.PropertyMap" />
       <MemberSignature Language="VB.NET" Value="PropertyMap" />
       <MemberSignature Language="C++ CLI" Value="PropertyMap" />
+      <MemberSignature Language="F#" Value="PropertyMap = 21" Usage="System.Reflection.Metadata.Ecma335.TableIndex.PropertyMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1059,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.PropertyPtr" />
       <MemberSignature Language="VB.NET" Value="PropertyPtr" />
       <MemberSignature Language="C++ CLI" Value="PropertyPtr" />
+      <MemberSignature Language="F#" Value="PropertyPtr = 22" Usage="System.Reflection.Metadata.Ecma335.TableIndex.PropertyPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1081,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.StandAloneSig" />
       <MemberSignature Language="VB.NET" Value="StandAloneSig" />
       <MemberSignature Language="C++ CLI" Value="StandAloneSig" />
+      <MemberSignature Language="F#" Value="StandAloneSig = 17" Usage="System.Reflection.Metadata.Ecma335.TableIndex.StandAloneSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1103,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.StateMachineMethod" />
       <MemberSignature Language="VB.NET" Value="StateMachineMethod" />
       <MemberSignature Language="C++ CLI" Value="StateMachineMethod" />
+      <MemberSignature Language="F#" Value="StateMachineMethod = 54" Usage="System.Reflection.Metadata.Ecma335.TableIndex.StateMachineMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1125,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeDef" />
       <MemberSignature Language="VB.NET" Value="TypeDef" />
       <MemberSignature Language="C++ CLI" Value="TypeDef" />
+      <MemberSignature Language="F#" Value="TypeDef = 2" Usage="System.Reflection.Metadata.Ecma335.TableIndex.TypeDef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1147,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeRef" />
       <MemberSignature Language="VB.NET" Value="TypeRef" />
       <MemberSignature Language="C++ CLI" Value="TypeRef" />
+      <MemberSignature Language="F#" Value="TypeRef = 1" Usage="System.Reflection.Metadata.Ecma335.TableIndex.TypeRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -1169,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeSpec" />
       <MemberSignature Language="VB.NET" Value="TypeSpec" />
       <MemberSignature Language="C++ CLI" Value="TypeSpec" />
+      <MemberSignature Language="F#" Value="TypeSpec = 27" Usage="System.Reflection.Metadata.Ecma335.TableIndex.TypeSpec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

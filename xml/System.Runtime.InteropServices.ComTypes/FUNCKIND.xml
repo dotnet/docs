@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FUNCKIND" />
   <TypeSignature Language="VB.NET" Value="Public Enum FUNCKIND" />
   <TypeSignature Language="C++ CLI" Value="public enum class FUNCKIND" />
+  <TypeSignature Language="F#" Value="type FUNCKIND = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH" />
       <MemberSignature Language="VB.NET" Value="FUNC_DISPATCH" />
       <MemberSignature Language="C++ CLI" Value="FUNC_DISPATCH" />
+      <MemberSignature Language="F#" Value="FUNC_DISPATCH = 4" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL" />
       <MemberSignature Language="VB.NET" Value="FUNC_NONVIRTUAL" />
       <MemberSignature Language="C++ CLI" Value="FUNC_NONVIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_NONVIRTUAL = 2" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL" />
       <MemberSignature Language="VB.NET" Value="FUNC_PUREVIRTUAL" />
       <MemberSignature Language="C++ CLI" Value="FUNC_PUREVIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_PUREVIRTUAL = 1" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC" />
       <MemberSignature Language="VB.NET" Value="FUNC_STATIC" />
       <MemberSignature Language="C++ CLI" Value="FUNC_STATIC" />
+      <MemberSignature Language="F#" Value="FUNC_STATIC = 3" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL" />
       <MemberSignature Language="VB.NET" Value="FUNC_VIRTUAL" />
       <MemberSignature Language="C++ CLI" Value="FUNC_VIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_VIRTUAL = 0" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexHttpBindingCollectionElement&#xA;Inherits MexBindingBindingCollectionElement(Of WSHttpBinding, MexHttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MexHttpBindingCollectionElement : System::ServiceModel::Configuration::MexBindingBindingCollectionElement&lt;System::ServiceModel::WSHttpBinding ^, System::ServiceModel::Configuration::MexHttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type MexHttpBindingCollectionElement = class&#xA;    inherit MexBindingBindingCollectionElement&lt;WSHttpBinding, MexHttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexHttpBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="mexHttpBindingCollectionElement.GetDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

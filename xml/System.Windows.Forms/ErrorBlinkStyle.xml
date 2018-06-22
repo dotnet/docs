@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ErrorBlinkStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ErrorBlinkStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class ErrorBlinkStyle" />
+  <TypeSignature Language="F#" Value="type ErrorBlinkStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink" />
       <MemberSignature Language="VB.NET" Value="AlwaysBlink" />
       <MemberSignature Language="C++ CLI" Value="AlwaysBlink" />
+      <MemberSignature Language="F#" Value="AlwaysBlink = 1" Usage="System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError" />
       <MemberSignature Language="VB.NET" Value="BlinkIfDifferentError" />
       <MemberSignature Language="C++ CLI" Value="BlinkIfDifferentError" />
+      <MemberSignature Language="F#" Value="BlinkIfDifferentError = 0" Usage="System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ErrorBlinkStyle.NeverBlink" />
       <MemberSignature Language="VB.NET" Value="NeverBlink" />
       <MemberSignature Language="C++ CLI" Value="NeverBlink" />
+      <MemberSignature Language="F#" Value="NeverBlink = 2" Usage="System.Windows.Forms.ErrorBlinkStyle.NeverBlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

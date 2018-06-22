@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleManagerEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleManagerEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type RoleManagerEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleManagerEventArgs.#ctor(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleManagerEventArgs(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.RoleManagerEventArgs : System.Web.HttpContext -&gt; System.Web.Security.RoleManagerEventArgs" Usage="new System.Web.Security.RoleManagerEventArgs context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleManagerEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.RoleManagerEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleManagerEventArgs.RolesPopulated" />
       <MemberSignature Language="VB.NET" Value="Public Property RolesPopulated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RolesPopulated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RolesPopulated : bool with get, set" Usage="System.Web.Security.RoleManagerEventArgs.RolesPopulated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

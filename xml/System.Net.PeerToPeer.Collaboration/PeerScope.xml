@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerScope" />
+  <TypeSignature Language="F#" Value="type PeerScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Net.PeerToPeer.Collaboration.PeerScope.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.Internet" />
       <MemberSignature Language="VB.NET" Value="Internet" />
       <MemberSignature Language="C++ CLI" Value="Internet" />
+      <MemberSignature Language="F#" Value="Internet = 2" Usage="System.Net.PeerToPeer.Collaboration.PeerScope.Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.NearMe" />
       <MemberSignature Language="VB.NET" Value="NearMe" />
       <MemberSignature Language="C++ CLI" Value="NearMe" />
+      <MemberSignature Language="F#" Value="NearMe = 1" Usage="System.Net.PeerToPeer.Collaboration.PeerScope.NearMe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.PeerToPeer.Collaboration.PeerScope.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

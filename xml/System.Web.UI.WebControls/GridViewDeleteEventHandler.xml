@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewDeleteEventHandler(sender As Object, e As GridViewDeleteEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void GridViewDeleteEventHandler(System::Object ^ sender, GridViewDeleteEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type GridViewDeleteEventHandler = delegate of obj * GridViewDeleteEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

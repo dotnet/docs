@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GradientSpreadMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum GradientSpreadMethod" />
   <TypeSignature Language="C++ CLI" Value="public enum class GradientSpreadMethod" />
+  <TypeSignature Language="F#" Value="type GradientSpreadMethod = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@ Gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Pad" />
       <MemberSignature Language="VB.NET" Value="Pad" />
       <MemberSignature Language="C++ CLI" Value="Pad" />
+      <MemberSignature Language="F#" Value="Pad = 0" Usage="System.Windows.Media.GradientSpreadMethod.Pad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@ Gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Reflect" />
       <MemberSignature Language="VB.NET" Value="Reflect" />
       <MemberSignature Language="C++ CLI" Value="Reflect" />
+      <MemberSignature Language="F#" Value="Reflect = 1" Usage="System.Windows.Media.GradientSpreadMethod.Reflect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@ Gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Repeat" />
       <MemberSignature Language="VB.NET" Value="Repeat" />
       <MemberSignature Language="C++ CLI" Value="Repeat" />
+      <MemberSignature Language="F#" Value="Repeat = 2" Usage="System.Windows.Media.GradientSpreadMethod.Repeat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

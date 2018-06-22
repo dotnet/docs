@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeechAudioFormatInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeechAudioFormatInfo" />
+  <TypeSignature Language="F#" Value="type SpeechAudioFormatInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.#ctor(System.Int32,System.Speech.AudioFormat.AudioBitsPerSample,System.Speech.AudioFormat.AudioChannel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (samplesPerSecond As Integer, bitsPerSample As AudioBitsPerSample, channel As AudioChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpeechAudioFormatInfo(int samplesPerSecond, System::Speech::AudioFormat::AudioBitsPerSample bitsPerSample, System::Speech::AudioFormat::AudioChannel channel);" />
+      <MemberSignature Language="F#" Value="new System.Speech.AudioFormat.SpeechAudioFormatInfo : int * System.Speech.AudioFormat.AudioBitsPerSample * System.Speech.AudioFormat.AudioChannel -&gt; System.Speech.AudioFormat.SpeechAudioFormatInfo" Usage="new System.Speech.AudioFormat.SpeechAudioFormatInfo (samplesPerSecond, bitsPerSample, channel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -104,6 +106,7 @@ namespace SampleSynthesis
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Speech.AudioFormat.EncodingFormat encodingFormat, int32 samplesPerSecond, int32 bitsPerSample, int32 channelCount, int32 averageBytesPerSecond, int32 blockAlign, unsigned int8[] formatSpecificData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.#ctor(System.Speech.AudioFormat.EncodingFormat,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpeechAudioFormatInfo(System::Speech::AudioFormat::EncodingFormat encodingFormat, int samplesPerSecond, int bitsPerSample, int channelCount, int averageBytesPerSecond, int blockAlign, cli::array &lt;System::Byte&gt; ^ formatSpecificData);" />
+      <MemberSignature Language="F#" Value="new System.Speech.AudioFormat.SpeechAudioFormatInfo : System.Speech.AudioFormat.EncodingFormat * int * int * int * int * int * byte[] -&gt; System.Speech.AudioFormat.SpeechAudioFormatInfo" Usage="new System.Speech.AudioFormat.SpeechAudioFormatInfo (encodingFormat, samplesPerSecond, bitsPerSample, channelCount, averageBytesPerSecond, blockAlign, formatSpecificData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -141,6 +144,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.AverageBytesPerSecond" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AverageBytesPerSecond As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AverageBytesPerSecond { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AverageBytesPerSecond : int" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.AverageBytesPerSecond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -166,6 +170,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BitsPerSample As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BitsPerSample { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BitsPerSample : int" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -191,6 +196,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockAlign As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BlockAlign { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlockAlign : int" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -229,6 +235,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.ChannelCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelCount : int" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.ChannelCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -249,6 +256,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.EncodingFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncodingFormat As EncodingFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::AudioFormat::EncodingFormat EncodingFormat { System::Speech::AudioFormat::EncodingFormat get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncodingFormat : System.Speech.AudioFormat.EncodingFormat" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.EncodingFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -269,6 +277,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="speechAudioFormatInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -300,6 +309,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.FormatSpecificData" />
       <MemberSignature Language="VB.NET" Value="Public Function FormatSpecificData () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ FormatSpecificData();" />
+      <MemberSignature Language="F#" Value="member this.FormatSpecificData : unit -&gt; byte[]" Usage="speechAudioFormatInfo.FormatSpecificData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -321,6 +331,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="speechAudioFormatInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -342,6 +353,7 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.SamplesPerSecond" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SamplesPerSecond As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SamplesPerSecond { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SamplesPerSecond : int" Usage="System.Speech.AudioFormat.SpeechAudioFormatInfo.SamplesPerSecond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

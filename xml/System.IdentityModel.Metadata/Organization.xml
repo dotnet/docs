@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.Organization" />
   <TypeSignature Language="VB.NET" Value="Public Class Organization" />
   <TypeSignature Language="C++ CLI" Value="public ref class Organization" />
+  <TypeSignature Language="F#" Value="type Organization = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.Organization.#ctor(System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedUri})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (names As LocalizedEntryCollection(Of LocalizedName), displayNames As LocalizedEntryCollection(Of LocalizedName), urls As LocalizedEntryCollection(Of LocalizedUri))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Organization(System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ names, System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ displayNames, System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedUri ^&gt; ^ urls);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.Organization : System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; * System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; * System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt; -&gt; System.IdentityModel.Metadata.Organization" Usage="new System.IdentityModel.Metadata.Organization (names, displayNames, urls)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.DisplayNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayNames As LocalizedEntryCollection(Of LocalizedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ DisplayNames { System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayNames : System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" Usage="System.IdentityModel.Metadata.Organization.DisplayNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.Names" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Names As LocalizedEntryCollection(Of LocalizedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ Names { System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedName ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Names : System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" Usage="System.IdentityModel.Metadata.Organization.Names" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.Urls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Urls As LocalizedEntryCollection(Of LocalizedUri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedUri ^&gt; ^ Urls { System::IdentityModel::Metadata::LocalizedEntryCollection&lt;System::IdentityModel::Metadata::LocalizedUri ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Urls : System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;" Usage="System.IdentityModel.Metadata.Organization.Urls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

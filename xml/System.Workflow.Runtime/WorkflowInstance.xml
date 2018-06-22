@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowInstance" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstance sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowInstance = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="workflowInstance.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyWorkflowChanges(class System.Workflow.ComponentModel.WorkflowChanges workflowChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.ApplyWorkflowChanges(System.Workflow.ComponentModel.WorkflowChanges)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyWorkflowChanges(System::Workflow::ComponentModel::WorkflowChanges ^ workflowChanges);" />
+      <MemberSignature Language="F#" Value="member this.ApplyWorkflowChanges : System.Workflow.ComponentModel.WorkflowChanges -&gt; unit" Usage="workflowInstance.ApplyWorkflowChanges workflowChanges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItem(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnqueueItem (queueName As IComparable, item As Object, pendingWork As IPendingWork, workItem As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnqueueItem(IComparable ^ queueName, System::Object ^ item, System::Workflow::Runtime::IPendingWork ^ pendingWork, System::Object ^ workItem);" />
+      <MemberSignature Language="F#" Value="member this.EnqueueItem : IComparable * obj * System.Workflow.Runtime.IPendingWork * obj -&gt; unit" Usage="workflowInstance.EnqueueItem (queueName, item, pendingWork, workItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnqueueItemOnIdle (queueName As IComparable, item As Object, pendingWork As IPendingWork, workItem As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnqueueItemOnIdle(IComparable ^ queueName, System::Object ^ item, System::Workflow::Runtime::IPendingWork ^ pendingWork, System::Object ^ workItem);" />
+      <MemberSignature Language="F#" Value="member this.EnqueueItemOnIdle : IComparable * obj * System.Workflow.Runtime.IPendingWork * obj -&gt; unit" Usage="workflowInstance.EnqueueItemOnIdle (queueName, item, pendingWork, workItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="workflowInstance.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="workflowInstance.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -312,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowDefinition () As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ GetWorkflowDefinition();" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflowDefinition : unit -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowInstance.GetWorkflowDefinition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowNextTimerExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowNextTimerExpiration () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime GetWorkflowNextTimerExpiration();" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflowNextTimerExpiration : unit -&gt; DateTime" Usage="workflowInstance.GetWorkflowNextTimerExpiration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -382,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowQueueData () As ReadOnlyCollection(Of WorkflowQueueInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::Runtime::WorkflowQueueInfo ^&gt; ^ GetWorkflowQueueData();" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflowQueueData : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Runtime.WorkflowQueueInfo&gt;" Usage="workflowInstance.GetWorkflowQueueData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -421,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowInstance.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Workflow.Runtime.WorkflowInstance.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -463,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Load" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
+      <MemberSignature Language="F#" Value="member this.Load : unit -&gt; unit" Usage="workflowInstance.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -499,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.ReloadTrackingProfiles" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReloadTrackingProfiles ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReloadTrackingProfiles();" />
+      <MemberSignature Language="F#" Value="member this.ReloadTrackingProfiles : unit -&gt; unit" Usage="workflowInstance.ReloadTrackingProfiles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -527,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="workflowInstance.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -563,6 +577,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="workflowInstance.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -605,6 +620,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Suspend(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Suspend (error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Suspend(System::String ^ error);" />
+      <MemberSignature Language="F#" Value="member this.Suspend : string -&gt; unit" Usage="workflowInstance.Suspend error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -647,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Terminate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Terminate (error As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(System::String ^ error);" />
+      <MemberSignature Language="F#" Value="member this.Terminate : string -&gt; unit" Usage="workflowInstance.Terminate error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -690,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.TryUnload" />
       <MemberSignature Language="VB.NET" Value="Public Function TryUnload () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryUnload();" />
+      <MemberSignature Language="F#" Value="member this.TryUnload : unit -&gt; bool" Usage="workflowInstance.TryUnload " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -730,6 +748,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Unload" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unload ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unload();" />
+      <MemberSignature Language="F#" Value="member this.Unload : unit -&gt; unit" Usage="workflowInstance.Unload " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -768,6 +787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowInstance.WorkflowRuntime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowRuntime As WorkflowRuntime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowRuntime ^ WorkflowRuntime { System::Workflow::Runtime::WorkflowRuntime ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowRuntime : System.Workflow.Runtime.WorkflowRuntime" Usage="System.Workflow.Runtime.WorkflowInstance.WorkflowRuntime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

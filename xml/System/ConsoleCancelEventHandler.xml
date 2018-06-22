@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ConsoleCancelEventHandler(sender As Object, e As ConsoleCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ConsoleCancelEventHandler(System::Object ^ sender, ConsoleCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ConsoleCancelEventHandler = delegate of obj * ConsoleCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

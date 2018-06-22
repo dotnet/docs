@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleContentExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSimpleContentExtension&#xA;Inherits XmlSchemaContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleContentExtension : System::Xml::Schema::XmlSchemaContent" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSimpleContentExtension = class&#xA;    inherit XmlSchemaContent" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleContentExtension.AnyAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property AnyAttribute As XmlSchemaAnyAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnyAttribute ^ AnyAttribute { System::Xml::Schema::XmlSchemaAnyAttribute ^ get(); void set(System::Xml::Schema::XmlSchemaAnyAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AnyAttribute : System.Xml.Schema.XmlSchemaAnyAttribute with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleContentExtension.AnyAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleContentExtension.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Attributes { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaSimpleContentExtension.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleContentExtension.BaseTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseTypeName As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ BaseTypeName { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseTypeName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaSimpleContentExtension.BaseTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

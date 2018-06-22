@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ContextToken" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextToken&#xA;Inherits DependencyObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContextToken sealed : System::Workflow::ComponentModel::DependencyObject" />
+  <TypeSignature Language="F#" Value="type ContextToken = class&#xA;    inherit DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ContextToken.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextToken(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ContextToken : string -&gt; System.Workflow.Activities.ContextToken" Usage="new System.Workflow.Activities.ContextToken name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ContextToken.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.ContextToken.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ContextToken.OwnerActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerActivityName : string with get, set" Usage="System.Workflow.Activities.ContextToken.OwnerActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ContextToken.RootContextName" />
       <MemberSignature Language="VB.NET" Value="Public Const RootContextName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ RootContextName;" />
+      <MemberSignature Language="F#" Value="val mutable RootContextName : string" Usage="System.Workflow.Activities.ContextToken.RootContextName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionCodeDomSerializer&#xA;Inherits CodeDomSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionCodeDomSerializer : System::ComponentModel::Design::Serialization::CodeDomSerializer" />
+  <TypeSignature Language="F#" Value="type CollectionCodeDomSerializer = class&#xA;    inherit CodeDomSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.MethodSupportsSerialization(System.Reflection.MethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MethodSupportsSerialization (method As MethodInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool MethodSupportsSerialization(System::Reflection::MethodInfo ^ method);" />
+      <MemberSignature Language="F#" Value="member this.MethodSupportsSerialization : System.Reflection.MethodInfo -&gt; bool" Usage="collectionCodeDomSerializer.MethodSupportsSerialization method" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize (manager As IDesignerSerializationManager, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="collectionCodeDomSerializer.Serialize (manager, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.SerializeCollection(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeExpression,System.Type,System.Collections.ICollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SerializeCollection (manager As IDesignerSerializationManager, targetExpression As CodeExpression, targetType As Type, originalCollection As ICollection, valuesToSerialize As ICollection) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SerializeCollection(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeExpression ^ targetExpression, Type ^ targetType, System::Collections::ICollection ^ originalCollection, System::Collections::ICollection ^ valuesToSerialize);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeCollection : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeExpression * Type * System.Collections.ICollection * System.Collections.ICollection -&gt; obj&#xA;override this.SerializeCollection : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeExpression * Type * System.Collections.ICollection * System.Collections.ICollection -&gt; obj" Usage="collectionCodeDomSerializer.SerializeCollection (manager, targetExpression, targetType, originalCollection, valuesToSerialize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

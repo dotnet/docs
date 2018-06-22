@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Module DbExpressionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbExpressionBuilder abstract sealed" />
+  <TypeSignature Language="F#" Value="type DbExpressionBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Aggregate(System.Data.Metadata.Edm.EdmFunction,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Aggregate (function As EdmFunction, argument As DbExpression) As DbFunctionAggregate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFunctionAggregate ^ Aggregate(System::Data::Metadata::Edm::EdmFunction ^ function, System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Aggregate : System.Data.Metadata.Edm.EdmFunction * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbFunctionAggregate" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Aggregate (function, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.AggregateDistinct(System.Data.Metadata.Edm.EdmFunction,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AggregateDistinct (function As EdmFunction, argument As DbExpression) As DbFunctionAggregate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFunctionAggregate ^ AggregateDistinct(System::Data::Metadata::Edm::EdmFunction ^ function, System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member AggregateDistinct : System.Data.Metadata.Edm.EdmFunction * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbFunctionAggregate" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.AggregateDistinct (function, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.All(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function All (source As DbExpression, predicate As Func(Of DbExpression, DbExpression)) As DbQuantifierExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbQuantifierExpression ^ All(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member All : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbQuantifierExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.All (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.All(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function All (input As DbExpressionBinding, predicate As DbExpression) As DbQuantifierExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbQuantifierExpression ^ All(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpression ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member All : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbQuantifierExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.All (input, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.And(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function And (left As DbExpression, right As DbExpression) As DbAndExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbAndExpression ^ And(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member And : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbAndExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.And (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Any (source As DbExpression) As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExpression ^ Any(System::Data::Common::CommandTrees::DbExpression ^ source);" />
+      <MemberSignature Language="F#" Value="static member Any : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Any (source As DbExpression, predicate As Func(Of DbExpression, DbExpression)) As DbQuantifierExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbQuantifierExpression ^ Any(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Any : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbQuantifierExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Any (input As DbExpressionBinding, predicate As DbExpression) As DbQuantifierExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbQuantifierExpression ^ Any(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpression ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Any : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbQuantifierExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Any (input, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.As(System.Data.Common.CommandTrees.DbAggregate,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function As (value As DbAggregate, alias As String) As KeyValuePair(Of String, DbAggregate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbAggregate ^&gt; As(System::Data::Common::CommandTrees::DbAggregate ^ value, System::String ^ alias);" />
+      <MemberSignature Language="F#" Value="static member As : System.Data.Common.CommandTrees.DbAggregate * string -&gt; System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbAggregate&gt;" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.As (value, alias)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.As(System.Data.Common.CommandTrees.DbExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function As (value As DbExpression, alias As String) As KeyValuePair(Of String, DbExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt; As(System::Data::Common::CommandTrees::DbExpression ^ value, System::String ^ alias);" />
+      <MemberSignature Language="F#" Value="static member As : System.Data.Common.CommandTrees.DbExpression * string -&gt; System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.As (value, alias)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -335,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Bind(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Bind (input As DbExpression) As DbExpressionBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExpressionBinding ^ Bind(System::Data::Common::CommandTrees::DbExpression ^ input);" />
+      <MemberSignature Language="F#" Value="static member Bind : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbExpressionBinding" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Bind input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.BindAs(System.Data.Common.CommandTrees.DbExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BindAs (input As DbExpression, varName As String) As DbExpressionBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExpressionBinding ^ BindAs(System::Data::Common::CommandTrees::DbExpression ^ input, System::String ^ varName);" />
+      <MemberSignature Language="F#" Value="static member BindAs : System.Data.Common.CommandTrees.DbExpression * string -&gt; System.Data.Common.CommandTrees.DbExpressionBinding" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.BindAs (input, varName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -393,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Case(System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression},System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression},System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Case (whenExpressions As IEnumerable(Of DbExpression), thenExpressions As IEnumerable(Of DbExpression), elseExpression As DbExpression) As DbCaseExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbCaseExpression ^ Case(System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ whenExpressions, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ thenExpressions, System::Data::Common::CommandTrees::DbExpression ^ elseExpression);" />
+      <MemberSignature Language="F#" Value="static member Case : seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbCaseExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Case (whenExpressions, thenExpressions, elseExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -425,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CastTo(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CastTo (argument As DbExpression, toType As TypeUsage) As DbCastExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbCastExpression ^ CastTo(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ toType);" />
+      <MemberSignature Language="F#" Value="static member CastTo : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbCastExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CastTo (argument, toType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -463,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Constant(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Constant (value As Object) As DbConstantExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbConstantExpression ^ Constant(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Constant : obj -&gt; System.Data.Common.CommandTrees.DbConstantExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Constant value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -491,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Constant(System.Data.Metadata.Edm.TypeUsage,System.Object)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Constant (constantType As TypeUsage, value As Object) As DbConstantExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbConstantExpression ^ Constant(System::Data::Metadata::Edm::TypeUsage ^ constantType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Constant : System.Data.Metadata.Edm.TypeUsage * obj -&gt; System.Data.Common.CommandTrees.DbConstantExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Constant (constantType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -529,6 +546,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Common.CommandTrees.DbExpression&gt; keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ CreateRef(System::Data::Metadata::Edm::EntitySet ^ entitySet, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ keyValues);" />
+      <MemberSignature Language="F#" Value="static member CreateRef : System.Data.Metadata.Edm.EntitySet * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef (entitySet, keyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -557,6 +575,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Common.CommandTrees.DbExpression[] keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ CreateRef(System::Data::Metadata::Edm::EntitySet ^ entitySet, ... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ keyValues);" />
+      <MemberSignature Language="F#" Value="static member CreateRef : System.Data.Metadata.Edm.EntitySet * System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef (entitySet, keyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -591,6 +610,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Metadata.Edm.EntityType entityType, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Common.CommandTrees.DbExpression&gt; keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Data.Metadata.Edm.EntityType,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ CreateRef(System::Data::Metadata::Edm::EntitySet ^ entitySet, System::Data::Metadata::Edm::EntityType ^ entityType, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ keyValues);" />
+      <MemberSignature Language="F#" Value="static member CreateRef : System.Data.Metadata.Edm.EntitySet * System.Data.Metadata.Edm.EntityType * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef (entitySet, entityType, keyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -621,6 +641,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Metadata.Edm.EntityType entityType, class System.Data.Common.CommandTrees.DbExpression[] keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Data.Metadata.Edm.EntityType,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ CreateRef(System::Data::Metadata::Edm::EntitySet ^ entitySet, System::Data::Metadata::Edm::EntityType ^ entityType, ... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ keyValues);" />
+      <MemberSignature Language="F#" Value="static member CreateRef : System.Data.Metadata.Edm.EntitySet * System.Data.Metadata.Edm.EntityType * System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef (entitySet, entityType, keyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -667,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossApply(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CrossApply (source As DbExpression, apply As Func(Of DbExpression, KeyValuePair(Of String, DbExpression))) As DbApplyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbApplyExpression ^ CrossApply(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt;&gt; ^ apply);" />
+      <MemberSignature Language="F#" Value="static member CrossApply : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;&gt; -&gt; System.Data.Common.CommandTrees.DbApplyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossApply (source, apply)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -695,6 +717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossApply(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpressionBinding)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CrossApply (input As DbExpressionBinding, apply As DbExpressionBinding) As DbApplyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbApplyExpression ^ CrossApply(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpressionBinding ^ apply);" />
+      <MemberSignature Language="F#" Value="static member CrossApply : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpressionBinding -&gt; System.Data.Common.CommandTrees.DbApplyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossApply (input, apply)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -723,6 +746,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossJoin(System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpressionBinding})" />
       <MemberSignature Language="VB.NET" Value="Public Function CrossJoin (inputs As IEnumerable(Of DbExpressionBinding)) As DbCrossJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbCrossJoinExpression ^ CrossJoin(System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpressionBinding ^&gt; ^ inputs);" />
+      <MemberSignature Language="F#" Value="static member CrossJoin : seq&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt; -&gt; System.Data.Common.CommandTrees.DbCrossJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CrossJoin inputs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -751,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Deref(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Deref (argument As DbExpression) As DbDerefExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbDerefExpression ^ Deref(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Deref : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbDerefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Deref argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -779,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Distinct(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Distinct (argument As DbExpression) As DbDistinctExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbDistinctExpression ^ Distinct(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Distinct : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbDistinctExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Distinct argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -807,6 +833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Divide(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Divide (left As DbExpression, right As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Divide(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Divide (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -836,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Element(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Element (argument As DbExpression) As DbElementExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbElementExpression ^ Element(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Element : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbElementExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Element argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -864,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Equal(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Equal (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ Equal(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Equal : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Equal (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -893,6 +922,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Except(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Except (left As DbExpression, right As DbExpression) As DbExceptExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExceptExpression ^ Except(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Except : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbExceptExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Except (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -922,6 +952,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Exists(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Exists (argument As DbExpression) As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExpression ^ Exists(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Exists : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Exists argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -950,6 +981,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.False" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property False As DbConstantExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::Common::CommandTrees::DbConstantExpression ^ False { System::Data::Common::CommandTrees::DbConstantExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.False : System.Data.Common.CommandTrees.DbConstantExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.False" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -970,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Filter(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Filter (input As DbExpressionBinding, predicate As DbExpression) As DbFilterExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFilterExpression ^ Filter(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpression ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Filter : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbFilterExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Filter (input, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1009,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.FullOuterJoin(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FullOuterJoin (left As DbExpression, right As DbExpression, joinCondition As Func(Of DbExpression, DbExpression, DbExpression)) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ FullOuterJoin(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member FullOuterJoin : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.FullOuterJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1039,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.FullOuterJoin(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FullOuterJoin (left As DbExpressionBinding, right As DbExpressionBinding, joinCondition As DbExpression) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ FullOuterJoin(System::Data::Common::CommandTrees::DbExpressionBinding ^ left, System::Data::Common::CommandTrees::DbExpressionBinding ^ right, System::Data::Common::CommandTrees::DbExpression ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member FullOuterJoin : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.FullOuterJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1070,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GetEntityRef(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEntityRef (argument As DbExpression) As DbEntityRefExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbEntityRefExpression ^ GetEntityRef(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member GetEntityRef : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbEntityRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GetEntityRef argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1098,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GetRefKey(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRefKey (argument As DbExpression) As DbRefKeyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefKeyExpression ^ GetRefKey(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member GetRefKey : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbRefKeyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GetRefKey argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1126,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GreaterThan(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GreaterThan (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ GreaterThan(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GreaterThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1155,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GreaterThanOrEqual(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GreaterThanOrEqual (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ GreaterThanOrEqual(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GreaterThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1184,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBind(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBind (input As DbExpression) As DbGroupExpressionBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbGroupExpressionBinding ^ GroupBind(System::Data::Common::CommandTrees::DbExpression ^ input);" />
+      <MemberSignature Language="F#" Value="static member GroupBind : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbGroupExpressionBinding" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBind input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1212,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBindAs(System.Data.Common.CommandTrees.DbExpression,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBindAs (input As DbExpression, varName As String, groupVarName As String) As DbGroupExpressionBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbGroupExpressionBinding ^ GroupBindAs(System::Data::Common::CommandTrees::DbExpression ^ input, System::String ^ varName, System::String ^ groupVarName);" />
+      <MemberSignature Language="F#" Value="static member GroupBindAs : System.Data.Common.CommandTrees.DbExpression * string * string -&gt; System.Data.Common.CommandTrees.DbGroupExpressionBinding" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBindAs (input, varName, groupVarName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1244,6 +1285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBy(System.Data.Common.CommandTrees.DbGroupExpressionBinding,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbAggregate}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GroupBy (input As DbGroupExpressionBinding, keys As IEnumerable(Of KeyValuePair(Of String, DbExpression)), aggregates As IEnumerable(Of KeyValuePair(Of String, DbAggregate))) As DbGroupByExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbGroupByExpression ^ GroupBy(System::Data::Common::CommandTrees::DbGroupExpressionBinding ^ input, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt;&gt; ^ keys, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbAggregate ^&gt;&gt; ^ aggregates);" />
+      <MemberSignature Language="F#" Value="static member GroupBy : System.Data.Common.CommandTrees.DbGroupExpressionBinding * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;&gt; * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbAggregate&gt;&gt; -&gt; System.Data.Common.CommandTrees.DbGroupByExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.GroupBy (input, keys, aggregates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1291,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.InnerJoin(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InnerJoin (left As DbExpression, right As DbExpression, joinCondition As Func(Of DbExpression, DbExpression, DbExpression)) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ InnerJoin(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member InnerJoin : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.InnerJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1321,6 +1364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.InnerJoin(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InnerJoin (left As DbExpressionBinding, right As DbExpressionBinding, joinCondition As DbExpression) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ InnerJoin(System::Data::Common::CommandTrees::DbExpressionBinding ^ left, System::Data::Common::CommandTrees::DbExpressionBinding ^ right, System::Data::Common::CommandTrees::DbExpression ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member InnerJoin : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.InnerJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1353,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Intersect(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Intersect (left As DbExpression, right As DbExpression) As DbIntersectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbIntersectExpression ^ Intersect(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Intersect : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbIntersectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Intersect (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1391,6 +1436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Common.CommandTrees.DbLambda,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Invoke (lambda As DbLambda, arguments As IEnumerable(Of DbExpression)) As DbLambdaExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLambdaExpression ^ Invoke(System::Data::Common::CommandTrees::DbLambda ^ lambda, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Data.Common.CommandTrees.DbLambda * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbLambdaExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke (lambda, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1420,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Common.CommandTrees.DbLambda,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Invoke (lambda As DbLambda, ParamArray arguments As DbExpression()) As DbLambdaExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLambdaExpression ^ Invoke(System::Data::Common::CommandTrees::DbLambda ^ lambda, ... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Data.Common.CommandTrees.DbLambda * System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbLambdaExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke (lambda, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1455,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Metadata.Edm.EdmFunction,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Invoke (function As EdmFunction, arguments As IEnumerable(Of DbExpression)) As DbFunctionExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFunctionExpression ^ Invoke(System::Data::Metadata::Edm::EdmFunction ^ function, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Data.Metadata.Edm.EdmFunction * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbFunctionExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke (function, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1484,6 +1532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Metadata.Edm.EdmFunction,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Invoke (function As EdmFunction, ParamArray arguments As DbExpression()) As DbFunctionExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFunctionExpression ^ Invoke(System::Data::Metadata::Edm::EdmFunction ^ function, ... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Data.Metadata.Edm.EdmFunction * System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbFunctionExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke (function, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1519,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsEmpty(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsEmpty (argument As DbExpression) As DbIsEmptyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbIsEmptyExpression ^ IsEmpty(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member IsEmpty : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbIsEmptyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsEmpty argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1547,6 +1597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsNull(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsNull (argument As DbExpression) As DbIsNullExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbIsNullExpression ^ IsNull(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member IsNull : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbIsNullExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsNull argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1575,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsOf(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOf (argument As DbExpression, type As TypeUsage) As DbIsOfExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbIsOfExpression ^ IsOf(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ type);" />
+      <MemberSignature Language="F#" Value="static member IsOf : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbIsOfExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsOf (argument, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1612,6 +1664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsOfOnly(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOfOnly (argument As DbExpression, type As TypeUsage) As DbIsOfExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbIsOfExpression ^ IsOfOnly(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ type);" />
+      <MemberSignature Language="F#" Value="static member IsOfOnly : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbIsOfExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.IsOfOnly (argument, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1649,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Join(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Join (outer As DbExpression, inner As DbExpression, outerKey As Func(Of DbExpression, DbExpression), innerKey As Func(Of DbExpression, DbExpression)) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ Join(System::Data::Common::CommandTrees::DbExpression ^ outer, System::Data::Common::CommandTrees::DbExpression ^ inner, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ outerKey, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ innerKey);" />
+      <MemberSignature Language="F#" Value="static member Join : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Join (outer, inner, outerKey, innerKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1681,6 +1735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Join``1(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Join(Of TSelector) (outer As DbExpression, inner As DbExpression, outerKey As Func(Of DbExpression, DbExpression), innerKey As Func(Of DbExpression, DbExpression), selector As Func(Of DbExpression, DbExpression, TSelector)) As DbProjectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSelector&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbProjectExpression ^ Join(System::Data::Common::CommandTrees::DbExpression ^ outer, System::Data::Common::CommandTrees::DbExpression ^ inner, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ outerKey, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ innerKey, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^, TSelector&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Join : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression, 'Selector&gt; -&gt; System.Data.Common.CommandTrees.DbProjectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Join (outer, inner, outerKey, innerKey, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1747,6 +1802,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Lambda(System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbVariableReferenceExpression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Lambda (body As DbExpression, variables As IEnumerable(Of DbVariableReferenceExpression)) As DbLambda" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbLambda ^ Lambda(System::Data::Common::CommandTrees::DbExpression ^ body, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbVariableReferenceExpression ^&gt; ^ variables);" />
+      <MemberSignature Language="F#" Value="static member Lambda : System.Data.Common.CommandTrees.DbExpression * seq&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt; -&gt; System.Data.Common.CommandTrees.DbLambda" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Lambda (body, variables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1777,6 +1833,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Lambda(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Lambda (body As DbExpression, ParamArray variables As DbVariableReferenceExpression()) As DbLambda" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbLambda ^ Lambda(System::Data::Common::CommandTrees::DbExpression ^ body, ... cli::array &lt;System::Data::Common::CommandTrees::DbVariableReferenceExpression ^&gt; ^ variables);" />
+      <MemberSignature Language="F#" Value="static member Lambda : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbVariableReferenceExpression[] -&gt; System.Data.Common.CommandTrees.DbLambda" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Lambda (body, variables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1822,6 +1879,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LeftOuterJoin(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LeftOuterJoin (left As DbExpression, right As DbExpression, joinCondition As Func(Of DbExpression, DbExpression, DbExpression)) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ LeftOuterJoin(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member LeftOuterJoin : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LeftOuterJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1852,6 +1910,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LeftOuterJoin(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LeftOuterJoin (left As DbExpressionBinding, right As DbExpressionBinding, joinCondition As DbExpression) As DbJoinExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbJoinExpression ^ LeftOuterJoin(System::Data::Common::CommandTrees::DbExpressionBinding ^ left, System::Data::Common::CommandTrees::DbExpressionBinding ^ right, System::Data::Common::CommandTrees::DbExpression ^ joinCondition);" />
+      <MemberSignature Language="F#" Value="static member LeftOuterJoin : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbJoinExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LeftOuterJoin (left, right, joinCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1884,6 +1943,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LessThan(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LessThan (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ LessThan(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LessThan (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1913,6 +1973,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LessThanOrEqual(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LessThanOrEqual (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ LessThanOrEqual(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.LessThanOrEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1951,6 +2012,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Like(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Like (argument As DbExpression, pattern As DbExpression) As DbLikeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLikeExpression ^ Like(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Common::CommandTrees::DbExpression ^ pattern);" />
+      <MemberSignature Language="F#" Value="static member Like : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbLikeExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Like (argument, pattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1981,6 +2043,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Like(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Like (argument As DbExpression, pattern As DbExpression, escape As DbExpression) As DbLikeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLikeExpression ^ Like(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Common::CommandTrees::DbExpression ^ pattern, System::Data::Common::CommandTrees::DbExpression ^ escape);" />
+      <MemberSignature Language="F#" Value="static member Like : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbLikeExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Like (argument, pattern, escape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2013,6 +2076,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Limit(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Limit (argument As DbExpression, count As DbExpression) As DbLimitExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLimitExpression ^ Limit(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Common::CommandTrees::DbExpression ^ count);" />
+      <MemberSignature Language="F#" Value="static member Limit : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbLimitExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Limit (argument, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2043,6 +2107,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Minus(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Minus (left As DbExpression, right As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Minus(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Minus : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Minus (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2072,6 +2137,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Modulo(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Modulo (left As DbExpression, right As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Modulo(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Modulo : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Modulo (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2101,6 +2167,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Multiply(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Multiply (left As DbExpression, right As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Multiply(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2139,6 +2206,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Navigate(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.RelationshipEndMember,System.Data.Metadata.Edm.RelationshipEndMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Navigate (navigateFrom As DbExpression, fromEnd As RelationshipEndMember, toEnd As RelationshipEndMember) As DbRelationshipNavigationExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRelationshipNavigationExpression ^ Navigate(System::Data::Common::CommandTrees::DbExpression ^ navigateFrom, System::Data::Metadata::Edm::RelationshipEndMember ^ fromEnd, System::Data::Metadata::Edm::RelationshipEndMember ^ toEnd);" />
+      <MemberSignature Language="F#" Value="static member Navigate : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.RelationshipEndMember * System.Data.Metadata.Edm.RelationshipEndMember -&gt; System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Navigate (navigateFrom, fromEnd, toEnd)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2178,6 +2246,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Navigate(System.Data.Metadata.Edm.RelationshipType,System.String,System.String,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Navigate (type As RelationshipType, fromEndName As String, toEndName As String, navigateFrom As DbExpression) As DbRelationshipNavigationExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRelationshipNavigationExpression ^ Navigate(System::Data::Metadata::Edm::RelationshipType ^ type, System::String ^ fromEndName, System::String ^ toEndName, System::Data::Common::CommandTrees::DbExpression ^ navigateFrom);" />
+      <MemberSignature Language="F#" Value="static member Navigate : System.Data.Metadata.Edm.RelationshipType * string * string * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Navigate (type, fromEndName, toEndName, navigateFrom)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2219,6 +2288,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Negate(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Negate (argument As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Negate(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Negate : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Negate argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2255,6 +2325,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.New(System.Data.Metadata.Edm.TypeUsage,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function New (instanceType As TypeUsage, arguments As IEnumerable(Of DbExpression)) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ New(System::Data::Metadata::Edm::TypeUsage ^ instanceType, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member New : System.Data.Metadata.Edm.TypeUsage * seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.New (instanceType, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2292,6 +2363,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.New(System.Data.Metadata.Edm.TypeUsage,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function New (instanceType As TypeUsage, ParamArray arguments As DbExpression()) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ New(System::Data::Metadata::Edm::TypeUsage ^ instanceType, ... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="static member New : System.Data.Metadata.Edm.TypeUsage * System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.New (instanceType, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2344,6 +2416,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewCollection(System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="Public Function NewCollection (elements As IEnumerable(Of DbExpression)) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ NewCollection(System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="static member NewCollection : seq&lt;System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewCollection elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2372,6 +2445,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewCollection(System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function NewCollection (ParamArray elements As DbExpression()) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ NewCollection(... cli::array &lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ elements);" />
+      <MemberSignature Language="F#" Value="static member NewCollection : System.Data.Common.CommandTrees.DbExpression[] -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewCollection elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2406,6 +2480,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewEmptyCollection(System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function NewEmptyCollection (collectionType As TypeUsage) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ NewEmptyCollection(System::Data::Metadata::Edm::TypeUsage ^ collectionType);" />
+      <MemberSignature Language="F#" Value="static member NewEmptyCollection : System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewEmptyCollection collectionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2434,6 +2509,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewRow(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}})" />
       <MemberSignature Language="VB.NET" Value="Public Function NewRow (columnValues As IEnumerable(Of KeyValuePair(Of String, DbExpression))) As DbNewInstanceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbNewInstanceExpression ^ NewRow(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt;&gt; ^ columnValues);" />
+      <MemberSignature Language="F#" Value="static member NewRow : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;&gt; -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewRow columnValues" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2462,6 +2538,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Not(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Not (argument As DbExpression) As DbNotExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbNotExpression ^ Not(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member Not : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbNotExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Not argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2490,6 +2567,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NotEqual(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function NotEqual (left As DbExpression, right As DbExpression) As DbComparisonExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbComparisonExpression ^ NotEqual(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member NotEqual : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbComparisonExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NotEqual (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2519,6 +2597,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Null(System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Null (nullType As TypeUsage) As DbNullExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbNullExpression ^ Null(System::Data::Metadata::Edm::TypeUsage ^ nullType);" />
+      <MemberSignature Language="F#" Value="static member Null : System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbNullExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Null nullType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2545,6 +2624,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OfType(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OfType (argument As DbExpression, type As TypeUsage) As DbOfTypeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbOfTypeExpression ^ OfType(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ type);" />
+      <MemberSignature Language="F#" Value="static member OfType : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbOfTypeExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OfType (argument, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2582,6 +2662,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OfTypeOnly(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OfTypeOnly (argument As DbExpression, type As TypeUsage) As DbOfTypeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbOfTypeExpression ^ OfTypeOnly(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ type);" />
+      <MemberSignature Language="F#" Value="static member OfTypeOnly : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbOfTypeExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OfTypeOnly (argument, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2619,6 +2700,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Or(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Or (left As DbExpression, right As DbExpression) As DbOrExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbOrExpression ^ Or(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Or : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbOrExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Or (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2658,6 +2740,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderBy(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy (source As DbExpression, sortKey As Func(Of DbExpression, DbExpression)) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ OrderBy(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderBy (source, sortKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2686,6 +2769,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderBy(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy (source As DbExpression, sortKey As Func(Of DbExpression, DbExpression), collation As String) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ OrderBy(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member OrderBy : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * string -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderBy (source, sortKey, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2727,6 +2811,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderByDescending(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending (source As DbExpression, sortKey As Func(Of DbExpression, DbExpression)) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ OrderByDescending(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderByDescending (source, sortKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2755,6 +2840,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderByDescending(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending (source As DbExpression, sortKey As Func(Of DbExpression, DbExpression), collation As String) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ OrderByDescending(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * string -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OrderByDescending (source, sortKey, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2796,6 +2882,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OuterApply(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OuterApply (source As DbExpression, apply As Func(Of DbExpression, KeyValuePair(Of String, DbExpression))) As DbApplyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbApplyExpression ^ OuterApply(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt;&gt; ^ apply);" />
+      <MemberSignature Language="F#" Value="static member OuterApply : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;&gt; -&gt; System.Data.Common.CommandTrees.DbApplyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OuterApply (source, apply)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2824,6 +2911,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OuterApply(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpressionBinding)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OuterApply (input As DbExpressionBinding, apply As DbExpressionBinding) As DbApplyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbApplyExpression ^ OuterApply(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpressionBinding ^ apply);" />
+      <MemberSignature Language="F#" Value="static member OuterApply : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpressionBinding -&gt; System.Data.Common.CommandTrees.DbApplyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.OuterApply (input, apply)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2852,6 +2940,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Parameter(System.Data.Metadata.Edm.TypeUsage,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Parameter (type As TypeUsage, name As String) As DbParameterReferenceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbParameterReferenceExpression ^ Parameter(System::Data::Metadata::Edm::TypeUsage ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member Parameter : System.Data.Metadata.Edm.TypeUsage * string -&gt; System.Data.Common.CommandTrees.DbParameterReferenceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Parameter (type, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2878,6 +2967,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Plus(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Plus (left As DbExpression, right As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ Plus(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Plus : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Plus (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2907,6 +2997,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Project(System.Data.Common.CommandTrees.DbExpressionBinding,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Project (input As DbExpressionBinding, projection As DbExpression) As DbProjectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbProjectExpression ^ Project(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Data::Common::CommandTrees::DbExpression ^ projection);" />
+      <MemberSignature Language="F#" Value="static member Project : System.Data.Common.CommandTrees.DbExpressionBinding * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbProjectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Project (input, projection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2944,6 +3035,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.EdmProperty)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Property (instance As DbExpression, propertyMetadata As EdmProperty) As DbPropertyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbPropertyExpression ^ Property(System::Data::Common::CommandTrees::DbExpression ^ instance, System::Data::Metadata::Edm::EdmProperty ^ propertyMetadata);" />
+      <MemberSignature Language="F#" Value="static member Property : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.EdmProperty -&gt; System.Data.Common.CommandTrees.DbPropertyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property (instance, propertyMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2971,6 +3063,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbPropertyExpression Property(class System.Data.Common.CommandTrees.DbExpression instance, class System.Data.Metadata.Edm.NavigationProperty navigationProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.NavigationProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbPropertyExpression ^ Property(System::Data::Common::CommandTrees::DbExpression ^ instance, System::Data::Metadata::Edm::NavigationProperty ^ navigationProperty);" />
+      <MemberSignature Language="F#" Value="static member Property : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.NavigationProperty -&gt; System.Data.Common.CommandTrees.DbPropertyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property (instance, navigationProperty)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2999,6 +3092,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.RelationshipEndMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Property (instance As DbExpression, relationshipEnd As RelationshipEndMember) As DbPropertyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbPropertyExpression ^ Property(System::Data::Common::CommandTrees::DbExpression ^ instance, System::Data::Metadata::Edm::RelationshipEndMember ^ relationshipEnd);" />
+      <MemberSignature Language="F#" Value="static member Property : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.RelationshipEndMember -&gt; System.Data.Common.CommandTrees.DbPropertyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property (instance, relationshipEnd)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3027,6 +3121,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property(System.Data.Common.CommandTrees.DbExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Property (instance As DbExpression, propertyName As String) As DbPropertyExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbPropertyExpression ^ Property(System::Data::Common::CommandTrees::DbExpression ^ instance, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member Property : System.Data.Common.CommandTrees.DbExpression * string -&gt; System.Data.Common.CommandTrees.DbPropertyExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Property (instance, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3064,6 +3159,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression RefFromKey(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Common.CommandTrees.DbExpression keyRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.RefFromKey(System.Data.Metadata.Edm.EntitySet,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ RefFromKey(System::Data::Metadata::Edm::EntitySet ^ entitySet, System::Data::Common::CommandTrees::DbExpression ^ keyRow);" />
+      <MemberSignature Language="F#" Value="static member RefFromKey : System.Data.Metadata.Edm.EntitySet * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.RefFromKey (entitySet, keyRow)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3100,6 +3196,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression RefFromKey(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Common.CommandTrees.DbExpression keyRow, class System.Data.Metadata.Edm.EntityType entityType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.RefFromKey(System.Data.Metadata.Edm.EntitySet,System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.EntityType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbRefExpression ^ RefFromKey(System::Data::Metadata::Edm::EntitySet ^ entitySet, System::Data::Common::CommandTrees::DbExpression ^ keyRow, System::Data::Metadata::Edm::EntityType ^ entityType);" />
+      <MemberSignature Language="F#" Value="static member RefFromKey : System.Data.Metadata.Edm.EntitySet * System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.EntityType -&gt; System.Data.Common.CommandTrees.DbRefExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.RefFromKey (entitySet, keyRow, entityType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3139,6 +3236,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Scan(System.Data.Metadata.Edm.EntitySetBase)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Scan (targetSet As EntitySetBase) As DbScanExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbScanExpression ^ Scan(System::Data::Metadata::Edm::EntitySetBase ^ targetSet);" />
+      <MemberSignature Language="F#" Value="static member Scan : System.Data.Metadata.Edm.EntitySetBase -&gt; System.Data.Common.CommandTrees.DbScanExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Scan targetSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3165,6 +3263,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Select``1(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TProjection) (source As DbExpression, projection As Func(Of DbExpression, TProjection)) As DbProjectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProjection&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbProjectExpression ^ Select(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, TProjection&gt; ^ projection);" />
+      <MemberSignature Language="F#" Value="static member Select : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, 'Projection&gt; -&gt; System.Data.Common.CommandTrees.DbProjectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Select (source, projection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3215,6 +3314,7 @@ source.Select(x => new { Name = x.Property("Name") })
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.SelectMany(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany (source As DbExpression, apply As Func(Of DbExpression, DbExpression)) As DbProjectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbProjectExpression ^ SelectMany(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ apply);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbProjectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.SelectMany (source, apply)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3243,6 +3343,7 @@ source.Select(x => new { Name = x.Property("Name") })
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.SelectMany``1(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SelectMany(Of TSelector) (source As DbExpression, apply As Func(Of DbExpression, DbExpression), selector As Func(Of DbExpression, DbExpression, TSelector)) As DbProjectExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSelector&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbProjectExpression ^ SelectMany(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ apply, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^, TSelector&gt; ^ selector);" />
+      <MemberSignature Language="F#" Value="static member SelectMany : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression, 'Selector&gt; -&gt; System.Data.Common.CommandTrees.DbProjectExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.SelectMany (source, apply, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3305,6 +3406,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(System.Data.Common.CommandTrees.DbSortExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Skip (argument As DbSortExpression, count As DbExpression) As DbSkipExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSkipExpression ^ Skip(System::Data::Common::CommandTrees::DbSortExpression ^ argument, System::Data::Common::CommandTrees::DbExpression ^ count);" />
+      <MemberSignature Language="F#" Value="static member Skip : System.Data.Common.CommandTrees.DbSortExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbSkipExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip (argument, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3335,6 +3437,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(System.Data.Common.CommandTrees.DbExpressionBinding,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbSortClause},System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Skip (input As DbExpressionBinding, sortOrder As IEnumerable(Of DbSortClause), count As DbExpression) As DbSkipExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSkipExpression ^ Skip(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbSortClause ^&gt; ^ sortOrder, System::Data::Common::CommandTrees::DbExpression ^ count);" />
+      <MemberSignature Language="F#" Value="static member Skip : System.Data.Common.CommandTrees.DbExpressionBinding * seq&lt;System.Data.Common.CommandTrees.DbSortClause&gt; * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbSkipExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip (input, sortOrder, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3367,6 +3470,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Sort(System.Data.Common.CommandTrees.DbExpressionBinding,System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbSortClause})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Sort (input As DbExpressionBinding, sortOrder As IEnumerable(Of DbSortClause)) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ Sort(System::Data::Common::CommandTrees::DbExpressionBinding ^ input, System::Collections::Generic::IEnumerable&lt;System::Data::Common::CommandTrees::DbSortClause ^&gt; ^ sortOrder);" />
+      <MemberSignature Language="F#" Value="static member Sort : System.Data.Common.CommandTrees.DbExpressionBinding * seq&lt;System.Data.Common.CommandTrees.DbSortClause&gt; -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Sort (input, sortOrder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3397,6 +3501,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Take(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Take (argument As DbExpression, count As DbExpression) As DbLimitExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbLimitExpression ^ Take(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Common::CommandTrees::DbExpression ^ count);" />
+      <MemberSignature Language="F#" Value="static member Take : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbLimitExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Take (argument, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3436,6 +3541,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenBy(System.Data.Common.CommandTrees.DbSortExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy (source As DbSortExpression, sortKey As Func(Of DbExpression, DbExpression)) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ ThenBy(System::Data::Common::CommandTrees::DbSortExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Data.Common.CommandTrees.DbSortExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenBy (source, sortKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3465,6 +3571,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenBy(System.Data.Common.CommandTrees.DbSortExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy (source As DbSortExpression, sortKey As Func(Of DbExpression, DbExpression), collation As String) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ ThenBy(System::Data::Common::CommandTrees::DbSortExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member ThenBy : System.Data.Common.CommandTrees.DbSortExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * string -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenBy (source, sortKey, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3506,6 +3613,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenByDescending(System.Data.Common.CommandTrees.DbSortExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending (source As DbSortExpression, sortKey As Func(Of DbExpression, DbExpression)) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ ThenByDescending(System::Data::Common::CommandTrees::DbSortExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.Common.CommandTrees.DbSortExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenByDescending (source, sortKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3534,6 +3642,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenByDescending(System.Data.Common.CommandTrees.DbSortExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending (source As DbSortExpression, sortKey As Func(Of DbExpression, DbExpression), collation As String) As DbSortExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortExpression ^ ThenByDescending(System::Data::Common::CommandTrees::DbSortExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ sortKey, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.Common.CommandTrees.DbSortExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; * string -&gt; System.Data.Common.CommandTrees.DbSortExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ThenByDescending (source, sortKey, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3575,6 +3684,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClause(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSortClause (key As DbExpression) As DbSortClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortClause ^ ToSortClause(System::Data::Common::CommandTrees::DbExpression ^ key);" />
+      <MemberSignature Language="F#" Value="static member ToSortClause : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbSortClause" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClause key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3603,6 +3713,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClause(System.Data.Common.CommandTrees.DbExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSortClause (key As DbExpression, collation As String) As DbSortClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortClause ^ ToSortClause(System::Data::Common::CommandTrees::DbExpression ^ key, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member ToSortClause : System.Data.Common.CommandTrees.DbExpression * string -&gt; System.Data.Common.CommandTrees.DbSortClause" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClause (key, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3644,6 +3755,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClauseDescending(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSortClauseDescending (key As DbExpression) As DbSortClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortClause ^ ToSortClauseDescending(System::Data::Common::CommandTrees::DbExpression ^ key);" />
+      <MemberSignature Language="F#" Value="static member ToSortClauseDescending : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbSortClause" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClauseDescending key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3672,6 +3784,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClauseDescending(System.Data.Common.CommandTrees.DbExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSortClauseDescending (key As DbExpression, collation As String) As DbSortClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbSortClause ^ ToSortClauseDescending(System::Data::Common::CommandTrees::DbExpression ^ key, System::String ^ collation);" />
+      <MemberSignature Language="F#" Value="static member ToSortClauseDescending : System.Data.Common.CommandTrees.DbExpression * string -&gt; System.Data.Common.CommandTrees.DbSortClause" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.ToSortClauseDescending (key, collation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3704,6 +3817,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.TreatAs(System.Data.Common.CommandTrees.DbExpression,System.Data.Metadata.Edm.TypeUsage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TreatAs (argument As DbExpression, treatType As TypeUsage) As DbTreatExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbTreatExpression ^ TreatAs(System::Data::Common::CommandTrees::DbExpression ^ argument, System::Data::Metadata::Edm::TypeUsage ^ treatType);" />
+      <MemberSignature Language="F#" Value="static member TreatAs : System.Data.Common.CommandTrees.DbExpression * System.Data.Metadata.Edm.TypeUsage -&gt; System.Data.Common.CommandTrees.DbTreatExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.TreatAs (argument, treatType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3741,6 +3855,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.True" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property True As DbConstantExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::Common::CommandTrees::DbConstantExpression ^ True { System::Data::Common::CommandTrees::DbConstantExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.True : System.Data.Common.CommandTrees.DbConstantExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.True" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3761,6 +3876,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.UnaryMinus(System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UnaryMinus (argument As DbExpression) As DbArithmeticExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbArithmeticExpression ^ UnaryMinus(System::Data::Common::CommandTrees::DbExpression ^ argument);" />
+      <MemberSignature Language="F#" Value="static member UnaryMinus : System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbArithmeticExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.UnaryMinus argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3788,6 +3904,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Union(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Union (left As DbExpression, right As DbExpression) As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbExpression ^ Union(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member Union : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Union (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3817,6 +3934,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.UnionAll(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UnionAll (left As DbExpression, right As DbExpression) As DbUnionAllExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbUnionAllExpression ^ UnionAll(System::Data::Common::CommandTrees::DbExpression ^ left, System::Data::Common::CommandTrees::DbExpression ^ right);" />
+      <MemberSignature Language="F#" Value="static member UnionAll : System.Data.Common.CommandTrees.DbExpression * System.Data.Common.CommandTrees.DbExpression -&gt; System.Data.Common.CommandTrees.DbUnionAllExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.UnionAll (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3846,6 +3964,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Variable(System.Data.Metadata.Edm.TypeUsage,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Variable (type As TypeUsage, name As String) As DbVariableReferenceExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbVariableReferenceExpression ^ Variable(System::Data::Metadata::Edm::TypeUsage ^ type, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member Variable : System.Data.Metadata.Edm.TypeUsage * string -&gt; System.Data.Common.CommandTrees.DbVariableReferenceExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Variable (type, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -3872,6 +3991,7 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Where(System.Data.Common.CommandTrees.DbExpression,System.Func{System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where (source As DbExpression, predicate As Func(Of DbExpression, DbExpression)) As DbFilterExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::CommandTrees::DbFilterExpression ^ Where(System::Data::Common::CommandTrees::DbExpression ^ source, Func&lt;System::Data::Common::CommandTrees::DbExpression ^, System::Data::Common::CommandTrees::DbExpression ^&gt; ^ predicate);" />
+      <MemberSignature Language="F#" Value="static member Where : System.Data.Common.CommandTrees.DbExpression * Func&lt;System.Data.Common.CommandTrees.DbExpression, System.Data.Common.CommandTrees.DbExpression&gt; -&gt; System.Data.Common.CommandTrees.DbFilterExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Where (source, predicate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

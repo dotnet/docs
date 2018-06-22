@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.MessageContext" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageContext" />
+  <TypeSignature Language="F#" Value="type MessageContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.MessageContext.EndToEndTracingId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EndToEndTracingId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid EndToEndTracingId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.EndToEndTracingId : Guid with get, set" Usage="System.ServiceModel.Activities.MessageContext.EndToEndTracingId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.MessageContext.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Message As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::Message ^ Message { System::ServiceModel::Channels::Message ^ get(); void set(System::ServiceModel::Channels::Message ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Channels.Message with get, set" Usage="System.ServiceModel.Activities.MessageContext.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

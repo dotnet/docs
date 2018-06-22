@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityException" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityException : SystemException" />
+  <TypeSignature Language="F#" Value="type SecurityException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -177,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string * Exception -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -300,6 +304,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message, Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string * Type -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (message, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -348,6 +353,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Type type, string state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message, Type ^ type, System::String ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string * Type * string -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (message, type, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -400,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String,System.Object,System.Object,System.Reflection.MethodInfo,System.Object,System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, deny As Object, permitOnly As Object, method As MethodInfo, demanded As Object, permThatFailed As IPermission)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message, System::Object ^ deny, System::Object ^ permitOnly, System::Reflection::MethodInfo ^ method, System::Object ^ demanded, System::Security::IPermission ^ permThatFailed);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string * obj * obj * System.Reflection.MethodInfo * obj * System.Security.IPermission -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (message, deny, permitOnly, method, demanded, permThatFailed)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -460,6 +467,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Reflection.AssemblyName assemblyName, class System.Security.PermissionSet grant, class System.Security.PermissionSet refused, class System.Reflection.MethodInfo method, valuetype System.Security.Permissions.SecurityAction action, object demanded, class System.Security.IPermission permThatFailed, class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.#ctor(System.String,System.Reflection.AssemblyName,System.Security.PermissionSet,System.Security.PermissionSet,System.Reflection.MethodInfo,System.Security.Permissions.SecurityAction,System.Object,System.Security.IPermission,System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityException(System::String ^ message, System::Reflection::AssemblyName ^ assemblyName, System::Security::PermissionSet ^ grant, System::Security::PermissionSet ^ refused, System::Reflection::MethodInfo ^ method, System::Security::Permissions::SecurityAction action, System::Object ^ demanded, System::Security::IPermission ^ permThatFailed, System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="new System.Security.SecurityException : string * System.Reflection.AssemblyName * System.Security.PermissionSet * System.Security.PermissionSet * System.Reflection.MethodInfo * System.Security.Permissions.SecurityAction * obj * System.Security.IPermission * System.Security.Policy.Evidence -&gt; System.Security.SecurityException" Usage="new System.Security.SecurityException (message, assemblyName, grant, refused, method, action, demanded, permThatFailed, evidence)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -520,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As SecurityAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::SecurityAction Action { System::Security::Permissions::SecurityAction get(); void set(System::Security::Permissions::SecurityAction value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Security.Permissions.SecurityAction with get, set" Usage="System.Security.SecurityException.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -563,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.Demanded" />
       <MemberSignature Language="VB.NET" Value="Public Property Demanded As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Demanded { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Demanded : obj with get, set" Usage="System.Security.SecurityException.Demanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -615,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.DenySetInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property DenySetInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DenySetInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DenySetInstance : obj with get, set" Usage="System.Security.SecurityException.DenySetInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -658,6 +669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.FailedAssemblyInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property FailedAssemblyInfo As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ FailedAssemblyInfo { System::Reflection::AssemblyName ^ get(); void set(System::Reflection::AssemblyName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FailedAssemblyInfo : System.Reflection.AssemblyName with get, set" Usage="System.Security.SecurityException.FailedAssemblyInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -713,6 +725,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.FirstPermissionThatFailed" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstPermissionThatFailed As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::IPermission ^ FirstPermissionThatFailed { System::Security::IPermission ^ get(); void set(System::Security::IPermission ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstPermissionThatFailed : System.Security.IPermission with get, set" Usage="System.Security.SecurityException.FirstPermissionThatFailed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -742,6 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="securityException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -797,6 +811,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.GrantedSet" />
       <MemberSignature Language="VB.NET" Value="Public Property GrantedSet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GrantedSet { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GrantedSet : string with get, set" Usage="System.Security.SecurityException.GrantedSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -835,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ Method { System::Reflection::MethodInfo ^ get(); void set(System::Reflection::MethodInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Method : System.Reflection.MethodInfo with get, set" Usage="System.Security.SecurityException.Method" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -886,6 +902,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.PermissionState" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionState As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PermissionState { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionState : string with get, set" Usage="System.Security.SecurityException.PermissionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -917,6 +934,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.PermissionType" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PermissionType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionType : Type with get, set" Usage="System.Security.SecurityException.PermissionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -947,6 +965,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.PermitOnlySetInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property PermitOnlySetInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PermitOnlySetInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PermitOnlySetInstance : obj with get, set" Usage="System.Security.SecurityException.PermitOnlySetInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.RefusedSet" />
       <MemberSignature Language="VB.NET" Value="Public Property RefusedSet As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RefusedSet { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RefusedSet : string with get, set" Usage="System.Security.SecurityException.RefusedSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1030,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="securityException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1072,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Security.SecurityException.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1103,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityException.Zone" />
       <MemberSignature Language="VB.NET" Value="Public Property Zone As SecurityZone" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecurityZone Zone { System::Security::SecurityZone get(); void set(System::Security::SecurityZone value); };" />
+      <MemberSignature Language="F#" Value="member this.Zone : System.Security.SecurityZone with get, set" Usage="System.Security.SecurityException.Zone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

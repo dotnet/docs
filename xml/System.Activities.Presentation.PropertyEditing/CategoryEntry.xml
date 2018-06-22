@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.CategoryEntry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CategoryEntry&#xA;Implements INotifyPropertyChanged, IPropertyFilterTarget" />
   <TypeSignature Language="C++ CLI" Value="public ref class CategoryEntry abstract : System::Activities::Presentation::PropertyEditing::IPropertyFilterTarget, System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type CategoryEntry = class&#xA;    interface INotifyPropertyChanged&#xA;    interface IPropertyFilterTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEntry.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CategoryEntry(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.CategoryEntry : string -&gt; System.Activities.Presentation.PropertyEditing.CategoryEntry" Usage="new System.Activities.Presentation.PropertyEditing.CategoryEntry name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEntry.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyFilter (filter As PropertyFilter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyFilter(System::Activities::Presentation::PropertyEditing::PropertyFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyFilter : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit&#xA;override this.ApplyFilter : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit" Usage="categoryEntry.ApplyFilter filter" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)</InterfaceMember>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEntry.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string" Usage="System.Activities.Presentation.PropertyEditing.CategoryEntry.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.PropertyEditing.CategoryEntry.FilterApplied" />
       <MemberSignature Language="VB.NET" Value="Public Event FilterApplied As EventHandler(Of PropertyFilterAppliedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Activities::Presentation::PropertyEditing::PropertyFilterAppliedEventArgs ^&gt; ^ FilterApplied;" />
+      <MemberSignature Language="F#" Value="member this.FilterApplied : EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " Usage="member this.FilterApplied : System.EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterAppliedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.FilterApplied</InterfaceMember>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEntry.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(propertyName As String) As PropertyEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::PropertyEditing::PropertyEntry ^ default[System::String ^] { System::Activities::Presentation::PropertyEditing::PropertyEntry ^ get(System::String ^ propertyName); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Activities.Presentation.PropertyEditing.PropertyEntry" Usage="System.Activities.Presentation.PropertyEditing.CategoryEntry.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEntry.MatchesFilter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MatchesFilter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property bool MatchesFilter {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchesFilter : bool with get, set" Usage="System.Activities.Presentation.PropertyEditing.CategoryEntry.MatchesFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEntry.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function MatchesPredicate (predicate As PropertyFilterPredicate) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MatchesPredicate(System::Activities::Presentation::PropertyEditing::PropertyFilterPredicate ^ predicate);" />
+      <MemberSignature Language="F#" Value="abstract member MatchesPredicate : System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate -&gt; bool" Usage="categoryEntry.MatchesPredicate predicate" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)</InterfaceMember>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEntry.OnFilterApplied(System.Activities.Presentation.PropertyEditing.PropertyFilter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFilterApplied (filter As PropertyFilter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFilterApplied(System::Activities::Presentation::PropertyEditing::PropertyFilter ^ filter);" />
+      <MemberSignature Language="F#" Value="abstract member OnFilterApplied : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit&#xA;override this.OnFilterApplied : System.Activities.Presentation.PropertyEditing.PropertyFilter -&gt; unit" Usage="categoryEntry.OnFilterApplied filter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.CategoryEntry.OnPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="categoryEntry.OnPropertyChanged propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -248,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.CategoryEntry.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As IEnumerable(Of PropertyEntry)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::PropertyEditing::PropertyEntry ^&gt; ^ Properties { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::PropertyEditing::PropertyEntry ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : seq&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;" Usage="System.Activities.Presentation.PropertyEditing.CategoryEntry.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.PropertyEditing.CategoryEntry.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

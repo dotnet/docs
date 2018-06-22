@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.StateRuntime" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateRuntime&#xA;Implements IStateRuntime" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateRuntime sealed : System::Web::SessionState::IStateRuntime" />
+  <TypeSignature Language="F#" Value="type StateRuntime = class&#xA;    interface IStateRuntime" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * nativeint -&gt; unit&#xA;override this.ProcessRequest : nativeint * int * string * int * int * int * int * int * nativeint -&gt; unit" Usage="stateRuntime.ProcessRequest (tracker, verb, uri, exclusive, timeout, lockCookieExists, lockCookie, contentLength, content)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)</InterfaceMember>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, extraFlags As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * int * nativeint -&gt; unit&#xA;override this.ProcessRequest : nativeint * int * string * int * int * int * int * int * int * nativeint -&gt; unit" Usage="stateRuntime.ProcessRequest (tracker, verb, uri, exclusive, extraFlags, timeout, lockCookieExists, lockCookie, contentLength, content)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)</InterfaceMember>
@@ -173,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.StopProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopProcessing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopProcessing();" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessing : unit -&gt; unit&#xA;override this.StopProcessing : unit -&gt; unit" Usage="stateRuntime.StopProcessing " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IStateRuntime.StopProcessing</InterfaceMember>

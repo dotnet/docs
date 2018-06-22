@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PathAnimationSource" />
   <TypeSignature Language="VB.NET" Value="Public Enum PathAnimationSource" />
   <TypeSignature Language="C++ CLI" Value="public enum class PathAnimationSource" />
+  <TypeSignature Language="F#" Value="type PathAnimationSource = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PathAnimationSource.Angle" />
       <MemberSignature Language="VB.NET" Value="Angle" />
       <MemberSignature Language="C++ CLI" Value="Angle" />
+      <MemberSignature Language="F#" Value="Angle = 2" Usage="System.Windows.Media.Animation.PathAnimationSource.Angle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PathAnimationSource.X" />
       <MemberSignature Language="VB.NET" Value="X" />
       <MemberSignature Language="C++ CLI" Value="X" />
+      <MemberSignature Language="F#" Value="X = 0" Usage="System.Windows.Media.Animation.PathAnimationSource.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PathAnimationSource.Y" />
       <MemberSignature Language="VB.NET" Value="Y" />
       <MemberSignature Language="C++ CLI" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 1" Usage="System.Windows.Media.Animation.PathAnimationSource.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

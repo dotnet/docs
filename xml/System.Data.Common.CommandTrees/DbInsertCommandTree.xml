@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbInsertCommandTree" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbInsertCommandTree&#xA;Inherits DbModificationCommandTree" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbInsertCommandTree sealed : System::Data::Common::CommandTrees::DbModificationCommandTree" />
+  <TypeSignature Language="F#" Value="type DbInsertCommandTree = class&#xA;    inherit DbModificationCommandTree" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbInsertCommandTree.Returning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Returning As DbExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpression ^ Returning { System::Data::Common::CommandTrees::DbExpression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Returning : System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.DbInsertCommandTree.Returning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbInsertCommandTree.SetClauses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetClauses As IList(Of DbModificationClause)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbModificationClause ^&gt; ^ SetClauses { System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbModificationClause ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SetClauses : System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbModificationClause&gt;" Usage="System.Data.Common.CommandTrees.DbInsertCommandTree.SetClauses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

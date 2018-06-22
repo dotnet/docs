@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class TemplateGroup" />
+  <TypeSignature Language="F#" Value="type TemplateGroup = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroup.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateGroup(System::String ^ groupName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplateGroup : string -&gt; System.Web.UI.Design.TemplateGroup" Usage="new System.Web.UI.Design.TemplateGroup groupName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroup.#ctor(System.String,System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupName As String, groupStyle As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateGroup(System::String ^ groupName, System::Web::UI::WebControls::Style ^ groupStyle);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.TemplateGroup : string * System.Web.UI.WebControls.Style -&gt; System.Web.UI.Design.TemplateGroup" Usage="new System.Web.UI.Design.TemplateGroup (groupName, groupStyle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTemplateDefinition(class System.Web.UI.Design.TemplateDefinition templateDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateGroup.AddTemplateDefinition(System.Web.UI.Design.TemplateDefinition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddTemplateDefinition(System::Web::UI::Design::TemplateDefinition ^ templateDefinition);" />
+      <MemberSignature Language="F#" Value="member this.AddTemplateDefinition : System.Web.UI.Design.TemplateDefinition -&gt; unit" Usage="templateGroup.AddTemplateDefinition templateDefinition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroup.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string" Usage="System.Web.UI.Design.TemplateGroup.GroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroup.GroupStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ GroupStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.Design.TemplateGroup.GroupStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroup.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Web.UI.Design.TemplateGroup.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateGroup.Templates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Templates As TemplateDefinition()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Web::UI::Design::TemplateDefinition ^&gt; ^ Templates { cli::array &lt;System::Web::UI::Design::TemplateDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Templates : System.Web.UI.Design.TemplateDefinition[]" Usage="System.Web.UI.Design.TemplateGroup.Templates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

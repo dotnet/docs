@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewHeaderRowPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewHeaderRowPresenter&#xA;Inherits GridViewRowPresenterBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewHeaderRowPresenter : System::Windows::Controls::Primitives::GridViewRowPresenterBase" />
+  <TypeSignature Language="F#" Value="type GridViewHeaderRowPresenter = class&#xA;    inherit GridViewRowPresenterBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowsColumnReorder As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowsColumnReorder { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowsColumnReorder : bool with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowsColumnReorderProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowsColumnReorderProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowsColumnReorderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="gridViewHeaderRowPresenter.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderContainerStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ColumnHeaderContainerStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderContainerStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderContainerStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderContainerStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderContextMenu As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ContextMenu ^ ColumnHeaderContextMenu { System::Windows::Controls::ContextMenu ^ get(); void set(System::Windows::Controls::ContextMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderContextMenu : System.Windows.Controls.ContextMenu with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderContextMenuProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderContextMenuProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderContextMenuProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderStringFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnHeaderStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderStringFormat : string with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderStringFormatProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderTemplate As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ColumnHeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -415,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderTemplateProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -441,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ColumnHeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -507,6 +520,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -533,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnHeaderToolTip As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ColumnHeaderToolTip { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderToolTip : obj with get, set" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeaderToolTipProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnHeaderToolTipProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeaderToolTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="gridViewHeaderRowPresenter.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -655,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="gridViewHeaderRowPresenter.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostMouseCapture (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostMouseCapture(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLostMouseCapture : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="gridViewHeaderRowPresenter.OnLostMouseCapture e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -708,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="gridViewHeaderRowPresenter.OnMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -740,6 +760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="gridViewHeaderRowPresenter.OnMouseLeftButtonUp e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="gridViewHeaderRowPresenter.OnMouseMove e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

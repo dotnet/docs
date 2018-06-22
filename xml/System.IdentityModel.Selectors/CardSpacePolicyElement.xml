@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CardSpacePolicyElement" />
   <TypeSignature Language="VB.NET" Value="Public Class CardSpacePolicyElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CardSpacePolicyElement" />
+  <TypeSignature Language="F#" Value="type CardSpacePolicyElement = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpacePolicyElement.#ctor(System.Xml.XmlElement,System.Xml.XmlElement,System.Collections.ObjectModel.Collection{System.Xml.XmlElement},System.Uri,System.Int32,System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As XmlElement, issuer As XmlElement, parameters As Collection(Of XmlElement), policyNoticeLink As Uri, policyNoticeVersion As Integer, isManagedIssuer As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CardSpacePolicyElement(System::Xml::XmlElement ^ target, System::Xml::XmlElement ^ issuer, System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ parameters, Uri ^ policyNoticeLink, int policyNoticeVersion, bool isManagedIssuer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Selectors.CardSpacePolicyElement : System.Xml.XmlElement * System.Xml.XmlElement * System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; * Uri * int * bool -&gt; System.IdentityModel.Selectors.CardSpacePolicyElement" Usage="new System.IdentityModel.Selectors.CardSpacePolicyElement (target, issuer, parameters, policyNoticeLink, policyNoticeVersion, isManagedIssuer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" />
       <MemberSignature Language="VB.NET" Value="Public Property IsManagedIssuer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManagedIssuer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsManagedIssuer : bool with get, set" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public Property Issuer As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ Issuer { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : System.Xml.XmlElement with get, set" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As Collection(Of XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ Parameters { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyNoticeLink As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ PolicyNoticeLink { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyNoticeLink : Uri with get, set" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyNoticeVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PolicyNoticeVersion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PolicyNoticeVersion : int with get, set" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ Target { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Xml.XmlElement with get, set" Usage="System.IdentityModel.Selectors.CardSpacePolicyElement.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>

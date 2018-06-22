@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextMarkerProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextMarkerProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextMarkerProperties abstract" />
+  <TypeSignature Language="F#" Value="type TextMarkerProperties = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextMarkerProperties.Offset" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Offset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Offset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : double" Usage="System.Windows.Media.TextFormatting.TextMarkerProperties.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextMarkerProperties.TextSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextSource As TextSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::TextSource ^ TextSource { System::Windows::Media::TextFormatting::TextSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextSource : System.Windows.Media.TextFormatting.TextSource" Usage="System.Windows.Media.TextFormatting.TextMarkerProperties.TextSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

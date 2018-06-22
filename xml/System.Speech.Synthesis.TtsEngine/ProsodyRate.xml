@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyRate" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProsodyRate" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProsodyRate" />
+  <TypeSignature Language="F#" Value="type ProsodyRate = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.ExtraFast" />
       <MemberSignature Language="VB.NET" Value="ExtraFast" />
       <MemberSignature Language="C++ CLI" Value="ExtraFast" />
+      <MemberSignature Language="F#" Value="ExtraFast = 5" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.ExtraFast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.ExtraSlow" />
       <MemberSignature Language="VB.NET" Value="ExtraSlow" />
       <MemberSignature Language="C++ CLI" Value="ExtraSlow" />
+      <MemberSignature Language="F#" Value="ExtraSlow = 1" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.ExtraSlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.Fast" />
       <MemberSignature Language="VB.NET" Value="Fast" />
       <MemberSignature Language="C++ CLI" Value="Fast" />
+      <MemberSignature Language="F#" Value="Fast = 4" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.Fast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.Medium" />
       <MemberSignature Language="VB.NET" Value="Medium" />
       <MemberSignature Language="C++ CLI" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 3" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyRate.Slow" />
       <MemberSignature Language="VB.NET" Value="Slow" />
       <MemberSignature Language="C++ CLI" Value="Slow" />
+      <MemberSignature Language="F#" Value="Slow = 2" Usage="System.Speech.Synthesis.TtsEngine.ProsodyRate.Slow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

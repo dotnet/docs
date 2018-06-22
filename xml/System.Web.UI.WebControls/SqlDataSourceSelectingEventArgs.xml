@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceSelectingEventArgs&#xA;Inherits SqlDataSourceCommandEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceSelectingEventArgs : System::Web::UI::WebControls::SqlDataSourceCommandEventArgs" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceSelectingEventArgs = class&#xA;    inherit SqlDataSourceCommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.#ctor(System.Data.Common.DbCommand,System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As DbCommand, arguments As DataSourceSelectArguments)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceSelectingEventArgs(System::Data::Common::DbCommand ^ command, System::Web::UI::DataSourceSelectArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs : System.Data.Common.DbCommand * System.Web.UI.DataSourceSelectArguments -&gt; System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" Usage="new System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs (command, arguments)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As DataSourceSelectArguments" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceSelectArguments ^ Arguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

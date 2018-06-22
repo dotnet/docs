@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IPEndPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class IPEndPoint&#xA;Inherits EndPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class IPEndPoint : System::Net::EndPoint" />
+  <TypeSignature Language="F#" Value="type IPEndPoint = class&#xA;    inherit EndPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.#ctor(System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As Long, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(long address, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.IPEndPoint : int64 * int -&gt; System.Net.IPEndPoint" Usage="new System.Net.IPEndPoint (address, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As IPAddress, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(System::Net::IPAddress ^ address, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.IPEndPoint : System.Net.IPAddress * int -&gt; System.Net.IPEndPoint" Usage="new System.Net.IPEndPoint (address, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -166,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress with get, set" Usage="System.Net.IPEndPoint.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -208,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.AddressFamily" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AddressFamily As AddressFamily" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.IPEndPoint.AddressFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.EndPoint Create(class System.Net.SocketAddress socketAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Create(System.Net.SocketAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::EndPoint ^ Create(System::Net::SocketAddress ^ socketAddress);" />
+      <MemberSignature Language="F#" Value="override this.Create : System.Net.SocketAddress -&gt; System.Net.EndPoint" Usage="iPEndPoint.Create socketAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -303,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="iPEndPoint.Equals comparand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -340,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="iPEndPoint.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -379,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPEndPoint.MaxPort" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxPort As Integer  = 65535" />
       <MemberSignature Language="C++ CLI" Value="public: int MaxPort = 65535;" />
+      <MemberSignature Language="F#" Value="val mutable MaxPort : int" Usage="System.Net.IPEndPoint.MaxPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -421,6 +430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPEndPoint.MinPort" />
       <MemberSignature Language="VB.NET" Value="Public Const MinPort As Integer  = 0" />
       <MemberSignature Language="C++ CLI" Value="public: int MinPort = 0;" />
+      <MemberSignature Language="F#" Value="val mutable MinPort : int" Usage="System.Net.IPEndPoint.MinPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -463,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.Net.IPEndPoint.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -506,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Serialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize () As SocketAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::SocketAddress ^ Serialize();" />
+      <MemberSignature Language="F#" Value="override this.Serialize : unit -&gt; System.Net.SocketAddress" Usage="iPEndPoint.Serialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -550,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="iPEndPoint.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

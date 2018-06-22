@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportPrincipal&#xA;Inherits GenericPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class PassportPrincipal sealed : System::Security::Principal::GenericPrincipal" />
+  <TypeSignature Language="F#" Value="type PassportPrincipal = class&#xA;    inherit GenericPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportPrincipal.#ctor(System.Web.Security.PassportIdentity,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As PassportIdentity, roles As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PassportPrincipal(System::Web::Security::PassportIdentity ^ identity, cli::array &lt;System::String ^&gt; ^ roles);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.PassportPrincipal : System.Web.Security.PassportIdentity * string[] -&gt; System.Web.Security.PassportPrincipal" Usage="new System.Web.Security.PassportPrincipal (identity, roles)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

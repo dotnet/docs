@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EventAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventAttribute(int eventId);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventAttribute : int -&gt; System.Diagnostics.Tracing.EventAttribute" Usage="new System.Diagnostics.Tracing.EventAttribute eventId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.ActivityOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityOptions As EventActivityOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventActivityOptions ActivityOptions { System::Diagnostics::Tracing::EventActivityOptions get(); void set(System::Diagnostics::Tracing::EventActivityOptions value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityOptions : System.Diagnostics.Tracing.EventActivityOptions with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.ActivityOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Channel" />
       <MemberSignature Language="VB.NET" Value="Public Property Channel As EventChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventChannel Channel { System::Diagnostics::Tracing::EventChannel get(); void set(System::Diagnostics::Tracing::EventChannel value); };" />
+      <MemberSignature Language="F#" Value="member this.Channel : System.Diagnostics.Tracing.EventChannel with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Channel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.EventId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventId : int" Usage="System.Diagnostics.Tracing.EventAttribute.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public Property Keywords As EventKeywords" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventKeywords Keywords { System::Diagnostics::Tracing::EventKeywords get(); void set(System::Diagnostics::Tracing::EventKeywords value); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Diagnostics.Tracing.EventKeywords with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -271,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As EventLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventLevel Level { System::Diagnostics::Tracing::EventLevel get(); void set(System::Diagnostics::Tracing::EventLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.Tracing.EventLevel with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Opcode" />
       <MemberSignature Language="VB.NET" Value="Public Property Opcode As EventOpcode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventOpcode Opcode { System::Diagnostics::Tracing::EventOpcode get(); void set(System::Diagnostics::Tracing::EventOpcode value); };" />
+      <MemberSignature Language="F#" Value="member this.Opcode : System.Diagnostics.Tracing.EventOpcode with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Opcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -432,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Tags" />
       <MemberSignature Language="VB.NET" Value="Public Property Tags As EventTags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventTags Tags { System::Diagnostics::Tracing::EventTags get(); void set(System::Diagnostics::Tracing::EventTags value); };" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Diagnostics.Tracing.EventTags with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Tags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -464,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Task" />
       <MemberSignature Language="VB.NET" Value="Public Property Task As EventTask" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventTask Task { System::Diagnostics::Tracing::EventTask get(); void set(System::Diagnostics::Tracing::EventTask value); };" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Diagnostics.Tracing.EventTask with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -514,6 +525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventAttribute.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : byte with get, set" Usage="System.Diagnostics.Tracing.EventAttribute.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

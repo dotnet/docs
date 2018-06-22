@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataManager" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicDataManager&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicDataManager : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type DynamicDataManager = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataManager.AutoLoadForeignKeys" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoLoadForeignKeys As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoLoadForeignKeys { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoLoadForeignKeys : bool with get, set" Usage="System.Web.DynamicData.DynamicDataManager.AutoLoadForeignKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataManager.ClientID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.DynamicData.DynamicDataManager.ClientID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataManager.ClientIDMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ClientIDMode As ClientIDMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ClientIDMode ClientIDMode { System::Web::UI::ClientIDMode get(); void set(System::Web::UI::ClientIDMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ClientIDMode : System.Web.UI.ClientIDMode with get, set" Usage="System.Web.DynamicData.DynamicDataManager.ClientIDMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataManager.DataControls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataControls As DataControlReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DataControlReferenceCollection ^ DataControls { System::Web::DynamicData::DataControlReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataControls : System.Web.DynamicData.DataControlReferenceCollection" Usage="System.Web.DynamicData.DynamicDataManager.DataControls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataManager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="dynamicDataManager.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -303,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataManager.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="dynamicDataManager.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -334,6 +341,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataManager.RegisterControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterControl(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.RegisterControl : System.Web.UI.Control -&gt; unit" Usage="dynamicDataManager.RegisterControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -371,6 +379,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterControl(class System.Web.UI.Control control, bool setSelectionFromUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataManager.RegisterControl(System.Web.UI.Control,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterControl(System::Web::UI::Control ^ control, bool setSelectionFromUrl);" />
+      <MemberSignature Language="F#" Value="member this.RegisterControl : System.Web.UI.Control * bool -&gt; unit" Usage="dynamicDataManager.RegisterControl (control, setSelectionFromUrl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -404,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicDataManager.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.DynamicData.DynamicDataManager.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

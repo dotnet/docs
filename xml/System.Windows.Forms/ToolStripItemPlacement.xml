@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemPlacement" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolStripItemPlacement" />
   <TypeSignature Language="C++ CLI" Value="public enum class ToolStripItemPlacement" />
+  <TypeSignature Language="F#" Value="type ToolStripItemPlacement = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemPlacement.Main" />
       <MemberSignature Language="VB.NET" Value="Main" />
       <MemberSignature Language="C++ CLI" Value="Main" />
+      <MemberSignature Language="F#" Value="Main = 0" Usage="System.Windows.Forms.ToolStripItemPlacement.Main" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemPlacement.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Windows.Forms.ToolStripItemPlacement.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripItemPlacement.Overflow" />
       <MemberSignature Language="VB.NET" Value="Overflow" />
       <MemberSignature Language="C++ CLI" Value="Overflow" />
+      <MemberSignature Language="F#" Value="Overflow = 1" Usage="System.Windows.Forms.ToolStripItemPlacement.Overflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

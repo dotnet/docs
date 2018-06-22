@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSSecurityTokenSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class WSSecurityTokenSerializer&#xA;Inherits SecurityTokenSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSSecurityTokenSerializer : System::IdentityModel::Selectors::SecurityTokenSerializer" />
+  <TypeSignature Language="F#" Value="type WSSecurityTokenSerializer = class&#xA;    inherit SecurityTokenSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (emitBspRequiredAttributes As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(bool emitBspRequiredAttributes);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : bool -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer emitBspRequiredAttributes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer securityVersion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, bool emitBspRequiredAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, bool emitBspRequiredAttributes);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * bool -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, emitBspRequiredAttributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, bool emitBspRequiredAttributes, class System.IdentityModel.Tokens.SamlSerializer samlSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.Boolean,System.IdentityModel.Tokens.SamlSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, bool emitBspRequiredAttributes, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * bool * System.IdentityModel.Tokens.SamlSerializer -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, emitBspRequiredAttributes, samlSerializer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, bool emitBspRequiredAttributes, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.Boolean,System.IdentityModel.Tokens.SamlSerializer,System.ServiceModel.Security.SecurityStateEncoder,System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, bool emitBspRequiredAttributes, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * bool * System.IdentityModel.Tokens.SamlSerializer * System.ServiceModel.Security.SecurityStateEncoder * seq&lt;Type&gt; -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, emitBspRequiredAttributes, samlSerializer, securityStateEncoder, knownTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, class System.ServiceModel.Security.TrustVersion trustVersion, class System.ServiceModel.Security.SecureConversationVersion secureConversationVersion, bool emitBspRequiredAttributes, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.ServiceModel.Security.TrustVersion,System.ServiceModel.Security.SecureConversationVersion,System.Boolean,System.IdentityModel.Tokens.SamlSerializer,System.ServiceModel.Security.SecurityStateEncoder,System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, System::ServiceModel::Security::TrustVersion ^ trustVersion, System::ServiceModel::Security::SecureConversationVersion ^ secureConversationVersion, bool emitBspRequiredAttributes, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * System.ServiceModel.Security.TrustVersion * System.ServiceModel.Security.SecureConversationVersion * bool * System.IdentityModel.Tokens.SamlSerializer * System.ServiceModel.Security.SecurityStateEncoder * seq&lt;Type&gt; -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, trustVersion, secureConversationVersion, emitBspRequiredAttributes, samlSerializer, securityStateEncoder, knownTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, bool emitBspRequiredAttributes, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maximumKeyDerivationOffset, int32 maximumKeyDerivationLabelLength, int32 maximumKeyDerivationNonceLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.Boolean,System.IdentityModel.Tokens.SamlSerializer,System.ServiceModel.Security.SecurityStateEncoder,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, bool emitBspRequiredAttributes, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes, int maximumKeyDerivationOffset, int maximumKeyDerivationLabelLength, int maximumKeyDerivationNonceLength);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * bool * System.IdentityModel.Tokens.SamlSerializer * System.ServiceModel.Security.SecurityStateEncoder * seq&lt;Type&gt; * int * int * int -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, emitBspRequiredAttributes, samlSerializer, securityStateEncoder, knownTypes, maximumKeyDerivationOffset, maximumKeyDerivationLabelLength, maximumKeyDerivationNonceLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.SecurityVersion securityVersion, class System.ServiceModel.Security.TrustVersion trustVersion, class System.ServiceModel.Security.SecureConversationVersion secureConversationVersion, bool emitBspRequiredAttributes, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maximumKeyDerivationOffset, int32 maximumKeyDerivationLabelLength, int32 maximumKeyDerivationNonceLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor(System.ServiceModel.Security.SecurityVersion,System.ServiceModel.Security.TrustVersion,System.ServiceModel.Security.SecureConversationVersion,System.Boolean,System.IdentityModel.Tokens.SamlSerializer,System.ServiceModel.Security.SecurityStateEncoder,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSSecurityTokenSerializer(System::ServiceModel::Security::SecurityVersion ^ securityVersion, System::ServiceModel::Security::TrustVersion ^ trustVersion, System::ServiceModel::Security::SecureConversationVersion ^ secureConversationVersion, bool emitBspRequiredAttributes, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes, int maximumKeyDerivationOffset, int maximumKeyDerivationLabelLength, int maximumKeyDerivationNonceLength);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSSecurityTokenSerializer : System.ServiceModel.Security.SecurityVersion * System.ServiceModel.Security.TrustVersion * System.ServiceModel.Security.SecureConversationVersion * bool * System.IdentityModel.Tokens.SamlSerializer * System.ServiceModel.Security.SecurityStateEncoder * seq&lt;Type&gt; * int * int * int -&gt; System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="new System.ServiceModel.Security.WSSecurityTokenSerializer (securityVersion, trustVersion, secureConversationVersion, emitBspRequiredAttributes, samlSerializer, securityStateEncoder, knownTypes, maximumKeyDerivationOffset, maximumKeyDerivationLabelLength, maximumKeyDerivationNonceLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanReadKeyIdentifierClauseCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; bool" Usage="wSSecurityTokenSerializer.CanReadKeyIdentifierClauseCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadKeyIdentifierCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanReadKeyIdentifierCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanReadKeyIdentifierCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanReadKeyIdentifierCore : System.Xml.XmlReader -&gt; bool" Usage="wSSecurityTokenSerializer.CanReadKeyIdentifierCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadTokenCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanReadTokenCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanReadTokenCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanReadTokenCore : System.Xml.XmlReader -&gt; bool" Usage="wSSecurityTokenSerializer.CanReadTokenCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanWriteKeyIdentifierClauseCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanWriteKeyIdentifierClauseCore (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanWriteKeyIdentifierClauseCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.CanWriteKeyIdentifierClauseCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="wSSecurityTokenSerializer.CanWriteKeyIdentifierClauseCore keyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -373,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanWriteKeyIdentifierCore(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanWriteKeyIdentifierCore (keyIdentifier As SecurityKeyIdentifier) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanWriteKeyIdentifierCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
+      <MemberSignature Language="F#" Value="override this.CanWriteKeyIdentifierCore : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; bool" Usage="wSSecurityTokenSerializer.CanWriteKeyIdentifierCore keyIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -398,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CanWriteTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanWriteTokenCore (token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanWriteTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.CanWriteTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="wSSecurityTokenSerializer.CanWriteTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -423,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.CreateKeyIdentifierClauseFromTokenXml(System.Xml.XmlElement,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateKeyIdentifierClauseFromTokenXml (element As XmlElement, tokenReferenceStyle As SecurityTokenReferenceStyle) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ CreateKeyIdentifierClauseFromTokenXml(System::Xml::XmlElement ^ element, System::ServiceModel::Security::Tokens::SecurityTokenReferenceStyle tokenReferenceStyle);" />
+      <MemberSignature Language="F#" Value="abstract member CreateKeyIdentifierClauseFromTokenXml : System.Xml.XmlElement * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause&#xA;override this.CreateKeyIdentifierClauseFromTokenXml : System.Xml.XmlElement * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="wSSecurityTokenSerializer.CreateKeyIdentifierClauseFromTokenXml (element, tokenReferenceStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -450,6 +466,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.DefaultInstance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInstance As WSSecurityTokenSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::WSSecurityTokenSerializer ^ DefaultInstance { System::ServiceModel::Security::WSSecurityTokenSerializer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInstance : System.ServiceModel.Security.WSSecurityTokenSerializer" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.DefaultInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -470,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmitBspRequiredAttributes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitBspRequiredAttributes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmitBspRequiredAttributes : bool" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -491,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.GetTokenTypeUri(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetTokenTypeUri (tokenType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetTokenTypeUri(Type ^ tokenType);" />
+      <MemberSignature Language="F#" Value="abstract member GetTokenTypeUri : Type -&gt; string&#xA;override this.GetTokenTypeUri : Type -&gt; string" Usage="wSSecurityTokenSerializer.GetTokenTypeUri tokenType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -515,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationLabelLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumKeyDerivationLabelLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumKeyDerivationLabelLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumKeyDerivationLabelLength : int" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationLabelLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -535,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationNonceLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumKeyDerivationNonceLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumKeyDerivationNonceLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumKeyDerivationNonceLength : int" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationNonceLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -555,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumKeyDerivationOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumKeyDerivationOffset { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumKeyDerivationOffset : int" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -575,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReadKeyIdentifierClauseCore (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="wSSecurityTokenSerializer.ReadKeyIdentifierClauseCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -600,6 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadKeyIdentifierCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReadKeyIdentifierCore (reader As XmlReader) As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ReadKeyIdentifierCore(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadKeyIdentifierCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="wSSecurityTokenSerializer.ReadKeyIdentifierCore reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -625,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadTokenCore(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReadTokenCore (reader As XmlReader, tokenResolver As SecurityTokenResolver) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadTokenCore(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="F#" Value="override this.ReadTokenCore : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSSecurityTokenSerializer.ReadTokenCore (reader, tokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -652,6 +677,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSSecurityTokenSerializer.SecurityVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityVersion As SecurityVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityVersion ^ SecurityVersion { System::ServiceModel::Security::SecurityVersion ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityVersion : System.ServiceModel.Security.SecurityVersion" Usage="System.ServiceModel.Security.WSSecurityTokenSerializer.SecurityVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -672,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.TryCreateKeyIdentifierClauseFromTokenXml(System.Xml.XmlElement,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle,System.IdentityModel.Tokens.SecurityKeyIdentifierClause@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryCreateKeyIdentifierClauseFromTokenXml (element As XmlElement, tokenReferenceStyle As SecurityTokenReferenceStyle, ByRef securityKeyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryCreateKeyIdentifierClauseFromTokenXml(System::Xml::XmlElement ^ element, System::ServiceModel::Security::Tokens::SecurityTokenReferenceStyle tokenReferenceStyle, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ % securityKeyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="abstract member TryCreateKeyIdentifierClauseFromTokenXml : System.Xml.XmlElement * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle *  -&gt; bool&#xA;override this.TryCreateKeyIdentifierClauseFromTokenXml : System.Xml.XmlElement * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle *  -&gt; bool" Usage="wSSecurityTokenSerializer.TryCreateKeyIdentifierClauseFromTokenXml (element, tokenReferenceStyle, securityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -701,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.WriteKeyIdentifierClauseCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteKeyIdentifierClauseCore (writer As XmlWriter, keyIdentifierClause As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteKeyIdentifierClauseCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.WriteKeyIdentifierClauseCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="wSSecurityTokenSerializer.WriteKeyIdentifierClauseCore (writer, keyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -728,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.WriteKeyIdentifierCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteKeyIdentifierCore (writer As XmlWriter, keyIdentifier As SecurityKeyIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteKeyIdentifierCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
+      <MemberSignature Language="F#" Value="override this.WriteKeyIdentifierCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; unit" Usage="wSSecurityTokenSerializer.WriteKeyIdentifierCore (writer, keyIdentifier)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -755,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSSecurityTokenSerializer.WriteTokenCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteTokenCore (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteTokenCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.WriteTokenCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="wSSecurityTokenSerializer.WriteTokenCore (writer, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

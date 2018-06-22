@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TopLevelName" />
   <TypeSignature Language="VB.NET" Value="Public Class TopLevelName" />
   <TypeSignature Language="C++ CLI" Value="public ref class TopLevelName" />
+  <TypeSignature Language="F#" Value="type TopLevelName = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.TopLevelName.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.TopLevelName.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.TopLevelName.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As TopLevelNameStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::TopLevelNameStatus Status { System::DirectoryServices::ActiveDirectory::TopLevelNameStatus get(); void set(System::DirectoryServices::ActiveDirectory::TopLevelNameStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.DirectoryServices.ActiveDirectory.TopLevelNameStatus with get, set" Usage="System.DirectoryServices.ActiveDirectory.TopLevelName.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

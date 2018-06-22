@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.TerminateWorkflow" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TerminateWorkflow&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class TerminateWorkflow sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type TerminateWorkflow = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TerminateWorkflow.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="terminateWorkflow.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TerminateWorkflow.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Property Exception As InArgument(Of Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;Exception ^&gt; ^ Exception { System::Activities::InArgument&lt;Exception ^&gt; ^ get(); void set(System::Activities::InArgument&lt;Exception ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Activities.InArgument&lt;Exception&gt; with get, set" Usage="System.Activities.Statements.TerminateWorkflow.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TerminateWorkflow.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="terminateWorkflow.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TerminateWorkflow.Reason" />
       <MemberSignature Language="VB.NET" Value="Public Property Reason As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Reason { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Statements.TerminateWorkflow.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

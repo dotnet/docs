@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.UrlAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UrlAttribute&#xA;Inherits ContextAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlAttribute sealed : System::Runtime::Remoting::Contexts::ContextAttribute" />
+  <TypeSignature Language="F#" Value="type UrlAttribute = class&#xA;    inherit ContextAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.UrlAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callsiteURL As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlAttribute(System::String ^ callsiteURL);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Activation.UrlAttribute : string -&gt; System.Runtime.Remoting.Activation.UrlAttribute" Usage="new System.Runtime.Remoting.Activation.UrlAttribute callsiteURL" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.UrlAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="urlAttribute.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.UrlAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="urlAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.UrlAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetPropertiesForNewContext (ctorMsg As IConstructionCallMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetPropertiesForNewContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
+      <MemberSignature Language="F#" Value="override this.GetPropertiesForNewContext : System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; unit" Usage="urlAttribute.GetPropertiesForNewContext ctorMsg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.UrlAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsContextOK (ctx As Context, msg As IConstructionCallMessage) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsContextOK(System::Runtime::Remoting::Contexts::Context ^ ctx, System::Runtime::Remoting::Activation::IConstructionCallMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="override this.IsContextOK : System.Runtime.Remoting.Contexts.Context * System.Runtime.Remoting.Activation.IConstructionCallMessage -&gt; bool" Usage="urlAttribute.IsContextOK (ctx, msg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Activation.UrlAttribute.UrlValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UrlValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UrlValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UrlValue : string" Usage="System.Runtime.Remoting.Activation.UrlAttribute.UrlValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

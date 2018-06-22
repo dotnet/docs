@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SecurityIDType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityIDType" />
   <TypeSignature Language="C++ CLI" Value="public enum class SecurityIDType" />
+  <TypeSignature Language="F#" Value="type SecurityIDType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Alias" />
       <MemberSignature Language="VB.NET" Value="Alias" />
       <MemberSignature Language="C++ CLI" Value="Alias" />
+      <MemberSignature Language="F#" Value="Alias = 4" Usage="System.Windows.Forms.SecurityIDType.Alias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Computer" />
       <MemberSignature Language="VB.NET" Value="Computer" />
       <MemberSignature Language="C++ CLI" Value="Computer" />
+      <MemberSignature Language="F#" Value="Computer = 9" Usage="System.Windows.Forms.SecurityIDType.Computer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.DeletedAccount" />
       <MemberSignature Language="VB.NET" Value="DeletedAccount" />
       <MemberSignature Language="C++ CLI" Value="DeletedAccount" />
+      <MemberSignature Language="F#" Value="DeletedAccount = 6" Usage="System.Windows.Forms.SecurityIDType.DeletedAccount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Domain" />
       <MemberSignature Language="VB.NET" Value="Domain" />
       <MemberSignature Language="C++ CLI" Value="Domain" />
+      <MemberSignature Language="F#" Value="Domain = 3" Usage="System.Windows.Forms.SecurityIDType.Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Group" />
       <MemberSignature Language="VB.NET" Value="Group" />
       <MemberSignature Language="C++ CLI" Value="Group" />
+      <MemberSignature Language="F#" Value="Group = 2" Usage="System.Windows.Forms.SecurityIDType.Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Invalid" />
       <MemberSignature Language="VB.NET" Value="Invalid" />
       <MemberSignature Language="C++ CLI" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 7" Usage="System.Windows.Forms.SecurityIDType.Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 8" Usage="System.Windows.Forms.SecurityIDType.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 1" Usage="System.Windows.Forms.SecurityIDType.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.WellKnownGroup" />
       <MemberSignature Language="VB.NET" Value="WellKnownGroup" />
       <MemberSignature Language="C++ CLI" Value="WellKnownGroup" />
+      <MemberSignature Language="F#" Value="WellKnownGroup = 5" Usage="System.Windows.Forms.SecurityIDType.WellKnownGroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

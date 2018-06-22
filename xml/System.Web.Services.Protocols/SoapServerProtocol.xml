@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapServerProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapServerProtocol&#xA;Inherits ServerProtocol" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapServerProtocol : System::Web::Services::Protocols::ServerProtocol" />
+  <TypeSignature Language="F#" Value="type SoapServerProtocol = class&#xA;    inherit ServerProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapServerMessage,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetReaderForMessage (message As SoapServerMessage, bufferSize As Integer) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlReader ^ GetReaderForMessage(System::Web::Services::Protocols::SoapServerMessage ^ message, int bufferSize);" />
+      <MemberSignature Language="F#" Value="abstract member GetReaderForMessage : System.Web.Services.Protocols.SoapServerMessage * int -&gt; System.Xml.XmlReader&#xA;override this.GetReaderForMessage : System.Web.Services.Protocols.SoapServerMessage * int -&gt; System.Xml.XmlReader" Usage="soapServerProtocol.GetReaderForMessage (message, bufferSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapServerMessage,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWriterForMessage (message As SoapServerMessage, bufferSize As Integer) As XmlWriter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlWriter ^ GetWriterForMessage(System::Web::Services::Protocols::SoapServerMessage ^ message, int bufferSize);" />
+      <MemberSignature Language="F#" Value="abstract member GetWriterForMessage : System.Web.Services.Protocols.SoapServerMessage * int -&gt; System.Xml.XmlWriter&#xA;override this.GetWriterForMessage : System.Web.Services.Protocols.SoapServerMessage * int -&gt; System.Xml.XmlWriter" Usage="soapServerProtocol.GetWriterForMessage (message, bufferSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.ModifyInitializedExtensions(System.Web.Services.Configuration.PriorityGroup,System.Web.Services.Protocols.SoapExtension[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ModifyInitializedExtensions (group As PriorityGroup, extensions As SoapExtension()) As SoapExtension()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Web::Services::Protocols::SoapExtension ^&gt; ^ ModifyInitializedExtensions(System::Web::Services::Configuration::PriorityGroup group, cli::array &lt;System::Web::Services::Protocols::SoapExtension ^&gt; ^ extensions);" />
+      <MemberSignature Language="F#" Value="abstract member ModifyInitializedExtensions : System.Web.Services.Configuration.PriorityGroup * System.Web.Services.Protocols.SoapExtension[] -&gt; System.Web.Services.Protocols.SoapExtension[]&#xA;override this.ModifyInitializedExtensions : System.Web.Services.Configuration.PriorityGroup * System.Web.Services.Protocols.SoapExtension[] -&gt; System.Web.Services.Protocols.SoapExtension[]" Usage="soapServerProtocol.ModifyInitializedExtensions (group, extensions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(System.Web.Services.Protocols.SoapServerMessage)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function RouteRequest (message As SoapServerMessage) As SoapServerMethod" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::Services::Protocols::SoapServerMethod ^ RouteRequest(System::Web::Services::Protocols::SoapServerMessage ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member RouteRequest : System.Web.Services.Protocols.SoapServerMessage -&gt; System.Web.Services.Protocols.SoapServerMethod&#xA;override this.RouteRequest : System.Web.Services.Protocols.SoapServerMessage -&gt; System.Web.Services.Protocols.SoapServerMethod" Usage="soapServerProtocol.RouteRequest message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

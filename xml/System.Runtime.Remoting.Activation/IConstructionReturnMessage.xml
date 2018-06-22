@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConstructionReturnMessage&#xA;Implements IMethodReturnMessage" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConstructionReturnMessage : System::Runtime::Remoting::Messaging::IMethodReturnMessage" />
+  <TypeSignature Language="F#" Value="type IConstructionReturnMessage = interface&#xA;    interface IMethodReturnMessage&#xA;    interface IMethodMessage&#xA;    interface IMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

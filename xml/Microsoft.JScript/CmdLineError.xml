@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineError" />
   <TypeSignature Language="VB.NET" Value="Public Enum CmdLineError" />
   <TypeSignature Language="C++ CLI" Value="public enum class CmdLineError" />
+  <TypeSignature Language="F#" Value="type CmdLineError = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.AssemblyNotFound" />
       <MemberSignature Language="VB.NET" Value="AssemblyNotFound" />
       <MemberSignature Language="C++ CLI" Value="AssemblyNotFound" />
+      <MemberSignature Language="F#" Value="AssemblyNotFound = 2001" Usage="Microsoft.JScript.CmdLineError.AssemblyNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CannotCreateEngine" />
       <MemberSignature Language="VB.NET" Value="CannotCreateEngine" />
       <MemberSignature Language="C++ CLI" Value="CannotCreateEngine" />
+      <MemberSignature Language="F#" Value="CannotCreateEngine = 2002" Usage="Microsoft.JScript.CmdLineError.CannotCreateEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CompilerConstant" />
       <MemberSignature Language="VB.NET" Value="CompilerConstant" />
       <MemberSignature Language="C++ CLI" Value="CompilerConstant" />
+      <MemberSignature Language="F#" Value="CompilerConstant = 2003" Usage="Microsoft.JScript.CmdLineError.CompilerConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateFileAsSourceAndAssembly" />
       <MemberSignature Language="VB.NET" Value="DuplicateFileAsSourceAndAssembly" />
       <MemberSignature Language="C++ CLI" Value="DuplicateFileAsSourceAndAssembly" />
+      <MemberSignature Language="F#" Value="DuplicateFileAsSourceAndAssembly = 2004" Usage="Microsoft.JScript.CmdLineError.DuplicateFileAsSourceAndAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceFile" />
       <MemberSignature Language="VB.NET" Value="DuplicateResourceFile" />
       <MemberSignature Language="C++ CLI" Value="DuplicateResourceFile" />
+      <MemberSignature Language="F#" Value="DuplicateResourceFile = 2005" Usage="Microsoft.JScript.CmdLineError.DuplicateResourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceName" />
       <MemberSignature Language="VB.NET" Value="DuplicateResourceName" />
       <MemberSignature Language="C++ CLI" Value="DuplicateResourceName" />
+      <MemberSignature Language="F#" Value="DuplicateResourceName = 2006" Usage="Microsoft.JScript.CmdLineError.DuplicateResourceName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateSourceFile" />
       <MemberSignature Language="VB.NET" Value="DuplicateSourceFile" />
       <MemberSignature Language="C++ CLI" Value="DuplicateSourceFile" />
+      <MemberSignature Language="F#" Value="DuplicateSourceFile = 2007" Usage="Microsoft.JScript.CmdLineError.DuplicateSourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ErrorSavingCompiledState" />
       <MemberSignature Language="VB.NET" Value="ErrorSavingCompiledState" />
       <MemberSignature Language="C++ CLI" Value="ErrorSavingCompiledState" />
+      <MemberSignature Language="F#" Value="ErrorSavingCompiledState = 2008" Usage="Microsoft.JScript.CmdLineError.ErrorSavingCompiledState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -184,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.IncompatibleTargets" />
       <MemberSignature Language="VB.NET" Value="IncompatibleTargets" />
       <MemberSignature Language="C++ CLI" Value="IncompatibleTargets" />
+      <MemberSignature Language="F#" Value="IncompatibleTargets = 2038" Usage="Microsoft.JScript.CmdLineError.IncompatibleTargets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -204,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidAssembly" />
       <MemberSignature Language="VB.NET" Value="InvalidAssembly" />
       <MemberSignature Language="C++ CLI" Value="InvalidAssembly" />
+      <MemberSignature Language="F#" Value="InvalidAssembly = 2009" Usage="Microsoft.JScript.CmdLineError.InvalidAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -224,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCharacters" />
       <MemberSignature Language="VB.NET" Value="InvalidCharacters" />
       <MemberSignature Language="C++ CLI" Value="InvalidCharacters" />
+      <MemberSignature Language="F#" Value="InvalidCharacters = 2036" Usage="Microsoft.JScript.CmdLineError.InvalidCharacters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCodePage" />
       <MemberSignature Language="VB.NET" Value="InvalidCodePage" />
       <MemberSignature Language="C++ CLI" Value="InvalidCodePage" />
+      <MemberSignature Language="F#" Value="InvalidCodePage = 2010" Usage="Microsoft.JScript.CmdLineError.InvalidCodePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -264,6 +277,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidDefinition" />
       <MemberSignature Language="VB.NET" Value="InvalidDefinition" />
       <MemberSignature Language="C++ CLI" Value="InvalidDefinition" />
+      <MemberSignature Language="F#" Value="InvalidDefinition = 2011" Usage="Microsoft.JScript.CmdLineError.InvalidDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -284,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidForCompilerOptions" />
       <MemberSignature Language="VB.NET" Value="InvalidForCompilerOptions" />
       <MemberSignature Language="C++ CLI" Value="InvalidForCompilerOptions" />
+      <MemberSignature Language="F#" Value="InvalidForCompilerOptions = 2037" Usage="Microsoft.JScript.CmdLineError.InvalidForCompilerOptions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -304,6 +319,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidLocaleID" />
       <MemberSignature Language="VB.NET" Value="InvalidLocaleID" />
       <MemberSignature Language="C++ CLI" Value="InvalidLocaleID" />
+      <MemberSignature Language="F#" Value="InvalidLocaleID = 2012" Usage="Microsoft.JScript.CmdLineError.InvalidLocaleID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidPlatform" />
       <MemberSignature Language="VB.NET" Value="InvalidPlatform" />
       <MemberSignature Language="C++ CLI" Value="InvalidPlatform" />
+      <MemberSignature Language="F#" Value="InvalidPlatform = 2039" Usage="Microsoft.JScript.CmdLineError.InvalidPlatform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -344,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidSourceFile" />
       <MemberSignature Language="VB.NET" Value="InvalidSourceFile" />
       <MemberSignature Language="C++ CLI" Value="InvalidSourceFile" />
+      <MemberSignature Language="F#" Value="InvalidSourceFile = 2014" Usage="Microsoft.JScript.CmdLineError.InvalidSourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -364,6 +382,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidTarget" />
       <MemberSignature Language="VB.NET" Value="InvalidTarget" />
       <MemberSignature Language="C++ CLI" Value="InvalidTarget" />
+      <MemberSignature Language="F#" Value="InvalidTarget = 2013" Usage="Microsoft.JScript.CmdLineError.InvalidTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -384,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidVersion" />
       <MemberSignature Language="VB.NET" Value="InvalidVersion" />
       <MemberSignature Language="C++ CLI" Value="InvalidVersion" />
+      <MemberSignature Language="F#" Value="InvalidVersion = 2031" Usage="Microsoft.JScript.CmdLineError.InvalidVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -404,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidWarningLevel" />
       <MemberSignature Language="VB.NET" Value="InvalidWarningLevel" />
       <MemberSignature Language="C++ CLI" Value="InvalidWarningLevel" />
+      <MemberSignature Language="F#" Value="InvalidWarningLevel = 2015" Usage="Microsoft.JScript.CmdLineError.InvalidWarningLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -424,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.LAST" />
       <MemberSignature Language="VB.NET" Value="LAST" />
       <MemberSignature Language="C++ CLI" Value="LAST" />
+      <MemberSignature Language="F#" Value="LAST = 2039" Usage="Microsoft.JScript.CmdLineError.LAST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -444,6 +466,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ManagedResourceNotFound" />
       <MemberSignature Language="VB.NET" Value="ManagedResourceNotFound" />
       <MemberSignature Language="C++ CLI" Value="ManagedResourceNotFound" />
+      <MemberSignature Language="F#" Value="ManagedResourceNotFound = 2022" Usage="Microsoft.JScript.CmdLineError.ManagedResourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -464,6 +487,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingDefineArgument" />
       <MemberSignature Language="VB.NET" Value="MissingDefineArgument" />
       <MemberSignature Language="C++ CLI" Value="MissingDefineArgument" />
+      <MemberSignature Language="F#" Value="MissingDefineArgument = 2018" Usage="Microsoft.JScript.CmdLineError.MissingDefineArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -484,6 +508,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingExtension" />
       <MemberSignature Language="VB.NET" Value="MissingExtension" />
       <MemberSignature Language="C++ CLI" Value="MissingExtension" />
+      <MemberSignature Language="F#" Value="MissingExtension = 2019" Usage="Microsoft.JScript.CmdLineError.MissingExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -504,6 +529,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingLibArgument" />
       <MemberSignature Language="VB.NET" Value="MissingLibArgument" />
       <MemberSignature Language="C++ CLI" Value="MissingLibArgument" />
+      <MemberSignature Language="F#" Value="MissingLibArgument = 2020" Usage="Microsoft.JScript.CmdLineError.MissingLibArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -524,6 +550,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingReference" />
       <MemberSignature Language="VB.NET" Value="MissingReference" />
       <MemberSignature Language="C++ CLI" Value="MissingReference" />
+      <MemberSignature Language="F#" Value="MissingReference = 2034" Usage="Microsoft.JScript.CmdLineError.MissingReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -544,6 +571,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingVersionInfo" />
       <MemberSignature Language="VB.NET" Value="MissingVersionInfo" />
       <MemberSignature Language="C++ CLI" Value="MissingVersionInfo" />
+      <MemberSignature Language="F#" Value="MissingVersionInfo = 2021" Usage="Microsoft.JScript.CmdLineError.MissingVersionInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -564,6 +592,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleOutputNames" />
       <MemberSignature Language="VB.NET" Value="MultipleOutputNames" />
       <MemberSignature Language="C++ CLI" Value="MultipleOutputNames" />
+      <MemberSignature Language="F#" Value="MultipleOutputNames = 2016" Usage="Microsoft.JScript.CmdLineError.MultipleOutputNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -584,6 +613,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleTargets" />
       <MemberSignature Language="VB.NET" Value="MultipleTargets" />
       <MemberSignature Language="C++ CLI" Value="MultipleTargets" />
+      <MemberSignature Language="F#" Value="MultipleTargets = 2017" Usage="Microsoft.JScript.CmdLineError.MultipleTargets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -604,6 +634,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleWin32Resources" />
       <MemberSignature Language="VB.NET" Value="MultipleWin32Resources" />
       <MemberSignature Language="C++ CLI" Value="MultipleWin32Resources" />
+      <MemberSignature Language="F#" Value="MultipleWin32Resources = 2033" Usage="Microsoft.JScript.CmdLineError.MultipleWin32Resources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -624,6 +655,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NestedResponseFiles" />
       <MemberSignature Language="VB.NET" Value="NestedResponseFiles" />
       <MemberSignature Language="C++ CLI" Value="NestedResponseFiles" />
+      <MemberSignature Language="F#" Value="NestedResponseFiles = 2023" Usage="Microsoft.JScript.CmdLineError.NestedResponseFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -644,6 +676,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoCodePage" />
       <MemberSignature Language="VB.NET" Value="NoCodePage" />
       <MemberSignature Language="C++ CLI" Value="NoCodePage" />
+      <MemberSignature Language="F#" Value="NoCodePage = 2024" Usage="Microsoft.JScript.CmdLineError.NoCodePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -664,6 +697,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoError" />
       <MemberSignature Language="VB.NET" Value="NoError" />
       <MemberSignature Language="C++ CLI" Value="NoError" />
+      <MemberSignature Language="F#" Value="NoError = 0" Usage="Microsoft.JScript.CmdLineError.NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -684,6 +718,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoFileName" />
       <MemberSignature Language="VB.NET" Value="NoFileName" />
       <MemberSignature Language="C++ CLI" Value="NoFileName" />
+      <MemberSignature Language="F#" Value="NoFileName = 2025" Usage="Microsoft.JScript.CmdLineError.NoFileName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -704,6 +739,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoInputSourcesSpecified" />
       <MemberSignature Language="VB.NET" Value="NoInputSourcesSpecified" />
       <MemberSignature Language="C++ CLI" Value="NoInputSourcesSpecified" />
+      <MemberSignature Language="F#" Value="NoInputSourcesSpecified = 2026" Usage="Microsoft.JScript.CmdLineError.NoInputSourcesSpecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -724,6 +760,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoLocaleID" />
       <MemberSignature Language="VB.NET" Value="NoLocaleID" />
       <MemberSignature Language="C++ CLI" Value="NoLocaleID" />
+      <MemberSignature Language="F#" Value="NoLocaleID = 2027" Usage="Microsoft.JScript.CmdLineError.NoLocaleID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -744,6 +781,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoWarningLevel" />
       <MemberSignature Language="VB.NET" Value="NoWarningLevel" />
       <MemberSignature Language="C++ CLI" Value="NoWarningLevel" />
+      <MemberSignature Language="F#" Value="NoWarningLevel = 2028" Usage="Microsoft.JScript.CmdLineError.NoWarningLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -764,6 +802,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ResourceNotFound" />
       <MemberSignature Language="VB.NET" Value="ResourceNotFound" />
       <MemberSignature Language="C++ CLI" Value="ResourceNotFound" />
+      <MemberSignature Language="F#" Value="ResourceNotFound = 2029" Usage="Microsoft.JScript.CmdLineError.ResourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -784,6 +823,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceFileTooBig" />
       <MemberSignature Language="VB.NET" Value="SourceFileTooBig" />
       <MemberSignature Language="C++ CLI" Value="SourceFileTooBig" />
+      <MemberSignature Language="F#" Value="SourceFileTooBig = 2032" Usage="Microsoft.JScript.CmdLineError.SourceFileTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -804,6 +844,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceNotFound" />
       <MemberSignature Language="VB.NET" Value="SourceNotFound" />
       <MemberSignature Language="C++ CLI" Value="SourceNotFound" />
+      <MemberSignature Language="F#" Value="SourceNotFound = 2035" Usage="Microsoft.JScript.CmdLineError.SourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -824,6 +865,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.UnknownOption" />
       <MemberSignature Language="VB.NET" Value="UnknownOption" />
       <MemberSignature Language="C++ CLI" Value="UnknownOption" />
+      <MemberSignature Language="F#" Value="UnknownOption = 2030" Usage="Microsoft.JScript.CmdLineError.UnknownOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -844,6 +886,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 2999" Usage="Microsoft.JScript.CmdLineError.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

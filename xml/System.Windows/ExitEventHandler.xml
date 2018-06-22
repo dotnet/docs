@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ExitEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ExitEventHandler(sender As Object, e As ExitEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ExitEventHandler(System::Object ^ sender, ExitEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ExitEventHandler = delegate of obj * ExitEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.InheritanceBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum InheritanceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class InheritanceBehavior" />
+  <TypeSignature Language="F#" Value="type InheritanceBehavior = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.InheritanceBehavior.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipAllNext" />
       <MemberSignature Language="VB.NET" Value="SkipAllNext" />
       <MemberSignature Language="C++ CLI" Value="SkipAllNext" />
+      <MemberSignature Language="F#" Value="SkipAllNext = 6" Usage="System.Windows.InheritanceBehavior.SkipAllNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipAllNow" />
       <MemberSignature Language="VB.NET" Value="SkipAllNow" />
       <MemberSignature Language="C++ CLI" Value="SkipAllNow" />
+      <MemberSignature Language="F#" Value="SkipAllNow = 5" Usage="System.Windows.InheritanceBehavior.SkipAllNow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToAppNext" />
       <MemberSignature Language="VB.NET" Value="SkipToAppNext" />
       <MemberSignature Language="C++ CLI" Value="SkipToAppNext" />
+      <MemberSignature Language="F#" Value="SkipToAppNext = 2" Usage="System.Windows.InheritanceBehavior.SkipToAppNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToAppNow" />
       <MemberSignature Language="VB.NET" Value="SkipToAppNow" />
       <MemberSignature Language="C++ CLI" Value="SkipToAppNow" />
+      <MemberSignature Language="F#" Value="SkipToAppNow = 1" Usage="System.Windows.InheritanceBehavior.SkipToAppNow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToThemeNext" />
       <MemberSignature Language="VB.NET" Value="SkipToThemeNext" />
       <MemberSignature Language="C++ CLI" Value="SkipToThemeNext" />
+      <MemberSignature Language="F#" Value="SkipToThemeNext = 4" Usage="System.Windows.InheritanceBehavior.SkipToThemeNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToThemeNow" />
       <MemberSignature Language="VB.NET" Value="SkipToThemeNow" />
       <MemberSignature Language="C++ CLI" Value="SkipToThemeNow" />
+      <MemberSignature Language="F#" Value="SkipToThemeNow = 3" Usage="System.Windows.InheritanceBehavior.SkipToThemeNow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

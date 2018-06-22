@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Location`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Location(Of T)&#xA;Inherits Location" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Location : System::Activities::Location" />
+  <TypeSignature Language="F#" Value="type Location&lt;'T&gt; = class&#xA;    inherit Location" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.LocationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocationType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocationType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationType : Type" Usage="System.Activities.Location&lt;'T&gt;.LocationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Location`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="location.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Activities.Location&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.ValueCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Property ValueCore As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ ValueCore { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueCore : obj with get, set" Usage="System.Activities.Location&lt;'T&gt;.ValueCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

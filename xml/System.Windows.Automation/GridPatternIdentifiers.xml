@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.GridPatternIdentifiers" />
   <TypeSignature Language="VB.NET" Value="Public Class GridPatternIdentifiers" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridPatternIdentifiers abstract sealed" />
+  <TypeSignature Language="F#" Value="type GridPatternIdentifiers = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPatternIdentifiers.ColumnCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnCountProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ColumnCountProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnCountProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.GridPatternIdentifiers.ColumnCountProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPatternIdentifiers.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.GridPatternIdentifiers.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.GridPatternIdentifiers.RowCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowCountProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RowCountProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowCountProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.GridPatternIdentifiers.RowCountProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

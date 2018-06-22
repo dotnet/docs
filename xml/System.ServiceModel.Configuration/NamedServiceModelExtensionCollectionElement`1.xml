@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class NamedServiceModelExtensionCollectionElement(Of TServiceModelExtensionElement)&#xA;Inherits ServiceModelExtensionCollectionElement(Of TServiceModelExtensionElement)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TServiceModelExtensionElement&gt;&#xA; where TServiceModelExtensionElement : ServiceModelExtensionElementpublic ref class NamedServiceModelExtensionCollectionElement abstract : System::ServiceModel::Configuration::ServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt;" />
+  <TypeSignature Language="F#" Value="type NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt; = class&#xA;    inherit ServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; ServiceModelExtensionElement)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;'ServiceModelExtensionElement (requires 'ServiceModelExtensionElement :&gt; System.ServiceModel.Configuration.ServiceModelExtensionElement)&gt;.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

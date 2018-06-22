@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SwitchLevelAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SwitchLevelAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SwitchLevelAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SwitchLevelAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchLevelAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (switchLevelType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SwitchLevelAttribute(Type ^ switchLevelType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SwitchLevelAttribute : Type -&gt; System.Diagnostics.SwitchLevelAttribute" Usage="new System.Diagnostics.SwitchLevelAttribute switchLevelType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchLevelAttribute.SwitchLevelType" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchLevelType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SwitchLevelType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchLevelType : Type with get, set" Usage="System.Diagnostics.SwitchLevelAttribute.SwitchLevelType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.AuthenticationModulesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticationModulesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationModulesSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type AuthenticationModulesSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModulesSection.AuthenticationModules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationModules As AuthenticationModuleElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::AuthenticationModuleElementCollection ^ AuthenticationModules { System::Net::Configuration::AuthenticationModuleElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationModules : System.Net.Configuration.AuthenticationModuleElementCollection" Usage="System.Net.Configuration.AuthenticationModulesSection.AuthenticationModules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModulesSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
+      <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="authenticationModulesSection.InitializeDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModulesSection.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="authenticationModulesSection.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModulesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.AuthenticationModulesSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

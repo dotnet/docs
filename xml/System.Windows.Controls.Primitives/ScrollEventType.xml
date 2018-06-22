@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ScrollEventType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScrollEventType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ScrollEventType" />
+  <TypeSignature Language="F#" Value="type ScrollEventType = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.EndScroll" />
       <MemberSignature Language="VB.NET" Value="EndScroll" />
       <MemberSignature Language="C++ CLI" Value="EndScroll" />
+      <MemberSignature Language="F#" Value="EndScroll = 0" Usage="System.Windows.Controls.Primitives.ScrollEventType.EndScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.First" />
       <MemberSignature Language="VB.NET" Value="First" />
       <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberSignature Language="F#" Value="First = 1" Usage="System.Windows.Controls.Primitives.ScrollEventType.First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.LargeDecrement" />
       <MemberSignature Language="VB.NET" Value="LargeDecrement" />
       <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 2" Usage="System.Windows.Controls.Primitives.ScrollEventType.LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.LargeIncrement" />
       <MemberSignature Language="VB.NET" Value="LargeIncrement" />
       <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Controls.Primitives.ScrollEventType.LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.Last" />
       <MemberSignature Language="VB.NET" Value="Last" />
       <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 4" Usage="System.Windows.Controls.Primitives.ScrollEventType.Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.SmallDecrement" />
       <MemberSignature Language="VB.NET" Value="SmallDecrement" />
       <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 5" Usage="System.Windows.Controls.Primitives.ScrollEventType.SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.SmallIncrement" />
       <MemberSignature Language="VB.NET" Value="SmallIncrement" />
       <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 6" Usage="System.Windows.Controls.Primitives.ScrollEventType.SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.ThumbPosition" />
       <MemberSignature Language="VB.NET" Value="ThumbPosition" />
       <MemberSignature Language="C++ CLI" Value="ThumbPosition" />
+      <MemberSignature Language="F#" Value="ThumbPosition = 7" Usage="System.Windows.Controls.Primitives.ScrollEventType.ThumbPosition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.ThumbTrack" />
       <MemberSignature Language="VB.NET" Value="ThumbTrack" />
       <MemberSignature Language="C++ CLI" Value="ThumbTrack" />
+      <MemberSignature Language="F#" Value="ThumbTrack = 8" Usage="System.Windows.Controls.Primitives.ScrollEventType.ThumbTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

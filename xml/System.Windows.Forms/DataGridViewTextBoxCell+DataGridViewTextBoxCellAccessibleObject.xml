@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewTextBoxCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject" Usage="new System.Windows.Forms.DataGridViewTextBoxCell.DataGridViewTextBoxCellAccessibleObject owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

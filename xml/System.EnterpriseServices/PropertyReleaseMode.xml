@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PropertyReleaseMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyReleaseMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyReleaseMode" />
+  <TypeSignature Language="F#" Value="type PropertyReleaseMode = " />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyReleaseMode.Process" />
       <MemberSignature Language="VB.NET" Value="Process" />
       <MemberSignature Language="C++ CLI" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 1" Usage="System.EnterpriseServices.PropertyReleaseMode.Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyReleaseMode.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 0" Usage="System.EnterpriseServices.PropertyReleaseMode.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringAlignment" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringAlignment" />
   <TypeSignature Language="C++ CLI" Value="public enum class StringAlignment" />
+  <TypeSignature Language="F#" Value="type StringAlignment = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Center" />
       <MemberSignature Language="VB.NET" Value="Center" />
       <MemberSignature Language="C++ CLI" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 1" Usage="System.Drawing.StringAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Far" />
       <MemberSignature Language="VB.NET" Value="Far" />
       <MemberSignature Language="C++ CLI" Value="Far" />
+      <MemberSignature Language="F#" Value="Far = 2" Usage="System.Drawing.StringAlignment.Far" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Near" />
       <MemberSignature Language="VB.NET" Value="Near" />
       <MemberSignature Language="C++ CLI" Value="Near" />
+      <MemberSignature Language="F#" Value="Near = 0" Usage="System.Drawing.StringAlignment.Near" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

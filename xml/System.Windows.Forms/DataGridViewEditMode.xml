@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewEditMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewEditMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewEditMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnEnter" />
       <MemberSignature Language="VB.NET" Value="EditOnEnter" />
       <MemberSignature Language="C++ CLI" Value="EditOnEnter" />
+      <MemberSignature Language="F#" Value="EditOnEnter = 0" Usage="System.Windows.Forms.DataGridViewEditMode.EditOnEnter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnF2" />
       <MemberSignature Language="VB.NET" Value="EditOnF2" />
       <MemberSignature Language="C++ CLI" Value="EditOnF2" />
+      <MemberSignature Language="F#" Value="EditOnF2 = 3" Usage="System.Windows.Forms.DataGridViewEditMode.EditOnF2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke" />
       <MemberSignature Language="VB.NET" Value="EditOnKeystroke" />
       <MemberSignature Language="C++ CLI" Value="EditOnKeystroke" />
+      <MemberSignature Language="F#" Value="EditOnKeystroke = 1" Usage="System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2" />
       <MemberSignature Language="VB.NET" Value="EditOnKeystrokeOrF2" />
       <MemberSignature Language="C++ CLI" Value="EditOnKeystrokeOrF2" />
+      <MemberSignature Language="F#" Value="EditOnKeystrokeOrF2 = 2" Usage="System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically" />
       <MemberSignature Language="VB.NET" Value="EditProgrammatically" />
       <MemberSignature Language="C++ CLI" Value="EditProgrammatically" />
+      <MemberSignature Language="F#" Value="EditProgrammatically = 4" Usage="System.Windows.Forms.DataGridViewEditMode.EditProgrammatically" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

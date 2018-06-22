@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomQueryInterfaceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CustomQueryInterfaceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CustomQueryInterfaceMode" />
+  <TypeSignature Language="F#" Value="type CustomQueryInterfaceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 1" Usage="System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="C++ CLI" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 0" Usage="System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

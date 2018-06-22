@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public Class DbEnumerator&#xA;Implements IEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbEnumerator : System::Collections::IEnumerator" />
+  <TypeSignature Language="F#" Value="type DbEnumerator = class&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.#ctor(System.Data.Common.DbDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As DbDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DbEnumerator(System::Data::Common::DbDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbEnumerator : System.Data.Common.DbDataReader -&gt; System.Data.Common.DbEnumerator" Usage="new System.Data.Common.DbEnumerator reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.#ctor(System.Data.IDataReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DbEnumerator(System::Data::IDataReader ^ reader);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbEnumerator : System.Data.IDataReader -&gt; System.Data.Common.DbEnumerator" Usage="new System.Data.Common.DbEnumerator reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.#ctor(System.Data.Common.DbDataReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As DbDataReader, closeReader As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DbEnumerator(System::Data::Common::DbDataReader ^ reader, bool closeReader);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbEnumerator : System.Data.Common.DbDataReader * bool -&gt; System.Data.Common.DbEnumerator" Usage="new System.Data.Common.DbEnumerator (reader, closeReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.#ctor(System.Data.IDataReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As IDataReader, closeReader As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DbEnumerator(System::Data::IDataReader ^ reader, bool closeReader);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbEnumerator : System.Data.IDataReader * bool -&gt; System.Data.Common.DbEnumerator" Usage="new System.Data.Common.DbEnumerator (reader, closeReader)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Data.Common.DbEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="dbEnumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbEnumerator.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="dbEnumerator.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositionContract" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompositionContract" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositionContract sealed" />
+  <TypeSignature Language="F#" Value="type CompositionContract = class" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Runtime</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionContract(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type, contractName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionContract(Type ^ contractType, System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type * string -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract (contractType, contractName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.#ctor(System.Type,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type, contractName As String, metadataConstraints As IDictionary(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionContract(Type ^ contractType, System::String ^ contractName, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadataConstraints);" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.CompositionContract : Type * string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="new System.Composition.Hosting.Core.CompositionContract (contractType, contractName, metadataConstraints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.ChangeType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function ChangeType (newContractType As Type) As CompositionContract" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::Core::CompositionContract ^ ChangeType(Type ^ newContractType);" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : Type -&gt; System.Composition.Hosting.Core.CompositionContract" Usage="compositionContract.ChangeType newContractType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.ContractName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.Composition.Hosting.Core.CompositionContract.ContractName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -139,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.ContractType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractType : Type" Usage="System.Composition.Hosting.Core.CompositionContract.ContractType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="compositionContract.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="compositionContract.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -208,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionContract.MetadataConstraints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataConstraints As IEnumerable(Of KeyValuePair(Of String, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ MetadataConstraints { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataConstraints : seq&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;" Usage="System.Composition.Hosting.Core.CompositionContract.MetadataConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -229,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compositionContract.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>
@@ -251,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionContract.TryUnwrapMetadataConstraint``1(System.String,``0@,System.Composition.Hosting.Core.CompositionContract@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryUnwrapMetadataConstraint(Of T) (constraintName As String, ByRef constraintValue As T, ByRef remainingContract As CompositionContract) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; bool TryUnwrapMetadataConstraint(System::String ^ constraintName, [Runtime::InteropServices::Out] T % constraintValue, [Runtime::InteropServices::Out] System::Composition::Hosting::Core::CompositionContract ^ % remainingContract);" />
+      <MemberSignature Language="F#" Value="member this.TryUnwrapMetadataConstraint : string *  *  -&gt; bool" Usage="compositionContract.TryUnwrapMetadataConstraint (constraintName, constraintValue, remainingContract)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Runtime</AssemblyName>

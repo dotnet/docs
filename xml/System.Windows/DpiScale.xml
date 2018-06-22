@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DpiScale" />
   <TypeSignature Language="VB.NET" Value="Public Structure DpiScale" />
   <TypeSignature Language="C++ CLI" Value="public value class DpiScale" />
+  <TypeSignature Language="F#" Value="type DpiScale = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DpiScale.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dpiScaleX As Double, dpiScaleY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DpiScale(double dpiScaleX, double dpiScaleY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DpiScale : double * double -&gt; System.Windows.DpiScale" Usage="new System.Windows.DpiScale (dpiScaleX, dpiScaleY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.DpiScaleX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiScaleX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DpiScaleX { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.DpiScaleX : double" Usage="System.Windows.DpiScale.DpiScaleX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.DpiScaleY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DpiScaleY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DpiScaleY { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.DpiScaleY : double" Usage="System.Windows.DpiScale.DpiScaleY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerDip" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerDip As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerDip : double" Usage="System.Windows.DpiScale.PixelsPerDip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerInchX" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerInchX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerInchX { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerInchX : double" Usage="System.Windows.DpiScale.PixelsPerInchX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DpiScale.PixelsPerInchY" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelsPerInchY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerInchY { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerInchY : double" Usage="System.Windows.DpiScale.PixelsPerInchY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

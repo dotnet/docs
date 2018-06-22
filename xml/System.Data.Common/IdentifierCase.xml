@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.IdentifierCase" />
   <TypeSignature Language="VB.NET" Value="Public Enum IdentifierCase" />
   <TypeSignature Language="C++ CLI" Value="public enum class IdentifierCase" />
+  <TypeSignature Language="F#" Value="type IdentifierCase = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Insensitive" />
       <MemberSignature Language="VB.NET" Value="Insensitive" />
       <MemberSignature Language="C++ CLI" Value="Insensitive" />
+      <MemberSignature Language="F#" Value="Insensitive = 1" Usage="System.Data.Common.IdentifierCase.Insensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Sensitive" />
       <MemberSignature Language="VB.NET" Value="Sensitive" />
       <MemberSignature Language="C++ CLI" Value="Sensitive" />
+      <MemberSignature Language="F#" Value="Sensitive = 2" Usage="System.Data.Common.IdentifierCase.Sensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Data.Common.IdentifierCase.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

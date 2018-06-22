@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StructuredCompositeActivityDesigner&#xA;Inherits CompositeActivityDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class StructuredCompositeActivityDesigner abstract : System::Workflow::ComponentModel::Design::CompositeActivityDesigner" />
+  <TypeSignature Language="F#" Value="type StructuredCompositeActivityDesigner = class&#xA;    inherit CompositeActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveView As DesignerView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::DesignerView ^ ActiveView { System::Workflow::ComponentModel::Design::DesignerView ^ get(); void set(System::Workflow::ComponentModel::Design::DesignerView ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveView : System.Workflow.ComponentModel.Design.DesignerView with get, set" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CanInsertActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanInsertActivities (insertLocation As HitTestInfo, activitiesToInsert As ReadOnlyCollection(Of Activity)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanInsertActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ insertLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToInsert);" />
+      <MemberSignature Language="F#" Value="override this.CanInsertActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; bool" Usage="structuredCompositeActivityDesigner.CanInsertActivities (insertLocation, activitiesToInsert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CanRemoveActivities(System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRemoveActivities (activitiesToRemove As ReadOnlyCollection(Of Activity)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRemoveActivities(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToRemove);" />
+      <MemberSignature Language="F#" Value="override this.CanRemoveActivities : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; bool" Usage="structuredCompositeActivityDesigner.CanRemoveActivities activitiesToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ContainedDesigners" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContainedDesigners As ReadOnlyCollection(Of ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesigner ^&gt; ^ ContainedDesigners { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesigner ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainedDesigners : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt;" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ContainedDesigners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CurrentDropTarget" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property CurrentDropTarget As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int CurrentDropTarget { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentDropTarget : int with get, set" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CurrentDropTarget" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DrawConnectors(class System.Drawing.Graphics graphics, class System.Drawing.Pen pen, valuetype System.Drawing.Point[] points, valuetype System.Workflow.ComponentModel.Design.LineAnchor startCap, valuetype System.Workflow.ComponentModel.Design.LineAnchor endCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.DrawConnectors(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Point[],System.Workflow.ComponentModel.Design.LineAnchor,System.Workflow.ComponentModel.Design.LineAnchor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DrawConnectors(System::Drawing::Graphics ^ graphics, System::Drawing::Pen ^ pen, cli::array &lt;System::Drawing::Point&gt; ^ points, System::Workflow::ComponentModel::Design::LineAnchor startCap, System::Workflow::ComponentModel::Design::LineAnchor endCap);" />
+      <MemberSignature Language="F#" Value="member this.DrawConnectors : System.Drawing.Graphics * System.Drawing.Pen * System.Drawing.Point[] * System.Workflow.ComponentModel.Design.LineAnchor * System.Workflow.ComponentModel.Design.LineAnchor -&gt; unit" Usage="structuredCompositeActivityDesigner.DrawConnectors (graphics, pen, points, startCap, endCap)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.EnsureVisibleContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnsureVisibleContainedDesigner (containedDesigner As ActivityDesigner)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnsureVisibleContainedDesigner(System::Workflow::ComponentModel::Design::ActivityDesigner ^ containedDesigner);" />
+      <MemberSignature Language="F#" Value="override this.EnsureVisibleContainedDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="structuredCompositeActivityDesigner.EnsureVisibleContainedDesigner containedDesigner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.FirstSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FirstSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FirstSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.FirstSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.GetDropTargets(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDropTargets (dropPoint As Point) As Rectangle()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Drawing::Rectangle&gt; ^ GetDropTargets(System::Drawing::Point dropPoint);" />
+      <MemberSignature Language="F#" Value="abstract member GetDropTargets : System.Drawing.Point -&gt; System.Drawing.Rectangle[]&#xA;override this.GetDropTargets : System.Drawing.Point -&gt; System.Drawing.Rectangle[]" Usage="structuredCompositeActivityDesigner.GetDropTargets dropPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.GetInnerConnections(System.Workflow.ComponentModel.Design.DesignerEdges)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetInnerConnections (edges As DesignerEdges) As ReadOnlyCollection(Of Point)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::Point&gt; ^ GetInnerConnections(System::Workflow::ComponentModel::Design::DesignerEdges edges);" />
+      <MemberSignature Language="F#" Value="abstract member GetInnerConnections : System.Workflow.ComponentModel.Design.DesignerEdges -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt;&#xA;override this.GetInnerConnections : System.Workflow.ComponentModel.Design.DesignerEdges -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt;" Usage="structuredCompositeActivityDesigner.GetInnerConnections edges" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -352,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextSelectableObject (current As Object, direction As DesignerNavigationDirection) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetNextSelectableObject(System::Object ^ current, System::Workflow::ComponentModel::Design::DesignerNavigationDirection direction);" />
+      <MemberSignature Language="F#" Value="override this.GetNextSelectableObject : obj * System.Workflow.ComponentModel.Design.DesignerNavigationDirection -&gt; obj" Usage="structuredCompositeActivityDesigner.GetNextSelectableObject (current, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -377,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Initialize(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="structuredCompositeActivityDesigner.Initialize activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.InsertActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub InsertActivities (insertLocation As HitTestInfo, activitiesToInsert As ReadOnlyCollection(Of Activity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InsertActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ insertLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToInsert);" />
+      <MemberSignature Language="F#" Value="override this.InsertActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; unit" Usage="structuredCompositeActivityDesigner.InsertActivities (insertLocation, activitiesToInsert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -432,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.LastSelectableObject" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastSelectableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LastSelectableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastSelectableObject : obj" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.LastSelectableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -459,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.LoadViewState(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (reader As BinaryReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::IO::BinaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : System.IO.BinaryReader -&gt; unit" Usage="structuredCompositeActivityDesigner.LoadViewState reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -484,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinimumSize As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.MinimumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -504,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.MoveActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MoveActivities (moveLocation As HitTestInfo, activitiesToMove As ReadOnlyCollection(Of Activity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MoveActivities(System::Workflow::ComponentModel::Design::HitTestInfo ^ moveLocation, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activitiesToMove);" />
+      <MemberSignature Language="F#" Value="override this.MoveActivities : System.Workflow.ComponentModel.Design.HitTestInfo * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; unit" Usage="structuredCompositeActivityDesigner.MoveActivities (moveLocation, activitiesToMove)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -529,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnActivityChanged(System.Workflow.ComponentModel.Design.ActivityChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChanged (e As ActivityChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChanged(System::Workflow::ComponentModel::Design::ActivityChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChanged : System.Workflow.ComponentModel.Design.ActivityChangedEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnActivityChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -554,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnContainedActivitiesChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContainedActivitiesChanging (listChangeArgs As ActivityCollectionChangeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContainedActivitiesChanging(System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^ listChangeArgs);" />
+      <MemberSignature Language="F#" Value="override this.OnContainedActivitiesChanging : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnContainedActivitiesChanging listChangeArgs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -577,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnDragDrop(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragDrop (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragDrop(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragDrop : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnDragDrop e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -602,6 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnDragEnter(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragEnter : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnDragEnter e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -627,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnDragLeave" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragLeave ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragLeave();" />
+      <MemberSignature Language="F#" Value="override this.OnDragLeave : unit -&gt; unit" Usage="structuredCompositeActivityDesigner.OnDragLeave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -647,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnDragOver(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (e As ActivityDragEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Workflow::ComponentModel::Design::ActivityDragEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDragOver : System.Workflow.ComponentModel.Design.ActivityDragEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnDragOver e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -672,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayoutPosition (e As ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayoutPosition(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutPosition : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; unit" Usage="structuredCompositeActivityDesigner.OnLayoutPosition e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -697,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLayoutSize : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs -&gt; System.Drawing.Size" Usage="structuredCompositeActivityDesigner.OnLayoutSize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -721,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnShowSmartTagVerbs(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnShowSmartTagVerbs (smartTagPoint As Point)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnShowSmartTagVerbs(System::Drawing::Point smartTagPoint);" />
+      <MemberSignature Language="F#" Value="override this.OnShowSmartTagVerbs : System.Drawing.Point -&gt; unit" Usage="structuredCompositeActivityDesigner.OnShowSmartTagVerbs smartTagPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -744,6 +771,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.OnViewChanged(System.Workflow.ComponentModel.Design.DesignerView)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewChanged (view As DesignerView)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewChanged(System::Workflow::ComponentModel::Design::DesignerView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member OnViewChanged : System.Workflow.ComponentModel.Design.DesignerView -&gt; unit&#xA;override this.OnViewChanged : System.Workflow.ComponentModel.Design.DesignerView -&gt; unit" Usage="structuredCompositeActivityDesigner.OnViewChanged view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -767,6 +795,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.SaveViewState(System.IO.BinaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SaveViewState (writer As BinaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SaveViewState(System::IO::BinaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : System.IO.BinaryWriter -&gt; unit" Usage="structuredCompositeActivityDesigner.SaveViewState writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -790,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ShowSmartTag" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ShowSmartTag As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ShowSmartTag { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSmartTag : bool" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ShowSmartTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -811,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.SmartTagVerbs" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SmartTagVerbs As ReadOnlyCollection(Of ActivityDesignerVerb)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesignerVerb ^&gt; ^ SmartTagVerbs { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::ActivityDesignerVerb ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagVerbs : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesignerVerb&gt;" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.SmartTagVerbs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -838,6 +869,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Views" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Views As ReadOnlyCollection(Of DesignerView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::DesignerView ^&gt; ^ Views { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::DesignerView ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Views : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.DesignerView&gt;" Usage="System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Views" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

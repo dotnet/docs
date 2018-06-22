@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessControlType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessControlType" />
+  <TypeSignature Language="F#" Value="type AccessControlType = " />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlType.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="C++ CLI" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 0" Usage="System.Security.AccessControl.AccessControlType.Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlType.Deny" />
       <MemberSignature Language="VB.NET" Value="Deny" />
       <MemberSignature Language="C++ CLI" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 1" Usage="System.Security.AccessControl.AccessControlType.Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

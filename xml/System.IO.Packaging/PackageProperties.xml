@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PackageProperties&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackageProperties abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type PackageProperties = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Category" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Category { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string with get, set" Usage="System.IO.Packaging.PackageProperties.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.ContentStatus" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ContentStatus As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ContentStatus { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentStatus : string with get, set" Usage="System.IO.Packaging.PackageProperties.ContentStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.IO.Packaging.PackageProperties.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Created" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Created As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Nullable&lt;DateTime&gt; Created { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Created : Nullable&lt;DateTime&gt; with get, set" Usage="System.IO.Packaging.PackageProperties.Created" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Creator" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Creator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Creator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : string with get, set" Usage="System.IO.Packaging.PackageProperties.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Description" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.IO.Packaging.PackageProperties.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageProperties.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="packageProperties.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageProperties.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="packageProperties.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -331,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Identifier" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Identifier As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Identifier { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Identifier : string with get, set" Usage="System.IO.Packaging.PackageProperties.Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -356,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Keywords As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Keywords { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : string with get, set" Usage="System.IO.Packaging.PackageProperties.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Language" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="System.IO.Packaging.PackageProperties.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -413,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.LastModifiedBy" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property LastModifiedBy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ LastModifiedBy { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedBy : string with get, set" Usage="System.IO.Packaging.PackageProperties.LastModifiedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.LastPrinted" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property LastPrinted As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Nullable&lt;DateTime&gt; LastPrinted { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.LastPrinted : Nullable&lt;DateTime&gt; with get, set" Usage="System.IO.Packaging.PackageProperties.LastPrinted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -465,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Modified" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Modified As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Nullable&lt;DateTime&gt; Modified { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.Modified : Nullable&lt;DateTime&gt; with get, set" Usage="System.IO.Packaging.PackageProperties.Modified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -492,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Revision" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Revision As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Revision { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Revision : string with get, set" Usage="System.IO.Packaging.PackageProperties.Revision" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -527,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Subject" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="System.IO.Packaging.PackageProperties.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -553,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Title" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.IO.Packaging.PackageProperties.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -579,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageProperties.Version" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.IO.Packaging.PackageProperties.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

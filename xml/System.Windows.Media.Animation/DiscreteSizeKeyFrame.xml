@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscreteSizeKeyFrame&#xA;Inherits SizeKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscreteSizeKeyFrame : System::Windows::Media::Animation::SizeKeyFrame" />
+  <TypeSignature Language="F#" Value="type DiscreteSizeKeyFrame = class&#xA;    inherit SizeKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSizeKeyFrame.#ctor(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteSizeKeyFrame(System::Windows::Size value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteSizeKeyFrame : System.Windows.Size -&gt; System.Windows.Media.Animation.DiscreteSizeKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteSizeKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSizeKeyFrame.#ctor(System.Windows.Size,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteSizeKeyFrame(System::Windows::Size value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteSizeKeyFrame : System.Windows.Size * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.DiscreteSizeKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteSizeKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSizeKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="discreteSizeKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteSizeKeyFrame.InterpolateValueCore(System.Windows.Size,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Size, keyFrameProgress As Double) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size InterpolateValueCore(System::Windows::Size baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Size * double -&gt; System.Windows.Size" Usage="discreteSizeKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

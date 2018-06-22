@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PnrpScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PnrpScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class PnrpScope" />
+  <TypeSignature Language="F#" Value="type PnrpScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Net.PeerToPeer.PnrpScope.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.Global" />
       <MemberSignature Language="VB.NET" Value="Global" />
       <MemberSignature Language="C++ CLI" Value="Global" />
+      <MemberSignature Language="F#" Value="Global = 1" Usage="System.Net.PeerToPeer.PnrpScope.Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.LinkLocal" />
       <MemberSignature Language="VB.NET" Value="LinkLocal" />
       <MemberSignature Language="C++ CLI" Value="LinkLocal" />
+      <MemberSignature Language="F#" Value="LinkLocal = 3" Usage="System.Net.PeerToPeer.PnrpScope.LinkLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.SiteLocal" />
       <MemberSignature Language="VB.NET" Value="SiteLocal" />
       <MemberSignature Language="C++ CLI" Value="SiteLocal" />
+      <MemberSignature Language="F#" Value="SiteLocal = 2" Usage="System.Net.PeerToPeer.PnrpScope.SiteLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

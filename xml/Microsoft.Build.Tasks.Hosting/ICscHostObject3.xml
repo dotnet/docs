@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject3" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICscHostObject3&#xA;Implements ICscHostObject2, ITaskHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICscHostObject3 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::ICscHostObject2" />
+  <TypeSignature Language="F#" Value="type ICscHostObject3 = interface&#xA;    interface ICscHostObject2&#xA;    interface ICscHostObject&#xA;    interface ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject3.SetApplicationConfiguration(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetApplicationConfiguration (applicationConfiguration As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetApplicationConfiguration(System::String ^ applicationConfiguration);" />
+      <MemberSignature Language="F#" Value="abstract member SetApplicationConfiguration : string -&gt; bool" Usage="iCscHostObject3.SetApplicationConfiguration applicationConfiguration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

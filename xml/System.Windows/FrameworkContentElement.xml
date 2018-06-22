@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkContentElement" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkContentElement&#xA;Inherits ContentElement&#xA;Implements IFrameworkInputElement, IQueryAmbient, ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkContentElement : System::Windows::ContentElement, System::ComponentModel::ISupportInitialize, System::Windows::IFrameworkInputElement, System::Windows::Markup::IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type FrameworkContentElement = class&#xA;    inherit ContentElement&#xA;    interface IFrameworkInputElement&#xA;    interface IInputElement&#xA;    interface ISupportInitialize&#xA;    interface IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.AddLogicalChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub AddLogicalChild (child As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void AddLogicalChild(System::Object ^ child);" />
+      <MemberSignature Language="F#" Value="member this.AddLogicalChild : obj -&gt; unit" Usage="frameworkContentElement.AddLogicalChild child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="frameworkContentElement.BeginInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginStoryboard(class System.Windows.Media.Animation.Storyboard storyboard) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginStoryboard(System::Windows::Media::Animation::Storyboard ^ storyboard);" />
+      <MemberSignature Language="F#" Value="member this.BeginStoryboard : System.Windows.Media.Animation.Storyboard -&gt; unit" Usage="frameworkContentElement.BeginStoryboard storyboard" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginStoryboard(class System.Windows.Media.Animation.Storyboard storyboard, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard,System.Windows.Media.Animation.HandoffBehavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginStoryboard(System::Windows::Media::Animation::Storyboard ^ storyboard, System::Windows::Media::Animation::HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="F#" Value="member this.BeginStoryboard : System.Windows.Media.Animation.Storyboard * System.Windows.Media.Animation.HandoffBehavior -&gt; unit" Usage="frameworkContentElement.BeginStoryboard (storyboard, handoffBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -223,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginStoryboard(class System.Windows.Media.Animation.Storyboard storyboard, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard,System.Windows.Media.Animation.HandoffBehavior,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginStoryboard(System::Windows::Media::Animation::Storyboard ^ storyboard, System::Windows::Media::Animation::HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="F#" Value="member this.BeginStoryboard : System.Windows.Media.Animation.Storyboard * System.Windows.Media.Animation.HandoffBehavior * bool -&gt; unit" Usage="frameworkContentElement.BeginStoryboard (storyboard, handoffBehavior, isControllable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.BindingGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property BindingGroup As BindingGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingGroup ^ BindingGroup { System::Windows::Data::BindingGroup ^ get(); void set(System::Windows::Data::BindingGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingGroup : System.Windows.Data.BindingGroup with get, set" Usage="System.Windows.FrameworkContentElement.BindingGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.BindingGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BindingGroupProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BindingGroupProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BindingGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.BindingGroupProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.BringIntoView" />
       <MemberSignature Language="VB.NET" Value="Public Sub BringIntoView ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BringIntoView();" />
+      <MemberSignature Language="F#" Value="member this.BringIntoView : unit -&gt; unit" Usage="frameworkContentElement.BringIntoView " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -361,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.ContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextMenu As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ContextMenu ^ ContextMenu { System::Windows::Controls::ContextMenu ^ get(); void set(System::Windows::Controls::ContextMenu ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Controls.ContextMenu with get, set" Usage="System.Windows.FrameworkContentElement.ContextMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -404,6 +414,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.ContextMenuClosing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuClosing As ContextMenuEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::ContextMenuEventHandler ^ ContextMenuClosing;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuClosing : System.Windows.Controls.ContextMenuEventHandler " Usage="member this.ContextMenuClosing : System.Windows.Controls.ContextMenuEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ContextMenuClosingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuClosingEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ContextMenuClosingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextMenuClosingEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.ContextMenuClosingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -480,6 +492,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.ContextMenuOpening" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuOpening As ContextMenuEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::ContextMenuEventHandler ^ ContextMenuOpening;" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuOpening : System.Windows.Controls.ContextMenuEventHandler " Usage="member this.ContextMenuOpening : System.Windows.Controls.ContextMenuEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +536,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ContextMenuOpeningEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuOpeningEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ContextMenuOpeningEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextMenuOpeningEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.ContextMenuOpeningEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ContextMenuProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextMenuProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextMenuProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.ContextMenuProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -568,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Property Cursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Cursor ^ Cursor { System::Windows::Input::Cursor ^ get(); void set(System::Windows::Input::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Input.Cursor with get, set" Usage="System.Windows.FrameworkContentElement.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -626,6 +642,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.CursorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CursorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CursorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CursorProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.CursorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -645,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.DataContext" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContext As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataContext { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataContext : obj with get, set" Usage="System.Windows.FrameworkContentElement.DataContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -738,6 +756,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.DataContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataContextChanged As DependencyPropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DependencyPropertyChangedEventHandler ^ DataContextChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataContextChanged : System.Windows.DependencyPropertyChangedEventHandler " Usage="member this.DataContextChanged : System.Windows.DependencyPropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -767,6 +786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.DataContextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataContextProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DataContextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataContextProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.DataContextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -786,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.DefaultStyleKey" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property DefaultStyleKey As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ DefaultStyleKey { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultStyleKey : obj with get, set" Usage="System.Windows.FrameworkContentElement.DefaultStyleKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -825,6 +846,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.DefaultStyleKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly DefaultStyleKeyProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::Windows::DependencyProperty ^ DefaultStyleKeyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultStyleKeyProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.DefaultStyleKeyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -844,6 +866,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="frameworkContentElement.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -875,6 +898,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.FindName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindName (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.FindName : string -&gt; obj" Usage="frameworkContentElement.FindName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -914,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.FindResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindResource (resourceKey As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindResource(System::Object ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="member this.FindResource : obj -&gt; obj" Usage="frameworkContentElement.FindResource resourceKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -962,6 +987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.FocusVisualStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusVisualStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ FocusVisualStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FocusVisualStyle : System.Windows.Style with get, set" Usage="System.Windows.FrameworkContentElement.FocusVisualStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1022,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.FocusVisualStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusVisualStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusVisualStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusVisualStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.FocusVisualStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1041,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.ForceCursor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForceCursor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForceCursor { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ForceCursor : bool with get, set" Usage="System.Windows.FrameworkContentElement.ForceCursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1084,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ForceCursorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForceCursorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForceCursorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForceCursorProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.ForceCursorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1103,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.GetBindingExpression(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBindingExpression (dp As DependencyProperty) As BindingExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Data::BindingExpression ^ GetBindingExpression(System::Windows::DependencyProperty ^ dp);" />
+      <MemberSignature Language="F#" Value="member this.GetBindingExpression : System.Windows.DependencyProperty -&gt; System.Windows.Data.BindingExpression" Usage="frameworkContentElement.GetBindingExpression dp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1137,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.GetUIParentCore" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetUIParentCore () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::DependencyObject ^ GetUIParentCore();" />
+      <MemberSignature Language="F#" Value="override this.GetUIParentCore : unit -&gt; System.Windows.DependencyObject" Usage="frameworkContentElement.GetUIParentCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1165,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.Initialized" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Initialized As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Initialized;" />
+      <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1196,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.InputScope" />
       <MemberSignature Language="VB.NET" Value="Public Property InputScope As InputScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputScope ^ InputScope { System::Windows::Input::InputScope ^ get(); void set(System::Windows::Input::InputScope ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InputScope : System.Windows.Input.InputScope with get, set" Usage="System.Windows.FrameworkContentElement.InputScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1233,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.InputScopeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputScopeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputScopeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InputScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.InputScopeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1252,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Windows.FrameworkContentElement.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1286,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.IsLoaded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoaded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoaded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoaded : bool" Usage="System.Windows.FrameworkContentElement.IsLoaded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1323,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As XmlLanguage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::XmlLanguage ^ Language { System::Windows::Markup::XmlLanguage ^ get(); void set(System::Windows::Markup::XmlLanguage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : System.Windows.Markup.XmlLanguage with get, set" Usage="System.Windows.FrameworkContentElement.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1360,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.LanguageProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LanguageProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LanguageProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LanguageProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.LanguageProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1379,6 +1417,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.Loaded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Loaded As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Loaded;" />
+      <MemberSignature Language="F#" Value="member this.Loaded : System.Windows.RoutedEventHandler " Usage="member this.Loaded : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1414,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.LoadedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LoadedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ LoadedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LoadedEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.LoadedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1440,6 +1480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.FrameworkContentElement.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1467,6 +1508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function MoveFocus (request As TraversalRequest) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveFocus(System::Windows::Input::TraversalRequest ^ request);" />
+      <MemberSignature Language="F#" Value="override this.MoveFocus : System.Windows.Input.TraversalRequest -&gt; bool" Usage="frameworkContentElement.MoveFocus request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1492,6 +1534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.FrameworkContentElement.Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.IFrameworkInputElement.Name</InterfaceMember>
@@ -1551,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.NameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NameProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.NameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1570,6 +1614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnContextMenuClosing(System.Windows.Controls.ContextMenuEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContextMenuClosing (e As ContextMenuEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContextMenuClosing(System::Windows::Controls::ContextMenuEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnContextMenuClosing : System.Windows.Controls.ContextMenuEventArgs -&gt; unit&#xA;override this.OnContextMenuClosing : System.Windows.Controls.ContextMenuEventArgs -&gt; unit" Usage="frameworkContentElement.OnContextMenuClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1602,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContextMenuOpening (e As ContextMenuEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContextMenuOpening(System::Windows::Controls::ContextMenuEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnContextMenuOpening : System.Windows.Controls.ContextMenuEventArgs -&gt; unit&#xA;override this.OnContextMenuOpening : System.Windows.Controls.ContextMenuEventArgs -&gt; unit" Usage="frameworkContentElement.OnContextMenuOpening e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1634,6 +1680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnGotFocus(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As RoutedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(System::Windows::RoutedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnGotFocus : System.Windows.RoutedEventArgs -&gt; unit" Usage="frameworkContentElement.OnGotFocus e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1666,6 +1713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInitialized(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInitialized : EventArgs -&gt; unit&#xA;override this.OnInitialized : EventArgs -&gt; unit" Usage="frameworkContentElement.OnInitialized e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1698,6 +1746,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="frameworkContentElement.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1737,6 +1786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnStyleChanged(System.Windows.Style,System.Windows.Style)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnStyleChanged (oldStyle As Style, newStyle As Style)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnStyleChanged(System::Windows::Style ^ oldStyle, System::Windows::Style ^ newStyle);" />
+      <MemberSignature Language="F#" Value="abstract member OnStyleChanged : System.Windows.Style * System.Windows.Style -&gt; unit&#xA;override this.OnStyleChanged : System.Windows.Style * System.Windows.Style -&gt; unit" Usage="frameworkContentElement.OnStyleChanged (oldStyle, newStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1773,6 +1823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnToolTipClosing(System.Windows.Controls.ToolTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnToolTipClosing (e As ToolTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnToolTipClosing(System::Windows::Controls::ToolTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnToolTipClosing : System.Windows.Controls.ToolTipEventArgs -&gt; unit&#xA;override this.OnToolTipClosing : System.Windows.Controls.ToolTipEventArgs -&gt; unit" Usage="frameworkContentElement.OnToolTipClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1805,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.OnToolTipOpening(System.Windows.Controls.ToolTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnToolTipOpening (e As ToolTipEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnToolTipOpening(System::Windows::Controls::ToolTipEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnToolTipOpening : System.Windows.Controls.ToolTipEventArgs -&gt; unit&#xA;override this.OnToolTipOpening : System.Windows.Controls.ToolTipEventArgs -&gt; unit" Usage="frameworkContentElement.OnToolTipOpening e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1837,6 +1889,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.OverridesDefaultStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property OverridesDefaultStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverridesDefaultStyle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OverridesDefaultStyle : bool with get, set" Usage="System.Windows.FrameworkContentElement.OverridesDefaultStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1874,6 +1927,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.OverridesDefaultStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OverridesDefaultStyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OverridesDefaultStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OverridesDefaultStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.OverridesDefaultStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1893,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Parent { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.DependencyObject" Usage="System.Windows.FrameworkContentElement.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1937,6 +1992,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function PredictFocus (direction As FocusNavigationDirection) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::DependencyObject ^ PredictFocus(System::Windows::Input::FocusNavigationDirection direction);" />
+      <MemberSignature Language="F#" Value="override this.PredictFocus : System.Windows.Input.FocusNavigationDirection -&gt; System.Windows.DependencyObject" Usage="frameworkContentElement.PredictFocus direction" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1969,6 +2025,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.RegisterName(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
+      <MemberSignature Language="F#" Value="member this.RegisterName : string * obj -&gt; unit" Usage="frameworkContentElement.RegisterName (name, scopedElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2005,6 +2062,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.RemoveLogicalChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RemoveLogicalChild (child As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RemoveLogicalChild(System::Object ^ child);" />
+      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : obj -&gt; unit" Usage="frameworkContentElement.RemoveLogicalChild child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2038,6 +2096,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Resources" />
       <MemberSignature Language="VB.NET" Value="Public Property Resources As ResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ Resources { System::Windows::ResourceDictionary ^ get(); void set(System::Windows::ResourceDictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resources : System.Windows.ResourceDictionary with get, set" Usage="System.Windows.FrameworkContentElement.Resources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2111,6 +2170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.SetBinding(System.Windows.DependencyProperty,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetBinding (dp As DependencyProperty, path As String) As BindingExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Data::BindingExpression ^ SetBinding(System::Windows::DependencyProperty ^ dp, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.SetBinding : System.Windows.DependencyProperty * string -&gt; System.Windows.Data.BindingExpression" Usage="frameworkContentElement.SetBinding (dp, path)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2152,6 +2212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.SetBinding(System.Windows.DependencyProperty,System.Windows.Data.BindingBase)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetBinding (dp As DependencyProperty, binding As BindingBase) As BindingExpressionBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Data::BindingExpressionBase ^ SetBinding(System::Windows::DependencyProperty ^ dp, System::Windows::Data::BindingBase ^ binding);" />
+      <MemberSignature Language="F#" Value="member this.SetBinding : System.Windows.DependencyProperty * System.Windows.Data.BindingBase -&gt; System.Windows.Data.BindingExpressionBase" Usage="frameworkContentElement.SetBinding (dp, binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2193,6 +2254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.SetResourceReference(System.Windows.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResourceReference (dp As DependencyProperty, name As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResourceReference(System::Windows::DependencyProperty ^ dp, System::Object ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SetResourceReference : System.Windows.DependencyProperty * obj -&gt; unit" Usage="frameworkContentElement.SetResourceReference (dp, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2228,6 +2290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.ShouldSerializeResources" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeResources () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeResources();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeResources : unit -&gt; bool" Usage="frameworkContentElement.ShouldSerializeResources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2262,6 +2325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.ShouldSerializeStyle" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeStyle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeStyle();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeStyle : unit -&gt; bool" Usage="frameworkContentElement.ShouldSerializeStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2296,6 +2360,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.SourceUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SourceUpdated As EventHandler(Of DataTransferEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ SourceUpdated;" />
+      <MemberSignature Language="F#" Value="member this.SourceUpdated : EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; " Usage="member this.SourceUpdated : System.EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2329,6 +2394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ Style { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.Style with get, set" Usage="System.Windows.FrameworkContentElement.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2393,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.StyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StyleProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.StyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2447,6 +2514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.FrameworkContentElement.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2487,6 +2555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.TagProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TagProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TagProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TagProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.TagProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2506,6 +2575,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.TargetUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TargetUpdated As EventHandler(Of DataTransferEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ TargetUpdated;" />
+      <MemberSignature Language="F#" Value="member this.TargetUpdated : EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; " Usage="member this.TargetUpdated : System.EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2541,6 +2611,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.TemplatedParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplatedParent As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ TemplatedParent { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplatedParent : System.Windows.DependencyObject" Usage="System.Windows.FrameworkContentElement.TemplatedParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2570,6 +2641,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkContentElement.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ToolTip { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ToolTip : obj with get, set" Usage="System.Windows.FrameworkContentElement.ToolTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2656,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.ToolTipClosing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ToolTipClosing As ToolTipEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::ToolTipEventHandler ^ ToolTipClosing;" />
+      <MemberSignature Language="F#" Value="member this.ToolTipClosing : System.Windows.Controls.ToolTipEventHandler " Usage="member this.ToolTipClosing : System.Windows.Controls.ToolTipEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2693,6 +2766,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ToolTipClosingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipClosingEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolTipClosingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipClosingEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.ToolTipClosingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2719,6 +2793,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.ToolTipOpening" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ToolTipOpening As ToolTipEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::ToolTipEventHandler ^ ToolTipOpening;" />
+      <MemberSignature Language="F#" Value="member this.ToolTipOpening : System.Windows.Controls.ToolTipEventHandler " Usage="member this.ToolTipOpening : System.Windows.Controls.ToolTipEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2756,6 +2831,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ToolTipOpeningEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipOpeningEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolTipOpeningEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipOpeningEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.ToolTipOpeningEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2782,6 +2858,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.ToolTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.FrameworkContentElement.ToolTipProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2801,6 +2878,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.TryFindResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFindResource (resourceKey As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ TryFindResource(System::Object ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="member this.TryFindResource : obj -&gt; obj" Usage="frameworkContentElement.TryFindResource resourceKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2845,6 +2923,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.FrameworkContentElement.Unloaded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unloaded As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unloaded;" />
+      <MemberSignature Language="F#" Value="member this.Unloaded : System.Windows.RoutedEventHandler " Usage="member this.Unloaded : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2880,6 +2959,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.FrameworkContentElement.UnloadedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnloadedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UnloadedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnloadedEvent : System.Windows.RoutedEvent" Usage="System.Windows.FrameworkContentElement.UnloadedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2906,6 +2986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.UnregisterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.UnregisterName : string -&gt; unit" Usage="frameworkContentElement.UnregisterName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2938,6 +3019,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkContentElement.UpdateDefaultStyle" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateDefaultStyle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateDefaultStyle();" />
+      <MemberSignature Language="F#" Value="member this.UpdateDefaultStyle : unit -&gt; unit" Usage="frameworkContentElement.UpdateDefaultStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

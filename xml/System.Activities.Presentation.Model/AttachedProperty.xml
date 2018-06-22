@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.AttachedProperty" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AttachedProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttachedProperty abstract" />
+  <TypeSignature Language="F#" Value="type AttachedProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedProperty.GetValue(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : System.Activities.Presentation.Model.ModelItem -&gt; obj" Usage="attachedProperty.GetValue modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedProperty.IsBrowsable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsBrowsable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBrowsable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBrowsable : bool with get, set" Usage="System.Activities.Presentation.Model.AttachedProperty.IsBrowsable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedProperty.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Activities.Presentation.Model.AttachedProperty.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Presentation.Model.AttachedProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NotifyPropertyChanged(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedProperty.NotifyPropertyChanged(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyPropertyChanged(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="member this.NotifyPropertyChanged : System.Activities.Presentation.Model.ModelItem -&gt; unit" Usage="attachedProperty.NotifyPropertyChanged modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedProperty.OwnerType" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OwnerType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerType : Type with get, set" Usage="System.Activities.Presentation.Model.AttachedProperty.OwnerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetValue(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedProperty.ResetValue(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResetValue(System::Activities::Presentation::Model::ModelItem ^ modelItem);" />
+      <MemberSignature Language="F#" Value="abstract member ResetValue : System.Activities.Presentation.Model.ModelItem -&gt; unit" Usage="attachedProperty.ResetValue modelItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(class System.Activities.Presentation.Model.ModelItem modelItem, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedProperty.SetValue(System.Activities.Presentation.Model.ModelItem,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Activities::Presentation::Model::ModelItem ^ modelItem, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : System.Activities.Presentation.Model.ModelItem * obj -&gt; unit" Usage="attachedProperty.SetValue (modelItem, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedProperty.Type" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.Presentation.Model.AttachedProperty.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

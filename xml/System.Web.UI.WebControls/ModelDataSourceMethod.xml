@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataSourceMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelDataSourceMethod" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelDataSourceMethod" />
+  <TypeSignature Language="F#" Value="type ModelDataSourceMethod = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance, class System.Reflection.MethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceMethod.#ctor(System.Object,System.Reflection.MethodInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelDataSourceMethod(System::Object ^ instance, System::Reflection::MethodInfo ^ methodInfo);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ModelDataSourceMethod : obj * System.Reflection.MethodInfo -&gt; System.Web.UI.WebControls.ModelDataSourceMethod" Usage="new System.Web.UI.WebControls.ModelDataSourceMethod (instance, methodInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceMethod.Instance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Instance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Instance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Instance : obj" Usage="System.Web.UI.WebControls.ModelDataSourceMethod.Instance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceMethod.MethodInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodInfo As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ MethodInfo { System::Reflection::MethodInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodInfo : System.Reflection.MethodInfo" Usage="System.Web.UI.WebControls.ModelDataSourceMethod.MethodInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceMethod.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As OrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::OrderedDictionary ^ Parameters { System::Collections::Specialized::OrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Specialized.OrderedDictionary" Usage="System.Web.UI.WebControls.ModelDataSourceMethod.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

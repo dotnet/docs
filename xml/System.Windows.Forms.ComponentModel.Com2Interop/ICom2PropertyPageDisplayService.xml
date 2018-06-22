@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComponentModel.Com2Interop.ICom2PropertyPageDisplayService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICom2PropertyPageDisplayService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICom2PropertyPageDisplayService" />
+  <TypeSignature Language="F#" Value="type ICom2PropertyPageDisplayService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.ICom2PropertyPageDisplayService.ShowPropertyPage(System.String,System.Object,System.Int32,System.Guid,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowPropertyPage (title As String, component As Object, dispid As Integer, pageGuid As Guid, parentHandle As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowPropertyPage(System::String ^ title, System::Object ^ component, int dispid, Guid pageGuid, IntPtr parentHandle);" />
+      <MemberSignature Language="F#" Value="abstract member ShowPropertyPage : string * obj * int * Guid * nativeint -&gt; unit" Usage="iCom2PropertyPageDisplayService.ShowPropertyPage (title, component, dispid, pageGuid, parentHandle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

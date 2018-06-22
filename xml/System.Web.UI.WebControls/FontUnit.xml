@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontUnit" />
   <TypeSignature Language="VB.NET" Value="Public Structure FontUnit" />
   <TypeSignature Language="C++ CLI" Value="public value class FontUnit" />
+  <TypeSignature Language="F#" Value="type FontUnit = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(double value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : double -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(int value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : int -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : string -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.Web.UI.WebControls.FontSize)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As FontSize)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(System::Web::UI::WebControls::FontSize type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : System.Web.UI.WebControls.FontSize -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.Web.UI.WebControls.Unit)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Unit)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(System::Web::UI::WebControls::Unit value);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : System.Web.UI.WebControls.Unit -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.Double,System.Web.UI.WebControls.UnitType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As UnitType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(double value, System::Web::UI::WebControls::UnitType type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : double * System.Web.UI.WebControls.UnitType -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit (value, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.#ctor(System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FontUnit(System::String ^ value, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FontUnit : string * System.Globalization.CultureInfo -&gt; System.Web.UI.WebControls.FontUnit" Usage="new System.Web.UI.WebControls.FontUnit (value, culture)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -342,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fontUnit.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -413,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fontUnit.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -434,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FontUnit.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Web.UI.WebControls.FontUnit.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -462,6 +474,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Large" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Large As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Large;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Large : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Large" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -500,6 +513,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Larger" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Larger As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Larger;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Larger : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Larger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -541,6 +555,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Medium" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Medium As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Medium;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Medium : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -579,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.op_Equality(System.Web.UI.WebControls.FontUnit,System.Web.UI.WebControls.FontUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FontUnit, right As FontUnit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Web::UI::WebControls::FontUnit left, System::Web::UI::WebControls::FontUnit right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Web.UI.WebControls.FontUnit * System.Web.UI.WebControls.FontUnit -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.op_Implicit(System.Int32)~System.Web.UI.WebControls.FontUnit" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (n As Integer) As FontUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Web::UI::WebControls::FontUnit(int n);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int -&gt; System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.op_Implicit n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -643,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.op_Inequality(System.Web.UI.WebControls.FontUnit,System.Web.UI.WebControls.FontUnit)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FontUnit, right As FontUnit) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Web::UI::WebControls::FontUnit left, System::Web::UI::WebControls::FontUnit right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Web.UI.WebControls.FontUnit * System.Web.UI.WebControls.FontUnit -&gt; bool" Usage="System.Web.UI.WebControls.FontUnit.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -689,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As FontUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::FontUnit Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -750,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.Parse(System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, culture As CultureInfo) As FontUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::FontUnit Parse(System::String ^ s, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.CultureInfo -&gt; System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Parse (s, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -806,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.Point(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Point (n As Integer) As FontUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::FontUnit Point(int n);" />
+      <MemberSignature Language="F#" Value="static member Point : int -&gt; System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Point n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -838,6 +859,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Small" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Small As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Small;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Small : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -876,6 +898,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.Smaller" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Smaller As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit Smaller;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Smaller : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.Smaller" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -926,6 +949,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontUnit.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -957,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.ToString(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.ToString : System.Globalization.CultureInfo -&gt; string" Usage="fontUnit.ToString culture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -991,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontUnit.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ formatProvider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="fontUnit.ToString formatProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1030,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FontUnit.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As FontSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FontSize Type { System::Web::UI::WebControls::FontSize get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Web.UI.WebControls.FontSize" Usage="System.Web.UI.WebControls.FontUnit.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1058,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FontUnit.Unit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As Unit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit Unit { System::Web::UI::WebControls::Unit get(); };" />
+      <MemberSignature Language="F#" Value="member this.Unit : System.Web.UI.WebControls.Unit" Usage="System.Web.UI.WebControls.FontUnit.Unit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1086,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.XLarge" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XLarge As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit XLarge;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XLarge : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.XLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1124,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.XSmall" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XSmall As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit XSmall;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XSmall : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.XSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1162,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.XXLarge" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XXLarge As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit XXLarge;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XXLarge : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.XXLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1200,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontUnit.XXSmall" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XXSmall As FontUnit " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::FontUnit XXSmall;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XXSmall : System.Web.UI.WebControls.FontUnit" Usage="System.Web.UI.WebControls.FontUnit.XXSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

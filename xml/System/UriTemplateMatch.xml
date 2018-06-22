@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriTemplateMatch" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplateMatch" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriTemplateMatch" />
+  <TypeSignature Language="F#" Value="type UriTemplateMatch = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.UriTemplateMatch.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.BoundVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundVariables As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ BoundVariables { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BoundVariables : System.Collections.Specialized.NameValueCollection" Usage="System.UriTemplateMatch.BoundVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Data { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : obj with get, set" Usage="System.UriTemplateMatch.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.QueryParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryParameters As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ QueryParameters { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryParameters : System.Collections.Specialized.NameValueCollection" Usage="System.UriTemplateMatch.QueryParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.RelativePathSegments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativePathSegments As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ RelativePathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelativePathSegments : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.UriTemplateMatch.RelativePathSegments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RequestUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri with get, set" Usage="System.UriTemplateMatch.RequestUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.Template" />
       <MemberSignature Language="VB.NET" Value="Public Property Template As UriTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property UriTemplate ^ Template { UriTemplate ^ get(); void set(UriTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Template : UriTemplate with get, set" Usage="System.UriTemplateMatch.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -342,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.WildcardPathSegments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WildcardPathSegments As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ WildcardPathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WildcardPathSegments : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.UriTemplateMatch.WildcardPathSegments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.BerConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BerConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class BerConverter sealed" />
+  <TypeSignature Language="F#" Value="type BerConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Decode(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (format As String, value As Byte()) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ Decode(System::String ^ format, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="static member Decode : string * byte[] -&gt; obj[]" Usage="System.DirectoryServices.Protocols.BerConverter.Decode (format, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Encode(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (format As String, ParamArray value As Object()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Encode(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="static member Encode : string * obj[] -&gt; byte[]" Usage="System.DirectoryServices.Protocols.BerConverter.Encode (format, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

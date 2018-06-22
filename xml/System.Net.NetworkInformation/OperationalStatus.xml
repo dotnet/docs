@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.OperationalStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum OperationalStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class OperationalStatus" />
+  <TypeSignature Language="F#" Value="type OperationalStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.Dormant" />
       <MemberSignature Language="VB.NET" Value="Dormant" />
       <MemberSignature Language="C++ CLI" Value="Dormant" />
+      <MemberSignature Language="F#" Value="Dormant = 5" Usage="System.Net.NetworkInformation.OperationalStatus.Dormant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.Down" />
       <MemberSignature Language="VB.NET" Value="Down" />
       <MemberSignature Language="C++ CLI" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 2" Usage="System.Net.NetworkInformation.OperationalStatus.Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.LowerLayerDown" />
       <MemberSignature Language="VB.NET" Value="LowerLayerDown" />
       <MemberSignature Language="C++ CLI" Value="LowerLayerDown" />
+      <MemberSignature Language="F#" Value="LowerLayerDown = 7" Usage="System.Net.NetworkInformation.OperationalStatus.LowerLayerDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.NotPresent" />
       <MemberSignature Language="VB.NET" Value="NotPresent" />
       <MemberSignature Language="C++ CLI" Value="NotPresent" />
+      <MemberSignature Language="F#" Value="NotPresent = 6" Usage="System.Net.NetworkInformation.OperationalStatus.NotPresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.Testing" />
       <MemberSignature Language="VB.NET" Value="Testing" />
       <MemberSignature Language="C++ CLI" Value="Testing" />
+      <MemberSignature Language="F#" Value="Testing = 3" Usage="System.Net.NetworkInformation.OperationalStatus.Testing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 4" Usage="System.Net.NetworkInformation.OperationalStatus.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.OperationalStatus.Up" />
       <MemberSignature Language="VB.NET" Value="Up" />
       <MemberSignature Language="C++ CLI" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 1" Usage="System.Net.NetworkInformation.OperationalStatus.Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

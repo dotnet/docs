@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ITypeFilterProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeFilterProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeFilterProvider" />
+  <TypeSignature Language="F#" Value="type ITypeFilterProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanFilterType(class System.Type type, bool throwOnError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeFilterProvider.CanFilterType(System.Type,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanFilterType(Type ^ type, bool throwOnError);" />
+      <MemberSignature Language="F#" Value="abstract member CanFilterType : Type * bool -&gt; bool" Usage="iTypeFilterProvider.CanFilterType (type, throwOnError)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterDescription : string" Usage="System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPEDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure TYPEDESC" />
   <TypeSignature Language="C++ CLI" Value="public value class TYPEDESC" />
+  <TypeSignature Language="F#" Value="type TYPEDESC = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEDESC.lpValue" />
       <MemberSignature Language="VB.NET" Value="Public lpValue As IntPtr " />
       <MemberSignature Language="C++ CLI" Value="public: IntPtr lpValue;" />
+      <MemberSignature Language="F#" Value="val mutable lpValue : nativeint" Usage="System.Runtime.InteropServices.TYPEDESC.lpValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEDESC.vt" />
       <MemberSignature Language="VB.NET" Value="Public vt As Short " />
       <MemberSignature Language="C++ CLI" Value="public: short vt;" />
+      <MemberSignature Language="F#" Value="val mutable vt : int16" Usage="System.Runtime.InteropServices.TYPEDESC.vt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

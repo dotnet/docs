@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryClientProtocol&#xA;Inherits HttpWebClientProtocol" />
   <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientProtocol : System::Web::Services::Protocols::HttpWebClientProtocol" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientProtocol = class&#xA;    inherit HttpWebClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientProtocol.AdditionalInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalInformation As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ AdditionalInformation { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalInformation : System.Collections.IList" Usage="System.Web.Services.Discovery.DiscoveryClientProtocol.AdditionalInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Discover (url As String) As DiscoveryDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Discovery::DiscoveryDocument ^ Discover(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Discover : string -&gt; System.Web.Services.Discovery.DiscoveryDocument" Usage="discoveryClientProtocol.Discover url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DiscoverAny (url As String) As DiscoveryDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Discovery::DiscoveryDocument ^ DiscoverAny(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.DiscoverAny : string -&gt; System.Web.Services.Discovery.DiscoveryDocument" Usage="discoveryClientProtocol.DiscoverAny url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Documents As DiscoveryClientDocumentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryClientDocumentCollection ^ Documents { System::Web::Services::Discovery::DiscoveryClientDocumentCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Documents : System.Web.Services.Discovery.DiscoveryClientDocumentCollection" Usage="System.Web.Services.Discovery.DiscoveryClientProtocol.Documents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Download (ByRef url As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Download(System::String ^ % url);" />
+      <MemberSignature Language="F#" Value="member this.Download :  -&gt; System.IO.Stream" Usage="discoveryClientProtocol.Download url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Download (ByRef url As String, ByRef contentType As String) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Download(System::String ^ % url, System::String ^ % contentType);" />
+      <MemberSignature Language="F#" Value="member this.Download :  *  -&gt; System.IO.Stream" Usage="discoveryClientProtocol.Download (url, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -316,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientProtocol.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As DiscoveryExceptionDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryExceptionDictionary ^ Errors { System::Web::Services::Discovery::DiscoveryExceptionDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Web.Services.Discovery.DiscoveryExceptionDictionary" Usage="System.Web.Services.Discovery.DiscoveryClientProtocol.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -351,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.LoadExternals" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadExternals ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadExternals();" />
+      <MemberSignature Language="F#" Value="member this.LoadExternals : unit -&gt; unit" Usage="discoveryClientProtocol.LoadExternals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -380,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadAll (topLevelFilename As String) As DiscoveryClientResultCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Discovery::DiscoveryClientResultCollection ^ ReadAll(System::String ^ topLevelFilename);" />
+      <MemberSignature Language="F#" Value="member this.ReadAll : string -&gt; System.Web.Services.Discovery.DiscoveryClientResultCollection" Usage="discoveryClientProtocol.ReadAll topLevelFilename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -422,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientProtocol.References" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property References As DiscoveryClientReferenceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryClientReferenceCollection ^ References { System::Web::Services::Discovery::DiscoveryClientReferenceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.References : System.Web.Services.Discovery.DiscoveryClientReferenceCollection" Usage="System.Web.Services.Discovery.DiscoveryClientProtocol.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -461,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAll();" />
+      <MemberSignature Language="F#" Value="member this.ResolveAll : unit -&gt; unit" Usage="discoveryClientProtocol.ResolveAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -499,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveOneLevel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveOneLevel();" />
+      <MemberSignature Language="F#" Value="member this.ResolveOneLevel : unit -&gt; unit" Usage="discoveryClientProtocol.ResolveOneLevel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -537,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteAll (directory As String, topLevelFilename As String) As DiscoveryClientResultCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Discovery::DiscoveryClientResultCollection ^ WriteAll(System::String ^ directory, System::String ^ topLevelFilename);" />
+      <MemberSignature Language="F#" Value="member this.WriteAll : string * string -&gt; System.Web.Services.Discovery.DiscoveryClientResultCollection" Usage="discoveryClientProtocol.WriteAll (directory, topLevelFilename)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlInstanceCreator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlInstanceCreator" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlInstanceCreator abstract" />
+  <TypeSignature Language="F#" Value="type XamlInstanceCreator = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlInstanceCreator.CreateObject" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ CreateObject();" />
+      <MemberSignature Language="F#" Value="abstract member CreateObject : unit -&gt; obj" Usage="xamlInstanceCreator.CreateObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

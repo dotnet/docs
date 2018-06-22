@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ExtendedDN" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExtendedDN" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExtendedDN" />
+  <TypeSignature Language="F#" Value="type ExtendedDN = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ExtendedDN.HexString" />
       <MemberSignature Language="VB.NET" Value="HexString" />
       <MemberSignature Language="C++ CLI" Value="HexString" />
+      <MemberSignature Language="F#" Value="HexString = 0" Usage="System.DirectoryServices.ExtendedDN.HexString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -65,6 +67,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ExtendedDN.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = -1" Usage="System.DirectoryServices.ExtendedDN.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +88,7 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ExtendedDN.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="C++ CLI" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 1" Usage="System.DirectoryServices.ExtendedDN.Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

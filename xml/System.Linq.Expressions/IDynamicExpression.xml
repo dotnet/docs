@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.IDynamicExpression" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDynamicExpression&#xA;Implements IArgumentProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDynamicExpression : System::Linq::Expressions::IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type IDynamicExpression = interface&#xA;    interface IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.CreateCallSite" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCallSite () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateCallSite();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCallSite : unit -&gt; obj" Usage="iDynamicExpression.CreateCallSite " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IDynamicExpression.DelegateType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelegateType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DelegateType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DelegateType : Type" Usage="System.Linq.Expressions.IDynamicExpression.DelegateType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.Rewrite(System.Linq.Expressions.Expression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Rewrite (args As Expression()) As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ Rewrite(cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member Rewrite : System.Linq.Expressions.Expression[] -&gt; System.Linq.Expressions.Expression" Usage="iDynamicExpression.Rewrite args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

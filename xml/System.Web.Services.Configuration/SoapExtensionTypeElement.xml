@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapExtensionTypeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapExtensionTypeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapExtensionTypeElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SoapExtensionTypeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor(System.String,System.Int32,System.Web.Services.Configuration.PriorityGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, priority As Integer, group As PriorityGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapExtensionTypeElement(System::String ^ type, int priority, System::Web::Services::Configuration::PriorityGroup group);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.SoapExtensionTypeElement : string * int * System.Web.Services.Configuration.PriorityGroup -&gt; System.Web.Services.Configuration.SoapExtensionTypeElement" Usage="new System.Web.Services.Configuration.SoapExtensionTypeElement (type, priority, group)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, int32 priority, valuetype System.Web.Services.Configuration.PriorityGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor(System.Type,System.Int32,System.Web.Services.Configuration.PriorityGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapExtensionTypeElement(Type ^ type, int priority, System::Web::Services::Configuration::PriorityGroup group);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.SoapExtensionTypeElement : Type * int * System.Web.Services.Configuration.PriorityGroup -&gt; System.Web.Services.Configuration.SoapExtensionTypeElement" Usage="new System.Web.Services.Configuration.SoapExtensionTypeElement (type, priority, group)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElement.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As PriorityGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::PriorityGroup Group { System::Web::Services::Configuration::PriorityGroup get(); void set(System::Web::Services::Configuration::PriorityGroup value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Web.Services.Configuration.PriorityGroup with get, set" Usage="System.Web.Services.Configuration.SoapExtensionTypeElement.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElement.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.Web.Services.Configuration.SoapExtensionTypeElement.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Services.Configuration.SoapExtensionTypeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Web.Services.Configuration.SoapExtensionTypeElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IPartialSessionState" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPartialSessionState" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPartialSessionState" />
+  <TypeSignature Language="F#" Value="type IPartialSessionState = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartialSessionStateKeys As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ PartialSessionStateKeys { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartialSessionStateKeys : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

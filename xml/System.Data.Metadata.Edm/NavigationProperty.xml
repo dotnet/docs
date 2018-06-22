@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.NavigationProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NavigationProperty&#xA;Inherits EdmMember" />
   <TypeSignature Language="C++ CLI" Value="public ref class NavigationProperty sealed : System::Data::Metadata::Edm::EdmMember" />
+  <TypeSignature Language="F#" Value="type NavigationProperty = class&#xA;    inherit EdmMember" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.BuiltInTypeKind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.NavigationProperty.BuiltInTypeKind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.FromEndMember" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromEndMember As RelationshipEndMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ FromEndMember { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FromEndMember : System.Data.Metadata.Edm.RelationshipEndMember" Usage="System.Data.Metadata.Edm.NavigationProperty.FromEndMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDependentProperties () As IEnumerable(Of EdmProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ GetDependentProperties();" />
+      <MemberSignature Language="F#" Value="member this.GetDependentProperties : unit -&gt; seq&lt;System.Data.Metadata.Edm.EdmProperty&gt;" Usage="navigationProperty.GetDependentProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.RelationshipType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipType As RelationshipType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipType ^ RelationshipType { System::Data::Metadata::Edm::RelationshipType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipType : System.Data.Metadata.Edm.RelationshipType" Usage="System.Data.Metadata.Edm.NavigationProperty.RelationshipType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.ToEndMember" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToEndMember As RelationshipEndMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ ToEndMember { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToEndMember : System.Data.Metadata.Edm.RelationshipEndMember" Usage="System.Data.Metadata.Edm.NavigationProperty.ToEndMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.UploadValuesCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadValuesCompletedEventHandler(sender As Object, e As UploadValuesCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UploadValuesCompletedEventHandler(System::Object ^ sender, UploadValuesCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UploadValuesCompletedEventHandler = delegate of obj * UploadValuesCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonSplitButtonAutomationPeer&#xA;Inherits RibbonMenuButtonAutomationPeer&#xA;Implements IInvokeProvider, IToggleProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonSplitButtonAutomationPeer : System::Windows::Automation::Peers::RibbonMenuButtonAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider, System::Windows::Automation::Provider::IToggleProvider" />
+  <TypeSignature Language="F#" Value="type RibbonSplitButtonAutomationPeer = class&#xA;    inherit RibbonMenuButtonAutomationPeer&#xA;    interface IToggleProvider&#xA;    interface IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonSplitButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonSplitButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonSplitButtonAutomationPeer(System::Windows::Controls::Ribbon::RibbonSplitButton ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer : System.Windows.Controls.Ribbon.RibbonSplitButton -&gt; System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonSplitButtonAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonSplitButtonAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#ToggleState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ToggleState As ToggleState Implements IToggleProvider.ToggleState" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState { System::Windows::Automation::ToggleState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IToggleProvider.ToggleState</InterfaceMember>

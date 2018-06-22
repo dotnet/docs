@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EdgeEffects" />
   <TypeSignature Language="VB.NET" Value="Public Enum EdgeEffects" />
   <TypeSignature Language="C++ CLI" Value="public enum class EdgeEffects" />
+  <TypeSignature Language="F#" Value="type EdgeEffects = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.FillInterior" />
       <MemberSignature Language="VB.NET" Value="FillInterior" />
       <MemberSignature Language="C++ CLI" Value="FillInterior" />
+      <MemberSignature Language="F#" Value="FillInterior = 2048" Usage="System.Windows.Forms.VisualStyles.EdgeEffects.FillInterior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Flat" />
       <MemberSignature Language="VB.NET" Value="Flat" />
       <MemberSignature Language="C++ CLI" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 4096" Usage="System.Windows.Forms.VisualStyles.EdgeEffects.Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Mono" />
       <MemberSignature Language="VB.NET" Value="Mono" />
       <MemberSignature Language="C++ CLI" Value="Mono" />
+      <MemberSignature Language="F#" Value="Mono = 32768" Usage="System.Windows.Forms.VisualStyles.EdgeEffects.Mono" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.EdgeEffects.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Soft" />
       <MemberSignature Language="VB.NET" Value="Soft" />
       <MemberSignature Language="C++ CLI" Value="Soft" />
+      <MemberSignature Language="F#" Value="Soft = 16384" Usage="System.Windows.Forms.VisualStyles.EdgeEffects.Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

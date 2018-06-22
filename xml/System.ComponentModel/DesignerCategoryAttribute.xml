@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerCategoryAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerCategoryAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerCategoryAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DesignerCategoryAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerCategoryAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerCategoryAttribute(System::String ^ category);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignerCategoryAttribute : string -&gt; System.ComponentModel.DesignerCategoryAttribute" Usage="new System.ComponentModel.DesignerCategoryAttribute category" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -145,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerCategoryAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.ComponentModel.DesignerCategoryAttribute.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerCategoryAttribute.Component" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Component As DesignerCategoryAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerCategoryAttribute ^ Component;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Component : System.ComponentModel.DesignerCategoryAttribute" Usage="System.ComponentModel.DesignerCategoryAttribute.Component" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerCategoryAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DesignerCategoryAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerCategoryAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DesignerCategoryAttribute" Usage="System.ComponentModel.DesignerCategoryAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerCategoryAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designerCategoryAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerCategoryAttribute.Form" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Form As DesignerCategoryAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerCategoryAttribute ^ Form;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Form : System.ComponentModel.DesignerCategoryAttribute" Usage="System.ComponentModel.DesignerCategoryAttribute.Form" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -309,6 +316,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerCategoryAttribute.Generic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Generic As DesignerCategoryAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignerCategoryAttribute ^ Generic;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Generic : System.ComponentModel.DesignerCategoryAttribute" Usage="System.ComponentModel.DesignerCategoryAttribute.Generic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerCategoryAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designerCategoryAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerCategoryAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="designerCategoryAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -403,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignerCategoryAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.DesignerCategoryAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

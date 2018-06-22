@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapPalette" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapPalette&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapPalette sealed : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type BitmapPalette = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapPalette.#ctor(System.Collections.Generic.IList{System.Windows.Media.Color})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (colors As IList(Of Color))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapPalette(System::Collections::Generic::IList&lt;System::Windows::Media::Color&gt; ^ colors);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.BitmapPalette : System.Collections.Generic.IList&lt;System.Windows.Media.Color&gt; -&gt; System.Windows.Media.Imaging.BitmapPalette" Usage="new System.Windows.Media.Imaging.BitmapPalette colors" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Imaging.BitmapSource bitmapSource, int32 maxColorCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapPalette.#ctor(System.Windows.Media.Imaging.BitmapSource,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapPalette(System::Windows::Media::Imaging::BitmapSource ^ bitmapSource, int maxColorCount);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.BitmapPalette : System.Windows.Media.Imaging.BitmapSource * int -&gt; System.Windows.Media.Imaging.BitmapPalette" Usage="new System.Windows.Media.Imaging.BitmapPalette (bitmapSource, maxColorCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalette.Colors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Colors As IList(Of Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Media::Color&gt; ^ Colors { System::Collections::Generic::IList&lt;System::Windows::Media::Color&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Colors : System.Collections.Generic.IList&lt;System.Windows.Media.Color&gt;" Usage="System.Windows.Media.Imaging.BitmapPalette.Colors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

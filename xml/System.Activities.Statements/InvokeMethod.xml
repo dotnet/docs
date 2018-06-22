@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.InvokeMethod" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeMethod&#xA;Inherits AsyncCodeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvokeMethod sealed : System::Activities::AsyncCodeActivity" />
+  <TypeSignature Language="F#" Value="type InvokeMethod = class&#xA;    inherit AsyncCodeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function BeginExecute (context As AsyncCodeActivityContext, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ BeginExecute(System::Activities::AsyncCodeActivityContext ^ context, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginExecute : System.Activities.AsyncCodeActivityContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="invokeMethod.BeginExecute (context, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="invokeMethod.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.EndExecute(System.Activities.AsyncCodeActivityContext,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EndExecute (context As AsyncCodeActivityContext, result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EndExecute(System::Activities::AsyncCodeActivityContext ^ context, IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.EndExecute : System.Activities.AsyncCodeActivityContext * IAsyncResult -&gt; unit" Usage="invokeMethod.EndExecute (context, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.GenericTypeArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericTypeArguments As Collection(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ GenericTypeArguments { System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GenericTypeArguments : System.Collections.ObjectModel.Collection&lt;Type&gt;" Usage="System.Activities.Statements.InvokeMethod.GenericTypeArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Activities.Statements.InvokeMethod.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As Collection(Of Argument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ Parameters { System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt;" Usage="System.Activities.Statements.InvokeMethod.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As OutArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::OutArgument ^ Result { System::Activities::OutArgument ^ get(); void set(System::Activities::OutArgument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Activities.OutArgument with get, set" Usage="System.Activities.Statements.InvokeMethod.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.RunAsynchronously" />
       <MemberSignature Language="VB.NET" Value="Public Property RunAsynchronously As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RunAsynchronously { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RunAsynchronously : bool with get, set" Usage="System.Activities.Statements.InvokeMethod.RunAsynchronously" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As InArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument ^ TargetObject { System::Activities::InArgument ^ get(); void set(System::Activities::InArgument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.Activities.InArgument with get, set" Usage="System.Activities.Statements.InvokeMethod.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type with get, set" Usage="System.Activities.Statements.InvokeMethod.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

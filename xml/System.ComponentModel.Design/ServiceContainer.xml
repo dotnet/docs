@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceContainer&#xA;Implements IDisposable, IServiceContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceContainer : IDisposable, System::ComponentModel::Design::IServiceContainer" />
+  <TypeSignature Language="F#" Value="type ServiceContainer = class&#xA;    interface IServiceContainer&#xA;    interface IDisposable&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContainer(IServiceProvider ^ parentProvider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.ServiceContainer : IServiceProvider -&gt; System.ComponentModel.Design.ServiceContainer" Usage="new System.ComponentModel.Design.ServiceContainer parentProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, callback As ServiceCreatorCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddService(Type ^ serviceType, System::ComponentModel::Design::ServiceCreatorCallback ^ callback);" />
+      <MemberSignature Language="F#" Value="abstract member AddService : Type * System.ComponentModel.Design.ServiceCreatorCallback -&gt; unit&#xA;override this.AddService : Type * System.ComponentModel.Design.ServiceCreatorCallback -&gt; unit" Usage="serviceContainer.AddService (serviceType, callback)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)</InterfaceMember>
@@ -201,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, serviceInstance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddService(Type ^ serviceType, System::Object ^ serviceInstance);" />
+      <MemberSignature Language="F#" Value="abstract member AddService : Type * obj -&gt; unit&#xA;override this.AddService : Type * obj -&gt; unit" Usage="serviceContainer.AddService (serviceType, serviceInstance)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object)</InterfaceMember>
@@ -254,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddService (serviceType As Type, callback As ServiceCreatorCallback, promote As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddService(Type ^ serviceType, System::ComponentModel::Design::ServiceCreatorCallback ^ callback, bool promote);" />
+      <MemberSignature Language="F#" Value="abstract member AddService : Type * System.ComponentModel.Design.ServiceCreatorCallback * bool -&gt; unit&#xA;override this.AddService : Type * System.ComponentModel.Design.ServiceCreatorCallback * bool -&gt; unit" Usage="serviceContainer.AddService (serviceType, callback, promote)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)</InterfaceMember>
@@ -299,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddService (serviceType As Type, serviceInstance As Object, promote As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddService(Type ^ serviceType, System::Object ^ serviceInstance, bool promote);" />
+      <MemberSignature Language="F#" Value="abstract member AddService : Type * obj * bool -&gt; unit&#xA;override this.AddService : Type * obj * bool -&gt; unit" Usage="serviceContainer.AddService (serviceType, serviceInstance, promote)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object,System.Boolean)</InterfaceMember>
@@ -344,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ServiceContainer.DefaultServices" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultServices As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;Type ^&gt; ^ DefaultServices { cli::array &lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultServices : Type[]" Usage="System.ComponentModel.Design.ServiceContainer.DefaultServices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -391,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="serviceContainer.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -436,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="serviceContainer.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="serviceContainer.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -532,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.RemoveService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveService (serviceType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveService : Type -&gt; unit&#xA;override this.RemoveService : Type -&gt; unit" Usage="serviceContainer.RemoveService serviceType" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type)</InterfaceMember>
@@ -582,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ServiceContainer.RemoveService(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveService (serviceType As Type, promote As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveService(Type ^ serviceType, bool promote);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveService : Type * bool -&gt; unit&#xA;override this.RemoveService : Type * bool -&gt; unit" Usage="serviceContainer.RemoveService (serviceType, promote)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type,System.Boolean)</InterfaceMember>

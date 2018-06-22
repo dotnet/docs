@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalOwnership" />
   <TypeSignature Language="VB.NET" Value="Public Enum JournalOwnership" />
   <TypeSignature Language="C++ CLI" Value="public enum class JournalOwnership" />
+  <TypeSignature Language="F#" Value="type JournalOwnership = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 0" Usage="System.Windows.Navigation.JournalOwnership.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.OwnsJournal" />
       <MemberSignature Language="VB.NET" Value="OwnsJournal" />
       <MemberSignature Language="C++ CLI" Value="OwnsJournal" />
+      <MemberSignature Language="F#" Value="OwnsJournal = 1" Usage="System.Windows.Navigation.JournalOwnership.OwnsJournal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.UsesParentJournal" />
       <MemberSignature Language="VB.NET" Value="UsesParentJournal" />
       <MemberSignature Language="C++ CLI" Value="UsesParentJournal" />
+      <MemberSignature Language="F#" Value="UsesParentJournal = 2" Usage="System.Windows.Navigation.JournalOwnership.UsesParentJournal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

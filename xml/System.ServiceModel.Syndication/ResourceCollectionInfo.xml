@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.ResourceCollectionInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceCollectionInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceCollectionInfo" />
+  <TypeSignature Language="F#" Value="type ResourceCollectionInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.#ctor(System.ServiceModel.Syndication.TextSyndicationContent,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As TextSyndicationContent, link As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceCollectionInfo(System::ServiceModel::Syndication::TextSyndicationContent ^ title, Uri ^ link);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.ResourceCollectionInfo : System.ServiceModel.Syndication.TextSyndicationContent * Uri -&gt; System.ServiceModel.Syndication.ResourceCollectionInfo" Usage="new System.ServiceModel.Syndication.ResourceCollectionInfo (title, link)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, link As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceCollectionInfo(System::String ^ title, Uri ^ link);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.ResourceCollectionInfo : string * Uri -&gt; System.ServiceModel.Syndication.ResourceCollectionInfo" Usage="new System.ServiceModel.Syndication.ResourceCollectionInfo (title, link)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.#ctor(System.ServiceModel.Syndication.TextSyndicationContent,System.Uri,System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.CategoriesDocument},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As TextSyndicationContent, link As Uri, categories As IEnumerable(Of CategoriesDocument), allowsNewEntries As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceCollectionInfo(System::ServiceModel::Syndication::TextSyndicationContent ^ title, Uri ^ link, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::CategoriesDocument ^&gt; ^ categories, bool allowsNewEntries);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.ResourceCollectionInfo : System.ServiceModel.Syndication.TextSyndicationContent * Uri * seq&lt;System.ServiceModel.Syndication.CategoriesDocument&gt; * bool -&gt; System.ServiceModel.Syndication.ResourceCollectionInfo" Usage="new System.ServiceModel.Syndication.ResourceCollectionInfo (title, link, categories, allowsNewEntries)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.#ctor(System.ServiceModel.Syndication.TextSyndicationContent,System.Uri,System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.CategoriesDocument},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As TextSyndicationContent, link As Uri, categories As IEnumerable(Of CategoriesDocument), accepts As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceCollectionInfo(System::ServiceModel::Syndication::TextSyndicationContent ^ title, Uri ^ link, System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::CategoriesDocument ^&gt; ^ categories, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ accepts);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.ResourceCollectionInfo : System.ServiceModel.Syndication.TextSyndicationContent * Uri * seq&lt;System.ServiceModel.Syndication.CategoriesDocument&gt; * seq&lt;string&gt; -&gt; System.ServiceModel.Syndication.ResourceCollectionInfo" Usage="new System.ServiceModel.Syndication.ResourceCollectionInfo (title, link, categories, accepts)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.Accepts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Accepts As Collection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Accepts { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Accepts : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.Accepts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.AttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeExtensions As Dictionary(Of XmlQualifiedName, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeExtensions : System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName, string&gt;" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.AttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.Categories" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Collection(Of CategoriesDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::CategoriesDocument ^&gt; ^ Categories { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::CategoriesDocument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Categories : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.CategoriesDocument&gt;" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.Categories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.CreateInlineCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateInlineCategoriesDocument () As InlineCategoriesDocument" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::InlineCategoriesDocument ^ CreateInlineCategoriesDocument();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInlineCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument&#xA;override this.CreateInlineCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument" Usage="resourceCollectionInfo.CreateInlineCategoriesDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.CreateReferencedCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateReferencedCategoriesDocument () As ReferencedCategoriesDocument" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::ReferencedCategoriesDocument ^ CreateReferencedCategoriesDocument();" />
+      <MemberSignature Language="F#" Value="abstract member CreateReferencedCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument&#xA;override this.CreateReferencedCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument" Usage="resourceCollectionInfo.CreateReferencedCategoriesDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.ElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementExtensions As SyndicationElementExtensionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementExtensions : System.ServiceModel.Syndication.SyndicationElementExtensionCollection" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.ElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.Link" />
       <MemberSignature Language="VB.NET" Value="Public Property Link As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Link { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Link : Uri with get, set" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.Link" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ResourceCollectionInfo.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As TextSyndicationContent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Title { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.ResourceCollectionInfo.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -405,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseAttribute (name As String, ns As String, value As String, version As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member TryParseAttribute : string * string * string * string -&gt; bool&#xA;override this.TryParseAttribute : string * string * string * string -&gt; bool" Usage="resourceCollectionInfo.TryParseAttribute (name, ns, value, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -439,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseElement (reader As XmlReader, version As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member TryParseElement : System.Xml.XmlReader * string -&gt; bool&#xA;override this.TryParseElement : System.Xml.XmlReader * string -&gt; bool" Usage="resourceCollectionInfo.TryParseElement (reader, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -469,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteAttributeExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="resourceCollectionInfo.WriteAttributeExtensions (writer, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -498,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ResourceCollectionInfo.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteElementExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="resourceCollectionInfo.WriteElementExtensions (writer, version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -32,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.#ctor(System.ComponentModel.Design.UndoEngine,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (engine As UndoEngine, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UndoUnit(System::ComponentModel::Design::UndoEngine ^ engine, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.UndoEngine.UndoUnit : System.ComponentModel.Design.UndoEngine * string -&gt; System.ComponentModel.Design.UndoEngine.UndoUnit" Usage="new System.ComponentModel.Design.UndoEngine.UndoUnit (engine, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="undoUnit.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentAdded(System.ComponentModel.Design.ComponentEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentAdded (e As ComponentEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentAdded(System::ComponentModel::Design::ComponentEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentAdded : System.ComponentModel.Design.ComponentEventArgs -&gt; unit&#xA;override this.ComponentAdded : System.ComponentModel.Design.ComponentEventArgs -&gt; unit" Usage="undoUnit.ComponentAdded e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentAdding(System.ComponentModel.Design.ComponentEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentAdding (e As ComponentEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentAdding(System::ComponentModel::Design::ComponentEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentAdding : System.ComponentModel.Design.ComponentEventArgs -&gt; unit&#xA;override this.ComponentAdding : System.ComponentModel.Design.ComponentEventArgs -&gt; unit" Usage="undoUnit.ComponentAdding e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentChanged(System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentChanged (e As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentChanged(System::ComponentModel::Design::ComponentChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentChanged : System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit&#xA;override this.ComponentChanged : System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="undoUnit.ComponentChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentChanging(System.ComponentModel.Design.ComponentChangingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentChanging (e As ComponentChangingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentChanging(System::ComponentModel::Design::ComponentChangingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentChanging : System.ComponentModel.Design.ComponentChangingEventArgs -&gt; unit&#xA;override this.ComponentChanging : System.ComponentModel.Design.ComponentChangingEventArgs -&gt; unit" Usage="undoUnit.ComponentChanging e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentRemoved(System.ComponentModel.Design.ComponentEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentRemoved (e As ComponentEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentRemoved(System::ComponentModel::Design::ComponentEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentRemoved : System.ComponentModel.Design.ComponentEventArgs -&gt; unit&#xA;override this.ComponentRemoved : System.ComponentModel.Design.ComponentEventArgs -&gt; unit" Usage="undoUnit.ComponentRemoved e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentRemoving(System.ComponentModel.Design.ComponentEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentRemoving (e As ComponentEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentRemoving(System::ComponentModel::Design::ComponentEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentRemoving : System.ComponentModel.Design.ComponentEventArgs -&gt; unit&#xA;override this.ComponentRemoving : System.ComponentModel.Design.ComponentEventArgs -&gt; unit" Usage="undoUnit.ComponentRemoving e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ComponentRename(System.ComponentModel.Design.ComponentRenameEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComponentRename (e As ComponentRenameEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComponentRename(System::ComponentModel::Design::ComponentRenameEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ComponentRename : System.ComponentModel.Design.ComponentRenameEventArgs -&gt; unit&#xA;override this.ComponentRename : System.ComponentModel.Design.ComponentRenameEventArgs -&gt; unit" Usage="undoUnit.ComponentRename e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="undoUnit.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.UndoUnit.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.ComponentModel.Design.UndoEngine.UndoUnit.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -311,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.UndoUnit.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.UndoEngine.UndoUnit.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -331,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="undoUnit.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.Undo" />
       <MemberSignature Language="VB.NET" Value="Public Sub Undo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Undo();" />
+      <MemberSignature Language="F#" Value="member this.Undo : unit -&gt; unit" Usage="undoUnit.Undo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -389,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.UndoUnit.UndoCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UndoCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UndoCore();" />
+      <MemberSignature Language="F#" Value="abstract member UndoCore : unit -&gt; unit&#xA;override this.UndoCore : unit -&gt; unit" Usage="undoUnit.UndoCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -422,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.UndoUnit.UndoEngine" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property UndoEngine As UndoEngine" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::UndoEngine ^ UndoEngine { System::ComponentModel::Design::UndoEngine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UndoEngine : System.ComponentModel.Design.UndoEngine" Usage="System.ComponentModel.Design.UndoEngine.UndoUnit.UndoEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

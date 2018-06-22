@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ReadEntityBodyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReadEntityBodyMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReadEntityBodyMode" />
+  <TypeSignature Language="F#" Value="type ReadEntityBodyMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Buffered" />
       <MemberSignature Language="VB.NET" Value="Buffered" />
       <MemberSignature Language="C++ CLI" Value="Buffered" />
+      <MemberSignature Language="F#" Value="Buffered = 3" Usage="System.Web.ReadEntityBodyMode.Buffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Bufferless" />
       <MemberSignature Language="VB.NET" Value="Bufferless" />
       <MemberSignature Language="C++ CLI" Value="Bufferless" />
+      <MemberSignature Language="F#" Value="Bufferless = 2" Usage="System.Web.ReadEntityBodyMode.Bufferless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Classic" />
       <MemberSignature Language="VB.NET" Value="Classic" />
       <MemberSignature Language="C++ CLI" Value="Classic" />
+      <MemberSignature Language="F#" Value="Classic = 1" Usage="System.Web.ReadEntityBodyMode.Classic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.ReadEntityBodyMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

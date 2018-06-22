@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.SignedInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class SignedInfo&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignedInfo : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type SignedInfo = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.Reference reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedInfo.AddReference(System.Security.Cryptography.Xml.Reference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReference(System::Security::Cryptography::Xml::Reference ^ reference);" />
+      <MemberSignature Language="F#" Value="member this.AddReference : System.Security.Cryptography.Xml.Reference -&gt; unit" Usage="signedInfo.AddReference reference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property CanonicalizationMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CanonicalizationMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CanonicalizationMethod : string with get, set" Usage="System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethodObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanonicalizationMethodObject As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::Transform ^ CanonicalizationMethodObject { System::Security::Cryptography::Xml::Transform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanonicalizationMethodObject : System.Security.Cryptography.Xml.Transform" Usage="System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethodObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedInfo.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="signedInfo.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.Xml.SignedInfo.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedInfo.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="signedInfo.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedInfo.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="signedInfo.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Security.Cryptography.Xml.SignedInfo.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.Cryptography.Xml.SignedInfo.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -369,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Cryptography.Xml.SignedInfo.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedInfo.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="signedInfo.LoadXml value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -438,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.References" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property References As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ References { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.References : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.SignedInfo.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -473,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.SignatureLength" />
       <MemberSignature Language="VB.NET" Value="Public Property SignatureLength As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureLength { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureLength : string with get, set" Usage="System.Security.Cryptography.Xml.SignedInfo.SignatureLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -497,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.SignatureMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property SignatureMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureMethod : string with get, set" Usage="System.Security.Cryptography.Xml.SignedInfo.SignatureMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.SignedInfo.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Cryptography.Xml.SignedInfo.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

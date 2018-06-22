@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.AnyEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AnyEventHandler(sender As Object, e As BuildEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AnyEventHandler(System::Object ^ sender, BuildEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AnyEventHandler = delegate of obj * BuildEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

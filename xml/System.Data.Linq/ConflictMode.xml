@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ConflictMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConflictMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConflictMode" />
+  <TypeSignature Language="F#" Value="type ConflictMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@ db.SubmitChanges(ConflictMode.FailOnFirstConflict);
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.ConflictMode.ContinueOnConflict" />
       <MemberSignature Language="VB.NET" Value="ContinueOnConflict" />
       <MemberSignature Language="C++ CLI" Value="ContinueOnConflict" />
+      <MemberSignature Language="F#" Value="ContinueOnConflict = 1" Usage="System.Data.Linq.ConflictMode.ContinueOnConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -58,6 +60,7 @@ db.SubmitChanges(ConflictMode.FailOnFirstConflict);
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.ConflictMode.FailOnFirstConflict" />
       <MemberSignature Language="VB.NET" Value="FailOnFirstConflict" />
       <MemberSignature Language="C++ CLI" Value="FailOnFirstConflict" />
+      <MemberSignature Language="F#" Value="FailOnFirstConflict = 0" Usage="System.Data.Linq.ConflictMode.FailOnFirstConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

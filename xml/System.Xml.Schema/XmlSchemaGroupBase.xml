@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaGroupBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaGroupBase&#xA;Inherits XmlSchemaParticle" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaGroupBase abstract : System::Xml::Schema::XmlSchemaParticle" />
+  <TypeSignature Language="F#" Value="type XmlSchemaGroupBase = class&#xA;    inherit XmlSchemaParticle" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroupBase.Items" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Items As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaGroupBase.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

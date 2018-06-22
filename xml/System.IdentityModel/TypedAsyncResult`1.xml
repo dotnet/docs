@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.TypedAsyncResult`1" />
   <TypeSignature Language="VB.NET" Value="Public Class TypedAsyncResult(Of T)&#xA;Inherits AsyncResult" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class TypedAsyncResult : System::IdentityModel::AsyncResult" />
+  <TypeSignature Language="F#" Value="type TypedAsyncResult&lt;'T&gt; = class&#xA;    inherit AsyncResult" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedAsyncResult(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.TypedAsyncResult&lt;'T&gt; : obj -&gt; System.IdentityModel.TypedAsyncResult&lt;'T&gt;" Usage="new System.IdentityModel.TypedAsyncResult&lt;'T&gt; state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callback As AsyncCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedAsyncResult(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.TypedAsyncResult&lt;'T&gt; : AsyncCallback * obj -&gt; System.IdentityModel.TypedAsyncResult&lt;'T&gt;" Usage="new System.IdentityModel.TypedAsyncResult&lt;'T&gt; (callback, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete (result As T, completedSynchronously As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(T result, bool completedSynchronously);" />
+      <MemberSignature Language="F#" Value="override this.Complete : 'T * bool -&gt; unit" Usage="typedAsyncResult.Complete (result, completedSynchronously)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(!T result, bool completedSynchronously, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete(T result, bool completedSynchronously, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="override this.Complete : 'T * bool * Exception -&gt; unit" Usage="typedAsyncResult.Complete (result, completedSynchronously, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function End (result As IAsyncResult) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static T End(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="static member End : IAsyncResult -&gt; 'T" Usage="System.IdentityModel.TypedAsyncResult&lt;'T&gt;.End result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.TypedAsyncResult`1.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Result { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : 'T" Usage="System.IdentityModel.TypedAsyncResult&lt;'T&gt;.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

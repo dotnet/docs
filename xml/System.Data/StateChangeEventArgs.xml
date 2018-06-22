@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.StateChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateChangeEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type StateChangeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (originalState As ConnectionState, currentState As ConnectionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StateChangeEventArgs(System::Data::ConnectionState originalState, System::Data::ConnectionState currentState);" />
+      <MemberSignature Language="F#" Value="new System.Data.StateChangeEventArgs : System.Data.ConnectionState * System.Data.ConnectionState -&gt; System.Data.StateChangeEventArgs" Usage="new System.Data.StateChangeEventArgs (originalState, currentState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.CurrentState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As ConnectionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState CurrentState { System::Data::ConnectionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Data.ConnectionState" Usage="System.Data.StateChangeEventArgs.CurrentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.OriginalState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalState As ConnectionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState OriginalState { System::Data::ConnectionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalState : System.Data.ConnectionState" Usage="System.Data.StateChangeEventArgs.OriginalState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

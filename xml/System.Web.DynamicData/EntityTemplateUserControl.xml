@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateUserControl" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityTemplateUserControl&#xA;Inherits UserControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityTemplateUserControl : System::Web::UI::UserControl" />
+  <TypeSignature Language="F#" Value="type EntityTemplateUserControl = class&#xA;    inherit UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.ContainerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainerType As ContainerType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::DynamicData::ContainerType ContainerType { System::Web::DynamicData::ContainerType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainerType : System.Web.DynamicData.ContainerType" Usage="System.Web.DynamicData.EntityTemplateUserControl.ContainerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As DataBoundControlMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode" Usage="System.Web.DynamicData.EntityTemplateUserControl.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As MetaTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaTable ^ Table { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.EntityTemplateUserControl.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationGroup { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string" Usage="System.Web.DynamicData.EntityTemplateUserControl.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

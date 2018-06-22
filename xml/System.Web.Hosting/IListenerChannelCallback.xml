@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IListenerChannelCallback" />
   <TypeSignature Language="VB.NET" Value="Public Interface IListenerChannelCallback" />
   <TypeSignature Language="C++ CLI" Value="public interface class IListenerChannelCallback" />
+  <TypeSignature Language="F#" Value="type IListenerChannelCallback = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetBlob(System.Byte[],System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBlob (buffer As Byte(), ByRef bufferSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBlob(cli::array &lt;System::Byte&gt; ^ buffer, int % bufferSize);" />
+      <MemberSignature Language="F#" Value="abstract member GetBlob : byte[] *  -&gt; unit" Usage="iListenerChannelCallback.GetBlob (buffer, bufferSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetBlobLength" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobLength () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetBlobLength();" />
+      <MemberSignature Language="F#" Value="abstract member GetBlobLength : unit -&gt; int" Usage="iListenerChannelCallback.GetBlobLength " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.GetId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetId () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetId();" />
+      <MemberSignature Language="F#" Value="abstract member GetId : unit -&gt; int" Usage="iListenerChannelCallback.GetId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportMessageReceived" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportMessageReceived ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportMessageReceived();" />
+      <MemberSignature Language="F#" Value="abstract member ReportMessageReceived : unit -&gt; unit" Usage="iListenerChannelCallback.ReportMessageReceived " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportStarted" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportStarted ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportStarted();" />
+      <MemberSignature Language="F#" Value="abstract member ReportStarted : unit -&gt; unit" Usage="iListenerChannelCallback.ReportStarted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IListenerChannelCallback.ReportStopped(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportStopped (hr As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportStopped(int hr);" />
+      <MemberSignature Language="F#" Value="abstract member ReportStopped : int -&gt; unit" Usage="iListenerChannelCallback.ReportStopped hr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

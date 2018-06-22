@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SchemaNameCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SchemaNameCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class SchemaNameCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type SchemaNameCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; int" Usage="schemaNameCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.AddRange(System.DirectoryServices.SchemaNameCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As SchemaNameCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::SchemaNameCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.SchemaNameCollection -&gt; unit" Usage="schemaNameCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.AddRange(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::String ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : string[] -&gt; unit" Usage="schemaNameCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="schemaNameCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="schemaNameCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.CopyTo(System.String[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (stringArray As String(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::String ^&gt; ^ stringArray, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : string[] * int -&gt; unit" Usage="schemaNameCollection.CopyTo (stringArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.DirectoryServices.SchemaNameCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="schemaNameCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="schemaNameCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -251,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; unit" Usage="schemaNameCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -284,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); void set(int index, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string with get, set" Usage="System.DirectoryServices.SchemaNameCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -318,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="schemaNameCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -342,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.SchemaNameCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="schemaNameCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -409,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.SchemaNameCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -469,6 +484,7 @@ Dim myCollection As New ICollection()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.SchemaNameCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -681,6 +697,7 @@ Dim myCollection As New ICollection()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.SchemaNameCollection.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -713,6 +730,7 @@ Dim myCollection As New ICollection()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.SchemaNameCollection.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -745,6 +763,7 @@ Dim myCollection As New ICollection()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.SchemaNameCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.SchemaNameCollection.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AddingNewItemEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AddingNewItemEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddingNewItemEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AddingNewItemEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AddingNewItemEventArgs.NewItem" />
       <MemberSignature Language="VB.NET" Value="Public Property NewItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NewItem : obj with get, set" Usage="System.Windows.Controls.AddingNewItemEventArgs.NewItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

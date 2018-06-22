@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolDocumentWriter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolDocumentWriter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISymbolDocumentWriter" />
+  <TypeSignature Language="F#" Value="type ISymbolDocumentWriter = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetCheckSum(System.Guid,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCheckSum (algorithmId As Guid, checkSum As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCheckSum(Guid algorithmId, cli::array &lt;System::Byte&gt; ^ checkSum);" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckSum : Guid * byte[] -&gt; unit" Usage="iSymbolDocumentWriter.SetCheckSum (algorithmId, checkSum)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetSource(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSource (source As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSource(cli::array &lt;System::Byte&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member SetSource : byte[] -&gt; unit" Usage="iSymbolDocumentWriter.SetSource source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowCompilerOptionsService&#xA;Implements IWorkflowCompilerOptionsService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCompilerOptionsService : System::Workflow::ComponentModel::Compiler::IWorkflowCompilerOptionsService" />
+  <TypeSignature Language="F#" Value="type WorkflowCompilerOptionsService = class&#xA;    interface IWorkflowCompilerOptionsService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.CheckTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CheckTypes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckTypes : bool" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.CheckTypes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes</InterfaceMember>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.Language" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.Language" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.Language</InterfaceMember>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RootNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.RootNamespace" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.RootNamespace</InterfaceMember>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.TargetFrameworkMoniker" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TargetFrameworkMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TargetFrameworkMoniker { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string" Usage="System.Workflow.ComponentModel.Compiler.WorkflowCompilerOptionsService.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

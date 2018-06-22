@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnClickEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColumnClickEventHandler(sender As Object, e As ColumnClickEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ColumnClickEventHandler(System::Object ^ sender, ColumnClickEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ColumnClickEventHandler = delegate of obj * ColumnClickEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AutomationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationElement sealed" />
+  <TypeSignature Language="F#" Value="type AutomationElement = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceleratorKeyProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ AcceleratorKeyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AcceleratorKeyProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.AcceleratorKeyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AccessKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AccessKeyProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ AccessKeyProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AccessKeyProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.AccessKeyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AsyncContentLoadedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ AsyncContentLoadedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AsyncContentLoadedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutomationFocusChangedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ AutomationFocusChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutomationFocusChangedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutomationIdProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ AutomationIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutomationIdProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.AutomationIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationPropertyChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutomationPropertyChangedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ AutomationPropertyChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutomationPropertyChangedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.AutomationPropertyChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.BoundingRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BoundingRectangleProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ BoundingRectangleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BoundingRectangleProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.BoundingRectangleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.Cached" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As AutomationElement.AutomationElementInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement::AutomationElementInformation Cached { System::Windows::Automation::AutomationElement::AutomationElementInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cached : System.Windows.Automation.AutomationElement.AutomationElementInformation" Usage="System.Windows.Automation.AutomationElement.Cached" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.CachedChildren" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachedChildren As AutomationElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElementCollection ^ CachedChildren { System::Windows::Automation::AutomationElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CachedChildren : System.Windows.Automation.AutomationElementCollection" Usage="System.Windows.Automation.AutomationElement.CachedChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -381,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.CachedParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachedParent As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement ^ CachedParent { System::Windows::Automation::AutomationElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CachedParent : System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.CachedParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ClassNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClassNameProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ClassNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClassNameProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ClassNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -458,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ClickablePointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickablePointProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ClickablePointProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClickablePointProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ClickablePointProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -505,6 +518,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ControlTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlTypeProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ControlTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlTypeProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ControlTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.CultureProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CultureProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CultureProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CultureProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.CultureProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -588,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As AutomationElement.AutomationElementInformation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement::AutomationElementInformation Current { System::Windows::Automation::AutomationElement::AutomationElementInformation get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.AutomationElement.AutomationElementInformation" Usage="System.Windows.Automation.AutomationElement.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -626,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="automationElement.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AutomationElement ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="automationElement.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -681,6 +699,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElementCollection FindAll(valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.Condition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FindAll(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElementCollection ^ FindAll(System::Windows::Automation::TreeScope scope, System::Windows::Automation::Condition ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : System.Windows.Automation.TreeScope * System.Windows.Automation.Condition -&gt; System.Windows.Automation.AutomationElementCollection" Usage="automationElement.FindAll (scope, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -726,6 +745,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement FindFirst(valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.Condition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FindFirst(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ FindFirst(System::Windows::Automation::TreeScope scope, System::Windows::Automation::Condition ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.FindFirst : System.Windows.Automation.TreeScope * System.Windows.Automation.Condition -&gt; System.Windows.Automation.AutomationElement" Usage="automationElement.FindFirst (scope, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -772,6 +792,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.FocusedElement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FocusedElement As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Automation::AutomationElement ^ FocusedElement { System::Windows::Automation::AutomationElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FocusedElement : System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.FocusedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -799,6 +820,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.FrameworkIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FrameworkIdProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ FrameworkIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FrameworkIdProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.FrameworkIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -837,6 +859,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (hwnd As IntPtr) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationElement ^ FromHandle(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="static member FromHandle : nativeint -&gt; System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.FromHandle hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -862,6 +885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromLocalProvider(System.Windows.Automation.Provider.IRawElementProviderSimple)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromLocalProvider (localImpl As IRawElementProviderSimple) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationElement ^ FromLocalProvider(System::Windows::Automation::Provider::IRawElementProviderSimple ^ localImpl);" />
+      <MemberSignature Language="F#" Value="static member FromLocalProvider : System.Windows.Automation.Provider.IRawElementProviderSimple -&gt; System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.FromLocalProvider localImpl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -893,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromPoint(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromPoint (pt As Point) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationElement ^ FromPoint(System::Windows::Point pt);" />
+      <MemberSignature Language="F#" Value="static member FromPoint : System.Windows.Point -&gt; System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.FromPoint pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -937,6 +962,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPattern(System.Windows.Automation.AutomationPattern)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCachedPattern (pattern As AutomationPattern) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCachedPattern(System::Windows::Automation::AutomationPattern ^ pattern);" />
+      <MemberSignature Language="F#" Value="member this.GetCachedPattern : System.Windows.Automation.AutomationPattern -&gt; obj" Usage="automationElement.GetCachedPattern pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -998,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPropertyValue(System.Windows.Automation.AutomationProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCachedPropertyValue (property As AutomationProperty) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCachedPropertyValue(System::Windows::Automation::AutomationProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.GetCachedPropertyValue : System.Windows.Automation.AutomationProperty -&gt; obj" Usage="automationElement.GetCachedPropertyValue property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1043,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPropertyValue(System.Windows.Automation.AutomationProperty,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCachedPropertyValue (property As AutomationProperty, ignoreDefaultValue As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCachedPropertyValue(System::Windows::Automation::AutomationProperty ^ property, bool ignoreDefaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetCachedPropertyValue : System.Windows.Automation.AutomationProperty * bool -&gt; obj" Usage="automationElement.GetCachedPropertyValue (property, ignoreDefaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1092,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetClickablePoint" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClickablePoint () As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetClickablePoint();" />
+      <MemberSignature Language="F#" Value="member this.GetClickablePoint : unit -&gt; System.Windows.Point" Usage="automationElement.GetClickablePoint " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1145,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPattern(System.Windows.Automation.AutomationPattern)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentPattern (pattern As AutomationPattern) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentPattern(System::Windows::Automation::AutomationPattern ^ pattern);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentPattern : System.Windows.Automation.AutomationPattern -&gt; obj" Usage="automationElement.GetCurrentPattern pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1211,6 +1241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(System.Windows.Automation.AutomationProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentPropertyValue (property As AutomationProperty) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentPropertyValue(System::Windows::Automation::AutomationProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentPropertyValue : System.Windows.Automation.AutomationProperty -&gt; obj" Usage="automationElement.GetCurrentPropertyValue property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1255,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(System.Windows.Automation.AutomationProperty,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCurrentPropertyValue (property As AutomationProperty, ignoreDefaultValue As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentPropertyValue(System::Windows::Automation::AutomationProperty ^ property, bool ignoreDefaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentPropertyValue : System.Windows.Automation.AutomationProperty * bool -&gt; obj" Usage="automationElement.GetCurrentPropertyValue (property, ignoreDefaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1303,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="automationElement.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1324,6 +1357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetRuntimeId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeId () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRuntimeId();" />
+      <MemberSignature Language="F#" Value="member this.GetRuntimeId : unit -&gt; int[]" Usage="automationElement.GetRuntimeId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1363,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetSupportedPatterns" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSupportedPatterns () As AutomationPattern()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationPattern ^&gt; ^ GetSupportedPatterns();" />
+      <MemberSignature Language="F#" Value="member this.GetSupportedPatterns : unit -&gt; System.Windows.Automation.AutomationPattern[]" Usage="automationElement.GetSupportedPatterns " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1399,6 +1434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetSupportedProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSupportedProperties () As AutomationProperty()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationProperty ^&gt; ^ GetSupportedProperties();" />
+      <MemberSignature Language="F#" Value="member this.GetSupportedProperties : unit -&gt; System.Windows.Automation.AutomationProperty[]" Usage="automationElement.GetSupportedProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1435,6 +1471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetUpdatedCache(System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdatedCache (request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetUpdatedCache(System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetUpdatedCache : System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="automationElement.GetUpdatedCache request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1474,6 +1511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasKeyboardFocusProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ HasKeyboardFocusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasKeyboardFocusProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1512,6 +1550,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.HelpTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HelpTextProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ HelpTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HelpTextProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.HelpTextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1557,6 +1596,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsContentElementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsContentElementProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsContentElementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsContentElementProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsContentElementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1605,6 +1645,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsControlElementProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsControlElementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsControlElementProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsControlElementProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1651,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDockPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsDockPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDockPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1687,6 +1729,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1727,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsExpandCollapsePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandCollapsePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsExpandCollapsePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsExpandCollapsePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsExpandCollapsePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1763,6 +1807,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsGridItemPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsGridItemPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsGridItemPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsGridItemPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsGridItemPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1799,6 +1844,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsGridPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsGridPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsGridPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsGridPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsGridPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1835,6 +1881,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsInvokePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInvokePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsInvokePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInvokePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsInvokePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1871,6 +1918,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsItemContainerPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsItemContainerPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsItemContainerPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsItemContainerPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsItemContainerPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1890,6 +1938,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsKeyboardFocusableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsKeyboardFocusableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsKeyboardFocusableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1930,6 +1979,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsMultipleViewPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsMultipleViewPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsMultipleViewPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsMultipleViewPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsMultipleViewPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -1966,6 +2016,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsOffscreenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOffscreenProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsOffscreenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOffscreenProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsOffscreenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2011,6 +2062,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsPasswordProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsPasswordProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsPasswordProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsPasswordProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsPasswordProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2049,6 +2101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsRangeValuePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRangeValuePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsRangeValuePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsRangeValuePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsRangeValuePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2085,6 +2138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsRequiredForFormProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRequiredForFormProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsRequiredForFormProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsRequiredForFormProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsRequiredForFormProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2123,6 +2177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsScrollItemPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsScrollItemPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsScrollItemPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsScrollItemPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsScrollItemPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2159,6 +2214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsScrollPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsScrollPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsScrollPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsScrollPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsScrollPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2195,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSelectionItemPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionItemPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSelectionItemPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionItemPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsSelectionItemPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2231,6 +2288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSelectionPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSelectionPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsSelectionPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2267,6 +2325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSynchronizedInputPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSynchronizedInputPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsSynchronizedInputPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSynchronizedInputPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsSynchronizedInputPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2286,6 +2345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTableItemPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTableItemPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTableItemPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTableItemPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsTableItemPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2322,6 +2382,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTablePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTablePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTablePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTablePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsTablePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2358,6 +2419,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTextPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTextPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTextPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTextPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsTextPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2394,6 +2456,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTogglePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTogglePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTogglePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTogglePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsTogglePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2430,6 +2493,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTransformPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTransformPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTransformPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTransformPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsTransformPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2466,6 +2530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsValuePatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsValuePatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsValuePatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsValuePatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsValuePatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2502,6 +2567,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsVirtualizedItemPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsVirtualizedItemPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsVirtualizedItemPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsVirtualizedItemPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsVirtualizedItemPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2521,6 +2587,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsWindowPatternAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsWindowPatternAvailableProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsWindowPatternAvailableProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsWindowPatternAvailableProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.IsWindowPatternAvailableProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2557,6 +2624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ItemStatusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemStatusProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ItemStatusProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemStatusProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ItemStatusProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2598,6 +2666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ItemTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTypeProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ItemTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTypeProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ItemTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2641,6 +2710,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LabeledByProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabeledByProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ LabeledByProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LabeledByProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.LabeledByProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2684,6 +2754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LayoutInvalidatedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LayoutInvalidatedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ LayoutInvalidatedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LayoutInvalidatedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.LayoutInvalidatedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2713,6 +2784,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LocalizedControlTypeProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ LocalizedControlTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LocalizedControlTypeProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2758,6 +2830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.MenuClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuClosedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ MenuClosedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuClosedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.MenuClosedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2785,6 +2858,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.MenuOpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuOpenedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ MenuOpenedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuOpenedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.MenuOpenedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2812,6 +2886,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ NameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NameProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.NameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2855,6 +2930,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NativeWindowHandleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NativeWindowHandleProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ NativeWindowHandleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NativeWindowHandleProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.NativeWindowHandleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2898,6 +2974,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NotSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NotSupported As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ NotSupported;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NotSupported : obj" Usage="System.Windows.Automation.AutomationElement.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2932,6 +3009,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Equality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As AutomationElement, right As AutomationElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Automation::AutomationElement ^ left, System::Windows::Automation::AutomationElement ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationElement -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2969,6 +3047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Inequality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As AutomationElement, right As AutomationElement) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Automation::AutomationElement ^ left, System::Windows::Automation::AutomationElement ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationElement -&gt; bool" Usage="System.Windows.Automation.AutomationElement.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -2999,6 +3078,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.OrientationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ OrientationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.OrientationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3042,6 +3122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ProcessIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcessIdProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ProcessIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcessIdProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.ProcessIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3085,6 +3166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.RootElement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RootElement As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Automation::AutomationElement ^ RootElement { System::Windows::Automation::AutomationElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootElement : System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.AutomationElement.RootElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3122,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.RuntimeIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RuntimeIdProperty As AutomationProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RuntimeIdProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RuntimeIdProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElement.RuntimeIdProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3164,6 +3247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.SetFocus" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFocus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus();" />
+      <MemberSignature Language="F#" Value="member this.SetFocus : unit -&gt; unit" Usage="automationElement.SetFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3192,6 +3276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.StructureChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StructureChangedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ StructureChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StructureChangedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.StructureChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3219,6 +3304,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ToolTipClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipClosedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ToolTipClosedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipClosedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.ToolTipClosedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3246,6 +3332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ToolTipOpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipOpenedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ ToolTipOpenedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipOpenedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationElement.ToolTipOpenedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3275,6 +3362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCachedPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetCachedPattern (pattern As AutomationPattern, ByRef patternObject As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetCachedPattern(System::Windows::Automation::AutomationPattern ^ pattern, [Runtime::InteropServices::Out] System::Object ^ % patternObject);" />
+      <MemberSignature Language="F#" Value="member this.TryGetCachedPattern : System.Windows.Automation.AutomationPattern *  -&gt; bool" Usage="automationElement.TryGetCachedPattern (pattern, patternObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3314,6 +3402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetClickablePoint (ByRef pt As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetClickablePoint([Runtime::InteropServices::Out] System::Windows::Point % pt);" />
+      <MemberSignature Language="F#" Value="member this.TryGetClickablePoint :  -&gt; bool" Usage="automationElement.TryGetClickablePoint pt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -3355,6 +3444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCurrentPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetCurrentPattern (pattern As AutomationPattern, ByRef patternObject As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetCurrentPattern(System::Windows::Automation::AutomationPattern ^ pattern, [Runtime::InteropServices::Out] System::Object ^ % patternObject);" />
+      <MemberSignature Language="F#" Value="member this.TryGetCurrentPattern : System.Windows.Automation.AutomationPattern *  -&gt; bool" Usage="automationElement.TryGetCurrentPattern (pattern, patternObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

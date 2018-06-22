@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Relational" />
   <TypeSignature Language="VB.NET" Value="Public Class Relational&#xA;Inherits BinaryOp" />
   <TypeSignature Language="C++ CLI" Value="public ref class Relational : Microsoft::JScript::BinaryOp" />
+  <TypeSignature Language="F#" Value="type Relational = class&#xA;    inherit BinaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Relational.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operatorTok As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Relational(int operatorTok);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Relational : int -&gt; Microsoft.JScript.Relational" Usage="new Microsoft.JScript.Relational operatorTok" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Relational.EvaluateRelational(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function EvaluateRelational (v1 As Object, v2 As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; double EvaluateRelational(System::Object ^ v1, System::Object ^ v2);" />
+      <MemberSignature Language="F#" Value="member this.EvaluateRelational : obj * obj -&gt; double" Usage="relational.EvaluateRelational (v1, v2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Relational.JScriptCompare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptCompare (v1 As Object, v2 As Object) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double JScriptCompare(System::Object ^ v1, System::Object ^ v2);" />
+      <MemberSignature Language="F#" Value="static member JScriptCompare : obj * obj -&gt; double" Usage="Microsoft.JScript.Relational.JScriptCompare (v1, v2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

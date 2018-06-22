@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyConfigurationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyConfigurationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyConfigurationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyConfigurationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyConfigurationAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyConfigurationAttribute(System::String ^ configuration);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyConfigurationAttribute : string -&gt; System.Reflection.AssemblyConfigurationAttribute" Usage="new System.Reflection.AssemblyConfigurationAttribute configuration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyConfigurationAttribute.Configuration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Configuration { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Configuration : string" Usage="System.Reflection.AssemblyConfigurationAttribute.Configuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

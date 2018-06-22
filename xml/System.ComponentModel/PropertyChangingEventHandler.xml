@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyChangingEventHandler(sender As Object, e As PropertyChangingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PropertyChangingEventHandler(System::Object ^ sender, PropertyChangingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PropertyChangingEventHandler = delegate of obj * PropertyChangingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.SessionChangeReason" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionChangeReason" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionChangeReason" />
+  <TypeSignature Language="F#" Value="type SessionChangeReason = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.ConsoleConnect" />
       <MemberSignature Language="VB.NET" Value="ConsoleConnect" />
       <MemberSignature Language="C++ CLI" Value="ConsoleConnect" />
+      <MemberSignature Language="F#" Value="ConsoleConnect = 1" Usage="System.ServiceProcess.SessionChangeReason.ConsoleConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.ConsoleDisconnect" />
       <MemberSignature Language="VB.NET" Value="ConsoleDisconnect" />
       <MemberSignature Language="C++ CLI" Value="ConsoleDisconnect" />
+      <MemberSignature Language="F#" Value="ConsoleDisconnect = 2" Usage="System.ServiceProcess.SessionChangeReason.ConsoleDisconnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.RemoteConnect" />
       <MemberSignature Language="VB.NET" Value="RemoteConnect" />
       <MemberSignature Language="C++ CLI" Value="RemoteConnect" />
+      <MemberSignature Language="F#" Value="RemoteConnect = 3" Usage="System.ServiceProcess.SessionChangeReason.RemoteConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.RemoteDisconnect" />
       <MemberSignature Language="VB.NET" Value="RemoteDisconnect" />
       <MemberSignature Language="C++ CLI" Value="RemoteDisconnect" />
+      <MemberSignature Language="F#" Value="RemoteDisconnect = 4" Usage="System.ServiceProcess.SessionChangeReason.RemoteDisconnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.SessionLock" />
       <MemberSignature Language="VB.NET" Value="SessionLock" />
       <MemberSignature Language="C++ CLI" Value="SessionLock" />
+      <MemberSignature Language="F#" Value="SessionLock = 7" Usage="System.ServiceProcess.SessionChangeReason.SessionLock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.SessionLogoff" />
       <MemberSignature Language="VB.NET" Value="SessionLogoff" />
       <MemberSignature Language="C++ CLI" Value="SessionLogoff" />
+      <MemberSignature Language="F#" Value="SessionLogoff = 6" Usage="System.ServiceProcess.SessionChangeReason.SessionLogoff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -146,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.SessionLogon" />
       <MemberSignature Language="VB.NET" Value="SessionLogon" />
       <MemberSignature Language="C++ CLI" Value="SessionLogon" />
+      <MemberSignature Language="F#" Value="SessionLogon = 5" Usage="System.ServiceProcess.SessionChangeReason.SessionLogon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -165,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.SessionRemoteControl" />
       <MemberSignature Language="VB.NET" Value="SessionRemoteControl" />
       <MemberSignature Language="C++ CLI" Value="SessionRemoteControl" />
+      <MemberSignature Language="F#" Value="SessionRemoteControl = 9" Usage="System.ServiceProcess.SessionChangeReason.SessionRemoteControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -184,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.SessionChangeReason.SessionUnlock" />
       <MemberSignature Language="VB.NET" Value="SessionUnlock" />
       <MemberSignature Language="C++ CLI" Value="SessionUnlock" />
+      <MemberSignature Language="F#" Value="SessionUnlock = 8" Usage="System.ServiceProcess.SessionChangeReason.SessionUnlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>

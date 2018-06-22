@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataListComponentEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class DataListComponentEditor&#xA;Inherits BaseDataListComponentEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataListComponentEditor : System::Web::UI::Design::WebControls::BaseDataListComponentEditor" />
+  <TypeSignature Language="F#" Value="type DataListComponentEditor = class&#xA;    inherit BaseDataListComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataListComponentEditor.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialPage As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataListComponentEditor(int initialPage);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.DataListComponentEditor : int -&gt; System.Web.UI.Design.WebControls.DataListComponentEditor" Usage="new System.Web.UI.Design.WebControls.DataListComponentEditor initialPage" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataListComponentEditor.GetComponentEditorPages" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetComponentEditorPages () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetComponentEditorPages();" />
+      <MemberSignature Language="F#" Value="override this.GetComponentEditorPages : unit -&gt; Type[]" Usage="dataListComponentEditor.GetComponentEditorPages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

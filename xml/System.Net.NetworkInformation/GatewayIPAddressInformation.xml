@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.GatewayIPAddressInformation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GatewayIPAddressInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class GatewayIPAddressInformation abstract" />
+  <TypeSignature Language="F#" Value="type GatewayIPAddressInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.GatewayIPAddressInformation.Address" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Address As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress" Usage="System.Net.NetworkInformation.GatewayIPAddressInformation.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

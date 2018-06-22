@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.HitTestOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum HitTestOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class HitTestOptions" />
+  <TypeSignature Language="F#" Value="type HitTestOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.BackgroundSegment" />
       <MemberSignature Language="VB.NET" Value="BackgroundSegment" />
       <MemberSignature Language="C++ CLI" Value="BackgroundSegment" />
+      <MemberSignature Language="F#" Value="BackgroundSegment = 0" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.BackgroundSegment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.Caption" />
       <MemberSignature Language="VB.NET" Value="Caption" />
       <MemberSignature Language="C++ CLI" Value="Caption" />
+      <MemberSignature Language="F#" Value="Caption = 4" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.Caption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.FixedBorder" />
       <MemberSignature Language="VB.NET" Value="FixedBorder" />
       <MemberSignature Language="C++ CLI" Value="FixedBorder" />
+      <MemberSignature Language="F#" Value="FixedBorder = 2" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.FixedBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorder" />
       <MemberSignature Language="VB.NET" Value="ResizingBorder" />
       <MemberSignature Language="C++ CLI" Value="ResizingBorder" />
+      <MemberSignature Language="F#" Value="ResizingBorder = 240" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderBottom" />
       <MemberSignature Language="VB.NET" Value="ResizingBorderBottom" />
       <MemberSignature Language="C++ CLI" Value="ResizingBorderBottom" />
+      <MemberSignature Language="F#" Value="ResizingBorderBottom = 128" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderLeft" />
       <MemberSignature Language="VB.NET" Value="ResizingBorderLeft" />
       <MemberSignature Language="C++ CLI" Value="ResizingBorderLeft" />
+      <MemberSignature Language="F#" Value="ResizingBorderLeft = 16" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderRight" />
       <MemberSignature Language="VB.NET" Value="ResizingBorderRight" />
       <MemberSignature Language="C++ CLI" Value="ResizingBorderRight" />
+      <MemberSignature Language="F#" Value="ResizingBorderRight = 64" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderTop" />
       <MemberSignature Language="VB.NET" Value="ResizingBorderTop" />
       <MemberSignature Language="C++ CLI" Value="ResizingBorderTop" />
+      <MemberSignature Language="F#" Value="ResizingBorderTop = 32" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.ResizingBorderTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.SizingTemplate" />
       <MemberSignature Language="VB.NET" Value="SizingTemplate" />
       <MemberSignature Language="C++ CLI" Value="SizingTemplate" />
+      <MemberSignature Language="F#" Value="SizingTemplate = 256" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.SizingTemplate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -205,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestOptions.SystemSizingMargins" />
       <MemberSignature Language="VB.NET" Value="SystemSizingMargins" />
       <MemberSignature Language="C++ CLI" Value="SystemSizingMargins" />
+      <MemberSignature Language="F#" Value="SystemSizingMargins = 512" Usage="System.Windows.Forms.VisualStyles.HitTestOptions.SystemSizingMargins" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

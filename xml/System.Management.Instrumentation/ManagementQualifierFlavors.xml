@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementQualifierFlavors" />
   <TypeSignature Language="VB.NET" Value="Public Enum ManagementQualifierFlavors" />
   <TypeSignature Language="C++ CLI" Value="public enum class ManagementQualifierFlavors" />
+  <TypeSignature Language="F#" Value="type ManagementQualifierFlavors = " />
   <AssemblyInfo>
     <AssemblyName>System.Management.Instrumentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@ public class AssociationSampleBase
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementQualifierFlavors.Amended" />
       <MemberSignature Language="VB.NET" Value="Amended" />
       <MemberSignature Language="C++ CLI" Value="Amended" />
+      <MemberSignature Language="F#" Value="Amended = 1" Usage="System.Management.Instrumentation.ManagementQualifierFlavors.Amended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -76,6 +78,7 @@ public class AssociationSampleBase
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementQualifierFlavors.ClassOnly" />
       <MemberSignature Language="VB.NET" Value="ClassOnly" />
       <MemberSignature Language="C++ CLI" Value="ClassOnly" />
+      <MemberSignature Language="F#" Value="ClassOnly = 4" Usage="System.Management.Instrumentation.ManagementQualifierFlavors.ClassOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -95,6 +98,7 @@ public class AssociationSampleBase
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementQualifierFlavors.DisableOverride" />
       <MemberSignature Language="VB.NET" Value="DisableOverride" />
       <MemberSignature Language="C++ CLI" Value="DisableOverride" />
+      <MemberSignature Language="F#" Value="DisableOverride = 2" Usage="System.Management.Instrumentation.ManagementQualifierFlavors.DisableOverride" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -114,6 +118,7 @@ public class AssociationSampleBase
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementQualifierFlavors.ThisClassOnly" />
       <MemberSignature Language="VB.NET" Value="ThisClassOnly" />
       <MemberSignature Language="C++ CLI" Value="ThisClassOnly" />
+      <MemberSignature Language="F#" Value="ThisClassOnly = 8" Usage="System.Management.Instrumentation.ManagementQualifierFlavors.ThisClassOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>

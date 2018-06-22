@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.ShaderRenderMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ShaderRenderMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ShaderRenderMode" />
+  <TypeSignature Language="F#" Value="type ShaderRenderMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Media.Effects.ShaderRenderMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.HardwareOnly" />
       <MemberSignature Language="VB.NET" Value="HardwareOnly" />
       <MemberSignature Language="C++ CLI" Value="HardwareOnly" />
+      <MemberSignature Language="F#" Value="HardwareOnly = 2" Usage="System.Windows.Media.Effects.ShaderRenderMode.HardwareOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.SoftwareOnly" />
       <MemberSignature Language="VB.NET" Value="SoftwareOnly" />
       <MemberSignature Language="C++ CLI" Value="SoftwareOnly" />
+      <MemberSignature Language="F#" Value="SoftwareOnly = 1" Usage="System.Windows.Media.Effects.ShaderRenderMode.SoftwareOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebBodyFormatMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBodyFormatMessageProperty&#xA;Implements IMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBodyFormatMessageProperty sealed : System::ServiceModel::Channels::IMessageProperty" />
+  <TypeSignature Language="F#" Value="type WebBodyFormatMessageProperty = class&#xA;    interface IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.#ctor(System.ServiceModel.Channels.WebContentFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (format As WebContentFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBodyFormatMessageProperty(System::ServiceModel::Channels::WebContentFormat format);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.WebBodyFormatMessageProperty : System.ServiceModel.Channels.WebContentFormat -&gt; System.ServiceModel.Channels.WebBodyFormatMessageProperty" Usage="new System.ServiceModel.Channels.WebBodyFormatMessageProperty format" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty&#xA;override this.CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty" Usage="webBodyFormatMessageProperty.CreateCopy " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As WebContentFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::WebContentFormat Format { System::ServiceModel::Channels::WebContentFormat get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : System.ServiceModel.Channels.WebContentFormat" Usage="System.ServiceModel.Channels.WebBodyFormatMessageProperty.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Const Name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
+      <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="webBodyFormatMessageProperty.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

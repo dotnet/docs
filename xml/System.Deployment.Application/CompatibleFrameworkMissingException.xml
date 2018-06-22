@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.CompatibleFrameworkMissingException" />
   <TypeSignature Language="VB.NET" Value="Public Class CompatibleFrameworkMissingException&#xA;Inherits DependentPlatformMissingException" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFrameworkMissingException : System::Deployment::Application::DependentPlatformMissingException" />
+  <TypeSignature Language="F#" Value="type CompatibleFrameworkMissingException = class&#xA;    inherit DependentPlatformMissingException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : string -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompatibleFrameworkMissingException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : string * Exception -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworkMissingException.CompatibleFrameworks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompatibleFrameworks As CompatibleFrameworks" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::CompatibleFrameworks ^ CompatibleFrameworks { System::Deployment::Application::CompatibleFrameworks ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompatibleFrameworks : System.Deployment.Application.CompatibleFrameworks" Usage="System.Deployment.Application.CompatibleFrameworkMissingException.CompatibleFrameworks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="compatibleFrameworkMissingException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapAttributes" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapAttributes" />
+  <TypeSignature Language="F#" Value="type SoapAttributes = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapAttributes.#ctor(System.Reflection.ICustomAttributeProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As ICustomAttributeProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapAttributes(System::Reflection::ICustomAttributeProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapAttributes : System.Reflection.ICustomAttributeProvider -&gt; System.Xml.Serialization.SoapAttributes" Usage="new System.Xml.Serialization.SoapAttributes provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapAttribute As SoapAttributeAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapAttributeAttribute ^ SoapAttribute { System::Xml::Serialization::SoapAttributeAttribute ^ get(); void set(System::Xml::Serialization::SoapAttributeAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapAttribute : System.Xml.Serialization.SoapAttributeAttribute with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapDefaultValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SoapDefaultValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapDefaultValue : obj with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapDefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapElement" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapElement As SoapElementAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapElementAttribute ^ SoapElement { System::Xml::Serialization::SoapElementAttribute ^ get(); void set(System::Xml::Serialization::SoapElementAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapElement : System.Xml.Serialization.SoapElementAttribute with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -283,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapEnum" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapEnum As SoapEnumAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapEnumAttribute ^ SoapEnum { System::Xml::Serialization::SoapEnumAttribute ^ get(); void set(System::Xml::Serialization::SoapEnumAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapEnum : System.Xml.Serialization.SoapEnumAttribute with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapEnum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -332,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapIgnore" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapIgnore As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SoapIgnore { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapIgnore : bool with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapIgnore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -384,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributes.SoapType" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapType As SoapTypeAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapTypeAttribute ^ SoapType { System::Xml::Serialization::SoapTypeAttribute ^ get(); void set(System::Xml::Serialization::SoapTypeAttribute ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapType : System.Xml.Serialization.SoapTypeAttribute with get, set" Usage="System.Xml.Serialization.SoapAttributes.SoapType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

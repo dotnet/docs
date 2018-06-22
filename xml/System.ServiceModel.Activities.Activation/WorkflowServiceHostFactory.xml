@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowServiceHostFactory&#xA;Inherits ServiceHostFactoryBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactoryBase" />
+  <TypeSignature Language="F#" Value="type WorkflowServiceHostFactory = class&#xA;    inherit ServiceHostFactoryBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="workflowServiceHostFactory.CreateServiceHost (constructorString, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Activities.WorkflowServiceHost CreateWorkflowServiceHost(class System.Activities.Activity activity, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory.CreateWorkflowServiceHost(System.Activities.Activity,System.Uri[])" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Activities::WorkflowServiceHost ^ CreateWorkflowServiceHost(System::Activities::Activity ^ activity, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWorkflowServiceHost : System.Activities.Activity * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost&#xA;override this.CreateWorkflowServiceHost : System.Activities.Activity * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost" Usage="workflowServiceHostFactory.CreateWorkflowServiceHost (activity, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory.CreateWorkflowServiceHost(System.ServiceModel.Activities.WorkflowService,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWorkflowServiceHost (service As WorkflowService, baseAddresses As Uri()) As WorkflowServiceHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Activities::WorkflowServiceHost ^ CreateWorkflowServiceHost(System::ServiceModel::Activities::WorkflowService ^ service, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWorkflowServiceHost : System.ServiceModel.Activities.WorkflowService * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost&#xA;override this.CreateWorkflowServiceHost : System.ServiceModel.Activities.WorkflowService * Uri[] -&gt; System.ServiceModel.Activities.WorkflowServiceHost" Usage="workflowServiceHostFactory.CreateWorkflowServiceHost (service, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

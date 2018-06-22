@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardEndpointsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StandardEndpointsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class StandardEndpointsSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type StandardEndpointsSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardEndpointsSection.EndpointCollections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointCollections As List(Of EndpointCollectionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::ServiceModel::Configuration::EndpointCollectionElement ^&gt; ^ EndpointCollections { System::Collections::Generic::List&lt;System::ServiceModel::Configuration::EndpointCollectionElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointCollections : System.Collections.Generic.List&lt;System.ServiceModel.Configuration.EndpointCollectionElement&gt;" Usage="System.ServiceModel.Configuration.StandardEndpointsSection.EndpointCollections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardEndpointsSection.GetSection(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSection (config As Configuration) As StandardEndpointsSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Configuration::StandardEndpointsSection ^ GetSection(System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="static member GetSection : System.Configuration.Configuration -&gt; System.ServiceModel.Configuration.StandardEndpointsSection" Usage="System.ServiceModel.Configuration.StandardEndpointsSection.GetSection config" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardEndpointsSection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(endpoint As String) As EndpointCollectionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::EndpointCollectionElement ^ default[System::String ^] { System::ServiceModel::Configuration::EndpointCollectionElement ^ get(System::String ^ endpoint); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.ServiceModel.Configuration.EndpointCollectionElement" Usage="System.ServiceModel.Configuration.StandardEndpointsSection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardEndpointsSection.MexEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MexEndpoint As ServiceMetadataEndpointCollectionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceMetadataEndpointCollectionElement ^ MexEndpoint { System::ServiceModel::Configuration::ServiceMetadataEndpointCollectionElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MexEndpoint : System.ServiceModel.Configuration.ServiceMetadataEndpointCollectionElement" Usage="System.ServiceModel.Configuration.StandardEndpointsSection.MexEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardEndpointsSection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="standardEndpointsSection.OnDeserializeUnrecognizedElement (elementName, reader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardEndpointsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.StandardEndpointsSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskPropertyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskPropertyInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskPropertyInfo" />
+  <TypeSignature Language="F#" Value="type TaskPropertyInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskPropertyInfo.#ctor(System.String,System.Type,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, typeOfParameter As Type, output As Boolean, required As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskPropertyInfo(System::String ^ name, Type ^ typeOfParameter, bool output, bool required);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TaskPropertyInfo : string * Type * bool * bool -&gt; Microsoft.Build.Framework.TaskPropertyInfo" Usage="new Microsoft.Build.Framework.TaskPropertyInfo (name, typeOfParameter, output, required)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.Framework.TaskPropertyInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Output" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Output As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Output { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Output : bool" Usage="Microsoft.Build.Framework.TaskPropertyInfo.Output" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="Microsoft.Build.Framework.TaskPropertyInfo.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Required" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Required As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Required { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Required : bool" Usage="Microsoft.Build.Framework.TaskPropertyInfo.Required" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

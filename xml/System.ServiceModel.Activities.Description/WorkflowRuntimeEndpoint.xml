@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntimeEndpoint&#xA;Inherits WorkflowHostingEndpoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeEndpoint : System::ServiceModel::Activities::WorkflowHostingEndpoint" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeEndpoint = class&#xA;    inherit WorkflowHostingEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.AddService(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddService (service As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(System::Object ^ service);" />
+      <MemberSignature Language="F#" Value="member this.AddService : obj -&gt; unit" Usage="workflowRuntimeEndpoint.AddService service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="workflowRuntimeEndpoint.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.GetService``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetService();" />
+      <MemberSignature Language="F#" Value="member this.GetService : unit -&gt; 'T" Usage="workflowRuntimeEndpoint.GetService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Guid OnGetInstanceId(object[] inputs, class System.ServiceModel.OperationContext operationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.OnGetInstanceId(System.Object[],System.ServiceModel.OperationContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Guid OnGetInstanceId(cli::array &lt;System::Object ^&gt; ^ inputs, System::ServiceModel::OperationContext ^ operationContext);" />
+      <MemberSignature Language="F#" Value="override this.OnGetInstanceId : obj[] * System.ServiceModel.OperationContext -&gt; Guid" Usage="workflowRuntimeEndpoint.OnGetInstanceId (inputs, operationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Bookmark OnResolveBookmark(object[] inputs, class System.ServiceModel.OperationContext operationContext, class System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.OnResolveBookmark(System.Object[],System.ServiceModel.OperationContext,System.ServiceModel.Activities.WorkflowHostingResponseContext,System.Object@)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Bookmark ^ OnResolveBookmark(cli::array &lt;System::Object ^&gt; ^ inputs, System::ServiceModel::OperationContext ^ operationContext, System::ServiceModel::Activities::WorkflowHostingResponseContext ^ responseContext, [Runtime::InteropServices::Out] System::Object ^ % value);" />
+      <MemberSignature Language="F#" Value="override this.OnResolveBookmark : obj[] * System.ServiceModel.OperationContext * System.ServiceModel.Activities.WorkflowHostingResponseContext *  -&gt; System.Activities.Bookmark" Usage="workflowRuntimeEndpoint.OnResolveBookmark (inputs, operationContext, responseContext, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.RemoveService(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveService (service As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveService(System::Object ^ service);" />
+      <MemberSignature Language="F#" Value="member this.RemoveService : obj -&gt; unit" Usage="workflowRuntimeEndpoint.RemoveService service" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

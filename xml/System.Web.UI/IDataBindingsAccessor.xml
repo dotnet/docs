@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataBindingsAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataBindingsAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataBindingsAccessor" />
+  <TypeSignature Language="F#" Value="type IDataBindingsAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataBindingsAccessor.DataBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBindings As DataBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataBindingCollection ^ DataBindings { System::Web::UI::DataBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBindings : System.Web.UI.DataBindingCollection" Usage="System.Web.UI.IDataBindingsAccessor.DataBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataBindingsAccessor.HasDataBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDataBindings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataBindings { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataBindings : bool" Usage="System.Web.UI.IDataBindingsAccessor.HasDataBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

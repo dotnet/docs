@@ -33,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.MobileControls.Alignment alignment, valuetype System.Web.UI.MobileControls.Wrapping wrapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.#ctor(System.Web.UI.MobileControls.Alignment,System.Web.UI.MobileControls.Wrapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlLayout(System::Web::UI::MobileControls::Alignment alignment, System::Web::UI::MobileControls::Wrapping wrapping);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout : System.Web.UI.MobileControls.Alignment * System.Web.UI.MobileControls.Wrapping -&gt; System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" Usage="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout (alignment, wrapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.Style style, class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlLayout currentLayout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.#ctor(System.Web.UI.MobileControls.Style,System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlLayout(System::Web::UI::MobileControls::Style ^ style, System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ currentLayout);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout : System.Web.UI.MobileControls.Style * System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout -&gt; System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" Usage="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout (style, currentLayout)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align" />
       <MemberSignature Language="VB.NET" Value="Public Property Align As Alignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Alignment Align { System::Web::UI::MobileControls::Alignment get(); void set(System::Web::UI::MobileControls::Alignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Align : System.Web.UI.MobileControls.Alignment with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Compare(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (layout As WmlMobileTextWriter.WmlLayout) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Compare(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ layout);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout -&gt; bool&#xA;override this.Compare : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout -&gt; bool" Usage="wmlLayout.Compare layout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap" />
       <MemberSignature Language="VB.NET" Value="Public Property Wrap As Wrapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Wrapping Wrap { System::Web::UI::MobileControls::Wrapping get(); void set(System::Web::UI::MobileControls::Wrapping value); };" />
+      <MemberSignature Language="F#" Value="member this.Wrap : System.Web.UI.MobileControls.Wrapping with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCreateOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum BitmapCreateOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class BitmapCreateOptions" />
+  <TypeSignature Language="F#" Value="type BitmapCreateOptions = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.DelayCreation" />
       <MemberSignature Language="VB.NET" Value="DelayCreation" />
       <MemberSignature Language="C++ CLI" Value="DelayCreation" />
+      <MemberSignature Language="F#" Value="DelayCreation = 2" Usage="System.Windows.Media.Imaging.BitmapCreateOptions.DelayCreation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreColorProfile" />
       <MemberSignature Language="VB.NET" Value="IgnoreColorProfile" />
       <MemberSignature Language="C++ CLI" Value="IgnoreColorProfile" />
+      <MemberSignature Language="F#" Value="IgnoreColorProfile = 4" Usage="System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreColorProfile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreImageCache" />
       <MemberSignature Language="VB.NET" Value="IgnoreImageCache" />
       <MemberSignature Language="C++ CLI" Value="IgnoreImageCache" />
+      <MemberSignature Language="F#" Value="IgnoreImageCache = 8" Usage="System.Windows.Media.Imaging.BitmapCreateOptions.IgnoreImageCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Media.Imaging.BitmapCreateOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCreateOptions.PreservePixelFormat" />
       <MemberSignature Language="VB.NET" Value="PreservePixelFormat" />
       <MemberSignature Language="C++ CLI" Value="PreservePixelFormat" />
+      <MemberSignature Language="F#" Value="PreservePixelFormat = 1" Usage="System.Windows.Media.Imaging.BitmapCreateOptions.PreservePixelFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

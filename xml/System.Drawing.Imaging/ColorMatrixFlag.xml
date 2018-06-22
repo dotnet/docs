@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMatrixFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorMatrixFlag" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorMatrixFlag" />
+  <TypeSignature Language="F#" Value="type ColorMatrixFlag = " />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.AltGrays" />
       <MemberSignature Language="VB.NET" Value="AltGrays" />
       <MemberSignature Language="C++ CLI" Value="AltGrays" />
+      <MemberSignature Language="F#" Value="AltGrays = 2" Usage="System.Drawing.Imaging.ColorMatrixFlag.AltGrays" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Imaging.ColorMatrixFlag.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.SkipGrays" />
       <MemberSignature Language="VB.NET" Value="SkipGrays" />
       <MemberSignature Language="C++ CLI" Value="SkipGrays" />
+      <MemberSignature Language="F#" Value="SkipGrays = 1" Usage="System.Drawing.Imaging.ColorMatrixFlag.SkipGrays" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

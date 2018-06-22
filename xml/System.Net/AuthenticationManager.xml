@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationManager" />
+  <TypeSignature Language="F#" Value="type AuthenticationManager = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Authenticate (challenge As String, request As WebRequest, credentials As ICredentials) As Authorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Authorization ^ Authenticate(System::String ^ challenge, System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
+      <MemberSignature Language="F#" Value="static member Authenticate : string * System.Net.WebRequest * System.Net.ICredentials -&gt; System.Net.Authorization" Usage="System.Net.AuthenticationManager.Authenticate (challenge, request, credentials)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.CredentialPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CredentialPolicy As ICredentialPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::ICredentialPolicy ^ CredentialPolicy { System::Net::ICredentialPolicy ^ get(); void set(System::Net::ICredentialPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CredentialPolicy : System.Net.ICredentialPolicy with get, set" Usage="System.Net.AuthenticationManager.CredentialPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.CustomTargetNameDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CustomTargetNameDictionary As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Specialized::StringDictionary ^ CustomTargetNameDictionary { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomTargetNameDictionary : System.Collections.Specialized.StringDictionary" Usage="System.Net.AuthenticationManager.CustomTargetNameDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PreAuthenticate (request As WebRequest, credentials As ICredentials) As Authorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Authorization ^ PreAuthenticate(System::Net::WebRequest ^ request, System::Net::ICredentials ^ credentials);" />
+      <MemberSignature Language="F#" Value="static member PreAuthenticate : System.Net.WebRequest * System.Net.ICredentials -&gt; System.Net.Authorization" Usage="System.Net.AuthenticationManager.PreAuthenticate (request, credentials)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Register(System.Net.IAuthenticationModule)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (authenticationModule As IAuthenticationModule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Register(System::Net::IAuthenticationModule ^ authenticationModule);" />
+      <MemberSignature Language="F#" Value="static member Register : System.Net.IAuthenticationModule -&gt; unit" Usage="System.Net.AuthenticationManager.Register authenticationModule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -321,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.AuthenticationManager.RegisteredModules" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RegisteredModules As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IEnumerator ^ RegisteredModules { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegisteredModules : System.Collections.IEnumerator" Usage="System.Net.AuthenticationManager.RegisteredModules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -377,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Unregister(System.Net.IAuthenticationModule)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (authenticationModule As IAuthenticationModule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::Net::IAuthenticationModule ^ authenticationModule);" />
+      <MemberSignature Language="F#" Value="static member Unregister : System.Net.IAuthenticationModule -&gt; unit" Usage="System.Net.AuthenticationManager.Unregister authenticationModule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -430,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.AuthenticationManager.Unregister(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (authenticationScheme As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::String ^ authenticationScheme);" />
+      <MemberSignature Language="F#" Value="static member Unregister : string -&gt; unit" Usage="System.Net.AuthenticationManager.Unregister authenticationScheme" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

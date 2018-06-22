@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestTypes" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestTypes abstract sealed" />
+  <TypeSignature Language="F#" Value="type RequestTypes = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Const Cancel As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Cancel;" />
+      <MemberSignature Language="F#" Value="val mutable Cancel : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.GetMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Const GetMetadata As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ GetMetadata;" />
+      <MemberSignature Language="F#" Value="val mutable GetMetadata : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.GetMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Issue" />
       <MemberSignature Language="VB.NET" Value="Public Const Issue As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Issue;" />
+      <MemberSignature Language="F#" Value="val mutable Issue : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.Issue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.IssueCard" />
       <MemberSignature Language="VB.NET" Value="Public Const IssueCard As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ IssueCard;" />
+      <MemberSignature Language="F#" Value="val mutable IssueCard : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.IssueCard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Renew" />
       <MemberSignature Language="VB.NET" Value="Public Const Renew As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Renew;" />
+      <MemberSignature Language="F#" Value="val mutable Renew : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.Renew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Const Validate As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Validate;" />
+      <MemberSignature Language="F#" Value="val mutable Validate : string" Usage="System.IdentityModel.Protocols.WSTrust.RequestTypes.Validate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

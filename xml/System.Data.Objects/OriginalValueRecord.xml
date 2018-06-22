@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.OriginalValueRecord" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OriginalValueRecord&#xA;Inherits DbUpdatableDataRecord" />
   <TypeSignature Language="C++ CLI" Value="public ref class OriginalValueRecord abstract : System::Data::Objects::DbUpdatableDataRecord" />
+  <TypeSignature Language="F#" Value="type OriginalValueRecord = class&#xA;    inherit DbUpdatableDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string -&gt; obj" Usage="iDataObject.GetData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (format As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(Type ^ format);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : Type -&gt; obj" Usage="iDataObject.GetData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String, autoConvert As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format, bool autoConvert);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string * bool -&gt; obj" Usage="iDataObject.GetData (format, autoConvert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : string -&gt; bool" Usage="iDataObject.GetDataPresent format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(Type ^ format);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : Type -&gt; bool" Usage="iDataObject.GetDataPresent format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As String, autoConvert As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(System::String ^ format, bool autoConvert);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : string * bool -&gt; bool" Usage="iDataObject.GetDataPresent (format, autoConvert)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFormats () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFormats();" />
+      <MemberSignature Language="F#" Value="abstract member GetFormats : unit -&gt; string[]" Usage="iDataObject.GetFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFormats (autoConvert As Boolean) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFormats(bool autoConvert);" />
+      <MemberSignature Language="F#" Value="abstract member GetFormats : bool -&gt; string[]" Usage="iDataObject.GetFormats autoConvert" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -504,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : obj -&gt; unit" Usage="iDataObject.SetData data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -550,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * obj -&gt; unit" Usage="iDataObject.SetData (format, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -598,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As Type, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(Type ^ format, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : Type * obj -&gt; unit" Usage="iDataObject.SetData (format, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -647,6 +659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, autoConvert As Boolean, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, bool autoConvert, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * bool * obj -&gt; unit" Usage="iDataObject.SetData (format, autoConvert, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

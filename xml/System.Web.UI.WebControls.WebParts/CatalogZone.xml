@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogZone" />
   <TypeSignature Language="VB.NET" Value="Public Class CatalogZone&#xA;Inherits CatalogZoneBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CatalogZone : System::Web::UI::WebControls::WebParts::CatalogZoneBase" />
+  <TypeSignature Language="F#" Value="type CatalogZone = class&#xA;    inherit CatalogZoneBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -139,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCatalogParts () As CatalogPartCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ CreateCatalogParts();" />
+      <MemberSignature Language="F#" Value="override this.CreateCatalogParts : unit -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="catalogZone.CreateCatalogParts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZone.ZoneTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ZoneTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ZoneTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ZoneTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZone.ZoneTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

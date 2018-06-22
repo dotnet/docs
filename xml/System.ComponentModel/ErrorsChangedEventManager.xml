@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ErrorsChangedEventManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorsChangedEventManager&#xA;Inherits WeakEventManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorsChangedEventManager : System::Windows::WeakEventManager" />
+  <TypeSignature Language="F#" Value="type ErrorsChangedEventManager = class&#xA;    inherit WeakEventManager" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ErrorsChangedEventManager.AddHandler(System.ComponentModel.INotifyDataErrorInfo,System.EventHandler{System.ComponentModel.DataErrorsChangedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHandler (source As INotifyDataErrorInfo, handler As EventHandler(Of DataErrorsChangedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHandler(System::ComponentModel::INotifyDataErrorInfo ^ source, EventHandler&lt;System::ComponentModel::DataErrorsChangedEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddHandler : System.ComponentModel.INotifyDataErrorInfo * EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; -&gt; unit" Usage="System.ComponentModel.ErrorsChangedEventManager.AddHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ErrorsChangedEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
+      <MemberSignature Language="F#" Value="override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="errorsChangedEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ErrorsChangedEventManager.RemoveHandler(System.ComponentModel.INotifyDataErrorInfo,System.EventHandler{System.ComponentModel.DataErrorsChangedEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHandler (source As INotifyDataErrorInfo, handler As EventHandler(Of DataErrorsChangedEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHandler(System::ComponentModel::INotifyDataErrorInfo ^ source, EventHandler&lt;System::ComponentModel::DataErrorsChangedEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveHandler : System.ComponentModel.INotifyDataErrorInfo * EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; -&gt; unit" Usage="System.ComponentModel.ErrorsChangedEventManager.RemoveHandler (source, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ErrorsChangedEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StartListening : obj -&gt; unit" Usage="errorsChangedEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ErrorsChangedEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="override this.StopListening : obj -&gt; unit" Usage="errorsChangedEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

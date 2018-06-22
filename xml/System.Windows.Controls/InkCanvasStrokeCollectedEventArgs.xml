@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InkCanvasStrokeCollectedEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasStrokeCollectedEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokeCollectedEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Ink.Stroke stroke) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.#ctor(System.Windows.Ink.Stroke)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InkCanvasStrokeCollectedEventArgs(System::Windows::Ink::Stroke ^ stroke);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.InkCanvasStrokeCollectedEventArgs : System.Windows.Ink.Stroke -&gt; System.Windows.Controls.InkCanvasStrokeCollectedEventArgs" Usage="new System.Windows.Controls.InkCanvasStrokeCollectedEventArgs stroke" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="inkCanvasStrokeCollectedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.Stroke" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stroke As Stroke" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::Stroke ^ Stroke { System::Windows::Ink::Stroke ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Stroke : System.Windows.Ink.Stroke" Usage="System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.Stroke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

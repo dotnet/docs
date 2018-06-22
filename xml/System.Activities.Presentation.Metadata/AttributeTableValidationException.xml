@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" />
   <TypeSignature Language="VB.NET" Value="Public Class AttributeTableValidationException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeTableValidationException : Exception" />
+  <TypeSignature Language="F#" Value="type AttributeTableValidationException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeTableValidationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Metadata.AttributeTableValidationException : string -&gt; System.Activities.Presentation.Metadata.AttributeTableValidationException" Usage="new System.Activities.Presentation.Metadata.AttributeTableValidationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AttributeTableValidationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Metadata.AttributeTableValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Activities.Presentation.Metadata.AttributeTableValidationException" Usage="new System.Activities.Presentation.Metadata.AttributeTableValidationException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, validationErrors As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeTableValidationException(System::String ^ message, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ validationErrors);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Metadata.AttributeTableValidationException : string * seq&lt;string&gt; -&gt; System.Activities.Presentation.Metadata.AttributeTableValidationException" Usage="new System.Activities.Presentation.Metadata.AttributeTableValidationException (message, validationErrors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeTableValidationException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Metadata.AttributeTableValidationException : string * Exception -&gt; System.Activities.Presentation.Metadata.AttributeTableValidationException" Usage="new System.Activities.Presentation.Metadata.AttributeTableValidationException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.#ctor(System.String,System.Exception,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, validationErrors As IEnumerable(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeTableValidationException(System::String ^ message, Exception ^ inner, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ validationErrors);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Metadata.AttributeTableValidationException : string * Exception * seq&lt;string&gt; -&gt; System.Activities.Presentation.Metadata.AttributeTableValidationException" Usage="new System.Activities.Presentation.Metadata.AttributeTableValidationException (message, inner, validationErrors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTableValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="attributeTableValidationException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Metadata.AttributeTableValidationException.ValidationErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationErrors As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ValidationErrors { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationErrors : seq&lt;string&gt;" Usage="System.Activities.Presentation.Metadata.AttributeTableValidationException.ValidationErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

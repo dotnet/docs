@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageFile" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsolatedStorageFile&#xA;Inherits IsolatedStorage&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class IsolatedStorageFile sealed : System::IO::IsolatedStorage::IsolatedStorage, IDisposable" />
+  <TypeSignature Language="F#" Value="type IsolatedStorageFile = class&#xA;    inherit IsolatedStorage&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AvailableFreeSpace As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long AvailableFreeSpace { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailableFreeSpace : int64" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="isolatedStorageFile.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyFile (sourceFileName As String, destinationFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyFile(System::String ^ sourceFileName, System::String ^ destinationFileName);" />
+      <MemberSignature Language="F#" Value="member this.CopyFile : string * string -&gt; unit" Usage="isolatedStorageFile.CopyFile (sourceFileName, destinationFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyFile (sourceFileName As String, destinationFileName As String, overwrite As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyFile(System::String ^ sourceFileName, System::String ^ destinationFileName, bool overwrite);" />
+      <MemberSignature Language="F#" Value="member this.CopyFile : string * string * bool -&gt; unit" Usage="isolatedStorageFile.CopyFile (sourceFileName, destinationFileName, overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateDirectory (dir As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateDirectory(System::String ^ dir);" />
+      <MemberSignature Language="F#" Value="member this.CreateDirectory : string -&gt; unit" Usage="isolatedStorageFile.CreateDirectory dir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -350,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFile (path As String) As IsolatedStorageFileStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::IsolatedStorage::IsolatedStorageFileStream ^ CreateFile(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.CreateFile : string -&gt; System.IO.IsolatedStorage.IsolatedStorageFileStream" Usage="isolatedStorageFile.CreateFile path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -407,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentSize As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::UInt64 CurrentSize { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentSize : uint64" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -467,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteDirectory (dir As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteDirectory(System::String ^ dir);" />
+      <MemberSignature Language="F#" Value="member this.DeleteDirectory : string -&gt; unit" Usage="isolatedStorageFile.DeleteDirectory dir" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -520,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteFile (file As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteFile(System::String ^ file);" />
+      <MemberSignature Language="F#" Value="member this.DeleteFile : string -&gt; unit" Usage="isolatedStorageFile.DeleteFile file" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -575,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DirectoryExists (path As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DirectoryExists(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.DirectoryExists : string -&gt; bool" Usage="isolatedStorageFile.DirectoryExists path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -624,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="isolatedStorageFile.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -677,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FileExists (path As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FileExists(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.FileExists : string -&gt; bool" Usage="isolatedStorageFile.FileExists path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -722,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!IsolatedStorageFile ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="isolatedStorageFile.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -748,6 +762,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCreationTime (path As String) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeOffset GetCreationTime(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.GetCreationTime : string -&gt; DateTimeOffset" Usage="isolatedStorageFile.GetCreationTime path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -815,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDirectoryNames();" />
+      <MemberSignature Language="F#" Value="member this.GetDirectoryNames : unit -&gt; string[]" Usage="isolatedStorageFile.GetDirectoryNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -863,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryNames (searchPattern As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetDirectoryNames(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.GetDirectoryNames : string -&gt; string[]" Usage="isolatedStorageFile.GetDirectoryNames searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -927,6 +944,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator(System.IO.IsolatedStorage.IsolatedStorageScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnumerator (scope As IsolatedStorageScope) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ GetEnumerator(System::IO::IsolatedStorage::IsolatedStorageScope scope);" />
+      <MemberSignature Language="F#" Value="static member GetEnumerator : System.IO.IsolatedStorage.IsolatedStorageScope -&gt; System.Collections.IEnumerator" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -980,6 +998,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFileNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFileNames();" />
+      <MemberSignature Language="F#" Value="member this.GetFileNames : unit -&gt; string[]" Usage="isolatedStorageFile.GetFileNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1026,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFileNames (searchPattern As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFileNames(System::String ^ searchPattern);" />
+      <MemberSignature Language="F#" Value="member this.GetFileNames : string -&gt; string[]" Usage="isolatedStorageFile.GetFileNames searchPattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1086,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastAccessTime (path As String) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeOffset GetLastAccessTime(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.GetLastAccessTime : string -&gt; DateTimeOffset" Usage="isolatedStorageFile.GetLastAccessTime path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1143,6 +1164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastWriteTime (path As String) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeOffset GetLastWriteTime(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="member this.GetLastWriteTime : string -&gt; DateTimeOffset" Usage="isolatedStorageFile.GetLastWriteTime path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1200,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMachineStoreForApplication () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetMachineStoreForApplication();" />
+      <MemberSignature Language="F#" Value="static member GetMachineStoreForApplication : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1256,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMachineStoreForAssembly () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetMachineStoreForAssembly();" />
+      <MemberSignature Language="F#" Value="static member GetMachineStoreForAssembly : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForAssembly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1307,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMachineStoreForDomain () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetMachineStoreForDomain();" />
+      <MemberSignature Language="F#" Value="static member GetMachineStoreForDomain : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1381,6 +1406,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetPermission(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPermission (ps As PermissionSet) As IsolatedStoragePermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Security::Permissions::IsolatedStoragePermission ^ GetPermission(System::Security::PermissionSet ^ ps);" />
+      <MemberSignature Language="F#" Value="override this.GetPermission : System.Security.PermissionSet -&gt; System.Security.Permissions.IsolatedStoragePermission" Usage="isolatedStorageFile.GetPermission ps" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1416,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStore (scope As IsolatedStorageScope, applicationIdentity As Object) As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetStore(System::IO::IsolatedStorage::IsolatedStorageScope scope, System::Object ^ applicationIdentity);" />
+      <MemberSignature Language="F#" Value="static member GetStore : System.IO.IsolatedStorage.IsolatedStorageScope * obj -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore (scope, applicationIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1482,6 +1509,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStore (scope As IsolatedStorageScope, applicationEvidenceType As Type) As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetStore(System::IO::IsolatedStorage::IsolatedStorageScope scope, Type ^ applicationEvidenceType);" />
+      <MemberSignature Language="F#" Value="static member GetStore : System.IO.IsolatedStorage.IsolatedStorageScope * Type -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore (scope, applicationEvidenceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1548,6 +1576,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStore (scope As IsolatedStorageScope, domainIdentity As Object, assemblyIdentity As Object) As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetStore(System::IO::IsolatedStorage::IsolatedStorageScope scope, System::Object ^ domainIdentity, System::Object ^ assemblyIdentity);" />
+      <MemberSignature Language="F#" Value="static member GetStore : System.IO.IsolatedStorage.IsolatedStorageScope * obj * obj -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore (scope, domainIdentity, assemblyIdentity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1621,6 +1650,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStore (scope As IsolatedStorageScope, domainEvidenceType As Type, assemblyEvidenceType As Type) As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetStore(System::IO::IsolatedStorage::IsolatedStorageScope scope, Type ^ domainEvidenceType, Type ^ assemblyEvidenceType);" />
+      <MemberSignature Language="F#" Value="static member GetStore : System.IO.IsolatedStorage.IsolatedStorageScope * Type * Type -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore (scope, domainEvidenceType, assemblyEvidenceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1704,6 +1734,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore(System.IO.IsolatedStorage.IsolatedStorageScope,System.Security.Policy.Evidence,System.Type,System.Security.Policy.Evidence,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStore (scope As IsolatedStorageScope, domainEvidence As Evidence, domainEvidenceType As Type, assemblyEvidence As Evidence, assemblyEvidenceType As Type) As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetStore(System::IO::IsolatedStorage::IsolatedStorageScope scope, System::Security::Policy::Evidence ^ domainEvidence, Type ^ domainEvidenceType, System::Security::Policy::Evidence ^ assemblyEvidence, Type ^ assemblyEvidenceType);" />
+      <MemberSignature Language="F#" Value="static member GetStore : System.IO.IsolatedStorage.IsolatedStorageScope * System.Security.Policy.Evidence * Type * System.Security.Policy.Evidence * Type -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetStore (scope, domainEvidence, domainEvidenceType, assemblyEvidence, assemblyEvidenceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1775,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUserStoreForApplication () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetUserStoreForApplication();" />
+      <MemberSignature Language="F#" Value="static member GetUserStoreForApplication : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1833,6 +1865,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUserStoreForAssembly () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetUserStoreForAssembly();" />
+      <MemberSignature Language="F#" Value="static member GetUserStoreForAssembly : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1888,6 +1921,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUserStoreForDomain () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetUserStoreForDomain();" />
+      <MemberSignature Language="F#" Value="static member GetUserStoreForDomain : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1962,6 +1996,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForSite" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUserStoreForSite () As IsolatedStorageFile" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::IsolatedStorage::IsolatedStorageFile ^ GetUserStoreForSite();" />
+      <MemberSignature Language="F#" Value="static member GetUserStoreForSite : unit -&gt; System.IO.IsolatedStorage.IsolatedStorageFile" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForSite " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2005,6 +2040,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IncreaseQuotaTo (newQuotaSize As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IncreaseQuotaTo(long newQuotaSize);" />
+      <MemberSignature Language="F#" Value="override this.IncreaseQuotaTo : int64 -&gt; bool" Usage="isolatedStorageFile.IncreaseQuotaTo newQuotaSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2072,6 +2108,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2115,6 +2152,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaximumSize As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::UInt64 MaximumSize { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumSize : uint64" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2173,6 +2211,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveDirectory (sourceDirectoryName As String, destinationDirectoryName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationDirectoryName);" />
+      <MemberSignature Language="F#" Value="member this.MoveDirectory : string * string -&gt; unit" Usage="isolatedStorageFile.MoveDirectory (sourceDirectoryName, destinationDirectoryName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2241,6 +2280,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveFile (sourceFileName As String, destinationFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveFile(System::String ^ sourceFileName, System::String ^ destinationFileName);" />
+      <MemberSignature Language="F#" Value="member this.MoveFile : string * string -&gt; unit" Usage="isolatedStorageFile.MoveFile (sourceFileName, destinationFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2311,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile (path As String, mode As FileMode) As IsolatedStorageFileStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::IsolatedStorage::IsolatedStorageFileStream ^ OpenFile(System::String ^ path, System::IO::FileMode mode);" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : string * System.IO.FileMode -&gt; System.IO.IsolatedStorage.IsolatedStorageFileStream" Usage="isolatedStorageFile.OpenFile (path, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2371,6 +2412,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile (path As String, mode As FileMode, access As FileAccess) As IsolatedStorageFileStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::IsolatedStorage::IsolatedStorageFileStream ^ OpenFile(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : string * System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.IsolatedStorage.IsolatedStorageFileStream" Usage="isolatedStorageFile.OpenFile (path, mode, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2433,6 +2475,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile (path As String, mode As FileMode, access As FileAccess, share As FileShare) As IsolatedStorageFileStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::IsolatedStorage::IsolatedStorageFileStream ^ OpenFile(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share);" />
+      <MemberSignature Language="F#" Value="member this.OpenFile : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare -&gt; System.IO.IsolatedStorage.IsolatedStorageFileStream" Usage="isolatedStorageFile.OpenFile (path, mode, access, share)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2497,6 +2540,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.Quota" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Quota As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Quota { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Quota : int64" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.Quota" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2548,6 +2592,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove();" />
+      <MemberSignature Language="F#" Value="override this.Remove : unit -&gt; unit" Usage="isolatedStorageFile.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2600,6 +2645,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.IsolatedStorageFile.Remove(System.IO.IsolatedStorage.IsolatedStorageScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Remove (scope As IsolatedStorageScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Remove(System::IO::IsolatedStorage::IsolatedStorageScope scope);" />
+      <MemberSignature Language="F#" Value="static member Remove : System.IO.IsolatedStorage.IsolatedStorageScope -&gt; unit" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.Remove scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2647,6 +2693,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UsedSize As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long UsedSize { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsedSize : int64" Usage="System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

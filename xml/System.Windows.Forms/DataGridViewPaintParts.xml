@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewPaintParts" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewPaintParts" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewPaintParts" />
+  <TypeSignature Language="F#" Value="type DataGridViewPaintParts = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 127" Usage="System.Windows.Forms.DataGridViewPaintParts.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.Background" />
       <MemberSignature Language="VB.NET" Value="Background" />
       <MemberSignature Language="C++ CLI" Value="Background" />
+      <MemberSignature Language="F#" Value="Background = 1" Usage="System.Windows.Forms.DataGridViewPaintParts.Background" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.Border" />
       <MemberSignature Language="VB.NET" Value="Border" />
       <MemberSignature Language="C++ CLI" Value="Border" />
+      <MemberSignature Language="F#" Value="Border = 2" Usage="System.Windows.Forms.DataGridViewPaintParts.Border" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.ContentBackground" />
       <MemberSignature Language="VB.NET" Value="ContentBackground" />
       <MemberSignature Language="C++ CLI" Value="ContentBackground" />
+      <MemberSignature Language="F#" Value="ContentBackground = 4" Usage="System.Windows.Forms.DataGridViewPaintParts.ContentBackground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.ContentForeground" />
       <MemberSignature Language="VB.NET" Value="ContentForeground" />
       <MemberSignature Language="C++ CLI" Value="ContentForeground" />
+      <MemberSignature Language="F#" Value="ContentForeground = 8" Usage="System.Windows.Forms.DataGridViewPaintParts.ContentForeground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.ErrorIcon" />
       <MemberSignature Language="VB.NET" Value="ErrorIcon" />
       <MemberSignature Language="C++ CLI" Value="ErrorIcon" />
+      <MemberSignature Language="F#" Value="ErrorIcon = 16" Usage="System.Windows.Forms.DataGridViewPaintParts.ErrorIcon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.Focus" />
       <MemberSignature Language="VB.NET" Value="Focus" />
       <MemberSignature Language="C++ CLI" Value="Focus" />
+      <MemberSignature Language="F#" Value="Focus = 32" Usage="System.Windows.Forms.DataGridViewPaintParts.Focus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewPaintParts.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewPaintParts.SelectionBackground" />
       <MemberSignature Language="VB.NET" Value="SelectionBackground" />
       <MemberSignature Language="C++ CLI" Value="SelectionBackground" />
+      <MemberSignature Language="F#" Value="SelectionBackground = 64" Usage="System.Windows.Forms.DataGridViewPaintParts.SelectionBackground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

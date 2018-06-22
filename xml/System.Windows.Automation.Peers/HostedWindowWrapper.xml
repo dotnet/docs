@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.HostedWindowWrapper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostedWindowWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostedWindowWrapper sealed" />
+  <TypeSignature Language="F#" Value="type HostedWindowWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HostedWindowWrapper.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hwnd As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HostedWindowWrapper(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.HostedWindowWrapper : nativeint -&gt; System.Windows.Automation.Peers.HostedWindowWrapper" Usage="new System.Windows.Automation.Peers.HostedWindowWrapper hwnd" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

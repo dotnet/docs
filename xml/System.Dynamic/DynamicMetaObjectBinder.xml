@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DynamicMetaObjectBinder&#xA;Inherits CallSiteBinder" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicMetaObjectBinder abstract : System::Runtime::CompilerServices::CallSiteBinder" />
+  <TypeSignature Language="F#" Value="type DynamicMetaObjectBinder = class&#xA;    inherit CallSiteBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="dynamicMetaObjectBinder.Bind (target, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (args As Object(), parameters As ReadOnlyCollection(Of ParameterExpression), returnLabel As LabelTarget) As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::Expressions::Expression ^ Bind(cli::array &lt;System::Object ^&gt; ^ args, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ parameters, System::Linq::Expressions::LabelTarget ^ returnLabel);" />
+      <MemberSignature Language="F#" Value="override this.Bind : obj[] * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt; * System.Linq.Expressions.LabelTarget -&gt; System.Linq.Expressions.Expression" Usage="dynamicMetaObjectBinder.Bind (args, parameters, returnLabel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -175,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Defer (ParamArray args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ Defer(... cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.Defer : System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="dynamicMetaObjectBinder.Defer args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -219,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Defer (target As DynamicMetaObject, ParamArray args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ Defer(System::Dynamic::DynamicMetaObject ^ target, ... cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.Defer : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="dynamicMetaObjectBinder.Defer (target, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -264,6 +269,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.Expression GetUpdateExpression(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ GetUpdateExpression(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetUpdateExpression : Type -&gt; System.Linq.Expressions.Expression" Usage="dynamicMetaObjectBinder.GetUpdateExpression type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -302,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.DynamicMetaObjectBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.DynamicMetaObjectBinder.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

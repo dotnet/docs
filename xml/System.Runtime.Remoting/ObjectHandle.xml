@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.ObjectHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectHandle&#xA;Inherits MarshalByRefObject&#xA;Implements IObjectHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectHandle : MarshalByRefObject, System::Runtime::Remoting::IObjectHandle" />
+  <TypeSignature Language="F#" Value="type ObjectHandle = class&#xA;    inherit MarshalByRefObject&#xA;    interface IObjectHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjectHandle.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectHandle(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.ObjectHandle : obj -&gt; System.Runtime.Remoting.ObjectHandle" Usage="new System.Runtime.Remoting.ObjectHandle o" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjectHandle.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="objectHandle.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.ObjectHandle.Unwrap" />
       <MemberSignature Language="VB.NET" Value="Public Function Unwrap () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Unwrap();" />
+      <MemberSignature Language="F#" Value="abstract member Unwrap : unit -&gt; obj&#xA;override this.Unwrap : unit -&gt; obj" Usage="objectHandle.Unwrap " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.IObjectHandle.Unwrap</InterfaceMember>

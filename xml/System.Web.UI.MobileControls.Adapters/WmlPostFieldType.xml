@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />
   <TypeSignature Language="VB.NET" Value="Public Enum WmlPostFieldType" />
   <TypeSignature Language="C++ CLI" Value="public enum class WmlPostFieldType" />
+  <TypeSignature Language="F#" Value="type WmlPostFieldType = " />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Raw" />
       <MemberSignature Language="VB.NET" Value="Raw" />
       <MemberSignature Language="C++ CLI" Value="Raw" />
+      <MemberSignature Language="F#" Value="Raw = 3" Usage="System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Submit" />
       <MemberSignature Language="VB.NET" Value="Submit" />
       <MemberSignature Language="C++ CLI" Value="Submit" />
+      <MemberSignature Language="F#" Value="Submit = 1" Usage="System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Submit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Variable" />
       <MemberSignature Language="VB.NET" Value="Variable" />
       <MemberSignature Language="C++ CLI" Value="Variable" />
+      <MemberSignature Language="F#" Value="Variable = 2" Usage="System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Variable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

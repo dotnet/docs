@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StorageInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class StorageInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class StorageInfo" />
+  <TypeSignature Language="F#" Value="type StorageInfo = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateStream (name As String) As StreamInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ CreateStream(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.CreateStream : string -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.CreateStream name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo CreateStream(string name, valuetype System.IO.Packaging.CompressionOption compressionOption, valuetype System.IO.Packaging.EncryptionOption encryptionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String,System.IO.Packaging.CompressionOption,System.IO.Packaging.EncryptionOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ CreateStream(System::String ^ name, System::IO::Packaging::CompressionOption compressionOption, System::IO::Packaging::EncryptionOption encryptionOption);" />
+      <MemberSignature Language="F#" Value="member this.CreateStream : string * System.IO.Packaging.CompressionOption * System.IO.Packaging.EncryptionOption -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.CreateStream (name, compressionOption, encryptionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSubStorage (name As String) As StorageInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StorageInfo ^ CreateSubStorage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.CreateSubStorage : string -&gt; System.IO.Packaging.StorageInfo" Usage="storageInfo.CreateSubStorage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteStream (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteStream(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.DeleteStream : string -&gt; unit" Usage="storageInfo.DeleteStream name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubStorage (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubStorage(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubStorage : string -&gt; unit" Usage="storageInfo.DeleteSubStorage name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreamInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreamInfo (name As String) As StreamInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ GetStreamInfo(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetStreamInfo : string -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.GetStreamInfo name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreams" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStreams () As StreamInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Packaging::StreamInfo ^&gt; ^ GetStreams();" />
+      <MemberSignature Language="F#" Value="member this.GetStreams : unit -&gt; System.IO.Packaging.StreamInfo[]" Usage="storageInfo.GetStreams " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorageInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSubStorageInfo (name As String) As StorageInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StorageInfo ^ GetSubStorageInfo(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetSubStorageInfo : string -&gt; System.IO.Packaging.StorageInfo" Usage="storageInfo.GetSubStorageInfo name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorages" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSubStorages () As StorageInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Packaging::StorageInfo ^&gt; ^ GetSubStorages();" />
+      <MemberSignature Language="F#" Value="member this.GetSubStorages : unit -&gt; System.IO.Packaging.StorageInfo[]" Usage="storageInfo.GetSubStorages " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StorageInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.Packaging.StorageInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.StreamExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function StreamExists (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StreamExists(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.StreamExists : string -&gt; bool" Usage="storageInfo.StreamExists name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.SubStorageExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SubStorageExists (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SubStorageExists(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.SubStorageExists : string -&gt; bool" Usage="storageInfo.SubStorageExists name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

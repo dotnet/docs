@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.IDeviceContext" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDeviceContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDeviceContext : IDisposable" />
+  <TypeSignature Language="F#" Value="type IDeviceContext = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.GetHdc" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHdc () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHdc();" />
+      <MemberSignature Language="F#" Value="abstract member GetHdc : unit -&gt; nativeint" Usage="iDeviceContext.GetHdc " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.ReleaseHdc" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHdc ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseHdc();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHdc : unit -&gt; unit" Usage="iDeviceContext.ReleaseHdc " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

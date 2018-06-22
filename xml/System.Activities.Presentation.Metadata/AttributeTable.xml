@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeTable" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeTable sealed" />
+  <TypeSignature Language="F#" Value="type AttributeTable = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Metadata.AttributeTable.AttributedTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributedTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ AttributedTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributedTypes : seq&lt;Type&gt;" Usage="System.Activities.Presentation.Metadata.AttributeTable.AttributedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.ContainsAttributes(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsAttributes(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.ContainsAttributes : Type -&gt; bool" Usage="attributeTable.ContainsAttributes type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type -&gt; System.Collections.IEnumerable" Usage="attributeTable.GetCustomAttributes type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, descriptor As MemberDescriptor) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::ComponentModel::MemberDescriptor ^ descriptor);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type * System.ComponentModel.MemberDescriptor -&gt; System.Collections.IEnumerable" Usage="attributeTable.GetCustomAttributes (ownerType, descriptor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, member As MemberInfo) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::Reflection::MemberInfo ^ member);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type * System.Reflection.MemberInfo -&gt; System.Collections.IEnumerable" Usage="attributeTable.GetCustomAttributes (ownerType, member)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, memberName As String) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::String ^ memberName);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type * string -&gt; System.Collections.IEnumerable" Usage="attributeTable.GetCustomAttributes (ownerType, memberName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, dp As DependencyProperty) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::Windows::DependencyProperty ^ dp);" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type * System.Windows.DependencyProperty -&gt; System.Collections.IEnumerable" Usage="attributeTable.GetCustomAttributes (ownerType, dp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

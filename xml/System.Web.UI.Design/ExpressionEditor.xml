@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionEditor abstract" />
+  <TypeSignature Language="F#" Value="type ExpressionEditor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EvaluateExpression (expression As String, parseTimeData As Object, propertyType As Type, serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ EvaluateExpression(System::String ^ expression, System::Object ^ parseTimeData, Type ^ propertyType, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateExpression : string * obj * Type * IServiceProvider -&gt; obj" Usage="expressionEditor.EvaluateExpression (expression, parseTimeData, propertyType, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExpressionEditor.ExpressionPrefix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionPrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionPrefix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionPrefix : string" Usage="System.Web.UI.Design.ExpressionEditor.ExpressionPrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditor(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetExpressionEditor (expressionPrefix As String, serviceProvider As IServiceProvider) As ExpressionEditor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ExpressionEditor ^ GetExpressionEditor(System::String ^ expressionPrefix, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="static member GetExpressionEditor : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditor" Usage="System.Web.UI.Design.ExpressionEditor.GetExpressionEditor (expressionPrefix, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -245,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditor(System.Type,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetExpressionEditor (expressionBuilderType As Type, serviceProvider As IServiceProvider) As ExpressionEditor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Design::ExpressionEditor ^ GetExpressionEditor(Type ^ expressionBuilderType, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="static member GetExpressionEditor : Type * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditor" Usage="System.Web.UI.Design.ExpressionEditor.GetExpressionEditor (expressionBuilderType, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -294,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetExpressionEditorSheet (expression As String, serviceProvider As IServiceProvider) As ExpressionEditorSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Design::ExpressionEditorSheet ^ GetExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="abstract member GetExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet&#xA;override this.GetExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet" Usage="expressionEditor.GetExpressionEditorSheet (expression, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

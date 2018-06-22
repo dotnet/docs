@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UrlUtility" />
   <TypeSignature Language="VB.NET" Value="Public Class UrlUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlUtility abstract sealed" />
+  <TypeSignature Language="F#" Value="type UrlUtility = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UrlUtility.UrlDecode(System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (s As String, e As Encoding) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.ServiceModel.Channels.UrlUtility.UrlDecode (s, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UrlUtility.UrlEncode(System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (s As String, e As Encoding) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.ServiceModel.Channels.UrlUtility.UrlEncode (s, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

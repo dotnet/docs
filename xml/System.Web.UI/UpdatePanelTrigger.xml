@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelTrigger" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UpdatePanelTrigger" />
   <TypeSignature Language="C++ CLI" Value="public ref class UpdatePanelTrigger abstract" />
+  <TypeSignature Language="F#" Value="type UpdatePanelTrigger = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTrigger.HasTriggered" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function HasTriggered () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool HasTriggered();" />
+      <MemberSignature Language="F#" Value="abstract member HasTriggered : unit -&gt; bool" Usage="updatePanelTrigger.HasTriggered " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanelTrigger.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="updatePanelTrigger.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanelTrigger.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As UpdatePanel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::UpdatePanel ^ Owner { System::Web::UI::UpdatePanel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Web.UI.UpdatePanel" Usage="System.Web.UI.UpdatePanelTrigger.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

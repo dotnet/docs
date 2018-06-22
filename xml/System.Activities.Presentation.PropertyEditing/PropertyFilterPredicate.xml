@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyFilterPredicate" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyFilterPredicate" />
+  <TypeSignature Language="F#" Value="type PropertyFilterPredicate = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (matchText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyFilterPredicate(System::String ^ matchText);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate : string -&gt; System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate" Usage="new System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate matchText" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate.Match(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Match (target As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Match(System::String ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member Match : string -&gt; bool&#xA;override this.Match : string -&gt; bool" Usage="propertyFilterPredicate.Match target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate.MatchText" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property MatchText As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ MatchText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchText : string" Usage="System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate.MatchText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

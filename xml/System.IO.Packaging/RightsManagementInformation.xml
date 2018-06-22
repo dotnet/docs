@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.RightsManagementInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class RightsManagementInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class RightsManagementInformation" />
+  <TypeSignature Language="F#" Value="type RightsManagementInformation = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.RightsManagementInformation.CryptoProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property CryptoProvider As CryptoProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::CryptoProvider ^ CryptoProvider { System::Security::RightsManagement::CryptoProvider ^ get(); void set(System::Security::RightsManagement::CryptoProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CryptoProvider : System.Security.RightsManagement.CryptoProvider with get, set" Usage="System.IO.Packaging.RightsManagementInformation.CryptoProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.DeleteUseLicense(System.Security.RightsManagement.ContentUser)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteUseLicense (userKey As ContentUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteUseLicense(System::Security::RightsManagement::ContentUser ^ userKey);" />
+      <MemberSignature Language="F#" Value="member this.DeleteUseLicense : System.Security.RightsManagement.ContentUser -&gt; unit" Usage="rightsManagementInformation.DeleteUseLicense userKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.GetEmbeddedUseLicenses" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEmbeddedUseLicenses () As IDictionary(Of ContentUser, UseLicense)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::Security::RightsManagement::ContentUser ^, System::Security::RightsManagement::UseLicense ^&gt; ^ GetEmbeddedUseLicenses();" />
+      <MemberSignature Language="F#" Value="member this.GetEmbeddedUseLicenses : unit -&gt; System.Collections.Generic.IDictionary&lt;System.Security.RightsManagement.ContentUser, System.Security.RightsManagement.UseLicense&gt;" Usage="rightsManagementInformation.GetEmbeddedUseLicenses " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.LoadPublishLicense" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadPublishLicense () As PublishLicense" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::PublishLicense ^ LoadPublishLicense();" />
+      <MemberSignature Language="F#" Value="member this.LoadPublishLicense : unit -&gt; System.Security.RightsManagement.PublishLicense" Usage="rightsManagementInformation.LoadPublishLicense " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.LoadUseLicense(System.Security.RightsManagement.ContentUser)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadUseLicense (userKey As ContentUser) As UseLicense" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::UseLicense ^ LoadUseLicense(System::Security::RightsManagement::ContentUser ^ userKey);" />
+      <MemberSignature Language="F#" Value="member this.LoadUseLicense : System.Security.RightsManagement.ContentUser -&gt; System.Security.RightsManagement.UseLicense" Usage="rightsManagementInformation.LoadUseLicense userKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SavePublishLicense(class System.Security.RightsManagement.PublishLicense publishLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.SavePublishLicense(System.Security.RightsManagement.PublishLicense)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SavePublishLicense(System::Security::RightsManagement::PublishLicense ^ publishLicense);" />
+      <MemberSignature Language="F#" Value="member this.SavePublishLicense : System.Security.RightsManagement.PublishLicense -&gt; unit" Usage="rightsManagementInformation.SavePublishLicense publishLicense" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveUseLicense(class System.Security.RightsManagement.ContentUser userKey, class System.Security.RightsManagement.UseLicense useLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.RightsManagementInformation.SaveUseLicense(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveUseLicense(System::Security::RightsManagement::ContentUser ^ userKey, System::Security::RightsManagement::UseLicense ^ useLicense);" />
+      <MemberSignature Language="F#" Value="member this.SaveUseLicense : System.Security.RightsManagement.ContentUser * System.Security.RightsManagement.UseLicense -&gt; unit" Usage="rightsManagementInformation.SaveUseLicense (userKey, useLicense)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

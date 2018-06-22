@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentDesignerStateService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComponentDesignerStateService" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComponentDesignerStateService" />
+  <TypeSignature Language="F#" Value="type IComponentDesignerStateService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerStateService.GetState(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetState (component As IComponent, key As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetState(System::ComponentModel::IComponent ^ component, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetState : System.ComponentModel.IComponent * string -&gt; obj" Usage="iComponentDesignerStateService.GetState (component, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentDesignerStateService.SetState(System.ComponentModel.IComponent,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetState (component As IComponent, key As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetState(System::ComponentModel::IComponent ^ component, System::String ^ key, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetState : System.ComponentModel.IComponent * string * obj -&gt; unit" Usage="iComponentDesignerStateService.SetState (component, key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

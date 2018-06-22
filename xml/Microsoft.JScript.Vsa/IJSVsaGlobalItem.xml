@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaGlobalItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaGlobalItem&#xA;Implements IJSVsaItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IJSVsaGlobalItem : Microsoft::JScript::Vsa::IJSVsaItem" />
+  <TypeSignature Language="F#" Value="type IJSVsaGlobalItem = interface&#xA;    interface IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
       <MemberSignature Language="VB.NET" Value="Public Property ExposeMembers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExposeMembers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExposeMembers : bool with get, set" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeString {  void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeString : string" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

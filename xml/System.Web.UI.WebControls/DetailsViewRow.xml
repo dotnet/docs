@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewRow" />
   <TypeSignature Language="VB.NET" Value="Public Class DetailsViewRow&#xA;Inherits TableRow" />
   <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewRow : System::Web::UI::WebControls::TableRow" />
+  <TypeSignature Language="F#" Value="type DetailsViewRow = class&#xA;    inherit TableRow" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewRow(int rowIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DetailsViewRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.DetailsViewRow" Usage="new System.Web.UI.WebControls.DetailsViewRow (rowIndex, rowType, rowState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="detailsViewRow.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RowIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Web.UI.WebControls.DetailsViewRow.RowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowState As DataControlRowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowState RowState { System::Web::UI::WebControls::DataControlRowState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowState : System.Web.UI.WebControls.DataControlRowState" Usage="System.Web.UI.WebControls.DetailsViewRow.RowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RowType As DataControlRowType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlRowType RowType { System::Web::UI::WebControls::DataControlRowType get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowType : System.Web.UI.WebControls.DataControlRowType" Usage="System.Web.UI.WebControls.DetailsViewRow.RowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

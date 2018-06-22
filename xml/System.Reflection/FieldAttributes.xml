@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.FieldAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum FieldAttributes" />
   <TypeSignature Language="C++ CLI" Value="public enum class FieldAttributes" />
+  <TypeSignature Language="F#" Value="type FieldAttributes = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="C++ CLI" Value="Assembly" />
+      <MemberSignature Language="F#" Value="Assembly = 3" Usage="System.Reflection.FieldAttributes.Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FamANDAssem" />
       <MemberSignature Language="VB.NET" Value="FamANDAssem" />
       <MemberSignature Language="C++ CLI" Value="FamANDAssem" />
+      <MemberSignature Language="F#" Value="FamANDAssem = 2" Usage="System.Reflection.FieldAttributes.FamANDAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Family" />
       <MemberSignature Language="VB.NET" Value="Family" />
       <MemberSignature Language="C++ CLI" Value="Family" />
+      <MemberSignature Language="F#" Value="Family = 4" Usage="System.Reflection.FieldAttributes.Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FamORAssem" />
       <MemberSignature Language="VB.NET" Value="FamORAssem" />
       <MemberSignature Language="C++ CLI" Value="FamORAssem" />
+      <MemberSignature Language="F#" Value="FamORAssem = 5" Usage="System.Reflection.FieldAttributes.FamORAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.FieldAccessMask" />
       <MemberSignature Language="VB.NET" Value="FieldAccessMask" />
       <MemberSignature Language="C++ CLI" Value="FieldAccessMask" />
+      <MemberSignature Language="F#" Value="FieldAccessMask = 7" Usage="System.Reflection.FieldAttributes.FieldAccessMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasDefault" />
       <MemberSignature Language="VB.NET" Value="HasDefault" />
       <MemberSignature Language="C++ CLI" Value="HasDefault" />
+      <MemberSignature Language="F#" Value="HasDefault = 32768" Usage="System.Reflection.FieldAttributes.HasDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasFieldMarshal" />
       <MemberSignature Language="VB.NET" Value="HasFieldMarshal" />
       <MemberSignature Language="C++ CLI" Value="HasFieldMarshal" />
+      <MemberSignature Language="F#" Value="HasFieldMarshal = 4096" Usage="System.Reflection.FieldAttributes.HasFieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.HasFieldRVA" />
       <MemberSignature Language="VB.NET" Value="HasFieldRVA" />
       <MemberSignature Language="C++ CLI" Value="HasFieldRVA" />
+      <MemberSignature Language="F#" Value="HasFieldRVA = 256" Usage="System.Reflection.FieldAttributes.HasFieldRVA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.InitOnly" />
       <MemberSignature Language="VB.NET" Value="InitOnly" />
       <MemberSignature Language="C++ CLI" Value="InitOnly" />
+      <MemberSignature Language="F#" Value="InitOnly = 32" Usage="System.Reflection.FieldAttributes.InitOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -365,6 +375,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Literal" />
       <MemberSignature Language="VB.NET" Value="Literal" />
       <MemberSignature Language="C++ CLI" Value="Literal" />
+      <MemberSignature Language="F#" Value="Literal = 64" Usage="System.Reflection.FieldAttributes.Literal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -398,6 +409,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.NotSerialized" />
       <MemberSignature Language="VB.NET" Value="NotSerialized" />
       <MemberSignature Language="C++ CLI" Value="NotSerialized" />
+      <MemberSignature Language="F#" Value="NotSerialized = 128" Usage="System.Reflection.FieldAttributes.NotSerialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.PinvokeImpl" />
       <MemberSignature Language="VB.NET" Value="PinvokeImpl" />
       <MemberSignature Language="C++ CLI" Value="PinvokeImpl" />
+      <MemberSignature Language="F#" Value="PinvokeImpl = 8192" Usage="System.Reflection.FieldAttributes.PinvokeImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -464,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="C++ CLI" Value="Private" />
+      <MemberSignature Language="F#" Value="Private = 1" Usage="System.Reflection.FieldAttributes.Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -497,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.PrivateScope" />
       <MemberSignature Language="VB.NET" Value="PrivateScope" />
       <MemberSignature Language="C++ CLI" Value="PrivateScope" />
+      <MemberSignature Language="F#" Value="PrivateScope = 0" Usage="System.Reflection.FieldAttributes.PrivateScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -530,6 +545,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="C++ CLI" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 6" Usage="System.Reflection.FieldAttributes.Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -563,6 +579,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.ReservedMask" />
       <MemberSignature Language="VB.NET" Value="ReservedMask" />
       <MemberSignature Language="C++ CLI" Value="ReservedMask" />
+      <MemberSignature Language="F#" Value="ReservedMask = 38144" Usage="System.Reflection.FieldAttributes.ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -592,6 +609,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.RTSpecialName" />
       <MemberSignature Language="VB.NET" Value="RTSpecialName" />
       <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
+      <MemberSignature Language="F#" Value="RTSpecialName = 1024" Usage="System.Reflection.FieldAttributes.RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -625,6 +643,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.SpecialName" />
       <MemberSignature Language="VB.NET" Value="SpecialName" />
       <MemberSignature Language="C++ CLI" Value="SpecialName" />
+      <MemberSignature Language="F#" Value="SpecialName = 512" Usage="System.Reflection.FieldAttributes.SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -658,6 +677,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.FieldAttributes.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="C++ CLI" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 16" Usage="System.Reflection.FieldAttributes.Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

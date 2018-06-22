@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.AutoResizedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AutoResizedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutoResizedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AutoResizedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.AutoResizedEventArgs.#ctor(System.Windows.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AutoResizedEventArgs(System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="new System.Windows.AutoResizedEventArgs : System.Windows.Size -&gt; System.Windows.AutoResizedEventArgs" Usage="new System.Windows.AutoResizedEventArgs size" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.AutoResizedEventArgs.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size Size { System::Windows::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Windows.Size" Usage="System.Windows.AutoResizedEventArgs.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipesAclExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module PipesAclExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class PipesAclExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type PipesAclExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipesAclExtensions.GetAccessControl(System.IO.Pipes.PipeStream)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAccessControl (stream As PipeStream) As PipeSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Pipes::PipeSecurity ^ GetAccessControl(System::IO::Pipes::PipeStream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member GetAccessControl : System.IO.Pipes.PipeStream -&gt; System.IO.Pipes.PipeSecurity" Usage="System.IO.Pipes.PipesAclExtensions.GetAccessControl stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.IO.Pipes.PipeStream stream, class System.IO.Pipes.PipeSecurity pipeSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipesAclExtensions.SetAccessControl(System.IO.Pipes.PipeStream,System.IO.Pipes.PipeSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetAccessControl(System::IO::Pipes::PipeStream ^ stream, System::IO::Pipes::PipeSecurity ^ pipeSecurity);" />
+      <MemberSignature Language="F#" Value="static member SetAccessControl : System.IO.Pipes.PipeStream * System.IO.Pipes.PipeSecurity -&gt; unit" Usage="System.IO.Pipes.PipesAclExtensions.SetAccessControl (stream, pipeSecurity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>

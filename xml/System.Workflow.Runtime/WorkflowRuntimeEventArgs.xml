@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowRuntimeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowRuntimeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowRuntimeEventArgs.IsStarted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStarted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStarted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsStarted : bool" Usage="System.Workflow.Runtime.WorkflowRuntimeEventArgs.IsStarted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

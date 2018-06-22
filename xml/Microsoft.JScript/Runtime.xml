@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Runtime" />
   <TypeSignature Language="VB.NET" Value="Public Class Runtime" />
   <TypeSignature Language="C++ CLI" Value="public ref class Runtime abstract sealed" />
+  <TypeSignature Language="F#" Value="type Runtime = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.DoubleToInt64(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DoubleToInt64 (val As Double) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long DoubleToInt64(double val);" />
+      <MemberSignature Language="F#" Value="static member DoubleToInt64 : double -&gt; int64" Usage="Microsoft.JScript.Runtime.DoubleToInt64 val" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (v1 As Object, v2 As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ v1, System::Object ^ v2);" />
+      <MemberSignature Language="F#" Value="static member Equals : obj * obj -&gt; bool" Usage="Microsoft.JScript.Runtime.Equals (v1, v2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Runtime.UncheckedDecimalToInt64(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UncheckedDecimalToInt64 (val As Decimal) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long UncheckedDecimalToInt64(System::Decimal val);" />
+      <MemberSignature Language="F#" Value="static member UncheckedDecimalToInt64 : decimal -&gt; int64" Usage="Microsoft.JScript.Runtime.UncheckedDecimalToInt64 val" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

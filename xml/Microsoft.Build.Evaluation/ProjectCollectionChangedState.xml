@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollectionChangedState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProjectCollectionChangedState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ProjectCollectionChangedState" />
+  <TypeSignature Language="F#" Value="type ProjectCollectionChangedState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.DefaultToolsVersion" />
       <MemberSignature Language="VB.NET" Value="DefaultToolsVersion" />
       <MemberSignature Language="C++ CLI" Value="DefaultToolsVersion" />
+      <MemberSignature Language="F#" Value="DefaultToolsVersion = 0" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.DefaultToolsVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.DisableMarkDirty" />
       <MemberSignature Language="VB.NET" Value="DisableMarkDirty" />
       <MemberSignature Language="C++ CLI" Value="DisableMarkDirty" />
+      <MemberSignature Language="F#" Value="DisableMarkDirty = 7" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.DisableMarkDirty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.GlobalProperties" />
       <MemberSignature Language="VB.NET" Value="GlobalProperties" />
       <MemberSignature Language="C++ CLI" Value="GlobalProperties" />
+      <MemberSignature Language="F#" Value="GlobalProperties = 3" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.GlobalProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.HostServices" />
       <MemberSignature Language="VB.NET" Value="HostServices" />
       <MemberSignature Language="C++ CLI" Value="HostServices" />
+      <MemberSignature Language="F#" Value="HostServices = 6" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.HostServices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -98,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.IsBuildEnabled" />
       <MemberSignature Language="VB.NET" Value="IsBuildEnabled" />
       <MemberSignature Language="C++ CLI" Value="IsBuildEnabled" />
+      <MemberSignature Language="F#" Value="IsBuildEnabled = 4" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.IsBuildEnabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -117,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.Loggers" />
       <MemberSignature Language="VB.NET" Value="Loggers" />
       <MemberSignature Language="C++ CLI" Value="Loggers" />
+      <MemberSignature Language="F#" Value="Loggers = 2" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.Loggers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -136,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.OnlyLogCriticalEvents" />
       <MemberSignature Language="VB.NET" Value="OnlyLogCriticalEvents" />
       <MemberSignature Language="C++ CLI" Value="OnlyLogCriticalEvents" />
+      <MemberSignature Language="F#" Value="OnlyLogCriticalEvents = 5" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.OnlyLogCriticalEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.SkipEvaluation" />
       <MemberSignature Language="VB.NET" Value="SkipEvaluation" />
       <MemberSignature Language="C++ CLI" Value="SkipEvaluation" />
+      <MemberSignature Language="F#" Value="SkipEvaluation = 8" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.SkipEvaluation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.Toolsets" />
       <MemberSignature Language="VB.NET" Value="Toolsets" />
       <MemberSignature Language="C++ CLI" Value="Toolsets" />
+      <MemberSignature Language="F#" Value="Toolsets = 1" Usage="Microsoft.Build.Evaluation.ProjectCollectionChangedState.Toolsets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

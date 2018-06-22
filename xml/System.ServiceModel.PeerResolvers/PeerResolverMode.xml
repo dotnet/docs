@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerResolverMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PeerResolverMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PeerResolverMode" />
+  <TypeSignature Language="F#" Value="type PeerResolverMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerResolverMode.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.ServiceModel.PeerResolvers.PeerResolverMode.Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerResolverMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 2" Usage="System.ServiceModel.PeerResolvers.PeerResolverMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerResolverMode.Pnrp" />
       <MemberSignature Language="VB.NET" Value="Pnrp" />
       <MemberSignature Language="C++ CLI" Value="Pnrp" />
+      <MemberSignature Language="F#" Value="Pnrp = 1" Usage="System.ServiceModel.PeerResolvers.PeerResolverMode.Pnrp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

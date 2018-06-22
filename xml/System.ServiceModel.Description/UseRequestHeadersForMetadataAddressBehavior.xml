@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class UseRequestHeadersForMetadataAddressBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class UseRequestHeadersForMetadataAddressBehavior : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type UseRequestHeadersForMetadataAddressBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.DefaultPortsByScheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultPortsByScheme As IDictionary(Of String, Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, int&gt; ^ DefaultPortsByScheme { System::Collections::Generic::IDictionary&lt;System::String ^, int&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPortsByScheme : System.Collections.Generic.IDictionary&lt;string, int&gt;" Usage="System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.DefaultPortsByScheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

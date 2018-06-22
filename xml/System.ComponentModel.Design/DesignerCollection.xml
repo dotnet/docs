@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type DesignerCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCollection.#ctor(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designers As IList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerCollection(System::Collections::IList ^ designers);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerCollection : System.Collections.IList -&gt; System.ComponentModel.Design.DesignerCollection" Usage="new System.ComponentModel.Design.DesignerCollection designers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCollection.#ctor(System.ComponentModel.Design.IDesignerHost[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designers As IDesignerHost())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerCollection(cli::array &lt;System::ComponentModel::Design::IDesignerHost ^&gt; ^ designers);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerCollection : System.ComponentModel.Design.IDesignerHost[] -&gt; System.ComponentModel.Design.DesignerCollection" Usage="new System.ComponentModel.Design.DesignerCollection designers" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ComponentModel.Design.DesignerCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="designerCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As IDesignerHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::IDesignerHost ^ default[int] { System::ComponentModel::Design::IDesignerHost ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ComponentModel.Design.IDesignerHost" Usage="System.ComponentModel.Design.DesignerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.DesignerCollection.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.DesignerCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.DesignerCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

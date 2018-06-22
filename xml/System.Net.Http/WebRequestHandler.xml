@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.WebRequestHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class WebRequestHandler&#xA;Inherits HttpClientHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebRequestHandler : System::Net::Http::HttpClientHandler" />
+  <TypeSignature Language="F#" Value="type WebRequestHandler = class&#xA;    inherit HttpClientHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.AllowPipelining" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPipelining As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPipelining { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPipelining : bool with get, set" Usage="System.Net.Http.WebRequestHandler.AllowPipelining" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.AuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationLevel As AuthenticationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::AuthenticationLevel AuthenticationLevel { System::Net::Security::AuthenticationLevel get(); void set(System::Net::Security::AuthenticationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationLevel : System.Net.Security.AuthenticationLevel with get, set" Usage="System.Net.Http.WebRequestHandler.AuthenticationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property CachePolicy As RequestCachePolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.Http.WebRequestHandler.CachePolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection" Usage="System.Net.Http.WebRequestHandler.ClientCertificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ContinueTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinueTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ContinueTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueTimeout : TimeSpan with get, set" Usage="System.Net.Http.WebRequestHandler.ContinueTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.Net.Http.WebRequestHandler.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.MaxResponseHeadersLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResponseHeadersLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResponseHeadersLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseHeadersLength : int with get, set" Usage="System.Net.Http.WebRequestHandler.MaxResponseHeadersLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ReadWriteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadWriteTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadWriteTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadWriteTimeout : int with get, set" Usage="System.Net.Http.WebRequestHandler.ReadWriteTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerCertificateValidationCallback As RemoteCertificateValidationCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::RemoteCertificateValidationCallback ^ ServerCertificateValidationCallback { System::Net::Security::RemoteCertificateValidationCallback ^ get(); void set(System::Net::Security::RemoteCertificateValidationCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServerCertificateValidationCallback : System.Net.Security.RemoteCertificateValidationCallback with get, set" Usage="System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
@@ -295,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.UnsafeAuthenticatedConnectionSharing" />
       <MemberSignature Language="VB.NET" Value="Public Property UnsafeAuthenticatedConnectionSharing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeAuthenticatedConnectionSharing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UnsafeAuthenticatedConnectionSharing : bool with get, set" Usage="System.Net.Http.WebRequestHandler.UnsafeAuthenticatedConnectionSharing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http.WebRequest</AssemblyName>

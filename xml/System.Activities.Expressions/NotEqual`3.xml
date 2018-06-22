@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.NotEqual`3" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NotEqual(Of TLeft, TRight, TResult)&#xA;Inherits CodeActivity(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TLeft, typename TRight, typename TResult&gt;&#xA;public ref class NotEqual sealed : System::Activities::CodeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type NotEqual&lt;'Left, 'Right, 'Result&gt; = class&#xA;    inherit CodeActivity&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NotEqual`3.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="notEqual.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NotEqual`3.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Result" Usage="notEqual.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.NotEqual`3.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As InArgument(Of TLeft)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TLeft&gt; ^ Left { System::Activities::InArgument&lt;TLeft&gt; ^ get(); void set(System::Activities::InArgument&lt;TLeft&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : System.Activities.InArgument&lt;'Left&gt; with get, set" Usage="System.Activities.Expressions.NotEqual&lt;'Left, 'Right, 'Result&gt;.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.NotEqual`3.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As InArgument(Of TRight)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TRight&gt; ^ Right { System::Activities::InArgument&lt;TRight&gt; ^ get(); void set(System::Activities::InArgument&lt;TRight&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Right : System.Activities.InArgument&lt;'Right&gt; with get, set" Usage="System.Activities.Expressions.NotEqual&lt;'Left, 'Right, 'Result&gt;.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

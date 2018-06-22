@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.MarkupExtension" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarkupExtension abstract" />
+  <TypeSignature Language="F#" Value="type MarkupExtension = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.MarkupExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ProvideValue (provider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ProvideValue(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member ProvideValue : IServiceProvider -&gt; obj" Usage="markupExtension.ProvideValue provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

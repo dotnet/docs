@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.IteratorResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum IteratorResult" />
   <TypeSignature Language="C++ CLI" Value="public enum class IteratorResult" />
+  <TypeSignature Language="F#" Value="type IteratorResult = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" />
       <MemberSignature Language="VB.NET" Value="HaveCurrentNode" />
       <MemberSignature Language="C++ CLI" Value="HaveCurrentNode" />
+      <MemberSignature Language="F#" Value="HaveCurrentNode = 2" Usage="System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" />
       <MemberSignature Language="VB.NET" Value="NeedInputNode" />
       <MemberSignature Language="C++ CLI" Value="NeedInputNode" />
+      <MemberSignature Language="F#" Value="NeedInputNode = 1" Usage="System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" />
       <MemberSignature Language="VB.NET" Value="NoMoreNodes" />
       <MemberSignature Language="C++ CLI" Value="NoMoreNodes" />
+      <MemberSignature Language="F#" Value="NoMoreNodes = 0" Usage="System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

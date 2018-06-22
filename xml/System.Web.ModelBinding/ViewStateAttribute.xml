@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ViewStateAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewStateAttribute&#xA;Inherits ValueProviderSourceAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewStateAttribute sealed : System::Web::ModelBinding::ValueProviderSourceAttribute" />
+  <TypeSignature Language="F#" Value="type ViewStateAttribute = class&#xA;    inherit ValueProviderSourceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ViewStateAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewStateAttribute(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ViewStateAttribute : string -&gt; System.Web.ModelBinding.ViewStateAttribute" Usage="new System.Web.ModelBinding.ViewStateAttribute key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ViewStateAttribute.GetModelName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetModelName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetModelName();" />
+      <MemberSignature Language="F#" Value="override this.GetModelName : unit -&gt; string" Usage="viewStateAttribute.GetModelName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ViewStateAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IValueProvider ^ GetValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
+      <MemberSignature Language="F#" Value="override this.GetValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.IValueProvider" Usage="viewStateAttribute.GetValueProvider modelBindingExecutionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ViewStateAttribute.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : string" Usage="System.Web.ModelBinding.ViewStateAttribute.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

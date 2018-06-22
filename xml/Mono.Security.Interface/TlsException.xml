@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.TlsException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TlsException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class TlsException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type TlsException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.Security.Interface.Alert alert) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.Alert)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::Alert ^ alert);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.Alert -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException alert" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As AlertDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::AlertDescription description);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.Security.Interface.Alert alert, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.Alert,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::Alert ^ alert, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.Alert * string -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException (alert, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As AlertDescription, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::AlertDescription description, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.AlertDescription * string -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException (description, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertLevel,Mono.Security.Interface.AlertDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As AlertLevel, description As AlertDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::AlertLevel level, Mono::Security::Interface::AlertDescription description);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.AlertLevel * Mono.Security.Interface.AlertDescription -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException (level, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As AlertDescription, format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TlsException(Mono::Security::Interface::AlertDescription description, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.TlsException : Mono.Security.Interface.AlertDescription * string * obj[] -&gt; Mono.Security.Interface.TlsException" Usage="new Mono.Security.Interface.TlsException (description, format, args)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.TlsException.Alert" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alert As Alert" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::Alert ^ Alert { Mono::Security::Interface::Alert ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Alert : Mono.Security.Interface.Alert" Usage="Mono.Security.Interface.TlsException.Alert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

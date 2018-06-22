@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ConstructorArgumentAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConstructorArgumentAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstructorArgumentAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ConstructorArgumentAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ConstructorArgumentAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argumentName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstructorArgumentAttribute(System::String ^ argumentName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ConstructorArgumentAttribute : string -&gt; System.Windows.Markup.ConstructorArgumentAttribute" Usage="new System.Windows.Markup.ConstructorArgumentAttribute argumentName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ArgumentName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArgumentName : string" Usage="System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.AppDomainHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class AppDomainHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppDomainHelper" />
+  <TypeSignature Language="F#" Value="type AppDomainHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.AppDomainHelper.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AppDomainHelper ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="appDomainHelper.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

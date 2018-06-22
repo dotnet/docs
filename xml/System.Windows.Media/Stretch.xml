@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Stretch" />
   <TypeSignature Language="VB.NET" Value="Public Enum Stretch" />
   <TypeSignature Language="C++ CLI" Value="public enum class Stretch" />
+  <TypeSignature Language="F#" Value="type Stretch = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@ Stretch values
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Stretch.Fill" />
       <MemberSignature Language="VB.NET" Value="Fill" />
       <MemberSignature Language="C++ CLI" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 1" Usage="System.Windows.Media.Stretch.Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +62,7 @@ Stretch values
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Stretch.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Media.Stretch.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +82,7 @@ Stretch values
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Stretch.Uniform" />
       <MemberSignature Language="VB.NET" Value="Uniform" />
       <MemberSignature Language="C++ CLI" Value="Uniform" />
+      <MemberSignature Language="F#" Value="Uniform = 2" Usage="System.Windows.Media.Stretch.Uniform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +102,7 @@ Stretch values
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Stretch.UniformToFill" />
       <MemberSignature Language="VB.NET" Value="UniformToFill" />
       <MemberSignature Language="C++ CLI" Value="UniformToFill" />
+      <MemberSignature Language="F#" Value="UniformToFill = 3" Usage="System.Windows.Media.Stretch.UniformToFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

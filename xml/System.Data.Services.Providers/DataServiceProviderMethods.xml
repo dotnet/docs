@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.DataServiceProviderMethods" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceProviderMethods" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceProviderMethods abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataServiceProviderMethods = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As Boolean, right As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(bool left, bool right);" />
+      <MemberSignature Language="F#" Value="static member Compare : bool * bool -&gt; int" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As Guid, right As Guid) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(Guid left, Guid right);" />
+      <MemberSignature Language="F#" Value="static member Compare : Guid * Guid -&gt; int" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As Nullable(Of Boolean), right As Nullable(Of Boolean)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(Nullable&lt;bool&gt; left, Nullable&lt;bool&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Compare : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; int" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Nullable{System.Guid},System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As Nullable(Of Guid), right As Nullable(Of Guid)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(Nullable&lt;Guid&gt; left, Nullable&lt;Guid&gt; right);" />
+      <MemberSignature Language="F#" Value="static member Compare : Nullable&lt;Guid&gt; * Nullable&lt;Guid&gt; -&gt; int" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -303,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As String, right As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ left, System::String ^ right);" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string -&gt; int" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -373,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Convert(System.Object,System.Data.Services.Providers.ResourceType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (value As Object, type As ResourceType) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Convert(System::Object ^ value, System::Data::Services::Providers::ResourceType ^ type);" />
+      <MemberSignature Language="F#" Value="static member Convert : obj * System.Data.Services.Providers.ResourceType -&gt; obj" Usage="System.Data.Services.Providers.DataServiceProviderMethods.Convert (value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -399,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.GetSequenceValue``1(System.Object,System.Data.Services.Providers.ResourceProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSequenceValue(Of T) (value As Object, property As ResourceProperty) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetSequenceValue(System::Object ^ value, System::Data::Services::Providers::ResourceProperty ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetSequenceValue : obj * System.Data.Services.Providers.ResourceProperty -&gt; seq&lt;'T&gt;" Usage="System.Data.Services.Providers.DataServiceProviderMethods.GetSequenceValue (value, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -437,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.GetValue(System.Object,System.Data.Services.Providers.ResourceProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValue (value As Object, property As ResourceProperty) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetValue(System::Object ^ value, System::Data::Services::Providers::ResourceProperty ^ property);" />
+      <MemberSignature Language="F#" Value="static member GetValue : obj * System.Data.Services.Providers.ResourceProperty -&gt; obj" Usage="System.Data.Services.Providers.DataServiceProviderMethods.GetValue (value, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -464,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.TypeIs(System.Object,System.Data.Services.Providers.ResourceType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TypeIs (value As Object, type As ResourceType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TypeIs(System::Object ^ value, System::Data::Services::Providers::ResourceType ^ type);" />
+      <MemberSignature Language="F#" Value="static member TypeIs : obj * System.Data.Services.Providers.ResourceType -&gt; bool" Usage="System.Data.Services.Providers.DataServiceProviderMethods.TypeIs (value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

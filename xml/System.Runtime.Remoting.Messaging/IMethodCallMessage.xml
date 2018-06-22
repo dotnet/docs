@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMethodCallMessage&#xA;Implements IMethodMessage" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMethodCallMessage : System::Runtime::Remoting::Messaging::IMethodMessage" />
+  <TypeSignature Language="F#" Value="type IMethodCallMessage = interface&#xA;    interface IMethodMessage&#xA;    interface IMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInArg (argNum As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetInArg(int argNum);" />
+      <MemberSignature Language="F#" Value="abstract member GetInArg : int -&gt; obj" Usage="iMethodCallMessage.GetInArg argNum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArgName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInArgName (index As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetInArgName(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetInArgName : int -&gt; string" Usage="iMethodCallMessage.GetInArgName index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InArgCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InArgCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InArgCount : int" Usage="System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InArgs As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ InArgs { cli::array &lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InArgs : obj[]" Usage="System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

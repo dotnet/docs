@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceViewSelectCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataSourceViewSelectCallback(data As IEnumerable)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataSourceViewSelectCallback(IEnumerable ^ data);" />
+  <TypeSignature Language="F#" Value="type DataSourceViewSelectCallback = delegate of IEnumerable -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

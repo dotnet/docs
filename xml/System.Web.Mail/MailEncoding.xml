@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailEncoding" />
   <TypeSignature Language="VB.NET" Value="Public Enum MailEncoding" />
   <TypeSignature Language="C++ CLI" Value="public enum class MailEncoding" />
+  <TypeSignature Language="F#" Value="type MailEncoding = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailEncoding.Base64" />
       <MemberSignature Language="VB.NET" Value="Base64" />
       <MemberSignature Language="C++ CLI" Value="Base64" />
+      <MemberSignature Language="F#" Value="Base64 = 1" Usage="System.Web.Mail.MailEncoding.Base64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailEncoding.UUEncode" />
       <MemberSignature Language="VB.NET" Value="UUEncode" />
       <MemberSignature Language="C++ CLI" Value="UUEncode" />
+      <MemberSignature Language="F#" Value="UUEncode = 0" Usage="System.Web.Mail.MailEncoding.UUEncode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

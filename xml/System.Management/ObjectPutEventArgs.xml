@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ObjectPutEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectPutEventArgs&#xA;Inherits ManagementEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectPutEventArgs : System::Management::ManagementEventArgs" />
+  <TypeSignature Language="F#" Value="type ObjectPutEventArgs = class&#xA;    inherit ManagementEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ObjectPutEventArgs.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As ManagementPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : System.Management.ManagementPath" Usage="System.Management.ObjectPutEventArgs.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactories" />
   <TypeSignature Language="VB.NET" Value="Public Class DbProviderFactories" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbProviderFactories abstract sealed" />
+  <TypeSignature Language="F#" Value="type DbProviderFactories = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.Data.Common.DbConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (connection As DbConnection) As DbProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::Data::Common::DbConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="static member GetFactory : System.Data.Common.DbConnection -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory connection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (providerRow As DataRow) As DbProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::Data::DataRow ^ providerRow);" />
+      <MemberSignature Language="F#" Value="static member GetFactory : System.Data.DataRow -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory providerRow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (providerInvariantName As String) As DbProviderFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::String ^ providerInvariantName);" />
+      <MemberSignature Language="F#" Value="static member GetFactory : string -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory providerInvariantName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactoryClasses" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactoryClasses () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ GetFactoryClasses();" />
+      <MemberSignature Language="F#" Value="static member GetFactoryClasses : unit -&gt; System.Data.DataTable" Usage="System.Data.Common.DbProviderFactories.GetFactoryClasses " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetProviderInvariantNames" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderInvariantNames () As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetProviderInvariantNames();" />
+      <MemberSignature Language="F#" Value="static member GetProviderInvariantNames : unit -&gt; seq&lt;string&gt;" Usage="System.Data.Common.DbProviderFactories.GetProviderInvariantNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Data.Common.DbProviderFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factory As DbProviderFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, System::Data::Common::DbProviderFactory ^ factory);" />
+      <MemberSignature Language="F#" Value="static member RegisterFactory : string * System.Data.Common.DbProviderFactory -&gt; unit" Usage="System.Data.Common.DbProviderFactories.RegisterFactory (providerInvariantName, factory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, factoryTypeAssemblyQualifiedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, System::String ^ factoryTypeAssemblyQualifiedName);" />
+      <MemberSignature Language="F#" Value="static member RegisterFactory : string * string -&gt; unit" Usage="System.Data.Common.DbProviderFactories.RegisterFactory (providerInvariantName, factoryTypeAssemblyQualifiedName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterFactory (providerInvariantName As String, providerFactoryClass As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterFactory(System::String ^ providerInvariantName, Type ^ providerFactoryClass);" />
+      <MemberSignature Language="F#" Value="static member RegisterFactory : string * Type -&gt; unit" Usage="System.Data.Common.DbProviderFactories.RegisterFactory (providerInvariantName, providerFactoryClass)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.TryGetFactory(System.String,System.Data.Common.DbProviderFactory@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetFactory (providerInvariantName As String, ByRef factory As DbProviderFactory) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetFactory(System::String ^ providerInvariantName, [Runtime::InteropServices::Out] System::Data::Common::DbProviderFactory ^ % factory);" />
+      <MemberSignature Language="F#" Value="static member TryGetFactory : string *  -&gt; bool" Usage="System.Data.Common.DbProviderFactories.TryGetFactory (providerInvariantName, factory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -314,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.UnregisterFactory(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnregisterFactory (providerInvariantName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnregisterFactory(System::String ^ providerInvariantName);" />
+      <MemberSignature Language="F#" Value="static member UnregisterFactory : string -&gt; bool" Usage="System.Data.Common.DbProviderFactories.UnregisterFactory providerInvariantName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

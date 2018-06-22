@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcFactory&#xA;Inherits DbProviderFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcFactory sealed : System::Data::Common::DbProviderFactory" />
+  <TypeSignature Language="F#" Value="type OdbcFactory = class&#xA;    inherit DbProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="odbcFactory.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +71,7 @@ DbCommand cmd = newFactory.CreateCommand();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateCommandBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommandBuilder () As DbCommandBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommandBuilder ^ CreateCommandBuilder();" />
+      <MemberSignature Language="F#" Value="override this.CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder" Usage="odbcFactory.CreateCommandBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -111,6 +114,7 @@ DbCommandBuilder cmd = newFactory.CreateCommandBuilder();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnection () As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnection ^ CreateConnection();" />
+      <MemberSignature Language="F#" Value="override this.CreateConnection : unit -&gt; System.Data.Common.DbConnection" Usage="odbcFactory.CreateConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -153,6 +157,7 @@ DbConnection cmd = newFactory.CreateConnection();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateConnectionStringBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnectionStringBuilder ^ CreateConnectionStringBuilder();" />
+      <MemberSignature Language="F#" Value="override this.CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="odbcFactory.CreateConnectionStringBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -195,6 +200,7 @@ DbConnectionStringBuilder cmd = newFactory.CreateConnectionStringBuilder();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateDataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataAdapter () As DbDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbDataAdapter ^ CreateDataAdapter();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter" Usage="odbcFactory.CreateDataAdapter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -237,6 +243,7 @@ DbDataAdapter cmd = newFactory.CreateDataAdapter();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="odbcFactory.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -279,6 +286,7 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="odbcFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -303,6 +311,7 @@ DbParameter cmd = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcFactory.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As OdbcFactory " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::Odbc::OdbcFactory ^ Instance;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Data.Odbc.OdbcFactory" Usage="System.Data.Odbc.OdbcFactory.Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

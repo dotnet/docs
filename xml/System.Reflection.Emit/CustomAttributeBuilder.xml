@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.CustomAttributeBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomAttributeBuilder&#xA;Implements _CustomAttributeBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomAttributeBuilder : System::Runtime::InteropServices::_CustomAttributeBuilder" />
+  <TypeSignature Language="F#" Value="type CustomAttributeBuilder = class&#xA;    interface _CustomAttributeBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.FieldInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedFields As FieldInfo(), fieldValues As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ namedFields, cli::array &lt;System::Object ^&gt; ^ fieldValues);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.FieldInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedFields, fieldValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.PropertyInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedProperties As PropertyInfo(), propertyValues As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ namedProperties, cli::array &lt;System::Object ^&gt; ^ propertyValues);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.PropertyInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedProperties, propertyValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -261,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.PropertyInfo[],System.Object[],System.Reflection.FieldInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedProperties As PropertyInfo(), propertyValues As Object(), namedFields As FieldInfo(), fieldValues As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ namedProperties, cli::array &lt;System::Object ^&gt; ^ propertyValues, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ namedFields, cli::array &lt;System::Object ^&gt; ^ fieldValues);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.PropertyInfo[] * obj[] * System.Reflection.FieldInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedProperties, propertyValues, namedFields, fieldValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>

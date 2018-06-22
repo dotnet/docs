@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.PreAllocatedOverlapped" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PreAllocatedOverlapped&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class PreAllocatedOverlapped sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type PreAllocatedOverlapped = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Overlapped</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.PreAllocatedOverlapped.#ctor(System.Threading.IOCompletionCallback,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (callback As IOCompletionCallback, state As Object, pinData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PreAllocatedOverlapped(System::Threading::IOCompletionCallback ^ callback, System::Object ^ state, System::Object ^ pinData);" />
+      <MemberSignature Language="F#" Value="new System.Threading.PreAllocatedOverlapped : System.Threading.IOCompletionCallback * obj * obj -&gt; System.Threading.PreAllocatedOverlapped" Usage="new System.Threading.PreAllocatedOverlapped (callback, state, pinData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.PreAllocatedOverlapped.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="preAllocatedOverlapped.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.PreAllocatedOverlapped.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!PreAllocatedOverlapped ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="preAllocatedOverlapped.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

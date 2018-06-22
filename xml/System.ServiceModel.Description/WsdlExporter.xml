@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WsdlExporter" />
   <TypeSignature Language="VB.NET" Value="Public Class WsdlExporter&#xA;Inherits MetadataExporter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlExporter : System::ServiceModel::Description::MetadataExporter" />
+  <TypeSignature Language="F#" Value="type WsdlExporter = class&#xA;    inherit MetadataExporter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlExporter.ExportContract(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExportContract (contract As ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExportContract(System::ServiceModel::Description::ContractDescription ^ contract);" />
+      <MemberSignature Language="F#" Value="override this.ExportContract : System.ServiceModel.Description.ContractDescription -&gt; unit" Usage="wsdlExporter.ExportContract contract" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlExporter.ExportEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExportEndpoint (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExportEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="override this.ExportEndpoint : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="wsdlExporter.ExportEndpoint endpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlExporter.ExportEndpoints(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint},System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExportEndpoints (endpoints As IEnumerable(Of ServiceEndpoint), wsdlServiceQName As XmlQualifiedName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportEndpoints(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::Xml::XmlQualifiedName ^ wsdlServiceQName);" />
+      <MemberSignature Language="F#" Value="member this.ExportEndpoints : seq&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.Xml.XmlQualifiedName -&gt; unit" Usage="wsdlExporter.ExportEndpoints (endpoints, wsdlServiceQName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeneratedWsdlDocuments As ServiceDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ GeneratedWsdlDocuments { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedWsdlDocuments : System.Web.Services.Description.ServiceDescriptionCollection" Usage="System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WsdlExporter.GeneratedXmlSchemas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeneratedXmlSchemas As XmlSchemaSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSet ^ GeneratedXmlSchemas { System::Xml::Schema::XmlSchemaSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeneratedXmlSchemas : System.Xml.Schema.XmlSchemaSet" Usage="System.ServiceModel.Description.WsdlExporter.GeneratedXmlSchemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WsdlExporter.GetGeneratedMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGeneratedMetadata () As MetadataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Description::MetadataSet ^ GetGeneratedMetadata();" />
+      <MemberSignature Language="F#" Value="override this.GetGeneratedMetadata : unit -&gt; System.ServiceModel.Description.MetadataSet" Usage="wsdlExporter.GetGeneratedMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

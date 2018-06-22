@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeParameterData" />
   <TypeSignature Language="C++ CLI" Value="public ref class AttributeParameterData sealed" />
+  <TypeSignature Language="F#" Value="type AttributeParameterData = class" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.Collections.Generic.IEnumerable{Microsoft.Build.Tasks.Xaml.AttributeParameterData})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As XamlType, arrayContents As IEnumerable(Of AttributeParameterData))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeParameterData(System::Xaml::XamlType ^ type, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::Tasks::Xaml::AttributeParameterData ^&gt; ^ arrayContents);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.AttributeParameterData : System.Xaml.XamlType * seq&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt; -&gt; Microsoft.Build.Tasks.Xaml.AttributeParameterData" Usage="new Microsoft.Build.Tasks.Xaml.AttributeParameterData (type, arrayContents)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As XamlType, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeParameterData(System::Xaml::XamlType ^ type, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.AttributeParameterData : System.Xaml.XamlType * obj -&gt; Microsoft.Build.Tasks.Xaml.AttributeParameterData" Usage="new Microsoft.Build.Tasks.Xaml.AttributeParameterData (type, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As XamlType, textValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AttributeParameterData(System::Xaml::XamlType ^ type, System::String ^ textValue);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.AttributeParameterData : System.Xaml.XamlType * string -&gt; Microsoft.Build.Tasks.Xaml.AttributeParameterData" Usage="new Microsoft.Build.Tasks.Xaml.AttributeParameterData (type, textValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.ArrayContents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArrayContents As ReadOnlyCollection(Of AttributeParameterData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Build::Tasks::Xaml::AttributeParameterData ^&gt; ^ ArrayContents { System::Collections::ObjectModel::ReadOnlyCollection&lt;Microsoft::Build::Tasks::Xaml::AttributeParameterData ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ArrayContents : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt;" Usage="Microsoft.Build.Tasks.Xaml.AttributeParameterData.ArrayContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.TextValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextValue : string" Usage="Microsoft.Build.Tasks.Xaml.AttributeParameterData.TextValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XamlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="Microsoft.Build.Tasks.Xaml.AttributeParameterData.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="Microsoft.Build.Tasks.Xaml.AttributeParameterData.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ContractHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class ContractHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type ContractHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ContractHelper.RaiseContractFailedEvent(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RaiseContractFailedEvent (failureKind As ContractFailureKind, userMessage As String, conditionText As String, innerException As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ RaiseContractFailedEvent(System::Diagnostics::Contracts::ContractFailureKind failureKind, System::String ^ userMessage, System::String ^ conditionText, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="static member RaiseContractFailedEvent : System.Diagnostics.Contracts.ContractFailureKind * string * string * Exception -&gt; string" Usage="System.Runtime.CompilerServices.ContractHelper.RaiseContractFailedEvent (failureKind, userMessage, conditionText, innerException)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ContractHelper.TriggerFailure(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub TriggerFailure (kind As ContractFailureKind, displayMessage As String, userMessage As String, conditionText As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TriggerFailure(System::Diagnostics::Contracts::ContractFailureKind kind, System::String ^ displayMessage, System::String ^ userMessage, System::String ^ conditionText, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="static member TriggerFailure : System.Diagnostics.Contracts.ContractFailureKind * string * string * string * Exception -&gt; unit" Usage="System.Runtime.CompilerServices.ContractHelper.TriggerFailure (kind, displayMessage, userMessage, conditionText, innerException)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

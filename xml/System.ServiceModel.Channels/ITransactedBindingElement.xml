@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ITransactedBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITransactedBindingElement" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITransactedBindingElement" />
+  <TypeSignature Language="F#" Value="type ITransactedBindingElement = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ITransactedBindingElement.TransactedReceiveEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransactedReceiveEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactedReceiveEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransactedReceiveEnabled : bool" Usage="System.ServiceModel.Channels.ITransactedBindingElement.TransactedReceiveEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CallExternalMethodActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class CallExternalMethodActivity&#xA;Inherits Activity&#xA;Implements IDynamicPropertyTypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallExternalMethodActivity : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type CallExternalMethodActivity = class&#xA;    inherit Activity&#xA;    interface IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CallExternalMethodActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CallExternalMethodActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.CallExternalMethodActivity : string -&gt; System.Workflow.Activities.CallExternalMethodActivity" Usage="new System.Workflow.Activities.CallExternalMethodActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CallExternalMethodActivity.CorrelationToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CorrelationToken As CorrelationToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::Runtime::CorrelationToken ^ CorrelationToken { System::Workflow::Runtime::CorrelationToken ^ get(); void set(System::Workflow::Runtime::CorrelationToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationToken : System.Workflow.Runtime.CorrelationToken with get, set" Usage="System.Workflow.Activities.CallExternalMethodActivity.CorrelationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CallExternalMethodActivity.CorrelationTokenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CorrelationTokenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CorrelationTokenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CorrelationTokenProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CallExternalMethodActivity.CorrelationTokenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CallExternalMethodActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="callExternalMethodActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CallExternalMethodActivity.InitializeProperties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeProperties ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeProperties();" />
+      <MemberSignature Language="F#" Value="override this.InitializeProperties : unit -&gt; unit" Usage="callExternalMethodActivity.InitializeProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InterfaceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ InterfaceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceType : Type with get, set" Usage="System.Workflow.Activities.CallExternalMethodActivity.InterfaceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -306,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CallExternalMethodActivity.InterfaceTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InterfaceTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InterfaceTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InterfaceTypeProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CallExternalMethodActivity.InterfaceTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MethodInvoking As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MethodInvoking;" />
+      <MemberSignature Language="F#" Value="member this.MethodInvoking : EventHandler " Usage="member this.MethodInvoking : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -368,6 +377,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CallExternalMethodActivity.MethodInvokingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MethodInvokingEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ MethodInvokingEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MethodInvokingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CallExternalMethodActivity.MethodInvokingEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CallExternalMethodActivity.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Workflow.Activities.CallExternalMethodActivity.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -440,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CallExternalMethodActivity.MethodNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MethodNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ MethodNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MethodNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CallExternalMethodActivity.MethodNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -468,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CallExternalMethodActivity.OnMethodInvoked(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMethodInvoked (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMethodInvoked(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMethodInvoked : EventArgs -&gt; unit&#xA;override this.OnMethodInvoked : EventArgs -&gt; unit" Usage="callExternalMethodActivity.OnMethodInvoked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -501,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CallExternalMethodActivity.OnMethodInvoking(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMethodInvoking (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMethodInvoking(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnMethodInvoking : EventArgs -&gt; unit&#xA;override this.OnMethodInvoking : EventArgs -&gt; unit" Usage="callExternalMethodActivity.OnMethodInvoking e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -534,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CallExternalMethodActivity.ParameterBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.CallExternalMethodActivity.ParameterBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -571,6 +586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CallExternalMethodActivity.ParameterBindingsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterBindingsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterBindingsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ParameterBindingsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.CallExternalMethodActivity.ParameterBindingsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

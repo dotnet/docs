@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IItemContainerGenerator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IItemContainerGenerator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IItemContainerGenerator" />
+  <TypeSignature Language="F#" Value="type IItemContainerGenerator = interface" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateNext () As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ GenerateNext();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateNext : unit -&gt; System.Windows.DependencyObject" Usage="iItemContainerGenerator.GenerateNext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateNext (ByRef isNewlyRealized As Boolean) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateNext :  -&gt; System.Windows.DependencyObject" Usage="iItemContainerGenerator.GenerateNext isNewlyRealized" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GeneratorPositionFromIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GeneratorPositionFromIndex (itemIndex As Integer) As GeneratorPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::Primitives::GeneratorPosition GeneratorPositionFromIndex(int itemIndex);" />
+      <MemberSignature Language="F#" Value="abstract member GeneratorPositionFromIndex : int -&gt; System.Windows.Controls.Primitives.GeneratorPosition" Usage="iItemContainerGenerator.GeneratorPositionFromIndex itemIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Controls.ItemContainerGenerator GetItemContainerGeneratorForPanel(class System.Windows.Controls.Panel panel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GetItemContainerGeneratorForPanel(System.Windows.Controls.Panel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::ItemContainerGenerator ^ GetItemContainerGeneratorForPanel(System::Windows::Controls::Panel ^ panel);" />
+      <MemberSignature Language="F#" Value="abstract member GetItemContainerGeneratorForPanel : System.Windows.Controls.Panel -&gt; System.Windows.Controls.ItemContainerGenerator" Usage="iItemContainerGenerator.GetItemContainerGeneratorForPanel panel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.IndexFromGeneratorPosition(System.Windows.Controls.Primitives.GeneratorPosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexFromGeneratorPosition (position As GeneratorPosition) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromGeneratorPosition(System::Windows::Controls::Primitives::GeneratorPosition position);" />
+      <MemberSignature Language="F#" Value="abstract member IndexFromGeneratorPosition : System.Windows.Controls.Primitives.GeneratorPosition -&gt; int" Usage="iItemContainerGenerator.IndexFromGeneratorPosition position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrepareItemContainer (container As DependencyObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrepareItemContainer(System::Windows::DependencyObject ^ container);" />
+      <MemberSignature Language="F#" Value="abstract member PrepareItemContainer : System.Windows.DependencyObject -&gt; unit" Usage="iItemContainerGenerator.PrepareItemContainer container" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.Remove(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (position As GeneratorPosition, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Controls::Primitives::GeneratorPosition position, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Controls.Primitives.GeneratorPosition * int -&gt; unit" Usage="iItemContainerGenerator.Remove (position, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : unit -&gt; unit" Usage="iItemContainerGenerator.RemoveAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartAt (position As GeneratorPosition, direction As GeneratorDirection) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction);" />
+      <MemberSignature Language="F#" Value="abstract member StartAt : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorDirection -&gt; IDisposable" Usage="iItemContainerGenerator.StartAt (position, direction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartAt (position As GeneratorPosition, direction As GeneratorDirection, allowStartAtRealizedItem As Boolean) As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction, bool allowStartAtRealizedItem);" />
+      <MemberSignature Language="F#" Value="abstract member StartAt : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorDirection * bool -&gt; IDisposable" Usage="iItemContainerGenerator.StartAt (position, direction, allowStartAtRealizedItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ConfigurationChannelFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationChannelFactory(Of TChannel)&#xA;Inherits ChannelFactory(Of TChannel)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public ref class ConfigurationChannelFactory sealed : System::ServiceModel::ChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="F#" Value="type ConfigurationChannelFactory&lt;'Channel&gt; = class&#xA;    inherit ChannelFactory&lt;'Channel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.Configuration.Configuration configuration, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConfigurationChannelFactory`1.#ctor(System.String,System.Configuration.Configuration,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationChannelFactory(System::String ^ endpointConfigurationName, System::Configuration::Configuration ^ configuration, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ConfigurationChannelFactory&lt;'Channel&gt; : string * System.Configuration.Configuration * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Configuration.ConfigurationChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Configuration.ConfigurationChannelFactory&lt;'Channel&gt; (endpointConfigurationName, configuration, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

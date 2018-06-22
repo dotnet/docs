@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Color" />
   <TypeSignature Language="VB.NET" Value="Public Structure Color" />
   <TypeSignature Language="C++ CLI" Value="public value class Color" />
+  <TypeSignature Language="F#" Value="type Color = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.A" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property A As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte A { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.A : byte" Usage="System.Drawing.Color.A" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.AliceBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AliceBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color AliceBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.AliceBlue : System.Drawing.Color" Usage="System.Drawing.Color.AliceBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.AntiqueWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AntiqueWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color AntiqueWhite { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.AntiqueWhite : System.Drawing.Color" Usage="System.Drawing.Color.AntiqueWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Aqua" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aqua As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Aqua { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aqua : System.Drawing.Color" Usage="System.Drawing.Color.Aqua" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Aquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Aquamarine As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Aquamarine { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Aquamarine : System.Drawing.Color" Usage="System.Drawing.Color.Aquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Azure" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Azure As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Azure { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Azure : System.Drawing.Color" Usage="System.Drawing.Color.Azure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.B" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property B As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte B { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.B : byte" Usage="System.Drawing.Color.B" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -326,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Beige" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Beige As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Beige { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Beige : System.Drawing.Color" Usage="System.Drawing.Color.Beige" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Bisque" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Bisque As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Bisque { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bisque : System.Drawing.Color" Usage="System.Drawing.Color.Bisque" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -398,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Black" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Black As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Black { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Black : System.Drawing.Color" Usage="System.Drawing.Color.Black" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -434,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.BlanchedAlmond" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlanchedAlmond As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color BlanchedAlmond { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlanchedAlmond : System.Drawing.Color" Usage="System.Drawing.Color.BlanchedAlmond" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -470,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Blue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Blue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Blue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Blue : System.Drawing.Color" Usage="System.Drawing.Color.Blue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -506,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.BlueViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlueViolet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color BlueViolet { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlueViolet : System.Drawing.Color" Usage="System.Drawing.Color.BlueViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -542,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Brown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Brown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Brown { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Brown : System.Drawing.Color" Usage="System.Drawing.Color.Brown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -578,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.BurlyWood" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BurlyWood As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color BurlyWood { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.BurlyWood : System.Drawing.Color" Usage="System.Drawing.Color.BurlyWood" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -614,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.CadetBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CadetBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color CadetBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CadetBlue : System.Drawing.Color" Usage="System.Drawing.Color.CadetBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -650,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Chartreuse" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chartreuse As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Chartreuse { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chartreuse : System.Drawing.Color" Usage="System.Drawing.Color.Chartreuse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -686,6 +704,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Chocolate" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chocolate As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Chocolate { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chocolate : System.Drawing.Color" Usage="System.Drawing.Color.Chocolate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -722,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Coral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Coral As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Coral { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Coral : System.Drawing.Color" Usage="System.Drawing.Color.Coral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -758,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.CornflowerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CornflowerBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color CornflowerBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.CornflowerBlue : System.Drawing.Color" Usage="System.Drawing.Color.CornflowerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -794,6 +815,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Cornsilk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cornsilk As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Cornsilk { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cornsilk : System.Drawing.Color" Usage="System.Drawing.Color.Cornsilk" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -830,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Crimson" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Crimson As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Crimson { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Crimson : System.Drawing.Color" Usage="System.Drawing.Color.Crimson" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -866,6 +889,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Cyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Cyan { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cyan : System.Drawing.Color" Usage="System.Drawing.Color.Cyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -902,6 +926,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkBlue : System.Drawing.Color" Usage="System.Drawing.Color.DarkBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -938,6 +963,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkCyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkCyan { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkCyan : System.Drawing.Color" Usage="System.Drawing.Color.DarkCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -974,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGoldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkGoldenrod { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGoldenrod : System.Drawing.Color" Usage="System.Drawing.Color.DarkGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1010,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGray : System.Drawing.Color" Usage="System.Drawing.Color.DarkGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1046,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkGreen : System.Drawing.Color" Usage="System.Drawing.Color.DarkGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1082,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkKhaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkKhaki As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkKhaki { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkKhaki : System.Drawing.Color" Usage="System.Drawing.Color.DarkKhaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1118,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkMagenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkMagenta As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkMagenta { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkMagenta : System.Drawing.Color" Usage="System.Drawing.Color.DarkMagenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1154,6 +1185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkOliveGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOliveGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkOliveGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOliveGreen : System.Drawing.Color" Usage="System.Drawing.Color.DarkOliveGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1190,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkOrange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrange As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkOrange { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrange : System.Drawing.Color" Usage="System.Drawing.Color.DarkOrange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1226,6 +1259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkOrchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkOrchid { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkOrchid : System.Drawing.Color" Usage="System.Drawing.Color.DarkOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1262,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkRed { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkRed : System.Drawing.Color" Usage="System.Drawing.Color.DarkRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1298,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSalmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkSalmon { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSalmon : System.Drawing.Color" Usage="System.Drawing.Color.DarkSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1334,6 +1370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkSeaGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSeaGreen : System.Drawing.Color" Usage="System.Drawing.Color.DarkSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1370,6 +1407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkSlateBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateBlue : System.Drawing.Color" Usage="System.Drawing.Color.DarkSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1406,6 +1444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkSlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkSlateGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkSlateGray : System.Drawing.Color" Usage="System.Drawing.Color.DarkSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1442,6 +1481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkTurquoise { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkTurquoise : System.Drawing.Color" Usage="System.Drawing.Color.DarkTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1478,6 +1518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DarkViolet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DarkViolet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DarkViolet { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DarkViolet : System.Drawing.Color" Usage="System.Drawing.Color.DarkViolet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1514,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DeepPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DeepPink { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepPink : System.Drawing.Color" Usage="System.Drawing.Color.DeepPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1550,6 +1592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DeepSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DeepSkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DeepSkyBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeepSkyBlue : System.Drawing.Color" Usage="System.Drawing.Color.DeepSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1586,6 +1629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DimGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DimGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DimGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DimGray : System.Drawing.Color" Usage="System.Drawing.Color.DimGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1622,6 +1666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.DodgerBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DodgerBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color DodgerBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.DodgerBlue : System.Drawing.Color" Usage="System.Drawing.Color.DodgerBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1658,6 +1703,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.Color.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Color " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Color Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Drawing.Color" Usage="System.Drawing.Color.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1686,6 +1732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.Equals(System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Color other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Drawing.Color -&gt; bool" Usage="color.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -1714,6 +1761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="color.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1755,6 +1803,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Firebrick" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Firebrick As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Firebrick { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Firebrick : System.Drawing.Color" Usage="System.Drawing.Color.Firebrick" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1791,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.FloralWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FloralWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color FloralWhite { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.FloralWhite : System.Drawing.Color" Usage="System.Drawing.Color.FloralWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1827,6 +1877,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.ForestGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ForestGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color ForestGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForestGreen : System.Drawing.Color" Usage="System.Drawing.Color.ForestGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1872,6 +1923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromArgb(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromArgb (argb As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromArgb(int argb);" />
+      <MemberSignature Language="F#" Value="static member FromArgb : int -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromArgb argb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1927,6 +1979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromArgb(System.Int32,System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromArgb (alpha As Integer, baseColor As Color) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromArgb(int alpha, System::Drawing::Color baseColor);" />
+      <MemberSignature Language="F#" Value="static member FromArgb : int * System.Drawing.Color -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromArgb (alpha, baseColor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1990,6 +2043,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromArgb (red As Integer, green As Integer, blue As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromArgb(int red, int green, int blue);" />
+      <MemberSignature Language="F#" Value="static member FromArgb : int * int * int -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromArgb (red, green, blue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2050,6 +2104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromArgb (alpha As Integer, red As Integer, green As Integer, blue As Integer) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromArgb(int alpha, int red, int green, int blue);" />
+      <MemberSignature Language="F#" Value="static member FromArgb : int * int * int * int -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromArgb (alpha, red, green, blue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2112,6 +2167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color FromKnownColor(valuetype System.Drawing.KnownColor color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromKnownColor(System::Drawing::KnownColor color);" />
+      <MemberSignature Language="F#" Value="static member FromKnownColor : System.Drawing.KnownColor -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromKnownColor color" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2170,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.FromName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromName (name As String) As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member FromName : string -&gt; System.Drawing.Color" Usage="System.Drawing.Color.FromName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2221,6 +2278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Fuchsia" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Fuchsia As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Fuchsia { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fuchsia : System.Drawing.Color" Usage="System.Drawing.Color.Fuchsia" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2257,6 +2315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.G" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property G As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte G { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.G : byte" Usage="System.Drawing.Color.G" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2304,6 +2363,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Gainsboro" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gainsboro As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Gainsboro { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gainsboro : System.Drawing.Color" Usage="System.Drawing.Color.Gainsboro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2340,6 +2400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.GetBrightness" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBrightness () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetBrightness();" />
+      <MemberSignature Language="F#" Value="member this.GetBrightness : unit -&gt; single" Usage="color.GetBrightness " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2391,6 +2452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="color.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2421,6 +2483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.GetHue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHue () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetHue();" />
+      <MemberSignature Language="F#" Value="member this.GetHue : unit -&gt; single" Usage="color.GetHue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2472,6 +2535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.GetSaturation" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSaturation () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetSaturation();" />
+      <MemberSignature Language="F#" Value="member this.GetSaturation : unit -&gt; single" Usage="color.GetSaturation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2523,6 +2587,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.GhostWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GhostWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color GhostWhite { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GhostWhite : System.Drawing.Color" Usage="System.Drawing.Color.GhostWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2559,6 +2624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Gold" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gold As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Gold { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gold : System.Drawing.Color" Usage="System.Drawing.Color.Gold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2595,6 +2661,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Goldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Goldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Goldenrod { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Goldenrod : System.Drawing.Color" Usage="System.Drawing.Color.Goldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2631,6 +2698,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Gray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Gray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Gray : System.Drawing.Color" Usage="System.Drawing.Color.Gray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2667,6 +2735,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Green" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Green As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Green { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Green : System.Drawing.Color" Usage="System.Drawing.Color.Green" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2703,6 +2772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.GreenYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GreenYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color GreenYellow { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.GreenYellow : System.Drawing.Color" Usage="System.Drawing.Color.GreenYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2739,6 +2809,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Honeydew" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Honeydew As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Honeydew { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Honeydew : System.Drawing.Color" Usage="System.Drawing.Color.Honeydew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2775,6 +2846,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.HotPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color HotPink { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.HotPink : System.Drawing.Color" Usage="System.Drawing.Color.HotPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2811,6 +2883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.IndianRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IndianRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color IndianRed { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.IndianRed : System.Drawing.Color" Usage="System.Drawing.Color.IndianRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2847,6 +2920,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Indigo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Indigo As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Indigo { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indigo : System.Drawing.Color" Usage="System.Drawing.Color.Indigo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2883,6 +2957,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Drawing.Color.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2912,6 +2987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.IsKnownColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKnownColor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKnownColor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsKnownColor : bool" Usage="System.Drawing.Color.IsKnownColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2948,6 +3024,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.IsNamedColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNamedColor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNamedColor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNamedColor : bool" Usage="System.Drawing.Color.IsNamedColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2985,6 +3062,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.IsSystemColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSystemColor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemColor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSystemColor : bool" Usage="System.Drawing.Color.IsSystemColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3021,6 +3099,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Ivory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Ivory As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Ivory { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ivory : System.Drawing.Color" Usage="System.Drawing.Color.Ivory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3057,6 +3136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Khaki" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Khaki As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Khaki { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Khaki : System.Drawing.Color" Usage="System.Drawing.Color.Khaki" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3093,6 +3173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Lavender" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lavender As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Lavender { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lavender : System.Drawing.Color" Usage="System.Drawing.Color.Lavender" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3129,6 +3210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LavenderBlush" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LavenderBlush As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LavenderBlush { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LavenderBlush : System.Drawing.Color" Usage="System.Drawing.Color.LavenderBlush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3165,6 +3247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LawnGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LawnGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LawnGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LawnGreen : System.Drawing.Color" Usage="System.Drawing.Color.LawnGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3201,6 +3284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LemonChiffon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LemonChiffon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LemonChiffon { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LemonChiffon : System.Drawing.Color" Usage="System.Drawing.Color.LemonChiffon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3237,6 +3321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightBlue : System.Drawing.Color" Usage="System.Drawing.Color.LightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3273,6 +3358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightCoral" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCoral As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightCoral { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCoral : System.Drawing.Color" Usage="System.Drawing.Color.LightCoral" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3309,6 +3395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightCyan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightCyan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightCyan { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightCyan : System.Drawing.Color" Usage="System.Drawing.Color.LightCyan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3345,6 +3432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightGoldenrodYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGoldenrodYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightGoldenrodYellow { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGoldenrodYellow : System.Drawing.Color" Usage="System.Drawing.Color.LightGoldenrodYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3381,6 +3469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGray : System.Drawing.Color" Usage="System.Drawing.Color.LightGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3417,6 +3506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightGreen : System.Drawing.Color" Usage="System.Drawing.Color.LightGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3453,6 +3543,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightPink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightPink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightPink { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightPink : System.Drawing.Color" Usage="System.Drawing.Color.LightPink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3489,6 +3580,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightSalmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSalmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightSalmon { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSalmon : System.Drawing.Color" Usage="System.Drawing.Color.LightSalmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3525,6 +3617,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightSeaGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSeaGreen : System.Drawing.Color" Usage="System.Drawing.Color.LightSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3561,6 +3654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightSkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightSkyBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSkyBlue : System.Drawing.Color" Usage="System.Drawing.Color.LightSkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3597,6 +3691,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightSlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightSlateGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSlateGray : System.Drawing.Color" Usage="System.Drawing.Color.LightSlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3633,6 +3728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightSteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightSteelBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightSteelBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightSteelBlue : System.Drawing.Color" Usage="System.Drawing.Color.LightSteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3669,6 +3765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LightYellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LightYellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LightYellow { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LightYellow : System.Drawing.Color" Usage="System.Drawing.Color.LightYellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3705,6 +3802,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Lime" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Lime As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Lime { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Lime : System.Drawing.Color" Usage="System.Drawing.Color.Lime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3741,6 +3839,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.LimeGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LimeGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color LimeGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.LimeGreen : System.Drawing.Color" Usage="System.Drawing.Color.LimeGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3777,6 +3876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Linen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Linen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Linen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linen : System.Drawing.Color" Usage="System.Drawing.Color.Linen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3813,6 +3913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Magenta" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Magenta As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Magenta { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Magenta : System.Drawing.Color" Usage="System.Drawing.Color.Magenta" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3849,6 +3950,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Maroon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Maroon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Maroon { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maroon : System.Drawing.Color" Usage="System.Drawing.Color.Maroon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3885,6 +3987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumAquamarine" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumAquamarine As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumAquamarine { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumAquamarine : System.Drawing.Color" Usage="System.Drawing.Color.MediumAquamarine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3921,6 +4024,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumBlue : System.Drawing.Color" Usage="System.Drawing.Color.MediumBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3957,6 +4061,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumOrchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumOrchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumOrchid { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumOrchid : System.Drawing.Color" Usage="System.Drawing.Color.MediumOrchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3993,6 +4098,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumPurple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumPurple As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumPurple { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumPurple : System.Drawing.Color" Usage="System.Drawing.Color.MediumPurple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4029,6 +4135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumSeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumSeaGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSeaGreen : System.Drawing.Color" Usage="System.Drawing.Color.MediumSeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4065,6 +4172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumSlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumSlateBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSlateBlue : System.Drawing.Color" Usage="System.Drawing.Color.MediumSlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4101,6 +4209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumSpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumSpringGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumSpringGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumSpringGreen : System.Drawing.Color" Usage="System.Drawing.Color.MediumSpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4137,6 +4246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumTurquoise { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumTurquoise : System.Drawing.Color" Usage="System.Drawing.Color.MediumTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4173,6 +4283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MediumVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MediumVioletRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MediumVioletRed { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MediumVioletRed : System.Drawing.Color" Usage="System.Drawing.Color.MediumVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4209,6 +4320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MidnightBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MidnightBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MidnightBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MidnightBlue : System.Drawing.Color" Usage="System.Drawing.Color.MidnightBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4245,6 +4357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MintCream" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MintCream As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MintCream { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MintCream : System.Drawing.Color" Usage="System.Drawing.Color.MintCream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4281,6 +4394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.MistyRose" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MistyRose As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color MistyRose { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.MistyRose : System.Drawing.Color" Usage="System.Drawing.Color.MistyRose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4317,6 +4431,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Moccasin" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Moccasin As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Moccasin { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Moccasin : System.Drawing.Color" Usage="System.Drawing.Color.Moccasin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4353,6 +4468,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Drawing.Color.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4398,6 +4514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.NavajoWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NavajoWhite As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color NavajoWhite { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavajoWhite : System.Drawing.Color" Usage="System.Drawing.Color.NavajoWhite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4434,6 +4551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Navy" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Navy As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Navy { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Navy : System.Drawing.Color" Usage="System.Drawing.Color.Navy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4470,6 +4588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.OldLace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OldLace As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OldLace { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldLace : System.Drawing.Color" Usage="System.Drawing.Color.OldLace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4506,6 +4625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Olive" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Olive As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Olive { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Olive : System.Drawing.Color" Usage="System.Drawing.Color.Olive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4542,6 +4662,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.OliveDrab" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OliveDrab As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OliveDrab { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OliveDrab : System.Drawing.Color" Usage="System.Drawing.Color.OliveDrab" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4578,6 +4699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.op_Equality(System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Color, right As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Color left, System::Drawing::Color right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Color * System.Drawing.Color -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4630,6 +4752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.op_Inequality(System.Drawing.Color,System.Drawing.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Color, right As Color) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Color left, System::Drawing::Color right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Color * System.Drawing.Color -&gt; bool" Usage="System.Drawing.Color.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4682,6 +4805,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Orange" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orange As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Orange { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orange : System.Drawing.Color" Usage="System.Drawing.Color.Orange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4718,6 +4842,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.OrangeRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OrangeRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color OrangeRed { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.OrangeRed : System.Drawing.Color" Usage="System.Drawing.Color.OrangeRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4754,6 +4879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Orchid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Orchid As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Orchid { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Orchid : System.Drawing.Color" Usage="System.Drawing.Color.Orchid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4790,6 +4916,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PaleGoldenrod" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGoldenrod As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PaleGoldenrod { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGoldenrod : System.Drawing.Color" Usage="System.Drawing.Color.PaleGoldenrod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4826,6 +4953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PaleGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PaleGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleGreen : System.Drawing.Color" Usage="System.Drawing.Color.PaleGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4862,6 +4990,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PaleTurquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleTurquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PaleTurquoise { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleTurquoise : System.Drawing.Color" Usage="System.Drawing.Color.PaleTurquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4898,6 +5027,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PaleVioletRed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PaleVioletRed As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PaleVioletRed { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PaleVioletRed : System.Drawing.Color" Usage="System.Drawing.Color.PaleVioletRed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4934,6 +5064,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PapayaWhip" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PapayaWhip As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PapayaWhip { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PapayaWhip : System.Drawing.Color" Usage="System.Drawing.Color.PapayaWhip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -4970,6 +5101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PeachPuff" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PeachPuff As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PeachPuff { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PeachPuff : System.Drawing.Color" Usage="System.Drawing.Color.PeachPuff" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5006,6 +5138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Peru" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Peru As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Peru { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Peru : System.Drawing.Color" Usage="System.Drawing.Color.Peru" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5042,6 +5175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Pink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pink As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Pink { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pink : System.Drawing.Color" Usage="System.Drawing.Color.Pink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5078,6 +5212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Plum" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Plum As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Plum { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Plum : System.Drawing.Color" Usage="System.Drawing.Color.Plum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5114,6 +5249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.PowderBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PowderBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color PowderBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.PowderBlue : System.Drawing.Color" Usage="System.Drawing.Color.PowderBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5150,6 +5286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Purple" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Purple As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Purple { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Purple : System.Drawing.Color" Usage="System.Drawing.Color.Purple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5186,6 +5323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.R" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property R As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte R { System::Byte get(); };" />
+      <MemberSignature Language="F#" Value="member this.R : byte" Usage="System.Drawing.Color.R" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5235,6 +5373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Red" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Red As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Red { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Red : System.Drawing.Color" Usage="System.Drawing.Color.Red" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5271,6 +5410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.RosyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RosyBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color RosyBrown { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RosyBrown : System.Drawing.Color" Usage="System.Drawing.Color.RosyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5307,6 +5447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.RoyalBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RoyalBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color RoyalBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.RoyalBlue : System.Drawing.Color" Usage="System.Drawing.Color.RoyalBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5343,6 +5484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SaddleBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SaddleBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SaddleBrown { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SaddleBrown : System.Drawing.Color" Usage="System.Drawing.Color.SaddleBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5379,6 +5521,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Salmon" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Salmon As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Salmon { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Salmon : System.Drawing.Color" Usage="System.Drawing.Color.Salmon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5415,6 +5558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SandyBrown" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SandyBrown As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SandyBrown { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SandyBrown : System.Drawing.Color" Usage="System.Drawing.Color.SandyBrown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5451,6 +5595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SeaGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SeaGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaGreen : System.Drawing.Color" Usage="System.Drawing.Color.SeaGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5487,6 +5632,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SeaShell" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeaShell As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SeaShell { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeaShell : System.Drawing.Color" Usage="System.Drawing.Color.SeaShell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5523,6 +5669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Sienna" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Sienna As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Sienna { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sienna : System.Drawing.Color" Usage="System.Drawing.Color.Sienna" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5559,6 +5706,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Silver" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Silver As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Silver { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Silver : System.Drawing.Color" Usage="System.Drawing.Color.Silver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5595,6 +5743,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SkyBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SkyBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SkyBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SkyBlue : System.Drawing.Color" Usage="System.Drawing.Color.SkyBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5631,6 +5780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SlateBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SlateBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateBlue : System.Drawing.Color" Usage="System.Drawing.Color.SlateBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5667,6 +5817,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SlateGray" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlateGray As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SlateGray { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SlateGray : System.Drawing.Color" Usage="System.Drawing.Color.SlateGray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5703,6 +5854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Snow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Snow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Snow { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Snow : System.Drawing.Color" Usage="System.Drawing.Color.Snow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5739,6 +5891,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SpringGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SpringGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SpringGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpringGreen : System.Drawing.Color" Usage="System.Drawing.Color.SpringGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5775,6 +5928,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.SteelBlue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SteelBlue As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color SteelBlue { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.SteelBlue : System.Drawing.Color" Usage="System.Drawing.Color.SteelBlue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5811,6 +5965,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Tan" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tan As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Tan { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tan : System.Drawing.Color" Usage="System.Drawing.Color.Tan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5847,6 +6002,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Teal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Teal As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Teal { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Teal : System.Drawing.Color" Usage="System.Drawing.Color.Teal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5883,6 +6039,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Thistle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Thistle As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Thistle { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Thistle : System.Drawing.Color" Usage="System.Drawing.Color.Thistle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5919,6 +6076,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.ToArgb" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArgb () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToArgb();" />
+      <MemberSignature Language="F#" Value="member this.ToArgb : unit -&gt; int" Usage="color.ToArgb " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -5975,6 +6133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.ToKnownColor" />
       <MemberSignature Language="VB.NET" Value="Public Function ToKnownColor () As KnownColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::KnownColor ToKnownColor();" />
+      <MemberSignature Language="F#" Value="member this.ToKnownColor : unit -&gt; System.Drawing.KnownColor" Usage="color.ToKnownColor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6011,6 +6170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Tomato" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Tomato As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Tomato { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tomato : System.Drawing.Color" Usage="System.Drawing.Color.Tomato" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6047,6 +6207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="color.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6101,6 +6262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Transparent As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Transparent { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Transparent : System.Drawing.Color" Usage="System.Drawing.Color.Transparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6141,6 +6303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Turquoise" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Turquoise As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Turquoise { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Turquoise : System.Drawing.Color" Usage="System.Drawing.Color.Turquoise" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6177,6 +6340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Violet" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Violet As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Violet { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Violet : System.Drawing.Color" Usage="System.Drawing.Color.Violet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6213,6 +6377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Wheat" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Wheat As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Wheat { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Wheat : System.Drawing.Color" Usage="System.Drawing.Color.Wheat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6249,6 +6414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.White" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property White As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color White { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.White : System.Drawing.Color" Usage="System.Drawing.Color.White" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6285,6 +6451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.WhiteSmoke" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WhiteSmoke As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color WhiteSmoke { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.WhiteSmoke : System.Drawing.Color" Usage="System.Drawing.Color.WhiteSmoke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6321,6 +6488,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.Yellow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Yellow As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color Yellow { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.Yellow : System.Drawing.Color" Usage="System.Drawing.Color.Yellow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -6357,6 +6525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Color.YellowGreen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property YellowGreen As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Color YellowGreen { System::Drawing::Color get(); };" />
+      <MemberSignature Language="F#" Value="member this.YellowGreen : System.Drawing.Color" Usage="System.Drawing.Color.YellowGreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

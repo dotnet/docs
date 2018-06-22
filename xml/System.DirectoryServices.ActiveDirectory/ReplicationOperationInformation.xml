@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class ReplicationOperationInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReplicationOperationInformation" />
+  <TypeSignature Language="F#" Value="type ReplicationOperationInformation = class" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.CurrentOperation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentOperation As ReplicationOperation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ CurrentOperation { System::DirectoryServices::ActiveDirectory::ReplicationOperation ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentOperation : System.DirectoryServices.ActiveDirectory.ReplicationOperation" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.CurrentOperation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.OperationStartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationStartTime As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OperationStartTime { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperationStartTime : DateTime" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.OperationStartTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.PendingOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PendingOperations As ReplicationOperationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationOperationCollection ^ PendingOperations { System::DirectoryServices::ActiveDirectory::ReplicationOperationCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PendingOperations : System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection" Usage="System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation.PendingOperations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.IWebPropertyAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebPropertyAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebPropertyAccessor" />
+  <TypeSignature Language="F#" Value="type IWebPropertyAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebPropertyAccessor.GetProperty(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProperty (target As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProperty(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : obj -&gt; obj" Usage="iWebPropertyAccessor.GetProperty target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebPropertyAccessor.SetProperty(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (target As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::Object ^ target, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member SetProperty : obj * obj -&gt; unit" Usage="iWebPropertyAccessor.SetProperty (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

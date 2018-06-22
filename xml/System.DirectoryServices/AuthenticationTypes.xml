@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AuthenticationTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationTypes" />
   <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationTypes" />
+  <TypeSignature Language="F#" Value="type AuthenticationTypes = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="C++ CLI" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 16" Usage="System.DirectoryServices.AuthenticationTypes.Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -70,6 +72,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Delegation" />
       <MemberSignature Language="VB.NET" Value="Delegation" />
       <MemberSignature Language="C++ CLI" Value="Delegation" />
+      <MemberSignature Language="F#" Value="Delegation = 256" Usage="System.DirectoryServices.AuthenticationTypes.Delegation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -90,6 +93,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Encryption" />
       <MemberSignature Language="VB.NET" Value="Encryption" />
       <MemberSignature Language="C++ CLI" Value="Encryption" />
+      <MemberSignature Language="F#" Value="Encryption = 2" Usage="System.DirectoryServices.AuthenticationTypes.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -110,6 +114,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.FastBind" />
       <MemberSignature Language="VB.NET" Value="FastBind" />
       <MemberSignature Language="C++ CLI" Value="FastBind" />
+      <MemberSignature Language="F#" Value="FastBind = 32" Usage="System.DirectoryServices.AuthenticationTypes.FastBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -130,6 +135,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.AuthenticationTypes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -150,6 +156,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.ReadonlyServer" />
       <MemberSignature Language="VB.NET" Value="ReadonlyServer" />
       <MemberSignature Language="C++ CLI" Value="ReadonlyServer" />
+      <MemberSignature Language="F#" Value="ReadonlyServer = 4" Usage="System.DirectoryServices.AuthenticationTypes.ReadonlyServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -170,6 +177,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Sealing" />
       <MemberSignature Language="VB.NET" Value="Sealing" />
       <MemberSignature Language="C++ CLI" Value="Sealing" />
+      <MemberSignature Language="F#" Value="Sealing = 128" Usage="System.DirectoryServices.AuthenticationTypes.Sealing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -190,6 +198,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Secure" />
       <MemberSignature Language="VB.NET" Value="Secure" />
       <MemberSignature Language="C++ CLI" Value="Secure" />
+      <MemberSignature Language="F#" Value="Secure = 1" Usage="System.DirectoryServices.AuthenticationTypes.Secure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -210,6 +219,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.SecureSocketsLayer" />
       <MemberSignature Language="VB.NET" Value="SecureSocketsLayer" />
       <MemberSignature Language="C++ CLI" Value="SecureSocketsLayer" />
+      <MemberSignature Language="F#" Value="SecureSocketsLayer = 2" Usage="System.DirectoryServices.AuthenticationTypes.SecureSocketsLayer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -230,6 +240,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.ServerBind" />
       <MemberSignature Language="VB.NET" Value="ServerBind" />
       <MemberSignature Language="C++ CLI" Value="ServerBind" />
+      <MemberSignature Language="F#" Value="ServerBind = 512" Usage="System.DirectoryServices.AuthenticationTypes.ServerBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -250,6 +261,7 @@ LDAP://CN=jsmith,DC=fabrikam,DC=Com
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Signing" />
       <MemberSignature Language="VB.NET" Value="Signing" />
       <MemberSignature Language="C++ CLI" Value="Signing" />
+      <MemberSignature Language="F#" Value="Signing = 64" Usage="System.DirectoryServices.AuthenticationTypes.Signing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

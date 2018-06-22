@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleSelection" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessibleSelection" />
   <TypeSignature Language="C++ CLI" Value="public enum class AccessibleSelection" />
+  <TypeSignature Language="F#" Value="type AccessibleSelection = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.AddSelection" />
       <MemberSignature Language="VB.NET" Value="AddSelection" />
       <MemberSignature Language="C++ CLI" Value="AddSelection" />
+      <MemberSignature Language="F#" Value="AddSelection = 8" Usage="System.Windows.Forms.AccessibleSelection.AddSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.ExtendSelection" />
       <MemberSignature Language="VB.NET" Value="ExtendSelection" />
       <MemberSignature Language="C++ CLI" Value="ExtendSelection" />
+      <MemberSignature Language="F#" Value="ExtendSelection = 4" Usage="System.Windows.Forms.AccessibleSelection.ExtendSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.AccessibleSelection.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.RemoveSelection" />
       <MemberSignature Language="VB.NET" Value="RemoveSelection" />
       <MemberSignature Language="C++ CLI" Value="RemoveSelection" />
+      <MemberSignature Language="F#" Value="RemoveSelection = 16" Usage="System.Windows.Forms.AccessibleSelection.RemoveSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeFocus" />
       <MemberSignature Language="VB.NET" Value="TakeFocus" />
       <MemberSignature Language="C++ CLI" Value="TakeFocus" />
+      <MemberSignature Language="F#" Value="TakeFocus = 1" Usage="System.Windows.Forms.AccessibleSelection.TakeFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeSelection" />
       <MemberSignature Language="VB.NET" Value="TakeSelection" />
       <MemberSignature Language="C++ CLI" Value="TakeSelection" />
+      <MemberSignature Language="F#" Value="TakeSelection = 2" Usage="System.Windows.Forms.AccessibleSelection.TakeSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

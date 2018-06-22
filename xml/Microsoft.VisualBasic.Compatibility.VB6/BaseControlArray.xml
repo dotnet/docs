@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseControlArray&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseControlArray abstract : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type BaseControlArray = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (Container As IContainer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseControlArray(System::ComponentModel::IContainer ^ Container);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray Container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseCanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseCanExtend (target As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool BaseCanExtend(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="member this.BaseCanExtend : obj -&gt; bool" Usage="baseControlArray.BaseCanExtend target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseGetIndex(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGetIndex (ctl As Object) As Short" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; short BaseGetIndex(System::Object ^ ctl);" />
+      <MemberSignature Language="F#" Value="member this.BaseGetIndex : obj -&gt; int16" Usage="baseControlArray.BaseGetIndex ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseGetItem(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGetItem (Index As Short) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ BaseGetItem(short Index);" />
+      <MemberSignature Language="F#" Value="member this.BaseGetItem : int16 -&gt; obj" Usage="baseControlArray.BaseGetItem Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseResetIndex(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseResetIndex (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseResetIndex(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.BaseResetIndex : obj -&gt; unit" Usage="baseControlArray.BaseResetIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyinstance void BaseSetIndex(object ctl, int16 Index, bool fIsDynamic) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseSetIndex(System.Object,System.Int16,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseSetIndex (ctl As Object, Index As Short, Optional fIsDynamic As Boolean = false)" />
+      <MemberSignature Language="F#" Value="member this.BaseSetIndex : obj * int16 * bool -&gt; unit" Usage="baseControlArray.BaseSetIndex (ctl, Index, fIsDynamic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.BaseShouldSerializeIndex(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseShouldSerializeIndex (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool BaseShouldSerializeIndex(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="member this.BaseShouldSerializeIndex : obj -&gt; bool" Usage="baseControlArray.BaseShouldSerializeIndex o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.components" />
       <MemberSignature Language="VB.NET" Value="Protected components As IContainer " />
       <MemberSignature Language="C++ CLI" Value="protected: System::ComponentModel::IContainer ^ components;" />
+      <MemberSignature Language="F#" Value="val mutable components : System.ComponentModel.IContainer" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.components" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -363,6 +372,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controlAddedAtDesignTime" />
       <MemberSignature Language="VB.NET" Value="Protected controlAddedAtDesignTime As Hashtable " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ controlAddedAtDesignTime;" />
+      <MemberSignature Language="F#" Value="val mutable controlAddedAtDesignTime : System.Collections.Hashtable" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controlAddedAtDesignTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -392,6 +402,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controls" />
       <MemberSignature Language="VB.NET" Value="Protected controls As Hashtable " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ controls;" />
+      <MemberSignature Language="F#" Value="val mutable controls : System.Collections.Hashtable" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.controls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -421,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Count" />
       <MemberSignature Language="VB.NET" Value="Public Function Count () As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short Count();" />
+      <MemberSignature Language="F#" Value="member this.Count : unit -&gt; int16" Usage="baseControlArray.Count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -454,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="baseControlArray.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -491,6 +504,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.fIsEndInitCalled" />
       <MemberSignature Language="VB.NET" Value="Protected fIsEndInitCalled As Boolean " />
       <MemberSignature Language="C++ CLI" Value="protected: bool fIsEndInitCalled;" />
+      <MemberSignature Language="F#" Value="val mutable fIsEndInitCalled : bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.fIsEndInitCalled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -520,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetControlInstanceType () As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract Type ^ GetControlInstanceType();" />
+      <MemberSignature Language="F#" Value="abstract member GetControlInstanceType : unit -&gt; Type" Usage="baseControlArray.GetControlInstanceType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -551,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="baseControlArray.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -582,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void HookUpControlEvents(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member HookUpControlEvents : obj -&gt; unit" Usage="baseControlArray.HookUpControlEvents o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -620,6 +637,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.indices" />
       <MemberSignature Language="VB.NET" Value="Protected indices As Hashtable " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ indices;" />
+      <MemberSignature Language="F#" Value="val mutable indices : System.Collections.Hashtable" Usage="Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.indices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -649,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.LBound" />
       <MemberSignature Language="VB.NET" Value="Public Function LBound () As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short LBound();" />
+      <MemberSignature Language="F#" Value="member this.LBound : unit -&gt; int16" Usage="baseControlArray.LBound " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -682,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Load(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (Index As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(short Index);" />
+      <MemberSignature Language="F#" Value="member this.Load : int16 -&gt; unit" Usage="baseControlArray.Load Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -777,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.UBound" />
       <MemberSignature Language="VB.NET" Value="Public Function UBound () As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; short UBound();" />
+      <MemberSignature Language="F#" Value="member this.UBound : unit -&gt; int16" Usage="baseControlArray.UBound " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -810,6 +831,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray.Unload(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unload (Index As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unload(short Index);" />
+      <MemberSignature Language="F#" Value="member this.Unload : int16 -&gt; unit" Usage="baseControlArray.Unload Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class ChtmlMobileTextWriter&#xA;Inherits HtmlMobileTextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChtmlMobileTextWriter : System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter" />
+  <TypeSignature Language="F#" Value="type ChtmlMobileTextWriter = class&#xA;    inherit HtmlMobileTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlMobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter : System.IO.TextWriter * System.Web.Mobile.MobileCapabilities -&gt; System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" Usage="new System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter (writer, device)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

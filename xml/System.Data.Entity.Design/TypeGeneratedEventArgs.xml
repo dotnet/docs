@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.TypeGeneratedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeGeneratedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeGeneratedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type TypeGeneratedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.GlobalItem,System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeSource As GlobalItem, baseType As CodeTypeReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeGeneratedEventArgs(System::Data::Metadata::Edm::GlobalItem ^ typeSource, System::CodeDom::CodeTypeReference ^ baseType);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.TypeGeneratedEventArgs : System.Data.Metadata.Edm.GlobalItem * System.CodeDom.CodeTypeReference -&gt; System.Data.Entity.Design.TypeGeneratedEventArgs" Usage="new System.Data.Entity.Design.TypeGeneratedEventArgs (typeSource, baseType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalAttributes As List(Of CodeAttributeDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ AdditionalAttributes { System::Collections::Generic::List&lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalAttributes : System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt;" Usage="System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalInterfaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalInterfaces As List(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Type ^&gt; ^ AdditionalInterfaces { System::Collections::Generic::List&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalInterfaces : System.Collections.Generic.List&lt;Type&gt;" Usage="System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalInterfaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalMembers As List(Of CodeTypeMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::CodeDom::CodeTypeMember ^&gt; ^ AdditionalMembers { System::Collections::Generic::List&lt;System::CodeDom::CodeTypeMember ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdditionalMembers : System.Collections.Generic.List&lt;System.CodeDom.CodeTypeMember&gt;" Usage="System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.TypeGeneratedEventArgs.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseType As CodeTypeReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ BaseType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseType : System.CodeDom.CodeTypeReference with get, set" Usage="System.Data.Entity.Design.TypeGeneratedEventArgs.BaseType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.TypeGeneratedEventArgs.TypeSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeSource As GlobalItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::GlobalItem ^ TypeSource { System::Data::Metadata::Edm::GlobalItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeSource : System.Data.Metadata.Edm.GlobalItem" Usage="System.Data.Entity.Design.TypeGeneratedEventArgs.TypeSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MarkupExtensionReturnTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MarkupExtensionReturnTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarkupExtensionReturnTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MarkupExtensionReturnTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (returnType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MarkupExtensionReturnTypeAttribute(Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.MarkupExtensionReturnTypeAttribute : Type -&gt; System.Windows.Markup.MarkupExtensionReturnTypeAttribute" Usage="new System.Windows.Markup.MarkupExtensionReturnTypeAttribute returnType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (returnType As Type, expressionType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MarkupExtensionReturnTypeAttribute(Type ^ returnType, Type ^ expressionType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.MarkupExtensionReturnTypeAttribute : Type * Type -&gt; System.Windows.Markup.MarkupExtensionReturnTypeAttribute" Usage="new System.Windows.Markup.MarkupExtensionReturnTypeAttribute (returnType, expressionType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ExpressionType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ExpressionType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpressionType : Type" Usage="System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ExpressionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

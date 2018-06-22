@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeakCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SpeakCompletedEventArgs&#xA;Inherits PromptEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpeakCompletedEventArgs : System::Speech::Synthesis::PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type SpeakCompletedEventArgs = class&#xA;    inherit PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

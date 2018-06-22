@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityTrackingLocation" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityTrackingLocation sealed" />
+  <TypeSignature Language="F#" Value="type ActivityTrackingLocation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(System::String ^ activityTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : string -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation activityTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(Type ^ activityType);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : Type -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation activityType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -173,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityTypeName As String, executionStatusEvents As IEnumerable(Of ActivityExecutionStatus))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(System::String ^ activityTypeName, System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ executionStatusEvents);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : string * seq&lt;System.Workflow.ComponentModel.ActivityExecutionStatus&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation (activityTypeName, executionStatusEvents)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityType As Type, executionStatusEvents As IEnumerable(Of ActivityExecutionStatus))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(Type ^ activityType, System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ executionStatusEvents);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : Type * seq&lt;System.Workflow.ComponentModel.ActivityExecutionStatus&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation (activityType, executionStatusEvents)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -261,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityTypeName As String, matchDerivedTypes As Boolean, executionStatusEvents As IEnumerable(Of ActivityExecutionStatus))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(System::String ^ activityTypeName, bool matchDerivedTypes, System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ executionStatusEvents);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : string * bool * seq&lt;System.Workflow.ComponentModel.ActivityExecutionStatus&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation (activityTypeName, matchDerivedTypes, executionStatusEvents)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -309,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type,System.Boolean,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityType As Type, matchDerivedTypes As Boolean, executionStatusEvents As IEnumerable(Of ActivityExecutionStatus))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocation(Type ^ activityType, bool matchDerivedTypes, System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ executionStatusEvents);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation : Type * bool * seq&lt;System.Workflow.ComponentModel.ActivityExecutionStatus&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocation (activityType, matchDerivedTypes, executionStatusEvents)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -355,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ActivityType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityType : Type with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityTypeName : string with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -413,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conditions As TrackingConditionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::TrackingConditionCollection ^ Conditions { System::Workflow::Runtime::Tracking::TrackingConditionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conditions : System.Workflow.Runtime.Tracking.TrackingConditionCollection" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -442,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ExecutionStatusEvents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionStatusEvents As IList(Of ActivityExecutionStatus)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ ExecutionStatusEvents { System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::ActivityExecutionStatus&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionStatusEvents : System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.ActivityExecutionStatus&gt;" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ExecutionStatusEvents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -469,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.MatchDerivedTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchDerivedTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchDerivedTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MatchDerivedTypes : bool with get, set" Usage="System.Workflow.Runtime.Tracking.ActivityTrackingLocation.MatchDerivedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

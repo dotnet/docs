@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaItemType" />
   <TypeSignature Language="VB.NET" Value="Public Enum JSVsaItemType" />
   <TypeSignature Language="C++ CLI" Value="public enum class JSVsaItemType" />
+  <TypeSignature Language="F#" Value="type JSVsaItemType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.AppGlobal" />
       <MemberSignature Language="VB.NET" Value="AppGlobal" />
       <MemberSignature Language="C++ CLI" Value="AppGlobal" />
+      <MemberSignature Language="F#" Value="AppGlobal = 1" Usage="Microsoft.JScript.Vsa.JSVsaItemType.AppGlobal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Code" />
       <MemberSignature Language="VB.NET" Value="Code" />
       <MemberSignature Language="C++ CLI" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 2" Usage="Microsoft.JScript.Vsa.JSVsaItemType.Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Reference" />
       <MemberSignature Language="VB.NET" Value="Reference" />
       <MemberSignature Language="C++ CLI" Value="Reference" />
+      <MemberSignature Language="F#" Value="Reference = 0" Usage="Microsoft.JScript.Vsa.JSVsaItemType.Reference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

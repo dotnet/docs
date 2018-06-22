@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.MetadataTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MetadataTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MetadataTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.MetadataTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadataClassType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataTypeAttribute(Type ^ metadataClassType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.MetadataTypeAttribute : Type -&gt; System.ComponentModel.DataAnnotations.MetadataTypeAttribute" Usage="new System.ComponentModel.DataAnnotations.MetadataTypeAttribute metadataClassType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.MetadataTypeAttribute.MetadataClassType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataClassType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MetadataClassType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataClassType : Type" Usage="System.ComponentModel.DataAnnotations.MetadataTypeAttribute.MetadataClassType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

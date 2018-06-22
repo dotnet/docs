@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisTextFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum SynthesisTextFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class SynthesisTextFormat" />
+  <TypeSignature Language="F#" Value="type SynthesisTextFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Ssml" />
       <MemberSignature Language="VB.NET" Value="Ssml" />
       <MemberSignature Language="C++ CLI" Value="Ssml" />
+      <MemberSignature Language="F#" Value="Ssml = 1" Usage="System.Speech.Synthesis.SynthesisTextFormat.Ssml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Speech.Synthesis.SynthesisTextFormat.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

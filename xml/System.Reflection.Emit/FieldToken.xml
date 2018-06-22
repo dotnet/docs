@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.FieldToken" />
   <TypeSignature Language="VB.NET" Value="Public Structure FieldToken" />
   <TypeSignature Language="C++ CLI" Value="public value class FieldToken" />
+  <TypeSignature Language="F#" Value="type FieldToken = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.FieldToken.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As FieldToken " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::FieldToken Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Reflection.Emit.FieldToken" Usage="System.Reflection.Emit.FieldToken.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldToken.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fieldToken.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldToken.Equals(System.Reflection.Emit.FieldToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As FieldToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Reflection::Emit::FieldToken obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Emit.FieldToken -&gt; bool" Usage="fieldToken.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldToken.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fieldToken.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldToken.op_Equality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As FieldToken, b As FieldToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::FieldToken a, System::Reflection::Emit::FieldToken b);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Emit.FieldToken * System.Reflection.Emit.FieldToken -&gt; bool" Usage="a = b" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.FieldToken.op_Inequality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As FieldToken, b As FieldToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::FieldToken a, System::Reflection::Emit::FieldToken b);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Emit.FieldToken * System.Reflection.Emit.FieldToken -&gt; bool" Usage="System.Reflection.Emit.FieldToken.op_Inequality (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.FieldToken.Token" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Token { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Token : int" Usage="System.Reflection.Emit.FieldToken.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

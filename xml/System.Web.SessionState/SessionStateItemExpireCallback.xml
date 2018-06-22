@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemExpireCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub SessionStateItemExpireCallback(id As String, item As SessionStateStoreData)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void SessionStateItemExpireCallback(System::String ^ id, SessionStateStoreData ^ item);" />
+  <TypeSignature Language="F#" Value="type SessionStateItemExpireCallback = delegate of string * SessionStateStoreData -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

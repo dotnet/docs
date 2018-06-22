@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class DsmlRequestDocument&#xA;Inherits DsmlDocument&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class DsmlRequestDocument : System::DirectoryServices::Protocols::DsmlDocument, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type DsmlRequestDocument = class&#xA;    inherit DsmlDocument&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Add(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (request As DirectoryRequest) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::Protocols::DirectoryRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.DirectoryServices.Protocols.DirectoryRequest -&gt; int" Usage="dsmlRequestDocument.Add request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dsmlRequestDocument.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Contains(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DirectoryRequest) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::Protocols::DirectoryRequest ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.Protocols.DirectoryRequest -&gt; bool" Usage="dsmlRequestDocument.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.CopyTo(System.DirectoryServices.Protocols.DirectoryRequest[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (value As DirectoryRequest(), i As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::Protocols::DirectoryRequest ^&gt; ^ value, int i);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.Protocols.DirectoryRequest[] * int -&gt; unit" Usage="dsmlRequestDocument.CopyTo (value, i)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.DocumentProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Property DocumentProcessing As DsmlDocumentProcessing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DsmlDocumentProcessing DocumentProcessing { System::DirectoryServices::Protocols::DsmlDocumentProcessing get(); void set(System::DirectoryServices::Protocols::DsmlDocumentProcessing value); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentProcessing : System.DirectoryServices.Protocols.DsmlDocumentProcessing with get, set" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.DocumentProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ErrorProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorProcessing As DsmlErrorProcessing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DsmlErrorProcessing ErrorProcessing { System::DirectoryServices::Protocols::DsmlErrorProcessing get(); void set(System::DirectoryServices::Protocols::DsmlErrorProcessing value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorProcessing : System.DirectoryServices.Protocols.DsmlErrorProcessing with get, set" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.ErrorProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dsmlRequestDocument.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.IndexOf(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DirectoryRequest) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::Protocols::DirectoryRequest ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.Protocols.DirectoryRequest -&gt; int" Usage="dsmlRequestDocument.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -269,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Insert(System.Int32,System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DirectoryRequest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::Protocols::DirectoryRequest ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.DirectoryServices.Protocols.DirectoryRequest -&gt; unit" Usage="dsmlRequestDocument.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -320,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -344,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -368,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DirectoryRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryRequest ^ default[int] { System::DirectoryServices::Protocols::DirectoryRequest ^ get(int index); void set(int index, System::DirectoryServices::Protocols::DirectoryRequest ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.Protocols.DirectoryRequest with get, set" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -394,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Remove(System.DirectoryServices.Protocols.DirectoryRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DirectoryRequest)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::Protocols::DirectoryRequest ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.DirectoryServices.Protocols.DirectoryRequest -&gt; unit" Usage="dsmlRequestDocument.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -419,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dsmlRequestDocument.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -445,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.RequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestId : string with get, set" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.RequestId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -465,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ResponseOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseOrder As DsmlResponseOrder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DsmlResponseOrder ResponseOrder { System::DirectoryServices::Protocols::DsmlResponseOrder get(); void set(System::DirectoryServices::Protocols::DsmlResponseOrder value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseOrder : System.DirectoryServices.Protocols.DsmlResponseOrder with get, set" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.ResponseOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -487,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -545,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -568,6 +589,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -592,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -758,6 +781,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -782,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -806,6 +831,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -891,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlDocument ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Xml.XmlDocument" Usage="dsmlRequestDocument.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

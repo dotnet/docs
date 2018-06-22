@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPriority" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadPriority" />
   <TypeSignature Language="C++ CLI" Value="public enum class ThreadPriority" />
+  <TypeSignature Language="F#" Value="type ThreadPriority = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
       <MemberSignature Language="C++ CLI" Value="AboveNormal" />
+      <MemberSignature Language="F#" Value="AboveNormal = 3" Usage="System.Threading.ThreadPriority.AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.BelowNormal" />
       <MemberSignature Language="VB.NET" Value="BelowNormal" />
       <MemberSignature Language="C++ CLI" Value="BelowNormal" />
+      <MemberSignature Language="F#" Value="BelowNormal = 1" Usage="System.Threading.ThreadPriority.BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Highest" />
       <MemberSignature Language="VB.NET" Value="Highest" />
       <MemberSignature Language="C++ CLI" Value="Highest" />
+      <MemberSignature Language="F#" Value="Highest = 4" Usage="System.Threading.ThreadPriority.Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Lowest" />
       <MemberSignature Language="VB.NET" Value="Lowest" />
       <MemberSignature Language="C++ CLI" Value="Lowest" />
+      <MemberSignature Language="F#" Value="Lowest = 0" Usage="System.Threading.ThreadPriority.Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="C++ CLI" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 2" Usage="System.Threading.ThreadPriority.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

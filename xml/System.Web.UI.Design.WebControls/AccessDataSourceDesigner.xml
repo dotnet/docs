@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.AccessDataSourceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessDataSourceDesigner&#xA;Inherits SqlDataSourceDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessDataSourceDesigner : System::Web::UI::Design::WebControls::SqlDataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type AccessDataSourceDesigner = class&#xA;    inherit SqlDataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFile : string with get, set" Usage="System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.GetConnectionString" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetConnectionString () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetConnectionString();" />
+      <MemberSignature Language="F#" Value="override this.GetConnectionString : unit -&gt; string" Usage="accessDataSourceDesigner.GetConnectionString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="accessDataSourceDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

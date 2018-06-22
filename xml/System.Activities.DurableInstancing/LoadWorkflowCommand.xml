@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.LoadWorkflowCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LoadWorkflowCommand&#xA;Inherits InstancePersistenceCommand" />
   <TypeSignature Language="C++ CLI" Value="public ref class LoadWorkflowCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type LoadWorkflowCommand = class&#xA;    inherit InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowCommand.AcceptUninitializedInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptUninitializedInstance As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptUninitializedInstance { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptUninitializedInstance : bool with get, set" Usage="System.Activities.DurableInstancing.LoadWorkflowCommand.AcceptUninitializedInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowCommand.AutomaticallyAcquiringLock" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property AutomaticallyAcquiringLock As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AutomaticallyAcquiringLock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyAcquiringLock : bool" Usage="System.Activities.DurableInstancing.LoadWorkflowCommand.AutomaticallyAcquiringLock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowCommand.IsTransactionEnlistmentOptional" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.LoadWorkflowCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.LoadWorkflowCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="loadWorkflowCommand.Validate view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

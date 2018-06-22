@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Instrumentation.PageInstrumentationService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageInstrumentationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageInstrumentationService sealed" />
+  <TypeSignature Language="F#" Value="type PageInstrumentationService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageInstrumentationService.ExecutionListeners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionListeners As IList(Of PageExecutionListener)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Web::Instrumentation::PageExecutionListener ^&gt; ^ ExecutionListeners { System::Collections::Generic::IList&lt;System::Web::Instrumentation::PageExecutionListener ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionListeners : System.Collections.Generic.IList&lt;System.Web.Instrumentation.PageExecutionListener&gt;" Usage="System.Web.Instrumentation.PageInstrumentationService.ExecutionListeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Instrumentation.PageInstrumentationService.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Web.Instrumentation.PageInstrumentationService.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyMap" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyMap" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyMap" />
+  <TypeSignature Language="F#" Value="type PropertyMap = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyMap(System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Integration.PropertyMap : obj -&gt; System.Windows.Forms.Integration.PropertyMap" Usage="new System.Windows.Forms.Integration.PropertyMap source" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Add(System.String,System.Windows.Forms.Integration.PropertyTranslator)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (propertyName As String, translator As PropertyTranslator)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ propertyName, System::Windows::Forms::Integration::PropertyTranslator ^ translator);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Windows.Forms.Integration.PropertyTranslator -&gt; unit" Usage="propertyMap.Add (propertyName, translator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Apply(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Apply (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Apply : string -&gt; unit" Usage="propertyMap.Apply propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.ApplyAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyAll();" />
+      <MemberSignature Language="F#" Value="member this.ApplyAll : unit -&gt; unit" Usage="propertyMap.ApplyAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="propertyMap.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (propertyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="propertyMap.Contains propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.DefaultTranslators" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DefaultTranslators As Dictionary(Of String, PropertyTranslator)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Windows::Forms::Integration::PropertyTranslator ^&gt; ^ DefaultTranslators { System::Collections::Generic::Dictionary&lt;System::String ^, System::Windows::Forms::Integration::PropertyTranslator ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTranslators : System.Collections.Generic.Dictionary&lt;string, System.Windows.Forms.Integration.PropertyTranslator&gt;" Usage="System.Windows.Forms.Integration.PropertyMap.DefaultTranslators" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As PropertyTranslator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Integration::PropertyTranslator ^ default[System::String ^] { System::Windows::Forms::Integration::PropertyTranslator ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Windows::Forms::Integration::PropertyTranslator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.Integration.PropertyTranslator with get, set" Usage="System.Windows.Forms.Integration.PropertyMap.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Windows.Forms.Integration.PropertyMap.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -359,6 +369,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyMappingError As EventHandler(Of PropertyMappingExceptionEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Forms::Integration::PropertyMappingExceptionEventArgs ^&gt; ^ PropertyMappingError;" />
+      <MemberSignature Language="F#" Value="member this.PropertyMappingError : EventHandler&lt;System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt; " Usage="member this.PropertyMappingError : System.EventHandler&lt;System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -387,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="propertyMap.Remove propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Reset(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.Reset : string -&gt; unit" Usage="propertyMap.Reset propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.ResetAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAll();" />
+      <MemberSignature Language="F#" Value="member this.ResetAll : unit -&gt; unit" Usage="propertyMap.ResetAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -504,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.SourceObject" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SourceObject As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ SourceObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceObject : obj" Usage="System.Windows.Forms.Integration.PropertyMap.SourceObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -533,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Windows.Forms.Integration.PropertyMap.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

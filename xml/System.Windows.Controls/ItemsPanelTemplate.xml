@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemsPanelTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class ItemsPanelTemplate&#xA;Inherits FrameworkTemplate" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemsPanelTemplate : System::Windows::FrameworkTemplate" />
+  <TypeSignature Language="F#" Value="type ItemsPanelTemplate = class&#xA;    inherit FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@ Alternatively, you can do the following to achieve the same results. In this cas
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPanelTemplate.#ctor(System.Windows.FrameworkElementFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (root As FrameworkElementFactory)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemsPanelTemplate(System::Windows::FrameworkElementFactory ^ root);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.ItemsPanelTemplate : System.Windows.FrameworkElementFactory -&gt; System.Windows.Controls.ItemsPanelTemplate" Usage="new System.Windows.Controls.ItemsPanelTemplate root" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +97,7 @@ Alternatively, you can do the following to achieve the same results. In this cas
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPanelTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
+      <MemberSignature Language="F#" Value="override this.ValidateTemplatedParent : System.Windows.FrameworkElement -&gt; unit" Usage="itemsPanelTemplate.ValidateTemplatedParent templatedParent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

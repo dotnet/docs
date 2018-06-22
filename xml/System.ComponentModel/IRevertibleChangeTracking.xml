@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IRevertibleChangeTracking" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRevertibleChangeTracking&#xA;Implements IChangeTracking" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRevertibleChangeTracking : System::ComponentModel::IChangeTracking" />
+  <TypeSignature Language="F#" Value="type IRevertibleChangeTracking = interface&#xA;    interface IChangeTracking" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IRevertibleChangeTracking.RejectChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectChanges();" />
+      <MemberSignature Language="F#" Value="abstract member RejectChanges : unit -&gt; unit" Usage="iRevertibleChangeTracking.RejectChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel</AssemblyName>

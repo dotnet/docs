@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of DynamicEndpoint, DynamicEndpointElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Discovery::DynamicEndpoint ^, System::ServiceModel::Discovery::Configuration::DynamicEndpointElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type DynamicEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;DynamicEndpoint, DynamicEndpointElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

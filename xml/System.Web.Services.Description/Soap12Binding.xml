@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12Binding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12Binding&#xA;Inherits SoapBinding" />
   <TypeSignature Language="C++ CLI" Value="public ref class Soap12Binding sealed : System::Web::Services::Description::SoapBinding" />
+  <TypeSignature Language="F#" Value="type Soap12Binding = class&#xA;    inherit SoapBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.Soap12Binding.HttpTransport" />
       <MemberSignature Language="VB.NET" Value="Public Const HttpTransport As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpTransport;" />
+      <MemberSignature Language="F#" Value="val mutable HttpTransport : string" Usage="System.Web.Services.Description.Soap12Binding.HttpTransport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.Soap12Binding.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.Soap12Binding.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Lazy`2" />
   <TypeSignature Language="VB.NET" Value="Public Class Lazy(Of T, TMetadata)&#xA;Inherits Lazy(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T, typename TMetadata&gt;&#xA;public ref class Lazy : Lazy&lt;T&gt;" />
+  <TypeSignature Language="F#" Value="type Lazy&lt;'T, 'Metadata&gt; = class&#xA;    inherit Lazy&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As TMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(TMetadata metadata);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : 'Metadata -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; metadata" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(System.Func{`0},`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), metadata As TMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, TMetadata metadata);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : Func&lt;'T&gt; * 'Metadata -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; (valueFactory, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(`1,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As TMetadata, isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(TMetadata metadata, bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : 'Metadata * bool -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; (metadata, isThreadSafe)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(`1,System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As TMetadata, mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(TMetadata metadata, System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : 'Metadata * System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; (metadata, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(System.Func{`0},`1,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), metadata As TMetadata, isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, TMetadata metadata, bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : Func&lt;'T&gt; * 'Metadata * bool -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; (valueFactory, metadata, isThreadSafe)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`2.#ctor(System.Func{`0},`1,System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), metadata As TMetadata, mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, TMetadata metadata, System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T, 'Metadata&gt; : Func&lt;'T&gt; * 'Metadata * System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T, 'Metadata&gt;" Usage="new System.Lazy&lt;'T, 'Metadata&gt; (valueFactory, metadata, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Lazy`2.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As TMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TMetadata Metadata { TMetadata get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : 'Metadata" Usage="System.Lazy&lt;'T, 'Metadata&gt;.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

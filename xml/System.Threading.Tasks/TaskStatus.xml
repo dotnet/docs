@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum TaskStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class TaskStatus" />
+  <TypeSignature Language="F#" Value="type TaskStatus = " />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Canceled" />
       <MemberSignature Language="VB.NET" Value="Canceled" />
       <MemberSignature Language="C++ CLI" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 6" Usage="System.Threading.Tasks.TaskStatus.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
       <MemberSignature Language="C++ CLI" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 0" Usage="System.Threading.Tasks.TaskStatus.Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Faulted" />
       <MemberSignature Language="VB.NET" Value="Faulted" />
       <MemberSignature Language="C++ CLI" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 7" Usage="System.Threading.Tasks.TaskStatus.Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />
       <MemberSignature Language="VB.NET" Value="RanToCompletion" />
       <MemberSignature Language="C++ CLI" Value="RanToCompletion" />
+      <MemberSignature Language="F#" Value="RanToCompletion = 5" Usage="System.Threading.Tasks.TaskStatus.RanToCompletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Running" />
       <MemberSignature Language="VB.NET" Value="Running" />
       <MemberSignature Language="C++ CLI" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 3" Usage="System.Threading.Tasks.TaskStatus.Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingForActivation" />
       <MemberSignature Language="VB.NET" Value="WaitingForActivation" />
       <MemberSignature Language="C++ CLI" Value="WaitingForActivation" />
+      <MemberSignature Language="F#" Value="WaitingForActivation = 1" Usage="System.Threading.Tasks.TaskStatus.WaitingForActivation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingForChildrenToComplete" />
       <MemberSignature Language="VB.NET" Value="WaitingForChildrenToComplete" />
       <MemberSignature Language="C++ CLI" Value="WaitingForChildrenToComplete" />
+      <MemberSignature Language="F#" Value="WaitingForChildrenToComplete = 4" Usage="System.Threading.Tasks.TaskStatus.WaitingForChildrenToComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingToRun" />
       <MemberSignature Language="VB.NET" Value="WaitingToRun" />
       <MemberSignature Language="C++ CLI" Value="WaitingToRun" />
+      <MemberSignature Language="F#" Value="WaitingToRun = 2" Usage="System.Threading.Tasks.TaskStatus.WaitingToRun" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

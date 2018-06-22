@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UnixDomainSocketEndPoint" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnixDomainSocketEndPoint&#xA;Inherits EndPoint" />
   <TypeSignature Language="C++ CLI" Value="public ref class UnixDomainSocketEndPoint sealed : System::Net::EndPoint" />
+  <TypeSignature Language="F#" Value="type UnixDomainSocketEndPoint = class&#xA;    inherit EndPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UnixDomainSocketEndPoint.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnixDomainSocketEndPoint(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UnixDomainSocketEndPoint : string -&gt; System.Net.Sockets.UnixDomainSocketEndPoint" Usage="new System.Net.Sockets.UnixDomainSocketEndPoint path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

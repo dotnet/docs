@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonContextualTabGroupDataAutomationPeer&#xA;Inherits ItemAutomationPeer&#xA;Implements IInvokeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonContextualTabGroupDataAutomationPeer : System::Windows::Automation::Peers::ItemAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider" />
+  <TypeSignature Language="F#" Value="type RibbonContextualTabGroupDataAutomationPeer = class&#xA;    inherit ItemAutomationPeer&#xA;    interface IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonContextualTabGroupItemsControlAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, owner As RibbonContextualTabGroupItemsControlAutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonContextualTabGroupDataAutomationPeer(System::Object ^ item, System::Windows::Automation::Peers::RibbonContextualTabGroupItemsControlAutomationPeer ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer : obj * System.Windows.Automation.Peers.RibbonContextualTabGroupItemsControlAutomationPeer -&gt; System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer (item, owner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonContextualTabGroupDataAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonContextualTabGroupDataAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonContextualTabGroupDataAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="ribbonContextualTabGroupDataAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

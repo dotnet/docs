@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewHeaderBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewHeaderBorderStyle" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewHeaderBorderStyle" />
+  <TypeSignature Language="F#" Value="type DataGridViewHeaderBorderStyle = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Windows.Forms.DataGridViewHeaderBorderStyle.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="System.Windows.Forms.DataGridViewHeaderBorderStyle.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised" />
       <MemberSignature Language="VB.NET" Value="Raised" />
       <MemberSignature Language="C++ CLI" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 2" Usage="System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
       <MemberSignature Language="C++ CLI" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Forms.DataGridViewHeaderBorderStyle.Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken" />
       <MemberSignature Language="VB.NET" Value="Sunken" />
       <MemberSignature Language="C++ CLI" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 3" Usage="System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

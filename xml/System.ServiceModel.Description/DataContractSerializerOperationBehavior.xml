@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerOperationBehavior&#xA;Implements IOperationBehavior, IWsdlExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerOperationBehavior : System::ServiceModel::Description::IOperationBehavior, System::ServiceModel::Description::IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type DataContractSerializerOperationBehavior = class&#xA;    interface IOperationBehavior&#xA;    interface IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As OperationDescription)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractSerializerOperationBehavior(System::ServiceModel::Description::OperationDescription ^ operation);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.DataContractSerializerOperationBehavior : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Description.DataContractSerializerOperationBehavior" Usage="new System.ServiceModel.Description.DataContractSerializerOperationBehavior operation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.DataContractFormatAttribute dataContractFormatAttribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription,System.ServiceModel.DataContractFormatAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractSerializerOperationBehavior(System::ServiceModel::Description::OperationDescription ^ operation, System::ServiceModel::DataContractFormatAttribute ^ dataContractFormatAttribute);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.DataContractSerializerOperationBehavior : System.ServiceModel.Description.OperationDescription * System.ServiceModel.DataContractFormatAttribute -&gt; System.ServiceModel.Description.DataContractSerializerOperationBehavior" Usage="new System.ServiceModel.Description.DataContractSerializerOperationBehavior (operation, dataContractFormatAttribute)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.XmlObjectSerializer CreateSerializer(class System.Type type, string name, string ns, class System.Collections.Generic.IList`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer(System.Type,System.String,System.String,System.Collections.Generic.IList{System.Type})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::XmlObjectSerializer ^ CreateSerializer(Type ^ type, System::String ^ name, System::String ^ ns, System::Collections::Generic::IList&lt;Type ^&gt; ^ knownTypes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSerializer : Type * string * string * System.Collections.Generic.IList&lt;Type&gt; -&gt; System.Runtime.Serialization.XmlObjectSerializer&#xA;override this.CreateSerializer : Type * string * string * System.Collections.Generic.IList&lt;Type&gt; -&gt; System.Runtime.Serialization.XmlObjectSerializer" Usage="dataContractSerializerOperationBehavior.CreateSerializer (type, name, ns, knownTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.XmlObjectSerializer CreateSerializer(class System.Type type, class System.Xml.XmlDictionaryString name, class System.Xml.XmlDictionaryString ns, class System.Collections.Generic.IList`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Collections.Generic.IList{System.Type})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Serialization::XmlObjectSerializer ^ CreateSerializer(Type ^ type, System::Xml::XmlDictionaryString ^ name, System::Xml::XmlDictionaryString ^ ns, System::Collections::Generic::IList&lt;Type ^&gt; ^ knownTypes);" />
+      <MemberSignature Language="F#" Value="abstract member CreateSerializer : Type * System.Xml.XmlDictionaryString * System.Xml.XmlDictionaryString * System.Collections.Generic.IList&lt;Type&gt; -&gt; System.Runtime.Serialization.XmlObjectSerializer&#xA;override this.CreateSerializer : Type * System.Xml.XmlDictionaryString * System.Xml.XmlDictionaryString * System.Collections.Generic.IList&lt;Type&gt; -&gt; System.Runtime.Serialization.XmlObjectSerializer" Usage="dataContractSerializerOperationBehavior.CreateSerializer (type, name, ns, knownTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractFormatAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataContractFormatAttribute As DataContractFormatAttribute" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::DataContractFormatAttribute ^ DataContractFormatAttribute { System::ServiceModel::DataContractFormatAttribute ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataContractFormatAttribute : System.ServiceModel.DataContractFormatAttribute" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractFormatAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractResolver As DataContractResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DataContractResolver ^ DataContractResolver { System::Runtime::Serialization::DataContractResolver ^ get(); void set(System::Runtime::Serialization::DataContractResolver ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataContractResolver : System.Runtime.Serialization.DataContractResolver with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.IgnoreExtensionDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.IgnoreExtensionDataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.MaxItemsInObjectGraph" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.MaxItemsInObjectGraph" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

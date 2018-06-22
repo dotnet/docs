@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlBuildTypeInspectionExtensionContext&#xA;Inherits BuildExtensionContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlBuildTypeInspectionExtensionContext sealed : Microsoft::Build::Tasks::Xaml::BuildExtensionContext" />
+  <TypeSignature Language="F#" Value="type XamlBuildTypeInspectionExtensionContext = class&#xA;    inherit BuildExtensionContext" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.MarkupItemsByTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MarkupItemsByTypeName As IDictionary(Of String, ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Framework::ITaskItem ^&gt; ^ MarkupItemsByTypeName { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupItemsByTypeName : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Framework.ITaskItem&gt;" Usage="Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.MarkupItemsByTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

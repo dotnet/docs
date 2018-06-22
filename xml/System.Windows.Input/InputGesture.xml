@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputGesture" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputGesture" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputGesture abstract" />
+  <TypeSignature Language="F#" Value="type InputGesture = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
+      <MemberSignature Language="F#" Value="abstract member Matches : obj * System.Windows.Input.InputEventArgs -&gt; bool" Usage="inputGesture.Matches (targetElement, inputEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallSiteHelpers" />
   <TypeSignature Language="VB.NET" Value="Public Class CallSiteHelpers" />
   <TypeSignature Language="C++ CLI" Value="public ref class CallSiteHelpers abstract sealed" />
+  <TypeSignature Language="F#" Value="type CallSiteHelpers = class" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteHelpers.IsInternalFrame(System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsInternalFrame (mb As MethodBase) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsInternalFrame(System::Reflection::MethodBase ^ mb);" />
+      <MemberSignature Language="F#" Value="static member IsInternalFrame : System.Reflection.MethodBase -&gt; bool" Usage="System.Runtime.CompilerServices.CallSiteHelpers.IsInternalFrame mb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

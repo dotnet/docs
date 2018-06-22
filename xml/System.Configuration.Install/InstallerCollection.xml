@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallerCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class InstallerCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstallerCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type InstallerCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.Add(System.Configuration.Install.Installer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Installer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Configuration::Install::Installer ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Configuration.Install.Installer -&gt; int" Usage="installerCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.AddRange(System.Configuration.Install.Installer[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As Installer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Configuration::Install::Installer ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Configuration.Install.Installer[] -&gt; unit" Usage="installerCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.AddRange(System.Configuration.Install.InstallerCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As InstallerCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Configuration::Install::InstallerCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Configuration.Install.InstallerCollection -&gt; unit" Usage="installerCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.Contains(System.Configuration.Install.Installer)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Installer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Configuration::Install::Installer ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Configuration.Install.Installer -&gt; bool" Usage="installerCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.CopyTo(System.Configuration.Install.Installer[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Installer(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::Install::Installer ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Configuration.Install.Installer[] * int -&gt; unit" Usage="installerCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.IndexOf(System.Configuration.Install.Installer)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Installer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Configuration::Install::Installer ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Configuration.Install.Installer -&gt; int" Usage="installerCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -307,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.Insert(System.Int32,System.Configuration.Install.Installer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Installer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Configuration::Install::Installer ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Configuration.Install.Installer -&gt; unit" Usage="installerCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -343,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.InstallerCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Installer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::Installer ^ default[int] { System::Configuration::Install::Installer ^ get(int index); void set(int index, System::Configuration::Install::Installer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.Install.Installer with get, set" Usage="System.Configuration.Install.InstallerCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -384,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="installerCollection.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -409,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="installerCollection.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -434,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="installerCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -461,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallerCollection.Remove(System.Configuration.Install.Installer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Installer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Configuration::Install::Installer ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Configuration.Install.Installer -&gt; unit" Usage="installerCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

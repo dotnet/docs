@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionInterfaceCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionInterfaceCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ConnectionInterfaceCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionInterfaces As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionInterfaceCollection(System::Collections::ICollection ^ connectionInterfaces);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" Usage="new System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection connectionInterfaces" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.#ctor(System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (existingConnectionInterfaces As ConnectionInterfaceCollection, connectionInterfaces As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionInterfaceCollection(System::Web::UI::WebControls::WebParts::ConnectionInterfaceCollection ^ existingConnectionInterfaces, System::Collections::ICollection ^ connectionInterfaces);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection : System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" Usage="new System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection (existingConnectionInterfaces, connectionInterfaces)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.Contains(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(Type ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : Type -&gt; bool" Usage="connectionInterfaceCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.CopyTo(System.Type[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Type(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;Type ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Type[] * int -&gt; unit" Usage="connectionInterfaceCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ConnectionInterfaceCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::ConnectionInterfaceCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" Usage="System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.IndexOf(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Type) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(Type ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : Type -&gt; int" Usage="connectionInterfaceCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ default[int] { Type ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Type" Usage="System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

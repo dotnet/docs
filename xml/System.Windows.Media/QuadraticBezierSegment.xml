@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.QuadraticBezierSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QuadraticBezierSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="C++ CLI" Value="public ref class QuadraticBezierSegment sealed : System::Windows::Media::PathSegment" />
+  <TypeSignature Language="F#" Value="type QuadraticBezierSegment = class&#xA;    inherit PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.QuadraticBezierSegment.#ctor(System.Windows.Point,System.Windows.Point,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As Point, point2 As Point, isStroked As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuadraticBezierSegment(System::Windows::Point point1, System::Windows::Point point2, bool isStroked);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.QuadraticBezierSegment : System.Windows.Point * System.Windows.Point * bool -&gt; System.Windows.Media.QuadraticBezierSegment" Usage="new System.Windows.Media.QuadraticBezierSegment (point1, point2, isStroked)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.QuadraticBezierSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As QuadraticBezierSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::QuadraticBezierSegment ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.QuadraticBezierSegment" Usage="quadraticBezierSegment.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.QuadraticBezierSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As QuadraticBezierSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::QuadraticBezierSegment ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.QuadraticBezierSegment" Usage="quadraticBezierSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.QuadraticBezierSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="quadraticBezierSegment.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.QuadraticBezierSegment.Point1" />
       <MemberSignature Language="VB.NET" Value="Public Property Point1 As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point1 { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Point1 : System.Windows.Point with get, set" Usage="System.Windows.Media.QuadraticBezierSegment.Point1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.QuadraticBezierSegment.Point1Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point1Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Point1Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Point1Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.QuadraticBezierSegment.Point1Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.QuadraticBezierSegment.Point2" />
       <MemberSignature Language="VB.NET" Value="Public Property Point2 As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point2 { System::Windows::Point get(); void set(System::Windows::Point value); };" />
+      <MemberSignature Language="F#" Value="member this.Point2 : System.Windows.Point with get, set" Usage="System.Windows.Media.QuadraticBezierSegment.Point2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.QuadraticBezierSegment.Point2Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point2Property As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Point2Property;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Point2Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.QuadraticBezierSegment.Point2Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

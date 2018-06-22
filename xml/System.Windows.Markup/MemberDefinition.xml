@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MemberDefinition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberDefinition abstract" />
+  <TypeSignature Language="F#" Value="type MemberDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MemberDefinition.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Markup.MemberDefinition.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

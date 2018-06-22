@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.Support" />
   <TypeSignature Language="VB.NET" Value="Public Module Support" />
   <TypeSignature Language="C++ CLI" Value="public ref class Support sealed" />
+  <TypeSignature Language="F#" Value="type Support = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.CopyArray(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyArray (SourceArray As Array) As Array" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CopyArray(Array ^ SourceArray);" />
+      <MemberSignature Language="F#" Value="static member CopyArray : Array -&gt; Array" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.CopyArray SourceArray" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.CursorToIPicture(System.Windows.Forms.Cursor)" />
       <MemberSignature Language="VB.NET" Value="Public Function CursorToIPicture (curs As Cursor) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CursorToIPicture(System::Windows::Forms::Cursor ^ curs);" />
+      <MemberSignature Language="F#" Value="static member CursorToIPicture : System.Windows.Forms.Cursor -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.CursorToIPicture curs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Boolean, b As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Eqv(bool a, bool b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : bool * bool -&gt; bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Byte, b As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Eqv(System::Byte a, System::Byte b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : byte * byte -&gt; byte" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -230,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Short, b As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Eqv(short a, short b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : int16 * int16 -&gt; int16" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -270,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Integer, b As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Eqv(int a, int b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : int * int -&gt; int" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Long, b As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Eqv(long a, long b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : int64 * int64 -&gt; int64" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eqv (a As Object, b As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Eqv(System::Object ^ a, System::Object ^ b);" />
+      <MemberSignature Language="F#" Value="static member Eqv : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Eqv (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -390,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeBold(System.Drawing.Font,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeBold (CurrentFont As Font, Bold As Boolean) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeBold(System::Drawing::Font ^ CurrentFont, bool Bold);" />
+      <MemberSignature Language="F#" Value="static member FontChangeBold : System.Drawing.Font * bool -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeBold (CurrentFont, Bold)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -431,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeGdiCharSet(System.Drawing.Font,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeGdiCharSet (CurrentFont As Font, GdiCharSet As Byte) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeGdiCharSet(System::Drawing::Font ^ CurrentFont, System::Byte GdiCharSet);" />
+      <MemberSignature Language="F#" Value="static member FontChangeGdiCharSet : System.Drawing.Font * byte -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeGdiCharSet (CurrentFont, GdiCharSet)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -472,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeItalic(System.Drawing.Font,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeItalic (CurrentFont As Font, Italic As Boolean) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeItalic(System::Drawing::Font ^ CurrentFont, bool Italic);" />
+      <MemberSignature Language="F#" Value="static member FontChangeItalic : System.Drawing.Font * bool -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeItalic (CurrentFont, Italic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -513,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeName(System.Drawing.Font,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeName (CurrentFont As Font, Name As String) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeName(System::Drawing::Font ^ CurrentFont, System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="static member FontChangeName : System.Drawing.Font * string -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeName (CurrentFont, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -553,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeSize(System.Drawing.Font,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeSize (CurrentFont As Font, Size As Single) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeSize(System::Drawing::Font ^ CurrentFont, float Size);" />
+      <MemberSignature Language="F#" Value="static member FontChangeSize : System.Drawing.Font * single -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeSize (CurrentFont, Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -593,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeStrikeout(System.Drawing.Font,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeStrikeout (CurrentFont As Font, Strikeout As Boolean) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeStrikeout(System::Drawing::Font ^ CurrentFont, bool Strikeout);" />
+      <MemberSignature Language="F#" Value="static member FontChangeStrikeout : System.Drawing.Font * bool -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeStrikeout (CurrentFont, Strikeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -634,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeUnderline(System.Drawing.Font,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontChangeUnderline (CurrentFont As Font, Underline As Boolean) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FontChangeUnderline(System::Drawing::Font ^ CurrentFont, bool Underline);" />
+      <MemberSignature Language="F#" Value="static member FontChangeUnderline : System.Drawing.Font * bool -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontChangeUnderline (CurrentFont, Underline)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -675,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FontToIFont(System.Drawing.Font)" />
       <MemberSignature Language="VB.NET" Value="Public Function FontToIFont (fnt As Font) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ FontToIFont(System::Drawing::Font ^ fnt);" />
+      <MemberSignature Language="F#" Value="static member FontToIFont : System.Drawing.Font -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FontToIFont fnt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -712,6 +729,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static string Format(object Expression, string Style, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Format(System.Object,System.String,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       <MemberSignature Language="VB.NET" Value="Public Function Format (Expression As Object, Optional Style As String = &quot;&quot;, Optional DayOfWeek As FirstDayOfWeek = 1, Optional WeekOfYear As FirstWeekOfYear = 1) As String" />
+      <MemberSignature Language="F#" Value="static member Format : obj * string * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Format (Expression, Style, DayOfWeek, WeekOfYear)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -756,6 +774,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserHeight(System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsUserHeight (Height As Double, ScaleHeight As Double, OriginalHeightInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsUserHeight(double Height, double ScaleHeight, int OriginalHeightInPixels);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsUserHeight : double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserHeight (Height, ScaleHeight, OriginalHeightInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -798,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserWidth(System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsUserWidth (Width As Double, ScaleWidth As Double, OriginalWidthInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsUserWidth(double Width, double ScaleWidth, int OriginalWidthInPixels);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsUserWidth : double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserWidth (Width, ScaleWidth, OriginalWidthInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -840,6 +860,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserX(System.Double,System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsUserX (X As Double, ScaleLeft As Double, ScaleWidth As Double, OriginalWidthInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsUserX(double X, double ScaleLeft, double ScaleWidth, int OriginalWidthInPixels);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsUserX : double * double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserX (X, ScaleLeft, ScaleWidth, OriginalWidthInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -884,6 +905,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserY(System.Double,System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsUserY (Y As Double, ScaleTop As Double, ScaleHeight As Double, OriginalHeightInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsUserY(double Y, double ScaleTop, double ScaleHeight, int OriginalHeightInPixels);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsUserY : double * double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsUserY (Y, ScaleTop, ScaleHeight, OriginalHeightInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -928,6 +950,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsX(System.Double,Microsoft.VisualBasic.Compatibility.VB6.ScaleMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsX (X As Double, ToScale As ScaleMode) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsX(double X, Microsoft::VisualBasic::Compatibility::VB6::ScaleMode ToScale);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsX : double * Microsoft.VisualBasic.Compatibility.VB6.ScaleMode -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsX (X, ToScale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -968,6 +991,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsY(System.Double,Microsoft.VisualBasic.Compatibility.VB6.ScaleMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromPixelsY (Y As Double, ToScale As ScaleMode) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double FromPixelsY(double Y, Microsoft::VisualBasic::Compatibility::VB6::ScaleMode ToScale);" />
+      <MemberSignature Language="F#" Value="static member FromPixelsY : double * Microsoft.VisualBasic.Compatibility.VB6.ScaleMode -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.FromPixelsY (Y, ToScale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1008,6 +1032,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetActiveControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetActiveControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Control ^ GetActiveControl();" />
+      <MemberSignature Language="F#" Value="static member GetActiveControl : unit -&gt; System.Windows.Forms.Control" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetActiveControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1043,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetCancel(System.Windows.Forms.Button)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCancel (btn As Button) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCancel(System::Windows::Forms::Button ^ btn);" />
+      <MemberSignature Language="F#" Value="static member GetCancel : System.Windows.Forms.Button -&gt; bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetCancel btn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1082,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetDefault(System.Windows.Forms.Button)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefault (btn As Button) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetDefault(System::Windows::Forms::Button ^ btn);" />
+      <MemberSignature Language="F#" Value="static member GetDefault : System.Windows.Forms.Button -&gt; bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetDefault btn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1121,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetEXEName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEXEName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEXEName();" />
+      <MemberSignature Language="F#" Value="static member GetEXEName : unit -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetEXEName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1154,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetHInstance" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHInstance () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr GetHInstance();" />
+      <MemberSignature Language="F#" Value="static member GetHInstance : unit -&gt; nativeint" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetHInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1188,6 +1217,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static int32 GetItemData(class System.Windows.Forms.Control Control, int32 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetItemData(System::Windows::Forms::Control ^ Control, int Index);" />
+      <MemberSignature Language="F#" Value="static member GetItemData : System.Windows.Forms.Control * int -&gt; int" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemData (Control, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1227,6 +1257,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static string GetItemString(class System.Windows.Forms.Control Control, int32 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemString(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetItemString(System::Windows::Forms::Control ^ Control, int Index);" />
+      <MemberSignature Language="F#" Value="static member GetItemString : System.Windows.Forms.Control * int -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetItemString (Control, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1267,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.GetPath" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPath () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetPath();" />
+      <MemberSignature Language="F#" Value="static member GetPath : unit -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.GetPath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1300,6 +1332,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.IconToIPicture(System.Drawing.Icon)" />
       <MemberSignature Language="VB.NET" Value="Public Function IconToIPicture (ico As Icon) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IconToIPicture(System::Drawing::Icon ^ ico);" />
+      <MemberSignature Language="F#" Value="static member IconToIPicture : System.Drawing.Icon -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.IconToIPicture ico" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1338,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.IFontToFont(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IFontToFont (objFnt As Object) As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ IFontToFont(System::Object ^ objFnt);" />
+      <MemberSignature Language="F#" Value="static member IFontToFont : obj -&gt; System.Drawing.Font" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.IFontToFont objFnt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1376,6 +1410,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ImageToIPicture(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImageToIPicture (img As Image) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ImageToIPicture(System::Drawing::Image ^ img);" />
+      <MemberSignature Language="F#" Value="static member ImageToIPicture : System.Drawing.Image -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ImageToIPicture img" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1414,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ImageToIPictureDisp(System.Drawing.Image)" />
       <MemberSignature Language="VB.NET" Value="Public Function ImageToIPictureDisp (img As Image) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ImageToIPictureDisp(System::Drawing::Image ^ img);" />
+      <MemberSignature Language="F#" Value="static member ImageToIPictureDisp : System.Drawing.Image -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ImageToIPictureDisp img" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1461,6 +1497,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Boolean, b As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Imp(bool a, bool b);" />
+      <MemberSignature Language="F#" Value="static member Imp : bool * bool -&gt; bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1503,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Byte,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Byte, b As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Imp(System::Byte a, System::Byte b);" />
+      <MemberSignature Language="F#" Value="static member Imp : byte * byte -&gt; byte" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1545,6 +1583,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Int16,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Short, b As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short Imp(short a, short b);" />
+      <MemberSignature Language="F#" Value="static member Imp : int16 * int16 -&gt; int16" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1587,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Integer, b As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Imp(int a, int b);" />
+      <MemberSignature Language="F#" Value="static member Imp : int * int -&gt; int" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1629,6 +1669,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Long, b As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Imp(long a, long b);" />
+      <MemberSignature Language="F#" Value="static member Imp : int64 * int64 -&gt; int64" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1671,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Imp(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Imp (a As Object, b As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Imp(System::Object ^ a, System::Object ^ b);" />
+      <MemberSignature Language="F#" Value="static member Imp : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Imp (a, b)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1713,6 +1755,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.IPictureDispToImage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IPictureDispToImage (pict As Object) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ IPictureDispToImage(System::Object ^ pict);" />
+      <MemberSignature Language="F#" Value="static member IPictureDispToImage : obj -&gt; System.Drawing.Image" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.IPictureDispToImage pict" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1751,6 +1794,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.IPictureToImage(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IPictureToImage (pict As Object) As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ IPictureToImage(System::Object ^ pict);" />
+      <MemberSignature Language="F#" Value="static member IPictureToImage : obj -&gt; System.Drawing.Image" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.IPictureToImage pict" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1798,6 +1842,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResData(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResData (ID As Object, restype As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LoadResData(System::Object ^ ID, System::Object ^ restype);" />
+      <MemberSignature Language="F#" Value="static member LoadResData : obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResData (ID, restype)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1840,6 +1885,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResData(System.Object,System.Object,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResData (ID As Object, restype As Object, Culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LoadResData(System::Object ^ ID, System::Object ^ restype, System::Globalization::CultureInfo ^ Culture);" />
+      <MemberSignature Language="F#" Value="static member LoadResData : obj * obj * System.Globalization.CultureInfo -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResData (ID, restype, Culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1893,6 +1939,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResPicture(System.Object,Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResPicture (ID As Object, restype As LoadResConstants) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LoadResPicture(System::Object ^ ID, Microsoft::VisualBasic::Compatibility::VB6::LoadResConstants restype);" />
+      <MemberSignature Language="F#" Value="static member LoadResPicture : obj * Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResPicture (ID, restype)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1935,6 +1982,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResPicture(System.Object,Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResPicture (ID As Object, restype As LoadResConstants, Culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LoadResPicture(System::Object ^ ID, Microsoft::VisualBasic::Compatibility::VB6::LoadResConstants restype, System::Globalization::CultureInfo ^ Culture);" />
+      <MemberSignature Language="F#" Value="static member LoadResPicture : obj * Microsoft.VisualBasic.Compatibility.VB6.LoadResConstants * System.Globalization.CultureInfo -&gt; obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResPicture (ID, restype, Culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1988,6 +2036,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResString (ID As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LoadResString(int ID);" />
+      <MemberSignature Language="F#" Value="static member LoadResString : int -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResString ID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2028,6 +2077,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResString(System.Int32,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadResString (ID As Integer, Culture As CultureInfo) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LoadResString(int ID, System::Globalization::CultureInfo ^ Culture);" />
+      <MemberSignature Language="F#" Value="static member LoadResString : int * System.Globalization.CultureInfo -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.LoadResString (ID, Culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2070,6 +2120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.PixelsToTwipsX(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function PixelsToTwipsX (X As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double PixelsToTwipsX(double X);" />
+      <MemberSignature Language="F#" Value="static member PixelsToTwipsX : double -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.PixelsToTwipsX X" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2108,6 +2159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.PixelsToTwipsY(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function PixelsToTwipsY (Y As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double PixelsToTwipsY(double Y);" />
+      <MemberSignature Language="F#" Value="static member PixelsToTwipsY : double -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.PixelsToTwipsY Y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2145,6 +2197,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static void SendKeys(string Keys, bool Wait) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SendKeys(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendKeys (Keys As String, Optional Wait As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member SendKeys : string * bool -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SendKeys (Keys, Wait)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2185,6 +2238,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetCancel(System.Windows.Forms.Button,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCancel (btn As Button, Cancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCancel(System::Windows::Forms::Button ^ btn, bool Cancel);" />
+      <MemberSignature Language="F#" Value="static member SetCancel : System.Windows.Forms.Button * bool -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetCancel (btn, Cancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2227,6 +2281,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetDefault(System.Windows.Forms.Button,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDefault (btn As Button, Default As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDefault(System::Windows::Forms::Button ^ btn, bool Default);" />
+      <MemberSignature Language="F#" Value="static member SetDefault : System.Windows.Forms.Button * bool -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetDefault (btn, Default)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2268,6 +2323,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static void SetItemData(class System.Windows.Forms.Control Control, int32 Index, int32 ItemData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData(System.Windows.Forms.Control,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetItemData(System::Windows::Forms::Control ^ Control, int Index, int ItemData);" />
+      <MemberSignature Language="F#" Value="static member SetItemData : System.Windows.Forms.Control * int * int -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemData (Control, Index, ItemData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2308,6 +2364,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static void SetItemString(class System.Windows.Forms.Control Control, int32 Index, string ItemString) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemString(System.Windows.Forms.Control,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetItemString(System::Windows::Forms::Control ^ Control, int Index, System::String ^ ItemString);" />
+      <MemberSignature Language="F#" Value="static member SetItemString : System.Windows.Forms.Control * int * string -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetItemString (Control, Index, ItemString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2358,6 +2415,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetResourceBaseName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResourceBaseName (BaseFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetResourceBaseName(System::String ^ BaseFileName);" />
+      <MemberSignature Language="F#" Value="static member SetResourceBaseName : string -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetResourceBaseName BaseFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2395,6 +2453,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.SetResourceBaseName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResourceBaseName (ProjectNamespace As String, BaseFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetResourceBaseName(System::String ^ ProjectNamespace, System::String ^ BaseFileName);" />
+      <MemberSignature Language="F#" Value="static member SetResourceBaseName : string * string -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.SetResourceBaseName (ProjectNamespace, BaseFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2432,6 +2491,7 @@
       <MemberSignature Language="C#" Value="public static void ShowForm (System.Windows.Forms.Form Form, int Modal = 0, System.Windows.Forms.Form OwnerForm = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static void ShowForm(class System.Windows.Forms.Form Form, int32 Modal, class System.Windows.Forms.Form OwnerForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ShowForm(System.Windows.Forms.Form,System.Int32,System.Windows.Forms.Form)" />
+      <MemberSignature Language="F#" Value="static member ShowForm : System.Windows.Forms.Form * int * System.Windows.Forms.Form -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ShowForm (Form, Modal, OwnerForm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2473,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TabLayout(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TabLayout (ParamArray Args As Object()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TabLayout(... cli::array &lt;System::Object ^&gt; ^ Args);" />
+      <MemberSignature Language="F#" Value="static member TabLayout : obj[] -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.TabLayout Args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2517,6 +2578,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserHeight(System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsUserHeight (Height As Double, ScaleHeight As Double, OriginalHeightInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsUserHeight(double Height, double ScaleHeight, int OriginalHeightInPixels);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsUserHeight : double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserHeight (Height, ScaleHeight, OriginalHeightInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2559,6 +2621,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserWidth(System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsUserWidth (Width As Double, ScaleWidth As Double, OriginalWidthInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsUserWidth(double Width, double ScaleWidth, int OriginalWidthInPixels);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsUserWidth : double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserWidth (Width, ScaleWidth, OriginalWidthInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2601,6 +2664,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserX(System.Double,System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsUserX (X As Double, ScaleLeft As Double, ScaleWidth As Double, OriginalWidthInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsUserX(double X, double ScaleLeft, double ScaleWidth, int OriginalWidthInPixels);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsUserX : double * double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserX (X, ScaleLeft, ScaleWidth, OriginalWidthInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2645,6 +2709,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserY(System.Double,System.Double,System.Double,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsUserY (Y As Double, ScaleTop As Double, ScaleHeight As Double, OriginalHeightInPixels As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsUserY(double Y, double ScaleTop, double ScaleHeight, int OriginalHeightInPixels);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsUserY : double * double * double * int -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsUserY (Y, ScaleTop, ScaleHeight, OriginalHeightInPixels)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2689,6 +2754,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsX(System.Double,Microsoft.VisualBasic.Compatibility.VB6.ScaleMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsX (X As Double, FromScale As ScaleMode) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsX(double X, Microsoft::VisualBasic::Compatibility::VB6::ScaleMode FromScale);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsX : double * Microsoft.VisualBasic.Compatibility.VB6.ScaleMode -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsX (X, FromScale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2729,6 +2795,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsY(System.Double,Microsoft.VisualBasic.Compatibility.VB6.ScaleMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToPixelsY (Y As Double, FromScale As ScaleMode) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToPixelsY(double Y, Microsoft::VisualBasic::Compatibility::VB6::ScaleMode FromScale);" />
+      <MemberSignature Language="F#" Value="static member ToPixelsY : double * Microsoft.VisualBasic.Compatibility.VB6.ScaleMode -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ToPixelsY (Y, FromScale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2769,6 +2836,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsPerPixelX" />
       <MemberSignature Language="VB.NET" Value="Public Function TwipsPerPixelX () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float TwipsPerPixelX();" />
+      <MemberSignature Language="F#" Value="static member TwipsPerPixelX : unit -&gt; single" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsPerPixelX " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2804,6 +2872,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsPerPixelY" />
       <MemberSignature Language="VB.NET" Value="Public Function TwipsPerPixelY () As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float TwipsPerPixelY();" />
+      <MemberSignature Language="F#" Value="static member TwipsPerPixelY : unit -&gt; single" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsPerPixelY " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2839,6 +2908,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsToPixelsX(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function TwipsToPixelsX (X As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double TwipsToPixelsX(double X);" />
+      <MemberSignature Language="F#" Value="static member TwipsToPixelsX : double -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsToPixelsX X" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2877,6 +2947,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsToPixelsY(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function TwipsToPixelsY (Y As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double TwipsToPixelsY(double Y);" />
+      <MemberSignature Language="F#" Value="static member TwipsToPixelsY : double -&gt; double" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.TwipsToPixelsY Y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2915,6 +2986,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ValidateControls(System.Windows.Forms.ContainerControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ValidateControls (Form As ContainerControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateControls(System::Windows::Forms::ContainerControl ^ Form);" />
+      <MemberSignature Language="F#" Value="static member ValidateControls : System.Windows.Forms.ContainerControl -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ValidateControls Form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2953,6 +3025,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static void WhatsThisMode(class System.Windows.Forms.Form Form) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.WhatsThisMode(System.Windows.Forms.Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WhatsThisMode(System::Windows::Forms::Form ^ Form);" />
+      <MemberSignature Language="F#" Value="static member WhatsThisMode : System.Windows.Forms.Form -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.WhatsThisMode Form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2989,6 +3062,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static void ZOrder(class System.Windows.Forms.Control Control, int32 Position) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.ZOrder(System.Windows.Forms.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ZOrder(System::Windows::Forms::Control ^ Control, int Position);" />
+      <MemberSignature Language="F#" Value="static member ZOrder : System.Windows.Forms.Control * int -&gt; unit" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.ZOrder (Control, Position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

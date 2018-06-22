@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRow" />
   <TypeSignature Language="VB.NET" Value="Public Class TableRow&#xA;Inherits WebControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class TableRow : System::Web::UI::WebControls::WebControl" />
+  <TypeSignature Language="F#" Value="type TableRow = class&#xA;    inherit WebControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -243,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableRow.Cells" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cells As TableCellCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableCellCollection ^ Cells { System::Web::UI::WebControls::TableCellCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cells : System.Web.UI.WebControls.TableCellCollection" Usage="System.Web.UI.WebControls.TableRow.Cells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="tableRow.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -323,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="tableRow.CreateControlStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableRow.HorizontalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HorizontalAlign As HorizontalAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.TableRow.HorizontalAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableRow.SupportsDisabledAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsDisabledAttribute : bool" Usage="System.Web.UI.WebControls.TableRow.SupportsDisabledAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +435,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableRow.TableSection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TableSection As TableRowSection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableRowSection TableSection { System::Web::UI::WebControls::TableRowSection get(); void set(System::Web::UI::WebControls::TableRowSection value); };" />
+      <MemberSignature Language="F#" Value="member this.TableSection : System.Web.UI.WebControls.TableRowSection with get, set" Usage="System.Web.UI.WebControls.TableRow.TableSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableRow.VerticalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property VerticalAlign As VerticalAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::VerticalAlign VerticalAlign { System::Web::UI::WebControls::VerticalAlign get(); void set(System::Web::UI::WebControls::VerticalAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalAlign : System.Web.UI.WebControls.VerticalAlign with get, set" Usage="System.Web.UI.WebControls.TableRow.VerticalAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

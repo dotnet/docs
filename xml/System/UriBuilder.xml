@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class UriBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriBuilder" />
+  <TypeSignature Language="F#" Value="type UriBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : string -&gt; UriBuilder" Usage="new System.UriBuilder uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -169,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : Uri -&gt; UriBuilder" Usage="new System.UriBuilder uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -211,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (schemeName As String, hostName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(System::String ^ schemeName, System::String ^ hostName);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : string * string -&gt; UriBuilder" Usage="new System.UriBuilder (schemeName, hostName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -262,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheme As String, host As String, portNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(System::String ^ scheme, System::String ^ host, int portNumber);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : string * string * int -&gt; UriBuilder" Usage="new System.UriBuilder (scheme, host, portNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -319,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheme As String, host As String, port As Integer, pathValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(System::String ^ scheme, System::String ^ host, int port, System::String ^ pathValue);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : string * string * int * string -&gt; UriBuilder" Usage="new System.UriBuilder (scheme, host, port, pathValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -378,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheme As String, host As String, port As Integer, path As String, extraValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriBuilder(System::String ^ scheme, System::String ^ host, int port, System::String ^ path, System::String ^ extraValue);" />
+      <MemberSignature Language="F#" Value="new UriBuilder : string * string * int * string * string -&gt; UriBuilder" Usage="new System.UriBuilder (scheme, host, port, path, extraValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -441,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (rparam As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ rparam);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="uriBuilder.Equals rparam" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -486,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Fragment" />
       <MemberSignature Language="VB.NET" Value="Public Property Fragment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Fragment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Fragment : string with get, set" Usage="System.UriBuilder.Fragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -537,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="uriBuilder.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -582,6 +592,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="System.UriBuilder.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -622,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.UriBuilder.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -655,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.UriBuilder.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -697,6 +710,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.UriBuilder.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -740,6 +754,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Query { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Query : string with get, set" Usage="System.UriBuilder.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -796,6 +811,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Property Scheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string with get, set" Usage="System.UriBuilder.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -849,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriBuilder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="uriBuilder.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.UriBuilder.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -951,6 +969,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriBuilder.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="System.UriBuilder.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

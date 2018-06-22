@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.GenerateScriptTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateScriptTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenerateScriptTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type GenerateScriptTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.GenerateScriptTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateScriptTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.Script.Services.GenerateScriptTypeAttribute : Type -&gt; System.Web.Script.Services.GenerateScriptTypeAttribute" Usage="new System.Web.Script.Services.GenerateScriptTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.GenerateScriptTypeAttribute.ScriptTypeId" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptTypeId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScriptTypeId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptTypeId : string with get, set" Usage="System.Web.Script.Services.GenerateScriptTypeAttribute.ScriptTypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.GenerateScriptTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Web.Script.Services.GenerateScriptTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

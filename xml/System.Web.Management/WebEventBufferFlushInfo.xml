@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventBufferFlushInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebEventBufferFlushInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebEventBufferFlushInfo sealed" />
+  <TypeSignature Language="F#" Value="type WebEventBufferFlushInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.Events" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As WebBaseEventCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebBaseEventCollection ^ Events { System::Web::Management::WebBaseEventCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : System.Web.Management.WebBaseEventCollection" Usage="System.Web.Management.WebEventBufferFlushInfo.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsDiscardedSinceLastNotification" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsDiscardedSinceLastNotification As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsDiscardedSinceLastNotification { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsDiscardedSinceLastNotification : int" Usage="System.Web.Management.WebEventBufferFlushInfo.EventsDiscardedSinceLastNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsInBuffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventsInBuffer As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EventsInBuffer { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventsInBuffer : int" Usage="System.Web.Management.WebEventBufferFlushInfo.EventsInBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.LastNotificationUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastNotificationUtc As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastNotificationUtc { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastNotificationUtc : DateTime" Usage="System.Web.Management.WebEventBufferFlushInfo.LastNotificationUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationSequence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationSequence As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NotificationSequence { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotificationSequence : int" Usage="System.Web.Management.WebEventBufferFlushInfo.NotificationSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotificationType As EventNotificationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::EventNotificationType NotificationType { System::Web::Management::EventNotificationType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NotificationType : System.Web.Management.EventNotificationType" Usage="System.Web.Management.WebEventBufferFlushInfo.NotificationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.MultidimensionalArrayItemReference`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultidimensionalArrayItemReference(Of TItem)&#xA;Inherits CodeActivity(Of Location(Of TItem))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class MultidimensionalArrayItemReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TItem&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type MultidimensionalArrayItemReference&lt;'Item&gt; = class&#xA;    inherit CodeActivity&lt;Location&lt;'Item&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +100,7 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Array" />
       <MemberSignature Language="VB.NET" Value="Public Property Array As InArgument(Of Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;Array ^&gt; ^ Array { System::Activities::InArgument&lt;Array ^&gt; ^ get(); void set(System::Activities::InArgument&lt;Array ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Array : System.Activities.InArgument&lt;Array&gt; with get, set" Usage="System.Activities.Expressions.MultidimensionalArrayItemReference&lt;'Item&gt;.Array" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -127,6 +129,7 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.MultidimensionalArrayItemReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="multidimensionalArrayItemReference.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -150,6 +153,7 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TItem&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; System.Activities.Location&lt;'Item&gt;" Usage="multidimensionalArrayItemReference.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -174,6 +178,7 @@ public static void MultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.MultidimensionalArrayItemReference`1.Indices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As Collection(Of InArgument(Of Integer))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument&lt;int&gt; ^&gt; ^ Indices { System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument&lt;int&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indices : System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&lt;int&gt;&gt;" Usage="System.Activities.Expressions.MultidimensionalArrayItemReference&lt;'Item&gt;.Indices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

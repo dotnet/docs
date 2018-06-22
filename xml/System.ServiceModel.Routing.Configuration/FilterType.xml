@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterType" />
   <TypeSignature Language="VB.NET" Value="Public Enum FilterType" />
   <TypeSignature Language="C++ CLI" Value="public enum class FilterType" />
+  <TypeSignature Language="F#" Value="type FilterType = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.Action" />
       <MemberSignature Language="VB.NET" Value="Action" />
       <MemberSignature Language="C++ CLI" Value="Action" />
+      <MemberSignature Language="F#" Value="Action = 0" Usage="System.ServiceModel.Routing.Configuration.FilterType.Action" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.And" />
       <MemberSignature Language="VB.NET" Value="And" />
       <MemberSignature Language="C++ CLI" Value="And" />
+      <MemberSignature Language="F#" Value="And = 3" Usage="System.ServiceModel.Routing.Configuration.FilterType.And" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 4" Usage="System.ServiceModel.Routing.Configuration.FilterType.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.EndpointAddress" />
       <MemberSignature Language="VB.NET" Value="EndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="EndpointAddress" />
+      <MemberSignature Language="F#" Value="EndpointAddress = 1" Usage="System.ServiceModel.Routing.Configuration.FilterType.EndpointAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -105,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.EndpointName" />
       <MemberSignature Language="VB.NET" Value="EndpointName" />
       <MemberSignature Language="C++ CLI" Value="EndpointName" />
+      <MemberSignature Language="F#" Value="EndpointName = 5" Usage="System.ServiceModel.Routing.Configuration.FilterType.EndpointName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.MatchAll" />
       <MemberSignature Language="VB.NET" Value="MatchAll" />
       <MemberSignature Language="C++ CLI" Value="MatchAll" />
+      <MemberSignature Language="F#" Value="MatchAll = 6" Usage="System.ServiceModel.Routing.Configuration.FilterType.MatchAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -143,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.PrefixEndpointAddress" />
       <MemberSignature Language="VB.NET" Value="PrefixEndpointAddress" />
       <MemberSignature Language="C++ CLI" Value="PrefixEndpointAddress" />
+      <MemberSignature Language="F#" Value="PrefixEndpointAddress = 2" Usage="System.ServiceModel.Routing.Configuration.FilterType.PrefixEndpointAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -162,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.XPath" />
       <MemberSignature Language="VB.NET" Value="XPath" />
       <MemberSignature Language="C++ CLI" Value="XPath" />
+      <MemberSignature Language="F#" Value="XPath = 7" Usage="System.ServiceModel.Routing.Configuration.FilterType.XPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

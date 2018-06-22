@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSystemAuditRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileSystemAuditRule&#xA;Inherits AuditRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileSystemAuditRule sealed : System::Security::AccessControl::AuditRule" />
+  <TypeSignature Language="F#" Value="type FileSystemAuditRule = class&#xA;    inherit AuditRule" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAuditRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAuditRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.FileSystemAuditRule" Usage="new System.Security.AccessControl.FileSystemAuditRule (identity, fileSystemRights, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAuditRule.#ctor(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAuditRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAuditRule : string * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.FileSystemAuditRule" Usage="new System.Security.AccessControl.FileSystemAuditRule (identity, fileSystemRights, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -163,6 +166,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAuditRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAuditRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.FileSystemAuditRule" Usage="new System.Security.AccessControl.FileSystemAuditRule (identity, fileSystemRights, inheritanceFlags, propagationFlags, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAuditRule.#ctor(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAuditRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAuditRule : string * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.FileSystemAuditRule" Usage="new System.Security.AccessControl.FileSystemAuditRule (identity, fileSystemRights, inheritanceFlags, propagationFlags, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemAuditRule.FileSystemRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSystemRights As FileSystemRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::FileSystemRights FileSystemRights { System::Security::AccessControl::FileSystemRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileSystemRights : System.Security.AccessControl.FileSystemRights" Usage="System.Security.AccessControl.FileSystemAuditRule.FileSystemRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PersonalizationScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class PersonalizationScope" />
+  <TypeSignature Language="F#" Value="type PersonalizationScope = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" />
       <MemberSignature Language="VB.NET" Value="Shared" />
       <MemberSignature Language="C++ CLI" Value="Shared" />
+      <MemberSignature Language="F#" Value="Shared = 1" Usage="System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="C++ CLI" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.Web.UI.WebControls.WebParts.PersonalizationScope.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

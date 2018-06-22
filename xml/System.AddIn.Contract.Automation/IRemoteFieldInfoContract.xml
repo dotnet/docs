@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteFieldInfoContract&#xA;Implements IContract" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteFieldInfoContract : System::AddIn::Contract::IContract" />
+  <TypeSignature Language="F#" Value="type IRemoteFieldInfoContract = interface&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetFieldData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFieldData () As RemoteFieldData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::RemoteFieldData GetFieldData();" />
+      <MemberSignature Language="F#" Value="abstract member GetFieldData : unit -&gt; System.AddIn.Contract.Automation.RemoteFieldData" Usage="iRemoteFieldInfoContract.GetFieldData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.GetValue(System.AddIn.Contract.Automation.IRemoteObjectContract)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (obj As IRemoteObjectContract) As RemoteArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetValue(System::AddIn::Contract::Automation::IRemoteObjectContract ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : System.AddIn.Contract.Automation.IRemoteObjectContract -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteFieldInfoContract.GetValue obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteFieldInfoContract.SetValue(System.AddIn.Contract.Automation.IRemoteObjectContract,System.AddIn.Contract.RemoteArgument,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (obj As IRemoteObjectContract, value As RemoteArgument, localeId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::AddIn::Contract::Automation::IRemoteObjectContract ^ obj, System::AddIn::Contract::RemoteArgument value, int localeId);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : System.AddIn.Contract.Automation.IRemoteObjectContract * System.AddIn.Contract.RemoteArgument * int -&gt; unit" Usage="iRemoteFieldInfoContract.SetValue (obj, value, localeId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

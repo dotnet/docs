@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum MailFormat" />
   <TypeSignature Language="C++ CLI" Value="public enum class MailFormat" />
+  <TypeSignature Language="F#" Value="type MailFormat = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailFormat.Html" />
       <MemberSignature Language="VB.NET" Value="Html" />
       <MemberSignature Language="C++ CLI" Value="Html" />
+      <MemberSignature Language="F#" Value="Html = 1" Usage="System.Web.Mail.MailFormat.Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailFormat.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="C++ CLI" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Web.Mail.MailFormat.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

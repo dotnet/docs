@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceSettings" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventSourceSettings" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventSourceSettings" />
+  <TypeSignature Language="F#" Value="type EventSourceSettings = " />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Diagnostics.Tracing.EventSourceSettings.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.EtwManifestEventFormat" />
       <MemberSignature Language="VB.NET" Value="EtwManifestEventFormat" />
       <MemberSignature Language="C++ CLI" Value="EtwManifestEventFormat" />
+      <MemberSignature Language="F#" Value="EtwManifestEventFormat = 4" Usage="System.Diagnostics.Tracing.EventSourceSettings.EtwManifestEventFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.EtwSelfDescribingEventFormat" />
       <MemberSignature Language="VB.NET" Value="EtwSelfDescribingEventFormat" />
       <MemberSignature Language="C++ CLI" Value="EtwSelfDescribingEventFormat" />
+      <MemberSignature Language="F#" Value="EtwSelfDescribingEventFormat = 8" Usage="System.Diagnostics.Tracing.EventSourceSettings.EtwSelfDescribingEventFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.ThrowOnEventWriteErrors" />
       <MemberSignature Language="VB.NET" Value="ThrowOnEventWriteErrors" />
       <MemberSignature Language="C++ CLI" Value="ThrowOnEventWriteErrors" />
+      <MemberSignature Language="F#" Value="ThrowOnEventWriteErrors = 1" Usage="System.Diagnostics.Tracing.EventSourceSettings.ThrowOnEventWriteErrors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

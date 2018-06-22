@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleCommand&#xA;Inherits DbCommand&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class OracleCommand sealed : System::Data::Common::DbCommand, ICloneable" />
+  <TypeSignature Language="F#" Value="type OracleCommand = class&#xA;    inherit DbCommand&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleCommand(System::String ^ commandText);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleCommand : string -&gt; System.Data.OracleClient.OracleCommand" Usage="new System.Data.OracleClient.OracleCommand commandText" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandText As String, connection As OracleConnection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleCommand(System::String ^ commandText, System::Data::OracleClient::OracleConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleCommand : string * System.Data.OracleClient.OracleConnection -&gt; System.Data.OracleClient.OracleCommand" Usage="new System.Data.OracleClient.OracleCommand (commandText, connection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection,System.Data.OracleClient.OracleTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandText As String, connection As OracleConnection, tx As OracleTransaction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleCommand(System::String ^ commandText, System::Data::OracleClient::OracleConnection ^ connection, System::Data::OracleClient::OracleTransaction ^ tx);" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleCommand : string * System.Data.OracleClient.OracleConnection * System.Data.OracleClient.OracleTransaction -&gt; System.Data.OracleClient.OracleCommand" Usage="new System.Data.OracleClient.OracleCommand (commandText, connection, tx)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -219,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Cancel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Cancel();" />
+      <MemberSignature Language="F#" Value="override this.Cancel : unit -&gt; unit" Usage="oracleCommand.Cancel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -254,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="oracleCommand.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.OracleClient.OracleCommand.CommandText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -332,6 +339,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CommandTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.OracleClient.OracleCommand.CommandTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -370,6 +378,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandType As CommandType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.OracleClient.OracleCommand.CommandType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -424,6 +433,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As OracleConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleConnection ^ Connection { System::Data::OracleClient::OracleConnection ^ get(); void set(System::Data::OracleClient::OracleConnection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.OracleClient.OracleConnection with get, set" Usage="System.Data.OracleClient.OracleCommand.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -470,6 +480,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.CreateDbParameter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbParameter () As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ CreateDbParameter();" />
+      <MemberSignature Language="F#" Value="override this.CreateDbParameter : unit -&gt; System.Data.Common.DbParameter" Usage="oracleCommand.CreateDbParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -491,6 +502,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As OracleParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleParameter ^ CreateParameter();" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.OracleClient.OracleParameter" Usage="oracleCommand.CreateParameter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -519,6 +531,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbConnection As DbConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection with get, set" Usage="System.Data.OracleClient.OracleCommand.DbConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -539,6 +552,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbParameterCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbParameterCollection As DbParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbParameterCollection ^ DbParameterCollection { System::Data::Common::DbParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DbParameterCollection : System.Data.Common.DbParameterCollection" Usage="System.Data.OracleClient.OracleCommand.DbParameterCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -559,6 +573,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbTransaction" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbTransaction As DbTransaction" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbTransaction ^ DbTransaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DbTransaction : System.Data.Common.DbTransaction with get, set" Usage="System.Data.OracleClient.OracleCommand.DbTransaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -579,6 +594,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DesignTimeVisible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DesignTimeVisible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeVisible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeVisible : bool with get, set" Usage="System.Data.OracleClient.OracleCommand.DesignTimeVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -614,6 +630,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDbDataReader (behavior As CommandBehavior) As DbDataReader" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ ExecuteDbDataReader(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteDbDataReader : System.Data.CommandBehavior -&gt; System.Data.Common.DbDataReader" Usage="oracleCommand.ExecuteDbDataReader behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -638,6 +655,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteNonQuery" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteNonQuery () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ExecuteNonQuery();" />
+      <MemberSignature Language="F#" Value="override this.ExecuteNonQuery : unit -&gt; int" Usage="oracleCommand.ExecuteNonQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -683,6 +701,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery(System.Data.OracleClient.OracleString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteOracleNonQuery (ByRef rowid As OracleString) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteOracleNonQuery([Runtime::InteropServices::Out] System::Data::OracleClient::OracleString % rowid);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteOracleNonQuery :  -&gt; int" Usage="oracleCommand.ExecuteOracleNonQuery rowid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -723,6 +742,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteOracleScalar" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteOracleScalar () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ExecuteOracleScalar();" />
+      <MemberSignature Language="F#" Value="member this.ExecuteOracleScalar : unit -&gt; obj" Usage="oracleCommand.ExecuteOracleScalar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -767,6 +787,7 @@ count = command.ExecuteOracleScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As OracleDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleDataReader ^ ExecuteReader();" />
+      <MemberSignature Language="F#" Value="override this.ExecuteReader : unit -&gt; System.Data.OracleClient.OracleDataReader" Usage="oracleCommand.ExecuteReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -805,6 +826,7 @@ count = command.ExecuteOracleScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As OracleDataReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.OracleClient.OracleDataReader" Usage="oracleCommand.ExecuteReader behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -850,6 +872,7 @@ count = command.ExecuteOracleScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteScalar" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteScalar () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ExecuteScalar();" />
+      <MemberSignature Language="F#" Value="override this.ExecuteScalar : unit -&gt; obj" Usage="oracleCommand.ExecuteScalar " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -893,6 +916,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As OracleParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleParameterCollection ^ Parameters { System::Data::OracleClient::OracleParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Data.OracleClient.OracleParameterCollection" Usage="System.Data.OracleClient.OracleCommand.Parameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -941,6 +965,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Prepare" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Prepare ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Prepare();" />
+      <MemberSignature Language="F#" Value="override this.Prepare : unit -&gt; unit" Usage="oracleCommand.Prepare " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -973,6 +998,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ResetCommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetCommandTimeout ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCommandTimeout();" />
+      <MemberSignature Language="F#" Value="member this.ResetCommandTimeout : unit -&gt; unit" Usage="oracleCommand.ResetCommandTimeout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1000,6 +1026,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Property Transaction As OracleTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OracleClient::OracleTransaction ^ Transaction { System::Data::OracleClient::OracleTransaction ^ get(); void set(System::Data::OracleClient::OracleTransaction ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transaction : System.Data.OracleClient.OracleTransaction with get, set" Usage="System.Data.OracleClient.OracleCommand.Transaction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1035,6 +1062,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.UpdatedRowSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property UpdatedRowSource As UpdateRowSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.OracleClient.OracleCommand.UpdatedRowSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

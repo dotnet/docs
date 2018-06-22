@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelValidatorProviders" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelValidatorProviders abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModelValidatorProviders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidatorProviders.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As ModelValidatorProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ModelBinding::ModelValidatorProviderCollection ^ Providers { System::Web::ModelBinding::ModelValidatorProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.ModelBinding.ModelValidatorProviderCollection" Usage="System.Web.ModelBinding.ModelValidatorProviders.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

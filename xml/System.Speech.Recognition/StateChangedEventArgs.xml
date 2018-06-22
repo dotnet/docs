@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.StateChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StateChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type StateChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,6 +132,7 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.StateChangedEventArgs.RecognizerState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecognizerState As RecognizerState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::RecognizerState RecognizerState { System::Speech::Recognition::RecognizerState get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecognizerState : System.Speech.Recognition.RecognizerState" Usage="System.Speech.Recognition.StateChangedEventArgs.RecognizerState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

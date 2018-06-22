@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Mouse" />
   <TypeSignature Language="VB.NET" Value="Public Class Mouse" />
   <TypeSignature Language="C++ CLI" Value="public ref class Mouse" />
+  <TypeSignature Language="F#" Value="type Mouse = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonsSwapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ButtonsSwapped { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ButtonsSwapped : bool" Usage="Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WheelExists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WheelExists { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.WheelExists : bool" Usage="Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WheelScrollLines As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WheelScrollLines { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.WheelScrollLines : int" Usage="Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

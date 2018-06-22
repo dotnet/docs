@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IPPacketInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure IPPacketInformation" />
   <TypeSignature Language="C++ CLI" Value="public value class IPPacketInformation" />
+  <TypeSignature Language="F#" Value="type IPPacketInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPPacketInformation.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress" Usage="System.Net.Sockets.IPPacketInformation.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="iPPacketInformation.Equals comparand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="iPPacketInformation.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPPacketInformation.Interface" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interface As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Interface { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interface : int" Usage="System.Net.Sockets.IPPacketInformation.Interface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.op_Equality(System.Net.Sockets.IPPacketInformation,System.Net.Sockets.IPPacketInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (packetInformation1 As IPPacketInformation, packetInformation2 As IPPacketInformation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Net::Sockets::IPPacketInformation packetInformation1, System::Net::Sockets::IPPacketInformation packetInformation2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Net.Sockets.IPPacketInformation * System.Net.Sockets.IPPacketInformation -&gt; bool" Usage="packetInformation1 = packetInformation2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.op_Inequality(System.Net.Sockets.IPPacketInformation,System.Net.Sockets.IPPacketInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (packetInformation1 As IPPacketInformation, packetInformation2 As IPPacketInformation) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Net::Sockets::IPPacketInformation packetInformation1, System::Net::Sockets::IPPacketInformation packetInformation2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Net.Sockets.IPPacketInformation * System.Net.Sockets.IPPacketInformation -&gt; bool" Usage="System.Net.Sockets.IPPacketInformation.op_Inequality (packetInformation1, packetInformation2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

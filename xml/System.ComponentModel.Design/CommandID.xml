@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CommandID" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandID" />
   <TypeSignature Language="C++ CLI" Value="public ref class CommandID" />
+  <TypeSignature Language="F#" Value="type CommandID = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CommandID.#ctor(System.Guid,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (menuGroup As Guid, commandID As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandID(Guid menuGroup, int commandID);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CommandID : Guid * int -&gt; System.ComponentModel.Design.CommandID" Usage="new System.ComponentModel.Design.CommandID (menuGroup, commandID)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CommandID.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="commandID.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CommandID.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="commandID.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CommandID.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Guid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid Guid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.ComponentModel.Design.CommandID.Guid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CommandID.ID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : int" Usage="System.ComponentModel.Design.CommandID.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CommandID.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="commandID.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

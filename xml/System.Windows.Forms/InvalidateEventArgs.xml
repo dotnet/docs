@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InvalidateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidateEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class InvalidateEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type InvalidateEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InvalidateEventArgs.#ctor(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (invalidRect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidateEventArgs(System::Drawing::Rectangle invalidRect);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.InvalidateEventArgs : System.Drawing.Rectangle -&gt; System.Windows.Forms.InvalidateEventArgs" Usage="new System.Windows.Forms.InvalidateEventArgs invalidRect" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InvalidateEventArgs.InvalidRect" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvalidRect As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle InvalidRect { System::Drawing::Rectangle get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidRect : System.Drawing.Rectangle" Usage="System.Windows.Forms.InvalidateEventArgs.InvalidRect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

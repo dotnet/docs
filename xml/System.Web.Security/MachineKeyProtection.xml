@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MachineKeyProtection" />
   <TypeSignature Language="VB.NET" Value="Public Enum MachineKeyProtection" />
   <TypeSignature Language="C++ CLI" Value="public enum class MachineKeyProtection" />
+  <TypeSignature Language="F#" Value="type MachineKeyProtection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MachineKeyProtection.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Web.Security.MachineKeyProtection.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MachineKeyProtection.Encryption" />
       <MemberSignature Language="VB.NET" Value="Encryption" />
       <MemberSignature Language="C++ CLI" Value="Encryption" />
+      <MemberSignature Language="F#" Value="Encryption = 1" Usage="System.Web.Security.MachineKeyProtection.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MachineKeyProtection.Validation" />
       <MemberSignature Language="VB.NET" Value="Validation" />
       <MemberSignature Language="C++ CLI" Value="Validation" />
+      <MemberSignature Language="F#" Value="Validation = 2" Usage="System.Web.Security.MachineKeyProtection.Validation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

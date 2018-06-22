@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Mapping.EntityViewGenerationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityViewGenerationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityViewGenerationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type EntityViewGenerationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.EntityViewGenerationAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (viewGenerationType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityViewGenerationAttribute(Type ^ viewGenerationType);" />
+      <MemberSignature Language="F#" Value="new System.Data.Mapping.EntityViewGenerationAttribute : Type -&gt; System.Data.Mapping.EntityViewGenerationAttribute" Usage="new System.Data.Mapping.EntityViewGenerationAttribute viewGenerationType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewGenerationAttribute.ViewGenerationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewGenerationType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ViewGenerationType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewGenerationType : Type" Usage="System.Data.Mapping.EntityViewGenerationAttribute.ViewGenerationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

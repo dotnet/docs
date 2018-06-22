@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugType" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDebugType" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDebugType" />
+  <TypeSignature Language="F#" Value="type IDebugType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugType.HasInstance(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasInstance (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasInstance(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member HasInstance : obj -&gt; bool" Usage="iDebugType.HasInstance o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

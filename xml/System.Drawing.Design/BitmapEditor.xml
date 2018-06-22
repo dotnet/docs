@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.BitmapEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class BitmapEditor&#xA;Inherits ImageEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEditor : System::Drawing::Design::ImageEditor" />
+  <TypeSignature Language="F#" Value="type BitmapEditor = class&#xA;    inherit ImageEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.GetExtensions" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetExtensions () As String()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
+      <MemberSignature Language="F#" Value="override this.GetExtensions : unit -&gt; string[]" Usage="bitmapEditor.GetExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.GetFileDialogDescription" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetFileDialogDescription () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
+      <MemberSignature Language="F#" Value="override this.GetFileDialogDescription : unit -&gt; string" Usage="bitmapEditor.GetFileDialogDescription " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Drawing.Image LoadFromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.LoadFromStream(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Image ^ LoadFromStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="override this.LoadFromStream : System.IO.Stream -&gt; System.Drawing.Image" Usage="bitmapEditor.LoadFromStream stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.STATSTG" />
   <TypeSignature Language="VB.NET" Value="Public Structure STATSTG" />
   <TypeSignature Language="C++ CLI" Value="public value class STATSTG" />
+  <TypeSignature Language="F#" Value="type STATSTG = struct" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.atime" />
       <MemberSignature Language="VB.NET" Value="Public atime As FILETIME " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::FILETIME atime;" />
+      <MemberSignature Language="F#" Value="val mutable atime : System.Runtime.InteropServices.FILETIME" Usage="System.Runtime.InteropServices.STATSTG.atime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.cbSize" />
       <MemberSignature Language="VB.NET" Value="Public cbSize As Long " />
       <MemberSignature Language="C++ CLI" Value="public: long cbSize;" />
+      <MemberSignature Language="F#" Value="val mutable cbSize : int64" Usage="System.Runtime.InteropServices.STATSTG.cbSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.clsid" />
       <MemberSignature Language="VB.NET" Value="Public clsid As Guid " />
       <MemberSignature Language="C++ CLI" Value="public: Guid clsid;" />
+      <MemberSignature Language="F#" Value="val mutable clsid : Guid" Usage="System.Runtime.InteropServices.STATSTG.clsid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.ctime" />
       <MemberSignature Language="VB.NET" Value="Public ctime As FILETIME " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::FILETIME ctime;" />
+      <MemberSignature Language="F#" Value="val mutable ctime : System.Runtime.InteropServices.FILETIME" Usage="System.Runtime.InteropServices.STATSTG.ctime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.grfLocksSupported" />
       <MemberSignature Language="VB.NET" Value="Public grfLocksSupported As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfLocksSupported;" />
+      <MemberSignature Language="F#" Value="val mutable grfLocksSupported : int" Usage="System.Runtime.InteropServices.STATSTG.grfLocksSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.grfMode" />
       <MemberSignature Language="VB.NET" Value="Public grfMode As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfMode;" />
+      <MemberSignature Language="F#" Value="val mutable grfMode : int" Usage="System.Runtime.InteropServices.STATSTG.grfMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.grfStateBits" />
       <MemberSignature Language="VB.NET" Value="Public grfStateBits As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int grfStateBits;" />
+      <MemberSignature Language="F#" Value="val mutable grfStateBits : int" Usage="System.Runtime.InteropServices.STATSTG.grfStateBits" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.mtime" />
       <MemberSignature Language="VB.NET" Value="Public mtime As FILETIME " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::FILETIME mtime;" />
+      <MemberSignature Language="F#" Value="val mutable mtime : System.Runtime.InteropServices.FILETIME" Usage="System.Runtime.InteropServices.STATSTG.mtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.pwcsName" />
       <MemberSignature Language="VB.NET" Value="Public pwcsName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ pwcsName;" />
+      <MemberSignature Language="F#" Value="val mutable pwcsName : string" Usage="System.Runtime.InteropServices.STATSTG.pwcsName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -281,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.reserved" />
       <MemberSignature Language="VB.NET" Value="Public reserved As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int reserved;" />
+      <MemberSignature Language="F#" Value="val mutable reserved : int" Usage="System.Runtime.InteropServices.STATSTG.reserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.STATSTG.type" />
       <MemberSignature Language="VB.NET" Value="Public type As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int type;" />
+      <MemberSignature Language="F#" Value="val mutable type : int" Usage="System.Runtime.InteropServices.STATSTG.type" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

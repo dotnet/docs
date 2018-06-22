@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.KeyDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyDescriptor" />
+  <TypeSignature Language="F#" Value="type KeyDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ski As SecurityKeyIdentifier)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyDescriptor(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ski);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.KeyDescriptor : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Metadata.KeyDescriptor" Usage="new System.IdentityModel.Metadata.KeyDescriptor ski" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionMethods As ICollection(Of EncryptionMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EncryptionMethod ^&gt; ^ EncryptionMethods { System::Collections::Generic::ICollection&lt;System::IdentityModel::Metadata::EncryptionMethod ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncryptionMethods : System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.EncryptionMethod&gt;" Usage="System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.KeyDescriptor.KeyInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyInfo As SecurityKeyIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ KeyInfo { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyInfo : System.IdentityModel.Tokens.SecurityKeyIdentifier with get, set" Usage="System.IdentityModel.Metadata.KeyDescriptor.KeyInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.KeyDescriptor.Use" />
       <MemberSignature Language="VB.NET" Value="Public Property Use As KeyType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::KeyType Use { System::IdentityModel::Metadata::KeyType get(); void set(System::IdentityModel::Metadata::KeyType value); };" />
+      <MemberSignature Language="F#" Value="member this.Use : System.IdentityModel.Metadata.KeyType with get, set" Usage="System.IdentityModel.Metadata.KeyDescriptor.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

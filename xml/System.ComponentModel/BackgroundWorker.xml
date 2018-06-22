@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BackgroundWorker" />
   <TypeSignature Language="VB.NET" Value="Public Class BackgroundWorker&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class BackgroundWorker : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type BackgroundWorker = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -117,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="backgroundWorker.CancelAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -171,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.CancellationPending" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancellationPending As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancellationPending { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancellationPending : bool" Usage="System.ComponentModel.BackgroundWorker.CancellationPending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -226,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="backgroundWorker.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -249,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="backgroundWorker.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.DoWork" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoWork As DoWorkEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::DoWorkEventHandler ^ DoWork;" />
+      <MemberSignature Language="F#" Value="member this.DoWork : System.ComponentModel.DoWorkEventHandler " Usage="member this.DoWork : System.ComponentModel.DoWorkEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.IsBusy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBusy As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBusy { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBusy : bool" Usage="System.ComponentModel.BackgroundWorker.IsBusy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -386,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDoWork (e As DoWorkEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDoWork(System::ComponentModel::DoWorkEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDoWork : System.ComponentModel.DoWorkEventArgs -&gt; unit&#xA;override this.OnDoWork : System.ComponentModel.DoWorkEventArgs -&gt; unit" Usage="backgroundWorker.OnDoWork e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -420,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnProgressChanged (e As ProgressChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnProgressChanged(System::ComponentModel::ProgressChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnProgressChanged : System.ComponentModel.ProgressChangedEventArgs -&gt; unit&#xA;override this.OnProgressChanged : System.ComponentModel.ProgressChangedEventArgs -&gt; unit" Usage="backgroundWorker.OnProgressChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -475,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRunWorkerCompleted (e As RunWorkerCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRunWorkerCompleted(System::ComponentModel::RunWorkerCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnRunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventArgs -&gt; unit&#xA;override this.OnRunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventArgs -&gt; unit" Usage="backgroundWorker.OnRunWorkerCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -522,6 +532,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As ProgressChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ProgressChangedEventHandler ^ ProgressChanged;" />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : System.ComponentModel.ProgressChangedEventHandler " Usage="member this.ProgressChanged : System.ComponentModel.ProgressChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -580,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportProgress (percentProgress As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress);" />
+      <MemberSignature Language="F#" Value="member this.ReportProgress : int -&gt; unit" Usage="backgroundWorker.ReportProgress percentProgress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -635,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportProgress (percentProgress As Integer, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="member this.ReportProgress : int * obj -&gt; unit" Usage="backgroundWorker.ReportProgress (percentProgress, userState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -699,6 +712,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub RunWorkerAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync();" />
+      <MemberSignature Language="F#" Value="member this.RunWorkerAsync : unit -&gt; unit" Usage="backgroundWorker.RunWorkerAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -750,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RunWorkerAsync (argument As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync(System::Object ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RunWorkerAsync : obj -&gt; unit" Usage="backgroundWorker.RunWorkerAsync argument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -807,6 +822,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RunWorkerCompleted As RunWorkerCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::RunWorkerCompletedEventHandler ^ RunWorkerCompleted;" />
+      <MemberSignature Language="F#" Value="member this.RunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventHandler " Usage="member this.RunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -864,6 +880,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerReportsProgress As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerReportsProgress { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkerReportsProgress : bool with get, set" Usage="System.ComponentModel.BackgroundWorker.WorkerReportsProgress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -909,6 +926,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerSupportsCancellation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerSupportsCancellation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WorkerSupportsCancellation : bool with get, set" Usage="System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

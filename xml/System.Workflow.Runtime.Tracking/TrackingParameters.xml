@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingParameters" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TrackingParameters" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingParameters sealed" />
+  <TypeSignature Language="F#" Value="type TrackingParameters = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingParameters.#ctor(System.Guid,System.Type,System.Workflow.ComponentModel.Activity,System.Collections.Generic.IList{System.String},System.Guid,System.Guid,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, workflowType As Type, rootActivity As Activity, callPath As IList(Of String), callerInstanceId As Guid, contextGuid As Guid, callerContextGuid As Guid, callerParentContextGuid As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingParameters(Guid instanceId, Type ^ workflowType, System::Workflow::ComponentModel::Activity ^ rootActivity, System::Collections::Generic::IList&lt;System::String ^&gt; ^ callPath, Guid callerInstanceId, Guid contextGuid, Guid callerContextGuid, Guid callerParentContextGuid);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingParameters : Guid * Type * System.Workflow.ComponentModel.Activity * System.Collections.Generic.IList&lt;string&gt; * Guid * Guid * Guid * Guid -&gt; System.Workflow.Runtime.Tracking.TrackingParameters" Usage="new System.Workflow.Runtime.Tracking.TrackingParameters (instanceId, workflowType, rootActivity, callPath, callerInstanceId, contextGuid, callerContextGuid, callerParentContextGuid)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallerContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid CallerContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallerContextGuid : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.CallerContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallerInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid CallerInstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallerInstanceId : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.CallerInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerParentContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallerParentContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid CallerParentContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallerParentContextGuid : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.CallerParentContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallPath As IList(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ CallPath { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallPath : System.Collections.Generic.IList&lt;string&gt;" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.CallPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.ContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextGuid : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.ContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.InstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.RootActivity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootActivity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ RootActivity { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootActivity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.RootActivity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.WorkflowType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ WorkflowType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowType : Type" Usage="System.Workflow.Runtime.Tracking.TrackingParameters.WorkflowType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

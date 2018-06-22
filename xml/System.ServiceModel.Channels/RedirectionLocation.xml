@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RedirectionLocation" />
   <TypeSignature Language="VB.NET" Value="Public Class RedirectionLocation" />
   <TypeSignature Language="C++ CLI" Value="public ref class RedirectionLocation" />
+  <TypeSignature Language="F#" Value="type RedirectionLocation = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionLocation.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectionLocation(Uri ^ address);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionLocation : Uri -&gt; System.ServiceModel.Channels.RedirectionLocation" Usage="new System.ServiceModel.Channels.RedirectionLocation address" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionLocation.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Address { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri" Usage="System.ServiceModel.Channels.RedirectionLocation.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

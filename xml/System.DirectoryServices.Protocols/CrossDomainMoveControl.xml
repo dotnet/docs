@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.CrossDomainMoveControl" />
   <TypeSignature Language="VB.NET" Value="Public Class CrossDomainMoveControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class CrossDomainMoveControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type CrossDomainMoveControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetDomainController As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CrossDomainMoveControl(System::String ^ targetDomainController);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.CrossDomainMoveControl : string -&gt; System.DirectoryServices.Protocols.CrossDomainMoveControl" Usage="new System.DirectoryServices.Protocols.CrossDomainMoveControl targetDomainController" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.CrossDomainMoveControl.GetValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="crossDomainMoveControl.GetValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.CrossDomainMoveControl.TargetDomainController" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetDomainController As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetDomainController { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetDomainController : string with get, set" Usage="System.DirectoryServices.Protocols.CrossDomainMoveControl.TargetDomainController" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

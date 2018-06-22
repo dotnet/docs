@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptDescriptor abstract" />
+  <TypeSignature Language="F#" Value="type ScriptDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptDescriptor.GetScript" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetScript () As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetScript();" />
+      <MemberSignature Language="F#" Value="abstract member GetScript : unit -&gt; string" Usage="scriptDescriptor.GetScript " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

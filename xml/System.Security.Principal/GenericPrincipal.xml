@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.GenericPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericPrincipal&#xA;Inherits ClaimsPrincipal" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenericPrincipal : System::Security::Claims::ClaimsPrincipal" />
+  <TypeSignature Language="F#" Value="type GenericPrincipal = class&#xA;    inherit ClaimsPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericPrincipal.#ctor(System.Security.Principal.IIdentity,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity, roles As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPrincipal(System::Security::Principal::IIdentity ^ identity, cli::array &lt;System::String ^&gt; ^ roles);" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.GenericPrincipal : System.Security.Principal.IIdentity * string[] -&gt; System.Security.Principal.GenericPrincipal" Usage="new System.Security.Principal.GenericPrincipal (identity, roles)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericPrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Security.Principal.GenericPrincipal.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericPrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsInRole(System::String ^ role);" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : string -&gt; bool" Usage="genericPrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>

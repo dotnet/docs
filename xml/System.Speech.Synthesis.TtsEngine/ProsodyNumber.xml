@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" />
   <TypeSignature Language="VB.NET" Value="Public Structure ProsodyNumber&#xA;Implements IEquatable(Of ProsodyNumber)" />
   <TypeSignature Language="C++ CLI" Value="public value class ProsodyNumber : IEquatable&lt;System::Speech::Synthesis::TtsEngine::ProsodyNumber&gt;" />
+  <TypeSignature Language="F#" Value="type ProsodyNumber = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ssmlAttributeId As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProsodyNumber(int ssmlAttributeId);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.TtsEngine.ProsodyNumber : int -&gt; System.Speech.Synthesis.TtsEngine.ProsodyNumber" Usage="new System.Speech.Synthesis.TtsEngine.ProsodyNumber ssmlAttributeId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (number As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProsodyNumber(float number);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.TtsEngine.ProsodyNumber : single -&gt; System.Speech.Synthesis.TtsEngine.ProsodyNumber" Usage="new System.Speech.Synthesis.TtsEngine.ProsodyNumber number" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyNumber.AbsoluteNumber" />
       <MemberSignature Language="VB.NET" Value="Public Const AbsoluteNumber As Integer  = 2147483647" />
       <MemberSignature Language="C++ CLI" Value="public: int AbsoluteNumber = 2147483647;" />
+      <MemberSignature Language="F#" Value="val mutable AbsoluteNumber : int" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.AbsoluteNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="prosodyNumber.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals(System.Speech.Synthesis.TtsEngine.ProsodyNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ProsodyNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Speech::Synthesis::TtsEngine::ProsodyNumber other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Speech.Synthesis.TtsEngine.ProsodyNumber -&gt; bool" Usage="prosodyNumber.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="prosodyNumber.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ProsodyNumber.IsNumberPercent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNumberPercent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNumberPercent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNumberPercent : bool" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.IsNumberPercent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Number" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Number { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Number : single" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -225,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Equality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (prosodyNumber1 As ProsodyNumber, prosodyNumber2 As ProsodyNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Speech::Synthesis::TtsEngine::ProsodyNumber prosodyNumber1, System::Speech::Synthesis::TtsEngine::ProsodyNumber prosodyNumber2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Speech.Synthesis.TtsEngine.ProsodyNumber * System.Speech.Synthesis.TtsEngine.ProsodyNumber -&gt; bool" Usage="prosodyNumber1 = prosodyNumber2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -254,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Inequality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (prosodyNumber1 As ProsodyNumber, prosodyNumber2 As ProsodyNumber) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Speech::Synthesis::TtsEngine::ProsodyNumber prosodyNumber1, System::Speech::Synthesis::TtsEngine::ProsodyNumber prosodyNumber2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Speech.Synthesis.TtsEngine.ProsodyNumber * System.Speech.Synthesis.TtsEngine.ProsodyNumber -&gt; bool" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Inequality (prosodyNumber1, prosodyNumber2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ProsodyNumber.SsmlAttributeId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SsmlAttributeId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SsmlAttributeId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SsmlAttributeId : int" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.SsmlAttributeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Unit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As ProsodyUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ProsodyUnit Unit { System::Speech::Synthesis::TtsEngine::ProsodyUnit get(); };" />
+      <MemberSignature Language="F#" Value="member this.Unit : System.Speech.Synthesis.TtsEngine.ProsodyUnit" Usage="System.Speech.Synthesis.TtsEngine.ProsodyNumber.Unit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

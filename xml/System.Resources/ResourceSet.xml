@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceSet" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceSet&#xA;Implements IDisposable, IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResourceSet : IDisposable, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ResourceSet = class&#xA;    interface IDisposable&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceSet : System.IO.Stream -&gt; System.Resources.ResourceSet" Usage="new System.Resources.ResourceSet stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.Resources.IResourceReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As IResourceReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::Resources::IResourceReader ^ reader);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceSet : System.Resources.IResourceReader -&gt; System.Resources.ResourceSet" Usage="new System.Resources.ResourceSet reader" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceSet : string -&gt; System.Resources.ResourceSet" Usage="new System.Resources.ResourceSet fileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="resourceSet.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="resourceSet.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -321,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="resourceSet.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -361,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetDefaultReader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultReader () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetDefaultReader();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultReader : unit -&gt; Type&#xA;override this.GetDefaultReader : unit -&gt; Type" Usage="resourceSet.GetDefaultReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetDefaultWriter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultWriter () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetDefaultWriter();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultWriter : unit -&gt; Type&#xA;override this.GetDefaultWriter : unit -&gt; Type" Usage="resourceSet.GetDefaultWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -431,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="resourceSet.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -506,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetObject(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : string -&gt; obj&#xA;override this.GetObject : string -&gt; obj" Usage="resourceSet.GetObject name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -549,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetObject(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String, ignoreCase As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : string * bool -&gt; obj&#xA;override this.GetObject : string * bool -&gt; obj" Usage="resourceSet.GetObject (name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -606,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetString : string -&gt; string&#xA;override this.GetString : string -&gt; string" Usage="resourceSet.GetString name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -643,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetString(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String, ignoreCase As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member GetString : string * bool -&gt; string&#xA;override this.GetString : string * bool -&gt; string" Usage="resourceSet.GetString (name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -691,6 +705,7 @@
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceSet.Reader" />
       <MemberSignature Language="VB.NET" Value="Protected Reader As IResourceReader " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Resources::IResourceReader ^ Reader;" />
+      <MemberSignature Language="F#" Value="val mutable Reader : System.Resources.IResourceReader" Usage="System.Resources.ResourceSet.Reader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -712,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.ReadResources" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadResources ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadResources();" />
+      <MemberSignature Language="F#" Value="abstract member ReadResources : unit -&gt; unit&#xA;override this.ReadResources : unit -&gt; unit" Usage="resourceSet.ReadResources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -779,6 +795,7 @@
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceSet.Table" />
       <MemberSignature Language="VB.NET" Value="Protected Table As Hashtable " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ Table;" />
+      <MemberSignature Language="F#" Value="val mutable Table : System.Collections.Hashtable" Usage="System.Resources.ResourceSet.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

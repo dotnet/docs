@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum GeneratorStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class GeneratorStatus" />
+  <TypeSignature Language="F#" Value="type GeneratorStatus = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorStatus.ContainersGenerated" />
       <MemberSignature Language="VB.NET" Value="ContainersGenerated" />
       <MemberSignature Language="C++ CLI" Value="ContainersGenerated" />
+      <MemberSignature Language="F#" Value="ContainersGenerated = 2" Usage="System.Windows.Controls.Primitives.GeneratorStatus.ContainersGenerated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorStatus.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="C++ CLI" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 3" Usage="System.Windows.Controls.Primitives.GeneratorStatus.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorStatus.GeneratingContainers" />
       <MemberSignature Language="VB.NET" Value="GeneratingContainers" />
       <MemberSignature Language="C++ CLI" Value="GeneratingContainers" />
+      <MemberSignature Language="F#" Value="GeneratingContainers = 1" Usage="System.Windows.Controls.Primitives.GeneratorStatus.GeneratingContainers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorStatus.NotStarted" />
       <MemberSignature Language="VB.NET" Value="NotStarted" />
       <MemberSignature Language="C++ CLI" Value="NotStarted" />
+      <MemberSignature Language="F#" Value="NotStarted = 0" Usage="System.Windows.Controls.Primitives.GeneratorStatus.NotStarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

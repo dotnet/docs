@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedList`2" />
   <TypeSignature Language="VB.NET" Value="Public Class SortedList(Of TKey, TValue)&#xA;Implements ICollection(Of KeyValuePair(Of TKey, TValue)), IDictionary, IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IReadOnlyDictionary(Of TKey, TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class SortedList : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyDictionary&lt;TKey, TValue&gt;, System::Collections::IDictionary" />
+  <TypeSignature Language="F#" Value="type SortedList&lt;'Key, 'Value&gt; = class&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface IDictionary&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -197,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.#ctor(System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; : System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;" Usage="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -255,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IDictionary(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::Generic::IDictionary&lt;TKey, TValue&gt; ^ dictionary);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; : System.Collections.Generic.IDictionary&lt;'Key, 'Value&gt; -&gt; System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;" Usage="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; dictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -315,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; : int -&gt; System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;" Usage="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -377,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IDictionary(Of TKey, TValue), comparer As IComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::Generic::IDictionary&lt;TKey, TValue&gt; ^ dictionary, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; : System.Collections.Generic.IDictionary&lt;'Key, 'Value&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;" Usage="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; (dictionary, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -442,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.#ctor(System.Int32,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, comparer As IComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(int capacity, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; : int * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;" Usage="new System.Collections.Generic.SortedList&lt;'Key, 'Value&gt; (capacity, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -509,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As TKey, value As TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'Key * 'Value -&gt; unit&#xA;override this.Add : 'Key * 'Value -&gt; unit" Usage="sortedList.Add (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
@@ -578,6 +585,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -627,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="sortedList.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -676,6 +685,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Comparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparer As IComparer(Of TKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IComparer&lt;TKey&gt; ^ Comparer { System::Collections::Generic::IComparer&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comparer : System.Collections.Generic.IComparer&lt;'Key&gt;" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Comparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -714,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.ContainsKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : 'Key -&gt; bool&#xA;override this.ContainsKey : 'Key -&gt; bool" Usage="sortedList.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -782,6 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.ContainsValue(`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsValue (value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsValue(TValue value);" />
+      <MemberSignature Language="F#" Value="member this.ContainsValue : 'Value -&gt; bool" Usage="sortedList.ContainsValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -829,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -876,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;" Usage="sortedList.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -937,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.IndexOfKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfKey (key As TKey) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfKey(TKey key);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfKey : 'Key -&gt; int" Usage="sortedList.IndexOfKey key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -983,6 +998,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.IndexOfValue(`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOfValue (value As TValue) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfValue(TValue value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOfValue : 'Value -&gt; int" Usage="sortedList.IndexOfValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1029,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Item(`0)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); void set(TKey key, TValue value); };" />
+      <MemberSignature Language="F#" Value="member this.Item('Key) : 'Value with get, set" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -1107,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IList(Of TKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;TKey&gt; ^ Keys { System::Collections::Generic::IList&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.IList&lt;'Key&gt;" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1173,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'Key -&gt; bool&#xA;override this.Remove : 'Key -&gt; bool" Usage="sortedList.Remove key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
@@ -1235,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="sortedList.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1396,6 +1416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1468,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -1502,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -1571,6 +1594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As IEnumerable(Of TKey) Implements IReadOnlyDictionary(Of TKey, TValue).Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Keys</InterfaceMember>
@@ -1605,6 +1629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As IEnumerable(Of TValue) Implements IReadOnlyDictionary(Of TKey, TValue).Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Values</InterfaceMember>
@@ -1707,6 +1732,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1756,6 +1782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -2040,6 +2067,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -2088,6 +2116,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -2136,6 +2165,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -2216,6 +2246,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -2340,6 +2371,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -2462,6 +2494,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.TrimExcess" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberSignature Language="F#" Value="member this.TrimExcess : unit -&gt; unit" Usage="sortedList.TrimExcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2509,6 +2542,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedList`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="sortedList.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
@@ -2582,6 +2616,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedList`2.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;TValue&gt; ^ Values { System::Collections::Generic::IList&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IList&lt;'Value&gt;" Usage="System.Collections.Generic.SortedList&lt;'Key, 'Value&gt;.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

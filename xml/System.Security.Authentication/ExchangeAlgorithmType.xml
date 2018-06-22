@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExchangeAlgorithmType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExchangeAlgorithmType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ExchangeAlgorithmType" />
+  <TypeSignature Language="F#" Value="type ExchangeAlgorithmType = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExchangeAlgorithmType.DiffieHellman" />
       <MemberSignature Language="VB.NET" Value="DiffieHellman" />
       <MemberSignature Language="C++ CLI" Value="DiffieHellman" />
+      <MemberSignature Language="F#" Value="DiffieHellman = 43522" Usage="System.Security.Authentication.ExchangeAlgorithmType.DiffieHellman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExchangeAlgorithmType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Authentication.ExchangeAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExchangeAlgorithmType.RsaKeyX" />
       <MemberSignature Language="VB.NET" Value="RsaKeyX" />
       <MemberSignature Language="C++ CLI" Value="RsaKeyX" />
+      <MemberSignature Language="F#" Value="RsaKeyX = 41984" Usage="System.Security.Authentication.ExchangeAlgorithmType.RsaKeyX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExchangeAlgorithmType.RsaSign" />
       <MemberSignature Language="VB.NET" Value="RsaSign" />
       <MemberSignature Language="C++ CLI" Value="RsaSign" />
+      <MemberSignature Language="F#" Value="RsaSign = 9216" Usage="System.Security.Authentication.ExchangeAlgorithmType.RsaSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

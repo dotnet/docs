@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.HostNameComparisonMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum HostNameComparisonMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class HostNameComparisonMode" />
+  <TypeSignature Language="F#" Value="type HostNameComparisonMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.Exact" />
       <MemberSignature Language="VB.NET" Value="Exact" />
       <MemberSignature Language="C++ CLI" Value="Exact" />
+      <MemberSignature Language="F#" Value="Exact = 1" Usage="System.ServiceModel.HostNameComparisonMode.Exact" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />
       <MemberSignature Language="VB.NET" Value="StrongWildcard" />
       <MemberSignature Language="C++ CLI" Value="StrongWildcard" />
+      <MemberSignature Language="F#" Value="StrongWildcard = 0" Usage="System.ServiceModel.HostNameComparisonMode.StrongWildcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.WeakWildcard" />
       <MemberSignature Language="VB.NET" Value="WeakWildcard" />
       <MemberSignature Language="C++ CLI" Value="WeakWildcard" />
+      <MemberSignature Language="F#" Value="WeakWildcard = 2" Usage="System.ServiceModel.HostNameComparisonMode.WeakWildcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

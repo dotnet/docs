@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.TokenReplayCache" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TokenReplayCache&#xA;Implements ICustomIdentityConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class TokenReplayCache abstract : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type TokenReplayCache = class&#xA;    interface ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddOrUpdate(string key, class System.IdentityModel.Tokens.SecurityToken securityToken, valuetype System.DateTime expirationTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.TokenReplayCache.AddOrUpdate(System.String,System.IdentityModel.Tokens.SecurityToken,System.DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddOrUpdate(System::String ^ key, System::IdentityModel::Tokens::SecurityToken ^ securityToken, DateTime expirationTime);" />
+      <MemberSignature Language="F#" Value="abstract member AddOrUpdate : string * System.IdentityModel.Tokens.SecurityToken * DateTime -&gt; unit" Usage="tokenReplayCache.AddOrUpdate (key, securityToken, expirationTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.TokenReplayCache.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Contains (key As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Contains(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool" Usage="tokenReplayCache.Contains key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.TokenReplayCache.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As String) As SecurityToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Tokens::SecurityToken ^ Get(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="tokenReplayCache.Get key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.TokenReplayCache.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="tokenReplayCache.LoadCustomConfiguration nodelist" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.TokenReplayCache.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Remove (key As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit" Usage="tokenReplayCache.Remove key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Duration" />
   <TypeSignature Language="VB.NET" Value="Public Structure Duration" />
   <TypeSignature Language="C++ CLI" Value="public value class Duration" />
+  <TypeSignature Language="F#" Value="type Duration = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.#ctor(System.TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Duration(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Duration : TimeSpan -&gt; System.Windows.Duration" Usage="new System.Windows.Duration timeSpan" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Duration Add(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Add(System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Duration Add(System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Duration -&gt; System.Windows.Duration" Usage="duration.Add duration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Duration.Automatic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Automatic As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Duration Automatic { System::Windows::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.Automatic : System.Windows.Duration" Usage="System.Windows.Duration.Automatic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Compare(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (t1 As Duration, t2 As Duration) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Windows.Duration * System.Windows.Duration -&gt; int" Usage="System.Windows.Duration.Compare (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="duration.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Equals(System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Duration -&gt; bool" Usage="duration.Equals duration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Equals(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="System.Windows.Duration.Equals (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Duration.Forever" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Forever As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Duration Forever { System::Windows::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forever : System.Windows.Duration" Usage="System.Windows.Duration.Forever" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="duration.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -341,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Duration.HasTimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTimeSpan As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTimeSpan { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasTimeSpan : bool" Usage="System.Windows.Duration.HasTimeSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Addition(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (t1 As Duration, t2 As Duration) As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Duration operator +(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Duration * System.Windows.Duration -&gt; System.Windows.Duration" Usage="t1 + t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -391,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Equality(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="t1 = t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -420,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_GreaterThan(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="t1 &gt; t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -454,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_GreaterThanOrEqual(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="t1 &gt;= t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -487,6 +502,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_Implicit(valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Implicit(System.TimeSpan)~System.Windows.Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Windows::Duration(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : TimeSpan -&gt; System.Windows.Duration" Usage="System.Windows.Duration.op_Implicit timeSpan" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -515,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Inequality(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="System.Windows.Duration.op_Inequality (t1, t2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_LessThan(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="t1 &lt; t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -578,6 +596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_LessThanOrEqual(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (t1 As Duration, t2 As Duration) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Windows.Duration * System.Windows.Duration -&gt; bool" Usage="t1 &lt;= t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -612,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Subtraction(System.Windows.Duration,System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (t1 As Duration, t2 As Duration) As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Duration operator -(System::Windows::Duration t1, System::Windows::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Duration * System.Windows.Duration -&gt; System.Windows.Duration" Usage="t1 - t2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -658,6 +678,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_UnaryPlus(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_UnaryPlus(System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Duration operator +(System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="static member ( ~+ ) : System.Windows.Duration -&gt; System.Windows.Duration" Usage="+ duration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -683,6 +704,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Duration Plus(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Plus(System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Duration Plus(System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="static member Plus : System.Windows.Duration -&gt; System.Windows.Duration" Usage="System.Windows.Duration.Plus duration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -706,6 +728,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Duration Subtract(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.Subtract(System.Windows.Duration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Duration Subtract(System::Windows::Duration duration);" />
+      <MemberSignature Language="F#" Value="member this.Subtract : System.Windows.Duration -&gt; System.Windows.Duration" Usage="duration.Subtract duration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -730,6 +753,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Duration.TimeSpan" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeSpan As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeSpan { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeSpan : TimeSpan" Usage="System.Windows.Duration.TimeSpan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -751,6 +775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="duration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

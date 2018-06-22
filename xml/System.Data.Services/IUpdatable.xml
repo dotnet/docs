@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IUpdatable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUpdatable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IUpdatable" />
+  <TypeSignature Language="F#" Value="type IUpdatable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.AddReferenceToCollection(System.Object,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddReferenceToCollection (targetResource As Object, propertyName As String, resourceToBeAdded As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReferenceToCollection(System::Object ^ targetResource, System::String ^ propertyName, System::Object ^ resourceToBeAdded);" />
+      <MemberSignature Language="F#" Value="abstract member AddReferenceToCollection : obj * string * obj -&gt; unit" Usage="iUpdatable.AddReferenceToCollection (targetResource, propertyName, resourceToBeAdded)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.ClearChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearChanges();" />
+      <MemberSignature Language="F#" Value="abstract member ClearChanges : unit -&gt; unit" Usage="iUpdatable.ClearChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.CreateResource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateResource (containerName As String, fullTypeName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateResource(System::String ^ containerName, System::String ^ fullTypeName);" />
+      <MemberSignature Language="F#" Value="abstract member CreateResource : string * string -&gt; obj" Usage="iUpdatable.CreateResource (containerName, fullTypeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.DeleteResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteResource (targetResource As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteResource(System::Object ^ targetResource);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteResource : obj -&gt; unit" Usage="iUpdatable.DeleteResource targetResource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.GetResource(System.Linq.IQueryable,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResource (query As IQueryable, fullTypeName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetResource(System::Linq::IQueryable ^ query, System::String ^ fullTypeName);" />
+      <MemberSignature Language="F#" Value="abstract member GetResource : System.Linq.IQueryable * string -&gt; obj" Usage="iUpdatable.GetResource (query, fullTypeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.GetValue(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (targetResource As Object, propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Object ^ targetResource, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : obj * string -&gt; obj" Usage="iUpdatable.GetValue (targetResource, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.RemoveReferenceFromCollection(System.Object,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveReferenceFromCollection (targetResource As Object, propertyName As String, resourceToBeRemoved As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveReferenceFromCollection(System::Object ^ targetResource, System::String ^ propertyName, System::Object ^ resourceToBeRemoved);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveReferenceFromCollection : obj * string * obj -&gt; unit" Usage="iUpdatable.RemoveReferenceFromCollection (targetResource, propertyName, resourceToBeRemoved)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.ResetResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResetResource (resource As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ResetResource(System::Object ^ resource);" />
+      <MemberSignature Language="F#" Value="abstract member ResetResource : obj -&gt; obj" Usage="iUpdatable.ResetResource resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.ResolveResource(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveResource (resource As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ResolveResource(System::Object ^ resource);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveResource : obj -&gt; obj" Usage="iUpdatable.ResolveResource resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -295,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.SaveChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveChanges();" />
+      <MemberSignature Language="F#" Value="abstract member SaveChanges : unit -&gt; unit" Usage="iUpdatable.SaveChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.SetReference(System.Object,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetReference (targetResource As Object, propertyName As String, propertyValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReference(System::Object ^ targetResource, System::String ^ propertyName, System::Object ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetReference : obj * string * obj -&gt; unit" Usage="iUpdatable.SetReference (targetResource, propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -349,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IUpdatable.SetValue(System.Object,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (targetResource As Object, propertyName As String, propertyValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ targetResource, System::String ^ propertyName, System::Object ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj * string * obj -&gt; unit" Usage="iUpdatable.SetValue (targetResource, propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

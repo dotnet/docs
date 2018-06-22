@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GridViewAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewAutomationPeer&#xA;Implements ITableProvider, IViewAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewAutomationPeer : System::Windows::Automation::Peers::IViewAutomationPeer, System::Windows::Automation::Provider::ITableProvider" />
+  <TypeSignature Language="F#" Value="type GridViewAutomationPeer = class&#xA;    interface IViewAutomationPeer&#xA;    interface ITableProvider&#xA;    interface IGridProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.GridView owner, class System.Windows.Controls.ListView listview) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewAutomationPeer.#ctor(System.Windows.Controls.GridView,System.Windows.Controls.ListView)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewAutomationPeer(System::Windows::Controls::GridView ^ owner, System::Windows::Controls::ListView ^ listview);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.GridViewAutomationPeer : System.Windows.Controls.GridView * System.Windows.Controls.ListView -&gt; System.Windows.Automation.Peers.GridViewAutomationPeer" Usage="new System.Windows.Automation.Peers.GridViewAutomationPeer (owner, listview)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnCount As Integer Implements IGridProvider.ColumnCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.GridViewAutomationPeer.System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.ColumnCount</InterfaceMember>
@@ -312,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowCount As Integer Implements IGridProvider.RowCount" />
       <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.RowCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.GridViewAutomationPeer.System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.RowCount</InterfaceMember>
@@ -404,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowOrColumnMajor As RowOrColumnMajor Implements ITableProvider.RowOrColumnMajor" />
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.GridViewAutomationPeer.System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor</InterfaceMember>

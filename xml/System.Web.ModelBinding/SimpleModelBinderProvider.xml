@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.SimpleModelBinderProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SimpleModelBinderProvider&#xA;Inherits ModelBinderProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SimpleModelBinderProvider sealed : System::Web::ModelBinding::ModelBinderProvider" />
+  <TypeSignature Language="F#" Value="type SimpleModelBinderProvider = class&#xA;    inherit ModelBinderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleModelBinderProvider.#ctor(System.Type,System.Func{System.Web.ModelBinding.IModelBinder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelType As Type, modelBinderFactory As Func(Of IModelBinder))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleModelBinderProvider(Type ^ modelType, Func&lt;System::Web::ModelBinding::IModelBinder ^&gt; ^ modelBinderFactory);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.SimpleModelBinderProvider : Type * Func&lt;System.Web.ModelBinding.IModelBinder&gt; -&gt; System.Web.ModelBinding.SimpleModelBinderProvider" Usage="new System.Web.ModelBinding.SimpleModelBinderProvider (modelType, modelBinderFactory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleModelBinderProvider.#ctor(System.Type,System.Web.ModelBinding.IModelBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelType As Type, modelBinder As IModelBinder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleModelBinderProvider(Type ^ modelType, System::Web::ModelBinding::IModelBinder ^ modelBinder);" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.SimpleModelBinderProvider : Type * System.Web.ModelBinding.IModelBinder -&gt; System.Web.ModelBinding.SimpleModelBinderProvider" Usage="new System.Web.ModelBinding.SimpleModelBinderProvider (modelType, modelBinder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleModelBinderProvider.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
+      <MemberSignature Language="F#" Value="override this.GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="simpleModelBinderProvider.GetBinder (modelBindingExecutionContext, bindingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.SimpleModelBinderProvider.ModelType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ModelType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelType : Type" Usage="System.Web.ModelBinding.SimpleModelBinderProvider.ModelType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.SimpleModelBinderProvider.SuppressPrefixCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressPrefixCheck As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPrefixCheck { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SuppressPrefixCheck : bool with get, set" Usage="System.Web.ModelBinding.SimpleModelBinderProvider.SuppressPrefixCheck" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

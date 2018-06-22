@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`12" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult)&#xA;Inherits NativeActivity(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename TResult&gt;&#xA;public ref class InvokeFunc sealed : System::Activities::NativeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt; = class&#xA;    inherit NativeActivity&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument1" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument1 As InArgument(Of T1)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T1&gt; ^ Argument1 { System::Activities::InArgument&lt;T1&gt; ^ get(); void set(System::Activities::InArgument&lt;T1&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument1 : System.Activities.InArgument&lt;'T1&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument10" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument10 As InArgument(Of T10)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T10&gt; ^ Argument10 { System::Activities::InArgument&lt;T10&gt; ^ get(); void set(System::Activities::InArgument&lt;T10&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument10 : System.Activities.InArgument&lt;'T10&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument10" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument11" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument11 As InArgument(Of T11)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T11&gt; ^ Argument11 { System::Activities::InArgument&lt;T11&gt; ^ get(); void set(System::Activities::InArgument&lt;T11&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument11 : System.Activities.InArgument&lt;'T11&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument2" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument2 As InArgument(Of T2)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T2&gt; ^ Argument2 { System::Activities::InArgument&lt;T2&gt; ^ get(); void set(System::Activities::InArgument&lt;T2&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument2 : System.Activities.InArgument&lt;'T2&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument3" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument3 As InArgument(Of T3)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T3&gt; ^ Argument3 { System::Activities::InArgument&lt;T3&gt; ^ get(); void set(System::Activities::InArgument&lt;T3&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument3 : System.Activities.InArgument&lt;'T3&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument4" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument4 As InArgument(Of T4)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T4&gt; ^ Argument4 { System::Activities::InArgument&lt;T4&gt; ^ get(); void set(System::Activities::InArgument&lt;T4&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument4 : System.Activities.InArgument&lt;'T4&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument5" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument5 As InArgument(Of T5)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T5&gt; ^ Argument5 { System::Activities::InArgument&lt;T5&gt; ^ get(); void set(System::Activities::InArgument&lt;T5&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument5 : System.Activities.InArgument&lt;'T5&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument6" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument6 As InArgument(Of T6)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T6&gt; ^ Argument6 { System::Activities::InArgument&lt;T6&gt; ^ get(); void set(System::Activities::InArgument&lt;T6&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument6 : System.Activities.InArgument&lt;'T6&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument7" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument7 As InArgument(Of T7)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T7&gt; ^ Argument7 { System::Activities::InArgument&lt;T7&gt; ^ get(); void set(System::Activities::InArgument&lt;T7&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument7 : System.Activities.InArgument&lt;'T7&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument7" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument8" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument8 As InArgument(Of T8)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T8&gt; ^ Argument8 { System::Activities::InArgument&lt;T8&gt; ^ get(); void set(System::Activities::InArgument&lt;T8&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument8 : System.Activities.InArgument&lt;'T8&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument8" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Argument9" />
       <MemberSignature Language="VB.NET" Value="Public Property Argument9 As InArgument(Of T9)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T9&gt; ^ Argument9 { System::Activities::InArgument&lt;T9&gt; ^ get(); void set(System::Activities::InArgument&lt;T9&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Argument9 : System.Activities.InArgument&lt;'T9&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Argument9" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -349,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`12.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="invokeFunc.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`12.Func" />
       <MemberSignature Language="VB.NET" Value="Public Property Func As ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt; ^ Func { System::Activities::ActivityFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt; ^ get(); void set(System::Activities::ActivityFunc&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Func : System.Activities.ActivityFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7, 'T8, 'T9, 'T10, 'T11, 'Result&gt;.Func" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -397,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`12.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="invokeFunc.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

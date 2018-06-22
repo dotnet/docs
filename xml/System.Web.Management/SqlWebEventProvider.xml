@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlWebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlWebEventProvider&#xA;Inherits BufferedWebEventProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlWebEventProvider : System::Web::Management::BufferedWebEventProvider" />
+  <TypeSignature Language="F#" Value="type SqlWebEventProvider = class&#xA;    inherit BufferedWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.EventProcessingComplete(System.Web.Management.WebBaseEventCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EventProcessingComplete (raisedEvents As WebBaseEventCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EventProcessingComplete(System::Web::Management::WebBaseEventCollection ^ raisedEvents);" />
+      <MemberSignature Language="F#" Value="abstract member EventProcessingComplete : System.Web.Management.WebBaseEventCollection -&gt; unit&#xA;override this.EventProcessingComplete : System.Web.Management.WebBaseEventCollection -&gt; unit" Usage="sqlWebEventProvider.EventProcessingComplete raisedEvents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlWebEventProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
+      <MemberSignature Language="F#" Value="override this.ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="sqlWebEventProvider.ProcessEvent eventRaised" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.ProcessEventFlush(System.Web.Management.WebEventBufferFlushInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEventFlush (flushInfo As WebEventBufferFlushInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEventFlush(System::Web::Management::WebEventBufferFlushInfo ^ flushInfo);" />
+      <MemberSignature Language="F#" Value="override this.ProcessEventFlush : System.Web.Management.WebEventBufferFlushInfo -&gt; unit" Usage="sqlWebEventProvider.ProcessEventFlush flushInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
+      <MemberSignature Language="F#" Value="override this.Shutdown : unit -&gt; unit" Usage="sqlWebEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

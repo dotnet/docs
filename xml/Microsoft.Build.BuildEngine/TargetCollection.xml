@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.TargetCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class TargetCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetCollection : System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type TargetCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.TargetCollection.AddNewTarget(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewTarget (targetName As String) As Target" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::Target ^ AddNewTarget(System::String ^ targetName);" />
+      <MemberSignature Language="F#" Value="member this.AddNewTarget : string -&gt; Microsoft.Build.BuildEngine.Target" Usage="targetCollection.AddNewTarget targetName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.TargetCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="targetCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.TargetCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Build.BuildEngine.TargetCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.TargetCollection.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (targetName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(System::String ^ targetName);" />
+      <MemberSignature Language="F#" Value="member this.Exists : string -&gt; bool" Usage="targetCollection.Exists targetName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.TargetCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="targetCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.TargetCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="Microsoft.Build.BuildEngine.TargetCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.TargetCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As String) As Target" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::Target ^ default[System::String ^] { Microsoft::Build::BuildEngine::Target ^ get(System::String ^ index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Microsoft.Build.BuildEngine.Target" Usage="Microsoft.Build.BuildEngine.TargetCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.TargetCollection.RemoveTarget(Microsoft.Build.BuildEngine.Target)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveTarget (targetToRemove As Target)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveTarget(Microsoft::Build::BuildEngine::Target ^ targetToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveTarget : Microsoft.Build.BuildEngine.Target -&gt; unit" Usage="targetCollection.RemoveTarget targetToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.TargetCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="Microsoft.Build.BuildEngine.TargetCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

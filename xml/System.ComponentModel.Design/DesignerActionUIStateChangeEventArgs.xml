@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerActionUIStateChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionUIStateChangeEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerActionUIStateChangeEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.#ctor(System.Object,System.ComponentModel.Design.DesignerActionUIStateChangeType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relatedObject As Object, changeType As DesignerActionUIStateChangeType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionUIStateChangeEventArgs(System::Object ^ relatedObject, System::ComponentModel::Design::DesignerActionUIStateChangeType changeType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs : obj * System.ComponentModel.Design.DesignerActionUIStateChangeType -&gt; System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" Usage="new System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs (relatedObject, changeType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.ChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeType As DesignerActionUIStateChangeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionUIStateChangeType ChangeType { System::ComponentModel::Design::DesignerActionUIStateChangeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : System.ComponentModel.Design.DesignerActionUIStateChangeType" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.ChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.RelatedObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedObject : obj" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.RelatedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

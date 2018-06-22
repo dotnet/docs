@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowChangeDiff" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowChangeDiff" />
+  <TypeSignature Language="F#" Value="type IWorkflowChangeDiff = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Diff (originalDefinition As Object, changedDefinition As Object) As IList(Of WorkflowChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ Diff(System::Object ^ originalDefinition, System::Object ^ changedDefinition);" />
+      <MemberSignature Language="F#" Value="abstract member Diff : obj * obj -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;" Usage="iWorkflowChangeDiff.Diff (originalDefinition, changedDefinition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

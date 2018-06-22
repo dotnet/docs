@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebSocketMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebSocketMessageProperty" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebSocketMessageProperty sealed" />
+  <TypeSignature Language="F#" Value="type WebSocketMessageProperty = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketMessageProperty.MessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageType As WebSocketMessageType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebSockets::WebSocketMessageType MessageType { System::Net::WebSockets::WebSocketMessageType get(); void set(System::Net::WebSockets::WebSocketMessageType value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageType : System.Net.WebSockets.WebSocketMessageType with get, set" Usage="System.ServiceModel.Channels.WebSocketMessageProperty.MessageType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Const Name As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
+      <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.ServiceModel.Channels.WebSocketMessageProperty.Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketMessageProperty.OpeningHandshakeProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpeningHandshakeProperties As ReadOnlyDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyDictionary&lt;System::String ^, System::Object ^&gt; ^ OpeningHandshakeProperties { System::Collections::ObjectModel::ReadOnlyDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpeningHandshakeProperties : System.Collections.ObjectModel.ReadOnlyDictionary&lt;string, obj&gt;" Usage="System.ServiceModel.Channels.WebSocketMessageProperty.OpeningHandshakeProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketMessageProperty.SubProtocol" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubProtocol As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubProtocol { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubProtocol : string" Usage="System.ServiceModel.Channels.WebSocketMessageProperty.SubProtocol" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketMessageProperty.WebSocketContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebSocketContext As WebSocketContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebSockets::WebSocketContext ^ WebSocketContext { System::Net::WebSockets::WebSocketContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebSocketContext : System.Net.WebSockets.WebSocketContext" Usage="System.ServiceModel.Channels.WebSocketMessageProperty.WebSocketContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

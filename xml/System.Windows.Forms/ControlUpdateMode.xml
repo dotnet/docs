@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlUpdateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ControlUpdateMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ControlUpdateMode" />
+  <TypeSignature Language="F#" Value="type ControlUpdateMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlUpdateMode.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="C++ CLI" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 1" Usage="System.Windows.Forms.ControlUpdateMode.Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlUpdateMode.OnPropertyChanged" />
       <MemberSignature Language="VB.NET" Value="OnPropertyChanged" />
       <MemberSignature Language="C++ CLI" Value="OnPropertyChanged" />
+      <MemberSignature Language="F#" Value="OnPropertyChanged = 0" Usage="System.Windows.Forms.ControlUpdateMode.OnPropertyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

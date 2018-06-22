@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObjectFreeThreaded" />
   <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObjectFreeThreaded" />
+  <TypeSignature Language="F#" Value="type IVbcHostObjectFreeThreaded = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded.Compile" />
       <MemberSignature Language="VB.NET" Value="Public Function Compile () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compile();" />
+      <MemberSignature Language="F#" Value="abstract member Compile : unit -&gt; bool" Usage="iVbcHostObjectFreeThreaded.Compile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

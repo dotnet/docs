@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImportScope" />
   <TypeSignature Language="VB.NET" Value="Public Structure ImportScope" />
   <TypeSignature Language="C++ CLI" Value="public value class ImportScope" />
+  <TypeSignature Language="F#" Value="type ImportScope = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ImportScope.GetImports" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImports () As ImportDefinitionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ImportDefinitionCollection GetImports();" />
+      <MemberSignature Language="F#" Value="member this.GetImports : unit -&gt; System.Reflection.Metadata.ImportDefinitionCollection" Usage="importScope.GetImports " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ImportScope.ImportsBlob" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportsBlob As BlobHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle ImportsBlob { System::Reflection::Metadata::BlobHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImportsBlob : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.ImportScope.ImportsBlob" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ImportScope.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ImportScopeHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ImportScopeHandle Parent { System::Reflection::Metadata::ImportScopeHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Reflection.Metadata.ImportScopeHandle" Usage="System.Reflection.Metadata.ImportScope.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

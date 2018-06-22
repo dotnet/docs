@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapMetadataBlob" />
   <TypeSignature Language="VB.NET" Value="Public Class BitmapMetadataBlob" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapMetadataBlob" />
+  <TypeSignature Language="F#" Value="type BitmapMetadataBlob = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadataBlob.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blob As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapMetadataBlob(cli::array &lt;System::Byte&gt; ^ blob);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.BitmapMetadataBlob : byte[] -&gt; System.Windows.Media.Imaging.BitmapMetadataBlob" Usage="new System.Windows.Media.Imaging.BitmapMetadataBlob blob" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadataBlob.GetBlobValue" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBlobValue () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBlobValue();" />
+      <MemberSignature Language="F#" Value="member this.GetBlobValue : unit -&gt; byte[]" Usage="bitmapMetadataBlob.GetBlobValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

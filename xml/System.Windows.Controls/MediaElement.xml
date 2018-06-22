@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MediaElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaElement&#xA;Inherits FrameworkElement&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class MediaElement : System::Windows::FrameworkElement, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type MediaElement = class&#xA;    inherit FrameworkElement&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="mediaElement.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Balance" />
       <MemberSignature Language="VB.NET" Value="Public Property Balance As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Balance { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Balance : double with get, set" Usage="System.Windows.Controls.MediaElement.Balance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.BalanceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BalanceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BalanceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BalanceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.BalanceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.BufferingEnded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BufferingEnded As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ BufferingEnded;" />
+      <MemberSignature Language="F#" Value="member this.BufferingEnded : System.Windows.RoutedEventHandler " Usage="member this.BufferingEnded : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.BufferingEndedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BufferingEndedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ BufferingEndedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BufferingEndedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.BufferingEndedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.BufferingProgress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferingProgress As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BufferingProgress { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.BufferingProgress : double" Usage="System.Windows.Controls.MediaElement.BufferingProgress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.BufferingStarted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BufferingStarted As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ BufferingStarted;" />
+      <MemberSignature Language="F#" Value="member this.BufferingStarted : System.Windows.RoutedEventHandler " Usage="member this.BufferingStarted : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.BufferingStartedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BufferingStartedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ BufferingStartedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BufferingStartedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.BufferingStartedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.CanPause" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanPause As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanPause { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPause : bool" Usage="System.Windows.Controls.MediaElement.CanPause" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Clock" />
       <MemberSignature Language="VB.NET" Value="Public Property Clock As MediaClock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::MediaClock ^ Clock { System::Windows::Media::MediaClock ^ get(); void set(System::Windows::Media::MediaClock ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Clock : System.Windows.Media.MediaClock with get, set" Usage="System.Windows.Controls.MediaElement.Clock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="mediaElement.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -342,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.DownloadProgress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DownloadProgress As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DownloadProgress { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.DownloadProgress : double" Usage="System.Windows.Controls.MediaElement.DownloadProgress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -362,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.HasAudio" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAudio As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAudio { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAudio : bool" Usage="System.Windows.Controls.MediaElement.HasAudio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.HasVideo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasVideo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasVideo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasVideo : bool" Usage="System.Windows.Controls.MediaElement.HasVideo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -404,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.IsBuffering" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBuffering As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBuffering { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBuffering : bool" Usage="System.Windows.Controls.MediaElement.IsBuffering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -425,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.IsMuted" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMuted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMuted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsMuted : bool with get, set" Usage="System.Windows.Controls.MediaElement.IsMuted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.IsMutedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsMutedProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsMutedProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsMutedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.IsMutedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -479,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.LoadedBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadedBehavior As MediaState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::MediaState LoadedBehavior { System::Windows::Controls::MediaState get(); void set(System::Windows::Controls::MediaState value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadedBehavior : System.Windows.Controls.MediaState with get, set" Usage="System.Windows.Controls.MediaElement.LoadedBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -514,6 +533,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.LoadedBehaviorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LoadedBehaviorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LoadedBehaviorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LoadedBehaviorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.LoadedBehaviorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -533,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="mediaElement.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -557,6 +578,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.MediaEnded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MediaEnded As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ MediaEnded;" />
+      <MemberSignature Language="F#" Value="member this.MediaEnded : System.Windows.RoutedEventHandler " Usage="member this.MediaEnded : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -591,6 +613,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.MediaEndedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MediaEndedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MediaEndedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MediaEndedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.MediaEndedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -610,6 +633,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.MediaFailed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MediaFailed As EventHandler(Of ExceptionRoutedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::ExceptionRoutedEventArgs ^&gt; ^ MediaFailed;" />
+      <MemberSignature Language="F#" Value="member this.MediaFailed : EventHandler&lt;System.Windows.ExceptionRoutedEventArgs&gt; " Usage="member this.MediaFailed : System.EventHandler&lt;System.Windows.ExceptionRoutedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -644,6 +668,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.MediaFailedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MediaFailedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MediaFailedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MediaFailedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.MediaFailedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -663,6 +688,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.MediaOpened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MediaOpened As RoutedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ MediaOpened;" />
+      <MemberSignature Language="F#" Value="member this.MediaOpened : System.Windows.RoutedEventHandler " Usage="member this.MediaOpened : System.Windows.RoutedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -697,6 +723,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.MediaOpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MediaOpenedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ MediaOpenedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MediaOpenedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.MediaOpenedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -716,6 +743,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.NaturalDuration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalDuration As Duration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Duration NaturalDuration { System::Windows::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.NaturalDuration : System.Windows.Duration" Usage="System.Windows.Controls.MediaElement.NaturalDuration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -745,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.NaturalVideoHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalVideoHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NaturalVideoHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NaturalVideoHeight : int" Usage="System.Windows.Controls.MediaElement.NaturalVideoHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +801,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.NaturalVideoWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalVideoWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NaturalVideoWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NaturalVideoWidth : int" Usage="System.Windows.Controls.MediaElement.NaturalVideoWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -799,6 +829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="mediaElement.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -819,6 +850,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="mediaElement.OnRender drawingContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -842,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="mediaElement.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -874,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.Play" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="mediaElement.Play " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -906,6 +940,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Position { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : TimeSpan with get, set" Usage="System.Windows.Controls.MediaElement.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -938,6 +973,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MediaElement.ScriptCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ScriptCommand As EventHandler(Of MediaScriptCommandRoutedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::MediaScriptCommandRoutedEventArgs ^&gt; ^ ScriptCommand;" />
+      <MemberSignature Language="F#" Value="member this.ScriptCommand : EventHandler&lt;System.Windows.MediaScriptCommandRoutedEventArgs&gt; " Usage="member this.ScriptCommand : System.EventHandler&lt;System.Windows.MediaScriptCommandRoutedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -972,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.ScriptCommandEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScriptCommandEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ScriptCommandEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScriptCommandEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MediaElement.ScriptCommandEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -991,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.ScrubbingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrubbingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScrubbingEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrubbingEnabled : bool with get, set" Usage="System.Windows.Controls.MediaElement.ScrubbingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1029,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.ScrubbingEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrubbingEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScrubbingEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrubbingEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.ScrubbingEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1048,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Controls.MediaElement.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1086,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.SourceProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1105,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.SpeedRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property SpeedRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpeedRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SpeedRatio : double with get, set" Usage="System.Windows.Controls.MediaElement.SpeedRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1135,6 +1177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MediaElement.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="mediaElement.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1165,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public Property Stretch As Stretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Stretch Stretch { System::Windows::Media::Stretch get(); void set(System::Windows::Media::Stretch value); };" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.Media.Stretch with get, set" Usage="System.Windows.Controls.MediaElement.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1212,6 +1256,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.StretchDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property StretchDirection As StretchDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StretchDirection StretchDirection { System::Windows::Controls::StretchDirection get(); void set(System::Windows::Controls::StretchDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.StretchDirection : System.Windows.Controls.StretchDirection with get, set" Usage="System.Windows.Controls.MediaElement.StretchDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1253,6 +1298,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.StretchDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.StretchDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1272,6 +1318,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.StretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.StretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1291,6 +1338,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Controls.MediaElement.System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -1314,6 +1362,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.UnloadedBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property UnloadedBehavior As MediaState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::MediaState UnloadedBehavior { System::Windows::Controls::MediaState get(); void set(System::Windows::Controls::MediaState value); };" />
+      <MemberSignature Language="F#" Value="member this.UnloadedBehavior : System.Windows.Controls.MediaState with get, set" Usage="System.Windows.Controls.MediaElement.UnloadedBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1348,6 +1397,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.UnloadedBehaviorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnloadedBehaviorProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UnloadedBehaviorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnloadedBehaviorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.UnloadedBehaviorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1367,6 +1417,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MediaElement.Volume" />
       <MemberSignature Language="VB.NET" Value="Public Property Volume As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Volume { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Volume : double with get, set" Usage="System.Windows.Controls.MediaElement.Volume" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1401,6 +1452,7 @@ Different gradient spread methods
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaElement.VolumeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VolumeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VolumeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VolumeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MediaElement.VolumeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

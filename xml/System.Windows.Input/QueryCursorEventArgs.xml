@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.QueryCursorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryCursorEventArgs&#xA;Inherits MouseEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryCursorEventArgs : System::Windows::Input::MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type QueryCursorEventArgs = class&#xA;    inherit MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.QueryCursorEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mouse As MouseDevice, timestamp As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryCursorEventArgs(System::Windows::Input::MouseDevice ^ mouse, int timestamp);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.QueryCursorEventArgs : System.Windows.Input.MouseDevice * int -&gt; System.Windows.Input.QueryCursorEventArgs" Usage="new System.Windows.Input.QueryCursorEventArgs (mouse, timestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.MouseDevice mouse, int32 timestamp, class System.Windows.Input.StylusDevice stylusDevice) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.QueryCursorEventArgs.#ctor(System.Windows.Input.MouseDevice,System.Int32,System.Windows.Input.StylusDevice)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryCursorEventArgs(System::Windows::Input::MouseDevice ^ mouse, int timestamp, System::Windows::Input::StylusDevice ^ stylusDevice);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.QueryCursorEventArgs : System.Windows.Input.MouseDevice * int * System.Windows.Input.StylusDevice -&gt; System.Windows.Input.QueryCursorEventArgs" Usage="new System.Windows.Input.QueryCursorEventArgs (mouse, timestamp, stylusDevice)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.QueryCursorEventArgs.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Property Cursor As Cursor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Cursor ^ Cursor { System::Windows::Input::Cursor ^ get(); void set(System::Windows::Input::Cursor ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Input.Cursor with get, set" Usage="System.Windows.Input.QueryCursorEventArgs.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.QueryCursorEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="queryCursorEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

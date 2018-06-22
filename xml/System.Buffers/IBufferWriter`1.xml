@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.IBufferWriter`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBufferWriter(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IBufferWriter" />
+  <TypeSignature Language="F#" Value="type IBufferWriter&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.IBufferWriter`1.Advance(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Advance (count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Advance(int count);" />
+      <MemberSignature Language="F#" Value="abstract member Advance : int -&gt; unit" Usage="iBufferWriter.Advance count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Memory`1&lt;!T&gt; GetMemory(int32 sizeHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.IBufferWriter`1.GetMemory(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMemory (Optional sizeHint As Integer = 0) As Memory(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemory : int -&gt; Memory&lt;'T&gt;" Usage="iBufferWriter.GetMemory sizeHint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Span`1&lt;!T&gt; GetSpan(int32 sizeHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSpan (Optional sizeHint As Integer = 0) As Span(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpan : int -&gt; Span&lt;'T&gt;" Usage="iBufferWriter.GetSpan sizeHint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>

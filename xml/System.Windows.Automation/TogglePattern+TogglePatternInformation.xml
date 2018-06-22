@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TogglePattern.TogglePatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure TogglePattern.TogglePatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class TogglePattern::TogglePatternInformation" />
+  <TypeSignature Language="F#" Value="type TogglePattern.TogglePatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToggleState As ToggleState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ToggleState ToggleState { System::Windows::Automation::ToggleState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToggleState : System.Windows.Automation.ToggleState" Usage="System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

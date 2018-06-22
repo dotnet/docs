@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapAreasCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class MapAreasCollection&#xA;Inherits ChartElementCollection(Of MapArea)" />
   <TypeSignature Language="C++ CLI" Value="public ref class MapAreasCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::MapArea ^&gt;" />
+  <TypeSignature Language="F#" Value="type MapAreasCollection = class&#xA;    inherit ChartElementCollection&lt;MapArea&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

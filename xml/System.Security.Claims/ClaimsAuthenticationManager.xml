@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsAuthenticationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsAuthenticationManager&#xA;Implements ICustomIdentityConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthenticationManager : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type ClaimsAuthenticationManager = class&#xA;    interface ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthenticationManager.Authenticate(System.String,System.Security.Claims.ClaimsPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Authenticate (resourceName As String, incomingPrincipal As ClaimsPrincipal) As ClaimsPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::ClaimsPrincipal ^ Authenticate(System::String ^ resourceName, System::Security::Claims::ClaimsPrincipal ^ incomingPrincipal);" />
+      <MemberSignature Language="F#" Value="abstract member Authenticate : string * System.Security.Claims.ClaimsPrincipal -&gt; System.Security.Claims.ClaimsPrincipal&#xA;override this.Authenticate : string * System.Security.Claims.ClaimsPrincipal -&gt; System.Security.Claims.ClaimsPrincipal" Usage="claimsAuthenticationManager.Authenticate (resourceName, incomingPrincipal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="claimsAuthenticationManager.LoadCustomConfiguration nodelist" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>

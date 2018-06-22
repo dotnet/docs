@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ImageSelectType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImageSelectType" />
   <TypeSignature Language="C++ CLI" Value="public enum class ImageSelectType" />
+  <TypeSignature Language="F#" Value="type ImageSelectType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.Dpi" />
       <MemberSignature Language="VB.NET" Value="Dpi" />
       <MemberSignature Language="C++ CLI" Value="Dpi" />
+      <MemberSignature Language="F#" Value="Dpi = 2" Usage="System.Windows.Forms.VisualStyles.ImageSelectType.Dpi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.ImageSelectType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.Size" />
       <MemberSignature Language="VB.NET" Value="Size" />
       <MemberSignature Language="C++ CLI" Value="Size" />
+      <MemberSignature Language="F#" Value="Size = 1" Usage="System.Windows.Forms.VisualStyles.ImageSelectType.Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

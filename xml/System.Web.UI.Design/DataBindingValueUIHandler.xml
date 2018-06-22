@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataBindingValueUIHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class DataBindingValueUIHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBindingValueUIHandler" />
+  <TypeSignature Language="F#" Value="type DataBindingValueUIHandler = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataBindingValueUIHandler.OnGetUIValueItem(System.ComponentModel.ITypeDescriptorContext,System.ComponentModel.PropertyDescriptor,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnGetUIValueItem (context As ITypeDescriptorContext, propDesc As PropertyDescriptor, valueUIItemList As ArrayList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnGetUIValueItem(System::ComponentModel::ITypeDescriptorContext ^ context, System::ComponentModel::PropertyDescriptor ^ propDesc, System::Collections::ArrayList ^ valueUIItemList);" />
+      <MemberSignature Language="F#" Value="member this.OnGetUIValueItem : System.ComponentModel.ITypeDescriptorContext * System.ComponentModel.PropertyDescriptor * System.Collections.ArrayList -&gt; unit" Usage="dataBindingValueUIHandler.OnGetUIValueItem (context, propDesc, valueUIItemList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

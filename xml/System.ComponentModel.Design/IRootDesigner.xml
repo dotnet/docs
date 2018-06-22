@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IRootDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRootDesigner&#xA;Implements IDesigner, IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRootDesigner : IDisposable, System::ComponentModel::Design::IDesigner" />
+  <TypeSignature Language="F#" Value="type IRootDesigner = interface&#xA;    interface IDesigner&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetView (technology As ViewTechnology) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetView(System::ComponentModel::Design::ViewTechnology technology);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : System.ComponentModel.Design.ViewTechnology -&gt; obj" Usage="iRootDesigner.GetView technology" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedTechnologies As ViewTechnology()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedTechnologies : System.ComponentModel.Design.ViewTechnology[]" Usage="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

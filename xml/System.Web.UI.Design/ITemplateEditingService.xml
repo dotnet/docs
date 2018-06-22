@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ITemplateEditingService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITemplateEditingService" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITemplateEditingService" />
+  <TypeSignature Language="F#" Value="type ITemplateEditingService = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFrame (designer As TemplatedControlDesigner, frameName As String, templateNames As String()) As ITemplateEditingFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::ITemplateEditingFrame ^ CreateFrame(System::Web::UI::Design::TemplatedControlDesigner ^ designer, System::String ^ frameName, cli::array &lt;System::String ^&gt; ^ templateNames);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFrame : System.Web.UI.Design.TemplatedControlDesigner * string * string[] -&gt; System.Web.UI.Design.ITemplateEditingFrame" Usage="iTemplateEditingService.CreateFrame (designer, frameName, templateNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateFrame (designer As TemplatedControlDesigner, frameName As String, templateNames As String(), controlStyle As Style, templateStyles As Style()) As ITemplateEditingFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::ITemplateEditingFrame ^ CreateFrame(System::Web::UI::Design::TemplatedControlDesigner ^ designer, System::String ^ frameName, cli::array &lt;System::String ^&gt; ^ templateNames, System::Web::UI::WebControls::Style ^ controlStyle, cli::array &lt;System::Web::UI::WebControls::Style ^&gt; ^ templateStyles);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFrame : System.Web.UI.Design.TemplatedControlDesigner * string * string[] * System.Web.UI.WebControls.Style * System.Web.UI.WebControls.Style[] -&gt; System.Web.UI.Design.ITemplateEditingFrame" Usage="iTemplateEditingService.CreateFrame (designer, frameName, templateNames, controlStyle, templateStyles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetContainingTemplateName(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetContainingTemplateName(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GetContainingTemplateName : System.Web.UI.Control -&gt; string" Usage="iTemplateEditingService.GetContainingTemplateName control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingService.SupportsNestedTemplateEditing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsNestedTemplateEditing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsNestedTemplateEditing { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsNestedTemplateEditing : bool" Usage="System.Web.UI.Design.ITemplateEditingService.SupportsNestedTemplateEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

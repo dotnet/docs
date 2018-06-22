@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax" />
   <TypeSignature Language="VB.NET" Value="Public Enum ActiveDirectorySyntax" />
   <TypeSignature Language="C++ CLI" Value="public enum class ActiveDirectorySyntax" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySyntax = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.AccessPointDN" />
       <MemberSignature Language="VB.NET" Value="AccessPointDN" />
       <MemberSignature Language="C++ CLI" Value="AccessPointDN" />
+      <MemberSignature Language="F#" Value="AccessPointDN = 19" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.AccessPointDN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Bool" />
       <MemberSignature Language="VB.NET" Value="Bool" />
       <MemberSignature Language="C++ CLI" Value="Bool" />
+      <MemberSignature Language="F#" Value="Bool = 8" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Bool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.CaseExactString" />
       <MemberSignature Language="VB.NET" Value="CaseExactString" />
       <MemberSignature Language="C++ CLI" Value="CaseExactString" />
+      <MemberSignature Language="F#" Value="CaseExactString = 0" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.CaseExactString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.CaseIgnoreString" />
       <MemberSignature Language="VB.NET" Value="CaseIgnoreString" />
       <MemberSignature Language="C++ CLI" Value="CaseIgnoreString" />
+      <MemberSignature Language="F#" Value="CaseIgnoreString = 1" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.CaseIgnoreString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DirectoryString" />
       <MemberSignature Language="VB.NET" Value="DirectoryString" />
       <MemberSignature Language="C++ CLI" Value="DirectoryString" />
+      <MemberSignature Language="F#" Value="DirectoryString = 3" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DirectoryString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DN" />
       <MemberSignature Language="VB.NET" Value="DN" />
       <MemberSignature Language="C++ CLI" Value="DN" />
+      <MemberSignature Language="F#" Value="DN = 12" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DNWithBinary" />
       <MemberSignature Language="VB.NET" Value="DNWithBinary" />
       <MemberSignature Language="C++ CLI" Value="DNWithBinary" />
+      <MemberSignature Language="F#" Value="DNWithBinary = 13" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DNWithBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DNWithString" />
       <MemberSignature Language="VB.NET" Value="DNWithString" />
       <MemberSignature Language="C++ CLI" Value="DNWithString" />
+      <MemberSignature Language="F#" Value="DNWithString = 14" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.DNWithString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -184,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Enumeration" />
       <MemberSignature Language="VB.NET" Value="Enumeration" />
       <MemberSignature Language="C++ CLI" Value="Enumeration" />
+      <MemberSignature Language="F#" Value="Enumeration = 15" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Enumeration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -204,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.GeneralizedTime" />
       <MemberSignature Language="VB.NET" Value="GeneralizedTime" />
       <MemberSignature Language="C++ CLI" Value="GeneralizedTime" />
+      <MemberSignature Language="F#" Value="GeneralizedTime = 10" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.GeneralizedTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -224,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.IA5String" />
       <MemberSignature Language="VB.NET" Value="IA5String" />
       <MemberSignature Language="C++ CLI" Value="IA5String" />
+      <MemberSignature Language="F#" Value="IA5String = 16" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.IA5String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Int" />
       <MemberSignature Language="VB.NET" Value="Int" />
       <MemberSignature Language="C++ CLI" Value="Int" />
+      <MemberSignature Language="F#" Value="Int = 6" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -264,6 +277,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
       <MemberSignature Language="C++ CLI" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 7" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -284,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.NumericString" />
       <MemberSignature Language="VB.NET" Value="NumericString" />
       <MemberSignature Language="C++ CLI" Value="NumericString" />
+      <MemberSignature Language="F#" Value="NumericString = 2" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.NumericString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -304,6 +319,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.OctetString" />
       <MemberSignature Language="VB.NET" Value="OctetString" />
       <MemberSignature Language="C++ CLI" Value="OctetString" />
+      <MemberSignature Language="F#" Value="OctetString = 4" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.OctetString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -324,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Oid" />
       <MemberSignature Language="VB.NET" Value="Oid" />
       <MemberSignature Language="C++ CLI" Value="Oid" />
+      <MemberSignature Language="F#" Value="Oid = 9" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Oid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -344,6 +361,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.ORName" />
       <MemberSignature Language="VB.NET" Value="ORName" />
       <MemberSignature Language="C++ CLI" Value="ORName" />
+      <MemberSignature Language="F#" Value="ORName = 20" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.ORName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -364,6 +382,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.PresentationAddress" />
       <MemberSignature Language="VB.NET" Value="PresentationAddress" />
       <MemberSignature Language="C++ CLI" Value="PresentationAddress" />
+      <MemberSignature Language="F#" Value="PresentationAddress = 21" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.PresentationAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -384,6 +403,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.PrintableString" />
       <MemberSignature Language="VB.NET" Value="PrintableString" />
       <MemberSignature Language="C++ CLI" Value="PrintableString" />
+      <MemberSignature Language="F#" Value="PrintableString = 17" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.PrintableString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -404,6 +424,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.ReplicaLink" />
       <MemberSignature Language="VB.NET" Value="ReplicaLink" />
       <MemberSignature Language="C++ CLI" Value="ReplicaLink" />
+      <MemberSignature Language="F#" Value="ReplicaLink = 22" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.ReplicaLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -424,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.SecurityDescriptor" />
       <MemberSignature Language="VB.NET" Value="SecurityDescriptor" />
       <MemberSignature Language="C++ CLI" Value="SecurityDescriptor" />
+      <MemberSignature Language="F#" Value="SecurityDescriptor = 5" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.SecurityDescriptor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -444,6 +466,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Sid" />
       <MemberSignature Language="VB.NET" Value="Sid" />
       <MemberSignature Language="C++ CLI" Value="Sid" />
+      <MemberSignature Language="F#" Value="Sid = 18" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.Sid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -464,6 +487,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.UtcTime" />
       <MemberSignature Language="VB.NET" Value="UtcTime" />
       <MemberSignature Language="C++ CLI" Value="UtcTime" />
+      <MemberSignature Language="F#" Value="UtcTime = 11" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax.UtcTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

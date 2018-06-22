@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebContext sealed" />
+  <TypeSignature Language="F#" Value="type WebContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebContext.#ctor(System.Web.Configuration.WebApplicationLevel,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pathLevel As WebApplicationLevel, site As String, applicationPath As String, path As String, locationSubPath As String, appConfigPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebContext(System::Web::Configuration::WebApplicationLevel pathLevel, System::String ^ site, System::String ^ applicationPath, System::String ^ path, System::String ^ locationSubPath, System::String ^ appConfigPath);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.WebContext : System.Web.Configuration.WebApplicationLevel * string * string * string * string * string -&gt; System.Web.Configuration.WebContext" Usage="new System.Web.Configuration.WebContext (pathLevel, site, applicationPath, path, locationSubPath, appConfigPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebContext.ApplicationLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationLevel As WebApplicationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::WebApplicationLevel ApplicationLevel { System::Web::Configuration::WebApplicationLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationLevel : System.Web.Configuration.WebApplicationLevel" Usage="System.Web.Configuration.WebContext.ApplicationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebContext.ApplicationPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationPath : string" Usage="System.Web.Configuration.WebContext.ApplicationPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebContext.LocationSubPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocationSubPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationSubPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocationSubPath : string" Usage="System.Web.Configuration.WebContext.LocationSubPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebContext.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.Configuration.WebContext.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebContext.Site" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Site As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Site { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Site : string" Usage="System.Web.Configuration.WebContext.Site" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebContext.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="webContext.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

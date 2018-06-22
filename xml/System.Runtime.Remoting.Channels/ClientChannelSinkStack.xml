@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientChannelSinkStack&#xA;Implements IClientChannelSinkStack" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientChannelSinkStack : System::Runtime::Remoting::Channels::IClientChannelSinkStack" />
+  <TypeSignature Language="F#" Value="type ClientChannelSinkStack = class&#xA;    interface IClientChannelSinkStack&#xA;    interface IClientResponseChannelSinkStack" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.#ctor(System.Runtime.Remoting.Messaging.IMessageSink)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (replySink As IMessageSink)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientChannelSinkStack(System::Runtime::Remoting::Messaging::IMessageSink ^ replySink);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.ClientChannelSinkStack : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Channels.ClientChannelSinkStack" Usage="new System.Runtime.Remoting.Channels.ClientChannelSinkStack replySink" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AsyncProcessResponse(class System.Runtime.Remoting.Channels.ITransportHeaders headers, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.AsyncProcessResponse(System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AsyncProcessResponse(System::Runtime::Remoting::Channels::ITransportHeaders ^ headers, System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member AsyncProcessResponse : System.Runtime.Remoting.Channels.ITransportHeaders * System.IO.Stream -&gt; unit&#xA;override this.AsyncProcessResponse : System.Runtime.Remoting.Channels.ITransportHeaders * System.IO.Stream -&gt; unit" Usage="clientChannelSinkStack.AsyncProcessResponse (headers, stream)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.AsyncProcessResponse(System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)</InterfaceMember>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchException(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DispatchException (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DispatchException(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member DispatchException : Exception -&gt; unit&#xA;override this.DispatchException : Exception -&gt; unit" Usage="clientChannelSinkStack.DispatchException e" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchException(System.Exception)</InterfaceMember>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchReplyMessage(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DispatchReplyMessage (msg As IMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DispatchReplyMessage(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="abstract member DispatchReplyMessage : System.Runtime.Remoting.Messaging.IMessage -&gt; unit&#xA;override this.DispatchReplyMessage : System.Runtime.Remoting.Messaging.IMessage -&gt; unit" Usage="clientChannelSinkStack.DispatchReplyMessage msg" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchReplyMessage(System.Runtime.Remoting.Messaging.IMessage)</InterfaceMember>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)" />
       <MemberSignature Language="VB.NET" Value="Public Function Pop (sink As IClientChannelSink) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Pop(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink);" />
+      <MemberSignature Language="F#" Value="abstract member Pop : System.Runtime.Remoting.Channels.IClientChannelSink -&gt; obj&#xA;override this.Pop : System.Runtime.Remoting.Channels.IClientChannelSink -&gt; obj" Usage="clientChannelSinkStack.Pop sink" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)</InterfaceMember>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push (sink As IClientChannelSink, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Push(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Push : System.Runtime.Remoting.Channels.IClientChannelSink * obj -&gt; unit&#xA;override this.Push : System.Runtime.Remoting.Channels.IClientChannelSink * obj -&gt; unit" Usage="clientChannelSinkStack.Push (sink, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)</InterfaceMember>

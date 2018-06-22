@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonToggleButtonAutomationPeer&#xA;Inherits ToggleButtonAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonToggleButtonAutomationPeer : System::Windows::Automation::Peers::ToggleButtonAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonToggleButtonAutomationPeer = class&#xA;    inherit ToggleButtonAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonToggleButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonToggleButton)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonToggleButtonAutomationPeer(System::Windows::Controls::Ribbon::RibbonToggleButton ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer : System.Windows.Controls.Ribbon.RibbonToggleButton -&gt; System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer.GetAccessKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonToggleButtonAutomationPeer.GetAccessKeyCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonToggleButtonAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonToggleButtonAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonToggleButtonAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonToggleButtonAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

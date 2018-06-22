@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton" />
   <TypeSignature Language="VB.NET" Value="Public Class RecycleLimitMonitor.RecycleLimitMonitorSingleton&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public: ref class RecycleLimitMonitor::RecycleLimitMonitorSingleton : MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type RecycleLimitMonitor.RecycleLimitMonitorSingleton = class&#xA;    inherit MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="recycleLimitMonitorSingleton.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.EnsureCreated" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsureCreated ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnsureCreated();" />
+      <MemberSignature Language="F#" Value="static member EnsureCreated : unit -&gt; unit" Usage="System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.EnsureCreated " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="recycleLimitMonitorSingleton.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.RegisterProxyAndStart(System.Web.Hosting.RecycleLimitMonitor,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterProxyAndStart (proxy As RecycleLimitMonitor, applicationID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterProxyAndStart(System::Web::Hosting::RecycleLimitMonitor ^ proxy, System::String ^ applicationID);" />
+      <MemberSignature Language="F#" Value="member this.RegisterProxyAndStart : System.Web.Hosting.RecycleLimitMonitor * string -&gt; unit" Usage="recycleLimitMonitorSingleton.RegisterProxyAndStart (proxy, applicationID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.UnregisterProxyAndStop(System.Web.Hosting.RecycleLimitMonitor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterProxyAndStop (proxy As RecycleLimitMonitor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterProxyAndStop(System::Web::Hosting::RecycleLimitMonitor ^ proxy);" />
+      <MemberSignature Language="F#" Value="member this.UnregisterProxyAndStop : System.Web.Hosting.RecycleLimitMonitor -&gt; unit" Usage="recycleLimitMonitorSingleton.UnregisterProxyAndStop proxy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

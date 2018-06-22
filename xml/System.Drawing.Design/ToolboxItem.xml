@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolboxItem&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItem : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type ToolboxItem = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -130,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItem(Type ^ toolType);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Design.ToolboxItem : Type -&gt; System.Drawing.Design.ToolboxItem" Usage="new System.Drawing.Design.ToolboxItem toolType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -161,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As AssemblyName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ AssemblyName { System::Reflection::AssemblyName ^ get(); void set(System::Reflection::AssemblyName ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : System.Reflection.AssemblyName with get, set" Usage="System.Drawing.Design.ToolboxItem.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -192,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Bitmap" />
       <MemberSignature Language="VB.NET" Value="Public Property Bitmap As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Bitmap ^ Bitmap { System::Drawing::Bitmap ^ get(); void set(System::Drawing::Bitmap ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Bitmap : System.Drawing.Bitmap with get, set" Usage="System.Drawing.Design.ToolboxItem.Bitmap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CheckUnlocked" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckUnlocked ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckUnlocked();" />
+      <MemberSignature Language="F#" Value="member this.CheckUnlocked : unit -&gt; unit" Usage="toolboxItem.CheckUnlocked " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Company" />
       <MemberSignature Language="VB.NET" Value="Public Property Company As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Company { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Company : string with get, set" Usage="System.Drawing.Design.ToolboxItem.Company" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="E:System.Drawing.Design.ToolboxItem.ComponentsCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ComponentsCreated As ToolboxComponentsCreatedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Design::ToolboxComponentsCreatedEventHandler ^ ComponentsCreated;" />
+      <MemberSignature Language="F#" Value="member this.ComponentsCreated : System.Drawing.Design.ToolboxComponentsCreatedEventHandler " Usage="member this.ComponentsCreated : System.Drawing.Design.ToolboxComponentsCreatedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ComponentsCreating As ToolboxComponentsCreatingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Design::ToolboxComponentsCreatingEventHandler ^ ComponentsCreating;" />
+      <MemberSignature Language="F#" Value="member this.ComponentsCreating : System.Drawing.Design.ToolboxComponentsCreatingEventHandler " Usage="member this.ComponentsCreating : System.Drawing.Design.ToolboxComponentsCreatingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.ComponentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ComponentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ComponentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentType : string" Usage="System.Drawing.Design.ToolboxItem.ComponentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CreateComponents" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateComponents () As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponents();" />
+      <MemberSignature Language="F#" Value="member this.CreateComponents : unit -&gt; System.ComponentModel.IComponent[]" Usage="toolboxItem.CreateComponents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -377,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CreateComponents(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateComponents (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponents(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="member this.CreateComponents : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="toolboxItem.CreateComponents host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CreateComponents(System.ComponentModel.Design.IDesignerHost,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateComponents (host As IDesignerHost, defaultValues As IDictionary) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponents(System::ComponentModel::Design::IDesignerHost ^ host, System::Collections::IDictionary ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="member this.CreateComponents : System.ComponentModel.Design.IDesignerHost * System.Collections.IDictionary -&gt; System.ComponentModel.IComponent[]" Usage="toolboxItem.CreateComponents (host, defaultValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -451,6 +463,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateComponentsCore (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsCore(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="toolboxItem.CreateComponentsCore host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -486,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateComponentsCore (host As IDesignerHost, defaultValues As IDictionary) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsCore(System::ComponentModel::Design::IDesignerHost ^ host, System::Collections::IDictionary ^ defaultValues);" />
+      <MemberSignature Language="F#" Value="abstract member CreateComponentsCore : System.ComponentModel.Design.IDesignerHost * System.Collections.IDictionary -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost * System.Collections.IDictionary -&gt; System.ComponentModel.IComponent[]" Usage="toolboxItem.CreateComponentsCore (host, defaultValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -527,6 +541,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.DependentAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property DependentAssemblies As AssemblyName()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ DependentAssemblies { cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ get(); void set(cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DependentAssemblies : System.Reflection.AssemblyName[] with get, set" Usage="System.Drawing.Design.ToolboxItem.DependentAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -554,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Drawing.Design.ToolboxItem.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -574,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Deserialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Deserialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="toolboxItem.Deserialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -612,6 +629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Drawing.Design.ToolboxItem.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -641,6 +659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="toolboxItem.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -666,6 +685,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Filter { System::Collections::ICollection ^ get(); void set(System::Collections::ICollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : System.Collections.ICollection with get, set" Usage="System.Drawing.Design.ToolboxItem.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -696,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.FilterPropertyValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FilterPropertyValue (propertyName As String, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ FilterPropertyValue(System::String ^ propertyName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member FilterPropertyValue : string * obj -&gt; obj&#xA;override this.FilterPropertyValue : string * obj -&gt; obj" Usage="toolboxItem.FilterPropertyValue (propertyName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="toolboxItem.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -759,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.GetType(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (host As IDesignerHost) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::ComponentModel::Design::IDesignerHost ^ host);" />
+      <MemberSignature Language="F#" Value="override this.GetType : System.ComponentModel.Design.IDesignerHost -&gt; Type" Usage="toolboxItem.GetType host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -789,6 +812,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type GetType(class System.ComponentModel.Design.IDesignerHost host, class System.Reflection.AssemblyName assemblyName, string typeName, bool reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.GetType(System.ComponentModel.Design.IDesignerHost,System.Reflection.AssemblyName,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetType(System::ComponentModel::Design::IDesignerHost ^ host, System::Reflection::AssemblyName ^ assemblyName, System::String ^ typeName, bool reference);" />
+      <MemberSignature Language="F#" Value="override this.GetType : System.ComponentModel.Design.IDesignerHost * System.Reflection.AssemblyName * string * bool -&gt; Type" Usage="toolboxItem.GetType (host, assemblyName, typeName, reference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -821,6 +845,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.Initialize(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Type -&gt; unit&#xA;override this.Initialize : Type -&gt; unit" Usage="toolboxItem.Initialize type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -860,6 +885,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.IsTransient" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTransient As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTransient { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransient : bool with get, set" Usage="System.Drawing.Design.ToolboxItem.IsTransient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -888,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.Lock" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Lock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Lock();" />
+      <MemberSignature Language="F#" Value="abstract member Lock : unit -&gt; unit&#xA;override this.Lock : unit -&gt; unit" Usage="toolboxItem.Lock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -915,6 +942,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Locked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool" Usage="System.Drawing.Design.ToolboxItem.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -945,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.OnComponentsCreated(System.Drawing.Design.ToolboxComponentsCreatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnComponentsCreated (args As ToolboxComponentsCreatedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnComponentsCreated(System::Drawing::Design::ToolboxComponentsCreatedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentsCreated : System.Drawing.Design.ToolboxComponentsCreatedEventArgs -&gt; unit&#xA;override this.OnComponentsCreated : System.Drawing.Design.ToolboxComponentsCreatedEventArgs -&gt; unit" Usage="toolboxItem.OnComponentsCreated args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -984,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.OnComponentsCreating(System.Drawing.Design.ToolboxComponentsCreatingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnComponentsCreating (args As ToolboxComponentsCreatingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnComponentsCreating(System::Drawing::Design::ToolboxComponentsCreatingEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnComponentsCreating : System.Drawing.Design.ToolboxComponentsCreatingEventArgs -&gt; unit&#xA;override this.OnComponentsCreating : System.Drawing.Design.ToolboxComponentsCreatingEventArgs -&gt; unit" Usage="toolboxItem.OnComponentsCreating args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1022,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.OriginalBitmap" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginalBitmap As Bitmap" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Bitmap ^ OriginalBitmap { System::Drawing::Bitmap ^ get(); void set(System::Drawing::Bitmap ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalBitmap : System.Drawing.Bitmap with get, set" Usage="System.Drawing.Design.ToolboxItem.OriginalBitmap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1049,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Drawing.Design.ToolboxItem.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1078,6 +1110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Serialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Serialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="toolboxItem.Serialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1141,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolboxItem.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1162,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Drawing.Design.ToolboxItem.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1192,6 +1227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.ValidatePropertyType(System.String,System.Object,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ValidatePropertyType (propertyName As String, value As Object, expectedType As Type, allowNull As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidatePropertyType(System::String ^ propertyName, System::Object ^ value, Type ^ expectedType, bool allowNull);" />
+      <MemberSignature Language="F#" Value="member this.ValidatePropertyType : string * obj * Type * bool -&gt; unit" Usage="toolboxItem.ValidatePropertyType (propertyName, value, expectedType, allowNull)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1233,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItem.ValidatePropertyValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ValidatePropertyValue (propertyName As String, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ ValidatePropertyValue(System::String ^ propertyName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member ValidatePropertyValue : string * obj -&gt; obj&#xA;override this.ValidatePropertyValue : string * obj -&gt; obj" Usage="toolboxItem.ValidatePropertyValue (propertyName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1268,6 +1305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItem.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Drawing.Design.ToolboxItem.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

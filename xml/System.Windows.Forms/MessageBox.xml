@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBox" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageBox" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageBox" />
+  <TypeSignature Language="F#" Value="type MessageBox = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member Show : string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -306,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -359,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -422,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -482,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -554,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -621,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, displayHelpButton As Boolean) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, bool displayHelpButton);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * bool -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options, displayHelpButton)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -701,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options, helpFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -784,6 +798,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -864,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, keyword As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options, helpFilePath, keyword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -947,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, navigator As HelpNavigator) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::Windows::Forms::HelpNavigator navigator);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * System.Windows.Forms.HelpNavigator -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options, helpFilePath, navigator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1034,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton, options, helpFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1119,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, navigator As HelpNavigator, param As Object) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::Windows::Forms::HelpNavigator navigator, System::Object ^ param);" />
+      <MemberSignature Language="F#" Value="static member Show : string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * System.Windows.Forms.HelpNavigator * obj -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (text, caption, buttons, icon, defaultButton, options, helpFilePath, navigator, param)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1210,6 +1229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, keyword As String) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * string -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton, options, helpFilePath, keyword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1295,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, navigator As HelpNavigator) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::Windows::Forms::HelpNavigator navigator);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * System.Windows.Forms.HelpNavigator -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton, options, helpFilePath, navigator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1384,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MessageBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As IWin32Window, text As String, caption As String, buttons As MessageBoxButtons, icon As MessageBoxIcon, defaultButton As MessageBoxDefaultButton, options As MessageBoxOptions, helpFilePath As String, navigator As HelpNavigator, param As Object) As DialogResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DialogResult Show(System::Windows::Forms::IWin32Window ^ owner, System::String ^ text, System::String ^ caption, System::Windows::Forms::MessageBoxButtons buttons, System::Windows::Forms::MessageBoxIcon icon, System::Windows::Forms::MessageBoxDefaultButton defaultButton, System::Windows::Forms::MessageBoxOptions options, System::String ^ helpFilePath, System::Windows::Forms::HelpNavigator navigator, System::Object ^ param);" />
+      <MemberSignature Language="F#" Value="static member Show : System.Windows.Forms.IWin32Window * string * string * System.Windows.Forms.MessageBoxButtons * System.Windows.Forms.MessageBoxIcon * System.Windows.Forms.MessageBoxDefaultButton * System.Windows.Forms.MessageBoxOptions * string * System.Windows.Forms.HelpNavigator * obj -&gt; System.Windows.Forms.DialogResult" Usage="System.Windows.Forms.MessageBox.Show (owner, text, caption, buttons, icon, defaultButton, options, helpFilePath, navigator, param)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

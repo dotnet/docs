@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoX509Data" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInfoX509Data&#xA;Inherits KeyInfoClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoX509Data : System::Security::Cryptography::Xml::KeyInfoClause" />
+  <TypeSignature Language="F#" Value="type KeyInfoX509Data = class&#xA;    inherit KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rgbCert As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(cli::array &lt;System::Byte&gt; ^ rgbCert);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : byte[] -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data rgbCert" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data cert" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate, includeOption As X509IncludeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert, System::Security::Cryptography::X509Certificates::X509IncludeOption includeOption);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : System.Security.Cryptography.X509Certificates.X509Certificate * System.Security.Cryptography.X509Certificates.X509IncludeOption -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data (cert, includeOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCertificate (certificate As X509Certificate)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
+      <MemberSignature Language="F#" Value="member this.AddCertificate : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; unit" Usage="keyInfoX509Data.AddCertificate certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddIssuerSerial (issuerName As String, serialNumber As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIssuerSerial(System::String ^ issuerName, System::String ^ serialNumber);" />
+      <MemberSignature Language="F#" Value="member this.AddIssuerSerial : string * string -&gt; unit" Usage="keyInfoX509Data.AddIssuerSerial (issuerName, serialNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -275,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(cli::array &lt;System::Byte&gt; ^ subjectKeyId);" />
+      <MemberSignature Language="F#" Value="member this.AddSubjectKeyId : byte[] -&gt; unit" Usage="keyInfoX509Data.AddSubjectKeyId subjectKeyId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -309,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(System::String ^ subjectKeyId);" />
+      <MemberSignature Language="F#" Value="member this.AddSubjectKeyId : string -&gt; unit" Usage="keyInfoX509Data.AddSubjectKeyId subjectKeyId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -348,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectName (subjectName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectName(System::String ^ subjectName);" />
+      <MemberSignature Language="F#" Value="member this.AddSubjectName : string -&gt; unit" Usage="keyInfoX509Data.AddSubjectName subjectName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -375,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Certificates { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -399,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.CRL" />
       <MemberSignature Language="VB.NET" Value="Public Property CRL As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CRL { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CRL : byte[] with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.CRL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -423,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoX509Data.GetXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -455,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerSerials As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ IssuerSerials { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuerSerials : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -490,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (element As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoX509Data.LoadXml element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -530,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectKeyIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectKeyIds As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectKeyIds { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectKeyIds : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectKeyIds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -561,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectNames As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectNames { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubjectNames : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

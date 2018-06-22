@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebPartVerbsEventHandler(sender As Object, e As WebPartVerbsEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void WebPartVerbsEventHandler(System::Object ^ sender, WebPartVerbsEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type WebPartVerbsEventHandler = delegate of obj * WebPartVerbsEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

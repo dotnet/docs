@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetSDKReferenceFiles" />
   <TypeSignature Language="VB.NET" Value="Public Class GetSDKReferenceFiles&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class GetSDKReferenceFiles : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type GetSDKReferenceFiles = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.CacheFileFolderPath" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheFileFolderPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CacheFileFolderPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheFileFolderPath : string with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.CacheFileFolderPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.CopyLocalFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CopyLocalFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CopyLocalFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CopyLocalFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.CopyLocalFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetSDKReferenceFiles.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="getSDKReferenceFiles.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogCacheFileExceptions" />
       <MemberSignature Language="VB.NET" Value="Public Property LogCacheFileExceptions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogCacheFileExceptions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogCacheFileExceptions : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogCacheFileExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictBetweenSDKsAsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property LogRedistConflictBetweenSDKsAsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogRedistConflictBetweenSDKsAsWarning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogRedistConflictBetweenSDKsAsWarning : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictBetweenSDKsAsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictWithinSDKAsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property LogRedistConflictWithinSDKAsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogRedistConflictWithinSDKAsWarning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogRedistConflictWithinSDKAsWarning : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictWithinSDKAsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistFilesList" />
       <MemberSignature Language="VB.NET" Value="Public Property LogRedistFilesList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogRedistFilesList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogRedistFilesList : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistFilesList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictBetweenSDKsAsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property LogReferenceConflictBetweenSDKsAsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogReferenceConflictBetweenSDKsAsWarning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogReferenceConflictBetweenSDKsAsWarning : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictBetweenSDKsAsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -206,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictWithinSDKAsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property LogReferenceConflictWithinSDKAsWarning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogReferenceConflictWithinSDKAsWarning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogReferenceConflictWithinSDKAsWarning : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictWithinSDKAsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferencesList" />
       <MemberSignature Language="VB.NET" Value="Public Property LogReferencesList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogReferencesList { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LogReferencesList : bool with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferencesList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -246,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.RedistFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RedistFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ RedistFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RedistFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.RedistFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -271,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.ReferenceExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferenceExtensions As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ReferenceExtensions { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferenceExtensions : string[] with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.ReferenceExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -291,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.References" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property References As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ References { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.References : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -316,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.ResolvedSDKReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property ResolvedSDKReferences As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResolvedSDKReferences { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResolvedSDKReferences : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.GetSDKReferenceFiles.ResolvedSDKReferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCompanyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCompanyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyCompanyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyCompanyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyCompanyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (company As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyCompanyAttribute(System::String ^ company);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyCompanyAttribute : string -&gt; System.Reflection.AssemblyCompanyAttribute" Usage="new System.Reflection.AssemblyCompanyAttribute company" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyCompanyAttribute.Company" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Company As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Company { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Company : string" Usage="System.Reflection.AssemblyCompanyAttribute.Company" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

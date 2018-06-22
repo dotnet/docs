@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Messaging.Design.QueuePathDialog" />
   <TypeSignature Language="VB.NET" Value="Public Class QueuePathDialog&#xA;Inherits Form" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueuePathDialog : System::Windows::Forms::Form" />
+  <TypeSignature Language="F#" Value="type QueuePathDialog = class&#xA;    inherit Form" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueuePathDialog(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.Design.QueuePathDialog : IServiceProvider -&gt; System.Messaging.Design.QueuePathDialog" Usage="new System.Messaging.Design.QueuePathDialog provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.#ctor(System.Windows.Forms.Design.IUIService)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uiService As IUIService)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QueuePathDialog(System::Windows::Forms::Design::IUIService ^ uiService);" />
+      <MemberSignature Language="F#" Value="new System.Messaging.Design.QueuePathDialog : System.Windows.Forms.Design.IUIService -&gt; System.Messaging.Design.QueuePathDialog" Usage="new System.Messaging.Design.QueuePathDialog uiService" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.ChoosePath" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChoosePath ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChoosePath();" />
+      <MemberSignature Language="F#" Value="member this.ChoosePath : unit -&gt; unit" Usage="queuePathDialog.ChoosePath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.DoubleClicked(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoubleClicked (source As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoubleClicked(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="member this.DoubleClicked : obj * EventArgs -&gt; unit" Usage="queuePathDialog.DoubleClicked (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFormClosing (e As FormClosingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFormClosing(System::Windows::Forms::FormClosingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnFormClosing : System.Windows.Forms.FormClosingEventArgs -&gt; unit" Usage="queuePathDialog.OnFormClosing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="queuePathDialog.OnHandleCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Messaging.Design.QueuePathDialog.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Messaging.Design.QueuePathDialog.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -191,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.QueuePathDialog.SelectQueue(System.Messaging.MessageQueue)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectQueue (queue As MessageQueue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectQueue(System::Messaging::MessageQueue ^ queue);" />
+      <MemberSignature Language="F#" Value="member this.SelectQueue : System.Messaging.MessageQueue -&gt; unit" Usage="queuePathDialog.SelectQueue queue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

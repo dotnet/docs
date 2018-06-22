@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EnumerableRowCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class EnumerableRowCollection(Of TRow)&#xA;Inherits EnumerableRowCollection&#xA;Implements IEnumerable(Of TRow)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TRow&gt;&#xA;public ref class EnumerableRowCollection : System::Data::EnumerableRowCollection, System::Collections::Generic::IEnumerable&lt;TRow&gt;" />
+  <TypeSignature Language="F#" Value="type EnumerableRowCollection&lt;'Row&gt; = class&#xA;    inherit EnumerableRowCollection&#xA;    interface seq&lt;'Row&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollection`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TRow&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Row&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Row&gt;" Usage="enumerableRowCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>

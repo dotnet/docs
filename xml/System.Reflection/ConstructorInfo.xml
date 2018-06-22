@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ConstructorInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConstructorInfo&#xA;Inherits MethodBase&#xA;Implements _ConstructorInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConstructorInfo abstract : System::Reflection::MethodBase, System::Runtime::InteropServices::_ConstructorInfo" />
+  <TypeSignature Language="F#" Value="type ConstructorInfo = class&#xA;    inherit MethodBase&#xA;    interface _ConstructorInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ConstructorInfo.ConstructorName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConstructorName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ConstructorName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ConstructorName : string" Usage="System.Reflection.ConstructorInfo.ConstructorName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -146,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="constructorInfo.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Equals(System.Object)</InterfaceMember>
@@ -190,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="constructorInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetHashCode</InterfaceMember>
@@ -241,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Invoke(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (parameters As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj[] -&gt; obj" Usage="constructorInfo.Invoke parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -324,6 +329,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.Invoke : System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="constructorInfo.Invoke (invokeAttr, binder, parameters, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -397,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ConstructorInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.ConstructorInfo.MemberType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._ConstructorInfo.MemberType</InterfaceMember>
@@ -456,6 +463,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.op_Equality(System.Reflection.ConstructorInfo,System.Reflection.ConstructorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ConstructorInfo, right As ConstructorInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::ConstructorInfo ^ left, System::Reflection::ConstructorInfo ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.ConstructorInfo * System.Reflection.ConstructorInfo -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -493,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.op_Inequality(System.Reflection.ConstructorInfo,System.Reflection.ConstructorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ConstructorInfo, right As ConstructorInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::ConstructorInfo ^ left, System::Reflection::ConstructorInfo ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.ConstructorInfo * System.Reflection.ConstructorInfo -&gt; bool" Usage="System.Reflection.ConstructorInfo.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -866,6 +875,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ConstructorInfo.TypeConstructorName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeConstructorName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ TypeConstructorName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TypeConstructorName : string" Usage="System.Reflection.ConstructorInfo.TypeConstructorName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

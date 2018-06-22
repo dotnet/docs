@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortResponseControl" />
   <TypeSignature Language="VB.NET" Value="Public Class SortResponseControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class SortResponseControl : System::DirectoryServices::Protocols::DirectoryControl" />
+  <TypeSignature Language="F#" Value="type SortResponseControl = class&#xA;    inherit DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortResponseControl.AttributeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string" Usage="System.DirectoryServices.Protocols.SortResponseControl.AttributeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortResponseControl.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As ResultCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::ResultCode Result { System::DirectoryServices::Protocols::ResultCode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.DirectoryServices.Protocols.ResultCode" Usage="System.DirectoryServices.Protocols.SortResponseControl.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

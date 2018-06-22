@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlRowUpdatedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlRowUpdatedEventArgs&#xA;Inherits RowUpdatedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlRowUpdatedEventArgs sealed : System::Data::Common::RowUpdatedEventArgs" />
+  <TypeSignature Language="F#" Value="type SqlRowUpdatedEventArgs = class&#xA;    inherit RowUpdatedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow row, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlRowUpdatedEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlRowUpdatedEventArgs(System::Data::DataRow ^ row, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlRowUpdatedEventArgs : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.SqlClient.SqlRowUpdatedEventArgs" Usage="new System.Data.SqlClient.SqlRowUpdatedEventArgs (row, command, statementType, tableMapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlRowUpdatedEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As SqlCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommand ^ Command { System::Data::SqlClient::SqlCommand ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.SqlClient.SqlCommand" Usage="System.Data.SqlClient.SqlRowUpdatedEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

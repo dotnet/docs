@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ECDiffieHellmanCngPublicKey&#xA;Inherits ECDiffieHellmanPublicKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class ECDiffieHellmanCngPublicKey sealed : System::Security::Cryptography::ECDiffieHellmanPublicKey" />
+  <TypeSignature Language="F#" Value="type ECDiffieHellmanCngPublicKey = class&#xA;    inherit ECDiffieHellmanPublicKey" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.BlobFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobFormat As CngKeyBlobFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngKeyBlobFormat ^ BlobFormat { System::Security::Cryptography::CngKeyBlobFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BlobFormat : System.Security.Cryptography.CngKeyBlobFormat" Usage="System.Security.Cryptography.ECDiffieHellmanCngPublicKey.BlobFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eCDiffieHellmanCngPublicKey.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ExportExplicitParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportExplicitParameters () As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportExplicitParameters();" />
+      <MemberSignature Language="F#" Value="override this.ExportExplicitParameters : unit -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCngPublicKey.ExportExplicitParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ExportParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters () As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportParameters();" />
+      <MemberSignature Language="F#" Value="override this.ExportParameters : unit -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCngPublicKey.ExportParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromByteArray(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromByteArray (publicKeyBlob As Byte(), format As CngKeyBlobFormat) As ECDiffieHellmanPublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellmanPublicKey ^ FromByteArray(cli::array &lt;System::Byte&gt; ^ publicKeyBlob, System::Security::Cryptography::CngKeyBlobFormat ^ format);" />
+      <MemberSignature Language="F#" Value="static member FromByteArray : byte[] * System.Security.Cryptography.CngKeyBlobFormat -&gt; System.Security.Cryptography.ECDiffieHellmanPublicKey" Usage="System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromByteArray (publicKeyBlob, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromXmlString (xml As String) As ECDiffieHellmanCngPublicKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDiffieHellmanCngPublicKey ^ FromXmlString(System::String ^ xml);" />
+      <MemberSignature Language="F#" Value="static member FromXmlString : string -&gt; System.Security.Cryptography.ECDiffieHellmanCngPublicKey" Usage="System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString xml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.Import" />
       <MemberSignature Language="VB.NET" Value="Public Function Import () As CngKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::CngKey ^ Import();" />
+      <MemberSignature Language="F#" Value="member this.Import : unit -&gt; System.Security.Cryptography.CngKey" Usage="eCDiffieHellmanCngPublicKey.Import " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString();" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : unit -&gt; string" Usage="eCDiffieHellmanCngPublicKey.ToXmlString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

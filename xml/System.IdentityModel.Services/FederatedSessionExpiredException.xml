@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederatedSessionExpiredException" />
   <TypeSignature Language="VB.NET" Value="Public Class FederatedSessionExpiredException&#xA;Inherits FederatedAuthenticationSessionEndingException" />
   <TypeSignature Language="C++ CLI" Value="public ref class FederatedSessionExpiredException : System::IdentityModel::Services::FederatedAuthenticationSessionEndingException" />
+  <TypeSignature Language="F#" Value="type FederatedSessionExpiredException = class&#xA;    inherit FederatedAuthenticationSessionEndingException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedSessionExpiredException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedSessionExpiredException : string -&gt; System.IdentityModel.Services.FederatedSessionExpiredException" Usage="new System.IdentityModel.Services.FederatedSessionExpiredException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tested As DateTime, expired As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedSessionExpiredException(DateTime tested, DateTime expired);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedSessionExpiredException : DateTime * DateTime -&gt; System.IdentityModel.Services.FederatedSessionExpiredException" Usage="new System.IdentityModel.Services.FederatedSessionExpiredException (tested, expired)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FederatedSessionExpiredException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedSessionExpiredException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Services.FederatedSessionExpiredException" Usage="new System.IdentityModel.Services.FederatedSessionExpiredException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedSessionExpiredException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedSessionExpiredException : string * Exception -&gt; System.IdentityModel.Services.FederatedSessionExpiredException" Usage="new System.IdentityModel.Services.FederatedSessionExpiredException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.DateTime,System.DateTime,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tested As DateTime, expired As DateTime, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FederatedSessionExpiredException(DateTime tested, DateTime expired, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.FederatedSessionExpiredException : DateTime * DateTime * Exception -&gt; System.IdentityModel.Services.FederatedSessionExpiredException" Usage="new System.IdentityModel.Services.FederatedSessionExpiredException (tested, expired, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedSessionExpiredException.Expired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expired As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Expired { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expired : DateTime" Usage="System.IdentityModel.Services.FederatedSessionExpiredException.Expired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedSessionExpiredException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="federatedSessionExpiredException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedSessionExpiredException.Tested" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tested As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Tested { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tested : DateTime" Usage="System.IdentityModel.Services.FederatedSessionExpiredException.Tested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

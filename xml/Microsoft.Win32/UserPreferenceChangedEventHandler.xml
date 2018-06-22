@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub UserPreferenceChangedEventHandler(sender As Object, e As UserPreferenceChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void UserPreferenceChangedEventHandler(System::Object ^ sender, UserPreferenceChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type UserPreferenceChangedEventHandler = delegate of obj * UserPreferenceChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

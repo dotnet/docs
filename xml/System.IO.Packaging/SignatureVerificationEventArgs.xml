@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.SignatureVerificationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SignatureVerificationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignatureVerificationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SignatureVerificationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.SignatureVerificationEventArgs.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As PackageDigitalSignature" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::PackageDigitalSignature ^ Signature { System::IO::Packaging::PackageDigitalSignature ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signature : System.IO.Packaging.PackageDigitalSignature" Usage="System.IO.Packaging.SignatureVerificationEventArgs.Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.SignatureVerificationEventArgs.VerifyResult" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerifyResult As VerifyResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::VerifyResult VerifyResult { System::IO::Packaging::VerifyResult get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerifyResult : System.IO.Packaging.VerifyResult" Usage="System.IO.Packaging.SignatureVerificationEventArgs.VerifyResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

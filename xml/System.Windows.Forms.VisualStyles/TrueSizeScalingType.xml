@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TrueSizeScalingType" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrueSizeScalingType" />
   <TypeSignature Language="C++ CLI" Value="public enum class TrueSizeScalingType" />
+  <TypeSignature Language="F#" Value="type TrueSizeScalingType = " />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.Dpi" />
       <MemberSignature Language="VB.NET" Value="Dpi" />
       <MemberSignature Language="C++ CLI" Value="Dpi" />
+      <MemberSignature Language="F#" Value="Dpi = 2" Usage="System.Windows.Forms.VisualStyles.TrueSizeScalingType.Dpi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.TrueSizeScalingType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrueSizeScalingType.Size" />
       <MemberSignature Language="VB.NET" Value="Size" />
       <MemberSignature Language="C++ CLI" Value="Size" />
+      <MemberSignature Language="F#" Value="Size = 1" Usage="System.Windows.Forms.VisualStyles.TrueSizeScalingType.Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

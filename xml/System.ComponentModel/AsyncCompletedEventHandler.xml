@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AsyncCompletedEventHandler(sender As Object, e As AsyncCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AsyncCompletedEventHandler(System::Object ^ sender, AsyncCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AsyncCompletedEventHandler = delegate of obj * AsyncCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

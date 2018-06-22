@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplateSelector" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemContainerTemplateSelector" />
   <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerTemplateSelector abstract" />
+  <TypeSignature Language="F#" Value="type ItemContainerTemplateSelector = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateSelector.SelectTemplate(System.Object,System.Windows.Controls.ItemsControl)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SelectTemplate (item As Object, parentItemsControl As ItemsControl) As DataTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::DataTemplate ^ SelectTemplate(System::Object ^ item, System::Windows::Controls::ItemsControl ^ parentItemsControl);" />
+      <MemberSignature Language="F#" Value="abstract member SelectTemplate : obj * System.Windows.Controls.ItemsControl -&gt; System.Windows.DataTemplate&#xA;override this.SelectTemplate : obj * System.Windows.Controls.ItemsControl -&gt; System.Windows.DataTemplate" Usage="itemContainerTemplateSelector.SelectTemplate (item, parentItemsControl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

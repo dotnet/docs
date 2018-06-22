@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationUserLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationUserLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationUserLevel" />
+  <TypeSignature Language="F#" Value="type ConfigurationUserLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Configuration.ConfigurationUserLevel.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoaming" />
       <MemberSignature Language="VB.NET" Value="PerUserRoaming" />
       <MemberSignature Language="C++ CLI" Value="PerUserRoaming" />
+      <MemberSignature Language="F#" Value="PerUserRoaming = 10" Usage="System.Configuration.ConfigurationUserLevel.PerUserRoaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal" />
       <MemberSignature Language="VB.NET" Value="PerUserRoamingAndLocal" />
       <MemberSignature Language="C++ CLI" Value="PerUserRoamingAndLocal" />
+      <MemberSignature Language="F#" Value="PerUserRoamingAndLocal = 20" Usage="System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

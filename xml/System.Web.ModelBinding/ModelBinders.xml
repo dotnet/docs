@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinders" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelBinders" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelBinders abstract sealed" />
+  <TypeSignature Language="F#" Value="type ModelBinders = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinders.Binders" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Binders As ModelBinderDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ModelBinding::ModelBinderDictionary ^ Binders { System::Web::ModelBinding::ModelBinderDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binders : System.Web.ModelBinding.ModelBinderDictionary" Usage="System.Web.ModelBinding.ModelBinders.Binders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

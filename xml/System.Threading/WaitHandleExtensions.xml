@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitHandleExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module WaitHandleExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class WaitHandleExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type WaitHandleExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Handles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Win32.SafeHandles.SafeWaitHandle GetSafeWaitHandle(class System.Threading.WaitHandle waitHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Win32::SafeHandles::SafeWaitHandle ^ GetSafeWaitHandle(System::Threading::WaitHandle ^ waitHandle);" />
+      <MemberSignature Language="F#" Value="static member GetSafeWaitHandle : System.Threading.WaitHandle -&gt; Microsoft.Win32.SafeHandles.SafeWaitHandle" Usage="System.Threading.WaitHandleExtensions.GetSafeWaitHandle waitHandle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSafeWaitHandle(class System.Threading.WaitHandle waitHandle, class Microsoft.Win32.SafeHandles.SafeWaitHandle value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetSafeWaitHandle(System::Threading::WaitHandle ^ waitHandle, Microsoft::Win32::SafeHandles::SafeWaitHandle ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetSafeWaitHandle : System.Threading.WaitHandle * Microsoft.Win32.SafeHandles.SafeWaitHandle -&gt; unit" Usage="System.Threading.WaitHandleExtensions.SetSafeWaitHandle (waitHandle, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>

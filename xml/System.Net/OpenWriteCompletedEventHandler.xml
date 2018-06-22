@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.OpenWriteCompletedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OpenWriteCompletedEventHandler(sender As Object, e As OpenWriteCompletedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void OpenWriteCompletedEventHandler(System::Object ^ sender, OpenWriteCompletedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type OpenWriteCompletedEventHandler = delegate of obj * OpenWriteCompletedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

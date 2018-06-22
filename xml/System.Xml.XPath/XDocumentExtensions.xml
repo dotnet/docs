@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XDocumentExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module XDocumentExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class XDocumentExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type XDocumentExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XDocumentExtensions.ToXPathNavigable(System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToXPathNavigable (node As XNode) As IXPathNavigable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::IXPathNavigable ^ ToXPathNavigable(System::Xml::Linq::XNode ^ node);" />
+      <MemberSignature Language="F#" Value="static member ToXPathNavigable : System.Xml.Linq.XNode -&gt; System.Xml.XPath.IXPathNavigable" Usage="System.Xml.XPath.XDocumentExtensions.ToXPathNavigable node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>

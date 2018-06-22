@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class SymDocument&#xA;Inherits SymDocumentBase&#xA;Implements IDisposable, ISymbolDocument" />
   <TypeSignature Language="C++ CLI" Value="public ref class SymDocument : System::Diagnostics::SymbolStore::SymDocumentBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolDocument" />
+  <TypeSignature Language="F#" Value="type SymDocument = class&#xA;    inherit SymDocumentBase&#xA;    interface ISymbolDocument&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument* pDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.#ctor(System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SymDocument(System::Diagnostics::SymbolStore::Private::ISymUnmanagedDocument* pDocument);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SymbolStore.SymDocument : nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument&gt; -&gt; System.Diagnostics.SymbolStore.SymDocument" Usage="new System.Diagnostics.SymbolStore.SymDocument pDocument" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.CheckSumAlgorithmId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckSumAlgorithmId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid CheckSumAlgorithmId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckSumAlgorithmId : Guid" Usage="System.Diagnostics.SymbolStore.SymDocument.CheckSumAlgorithmId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="symDocument.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="symDocument.Dispose A_0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.DocumentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocumentType As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid DocumentType { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : Guid" Usage="System.Diagnostics.SymbolStore.SymDocument.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!SymDocument ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="symDocument.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.FindClosestLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindClosestLine (line As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int FindClosestLine(int line);" />
+      <MemberSignature Language="F#" Value="abstract member FindClosestLine : int -&gt; int&#xA;override this.FindClosestLine : int -&gt; int" Usage="symDocument.FindClosestLine line" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -223,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.GetCheckSum" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCheckSum () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetCheckSum();" />
+      <MemberSignature Language="F#" Value="abstract member GetCheckSum : unit -&gt; byte[]&#xA;override this.GetCheckSum : unit -&gt; byte[]" Usage="symDocument.GetCheckSum " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.GetSourceRange(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSourceRange (startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetSourceRange(int startLine, int startColumn, int endLine, int endColumn);" />
+      <MemberSignature Language="F#" Value="abstract member GetSourceRange : int * int * int * int -&gt; byte[]&#xA;override this.GetSourceRange : int * int * int * int -&gt; byte[]" Usage="symDocument.GetSourceRange (startLine, startColumn, endLine, endColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -275,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument* GetUnmanaged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymDocument.GetUnmanaged" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::Private::ISymUnmanagedDocument* GetUnmanaged();" />
+      <MemberSignature Language="F#" Value="member this.GetUnmanaged : unit -&gt; nativeptr&lt;System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument&gt;" Usage="symDocument.GetUnmanaged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.HasEmbeddedSource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasEmbeddedSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasEmbeddedSource { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasEmbeddedSource : bool" Usage="System.Diagnostics.SymbolStore.SymDocument.HasEmbeddedSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -317,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.Language" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Language As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid Language { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Language : Guid" Usage="System.Diagnostics.SymbolStore.SymDocument.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -344,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.LanguageVendor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LanguageVendor As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid LanguageVendor { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageVendor : Guid" Usage="System.Diagnostics.SymbolStore.SymDocument.LanguageVendor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -371,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.SourceLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SourceLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SourceLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceLength : int" Usage="System.Diagnostics.SymbolStore.SymDocument.SourceLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -391,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.SymDocument.URL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property URL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ URL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.URL : string" Usage="System.Diagnostics.SymbolStore.SymDocument.URL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

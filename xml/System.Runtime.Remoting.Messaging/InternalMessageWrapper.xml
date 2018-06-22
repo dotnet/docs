@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.InternalMessageWrapper" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalMessageWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalMessageWrapper" />
+  <TypeSignature Language="F#" Value="type InternalMessageWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.InternalMessageWrapper.#ctor(System.Runtime.Remoting.Messaging.IMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As IMessage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalMessageWrapper(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Messaging.InternalMessageWrapper : System.Runtime.Remoting.Messaging.IMessage -&gt; System.Runtime.Remoting.Messaging.InternalMessageWrapper" Usage="new System.Runtime.Remoting.Messaging.InternalMessageWrapper msg" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Messaging.InternalMessageWrapper.WrappedMessage" />
       <MemberSignature Language="VB.NET" Value="Protected WrappedMessage As IMessage " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Runtime::Remoting::Messaging::IMessage ^ WrappedMessage;" />
+      <MemberSignature Language="F#" Value="val mutable WrappedMessage : System.Runtime.Remoting.Messaging.IMessage" Usage="System.Runtime.Remoting.Messaging.InternalMessageWrapper.WrappedMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaContentType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaContentType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaContentType" />
+  <TypeSignature Language="F#" Value="type XmlSchemaContentType = " />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaContentType.ElementOnly" />
       <MemberSignature Language="VB.NET" Value="ElementOnly" />
       <MemberSignature Language="C++ CLI" Value="ElementOnly" />
+      <MemberSignature Language="F#" Value="ElementOnly = 2" Usage="System.Xml.Schema.XmlSchemaContentType.ElementOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaContentType.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="C++ CLI" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 1" Usage="System.Xml.Schema.XmlSchemaContentType.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaContentType.Mixed" />
       <MemberSignature Language="VB.NET" Value="Mixed" />
       <MemberSignature Language="C++ CLI" Value="Mixed" />
+      <MemberSignature Language="F#" Value="Mixed = 3" Usage="System.Xml.Schema.XmlSchemaContentType.Mixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaContentType.TextOnly" />
       <MemberSignature Language="VB.NET" Value="TextOnly" />
       <MemberSignature Language="C++ CLI" Value="TextOnly" />
+      <MemberSignature Language="F#" Value="TextOnly = 0" Usage="System.Xml.Schema.XmlSchemaContentType.TextOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

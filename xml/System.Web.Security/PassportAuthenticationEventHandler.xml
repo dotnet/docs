@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportAuthenticationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub PassportAuthenticationEventHandler(sender As Object, e As PassportAuthenticationEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void PassportAuthenticationEventHandler(System::Object ^ sender, PassportAuthenticationEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type PassportAuthenticationEventHandler = delegate of obj * PassportAuthenticationEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

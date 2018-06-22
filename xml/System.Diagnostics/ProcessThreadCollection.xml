@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessThreadCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessThreadCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProcessThreadCollection : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ProcessThreadCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.#ctor(System.Diagnostics.ProcessThread[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (processThreads As ProcessThread())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessThreadCollection(cli::array &lt;System::Diagnostics::ProcessThread ^&gt; ^ processThreads);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ProcessThreadCollection : System.Diagnostics.ProcessThread[] -&gt; System.Diagnostics.ProcessThreadCollection" Usage="new System.Diagnostics.ProcessThreadCollection processThreads" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Add(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (thread As ProcessThread) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Diagnostics::ProcessThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Diagnostics.ProcessThread -&gt; int" Usage="processThreadCollection.Add thread" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.AddRange(System.Collections.Generic.IEnumerable{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (collection As IEnumerable(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::Generic::IEnumerable&lt;System::Diagnostics::ProcessThread ^&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.AddRange collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.AsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Function AsReadOnly () As ReadOnlyCollection(Of ProcessThread)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Diagnostics::ProcessThread ^&gt; ^ AsReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.AsReadOnly : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Diagnostics.ProcessThread&gt;" Usage="processThreadCollection.AsReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.BinarySearch(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As ProcessThread) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(System::Diagnostics::ProcessThread ^ item);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : System.Diagnostics.ProcessThread -&gt; int" Usage="processThreadCollection.BinarySearch item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.BinarySearch(System.Diagnostics.ProcessThread,System.Collections.Generic.IComparer{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As ProcessThread, comparer As IComparer(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(System::Diagnostics::ProcessThread ^ item, System::Collections::Generic::IComparer&lt;System::Diagnostics::ProcessThread ^&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : System.Diagnostics.ProcessThread * System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.BinarySearch (item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.BinarySearch(System.Int32,System.Int32,System.Diagnostics.ProcessThread,System.Collections.Generic.IComparer{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (index As Integer, count As Integer, item As ProcessThread, comparer As IComparer(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(int index, int count, System::Diagnostics::ProcessThread ^ item, System::Collections::Generic::IComparer&lt;System::Diagnostics::ProcessThread ^&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : int * int * System.Diagnostics.ProcessThread * System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.BinarySearch (index, count, item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThreadCollection.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Diagnostics.ProcessThreadCollection.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="processThreadCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Contains(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (thread As ProcessThread) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Diagnostics::ProcessThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Diagnostics.ProcessThread -&gt; bool" Usage="processThreadCollection.Contains thread" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -381,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.ConvertAll``1(System.Converter{System.Diagnostics.ProcessThread,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertAll(Of TOutput) (converter As Converter(Of ProcessThread, TOutput)) As List(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA; System::Collections::Generic::List&lt;TOutput&gt; ^ ConvertAll(Converter&lt;System::Diagnostics::ProcessThread ^, TOutput&gt; ^ converter);" />
+      <MemberSignature Language="F#" Value="member this.ConvertAll : Converter&lt;System.Diagnostics.ProcessThread, 'Output&gt; -&gt; System.Collections.Generic.List&lt;'Output&gt;" Usage="processThreadCollection.ConvertAll converter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -414,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.CopyTo(System.Diagnostics.ProcessThread[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ProcessThread())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::ProcessThread ^&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Diagnostics.ProcessThread[] -&gt; unit" Usage="processThreadCollection.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -442,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.CopyTo(System.Diagnostics.ProcessThread[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ProcessThread(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::ProcessThread ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Diagnostics.ProcessThread[] * int -&gt; unit" Usage="processThreadCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -478,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.CopyTo(System.Int32,System.Diagnostics.ProcessThread[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (index As Integer, array As ProcessThread(), arrayIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int index, cli::array &lt;System::Diagnostics::ProcessThread ^&gt; ^ array, int arrayIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * System.Diagnostics.ProcessThread[] * int * int -&gt; unit" Usage="processThreadCollection.CopyTo (index, array, arrayIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -512,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThreadCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Diagnostics.ProcessThreadCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -535,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Exists(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (match As Predicate(Of ProcessThread)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Exists : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; bool" Usage="processThreadCollection.Exists match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -564,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Find(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (match As Predicate(Of ProcessThread)) As ProcessThread" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::ProcessThread ^ Find(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Find : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; System.Diagnostics.ProcessThread" Usage="processThreadCollection.Find match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -593,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindAll(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (match As Predicate(Of ProcessThread)) As List(Of ProcessThread)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Diagnostics::ProcessThread ^&gt; ^ FindAll(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; System.Collections.Generic.List&lt;System.Diagnostics.ProcessThread&gt;" Usage="processThreadCollection.FindAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -622,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindIndex(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -651,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindIndex(System.Int32,System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -682,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindIndex(System.Int32,System.Int32,System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, count As Integer, match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, int count, Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * int * Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -715,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindLast(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLast (match As Predicate(Of ProcessThread)) As ProcessThread" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::ProcessThread ^ FindLast(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLast : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; System.Diagnostics.ProcessThread" Usage="processThreadCollection.FindLast match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -744,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindLastIndex(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindLastIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -773,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindLastIndex(System.Int32,System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindLastIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -804,6 +829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.FindLastIndex(System.Int32,System.Int32,System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, count As Integer, match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, int count, Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * int * Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.FindLastIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -837,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.ForEach(System.Action{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForEach (action As Action(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForEach(Action&lt;System::Diagnostics::ProcessThread ^&gt; ^ action);" />
+      <MemberSignature Language="F#" Value="member this.ForEach : Action&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.ForEach action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -865,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="processThreadCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -889,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.GetRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRange (index As Integer, count As Integer) As List(Of ProcessThread)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Diagnostics::ProcessThread ^&gt; ^ GetRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.GetRange : int * int -&gt; System.Collections.Generic.List&lt;System.Diagnostics.ProcessThread&gt;" Usage="processThreadCollection.GetRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -920,6 +949,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.IndexOf(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (thread As ProcessThread) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Diagnostics::ProcessThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Diagnostics.ProcessThread -&gt; int" Usage="processThreadCollection.IndexOf thread" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -955,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.IndexOf(System.Diagnostics.ProcessThread,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As ProcessThread, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Diagnostics::ProcessThread ^ item, int index);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Diagnostics.ProcessThread * int -&gt; int" Usage="processThreadCollection.IndexOf (item, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -986,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.IndexOf(System.Diagnostics.ProcessThread,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As ProcessThread, index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Diagnostics::ProcessThread ^ item, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Diagnostics.ProcessThread * int * int -&gt; int" Usage="processThreadCollection.IndexOf (item, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1019,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Insert(System.Int32,System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, thread As ProcessThread)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Diagnostics::ProcessThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Diagnostics.ProcessThread -&gt; unit" Usage="processThreadCollection.Insert (index, thread)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1055,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertRange (index As Integer, collection As IEnumerable(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertRange(int index, System::Collections::Generic::IEnumerable&lt;System::Diagnostics::ProcessThread ^&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.InsertRange : int * seq&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.InsertRange (index, collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1085,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThreadCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ProcessThread" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ProcessThread ^ default[int] { System::Diagnostics::ProcessThread ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Diagnostics.ProcessThread" Usage="System.Diagnostics.ProcessThreadCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1120,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.LastIndexOf(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As ProcessThread) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::Diagnostics::ProcessThread ^ item);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : System.Diagnostics.ProcessThread -&gt; int" Usage="processThreadCollection.LastIndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1149,6 +1185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.LastIndexOf(System.Diagnostics.ProcessThread,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As ProcessThread, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::Diagnostics::ProcessThread ^ item, int index);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : System.Diagnostics.ProcessThread * int -&gt; int" Usage="processThreadCollection.LastIndexOf (item, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1180,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.LastIndexOf(System.Diagnostics.ProcessThread,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As ProcessThread, index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::Diagnostics::ProcessThread ^ item, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : System.Diagnostics.ProcessThread * int * int -&gt; int" Usage="processThreadCollection.LastIndexOf (item, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1213,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Remove(System.Diagnostics.ProcessThread)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (thread As ProcessThread)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Diagnostics::ProcessThread ^ thread);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Diagnostics.ProcessThread -&gt; unit" Usage="processThreadCollection.Remove thread" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -1247,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.RemoveAll(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll (match As Predicate(Of ProcessThread)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int RemoveAll(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; int" Usage="processThreadCollection.RemoveAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1276,6 +1316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="processThreadCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1304,6 +1345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.RemoveRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveRange (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRange : int * int -&gt; unit" Usage="processThreadCollection.RemoveRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1334,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reverse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse();" />
+      <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; unit" Usage="processThreadCollection.Reverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1359,6 +1402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Reverse(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reverse (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.Reverse : int * int -&gt; unit" Usage="processThreadCollection.Reverse (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1389,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort();" />
+      <MemberSignature Language="F#" Value="member this.Sort : unit -&gt; unit" Usage="processThreadCollection.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1414,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Sort(System.Collections.Generic.IComparer{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparer As IComparer(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Collections::Generic::IComparer&lt;System::Diagnostics::ProcessThread ^&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1442,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Sort(System.Comparison{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparison As Comparison(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(Comparison&lt;System::Diagnostics::ProcessThread ^&gt; ^ comparison);" />
+      <MemberSignature Language="F#" Value="member this.Sort : Comparison&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.Sort comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1470,6 +1517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (index As Integer, count As Integer, comparer As IComparer(Of ProcessThread))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(int index, int count, System::Collections::Generic::IComparer&lt;System::Diagnostics::ProcessThread ^&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : int * int * System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt; -&gt; unit" Usage="processThreadCollection.Sort (index, count, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1529,6 +1577,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThreadCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Diagnostics.ProcessThreadCollection.System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1552,6 +1601,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessThreadCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Diagnostics.ProcessThreadCollection.System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1575,6 +1625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As ProcessThread()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::ProcessThread ^&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; System.Diagnostics.ProcessThread[]" Usage="processThreadCollection.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1601,6 +1652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.TrimExcess" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberSignature Language="F#" Value="member this.TrimExcess : unit -&gt; unit" Usage="processThreadCollection.TrimExcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1626,6 +1678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ProcessThreadCollection.TrueForAll(System.Predicate{System.Diagnostics.ProcessThread})" />
       <MemberSignature Language="VB.NET" Value="Public Function TrueForAll (match As Predicate(Of ProcessThread)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrueForAll(Predicate&lt;System::Diagnostics::ProcessThread ^&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.TrueForAll : Predicate&lt;System.Diagnostics.ProcessThread&gt; -&gt; bool" Usage="processThreadCollection.TrueForAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

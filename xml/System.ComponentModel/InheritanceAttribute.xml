@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InheritanceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InheritanceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InheritanceAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InheritanceAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.InheritanceLevel inheritanceLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.#ctor(System.ComponentModel.InheritanceLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritanceAttribute(System::ComponentModel::InheritanceLevel inheritanceLevel);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InheritanceAttribute : System.ComponentModel.InheritanceLevel -&gt; System.ComponentModel.InheritanceAttribute" Usage="new System.ComponentModel.InheritanceAttribute inheritanceLevel" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As InheritanceAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::InheritanceAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="inheritanceAttribute.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="inheritanceAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InheritanceAttribute.InheritanceLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceLevel As InheritanceLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::InheritanceLevel InheritanceLevel { System::ComponentModel::InheritanceLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.InheritanceLevel : System.ComponentModel.InheritanceLevel" Usage="System.ComponentModel.InheritanceAttribute.InheritanceLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.Inherited" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Inherited As InheritanceAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::InheritanceAttribute ^ Inherited;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Inherited : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.InheritedReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InheritedReadOnly As InheritanceAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::InheritanceAttribute ^ InheritedReadOnly;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InheritedReadOnly : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.InheritedReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -322,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="inheritanceAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceAttribute.NotInherited" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NotInherited As InheritanceAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::InheritanceAttribute ^ NotInherited;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NotInherited : System.ComponentModel.InheritanceAttribute" Usage="System.ComponentModel.InheritanceAttribute.NotInherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -391,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InheritanceAttribute.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="inheritanceAttribute.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

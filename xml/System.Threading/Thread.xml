@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Thread" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Thread&#xA;Inherits CriticalFinalizerObject&#xA;Implements _Thread" />
   <TypeSignature Language="C++ CLI" Value="public ref class Thread sealed : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, System::Runtime::InteropServices::_Thread" />
+  <TypeSignature Language="F#" Value="type Thread = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface _Thread" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,6 +218,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.#ctor(System.Threading.ParameterizedThreadStart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As ParameterizedThreadStart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thread(System::Threading::ParameterizedThreadStart ^ start);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Thread : System.Threading.ParameterizedThreadStart -&gt; System.Threading.Thread" Usage="new System.Threading.Thread start" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -277,6 +279,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.#ctor(System.Threading.ThreadStart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As ThreadStart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thread(System::Threading::ThreadStart ^ start);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Thread : System.Threading.ThreadStart -&gt; System.Threading.Thread" Usage="new System.Threading.Thread start" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -341,6 +344,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.#ctor(System.Threading.ParameterizedThreadStart,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As ParameterizedThreadStart, maxStackSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thread(System::Threading::ParameterizedThreadStart ^ start, int maxStackSize);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Thread : System.Threading.ParameterizedThreadStart * int -&gt; System.Threading.Thread" Usage="new System.Threading.Thread (start, maxStackSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -412,6 +416,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.#ctor(System.Threading.ThreadStart,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As ThreadStart, maxStackSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Thread(System::Threading::ThreadStart ^ start, int maxStackSize);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Thread : System.Threading.ThreadStart * int -&gt; System.Threading.Thread" Usage="new System.Threading.Thread (start, maxStackSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -493,6 +498,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="thread.Abort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -555,6 +561,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Abort(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (stateInfo As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(System::Object ^ stateInfo);" />
+      <MemberSignature Language="F#" Value="member this.Abort : obj -&gt; unit" Usage="thread.Abort stateInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -629,6 +636,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.AllocateDataSlot" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateDataSlot () As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateDataSlot();" />
+      <MemberSignature Language="F#" Value="static member AllocateDataSlot : unit -&gt; LocalDataStoreSlot" Usage="System.Threading.Thread.AllocateDataSlot " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -694,6 +702,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.AllocateNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateNamedDataSlot (name As String) As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member AllocateNamedDataSlot : string -&gt; LocalDataStoreSlot" Usage="System.Threading.Thread.AllocateNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -771,6 +780,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.ApartmentState" />
       <MemberSignature Language="VB.NET" Value="Public Property ApartmentState As ApartmentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::ApartmentState ApartmentState { System::Threading::ApartmentState get(); void set(System::Threading::ApartmentState value); };" />
+      <MemberSignature Language="F#" Value="member this.ApartmentState : System.Threading.ApartmentState with get, set" Usage="System.Threading.Thread.ApartmentState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -835,6 +845,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.BeginCriticalRegion" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub BeginCriticalRegion ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BeginCriticalRegion();" />
+      <MemberSignature Language="F#" Value="static member BeginCriticalRegion : unit -&gt; unit" Usage="System.Threading.Thread.BeginCriticalRegion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -893,6 +904,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.BeginThreadAffinity" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub BeginThreadAffinity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BeginThreadAffinity();" />
+      <MemberSignature Language="F#" Value="static member BeginThreadAffinity : unit -&gt; unit" Usage="System.Threading.Thread.BeginThreadAffinity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -951,6 +963,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.CurrentContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentContext As Context" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Remoting::Contexts::Context ^ CurrentContext { System::Runtime::Remoting::Contexts::Context ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentContext : System.Runtime.Remoting.Contexts.Context" Usage="System.Threading.Thread.CurrentContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -974,6 +987,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.CurrentCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentCulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CurrentCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentCulture : System.Globalization.CultureInfo with get, set" Usage="System.Threading.Thread.CurrentCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1029,6 +1043,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.CurrentPrincipal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentPrincipal As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Principal::IPrincipal ^ CurrentPrincipal { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPrincipal : System.Security.Principal.IPrincipal with get, set" Usage="System.Threading.Thread.CurrentPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1072,6 +1087,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.CurrentThread" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentThread As Thread" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Threading::Thread ^ CurrentThread { System::Threading::Thread ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentThread : System.Threading.Thread" Usage="System.Threading.Thread.CurrentThread" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -1122,6 +1138,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.CurrentUICulture" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentUICulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CurrentUICulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentUICulture : System.Globalization.CultureInfo with get, set" Usage="System.Threading.Thread.CurrentUICulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1185,6 +1202,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.DisableComObjectEagerCleanup" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisableComObjectEagerCleanup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisableComObjectEagerCleanup();" />
+      <MemberSignature Language="F#" Value="member this.DisableComObjectEagerCleanup : unit -&gt; unit" Usage="thread.DisableComObjectEagerCleanup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1231,6 +1249,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.EndCriticalRegion" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EndCriticalRegion ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndCriticalRegion();" />
+      <MemberSignature Language="F#" Value="static member EndCriticalRegion : unit -&gt; unit" Usage="System.Threading.Thread.EndCriticalRegion " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1289,6 +1308,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.EndThreadAffinity" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EndThreadAffinity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndThreadAffinity();" />
+      <MemberSignature Language="F#" Value="static member EndThreadAffinity : unit -&gt; unit" Usage="System.Threading.Thread.EndThreadAffinity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1347,6 +1367,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.ExecutionContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionContext As ExecutionContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::ExecutionContext ^ ExecutionContext { System::Threading::ExecutionContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionContext : System.Threading.ExecutionContext" Usage="System.Threading.Thread.ExecutionContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1392,6 +1413,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!Thread ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="thread.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1430,6 +1452,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.FreeNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeNamedDataSlot (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member FreeNamedDataSlot : string -&gt; unit" Usage="System.Threading.Thread.FreeNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1499,6 +1522,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetApartmentState" />
       <MemberSignature Language="VB.NET" Value="Public Function GetApartmentState () As ApartmentState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::ApartmentState GetApartmentState();" />
+      <MemberSignature Language="F#" Value="member this.GetApartmentState : unit -&gt; System.Threading.ApartmentState" Usage="thread.GetApartmentState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1548,6 +1572,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetCompressedStack" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCompressedStack () As CompressedStack" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::CompressedStack ^ GetCompressedStack();" />
+      <MemberSignature Language="F#" Value="member this.GetCompressedStack : unit -&gt; System.Threading.CompressedStack" Usage="thread.GetCompressedStack " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1596,6 +1621,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetCurrentProcessorId" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentProcessorId () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCurrentProcessorId();" />
+      <MemberSignature Language="F#" Value="static member GetCurrentProcessorId : unit -&gt; int" Usage="System.Threading.Thread.GetCurrentProcessorId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -1617,6 +1643,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetData(System.LocalDataStoreSlot)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (slot As LocalDataStoreSlot) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(LocalDataStoreSlot ^ slot);" />
+      <MemberSignature Language="F#" Value="static member GetData : LocalDataStoreSlot -&gt; obj" Usage="System.Threading.Thread.GetData slot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1687,6 +1714,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDomain () As AppDomain" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static AppDomain ^ GetDomain();" />
+      <MemberSignature Language="F#" Value="static member GetDomain : unit -&gt; AppDomain" Usage="System.Threading.Thread.GetDomain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1729,6 +1757,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetDomainID" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDomainID () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDomainID();" />
+      <MemberSignature Language="F#" Value="static member GetDomainID : unit -&gt; int" Usage="System.Threading.Thread.GetDomainID " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1771,6 +1800,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="thread.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1814,6 +1844,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.GetNamedDataSlot(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamedDataSlot (name As String) As LocalDataStoreSlot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ GetNamedDataSlot(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetNamedDataSlot : string -&gt; LocalDataStoreSlot" Usage="System.Threading.Thread.GetNamedDataSlot name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1882,6 +1913,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Interrupt" />
       <MemberSignature Language="VB.NET" Value="Public Sub Interrupt ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Interrupt();" />
+      <MemberSignature Language="F#" Value="member this.Interrupt : unit -&gt; unit" Usage="thread.Interrupt " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1938,6 +1970,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.IsAlive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAlive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAlive { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAlive : bool" Usage="System.Threading.Thread.IsAlive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -1970,6 +2003,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.IsBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property IsBackground As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBackground { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBackground : bool with get, set" Usage="System.Threading.Thread.IsBackground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2034,6 +2068,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.IsThreadPoolThread" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsThreadPoolThread As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsThreadPoolThread { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsThreadPoolThread : bool" Usage="System.Threading.Thread.IsThreadPoolThread" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2092,6 +2127,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Join" />
       <MemberSignature Language="VB.NET" Value="Public Sub Join ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Join();" />
+      <MemberSignature Language="F#" Value="member this.Join : unit -&gt; unit" Usage="thread.Join " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2147,6 +2183,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Join(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Join (millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Join(int millisecondsTimeout);" />
+      <MemberSignature Language="F#" Value="member this.Join : int -&gt; bool" Usage="thread.Join millisecondsTimeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2206,6 +2243,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Join(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Join (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Join(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="member this.Join : TimeSpan -&gt; bool" Usage="thread.Join timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2268,6 +2306,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.ManagedThreadId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedThreadId As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ManagedThreadId { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManagedThreadId : int" Usage="System.Threading.Thread.ManagedThreadId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2313,6 +2352,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.MemoryBarrier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrier ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrier();" />
+      <MemberSignature Language="F#" Value="static member MemoryBarrier : unit -&gt; unit" Usage="System.Threading.Thread.MemoryBarrier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2357,6 +2397,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Threading.Thread.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2407,6 +2448,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As ThreadPriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::ThreadPriority Priority { System::Threading::ThreadPriority get(); void set(System::Threading::ThreadPriority value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Threading.ThreadPriority with get, set" Usage="System.Threading.Thread.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2475,6 +2517,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.ResetAbort" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ResetAbort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ResetAbort();" />
+      <MemberSignature Language="F#" Value="static member ResetAbort : unit -&gt; unit" Usage="System.Threading.Thread.ResetAbort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2526,6 +2569,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="thread.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2577,6 +2621,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.SetApartmentState(System.Threading.ApartmentState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetApartmentState (state As ApartmentState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetApartmentState(System::Threading::ApartmentState state);" />
+      <MemberSignature Language="F#" Value="member this.SetApartmentState : System.Threading.ApartmentState -&gt; unit" Usage="thread.SetApartmentState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2638,6 +2683,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.SetCompressedStack(System.Threading.CompressedStack)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCompressedStack (stack As CompressedStack)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCompressedStack(System::Threading::CompressedStack ^ stack);" />
+      <MemberSignature Language="F#" Value="member this.SetCompressedStack : System.Threading.CompressedStack -&gt; unit" Usage="thread.SetCompressedStack stack" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2688,6 +2734,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.SetData(System.LocalDataStoreSlot,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetData (slot As LocalDataStoreSlot, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetData(LocalDataStoreSlot ^ slot, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="static member SetData : LocalDataStoreSlot * obj -&gt; unit" Usage="System.Threading.Thread.SetData (slot, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2769,6 +2816,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Sleep(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sleep (millisecondsTimeout As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sleep(int millisecondsTimeout);" />
+      <MemberSignature Language="F#" Value="static member Sleep : int -&gt; unit" Usage="System.Threading.Thread.Sleep millisecondsTimeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2834,6 +2882,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Sleep(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sleep (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sleep(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member Sleep : TimeSpan -&gt; unit" Usage="System.Threading.Thread.Sleep timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -2894,6 +2943,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.SpinWait(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SpinWait (iterations As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpinWait(int iterations);" />
+      <MemberSignature Language="F#" Value="static member SpinWait : int -&gt; unit" Usage="System.Threading.Thread.SpinWait iterations" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2956,6 +3006,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="thread.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -3010,6 +3061,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Start(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (parameter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="member this.Start : obj -&gt; unit" Usage="thread.Start parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -3069,6 +3121,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Suspend" />
       <MemberSignature Language="VB.NET" Value="Public Sub Suspend ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Suspend();" />
+      <MemberSignature Language="F#" Value="member this.Suspend : unit -&gt; unit" Usage="thread.Suspend " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3283,6 +3336,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="P:System.Threading.Thread.ThreadState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadState As ThreadState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::ThreadState ThreadState { System::Threading::ThreadState get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadState : System.Threading.ThreadState" Usage="System.Threading.Thread.ThreadState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -3333,6 +3387,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.TrySetApartmentState(System.Threading.ApartmentState)" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetApartmentState (state As ApartmentState) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetApartmentState(System::Threading::ApartmentState state);" />
+      <MemberSignature Language="F#" Value="member this.TrySetApartmentState : System.Threading.ApartmentState -&gt; bool" Usage="thread.TrySetApartmentState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3404,6 +3459,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Byte@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte VolatileRead(System::Byte % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; byte" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3454,6 +3510,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double VolatileRead(double % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; double" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3504,6 +3561,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short VolatileRead(short % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; int16" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3554,6 +3612,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int VolatileRead(int % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; int" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3604,6 +3663,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long VolatileRead(long % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; int64" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3654,6 +3714,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr VolatileRead(IntPtr % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; nativeint" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3704,6 +3765,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ VolatileRead(System::Object ^ % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; obj" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3754,6 +3816,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.SByte@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte VolatileRead(System::SByte % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; sbyte" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3809,6 +3872,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float VolatileRead(float % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; single" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3859,6 +3923,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 VolatileRead(System::UInt16 % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; uint16" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3914,6 +3979,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 VolatileRead(System::UInt32 % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; uint32" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3969,6 +4035,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 VolatileRead(System::UInt64 % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; uint64" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4024,6 +4091,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UIntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VolatileRead (ByRef address As UIntPtr) As UIntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static UIntPtr VolatileRead(UIntPtr % address);" />
+      <MemberSignature Language="F#" Value="static member VolatileRead :  -&gt; unativeint" Usage="System.Threading.Thread.VolatileRead address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4089,6 +4157,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Byte@,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Byte, value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::Byte % address, System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * byte -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4140,6 +4209,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Double@,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Double, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(double % address, double value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * double -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4191,6 +4261,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int16@,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Short, value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(short % address, short value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * int16 -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4242,6 +4313,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Integer, value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(int % address, int value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * int -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4293,6 +4365,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Long, value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(long % address, long value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * int64 -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4344,6 +4417,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.IntPtr@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As IntPtr, value As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(IntPtr % address, IntPtr value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * nativeint -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4395,6 +4469,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Object@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::Object ^ % address, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * obj -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4446,6 +4521,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.SByte@,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As SByte, value As SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::SByte % address, System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * sbyte -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4502,6 +4578,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Single@,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As Single, value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(float % address, float value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * single -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4553,6 +4630,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt16@,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As UShort, value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::UInt16 % address, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * uint16 -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4609,6 +4687,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt32@,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As UInteger, value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::UInt32 % address, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * uint32 -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4665,6 +4744,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt64@,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As ULong, value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(System::UInt64 % address, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * uint64 -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4721,6 +4801,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UIntPtr@,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub VolatileWrite (ByRef address As UIntPtr, value As UIntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void VolatileWrite(UIntPtr % address, UIntPtr value);" />
+      <MemberSignature Language="F#" Value="static member VolatileWrite :  * unativeint -&gt; unit" Usage="System.Threading.Thread.VolatileWrite (address, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4777,6 +4858,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.Yield" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Yield () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Yield();" />
+      <MemberSignature Language="F#" Value="static member Yield : unit -&gt; bool" Usage="System.Threading.Thread.Yield " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

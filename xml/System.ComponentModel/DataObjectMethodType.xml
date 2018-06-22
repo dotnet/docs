@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectMethodType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataObjectMethodType" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataObjectMethodType" />
+  <TypeSignature Language="F#" Value="type DataObjectMethodType = " />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 4" Usage="System.ComponentModel.DataObjectMethodType.Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Fill" />
       <MemberSignature Language="VB.NET" Value="Fill" />
       <MemberSignature Language="C++ CLI" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 0" Usage="System.ComponentModel.DataObjectMethodType.Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="C++ CLI" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 3" Usage="System.ComponentModel.DataObjectMethodType.Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="C++ CLI" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 1" Usage="System.ComponentModel.DataObjectMethodType.Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 2" Usage="System.ComponentModel.DataObjectMethodType.Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

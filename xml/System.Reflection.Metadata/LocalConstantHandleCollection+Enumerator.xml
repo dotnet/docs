@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure LocalConstantHandleCollection.Enumerator&#xA;Implements IEnumerator(Of LocalConstantHandle)" />
   <TypeSignature Language="C++ CLI" Value="public: value class LocalConstantHandleCollection::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Reflection::Metadata::LocalConstantHandle&gt;" />
+  <TypeSignature Language="F#" Value="type LocalConstantHandleCollection.Enumerator = struct&#xA;    interface IEnumerator&lt;LocalConstantHandle&gt;&#xA;    interface IEnumerator&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As LocalConstantHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::LocalConstantHandle Current { System::Reflection::Metadata::LocalConstantHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Reflection.Metadata.LocalConstantHandle" Usage="System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Reflection.Metadata.LocalConstantHandleCollection.Enumerator.System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>

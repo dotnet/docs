@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaCodeItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaCodeItem&#xA;Implements IJSVsaItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class IJSVsaCodeItem : Microsoft::JScript::Vsa::IJSVsaItem" />
+  <TypeSignature Language="F#" Value="type IJSVsaCodeItem = interface&#xA;    interface IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEventSource (eventSourceName As String, eventSourceType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEventSource(System::String ^ eventSourceName, System::String ^ eventSourceType);" />
+      <MemberSignature Language="F#" Value="abstract member AddEventSource : string * string -&gt; unit" Usage="iJSVsaCodeItem.AddEventSource (eventSourceName, eventSourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaCodeItem.AppendSourceText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppendSourceText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendSourceText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member AppendSourceText : string -&gt; unit" Usage="iJSVsaCodeItem.AppendSourceText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaCodeItem.CodeDOM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeDOM As CodeObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeObject ^ CodeDOM { System::CodeDom::CodeObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDOM : System.CodeDom.CodeObject" Usage="Microsoft.JScript.Vsa.IJSVsaCodeItem.CodeDOM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaCodeItem.RemoveEventSource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveEventSource (eventSourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEventSource(System::String ^ eventSourceName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEventSource : string -&gt; unit" Usage="iJSVsaCodeItem.RemoveEventSource eventSourceName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaCodeItem.SourceText" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceText : string with get, set" Usage="Microsoft.JScript.Vsa.IJSVsaCodeItem.SourceText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableStack" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableStack" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImmutableStack abstract sealed" />
+  <TypeSignature Language="F#" Value="type ImmutableStack = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack.Create``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) () As ImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableStack&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableStack.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (item As T) As ImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ Create(T item);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T -&gt; System.Collections.Immutable.ImmutableStack&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableStack.Create item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack.Create``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (ParamArray items As T()) As ImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ Create(... cli::array &lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member Create : 'T[] -&gt; System.Collections.Immutable.ImmutableStack&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableStack.Create items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (items As IEnumerable(Of T)) As ImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableStack&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableStack.CreateRange items" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Pop(Of T) (stack As IImmutableStack(Of T), ByRef value As T) As IImmutableStack(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::IImmutableStack&lt;T&gt; ^ Pop(System::Collections::Immutable::IImmutableStack&lt;T&gt; ^ stack, [Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="static member Pop : System.Collections.Immutable.IImmutableStack&lt;'T&gt; *  -&gt; System.Collections.Immutable.IImmutableStack&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableStack.Pop (stack, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

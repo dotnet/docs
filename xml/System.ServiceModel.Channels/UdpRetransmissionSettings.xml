@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UdpRetransmissionSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UdpRetransmissionSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpRetransmissionSettings sealed" />
+  <TypeSignature Language="F#" Value="type UdpRetransmissionSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (maxUnicastRetransmitCount As Integer, maxMulticastRetransmitCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpRetransmissionSettings(int maxUnicastRetransmitCount, int maxMulticastRetransmitCount);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.UdpRetransmissionSettings : int * int -&gt; System.ServiceModel.Channels.UdpRetransmissionSettings" Usage="new System.ServiceModel.Channels.UdpRetransmissionSettings (maxUnicastRetransmitCount, maxMulticastRetransmitCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor(System.Int32,System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (maxUnicastRetransmitCount As Integer, maxMulticastRetransmitCount As Integer, delayLowerBound As TimeSpan, delayUpperBound As TimeSpan, maxDelayPerRetransmission As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpRetransmissionSettings(int maxUnicastRetransmitCount, int maxMulticastRetransmitCount, TimeSpan delayLowerBound, TimeSpan delayUpperBound, TimeSpan maxDelayPerRetransmission);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.UdpRetransmissionSettings : int * int * TimeSpan * TimeSpan * TimeSpan -&gt; System.ServiceModel.Channels.UdpRetransmissionSettings" Usage="new System.ServiceModel.Channels.UdpRetransmissionSettings (maxUnicastRetransmitCount, maxMulticastRetransmitCount, delayLowerBound, delayUpperBound, maxDelayPerRetransmission)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.UdpRetransmissionSettings.DelayLowerBound" />
       <MemberSignature Language="VB.NET" Value="Public Property DelayLowerBound As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DelayLowerBound { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.DelayLowerBound : TimeSpan with get, set" Usage="System.ServiceModel.Channels.UdpRetransmissionSettings.DelayLowerBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.UdpRetransmissionSettings.DelayUpperBound" />
       <MemberSignature Language="VB.NET" Value="Public Property DelayUpperBound As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DelayUpperBound { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.DelayUpperBound : TimeSpan with get, set" Usage="System.ServiceModel.Channels.UdpRetransmissionSettings.DelayUpperBound" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.UdpRetransmissionSettings.MaxDelayPerRetransmission" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDelayPerRetransmission As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxDelayPerRetransmission { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDelayPerRetransmission : TimeSpan with get, set" Usage="System.ServiceModel.Channels.UdpRetransmissionSettings.MaxDelayPerRetransmission" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.UdpRetransmissionSettings.MaxMulticastRetransmitCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxMulticastRetransmitCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxMulticastRetransmitCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxMulticastRetransmitCount : int with get, set" Usage="System.ServiceModel.Channels.UdpRetransmissionSettings.MaxMulticastRetransmitCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.UdpRetransmissionSettings.MaxUnicastRetransmitCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxUnicastRetransmitCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxUnicastRetransmitCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxUnicastRetransmitCount : int with get, set" Usage="System.ServiceModel.Channels.UdpRetransmissionSettings.MaxUnicastRetransmitCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeDelayLowerBound" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDelayLowerBound () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDelayLowerBound();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDelayLowerBound : unit -&gt; bool" Usage="udpRetransmissionSettings.ShouldSerializeDelayLowerBound " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeDelayUpperBound" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDelayUpperBound () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDelayUpperBound();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDelayUpperBound : unit -&gt; bool" Usage="udpRetransmissionSettings.ShouldSerializeDelayUpperBound " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeMaxDelayPerRetransmission" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMaxDelayPerRetransmission () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMaxDelayPerRetransmission();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMaxDelayPerRetransmission : unit -&gt; bool" Usage="udpRetransmissionSettings.ShouldSerializeMaxDelayPerRetransmission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

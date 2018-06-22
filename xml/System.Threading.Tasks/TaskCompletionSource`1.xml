@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCompletionSource`1" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskCompletionSource(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class TaskCompletionSource" />
+  <TypeSignature Language="F#" Value="type TaskCompletionSource&lt;'Result&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : obj -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (creationOptions As TaskCreationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; creationOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object, creationOptions As TaskCreationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; (state, creationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCanceled ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCanceled();" />
+      <MemberSignature Language="F#" Value="member this.SetCanceled : unit -&gt; unit" Usage="taskCompletionSource.SetCanceled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetException (exceptions As IEnumerable(Of Exception))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
+      <MemberSignature Language="F#" Value="member this.SetException : seq&lt;Exception&gt; -&gt; unit" Usage="taskCompletionSource.SetException exceptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -287,6 +293,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="member this.SetException : Exception -&gt; unit" Usage="taskCompletionSource.SetException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -325,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResult (result As TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResult(TResult result);" />
+      <MemberSignature Language="F#" Value="member this.SetResult : 'Result -&gt; unit" Usage="taskCompletionSource.SetResult result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskCompletionSource`1.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task&lt;TResult&gt; ^ Task { System::Threading::Tasks::Task&lt;TResult&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Threading.Tasks.Task&lt;'Result&gt;" Usage="System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -414,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetCanceled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled();" />
+      <MemberSignature Language="F#" Value="member this.TrySetCanceled : unit -&gt; bool" Usage="taskCompletionSource.TrySetCanceled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -455,6 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetCanceled(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.TrySetCanceled : System.Threading.CancellationToken -&gt; bool" Usage="taskCompletionSource.TrySetCanceled cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -517,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetException (exceptions As IEnumerable(Of Exception)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
+      <MemberSignature Language="F#" Value="member this.TrySetException : seq&lt;Exception&gt; -&gt; bool" Usage="taskCompletionSource.TrySetException exceptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -566,6 +578,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="member this.TrySetException : Exception -&gt; bool" Usage="taskCompletionSource.TrySetException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -611,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetResult (result As TResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetResult(TResult result);" />
+      <MemberSignature Language="F#" Value="member this.TrySetResult : 'Result -&gt; bool" Usage="taskCompletionSource.TrySetResult result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CacheSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum CacheSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class CacheSetting" />
+  <TypeSignature Language="F#" Value="type CacheSetting = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOff" />
       <MemberSignature Language="VB.NET" Value="AlwaysOff" />
       <MemberSignature Language="C++ CLI" Value="AlwaysOff" />
+      <MemberSignature Language="F#" Value="AlwaysOff = 2" Usage="System.ServiceModel.CacheSetting.AlwaysOff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOn" />
       <MemberSignature Language="VB.NET" Value="AlwaysOn" />
       <MemberSignature Language="C++ CLI" Value="AlwaysOn" />
+      <MemberSignature Language="F#" Value="AlwaysOn = 1" Usage="System.ServiceModel.CacheSetting.AlwaysOn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.ServiceModel.CacheSetting.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

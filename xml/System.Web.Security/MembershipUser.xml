@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUser" />
   <TypeSignature Language="VB.NET" Value="Public Class MembershipUser" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipUser" />
+  <TypeSignature Language="F#" Value="type MembershipUser = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.#ctor(System.String,System.String,System.Object,System.String,System.String,System.String,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, name As String, providerUserKey As Object, email As String, passwordQuestion As String, comment As String, isApproved As Boolean, isLockedOut As Boolean, creationDate As DateTime, lastLoginDate As DateTime, lastActivityDate As DateTime, lastPasswordChangedDate As DateTime, lastLockoutDate As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipUser(System::String ^ providerName, System::String ^ name, System::Object ^ providerUserKey, System::String ^ email, System::String ^ passwordQuestion, System::String ^ comment, bool isApproved, bool isLockedOut, DateTime creationDate, DateTime lastLoginDate, DateTime lastActivityDate, DateTime lastPasswordChangedDate, DateTime lastLockoutDate);" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.MembershipUser : string * string * obj * string * string * string * bool * bool * DateTime * DateTime * DateTime * DateTime * DateTime -&gt; System.Web.Security.MembershipUser" Usage="new System.Web.Security.MembershipUser (providerName, name, providerUserKey, email, passwordQuestion, comment, isApproved, isLockedOut, creationDate, lastLoginDate, lastActivityDate, lastPasswordChangedDate, lastLockoutDate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -159,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ChangePassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ChangePassword (oldPassword As String, newPassword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ChangePassword(System::String ^ oldPassword, System::String ^ newPassword);" />
+      <MemberSignature Language="F#" Value="abstract member ChangePassword : string * string -&gt; bool&#xA;override this.ChangePassword : string * string -&gt; bool" Usage="membershipUser.ChangePassword (oldPassword, newPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ChangePasswordQuestionAndAnswer (password As String, newPasswordQuestion As String, newPasswordAnswer As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ChangePasswordQuestionAndAnswer(System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
+      <MemberSignature Language="F#" Value="abstract member ChangePasswordQuestionAndAnswer : string * string * string -&gt; bool&#xA;override this.ChangePasswordQuestionAndAnswer : string * string * string -&gt; bool" Usage="membershipUser.ChangePasswordQuestionAndAnswer (password, newPasswordQuestion, newPasswordAnswer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -283,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.Comment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Comment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Web.Security.MembershipUser.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -311,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.CreationDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CreationDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime CreationDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreationDate : DateTime" Usage="System.Web.Security.MembershipUser.CreationDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -346,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.Email" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Email As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Email { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Email : string with get, set" Usage="System.Web.Security.MembershipUser.Email" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -385,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.GetPassword" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPassword () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPassword();" />
+      <MemberSignature Language="F#" Value="abstract member GetPassword : unit -&gt; string&#xA;override this.GetPassword : unit -&gt; string" Usage="membershipUser.GetPassword " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -435,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.GetPassword(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPassword (passwordAnswer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPassword(System::String ^ passwordAnswer);" />
+      <MemberSignature Language="F#" Value="abstract member GetPassword : string -&gt; string&#xA;override this.GetPassword : string -&gt; string" Usage="membershipUser.GetPassword passwordAnswer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -488,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsApproved" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsApproved As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsApproved { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsApproved : bool with get, set" Usage="System.Web.Security.MembershipUser.IsApproved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -517,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsLockedOut" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsLockedOut As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLockedOut { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLockedOut : bool" Usage="System.Web.Security.MembershipUser.IsLockedOut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -550,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.IsOnline" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsOnline As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsOnline { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOnline : bool" Usage="System.Web.Security.MembershipUser.IsOnline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -592,6 +604,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastActivityDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LastActivityDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastActivityDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.LastActivityDate : DateTime with get, set" Usage="System.Web.Security.MembershipUser.LastActivityDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -634,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastLockoutDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LastLockoutDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastLockoutDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastLockoutDate : DateTime" Usage="System.Web.Security.MembershipUser.LastLockoutDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -665,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastLoginDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LastLoginDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastLoginDate { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.LastLoginDate : DateTime with get, set" Usage="System.Web.Security.MembershipUser.LastLoginDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -704,6 +719,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.LastPasswordChangedDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LastPasswordChangedDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastPasswordChangedDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastPasswordChangedDate : DateTime" Usage="System.Web.Security.MembershipUser.LastPasswordChangedDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -742,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.PasswordQuestion" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PasswordQuestion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordQuestion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordQuestion : string" Usage="System.Web.Security.MembershipUser.PasswordQuestion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -780,6 +797,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProviderName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Web.Security.MembershipUser.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -807,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.ProviderUserKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ProviderUserKey As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ProviderUserKey { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderUserKey : obj" Usage="System.Web.Security.MembershipUser.ProviderUserKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -843,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ResetPassword" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResetPassword () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ResetPassword();" />
+      <MemberSignature Language="F#" Value="abstract member ResetPassword : unit -&gt; string&#xA;override this.ResetPassword : unit -&gt; string" Usage="membershipUser.ResetPassword " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -887,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ResetPassword(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResetPassword (passwordAnswer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ResetPassword(System::String ^ passwordAnswer);" />
+      <MemberSignature Language="F#" Value="abstract member ResetPassword : string -&gt; string&#xA;override this.ResetPassword : string -&gt; string" Usage="membershipUser.ResetPassword passwordAnswer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -936,6 +957,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="membershipUser.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -957,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUser.UnlockUser" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function UnlockUser () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool UnlockUser();" />
+      <MemberSignature Language="F#" Value="abstract member UnlockUser : unit -&gt; bool&#xA;override this.UnlockUser : unit -&gt; bool" Usage="membershipUser.UnlockUser " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -991,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUser.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Web.Security.MembershipUser.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>

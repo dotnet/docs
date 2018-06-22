@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewSelectEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewSelectEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type GridViewSelectEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewSelectEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newSelectedIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewSelectEventArgs(int newSelectedIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewSelectEventArgs : int -&gt; System.Web.UI.WebControls.GridViewSelectEventArgs" Usage="new System.Web.UI.WebControls.GridViewSelectEventArgs newSelectedIndex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property NewSelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewSelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NewSelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

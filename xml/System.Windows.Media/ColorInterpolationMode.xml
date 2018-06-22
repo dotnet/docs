@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ColorInterpolationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ColorInterpolationMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ColorInterpolationMode" />
+  <TypeSignature Language="F#" Value="type ColorInterpolationMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ColorInterpolationMode.ScRgbLinearInterpolation" />
       <MemberSignature Language="VB.NET" Value="ScRgbLinearInterpolation" />
       <MemberSignature Language="C++ CLI" Value="ScRgbLinearInterpolation" />
+      <MemberSignature Language="F#" Value="ScRgbLinearInterpolation = 0" Usage="System.Windows.Media.ColorInterpolationMode.ScRgbLinearInterpolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ColorInterpolationMode.SRgbLinearInterpolation" />
       <MemberSignature Language="VB.NET" Value="SRgbLinearInterpolation" />
       <MemberSignature Language="C++ CLI" Value="SRgbLinearInterpolation" />
+      <MemberSignature Language="F#" Value="SRgbLinearInterpolation = 1" Usage="System.Windows.Media.ColorInterpolationMode.SRgbLinearInterpolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

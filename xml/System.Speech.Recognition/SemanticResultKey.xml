@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultKey" />
   <TypeSignature Language="VB.NET" Value="Public Class SemanticResultKey" />
   <TypeSignature Language="C++ CLI" Value="public ref class SemanticResultKey" />
+  <TypeSignature Language="F#" Value="type SemanticResultKey = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,6 +116,7 @@ private void pwdGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.Speech.Recognition.GrammarBuilder[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (semanticResultKey As String, ParamArray builders As GrammarBuilder())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultKey(System::String ^ semanticResultKey, ... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ builders);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticResultKey : string * System.Speech.Recognition.GrammarBuilder[] -&gt; System.Speech.Recognition.SemanticResultKey" Usage="new System.Speech.Recognition.SemanticResultKey (semanticResultKey, builders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -227,6 +229,7 @@ private void pwdGrammar()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (semanticResultKey As String, ParamArray phrases As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultKey(System::String ^ semanticResultKey, ... cli::array &lt;System::String ^&gt; ^ phrases);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticResultKey : string * string[] -&gt; System.Speech.Recognition.SemanticResultKey" Usage="new System.Speech.Recognition.SemanticResultKey (semanticResultKey, phrases)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -298,6 +301,7 @@ private void keyTest()
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
+      <MemberSignature Language="F#" Value="member this.ToGrammarBuilder : unit -&gt; System.Speech.Recognition.GrammarBuilder" Usage="semanticResultKey.ToGrammarBuilder " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

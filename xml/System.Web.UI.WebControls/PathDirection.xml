@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PathDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum PathDirection" />
   <TypeSignature Language="C++ CLI" Value="public enum class PathDirection" />
+  <TypeSignature Language="F#" Value="type PathDirection = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PathDirection.CurrentToRoot" />
       <MemberSignature Language="VB.NET" Value="CurrentToRoot" />
       <MemberSignature Language="C++ CLI" Value="CurrentToRoot" />
+      <MemberSignature Language="F#" Value="CurrentToRoot = 1" Usage="System.Web.UI.WebControls.PathDirection.CurrentToRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PathDirection.RootToCurrent" />
       <MemberSignature Language="VB.NET" Value="RootToCurrent" />
       <MemberSignature Language="C++ CLI" Value="RootToCurrent" />
+      <MemberSignature Language="F#" Value="RootToCurrent = 0" Usage="System.Web.UI.WebControls.PathDirection.RootToCurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

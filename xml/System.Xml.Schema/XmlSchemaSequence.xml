@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSequence" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSequence&#xA;Inherits XmlSchemaGroupBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSequence : System::Xml::Schema::XmlSchemaGroupBase" />
+  <TypeSignature Language="F#" Value="type XmlSchemaSequence = class&#xA;    inherit XmlSchemaGroupBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSequence.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Items As XmlSchemaObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaSequence.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

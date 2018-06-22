@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.PathType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PathType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PathType" />
+  <TypeSignature Language="F#" Value="type PathType = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.PathType.FilePath" />
       <MemberSignature Language="VB.NET" Value="FilePath" />
       <MemberSignature Language="C++ CLI" Value="FilePath" />
+      <MemberSignature Language="F#" Value="FilePath = 2" Usage="System.Diagnostics.Eventing.Reader.PathType.FilePath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.PathType.LogName" />
       <MemberSignature Language="VB.NET" Value="LogName" />
       <MemberSignature Language="C++ CLI" Value="LogName" />
+      <MemberSignature Language="F#" Value="LogName = 1" Usage="System.Diagnostics.Eventing.Reader.PathType.LogName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

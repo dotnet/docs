@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ValidationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationContext&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationContext sealed : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ValidationContext = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationContext(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationContext : obj -&gt; System.ComponentModel.DataAnnotations.ValidationContext" Usage="new System.ComponentModel.DataAnnotations.ValidationContext instance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object,System.Collections.Generic.IDictionary{System.Object,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object, items As IDictionary(Of Object, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationContext(System::Object ^ instance, System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationContext : obj * System.Collections.Generic.IDictionary&lt;obj, obj&gt; -&gt; System.ComponentModel.DataAnnotations.ValidationContext" Usage="new System.ComponentModel.DataAnnotations.ValidationContext (instance, items)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object,System.IServiceProvider,System.Collections.Generic.IDictionary{System.Object,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object, serviceProvider As IServiceProvider, items As IDictionary(Of Object, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationContext(System::Object ^ instance, IServiceProvider ^ serviceProvider, System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationContext : obj * IServiceProvider * System.Collections.Generic.IDictionary&lt;obj, obj&gt; -&gt; System.ComponentModel.DataAnnotations.ValidationContext" Usage="new System.ComponentModel.DataAnnotations.ValidationContext (instance, serviceProvider, items)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.ComponentModel.DataAnnotations.ValidationContext.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="validationContext.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationContext.InitializeServiceProvider(System.Func{System.Type,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeServiceProvider (serviceProvider As Func(Of Type, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeServiceProvider(Func&lt;Type ^, System::Object ^&gt; ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="member this.InitializeServiceProvider : Func&lt;Type, obj&gt; -&gt; unit" Usage="validationContext.InitializeServiceProvider serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IDictionary(Of Object, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ Items { System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IDictionary&lt;obj, obj&gt;" Usage="System.ComponentModel.DataAnnotations.ValidationContext.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.ComponentModel.DataAnnotations.ValidationContext.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -318,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectInstance : obj" Usage="System.ComponentModel.DataAnnotations.ValidationContext.ObjectInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -351,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.ComponentModel.DataAnnotations.ValidationContext.ObjectType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceContainer As IServiceContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IServiceContainer ^ ServiceContainer { System::ComponentModel::Design::IServiceContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceContainer : System.ComponentModel.Design.IServiceContainer" Usage="System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

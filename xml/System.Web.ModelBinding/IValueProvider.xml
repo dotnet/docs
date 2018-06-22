@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValueProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValueProvider" />
+  <TypeSignature Language="F#" Value="type IValueProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsPrefix (prefix As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsPrefix(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsPrefix : string -&gt; bool" Usage="iValueProvider.ContainsPrefix prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As String) As ValueProviderResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="iValueProvider.GetValue key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.QuaternionRotation3D" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QuaternionRotation3D&#xA;Inherits Rotation3D" />
   <TypeSignature Language="C++ CLI" Value="public ref class QuaternionRotation3D sealed : System::Windows::Media::Media3D::Rotation3D" />
+  <TypeSignature Language="F#" Value="type QuaternionRotation3D = class&#xA;    inherit Rotation3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion quaternion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.QuaternionRotation3D.#ctor(System.Windows.Media.Media3D.Quaternion)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionRotation3D(System::Windows::Media::Media3D::Quaternion quaternion);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.QuaternionRotation3D : System.Windows.Media.Media3D.Quaternion -&gt; System.Windows.Media.Media3D.QuaternionRotation3D" Usage="new System.Windows.Media.Media3D.QuaternionRotation3D quaternion" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.QuaternionRotation3D.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As QuaternionRotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::QuaternionRotation3D ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.QuaternionRotation3D" Usage="quaternionRotation3D.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.QuaternionRotation3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As QuaternionRotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::QuaternionRotation3D ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.QuaternionRotation3D" Usage="quaternionRotation3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.QuaternionRotation3D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="quaternionRotation3D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.QuaternionRotation3D.Quaternion" />
       <MemberSignature Language="VB.NET" Value="Public Property Quaternion As Quaternion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Quaternion Quaternion { System::Windows::Media::Media3D::Quaternion get(); void set(System::Windows::Media::Media3D::Quaternion value); };" />
+      <MemberSignature Language="F#" Value="member this.Quaternion : System.Windows.Media.Media3D.Quaternion with get, set" Usage="System.Windows.Media.Media3D.QuaternionRotation3D.Quaternion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.QuaternionRotation3D.QuaternionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuaternionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuaternionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QuaternionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.QuaternionRotation3D.QuaternionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

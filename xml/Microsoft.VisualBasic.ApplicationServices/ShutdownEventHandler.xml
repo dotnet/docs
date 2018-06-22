@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ShutdownEventHandler(sender As Object, e As EventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ShutdownEventHandler(System::Object ^ sender, EventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type ShutdownEventHandler = delegate of obj * EventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

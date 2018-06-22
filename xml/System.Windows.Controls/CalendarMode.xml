@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CalendarMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class CalendarMode" />
+  <TypeSignature Language="F#" Value="type CalendarMode = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Decade" />
       <MemberSignature Language="VB.NET" Value="Decade" />
       <MemberSignature Language="C++ CLI" Value="Decade" />
+      <MemberSignature Language="F#" Value="Decade = 2" Usage="System.Windows.Controls.CalendarMode.Decade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Month" />
       <MemberSignature Language="VB.NET" Value="Month" />
       <MemberSignature Language="C++ CLI" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 0" Usage="System.Windows.Controls.CalendarMode.Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Year" />
       <MemberSignature Language="VB.NET" Value="Year" />
       <MemberSignature Language="C++ CLI" Value="Year" />
+      <MemberSignature Language="F#" Value="Year = 1" Usage="System.Windows.Controls.CalendarMode.Year" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

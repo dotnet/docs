@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.Subsystem" />
   <TypeSignature Language="VB.NET" Value="Public Enum Subsystem" />
   <TypeSignature Language="C++ CLI" Value="public enum class Subsystem" />
+  <TypeSignature Language="F#" Value="type Subsystem = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.EfiApplication" />
       <MemberSignature Language="VB.NET" Value="EfiApplication" />
       <MemberSignature Language="C++ CLI" Value="EfiApplication" />
+      <MemberSignature Language="F#" Value="EfiApplication = 10" Usage="System.Reflection.PortableExecutable.Subsystem.EfiApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.EfiBootServiceDriver" />
       <MemberSignature Language="VB.NET" Value="EfiBootServiceDriver" />
       <MemberSignature Language="C++ CLI" Value="EfiBootServiceDriver" />
+      <MemberSignature Language="F#" Value="EfiBootServiceDriver = 11" Usage="System.Reflection.PortableExecutable.Subsystem.EfiBootServiceDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.EfiRom" />
       <MemberSignature Language="VB.NET" Value="EfiRom" />
       <MemberSignature Language="C++ CLI" Value="EfiRom" />
+      <MemberSignature Language="F#" Value="EfiRom = 13" Usage="System.Reflection.PortableExecutable.Subsystem.EfiRom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.EfiRuntimeDriver" />
       <MemberSignature Language="VB.NET" Value="EfiRuntimeDriver" />
       <MemberSignature Language="C++ CLI" Value="EfiRuntimeDriver" />
+      <MemberSignature Language="F#" Value="EfiRuntimeDriver = 12" Usage="System.Reflection.PortableExecutable.Subsystem.EfiRuntimeDriver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="C++ CLI" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Reflection.PortableExecutable.Subsystem.Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.NativeWindows" />
       <MemberSignature Language="VB.NET" Value="NativeWindows" />
       <MemberSignature Language="C++ CLI" Value="NativeWindows" />
+      <MemberSignature Language="F#" Value="NativeWindows = 8" Usage="System.Reflection.PortableExecutable.Subsystem.NativeWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.OS2Cui" />
       <MemberSignature Language="VB.NET" Value="OS2Cui" />
       <MemberSignature Language="C++ CLI" Value="OS2Cui" />
+      <MemberSignature Language="F#" Value="OS2Cui = 5" Usage="System.Reflection.PortableExecutable.Subsystem.OS2Cui" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.PosixCui" />
       <MemberSignature Language="VB.NET" Value="PosixCui" />
       <MemberSignature Language="C++ CLI" Value="PosixCui" />
+      <MemberSignature Language="F#" Value="PosixCui = 7" Usage="System.Reflection.PortableExecutable.Subsystem.PosixCui" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Reflection.PortableExecutable.Subsystem.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.WindowsBootApplication" />
       <MemberSignature Language="VB.NET" Value="WindowsBootApplication" />
       <MemberSignature Language="C++ CLI" Value="WindowsBootApplication" />
+      <MemberSignature Language="F#" Value="WindowsBootApplication = 16" Usage="System.Reflection.PortableExecutable.Subsystem.WindowsBootApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -243,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.WindowsCEGui" />
       <MemberSignature Language="VB.NET" Value="WindowsCEGui" />
       <MemberSignature Language="C++ CLI" Value="WindowsCEGui" />
+      <MemberSignature Language="F#" Value="WindowsCEGui = 9" Usage="System.Reflection.PortableExecutable.Subsystem.WindowsCEGui" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -265,6 +277,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.WindowsCui" />
       <MemberSignature Language="VB.NET" Value="WindowsCui" />
       <MemberSignature Language="C++ CLI" Value="WindowsCui" />
+      <MemberSignature Language="F#" Value="WindowsCui = 3" Usage="System.Reflection.PortableExecutable.Subsystem.WindowsCui" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -287,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.WindowsGui" />
       <MemberSignature Language="VB.NET" Value="WindowsGui" />
       <MemberSignature Language="C++ CLI" Value="WindowsGui" />
+      <MemberSignature Language="F#" Value="WindowsGui = 2" Usage="System.Reflection.PortableExecutable.Subsystem.WindowsGui" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -309,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.Subsystem.Xbox" />
       <MemberSignature Language="VB.NET" Value="Xbox" />
       <MemberSignature Language="C++ CLI" Value="Xbox" />
+      <MemberSignature Language="F#" Value="Xbox = 14" Usage="System.Reflection.PortableExecutable.Subsystem.Xbox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

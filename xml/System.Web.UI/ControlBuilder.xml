@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlBuilder" />
+  <TypeSignature Language="F#" Value="type ControlBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowWhitespaceLiterals();" />
+      <MemberSignature Language="F#" Value="abstract member AllowWhitespaceLiterals : unit -&gt; bool&#xA;override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="controlBuilder.AllowWhitespaceLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +128,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.AppendLiteralString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendLiteralString (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AppendLiteralString(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="abstract member AppendLiteralString : string -&gt; unit&#xA;override this.AppendLiteralString : string -&gt; unit" Usage="controlBuilder.AppendLiteralString s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +166,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
+      <MemberSignature Language="F#" Value="abstract member AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit&#xA;override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="controlBuilder.AppendSubBuilder subBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.BindingContainerBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BindingContainerBuilder As ControlBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlBuilder ^ BindingContainerBuilder { System::Web::UI::ControlBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingContainerBuilder : System.Web.UI.ControlBuilder" Usage="System.Web.UI.ControlBuilder.BindingContainerBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +222,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.BindingContainerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BindingContainerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingContainerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingContainerType : Type" Usage="System.Web.UI.ControlBuilder.BindingContainerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +244,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.BuildObject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ BuildObject();" />
+      <MemberSignature Language="F#" Value="abstract member BuildObject : unit -&gt; obj&#xA;override this.BuildObject : unit -&gt; obj" Usage="controlBuilder.BuildObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +266,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.CloseControl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseControl ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseControl();" />
+      <MemberSignature Language="F#" Value="abstract member CloseControl : unit -&gt; unit&#xA;override this.CloseControl : unit -&gt; unit" Usage="controlBuilder.CloseControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +294,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ComplexPropertyEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComplexPropertyEntries As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ ComplexPropertyEntries { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComplexPropertyEntries : System.Collections.ICollection" Usage="System.Web.UI.ControlBuilder.ComplexPropertyEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,6 +322,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ControlType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlType : Type" Usage="System.Web.UI.ControlBuilder.ControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -343,6 +353,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ControlBuilder CreateBuilderFromType(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attribs, int32 line, string sourceFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.CreateBuilderFromType(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ControlBuilder ^ CreateBuilderFromType(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attribs, int line, System::String ^ sourceFileName);" />
+      <MemberSignature Language="F#" Value="static member CreateBuilderFromType : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary * int * string -&gt; System.Web.UI.ControlBuilder" Usage="System.Web.UI.ControlBuilder.CreateBuilderFromType (parser, parentBuilder, type, tagName, id, attribs, line, sourceFileName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +392,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.CurrentFilterResolutionService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentFilterResolutionService As IFilterResolutionService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IFilterResolutionService ^ CurrentFilterResolutionService { System::Web::UI::IFilterResolutionService ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentFilterResolutionService : System.Web.UI.IFilterResolutionService" Usage="System.Web.UI.ControlBuilder.CurrentFilterResolutionService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -409,6 +421,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.DeclareType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclareType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclareType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclareType : Type" Usage="System.Web.UI.ControlBuilder.DeclareType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +442,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ControlBuilder.DesignerFilter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DesignerFilter As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DesignerFilter;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DesignerFilter : string" Usage="System.Web.UI.ControlBuilder.DesignerFilter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -448,6 +462,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.FChildrenAsProperties" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FChildrenAsProperties As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool FChildrenAsProperties { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.FChildrenAsProperties : bool" Usage="System.Web.UI.ControlBuilder.FChildrenAsProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -469,6 +484,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.FIsNonParserAccessor" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FIsNonParserAccessor As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool FIsNonParserAccessor { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.FIsNonParserAccessor : bool" Usage="System.Web.UI.ControlBuilder.FIsNonParserAccessor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +506,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildControlType (tagName As String, attribs As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attribs);" />
+      <MemberSignature Language="F#" Value="abstract member GetChildControlType : string * System.Collections.IDictionary -&gt; Type&#xA;override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="controlBuilder.GetChildControlType (tagName, attribs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -529,6 +546,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.GetObjectPersistData" />
       <MemberSignature Language="VB.NET" Value="Public Function GetObjectPersistData () As ObjectPersistData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ObjectPersistData ^ GetObjectPersistData();" />
+      <MemberSignature Language="F#" Value="member this.GetObjectPersistData : unit -&gt; System.Web.UI.ObjectPersistData" Usage="controlBuilder.GetObjectPersistData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -551,6 +569,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.GetResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResourceKey () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetResourceKey();" />
+      <MemberSignature Language="F#" Value="member this.GetResourceKey : unit -&gt; string" Usage="controlBuilder.GetResourceKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -573,6 +592,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.HasAspCode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasAspCode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasAspCode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasAspCode : bool" Usage="System.Web.UI.ControlBuilder.HasAspCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -604,6 +624,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasBody () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasBody();" />
+      <MemberSignature Language="F#" Value="abstract member HasBody : unit -&gt; bool&#xA;override this.HasBody : unit -&gt; bool" Usage="controlBuilder.HasBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -641,6 +662,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.HtmlDecodeLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HtmlDecodeLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HtmlDecodeLiterals();" />
+      <MemberSignature Language="F#" Value="abstract member HtmlDecodeLiterals : unit -&gt; bool&#xA;override this.HtmlDecodeLiterals : unit -&gt; bool" Usage="controlBuilder.HtmlDecodeLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -680,6 +702,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ID" />
       <MemberSignature Language="VB.NET" Value="Public Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="System.Web.UI.ControlBuilder.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -700,6 +723,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.InDesigner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InDesigner As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool InDesigner { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InDesigner : bool" Usage="System.Web.UI.ControlBuilder.InDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -730,6 +754,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attribs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attribs);" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit&#xA;override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="controlBuilder.Init (parser, parentBuilder, type, tagName, id, attribs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -770,6 +795,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.InPageTheme" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InPageTheme As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool InPageTheme { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InPageTheme : bool" Usage="System.Web.UI.ControlBuilder.InPageTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -791,6 +817,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ItemType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string" Usage="System.Web.UI.ControlBuilder.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -811,6 +838,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.Localize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Localize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Localize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Localize : bool" Usage="System.Web.UI.ControlBuilder.Localize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -832,6 +860,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.NamingContainerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamingContainerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ NamingContainerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamingContainerType : Type" Usage="System.Web.UI.ControlBuilder.NamingContainerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -853,6 +882,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.NeedsTagInnerText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NeedsTagInnerText () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool NeedsTagInnerText();" />
+      <MemberSignature Language="F#" Value="abstract member NeedsTagInnerText : unit -&gt; bool&#xA;override this.NeedsTagInnerText : unit -&gt; bool" Usage="controlBuilder.NeedsTagInnerText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -892,6 +922,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.OnAppendToParentBuilder(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnAppendToParentBuilder (parentBuilder As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnAppendToParentBuilder(System::Web::UI::ControlBuilder ^ parentBuilder);" />
+      <MemberSignature Language="F#" Value="abstract member OnAppendToParentBuilder : System.Web.UI.ControlBuilder -&gt; unit&#xA;override this.OnAppendToParentBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="controlBuilder.OnAppendToParentBuilder parentBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -925,6 +956,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.PageVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageVirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PageVirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageVirtualPath : string" Usage="System.Web.UI.ControlBuilder.PageVirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -945,6 +977,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.Parser" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Parser As TemplateParser" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::UI::TemplateParser ^ Parser { System::Web::UI::TemplateParser ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parser : System.Web.UI.TemplateParser" Usage="System.Web.UI.ControlBuilder.Parser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -972,6 +1005,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessGeneratedCode(class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.CodeDom.CodeTypeDeclaration baseType, class System.CodeDom.CodeTypeDeclaration derivedType, class System.CodeDom.CodeMemberMethod buildMethod, class System.CodeDom.CodeMemberMethod dataBindingMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.ProcessGeneratedCode(System.CodeDom.CodeCompileUnit,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessGeneratedCode(System::CodeDom::CodeCompileUnit ^ codeCompileUnit, System::CodeDom::CodeTypeDeclaration ^ baseType, System::CodeDom::CodeTypeDeclaration ^ derivedType, System::CodeDom::CodeMemberMethod ^ buildMethod, System::CodeDom::CodeMemberMethod ^ dataBindingMethod);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessGeneratedCode : System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod -&gt; unit&#xA;override this.ProcessGeneratedCode : System.CodeDom.CodeCompileUnit * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeMemberMethod * System.CodeDom.CodeMemberMethod -&gt; unit" Usage="controlBuilder.ProcessGeneratedCode (codeCompileUnit, baseType, derivedType, buildMethod, dataBindingMethod)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1016,6 +1050,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ServiceProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceProvider As IServiceProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IServiceProvider ^ ServiceProvider { IServiceProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceProvider : IServiceProvider" Usage="System.Web.UI.ControlBuilder.ServiceProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1037,6 +1072,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.SetResourceKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResourceKey (resourceKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResourceKey(System::String ^ resourceKey);" />
+      <MemberSignature Language="F#" Value="member this.SetResourceKey : string -&gt; unit" Usage="controlBuilder.SetResourceKey resourceKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1061,6 +1097,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.SetServiceProvider(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetServiceProvider (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetServiceProvider(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="member this.SetServiceProvider : IServiceProvider -&gt; unit" Usage="controlBuilder.SetServiceProvider serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1085,6 +1122,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlBuilder.SetTagInnerText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetTagInnerText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetTagInnerText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member SetTagInnerText : string -&gt; unit&#xA;override this.SetTagInnerText : string -&gt; unit" Usage="controlBuilder.SetTagInnerText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1123,6 +1161,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.SubBuilders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubBuilders As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubBuilders { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubBuilders : System.Collections.ArrayList" Usage="System.Web.UI.ControlBuilder.SubBuilders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1143,6 +1182,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.TagName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TagName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TagName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagName : string" Usage="System.Web.UI.ControlBuilder.TagName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1163,6 +1203,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.TemplatePropertyEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplatePropertyEntries As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ TemplatePropertyEntries { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplatePropertyEntries : System.Collections.ICollection" Usage="System.Web.UI.ControlBuilder.TemplatePropertyEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1190,6 +1231,7 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlBuilder.ThemeResolutionService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThemeResolutionService As IThemeResolutionService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IThemeResolutionService ^ ThemeResolutionService { System::Web::UI::IThemeResolutionService ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThemeResolutionService : System.Web.UI.IThemeResolutionService" Usage="System.Web.UI.ControlBuilder.ThemeResolutionService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

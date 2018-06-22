@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSegmentType" />
   <TypeSignature Language="VB.NET" Value="Public Enum AddInSegmentType" />
   <TypeSignature Language="C++ CLI" Value="public enum class AddInSegmentType" />
+  <TypeSignature Language="F#" Value="type AddInSegmentType = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddIn" />
       <MemberSignature Language="VB.NET" Value="AddIn" />
       <MemberSignature Language="C++ CLI" Value="AddIn" />
+      <MemberSignature Language="F#" Value="AddIn = 5" Usage="System.AddIn.Hosting.AddInSegmentType.AddIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddInSideAdapter" />
       <MemberSignature Language="VB.NET" Value="AddInSideAdapter" />
       <MemberSignature Language="C++ CLI" Value="AddInSideAdapter" />
+      <MemberSignature Language="F#" Value="AddInSideAdapter = 3" Usage="System.AddIn.Hosting.AddInSegmentType.AddInSideAdapter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddInView" />
       <MemberSignature Language="VB.NET" Value="AddInView" />
       <MemberSignature Language="C++ CLI" Value="AddInView" />
+      <MemberSignature Language="F#" Value="AddInView = 4" Usage="System.AddIn.Hosting.AddInSegmentType.AddInView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.Contract" />
       <MemberSignature Language="VB.NET" Value="Contract" />
       <MemberSignature Language="C++ CLI" Value="Contract" />
+      <MemberSignature Language="F#" Value="Contract = 2" Usage="System.AddIn.Hosting.AddInSegmentType.Contract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.HostSideAdapter" />
       <MemberSignature Language="VB.NET" Value="HostSideAdapter" />
       <MemberSignature Language="C++ CLI" Value="HostSideAdapter" />
+      <MemberSignature Language="F#" Value="HostSideAdapter = 1" Usage="System.AddIn.Hosting.AddInSegmentType.HostSideAdapter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn" />
       <MemberSignature Language="VB.NET" Value="HostViewOfAddIn" />
       <MemberSignature Language="C++ CLI" Value="HostViewOfAddIn" />
+      <MemberSignature Language="F#" Value="HostViewOfAddIn = 0" Usage="System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

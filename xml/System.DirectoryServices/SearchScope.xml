@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SearchScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum SearchScope" />
   <TypeSignature Language="C++ CLI" Value="public enum class SearchScope" />
+  <TypeSignature Language="F#" Value="type SearchScope = " />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SearchScope.Base" />
       <MemberSignature Language="VB.NET" Value="Base" />
       <MemberSignature Language="C++ CLI" Value="Base" />
+      <MemberSignature Language="F#" Value="Base = 0" Usage="System.DirectoryServices.SearchScope.Base" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SearchScope.OneLevel" />
       <MemberSignature Language="VB.NET" Value="OneLevel" />
       <MemberSignature Language="C++ CLI" Value="OneLevel" />
+      <MemberSignature Language="F#" Value="OneLevel = 1" Usage="System.DirectoryServices.SearchScope.OneLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SearchScope.Subtree" />
       <MemberSignature Language="VB.NET" Value="Subtree" />
       <MemberSignature Language="C++ CLI" Value="Subtree" />
+      <MemberSignature Language="F#" Value="Subtree = 2" Usage="System.DirectoryServices.SearchScope.Subtree" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

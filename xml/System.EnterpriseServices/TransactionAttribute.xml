@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TransactionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.TransactionAttribute.#ctor(System.EnterpriseServices.TransactionOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (val As TransactionOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionAttribute(System::EnterpriseServices::TransactionOption val);" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.TransactionAttribute : System.EnterpriseServices.TransactionOption -&gt; System.EnterpriseServices.TransactionAttribute" Usage="new System.EnterpriseServices.TransactionAttribute val" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.TransactionAttribute.Isolation" />
       <MemberSignature Language="VB.NET" Value="Public Property Isolation As TransactionIsolationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::TransactionIsolationLevel Isolation { System::EnterpriseServices::TransactionIsolationLevel get(); void set(System::EnterpriseServices::TransactionIsolationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Isolation : System.EnterpriseServices.TransactionIsolationLevel with get, set" Usage="System.EnterpriseServices.TransactionAttribute.Isolation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.TransactionAttribute.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.EnterpriseServices.TransactionAttribute.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.TransactionAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As TransactionOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::TransactionOption Value { System::EnterpriseServices::TransactionOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : System.EnterpriseServices.TransactionOption" Usage="System.EnterpriseServices.TransactionAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

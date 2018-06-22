@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRelation" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRelation" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataRelation" />
+  <TypeSignature Language="F#" Value="type DataRelation = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentColumn As DataColumn, childColumn As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentColumn, childColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentColumns As DataColumn(), childColumns As DataColumn())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentColumns, childColumns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -196,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentColumn As DataColumn, childColumn As DataColumn, createConstraints As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn, bool createConstraints);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * System.Data.DataColumn * System.Data.DataColumn * bool -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentColumn, childColumn, createConstraints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -250,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentColumns As DataColumn(), childColumns As DataColumn(), createConstraints As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns, bool createConstraints);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * System.Data.DataColumn[] * System.Data.DataColumn[] * bool -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentColumns, childColumns, createConstraints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -304,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.String,System.String,System.String[],System.String[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentTableName As String, childTableName As String, parentColumnNames As String(), childColumnNames As String(), nested As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, System::String ^ parentTableName, System::String ^ childTableName, cli::array &lt;System::String ^&gt; ^ parentColumnNames, cli::array &lt;System::String ^&gt; ^ childColumnNames, bool nested);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * string * string * string[] * string[] * bool -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentTableName, childTableName, parentColumnNames, childColumnNames, nested)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -356,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (relationName As String, parentTableName As String, parentTableNamespace As String, childTableName As String, childTableNamespace As String, parentColumnNames As String(), childColumnNames As String(), nested As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRelation(System::String ^ relationName, System::String ^ parentTableName, System::String ^ parentTableNamespace, System::String ^ childTableName, System::String ^ childTableNamespace, cli::array &lt;System::String ^&gt; ^ parentColumnNames, cli::array &lt;System::String ^&gt; ^ childColumnNames, bool nested);" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRelation : string * string * string * string * string * string[] * string[] * bool -&gt; System.Data.DataRelation" Usage="new System.Data.DataRelation (relationName, parentTableName, parentTableNamespace, childTableName, childTableNamespace, parentColumnNames, childColumnNames, nested)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -412,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.CheckStateForProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckStateForProperty ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckStateForProperty();" />
+      <MemberSignature Language="F#" Value="member this.CheckStateForProperty : unit -&gt; unit" Usage="dataRelation.CheckStateForProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -451,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ChildColumns As DataColumn()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Data::DataColumn ^&gt; ^ ChildColumns { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildColumns : System.Data.DataColumn[]" Usage="System.Data.DataRelation.ChildColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -492,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildKeyConstraint" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ChildKeyConstraint As ForeignKeyConstraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ForeignKeyConstraint ^ ChildKeyConstraint { System::Data::ForeignKeyConstraint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildKeyConstraint : System.Data.ForeignKeyConstraint" Usage="System.Data.DataRelation.ChildKeyConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -539,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildTable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ChildTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataTable ^ ChildTable { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildTable : System.Data.DataTable" Usage="System.Data.DataRelation.ChildTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -580,6 +591,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.DataSet" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataSet As DataSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataSet ^ DataSet { System::Data::DataSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSet : System.Data.DataSet" Usage="System.Data.DataRelation.DataSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -635,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ExtendedProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedProperties As PropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::PropertyCollection ^ ExtendedProperties { System::Data::PropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedProperties : System.Data.PropertyCollection" Usage="System.Data.DataRelation.ExtendedProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -679,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.Nested" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Nested As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Nested { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Nested : bool with get, set" Usage="System.Data.DataRelation.Nested" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -725,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub OnPropertyChanging (pcevent As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void OnPropertyChanging(System::ComponentModel::PropertyChangedEventArgs ^ pcevent);" />
+      <MemberSignature Language="F#" Value="member this.OnPropertyChanging : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="dataRelation.OnPropertyChanging pcevent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -758,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParentColumns As DataColumn()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Data::DataColumn ^&gt; ^ ParentColumns { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentColumns : System.Data.DataColumn[]" Usage="System.Data.DataRelation.ParentColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -799,6 +815,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentKeyConstraint" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParentKeyConstraint As UniqueConstraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::UniqueConstraint ^ ParentKeyConstraint { System::Data::UniqueConstraint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentKeyConstraint : System.Data.UniqueConstraint" Usage="System.Data.DataRelation.ParentKeyConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -840,6 +857,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentTable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParentTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataTable ^ ParentTable { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentTable : System.Data.DataTable" Usage="System.Data.DataRelation.ParentTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -881,6 +899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.RaisePropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RaisePropertyChanging (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RaisePropertyChanging(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.RaisePropertyChanging : string -&gt; unit" Usage="dataRelation.RaisePropertyChanging name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -914,6 +933,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.RelationName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RelationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RelationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelationName : string with get, set" Usage="System.Data.DataRelation.RelationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -969,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataRelation.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

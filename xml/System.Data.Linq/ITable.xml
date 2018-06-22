@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ITable" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITable&#xA;Implements IEnumerable, IQueryable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITable : System::Collections::IEnumerable, System::Linq::IQueryable" />
+  <TypeSignature Language="F#" Value="type ITable = interface&#xA;    interface IEnumerable&#xA;    interface IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : obj -&gt; unit" Usage="iTable.Attach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object, asModified As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity, bool asModified);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : obj * bool -&gt; unit" Usage="iTable.Attach (entity, asModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object, original As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity, System::Object ^ original);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : obj * obj -&gt; unit" Usage="iTable.Attach (entity, original)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.AttachAll(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachAll (entities As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachAll(System::Collections::IEnumerable ^ entities);" />
+      <MemberSignature Language="F#" Value="abstract member AttachAll : System.Collections.IEnumerable -&gt; unit" Usage="iTable.AttachAll entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.AttachAll(System.Collections.IEnumerable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachAll (entities As IEnumerable, asModified As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachAll(System::Collections::IEnumerable ^ entities, bool asModified);" />
+      <MemberSignature Language="F#" Value="abstract member AttachAll : System.Collections.IEnumerable * bool -&gt; unit" Usage="iTable.AttachAll (entities, asModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ITable.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::DataContext ^ Context { System::Data::Linq::DataContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Linq.DataContext" Usage="System.Data.Linq.ITable.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.DeleteAllOnSubmit(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteAllOnSubmit (entities As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAllOnSubmit(System::Collections::IEnumerable ^ entities);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAllOnSubmit : System.Collections.IEnumerable -&gt; unit" Usage="iTable.DeleteAllOnSubmit entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.DeleteOnSubmit(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteOnSubmit (entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteOnSubmit(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteOnSubmit : obj -&gt; unit" Usage="iTable.DeleteOnSubmit entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -300,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.GetModifiedMembers(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModifiedMembers (entity As Object) As ModifiedMemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::Linq::ModifiedMemberInfo&gt; ^ GetModifiedMembers(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="abstract member GetModifiedMembers : obj -&gt; System.Data.Linq.ModifiedMemberInfo[]" Usage="iTable.GetModifiedMembers entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.GetOriginalEntityState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOriginalEntityState (entity As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOriginalEntityState(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="abstract member GetOriginalEntityState : obj -&gt; obj" Usage="iTable.GetOriginalEntityState entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.InsertAllOnSubmit(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertAllOnSubmit (entities As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertAllOnSubmit(System::Collections::IEnumerable ^ entities);" />
+      <MemberSignature Language="F#" Value="abstract member InsertAllOnSubmit : System.Collections.IEnumerable -&gt; unit" Usage="iTable.InsertAllOnSubmit entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -389,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.InsertOnSubmit(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertOnSubmit (entity As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertOnSubmit(System::Object ^ entity);" />
+      <MemberSignature Language="F#" Value="abstract member InsertOnSubmit : obj -&gt; unit" Usage="iTable.InsertOnSubmit entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -419,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ITable.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Linq.ITable.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

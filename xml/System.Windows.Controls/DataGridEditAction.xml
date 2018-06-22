@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridEditAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridEditAction" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataGridEditAction" />
+  <TypeSignature Language="F#" Value="type DataGridEditAction = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Cancel" />
       <MemberSignature Language="VB.NET" Value="Cancel" />
       <MemberSignature Language="C++ CLI" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 0" Usage="System.Windows.Controls.DataGridEditAction.Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Commit" />
       <MemberSignature Language="VB.NET" Value="Commit" />
       <MemberSignature Language="C++ CLI" Value="Commit" />
+      <MemberSignature Language="F#" Value="Commit = 1" Usage="System.Windows.Controls.DataGridEditAction.Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

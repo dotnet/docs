@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IEquatable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEquatable(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IEquatable" />
+  <TypeSignature Language="F#" Value="type IEquatable&lt;'T&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.IEquatable`1.Equals(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(T other);" />
+      <MemberSignature Language="F#" Value="abstract member Equals : 'T -&gt; bool" Usage="iEquatable.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

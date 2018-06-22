@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure ExceptionRegionEncoder" />
   <TypeSignature Language="C++ CLI" Value="public value class ExceptionRegionEncoder" />
+  <TypeSignature Language="F#" Value="type ExceptionRegionEncoder = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder Add(valuetype System.Reflection.Metadata.ExceptionRegionKind kind, int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength, valuetype System.Reflection.Metadata.EntityHandle catchType, int32 filterOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.Add(System.Reflection.Metadata.ExceptionRegionKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.Metadata.EntityHandle,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (kind As ExceptionRegionKind, tryOffset As Integer, tryLength As Integer, handlerOffset As Integer, handlerLength As Integer, Optional catchType As EntityHandle = null, Optional filterOffset As Integer = 0) As ExceptionRegionEncoder" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Reflection.Metadata.ExceptionRegionKind * int * int * int * int * System.Reflection.Metadata.EntityHandle * int -&gt; System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" Usage="exceptionRegionEncoder.Add (kind, tryOffset, tryLength, handlerOffset, handlerLength, catchType, filterOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddCatch(System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddCatch (tryOffset As Integer, tryLength As Integer, handlerOffset As Integer, handlerLength As Integer, catchType As EntityHandle) As ExceptionRegionEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ExceptionRegionEncoder AddCatch(int tryOffset, int tryLength, int handlerOffset, int handlerLength, System::Reflection::Metadata::EntityHandle catchType);" />
+      <MemberSignature Language="F#" Value="member this.AddCatch : int * int * int * int * System.Reflection.Metadata.EntityHandle -&gt; System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" Usage="exceptionRegionEncoder.AddCatch (tryOffset, tryLength, handlerOffset, handlerLength, catchType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFault(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFault (tryOffset As Integer, tryLength As Integer, handlerOffset As Integer, handlerLength As Integer) As ExceptionRegionEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ExceptionRegionEncoder AddFault(int tryOffset, int tryLength, int handlerOffset, int handlerLength);" />
+      <MemberSignature Language="F#" Value="member this.AddFault : int * int * int * int -&gt; System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" Usage="exceptionRegionEncoder.AddFault (tryOffset, tryLength, handlerOffset, handlerLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFilter(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFilter (tryOffset As Integer, tryLength As Integer, handlerOffset As Integer, handlerLength As Integer, filterOffset As Integer) As ExceptionRegionEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ExceptionRegionEncoder AddFilter(int tryOffset, int tryLength, int handlerOffset, int handlerLength, int filterOffset);" />
+      <MemberSignature Language="F#" Value="member this.AddFilter : int * int * int * int * int -&gt; System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" Usage="exceptionRegionEncoder.AddFilter (tryOffset, tryLength, handlerOffset, handlerLength, filterOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFinally(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFinally (tryOffset As Integer, tryLength As Integer, handlerOffset As Integer, handlerLength As Integer) As ExceptionRegionEncoder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ExceptionRegionEncoder AddFinally(int tryOffset, int tryLength, int handlerOffset, int handlerLength);" />
+      <MemberSignature Language="F#" Value="member this.AddFinally : int * int * int * int -&gt; System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" Usage="exceptionRegionEncoder.AddFinally (tryOffset, tryLength, handlerOffset, handlerLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.Builder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.HasSmallFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSmallFormat As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSmallFormat { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasSmallFormat : bool" Usage="System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.HasSmallFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallExceptionRegion(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSmallExceptionRegion (startOffset As Integer, length As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSmallExceptionRegion(int startOffset, int length);" />
+      <MemberSignature Language="F#" Value="static member IsSmallExceptionRegion : int * int -&gt; bool" Usage="System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallExceptionRegion (startOffset, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallRegionCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSmallRegionCount (exceptionRegionCount As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSmallRegionCount(int exceptionRegionCount);" />
+      <MemberSignature Language="F#" Value="static member IsSmallRegionCount : int -&gt; bool" Usage="System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallRegionCount exceptionRegionCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

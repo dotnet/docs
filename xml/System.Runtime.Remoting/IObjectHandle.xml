@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IObjectHandle" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObjectHandle" />
   <TypeSignature Language="C++ CLI" Value="public interface class IObjectHandle" />
+  <TypeSignature Language="F#" Value="type IObjectHandle = interface" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.IObjectHandle.Unwrap" />
       <MemberSignature Language="VB.NET" Value="Public Function Unwrap () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Unwrap();" />
+      <MemberSignature Language="F#" Value="abstract member Unwrap : unit -&gt; obj" Usage="iObjectHandle.Unwrap " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

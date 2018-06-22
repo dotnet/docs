@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PolygonHotSpot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolygonHotSpot&#xA;Inherits HotSpot" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolygonHotSpot sealed : System::Web::UI::WebControls::HotSpot" />
+  <TypeSignature Language="F#" Value="type PolygonHotSpot = class&#xA;    inherit HotSpot" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
       <MemberSignature Language="VB.NET" Value="Public Property Coordinates As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Coordinates { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Coordinates : string with get, set" Usage="System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PolygonHotSpot.GetCoordinates" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCoordinates () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCoordinates();" />
+      <MemberSignature Language="F#" Value="override this.GetCoordinates : unit -&gt; string" Usage="polygonHotSpot.GetCoordinates " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PolygonHotSpot.MarkupName" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property MarkupName As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ MarkupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupName : string" Usage="System.Web.UI.WebControls.PolygonHotSpot.MarkupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AsyncCompletedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncCompletedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AsyncCompletedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncCompletedEventArgs.#ctor(System.Exception,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As Exception, cancelled As Boolean, userState As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncCompletedEventArgs(Exception ^ error, bool cancelled, System::Object ^ userState);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.AsyncCompletedEventArgs : Exception * bool * obj -&gt; System.ComponentModel.AsyncCompletedEventArgs" Usage="new System.ComponentModel.AsyncCompletedEventArgs (error, cancelled, userState)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cancelled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancelled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cancelled : bool" Usage="System.ComponentModel.AsyncCompletedEventArgs.Cancelled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncCompletedEventArgs.Error" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Error { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Error : Exception" Usage="System.ComponentModel.AsyncCompletedEventArgs.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -249,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaiseExceptionIfNecessary ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseExceptionIfNecessary();" />
+      <MemberSignature Language="F#" Value="member this.RaiseExceptionIfNecessary : unit -&gt; unit" Usage="asyncCompletedEventArgs.RaiseExceptionIfNecessary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -298,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AsyncCompletedEventArgs.UserState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserState { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserState : obj" Usage="System.ComponentModel.AsyncCompletedEventArgs.UserState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

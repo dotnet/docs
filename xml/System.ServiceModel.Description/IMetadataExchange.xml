@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IMetadataExchange" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMetadataExchange" />
   <TypeSignature Language="C++ CLI" Value="public interface class IMetadataExchange" />
+  <TypeSignature Language="F#" Value="type IMetadataExchange = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.BeginGet(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginGet (request As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGet(System::ServiceModel::Channels::Message ^ request, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginGet : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iMetadataExchange.BeginGet (request, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.EndGet(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndGet (result As IAsyncResult) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndGet(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndGet : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="iMetadataExchange.EndGet result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.Get(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (request As Message) As Message" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Get(System::ServiceModel::Channels::Message ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member Get : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Channels.Message" Usage="iMetadataExchange.Get request" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

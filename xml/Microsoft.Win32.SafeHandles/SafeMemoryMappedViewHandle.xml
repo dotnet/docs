@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeMemoryMappedViewHandle&#xA;Inherits SafeBuffer" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeMemoryMappedViewHandle sealed : System::Runtime::InteropServices::SafeBuffer" />
+  <TypeSignature Language="F#" Value="type SafeMemoryMappedViewHandle = class&#xA;    inherit SafeBuffer" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandle : unit -&gt; bool&#xA;override this.ReleaseHandle : unit -&gt; bool" Usage="safeMemoryMappedViewHandle.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

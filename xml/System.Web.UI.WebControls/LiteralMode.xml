@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LiteralMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum LiteralMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class LiteralMode" />
+  <TypeSignature Language="F#" Value="type LiteralMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.Encode" />
       <MemberSignature Language="VB.NET" Value="Encode" />
       <MemberSignature Language="C++ CLI" Value="Encode" />
+      <MemberSignature Language="F#" Value="Encode = 2" Usage="System.Web.UI.WebControls.LiteralMode.Encode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.PassThrough" />
       <MemberSignature Language="VB.NET" Value="PassThrough" />
       <MemberSignature Language="C++ CLI" Value="PassThrough" />
+      <MemberSignature Language="F#" Value="PassThrough = 1" Usage="System.Web.UI.WebControls.LiteralMode.PassThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.Transform" />
       <MemberSignature Language="VB.NET" Value="Transform" />
       <MemberSignature Language="C++ CLI" Value="Transform" />
+      <MemberSignature Language="F#" Value="Transform = 0" Usage="System.Web.UI.WebControls.LiteralMode.Transform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

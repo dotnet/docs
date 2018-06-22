@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoutingConfiguration sealed" />
+  <TypeSignature Language="F#" Value="type RoutingConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingConfiguration.#ctor(System.ServiceModel.Dispatcher.MessageFilterTable{System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint}},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterTable As MessageFilterTable(Of IEnumerable(Of ServiceEndpoint)), routeOnHeadersOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutingConfiguration(System::ServiceModel::Dispatcher::MessageFilterTable&lt;System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^&gt; ^ filterTable, bool routeOnHeadersOnly);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Routing.RoutingConfiguration : System.ServiceModel.Dispatcher.MessageFilterTable&lt;seq&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt; * bool -&gt; System.ServiceModel.Routing.RoutingConfiguration" Usage="new System.ServiceModel.Routing.RoutingConfiguration (filterTable, routeOnHeadersOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.EnsureOrderedDispatch" />
       <MemberSignature Language="VB.NET" Value="Public Property EnsureOrderedDispatch As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureOrderedDispatch { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnsureOrderedDispatch : bool with get, set" Usage="System.ServiceModel.Routing.RoutingConfiguration.EnsureOrderedDispatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.FilterTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterTable As MessageFilterTable(Of IEnumerable(Of ServiceEndpoint))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::MessageFilterTable&lt;System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^&gt; ^ FilterTable { System::ServiceModel::Dispatcher::MessageFilterTable&lt;System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FilterTable : System.ServiceModel.Dispatcher.MessageFilterTable&lt;seq&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt;" Usage="System.ServiceModel.Routing.RoutingConfiguration.FilterTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteOnHeadersOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteOnHeadersOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteOnHeadersOnly : bool with get, set" Usage="System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapProcessingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SoapProcessingEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SoapProcessingEnabled : bool with get, set" Usage="System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

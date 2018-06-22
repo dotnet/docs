@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseException" />
   <TypeSignature Language="VB.NET" Value="Public Class LicenseException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class LicenseException : SystemException" />
+  <TypeSignature Language="F#" Value="type LicenseException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseException(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseException : Type -&gt; System.ComponentModel.LicenseException" Usage="new System.ComponentModel.LicenseException type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; LicenseException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.LicenseException" Usage="new System.ComponentModel.LicenseException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.#ctor(System.Type,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseException(Type ^ type, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseException : Type * obj -&gt; System.ComponentModel.LicenseException" Usage="new System.ComponentModel.LicenseException (type, instance)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, object instance, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.#ctor(System.Type,System.Object,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseException(Type ^ type, System::Object ^ instance, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseException : Type * obj * string -&gt; System.ComponentModel.LicenseException" Usage="new System.ComponentModel.LicenseException (type, instance, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, object instance, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.#ctor(System.Type,System.Object,System.String,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseException(Type ^ type, System::Object ^ instance, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.LicenseException : Type * obj * string * Exception -&gt; System.ComponentModel.LicenseException" Usage="new System.ComponentModel.LicenseException (type, instance, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -262,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="licenseException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseException.LicensedType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LicensedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ LicensedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LicensedType : Type" Usage="System.ComponentModel.LicenseException.LicensedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

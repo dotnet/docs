@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TargetFinishedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TargetFinishedEventArgs&#xA;Inherits BuildStatusEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetFinishedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
+  <TypeSignature Language="F#" Value="type TargetFinishedEventArgs = class&#xA;    inherit BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, targetName As String, projectFile As String, targetFile As String, succeeded As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ targetName, System::String ^ projectFile, System::String ^ targetFile, bool succeeded);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TargetFinishedEventArgs : string * string * string * string * string * bool -&gt; Microsoft.Build.Framework.TargetFinishedEventArgs" Usage="new Microsoft.Build.Framework.TargetFinishedEventArgs (message, helpKeyword, targetName, projectFile, targetFile, succeeded)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, targetName As String, projectFile As String, targetFile As String, succeeded As Boolean, targetOutputs As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ targetName, System::String ^ projectFile, System::String ^ targetFile, bool succeeded, System::Collections::IEnumerable ^ targetOutputs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TargetFinishedEventArgs : string * string * string * string * string * bool * System.Collections.IEnumerable -&gt; Microsoft.Build.Framework.TargetFinishedEventArgs" Usage="new Microsoft.Build.Framework.TargetFinishedEventArgs (message, helpKeyword, targetName, projectFile, targetFile, succeeded, targetOutputs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, targetName As String, projectFile As String, targetFile As String, succeeded As Boolean, eventTimestamp As DateTime, targetOutputs As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ targetName, System::String ^ projectFile, System::String ^ targetFile, bool succeeded, DateTime eventTimestamp, System::Collections::IEnumerable ^ targetOutputs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TargetFinishedEventArgs : string * string * string * string * string * bool * DateTime * System.Collections.IEnumerable -&gt; Microsoft.Build.Framework.TargetFinishedEventArgs" Usage="new Microsoft.Build.Framework.TargetFinishedEventArgs (message, helpKeyword, targetName, projectFile, targetFile, succeeded, eventTimestamp, targetOutputs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFile : string" Usage="Microsoft.Build.Framework.TargetFinishedEventArgs.TargetFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string" Usage="Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TargetFinishedEventArgs.TargetOutputs" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetOutputs As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ TargetOutputs { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetOutputs : System.Collections.IEnumerable with get, set" Usage="Microsoft.Build.Framework.TargetFinishedEventArgs.TargetOutputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

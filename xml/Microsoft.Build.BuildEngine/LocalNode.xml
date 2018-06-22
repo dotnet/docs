@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.LocalNode" />
   <TypeSignature Language="VB.NET" Value="Public Class LocalNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocalNode" />
+  <TypeSignature Language="F#" Value="type LocalNode = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.LocalNode.StartLocalNodeServer(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub StartLocalNodeServer (nodeNumber As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartLocalNodeServer(int nodeNumber);" />
+      <MemberSignature Language="F#" Value="static member StartLocalNodeServer : int -&gt; unit" Usage="Microsoft.Build.BuildEngine.LocalNode.StartLocalNodeServer nodeNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

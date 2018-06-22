@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfSegment" />
   <TypeSignature Language="VB.NET" Value="Public Class TextEndOfSegment&#xA;Inherits TextRun" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextEndOfSegment : System::Windows::Media::TextFormatting::TextRun" />
+  <TypeSignature Language="F#" Value="type TextEndOfSegment = class&#xA;    inherit TextRun" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfSegment.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfSegment(int length);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextEndOfSegment : int -&gt; System.Windows.Media.TextFormatting.TextEndOfSegment" Usage="new System.Windows.Media.TextFormatting.TextEndOfSegment length" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.CharacterBufferReference" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::CharacterBufferReference CharacterBufferReference { System::Windows::Media::TextFormatting::CharacterBufferReference get(); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterBufferReference : System.Windows.Media.TextFormatting.CharacterBufferReference" Usage="System.Windows.Media.TextFormatting.TextEndOfSegment.CharacterBufferReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextEndOfSegment.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Properties As TextRunProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRunProperties ^ Properties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Windows.Media.TextFormatting.TextRunProperties" Usage="System.Windows.Media.TextFormatting.TextEndOfSegment.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

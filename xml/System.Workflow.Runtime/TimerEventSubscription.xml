@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.TimerEventSubscription" />
   <TypeSignature Language="VB.NET" Value="Public Class TimerEventSubscription" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimerEventSubscription" />
+  <TypeSignature Language="F#" Value="type TimerEventSubscription = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.TimerEventSubscription.#ctor(System.Guid,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowInstanceId As Guid, expiresAt As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimerEventSubscription(Guid workflowInstanceId, DateTime expiresAt);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.TimerEventSubscription : Guid * DateTime -&gt; System.Workflow.Runtime.TimerEventSubscription" Usage="new System.Workflow.Runtime.TimerEventSubscription (workflowInstanceId, expiresAt)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.TimerEventSubscription.#ctor(System.Guid,System.Guid,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timerId As Guid, workflowInstanceId As Guid, expiresAt As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TimerEventSubscription(Guid timerId, Guid workflowInstanceId, DateTime expiresAt);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.TimerEventSubscription : Guid * Guid * DateTime -&gt; System.Workflow.Runtime.TimerEventSubscription" Usage="new System.Workflow.Runtime.TimerEventSubscription (timerId, workflowInstanceId, expiresAt)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExpiresAt As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ExpiresAt { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpiresAt : DateTime" Usage="System.Workflow.Runtime.TimerEventSubscription.ExpiresAt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.TimerEventSubscription.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QueueName As IComparable" />
       <MemberSignature Language="C++ CLI" Value="public:  virtual property IComparable ^ QueueName {  public:&#xA;IComparable ^ get(); protected:&#xA; void set(IComparable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable with get, set" Usage="System.Workflow.Runtime.TimerEventSubscription.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubscriptionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid SubscriptionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionId : Guid" Usage="System.Workflow.Runtime.TimerEventSubscription.SubscriptionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.TimerEventSubscription.WorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WorkflowInstanceId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid WorkflowInstanceId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid" Usage="System.Workflow.Runtime.TimerEventSubscription.WorkflowInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

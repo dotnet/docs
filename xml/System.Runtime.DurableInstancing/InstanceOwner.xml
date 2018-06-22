@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceOwner" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceOwner" />
   <TypeSignature Language="C++ CLI" Value="public ref class InstanceOwner sealed" />
+  <TypeSignature Language="F#" Value="type InstanceOwner = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceOwner.InstanceOwnerId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceOwnerId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceOwnerId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceOwnerId : Guid" Usage="System.Runtime.DurableInstancing.InstanceOwner.InstanceOwnerId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

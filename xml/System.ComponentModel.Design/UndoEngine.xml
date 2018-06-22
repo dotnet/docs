@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.UndoEngine" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UndoEngine&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class UndoEngine abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type UndoEngine = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; UndoEngine(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.UndoEngine : IServiceProvider -&gt; System.ComponentModel.Design.UndoEngine" Usage="new System.ComponentModel.Design.UndoEngine provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.AddUndoUnit(System.ComponentModel.Design.UndoEngine.UndoUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub AddUndoUnit (unit As UndoEngine.UndoUnit)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void AddUndoUnit(System::ComponentModel::Design::UndoEngine::UndoUnit ^ unit);" />
+      <MemberSignature Language="F#" Value="abstract member AddUndoUnit : System.ComponentModel.Design.UndoEngine.UndoUnit -&gt; unit" Usage="undoEngine.AddUndoUnit unit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.CreateUndoUnit(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateUndoUnit (name As String, primary As Boolean) As UndoEngine.UndoUnit" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::Design::UndoEngine::UndoUnit ^ CreateUndoUnit(System::String ^ name, bool primary);" />
+      <MemberSignature Language="F#" Value="abstract member CreateUndoUnit : string * bool -&gt; System.ComponentModel.Design.UndoEngine.UndoUnit&#xA;override this.CreateUndoUnit : string * bool -&gt; System.ComponentModel.Design.UndoEngine.UndoUnit" Usage="undoEngine.CreateUndoUnit (name, primary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit(System.ComponentModel.Design.UndoEngine.UndoUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DiscardUndoUnit (unit As UndoEngine.UndoUnit)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DiscardUndoUnit(System::ComponentModel::Design::UndoEngine::UndoUnit ^ unit);" />
+      <MemberSignature Language="F#" Value="abstract member DiscardUndoUnit : System.ComponentModel.Design.UndoEngine.UndoUnit -&gt; unit&#xA;override this.DiscardUndoUnit : System.ComponentModel.Design.UndoEngine.UndoUnit -&gt; unit" Usage="undoEngine.DiscardUndoUnit unit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="undoEngine.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="undoEngine.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ComponentModel.Design.UndoEngine.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.GetRequiredService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetRequiredService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetRequiredService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredService : Type -&gt; obj" Usage="undoEngine.GetRequiredService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="undoEngine.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.OnUndoing(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUndoing (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUndoing(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUndoing : EventArgs -&gt; unit&#xA;override this.OnUndoing : EventArgs -&gt; unit" Usage="undoEngine.OnUndoing e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -350,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.OnUndone(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUndone (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUndone(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUndone : EventArgs -&gt; unit&#xA;override this.OnUndone : EventArgs -&gt; unit" Usage="undoEngine.OnUndone e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.UndoEngine.Undoing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Undoing As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Undoing;" />
+      <MemberSignature Language="F#" Value="member this.Undoing : EventHandler " Usage="member this.Undoing : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -392,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.UndoInProgress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UndoInProgress As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UndoInProgress { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UndoInProgress : bool" Usage="System.ComponentModel.Design.UndoEngine.UndoInProgress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -413,6 +427,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.UndoEngine.Undone" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Undone As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Undone;" />
+      <MemberSignature Language="F#" Value="member this.Undone : EventHandler " Usage="member this.Undone : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

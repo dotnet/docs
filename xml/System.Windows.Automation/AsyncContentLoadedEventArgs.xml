@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AsyncContentLoadedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncContentLoadedEventArgs&#xA;Inherits AutomationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AsyncContentLoadedEventArgs sealed : System::Windows::Automation::AutomationEventArgs" />
+  <TypeSignature Language="F#" Value="type AsyncContentLoadedEventArgs = class&#xA;    inherit AutomationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AsyncContentLoadedEventArgs.#ctor(System.Windows.Automation.AsyncContentLoadedState,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (asyncContentState As AsyncContentLoadedState, percentComplete As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncContentLoadedEventArgs(System::Windows::Automation::AsyncContentLoadedState asyncContentState, double percentComplete);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.AsyncContentLoadedEventArgs : System.Windows.Automation.AsyncContentLoadedState * double -&gt; System.Windows.Automation.AsyncContentLoadedEventArgs" Usage="new System.Windows.Automation.AsyncContentLoadedEventArgs (asyncContentState, percentComplete)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AsyncContentLoadedEventArgs.AsyncContentLoadedState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncContentLoadedState As AsyncContentLoadedState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AsyncContentLoadedState AsyncContentLoadedState { System::Windows::Automation::AsyncContentLoadedState get(); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncContentLoadedState : System.Windows.Automation.AsyncContentLoadedState" Usage="System.Windows.Automation.AsyncContentLoadedEventArgs.AsyncContentLoadedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AsyncContentLoadedEventArgs.PercentComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PercentComplete As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PercentComplete { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.PercentComplete : double" Usage="System.Windows.Automation.AsyncContentLoadedEventArgs.PercentComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
